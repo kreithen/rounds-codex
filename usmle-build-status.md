@@ -103,6 +103,17 @@ Tarasoff duty to protect.
 - Preview: WIRED. preview/index.html now has an Exam selector (Step 1 150 / Step 2 CK 25);
   switching repopulates the system filter and pool. Browser-verified both exams.
 
+## Images / illustrations
+- App art lives in `preview/illustrations.js` + `preview/illus-pA..D.js`, keyed by
+  question id (`RC_ILLUS[id]`). 44/44 illustrated items covered by schematic SVGs
+  (rebuilt to medical-illustration quality). ECGs kept as vector tracings.
+- **Master image-prompt file: `higgsfield-image-prompts.md`** - one hyperrealistic,
+  case-specific AI image prompt per illustrated question (QA checklist + negative prompt
+  + open-access real-image fallback each). This is the canonical file; **append a new
+  section for every new illustrated question** (see its Maintenance header).
+- Upgrade path: generate/source a real or AI image per id -> physician verifies against
+  the QA checklist -> wire into `RC_ILLUS[id]` (one-line swap; no engine change).
+
 ## Next
 - Step 1 Batch 7 (s1-0151 .. s1-0175), blueprint mix + wider difficulty spread
   (~5 easy / 14 moderate / 6 hard). Validate `--against data/usmle-step1-b1.js .. b6.js`.
