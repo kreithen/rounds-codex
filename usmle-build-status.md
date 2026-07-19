@@ -68,9 +68,20 @@ carcinoid, Hashimoto, pheochromocytoma, Klinefelter, diphtheria toxin, methotrex
 number needed to treat, confidence-interval interpretation, surrogate decision-making,
 Tarasoff duty to protect.
 
+## Review log (125-item pass)
+- Medicine: no substantive errors (the one real error, s1-0010 pemphigus distractor,
+  was fixed during the B1/B2 QA). Applied 2 minor tweaks: s1-0033 distractor relabeled
+  "prolonged grief disorder" (DSM-5-TR); s1-0094 seminoma stem now notes mildly elevated
+  beta-hCG with normal AFP.
+- Difficulty retags applied: s1-0006, s1-0021, s1-0040, s1-0070, s1-0120 -> easy;
+  s1-0061 -> moderate.
+- NEW difficulty-spread rule (Batch 6 onward): target ~5 easy / 14 moderate / 6 hard
+  per 25 (~20/56/24), and make "hard" items genuinely two-step (interpret-then-decide),
+  not deeper recall. Prior batches ran ~3 easy / 20 moderate / 2 hard.
+
 ## Next
-- Step 1 Batch 6 (s1-0126 .. s1-0150), same blueprint mix. Validate with
-  `--against data/usmle-step1-b1.js ... data/usmle-step1-b5.js`.
+- Step 1 Batch 6 (s1-0126 .. s1-0150), blueprint mix + the new wider difficulty spread.
+  Validate with `--against data/usmle-step1-b1.js ... data/usmle-step1-b5.js`.
 - Preview app (`preview/`) now loads B1..B5 (125 items); add each new batch's
   `<script src>` + BANK concat when built, and copy the file into `preview/data/`.
 - Later (separate publish session): wire "USMLE Mode" UI into `index.html`, fold banks

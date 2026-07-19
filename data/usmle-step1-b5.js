@@ -507,7 +507,7 @@ const USMLE_STEP1_B5 = [
     system: "Multisystem",
     discipline: "Microbiology",
     topic: "Secondary syphilis",
-    difficulty: "moderate",
+    difficulty: "easy",
     anchor: "image",
     vignette: "Several weeks after a painless genital ulcer resolved on its own, a young adult develops a diffuse maculopapular rash, generalized lymphadenopathy, and moist, wart-like lesions in the groin. A nontreponemal serologic test is reactive.\n\n**[IMAGE: symmetric coppery maculopapular rash involving the palms and soles]**",
     lead: "Which organism is responsible?",

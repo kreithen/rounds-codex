@@ -202,7 +202,7 @@ const USMLE_STEP1_B2 = [
     options: [
       "Normal (uncomplicated) grief",
       "Major depressive disorder",
-      "Persistent complex bereavement disorder",
+      "Prolonged grief disorder",
       "Adjustment disorder with depressed mood",
       "Brief psychotic disorder"
     ],
@@ -211,7 +211,7 @@ const USMLE_STEP1_B2 = [
     why: [
       "Correct: wave-like grief with preserved function, self-worth, and only fleeting perceptual experiences is normal bereavement.",
       "Major depression would show sustained low mood, pervasive anhedonia, worthlessness, or suicidality, which are absent.",
-      "Persistent complex bereavement is diagnosed only after prolonged, disabling grief lasting many months, not at five weeks.",
+      "Prolonged grief disorder is diagnosed only after persistent, disabling grief lasting many months, not at five weeks.",
       "Adjustment disorder applies to a stressor other than the expected reaction to bereavement.",
       "Brief psychotic disorder requires true psychotic symptoms, not a normal fleeting sense of the deceased's presence."
     ]
@@ -377,7 +377,7 @@ const USMLE_STEP1_B2 = [
     system: "Gastrointestinal",
     discipline: "Immunology",
     topic: "Celiac disease",
-    difficulty: "moderate",
+    difficulty: "easy",
     anchor: "image",
     vignette: "A 32-year-old woman has months of diarrhea, bloating, and weight loss, along with iron-deficiency anemia and an intensely itchy vesicular rash over her elbows and knees. Serum IgA anti-tissue transglutaminase antibodies are elevated.\n\n**[IMAGE: duodenal biopsy showing villous atrophy, crypt hyperplasia, and increased intraepithelial lymphocytes]**",
     lead: "Which mechanism best explains her disease?",

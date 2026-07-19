@@ -483,7 +483,7 @@ const USMLE_STEP1_B4 = [
     topic: "Testicular seminoma",
     difficulty: "moderate",
     anchor: null,
-    vignette: "A 30-year-old man notices a firm, painless enlargement of one testis that does not transilluminate. He had an undescended testis corrected in childhood. Ultrasound shows a solid intratesticular mass, and serum lactate dehydrogenase is mildly elevated while alpha-fetoprotein is normal.",
+    vignette: "A 30-year-old man notices a firm, painless enlargement of one testis that does not transilluminate. He had an undescended testis corrected in childhood. Ultrasound shows a solid intratesticular mass. Serum lactate dehydrogenase and beta-human chorionic gonadotropin are mildly elevated, while alpha-fetoprotein is normal.",
     lead: "Which is the most likely diagnosis?",
     options: [
       "Hydrocele",
@@ -493,7 +493,7 @@ const USMLE_STEP1_B4 = [
       "Yolk sac tumor"
     ],
     answer: 3,
-    exp: "A painless, firm, solid testicular mass in a young man with a history of cryptorchidism is most likely a germ cell tumor, and seminoma is the most common type. Seminomas are radiosensitive and may raise lactate dehydrogenase and placental alkaline phosphatase, with a normal alpha-fetoprotein. Alpha-fetoprotein elevation would instead suggest nonseminomatous (for example, yolk sac) elements.",
+    exp: "A painless, firm, solid testicular mass in a young man with a history of cryptorchidism is most likely a germ cell tumor, and seminoma is the most common type. Seminomas are radiosensitive and may raise lactate dehydrogenase, placental alkaline phosphatase, and sometimes beta-human chorionic gonadotropin, but alpha-fetoprotein stays normal. Alpha-fetoprotein elevation would instead indicate nonseminomatous (for example, yolk sac) elements.",
     why: [
       "A hydrocele is cystic and transilluminates rather than presenting as a solid mass.",
       "Epididymitis is painful and infectious, not a painless firm mass.",
