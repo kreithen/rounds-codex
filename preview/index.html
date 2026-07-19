@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rounds Codex &mdash; USMLE Mode (Preview)</title>
+<style>
+  :root{
+    --bg:#f4f6f9; --card:#ffffff; --ink:#1b2430; --muted:#5c6b7a;
+    --line:#e3e8ee; --brand:#1f6f54; --brand-2:#2b7de9; --brand-ink:#0f4c3a;
+    --good:#1f8a4c; --good-bg:#e7f6ec; --bad:#c0392b; --bad-bg:#fdecea;
+    --chip:#eef2f7; --shadow:0 1px 3px rgba(16,32,48,.08),0 6px 24px rgba(16,32,48,.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#0f141a; --card:#161d26; --ink:#e7edf4; --muted:#9fb0c0;
+      --line:#26313d; --chip:#1e2732; --good-bg:#12331f; --bad-bg:#3a1d1a;
+      --shadow:0 1px 3px rgba(0,0,0,.4),0 6px 24px rgba(0,0,0,.35); }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{background:var(--bg);color:var(--ink);
+    font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;padding:0 16px 64px}
+  a{color:var(--brand-2)}
+  .wrap{max-width:820px;margin:0 auto}
+  header.top{display:flex;align-items:center;gap:12px;padding:20px 4px 8px}
+  .logo{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--brand),#2aa27a);
+    display:grid;place-items:center;color:#fff;font-weight:800;box-shadow:var(--shadow)}
+  .brand h1{font-size:17px;margin:0;letter-spacing:.2px}
+  .brand p{margin:0;color:var(--muted);font-size:12.5px}
+  .pill{margin-left:auto;font-size:11px;color:var(--muted);border:1px solid var(--line);
+    padding:4px 9px;border-radius:999px;background:var(--card)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;
+    box-shadow:var(--shadow);padding:22px;margin-top:16px}
+  h2{font-size:19px;margin:.1em 0 .5em}
+  .sub{color:var(--muted);font-size:14px;margin:0 0 18px}
+  .grid{display:grid;gap:14px}
+  @media(min-width:620px){.grid.two{grid-template-columns:1fr 1fr}}
+  label.fld{display:block;font-size:12.5px;font-weight:700;color:var(--muted);
+    text-transform:uppercase;letter-spacing:.4px;margin:0 0 6px}
+  select,button{font:inherit}
+  select{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;
+    background:var(--card);color:var(--ink);appearance:none}
+  .seg{display:flex;gap:8px;flex-wrap:wrap}
+  .seg button{flex:1;min-width:120px;padding:11px 12px;border:1px solid var(--line);
+    border-radius:10px;background:var(--card);color:var(--ink);cursor:pointer;transition:.15s}
+  .seg button.active{border-color:var(--brand);background:var(--brand);color:#fff;font-weight:700}
+  .seg .desc{display:block;font-size:11.5px;font-weight:400;opacity:.85;margin-top:2px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;
+    padding:12px 18px;border-radius:11px;border:1px solid transparent;font-weight:700;transition:.15s}
+  .btn.primary{background:var(--brand);color:#fff}
+  .btn.primary:hover{filter:brightness(1.05)}
+  .btn.ghost{background:var(--card);border-color:var(--line);color:var(--ink)}
+  .btn:disabled{opacity:.5;cursor:not-allowed}
+  .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .spacer{flex:1}
+  /* quiz */
+  .qmeta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:6px}
+  .chip{font-size:11.5px;background:var(--chip);color:var(--muted);padding:3px 9px;border-radius:999px;
+    border:1px solid var(--line)}
+  .chip.sys{color:var(--brand-ink);background:#e6f3ee;border-color:#cfe7dd}
+  @media (prefers-color-scheme: dark){.chip.sys{color:#8fe0c1;background:#12331f;border-color:#1f5138}}
+  .diff-easy{color:#1f8a4c} .diff-moderate{color:#b7791f} .diff-hard{color:#c0392b}
+  .progress{height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin:4px 0 18px}
+  .progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--brand),#2aa27a);transition:width .3s}
+  .vignette{font-size:16px}
+  .vignette p{margin:0 0 12px}
+  .vignette table{border-collapse:collapse;width:100%;margin:6px 0 14px;font-size:14px}
+  .vignette th,.vignette td{border:1px solid var(--line);padding:7px 10px;text-align:left}
+  .vignette th{background:var(--chip);font-weight:700}
+  .anchor-box{display:block;margin:6px 0 14px;padding:12px 14px;border:1px dashed var(--brand);
+    border-radius:10px;background:linear-gradient(0deg,rgba(31,111,84,.05),rgba(31,111,84,.05));
+    color:var(--muted);font-style:italic;font-size:14px}
+  .anchor-tag{display:inline-block;font-style:normal;font-weight:800;font-size:10.5px;letter-spacing:.6px;
+    color:#fff;background:var(--brand);border-radius:6px;padding:2px 7px;margin-right:8px;vertical-align:1px}
+  .lead{font-weight:700;margin:16px 0 12px}
+  .opts{display:grid;gap:10px}
+  .opt{display:flex;gap:12px;align-items:flex-start;text-align:left;width:100%;
+    padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--card);
+    color:var(--ink);cursor:pointer;transition:.12s}
+  .opt:hover{border-color:var(--brand)}
+  .opt .key{flex:none;width:26px;height:26px;border-radius:7px;border:1px solid var(--line);
+    display:grid;place-items:center;font-weight:800;font-size:13px;color:var(--muted)}
+  .opt.sel{border-color:var(--brand-2);box-shadow:0 0 0 2px rgba(43,125,233,.15)}
+  .opt.sel .key{background:var(--brand-2);color:#fff;border-color:var(--brand-2)}
+  .opt.correct{border-color:var(--good);background:var(--good-bg)}
+  .opt.correct .key{background:var(--good);color:#fff;border-color:var(--good)}
+  .opt.wrong{border-color:var(--bad);background:var(--bad-bg)}
+  .opt.wrong .key{background:var(--bad);color:#fff;border-color:var(--bad)}
+  .opt.locked{cursor:default}
+  .verdict{margin:16px 0 6px;font-weight:800}
+  .verdict.good{color:var(--good)} .verdict.bad{color:var(--bad)}
+  .exp{border-left:3px solid var(--brand);background:var(--chip);border-radius:0 10px 10px 0;
+    padding:12px 14px;margin:8px 0 4px;font-size:14.5px}
+  .exp h4{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted)}
+  .whys{list-style:none;margin:10px 0 0;padding:0;font-size:13.5px}
+  .whys li{padding:5px 0;border-top:1px dashed var(--line);color:var(--muted)}
+  .whys li b{color:var(--ink)}
+  .whys li.c{color:var(--good)} .whys li.c b{color:var(--good)}
+  /* results */
+  .score{font-size:44px;font-weight:800;line-height:1}
+  .score small{font-size:16px;color:var(--muted);font-weight:600}
+  .bars{display:grid;gap:8px;margin-top:6px}
+  .bar{display:grid;grid-template-columns:190px 1fr 46px;gap:10px;align-items:center;font-size:13px}
+  .bar .t{color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .bar .track{height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+  .bar .track > i{display:block;height:100%;background:var(--brand)}
+  .review{margin-top:8px}
+  details.rev{border:1px solid var(--line);border-radius:12px;margin:8px 0;background:var(--card);overflow:hidden}
+  details.rev > summary{cursor:pointer;padding:12px 14px;font-size:14px;display:flex;gap:10px;align-items:center}
+  details.rev > summary::-webkit-details-marker{display:none}
+  .dot{width:9px;height:9px;border-radius:50%;flex:none}
+  .dot.g{background:var(--good)} .dot.b{background:var(--bad)} .dot.n{background:var(--muted)}
+  .rev .body{padding:0 14px 14px}
+  .foot{color:var(--muted);font-size:12px;text-align:center;margin-top:26px}
+  .hide{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="logo">R</div>
+    <div class="brand">
+      <h1>Rounds Codex &mdash; USMLE Mode</h1>
+      <p>Step 1 &middot; preview build</p>
+    </div>
+    <span class="pill" id="bankcount">&hellip;</span>
+  </header>
+
+  <!-- SETUP -->
+  <section id="setup" class="card">
+    <h2>Start a set</h2>
+    <p class="sub">Original, blueprint-weighted Step&nbsp;1 items. This preview is wired to Batches&nbsp;1&nbsp;&amp;&nbsp;2.</p>
+    <div class="grid">
+      <div>
+        <label class="fld">Mode</label>
+        <div class="seg" id="mode">
+          <button data-v="explanation" class="active">Explanation<span class="desc">Feedback after each answer</span></button>
+          <button data-v="standard">Standard<span class="desc">Exam sim &middot; score at the end</span></button>
+        </div>
+      </div>
+      <div class="grid two">
+        <div>
+          <label class="fld">System</label>
+          <select id="system"><option value="">All systems (blueprint mix)</option></select>
+        </div>
+        <div>
+          <label class="fld">Difficulty</label>
+          <select id="difficulty">
+            <option value="">All difficulties</option>
+            <option value="easy">Easy</option>
+            <option value="moderate">Moderate</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid two">
+        <div>
+          <label class="fld">Number of questions</label>
+          <select id="count"></select>
+        </div>
+        <div>
+          <label class="fld">Order</label>
+          <select id="order">
+            <option value="shuffle">Shuffle</option>
+            <option value="sequential">Sequential (by ID)</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <button class="btn primary" id="start">Start set</button>
+        <span class="spacer"></span>
+        <span class="chip" id="poolinfo"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="quiz" class="card hide">
+    <div class="row" style="margin-bottom:2px">
+      <span class="chip" id="counter">1 / 10</span>
+      <span class="chip" id="modechip">Explanation</span>
+      <span class="spacer"></span>
+      <span class="chip" id="livescore"></span>
+    </div>
+    <div class="progress"><i id="pbar" style="width:0%"></i></div>
+
+    <div class="qmeta" id="qmeta"></div>
+    <div class="vignette" id="vignette"></div>
+    <div class="lead" id="lead"></div>
+    <div class="opts" id="opts"></div>
+
+    <div id="feedback"></div>
+
+    <div class="row" style="margin-top:20px">
+      <button class="btn ghost" id="end">End test</button>
+      <span class="spacer"></span>
+      <button class="btn primary" id="next" disabled>Next</button>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section id="results" class="card hide">
+    <h2>Results</h2>
+    <div class="row" style="align-items:flex-end;gap:18px">
+      <div class="score" id="scoreBig">0<small>/0</small></div>
+      <div class="sub" id="scorePct" style="margin:0"></div>
+    </div>
+    <h3 style="margin:20px 0 4px;font-size:14px">By system</h3>
+    <div class="bars" id="bars"></div>
+    <h3 style="margin:22px 0 4px;font-size:14px">Review</h3>
+    <div class="review" id="review"></div>
+    <div class="row" style="margin-top:18px">
+      <button class="btn primary" id="again">New set</button>
+    </div>
+  </section>
+
+  <p class="foot">Preview build &middot; all vignettes original &middot; not affiliated with the NBME or USMLE.</p>
+</div>
+
+<!-- question banks (globals: USMLE_STEP1_B1, USMLE_STEP1_B2) -->
+<script src="data/usmle-step1-b1.js"></script>
+<script src="data/usmle-step1-b2.js"></script>
+<script>
+(function(){
+  "use strict";
+  var BANK = [].concat(
+    (typeof USMLE_STEP1_B1!=="undefined"?USMLE_STEP1_B1:[]),
+    (typeof USMLE_STEP1_B2!=="undefined"?USMLE_STEP1_B2:[])
+  );
+  var LETTERS=["A","B","C","D","E"];
+  var $=function(s){return document.querySelector(s)};
+  function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
+
+  // ---------- vignette renderer (safe: escape, then limited formatting) ----------
+  function inlineFmt(s){
+    s=s.replace(/\*\*\[([^\]]+)\]\*\*/g,function(m,inner){
+      var idx=inner.indexOf(":");
+      var label=idx>-1?inner.slice(0,idx).trim():"VISUAL";
+      var desc=idx>-1?inner.slice(idx+1).trim():inner.trim();
+      return '<span class="anchor-box"><span class="anchor-tag">'+esc(label)+'</span>'+esc(desc)+'</span>';
+    });
+    s=s.replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>");
+    return s;
+  }
+  function renderTable(block){
+    var rows=block.map(function(l){
+      return l.replace(/^\s*\|/,"").replace(/\|\s*$/,"").split("|").map(function(c){return c.trim()});
+    });
+    var body=rows.filter(function(r){return !r.every(function(c){return /^:?-{2,}:?$/.test(c)||c===""})});
+    if(!body.length) return "";
+    var head=body[0], out='<table><thead><tr>';
+    head.forEach(function(c){out+="<th>"+inlineFmt(esc(c))+"</th>"});
+    out+="</tr></thead><tbody>";
+    body.slice(1).forEach(function(r){
+      out+="<tr>";
+      r.forEach(function(c){out+="<td>"+inlineFmt(esc(c))+"</td>"});
+      out+="</tr>";
+    });
+    return out+"</tbody></table>";
+  }
+  function renderVignette(raw){
+    var lines=String(raw).split("\n"), html="", i=0;
+    while(i<lines.length){
+      if(/^\s*\|/.test(lines[i])){
+        var blk=[];
+        while(i<lines.length && /^\s*\|/.test(lines[i])){blk.push(lines[i]);i++;}
+        html+=renderTable(blk);
+      }else{
+        var line=lines[i];i++;
+        if(line.trim()==="") continue;
+        html+="<p>"+inlineFmt(esc(line))+"</p>";
+      }
+    }
+    return html;
+  }
+
+  // ---------- state ----------
+  var cfg={mode:"explanation"}, quiz=null;
+
+  function shuffle(a){var r=a.slice();for(var i=r.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=r[i];r[i]=r[j];r[j]=t;}return r;}
+
+  // ---------- setup screen ----------
+  function initSetup(){
+    $("#bankcount").textContent=BANK.length+" items loaded";
+    var systems={};
+    BANK.forEach(function(q){systems[q.system]=(systems[q.system]||0)+1});
+    var sysSel=$("#system");
+    Object.keys(systems).sort().forEach(function(s){
+      var o=document.createElement("option");o.value=s;o.textContent=s+" ("+systems[s]+")";sysSel.appendChild(o);
+    });
+    $("#mode").addEventListener("click",function(e){
+      var b=e.target.closest("button");if(!b)return;
+      cfg.mode=b.getAttribute("data-v");
+      [].forEach.call(this.children,function(c){c.classList.toggle("active",c===b)});
+    });
+    ["#system","#difficulty"].forEach(function(id){$(id).addEventListener("change",refreshPool)});
+    refreshPool();
+    $("#start").addEventListener("click",startSet);
+    $("#again").addEventListener("click",function(){show("setup")});
+  }
+  function filteredPool(){
+    var sys=$("#system").value, diff=$("#difficulty").value;
+    return BANK.filter(function(q){
+      return (!sys||q.system===sys)&&(!diff||q.difficulty===diff);
+    });
+  }
+  function refreshPool(){
+    var pool=filteredPool();
+    $("#poolinfo").textContent=pool.length+" questions available";
+    var cs=$("#count");cs.innerHTML="";
+    var opts=[5,10,20,25,40,50].filter(function(n){return n<=pool.length});
+    if(!opts.length||opts[opts.length-1]<pool.length) opts.push(pool.length);
+    opts.forEach(function(n){var o=document.createElement("option");o.value=n;
+      o.textContent=(n===pool.length?"All "+n:n)+" questions";cs.appendChild(o);});
+    cs.value=Math.min(10,pool.length)||pool.length;
+    $("#start").disabled=pool.length===0;
+  }
+
+  function startSet(){
+    var pool=filteredPool();
+    if($("#order").value==="sequential"){pool=pool.slice().sort(function(a,b){return a.id<b.id?-1:1});}
+    else pool=shuffle(pool);
+    var n=Math.min(parseInt($("#count").value,10)||pool.length,pool.length);
+    quiz={qs:pool.slice(0,n),i:0,ans:[],revealed:false};
+    for(var k=0;k<n;k++)quiz.ans.push(null);
+    $("#modechip").textContent=cfg.mode==="explanation"?"Explanation":"Standard";
+    show("quiz");renderQuestion();
+  }
+
+  // ---------- quiz screen ----------
+  function renderQuestion(){
+    var q=quiz.qs[quiz.i]; quiz.revealed=false;
+    $("#counter").textContent=(quiz.i+1)+" / "+quiz.qs.length;
+    $("#pbar").style.width=Math.round((quiz.i)/quiz.qs.length*100)+"%";
+    var scored=quiz.ans.filter(function(a){return a!=null}).length;
+    $("#livescore").textContent = cfg.mode==="explanation"
+      ? runningCorrect()+" correct" : scored+" answered";
+    var dc="diff-"+q.difficulty;
+    $("#qmeta").innerHTML='<span class="chip sys">'+esc(q.system)+'</span>'+
+      '<span class="chip">'+esc(q.discipline)+'</span>'+
+      '<span class="chip '+dc+'">'+esc(q.difficulty)+'</span>'+
+      (q.anchor?'<span class="chip">'+esc(q.anchor)+'</span>':'');
+    $("#vignette").innerHTML=renderVignette(q.vignette);
+    $("#lead").textContent=q.lead;
+    var wrap=$("#opts");wrap.innerHTML="";
+    q.options.forEach(function(txt,idx){
+      var b=document.createElement("button");b.className="opt";b.setAttribute("data-i",idx);
+      b.innerHTML='<span class="key">'+LETTERS[idx]+'</span><span>'+esc(txt)+'</span>';
+      b.addEventListener("click",function(){pick(idx)});
+      wrap.appendChild(b);
+    });
+    var prev=quiz.ans[quiz.i];
+    if(prev!=null){
+      markSel(prev);
+      if(cfg.mode==="explanation"){reveal();}
+    }
+    $("#feedback").innerHTML="";
+    $("#next").textContent=(quiz.i===quiz.qs.length-1)?"Finish":"Next";
+    $("#next").disabled = cfg.mode==="explanation" ? (prev==null) : false;
+    if(prev!=null && cfg.mode==="explanation") $("#next").disabled=false;
+  }
+  function markSel(idx){
+    [].forEach.call($("#opts").children,function(c){
+      c.classList.toggle("sel",+c.getAttribute("data-i")===idx);
+    });
+  }
+  function pick(idx){
+    var q=quiz.qs[quiz.i];
+    if(cfg.mode==="explanation"){
+      if(quiz.revealed) return;
+      quiz.ans[quiz.i]=idx; markSel(idx); reveal(); $("#next").disabled=false;
+    }else{
+      quiz.ans[quiz.i]=idx; markSel(idx); // silent
+    }
+  }
+  function reveal(){
+    quiz.revealed=true;
+    var q=quiz.qs[quiz.i], chosen=quiz.ans[quiz.i], correct=q.answer;
+    [].forEach.call($("#opts").children,function(c){
+      var i=+c.getAttribute("data-i");
+      c.classList.add("locked");
+      c.classList.remove("sel");
+      if(i===correct)c.classList.add("correct");
+      else if(i===chosen)c.classList.add("wrong");
+    });
+    var ok=chosen===correct;
+    var whys="";
+    q.why.forEach(function(w,i){
+      var isC=(i===correct);
+      whys+='<li class="'+(isC?"c":"")+'"><b>'+LETTERS[i]+'.</b> '+esc(w)+"</li>";
+    });
+    $("#feedback").innerHTML=
+      '<div class="verdict '+(ok?"good":"bad")+'">'+(ok?"Correct":"Incorrect")+
+        ' &middot; answer '+LETTERS[correct]+'</div>'+
+      '<div class="exp"><h4>Explanation</h4>'+esc(q.exp)+
+        '<ul class="whys">'+whys+'</ul></div>';
+  }
+  function runningCorrect(){
+    var n=0;quiz.qs.forEach(function(q,i){if(quiz.ans[i]===q.answer)n++});return n;
+  }
+  function nextQ(){
+    if(cfg.mode==="standard" && quiz.ans[quiz.i]==null){/* allow skip */}
+    if(quiz.i>=quiz.qs.length-1){finish();return;}
+    quiz.i++;renderQuestion();
+  }
+
+  // ---------- results ----------
+  function finish(){
+    var qs=quiz.qs, total=qs.length, correct=runningCorrect();
+    $("#scoreBig").innerHTML=correct+'<small>/'+total+'</small>';
+    var pct=total?Math.round(correct/total*100):0;
+    $("#scorePct").innerHTML='<b>'+pct+'%</b> &middot; '+correct+' of '+total+' correct';
+    // by system
+    var bySys={};
+    qs.forEach(function(q,i){
+      var s=q.system;bySys[s]=bySys[s]||{c:0,t:0};
+      bySys[s].t++; if(quiz.ans[i]===q.answer)bySys[s].c++;
+    });
+    var bars=$("#bars");bars.innerHTML="";
+    Object.keys(bySys).sort().forEach(function(s){
+      var d=bySys[s],p=Math.round(d.c/d.t*100);
+      var el=document.createElement("div");el.className="bar";
+      el.innerHTML='<div class="t" title="'+esc(s)+'">'+esc(s)+'</div>'+
+        '<div class="track"><i style="width:'+p+'%"></i></div>'+
+        '<div style="text-align:right">'+d.c+'/'+d.t+'</div>';
+      bars.appendChild(el);
+    });
+    // review
+    var rev=$("#review");rev.innerHTML="";
+    qs.forEach(function(q,i){
+      var chosen=quiz.ans[i], correct=q.answer, ok=chosen===correct, un=chosen==null;
+      var dcls=un?"n":(ok?"g":"b");
+      var d=document.createElement("details");d.className="rev";
+      var picked=un?"skipped":LETTERS[chosen];
+      d.innerHTML='<summary><span class="dot '+dcls+'"></span>'+
+        '<b>Q'+(i+1)+'</b> &middot; '+esc(q.topic)+
+        ' <span class="chip" style="margin-left:auto">you: '+picked+' &middot; key: '+LETTERS[correct]+'</span></summary>'+
+        '<div class="body"><div class="vignette">'+renderVignette(q.vignette)+'</div>'+
+        '<div class="lead">'+esc(q.lead)+'</div>'+optionReview(q,chosen)+
+        '<div class="exp"><h4>Explanation</h4>'+esc(q.exp)+'</div></div>';
+      rev.appendChild(d);
+    });
+    show("results");
+  }
+  function optionReview(q,chosen){
+    var out='<div class="opts">';
+    q.options.forEach(function(txt,i){
+      var cls="opt locked";
+      if(i===q.answer)cls+=" correct";else if(i===chosen)cls+=" wrong";
+      out+='<div class="'+cls+'"><span class="key">'+LETTERS[i]+'</span><span>'+esc(txt)+
+        '<br><small style="color:var(--muted)">'+esc(q.why[i])+'</small></span></div>';
+    });
+    return out+"</div>";
+  }
+
+  // ---------- nav ----------
+  function show(id){
+    ["setup","quiz","results"].forEach(function(s){$("#"+s).classList.toggle("hide",s!==id)});
+    window.scrollTo(0,0);
+  }
+  document.addEventListener("keydown",function(e){
+    if($("#quiz").classList.contains("hide"))return;
+    var k=e.key.toUpperCase(),i=LETTERS.indexOf(k);
+    if(i>-1 && i<quiz.qs[quiz.i].options.length){pick(i);}
+    else if(e.key==="Enter" && !$("#next").disabled){nextQ();}
+  });
+
+  window.addEventListener("DOMContentLoaded",function(){
+    if(!BANK.length){
+      document.body.innerHTML='<div class="wrap"><div class="card" style="margin-top:40px">'+
+        '<h2>No questions loaded</h2><p class="sub">Make sure <code>data/usmle-step1-b1.js</code> and '+
+        '<code>data/usmle-step1-b2.js</code> sit next to this file.</p></div></div>';return;
+    }
+    initSetup();
+    $("#next").addEventListener("click",nextQ);
+    $("#end").addEventListener("click",finish);
+  });
+})();
+</script>
+</body>
+</html>
