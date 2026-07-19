@@ -121,7 +121,7 @@ const USMLE_STEP2CK_B4 = [
     topic: "Hyperosmolar hyperglycemic state",
     difficulty: "hard",
     anchor: "lab",
-    vignette: "An 78-year-old man with type 2 diabetes is brought in after several days of increasing lethargy and confusion during a febrile illness with poor oral intake. He has very dry mucous membranes, poor skin turgor, and hypotension. He is arousable but disoriented, without Kussmaul respirations.\n\n| Test | Value | Reference |\n|---|---|---|\n| Glucose | 1080 mg/dL | 70-100 |\n| Serum osmolality | 355 mOsm/kg | 275-295 |\n| Serum bicarbonate | 20 mEq/L | 22-28 |\n| Serum ketones | small | negative |",
+    vignette: "A 78-year-old man with type 2 diabetes is brought in after several days of increasing lethargy and confusion during a febrile illness with poor oral intake. He has very dry mucous membranes, poor skin turgor, and hypotension. He is arousable but disoriented, without Kussmaul respirations.\n\n| Test | Value | Reference |\n|---|---|---|\n| Glucose | 1080 mg/dL | 70-100 |\n| Serum osmolality | 355 mOsm/kg | 275-295 |\n| Serum bicarbonate | 20 mEq/L | 22-28 |\n| Serum ketones | small | negative |",
     lead: "Which of the following is the most appropriate next step in management?",
     options: [
       "Intravenous insulin bolus before any fluids",
@@ -251,7 +251,7 @@ const USMLE_STEP2CK_B4 = [
     topic: "Acute mesenteric ischemia",
     difficulty: "hard",
     anchor: "lab",
-    vignette: "An 76-year-old man with atrial fibrillation not on anticoagulation develops sudden severe, diffuse abdominal pain. The pain is out of proportion to a soft, only mildly tender abdomen. He is tachycardic and has had one episode of bloody diarrhea.\n\n| Test | Value | Reference |\n|---|---|---|\n| Lactate | 5.8 mmol/L | 0.5-2.2 |\n| White blood cells | 21,000/uL | 4,500-11,000 |\n| Arterial pH | 7.28 | 7.35-7.45 |",
+    vignette: "A 76-year-old man with atrial fibrillation not on anticoagulation develops sudden severe, diffuse abdominal pain. The pain is out of proportion to a soft, only mildly tender abdomen. He is tachycardic and has had one episode of bloody diarrhea.\n\n| Test | Value | Reference |\n|---|---|---|\n| Lactate | 5.8 mmol/L | 0.5-2.2 |\n| White blood cells | 21,000/uL | 4,500-11,000 |\n| Arterial pH | 7.28 | 7.35-7.45 |",
     lead: "Which of the following is the most appropriate next step in management?",
     options: [
       "Reassurance and outpatient follow-up",
