@@ -218,17 +218,19 @@
   <p class="foot">Preview build &middot; all vignettes original &middot; not affiliated with the NBME or USMLE.</p>
 </div>
 
-<!-- question banks (globals: USMLE_STEP1_B1, USMLE_STEP1_B2, USMLE_STEP1_B3) -->
+<!-- question banks (globals: USMLE_STEP1_B1..B4) -->
 <script src="data/usmle-step1-b1.js"></script>
 <script src="data/usmle-step1-b2.js"></script>
 <script src="data/usmle-step1-b3.js"></script>
+<script src="data/usmle-step1-b4.js"></script>
 <script>
 (function(){
   "use strict";
   var BANK = [].concat(
     (typeof USMLE_STEP1_B1!=="undefined"?USMLE_STEP1_B1:[]),
     (typeof USMLE_STEP1_B2!=="undefined"?USMLE_STEP1_B2:[]),
-    (typeof USMLE_STEP1_B3!=="undefined"?USMLE_STEP1_B3:[])
+    (typeof USMLE_STEP1_B3!=="undefined"?USMLE_STEP1_B3:[]),
+    (typeof USMLE_STEP1_B4!=="undefined"?USMLE_STEP1_B4:[])
   );
   var LETTERS=["A","B","C","D","E"];
   var $=function(s){return document.querySelector(s)};
