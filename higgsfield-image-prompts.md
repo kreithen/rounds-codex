@@ -1,6 +1,6 @@
 # Rounds Codex — USMLE Mode: hyperrealistic image prompt sheet
 
-44 AI image-generation prompts (one per illustrated question), each tuned to its
+60 AI image-generation prompts (one per illustrated question), each tuned to its
 vignette, for producing hyperrealistic, medically-accurate images (Higgsfield or
 similar) to replace the current schematic SVGs.
 
@@ -435,3 +435,185 @@ questions are created:
 - **Avoid (negative prompt):** Color Doppler, double-bubble sign, normal thin short pylorus, adult-sized anatomy, dilated bowel loops, calipers/measurement crosshairs, text or labels, rectangular unrealistic field.
 - **Real-image fallback:** Radiopaedia - search "hypertrophic pyloric stenosis ultrasound target sign".
 
+
+<!-- Added with Step 1 Batch 7, Step 2 CK Batch 2, Step 3 Day 1 Batch 1 -->
+
+### s1-0157 - Amyotrophic lateral sclerosis  (Step 1 - Behavioral Health & Nervous System)
+- **Case context:** 55-year-old man with one year of progressive asymmetric weakness beginning in the right hand, with wasting and fasciculations of hands and tongue (lower motor neuron) plus spasticity, brisk reflexes, and extensor plantar responses (upper motor neuron), and completely spared sensation; the image is a transverse section of spinal cord showing loss of anterior horn motor neurons together with pallor (demyelination) of both lateral corticospinal tracts.
+- **Modality:** Myelin-stained (Luxol fast blue or Weigert/Weil) transverse histologic section of the spinal cord, low power; gross-to-microscopic architectural view of the cord cross-section.
+- **Prompt:** Photorealistic myelin-stained (Luxol fast blue / Weigert) transverse section of the spinal cord at low magnification, authentic histology with well-myelinated white matter staining deep blue and gray matter appearing pale tan-gray, diagnostic slide realism with the correct butterfly-shaped central gray matter and surrounding white matter columns. Show symmetric, bilateral PALLOR (loss of blue myelin staining) selectively affecting both LATERAL CORTICOSPINAL TRACTS in the dorsolateral white matter, standing out as paler patches against the otherwise well-stained posterior columns and remaining white matter. The ANTERIOR (ventral) HORNS of the gray matter are shrunken and depleted of large motor neurons, with the few remaining anterior horn cells reduced in number compared with a normal cord; the posterior columns and dorsal horns are preserved (normal sensory tracts). Correct spinal cord anatomy with central canal, anterior median fissure, and symmetric bilateral tracts. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Symmetric bilateral pallor of the dorsolateral (lateral corticospinal) tracts
+  - Depletion/atrophy of anterior horn motor neurons
+  - Preserved posterior columns and dorsal horns (spared sensory pathways)
+  - Correct butterfly gray matter and cord cross-sectional anatomy
+- **Avoid (negative prompt):** posterior column or dorsal-tract pallor (that is subacute combined degeneration/tabes, wrong); asymmetric single-sided lesion; a discrete mass or infarct; H&E pink-purple palette when a myelin stain is requested; brain tissue instead of cord; inflammatory demyelinating plaque (MS) in the periventricular brain.
+- **Real-image fallback:** PathologyOutlines / Wikimedia Commons - search "amyotrophic lateral sclerosis spinal cord corticospinal tract degeneration Luxol fast blue"; WebPathology "ALS anterior horn myelin stain".
+
+### s1-0159 - Osteoarthritis  (Step 1 - Musculoskeletal / Skin)
+- **Case context:** 64-year-old woman with obesity and years of activity-related knee and hand pain, brief (~10 min) morning stiffness, Heberden nodes (bony DIP enlargement), and knee crepitus without warmth or redness; the image is a knee radiograph showing asymmetric joint-space narrowing, marginal osteophytes, and subchondral sclerosis.
+- **Modality:** Plain radiograph, weight-bearing frontal (AP) knee, grayscale DICOM-like.
+- **Prompt:** Photorealistic frontal AP radiograph of an adult knee, grayscale with high dynamic range and DICOM-like diagnostic quality, realistic bone trabecular texture and soft-tissue shadow, correct femorotibial and patellar anatomy. Show the hallmarks of osteoarthritis: ASYMMETRIC joint-space NARROWING that is worse over the medial tibiofemoral compartment (medial joint space markedly reduced while the lateral compartment is relatively preserved); sharp, bony MARGINAL OSTEOPHYTES projecting from the medial tibial plateau, femoral condyle edges, and intercondylar notch (tibial spines); increased SUBCHONDRAL SCLEROSIS as a band of dense white bone beneath the narrowed medial joint surface; and small subchondral cysts. No fracture, no aggressive periosteal reaction, no erosions crossing the joint. Bones otherwise correctly mineralized. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Asymmetric (compartment-selective, typically medial) joint-space narrowing
+  - Bony marginal osteophytes at joint margins
+  - Subchondral sclerosis (dense white subchondral bone) and small subchondral cysts
+  - Correct knee anatomy, no fracture
+- **Avoid (negative prompt):** symmetric/uniform joint-space loss with periarticular erosions and osteopenia (rheumatoid); chondrocalcinosis lining the cartilage (CPPD); punched-out periarticular erosions with overhanging edges (gout); aggressive periosteal reaction or soft-tissue mass; total loss of all bone detail; fracture line; lateral view when frontal requested.
+- **Real-image fallback:** Radiopaedia - search "knee osteoarthritis radiograph joint space narrowing osteophytes"; Wikimedia Commons "osteoarthritis knee X-ray".
+
+### s1-0160 - Bullous pemphigoid  (Step 1 - Musculoskeletal / Skin)
+- **Case context:** 74-year-old man with intensely pruritic, large, TENSE bullae on flexural arms, groin, and lower abdomen that do not rupture easily, a NEGATIVE Nikolsky sign, and spared oral mucosa; the image is direct immunofluorescence of perilesional skin showing a smooth LINEAR band of IgG and C3 along the dermoepidermal (basement membrane) junction.
+- **Modality:** Direct immunofluorescence (DIF) photomicrograph of a perilesional skin biopsy, fluorescence microscopy on a dark field.
+- **Prompt:** Direct immunofluorescence photomicrograph of a skin biopsy on a black background, bright apple-green FITC fluorescence, fluorescence-microscopy realism, medium-high power. Show a single, SMOOTH, CONTINUOUS, sharply LINEAR band of bright green fluorescence running along the dermo-epidermal basement membrane zone, cleanly separating the epidermis above from the dermis below like an unbroken ribbon following the undulating junction. The keratinocyte intercellular spaces within the epidermis are DARK and NOT highlighted (no net/fishnet pattern). The linear deposit is uniform in thickness and hugs the entire basement membrane. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Smooth continuous LINEAR green band along the dermoepidermal junction only
+  - Dark, non-highlighted epidermal keratinocyte intercellular spaces (no reticular pattern)
+  - Single basement-membrane-zone location, uniform ribbon
+  - Fluorescence realism on black background
+- **Avoid (negative prompt):** net-like/fishnet/"chicken-wire" intercellular staining around keratinocytes (that is pemphigus vulgaris, wrong); granular deposits at the tips of dermal papillae (dermatitis herpetiformis); scattered speckles without a continuous line; H&E pink-purple coloration; multiple discontinuous dots along the junction; tissue on a white background.
+- **Real-image fallback:** DermNet NZ "bullous pemphigoid direct immunofluorescence"; PathologyOutlines "bullous pemphigoid DIF linear IgG C3 basement membrane"; Wikimedia Commons "bullous pemphigoid immunofluorescence".
+
+### s1-0161 - Mitral stenosis  (Step 1 - Cardiovascular)
+- **Case context:** 34-year-old woman with childhood rheumatic fever, progressive exertional dyspnea, orthopnea, hemoptysis, an irregularly irregular pulse (atrial fibrillation), a loud S1, an opening snap, and a low-pitched mid-diastolic apical rumble; the image is a chest radiograph showing left atrial enlargement with straightening of the left heart border and elevation of the left main bronchus.
+- **Modality:** Frontal (PA) chest radiograph, grayscale DICOM-like.
+- **Prompt:** Photorealistic frontal PA chest radiograph of an adult woman, grayscale with high dynamic range and DICOM-like diagnostic quality, anatomically correct thorax with sharp bony detail. Show the radiographic signs of LEFT ATRIAL ENLARGEMENT from mitral stenosis: STRAIGHTENING of the normally concave upper LEFT heart border due to a prominent left atrial appendage; a DOUBLE-DENSITY (double right heart border) shadow behind the right heart from the enlarged left atrium; SPLAYING of the carina with ELEVATION of the LEFT MAIN BRONCHUS by the enlarged left atrium beneath it; and signs of pulmonary venous congestion with upper-zone vascular redistribution (cephalization) and faint Kerley B lines at the bases. Overall heart size not grossly enlarged; no boot shape. Correct ribs, clavicles, and mediastinal contours. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Straightened left heart border (prominent left atrial appendage)
+  - Double-density behind the right heart border (enlarged left atrium)
+  - Elevated left main bronchus / splayed carina
+  - Pulmonary venous congestion (cephalization, Kerley B lines); heart not globally enlarged
+- **Avoid (negative prompt):** boot-shaped heart with upturned apex (TOF); gross globular cardiomegaly; right-sided aortic changes/rib notching (coarctation); large pleural effusion as the dominant finding; egg-on-a-string mediastinum; clear lungs with no congestion; lateral view when frontal requested.
+- **Real-image fallback:** Radiopaedia - search "mitral stenosis chest x-ray left atrial enlargement double density"; Wikimedia Commons "left atrial enlargement chest radiograph".
+
+### s2ck-0026 - Acute pericarditis  (Step 2 CK - Internal Medicine)  [ECG]
+- **WARNING:** AI image generators reliably render ECG tracings as physiologically meaningless gibberish (wrong waveform morphology, impossible intervals, garbled grid). The defining diffuse concave ST elevation with PR depression is exactly what AI gets wrong. Strongly recommend a REAL de-identified pericarditis 12-lead ECG (e.g., LITFL) or the app's own accurate vector-drawn tracing as the PRIMARY asset; use any AI output only as a stylistic placeholder and QA every complex against the criteria below.
+- **Case context:** 27-year-old man with 3 days of sharp central chest pain worse lying flat and relieved sitting forward, after a viral URI, with a three-component friction rub; the tracing must show diffuse concave (saddle-shaped) ST-segment elevation across limb and precordial leads with PR-segment depression.
+- **Modality:** 12-lead ECG on standard red/pink grid.
+- **Prompt:** Photorealistic clinical 12-lead ECG printout on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines, clean black waveform trace, standard 3x4 lead layout plus a rhythm strip, sinus rhythm at a normal rate. Depict acute pericarditis: WIDESPREAD, DIFFUSE, CONCAVE-UPWARD ("saddle-shaped") ST-SEGMENT ELEVATION present across nearly all leads (both inferior II/III/aVF and lateral/precordial I, aVL, V2-V6) WITHOUT a regional territory and WITHOUT reciprocal ST depression (except the expected reciprocal changes in aVR and V1); associated PR-SEGMENT DEPRESSION in the limb and left precordial leads with PR elevation in aVR; upright P waves before each narrow QRS; physiologically consistent, evenly spaced beats. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):** Diffuse concave ST elevation across most leads (not one territory); PR depression (PR elevation in aVR); no reciprocal ST depression except aVR/V1; sinus rhythm, narrow QRS.
+- **Avoid (negative prompt):** regional/localized ST elevation with reciprocal depression (STEMI); convex "tombstone" ST morphology; Q waves; irregular rhythm; random gibberish waveforms; impossible intervals; wrong grid color; annotations or lead labels.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "acute pericarditis 12-lead ECG diffuse ST elevation PR depression"; Wikimedia Commons "pericarditis ECG". Prefer the app vector tracing.
+
+### s2ck-0028 - Severe hyperkalemia with ECG changes  (Step 2 CK - Internal Medicine)  [ECG]
+- **WARNING:** AI image generators render ECG tracings as physiologically invalid gibberish and routinely draw wrong T-wave morphology and QRS widths. The peaked-T / wide-QRS / flat-P signature of hyperkalemia is exactly what AI botches. Strongly recommend a REAL de-identified hyperkalemia ECG (e.g., LITFL) or the app's own accurate vector tracing as the PRIMARY asset; treat any AI output as a placeholder only and QA against the criteria below.
+- **Case context:** 66-year-old man with ESRD who missed dialysis, on lisinopril and spironolactone, potassium 7.3 mEq/L, heart rate 46/min; the tracing must show tall PEAKED (tented) T waves, a WIDENED QRS complex, and flattened/absent P waves.
+- **Modality:** 12-lead ECG or rhythm strip on standard red/pink grid.
+- **Prompt:** Photorealistic clinical ECG on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines, clean black waveform trace, slow regular rhythm around 45/min. Depict severe hyperkalemia: tall, NARROW-BASED, sharply PEAKED / TENTED symmetric T waves that tower above the preceding R waves; a markedly WIDENED QRS complex (broad, smeared, prolonged duration) beginning to blend into the T wave; and FLATTENED, low-amplitude to nearly ABSENT P waves; overall a slow bradycardic rate with the tracing trending toward a sine-wave appearance. Physiologically consistent, evenly spaced beats. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):** Tall, narrow, peaked/tented symmetric T waves; wide QRS complexes; flattened or absent P waves; slow rate.
+- **Avoid (negative prompt):** normal-width QRS with small T waves; upright prominent P waves before each QRS; ST elevation of STEMI; deep symmetric T inversions (ischemia); U waves/long QT (hypokalemia); random gibberish waveforms; wrong grid color; annotations.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "hyperkalemia ECG peaked T waves"; Wikimedia Commons "hyperkalemia ECG". Prefer the app vector tracing.
+
+### s2ck-0033 - Acute ischemic stroke (normal early CT)  (Step 2 CK - Internal Medicine)
+- **Case context:** 70-year-old woman with atrial fibrillation, 90 minutes after sudden right-sided weakness and slurred speech, BP 168/92; the image is a noncontrast head CT that shows NO hemorrhage and NO early ischemic changes (a normal-appearing early CT that permits thrombolysis).
+- **Modality:** Noncontrast head CT, axial slice, brain window (DICOM grayscale).
+- **Prompt:** Hyperrealistic axial NONCONTRAST head CT image in diagnostic grayscale, brain window, radiologically accurate and symmetric anatomy, realistic CT noise and gray-white differentiation. Depict an essentially NORMAL early scan: NO hyperdense (bright white) blood anywhere - no intraparenchymal, subarachnoid, subdural, or epidural hemorrhage; preserved, crisp GRAY-WHITE MATTER DIFFERENTIATION throughout both hemispheres with normal cortical ribbon and basal ganglia margins; symmetric, normal-sized lateral ventricles and sulci with no effacement, no mass, and no midline shift; no established hypodense (dark) infarct and no loss of the insular ribbon. Skull and orbits correctly rendered. The scan looks reassuringly normal, consistent with hyperacute ischemia before CT changes appear. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - No hyperdense blood (no hemorrhage of any compartment)
+  - Preserved, symmetric gray-white differentiation; no wedge of hypodensity
+  - Normal symmetric ventricles and sulci, no midline shift or mass effect
+  - Correct, symmetric CT brain anatomy
+- **Avoid (negative prompt):** any bright white hyperdense hemorrhage; a dark wedge-shaped established infarct; loss of gray-white differentiation or effaced insular ribbon; hyperdense MCA sign; midline shift or herniation; ventricular asymmetry/duplication; contrast enhancement; MRI appearance; bone-window only.
+- **Real-image fallback:** Radiopaedia - search "normal noncontrast CT head" or "acute ischemic stroke normal early CT"; Wikimedia Commons "normal head CT axial".
+
+### s2ck-0035 - Adhesive small-bowel obstruction  (Step 2 CK - Surgery)
+- **Case context:** 60-year-old woman with a prior open hysterectomy, 2 days of crampy pain, bilious vomiting, distension, and obstipation; distended tympanitic abdomen with high-pitched bowel sounds, no peritoneal signs; the image is an upright abdominal radiograph showing multiple dilated small-bowel loops with air-fluid levels and no colonic gas.
+- **Modality:** Upright (erect) abdominal radiograph, grayscale DICOM-like.
+- **Prompt:** Photorealistic UPRIGHT (erect) abdominal radiograph of an adult, grayscale with DICOM-like diagnostic dynamic range, realistic bowel-gas and soft-tissue densities, anatomically correct abdomen. Show mechanical SMALL-BOWEL OBSTRUCTION: multiple DILATED loops of SMALL bowel stacked centrally in the mid-abdomen, identifiable as small bowel by thin VALVULAE CONNIVENTES (plicae) crossing the entire width of the bowel (a "stack of coins"/ladder pattern); numerous stepwise AIR-FLUID LEVELS at differing heights within the loops on this erect view; and a paucity or complete ABSENCE of gas in the colon and rectum distally. No free air under the diaphragm, no obvious mass. Correct rib margins, spine, and pelvic bones. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Multiple dilated central small-bowel loops with valvulae conniventes crossing the full width
+  - Multiple stepwise air-fluid levels (erect view)
+  - Absent/scant colonic and rectal gas distally
+  - Erect abdominal radiograph, correct anatomy
+- **Avoid (negative prompt):** haustral folds/peripheral dilated colon (large-bowel obstruction); massively dilated single loop / coffee-bean volvulus; free subdiaphragmatic air as the main finding (perforation); normal nondilated bowel gas pattern; chest radiograph; supine-only appearance without air-fluid levels when erect requested.
+- **Real-image fallback:** Radiopaedia - search "small bowel obstruction erect abdominal radiograph air-fluid levels"; Wikimedia Commons "small bowel obstruction X-ray".
+
+### s2ck-0038 - Acute uncomplicated diverticulitis  (Step 2 CK - Surgery)
+- **Case context:** 59-year-old man with 2 days of left lower quadrant pain, low-grade fever, mild nausea, localized LLQ tenderness without rebound/guarding, hemodynamically stable and tolerating oral intake; the image is a CT of the abdomen showing sigmoid colonic wall thickening with surrounding pericolonic fat stranding and no abscess or free air.
+- **Modality:** Contrast-enhanced axial CT of the abdomen/pelvis, soft-tissue window, grayscale DICOM-like.
+- **Prompt:** Hyperrealistic axial contrast-enhanced abdominopelvic CT image in diagnostic grayscale, soft-tissue window, radiologically accurate cross-sectional anatomy with realistic CT texture and enhancement. Focus on the SIGMOID COLON in the left lower quadrant showing segmental CIRCUMFERENTIAL BOWEL-WALL THICKENING with mural enhancement, several small outpouching DIVERTICULA arising from the wall, and hazy, streaky increased attenuation (FAT STRANDING) in the adjacent pericolonic fat surrounding the inflamed segment. There is NO rim-enhancing fluid collection (no abscess), NO extraluminal free air, and NO free intraperitoneal fluid - an uncomplicated picture. Adjacent small-bowel loops, bladder, and pelvic sidewalls are normal. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Sigmoid (LLQ) colonic wall thickening with visible diverticula
+  - Pericolonic fat stranding around the inflamed segment
+  - No abscess (no rim-enhancing collection), no extraluminal free air, no free fluid
+  - Correct axial CT anatomy, soft-tissue window
+- **Avoid (negative prompt):** a rim-enhancing pericolic abscess or gas-fluid collection; extraluminal free air/pneumoperitoneum; right-sided (appendiceal) inflammation; an obstructing annular colon mass with shouldering; large-volume ascites; oral/CT overlay artifacts; lung-window appearance.
+- **Real-image fallback:** Radiopaedia - search "acute diverticulitis CT sigmoid wall thickening pericolic fat stranding"; Wikimedia Commons "diverticulitis CT".
+
+### s2ck-0039 - Ileocolic intussusception  (Step 2 CK - Pediatrics)
+- **Case context:** 9-month-old boy with paroxysms of inconsolable crying and leg-drawing alternating with lethargy, a currant-jelly (blood and mucus) stool, and a sausage-shaped right-upper-abdomen mass; the image is an abdominal ultrasound showing a target (doughnut) sign of concentric bowel rings.
+- **Modality:** Pediatric abdominal ultrasound (grayscale, high-frequency probe, transverse view of the intussusception).
+- **Prompt:** Photorealistic infant abdominal ULTRASOUND image, grayscale with realistic fine high-frequency speckle texture and a fan/rectangular high-frequency field, transverse view of a bowel segment showing the classic TARGET / DOUGHNUT sign of intussusception: multiple CONCENTRIC alternating hypoechoic (dark) and hyperechoic (bright) RINGS arranged as a bull's-eye - an outer thick hypoechoic rim of edematous bowel wall surrounding inner concentric layers of telescoped bowel and mesenteric fat, producing a round layered target. Adjacent normal bowel and a small amount of trapped echogenic mesenteric fat are visible. Correct pediatric probe geometry and depth gradient. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Round target/doughnut with multiple concentric alternating hypo-/hyperechoic rings
+  - Thick outer hypoechoic bowel-wall rim (edema)
+  - Trapped central echogenic mesenteric fat
+  - Authentic grayscale infant ultrasound texture
+- **Avoid (negative prompt):** a single simple anechoic cyst; the "target" of hypertrophic pyloric stenosis (elongated single-ring channel) mislabeled; color Doppler overlay; CT/MRI cross-section appearance; two simple parallel lines only; calipers/measurement crosses; adult-sized anatomy.
+- **Real-image fallback:** Radiopaedia - search "intussusception ultrasound target doughnut sign"; The POCUS Atlas "intussusception"; Wikimedia Commons "intussusception ultrasound".
+
+### s2ck-0040 - Acute epiglottitis  (Step 2 CK - Pediatrics)
+- **Case context:** Unvaccinated 4-year-old boy with rapid-onset high fever, severe sore throat, drooling, tripod/leaning-forward posture, muffled voice, and soft inspiratory stridor, appearing toxic; the image is a lateral neck radiograph showing an enlarged, thumb-shaped epiglottis (thumbprint sign).
+- **Modality:** Lateral soft-tissue neck radiograph, grayscale DICOM-like.
+- **Prompt:** Photorealistic LATERAL soft-tissue neck radiograph of a young child, grayscale with DICOM-like diagnostic dynamic range, realistic airway-column and soft-tissue densities, anatomically correct pediatric cervical anatomy in profile. Show the THUMBPRINT SIGN of acute epiglottitis: a markedly ENLARGED, rounded, THUMB-SHAPED soft-tissue density of the swollen EPIGLOTTIS projecting into and narrowing the air column at the base of the tongue/upper airway, with THICKENED ARYEPIGLOTTIC FOLDS and loss of the normal thin, curved "little-finger" epiglottic shadow; the vallecula is obliterated. The prevertebral soft tissues are not the primary abnormality. Cervical vertebrae and mandible correctly rendered in lateral profile. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Enlarged, rounded thumb-shaped epiglottis narrowing the airway (thumbprint sign)
+  - Thickened aryepiglottic folds; obliterated vallecula
+  - Lateral neck projection, correct pediatric anatomy
+  - Air column visible for contrast
+- **Avoid (negative prompt):** the "steeple sign" of subglottic tracheal narrowing (croup, wrong); a widened prevertebral soft-tissue stripe as the main finding (retropharyngeal abscess); a normal thin curved epiglottis; a frontal (AP) view when lateral requested; a foreign body; adult anatomy; annotations/arrows.
+- **Real-image fallback:** Radiopaedia - search "acute epiglottitis lateral neck radiograph thumbprint sign"; Wikimedia Commons "epiglottitis thumb sign X-ray".
+
+### s2ck-0042 - Slipped capital femoral epiphysis  (Step 2 CK - Pediatrics)
+- **Case context:** 13-year-old boy with obesity, several weeks of dull left groin and knee pain and a limp without injury; the left hip is held in external rotation with limited, painful internal rotation; the image is a frog-leg lateral hip radiograph showing posterior and inferior displacement of the femoral epiphysis relative to the femoral neck.
+- **Modality:** Frog-leg lateral hip/pelvis radiograph, grayscale DICOM-like.
+- **Prompt:** Photorealistic FROG-LEG LATERAL radiograph of the hips/pelvis in an adolescent, grayscale with DICOM-like diagnostic dynamic range, realistic bone trabecular texture, anatomically correct pelvis and proximal femora with the hips abducted and externally rotated in the frog-leg position. On the affected (left) hip show SLIPPED CAPITAL FEMORAL EPIPHYSIS: the femoral head (capital epiphysis) slipped POSTERIORLY and INFERIORLY (medially) relative to the femoral neck, so the epiphysis sits like "ice cream slipping off the cone"; the physis (growth plate) appears WIDENED and irregular; and a line drawn along the superior femoral neck (Klein's line) fails to intersect the epiphysis as it normally would. The contralateral hip is normal with a well-seated epiphysis for comparison. Growth plates open, consistent with adolescence. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Posterior/inferomedial slippage of the capital epiphysis relative to the neck ("melting ice cream cone")
+  - Widened, irregular physis on the affected side
+  - Klein's line failing to intersect the slipped epiphysis
+  - Normal contralateral hip for contrast; open physes
+- **Avoid (negative prompt):** a fragmented, sclerotic, flattened femoral head (Legg-Calve-Perthes avascular necrosis); an acute transcervical femoral neck fracture line; a normally seated symmetric epiphysis bilaterally; a dislocated femoral head out of the acetabulum; adult fused physes; a frontal AP-only view when frog-leg lateral requested; annotations.
+- **Real-image fallback:** Radiopaedia - search "slipped capital femoral epiphysis frog-leg lateral Klein line"; Wikimedia Commons "SCFE hip radiograph".
+
+### s3-0009 - Complete (third-degree) atrioventricular block  (Step 3 - Internal Medicine)  [ECG]
+- **WARNING:** AI image generators render ECG tracings as physiologically meaningless gibberish and cannot reliably draw dissociated P and QRS rates. The defining AV dissociation of complete heart block is exactly what AI gets wrong. Strongly recommend a REAL de-identified complete-heart-block ECG (e.g., LITFL) or the app's own accurate vector-drawn tracing as the PRIMARY asset; use any AI output only as a placeholder and QA every complex against the criteria below.
+- **Case context:** 68-year-old man with two syncopal episodes, lightheaded, heart rate 38/min, BP 86/54, pale and diaphoretic; the tracing must show regular P waves and regular QRS complexes marching at different rates with no consistent PR relationship (complete AV dissociation).
+- **Modality:** 12-lead ECG or rhythm strip on standard red/pink grid.
+- **Prompt:** Photorealistic clinical ECG rhythm strip on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines, clean black waveform trace. Depict THIRD-DEGREE (complete) AV BLOCK: two entirely INDEPENDENT rhythms with no relationship - regular, upright P WAVES marching out at a faster ATRIAL rate (roughly 80-90/min), and a separate, slower, REGULAR set of QRS complexes at an escape rate around 38/min, with the P waves bearing NO consistent PR relationship to the QRS (P waves visible before, during/buried in, and after QRS complexes at varying positions); the QRS complexes are regular and broad (ventricular escape). The two rates are clearly dissociated. Physiologically consistent, evenly spaced within each rhythm. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):** Regular P waves at a faster rate; regular QRS at a slower escape rate; NO consistent PR relationship (AV dissociation); more P waves than QRS complexes.
+- **Avoid (negative prompt):** consistent fixed PR before every QRS (normal conduction / 1:1); progressively lengthening PR then a dropped beat (Wenckebach); an irregularly irregular rhythm with no P waves (AF); random gibberish waveforms; a rapid rate; wrong grid color; annotations.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "complete heart block third degree AV block ECG"; Wikimedia Commons "third degree AV block ECG". Prefer the app vector tracing.
+
+### s3-0013 - New pleural effusion of unknown cause  (Step 3 - Internal Medicine)
+- **Case context:** 60-year-old man with 2 weeks of progressive dyspnea and a dull left chest ache, with left basal dullness to percussion, decreased breath sounds, and reduced tactile fremitus, afebrile and stable; the image is an upright chest radiograph showing a moderate left pleural effusion with blunting of the costophrenic angle and a meniscus sign.
+- **Modality:** Upright frontal (PA) chest radiograph, grayscale DICOM-like.
+- **Prompt:** Photorealistic UPRIGHT frontal PA chest radiograph of an adult man, grayscale with DICOM-like diagnostic dynamic range, realistic lung, rib, and mediastinal densities, anatomically correct thorax. Show a MODERATE LEFT PLEURAL EFFUSION: a homogeneous water-density (white) opacity occupying the LEFT lower hemithorax with BLUNTING/obliteration of the left costophrenic angle, and a concave-upward, laterally rising MENISCUS SIGN where the fluid margin curves up along the lateral chest wall; the underlying left lung base is obscured. The RIGHT costophrenic angle is sharp and the right lung is clear for contrast; the trachea and mediastinum are not markedly shifted; the heart size is normal. Correct ribs, clavicles, and hemidiaphragm contours. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Homogeneous basal opacity with blunted left costophrenic angle
+  - Concave-upward meniscus rising laterally
+  - Clear contralateral (right) lung and sharp right costophrenic angle
+  - Upright frontal projection, normal heart size, no gross mediastinal shift
+- **Avoid (negative prompt):** bilateral effusions when a unilateral left effusion is specified; complete white-out with contralateral mediastinal shift (massive effusion) unless intended; lobar consolidation with air bronchograms and no meniscus; a tension pneumothorax (lucent hemithorax); Kerley lines/cardiomegaly of florid CHF as the dominant picture; lateral or supine view when upright frontal requested.
+- **Real-image fallback:** Radiopaedia - search "pleural effusion chest radiograph meniscus sign blunted costophrenic angle"; Wikimedia Commons "pleural effusion X-ray".
+
+### s3-0023 - Unstable wide-complex (ventricular) tachycardia  (Step 3 - Emergency Medicine)  [ECG]
+- **WARNING:** AI image generators render ECG tracings as physiologically meaningless gibberish and cannot reliably draw uniform wide QRS complexes. The monomorphic wide-complex VT pattern is exactly what AI gets wrong. Strongly recommend a REAL de-identified VT 12-lead ECG (e.g., LITFL) or the app's own accurate vector-drawn tracing as the PRIMARY asset; use any AI output only as a placeholder and QA every complex against the criteria below.
+- **Case context:** 65-year-old man with prior myocardial infarction, palpitations and chest pain, pale and diaphoretic, BP 78/44, acutely ill; the tracing must show a regular WIDE-complex tachycardia at ~180/min with no clearly discernible P waves, consistent with ventricular tachycardia.
+- **Modality:** 12-lead ECG or rhythm strip on standard red/pink grid.
+- **Prompt:** Photorealistic clinical ECG on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines, clean black waveform trace. Depict MONOMORPHIC VENTRICULAR TACHYCARDIA: a fast, REGULAR tachycardia at roughly 180/min composed of uniform, BROAD, WIDE (prolonged-duration) QRS complexes of consistent identical morphology beat to beat, with NO clearly discernible P waves preceding the complexes and abnormal, discordant ST-T segments; the complexes are bizarre and wide but regular and evenly spaced. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):** Regular rapid rhythm (~180/min); uniformly WIDE (broad) QRS complexes of constant morphology; no discernible P waves; monomorphic (not twisting) envelope.
+- **Avoid (negative prompt):** a narrow-complex regular tachycardia (SVT); a twisting/waxing-waning polymorphic envelope (torsades); coarse chaotic ventricular fibrillation with no organized complexes; visible upright P waves before each QRS; an irregular rhythm; random gibberish waveforms; wrong grid color; annotations.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "monomorphic ventricular tachycardia 12-lead ECG"; Wikimedia Commons "ventricular tachycardia ECG". Prefer the app vector tracing.
+
+### s3-0025 - Adhesive small-bowel obstruction  (Step 3 - Surgery)
+- **Case context:** 60-year-old man with a prior open appendectomy, 1 day of crampy pain, distension, bilious vomiting, and no flatus; distended tympanitic abdomen with high-pitched bowel sounds, non-peritonitic and stable; the image is supine and upright abdominal radiographs showing multiple dilated loops of small bowel with air-fluid levels and no colonic gas.
+- **Modality:** Abdominal radiograph series - supine AND upright (erect) views, grayscale DICOM-like.
+- **Prompt:** Photorealistic paired abdominal radiograph presentation of an adult - a SUPINE and an UPRIGHT (erect) view side by side - grayscale with DICOM-like diagnostic dynamic range, realistic bowel-gas and soft-tissue densities, anatomically correct abdomen. Both views show mechanical SMALL-BOWEL OBSTRUCTION: multiple DILATED central loops of SMALL bowel identifiable by thin VALVULAE CONNIVENTES (plicae circulares) that cross the entire bowel width in a stacked "ladder"/"stack of coins" pattern. On the SUPINE view the dilated air-filled loops are arranged centrally with no colonic or rectal gas distally; on the UPRIGHT view multiple stepwise AIR-FLUID LEVELS sit at differing heights within the loops. There is NO free subdiaphragmatic air and no colonic haustral dilation. Correct spine, ribs, and pelvic bones on both frames. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Dilated central small-bowel loops with valvulae conniventes crossing full width (both views)
+  - Stepwise air-fluid levels on the upright view
+  - Absent colonic/rectal gas distally
+  - Paired supine + upright frames, correct anatomy
+- **Avoid (negative prompt):** peripheral dilated colon with haustra (large-bowel obstruction); a single massively dilated coffee-bean loop (volvulus); free air under the diaphragm as the main finding (perforation); a normal nondistended bowel-gas pattern; a chest radiograph; only one projection when a supine-plus-upright pair is requested.
+- **Real-image fallback:** Radiopaedia - search "small bowel obstruction supine erect abdominal radiograph air-fluid levels valvulae conniventes"; Wikimedia Commons "small bowel obstruction X-ray series".

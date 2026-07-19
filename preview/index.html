@@ -312,7 +312,10 @@
 <script src="data/usmle-step1-b4.js"></script>
 <script src="data/usmle-step1-b5.js"></script>
 <script src="data/usmle-step1-b6.js"></script>
+<script src="data/usmle-step1-b7.js"></script>
 <script src="data/usmle-step2ck-b1.js"></script>
+<script src="data/usmle-step2ck-b2.js"></script>
+<script src="data/usmle-step3d1-b1.js"></script>
 <script src="illustrations.js"></script>
 <script src="illus-pA.js"></script>
 <script src="illus-pB.js"></script>
@@ -328,18 +331,23 @@
       (typeof USMLE_STEP1_B3!=="undefined"?USMLE_STEP1_B3:[]),
       (typeof USMLE_STEP1_B4!=="undefined"?USMLE_STEP1_B4:[]),
       (typeof USMLE_STEP1_B5!=="undefined"?USMLE_STEP1_B5:[]),
-      (typeof USMLE_STEP1_B6!=="undefined"?USMLE_STEP1_B6:[])
+      (typeof USMLE_STEP1_B6!=="undefined"?USMLE_STEP1_B6:[]),
+      (typeof USMLE_STEP1_B7!=="undefined"?USMLE_STEP1_B7:[])
     ),
     step2ck: [].concat(
-      (typeof USMLE_STEP2CK_B1!=="undefined"?USMLE_STEP2CK_B1:[])
+      (typeof USMLE_STEP2CK_B1!=="undefined"?USMLE_STEP2CK_B1:[]),
+      (typeof USMLE_STEP2CK_B2!=="undefined"?USMLE_STEP2CK_B2:[])
+    ),
+    step3: [].concat(
+      (typeof USMLE_STEP3D1_B1!=="undefined"?USMLE_STEP3D1_B1:[])
     )
   };
   var EXAM_META = {
     step1:  { label:"Step 1",    max:280 },
-    step2ck:{ label:"Step 2 CK", max:318 }
-    // step3 (412 MCQ: 232 Day 1 + 180 Day 2, plus 13 CCS) reserved
+    step2ck:{ label:"Step 2 CK", max:318 },
+    step3:  { label:"Step 3",    max:412 }  // 232 Day 1 FIP + 180 Day 2 ACM; +13 CCS separate
   };
-  var EXAM_ORDER=["step1","step2ck"], LETTERS=["A","B","C","D","E"];
+  var EXAM_ORDER=["step1","step2ck","step3"], LETTERS=["A","B","C","D","E"];
   var $=function(s){return document.querySelector(s)};
   function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
   var byId={}; EXAM_ORDER.forEach(function(ex){(BANKS[ex]||[]).forEach(function(q){byId[q.id]=q})});
