@@ -77,7 +77,8 @@
 
   // ---- schematic helpers ----------------------------------------------------
   function fig(vb, inner, w) {
-    return '<svg viewBox="0 0 ' + vb + '" role="img" width="' + (w || 360) + '" xmlns="http://www.w3.org/2000/svg" fill="none">' + inner + '</svg>';
+    // vb is a full "minX minY W H" string (e.g. "0 0 360 200")
+    return '<svg viewBox="' + vb + '" role="img" width="' + (w || 360) + '" xmlns="http://www.w3.org/2000/svg" fill="none">' + inner + '</svg>';
   }
   var CC = 'currentColor';
 
