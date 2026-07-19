@@ -20,8 +20,9 @@ files survive session death, conversation does not).
 | Step 1 | B3 | data/usmle-step1-b3.js | 25 | yes | yes |
 | Step 1 | B4 | data/usmle-step1-b4.js | 25 | yes | yes |
 | Step 1 | B5 | data/usmle-step1-b5.js | 25 | yes | yes |
+| Step 1 | B6 | data/usmle-step1-b6.js | 25 | yes | yes |
 
-Step 1 running total: **125** MCQs (max 280).
+Step 1 running total: **150** MCQs (max 280).
 
 ### Batch ids
 - B1: s1-0001 .. s1-0025 (contiguous).
@@ -29,6 +30,7 @@ Step 1 running total: **125** MCQs (max 280).
 - B3: s1-0051 .. s1-0075 (contiguous). No collisions with B1/B2.
 - B4: s1-0076 .. s1-0100 (contiguous). No collisions with B1/B2/B3.
 - B5: s1-0101 .. s1-0125 (contiguous). No collisions with B1-B4.
+- B6: s1-0126 .. s1-0150 (contiguous). No collisions with B1-B5.
 
 ### Answer key balance
 - B1: A:5 B:5 C:5 D:5 E:5. Anchors 12/25.
@@ -36,6 +38,15 @@ Step 1 running total: **125** MCQs (max 280).
 - B3: A:5 B:5 C:5 D:5 E:5. Anchors 13/25.
 - B4: A:5 B:5 C:5 D:5 E:5. Anchors 12/25.
 - B5: A:5 B:5 C:5 D:5 E:5. Anchors 13/25.
+- B6: A:5 B:5 C:5 D:5 E:5. Anchors 17/25.
+
+### B6 topics (no repeats vs B1-B5)
+homocystinuria, familial hypercholesterolemia, zero-order kinetics, iron deficiency,
+Hodgkin lymphoma, schizophrenia, Huntington, Wernicke encephalopathy, osteoporosis,
+osteosarcoma, WPW, coarctation of aorta, pulmonary embolism (ABG), poststrep GN,
+ulcerative colitis, pyloric stenosis, Graves, Addison, preeclampsia, SLE, lead
+poisoning, absolute risk reduction, confounding, informed consent, intimate partner
+violence. Difficulty 5 easy / 14 moderate / 6 hard (new wider spread applied).
 
 ### B5 topics (no repeats vs B1-B4)
 Tay-Sachs, Down syndrome, vitamin B6/isoniazid, anaphylaxis (type I), TTP, epidural
@@ -89,17 +100,20 @@ Tarasoff duty to protect.
   Obstetrics & Gynecology 4, Psychiatry 2, Preventive Medicine & Ethics 2.
 - Key 5/5/5/5/5, 11 anchors, difficulty 5 easy / 14 moderate / 6 hard. All original;
   clinical lead-ins (next best step / most likely dx). QA'd medically clean.
-- Preview: NOT yet wired (Step 1 preview is single-exam). To demo Step 2 CK, either add
-  an exam selector to preview, or mount via production/usmle-mode.js with a Step 2 bank.
+- Preview: WIRED. preview/index.html now has an Exam selector (Step 1 150 / Step 2 CK 25);
+  switching repopulates the system filter and pool. Browser-verified both exams.
 
 ## Next
-- Step 1 Batch 6 (s1-0126 .. s1-0150), blueprint mix + the new wider difficulty spread.
-  Validate with `--against data/usmle-step1-b1.js ... data/usmle-step1-b5.js`.
-- Preview app (`preview/`) now loads B1..B5 (125 items); add each new batch's
-  `<script src>` + BANK concat when built, and copy the file into `preview/data/`.
-- Later (separate publish session): wire "USMLE Mode" UI into `index.html`, fold banks
-  into a production array, push live via the Chrome publish path (medcodex-publish).
+- Step 1 Batch 7 (s1-0151 .. s1-0175), blueprint mix + wider difficulty spread
+  (~5 easy / 14 moderate / 6 hard). Validate `--against data/usmle-step1-b1.js .. b6.js`.
+- Step 2 CK Batch 2 (s2ck-0026 .. s2ck-0050) when desired; validate `--exam step2ck
+  --against data/usmle-step2ck-b1.js`. Consider a Step 2 CK production merge
+  (extend production/build-data.js or add a step2ck bundler).
+- Preview app (`preview/`) is now multi-exam (B1..B6 = 150 Step 1 + Step 2 CK 25). For a
+  new batch: add its `<script src>`, extend the BANKS.<exam> concat, copy into preview/data.
+- Production kit (`production/`): usmle-step1-data.js regenerated to 150 via build-data.js
+  (auto-globs). Live wiring happens via the Chrome publish path (medcodex-publish).
 
 ## Trigger for next session
-"Continue the USMLE module - generate Step 1 Batch 6 (25 items, blueprint mix)."
-Attach: this status doc + data/usmle-step1-b1.js .. b5.js (for id checks).
+"Continue the USMLE module - generate Step 1 Batch 7 (25 items, blueprint mix)."
+Attach: this status doc + data/usmle-step1-b1.js .. b6.js (for id checks).

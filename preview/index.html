@@ -122,7 +122,7 @@
     <div class="logo">R</div>
     <div class="brand">
       <h1>Rounds Codex &mdash; USMLE Mode</h1>
-      <p>Step 1 &middot; preview build</p>
+      <p>Step 1 + Step 2 CK &middot; preview build</p>
     </div>
     <span class="pill" id="bankcount">&hellip;</span>
   </header>
@@ -138,6 +138,10 @@
           <button data-v="explanation" class="active">Explanation<span class="desc">Feedback after each answer</span></button>
           <button data-v="standard">Standard<span class="desc">Exam sim &middot; score at the end</span></button>
         </div>
+      </div>
+      <div>
+        <label class="fld">Exam</label>
+        <select id="exam"></select>
       </div>
       <div class="grid two">
         <div>
@@ -224,16 +228,28 @@
 <script src="data/usmle-step1-b3.js"></script>
 <script src="data/usmle-step1-b4.js"></script>
 <script src="data/usmle-step1-b5.js"></script>
+<script src="data/usmle-step1-b6.js"></script>
+<script src="data/usmle-step2ck-b1.js"></script>
 <script>
 (function(){
   "use strict";
-  var BANK = [].concat(
-    (typeof USMLE_STEP1_B1!=="undefined"?USMLE_STEP1_B1:[]),
-    (typeof USMLE_STEP1_B2!=="undefined"?USMLE_STEP1_B2:[]),
-    (typeof USMLE_STEP1_B3!=="undefined"?USMLE_STEP1_B3:[]),
-    (typeof USMLE_STEP1_B4!=="undefined"?USMLE_STEP1_B4:[]),
-    (typeof USMLE_STEP1_B5!=="undefined"?USMLE_STEP1_B5:[])
-  );
+  var BANKS = {
+    step1: [].concat(
+      (typeof USMLE_STEP1_B1!=="undefined"?USMLE_STEP1_B1:[]),
+      (typeof USMLE_STEP1_B2!=="undefined"?USMLE_STEP1_B2:[]),
+      (typeof USMLE_STEP1_B3!=="undefined"?USMLE_STEP1_B3:[]),
+      (typeof USMLE_STEP1_B4!=="undefined"?USMLE_STEP1_B4:[]),
+      (typeof USMLE_STEP1_B5!=="undefined"?USMLE_STEP1_B5:[]),
+      (typeof USMLE_STEP1_B6!=="undefined"?USMLE_STEP1_B6:[])
+    ),
+    step2ck: [].concat(
+      (typeof USMLE_STEP2CK_B1!=="undefined"?USMLE_STEP2CK_B1:[])
+    )
+  };
+  var EXAM_LABELS = { step1: "Step 1", step2ck: "Step 2 CK" };
+  var EXAM_ORDER = ["step1", "step2ck"];
+  var currentExam = "step1";
+  var BANK = BANKS[currentExam];
   var LETTERS=["A","B","C","D","E"];
   var $=function(s){return document.querySelector(s)};
   function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
@@ -287,21 +303,40 @@
   function shuffle(a){var r=a.slice();for(var i=r.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=r[i];r[i]=r[j];r[j]=t;}return r;}
 
   // ---------- setup screen ----------
-  function initSetup(){
-    $("#bankcount").textContent=BANK.length+" items loaded";
+  function populateSystems(){
     var systems={};
     BANK.forEach(function(q){systems[q.system]=(systems[q.system]||0)+1});
     var sysSel=$("#system");
+    sysSel.innerHTML='<option value="">All systems (blueprint mix)</option>';
     Object.keys(systems).sort().forEach(function(s){
       var o=document.createElement("option");o.value=s;o.textContent=s+" ("+systems[s]+")";sysSel.appendChild(o);
     });
+  }
+  function setExam(ex){
+    if(!BANKS[ex]||!BANKS[ex].length) return;
+    currentExam=ex; BANK=BANKS[ex];
+    $("#bankcount").textContent=BANK.length+" items loaded";
+    populateSystems();
+    $("#difficulty").value="";
+    refreshPool();
+  }
+  function initSetup(){
+    var examSel=$("#exam");
+    EXAM_ORDER.forEach(function(ex){
+      if(BANKS[ex]&&BANKS[ex].length){
+        var o=document.createElement("option");o.value=ex;
+        o.textContent=EXAM_LABELS[ex]+" ("+BANKS[ex].length+")";examSel.appendChild(o);
+      }
+    });
+    examSel.value=currentExam;
+    examSel.addEventListener("change",function(){setExam(this.value)});
     $("#mode").addEventListener("click",function(e){
       var b=e.target.closest("button");if(!b)return;
       cfg.mode=b.getAttribute("data-v");
       [].forEach.call(this.children,function(c){c.classList.toggle("active",c===b)});
     });
     ["#system","#difficulty"].forEach(function(id){$(id).addEventListener("change",refreshPool)});
-    refreshPool();
+    setExam(currentExam);
     $("#start").addEventListener("click",startSet);
     $("#again").addEventListener("click",function(){show("setup")});
   }
