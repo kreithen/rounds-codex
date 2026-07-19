@@ -1,232 +1,349 @@
 /*
  * Rounds Codex - USMLE Mode illustration pack C
- * Original, clearly-SCHEMATIC educational SVGs keyed by question id.
- * Diagrammatic teaching schematics - never photo-real, never real clinical images.
- * The app tags them "SCHEMATIC" and adds a caption, so no descriptive caption
- * text lives inside the SVG (only tiny <=2-word internal part labels where useful).
- * Colors use currentColor / low-opacity so they adapt to light and dark themes;
- * "#e0524f" (or a copper/tan illustrative hue) marks only the key finding.
+ * Rebuilt to medical-textbook quality: layered, anatomically-schematic SVGs
+ * keyed by question id. Modeled on the SCH.bootHeart gold standard
+ * (dark card, faint film frame, light-on-dark layered anatomy, red accent
+ * "#e0524f" for the key finding, no internal caption sentences).
+ * Self-contained, ASCII-safe. The app tags them "SCHEMATIC" and adds a caption.
  */
 (function () {
   "use strict";
-  var CC = "currentColor";
 
-  // ---- shared chest-radiograph schematic ------------------------------------
-  function cxr(feature) {
-    var s = '<svg viewBox="0 0 300 240" width="360" xmlns="http://www.w3.org/2000/svg" fill="none">';
-    s += '<rect x="6" y="6" width="288" height="228" rx="12" stroke="' + CC + '" stroke-opacity="0.15"/>';
-    // spine + trachea/mediastinum
-    s += '<line x1="150" y1="24" x2="150" y2="196" stroke="' + CC + '" stroke-opacity="0.2" stroke-width="6"/>';
-    s += '<line x1="150" y1="26" x2="150" y2="70" stroke="' + CC + '" stroke-opacity="0.3" stroke-width="1.5"/>';
-    // posterior ribs, both sides
-    s += '<g stroke="' + CC + '" stroke-opacity="0.28" fill="none">';
-    for (var i = 0; i < 5; i++) {
-      var y = 44 + i * 20;
-      s += '<path d="M148 ' + y + ' q-52 6 -104 ' + (y + 42) + '"/>';
-      s += '<path d="M152 ' + y + ' q52 6 104 ' + (y + 42) + '"/>';
-    }
-    s += '</g>';
-    // diaphragm domes (right slightly higher)
-    s += '<path d="M40 198 q54 -34 108 -8" stroke="' + CC + '" stroke-opacity="0.35"/>';
-    s += '<path d="M152 192 q52 -30 104 2" stroke="' + CC + '" stroke-opacity="0.35"/>';
-    return s + feature + '</svg>';
+  var FILM = "#0a0f16";
+  var FR = "rgba(255,255,255,.08)";
+  var ACC = "#e0524f";
+
+  function svg(w, h, inner) {
+    return '<svg viewBox="0 0 ' + w + ' ' + h + '" width="320" xmlns="http://www.w3.org/2000/svg" fill="none">' +
+      '<rect x="8" y="8" width="' + (w - 16) + '" height="' + (h - 16) + '" rx="12" fill="' + FILM + '" stroke="' + FR + '"/>' +
+      '<g stroke-linecap="round" stroke-linejoin="round">' + inner + '</g></svg>';
   }
-  // normal cardiac silhouette (left heart border bulging to image-right)
-  var heart = '<path d="M150 106 C198 108 202 156 188 176 C178 190 158 190 150 186 C142 190 126 182 128 164 C118 150 126 120 150 112 Z" fill="' + CC + '" fill-opacity="0.08" stroke="' + CC + '" stroke-width="1"/>';
+  // deterministic pseudo-random for scatter fills
+  function rng(seed) { var s = seed; return function () { s = (s * 1103515245 + 12345) & 0x7fffffff; return s / 0x7fffffff; }; }
+  function R(n) { return Math.round(n * 10) / 10; }
 
-  // s1-0063 Sarcoidosis: symmetric BILATERAL HILAR lymphadenopathy (lobulated)
-  var sarcoid = heart +
-    // right hilum - lobulated node mass
-    '<path d="M134 114 q-18 -2 -24 12 q-9 9 -4 24 q5 15 21 15 q17 0 18 -17 q3 -20 -11 -34 z" fill="' + CC + '" fill-opacity="0.26" stroke="' + CC + '" stroke-width="1"/>' +
-    '<circle cx="116" cy="126" r="8" fill="' + CC + '" fill-opacity="0.22"/>' +
-    '<circle cx="126" cy="146" r="7" fill="' + CC + '" fill-opacity="0.22"/>' +
-    // left hilum - mirror
-    '<path d="M166 114 q18 -2 24 12 q9 9 4 24 q-5 15 -21 15 q-17 0 -18 -17 q-3 -20 11 -34 z" fill="' + CC + '" fill-opacity="0.26" stroke="' + CC + '" stroke-width="1"/>' +
-    '<circle cx="184" cy="126" r="8" fill="' + CC + '" fill-opacity="0.22"/>' +
-    '<circle cx="174" cy="146" r="7" fill="' + CC + '" fill-opacity="0.22"/>' +
-    '<text x="150" y="90" text-anchor="middle" font-size="10" font-family="sans-serif" fill="' + CC + '" fill-opacity="0.7">bilateral hila</text>';
-
-  // s1-0113 ARDS: diffuse BILATERAL patchy alveolar opacities, normal heart
-  var ards = (function () {
-    var pts = [
-      [58, 78, 12, 0.16], [92, 66, 10, 0.14], [72, 104, 15, 0.18], [46, 132, 11, 0.15],
-      [96, 140, 13, 0.16], [70, 158, 10, 0.14], [110, 110, 9, 0.13], [50, 96, 8, 0.12],
-      [200, 72, 11, 0.15], [232, 92, 13, 0.17], [214, 128, 15, 0.18], [248, 118, 10, 0.14],
-      [206, 158, 12, 0.16], [236, 156, 9, 0.13], [190, 110, 9, 0.13], [252, 78, 8, 0.12]
-    ], g = '<g fill="' + CC + '">';
-    pts.forEach(function (p) { g += '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="' + p[2] + '" fill-opacity="' + p[3] + '"/>'; });
-    g += '</g>';
-    return heart + g +
-      '<text x="150" y="222" text-anchor="middle" font-size="10" font-family="sans-serif" fill="' + CC + '" fill-opacity="0.6">bilateral infiltrates</text>';
-  })();
-
-  // s1-0137 Coarctation: inferior rib NOTCHING + figure-3 aortic contour
-  var coarct = (function () {
-    var f = heart;
-    // notches on inferior margins of several posterior ribs (small nicks)
-    f += '<g stroke="' + CC + '" stroke-width="1.4" fill="none">';
-    var notches = [[74, 96], [66, 118], [92, 118], [58, 140], [226, 96], [234, 118], [208, 118], [242, 140]];
-    notches.forEach(function (n) { f += '<path d="M' + (n[0] - 6) + ' ' + n[1] + ' q6 -8 12 0"/>'; });
-    f += '</g>';
-    // figure-3 aortic knob contour at upper-left mediastinum
-    f += '<path d="M150 52 q22 2 21 17 q-1 11 -15 13 q14 2 15 17 q1 15 -21 17" stroke="' + CC + '" stroke-width="1.8" fill="none"/>';
-    f += '<text x="176" y="82" font-size="13" font-family="sans-serif" fill="' + CC + '" fill-opacity="0.75">3</text>';
-    f += '<text x="150" y="222" text-anchor="middle" font-size="10" font-family="sans-serif" fill="' + CC + '" fill-opacity="0.6">rib notching</text>';
-    return f;
-  })();
-
-  // s1-0135 Osteosarcoma: distal femur metaphysis, sunburst + Codman triangle
-  var osteosarcoma = (function () {
-    var s = '<svg viewBox="0 0 240 260" width="360" xmlns="http://www.w3.org/2000/svg" fill="none">';
-    // femur: shaft narrowing above, flaring to distal metaphysis/condyles below
-    s += '<path d="M100 20 L100 150 Q96 174 80 192 Q70 204 70 230 L170 230 Q170 204 160 192 Q144 174 140 150 L140 20 Z" fill="' + CC + '" fill-opacity="0.05" stroke="' + CC + '" stroke-width="1.5"/>';
-    s += '<path d="M96 230 Q120 216 144 230" stroke="' + CC + '" stroke-opacity="0.4"/>'; // articular hint
-    s += '<line x1="120" y1="26" x2="120" y2="150" stroke="' + CC + '" stroke-opacity="0.12"/>'; // medullary canal
-    // destructive moth-eaten lesion in metaphysis, breaking lateral cortex
-    s += '<path d="M132 128 q30 -6 34 20 q6 24 -16 32 q-24 6 -30 -16 q-6 -24 12 -36 z" fill="' + CC + '" fill-opacity="0.13" stroke="' + CC + '" stroke-width="1" stroke-dasharray="3 3"/>';
-    s += '<g fill="' + CC + '" fill-opacity="0.25"><circle cx="140" cy="148" r="3"/><circle cx="150" cy="158" r="2.5"/><circle cx="134" cy="164" r="2"/><circle cx="152" cy="140" r="2"/></g>';
-    // sunburst - spiculated periosteal reaction radiating from lateral cortex
-    s += '<g stroke="' + CC + '" stroke-width="1">';
-    var ox = 150, oy = 150, spikes = [[210, 108], [214, 130], [216, 152], [214, 176], [206, 196], [190, 96], [176, 210]];
-    spikes.forEach(function (p) { s += '<line x1="' + ox + '" y1="' + oy + '" x2="' + p[0] + '" y2="' + p[1] + '"/>'; });
+  // ------------------------------------------------------------------ s1-0101
+  // Cherry-red spot fundus
+  var fundus = (function () {
+    var s = '<defs><clipPath id="f101"><circle cx="160" cy="150" r="120"/></clipPath></defs>';
+    s += '<circle cx="160" cy="150" r="120" fill="#8f3a24"/>';
+    s += '<circle cx="176" cy="146" r="98" fill="#b5512f" opacity="0.42"/>';
+    s += '<circle cx="160" cy="150" r="120" stroke="#6a2b1c" stroke-width="6" opacity="0.7"/>';
+    s += '<g clip-path="url(#f101)" fill="none">';
+    // veins - darker, wider
+    s += '<g stroke="#5e1712" stroke-width="5">';
+    s += '<path d="M104 138 C138 96 214 92 268 130"/><path d="M104 162 C138 204 214 208 268 170"/>';
+    s += '<path d="M86 130 C64 104 40 96 18 98"/><path d="M86 170 C64 196 40 206 18 202"/></g>';
+    // arteries - brighter, narrower, with branches
+    s += '<g stroke="#c0392b" stroke-width="2.6">';
+    s += '<path d="M108 142 C140 108 210 104 262 136"/><path d="M108 158 C140 196 210 200 262 164"/>';
+    s += '<path d="M90 134 C70 112 46 104 22 106"/><path d="M90 166 C70 190 46 198 22 196"/>';
+    s += '<path d="M150 120 C160 130 162 140 158 150"/><path d="M150 180 C160 170 162 160 158 150"/>';
+    s += '<path d="M200 118 C210 128 216 136 226 140"/><path d="M204 182 C214 172 220 164 230 160"/></g>';
     s += '</g>';
-    // Codman triangle - periosteum lifted off cortex at lesion margin
-    s += '<path d="M138 126 L160 100 L140 104 Z" fill="' + CC + '" fill-opacity="0.16" stroke="' + CC + '" stroke-width="1.3"/>';
-    s += '<text x="196" y="150" font-size="10" font-family="sans-serif" fill="' + CC + '" fill-opacity="0.75">sunburst</text>';
-    s += '<text x="150" y="92" font-size="10" font-family="sans-serif" fill="' + CC + '" fill-opacity="0.75">Codman</text>';
-    return s + '</svg>';
+    // whitened macular halo (retinal opacification)
+    s += '<circle cx="192" cy="150" r="46" fill="#efe8d6" opacity="0.24"/>';
+    s += '<circle cx="192" cy="150" r="46" stroke="#efe8d6" stroke-opacity="0.26" stroke-width="6"/>';
+    // cherry-red fovea (accent)
+    s += '<circle cx="192" cy="150" r="13" fill="' + ACC + '"/>';
+    s += '<circle cx="188" cy="146" r="4" fill="#f6b4b0" opacity="0.8"/>';
+    // optic disc + cup, vessels emerge
+    s += '<ellipse cx="96" cy="150" rx="23" ry="26" fill="#f0dca0" stroke="#c98a55" stroke-width="2"/>';
+    s += '<ellipse cx="96" cy="150" rx="11" ry="13" fill="#f8eec6"/>';
+    return s;
   })();
 
-  // s1-0085 Psoriasis: extensor elbow with sharply-demarcated plaques + silvery scale
-  var psoriasis = (function () {
-    var s = '<svg viewBox="0 0 300 200" width="360" xmlns="http://www.w3.org/2000/svg" fill="none">';
-    // bent arm (upper arm + forearm meeting at extensor elbow)
-    s += '<path d="M24 78 L118 62 Q150 58 160 92 L70 112 Q32 110 24 90 Z" fill="' + CC + '" fill-opacity="0.05" stroke="' + CC + '" stroke-width="1.5"/>';
-    s += '<path d="M150 92 Q168 58 200 26 Q216 10 240 22 Q224 60 178 108 Q160 118 150 100 Z" fill="' + CC + '" fill-opacity="0.05" stroke="' + CC + '" stroke-width="1.5"/>';
-    s += '<path d="M138 88 Q152 116 176 104" stroke="' + CC + '" stroke-opacity="0.35"/>'; // olecranon fold
-    // sharply-demarcated erythematous plaques with thick silvery scale
-    function plaque(cx, cy, rx, ry, rot) {
-      var g = '<g transform="translate(' + cx + ' ' + cy + ') rotate(' + rot + ')">';
-      g += '<ellipse cx="0" cy="0" rx="' + rx + '" ry="' + ry + '" fill="#e0524f" fill-opacity="0.22" stroke="#e0524f" stroke-width="1.6"/>';
-      g += '<ellipse cx="0" cy="0" rx="' + (rx - 6) + '" ry="' + (ry - 5) + '" fill="#edeef2" fill-opacity="0.85"/>';
-      g += '<g stroke="#c9ccd6" stroke-width="0.8" stroke-opacity="0.9">';
-      g += '<line x1="' + (-rx + 8) + '" y1="-2" x2="' + (rx - 8) + '" y2="-2"/><line x1="' + (-rx + 8) + '" y1="3" x2="' + (rx - 8) + '" y2="3"/></g>';
-      return g + '</g>';
+  // ------------------------------------------------------------------ s1-0105
+  // TTP peripheral smear: schistocytes, few intact RBC, scant platelets
+  var smear = (function () {
+    var s = '';
+    // intact biconcave RBC (donut with central pallor)
+    function rbc(x, y, r) {
+      return '<circle cx="' + x + '" cy="' + y + '" r="' + r + '" fill="#a8564c"/>' +
+        '<circle cx="' + x + '" cy="' + y + '" r="' + R(r * 0.52) + '" fill="#cf8b80"/>';
     }
-    s += plaque(150, 88, 20, 15, -18);
-    s += plaque(196, 52, 16, 12, -40);
-    s += plaque(78, 92, 15, 11, -8);
-    s += '<text x="150" y="150" text-anchor="middle" font-size="10" font-family="sans-serif" fill="' + CC + '" fill-opacity="0.7">silvery scale</text>';
-    return s + '</svg>';
+    s += rbc(66, 78, 17) + rbc(252, 88, 16) + rbc(74, 206, 16) + rbc(256, 208, 15) + rbc(210, 60, 13);
+    // schistocytes (accent) - sharp angular fragments
+    function helmet(x, y) {
+      return '<path d="M' + (x - 16) + ' ' + (y + 8) + ' A16 15 0 0 1 ' + (x + 16) + ' ' + (y + 8) +
+        ' L' + (x + 7) + ' ' + (y + 1) + ' L' + x + ' ' + (y + 8) + ' L' + (x - 7) + ' ' + (y + 1) + ' Z" fill="' + ACC + '" stroke="#7a1f18" stroke-width="1.3"/>';
+    }
+    function tri(x, y) {
+      return '<path d="M' + x + ' ' + (y - 15) + ' L' + (x + 15) + ' ' + (y + 11) + ' L' + (x - 13) + ' ' + (y + 8) + ' Z" fill="' + ACC + '" stroke="#7a1f18" stroke-width="1.3"/>';
+    }
+    function kerato(x, y) {
+      return '<path d="M' + (x - 14) + ' ' + (y + 4) + ' Q' + (x - 15) + ' ' + (y - 12) + ' ' + (x - 5) + ' ' + (y - 5) +
+        ' L' + (x - 2) + ' ' + (y - 15) + ' L' + (x + 4) + ' ' + (y - 5) + ' Q' + (x + 15) + ' ' + (y - 12) + ' ' + (x + 14) + ' ' + (y + 4) +
+        ' Q' + (x + 12) + ' ' + (y + 14) + ' ' + x + ' ' + (y + 11) + ' Q' + (x - 12) + ' ' + (y + 14) + ' ' + (x - 14) + ' ' + (y + 4) + ' Z" fill="' + ACC + '" stroke="#7a1f18" stroke-width="1.3"/>';
+    }
+    s += helmet(150, 150) + helmet(196, 92) + helmet(120, 118) + helmet(228, 156) + helmet(160, 210);
+    s += tri(112, 74) + tri(96, 150) + tri(214, 210) + tri(58, 152) + tri(176, 118);
+    s += kerato(120, 178) + kerato(240, 118);
+    // scant platelets (few, small, violet)
+    s += '<g fill="#9b6fc0">';
+    s += '<circle cx="278" cy="248" r="4.5"/><circle cx="266" cy="256" r="3.5"/></g>';
+    s += '<text x="248" y="270" text-anchor="middle" font-size="9" font-family="sans-serif" fill="#9b6fc0" fill-opacity="0.85">few platelets</text>';
+    return s;
   })();
 
-  // s1-0109 Dermatomyositis: heliotrope eyelids (face) + Gottron papules (hand)
+  // ------------------------------------------------------------------ s1-0106
+  // Epidural hematoma axial head CT (film style)
+  var epidural = (function () {
+    var s = '';
+    // skull table (bright bone) + brain
+    s += '<ellipse cx="160" cy="150" rx="120" ry="132" fill="#d7e0ea"/>';
+    s += '<ellipse cx="160" cy="150" rx="108" ry="120" fill="#38424e"/>';
+    // faint sulci
+    s += '<g stroke="#8fa0b2" stroke-opacity="0.25" stroke-width="1.4" fill="none">';
+    s += '<path d="M90 70 q14 24 6 46"/><path d="M120 52 q6 26 -2 44"/><path d="M96 232 q16 -22 8 -44"/></g>';
+    // biconvex (lens) hyperdense collection against inner table (accent)
+    s += '<path d="M256 94 C214 124 214 176 256 206 C250 172 250 128 256 94 Z" fill="' + ACC + '"/>';
+    s += '<path d="M256 94 C214 124 214 176 256 206" stroke="#f4b0ac" stroke-width="1.6" fill="none"/>';
+    // falx / midline SHIFTED away from mass (to the left)
+    s += '<path d="M160 32 Q138 150 156 268" stroke="#d7e0ea" stroke-width="2.4" fill="none" opacity="0.75"/>';
+    // left lateral ventricle (patent) + effaced right ventricle (slit)
+    s += '<path d="M120 116 C104 138 104 162 118 184 C124 168 124 132 120 116 Z" fill="' + FILM + '" opacity="0.55" stroke="#9fb0c1" stroke-width="1"/>';
+    s += '<path d="M178 128 C172 144 172 156 178 172" stroke="#9fb0c1" stroke-width="1" fill="none" opacity="0.6"/>';
+    // suture ticks (mass does not cross them)
+    s += '<g stroke="#8fa0b2" stroke-opacity="0.5" stroke-width="1.4">';
+    s += '<path d="M244 78 l8 -8"/><path d="M250 224 l9 7"/></g>';
+    return s;
+  })();
+
+  // ------------------------------------------------------------------ s1-0109
+  // Dermatomyositis: heliotrope eyelids (face) + Gottron papules (hand)
   var dermatomyositis = (function () {
-    var s = '<svg viewBox="0 0 360 200" width="360" xmlns="http://www.w3.org/2000/svg" fill="none">';
-    // face
-    s += '<circle cx="92" cy="94" r="58" fill="' + CC + '" fill-opacity="0.04" stroke="' + CC + '" stroke-width="1.5"/>';
-    // eyes
-    s += '<ellipse cx="70" cy="86" rx="15" ry="9" fill="none" stroke="' + CC + '" stroke-width="1.3"/>';
-    s += '<ellipse cx="114" cy="86" rx="15" ry="9" fill="none" stroke="' + CC + '" stroke-width="1.3"/>';
-    s += '<circle cx="70" cy="86" r="4" fill="' + CC + '" fill-opacity="0.5"/><circle cx="114" cy="86" r="4" fill="' + CC + '" fill-opacity="0.5"/>';
-    // violaceous (heliotrope) upper-eyelid discoloration
-    s += '<path d="M56 82 q14 -12 28 0" fill="#e0524f" fill-opacity="0.3" stroke="#e0524f" stroke-width="1"/>';
-    s += '<path d="M100 82 q14 -12 28 0" fill="#e0524f" fill-opacity="0.3" stroke="#e0524f" stroke-width="1"/>';
+    var HEL = "#9563a8", GOT = "#b0567e", LT = "#d6dee8";
+    var s = '<line x1="170" y1="30" x2="170" y2="230" stroke="' + LT + '" stroke-opacity="0.12"/>';
+    // ---- face
+    s += '<g stroke="' + LT + '" stroke-opacity="0.85" stroke-width="2" fill="none">';
+    s += '<path d="M40 100 C40 60 132 60 132 100 C132 152 112 198 86 198 C60 198 40 152 40 100 Z"/>';
+    s += '<path d="M42 100 C44 66 128 66 130 100 C118 80 54 80 42 100" stroke-opacity="0.4"/>'; // hairline
+    // brows
+    s += '<path d="M50 104 Q64 96 78 102"/><path d="M94 102 Q108 96 122 104"/>';
+    // eyes (almond) + iris
+    s += '<path d="M52 118 Q64 110 78 118 Q64 126 52 118 Z"/><circle cx="65" cy="118" r="3.4"/>';
+    s += '<path d="M94 118 Q108 110 122 118 Q108 126 94 118 Z"/><circle cx="108" cy="118" r="3.4"/>';
     // nose + mouth
-    s += '<path d="M92 92 l-5 22 l10 0" stroke="' + CC + '" stroke-opacity="0.35"/>';
-    s += '<path d="M74 126 q18 12 36 0" stroke="' + CC + '" stroke-opacity="0.4"/>';
-    s += '<text x="92" y="172" text-anchor="middle" font-size="10" font-family="sans-serif" fill="' + CC + '" fill-opacity="0.7">heliotrope</text>';
-    // hand (dorsum) with Gottron papules over knuckles
-    s += '<path d="M244 152 Q238 112 262 100 L306 100 Q330 106 330 138 Q330 172 306 178 L266 178 Q246 176 244 152 Z" fill="' + CC + '" fill-opacity="0.04" stroke="' + CC + '" stroke-width="1.5"/>';
-    var fx = [262, 280, 298, 314];
-    for (var i = 0; i < 4; i++) {
-      s += '<rect x="' + (fx[i] - 7) + '" y="' + (54 + i % 2 * 4) + '" width="14" height="' + (48 - i % 2 * 4) + '" rx="7" fill="' + CC + '" fill-opacity="0.04" stroke="' + CC + '" stroke-width="1.3"/>';
-      // Gottron papule over each knuckle (scaly erythematous)
-      s += '<ellipse cx="' + fx[i] + '" cy="102" rx="8" ry="6" fill="#e0524f" fill-opacity="0.28" stroke="#e0524f" stroke-width="1.3"/>';
-      s += '<line x1="' + (fx[i] - 4) + '" y1="102" x2="' + (fx[i] + 4) + '" y2="102" stroke="#edeef2" stroke-width="1"/>';
+    s += '<path d="M86 124 L82 148 Q86 152 92 148"/>';
+    s += '<path d="M72 170 Q86 178 100 170"/>';
+    s += '</g>';
+    // heliotrope violaceous upper eyelids + periorbital edema (accent)
+    s += '<ellipse cx="65" cy="116" rx="17" ry="11" fill="' + HEL + '" opacity="0.28"/>';
+    s += '<ellipse cx="108" cy="116" rx="17" ry="11" fill="' + HEL + '" opacity="0.28"/>';
+    s += '<path d="M50 114 Q65 102 80 114 Q65 110 50 114 Z" fill="' + HEL + '" opacity="0.92"/>';
+    s += '<path d="M92 114 Q108 102 124 114 Q108 110 92 114 Z" fill="' + HEL + '" opacity="0.92"/>';
+    s += '<text x="86" y="216" text-anchor="middle" font-size="9" font-family="sans-serif" fill="' + HEL + '" fill-opacity="0.9">heliotrope</text>';
+    // ---- hand (dorsum)
+    s += '<g stroke="' + LT + '" stroke-opacity="0.85" stroke-width="2" fill="' + LT + '" fill-opacity="0.05">';
+    s += '<rect x="216" y="146" width="76" height="72" rx="22"/>';
+    s += '<rect x="230" y="210" width="50" height="26" rx="10"/>';
+    var fx = [220, 238, 256, 274], ftop = [72, 60, 66, 84];
+    fx.forEach(function (x, i) { s += '<rect x="' + x + '" y="' + ftop[i] + '" width="15" height="' + (154 - ftop[i]) + '" rx="7"/>'; });
+    s += '<rect x="194" y="150" width="15" height="40" rx="7" transform="rotate(-40 201 170)"/>';
+    s += '</g>';
+    // Gottron papules over MCP + PIP knuckles (accent, scaly)
+    function pap(x, y) {
+      return '<rect x="' + (x - 9) + '" y="' + (y - 6) + '" width="18" height="12" rx="4" fill="' + GOT + '" opacity="0.92"/>' +
+        '<path d="M' + (x - 6) + ' ' + (y - 1) + ' h12 M' + (x - 6) + ' ' + (y + 2) + ' h12" stroke="#eccada" stroke-width="0.8" opacity="0.7"/>';
     }
-    s += '<text x="288" y="172" text-anchor="middle" font-size="10" font-family="sans-serif" fill="' + CC + '" fill-opacity="0.7">Gottron</text>';
-    return s + '</svg>';
+    fx.forEach(function (x) { s += pap(x + 7, 152) + pap(x + 7, 116); });
+    s += '<text x="254" y="230" text-anchor="middle" font-size="9" font-family="sans-serif" fill="' + GOT + '" fill-opacity="0.9">Gottron</text>';
+    return s;
   })();
 
-  // s1-0120 Secondary syphilis: coppery maculopapular rash on palm AND sole
-  var syphilis = (function () {
-    var COP = "#c06a3a";
-    var s = '<svg viewBox="0 0 360 220" width="360" xmlns="http://www.w3.org/2000/svg" fill="none">';
-    // palm (dorsum-up outline of a hand, palmar surface)
-    s += '<path d="M40 150 Q34 108 58 98 L104 98 Q128 104 128 138 Q128 174 104 182 L62 182 Q42 180 40 150 Z" fill="' + CC + '" fill-opacity="0.04" stroke="' + CC + '" stroke-width="1.5"/>';
-    var fx = [60, 78, 96, 112];
-    for (var i = 0; i < 4; i++) s += '<rect x="' + (fx[i] - 7) + '" y="' + (52 + i % 2 * 4) + '" width="14" height="' + (48 - i % 2 * 4) + '" rx="7" fill="' + CC + '" fill-opacity="0.04" stroke="' + CC + '" stroke-width="1.3"/>';
-    s += '<rect x="22" y="118" width="20" height="30" rx="9" fill="' + CC + '" fill-opacity="0.04" stroke="' + CC + '" stroke-width="1.3" transform="rotate(-30 32 133)"/>'; // thumb
-    // sole (foot)
-    s += '<path d="M250 30 Q296 26 298 84 Q300 138 286 168 Q280 190 262 188 Q246 186 244 168 Q240 116 244 68 Q246 34 250 30 Z" fill="' + CC + '" fill-opacity="0.04" stroke="' + CC + '" stroke-width="1.5"/>';
-    s += '<g fill="' + CC + '" fill-opacity="0.05" stroke="' + CC + '" stroke-width="1">';
-    var toes = [[262, 22, 8], [280, 20, 7], [292, 26, 6], [300, 36, 5]];
-    toes.forEach(function (t) { s += '<circle cx="' + t[0] + '" cy="' + t[1] + '" r="' + t[2] + '"/>'; });
+  // ------------------------------------------------------------------ s1-0113
+  // ARDS PA chest radiograph (film style): diffuse bilateral infiltrates
+  var ards = (function () {
+    var LT = "#c9d3de";
+    var s = '';
+    // spine + trachea + mediastinum
+    s += '<line x1="150" y1="30" x2="150" y2="200" stroke="' + LT + '" stroke-opacity="0.16" stroke-width="6"/>';
+    s += '<line x1="150" y1="30" x2="150" y2="76" stroke="' + LT + '" stroke-opacity="0.3" stroke-width="2.4"/>';
+    // clavicles
+    s += '<g stroke="' + LT + '" stroke-opacity="0.4" stroke-width="2" fill="none">';
+    s += '<path d="M150 54 Q116 44 88 58"/><path d="M150 54 Q184 44 212 58"/></g>';
+    // ribs
+    s += '<g stroke="' + LT + '" stroke-opacity="0.24" fill="none">';
+    for (var i = 0; i < 5; i++) { var y = 62 + i * 22; s += '<path d="M148 ' + y + ' q-54 8 -100 ' + (y + 40) + '"/><path d="M152 ' + y + ' q54 8 100 ' + (y + 40) + '"/>'; }
     s += '</g>';
-    // symmetric coppery maculopapular spots on both
-    function spots(list) {
-      var g = '<g fill="' + COP + '" fill-opacity="0.55" stroke="' + COP + '" stroke-width="0.6">';
-      list.forEach(function (p) { g += '<circle cx="' + p[0] + '" cy="' + p[1] + '" r="' + p[2] + '"/>'; });
-      return g + '</g>';
-    }
-    s += spots([[62, 120, 4], [84, 132, 4.5], [100, 118, 3.5], [72, 150, 4], [98, 152, 3.5], [82, 108, 3]]);
-    s += spots([[262, 78, 4], [278, 96, 4.5], [258, 112, 3.5], [276, 132, 4], [262, 148, 4], [280, 60, 3.5], [270, 118, 3]]);
-    s += '<text x="84" y="206" text-anchor="middle" font-size="10" font-family="sans-serif" fill="' + CC + '" fill-opacity="0.7">palm</text>';
-    s += '<text x="272" y="210" text-anchor="middle" font-size="10" font-family="sans-serif" fill="' + CC + '" fill-opacity="0.7">sole</text>';
-    return s + '</svg>';
-  })();
-
-  // s1-0121 NF1: cafe-au-lait macules (flat tan patches) + cutaneous neurofibromas
-  var nf1 = (function () {
-    var TAN = "#c79a63";
-    var s = '<svg viewBox="0 0 320 220" width="360" xmlns="http://www.w3.org/2000/svg" fill="none">';
-    s += '<rect x="14" y="14" width="292" height="192" rx="16" stroke="' + CC + '" stroke-opacity="0.15" fill="' + CC + '" fill-opacity="0.02"/>';
-    // flat, irregular cafe-au-lait macules (no dome, smooth border)
-    s += '<g fill="' + TAN + '" fill-opacity="0.45">';
-    s += '<path d="M50 60 q26 -20 52 -6 q22 12 10 36 q-14 24 -44 16 q-30 -8 -18 -46 z"/>';
-    s += '<path d="M188 46 q30 -14 48 8 q14 22 -8 38 q-26 16 -46 -4 q-18 -22 6 -42 z"/>';
-    s += '<path d="M56 138 q22 -14 42 2 q16 18 -4 36 q-24 16 -42 -4 q-14 -20 4 -34 z"/>';
-    s += '</g>';
-    // dome-shaped cutaneous neurofibromas (raised bumps with shading + shadow)
-    function nf(cx, by, r) {
-      var g = '<ellipse cx="' + cx + '" cy="' + (by + 2) + '" rx="' + (r + 2) + '" ry="4" fill="' + CC + '" fill-opacity="0.08"/>';
-      g += '<path d="M' + (cx - r) + ' ' + by + ' a' + r + ' ' + r + ' 0 0 1 ' + (2 * r) + ' 0 z" fill="' + CC + '" fill-opacity="0.18" stroke="' + CC + '" stroke-width="1.2"/>';
-      g += '<circle cx="' + (cx - r * 0.35) + '" cy="' + (by - r * 0.5) + '" r="' + (r * 0.28) + '" fill="' + CC + '" fill-opacity="0.1"/>';
+    // lung field borders
+    s += '<g stroke="' + LT + '" stroke-opacity="0.3" fill="none">';
+    s += '<path d="M138 60 C96 66 60 100 58 150 C58 176 66 194 84 200"/>';
+    s += '<path d="M162 60 C204 66 240 100 242 150 C242 176 234 194 216 200"/></g>';
+    // normal-size cardiac silhouette
+    s += '<path d="M150 108 C176 108 186 150 178 178 C172 192 156 192 150 188 C144 192 128 192 122 178 C114 150 124 108 150 108 Z" fill="' + LT + '" fill-opacity="0.1" stroke="' + LT + '" stroke-opacity="0.45" stroke-width="1.5"/>';
+    // aortic knob
+    s += '<path d="M138 84 q-8 -6 -2 -14" stroke="' + LT + '" stroke-opacity="0.4" fill="none"/>';
+    // diaphragm domes
+    s += '<path d="M46 196 q52 -30 100 -6" stroke="' + LT + '" stroke-opacity="0.4" fill="none"/>';
+    s += '<path d="M154 190 q50 -26 100 4" stroke="' + LT + '" stroke-opacity="0.4" fill="none"/>';
+    // diffuse bilateral patchy alveolar infiltrates
+    function cloud(cx, cy, seed) {
+      var r = rng(seed), g = '';
+      for (var k = 0; k < 6; k++) {
+        var rr = R(7 + r() * 9), dx = R((r() - 0.5) * 26), dy = R((r() - 0.5) * 24);
+        g += '<circle cx="' + R(cx + dx) + '" cy="' + R(cy + dy) + '" r="' + rr + '" fill="' + LT + '" fill-opacity="' + R(0.14 + r() * 0.12) + '"/>';
+      }
       return g;
     }
-    s += nf(190, 150, 16) + nf(238, 128, 12) + nf(150, 108, 13) + nf(258, 172, 14);
-    s += '<text x="76" y="198" font-size="10" font-family="sans-serif" fill="' + CC + '" fill-opacity="0.7">cafe-au-lait</text>';
-    s += '<text x="210" y="198" font-size="10" font-family="sans-serif" fill="' + CC + '" fill-opacity="0.7">neurofibroma</text>';
-    return s + '</svg>';
+    s += cloud(96, 96, 11) + cloud(80, 134, 23) + cloud(102, 168, 37) + cloud(74, 116, 51);
+    s += cloud(204, 96, 61) + cloud(220, 134, 73) + cloud(198, 168, 87) + cloud(228, 114, 97);
+    // air bronchograms
+    s += '<g stroke="' + FILM + '" stroke-opacity="0.5" stroke-width="1.4" fill="none">';
+    s += '<path d="M90 116 l14 20 m-14 -20 l-6 22"/><path d="M210 116 l-14 20 m14 -20 l6 22"/></g>';
+    return s;
   })();
 
-  // s1-0070 Lyme: targetoid erythema migrans (concentric rings, central clearing)
-  var lyme = (function () {
-    var s = '<svg viewBox="0 0 260 240" width="360" xmlns="http://www.w3.org/2000/svg" fill="none">';
-    s += '<rect x="10" y="10" width="240" height="220" rx="18" stroke="' + CC + '" stroke-opacity="0.12" fill="' + CC + '" fill-opacity="0.02"/>';
-    var cx = 130, cy = 118;
-    // faint overall erythema field
-    s += '<circle cx="' + cx + '" cy="' + cy + '" r="94" fill="#e0524f" fill-opacity="0.05"/>';
-    // outer advancing erythematous ring
-    s += '<circle cx="' + cx + '" cy="' + cy + '" r="88" stroke="#e0524f" stroke-width="11" stroke-opacity="0.5" fill="none"/>';
-    // inner ring (clearing between the two rings)
-    s += '<circle cx="' + cx + '" cy="' + cy + '" r="52" stroke="#e0524f" stroke-width="7" stroke-opacity="0.4" fill="none"/>';
-    // central punctum (bite site)
-    s += '<circle cx="' + cx + '" cy="' + cy + '" r="12" fill="#e0524f" fill-opacity="0.65"/>';
-    s += '<text x="130" y="224" text-anchor="middle" font-size="10" font-family="sans-serif" fill="' + CC + '" fill-opacity="0.7">central clearing</text>';
-    return s + '</svg>';
+  // ------------------------------------------------------------------ s1-0114
+  // Membranous nephropathy glomerular EM: subepithelial spike-and-dome
+  var membranous = (function () {
+    var LT = "#c9d3de";
+    var s = '';
+    var domeX = [50, 92, 134, 176, 218, 260];
+    var spikeX = [29, 71, 113, 155, 197, 239, 281];
+    // capillary lumen (below) + RBC
+    s += '<path d="M18 206 Q160 230 302 206 L302 252 L18 252 Z" fill="#16202c"/>';
+    s += '<ellipse cx="150" cy="228" rx="40" ry="13" fill="#7a2b26" opacity="0.5"/>';
+    s += '<text x="150" y="246" text-anchor="middle" font-size="8.5" font-family="sans-serif" fill="' + LT + '" fill-opacity="0.55">capillary lumen</text>';
+    // endothelium (fenestrated) below GBM
+    s += '<path d="M18 170 H302" stroke="' + LT + '" stroke-opacity="0.35" stroke-width="2.4" stroke-dasharray="9 5"/>';
+    // GBM band
+    s += '<path d="M18 142 L302 142 L302 162 Q160 174 18 162 Z" fill="' + LT + '" fill-opacity="0.16" stroke="' + LT + '" stroke-opacity="0.5" stroke-width="1.4"/>';
+    // basement-membrane spikes (light, project up between deposits)
+    s += '<g fill="' + LT + '" fill-opacity="0.5" stroke="' + LT + '" stroke-opacity="0.6" stroke-width="1">';
+    spikeX.forEach(function (x) { s += '<path d="M' + (x - 5) + ' 142 L' + x + ' 120 L' + (x + 5) + ' 142 Z"/>'; });
+    s += '</g>';
+    // subepithelial immune deposits (domes, accent)
+    domeX.forEach(function (x) { s += '<path d="M' + (x - 13) + ' 142 A13 13 0 0 1 ' + (x + 13) + ' 142 Z" fill="' + ACC + '"/>'; });
+    // podocyte cytoplasm + foot processes resting on deposits/spikes
+    s += '<path d="M18 96 Q160 76 302 96 L302 66 L18 66 Z" fill="' + LT + '" fill-opacity="0.12" stroke="' + LT + '" stroke-opacity="0.4" stroke-width="1.4"/>';
+    s += '<g fill="' + LT + '" fill-opacity="0.14" stroke="' + LT + '" stroke-opacity="0.45" stroke-width="1">';
+    spikeX.forEach(function (x) { s += '<path d="M' + (x - 6) + ' 96 L' + (x - 6) + ' 116 Q' + x + ' 122 ' + (x + 6) + ' 116 L' + (x + 6) + ' 96 Z"/>'; });
+    s += '</g>';
+    // labels
+    s += '<text x="30" y="82" font-size="9" font-family="sans-serif" fill="' + LT + '" fill-opacity="0.75">podocyte</text>';
+    s += '<text x="150" y="200" text-anchor="middle" font-size="9" font-family="sans-serif" fill="' + LT + '" fill-opacity="0.7">GBM</text>';
+    s += '<text x="234" y="110" font-size="9" font-family="sans-serif" fill="' + ACC + '" fill-opacity="0.95">deposits</text>';
+    s += '<line x1="233" y1="112" x2="220" y2="130" stroke="' + ACC + '" stroke-width="1" opacity="0.7"/>';
+    return s;
+  })();
+
+  // ------------------------------------------------------------------ s1-0115
+  // Barrett esophagus: squamous -> columnar w/ goblet cells at GEJ
+  var barrett = (function () {
+    var LT = "#9fb0c1";
+    var s = '';
+    // lamina propria band (below epithelium)
+    s += '<path d="M20 152 Q170 168 320 150 L320 200 Q170 214 20 200 Z" fill="#7a3a40" fill-opacity="0.14" stroke="' + LT + '" stroke-opacity="0.3"/>';
+    // ---- squamous (left): stratified, flattening toward surface
+    s += '<path d="M20 152 L20 70 Q94 60 166 70 L166 152 Z" fill="' + LT + '" fill-opacity="0.1" stroke="' + LT + '" stroke-opacity="0.45" stroke-width="1.4"/>';
+    s += '<g fill="' + LT + '" fill-opacity="0.5">';
+    var rows = [[144, 6, 5], [124, 8, 4.5], [104, 9, 3.4], [86, 10, 2.6]];
+    rows.forEach(function (row) {
+      for (var x = 34; x < 160; x += 16) {
+        s += '<ellipse cx="' + x + '" cy="' + row[0] + '" rx="' + row[1] + '" ry="' + row[2] + '"/>';
+      }
+    });
+    s += '</g>';
+    // ---- columnar (right): tall crypts, basal nuclei, goblet cells (accent)
+    s += '<path d="M174 152 L174 104 Q186 92 198 104 Q210 92 222 104 Q234 92 246 104 Q258 92 270 104 Q282 92 294 104 Q306 96 320 104 L320 152 Z" fill="' + LT + '" fill-opacity="0.1" stroke="' + LT + '" stroke-opacity="0.45" stroke-width="1.4"/>';
+    // columnar cell separators + basal nuclei
+    s += '<g stroke="' + LT + '" stroke-opacity="0.3" stroke-width="1">';
+    for (var cx = 186; cx < 320; cx += 12) { s += '<line x1="' + cx + '" y1="104" x2="' + cx + '" y2="150"/>'; }
+    s += '</g>';
+    s += '<g fill="' + LT + '" fill-opacity="0.55">';
+    for (var nx = 180; nx < 320; nx += 12) { s += '<ellipse cx="' + nx + '" cy="142" rx="3" ry="5"/>'; }
+    s += '</g>';
+    // goblet cells (accent wine-glass mucin cups)
+    function goblet(x) {
+      return '<path d="M' + (x - 6) + ' 108 Q' + x + ' 100 ' + (x + 6) + ' 108 Q' + (x + 7) + ' 126 ' + x + ' 138 Q' + (x - 7) + ' 126 ' + (x - 6) + ' 108 Z" fill="' + ACC + '" opacity="0.92"/>';
+    }
+    s += goblet(198) + goblet(228) + goblet(258) + goblet(294);
+    // squamocolumnar junction (Z-line)
+    s += '<line x1="170" y1="60" x2="170" y2="152" stroke="#eec98a" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.85"/>';
+    // labels
+    s += '<text x="92" y="216" text-anchor="middle" font-size="9.5" font-family="sans-serif" fill="' + LT + '" fill-opacity="0.8">squamous</text>';
+    s += '<text x="250" y="216" text-anchor="middle" font-size="9.5" font-family="sans-serif" fill="' + LT + '" fill-opacity="0.8">columnar</text>';
+    s += '<text x="170" y="52" text-anchor="middle" font-size="9" font-family="sans-serif" fill="#eec98a" fill-opacity="0.9">GEJ</text>';
+    s += '<text x="294" y="94" text-anchor="middle" font-size="8.5" font-family="sans-serif" fill="' + ACC + '" fill-opacity="0.95">goblet</text>';
+    return s;
+  })();
+
+  // ------------------------------------------------------------------ s1-0118
+  // Papillary thyroid cytology: Orphan-Annie nuclei, grooves, psammoma body
+  var papillary = (function () {
+    var LT = "#c9d3de";
+    var s = '';
+    // cells (rounded cytoplasm) with large pale empty nuclei
+    var cells = [[78, 88, 30], [150, 70, 30], [230, 92, 30], [64, 176, 30], [246, 182, 30], [150, 224, 30]];
+    s += '<g stroke="' + LT + '" stroke-opacity="0.4" stroke-width="1.4" fill="' + LT + '" fill-opacity="0.05">';
+    cells.forEach(function (c) { s += '<circle cx="' + c[0] + '" cy="' + c[1] + '" r="' + c[2] + '"/>'; });
+    s += '</g>';
+    // Orphan-Annie-eye nuclei: pale/empty (near-bg fill, crisp rim)
+    s += '<g fill="#141c26" stroke="' + LT + '" stroke-opacity="0.75" stroke-width="1.6">';
+    cells.forEach(function (c) { s += '<circle cx="' + c[0] + '" cy="' + c[1] + '" r="20"/>'; });
+    s += '</g>';
+    // longitudinal nuclear grooves (coffee-bean) on several nuclei
+    s += '<g stroke="' + LT + '" stroke-opacity="0.65" stroke-width="1.4">';
+    s += '<line x1="60" y1="88" x2="96" y2="88"/><line x1="212" y1="92" x2="248" y2="92"/><line x1="132" y1="224" x2="168" y2="224"/></g>';
+    // nuclear pseudoinclusion in one nucleus
+    s += '<circle cx="150" cy="70" r="6" fill="' + LT + '" fill-opacity="0.16" stroke="' + LT + '" stroke-opacity="0.5" stroke-width="1"/>';
+    // psammoma body (accent) - concentric laminated rings
+    s += '<g fill="none" stroke="' + ACC + '" stroke-width="2.4">';
+    [27, 21, 15, 9].forEach(function (r) { s += '<circle cx="150" cy="150" r="' + r + '"/>'; });
+    s += '</g>';
+    s += '<circle cx="150" cy="150" r="4" fill="' + ACC + '"/>';
+    // labels
+    s += '<text x="150" y="120" text-anchor="middle" font-size="9" font-family="sans-serif" fill="' + ACC + '" fill-opacity="0.95">psammoma body</text>';
+    s += '<text x="78" y="66" text-anchor="middle" font-size="8.5" font-family="sans-serif" fill="' + LT + '" fill-opacity="0.75">groove</text>';
+    return s;
+  })();
+
+  // ------------------------------------------------------------------ s1-0119
+  // Complete mole pelvic ultrasound: sector fan, snowstorm, no fetus
+  var mole = (function () {
+    var LT = "#c9d3de";
+    var s = '';
+    // US sector fan
+    s += '<defs><clipPath id="u119"><ellipse cx="160" cy="176" rx="94" ry="90"/></clipPath></defs>';
+    s += '<path d="M160 26 L52 268 A248 248 0 0 0 268 268 Z" fill="#0d141c" stroke="' + LT + '" stroke-opacity="0.35" stroke-width="1.4"/>';
+    // depth arcs
+    s += '<g stroke="' + LT + '" stroke-opacity="0.14" fill="none">';
+    s += '<path d="M96 138 A100 100 0 0 0 224 138"/><path d="M74 190 A160 160 0 0 0 246 190"/></g>';
+    // uterine outline
+    s += '<ellipse cx="160" cy="176" rx="94" ry="90" fill="none" stroke="' + LT + '" stroke-opacity="0.55" stroke-width="1.8"/>';
+    // snowstorm speckle + cluster-of-grapes vesicles (accent) inside uterus
+    s += '<g clip-path="url(#u119)">';
+    var r = rng(97), i, x, y, rr;
+    // fine echogenic speckle
+    s += '<g fill="' + LT + '" fill-opacity="0.32">';
+    for (i = 0; i < 130; i++) {
+      x = R(70 + r() * 180); y = R(96 + r() * 168);
+      s += '<circle cx="' + x + '" cy="' + y + '" r="' + R(0.8 + r() * 1.2) + '"/>';
+    }
+    s += '</g>';
+    // vesicular cysts (anechoic, light rim); some accent
+    for (i = 0; i < 26; i++) {
+      x = R(74 + r() * 172); y = R(100 + r() * 156); rr = R(4 + r() * 7);
+      var acc = r() > 0.62;
+      s += '<circle cx="' + x + '" cy="' + y + '" r="' + rr + '" fill="#05080c" stroke="' + (acc ? ACC : LT) + '" stroke-opacity="' + (acc ? 0.9 : 0.5) + '" stroke-width="1.2"/>';
+    }
+    s += '</g>';
+    // no fetus label
+    s += '<text x="160" y="286" text-anchor="middle" font-size="9.5" font-family="sans-serif" fill="' + LT + '" fill-opacity="0.7">no fetus</text>';
+    return s;
   })();
 
   Object.assign(window.RC_ILLUS = window.RC_ILLUS || {}, {
-    "s1-0063": cxr(sarcoid),
-    "s1-0113": cxr(ards),
-    "s1-0137": cxr(coarct),
-    "s1-0135": osteosarcoma,
-    "s1-0085": psoriasis,
-    "s1-0109": dermatomyositis,
-    "s1-0120": syphilis,
-    "s1-0121": nf1,
-    "s1-0070": lyme
+    "s1-0101": svg(320, 300, fundus),
+    "s1-0105": svg(320, 280, smear),
+    "s1-0106": svg(320, 300, epidural),
+    "s1-0109": svg(340, 240, dermatomyositis),
+    "s1-0113": svg(300, 260, ards),
+    "s1-0114": svg(320, 260, membranous),
+    "s1-0115": svg(340, 240, barrett),
+    "s1-0118": svg(300, 280, papillary),
+    "s1-0119": svg(320, 300, mole)
   });
 })();
