@@ -51,15 +51,21 @@
   .btn.primary{background:var(--brand);color:#fff}
   .btn.primary:hover{filter:brightness(1.05)}
   .btn.ghost{background:var(--card);border-color:var(--line);color:var(--ink)}
+  .btn.sm{padding:8px 12px;font-size:13px;border-radius:9px}
   .btn:disabled{opacity:.5;cursor:not-allowed}
   .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
   .spacer{flex:1}
   /* quiz */
+  .qbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:6px}
   .qmeta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:6px}
   .chip{font-size:11.5px;background:var(--chip);color:var(--muted);padding:3px 9px;border-radius:999px;
     border:1px solid var(--line)}
   .chip.sys{color:var(--brand-ink);background:#e6f3ee;border-color:#cfe7dd}
   @media (prefers-color-scheme: dark){.chip.sys{color:#8fe0c1;background:#12331f;border-color:#1f5138}}
+  .chip.counter{font-weight:800;color:var(--ink)}
+  .timer{font-variant-numeric:tabular-nums;font-weight:800;font-size:13px;color:var(--ink);
+    background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:3px 11px}
+  .timer.paused{color:var(--muted)}
   .diff-easy{color:#1f8a4c} .diff-moderate{color:#b7791f} .diff-hard{color:#c0392b}
   .progress{height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin:4px 0 18px}
   .progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--brand),#2aa27a);transition:width .3s}
@@ -73,6 +79,12 @@
     color:var(--muted);font-style:italic;font-size:14px}
   .anchor-tag{display:inline-block;font-style:normal;font-weight:800;font-size:10.5px;letter-spacing:.6px;
     color:#fff;background:var(--brand);border-radius:6px;padding:2px 7px;margin-right:8px;vertical-align:1px}
+  .anchor-fig{margin:8px 0 14px;padding:14px;border:1px solid var(--line);border-radius:12px;
+    background:var(--card);text-align:center;color:var(--ink)}
+  .anchor-fig svg{max-width:100%;height:auto;display:block;margin:2px auto 0}
+  .anchor-fig figcaption{margin-top:10px;font-size:13px;color:var(--muted);text-align:left}
+  .schembadge{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.6px;
+    color:var(--brand);border:1px solid var(--brand);border-radius:5px;padding:1px 7px;margin-bottom:4px}
   .lead{font-weight:700;margin:16px 0 12px}
   .opts{display:grid;gap:10px}
   .opt{display:flex;gap:12px;align-items:flex-start;text-align:left;width:100%;
@@ -97,6 +109,13 @@
   .whys li{padding:5px 0;border-top:1px dashed var(--line);color:var(--muted)}
   .whys li b{color:var(--ink)}
   .whys li.c{color:var(--good)} .whys li.c b{color:var(--good)}
+  /* pause overlay */
+  #pauseScreen{display:grid;place-items:center;gap:14px;padding:52px 16px;text-align:center}
+  #pauseScreen .big{font-size:24px;font-weight:800}
+  /* resume banner */
+  .banner{display:flex;gap:12px;align-items:center;flex-wrap:wrap;background:var(--chip);
+    border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:0 0 16px}
+  .banner b{color:var(--ink)}
   /* results */
   .score{font-size:44px;font-weight:800;line-height:1}
   .score small{font-size:16px;color:var(--muted);font-weight:600}
@@ -129,8 +148,15 @@
 
   <!-- SETUP -->
   <section id="setup" class="card">
-    <h2>Start a set</h2>
-    <p class="sub">Original, blueprint-weighted Step&nbsp;1 items. This preview is wired to Batches&nbsp;1&nbsp;&amp;&nbsp;2.</p>
+    <div class="banner hide" id="resumeBanner">
+      <b>Resume in-progress test</b>
+      <span id="resumeInfo" class="sub" style="margin:0"></span>
+      <span class="spacer"></span>
+      <button class="btn primary sm" id="resumeSaved">Resume</button>
+      <button class="btn ghost sm" id="discardSaved">Discard</button>
+    </div>
+    <h2>Start a test</h2>
+    <p class="sub">Original, blueprint-weighted items. A timer starts when you begin; you can pause it, pass questions, and resume later.</p>
     <div class="grid">
       <div>
         <label class="fld">Mode</label>
@@ -166,13 +192,13 @@
         <div>
           <label class="fld">Order</label>
           <select id="order">
-            <option value="shuffle">Shuffle</option>
+            <option value="shuffle">Shuffle (avoids repeats)</option>
             <option value="sequential">Sequential (by ID)</option>
           </select>
         </div>
       </div>
       <div class="row">
-        <button class="btn primary" id="start">Start set</button>
+        <button class="btn primary" id="start">Start test</button>
         <span class="spacer"></span>
         <span class="chip" id="poolinfo"></span>
       </div>
@@ -181,25 +207,47 @@
 
   <!-- QUIZ -->
   <section id="quiz" class="card hide">
-    <div class="row" style="margin-bottom:2px">
-      <span class="chip" id="counter">1 / 10</span>
+    <div class="qbar">
+      <span class="chip counter" id="counter">Question 1 / 280</span>
       <span class="chip" id="modechip">Explanation</span>
+      <span class="timer" id="timer">00:00</span>
+      <button class="btn ghost sm" id="pause">Pause</button>
       <span class="spacer"></span>
       <span class="chip" id="livescore"></span>
     </div>
     <div class="progress"><i id="pbar" style="width:0%"></i></div>
 
-    <div class="qmeta" id="qmeta"></div>
-    <div class="vignette" id="vignette"></div>
-    <div class="lead" id="lead"></div>
-    <div class="opts" id="opts"></div>
+    <div id="quizBody">
+      <div class="qmeta" id="qmeta"></div>
+      <div class="vignette" id="vignette"></div>
+      <div class="lead" id="lead"></div>
+      <div class="opts" id="opts"></div>
+      <div id="feedback"></div>
+      <div class="row" style="margin-top:20px">
+        <button class="btn ghost" id="end">End test</button>
+        <button class="btn ghost sm" id="passq">Pass &rarr;</button>
+        <span class="spacer"></span>
+        <button class="btn primary" id="next" disabled>Next</button>
+      </div>
+    </div>
 
-    <div id="feedback"></div>
+    <div id="pauseScreen" class="hide">
+      <div class="big">Paused</div>
+      <div class="sub" id="pauseInfo" style="margin:0">The timer is stopped.</div>
+      <div class="row" style="justify-content:center">
+        <button class="btn primary" id="resumeBtn">Resume</button>
+        <button class="btn ghost" id="saveExit">Save &amp; exit</button>
+      </div>
+    </div>
+  </section>
 
-    <div class="row" style="margin-top:20px">
-      <button class="btn ghost" id="end">End test</button>
-      <span class="spacer"></span>
-      <button class="btn primary" id="next" disabled>Next</button>
+  <!-- REDO PROMPT -->
+  <section id="redoPrompt" class="card hide">
+    <h2>Before you finish</h2>
+    <p class="sub" id="redoInfo"></p>
+    <div class="row">
+      <button class="btn primary" id="doRedo">Go back to passed questions</button>
+      <button class="btn ghost" id="finishNow">Finish and score</button>
     </div>
   </section>
 
@@ -210,19 +258,20 @@
       <div class="score" id="scoreBig">0<small>/0</small></div>
       <div class="sub" id="scorePct" style="margin:0"></div>
     </div>
+    <div class="sub" id="timeSummary" style="margin-top:6px"></div>
     <h3 style="margin:20px 0 4px;font-size:14px">By system</h3>
     <div class="bars" id="bars"></div>
     <h3 style="margin:22px 0 4px;font-size:14px">Review</h3>
     <div class="review" id="review"></div>
     <div class="row" style="margin-top:18px">
-      <button class="btn primary" id="again">New set</button>
+      <button class="btn primary" id="again">New test</button>
     </div>
   </section>
 
-  <p class="foot">Preview build &middot; all vignettes original &middot; not affiliated with the NBME or USMLE.</p>
+  <p class="foot">Preview build &middot; all vignettes original &middot; illustrations are schematic &middot; not affiliated with the NBME or USMLE.</p>
 </div>
 
-<!-- question banks (globals: USMLE_STEP1_B1..B5) -->
+<!-- question banks + illustration library -->
 <script src="data/usmle-step1-b1.js"></script>
 <script src="data/usmle-step1-b2.js"></script>
 <script src="data/usmle-step1-b3.js"></script>
@@ -230,6 +279,7 @@
 <script src="data/usmle-step1-b5.js"></script>
 <script src="data/usmle-step1-b6.js"></script>
 <script src="data/usmle-step2ck-b1.js"></script>
+<script src="illustrations.js"></script>
 <script>
 (function(){
   "use strict";
@@ -246,21 +296,44 @@
       (typeof USMLE_STEP2CK_B1!=="undefined"?USMLE_STEP2CK_B1:[])
     )
   };
-  var EXAM_LABELS = { step1: "Step 1", step2ck: "Step 2 CK" };
-  var EXAM_ORDER = ["step1", "step2ck"];
-  var currentExam = "step1";
-  var BANK = BANKS[currentExam];
+  var EXAM_META = {
+    step1:  { label:"Step 1",     max:280 },
+    step2ck:{ label:"Step 2 CK",  max:318 }
+    // step3 (412 MCQ: 232 Day 1 + 180 Day 2, plus 13 CCS) to be added
+  };
+  var EXAM_ORDER = ["step1","step2ck"];
   var LETTERS=["A","B","C","D","E"];
   var $=function(s){return document.querySelector(s)};
   function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
 
+  // id -> item lookup across every bank
+  var byId={};
+  EXAM_ORDER.forEach(function(ex){(BANKS[ex]||[]).forEach(function(q){byId[q.id]=q})});
+
+  var currentExam="step1";
+  var BANK=BANKS[currentExam];
+
+  // ---------- localStorage (test resume + seen tracking) ----------
+  function lsGet(k){try{var v=localStorage.getItem(k);return v?JSON.parse(v):null;}catch(e){return null;}}
+  function lsSet(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+  function lsDel(k){try{localStorage.removeItem(k);}catch(e){}}
+  function testKey(ex){return "rcusmle.test."+ex;}
+  function seenKey(ex){return "rcusmle.seen."+ex;}
+  function loadSeen(ex){return lsGet(seenKey(ex))||{};}
+  function markSeen(ex,ids){var s=loadSeen(ex);ids.forEach(function(id){s[id]=1});lsSet(seenKey(ex),s);}
+
   // ---------- vignette renderer (safe: escape, then limited formatting) ----------
-  function inlineFmt(s){
+  function inlineFmt(s, id){
     s=s.replace(/\*\*\[([^\]]+)\]\*\*/g,function(m,inner){
       var idx=inner.indexOf(":");
       var label=idx>-1?inner.slice(0,idx).trim():"VISUAL";
       var desc=idx>-1?inner.slice(idx+1).trim():inner.trim();
-      return '<span class="anchor-box"><span class="anchor-tag">'+esc(label)+'</span>'+esc(desc)+'</span>';
+      var svg=(id && window.RC_ILLUS && RC_ILLUS[id])?RC_ILLUS[id]:"";
+      if(svg){
+        return '<figure class="anchor-fig"><span class="schembadge">SCHEMATIC</span>'+svg+
+          '<figcaption><span class="anchor-tag">'+label+'</span> '+desc+'</figcaption></figure>';
+      }
+      return '<span class="anchor-box"><span class="anchor-tag">'+label+'</span> '+desc+'</span>';
     });
     s=s.replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>");
     return s;
@@ -281,7 +354,7 @@
     });
     return out+"</tbody></table>";
   }
-  function renderVignette(raw){
+  function renderVignette(raw, id){
     var lines=String(raw).split("\n"), html="", i=0;
     while(i<lines.length){
       if(/^\s*\|/.test(lines[i])){
@@ -291,16 +364,39 @@
       }else{
         var line=lines[i];i++;
         if(line.trim()==="") continue;
-        html+="<p>"+inlineFmt(esc(line))+"</p>";
+        html+="<p>"+inlineFmt(esc(line), id)+"</p>";
       }
     }
     return html;
   }
 
   // ---------- state ----------
-  var cfg={mode:"explanation"}, quiz=null;
-
+  var cfg={mode:"explanation"}, quiz=null, timerHandle=null, paused=false;
   function shuffle(a){var r=a.slice();for(var i=r.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=r[i];r[i]=r[j];r[j]=t;}return r;}
+  function curList(){return quiz.redo?quiz.redoQueue:quiz.order;}
+  function fmtTime(s){var h=Math.floor(s/3600),m=Math.floor((s%3600)/60),ss=s%60;
+    function p(n){return(n<10?"0":"")+n;}
+    return (h>0?h+":"+p(m):m<10?"0"+m:m)+":"+p(ss);}
+
+  // ---------- timer ----------
+  function tick(){ if(paused||!quiz)return; quiz.elapsed++; renderTimer(); if(quiz.elapsed%5===0) saveState(); }
+  function startTimer(){ stopTimer(); timerHandle=setInterval(tick,1000); renderTimer(); }
+  function stopTimer(){ if(timerHandle){clearInterval(timerHandle);timerHandle=null;} }
+  function renderTimer(){ var t=$("#timer"); if(!t||!quiz)return; t.textContent=fmtTime(quiz.elapsed); t.classList.toggle("paused",paused); }
+
+  // ---------- persistence ----------
+  function saveState(){ if(!quiz)return;
+    lsSet(testKey(quiz.exam),{order:quiz.order,ans:quiz.ans,passed:quiz.passed,
+      pos:quiz.pos,elapsed:quiz.elapsed,mode:quiz.mode,redo:quiz.redo,redoQueue:quiz.redoQueue}); }
+  function refreshResumeBanner(){
+    var st=lsGet(testKey(currentExam));
+    var unanswered = st ? st.order.filter(function(id){return st.ans[id]==null;}).length : 0;
+    if(st && unanswered>0){
+      $("#resumeInfo").textContent="("+EXAM_META[currentExam].label+" · "+
+        (st.order.length-unanswered)+"/"+st.order.length+" answered · "+fmtTime(st.elapsed||0)+")";
+      $("#resumeBanner").classList.remove("hide");
+    } else { $("#resumeBanner").classList.add("hide"); }
+  }
 
   // ---------- setup screen ----------
   function populateSystems(){
@@ -319,13 +415,14 @@
     populateSystems();
     $("#difficulty").value="";
     refreshPool();
+    refreshResumeBanner();
   }
   function initSetup(){
     var examSel=$("#exam");
     EXAM_ORDER.forEach(function(ex){
       if(BANKS[ex]&&BANKS[ex].length){
         var o=document.createElement("option");o.value=ex;
-        o.textContent=EXAM_LABELS[ex]+" ("+BANKS[ex].length+")";examSel.appendChild(o);
+        o.textContent=EXAM_LABEL(ex)+" ("+BANKS[ex].length+")";examSel.appendChild(o);
       }
     });
     examSel.value=currentExam;
@@ -338,8 +435,11 @@
     ["#system","#difficulty"].forEach(function(id){$(id).addEventListener("change",refreshPool)});
     setExam(currentExam);
     $("#start").addEventListener("click",startSet);
-    $("#again").addEventListener("click",function(){show("setup")});
+    $("#again").addEventListener("click",function(){show("setup");refreshResumeBanner();});
+    $("#resumeSaved").addEventListener("click",resumeSaved);
+    $("#discardSaved").addEventListener("click",function(){lsDel(testKey(currentExam));refreshResumeBanner();});
   }
+  function EXAM_LABEL(ex){return EXAM_META[ex]?EXAM_META[ex].label:ex;}
   function filteredPool(){
     var sys=$("#system").value, diff=$("#difficulty").value;
     return BANK.filter(function(q){
@@ -350,39 +450,64 @@
     var pool=filteredPool();
     $("#poolinfo").textContent=pool.length+" questions available";
     var cs=$("#count");cs.innerHTML="";
-    var opts=[5,10,20,25,40,50].filter(function(n){return n<=pool.length});
-    if(!opts.length||opts[opts.length-1]<pool.length) opts.push(pool.length);
+    var opts=[10,20,40].filter(function(n){return n<pool.length});
+    opts.push(pool.length);
     opts.forEach(function(n){var o=document.createElement("option");o.value=n;
-      o.textContent=(n===pool.length?"All "+n:n)+" questions";cs.appendChild(o);});
-    cs.value=Math.min(10,pool.length)||pool.length;
+      o.textContent=(n===pool.length?"Full test ("+n+")":n+" questions");cs.appendChild(o);});
+    cs.value=pool.length; // default: full available test
     $("#start").disabled=pool.length===0;
   }
 
   function startSet(){
     var pool=filteredPool();
-    if($("#order").value==="sequential"){pool=pool.slice().sort(function(a,b){return a.id<b.id?-1:1});}
-    else pool=shuffle(pool);
-    var n=Math.min(parseInt($("#count").value,10)||pool.length,pool.length);
-    quiz={qs:pool.slice(0,n),i:0,ans:[],revealed:false};
-    for(var k=0;k<n;k++)quiz.ans.push(null);
+    var ids;
+    if($("#order").value==="sequential"){
+      ids=pool.slice().sort(function(a,b){return a.id<b.id?-1:1}).map(function(q){return q.id;});
+    }else{
+      // prefer unseen questions first, so repeats are avoided until the pool is exhausted
+      var seen=loadSeen(currentExam);
+      var unseen=[],rest=[];
+      shuffle(pool).forEach(function(q){(seen[q.id]?rest:unseen).push(q.id);});
+      ids=unseen.concat(rest);
+    }
+    var n=Math.min(parseInt($("#count").value,10)||ids.length,ids.length);
+    quiz={exam:currentExam,mode:cfg.mode,order:ids.slice(0,n),ans:{},passed:{},
+      pos:0,elapsed:0,redo:false,redoQueue:[]};
     $("#modechip").textContent=cfg.mode==="explanation"?"Explanation":"Standard";
-    show("quiz");renderQuestion();
+    paused=false; $("#pauseScreen").classList.add("hide"); $("#quizBody").classList.remove("hide");
+    saveState(); startTimer(); show("quiz"); renderQuestion();
+  }
+  function resumeSaved(){
+    var st=lsGet(testKey(currentExam)); if(!st)return;
+    // reshuffle the remaining (unanswered) questions so the order differs from before
+    var answered=st.order.filter(function(id){return st.ans[id]!=null;});
+    var remaining=shuffle(st.order.filter(function(id){return st.ans[id]==null;}));
+    var order=answered.concat(remaining);
+    quiz={exam:currentExam,mode:st.mode||"explanation",order:order,ans:st.ans||{},passed:st.passed||{},
+      pos:answered.length,elapsed:st.elapsed||0,redo:false,redoQueue:[]};
+    if(quiz.pos>=order.length) quiz.pos=order.length-1;
+    cfg.mode=quiz.mode;
+    $("#modechip").textContent=quiz.mode==="explanation"?"Explanation":"Standard";
+    paused=false; $("#pauseScreen").classList.add("hide"); $("#quizBody").classList.remove("hide");
+    saveState(); startTimer(); show("quiz"); renderQuestion();
   }
 
   // ---------- quiz screen ----------
   function renderQuestion(){
-    var q=quiz.qs[quiz.i]; quiz.revealed=false;
-    $("#counter").textContent=(quiz.i+1)+" / "+quiz.qs.length;
-    $("#pbar").style.width=Math.round((quiz.i)/quiz.qs.length*100)+"%";
-    var scored=quiz.ans.filter(function(a){return a!=null}).length;
-    $("#livescore").textContent = cfg.mode==="explanation"
-      ? runningCorrect()+" correct" : scored+" answered";
+    var list=curList(), id=list[quiz.pos], q=byId[id];
+    var maxN=EXAM_META[quiz.exam].max;
+    $("#counter").textContent = quiz.redo
+      ? "Passed review "+(quiz.pos+1)+" / "+list.length
+      : "Question "+(quiz.pos+1)+" / "+maxN;
+    $("#pbar").style.width=Math.round((quiz.pos)/list.length*100)+"%";
+    $("#livescore").textContent = quiz.mode==="explanation"
+      ? runningCorrect()+" correct" : answeredCount()+" answered";
     var dc="diff-"+q.difficulty;
     $("#qmeta").innerHTML='<span class="chip sys">'+esc(q.system)+'</span>'+
       '<span class="chip">'+esc(q.discipline)+'</span>'+
       '<span class="chip '+dc+'">'+esc(q.difficulty)+'</span>'+
-      (q.anchor?'<span class="chip">'+esc(q.anchor)+'</span>':'');
-    $("#vignette").innerHTML=renderVignette(q.vignette);
+      (quiz.passed[id]?'<span class="chip" style="color:#b7791f">passed</span>':'');
+    $("#vignette").innerHTML=renderVignette(q.vignette, id);
     $("#lead").textContent=q.lead;
     var wrap=$("#opts");wrap.innerHTML="";
     q.options.forEach(function(txt,idx){
@@ -391,73 +516,100 @@
       b.addEventListener("click",function(){pick(idx)});
       wrap.appendChild(b);
     });
-    var prev=quiz.ans[quiz.i];
-    if(prev!=null){
-      markSel(prev);
-      if(cfg.mode==="explanation"){reveal();}
-    }
-    $("#feedback").innerHTML="";
-    $("#next").textContent=(quiz.i===quiz.qs.length-1)?"Finish":"Next";
-    $("#next").disabled = cfg.mode==="explanation" ? (prev==null) : false;
-    if(prev!=null && cfg.mode==="explanation") $("#next").disabled=false;
+    var prev=quiz.ans[id]; quiz.revealed=false;
+    if(prev!=null){ markSel(prev); if(quiz.mode==="explanation") reveal(); }
+    else $("#feedback").innerHTML="";
+    var last=(quiz.pos===list.length-1);
+    $("#next").textContent=last?"Finish":"Next";
+    $("#next").disabled = (quiz.mode==="explanation") ? (prev==null) : false;
+    // Pass button only meaningful when not yet answered
+    $("#passq").classList.toggle("hide", prev!=null);
   }
+  function activeId(){return curList()[quiz.pos];}
   function markSel(idx){
     [].forEach.call($("#opts").children,function(c){
       c.classList.toggle("sel",+c.getAttribute("data-i")===idx);
     });
   }
   function pick(idx){
-    var q=quiz.qs[quiz.i];
-    if(cfg.mode==="explanation"){
+    if(paused)return;
+    var id=activeId();
+    if(quiz.mode==="explanation"){
       if(quiz.revealed) return;
-      quiz.ans[quiz.i]=idx; markSel(idx); reveal(); $("#next").disabled=false;
+      quiz.ans[id]=idx; delete quiz.passed[id]; markSel(idx); reveal();
+      $("#next").disabled=false; $("#passq").classList.add("hide");
     }else{
-      quiz.ans[quiz.i]=idx; markSel(idx); // silent
+      quiz.ans[id]=idx; delete quiz.passed[id]; markSel(idx);
+      $("#passq").classList.add("hide");
     }
+    saveState();
+  }
+  function passQuestion(){
+    if(paused)return;
+    var id=activeId();
+    if(quiz.ans[id]==null) quiz.passed[id]=true;
+    saveState();
+    advance();
   }
   function reveal(){
     quiz.revealed=true;
-    var q=quiz.qs[quiz.i], chosen=quiz.ans[quiz.i], correct=q.answer;
+    var id=activeId(), q=byId[id], chosen=quiz.ans[id], correct=q.answer;
     [].forEach.call($("#opts").children,function(c){
       var i=+c.getAttribute("data-i");
-      c.classList.add("locked");
-      c.classList.remove("sel");
+      c.classList.add("locked"); c.classList.remove("sel");
       if(i===correct)c.classList.add("correct");
       else if(i===chosen)c.classList.add("wrong");
     });
-    var ok=chosen===correct;
-    var whys="";
+    var ok=chosen===correct, whys="";
     q.why.forEach(function(w,i){
-      var isC=(i===correct);
-      whys+='<li class="'+(isC?"c":"")+'"><b>'+LETTERS[i]+'.</b> '+esc(w)+"</li>";
+      whys+='<li class="'+(i===correct?"c":"")+'"><b>'+LETTERS[i]+'.</b> '+esc(w)+"</li>";
     });
     $("#feedback").innerHTML=
       '<div class="verdict '+(ok?"good":"bad")+'">'+(ok?"Correct":"Incorrect")+
         ' &middot; answer '+LETTERS[correct]+'</div>'+
-      '<div class="exp"><h4>Explanation</h4>'+esc(q.exp)+
-        '<ul class="whys">'+whys+'</ul></div>';
+      '<div class="exp"><h4>Explanation</h4>'+esc(q.exp)+'<ul class="whys">'+whys+'</ul></div>';
   }
-  function runningCorrect(){
-    var n=0;quiz.qs.forEach(function(q,i){if(quiz.ans[i]===q.answer)n++});return n;
+  function runningCorrect(){var n=0;quiz.order.forEach(function(id){if(quiz.ans[id]===byId[id].answer)n++});return n;}
+  function answeredCount(){var n=0;quiz.order.forEach(function(id){if(quiz.ans[id]!=null)n++});return n;}
+  function advance(){
+    var list=curList();
+    if(quiz.pos>=list.length-1){ endReached(); return; }
+    quiz.pos++; renderQuestion(); saveState();
   }
-  function nextQ(){
-    if(cfg.mode==="standard" && quiz.ans[quiz.i]==null){/* allow skip */}
-    if(quiz.i>=quiz.qs.length-1){finish();return;}
-    quiz.i++;renderQuestion();
+  function nextQ(){ if(!paused) advance(); }
+
+  // ---------- end / redo passed ----------
+  function endReached(){
+    if(!quiz.redo){
+      var pending=quiz.order.filter(function(id){return quiz.ans[id]==null;});
+      if(pending.length){
+        $("#redoInfo").textContent="You have "+pending.length+" question"+(pending.length>1?"s":"")+
+          " you passed or left unanswered. Go back to them before scoring?";
+        show("redoPrompt"); return;
+      }
+    }
+    finish();
+  }
+  function doRedo(){
+    var pending=quiz.order.filter(function(id){return quiz.ans[id]==null;});
+    quiz.redo=true; quiz.redoQueue=shuffle(pending); quiz.pos=0;
+    saveState(); show("quiz"); renderQuestion();
   }
 
   // ---------- results ----------
   function finish(){
-    var qs=quiz.qs, total=qs.length, correct=runningCorrect();
+    stopTimer();
+    var ids=quiz.order, total=ids.length, correct=runningCorrect();
+    markSeen(quiz.exam, ids.filter(function(id){return quiz.ans[id]!=null;}));
+    lsDel(testKey(quiz.exam));
     $("#scoreBig").innerHTML=correct+'<small>/'+total+'</small>';
     var pct=total?Math.round(correct/total*100):0;
     $("#scorePct").innerHTML='<b>'+pct+'%</b> &middot; '+correct+' of '+total+' correct';
-    // by system
+    $("#timeSummary").innerHTML='Time: <b>'+fmtTime(quiz.elapsed)+'</b>'+
+      (total?' &middot; avg '+fmtTime(Math.round(quiz.elapsed/total))+' / question':'');
     var bySys={};
-    qs.forEach(function(q,i){
-      var s=q.system;bySys[s]=bySys[s]||{c:0,t:0};
-      bySys[s].t++; if(quiz.ans[i]===q.answer)bySys[s].c++;
-    });
+    ids.forEach(function(id){var q=byId[id],s=q.system;bySys[s]=bySys[s]||{c:0,t:0};
+      bySys[s].t++; if(quiz.ans[id]===q.answer)bySys[s].c++;});
     var bars=$("#bars");bars.innerHTML="";
     Object.keys(bySys).sort().forEach(function(s){
       var d=bySys[s],p=Math.round(d.c/d.t*100);
@@ -467,17 +619,15 @@
         '<div style="text-align:right">'+d.c+'/'+d.t+'</div>';
       bars.appendChild(el);
     });
-    // review
     var rev=$("#review");rev.innerHTML="";
-    qs.forEach(function(q,i){
-      var chosen=quiz.ans[i], correct=q.answer, ok=chosen===correct, un=chosen==null;
-      var dcls=un?"n":(ok?"g":"b");
+    ids.forEach(function(id,idx){
+      var q=byId[id],chosen=quiz.ans[id],correct=q.answer,ok=chosen===correct,un=chosen==null;
+      var dcls=un?"n":(ok?"g":"b"), picked=un?"passed":LETTERS[chosen];
       var d=document.createElement("details");d.className="rev";
-      var picked=un?"skipped":LETTERS[chosen];
       d.innerHTML='<summary><span class="dot '+dcls+'"></span>'+
-        '<b>Q'+(i+1)+'</b> &middot; '+esc(q.topic)+
+        '<b>Q'+(idx+1)+'</b> &middot; '+esc(q.topic)+
         ' <span class="chip" style="margin-left:auto">you: '+picked+' &middot; key: '+LETTERS[correct]+'</span></summary>'+
-        '<div class="body"><div class="vignette">'+renderVignette(q.vignette)+'</div>'+
+        '<div class="body"><div class="vignette">'+renderVignette(q.vignette,id)+'</div>'+
         '<div class="lead">'+esc(q.lead)+'</div>'+optionReview(q,chosen)+
         '<div class="exp"><h4>Explanation</h4>'+esc(q.exp)+'</div></div>';
       rev.appendChild(d);
@@ -495,27 +645,43 @@
     return out+"</div>";
   }
 
+  // ---------- pause ----------
+  function doPause(){ if(!quiz||paused)return; paused=true;
+    $("#quizBody").classList.add("hide"); $("#pauseScreen").classList.remove("hide");
+    $("#pauseInfo").textContent="Timer stopped at "+fmtTime(quiz.elapsed)+".";
+    renderTimer(); saveState(); }
+  function doResume(){ paused=false;
+    $("#pauseScreen").classList.add("hide"); $("#quizBody").classList.remove("hide"); renderTimer(); }
+  function saveAndExit(){ stopTimer(); saveState(); paused=false;
+    $("#pauseScreen").classList.add("hide"); $("#quizBody").classList.remove("hide");
+    show("setup"); refreshResumeBanner(); }
+
   // ---------- nav ----------
   function show(id){
-    ["setup","quiz","results"].forEach(function(s){$("#"+s).classList.toggle("hide",s!==id)});
+    ["setup","quiz","results","redoPrompt"].forEach(function(s){$("#"+s).classList.toggle("hide",s!==id)});
     window.scrollTo(0,0);
   }
   document.addEventListener("keydown",function(e){
-    if($("#quiz").classList.contains("hide"))return;
-    var k=e.key.toUpperCase(),i=LETTERS.indexOf(k);
-    if(i>-1 && i<quiz.qs[quiz.i].options.length){pick(i);}
+    if($("#quiz").classList.contains("hide")||paused||!quiz)return;
+    var k=e.key.toUpperCase(),i=LETTERS.indexOf(k),q=byId[activeId()];
+    if(i>-1 && i<q.options.length){pick(i);}
     else if(e.key==="Enter" && !$("#next").disabled){nextQ();}
   });
 
   window.addEventListener("DOMContentLoaded",function(){
     if(!BANK.length){
       document.body.innerHTML='<div class="wrap"><div class="card" style="margin-top:40px">'+
-        '<h2>No questions loaded</h2><p class="sub">Make sure <code>data/usmle-step1-b1.js</code> and '+
-        '<code>data/usmle-step1-b2.js</code> sit next to this file.</p></div></div>';return;
+        '<h2>No questions loaded</h2><p class="sub">Make sure the <code>data/</code> files sit next to this page.</p></div></div>';return;
     }
     initSetup();
     $("#next").addEventListener("click",nextQ);
-    $("#end").addEventListener("click",finish);
+    $("#passq").addEventListener("click",passQuestion);
+    $("#end").addEventListener("click",endReached);
+    $("#pause").addEventListener("click",doPause);
+    $("#resumeBtn").addEventListener("click",doResume);
+    $("#saveExit").addEventListener("click",saveAndExit);
+    $("#doRedo").addEventListener("click",doRedo);
+    $("#finishNow").addEventListener("click",finish);
   });
 })();
 </script>
