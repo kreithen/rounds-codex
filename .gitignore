@@ -1,2 +1,5 @@
 node_modules/
 *.log
+
+# Generated Netlify preview build artifact (delivered directly, not versioned)
+rounds-codex-usmle-preview.zip
