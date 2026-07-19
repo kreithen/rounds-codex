@@ -1,6 +1,6 @@
 # Rounds Codex — USMLE Mode: hyperrealistic image prompt sheet
 
-100 AI image-generation prompts (one per illustrated question), each tuned to its
+116 AI image-generation prompts (one per illustrated question), each tuned to its
 vignette, for producing hyperrealistic, medically-accurate images (Higgsfield or
 similar) to replace the current schematic SVGs.
 
@@ -1080,3 +1080,188 @@ questions are created:
   - Authentic otoscopic color photograph framed by the ear canal
 - **Avoid (negative prompt):** a normal pearly-gray translucent drum with a crisp cone of light and visible malleus; a retracted (concave) drum with a prominent malleus; a large central perforation with discharge as the intended finding; tympanostomy tube in place; serous amber effusion with an air-fluid level and no bulging as the main feature; cholesteatoma pearl; annotations or arrows.
 - **Real-image fallback:** Radiopaedia / open-access otology atlases - search "acute otitis media bulging erythematous tympanic membrane otoscopy"; Wikimedia Commons "acute otitis media otoscopy".
+
+<!-- Added with Step 2 CK Batch 5, Step 3 Day 1 Batch 4, Step 3 Day 2 ACM Batch 2 -->
+
+### s2ck-0101 - Severe symptomatic aortic stenosis  (Step 2 CK - Internal Medicine)
+- **Case context:** 72-year-old man with exertional dyspnea, exertional chest tightness, and near-syncope, a harsh crescendo-decrescendo systolic murmur radiating to the carotids, delayed diminished carotid upstroke, and soft single S2; the image is a transthoracic echocardiogram of a heavily calcified aortic valve with peak velocity 4.6 m/s, mean gradient 52 mm Hg, and valve area 0.8 cm2 (severe aortic stenosis).
+- **Modality:** Transthoracic echocardiogram - parasternal long-axis / zoomed aortic-valve grayscale sector view, paired with a continuous-wave Doppler spectral tracing (DICOM-like).
+- **Prompt:** Photorealistic TRANSTHORACIC ECHOCARDIOGRAM in diagnostic grayscale, sector ultrasound field with realistic fine speckle texture and DICOM-like appearance, parasternal long-axis view of the left ventricular outflow tract, aortic root, and left atrium. Depict SEVERE CALCIFIC AORTIC STENOSIS: markedly THICKENED, densely CALCIFIED (brightly echogenic) aortic valve leaflets with restricted opening and reduced systolic excursion (doming/immobile cusps), a concentrically HYPERTROPHIED left ventricle, and a normal-sized left atrium. Include, as a paired continuous-wave Doppler panel, a dense systolic spectral envelope with a high peak velocity around 4.6 m/s. Realistic ultrasound gain gradient, depth shadowing behind the calcified valve, and sector edges. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Densely calcified, thickened aortic valve leaflets with restricted opening
+  - Concentric left ventricular hypertrophy
+  - Paired continuous-wave Doppler with a high-velocity systolic envelope (~4.6 m/s)
+  - Authentic grayscale transthoracic echocardiogram appearance
+- **Avoid (negative prompt):** a thin, pliable, normally opening aortic valve; the mitral valve rendered as the diseased valve; valvular vegetations (endocarditis) as the intended finding; a color-Doppler mosaic as the primary image; a dilated thin-walled ventricle; CT/MRI cross-section; calipers/annotations dominating the frame.
+- **Real-image fallback:** Radiopaedia / The POCUS Atlas - search "aortic stenosis echocardiography calcified valve continuous wave Doppler"; Wikimedia Commons "aortic stenosis echocardiogram".
+
+### s2ck-0105 - Complicated parapneumonic effusion  (Step 2 CK - Internal Medicine)
+- **Case context:** 60-year-old man completing oral antibiotics for community-acquired pneumonia returns with persistent fever, worsening left pleuritic chest pain, breathlessness, left basal dullness to percussion, and decreased breath sounds; the image is a chest radiograph showing a moderate, partly loculated left pleural effusion.
+- **Modality:** Frontal (PA) chest radiograph, grayscale DICOM-like.
+- **Prompt:** Photorealistic frontal PA CHEST RADIOGRAPH of an adult, grayscale with DICOM-like diagnostic dynamic range and correct thoracic anatomy. Depict a moderate LEFT-SIDED PARAPNEUMONIC PLEURAL EFFUSION: homogeneous increased opacity over the LEFT lower hemithorax with BLUNTING/obliteration of the left costophrenic angle and a partly concave upper border (meniscus), plus a more loculated, non-dependent lenticular pocket of pleural fluid that does not simply layer along the lateral chest wall, suggesting loculation. There is adjacent left basal air-space consolidation from the resolving pneumonia; the mediastinum is not markedly shifted. The right lung, heart border, and bony thorax are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Moderate left pleural effusion with costophrenic-angle blunting and a meniscus
+  - A loculated, partly non-dependent fluid pocket (not free-flowing only)
+  - Associated adjacent basal consolidation (parapneumonic)
+  - Correct frontal chest radiograph appearance
+- **Avoid (negative prompt):** a completely clear pleural space; a massive whiteout hemithorax with contralateral mediastinal shift as the intended finding; bilateral symmetric effusions of heart failure with cardiomegaly; a tension pneumothorax; a lobar mass; a lateral view when frontal requested; annotations or lines/tubes.
+- **Real-image fallback:** Radiopaedia - search "parapneumonic effusion loculated chest radiograph"; Wikimedia Commons "pleural effusion chest x-ray".
+
+### s2ck-0111 - Symptomatic carotid artery stenosis  (Step 2 CK - Surgery)
+- **Case context:** 70-year-old man with a resolved episode of left-sided arm and face weakness (TIA), hypertension, hyperlipidemia, and an audible right carotid bruit, now with a normal neurologic examination; the image is a carotid duplex ultrasound showing about 80% stenosis of the right internal carotid artery with elevated peak systolic velocity.
+- **Modality:** Carotid duplex ultrasound - grayscale/color-Doppler longitudinal view of the carotid bifurcation with a spectral Doppler waveform panel (DICOM-like).
+- **Prompt:** Photorealistic CAROTID DUPLEX ULTRASOUND image, grayscale linear-probe longitudinal view of the carotid bifurcation with realistic fine speckle texture and DICOM-like appearance, with a color-Doppler box over the vessel and a paired spectral Doppler waveform panel below. Depict severe (~80%) INTERNAL CAROTID ARTERY STENOSIS: a heterogeneous, partly calcified atherosclerotic PLAQUE narrowing the residual lumen of the proximal internal carotid artery, with a focal high-velocity color-Doppler jet showing aliasing/mosaic turbulence at the narrowest point; the spectral waveform demonstrates a markedly ELEVATED PEAK SYSTOLIC VELOCITY with spectral broadening (filling-in) through the stenosis. Realistic ultrasound gain gradient and depth. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Atherosclerotic plaque narrowing the internal carotid artery lumen (severe stenosis)
+  - Focal color-Doppler aliasing/turbulent jet at the stenosis
+  - Spectral waveform with markedly elevated peak systolic velocity and spectral broadening
+  - Authentic carotid duplex ultrasound appearance
+- **Avoid (negative prompt):** a widely patent normal-caliber carotid with laminar low-velocity flow; complete occlusion with no flow signal as the intended finding; a venous (compressible) vessel; a thyroid nodule mistaken for the vessel; a CT angiogram cross-section; a plain grayscale image with no Doppler; calipers/annotations dominating the frame.
+- **Real-image fallback:** Radiopaedia / The POCUS Atlas - search "carotid stenosis duplex ultrasound elevated peak systolic velocity ICA"; Wikimedia Commons "carotid artery stenosis ultrasound Doppler".
+
+### s2ck-0112 - Palpable breast mass - diagnostic mammography  (Step 2 CK - Surgery)
+- **Case context:** 48-year-old woman with a 3-week history of a firm, nontender, irregular, hard right breast lump in the upper outer quadrant that feels fixed to underlying tissue, never previously imaged; the image is a diagnostic mammogram showing a spiculated mass with associated pleomorphic microcalcifications (suspicious for carcinoma).
+- **Modality:** Diagnostic MAMMOGRAM, single-breast craniocaudal/mediolateral-oblique view, grayscale (DICOM-like), fibroglandular breast background.
+- **Prompt:** Photorealistic DIAGNOSTIC MAMMOGRAM in grayscale with DICOM-like high dynamic range, correct fibroglandular breast parenchymal texture and skin line, single-breast view. Depict a SUSPICIOUS BREAST CARCINOMA: a high-density, irregular SPICULATED MASS in the upper outer breast with radiating stellate spicules infiltrating into the surrounding parenchyma (no smooth well-circumscribed border), associated with a cluster of fine PLEOMORPHIC (varying size and shape) MICROCALCIFICATIONS in and around the mass, plus subtle architectural distortion pulling on adjacent tissue. The remaining breast parenchyma, skin, and pectoral margin are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Irregular spiculated (stellate) mass with radiating spicules, not a smooth round border
+  - Clustered pleomorphic microcalcifications
+  - Associated architectural distortion
+  - Correct grayscale mammographic appearance
+- **Avoid (negative prompt):** a smoothly marginated round/oval circumscribed mass (benign fibroadenoma/cyst); scattered coarse benign popcorn calcifications as the intended finding; a purely fatty breast with no lesion; a normal symmetric parenchyma; an ultrasound or MRI appearance; a chest radiograph; calipers/annotations dominating the frame.
+- **Real-image fallback:** Radiopaedia - search "breast cancer spiculated mass mammogram microcalcifications"; PathologyOutlines/open-access breast imaging atlases; Wikimedia Commons "mammogram breast carcinoma spiculated".
+
+### s2ck-0114 - Necrotizing enterocolitis  (Step 2 CK - Pediatrics)
+- **Case context:** Premature infant born at 29 weeks, now 8 days old, who after advancement of enteral feeds develops abdominal distension, feeding intolerance with bilious residuals, bloody stools, and lethargy, with a distended tender abdomen; the image is an abdominal radiograph showing pneumatosis intestinalis in the bowel wall without free air.
+- **Modality:** Supine neonatal ABDOMINAL RADIOGRAPH (babygram/KUB), grayscale DICOM-like.
+- **Prompt:** Photorealistic supine NEONATAL ABDOMINAL RADIOGRAPH of a premature infant, grayscale with DICOM-like diagnostic dynamic range, anatomically correct tiny neonatal bowel gas pattern, ribs, and spine. Depict NECROTIZING ENTEROCOLITIS: PNEUMATOSIS INTESTINALIS shown as curvilinear and bubbly lucent (dark) gas lines within the WALL of dilated bowel loops, giving a stippled/train-track intramural gas appearance most prominent in the lower abdomen, together with mild diffuse bowel dilation and separation of loops. There is NO free intraperitoneal air (no lucency under the diaphragm, no football sign), and no portal-venous gas branching over the liver as the dominant feature. Correct neonatal thoracoabdominal anatomy. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Intramural bowel-wall gas (pneumatosis intestinalis) as curvilinear/bubbly lucencies
+  - Mildly dilated, separated bowel loops
+  - No free intraperitoneal air (not perforated)
+  - Correct supine neonatal abdominal radiograph appearance
+- **Avoid (negative prompt):** free air under the diaphragm or a football sign (perforation) as the intended finding; a normal neonatal bowel gas pattern; multiple large-bowel air-fluid levels of adult obstruction; an adult-sized abdomen; a chest-only view; branching portal venous gas rendered as the sole finding; annotations or lines/tubes.
+- **Real-image fallback:** Radiopaedia - search "necrotizing enterocolitis pneumatosis intestinalis neonatal abdominal radiograph"; Wikimedia Commons "necrotizing enterocolitis x-ray pneumatosis".
+
+### s2ck-0120 - Threatened abortion - viable early intrauterine pregnancy  (Step 2 CK - Obstetrics & Gynecology)
+- **Case context:** 26-year-old woman at 9 weeks gestation with 1 day of light vaginal bleeding and mild cramping, a closed cervical os, no tissue passed, and hemodynamic stability; the image is a transvaginal ultrasound showing a live intrauterine pregnancy with fetal cardiac activity appropriate for dates (threatened abortion).
+- **Modality:** Transvaginal obstetric ultrasound, grayscale endocavitary sector view of the uterus with an early gestation (DICOM-like); optional M-mode strip for cardiac activity.
+- **Prompt:** Photorealistic TRANSVAGINAL OBSTETRIC ULTRASOUND image, grayscale sector field with realistic fine speckle texture, correct endocavitary probe geometry and depth gradient, sagittal view of the uterus. Depict a VIABLE EARLY INTRAUTERINE PREGNANCY: a single well-defined intrauterine GESTATIONAL SAC (anechoic/black fluid) implanted within the echogenic decidualized endometrium, containing a clearly identifiable FETAL POLE/embryo with a yolk sac, appropriate for about 9 weeks; include a paired M-mode strip showing rhythmic FETAL CARDIAC ACTIVITY as a wavy motion trace, confirming viability. The gestational sac is intrauterine (surrounded by myometrium on all sides), the cervix is closed, and there is no large subchorionic hemorrhage effacing the sac. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Single intrauterine gestational sac with a yolk sac and embryo/fetal pole
+  - Sac clearly intrauterine (surrounded by myometrium), cervix closed
+  - Paired M-mode showing fetal cardiac activity (viable)
+  - Authentic grayscale transvaginal obstetric ultrasound appearance
+- **Avoid (negative prompt):** an empty uterus with an adnexal mass or free fluid (ectopic) as the intended finding; an open/dilated cervix with a sac in the canal (inevitable abortion); an empty gestational sac with no embryo (anembryonic); a large subchorionic hemorrhage dominating the image; a non-gravid uterus; CT/MRI cross-section; calipers/annotations dominating the frame.
+- **Real-image fallback:** Radiopaedia / The POCUS Atlas - search "early intrauterine pregnancy transvaginal ultrasound yolk sac fetal pole"; Wikimedia Commons "first trimester ultrasound intrauterine pregnancy".
+
+### s3-0101 - Area under the ROC curve for test discrimination  (Step 3 - Biostatistics & Epidemiology)
+- **Case context:** Investigators develop a continuous biomarker to distinguish diseased from non-diseased patients and plot sensitivity against 1 minus specificity across all cutoffs; the image is a receiver operating characteristic (ROC) curve bowing toward the upper-left corner with an area under the curve of 0.88 and a diagonal reference line (area 0.50).
+- **Modality:** Statistical RECEIVER OPERATING CHARACTERISTIC (ROC) curve - clean vector-style scientific figure on a white background, best rendered as a vector chart, not a photorealistic medical image.
+- **Prompt:** Clean vector-style scientific RECEIVER OPERATING CHARACTERISTIC (ROC) curve on a white background, high-resolution journal-figure clarity, a square plot with a horizontal axis running from 0 to 1 for 1 minus specificity (false-positive rate) and a vertical axis running from 0 to 1 for sensitivity (true-positive rate). Show a single smooth CURVE that rises steeply from the bottom-left origin and BOWS strongly toward the UPPER-LEFT corner before flattening toward the top-right, enclosing a large area (about 0.88 of the unit square). A straight 45-degree DIAGONAL REFERENCE LINE runs from the bottom-left corner to the top-right corner representing chance discrimination (area 0.50), with the curve lying well ABOVE that diagonal throughout. Tidy axes and gridlines in a clean scientific style. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Square plot with sensitivity (y) versus 1-specificity (x), each 0 to 1
+  - A curve bowing toward the upper-left corner (large area, ~0.88)
+  - A 45-degree diagonal reference line (chance, area 0.50) with the curve above it
+  - Clean vector scientific-figure style
+- **Avoid (negative prompt):** a curve that lies on or below the diagonal (no/poor discrimination); a stepwise descending Kaplan-Meier survival curve; a scatter plot, bar chart, or forest plot; an inverted curve bowing to the lower-right; axes not spanning 0 to 1; any photorealistic clinical imagery.
+- **Real-image fallback:** Wikimedia Commons - search "ROC curve receiver operating characteristic"; open-access statistics texts. Best rendered as a clean app-native SVG vector chart, not an AI photo.
+
+### s3-0102 - Kaplan-Meier survival curve interpretation  (Step 3 - Biostatistics & Epidemiology)
+- **Case context:** A randomized trial reports overall survival for a new therapy versus standard care with Kaplan-Meier curves; the treatment curve stays above the control curve, median survival is 30 months for treatment and 20 months for control, censored patients are marked with tick marks, and the log-rank p = 0.01.
+- **Modality:** Statistical KAPLAN-MEIER survival plot - clean vector-style scientific figure on a white background, best rendered as a vector chart, not a photorealistic medical image.
+- **Prompt:** Clean vector-style scientific KAPLAN-MEIER survival plot on a white background, high-resolution journal-figure clarity, a horizontal axis for time in months (from 0 to about 48) and a vertical axis for survival probability from 0.0 to 1.0. Show TWO descending STEP-FUNCTION survival curves that both begin together at a survival probability of 1.0 at time zero and fall in discrete horizontal-then-vertical steps: an UPPER TREATMENT curve that stays consistently ABOVE a LOWER CONTROL curve throughout follow-up and does not cross it. Mark the point where each curve crosses the 50% survival level, with the treatment curve reaching median survival at about 30 months and the control curve at about 20 months. Add small vertical TICK MARKS along each curve indicating CENSORED patients. Tidy axes and gridlines, clean scientific style. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Two stepwise (staircase) descending survival curves both starting at 1.0
+  - Treatment curve consistently above the control curve, not crossing
+  - Median (50% survival) crossings at ~30 months (treatment) and ~20 months (control)
+  - Censoring tick marks on the curves; clean vector scientific style
+- **Avoid (negative prompt):** smooth continuous (non-step) curves; curves that cross or that rise/ascend; a single curve only; an ROC curve bowing to the upper-left; a forest plot or bar chart; time axis with no clear median crossings; any photorealistic clinical imagery.
+- **Real-image fallback:** Wikimedia Commons - search "Kaplan-Meier survival curve"; open-access oncology/trial figures. Best rendered as a clean app-native SVG vector chart, not an AI photo.
+
+### s3-0123 - Subarachnoid hemorrhage  (Step 3 - Emergency Medicine)
+- **Case context:** 47-year-old woman with sudden thunderclap "worst headache of my life" peaking within seconds, neck stiffness, and one episode of vomiting, awake with no focal deficits; the image is a noncontrast head CT showing hyperdense blood filling the basal cisterns and sylvian fissures (acute subarachnoid hemorrhage).
+- **Modality:** Noncontrast head CT, axial slice at the level of the suprasellar/basal cisterns (DICOM grayscale, brain window).
+- **Prompt:** Hyperrealistic axial NONCONTRAST HEAD CT in diagnostic grayscale, brain window, radiologically accurate and symmetric skull-base and brain anatomy with realistic CT noise. Depict acute SUBARACHNOID HEMORRHAGE: bright HYPERDENSE (white) BLOOD filling and outlining the normally dark cerebrospinal-fluid spaces of the BASAL (suprasellar) CISTERNS in a star-shaped configuration and extending into both SYLVIAN FISSURES and the interhemispheric fissure, so the CSF cisterns that should be black are instead densely white. The ventricles are not markedly enlarged (or show only early dependent layering of blood), there is no large focal intraparenchymal clot, and the calvarium is intact. Gray-white differentiation preserved elsewhere. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Hyperdense blood filling the basal cisterns (star-shaped) and sylvian fissures
+  - CSF spaces that are normally dark rendered bright white with blood
+  - Preserved symmetric skull and brain anatomy on a noncontrast CT
+  - Brain-window axial CT appearance
+- **Avoid (negative prompt):** a crescentic extra-axial collection over the convexity (subdural) as the intended finding; a biconvex lens-shaped epidural hematoma; a focal round intraparenchymal hemorrhage as the main finding; a hypodense wedge infarct; contrast-enhanced vessels; a normal all-dark cistern (no blood); bone-only window; calipers/annotations.
+- **Real-image fallback:** Radiopaedia - search "subarachnoid hemorrhage noncontrast CT basal cisterns"; Wikimedia Commons "subarachnoid hemorrhage CT".
+
+### s3-0124 - Tricyclic antidepressant overdose  (Step 3 - Emergency Medicine)  [ECG]
+- **WARNING:** AI image generators render ECG tracings as physiologically meaningless gibberish and cannot reliably draw a specific QRS width or a discrete terminal R wave in a named lead. The wide QRS with a terminal R wave in aVR of sodium-channel blockade is exactly what AI gets wrong. Strongly recommend a REAL de-identified tricyclic-overdose 12-lead ECG (e.g., LITFL) or the app's own accurate vector-drawn tracing as the PRIMARY asset; use any AI output only as a placeholder and QA every complex against the criteria below.
+- **Case context:** 24-year-old woman, obtunded 1 hour after an intentional amitriptyline overdose, hypotensive with dilated pupils, dry skin, decreased bowel sounds, and a brief seizure; the tracing must show sinus tachycardia with a widened QRS (about 130 ms) and a prominent terminal R wave in lead aVR (sodium-channel blockade).
+- **Modality:** 12-lead ECG on standard red/pink grid.
+- **Prompt:** Photorealistic clinical 12-lead ECG printout on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines, clean black waveform trace, standard 3x4 lead layout plus a rhythm strip. Depict TRICYCLIC ANTIDEPRESSANT (SODIUM-CHANNEL-BLOCKADE) TOXICITY: a regular SINUS TACHYCARDIA at a fast rate with a distinctly WIDENED QRS complex (broad, about 130 ms / three-plus small squares) in every lead, and in lead aVR a PROMINENT TERMINAL R WAVE (a positive deflection in the last part of the QRS) with a deep terminal S wave in the lateral leads I and aVL (rightward terminal axis). The overall QRS morphology is broad and slurred rather than crisp and narrow. Physiologically consistent, evenly spaced beats with matching broad morphology across leads. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):** Sinus tachycardia; uniformly WIDE QRS complexes (~130 ms); a prominent terminal R wave in lead aVR; a broad slurred terminal QRS (not a crisp narrow complex).
+- **Avoid (negative prompt):** narrow normal-width QRS complexes; territory-specific ST-segment elevation of a STEMI; tall peaked T waves of hyperkalemia as the main finding; an irregularly irregular P-wave-absent rhythm (AF); a delta wave (pre-excitation); random gibberish waveforms; wrong grid color; annotations or lead labels.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "tricyclic antidepressant overdose ECG wide QRS terminal R wave aVR"; Wikimedia Commons "sodium channel blockade ECG". Prefer the app vector tracing.
+
+### s3-0125 - Acute uncomplicated diverticulitis  (Step 3 - Surgery)
+- **Case context:** 60-year-old man with 2 days of steady left lower quadrant pain, low-grade fever, and mild leukocytosis, hemodynamically stable, tolerating oral intake, with localized LLQ tenderness and no peritoneal signs; the image is an abdominal/pelvic CT showing sigmoid colonic wall thickening with pericolic fat stranding and diverticula, no abscess or free air.
+- **Modality:** Contrast-enhanced CT of the abdomen and pelvis, axial slice, soft-tissue window (DICOM grayscale).
+- **Prompt:** Hyperrealistic axial CONTRAST-ENHANCED CT of the abdomen and pelvis in diagnostic grayscale, soft-tissue window, radiologically accurate left-lower-quadrant anatomy with contrast-opacified bowel and vessels and realistic CT noise. Depict ACUTE UNCOMPLICATED SIGMOID DIVERTICULITIS: a segment of SIGMOID COLON with circumferential WALL THICKENING and mucosal hyperenhancement, several outpouching air- or contrast-filled DIVERTICULA arising from the wall, and surrounding inflammatory PERICOLIC FAT STRANDING (hazy increased density in the adjacent mesocolic fat). There is NO drainable fluid collection/abscess, NO extraluminal free air, and no contrast extravasation (uncomplicated). Adjacent bladder, iliac vessels, and bony pelvis correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Sigmoid colonic wall thickening with associated diverticula
+  - Surrounding pericolic inflammatory fat stranding
+  - No abscess, free air, or extravasation (uncomplicated)
+  - Contrast-enhanced axial abdominopelvic CT appearance
+- **Avoid (negative prompt):** a walled-off pericolic abscess or extraluminal free air (complicated) as the intended finding; a dilated non-filling right-lower-quadrant appendix (appendicitis); an obstructing colonic mass with shouldered margins; a normal thin-walled colon; small-bowel obstruction with air-fluid levels; noncontrast or MRI appearance; calipers/annotations.
+- **Real-image fallback:** Radiopaedia - search "acute diverticulitis CT sigmoid wall thickening pericolic fat stranding"; Wikimedia Commons "diverticulitis CT".
+
+### s3-0126 - Atrial fibrillation with rapid ventricular response  (Step 3 - Internal Medicine)  [ECG]
+- **WARNING:** AI image generators render ECG tracings as physiologically meaningless gibberish and cannot reliably draw a genuinely irregular, P-wave-absent rhythm at a fast rate. Strongly recommend a REAL de-identified rapid atrial fibrillation ECG (e.g., LITFL) or the app's own accurate vector-drawn tracing as the PRIMARY asset; use any AI output only as a placeholder and QA every complex against the criteria below.
+- **Case context:** 68-year-old woman with 2 days of palpitations and mild exertional breathlessness, hypertension, no chest pain, hemodynamically stable (BP 128/78) with a ventricular rate of 128/min, not anticoagulated; the tracing must show an irregularly irregular narrow-complex rhythm with absent discrete P waves at a ventricular rate near 130/min.
+- **Modality:** 12-lead ECG or rhythm strip on standard red/pink grid.
+- **Prompt:** Photorealistic clinical ECG rhythm strip on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines, clean black waveform trace. Depict ATRIAL FIBRILLATION WITH RAPID VENTRICULAR RESPONSE: an IRREGULARLY IRREGULAR ventricular rhythm at a FAST rate around 130/min, with NO discrete upright P waves and a chaotic low-amplitude FIBRILLATORY baseline between beats; the QRS complexes are NARROW and normal in morphology but occur at continually varying, closely spaced RR intervals with no repeating pattern. Physiologically consistent narrow complexes on an unmistakably irregular, P-wave-absent baseline. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):** Irregularly irregular RR intervals with no repeating pattern at a rapid rate (~130/min); absent discrete P waves with a fibrillatory baseline; narrow QRS complexes.
+- **Avoid (negative prompt):** clear upright P waves before each QRS (sinus tachycardia); a perfectly regular narrow tachycardia (SVT/flutter with fixed conduction); sawtooth flutter waves; wide bizarre QRS complexes (VT); random gibberish waveforms; wrong grid color; annotations or lead labels.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "atrial fibrillation rapid ventricular response ECG"; Wikimedia Commons "atrial fibrillation RVR ECG". Prefer the app vector tracing.
+
+### s3-0134 - Hyperkalemia with ECG changes  (Step 3 - Emergency Medicine)  [ECG]
+- **WARNING:** AI image generators render ECG tracings as physiologically meaningless gibberish and cannot reliably draw the specific tall, narrow-based, peaked T-wave morphology of hyperkalemia. This finding is exactly what AI gets wrong. Strongly recommend a REAL de-identified hyperkalemia 12-lead ECG (e.g., LITFL) or the app's own accurate vector-drawn tracing as the PRIMARY asset; use any AI output only as a placeholder and QA every complex against the criteria below.
+- **Case context:** 62-year-old man with end-stage renal disease who missed two dialysis sessions, presenting with generalized weakness and palpitations, bradycardic, with a potassium of 7.1 mEq/L; the tracing must show sinus rhythm with tall, narrow-based peaked T waves and progressive widening of the QRS complexes (severe hyperkalemia).
+- **Modality:** 12-lead ECG or rhythm strip on standard red/pink grid.
+- **Prompt:** Photorealistic clinical ECG rhythm strip on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines, clean black waveform trace. Depict SEVERE HYPERKALEMIA: a slow SINUS rhythm in which every beat shows a TALL, PEAKED, NARROW-BASED T WAVE that is symmetric and sharply pointed (tented), rising well above the preceding R wave in the precordial leads, together with a progressively WIDENED QRS complex (broadened and slurred) and a flattened/diminishing P wave. The T waves look pinched and tent-like at the peak rather than broad and rounded. Physiologically consistent, evenly spaced beats with matching morphology across leads. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):** Tall, narrow-based, sharply peaked (tented) symmetric T waves; widened QRS complexes; flattened/diminished P waves; a slow rate.
+- **Avoid (negative prompt):** broad rounded or hyperacute STEMI T waves; territory-specific ST-segment elevation; an irregularly irregular rhythm (AF); deeply inverted T waves; a terminal R wave in aVR with an otherwise normal T wave; random gibberish waveforms; wrong grid color; annotations or lead labels.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "hyperkalemia ECG peaked T waves widened QRS"; Wikimedia Commons "hyperkalemia ECG peaked T waves". Prefer the app vector tracing.
+
+### s3-0137 - Adhesive small bowel obstruction  (Step 3 - Surgery)
+- **Case context:** 64-year-old man with a prior open appendectomy, presenting with 1 day of crampy abdominal pain, distension, bilious vomiting, and obstipation, with a distended tympanitic but soft abdomen and no peritoneal signs, hemodynamically stable; the image is a supine-and-upright abdominal series showing multiple dilated small-bowel loops with air-fluid levels and a distal transition point, without free air or ischemia.
+- **Modality:** Two-view ABDOMINAL SERIES (supine KUB plus upright abdominal/erect view), grayscale DICOM-like.
+- **Prompt:** Photorealistic ABDOMINAL SERIES of an adult in grayscale with DICOM-like diagnostic dynamic range and correct bowel gas pattern and bony anatomy, presented as a paired SUPINE and UPRIGHT view. Depict ADHESIVE SMALL BOWEL OBSTRUCTION: multiple DILATED loops of SMALL BOWEL arranged centrally in a stepladder pattern, showing the thin complete transverse VALVULAE CONNIVENTES (plicae) that cross the full bowel width, with a paucity of gas in the distal colon and rectum indicating a distal TRANSITION POINT. On the UPRIGHT view show multiple air-fluid levels at different heights within the dilated loops (stepladder appearance). There is NO free air under the diaphragm and no pneumatosis or portal gas suggesting ischemia. Correct lumbar spine and pelvis rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Multiple centrally located dilated small-bowel loops with valvulae conniventes crossing the full width
+  - Multiple air-fluid levels at differing heights on the upright view (stepladder)
+  - Distal transition with a gasless colon/rectum
+  - No free air or signs of ischemia; correct abdominal-series appearance
+- **Avoid (negative prompt):** a massively dilated inverted-U sigmoid loop with a central cleft (sigmoid volvulus); peripheral haustrated large-bowel dilation as the dominant finding; free air under the diaphragm (perforation); pneumatosis intestinalis; a normal nondistended bowel gas pattern; a single-view chest radiograph only; annotations or tubes.
+- **Real-image fallback:** Radiopaedia - search "small bowel obstruction abdominal radiograph air-fluid levels valvulae conniventes"; Wikimedia Commons "small bowel obstruction x-ray".
+
+### s3-0138 - Uncomplicated diverticulitis  (Step 3 - Surgery)
+- **Case context:** 58-year-old woman with 2 days of left lower quadrant pain and low-grade fever, well-appearing, tolerating oral intake, hemodynamically stable, with mild LLQ tenderness and no peritoneal signs and a mildly elevated white cell count; the image is a contrast-enhanced abdominal CT showing sigmoid colonic wall thickening with pericolic fat stranding and diverticula, without abscess, free air, or perforation.
+- **Modality:** Contrast-enhanced CT of the abdomen and pelvis, axial slice, soft-tissue window (DICOM grayscale).
+- **Prompt:** Hyperrealistic axial CONTRAST-ENHANCED CT of the abdomen and pelvis in diagnostic grayscale, soft-tissue window, radiologically accurate left-lower-quadrant anatomy with contrast-opacified bowel and vessels and realistic CT noise. Depict ACUTE UNCOMPLICATED SIGMOID DIVERTICULITIS: a segment of SIGMOID COLON with circumferential WALL THICKENING and mucosal hyperenhancement, multiple outpouching air- or contrast-filled DIVERTICULA along the wall, and adjacent inflammatory PERICOLIC FAT STRANDING (hazy increased density in the mesocolic fat). There is NO drainable abscess, NO extraluminal free air, and no contrast extravasation or perforation (uncomplicated). Adjacent bladder, iliac vessels, and bony pelvis correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Sigmoid colonic wall thickening with associated diverticula
+  - Surrounding pericolic inflammatory fat stranding
+  - No abscess, free air, or perforation (uncomplicated)
+  - Contrast-enhanced axial abdominopelvic CT appearance
+- **Avoid (negative prompt):** a walled-off pericolic abscess or extraluminal free air/perforation (complicated) as the intended finding; a dilated non-filling right-lower-quadrant appendix (appendicitis); an annular obstructing colonic mass with shouldered margins; a normal thin-walled colon; small-bowel obstruction with air-fluid levels; noncontrast or MRI appearance; calipers/annotations.
+- **Real-image fallback:** Radiopaedia - search "acute diverticulitis CT sigmoid wall thickening pericolic fat stranding"; Wikimedia Commons "diverticulitis CT".
+
+### s3-0141 - Ileocolic intussusception  (Step 3 - Pediatrics)
+- **Case context:** 18-month-old boy with paroxysms of sudden inconsolable crying and drawing up of the legs alternating with calm intervals, one stool mixed with blood and mucus (currant-jelly), and a sausage-shaped right-upper-quadrant mass, well-perfused with a soft nontender abdomen and no peritoneal signs; the image is an abdominal ultrasound showing a target (doughnut) sign of concentric bowel rings.
+- **Modality:** Abdominal ULTRASOUND, transverse grayscale view of the right abdomen (linear/curvilinear probe, DICOM-like).
+- **Prompt:** Photorealistic ABDOMINAL ULTRASOUND image of a toddler's right abdomen, grayscale sector/linear field with realistic fine speckle texture and DICOM-like appearance, transverse orientation. Depict ILEOCOLIC INTUSSUSCEPTION: a rounded bowel-within-bowel mass shown in cross-section as the classic TARGET (DOUGHNUT) SIGN - multiple CONCENTRIC alternating hyperechoic (bright) and hypoechoic (dark) RINGS formed by the telescoped layers of bowel wall and intervening mesentery, with a brighter central echogenic core (the invaginated mesentery/mucosa) surrounded by a thicker hypoechoic outer rim of edematous bowel wall. Adjacent normal bowel and mesenteric fat provide context. Realistic ultrasound gain gradient and depth. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Concentric alternating hyperechoic/hypoechoic rings (target/doughnut sign) in cross-section
+  - A hypoechoic outer rim of edematous bowel wall around a brighter central core
+  - A rounded bowel-within-bowel mass in the right abdomen
+  - Authentic grayscale abdominal ultrasound appearance
+- **Avoid (negative prompt):** a single normal thin-walled bowel loop with no rings; an anechoic simple cyst or fluid collection as the intended finding; a hypertrophic pylorus with an elongated muscular channel (pyloric stenosis); an appendix with a blind-ending tube; free intraperitoneal fluid or pneumatosis as the dominant finding; CT/MRI cross-section; calipers/annotations dominating the frame.
+- **Real-image fallback:** Radiopaedia / The POCUS Atlas - search "intussusception ultrasound target doughnut sign"; Wikimedia Commons "intussusception ultrasound target sign".
