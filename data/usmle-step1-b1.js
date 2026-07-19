@@ -16,13 +16,13 @@ const USMLE_STEP1_B1 = [
     difficulty: "moderate",
     anchor: null,
     vignette: "A 4-year-old boy is brought in for intellectual disability, involuntary writhing movements, and repeated biting of his own lips and fingertips that has required protective restraints. His parents recall orange, sand-like crystals in his diapers during infancy. He has swollen, tender joints, and serum uric acid is markedly elevated. His maternal uncle had similar problems.",
-    lead: "Deficiency of which enzyme best accounts for this presentation?",
+    lead: "Which of the following enzymatic abnormalities best accounts for this presentation?",
     options: [
-      "Adenosine deaminase",
-      "Adenine phosphoribosyltransferase",
-      "Hypoxanthine-guanine phosphoribosyltransferase",
-      "Xanthine oxidase",
-      "Increased activity of PRPP synthetase"
+      "Adenosine deaminase deficiency",
+      "Adenine phosphoribosyltransferase deficiency",
+      "Hypoxanthine-guanine phosphoribosyltransferase deficiency",
+      "Xanthine oxidase deficiency",
+      "PRPP synthetase overactivity"
     ],
     answer: 2,
     exp: "The triad of self-mutilation, dystonia with intellectual disability, and hyperuricemia in an X-linked pattern is Lesch-Nyhan syndrome, caused by deficient HGPRT. Loss of purine salvage forces hypoxanthine and guanine down the degradation pathway to uric acid while de novo purine synthesis is disinhibited, producing gout and urate nephrolithiasis. The neurobehavioral features are the clinical hallmark that separates it from other causes of hyperuricemia.",
@@ -230,7 +230,7 @@ const USMLE_STEP1_B1 = [
       "A CTG trinucleotide repeat expansion in DMPK",
       "A frameshift mutation in the dystrophin gene",
       "Autoantibodies against the nicotinic acetylcholine receptor",
-      "An in-frame missense mutation that preserves partial dystrophin function"
+      "An in-frame deletion that preserves partial dystrophin function"
     ],
     answer: 2,
     exp: "Proximal weakness with Gowers sign, calf pseudohypertrophy, very high creatine kinase, and X-linked family history is Duchenne muscular dystrophy. Frameshift mutations in the dystrophin gene abolish functional dystrophin, so myofibers lack the link between cytoskeleton and extracellular matrix and undergo progressive degeneration. Absent dystrophin distinguishes Duchenne from the milder Becker form.",
@@ -239,7 +239,7 @@ const USMLE_STEP1_B1 = [
       "A DMPK CTG expansion causes myotonic dystrophy with grip myotonia, cataracts, and distal weakness.",
       "Correct: a frameshift mutation eliminates dystrophin, producing severe early-onset Duchenne dystrophy.",
       "Acetylcholine receptor autoantibodies cause myasthenia gravis with fatigable weakness and normal creatine kinase.",
-      "An in-frame mutation preserving partial dystrophin produces the milder Becker dystrophy, not this severe early presentation."
+      "An in-frame deletion preserving partial dystrophin produces the milder Becker dystrophy, not this severe early presentation."
     ]
   },
   {
