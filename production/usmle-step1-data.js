@@ -14,7 +14,10 @@
  *   usmle-step1-b7.js -> USMLE_STEP1_B7 (25)
  *   usmle-step1-b8.js -> USMLE_STEP1_B8 (25)
  *   usmle-step1-b9.js -> USMLE_STEP1_B9 (25)
- *   TOTAL: 225 items
+ *   usmle-step1-b10.js -> USMLE_STEP1_B10 (25)
+ *   usmle-step1-b11.js -> USMLE_STEP1_B11 (25)
+ *   usmle-step1-b12.js -> USMLE_STEP1_B12 (5)
+ *   TOTAL: 280 items
  *
  * Exposes globals USMLE_STEP1 (array, batch order) and
  * USMLE_STEP1_BY_ID (object keyed by item id).
@@ -5072,7 +5075,7 @@ const USMLE_STEP1 = [
     "topic": "Amyloidosis",
     "difficulty": "hard",
     "anchor": "image",
-    "vignette": "A 63-year-old man has months of fatigue, worsening leg edema, and frothy urine. He has an enlarged tongue, easy bruising around the eyes, and thickened, waxy skin. Echocardiography shows thickened ventricular walls with preserved wall thickness on voltage-discordant ECG, and urinalysis shows heavy proteinuria. He has a monoclonal light chain in the serum.\n\n**[IMAGE: renal biopsy stained with Congo red showing amorphous deposits that display apple-green birefringence under polarized light]**",
+    "vignette": "A 63-year-old man has months of fatigue, worsening leg edema, and frothy urine. He has an enlarged tongue, easy bruising around the eyes, and thickened, waxy skin. Echocardiography shows thickened ventricular walls, while the ECG shows paradoxically low QRS voltages (voltage-mass discordance), and urinalysis shows heavy proteinuria. He has a monoclonal light chain in the serum.\n\n**[IMAGE: renal biopsy stained with Congo red showing amorphous deposits that display apple-green birefringence under polarized light]**",
     "lead": "Which best explains these multisystem findings?",
     "options": [
       "Granulomatous inflammation infiltrating multiple organs",
@@ -5869,6 +5872,1436 @@ const USMLE_STEP1 = [
       "Withholding and withdrawing life-sustaining treatment are ethically and legally equivalent, so continuing an unwanted ventilator is not justified.",
       "Correct: the patient's clearly expressed prior wishes should be honored by discontinuing the ventilator, since withdrawing and withholding treatment are ethically equivalent.",
       "Seeking another family member to override the patient's documented wishes disregards his autonomy and the surrogate's proper role."
+    ]
+  },
+  {
+    "id": "s1-0226",
+    "system": "Cardiovascular",
+    "discipline": "Pathology",
+    "topic": "Aortic dissection",
+    "difficulty": "hard",
+    "anchor": "image",
+    "vignette": "A 61-year-old man with a long history of poorly controlled hypertension develops abrupt, severe, tearing chest pain that radiates through to his back. He is diaphoretic and anxious. Blood pressure is 178/104 mm Hg in the right arm but 138/82 mm Hg in the left arm, and a soft early diastolic murmur is heard at the left sternal border.\n\n**[IMAGE: contrast CT of the chest showing a widened mediastinum and an intimal flap dividing the ascending aorta into two lumens]**",
+    "lead": "Which is the most likely diagnosis?",
+    "options": [
+      "Aortic dissection",
+      "Acute ST-elevation myocardial infarction",
+      "Massive pulmonary embolism",
+      "Esophageal rupture (Boerhaave syndrome)",
+      "Acute pericarditis"
+    ],
+    "answer": 0,
+    "exp": "Abrupt tearing chest pain radiating to the back, a blood-pressure differential between the arms, and a new murmur of aortic regurgitation in a hypertensive patient point to aortic dissection. Longstanding hypertension causes cystic medial degeneration, allowing an intimal tear through which blood creates a false lumen. CT showing an intimal flap and false lumen confirms the diagnosis.",
+    "why": [
+      "Correct: tearing pain to the back, an inter-arm pressure difference, aortic regurgitation, and an intimal flap on CT are classic for aortic dissection.",
+      "Myocardial infarction causes pressure-like pain but not a blood-pressure differential between arms or an intimal flap on CT.",
+      "Pulmonary embolism causes pleuritic pain and hypoxemia, not a widened mediastinum with an aortic intimal flap.",
+      "Boerhaave syndrome follows forceful vomiting and produces mediastinitis and subcutaneous emphysema, not an aortic flap.",
+      "Acute pericarditis produces positional, pleuritic pain with a friction rub and diffuse ST elevation, not tearing pain with an intimal flap."
+    ]
+  },
+  {
+    "id": "s1-0227",
+    "system": "Cardiovascular",
+    "discipline": "Pathology",
+    "topic": "Mitral valve prolapse",
+    "difficulty": "easy",
+    "anchor": null,
+    "vignette": "A 24-year-old woman is evaluated for occasional palpitations and atypical chest discomfort. On auscultation there is a mid-systolic click followed by a late systolic murmur best heard at the apex. When she stands up from squatting, the click and murmur move earlier in systole and become more prominent.",
+    "lead": "Which is the most likely diagnosis?",
+    "options": [
+      "Aortic stenosis",
+      "Mitral valve prolapse",
+      "Mitral stenosis",
+      "Aortic regurgitation",
+      "Tricuspid regurgitation"
+    ],
+    "answer": 1,
+    "exp": "A mid-systolic click followed by a late systolic murmur that moves earlier in systole with maneuvers that decrease ventricular filling (standing, Valsalva) is characteristic of mitral valve prolapse. Myxomatous degeneration of the leaflets allows them to billow into the left atrium during systole. Reduced preload lets the valve prolapse sooner, shifting the click earlier.",
+    "why": [
+      "Aortic stenosis produces a crescendo-decrescendo systolic ejection murmur radiating to the carotids, not a mid-systolic click.",
+      "Correct: a mid-systolic click with a late systolic murmur that moves earlier on standing indicates mitral valve prolapse from myxomatous leaflets.",
+      "Mitral stenosis causes an opening snap and a diastolic rumble, not a systolic click.",
+      "Aortic regurgitation produces an early diastolic decrescendo murmur, not a systolic click and murmur.",
+      "Tricuspid regurgitation causes a holosystolic murmur that increases with inspiration, without a mid-systolic click."
+    ]
+  },
+  {
+    "id": "s1-0228",
+    "system": "Cardiovascular",
+    "discipline": "Pathology",
+    "topic": "Peripheral artery disease",
+    "difficulty": "easy",
+    "anchor": "lab",
+    "vignette": "A 68-year-old man with a 40-pack-year smoking history and diabetes reports aching, cramping pain in his left calf that reliably begins after walking two blocks and resolves with a few minutes of rest. His pedal pulses are diminished, and the skin over his lower leg is shiny and hairless.\n\n| Test | Value | Reference |\n|---|---|---|\n| Ankle-brachial index (left) | 0.6 | > 0.9 |\n| Ankle-brachial index (right) | 0.95 | > 0.9 |",
+    "lead": "Which is the most likely diagnosis?",
+    "options": [
+      "Deep vein thrombosis",
+      "Lumbar spinal stenosis",
+      "Peripheral artery disease from atherosclerosis",
+      "Chronic venous insufficiency",
+      "Ruptured popliteal (Baker) cyst"
+    ],
+    "answer": 2,
+    "exp": "Reproducible calf pain with walking that is relieved by rest (intermittent claudication), diminished pulses, trophic skin changes, and a reduced ankle-brachial index indicate peripheral artery disease. Atherosclerotic narrowing limits blood flow to exercising muscle, producing ischemic pain that resolves once demand falls. An ABI below 0.9 confirms significant arterial obstruction.",
+    "why": [
+      "Deep vein thrombosis causes constant unilateral swelling and tenderness, not exertional pain relieved by rest with a low ABI.",
+      "Neurogenic claudication from spinal stenosis is relieved by leaning forward, not by simply stopping, and does not lower the ABI.",
+      "Correct: reproducible exertional calf pain relieved by rest with diminished pulses and a low ankle-brachial index is atherosclerotic peripheral artery disease.",
+      "Chronic venous insufficiency causes edema, hyperpigmentation, and aching that worsens with standing, not exertional claudication with a low ABI.",
+      "A ruptured Baker cyst causes acute calf swelling and pain mimicking DVT, not reproducible exertional claudication."
+    ]
+  },
+  {
+    "id": "s1-0229",
+    "system": "Cardiovascular",
+    "discipline": "Pathophysiology",
+    "topic": "Vasospastic (Prinzmetal variant) angina",
+    "difficulty": "moderate",
+    "anchor": "ecg",
+    "vignette": "A 42-year-old woman who smokes reports several episodes of chest pain occurring at rest, typically in the early morning hours, each lasting a few minutes and resolving spontaneously. During one episode in the emergency department her ECG is captured. Subsequent coronary angiography shows no fixed obstructive lesions, and troponin is normal.\n\n**[ECG: transient ST-segment elevation in the inferior leads that fully normalizes as the pain resolves]**",
+    "lead": "Which mechanism best explains her presentation?",
+    "options": [
+      "Fixed atherosclerotic coronary stenosis",
+      "Coronary embolism from a left atrial thrombus",
+      "Aortic dissection extending into a coronary ostium",
+      "Transient coronary artery vasospasm",
+      "Viral myocarditis"
+    ],
+    "answer": 3,
+    "exp": "Rest angina occurring in the early morning with transient ST-segment elevation that resolves, in a patient with normal coronary arteries, is Prinzmetal (variant) angina caused by transient coronary vasospasm. Focal smooth-muscle hyperreactivity abruptly reduces coronary flow, producing transmural ischemia and ST elevation without infarction. Smoking is a common trigger; calcium channel blockers are the treatment.",
+    "why": [
+      "A fixed atherosclerotic stenosis typically causes exertional angina with ST depression, not rest pain with transient ST elevation and normal arteries.",
+      "Coronary embolism would cause sustained infarction with elevated troponin, not transient self-resolving ST changes.",
+      "Aortic dissection produces tearing pain and a pressure differential, not brief self-limited episodes with normal angiography.",
+      "Correct: transient rest angina with reversible ST elevation and angiographically normal coronaries indicates coronary vasospasm (variant angina).",
+      "Myocarditis causes a more sustained illness with elevated troponin and diffuse ECG changes, not brief vasospastic episodes."
+    ]
+  },
+  {
+    "id": "s1-0230",
+    "system": "Cardiovascular",
+    "discipline": "Pathophysiology",
+    "topic": "Constrictive pericarditis",
+    "difficulty": "hard",
+    "anchor": "image",
+    "vignette": "A 57-year-old man who had tuberculosis years earlier develops progressive fatigue, abdominal swelling, and leg edema. His jugular venous pressure is markedly elevated and rises further with inspiration. On auscultation an early diastolic sound is heard after S2, and he has ascites and hepatomegaly. Lungs are clear.\n\n**[IMAGE: lateral chest CT showing a thickened, calcified pericardium encasing the heart]**",
+    "lead": "Which is the most likely diagnosis?",
+    "options": [
+      "Restrictive cardiomyopathy from amyloidosis",
+      "Cardiac tamponade",
+      "Right heart failure from cor pulmonale",
+      "Tricuspid valve stenosis",
+      "Constrictive pericarditis"
+    ],
+    "answer": 4,
+    "exp": "Elevated JVP that rises with inspiration (Kussmaul sign), a pericardial knock, prominent right-sided congestion with clear lungs, and a calcified pericardium after tuberculosis indicate constrictive pericarditis. A rigid, scarred pericardium prevents normal diastolic filling, so ventricular volume is fixed and venous pressures rise. The knock reflects abrupt cessation of filling against the stiff pericardium.",
+    "why": [
+      "Amyloid restrictive cardiomyopathy can mimic constriction but shows thickened myocardium, not a calcified pericardium on imaging.",
+      "Tamponade causes pulsus paradoxus with a small quiet heart and an absent y descent, not a calcified pericardium and knock.",
+      "Cor pulmonale arises from chronic lung disease and pulmonary hypertension, not from a scarred calcified pericardium with clear lungs.",
+      "Tricuspid stenosis produces a diastolic murmur and giant a waves, not a pericardial knock with pericardial calcification.",
+      "Correct: Kussmaul sign, a pericardial knock, right-sided congestion, and a calcified pericardium after TB indicate constrictive pericarditis."
+    ]
+  },
+  {
+    "id": "s1-0231",
+    "system": "Cardiovascular",
+    "discipline": "Pathology",
+    "topic": "Left atrial myxoma",
+    "difficulty": "moderate",
+    "anchor": "image",
+    "vignette": "A 48-year-old woman reports several months of fatigue, low-grade fevers, and weight loss, along with episodes of breathlessness that are worse when she lies in certain positions. She has had one transient episode of right arm weakness. On auscultation a low-pitched early diastolic sound is heard that varies with body position.\n\n**[IMAGE: transthoracic echocardiogram showing a mobile, pedunculated mass attached by a stalk to the interatrial septum near the fossa ovalis, prolapsing across the mitral valve in diastole]**",
+    "lead": "Which is the most likely diagnosis?",
+    "options": [
+      "Left atrial myxoma",
+      "Left atrial appendage thrombus",
+      "Infective endocarditis vegetation",
+      "Papillary fibroelastoma of the aortic valve",
+      "Metastatic carcinoma to the heart"
+    ],
+    "answer": 0,
+    "exp": "Constitutional symptoms, positional dyspnea, embolic events, and a pedunculated mass attached to the fossa ovalis that prolapses across the mitral valve describe a left atrial myxoma, the most common primary cardiac tumor in adults. The gelatinous mass intermittently obstructs the mitral orifice (causing a 'tumor plop' and positional symptoms) and sheds emboli. IL-6 release explains the fever and weight loss.",
+    "why": [
+      "Correct: a pedunculated mass on the interatrial septum causing positional obstruction, emboli, and constitutional symptoms is a left atrial myxoma.",
+      "Atrial thrombus usually forms in the appendage in the setting of atrial fibrillation and is not a pedunculated septal mass with a stalk.",
+      "Endocarditis vegetations attach to valve leaflets and cause a regurgitant murmur, not a stalked septal mass.",
+      "Papillary fibroelastoma is small and attaches to valve surfaces, not by a stalk to the fossa ovalis.",
+      "Cardiac metastases typically involve the pericardium or myocardium diffusely, not as a single pedunculated atrial mass."
+    ]
+  },
+  {
+    "id": "s1-0232",
+    "system": "Respiratory & Renal/Urinary",
+    "discipline": "Pathology",
+    "topic": "Chronic bronchitis (Reid index)",
+    "difficulty": "easy",
+    "anchor": null,
+    "vignette": "A 60-year-old man with a heavy smoking history reports a productive cough with sputum on most days for the past several years, present for more than three months in each of two consecutive years. He is overweight and mildly cyanotic, and has peripheral edema. Histology of his bronchi shows enlargement of the mucous glands relative to the bronchial wall thickness.",
+    "lead": "Which finding best defines his condition?",
+    "options": [
+      "Permanent destruction of alveolar walls distal to terminal bronchioles",
+      "Chronic productive cough for at least 3 months in 2 consecutive years with bronchial mucous gland hyperplasia (increased Reid index)",
+      "Reversible bronchospasm with eosinophilic airway inflammation",
+      "Permanent bronchial dilation with pooling of purulent secretions",
+      "Diffuse alveolar damage with hyaline membrane formation"
+    ],
+    "answer": 1,
+    "exp": "Chronic bronchitis is defined clinically as a productive cough on most days for at least 3 months in 2 consecutive years. The pathologic hallmark is hyperplasia of bronchial submucosal mucous glands, quantified by an increased Reid index (gland-to-wall-thickness ratio). Chronic mucus hypersecretion and hypoxemia produce the classic cyanotic, edematous 'blue bloater.'",
+    "why": [
+      "Alveolar wall destruction defines emphysema, which produces a 'pink puffer' with hyperinflation rather than mucous gland hyperplasia.",
+      "Correct: chronic bronchitis is a productive cough for 3 months over 2 years with mucous gland hyperplasia and an increased Reid index.",
+      "Reversible bronchospasm with eosinophilic inflammation describes asthma, not the fixed mucus hypersecretion of chronic bronchitis.",
+      "Permanent bronchial dilation with pooled secretions describes bronchiectasis, a distinct entity.",
+      "Diffuse alveolar damage with hyaline membranes describes acute respiratory distress syndrome, not chronic bronchitis."
+    ]
+  },
+  {
+    "id": "s1-0233",
+    "system": "Respiratory & Renal/Urinary",
+    "discipline": "Pathophysiology",
+    "topic": "Idiopathic pulmonary arterial hypertension",
+    "difficulty": "hard",
+    "anchor": null,
+    "vignette": "A 32-year-old woman reports two years of gradually worsening exertional dyspnea and fatigue, and recently near-syncope on exertion. Examination reveals a loud pulmonic component of the second heart sound, a right ventricular heave, and mild lower-extremity edema. Chest imaging shows enlarged central pulmonary arteries with clear lung fields, and left ventricular function is normal. A BMPR2 mutation is identified.",
+    "lead": "Which best explains the underlying pathophysiology?",
+    "options": [
+      "Left ventricular systolic failure raising pulmonary venous pressure",
+      "Chronic hypoxemia from diffuse parenchymal lung disease",
+      "Pulmonary arterial remodeling with medial hypertrophy and plexiform lesions",
+      "Recurrent thromboembolic obstruction of pulmonary arteries",
+      "Left-to-right shunt through an atrial septal defect"
+    ],
+    "answer": 2,
+    "exp": "A young woman with progressive dyspnea, a loud P2, RV heave, clear lungs, normal LV function, and a BMPR2 mutation has idiopathic pulmonary arterial hypertension. Loss of BMPR2 signaling promotes proliferation of pulmonary arterial smooth muscle and endothelium, causing medial hypertrophy, intimal fibrosis, and plexiform lesions that raise pulmonary vascular resistance and strain the right ventricle.",
+    "why": [
+      "Left heart failure would show pulmonary venous congestion and reduced LV function, which are absent here.",
+      "Parenchymal lung disease causes hypoxemia with abnormal lung fields, not clear lungs with a BMPR2 mutation.",
+      "Correct: idiopathic PAH from BMPR2 loss causes pulmonary arterial remodeling with medial hypertrophy and plexiform lesions raising vascular resistance.",
+      "Chronic thromboembolic disease produces perfusion defects on imaging, not the primary vascular remodeling of idiopathic PAH.",
+      "An atrial septal defect causes a left-to-right shunt with a fixed split S2, not the isolated arteriopathy described."
+    ]
+  },
+  {
+    "id": "s1-0234",
+    "system": "Respiratory & Renal/Urinary",
+    "discipline": "Pathophysiology",
+    "topic": "Pleural effusion (Light's criteria)",
+    "difficulty": "moderate",
+    "anchor": "table",
+    "vignette": "A 66-year-old man with fever, cough, and pleuritic chest pain has a moderate right pleural effusion. A diagnostic thoracentesis is performed and simultaneous serum studies are obtained.\n\n| Measurement | Value |\n|---|---|\n| Pleural fluid protein / serum protein | 0.6 |\n| Pleural fluid LDH / serum LDH | 0.7 |\n| Pleural fluid LDH | 250 U/L (> 2/3 upper limit of normal serum LDH) |",
+    "lead": "How is this effusion best classified?",
+    "options": [
+      "Transudate due to heart failure",
+      "Transudate due to cirrhosis",
+      "Transudate due to nephrotic syndrome",
+      "Exudate meeting Light's criteria",
+      "Chylothorax"
+    ],
+    "answer": 3,
+    "exp": "Light's criteria classify an effusion as an exudate if any one is met: pleural/serum protein ratio > 0.5, pleural/serum LDH ratio > 0.6, or pleural LDH > 2/3 the upper limit of normal serum LDH. This fluid meets all three, making it an exudate. Exudates arise from increased capillary permeability or impaired lymphatic drainage, as in infection (parapneumonic effusion), malignancy, or pulmonary embolism.",
+    "why": [
+      "Heart failure produces a transudate with low protein and LDH ratios, not the elevated ratios shown here.",
+      "Cirrhosis causes a transudative hepatic hydrothorax, which would not meet Light's exudative criteria.",
+      "Nephrotic syndrome causes transudative effusions from hypoalbuminemia, not an exudate.",
+      "Correct: protein and LDH ratios above the Light's thresholds classify this as an exudate, consistent with a parapneumonic effusion.",
+      "Chylothorax is defined by high triglyceride content from thoracic duct injury, not by these protein and LDH ratios alone."
+    ]
+  },
+  {
+    "id": "s1-0235",
+    "system": "Respiratory & Renal/Urinary",
+    "discipline": "Pathology",
+    "topic": "Diabetic nephropathy (Kimmelstiel-Wilson)",
+    "difficulty": "moderate",
+    "anchor": "lab",
+    "vignette": "A 58-year-old man with a 15-year history of type 2 diabetes has slowly worsening kidney function and increasing protein in his urine, along with worsening hypertension. His retinal exam shows diabetic changes. A renal biopsy is performed.\n\n| Test | Value | Reference |\n|---|---|---|\n| Urine albumin-to-creatinine ratio | 900 mg/g | < 30 |\n| Serum creatinine | 1.9 mg/dL | 0.7-1.3 |",
+    "lead": "Which histologic finding is most likely on biopsy?",
+    "options": [
+      "Crescents filling Bowman space",
+      "Subepithelial 'spike and dome' deposits",
+      "Foot-process effacement with otherwise normal glomeruli",
+      "Wire-loop capillary lesions with immune deposits",
+      "Nodular mesangial expansion (Kimmelstiel-Wilson nodules) with thickened basement membranes"
+    ],
+    "answer": 4,
+    "exp": "Long-standing diabetes with progressive albuminuria, hypertension, and retinopathy indicates diabetic nephropathy. Chronic hyperglycemia causes nonenzymatic glycation and mesangial matrix expansion, producing basement-membrane thickening and characteristic nodular glomerulosclerosis (Kimmelstiel-Wilson nodules). Hyperfiltration and glomerular hypertension drive progressive proteinuria and decline in GFR.",
+    "why": [
+      "Crescents indicate rapidly progressive glomerulonephritis, not the indolent course of diabetic nephropathy.",
+      "Subepithelial 'spike and dome' deposits characterize membranous nephropathy, not diabetic glomerulosclerosis.",
+      "Isolated foot-process effacement defines minimal change disease, which causes abrupt nephrotic syndrome in children.",
+      "Wire-loop lesions are seen in lupus nephritis, not in diabetes.",
+      "Correct: diabetic nephropathy shows nodular mesangial sclerosis (Kimmelstiel-Wilson nodules) with thickened glomerular basement membranes."
+    ]
+  },
+  {
+    "id": "s1-0236",
+    "system": "Respiratory & Renal/Urinary",
+    "discipline": "Pathology",
+    "topic": "Renovascular hypertension (fibromuscular dysplasia)",
+    "difficulty": "moderate",
+    "anchor": "image",
+    "vignette": "A 34-year-old woman is found to have blood pressure of 168/104 mm Hg that remains elevated despite three antihypertensive agents. She has no other risk factors. On abdominal examination a bruit is heard in the flank. Renal function worsened after she was started on an ACE inhibitor.\n\n**[IMAGE: renal arteriography showing alternating stenoses and dilations producing a 'string of beads' appearance in the mid-to-distal renal artery]**",
+    "lead": "Which is the most likely underlying cause of her hypertension?",
+    "options": [
+      "Fibromuscular dysplasia of the renal artery",
+      "Atherosclerotic renal artery stenosis",
+      "Primary hyperaldosteronism",
+      "Pheochromocytoma",
+      "Coarctation of the aorta"
+    ],
+    "answer": 0,
+    "exp": "A young woman with resistant hypertension, a flank bruit, worsened renal function after an ACE inhibitor, and a 'string of beads' pattern on angiography has renovascular hypertension from fibromuscular dysplasia. The noninflammatory arterial wall thickening narrows the renal artery, reducing perfusion and activating the renin-angiotensin system. ACE inhibition removes angiotensin II support of the efferent arteriole, dropping GFR in the affected kidney.",
+    "why": [
+      "Correct: a young woman with a 'string of beads' renal artery and renin-driven resistant hypertension has fibromuscular dysplasia.",
+      "Atherosclerotic renal artery stenosis occurs in older patients with vascular risk factors and involves the ostium, not this beaded mid-artery pattern.",
+      "Primary hyperaldosteronism causes hypertension with hypokalemia and suppressed renin, not a beaded renal artery.",
+      "Pheochromocytoma causes episodic hypertension with catecholamine symptoms, not fixed renal artery stenosis.",
+      "Coarctation causes upper-extremity hypertension with reduced femoral pulses, not a renal artery abnormality."
+    ]
+  },
+  {
+    "id": "s1-0237",
+    "system": "Respiratory & Renal/Urinary",
+    "discipline": "Pathology",
+    "topic": "Alport syndrome",
+    "difficulty": "hard",
+    "anchor": null,
+    "vignette": "A 9-year-old boy is evaluated for persistent microscopic hematuria noted on several urinalyses. He has bilateral high-frequency sensorineural hearing loss and an ophthalmologist notes anterior lenticonus. Several maternal male relatives developed kidney failure in early adulthood. Electron microscopy of a renal biopsy shows irregular thickening and thinning of the glomerular basement membrane with splitting of the lamina densa.",
+    "lead": "Which protein is most likely defective?",
+    "options": [
+      "Podocin",
+      "Type IV collagen (alpha-3/4/5 chains)",
+      "Fibrillin-1",
+      "Type I collagen",
+      "Type III collagen"
+    ],
+    "answer": 1,
+    "exp": "Hereditary hematuria with sensorineural deafness and ocular abnormalities (anterior lenticonus), plus a 'basket-weave' split basement membrane on EM, is Alport syndrome. The X-linked form results from mutations in COL4A5 encoding the alpha-5 chain of type IV collagen. Defective type IV collagen weakens basement membranes in the glomerulus, cochlea, and lens, explaining the triad.",
+    "why": [
+      "Podocin mutations cause steroid-resistant focal segmental glomerulosclerosis, not the deafness-and-eye triad of Alport.",
+      "Correct: Alport syndrome results from defective type IV collagen (alpha-3/4/5 chains), weakening basement membranes in kidney, ear, and eye.",
+      "Fibrillin-1 defects cause Marfan syndrome with aortic and skeletal features, not hematuria with deafness.",
+      "Type I collagen defects cause osteogenesis imperfecta, not glomerular basement membrane splitting.",
+      "Type III collagen defects cause vascular Ehlers-Danlos syndrome, not the Alport triad."
+    ]
+  },
+  {
+    "id": "s1-0238",
+    "system": "Gastrointestinal",
+    "discipline": "Pathology",
+    "topic": "Acute appendicitis",
+    "difficulty": "easy",
+    "anchor": null,
+    "vignette": "An 18-year-old man reports abdominal pain that began around the umbilicus yesterday and has since shifted to the right lower quadrant. He has anorexia, nausea, and a low-grade fever. On examination there is tenderness at a point two-thirds of the way from the umbilicus to the right anterior superior iliac spine, with guarding and rebound tenderness.",
+    "lead": "Which is the most likely diagnosis?",
+    "options": [
+      "Acute cholecystitis",
+      "Mesenteric adenitis",
+      "Acute appendicitis",
+      "Sigmoid diverticulitis",
+      "Ureteral colic"
+    ],
+    "answer": 2,
+    "exp": "Periumbilical pain that migrates to the right lower quadrant, anorexia, and tenderness at McBurney point with peritoneal signs are classic for acute appendicitis. Luminal obstruction (often by a fecalith) raises intraluminal pressure, causing early visceral periumbilical pain; as inflammation reaches the parietal peritoneum, pain localizes to the right lower quadrant. Rebound and guarding signal peritoneal irritation.",
+    "why": [
+      "Cholecystitis causes right upper quadrant pain with a positive Murphy sign, not migratory right lower quadrant pain.",
+      "Mesenteric adenitis mimics appendicitis but usually follows a viral illness and is a diagnosis of exclusion.",
+      "Correct: periumbilical pain migrating to McBurney point with anorexia and peritoneal signs indicates acute appendicitis.",
+      "Diverticulitis typically causes left lower quadrant pain in older adults, not right lower quadrant pain in a teenager.",
+      "Ureteral colic causes severe flank pain radiating to the groin with hematuria, not McBurney point tenderness."
+    ]
+  },
+  {
+    "id": "s1-0239",
+    "system": "Gastrointestinal",
+    "discipline": "Pathology",
+    "topic": "Acute cholecystitis",
+    "difficulty": "easy",
+    "anchor": "image",
+    "vignette": "A 44-year-old obese woman presents with constant right upper quadrant pain that began after a fatty meal and has persisted for eight hours, with nausea and a fever of 38.4 C. On examination she abruptly stops inspiration when the examiner palpates beneath the right costal margin.\n\n**[IMAGE: right upper quadrant ultrasound showing gallstones, a thickened gallbladder wall, and pericholecystic fluid]**",
+    "lead": "Which is the most likely diagnosis?",
+    "options": [
+      "Acute pancreatitis",
+      "Peptic ulcer disease",
+      "Acute viral hepatitis",
+      "Acute cholecystitis",
+      "Ascending cholangitis"
+    ],
+    "answer": 3,
+    "exp": "Persistent right upper quadrant pain after a fatty meal, fever, a positive Murphy sign, and ultrasound showing gallstones with a thickened wall and pericholecystic fluid indicate acute cholecystitis. A stone impacted in the cystic duct obstructs the gallbladder, causing distension, inflammation, and secondary infection. The inspiratory arrest on palpation (Murphy sign) reflects the inflamed gallbladder contacting the examining hand.",
+    "why": [
+      "Pancreatitis causes epigastric pain radiating to the back with elevated lipase, not a positive Murphy sign with gallbladder wall thickening.",
+      "Peptic ulcer disease causes epigastric burning related to meals, not RUQ pain with sonographic gallbladder inflammation.",
+      "Viral hepatitis causes diffuse tenderness with markedly elevated transaminases, not focal Murphy-positive gallbladder findings.",
+      "Correct: RUQ pain, fever, a positive Murphy sign, and sonographic gallbladder inflammation with stones indicate acute cholecystitis.",
+      "Ascending cholangitis adds jaundice and marked ductal dilation (Charcot triad), which are not described here."
+    ]
+  },
+  {
+    "id": "s1-0240",
+    "system": "Gastrointestinal",
+    "discipline": "Pathology",
+    "topic": "Acute diverticulitis",
+    "difficulty": "moderate",
+    "anchor": "image",
+    "vignette": "A 65-year-old man with a low-fiber diet presents with three days of left lower quadrant pain, low-grade fever, and a change in bowel habits. He is tender in the left lower quadrant with mild guarding, and his white blood cell count is elevated.\n\n**[IMAGE: abdominal CT showing multiple sigmoid colonic outpouchings with focal wall thickening and surrounding pericolic fat stranding]**",
+    "lead": "Which is the most likely diagnosis?",
+    "options": [
+      "Ischemic colitis",
+      "Ulcerative colitis flare",
+      "Colorectal carcinoma",
+      "Irritable bowel syndrome",
+      "Acute diverticulitis"
+    ],
+    "answer": 4,
+    "exp": "Left lower quadrant pain, fever, leukocytosis, and CT showing sigmoid diverticula with pericolic fat stranding indicate acute diverticulitis. Diverticula are herniations of mucosa and submucosa through the muscularis at points of vascular penetration, favored by low-fiber diets and elevated intraluminal pressure. Obstruction and micro-perforation of a diverticulum produce localized inflammation and the pericolic stranding seen on CT.",
+    "why": [
+      "Ischemic colitis causes crampy pain with bloody diarrhea in watershed areas, not localized diverticular inflammation with fat stranding.",
+      "An ulcerative colitis flare causes bloody diarrhea with continuous mucosal inflammation from the rectum, not focal pericolic stranding.",
+      "Colorectal carcinoma causes an obstructing mass and iron-deficiency anemia, not acute pericolic inflammation around diverticula.",
+      "Irritable bowel syndrome causes pain without fever, leukocytosis, or CT inflammatory changes.",
+      "Correct: LLQ pain with fever, leukocytosis, and CT sigmoid diverticula with pericolic fat stranding is acute diverticulitis."
+    ]
+  },
+  {
+    "id": "s1-0241",
+    "system": "Gastrointestinal",
+    "discipline": "Pathology",
+    "topic": "Gastric adenocarcinoma (diffuse type)",
+    "difficulty": "moderate",
+    "anchor": null,
+    "vignette": "A 63-year-old man reports several months of epigastric discomfort, early satiety, and a 9 kg weight loss. Examination reveals a firm, enlarged left supraclavicular lymph node and velvety hyperpigmented plaques in the axillae. Upper endoscopy shows a rigid, thickened, non-distensible stomach wall, and biopsy reveals cells with intracellular mucin displacing the nucleus to the periphery.",
+    "lead": "Which is the most likely diagnosis?",
+    "options": [
+      "Gastric adenocarcinoma, diffuse (signet-ring) type",
+      "Gastric MALT lymphoma",
+      "Gastrointestinal stromal tumor",
+      "Peptic ulcer disease",
+      "Menetrier disease"
+    ],
+    "answer": 0,
+    "exp": "Weight loss, early satiety, a left supraclavicular (Virchow) node, acanthosis nigricans, a rigid 'leather-bottle' stomach (linitis plastica), and signet-ring cells indicate diffuse gastric adenocarcinoma. The malignant cells infiltrate the wall diffusely without forming a discrete mass, accumulating mucin that pushes the nucleus to the periphery. Loss of E-cadherin underlies the discohesive infiltrative growth.",
+    "why": [
+      "Correct: signet-ring cells, linitis plastica, a Virchow node, and acanthosis nigricans indicate diffuse gastric adenocarcinoma.",
+      "MALT lymphoma is associated with H. pylori and shows lymphoid infiltrates, not signet-ring cells with linitis plastica.",
+      "A GIST is a submucosal mesenchymal tumor expressing c-KIT, not a diffusely infiltrating signet-ring carcinoma.",
+      "Peptic ulcer disease causes a discrete mucosal defect, not diffuse mural thickening with signet-ring cells.",
+      "Menetrier disease causes giant hypertrophic gastric folds with protein loss, not a rigid wall with malignant signet cells."
+    ]
+  },
+  {
+    "id": "s1-0242",
+    "system": "Gastrointestinal",
+    "discipline": "Pathology",
+    "topic": "Primary sclerosing cholangitis",
+    "difficulty": "moderate",
+    "anchor": "image",
+    "vignette": "A 38-year-old man with a several-year history of ulcerative colitis reports increasing fatigue and itching. Laboratory studies show a disproportionately elevated alkaline phosphatase with only mild transaminase elevation. Perinuclear antineutrophil cytoplasmic antibodies are positive.\n\n**[IMAGE: magnetic resonance cholangiopancreatography showing multifocal strictures and dilations of intrahepatic and extrahepatic bile ducts producing a 'beaded' appearance]**",
+    "lead": "Which is the most likely diagnosis?",
+    "options": [
+      "Primary biliary cholangitis",
+      "Primary sclerosing cholangitis",
+      "Choledocholithiasis",
+      "Autoimmune hepatitis",
+      "Cholangiocarcinoma"
+    ],
+    "answer": 1,
+    "exp": "A cholestatic picture (high alkaline phosphatase, pruritus) in a man with ulcerative colitis, p-ANCA positivity, and multifocal biliary strictures with beading is primary sclerosing cholangitis. Progressive concentric periductal 'onion-skin' fibrosis obliterates intra- and extrahepatic ducts, producing the alternating strictures and dilations. Patients carry an increased risk of cholangiocarcinoma.",
+    "why": [
+      "Primary biliary cholangitis affects middle-aged women with antimitochondrial antibodies and small intrahepatic ducts, not large-duct beading with UC.",
+      "Correct: cholestasis with p-ANCA, ulcerative colitis, and a beaded biliary tree indicates primary sclerosing cholangitis.",
+      "Choledocholithiasis causes a discrete obstructing stone, not diffuse multifocal strictures of the whole biliary tree.",
+      "Autoimmune hepatitis causes a hepatocellular pattern with high transaminases and anti-smooth-muscle antibodies, not biliary beading.",
+      "Cholangiocarcinoma may complicate PSC but presents as a dominant obstructing mass rather than diffuse beading."
+    ]
+  },
+  {
+    "id": "s1-0243",
+    "system": "Gastrointestinal",
+    "discipline": "Microbiology",
+    "topic": "Whipple disease",
+    "difficulty": "hard",
+    "anchor": null,
+    "vignette": "A 52-year-old man reports a year of chronic diarrhea, weight loss, and migratory joint pains, and more recently develops low-grade fever and mild cognitive changes with abnormal eye movements. Small-bowel biopsy shows the lamina propria distended by foamy macrophages that stain strongly with periodic acid-Schiff, and electron microscopy reveals rod-shaped bacilli within the macrophages.",
+    "lead": "Which organism is most likely responsible?",
+    "options": [
+      "Giardia lamblia",
+      "Mycobacterium avium complex",
+      "Tropheryma whipplei",
+      "Cryptosporidium parvum",
+      "Clostridioides difficile"
+    ],
+    "answer": 2,
+    "exp": "Chronic diarrhea and malabsorption with migratory arthralgias, cardiac and neurologic involvement, and PAS-positive foamy macrophages in the lamina propria describe Whipple disease. It is caused by the gram-positive actinomycete Tropheryma whipplei, which accumulates within intestinal macrophages and impairs lymphatic transport, producing malabsorption. It classically affects middle-aged white men and responds to prolonged antibiotics.",
+    "why": [
+      "Giardia causes fatty diarrhea with trophozoites on stool exam, not PAS-positive macrophages with systemic arthralgias.",
+      "M. avium complex infects immunocompromised hosts and gives PAS-positive, acid-fast macrophages, unlike the non-acid-fast bacilli of Whipple disease.",
+      "Correct: Whipple disease is caused by Tropheryma whipplei, seen as PAS-positive foamy macrophages in the lamina propria.",
+      "Cryptosporidium causes watery diarrhea in immunocompromised patients, identified by acid-fast oocysts, not intramacrophage bacilli.",
+      "C. difficile causes antibiotic-associated pseudomembranous colitis, not chronic malabsorption with PAS-positive macrophages."
+    ]
+  },
+  {
+    "id": "s1-0244",
+    "system": "Biostatistics & Epidemiology",
+    "discipline": "Biostatistics",
+    "topic": "Receiver operating characteristic (ROC) curve",
+    "difficulty": "moderate",
+    "anchor": "image",
+    "vignette": "Investigators evaluate a new continuous blood biomarker for a disease and plot its performance across all possible diagnostic cutoffs.\n\n**[IMAGE: a receiver operating characteristic (ROC) curve plotting true-positive rate (sensitivity) on the y-axis against false-positive rate (1 minus specificity) on the x-axis, bowing toward the upper-left corner]**",
+    "lead": "The cutoff point lying closest to the upper-left corner of the ROC curve best represents which of the following?",
+    "options": [
+      "The cutoff that maximizes the disease prevalence in the sample",
+      "The cutoff with the highest positive predictive value regardless of disease frequency",
+      "The cutoff that maximizes specificity while ignoring sensitivity",
+      "The cutoff that best balances high sensitivity and high specificity",
+      "The threshold at which sensitivity equals the disease prevalence"
+    ],
+    "answer": 3,
+    "exp": "An ROC curve plots sensitivity against 1 minus specificity across all cutoffs. Points nearer the upper-left corner have both high true-positive and low false-positive rates, so the cutoff closest to that corner offers the best simultaneous balance of sensitivity and specificity. The overall area under the curve summarizes discriminatory ability independent of any single threshold.",
+    "why": [
+      "Prevalence is a property of the population, not something a diagnostic cutoff maximizes on an ROC curve.",
+      "Predictive values depend on prevalence and are not what the ROC curve's upper-left point identifies, which is based on sensitivity and specificity.",
+      "Maximizing specificity alone would push the point toward the lower-left, sacrificing sensitivity rather than balancing both.",
+      "Correct: the point nearest the upper-left corner maximizes sensitivity and specificity simultaneously, the best overall balance.",
+      "There is no meaningful threshold where sensitivity equals prevalence; the two are unrelated measures."
+    ]
+  },
+  {
+    "id": "s1-0245",
+    "system": "Biostatistics & Epidemiology",
+    "discipline": "Biostatistics",
+    "topic": "Reliability versus validity",
+    "difficulty": "moderate",
+    "anchor": null,
+    "vignette": "A hospital tests a new automated cuff by comparing it with a simultaneous intra-arterial catheter measurement, considered the true value. Across many patients the new cuff's readings cluster very tightly together on repeat measurement, but they are consistently about 15 mm Hg higher than the intra-arterial value.",
+    "lead": "Which best describes this device's measurement properties?",
+    "options": [
+      "High validity but low reliability",
+      "Low reliability and low validity",
+      "High validity and high reliability",
+      "The main problem is random error affecting precision",
+      "High reliability but low validity due to systematic error"
+    ],
+    "answer": 4,
+    "exp": "Reliability (precision) refers to how reproducible repeated measurements are, while validity (accuracy) refers to how close measurements are to the true value. Tightly clustered readings indicate high reliability, but a consistent 15 mm Hg offset from the true arterial value indicates poor validity due to systematic error (bias). Consistent directional error reduces accuracy without harming precision.",
+    "why": [
+      "This reverses the finding; the consistent offset means validity is low, not high, while reliability is high.",
+      "Reliability is actually high because readings are tightly clustered, so 'low reliability' is incorrect.",
+      "Validity is not high, because the readings are systematically off by 15 mm Hg from the true value.",
+      "A consistent directional offset is systematic error, not random error, so precision is preserved.",
+      "Correct: tightly clustered readings show high reliability, but a fixed 15 mm Hg offset is systematic error, giving low validity."
+    ]
+  },
+  {
+    "id": "s1-0246",
+    "system": "Social Sciences / Ethics",
+    "discipline": "Ethics",
+    "topic": "Mandatory reporting of communicable disease",
+    "difficulty": "moderate",
+    "anchor": null,
+    "vignette": "A 40-year-old man is newly diagnosed with active pulmonary tuberculosis confirmed by sputum testing. He is distressed and asks the physician to keep the diagnosis completely private and not to inform anyone, including public health authorities, because he fears stigma at work.",
+    "lead": "Which is the most appropriate action?",
+    "options": [
+      "Report the case to the public health department as legally required and counsel the patient about the reasons",
+      "Honor the patient's request for confidentiality and decline to report the case",
+      "Report the case only if the patient later refuses treatment",
+      "Personally notify the patient's contacts without involving public health authorities",
+      "Require a court order before making any report"
+    ],
+    "answer": 0,
+    "exp": "Active tuberculosis is a reportable communicable disease. Public health reporting laws create a recognized exception to patient confidentiality because the risk of transmission to others justifies protecting community health. The physician must notify the public health department, which handles contact tracing, while continuing to support the patient and explaining why reporting is required.",
+    "why": [
+      "Correct: active tuberculosis is legally reportable, so the physician must notify public health while counseling the patient.",
+      "Confidentiality yields to mandatory reporting for communicable diseases that threaten public health, so declining to report is inappropriate.",
+      "Reporting is required at diagnosis regardless of treatment adherence, not contingent on refusal of therapy.",
+      "Contact tracing is the role of the public health department, not something the physician should undertake independently.",
+      "No court order is needed; statutory public health reporting requirements authorize the disclosure directly."
+    ]
+  },
+  {
+    "id": "s1-0247",
+    "system": "Reproductive & Endocrine",
+    "discipline": "Pathology",
+    "topic": "Ectopic pregnancy",
+    "difficulty": "moderate",
+    "anchor": "image",
+    "vignette": "A 27-year-old woman with a prior episode of pelvic inflammatory disease presents with 7 weeks of amenorrhea, right lower quadrant pain, and vaginal spotting. Her urine pregnancy test is positive and serum beta-hCG is 2,800 mIU/mL.\n\n**[IMAGE: transvaginal ultrasound showing an empty uterine cavity with a complex mass containing a gestational sac in the right adnexa]**",
+    "lead": "Which is the most likely diagnosis?",
+    "options": [
+      "Threatened intrauterine abortion",
+      "Ectopic (tubal) pregnancy",
+      "Ruptured ovarian cyst",
+      "Acute appendicitis",
+      "Complete hydatidiform mole"
+    ],
+    "answer": 1,
+    "exp": "A positive pregnancy test with a beta-hCG above the discriminatory zone, an empty uterus, and an adnexal gestational sac indicates an ectopic pregnancy. Prior pelvic inflammatory disease scars the fallopian tube, impeding transport of the fertilized ovum so it implants in the tube. As the tubal pregnancy grows it causes pain and bleeding and risks life-threatening rupture.",
+    "why": [
+      "A threatened abortion would show an intrauterine gestation with a closed cervix, not an empty uterus with an adnexal sac.",
+      "Correct: an empty uterus with an adnexal gestational sac and a positive beta-hCG after prior PID indicates a tubal ectopic pregnancy.",
+      "A ruptured ovarian cyst causes acute pain but would not produce an adnexal gestational sac with a positive pregnancy test.",
+      "Appendicitis does not cause a positive beta-hCG or an adnexal gestational sac.",
+      "A complete mole shows a 'snowstorm' intrauterine pattern with a markedly elevated beta-hCG, not an adnexal sac with an empty uterus."
+    ]
+  },
+  {
+    "id": "s1-0248",
+    "system": "Immune / Blood & Lymphoreticular",
+    "discipline": "Pathology",
+    "topic": "Chronic lymphocytic leukemia",
+    "difficulty": "moderate",
+    "anchor": "lab",
+    "vignette": "A 70-year-old man is found on routine testing to have a markedly elevated lymphocyte count. He feels well but has painless, rubbery enlargement of cervical and axillary lymph nodes. A peripheral smear shows numerous mature-appearing small lymphocytes and many disrupted 'smudge' cells.\n\n| Test | Value | Reference |\n|---|---|---|\n| White blood cells | 48,000/uL | 4,500-11,000 |\n| Lymphocytes | 85% | 20-40 |\n| Hemoglobin | 13.8 g/dL | 13.5-17.5 |",
+    "lead": "Which is the most likely diagnosis?",
+    "options": [
+      "Acute lymphoblastic leukemia",
+      "Chronic myeloid leukemia",
+      "Chronic lymphocytic leukemia",
+      "Hairy cell leukemia",
+      "Reactive viral lymphocytosis"
+    ],
+    "answer": 2,
+    "exp": "An older adult with marked mature lymphocytosis, painless lymphadenopathy, and smudge cells on smear has chronic lymphocytic leukemia. It is a clonal proliferation of functionally incompetent mature B cells that co-express CD5 with CD19/CD20. The fragile leukemic cells rupture during smear preparation, producing the characteristic smudge cells.",
+    "why": [
+      "Acute lymphoblastic leukemia occurs mainly in children and shows immature blasts with rapid onset, not mature lymphocytes and smudge cells.",
+      "Chronic myeloid leukemia produces a granulocytic proliferation with a left shift and the BCR-ABL fusion, not a mature lymphocytosis.",
+      "Correct: an elderly patient with mature lymphocytosis, painless adenopathy, and smudge cells has chronic lymphocytic leukemia.",
+      "Hairy cell leukemia causes pancytopenia with splenomegaly and cells with cytoplasmic projections, not marked lymphocytosis with smudge cells.",
+      "Reactive lymphocytosis is usually transient and modest with atypical lymphocytes, not a persistent clonal count of 48,000 with smudge cells."
+    ]
+  },
+  {
+    "id": "s1-0249",
+    "system": "Behavioral Health & Nervous System",
+    "discipline": "Neurology",
+    "topic": "Cluster headache",
+    "difficulty": "moderate",
+    "anchor": null,
+    "vignette": "A 35-year-old man reports recurrent attacks of excruciating, strictly unilateral pain centered behind his right eye, each lasting about an hour. During attacks his right eye waters and becomes red, his right nostril runs, and the right eyelid droops. The attacks strike several times a day for a few weeks, often waking him at the same hour each night, and he paces restlessly because he cannot sit still.",
+    "lead": "Which is the most likely diagnosis?",
+    "options": [
+      "Migraine without aura",
+      "Tension-type headache",
+      "Trigeminal neuralgia",
+      "Cluster headache",
+      "Giant cell (temporal) arteritis"
+    ],
+    "answer": 3,
+    "exp": "Severe, strictly unilateral periorbital pain lasting under three hours, with ipsilateral autonomic features (lacrimation, conjunctival injection, rhinorrhea, ptosis) and restless agitation occurring in clustered bouts, defines cluster headache. Attacks show a striking circadian pattern, often awakening the patient at night. Activation of the trigeminal-autonomic reflex produces the pain and cranial autonomic signs.",
+    "why": [
+      "Migraine causes throbbing pain lasting hours to days with photophobia and a preference to lie still, not brief attacks with prominent autonomic signs.",
+      "Tension-type headache is a bilateral band-like pressure without autonomic features or agitation.",
+      "Trigeminal neuralgia causes brief electric-shock facial pains triggered by touch, not hour-long attacks with lacrimation and ptosis.",
+      "Correct: brief unilateral periorbital pain with ipsilateral autonomic features, restlessness, and clustered circadian attacks is cluster headache.",
+      "Giant cell arteritis causes temporal pain with jaw claudication and visual loss in older patients, not clustered autonomic attacks."
+    ]
+  },
+  {
+    "id": "s1-0250",
+    "system": "Musculoskeletal / Skin",
+    "discipline": "Pathology",
+    "topic": "Calcium pyrophosphate deposition (pseudogout)",
+    "difficulty": "hard",
+    "anchor": "lab",
+    "vignette": "A 74-year-old woman develops acute pain, warmth, and swelling of the right knee over a day. She is afebrile. A radiograph of the knee shows linear calcification within the joint cartilage. Arthrocentesis yields cloudy fluid, and polarized microscopy is performed.\n\n| Finding | Result |\n|---|---|\n| Crystal shape | Rhomboid |\n| Birefringence under polarized light | Positive (blue when parallel to the compensator) |\n| Synovial fluid WBC | 20,000/uL |",
+    "lead": "These crystals are composed of which substance?",
+    "options": [
+      "Monosodium urate",
+      "Calcium oxalate",
+      "Cholesterol",
+      "Hydroxyapatite",
+      "Calcium pyrophosphate dihydrate"
+    ],
+    "answer": 4,
+    "exp": "Acute monoarthritis with cartilage calcification (chondrocalcinosis) and rhomboid, positively birefringent crystals indicates calcium pyrophosphate deposition disease (pseudogout). CPPD crystals deposit in cartilage and, when shed into the joint, trigger an acute inflammatory arthritis. Under polarized light they appear blue when aligned parallel to the compensator, distinguishing them from urate crystals.",
+    "why": [
+      "Monosodium urate crystals are needle-shaped and negatively birefringent (yellow when parallel), the crystals of gout rather than pseudogout.",
+      "Calcium oxalate crystals cause renal stones and can deposit in dialysis patients but are not the rhomboid positively birefringent joint crystals here.",
+      "Cholesterol crystals are flat plates with notched corners seen in chronic effusions, not rhomboid birefringent crystals with chondrocalcinosis.",
+      "Hydroxyapatite crystals are not birefringent and require special stains, unlike these positively birefringent rhomboid crystals.",
+      "Correct: rhomboid, positively birefringent crystals with chondrocalcinosis are calcium pyrophosphate dihydrate, causing pseudogout."
+    ]
+  },
+  {
+    "id": "s1-0251",
+    "system": "Behavioral Health & Nervous System",
+    "discipline": "Physiology",
+    "topic": "Narcolepsy (orexin/hypocretin deficiency)",
+    "difficulty": "moderate",
+    "anchor": null,
+    "vignette": "A 22-year-old college student reports irresistible daytime sleep attacks for the past year, falling asleep in class and mid-conversation despite adequate nighttime sleep. He also describes sudden episodes of bilateral leg buckling and jaw slackening triggered by laughter, brief inability to move on waking, and vivid dreamlike images as he falls asleep. A sleep study shows a short sleep latency with rapid entry into REM sleep.",
+    "lead": "Which best explains this presentation?",
+    "options": [
+      "Loss of orexin (hypocretin)-producing neurons in the lateral hypothalamus",
+      "Repetitive upper airway collapse causing fragmented sleep",
+      "Degeneration of dopaminergic neurons in the substantia nigra",
+      "A primary mood disorder producing hypersomnia",
+      "Deficient nocturnal melatonin secretion from the pineal gland"
+    ],
+    "answer": 0,
+    "exp": "Excessive daytime sleepiness with sleep attacks, cataplexy (sudden loss of muscle tone triggered by emotion), sleep paralysis, hypnagogic hallucinations, and short REM latency define narcolepsy type 1. It results from loss of orexin (hypocretin)-producing neurons in the lateral hypothalamus, which normally stabilize wakefulness and suppress inappropriate REM intrusion. Low CSF orexin supports the diagnosis, and the cataplexy reflects REM-associated atonia intruding into wakefulness.",
+    "why": [
+      "Correct: destruction of lateral hypothalamic orexin (hypocretin) neurons destabilizes wakefulness and allows REM intrusion, producing sleep attacks, cataplexy, sleep paralysis, and hypnagogic hallucinations.",
+      "Upper airway collapse causes obstructive sleep apnea with snoring and witnessed apneas, not cataplexy or short REM latency.",
+      "Substantia nigra dopaminergic loss causes Parkinsonism with tremor and rigidity, not emotion-triggered atonia and sleep attacks.",
+      "A primary mood disorder can cause hypersomnia but does not cause cataplexy or the sleep-onset REM periods seen here.",
+      "Deficient melatonin disrupts circadian timing but does not produce cataplexy or sudden daytime REM intrusion."
+    ]
+  },
+  {
+    "id": "s1-0252",
+    "system": "Behavioral Health & Nervous System",
+    "discipline": "Pathology",
+    "topic": "Subarachnoid hemorrhage (ruptured berry aneurysm)",
+    "difficulty": "moderate",
+    "anchor": "image",
+    "vignette": "A 49-year-old woman suddenly develops the \"worst headache of my life\" that peaks within seconds while gardening, followed by neck stiffness, photophobia, vomiting, and a brief loss of consciousness. She has a history of hypertension and smoking, and a family member had a similar sudden fatal event. She is now alert but has marked nuchal rigidity.\n\n**[IMAGE: noncontrast head CT showing hyperdense blood filling the basal cisterns and extending into the sylvian fissures]**",
+    "lead": "Which is the most likely underlying cause?",
+    "options": [
+      "Hypertensive rupture of a lenticulostriate artery into the basal ganglia",
+      "Rupture of a saccular (berry) aneurysm at the circle of Willis",
+      "Embolic occlusion of the middle cerebral artery",
+      "Tearing of a bridging vein producing a subdural hematoma",
+      "Rupture of the middle meningeal artery producing an epidural hematoma"
+    ],
+    "answer": 1,
+    "exp": "A thunderclap headache that peaks in seconds with meningismus, photophobia, and transient loss of consciousness, plus CT blood in the basal cisterns and sylvian fissures, indicates aneurysmal subarachnoid hemorrhage. The usual source is rupture of a saccular (berry) aneurysm at branch points of the circle of Willis, and risk factors include hypertension, smoking, and polycystic kidney disease. Vasospasm and rebleeding are major early complications.",
+    "why": [
+      "Hypertensive lenticulostriate rupture causes an intraparenchymal basal ganglia bleed with focal deficits, not blood tracking through the subarachnoid cisterns.",
+      "Correct: a ruptured saccular (berry) aneurysm at the circle of Willis spills arterial blood into the subarachnoid space, producing the thunderclap headache and cisternal blood on CT.",
+      "Middle cerebral artery embolism causes ischemic stroke with focal weakness, not a sudden thunderclap headache with subarachnoid blood.",
+      "Bridging vein tears cause a crescentic subdural hematoma, typically after trauma in older or alcoholic patients, not cisternal subarachnoid blood.",
+      "Middle meningeal artery rupture causes a lens-shaped epidural hematoma after temporal trauma, not diffuse subarachnoid cisternal blood."
+    ]
+  },
+  {
+    "id": "s1-0253",
+    "system": "Behavioral Health & Nervous System",
+    "discipline": "Pathology",
+    "topic": "Osmotic demyelination (central pontine myelinolysis)",
+    "difficulty": "hard",
+    "anchor": "image",
+    "vignette": "A 52-year-old man with chronic alcohol use and malnutrition was admitted with a serum sodium of 108 mEq/L that was corrected rapidly over 12 hours. Three days later he develops progressive quadriparesis, dysarthria, difficulty swallowing, and near-complete paralysis while remaining awake and able to blink and move his eyes vertically on command.\n\n**[IMAGE: axial T2-weighted brain MRI showing a symmetric hyperintense lesion in the central pons that spares the periphery]**",
+    "lead": "Which best explains this deterioration?",
+    "options": [
+      "Acute ischemic infarction of the basilar artery territory",
+      "Hemorrhage into the brainstem from hypertension",
+      "Osmotic demyelination from overly rapid correction of hyponatremia",
+      "Thiamine deficiency causing mammillary body degeneration",
+      "Autoimmune inflammatory demyelination of the optic nerves and cord"
+    ],
+    "answer": 2,
+    "exp": "A locked-in picture (quadriparesis, dysarthria, dysphagia with preserved consciousness and vertical eye movements) developing days after rapid correction of severe hyponatremia, with a symmetric central pontine T2 lesion, indicates osmotic demyelination syndrome (central pontine myelinolysis). When chronically hyponatremic brain cells that have shed osmolytes are exposed to a rapid rise in serum osmolality, water shifts out and oligodendrocytes are injured, demyelinating central pontine fibers. Sodium should be corrected no faster than about 8 mEq/L per 24 hours.",
+    "why": [
+      "Basilar artery infarction can cause locked-in syndrome but would be abrupt and vascular in distribution, not a symmetric central pontine lesion timed to sodium correction.",
+      "Brainstem hypertensive hemorrhage would appear as acute blood on imaging, not a symmetric demyelinating T2 lesion following hyponatremia correction.",
+      "Correct: rapid correction of chronic hyponatremia drives water out of adapted brain cells and demyelinates central pontine fibers, producing osmotic demyelination.",
+      "Thiamine deficiency causes Wernicke encephalopathy with confusion, ophthalmoplegia, and ataxia, not a symmetric central pontine lesion with quadriparesis.",
+      "Autoimmune demyelination (multiple sclerosis) produces asymmetric lesions disseminated in space and time, not a single symmetric pontine lesion after sodium correction."
+    ]
+  },
+  {
+    "id": "s1-0254",
+    "system": "Behavioral Health & Nervous System",
+    "discipline": "Psychiatry",
+    "topic": "Anorexia nervosa",
+    "difficulty": "easy",
+    "anchor": null,
+    "vignette": "A 17-year-old girl is brought in by her mother, who is worried about her weight. The patient restricts her intake to a few hundred calories daily, exercises for hours, and is intensely afraid of gaining weight even though she is markedly underweight with a body mass index of 15.5 kg/m2. She views herself as \"fat,\" has not menstruated in five months, and has fine downy hair over her back, cold intolerance, and a resting heart rate of 46/min.",
+    "lead": "Which is the most likely diagnosis?",
+    "options": [
+      "Bulimia nervosa",
+      "Major depressive disorder",
+      "Body dysmorphic disorder",
+      "Anorexia nervosa",
+      "Hyperthyroidism"
+    ],
+    "answer": 3,
+    "exp": "Restriction of energy intake leading to significantly low body weight, an intense fear of gaining weight, and a distorted body image define anorexia nervosa. Physiologic consequences of starvation include amenorrhea, lanugo, bradycardia, hypothermia, and cold intolerance. It carries one of the highest mortality rates of any psychiatric disorder, from cardiac complications and suicide.",
+    "why": [
+      "Bulimia nervosa involves recurrent binge eating with compensatory purging in patients who are usually of normal or above-normal weight, not the emaciation seen here.",
+      "Major depression can reduce appetite but does not feature the intense fear of weight gain and distorted body image driving self-starvation.",
+      "Body dysmorphic disorder centers on a perceived defect in a specific body feature, not on body weight with dangerous caloric restriction.",
+      "Correct: severe caloric restriction with significantly low weight, intense fear of gaining weight, and distorted body image, plus lanugo, amenorrhea, and bradycardia, define anorexia nervosa.",
+      "Hyperthyroidism causes weight loss but with heat intolerance, tachycardia, and increased appetite, not fear of weight gain and bradycardia."
+    ]
+  },
+  {
+    "id": "s1-0255",
+    "system": "Behavioral Health & Nervous System",
+    "discipline": "Anatomy",
+    "topic": "Brown-Sequard syndrome (spinal cord hemisection)",
+    "difficulty": "hard",
+    "anchor": null,
+    "vignette": "A 29-year-old man is evaluated after a knife wound to the right side of his back at the mid-thoracic level. On examination he has weakness and loss of vibration and position sense in the right leg below the injury, while pain and temperature sensation are lost in the left leg beginning a couple of segments below the lesion. Reflexes are increased in the right leg.",
+    "lead": "Which lesion best explains this pattern?",
+    "options": [
+      "Occlusion of the anterior spinal artery",
+      "A central cord lesion expanding around the central canal",
+      "Selective degeneration of the dorsal columns",
+      "A demyelinating plaque in the cervical cord",
+      "Hemisection of one half of the spinal cord"
+    ],
+    "answer": 4,
+    "exp": "Ipsilateral loss of motor function and dorsal-column sensation (vibration, proprioception) with contralateral loss of pain and temperature a few levels below the lesion is the classic Brown-Sequard pattern of spinal cord hemisection. The corticospinal tract and dorsal columns decussate above the cord, so their deficits are ipsilateral, whereas the spinothalamic tract crosses within one or two segments of entry, so its deficit is contralateral and begins slightly below the lesion.",
+    "why": [
+      "Anterior spinal artery occlusion spares the dorsal columns and produces bilateral motor and pain/temperature loss, not this crossed hemisection pattern.",
+      "A central cord lesion causes a bilateral \"cape\" distribution loss of pain and temperature with upper-extremity-predominant weakness, not a unilateral hemisection pattern.",
+      "Isolated dorsal column degeneration causes loss of vibration and proprioception without the motor and crossed pain/temperature findings seen here.",
+      "A cervical demyelinating plaque could cause varied deficits but would not reliably produce this precise ipsilateral motor/dorsal-column and contralateral spinothalamic dissociation from a stab wound.",
+      "Correct: hemisection of one half of the cord produces ipsilateral motor and dorsal-column loss with contralateral pain and temperature loss below the level, the Brown-Sequard syndrome."
+    ]
+  },
+  {
+    "id": "s1-0256",
+    "system": "Behavioral Health & Nervous System",
+    "discipline": "Pathophysiology",
+    "topic": "Migraine with aura",
+    "difficulty": "easy",
+    "anchor": null,
+    "vignette": "A 26-year-old woman reports recurrent headaches roughly twice a month for several years. Each episode begins with 20 minutes of shimmering zigzag lines drifting across her vision, followed by a throbbing, one-sided headache with nausea and marked sensitivity to light and sound. The pain worsens with routine activity, and she prefers to lie in a dark, quiet room until it resolves over several hours.",
+    "lead": "Which is the most likely diagnosis?",
+    "options": [
+      "Tension-type headache",
+      "Cluster headache",
+      "Trigeminal neuralgia",
+      "Giant cell (temporal) arteritis",
+      "Migraine with aura"
+    ],
+    "answer": 4,
+    "exp": "Recurrent unilateral throbbing headaches with nausea, photophobia, phonophobia, and worsening with activity, preceded by a visual aura of scintillating scotomata, are characteristic of migraine with aura. The aura is attributed to a wave of cortical spreading depression, and the headache involves activation of the trigeminovascular system. Patients characteristically seek a dark, quiet environment.",
+    "why": [
+      "Tension-type headache is a bilateral, band-like, non-throbbing pain without aura, nausea, or prominent photophobia.",
+      "Cluster headache causes severe unilateral periorbital pain with lacrimation and rhinorrhea in short daily clusters, and patients are restless rather than seeking a dark room.",
+      "Trigeminal neuralgia causes brief lightning-like facial pains triggered by touch, not a prolonged throbbing headache with visual aura.",
+      "Giant cell arteritis causes a new temporal headache with jaw claudication and vision loss in older adults, not recurrent auras in a young woman.",
+      "Correct: recurrent unilateral throbbing headache with nausea, photophobia, and a preceding scintillating visual aura relieved by rest in the dark defines migraine with aura."
+    ]
+  },
+  {
+    "id": "s1-0257",
+    "system": "Behavioral Health & Nervous System",
+    "discipline": "Pharmacology",
+    "topic": "Tardive dyskinesia",
+    "difficulty": "moderate",
+    "anchor": null,
+    "vignette": "A 60-year-old man with schizophrenia has taken haloperidol for the past eight years. He now has involuntary, repetitive movements of the mouth and face, including lip smacking, tongue protrusion, and chewing motions, along with occasional writhing movements of the fingers. The movements are not distressing to him and disappear during sleep. There is no rigidity or fever.",
+    "lead": "Which best explains these movements?",
+    "options": [
+      "Chronic dopamine receptor blockade causing postsynaptic receptor supersensitivity",
+      "Acute dystonic reaction from recent dose escalation",
+      "Excess central dopaminergic tone from a dopamine agonist",
+      "Autoimmune destruction of striatal neurons",
+      "An expanded CAG trinucleotide repeat in the huntingtin gene"
+    ],
+    "answer": 0,
+    "exp": "Involuntary, repetitive orofacial and choreoathetoid movements emerging after years of first-generation antipsychotic therapy indicate tardive dyskinesia. Prolonged blockade of D2 receptors is thought to cause upregulation and supersensitivity of postsynaptic dopamine receptors in the striatum. It can be irreversible, so clinicians minimize exposure, switch to lower-risk agents, and may treat with a VMAT2 inhibitor.",
+    "why": [
+      "Correct: years of D2 receptor blockade by a first-generation antipsychotic produce postsynaptic dopamine receptor supersensitivity, causing the late-onset orofacial choreoathetoid movements of tardive dyskinesia.",
+      "Acute dystonia causes sustained muscle spasms (torticollis, oculogyric crisis) within hours to days of starting or increasing the drug, not repetitive orofacial movements after years.",
+      "Excess dopaminergic tone from an agonist causes dyskinesias in Parkinson treatment, but this patient is on a dopamine blocker, not an agonist.",
+      "Autoimmune striatal destruction (e.g., Sydenham chorea) follows streptococcal infection in children, not chronic antipsychotic use in an older adult.",
+      "A huntingtin CAG expansion causes Huntington disease with progressive chorea and dementia, unrelated to antipsychotic exposure and with a family history."
+    ]
+  },
+  {
+    "id": "s1-0258",
+    "system": "Musculoskeletal / Skin",
+    "discipline": "Biochemistry",
+    "topic": "Osteogenesis imperfecta (type I collagen defect)",
+    "difficulty": "moderate",
+    "anchor": null,
+    "vignette": "An 18-month-old boy has had three long-bone fractures from minor falls. He has blue-tinged sclerae, small discolored teeth that chip easily, and a family history of frequent fractures and early hearing loss in his mother. Radiographs show multiple healing fractures and diffusely thin, osteopenic bones. There are no bruises in unusual patterns or other signs suggesting inflicted injury.",
+    "lead": "A defect in which of the following best explains this condition?",
+    "options": [
+      "Fibrillin-1, a glycoprotein of elastic microfibrils",
+      "Type I collagen synthesis",
+      "Type III collagen synthesis",
+      "Lysyl hydroxylase acting on collagen cross-links",
+      "Vitamin C-dependent proline hydroxylation"
+    ],
+    "answer": 1,
+    "exp": "Recurrent fractures from minor trauma, blue sclerae, brittle discolored teeth (dentinogenesis imperfecta), and conductive hearing loss with a positive family history indicate osteogenesis imperfecta. Most cases result from an autosomal dominant defect in type I collagen (COL1A1/COL1A2), the major structural protein of bone. The thin sclerae reveal underlying choroidal veins, giving the blue hue.",
+    "why": [
+      "Fibrillin-1 defects cause Marfan syndrome with tall stature, lens dislocation, and aortic root dilation, not recurrent fractures with blue sclerae.",
+      "Correct: defective type I collagen synthesis weakens bone, producing recurrent fractures, blue sclerae, brittle teeth, and hearing loss in osteogenesis imperfecta.",
+      "Type III collagen defects cause vascular Ehlers-Danlos syndrome with arterial and organ rupture, not the brittle-bone phenotype.",
+      "Lysyl hydroxylase deficiency causes a form of Ehlers-Danlos with hyperextensible skin and joint hypermobility, not multiple childhood fractures with blue sclerae.",
+      "Impaired vitamin C-dependent proline hydroxylation causes scurvy with perifollicular hemorrhage and poor wound healing, an acquired condition, not this inherited brittle-bone disorder."
+    ]
+  },
+  {
+    "id": "s1-0259",
+    "system": "Musculoskeletal / Skin",
+    "discipline": "Genetics",
+    "topic": "Achondroplasia (FGFR3 mutation)",
+    "difficulty": "easy",
+    "anchor": null,
+    "vignette": "A 3-year-old boy is noted to have very short arms and legs with a relatively normal-sized trunk, a large head with a prominent forehead, and a small midface with a low nasal bridge. His intelligence and cognitive milestones are normal for age. His father has an identical body habitus, and the condition follows an autosomal dominant pattern in the family.",
+    "lead": "Which mechanism best explains this disorder?",
+    "options": [
+      "Deficient growth hormone secretion from the anterior pituitary",
+      "Defective type I collagen in the growth plate",
+      "A constitutively active FGFR3 receptor that inhibits chondrocyte proliferation",
+      "Untreated congenital hypothyroidism",
+      "Vitamin D deficiency impairing growth-plate mineralization"
+    ],
+    "answer": 2,
+    "exp": "Rhizomelic (proximal) limb shortening with a normal trunk, macrocephaly with frontal bossing, midface hypoplasia, and normal intelligence in an autosomal dominant pattern indicate achondroplasia, the most common cause of skeletal dysplasia. An activating mutation in fibroblast growth factor receptor 3 (FGFR3) constitutively signals to inhibit chondrocyte proliferation at the growth plate, impairing endochondral ossification while membranous ossification is preserved.",
+    "why": [
+      "Growth hormone deficiency causes proportionate short stature with delayed growth, not the disproportionate rhizomelic shortening and macrocephaly of achondroplasia.",
+      "Defective type I collagen causes osteogenesis imperfecta with fractures and blue sclerae, not disproportionate short-limbed dwarfism.",
+      "Correct: a constitutively active FGFR3 receptor suppresses growth-plate chondrocyte proliferation, impairing endochondral bone growth and producing achondroplasia.",
+      "Untreated congenital hypothyroidism causes intellectual disability and proportionate growth failure, not normal intelligence with rhizomelic limbs.",
+      "Vitamin D deficiency causes rickets with bowing and widened growth plates, an acquired nutritional disorder, not this autosomal dominant dysplasia."
+    ]
+  },
+  {
+    "id": "s1-0260",
+    "system": "Musculoskeletal / Skin",
+    "discipline": "Pathology",
+    "topic": "Osteopetrosis (failure of osteoclastic bone resorption)",
+    "difficulty": "moderate",
+    "anchor": "image",
+    "vignette": "A 4-year-old boy has had several long-bone fractures from minor trauma despite bones that appear unusually dense on imaging. He also has worsening anemia and recurrent infections from marrow failure, hepatosplenomegaly from extramedullary hematopoiesis, and progressive vision and hearing loss attributed to narrowing of cranial nerve foramina.\n\n**[IMAGE: skeletal radiograph showing diffusely dense, sclerotic bones with a \"bone-in-bone\" appearance and obliteration of the medullary cavity]**",
+    "lead": "Which best explains this disorder?",
+    "options": [
+      "Defective synthesis of type I collagen",
+      "Excess parathyroid hormone driving bone resorption",
+      "Impaired mineralization of osteoid from vitamin D deficiency",
+      "Failure of osteoclast-mediated bone resorption",
+      "Accelerated osteoblastic bone formation from a growth factor excess"
+    ],
+    "answer": 3,
+    "exp": "Dense, brittle bones that paradoxically fracture easily, with marrow failure (anemia, infections), extramedullary hematopoiesis, and cranial nerve compression, indicate osteopetrosis. Dysfunctional osteoclasts (often from carbonic anhydrase II deficiency) cannot resorb bone, so primary spongiosa accumulates and the marrow cavity is obliterated, producing thick but structurally weak, poorly remodeled bone. The classic radiographic clue is a \"bone-in-bone\" sclerotic appearance.",
+    "why": [
+      "Defective type I collagen causes osteogenesis imperfecta with thin, osteopenic bones and blue sclerae, not dense sclerotic bones with an obliterated marrow cavity.",
+      "Excess parathyroid hormone increases osteoclastic resorption, producing bone loss (osteitis fibrosa cystica), the opposite of the dense bones seen here.",
+      "Impaired osteoid mineralization causes rickets/osteomalacia with soft, undermineralized bone, not the sclerotic dense bones of osteopetrosis.",
+      "Correct: failure of osteoclast-mediated resorption (often carbonic anhydrase II deficiency) prevents bone remodeling, causing dense but brittle bone, marrow failure, and cranial nerve compression in osteopetrosis.",
+      "Accelerated osteoblastic formation is not the mechanism; osteopetrosis results from defective resorption, not from a growth-factor-driven increase in bone formation."
+    ]
+  },
+  {
+    "id": "s1-0261",
+    "system": "Musculoskeletal / Skin",
+    "discipline": "Microbiology",
+    "topic": "Disseminated gonococcal arthritis",
+    "difficulty": "moderate",
+    "anchor": "lab",
+    "vignette": "A 24-year-old sexually active woman has several days of migratory joint pains, and now has a swollen, painful right knee. She also has pain and swelling along the tendon sheaths of her wrist and several scattered pustular skin lesions on her extremities. She is febrile.\n\n| Test | Value | Reference |\n|---|---|---|\n| Synovial WBC | 55,000/mcL | < 200 |\n| Synovial Gram stain | gram-negative diplococci | negative |\n| Cervical nucleic acid amplification | positive | negative |",
+    "lead": "Which organism is the most likely cause?",
+    "options": [
+      "Staphylococcus aureus",
+      "Borrelia burgdorferi",
+      "Streptococcus pyogenes",
+      "Chlamydia trachomatis reactive arthritis",
+      "Neisseria gonorrhoeae"
+    ],
+    "answer": 4,
+    "exp": "In a young, sexually active adult, the triad of migratory polyarthralgia, tenosynovitis, and pustular (vesiculopustular) skin lesions, or a purulent monoarthritis, indicates disseminated gonococcal infection. Gram-negative diplococci on synovial Gram stain and a positive genital nucleic acid amplification test confirm Neisseria gonorrhoeae, the most common cause of septic arthritis in sexually active young adults.",
+    "why": [
+      "Staphylococcus aureus is a leading cause of nongonococcal septic arthritis but appears as gram-positive cocci in clusters and lacks the tenosynovitis-dermatitis syndrome.",
+      "Borrelia burgdorferi causes Lyme arthritis, typically a later mono- or oligoarthritis of the knee without pustular lesions or gram-negative diplococci.",
+      "Streptococcus pyogenes appears as gram-positive cocci in chains and does not produce this classic gonococcal tenosynovitis and pustular rash.",
+      "Chlamydia-associated reactive arthritis is a sterile post-infectious arthritis with conjunctivitis and urethritis, not a purulent joint with organisms on Gram stain.",
+      "Correct: gram-negative diplococci in the joint with tenosynovitis, pustular skin lesions, and a positive genital test indicate disseminated Neisseria gonorrhoeae infection."
+    ]
+  },
+  {
+    "id": "s1-0262",
+    "system": "Musculoskeletal / Skin",
+    "discipline": "Pathology",
+    "topic": "Stevens-Johnson syndrome / toxic epidermal necrolysis",
+    "difficulty": "hard",
+    "anchor": "image",
+    "vignette": "A 34-year-old woman started lamotrigine three weeks ago for a mood disorder. She now has fever, malaise, and a rapidly spreading painful rash of dusky red macules with central blistering. She has painful erosions of the lips, oral mucosa, and conjunctivae, and gentle lateral pressure on the skin causes the epidermis to slough. About 8% of her body surface area is affected.\n\n**[IMAGE: photograph of dusky targetoid macules with flaccid bullae and epidermal detachment, plus hemorrhagic crusting of the lips]**",
+    "lead": "Which is the most likely diagnosis?",
+    "options": [
+      "Stevens-Johnson syndrome",
+      "Staphylococcal scalded skin syndrome",
+      "Pemphigus vulgaris",
+      "Bullous pemphigoid",
+      "Erythema multiforme minor"
+    ],
+    "answer": 0,
+    "exp": "A drug (here lamotrigine) started days to weeks earlier, followed by fever, painful dusky targetoid lesions with epidermal detachment, mucosal erosions at two or more sites, and a positive Nikolsky sign, indicates Stevens-Johnson syndrome (detachment under 10% of body surface area). It is a severe cutaneous adverse reaction driven by keratinocyte apoptosis, and stopping the offending drug plus supportive care is critical. Detachment over 30% defines toxic epidermal necrolysis on the same spectrum.",
+    "why": [
+      "Correct: a culprit drug followed by fever, targetoid lesions with epidermal detachment, prominent mucosal erosions, and a positive Nikolsky sign defines Stevens-Johnson syndrome.",
+      "Staphylococcal scalded skin syndrome spares the mucous membranes and splits the superficial epidermis via exfoliative toxin, mainly in young children, unlike this mucosal-predominant drug reaction.",
+      "Pemphigus vulgaris causes chronic flaccid bullae and mucosal erosions from desmoglein autoantibodies, not an acute drug-triggered eruption with targetoid lesions and fever.",
+      "Bullous pemphigoid causes tense subepidermal blisters with a negative Nikolsky sign in older adults and generally spares mucosa.",
+      "Erythema multiforme minor is typically an infection-triggered (herpes) eruption of targetoid lesions with little or no mucosal involvement and no widespread epidermal detachment."
+    ]
+  },
+  {
+    "id": "s1-0263",
+    "system": "Musculoskeletal / Skin",
+    "discipline": "Immunology",
+    "topic": "Sjogren syndrome",
+    "difficulty": "moderate",
+    "anchor": "lab",
+    "vignette": "A 55-year-old woman reports a persistent gritty, dry sensation in both eyes and a dry mouth that makes swallowing dry food difficult and has led to multiple new dental cavities. She has bilateral parotid gland enlargement. Schirmer testing shows reduced tear production.\n\n| Test | Value | Reference |\n|---|---|---|\n| Anti-Ro (SSA) antibody | positive | negative |\n| Anti-La (SSB) antibody | positive | negative |\n| Antinuclear antibody | positive | negative |\n| Minor salivary gland biopsy | lymphocytic infiltrate | none |",
+    "lead": "Which best explains her condition?",
+    "options": [
+      "Deposition of amyloid protein in exocrine glands",
+      "Autoimmune lymphocytic destruction of exocrine glands",
+      "Noncaseating granulomatous infiltration of the glands",
+      "Fibrous replacement of skin and internal organs from excess collagen",
+      "IgE-mediated mast cell degranulation in the glands"
+    ],
+    "answer": 1,
+    "exp": "Keratoconjunctivitis sicca and xerostomia with parotid enlargement, positive anti-Ro/SSA and anti-La/SSB antibodies, and a lymphocytic infiltrate on salivary gland biopsy indicate Sjogren syndrome. Autoreactive lymphocytes infiltrate and destroy the lacrimal and salivary glands, causing the sicca symptoms and dental caries. Patients carry an increased long-term risk of B-cell (MALT) lymphoma.",
+    "why": [
+      "Amyloid deposition can enlarge glands but does not produce the specific anti-Ro/anti-La antibodies and focal lymphocytic sialadenitis seen here.",
+      "Correct: autoimmune lymphocytic infiltration destroys the lacrimal and salivary glands, producing sicca symptoms with anti-Ro/SSA and anti-La/SSB antibodies in Sjogren syndrome.",
+      "Noncaseating granulomas describe sarcoidosis, which can cause parotid enlargement but not the anti-Ro/anti-La serology and focal lymphocytic sialadenitis of Sjogren syndrome.",
+      "Excess collagen deposition describes systemic sclerosis with skin tightening and Raynaud phenomenon, not primary sicca with these autoantibodies.",
+      "IgE-mediated mast cell degranulation causes allergic or anaphylactic reactions, not chronic autoimmune destruction of exocrine glands."
+    ]
+  },
+  {
+    "id": "s1-0264",
+    "system": "Musculoskeletal / Skin",
+    "discipline": "Pathophysiology",
+    "topic": "Acanthosis nigricans (insulin resistance)",
+    "difficulty": "easy",
+    "anchor": "image",
+    "vignette": "A 15-year-old boy with obesity is noted to have symmetric, velvety, hyperpigmented thickening of the skin over the back of his neck and in both axillae, along with several small skin tags. The changes have developed gradually and are not itchy or painful. His fasting glucose is at the upper end of normal and his family has a strong history of type 2 diabetes.\n\n**[IMAGE: photograph of velvety, hyperpigmented, thickened plaques in the posterior neck folds with adjacent skin tags]**",
+    "lead": "Which best explains this skin finding?",
+    "options": [
+      "Chronic sun exposure causing melanocyte proliferation",
+      "A superficial dermatophyte (fungal) infection",
+      "Insulin resistance stimulating keratinocyte and fibroblast growth",
+      "Excess adrenocorticotropic hormone stimulating melanocytes",
+      "Postinflammatory hyperpigmentation from prior dermatitis"
+    ],
+    "answer": 2,
+    "exp": "Velvety, hyperpigmented, thickened plaques in the flexural areas (neck and axillae) with skin tags in an obese adolescent indicate acanthosis nigricans. Hyperinsulinemia from insulin resistance stimulates keratinocyte and dermal fibroblast proliferation through insulin-like growth factor receptors, producing the epidermal thickening. It is a cutaneous marker of insulin resistance, though it can rarely be paraneoplastic (e.g., gastric adenocarcinoma) in older adults.",
+    "why": [
+      "Chronic sun exposure causes photodamage and lentigines on sun-exposed skin, not velvety flexural plaques with skin tags.",
+      "A dermatophyte infection produces scaly, often itchy annular lesions, not the smooth velvety hyperpigmentation of flexural folds.",
+      "Correct: hyperinsulinemia from insulin resistance drives keratinocyte and fibroblast proliferation, producing the velvety flexural hyperpigmentation of acanthosis nigricans.",
+      "Excess ACTH (as in Addison disease or ectopic ACTH) causes generalized or mucosal hyperpigmentation, not localized velvety flexural plaques with skin tags.",
+      "Postinflammatory hyperpigmentation follows a prior inflammatory rash and lacks the velvety thickening and characteristic flexural distribution seen here."
+    ]
+  },
+  {
+    "id": "s1-0265",
+    "system": "Reproductive & Endocrine",
+    "discipline": "Pathology",
+    "topic": "Subacute (de Quervain) granulomatous thyroiditis",
+    "difficulty": "moderate",
+    "anchor": "lab",
+    "vignette": "A 42-year-old woman develops a tender, painful anterior neck with pain radiating to the jaw and ears two weeks after a viral upper respiratory illness. She has low-grade fever, palpitations, heat intolerance, and tremor. The thyroid is firm and exquisitely tender to palpation.\n\n| Test | Value | Reference |\n|---|---|---|\n| TSH | low | 0.4-4.0 mIU/L |\n| Free T4 | high | normal |\n| Erythrocyte sedimentation rate | markedly elevated | 0-20 mm/hr |\n| Radioactive iodine uptake | low | normal |",
+    "lead": "Which best explains her presentation?",
+    "options": [
+      "Autoantibodies stimulating the TSH receptor",
+      "Autoimmune lymphocytic destruction with antithyroid peroxidase antibodies",
+      "An autonomously functioning toxic adenoma",
+      "Granulomatous inflammation following a viral infection",
+      "Iodine-induced excess thyroid hormone synthesis"
+    ],
+    "answer": 3,
+    "exp": "A painful, tender thyroid after a viral illness with transient hyperthyroidism, a high ESR, and characteristically low radioactive iodine uptake indicates subacute (de Quervain) granulomatous thyroiditis. Inflammatory destruction of follicles releases preformed hormone, causing hyperthyroid symptoms while new hormone synthesis and iodine trapping are suppressed (low uptake). It is typically self-limited, often passing through a transient hypothyroid phase before recovery, and is managed with NSAIDs or corticosteroids.",
+    "why": [
+      "TSH-receptor-stimulating antibodies cause Graves disease, which produces a nontender goiter with high radioactive iodine uptake, not a painful gland with low uptake.",
+      "Antithyroid peroxidase-mediated lymphocytic destruction describes Hashimoto thyroiditis, which causes a nontender gland and hypothyroidism, not painful transient thyrotoxicosis.",
+      "A toxic adenoma causes hyperthyroidism with a focal area of high uptake on scan, not a diffusely painful gland with low uptake and a high ESR.",
+      "Correct: post-viral granulomatous inflammation releases preformed hormone and suppresses iodine uptake, producing the painful, tender thyroid and transient thyrotoxicosis of subacute (de Quervain) thyroiditis.",
+      "Iodine-induced hyperthyroidism (Jod-Basedow) follows an iodine load and does not cause a painful, tender gland with a markedly elevated ESR."
+    ]
+  },
+  {
+    "id": "s1-0266",
+    "system": "Reproductive & Endocrine",
+    "discipline": "Anatomy",
+    "topic": "Testicular torsion",
+    "difficulty": "easy",
+    "anchor": null,
+    "vignette": "A 15-year-old boy awakens with sudden, severe left scrotal pain and vomiting. On examination the left testis is exquisitely tender, elevated, and lies in a horizontal position, and the cremasteric reflex is absent on that side. Elevating the testis does not relieve the pain. There is no dysuria, fever, or urethral discharge.",
+    "lead": "Which is the most appropriate initial understanding and action?",
+    "options": [
+      "Epididymitis; treat empirically with antibiotics",
+      "Orchitis from mumps; provide supportive care",
+      "Indirect inguinal hernia; arrange elective repair",
+      "Varicocele; reassure and observe",
+      "Testicular torsion; obtain urgent urologic surgical exploration"
+    ],
+    "answer": 4,
+    "exp": "Sudden severe testicular pain with a high-riding, horizontally oriented testis, an absent cremasteric reflex, and no relief on elevation (negative Prehn sign) indicates testicular torsion. The spermatic cord twists and cuts off blood supply, threatening the testis within hours. It is a surgical emergency requiring immediate exploration and detorsion (with orchidopexy), and imaging should not delay treatment when suspicion is high.",
+    "why": [
+      "Epididymitis causes more gradual pain with dysuria, an intact cremasteric reflex, and relief on elevation, unlike this acute torsion presentation.",
+      "Mumps orchitis follows parotitis with testicular swelling but does not cause a high-riding testis with an absent cremasteric reflex requiring emergency surgery.",
+      "An inguinal hernia produces a groin bulge that may be reducible, not an acutely ischemic, tender, high-riding testis.",
+      "A varicocele is a painless \"bag of worms\" scrotal swelling, not sudden severe pain with an absent cremasteric reflex.",
+      "Correct: sudden severe pain with a high-riding horizontal testis, absent cremasteric reflex, and no relief on elevation indicates testicular torsion, requiring urgent surgical exploration."
+    ]
+  },
+  {
+    "id": "s1-0267",
+    "system": "Reproductive & Endocrine",
+    "discipline": "Pathology",
+    "topic": "Benign prostatic hyperplasia",
+    "difficulty": "moderate",
+    "anchor": "lab",
+    "vignette": "A 68-year-old man reports urinary frequency, nocturia, a weak and intermittent stream, hesitancy, and a sense of incomplete bladder emptying over the past two years. Digital rectal examination reveals a smooth, symmetrically enlarged, rubbery prostate without nodules.\n\n| Test | Value | Reference |\n|---|---|---|\n| Prostate-specific antigen | 3.8 ng/mL | < 4 |\n| Urinalysis | no blood, no infection | normal |\n| Post-void residual volume | elevated | low |",
+    "lead": "Which best explains his symptoms?",
+    "options": [
+      "Nodular hyperplasia of the periurethral (transition) zone driven by dihydrotestosterone",
+      "Adenocarcinoma arising in the peripheral zone",
+      "Acute bacterial prostatitis",
+      "A neurogenic bladder from spinal cord disease",
+      "Urethral stricture from prior instrumentation"
+    ],
+    "answer": 0,
+    "exp": "Progressive lower urinary tract symptoms with a smoothly and symmetrically enlarged, nontender prostate in an older man indicate benign prostatic hyperplasia. Hyperplasia of the periurethral (transition) zone, driven by dihydrotestosterone, compresses the urethra and obstructs outflow, producing hesitancy, weak stream, and incomplete emptying. It is treated with alpha-blockers and 5-alpha-reductase inhibitors.",
+    "why": [
+      "Correct: dihydrotestosterone-driven nodular hyperplasia of the transition (periurethral) zone compresses the urethra, causing the obstructive symptoms of benign prostatic hyperplasia.",
+      "Prostate adenocarcinoma arises in the peripheral zone and produces a hard, nodular gland, not the smooth symmetric enlargement described.",
+      "Acute bacterial prostatitis causes fever and an exquisitely tender boggy prostate with pyuria, not chronic obstructive symptoms with a normal urinalysis.",
+      "A neurogenic bladder from cord disease would show neurologic deficits and abnormal detrusor function rather than a symmetrically enlarged obstructing prostate.",
+      "A urethral stricture typically follows instrumentation or infection and causes a normal-sized prostate with obstruction localized to the stricture."
+    ]
+  },
+  {
+    "id": "s1-0268",
+    "system": "Reproductive & Endocrine",
+    "discipline": "Physiology",
+    "topic": "Kallmann syndrome (GnRH neuron migration failure)",
+    "difficulty": "hard",
+    "anchor": "lab",
+    "vignette": "An 18-year-old young man has not undergone puberty. He has small, firm testes, no facial or pubic hair, a tall eunuchoid build, and a high-pitched voice. On further questioning, he has never been able to smell foods or flowers. There is no history of chronic illness.\n\n| Test | Value | Reference |\n|---|---|---|\n| Luteinizing hormone | low | age-adjusted normal |\n| Follicle-stimulating hormone | low | age-adjusted normal |\n| Testosterone | low | adult male normal |\n| Sense of smell | absent | intact |",
+    "lead": "Which best explains this presentation?",
+    "options": [
+      "Primary testicular failure with elevated gonadotropins",
+      "Failure of GnRH neurons to migrate from the olfactory placode",
+      "An extra X chromosome causing seminiferous tubule dysgenesis",
+      "Constitutional delay of growth and puberty",
+      "A prolactin-secreting pituitary adenoma"
+    ],
+    "answer": 1,
+    "exp": "Delayed puberty with low testosterone and inappropriately low LH and FSH (hypogonadotropic hypogonadism) combined with anosmia indicates Kallmann syndrome. During development, GnRH-secreting neurons and olfactory neurons migrate together from the olfactory placode; failed migration leaves the hypothalamus unable to secrete GnRH and produces the loss of smell. The result is deficient gonadotropin and sex-steroid production.",
+    "why": [
+      "Primary testicular failure raises LH and FSH through loss of negative feedback, the opposite of the low gonadotropins seen here.",
+      "Correct: failed migration of GnRH neurons from the olfactory placode causes hypogonadotropic hypogonadism with anosmia, defining Kallmann syndrome.",
+      "An extra X chromosome (Klinefelter syndrome) causes primary hypogonadism with elevated gonadotropins and preserved smell, not low LH and FSH with anosmia.",
+      "Constitutional delay is a temporary lag in an otherwise normal axis and does not cause anosmia or permanent gonadotropin deficiency.",
+      "A prolactinoma suppresses GnRH via hyperprolactinemia but causes galactorrhea and headaches, not congenital anosmia with lifelong absent puberty."
+    ]
+  },
+  {
+    "id": "s1-0269",
+    "system": "Reproductive & Endocrine",
+    "discipline": "Pathology",
+    "topic": "Insulinoma",
+    "difficulty": "moderate",
+    "anchor": "lab",
+    "vignette": "A 45-year-old woman has recurrent episodes of confusion, sweating, tremor, and palpitations, usually before meals or after fasting, that resolve quickly when she eats candy. During a supervised 72-hour fast she becomes symptomatic, and blood is drawn at the time of hypoglycemia.\n\n| Test | Value | Reference |\n|---|---|---|\n| Plasma glucose | 38 mg/dL | 70-100 |\n| Insulin | high | low during hypoglycemia |\n| C-peptide | high | low during hypoglycemia |\n| Proinsulin | high | low |\n| Sulfonylurea screen | negative | negative |",
+    "lead": "Which is the most likely diagnosis?",
+    "options": [
+      "Surreptitious exogenous insulin administration",
+      "Covert sulfonylurea ingestion",
+      "An insulin-secreting pancreatic beta-cell tumor",
+      "Primary adrenal insufficiency",
+      "Reactive (postprandial) hypoglycemia"
+    ],
+    "answer": 2,
+    "exp": "Fasting hypoglycemia with neuroglycopenic and adrenergic symptoms relieved by glucose (Whipple triad), together with inappropriately high insulin, C-peptide, and proinsulin and a negative sulfonylurea screen, indicates an insulinoma. This beta-cell tumor of the pancreatic islets autonomously secretes insulin; the elevated C-peptide confirms endogenous production, distinguishing it from exogenous insulin.",
+    "why": [
+      "Exogenous insulin causes hypoglycemia with high insulin but suppressed C-peptide, since injected insulin lacks C-peptide.",
+      "Sulfonylureas stimulate endogenous insulin and raise C-peptide, but the negative drug screen excludes this mimic of insulinoma.",
+      "Correct: an insulin-secreting beta-cell tumor produces fasting hypoglycemia with high insulin, C-peptide, and proinsulin and a negative sulfonylurea screen, defining an insulinoma.",
+      "Adrenal insufficiency can cause hypoglycemia but with low insulin and C-peptide plus hypotension and hyperpigmentation, not hyperinsulinemia.",
+      "Reactive hypoglycemia occurs after meals, not during a prolonged fast, and is not associated with inappropriately elevated fasting insulin and C-peptide."
+    ]
+  },
+  {
+    "id": "s1-0270",
+    "system": "Reproductive & Endocrine",
+    "discipline": "Pathology",
+    "topic": "Sheehan syndrome (postpartum pituitary necrosis)",
+    "difficulty": "hard",
+    "anchor": null,
+    "vignette": "A 31-year-old woman had a complicated delivery with severe postpartum hemorrhage requiring transfusion and a period of profound hypotension. Over the following weeks she is unable to breastfeed because her milk never comes in, her menses do not return, and she reports progressive fatigue, cold intolerance, and loss of pubic and axillary hair. She also feels dizzy on standing.",
+    "lead": "Which best explains her condition?",
+    "options": [
+      "Primary hypothyroidism from autoimmune thyroiditis",
+      "Primary adrenal insufficiency from autoimmune adrenalitis",
+      "Autoimmune lymphocytic destruction of the pituitary",
+      "Ischemic necrosis of the anterior pituitary from postpartum hemorrhage",
+      "Excess prolactin from a lactotroph adenoma"
+    ],
+    "answer": 3,
+    "exp": "Failure of postpartum lactation, amenorrhea, and features of combined hormone deficiency (hypothyroidism, adrenal insufficiency, loss of secondary sexual hair) after a delivery complicated by severe hemorrhage and hypotension indicate Sheehan syndrome. The pituitary enlarges during pregnancy and is vulnerable to ischemic infarction when hemorrhage causes hypotension, producing panhypopituitarism. Failure to lactate (low prolactin) is often the earliest clue.",
+    "why": [
+      "Primary hypothyroidism explains fatigue and cold intolerance but not the failure to lactate, amenorrhea, and loss of sexual hair from multiple pituitary hormone deficits.",
+      "Primary adrenal insufficiency causes hyperpigmentation and salt craving with high ACTH, not the panhypopituitary picture with agalactorrhea after obstetric hemorrhage.",
+      "Autoimmune (lymphocytic) hypophysitis can cause postpartum hypopituitarism but is not precipitated by hemorrhagic hypotension as in this classic ischemic scenario.",
+      "Correct: ischemic necrosis of the enlarged anterior pituitary after postpartum hemorrhage and hypotension causes panhypopituitarism (Sheehan syndrome) with failed lactation and secondary hormone deficiencies.",
+      "A prolactinoma raises prolactin and would not cause failed lactation; it also would not follow an episode of postpartum hemorrhagic shock."
+    ]
+  },
+  {
+    "id": "s1-0271",
+    "system": "Biostatistics & Epidemiology",
+    "discipline": "Biostatistics",
+    "topic": "Odds ratio interpretation",
+    "difficulty": "moderate",
+    "anchor": "table",
+    "vignette": "Investigators conduct a case-control study to examine the association between a chemical exposure and a rare cancer. They enroll patients with the cancer (cases) and cancer-free controls and ascertain prior exposure in each group.\n\n| Group | Exposed | Not exposed |\n|---|---|---|\n| Cases | 90 | 30 |\n| Controls | 30 | 90 |",
+    "lead": "Which value and interpretation best summarize the association?",
+    "options": [
+      "A relative risk of 3, directly calculable from these data",
+      "An odds ratio of 1, indicating no association",
+      "An attributable risk of 60%",
+      "A number needed to treat of 3",
+      "An odds ratio of approximately 9, indicating higher odds of exposure among cases"
+    ],
+    "answer": 4,
+    "exp": "In a case-control study, the appropriate measure of association is the odds ratio, calculated as (a x d) / (b x c). Here that is (90 x 90) / (30 x 30) = 8100 / 900 = 9, meaning the odds of prior exposure are about nine times higher among cases than controls. Because subjects are sampled by disease status, incidence and thus relative risk cannot be directly computed, though the odds ratio approximates the relative risk for a rare disease.",
+    "why": [
+      "Relative risk requires knowing incidence in exposed and unexposed groups, which a case-control design cannot provide because sampling is by disease status.",
+      "An odds ratio of 1 would mean no association, but the cross-product here yields 9, indicating a strong positive association.",
+      "Attributable risk is a difference in incidence between exposed and unexposed, which cannot be derived from case-control counts.",
+      "Number needed to treat applies to interventions in trials, not to exposure-disease association in an observational case-control study.",
+      "Correct: the odds ratio is (90 x 90)/(30 x 30) = 9, indicating the odds of exposure are about nine times higher among cases than controls."
+    ]
+  },
+  {
+    "id": "s1-0272",
+    "system": "Biostatistics & Epidemiology",
+    "discipline": "Biostatistics",
+    "topic": "Intention-to-treat analysis",
+    "difficulty": "moderate",
+    "anchor": null,
+    "vignette": "In a randomized controlled trial comparing a new drug with placebo, some participants assigned to the drug stop taking it because of side effects, and a few placebo participants obtain the active drug elsewhere. The statisticians decide to analyze every participant in the group to which they were originally randomized, regardless of the treatment they actually received or their adherence.",
+    "lead": "Which analytic approach does this describe, and why is it preferred?",
+    "options": [
+      "Intention-to-treat analysis, which preserves the benefits of randomization and reflects real-world effectiveness",
+      "Per-protocol analysis, which includes only fully adherent participants",
+      "As-treated analysis, which groups participants by the treatment actually received",
+      "Subgroup analysis restricted to participants without side effects",
+      "Exclusion of all nonadherent participants to reduce noise"
+    ],
+    "answer": 0,
+    "exp": "Analyzing participants according to their originally assigned group, regardless of adherence or crossover, is intention-to-treat analysis. It preserves the prognostic balance created by randomization, avoids bias from nonrandom dropout or crossover, and gives a conservative, real-world estimate of effectiveness. Per-protocol and as-treated analyses break randomization and can introduce selection bias.",
+    "why": [
+      "Correct: keeping participants in their randomized groups regardless of adherence is intention-to-treat analysis, which preserves randomization and estimates real-world effectiveness.",
+      "Per-protocol analysis includes only adherent participants and can bias results by breaking the randomized comparison.",
+      "As-treated analysis groups by treatment actually received, which discards randomization and reintroduces confounding.",
+      "Restricting to participants without side effects is a subgroup analysis that selects a nonrandom subset and biases the estimate.",
+      "Excluding nonadherent participants removes randomization protection and can distort the treatment effect."
+    ]
+  },
+  {
+    "id": "s1-0273",
+    "system": "Biostatistics & Epidemiology",
+    "discipline": "Biostatistics",
+    "topic": "Regression to the mean",
+    "difficulty": "hard",
+    "anchor": null,
+    "vignette": "Researchers screen thousands of people and enroll only those with the highest 5% of blood pressure readings into a study of a new relaxation technique. Several weeks later, without any effective intervention, the group's average blood pressure has fallen noticeably. The investigators conclude the technique lowered blood pressure, but a statistician cautions that the drop was expected even with no true effect.",
+    "lead": "Which phenomenon best explains the apparent improvement?",
+    "options": [
+      "The placebo effect",
+      "Regression to the mean",
+      "The Hawthorne effect",
+      "Lead-time bias",
+      "Systematic measurement error in the blood pressure device"
+    ],
+    "answer": 1,
+    "exp": "When subjects are selected because of an extreme measurement, repeat measurements tend to fall closer to the population average simply because of random variation, a phenomenon called regression to the mean. Because only the highest readings were selected, part of each value reflected transient upward fluctuation that is not repeated on re-measurement, producing an apparent improvement independent of any treatment. A concurrent control group is needed to distinguish a true effect.",
+    "why": [
+      "The placebo effect is a real physiologic or perceived response to an inert intervention, but here the drop is a statistical artifact of selecting extreme values.",
+      "Correct: selecting subjects with extreme readings makes subsequent measurements move toward the mean, so blood pressure falls even without a true effect (regression to the mean).",
+      "The Hawthorne effect is a change in behavior from being observed, which would not specifically explain a fall from extreme baseline values.",
+      "Lead-time bias applies to screening and survival time, not to repeated measurements regressing toward the mean.",
+      "Systematic measurement error would bias all readings consistently, not produce a decline concentrated in an extreme-selected group."
+    ]
+  },
+  {
+    "id": "s1-0274",
+    "system": "Social Sciences / Ethics",
+    "discipline": "Ethics",
+    "topic": "Confidentiality and duty to protect third parties (driving safety)",
+    "difficulty": "moderate",
+    "anchor": null,
+    "vignette": "A 58-year-old man with poorly controlled epilepsy has had two breakthrough seizures in the past month, including one while awake. He works as a long-haul truck driver and states that he intends to keep driving because he cannot afford time off. The physician counsels him about the danger and the need to stop driving until his seizures are controlled, but he refuses and plans to drive that afternoon.",
+    "lead": "Which is the most appropriate action?",
+    "options": [
+      "Maintain strict confidentiality and take no further action",
+      "Inform only the patient's family and let them intervene",
+      "Notify the appropriate driving/licensing authority in accordance with public-safety obligations",
+      "Immediately discharge the patient from the practice",
+      "Secretly discontinue his antiepileptic prescription to prevent driving"
+    ],
+    "answer": 2,
+    "exp": "When a patient poses a serious, foreseeable risk to identifiable third parties or the public, the physician's duty to protect others can override confidentiality. An uncontrolled seizure disorder in a commercial driver who intends to keep driving is such a situation; after counseling the patient, the physician should report to the appropriate driving or licensing authority as permitted or required by law. This balances patient confidentiality against the safety of others on the road.",
+    "why": [
+      "Maintaining strict confidentiality ignores a serious, foreseeable threat to public safety that ethically and legally permits disclosure.",
+      "Telling only the family does not discharge the physician's responsibility to prevent harm and improperly shifts the burden without protecting the public.",
+      "Correct: an uncontrolled seizure disorder in a driver who intends to keep driving justifies notifying the driving/licensing authority to protect third parties, overriding confidentiality after counseling.",
+      "Discharging the patient abandons him and does nothing to address the immediate public-safety risk.",
+      "Covertly stopping his medication is deceptive, harmful, and unethical, and would worsen his seizure control."
+    ]
+  },
+  {
+    "id": "s1-0275",
+    "system": "Social Sciences / Ethics",
+    "discipline": "Ethics",
+    "topic": "Medical futility and non-beneficial treatment",
+    "difficulty": "moderate",
+    "anchor": null,
+    "vignette": "An 82-year-old man with widely metastatic cancer is dying of multi-organ failure in the intensive care unit despite maximal support. His family insists that everything, including cardiopulmonary resuscitation and additional aggressive interventions, be continued, believing a miracle is possible. The care team agrees these interventions cannot restore organ function or meaningfully prolong life and would only add suffering.",
+    "lead": "Which is the most appropriate course of action?",
+    "options": [
+      "Comply fully with all requested interventions because the family's wishes are absolute",
+      "Unilaterally stop all care immediately without informing the family",
+      "Transfer the patient to another hospital to avoid the conflict",
+      "Meet with the family to clarify prognosis and goals of care, explaining that non-beneficial interventions are not obligatory",
+      "Obtain a court order before limiting any intervention"
+    ],
+    "answer": 3,
+    "exp": "Physicians are not ethically obligated to provide interventions that cannot achieve a meaningful physiologic benefit, and offering such treatment can violate nonmaleficence. The appropriate response is not unilateral withdrawal but a compassionate goals-of-care discussion that clarifies the poor prognosis, addresses the family's hopes and values, and redirects care toward comfort. Ethics consultation and second opinions can help when disagreement persists.",
+    "why": [
+      "A family's wishes are important but do not obligate physicians to provide interventions that offer no meaningful benefit and only prolong suffering.",
+      "Unilaterally stopping care without communication is unethical and abandons the shared decision-making process with the family.",
+      "Transferring the patient to avoid the conflict abandons the family and sidesteps the needed goals-of-care conversation.",
+      "Correct: the team should hold a compassionate family meeting to clarify prognosis and goals of care and explain that non-beneficial interventions are not ethically obligatory.",
+      "A court order is a last resort for intractable disputes, not the first step before an honest goals-of-care discussion."
+    ]
+  },
+  {
+    "id": "s1-0276",
+    "system": "General Principles",
+    "discipline": "Biochemistry",
+    "topic": "Maple syrup urine disease (branched-chain ketoacid dehydrogenase deficiency)",
+    "difficulty": "moderate",
+    "anchor": null,
+    "vignette": "A 6-day-old term infant is brought in for poor feeding, vomiting, and increasing lethargy that has progressed to episodes of back-arching rigidity. The parents, who are first cousins, note that the child's urine and cerumen have a sweet, caramel-like odor. Plasma amino acid analysis shows markedly elevated leucine, isoleucine, and valine, and the child is placed on a diet restricted in these amino acids.",
+    "lead": "A deficiency of which enzyme best explains this presentation?",
+    "options": [
+      "Branched-chain alpha-ketoacid dehydrogenase, impairing catabolism of leucine, isoleucine, and valine",
+      "Phenylalanine hydroxylase, impairing conversion of phenylalanine to tyrosine",
+      "Homogentisate oxidase, impairing tyrosine degradation",
+      "Cystathionine beta-synthase, impairing homocysteine metabolism",
+      "Galactose-1-phosphate uridyltransferase, impairing galactose metabolism"
+    ],
+    "answer": 0,
+    "exp": "Neonatal encephalopathy with feeding difficulty, opisthotonic posturing, a sweet maple-syrup odor of urine and cerumen, and elevated branched-chain amino acids indicate maple syrup urine disease. Deficiency of branched-chain alpha-ketoacid dehydrogenase blocks oxidative decarboxylation of the ketoacids of leucine, isoleucine, and valine, so these amino acids and their neurotoxic ketoacids accumulate. Treatment is lifelong dietary restriction of branched-chain amino acids.",
+    "why": [
+      "Correct: deficiency of branched-chain alpha-ketoacid dehydrogenase blocks catabolism of leucine, isoleucine, and valine, causing the buildup and sweet-smelling urine of maple syrup urine disease.",
+      "Phenylalanine hydroxylase deficiency causes phenylketonuria with a musty odor and elevated phenylalanine, not elevated branched-chain amino acids.",
+      "Homogentisate oxidase deficiency causes alkaptonuria with urine that darkens on standing, not neonatal encephalopathy with a maple-syrup odor.",
+      "Cystathionine beta-synthase deficiency causes homocystinuria with lens dislocation and thrombosis, not accumulation of branched-chain amino acids.",
+      "Galactose-1-phosphate uridyltransferase deficiency causes classic galactosemia with cataracts and hepatomegaly after milk feeding, not elevated branched-chain amino acids."
+    ]
+  },
+  {
+    "id": "s1-0277",
+    "system": "General Principles",
+    "discipline": "Pharmacology",
+    "topic": "Loading dose and volume of distribution",
+    "difficulty": "easy",
+    "anchor": "table",
+    "vignette": "A 70 kg man with a serious infection needs a drug brought rapidly to a therapeutic plasma concentration. The team wants to give a single intravenous loading dose so that the target concentration is reached immediately rather than waiting several half-lives on a maintenance regimen.\n\n| Parameter | Value |\n|---|---|\n| Target plasma concentration | 4 mg/L |\n| Volume of distribution | 35 L |\n| Clearance | 5 L/hr |\n| Bioavailability (IV) | 100% |",
+    "lead": "Which pharmacokinetic parameter is used to calculate the loading dose needed to reach the target plasma concentration?",
+    "options": [
+      "Clearance",
+      "Elimination half-life",
+      "Volume of distribution",
+      "Elimination rate constant",
+      "Renal excretion fraction"
+    ],
+    "answer": 2,
+    "exp": "The loading dose is the amount needed to fill the apparent space the drug distributes into, so it equals the target plasma concentration multiplied by the volume of distribution (divided by bioavailability). Here that is 4 mg/L x 35 L = 140 mg. Clearance instead determines the maintenance dose rate needed to keep concentrations at steady state; the loading dose is independent of clearance.",
+    "why": [
+      "Clearance determines the maintenance dosing rate at steady state, not the loading dose needed to fill the distribution volume.",
+      "Half-life derives from volume of distribution and clearance and governs time to steady state, not the loading dose itself.",
+      "Correct: the loading dose equals target concentration times the volume of distribution (adjusted for bioavailability), so volume of distribution is the key parameter.",
+      "The elimination rate constant describes the fractional rate of drug removal per unit time, relevant to elimination, not to sizing the loading dose.",
+      "The renal excretion fraction describes a route of elimination and does not determine the loading dose required to reach the target concentration."
+    ]
+  },
+  {
+    "id": "s1-0278",
+    "system": "Immune / Blood & Lymphoreticular",
+    "discipline": "Hematology",
+    "topic": "Paroxysmal nocturnal hemoglobinuria",
+    "difficulty": "moderate",
+    "anchor": "lab",
+    "vignette": "A 33-year-old man reports months of fatigue and episodes of dark, cola-colored urine that are most noticeable in the morning. He was recently hospitalized for an unusual abdominal vein thrombosis. He is mildly jaundiced.\n\n| Test | Value | Reference |\n|---|---|---|\n| Hemoglobin | 9.2 g/dL | 13.5-17.5 |\n| Lactate dehydrogenase | markedly elevated | 100-190 |\n| Haptoglobin | undetectable | 30-200 |\n| Direct antiglobulin (Coombs) test | negative | negative |\n| Flow cytometry | absent CD55 and CD59 on red cells | present |",
+    "lead": "Which best explains his condition?",
+    "options": [
+      "Warm autoantibodies against red cell membrane antigens",
+      "Acquired PIGA mutation causing loss of GPI-anchored complement regulators, with complement-mediated intravascular hemolysis",
+      "Inherited spectrin and ankyrin defect of the red cell membrane skeleton",
+      "Deficiency of the metalloprotease ADAMTS13",
+      "X-linked deficiency of glucose-6-phosphate dehydrogenase"
+    ],
+    "answer": 1,
+    "exp": "Intravascular hemolysis (markedly elevated LDH, undetectable haptoglobin, hemoglobinuria) with a negative direct antiglobulin test, thrombosis at an unusual site, and flow cytometry showing loss of CD55 and CD59 indicate paroxysmal nocturnal hemoglobinuria. An acquired PIGA mutation in a hematopoietic stem cell blocks synthesis of the GPI anchor that tethers the complement inhibitors CD55 and CD59, leaving red cells vulnerable to complement-mediated lysis and predisposing to thrombosis.",
+    "why": [
+      "Warm autoimmune hemolytic anemia produces a positive direct antiglobulin test and extravascular hemolysis, not the Coombs-negative intravascular hemolysis with absent CD55/CD59 seen here.",
+      "Correct: an acquired PIGA mutation removes the GPI-anchored complement regulators CD55 and CD59, causing complement-mediated intravascular hemolysis, hemoglobinuria, and thrombosis.",
+      "Hereditary spherocytosis is an inherited membrane-skeleton defect causing extravascular hemolysis and spherocytes with a normal CD55/CD59, not this acquired flow-cytometry finding.",
+      "ADAMTS13 deficiency causes thrombotic thrombocytopenic purpura with schistocytes and thrombocytopenia, not loss of GPI-anchored proteins.",
+      "G6PD deficiency causes episodic oxidant-triggered hemolysis with bite cells and Heinz bodies, not the loss of CD55 and CD59 defining this disorder."
+    ]
+  },
+  {
+    "id": "s1-0279",
+    "system": "Immune / Blood & Lymphoreticular",
+    "discipline": "Immunology",
+    "topic": "Wiskott-Aldrich syndrome",
+    "difficulty": "moderate",
+    "anchor": "lab",
+    "vignette": "A 10-month-old boy has had recurrent ear and sinus infections with encapsulated organisms, a chronic itchy eczematous rash, and easy bruising with scattered petechiae and bloody diarrhea. His maternal uncle died young of bleeding and infections.\n\n| Test | Value | Reference |\n|---|---|---|\n| Platelet count | 32,000/mcL | 150,000-400,000 |\n| Mean platelet volume | small | normal |\n| Serum IgM | low | normal |\n| Serum IgE | elevated | normal |",
+    "lead": "Which is the most likely diagnosis?",
+    "options": [
+      "Chronic granulomatous disease",
+      "X-linked (Bruton) agammaglobulinemia",
+      "Severe combined immunodeficiency",
+      "Wiskott-Aldrich syndrome",
+      "Chediak-Higashi syndrome"
+    ],
+    "answer": 3,
+    "exp": "The triad of eczema, thrombocytopenia with small platelets, and recurrent infections in a boy with an X-linked family history indicates Wiskott-Aldrich syndrome. A mutation in the WAS gene disrupts the actin-cytoskeleton regulator WASP in hematopoietic cells, impairing platelet formation and immune-cell function; the immunoglobulin pattern classically shows low IgM with elevated IgE and IgA. Definitive treatment is hematopoietic stem cell transplantation.",
+    "why": [
+      "Chronic granulomatous disease causes recurrent catalase-positive infections and granulomas from an NADPH oxidase defect, not thrombocytopenia with small platelets and eczema.",
+      "Bruton agammaglobulinemia causes recurrent infections after 6 months with absent B cells and low all immunoglobulins, not the eczema-thrombocytopenia triad.",
+      "Severe combined immunodeficiency presents in early infancy with severe viral, fungal, and opportunistic infections and failure to thrive, not the specific triad with small platelets.",
+      "Correct: eczema, thrombocytopenia with small platelets, recurrent infections, low IgM, and elevated IgE in an X-linked pattern define Wiskott-Aldrich syndrome from a WAS gene defect.",
+      "Chediak-Higashi syndrome causes partial albinism, giant granules in leukocytes, and neuropathy, not thrombocytopenia with eczema and this immunoglobulin pattern."
+    ]
+  },
+  {
+    "id": "s1-0280",
+    "system": "Multisystem",
+    "discipline": "Pathology",
+    "topic": "Tuberous sclerosis complex",
+    "difficulty": "hard",
+    "anchor": "image",
+    "vignette": "A 2-year-old girl is evaluated for recurrent seizures that began in infancy as brief flexor spasms, along with delayed development. Examination reveals several hypopigmented ash-leaf macules on her trunk and a rough, raised plaque over her lower back. Echocardiography done in infancy had shown a cardiac mass that has since regressed, and renal ultrasound shows bilateral fat-containing masses.\n\n**[IMAGE: brain MRI showing calcified subependymal nodules along the lateral ventricles and several cortical tubers]**",
+    "lead": "Which is the most likely diagnosis?",
+    "options": [
+      "Neurofibromatosis type 1",
+      "Sturge-Weber syndrome",
+      "Von Hippel-Lindau disease",
+      "Neurofibromatosis type 2",
+      "Tuberous sclerosis complex"
+    ],
+    "answer": 4,
+    "exp": "Infantile spasms with developmental delay, ash-leaf hypopigmented macules, a shagreen patch, a regressing cardiac rhabdomyoma, renal angiomyolipomas, and subependymal nodules with cortical tubers indicate tuberous sclerosis complex. Autosomal dominant loss-of-function mutations in TSC1 (hamartin) or TSC2 (tuberin) disinhibit mTOR signaling, producing widespread benign hamartomas across the brain, skin, heart, and kidneys. mTOR inhibitors can shrink several of these lesions.",
+    "why": [
+      "Neurofibromatosis type 1 causes cafe-au-lait macules, neurofibromas, Lisch nodules, and optic gliomas, not ash-leaf spots with cardiac rhabdomyomas and cortical tubers.",
+      "Sturge-Weber syndrome causes a facial port-wine stain with leptomeningeal angiomas and seizures, not renal angiomyolipomas and subependymal nodules.",
+      "Von Hippel-Lindau disease causes hemangioblastomas, clear cell renal carcinoma, and pheochromocytoma, not ash-leaf macules and cardiac rhabdomyomas.",
+      "Neurofibromatosis type 2 causes bilateral vestibular schwannomas and meningiomas, not the skin, cardiac, and renal hamartomas seen here.",
+      "Correct: ash-leaf macules, a shagreen patch, cardiac rhabdomyoma, renal angiomyolipomas, and subependymal nodules with cortical tubers define tuberous sclerosis complex from a TSC1/TSC2 mutation."
     ]
   }
 ];

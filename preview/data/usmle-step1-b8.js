@@ -509,7 +509,7 @@ const USMLE_STEP1_B8 = [
     topic: "Amyloidosis",
     difficulty: "hard",
     anchor: "image",
-    vignette: "A 63-year-old man has months of fatigue, worsening leg edema, and frothy urine. He has an enlarged tongue, easy bruising around the eyes, and thickened, waxy skin. Echocardiography shows thickened ventricular walls with preserved wall thickness on voltage-discordant ECG, and urinalysis shows heavy proteinuria. He has a monoclonal light chain in the serum.\n\n**[IMAGE: renal biopsy stained with Congo red showing amorphous deposits that display apple-green birefringence under polarized light]**",
+    vignette: "A 63-year-old man has months of fatigue, worsening leg edema, and frothy urine. He has an enlarged tongue, easy bruising around the eyes, and thickened, waxy skin. Echocardiography shows thickened ventricular walls, while the ECG shows paradoxically low QRS voltages (voltage-mass discordance), and urinalysis shows heavy proteinuria. He has a monoclonal light chain in the serum.\n\n**[IMAGE: renal biopsy stained with Congo red showing amorphous deposits that display apple-green birefringence under polarized light]**",
     lead: "Which best explains these multisystem findings?",
     options: [
       "Granulomatous inflammation infiltrating multiple organs",

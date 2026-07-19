@@ -407,7 +407,7 @@ const USMLE_STEP2CK_B1 = [
     topic: "Neonatal hyperbilirubinemia",
     difficulty: "hard",
     anchor: "lab",
-    vignette: "A term infant born at 38 weeks is now 60 hours old and appears jaundiced to the mid-chest. He is breastfeeding well with adequate wet diapers and no lethargy. Mother and infant are both blood type O positive, and there is no evidence of hemolysis.\n\n| Test | Value | Reference |\n|---|---|---|\n| Total serum bilirubin | 18 mg/dL | age-specific |\n| Direct (conjugated) bilirubin | 0.4 mg/dL | < 1 |\n| Hematocrit | 52% | - |\n| Reticulocytes | normal | - |",
+    vignette: "A term infant born at 38 weeks is now 60 hours old and appears jaundiced with icterus extending to the palms and soles. He is breastfeeding well with adequate wet diapers and no lethargy. Mother and infant are both blood type O positive, and there is no evidence of hemolysis.\n\n| Test | Value | Reference |\n|---|---|---|\n| Total serum bilirubin | 21 mg/dL | age-specific |\n| Direct (conjugated) bilirubin | 0.4 mg/dL | < 1 |\n| Hematocrit | 52% | - |\n| Reticulocytes | normal | - |",
     lead: "Which of the following is the most appropriate next step in management?",
     options: [
       "Initiate phototherapy",
@@ -417,9 +417,9 @@ const USMLE_STEP2CK_B1 = [
       "Start intravenous antibiotics"
     ],
     answer: 0,
-    exp: "This is an unconjugated hyperbilirubinemia in a well term infant without hemolysis. At 60 hours of age a total bilirubin of 18 mg/dL exceeds the phototherapy threshold but is well below the exchange transfusion level (typically around 25 mg/dL), so phototherapy is the correct intervention. Interpreting the value against the age-in-hours nomogram, rather than the number alone, drives the decision.",
+    exp: "This is an unconjugated hyperbilirubinemia in a well term infant without hemolysis. At 60 hours of age a total bilirubin of 21 mg/dL exceeds the phototherapy threshold but is well below the exchange transfusion level (typically around 25 mg/dL), so phototherapy is the correct intervention. Interpreting the value against the age-in-hours nomogram, rather than the number alone, drives the decision.",
     why: [
-      "Correct: a bilirubin of 18 mg/dL at 60 hours in a well infant crosses the phototherapy threshold but not the exchange threshold.",
+      "Correct: a bilirubin of 21 mg/dL at 60 hours in a well infant crosses the phototherapy threshold but not the exchange threshold.",
       "Exchange transfusion is reserved for much higher levels or signs of acute bilirubin encephalopathy.",
       "Simple reassurance is unsafe because this level warrants active treatment.",
       "Breastfeeding generally continues; permanent cessation is not indicated.",

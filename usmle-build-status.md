@@ -24,8 +24,14 @@ files survive session death, conversation does not).
 | Step 1 | B7 | data/usmle-step1-b7.js | 25 | yes | yes |
 | Step 1 | B8 | data/usmle-step1-b8.js | 25 | yes | yes |
 | Step 1 | B9 | data/usmle-step1-b9.js | 25 | yes | yes |
+| Step 1 | B10 | data/usmle-step1-b10.js | 25 | yes | yes |
+| Step 1 | B11 | data/usmle-step1-b11.js | 25 | yes | yes |
+| Step 1 | B12 | data/usmle-step1-b12.js | 5 | yes | yes |
 
-Step 1 running total: **225** MCQs (max 280).
+Step 1 running total: **280** MCQs = **COMPLETE** (max 280). 280 unique topics, zero
+duplicates (verified by full topic scan). B10 = CV/Resp-Renal/GI lane, B11 = Neuro/MSK/
+Repro-Endo lane, B12 = final 5 (General Principles/Immune-Blood/Multisystem). Two B10/B11
+topic collisions (pseudogout, ectopic) were de-duped in B11 -> osteopetrosis, de Quervain.
 
 ### Batch ids
 - B1: s1-0001 .. s1-0025 (contiguous).
@@ -120,10 +126,17 @@ Tarasoff duty to protect.
 | Step 2 CK | B3 | data/usmle-step2ck-b3.js | 25 | yes | yes |
 | Step 2 CK | B4 | data/usmle-step2ck-b4.js | 25 | yes | yes |
 | Step 2 CK | B5 | data/usmle-step2ck-b5.js | 25 | yes | yes |
+| Step 2 CK | B6 | data/usmle-step2ck-b6.js | 25 | yes | yes |
 
-Step 2 CK running total: **125** MCQs (max 318).
+Step 2 CK running total: **150** MCQs (max 318).
 
-- IDs s2ck-0001 .. s2ck-0125. Validated with `--exam step2ck` (exam-aware validator).
+- IDs s2ck-0001 .. s2ck-0150. Validated with `--exam step2ck` (exam-aware validator).
+- B6 IDs s2ck-0126 .. s2ck-0150 (contiguous). Key 5/5/5/5/5, 15 anchors. Topics: complete
+  AV block, adrenal incidentaloma, ischemic colitis, vertebral osteomyelitis, OSA, CPPD,
+  ITP, acute interstitial nephritis, Bell palsy, Boerhaave, acute subdural, thyroid nodule,
+  acute urinary retention, Meckel, duodenal atresia, measles, transient synovitis, eclampsia,
+  category III tracing, vulvovaginal candidiasis, postpartum endometritis, bulimia, OUD MAT,
+  herpes zoster vaccination, truth-telling/nondisclosure.
 - B5 IDs s2ck-0101 .. s2ck-0125 (contiguous). Key 5/5/5/5/5, 16 anchors, 5 easy/14 mod/6
   hard. Topics: aortic stenosis, pheochromocytoma, acute severe UC, pyelonephritis,
   parapneumonic effusion, septic arthritis, HIT, rhabdomyolysis, TIA, ascending cholangitis,
@@ -158,11 +171,15 @@ Step 2 CK running total: **125** MCQs (max 318).
 | Step 3 | Day 1 FIP B2 | data/usmle-step3d1-b2.js | 25 | yes | yes |
 | Step 3 | Day 1 FIP B3 | data/usmle-step3d1-b3.js | 25 | yes | yes |
 | Step 3 | Day 1 FIP B4 | data/usmle-step3d1-b4.js | 25 | yes | yes |
+| Step 3 | Day 1 FIP B5 | data/usmle-step3d1-b5.js | 25 | yes | yes |
 | Step 3 | Day 2 ACM B1 (pilot) | data/usmle-step3d2-b1.js | 25 | yes | yes |
 | Step 3 | Day 2 ACM B2 | data/usmle-step3d2-b2.js | 25 | yes | yes |
+| Step 3 | Day 2 ACM B3 | data/usmle-step3d2-b3.js | 25 | yes | yes |
 
-Step 3 running total: **150** MCQs (100 Day 1 FIP + 50 Day 2 ACM; max 412: 232 Day 1 FIP +
-180 Day 2 ACM + 13 CCS).
+Step 3 running total: **200** MCQs (125 Day 1 FIP + 75 Day 2 ACM; max 412: 232 Day 1 FIP +
+180 Day 2 ACM + 13 CCS). Day 1 IDs s3-0001..0075 + 0101..0175; Day 2 IDs s3-0076..0100 +
+0126..0200. Within-bank topic scans: Day 1 125 unique, Day 2 75 unique; Day 1 B5 had 7
+topics that collided with Day 2 B3 and were swapped to fresh diagnosis/screening topics.
 
 - Day 1 FIP IDs s3-0001 .. s3-0125; Day 2 ACM IDs s3-0076 .. s3-0150. Day 1 blocks use the
   lower range each round, Day 2 the next block: D1 = 0001-0075 + 0101-0125; D2 = 0076-0100 +
@@ -215,12 +232,24 @@ Step 3 running total: **150** MCQs (100 Day 1 FIP + 50 Day 2 ACM; max 412: 232 D
   screening, adolescent STI confidentiality, NNT calculation.
 - CCS (computer-based case simulations) deferred past v1 (MCQs only for now).
 
+## Full-bank medical QA pass (630 items)
+- 7 parallel QA reviewers covered every committed item (Step 1 280, Step 2 CK 150, Step 3
+  Day 1 125, Day 2 75) for: keyed answer = single best answer per CURRENT guidelines
+  (biostat items re-computed), vignette consistency, distractor quality, why[] integrity,
+  and up-to-date management. Result: bank in strong shape; only 5 items needed edits:
+  - s1-0195 amyloidosis: fixed a vignette contradiction (thick walls vs "preserved wall
+    thickness") -> thick walls on echo + paradoxically low QRS voltage.
+  - s2ck-0016 neonatal hyperbilirubinemia: TSB 18 -> 21 mg/dL to sit unambiguously above
+    the 2022 AAP phototherapy threshold; jaundice extent + exp/why updated. Key preserved.
+  - s2ck-0080, s2ck-0085, s2ck-0059: "An 7x/8x-year-old" -> "A ...".
+  All edited files re-validated clean; no answer-key changes.
+
 ## Images / illustrations
 - App art lives in `preview/illustrations.js` + `preview/illus-pA..H.js`, keyed by
   question id (`RC_ILLUS[id]`). Every illustrated item covered by schematic SVGs
   (medical-illustration quality): pA-pD = original 44, pE = B7/CK2/S3-1 (16), pF =
-  B8/CK3/S3-2 (18), pG = B9/CK4/S3D1-3/S3D2-1 (22), pH = CK5/S3D1-4/S3D2-2 (16). ECGs
-  kept as vector tracings.
+  B8/CK3/S3-2 (18), pG = B9/CK4/S3D1-3/S3D2-1 (22), pH = CK5/S3D1-4/S3D2-2 (16),
+  pI = S1-B10-12/CK6/S3D1-5/S3D2-3 (31). ECGs kept as vector tracings.
 - Header branding: the real logo image (`preview/assets/logo.jpg`) replaces the text
   wordmark at the top of every screen.
 - **Master image-prompt file: `higgsfield-image-prompts.md`** - one hyperrealistic,
@@ -231,21 +260,21 @@ Step 3 running total: **150** MCQs (100 Day 1 FIP + 50 Day 2 ACM; max 412: 232 D
   the QA checklist -> wire into `RC_ILLUS[id]` (one-line swap; no engine change).
 
 ## Next
-- Step 1 is COMPLETE for now at 225 (user: "done with step 1 questions"). Resume only if asked.
-- Step 2 CK Batch 6 (s2ck-0126 .. s2ck-0150); validate `--exam step2ck
-  --against data/usmle-step2ck-b1.js .. b5.js`.
-- Step 3 Day 1 FIP Batch 5 (s3-0151 .. s3-0175) and Day 2 ACM Batch 3 (s3-0176 .. s3-0200).
+- **Step 1 is COMPLETE at 280/280.** Do not add more unless asked.
+- Step 2 CK Batch 7 (s2ck-0151 .. s2ck-0175); validate `--exam step2ck --against` b1..b6.
+- Step 3 Day 1 FIP Batch 6 (s3-0201 .. s3-0225) and Day 2 ACM Batch 4 (s3-0226 .. s3-0250).
   Keep Day 1/Day 2 in non-overlapping s3- ranges; validate `--exam step3 --against` all
-  prior s3 files. (Convention: allot Day 1 the lower block, Day 2 the next block per round.)
-- Preview app (`preview/`) has FOUR exam BUTTONS: Step 1 225 / Step 2 CK 125 / Step 3 Day 1
-  100 / Step 3 Day 2 50. Exam dropdown + order/shuffle selector removed (always shuffle,
-  no-repeat). Header uses the logo image. For a new batch: add its `<script src>`, extend the
-  BANKS.<exam> concat (step3d1 vs step3d2!), copy into preview/data.
-- Production kit (`production/`): usmle-step1-data.js at 225 via build-data.js (auto-globs).
+  prior s3 files. IMPORTANT: give Day 1 and Day 2 mutually-exclusive topic guidance up front
+  (Day 1 = diagnosis/biostat/screening/ethics; Day 2 = longitudinal management) to avoid the
+  cross-day dup cleanup that was needed this round.
+- Preview app (`preview/`) has FOUR exam BUTTONS: Step 1 280 / Step 2 CK 150 / Step 3 Day 1
+  125 / Step 3 Day 2 75. Exam dropdown + order/shuffle selector removed (always shuffle,
+  no-repeat). Header uses the logo image (assets/logo.jpg). For a new batch: add its
+  `<script src>`, extend the BANKS.<exam> concat (step3d1 vs step3d2!), copy into preview/data.
+- Production kit (`production/`): usmle-step1-data.js at 280 via build-data.js (auto-globs).
   Consider Step 2 CK / Step 3 production bundlers. Live wiring via the Chrome publish path.
 - Images: append a `higgsfield-image-prompts.md` section for every new illustrated question
-  (now 116 sections). New-item SVGs: pE = B7/CK2/S3-1, pF = B8/CK3/S3-2, pG = B9/CK4/
-  S3D1-3/S3D2-1, pH = CK5/S3D1-4/S3D2-2 (RC_ILLUS registry).
+  (now 147 sections). New-item SVGs: pE..pI (RC_ILLUS registry); pI = this round's 31.
 
 ## Trigger for next session
 "Continue the USMLE module - generate Step 1 Batch 8 / Step 2 CK Batch 3 / Step 3 Day 1
