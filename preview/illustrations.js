@@ -144,14 +144,29 @@
     '<text x="160" y="150" text-anchor="middle" font-size="10" fill="' + CC + '" fill-opacity="0.7" font-family="sans-serif">Normal red reflex (left) vs white pupillary reflex / leukocoria (right)</text>');
 
   // boot-shaped heart (Tetralogy) CXR silhouette
-  SCH.bootHeart = fig('0 0 260 240',
-    '<rect x="10" y="10" width="240" height="210" rx="8" stroke="' + CC + '" stroke-opacity="0.25" stroke-width="1"/>' +
-    // thorax hint
-    '<path d="M40 30 q90 -14 180 0" stroke="' + CC + '" stroke-opacity="0.2" fill="none"/>' +
-    // boot-shaped cardiac silhouette with upturned apex
-    '<path d="M120 70 q60 4 66 70 q4 44 -34 60 q-30 12 -46 -6 q-8 20 -36 18 q-34 -2 -34 -30 q0 -30 40 -34 q-14 -40 22 -70 q28 -22 56 -8 z" ' +
-    'fill="' + CC + '" fill-opacity="0.10" stroke="' + CC + '" stroke-width="1.5"/>' +
-    '<text x="130" y="232" text-anchor="middle" font-size="10" fill="' + CC + '" fill-opacity="0.7" font-family="sans-serif">Boot-shaped heart with upturned apex, reduced pulmonary markings</text>');
+  // Chest radiograph (PA) schematic: coeur-en-sabot - rib cage, spine, clavicles,
+  // cardiomediastinal silhouette with upturned apex + concave pulmonary bay, diaphragm.
+  SCH.bootHeart = '<svg viewBox="0 0 300 344" width="320" xmlns="http://www.w3.org/2000/svg" fill="none">' +
+    '<rect x="8" y="8" width="284" height="328" rx="12" fill="#0a0f16" stroke="rgba(255,255,255,.08)"/>' +
+    '<g stroke-linecap="round" stroke-linejoin="round">' +
+    '<rect x="144" y="44" width="12" height="200" rx="6" fill="rgba(205,216,229,.09)" stroke="rgba(205,216,229,.16)"/>' +
+    '<path d="M150 68 C120 58 96 60 56 76" stroke="rgba(210,220,232,.48)" stroke-width="4" fill="none"/>' +
+    '<path d="M150 68 C180 58 204 60 244 76" stroke="rgba(210,220,232,.48)" stroke-width="4" fill="none"/>' +
+    '<g stroke="rgba(205,216,229,.30)" stroke-width="3" fill="none">' +
+    '<path d="M148 92 C110 86 72 102 44 134"/><path d="M148 116 C108 110 68 128 40 162"/>' +
+    '<path d="M148 140 C106 134 64 154 38 190"/><path d="M150 164 C108 158 66 180 42 214"/>' +
+    '<path d="M150 188 C112 184 76 206 52 238"/>' +
+    '<path d="M152 92 C190 86 228 102 256 134"/><path d="M152 116 C192 110 232 128 260 162"/>' +
+    '<path d="M152 140 C194 134 236 154 262 190"/><path d="M150 164 C192 158 234 180 258 214"/>' +
+    '<path d="M150 188 C188 184 224 206 248 238"/></g>' +
+    '<path d="M150 76 C140 92 134 118 133 150 C132 186 122 214 116 232 C112 247 123 255 135 250 ' +
+    'C143 247 149 250 163 244 C189 232 205 213 200 190 C198 173 178 168 176 152 C174 138 180 124 172 112 ' +
+    'C166 100 158 88 150 76 Z" fill="rgba(214,224,238,.15)" stroke="rgba(238,244,250,.94)" stroke-width="2.4"/>' +
+    '<path d="M40 246 C80 288 130 292 150 274" stroke="rgba(205,216,229,.5)" stroke-width="3" fill="none"/>' +
+    '<path d="M150 274 C176 290 226 286 258 250" stroke="rgba(205,216,229,.5)" stroke-width="3" fill="none"/>' +
+    '<g stroke="rgba(205,216,229,.20)" stroke-width="2" fill="none">' +
+    '<path d="M137 150 C126 160 119 170 114 182"/><path d="M176 150 C187 159 194 168 199 178"/></g>' +
+    '</g></svg>';
 
   // Reed-Sternberg: binucleate owl-eye cell
   SCH.reedSternberg = fig('0 0 300 200',
