@@ -79,6 +79,19 @@ Tarasoff duty to protect.
   per 25 (~20/56/24), and make "hard" items genuinely two-step (interpret-then-decide),
   not deeper recall. Prior batches ran ~3 easy / 20 moderate / 2 hard.
 
+## Step 2 CK (started)
+| Exam | Batch | File | Items | Validated | Committed |
+|---|---|---|---|---|---|
+| Step 2 CK | B1 (pilot) | data/usmle-step2ck-b1.js | 25 | yes | yes |
+
+- IDs s2ck-0001 .. s2ck-0025. Validated with `--exam step2ck` (exam-aware validator).
+- Blueprint (clinical, Medicine-heavy): Internal Medicine 9, Surgery 4, Pediatrics 4,
+  Obstetrics & Gynecology 4, Psychiatry 2, Preventive Medicine & Ethics 2.
+- Key 5/5/5/5/5, 11 anchors, difficulty 5 easy / 14 moderate / 6 hard. All original;
+  clinical lead-ins (next best step / most likely dx). QA'd medically clean.
+- Preview: NOT yet wired (Step 1 preview is single-exam). To demo Step 2 CK, either add
+  an exam selector to preview, or mount via production/usmle-mode.js with a Step 2 bank.
+
 ## Next
 - Step 1 Batch 6 (s1-0126 .. s1-0150), blueprint mix + the new wider difficulty spread.
   Validate with `--against data/usmle-step1-b1.js ... data/usmle-step1-b5.js`.
