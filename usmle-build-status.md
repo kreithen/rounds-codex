@@ -19,20 +19,31 @@ files survive session death, conversation does not).
 | Step 1 | B2 | data/usmle-step1-b2.js | 25 | yes | yes |
 | Step 1 | B3 | data/usmle-step1-b3.js | 25 | yes | yes |
 | Step 1 | B4 | data/usmle-step1-b4.js | 25 | yes | yes |
+| Step 1 | B5 | data/usmle-step1-b5.js | 25 | yes | yes |
 
-Step 1 running total: **100** MCQs (max 280).
+Step 1 running total: **125** MCQs (max 280).
 
 ### Batch ids
 - B1: s1-0001 .. s1-0025 (contiguous).
 - B2: s1-0026 .. s1-0050 (contiguous). No collisions with B1.
 - B3: s1-0051 .. s1-0075 (contiguous). No collisions with B1/B2.
 - B4: s1-0076 .. s1-0100 (contiguous). No collisions with B1/B2/B3.
+- B5: s1-0101 .. s1-0125 (contiguous). No collisions with B1-B4.
 
 ### Answer key balance
 - B1: A:5 B:5 C:5 D:5 E:5. Anchors 12/25.
 - B2: A:5 B:5 C:5 D:5 E:5. Anchors 12/25.
 - B3: A:5 B:5 C:5 D:5 E:5. Anchors 13/25.
 - B4: A:5 B:5 C:5 D:5 E:5. Anchors 12/25.
+- B5: A:5 B:5 C:5 D:5 E:5. Anchors 13/25.
+
+### B5 topics (no repeats vs B1-B4)
+Tay-Sachs, Down syndrome, vitamin B6/isoniazid, anaphylaxis (type I), TTP, epidural
+hematoma, serotonin syndrome, major depressive disorder, dermatomyositis, cutaneous SCC,
+dilated cardiomyopathy, beta-blocker MOA, ARDS, membranous nephropathy, Barrett esophagus,
+colorectal adenocarcinoma, acromegaly, papillary thyroid carcinoma, complete mole,
+secondary syphilis, neurofibromatosis type 1, relative risk calc, Hawthorne effect,
+advance directive, impaired colleague.
 
 ### B4 topics (no repeats vs B1/B2/B3)
 galactosemia, Prader-Willi (imprinting), Kartagener/ciliary dynein, SCID, hemophilia A,
@@ -58,13 +69,13 @@ number needed to treat, confidence-interval interpretation, surrogate decision-m
 Tarasoff duty to protect.
 
 ## Next
-- Step 1 Batch 5 (s1-0101 .. s1-0125), same blueprint mix. Validate with
-  `--against data/usmle-step1-b1.js data/usmle-step1-b2.js data/usmle-step1-b3.js data/usmle-step1-b4.js`.
-- Preview app (`preview/`) now loads B1..B4 (100 items); add each new batch's
+- Step 1 Batch 6 (s1-0126 .. s1-0150), same blueprint mix. Validate with
+  `--against data/usmle-step1-b1.js ... data/usmle-step1-b5.js`.
+- Preview app (`preview/`) now loads B1..B5 (125 items); add each new batch's
   `<script src>` + BANK concat when built, and copy the file into `preview/data/`.
 - Later (separate publish session): wire "USMLE Mode" UI into `index.html`, fold banks
   into a production array, push live via the Chrome publish path (medcodex-publish).
 
 ## Trigger for next session
-"Continue the USMLE module - generate Step 1 Batch 5 (25 items, blueprint mix)."
-Attach: this status doc + data/usmle-step1-b1.js + b2.js + b3.js + b4.js (for id checks).
+"Continue the USMLE module - generate Step 1 Batch 6 (25 items, blueprint mix)."
+Attach: this status doc + data/usmle-step1-b1.js .. b5.js (for id checks).
