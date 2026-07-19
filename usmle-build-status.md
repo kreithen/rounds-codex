@@ -17,16 +17,26 @@ files survive session death, conversation does not).
 |---|---|---|---|---|---|
 | Step 1 | B1 | data/usmle-step1-b1.js | 25 | yes | yes |
 | Step 1 | B2 | data/usmle-step1-b2.js | 25 | yes | yes |
+| Step 1 | B3 | data/usmle-step1-b3.js | 25 | yes | yes |
 
-Step 1 running total: **50** MCQs (max 280).
+Step 1 running total: **75** MCQs (max 280).
 
 ### Batch ids
 - B1: s1-0001 .. s1-0025 (contiguous).
 - B2: s1-0026 .. s1-0050 (contiguous). No collisions with B1.
+- B3: s1-0051 .. s1-0075 (contiguous). No collisions with B1/B2.
 
 ### Answer key balance
 - B1: A:5 B:5 C:5 D:5 E:5. Anchors 12/25.
 - B2: A:5 B:5 C:5 D:5 E:5. Anchors 12/25.
+- B3: A:5 B:5 C:5 D:5 E:5. Anchors 13/25.
+
+### B3 topics (no repeats vs B1/B2)
+PKU, Marfan, scurvy, DiGeorge, beta-thalassemia major, Alzheimer, myasthenia gravis,
+delirium vs dementia, rheumatoid arthritis, melanoma (Breslow), inferior STEMI/RCA,
+digoxin, sarcoidosis, acute tubular necrosis, Crohn, hereditary hemochromatosis,
+type 1 DM/DKA, Cushing (dexamethasone suppression), PCOS, Lyme, retinoblastoma (two-hit),
+sensitivity/SnNout, case-control/odds ratio, medical error disclosure, professional interpreter.
 
 ### Topic coverage (no repeats across B1/B2)
 B2 topics: OTC deficiency, fragile X, I-cell disease, hereditary angioedema, G6PD,
@@ -37,11 +47,13 @@ number needed to treat, confidence-interval interpretation, surrogate decision-m
 Tarasoff duty to protect.
 
 ## Next
-- Step 1 Batch 3 (s1-0051 .. s1-0075), same blueprint mix. Validate with
-  `--against data/usmle-step1-b1.js data/usmle-step1-b2.js`.
+- Step 1 Batch 4 (s1-0076 .. s1-0100), same blueprint mix. Validate with
+  `--against data/usmle-step1-b1.js data/usmle-step1-b2.js data/usmle-step1-b3.js`.
+- Preview app (`preview/`) now loads B1+B2+B3 (75 items); add each new batch's
+  `<script src>` + BANK concat when built, and copy the file into `preview/data/`.
 - Later (separate publish session): wire "USMLE Mode" UI into `index.html`, fold banks
   into a production array, push live via the Chrome publish path (medcodex-publish).
 
 ## Trigger for next session
-"Continue the USMLE module - generate Step 1 Batch 3 (25 items, blueprint mix)."
-Attach: this status doc + data/usmle-step1-b1.js + data/usmle-step1-b2.js (for id checks).
+"Continue the USMLE module - generate Step 1 Batch 4 (25 items, blueprint mix)."
+Attach: this status doc + data/usmle-step1-b1.js + b2.js + b3.js (for id checks).
