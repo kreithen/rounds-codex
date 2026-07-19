@@ -41,8 +41,18 @@ const EXAM_SYSTEMS = {
     'Psychiatry',
     'Preventive Medicine & Ethics',
   ]),
+  step3: new Set([
+    'Internal Medicine',
+    'Surgery',
+    'Pediatrics',
+    'Obstetrics & Gynecology',
+    'Psychiatry',
+    'Emergency Medicine',
+    'Biostatistics & Epidemiology',
+    'Preventive Medicine & Ethics',
+  ]),
 };
-const ID_PREFIX = { step1: 's1-', step2ck: 's2ck-' };
+const ID_PREFIX = { step1: 's1-', step2ck: 's2ck-', step3: 's3-' };
 const DIFFICULTIES = new Set(['easy', 'moderate', 'hard']);
 const ANCHORS = new Set([null, 'lab', 'image', 'ecg', 'table']);
 const REQUIRED = ['id', 'system', 'discipline', 'topic', 'difficulty', 'anchor',
