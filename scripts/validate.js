@@ -19,19 +19,30 @@
 const fs = require('fs');
 const vm = require('vm');
 
-const SYSTEMS = new Set([
-  'General Principles',
-  'Immune / Blood & Lymphoreticular',
-  'Behavioral Health & Nervous System',
-  'Musculoskeletal / Skin',
-  'Cardiovascular',
-  'Respiratory & Renal/Urinary',
-  'Gastrointestinal',
-  'Reproductive & Endocrine',
-  'Multisystem',
-  'Biostatistics & Epidemiology',
-  'Social Sciences / Ethics',
-]);
+const EXAM_SYSTEMS = {
+  step1: new Set([
+    'General Principles',
+    'Immune / Blood & Lymphoreticular',
+    'Behavioral Health & Nervous System',
+    'Musculoskeletal / Skin',
+    'Cardiovascular',
+    'Respiratory & Renal/Urinary',
+    'Gastrointestinal',
+    'Reproductive & Endocrine',
+    'Multisystem',
+    'Biostatistics & Epidemiology',
+    'Social Sciences / Ethics',
+  ]),
+  step2ck: new Set([
+    'Internal Medicine',
+    'Surgery',
+    'Pediatrics',
+    'Obstetrics & Gynecology',
+    'Psychiatry',
+    'Preventive Medicine & Ethics',
+  ]),
+};
+const ID_PREFIX = { step1: 's1-', step2ck: 's2ck-' };
 const DIFFICULTIES = new Set(['easy', 'moderate', 'hard']);
 const ANCHORS = new Set([null, 'lab', 'image', 'ecg', 'table']);
 const REQUIRED = ['id', 'system', 'discipline', 'topic', 'difficulty', 'anchor',
@@ -57,6 +68,14 @@ const againstIdx = args.indexOf('--against');
 const against = againstIdx > -1
   ? args.slice(againstIdx + 1).filter((a) => !a.startsWith('--'))
   : [];
+const examIdx = args.indexOf('--exam');
+const exam = examIdx > -1 ? args[examIdx + 1] : 'step1';
+const SYSTEMS = EXAM_SYSTEMS[exam];
+const idPrefix = ID_PREFIX[exam];
+if (!SYSTEMS) {
+  console.error('unknown --exam "' + exam + '" (expected step1 or step2ck)');
+  process.exit(2);
+}
 
 if (files.length === 0) {
   console.error('usage: node scripts/validate.js <file.js> [--expect N] [--against ...]');
@@ -98,6 +117,7 @@ arr.forEach((it, idx) => {
   }
   if (typeof it.id !== 'string' || !it.id.trim()) errors.push(`${where}: bad id`);
   else {
+    if (idPrefix && !it.id.startsWith(idPrefix)) errors.push(`${where}: id should start with "${idPrefix}" for --exam ${exam}`);
     if (localIds.has(it.id)) errors.push(`${where}: duplicate id within file`);
     localIds.add(it.id);
     if (seenIds.has(it.id)) errors.push(`${where}: id collides with ${seenIds.get(it.id)}`);
