@@ -1,6 +1,6 @@
 # Rounds Codex — USMLE Mode: hyperrealistic image prompt sheet
 
-60 AI image-generation prompts (one per illustrated question), each tuned to its
+78 AI image-generation prompts (one per illustrated question), each tuned to its
 vignette, for producing hyperrealistic, medically-accurate images (Higgsfield or
 similar) to replace the current schematic SVGs.
 
@@ -617,3 +617,215 @@ questions are created:
   - Paired supine + upright frames, correct anatomy
 - **Avoid (negative prompt):** peripheral dilated colon with haustra (large-bowel obstruction); a single massively dilated coffee-bean loop (volvulus); free air under the diaphragm as the main finding (perforation); a normal nondistended bowel-gas pattern; a chest radiograph; only one projection when a supine-plus-upright pair is requested.
 - **Real-image fallback:** Radiopaedia - search "small bowel obstruction supine erect abdominal radiograph air-fluid levels valvulae conniventes"; Wikimedia Commons "small bowel obstruction X-ray series".
+
+<!-- Added with Step 1 Batch 8, Step 2 CK Batch 3, Step 3 Day 1 Batch 2 -->
+
+### s1-0180 - Sickle cell disease  (Step 1 - Immune / Blood & Lymphoreticular)
+- **Case context:** 4-year-old African American boy with recurrent vaso-occlusive pain crises, scleral icterus, splenomegaly, and functional asplenia (prior pneumococcal infection); the smear must show crescent-shaped sickled red cells and a Howell-Jolly body.
+- **Modality:** Peripheral blood smear, Wright-Giemsa stain, oil-immersion (approximately 1000x).
+- **Prompt:** Hyperrealistic peripheral blood smear photomicrograph, Wright-Giemsa stain at 1000x oil-immersion, clean pale-pink background, photorealistic hematology quality. Show numerous classic SICKLE CELLS (drepanocytes): elongated, thin, crescent- and boat-shaped rigid red cells with sharply POINTED ends, scattered among more rounded normal biconcave erythrocytes; include a few target cells and polychromatophilic reticulocytes. Within at least one otherwise normal red cell show a single small, round, dense dark-purple HOWELL-JOLLY BODY (a nuclear remnant) reflecting functional asplenia. Realistic red-cell membrane detail, staining variation, and smear texture. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Multiple elongated crescent/sickle-shaped red cells with pointed ends
+  - At least one Howell-Jolly body (single round dense intraerythrocytic inclusion)
+  - Coexisting normal biconcave red cells and occasional target cells for contrast
+  - Correct Wright-Giemsa palette and oil-immersion detail
+- **Avoid (negative prompt):** bite cells and Heinz bodies (G6PD); schistocytes/helmet fragments (microangiopathy); spherocytes as the dominant finding (HS); teardrop cells; basophilic stippling mislabeled as Howell-Jolly bodies; multiple Howell-Jolly bodies crowding every cell; blast cells; H&E tissue section.
+- **Real-image fallback:** ASH Image Bank "sickle cells peripheral smear"; PathologyOutlines "sickle cell disease smear Howell-Jolly"; Wikimedia Commons "sickle cell anemia blood smear".
+
+### s1-0182 - Normal pressure hydrocephalus  (Step 1 - Behavioral Health & Nervous System)
+- **Case context:** 73-year-old man with the classic triad of a shuffling wide-based gait, urinary incontinence, and cognitive decline that improves after a large-volume lumbar puncture; the image is an axial head CT showing ventricular enlargement out of proportion to cortical atrophy.
+- **Modality:** Noncontrast head CT, axial slice, brain window (DICOM grayscale).
+- **Prompt:** Hyperrealistic axial NONCONTRAST head CT image in diagnostic grayscale, brain window, radiologically accurate and symmetric anatomy with realistic CT noise and gray-white differentiation. Depict NORMAL PRESSURE HYDROCEPHALUS: SYMMETRIC ENLARGEMENT of the lateral ventricles (dilated frontal and temporal horns and bodies) with ballooning of the third ventricle, DISPROPORTIONATE to any cortical atrophy - the cortical sulci are effaced or only mildly prominent rather than widened, so the ventricular dilation is out of proportion to sulcal size. There is no periventricular hemorrhage, no mass, and no midline shift; the fourth ventricle and sulci at the vertex look relatively crowded. Skull and orbits correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Symmetric enlargement of lateral (and third) ventricles
+  - Ventricular dilation out of proportion to sulcal widening (effaced/normal sulci, not diffuse atrophy)
+  - No hemorrhage, mass, or midline shift; symmetric anatomy
+  - Correct axial brain-window CT appearance
+- **Avoid (negative prompt):** diffuse sulcal widening/ex-vacuo dilation matching the ventricles (generalized atrophy); a single obstructing mass or trapped ventricle; intraventricular or parenchymal hemorrhage; asymmetric or duplicated ventricles; periventricular bright edema as the dominant finding; MRI appearance; bone-window only.
+- **Real-image fallback:** Radiopaedia - search "normal pressure hydrocephalus CT ventriculomegaly"; Wikimedia Commons "normal pressure hydrocephalus CT".
+
+### s1-0184 - Ankylosing spondylitis  (Step 1 - Musculoskeletal / Skin)
+- **Case context:** 25-year-old man with more than six months of inflammatory back pain (worse in the morning, better with exercise), reduced chest expansion, and a prior painful red eye (uveitis); the image is an AP pelvis radiograph showing bilateral sacroiliac joint fusion.
+- **Modality:** Anteroposterior (AP) pelvis radiograph, grayscale DICOM-like.
+- **Prompt:** Photorealistic ANTEROPOSTERIOR pelvis radiograph of a young adult man, grayscale with DICOM-like diagnostic dynamic range, realistic bone trabecular texture and correct pelvic anatomy. Show advanced BILATERAL, SYMMETRIC SACROILIITIS of ankylosing spondylitis: both sacroiliac joints demonstrate irregular erosion and reactive subchondral SCLEROSIS progressing to near-complete BONY FUSION (ankylosis), so the normal SI joint spaces are blurred and obliterated bilaterally. The lower lumbar vertebral corners appear squared, and thin vertical bridging SYNDESMOPHYTES begin to ossify the outer annulus, hinting at an early bamboo-spine appearance. Hips and pubic symphysis are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Bilateral, symmetric sacroiliac joint erosion, sclerosis, and fusion (loss of SI joint space)
+  - Squared vertebral bodies and early thin vertical syndesmophytes
+  - Correct symmetric AP pelvic anatomy
+  - Diagnostic radiographic grayscale
+- **Avoid (negative prompt):** unilateral sacroiliitis (infection/early psoriatic-reactive); a normal open SI joint space; bulky asymmetric non-marginal osteophytes (psoriatic/reactive); coarse osteoarthritic hip changes as the main finding; fracture line; sacral chordoma/mass; lateral spine-only view when AP pelvis requested.
+- **Real-image fallback:** Radiopaedia - search "ankylosing spondylitis sacroiliitis fusion pelvis radiograph"; Wikimedia Commons "ankylosing spondylitis sacroiliac joint fusion".
+
+### s1-0185 - Vitamin D deficiency rickets  (Step 1 - Musculoskeletal / Skin)
+- **Case context:** 14-month-old exclusively breastfed infant with little sun exposure, bowed legs, wrist and costochondral swelling, a soft skull, and low calcium/phosphate with high alkaline phosphatase and PTH; the image is a wrist radiograph showing cupped and frayed metaphyses.
+- **Modality:** Anteroposterior wrist radiograph of an infant, grayscale DICOM-like.
+- **Prompt:** Photorealistic ANTEROPOSTERIOR radiograph of an infant's wrist and distal forearm, grayscale with DICOM-like diagnostic dynamic range, realistic immature bone texture and correct pediatric anatomy with open growth plates. Show the changes of RICKETS at the distal radius and ulna: the metaphyses are WIDENED, CUPPED (concave), and FRAYED with indistinct, irregular metaphyseal margins; the physis (growth plate) is WIDENED and lucent; there is generalized OSTEOPENIA with thin cortices and coarse trabeculae, and slight bowing/splaying of the metaphyseal ends. The unossified epiphyses and soft-tissue outline are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Cupped, frayed, widened distal radial and ulnar metaphyses
+  - Widened lucent growth plate (physis)
+  - Generalized osteopenia with thinned cortices
+  - Correct infant wrist anatomy with open physes
+- **Avoid (negative prompt):** a normal sharp metaphyseal margin; a healed dense sclerotic metaphyseal band; a discrete transverse fracture as the main finding; adult fused wrist; corner/bucket-handle metaphyseal fractures of abuse as the primary feature; dense sclerotic bone (osteopetrosis); soft-tissue-only image.
+- **Real-image fallback:** Radiopaedia - search "rickets wrist radiograph cupping fraying metaphysis"; Wikimedia Commons "rickets radiograph wrist".
+
+### s1-0186 - Infective endocarditis  (Step 1 - Cardiovascular)
+- **Case context:** 32-year-old man who injects drugs with fever, a new tricuspid-region holosystolic murmur that increases with inspiration, Osler nodes, and Janeway lesions; the image is a transthoracic echocardiogram showing a mobile vegetation on the tricuspid valve.
+- **Modality:** Transthoracic echocardiogram (2D grayscale, four-chamber/right-heart view).
+- **Prompt:** Photorealistic transthoracic ECHOCARDIOGRAM still frame, grayscale sector (fan-shaped) 2D ultrasound with authentic fine speckle texture and DICOM-like appearance, apical four-chamber orientation showing the right and left heart chambers with correct cardiac anatomy. Focus on the TRICUSPID VALVE between the right atrium and right ventricle: an irregular, shaggy, echogenic, mobile VEGETATION is attached to the atrial aspect of a tricuspid leaflet, prolapsing/oscillating across the valve plane into the right atrium during the cardiac cycle. The right-heart chambers are normal-to-mildly dilated; myocardium and other valves appear normal for contrast. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Echogenic irregular vegetation attached to a tricuspid valve leaflet
+  - Mass appears mobile/oscillating and located on a valve (not myocardium)
+  - Correct cardiac-chamber orientation with the vegetation on the right-sided valve
+  - Authentic grayscale 2D echo texture
+- **Avoid (negative prompt):** a smooth rounded intracavitary myxoma on a stalk in the left atrium; a bright discrete papillary muscle or chordae mistaken for vegetation; heavy valvular calcification as the finding; a color-Doppler overlay as the main image; pericardial effusion as the dominant feature; CT/MRI cross-section appearance; calipers/measurement crosses.
+- **Real-image fallback:** Radiopaedia / The POCUS Atlas - search "infective endocarditis tricuspid valve vegetation echocardiogram"; Wikimedia Commons "endocarditis vegetation echocardiography".
+
+### s1-0187 - Third-degree (complete) atrioventricular block  (Step 1 - Cardiovascular)  [ECG]
+- **WARNING:** AI image generators render ECG tracings as physiologically meaningless gibberish and cannot reliably draw dissociated P and QRS rates. The defining AV dissociation of complete heart block is exactly what AI gets wrong. Strongly recommend a REAL de-identified complete-heart-block ECG (e.g., LITFL) or the app's own accurate vector-drawn tracing as the PRIMARY asset; use any AI output only as a placeholder and QA every complex against the criteria below.
+- **Case context:** 80-year-old woman with fatigue and near-syncope, a slow regular pulse around 38/min that does not rise with exertion and no nodal blocking drugs; the tracing must show regular P waves near 90/min and regular QRS complexes near 38/min that are completely dissociated.
+- **Modality:** 12-lead ECG or rhythm strip on standard red/pink grid.
+- **Prompt:** Photorealistic clinical ECG rhythm strip on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines, clean black waveform trace. Depict THIRD-DEGREE (complete) AV BLOCK: two entirely INDEPENDENT rhythms with no relationship - regular, upright P WAVES marching out at a faster ATRIAL rate around 90/min, and a separate, slower, REGULAR set of QRS complexes at a ventricular escape rate around 38/min, with the P waves bearing NO consistent PR relationship to the QRS (P waves appear before, buried within, and after the QRS complexes at continually varying positions); the escape QRS complexes are regular and broad. The two rates are clearly dissociated, with more P waves than QRS complexes. Physiologically consistent, evenly spaced within each rhythm. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):** Regular P waves at a faster rate (~90/min); regular QRS at a slower escape rate (~38/min); NO consistent PR relationship (AV dissociation); more P waves than QRS complexes.
+- **Avoid (negative prompt):** consistent fixed PR before every QRS (normal conduction / 1:1); progressively lengthening PR then a dropped beat (Wenckebach); an irregularly irregular rhythm with no P waves (AF); random gibberish waveforms; a rapid rate; wrong grid color; annotations.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "complete heart block third degree AV block ECG"; Wikimedia Commons "third degree AV block ECG". Prefer the app vector tracing.
+
+### s1-0188 - Pneumococcal lobar pneumonia  (Step 1 - Respiratory & Renal/Urinary)
+- **Case context:** 64-year-old man with abrupt high fever, rigors, rust-colored sputum, and pleuritic pain, with dullness, increased fremitus, and bronchial breath sounds over the right lower lung and lancet-shaped gram-positive diplococci on Gram stain; the image is a PA chest radiograph showing right-lower-lobe consolidation with air bronchograms.
+- **Modality:** Frontal (PA) chest radiograph, grayscale DICOM-like.
+- **Prompt:** Photorealistic frontal PA chest radiograph of an adult, grayscale with high dynamic range and DICOM-like diagnostic quality, anatomically correct thorax with sharp bony detail. Show LOBAR PNEUMONIA of the RIGHT LOWER LOBE: a dense, homogeneous water-density (white) CONSOLIDATION confined to the right lower lobe and respecting the major/minor fissure boundary, containing branching lucent AIR BRONCHOGRAMS coursing through the opacity; the right heart border and hemidiaphragm silhouette may be partly obscured at the affected margin. The LEFT lung is clear for contrast, the costophrenic angles are otherwise sharp, and the heart size is normal with no gross effusion. Correct ribs, clavicles, and mediastinal contours. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Dense homogeneous consolidation localized to one lobe (right lower lobe)
+  - Air bronchograms within the opacity
+  - Lobar/fissural boundary, clear contralateral lung, normal heart size
+  - Frontal projection, correct thoracic anatomy
+- **Avoid (negative prompt):** diffuse bilateral patchy or interstitial infiltrates (atypical/viral); bilateral perihilar bat-wing edema with cardiomegaly (CHF); large pleural effusion or complete white-out as the dominant finding; a rounded cavitary mass; symmetric bilateral hilar adenopathy (sarcoid); lobar collapse with volume loss and shift; lateral view when frontal requested.
+- **Real-image fallback:** Radiopaedia - search "lobar pneumonia right lower lobe consolidation air bronchogram chest x-ray"; Wikimedia Commons "lobar pneumonia chest radiograph".
+
+### s1-0195 - Amyloidosis  (Step 1 - Multisystem)
+- **Case context:** 63-year-old man with nephrotic-range proteinuria, macroglossia, periorbital purpura, waxy skin, and thick-walled ventricles with discordantly low ECG voltage, plus a serum monoclonal light chain (AL amyloidosis); the image is a renal biopsy stained with Congo red showing apple-green birefringence under polarized light.
+- **Modality:** Congo red-stained renal biopsy viewed under POLARIZED light (paired with brightfield salmon-pink appearance); medium-high power.
+- **Prompt:** Photorealistic photomicrograph of a Congo red-stained renal biopsy viewed under crossed POLARIZED light, dark background, high-magnification histopathology realism. Show amorphous, acellular AMYLOID deposits expanding the glomerular mesangium/capillary walls and vessel walls; under polarized light these Congo red-stained deposits display the pathognomonic APPLE-GREEN BIREFRINGENCE - a distinct yellow-green glow of the deposit against the dark field - conforming to the glomerular tuft and arteriolar walls. Adjacent tubules and preserved nuclei give tissue context. Correct renal architecture; the green birefringence is limited to the amyloid deposits, not the whole field. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Amorphous acellular deposits in glomeruli/vessel walls
+  - Apple-green birefringence of those deposits under polarized light (against a dark field)
+  - Birefringence confined to the amyloid, not diffuse background
+  - Recognizable renal (glomerular) architecture
+- **Avoid (negative prompt):** uniform red brightfield staining with no birefringence when polarized view is requested; nodular Kimmelstiel-Wilson diabetic glomerulosclerosis without birefringence; whole-field green fluorescence; immunofluorescence apple-green FITC look mislabeled as Congo red; crescents/proliferative glomerulonephritis as the main finding; H&E-only image; liver/cardiac tissue when renal specified.
+- **Real-image fallback:** PathologyOutlines - search "amyloidosis Congo red apple-green birefringence kidney"; Wikimedia Commons "amyloid Congo red polarized apple green".
+
+### s2ck-0051 - Community-acquired pneumonia (outpatient)  (Step 2 CK - Internal Medicine)
+- **Case context:** Previously healthy 45-year-old man with 3 days of productive rust-colored sputum, fever, and pleuritic right-sided pain, with focal right-lower-lobe crackles and bronchial breath sounds and a CURB-65 of 0 (outpatient-eligible); the image is a chest radiograph showing right-lower-lobe consolidation with air bronchograms.
+- **Modality:** Frontal (PA) chest radiograph, grayscale DICOM-like.
+- **Prompt:** Photorealistic frontal PA chest radiograph of an adult man, grayscale with high dynamic range and DICOM-like diagnostic quality, anatomically correct thorax with sharp bony detail. Show a focal RIGHT LOWER LOBE PNEUMONIA: a dense, homogeneous water-density (white) CONSOLIDATION in the right lower lobe with lucent branching AIR BRONCHOGRAMS running through it, respecting the fissural boundary; the adjacent right hemidiaphragm/heart border silhouette is partly obscured at the affected edge. The remainder of the right lung and the entire LEFT lung are clear, costophrenic angles are sharp, the heart size is normal, and there is no significant effusion. Correct ribs, clavicles, and mediastinal contours. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Focal homogeneous consolidation in the right lower lobe
+  - Air bronchograms within the opacity
+  - Clear remaining lung, sharp costophrenic angles, normal heart size, no large effusion
+  - Frontal projection, correct thoracic anatomy
+- **Avoid (negative prompt):** diffuse bilateral interstitial or patchy infiltrates; bat-wing pulmonary edema with cardiomegaly; multilobar white-out or large effusion (that would not be CURB-65 0 outpatient); a cavitary mass; bilateral hilar adenopathy; lobar collapse with shift; lateral view when frontal requested.
+- **Real-image fallback:** Radiopaedia - search "right lower lobe pneumonia consolidation air bronchogram chest radiograph"; Wikimedia Commons "community acquired pneumonia chest x-ray".
+
+### s2ck-0052 - Non-ST-elevation acute coronary syndrome  (Step 2 CK - Internal Medicine)  [ECG]
+- **WARNING:** AI image generators render ECG tracings as physiologically meaningless gibberish and routinely draw wrong ST-segment and T-wave morphology. The regional horizontal ST depression with T inversions of NSTE-ACS is exactly what AI gets wrong. Strongly recommend a REAL de-identified NSTE-ACS 12-lead ECG (e.g., LITFL) or the app's own accurate vector-drawn tracing as the PRIMARY asset; use any AI output only as a placeholder and QA every complex against the criteria below.
+- **Case context:** 62-year-old man with diabetes and hypertension, 40 minutes of rest substernal pressure radiating to the left arm, diaphoretic, with an elevated high-sensitivity troponin; the tracing must show horizontal ST-segment depression and T-wave inversions in leads V4-V6 WITHOUT ST-segment elevation.
+- **Modality:** 12-lead ECG on standard red/pink grid.
+- **Prompt:** Photorealistic clinical 12-lead ECG printout on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines, clean black waveform trace, standard 3x4 lead layout plus a rhythm strip, sinus rhythm at a normal rate with upright P waves and narrow QRS complexes. Depict NON-ST-ELEVATION ACUTE CORONARY SYNDROME: flat, HORIZONTAL ST-SEGMENT DEPRESSION of roughly 1-2 mm together with symmetric T-WAVE INVERSIONS in the lateral precordial leads V4, V5, and V6; there is NO ST-SEGMENT ELEVATION in any lead and no pathologic Q waves. The remaining leads show no ST elevation. Physiologically consistent, evenly spaced beats. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):** Horizontal ST depression and T-wave inversions localized to V4-V6; NO ST elevation anywhere; sinus rhythm with narrow QRS; no pathologic Q waves.
+- **Avoid (negative prompt):** convex ST elevation of a STEMI in any territory; diffuse concave ST elevation with PR depression (pericarditis); tall peaked T waves (hyperkalemia); an irregular rhythm; random gibberish waveforms; impossible intervals; wrong grid color; annotations or lead labels.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "NSTEMI ST depression T wave inversion 12-lead ECG"; Wikimedia Commons "ST depression ECG". Prefer the app vector tracing.
+
+### s2ck-0053 - Acute decompensated heart failure  (Step 2 CK - Internal Medicine)
+- **Case context:** 70-year-old woman with HFrEF and 2 days of worsening dyspnea, orthopnea, and PND after dietary indiscretion, with jugular venous distension, bibasilar crackles, and edema; the image is a chest radiograph showing cardiomegaly, cephalization, Kerley B lines, and bilateral interstitial edema.
+- **Modality:** Frontal (AP/PA) chest radiograph, grayscale DICOM-like.
+- **Prompt:** Photorealistic frontal chest radiograph of an older adult woman, grayscale with high dynamic range and DICOM-like diagnostic quality, anatomically correct thorax. Show ACUTE DECOMPENSATED HEART FAILURE with pulmonary edema: an ENLARGED cardiac silhouette (CARDIOMEGALY, cardiothoracic ratio well over 50%); upper-zone vascular redistribution (CEPHALIZATION) with the upper-lobe pulmonary vessels dilated and equal to or larger than the lower-lobe vessels; hazy perihilar bat-wing INTERSTITIAL EDEMA; short horizontal KERLEY B LINES at the lung bases reaching the pleural surface; peribronchial cuffing; and small blunting of the costophrenic angles from early pleural effusions. Correct ribs, clavicles, and mediastinal contours. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Enlarged cardiac silhouette (cardiomegaly)
+  - Cephalization / upper-lobe vascular redistribution
+  - Kerley B lines and hazy interstitial/perihilar edema
+  - Optional small pleural effusions with blunted costophrenic angles; correct thoracic anatomy
+- **Avoid (negative prompt):** a normal-sized heart with a single focal lobar consolidation and air bronchograms (pneumonia); a large unilateral effusion with meniscus as the only finding; a lucent hemithorax (pneumothorax); symmetric bilateral hilar adenopathy (sarcoid); boot-shaped heart; completely clear lungs; lateral view when frontal requested.
+- **Real-image fallback:** Radiopaedia - search "cardiogenic pulmonary edema chest x-ray cephalization Kerley B lines cardiomegaly"; Wikimedia Commons "pulmonary edema chest radiograph".
+
+### s2ck-0060 - Perforated peptic ulcer  (Step 2 CK - Surgery)
+- **Case context:** 63-year-old man with peptic ulcer disease and chronic NSAID use, sudden severe diffuse abdominal pain, now lying still with a rigid board-like abdomen, rebound, and absent bowel sounds; the image is an upright chest radiograph showing free air under both hemidiaphragms.
+- **Modality:** Upright (erect) frontal chest radiograph, grayscale DICOM-like.
+- **Prompt:** Photorealistic UPRIGHT (erect) frontal chest radiograph of an adult, grayscale with DICOM-like diagnostic dynamic range, anatomically correct thorax and upper abdomen. Show PNEUMOPERITONEUM from a perforated viscus: thin crescents of lucent FREE AIR sitting UNDER BOTH HEMIDIAPHRAGMS, outlining the smooth superior surface of the liver on the right and the gastric/splenic region on the left, with the thin diaphragmatic muscle visible as a soft-tissue line separating lung above from free air below. The lung fields themselves are clear without consolidation or effusion, and the heart size is normal. Correct ribs, clavicles, and diaphragmatic contours. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Lucent free air under one or both hemidiaphragms (subdiaphragmatic crescent)
+  - Diaphragm seen as a thin line with air below and lung above
+  - Clear lungs without consolidation; upright frontal projection
+  - Correct thoracic/upper-abdominal anatomy
+- **Avoid (negative prompt):** normal gas-filled bowel below the diaphragm mistaken for free air (Chilaiditi colonic haustra interposition); a lobar consolidation or pleural effusion as the finding; multiple air-fluid levels of bowel obstruction as the main image; a supine film with no visible subdiaphragmatic crescent when upright requested; pneumothorax lucency in the pleural space; annotations/arrows.
+- **Real-image fallback:** Radiopaedia - search "pneumoperitoneum free air under diaphragm erect chest x-ray"; Wikimedia Commons "free air under diaphragm perforation radiograph".
+
+### s2ck-0064 - Croup (laryngotracheobronchitis)  (Step 2 CK - Pediatrics)
+- **Case context:** Well-appearing 2-year-old boy with 2 days of a barky seal-like cough, hoarseness, and inspiratory stridor at rest after a coryzal prodrome, drinking and alert; the image is a frontal neck radiograph showing subglottic narrowing (steeple sign).
+- **Modality:** Frontal (AP) soft-tissue neck radiograph, grayscale DICOM-like.
+- **Prompt:** Photorealistic FRONTAL (AP) soft-tissue neck radiograph of a young child, grayscale with DICOM-like diagnostic dynamic range, realistic airway-column and soft-tissue densities, anatomically correct pediatric cervical anatomy. Show the STEEPLE SIGN of croup: symmetric tapered SUBGLOTTIC NARROWING of the tracheal air column just below the vocal cords, so the normally shouldered subglottic airway comes to a smooth pointed apex resembling a church steeple or inverted V/pencil-tip. The lateral tracheal walls converge symmetrically; there is no thumb-shaped epiglottic mass and no discrete radiopaque foreign body. Cervical vertebrae, mandible, and shoulders correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Symmetric tapered subglottic narrowing of the tracheal air column (steeple/pencil-tip)
+  - Loss of the normal subglottic shoulders
+  - Frontal (AP) neck projection, correct pediatric anatomy
+  - Air column visible for contrast
+- **Avoid (negative prompt):** a rounded thumb-shaped enlarged epiglottis (epiglottitis, that is a LATERAL-view finding); a widened prevertebral soft-tissue stripe (retropharyngeal abscess); a radiopaque aspirated foreign body; a lateral view when frontal requested; asymmetric/eccentric tracheal deviation as the main finding; adult anatomy; annotations/arrows.
+- **Real-image fallback:** Radiopaedia - search "croup steeple sign AP neck radiograph subglottic narrowing"; Wikimedia Commons "steeple sign croup".
+
+### s2ck-0067 - Foreign body aspiration  (Step 2 CK - Pediatrics)
+- **Case context:** Previously healthy 2-year-old girl with sudden coughing and choking while eating peanuts, then persistent cough with unilateral right-sided wheeze and diminished breath sounds; the image is an expiratory chest radiograph showing right-lung hyperinflation and air trapping with mediastinal shift away from the affected side.
+- **Modality:** Frontal EXPIRATORY chest radiograph of a young child, grayscale DICOM-like.
+- **Prompt:** Photorealistic frontal EXPIRATORY chest radiograph of a young child, grayscale with DICOM-like diagnostic dynamic range, anatomically correct pediatric thorax. Depict a ball-valve bronchial FOREIGN BODY causing obstructive AIR TRAPPING: on this expiratory film the RIGHT lung remains abnormally HYPERINFLATED and LUCENT (dark, hyperlucent) with a flattened right hemidiaphragm and splayed ribs because trapped air cannot escape, while the normal LEFT lung deflates and looks relatively more opaque; the MEDIASTINUM and heart are SHIFTED AWAY from the hyperinflated right side (toward the left). No radiopaque object is necessarily visible (organic peanut is radiolucent). Correct pediatric ribs, clavicles, and mediastinal contours. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Unilateral right-lung hyperinflation/hyperlucency with air trapping on expiration
+  - Flattened ipsilateral hemidiaphragm; the affected lung fails to deflate
+  - Mediastinal/cardiac shift AWAY from the hyperinflated side
+  - Frontal pediatric projection, correct anatomy
+- **Avoid (negative prompt):** a dense lobar consolidation with air bronchograms (pneumonia); a collapsed lung with mediastinal shift TOWARD the side (atelectasis/total obstruction) as the intended finding; bilateral symmetric hyperinflation (asthma) without asymmetry; a large radiopaque metallic object dominating the film; a pneumothorax with a visible pleural edge and no lung markings; adult chest; annotations.
+- **Real-image fallback:** Radiopaedia - search "foreign body aspiration air trapping expiratory chest radiograph hyperinflation"; Wikimedia Commons "foreign body aspiration chest x-ray air trapping".
+
+### s2ck-0070 - Ovarian torsion  (Step 2 CK - Obstetrics & Gynecology)
+- **Case context:** 25-year-old woman with a known right ovarian cyst and sudden severe intermittent right lower quadrant pain with nausea/vomiting, a tender right adnexal mass, and a negative pregnancy test; the image is a transvaginal Doppler ultrasound showing an enlarged edematous right ovary with markedly reduced flow.
+- **Modality:** Transvaginal ultrasound with color/spectral Doppler (grayscale plus Doppler overlay), high-frequency endocavitary probe.
+- **Prompt:** Photorealistic TRANSVAGINAL ULTRASOUND image with COLOR DOPPLER, grayscale sector field with realistic fine speckle texture and a color-flow box, correct endocavitary probe geometry and depth gradient. Show OVARIAN TORSION: a markedly ENLARGED, rounded, EDEMATOUS ovary with a heterogeneous, hypoechoic swollen stroma and small peripherally displaced follicles arranged around the rim (the classic peripheralized-follicle "string of pearls"); an associated adnexal cyst is present. On color Doppler interrogation the enlarged ovary shows ABSENT-to-markedly-DIMINISHED internal venous and arterial FLOW (little or no color filling within the ovarian parenchyma) compared with adjacent perfused tissue. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Enlarged, edematous ovary with heterogeneous stroma
+  - Peripherally displaced follicles around the swollen ovary
+  - Absent or markedly reduced intraovarian color/spectral Doppler flow
+  - Authentic transvaginal grayscale + color Doppler appearance
+- **Avoid (negative prompt):** a normal-sized ovary with brisk, symmetric normal color Doppler flow filling the parenchyma; a simple thin-walled anechoic cyst as the only finding; a tubo-ovarian abscess with thick septations and internal debris as the intended diagnosis; an ectopic gestational sac (pregnancy test is negative); CT/MRI cross-section; calipers/measurement crosses dominating the image.
+- **Real-image fallback:** Radiopaedia / The POCUS Atlas - search "ovarian torsion transvaginal ultrasound enlarged ovary absent Doppler flow"; Wikimedia Commons "ovarian torsion ultrasound".
+
+### s2ck-0071 - Postmenopausal bleeding evaluation  (Step 2 CK - Obstetrics & Gynecology)
+- **Case context:** 58-year-old obese diabetic, hypertensive woman (menopause at 51, no hormone therapy) with 2 weeks of painless vaginal bleeding and an unremarkable pelvic exam; the image is a transvaginal ultrasound showing a thickened endometrial stripe of 12 mm.
+- **Modality:** Transvaginal ultrasound, sagittal midline uterus view (grayscale endocavitary probe).
+- **Prompt:** Photorealistic TRANSVAGINAL ULTRASOUND image, grayscale sector field with realistic fine speckle texture and correct endocavitary probe geometry, midline SAGITTAL view of the uterus with the cervix, myometrium, and endometrial cavity clearly displayed. Show a THICKENED ENDOMETRIAL STRIPE: the central endometrial echo complex is abnormally THICK (measuring roughly 12 mm across, well above the normal postmenopausal 4-5 mm threshold), appearing as a prominent hyperechoic band bordered by the hypoechoic myometrium, homogeneous-to-slightly heterogeneous, without a large discrete polyp mass or fibroid distorting it. The uterus is normal in overall contour; a thin endometrial fluid rim may be present. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Thickened endometrial stripe (clearly above the postmenopausal threshold, around 12 mm)
+  - Endometrium seen as a central echogenic band bordered by hypoechoic myometrium
+  - Sagittal uterine orientation, normal uterine contour
+  - Authentic transvaginal grayscale ultrasound appearance
+- **Avoid (negative prompt):** a thin (4-5 mm or less) normal postmenopausal stripe; a large exophytic fibroid or focal polyp as the dominant mass; a gravid uterus with a gestational sac; ovarian mass as the main image; color Doppler as the primary finding; CT/MRI cross-section; calipers/measurement crosses dominating the frame.
+- **Real-image fallback:** Radiopaedia - search "thickened endometrium transvaginal ultrasound postmenopausal"; Wikimedia Commons "endometrial thickness ultrasound".
+
+### s3-0048 - Acute ischemic stroke thrombolysis  (Step 3 - Emergency Medicine)
+- **Case context:** 62-year-old man 90 minutes after sudden right-sided weakness and difficulty speaking, BP 168/92, normal glucose, no recent surgery/bleeding/anticoagulant use; the image is a noncontrast head CT showing NO intracranial hemorrhage and NO large established infarct (thrombolysis-eligible).
+- **Modality:** Noncontrast head CT, axial slice, brain window (DICOM grayscale).
+- **Prompt:** Hyperrealistic axial NONCONTRAST head CT image in diagnostic grayscale, brain window, radiologically accurate and symmetric anatomy, realistic CT noise and gray-white differentiation. Depict an essentially NORMAL early scan that permits thrombolysis: NO hyperdense (bright white) blood in any compartment - no intraparenchymal, subarachnoid, subdural, or epidural hemorrhage; preserved, crisp GRAY-WHITE MATTER DIFFERENTIATION throughout both hemispheres with a normal cortical ribbon, insular ribbon, and basal ganglia margins; symmetric, normal-sized lateral ventricles and sulci with no effacement, no mass, and no midline shift; no dark wedge of established infarct and no hyperdense vessel sign. Skull and orbits correctly rendered. The scan looks reassuringly normal, consistent with hyperacute ischemia before CT changes appear. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - No hyperdense blood (no hemorrhage of any compartment)
+  - Preserved, symmetric gray-white differentiation; no wedge of hypodensity
+  - Normal symmetric ventricles and sulci, no midline shift or mass effect
+  - Correct, symmetric CT brain anatomy
+- **Avoid (negative prompt):** any bright white hyperdense hemorrhage; a dark wedge-shaped established infarct; loss of gray-white differentiation or an effaced insular ribbon; a hyperdense MCA sign; midline shift or herniation; ventricular asymmetry/duplication; contrast enhancement; MRI appearance; bone-window only.
+- **Real-image fallback:** Radiopaedia - search "normal noncontrast CT head" or "acute ischemic stroke normal early CT thrombolysis"; Wikimedia Commons "normal head CT axial".
+
+### s3-0050 - Acute cholecystitis  (Step 3 - Surgery)
+- **Case context:** 48-year-old woman with 8 hours of constant right upper quadrant pain after a fatty meal, fever, nausea, a positive Murphy sign, and leukocytosis; the image is a right upper quadrant ultrasound showing gallstones, a thickened gallbladder wall, and pericholecystic fluid.
+- **Modality:** Right upper quadrant abdominal ultrasound (grayscale, curvilinear probe), longitudinal gallbladder view.
+- **Prompt:** Photorealistic RIGHT UPPER QUADRANT ULTRASOUND image of the gallbladder, grayscale curvilinear sector field with realistic fine speckle texture and DICOM-like appearance, correct sonographic anatomy in a longitudinal view. Show ACUTE CHOLECYSTITIS: one or more echogenic GALLSTONES within the gallbladder lumen casting clean posterior ACOUSTIC SHADOWS; a diffusely THICKENED gallbladder WALL (over 3 mm, appearing as a striated or layered edematous wall); a rim of anechoic PERICHOLECYSTIC FLUID tracking around the gallbladder; and a distended gallbladder. Adjacent liver parenchyma provides context with realistic ultrasound gain gradient and depth shadowing. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Echogenic gallstone(s) with posterior acoustic shadowing
+  - Thickened gallbladder wall (striated/edematous, over 3 mm)
+  - Pericholecystic fluid rim; distended gallbladder
+  - Authentic grayscale RUQ ultrasound texture with adjacent liver
+- **Avoid (negative prompt):** a normal thin-walled gallbladder with no stones; a solid gallbladder-wall mass (carcinoma) as the intended finding; dilated intrahepatic/common bile ducts as the dominant feature (choledocholithiasis/obstruction) without wall changes; a polyp without shadowing mistaken for a stone; color Doppler as the main image; CT/MRI cross-section; calipers/measurement crosses dominating the frame.
+- **Real-image fallback:** Radiopaedia / The POCUS Atlas - search "acute cholecystitis ultrasound gallstones wall thickening pericholecystic fluid"; Wikimedia Commons "acute cholecystitis ultrasound".
