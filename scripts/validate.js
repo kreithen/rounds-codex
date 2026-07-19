@@ -126,6 +126,17 @@ arr.forEach((it, idx) => {
     errors.push(`${where}: why must have exactly 5 rationales (one per option)`);
   } else if (it.why.some((w) => typeof w !== 'string' || !w.trim())) {
     errors.push(`${where}: a why rationale is empty`);
+  } else if (Number.isInteger(it.answer) && it.answer >= 0 && it.answer <= 4) {
+    // integrity: only the keyed option's rationale should be marked "Correct"
+    it.why.forEach((w, wi) => {
+      const marked = /^correct\b/i.test(String(w).trim());
+      if (wi === it.answer && !marked) {
+        errors.push(`${where}: why[${letter(wi)}] should mark the keyed answer (start with "Correct")`);
+      }
+      if (wi !== it.answer && marked) {
+        errors.push(`${where}: why[${letter(wi)}] is marked "Correct" but ${letter(it.answer)} is the keyed answer`);
+      }
+    });
   }
   if (it.anchor) anchored++;
 });

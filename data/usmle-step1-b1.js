@@ -254,7 +254,7 @@ const USMLE_STEP1_B1 = [
     options: [
       "Hemidesmosomal proteins BP180 and BP230",
       "Tissue transglutaminase with IgA in dermal papillae",
-      "Epidermal transglutaminase triggered by a superantigen",
+      "Desmoglein 1 cleaved by staphylococcal exfoliative toxin",
       "Desmoglein 3 in desmosomes",
       "Nickel haptens producing a type IV reaction"
     ],
@@ -263,7 +263,7 @@ const USMLE_STEP1_B1 = [
     why: [
       "Anti-BP180/BP230 antibodies cause bullous pemphigoid, with tense subepidermal blisters, a linear pattern, and a negative Nikolsky sign.",
       "IgA against tissue transglutaminase in dermal papillae is dermatitis herpetiformis, with pruritic grouped vesicles linked to celiac disease.",
-      "Superantigen-mediated toxin cleavage of desmoglein 1 causes staphylococcal scalded skin syndrome without autoantibody deposition.",
+      "Staphylococcal exfoliative toxin cleaves desmoglein 1 in the superficial epidermis (scalded skin syndrome); this is toxin-mediated rather than autoantibody-mediated and spares mucosa.",
       "Correct: anti-desmoglein 3 antibodies dissolve desmosomes, producing suprabasal acantholysis and net-like intercellular IgG.",
       "A type IV reaction to nickel causes allergic contact dermatitis, not acantholytic blistering."
     ]
