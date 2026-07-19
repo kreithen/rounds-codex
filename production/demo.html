@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rounds Codex &mdash; USMLE Mode (Integration Demo)</title>
+<style>
+  /* Minimal host-page frame only. The widget ships its own scoped styles. */
+  html,body{margin:0;background:#f4f6f9;padding:0 16px 64px}
+  @media (prefers-color-scheme: dark){ html,body{background:#0f141a} }
+</style>
+</head>
+<body>
+  <!-- Mount point -->
+  <div id="usmle-root"></div>
+
+  <!-- 1) combined question bank (defines global USMLE_STEP1) -->
+  <script src="usmle-step1-data.js"></script>
+  <!-- 2) the self-contained engine (defines global RoundsCodexUSMLE) -->
+  <script src="usmle-mode.js"></script>
+  <!-- 3) mount -->
+  <script>
+    RoundsCodexUSMLE.mount('#usmle-root', USMLE_STEP1);
+  </script>
+</body>
+</html>
