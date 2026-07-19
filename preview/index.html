@@ -199,7 +199,7 @@
         </div>
         <div>
           <label class="fld">Exam</label>
-          <select id="exam"></select>
+          <div class="seg" id="exam"></div>
         </div>
         <div class="grid two">
           <div>
@@ -216,18 +216,9 @@
             </select>
           </div>
         </div>
-        <div class="grid two">
-          <div>
-            <label class="fld">Number of questions</label>
-            <select id="count"></select>
-          </div>
-          <div>
-            <label class="fld">Order</label>
-            <select id="order">
-              <option value="shuffle">Shuffle (avoids repeats)</option>
-              <option value="sequential">Sequential (by ID)</option>
-            </select>
-          </div>
+        <div>
+          <label class="fld">Number of questions</label>
+          <select id="count"></select>
         </div>
         <div class="actions" style="margin-top:4px">
           <button class="btn-submit" id="start" style="flex:none;padding:14px 26px">Start test</button>
@@ -425,11 +416,12 @@
     var sysSel=$("#system");sysSel.innerHTML='<option value="">All systems (blueprint mix)</option>';
     Object.keys(systems).sort().forEach(function(s){var o=document.createElement("option");o.value=s;o.textContent=s+" ("+systems[s]+")";sysSel.appendChild(o);});
   }
-  function setExam(ex){if(!BANKS[ex]||!BANKS[ex].length)return;currentExam=ex;BANK=BANKS[ex];populateSystems();$("#difficulty").value="";refreshPool();refreshResumeBanner();}
+  function syncExamButtons(){[].forEach.call($("#exam").children,function(b){b.classList.toggle("active",b.getAttribute("data-v")===currentExam)});}
+  function setExam(ex){if(!BANKS[ex]||!BANKS[ex].length)return;currentExam=ex;BANK=BANKS[ex];syncExamButtons();populateSystems();$("#difficulty").value="";refreshPool();refreshResumeBanner();}
   function initSetup(){
     var examSel=$("#exam");
-    EXAM_ORDER.forEach(function(ex){if(BANKS[ex]&&BANKS[ex].length){var o=document.createElement("option");o.value=ex;o.textContent=EXAM_LABEL(ex)+" ("+BANKS[ex].length+")";examSel.appendChild(o);}});
-    examSel.value=currentExam;examSel.addEventListener("change",function(){setExam(this.value)});
+    EXAM_ORDER.forEach(function(ex){if(BANKS[ex]&&BANKS[ex].length){var b=document.createElement("button");b.setAttribute("data-v",ex);b.innerHTML=EXAM_LABEL(ex)+'<span class="desc">'+BANKS[ex].length+" items</span>";examSel.appendChild(b);}});
+    examSel.addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;setExam(b.getAttribute("data-v"));});
     $("#mode").addEventListener("click",function(e){var b=e.target.closest("button");if(!b)return;cfg.mode=b.getAttribute("data-v");[].forEach.call(this.children,function(c){c.classList.toggle("active",c===b)});});
     ["#system","#difficulty"].forEach(function(id){$(id).addEventListener("change",refreshPool)});
     setExam(currentExam);
@@ -449,8 +441,7 @@
 
   function startSet(){
     var pool=filteredPool(),ids;
-    if($("#order").value==="sequential"){ids=pool.slice().sort(function(a,b){return a.id<b.id?-1:1}).map(function(q){return q.id;});}
-    else{var seen=loadSeen(currentExam),unseen=[],rest=[];shuffle(pool).forEach(function(q){(seen[q.id]?rest:unseen).push(q.id);});ids=unseen.concat(rest);}
+    var seen=loadSeen(currentExam),unseen=[],rest=[];shuffle(pool).forEach(function(q){(seen[q.id]?rest:unseen).push(q.id);});ids=unseen.concat(rest);
     var n=Math.min(parseInt($("#count").value,10)||ids.length,ids.length);
     quiz={exam:currentExam,mode:cfg.mode,order:ids.slice(0,n),ans:{},passed:{},pos:0,elapsed:0,redo:false,redoQueue:[],scope:scopeLabel()};
     beginQuiz();
