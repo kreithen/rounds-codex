@@ -225,7 +225,7 @@ const USMLE_STEP2CK_B3 = [
     topic: "Myxedema coma",
     difficulty: "hard",
     anchor: "lab",
-    vignette: "An 74-year-old woman with hypothyroidism who stopped her levothyroxine is found lethargic and minimally responsive during a cold winter week. Temperature is 34.4 C, heart rate is 48/min, and blood pressure is 88/54 mm Hg. She has periorbital puffiness, dry coarse skin, and delayed relaxation of the deep tendon reflexes.\n\n| Test | Value | Reference |\n|---|---|---|\n| TSH | 82 mU/L | 0.4-4.0 |\n| Free T4 | 0.2 ng/dL | 0.8-1.8 |\n| Sodium | 126 mEq/L | 135-145 |",
+    vignette: "A 74-year-old woman with hypothyroidism who stopped her levothyroxine is found lethargic and minimally responsive during a cold winter week. Temperature is 34.4 C, heart rate is 48/min, and blood pressure is 88/54 mm Hg. She has periorbital puffiness, dry coarse skin, and delayed relaxation of the deep tendon reflexes.\n\n| Test | Value | Reference |\n|---|---|---|\n| TSH | 82 mU/L | 0.4-4.0 |\n| Free T4 | 0.2 ng/dL | 0.8-1.8 |\n| Sodium | 126 mEq/L | 135-145 |",
     lead: "Which of the following is the most appropriate next step in management?",
     options: [
       "Oral levothyroxine with discharge home",
