@@ -1,6 +1,6 @@
 # Rounds Codex — USMLE Mode: hyperrealistic image prompt sheet
 
-160 AI image-generation prompts (one per illustrated question), each tuned to its
+231 AI image-generation prompts (one per illustrated question), each tuned to its
 vignette, for producing hyperrealistic, medically-accurate images (Higgsfield or
 similar) to replace the current schematic SVGs.
 
@@ -1793,3 +1793,866 @@ questions are created:
   - Authentic erect frontal chest radiograph appearance
 - **Avoid (negative prompt):** a normal gastric air bubble contiguous with the stomach on the left only (mistaken pseudo-pneumoperitoneum); colonic interposition (Chilaiditi) as the intended finding; a basal pneumonia or pleural effusion; a lobar consolidation; a supine film with no visible free-air crescent; a subdiaphragmatic abscess with an air-fluid level; annotations or tubes.
 - **Real-image fallback:** Radiopaedia - search "pneumoperitoneum free air under diaphragm erect chest radiograph perforation"; Wikimedia Commons "pneumoperitoneum chest x-ray free air under diaphragm".
+
+<!-- Added with Step 2 CK Batches 8-13, Step 3 Day 1 Batches 7-10, Step 3 Day 2 ACM Batches 5-8 -->
+
+### s2ck-0178 - Idiopathic pulmonary fibrosis  (Step 2 CK - Internal Medicine)
+- **Case context:** 65-year-old lifelong nonsmoker with one year of progressive exertional dyspnea, dry cough, fine dry bibasilar end-inspiratory crackles, and digital clubbing, no bird/mold/dust exposure and negative autoimmune serologies; the image is a high-resolution chest CT showing peripheral, subpleural, basal-predominant reticulation with honeycombing and traction bronchiectasis (usual interstitial pneumonia pattern).
+- **Modality:** High-resolution CT (HRCT) of the chest, axial slice at the lung bases, lung window (DICOM grayscale).
+- **Prompt:** Hyperrealistic axial HIGH-RESOLUTION CT of the chest in diagnostic grayscale, lung window, anatomically accurate thoracic anatomy with sharp bronchovascular markings and realistic CT noise. Depict a USUAL INTERSTITIAL PNEUMONIA pattern of IDIOPATHIC PULMONARY FIBROSIS: PERIPHERAL, SUBPLEURAL, BASAL-PREDOMINANT reticulation with clustered HONEYCOMBING - stacked subpleural cystic air spaces with well-defined walls - and TRACTION BRONCHIECTASIS (irregularly dilated, distorted airways coursing through fibrotic lung). The abnormality is greatest in the posterior subpleural lung bases and spares the central and upper lung, producing an asymmetric peripheral gradient. Heart, mediastinum, and chest wall correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Peripheral, subpleural, basal-predominant reticulation
+  - Honeycombing (clustered subpleural cysts with defined walls)
+  - Traction bronchiectasis within fibrotic lung
+  - Relative sparing of central and upper lung; authentic lung-window HRCT
+- **Avoid (negative prompt):** upper-lobe or peribronchovascular predominance; diffuse ground-glass with mosaic air-trapping and centrilobular nodules (hypersensitivity pneumonitis) as the intended finding; bilateral hilar nodal masses (sarcoidosis); patchy consolidations; a soft-tissue window; a pleural effusion filling the bases; annotations or measurement calipers.
+- **Real-image fallback:** Radiopaedia - search "usual interstitial pneumonia idiopathic pulmonary fibrosis HRCT honeycombing"; Wikimedia Commons "UIP pattern HRCT".
+
+### s2ck-0179 - Wolff-Parkinson-White syndrome  (Step 2 CK - Internal Medicine)  [ECG]
+- **WARNING:** AI image generators render ECG tracings as physiologically meaningless gibberish and cannot reliably draw the short PR interval with a slurred delta-wave QRS upstroke of pre-excitation. Strongly recommend a REAL de-identified WPW 12-lead ECG (e.g., LITFL) or the app's own accurate vector-drawn tracing as the PRIMARY asset; use any AI output only as a placeholder and QA every complex against the criteria below.
+- **Case context:** 22-year-old man with recurrent abrupt-onset self-terminating palpitations and one near-syncope, asymptomatic with a normal exam in clinic; the tracing must show sinus rhythm with a short PR interval and a slurred initial QRS upstroke (delta wave) of ventricular pre-excitation.
+- **Modality:** 12-lead ECG on standard red/pink grid.
+- **Prompt:** Photorealistic clinical 12-lead ECG printout on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines, clean black waveform trace, standard 3x4 lead layout plus a rhythm strip. Depict WOLFF-PARKINSON-WHITE ventricular PRE-EXCITATION during SINUS rhythm: a SHORT PR INTERVAL (well under one large box) with each QRS beginning with a SLURRED, gently sloping initial upstroke - the DELTA WAVE - that blurs the normally sharp Q/R onset and produces a slightly WIDENED QRS. Secondary ST-segment and T-wave changes point opposite the delta/QRS. Upright P waves precede every beat at a regular rate; morphology consistent across leads. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Short PR interval (pre-excited)
+  - Slurred delta-wave upstroke at the start of the QRS
+  - Mildly widened QRS with secondary ST/T changes
+  - Sinus rhythm with a P before every QRS; standard pink ECG grid
+- **Avoid (negative prompt):** a normal sharp narrow QRS with a normal PR interval; a wide bizarre monomorphic tachycardia as the intended finding; an irregularly irregular rhythm; ST-segment elevation of infarction; random gibberish waveforms; wrong grid color; annotations or lead labels.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "Wolff-Parkinson-White WPW ECG delta wave short PR"; Wikimedia Commons "WPW ECG delta wave". Prefer the app vector tracing.
+
+### s2ck-0185 - Zenker diverticulum  (Step 2 CK - Surgery)
+- **Case context:** 72-year-old man with months of difficulty initiating swallows, regurgitation of undigested food hours after eating, halitosis, a gurgling neck sensation, 3 kg weight loss, and nocturnal aspiration; the image is a barium esophagram showing a posterior outpouching at the pharyngoesophageal junction that retains contrast.
+- **Modality:** Barium esophagram (contrast swallow), lateral projection, fluoroscopic grayscale.
+- **Prompt:** Photorealistic lateral BARIUM ESOPHAGRAM (contrast swallow) in fluoroscopic grayscale with anatomically accurate pharynx, cervical spine, and cervical esophagus, barium column appearing dense white. Depict a ZENKER DIVERTICULUM: at the PHARYNGOESOPHAGEAL JUNCTION (just above the upper esophageal sphincter, at the level of the cricopharyngeus) a POSTERIOR out-pouching (false diverticulum) projects backward and downward and RETAINS a pool of barium, separate from and overhanging the cervical esophagus below. A horizontal cricopharyngeal bar may indent the barium column. The distal esophagus is normal caliber. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Posterior contrast-filled outpouching at the pharyngoesophageal junction
+  - Retained barium pooling within the sac
+  - Location above the upper esophageal sphincter (cervical level)
+  - Authentic lateral barium esophagram appearance
+- **Avoid (negative prompt):** a smooth bird-beak tapering at the gastroesophageal junction (achalasia) as the intended finding; a distal epiphrenic diverticulum near the diaphragm; a corkscrew esophagus (spasm); a lower-esophageal Schatzki ring; an intraluminal mass; an axial CT cross-section; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "Zenker diverticulum barium swallow pharyngoesophageal"; Wikimedia Commons "Zenker diverticulum barium".
+
+### s2ck-0188 - Gallstone ileus  (Step 2 CK - Surgery)
+- **Case context:** 75-year-old woman with recurrent biliary colic and two days of intermittent cramping pain, bilious vomiting, obstipation, a distended abdomen and high-pitched bowel sounds; the image is an abdominal radiograph showing dilated small-bowel loops with air-fluid levels, air in the biliary tree, and an ectopic calcified gallstone in the right lower quadrant (Rigler triad).
+- **Modality:** Supine/upright abdominal radiograph (KUB), grayscale DICOM-like.
+- **Prompt:** Photorealistic ABDOMINAL RADIOGRAPH of an older adult in grayscale with DICOM-like dynamic range and anatomically accurate bowel gas pattern. Depict GALLSTONE ILEUS with the RIGLER TRIAD: (1) multiple DILATED SMALL-BOWEL LOOPS centrally with a stepladder of AIR-FLUID LEVELS indicating mechanical small-bowel obstruction; (2) branching lucent gas in the right upper quadrant biliary tree (PNEUMOBILIA) outlining the intrahepatic ducts; and (3) an ECTOPIC ROUNDED CALCIFIED GALLSTONE with a laminated rim lodged in the RIGHT LOWER QUADRANT. Bony pelvis, lumbar spine, and psoas margins correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Dilated small-bowel loops with air-fluid levels (obstruction)
+  - Pneumobilia (branching gas in the biliary tree)
+  - Ectopic calcified gallstone in the right lower quadrant
+  - Authentic abdominal radiograph appearance
+- **Avoid (negative prompt):** a single coffee-bean sigmoid/cecal loop (volvulus) as the intended finding; free subdiaphragmatic air (perforation); diffuse ground-glass ascites; a normal nonobstructed gas pattern; gas only in the portal veins reaching the liver periphery (portal venous gas) rather than central pneumobilia; a CT cross-section; annotations or tubes.
+- **Real-image fallback:** Radiopaedia - search "gallstone ileus Rigler triad abdominal radiograph pneumobilia"; Wikimedia Commons "gallstone ileus x-ray".
+
+### s2ck-0191 - Erythema infectiosum (fifth disease)  (Step 2 CK - Pediatrics)
+- **Case context:** 6-year-old well-appearing playful girl who had a few days of low-grade fever and coryza that resolved, now with bright red cheeks; the image is a child with confluent erythema of both cheeks sparing the nasal bridge (slapped-cheek) and a lacy reticular rash on the extensor arms.
+- **Modality:** Clinical photograph of a child (face and arm), realistic dermatologic clinical photography.
+- **Prompt:** Photorealistic clinical photograph of a well-appearing young child in natural clinic lighting, accurate skin tones and pediatric facial proportions. Depict ERYTHEMA INFECTIOSUM (fifth disease): both CHEEKS show confluent, firm, bright-red erythema with a clear demarcated edge - the SLAPPED-CHEEK appearance - that conspicuously SPARES the nasal bridge, the perioral skin (circumoral pallor), and the periorbital region. On the EXTENSOR surfaces of the arms there is a pink, LACY, RETICULAR (net-like, reticulate) macular rash. The child looks nontoxic and comfortable with no respiratory distress. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Bright confluent erythema of both cheeks (slapped cheek)
+  - Sparing of the nasal bridge and perioral skin (circumoral pallor)
+  - Lacy reticular rash on the extensor arms
+  - Well, nontoxic child in a realistic clinical photo
+- **Avoid (negative prompt):** a butterfly malar rash crossing the nasal bridge (lupus); confluent morbilliform rash with Koplik spots and a toxic child (measles); a sandpaper rash with perioral pallor plus strawberry tongue (scarlet fever); vesicles or crusts; facial edema/angioedema; an adult face.
+- **Real-image fallback:** DermNet NZ "erythema infectiosum slapped cheek fifth disease"; CDC PHIL "erythema infectiosum parvovirus B19 rash"; Wikimedia Commons "fifth disease slapped cheek".
+
+### s2ck-0201 - Chronic aortic regurgitation  (Step 2 CK - Internal Medicine)
+- **Case context:** 54-year-old man with a year of exertional dyspnea, bounding rapidly-collapsing pulses, a soft high-pitched early diastolic murmur at the left sternal border on leaning forward, wide pulse pressure (158/48), and a diffuse laterally displaced apex; the image is a transthoracic echocardiogram parasternal long-axis view showing a dilated left ventricle with a diastolic color-Doppler regurgitant jet directed into the LV outflow tract.
+- **Modality:** Transthoracic echocardiogram, parasternal long-axis view with color Doppler, grayscale sector with a color box (DICOM-like).
+- **Prompt:** Photorealistic TRANSTHORACIC ECHOCARDIOGRAM in the PARASTERNAL LONG-AXIS view, diagnostic grayscale sector with realistic speckle texture and a superimposed color-Doppler box, DICOM-like appearance. Depict CHRONIC AORTIC REGURGITATION: a DILATED, rounded LEFT VENTRICLE with the aortic valve and LV outflow tract in view, and during DIASTOLE a broad mosaic color-Doppler REGURGITANT JET originating at the aortic valve and directed BACKWARD into the LV OUTFLOW TRACT toward the anterior mitral leaflet. The left atrium, aortic root, and interventricular septum are correctly rendered; the mitral valve is open in diastole. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Parasternal long-axis orientation with a dilated left ventricle
+  - Diastolic color-Doppler regurgitant jet into the LV outflow tract from the aortic valve
+  - Aortic root and left atrium correctly positioned
+  - Authentic grayscale echocardiogram with a color-Doppler box
+- **Avoid (negative prompt):** a systolic jet from the mitral valve into the left atrium (mitral regurgitation) as the intended finding; a turbulent forward jet across a stenotic aortic valve; a thickened doming mitral valve with a large left atrium (mitral stenosis); a pericardial effusion as the dominant feature; a CT/MRI cross-section; annotations or calipers.
+- **Real-image fallback:** Radiopaedia / The POCUS Atlas - search "aortic regurgitation parasternal long axis color Doppler echocardiogram"; Wikimedia Commons "aortic regurgitation echocardiography".
+
+### s2ck-0202 - Digoxin toxicity  (Step 2 CK - Internal Medicine)  [ECG]
+- **WARNING:** AI image generators render ECG tracings as physiologically meaningless gibberish and cannot reliably draw a regularized rhythm with frequent ventricular ectopy and the scooped (Salvador Dali sagging) ST segments of digoxin effect. Strongly recommend a REAL de-identified digoxin-toxicity rhythm strip (e.g., LITFL) or the app's own accurate vector-drawn tracing as the PRIMARY asset; use any AI output only as a placeholder and QA every complex against the criteria below.
+- **Case context:** 78-year-old woman with heart failure and atrial fibrillation on digoxin and furosemide who started an ACE inhibitor, now with nausea, anorexia, yellow-green halos, bradycardia (44), potassium 5.9 and rising creatinine; the tracing must show a regularized ventricular rhythm with frequent premature ventricular complexes and scooped down-sloping ST segments.
+- **Modality:** ECG rhythm strip (single/multi-lead) on standard red/pink grid.
+- **Prompt:** Photorealistic clinical ECG rhythm strip on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines and a clean black waveform trace. Depict DIGOXIN TOXICITY in a patient with underlying atrial fibrillation: a SLOW, REGULARIZED ventricular rhythm (the R-R intervals have become regular despite absent organized P waves - a fibrillatory baseline that is now regularized) interrupted by FREQUENT PREMATURE VENTRICULAR COMPLEXES (wide, early, bizarre ectopic beats). Throughout, the ST segments show the characteristic DOWNSLOPING, SCOOPED (sagging, reverse-tick / Salvador Dali mustache) morphology of digoxin effect with flattened T waves. Physiologically consistent, evenly spaced baseline complexes. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Slow, regularized ventricular rhythm on a fibrillatory baseline (regular R-R, no organized P waves)
+  - Frequent wide premature ventricular complexes
+  - Scooped/sagging downsloping ST segments (reverse-tick digoxin effect)
+  - Standard pink ECG grid
+- **Avoid (negative prompt):** a normal upright ST segment; ST-segment elevation of an acute myocardial infarction; a fast irregularly irregular rate as the dominant feature; a delta wave/short PR; tall tented T waves as the intended finding; random gibberish waveforms; wrong grid color; annotations or lead labels.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "digoxin toxicity ECG regularized AF PVCs scooped ST"; Wikimedia Commons "digoxin effect ECG". Prefer the app vector tracing.
+
+### s2ck-0211 - Epidural hematoma  (Step 2 CK - Surgery)
+- **Case context:** 19-year-old man who struck his temple in a bicycle fall with a brief loss of consciousness, a lucid interval of about an hour, then rapid drowsiness and a dilated sluggish right pupil, with temporal tenderness; the image is a noncontrast head CT showing a biconvex lens-shaped hyperdense extra-axial collection over the right temporal convexity that does not cross suture lines.
+- **Modality:** Noncontrast head CT, axial slice, brain window (DICOM grayscale).
+- **Prompt:** Hyperrealistic axial NONCONTRAST HEAD CT in diagnostic grayscale, brain window, anatomically accurate cranial and brain anatomy with realistic CT noise and a rendered skull. Depict an acute EPIDURAL HEMATOMA: a BICONVEX, LENS-SHAPED (lentiform) HYPERDENSE (bright white, acute blood) extra-axial collection hugging the inner table of the skull over the RIGHT TEMPORAL convexity, its margins bulging inward and sharply confined - it DOES NOT cross the cranial suture lines. There is local MASS EFFECT: effacement of adjacent sulci, compression of the ipsilateral lateral ventricle, and slight MIDLINE SHIFT away from the clot. A subtle overlying temporal skull fracture may be present. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Biconvex (lens-shaped) hyperdense extra-axial collection
+  - Collection confined by sutures (does not cross suture lines)
+  - Mass effect with sulcal effacement and midline shift
+  - Authentic noncontrast head CT, brain window
+- **Avoid (negative prompt):** a crescent-shaped collection that spreads along the convexity and crosses sutures (subdural hematoma) as the intended finding; hyperdense blood filling the basal cisterns/sulci (subarachnoid hemorrhage); an intraparenchymal hematoma; hypodense wedge infarct; a normal symmetric brain; a bone-window-only image; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "epidural hematoma CT biconvex lens-shaped"; Wikimedia Commons "epidural hematoma CT".
+
+### s2ck-0214 - Transposition of the great arteries  (Step 2 CK - Pediatrics)
+- **Case context:** Term newborn deeply cyanotic within hours of life, cyanosis not improving with supplemental oxygen, no murmur, a loud single S2, worsening as the ductus closes; the image is a chest radiograph showing a narrow superior mediastinum with an oval cardiac silhouette (egg on a string).
+- **Modality:** Frontal (AP) neonatal CHEST RADIOGRAPH, grayscale DICOM-like.
+- **Prompt:** Photorealistic frontal (AP) NEONATAL CHEST RADIOGRAPH in grayscale with DICOM-like dynamic range and anatomically accurate small-infant thoracic anatomy. Depict TRANSPOSITION OF THE GREAT ARTERIES: an OVAL / EGG-SHAPED cardiac silhouette (the EGG) sitting on a NARROW SUPERIOR MEDIASTINUM (the STRING) because the great vessels lie anteroposteriorly stacked and the thymus is small - the classic EGG-ON-A-STRING contour. Pulmonary vascular markings are mildly increased. The ribs, clavicles, and diaphragm of a neonate are correctly rendered, with an umbilical or endotracheal line optionally faint. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Oval / egg-shaped cardiac silhouette
+  - Narrow superior mediastinum (the string)
+  - Neonatal chest proportions with mildly increased pulmonary vascularity
+  - Authentic frontal neonatal chest radiograph appearance
+- **Avoid (negative prompt):** a boot-shaped heart with an upturned apex and a concave pulmonary segment (tetralogy of Fallot) as the intended finding; a snowman/figure-of-8 supracardiac silhouette (TAPVR); a massively enlarged box-shaped heart (Ebstein); a normal-shaped heart; adult chest proportions; a lobar pneumonia; annotations or tubes dominating the frame.
+- **Real-image fallback:** Radiopaedia - search "transposition great arteries egg on a string chest radiograph"; Wikimedia Commons "transposition great arteries egg on string".
+
+### s2ck-0217 - Retinoblastoma  (Step 2 CK - Pediatrics)
+- **Case context:** 18-month-old girl with leukocoria of the left eye noted on photographs, a new intermittent inward deviation of that eye, no pain or redness, and a family history of a maternal uncle who lost an eye in childhood; the image is a fundus photograph showing a creamy-white elevated retinal mass with overlying feeder vessels.
+- **Modality:** Dilated FUNDUS (retinal) photograph, color fundus camera image.
+- **Prompt:** Photorealistic COLOR FUNDUS PHOTOGRAPH of a young child's retina through a dilated pupil, circular fundus-camera field with the characteristic orange-red retinal background, accurate ophthalmoscopic detail. Depict RETINOBLASTOMA: a solitary CREAMY-WHITE to pink-white, ELEVATED, dome-shaped RETINAL MASS projecting from the retinal surface, with DILATED TORTUOUS FEEDER (retinal) VESSELS coursing over and into the tumor. Fine chalky-white intratumoral CALCIFICATION flecks may speckle the surface. The adjacent retina, a normal-appearing optic disc, and background choroidal pattern are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Creamy-white elevated retinal mass
+  - Dilated feeder vessels over the tumor
+  - Chalky intratumoral calcification flecks
+  - Authentic circular color fundus photograph on an orange-red background
+- **Avoid (negative prompt):** a pale retina with a cherry-red macular spot (central retinal artery occlusion) as the intended finding; a cupped optic disc (glaucoma); dot-blot hemorrhages and exudates (diabetic retinopathy); a flame-hemorrhage blood-and-thunder fundus (vein occlusion); a corneal/anterior-segment external eye photo; a normal fundus; annotations or calipers.
+- **Real-image fallback:** Radiopaedia / American Academy of Ophthalmology image library - search "retinoblastoma fundus photograph"; Wikimedia Commons "retinoblastoma fundus".
+
+### s2ck-0219 - Trichomoniasis  (Step 2 CK - Obstetrics & Gynecology)
+- **Case context:** 29-year-old woman with a week of copious frothy yellow-green malodorous discharge, vulvar itching, dyspareunia, a strawberry cervix with punctate hemorrhages, and vaginal pH 6.0; the image is a saline wet-mount microscopy showing motile flagellated pear-shaped protozoa among epithelial cells and neutrophils.
+- **Modality:** Saline wet-mount light microscopy, high-power brightfield photomicrograph.
+- **Prompt:** Photorealistic high-power BRIGHTFIELD LIGHT-MICROSCOPY photomicrograph of a SALINE WET-MOUNT vaginal preparation, faint gray-green unstained background with realistic depth of field. Depict TRICHOMONIASIS: several PEAR-SHAPED (ovoid) PROTOZOAL organisms slightly larger than adjacent white cells, each with anterior FLAGELLA and an undulating membrane suggesting motility, scattered among mature squamous EPITHELIAL cells and numerous NEUTROPHILS. The trichomonads are distinct from the surrounding cells, with a visible flagellar tuft at one pole. Realistic wet-mount clarity with a few background debris and bacteria. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Pear-shaped/ovoid protozoa with anterior flagella (trichomonads)
+  - Organisms slightly larger than the accompanying neutrophils
+  - Background squamous epithelial cells and many neutrophils
+  - Authentic unstained saline wet-mount brightfield appearance
+- **Avoid (negative prompt):** squamous cells studded with adherent coccobacilli obscuring their borders (clue cells / bacterial vaginosis) as the intended finding; branching septate hyphae and budding yeast (candida); Gram-stained purple diplococci; a Pap-stained cytology slide; an H&E tissue section; blood cells only with no protozoa; annotations or calipers.
+- **Real-image fallback:** CDC PHIL / DPDx - search "Trichomonas vaginalis wet mount trophozoite"; PathologyOutlines "Trichomonas"; Wikimedia Commons "Trichomonas vaginalis wet mount".
+
+### s2ck-0226 - Vasospastic (Prinzmetal) angina  (Step 2 CK - Internal Medicine)  [ECG]
+- **WARNING:** AI image generators render ECG tracings as physiologically meaningless gibberish and cannot reliably draw transient territory-specific ST-segment elevation that normalizes. Strongly recommend a REAL de-identified vasospastic-angina 12-lead ECG (e.g., LITFL) or the app's own accurate vector-drawn tracing as the PRIMARY asset; use any AI output only as a placeholder and QA every complex against the criteria below.
+- **Case context:** 45-year-old woman smoker with weeks of rest chest pressure that wakes her in the early morning and resolves in minutes, excellent exercise tolerance, negative troponins, and ST changes that resolve after nitroglycerin; the tracing must show transient ST-segment elevation in the inferior leads during pain that normalizes when the pain resolves.
+- **Modality:** 12-lead ECG on standard red/pink grid.
+- **Prompt:** Photorealistic clinical 12-lead ECG printout on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines, clean black waveform trace, standard 3x4 lead layout plus a rhythm strip. Depict VASOSPASTIC (PRINZMETAL) ANGINA captured during chest pain: transient ST-SEGMENT ELEVATION in the INFERIOR leads (II, III, aVF) with the elevated ST segments appearing upsloping/coved in that territory, with subtle RECIPROCAL ST depression in the lateral leads (I, aVL). The rhythm is normal SINUS with narrow QRS complexes and no pathologic Q waves - the pattern would completely normalize once vasospasm resolves. Physiologically consistent, evenly spaced beats with matching morphology across leads. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Transient ST-segment elevation localized to the inferior leads (II, III, aVF)
+  - Reciprocal ST depression in the lateral leads
+  - Sinus rhythm with narrow QRS and NO established pathologic Q waves
+  - Standard pink ECG grid
+- **Avoid (negative prompt):** diffuse concave ST elevation across all leads with PR depression (pericarditis) as the intended finding; established deep Q waves of a completed infarct; diffuse ST depression; a wide-complex tachycardia; a normal flat baseline with no ST shift; random gibberish waveforms; wrong grid color; annotations or lead labels.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "coronary vasospasm Prinzmetal variant angina ST elevation ECG"; Wikimedia Commons "Prinzmetal angina ECG". Prefer the app vector tracing.
+
+### s2ck-0230 - Autosomal dominant polycystic kidney disease  (Step 2 CK - Internal Medicine)
+- **Case context:** 42-year-old man with new hypertension, intermittent flank pain, an episode of gross hematuria, palpable bilateral flank masses, a father and paternal aunt on dialysis, and a cousin who died of a ruptured brain aneurysm; the image is an abdominal CT showing markedly enlarged kidneys bilaterally replaced by innumerable cysts of varying size, with several cysts also in the liver.
+- **Modality:** Contrast-enhanced CT of the abdomen, axial slice, soft-tissue window (DICOM grayscale).
+- **Prompt:** Hyperrealistic axial CONTRAST-ENHANCED CT of the abdomen in diagnostic grayscale, soft-tissue window, radiologically accurate anatomy with contrast-opacified vessels and realistic CT noise. Depict AUTOSOMAL DOMINANT POLYCYSTIC KIDNEY DISEASE: BOTH KIDNEYS are MARKEDLY ENLARGED and almost entirely REPLACED by INNUMERABLE well-defined ROUNDED CYSTS of widely VARYING SIZE (thin-walled, water-density/hypodense), distorting the renal contours bilaterally with little remaining normal parenchyma. Scattered similar CYSTS are also present in the LIVER. The spleen, aorta, bowel, and vertebral body are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Both kidneys massively enlarged and replaced by innumerable cysts of varying size
+  - Bilateral, roughly symmetric involvement
+  - Associated hepatic cysts
+  - Contrast-enhanced axial abdominal CT appearance
+- **Avoid (negative prompt):** a single dominant renal cyst or a solid enhancing renal mass (RCC) as the intended finding; a few simple cysts in otherwise normal-sized kidneys; hydronephrosis with a dilated collecting system; unilateral involvement only; a normal kidney; a noncontrast or lung-window image; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "autosomal dominant polycystic kidney disease CT bilateral renal cysts hepatic cysts"; Wikimedia Commons "ADPKD CT".
+
+### s2ck-0231 - Reactivation pulmonary tuberculosis  (Step 2 CK - Internal Medicine)
+- **Case context:** 54-year-old man from a high-prevalence region with 6 weeks of productive cough now blood-streaked, drenching night sweats, low-grade fevers, and 6 kg weight loss, placed in a negative-pressure room; the image is a chest radiograph showing a right upper lobe cavitary infiltrate with surrounding fibronodular opacities.
+- **Modality:** Frontal (PA) CHEST RADIOGRAPH, grayscale DICOM-like.
+- **Prompt:** Photorealistic frontal (PA) CHEST RADIOGRAPH of an adult in grayscale with DICOM-like dynamic range and anatomically accurate thoracic anatomy. Depict REACTIVATION PULMONARY TUBERCULOSIS: in the RIGHT UPPER LOBE (apical/posterior segment) a THICK-WALLED CAVITY - an area of lucency surrounded by a dense irregular wall - with SURROUNDING FIBRONODULAR OPACITIES and patchy consolidation, plus some volume loss elevating the hilum. The remaining lung is relatively clear, the cardiac silhouette is normal, and the ribs, clavicles, and diaphragm are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Upper-lobe cavitary lesion (thick-walled lucency)
+  - Surrounding fibronodular opacities / patchy consolidation
+  - Upper-zone predominance with some volume loss
+  - Authentic frontal chest radiograph appearance
+- **Avoid (negative prompt):** symmetric bilateral hilar adenopathy with clear lungs (sarcoidosis) as the intended finding; a basal-predominant consolidation (typical pneumonia); a peripheral solitary spiculated nodule; bilateral perihilar bat-wing edema; a large pleural effusion filling the hemithorax; a normal chest; a CT cross-section; annotations or tubes.
+- **Real-image fallback:** Radiopaedia - search "reactivation pulmonary tuberculosis upper lobe cavity chest radiograph"; Wikimedia Commons "pulmonary tuberculosis cavitary x-ray".
+
+### s2ck-0232 - Ankylosing spondylitis  (Step 2 CK - Internal Medicine)
+- **Case context:** 26-year-old man with more than 6 months of inflammatory low back and buttock pain (morning stiffness over an hour, better with exercise, worse with rest, alternating buttock pain, night waking), reduced lumbar flexion and decreased chest expansion; the image is an AP pelvic radiograph showing bilateral sacroiliac joint erosions with sclerosis and partial joint-space fusion.
+- **Modality:** Anteroposterior (AP) PELVIS RADIOGRAPH, grayscale DICOM-like.
+- **Prompt:** Photorealistic ANTEROPOSTERIOR (AP) PELVIS RADIOGRAPH of a young adult in grayscale with DICOM-like dynamic range and anatomically accurate bony pelvis, both hips, and sacroiliac joints. Depict SACROILIITIS of ANKYLOSING SPONDYLITIS: BILATERAL, roughly SYMMETRIC sacroiliac joint changes - irregular subchondral EROSIONS giving a blurred pseudo-widened joint margin, adjacent reactive SCLEROSIS on both iliac and sacral sides, and PARTIAL JOINT-SPACE NARROWING with early BONY FUSION (ankylosis) bridging the joints. The hips, pubic symphysis, and lumbosacral junction are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Bilateral, symmetric sacroiliac joint involvement
+  - Subchondral erosions with adjacent sclerosis
+  - Partial joint-space narrowing and early bony fusion
+  - Authentic AP pelvis radiograph appearance
+- **Avoid (negative prompt):** a unilateral destructive septic sacroiliac joint as the intended finding; a displaced femoral neck or pubic ramus fracture; a normal pelvis with clean SI joints; isolated hip osteoarthritis; a lateral/frog-leg view; a CT/MRI cross-section; hardware, annotations, or calipers.
+- **Real-image fallback:** Radiopaedia - search "ankylosing spondylitis bilateral sacroiliitis pelvis radiograph"; Wikimedia Commons "sacroiliitis ankylosing spondylitis x-ray".
+
+### s2ck-0233 - Multiple sclerosis  (Step 2 CK - Internal Medicine)
+- **Case context:** 28-year-old woman with prior painful monocular vision loss that recovered, now 2 weeks of right leg numbness and weakness with a Lhermitte sign and an internuclear ophthalmoplegia (right eye fails to adduct, left eye nystagmus on left gaze); the image is a brain MRI FLAIR showing multiple ovoid periventricular hyperintensities oriented perpendicular to the ventricles.
+- **Modality:** Brain MRI, axial FLAIR sequence (DICOM-like grayscale).
+- **Prompt:** Photorealistic axial BRAIN MRI, FLAIR sequence, in diagnostic grayscale with suppressed (dark) cerebrospinal fluid, anatomically accurate cerebral anatomy and gray-white differentiation. Depict MULTIPLE SCLEROSIS: MULTIPLE discrete OVOID HYPERINTENSE (bright) white-matter lesions clustered in the PERIVENTRICULAR region, several oriented PERPENDICULAR to the lateral ventricles radiating outward (Dawson fingers), with additional smaller juxtacortical lesions. The lesions are well-demarcated against dark suppressed CSF and normal cortex; ventricles, corpus callosum, and skull are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Multiple ovoid periventricular hyperintense white-matter lesions
+  - Perpendicular orientation to the ventricles (Dawson fingers)
+  - FLAIR contrast with dark suppressed CSF
+  - Authentic axial brain MRI appearance
+- **Avoid (negative prompt):** a single large ring-enhancing mass with edema (abscess/tumor) as the intended finding; confluent symmetric periventricular white-matter change of chronic small-vessel disease only; a wedge-shaped cortical infarct; hyperdense acute blood; a bright-CSF T2 image miscolored; a normal brain; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "multiple sclerosis Dawson fingers periventricular FLAIR MRI"; Wikimedia Commons "multiple sclerosis MRI Dawson fingers".
+
+### s2ck-0236 - Anterior shoulder dislocation  (Step 2 CK - Surgery)
+- **Case context:** 22-year-old man who fell on an outstretched arm during a rugby tackle, now holding the right arm slightly abducted and externally rotated, with loss of the rounded deltoid contour, a prominent acromion, and anterior fullness; the image is an AP shoulder radiograph showing the humeral head displaced anteriorly and inferiorly, lying beneath the coracoid process.
+- **Modality:** Anteroposterior (AP) SHOULDER RADIOGRAPH, grayscale DICOM-like.
+- **Prompt:** Photorealistic ANTEROPOSTERIOR (AP) SHOULDER RADIOGRAPH of a young adult in grayscale with DICOM-like dynamic range and anatomically accurate glenohumeral, scapular, and clavicular anatomy. Depict an ANTERIOR SHOULDER DISLOCATION: the HUMERAL HEAD is displaced ANTERIORLY and INFERIORLY out of the glenoid fossa and lies in a SUBCORACOID position (below and medial, beneath the coracoid process), so the glenoid articular surface is empty and the humeral head no longer overlaps the glenoid normally. The acromion, clavicle, scapular body, and ribs are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Humeral head displaced anteriorly and inferiorly (subcoracoid)
+  - Empty glenoid fossa with loss of normal glenohumeral overlap
+  - Intact clavicle, acromion, and scapula
+  - Authentic AP shoulder radiograph appearance
+- **Avoid (negative prompt):** a posterior dislocation with a light-bulb humeral head and preserved articular overlap as the intended finding; an acromioclavicular joint separation with a raised clavicle; a proximal humerus or clavicle fracture as the dominant finding; a normal congruent joint; a scapular Y or axillary view; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "anterior shoulder dislocation subcoracoid radiograph"; Wikimedia Commons "anterior shoulder dislocation x-ray".
+
+### s2ck-0238 - Cutaneous melanoma  (Step 2 CK - Surgery)
+- **Case context:** 55-year-old fair-skinned man with childhood blistering sunburns and a back mole that has enlarged, darkened, itched, and bled once, now about 9 mm, asymmetric, with an irregular notched border and brown/black/tan pigmentation; the image is a dermoscopic photograph of a pigmented lesion with asymmetry, irregular borders, and multiple colors.
+- **Modality:** Dermoscopy (dermatoscopic) photograph of a pigmented skin lesion, high-magnification polarized clinical image.
+- **Prompt:** Photorealistic DERMOSCOPIC (dermatoscopic) photograph of a pigmented skin lesion at high magnification with polarized-light clarity and accurate skin texture around the lesion. Depict a CUTANEOUS MELANOMA: an ASYMMETRIC pigmented lesion roughly 9 mm across with an IRREGULAR, NOTCHED, poorly-defined BORDER and a strikingly VARIEGATED COLOR palette - admixed BROWN, jet-BLACK, and TAN zones with an off-center darker blotch. Dermoscopic features include an ATYPICAL PIGMENT NETWORK with thickened irregular lines, irregular streaks/pseudopods at the periphery, and blue-gray regression areas. Surrounding skin shows realistic follicular openings. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Asymmetric lesion with an irregular, notched border
+  - Multiple colors (brown, black, tan) with an eccentric dark blotch
+  - Atypical/irregular pigment network and peripheral streaks
+  - Authentic high-magnification dermoscopic appearance
+- **Avoid (negative prompt):** a symmetric uniformly tan lesion with a regular network (benign nevus) as the intended finding; a pearly telangiectatic papule (basal cell carcinoma); a stuck-on waxy plaque with pseudocysts (seborrheic keratosis); a cherry-red vascular papule; a wide-field whole-body photo; a histology slide; annotations or calipers.
+- **Real-image fallback:** DermNet NZ "melanoma dermoscopy"; Wikimedia Commons "melanoma dermoscopy ABCD"; International Skin Imaging Collaboration (ISIC) archive.
+
+### s2ck-0241 - Intestinal malrotation with midgut volvulus  (Step 2 CK - Pediatrics)
+- **Case context:** Previously well 5-day-old term neonate with sudden forceful bilious (green) vomiting, irritability then lethargy, a distending tender abdomen, trace rectal blood, tachycardia and mottling; the image is an upper GI contrast study showing the duodenum failing to cross the midline with a corkscrew configuration of contrast in the proximal jejunum.
+- **Modality:** Upper GI (UGI) contrast fluoroscopy study, frontal projection, neonatal (grayscale).
+- **Prompt:** Photorealistic frontal UPPER GI CONTRAST FLUOROSCOPY study of a neonate in grayscale, dense white swallowed contrast outlining the stomach and proximal small bowel, DICOM-like fluoroscopic appearance. Depict INTESTINAL MALROTATION with MIDGUT VOLVULUS: the DUODENUM fails to cross to the left of the midline and the duodenojejunal junction lies abnormally LOW and to the RIGHT of the spine; the proximal jejunum spirals in a tight CORKSCREW / spiral configuration of contrast as it twists, with tapering of the contrast column (beak) at the point of obstruction. The stomach is normally positioned and the neonatal bony thorax and pelvis are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Duodenum failing to cross the midline (duodenojejunal junction low and right)
+  - Corkscrew / spiral twist of proximal jejunal contrast
+  - Tapering beak at the point of obstruction
+  - Authentic neonatal upper GI contrast study appearance
+- **Avoid (negative prompt):** a smooth bird-beak at the gastroesophageal junction (achalasia) as the intended finding; a double-bubble with no distal gas (duodenal atresia) as the intended finding; a distal colonic transition zone (Hirschsprung); normal C-loop duodenum crossing to the left; a plain radiograph with no contrast; a CT cross-section; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "midgut volvulus malrotation corkscrew upper GI series"; Wikimedia Commons "midgut volvulus corkscrew".
+
+### s2ck-0242 - Neuroblastoma  (Step 2 CK - Pediatrics)
+- **Case context:** 2-year-old girl with irritability, poor appetite, a firm irregular abdominal mass crossing the midline, periorbital ecchymoses (raccoon eyes), opsoclonus-myoclonus (dancing eyes), elevated blood pressure, and raised urinary catecholamine metabolites; the image is an abdominal CT showing a heterogeneous suprarenal mass with speckled calcifications that crosses the midline and encases the aorta.
+- **Modality:** Contrast-enhanced CT of the abdomen, axial slice, soft-tissue window (DICOM grayscale), pediatric.
+- **Prompt:** Hyperrealistic axial CONTRAST-ENHANCED CT of a young child's abdomen in diagnostic grayscale, soft-tissue window, anatomically accurate pediatric anatomy with contrast-opacified vessels and realistic CT noise. Depict a NEUROBLASTOMA: a large, HETEROGENEOUS SUPRARENAL (adrenal) soft-tissue MASS with coarse SPECKLED/STIPPLED CALCIFICATIONS that CROSSES THE MIDLINE and ENCASES and ENGULFS the aorta and adjacent retroperitoneal vessels (vessels seen coursing through the mass rather than displaced). The mass DISPLACES the ipsilateral kidney inferolaterally without arising from within it. The contralateral kidney, liver, spine, and bowel are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Heterogeneous suprarenal mass with speckled calcifications
+  - Mass crossing the midline and encasing the aorta/vessels
+  - Kidney displaced (not arising from within the kidney)
+  - Contrast-enhanced axial pediatric abdominal CT appearance
+- **Avoid (negative prompt):** a mass arising from and expanding the kidney with a claw sign confined to one flank (Wilms tumor) as the intended finding; a purely cystic mass; hydronephrosis; bilateral cystic kidneys; a normal adrenal; a noncontrast or lung-window image; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "neuroblastoma suprarenal mass calcification encasing aorta CT"; Wikimedia Commons "neuroblastoma CT".
+
+### s2ck-0245 - Lichen sclerosus  (Step 2 CK - Obstetrics & Gynecology)
+- **Case context:** 62-year-old postmenopausal woman with months of vulvar itching and burning and dyspareunia, with porcelain-white atrophic wrinkled plaques on the labia and perianal skin in a figure-of-eight pattern, thinned easily-fissured skin, and loss of normal architecture, no discharge; the image is a vulvar photograph showing porcelain-white atrophic plaques encircling the vulva and anus in a figure-of-eight pattern.
+- **Modality:** Clinical vulvar (anogenital) photograph, dermatologic clinical photography.
+- **Prompt:** Photorealistic clinical ANOGENITAL (vulvar) photograph in a clinical examination setting, accurate skin tones and anatomy, tasteful medical framing. Depict LICHEN SCLEROSUS: PORCELAIN-WHITE, IVORY, atrophic, WRINKLED (cigarette-paper) thinned PLAQUES involving the labia minora and majora and extending around the perianal skin in a FIGURE-OF-EIGHT (hourglass) distribution encircling both the vulva and the anus. The skin shows loss of normal architecture with resorption/effacement of the labia minora, waxy sclerotic sheen, and small areas of fissuring and ecchymosis. No vaginal discharge. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Porcelain-white atrophic wrinkled plaques of the vulva
+  - Figure-of-eight distribution around vulva and anus
+  - Architectural loss (effaced labia minora) with fissuring
+  - Authentic clinical vulvar photograph
+- **Avoid (negative prompt):** an exophytic ulcerated vulvar carcinoma mass as the intended finding; thick discharge with erythema (candida/vaginitis); a solitary pigmented lesion; condyloma cauliflower warts; violaceous flat-topped papules with Wickham striae (lichen planus) as the intended finding; a normal vulva; annotations or calipers.
+- **Real-image fallback:** DermNet NZ "vulval lichen sclerosus figure of eight"; Wikimedia Commons "lichen sclerosus vulva".
+
+### s2ck-0251 - Cardiac tamponade  (Step 2 CK - Internal Medicine)  [ECG]
+- **WARNING:** AI image generators render ECG tracings as physiologically meaningless gibberish and cannot reliably draw low-voltage complexes with beat-to-beat electrical alternans. Strongly recommend a REAL de-identified electrical-alternans 12-lead ECG (e.g., LITFL) or the app's own accurate vector-drawn tracing as the PRIMARY asset; use any AI output only as a placeholder and QA every complex against the criteria below.
+- **Case context:** 58-year-old man with metastatic lung cancer, progressive dyspnea and lightheadedness, tachycardia, hypotension, distended neck veins, muffled heart sounds, an 18 mm Hg inspiratory systolic fall (pulsus paradoxus), and echo showing a large circumferential effusion with right atrial/ventricular diastolic collapse; the tracing must show sinus tachycardia with low QRS voltage and beat-to-beat alternation of QRS amplitude (electrical alternans).
+- **Modality:** 12-lead ECG on standard red/pink grid.
+- **Prompt:** Photorealistic clinical 12-lead ECG printout on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines, clean black waveform trace, standard 3x4 lead layout plus a rhythm strip. Depict CARDIAC TAMPONADE physiology: SINUS TACHYCARDIA at a fast regular rate with diffusely LOW-VOLTAGE QRS complexes (small amplitude across all leads), and unmistakable ELECTRICAL ALTERNANS - the QRS AMPLITUDE alternates up-down-up-down in a regular BEAT-TO-BEAT pattern (tall complex, then short complex, repeating) as the heart swings within the effusion. P waves precede each QRS; morphology otherwise consistent across leads. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Sinus tachycardia (fast regular rate)
+  - Diffusely low-voltage QRS complexes
+  - Beat-to-beat QRS-amplitude alternation (electrical alternans)
+  - Standard pink ECG grid
+- **Avoid (negative prompt):** tall high-voltage LVH complexes; diffuse concave ST elevation with PR depression as the intended finding; ST-segment elevation of infarction; a chaotic irregularly irregular rhythm; a normal constant QRS amplitude; random gibberish waveforms; wrong grid color; annotations or lead labels.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "electrical alternans cardiac tamponade low voltage ECG"; Wikimedia Commons "electrical alternans ECG". Prefer the app vector tracing.
+
+### s2ck-0252 - Acute respiratory distress syndrome  (Step 2 CK - Internal Medicine)
+- **Case context:** 49-year-old man with severe acute pancreatitis who on hospital day 2 develops rapidly worsening hypoxemia requiring intubation, with a PaO2/FiO2 of 76 despite FiO2 0.9, normal jugular venous pressure, and normal biventricular function with no elevated filling pressures; the image is a portable chest radiograph showing new bilateral diffuse alveolar opacities sparing the costophrenic angles with a normal cardiac silhouette.
+- **Modality:** Portable (AP) CHEST RADIOGRAPH, grayscale DICOM-like, intubated patient.
+- **Prompt:** Photorealistic portable ANTEROPOSTERIOR (AP) CHEST RADIOGRAPH of an intubated adult in grayscale with DICOM-like dynamic range and anatomically accurate thoracic anatomy. Depict ACUTE RESPIRATORY DISTRESS SYNDROME: NEW, BILATERAL, DIFFUSE, symmetric ALVEOLAR (airspace) OPACITIES - hazy confluent ground-glass and consolidative shadowing filling both mid and lower lung zones with air bronchograms - that relatively SPARE the extreme COSTOPHRENIC ANGLES. The CARDIAC SILHOUETTE is NORMAL in size (no cardiomegaly) with no vascular redistribution or pleural effusions. An endotracheal tube sits in the mid-trachea. Ribs and soft tissues correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Bilateral diffuse alveolar opacities with air bronchograms
+  - Normal cardiac silhouette (non-cardiogenic pattern)
+  - Relative sparing of the costophrenic angles; no large effusions
+  - Portable AP chest radiograph with an endotracheal tube
+- **Avoid (negative prompt):** an enlarged heart with cephalization, Kerley B lines, and pleural effusions (cardiogenic edema) as the intended finding; a single lobar consolidation; a unilateral hyperlucent pneumothorax; symmetric bilateral hilar adenopathy; a normal clear chest; a CT cross-section; annotations without the tube context.
+- **Real-image fallback:** Radiopaedia - search "acute respiratory distress syndrome ARDS chest radiograph bilateral opacities"; Wikimedia Commons "ARDS chest x-ray".
+
+### s2ck-0253 - Achalasia  (Step 2 CK - Internal Medicine)
+- **Case context:** 46-year-old woman with 8 months of dysphagia to solids AND liquids, regurgitation of undigested food, nocturnal cough, 6 kg weight loss, endoscopy showing retained food with a scope that pops through, and manometry showing aperistalsis with a non-relaxing LES; the image is a barium esophagram showing a dilated esophagus tapering to a smooth bird-beak narrowing at the gastroesophageal junction.
+- **Modality:** Barium esophagram (contrast swallow), upright frontal projection, fluoroscopic grayscale.
+- **Prompt:** Photorealistic upright frontal BARIUM ESOPHAGRAM (contrast swallow) in fluoroscopic grayscale with anatomically accurate thoracic esophageal course, dense white barium column. Depict ACHALASIA: a DILATED, dilated-and-tortuous thoracic ESOPHAGEAL BODY holding a column of barium (sometimes with a retained food/air-fluid level at the top) that TAPERS SMOOTHLY and symmetrically to a narrow point at the GASTROESOPHAGEAL JUNCTION - the classic BIRD-BEAK narrowing - with little barium passing into the stomach. The narrowing is smooth and symmetric without a shouldered mass. Spine, diaphragm, and gastric bubble correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Dilated esophageal body proximal to the narrowing
+  - Smooth, symmetric bird-beak taper at the gastroesophageal junction
+  - Hold-up of barium with delayed emptying
+  - Authentic upright barium esophagram appearance
+- **Avoid (negative prompt):** an irregular shouldered stricture with mucosal destruction (carcinoma) as the intended finding; a posterior cervical outpouching (Zenker) as the intended finding; a corkscrew multiple-contraction esophagus (spasm); a lower-esophageal ring/web; a normal thin esophagus; an axial CT; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "achalasia barium swallow bird beak dilated esophagus"; Wikimedia Commons "achalasia bird beak barium".
+
+### s2ck-0257 - Rheumatoid arthritis  (Step 2 CK - Internal Medicine)
+- **Case context:** 44-year-old woman with 4 months of symmetric small-joint pain and swelling of hands and wrists, over an hour of morning stiffness, warm boggy MCP and PIP joints with DIP sparing, and positive anti-CCP and rheumatoid factor; the image is a radiograph of both hands showing symmetric periarticular osteopenia and marginal bony erosions at the MCP and PIP joints.
+- **Modality:** Posteroanterior (PA) radiograph of BOTH HANDS, grayscale DICOM-like.
+- **Prompt:** Photorealistic POSTEROANTERIOR (PA) RADIOGRAPH of BOTH HANDS AND WRISTS side by side in grayscale with DICOM-like dynamic range and anatomically accurate carpal, metacarpal, and phalangeal anatomy. Depict RHEUMATOID ARTHRITIS: SYMMETRIC, bilateral involvement of the METACARPOPHALANGEAL (MCP) and PROXIMAL INTERPHALANGEAL (PIP) joints with PERIARTICULAR OSTEOPENIA (locally washed-out bone around the joints), symmetric JOINT-SPACE NARROWING, and MARGINAL BONY EROSIONS at the joint edges (bare-area erosions) with some early ulnar drift; the DISTAL INTERPHALANGEAL (DIP) joints are relatively SPARED. Soft-tissue fusiform swelling around involved joints. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Symmetric bilateral MCP and PIP involvement with DIP sparing
+  - Periarticular osteopenia and symmetric joint-space narrowing
+  - Marginal (bare-area) bony erosions
+  - Authentic PA radiograph of both hands
+- **Avoid (negative prompt):** DIP-predominant disease with bony osteophytes and gull-wing erosions (osteoarthritis/erosive OA) as the intended finding; a pencil-in-cup deformity (psoriatic arthritis); periarticular tophi with punched-out erosions and overhanging edges (gout); a chondrocalcinosis pattern; a single normal hand; a CT/MRI; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "rheumatoid arthritis hands radiograph marginal erosions periarticular osteopenia"; Wikimedia Commons "rheumatoid arthritis hand x-ray".
+
+### s2ck-0258 - Aneurysmal subarachnoid hemorrhage  (Step 2 CK - Internal Medicine)
+- **Case context:** 52-year-old woman with sudden worst-headache-of-life peaking within seconds while lifting, brief loss of consciousness, now neck stiffness, photophobia, vomiting, elevated blood pressure, somnolent but arousable with no focal motor deficit; the image is a noncontrast head CT showing hyperdense blood filling the basal cisterns and extending into the Sylvian fissures.
+- **Modality:** Noncontrast head CT, axial slice, brain window (DICOM grayscale).
+- **Prompt:** Hyperrealistic axial NONCONTRAST HEAD CT in diagnostic grayscale, brain window, anatomically accurate cranial and brain anatomy with realistic CT noise and a rendered skull. Depict ANEURYSMAL SUBARACHNOID HEMORRHAGE: HYPERDENSE (bright white) acute BLOOD filling and casting the BASAL CISTERNS in a star-shaped configuration around the suprasellar region and midbrain, and extending into BOTH SYLVIAN FISSURES and the interhemispheric fissure, outlining the normally CSF-dark subarachnoid spaces in white. There may be mild early ventricular dilatation (hydrocephalus) with a little blood layering in the occipital horns. Brain parenchyma and skull correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Hyperdense acute blood filling the basal cisterns (star-shaped)
+  - Blood extending into the Sylvian and interhemispheric fissures
+  - Possible early hydrocephalus
+  - Authentic noncontrast head CT, brain window
+- **Avoid (negative prompt):** a biconvex or crescentic peripheral extra-axial collection (epidural/subdural) as the intended finding; a focal intraparenchymal hematoma; a hypodense wedge infarct; diffuse cerebral edema only with no blood; a normal symmetric brain with dark CSF spaces; a bone-window image; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "aneurysmal subarachnoid hemorrhage CT basal cisterns"; Wikimedia Commons "subarachnoid hemorrhage CT".
+
+### s2ck-0259 - Hodgkin lymphoma  (Step 2 CK - Internal Medicine)
+- **Case context:** 26-year-old man with 6 weeks of an enlarging painless neck mass, drenching night sweats, fevers, 7 kg weight loss, pruritus, alcohol-induced nodal pain, firm rubbery cervical/supraclavicular nodes, and a biopsy showing Reed-Sternberg cells; the image is a chest radiograph showing a bulky anterior mediastinal mass widening the mediastinum.
+- **Modality:** Frontal (PA) CHEST RADIOGRAPH, grayscale DICOM-like.
+- **Prompt:** Photorealistic frontal (PA) CHEST RADIOGRAPH of a young adult in grayscale with DICOM-like dynamic range and anatomically accurate thoracic anatomy. Depict HODGKIN LYMPHOMA: a BULKY ANTERIOR/MIDDLE MEDIASTINAL MASS producing SMOOTH, LOBULATED WIDENING of the MEDIASTINUM, more to one side, with well-defined convex borders that silhouette the upper mediastinal contour and may splay the carina. The LUNG FIELDS are clear without focal consolidation, the cardiac silhouette is partly obscured by the superimposed nodal mass, and the ribs, clavicles, and diaphragm are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Bulky lobulated anterior/middle mediastinal mass widening the mediastinum
+  - Smooth convex well-defined borders
+  - Clear lung fields (no consolidation)
+  - Authentic frontal chest radiograph appearance
+- **Avoid (negative prompt):** symmetric bilateral hilar adenopathy with clear lungs (sarcoidosis) as the intended finding; a peripheral spiculated lung nodule; a lobar pneumonia; an enlarged globular heart with effusions; a normal chest; a CT cross-section; annotations or tubes.
+- **Real-image fallback:** Radiopaedia - search "Hodgkin lymphoma anterior mediastinal mass chest radiograph"; Wikimedia Commons "mediastinal mass lymphoma x-ray".
+
+### s2ck-0260 - Scaphoid fracture  (Step 2 CK - Surgery)
+- **Case context:** 20-year-old man who fell on an outstretched hand skateboarding, now with wrist pain, anatomic snuffbox tenderness, pain on thumb axial compression and resisted wrist extension, mild swelling, no deformity, normal neurovascular exam; the image is a posteroanterior wrist radiograph showing a lucent fracture line through the waist of the scaphoid.
+- **Modality:** Posteroanterior (PA) WRIST RADIOGRAPH, grayscale DICOM-like.
+- **Prompt:** Photorealistic POSTEROANTERIOR (PA) WRIST RADIOGRAPH of a young adult in grayscale with DICOM-like dynamic range and anatomically accurate carpal bones, distal radius/ulna, and metacarpal bases. Depict a SCAPHOID FRACTURE: a thin LUCENT FRACTURE LINE traversing the WAIST (midportion) of the SCAPHOID, with subtle cortical offset and slight fracture-line widening, the rest of the carpal alignment preserved. The scaphoid is highlighted in the radial (thumb-side) proximal carpal row; the lunate, triquetrum, capitate, and distal radius are correctly rendered with normal joint spaces. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Lucent fracture line through the scaphoid waist
+  - Otherwise preserved carpal alignment
+  - Correct carpal anatomy on a PA wrist view
+  - Authentic wrist radiograph appearance
+- **Avoid (negative prompt):** a dorsally angulated distal radius fracture (Colles) as the intended finding; a lunate/perilunate dislocation with disrupted carpal arcs; a metacarpal shaft fracture; a triquetral avulsion on a lateral view only; a normal wrist; a CT/MRI; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "scaphoid waist fracture wrist radiograph"; Wikimedia Commons "scaphoid fracture x-ray".
+
+### s2ck-0261 - Cecal volvulus  (Step 2 CK - Surgery)
+- **Case context:** 34-year-old woman with 1 day of severe colicky right-sided abdominal pain, progressive distension, nausea, obstipation, no prior surgery, a distended tympanitic abdomen with high-pitched bowel sounds and no peritoneal signs; the image is an abdominal radiograph showing a markedly dilated coffee-bean-shaped gas-filled loop projecting into the left upper quadrant with distended small-bowel loops.
+- **Modality:** Supine/upright abdominal radiograph (KUB), grayscale DICOM-like.
+- **Prompt:** Photorealistic ABDOMINAL RADIOGRAPH of a young adult in grayscale with DICOM-like dynamic range and anatomically accurate bowel gas pattern. Depict CECAL VOLVULUS: a single MARKEDLY DILATED, gas-filled COFFEE-BEAN / kidney-shaped bowel loop (the twisted cecum) whose apex projects up and across toward the LEFT UPPER QUADRANT, with a central cleft (the apposed walls) forming the bean's seam. Upstream there are DISTENDED SMALL-BOWEL loops with valvulae conniventes indicating obstruction, while the distal colon is relatively gasless. Lumbar spine, psoas margins, and bony pelvis correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Single hugely dilated coffee-bean loop pointing to the left upper quadrant
+  - Upstream distended small bowel (obstruction), collapsed distal colon
+  - Central cleft/seam of apposed walls
+  - Authentic abdominal radiograph appearance
+- **Avoid (negative prompt):** an inverted-U loop arising from the pelvis pointing to the right upper quadrant (sigmoid volvulus) as the intended finding; free subdiaphragmatic air (perforation); an ectopic calcified gallstone with pneumobilia (gallstone ileus); a normal gas pattern; diffuse ground-glass ascites; a CT cross-section; annotations or tubes.
+- **Real-image fallback:** Radiopaedia - search "cecal volvulus abdominal radiograph coffee bean left upper quadrant"; Wikimedia Commons "cecal volvulus x-ray".
+
+### s2ck-0263 - Pancreatic pseudocyst  (Step 2 CK - Surgery)
+- **Case context:** 45-year-old man 5 weeks after alcohol-induced acute pancreatitis with persistent dull epigastric pain, early satiety, nausea, a vague non-tender epigastric fullness, mildly elevated amylase, hemodynamically stable and afebrile; the image is an abdominal CT showing a well-circumscribed round fluid collection with a mature thin wall in the lesser sac, without internal septations or solid components.
+- **Modality:** Contrast-enhanced CT of the abdomen, axial slice, soft-tissue window (DICOM grayscale).
+- **Prompt:** Hyperrealistic axial CONTRAST-ENHANCED CT of the abdomen in diagnostic grayscale, soft-tissue window, radiologically accurate upper-abdominal anatomy with contrast-opacified vessels and realistic CT noise. Depict a PANCREATIC PSEUDOCYST: a WELL-CIRCUMSCRIBED, ROUND, homogeneous FLUID-DENSITY (near-water attenuation) COLLECTION with a MATURE, THIN, smooth ENHANCING WALL sitting in the LESSER SAC anterior to the pancreas, WITHOUT internal septations, solid nodularity, or gas. The adjacent pancreas is mildly atrophic/scarred, and the stomach is displaced anteriorly by the collection; liver, spleen, aorta, and vertebral body correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Round well-circumscribed fluid collection with a thin mature wall
+  - Homogeneous fluid density, no septations or solid components
+  - Peripancreatic/lesser-sac location displacing the stomach
+  - Contrast-enhanced axial abdominal CT appearance
+- **Avoid (negative prompt):** a collection containing gas bubbles or heterogeneous debris (infected/walled-off necrosis) as the intended finding; a thick irregular enhancing solid mass; a cystic lesion with internal septations and mural nodules (cystic neoplasm); a diffusely inflamed pancreas with stranding (acute pancreatitis); a noncontrast image; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "pancreatic pseudocyst CT thin wall lesser sac"; Wikimedia Commons "pancreatic pseudocyst CT".
+
+### s2ck-0264 - Coarctation of the aorta  (Step 2 CK - Pediatrics)
+- **Case context:** 9-year-old boy with a webbed neck and short stature (Turner-associated phenotype) found to have hypertension, leg fatigue on running, upper-extremity pressure much higher than lower, weak delayed femoral pulses, and an interscapular systolic murmur; the image is a chest radiograph showing bilateral inferior rib notching and a 3 sign contour of the aortic knob.
+- **Modality:** Frontal (PA) CHEST RADIOGRAPH, grayscale DICOM-like, pediatric.
+- **Prompt:** Photorealistic frontal (PA) CHEST RADIOGRAPH of a school-age child in grayscale with DICOM-like dynamic range and anatomically accurate thoracic anatomy. Depict COARCTATION OF THE AORTA: bilateral INFERIOR RIB NOTCHING - scalloped erosions along the undersurfaces of the posterior 3rd-8th ribs from dilated collateral intercostal arteries - and a FIGURE-3 SIGN at the left superior mediastinal / aortic knob contour (a pre-stenotic dilation, the coarctation indentation, and post-stenotic dilation creating a reversed-3 outline). The heart is normal-to-mildly enlarged, lung fields are clear, and the ribs, clavicles, and diaphragm are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Bilateral inferior rib notching (undersurface erosions)
+  - Figure-3 sign at the aortic knob contour
+  - Clear lungs with a normal-to-mildly enlarged heart
+  - Authentic pediatric frontal chest radiograph appearance
+- **Avoid (negative prompt):** an egg-on-a-string narrow-mediastinum silhouette (transposition) as the intended finding; a boot-shaped heart (tetralogy); a large box-shaped cardiomegaly; symmetric hilar adenopathy; a normal chest with smooth ribs; a CT cross-section; annotations or tubes.
+- **Real-image fallback:** Radiopaedia - search "coarctation of the aorta rib notching figure 3 sign chest radiograph"; Wikimedia Commons "coarctation aorta rib notching".
+
+### s2ck-0265 - Hirschsprung disease  (Step 2 CK - Pediatrics)
+- **Case context:** 3-day-old full-term boy who has not passed meconium, with progressive abdominal distension, bilious vomiting, feeding reluctance, a tight empty rectal vault, and a forceful gush of stool and gas on withdrawal of the examining finger; the image is a contrast enema showing a narrow distal rectosigmoid segment with an abrupt transition to markedly dilated proximal colon.
+- **Modality:** Contrast enema fluoroscopy study, frontal projection, neonatal (grayscale).
+- **Prompt:** Photorealistic frontal CONTRAST ENEMA fluoroscopy study of a neonate in grayscale, dense white rectally-instilled contrast outlining the colon, DICOM-like fluoroscopic appearance. Depict HIRSCHSPRUNG DISEASE: a NARROW, non-distended DISTAL RECTOSIGMOID (aganglionic) segment of small caliber, with an abrupt CONE-SHAPED TRANSITION ZONE to a MARKEDLY DILATED, contrast-filled PROXIMAL COLON, and a reversed rectosigmoid ratio (rectum narrower than sigmoid). Retained contrast and a mildly irregular contour of the transition are shown; the neonatal bony pelvis and lumbar spine are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Narrow distal rectosigmoid (aganglionic) segment
+  - Abrupt cone-shaped transition zone to dilated proximal colon
+  - Reversed rectosigmoid caliber ratio
+  - Authentic neonatal contrast enema appearance
+- **Avoid (negative prompt):** a microcolon with distal small-bowel meconium plugs (meconium ileus) as the intended finding; a corkscrew proximal jejunum (malrotation) as the intended finding; a uniformly dilated colon with no transition; free intraperitoneal air; a plain radiograph without contrast; a CT cross-section; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "Hirschsprung disease contrast enema transition zone rectosigmoid"; Wikimedia Commons "Hirschsprung contrast enema".
+
+### s2ck-0276 - Constrictive pericarditis  (Step 2 CK - Internal Medicine)
+- **Case context:** 61-year-old man with prior mediastinal radiation, 6 months of fatigue, leg swelling and abdominal distension, elevated jugular venous pressure that rises with inspiration (Kussmaul sign), hepatomegaly, ascites, a pericardial knock, and echo showing a septal bounce with respiratory filling variation; the image is a chest CT showing a diffusely thickened, calcified pericardium encasing the heart.
+- **Modality:** Contrast-enhanced CT of the chest, axial slice at the cardiac level, soft-tissue window (DICOM grayscale).
+- **Prompt:** Hyperrealistic axial CONTRAST-ENHANCED CT of the chest at the level of the heart in diagnostic grayscale, soft-tissue window, anatomically accurate cardiac and mediastinal anatomy with contrast-opacified chambers and realistic CT noise. Depict CONSTRICTIVE PERICARDITIS: a DIFFUSELY THICKENED PERICARDIUM with dense, bright, curvilinear CALCIFICATION forming a rigid rind that ENCASES the heart, most conspicuous over the right heart border and atrioventricular grooves. The encased ventricles show a tubular/narrowed configuration; the atria and inferior vena cava may appear dilated. Lungs, ribs, and vertebral body correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Diffusely thickened pericardium with curvilinear calcification
+  - Calcified rind encasing the heart (right border/AV grooves)
+  - Associated tubular ventricle and dilated atria/IVC
+  - Contrast-enhanced axial chest CT appearance
+- **Avoid (negative prompt):** a large simple pericardial fluid collection with no calcified rind (effusion/tamponade) as the intended finding; markedly thickened myocardial walls with a sparkling texture (amyloid/restrictive cardiomyopathy) as the intended finding; a dilated cardiomyopathy; a lung-window or noncontrast image; a normal thin pericardium; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "constrictive pericarditis pericardial calcification CT"; Wikimedia Commons "constrictive pericarditis calcified pericardium CT".
+
+### s2ck-0277 - Mitral stenosis  (Step 2 CK - Internal Medicine)
+- **Case context:** 39-year-old woman from a rheumatic-fever-endemic region with 8 months of exertional dyspnea, hemoptysis, a loud S1, an opening snap, a low-pitched apical diastolic rumble best in the left lateral position, and an irregularly irregular pulse; the image is a transthoracic echocardiogram showing a thickened mitral valve with diastolic doming (hockey-stick anterior leaflet), a reduced valve orifice, and left atrial enlargement.
+- **Modality:** Transthoracic echocardiogram, parasternal long-axis view, grayscale sector (DICOM-like).
+- **Prompt:** Photorealistic TRANSTHORACIC ECHOCARDIOGRAM in the PARASTERNAL LONG-AXIS view, diagnostic grayscale sector with realistic speckle texture and DICOM-like appearance. Depict RHEUMATIC MITRAL STENOSIS: a THICKENED, echobright MITRAL VALVE with restricted leaflet tips, so that in DIASTOLE the ANTERIOR MITRAL LEAFLET bows/DOMES toward the septum in a HOCKEY-STICK (elbow) configuration with a narrowed diastolic orifice, while the leaflet tips remain tethered. The LEFT ATRIUM is ENLARGED (dilated) behind the aortic root. The left ventricle is normal-sized; aortic root and interventricular septum correctly rendered. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Thickened mitral valve with diastolic doming (hockey-stick anterior leaflet)
+  - Narrowed mitral orifice with tethered leaflet tips
+  - Enlarged left atrium
+  - Authentic grayscale echocardiogram (parasternal long axis)
+- **Avoid (negative prompt):** a diastolic regurgitant jet into the LV outflow tract (aortic regurgitation) as the intended finding; a flail leaflet with a systolic jet into the atrium (mitral regurgitation); a calcified stenotic aortic valve; a large pericardial effusion; a normal thin pliable mitral valve; a CT/MRI cross-section; annotations or calipers.
+- **Real-image fallback:** Radiopaedia / The POCUS Atlas - search "rheumatic mitral stenosis hockey stick doming echocardiogram"; Wikimedia Commons "mitral stenosis echocardiography".
+
+### s2ck-0282 - Rocky Mountain spotted fever  (Step 2 CK - Internal Medicine)
+- **Case context:** 30-year-old man from North Carolina with high fever, severe headache, and myalgias 5 days after camping and a tick bite, then a rash, ill-appearing (39.4 C) with thrombocytopenia, hyponatremia, and mild transaminase elevation, started on empiric doxycycline; the image is a photograph of a maculopapular and petechial rash beginning on the wrists and ankles, involving the palms and soles, and spreading centrally toward the trunk.
+- **Modality:** Clinical photograph of the distal extremities (wrists/hands/ankles), dermatologic clinical photography.
+- **Prompt:** Photorealistic clinical PHOTOGRAPH of an ill adult's WRISTS, HANDS, and ANKLES in clinical lighting with accurate skin tones. Depict ROCKY MOUNTAIN SPOTTED FEVER: a blanching-to-nonblanching MACULOPAPULAR and PETECHIAL rash concentrated on the WRISTS and ANKLES and prominently involving the PALMS and SOLES, with numerous small pink-to-dusky-red macules and papules and scattered PETECHIAE, the eruption appearing to spread CENTRIPETALLY (from the extremities toward the trunk). The lesions are discrete and small (few millimeters), some coalescing; the patient looks systemically ill. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Maculopapular and petechial rash on wrists and ankles
+  - Palm and sole involvement
+  - Centripetal (extremity-to-trunk) distribution pattern
+  - Authentic clinical photograph of distal extremities
+- **Avoid (negative prompt):** a single target/bull's-eye erythema migrans lesion (Lyme) as the intended finding; a central-starting morbilliform rash sparing palms/soles (measles); confluent desquamating sunburn-like erythema (toxic shock); vesicles in a dermatome (zoster); large palpable purpura on the buttocks/legs (IgA vasculitis); a normal limb; annotations.
+- **Real-image fallback:** CDC PHIL - search "Rocky Mountain spotted fever rash palms wrists"; DermNet NZ "Rocky Mountain spotted fever"; Wikimedia Commons "Rocky Mountain spotted fever rash".
+
+### s2ck-0285 - Rotator cuff tear  (Step 2 CK - Surgery)
+- **Case context:** 58-year-old house painter with months of right shoulder pain worse overhead and at night, difficulty combing hair, weakness of abduction and external rotation, and a positive drop-arm sign, no acute dislocation; the image is a shoulder MRI showing a full-thickness tear of the supraspinatus tendon with retraction and fluid in the subacromial space.
+- **Modality:** Shoulder MRI, T2-weighted (fat-suppressed) coronal oblique image (DICOM-like grayscale).
+- **Prompt:** Photorealistic T2-weighted (fat-suppressed) CORONAL OBLIQUE MRI of the SHOULDER in grayscale with DICOM-like tissue contrast (bright fluid), anatomically accurate humeral head, greater tuberosity, glenoid, and acromion. Depict a FULL-THICKNESS SUPRASPINATUS TENDON TEAR: a fluid-bright GAP interrupting the full thickness of the SUPRASPINATUS TENDON near its greater-tuberosity footprint, with RETRACTION of the torn tendon stump medially and BRIGHT FLUID filling the tear and the SUBACROMIAL/subdeltoid space and the glenohumeral joint. The deltoid, acromion, and humeral head cartilage are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Full-thickness fluid-bright gap in the supraspinatus tendon
+  - Retraction of the torn tendon stump
+  - Fluid in the subacromial/subdeltoid space
+  - Authentic fluid-sensitive coronal shoulder MRI appearance
+- **Avoid (negative prompt):** an intact continuous tendon with only mild tendinosis as the intended finding; a bony Hill-Sachs/glenoid fracture; a labral (Bankart) tear as the dominant finding; a dislocated humeral head; a plain radiograph or CT; a normal shoulder; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "full thickness supraspinatus tear rotator cuff MRI"; Wikimedia Commons "rotator cuff tear MRI".
+
+### s2ck-0286 - Lumbar disc herniation with radiculopathy  (Step 2 CK - Surgery)
+- **Case context:** 41-year-old warehouse worker with acute lifting injury, sharp low back pain radiating down the back of the right leg to the sole, positive straight-leg raise at 40 degrees, plantarflexion weakness, diminished right ankle reflex, and lateral-foot sensory loss, no saddle anesthesia or bladder dysfunction; the image is a lumbar spine MRI showing a paracentral disc herniation at L5-S1 compressing the traversing S1 nerve root.
+- **Modality:** Lumbar spine MRI, T2-weighted AXIAL image at L5-S1 (DICOM-like grayscale).
+- **Prompt:** Photorealistic T2-weighted AXIAL MRI of the LUMBAR SPINE at the L5-S1 level in grayscale with DICOM-like tissue contrast (bright cerebrospinal fluid in the thecal sac), anatomically accurate vertebral body, disc, facet joints, and thecal sac. Depict a RIGHT PARACENTRAL DISC HERNIATION: a focal posterolateral disc protrusion extending into the RIGHT lateral recess, effacing the bright CSF and COMPRESSING/displacing the TRAVERSING RIGHT S1 NERVE ROOT against the posterior element, while the left-side roots remain surrounded by bright CSF. The disc herniation is contiguous with the parent disc; facets and posterior muscles correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Right paracentral disc herniation into the lateral recess
+  - Compression/displacement of the traversing S1 nerve root
+  - Preserved bright CSF and normal roots on the contralateral side
+  - Authentic axial T2 lumbar MRI appearance
+- **Avoid (negative prompt):** a large central herniation obliterating the whole canal and all roots (cauda equina) as the intended finding; a bright destructive marrow mass or epidural abscess; a burst fracture with retropulsed bone; a normal patent canal with roots floating in CSF; a sagittal-only or cervical image; a plain radiograph or CT; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "paracentral lumbar disc herniation L5-S1 axial MRI traversing S1 root"; Wikimedia Commons "lumbar disc herniation axial MRI".
+
+### s2ck-0287 - Chronic venous insufficiency  (Step 2 CK - Surgery)
+- **Case context:** 66-year-old woman with years of aching heavy legs worse with standing and better with elevation, bilateral ankle swelling, brown discoloration, varicosities, indurated skin above the medial malleolus, and a shallow weeping medial-ankle ulcer, with palpable pulses and a normal ankle-brachial index; the image is a photograph of the medial ankle showing hemosiderin hyperpigmentation, lipodermatosclerosis, and a shallow exudative ulcer just above the medial malleolus.
+- **Modality:** Clinical photograph of the lower leg / medial ankle (gaiter area), dermatologic clinical photography.
+- **Prompt:** Photorealistic clinical PHOTOGRAPH of an older adult's LOWER LEG and MEDIAL ANKLE (the gaiter region) in clinical lighting with accurate skin tones. Depict CHRONIC VENOUS INSUFFICIENCY: brownish HEMOSIDERIN HYPERPIGMENTATION mottling the skin around the ankle, firm, tightly bound-down, indurated woody skin with a tapered inverted-champagne-bottle leg contour (LIPODERMATOSCLEROSIS), scattered dilated tortuous VARICOSITIES, edema, and a SHALLOW, irregular, EXUDATIVE (weeping) VENOUS ULCER with a ruddy granulating base located JUST ABOVE the MEDIAL MALLEOLUS. Surrounding skin shows stasis dermatitis scaling. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Hemosiderin (brown) hyperpigmentation around the ankle
+  - Lipodermatosclerosis (indurated, bound-down skin, champagne-bottle leg)
+  - Shallow exudative venous ulcer just above the medial malleolus
+  - Authentic clinical photograph of the gaiter area
+- **Avoid (negative prompt):** a deep punched-out dry ulcer on the toes/lateral foot with pallor and shiny hairless skin (arterial ulcer) as the intended finding; a plantar neuropathic (diabetic) mal perforans ulcer; a necrotic gangrenous toe; cellulitic hot spreading erythema as the dominant finding; normal healthy skin; annotations or calipers.
+- **Real-image fallback:** DermNet NZ "venous leg ulcer lipodermatosclerosis hemosiderin"; Wikimedia Commons "venous stasis ulcer medial malleolus".
+
+### s2ck-0288 - Basal cell carcinoma  (Step 2 CK - Surgery)
+- **Case context:** 70-year-old fair-skinned farmer with extensive sun exposure and a slowly enlarging non-painful lesion on the side of the nose present over a year that bleeds with minor trauma and never fully heals; the image is a dermatologic photograph of a pearly, translucent papule with a rolled border, central ulceration, and overlying telangiectasias.
+- **Modality:** Clinical dermatologic close-up photograph of a facial skin lesion, high-resolution clinical photography.
+- **Prompt:** Photorealistic close-up CLINICAL DERMATOLOGIC PHOTOGRAPH of a lesion on the side of the nose of an older fair-skinned adult, natural clinic lighting, accurate skin texture and pores. Depict a NODULAR BASAL CELL CARCINOMA: a PEARLY, TRANSLUCENT, waxy skin-colored PAPULE/nodule with a raised ROLLED, shiny BORDER and a depressed CENTRAL ULCERATION (rodent ulcer) with a fine crust, and delicate branching ARBORIZING TELANGIECTASIAS coursing over the pearly surface. Surrounding facial skin shows chronic photodamage (mottled pigmentation, fine wrinkling). no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Pearly, translucent papule/nodule with a rolled border
+  - Central ulceration (rodent ulcer) with crust
+  - Overlying arborizing telangiectasias
+  - Authentic facial clinical dermatology photograph with photodamage
+- **Avoid (negative prompt):** an asymmetric multicolored pigmented lesion with an irregular network (melanoma) as the intended finding; a hyperkeratotic scaly plaque or cutaneous horn (squamous cell carcinoma); a stuck-on waxy verrucous plaque (seborrheic keratosis); a cherry-red vascular papule; a rough sandpaper actinic keratosis only; normal skin; annotations or calipers.
+- **Real-image fallback:** DermNet NZ "nodular basal cell carcinoma pearly telangiectasia"; Wikimedia Commons "basal cell carcinoma nose".
+
+### s2ck-0301 - Cardiac amyloidosis  (Step 2 CK - Internal Medicine)  [ECG]
+- **WARNING:** AI image generators render ECG tracings as physiologically meaningless gibberish and cannot reliably draw diffusely low-voltage limb-lead complexes with a pseudoinfarct precordial Q-wave pattern. Strongly recommend a REAL de-identified cardiac-amyloid 12-lead ECG (e.g., LITFL) or the app's own accurate vector-drawn tracing as the PRIMARY asset; use any AI output only as a placeholder and QA every complex against the criteria below.
+- **Case context:** 74-year-old man with 8 months of exertional dyspnea and edema, prior bilateral carpal tunnel release, lightheadedness, low-normal blood pressure, diuretic sensitivity, and echo showing thick sparkling ventricular walls with apical-sparing strain and preserved EF; the tracing must show diffusely low-voltage QRS complexes in the limb leads with a pseudoinfarct Q-wave pattern in the anterior precordial leads.
+- **Modality:** 12-lead ECG on standard red/pink grid.
+- **Prompt:** Photorealistic clinical 12-lead ECG printout on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines, clean black waveform trace, standard 3x4 lead layout plus a rhythm strip. Depict CARDIAC AMYLOIDOSIS: DIFFUSELY LOW-VOLTAGE QRS complexes in the LIMB leads (strikingly small amplitude in I, II, III, aVR, aVL, aVF) despite echocardiographically thick walls, together with a PSEUDOINFARCT pattern - poor R-wave progression and pathologic-appearing Q WAVES / QS complexes in the ANTERIOR PRECORDIAL leads (V1-V3) mimicking an old anterior infarct WITHOUT ST elevation. The rhythm is regular with a P before each QRS; morphology consistent across leads. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Diffusely low-voltage QRS in the limb leads
+  - Pseudoinfarct anterior precordial Q waves / poor R-wave progression
+  - No acute ST-segment elevation
+  - Standard pink ECG grid
+- **Avoid (negative prompt):** tall high-voltage LVH complexes as the intended finding; acute ST-segment elevation with reciprocal change; diffuse concave ST elevation with PR depression (pericarditis); a delta wave/short PR; an irregularly irregular chaotic rhythm; random gibberish waveforms; wrong grid color; annotations or lead labels.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "cardiac amyloidosis ECG low voltage pseudoinfarct"; Wikimedia Commons "cardiac amyloidosis ECG". Prefer the app vector tracing.
+
+### s2ck-0302 - Nonalcoholic steatohepatitis  (Step 2 CK - Internal Medicine)
+- **Case context:** 52-year-old woman with type 2 diabetes, obesity, and hyperlipidemia, minimal alcohol use, with ALT 82 and AST 60 and a negative workup for viral, iron, Wilson, and autoimmune causes; the image is an abdominal ultrasound showing a diffusely hyperechoic (bright) liver with increased hepatorenal contrast consistent with hepatic steatosis.
+- **Modality:** Abdominal ULTRASOUND, grayscale sagittal view through the liver and right kidney (DICOM-like).
+- **Prompt:** Photorealistic ABDOMINAL ULTRASOUND image in diagnostic grayscale, sagittal view showing the RIGHT LIVER LOBE and the adjacent RIGHT KIDNEY in the same field, realistic fine speckle texture, sector edges, and DICOM-like appearance. Depict HEPATIC STEATOSIS (fatty liver): the LIVER PARENCHYMA is DIFFUSELY HYPERECHOIC ("BRIGHT" liver), noticeably BRIGHTER than the adjacent RENAL CORTEX, producing increased HEPATORENAL CONTRAST, with fine homogeneous echotexture and posterior beam ATTENUATION so the deep liver and diaphragm appear dimmer/blurred. Intrahepatic vessel walls appear less distinct than normal. The kidney and diaphragm are correctly rendered for comparison. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Diffusely hyperechoic (bright) liver
+  - Increased hepatorenal contrast (liver brighter than renal cortex)
+  - Posterior beam attenuation with blurred deep liver/vessel walls
+  - Authentic grayscale abdominal ultrasound (liver and kidney in view)
+- **Avoid (negative prompt):** a coarse nodular shrunken liver with ascites (cirrhosis) as the intended finding; a focal solid or cystic liver mass; a dilated biliary tree with a stone; a normal liver isoechoic to the kidney; a CT/MRI cross-section; a color-Doppler-only image; annotations or calipers dominating the frame.
+- **Real-image fallback:** Radiopaedia / The POCUS Atlas - search "hepatic steatosis fatty liver ultrasound hepatorenal contrast bright liver"; Wikimedia Commons "fatty liver ultrasound".
+
+### s2ck-0307 - Chronic pancreatitis  (Step 2 CK - Internal Medicine)
+- **Case context:** 49-year-old man with long heavy alcohol use, months of gnawing epigastric pain boring to the back, 9 kg weight loss, bulky greasy floating stools (steatorrhea), and new fasting hyperglycemia (168); the image is a noncontrast abdominal CT showing scattered coarse parenchymal calcifications throughout the pancreas with a dilated main pancreatic duct.
+- **Modality:** Noncontrast CT of the abdomen, axial slice, soft-tissue window (DICOM grayscale).
+- **Prompt:** Hyperrealistic axial NONCONTRAST CT of the abdomen in diagnostic grayscale, soft-tissue window, radiologically accurate upper-abdominal anatomy with realistic CT noise. Depict CHRONIC PANCREATITIS: numerous scattered COARSE, BRIGHT PARENCHYMAL CALCIFICATIONS studded throughout the head, body, and tail of an ATROPHIC pancreas, with a DILATED, beaded MAIN PANCREATIC DUCT coursing through the gland (some calcifications appearing intraductal). The pancreas is shrunken with an irregular contour; the liver, spleen, aorta, kidneys, and vertebral body are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Coarse parenchymal (and intraductal) pancreatic calcifications
+  - Dilated, beaded main pancreatic duct
+  - Atrophic, irregular pancreatic parenchyma
+  - Authentic noncontrast axial abdominal CT appearance
+- **Avoid (negative prompt):** a diffusely edematous enlarged pancreas with peripancreatic stranding and no calcification (acute pancreatitis) as the intended finding; a focal hypodense head mass with a double-duct sign (carcinoma); a simple thin-walled pseudocyst as the dominant finding; a normal pancreas; a lung-window image; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "chronic pancreatitis CT calcifications dilated pancreatic duct"; Wikimedia Commons "chronic calcific pancreatitis CT".
+
+### s2ck-0308 - Primary spontaneous pneumothorax  (Step 2 CK - Surgery)
+- **Case context:** Tall thin 22-year-old male smoker with sudden right pleuritic chest pain and dyspnea, mild distress, stable blood pressure, heart rate 98, saturation 93%, decreased right breath sounds with hyperresonance, and a midline trachea; the image is an upright chest radiograph showing a large right-sided pneumothorax with the lung edge visible about 3 cm from the chest wall, without mediastinal shift.
+- **Modality:** Upright frontal (PA) CHEST RADIOGRAPH, grayscale DICOM-like.
+- **Prompt:** Photorealistic upright frontal (PA) CHEST RADIOGRAPH of a young adult in grayscale with DICOM-like dynamic range and anatomically accurate thoracic anatomy. Depict a PRIMARY SPONTANEOUS PNEUMOTHORAX on the RIGHT: a well-defined thin white VISCERAL PLEURAL EDGE (the collapsed lung margin) is visible about 3 cm INSIDE the chest wall, with a HYPERLUCENT, AVASCULAR (black, no lung markings) space between the pleural edge and the ribs peripherally. The RIGHT LUNG is partially collapsed toward the hilum. Importantly the MEDIASTINUM and TRACHEA remain MIDLINE (NO shift), and the right hemidiaphragm is NOT depressed. The left lung is normally aerated; ribs and soft tissues correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Visible visceral pleural edge with a peripheral avascular lucent zone (right)
+  - Partial lung collapse toward the hilum
+  - Midline mediastinum and trachea (NO shift), non-depressed diaphragm
+  - Authentic upright frontal chest radiograph appearance
+- **Avoid (negative prompt):** mediastinal/tracheal shift AWAY from the lucent side with a depressed diaphragm (tension pneumothorax) as the intended finding; a large pleural effusion with a meniscus; a lobar consolidation; complete whiteout collapse with shift toward the opacity; a normal symmetric chest; a CT cross-section; a chest tube already placed; annotations.
+- **Real-image fallback:** Radiopaedia - search "primary spontaneous pneumothorax chest radiograph lung edge"; Wikimedia Commons "spontaneous pneumothorax x-ray".
+
+### s2ck-0310 - Gastric adenocarcinoma  (Step 2 CK - Surgery)
+- **Case context:** 66-year-old man with 4 months of early satiety, epigastric discomfort, 10 kg weight loss, pallor, iron-deficiency anemia, and a firm left supraclavicular node (Virchow); the image is an upper endoscopy view showing a large ulcerated mass with heaped, irregular, friable margins along the gastric body, biopsy showing signet-ring malignant cells.
+- **Modality:** Upper GI ENDOSCOPY (esophagogastroduodenoscopy) photograph, endoluminal color video-endoscopic image.
+- **Prompt:** Photorealistic UPPER GI ENDOSCOPY (endoluminal) color photograph inside the stomach, with the characteristic fish-eye wide-angle endoscopic view, glistening pink-red gastric mucosa with rugal folds, and realistic bright endoscope illumination and light reflections. Depict GASTRIC ADENOCARCINOMA: a large MALIGNANT ULCERATED MASS along the gastric body with HEAPED-UP, ROLLED, IRREGULAR, NODULAR MARGINS surrounding a dirty necrotic ulcer crater, the surface FRIABLE with contact bleeding and disrupted converging rugal folds that stop abruptly at the mass. Adjacent normal gastric folds and the endoscopic lumen are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Ulcerated gastric mass with heaped, irregular, rolled margins
+  - Friable surface with contact bleeding and abrupt fold cutoff
+  - Endoluminal wide-angle endoscopic appearance with realistic illumination
+  - Adjacent gastric rugae for context
+- **Avoid (negative prompt):** a small, clean, punched-out benign gastric ulcer with smooth regular margins and radiating folds as the intended finding; normal smooth gastric mucosa; esophageal squamous mucosa or a Z-line; colonic haustra/polyp; an external CT or barium image; a histology slide; annotations or calipers.
+- **Real-image fallback:** WebPathology / PathologyOutlines gross and endoscopic "gastric adenocarcinoma"; Radiopaedia endoscopy images; Wikimedia Commons "gastric cancer endoscopy".
+
+### s2ck-0314 - Placenta accreta spectrum  (Step 2 CK - Obstetrics & Gynecology)
+- **Case context:** 34-year-old woman (G4P3) at 32 weeks with three prior cesarean deliveries and a known placenta previa, asymptomatic, referred for detailed imaging to plan delivery; the image is an obstetric ultrasound with color Doppler showing an anterior placenta overlying the prior cesarean scar with loss of the retroplacental clear zone, multiple vascular lacunae (Swiss-cheese appearance), and disruption of the bladder-uterine interface.
+- **Modality:** Obstetric ULTRASOUND with color Doppler, grayscale sector with a color box (DICOM-like), sagittal lower-uterine view.
+- **Prompt:** Photorealistic OBSTETRIC ULTRASOUND image in diagnostic grayscale with a superimposed color-Doppler box, sagittal view of the lower uterine segment and maternal bladder, realistic fine speckle texture and DICOM-like appearance. Depict PLACENTA ACCRETA SPECTRUM: an ANTERIOR PLACENTA covering the lower uterine segment over the prior cesarean scar, with LOSS of the normal hypoechoic RETROPLACENTAL CLEAR ZONE, MULTIPLE irregular intraplacental VASCULAR LACUNAE (anechoic lakes giving a moth-eaten SWISS-CHEESE appearance), THINNING/loss of the myometrium beneath the placenta, and DISRUPTION of the bright BLADDER-UTERINE (serosa-bladder) INTERFACE with turbulent bridging color-Doppler vessels crossing toward the bladder wall. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Anterior low placenta with loss of the retroplacental clear zone
+  - Multiple intraplacental vascular lacunae (Swiss-cheese)
+  - Thinned myometrium and disrupted bladder-uterine interface with bridging vessels
+  - Authentic grayscale obstetric ultrasound with a color-Doppler box
+- **Avoid (negative prompt):** a normal placenta with an intact hypoechoic retroplacental clear zone and a smooth bladder line as the intended finding; a simple placenta previa without lacunae or myometrial invasion; a retroplacental hematoma (abruption); an empty uterus; a fetal-only view; a CT/MRI cross-section; annotations or calipers dominating the frame.
+- **Real-image fallback:** Radiopaedia / The POCUS Atlas - search "placenta accreta spectrum ultrasound lacunae loss retroplacental clear zone"; Wikimedia Commons "placenta accreta ultrasound".
+
+### s3-0266 - Slipped capital femoral epiphysis  (Step 3 - Pediatrics)
+- **Case context:** 13-year-old boy with obesity, several weeks of dull left hip and knee pain and a limp without trauma or fever, the hip held externally rotated with lost internal rotation and obligate external rotation on flexion; the image is a frog-leg lateral pelvis radiograph showing posteroinferior displacement of the left femoral epiphysis relative to the femoral neck.
+- **Modality:** Frog-leg LATERAL PELVIS RADIOGRAPH, grayscale DICOM-like, adolescent.
+- **Prompt:** Photorealistic FROG-LEG LATERAL PELVIS RADIOGRAPH of an adolescent in grayscale with DICOM-like dynamic range and anatomically accurate bony pelvis, both proximal femora, and open growth plates. Depict a SLIPPED CAPITAL FEMORAL EPIPHYSIS on the LEFT: the LEFT femoral capital EPIPHYSIS (femoral head) is displaced POSTEROINFERIORLY relative to the femoral neck, so it appears to slip off the metaphysis like ice cream slipping off a cone, with a widened, irregular physis; a line drawn along the superior femoral neck (Klein line) fails to intersect the slipped epiphysis on the left. The RIGHT hip is normal with the physeal line intersecting its epiphysis for comparison. Acetabula and pubic rami correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Posteroinferior slip of the left capital femoral epiphysis relative to the neck
+  - Widened/irregular physis; Klein line missing the epiphysis on the affected side
+  - Normal right hip for comparison
+  - Authentic frog-leg lateral pelvis radiograph appearance
+- **Avoid (negative prompt):** a fragmented, sclerotic, flattened femoral head (Legg-Calve-Perthes avascular necrosis) as the intended finding; a displaced femoral neck fracture in an adult; bilateral SI joint fusion; a normal congruent hip on the affected side; a dislocated empty acetabulum; a CT/MRI; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "slipped capital femoral epiphysis frog leg lateral Klein line"; Wikimedia Commons "SCFE radiograph".
+
+### s3-0273 - Acute aortic dissection  (Step 3 - Emergency Medicine)
+- **Case context:** 63-year-old man with longstanding hypertension and abrupt severe tearing chest pain radiating to the back, hypertensive with a 22 mm Hg interarm systolic difference, hemodynamically stable; the image is a portable chest radiograph showing a widened mediastinum.
+- **Modality:** Portable (AP) CHEST RADIOGRAPH, grayscale DICOM-like.
+- **Prompt:** Photorealistic portable ANTEROPOSTERIOR (AP) CHEST RADIOGRAPH of an adult in grayscale with DICOM-like dynamic range and anatomically accurate thoracic anatomy. Depict findings suggesting THORACIC AORTIC DISSECTION: a MARKEDLY WIDENED MEDIASTINUM with an abnormally broad, convex aortic contour and an enlarged, indistinct AORTIC KNOB, with the superior mediastinal silhouette bulging beyond normal width. The tracheal air column may be mildly deviated to the right and there may be a small left apical pleural cap. The lung fields are relatively clear, the heart size is normal, and the ribs and soft tissues are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Widened mediastinum with a broad, convex aortic contour
+  - Enlarged/indistinct aortic knob
+  - Relatively clear lungs, possible small left apical pleural cap
+  - Authentic portable AP chest radiograph appearance
+- **Avoid (negative prompt):** a large lobar consolidation or bilateral airspace edema as the intended finding; a lucent avascular pneumothorax with shift; free subdiaphragmatic air; a globular enlarged heart with effusions; a normal narrow mediastinum; a CT cross-section (this is the plain film); annotations or tubes dominating the frame.
+- **Real-image fallback:** Radiopaedia - search "aortic dissection widened mediastinum chest radiograph"; Wikimedia Commons "aortic dissection chest x-ray widened mediastinum".
+
+### s3-0275 - Sigmoid volvulus  (Step 3 - Surgery)
+- **Case context:** 78-year-old bedbound nursing-home resident with chronic constipation and 1 day of progressive distension, cramping pain, and no passage of stool or flatus, with a markedly distended tympanitic but soft abdomen and no peritoneal signs; the image is an abdominal radiograph showing a massively dilated inverted-U (coffee-bean) loop of colon arising from the pelvis.
+- **Modality:** Supine/upright abdominal radiograph (KUB), grayscale DICOM-like.
+- **Prompt:** Photorealistic ABDOMINAL RADIOGRAPH of an older adult in grayscale with DICOM-like dynamic range and anatomically accurate bowel gas pattern. Depict SIGMOID VOLVULUS: a MASSIVELY DILATED, gas-filled INVERTED-U / COFFEE-BEAN loop of colon arising from the PELVIS and ascending toward the upper abdomen, often reaching above the transverse colon (northern exposure), with a central cleft (apposed medial walls) forming the bean's seam and the loop apex pointing toward the LEFT/RIGHT upper quadrant. The dilated loop is devoid of haustra; there is upstream colonic distension. Lumbar spine, psoas margins, and bony pelvis correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Massively dilated inverted-U / coffee-bean loop arising from the pelvis
+  - Central cleft (apposed walls) and loss of haustra in the loop
+  - Upstream colonic distension
+  - Authentic abdominal radiograph appearance
+- **Avoid (negative prompt):** a coffee-bean loop pointing to the left upper quadrant with small-bowel obstruction (cecal volvulus) as the intended finding; free subdiaphragmatic air; an ectopic gallstone with pneumobilia; diffuse ascites; a normal gas pattern; a CT cross-section; annotations or tubes.
+- **Real-image fallback:** Radiopaedia - search "sigmoid volvulus coffee bean inverted U abdominal radiograph"; Wikimedia Commons "sigmoid volvulus x-ray".
+
+### s3-0314 - Multiple sclerosis  (Step 3 - Internal Medicine)
+- **Case context:** 30-year-old woman with two distinct neurologic episodes months apart (painful monocular vision loss that resolved, then a band of ascending trunk numbness), now with an internuclear ophthalmoplegia and brisk reflexes; the image is a T2/FLAIR brain MRI showing multiple ovoid periventricular white-matter lesions oriented perpendicular to the ventricles (Dawson fingers).
+- **Modality:** Brain MRI, sagittal or axial FLAIR sequence (DICOM-like grayscale).
+- **Prompt:** Photorealistic BRAIN MRI, FLAIR sequence, in diagnostic grayscale with suppressed (dark) cerebrospinal fluid, anatomically accurate cerebral anatomy. Depict MULTIPLE SCLEROSIS with DAWSON FINGERS: MULTIPLE discrete OVOID HYPERINTENSE (bright) white-matter lesions arrayed along the PERIVENTRICULAR margins and callososeptal interface, several elongated and oriented PERPENDICULAR to the lateral ventricles, radiating outward like fingers along the deep medullary veins. Additional smaller juxtacortical/infratentorial lesions are present. Ventricles, corpus callosum, and skull correctly rendered against dark suppressed CSF. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Multiple ovoid periventricular hyperintense lesions
+  - Perpendicular (Dawson-finger) orientation to the ventricles
+  - FLAIR contrast with dark suppressed CSF
+  - Authentic brain MRI appearance
+- **Avoid (negative prompt):** a single ring-enhancing mass with vasogenic edema (abscess/tumor) as the intended finding; symmetric confluent chronic small-vessel change only; a wedge-shaped cortical infarct; hyperdense acute blood; a normal brain; a CT image; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "multiple sclerosis Dawson fingers FLAIR MRI"; Wikimedia Commons "multiple sclerosis MRI Dawson fingers".
+
+### s3-0315 - Retinoblastoma (leukocoria)  (Step 3 - Pediatrics)
+- **Case context:** 14-month-old girl whose parents noticed a white glow in one pupil in recent flash photographs, with an absent red reflex that appears white in that eye; the image is a red-reflex examination showing leukocoria (a white pupillary reflex) in the right eye instead of the normal red reflex.
+- **Modality:** Clinical photograph demonstrating the RED-REFLEX (Bruckner) test in an infant, flash photography of the eyes.
+- **Prompt:** Photorealistic clinical FLASH PHOTOGRAPH of an infant's face focused on both EYES during a RED-REFLEX examination, natural infant facial proportions and skin tones, with a camera flash producing pupillary reflexes. Depict LEUKOCORIA of RETINOBLASTOMA: the RIGHT pupil returns a bright WHITE / creamy-yellow PUPILLARY REFLEX (LEUKOCORIA) instead of the normal red-orange glow, while the LEFT pupil shows a NORMAL symmetric RED-ORANGE reflex for contrast. Both eyes are otherwise white and quiet with no redness, discharge, or lid swelling. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - White pupillary reflex (leukocoria) in one eye
+  - Normal red-orange reflex in the contralateral eye
+  - Quiet, non-inflamed external eyes
+  - Authentic infant red-reflex flash photograph
+- **Avoid (negative prompt):** bilaterally symmetric normal red reflexes as the intended finding; a red conjunctival injection or discharge (conjunctivitis); a cloudy corneal opacity or a large corneal white lesion; a fundoscopic internal-eye view (this is an external red-reflex photo); an adult face; annotations.
+- **Real-image fallback:** American Academy of Ophthalmology / CDC image library - search "leukocoria red reflex retinoblastoma"; Wikimedia Commons "leukocoria retinoblastoma".
+
+### s3-0323 - Acute pericarditis  (Step 3 - Emergency Medicine)  [ECG]
+- **WARNING:** AI image generators render ECG tracings as physiologically meaningless gibberish and cannot reliably draw diffuse concave-upward ST elevation with PR-segment depression across multiple leads. Strongly recommend a REAL de-identified acute-pericarditis 12-lead ECG (e.g., LITFL) or the app's own accurate vector-drawn tracing as the PRIMARY asset; use any AI output only as a placeholder and QA every complex against the criteria below.
+- **Case context:** 34-year-old man with 2 days of sharp pleuritic chest pain worse lying flat and better sitting forward after a viral illness, with a three-component friction rub and hemodynamic stability; the tracing must show diffuse concave-upward ST-segment elevation across multiple leads with associated PR-segment depression.
+- **Modality:** 12-lead ECG on standard red/pink grid.
+- **Prompt:** Photorealistic clinical 12-lead ECG printout on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines, clean black waveform trace, standard 3x4 lead layout plus a rhythm strip. Depict ACUTE PERICARDITIS: DIFFUSE, CONCAVE-UPWARD (saddle-shaped) ST-SEGMENT ELEVATION present across MULTIPLE leads spanning both limb and precordial territories (I, II, aVF, V2-V6) rather than a single coronary territory, together with PR-SEGMENT DEPRESSION in those same leads and reciprocal PR ELEVATION with ST depression in aVR. The rhythm is regular sinus with narrow QRS and no pathologic Q waves; morphology consistent across leads. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Diffuse concave-upward ST elevation across multiple (non-territorial) leads
+  - PR-segment depression (with reciprocal PR elevation/ST depression in aVR)
+  - Sinus rhythm, narrow QRS, no pathologic Q waves
+  - Standard pink ECG grid
+- **Avoid (negative prompt):** convex/tombstone ST elevation localized to one coronary territory with reciprocal ST depression and Q waves (STEMI) as the intended finding; low-voltage complexes with electrical alternans; transient single-territory ST elevation; a delta wave; random gibberish waveforms; wrong grid color; annotations or lead labels.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "acute pericarditis ECG diffuse ST elevation PR depression"; Wikimedia Commons "pericarditis ECG". Prefer the app vector tracing.
+
+### s3-0324 - Epidural hematoma  (Step 3 - Emergency Medicine)
+- **Case context:** 20-year-old man struck in the side of the head by a baseball with a brief loss of consciousness, then an hour-long lucid interval before rapid confusion and difficulty arousing, now with one fixed dilated pupil; the image is a noncontrast head CT showing a biconvex (lens-shaped) hyperdense extra-axial collection that does not cross suture lines.
+- **Modality:** Noncontrast head CT, axial slice, brain window (DICOM grayscale).
+- **Prompt:** Hyperrealistic axial NONCONTRAST HEAD CT in diagnostic grayscale, brain window, anatomically accurate cranial and brain anatomy with realistic CT noise and a rendered skull. Depict an acute EPIDURAL HEMATOMA: a BICONVEX, LENS-SHAPED (lentiform) HYPERDENSE (bright white, acute blood) extra-axial collection hugging the inner table of the skull over the temporoparietal convexity, its margins bulging inward and sharply CONFINED so it DOES NOT cross the cranial suture lines. There is local MASS EFFECT - effacement of adjacent sulci, compression of the ipsilateral lateral ventricle, and slight MIDLINE SHIFT away from the clot. A subtle overlying skull fracture may be present. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Biconvex (lens-shaped) hyperdense extra-axial collection
+  - Confined by sutures (does not cross suture lines)
+  - Mass effect with sulcal effacement and midline shift
+  - Authentic noncontrast head CT, brain window
+- **Avoid (negative prompt):** a crescentic collection spreading along the convexity and crossing sutures (subdural) as the intended finding; blood filling the basal cisterns/sulci (subarachnoid); a focal intraparenchymal hematoma; a hypodense wedge infarct; a normal symmetric brain; a bone-window-only image; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "epidural hematoma CT biconvex lens-shaped"; Wikimedia Commons "epidural hematoma CT".
+
+### s3-0361 - Primary sclerosing cholangitis  (Step 3 - Internal Medicine)
+- **Case context:** 35-year-old man with several-year ulcerative colitis, fatigue and pruritus, a cholestatic pattern with markedly elevated alkaline phosphatase, and no fever or right-upper-quadrant pain; the image is an MRCP showing multifocal intrahepatic and extrahepatic bile-duct strictures alternating with segments of dilatation, producing a beaded appearance.
+- **Modality:** Magnetic resonance cholangiopancreatography (MRCP), heavily T2-weighted maximum-intensity-projection image (DICOM-like grayscale, bright fluid).
+- **Prompt:** Photorealistic MAGNETIC RESONANCE CHOLANGIOPANCREATOGRAPHY (MRCP) maximum-intensity-projection image in diagnostic grayscale with a dark background and BRIGHT high-signal fluid, anatomically accurate biliary tree, gallbladder, and pancreatic duct. Depict PRIMARY SCLEROSING CHOLANGITIS: the INTRAHEPATIC and EXTRAHEPATIC BILE DUCTS show MULTIFOCAL short STRICTURES (narrowed/pruned segments) ALTERNATING with intervening mildly DILATED segments, producing the classic BEADED, irregular "string-of-beads" appearance with pruning of peripheral intrahepatic branches. The pancreatic duct is normal; gallbladder and duodenum correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Multifocal biliary strictures alternating with dilated segments (beaded)
+  - Both intrahepatic and extrahepatic duct involvement with peripheral pruning
+  - Bright-fluid MRCP MIP appearance on a dark background
+  - Normal pancreatic duct
+- **Avoid (negative prompt):** a single dominant distal stricture with uniform upstream dilation and a stone (choledocholithiasis/malignant obstruction) as the intended finding; a smoothly dilated biliary tree with no strictures; the double-duct sign of pancreatic head cancer; a normal smooth biliary tree; a soft-tissue CT slice; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "primary sclerosing cholangitis MRCP beaded strictures"; Wikimedia Commons "primary sclerosing cholangitis MRCP".
+
+### s3-0365 - Wilms tumor  (Step 3 - Pediatrics)
+- **Case context:** 3-year-old previously healthy girl with a smooth, firm flank mass that does not cross the midline, mild hypertension, one episode of painless hematuria, otherwise thriving; the image is an abdominal ultrasound showing a large, well-circumscribed solid mass arising from and within the kidney.
+- **Modality:** Abdominal (renal) ULTRASOUND, grayscale sector view (DICOM-like), pediatric.
+- **Prompt:** Photorealistic pediatric ABDOMINAL (renal) ULTRASOUND image in diagnostic grayscale, sector field with realistic fine speckle texture and DICOM-like appearance. Depict a WILMS TUMOR: a LARGE, WELL-CIRCUMSCRIBED, predominantly SOLID heterogeneous MASS arising from and EXPANDING the KIDNEY, with a thin rim/claw of preserved echogenic RENAL PARENCHYMA stretched around one margin confirming an intrarenal origin. The mass distorts the renal contour and displaces the collecting system; the remaining normal kidney, liver, and diaphragm are correctly rendered for context. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Large well-circumscribed solid mass arising from within the kidney (claw of renal parenchyma)
+  - Distortion of the renal contour and collecting system
+  - Predominantly solid (not purely cystic) architecture
+  - Authentic grayscale pediatric renal ultrasound appearance
+- **Avoid (negative prompt):** a suprarenal mass with calcification crossing the midline and encasing the aorta, separate from the kidney (neuroblastoma) as the intended finding; a dilated anechoic collecting system with no solid tissue (hydronephrosis); multiple cysts replacing both kidneys (polycystic); a normal kidney; a CT/MRI cross-section; a color-Doppler-only image; annotations or calipers.
+- **Real-image fallback:** Radiopaedia / The POCUS Atlas - search "Wilms tumor nephroblastoma renal ultrasound solid mass"; Wikimedia Commons "Wilms tumor ultrasound".
+
+### s3-0373 - Central retinal artery occlusion  (Step 3 - Emergency Medicine)
+- **Case context:** 68-year-old man with atherosclerotic risk factors and sudden painless complete monocular vision loss, with a relative afferent pupillary defect in the affected eye; the image is a fundus photograph showing a diffusely pale, edematous retina with a cherry-red spot at the macula.
+- **Modality:** Dilated FUNDUS (retinal) photograph, color fundus camera image.
+- **Prompt:** Photorealistic COLOR FUNDUS PHOTOGRAPH of an adult retina through a dilated pupil, circular fundus-camera field, accurate ophthalmoscopic detail. Depict a CENTRAL RETINAL ARTERY OCCLUSION: a DIFFUSELY PALE, opacified, edematous (whitened, milky) RETINA from ischemic inner-retinal swelling, with a striking CHERRY-RED SPOT at the FOVEA/MACULA (the thin foveola letting the intact choroidal red show through against the surrounding pale retina). The retinal ARTERIES are ATTENUATED/thread-like with segmented (boxcar) flow; the optic disc is pale. Background choroidal pattern correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Diffusely pale, edematous (whitened) retina
+  - Cherry-red spot at the macula
+  - Attenuated retinal arteries (boxcarring)
+  - Authentic circular color fundus photograph
+- **Avoid (negative prompt):** a creamy-white elevated retinal mass with feeder vessels (retinoblastoma) as the intended finding; a blood-and-thunder fundus with widespread hemorrhages and a swollen disc (central retinal vein occlusion); dot-blot hemorrhages and hard exudates (diabetic retinopathy); a normal orange fundus; a cupped glaucomatous disc; an external eye photo; annotations.
+- **Real-image fallback:** Radiopaedia / American Academy of Ophthalmology library - search "central retinal artery occlusion cherry red spot fundus"; Wikimedia Commons "central retinal artery occlusion fundus".
+
+### s3-0375 - Achalasia  (Step 3 - Surgery)
+- **Case context:** 45-year-old man with a year of progressive dysphagia to solids AND liquids from the outset, regurgitation of undigested food, modest weight loss, and occasional retrosternal discomfort; the image is a barium esophagram showing a dilated esophageal body tapering to a smooth bird-beak narrowing at the gastroesophageal junction.
+- **Modality:** Barium esophagram (contrast swallow), upright frontal projection, fluoroscopic grayscale.
+- **Prompt:** Photorealistic upright frontal BARIUM ESOPHAGRAM (contrast swallow) in fluoroscopic grayscale with anatomically accurate thoracic esophageal course, dense white barium column. Depict ACHALASIA: a DILATED thoracic ESOPHAGEAL BODY holding a column of barium (often with a retained air-fluid level superiorly) that TAPERS SMOOTHLY and symmetrically to a narrow point at the GASTROESOPHAGEAL JUNCTION - the classic BIRD-BEAK narrowing - with delayed emptying into the stomach. The narrowing is smooth and symmetric without a shouldered mass. Spine, diaphragm, and gastric bubble correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Dilated esophageal body proximal to the narrowing
+  - Smooth, symmetric bird-beak taper at the gastroesophageal junction
+  - Barium hold-up with delayed emptying
+  - Authentic upright barium esophagram appearance
+- **Avoid (negative prompt):** an irregular shouldered stricture with mucosal destruction (carcinoma) as the intended finding; a posterior cervical outpouching (Zenker) as the intended finding; a corkscrew multiple-contraction esophagus (spasm); a lower-esophageal ring; a normal thin esophagus; an axial CT; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "achalasia barium swallow bird beak dilated esophagus"; Wikimedia Commons "achalasia bird beak barium".
+
+### s3-0404 - Placenta accreta spectrum  (Step 3 - Obstetrics & Gynecology)
+- **Case context:** 34-year-old woman at 32 weeks with a known placenta previa and two prior cesarean deliveries, no bleeding, undergoing surveillance ultrasound to plan delivery; the image is an obstetric ultrasound showing multiple irregular placental lacunae, loss of the normal hypoechoic retroplacental clear zone, and thinning of the myometrium beneath the placenta, with increased vascularity at the uterine-bladder interface on Doppler.
+- **Modality:** Obstetric ULTRASOUND with color Doppler, grayscale sector with a color box (DICOM-like), sagittal lower-uterine view.
+- **Prompt:** Photorealistic OBSTETRIC ULTRASOUND image in diagnostic grayscale with a superimposed color-Doppler box, sagittal view of the lower uterine segment and maternal bladder, realistic fine speckle texture and DICOM-like appearance. Depict PLACENTA ACCRETA SPECTRUM: an anterior low PLACENTA with MULTIPLE irregular intraplacental VASCULAR LACUNAE (anechoic moth-eaten lakes), LOSS of the normal hypoechoic RETROPLACENTAL CLEAR ZONE, marked THINNING/loss of the underlying MYOMETRIUM, and INCREASED turbulent VASCULARITY with bridging color-Doppler vessels crossing the UTERINE-BLADDER INTERFACE toward the bladder wall. The fetal presenting part and bladder are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Multiple intraplacental vascular lacunae
+  - Loss of the retroplacental clear zone with thinned myometrium
+  - Increased vascularity / bridging vessels at the uterine-bladder interface
+  - Authentic grayscale obstetric ultrasound with a color-Doppler box
+- **Avoid (negative prompt):** a normal placenta with an intact hypoechoic clear zone and smooth bladder line as the intended finding; a simple previa without lacunae or invasion; a retroplacental hematoma (abruption); an empty uterus; a fetal-only view; a CT/MRI cross-section; annotations or calipers dominating the frame.
+- **Real-image fallback:** Radiopaedia / The POCUS Atlas - search "placenta accreta spectrum ultrasound lacunae loss retroplacental clear zone"; Wikimedia Commons "placenta accreta ultrasound".
+
+### s3-0405 - Zenker diverticulum  (Step 3 - Surgery)
+- **Case context:** 70-year-old man with months of progressive dysphagia, regurgitation of undigested food hours after meals, chronic halitosis, a gurgling neck sensation, undigested food on the pillow at night, and episodes of coughing and aspiration; the image is a barium esophagram showing a posterior midline outpouching at the pharyngoesophageal junction just above the upper esophageal sphincter.
+- **Modality:** Barium esophagram (contrast swallow), lateral projection, fluoroscopic grayscale.
+- **Prompt:** Photorealistic lateral BARIUM ESOPHAGRAM (contrast swallow) in fluoroscopic grayscale with anatomically accurate pharynx, cervical spine, and cervical esophagus, dense white barium column. Depict a ZENKER DIVERTICULUM: at the PHARYNGOESOPHAGEAL JUNCTION, JUST ABOVE the upper esophageal sphincter (cricopharyngeus level), a POSTERIOR MIDLINE out-pouching (false diverticulum) projects backward and downward and RETAINS a pool of barium, overhanging the cervical esophagus below; a horizontal cricopharyngeal bar may indent the barium column. The distal esophagus is normal caliber. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Posterior contrast-filled outpouching at the pharyngoesophageal junction
+  - Retained barium pooling within the sac, above the upper esophageal sphincter
+  - Possible cricopharyngeal bar indentation
+  - Authentic lateral barium esophagram appearance
+- **Avoid (negative prompt):** a smooth bird-beak tapering at the gastroesophageal junction (achalasia) as the intended finding; a distal epiphrenic diverticulum near the diaphragm; a corkscrew esophagus (spasm); a lower-esophageal Schatzki ring; an intraluminal mass; an axial CT cross-section; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "Zenker diverticulum barium swallow pharyngoesophageal"; Wikimedia Commons "Zenker diverticulum barium".
+
+### s3-0406 - Hirschsprung disease  (Step 3 - Pediatrics)
+- **Case context:** Term neonate who did not pass meconium in the first 48 hours, now with progressive abdominal distension and bilious vomiting, a tight anal canal on rectal exam, and an explosive gush of stool and gas on finger withdrawal; the image is a contrast enema showing a narrow distal rectosigmoid segment with an abrupt transition zone to dilated proximal colon.
+- **Modality:** Contrast enema fluoroscopy study, frontal projection, neonatal (grayscale).
+- **Prompt:** Photorealistic frontal CONTRAST ENEMA fluoroscopy study of a neonate in grayscale, dense white rectally-instilled contrast outlining the colon, DICOM-like fluoroscopic appearance. Depict HIRSCHSPRUNG DISEASE: a NARROW, non-distended DISTAL RECTOSIGMOID (aganglionic) segment of small caliber, with an abrupt CONE-SHAPED TRANSITION ZONE to a MARKEDLY DILATED, contrast-filled PROXIMAL COLON, and a reversed rectosigmoid ratio (rectum narrower than sigmoid). Retained contrast and a mildly irregular transition contour are shown; the neonatal bony pelvis and lumbar spine are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Narrow distal rectosigmoid (aganglionic) segment
+  - Abrupt cone-shaped transition zone to dilated proximal colon
+  - Reversed rectosigmoid caliber ratio
+  - Authentic neonatal contrast enema appearance
+- **Avoid (negative prompt):** a microcolon with distal small-bowel meconium plugs (meconium ileus) as the intended finding; a corkscrew proximal jejunum (malrotation); a uniformly dilated colon with no transition; free intraperitoneal air; a plain radiograph without contrast; a CT cross-section; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "Hirschsprung disease contrast enema transition zone rectosigmoid"; Wikimedia Commons "Hirschsprung contrast enema".
+
+### s3-0276 - Symptomatic severe aortic stenosis  (Step 3 - Internal Medicine)
+- **Case context:** 72-year-old man with months of exertional dyspnea and exertional syncope, a harsh late-peaking crescendo-decrescendo systolic murmur at the right upper sternal border radiating to both carotids, and diminished delayed carotid upstrokes (parvus et tardus); the image is a transthoracic echocardiogram showing a calcified trileaflet aortic valve with a valve area of 0.8 cm2, mean gradient 45 mm Hg, and preserved ejection fraction.
+- **Modality:** Transthoracic echocardiogram, parasternal long-axis / short-axis view of the aortic valve, grayscale sector (DICOM-like).
+- **Prompt:** Photorealistic TRANSTHORACIC ECHOCARDIOGRAM of the AORTIC VALVE (parasternal long-axis with a short-axis inset feel), diagnostic grayscale sector with realistic speckle texture and DICOM-like appearance. Depict SEVERE CALCIFIC AORTIC STENOSIS: a THICKENED, densely CALCIFIED (echobright) trileaflet AORTIC VALVE with markedly RESTRICTED leaflet opening in systole and a narrow residual orifice, bright acoustic shadowing from the calcium. The LEFT VENTRICLE shows CONCENTRIC HYPERTROPHY (thickened walls) with a normal-sized cavity (preserved systolic function). Aortic root, left atrium, and interventricular septum correctly rendered. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Thickened, heavily calcified trileaflet aortic valve with restricted opening
+  - Narrow residual systolic orifice with calcium shadowing
+  - Concentric LV hypertrophy with preserved cavity size
+  - Authentic grayscale echocardiogram of the aortic valve
+- **Avoid (negative prompt):** a diastolic regurgitant jet into the LV outflow tract (aortic regurgitation) as the intended finding; a thickened doming hockey-stick mitral valve with a big left atrium (mitral stenosis); a bicuspid valve emphasized as the intended finding; a large pericardial effusion; a normal thin pliable aortic valve; a CT/MRI cross-section; annotations or calipers.
+- **Real-image fallback:** Radiopaedia / The POCUS Atlas - search "calcific aortic stenosis echocardiogram restricted valve parasternal"; Wikimedia Commons "aortic stenosis echocardiography".
+
+### s3-0282 - Incidental solitary pulmonary nodule  (Step 3 - Internal Medicine)
+- **Case context:** 55-year-old woman with a 20-pack-year smoking history and an incidentally found lung-base nodule on abdominal CT, asymptomatic, no prior imaging, no adenopathy or weight loss, with a low-to-intermediate malignancy risk, now getting a dedicated chest CT; the image is a chest CT showing a single 6-mm smooth-bordered solid pulmonary nodule in the right lower lobe without spiculation, cavitation, or associated adenopathy.
+- **Modality:** CT of the chest, axial slice, lung window (DICOM grayscale).
+- **Prompt:** Hyperrealistic axial CT of the chest in diagnostic grayscale, LUNG WINDOW, anatomically accurate thoracic anatomy with sharp bronchovascular markings and realistic CT noise. Depict an INCIDENTAL SOLITARY PULMONARY NODULE: a SINGLE small (about 6 mm) SOLID, ROUNDED PULMONARY NODULE with SMOOTH, well-defined BORDERS in the RIGHT LOWER LOBE, WITHOUT spiculation, lobulation, cavitation, or calcification, surrounded entirely by normal aerated lung. There is NO surrounding consolidation, NO satellite nodules, and NO hilar or mediastinal adenopathy. The remaining lungs, airways, heart, and chest wall are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Single small solid nodule with smooth, well-defined borders
+  - No spiculation, cavitation, or associated adenopathy
+  - Surrounded by otherwise normal aerated lung
+  - Authentic lung-window axial chest CT appearance
+- **Avoid (negative prompt):** a large spiculated mass with pleural tail and adenopathy (frank malignancy) as the intended finding; a thick-walled cavitary lesion; multiple/miliary nodules; a lobar consolidation; honeycombing fibrosis; a soft-tissue window; a normal lung with no nodule; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "solitary pulmonary nodule benign smooth CT lung window"; Wikimedia Commons "solitary pulmonary nodule CT".
+
+### s3-0326 - Acute pericarditis  (Step 3 - Internal Medicine)  [ECG]
+- **WARNING:** AI image generators render ECG tracings as physiologically meaningless gibberish and cannot reliably draw diffuse concave-upward ST elevation with PR-segment depression across the limb and precordial leads. Strongly recommend a REAL de-identified acute-pericarditis 12-lead ECG (e.g., LITFL) or the app's own accurate vector-drawn tracing as the PRIMARY asset; use any AI output only as a placeholder and QA every complex against the criteria below.
+- **Case context:** 28-year-old man with 2 days of sharp pleuritic central chest pain worse lying flat and eased sitting forward after a viral illness, with a three-component friction rub, normal troponin, and no effusion on echo; the tracing must show diffuse concave-upward ST-segment elevation across the limb and precordial leads with associated PR-segment depression.
+- **Modality:** 12-lead ECG on standard red/pink grid.
+- **Prompt:** Photorealistic clinical 12-lead ECG printout on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines, clean black waveform trace, standard 3x4 lead layout plus a rhythm strip. Depict ACUTE PERICARDITIS: DIFFUSE, CONCAVE-UPWARD (saddle-shaped) ST-SEGMENT ELEVATION present across MULTIPLE limb and precordial leads (I, II, aVF, V2-V6) rather than a single coronary territory, with PR-SEGMENT DEPRESSION in those same leads and reciprocal PR ELEVATION with ST depression in aVR. The rhythm is regular sinus with narrow QRS and no pathologic Q waves; morphology consistent across leads. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Diffuse concave-upward ST elevation across multiple (non-territorial) leads
+  - PR-segment depression (with reciprocal changes in aVR)
+  - Sinus rhythm, narrow QRS, no pathologic Q waves
+  - Standard pink ECG grid
+- **Avoid (negative prompt):** convex/tombstone ST elevation localized to one coronary territory with reciprocal depression and Q waves (STEMI) as the intended finding; low-voltage complexes with electrical alternans; a single-territory transient ST elevation; a delta wave; random gibberish waveforms; wrong grid color; annotations or lead labels.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "acute pericarditis ECG diffuse ST elevation PR depression"; Wikimedia Commons "pericarditis ECG". Prefer the app vector tracing.
+
+### s3-0332 - Idiopathic pulmonary fibrosis  (Step 3 - Internal Medicine)
+- **Case context:** 68-year-old man with 14 months of progressive exertional dyspnea and dry cough, fine bibasilar end-inspiratory crackles, early clubbing, an evaluation excluding connective tissue disease, hypersensitivity pneumonitis, drug exposure, and heart failure, and a restrictive PFT with reduced DLCO; the image is a high-resolution CT showing peripheral, subpleural, basal-predominant reticulation with honeycombing and traction bronchiectasis (usual interstitial pneumonia pattern).
+- **Modality:** High-resolution CT (HRCT) of the chest, axial slice at the lung bases, lung window (DICOM grayscale).
+- **Prompt:** Hyperrealistic axial HIGH-RESOLUTION CT of the chest in diagnostic grayscale, lung window, anatomically accurate thoracic anatomy with sharp bronchovascular markings and realistic CT noise. Depict a USUAL INTERSTITIAL PNEUMONIA pattern of IDIOPATHIC PULMONARY FIBROSIS: PERIPHERAL, SUBPLEURAL, BASAL-PREDOMINANT reticulation with clustered HONEYCOMBING - stacked subpleural cystic air spaces with well-defined walls - and TRACTION BRONCHIECTASIS (irregularly dilated, distorted airways within fibrotic lung). The abnormality is greatest in the posterior subpleural lung bases and spares the central and upper lung. Heart, mediastinum, and chest wall correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Peripheral, subpleural, basal-predominant reticulation
+  - Honeycombing (clustered subpleural cysts with defined walls)
+  - Traction bronchiectasis within fibrotic lung
+  - Relative sparing of central/upper lung; authentic lung-window HRCT
+- **Avoid (negative prompt):** upper-lobe or peribronchovascular predominance; diffuse ground-glass with mosaic air-trapping and centrilobular nodules (hypersensitivity pneumonitis) as the intended finding; bilateral hilar nodal masses (sarcoidosis); patchy consolidations; a soft-tissue window; a large pleural effusion; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "usual interstitial pneumonia idiopathic pulmonary fibrosis HRCT honeycombing"; Wikimedia Commons "UIP pattern HRCT".
+
+### s3-0333 - Ankylosing spondylitis  (Step 3 - Internal Medicine)
+- **Case context:** 26-year-old HLA-B27-positive man with more than 6 months of inflammatory low back pain and stiffness (worst in the early morning, over an hour, better with exercise), reduced lumbar flexion and limited chest expansion, and elevated inflammatory markers after excluding infection and mechanical causes; the image is a pelvic radiograph showing bilateral sacroiliac joint erosions with sclerosis and partial joint-space fusion consistent with sacroiliitis.
+- **Modality:** Anteroposterior (AP) PELVIS RADIOGRAPH, grayscale DICOM-like.
+- **Prompt:** Photorealistic ANTEROPOSTERIOR (AP) PELVIS RADIOGRAPH of a young adult in grayscale with DICOM-like dynamic range and anatomically accurate bony pelvis, both hips, and sacroiliac joints. Depict SACROILIITIS of ANKYLOSING SPONDYLITIS: BILATERAL, roughly SYMMETRIC sacroiliac joint changes - irregular subchondral EROSIONS giving a blurred pseudo-widened joint margin, adjacent reactive SCLEROSIS on both iliac and sacral sides, and PARTIAL JOINT-SPACE NARROWING with early BONY FUSION (ankylosis) bridging the joints. The hips, pubic symphysis, and lower lumbar spine are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Bilateral, symmetric sacroiliac joint involvement
+  - Subchondral erosions with adjacent sclerosis
+  - Partial joint-space narrowing and early bony fusion
+  - Authentic AP pelvis radiograph appearance
+- **Avoid (negative prompt):** a unilateral destructive septic sacroiliac joint as the intended finding; a displaced femoral neck or pubic ramus fracture; a normal pelvis with clean SI joints; isolated hip osteoarthritis; a lateral/frog-leg view; a CT/MRI cross-section; hardware, annotations, or calipers.
+- **Real-image fallback:** Radiopaedia - search "ankylosing spondylitis bilateral sacroiliitis pelvis radiograph"; Wikimedia Commons "sacroiliitis ankylosing spondylitis x-ray".
+
+### s3-0336 - Calcium channel blocker overdose  (Step 3 - Emergency Medicine)  [ECG]
+- **WARNING:** AI image generators render ECG tracings as physiologically meaningless gibberish and cannot reliably draw sinus bradycardia with a first-degree AV block. Strongly recommend a REAL de-identified calcium-channel-blocker-toxicity rhythm strip (e.g., LITFL) or the app's own accurate vector-drawn tracing as the PRIMARY asset; use any AI output only as a placeholder and QA every complex against the criteria below.
+- **Case context:** 62-year-old woman 90 minutes after an intentional extended-release verapamil overdose, lightheaded and cool with blood pressure 74/40 and heart rate 42 despite fluids and atropine, intact mentation, clear lungs, and hyperglycemia; the rhythm strip must show sinus bradycardia with a first-degree atrioventricular block and no ischemic ST changes.
+- **Modality:** ECG rhythm strip (single/multi-lead) on standard red/pink grid.
+- **Prompt:** Photorealistic clinical ECG rhythm strip on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines and a clean black waveform trace. Depict CALCIUM CHANNEL BLOCKER (verapamil) TOXICITY: SINUS BRADYCARDIA at a slow regular rate (about 40-45/min) with a normal upright P wave before every QRS, and a PROLONGED PR INTERVAL (FIRST-DEGREE AV BLOCK - PR clearly longer than one large box) with each P conducting to a NARROW QRS. The ST segments and T waves are NORMAL with NO ischemic ST elevation or depression. Physiologically consistent, evenly spaced beats. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Sinus bradycardia (slow regular rate, P before every QRS)
+  - Prolonged PR interval (first-degree AV block) with narrow conducted QRS
+  - No ischemic ST-segment changes
+  - Standard pink ECG grid
+- **Avoid (negative prompt):** ST-segment elevation or depression of ischemia as the intended finding; a wide-complex escape rhythm or complete heart block with AV dissociation as the intended finding; an irregularly irregular rhythm; a fast tachycardia; tall tented T waves; random gibberish waveforms; wrong grid color; annotations or lead labels.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "calcium channel blocker verapamil toxicity bradycardia first degree AV block ECG"; Wikimedia Commons "first degree AV block ECG". Prefer the app vector tracing.
+
+### s3-0381 - Active pulmonary tuberculosis  (Step 3 - Internal Medicine)
+- **Case context:** 39-year-old recent emigrant with 6 weeks of productive cough, drenching night sweats, and 5 kg weight loss, chronically ill-appearing with low-grade fever, placed in airborne isolation, with positive AFB smears and a positive M. tuberculosis nucleic acid amplification test, normal liver function, and no HIV; the image is a chest radiograph showing a right upper-lobe cavitary infiltrate with surrounding nodular opacities.
+- **Modality:** Frontal (PA) CHEST RADIOGRAPH, grayscale DICOM-like.
+- **Prompt:** Photorealistic frontal (PA) CHEST RADIOGRAPH of an adult in grayscale with DICOM-like dynamic range and anatomically accurate thoracic anatomy. Depict ACTIVE REACTIVATION PULMONARY TUBERCULOSIS: in the RIGHT UPPER LOBE (apical/posterior segment) a THICK-WALLED CAVITY - a rounded lucency with a dense irregular wall - with SURROUNDING NODULAR and fibronodular OPACITIES and patchy consolidation, plus some volume loss elevating the right hilum. The remaining lung is relatively clear, the cardiac silhouette is normal, and the ribs, clavicles, and diaphragm are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Upper-lobe thick-walled cavity
+  - Surrounding nodular / fibronodular opacities and patchy consolidation
+  - Upper-zone predominance with some volume loss
+  - Authentic frontal chest radiograph appearance
+- **Avoid (negative prompt):** symmetric bilateral hilar adenopathy with clear lungs (sarcoidosis) as the intended finding; a basal-predominant lobar pneumonia; a peripheral solitary spiculated nodule; bilateral perihilar bat-wing edema; a large pleural effusion filling the hemithorax; a normal chest; a CT cross-section; annotations or tubes.
+- **Real-image fallback:** Radiopaedia - search "reactivation pulmonary tuberculosis upper lobe cavity chest radiograph"; Wikimedia Commons "pulmonary tuberculosis cavitary x-ray".
+
+### s3-0386 - Post-cardiac-arrest targeted temperature management  (Step 3 - Emergency Medicine)  [ECG]
+- **WARNING:** AI image generators render ECG tracings as physiologically meaningless gibberish and cannot reliably draw a post-arrest sinus rhythm with nonspecific T-wave changes and NO ST elevation. Strongly recommend a REAL de-identified post-ROSC 12-lead ECG (e.g., LITFL) or the app's own accurate vector-drawn tracing as the PRIMARY asset; use any AI output only as a placeholder and QA every complex against the criteria below.
+- **Case context:** 58-year-old man who collapsed in ventricular fibrillation and achieved return of spontaneous circulation after CPR and two defibrillations, now intubated, hemodynamically stabilized on low-dose vasopressor, and comatose without purposeful movement, with no reversible mechanical cause on echo, as post-resuscitation care is planned; the tracing must show a post-return-of-circulation sinus rhythm at 92/min with no ST-segment elevation and nonspecific T-wave changes.
+- **Modality:** 12-lead ECG on standard red/pink grid.
+- **Prompt:** Photorealistic clinical 12-lead ECG printout on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines, clean black waveform trace, standard 3x4 lead layout plus a rhythm strip. Depict a POST-RESUSCITATION (post-ROSC) tracing: a regular SINUS RHYTHM at a normal rate (about 92/min) with an upright P wave before every narrow QRS, and NO ST-SEGMENT ELEVATION in any territory - the ST segments sit at baseline. There are only NONSPECIFIC, low-amplitude T-WAVE flattening/inversion changes scattered across a few leads, without reciprocal patterns or pathologic Q waves. Morphology consistent across leads. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Sinus rhythm at a normal rate (P before every narrow QRS)
+  - NO ST-segment elevation in any territory (ST at baseline)
+  - Only nonspecific T-wave changes
+  - Standard pink ECG grid
+- **Avoid (negative prompt):** territorial convex ST-segment elevation with reciprocal change (STEMI) as the intended finding; a coarse ventricular fibrillation baseline; a wide-complex tachycardia; diffuse concave ST elevation with PR depression (pericarditis); electrical alternans; random gibberish waveforms; wrong grid color; annotations or lead labels.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "post cardiac arrest ROSC ECG no ST elevation nonspecific T wave"; Wikimedia Commons "sinus rhythm ECG normal". Prefer the app vector tracing.
+
+### s3-0389 - Boerhaave esophageal perforation  (Step 3 - Surgery)
+- **Case context:** 55-year-old man with sudden severe retrosternal and epigastric pain immediately after forceful vomiting following a large meal and heavy drinking, diaphoretic and tachycardic with subcutaneous crepitus at the neck base and a mediastinal crunch (Hamman sign), kept nil per os; the image is a CT of the chest showing pneumomediastinum, a left pleural effusion, and contrast extravasation from a distal esophageal tear.
+- **Modality:** Contrast-enhanced CT of the chest (with oral/luminal contrast), axial slice, soft-tissue/mediastinal window (DICOM grayscale).
+- **Prompt:** Hyperrealistic axial CONTRAST-ENHANCED CT of the chest in diagnostic grayscale, mediastinal (soft-tissue) window, anatomically accurate thoracic anatomy with contrast-opacified vessels and realistic CT noise. Depict BOERHAAVE ESOPHAGEAL PERFORATION: locules of lucent GAS tracking through the MEDIASTINUM around the esophagus and great vessels (PNEUMOMEDIASTINUM), a moderate LEFT PLEURAL EFFUSION (dependent fluid, sometimes with a small hydropneumothorax), and a focus of EXTRAVASATED luminal CONTRAST leaking from a tear in the DISTAL ESOPHAGUS into the adjacent mediastinum. Periesophageal fat stranding and a thick-walled distal esophagus are shown; heart, aorta, and vertebral body correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Pneumomediastinum (gas locules around the esophagus/mediastinum)
+  - Left pleural effusion (with or without hydropneumothorax)
+  - Extravasated luminal contrast from a distal esophageal tear
+  - Contrast-enhanced axial chest CT, mediastinal window
+- **Avoid (negative prompt):** a simple lobar pneumonia or isolated effusion with no mediastinal gas or leak as the intended finding; a tension pneumothorax with mediastinal shift as the dominant finding; free subdiaphragmatic air from a perforated ulcer; a dissection flap in the aorta; a normal mediastinum; a lung-window-only image; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "Boerhaave syndrome esophageal perforation CT pneumomediastinum contrast extravasation"; Wikimedia Commons "esophageal perforation CT pneumomediastinum".
+
+### s3-0394 - Symptomatic uterine leiomyoma  (Step 3 - Obstetrics & Gynecology)
+- **Case context:** 37-year-old woman with months of heavy prolonged menstrual bleeding with clots, pelvic pressure, urinary frequency, an enlarged firm irregular uterus, iron-deficiency anemia, and a desire to preserve fertility, after excluding pregnancy and endometrial pathology; the image is a transvaginal ultrasound showing an enlarged uterus with several well-circumscribed hypoechoic intramural leiomyomas.
+- **Modality:** Transvaginal pelvic ULTRASOUND, grayscale sector view (DICOM-like), sagittal uterus.
+- **Prompt:** Photorealistic TRANSVAGINAL PELVIC ULTRASOUND image in diagnostic grayscale, sagittal view of the UTERUS, realistic fine speckle texture, sector edges, and DICOM-like appearance. Depict UTERINE LEIOMYOMAS (fibroids): an ENLARGED, bulky UTERUS with a lobulated contour containing SEVERAL WELL-CIRCUMSCRIBED, ROUNDED, HYPOECHOIC INTRAMURAL masses with a whorled internal texture and posterior acoustic shadowing, distorting the myometrium and indenting/displacing the central endometrial stripe. The masses are clearly demarcated from surrounding myometrium; bladder and cervix correctly rendered. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Enlarged uterus with several well-circumscribed hypoechoic intramural masses
+  - Whorled texture with posterior shadowing, distorting the myometrium
+  - Displacement/indentation of the endometrial stripe
+  - Authentic grayscale transvaginal ultrasound appearance
+- **Avoid (negative prompt):** a thickened irregular endometrial lining or a polyp within the cavity as the intended finding; a complex cystic-and-solid adnexal mass with ascites (ovarian malignancy); an intrauterine gestational sac; a normal small uterus with no masses; a CT/MRI cross-section; a color-Doppler-only image; annotations or calipers dominating the frame.
+- **Real-image fallback:** Radiopaedia / The POCUS Atlas - search "uterine leiomyoma fibroid transvaginal ultrasound intramural"; Wikimedia Commons "uterine fibroid ultrasound".
+
+### s3-0410 - Infected pancreatic necrosis (step-up management)  (Step 3 - Surgery)
+- **Case context:** 49-year-old man admitted 4 weeks earlier with severe gallstone pancreatitis complicated by extensive necrosis, initially improving but now with recurring fevers, worsening abdominal pain, and a rising leukocyte count, hemodynamically stable on the ward, undergoing CT before deciding on intervention; the image is a contrast-enhanced abdominal CT showing a large walled-off peripancreatic collection containing gas bubbles, consistent with infected necrosis.
+- **Modality:** Contrast-enhanced CT of the abdomen, axial slice, soft-tissue window (DICOM grayscale).
+- **Prompt:** Hyperrealistic axial CONTRAST-ENHANCED CT of the abdomen in diagnostic grayscale, soft-tissue window, radiologically accurate upper-abdominal anatomy with contrast-opacified vessels and realistic CT noise. Depict INFECTED WALLED-OFF PANCREATIC NECROSIS: a LARGE, encapsulated PERIPANCREATIC/lesser-sac COLLECTION with a defined enhancing WALL containing HETEROGENEOUS non-liquefied necrotic debris AND unmistakable FOCI OF GAS (lucent air bubbles / an air-fluid level) within it - the hallmark of infection. The adjacent pancreas shows non-enhancing necrotic segments; peripancreatic fat stranding, the stomach displaced anteriorly, liver, spleen, aorta, and vertebral body correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Large walled-off peripancreatic collection with an enhancing wall
+  - Gas bubbles / air-fluid level within the collection (infection)
+  - Heterogeneous necrotic debris and non-enhancing pancreatic necrosis
+  - Contrast-enhanced axial abdominal CT appearance
+- **Avoid (negative prompt):** a simple homogeneous thin-walled fluid collection with NO gas and no debris (uncomplicated pseudocyst) as the intended finding; a diffusely enhancing normal pancreas; a focal hypodense head mass with a double-duct sign (carcinoma); free intraperitoneal air from a hollow-viscus perforation as the dominant finding; a noncontrast image; annotations or calipers.
+- **Real-image fallback:** Radiopaedia - search "infected walled-off pancreatic necrosis CT gas bubbles"; Wikimedia Commons "walled off pancreatic necrosis CT".
+
+### s3-0411 - Cervical insufficiency (cerclage management)  (Step 3 - Obstetrics & Gynecology)
+- **Case context:** 30-year-old woman (G3P0) at 18 weeks with two prior painless second-trimester losses featuring rapid painless cervical dilation, currently well with no cramping, leaking, bleeding, or signs of infection, undergoing transvaginal ultrasound to assess the cervix before deciding on management; the image is a transvaginal ultrasound showing a shortened cervix measuring 18 mm with funneling of the internal os and no fetal or placental abnormality.
+- **Modality:** Transvaginal pelvic ULTRASOUND, grayscale sector view (DICOM-like), sagittal cervix.
+- **Prompt:** Photorealistic TRANSVAGINAL PELVIC ULTRASOUND image in diagnostic grayscale, sagittal midline view of the CERVIX in a pregnancy, realistic fine speckle texture, sector edges, and DICOM-like appearance. Depict CERVICAL INSUFFICIENCY: a SHORTENED CERVICAL canal (about 18 mm of closed length) with FUNNELING of the INTERNAL OS - a V/U-shaped opening of the internal os with amniotic fluid dipping down into the upper (funneled) cervical canal, while the distal cervix remains closed. The overlying lower uterine segment, amniotic fluid, and fetal parts above are correctly rendered without placental abnormality. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Shortened closed cervical length (about 18 mm)
+  - Funneling of the internal os (V/U-shaped) with fluid entering the canal
+  - Distal cervix still closed; normal amniotic fluid and fetal parts above
+  - Authentic grayscale transvaginal ultrasound of the cervix
+- **Avoid (negative prompt):** a normal long closed cervix (over 30 mm) with a tight internal os as the intended finding; a low-lying placenta covering the os (previa) as the intended finding; an adnexal mass; frank bulging membranes with an open external os and a nonviable fetus; a transabdominal or CT/MRI view; annotations or calipers dominating the frame.
+- **Real-image fallback:** Radiopaedia / The POCUS Atlas - search "cervical insufficiency short cervix funneling transvaginal ultrasound"; Wikimedia Commons "short cervix funneling ultrasound".
