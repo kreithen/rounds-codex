@@ -10,3 +10,6 @@ tools/candidates/*
 
 # live app working copy (PRIVATE — never commit to this public repo)
 applive/
+
+# private live-app deploy bundles (delivered to user, never commit to public repo)
+rounds-codex-app-*.zip
