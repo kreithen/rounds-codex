@@ -127,10 +127,12 @@ Tarasoff duty to protect.
 | Step 2 CK | B4 | data/usmle-step2ck-b4.js | 25 | yes | yes |
 | Step 2 CK | B5 | data/usmle-step2ck-b5.js | 25 | yes | yes |
 | Step 2 CK | B6 | data/usmle-step2ck-b6.js | 25 | yes | yes |
+| Step 2 CK | B7 | data/usmle-step2ck-b7.js | 25 | yes | yes |
 
-Step 2 CK running total: **150** MCQs (max 318).
+Step 2 CK running total: **175** MCQs (max 318). 175 unique topics (full scan, no dups).
 
-- IDs s2ck-0001 .. s2ck-0150. Validated with `--exam step2ck` (exam-aware validator).
+- IDs s2ck-0001 .. s2ck-0175. Validated with `--exam step2ck` (exam-aware validator).
+- B7 IDs s2ck-0151 .. s2ck-0175 (contiguous). Key 5/5/5/5/5, 15 anchors.
 - B6 IDs s2ck-0126 .. s2ck-0150 (contiguous). Key 5/5/5/5/5, 15 anchors. Topics: complete
   AV block, adrenal incidentaloma, ischemic colitis, vertebral osteomyelitis, OSA, CPPD,
   ITP, acute interstitial nephritis, Bell palsy, Boerhaave, acute subdural, thyroid nodule,
@@ -172,14 +174,18 @@ Step 2 CK running total: **150** MCQs (max 318).
 | Step 3 | Day 1 FIP B3 | data/usmle-step3d1-b3.js | 25 | yes | yes |
 | Step 3 | Day 1 FIP B4 | data/usmle-step3d1-b4.js | 25 | yes | yes |
 | Step 3 | Day 1 FIP B5 | data/usmle-step3d1-b5.js | 25 | yes | yes |
+| Step 3 | Day 1 FIP B6 | data/usmle-step3d1-b6.js | 25 | yes | yes |
 | Step 3 | Day 2 ACM B1 (pilot) | data/usmle-step3d2-b1.js | 25 | yes | yes |
 | Step 3 | Day 2 ACM B2 | data/usmle-step3d2-b2.js | 25 | yes | yes |
 | Step 3 | Day 2 ACM B3 | data/usmle-step3d2-b3.js | 25 | yes | yes |
+| Step 3 | Day 2 ACM B4 | data/usmle-step3d2-b4.js | 25 | yes | yes |
 
-Step 3 running total: **200** MCQs (125 Day 1 FIP + 75 Day 2 ACM; max 412: 232 Day 1 FIP +
-180 Day 2 ACM + 13 CCS). Day 1 IDs s3-0001..0075 + 0101..0175; Day 2 IDs s3-0076..0100 +
-0126..0200. Within-bank topic scans: Day 1 125 unique, Day 2 75 unique; Day 1 B5 had 7
-topics that collided with Day 2 B3 and were swapped to fresh diagnosis/screening topics.
+Step 3 running total: **250** MCQs (150 Day 1 FIP + 100 Day 2 ACM; max 412: 232 Day 1 FIP +
+180 Day 2 ACM + 13 CCS). Day 1 IDs s3-0001..0075 + 0101..0225; Day 2 IDs s3-0076..0100 +
+0126..0250. Within-bank topic scans: Day 1 150 unique, Day 2 100 unique, no dups. This round
+Day 1 B6 (diagnosis/biostat lane) and Day 2 B4 (management lane) got sharp lane mandates +
+full-bank uniqueness requirement -> zero new cross-day collisions. Day 2 B4 answer key was
+rebalanced in-repo to 5/5/5/5/5 (agent hit session limit mid-rebalance).
 
 - Day 1 FIP IDs s3-0001 .. s3-0125; Day 2 ACM IDs s3-0076 .. s3-0150. Day 1 blocks use the
   lower range each round, Day 2 the next block: D1 = 0001-0075 + 0101-0125; D2 = 0076-0100 +
@@ -250,6 +256,9 @@ topics that collided with Day 2 B3 and were swapped to fresh diagnosis/screening
   (medical-illustration quality): pA-pD = original 44, pE = B7/CK2/S3-1 (16), pF =
   B8/CK3/S3-2 (18), pG = B9/CK4/S3D1-3/S3D2-1 (22), pH = CK5/S3D1-4/S3D2-2 (16),
   pI = S1-B10-12/CK6/S3D1-5/S3D2-3 (31). ECGs kept as vector tracings.
+- PENDING illus-pJ = CK7/S3D1-6/S3D2-4 (13 illustrated items: s2ck-0151/0153/0160/0161/0162/
+  0166/0171, s3-0214/0218/0219/0234/0236/0238). Not yet drawn (agents hit the session limit,
+  resets 9:20pm UTC). Until drawn, those items render the schematic placeholder text frame.
 - Header branding: the real logo image (`preview/assets/logo.jpg`) replaces the text
   wordmark at the top of every screen.
 - **Master image-prompt file: `higgsfield-image-prompts.md`** - one hyperrealistic,
@@ -260,21 +269,23 @@ topics that collided with Day 2 B3 and were swapped to fresh diagnosis/screening
   the QA checklist -> wire into `RC_ILLUS[id]` (one-line swap; no engine change).
 
 ## Next
+- **Illustrations for CK B7 / S3 D1 B6 / S3 D2 B4 are PENDING** (13 items -> illus-pJ.js) +
+  their higgsfield prompts (would take the master file 147 -> 160). Blocked by the session
+  limit (resets 9:20pm UTC); do these first next session, then re-zip.
 - **Step 1 is COMPLETE at 280/280.** Do not add more unless asked.
-- Step 2 CK Batch 7 (s2ck-0151 .. s2ck-0175); validate `--exam step2ck --against` b1..b6.
-- Step 3 Day 1 FIP Batch 6 (s3-0201 .. s3-0225) and Day 2 ACM Batch 4 (s3-0226 .. s3-0250).
-  Keep Day 1/Day 2 in non-overlapping s3- ranges; validate `--exam step3 --against` all
-  prior s3 files. IMPORTANT: give Day 1 and Day 2 mutually-exclusive topic guidance up front
-  (Day 1 = diagnosis/biostat/screening/ethics; Day 2 = longitudinal management) to avoid the
-  cross-day dup cleanup that was needed this round.
-- Preview app (`preview/`) has FOUR exam BUTTONS: Step 1 280 / Step 2 CK 150 / Step 3 Day 1
-  125 / Step 3 Day 2 75. Exam dropdown + order/shuffle selector removed (always shuffle,
-  no-repeat). Header uses the logo image (assets/logo.jpg). For a new batch: add its
-  `<script src>`, extend the BANKS.<exam> concat (step3d1 vs step3d2!), copy into preview/data.
+- Step 2 CK Batch 8 (s2ck-0176 .. s2ck-0200); validate `--exam step2ck --against` b1..b7.
+- Step 3 Day 1 FIP Batch 7 (s3-0251 .. s3-0275) and Day 2 ACM Batch 5 (s3-0276 .. s3-0300).
+  Keep the sharp Day 1 (diagnosis/biostat/screening/ethics) vs Day 2 (longitudinal management)
+  lane mandates + full-bank topic-uniqueness requirement -> this eliminated cross-day dups.
+- Preview app (`preview/`) has FOUR exam BUTTONS: Step 1 280 / Step 2 CK 175 / Step 3 Day 1
+  150 / Step 3 Day 2 100. Exam dropdown + order/shuffle selector removed (always shuffle,
+  no-repeat). Header uses the MATTED logo (assets/logo.png, transparent). For a new batch:
+  add its `<script src>`, extend the BANKS.<exam> concat (step3d1 vs step3d2!), copy into
+  preview/data.
 - Production kit (`production/`): usmle-step1-data.js at 280 via build-data.js (auto-globs).
   Consider Step 2 CK / Step 3 production bundlers. Live wiring via the Chrome publish path.
 - Images: append a `higgsfield-image-prompts.md` section for every new illustrated question
-  (now 147 sections). New-item SVGs: pE..pI (RC_ILLUS registry); pI = this round's 31.
+  (now 147; +13 pending). New-item SVGs: pE..pI done; pJ pending (RC_ILLUS registry).
 
 ## Trigger for next session
 "Continue the USMLE module - generate Step 1 Batch 8 / Step 2 CK Batch 3 / Step 3 Day 1
