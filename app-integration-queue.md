@@ -20,6 +20,44 @@ headless → upload to `main` via Chrome → Netlify auto-deploys.
   replace each word in place (LEARN / UNDERSTAND / SUCCEED).
 - **Verify:** tagline reads "LEARN. UNDERSTAND. SUCCEED" with identical styling; nothing else moved.
 
+### 2. Resident Mode — put the section title first, rename the conditions list
+- On each specialty page, show that specialty's **section-2 title at the TOP of the page**
+  (the `RES_SECTION2_TITLE` value — e.g. "Top 50 Inpatient Diagnoses" / "Top 50 Operations" /
+  "Top 50 Topics & Procedures" / "Top 50 ED Diagnoses" / "Top 60 Cardiology Topics", per specialty).
+- **Underneath it**, list all the conditions under a heading renamed **"Codex Conditions" →
+  "Relevant Conditions"**.
+- **Add the Cardiology section** to the specialty list. (Comes in with the Resident Mode data
+  expansion — `RES_ACTIVE` in `resident-staging/res-logic-wiring-snippet.js` already includes
+  `cards`; confirm `cards` shows in the picker after the expansion.)
+
+### 3. Resident Mode — larger back arrow
+- Inside each specialty section, make the **back arrow in the upper-left corner larger**
+  (the control that returns to the main specialty list). Style/size only.
+
+### 4. Bottom control bar
+- Move **"Ask Rounds Codex" to the far right** of the bar.
+- Rename the **"Resident" → "Resident Mode"** label.
+
+### 5. Medical mode → USMLE PREP entry button
+- When the user selects **"Medical"** mode on the home page, add a **large button directly under
+  the "search 180 conditions" bar** labeled **"USMLE PREP"**.
+- Clicking it opens the **USMLE test-prep home page** (the USMLE Mode app we built in `preview/`,
+  integrated per the "USMLE Mode" content-integration item below).
+
+### 6. USMLE home page — back arrow to home
+- On the USMLE home page, place an **arrow button in the upper-left corner** that returns to the
+  **Rounds Codex home page**.
+
+### 7. USMLE mode — hide the bottom control bar
+- **Do NOT render the bottom control bar while in USMLE mode** (it should only appear in the
+  main app / Resident mode, not inside USMLE Mode).
+
+### 8. BUG — condition swipe adjacency (Hypertension)
+- Left-swiping off the **Hypertension** page currently jumps to **COPD** — wrong. It should swipe
+  to **Aortic Stenosis (Valvular Disease)**. Find the condition swipe order / neighbor mapping and
+  fix Hypertension's left-swipe target to Aortic Stenosis (Valvular Disease). Verify the reverse
+  swipe is consistent too.
+
 <!-- More layout/functionality changes get appended here as the user sends them. -->
 
 ## Content integrations (built & staged in this repo)
