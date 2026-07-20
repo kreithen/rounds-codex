@@ -13,3 +13,4 @@ applive/
 
 # private live-app deploy bundles (delivered to user, never commit to public repo)
 rounds-codex-app-*.zip
+rounds-codex-cardio-*.zip
