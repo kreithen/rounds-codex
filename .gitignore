@@ -7,3 +7,6 @@ rounds-codex-usmle-preview.zip
 # raw generated images awaiting QA (not versioned)
 tools/candidates/*
 !tools/candidates/.gitkeep
+
+# live app working copy (PRIVATE — never commit to this public repo)
+applive/
