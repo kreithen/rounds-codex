@@ -1,6 +1,6 @@
 # Rounds Codex — USMLE Mode: hyperrealistic image prompt sheet
 
-147 AI image-generation prompts (one per illustrated question), each tuned to its
+160 AI image-generation prompts (one per illustrated question), each tuned to its
 vignette, for producing hyperrealistic, medically-accurate images (Higgsfield or
 similar) to replace the current schematic SVGs.
 
@@ -1633,3 +1633,163 @@ questions are created:
   - Normal-caliber trachea below the narrowing
 - **Avoid (negative prompt):** a swollen rounded epiglottis on a lateral view (thumbprint sign of epiglottitis) as the intended finding; a widened retropharyngeal soft-tissue prevertebral stripe (retropharyngeal abscess); a radiopaque foreign body in the airway; an asymmetric tracheal deviation from a mass; a normal squared subglottic airway; a chest-only view; annotations or tubes.
 - **Real-image fallback:** Radiopaedia - search "croup steeple sign frontal neck radiograph subglottic narrowing"; Wikimedia Commons "croup steeple sign x-ray".
+
+<!-- Added with Step 2 CK Batch 7, Step 3 Day 1 Batch 6, Step 3 Day 2 ACM Batch 4 -->
+
+### s2ck-0151 - Hypertrophic cardiomyopathy  (Step 2 CK - Internal Medicine)  [ECG]
+- **WARNING:** AI image generators render ECG tracings as physiologically meaningless gibberish and cannot reliably draw voltage-criteria left ventricular hypertrophy together with the narrow, deep septal (dagger) Q waves of hypertrophic cardiomyopathy. Strongly recommend a REAL de-identified HOCM 12-lead ECG (e.g., LITFL) or the app's own accurate vector-drawn tracing as the PRIMARY asset; use any AI output only as a placeholder and QA every complex against the criteria below.
+- **Case context:** 19-year-old competitive basketball player with exertional lightheadedness and near-syncope, a harsh crescendo-decrescendo systolic murmur at the left lower sternal border that intensifies with Valsalva/standing and softens with squatting, and a relative who died suddenly young; the tracing must show prominent left ventricular hypertrophy voltage with deep, narrow dagger-like Q waves in the inferolateral leads.
+- **Modality:** 12-lead ECG on standard red/pink grid.
+- **Prompt:** Photorealistic clinical 12-lead ECG printout on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines, clean black waveform trace, standard 3x4 lead layout plus a rhythm strip. Depict HYPERTROPHIC CARDIOMYOPATHY: a normal SINUS rhythm at a normal rate with narrow QRS complexes showing high-voltage LEFT VENTRICULAR HYPERTROPHY - tall R waves in the lateral leads (I, aVL, V5-V6) and deep S waves in the right precordial leads (V1-V3). Superimpose narrow but DEEP dagger-like Q WAVES in the INFEROLATERAL leads (II, III, aVF and V5-V6), with associated ST-segment and T-wave abnormalities (lateral ST depression / T-wave inversion). Physiologically consistent, evenly spaced beats with matching morphology across leads. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Sinus rhythm with narrow QRS complexes
+  - High-voltage LVH criteria (tall lateral R waves, deep right precordial S waves)
+  - Narrow but deep dagger-like Q waves in the inferolateral leads (II, III, aVF, V5-V6)
+  - Lateral ST/T-wave abnormalities; standard pink ECG grid
+- **Avoid (negative prompt):** wide pathologic Q waves with ST elevation of an acute myocardial infarction; a wide/bizarre QRS or delta wave (pre-excitation) as the intended finding; low-voltage complexes; an irregularly irregular rhythm; random gibberish waveforms; wrong grid color; annotations or lead labels.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "hypertrophic cardiomyopathy ECG LVH dagger Q waves"; Wikimedia Commons "hypertrophic cardiomyopathy ECG". Prefer the app vector tracing.
+
+### s2ck-0153 - Sarcoidosis (bilateral hilar lymphadenopathy)  (Step 2 CK - Internal Medicine)
+- **Case context:** 35-year-old nonsmoking woman with several weeks of dry cough, exertional dyspnea, fatigue, tender erythematous shin nodules (erythema nodosum) and mildly blurred vision (uveitis), with no fever, weight loss, or dust exposure; the image is a frontal chest radiograph showing symmetric bilateral hilar lymphadenopathy with clear lung fields.
+- **Modality:** Frontal (PA) CHEST RADIOGRAPH, grayscale DICOM-like.
+- **Prompt:** Photorealistic frontal (PA) CHEST RADIOGRAPH of an adult in grayscale with DICOM-like diagnostic dynamic range and anatomically accurate thoracic anatomy. Depict STAGE I SARCOIDOSIS: SYMMETRIC, BILATERAL HILAR LYMPHADENOPATHY - both pulmonary hila enlarged by well-defined, lobulated rounded soft-tissue nodal masses of roughly equal size, with the right paratracheal region also mildly widened. The LUNG FIELDS are CLEAR with no infiltrate, nodules, effusion, or fibrosis, and the cardiac silhouette is normal in size. Correct rib cage, mediastinal contour, diaphragm, and clavicles rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Symmetric bilateral hilar lymphadenopathy (both hila enlarged, roughly equal)
+  - Clear lung fields with no infiltrate or effusion
+  - Normal cardiac silhouette
+  - Authentic frontal chest radiograph appearance
+- **Avoid (negative prompt):** unilateral or asymmetric adenopathy (favoring infection/malignancy); upper-lobe cavitary or fibronodular disease (tuberculosis); reticulonodular parenchymal fibrosis dominating the image; an enlarged heart with vascular congestion and effusions (heart failure); a lobar consolidation; annotations or tubes.
+- **Real-image fallback:** Radiopaedia - search "sarcoidosis bilateral hilar lymphadenopathy chest radiograph stage 1"; Wikimedia Commons "sarcoidosis bilateral hilar lymphadenopathy x-ray".
+
+### s2ck-0160 - Pancreatic head adenocarcinoma  (Step 2 CK - Surgery)
+- **Case context:** 67-year-old man with 6 weeks of progressive painless jaundice, pruritus, dark urine, pale stools, 8 kg weight loss, scleral icterus and a nontender palpably distended gallbladder (Courvoisier sign); the image is a contrast CT of the abdomen showing a hypodense pancreatic-head mass with dilated intrahepatic and extrahepatic bile ducts and a dilated pancreatic duct (double-duct sign).
+- **Modality:** Contrast-enhanced CT of the abdomen, axial slice at the level of the pancreatic head, soft-tissue window (DICOM grayscale).
+- **Prompt:** Hyperrealistic axial CONTRAST-ENHANCED CT of the abdomen in diagnostic grayscale, soft-tissue window, radiologically accurate upper-abdominal anatomy with contrast-opacified vessels and realistic CT noise. Depict PANCREATIC HEAD ADENOCARCINOMA: an ill-defined HYPODENSE (hypoenhancing) MASS in the HEAD of the pancreas, with upstream obstruction producing the DOUBLE-DUCT SIGN - a dilated common bile duct AND a dilated main pancreatic duct - plus dilated intrahepatic bile ducts branching in the liver and a distended gallbladder. The uninvolved pancreatic body/tail, liver, duodenal sweep, aorta, and vertebral body are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Hypodense/hypoenhancing mass in the pancreatic head
+  - Double-duct sign: dilated common bile duct and dilated pancreatic duct
+  - Dilated intrahepatic ducts and distended gallbladder upstream
+  - Contrast-enhanced axial abdominal CT appearance
+- **Avoid (negative prompt):** a radiopaque stone impacted in the distal bile duct with no pancreatic mass (choledocholithiasis) as the intended finding; a diffusely inflamed edematous pancreas with peripancreatic stranding (acute pancreatitis); a simple hepatic or pancreatic cyst; multifocal beaded biliary strictures (sclerosing cholangitis); a lung-window or noncontrast image; calipers/annotations.
+- **Real-image fallback:** Radiopaedia - search "pancreatic head adenocarcinoma CT double duct sign"; Wikimedia Commons "pancreatic cancer CT double duct sign".
+
+### s2ck-0161 - Cauda equina syndrome (central disc herniation)  (Step 2 CK - Surgery)
+- **Case context:** 45-year-old man with acute severe low back pain, now bilateral leg weakness, saddle (buttock/inner-thigh) numbness, urinary retention with overflow, reduced anal sphincter tone and a palpable distended bladder; the image is a lumbar MRI showing a large central disc herniation compressing the thecal sac and cauda equina nerve roots.
+- **Modality:** Lumbar spine MRI, T2-weighted SAGITTAL (midline) image (bright cerebrospinal fluid, DICOM-like grayscale).
+- **Prompt:** Photorealistic T2-weighted SAGITTAL MRI of the LUMBAR SPINE in grayscale with DICOM-like tissue contrast, bright cerebrospinal fluid, anatomically accurate vertebral bodies, intervertebral discs, and conus/thecal sac. Depict CAUDA EQUINA SYNDROME from a large CENTRAL DISC HERNIATION: at a lower lumbar level a large disc fragment protrudes POSTERIORLY into the spinal canal, effacing the bright CSF and severely COMPRESSING the THECAL SAC and the descending CAUDA EQUINA nerve roots (near-complete canal stenosis at that level). The herniated disc shows loss of the normal disc T2 signal; adjacent levels and vertebral marrow are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Large central posterior disc herniation at a lower lumbar level
+  - Severe thecal sac / cauda equina compression with effacement of CSF
+  - Sagittal T2 lumbar MRI appearance (bright CSF)
+  - Herniated disc contiguous with the parent disc space
+- **Avoid (negative prompt):** a small lateral/foraminal disc bulge compressing a single exiting root only; a bright destructive vertebral marrow mass or epidural abscess/collection as the intended finding; a burst fracture with retropulsed bone; a normal patent canal with bright CSF around the roots; a cervical or thoracic level; a plain radiograph or CT; calipers/annotations.
+- **Real-image fallback:** Radiopaedia - search "cauda equina syndrome central disc herniation lumbar MRI"; Wikimedia Commons "lumbar disc herniation MRI".
+
+### s2ck-0162 - Displaced femoral neck fracture  (Step 2 CK - Surgery)
+- **Case context:** 82-year-old woman with osteoporosis who fell from standing onto her right side, now unable to bear weight with severe right groin pain; the right leg is shortened and externally rotated with intact distal pulses and sensation; the image is an AP pelvic radiograph showing a displaced right femoral neck fracture.
+- **Modality:** AP PELVIS RADIOGRAPH, grayscale DICOM-like.
+- **Prompt:** Photorealistic ANTEROPOSTERIOR (AP) PELVIS RADIOGRAPH of an older adult in grayscale with DICOM-like diagnostic dynamic range and anatomically accurate bony pelvis, both hips, and proximal femora, with osteopenic (washed-out) bone texture. Depict a DISPLACED RIGHT FEMORAL NECK (subcapital) FRACTURE: a lucent fracture line across the RIGHT femoral NECK with the femoral HEAD displaced and the femoral shaft rotated, producing a DISRUPTED/BROKEN Shenton line and the fragments offset and shortened. The LEFT hip is intact with an intact Shenton line for comparison, and the acetabula, pubic rami, and sacrum are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Displaced fracture line across the right femoral neck (subcapital)
+  - Broken/disrupted Shenton line on the right with shortening/offset
+  - Intact, normal left hip for comparison
+  - Osteopenic bone; authentic AP pelvis radiograph appearance
+- **Avoid (negative prompt):** an intertrochanteric fracture between the greater and lesser trochanters as the intended finding; a nondisplaced hairline fracture with a preserved Shenton line; a dislocated hip with an empty acetabulum and no fracture; a pubic ramus fracture only; a normal symmetric pelvis; a lateral/frog-leg-only view; hardware/annotations.
+- **Real-image fallback:** Radiopaedia - search "displaced femoral neck fracture AP pelvis radiograph Shenton line"; Wikimedia Commons "femoral neck fracture x-ray".
+
+### s2ck-0166 - Wilms tumor (nephroblastoma)  (Step 2 CK - Pediatrics)
+- **Case context:** 3-year-old well-appearing girl with a smooth, firm left flank mass found on bathing that is confined to one flank and does not cross the midline, with mildly elevated blood pressure for age; the image is an abdominal CT showing a large, well-circumscribed solid mass arising from the left kidney and displacing adjacent structures without crossing the midline.
+- **Modality:** Contrast-enhanced CT of the abdomen, axial slice, soft-tissue window (DICOM grayscale), pediatric.
+- **Prompt:** Hyperrealistic axial CONTRAST-ENHANCED CT of a young child's abdomen in diagnostic grayscale, soft-tissue window, anatomically accurate pediatric anatomy with contrast-opacified vessels and realistic CT noise. Depict a WILMS TUMOR (nephroblastoma): a large, WELL-CIRCUMSCRIBED, predominantly SOLID heterogeneous MASS arising from and expanding the LEFT KIDNEY, with a thin rim of enhancing residual renal parenchyma stretched around its margin (claw sign) confirming an intrarenal origin. The mass DISPLACES adjacent bowel and the aorta but does NOT cross the midline or encase the vessels; the contralateral right kidney, liver, spine, and bowel are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Large well-circumscribed solid mass arising from the kidney (renal origin, claw sign)
+  - Mass confined to one flank, NOT crossing the midline or encasing the aorta
+  - Displacement (not encasement) of adjacent structures
+  - Contrast-enhanced axial pediatric abdominal CT appearance
+- **Avoid (negative prompt):** a mass that crosses the midline and encases the aorta with coarse calcification (neuroblastoma) as the intended finding; a dilated fluid-filled collecting system with no solid tissue (hydronephrosis); bilateral enlarged cystic kidneys (polycystic disease); a right-upper-quadrant liver mass (hepatoblastoma); a normal kidney; a noncontrast or lung-window image; calipers/annotations.
+- **Real-image fallback:** Radiopaedia - search "Wilms tumor nephroblastoma abdominal CT claw sign"; Wikimedia Commons "Wilms tumor CT".
+
+### s2ck-0171 - Ovarian cancer (complex adnexal mass)  (Step 2 CK - Obstetrics & Gynecology)
+- **Case context:** 62-year-old postmenopausal woman with months of bloating, early satiety, and vague pelvic discomfort, a palpable pelvic mass, abdominal distention with a fluid wave, and an elevated CA-125; the image is a pelvic ultrasound showing a complex adnexal mass with solid components, thick septations, and internal papillary projections, with moderate ascites.
+- **Modality:** Pelvic (transvaginal/transabdominal) ULTRASOUND, grayscale sector view (DICOM-like).
+- **Prompt:** Photorealistic PELVIC ULTRASOUND image in diagnostic grayscale, sector field with realistic fine speckle texture and DICOM-like appearance. Depict a COMPLEX ADNEXAL MASS suspicious for OVARIAN CARCINOMA: a large cystic-and-solid ADNEXAL MASS containing THICK irregular internal SEPTATIONS, echogenic SOLID components, and frond-like intracystic PAPILLARY PROJECTIONS arising from the wall. Surrounding the mass and in the adjacent pelvis is a moderate volume of anechoic FREE FLUID (ASCITES) outlining bowel loops. Realistic ultrasound gain gradient, posterior acoustic enhancement behind the cystic components, and sector edges. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Complex adnexal mass with thick septations, solid components, and papillary projections
+  - Moderate anechoic ascites in the pelvis
+  - Cystic-and-solid architecture (not purely simple/anechoic)
+  - Authentic grayscale pelvic ultrasound appearance
+- **Avoid (negative prompt):** a thin-walled unilocular anechoic simple cyst (benign) as the intended finding; a homogeneously solid uterine fibroid; an empty uterus with an adnexal tubal-ring gestational sac (ectopic); a normal ovary with a dominant follicle; a color-Doppler-only image; a CT/MRI cross-section; calipers/annotations dominating the frame.
+- **Real-image fallback:** Radiopaedia / The POCUS Atlas - search "ovarian carcinoma complex adnexal mass ultrasound septations papillary projections ascites"; Wikimedia Commons "ovarian cancer ultrasound".
+
+### s3-0214 - Sarcoidosis (bilateral hilar lymphadenopathy)  (Step 3 - Internal Medicine)
+- **Case context:** 34-year-old woman with several weeks of dry cough, mild dyspnea, and tender red shin nodules (erythema nodosum), with no fevers, night sweats, or sick contacts; the image is a frontal chest radiograph showing symmetric bilateral hilar lymphadenopathy with clear lung fields, confirmed by biopsy showing noncaseating granulomas after excluding infection.
+- **Modality:** Frontal (PA) CHEST RADIOGRAPH, grayscale DICOM-like.
+- **Prompt:** Photorealistic frontal (PA) CHEST RADIOGRAPH of a young adult in grayscale with DICOM-like diagnostic dynamic range and anatomically accurate thoracic anatomy. Depict STAGE I SARCOIDOSIS: SYMMETRIC, BILATERAL HILAR LYMPHADENOPATHY - both pulmonary hila enlarged by well-defined, lobulated rounded soft-tissue nodal masses of roughly equal size, with mild right paratracheal widening. The LUNG FIELDS are CLEAR with no infiltrate, effusion, or fibrosis, and the cardiac silhouette is normal in size. Correct rib cage, mediastinal contour, diaphragm, and clavicles rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Symmetric bilateral hilar lymphadenopathy (both hila enlarged, roughly equal)
+  - Clear lung fields with no infiltrate or effusion
+  - Normal cardiac silhouette
+  - Authentic frontal chest radiograph appearance
+- **Avoid (negative prompt):** unilateral or asymmetric adenopathy (favoring infection/malignancy); upper-lobe cavitary or fibronodular disease (tuberculosis); reticulonodular parenchymal fibrosis dominating the image; an enlarged heart with vascular congestion and pleural effusions (heart failure); a lobar consolidation; annotations or tubes.
+- **Real-image fallback:** Radiopaedia - search "sarcoidosis bilateral hilar lymphadenopathy chest radiograph stage 1"; Wikimedia Commons "sarcoidosis bilateral hilar lymphadenopathy x-ray".
+
+### s3-0218 - Ovarian torsion  (Step 3 - Obstetrics & Gynecology)
+- **Case context:** 26-year-old woman with sudden severe colicky right lower-quadrant pain, nausea and vomiting for 3 hours, afebrile, with unilateral adnexal tenderness and a palpable mass and a negative pregnancy test; the image is a transvaginal ultrasound showing an enlarged, edematous right ovary with peripherally displaced follicles and diminished Doppler flow.
+- **Modality:** Transvaginal pelvic ULTRASOUND with color Doppler, grayscale sector view with a color box (DICOM-like).
+- **Prompt:** Photorealistic TRANSVAGINAL PELVIC ULTRASOUND image in diagnostic grayscale with a superimposed color-Doppler box, sector field with realistic fine speckle texture and DICOM-like appearance. Depict OVARIAN TORSION: a markedly ENLARGED, edematous, rounded OVARY with heterogeneous hypoechoic stroma and multiple small follicles pushed to the PERIPHERY (peripherally displaced follicles), clearly bigger than a normal ovary. Within the color-Doppler box over the ovary there is DIMINISHED / ABSENT internal color flow signal compared with surrounding tissue. A small amount of anechoic free fluid may sit in the cul-de-sac; adjacent uterus and pelvis are correctly rendered. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Enlarged edematous ovary with peripherally displaced follicles
+  - Reduced or absent intraovarian color-Doppler flow
+  - Unilateral enlargement compared with normal adjacent anatomy
+  - Authentic grayscale transvaginal ultrasound with a color-Doppler box
+- **Avoid (negative prompt):** a normal-sized ovary with robust central color flow; an empty uterus with an adnexal tubal-ring gestational sac (ectopic) as the intended finding; a thick-walled tubo-ovarian abscess with debris; a large complex solid papillary mass with ascites (malignancy); a simple thin-walled cyst only; a CT/MRI cross-section; calipers/annotations dominating the frame.
+- **Real-image fallback:** Radiopaedia / The POCUS Atlas - search "ovarian torsion transvaginal ultrasound enlarged ovary peripheral follicles reduced Doppler flow"; Wikimedia Commons "ovarian torsion ultrasound".
+
+### s3-0219 - Complete hydatidiform mole  (Step 3 - Obstetrics & Gynecology)
+- **Case context:** 24-year-old woman at an estimated 12 weeks with vaginal bleeding and severe nausea/vomiting, a uterus larger than expected for dates, no fetal heart tones, and a markedly elevated beta-hCG for gestational age; the image is a pelvic ultrasound showing a heterogeneous intrauterine mass with numerous small cystic spaces (snowstorm pattern) and no identifiable fetus.
+- **Modality:** Pelvic (transabdominal/transvaginal) obstetric ULTRASOUND, grayscale sector view (DICOM-like).
+- **Prompt:** Photorealistic PELVIC OBSTETRIC ULTRASOUND image in diagnostic grayscale, sector field with realistic fine speckle texture and DICOM-like appearance, longitudinal view of an enlarged uterus. Depict a COMPLETE HYDATIDIFORM MOLE: the ENDOMETRIAL CAVITY is filled and distended by a HETEROGENEOUS ECHOGENIC intrauterine MASS studded with NUMEROUS small anechoic CYSTIC SPACES (vesicles) of varying size - the classic SNOWSTORM / cluster-of-grapes appearance - with NO identifiable fetus, gestational sac, yolk sac, or fetal parts. Bilateral theca-lutein cysts may sit in the adnexa. Realistic ultrasound gain gradient, posterior enhancement behind the cystic spaces, and sector edges. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Intrauterine heterogeneous echogenic mass with numerous small cystic spaces (snowstorm)
+  - No identifiable fetus, gestational sac, or fetal parts
+  - Enlarged uterus filled by the molar tissue
+  - Authentic grayscale pelvic ultrasound appearance
+- **Avoid (negative prompt):** a normal intrauterine gestational sac with a live fetus and yolk sac; an empty uterus with an adnexal ectopic gestation; a single simple anechoic cyst; a solid homogeneous fibroid; multiple distinct fetuses of a multifetal pregnancy; a CT/MRI cross-section; a color-Doppler-only image; calipers/annotations dominating the frame.
+- **Real-image fallback:** Radiopaedia / The POCUS Atlas - search "complete hydatidiform mole ultrasound snowstorm cluster of grapes"; Wikimedia Commons "hydatidiform mole ultrasound".
+
+### s3-0234 - Tension pneumothorax  (Step 3 - Emergency Medicine)
+- **Case context:** 25-year-old man after a motorcycle crash in severe respiratory distress, hypotensive (82/50) and tachycardic (138) with oxygen saturation 84%, a hyperresonant right hemithorax with absent breath sounds, trachea deviated to the left, and distended neck veins; the image is a portable chest radiograph showing a large right-sided pneumothorax with mediastinal shift toward the left and a depressed right hemidiaphragm.
+- **Modality:** Portable (supine/AP) CHEST RADIOGRAPH, grayscale DICOM-like.
+- **Prompt:** Photorealistic portable ANTEROPOSTERIOR (AP) CHEST RADIOGRAPH of an adult trauma patient in grayscale with DICOM-like diagnostic dynamic range and anatomically accurate thoracic anatomy. Depict a RIGHT-SIDED TENSION PNEUMOTHORAX: the RIGHT hemithorax is markedly LUCENT (hyperlucent, black, avascular) with the collapsed right lung retracted into a small opacified stump at the hilum and a visible sharp visceral pleural edge. There is positive mediastinal pressure - the MEDIASTINUM and TRACHEA are SHIFTED toward the LEFT (contralateral) side, the right hemidiaphragm is DEPRESSED/flattened, and the right intercostal spaces are widened. The left lung is normally aerated with vascular markings; ribs and soft tissues correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Large right hyperlucent avascular hemithorax with a collapsed lung and pleural edge
+  - Mediastinal/tracheal shift AWAY from the affected side (to the left)
+  - Depressed right hemidiaphragm with widened intercostal spaces
+  - Portable AP chest radiograph appearance
+- **Avoid (negative prompt):** a small apical pneumothorax with no shift; mediastinal shift TOWARD the lucent side (collapse/atelectasis) as the intended finding; a large pleural effusion with a meniscus; a lobar consolidation; bilateral disease; a normal symmetric chest; a CT cross-section; annotations or a chest tube already in place.
+- **Real-image fallback:** Radiopaedia - search "tension pneumothorax chest radiograph mediastinal shift"; Wikimedia Commons "tension pneumothorax x-ray".
+
+### s3-0236 - Digoxin toxicity  (Step 3 - Emergency Medicine)  [ECG]
+- **WARNING:** AI image generators render ECG tracings as physiologically meaningless gibberish and cannot reliably draw bidirectional ventricular ectopy with the scooped (Salvador Dali sagging) ST segments of digoxin effect. Strongly recommend a REAL de-identified digoxin-toxicity rhythm strip (e.g., LITFL) or the app's own accurate vector-drawn tracing as the PRIMARY asset; use any AI output only as a placeholder and QA every complex against the criteria below.
+- **Case context:** 80-year-old woman with heart failure and atrial fibrillation on digoxin, now with anorexia, nausea, yellow-tinged vision, bradycardia and lethargy after starting a new diuretic, with potassium 6.1 and a markedly elevated digoxin level; the rhythm strip must show a slow, regularized junctional rhythm with bidirectional ventricular ectopy and scooped ST segments consistent with digoxin effect and toxicity.
+- **Modality:** ECG rhythm strip (single/multi-lead) on standard red/pink grid.
+- **Prompt:** Photorealistic clinical ECG rhythm strip on standard pink-red ECG graph paper with fine 1 mm and bold 5 mm gridlines and a clean black waveform trace. Depict DIGOXIN TOXICITY: a SLOW ventricular rate with a REGULARIZED narrow-complex JUNCTIONAL rhythm (regular R-R, absent/uncoupled P waves) interrupted by BIDIRECTIONAL ventricular ectopy - wide QRS ectopic beats whose main deflection ALTERNATES beat-to-beat between pointing UP and pointing DOWN in the same lead. Throughout, the ST segments show the characteristic DOWNSLOPING, SCOOPED (sagging, reverse-tick / Salvador Dali mustache) morphology of digoxin effect with flattened T waves. Physiologically consistent, evenly spaced baseline beats. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Slow, regularized junctional rhythm (regular R-R, absent/uncoupled P waves)
+  - Bidirectional ventricular ectopy (QRS axis alternating up/down beat-to-beat)
+  - Scooped/sagging downsloping ST segments (reverse-tick digoxin effect)
+  - Standard pink ECG grid
+- **Avoid (negative prompt):** a normal upright ST segment; ST-segment elevation of an acute myocardial infarction; a fast irregularly irregular rate as the dominant feature; a monomorphic wide-complex tachycardia; tall tented T waves as the intended finding; random gibberish waveforms; wrong grid color; annotations or lead labels.
+- **Real-image fallback:** Life in the Fast Lane (litfl.com ECG library) - search "digoxin toxicity ECG bidirectional VT scooped ST digoxin effect"; Wikimedia Commons "digoxin effect ECG". Prefer the app vector tracing.
+
+### s3-0238 - Perforated peptic ulcer (free air)  (Step 3 - Surgery)
+- **Case context:** 57-year-old man with chronic NSAID use who presents with sudden, severe, diffuse abdominal pain for 3 hours, lying still and ill-appearing, febrile (38.3 C), tachycardic (116), with a rigid abdomen, diffuse rebound tenderness, and absent bowel sounds; the image is an upright chest radiograph demonstrating free air under both hemidiaphragms.
+- **Modality:** Upright (erect) frontal CHEST RADIOGRAPH, grayscale DICOM-like.
+- **Prompt:** Photorealistic UPRIGHT (erect) frontal CHEST RADIOGRAPH of an adult in grayscale with DICOM-like diagnostic dynamic range and anatomically accurate thoracic and upper-abdominal anatomy. Depict PNEUMOPERITONEUM from a PERFORATED VISCUS: thin crescents of lucent FREE AIR sit UNDER BOTH HEMIDIAPHRAGMS - a black gas lucency between the domed diaphragm above and the liver on the right and the gastric fundus/spleen on the left below - sharply outlining the smooth undersurface of each diaphragm. The lung fields are clear with no consolidation or effusion, the heart size is normal, and the ribs and soft tissues are correctly rendered. no text, no labels, no watermark, no measurement overlays.
+- **Must show (QA):**
+  - Crescent of lucent free air under the diaphragm (subdiaphragmatic gas), bilateral
+  - Sharp smooth diaphragmatic undersurface outlined by the gas
+  - Clear lung fields, normal heart size (upright chest technique)
+  - Authentic erect frontal chest radiograph appearance
+- **Avoid (negative prompt):** a normal gastric air bubble contiguous with the stomach on the left only (mistaken pseudo-pneumoperitoneum); colonic interposition (Chilaiditi) as the intended finding; a basal pneumonia or pleural effusion; a lobar consolidation; a supine film with no visible free-air crescent; a subdiaphragmatic abscess with an air-fluid level; annotations or tubes.
+- **Real-image fallback:** Radiopaedia - search "pneumoperitoneum free air under diaphragm erect chest radiograph perforation"; Wikimedia Commons "pneumoperitoneum chest x-ray free air under diaphragm".
