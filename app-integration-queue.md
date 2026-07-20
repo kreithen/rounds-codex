@@ -1,9 +1,20 @@
 # Live app (`index.html`) — integration & change queue
 
-> **STATUS 2026-07-20:** Items 1–8 below and the **USMLE Mode** + **Resident Mode expansion**
-> content integrations are all BUILT & VERIFIED into `applive/index.html` (local, gitignored)
-> and bundled as `rounds-codex-app-deploy-20260720.zip` (index.html + usmle/, 65 files).
-> Remaining for a later deploy: Cardiology galleries (5) and Cardiology quizzes (3).
+> **STATUS 2026-07-20:** Items 1–8 below, the **USMLE Mode** + **Resident Mode expansion**
+> content integrations, AND the **5 Cardiology galleries + 3 Cardiology quizzes** are all
+> BUILT & VERIFIED into `applive/index.html` (local, gitignored).
+> - First bundle: `rounds-codex-app-deploy-20260720.zip` (index.html + usmle/, 65 files).
+> - Complete superset bundle: `rounds-codex-app-deploy-20260720-cardio.zip` (index.html +
+>   usmle/ + assets/{aortic-dissection,cardiac-arrest,dvt,hyperlipidemia,pad}/, 176 files).
+>
+> **Cardiology galleries (5):** aortic-dissection, cardiac-arrest, dvt, hyperlipidemia, pad —
+> each 10 approved pages rendered (180 dpi) + thumbs + compact ~5 MB gallery PDF; GALLERIES
+> entries + REALGAL membership added; page titles read visually from each page's IMAGE TITLE
+> box (aortic p7 = "Management Overview", read from its header since it has no title box).
+> **Cardiology quizzes (3):** aortic-dissection, cardiac-arrest, dvt — 10 Q each wired into
+> QUIZZES (q/ch/correct/exp/pearl/img), auto-enabling the "Take the Quiz" button on those
+> condition pages. Verified headless: galleries render, viewer opens, quizzes load & score,
+> zero JS errors. (PAD + Hyperlipidemia have galleries only — no quizzes were uploaded.)
 
 
 Everything to apply to the LIVE app (`rounds-codex-app` repo → https://rounds-codex.netlify.app)
