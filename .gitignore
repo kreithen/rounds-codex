@@ -3,3 +3,7 @@ node_modules/
 
 # Generated Netlify preview build artifact (delivered directly, not versioned)
 rounds-codex-usmle-preview.zip
+
+# raw generated images awaiting QA (not versioned)
+tools/candidates/*
+!tools/candidates/.gitkeep

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rounds Codex — Image QA Review</title>
+<style>
+  :root{--bg:#070b12;--ink:#eaf1f8;--muted:#8ea0b5;--card:#0f1420;--line:rgba(255,255,255,.10);
+    --cyan:#46d3e6;--good:#37d07a;--bad:#ff5d6c;--amber:#f1b24a;}
+  *{box-sizing:border-box} html,body{margin:0}
+  body{background:var(--bg);color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;padding:0 16px 80px}
+  .wrap{max-width:1080px;margin:0 auto}
+  header{position:sticky;top:0;background:rgba(7,11,18,.94);backdrop-filter:blur(8px);
+    padding:14px 0;border-bottom:1px solid var(--line);z-index:5}
+  h1{font-size:18px;margin:0 0 8px}
+  .bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;font-size:13px}
+  .bar button{border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--ink);
+    border-radius:9px;padding:6px 11px;cursor:pointer;font-weight:700}
+  .bar button.on{border-color:var(--cyan);color:#bff0f7}
+  .bar .sp{flex:1}
+  .stat{color:var(--muted)} .stat b{color:var(--ink)}
+  .grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:16px}
+  @media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+  .item{border:1px solid var(--line);border-radius:16px;background:var(--card);overflow:hidden;display:flex;flex-direction:column}
+  .item.approved{border-color:rgba(55,208,122,.6)} .item.rejected{border-color:rgba(255,93,108,.55)}
+  .item.regenerate{border-color:rgba(241,178,74,.6)}
+  .imgwrap{background:#05070c;display:grid;place-items:center;min-height:220px;position:relative}
+  .imgwrap img{max-width:100%;max-height:360px;display:block}
+  .noimg{color:var(--muted);font-size:13px;padding:40px;text-align:center}
+  .decal{position:absolute;top:8px;right:8px;font-size:11px;font-weight:800;padding:3px 8px;border-radius:6px}
+  .decal.approved{background:var(--good);color:#04240f} .decal.rejected{background:var(--bad);color:#2a0409}
+  .decal.regenerate{background:var(--amber);color:#241a04}
+  .body{padding:14px 15px;display:flex;flex-direction:column;gap:9px}
+  .id{font-size:12px;color:var(--cyan);font-weight:800;letter-spacing:.5px}
+  .title{font-size:16px;font-weight:800;margin:0}
+  .meta{font-size:12px;color:var(--muted)}
+  .ecgwarn{font-size:12px;color:var(--amber);border:1px solid rgba(241,178,74,.4);border-radius:8px;padding:6px 9px;background:rgba(241,178,74,.06)}
+  .must{margin:0;padding:0;list-style:none;font-size:13px}
+  .must li{padding:4px 0 4px 22px;position:relative;color:#cdd8e5}
+  .must li::before{content:"☐";position:absolute;left:0;color:var(--muted)}
+  details{font-size:12.5px;color:var(--muted)} summary{cursor:pointer}
+  .acts{display:flex;gap:8px;margin-top:4px}
+  .acts button{flex:1;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--ink);
+    border-radius:10px;padding:10px;font-weight:800;cursor:pointer;font-size:13px}
+  .acts .ap.on{background:var(--good);color:#04240f;border-color:var(--good)}
+  .acts .rj.on{background:var(--bad);color:#2a0409;border-color:var(--bad)}
+  .acts .rg.on{background:var(--amber);color:#241a04;border-color:var(--amber)}
+  .empty{color:var(--muted);text-align:center;padding:60px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Rounds Codex — Image QA Review <span class="stat" id="counts"></span></h1>
+    <div class="bar">
+      <button data-f="all" class="on">All</button>
+      <button data-f="pending">Pending</button>
+      <button data-f="approved">Approved</button>
+      <button data-f="rejected">Rejected</button>
+      <button data-f="regenerate">Regenerate</button>
+      <button data-f="withimg">Has image</button>
+      <button data-f="ecg">ECG</button>
+      <span class="sp"></span>
+      <button id="export">Export decisions.json</button>
+      <button id="import">Import…</button>
+      <input id="file" type="file" accept="application/json" hidden />
+    </div>
+  </header>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" hidden>No items match this filter.</div>
+</div>
+<script>
+// Physician QA gate. Serve this folder over http (e.g. `python3 -m http.server` in tools/)
+// and drop candidate images into ./candidates/<id>.png (or .jpg/.jpeg/.webp).
+var LS="rc_img_qa_decisions";
+var IMG_DIR="candidates/";
+var EXT=[".png",".jpg",".jpeg",".webp"];
+var state=JSON.parse(localStorage.getItem(LS)||"{}"); // {id: "approved"|"rejected"|"regenerate"}
+var items=[], filter="all";
+
+function save(){localStorage.setItem(LS,JSON.stringify(state));}
+function findImg(id,cb){ // probe extensions for a candidate file
+  var i=0;(function tryn(){ if(i>=EXT.length){cb(null);return;}
+    var url=IMG_DIR+id+EXT[i++]; var im=new Image();
+    im.onload=function(){cb(url)}; im.onerror=tryn; im.src=url; })();
+}
+function counts(){
+  var a=0,r=0,g=0,p=0;
+  items.forEach(function(it){var d=state[it.id];if(d==="approved")a++;else if(d==="rejected")r++;else if(d==="regenerate")g++;else p++;});
+  document.getElementById("counts").innerHTML="· <b>"+items.length+"</b> items · <b style='color:var(--good)'>"+a+"</b> approved · "+r+" rejected · "+g+" regen · "+p+" pending";
+}
+function pass(it){
+  var d=state[it.id]||"pending";
+  if(filter==="all")return true;
+  if(filter==="pending")return d==="pending";
+  if(filter==="ecg")return it.isECG;
+  if(filter==="withimg")return !!it._img;
+  return d===filter;
+}
+function render(){
+  var grid=document.getElementById("grid"); grid.innerHTML="";
+  var shown=items.filter(pass);
+  document.getElementById("empty").hidden=shown.length>0;
+  shown.forEach(function(it){
+    var d=state[it.id]||"";
+    var el=document.createElement("div"); el.className="item "+d;
+    var img=it._img?('<img src="'+it._img+'" alt="">'):('<div class="noimg">no candidate image yet<br><small>drop '+it.id+'.png into candidates/</small></div>');
+    var decal=d?('<span class="decal '+d+'">'+d.toUpperCase()+'</span>'):"";
+    el.innerHTML=
+      '<div class="imgwrap">'+img+decal+'</div>'+
+      '<div class="body">'+
+        '<div class="id">'+it.id+' · '+(it.exam||"")+(it.system?" · "+it.system:"")+'</div>'+
+        '<p class="title">'+it.title+'</p>'+
+        (it.isECG?'<div class="ecgwarn">⚠ ECG — AI renders ECGs unreliably. Prefer a real de-identified tracing or the app vector version; approve only if every wave is correct.</div>':"")+
+        '<div class="meta"><b>Modality:</b> '+(it.modality||"")+'</div>'+
+        '<div class="meta"><b>Must show (QA):</b></div>'+
+        '<ul class="must">'+it.mustShow.map(function(m){return "<li>"+m+"</li>"}).join("")+'</ul>'+
+        (it.avoid?'<details><summary>Avoid / negative prompt</summary>'+it.avoid+'</details>':"")+
+        (it.fallback?'<details><summary>Real-image fallback</summary>'+it.fallback+'</details>':"")+
+        '<div class="acts">'+
+          '<button class="ap'+(d==="approved"?" on":"")+'" data-a="approved" data-id="'+it.id+'">Approve</button>'+
+          '<button class="rj'+(d==="rejected"?" on":"")+'" data-a="rejected" data-id="'+it.id+'">Reject</button>'+
+          '<button class="rg'+(d==="regenerate"?" on":"")+'" data-a="regenerate" data-id="'+it.id+'">Regenerate</button>'+
+        '</div>'+
+      '</div>';
+    grid.appendChild(el);
+  });
+  counts();
+}
+document.getElementById("grid").addEventListener("click",function(e){
+  var b=e.target.closest("button[data-a]"); if(!b)return;
+  var id=b.getAttribute("data-id"), a=b.getAttribute("data-a");
+  state[id]= state[id]===a ? undefined : a; if(state[id]===undefined)delete state[id];
+  save(); render();
+});
+[].forEach.call(document.querySelectorAll(".bar button[data-f]"),function(b){
+  b.addEventListener("click",function(){filter=b.getAttribute("data-f");
+    [].forEach.call(document.querySelectorAll(".bar button[data-f]"),function(x){x.classList.toggle("on",x===b)});
+    render();});
+});
+document.getElementById("export").addEventListener("click",function(){
+  var out={approved:[],rejected:[],regenerate:[]};
+  Object.keys(state).forEach(function(id){ if(out[state[id]]) out[state[id]].push(id); });
+  var blob=new Blob([JSON.stringify(out,null,2)],{type:"application/json"});
+  var a=document.createElement("a"); a.href=URL.createObjectURL(blob); a.download="decisions.json"; a.click();
+});
+document.getElementById("import").addEventListener("click",function(){document.getElementById("file").click();});
+document.getElementById("file").addEventListener("change",function(e){
+  var f=e.target.files[0]; if(!f)return; var r=new FileReader();
+  r.onload=function(){try{var d=JSON.parse(r.result);state={};
+    ["approved","rejected","regenerate"].forEach(function(k){(d[k]||[]).forEach(function(id){state[id]=k;});});
+    save();render();}catch(err){alert("bad decisions.json");}};
+  r.readAsText(f);
+});
+// load manifest, then probe images
+fetch("image-manifest.json").then(function(r){return r.json()}).then(function(m){
+  items=m.items;
+  render(); // render immediately (no images yet)
+  var pend=items.length;
+  items.forEach(function(it){ findImg(it.id,function(url){ it._img=url; if(--pend<=0||url) render(); }); });
+}).catch(function(){document.getElementById("grid").innerHTML='<div class="empty">Could not load image-manifest.json — run <code>python3 tools/build_image_manifest.py</code> and serve this folder over http (not file://).</div>';});
+</script>
+</body>
+</html>

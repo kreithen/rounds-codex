@@ -73,6 +73,8 @@
   .anchor-fig{margin:8px 0 14px;padding:16px;border:1px solid var(--line-2);border-radius:14px;
     background:rgba(255,255,255,.02);text-align:center;color:var(--ink)}
   .anchor-fig svg{max-width:100%;height:auto;display:block;margin:2px auto 0}
+  .anchor-fig img{max-width:100%;height:auto;display:block;margin:2px auto 0;border-radius:10px}
+  .schembadge.real{color:var(--good);border-color:rgba(55,208,122,.5)}
   .anchor-fig figcaption{margin-top:10px;font-size:13px;color:var(--muted);text-align:left}
   .schembadge{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.6px;
     color:var(--cyan);border:1px solid rgba(70,211,230,.5);border-radius:5px;padding:1px 7px;margin-bottom:6px}
@@ -342,6 +344,7 @@
 <script src="illus-pJ.js"></script>
 <script src="illus-pK.js"></script>
 <script src="illus-pL.js"></script>
+<script src="illus-real.js"></script>
 <script>
 (function(){
   "use strict";
@@ -425,8 +428,9 @@
       var idx=inner.indexOf(":"),label=idx>-1?inner.slice(0,idx).trim():"VISUAL",
           desc=idx>-1?inner.slice(idx+1).trim():inner.trim();
       var svg=(id&&window.RC_ILLUS&&RC_ILLUS[id])?RC_ILLUS[id]:"";
-      if(svg) return '<figure class="anchor-fig"><span class="schembadge">SCHEMATIC</span>'+svg+
-        '<figcaption><span class="anchor-tag">'+label+'</span> '+desc+'</figcaption></figure>';
+      if(svg){var real=/^\s*<img/i.test(svg);
+        return '<figure class="anchor-fig"><span class="schembadge'+(real?' real':'')+'">'+(real?'IMAGE':'SCHEMATIC')+'</span>'+svg+
+        '<figcaption><span class="anchor-tag">'+label+'</span> '+desc+'</figcaption></figure>';}
       return '<span class="anchor-box"><span class="anchor-tag">'+label+'</span> '+desc+'</span>';
     });
     return s.replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>");
