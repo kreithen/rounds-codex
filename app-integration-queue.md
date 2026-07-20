@@ -1,5 +1,11 @@
 # Live app (`index.html`) — integration & change queue
 
+> **STATUS 2026-07-20:** Items 1–8 below and the **USMLE Mode** + **Resident Mode expansion**
+> content integrations are all BUILT & VERIFIED into `applive/index.html` (local, gitignored)
+> and bundled as `rounds-codex-app-deploy-20260720.zip` (index.html + usmle/, 65 files).
+> Remaining for a later deploy: Cardiology galleries (5) and Cardiology quizzes (3).
+
+
 Everything to apply to the LIVE app (`rounds-codex-app` repo → https://rounds-codex.netlify.app)
 in the **desktop + Chrome** session. All edits are built/verified here first, then published in
 ONE integrated pass: pull the current live `index.html` once → apply all of the below → verify
