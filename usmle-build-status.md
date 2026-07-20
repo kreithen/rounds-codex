@@ -128,10 +128,14 @@ Tarasoff duty to protect.
 | Step 2 CK | B5 | data/usmle-step2ck-b5.js | 25 | yes | yes |
 | Step 2 CK | B6 | data/usmle-step2ck-b6.js | 25 | yes | yes |
 | Step 2 CK | B7 | data/usmle-step2ck-b7.js | 25 | yes | yes |
+| Step 2 CK | B8..B12 | data/usmle-step2ck-b8..b12.js | 25 each | yes | yes |
+| Step 2 CK | B13 (final) | data/usmle-step2ck-b13.js | 18 | yes | yes |
 
-Step 2 CK running total: **175** MCQs (max 318). 175 unique topics (full scan, no dups).
+Step 2 CK running total: **318** MCQs = **COMPLETE** (max 318). All 318 topics unique
+(full scan, no dups). IDs s2ck-0001 .. s2ck-0318.
 
-- IDs s2ck-0001 .. s2ck-0175. Validated with `--exam step2ck` (exam-aware validator).
+- B8-B12 each 25 items key 5/5/5/5/5; B13 = 18 items (key spread A4/B4/C4/D3/E3) to hit 318.
+- Validated with `--exam step2ck` (exam-aware validator).
 - B7 IDs s2ck-0151 .. s2ck-0175 (contiguous). Key 5/5/5/5/5, 15 anchors.
 - B6 IDs s2ck-0126 .. s2ck-0150 (contiguous). Key 5/5/5/5/5, 15 anchors. Topics: complete
   AV block, adrenal incidentaloma, ischemic colitis, vertebral osteomyelitis, OSA, CPPD,
@@ -179,13 +183,18 @@ Step 2 CK running total: **175** MCQs (max 318). 175 unique topics (full scan, n
 | Step 3 | Day 2 ACM B2 | data/usmle-step3d2-b2.js | 25 | yes | yes |
 | Step 3 | Day 2 ACM B3 | data/usmle-step3d2-b3.js | 25 | yes | yes |
 | Step 3 | Day 2 ACM B4 | data/usmle-step3d2-b4.js | 25 | yes | yes |
+| Step 3 | Day 1 FIP B7..B9 | data/usmle-step3d1-b7..b9.js | 25 each | yes | yes |
+| Step 3 | Day 1 FIP B10 (final) | data/usmle-step3d1-b10.js | 7 | yes | yes |
+| Step 3 | Day 2 ACM B5..B7 | data/usmle-step3d2-b5..b7.js | 25 each | yes | yes |
+| Step 3 | Day 2 ACM B8 (final) | data/usmle-step3d2-b8.js | 5 | yes | yes |
 
-Step 3 running total: **250** MCQs (150 Day 1 FIP + 100 Day 2 ACM; max 412: 232 Day 1 FIP +
-180 Day 2 ACM + 13 CCS). Day 1 IDs s3-0001..0075 + 0101..0225; Day 2 IDs s3-0076..0100 +
-0126..0250. Within-bank topic scans: Day 1 150 unique, Day 2 100 unique, no dups. This round
-Day 1 B6 (diagnosis/biostat lane) and Day 2 B4 (management lane) got sharp lane mandates +
-full-bank uniqueness requirement -> zero new cross-day collisions. Day 2 B4 answer key was
-rebalanced in-repo to 5/5/5/5/5 (agent hit session limit mid-rebalance).
+Step 3 running total: **412** MCQs = **COMPLETE** (232 Day 1 FIP + 180 Day 2 ACM; max 412
+MCQ + 13 CCS deferred). Day 1 IDs s3-0001..0075 + 0101..0225 + 0251..0407(Day1 blocks);
+Day 2 IDs interleaved in the shared s3- space (0076..0100, 0126..0150, 0176..0200, 0226..0250,
+0276..0300, 0326..0350, 0376..0412). Final full-bank topic scan: Day 1 **232 unique**, Day 2
+**180 unique**, no within-bank dups. Sharp Day 1 (diagnosis/biostat) vs Day 2 (management)
+lane mandates + full-bank uniqueness -> intended diagnose-vs-manage overlaps across days only.
+Day 2 B4 and B6 answer keys were rebalanced in-repo to 5/5/5/5/5 (agents hit limits mid-run).
 
 - Day 1 FIP IDs s3-0001 .. s3-0125; Day 2 ACM IDs s3-0076 .. s3-0150. Day 1 blocks use the
   lower range each round, Day 2 the next block: D1 = 0001-0075 + 0101-0125; D2 = 0076-0100 +
@@ -268,26 +277,23 @@ rebalanced in-repo to 5/5/5/5/5 (agent hit session limit mid-rebalance).
 - Upgrade path: generate/source a real or AI image per id -> physician verifies against
   the QA checklist -> wire into `RC_ILLUS[id]` (one-line swap; no engine change).
 
+## Status: ALL FOUR EXAMS COMPLETE AT MAX — 1010 MCQs
+- Step 1 **280/280** · Step 2 CK **318/318** · Step 3 Day 1 **232/232** · Step 3 Day 2 **180/180**.
+- Every bank internally topic-unique (full scans). Preview wired tri-exam (4 buttons) with the
+  matted logo; all 1010 items playable. Production usmle-step1-data.js at 280.
+
 ## Next
-- **Illustrations for CK B7 / S3 D1 B6 / S3 D2 B4 are PENDING** (13 items -> illus-pJ.js) +
-  their higgsfield prompts (would take the master file 147 -> 160). Blocked by the session
-  limit (resets 9:20pm UTC); do these first next session, then re-zip.
-- **Step 1 is COMPLETE at 280/280.** Do not add more unless asked.
-- Step 2 CK Batch 8 (s2ck-0176 .. s2ck-0200); validate `--exam step2ck --against` b1..b7.
-- Step 3 Day 1 FIP Batch 7 (s3-0251 .. s3-0275) and Day 2 ACM Batch 5 (s3-0276 .. s3-0300).
-  Keep the sharp Day 1 (diagnosis/biostat/screening/ethics) vs Day 2 (longitudinal management)
-  lane mandates + full-bank topic-uniqueness requirement -> this eliminated cross-day dups.
-- Preview app (`preview/`) has FOUR exam BUTTONS: Step 1 280 / Step 2 CK 175 / Step 3 Day 1
-  150 / Step 3 Day 2 100. Exam dropdown + order/shuffle selector removed (always shuffle,
-  no-repeat). Header uses the MATTED logo (assets/logo.png, transparent). For a new batch:
-  add its `<script src>`, extend the BANKS.<exam> concat (step3d1 vs step3d2!), copy into
-  preview/data.
-- Production kit (`production/`): usmle-step1-data.js at 280 via build-data.js (auto-globs).
-  Consider Step 2 CK / Step 3 production bundlers. Live wiring via the Chrome publish path.
-- Images: append a `higgsfield-image-prompts.md` section for every new illustrated question
-  (now 147; +13 pending). New-item SVGs: pE..pI done; pJ pending (RC_ILLUS registry).
+- **Illustration sweep PENDING for 71 new illustrated items** (batches CK b8-b13, S3 D1 b7-b10,
+  S3 D2 b5-b8) -> new illus-p*.js files + higgsfield prompts. illus-pJ (13, prior round) is DONE
+  (registry 160). Draw these 71, wire into preview after illus-pJ, then re-zip.
+- CCS (Step 3 interactive cases) still deferred past v1.
+- Preview app (`preview/`): FOUR exam BUTTONS Step 1 280 / Step 2 CK 318 / Step 3 Day 1 232 /
+  Step 3 Day 2 180. Always shuffle + no-repeat; matted logo (assets/logo.png). To add a batch:
+  `<script src>` + BANKS.<exam> concat (step3d1 vs step3d2!) + copy into preview/data.
+- LIVE deploy (desktop+Chrome): see `app-integration-queue.md` (USMLE Mode wiring, cardiology
+  galleries+quizzes in `galleries-staging/`, Resident Mode 1308 expansion in `resident-staging/`,
+  + queued layout/functionality changes + the Hypertension swipe bug).
 
 ## Trigger for next session
-"Continue the USMLE module - generate Step 1 Batch 8 / Step 2 CK Batch 3 / Step 3 Day 1
-Batch 2 (25 items each, blueprint mix)."
-Attach: this status doc + the relevant data/*.js banks (for id checks).
+"USMLE banks are COMPLETE (1010). Do the illustration sweep for the 71 new illustrated items,
+then help with the live desktop+Chrome integration per app-integration-queue.md."
