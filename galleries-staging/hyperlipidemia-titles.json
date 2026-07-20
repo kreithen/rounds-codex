@@ -1,0 +1,16 @@
+{
+  "id": "hyperlipidemia",
+  "titles": [
+    "Overview",
+    "Anatomy",
+    "Pathophysiology",
+    "Clinical Presentation",
+    "Physical Exam/Assessment",
+    "Diagnostics",
+    "Treatment Algorithm",
+    "Histology/Pathology",
+    "Management",
+    "Clinical Pearls"
+  ],
+  "note": "Default from Factory v2.0 locked 10-image sequence; confirm visually against each page footer at build time."
+}

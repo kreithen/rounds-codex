@@ -1,0 +1,146 @@
+{
+  "id": "aortic-aneurysm-dissection",
+  "title": "Aortic Aneurysm & Dissection",
+  "questions": [
+    {
+      "q": "Which layer of the aortic wall first tears in an acute aortic dissection?",
+      "options": [
+        "Adventitia",
+        "Intima",
+        "Media",
+        "Endothelium only",
+        "Vasa vasorum"
+      ],
+      "answer": 1,
+      "explanation": "An intimal tear allows blood to enter the media, creating a false lumen.",
+      "pearl": "Hypertension is the most common risk factor for aortic dissection.",
+      "imageRef": 3
+    },
+    {
+      "q": "Which classification system is most commonly used for aortic dissections?",
+      "options": [
+        "Wells",
+        "Stanford",
+        "Rutherford",
+        "CEAP",
+        "Fontaine"
+      ],
+      "answer": 1,
+      "explanation": "Stanford classifies dissections as Type A (ascending aorta involved) or Type B (ascending aorta not involved).",
+      "pearl": "Type A dissections usually require emergency surgery.",
+      "imageRef": 1
+    },
+    {
+      "q": "Which symptom is most characteristic of acute aortic dissection?",
+      "options": [
+        "Gradual calf pain",
+        "Sudden severe tearing chest or back pain",
+        "Chronic cough",
+        "Fever",
+        "Abdominal bloating"
+      ],
+      "answer": 1,
+      "explanation": "Patients classically describe abrupt onset of severe tearing or ripping pain.",
+      "pearl": "Pain migration may indicate propagation of the dissection.",
+      "imageRef": 4
+    },
+    {
+      "q": "Which imaging study is preferred for a hemodynamically stable patient with suspected aortic dissection?",
+      "options": [
+        "Chest X-ray",
+        "Echocardiography only",
+        "CT angiography",
+        "Plain CT",
+        "MRI brain"
+      ],
+      "answer": 2,
+      "explanation": "CTA rapidly defines the location and extent of dissection and is the preferred initial study in stable patients.",
+      "pearl": "CTA is also excellent for evaluating aneurysm size.",
+      "imageRef": 6
+    },
+    {
+      "q": "What is the major goal of initial medical management for acute aortic dissection?",
+      "options": [
+        "Increase heart rate",
+        "Lower blood pressure and reduce shear stress",
+        "Administer antibiotics",
+        "Begin thrombolysis",
+        "Correct anemia"
+      ],
+      "answer": 1,
+      "explanation": "Anti-impulse therapy with beta-blockers and blood pressure control reduces propagation of the dissection.",
+      "pearl": "Heart rate control is often achieved before aggressive blood pressure reduction.",
+      "imageRef": 7
+    },
+    {
+      "q": "Which inherited disorder is strongly associated with thoracic aortic aneurysm?",
+      "options": [
+        "Cystic fibrosis",
+        "Marfan syndrome",
+        "Crohn disease",
+        "Psoriasis",
+        "Multiple sclerosis"
+      ],
+      "answer": 1,
+      "explanation": "Marfan syndrome predisposes patients to medial degeneration and thoracic aortic aneurysm.",
+      "pearl": "Young patients with thoracic aneurysms should be evaluated for genetic syndromes.",
+      "imageRef": 8
+    },
+    {
+      "q": "Which physical examination finding may occur in proximal (Type A) aortic dissection?",
+      "options": [
+        "Carpal tunnel syndrome",
+        "Diastolic murmur of aortic regurgitation",
+        "Splenomegaly",
+        "Clubbing",
+        "Wheezing"
+      ],
+      "answer": 1,
+      "explanation": "Extension into the aortic root can produce acute aortic regurgitation.",
+      "pearl": "Pulse deficits increase suspicion for dissection.",
+      "imageRef": 5
+    },
+    {
+      "q": "Which complication is most feared with an enlarging abdominal aortic aneurysm?",
+      "options": [
+        "Venous thrombosis",
+        "Rupture",
+        "Appendicitis",
+        "Pancreatitis",
+        "Diverticulitis"
+      ],
+      "answer": 1,
+      "explanation": "Rupture carries a very high mortality and is the principal indication for elective repair based on aneurysm size.",
+      "pearl": "Larger aneurysms have a greater annual rupture risk.",
+      "imageRef": 7
+    },
+    {
+      "q": "Which treatment is definitive for most Stanford Type A dissections?",
+      "options": [
+        "Aspirin",
+        "Observation",
+        "Emergency surgical repair",
+        "Physical therapy",
+        "Long-term antibiotics"
+      ],
+      "answer": 2,
+      "explanation": "Type A dissections are surgical emergencies because of the risk of rupture, tamponade, and coronary involvement.",
+      "pearl": "Mortality rises rapidly if surgical treatment is delayed.",
+      "imageRef": 9
+    },
+    {
+      "q": "What is the most important long-term management strategy after successful treatment of aortic aneurysm or dissection?",
+      "options": [
+        "Lifelong blood pressure control and surveillance imaging",
+        "Daily aspirin alone",
+        "Bed rest",
+        "High-intensity exercise",
+        "Routine antibiotics"
+      ],
+      "answer": 0,
+      "explanation": "Strict blood pressure control and periodic imaging are essential to monitor for disease progression or recurrence.",
+      "pearl": "Lifelong follow-up is required even after successful surgical or endovascular repair.",
+      "imageRef": 10
+    }
+  ]
+}

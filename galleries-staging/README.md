@@ -36,3 +36,13 @@ firewalled from this workspace — see the `medcodex-publish` skill).
 ## Notes
 - PAD and Hyperlipidemia quizzes were not uploaded — galleries only, unless more arrive.
 - These staged PDFs can be deleted after a successful live deploy (they belong in the app repo).
+
+## Pre-processed (done tonight, ready for tomorrow's wiring)
+- **`<slug>-quiz.json`** — the 3 quizzes parsed into structured data (10 Q each; question,
+  options[5], answer index 0-4, explanation, pearl, imageRef). Validated: all 30 items have
+  5 options + a valid answer. Aortic/DVT carry gallery `imageRef`s; Cardiac Arrest has none.
+- **`<slug>-titles.json`** — default gallery page titles from the Factory v2.0 LOCKED 10-image
+  sequence (Overview, Anatomy, Pathophysiology, Clinical Presentation, Physical Exam/Assessment,
+  Diagnostics, Treatment Algorithm, Histology/Pathology, Management[/Post-ROSC], Clinical Pearls).
+  Confirm visually against each page footer at build time before finalizing.
+- **`FACTORY-v2.0-spec.txt`** — the production standard (North Star, locked pipeline, QA gates).

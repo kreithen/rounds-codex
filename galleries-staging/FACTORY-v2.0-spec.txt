@@ -1,0 +1,69 @@
+Rounds Codex Factory v2.0 (LOCKED)
+1. North Star
+• Medical accuracy first.
+• Mobile-first educational design.
+• One canonical asset library.
+• Truthfulness over convenience.
+2. Standard Module Pipeline
+• Phase 0: Clinical planning and storyboard.
+• Generate one image at a time.
+• Internal QA.
+• User QA.
+• Approval.
+• Persist PNG.
+• Verify PNG.
+• Upload to Google Drive.
+• Verify Drive file ID.
+• Record manifest/checksum.
+• Advance to next image only after all gates pass.
+3. Locked 10-Image Sequence
+• 1 Overview
+• 2 Anatomy
+• 3 Pathophysiology
+• 4 Clinical Presentation
+• 5 Physical Exam/Assessment
+• 6 Diagnostics
+• 7 Treatment Algorithm
+• 8 Histology/Pathology
+• 9 Management/Post-ROSC
+• 10 Clinical Pearls
+4. Mandatory QA Gates
+• Medical QA
+• Educational QA
+• Visual QA
+• Mobile QA
+• Brand QA
+
+• Module Continuity QA
+5. Production Integrity Locks
+• Approval Persistence Gate
+• Google Drive Verification Gate
+• Deterministic Edit Lock
+• Verification Vocabulary Lock
+• Failure Escalation Rule
+6. Asset Management
+• Locked filenames.
+• Manifest.
+• Checksums.
+• Version history.
+• Archive folder.
+• Final Packages folder.
+7. Packaging
+• 10 PNG masters
+• Gallery PDF
+• Quiz
+• Faculty key
+• QA package
+• References
+• Production ZIP
+8. Multi-Agent Workflow
+• Research Agent
+• Medical QA Agent
+• Visual QA Agent
+• Production Agent
+• Coordinator Agent
+9. Image Rules
+• Do not regenerate for small label/leader-line edits when deterministic editing is available.
+• Verify module/page/storyboard before presenting.
+10. Completion Definition
+• A module is COMPLETE only when every required artifact exists and every upload is verified.

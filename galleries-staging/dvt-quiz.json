@@ -1,0 +1,146 @@
+{
+  "id": "dvt",
+  "title": "Deep Vein Thrombosis",
+  "questions": [
+    {
+      "q": "Which veins are most commonly involved in clinically significant lower-extremity deep vein thrombosis?",
+      "options": [
+        "Great saphenous vein only",
+        "Posterior tibial and peroneal veins only",
+        "Femoral, popliteal, and iliac veins",
+        "Small saphenous vein only",
+        "Dorsal venous arch"
+      ],
+      "answer": 2,
+      "explanation": "Proximal DVT most commonly involves the femoral, popliteal, and iliac veins and carries the highest risk of pulmonary embolism. Superficial veins such as the great and small saphenous veins are not classified as deep veins.",
+      "pearl": "Proximal DVT is associated with a substantially higher risk of pulmonary embolism than isolated distal calf DVT.",
+      "imageRef": 2
+    },
+    {
+      "q": "Virchow's triad consists of which three major contributors to venous thrombosis?",
+      "options": [
+        "Infection, vasospasm, and hypertension",
+        "Hypercoagulability, venous stasis, and endothelial injury",
+        "Smoking, obesity, and diabetes",
+        "Platelet dysfunction, anemia, and dehydration",
+        "Trauma, edema, and hypoxia"
+      ],
+      "answer": 1,
+      "explanation": "Virchow's triad describes the three principal mechanisms underlying thrombus formation: venous stasis, endothelial injury, and hypercoagulability.",
+      "pearl": "Most patients have multiple risk factors acting simultaneously.",
+      "imageRef": 3
+    },
+    {
+      "q": "Which symptom is most commonly associated with acute lower-extremity DVT?",
+      "options": [
+        "Bilateral calf paralysis",
+        "Sudden painless foot drop",
+        "Unilateral leg swelling and pain",
+        "Severe abdominal pain",
+        "Hemoptysis without leg symptoms"
+      ],
+      "answer": 2,
+      "explanation": "The most common presentation is unilateral leg swelling with pain or tenderness. Some patients, however, may be asymptomatic.",
+      "pearl": "Clinical findings alone cannot reliably diagnose or exclude DVT.",
+      "imageRef": 4
+    },
+    {
+      "q": "Which physical examination finding is considered most suggestive of DVT?",
+      "options": [
+        "Cyanosis of both feet",
+        "Localized calf tenderness with unilateral swelling",
+        "Positive Babinski sign",
+        "Bilateral absent pedal pulses",
+        "Generalized edema"
+      ],
+      "answer": 1,
+      "explanation": "Calf tenderness combined with unilateral swelling increases clinical suspicion, although physical examination alone lacks sufficient diagnostic accuracy.",
+      "pearl": "Clinical prediction tools such as the Wells score improve diagnostic assessment.",
+      "imageRef": 5
+    },
+    {
+      "q": "What is the first-line imaging study for suspected lower-extremity DVT?",
+      "options": [
+        "MRI",
+        "CT angiography",
+        "Compression duplex ultrasonography",
+        "Venography",
+        "Plain radiography"
+      ],
+      "answer": 2,
+      "explanation": "Compression duplex ultrasound is the preferred initial imaging modality because it is accurate, noninvasive, and widely available.",
+      "pearl": "Failure of the vein to fully compress is the hallmark sonographic finding of DVT.",
+      "imageRef": 6
+    },
+    {
+      "q": "Which histologic component predominates in a venous thrombus?",
+      "options": [
+        "Calcified plaque",
+        "Neutrophilic abscess",
+        "Fibrin and trapped red blood cells",
+        "Smooth muscle bundles",
+        "Cholesterol crystals"
+      ],
+      "answer": 2,
+      "explanation": "Venous thrombi are fibrin-rich (\"red clots\") that contain abundant erythrocytes trapped within a fibrin mesh.",
+      "pearl": "Venous thrombi differ from arterial thrombi, which are relatively platelet-rich.",
+      "imageRef": 8
+    },
+    {
+      "q": "What is the most serious complication of untreated DVT?",
+      "options": [
+        "Cellulitis",
+        "Chronic venous insufficiency",
+        "Pulmonary embolism",
+        "Peripheral neuropathy",
+        "Osteomyelitis"
+      ],
+      "answer": 2,
+      "explanation": "Embolization of thrombus to the pulmonary arteries can result in life-threatening pulmonary embolism.",
+      "pearl": "Prompt anticoagulation markedly reduces the risk of embolization.",
+      "imageRef": 7
+    },
+    {
+      "q": "Which medication class is recommended as first-line treatment for most patients with acute DVT?",
+      "options": [
+        "Aspirin",
+        "Direct oral anticoagulants (DOACs)",
+        "Beta-blockers",
+        "Statins",
+        "Corticosteroids"
+      ],
+      "answer": 1,
+      "explanation": "Current guidelines recommend DOACs for most patients with acute DVT because they are effective and have a favorable safety profile.",
+      "pearl": "Treatment duration depends on whether the DVT is provoked or unprovoked.",
+      "imageRef": 9
+    },
+    {
+      "q": "Which patient has the greatest risk for developing DVT?",
+      "options": [
+        "Healthy teenager",
+        "Marathon runner",
+        "Recent major orthopedic surgery with prolonged immobilization",
+        "Mild seasonal allergies",
+        "Controlled hypothyroidism"
+      ],
+      "answer": 2,
+      "explanation": "Major surgery, especially orthopedic procedures combined with immobilization, is one of the strongest acquired risk factors.",
+      "pearl": "Early ambulation and pharmacologic prophylaxis reduce postoperative DVT risk.",
+      "imageRef": 3
+    },
+    {
+      "q": "Which statement best summarizes modern DVT management?",
+      "options": [
+        "All patients require surgery.",
+        "Compression stockings alone are sufficient.",
+        "Early diagnosis and anticoagulation prevent pulmonary embolism and long-term complications.",
+        "DVT always resolves without treatment.",
+        "Antibiotics are first-line therapy."
+      ],
+      "answer": 2,
+      "explanation": "Prompt diagnosis followed by appropriate anticoagulation remains the cornerstone of DVT management.",
+      "pearl": "Always evaluate for pulmonary embolism in patients with DVT who develop chest pain or dyspnea.",
+      "imageRef": 10
+    }
+  ]
+}

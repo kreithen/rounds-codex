@@ -1,0 +1,146 @@
+{
+  "id": "cardiac-arrest-acls",
+  "title": "Cardiac Arrest (ACLS)",
+  "questions": [
+    {
+      "q": "A patient is unresponsive, not breathing normally, and has no definite carotid pulse within 10 seconds. What is the next step?",
+      "options": [
+        "Start high-quality CPR immediately",
+        "Obtain a 12-lead ECG",
+        "Check pupils",
+        "Wait for monitor",
+        "Give epinephrine"
+      ],
+      "answer": 0,
+      "explanation": "Immediate CPR is the priority.",
+      "pearl": "",
+      "imageRef": null
+    },
+    {
+      "q": "Recommended adult chest compression rate is:",
+      "options": [
+        "60\u201380/min",
+        "80\u2013100/min",
+        "100\u2013120/min",
+        "120\u2013140/min",
+        "As fast as possible"
+      ],
+      "answer": 2,
+      "explanation": "Maintain 100\u2013120/min.",
+      "pearl": "",
+      "imageRef": null
+    },
+    {
+      "q": "Which rhythm is shockable?",
+      "options": [
+        "Asystole",
+        "PEA",
+        "VF",
+        "Sinus bradycardia",
+        "AV block"
+      ],
+      "answer": 2,
+      "explanation": "VF and pulseless VT are shockable.",
+      "pearl": "",
+      "imageRef": null
+    },
+    {
+      "q": "Primary purpose of high-quality CPR is:",
+      "options": [
+        "Restore normal BP",
+        "Maintain coronary and cerebral perfusion",
+        "Terminate VF",
+        "Treat acidosis",
+        "Reverse MI"
+      ],
+      "answer": 1,
+      "explanation": "CPR buys time by maintaining perfusion.",
+      "pearl": "",
+      "imageRef": null
+    },
+    {
+      "q": "Which is NOT one of the Hs and Ts?",
+      "options": [
+        "Hypovolemia",
+        "Hypoxia",
+        "Hyperglycemia",
+        "Tamponade",
+        "Toxins"
+      ],
+      "answer": 2,
+      "explanation": "Hyperglycemia is not an H or T.",
+      "pearl": "",
+      "imageRef": null
+    },
+    {
+      "q": "During adult cardiac arrest, epinephrine dose is:",
+      "options": [
+        "0.5 mg q10 min",
+        "1 mg IV/IO every 3\u20135 min",
+        "2 mg once",
+        "5 mg q5 min",
+        "300 mg once"
+      ],
+      "answer": 1,
+      "explanation": "Standard ACLS dose.",
+      "pearl": "",
+      "imageRef": null
+    },
+    {
+      "q": "With an advanced airway in place:",
+      "options": [
+        "Pause compressions for breaths",
+        "30:2 continues",
+        "Continuous compressions with 1 breath every 6 sec",
+        "1 breath every 3 sec",
+        "Stop ventilation"
+      ],
+      "answer": 2,
+      "explanation": "Continuous compressions plus 10 breaths/min.",
+      "pearl": "",
+      "imageRef": null
+    },
+    {
+      "q": "An abrupt sustained rise in ETCOI during CPR most likely indicates:",
+      "options": [
+        "Hyperventilation",
+        "ROSC",
+        "Pulmonary embolism",
+        "Asystole",
+        "Poor compressions"
+      ],
+      "answer": 1,
+      "explanation": "Sudden ETCOI rise suggests ROSC.",
+      "pearl": "",
+      "imageRef": null
+    },
+    {
+      "q": "After ROSC, an appropriate MAP target is:",
+      "options": [
+        "40 mmHg",
+        "50 mmHg",
+        "\u226565 mmHg",
+        "\u226590 mmHg",
+        "No target"
+      ],
+      "answer": 2,
+      "explanation": "Support organ perfusion.",
+      "pearl": "",
+      "imageRef": null
+    },
+    {
+      "q": "Which statement best summarizes ACLS priorities?",
+      "options": [
+        "Medications save most lives",
+        "CPR and early defibrillation are the highest priorities",
+        "Troponin guides CPR",
+        "CT first",
+        "Shock all rhythms"
+      ],
+      "answer": 1,
+      "explanation": "Early CPR and defibrillation have greatest impact.",
+      "pearl": "",
+      "imageRef": null
+    }
+  ]
+}
