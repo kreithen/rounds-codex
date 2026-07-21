@@ -76,7 +76,7 @@ const BLOCK = [
 '<!-- ===== NCLEX-RN module (Phase 6 injected by apply-nclex.js) ===== -->',
 '<style id="nclex-entry-style">',
 '  /* entry point shows only in Nursing mode (app pattern: html[data-mode="nursing"]) */',
-'  #nclex-entry{display:none;margin:12px 0;}',
+'  #nclex-entry{display:none;margin:12px 0;text-align:center;}',
 '  html[data-mode="nursing"] #nclex-entry{display:block;}',
 '  html[data-mode="nursing"] #nclex-root{display:block;}',
 '  #nclex-root{display:none;}',
