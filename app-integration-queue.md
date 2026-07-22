@@ -77,6 +77,22 @@ headless → upload to `main` via Chrome → Netlify auto-deploys.
 
 <!-- More layout/functionality changes get appended here as the user sends them. -->
 
+### 9. USMLE performance report (BUILT & VERIFIED 2026-07-22 — ready to upload)
+- Adds a full results report to the USMLE page (`usmle/`): overall score ring, breakdowns by
+  **organ system** + **difficulty**, honest strengths/needs-work, study recommendations, and the
+  per-question review. Reuses the shared report engine (`nclex-report.js`) via a registered
+  `usmle` **profile** — the engine is **not forked**.
+- **Honesty constraints honored** (verified in tests + on the real page): practice score, **never
+  a predicted USMLE score or pass probability**; <3-item areas shown ("limited sample") but never
+  driving recommendations; no fabricated strength when none clears the 80% bar.
+- **3 files → `usmle/` folder:** `index.html` (2 tiny edits: 2 script tags + a render hook before
+  `show("results")`, try/catch-wrapped), plus NEW `nclex-report.js` and `usmle-report.js`.
+- Staged in `applive/usmle/` (gitignored). Drop-in bundle + upload steps: scratchpad
+  `usmle-report-deploy/` (`UPLOAD-TOMORROW.md`). Modular source committed to `src/report/`
+  (engine + profile + 32-assertion test + 25-assertion agnostic test; both green).
+- Independent of the NCLEX ship (that patches the big root `index.html`; this only touches
+  `usmle/`).
+
 ## Content integrations (built & staged in this repo)
 - **USMLE Mode** — wire the finished quiz app (`preview/`) into `index.html` (new section/route,
   TBD with user). 705+ items across Step 1/2 CK/3 Day 1/3 Day 2.
