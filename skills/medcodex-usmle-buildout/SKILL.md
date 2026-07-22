@@ -13,6 +13,13 @@ This is a **medical exam bank**. A wrong answer key or a rationale that contradi
 is a real harm to a student. The discipline here — one "Correct" rationale, balanced keys,
 named guidelines — is not bureaucracy; it is the product.
 
+## Ask first — at invocation (AskUserQuestion)
+Before writing, confirm these via **AskUserQuestion**, marking your best guess "(Recommended)".
+Skip any the user already answered.
+1. **Slot** — which **exam**, **how many** items, and which **systems/disciplines**.
+2. **Extend vs replace** — the four exams are already at their maxes; is this **extending beyond the
+   max** (changes the blueprint — confirm), or **replacing/improving** existing items?
+
 ## Prerequisites — confirm before writing anything
 1. **What slot?** Exam (Step 1 / Step 2 CK / Step 3 Day 1 FIP / Step 3 Day 2 ACM), the system/
    discipline focus, and how many items. If the user is vague, check `usmle-build-status.md` for
