@@ -13,7 +13,8 @@ const NCLEX_B3 = [
     key: 1,
     rationale: "A stable patient on a predictable, scheduled regimen is the safest match for a new nurse in orientation. Unstable patients needing vasopressor titration (A), immediate post-arrest care (C), or a complex evolving bleed (D) require the judgment and speed of an experienced nurse.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK519519/", "https://www.ncsbn.org/public-files/NGN_Winter18.pdf"],
-    cond: null
+    cond: null,
+    subj: "professional"
   },
   {
     id: "nclex-0038", type: "mc", cat: "mgmt", diff: 3, caseId: null, step: null,
@@ -27,7 +28,8 @@ const NCLEX_B3 = [
     key: 3,
     rationale: "A sudden severe headache described as the worst of one's life is a red flag for a subarachnoid hemorrhage and requires immediate assessment. The pneumonia patient (A) is stable on low-flow oxygen, the dry dark drainage (B) is old and expected, and the transfusion (C) is scheduled later and not yet urgent.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK442010/", "https://medlineplus.gov/ency/article/000701.htm"],
-    cond: null
+    cond: null,
+    subj: "professional"
   },
   {
     id: "nclex-0039", type: "mc", cat: "pharm", diff: 2, caseId: null, step: null,
@@ -41,7 +43,8 @@ const NCLEX_B3 = [
     key: 2,
     rationale: "Long-term or moderate-course corticosteroids suppress the adrenal axis; stopping abruptly can precipitate an adrenal crisis, so the dose must be tapered. Prednisone should be taken with food to reduce GI upset (not empty stomach at bedtime, B), and fluid restriction (D) is not indicated.",
     src: ["https://medlineplus.gov/druginfo/meds/a601102.html", "https://www.ncbi.nlm.nih.gov/books/NBK534809/"],
-    cond: null
+    cond: null,
+    subj: "pharmacology"
   },
   {
     id: "nclex-0040", type: "mc", cat: "pharm", diff: 3, caseId: null, step: null,
@@ -55,7 +58,8 @@ const NCLEX_B3 = [
     key: 0,
     rationale: "Flushing and rash of the face and upper body during rapid vancomycin infusion is vancomycin infusion reaction (formerly 'red man syndrome'), a rate-related histamine release, not a true allergy. The priority is to stop the infusion and restart it more slowly as prescribed. Continuing (C) or speeding up (D) worsens the reaction.",
     src: ["https://medlineplus.gov/druginfo/meds/a604038.html", "https://www.ncbi.nlm.nih.gov/books/NBK459263/"],
-    cond: null
+    cond: null,
+    subj: "pharmacology"
   },
   {
     id: "nclex-0041", type: "sata", cat: "risk", diff: 3, caseId: null, step: null,
@@ -71,7 +75,8 @@ const NCLEX_B3 = [
     key: [0, 1, 3],
     rationale: "After femoral cardiac cath, a diminished pedal pulse, a rapidly enlarging hematoma, and a cool pale foot with delayed refill all signal arterial compromise or bleeding and require immediate follow-up. Mild insertion-site discomfort (C), normal vitals (E), and the urge to void (F) are expected and not emergent.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK534803/", "https://medlineplus.gov/ency/article/003419.htm"],
-    cond: null
+    cond: null,
+    subj: "cardiac"
   },
   {
     id: "nclex-0042", type: "mc", cat: "risk", diff: 2, caseId: null, step: null,
@@ -85,7 +90,8 @@ const NCLEX_B3 = [
     key: 0,
     rationale: "Before a paracentesis, the patient should void (or be catheterized) to empty the bladder, which lowers the risk of accidental bladder puncture when the abdominal needle is inserted. The patient is positioned upright or with the head elevated (not flat, B); prolonged fluid restriction (C) and an enema (D) are not indicated.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK441861/", "https://medlineplus.gov/ency/article/003896.htm"],
-    cond: null
+    cond: null,
+    subj: "gi"
   },
   {
     id: "nclex-0043", type: "mc", cat: "physio", diff: 2, caseId: null, step: null,
@@ -99,7 +105,8 @@ const NCLEX_B3 = [
     key: 1,
     rationale: "For a dyspneic COPD patient, the nurse first assesses and optimizes positioning; high-Fowler's improves lung expansion and eases work of breathing. An SpO2 of 89% is acceptable in COPD, so aggressively increasing oxygen to 6 L (A) risks blunting the hypoxic drive, and discontinuing oxygen (C) or lying flat (D) worsens hypoxemia.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK559281/", "https://medlineplus.gov/ency/article/000091.htm"],
-    cond: "copd"
+    cond: "copd",
+    subj: "respiratory"
   },
   {
     id: "nclex-0044", type: "mc", cat: "safety", diff: 2, caseId: null, step: null,
@@ -113,7 +120,8 @@ const NCLEX_B3 = [
     key: 2,
     rationale: "Safe practice requires two patient identifiers (e.g., name and date of birth) before medication administration. With the band missing, the nurse verifies identity by two approved identifiers and replaces the band before giving the drug. Relying on recognition (A), a roommate (B), or giving first and banding later (D) all risk a wrong-patient error.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK493222/", "https://www.cdc.gov/patient-safety/index.html"],
-    cond: null
+    cond: null,
+    subj: "professional"
   },
   {
     id: "nclex-0045", type: "mc", cat: "hpm", diff: 1, caseId: null, step: null,
@@ -122,7 +130,8 @@ const NCLEX_B3 = [
     key: 1,
     rationale: "Adequate folic acid (folate) intake before and during early pregnancy is essential to prevent neural tube defects such as spina bifida, which is why 400 to 800 mcg daily is recommended. Vitamin C, vitamin D, and calcium are important in pregnancy but do not specifically prevent neural tube defects.",
     src: ["https://www.cdc.gov/folic-acid/about/index.html", "https://medlineplus.gov/ency/article/002408.htm"],
-    cond: null
+    cond: null,
+    subj: "maternal-newborn"
   },
   {
     id: "nclex-0046", type: "numeric", cat: "pharm", diff: 3, caseId: null, step: null,
@@ -130,7 +139,8 @@ const NCLEX_B3 = [
     numeric: { answer: 15, unit: "mL/hour", tol: 1 },
     rationale: "Dose = 5 mcg/kg/min x 80 kg = 400 mcg/min = 24,000 mcg/hr = 24 mg/hr. Concentration = 400 mg / 250 mL = 1.6 mg/mL. Rate = 24 mg/hr divided by 1.6 mg/mL = 15 mL/hour.",
     src: ["https://medlineplus.gov/druginfo/meds/a682059.html", "https://www.ncbi.nlm.nih.gov/books/NBK470392/"],
-    cond: null
+    cond: null,
+    subj: "pharmacology"
   }
 ];
 

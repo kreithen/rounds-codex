@@ -12,7 +12,8 @@ const NCLEX_B7 = [
     key: 0,
     rationale: "Metformin is withheld around the time of iodinated contrast studies in at-risk patients because contrast-related kidney injury can lead to metformin accumulation and lactic acidosis. Doubling (B), taking with carbs (C), or ignoring the interaction (D) is unsafe.",
     src: ["https://medlineplus.gov/druginfo/meds/a696005.html", "https://www.ncbi.nlm.nih.gov/books/NBK518983/"],
-    cond: null
+    cond: null,
+    subj: "pharmacology"
   },
   {
     id: "nclex-0074", type: "mc", cat: "pharm", diff: 3, caseId: null, step: null,
@@ -26,7 +27,8 @@ const NCLEX_B7 = [
     key: 0,
     rationale: "IV phenytoin must be given slowly (rate-limited) with normal saline (it precipitates in dextrose) while monitoring the ECG and blood pressure for bradycardia and hypotension. Mixing in dextrose (B), rapid push (C), and co-infusing with incompatible drugs (D) are dangerous.",
     src: ["https://medlineplus.gov/druginfo/meds/a682022.html", "https://www.ncbi.nlm.nih.gov/books/NBK482444/"],
-    cond: null
+    cond: null,
+    subj: "pharmacology"
   },
   {
     id: "nclex-0075", type: "mc", cat: "pharm", diff: 2, caseId: null, step: null,
@@ -40,7 +42,8 @@ const NCLEX_B7 = [
     key: 0,
     rationale: "Nonselective beta-blockers block beta-2 receptors in the airways and can trigger bronchospasm, so the nurse must monitor lung sounds for wheezing in a patient with asthma. Deep tendon reflexes (B), skin turgor (C), and pupil size (D) are not the primary concern with this drug-disease interaction.",
     src: ["https://medlineplus.gov/druginfo/meds/a682607.html", "https://www.ncbi.nlm.nih.gov/books/NBK534841/"],
-    cond: "asthma"
+    cond: "asthma",
+    subj: "pharmacology"
   },
   {
     id: "nclex-0076", type: "sata", cat: "pharm", diff: 3, caseId: null, step: null,
@@ -56,7 +59,8 @@ const NCLEX_B7 = [
     key: [0, 1, 3, 4],
     rationale: "Safe warfarin use includes bleeding precautions (soft toothbrush, electric razor), keeping INR lab appointments, informing all providers, and watching for bleeding signs. Doubling a missed dose (C) risks over-anticoagulation, and adding aspirin (F) compounds bleeding risk and should not be done without provider direction.",
     src: ["https://medlineplus.gov/druginfo/meds/a682277.html", "https://www.ncbi.nlm.nih.gov/books/NBK470313/"],
-    cond: null
+    cond: null,
+    subj: "pharmacology"
   },
   {
     id: "nclex-0077", type: "mc", cat: "pharm", diff: 3, caseId: null, step: null,
@@ -70,7 +74,8 @@ const NCLEX_B7 = [
     key: 0,
     rationale: "Naloxone has a relatively short half-life compared with many opioids, so as it wears off the patient can re-sedate and require repeat dosing or an infusion with continued monitoring. It is not a naloxone overdose (B), an allergy (C), or tolerance (D) that explains the recurrence.",
     src: ["https://medlineplus.gov/druginfo/meds/a685039.html", "https://www.ncbi.nlm.nih.gov/books/NBK441910/"],
-    cond: null
+    cond: null,
+    subj: "pharmacology"
   },
   {
     id: "nclex-0078", type: "mc", cat: "pharm", diff: 2, caseId: null, step: null,
@@ -84,7 +89,8 @@ const NCLEX_B7 = [
     key: 0,
     rationale: "External heat increases fentanyl absorption from the patch and can cause a fatal overdose, so heat sources over the patch must be avoided. The patch must never be cut (B), it is typically changed every 72 hours (not every 4 hours, C), and it should be applied to intact, non-irritated skin (D).",
     src: ["https://medlineplus.gov/druginfo/meds/a601202.html", "https://www.ncbi.nlm.nih.gov/books/NBK459275/"],
-    cond: null
+    cond: null,
+    subj: "pharmacology"
   },
   {
     id: "nclex-0079", type: "numeric", cat: "pharm", diff: 2, caseId: null, step: null,
@@ -92,7 +98,8 @@ const NCLEX_B7 = [
     numeric: { answer: 31, unit: "gtt/min", tol: 1 },
     rationale: "Rate = (volume x drop factor) / time in minutes = (1,000 mL x 15 gtt/mL) / (8 x 60 min) = 15,000 / 480 = 31.25, which rounds to 31 gtt/min.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK518998/", "https://medlineplus.gov/ency/article/003423.htm"],
-    cond: null
+    cond: null,
+    subj: "pharmacology"
   },
   {
     id: "nclex-0080", type: "mc", cat: "pharm", diff: 2, caseId: null, step: null,
@@ -106,7 +113,8 @@ const NCLEX_B7 = [
     key: 0,
     rationale: "Spironolactone conserves potassium, so combining it with potassium-based salt substitutes can cause dangerous hyperkalemia; the patient should avoid them. Vitamin C (B), calcium (C), and vitamin K (D) are not the concern with this potassium-sparing diuretic.",
     src: ["https://medlineplus.gov/druginfo/meds/a682627.html", "https://www.ncbi.nlm.nih.gov/books/NBK554421/"],
-    cond: null
+    cond: null,
+    subj: "pharmacology"
   },
   {
     id: "nclex-0081", type: "mc", cat: "physio", diff: 2, caseId: null, step: null,
@@ -120,7 +128,8 @@ const NCLEX_B7 = [
     key: 0,
     rationale: "For conscious symptomatic hypoglycemia, the priority is to give about 15 grams of fast-acting carbohydrate (the rule of 15) and recheck in 15 minutes. Giving insulin (B) would deepen hypoglycemia, protein (C) acts too slowly, and withholding treatment (D) is dangerous.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK534841/", "https://medlineplus.gov/ency/article/000386.htm"],
-    cond: null
+    cond: null,
+    subj: "endocrine"
   },
   {
     id: "nclex-0082", type: "mc", cat: "physio", diff: 2, caseId: null, step: null,
@@ -134,7 +143,8 @@ const NCLEX_B7 = [
     key: 0,
     rationale: "Addisonian crisis is acute adrenal insufficiency marked by severe hypotension, profound weakness, hyponatremia, and hyperkalemia, requiring emergency IV fluids, corticosteroids, and glucose. Hypertension with moon face (B) describes Cushing's, and choices C and D describe hyperglycemia and hypothyroidism, respectively.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK441994/", "https://medlineplus.gov/ency/article/000357.htm"],
-    cond: null
+    cond: null,
+    subj: "endocrine"
   }
 ];
 

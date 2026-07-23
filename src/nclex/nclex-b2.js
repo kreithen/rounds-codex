@@ -16,7 +16,8 @@ const NCLEX_B2 = [
     key: [0, 1, 3, 5],
     rationale: "Early hypoglycemia triggers a sympathetic (adrenergic) response: diaphoresis with cool clammy skin, tremors, palpitations/tachycardia, and sudden hunger with irritability. A fruity acetone breath odor and Kussmaul respirations are hallmarks of diabetic ketoacidosis (hyperglycemia), not hypoglycemia.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK534841/", "https://medlineplus.gov/ency/article/000386.htm"],
-    cond: null
+    cond: null,
+    subj: "endocrine"
   },
   {
     id: "nclex-0028", type: "mc", cat: "mgmt", diff: 2, caseId: null, step: null,
@@ -30,7 +31,8 @@ const NCLEX_B2 = [
     key: 1,
     rationale: "Administering routine oral medications to a stable patient is within the LPN/LVN scope. Creating the initial care plan (A) and the admission assessment (C) require RN-level assessment and clinical judgment, and high-alert IV push antiarrhythmics for an unstable rhythm (D) are outside the LPN/LVN scope.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK519519/", "https://www.ncsbn.org/public-files/NGN_Winter18.pdf"],
-    cond: null
+    cond: null,
+    subj: "professional"
   },
   {
     id: "nclex-0029", type: "cloze", cat: "pharm", diff: 3, caseId: null, step: null,
@@ -41,7 +43,8 @@ const NCLEX_B2 = [
     ],
     rationale: "Regular (short-acting) insulin has an onset of roughly 30 to 60 minutes, peaks at 2 to 4 hours. When mixing regular and NPH in one syringe, the nurse draws up the clear regular insulin first (clear before cloudy) to avoid contaminating the regular vial with the longer-acting NPH.",
     src: ["https://medlineplus.gov/druginfo/meds/a682611.html", "https://www.ncbi.nlm.nih.gov/books/NBK560688/"],
-    cond: null
+    cond: null,
+    subj: "pharmacology"
   },
   {
     id: "nclex-0030", type: "selectN", cat: "safety", diff: 3, caseId: null, step: null,
@@ -58,7 +61,8 @@ const NCLEX_B2 = [
     key: [0, 2, 3],
     rationale: "Evidence-based fall prevention keeps the bed low with wheels locked, the call light within reach, and nonskid footwear during ambulation. Routine vest restraints (B) and keeping all four side rails up (E, considered a restraint) increase injury risk, and dim lighting (F) raises fall risk rather than lowering it.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK560761/", "https://www.cdc.gov/falls/about/index.html"],
-    cond: null
+    cond: null,
+    subj: "fundamentals"
   },
   {
     id: "nclex-0031", type: "ddTable", cat: "physio", diff: 3, caseId: null, step: null,
@@ -70,7 +74,8 @@ const NCLEX_B2 = [
     ],
     rationale: "Respiratory acidosis: low pH with high PaCO2 (55) and normal HCO3. Metabolic acidosis: low pH with low HCO3 (16) and near-normal PaCO2. Respiratory alkalosis: high pH (7.50) with low PaCO2 (30) from hyperventilation and normal HCO3. Matching pH direction to the primary driver (CO2 vs HCO3) identifies each disorder.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK507807/", "https://medlineplus.gov/ency/article/003855.htm"],
-    cond: null
+    cond: null,
+    subj: "fluid-electrolyte"
   },
   {
     id: "nclex-0032", type: "matrixMR", cat: "risk", diff: 3, caseId: null, step: null,
@@ -85,7 +90,8 @@ const NCLEX_B2 = [
     key: [[0, 1], [0], [0, 1], [2]],
     rationale: "An SpO2 of 88% both indicates worsening and requires immediate action (oxygen). Expiratory wheezing indicates worsening airflow obstruction. Speaking in single words signals severe distress that indicates worsening and requires immediate action. A rate of 16, unlabored, is a reassuring finding. Distinguishing findings that merely trend worse from those demanding immediate action is the core skill.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK430901/", "https://medlineplus.gov/ency/article/000141.htm"],
-    cond: "asthma"
+    cond: "asthma",
+    subj: "respiratory"
   },
   {
     id: "nclex-0033", type: "pair", cat: "pharm", diff: 3, caseId: null, step: null,
@@ -96,7 +102,8 @@ const NCLEX_B2 = [
     },
     rationale: "Naloxone is the opioid antagonist that reverses respiratory depression, and the IV route gives the fastest onset in an emergency. Flumazenil reverses benzodiazepines, acetylcysteine treats acetaminophen toxicity, and protamine reverses heparin, none of which apply to opioid overdose.",
     src: ["https://medlineplus.gov/druginfo/meds/a685039.html", "https://www.ncbi.nlm.nih.gov/books/NBK441910/"],
-    cond: null
+    cond: null,
+    subj: "pharmacology"
   },
   {
     id: "nclex-0034", type: "mc", cat: "hpm", diff: 2, caseId: null, step: null,
@@ -110,7 +117,8 @@ const NCLEX_B2 = [
     key: 0,
     rationale: "Current guidance (USPSTF and American Cancer Society) recommends average-risk colorectal cancer screening beginning at age 45, so a healthy 50-year-old should already be screened and remain up to date. Delaying to age 70 (B) misses early disease, routine chest x-ray (C) is not a recommended lung-cancer screen, and screening is preventive and precedes symptoms (D).",
     src: ["https://www.cdc.gov/colorectal-cancer/screening/index.html", "https://www.ncbi.nlm.nih.gov/books/NBK570861/"],
-    cond: null
+    cond: null,
+    subj: "gi"
   },
   {
     id: "nclex-0035", type: "mc", cat: "psych", diff: 2, caseId: null, step: null,
@@ -124,7 +132,8 @@ const NCLEX_B2 = [
     key: 1,
     rationale: "Delirium tremens is a medical emergency marked by disorientation, hallucinations, severe autonomic instability (tachycardia, hypertension, fever), and agitation, typically 48 to 96 hours after the last drink. A mild tremor (A), poor sleep with mild anxiety (C), and normal vital signs (D) reflect early or uncomplicated withdrawal.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK482134/", "https://medlineplus.gov/ency/article/000766.htm"],
-    cond: null
+    cond: null,
+    subj: "mental-health"
   },
   {
     id: "nclex-0036", type: "mc", cat: "basic", diff: 1, caseId: null, step: null,
@@ -138,7 +147,8 @@ const NCLEX_B2 = [
     key: 1,
     rationale: "A clean-catch midstream specimen is obtained by cleansing the meatus, voiding the first portion into the toilet to flush the distal urethra, then collecting the midstream portion, which best reflects bladder urine. Collecting the first stream (A) captures contaminants, and a specimen should be sent promptly, not held 24 hours (D).",
     src: ["https://medlineplus.gov/ency/article/007487.htm", "https://www.ncbi.nlm.nih.gov/books/NBK557685/"],
-    cond: null
+    cond: null,
+    subj: "renal-gu"
   }
 ];
 

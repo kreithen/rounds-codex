@@ -12,7 +12,8 @@ const NCLEX_B6 = [
     key: 0,
     rationale: "Assisting with hygiene and recording intake and output are routine, standardized tasks within UAP scope. Evaluating pain response (B), first-time teaching (C), and assessing lung sounds (D) all require nursing judgment and cannot be delegated to UAP.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK519519/", "https://www.ncsbn.org/public-files/NGN_Winter18.pdf"],
-    cond: null
+    cond: null,
+    subj: "professional"
   },
   {
     id: "nclex-0064", type: "mc", cat: "mgmt", diff: 3, caseId: null, step: null,
@@ -26,7 +27,8 @@ const NCLEX_B6 = [
     key: 0,
     rationale: "The nurse's first priority after discovering a medication error is patient safety: assess the patient's vital signs and clinical status to detect and respond to harm (e.g., hypotension). Notifying the provider and completing an incident report (B) follow, but assessment comes first; blaming the prior nurse (C) or waiting passively (D) is inappropriate.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK519065/", "https://www.cdc.gov/patient-safety/index.html"],
-    cond: null
+    cond: null,
+    subj: "professional"
   },
   {
     id: "nclex-0065", type: "mc", cat: "mgmt", diff: 2, caseId: null, step: null,
@@ -40,7 +42,8 @@ const NCLEX_B6 = [
     key: 0,
     rationale: "In triage, immediate (red) priority goes to those with life-threatening but survivable problems, such as a correctable airway obstruction. A stable fracture (B) is delayed, a patient with no respirations after airway opening (C) is categorized as expectant/deceased in mass-casualty triage, and the walking-wounded (D) are minor.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK459369/", "https://www.cdc.gov/mass-casualty/hcp/triage/index.html"],
-    cond: null
+    cond: null,
+    subj: "professional"
   },
   {
     id: "nclex-0066", type: "mc", cat: "mgmt", diff: 2, caseId: null, step: null,
@@ -54,7 +57,8 @@ const NCLEX_B6 = [
     key: 0,
     rationale: "Informed consent requires the patient to understand the procedure, risks, benefits, and alternatives. If the patient does not understand, the nurse must stop and notify the provider, whose duty it is to explain, before any signature. Wanting a pen (B), family presence (C), and ordinary nervousness (D) do not invalidate consent.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK430827/", "https://medlineplus.gov/ency/patientinstructions/000445.htm"],
-    cond: null
+    cond: null,
+    subj: "professional"
   },
   {
     id: "nclex-0067", type: "mc", cat: "safety", diff: 2, caseId: null, step: null,
@@ -68,7 +72,8 @@ const NCLEX_B6 = [
     key: 0,
     rationale: "Oxygen supports combustion, so equipment must be kept well away (at least 6 feet) from open flames and heat sources. Storing a tank near a stove (B) is a fire hazard, petroleum-based products near oxygen (C) are flammable and should be avoided, and smoking is never safe around oxygen (D).",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK551617/", "https://medlineplus.gov/ency/patientinstructions/000049.htm"],
-    cond: null
+    cond: null,
+    subj: "respiratory"
   },
   {
     id: "nclex-0068", type: "mc", cat: "safety", diff: 2, caseId: null, step: null,
@@ -82,7 +87,8 @@ const NCLEX_B6 = [
     key: 0,
     rationale: "During a seizure, the priority is to protect the airway and prevent injury: turn the patient to the side (to prevent aspiration) and cushion the head. Never insert anything into the mouth (B), do not restrain the limbs (C, which can cause fractures), and do not move the patient to a chair mid-seizure (D).",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK430765/", "https://medlineplus.gov/ency/article/003200.htm"],
-    cond: null
+    cond: null,
+    subj: "neuro"
   },
   {
     id: "nclex-0069", type: "mc", cat: "risk", diff: 2, caseId: null, step: null,
@@ -96,7 +102,8 @@ const NCLEX_B6 = [
     key: 0,
     rationale: "A platelet count of 22,000/microL is severe thrombocytopenia (normal 150,000 to 400,000) that carries a high risk of spontaneous bleeding and requires immediate notification and bleeding precautions. Hemoglobin 11.8 (B), WBC 8,500 (C), and sodium 138 (D) are near-normal.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK542208/", "https://medlineplus.gov/ency/article/003647.htm"],
-    cond: null
+    cond: null,
+    subj: "oncology-heme"
   },
   {
     id: "nclex-0070", type: "mc", cat: "risk", diff: 3, caseId: null, step: null,
@@ -110,7 +117,8 @@ const NCLEX_B6 = [
     key: 0,
     rationale: "Iodinated contrast can cause contrast-induced nephropathy, so renal function (serum creatinine and eGFR) must be checked before the scan to identify patients at risk. Electrolytes (B), WBC (C), and protein (D) are not the primary safety screen for contrast administration.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK448066/", "https://medlineplus.gov/ency/article/003330.htm"],
-    cond: null
+    cond: null,
+    subj: "renal-gu"
   },
   {
     id: "nclex-0071", type: "mc", cat: "risk", diff: 2, caseId: null, step: null,
@@ -124,7 +132,8 @@ const NCLEX_B6 = [
     key: 0,
     rationale: "Chills, low back pain, and apprehension early in a transfusion suggest an acute hemolytic transfusion reaction. The first action is to stop the transfusion immediately and maintain IV access with normal saline (via new tubing), then notify the provider and blood bank. Slowing (B), medicating and continuing (C), or delaying (D) can be fatal.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK574536/", "https://medlineplus.gov/ency/article/000554.htm"],
-    cond: null
+    cond: null,
+    subj: "oncology-heme"
   },
   {
     id: "nclex-0072", type: "mc", cat: "pharm", diff: 2, caseId: null, step: null,
@@ -138,7 +147,8 @@ const NCLEX_B6 = [
     key: 0,
     rationale: "Digoxin slows the heart rate; the standard parameter is to hold the dose and notify the provider if the apical pulse is below 60 beats per minute in an adult, because giving it could worsen bradycardia and signal toxicity. Administering full (B) or partial (C) doses or giving and rechecking later (D) is unsafe.",
     src: ["https://medlineplus.gov/druginfo/meds/a682301.html", "https://www.ncbi.nlm.nih.gov/books/NBK556025/"],
-    cond: "chf"
+    cond: "chf",
+    subj: "cardiac"
   }
 ];
 

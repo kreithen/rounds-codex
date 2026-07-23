@@ -12,7 +12,8 @@ const NCLEX_B11 = [
     key: 0,
     rationale: "During a flashback, the nurse uses a calm voice, grounds and orients the patient to the present, and provides reassurance of safety. Forcing continued exposure (B), abandoning the patient (C), or dismissing the experience (D) are non-therapeutic and can escalate distress.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK559129/", "https://medlineplus.gov/ency/article/000925.htm"],
-    cond: null
+    cond: null,
+    subj: "mental-health"
   },
   {
     id: "nclex-0106", type: "mc", cat: "psych", diff: 3, caseId: null, step: null,
@@ -26,7 +27,8 @@ const NCLEX_B11 = [
     key: 0,
     rationale: "Serotonin syndrome presents with mental status changes (agitation), autonomic instability (hyperthermia, tachycardia), and neuromuscular excitability (rigidity, hyperreflexia, clonus), often after adding a serotonergic drug. Bradycardia with flaccid paralysis (B), isolated anticholinergic effects (C), and mild drowsiness alone (D) do not fit.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK482377/", "https://medlineplus.gov/ency/article/007272.htm"],
-    cond: null
+    cond: null,
+    subj: "mental-health"
   },
   {
     id: "nclex-0107", type: "mc", cat: "psych", diff: 2, caseId: null, step: null,
@@ -40,7 +42,8 @@ const NCLEX_B11 = [
     key: 0,
     rationale: "Acknowledging the difficulty and inviting the patient to express feelings shows empathy and active listening, keeping the focus on the patient. Offering cliches (B), claiming to know exactly how they feel (C), and changing the subject (D) block therapeutic communication.",
     src: ["https://medlineplus.gov/ency/article/000932.htm"],
-    cond: null
+    cond: null,
+    subj: "mental-health"
   },
   {
     id: "nclex-0108", type: "mc", cat: "psych", diff: 2, caseId: null, step: null,
@@ -54,7 +57,8 @@ const NCLEX_B11 = [
     key: 0,
     rationale: "Compulsive rituals relieve overwhelming anxiety; abruptly blocking them increases distress. The nurse initially allows the ritual within reasonable limits while building trust and addressing the underlying anxiety, gradually reducing the behavior. Forcibly stopping (B), ridiculing (C), or ignoring (D) the patient are harmful.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK553162/", "https://medlineplus.gov/ency/article/000929.htm"],
-    cond: null
+    cond: null,
+    subj: "mental-health"
   },
   {
     id: "nclex-0109", type: "mc", cat: "basic", diff: 2, caseId: null, step: null,
@@ -68,7 +72,8 @@ const NCLEX_B11 = [
     key: 0,
     rationale: "A healthy stoma is pink-red and moist (B). A dusky, purple, or black stoma signals impaired blood supply (ischemia/necrosis) and must be reported immediately. Slight protrusion (C) is normal, and minor bleeding with cleaning (D) is expected because the stoma is vascular.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK560503/", "https://medlineplus.gov/ency/article/000750.htm"],
-    cond: null
+    cond: null,
+    subj: "gi"
   },
   {
     id: "nclex-0110", type: "mc", cat: "basic", diff: 1, caseId: null, step: null,
@@ -82,7 +87,8 @@ const NCLEX_B11 = [
     key: 0,
     rationale: "A 24-hour urine collection begins by discarding the first void (so timing starts with an empty bladder), then collecting all urine for 24 hours, ending with a final void at the 24-hour mark. Keeping the first void (B), collecting selectively (C), or improper storage (D) invalidates the test.",
     src: ["https://medlineplus.gov/ency/article/003425.htm", "https://www.ncbi.nlm.nih.gov/books/NBK557685/"],
-    cond: null
+    cond: null,
+    subj: "renal-gu"
   },
   {
     id: "nclex-0111", type: "mc", cat: "basic", diff: 2, caseId: null, step: null,
@@ -96,7 +102,8 @@ const NCLEX_B11 = [
     key: 0,
     rationale: "Keeping the drainage bag below bladder level prevents backflow, and maintaining a closed system limits pathogen entry, both key CAUTI-prevention measures. Routine irrigation (B), placing the bag on the bed (C, allowing backflow), and frequent disconnection (D, breaking the closed system) all raise infection risk.",
     src: ["https://www.cdc.gov/uti/about/index.html"],
-    cond: null
+    cond: null,
+    subj: "renal-gu"
   },
   {
     id: "nclex-0112", type: "mc", cat: "basic", diff: 2, caseId: null, step: null,
@@ -110,7 +117,8 @@ const NCLEX_B11 = [
     key: 0,
     rationale: "Before an NG feeding, the priority is to verify tube placement and check gastric residual to prevent instilling feeding into the lungs or over-feeding a patient with delayed emptying. Flushing with hypertonic saline (B) is wrong, rapid administration (C) causes cramping and reflux, and lying flat (D) increases aspiration risk (the head should be elevated).",
     src: ["https://medlineplus.gov/ency/patientinstructions/000900.htm"],
-    cond: null
+    cond: null,
+    subj: "gi"
   },
   {
     id: "nclex-0113", type: "mc", cat: "mgmt", diff: 2, caseId: null, step: null,
@@ -124,7 +132,8 @@ const NCLEX_B11 = [
     key: 0,
     rationale: "Maslow places physiologic needs first, and among those, airway is the top priority; a partially obstructed airway is life-threatening and must be addressed before psychosocial needs. Loneliness (B), estate concerns (C), and support-group information (D) are higher-level needs addressed after physiologic stability.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK534811/", "https://medlineplus.gov/ency/article/000007.htm"],
-    cond: null
+    cond: null,
+    subj: "fundamentals"
   },
   {
     id: "nclex-0114", type: "mc", cat: "mgmt", diff: 3, caseId: null, step: null,
@@ -138,7 +147,8 @@ const NCLEX_B11 = [
     key: 0,
     rationale: "By the ABC framework, an airway problem takes precedence: noisy, gurgling respirations with secretion difficulty indicates a threatened airway needing immediate suctioning and assessment. A mildly elevated BP with headache (B), a chronic pain request (C), and a routine dressing change (D) are lower priority.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK534811/", "https://medlineplus.gov/ency/article/000007.htm"],
-    cond: null
+    cond: null,
+    subj: "fundamentals"
   }
 ];
 

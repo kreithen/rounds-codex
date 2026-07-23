@@ -21,7 +21,8 @@ const NCLEX_B13 = [
     key: [0, 1, 2, 3, 4],
     rationale: "Cues of decompensated heart failure include orthopnea, rapid weight gain from fluid retention, dependent edema, hypoxemia with dyspnea, and an elevated BNP with pulmonary congestion. A normal potassium of 4.2 (F) is not a cue of worsening failure.",
     src: ["https://www.cdc.gov/heart-disease/about/heart-failure.html", "https://medlineplus.gov/ency/article/000158.htm"],
-    cond: "chf"
+    cond: "chf",
+    subj: "cardiac"
   },
   {
     id: "nclex-0122", type: "mc", cat: "risk", diff: 2, caseId: "case-chf-01", step: 2,
@@ -41,7 +42,8 @@ const NCLEX_B13 = [
     key: 0,
     rationale: "Weight gain, edema, orthopnea, pulmonary congestion, and an elevated BNP all point to fluid volume overload from decompensated heart failure. These findings are the opposite of dehydration (B); there is no evidence of infection or sepsis (C), and the patient clearly needs intervention (D).",
     src: ["https://www.cdc.gov/heart-disease/about/heart-failure.html", "https://medlineplus.gov/ency/article/000158.htm"],
-    cond: "chf"
+    cond: "chf",
+    subj: "cardiac"
   },
   {
     id: "nclex-0123", type: "mc", cat: "mgmt", diff: 2, caseId: "case-chf-01", step: 3,
@@ -61,7 +63,8 @@ const NCLEX_B13 = [
     key: 0,
     rationale: "Placing the patient in high-Fowler's decreases venous return and lets the lungs expand, and applying oxygen addresses hypoxemia, together giving rapid dyspnea relief while diuretics take effect. Lying flat (B) worsens pulmonary congestion, immobilizing the patient (C) is inappropriate, and withholding oxygen (D) is unsafe.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK430873/", "https://medlineplus.gov/ency/article/000158.htm"],
-    cond: "chf"
+    cond: "chf",
+    subj: "cardiac"
   },
   {
     id: "nclex-0124", type: "mc", cat: "safety", diff: 3, caseId: "case-chf-01", step: 4,
@@ -81,7 +84,8 @@ const NCLEX_B13 = [
     key: 0,
     rationale: "Loop diuretics waste potassium; a level of 3.2 mEq/L is hypokalemia that predisposes to cardiac dysrhythmias, so the nurse anticipates potassium replacement with cardiac monitoring. Giving more diuretic (B) or restricting potassium (C) would worsen the deficit, and ignoring it (D) is unsafe.",
     src: ["https://medlineplus.gov/druginfo/meds/a682858.html", "https://medlineplus.gov/ency/article/000479.htm"],
-    cond: "chf"
+    cond: "chf",
+    subj: "cardiac"
   },
   {
     id: "nclex-0125", type: "mc", cat: "mgmt", diff: 2, caseId: "case-chf-01", step: 5,
@@ -101,7 +105,8 @@ const NCLEX_B13 = [
     key: 0,
     rationale: "Effectiveness is shown by fluid loss (weight down 4 pounds), reduced work of breathing, and improved oxygenation on room air. Continued weight gain (B), worsening orthopnea (C), and new diffuse crackles (D) would all indicate the treatment is not working.",
     src: ["https://www.cdc.gov/heart-disease/about/heart-failure.html", "https://medlineplus.gov/ency/article/000158.htm"],
-    cond: "chf"
+    cond: "chf",
+    subj: "cardiac"
   },
   {
     id: "nclex-0126", type: "mc", cat: "hpm", diff: 2, caseId: "case-chf-01", step: 6,
@@ -121,7 +126,8 @@ const NCLEX_B13 = [
     key: 0,
     rationale: "Daily morning weights with a clear notification threshold (about 2 to 3 pounds in a day or 5 in a week) catch fluid retention early and prevent readmission. Adding salt freely (B), stopping medications when feeling better (C), and weighing only when symptomatic (D) all lead to decompensation.",
     src: ["https://www.cdc.gov/heart-disease/about/heart-failure.html", "https://medlineplus.gov/ency/patientinstructions/000112.htm"],
-    cond: "chf"
+    cond: "chf",
+    subj: "cardiac"
   }
 ];
 

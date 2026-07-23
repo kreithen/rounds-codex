@@ -12,7 +12,8 @@ const NCLEX_B15 = [
     key: 0,
     rationale: "Airborne precautions for tuberculosis require a negative-pressure (airborne infection isolation) room and a fit-tested N95 respirator for anyone entering. A standard private room with a surgical mask (B), contact-only PPE (C), or an open door (D) do not provide airborne protection.",
     src: ["https://www.cdc.gov/tb/hcp/infection-control/index.html", "https://medlineplus.gov/ency/article/000077.htm"],
-    cond: null
+    cond: null,
+    subj: "infectious"
   },
   {
     id: "nclex-0138", type: "mc", cat: "safety", diff: 2, caseId: null, step: null,
@@ -26,7 +27,8 @@ const NCLEX_B15 = [
     key: 0,
     rationale: "Orthostatic hypotension with dizziness on standing sharply raises fall risk because the patient may become lightheaded and lose balance when rising. Rubber-soled shoes (B), a clutter-free lit room (C), and correct walker use (D) are protective factors.",
     src: ["https://www.cdc.gov/falls/prevention/index.html", "https://medlineplus.gov/ency/article/001167.htm"],
-    cond: null
+    cond: null,
+    subj: "fundamentals"
   },
   {
     id: "nclex-0139", type: "mc", cat: "safety", diff: 3, caseId: null, step: null,
@@ -40,7 +42,8 @@ const NCLEX_B15 = [
     key: 0,
     rationale: "The ventrogluteal site is preferred for adult IM injections because it is free of major nerves and blood vessels and can hold a larger volume safely. The dorsogluteal site (B) risks sciatic nerve injury, and the antecubital fossa (C) and wrist (D) are not IM injection sites.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK556121/", "https://medlineplus.gov/ency/patientinstructions/000430.htm"],
-    cond: null
+    cond: null,
+    subj: "fundamentals"
   },
   {
     id: "nclex-0140", type: "mc", cat: "hpm", diff: 1, caseId: null, step: null,
@@ -54,7 +57,8 @@ const NCLEX_B15 = [
     key: 0,
     rationale: "For average-risk adults, routine colorectal cancer screening is recommended beginning at age 45. Waiting until 75 (B), screening only when symptomatic (C), and a one-time screening at 30 (D) do not reflect current recommendations.",
     src: ["https://www.cdc.gov/colorectal-cancer/screening/index.html", "https://medlineplus.gov/ency/article/002470.htm"],
-    cond: null
+    cond: null,
+    subj: "gi"
   },
   {
     id: "nclex-0141", type: "mc", cat: "hpm", diff: 2, caseId: null, step: null,
@@ -68,7 +72,8 @@ const NCLEX_B15 = [
     key: 0,
     rationale: "Breast milk or formula supplies complete nutrition for roughly the first 6 months, when solids are typically introduced. Giving water to a newborn (B) risks hyponatremia, whole cow's milk (C) is not recommended in the first year, and starting solids in the first month (D) is too early.",
     src: ["https://www.cdc.gov/infant-toddler-nutrition/breastfeeding/index.html", "https://medlineplus.gov/ency/article/002455.htm"],
-    cond: null
+    cond: null,
+    subj: "maternal-newborn"
   },
   {
     id: "nclex-0142", type: "cloze", cat: "hpm", diff: 2, caseId: null, step: null,
@@ -79,7 +84,8 @@ const NCLEX_B15 = [
     ],
     rationale: "Influenza vaccine is recommended annually because circulating strains change each season. A tetanus-diphtheria (Td or Tdap) booster is recommended every 10 years for adults. The other options do not match the recommended intervals.",
     src: ["https://www.cdc.gov/vaccines/hcp/imz-schedules/adult-age.html", "https://medlineplus.gov/ency/article/002024.htm"],
-    cond: null
+    cond: null,
+    subj: "pharmacology"
   },
   {
     id: "nclex-0143", type: "mc", cat: "basic", diff: 2, caseId: null, step: null,
@@ -93,7 +99,8 @@ const NCLEX_B15 = [
     key: 0,
     rationale: "Pink-red granulation tissue is a sign of healthy wound healing by secondary intention. Purulent, foul-smelling drainage (B), increasing warmth/redness/swelling (C), and a new fever (D) are all signs of wound infection.",
     src: ["https://medlineplus.gov/ency/article/000018.htm"],
-    cond: null
+    cond: null,
+    subj: "fundamentals"
   },
   {
     id: "nclex-0144", type: "mc", cat: "basic", diff: 2, caseId: null, step: null,
@@ -107,7 +114,8 @@ const NCLEX_B15 = [
     key: 0,
     rationale: "Reaching across the sterile field, especially with an ungloved hand, contaminates it and breaks sterile technique. Keeping the field in view (B), holding sterile items above the waist (C), and treating the outer 1-inch border as contaminated (D) all correctly maintain sterility.",
     src: ["https://medlineplus.gov/ency/patientinstructions/000487.htm"],
-    cond: null
+    cond: null,
+    subj: "fundamentals"
   },
   {
     id: "nclex-0145", type: "mc", cat: "psych", diff: 2, caseId: null, step: null,
@@ -121,7 +129,8 @@ const NCLEX_B15 = [
     key: 0,
     rationale: "Hallucinations with worsening autonomic signs (tremor, tachycardia, hypertension) indicate severe alcohol withdrawal that can progress to delirium tremens, a medical emergency needing urgent intervention. Mild anxiety (B), isolated insomnia (C), and a beverage request (D) are not signs of severe withdrawal.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK441882/", "https://medlineplus.gov/ency/article/000764.htm"],
-    cond: null
+    cond: null,
+    subj: "mental-health"
   },
   {
     id: "nclex-0146", type: "mc", cat: "mgmt", diff: 2, caseId: null, step: null,
@@ -135,7 +144,8 @@ const NCLEX_B15 = [
     key: 0,
     rationale: "When a patient voices a credible, specific threat to an identifiable person, the duty to warn/protect overrides confidentiality; the nurse notifies the provider and appropriate authorities and documents. Absolute confidentiality (B), discharging without documentation (C), and personally confronting the target (D) are inappropriate.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK542190/", "https://medlineplus.gov/ency/article/000932.htm"],
-    cond: null
+    cond: null,
+    subj: "professional"
   }
 ];
 

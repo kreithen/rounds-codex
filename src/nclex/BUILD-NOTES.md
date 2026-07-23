@@ -89,3 +89,63 @@ Full skeptical-CNE review of all 150 items (full text, not just keys). Result: 1
 - Verified-correct-no-change: 0029 (regular insulin onset 30-60 min), 0009 (newborn glucose),
   0140 (screening age 45). All high-risk pharmacology/electrolyte/case content spot-checked OK.
 - Re-validated + re-merged: band check 0/0. Engine 58/58. See QA-MEDICAL-ACCURACY.md.
+
+## Phase 6 handoff prepared (2026-07-21)
+Built the Claude Code integration bundle:
+- apply-nclex.js: idempotent patcher, injects NCLEX_DATA + engine + Nursing-mode entry point
+  into live index.html before </body>. Refuses on double-declare / !=150 items / missing anchor.
+  Attaches window.NCLEX_DATA in the data script block so the engine (separate script tag) reads it.
+- verify-integration.js: jsdom smoke test (11 checks) - boots patched file, switches to nursing
+  mode, opens module, builds 85-item exam, renders results, asserts 0 JS errors. Gate before publish.
+- README-PHASE6.md: full step-by-step (base->patch->verify->publish via browser->commit source).
+Pipeline tested end-to-end against a mock live index.html: 11/11 pass. Guardrails verified
+(double-patch refuses, wrong-count refuses). Bundle -> nclex-phase6-handoff.zip.
+STATUS: ready for Claude Code integration. Remaining work is all in Claude Code (repo-side).
+
+## Split-screen bug fix (Dr. K screenshots, 2026-07-21)
+Symptom: pressing "NCLEX-RN practice" showed the module home BESIDE the Library view
+(split screen) instead of taking over full-screen like USMLE.
+Root cause: injected entry point only set #nclex-root display:block + scrolled; never hid
+the host app view.
+Fix:
+- Engine: added NCLEX.open(onExit)/close()/hasExit(); home screen now shows a top-level Back
+  button when an exit hook is registered. Also fixed hero copy "client-need"->"patient-need".
+- apply-nclex.js: entry point now does a FULL-SCREEN takeover -- openModule() hides the app
+  container (#app/main) and adds .nx-open (position:fixed;inset:0;z-index:9999) to #nclex-root;
+  Back calls NCLEX.close() to restore the app. README documents preferring the app's own root(v)/
+  ROOTS hook (how USMLE does it) if Code finds it in the live file.
+- verify-integration.js: added checks that app view hides on open and restores on close.
+Verified: 15/15 headless checks pass (incl. no-split-screen + restore); engine tests 58/58.
+
+## Performance Report designed (Dr. K, 2026-07-21) — NOT DEPLOYED
+Added subject tagging + nclex-report.js (607 lines) + engine wiring.
+DATA: added `subj` field to all 150 items (17 clinical subjects), hand-verified
+  (keyword classifier proposed, ~30 corrected). Schema v0.3. Band check still 0/0.
+REPORT: dual breakdown (8 NCLEX categories + 17 subjects) + item-format breakdown,
+  strengths/weaknesses, prioritized recommendations, review-misses, PDF export.
+DECISIONS: rule-based (offline/deterministic); generated standalone PDF (print-to-PDF,
+  light theme, no library); score every area BUT flag n<3 as "limited sample" and keep
+  those out of top recommendations; partial exits offer Save & exit / Generate report /
+  Keep testing; save/resume is IN-MEMORY only (Storage interface isolated for easy
+  localStorage swap).
+TESTS: test-report-ui.js 39/39 pass; engine test-engine.js still 58/58.
+
+## Persistence layer designed for the app (Dr. K, 2026-07-21) — NOT DEPLOYED
+Added nclex-store.js (376 lines): schema v1, pluggable adapters, attempt history,
+trends, per-item mastery. Engine now routes ALL storage through it.
+- Adapters: MemoryAdapter (default/dev), LocalStorageAdapter (web + Capacitor WebView),
+  BridgeAdapter (native shell supplies get/set/remove/keys/clear).
+- Stored (all plain JSON, survives any bridge): nclex:meta, nclex:inprogress,
+  nclex:attempts (summaries, capped 50, newest-first), nclex:attempt:<id> (details),
+  nclex:mastery (per-item seen/correct/missed/streak).
+- Two-tier: small summaries always loaded (history+trends cheap on phone); details
+  loaded only when reviewing one attempt.
+- Attempts store ITEM IDS not objects -> rehydrate() against current bank, silently
+  skips retired items, so content updates never corrupt a saved attempt.
+- Per-area rollups (byCat/bySubj/byType) written at record time -> trends never re-score.
+- schema stamped on every record + forward-only migrate(from,to) hook.
+- API: saveInProgress/loadInProgress/rehydrate, recordAttempt/listAttempts/getAttempt,
+  trend(area)/delta/slipping/dashboard, getMastery/weakItems, resetAll, use(adapter).
+TESTS: test-store.js 45/45. Engine 58/58, report 39/39 still green.
+Preview now uses LocalStorageAdapter + has a Progress dashboard (history/average/best).
+See STORAGE-NOTES.md for the app-shell integration guide.

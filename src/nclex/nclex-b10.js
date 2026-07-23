@@ -21,7 +21,8 @@ const NCLEX_B10 = [
     key: [0, 1, 2, 3, 4],
     rationale: "Cues of a COPD exacerbation include worsening dyspnea with accessory muscle use, increased and purulent sputum (suggesting infection), hypoxemia (SpO2 88%), increased work of breathing with anxiety, and leukocytosis. The mildly elevated blood pressure (F) is nonspecific and not a defining exacerbation cue.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK559281/", "https://medlineplus.gov/ency/article/000091.htm"],
-    cond: "copd"
+    cond: "copd",
+    subj: "respiratory"
   },
   {
     id: "nclex-0100", type: "mc", cat: "physio", diff: 3, caseId: "case-copd-01", step: 2,
@@ -41,7 +42,8 @@ const NCLEX_B10 = [
     key: 0,
     rationale: "A low pH (7.33) with an elevated PaCO2 (58) indicates respiratory acidosis from CO2 retention; the elevated bicarbonate (30) shows the kidneys are partially compensating, a common chronic pattern in COPD. It is not metabolic alkalosis (B), respiratory alkalosis (C), or normal (D).",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK507807/", "https://medlineplus.gov/ency/article/003855.htm"],
-    cond: "copd"
+    cond: "copd",
+    subj: "respiratory"
   },
   {
     id: "nclex-0101", type: "mc", cat: "physio", diff: 2, caseId: "case-copd-01", step: 3,
@@ -61,7 +63,8 @@ const NCLEX_B10 = [
     key: 0,
     rationale: "The priority for airflow obstruction in a COPD exacerbation is a short-acting bronchodilator to open the airways. High-flow oxygen targeting 100% (B) risks suppressing the hypoxic drive and worsening CO2 retention (target 88-92%), forceful rapid breathing (C) worsens air trapping, and lying flat (D) impairs breathing.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK559281/", "https://medlineplus.gov/ency/article/000091.htm"],
-    cond: "copd"
+    cond: "copd",
+    subj: "respiratory"
   },
   {
     id: "nclex-0102", type: "selectN", cat: "basic", diff: 2, caseId: "case-copd-01", step: 4,
@@ -84,7 +87,8 @@ const NCLEX_B10 = [
     key: [0, 1, 2],
     rationale: "Supportive measures for COPD dyspnea include upright or tripod positioning to ease chest expansion, pursed-lip breathing to prevent airway collapse and prolong exhalation, and controlled oxygen targeting 88-92%. Lying flat (D), rapid breathing (E), and removing oxygen (F) all worsen gas exchange.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK559281/", "https://medlineplus.gov/ency/patientinstructions/000700.htm"],
-    cond: "copd"
+    cond: "copd",
+    subj: "respiratory"
   },
   {
     id: "nclex-0103", type: "mc", cat: "physio", diff: 2, caseId: "case-copd-01", step: 5,
@@ -104,7 +108,8 @@ const NCLEX_B10 = [
     key: 0,
     rationale: "Improvement is shown by a slower respiratory rate, ability to speak in full sentences (less air hunger), and a pH trending back toward normal (7.36). A rising respiratory rate (B), falling SpO2 (C), and new confusion (D) would all indicate worsening respiratory failure.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK559281/", "https://medlineplus.gov/ency/article/000091.htm"],
-    cond: "copd"
+    cond: "copd",
+    subj: "respiratory"
   },
   {
     id: "nclex-0104", type: "mc", cat: "psych", diff: 2, caseId: "case-copd-01", step: 6,
@@ -124,7 +129,8 @@ const NCLEX_B10 = [
     key: 0,
     rationale: "The most therapeutic response validates the patient's fear, offers concrete support (a cessation program), and addresses anxiety management, supporting both the psychosocial need and behavior change. A threatening ultimatum (B), false reassurance (C), and undermining the patient's ability to quit (D) are non-therapeutic.",
     src: ["https://www.cdc.gov/tobacco/campaign/tips/quit-smoking/index.html", "https://medlineplus.gov/ency/article/000091.htm"],
-    cond: "copd"
+    cond: "copd",
+    subj: "respiratory"
   }
 ];
 

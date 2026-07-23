@@ -53,14 +53,25 @@ setTimeout(function(){
   ok(!!(w.NCLEX && w.NCLEX.buildNclexPatched), "engine exposed on window.NCLEX");
   ok(w.NCLEX_DATA && w.NCLEX_DATA.length === 150, "150 items loaded at runtime (got " + (w.NCLEX_DATA&&w.NCLEX_DATA.length) + ")");
 
-  // simulate Nursing mode + open the module
+  // simulate Nursing mode + open the module full-screen (the split-screen fix)
   try {
     d.documentElement.setAttribute("data-mode", "nursing");
-    if(w.NCLEX.open) w.NCLEX.open();
+    var appView = d.getElementById("app") || d.querySelector("main");
+    if(w.NCLEX.openModule) w.NCLEX.openModule(); else if(w.NCLEX.open) w.NCLEX.open();
     var root = d.getElementById("nclex-root");
     ok(!!root, "#nclex-root mount exists");
     ok(root && root.querySelector(".nx-modecards") != null, "module home (Study/Exam cards) renders");
-  } catch(e){ jsErrors.push("open() threw: " + e.message); ok(false, "module opens without throwing"); }
+    ok(root && root.classList.contains("nx-open"), "module opens full-screen (nx-open class set)");
+    if(appView) ok(appView.style.display === "none", "host app view is hidden while module open (no split screen)");
+    // Back out and confirm the app view is restored
+    if(w.NCLEX.closeModule){
+      w.NCLEX.closeModule();
+      ok(!root.classList.contains("nx-open"), "module closes (nx-open removed)");
+      if(appView) ok(appView.style.display !== "none", "host app view restored after close");
+    }
+    // reopen for the exam-flow check below
+    if(w.NCLEX.openModule) w.NCLEX.openModule();
+  } catch(e){ jsErrors.push("open/close threw: " + e.message); ok(false, "module opens/closes without throwing"); }
 
   // exercise the engine internals through a full exam render (deepest path)
   try {

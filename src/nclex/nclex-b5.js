@@ -22,7 +22,8 @@ const NCLEX_B5 = [
     key: [0, 1, 2, 3, 4],
     rationale: "Sepsis cues here include new-onset confusion (altered mentation), fever, tachycardia with tachypnea, borderline-low blood pressure, and elevated WBC and lactate signaling infection with early hypoperfusion. The catheter is a source/risk factor but, by itself framed as 'the only concern' (F), is not the cue of deterioration; the systemic signs are.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK547669/", "https://medlineplus.gov/ency/article/000666.htm"],
-    cond: "sepsis"
+    cond: "sepsis",
+    subj: "infectious"
   },
   {
     id: "nclex-0058", type: "mc", cat: "physio", diff: 3, caseId: "case-sepsis-01", step: 2,
@@ -42,7 +43,8 @@ const NCLEX_B5 = [
     key: 0,
     rationale: "Infection (UTI) plus systemic signs - fever, tachycardia, tachypnea, hypotension, altered mentation, and an elevated lactate - indicate sepsis with early hypoperfusion, not an isolated UTI (B). There is no pump failure history for cardiogenic shock (C), and antibiotics were only just started, so an allergic reaction (D) does not fit.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK547669/", "https://medlineplus.gov/ency/article/000666.htm"],
-    cond: "sepsis"
+    cond: "sepsis",
+    subj: "infectious"
   },
   {
     id: "nclex-0059", type: "mc", cat: "mgmt", diff: 3, caseId: "case-sepsis-01", step: 3,
@@ -62,7 +64,8 @@ const NCLEX_B5 = [
     key: 1,
     rationale: "In the sepsis bundle, after cultures are drawn, early antibiotics and fluid resuscitation for hypoperfusion are the highest priority and are time-critical to survival. Antipyretics (A), a non-urgent scan (C), and comfort measures (D) do not address the life threat of progressing sepsis.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK547669/", "https://www.cdc.gov/sepsis/about/index.html"],
-    cond: "sepsis"
+    cond: "sepsis",
+    subj: "infectious"
   },
   {
     id: "nclex-0060", type: "selectN", cat: "mgmt", diff: 3, caseId: "case-sepsis-01", step: 4,
@@ -85,7 +88,8 @@ const NCLEX_B5 = [
     key: [0, 1, 2],
     rationale: "During sepsis resuscitation, the nurse monitors urine output (perfusion), blood pressure and mental status (response to therapy), and a repeat lactate (clearance indicates improving perfusion). Restricting ordered fluids (D), stopping oxygen at 90% (E, below the >=94% goal), and delaying reassessment (F) are unsafe.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK547669/", "https://www.cdc.gov/sepsis/about/index.html"],
-    cond: "sepsis"
+    cond: "sepsis",
+    subj: "infectious"
   },
   {
     id: "nclex-0061", type: "mc", cat: "physio", diff: 3, caseId: "case-sepsis-01", step: 5,
@@ -105,7 +109,8 @@ const NCLEX_B5 = [
     key: 0,
     rationale: "A falling lactate (2.6 to 1.4), normalizing blood pressure, slower heart rate, and adequate urine output (45 mL/hr) all indicate improved perfusion and a positive response to resuscitation. Persistent tachycardia/hypotension (B), oliguria (C), and decreasing responsiveness (D) would indicate worsening sepsis.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK547669/", "https://medlineplus.gov/ency/article/000666.htm"],
-    cond: "sepsis"
+    cond: "sepsis",
+    subj: "infectious"
   },
   {
     id: "nclex-0062", type: "bowtie", cat: "physio", diff: 3, caseId: "case-sepsis-01", step: 6,
@@ -136,7 +141,8 @@ const NCLEX_B5 = [
     },
     rationale: "The patient has sepsis from a urinary source. The two actions to continue are ongoing antibiotic therapy and fluid/perfusion monitoring; stopping fluids (action index 2) or airborne isolation (index 3) are wrong. The two parameters that best track sepsis response are lactate with urine output and blood pressure with mental status; daily weight alone and amylase/lipase do not monitor this condition.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK547669/", "https://www.cdc.gov/sepsis/about/index.html"],
-    cond: "sepsis"
+    cond: "sepsis",
+    subj: "infectious"
   }
 ];
 

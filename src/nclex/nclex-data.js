@@ -1,5 +1,5 @@
 // nclex-data.js — merged NCLEX-RN item bank (150 items). Auto-generated from nclex-b1..b16.
-// Schema v0.2. Do not hand-edit; edit the batch files and re-merge.
+// Schema v0.3 (adds subj: clinical subject tag). Do not hand-edit; edit batches and re-merge.
 const NCLEX_DATA = [
   {
     "id": "nclex-0001",
@@ -21,7 +21,8 @@ const NCLEX_DATA = [
       "https://www.ncsbn.org/public-files/NGN_Winter18.pdf",
       "https://www.ncbi.nlm.nih.gov/books/NBK519519/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "professional"
   },
   {
     "id": "nclex-0002",
@@ -43,7 +44,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK560891/",
       "https://medlineplus.gov/ency/article/000132.htm"
     ],
-    "cond": "pe"
+    "cond": "pe",
+    "subj": "professional"
   },
   {
     "id": "nclex-0003",
@@ -65,7 +67,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a682858.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK499921/"
     ],
-    "cond": "chf"
+    "cond": "chf",
+    "subj": "cardiac"
   },
   {
     "id": "nclex-0004",
@@ -87,7 +90,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a682277.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK470313/"
     ],
-    "cond": "afib"
+    "cond": "afib",
+    "subj": "cardiac"
   },
   {
     "id": "nclex-0005",
@@ -109,7 +113,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK513297/",
       "https://medlineplus.gov/ency/article/000167.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "perioperative"
   },
   {
     "id": "nclex-0006",
@@ -131,7 +136,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a682338.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK441911/"
     ],
-    "cond": "cirrhosis"
+    "cond": "cirrhosis",
+    "subj": "gi"
   },
   {
     "id": "nclex-0007",
@@ -164,7 +170,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK544260/",
       "https://medlineplus.gov/ency/article/000140.htm"
     ],
-    "cond": "chf"
+    "cond": "chf",
+    "subj": "cardiac"
   },
   {
     "id": "nclex-0008",
@@ -186,7 +193,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK570611/",
       "https://medlineplus.gov/ency/article/000898.htm"
     ],
-    "cond": "preeclampsia"
+    "cond": "preeclampsia",
+    "subj": "maternal-newborn"
   },
   {
     "id": "nclex-0009",
@@ -208,7 +216,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK560595/",
       "https://medlineplus.gov/ency/article/007306.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "maternal-newborn"
   },
   {
     "id": "nclex-0010",
@@ -230,7 +239,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK534803/",
       "https://medlineplus.gov/ency/article/001567.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pediatrics"
   },
   {
     "id": "nclex-0011",
@@ -252,7 +262,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK470332/",
       "https://medlineplus.gov/ency/article/000638.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pediatrics"
   },
   {
     "id": "nclex-0012",
@@ -274,7 +285,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK557428/",
       "https://medlineplus.gov/ency/article/001554.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "mental-health"
   },
   {
     "id": "nclex-0013",
@@ -294,7 +306,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a682826.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK538247/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0014",
@@ -314,7 +327,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a685001.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK482250/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0015",
@@ -336,7 +350,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/tb/hcp/infection-control/index.html",
       "https://www.cdc.gov/infection-control/hcp/isolation-precautions/index.html"
     ],
-    "cond": "tb"
+    "cond": "tb",
+    "subj": "infectious"
   },
   {
     "id": "nclex-0016",
@@ -358,7 +373,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/infection-control/hcp/isolation-precautions/index.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK544312/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "infectious"
   },
   {
     "id": "nclex-0017",
@@ -380,7 +396,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/c-diff/hcp/clinical-overview/index.html",
       "https://www.cdc.gov/infection-control/hcp/isolation-precautions/index.html"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "infectious"
   },
   {
     "id": "nclex-0018",
@@ -402,7 +419,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/infection-control/hcp/isolation-precautions/index.html",
       "https://www.cdc.gov/niosh/npptl/pdfs/PPE-Sequence-508.pdf"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "infectious"
   },
   {
     "id": "nclex-0019",
@@ -424,7 +442,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/infection-control/hcp/isolation-precautions/index.html",
       "https://www.cdc.gov/niosh/npptl/pdfs/PPE-Sequence-508.pdf"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "infectious"
   },
   {
     "id": "nclex-0020",
@@ -446,7 +465,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/infection-control/hcp/isolation-precautions/index.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK513351/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "infectious"
   },
   {
     "id": "nclex-0021",
@@ -468,7 +488,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK470284/",
       "https://medlineplus.gov/ency/article/000479.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "fluid-electrolyte"
   },
   {
     "id": "nclex-0022",
@@ -490,7 +511,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK482465/",
       "https://medlineplus.gov/ency/article/000479.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "fluid-electrolyte"
   },
   {
     "id": "nclex-0023",
@@ -512,7 +534,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK507777/",
       "https://medlineplus.gov/ency/article/000394.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "fluid-electrolyte"
   },
   {
     "id": "nclex-0024",
@@ -534,7 +557,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK441960/",
       "https://medlineplus.gov/ency/article/000394.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "fluid-electrolyte"
   },
   {
     "id": "nclex-0025",
@@ -556,7 +580,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK430912/",
       "https://medlineplus.gov/ency/article/000365.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "fluid-electrolyte"
   },
   {
     "id": "nclex-0026",
@@ -578,7 +603,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a682401.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK554593/"
     ],
-    "cond": "preeclampsia"
+    "cond": "preeclampsia",
+    "subj": "maternal-newborn"
   },
   {
     "id": "nclex-0027",
@@ -607,7 +633,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK534841/",
       "https://medlineplus.gov/ency/article/000386.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "endocrine"
   },
   {
     "id": "nclex-0028",
@@ -629,7 +656,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK519519/",
       "https://www.ncsbn.org/public-files/NGN_Winter18.pdf"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "professional"
   },
   {
     "id": "nclex-0029",
@@ -663,7 +691,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a682611.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK560688/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0030",
@@ -692,7 +721,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK560761/",
       "https://www.cdc.gov/falls/about/index.html"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "fundamentals"
   },
   {
     "id": "nclex-0031",
@@ -736,7 +766,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK507807/",
       "https://medlineplus.gov/ency/article/003855.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "fluid-electrolyte"
   },
   {
     "id": "nclex-0032",
@@ -778,7 +809,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK430901/",
       "https://medlineplus.gov/ency/article/000141.htm"
     ],
-    "cond": "asthma"
+    "cond": "asthma",
+    "subj": "respiratory"
   },
   {
     "id": "nclex-0033",
@@ -815,7 +847,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a685039.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK441910/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0034",
@@ -837,7 +870,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/colorectal-cancer/screening/index.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK570861/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "gi"
   },
   {
     "id": "nclex-0035",
@@ -859,7 +893,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK482134/",
       "https://medlineplus.gov/ency/article/000766.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "mental-health"
   },
   {
     "id": "nclex-0036",
@@ -881,7 +916,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/ency/article/007487.htm",
       "https://www.ncbi.nlm.nih.gov/books/NBK557685/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "renal-gu"
   },
   {
     "id": "nclex-0037",
@@ -903,7 +939,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK519519/",
       "https://www.ncsbn.org/public-files/NGN_Winter18.pdf"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "professional"
   },
   {
     "id": "nclex-0038",
@@ -925,7 +962,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK442010/",
       "https://medlineplus.gov/ency/article/000701.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "professional"
   },
   {
     "id": "nclex-0039",
@@ -947,7 +985,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a601102.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK534809/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0040",
@@ -969,7 +1008,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a604038.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK459263/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0041",
@@ -997,7 +1037,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK534803/",
       "https://medlineplus.gov/ency/article/003419.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "cardiac"
   },
   {
     "id": "nclex-0042",
@@ -1019,7 +1060,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK441861/",
       "https://medlineplus.gov/ency/article/003896.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "gi"
   },
   {
     "id": "nclex-0043",
@@ -1041,7 +1083,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK559281/",
       "https://medlineplus.gov/ency/article/000091.htm"
     ],
-    "cond": "copd"
+    "cond": "copd",
+    "subj": "respiratory"
   },
   {
     "id": "nclex-0044",
@@ -1063,7 +1106,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK493222/",
       "https://www.cdc.gov/patient-safety/index.html"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "professional"
   },
   {
     "id": "nclex-0045",
@@ -1085,7 +1129,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/folic-acid/about/index.html",
       "https://medlineplus.gov/ency/article/002408.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "maternal-newborn"
   },
   {
     "id": "nclex-0046",
@@ -1105,7 +1150,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a682059.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK470392/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0047",
@@ -1127,7 +1173,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK441870/",
       "https://medlineplus.gov/ency/article/000917.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "mental-health"
   },
   {
     "id": "nclex-0048",
@@ -1149,7 +1196,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK558998/",
       "https://medlineplus.gov/ency/article/000926.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "mental-health"
   },
   {
     "id": "nclex-0049",
@@ -1171,7 +1219,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK564513/",
       "https://medlineplus.gov/ency/article/000362.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "mental-health"
   },
   {
     "id": "nclex-0050",
@@ -1193,7 +1242,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK563096/",
       "https://medlineplus.gov/ency/patientinstructions/000056.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "fundamentals"
   },
   {
     "id": "nclex-0051",
@@ -1215,7 +1265,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK553107/",
       "https://medlineplus.gov/ency/patientinstructions/000147.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "fundamentals"
   },
   {
     "id": "nclex-0052",
@@ -1237,7 +1288,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK513291/",
       "https://medlineplus.gov/ency/article/003125.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "gi"
   },
   {
     "id": "nclex-0053",
@@ -1259,7 +1311,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/sudden-infant-death/about/index.html",
       "https://medlineplus.gov/ency/article/001566.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pediatrics"
   },
   {
     "id": "nclex-0054",
@@ -1281,7 +1334,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/ncbddd/actearly/milestones/milestones-1yr.html",
       "https://medlineplus.gov/ency/article/002367.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pediatrics"
   },
   {
     "id": "nclex-0055",
@@ -1316,7 +1370,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/vaccines/hcp/imz-schedules/child-adolescent-age.html",
       "https://medlineplus.gov/ency/article/002024.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pediatrics"
   },
   {
     "id": "nclex-0056",
@@ -1338,7 +1393,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a692051.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK430896/"
     ],
-    "cond": "htn"
+    "cond": "htn",
+    "subj": "cardiac"
   },
   {
     "id": "nclex-0057",
@@ -1388,7 +1444,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK547669/",
       "https://medlineplus.gov/ency/article/000666.htm"
     ],
-    "cond": "sepsis"
+    "cond": "sepsis",
+    "subj": "infectious"
   },
   {
     "id": "nclex-0058",
@@ -1430,7 +1487,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK547669/",
       "https://medlineplus.gov/ency/article/000666.htm"
     ],
-    "cond": "sepsis"
+    "cond": "sepsis",
+    "subj": "infectious"
   },
   {
     "id": "nclex-0059",
@@ -1472,7 +1530,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK547669/",
       "https://www.cdc.gov/sepsis/about/index.html"
     ],
-    "cond": "sepsis"
+    "cond": "sepsis",
+    "subj": "infectious"
   },
   {
     "id": "nclex-0060",
@@ -1521,7 +1580,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK547669/",
       "https://www.cdc.gov/sepsis/about/index.html"
     ],
-    "cond": "sepsis"
+    "cond": "sepsis",
+    "subj": "infectious"
   },
   {
     "id": "nclex-0061",
@@ -1563,7 +1623,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK547669/",
       "https://medlineplus.gov/ency/article/000666.htm"
     ],
-    "cond": "sepsis"
+    "cond": "sepsis",
+    "subj": "infectious"
   },
   {
     "id": "nclex-0062",
@@ -1626,7 +1687,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK547669/",
       "https://www.cdc.gov/sepsis/about/index.html"
     ],
-    "cond": "sepsis"
+    "cond": "sepsis",
+    "subj": "infectious"
   },
   {
     "id": "nclex-0063",
@@ -1648,7 +1710,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK519519/",
       "https://www.ncsbn.org/public-files/NGN_Winter18.pdf"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "professional"
   },
   {
     "id": "nclex-0064",
@@ -1670,7 +1733,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK519065/",
       "https://www.cdc.gov/patient-safety/index.html"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "professional"
   },
   {
     "id": "nclex-0065",
@@ -1692,7 +1756,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK459369/",
       "https://www.cdc.gov/mass-casualty/hcp/triage/index.html"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "professional"
   },
   {
     "id": "nclex-0066",
@@ -1714,7 +1779,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK430827/",
       "https://medlineplus.gov/ency/patientinstructions/000445.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "professional"
   },
   {
     "id": "nclex-0067",
@@ -1736,7 +1802,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK551617/",
       "https://medlineplus.gov/ency/patientinstructions/000049.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "respiratory"
   },
   {
     "id": "nclex-0068",
@@ -1758,7 +1825,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK430765/",
       "https://medlineplus.gov/ency/article/003200.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "neuro"
   },
   {
     "id": "nclex-0069",
@@ -1780,7 +1848,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK542208/",
       "https://medlineplus.gov/ency/article/003647.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "oncology-heme"
   },
   {
     "id": "nclex-0070",
@@ -1802,7 +1871,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK448066/",
       "https://medlineplus.gov/ency/article/003330.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "renal-gu"
   },
   {
     "id": "nclex-0071",
@@ -1824,7 +1894,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK574536/",
       "https://medlineplus.gov/ency/article/000554.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "oncology-heme"
   },
   {
     "id": "nclex-0072",
@@ -1846,7 +1917,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a682301.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK556025/"
     ],
-    "cond": "chf"
+    "cond": "chf",
+    "subj": "cardiac"
   },
   {
     "id": "nclex-0073",
@@ -1868,7 +1940,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a696005.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK518983/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0074",
@@ -1890,7 +1963,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a682022.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK482444/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0075",
@@ -1912,7 +1986,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a682607.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK534841/"
     ],
-    "cond": "asthma"
+    "cond": "asthma",
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0076",
@@ -1941,7 +2016,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a682277.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK470313/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0077",
@@ -1963,7 +2039,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a685039.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK441910/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0078",
@@ -1985,7 +2062,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a601202.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK459275/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0079",
@@ -2005,7 +2083,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK518998/",
       "https://medlineplus.gov/ency/article/003423.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0080",
@@ -2027,7 +2106,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a682627.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK554421/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0081",
@@ -2049,7 +2129,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK534841/",
       "https://medlineplus.gov/ency/article/000386.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "endocrine"
   },
   {
     "id": "nclex-0082",
@@ -2071,7 +2152,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK441994/",
       "https://medlineplus.gov/ency/article/000357.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "endocrine"
   },
   {
     "id": "nclex-0083",
@@ -2121,7 +2203,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK534848/",
       "https://medlineplus.gov/ency/article/000320.htm"
     ],
-    "cond": "dka"
+    "cond": "dka",
+    "subj": "endocrine"
   },
   {
     "id": "nclex-0084",
@@ -2163,7 +2246,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK507807/",
       "https://medlineplus.gov/ency/article/000320.htm"
     ],
-    "cond": "dka"
+    "cond": "dka",
+    "subj": "endocrine"
   },
   {
     "id": "nclex-0085",
@@ -2205,7 +2289,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK534848/",
       "https://medlineplus.gov/ency/article/000320.htm"
     ],
-    "cond": "dka"
+    "cond": "dka",
+    "subj": "endocrine"
   },
   {
     "id": "nclex-0086",
@@ -2247,7 +2332,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK534848/",
       "https://medlineplus.gov/ency/article/000479.htm"
     ],
-    "cond": "dka"
+    "cond": "dka",
+    "subj": "endocrine"
   },
   {
     "id": "nclex-0087",
@@ -2300,7 +2386,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK534848/",
       "https://medlineplus.gov/ency/article/000320.htm"
     ],
-    "cond": "dka"
+    "cond": "dka",
+    "subj": "endocrine"
   },
   {
     "id": "nclex-0088",
@@ -2342,7 +2429,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK534848/",
       "https://medlineplus.gov/ency/article/000320.htm"
     ],
-    "cond": "dka"
+    "cond": "dka",
+    "subj": "endocrine"
   },
   {
     "id": "nclex-0089",
@@ -2364,7 +2452,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK551723/",
       "https://www.cdc.gov/patient-safety/index.html"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0090",
@@ -2386,7 +2475,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK519065/",
       "https://www.cdc.gov/patient-safety/index.html"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0091",
@@ -2408,7 +2498,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK565873/",
       "https://medlineplus.gov/ency/article/002356.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "fundamentals"
   },
   {
     "id": "nclex-0092",
@@ -2430,7 +2521,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/carbon-monoxide/about/index.html",
       "https://medlineplus.gov/ency/article/002804.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "fundamentals"
   },
   {
     "id": "nclex-0093",
@@ -2452,7 +2544,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK526085/",
       "https://www.cdc.gov/patient-safety/index.html"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "professional"
   },
   {
     "id": "nclex-0094",
@@ -2474,7 +2567,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK606114/",
       "https://medlineplus.gov/ency/patientinstructions/000445.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "professional"
   },
   {
     "id": "nclex-0095",
@@ -2496,7 +2590,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK551663/",
       "https://www.cdc.gov/health-literacy/php/develop-materials/index.html"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "professional"
   },
   {
     "id": "nclex-0096",
@@ -2518,7 +2613,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK441901/",
       "https://medlineplus.gov/ency/article/000360.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "musculoskeletal"
   },
   {
     "id": "nclex-0097",
@@ -2540,7 +2636,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/high-blood-pressure/about/index.html",
       "https://medlineplus.gov/ency/article/000468.htm"
     ],
-    "cond": "htn"
+    "cond": "htn",
+    "subj": "cardiac"
   },
   {
     "id": "nclex-0098",
@@ -2562,7 +2659,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/colorectal-cancer/prevention/index.html",
       "https://medlineplus.gov/ency/article/002470.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "gi"
   },
   {
     "id": "nclex-0099",
@@ -2612,7 +2710,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK559281/",
       "https://medlineplus.gov/ency/article/000091.htm"
     ],
-    "cond": "copd"
+    "cond": "copd",
+    "subj": "respiratory"
   },
   {
     "id": "nclex-0100",
@@ -2654,7 +2753,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK507807/",
       "https://medlineplus.gov/ency/article/003855.htm"
     ],
-    "cond": "copd"
+    "cond": "copd",
+    "subj": "respiratory"
   },
   {
     "id": "nclex-0101",
@@ -2696,7 +2796,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK559281/",
       "https://medlineplus.gov/ency/article/000091.htm"
     ],
-    "cond": "copd"
+    "cond": "copd",
+    "subj": "respiratory"
   },
   {
     "id": "nclex-0102",
@@ -2745,7 +2846,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK559281/",
       "https://medlineplus.gov/ency/patientinstructions/000700.htm"
     ],
-    "cond": "copd"
+    "cond": "copd",
+    "subj": "respiratory"
   },
   {
     "id": "nclex-0103",
@@ -2787,7 +2889,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK559281/",
       "https://medlineplus.gov/ency/article/000091.htm"
     ],
-    "cond": "copd"
+    "cond": "copd",
+    "subj": "respiratory"
   },
   {
     "id": "nclex-0104",
@@ -2829,7 +2932,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/tobacco/campaign/tips/quit-smoking/index.html",
       "https://medlineplus.gov/ency/article/000091.htm"
     ],
-    "cond": "copd"
+    "cond": "copd",
+    "subj": "respiratory"
   },
   {
     "id": "nclex-0105",
@@ -2851,7 +2955,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK559129/",
       "https://medlineplus.gov/ency/article/000925.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "mental-health"
   },
   {
     "id": "nclex-0106",
@@ -2873,7 +2978,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK482377/",
       "https://medlineplus.gov/ency/article/007272.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "mental-health"
   },
   {
     "id": "nclex-0107",
@@ -2894,7 +3000,8 @@ const NCLEX_DATA = [
     "src": [
       "https://medlineplus.gov/ency/article/000932.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "mental-health"
   },
   {
     "id": "nclex-0108",
@@ -2916,7 +3023,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK553162/",
       "https://medlineplus.gov/ency/article/000929.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "mental-health"
   },
   {
     "id": "nclex-0109",
@@ -2938,7 +3046,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK560503/",
       "https://medlineplus.gov/ency/article/000750.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "gi"
   },
   {
     "id": "nclex-0110",
@@ -2960,7 +3069,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/ency/article/003425.htm",
       "https://www.ncbi.nlm.nih.gov/books/NBK557685/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "renal-gu"
   },
   {
     "id": "nclex-0111",
@@ -2981,7 +3091,8 @@ const NCLEX_DATA = [
     "src": [
       "https://www.cdc.gov/uti/about/index.html"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "renal-gu"
   },
   {
     "id": "nclex-0112",
@@ -3002,7 +3113,8 @@ const NCLEX_DATA = [
     "src": [
       "https://medlineplus.gov/ency/patientinstructions/000900.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "gi"
   },
   {
     "id": "nclex-0113",
@@ -3024,7 +3136,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK534811/",
       "https://medlineplus.gov/ency/article/000007.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "fundamentals"
   },
   {
     "id": "nclex-0114",
@@ -3046,7 +3159,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK534811/",
       "https://medlineplus.gov/ency/article/000007.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "fundamentals"
   },
   {
     "id": "nclex-0115",
@@ -3096,7 +3210,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/stroke/signs-symptoms/index.html",
       "https://medlineplus.gov/ency/article/000726.htm"
     ],
-    "cond": "stroke"
+    "cond": "stroke",
+    "subj": "neuro"
   },
   {
     "id": "nclex-0116",
@@ -3138,7 +3253,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK535369/",
       "https://medlineplus.gov/ency/article/000726.htm"
     ],
-    "cond": "stroke"
+    "cond": "stroke",
+    "subj": "neuro"
   },
   {
     "id": "nclex-0117",
@@ -3180,7 +3296,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK535369/",
       "https://medlineplus.gov/ency/article/000726.htm"
     ],
-    "cond": "stroke"
+    "cond": "stroke",
+    "subj": "neuro"
   },
   {
     "id": "nclex-0118",
@@ -3229,7 +3346,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK535369/",
       "https://medlineplus.gov/ency/article/000726.htm"
     ],
-    "cond": "stroke"
+    "cond": "stroke",
+    "subj": "neuro"
   },
   {
     "id": "nclex-0119",
@@ -3271,7 +3389,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK563096/",
       "https://medlineplus.gov/ency/article/000726.htm"
     ],
-    "cond": "stroke"
+    "cond": "stroke",
+    "subj": "neuro"
   },
   {
     "id": "nclex-0120",
@@ -3312,7 +3431,8 @@ const NCLEX_DATA = [
     "src": [
       "https://medlineplus.gov/ency/article/000726.htm"
     ],
-    "cond": "stroke"
+    "cond": "stroke",
+    "subj": "neuro"
   },
   {
     "id": "nclex-0121",
@@ -3362,7 +3482,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/heart-disease/about/heart-failure.html",
       "https://medlineplus.gov/ency/article/000158.htm"
     ],
-    "cond": "chf"
+    "cond": "chf",
+    "subj": "cardiac"
   },
   {
     "id": "nclex-0122",
@@ -3404,7 +3525,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/heart-disease/about/heart-failure.html",
       "https://medlineplus.gov/ency/article/000158.htm"
     ],
-    "cond": "chf"
+    "cond": "chf",
+    "subj": "cardiac"
   },
   {
     "id": "nclex-0123",
@@ -3446,7 +3568,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK430873/",
       "https://medlineplus.gov/ency/article/000158.htm"
     ],
-    "cond": "chf"
+    "cond": "chf",
+    "subj": "cardiac"
   },
   {
     "id": "nclex-0124",
@@ -3488,7 +3611,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a682858.html",
       "https://medlineplus.gov/ency/article/000479.htm"
     ],
-    "cond": "chf"
+    "cond": "chf",
+    "subj": "cardiac"
   },
   {
     "id": "nclex-0125",
@@ -3530,7 +3654,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/heart-disease/about/heart-failure.html",
       "https://medlineplus.gov/ency/article/000158.htm"
     ],
-    "cond": "chf"
+    "cond": "chf",
+    "subj": "cardiac"
   },
   {
     "id": "nclex-0126",
@@ -3572,7 +3697,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/heart-disease/about/heart-failure.html",
       "https://medlineplus.gov/ency/patientinstructions/000112.htm"
     ],
-    "cond": "chf"
+    "cond": "chf",
+    "subj": "cardiac"
   },
   {
     "id": "nclex-0127",
@@ -3594,7 +3720,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK519519/",
       "https://www.ncsbn.org/public-files/NGN_Winter18.pdf"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "professional"
   },
   {
     "id": "nclex-0128",
@@ -3616,7 +3743,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK525964/",
       "https://medlineplus.gov/ency/article/000039.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "professional"
   },
   {
     "id": "nclex-0129",
@@ -3638,7 +3766,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/clean-hands/about/index.html",
       "https://www.ncbi.nlm.nih.gov/books/NBK570498/"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "professional"
   },
   {
     "id": "nclex-0130",
@@ -3659,7 +3788,8 @@ const NCLEX_DATA = [
     "src": [
       "https://www.cdc.gov/patient-safety/index.html"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "professional"
   },
   {
     "id": "nclex-0131",
@@ -3680,7 +3810,8 @@ const NCLEX_DATA = [
     "src": [
       "https://medlineplus.gov/druginfo/meds/a682461.html"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0132",
@@ -3701,7 +3832,8 @@ const NCLEX_DATA = [
     "src": [
       "https://medlineplus.gov/druginfo/meds/a682826.html"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0133",
@@ -3728,7 +3860,8 @@ const NCLEX_DATA = [
     "src": [
       "https://medlineplus.gov/druginfo/meds/a682275.html"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0134",
@@ -3749,7 +3882,8 @@ const NCLEX_DATA = [
     "src": [
       "https://medlineplus.gov/ency/article/003428.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "neuro"
   },
   {
     "id": "nclex-0135",
@@ -3770,7 +3904,8 @@ const NCLEX_DATA = [
     "src": [
       "https://medlineplus.gov/ency/article/001179.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "fluid-electrolyte"
   },
   {
     "id": "nclex-0136",
@@ -3792,7 +3927,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/infection-control/hcp/basics/transmission-based-precautions.html",
       "https://medlineplus.gov/ency/patientinstructions/000446.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "infectious"
   },
   {
     "id": "nclex-0137",
@@ -3814,7 +3950,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/tb/hcp/infection-control/index.html",
       "https://medlineplus.gov/ency/article/000077.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "infectious"
   },
   {
     "id": "nclex-0138",
@@ -3836,7 +3973,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/falls/prevention/index.html",
       "https://medlineplus.gov/ency/article/001167.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "fundamentals"
   },
   {
     "id": "nclex-0139",
@@ -3858,7 +3996,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK556121/",
       "https://medlineplus.gov/ency/patientinstructions/000430.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "fundamentals"
   },
   {
     "id": "nclex-0140",
@@ -3880,7 +4019,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/colorectal-cancer/screening/index.html",
       "https://medlineplus.gov/ency/article/002470.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "gi"
   },
   {
     "id": "nclex-0141",
@@ -3902,7 +4042,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/infant-toddler-nutrition/breastfeeding/index.html",
       "https://medlineplus.gov/ency/article/002455.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "maternal-newborn"
   },
   {
     "id": "nclex-0142",
@@ -3937,7 +4078,8 @@ const NCLEX_DATA = [
       "https://www.cdc.gov/vaccines/hcp/imz-schedules/adult-age.html",
       "https://medlineplus.gov/ency/article/002024.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "pharmacology"
   },
   {
     "id": "nclex-0143",
@@ -3958,7 +4100,8 @@ const NCLEX_DATA = [
     "src": [
       "https://medlineplus.gov/ency/article/000018.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "fundamentals"
   },
   {
     "id": "nclex-0144",
@@ -3979,7 +4122,8 @@ const NCLEX_DATA = [
     "src": [
       "https://medlineplus.gov/ency/patientinstructions/000487.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "fundamentals"
   },
   {
     "id": "nclex-0145",
@@ -4001,7 +4145,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK441882/",
       "https://medlineplus.gov/ency/article/000764.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "mental-health"
   },
   {
     "id": "nclex-0146",
@@ -4023,7 +4168,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK542190/",
       "https://medlineplus.gov/ency/article/000932.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "professional"
   },
   {
     "id": "nclex-0147",
@@ -4045,7 +4191,8 @@ const NCLEX_DATA = [
       "https://www.ncbi.nlm.nih.gov/books/NBK430876/",
       "https://medlineplus.gov/ency/article/000932.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "mental-health"
   },
   {
     "id": "nclex-0148",
@@ -4066,7 +4213,8 @@ const NCLEX_DATA = [
     "src": [
       "https://medlineplus.gov/ency/patientinstructions/000048.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "respiratory"
   },
   {
     "id": "nclex-0149",
@@ -4088,7 +4236,8 @@ const NCLEX_DATA = [
       "https://medlineplus.gov/druginfo/meds/a682611.html",
       "https://medlineplus.gov/ency/article/000479.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "endocrine"
   },
   {
     "id": "nclex-0150",
@@ -4109,7 +4258,8 @@ const NCLEX_DATA = [
     "src": [
       "https://medlineplus.gov/ency/article/003895.htm"
     ],
-    "cond": null
+    "cond": null,
+    "subj": "gi"
   }
 ];
 

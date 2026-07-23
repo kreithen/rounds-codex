@@ -13,7 +13,8 @@ const NCLEX_B16 = [
     key: 0,
     rationale: "A statement like this can signal suicidal ideation, so the nurse must respond empathetically and directly assess for thoughts of self-harm, which allows for safety planning. Redirecting to happy memories (B), minimizing with a generalization (C), or changing the subject (D) dismiss the patient's distress and miss a possible safety risk.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK430876/", "https://medlineplus.gov/ency/article/000932.htm"],
-    cond: null
+    cond: null,
+    subj: "mental-health"
   },
   {
     id: "nclex-0148", type: "mc", cat: "basic", diff: 2, caseId: null, step: null,
@@ -27,7 +28,8 @@ const NCLEX_B16 = [
     key: 0,
     rationale: "To limit hypoxia, suction is applied only during withdrawal of the catheter and each pass is kept to roughly 10 to 15 seconds, with oxygenation between passes. Applying suction during insertion (B), suctioning 30 seconds or longer (C), and removing oxygen (D) all increase hypoxia and mucosal trauma.",
     src: ["https://medlineplus.gov/ency/patientinstructions/000048.htm"],
-    cond: null
+    cond: null,
+    subj: "respiratory"
   },
   {
     id: "nclex-0149", type: "mc", cat: "pharm", diff: 3, caseId: null, step: null,
@@ -41,7 +43,8 @@ const NCLEX_B16 = [
     key: 0,
     rationale: "During an insulin infusion, the nurse monitors blood glucose frequently to avoid hypoglycemia and serum potassium because insulin drives potassium into cells, risking hypokalemia. Calcium and phosphate (B), WBC (C), and bilirubin (D) are not the priority values during insulin therapy.",
     src: ["https://medlineplus.gov/druginfo/meds/a682611.html", "https://medlineplus.gov/ency/article/000479.htm"],
-    cond: null
+    cond: null,
+    subj: "endocrine"
   },
   {
     id: "nclex-0150", type: "mc", cat: "risk", diff: 2, caseId: null, step: null,
@@ -55,7 +58,8 @@ const NCLEX_B16 = [
     key: 0,
     rationale: "The liver is highly vascular, so increasing abdominal pain with tachycardia and hypotension after a liver biopsy suggests internal hemorrhage and requires immediate attention. Mild site soreness (B), a small amount of serous drainage (C), and a routine assisted position change (D) are expected and non-urgent.",
     src: ["https://medlineplus.gov/ency/article/003895.htm"],
-    cond: null
+    cond: null,
+    subj: "gi"
   }
 ];
 

@@ -12,7 +12,8 @@ const NCLEX_B9 = [
     key: 0,
     rationale: "Medication reconciliation, compiling a complete, accurate list and communicating it to the provider, is the core safety strategy against polypharmacy and interactions. The nurse should not independently discontinue drugs (B), assume coordination (C), or simply file the list without acting (D).",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK551723/", "https://www.cdc.gov/patient-safety/index.html"],
-    cond: null
+    cond: null,
+    subj: "pharmacology"
   },
   {
     id: "nclex-0090", type: "mc", cat: "safety", diff: 2, caseId: null, step: null,
@@ -26,7 +27,8 @@ const NCLEX_B9 = [
     key: 0,
     rationale: "High-alert medications such as IV insulin require an independent double-check by a second nurse of the drug, dose, and pump settings to catch potentially fatal errors. Rushing (B), rounding doses (C), and skipping the check based on experience (D) all defeat the safeguard.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK519065/", "https://www.cdc.gov/patient-safety/index.html"],
-    cond: null
+    cond: null,
+    subj: "pharmacology"
   },
   {
     id: "nclex-0091", type: "mc", cat: "safety", diff: 2, caseId: null, step: null,
@@ -40,7 +42,8 @@ const NCLEX_B9 = [
     key: 0,
     rationale: "Restraints are a last resort; the nurse should first try the least restrictive measures, such as relocating the patient for closer observation and using a bed alarm, along with addressing the cause of confusion. Physical restraints (B), chemical restraints (C), and four raised side rails (D, considered a restraint) come only after less restrictive options fail.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK565873/", "https://medlineplus.gov/ency/article/002356.htm"],
-    cond: null
+    cond: null,
+    subj: "fundamentals"
   },
   {
     id: "nclex-0092", type: "mc", cat: "safety", diff: 3, caseId: null, step: null,
@@ -54,7 +57,8 @@ const NCLEX_B9 = [
     key: 0,
     rationale: "With a suspected gas leak, the priority is to evacuate the patient and nurse and call for help from a safe location outside; any spark can cause an explosion. Searching for the source (B), operating light switches (C), or using electronics inside (D) can ignite the gas.",
     src: ["https://www.cdc.gov/carbon-monoxide/about/index.html", "https://medlineplus.gov/ency/article/002804.htm"],
-    cond: null
+    cond: null,
+    subj: "fundamentals"
   },
   {
     id: "nclex-0093", type: "mc", cat: "mgmt", diff: 2, caseId: null, step: null,
@@ -68,7 +72,8 @@ const NCLEX_B9 = [
     key: 0,
     rationale: "Good documentation is objective, factual, accurate, and timely, reflecting assessments and interventions. Subjective, judgmental language (B), end-of-shift recall documentation (C), and leaving blank spaces (D) are all improper and create legal and safety risks.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK526085/", "https://www.cdc.gov/patient-safety/index.html"],
-    cond: null
+    cond: null,
+    subj: "professional"
   },
   {
     id: "nclex-0094", type: "mc", cat: "mgmt", diff: 3, caseId: null, step: null,
@@ -82,7 +87,8 @@ const NCLEX_B9 = [
     key: 0,
     rationale: "A competent patient has the right to leave AMA, but the nurse should notify the provider, ensure the patient understands the risks, and document the discussion and the patient's decision. Physically detaining a competent patient (B) is false imprisonment, ignoring it (C) is negligent, and discharging without documentation (D) is improper.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK606114/", "https://medlineplus.gov/ency/patientinstructions/000445.htm"],
-    cond: null
+    cond: null,
+    subj: "professional"
   },
   {
     id: "nclex-0095", type: "mc", cat: "mgmt", diff: 2, caseId: null, step: null,
@@ -96,7 +102,8 @@ const NCLEX_B9 = [
     key: 0,
     rationale: "For informed consent and other critical communication, a qualified medical interpreter is required to ensure accuracy and confidentiality; family members may omit, alter, or misunderstand medical information. A family interpreter (B), a personal translation app (C), or proceeding in English (D) all risk an invalid consent.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK551663/", "https://www.cdc.gov/health-literacy/php/develop-materials/index.html"],
-    cond: null
+    cond: null,
+    subj: "professional"
   },
   {
     id: "nclex-0096", type: "mc", cat: "hpm", diff: 2, caseId: null, step: null,
@@ -110,7 +117,8 @@ const NCLEX_B9 = [
     key: 0,
     rationale: "Weight-bearing exercise stimulates bone formation, and adequate calcium and vitamin D support bone density, making this the best osteoporosis-prevention advice. Avoiding activity (B) accelerates bone loss, excess cola and caffeine (C) can impair calcium balance, and sunlight alone (D) does not supply dietary calcium.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK441901/", "https://medlineplus.gov/ency/article/000360.htm"],
-    cond: null
+    cond: null,
+    subj: "musculoskeletal"
   },
   {
     id: "nclex-0097", type: "mc", cat: "hpm", diff: 2, caseId: null, step: null,
@@ -124,7 +132,8 @@ const NCLEX_B9 = [
     key: 0,
     rationale: "Hypertension is often asymptomatic (the 'silent killer'), so regular screening is recommended to detect and treat it early. Checking only with symptoms (B), delaying until age 60 (C), or stopping after one normal reading (D) all miss silent, ongoing disease.",
     src: ["https://www.cdc.gov/high-blood-pressure/about/index.html", "https://medlineplus.gov/ency/article/000468.htm"],
-    cond: "htn"
+    cond: "htn",
+    subj: "cardiac"
   },
   {
     id: "nclex-0098", type: "mc", cat: "hpm", diff: 1, caseId: null, step: null,
@@ -138,7 +147,8 @@ const NCLEX_B9 = [
     key: 0,
     rationale: "A diet high in fiber from fruits, vegetables, and whole grains is associated with reduced colorectal cancer risk. Diets high in processed and red meat (B) increase risk, eliminating fiber (C) is counterproductive, and avoiding fluids (D) is harmful.",
     src: ["https://www.cdc.gov/colorectal-cancer/prevention/index.html", "https://medlineplus.gov/ency/article/002470.htm"],
-    cond: null
+    cond: null,
+    subj: "gi"
   }
 ];
 

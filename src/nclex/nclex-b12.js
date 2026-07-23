@@ -21,7 +21,8 @@ const NCLEX_B12 = [
     key: [0, 1, 2, 3, 4],
     rationale: "Stroke cues include sudden focal weakness, slurred speech with facial droop, a known time of onset (critical for treatment eligibility), atrial fibrillation without anticoagulation (a major embolic stroke risk), and marked hypertension. A normal SpO2 (F) is not a stroke cue.",
     src: ["https://www.cdc.gov/stroke/signs-symptoms/index.html", "https://medlineplus.gov/ency/article/000726.htm"],
-    cond: "stroke"
+    cond: "stroke",
+    subj: "neuro"
   },
   {
     id: "nclex-0116", type: "mc", cat: "mgmt", diff: 3, caseId: "case-stroke-01", step: 2,
@@ -41,7 +42,8 @@ const NCLEX_B12 = [
     key: 0,
     rationale: "A non-contrast head CT rapidly distinguishes ischemic stroke from hemorrhagic stroke; giving a thrombolytic to a patient with a bleed would be catastrophic, so this imaging drives the entire treatment pathway. It does not measure glucose (B) or diagnose atrial fibrillation (C), and it is far more than documentation (D).",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK535369/", "https://medlineplus.gov/ency/article/000726.htm"],
-    cond: "stroke"
+    cond: "stroke",
+    subj: "neuro"
   },
   {
     id: "nclex-0117", type: "mc", cat: "risk", diff: 3, caseId: "case-stroke-01", step: 3,
@@ -61,7 +63,8 @@ const NCLEX_B12 = [
     key: 0,
     rationale: "Blood pressure must be below 185/110 before and during thrombolytic therapy to reduce hemorrhage risk; at 190/100 the nurse must administer the prescribed antihypertensive (e.g., labetalol) first. The normal platelets (B), INR (C), and glucose (D) do not contraindicate treatment.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK535369/", "https://medlineplus.gov/ency/article/000726.htm"],
-    cond: "stroke"
+    cond: "stroke",
+    subj: "neuro"
   },
   {
     id: "nclex-0118", type: "selectN", cat: "safety", diff: 3, caseId: "case-stroke-01", step: 4,
@@ -84,7 +87,8 @@ const NCLEX_B12 = [
     key: [0, 1, 2],
     rationale: "After thrombolytics the nurse performs frequent neuro checks, watches for bleeding (a sudden severe headache can signal intracranial hemorrhage), and keeps blood pressure within ordered limits. Immediate independent ambulation (D), giving aspirin with the thrombolytic (E, increases bleeding), and removing precautions (F) are unsafe.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK535369/", "https://medlineplus.gov/ency/article/000726.htm"],
-    cond: "stroke"
+    cond: "stroke",
+    subj: "neuro"
   },
   {
     id: "nclex-0119", type: "mc", cat: "mgmt", diff: 2, caseId: "case-stroke-01", step: 5,
@@ -104,7 +108,8 @@ const NCLEX_B12 = [
     key: 0,
     rationale: "Dysphagia after stroke greatly raises aspiration and aspiration-pneumonia risk, so the patient must remain NPO until a formal swallow evaluation confirms safety. Offering thin liquids (B), starting a regular diet (C), or giving oral meds with water (D) all risk aspiration.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK563096/", "https://medlineplus.gov/ency/article/000726.htm"],
-    cond: "stroke"
+    cond: "stroke",
+    subj: "neuro"
   },
   {
     id: "nclex-0120", type: "mc", cat: "psych", diff: 2, caseId: "case-stroke-01", step: 6,
@@ -124,7 +129,8 @@ const NCLEX_B12 = [
     key: 0,
     rationale: "For expressive aphasia, the nurse gives the patient extra time, uses simple yes/no questions and communication aids, and offers patient reassurance, supporting dignity and reducing frustration. Finishing sentences (B), discouraging attempts to speak (C), and speaking loudly and rapidly (D) are non-therapeutic (aphasia is not a hearing deficit).",
     src: ["https://medlineplus.gov/ency/article/000726.htm"],
-    cond: "stroke"
+    cond: "stroke",
+    subj: "neuro"
   }
 ];
 

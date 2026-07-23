@@ -27,16 +27,42 @@ private repo (all publishing goes through the user's Chrome/GitHub session). See
 ## The integration seam (how it hooks into the app)
 
 The app is a single static `index.html` that toggles modes via `html[data-mode="..."]`
-(Nursing / Medical / Resident, per the resident-mode build). The module:
+(Nursing / Medical / Resident, per the resident-mode build), and switches top-level views via
+`root(v)` where `ROOTS = ["library","or","ask","rx"]`. The module:
 
 - Injects `const NCLEX_DATA=[...]` + the `nclex-logic.js` engine as `<script>` blocks before `</body>`.
 - Adds a **Nursing-mode-only entry point** (a "NCLEX-RN practice" button) placed just after the
   app's top search input, gated with `html[data-mode="nursing"] #nclex-entry{display:block}`.
-- Mounts the module into `#nclex-root` (the engine's `buildNclexPatched()` injects its own scoped
-  CSS under `#nclex-root`, so it can't collide with app styles). The panel stays hidden until the
-  button is clicked.
+- **Opens FULL-SCREEN, like the USMLE and Rx modules** — clicking the button hides the host app's
+  main view and shows `#nclex-root` as a full-screen layer (`position:fixed; inset:0; z-index:9999`).
+  The module's own Back button (top-left) restores the host view. This is the fix for the
+  split-screen bug where the module rendered *beside* the Library view instead of replacing it.
 
-All of this is done by `apply-nclex.js` — you do not hand-edit `index.html`.
+### Full-screen wiring — pick the cleaner hook after inspecting the live file
+The injected code (in `apply-nclex.js`) ships a **generic full-screen takeover** that works without
+touching app internals: `openModule()` hides the app container (`#app`/`main`) and adds `.nx-open`
+to `#nclex-root`; `closeModule()` reverses it; the module's Back button calls `NCLEX.close()`.
+
+If the live app has a cleaner seam — and it does: `root(v)` with a `ROOTS` array, exactly how USMLE
+takes over the screen — **prefer wiring into that** so NCLEX behaves identically to the other
+modules and inherits their transitions/back-stack:
+1. Read how the USMLE module is registered (search the live `index.html` for the USMLE view, its
+   entry in `ROOTS`, and its `root(...)`/back-button handling).
+2. Register NCLEX the same way — e.g. add `"nclex"` to `ROOTS`, render `#nclex-root` inside the
+   same view container the other roots use, and have the entry button call `root("nclex")` (which
+   already hides the other views) then `NCLEX.open(function(){ root("library"); })` so the module's
+   Back returns to Library via the app's own nav.
+3. If you take this path, you can drop the generic `openModule/closeModule` shim — call
+   `NCLEX.open(onExit)` / `NCLEX.close()` directly from the app's nav handlers.
+
+Either way the engine exposes: `NCLEX.open(onExit?)` (show home, remember exit callback),
+`NCLEX.close()` (run the exit callback), and `NCLEX.openModule()/closeModule()` (the generic
+full-screen helpers). The engine's home screen automatically shows a Back button when an `onExit`
+hook is registered.
+
+All engine CSS is scoped under `#nclex-root`; the entry-point CSS under `#nclex-entry`. Nothing
+leaks into the app's global styles. You do not hand-edit `index.html` for the base inject —
+`apply-nclex.js` does it.
 
 ---
 

@@ -497,13 +497,46 @@
     session=null;
     root.innerHTML="";
     var wrap=h("div","nx-wrap");
+    // Top-level back button returns to the host app (USMLE-style full-screen exit).
+    // Only shown when the host registered an exit hook via NCLEX.open(onExit).
+    if(window.NCLEX._internal.hasExit && window.NCLEX._internal.hasExit()){
+      var top=h("div","nx-topbar");
+      top.appendChild(backBtn(function(){ window.NCLEX.close(); }));
+      wrap.appendChild(top);
+    }
     wrap.appendChild(h("div","nx-eyebrow","Nursing &middot; NCLEX-RN practice"));
     wrap.appendChild(h("h2","nx-title","Practice the way the exam actually thinks."));
-    wrap.appendChild(h("p","nx-lede","150 NGN-style items across all eight client-need categories, "
+    wrap.appendChild(h("p","nx-lede","150 NGN-style items across all eight patient-need categories, "
       + "with five unfolding cases that follow the NCSBN Clinical Judgment steps. "
       + "Study to learn, or take a weighted "+CFG.examSize+"-item exam form."));
 
     var modes=h("div","nx-modecards");
+
+    // Resume card appears only when an attempt was saved via "Save & exit".
+    var saved = window.NCLEX._internal.Storage && window.NCLEX._internal.Storage.load();
+    if(saved && saved.items){
+      var answered=0;
+      saved.items.forEach(function(it,i){
+        if(window.NCLEX_REPORT && window.NCLEX_REPORT.isAnswered(it, saved.responses[i])) answered++;
+      });
+      var rc=h("div","nx-modecard nx-resume");
+      rc.appendChild(h("h3",null,"Resume your test"));
+      rc.appendChild(h("p",null,"You have a saved "+(saved.mode==="exam"?"exam form":"study set")
+        +" in progress — "+answered+" of "+saved.items.length+" items answered."));
+      var rb=h("button","nx-btn nx-primary","Resume where I left off");
+      rb.onclick=function(){
+        session = saved;
+        window.NCLEX._internal.Storage.clear();
+        if(session.timed) startTimer();
+        renderItem();
+      };
+      rc.appendChild(rb);
+      var db=h("button","nx-btn","Discard");
+      db.onclick=function(){ window.NCLEX._internal.Storage.clear(); home(); };
+      rc.appendChild(db);
+      modes.appendChild(rc);
+    }
+
     modes.appendChild(modeCard("Study mode",
       "Work through items by category or item type. Answers and rationales reveal at the end of the set.",
       "Start studying", function(){ startStudy(); }));
@@ -748,14 +781,43 @@
     stopTimer();
     session.submitted=true;
     if(session.mode==="study"){
-      // lock every item so rationales reveal, then jump to first item
+      // lock every item so rationales reveal on review
       session.locked=session.items.map(function(){return true;});
       session.pos=0;
-      renderResults(true);
-    } else {
-      renderResults(false);
     }
+    showReport(false);
   }
+
+  /**
+   * Render the full performance report (nclex-report.js). `partial` is true when the
+   * learner exited mid-test, in which case only attempted items are scored.
+   * Falls back to the legacy summary if the report module isn't loaded.
+   */
+  function showReport(partial){
+    var RPT = window.NCLEX_REPORT;
+    if(!RPT){ return renderResults(session.mode==="study"); }   // graceful fallback
+    RPT.injectCSS(document);
+    var model = RPT.build(session, I_SC(), partial);
+    // Persist to attempt history (no-op if the store module isn't loaded).
+    try { Storage.record && Storage.record(session, model); } catch(e){}
+    root.innerHTML="";
+    RPT.render(model, root, {
+      onReviewMisses: function(missIdx){
+        // lock everything so rationales show, then walk only the missed items
+        session.locked = session.items.map(function(){ return true; });
+        session.reviewList = missIdx.slice();
+        session.reviewPos = 0;
+        session.pos = missIdx[0];
+        renderItem();
+      },
+      onRetake: function(){ session=null; home(); },
+      onBackToApp: function(){
+        if(window.NCLEX.close) window.NCLEX.close(); else home();
+      },
+      onDownloadPdf: function(m){ RPT.downloadPdf(m); }
+    });
+  }
+  function I_SC(){ return window.NCLEX._internal.SC; }
 
   function renderResults(isStudy){
     root.innerHTML="";
@@ -831,16 +893,109 @@
 
   // ---- shared bits -----------------------------------------------------------
   function backBtn(onclick){ var b=h("button","nx-back","&larr; Back"); b.onclick=onclick; return b; }
-  function confirmQuit(){
-    if(session && !session.submitted){
-      if(!window.confirm("Leave this "+(session.mode)+" session? Your progress won't be saved.")) return;
+
+  // Persistence goes through NCLEX_STORE (nclex-store.js), which is adapter-backed so
+  // the same code works in a browser today and inside a native app shell later.
+  // If the store module isn't present, fall back to a minimal in-memory shim so the
+  // module still runs standalone.
+  var Storage = (function(){
+    if(window.NCLEX_STORE){
+      var S = window.NCLEX_STORE;
+      return {
+        save:  function(s){ return S.saveInProgress(s); },
+        load:  function(){
+          var rec = S.loadInProgress();
+          return rec ? S.rehydrate(rec, window.NCLEX._internal.bank()) : null;
+        },
+        clear: function(){ S.clearInProgress(); },
+        has:   function(){ return S.hasInProgress(); },
+        record:function(s, model){ return S.recordAttempt(s, model); }
+      };
     }
-    stopTimer(); home();
+    var SAVED = null;
+    return {
+      save: function(s){ SAVED = s; },
+      load: function(){ return SAVED; },
+      clear: function(){ SAVED = null; },
+      has:  function(){ return !!SAVED; },
+      record: function(){ return null; }
+    };
+  })();
+  window.NCLEX._internal.Storage = Storage;
+
+  /**
+   * Exit flow. Instead of a destructive confirm(), offer three real choices:
+   *   - Save & exit    : keep progress so the learner can resume where they left off
+   *   - See my report  : generate a partial report for what they answered
+   *   - Keep testing   : cancel
+   */
+  function confirmQuit(){
+    if(!session || session.submitted){ stopTimer(); return home(); }
+
+    var answered = 0;
+    session.items.forEach(function(it,i){
+      if(window.NCLEX_REPORT && window.NCLEX_REPORT.isAnswered(it, session.responses[i])) answered++;
+    });
+
+    root.innerHTML="";
+    var wrap=h("div","nx-wrap");
+    wrap.appendChild(h("div","nx-eyebrow","Leaving this test"));
+    wrap.appendChild(h("h2","nx-title","What would you like to do?"));
+    wrap.appendChild(h("p","nx-lede","You've answered "+answered+" of "+session.items.length+" items. "
+      + "You can save your place and come back, or see how you did so far."));
+
+    var cards=h("div","nx-modecards");
+
+    var c1=h("div","nx-modecard");
+    c1.appendChild(h("h3",null,"Save &amp; exit"));
+    c1.appendChild(h("p",null,"Keep your progress and resume this test where you left off. "
+      + "(Saved for this visit — a page reload will clear it.)"));
+    var b1=h("button","nx-btn nx-primary","Save &amp; exit");
+    b1.onclick=function(){
+      stopTimer(); Storage.save(session); session=null; home();
+    };
+    c1.appendChild(b1); cards.appendChild(c1);
+
+    var c2=h("div","nx-modecard");
+    c2.appendChild(h("h3",null,"See my report"));
+    c2.appendChild(h("p",null,"Generate a performance report for the "+answered+" item"
+      +(answered===1?"":"s")+" you've answered, with a breakdown and recommendations."));
+    var b2=h("button","nx-btn","Generate report");
+    b2.disabled = answered===0;
+    b2.onclick=function(){ stopTimer(); session.submitted=true; showReport(true); };
+    c2.appendChild(b2); cards.appendChild(c2);
+
+    wrap.appendChild(cards);
+
+    var back=h("button","nx-btn","&larr; Keep testing");
+    back.onclick=function(){ renderItem(); };
+    var row=h("div","nx-nav"); row.appendChild(back); wrap.appendChild(row);
+
+    root.appendChild(wrap);
   }
 
   // expose controller
   window.NCLEX.mount = mount;
-  window.NCLEX.open = function(){ if(root) home(); };
+
+  // Full-screen open/close hooks for the host app.
+  //   NCLEX.open(onExit?)  -> show module home; remembers an optional onExit callback
+  //                           that the module's top-level Back button will invoke to
+  //                           return control to the host (e.g. call the app's root('library')).
+  //   NCLEX.close()        -> run the onExit callback (host decides what view to show).
+  // The host is responsible for hiding its own view before calling open() and for
+  // showing it again inside onExit — the module never guesses at app internals.
+  var _onExit = null;
+  window.NCLEX.open = function(onExit){
+    if(typeof onExit === "function") _onExit = onExit;
+    if(root) home();
+  };
+  window.NCLEX.close = function(){
+    if(typeof _onExit === "function") _onExit();
+  };
+  // let the controller reach the exit hook for the home-screen Back button
+  window.NCLEX._internal.exit = function(){ window.NCLEX.close(); };
+  window.NCLEX._internal.hasExit = function(){ return typeof _onExit === "function"; };
+
   window.NCLEX._internal.controller = {home:home, launch:launch, renderResults:renderResults};
 })();
 

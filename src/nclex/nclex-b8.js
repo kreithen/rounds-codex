@@ -21,7 +21,8 @@ const NCLEX_B8 = [
     key: [0, 1, 2, 3, 4],
     rationale: "DKA cues include Kussmaul respirations (respiratory compensation for acidosis), fruity (acetone) breath, marked hyperglycemia with ketones, metabolic acidosis (low pH and bicarbonate), and signs of volume depletion (hypotension, tachycardia). A normal SpO2 (F) is not a DKA cue.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK534848/", "https://medlineplus.gov/ency/article/000320.htm"],
-    cond: "dka"
+    cond: "dka",
+    subj: "endocrine"
   },
   {
     id: "nclex-0084", type: "mc", cat: "physio", diff: 3, caseId: "case-dka-01", step: 2,
@@ -41,7 +42,8 @@ const NCLEX_B8 = [
     key: 0,
     rationale: "A low pH (7.18) with a low bicarbonate (12) indicates metabolic acidosis, here from ketoacid accumulation; the deep Kussmaul breathing is respiratory compensation blowing off CO2. It is not alkalosis (B, D), and the primary problem is metabolic, not respiratory acidosis (C).",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK507807/", "https://medlineplus.gov/ency/article/000320.htm"],
-    cond: "dka"
+    cond: "dka",
+    subj: "endocrine"
   },
   {
     id: "nclex-0085", type: "mc", cat: "mgmt", diff: 3, caseId: "case-dka-01", step: 3,
@@ -61,7 +63,8 @@ const NCLEX_B8 = [
     key: 0,
     rationale: "The first priority in DKA is aggressive IV isotonic fluid resuscitation to restore intravascular volume and perfusion, followed by an insulin infusion. Bicarbonate (B) is reserved for extreme acidosis, a carb snack (C) is inappropriate with glucose 512, and potassium is monitored and replaced as needed (D) because insulin drives potassium into cells.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK534848/", "https://medlineplus.gov/ency/article/000320.htm"],
-    cond: "dka"
+    cond: "dka",
+    subj: "endocrine"
   },
   {
     id: "nclex-0086", type: "mc", cat: "risk", diff: 3, caseId: "case-dka-01", step: 4,
@@ -81,7 +84,8 @@ const NCLEX_B8 = [
     key: 0,
     rationale: "Insulin drives potassium into cells, so during DKA treatment potassium can fall dangerously, risking arrhythmias; the nurse adds potassium replacement to IV fluids per protocol and monitors closely. Permanently stopping insulin (B) would let the acidosis worsen, a diuretic (C) lowers potassium further, and fluid restriction (D) is inappropriate in a volume-depleted patient.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK534848/", "https://medlineplus.gov/ency/article/000479.htm"],
-    cond: "dka"
+    cond: "dka",
+    subj: "endocrine"
   },
   {
     id: "nclex-0087", type: "matrixMC", cat: "physio", diff: 3, caseId: "case-dka-01", step: 5,
@@ -103,7 +107,8 @@ const NCLEX_B8 = [
     key: [0, 0, 1, 0, 0],
     rationale: "Falling glucose, a normalizing pH, clearing ketones, and stable potassium all show improvement. The one concern: with glucose already down to 196 while the insulin infusion continues, dextrose must be added to the fluids to prevent overshoot into hypoglycemia (protocols add dextrose as glucose approaches ~200 mg/dL). Recognizing that a 'good' number can still signal a needed action is the discrimination being tested.",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK534848/", "https://medlineplus.gov/ency/article/000320.htm"],
-    cond: "dka"
+    cond: "dka",
+    subj: "endocrine"
   },
   {
     id: "nclex-0088", type: "mc", cat: "mgmt", diff: 2, caseId: "case-dka-01", step: 6,
@@ -123,7 +128,8 @@ const NCLEX_B8 = [
     key: 0,
     rationale: "During illness (sick days), patients with type 1 diabetes must continue insulin, monitor glucose and ketones frequently, and stay hydrated, because stress hormones raise glucose even when not eating. Stopping insulin when ill (B) is a leading DKA trigger, symptom-only monitoring (C) is inadequate, and DKA is most associated with type 1 diabetes (D).",
     src: ["https://www.ncbi.nlm.nih.gov/books/NBK534848/", "https://medlineplus.gov/ency/article/000320.htm"],
-    cond: "dka"
+    cond: "dka",
+    subj: "endocrine"
   }
 ];
 
