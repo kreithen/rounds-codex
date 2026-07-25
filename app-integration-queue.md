@@ -103,6 +103,39 @@ headless → upload to `main` via Chrome → Netlify auto-deploys.
 - **Resident Mode expansion** — replace embedded `RES_DATA` with the 1308-entry master +
   wiring from `resident-staging/` (data expansion, NOT a first-time patch — see its DEPLOY-README).
 
+## SHIPPED 2026-07-25 (live on rounds-codex.netlify.app, user-confirmed)
+- **NCLEX-RN module** — patched into the live root `index.html` and published. Opens full-screen
+  in Nursing mode. 150 items.
+- **USMLE performance report** — 3 files into `usmle/`; profile registered on the shared engine.
+- **8 Pulmonary galleries** — copd, asthma, cap, pe, ards, pneumothorax, tb, lung-cancer.
+  10 images each, thumbs reuse the full image (`thumb == file`), page order + titles read off
+  each page's "IMAGE N OF 10" / IMAGE TITLE. Source was mixed: 2 production PDFs (copd, asthma)
+  and 6 folders of UUID-named PNGs. All rendered to 800×1200 for phone.
+- **Metabolic Syndrome** — new Endocrine condition (`E88.81`), Endocrine now 13, sits between
+  T2DM and Hypothyroidism for swipe order. Content researched + drafted (2009 harmonized
+  AHA/NHLBI/IDF criteria + the **June 2026 AHA/ACC/ADA/ASN CKM guideline**, CKM Stage 2 +
+  PREVENT). **`verified:false`** — RC VERIFIED badge intentionally OFF pending physician review.
+- **NCLEX entry button** — restyled to match the `.usmleprep` banner (same geometry/radius/
+  padding, icon tile + title + subtitle + chevron) in the Nursing accent.
+- **NCLEX test interface** — header now mirrors the app's own `.qhead`/`.qtop` pattern and the
+  USMLE page: rounded back button + eyebrow/title + logo, 8px gradient progress bar, `.pmeta`
+  row, card radius 22/pad 24, stem 21px/800, options radius 16. Refactored into one shared
+  `nxHead()` used by all five module screens.
+- **BUG FIXED — NCLEX button vanished after navigation.** It was injected once by JS, so the
+  app's `paint()` wiped it whenever the library re-rendered. Moved into the home template next
+  to `.usmleprep`, so it now persists exactly like the USMLE button.
+
+### ⚠️ Live asset paths are NOT under `assets/` — read before touching galleries
+GitHub web uploads have nested wrong twice, and `index.html` was patched to match reality
+rather than moving files:
+- **Cardiology (5):** `base: "dvt-upload/assets/<id>/"` (nested one level too deep)
+- **Pulmonary (8):** `base: "<id>/"` — condition folders sit at the **repo root**, not in
+  `assets/`. The `assets/` wrapper was dropped during the drag.
+Any future gallery work must match the existing `base` for that id, or repoint it deliberately.
+Optional cleanup (not done): consolidate everything under `assets/` and regenerate `index.html`.
+
 ## Publish
-Upload updated `index.html` (+ any new `assets/<id>/` for galleries) to `main` via Chrome; confirm
-Netlify deploy goes green; load the live site and verify each change.
+Upload updated `index.html` (+ any new gallery folders) to `main` via Chrome; confirm Netlify
+deploy goes green; load the live site and verify each change. **Before clicking Commit, check
+the file list GitHub shows — it displays the full destination path, which is where the two
+nesting mistakes above would have been caught.**
