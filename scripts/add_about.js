@@ -86,8 +86,24 @@ replaceOnce(
 replaceOnce(
   `const activeRoot=(r.v==='detail')?'library':(r.v==='rxdrug')?'rx':(r.v==='resspec'||r.v==='resdetail')?'res':r.v;`,
   `const activeRoot=(r.v==='detail')?'library':(r.v==='rxdrug')?'rx':(r.v==='resspec'||r.v==='resdetail')?'res'
-   :(r.v==='account'||r.v==='terms'||r.v==='privacy'||r.v==='galleries')?'about':r.v;`,
+   :(r.v==='account'||r.v==='terms'||r.v==='privacy')?'about'
+   :(r.v==='galleries')?'library':r.v;`,
   'nav highlight for about sub-pages');
+
+/* ------------------------------------- 2b. All Galleries button on the home page */
+/* Sits after the mode banners (USMLE / NCLEX / RESIDENT) and before the specialty chips,
+   so each mode's own call to action stays first. Shown in all three modes: the artwork is
+   equally useful to everyone, and this is the entry point that makes 34 galleries
+   discoverable at all. */
+replaceOnce(
+  '\n <div class="chips" id="chips"></div>',
+  '\n <button type="button" class="allgal" onclick="go(\'galleries\')" aria-label="All image galleries">'
+  + '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" '
+  + 'stroke-linejoin="round"><rect x="3" y="4" width="14" height="14" rx="2"/>'
+  + '<path d="M7 15l3.2-3.6L13 15"/><circle cx="12.6" cy="8.6" r="1.1"/>'
+  + '<path d="M21 8v10a2 2 0 01-2 2H8"/></svg><span>All Galleries</span></button>'
+  + '\n <div class="chips" id="chips"></div>',
+  'All Galleries button under the search bar');
 
 /* ------------------------------------------------------------------ 3. the code */
 
@@ -211,11 +227,11 @@ function aboutHTML(){
     aboutHead('About Rounds Codex','Version '+RC_VERSION)+
 
     '<div class="ab-hero">'+
-      '<p class="ab-lede">Rounds Codex is a clinical reference written by a practicing physician for the '+
-      'people learning at the bedside &mdash; nursing students, medical students and residents.</p>'+
-      '<p>Everything here is built around one idea: when you are on the ward and someone asks you a '+
-      'question, you should be able to find the answer in seconds, pitched at your level, and know '+
-      'where it came from.</p>'+
+      '<p class="ab-lede">Rounds Codex is a clinical reference designed to empower tomorrow&rsquo;s care '+
+      'team by placing an entire medical library and study guide in the palm of their hand.</p>'+
+      '<p>Rounds Codex bridges the gap between academic theory and real-world clinical practice, '+
+      'providing nursing students, medical students, and residents with immediate, accurate data to '+
+      'learn deeply, understand instantly, and succeed at the point of care.</p>'+
     '</div>'+
 
     '<div class="ab-sec"><h4>What it does</h4>'+
@@ -655,6 +671,19 @@ const ABOUT_CSS = '<style id="about-css">' + String.raw`/* --- about + legal ---
   color-mix(in srgb,var(--accent) 40%,transparent);padding-bottom:1px;}
 .about .ab-jump b{color:inherit;}
 .about .ab-jump:active{opacity:.7;}
+
+/* All Galleries: a white pill under the mode banner. Deliberately lighter than the
+   coloured banners above it -- galleries are a browse destination, not a mode's headline
+   call to action -- but the same radius and height family so it reads as a sibling. */
+.allgal{display:flex;align-items:center;justify-content:center;gap:9px;cursor:pointer;
+  width:70%;max-width:300px;margin:12px auto 2px;padding:13px 18px;border-radius:15px;
+  border:1px solid rgba(255,255,255,.55);background:#f2f6ff;color:#0a1424;
+  font-family:inherit;font-size:15px;font-weight:800;letter-spacing:.2px;
+  box-shadow:0 6px 18px rgba(0,0,0,.28);transition:filter .15s,transform .12s;
+  -webkit-tap-highlight-color:transparent;}
+.allgal:hover{filter:brightness(1.04);}
+.allgal:active{transform:translateY(1px) scale(.995);}
+.allgal svg{width:19px;height:19px;flex:none;}
 
 /* --- galleries index -------------------------------------------------------- */
 .galleries .gx-sec{margin:0 0 20px;}

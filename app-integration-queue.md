@@ -241,6 +241,21 @@ reached coherently: mode toggle (or home swipe) → RESIDENT SPECIALTIES.
   split+persistence build. On a base without `RC_STORE` the study-activity block and the
   clear-data button are simply omitted.
 
+#### All Galleries button + new mission copy 2026-07-26 (`deliver12`, one file)
+- **`.allgal`** — white pill, centred, 70% width / max 300px, injected after the mode banners
+  and before `#chips`, so each mode's own CTA stays first and the condition list is not pushed
+  far down. Shown in **all three modes**. Deliberately lighter than the coloured banners:
+  galleries are a browse destination, not a mode's headline action.
+- **Back from `galleries` is path-dependent and that is intended.** `go('galleries')` from the
+  home button gives stack `[library, galleries]` → back returns home; from About it gives
+  `[about, galleries]` → back returns to About. `navBack()` handles the depth-1 case.
+  Nav highlight for the view moved from `about` to **`library`**, since the home button is now
+  its primary entry point.
+- **New About opening copy** (Dr K's text) replaces both original paragraphs.
+- Verified: pill geometry/placement/colour in all three modes, both back paths, the gate lock
+  still intact, 9 jump links, 34-row index, 11 regression checks, zero page errors, additive
+  against the base (400 random samples intact).
+
 #### About revision 2026-07-26 (`deliver11`, one file) — gate lock, jump links, galleries index
 1. **Contact is `teacher@roundscodex.com`** (Dr K owns roundscodex.com via GoDaddy; the mailbox
    still has to be created — mail before then bounces).
