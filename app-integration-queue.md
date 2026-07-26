@@ -196,6 +196,26 @@ local bundle on `file://`** — verified headless in all three.
 - Both build scripts are byte-reproducible: re-running them on the pre-pass snapshot
   regenerates the shipped `index.html` exactly.
 
+### Content split out of index.html 2026-07-26 (`scripts/split_content.js`)
+The app is going full-native and the website gets pulled, so content-update latency was going
+to become App Store review latency for every typo. Content now loads from `content/*.json`.
+**Full detail + the decisions behind it: `native-app-plan.md` §5.**
+- `index.html` **6.87 MB → 0.65 MB**; `content/` = 6.21 MB across 7 files. Total unchanged.
+  A new condition or gallery is now a one-file upload instead of a 6.9 MB one.
+- Files: `conditions.json` (181), `drugs.json` (300), `resident.json` (1308 + specialties +
+  titles + per-specialty conditions + 180 approach), `nclex.json` (150), `quizzes.json` (9),
+  `galleries.json` (35 + REALGAL), `or.json`.
+- Containers stay declared in place but empty and are **filled**, not reassigned, so
+  `window.NCLEX_DATA` and every other existing reference stays valid. The 5 parse-time
+  lookups (`byId`, `ORDER`, `rxById`, `rxByCond`, `resById`), the initial `paint()` and the
+  `/c/<id>` router boot all moved into the loader.
+- **`file://` no longer works** — the loader uses `fetch`. The native shell must serve from a
+  real origin (Capacitor / a custom scheme handler), which was already the plan. Opening the
+  file off disk now says so explicitly instead of showing a blank screen.
+- **UPLOAD CHANGE: the `content/` folder must go up with `index.html`.** An old `index.html`
+  with new JSON, or vice versa, still works — but shipping `index.html` alone the first time
+  leaves the app with no content at all.
+
 ### ⚠️ Live asset paths are NOT under `assets/` — read before touching galleries
 GitHub web uploads have nested wrong twice, and `index.html` was patched to match reality
 rather than moving files:

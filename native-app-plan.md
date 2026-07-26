@@ -53,8 +53,8 @@ link already sent, and re-points the association file.
 - **Image weight** (§3.2) — now an app-download-size problem, not just a page-speed one.
 - **Persistence** (§3.3) — in an app, users will expect bookmarks, quiz progress and
   practice-attempt history to survive. Right now *nothing* persists.
-- **Separating content from code** (§6) — the difference between adding a condition in a
-  day and waiting on App Store review for every content change, forever.
+- **Separating content from code** (§5) — the difference between adding a condition in a
+  day and waiting on App Store review for every content change. **Done.**
 
 ---
 
@@ -174,32 +174,67 @@ AASA file need to change.
 
 ---
 
-## 5. Content vs. code — the update-latency decision
+## 5. Content vs. code — DONE (`scripts/split_content.js`)
 
-**Open question, worth deciding before the Xcode work starts.** Today everything lives in
-one 6.9 MB `index.html`: the UI code *and* all the content (`DATA` 181 conditions,
-`QUIZZES`, `GALLERIES`, `RES_DATA` ~1308 entries, `RC_ILLUS`, plus the 1,010-item USMLE bank
-in `usmle/`). On the web that is a virtue — one file to drag, no build step, instant load.
+**Decided and built 2026-07-26.** Everything used to live in one 6.9 MB `index.html` — the
+UI code *and* all the content — so a typo fix meant reshipping the whole app, which on the
+App Store means a review for every content change. **App Store Guideline 2.5.2** says the
+binary must be self-contained and must not download executable *code*; content *data* is a
+different matter, and updating it is normal practice. So content moved out:
 
-In an app it has a cost: **App Store Guideline 2.5.2** says the binary must be
-self-contained and must not download executable code. Content *data* is a different matter
-and updating it is normal practice. So where the line falls decides how content ships:
+| | before | after |
+|---|---|---|
+| `index.html` (code) | 6.87 MB | **0.65 MB** |
+| `content/*.json` | — | 6.21 MB in 7 files |
+| total | 6.87 MB | 6.86 MB |
 
-- **All inline (today's shape).** Every new condition, gallery or quiz means a new build and
-  an App Store review — days of latency, forever, for a typo fix.
-- **Content split out as data** (`content/*.json` bundled in the app, optionally refreshed
-  from the domain that is staying alive anyway). New conditions ship the same day. Code
-  changes still go through review, which is correct. Costs a real refactor of the big file
-  and a build step this repo does not have yet.
+`content/conditions.json` (181), `drugs.json` (300), `resident.json` (1308 entries +
+specialties + titles + per-specialty conditions + 180 approach entries), `nclex.json` (150),
+`quizzes.json` (9), `galleries.json` (35 + the REALGAL list), `or.json`.
 
-Recommendation: **split it.** This is a reference app whose whole value is content that
-grows — galleries are still arriving one at a time — and content-update latency compounds
-for the entire life of the product. Doing it before the native shell is written is much
-cheaper than retrofitting after.
+A new condition or gallery is now **one small file**, not a 6.9 MB re-upload — and in the app
+it is a content update rather than a binary and a review.
 
-If it is split, the gallery/quiz build pipelines in this repo emit JSON instead of patching
-a minified HTML file, which also retires the string-aware brace-matching surgery that
-`CLAUDE.md` warns about.
+### How it works, and the two traps
+- Containers stay declared where they were but **empty**, and the loader **fills** them
+  (`push` / `Object.assign` / `Set.add`) rather than reassigning. Every existing reference
+  therefore keeps pointing at the same object — including `window.NCLEX_DATA`, which the
+  NCLEX module holds as an alias (verified: `window.NCLEX_DATA === NCLEX_DATA` after load).
+- The five lookups that were derived at parse time (`byId`, `ORDER`, `rxById`, `rxByCond`,
+  `resById`) moved into the loader, as did the initial `paint()` and the `/c/<id>` router
+  boot, which now runs when `byId` is actually populated instead of on `DOMContentLoaded`.
+- **Losslessness is proved, not assumed.** Each blob is evaluated as JS, serialised to JSON,
+  re-parsed, and deep-compared including key order — so anything JSON cannot carry fails the
+  run rather than vanishing. (Key order matters: `DATA` order drives swipe adjacency.)
+- **Trap that actually bit:** extraction and patching were first split across Node and
+  Python, and every offset after the first emoji in the file was wrong — JS string indices
+  are UTF-16 code units, Python's are code points, so the drift equalled the astral-character
+  count. It silently swallowed two `const` declarations. The tool is now all Node, one offset
+  space.
+
+### Consequence: `file://` no longer works
+The loader uses `fetch`, which cannot read `content/` from `file://`. **The native shell must
+serve the bundle from a real origin** — Capacitor's `capacitor://localhost`, or a
+`WKURLSchemeHandler` on a custom scheme. That was already the recommendation in §1 for
+storage-origin reasons, so it costs nothing, but it is now a hard requirement rather than a
+preference. Opening `index.html` off disk shows an explicit message saying so.
+
+Verified with the real content over http on two origins (the website, and a second port
+standing in for `capacitor://localhost`): all 13 containers filled, all 5 derivations
+rebuilt, 181 cards rendered, deep links working, zero page errors — plus the failure path,
+which shows a clear message instead of a blank screen.
+
+### Follow-on now that the seams exist
+- **Lazy loading.** All seven files are fetched at boot today. Only conditions, galleries and
+  quizzes are needed for the first screen; drugs, resident, NCLEX and OR could load on first
+  navigation, cutting first paint from 6.2 MB to ~1.7 MB.
+- **Content updates over the air.** The loader already reads from a URL, so pointing it at
+  the domain (with the bundled copy as the offline fallback) is a small change — that is what
+  makes same-day content updates real in the shipped app.
+- The gallery/quiz build pipelines can now emit JSON instead of patching a minified HTML
+  file, retiring the brace-matching surgery `CLAUDE.md` warns about.
+- `LOGO` is still a 304 kB base64 PNG inline — now ~47% of the code file. Moving it to
+  `icons/logo.png` is an easy further cut.
 
 ---
 
@@ -209,6 +244,9 @@ a minified HTML file, which also retires the string-aware brace-matching surgery
   binaries. Re-run if new content introduces glyphs outside Latin / Latin-Ext-A / Greek.
 - `scripts/clean_patch.py` — the exact portability pass applied to `index.html`, with every
   edit asserted to hit once. Kept as the record of what changed and why.
+- `scripts/split_content.js` — pulls the content out to `content/*.json` and rewires the app
+  to load it (§5). Proves losslessness by JSON round-trip deep-compare; every structural edit
+  asserted to hit exactly once.
 
 Not yet written (needed once the app is the target): a bundle builder that assembles
 `www/` — `index.html`, `usmle/`, and `assets/<id>/` from `gal-final/` + `cardio-final/` —
