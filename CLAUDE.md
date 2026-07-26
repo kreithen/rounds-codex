@@ -20,16 +20,42 @@ no backend. This file is context for future sessions — read it before starting
 - `.gitignore` already excludes `applive/` and every `rounds-codex-*.zip` deploy bundle.
   **Do not commit the live app or deploy zips to this public repo.**
 
-## Live app structure (inside `applive/index.html`)
+## Live app structure
+
+> **CONTENT IS NO LONGER INLINE (2026-07-26).** `index.html` is now **code only** (0.65 MB,
+> was 6.87 MB); all content lives in **`content/*.json`** and is fetched at boot. The globals
+> below still exist with the same names and shapes — they are declared **empty** and *filled*
+> by the loader at the bottom of `index.html`, so app code reads them exactly as before.
+> **To change content, edit the JSON, not `index.html`.** Built by
+> `scripts/split_content.js`; rationale and traps in `native-app-plan.md` §5.
+>
+> | file | holds |
+> |---|---|
+> | `content/conditions.json` | `DATA` (181) |
+> | `content/drugs.json` | `RX_DATA` (300) |
+> | `content/resident.json` | `RES_DATA` (1308), `RES_SPECIALTIES`, `RES_ACTIVE`, `RES_SECTION2_TITLE`, `RES_COND`, `RESIDENT_APPROACH` |
+> | `content/nclex.json` | `NCLEX_DATA` (150) |
+> | `content/quizzes.json` | `QUIZZES` (9) |
+> | `content/galleries.json` | `GALLERIES` (35) + `real` (the `REALGAL` list) |
+> | `content/or.json` | `OR_DATA` |
+>
+> Consequences: **`file://` no longer works** (the loader uses `fetch`) — serve over http or
+> from the app shell; opening the file off disk shows an explicit message. The first upload
+> after the split must include `index.html` **and** `content/`; after that they are
+> independent. Derived lookups (`byId`, `ORDER`, `rxById`, `rxByCond`, `resById`), the first
+> `paint()` and the `/c/<id>` router boot all run in the loader, not at parse time.
+
 - **Modes** via `document.documentElement[data-mode]`: `nursing` | `medical` | `resident`
   (`setMode(m)`). Medical accent `--sec:#00c2ff`.
-- **Conditions**: `const DATA=[{id,name,category,icd10,tagline,...}]`. `byId[id]` lookup.
+- **Conditions**: `DATA=[{id,name,category,icd10,tagline,...}]`. `byId[id]` lookup.
   Detail page = `detailHTML(id)`; left/right **swipe** browses `DATA` array order (adjacency
   matters — e.g. Hypertension `htn` is placed right before `aortic-stenosis`).
-- **Galleries**: `const GALLERIES={ "<id>": {title, base:"assets/<id>/", pdf, images:[{n,file,
-  thumb,title}]} }`. Real artwork renders only for ids in `const REALGAL=new Set([...])`.
+- **Galleries**: `GALLERIES={ "<id>": {title, base:"assets/<id>/", pdf, images:[{n,file,
+  thumb,title}]} }`. Real artwork renders only for ids in `REALGAL` (the `real` array in
+  `content/galleries.json`). **`base` is not uniform on the live site** — see the warning in
+  `app-integration-queue.md`; match the existing value for that id or repoint it deliberately.
   `gframe(id,i,mini)` uses `base+thumb` for the grid, `base+file` for the viewer (`openViewer`).
-- **Quizzes**: `const QUIZZES={ "<id>": {condition, questions:[{q, ch:[...], correct, exp,
+- **Quizzes**: `QUIZZES={ "<id>": {condition, questions:[{q, ch:[...], correct, exp,
   pearl?, why?:[...], img?:[N]}]} }`. Having `QUIZZES[id]` auto-enables the "Take the Quiz"
   button in `detailHTML`. `img:[N]` links a question to gallery image N. `why[i]` shows on a
   wrong pick (optional; falls back to generic text).
@@ -53,9 +79,13 @@ no backend. This file is context for future sessions — read it before starting
   approved real images override schematics.
 
 ## Build pipelines
-- **Galleries** (`medcodex-gallery` skill + `scripts/build_gallery.py` in the skill): approved
-  production PDF → renders pages to `assets/<id>/<id>-NN.jpg` + thumbs + compact gallery PDF,
-  adds GALLERIES entry + REALGAL membership. **Page titles must be read visually** from each
+- **Galleries** (`medcodex-gallery` skill + `scripts/build_gallery.py` in the skill; a copy is
+  version-controlled at `skills/medcodex-gallery/`): approved production PDF → renders pages to
+  `assets/<id>/<id>-NN.jpg` + thumbs + compact gallery PDF, then writes the entry **into
+  `content/galleries.json`** and adds the id to its `real` list. It detects the split
+  automatically and falls back to patching inline `GALLERIES` only for a pre-split project.
+  `--base` overrides the runtime path prefix when the files land somewhere other than
+  `assets/<id>/`. **Page titles must be read visually** from each
   page's "IMAGE TITLE" box (no text layer in the PDFs); pass them as a plain JSON array.
   `galleries-staging/` holds the 5 Cardiology gallery PDFs + 3 quiz JSONs + title defaults.
 - **Real/AI images** (`tools/`): `higgsfield-image-prompts.md` (231) → `build_image_manifest.py`
@@ -64,9 +94,15 @@ no backend. This file is context for future sessions — read it before starting
 - **Resident content** (`medcodex-resident-buildout` skill): `resident-staging/` has the 1308-entry
   master + wiring snippet.
 
-## Editing the big minified `applive/index.html`
-- It's one ~6 MB file with data + code inline. Use **string-aware brace matching** (skip braces
-  inside JS string literals) to extract/replace object literals. Assert lengths/counts after edits.
+## Editing `applive/index.html`
+- Now ~0.65 MB of **code only** — content edits go to `content/*.json` instead, so the
+  brace-matching surgery below is rarely needed. When you do have to edit a literal in the
+  code file, use **string-aware brace matching** (skip braces inside JS string literals) and
+  assert lengths/counts after edits.
+- **Do extraction and patching in ONE language.** JS string indices are UTF-16 code units and
+  Python's are code points, so with emoji in the file (there are several) offsets computed in
+  Node and applied in Python drift by the astral-character count — it silently swallowed two
+  `const` declarations before this was caught.
 - **Verify every change headless** before delivering:
   `playwright-core` + Chromium at `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`
   (`--no-sandbox`). Drive the app via `page.evaluate(()=>go('gallery','dvt'))` etc.; assert
