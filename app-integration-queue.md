@@ -156,16 +156,45 @@ headless → upload to `main` via Chrome → Netlify auto-deploys.
   `/c/<id>` (preferred), `?c=<id>`, and `#c=<id>` (older links keep working).
 - **Two things are load-bearing:**
   1. **`_redirects` at the repo root**, one line: `/c/*  /index.html  200`. Without it every
-     shared link 404s.
-  2. **`<base href="/">` right after `<head>`.** Gallery `base` values are relative (`""`,
-     `"<id>/"`, `"dvt-upload/assets/<id>/"`), and so are `href="usmle/"` and
-     `serviceWorker.register('sw.js')`. At `/c/dka` without the base tag they resolve under
-     `/c/` — proved in the browser: USMLE PREP resolved to `/c/usmle/`. With it: `/usmle/`.
+     shared link 404s. (Staged at `deploy/_redirects`.)
+  2. **A `<base>` tag.** Gallery `base` values are relative (`""`, `"<id>/"`,
+     `"dvt-upload/assets/<id>/"`), and so are `href="usmle/"` and
+     `serviceWorker.register('sw.js')`. At `/c/dka` without a base they resolve under `/c/` —
+     proved in the browser: USMLE PREP resolved to `/c/usmle/`. **Now written at runtime, not
+     hard-coded** — see the portability pass below.
 - Verified against a local Netlify simulation (real files first, else `/c/*` → index 200):
   `/c/metabolic-syndrome` opens the condition with the clean URL intact; gallery images load
   10/10 from `/c/copd` (`firstSrc: /copd-01.jpg`); USMLE PREP resolves to and navigates to
   `/usmle/`; an unknown id (`/c/not-a-real-condition`) falls back to the 181-card library;
   legacy `#c=`/`?c=` links still route. Zero page errors, zero unexpected 404s.
+
+### Portability pass 2026-07-26 — one index.html for web + native (`scripts/clean_patch.py`)
+Groundwork for the eventual Xcode / App Store build. Full plan: **`native-app-plan.md`**.
+The same `index.html` now runs unchanged from the website root, a `/c/<id>` link, **and a
+local bundle on `file://`** — verified headless in all three.
+- **Dynamic app root.** The hard-coded `<base href="/">` is replaced by a boot script that
+  decides the root before the first relative URL is parsed and writes `<base>` itself
+  (`RC_ROOT`): site root → `/`, `/c/<id>` → `/`, bundle → the document's own folder. A
+  static `/` would have pointed at the filesystem root inside a WKWebView.
+- **Deep link captured at parse time** (`RC_DEEPLINK`) — the first `paint()` normalises the
+  address bar, so the router can no longer read the original path by the time it runs.
+  Legacy `?c=` / `#c=` links are captured the same way and *upgrade themselves* to `/c/<id>`.
+- **`RC_SHARE_ORIGIN`** pins share links to the public site instead of `location.origin`, so
+  a share sent from the native app is a working web link, not `capacitor://localhost/c/dka`.
+- **`RC_API`** — empty on the web (same-origin, no CORS), absolute in a bundle. The Ask
+  function was called with a root-relative path, which in a bundle resolves *into the app
+  package*. Native will need `Access-Control-Allow-Origin` on that function.
+- **Fonts self-hosted and inlined** (`scripts/build_fonts.py`): Inter + Oswald variable
+  woff2, Latin + Greek + Latin-Ext-A (subset from 85 kB → 14 kB), base64 in a `<style>`,
+  +150 kB. No `fonts.googleapis.com` — typography now works with zero network. Verified 0
+  CDN requests and correct `ū Δ μ β α₁ ½ ≤` rendering. Adds no files to upload.
+- **Address bar tracks the visible condition** via `replaceState` only — the app owns its
+  nav stack, and mirroring it into browser history would be a second source of truth.
+  Verified `history.length` does not grow, and swiping conditions updates the URL.
+- **Service worker registered on http(s) only** — a no-op on `file://` that can collide
+  with the native shell's asset handling.
+- Both build scripts are byte-reproducible: re-running them on the pre-pass snapshot
+  regenerates the shipped `index.html` exactly.
 
 ### ⚠️ Live asset paths are NOT under `assets/` — read before touching galleries
 GitHub web uploads have nested wrong twice, and `index.html` was patched to match reality

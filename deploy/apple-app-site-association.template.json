@@ -1,0 +1,17 @@
+{
+  "_comment": "Universal Links for Rounds Codex. Serve this at /.well-known/apple-app-site-association with Content-Type application/json and NO redirects. Replace TEAMID and the bundle id, then delete these two _comment keys (JSON has no comments and Apple parses this strictly).",
+  "_setup": "appID is <TeamID>.<BundleIdentifier>, e.g. A1B2C3D4E5.com.sarasotamed.roundscodex",
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["TEAMID.com.example.roundscodex"],
+        "components": [
+          { "/": "/c/*", "comment": "per-condition links" }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": []
+  }
+}

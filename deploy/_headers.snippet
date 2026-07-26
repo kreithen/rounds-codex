@@ -1,0 +1,8 @@
+# Append to the root _headers file in rounds-codex-app (create it if absent).
+# Apple fetches the association file with a strict parser: it must be served as JSON,
+# with no redirect in the way.
+/.well-known/apple-app-site-association
+  Content-Type: application/json
+
+/.well-known/assetlinks.json
+  Content-Type: application/json
