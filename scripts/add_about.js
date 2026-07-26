@@ -101,7 +101,7 @@ replaceOnce(
   + '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" '
   + 'stroke-linejoin="round"><rect x="3" y="4" width="14" height="14" rx="2"/>'
   + '<path d="M7 15l3.2-3.6L13 15"/><circle cx="12.6" cy="8.6" r="1.1"/>'
-  + '<path d="M21 8v10a2 2 0 01-2 2H8"/></svg><span>All Galleries</span></button>'
+  + '<path d="M21 8v10a2 2 0 01-2 2H8"/></svg><span>All Image Galleries</span></button>'
   + '\n <div class="chips" id="chips"></div>',
   'All Galleries button under the search bar');
 
@@ -676,7 +676,10 @@ const ABOUT_CSS = '<style id="about-css">' + String.raw`/* --- about + legal ---
    coloured banners above it -- galleries are a browse destination, not a mode's headline
    call to action -- but the same radius and height family so it reads as a sibling. */
 .allgal{display:flex;align-items:center;justify-content:center;gap:9px;cursor:pointer;
-  width:70%;max-width:300px;margin:12px auto 2px;padding:13px 18px;border-radius:15px;
+  /* shrink-to-fit but never below 70% of the width, so "All Image Galleries" cannot wrap to
+     two lines on a 320px phone (it did at a flat 70%) and cannot overflow its container */
+  width:fit-content;min-width:min(70%,300px);max-width:100%;white-space:nowrap;
+  margin:12px auto 2px;padding:13px 18px;border-radius:15px;
   border:1px solid rgba(255,255,255,.55);background:#f2f6ff;color:#0a1424;
   font-family:inherit;font-size:15px;font-weight:800;letter-spacing:.2px;
   box-shadow:0 6px 18px rgba(0,0,0,.28);transition:filter .15s,transform .12s;

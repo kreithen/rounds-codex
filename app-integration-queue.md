@@ -242,9 +242,11 @@ reached coherently: mode toggle (or home swipe) → RESIDENT SPECIALTIES.
   clear-data button are simply omitted.
 
 #### All Galleries button + new mission copy 2026-07-26 (`deliver12`, one file)
-- **`.allgal`** — white pill, centred, 70% width / max 300px, injected after the mode banners
+- **`.allgal`** — white pill reading **"All Image Galleries"**, centred, injected after the mode banners
   and before `#chips`, so each mode's own CTA stays first and the condition list is not pushed
-  far down. Shown in **all three modes**. Deliberately lighter than the coloured banners:
+  far down. Shown in **all three modes**. Sized `width:fit-content; min-width:min(70%,300px)`
+  with `white-space:nowrap`: at a flat 70% the label wrapped to two lines on a 320px screen and
+  the pill grew to 64px tall. Verified single-line and centred at 320 / 375 / 430px. Deliberately lighter than the coloured banners:
   galleries are a browse destination, not a mode's headline action.
 - **Back from `galleries` is path-dependent and that is intended.** `go('galleries')` from the
   home button gives stack `[library, galleries]` → back returns home; from About it gives
