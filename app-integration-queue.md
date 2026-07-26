@@ -196,6 +196,34 @@ local bundle on `file://`** — verified headless in all three.
 - Both build scripts are byte-reproducible: re-running them on the pre-pass snapshot
   regenerates the shipped `index.html` exactly.
 
+### Persistence 2026-07-26 (`scripts/add_persistence.js`) — nothing used to survive a reload
+The library's star button toggled a class and showed a toast: it looked like a bookmark
+feature and saved nothing. Quiz progress and practice attempts evaporated too.
+- **Root cause on the exam side was not the store.** `store.js` (from the exam-module skill)
+  was written and never shipped, so the NCLEX engine fell back to its in-memory shim. Worse,
+  `showReport()` bails to a legacy summary when `window.NCLEX_REPORT` is missing — and the
+  `Storage.record` call sits *inside* that branch, so no attempt could ever be recorded no
+  matter how good the store was. The report engine had only ever been shipped to `usmle/`.
+- **Now inlined into `index.html`:** `store.js` (pointed at localStorage via
+  `NCLEX_STORE.use(LocalStorageAdapter("rc."))`), the shared report engine, and a small
+  `RC_STORE` for bookmarks + quiz progress. +58 kB (0.65 → 0.71 MB).
+- **Side effect worth knowing:** NCLEX results now show the **full report** (score ring,
+  category breakdown, strengths/needs-work) instead of the legacy summary — the same one the
+  USMLE page has had. Honesty constraints verified on the rendered report: practice score,
+  **no pass probability or predicted score**, limited-sample areas flagged.
+- **Bookmarks** persist, filter the library from the top-left star, and have a 44×44 tap
+  target on each card. Anchored to the **ICD line, not the top-right corner**: cards are
+  ~184px wide and a long unbreakable name ("Hyperparathyroidism") overflows its box, so a
+  top-right star sat on the title. Verified zero text/star collisions across all 181 cards.
+- **Quiz progress**: best first-try score per condition, shown on the "Take the Quiz" button.
+- **Condition count is now derived** (`${DATA.length}`) — two places still said "180".
+- All device-local, never transmitted, so the App Store privacy label stays "Data Not
+  Collected". Both stores sit behind an interface, so the native shell can swap the adapter
+  (BridgeAdapter is already in `store.js`) without a single call site changing.
+- 11 kB of localStorage after a full 85-item attempt; attempt summaries capped at 50.
+- Verified: 16 persistence checks (all write → reload → re-read) plus the 14-check feature
+  regression, zero page errors.
+
 ### Content split out of index.html 2026-07-26 (`scripts/split_content.js`)
 The app is going full-native and the website gets pulled, so content-update latency was going
 to become App Store review latency for every typo. Content now loads from `content/*.json`.
