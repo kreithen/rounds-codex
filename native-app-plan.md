@@ -3,10 +3,58 @@
 Planning + status doc for taking the existing static app into an iOS (and later Android)
 binary. Written 2026-07-26, when the web app was made environment-portable.
 
-The short version: the app now runs unchanged from three different roots — the website,
-a shared `/c/<id>` link, and a **local bundle on `file://`** — so the webview build no
-longer needs a forked copy of `index.html`. What remains is a native shell, real
-persistence, and image weight.
+**The website is the interim delivery vehicle; the app is the destination.** Per Dr.
+Kreithen: the site gets pulled once the app is ready. That decision is already reflected
+below — it changes what is worth investing in (§0).
+
+The app now runs unchanged from three different roots — the website, a shared `/c/<id>`
+link, and a **local bundle on `file://`** — so the webview build needs no forked copy of
+`index.html`. What remains is a native shell, real persistence, and image weight.
+
+---
+
+## 0. What "pull the website" actually means
+
+One thing here is counterintuitive and load-bearing: **the site can go, but the domain
+cannot.** Three separate requirements keep it alive.
+
+1. **App Store Connect requires live web pages.** A **Support URL** and a **Privacy Policy
+   URL** are both mandatory fields for every app. You cannot submit without them.
+2. **Universal Links require a web server.** `apple-app-site-association` has to be served
+   over HTTPS from the domain the links use (§4). There is no serverless version of this.
+   Without it, a texted `/c/<id>` link cannot open the app.
+3. **Shared links have to land somewhere for people who don't have the app.** A custom
+   scheme (`roundscodex://c/dka`) works only for people who already installed it, and looks
+   broken to everyone else — which is most recipients of a shared link.
+
+So the end state is not "no web": it is **the 6.9 MB app replaced by a ~5 kB smart-link
+page** on the same domain, serving
+
+- `/c/<id>` → opens the app if installed (Universal Link), otherwise a small page with the
+  condition name and an App Store button
+- `/support`, `/privacy` → the two mandatory pages
+- `/.well-known/apple-app-site-association` (+ `assetlinks.json` for Android)
+
+That is cheap to keep and it means links already texted to people keep working forever.
+**Get the custom domain before the app ships** — moving domains later invalidates every
+link already sent, and re-points the association file.
+
+### What this de-prioritises
+- **Open Graph tags / SEO / canonical** — near-worthless once the site is a redirector.
+  Harmless, already shipped, leave them.
+- **Service worker + `manifest.webmanifest`** (PWA install) — dead ends. Already guarded to
+  http(s), so they cost the app nothing.
+- **Re-uploading 270 gallery images into `assets/<id>/` on the website** — this chore mostly
+  evaporates. The messy site root only matters for a site that is going away. The bundle
+  gets built from the clean local copies (`gal-final/`, `cardio-final/`), organised properly
+  at build time. Only fix the website layout if a gallery is actually broken there.
+
+### What this promotes
+- **Image weight** (§3.2) — now an app-download-size problem, not just a page-speed one.
+- **Persistence** (§3.3) — in an app, users will expect bookmarks, quiz progress and
+  practice-attempt history to survive. Right now *nothing* persists.
+- **Separating content from code** (§6) — the difference between adding a condition in a
+  day and waiting on App Store review for every content change, forever.
 
 ---
 
@@ -50,8 +98,10 @@ Keep the existing honesty posture, which already satisfies the hard part:
 - physician-authored, with the `RC VERIFIED` badge reserved for reviewed content
 
 Add a visible "for education, not a substitute for clinical judgement" disclaimer and an
-attribution/sources screen. Privacy nutrition label is trivial: the app collects nothing
-(no analytics, no accounts, no storage — see §3).
+attribution/sources screen. Privacy nutrition label is trivial: the app collects nothing —
+no analytics, no accounts, no transmitted data. Adding the local persistence in §3.3 does
+not change that: data kept on the device and never sent anywhere is not "collection" under
+Apple's definition, so the label stays "Data Not Collected".
 
 ---
 
@@ -66,24 +116,31 @@ attribution/sources screen. Privacy nutrition label is trivial: the app collects
 | **Server calls** | `RC_API` is empty on the web (same-origin, no CORS) and absolute in a bundle, where a root-relative `/.netlify/functions/ask` would resolve *into the app package*. |
 | **Service worker** | Registered only on `http(s)`. A SW does nothing on `file://` and can collide with the native shell's asset handling. |
 | **Browser history** | The address bar tracks the visible condition via `replaceState` **only**. The app owns its own nav stack; mirroring it into browser history would create a second source of truth. Verified: `history.length` does not grow. |
-| **Storage** | None. No `localStorage`, `sessionStorage`, or `indexedDB` anywhere — so no origin/storage surprises in a webview. (Also why §3 exists.) |
+| **Storage** | None. No `localStorage`, `sessionStorage`, or `indexedDB` anywhere — so no origin/storage surprises in a webview. Also why §3.3 exists: nothing the user does survives a reload. |
 
 ---
 
 ## 3. Still to do before Xcode
 
-1. **Consolidate gallery assets under `assets/<id>/`.** 27 of the 35 galleries currently
-   have `base: ""` — their images sit at the **site root** because two GitHub web-uploads
-   nested wrong and `index.html` was pointed at reality instead of moving 270 files. It
-   works, but a native bundle (and the repo) wants one folder per condition. One-time
-   cleanup: re-upload into `assets/<id>/` and set every `base` to `assets/<id>/`.
-2. **Image weight.** 270 gallery JPEGs = **91 MB** (avg 328 kB at 800×1200), plus a
-   6.6 MB `index.html`; the 8 remaining cardiac galleries would take it to ~125 MB.
-   Measured on a 6-image sample: **WebP q82 ≈ 49% of current size** (91 → ~45 MB),
-   JPEG q82 ≈ 69% (→ ~63 MB). WebP is supported in WKWebView (iOS 14+) and every current
-   browser. This is the single biggest win, and it speeds the *website* up too.
-3. **Persistent bookmarks.** The library's star button toggles a class and toasts; nothing
-   is saved. Needs real storage (and then it's the same code path on web and native).
+1. **Gallery asset layout — build it, don't re-upload it.** 27 of the 35 galleries have
+   `base: ""`: their images sit at the **site root**, because two GitHub web-uploads nested
+   wrong and `index.html` was pointed at reality instead of moving 270 files. Since the site
+   is going away, do **not** spend an afternoon re-uploading them. The bundle is assembled
+   from the clean local copies (`gal-final/`, `cardio-final/`) into `assets/<id>/`, and the
+   `base` values are rewritten as part of that build. The website keeps its flat layout for
+   as long as it lives.
+2. **Image weight — now an app-download problem.** 270 gallery JPEGs = **91 MB** (avg 328 kB
+   at 800×1200), plus a 6.9 MB `index.html`; the 8 remaining cardiac galleries would take it
+   to ~125 MB. Measured on a 6-image sample: **WebP q82 ≈ 49% of current size**
+   (91 → ~45 MB), JPEG q82 ≈ 69% (→ ~63 MB). WebP is supported in WKWebView (iOS 14+) and
+   every current browser. Biggest single win available.
+3. **Persistence — nothing survives today.** The library's star button toggles a class and
+   toasts; no bookmark, no quiz progress, no practice-attempt history is saved anywhere
+   (§2 "Storage"). Acceptable for a website you visit once; not for an app someone studies
+   with for months. Wants a small storage layer behind one interface, plus attempt history
+   feeding the existing report engine so progress over time becomes a real feature. Note the
+   honesty constraints still apply to anything built on it: **practice scores only, never a
+   predicted USMLE/NCLEX score or pass probability.**
 4. **CORS on the Ask function.** From `capacitor://localhost` the call is cross-origin, so
    the Netlify function needs `Access-Control-Allow-Origin`. Ask already falls back to its
    built-in offline answer when the call fails, so it degrades safely until then.
@@ -117,9 +174,42 @@ AASA file need to change.
 
 ---
 
-## 5. Build steps recorded in this repo
+## 5. Content vs. code — the update-latency decision
+
+**Open question, worth deciding before the Xcode work starts.** Today everything lives in
+one 6.9 MB `index.html`: the UI code *and* all the content (`DATA` 181 conditions,
+`QUIZZES`, `GALLERIES`, `RES_DATA` ~1308 entries, `RC_ILLUS`, plus the 1,010-item USMLE bank
+in `usmle/`). On the web that is a virtue — one file to drag, no build step, instant load.
+
+In an app it has a cost: **App Store Guideline 2.5.2** says the binary must be
+self-contained and must not download executable code. Content *data* is a different matter
+and updating it is normal practice. So where the line falls decides how content ships:
+
+- **All inline (today's shape).** Every new condition, gallery or quiz means a new build and
+  an App Store review — days of latency, forever, for a typo fix.
+- **Content split out as data** (`content/*.json` bundled in the app, optionally refreshed
+  from the domain that is staying alive anyway). New conditions ship the same day. Code
+  changes still go through review, which is correct. Costs a real refactor of the big file
+  and a build step this repo does not have yet.
+
+Recommendation: **split it.** This is a reference app whose whole value is content that
+grows — galleries are still arriving one at a time — and content-update latency compounds
+for the entire life of the product. Doing it before the native shell is written is much
+cheaper than retrofitting after.
+
+If it is split, the gallery/quiz build pipelines in this repo emit JSON instead of patching
+a minified HTML file, which also retires the string-aware brace-matching surgery that
+`CLAUDE.md` warns about.
+
+---
+
+## 6. Build steps recorded in this repo
 
 - `scripts/build_fonts.py` — rebuilds the inlined font block from Google's own woff2
   binaries. Re-run if new content introduces glyphs outside Latin / Latin-Ext-A / Greek.
 - `scripts/clean_patch.py` — the exact portability pass applied to `index.html`, with every
   edit asserted to hit once. Kept as the record of what changed and why.
+
+Not yet written (needed once the app is the target): a bundle builder that assembles
+`www/` — `index.html`, `usmle/`, and `assets/<id>/` from `gal-final/` + `cardio-final/` —
+with the gallery `base` values rewritten and images re-encoded (§3.1, §3.2).
