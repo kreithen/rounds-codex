@@ -1,4 +1,10 @@
-/* Add the About section and the first-run terms gate. Run AFTER scripts/add_persistence.js.
+/* Add the About section and the first-run terms gate.
+ *
+ * SELF-CONTAINED ON PURPOSE. This runs on any recent index.html -- before or after the
+ * content split, before or after add_persistence.js -- because the About section may need
+ * to ship on its own, on top of whatever is currently live, while the rest of the work is
+ * still queued. It brings its own terms storage, its own <style> block, and its own boot
+ * hook, and it degrades gracefully when RC_STORE / NCLEX_STORE are not present yet.
  *
  * Replaces the bottom bar's "Resident Mode" slot with "About" (?). That slot was largely
  * redundant -- it called root('res') without switching mode, so you could land in the
@@ -100,6 +106,26 @@ var RC_ADVISORS=[
   { name:'Joshua Kreithen, MD', role:'Founder &amp; Clinical Lead',
     bio:'Practicing physician, Sarasota, Florida. Writes and reviews the clinical content in Rounds Codex.' }
 ];
+
+/* Terms acceptance has its own tiny store rather than riding on RC_STORE, so the About
+   section can ship on its own, ahead of the persistence work. Best-effort writes: private
+   browsing throws on setItem, and a failed write must not take the app down. */
+var RC_TERMS=(function(){
+  var KEY='rc.terms.v1', mem=null;
+  function read(){
+    if(mem) return mem;
+    try{ var raw=localStorage.getItem(KEY); mem=raw?JSON.parse(raw):{}; }catch(e){ mem={}; }
+    if(!mem||typeof mem!=='object') mem={};
+    return mem;
+  }
+  return {
+    accepted:function(){ return read().version||null; },
+    acceptedAt:function(){ var t=read(); if(!t.at) return null;
+      try{ return new Date(t.at).toLocaleDateString(); }catch(e){ return null; } },
+    accept:function(v){ mem={version:v,at:Date.now()};
+      try{ localStorage.setItem(KEY,JSON.stringify(mem)); }catch(e){} }
+  };
+})();
 
 /* Back that always does something. Reached from the bottom bar the stack is one deep, so
    back() alone would be a dead control. */
@@ -225,14 +251,18 @@ function contactUs(){
 
 /* ---- my account: only what genuinely exists today ---- */
 function accountHTML(){
-  var marks=RC_STORE.bookmarks().length;
+  /* RC_STORE arrives with the persistence work; About can ship before it, so read
+     defensively and simply show nothing rather than throwing. */
+  var HAS=(typeof RC_STORE!=='undefined');
+  var marks=HAS?RC_STORE.bookmarks().length:0;
   var quizzes=0, quizBest=0, quizTotal=0;
-  Object.keys(QUIZZES).forEach(function(id){
+  if(HAS) Object.keys(QUIZZES).forEach(function(id){
     var r=RC_STORE.quizResult(id);
     if(r){ quizzes++; quizBest+=r.best; quizTotal+=r.total; }
   });
   var attempts=[], dash=null;
-  try{ attempts=NCLEX_STORE.listAttempts()||[]; dash=NCLEX_STORE.dashboard(); }catch(e){}
+  try{ attempts=window.NCLEX_STORE?NCLEX_STORE.listAttempts()||[]:[];
+       dash=window.NCLEX_STORE?NCLEX_STORE.dashboard():null; }catch(e){}
 
   function stat(n,l){ return '<div class="ab-stat"><b>'+n+'</b><span>'+l+'</span></div>'; }
   var pct=quizTotal?Math.round(quizBest/quizTotal*100)+'%':'—';
@@ -256,21 +286,21 @@ function accountHTML(){
       '<p class="ab-fine">There is no account to sign in to yet, and nothing to pay for. When '+
       'subscriptions arrive, your plan and billing will appear here.</p></div>'+
 
-    '<div class="ab-sec"><h4>Your study activity</h4>'+
+    (HAS?('<div class="ab-sec"><h4>Your study activity</h4>'+
       '<div class="ab-stats">'+stat(marks,'bookmarks')+stat(quizzes,'quizzes taken')+stat(pct,'best first-try')+'</div>'+
       (marks?'':'<p class="ab-fine">Tap the star on any condition to bookmark it.</p>')+
-    '</div>'+
+    '</div>'):'')+
     practice+
 
     '<div class="ab-sec"><h4>Your data</h4>'+
       '<p>Bookmarks, quiz progress and practice results are stored <b>on this device only</b>. They are '+
       'not sent anywhere, and they are not tied to a name or an account. That also means they do not '+
       'follow you to another device, and clearing your browser data clears them.</p>'+
-      '<button class="ab-danger" onclick="accountReset()">Clear my saved data</button></div>'+
+      (HAS?'<button class="ab-danger" onclick="accountReset()">Clear my saved data</button>':'')+'</div>'+
 
     '<div class="ab-sec"><h4>Legal</h4>'+
       abRow('<path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/>','Terms &amp; Conditions',
-            'Accepted '+(RC_STORE.termsAcceptedAt()||'—'),"go('terms')")+
+            'Accepted '+(RC_TERMS.acceptedAt()||'—'),"go('terms')")+
       abRow('<rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 018 0v3"/>',
             'Privacy','What is stored, and where',"go('privacy')")+
     '</div>'+
@@ -279,8 +309,8 @@ function accountHTML(){
 
 function accountReset(){
   if(!window.confirm('Clear bookmarks, quiz progress and practice history on this device? This cannot be undone.')) return;
-  try{ RC_STORE.reset(); }catch(e){}
-  try{ NCLEX_STORE.resetAll(); }catch(e){}
+  try{ if(window.RC_STORE) RC_STORE.reset(); }catch(e){}
+  try{ if(window.NCLEX_STORE) NCLEX_STORE.resetAll(); }catch(e){}
   toast('Saved data cleared');
   paint();
 }
@@ -438,7 +468,7 @@ var RC_LEGAL={
    worth much, which is the whole point of gating it.
 =================================================================================== */
 function rcTermsGate(){
-  if(RC_STORE.termsAccepted()===RC_TERMS_VERSION) return;
+  if(RC_TERMS.accepted()===RC_TERMS_VERSION) return;
   var el=document.createElement('div');
   el.id='rc-gate';
   el.innerHTML='<div class="rc-gate-card" role="dialog" aria-modal="true" aria-labelledby="rc-gate-h">'+
@@ -456,7 +486,7 @@ function rcTermsGate(){
   document.body.appendChild(el);
   function close(){ var g=document.getElementById('rc-gate'); if(g) g.remove(); }
   el.querySelector('#rc-gate-ok').onclick=function(){
-    RC_STORE.acceptTerms(RC_TERMS_VERSION); close();
+    RC_TERMS.accept(RC_TERMS_VERSION); close();
   };
   /* Reading the documents first must be possible without agreeing first. */
   el.querySelector('#rc-gate-terms').onclick=function(e){ e.preventDefault(); close(); root('terms'); };
@@ -465,29 +495,18 @@ function rcTermsGate(){
 </script>
 `;
 
-/* --------------------------------------------------- 5. store: terms acceptance */
-
-replaceOnce(
-  `    reset:function(){ mem={bookmarks:[],quiz:{}}; write(); }`,
-  `    /* -- terms acceptance: which version, and when -- */
-    termsAccepted:function(){ var t=read().terms; return t?t.version:null; },
-    termsAcceptedAt:function(){
-      var t=read().terms; if(!t||!t.at) return null;
-      try{ return new Date(t.at).toLocaleDateString(); }catch(e){ return null; }
-    },
-    acceptTerms:function(v){ read().terms={version:v,at:Date.now()}; write(); },
-
-    reset:function(){
-      /* deliberately keeps the terms acceptance: clearing study data is not a reason to
-         re-consent, and re-prompting would look like a bug */
-      var t=read().terms; mem={bookmarks:[],quiz:{},terms:t}; write();
-    }`,
-  'RC_STORE gains terms acceptance');
-
 /* ------------------------------------------------------------------- 6. the styles */
 
-replaceOnce('/* --- persistence UI ---',
-  String.raw`/* --- about + legal ---------------------------------------------------------- */
+/* Own boot hook rather than a patch into the content loader, so this applies whether or
+   not the content split has shipped. The gate needs only LOGO and the stylesheet, both
+   available at parse time, so it can cover the loading state too. */
+const GATE_BOOT = '<script>(function(){\n'
+  + '  function start(){ try{ rcTermsGate(); }catch(e){ if(window.console) console.warn(e); } }\n'
+  + "  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',start);\n"
+  + '  else start();\n'
+  + '})();<\/script>\n';
+
+const ABOUT_CSS = '<style id="about-css">' + String.raw`/* --- about + legal ---------------------------------------------------------- */
 .about .ab-hero{margin:2px 0 18px;}
 .about .ab-lede{font-size:16px;line-height:1.55;color:var(--white);font-weight:600;margin:0 0 10px;}
 .about p{font-size:14.5px;line-height:1.62;color:var(--muted);margin:0 0 10px;}
@@ -563,7 +582,8 @@ replaceOnce('/* --- persistence UI ---',
   background:linear-gradient(140deg,var(--accent),var(--accent-2));}
 .rc-gate-ok:active{transform:scale(.99);}
 
-/* --- persistence UI ---`, 'about + gate styles');
+` + '</style>';
+done.push('about + gate styles');
 
 /* ------------------------------------------------------- 7. inject code + gate call */
 
@@ -577,21 +597,15 @@ replaceOnce('/* --- persistence UI ---',
     process.exit(1);
   }
   s = s.slice(0, at)
+    + ABOUT_CSS
     + ABOUT_JS.replace(/__APP_VERSION__/g, APP_VERSION)
               .replace(/__TERMS_VERSION__/g, TERMS_VERSION)
               .replace(/__CONTACT__/g, CONTACT)
     + LEGAL_JS.replace(/__TERMS_VERSION__/g, TERMS_VERSION)
+    + GATE_BOOT
     + tail;
   done.push('inject about + legal code');
 })();
-
-/* The gate runs once the content is in, so the app behind it is real rather than a
-   half-painted shell, and so LOGO and the styles are available. */
-replaceOnce(
-  `    if(window.RC_ROUTE_BOOT) window.RC_ROUTE_BOOT();   /* then honour a /c/<id> deep link */`,
-  `    if(window.RC_ROUTE_BOOT) window.RC_ROUTE_BOOT();   /* then honour a /c/<id> deep link */
-    try{ if(typeof rcTermsGate==='function') rcTermsGate(); }catch(e){}`,
-  'run the terms gate after content loads');
 
 fs.writeFileSync(SRC, s);
 console.log('applied %d edits:', done.length);

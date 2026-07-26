@@ -233,6 +233,29 @@ reached coherently: mode toggle (or home swipe) → RESIDENT SPECIALTIES.
   live nav bar, no nav occlusion at the bottom of any page, legal text contains every
   required statement, account stats reflect real state, share payload correct — plus the
   14-check feature regression and the persistence suite, zero page errors.
+- **`scripts/add_about.js` is standalone on purpose.** It brings its own terms storage
+  (`RC_TERMS`, separate from `RC_STORE`), its own `<style id="about-css">` block and its own
+  boot hook, and it reads `RC_STORE`/`NCLEX_STORE` defensively — so About can ship on its own
+  on top of whatever is currently live, ahead of the split/persistence work. Verified applying
+  cleanly to three bases: a 6.7 MB pre-split file, the pre-clean build, and the current
+  split+persistence build. On a base without `RC_STORE` the study-activity block and the
+  clear-data button are simply omitted.
+
+#### About-only deploy 2026-07-26 (`deliver10`, one file)
+Shipped ahead of everything else at the user's request. Built on the **last `index.html`
+delivered before the DI / cardio / share-URL rounds** — deliberately *not* the newest build,
+because each newer piece needs a companion file:
+- the DI gallery entry would give a gallery with 10 broken images (`di-gallery.zip` unuploaded)
+- `/c/` share links need root `_redirects`
+- the content split needs the whole `content/` folder
+Also therefore excluded: persistence, the NCLEX full report, the resident back arrow, and the
+Metabolic Syndrome `verified:true` flip. All still queued for the full deploy.
+**Could not verify what is actually live** — the agent proxy denies `rounds-codex.netlify.app`
+and the app repo is firewalled — so the base is a best read, chosen to be safe either way (it
+preserves all 34 gallery entries and adds nothing needing a companion file). If a newer
+`index.html` turns out to be live, rebuild from it: the patch is base-agnostic.
+Proved additive against the base: all four intentional edits applied, and 400 random 400-char
+samples of the original all still present.
 
 ### Persistence 2026-07-26 (`scripts/add_persistence.js`) — nothing used to survive a reload
 The library's star button toggled a class and showed a toast: it looked like a bookmark
