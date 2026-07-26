@@ -15,10 +15,11 @@
  * the bottom control bar stays visible and navigable throughout, and all of them with a
  * working back control.
  *
- * TWO THINGS TO CHANGE BEFORE LAUNCH
- *  - RC_CONTACT_EMAIL below is Dr Kreithen's working address, because it is the one we have.
- *    A public "contact us" button in a shipped app should point at a dedicated support
- *    address (support@<the custom domain>) rather than a personal/practice mailbox.
+ * BEFORE LAUNCH
+ *  - CONTACT is teacher@roundscodex.com. Dr Kreithen owns roundscodex.com (GoDaddy); the
+ *    mailbox still has to be created, and mail sent before it exists will bounce.
+ *  - RC_SHARE_ORIGIN still points at rounds-codex.netlify.app on purpose: switching share
+ *    links to roundscodex.com before DNS resolves would send people to a parking page.
  *  - The terms and privacy text is a careful plain-English draft, NOT legal advice. It needs
  *    a lawyer's review before launch -- more so once there is a paid subscription.
  *
@@ -29,7 +30,7 @@ const fs = require('fs');
 const SRC = process.argv[2];
 if (!SRC) { console.error('usage: node add_about.js <index.html>'); process.exit(2); }
 
-const CONTACT = 'drjkreithen@sarasota-med.com';
+const CONTACT = 'teacher@roundscodex.com';   // roundscodex.com is owned; mailbox to be created
 const TERMS_VERSION = '2026-07-26';
 const APP_VERSION = '2026.07.26';
 
@@ -77,14 +78,15 @@ replaceOnce(
  else if(r.v==='about'){s.innerHTML=aboutHTML();}
  else if(r.v==='account'){s.innerHTML=accountHTML();}
  else if(r.v==='terms'){s.innerHTML=legalHTML('terms');}
- else if(r.v==='privacy'){s.innerHTML=legalHTML('privacy');}`,
+ else if(r.v==='privacy'){s.innerHTML=legalHTML('privacy');}
+ else if(r.v==='galleries'){s.innerHTML=galleriesHTML();}`,
   'paint() dispatch for the four views');
 
 /* Keep About lit in the bottom bar while you are inside any of its sub-pages. */
 replaceOnce(
   `const activeRoot=(r.v==='detail')?'library':(r.v==='rxdrug')?'rx':(r.v==='resspec'||r.v==='resdetail')?'res':r.v;`,
   `const activeRoot=(r.v==='detail')?'library':(r.v==='rxdrug')?'rx':(r.v==='resspec'||r.v==='resdetail')?'res'
-   :(r.v==='account'||r.v==='terms'||r.v==='privacy')?'about':r.v;`,
+   :(r.v==='account'||r.v==='terms'||r.v==='privacy'||r.v==='galleries')?'about':r.v;`,
   'nav highlight for about sub-pages');
 
 /* ------------------------------------------------------------------ 3. the code */
@@ -148,6 +150,56 @@ function aboutHead(title,sub){
     '<div class="atitle"><div class="t">'+title+'</div><div class="s">'+sub+'</div></div></div>';
 }
 
+/* Jump targets for the inline links in "what it does". Each one switches mode where the
+   destination only exists in a particular mode -- otherwise the link would appear to do
+   nothing. */
+function abGoMode(m){ setMode(m); root('library'); }
+function abGoNclex(){
+  setMode('nursing'); root('library');
+  /* the entry banner is part of the library template, so it exists only after paint() */
+  setTimeout(function(){ if(window.NCLEX&&NCLEX.openModule) NCLEX.openModule(); },60);
+}
+function abGoUsmle(){ setMode('medical'); location.href=(window.RC_ROOT||'')+'usmle/'; }
+function abGoResident(){ setMode('resident'); root('res'); }
+function abLink(text,call){ return '<a href="#" class="ab-jump" onclick="'+call+';return false;">'+text+'</a>'; }
+
+/* Every gallery in one place. 34 sets of original artwork were previously reachable only by
+   opening conditions one at a time, which made the most expensive content the hardest to
+   find. Grouped by specialty so it reads like the library. */
+function galleriesHTML(){
+  var ids=Object.keys(GALLERIES).filter(function(id){ return byId[id] && REALGAL.has(id); });
+  ids.sort(function(a,b){
+    var ca=byId[a].category, cb=byId[b].category;
+    if(ca!==cb) return ORDER.indexOf(ca)-ORDER.indexOf(cb);
+    return byId[a].name.localeCompare(byId[b].name);
+  });
+  var pages=ids.reduce(function(n,id){ return n+GALLERIES[id].images.length; },0);
+  var out='', lastCat=null;
+  ids.forEach(function(id){
+    var g=GALLERIES[id], d=byId[id], im=g.images[0];
+    if(d.category!==lastCat){
+      if(lastCat!==null) out+='</div>';
+      var pair=sec(d.category);
+      out+='<div class="gx-sec" style="--sec:'+pair[0]+';--sec2:'+pair[1]+'">'+
+           '<div class="gx-cat">'+d.category.toUpperCase()+'</div><div class="gx-list">';
+      lastCat=d.category;
+    }
+    out+='<div class="gx-row" onclick="go(\'gallery\',\''+id+'\')" role="button" tabindex="0">'+
+      '<div class="gx-thumb"><img loading="lazy" src="'+g.base+im.thumb+'" alt="" '+
+        'onerror="gimgerr(this,\''+id+'\',\''+im.thumb+'\')"></div>'+
+      '<div class="gx-meta"><b>'+d.name+'</b><span>'+g.images.length+' images &middot; '+d.icd10+'</span></div>'+
+      '<span class="gx-go">'+abIcon('<path d="M9 6l6 6-6 6"/>')+'</span></div>';
+  });
+  if(lastCat!==null) out+='</div></div>';
+
+  return '<div class="pad about galleries">'+
+    aboutHead('Image galleries', ids.length+' galleries &middot; '+pages+' pages of original artwork')+
+    '<p class="ab-fine" style="margin:-4px 0 16px">Every illustrated gallery in Rounds Codex. '+
+    'Tap one to open it; pinch or double-tap any image to zoom.</p>'+
+    out+
+  '</div>';
+}
+
 function aboutHTML(){
   var adv=RC_ADVISORS.map(function(a){
     return '<div class="ab-adv"><div class="ab-avi">'+
@@ -168,17 +220,22 @@ function aboutHTML(){
 
     '<div class="ab-sec"><h4>What it does</h4>'+
       '<p>The same condition reads differently depending on who is asking, so the app has three modes. '+
-      '<b>Nursing</b> leads with assessment, monitoring and patient safety. <b>Medical Student</b> leads '+
-      'with pathophysiology, diagnosis and the reasoning behind management. <b>Resident</b> leads with '+
+      abLink('<b>Nursing</b>',"abGoMode('nursing')")+' leads with assessment, monitoring and patient safety. '+
+      abLink('<b>Medical Student</b>',"abGoMode('medical')")+' leads with pathophysiology, diagnosis and '+
+      'the reasoning behind management. '+abLink('<b>Resident</b>',"abGoMode('resident')")+' leads with '+
       'what to actually do, by specialty.</p>'+
       '<ul class="ab-list">'+
-        '<li><b>'+DATA.length+' conditions</b> across '+ORDER.length+' specialties, each with an illustrated overview</li>'+
-        '<li><b>'+Object.keys(GALLERIES).length+' image galleries</b> of original teaching artwork</li>'+
-        '<li><b>'+RX_DATA.length+' drugs</b> cross-linked to the conditions they treat</li>'+
-        '<li><b>NCLEX-RN</b> and <b>USMLE</b> practice with a full performance report</li>'+
+        '<li>'+abLink('<b>'+DATA.length+' conditions</b>',"root('library')")+' across '+ORDER.length+
+          ' specialties, each with an illustrated overview</li>'+
+        '<li>'+abLink('<b>'+Object.keys(GALLERIES).length+' image galleries</b>',"go('galleries')")+
+          ' of original teaching artwork</li>'+
+        '<li>'+abLink('<b>'+RX_DATA.length+' drugs</b>',"root('rx')")+' cross-linked to the conditions they treat</li>'+
+        '<li>'+abLink('<b>NCLEX-RN</b>','abGoNclex()')+' and '+abLink('<b>USMLE</b>','abGoUsmle()')+
+          ' practice with a full performance report</li>'+
         /* RES_SPECIALTIES has 24 entries but one is inactive; the purple RESIDENT SPECIALTIES
            button says 23, so use the same number rather than contradicting it */
-        '<li><b>Resident mode</b> &mdash; the top topics for '+RES_ACTIVE.size+' specialties</li>'+
+        '<li>'+abLink('<b>Resident mode</b>','abGoResident()')+' &mdash; the top topics for '+
+          RES_ACTIVE.size+' specialties</li>'+
       '</ul></div>'+
 
     '<div class="ab-sec"><h4>Getting the most out of it</h4>'+
@@ -316,16 +373,21 @@ function accountReset(){
 }
 
 /* ---- terms + privacy ------------------------------------------------------------- */
+/* Body only, shared by the full page and the locked first-run gate so there is exactly one
+   copy of the legal text. */
+function legalBodyHTML(which){
+  var d=(which==='terms')?RC_LEGAL.terms:RC_LEGAL.privacy;
+  return '<div class="ab-sec ab-warn"><h4>'+d.keyH+'</h4><p>'+d.key+'</p></div>'+
+    d.sections.map(function(sec){
+      return '<div class="ab-sec"><h4>'+sec.h+'</h4>'+
+        sec.p.map(function(x){return '<p>'+x+'</p>';}).join('')+'</div>';
+    }).join('');
+}
 function legalHTML(which){
   var d=(which==='terms')?RC_LEGAL.terms:RC_LEGAL.privacy;
-  var body=d.sections.map(function(sec){
-    return '<div class="ab-sec"><h4>'+sec.h+'</h4>'+
-      sec.p.map(function(x){return '<p>'+x+'</p>';}).join('')+'</div>';
-  }).join('');
   return '<div class="pad about legal">'+
     aboutHead(d.title,'Version '+d.version+' · last updated '+d.updated)+
-    '<div class="ab-sec ab-warn"><h4>'+d.keyH+'</h4><p>'+d.key+'</p></div>'+
-    body+
+    legalBodyHTML(which)+
     '<div class="ab-foot">Questions about this document? <a href="#" onclick="contactUs();return false;">Contact us</a>.</div>'+
   '</div>';
 }
@@ -469,28 +531,53 @@ var RC_LEGAL={
 =================================================================================== */
 function rcTermsGate(){
   if(RC_TERMS.accepted()===RC_TERMS_VERSION) return;
+  if(document.getElementById('rc-gate')) return;
   var el=document.createElement('div');
   el.id='rc-gate';
+  document.body.appendChild(el);
+  rcGateShow('summary');
+}
+
+/* The gate is a single locked panel with two states. Reading Terms or Privacy swaps the
+   panel's contents rather than routing into the app, so there is no moment where the app is
+   reachable: the only way out is "I understand and agree". Back returns to the summary,
+   where the agree button lives. */
+function rcGateShow(view){
+  var el=document.getElementById('rc-gate'); if(!el) return;
+
+  if(view==='terms'||view==='privacy'){
+    var d=(view==='terms')?RC_LEGAL.terms:RC_LEGAL.privacy;
+    el.innerHTML='<div class="rc-gate-card rc-gate-doc" role="dialog" aria-modal="true">'+
+      '<div class="rc-gate-bar">'+
+        '<button class="rc-gate-back" onclick="rcGateShow(\'summary\')" aria-label="Back">'+
+          abIcon('<path d="M15 5l-7 7 7 7"/>')+'<span>Back</span></button>'+
+        '<div class="rc-gate-bt">'+d.title+'</div>'+
+      '</div>'+
+      '<div class="rc-gate-scroll about legal">'+legalBodyHTML(view)+'</div>'+
+      '<div class="rc-gate-note">Return and tap <b>I understand and agree</b> to continue.</div>'+
+    '</div>';
+    var sc=el.querySelector('.rc-gate-scroll'); if(sc) sc.scrollTop=0;
+    return;
+  }
+
   el.innerHTML='<div class="rc-gate-card" role="dialog" aria-modal="true" aria-labelledby="rc-gate-h">'+
     '<div class="rc-gate-logo"><img src="'+LOGO+'" alt=""></div>'+
     '<h2 id="rc-gate-h">Before you start</h2>'+
-    '<p><b>Rounds Codex is for education only.</b> It is not medical advice and it does not replace '+
-    'your supervising clinician.</p>'+
+    '<p><b>Rounds Codex is for education only.</b> It is not medical advice and it does not '+
+    'replace your supervising clinician.</p>'+
     '<p class="rc-gate-key">Anything you do for a real patient must be approved by your attending, '+
     'preceptor or clinical instructor. Always verify doses against a current formulary and follow '+
     'your institution&rsquo;s protocols.</p>'+
     '<p class="rc-gate-fine">Practice scores are not predicted exam scores and not a probability of '+
-    'passing. By continuing you agree to the <a href="#" id="rc-gate-terms">Terms &amp; Conditions</a> '+
-    'and <a href="#" id="rc-gate-priv">Privacy</a> policy.</p>'+
+    'passing. By continuing you agree to the '+
+    '<a href="#" onclick="rcGateShow(\'terms\');return false;">Terms &amp; Conditions</a> and '+
+    '<a href="#" onclick="rcGateShow(\'privacy\');return false;">Privacy</a> policy.</p>'+
     '<button class="rc-gate-ok" id="rc-gate-ok">I understand and agree</button></div>';
-  document.body.appendChild(el);
-  function close(){ var g=document.getElementById('rc-gate'); if(g) g.remove(); }
+
   el.querySelector('#rc-gate-ok').onclick=function(){
-    RC_TERMS.accept(RC_TERMS_VERSION); close();
+    RC_TERMS.accept(RC_TERMS_VERSION);
+    var g=document.getElementById('rc-gate'); if(g) g.remove();
   };
-  /* Reading the documents first must be possible without agreeing first. */
-  el.querySelector('#rc-gate-terms').onclick=function(e){ e.preventDefault(); close(); root('terms'); };
-  el.querySelector('#rc-gate-priv').onclick=function(e){ e.preventDefault(); close(); root('privacy'); };
 }
 </script>
 `;
@@ -563,12 +650,56 @@ const ABOUT_CSS = '<style id="about-css">' + String.raw`/* --- about + legal ---
 .about.legal .ab-sec h4{color:var(--muted);letter-spacing:1px;}
 .about.legal .ab-warn h4{color:var(--gold);}
 
+/* inline jump links in the About copy */
+.about .ab-jump{color:var(--accent);text-decoration:none;border-bottom:1px solid
+  color-mix(in srgb,var(--accent) 40%,transparent);padding-bottom:1px;}
+.about .ab-jump b{color:inherit;}
+.about .ab-jump:active{opacity:.7;}
+
+/* --- galleries index -------------------------------------------------------- */
+.galleries .gx-sec{margin:0 0 20px;}
+.galleries .gx-cat{font-size:11.5px;font-weight:900;letter-spacing:1.3px;color:var(--sec);
+  margin:0 0 9px;}
+/* A list, not a card grid. These are dense teaching pages: a cropped square of one shows
+   nothing identifiable, and 34 of them made an enormous scroll. Small thumbnails anchored to
+   the TOP of the page, where the title band is, plus the name -- scannable at a glance. */
+.galleries .gx-list{display:flex;flex-direction:column;gap:8px;}
+.gx-row{display:flex;align-items:center;gap:12px;cursor:pointer;padding:8px 12px 8px 8px;
+  border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.03);
+  transition:border-color .15s,background .15s,transform .12s;}
+.gx-row:hover{border-color:var(--sec);background:rgba(255,255,255,.06);}
+.gx-row:active{transform:scale(.99);}
+/* fixed box so a slow or missing image cannot reflow the list */
+.gx-thumb{flex:none;width:46px;height:60px;border-radius:8px;overflow:hidden;
+  background:rgba(0,0,0,.3);border:1px solid var(--line);}
+.gx-thumb img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;}
+.gx-meta{min-width:0;flex:1 1 auto;}
+.gx-meta b{display:block;font-size:14.5px;font-weight:800;color:var(--white);line-height:1.3;}
+.gx-meta span{display:block;font-size:11.5px;color:var(--muted-2);margin-top:2px;}
+.gx-go{flex:none;color:var(--muted-2);display:grid;place-items:center;}
+.gx-go svg{width:17px;height:17px;}
+
 /* --- first-run acceptance gate ---------------------------------------------- */
 #rc-gate{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:22px;
   background:rgba(2,5,12,.90);-webkit-backdrop-filter:blur(7px);backdrop-filter:blur(7px);}
 .rc-gate-card{max-width:430px;width:100%;max-height:88vh;overflow:auto;border-radius:22px;padding:26px 22px;
   background:linear-gradient(180deg,#0b1322,#070d18);border:1px solid var(--line-2);
   box-shadow:0 24px 60px rgba(0,0,0,.6);}
+/* document state: the legal text is read INSIDE the lock, so the app is never revealed */
+.rc-gate-card.rc-gate-doc{display:flex;flex-direction:column;max-height:88vh;overflow:hidden;padding:0;}
+.rc-gate-bar{display:flex;align-items:center;gap:10px;padding:14px 16px;flex:none;
+  border-bottom:1px solid var(--line);}
+.rc-gate-back{display:flex;align-items:center;gap:5px;border:1px solid var(--line);cursor:pointer;
+  background:rgba(255,255,255,.04);color:var(--white);font-family:inherit;font-size:13px;
+  font-weight:700;padding:7px 12px 7px 9px;border-radius:11px;}
+.rc-gate-back svg{width:16px;height:16px;}
+.rc-gate-back:hover{background:rgba(255,255,255,.08);}
+.rc-gate-bt{font-size:14.5px;font-weight:800;color:var(--white);}
+.rc-gate-scroll{flex:1 1 auto;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:16px;}
+.rc-gate-scroll .ab-sec:last-child{margin-bottom:0;}
+.rc-gate-note{flex:none;padding:12px 16px;border-top:1px solid var(--line);text-align:center;
+  font-size:12.5px;color:var(--muted-2);}
+.rc-gate-note b{color:var(--white);}
 .rc-gate-logo{text-align:center;margin-bottom:14px;}
 .rc-gate-logo img{height:44px;width:auto;}
 .rc-gate-card h2{font-size:21px;font-weight:900;color:var(--white);margin:0 0 12px;text-align:center;}

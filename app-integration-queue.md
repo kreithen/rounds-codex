@@ -241,6 +241,31 @@ reached coherently: mode toggle (or home swipe) → RESIDENT SPECIALTIES.
   split+persistence build. On a base without `RC_STORE` the study-activity block and the
   clear-data button are simply omitted.
 
+#### About revision 2026-07-26 (`deliver11`, one file) — gate lock, jump links, galleries index
+1. **Contact is `teacher@roundscodex.com`** (Dr K owns roundscodex.com via GoDaddy; the mailbox
+   still has to be created — mail before then bounces).
+2. **The gate actually locks now.** Tapping Terms/Privacy previously called `root(...)` and
+   closed the gate, dropping the user into the app — it defeated the purpose. Both documents
+   now render *inside* the locked panel (`rcGateShow('summary'|'terms'|'privacy')`), sharing
+   `legalBodyHTML()` with the full pages so there is one copy of the text. Back returns to the
+   summary; the agree button exists only there. Verified by hit-testing five screen points in
+   both states — nothing of the app is reachable — plus reload-mid-document returns to the gate.
+3. **"What it does" is hyperlinked** — nine `.ab-jump` links. Each switches mode where the
+   destination is mode-specific (NCLEX → nursing + `NCLEX.openModule()`, USMLE → medical +
+   `/usmle/`, Resident mode → resident + `root('res')`), otherwise the link looks broken.
+4. **New galleries index** (`galleriesHTML()`, view `galleries`): all 34 galleries grouped by
+   specialty with thumbnail, name, page count and ICD-10. Reached with `go('galleries')` — NOT
+   a ROOT — so Back returns to About. Built as a **list, not a card grid**: the first version
+   was a two-column grid of large thumbnails, and a cropped square of a dense teaching page is
+   unidentifiable while 34 of them made an enormous scroll. Thumbnails are small and
+   `object-position:top`, so the page title band shows.
+- **Share origin:** this base has no `RC_SHARE_ORIGIN`, so `shareApp()` uses `location.origin`
+  — shared links become roundscodex.com automatically once DNS points at Netlify. Deliberate:
+  hard-coding the custom domain before DNS resolves would send people to a parking page.
+- Verified: 25 About/lock/index checks + 11 regression checks, zero page errors, additive
+  against the base (400 random samples intact). 8 cardiac thumbnails could not be checked
+  locally — those images exist only on the live site.
+
 #### About-only deploy 2026-07-26 (`deliver10`, one file)
 Shipped ahead of everything else at the user's request. Built on the **last `index.html`
 delivered before the DI / cardio / share-URL rounds** — deliberately *not* the newest build,
