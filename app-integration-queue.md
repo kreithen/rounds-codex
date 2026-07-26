@@ -125,6 +125,48 @@ headless → upload to `main` via Chrome → Netlify auto-deploys.
   app's `paint()` wiped it whenever the library re-rendered. Moved into the home template next
   to `.usmleprep`, so it now persists exactly like the USMLE button.
 
+## BUILT & VERIFIED 2026-07-26 (awaiting the user's Chrome/phone upload)
+- **Pinch/zoom rewrite** in the gallery viewer — pointer-event `Map`, distance-ratio pinch,
+  anchored `setZoom(z,cx,cy)` (`gpx=ax-(ax-gpx)*(z/gzoom)`), `gClamp()` pan bounds, MINZ 1 /
+  MAXZ 4, double-tap 2.5× / double-tap-to-reset, `stage.style.touchAction='none'`, zoom reset
+  on `gnav()`. Fixes "can only zoom in once" + the motion artifacts. Verified with synthetic
+  two-pointer gestures: 1 → 2.5 (double-tap) → 4 (pinch) → 4 (pinch again) → clamps at 4 →
+  1 (double-tap reset); 1 after next/prev.
+- **Home-page mode swipe** — `MODES=['nursing','medical','resident']`; swipe-left from Nursing →
+  Resident, swipe-right → Medical. Ignores swipes starting on chips/toggle/viewer/inputs;
+  needs |dx|≥60, |dy|≤0.7|dx|, <700 ms.
+- **Resident specialty swipe** — replaces the top of `stack` instead of pushing, so Back still
+  returns to the specialty list (verified: em → fm, depth stays 2, Back → `res`).
+- **`RESIDENT SPECIALTIES` button** (`.respec`) under the search bar in Resident mode — same
+  geometry/radius as `.usmleprep` in the `--res` purple gradient; opens `root('res')`.
+- **Resident-mode back arrow** — `.res-topbar` `.tb-btn` at the upper-left of the specialty
+  list + a "Library" label; `root('library')` (verified: depth 1, library rendered).
+- **Toggle label** — "Medical" → **"Medical Student"**.
+- **Metabolic Syndrome** — `verified:true`, RC VERIFIED badge now ON (physician-confirmed).
+- **Canonical logo** re-rendered on all 21 endocrine/respiratory galleries + the 5 Cardiology
+  galleries (`gal-final/`, `cardio-final/`; pristine originals kept in `gal-orig/`,
+  `cardio-orig/`). 116 pages needed correction.
+- **Per-condition share button + share URLs** — see the next section.
+
+### Per-condition sub-URLs (`/c/<id>`) — needs the root `_redirects` file
+- Share button sits next to the ICD-10 badge (`.icd-row` > `.d-icd` + `.d-share`), uses
+  `navigator.share` (Apple/Android sheet) with a clipboard/prompt fallback on desktop.
+  Share text strips the tagline's `<b>` markup.
+- `condURL(id)` → `location.origin+'/c/'+encodeURIComponent(id)`. The router accepts
+  `/c/<id>` (preferred), `?c=<id>`, and `#c=<id>` (older links keep working).
+- **Two things are load-bearing:**
+  1. **`_redirects` at the repo root**, one line: `/c/*  /index.html  200`. Without it every
+     shared link 404s.
+  2. **`<base href="/">` right after `<head>`.** Gallery `base` values are relative (`""`,
+     `"<id>/"`, `"dvt-upload/assets/<id>/"`), and so are `href="usmle/"` and
+     `serviceWorker.register('sw.js')`. At `/c/dka` without the base tag they resolve under
+     `/c/` — proved in the browser: USMLE PREP resolved to `/c/usmle/`. With it: `/usmle/`.
+- Verified against a local Netlify simulation (real files first, else `/c/*` → index 200):
+  `/c/metabolic-syndrome` opens the condition with the clean URL intact; gallery images load
+  10/10 from `/c/copd` (`firstSrc: /copd-01.jpg`); USMLE PREP resolves to and navigates to
+  `/usmle/`; an unknown id (`/c/not-a-real-condition`) falls back to the 181-card library;
+  legacy `#c=`/`?c=` links still route. Zero page errors, zero unexpected 404s.
+
 ### ⚠️ Live asset paths are NOT under `assets/` — read before touching galleries
 GitHub web uploads have nested wrong twice, and `index.html` was patched to match reality
 rather than moving files:
