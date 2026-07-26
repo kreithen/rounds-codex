@@ -196,6 +196,44 @@ local bundle on `file://`** — verified headless in all three.
 - Both build scripts are byte-reproducible: re-running them on the pre-pass snapshot
   regenerates the shipped `index.html` exactly.
 
+### About section + first-run terms gate 2026-07-26 (`scripts/add_about.js`)
+The bottom bar's **Resident Mode** slot becomes **About (?)**. That slot was largely
+redundant — it called `root('res')` *without* switching mode, so you could land in the
+resident specialty list while the app was still in Nursing mode. Resident content is now
+reached coherently: mode toggle (or home swipe) → RESIDENT SPECIALTIES.
+- **Four new views** — `about` (hub), `account`, `terms`, `privacy`. None are in `IMMERSIVE`,
+  so the bottom control bar stays visible and navigable throughout; `activeRoot` maps the
+  sub-pages to `about` so the nav stays lit. Every page has a working back control
+  (`navBack()` falls back to `root('library')` when the stack is one deep, so it is never a
+  dead button).
+- **Hub**: mission, what each mode is for, live content counts (derived, not hard-coded), a
+  "getting the most out of it" section, a gold **What it is not** safety block, clinical
+  advisors, then Share / My account / Contact / Terms / Privacy.
+- **My account**: real local data only — bookmarks, quizzes taken, best first-try score,
+  NCLEX attempts/best from the new store, plan = "Free while in development", a plain
+  statement that data is device-local, and **Clear my saved data**. No fake subscription UI.
+- **Contact** = `mailto:` with app version, mode, screen and user-agent appended, so a bug
+  report arrives reproducible. **Swap `RC_CONTACT` for a dedicated support address before
+  launch** — it currently points at Dr Kreithen's working mailbox.
+- **Terms + Privacy** written as readable pages (14 and 8 sections). Emphasis where the user
+  asked for it: *anything done for a real patient must be approved by the attending,
+  preceptor or clinical instructor*; verify doses; practice scores are not predicted exam
+  scores and not a pass probability; not affiliated with NCSBN/NBME/FSMB.
+  **Draft, not legal advice — needs a lawyer before launch**, more so once money is involved.
+  Governing law is pencilled in as Florida and flagged for counsel.
+- **Privacy is accurate about the one transmission**: Ask Rounds Codex POSTs the question
+  text and the current mode to the Netlify function. Everything else stays on device. This
+  also refines the App Store privacy answer — it is not purely "Data Not Collected" unless
+  the Ask endpoint's retention says so.
+- **First-run gate**: blocks until "I understand and agree", records `{version, at}`, and
+  re-prompts when `RC_TERMS_VERSION` changes. Reading Terms/Privacy first is possible without
+  agreeing. `RC_STORE.reset()` deliberately keeps the acceptance — clearing study data is not
+  a reason to re-consent.
+- Verified: gate shown/blocking/persisted, all sub-pages reachable with working back and a
+  live nav bar, no nav occlusion at the bottom of any page, legal text contains every
+  required statement, account stats reflect real state, share payload correct — plus the
+  14-check feature regression and the persistence suite, zero page errors.
+
 ### Persistence 2026-07-26 (`scripts/add_persistence.js`) — nothing used to survive a reload
 The library's star button toggled a class and showed a toast: it looked like a bookmark
 feature and saved nothing. Quiz progress and practice attempts evaporated too.
