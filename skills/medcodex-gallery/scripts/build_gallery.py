@@ -4,7 +4,9 @@ build_gallery.py — deterministic core of the medcodex-gallery skill.
 
 Given an approved production-package PDF and a target condition id, it:
   1. Renders every PDF page to a high-res JPG (default 180 dpi).
-  2. Generates a uniform thumbnail for each page (default 520 px wide).
+  2. Generates a uniform thumbnail for each page (default 320 px wide -- set by the largest
+     place a thumb renders, the 10-image grid inside a condition gallery, which is 424 device px
+     on an iPad. Measured indistinguishable from the full image there; 520 just cost bytes).
   3. Copies the ORIGINAL PDF in untouched (for the "View Complete Gallery (PDF)" button).
   4. Inserts/updates one gallery entry: content/galleries.json if the project has
      had its content split out (current shape), else the inline GALLERIES map in
@@ -22,7 +24,7 @@ Usage:
       --id <condition_id e.g. acs> \
       --title "<Condition display name>" \
       --titles-file <json array of page titles, in page order> \
-      [--dpi 180] [--thumb 520] [--quality 88]
+      [--dpi 180] [--thumb 320] [--quality 88]
 
 If --titles-file is omitted the script falls back to generic "Page N" titles and
 prints a warning — always pass real titles read from each page's footer.
@@ -189,7 +191,7 @@ def main():
     ap.add_argument("--title", required=True)
     ap.add_argument("--titles-file")
     ap.add_argument("--dpi", type=int, default=180)
-    ap.add_argument("--thumb", type=int, default=520)
+    ap.add_argument("--thumb", type=int, default=320)
     ap.add_argument("--quality", type=int, default=88)
     ap.add_argument("--base", help="runtime path prefix the app uses to find the images "
                                    "(default assets/<id>/). Set this to match wherever the "

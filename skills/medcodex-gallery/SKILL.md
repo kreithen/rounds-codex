@@ -26,9 +26,11 @@ Before building, confirm these via **AskUserQuestion**, marking your best guess 
 Skip any the user already answered in their request.
 1. **Condition id** — which `DATA` condition this gallery attaches to. Resolve the name → id; if the
    name is ambiguous or absent, confirm rather than guessing.
-2. **Thumbnails** — separate thumbnail files, or **reuse the full images as thumbs**? Reusing halves
-   the file count for the GitHub upload (the ~100-files-per-commit limit) at the cost of a heavier
-   grid; prefer reuse for phone-first galleries.
+   *(Thumbnails used to be a question here — "reuse the full images as thumbs?" — because it halved
+   the GitHub upload file count. **Do not offer that option again.** 26 galleries were built that
+   way and the galleries index, which renders 340 thumbnails at once, ended up pulling 78 MB of
+   full-size page scans; undoing it cost a 270-file re-upload. `build_gallery.py` always writes real
+   `thumb-NN.jpg` files and that is not negotiable.)*
 
 ## Inputs you need
 
@@ -80,7 +82,7 @@ python scripts/build_gallery.py \
   --title "<Condition display name, exactly as in DATA>" \
   --titles-file titles.json
 ```
-This renders every page to `assets/<id>/<id>-NN.jpg` (180 dpi), builds `thumb-NN.jpg` (520 px
+This renders every page to `assets/<id>/<id>-NN.jpg` (180 dpi), builds `thumb-NN.jpg` (320 px
 wide, downscaled — never cropped), assembles a **compact** `assets/<id>/<id>-gallery.pdf` from
 those rendered pages, inserts/updates the `GALLERIES["<id>"]` entry in `index.html`, **and adds
 the id to the app's `REALGAL` set**. That last part matters: the app renders real artwork only for
@@ -125,7 +127,9 @@ errors.
 
 ## Asset specifications (encoded in the script — keep them consistent)
 - Full pages: rendered at **180 dpi**, JPEG quality **88** (≈1280×1920 for a 512×768pt page).
-- Thumbnails: **520 px wide**, aspect preserved, JPEG quality 82 — **downscaled, never cropped**.
+- Thumbnails: **320 px wide**, aspect preserved, JPEG quality 82 — **downscaled, never cropped**.
+  320 is set by the largest place a thumb renders: the 10-image grid inside a condition gallery,
+  424 device px on an iPad. Real thumbnail files are mandatory — never point `thumb` at `file`.
 - Naming: `assets/<id>/<id>-NN.jpg`, `thumb-NN.jpg`, `<id>-gallery.pdf` (NN is 1-based, 2 digits).
 - The `GALLERIES` entry shape:
   ```

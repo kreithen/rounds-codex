@@ -186,7 +186,7 @@ function abLink(text,call){ return '<a href="#" class="ab-jump" onclick="'+call+
    State lives outside the render because paint() rebuilds the whole view: gxMode survives a
    re-render, and the search box is repopulated from gxTerm. 340 images is a lot for one page,
    so every thumbnail is lazy + async-decoded and only fetches as you reach it. */
-var gxMode='spec', gxTerm='';
+var gxMode='spec', gxTerm='', gxWarned=0;
 
 function gxSetMode(m){ gxMode=m; gxRender();
   var seg=document.querySelector('.gx-seg');
@@ -217,6 +217,15 @@ function gxRender(){
   var host=document.getElementById('gxlist'); if(!host) return;
   var term=gxTerm.trim().toLowerCase();
   var ids=Object.keys(GALLERIES).filter(function(id){ return byId[id] && REALGAL.has(id); });
+
+  /* A gallery whose id has no matching condition can never appear here. That is exactly what a
+     mistyped id looks like too, so say it once in the console instead of dropping it silently. */
+  if(!gxWarned){ gxWarned=1;
+    Object.keys(GALLERIES).forEach(function(id){
+      if(REALGAL.has(id) && !byId[id]) console.warn('galleries: no condition "'+id+'" — gallery hidden');
+    });
+  }
+
   if(term) ids=ids.filter(function(id){
     return byId[id].name.toLowerCase().indexOf(term)>=0 ||
            byId[id].category.toLowerCase().indexOf(term)>=0;

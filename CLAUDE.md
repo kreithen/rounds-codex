@@ -55,6 +55,10 @@ no backend. This file is context for future sessions — read it before starting
   `content/galleries.json`). **`base` is not uniform on the live site** — see the warning in
   `app-integration-queue.md`; match the existing value for that id or repoint it deliberately.
   `gframe(id,i,mini)` uses `base+thumb` for the grid, `base+file` for the viewer (`openViewer`).
+  **Thumbnails are always real files — never point `thumb` at `file`.** 26 galleries shipped that
+  way to save upload file count and the galleries index (340 thumbs at once) ended up pulling
+  78 MB; `scripts/gen_thumbs.py` + `scripts/repoint_thumbs.js` moved them to a flat root-level
+  `gthumbs/<id>-NN.jpg` set at 320 px q82 (12 MB). See `app-integration-queue.md`.
 - **Quizzes**: `QUIZZES={ "<id>": {condition, questions:[{q, ch:[...], correct, exp,
   pearl?, why?:[...], img?:[N]}]} }`. Having `QUIZZES[id]` auto-enables the "Take the Quiz"
   button in `detailHTML`. `img:[N]` links a question to gallery image N. `why[i]` shows on a
@@ -122,8 +126,8 @@ no backend. This file is context for future sessions — read it before starting
     an outer wrapper (e.g. `dvt-upload`) nests everything under that wrapper — a real bug we hit.
   - Multiple zips that each contain a same-named top folder (`assets/`, `usmle/`) will **merge on
     extract** — give each a unique parent folder to avoid it.
-  - Thumbnails were dropped from the 5 Cardiology galleries (grid reuses full images) to cut file
-    count from 105 → 55; GALLERIES `thumb` == `file` for those ids.
+  - Thumbnails were dropped from 26 galleries (grid reused the full images) to cut the file count.
+    Undone 2026-07-27 — see the `gthumbs/` note above; don't trade thumbnails for file count again.
 - After upload, Netlify auto-deploys (~1 min); load the live site and spot-check.
 
 ## Status docs

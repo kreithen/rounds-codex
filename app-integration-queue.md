@@ -387,12 +387,40 @@ to become App Store review latency for every typo. Content now loads from `conte
   with new JSON, or vice versa, still works — but shipping `index.html` alone the first time
   leaves the app with no content at all.
 
+## Gallery thumbnails — the `thumb == file` shortcut, undone 2026-07-27
+26 of the 34 galleries (21 endocrine/pulmonary + the 5 cardiology) were built by the ad-hoc batch
+pipeline, which set `thumb === file` on purpose: it halved the number of files the user had to
+drag into GitHub, and at the time only ten thumbnails were ever on screen. The new galleries
+index renders **340 at once**, which turned that into ~78 MB of full-size page scans (avg 308 kB)
+to fill 81×108 css boxes, and left every condition gallery carrying 3.0 MB for its own grid.
+
+**Fix (built, verified, awaiting upload — `deliver16/`):**
+- `scripts/gen_thumbs.py` → one flat set at site root, `gthumbs/<id>-NN.jpg`, **320 px wide q82**.
+  Flat because the affected galleries live in three different places; pooling gives one upload
+  destination and one path shape. 270 files (Diabetes Insipidus included, ready for its upload).
+- `scripts/repoint_thumbs.js` → rewrites the `GALLERIES` literal: `thumb` → `gthumbs/<id>-NN.jpg`
+  for the 26, and for the 5 cardiology entries moves the `<id>-upload/assets/<id>/` prefix out of
+  `base` and into each `file` so `base` is uniformly `''`. Asserts every full-image URL, title and
+  key order is unchanged before writing. The 8 `build_gallery.py` galleries are untouched.
+- Result: **78 MB → 12 MB** across the 260 images; one condition gallery 3.0 MB → 0.42 MB.
+- Width chosen from the *largest* render, the in-gallery grid at 424 device px on an iPad — not
+  the index. 260/320/440 px compared side by side at real render size: 320 is indistinguishable
+  from the full image, 260 softens on dense text pages.
+- **Upload order matters:** the three `gthumbs` drags first, `index.html` last.
+- `build_gallery.py` always wrote real `thumb-NN.jpg` files, so nothing built through the skill
+  was ever affected; its default is now 320 px and the "reuse full images as thumbs" question has
+  been removed from the skill so this cannot recur.
+- Also in this build: `gxRender()` now `console.warn`s once for any `REALGAL` gallery whose id has
+  no matching condition (previously such a gallery was silently dropped from the index).
+
 ### ⚠️ Live asset paths are NOT under `assets/` — read before touching galleries
 GitHub web uploads have nested wrong twice, and `index.html` was patched to match reality
 rather than moving files:
 - **Cardiology (5):** `base: "dvt-upload/assets/<id>/"` (nested one level too deep)
 - **Pulmonary (8):** `base: "<id>/"` — condition folders sit at the **repo root**, not in
   `assets/`. The `assets/` wrapper was dropped during the drag.
+- After the thumbnail repoint above, all 26 of those have `base: ""` and carry the prefix in
+  `file`; their thumbs come from `gthumbs/` regardless.
 Any future gallery work must match the existing `base` for that id, or repoint it deliberately.
 Optional cleanup (not done): consolidate everything under `assets/` and regenerate `index.html`.
 
