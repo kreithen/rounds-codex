@@ -712,3 +712,44 @@ border weight, so both render at 28 px and read as a pair.
 That title comes from the page the recipient's phone fetches, and `/c/<id>` is a rewrite to the
 same `index.html` for all 181. Per-route `<meta>` needs a Netlify function or prerender — a
 separate job if it is worth doing.
+
+### 6. Self-hosted fonts + `RC_SHARE_ORIGIN` (`c93cf20`, `5fda0f5`)
+The two portability items worth doing on the web rather than saving for the native build,
+because both ship to the live site and get exercised immediately.
+
+**Fonts.** `index.html` loaded Inter and Oswald from `fonts.googleapis.com` — the app's only
+cross-origin request, and `sw.js` skips cross-origin by design, so typography was the single
+thing it could never cache. Now six woff2 in `fonts/` (136 kB), precached in `CORE`, `CACHE`
+bumped to **v9**. Inter latin + Oswald latin (70 kB) are preloaded; `crossorigin` is required on
+those preloads even same-origin, or the file downloads twice.
+
+**Files, not base64.** `build_fonts.py` used to inline. That put ~160 kB of incompressible
+base64 in `index.html`, which changes on every code deploy while the fonts change never.
+
+**The subset nobody had noticed was missing.** Google's `latin` subset contains no `→ ≥ ≤ ₂ ⁺`.
+`→` appears **585 times** in the content and every one was rendering in a system font
+mid-sentence. There is now an Inter `symbols` face built with the `&text=` API. Its
+unicode-range is derived from the file's real cmap **and made disjoint from the other faces** —
+Google's subsetter always includes `U+0020` and `U+003D`, and overlapping ranges resolve
+last-wins, so declaring them verbatim would have made every space in the app block on a 9 kB
+download.
+
+**Two characters stay uncovered** because Inter has no glyph: `∝` (Croup, Poiseuille) and `≫`
+(vascular resident set), once each. Listed as accepted in the audit rather than rewritten —
+they are correct notation.
+
+**`scripts/audit_font_coverage.py` is the real deliverable.** It reads the shipped `@font-face`
+block out of `index.html` (not the build intermediate, which could drift), scans `index.html`
+plus every content JSON, and exits 1 on any character no subset covers. **Run it after any
+content change** — the failure is silent, just a wrong-looking letter.
+
+**`RC_SHARE_ORIGIN`** was read by `shareApp()` and `rcShare()` and defined by neither, so both
+fell back to the serving origin. Harmless live, wrong from a deploy preview, and broken from a
+native bundle (`capacitor://localhost`). Now pinned, with a note to change it when
+`roundscodex.com` takes over.
+
+**Two sandbox facts worth keeping:** Chromium here does **not** use the agent proxy but `curl`
+and Python do — a page-load `ERR_CONNECTION_RESET` for an external host proves nothing, which is
+how the Google dependency stayed invisible. And `document.fonts.check()` returns false for a
+face that matches but has not loaded, so glyph coverage must be asserted with
+`await document.fonts.load(font, char)`.

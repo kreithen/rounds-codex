@@ -12,7 +12,7 @@ no backend. This file is context for future sessions — read it before starting
   `/workspace/rounds-codex-app`. The GitHub MCP stays scoped to `rounds-codex`, so use plain
   `git` against the clone, not MCP calls.
 - **The live site itself is still unreachable** — the agent proxy 403s rounds-codex.netlify.app.
-  To verify a deploy, clone the app repo and serve it with `scratchpad/netlifysim.js`: same bytes
+  To verify a deploy, clone the app repo and serve it with `scripts/netlifysim.js`: same bytes
   Netlify publishes, and it covers the galleries whose images exist only in that repo.
 - **Deploy path** was the user's Chrome web-upload to `rounds-codex-app` `main`; with `add_repo`
   push access we can now commit directly. Either way, **verify after**: their manual upload of
@@ -61,6 +61,16 @@ no backend. This file is context for future sessions — read it before starting
   bar on the visible condition, `replaceState` only. The router exposes `RC_ROUTE_BOOT`, which
   the content loader calls once `byId` is populated — **share links must be added before the
   content split**, or `split_content.js` fails with "router boot wiring: found 0 occurrences".
+- **Fonts are self-hosted** (`fonts/*.woff2`, 6 faces, 136 kB, precached in `CORE`). Built by
+  `scripts/build_fonts.py`, applied by `scripts/self_host_fonts.js`. **Never point them back at
+  `fonts.googleapis.com`** — `sw.js` skips cross-origin, so that was the one thing it could
+  never cache. There is an Inter **`symbols`** face because Google's `latin` subset has no
+  `→ ≥ ≤ ₂ ⁺` — `→` alone appears 585× and was silently falling back. **Run
+  `python3 scripts/audit_font_coverage.py <site-root>` after any content change**: an
+  uncovered character does not error, it just renders in the wrong font mid-sentence.
+- **`RC_SHARE_ORIGIN`** is the origin a *shared link* points at (pinned to the public site),
+  as distinct from `RC_ROOT`, which is where assets load from. Change it when
+  `roundscodex.com` becomes canonical.
 - **Share button** — on every condition page beside the ICD-10 pill, added by
   `scripts/add_share_button.js`. `rcShare(id)` calls `navigator.share` **synchronously from
   the tap** (Safari rejects a share that has left the gesture) with `{title, text, url}` —
@@ -150,14 +160,22 @@ no backend. This file is context for future sessions — read it before starting
   `playwright-core` + Chromium at `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`
   (`--no-sandbox`). Drive the app via `page.evaluate(()=>go('gallery','dvt'))` etc.; assert
   `.gthumb` counts, `img.naturalWidth>0`, viewer opens, quiz loads, **zero pageerrors**.
-  Serve the tree with `netlifysim.js <ROOT> <PORT>` (positional args) — it does the `/c/*`
-  rewrite, so share links and the service worker behave as they do on Netlify.
+  Serve the tree with `scripts/netlifysim.js <ROOT> <PORT>` (positional args) — it does the
+  `/c/*` rewrite and sends the right MIME types, so share links, fonts and the service worker
+  behave as they do on Netlify.
 - **The strongest check for a mechanical change is a side-by-side.** Serve the old and new
   builds on two ports, drive both through the same script, and compare `.app` `innerHTML` —
   the content split was proved that way over sixteen views plus every content global
   serialised. It catches what an assertion you thought to write would not.
 - Parse-check: extract inline `<script>` (no `src`) blocks and `new Function(code)`.
-- `node scripts/verify_sw.js <sw.js>` unit-tests the service worker's cache-read guard.
+- `node scripts/verify_sw.js <sw.js>` unit-tests the service worker's cache-read guard and
+  asserts `CORE` still covers all 7 content files and all 6 fonts.
+- **Chromium does not use the agent proxy; `curl` and Python do.** A page load showing
+  `ERR_CONNECTION_RESET` for an external host does not mean the host is unreachable from the
+  sandbox — that is how the Google Fonts dependency stayed invisible.
+- **`document.fonts.check()` is false for a face that matches but has not loaded yet.** To
+  assert a glyph is covered, `await document.fonts.load(font, char)` and check the result is
+  non-empty.
 - Note: JS string escapes like `←`/`—` are valid and render as ←/— — leave as-is.
 - **A quiz-driving test must use `dvt`, not `dka`** — DKA has no quiz, and `go('quiz','dka')`
   throws. Cards are selected by `data-id`, not by an `onclick` attribute.

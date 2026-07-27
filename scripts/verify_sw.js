@@ -67,10 +67,17 @@ function load({ bodyReadFails, empty, networkUp }) {
   r = await x.sandbox.readCached({});
   ok(r === undefined, 'an unreadable asset resolves to undefined (a broken image, not a dead page)');
 
-  // 5. the cache version is the one the app precaches under
+  // 5. CORE covers everything the app cannot boot without. Deliberately not pinned to a
+  //    version number -- bumping CACHE is a normal part of a release and must not fail here.
   ({ sandbox } = load({ networkUp: true }));
-  ok(sandbox.CACHE_ === 'rounds-codex-v8', `CACHE is ${sandbox.CACHE_}`);
-  ok(sandbox.CORE_.filter(u => u.startsWith('./content/')).length === 7, `CORE precaches all 7 content files (${sandbox.CORE_.filter(u => u.startsWith('./content/')).length})`);
+  ok(/^rounds-codex-v\d+$/.test(sandbox.CACHE_), `CACHE is versioned: ${sandbox.CACHE_}`);
+  const core = sandbox.CORE_;
+  const content = core.filter(u => u.startsWith('./content/'));
+  const fonts = core.filter(u => u.startsWith('./fonts/'));
+  ok(content.length === 7, `CORE precaches all 7 content files (${content.length})`);
+  ok(fonts.length === 6, `CORE precaches all 6 font files (${fonts.length}) — without these, offline typography falls back`);
+  ok(core.includes('./index.html') && core.includes('./'), 'CORE precaches the shell itself');
+  ok(new Set(core).size === core.length, 'no duplicate CORE entries (addAll would still work, but it is a sign of a bad merge)');
 
   console.log('\n' + (fail.length ? 'FAILED: ' + fail.length : 'ALL CHECKS PASSED'));
   process.exit(fail.length ? 1 : 0);
