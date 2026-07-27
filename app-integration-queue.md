@@ -430,9 +430,10 @@ so the header does not jump while swiping. Asserted: outside the header's left c
 is byte-identical to a plain re-encode of the original.
 
 ### Source defects reported to the user (re-render, not blocking)
-- **Page 5** — "KEY TAKEAWAY" rendered as two garbled overlapping strings; footer uses the wrong
-  template (wrong title, and a "Look for: Stones/Bones/Groans/Moans" strip in place of the
-  Difficulty / Clinical Source / Review fields).
+- ~~**Page 5**~~ — "KEY TAKEAWAY" rendered as two garbled overlapping strings; footer uses the
+  wrong template (wrong title, and a "Look for: Stones/Bones/Groans/Moans" strip in place of the
+  Difficulty / Clinical Source / Review fields). The user reviewed it and chose to ship as-is,
+  including the Chvostek/Trousseau placement. **Gallery 35 is fully signed off.**
 - ~~**Page 8**~~ — RESOLVED: the user re-rendered it; the clean version is in the build.
 - ~~**Page 9**~~ — the histology panel carries page 8's surgical checklist and PTH-drop graph.
   The user reviewed it and chose to ship as-is.
