@@ -395,10 +395,21 @@ Attaches to `gerd` (Gastrointestinal, K21.9). Second GI gallery. Ten pages at 10
   "Rounds" form, the other eight had the Rx split off in front. All ten missing the lens flare.
 - Page 1 has no subtitle of its own, so its title was written rather than read off the page.
 
-### Source defects reported (re-render, not blocking)
-- **Page 2** — heading reads "ANTI-REFLUX **SUPPOCH** STRUCTURES" (SUPPORT).
-- **Page 9** — "Antacids (quick **releif**)".
-- **Page 5** — "**Bule** out cardiac or chest pain and cough" (Rule; also a missing word).
+### Source defects
+**The three typos are FIXED in-place** (`scripts/retouch_text.py`, spec in
+`galleries-staging/gerd-text-edits.json`) rather than re-rendered:
+- **Page 2** — "ANTI-REFLUX **SUPPOCH** STRUCTURES" → SUPPORT. R and T lifted from
+  "STRUCTURES" in the same heading.
+- **Page 9** — "(quick **releif**)" → relief. The e and i simply swap places.
+- **Page 5** — "**Bule** out cardiac **or** chest pain..." → "**Rule** out cardiac **causes of**
+  chest pain...". R from "Reflux" two panels up; "causes of" assembled from letters on the same
+  bullet, its neighbour, and the "of" in "Reflux of acid".
+
+Every glyph is one the page already contained, so face/size/weight/colour/antialiasing match by
+construction — no substitute font is involved. The technique and its two traps (flat fills read
+as boxes; a glyph box carries its own background) are documented in the script.
+
+Still needing a re-render (cannot be retouched):
 - **Dot progress row wrong on 9 of 10 pages.** Pages 1 and 10 render only **nine** dots; pages
   2,3,4,6,7,8,9 highlight the wrong position (off by one or two). Only page 5 is right. The
   "IMAGE n OF 10" text is correct everywhere. PUD's dots were all correct, so this is a
