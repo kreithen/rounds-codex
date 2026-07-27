@@ -387,6 +387,24 @@ to become App Store review latency for every typo. Content now loads from `conte
   with new JSON, or vice versa, still works — but shipping `index.html` alone the first time
   leaves the app with no content at all.
 
+## Gallery 37 — GERD (built & verified 2026-07-27, awaiting upload)
+Attaches to `gerd` (Gastrointestinal, K21.9). Second GI gallery. Ten pages at 1024x1536, avg
+457 kB. Same layout as 35/36.
+
+- Logo fault was **mixed within one gallery** for the first time: pages 1 and 3 had the correct
+  "Rounds" form, the other eight had the Rx split off in front. All ten missing the lens flare.
+- Page 1 has no subtitle of its own, so its title was written rather than read off the page.
+
+### Source defects reported (re-render, not blocking)
+- **Page 2** — heading reads "ANTI-REFLUX **SUPPOCH** STRUCTURES" (SUPPORT).
+- **Page 9** — "Antacids (quick **releif**)".
+- **Page 5** — "**Bule** out cardiac or chest pain and cough" (Rule; also a missing word).
+- **Dot progress row wrong on 9 of 10 pages.** Pages 1 and 10 render only **nine** dots; pages
+  2,3,4,6,7,8,9 highlight the wrong position (off by one or two). Only page 5 is right. The
+  "IMAGE n OF 10" text is correct everywhere. PUD's dots were all correct, so this is a
+  regression in this render rather than the template.
+- Page 2's anatomy legend lists 7 numbered items but the diagram only carries markers 1-6.
+
 ## Gallery 36 — Peptic Ulcer Disease (built & verified 2026-07-27, awaiting upload)
 Attaches to `pud` (Gastrointestinal, K27.9). **First GI gallery** — the galleries index gains a
 new GASTROINTESTINAL section. Ten pages at native 1024x1536, avg 421 kB. Same layout as gallery
@@ -402,11 +420,11 @@ new GASTROINTESTINAL section. Ten pages at native 1024x1536, avg 421 kB. Same la
   on all ten.
 
 ### Source defects reported (re-render, not blocking)
-- **Page 1** — the anatomy diagram's two callouts *both* read "Gastric ulcer"; the "(more
-  common)" one points at the duodenal bulb and should say "Duodenal ulcer". Page 2 labels the
-  same structures correctly.
-- **Page 7** — barium panel says the gastric ulcer niche is along the **greater** curvature; it
-  is classically the lesser curvature, which pages 2 and 5 of this same gallery state.
+- ~~**Page 1**~~ — the anatomy diagram's two callouts *both* read "Gastric ulcer"; the "(more
+  common)" one points at the duodenal bulb and should say "Duodenal ulcer".
+- ~~**Page 7**~~ — barium panel places the gastric ulcer niche on the **greater** curvature; it
+  is classically the lesser, which pages 2 and 5 of this same gallery state.
+- Both reviewed by the user, who chose to ship as-is. **Gallery 36 is signed off.**
 
 ## Gallery 35 — Hyperparathyroidism (built & verified 2026-07-27, awaiting upload)
 Attaches to the existing condition `hyperparathyroid` (Endocrine, E21.3 — matches the ICD-10 on
@@ -453,7 +471,7 @@ to fill 81×108 css boxes, and left every condition gallery carrying 3.0 MB for 
 
 **Fix (built, verified, awaiting upload — `deliver16/`):**
 - `scripts/gen_thumbs.py` → one flat set at site root, `gthumbs/<id>-NN.jpg`, **320 px wide q82**.
-  (290 files once galleries 35 and 36 are included — all merged into one upload.)
+  (300 files with galleries 35-37 included — all merged into one upload, 4 drags of 75.)
   Flat because the affected galleries live in three different places; pooling gives one upload
   destination and one path shape. 270 files (Diabetes Insipidus included, ready for its upload).
 - `scripts/repoint_thumbs.js` → rewrites the `GALLERIES` literal: `thumb` → `gthumbs/<id>-NN.jpg`
