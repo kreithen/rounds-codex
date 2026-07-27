@@ -412,9 +412,9 @@ is byte-identical to a plain re-encode of the original.
 - **Page 5** — "KEY TAKEAWAY" rendered as two garbled overlapping strings; footer uses the wrong
   template (wrong title, and a "Look for: Stones/Bones/Groans/Moans" strip in place of the
   Difficulty / Clinical Source / Review fields).
-- **Page 8** — "MEDICAL MANAGEMENT (NON-SURGICAL CANDIDATES OR BRIDGE THERAPY)" has a second
-  string rendered over itself.
-- **Page 9** — the histology panel carries page 8's surgical checklist and PTH-drop graph.
+- ~~**Page 8**~~ — RESOLVED: the user re-rendered it; the clean version is in the build.
+- ~~**Page 9**~~ — the histology panel carries page 8's surgical checklist and PTH-drop graph.
+  The user reviewed it and chose to ship as-is.
 - Clinical note: page 5 leads Physical Examination with Chvostek/Trousseau, which are
   *hypo*calcaemia signs and should be negative in untreated primary HPT.
 
