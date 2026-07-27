@@ -7,11 +7,18 @@ no backend. This file is context for future sessions — read it before starting
 - **`rounds-codex` (this repo, PUBLIC)** — the dev/build repo: question banks, illustrations,
   staging materials, build tools, docs. Safe to commit here.
 - **`rounds-codex-app` (PRIVATE, separate)** — the LIVE site → https://rounds-codex.netlify.app
-  (Netlify auto-deploys from its `main`). This workspace is **firewalled** from it, and the
-  GitHub MCP is scoped to `rounds-codex` only, so we **cannot push to it directly**. `add_repo`
-  for it requires an approval the user's surface can't grant.
-- **Deploy path = the user's Chrome web-upload** to `rounds-codex-app` `main`. We build/verify
-  here, then hand the user files to upload. See "Deploying" below.
+  (Netlify auto-deploys from its `main`). **`add_repo` works** (2026-07-27): `access:"read"` was
+  granted with no prompt, `access:"push"` after one approval. Clone to
+  `/workspace/rounds-codex-app`. The GitHub MCP stays scoped to `rounds-codex`, so use plain
+  `git` against the clone, not MCP calls.
+- **The live site itself is still unreachable** — the agent proxy 403s rounds-codex.netlify.app.
+  To verify a deploy, clone the app repo and serve it with `scratchpad/netlifysim.js`: same bytes
+  Netlify publishes, and it covers the galleries whose images exist only in that repo.
+- **Deploy path** was the user's Chrome web-upload to `rounds-codex-app` `main`; with `add_repo`
+  push access we can now commit directly. Either way, **verify after**: their manual upload of
+  2026-07-27 put 310 thumbnails three folders too high and every one 404'd.
+- **Packaging rule learned the hard way:** when a drag has to land in `<dir>/`, name *every* part
+  folder `<dir>` — not `part1`, `part2`. A wrapper named anything else will get dragged as-is.
 
 ## `applive/` — the live app working copy (gitignored, NEVER commit)
 - `applive/index.html` is a LOCAL copy of the private live app's single ~6 MB `index.html`

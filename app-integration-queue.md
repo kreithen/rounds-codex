@@ -387,6 +387,37 @@ to become App Store review latency for every typo. Content now loads from `conte
   with new JSON, or vice versa, still works — but shipping `index.html` alone the first time
   leaves the app with no content at all.
 
+## UPLOAD LANDED 2026-07-27 — verified against the live repo, one fix pushed
+**Direct read+push access to `kreithen/rounds-codex-app` now works via `add_repo`.** The CLAUDE.md
+note that this workspace is firewalled from it is out of date: `add_repo` with `access:"read"` was
+granted without an approval prompt, `access:"push"` after one. The live *site* is still
+unreachable (proxy 403s rounds-codex.netlify.app), but the repo can be cloned to
+`/workspace/rounds-codex-app` and served locally with `netlifysim.js`, which is a better check —
+it exercises the exact bytes Netlify publishes, including the 8 cardiology galleries that had
+never been verifiable from here.
+
+Audit of the user's upload (commit `1452199`):
+- `index.html` — byte-identical to the shipped build. 39 galleries, 390 images.
+- 50 new gallery pages, 50 replacement images (hyperlipidemia crop + 4 cardiology logo passes) —
+  all hash-identical.
+- **310 thumbnails landed in `part1/gthumbs/`, `part2/`, `part3/`, `part4/`** instead of
+  `gthumbs/`, so every one 404'd and the galleries index rendered placeholders.
+
+**My packaging caused it.** The bundle named the folders `part1`-`part4` and only `part1`
+contained a folder called `gthumbs`; parts 2-4 had no correctly-named folder to drag at all.
+The README warned about exactly this trap. **Next time: name every part folder `gthumbs`.**
+
+Fixed in `bc5818c` — 310 renames, all R100, no image data touched. Re-verified after the push:
+39 galleries, 390 thumbnails, **zero broken**, all 780 referenced paths resolve, 181 conditions,
+zero page errors.
+
+### Noted, not touched (needs the user's say-so)
+- `assets 3/` — 26 MB, 88 files (ards, asthma, cap, copd, lung-cancer, pe, pneumothorax, tb) from
+  an old mis-drag. Nothing references it.
+- `rounds-codex-repo/` — contains only a `.gitignore`.
+- The 8 `build_gallery.py` galleries still carry 440-520 px thumbs (6.5 MB for 80 files); at the
+  current 320 px standard they would be ~3.6 MB.
+
 ## MORNING UPLOAD QUEUE (assembled 2026-07-27) — everything outstanding, one set
 Supersedes every earlier zip. Four zips, nine drags, `index.html` last.
 
