@@ -241,6 +241,28 @@ reached coherently: mode toggle (or home swipe) → RESIDENT SPECIALTIES.
   split+persistence build. On a base without `RC_STORE` the study-activity block and the
   clear-data button are simply omitted.
 
+#### Galleries page rebuilt 2026-07-27 (`deliver14`, one file)
+- **All ten thumbnails per gallery**, 5-across (4 under 380px), each opening `openViewer(id,i)`
+  at that image — `openViewer` sets `GID`/`gcur` itself so it works from outside the gallery view.
+  340 thumbnails total.
+- **Specialty / Alphabetical toggle** (`gxMode`, default `spec`) and a **search box** (`gxTerm`,
+  matches condition name *or* category). State lives outside the render because `paint()`
+  rebuilds the view; the dispatch calls `gxRender()` after setting `innerHTML`.
+- Gallery name row still opens the full gallery. Empty state names the failed search term.
+- ⚠️ **DATA WEIGHT — the page is expensive.** 21 galleries use the full image as their thumbnail
+  (`thumb == file`, from the decision to halve the upload file count). Measured locally:
+  **210 images = 70.2 MB, avg 326 kB**, each rendered into an 81×108 px box. With the cardiology
+  galleries the full index is roughly **85 MB** if scrolled end to end. Lazy loading limits this
+  to what the user actually scrolls past, and search/toggle narrow it (one condition ≈ 3 MB),
+  but it should be fixed.
+  **Fix, offered and not yet done:** re-encode real thumbnails (~160×240 @ q80 ≈ 12 kB) from the
+  local originals → those 210 drop to **~2.5 MB**, and every per-condition gallery gets ~10×
+  lighter too. Cost is ~210 new image files to upload (3 drags), which is why it was not bundled
+  into a one-file deploy.
+- Verified: both grouping modes and sort order, search by name and category, empty state, mode
+  persistence across leaving the page, thumbnail → correct viewer image, name row → gallery,
+  both back paths, 9 regression checks, zero page errors, additive against the base.
+
 #### All Galleries button + new mission copy 2026-07-26 (`deliver12`, one file)
 - **`.allgal`** — white pill reading **"All Image Galleries"**, centred, injected after the mode banners
   and before `#chips`, so each mode's own CTA stays first and the condition list is not pushed

@@ -79,7 +79,7 @@ replaceOnce(
  else if(r.v==='account'){s.innerHTML=accountHTML();}
  else if(r.v==='terms'){s.innerHTML=legalHTML('terms');}
  else if(r.v==='privacy'){s.innerHTML=legalHTML('privacy');}
- else if(r.v==='galleries'){s.innerHTML=galleriesHTML();}`,
+ else if(r.v==='galleries'){s.innerHTML=galleriesHTML();gxRender();}`,
   'paint() dispatch for the four views');
 
 /* Keep About lit in the bottom bar while you are inside any of its sub-pages. */
@@ -179,40 +179,102 @@ function abGoUsmle(){ setMode('medical'); location.href=(window.RC_ROOT||'')+'us
 function abGoResident(){ setMode('resident'); root('res'); }
 function abLink(text,call){ return '<a href="#" class="ab-jump" onclick="'+call+';return false;">'+text+'</a>'; }
 
-/* Every gallery in one place. 34 sets of original artwork were previously reachable only by
-   opening conditions one at a time, which made the most expensive content the hardest to
-   find. Grouped by specialty so it reads like the library. */
-function galleriesHTML(){
-  var ids=Object.keys(GALLERIES).filter(function(id){ return byId[id] && REALGAL.has(id); });
-  ids.sort(function(a,b){
-    var ca=byId[a].category, cb=byId[b].category;
-    if(ca!==cb) return ORDER.indexOf(ca)-ORDER.indexOf(cb);
-    return byId[a].name.localeCompare(byId[b].name);
-  });
-  var pages=ids.reduce(function(n,id){ return n+GALLERIES[id].images.length; },0);
-  var out='', lastCat=null;
-  ids.forEach(function(id){
-    var g=GALLERIES[id], d=byId[id], im=g.images[0];
-    if(d.category!==lastCat){
-      if(lastCat!==null) out+='</div>';
-      var pair=sec(d.category);
-      out+='<div class="gx-sec" style="--sec:'+pair[0]+';--sec2:'+pair[1]+'">'+
-           '<div class="gx-cat">'+d.category.toUpperCase()+'</div><div class="gx-list">';
-      lastCat=d.category;
-    }
-    out+='<div class="gx-row" onclick="go(\'gallery\',\''+id+'\')" role="button" tabindex="0">'+
-      '<div class="gx-thumb"><img loading="lazy" src="'+g.base+im.thumb+'" alt="" '+
-        'onerror="gimgerr(this,\''+id+'\',\''+im.thumb+'\')"></div>'+
-      '<div class="gx-meta"><b>'+d.name+'</b><span>'+g.images.length+' images &middot; '+d.icd10+'</span></div>'+
-      '<span class="gx-go">'+abIcon('<path d="M9 6l6 6-6 6"/>')+'</span></div>';
-  });
-  if(lastCat!==null) out+='</div></div>';
+/* Every gallery in one place, with all ten thumbnails each. 34 sets of original artwork were
+   previously reachable only by opening conditions one at a time, which made the most
+   expensive content the hardest to find.
 
+   State lives outside the render because paint() rebuilds the whole view: gxMode survives a
+   re-render, and the search box is repopulated from gxTerm. 340 images is a lot for one page,
+   so every thumbnail is lazy + async-decoded and only fetches as you reach it. */
+var gxMode='spec', gxTerm='';
+
+function gxSetMode(m){ gxMode=m; gxRender();
+  var seg=document.querySelector('.gx-seg');
+  if(seg) [].forEach.call(seg.children,function(b){ b.classList.toggle('on', b.dataset.m===m); });
+}
+function gxSearch(v){ gxTerm=v||''; gxRender(); }
+
+function gxThumbs(id){
+  var g=GALLERIES[id];
+  return '<div class="gx-thumbs">'+g.images.map(function(im,i){
+    return '<button class="gx-th" onclick="openViewer(\'' + id + '\','+i+')" '+
+      'aria-label="Image '+(i+1)+': '+String(im.title||'').replace(/"/g,'') + '">'+
+      '<img loading="lazy" decoding="async" src="'+g.base+im.thumb+'" alt="" '+
+      'onerror="gimgerr(this,\'' + id + '\',\'' + im.thumb + '\')"></button>';
+  }).join('')+'</div>';
+}
+
+function gxBlock(id){
+  var g=GALLERIES[id], d=byId[id];
+  return '<div class="gx-gal">'+
+    '<button class="gx-name" onclick="go(\'gallery\',\'' + id + '\')">'+
+      '<span><b>'+d.name+'</b><i>'+g.images.length+' images &middot; '+d.icd10+'</i></span>'+
+      abIcon('<path d="M9 6l6 6-6 6"/>')+'</button>'+
+    gxThumbs(id)+'</div>';
+}
+
+function gxRender(){
+  var host=document.getElementById('gxlist'); if(!host) return;
+  var term=gxTerm.trim().toLowerCase();
+  var ids=Object.keys(GALLERIES).filter(function(id){ return byId[id] && REALGAL.has(id); });
+  if(term) ids=ids.filter(function(id){
+    return byId[id].name.toLowerCase().indexOf(term)>=0 ||
+           byId[id].category.toLowerCase().indexOf(term)>=0;
+  });
+
+  if(!ids.length){
+    host.innerHTML='<div class="empty">No galleries match &ldquo;'+
+      gxTerm.replace(/[<>&]/g,'')+'&rdquo;.</div>';
+    return;
+  }
+
+  var pages=ids.reduce(function(n,id){ return n+GALLERIES[id].images.length; },0);
+  var head='<div class="gx-count"><b>'+ids.length+'</b> '+(ids.length===1?'gallery':'galleries')+
+           ' &middot; '+pages+' images</div>';
+
+  var out='', last=null;
+  if(gxMode==='alpha'){
+    ids.sort(function(a,b){ return byId[a].name.localeCompare(byId[b].name); });
+    ids.forEach(function(id){
+      var L=byId[id].name.charAt(0).toUpperCase();
+      if(L!==last){ if(last!==null) out+='</div>';
+        out+='<div class="gx-sec gx-alpha"><div class="gx-cat">'+L+'</div>'; last=L; }
+      out+=gxBlock(id);
+    });
+  } else {
+    ids.sort(function(a,b){
+      var ca=byId[a].category, cb=byId[b].category;
+      if(ca!==cb) return ORDER.indexOf(ca)-ORDER.indexOf(cb);
+      return byId[a].name.localeCompare(byId[b].name);
+    });
+    ids.forEach(function(id){
+      var d=byId[id];
+      if(d.category!==last){ if(last!==null) out+='</div>';
+        var pair=sec(d.category);
+        out+='<div class="gx-sec" style="--sec:'+pair[0]+';--sec2:'+pair[1]+'">'+
+             '<div class="gx-cat">'+d.category.toUpperCase()+'</div>'; last=d.category; }
+      out+=gxBlock(id);
+    });
+  }
+  if(last!==null) out+='</div>';
+  host.innerHTML=head+out;
+}
+
+function galleriesHTML(){
+  var total=Object.keys(GALLERIES).filter(function(id){ return byId[id]&&REALGAL.has(id); }).length;
   return '<div class="pad about galleries">'+
-    aboutHead('Image galleries', ids.length+' galleries &middot; '+pages+' pages of original artwork')+
-    '<p class="ab-fine" style="margin:-4px 0 16px">Every illustrated gallery in Rounds Codex. '+
-    'Tap one to open it; pinch or double-tap any image to zoom.</p>'+
-    out+
+    aboutHead('Image galleries', total+' galleries of original artwork')+
+    '<div class="gx-seg">'+
+      '<button class="gx-tab'+(gxMode==='spec'?' on':'')+'" data-m="spec" onclick="gxSetMode(\'spec\')">Specialty</button>'+
+      '<button class="gx-tab'+(gxMode==='alpha'?' on':'')+'" data-m="alpha" onclick="gxSetMode(\'alpha\')">Alphabetical</button>'+
+    '</div>'+
+    '<div class="gx-find">'+
+      abIcon('<circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/>')+
+      '<input id="gxq" type="search" placeholder="Search conditions&hellip;" '+
+      'value="'+gxTerm.replace(/"/g,'&quot;')+'" oninput="gxSearch(this.value)" '+
+      'autocomplete="off" autocorrect="off" spellcheck="false">'+
+    '</div>'+
+    '<div id="gxlist"></div>'+
   '</div>';
 }
 
@@ -692,24 +754,49 @@ const ABOUT_CSS = '<style id="about-css">' + String.raw`/* --- about + legal ---
 .galleries .gx-sec{margin:0 0 20px;}
 .galleries .gx-cat{font-size:11.5px;font-weight:900;letter-spacing:1.3px;color:var(--sec);
   margin:0 0 9px;}
-/* A list, not a card grid. These are dense teaching pages: a cropped square of one shows
-   nothing identifiable, and 34 of them made an enormous scroll. Small thumbnails anchored to
-   the TOP of the page, where the title band is, plus the name -- scannable at a glance. */
-.galleries .gx-list{display:flex;flex-direction:column;gap:8px;}
-.gx-row{display:flex;align-items:center;gap:12px;cursor:pointer;padding:8px 12px 8px 8px;
-  border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.03);
-  transition:border-color .15s,background .15s,transform .12s;}
-.gx-row:hover{border-color:var(--sec);background:rgba(255,255,255,.06);}
-.gx-row:active{transform:scale(.99);}
-/* fixed box so a slow or missing image cannot reflow the list */
-.gx-thumb{flex:none;width:46px;height:60px;border-radius:8px;overflow:hidden;
-  background:rgba(0,0,0,.3);border:1px solid var(--line);}
-.gx-thumb img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;}
-.gx-meta{min-width:0;flex:1 1 auto;}
-.gx-meta b{display:block;font-size:14.5px;font-weight:800;color:var(--white);line-height:1.3;}
-.gx-meta span{display:block;font-size:11.5px;color:var(--muted-2);margin-top:2px;}
-.gx-go{flex:none;color:var(--muted-2);display:grid;place-items:center;}
-.gx-go svg{width:17px;height:17px;}
+/* Segmented control: Specialty (default) / Alphabetical */
+.galleries .gx-seg{display:flex;gap:4px;padding:4px;margin:2px 0 10px;border-radius:14px;
+  border:1px solid var(--line);background:rgba(255,255,255,.03);}
+.gx-tab{flex:1;padding:9px 10px;border:0;border-radius:11px;cursor:pointer;background:transparent;
+  color:var(--muted);font-family:inherit;font-size:13.5px;font-weight:800;letter-spacing:.2px;
+  transition:background .15s,color .15s;-webkit-tap-highlight-color:transparent;}
+.gx-tab.on{background:linear-gradient(140deg,var(--accent),var(--accent-2));color:#04121c;}
+
+/* Search */
+.galleries .gx-find{display:flex;align-items:center;gap:9px;padding:0 13px;margin:0 0 14px;
+  border:1px solid var(--line);border-radius:14px;background:rgba(255,255,255,.04);
+  color:var(--muted-2);}
+.galleries .gx-find svg{width:17px;height:17px;flex:none;}
+.galleries .gx-find input{flex:1;min-width:0;background:transparent;border:0;outline:none;
+  color:var(--white);font-family:inherit;font-size:15px;padding:12px 0;}
+.galleries .gx-find input::placeholder{color:var(--muted-2);}
+.galleries .gx-find input::-webkit-search-cancel-button{filter:invert(.6);}
+.galleries .gx-count{font-size:12.5px;color:var(--muted-2);margin:0 0 14px;}
+.galleries .gx-count b{color:var(--white);font-weight:800;}
+.galleries .empty{padding:26px 0;text-align:center;color:var(--muted);font-size:14px;}
+
+/* One gallery: name row, then all ten thumbnails */
+.galleries .gx-sec{margin:0 0 18px;}
+.galleries .gx-alpha{--sec:var(--accent);--sec2:var(--accent-2);}
+.galleries .gx-cat{font-size:11.5px;font-weight:900;letter-spacing:1.3px;color:var(--sec);margin:0 0 9px;}
+.gx-gal{margin:0 0 14px;}
+.gx-name{display:flex;align-items:center;gap:8px;width:100%;text-align:left;cursor:pointer;
+  padding:0 0 7px;border:0;background:transparent;color:var(--white);font-family:inherit;}
+.gx-name span{min-width:0;flex:1 1 auto;}
+.gx-name b{display:block;font-size:14.5px;font-weight:800;line-height:1.25;}
+.gx-name i{display:block;font-style:normal;font-size:11.5px;color:var(--muted-2);margin-top:2px;}
+.gx-name svg{width:16px;height:16px;flex:none;color:var(--muted-2);}
+.gx-name:active{opacity:.75;}
+/* five across, four on a narrow phone; fixed aspect so a slow image cannot reflow the grid */
+.gx-thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;}
+@media (max-width:380px){.gx-thumbs{grid-template-columns:repeat(4,1fr);}}
+.gx-th{padding:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;cursor:pointer;
+  background:rgba(0,0,0,.3);aspect-ratio:3/4;transition:border-color .15s,transform .12s;
+  -webkit-tap-highlight-color:transparent;}
+.gx-th:hover{border-color:var(--sec);}
+.gx-th:active{transform:scale(.96);}
+/* anchored to the top of the page, where the title band is -- the identifying part */
+.gx-th img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;}
 
 /* --- first-run acceptance gate ---------------------------------------------- */
 #rc-gate{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;padding:22px;
