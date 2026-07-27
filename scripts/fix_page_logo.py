@@ -28,7 +28,8 @@ INK = 55           # header background is near-black; artwork ink is far above t
 GAP = 28           # columns of clear space that mean the wordmark has ended
 FRAME_X = 12       # right of the frame's left rule
 
-# Fixed placement, sized from the tightest page in the set: every page fits this box.
+# Where the lockup is drawn. The height is a fallback — placement() measures the set and
+# returns the largest size the tightest page can take.
 PLACE_X, PLACE_Y, PLACE_H = 20, 14, 56
 
 
@@ -103,10 +104,31 @@ def lockup(a, W, H):
             int(x1) + 8, min(below - 1, int(y1) + 8))
 
 
-SIZE = (1024, 1536)   # page 4 arrived 1 px short; the gallery ships one uniform size
+SIZE = (1024, 1536)   # pages sometimes arrive a pixel short; a gallery ships one uniform size
 
 
-def render(path, out, quality=88):
+def placement(paths):
+    """One (x, y, height) for the whole set, from the page with the least room.
+
+    Drawing every page's logo at the same size and position is the point: measured per page it
+    would jitter by ten pixels or more as you swipe, which is far more visible than the lockup
+    being a few pixels smaller than the artwork it replaces.
+    """
+    heights = []
+    for f in paths:
+        im = Image.open(f).convert("RGB")
+        a = np.asarray(im).astype(int)
+        box = lockup(a, *im.size)
+        if box is None:                      # e.g. a page whose emblem is missing entirely
+            continue
+        x0, y0, x1, y1 = box
+        heights.append(min(y1 - y0 + 1, round((x1 - x0 + 1) / ASPECT)))
+    if not heights:
+        raise SystemExit("no lockup found on any page")
+    return PLACE_X, PLACE_Y, min(heights)
+
+
+def render(path, out, quality=88, place=None):
     im = Image.open(path).convert("RGB")
     W, H = im.size
     a = np.asarray(im).astype(int)
@@ -137,18 +159,18 @@ def render(path, out, quality=88):
         arr[y, x0:x1 + 1] = np.median(a[y, sx0:sx1], axis=0).astype(np.uint8)
     base = Image.fromarray(arr)
 
-    nh = PLACE_H
+    lx, ly, nh = place or (PLACE_X, PLACE_Y, PLACE_H)
     nw = round(nh * ASPECT)
     lg = LOGO.resize((nw, nh), Image.LANCZOS)
-    reg = np.asarray(base.crop((PLACE_X, PLACE_Y, PLACE_X + nw, PLACE_Y + nh))).astype(int)
+    reg = np.asarray(base.crop((lx, ly, lx + nw, ly + nh))).astype(int)
     lga = np.asarray(lg).astype(int)[:reg.shape[0], :reg.shape[1]]
-    base.paste(Image.fromarray(np.maximum(reg, lga).astype(np.uint8)), (PLACE_X, PLACE_Y))
+    base.paste(Image.fromarray(np.maximum(reg, lga).astype(np.uint8)), (lx, ly))
 
     if base.size != SIZE:
         base = base.resize(SIZE, Image.LANCZOS)
     if out:
         base.save(out, "JPEG", quality=quality, optimize=True, progressive=True)
-    return {"erased": (x0, y0, x1, y1), "logo": (PLACE_X, PLACE_Y, nw, nh)}
+    return {"erased": (x0, y0, x1, y1), "logo": (lx, ly, nw, nh)}
 
 
 def main():
@@ -161,10 +183,13 @@ def main():
                    if f.lower().endswith((".png", ".jpg", ".jpeg")))
     if not files:
         sys.exit("no pages in " + src)
-    for f in files:
+    place = placement(files)                      # pass 1: one size for the whole set
+    print("  logo %dx%d at (%d, %d)" % (round(place[2] * ASPECT), place[2], place[0], place[1]))
+    for f in files:                               # pass 2: render
         dest = os.path.join(out, os.path.splitext(os.path.basename(f))[0] + ".jpg")
-        r = render(f, dest)
-        print("  %-30s %s" % (os.path.basename(f), "erased " + str(r["erased"]) if r else "NO LOCKUP FOUND"))
+        r = render(f, dest, place=place)
+        print("  %-30s %s" % (os.path.basename(f),
+                              "erased " + str(r["erased"]) if r else "NO LOCKUP FOUND"))
     print("%d pages -> %s" % (len(files), out))
 
 

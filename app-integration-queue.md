@@ -387,6 +387,27 @@ to become App Store review latency for every typo. Content now loads from `conte
   with new JSON, or vice versa, still works — but shipping `index.html` alone the first time
   leaves the app with no content at all.
 
+## Gallery 36 — Peptic Ulcer Disease (built & verified 2026-07-27, awaiting upload)
+Attaches to `pud` (Gastrointestinal, K27.9). **First GI gallery** — the galleries index gains a
+new GASTROINTESTINAL section. Ten pages at native 1024x1536, avg 421 kB. Same layout as gallery
+35: `base:''`, `file: assets/pud/pud-NN.jpg`, `thumb: gthumbs/pud-NN.jpg`.
+
+- Logo fault this batch was uniform: the template split the **Rx off as a separate mark in front
+  of "Rounds"** rather than the R of "Rounds" carrying the x, and dropped the lens flare on all
+  ten. No spurious letter inside the emblem this time.
+- `scripts/fix_page_logo.py` gained a `placement()` pass so the uniform logo size is **measured
+  from the set** instead of hardcoded — the constants tuned for the Hyperparathyroidism template
+  were wrong for this one (66 px here vs 56 px there).
+- Titles read off the pages: the footer's "MODULE TITLE" says "Peptic Ulcer Disease Foundations"
+  on all ten.
+
+### Source defects reported (re-render, not blocking)
+- **Page 1** — the anatomy diagram's two callouts *both* read "Gastric ulcer"; the "(more
+  common)" one points at the duodenal bulb and should say "Duodenal ulcer". Page 2 labels the
+  same structures correctly.
+- **Page 7** — barium panel says the gastric ulcer niche is along the **greater** curvature; it
+  is classically the lesser curvature, which pages 2 and 5 of this same gallery state.
+
 ## Gallery 35 — Hyperparathyroidism (built & verified 2026-07-27, awaiting upload)
 Attaches to the existing condition `hyperparathyroid` (Endocrine, E21.3 — matches the ICD-10 on
 the pages). Ten pages delivered as loose 1024x1536 images, so this is the **first gallery kept at
@@ -431,7 +452,7 @@ to fill 81×108 css boxes, and left every condition gallery carrying 3.0 MB for 
 
 **Fix (built, verified, awaiting upload — `deliver16/`):**
 - `scripts/gen_thumbs.py` → one flat set at site root, `gthumbs/<id>-NN.jpg`, **320 px wide q82**.
-  (280 files once Hyperparathyroidism is included — the two were merged into one upload.)
+  (290 files once galleries 35 and 36 are included — all merged into one upload.)
   Flat because the affected galleries live in three different places; pooling gives one upload
   destination and one path shape. 270 files (Diabetes Insipidus included, ready for its upload).
 - `scripts/repoint_thumbs.js` → rewrites the `GALLERIES` literal: `thumb` → `gthumbs/<id>-NN.jpg`
