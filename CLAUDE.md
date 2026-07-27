@@ -29,12 +29,12 @@ no backend. This file is context for future sessions — read it before starting
 
 ## Live app structure
 
-> **CONTENT IS NO LONGER INLINE (2026-07-26).** `index.html` is now **code only** (0.65 MB,
-> was 6.87 MB); all content lives in **`content/*.json`** and is fetched at boot. The globals
-> below still exist with the same names and shapes — they are declared **empty** and *filled*
-> by the loader at the bottom of `index.html`, so app code reads them exactly as before.
-> **To change content, edit the JSON, not `index.html`.** Built by
-> `scripts/split_content.js`; rationale and traps in `native-app-plan.md` §5.
+> **CONTENT IS NO LONGER INLINE (shipped 2026-07-27, commit `414c899`).** `index.html` is now
+> **code only** (0.54 MB, was 6.76 MB); all content lives in **`content/*.json`** and is
+> fetched at boot. The globals below still exist with the same names and shapes — they are
+> declared **empty** and *filled* by the loader at the bottom of `index.html`, so app code
+> reads them exactly as before. **To change content, edit the JSON, not `index.html`.** Built
+> by `scripts/split_content.js`; rationale and traps in `native-app-plan.md` §5.
 >
 > | file | holds |
 > |---|---|
@@ -43,7 +43,7 @@ no backend. This file is context for future sessions — read it before starting
 > | `content/resident.json` | `RES_DATA` (1308), `RES_SPECIALTIES`, `RES_ACTIVE`, `RES_SECTION2_TITLE`, `RES_COND`, `RESIDENT_APPROACH` |
 > | `content/nclex.json` | `NCLEX_DATA` (150) |
 > | `content/quizzes.json` | `QUIZZES` (9) |
-> | `content/galleries.json` | `GALLERIES` (35) + `real` (the `REALGAL` list) |
+> | `content/galleries.json` | `GALLERIES` (39) + `real` (the `REALGAL` list) |
 > | `content/or.json` | `OR_DATA` |
 >
 > Consequences: **`file://` no longer works** (the loader uses `fetch`) — serve over http or
@@ -51,6 +51,22 @@ no backend. This file is context for future sessions — read it before starting
 > after the split must include `index.html` **and** `content/`; after that they are
 > independent. Derived lookups (`byId`, `ORDER`, `rxById`, `rxByCond`, `resById`), the first
 > `paint()` and the `/c/<id>` router boot all run in the loader, not at parse time.
+> `sw.js` precaches all seven files, so **a new content file must be added to `CORE`** or it
+> will be missing offline.
+
+- **Share links (`/c/<id>`)** — every condition has a URL; `_redirects` rewrites `/c/*` to
+  `index.html` with a 200. Added by `scripts/add_share_links.js`, which also writes the
+  `<base>` tag from `RC_ROOT` (**do not add a second `<base>`** — the head script decides it,
+  and hard-coding `/` breaks the native bundle). `rcSyncURL()` in `paint()` keeps the address
+  bar on the visible condition, `replaceState` only. The router exposes `RC_ROUTE_BOOT`, which
+  the content loader calls once `byId` is populated — **share links must be added before the
+  content split**, or `split_content.js` fails with "router boot wiring: found 0 occurrences".
+- **Persistence** — `RC_STORE` (bookmarks, best first-try quiz score) and `NCLEX_STORE`
+  (exam save/resume, attempt history, mastery), both `localStorage`, both device-local and
+  never transmitted, both behind an interface so sync can be added later. Added by
+  `scripts/add_persistence.js`, which also inlines `src/report/nclex-report.js` — the NCLEX
+  engine's `showReport()` needs `NCLEX_REPORT` present or it silently drops the
+  record-this-attempt call.
 
 - **Modes** via `document.documentElement[data-mode]`: `nursing` | `medical` | `resident`
   (`setMode(m)`). Medical accent `--sec:#00c2ff`.
@@ -128,8 +144,20 @@ no backend. This file is context for future sessions — read it before starting
   `playwright-core` + Chromium at `/opt/pw-browsers/chromium-1194/chrome-linux/chrome`
   (`--no-sandbox`). Drive the app via `page.evaluate(()=>go('gallery','dvt'))` etc.; assert
   `.gthumb` counts, `img.naturalWidth>0`, viewer opens, quiz loads, **zero pageerrors**.
+  Serve the tree with `netlifysim.js <ROOT> <PORT>` (positional args) — it does the `/c/*`
+  rewrite, so share links and the service worker behave as they do on Netlify.
+- **The strongest check for a mechanical change is a side-by-side.** Serve the old and new
+  builds on two ports, drive both through the same script, and compare `.app` `innerHTML` —
+  the content split was proved that way over sixteen views plus every content global
+  serialised. It catches what an assertion you thought to write would not.
 - Parse-check: extract inline `<script>` (no `src`) blocks and `new Function(code)`.
+- `node scripts/verify_sw.js <sw.js>` unit-tests the service worker's cache-read guard.
 - Note: JS string escapes like `←`/`—` are valid and render as ←/— — leave as-is.
+- **A quiz-driving test must use `dvt`, not `dka`** — DKA has no quiz, and `go('quiz','dka')`
+  throws. Cards are selected by `data-id`, not by an `onclick` attribute.
+- **Beware the service worker when testing failure paths.** It is network-first with a cache
+  fallback, so `page.route(...).abort()` in a context that has already loaded the app is
+  silently served from Cache Storage and the failure never happens. Use a fresh context.
 
 ## Deploying (Chrome web-upload to rounds-codex-app)
 - **Resident + all UI/data changes live in `index.html`** — uploading the new `index.html` ships

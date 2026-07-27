@@ -204,6 +204,14 @@ replaceOnce(
   + '<path d="M12 3l2.6 5.6 6 .7-4.4 4.1 1.2 6-5.4-3-5.4 3 1.2-6L4 9.3l6-.7z"/></svg></div></div>`;}).join(\'\');',
   'per-card bookmark star');
 
+/* The engine's "Save & exit" copy was written against the in-memory shim and told the truth
+   at the time: the saved test really did die with the page. With the store inlined it now
+   survives, and leaving the old sentence there would talk readers out of using the feature. */
+replaceOnce(
+  '"Keep your progress and resume this test where you left off. "\n      + "(Saved for this visit — a page reload will clear it.)"',
+  '"Keep your progress and resume this test where you left off. "\n      + "(Saved on this device — it will still be here next time.)"',
+  '"Save & exit" copy now that the save is real');
+
 /* ------------------------------------------------------- 3. quiz progress is recorded */
 
 replaceOnce(

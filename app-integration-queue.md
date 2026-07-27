@@ -599,3 +599,94 @@ Upload updated `index.html` (+ any new gallery folders) to `main` via Chrome; co
 deploy goes green; load the live site and verify each change. **Before clicking Commit, check
 the file list GitHub shows — it displays the full destination path, which is where the two
 nesting mistakes above would have been caught.**
+
+---
+
+## 2026-07-27 — the four items that had been on hold, all shipped by git
+
+The `add_repo` route means these went straight to `rounds-codex-app` `main` rather than into a
+zip. Four commits, in dependency order; each was verified headless against `netlifysim.js`
+serving the actual clone before it was pushed.
+
+### 1. Share links — `/c/<id>` (`54efe30`)
+`scripts/add_share_links.js`, ported from the stranded `deliver8` build. Three edits plus
+`_redirects`:
+- a head script, **first thing in `<head>`**, that decides `RC_ROOT`, writes the `<base>` tag and
+  captures the deep link *immediately* — `paint()` normalises the address bar as soon as the app
+  boots, so a router that reads `location.pathname` later finds nothing;
+- `rcSyncURL()` called from `paint()`, `replaceState` only, gated on `RC_READY` and on `http(s)`
+  (it throws on `file://`);
+- a boot IIFE that opens the captured target and exposes `RC_ROUTE_BOOT`.
+
+`_redirects` is `/c/*  /index.html  200`. The repo has a `netlify.toml` with `publish = "."`, so
+a root-level `_redirects` is honoured.
+
+**This had to run before the content split** — `split_content.js` rewrites the router's
+DOMContentLoaded hook into `window.RC_ROUTE_BOOT=boot;` and fails outright without it. That
+dependency is what surfaced the whole ordering: share links → split → persistence.
+
+Verified: deep link opens the right condition with its gallery and full-size viewer images; an
+unknown id falls back to the library and tidies the URL; `?c=` and `#c=` upgrade to the clean
+path; history gains no entries; a non-detail view clears the `/c/` path.
+
+### 2. The content split (`414c899`)
+`index.html` **6.76 MB → 0.54 MB**; 6.22 MB moved to seven `content/*.json`. A typo fix is now a
+single small file, and on the App Store it is a content update rather than a review.
+
+`sw.js` precaches the seven files and moves to **v8** — without precaching, a first visit that
+went offline before the content was cached would boot to "Content didn't load". The bump also
+purges the old 6.76 MB `index.html` from every device's cache.
+
+Proved lossless twice over: the splitter round-trips each blob through JSON and deep-compares
+including key order, and then both builds were driven side by side headless — all 18 content
+globals serialise identically and sixteen views render **byte-identical** `.app` HTML (both
+library modes, four condition pages, drug list and drug page, OR, Ask, About, galleries index, a
+gallery, a quiz, resident root and a specialty).
+
+### 3. Persistence (`84cc364`)
+`RC_STORE` (bookmarks, best first-try quiz score) and `NCLEX_STORE` (save/resume, attempt
+history, mastery). Both `localStorage`, both device-local — which is what keeps the App Store
+privacy label at "Data Not Collected".
+
+Three things were dead before this and are now live: the library star (it toggled a class and
+toasted), the NCLEX engine's whole storage layer (the engine calls the right seams; nothing was
+listening), and the attempt record — `showReport()` falls back to a legacy summary without
+`NCLEX_REPORT`, and the record call sits *inside* the branch that needs it, so no attempt could
+ever have been saved. The report engine had only ever shipped to `usmle/`.
+
+Also: a star on every card, anchored to the ICD line rather than the top-right corner (a long
+unbreakable term like "Hyperparathyroidism" overflows a 184 px card and a corner star lands on
+the title); a bookmark-aware empty state; the best score on the condition page's quiz button; and
+the two hard-coded "180 conditions" strings now derive from `DATA.length`.
+
+The engine's own "Save & exit" copy said *"saved for this visit — a page reload will clear it"*,
+which was true against the memory shim and is now false, so it was rewritten.
+
+### 4. Safari's "WebKitBlobResource error 1." (`dfd201b`)
+Reported: leave the app, use other apps, come back, the page is dead. That error is WebKit
+saying *this blob's bytes are gone*. Two places could produce it; both fixed, because the symptom
+fits both and neither is reproducible from here.
+
+- **`sw.js`, the likelier one.** iOS backs every Cache Storage entry with a file on disk and
+  reclaims those files under storage pressure **without removing the entry** — so the entry still
+  matches and only the body read fails. Restoring a backgrounded tab is a fresh navigation, and
+  if the radio has not come back yet the worker answered it from that cache. Reading the body
+  inside the worker, in a `try`, makes it recoverable: a memory-backed copy goes back, a failed
+  read deletes the entry so the next load repairs itself, and a navigation with nothing usable
+  left answers with an offline page that retries on its own instead of resolving to `undefined`.
+- **The condition PDF download.** It pointed an `<a download>` at a blob URL. When Safari
+  declines to treat that as a download it *navigates*, leaving the app's own tab on a `blob:`
+  URL — which the code then revoked four seconds later. Now `target="_blank"`, and the blob is
+  released on `pagehide`.
+
+`scripts/verify_sw.js` unit-tests the guard against a fake `caches` (an unreadable entry cannot
+be planted from a page — `Cache.put` reads bodies eagerly and rejects an errored stream).
+
+### Also in this build
+Galleries index header reworded to **"Image Galleries"** / **"39 galleries of medical
+illustrations"** (`b337458`).
+
+### Still outstanding
+The NCLEX full report is now shipped, so what remains is: more galleries as artwork arrives, the
+re-renders noted above (GERD dot row, Upper GI Bleed dot row / p8 footer / p3 "Virchow's triad"),
+`teacher@roundscodex.com` in GoDaddy, and a lawyer on the legal text before App Store submission.
