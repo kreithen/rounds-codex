@@ -1,0 +1,8 @@
+[
+ {"file": "ugib-07.png",
+  "note": "Glasgow-Blatchfrod -> Blatchford  (the o and r change places)",
+  "rows": [963, 979],
+  "clear": [[303, 312]],
+  "place": [{"src": [307, 963, 312, 979], "dst": [303, 963]},
+            {"src": [303, 963, 306, 979], "dst": [309, 963]}]}
+]

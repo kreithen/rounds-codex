@@ -387,6 +387,31 @@ to become App Store review latency for every typo. Content now loads from `conte
   with new JSON, or vice versa, still works — but shipping `index.html` alone the first time
   leaves the app with no content at all.
 
+## Gallery 38 — Upper GI Bleed (built & verified 2026-07-27, **HOLD — page 9 unusable**)
+Attaches to `gi-bleed` (Gastrointestinal, K92.2). Third GI gallery. Ten pages at 1024x1536, avg
+433 kB. Same layout as 35-37. Delivered as a delta bundle (`index.html` + `assets/gi-bleed/` +
+10 gthumbs) rather than a full re-send; its `index.html` supersedes the 35-37 one.
+
+**Page 9 must be re-rendered before this ships.** Heavy text corruption throughout, including
+two clinically wrong statements:
+- "Hemodynamic instability (SBP > 90 mmbig, HR < 100)" — both inverted; should be SBP < 90,
+  HR > 100. As printed it labels a stable patient high-risk.
+- "MAP > 25 mmHg" as a resuscitation target; should be >= 65.
+- Forrest labels all shifted one class (spurting shown as IIa, visible vessel IIIa, adherent clot
+  IIIb) — and page 5 of the same gallery has them right, so the two contradict.
+- Most of the Quick Reference and Pearl of the Day panels are unreadable
+  ("Ressictcaite first", "Transiugial protosemmics shunt", "The rource today is the redeleed
+  outcorrow"). Beyond retouching — needs the page generated again.
+
+Fixed in-place: **page 7 "Glasgow-Blatchfrod" -> "Blatchford"** (the o and r change places;
+spec in `galleries-staging/upper-gi-bleed-text-edits.json`).
+
+Reported, left as delivered: dot progress row off by one on pages 3-8 (1, 2, 9, 10 correct, and
+all ten have 10 dots this time); page 8 has no footer bar; page 3 labels a vessel/flow/wall
+diagram "Virchow's triad", which describes thrombosis, not bleeding; page 5's Forrest rebleeding
+percentages put IIa below Ib; page 4 offers BUN:Cr as a variceal-vs-non-variceal discriminator
+when it separates upper from lower.
+
 ## Gallery 37 — GERD (built & verified 2026-07-27, awaiting upload)
 Attaches to `gerd` (Gastrointestinal, K21.9). Second GI gallery. Ten pages at 1024x1536, avg
 457 kB. Same layout as 35/36.
