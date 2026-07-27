@@ -387,6 +387,31 @@ to become App Store review latency for every typo. Content now loads from `conte
   with new JSON, or vice versa, still works — but shipping `index.html` alone the first time
   leaves the app with no content at all.
 
+## MORNING UPLOAD QUEUE (assembled 2026-07-27) — everything outstanding, one set
+Supersedes every earlier zip. Four zips, nine drags, `index.html` last.
+
+| zip | contents | files |
+|---|---|---|
+| `rc-queue-1-thumbs-and-index.zip` | `gthumbs/` in 4 parts of ~78, plus `index.html` | 311 |
+| `rc-queue-2-new-galleries.zip` | `assets/{hyperparathyroid,pud,gerd,gi-bleed,di}` | 50 |
+| `rc-queue-3-replacements.zip` | the 5 `<id>-upload/assets/<id>/` cardiology folders | 50 |
+| `rc-queue-4-optional-pdfs.zip` | one gallery PDF each (the button is a stub — optional) | 5 |
+
+- **39 galleries, 390 images.** Galleries 35-39: Hyperparathyroidism, Peptic Ulcer Disease,
+  GERD, Upper GI Bleed, Diabetes Insipidus.
+- Zip 3 clears the two long-standing replacement jobs: the hyperlipidemia white-margin crop and
+  the canonical-logo pass on DVT / Cardiac Arrest / Aortic Dissection / PAD. **The thumbnails in
+  zip 1 were generated from those corrected files**, so zips 1 and 3 want to go up together or
+  those five galleries show a fixed logo small and the old one full-screen.
+- All five galleries re-verified against the exact bytes in the zips (a stale page 8 in the test
+  site was caught by hashing the queue against the served files — worth repeating before any
+  future hand-off).
+
+## Gallery 39 — Diabetes Insipidus (built & verified 2026-07-27, in the queue)
+Attaches to `di` (Endocrine, E23.2). Built during the endocrine batch and waiting ever since;
+now wired. 800x1200 like its siblings from that run. Titles came from `spec-di.json`, which the
+batch build wrote at the time. `base:''`, `file: assets/di/di-NN.jpg`, `thumb: gthumbs/di-NN.jpg`.
+
 ## Gallery 38 — Upper GI Bleed (built & verified 2026-07-27, ready to upload)
 Attaches to `gi-bleed` (Gastrointestinal, K92.2). Third GI gallery. Ten pages at 1024x1536, avg
 434 kB. Delivered as a delta bundle (`index.html` + `assets/gi-bleed/` + 10 gthumbs); its
