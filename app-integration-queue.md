@@ -690,3 +690,25 @@ illustrations"** (`b337458`).
 The NCLEX full report is now shipped, so what remains is: more galleries as artwork arrives, the
 re-renders noted above (GERD dot row, Upper GI Bleed dot row / p8 footer / p3 "Virchow's triad"),
 `teacher@roundscodex.com` in GoDaddy, and a lawyer on the legal text before App Store submission.
+
+### 5. Share button on every condition page (`e218aa1`)
+`scripts/add_share_button.js`. Beside the ICD-10 pill, same type size / padding / radius /
+border weight, so both render at 28 px and read as a pair.
+
+- **What it sends:** the condition's name plus its `/c/<id>` link, as **both** `text` and
+  `title`. Most examples set only `title`; iOS Messages ignores it and would send a bare URL.
+  `text` is what puts the name above the link, and Mail uses `title` as the subject.
+- **No native sheet** (desktop, or anything not on https) → copies the link and toasts. The
+  button therefore exists everywhere. `navigator.clipboard` is absent on `http://` and in older
+  WebViews, so there is an `execCommand` fallback behind it.
+- **Colour follows the MODE** (`--accent`: nursing green, medical cyan, resident purple). The
+  ICD-10 pill follows the **category** (`--sec`, set inline on `.pad`), so the two differ on
+  purpose and the Share button stays put while the pill repaints per condition.
+- `navigator.share` is called **synchronously from the tap** — Safari rejects a share that has
+  drifted out of the user gesture, so nothing may be awaited first. A cancelled sheet rejects
+  with `AbortError`; that is a normal outcome and is swallowed.
+
+**Known limit:** the link *preview* in Messages still reads "Rounds Codex", not the condition.
+That title comes from the page the recipient's phone fetches, and `/c/<id>` is a rewrite to the
+same `index.html` for all 181. Per-route `<meta>` needs a Netlify function or prerender — a
+separate job if it is worth doing.

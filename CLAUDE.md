@@ -61,6 +61,12 @@ no backend. This file is context for future sessions — read it before starting
   bar on the visible condition, `replaceState` only. The router exposes `RC_ROUTE_BOOT`, which
   the content loader calls once `byId` is populated — **share links must be added before the
   content split**, or `split_content.js` fails with "router boot wiring: found 0 occurrences".
+- **Share button** — on every condition page beside the ICD-10 pill, added by
+  `scripts/add_share_button.js`. `rcShare(id)` calls `navigator.share` **synchronously from
+  the tap** (Safari rejects a share that has left the gesture) with `{title, text, url}` —
+  `text` is what makes iOS Messages show the name; `title` alone sends a bare URL. No sheet
+  (desktop, http) → copies the link. **Its colour is `--accent` (the MODE), the ICD pill's is
+  `--sec` (the CATEGORY, set inline on `.pad`)** — they are meant to differ.
 - **Persistence** — `RC_STORE` (bookmarks, best first-try quiz score) and `NCLEX_STORE`
   (exam save/resume, attempt history, mastery), both `localStorage`, both device-local and
   never transmitted, both behind an interface so sync can be added later. Added by
