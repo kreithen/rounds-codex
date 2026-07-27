@@ -59,6 +59,11 @@ no backend. This file is context for future sessions — read it before starting
   way to save upload file count and the galleries index (340 thumbs at once) ended up pulling
   78 MB; `scripts/gen_thumbs.py` + `scripts/repoint_thumbs.js` moved them to a flat root-level
   `gthumbs/<id>-NN.jpg` set at 320 px q82 (12 MB). See `app-integration-queue.md`.
+  New galleries use `base:''` with the folder in `file`, so `thumb` can reach `gthumbs/`.
+  **The "Download Complete Gallery (PDF)" button is a stub app-wide** — it toasts, nothing more.
+- **Source artwork arrives at 1024x1536** (2:3 portrait). Ship it at native resolution, JPEG q88
+  (~440 kB/page); the old pipeline downscaled to 800x1200, which was below what a Pro Max screen
+  shows the viewer at. Ask production for 1536x2304 if the tool offers it.
 - **Quizzes**: `QUIZZES={ "<id>": {condition, questions:[{q, ch:[...], correct, exp,
   pearl?, why?:[...], img?:[N]}]} }`. Having `QUIZZES[id]` auto-enables the "Take the Quiz"
   button in `detailHTML`. `img:[N]` links a question to gallery image N. `why[i]` shows on a
@@ -83,7 +88,12 @@ no backend. This file is context for future sessions — read it before starting
   approved real images override schematics.
 
 ## Build pipelines
-- **Galleries** (`medcodex-gallery` skill + `scripts/build_gallery.py` in the skill; a copy is
+- **Galleries from loose images** (`scripts/add_gallery.js` + `scripts/gen_thumbs.py`): when a
+  gallery arrives as ten images rather than a production PDF. Titles must be read off the pages
+  visually — the footer's title field is unreliable. `scripts/fix_page_logo.py` replaces a wrong
+  logo lockup with the canonical one (`RC_LOGO`, default `logo-trim.png`); the production process
+  gets it wrong in a different way most batches, so check every page.
+- **Galleries from a PDF** (`medcodex-gallery` skill + `scripts/build_gallery.py` in the skill; a copy is
   version-controlled at `skills/medcodex-gallery/`): approved production PDF → renders pages to
   `assets/<id>/<id>-NN.jpg` + thumbs + compact gallery PDF, then writes the entry **into
   `content/galleries.json`** and adds the id to its `real` list. It detects the split

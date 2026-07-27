@@ -387,6 +387,41 @@ to become App Store review latency for every typo. Content now loads from `conte
   with new JSON, or vice versa, still works — but shipping `index.html` alone the first time
   leaves the app with no content at all.
 
+## Gallery 35 — Hyperparathyroidism (built & verified 2026-07-27, awaiting upload)
+Attaches to the existing condition `hyperparathyroid` (Endocrine, E21.3 — matches the ICD-10 on
+the pages). Ten pages delivered as loose 1024x1536 images, so this is the **first gallery kept at
+full native resolution** (no 800 px downscale); avg 438 kB, 4.3 MB for the set.
+
+- `base: ''`, `file: assets/hyperparathyroid/<id>-NN.jpg`, `thumb: gthumbs/<id>-NN.jpg` — the
+  layout `repoint_thumbs.js` left everything else in.
+- Built with `scripts/add_gallery.js` (new — for galleries that arrive as images rather than a
+  production PDF; `build_gallery.py` in the skill is still right when there IS a PDF).
+- Titles read off the pages, **not** the footer: on pages 1-6 the footer's title field says
+  "Hyperparathyroidism Pathophysiology" regardless of the page's subject.
+
+### Logos — all ten wrong, three different ways
+`scripts/fix_page_logo.py` (new): eight pages drew a spurious "R"/"Rx" *inside* the emblem
+circle, page 5 had no emblem at all, all ten dropped the lens flare, and pages 3 and 5 sat the
+lockup on a lighter grey plate reaching past the artwork. Each page is measured on its own
+(emblem found by column height, so the frame rules cannot be mistaken for it; wordmark's right
+edge = first wide dark gap), then the canonical lockup is drawn at ONE fixed size and position
+so the header does not jump while swiping. Asserted: outside the header's left corner every page
+is byte-identical to a plain re-encode of the original.
+
+### Source defects reported to the user (re-render, not blocking)
+- **Page 5** — "KEY TAKEAWAY" rendered as two garbled overlapping strings; footer uses the wrong
+  template (wrong title, and a "Look for: Stones/Bones/Groans/Moans" strip in place of the
+  Difficulty / Clinical Source / Review fields).
+- **Page 8** — "MEDICAL MANAGEMENT (NON-SURGICAL CANDIDATES OR BRIDGE THERAPY)" has a second
+  string rendered over itself.
+- **Page 9** — the histology panel carries page 8's surgical checklist and PTH-drop graph.
+- Clinical note: page 5 leads Physical Examination with Chvostek/Trousseau, which are
+  *hypo*calcaemia signs and should be negative in untreated primary HPT.
+
+### Also learned
+The "Download Complete Gallery (PDF)" button is a **stub on every gallery** — `toast(...)`, no
+download. The PDFs shipped so far are dead weight until it is wired.
+
 ## Gallery thumbnails — the `thumb == file` shortcut, undone 2026-07-27
 26 of the 34 galleries (21 endocrine/pulmonary + the 5 cardiology) were built by the ad-hoc batch
 pipeline, which set `thumb === file` on purpose: it halved the number of files the user had to
@@ -396,6 +431,7 @@ to fill 81×108 css boxes, and left every condition gallery carrying 3.0 MB for 
 
 **Fix (built, verified, awaiting upload — `deliver16/`):**
 - `scripts/gen_thumbs.py` → one flat set at site root, `gthumbs/<id>-NN.jpg`, **320 px wide q82**.
+  (280 files once Hyperparathyroidism is included — the two were merged into one upload.)
   Flat because the affected galleries live in three different places; pooling gives one upload
   destination and one path shape. 270 files (Diabetes Insipidus included, ready for its upload).
 - `scripts/repoint_thumbs.js` → rewrites the `GALLERIES` literal: `thumb` → `gthumbs/<id>-NN.jpg`
