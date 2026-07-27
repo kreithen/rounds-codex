@@ -387,30 +387,32 @@ to become App Store review latency for every typo. Content now loads from `conte
   with new JSON, or vice versa, still works — but shipping `index.html` alone the first time
   leaves the app with no content at all.
 
-## Gallery 38 — Upper GI Bleed (built & verified 2026-07-27, **HOLD — page 9 unusable**)
+## Gallery 38 — Upper GI Bleed (built & verified 2026-07-27, ready to upload)
 Attaches to `gi-bleed` (Gastrointestinal, K92.2). Third GI gallery. Ten pages at 1024x1536, avg
-433 kB. Same layout as 35-37. Delivered as a delta bundle (`index.html` + `assets/gi-bleed/` +
-10 gthumbs) rather than a full re-send; its `index.html` supersedes the 35-37 one.
+434 kB. Delivered as a delta bundle (`index.html` + `assets/gi-bleed/` + 10 gthumbs); its
+`index.html` supersedes the 35-37 one.
 
-**Page 9 must be re-rendered before this ships.** Heavy text corruption throughout, including
-two clinically wrong statements:
-- "Hemodynamic instability (SBP > 90 mmbig, HR < 100)" — both inverted; should be SBP < 90,
-  HR > 100. As printed it labels a stable patient high-risk.
-- "MAP > 25 mmHg" as a resuscitation target; should be >= 65.
-- Forrest labels all shifted one class (spurting shown as IIa, visible vessel IIIa, adherent clot
-  IIIb) — and page 5 of the same gallery has them right, so the two contradict.
-- Most of the Quick Reference and Pearl of the Day panels are unreadable
-  ("Ressictcaite first", "Transiugial protosemmics shunt", "The rource today is the redeleed
-  outcorrow"). Beyond retouching — needs the page generated again.
+**Page 9 was held and has since been re-rendered by the user.** The three blocking problems are
+resolved: "SBP > 90 mmbig, HR < 100" is now "SBP < 90 mmHg, HR > 100"; "MAP > 25 mmHg" is now
+"MAP >= 65 mmHg"; the Forrest labels now read Ia/IIa/IIb/IIc and agree with page 5. The Quick
+Reference and Pearl of the Day panels are readable.
 
-Fixed in-place: **page 7 "Glasgow-Blatchfrod" -> "Blatchford"** (the o and r change places;
-spec in `galleries-staging/upper-gi-bleed-text-edits.json`).
+Fixed in-place (`galleries-staging/upper-gi-bleed-text-edits.json`):
+- **page 7** "Glasgow-Blatchfrod" -> "Blatchford" (the o and r change places)
+- **page 9** "endoscopically whenevez possible" -> "whenever" (r lifted from "Address" two
+  lines below)
 
-Reported, left as delivered: dot progress row off by one on pages 3-8 (1, 2, 9, 10 correct, and
-all ten have 10 dots this time); page 8 has no footer bar; page 3 labels a vessel/flow/wall
-diagram "Virchow's triad", which describes thrombosis, not bleeding; page 5's Forrest rebleeding
-percentages put IIa below Ib; page 4 offers BUN:Cr as a variceal-vs-non-variceal discriminator
-when it separates upper from lower.
+Left as delivered, all cosmetic: "Raplus stabilization", "Renal/Inrer failure" and
+"coaguilopathy" in page 9's bottom panels — the type there is 2-3 px per stroke with touching
+letters, so a transplant would read as retouched; "sudden ^ in pressure" where an up arrow was
+meant; the dot progress row (off by one on pages 3-8, and page 9's re-render moved its dot from
+the 9th to the 10th); page 8 has no footer bar; page 3 labels a vessel/flow/wall diagram
+"Virchow's triad", which describes thrombosis; page 5's Forrest rebleeding percentages put IIa
+below Ib; page 4 offers BUN:Cr as a variceal-vs-non-variceal discriminator when it separates
+upper from lower.
+
+Note for future verification runs: with 380 thumbnails the galleries index needs ~6 s after the
+scroll for lazy loading to settle — 2.5 s produced four false "broken thumbnail" failures.
 
 ## Gallery 37 — GERD (built & verified 2026-07-27, awaiting upload)
 Attaches to `gerd` (Gastrointestinal, K21.9). Second GI gallery. Ten pages at 1024x1536, avg
