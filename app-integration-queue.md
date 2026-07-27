@@ -241,6 +241,24 @@ reached coherently: mode toggle (or home swipe) → RESIDENT SPECIALTIES.
   split+persistence build. On a base without `RC_STORE` the study-activity block and the
   clear-data button are simply omitted.
 
+#### Hyperlipidemia white margins trimmed 2026-07-27 (`deliver15`, images only)
+Those ten pages were rendered with the paper margin still around the artwork — a 1139×1474
+canvas with the dark page inside at x 110–1028, y 48–1425 — so Hyperlipidemia was the only
+gallery showing a white frame. Barely visible in the viewer; obvious on the new galleries
+index, where the border eats a large share of a small thumbnail. Same light-margin quirk that
+needed `page_rect()` during the logo pass.
+- Cropped to each page's own detected edge (2px inset kills the JPEG halo) and resized to
+  **915×1372**, identical to DVT / Cardiac Arrest / Aortic Dissection. Brightest surviving edge
+  pixel **17/255**, was 255.
+- **No `index.html` change** — same filenames and the dimensions the app expects, so it is a
+  straight image replacement at `hyperlipidemia-upload/assets/hyperlipidemia/`.
+- Gallery PDF rebuilt from the cropped pages (1.7 MB vs 1.0 MB before; siblings are 0.8–1.0 MB).
+  Optional — the images are the fix.
+- **Swept every other local gallery for the same defect: hyperlipidemia was the only one.**
+- Tool: `scripts/trim_page_margins.py`, which detects each page's edge rather than assuming a
+  fixed inset and fails the run if a light fringe survives. Re-running it reproduces the
+  shipped files byte-for-byte.
+
 #### Galleries page rebuilt 2026-07-27 (`deliver14`, one file)
 - **All ten thumbnails per gallery**, 5-across (4 under 380px), each opening `openViewer(id,i)`
   at that image — `openViewer` sets `GID`/`gcur` itself so it works from outside the gallery view.
