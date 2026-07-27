@@ -99,7 +99,14 @@ replaceOnce('function toast(t){',
    Same intent, and the button then behaves the same way everywhere. */
 function rcShare(id){
   var d=(typeof byId!=='undefined')&&byId[id]; if(!d) return;
-  var url=(window.RC_ROOT||(location.origin+'/'))+'c/'+encodeURIComponent(id);
+  /* Same origin rule as shareApp(): prefer RC_SHARE_ORIGIN, which the native build pins to
+     the public site. RC_ROOT is right for loading assets but wrong for a shared link -- in a
+     bundle it is capacitor://localhost, and nobody can open that. Undefined on the web today,
+     so this falls through to RC_ROOT and behaves exactly as before. */
+  var origin=(typeof RC_SHARE_ORIGIN!=='undefined'&&RC_SHARE_ORIGIN)
+    ? RC_SHARE_ORIGIN.replace(/\\/+$/,'')+'/'
+    : (window.RC_ROOT||(location.origin+'/'));
+  var url=origin+'c/'+encodeURIComponent(id);
   if(navigator.share){
     try{
       navigator.share({title:d.name,text:d.name,url:url}).catch(function(){});

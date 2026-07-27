@@ -105,6 +105,27 @@ Apple's definition, so the label stays "Data Not Collected".
 
 ---
 
+> **STATUS CHECK, 2026-07-27 — read this before trusting the tables below.** This document was
+> written against the `deliver8` line, which was verified and then stranded; the About and
+> galleries work branched off an earlier `index.html` and never picked it up. Some of what §2
+> calls done was *not* in the deployed app until today, and some is still not.
+>
+> | item | actually live today? |
+> |---|---|
+> | App root / `<base>` / `RC_ROOT` | **yes** — shipped `54efe30` |
+> | Deep-link capture (`RC_DEEPLINK`) | **yes** — `54efe30` |
+> | `replaceState`-only history | **yes** — `54efe30` |
+> | Content split (§5) | **yes** — shipped `414c899`, not before |
+> | Persistence (§3.3, and §2 "Storage: None") | **yes** — `84cc364`. Both of those entries are now stale |
+> | Service worker on `http(s)` only | **yes** |
+> | `RC_SHARE_ORIGIN` | **read** by `shareApp()` and by the condition Share button, but **never defined** — both fall back to the current origin. The native shell must define it |
+> | Self-hosted inlined fonts | **NO** — `index.html` still has two `fonts.googleapis.com` preconnects and no `@font-face`. Typography still needs the network |
+> | `RC_API` | **NO** — not present at all. The Ask function is still same-origin only |
+>
+> The gallery-count and file-size figures in §3 are also pre-thumbnail-fix; see
+> `app-integration-queue.md` for current numbers (39 galleries, 390 images, `index.html`
+> 0.54 MB).
+
 ## 2. Already portable (verified headless in all three environments)
 
 | Concern | How it was solved |
