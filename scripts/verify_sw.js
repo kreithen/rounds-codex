@@ -79,6 +79,17 @@ function load({ bodyReadFails, empty, networkUp }) {
   ok(core.includes('./index.html') && core.includes('./'), 'CORE precaches the shell itself');
   ok(new Set(core).size === core.length, 'no duplicate CORE entries (addAll would still work, but it is a sign of a bad merge)');
 
+  // 6. the navigation branch must never clone the response it returns. res.clone() tees one
+  //    body into two, and an iOS tab suspend/resume mid-stream breaks the tee -- which is
+  //    Safari's "WebKitBlobResource error 1." on a backgrounded tab. This shipped twice.
+  const src = fs.readFileSync(SW, 'utf8').replace(/\/\*[\s\S]*?\*\//g, '').replace(/^\s*\/\/.*$/gm, '');
+  const nav = src.match(/req\.mode === 'navigate'\)\s*\{[\s\S]*?\n  \}/);
+  ok(!!nav, 'the navigate branch is present');
+  ok(nav && !/\.clone\(\)/.test(nav[0]),
+     `the navigate branch does not clone its response${nav && /\.clone\(\)/.test(nav[0]) ? ' -- it does, and that is the blob bug' : ''}`);
+  ok(nav && !/caches\.open|\.put\(/.test(nav[0]),
+     'and does not write to the cache while answering -- the shell is precached in CORE instead');
+
   console.log('\n' + (fail.length ? 'FAILED: ' + fail.length : 'ALL CHECKS PASSED'));
   process.exit(fail.length ? 1 : 0);
 })();

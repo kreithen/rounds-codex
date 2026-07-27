@@ -753,3 +753,35 @@ and Python do — a page-load `ERR_CONNECTION_RESET` for an external host proves
 how the Google dependency stayed invisible. And `document.fonts.check()` returns false for a
 face that matches but has not loaded, so glyph coverage must be asserted with
 `await document.fonts.load(font, char)`.
+
+### 7. The blob error, properly this time (`004fc20`)
+The first attempt (`dfd201b`) hardened the service worker's **offline** fallback — buffering
+cached bodies so a reclaimed iOS Cache Storage file could not kill a navigation. Real hazard,
+worth keeping, **not the bug**. It came back, and the screenshot showed the ordinary site URL in
+the address bar, which meant the navigation was answered by the **online** branch:
+
+```js
+fetch(req).then(res => {
+  const copy = res.clone();                                  // tees the body
+  caches.open(CACHE).then(c => c.put('./index.html', copy));
+  return res;                                                // returns the other branch
+})
+```
+
+`res.clone()` does not copy a body — it **tees one stream into two**, and both must be drained
+for either to finish. Switching apps suspends the tab; returning resumes it mid-stream, the tee
+breaks, and the branch feeding the page dies. Network fine, cache fine, the split between them
+not.
+
+Navigation now returns the network response untouched. Nothing lost: the shell is precached in
+`CORE` at install and `CACHE` is bumped every release, so the offline copy refreshes exactly
+when `index.html` changes — verified the cached shell still matches the served build
+byte-for-byte with the write gone.
+
+The **asset** branch keeps its clone: same pattern, but a broken tee there costs one image
+rather than the page, and buffering 3.5 MB gallery PDFs before the browser sees a byte is worse.
+
+`index.html` now calls `registration.update()` on every load — a worker that breaks navigation
+can stop the browser ever noticing a newer one, so the repair has to be pulled in by the first
+load that succeeds. `verify_sw.js` now **fails if the navigate branch clones**, and that guard
+was checked against the version that shipped the bug.

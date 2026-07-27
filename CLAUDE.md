@@ -168,8 +168,15 @@ no backend. This file is context for future sessions — read it before starting
   the content split was proved that way over sixteen views plus every content global
   serialised. It catches what an assertion you thought to write would not.
 - Parse-check: extract inline `<script>` (no `src`) blocks and `new Function(code)`.
-- `node scripts/verify_sw.js <sw.js>` unit-tests the service worker's cache-read guard and
-  asserts `CORE` still covers all 7 content files and all 6 fonts.
+- `node scripts/verify_sw.js <sw.js>` unit-tests the service worker's cache-read guard,
+  asserts `CORE` still covers all 7 content files and all 6 fonts, and — the one that matters —
+  **fails if the navigate branch calls `res.clone()`**. See below.
+- **NEVER clone the response the service worker returns for a navigation.** `res.clone()` tees
+  one body into two that must both be drained; with the other branch going to Cache Storage, an
+  iOS tab suspend/resume mid-stream breaks the tee and the page dies as
+  **"WebKitBlobResource error 1."** on returning to a backgrounded tab. This shipped twice —
+  the first fix hardened only the *offline* fallback and the bug was in the *online* branch.
+  The shell is precached in `CORE`, so the per-navigation write was redundant anyway.
 - **Chromium does not use the agent proxy; `curl` and Python do.** A page load showing
   `ERR_CONNECTION_RESET` for an external host does not mean the host is unreachable from the
   sandbox — that is how the Google Fonts dependency stayed invisible.
