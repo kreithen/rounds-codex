@@ -841,3 +841,32 @@ non-zero offset, so forward navigation is byte-for-byte the old scroll-to-top.
 Checked: a card 3200px down, back lands on 3200 with that card back on screen; nested stacks
 restore each level; mode switch does not teleport; tabs still start at the top; a list filtered
 shorter while you were away clamps to its end.
+
+### 10. Viral Hepatitis + Acute Appendicitis galleries (`edbf484`)
+Two Gastroenterology sets, 10 pages each, delivered across two batches with the two galleries
+interleaved. Ordered by the "IMAGE n OF 10" header, which the "Page n of 10" footer corroborates
+on all twenty. Both conditions already existed; neither had a gallery.
+
+**The progress-dot strip in these headers is unreliable — do not order pages by it.** Across the
+twenty pages the dot count is 10, 11 or 13 where it should always be 10, and the filled dot sits
+at the wrong index on hepatitis 3–6 and appendicitis 5–6. Appendicitis page 6 is the clearest
+case: an 11-dot strip with the *last* dot filled, on a page whose text reads "IMAGE 6 OF 10". An
+automated page-order check therefore cannot use the dots, which is worth knowing because they
+look like exactly the machine-readable cross-check you would want. Cosmetic only — the viewer
+draws its own position indicator — but flagged for a future artwork revision.
+
+All twenty arrived with the **wrong logo** (detached "℞ Rounds / CODEX", thin outline circle).
+`fix_page_logo.py` replaced it, run **once per complete set** so `placement()` derives one size
+per gallery (249×71 hepatitis, 242×69 appendicitis). Running it over a partial set and again
+over the remainder would give the two halves different sizes and the header would jump while
+swiping — which is the whole reason that function measures the set rather than each page.
+
+Built to current convention: `base:""`, native 1024×1536 q88 pages in `assets/<id>/`, 320 px q82
+thumbs in the shared flat `gthumbs/`, compact download PDF beside the pages, both ids in `real`.
+
+**Content note for the physician:** several pages overlap heavily. Hepatitis 8 ("Management &
+Treatment"), 9 ("Treatment & Procedures") and 10 ("Clinical Pearls") repeat the same Antiviral
+Therapy Overview table and Chronic HBV/HCV management blocks almost verbatim; 9 and 10 are near
+duplicates in layout. Appendicitis 5 ("Physical Examination") and 6 ("Clinical Evaluation")
+both work through McBurney/Rovsing/psoas/obturator/rebound. Shipped as delivered — dropping or
+merging pages is a content call, not a build one.

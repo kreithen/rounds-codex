@@ -1,4 +1,13 @@
 {
-  "_note": "Read visually off each page's header, not the footer IMAGE TITLE field. Page 6's footer says 'Clinical Evaluation: History, Exam & Labs' but the header reads '...History, Physical Exam & Labs' — the header wins. Fill in 1-5 and 7-10 when those pages arrive.",
-  "6": "Clinical Evaluation: History, Physical Exam & Labs"
+  "_note": "Read visually off each page header, not the footer IMAGE TITLE field. Shipped 2026-07-28.",
+  "1": "Overview & Essentials",
+  "2": "Labeled Anatomy & Key Relations",
+  "3": "Pathophysiology",
+  "4": "Clinical Presentation",
+  "5": "Physical Examination",
+  "6": "Clinical Evaluation: History, Physical Exam & Labs",
+  "7": "Diagnostic Imaging",
+  "8": "Microscopic Pathology & Disease Progression",
+  "9": "Management & Treatment",
+  "10": "Clinical Pearls & High-Yield Takeaways"
 }

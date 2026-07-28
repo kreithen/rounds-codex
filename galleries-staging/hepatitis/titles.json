@@ -1,7 +1,13 @@
 {
-  "_note": "Read visually off each page's header, not the footer IMAGE TITLE field, which is unreliable. Indexed by page number; fill in 5-10 when those pages arrive.",
+  "_note": "Read visually off each page header, not the footer IMAGE TITLE field. Shipped 2026-07-28.",
   "1": "Overview: Viral Hepatitis",
   "2": "Labeled Liver Anatomy",
   "3": "Pathophysiology & Viral Life Cycles",
-  "4": "Clinical Presentation"
+  "4": "Clinical Presentation",
+  "5": "Physical Examination",
+  "6": "Diagnostic Evaluation",
+  "7": "Gross Pathology",
+  "8": "Management & Treatment",
+  "9": "Treatment & Procedures",
+  "10": "Clinical Pearls & Key Takeaways"
 }
