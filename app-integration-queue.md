@@ -870,3 +870,39 @@ Therapy Overview table and Chronic HBV/HCV management blocks almost verbatim; 9 
 duplicates in layout. Appendicitis 5 ("Physical Examination") and 6 ("Clinical Evaluation")
 both work through McBurney/Rovsing/psoas/obturator/rebound. Shipped as delivered — dropping or
 merging pages is a content call, not a build one.
+
+### 11. PDF button, deep search, gallery links, spaced review (`8f41750`)
+Four of five recommendations from the review of 2026-07-28. **Offline gallery caching was
+deliberately deferred** to the App Store submission pass at the user's direction.
+
+**PDF button.** Shipped as `onclick="toast('Downloads the gallery PDF')"` — announcing the thing
+it wasn't doing — while all 44 galleries had a correct PDF on disk and a `pdf` path in
+`galleries.json`. Nothing was missing but the wiring. The id comes from `galHTML`'s argument,
+**not the global `GID`**: `GID` is assigned only by `openViewer`, so on a gallery whose viewer
+you haven't opened it's `null`, and the first attempt reported "no PDF for this gallery yet".
+Caught only because the test waits for an actual download event instead of just clicking.
+
+**Deep search.** Was `d.name.toLowerCase().includes(term)` and nothing else: "chest pain" → 0
+results while appearing in 31 conditions, "jaundice" → 0 while appearing in 8. Now indexes
+tagline + nine body fields + 440 gallery page titles. **Markup must be stripped** — body text is
+authored with `<b>`, so a raw index makes "b" match everything and hides real phrases
+(`<b>jaundice,</b> dark urine` has no substring "jaundice, dark urine"). Ranked name → tagline
+→ gallery page → body, rendered **flat while searching** because category grouping fights
+relevance, with a per-card match line since 37 unexplained results reads as a bug.
+
+**Gallery links `/g/<id>`.** Third one-segment route; `RC_ROOT` is now `/^\/(c|s|g)\//`. A route
+that regex doesn't know becomes a `<base>` folder and every `content/*.json` 404s — the trap
+`/s/` hit for real. Inbound links seed `library → detail → gallery` so Back works.
+
+**Spaced review.** `RC_REVIEW` in `rc.review.v1`; Leitner boxes over SM-2 because a box number
+is inspectable when a schedule looks wrong and an ease factor isn't. **Bookmarks are enrolment**
+— the star already meant "I'm studying this", and a separate "add to review" would have split
+that meaning and left the star inert. Un-bookmark drops from the queue, keeps the schedule.
+**Dates are local `YYYY-MM-DD` compared as strings**: ms arithmetic on a 24-hour day gets DST
+wrong twice a year and surfaces items a day early. Grade buttons show their own intervals —
+hiding the schedule makes the choice arbitrary. "Again" re-queues at the session's END, because
+an immediate re-show tests recognition rather than recall.
+
+Still open from that review: **quizzes** (9 of 181 conditions — the user is writing these),
+**offline galleries**, and the strategic one — gallery page content lives only as pixels, which
+caps search, quiz generation and accessibility at once.

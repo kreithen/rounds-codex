@@ -90,6 +90,28 @@ no backend. This file is context for future sessions — read it before starting
   off the entry** — `paint()` is also called by `setMode()`, the clear-data action and the
   content loader, and any of those restoring a stale saved offset would teleport the user.
   Forward navigation, `root()` and everything else still start at the top.
+- **Gallery links (`/g/<id>`)** — Share button in the gallery header, added by
+  `scripts/add_gallery_share.js`. A shared gallery seeds `library → detail → gallery` so Back
+  isn't a dead end. Third one-segment route, so the `RC_ROOT` regex is now `/^\/(c|s|g)\//`.
+- **Gallery PDF download** — `rcGalleryPDF(id)`, wired by `scripts/wire_gallery_pdf.js`. The
+  button was a `toast()` stub for months while all 44 PDFs existed on disk. **Pass the id from
+  `galHTML`'s argument, not the global `GID`** — `GID` is set only by `openViewer`, so it's
+  `null` on a gallery you haven't opened a page in. `galleries.json`'s `pdf` is root-relative
+  and is NOT resolved through `base` (several galleries have a non-empty `base` that would
+  break it).
+- **Deep search** — `scripts/add_deep_search.js`. Searches tagline + all nine body fields +
+  the 440 gallery page titles, ranked, with a match line on each card saying where it hit.
+  **The index must strip `<b>` tags**: authored markup means a raw index makes "b" match all
+  181 conditions and breaks real phrases across tags. While a term is present the list renders
+  **flat in score order** — category grouping fights relevance. `refs` is excluded on purpose
+  (citations match author names).
+- **Spaced review** — `scripts/add_review_queue.js`. `RC_REVIEW` (`rc.review.v1`), Leitner
+  boxes `[1,2,4,8,16,32,64]` days, self-graded Again/Good/Easy. **Bookmarks are the enrolment
+  signal** — no second gesture. Un-bookmarking drops an item from the queue but keeps its
+  schedule. **Dates are local `YYYY-MM-DD` compared as strings** — ms arithmetic on a 24h day
+  gets DST wrong and shows items a day early. "Again" re-queues at the END of the session;
+  immediate re-show is recognition, not recall. The Library card renders into `#revCard` and is
+  empty when nothing is due. **Offline gallery caching was deferred to the App Store pass.**
 - **Persistence** — `RC_STORE` (bookmarks, best first-try quiz score) and `NCLEX_STORE`
   (exam save/resume, attempt history, mastery), both `localStorage`, both device-local and
   never transmitted, both behind an interface so sync can be added later. Added by
