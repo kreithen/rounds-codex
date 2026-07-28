@@ -814,3 +814,30 @@ properly, so the failure looked like a routing bug rather than a base-URL one. N
 
 `scripts/netlifysim.js` now **reads the rules out of `_redirects`** instead of hard-coding
 `/c/*`, which is what made a perfectly correct `/s/*` rule 404 locally.
+
+### 9. Back restores your scroll position (`0e6bc01`)
+`paint()` ended with an unconditional `window.scrollTo(0,0)`, so every navigation reset the
+scroll — including `back()`. Scroll down the library, open a condition, tap back, and you were
+at the top again.
+
+`go()` now records `window.scrollY` on the entry it leaves; `back()` hands it to `paint(y)`.
+
+**Why an argument and not a property `paint()` reads for itself:** `paint()` is also called by
+`setMode()`, by the clear-data action and by the content loader. Any of those would have
+restored whatever offset happened to be sitting on the current entry — so switching mode while
+sitting at the top of the library would have thrown you back down to wherever you last left it.
+Passing it explicitly means only `back()` can trigger a restore. There is a test for that case
+specifically.
+
+General, not library-specific: the same three lines cover gallery → back to the galleries
+index and drug → back to the Rx list.
+
+The restore is synchronous — the library builds its list in one `innerHTML` write, so the
+height is final immediately and a deferred scroll would visibly flicker. It re-applies once on
+the next frame for views that settle late (the galleries index positions thumbs on a rAF),
+where scrolling too early clamps against a page that has not finished growing. Guarded on a
+non-zero offset, so forward navigation is byte-for-byte the old scroll-to-top.
+
+Checked: a card 3200px down, back lands on 3200 with that card back on screen; nested stacks
+restore each level; mode switch does not teleport; tabs still start at the top; a list filtered
+shorter while you were away clamps to its end.

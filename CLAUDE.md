@@ -84,6 +84,12 @@ no backend. This file is context for future sessions — read it before starting
   **Any new one-segment route must be added to the `RC_ROOT` regex** (`/^\/(c|s)\//`) or
   `<base>` becomes that folder and every `content/*.json` 404s — the app then boots to
   "Content didn't load" with no page error, because the loader catches it.
+- **Scroll restore on Back** — `go()` saves `window.scrollY` onto the stack entry it leaves;
+  `back()` passes it to `paint(y)`, which scrolls there instead of to 0. Added by
+  `scripts/add_scroll_restore.js`. **The offset is an argument, not something `paint()` reads
+  off the entry** — `paint()` is also called by `setMode()`, the clear-data action and the
+  content loader, and any of those restoring a stale saved offset would teleport the user.
+  Forward navigation, `root()` and everything else still start at the top.
 - **Persistence** — `RC_STORE` (bookmarks, best first-try quiz score) and `NCLEX_STORE`
   (exam save/resume, attempt history, mastery), both `localStorage`, both device-local and
   never transmitted, both behind an interface so sync can be added later. Added by
