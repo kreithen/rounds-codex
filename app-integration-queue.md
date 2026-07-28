@@ -785,3 +785,32 @@ rather than the page, and buffering 3.5 MB gallery PDFs before the browser sees 
 can stop the browser ever noticing a newer one, so the repair has to be pulled in by the first
 load that succeeds. `verify_sw.js` now **fails if the navigate branch clones**, and that guard
 was checked against the version that shipped the bug.
+
+### 8. Section share — `/s/<slug>` (`a5a7c05`)
+A Share button in the library's count row, opposite "N conditions", visible only once a real
+specialty is picked. With **All** showing it stays hidden — sharing the whole library is
+sharing the app, which `shareApp()` on the About page already does. Same outlined pill, mode
+colour, glyph and wording as the condition Share button.
+
+`/s/<slug>` mirrors `/c/<id>`, same 200-rewrite in `_redirects`. Slugs: `Renal & GU` →
+`renal-gu`, `Women's Health` → `womens-health`. **`add_section_share.js` asserts the 21 slugs
+are distinct** — a collision would make a shared link ambiguous and nothing at runtime would
+catch it.
+
+**No mode in the link, deliberately.** The section list is identical in all three modes; mode
+only changes the depth of content inside a condition. Pinning it would override the recipient's
+own preference for nothing and make the URL uglier.
+
+The address bar follows the filter as well, so a section reached by tapping a chip is as
+copyable as one arrived at by link. `libPick` calls `rcSyncURL` itself — a chip re-renders the
+list without going through `paint()`.
+
+**The trap this exposed:** `RC_ROOT`, which decides `<base>`, only tested `/^\/c\//`. On
+`/s/respiratory` it fell through to "strip the last path segment", made the base `/s/`, and
+every `content/*.json` resolved to `/s/content/…`. The app booted straight to "Content didn't
+load" — **with zero page errors**, because the loader catches that case and reports it
+properly, so the failure looked like a routing bug rather than a base-URL one. Now
+`/^\/(c|s)\//`. Any future one-segment route needs adding there.
+
+`scripts/netlifysim.js` now **reads the rules out of `_redirects`** instead of hard-coding
+`/c/*`, which is what made a perfectly correct `/s/*` rule 404 locally.

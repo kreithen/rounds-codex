@@ -77,6 +77,13 @@ no backend. This file is context for future sessions — read it before starting
   `text` is what makes iOS Messages show the name; `title` alone sends a bare URL. No sheet
   (desktop, http) → copies the link. **Its colour is `--accent` (the MODE), the ICD pill's is
   `--sec` (the CATEGORY, set inline on `.pad`)** — they are meant to differ.
+- **Section links (`/s/<slug>`)** — a Share button in the library count row, shown only when a
+  specialty chip is selected. Added by `scripts/add_section_share.js`. Category names are
+  slugged (`Renal & GU` → `renal-gu`); the script asserts the 21 slugs are distinct. The link
+  carries **no mode** on purpose — the section list is identical in all three.
+  **Any new one-segment route must be added to the `RC_ROOT` regex** (`/^\/(c|s)\//`) or
+  `<base>` becomes that folder and every `content/*.json` 404s — the app then boots to
+  "Content didn't load" with no page error, because the loader catches it.
 - **Persistence** — `RC_STORE` (bookmarks, best first-try quiz score) and `NCLEX_STORE`
   (exam save/resume, attempt history, mastery), both `localStorage`, both device-local and
   never transmitted, both behind an interface so sync can be added later. Added by
