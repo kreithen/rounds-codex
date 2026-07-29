@@ -906,3 +906,34 @@ an immediate re-show tests recognition rather than recall.
 Still open from that review: **quizzes** (9 of 181 conditions — the user is writing these),
 **offline galleries**, and the strategic one — gallery page content lives only as pixels, which
 caps search, quiz generation and accessibility at once.
+
+### 12. IBD, Diverticulitis and Bowel Obstruction galleries (`0e6580b`) — 47 total
+Three complete Gastroenterology sets. IBD completes the half-set staged the day before;
+Diverticulitis and Bowel Obstruction arrived whole. All three conditions already existed.
+
+**30 uploads, 25 unique images** — Diverticulitis pages 6–10 were each sent twice. Deduplicated
+by content hash *before* reading any of them, so the same page could not be filed under two
+numbers. Worth doing as a first step on any large batch: the duplicates had different upload
+prefixes and were indistinguishable by name.
+
+**Resolution.** Seven pages arrived at 1536×2304 and one at 1023×1537; all normalised to
+1024×1536 per the standard. `fix_page_logo.py` now errors on a mixed set rather than silently
+resampling — that guard exists because the old hard-coded `SIZE` would have thrown away the
+larger pages' detail without a word.
+
+**No logo pass was run, deliberately.** Every page already carries the canonical mark. Running
+the erase-and-redraw on correct artwork is surgery for no gain, and that pass has a history of
+over-reaching (it clipped the frame corner on nine pages the day before). Pages were resized
+where needed and encoded at q88; nothing else was touched.
+
+**Page format**: the new `<CONDITION>-MODULE-00N` footer with no IMAGE TITLE field is now the
+norm across all three sets. Titles come from the subtitle line under the main heading.
+
+**Content notes for the physician** (shipped as delivered — wording is a content call):
+- IBD page 9 subtitle reads "Crohnn's disease" — doubled n.
+- Diverticulitis page 5 labels the severity scale "(AMBROSMEITT)"; the classification is
+  **Ambrosetti**.
+- IBD progress dots show 8 on pages 1–2 and 10 on pages 3–10; several Bowel Obstruction pages
+  show 11–12. Cosmetic only, and the header text is right everywhere — but see the standing
+  note that the dot strip must never be used to order pages.
+- IBD page 1 is © 2025 where pages 2–10 are © 2026.
