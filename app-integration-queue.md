@@ -965,3 +965,34 @@ Method that made this tractable: segment the line into glyph runs by column gaps
 with its width and advance, and map runs to letters before touching anything. The run list is
 also how you catch merged glyphs — `TT` came through as one 17px run, which would have wrecked a
 naive index-based edit.
+
+### 14. Eight GI quizzes (`c96305b`) — 9 → 17 quizzes, 80 new questions
+Appendicitis, Viral Hepatitis, Diverticulitis, Bowel Obstruction, Peptic Ulcer Disease,
+Cirrhosis, Acute Pancreatitis, IBD. All eight already had condition pages; five now have a
+gallery too, so quiz and illustrations sit together. Source PDFs and the transcription live in
+`quizzes-staging/`.
+
+**Faithful transcription.** Stems, options, answers and explanations exactly as delivered. IBD
+is the only quiz with `why[]` and `img[]` — its PDF was the only one supplying per-option
+rationales and gallery references. Nothing was authored: rationales, pearls and image links are
+physician content.
+
+**The one dangerous field is `correct`.** It is a 0-based index; every source PDF states the
+answer as a letter. An off-by-one converts a right answer into a wrong one and *nothing
+downstream can detect it* — the quiz still runs, still scores, still looks correct. So the
+batch carries the printed letters in a sibling `-answers.json` and `merge_quizzes.js` asserts
+`ch[correct]` is the option each letter names. **Always pass `--answers`.**
+
+**One stem reworded.** Bowel Obstruction Q6 read "A cecal diameter greater than approximately:"
+— no predicate, so it does not parse as a question. Now "Perforation risk rises once cecal
+diameter exceeds approximately:". Same answer, same explanation, the meaning its options
+already implied.
+
+**Engine behaviour worth knowing** (a test was written against the wrong assumption first):
+`exp` renders only on a **correct** answer. A wrong pick shows `why[qsel]`, or the generic
+"That choice is not correct — try again", and the user retries. So a quiz without `why[]`
+withholds its explanation until the learner gets there — which is a reasonable design, but it
+means the seven quizzes without rationales give less feedback on a miss than IBD does.
+
+**Still open:** per-option rationales for the seven non-IBD quizzes would make wrong answers
+teach rather than just retry. That is clinical writing, not transcription.

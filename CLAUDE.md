@@ -144,7 +144,13 @@ no backend. This file is context for future sessions — read it before starting
 - **Quizzes**: `QUIZZES={ "<id>": {condition, questions:[{q, ch:[...], correct, exp,
   pearl?, why?:[...], img?:[N]}]} }`. Having `QUIZZES[id]` auto-enables the "Take the Quiz"
   button in `detailHTML`. `img:[N]` links a question to gallery image N. `why[i]` shows on a
-  wrong pick (optional; falls back to generic text).
+  wrong pick (optional; falls back to generic text). **`exp` is shown only on a CORRECT
+  answer** — a wrong pick gets `why[i]` or "That choice is not correct — try again", and the
+  user retries. Add a quiz with `scripts/merge_quizzes.js <batch.json> <content-dir>
+  --answers <letters.json>`: **always pass the printed answer letters.** `correct` is 0-based
+  while every source PDF states a letter, and an off-by-one turns a right answer wrong with
+  nothing downstream able to detect it. The validator also checks `why[]` aligns with `ch[]`
+  (and is empty at `correct`), and that no `img` points past the end of the gallery.
 - **Resident mode**: `RES_DATA` (array, each `.sec`=specialty code), `RES_ACTIVE` (Set of active
   codes), `RES_SECTION2_TITLE` (code→"Top X…" header), `RES_SPECIALTIES` (`[{id,n}]` picker),
   `RES_COND` (conditions per specialty). `resSpecHTML(spec)` renders a specialty page: section-2

@@ -1,0 +1,11 @@
+{
+  "_note": "Answer letters exactly as printed in each source PDF. merge_quizzes.js asserts ch[correct] is the option this letter points at, which is the one transcription error that is otherwise invisible.",
+  "appendicitis":      ["B","B","D","C","C","C","C","C","C","C"],
+  "hepatitis":         ["D","D","B","C","C","C","B","C","C","C"],
+  "diverticulitis":    ["C","D","C","B","D","C","C","C","E","C"],
+  "bowel-obstruction": ["C","B","C","C","A","C","C","B","B","C"],
+  "pud":               ["B","B","C","C","A","B","B","B","B","B"],
+  "cirrhosis":         ["C","B","D","B","B","B","C","D","B","C"],
+  "pancreatitis":      ["C","B","C","B","D","E","C","C","B","D"],
+  "ibd":               ["B","C","C","C","B","B","A","B","A","B"]
+}

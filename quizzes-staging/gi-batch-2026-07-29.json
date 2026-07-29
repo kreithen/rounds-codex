@@ -1,0 +1,1110 @@
+{
+ "_note": "Eight GI quizzes transcribed from the physician's PDFs, 2026-07-29. Faithful transcription: question stems, options, correct answers and explanations are exactly as delivered. why[] and img[] appear only for IBD, whose PDF supplied per-option rationales and explicit gallery references; nothing was authored here.",
+ "appendicitis": {
+  "condition": "Appendicitis",
+  "questions": [
+   {
+    "q": "Pain migration is explained by?",
+    "ch": [
+     "Bacterial invasion",
+     "Visceral then parietal pain",
+     "Ischemia",
+     "Ileal obstruction",
+     "Nerve compression"
+    ],
+    "correct": 1,
+    "exp": "Visceral pain becomes localized when the parietal peritoneum becomes inflamed."
+   },
+   {
+    "q": "Most common initiating event?",
+    "ch": [
+     "Viral gastroenteritis",
+     "Luminal obstruction by fecalith",
+     "Cecal volvulus",
+     "Thrombosis",
+     "Embolism"
+    ],
+    "correct": 1,
+    "exp": "Luminal obstruction initiates appendicitis."
+   },
+   {
+    "q": "LLQ palpation causing RLQ pain?",
+    "ch": [
+     "McBurney",
+     "Psoas",
+     "Obturator",
+     "Rovsing",
+     "Dunphy"
+    ],
+    "correct": 3,
+    "exp": "Classic Rovsing sign."
+   },
+   {
+    "q": "Preferred adult imaging?",
+    "ch": [
+     "X-ray",
+     "MRI",
+     "CT with IV contrast",
+     "Barium",
+     "Colonoscopy"
+    ],
+    "correct": 2,
+    "exp": "CT is most accurate in adults."
+   },
+   {
+    "q": "US first in?",
+    "ch": [
+     "Adults",
+     "Elderly",
+     "Children",
+     "Diverticulitis",
+     "Constipation"
+    ],
+    "correct": 2,
+    "exp": "Children generally undergo ultrasound first."
+   },
+   {
+    "q": "Suggests perforation?",
+    "ch": [
+     "Hunger",
+     "Nausea",
+     "Sudden pain relief then worsening",
+     "Mild WBC",
+     "Constipation"
+    ],
+    "correct": 2,
+    "exp": "Suggests perforation."
+   },
+   {
+    "q": "Definitive treatment?",
+    "ch": [
+     "Antibiotics",
+     "Open surgery",
+     "Laparoscopic appendectomy",
+     "Observe",
+     "Delay"
+    ],
+    "correct": 2,
+    "exp": "Preferred definitive treatment."
+   },
+   {
+    "q": "Nonoperative candidate?",
+    "ch": [
+     "Peritonitis",
+     "Shock",
+     "Selected uncomplicated case",
+     "Perforated",
+     "Diffuse peritonitis"
+    ],
+    "correct": 2,
+    "exp": "Only selected uncomplicated patients."
+   },
+   {
+    "q": "Delayed treatment risk?",
+    "ch": [
+     "AAA",
+     "Pancreatitis",
+     "Abscess",
+     "Ulcer",
+     "Cholecystitis"
+    ],
+    "correct": 2,
+    "exp": "Abscess is a common complication."
+   },
+   {
+    "q": "Clinical pearl?",
+    "ch": [
+     "Normal appetite",
+     "Migratory pain unimportant",
+     "Early treatment reduces complications",
+     "WBC always elevated",
+     "CT always required"
+    ],
+    "correct": 2,
+    "exp": "Early recognition improves outcomes."
+   }
+  ]
+ },
+ "hepatitis": {
+  "condition": "Viral Hepatitis",
+  "questions": [
+   {
+    "q": "Which virus is transmitted fecal-orally and rarely becomes chronic?",
+    "ch": [
+     "HBV",
+     "HCV",
+     "HDV",
+     "HAV",
+     "Hepatitis G"
+    ],
+    "correct": 3,
+    "exp": "HAV is transmitted fecal-orally and is typically self-limited."
+   },
+   {
+    "q": "Which virus requires HBsAg to replicate?",
+    "ch": [
+     "HAV",
+     "HBV",
+     "HCV",
+     "HDV",
+     "HEV"
+    ],
+    "correct": 3,
+    "exp": "HDV requires HBV."
+   },
+   {
+    "q": "Acute viral hepatitis lab pattern?",
+    "ch": [
+     "AST>ALT",
+     "ALT>AST",
+     "Isolated ALP",
+     "Normal",
+     "CK only"
+    ],
+    "correct": 1,
+    "exp": "ALT usually exceeds AST."
+   },
+   {
+    "q": "Highest chronicity risk?",
+    "ch": [
+     "Adult HAV",
+     "Adult HEV",
+     "Neonatal HBV",
+     "HAV+HEV",
+     "Vaccinated adult"
+    ],
+    "correct": 2,
+    "exp": "Neonatal HBV has high chronicity."
+   },
+   {
+    "q": "First-line chronic HCV therapy?",
+    "ch": [
+     "Peg-IFN",
+     "Ribavirin",
+     "DAAs",
+     "Transplant",
+     "Steroids"
+    ],
+    "correct": 2,
+    "exp": "DAAs cure most chronic HCV."
+   },
+   {
+    "q": "Acute liver failure sign?",
+    "ch": [
+     "Fatigue",
+     "ALT elevation",
+     "Confusion + INR>1.5",
+     "Pruritus",
+     "Nausea"
+    ],
+    "correct": 2,
+    "exp": "Encephalopathy with INR elevation indicates acute liver failure."
+   },
+   {
+    "q": "Long-term complication?",
+    "ch": [
+     "Appendicitis",
+     "HCC",
+     "Pancreatitis",
+     "Diverticulitis",
+     "Gallstones"
+    ],
+    "correct": 1,
+    "exp": "HCC is a major complication."
+   },
+   {
+    "q": "HEV is:",
+    "ch": [
+     "Usually chronic",
+     "Requires HBV",
+     "Dangerous in pregnancy",
+     "Prevented by HBV vaccine",
+     "Lifelong antivirals"
+    ],
+    "correct": 2,
+    "exp": "Pregnancy increases severity."
+   },
+   {
+    "q": "Appropriate counseling?",
+    "ch": [
+     "Drink alcohol",
+     "Avoid vaccines",
+     "Avoid alcohol/hepatotoxins",
+     "Bedrest forever",
+     "Lifelong antibiotics"
+    ],
+    "correct": 2,
+    "exp": "Avoid hepatotoxic exposures."
+   },
+   {
+    "q": "HCV cure confirmed by:",
+    "ch": [
+     "ALT normal",
+     "Negative antibody",
+     "SVR12 undetectable RNA",
+     "Bilirubin",
+     "HBsAg"
+    ],
+    "correct": 2,
+    "exp": "SVR12 confirms cure."
+   }
+  ]
+ },
+ "diverticulitis": {
+  "condition": "Diverticulitis",
+  "questions": [
+   {
+    "q": "What best describes diverticulosis?",
+    "ch": [
+     "Inflammation of colonic diverticula",
+     "Perforation of the sigmoid colon",
+     "Mucosal and submucosal outpouchings through the muscular wall without inflammation",
+     "Full-thickness ulceration of the colon",
+     "Diffuse colitis"
+    ],
+    "correct": 2,
+    "exp": "Diverticulosis refers to mucosal and submucosal herniations through weak points in the muscularis propria without inflammation."
+   },
+   {
+    "q": "The most common location of diverticulitis is the:",
+    "ch": [
+     "Cecum",
+     "Ascending colon",
+     "Transverse colon",
+     "Sigmoid colon",
+     "Rectum"
+    ],
+    "correct": 3,
+    "exp": "The sigmoid colon is the most common site because of its smaller lumen and higher intraluminal pressures."
+   },
+   {
+    "q": "Which mechanism most commonly initiates acute diverticulitis?",
+    "ch": [
+     "Viral infection",
+     "Autoimmune vasculitis",
+     "Obstruction of a diverticulum with subsequent microperforation",
+     "Mesenteric ischemia",
+     "Colon cancer invasion"
+    ],
+    "correct": 2,
+    "exp": "Obstruction by a fecalith or stool leads to bacterial overgrowth, microperforation, and inflammation."
+   },
+   {
+    "q": "Which combination is the classic presentation of uncomplicated diverticulitis?",
+    "ch": [
+     "RLQ pain, jaundice, diarrhea",
+     "LLQ pain, fever, leukocytosis",
+     "Diffuse abdominal pain with hematemesis",
+     "Painless rectal bleeding",
+     "RUQ pain after meals"
+    ],
+    "correct": 1,
+    "exp": "The classic presentation is left lower quadrant pain with fever and leukocytosis."
+   },
+   {
+    "q": "Preferred imaging study?",
+    "ch": [
+     "Colonoscopy",
+     "Barium enema",
+     "MRI abdomen",
+     "CT abdomen/pelvis with IV contrast",
+     "Plain abdominal radiograph"
+    ],
+    "correct": 3,
+    "exp": "CT with IV contrast is the diagnostic gold standard."
+   },
+   {
+    "q": "Characteristic CT finding?",
+    "ch": [
+     "Pneumobilia",
+     "Portal venous gas",
+     "Pericolic fat stranding",
+     "Apple-core lesion",
+     "Pneumoperitoneum only"
+    ],
+    "correct": 2,
+    "exp": "Inflamed diverticula with pericolic fat stranding are characteristic."
+   },
+   {
+    "q": "Management of a 4-cm pericolic abscess?",
+    "ch": [
+     "Observation",
+     "Emergent colectomy",
+     "Percutaneous drainage plus antibiotics",
+     "Colonoscopy",
+     "High-fiber diet"
+    ],
+    "correct": 2,
+    "exp": "Abscesses >3-5 cm are generally treated with drainage and antibiotics."
+   },
+   {
+    "q": "Which statement about antibiotics is correct?",
+    "ch": [
+     "Everyone needs IV antibiotics",
+     "Antibiotics are never used",
+     "Mild uncomplicated disease in selected immunocompetent patients may be managed without routine antibiotics",
+     "Oral antibiotics are contraindicated",
+     "Antibiotics only for perforation"
+    ],
+    "correct": 2,
+    "exp": "Modern guidelines recommend selective antibiotic use in carefully selected uncomplicated cases."
+   },
+   {
+    "q": "Which Hinchey stage represents generalized fecal peritonitis?",
+    "ch": [
+     "Ia",
+     "Ib",
+     "II",
+     "III",
+     "IV"
+    ],
+    "correct": 4,
+    "exp": "Stage IV is generalized fecal peritonitis and requires emergency management."
+   },
+   {
+    "q": "Best long-term recurrence prevention?",
+    "ch": [
+     "Lifelong antibiotics",
+     "Liquid diet forever",
+     "High-fiber diet, exercise, smoking cessation, and weight management",
+     "Annual CT scans",
+     "Surgery after every second episode"
+    ],
+    "correct": 2,
+    "exp": "Lifestyle modification is the cornerstone of recurrence prevention."
+   }
+  ]
+ },
+ "bowel-obstruction": {
+  "condition": "Bowel Obstruction",
+  "questions": [
+   {
+    "q": "Which is the first priority in suspected bowel obstruction?",
+    "ch": [
+     "Colonoscopy",
+     "Immediate oral feeding",
+     "Resuscitation with IV fluids, bowel rest, and decompression",
+     "Laxatives",
+     "Routine antibiotics"
+    ],
+    "correct": 2,
+    "exp": "Initial management focuses on resuscitation, NPO status, and decompression."
+   },
+   {
+    "q": "The most common cause of adult small bowel obstruction is:",
+    "ch": [
+     "Volvulus",
+     "Adhesions",
+     "Crohn disease",
+     "Intussusception",
+     "Hernia"
+    ],
+    "correct": 1,
+    "exp": "Adhesions are the leading cause of adult SBO."
+   },
+   {
+    "q": "Preferred imaging study?",
+    "ch": [
+     "MRI",
+     "Ultrasound",
+     "CT abdomen/pelvis with IV contrast",
+     "Colonoscopy",
+     "Barium enema"
+    ],
+    "correct": 2,
+    "exp": "Contrast CT best identifies location, cause, severity, and complications."
+   },
+   {
+    "q": "Which finding raises concern for strangulation?",
+    "ch": [
+     "Passing flatus",
+     "Improving pain",
+     "Rising lactate",
+     "Hyperactive bowel sounds only",
+     "Normal CT"
+    ],
+    "correct": 2,
+    "exp": "Rising lactate may indicate bowel ischemia."
+   },
+   {
+    "q": "Typical proximal SBO symptom?",
+    "ch": [
+     "Early bilious vomiting",
+     "Massive hematochezia",
+     "Jaundice",
+     "Dysuria",
+     "Hemoptysis"
+    ],
+    "correct": 0,
+    "exp": "Proximal SBO usually causes early vomiting."
+   },
+   {
+    "q": "Perforation risk rises once cecal diameter exceeds approximately:",
+    "ch": [
+     "3 cm",
+     "6 cm",
+     "9-12 cm",
+     "15 cm",
+     "20 cm"
+    ],
+    "correct": 2,
+    "exp": "Marked cecal dilation increases perforation risk."
+   },
+   {
+    "q": "When is nonoperative management appropriate?",
+    "ch": [
+     "Peritonitis",
+     "Closed-loop obstruction",
+     "Stable adhesive SBO without ischemia",
+     "Free air",
+     "Septic shock"
+    ],
+    "correct": 2,
+    "exp": "Stable adhesive SBO may undergo a monitored nonoperative trial."
+   },
+   {
+    "q": "Which medication class should generally be avoided in fixed mechanical obstruction?",
+    "ch": [
+     "PPIs",
+     "Prokinetics",
+     "NSAIDs",
+     "Antihistamines",
+     "Statins"
+    ],
+    "correct": 1,
+    "exp": "Prokinetics may worsen a fixed obstruction."
+   },
+   {
+    "q": "Which complication most directly results from impaired bowel perfusion?",
+    "ch": [
+     "Asthma",
+     "Ischemia",
+     "Migraine",
+     "Pancreatitis",
+     "Nephrolithiasis"
+    ],
+    "correct": 1,
+    "exp": "Reduced perfusion leads to ischemic bowel injury."
+   },
+   {
+    "q": "The best summary principle is:",
+    "ch": [
+     "Delay surgery until pain resolves",
+     "Feed immediately",
+     "Resuscitate, decompress, assess, decide, act early",
+     "Antibiotics cure all SBO",
+     "Ignore serial exams"
+    ],
+    "correct": 2,
+    "exp": "Early recognition and appropriate escalation improve outcomes."
+   }
+  ]
+ },
+ "pud": {
+  "condition": "Peptic Ulcer Disease",
+  "questions": [
+   {
+    "q": "What are the two most common causes of peptic ulcer disease?",
+    "ch": [
+     "Crohn disease",
+     "H. pylori infection and NSAID use",
+     "Alcohol",
+     "Gallstones",
+     "Viral infection"
+    ],
+    "correct": 1,
+    "exp": "H. pylori infection and NSAID/aspirin use are the dominant causes."
+   },
+   {
+    "q": "Duodenal ulcer pain classically:",
+    "ch": [
+     "Worsens with food",
+     "Improves with food",
+     "Unrelated to meals",
+     "Shoulder pain",
+     "Exercise-induced"
+    ],
+    "correct": 1,
+    "exp": "Food typically relieves duodenal ulcer pain."
+   },
+   {
+    "q": "Diagnostic gold standard?",
+    "ch": [
+     "CT",
+     "MRI",
+     "Upper endoscopy (EGD)",
+     "Ultrasound",
+     "X-ray"
+    ],
+    "correct": 2,
+    "exp": "EGD confirms diagnosis and permits biopsy/hemostasis."
+   },
+   {
+    "q": "Why biopsy gastric ulcers?",
+    "ch": [
+     "Measure acid",
+     "Detect H. pylori only",
+     "Exclude malignancy",
+     "Stage gastritis",
+     "Check bleeding"
+    ],
+    "correct": 2,
+    "exp": "Gastric ulcers require biopsy to exclude cancer."
+   },
+   {
+    "q": "Active H. pylori testing includes:",
+    "ch": [
+     "Urea breath test",
+     "ANA",
+     "ESR",
+     "Lipase",
+     "Troponin"
+    ],
+    "correct": 0,
+    "exp": "Urea breath testing detects active infection."
+   },
+   {
+    "q": "First-line acid suppression:",
+    "ch": [
+     "Misoprostol",
+     "PPI",
+     "Steroid",
+     "Antacid only",
+     "Antibiotic"
+    ],
+    "correct": 1,
+    "exp": "PPIs are first-line therapy."
+   },
+   {
+    "q": "Rigid board-like abdomen suggests:",
+    "ch": [
+     "Ileus",
+     "Perforation",
+     "IBS",
+     "Pancreatitis",
+     "Constipation"
+    ],
+    "correct": 1,
+    "exp": "Perforation is a surgical emergency."
+   },
+   {
+    "q": "Posterior duodenal ulcers may erode the:",
+    "ch": [
+     "Splenic artery",
+     "Gastroduodenal artery",
+     "SMA",
+     "Hepatic artery",
+     "Renal artery"
+    ],
+    "correct": 1,
+    "exp": "This may cause brisk hemorrhage."
+   },
+   {
+    "q": "Preferred regimen with high clarithromycin resistance:",
+    "ch": [
+     "Triple therapy",
+     "Bismuth quadruple therapy",
+     "H2 blocker",
+     "Misoprostol",
+     "Antacid"
+    ],
+    "correct": 1,
+    "exp": "Bismuth quadruple therapy is preferred where clarithromycin resistance is high."
+   },
+   {
+    "q": "After treatment of H. pylori:",
+    "ch": [
+     "Stop follow-up",
+     "Confirm eradication",
+     "Repeat CT only",
+     "Colonoscopy",
+     "Lifelong PPI"
+    ],
+    "correct": 1,
+    "exp": "Confirmation of eradication reduces recurrence."
+   }
+  ]
+ },
+ "cirrhosis": {
+  "condition": "Cirrhosis",
+  "questions": [
+   {
+    "q": "A patient with cirrhosis develops new ascites. Which event marks decompensated cirrhosis?",
+    "ch": [
+     "Mild thrombocytopenia",
+     "Spider angiomas",
+     "Ascites",
+     "Elevated AST",
+     "Fatigue"
+    ],
+    "correct": 2,
+    "exp": "Ascites is a decompensating event."
+   },
+   {
+    "q": "Portal hypertension primarily results from:",
+    "ch": [
+     "Increased cardiac output",
+     "Increased intrahepatic resistance",
+     "Portal vein thrombosis alone",
+     "Renal vasoconstriction",
+     "Splenic stenosis"
+    ],
+    "correct": 1,
+    "exp": "Fibrosis increases intrahepatic resistance."
+   },
+   {
+    "q": "Best initial imaging?",
+    "ch": [
+     "MRI",
+     "CT",
+     "PET",
+     "Ultrasound",
+     "ERCP"
+    ],
+    "correct": 3,
+    "exp": "Ultrasound is first-line."
+   },
+   {
+    "q": "SAAG >=1.1 indicates:",
+    "ch": [
+     "TB",
+     "Portal hypertension",
+     "Pancreatic ascites",
+     "Cancer",
+     "Nephrotic syndrome"
+    ],
+    "correct": 1,
+    "exp": "High SAAG reflects portal hypertension."
+   },
+   {
+    "q": "Lactulose goal?",
+    "ch": [
+     "1 stool",
+     "2-3 soft stools/day",
+     "5 stools",
+     "No stools",
+     "Weekly"
+    ],
+    "correct": 1,
+    "exp": "Dose is titrated to 2-3 soft stools per day."
+   },
+   {
+    "q": "First-line ascites therapy?",
+    "ch": [
+     "Mannitol",
+     "Spironolactone +/- furosemide",
+     "HCTZ",
+     "Bumetanide",
+     "Acetazolamide"
+    ],
+    "correct": 1,
+    "exp": "Spironolactone with or without furosemide is the standard regimen."
+   },
+   {
+    "q": "SBP diagnosed when PMN is:",
+    "ch": [
+     "50",
+     "100",
+     "250",
+     "500",
+     "1000"
+    ],
+    "correct": 2,
+    "exp": "Ascitic fluid PMN count >=250/microL establishes spontaneous bacterial peritonitis."
+   },
+   {
+    "q": "Transplant score:",
+    "ch": [
+     "SOFA",
+     "APACHE",
+     "Child-Pugh",
+     "MELD-Na",
+     "BISAP"
+    ],
+    "correct": 3,
+    "exp": "MELD-Na is used for transplant allocation."
+   },
+   {
+    "q": "Classic encephalopathy sign?",
+    "ch": [
+     "Murphy",
+     "Asterixis",
+     "Cullen",
+     "Babinski",
+     "Homans"
+    ],
+    "correct": 1,
+    "exp": "Asterixis is the flapping tremor of hepatic encephalopathy."
+   },
+   {
+    "q": "HCC surveillance?",
+    "ch": [
+     "CT yearly",
+     "MRI yearly",
+     "US +/- AFP q6mo",
+     "PET",
+     "None"
+    ],
+    "correct": 2,
+    "exp": "Ultrasound with or without AFP every six months is the recommended surveillance."
+   }
+  ]
+ },
+ "pancreatitis": {
+  "condition": "Acute Pancreatitis",
+  "questions": [
+   {
+    "q": "Diagnosis of acute pancreatitis requires:",
+    "ch": [
+     "Elevated lipase alone",
+     "Characteristic imaging alone",
+     "Any 2 of: characteristic pain, lipase/amylase >3x ULN, characteristic imaging",
+     "Fever plus leukocytosis",
+     "Positive blood cultures"
+    ],
+    "correct": 2,
+    "exp": "Revised Atlanta criteria require any two of the three major diagnostic features."
+   },
+   {
+    "q": "Preferred laboratory test:",
+    "ch": [
+     "AST",
+     "Lipase",
+     "Bilirubin",
+     "CRP",
+     "LDH"
+    ],
+    "correct": 1,
+    "exp": "Lipase is more sensitive and remains elevated longer than amylase."
+   },
+   {
+    "q": "Preferred initial IV fluid:",
+    "ch": [
+     "D5W",
+     "Half-normal saline",
+     "Lactated Ringer's",
+     "Hypertonic saline",
+     "Albumin"
+    ],
+    "correct": 2,
+    "exp": "Goal-directed Lactated Ringer's resuscitation is recommended."
+   },
+   {
+    "q": "Most common etiologies:",
+    "ch": [
+     "Trauma and ERCP",
+     "Gallstones and alcohol",
+     "Autoimmune disease and steroids",
+     "Hypercalcemia and mumps",
+     "Scorpion sting and drugs"
+    ],
+    "correct": 1,
+    "exp": "Gallstones and alcohol account for most cases."
+   },
+   {
+    "q": "Contrast CT is generally most useful:",
+    "ch": [
+     "Immediately",
+     "6 hours",
+     "24 hours",
+     "48-72 hours",
+     "After 2 weeks"
+    ],
+    "correct": 3,
+    "exp": "Early CT can underestimate necrosis."
+   },
+   {
+    "q": "Prophylactic antibiotics in sterile necrosis:",
+    "ch": [
+     "Always indicated",
+     "Only in ICU",
+     "Recommended for all necrosis",
+     "Only before surgery",
+     "Not recommended"
+    ],
+    "correct": 4,
+    "exp": "Use antibiotics only for infected necrosis or another infection."
+   },
+   {
+    "q": "Severe pancreatitis is defined by:",
+    "ch": [
+     "Lipase >1000",
+     "Necrosis on CT",
+     "Persistent organ failure >48 hours",
+     "Hypocalcemia",
+     "Fever"
+    ],
+    "correct": 2,
+    "exp": "Persistent organ failure defines severe disease."
+   },
+   {
+    "q": "Preferred nutrition:",
+    "ch": [
+     "TPN immediately",
+     "Prolonged NPO",
+     "Early enteral feeding",
+     "Clear liquids for 2 weeks",
+     "IV dextrose only"
+    ],
+    "correct": 2,
+    "exp": "Early enteral nutrition improves outcomes."
+   },
+   {
+    "q": "Which signs suggest hemorrhagic pancreatitis?",
+    "ch": [
+     "Murphy and Rovsing",
+     "Cullen and Grey Turner",
+     "Chvostek and Trousseau",
+     "McBurney and Obturator",
+     "Kernig and Brudzinski"
+    ],
+    "correct": 1,
+    "exp": "Cullen and Grey Turner signs indicate retroperitoneal hemorrhage."
+   },
+   {
+    "q": "Gallstone pancreatitis with cholangitis requires:",
+    "ch": [
+     "Colonoscopy",
+     "Immediate surgery",
+     "Observation",
+     "Urgent ERCP",
+     "MRI only"
+    ],
+    "correct": 3,
+    "exp": "Urgent ERCP relieves biliary obstruction and cholangitis."
+   }
+  ]
+ },
+ "ibd": {
+  "condition": "Inflammatory Bowel Disease",
+  "questions": [
+   {
+    "q": "Which description most accurately characterizes ulcerative colitis?",
+    "ch": [
+     "Transmural inflammation occurring anywhere from mouth to anus",
+     "Continuous mucosal inflammation beginning in the rectum and confined to the colon",
+     "Patchy inflammation involving the terminal ileum but sparing the colon",
+     "Granulomatous inflammation limited to the small intestine",
+     "Perianal fistulizing disease with skip lesions"
+    ],
+    "correct": 1,
+    "exp": "Ulcerative colitis begins in the rectum, extends proximally in a continuous pattern, is limited to the mucosa/submucosa, and remains confined to the colon.",
+    "why": [
+     "Transmural, mouth-to-anus involvement describes Crohn's disease.",
+     "",
+     "Patchy terminal ileal disease is more typical of Crohn's disease.",
+     "Granulomas may occur in Crohn's disease and are not limited to the small intestine.",
+     "Perianal fistulas and skip lesions strongly favor Crohn's disease."
+    ],
+    "img": [
+     1
+    ]
+   },
+   {
+    "q": "Which complication is most directly explained by the transmural nature of Crohn's disease?",
+    "ch": [
+     "Tenesmus",
+     "Superficial rectal bleeding",
+     "Fistula formation",
+     "Loss of colonic haustra",
+     "Continuous proctitis"
+    ],
+    "correct": 2,
+    "exp": "Full-thickness inflammation can penetrate adjacent tissues, producing fistulas, abscesses, and strictures.",
+    "why": [
+     "Tenesmus is associated with rectal inflammation and commonly favors ulcerative colitis.",
+     "Superficial bleeding is consistent with mucosal ulceration in ulcerative colitis.",
+     "",
+     "Loss of haustra produces the chronic ulcerative-colitis lead-pipe appearance.",
+     "Continuous proctitis is an ulcerative-colitis pattern."
+    ],
+    "img": [
+     1,
+     3
+    ]
+   },
+   {
+    "q": "Which presentation most strongly favors ulcerative colitis over Crohn's disease?",
+    "ch": [
+     "Right lower-quadrant pain with a draining perianal fistula",
+     "Weight loss with terminal ileal inflammation",
+     "Bloody diarrhea with urgency and tenesmus",
+     "Recurrent bowel obstruction from a fibrotic stricture",
+     "Intra-abdominal abscess with fever"
+    ],
+    "correct": 2,
+    "exp": "Bloody diarrhea, urgency, and tenesmus are characteristic of rectal and colonic mucosal inflammation in ulcerative colitis.",
+    "why": [
+     "Right lower-quadrant pain and perianal fistulae favor Crohn's disease.",
+     "Terminal ileal involvement is a classic Crohn's distribution.",
+     "",
+     "Fibrotic strictures result from transmural Crohn's disease.",
+     "Intra-abdominal abscesses are a penetrating Crohn's complication."
+    ],
+    "img": [
+     4
+    ]
+   },
+   {
+    "q": "Which test is considered confirmatory for inflammatory bowel disease and helps distinguish ulcerative colitis from Crohn's disease?",
+    "ch": [
+     "Serum ASCA and p-ANCA testing",
+     "Abdominal ultrasound",
+     "Ileocolonoscopy with biopsy",
+     "Fecal calprotectin alone",
+     "CT enterography alone"
+    ],
+    "correct": 2,
+    "exp": "Ileocolonoscopy with biopsy confirms IBD and demonstrates continuous friable mucosa in ulcerative colitis versus skip lesions, cobblestoning, and possible granulomas in Crohn's disease.",
+    "why": [
+     "p-ANCA and ASCA are supportive but not diagnostic.",
+     "Ultrasound is not the confirmatory test in the source protocol.",
+     "",
+     "Fecal calprotectin indicates intestinal inflammation but does not establish subtype by itself.",
+     "CT enterography evaluates small-bowel Crohn's disease and complications but does not replace biopsy confirmation."
+    ],
+    "img": [
+     5,
+     6
+    ]
+   },
+   {
+    "q": "A patient with known IBD presents with worsening diarrhea while receiving immunosuppressive therapy. Which step should occur before escalating immunosuppression?",
+    "ch": [
+     "Begin long-term prednisone immediately",
+     "Exclude infection, including Clostridioides difficile",
+     "Order ASCA testing to confirm an acute flare",
+     "Start an antidiarrheal agent before further evaluation",
+     "Schedule colectomy regardless of IBD subtype"
+    ],
+    "correct": 1,
+    "exp": "Stool cultures, ova and parasite testing, and C. difficile evaluation should precede escalation of immunosuppression; CMV may also require consideration in a severe flare.",
+    "why": [
+     "Steroids may induce remission but should not be started reflexively before excluding infection.",
+     "",
+     "ASCA is supportive of Crohn's disease but does not distinguish infection from active inflammation.",
+     "Antidiarrheals may be dangerous when toxic megacolon or severe colitis is possible.",
+     "Surgery depends on subtype, severity, complications, and response to treatment."
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "Which statement about corticosteroid therapy in IBD is correct?",
+    "ch": [
+     "Corticosteroids are preferred for lifelong maintenance",
+     "Corticosteroids are used to induce remission during moderate or severe flares",
+     "Corticosteroids are curative in ulcerative colitis",
+     "Corticosteroids prevent postoperative Crohn's recurrence indefinitely",
+     "Corticosteroids should be stopped abruptly once symptoms improve"
+    ],
+    "correct": 1,
+    "exp": "Prednisone or budesonide may be used to induce remission during an active flare.",
+    "why": [
+     "Corticosteroids are not maintenance therapy because of cumulative toxicity.",
+     "",
+     "Colectomy - not corticosteroid therapy - can be curative for ulcerative colitis.",
+     "Crohn's disease may recur after surgery, and steroids do not provide indefinite prevention.",
+     "Systemic steroids generally require tapering and should not be stopped abruptly."
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "A patient with moderate-to-severe IBD is being evaluated for immunomodulator and biologic therapy. Which assessment set is most appropriate?",
+    "ch": [
+     "Latent tuberculosis screening, hepatitis B testing, CBC/TPMT assessment, and exclusion of active infection",
+     "ASCA testing alone",
+     "Serum amylase, lipase, and troponin testing",
+     "Colonoscopy only, without infectious screening",
+     "Immediate biologic treatment without laboratory evaluation"
+    ],
+    "correct": 0,
+    "exp": "Appropriate preparation includes latent TB and hepatitis B screening before biologics, CBC and TPMT assessment when thiopurines are considered, and exclusion of active infection.",
+    "why": [
+     "",
+     "ASCA alone neither confirms Crohn's disease nor establishes treatment safety.",
+     "These tests do not constitute the standard IBD immunosuppression workup.",
+     "Endoscopy is important, but treatment safety also requires infectious and laboratory screening.",
+     "Biologic therapy can reactivate serious infection and should not begin without appropriate evaluation."
+    ],
+    "img": [
+     6,
+     9
+    ]
+   },
+   {
+    "q": "A hospitalized patient with ulcerative colitis develops fever, tachycardia, marked abdominal distension, and colonic dilation greater than 6 cm. What is the most appropriate interpretation?",
+    "ch": [
+     "Irritable bowel syndrome requiring reassurance",
+     "Toxic megacolon requiring urgent medical and surgical evaluation",
+     "Mild ulcerative-colitis flare appropriate for outpatient mesalamine alone",
+     "Functional constipation requiring stimulant laxatives",
+     "Crohn's-related terminal ileal stricture"
+    ],
+    "correct": 1,
+    "exp": "Colonic dilation greater than 6 cm with fever, tachycardia, and distension is toxic megacolon and requires urgent multidisciplinary management.",
+    "why": [
+     "The systemic toxicity and colonic dilation indicate a life-threatening complication, not a functional disorder.",
+     "",
+     "This presentation is too severe for outpatient treatment.",
+     "Laxatives, antidiarrheals, and opioids may worsen dangerous colonic dilation.",
+     "Terminal ileal strictures produce obstructive Crohn's symptoms but do not describe diffuse toxic colonic dilation."
+    ],
+    "img": [
+     7,
+     10
+    ]
+   },
+   {
+    "q": "A patient with terminal ileal Crohn's disease is at increased risk for which combination?",
+    "ch": [
+     "Vitamin B12 deficiency, gallstones, and calcium-oxalate kidney stones",
+     "Vitamin C excess, uric-acid stones, and hypercalcemia",
+     "Iron overload, cholesterol deficiency, and nephrotic syndrome",
+     "Folate toxicity, pancreatic cancer, and cystinuria",
+     "Vitamin A excess, pigment stones, and respiratory alkalosis"
+    ],
+    "correct": 0,
+    "exp": "Terminal ileal disease can impair vitamin B12 and bile-salt absorption, contributing to B12 deficiency, gallstones, and enteric hyperoxaluria with calcium-oxalate stones.",
+    "why": [
+     "",
+     "This combination is not associated with terminal ileal Crohn's disease.",
+     "Iron deficiency - not overload - may occur in IBD.",
+     "These are not the expected terminal ileal complications described in the module.",
+     "The listed abnormalities do not follow from terminal ileal malabsorption."
+    ],
+    "img": [
+     2,
+     6,
+     10
+    ]
+   },
+   {
+    "q": "A patient has had extensive ulcerative colitis for nine years and also has primary sclerosing cholangitis. Which management principle is most appropriate?",
+    "ch": [
+     "Delay colorectal cancer surveillance until symptoms worsen",
+     "Begin or continue surveillance colonoscopy because risk increases with disease duration, with earlier surveillance warranted in PSC",
+     "Use corticosteroids indefinitely to prevent colorectal cancer",
+     "Reassure the patient that colectomy cannot cure ulcerative colitis",
+     "Use ASCA levels as the primary colorectal cancer screening test"
+    ],
+    "correct": 1,
+    "exp": "Colorectal cancer risk rises with long-standing colonic IBD. Surveillance generally begins at approximately eight years, and PSC warrants earlier surveillance.",
+    "why": [
+     "Surveillance is based on disease duration and extent, not the onset of new symptoms.",
+     "",
+     "Corticosteroids are not used indefinitely for cancer prevention.",
+     "Colectomy can cure the intestinal disease of ulcerative colitis.",
+     "ASCA is a supportive Crohn's serology, not a colorectal cancer screening test."
+    ],
+    "img": [
+     9,
+     10
+    ]
+   }
+  ]
+ }
+}
