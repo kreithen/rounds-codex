@@ -1,0 +1,98 @@
+{
+ "tia": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "meningitis": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high", "concern": "Answer hinges entirely on age 74 (>50) triggering ampicillin for Listeria. Option C (ceftriaxone + vancomycin) is the correct regimen for a younger adult, so a student who misses the age will pick C. Not an error, but the age is the whole question — worth keeping the '74-year-old' prominent."},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ },
+ "seizure": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "parkinsons": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ },
+ "dementia": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "ms": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "gbs": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high", "concern": "The question is clinically right (FVC 18 <20 mL/kg and NIF -25 is weaker than -30, so both thresholds are breached), but the MODULE states the rule as 'NIF < -30 cm H2O', which read literally means more negative than -30 — the inverse of the real threshold. A student applying the module's wording to -25 would conclude the NIF is still acceptable and pick E. The module pearl should read 'NIF weaker than -30 (i.e. above -30)'."},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ },
+ "myasthenia": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high", "concern": "Rituximab is right for anti-MuSK disease, but option B (efgartigimod) and A (eculizumab) are real MG drugs whose labelled indication is anti-AChR-POSITIVE generalized MG — a student who does not know that antibody restriction could defend B. The stem's 'anti-AChR negative' is what excludes them; that is the discriminator and it is present, so the item stands."},
+  "10": {"answer": "C", "confidence": "high"}
+ }
+}

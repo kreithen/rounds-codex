@@ -1,0 +1,98 @@
+{
+ "cirrhosis": {
+  "1": {"answer": "D", "confidence": "high", "concern": "The stem states 'develops new ascites' and then asks which event marks decompensation — the stem gives away the key. Not a medical error, but the item tests nothing."},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high", "concern": "Stem is a two-word fragment ('Transplant score:') and Child-Pugh sits in the option list. MELD-Na is the allocation score, but the module's own diagnosis line says 'Child-Pugh (A/B/C) and MELD-Na stratify prognosis and prioritize transplant listing' — so a student reading the module can defend E. Stem should say 'organ allocation/waitlist prioritization'."},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "cholecystitis": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "hepatitis": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "appendicitis": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high", "concern": "Option D 'Open surgery' is also definitive treatment for appendicitis — the two operative options differ only by approach. Laparoscopic is the module's stated standard, so E is intended, but D is not strictly false. Better distractors would be non-definitive options."},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high", "concern": "'Clinical pearl?' is not a question, and option B 'Normal appetite' is a bare fragment that brushes against the module's real pearl (a genuinely hungry patient makes appendicitis less likely). D is the only defensible answer as written, but the item needs a real stem."}
+ },
+ "ibd": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high", "concern": "The correct option is far longer and more detailed than all four distractors — pickable on length alone without any IBD knowledge."},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high", "concern": "Same length cue as Q7 — the keyed option is a full sentence with rationale while every distractor is a short clause."}
+ },
+ "diverticulitis": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high", "concern": "4 cm sits right at the module's own '>3-4 cm' drainage threshold, so the size chosen is borderline rather than clearly above it; 5-6 cm would make the intended answer unambiguous. A is still the only defensible choice."},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "bowel-obstruction": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high", "concern": "Option B '6 cm' is the threshold for the colon generally, and many texts cite ~9 cm for the cecum — the stem says 'cecal diameter' so C (9-12 cm) matches the module, but a student who knows the 6 cm colonic number may be trapped. Consider naming the site explicitly as 'the cecum specifically'."},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ },
+ "cdiff": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high", "concern": "MOST IMPORTANT ITEM IN MY SET. The stem asks for the agent 'preferred first-line per IDSA/ACG' — that is fidaxomicin (2021 IDSA/SHEA: fidaxomicin preferred over vancomycin), and the module's own med entry reads 'Fidaxomicin — Preferred first-line per IDSA/ACG'. But the module's vancomycin entry ALSO says 'First-line for initial non-severe and severe CDI (125 mg PO QID)', so option E is textually supported too. If the key is E, it is wrong as the stem is worded. Either way the module's two med entries contradict each other on the word 'first-line' and should be reconciled."},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ }
+}

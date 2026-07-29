@@ -1,0 +1,98 @@
+{
+ "pe": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "dka": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high", "concern": "Stem gives K 3.0 mmol/L, which is below the 3.3 threshold the module cites, so B is right — but note the module's own rule is 'hold insulin if K <3.3 until repleted', and a stem written at 3.4-3.5 would flip the answer. As written it is unambiguous."},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "t2dm": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high", "concern": "Minor: ADA requires confirmation on a second test (repeat A1c or a second criterion) unless there is unequivocal hyperglycemia, so a single A1c >=6.5% strictly speaking establishes the diagnosis only on repeat. E is still clearly the intended and only defensible option."},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "metabolic-syndrome": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "medium", "concern": "Pure-number recall with two defensible options. The module states ~5x for type 2 diabetes (and ~2x for CVD), so D (5x) is the module's answer, but the published range is roughly 3-5x depending on cohort and definition, making C (3x) defensible from the literature. Option B (2x) is the CVD figure sitting in the same option list, which invites a student who half-remembers the module to pick it. Consider rewording to 'about 5-fold' in the stem or dropping this item."},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "hypothyroid": {
+  "1": {"answer": "E", "confidence": "high", "concern": "Option B (raised TSH with normal free T4) is subclinical primary hypothyroidism, i.e. also a primary pattern. The module explicitly labels it 'subclinical', so E (overt primary) is the intended answer, but the stem would be airtight if it said 'overt primary hypothyroidism'."},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high", "concern": "Minor distractor flaw: option A ('the elderly need less hormone overall') is factually true — weight-based levothyroxine requirement does fall with age and lean body mass — so it is a true statement offered as a wrong answer. It does not answer the question asked (why go slow in cardiac disease), so E remains correct, but a true distractor is worth tightening."},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "thyroidstorm": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "endocarditis": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high", "concern": "Stem asks 'which combination establishes definite IE' (singular) but the Duke-ISCVID clinical rule has three sufficient combinations: 2 major, 1 major + 3 minor, or 5 minor. Only 2 major appears among the options, so B is the answer and the other four are all genuinely insufficient — but option C (1 major + 1 minor) is a near-miss of the real 1 major + 3 minor rule and will read as a trap rather than a discriminator."},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high", "concern": "Option A (ampicillin + gentamicin) is still a guideline-endorsed regimen for E. faecalis IE, not a false statement — the stem's 'in order to avoid aminoglycoside toxicity' is what makes C the single best answer. That qualifier is load-bearing; if it were ever edited out, A and C would both be correct."}
+ },
+ "pericarditis": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ }
+}

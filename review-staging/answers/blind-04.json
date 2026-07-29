@@ -1,0 +1,98 @@
+{
+ "tb": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high", "concern": "Minor precision issue: culture (not smear) is the gold standard; the option bundles 'AFB smear and culture' together, which is the only defensible choice here but blurs the point that a negative smear does not exclude active TB. No wrong answer, just imprecise."},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ },
+ "lung-cancer": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high", "concern": "D (second-hand smoke) is a competing answer some texts give for never-smoker lung cancer. Radon is correct per EPA/ACS and the module states it explicitly ('leading cause in non-smokers, #2 overall'), so A stands — but the item would be tighter if it said 'environmental exposure' or excluded second-hand smoke as a distractor."},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high", "concern": "B (sputum cytology showing malignant cells) is not strictly false — positive cytology can establish malignancy for a central lesion. A remains best because molecular/PD-L1 typing requires tissue, which the module states. Weak ambiguity only."},
+  "6": {"answer": "E", "confidence": "high", "concern": "Distractor C ('Cushing syndrome from cortisol-secreting adrenal adenoma') risks reinforcing a misconception: SCLC-associated Cushing is ectopic ACTH, not an adrenal adenoma, and an adrenal adenoma is not a paraneoplastic syndrome at all. It is unambiguously wrong so the key is safe, but the wording teaches badly."},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "pleural-effusion": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ },
+ "osa": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high", "concern": "The option ranges overlap at their boundaries ('5-15' and '15-30'), so an AHI of exactly 15 literally satisfies both B and C. Mild is 5 to <15 and moderate 15 to 30; B is clearly the intended and correct answer but the ranges should be written 5 to <15 / 15 to 30."},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ },
+ "hhs": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high", "concern": "Module states the deficit is 'often 8-10 L', which falls inside option C (5-10 L) — so C is right — but a student who memorized '8-10 L' from the module may hunt for a closer option. Not an error; flagging only because the option set does not mirror the module's own number."},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "hypoglycemia": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "t1dm": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "cushings": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ }
+}

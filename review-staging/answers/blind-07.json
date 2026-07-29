@@ -1,0 +1,98 @@
+{
+ "aki": {
+  "1": {"answer": "D", "confidence": "high", "concern": "Option D omits the duration qualifier on the oliguria criterion — KDIGO requires urine output <0.5 mL/kg/h for at least 6 hours. As written, 'urine output under 0.5 mL/kg/h' alone is an incomplete statement of the criterion, though it is still the only defensible choice."},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "uti": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "ckd": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "nephrolithiasis": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "hyperkalemia": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "medium", "concern": "The stem is clinically incoherent: it specifies a DIALYSIS patient, but the rationale it gives ('so that guideline-directed RAAS therapy can continue') is the CKD/heart-failure indication for patiromer/SZC. In an established hemodialysis patient, chronic hyperkalemia is managed by dialysis prescription, dietary potassium and interdialytic interval, not by a binder to preserve RAAS blockade. The keyed answer is still A; the stem should say 'a CKD patient on an ACE inhibitor' or 'a heart failure patient'."},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "bph": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "hyponatremia": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "stroke": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "medium", "concern": "The diagnosis (hemorrhagic conversion) and the action (emergent non-contrast CT) are right, but the action clause 'stop the thrombolytic' is impossible at the stated timepoint — alteplase is a bolus plus a 60-minute infusion, so at SIX hours the drug finished five hours ago. Either move the stem to 'during the alteplase infusion' or change the action to 'hold antithrombotics, emergent CT, check fibrinogen/type and screen, and give cryoprecipitate plus an antifibrinolytic.' As written it teaches students to look for an infusion that is not running."},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ }
+}

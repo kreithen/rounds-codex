@@ -1,0 +1,98 @@
+{
+ "addisons": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "siadh": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high", "concern": "Minor: option E (cerebral edema) is the consequence of the hyponatremia itself, not of rapid correction — it reads as a plausible trap but is clearly wrong, so the item is sound. No change needed."},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "di": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "gerd": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ },
+ "hyperparathyroid": {
+  "1": {"answer": "E", "confidence": "medium", "concern": "Stem is genuinely ambiguous as written: familial hypocalciuric hypercalcemia (option D) ALSO presents with elevated calcium and an inappropriately normal PTH — that is precisely why question 3 of this same quiz asks how to exclude it. Both D and E are defensible on the stem alone. Fix by adding a discriminator (e.g. 'with elevated 24-hour urine calcium' or 'is MOST consistent with')."},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high", "concern": "Item quality, not medicine: 'Classic mnemonic excludes?' is a negatively-framed stem with no clue which mnemonic is meant. Hematuria is the only option outside 'stones, bones, groans, psychiatric moans', so the key is derivable, but hematuria is a real feature of the nephrolithiasis the mnemonic's 'stones' refers to, which makes the exclusion feel arbitrary to a student."},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "pud": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high", "concern": "Option E ('Detect H. pylori only') is partially true — biopsy at EGD does include a rapid urease test — but the word 'only' makes it wrong and A is unambiguously the primary reason. Acceptable as written."},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ },
+ "gi-bleed": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "pancreatitis": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ }
+}
