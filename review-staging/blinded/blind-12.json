@@ -1,0 +1,922 @@
+{
+ "anxiety": {
+  "condition": "Anxiety Disorders",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Per the module, generalized anxiety disorder requires excessive worry lasting how long, plus how many associated symptoms?",
+    "ch": [
+     "At least 6 months of worry plus at least 3 associated symptoms",
+     "At least 2 weeks of worry plus at least 4 associated symptoms",
+     "At least 6 weeks of worry plus at least 2 associated symptoms",
+     "At least 12 months of worry plus at least 6 associated symptoms",
+     "At least 1 month of worry plus at least 5 associated symptoms"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which screening tool and cut-off does the module use to quantify anxiety severity?",
+    "ch": [
+     "PHQ-9, with a score of 15 or more indicating moderate anxiety",
+     "CIWA-Ar, with a score of 10 or more indicating moderate anxiety",
+     "MDQ, with 7 or more positive items indicating moderate anxiety",
+     "C-SSRS, with any positive item indicating moderate anxiety",
+     "GAD-7, with a score of 10 or more indicating moderate anxiety"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "A patient with GAD asks whether buspirone can be taken only when she feels panicky. What does the module teach?",
+    "ch": [
+     "It should be reserved for performance anxiety and taken one hour before the event",
+     "It can be used as needed, but only if an SSRI is taken at the same time",
+     "It must be taken daily, has a delayed onset over weeks, and gives no acute panic relief",
+     "It works within 20 minutes and is the preferred rescue agent for panic attacks",
+     "It is habit-forming, so it should be limited to occasional use during severe episodes"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient started on escitalopram for panic disorder calls on day 6 saying her anxiety is worse than before. Which response reflects the module's teaching?",
+    "ch": [
+     "Add a long-term daily benzodiazepine as definitive therapy in place of the SSRI",
+     "Stop the drug immediately, because worsening anxiety indicates an allergic reaction",
+     "Conclude the diagnosis is wrong and screen her for hyperthyroidism instead",
+     "SSRIs can transiently worsen anxiety in the first 1-2 weeks; reinforce adherence while awaiting the 4-6 week effect",
+     "Double the dose today, because the starting dose was clearly too low for panic disorder"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Propranolol is being considered for a musician with performance anxiety. Which comorbidity on the module's list makes this a poor choice?",
+    "ch": [
+     "Mild iron-deficiency anemia",
+     "Asthma",
+     "Gastroesophageal reflux disease",
+     "Well-controlled essential hypertension",
+     "A long history of migraine headaches"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient is having an acute panic attack in the emergency department. Which nursing approach does the module prioritize?",
+    "ch": [
+     "Encourage the patient to describe the childhood origins of the fear in detail",
+     "Have the patient breathe rapidly into a paper bag until the symptoms resolve",
+     "Stay with the patient in a calm low-stimulation setting, give short simple directions, and guide slow breathing",
+     "Leave the patient alone in a darkened room to prevent overstimulation",
+     "Provide detailed written teaching about the fear circuit while symptoms peak"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A 74-year-old with no psychiatric history develops severe new anxiety with palpitations and sweating. Which red flag from the module applies?",
+    "ch": [
+     "New severe anxiety in an older adult suggests a medical cause — pheochromocytoma, hyperthyroidism, hypoxia, or medication — until proven otherwise",
+     "Older adults tolerate benzodiazepines well, so lorazepam is the safest first step here",
+     "Anxiety of new onset after age 70 is almost always a prodrome of major depressive disorder",
+     "No workup is needed, because anxiety disorders are clinical diagnoses with no confirmatory test",
+     "This is expected late-onset GAD; start buspirone and reassess in six weeks"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which combination does the module single out as producing dangerous respiratory depression?",
+    "ch": [
+     "CBT plus an SNRI",
+     "A benzodiazepine plus opioids or alcohol",
+     "Venlafaxine plus hydroxyzine",
+     "Buspirone plus hydroxyzine",
+     "Propranolol plus an SSRI"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 58-year-old smoker presents with 20 minutes of chest pain, dyspnea, and a sense of dread that peaked within minutes. Which approach matches the module's teaching?",
+    "ch": [
+     "Give a benzodiazepine and discharge once the patient feels calmer, with no further testing",
+     "Order a GAD-7 and treat if the score is 10 or more, deferring any cardiac evaluation",
+     "Start an SSRI immediately, because chest pain from panic responds within 48 hours",
+     "Exclude ACS, PE, and hyperthyroid storm before attributing the episode to a panic attack",
+     "Diagnose panic disorder now, since symptoms peaking within minutes are pathognomonic"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "An inpatient develops tremor, tachycardia, and severe anxiety two days after admission. Which module red flag should be considered before treating this as an anxiety disorder?",
+    "ch": [
+     "Serotonin syndrome caused by as-needed hydroxyzine doses",
+     "A conversion reaction to the stress of being hospitalized",
+     "An emerging manic episode caused by an antidepressant switch",
+     "Tardive dyskinesia from a previously prescribed antipsychotic",
+     "Benzodiazepine or alcohol withdrawal masquerading as anxiety"
+    ]
+   }
+  ]
+ },
+ "bipolar": {
+  "condition": "Bipolar Disorder",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement correctly distinguishes bipolar I from bipolar II as the module defines them?",
+    "ch": [
+     "Bipolar I requires both a manic and a major depressive episode, whereas bipolar II requires neither of them",
+     "Bipolar I requires a hypomanic episode, while bipolar II requires at least one full manic episode",
+     "Bipolar I is diagnosed only after four or more distinct mood episodes have occurred within one year",
+     "Bipolar I requires at least one manic episode; bipolar II requires a hypomanic episode plus a major depressive episode with no full mania",
+     "Bipolar I and bipolar II differ only in whether psychotic features have ever been present"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "The mnemonic DIG FAST is used for which set of findings?",
+    "ch": [
+     "The laboratory parameters required for monitoring before and during lithium therapy",
+     "The five core symptom domains used to diagnose schizophrenia",
+     "The nine DSM-5-TR criteria for a major depressive episode",
+     "Manic symptoms: distractibility, impulsivity, grandiosity, flight of ideas, increased activity, decreased sleep need, talkativeness",
+     "The staged timeline of alcohol withdrawal from tremor through delirium tremens"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which agent does the module identify as the only mood stabilizer with robust evidence of reducing suicide?",
+    "ch": [
+     "Lithium",
+     "Valproate",
+     "Lamotrigine",
+     "Carbamazepine",
+     "Quetiapine"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient stable on lithium develops coarse tremor, ataxia, vomiting and confusion after a week of gastroenteritis and daily ibuprofen. Which explanation does the module give?",
+    "ch": [
+     "Ibuprofen displaces lithium from plasma protein binding sites, increasing the free drug fraction",
+     "Gastroenteritis induces hepatic CYP3A4 and accelerates the metabolism of lithium",
+     "These are expected steady-state effects of a therapeutic lithium level of 0.6-1.2 mEq/L",
+     "This is a Stevens-Johnson prodrome, so the lithium must be titrated more slowly",
+     "Volume depletion and NSAIDs reduce renal lithium clearance, raising the level into the toxic range"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A hyperactive manic patient will not sit down for meals. Which nursing intervention does the module specify?",
+    "ch": [
+     "Withhold food until the patient agrees to remain seated at the table",
+     "Provide a large hot meal in the busy dayroom to encourage social interaction",
+     "Offer high-calorie finger foods the patient can eat while moving",
+     "Insert a nasogastric tube to guarantee caloric intake during the episode",
+     "Restrict fluids to reduce the pacing and agitation before offering any food"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient two weeks into a lamotrigine titration reports a spreading rash with mouth sores. What does the module direct?",
+    "ch": [
+     "Stop lamotrigine immediately — this may be Stevens-Johnson syndrome",
+     "Hold the lithium and check a lithium level along with renal function",
+     "Check an ANC urgently, because this presentation suggests agranulocytosis",
+     "Reduce the dose by half and re-titrate back up over the next 48 hours",
+     "Continue lamotrigine and add an antihistamine, since rash is common and self-limited"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A 24-year-old with bipolar II presents in a depressive episode. Why does the module caution against starting an SSRI alone, and what does it favor instead?",
+    "ch": [
+     "SSRIs cause tardive dyskinesia in bipolar patients, so a VMAT2 inhibitor is started first",
+     "SSRIs are ineffective in any form of depression, so lamotrigine is used purely as a placebo-sparing measure",
+     "SSRIs cause Ebstein anomaly, so valproate is preferred in anyone of childbearing potential",
+     "SSRIs raise lithium levels, so carbamazepine must be substituted before any antidepressant is added",
+     "Unopposed antidepressants risk a manic switch or rapid cycling, so mood stabilizers or quetiapine, lurasidone or cariprazine come first"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A 27-year-old with bipolar I is planning a pregnancy. Which pairing of drug and reproductive risk matches the module?",
+    "ch": [
+     "Quetiapine — neural tube defects; valproate — Stevens-Johnson syndrome",
+     "Valproate — neural tube defects; lithium — Ebstein anomaly",
+     "Lithium — neural tube defects; valproate — Ebstein anomaly",
+     "Lamotrigine — Ebstein anomaly; quetiapine — neural tube defects",
+     "Carbamazepine — Ebstein anomaly; lithium — agranulocytosis"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which depressive presentation should most strongly prompt screening for bipolar disorder before an antidepressant is started, per the module?",
+    "ch": [
+     "A single mild episode following a job loss, with a normal TSH",
+     "Early-onset, recurrent, psychotic or postpartum depression, or prior antidepressant-induced hypomania",
+     "Depression with hypersomnia and hyperphagia in a patient over 65",
+     "Depression accompanied by muscle tension and six months of uncontrollable worry",
+     "A first episode at age 58 with prominent comorbid neuropathic pain"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient with delirious mania is dehydrated, exhausted, and not responding to a mood stabilizer plus an antipsychotic. Per the module, what should be considered?",
+    "ch": [
+     "Discharging with mood charting and close outpatient follow-up",
+     "Withholding all fluids to avoid raising the lithium level further",
+     "Electroconvulsive therapy — indicated for severe, refractory, or life-threatening mania",
+     "Starting an SSRI to address the underlying depressive substrate",
+     "Adding lamotrigine and titrating rapidly to a therapeutic dose"
+    ]
+   }
+  ]
+ },
+ "schizophrenia": {
+  "condition": "Schizophrenia",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which set of durations distinguishes schizophrenia from schizophreniform and brief psychotic disorder in the module?",
+    "ch": [
+     "Brief psychotic disorder under 1 week, schizophreniform 1-3 months, schizophrenia 1 year or more",
+     "Brief psychotic disorder under 2 weeks, schizophreniform 2-12 weeks, schizophrenia 3 months or more",
+     "All three require six months and are distinguished only by whether negative symptoms are present",
+     "Duration is irrelevant; the three are separated by whether the hallucinations are auditory",
+     "Brief psychotic disorder under 1 month, schizophreniform 1-6 months, schizophrenia 6 months or more of continuous disturbance"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "How does the module's dopamine hypothesis explain positive versus negative symptoms?",
+    "ch": [
+     "Mesolimbic hyperdopaminergia drives positive symptoms; mesocortical hypodopaminergia drives negative and cognitive symptoms",
+     "Both symptom clusters arise from excess serotonin acting at limbic 5-HT2A receptors",
+     "Both symptom clusters arise from NMDA receptor overactivity in the prefrontal cortex",
+     "Mesolimbic hypodopaminergia drives positive symptoms; mesocortical hyperdopaminergia drives negative symptoms",
+     "Nigrostriatal hyperdopaminergia drives positive symptoms; tuberoinfundibular blockade drives negative symptoms"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "When does the module say clozapine should be started?",
+    "ch": [
+     "After failure of at least two adequate antipsychotic trials — treatment-resistant disease",
+     "Only after electroconvulsive therapy has been tried and has failed",
+     "As soon as any extrapyramidal symptom appears on another antipsychotic",
+     "Whenever a patient develops tardive dyskinesia on a first-generation agent",
+     "At first presentation, because it is the most effective agent available"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient on haloperidol develops fever, lead-pipe rigidity, labile blood pressure, and a markedly elevated CK. What does the module direct?",
+    "ch": [
+     "Diagnose akathisia and reassure the patient that it will resolve on its own",
+     "Hold only the next scheduled dose and recheck the CK in 48 hours",
+     "Stop the antipsychotic, cool the patient, and give dantrolene or bromocriptine — this is NMS",
+     "Continue the haloperidol and add benztropine to treat the rigidity",
+     "Diagnose tardive dyskinesia and start valbenazine at the next visit"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which side-effect pairing matches the module's description of second-generation antipsychotics?",
+    "ch": [
+     "Quetiapine — tardive dyskinesia is impossible with it; olanzapine — causes no weight gain",
+     "Olanzapine — the worst metabolic offender; risperidone — raises prolactin",
+     "Risperidone — requires REMS ANC monitoring; olanzapine — treats tardive dyskinesia",
+     "Olanzapine — the highest prolactin elevation; risperidone — the least metabolic burden of any agent",
+     "Aripiprazole — agranulocytosis requiring ANC monitoring; quetiapine — Ebstein anomaly"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient tells the nurse that voices are speaking to him. Which approach to hallucinations and delusions does the module teach?",
+    "ch": [
+     "Agree with the content to build rapport and reduce the patient's distress",
+     "Acknowledge the patient's feelings while presenting reality, without arguing or reinforcing the content",
+     "Ignore the statement entirely and redirect only to activities of daily living",
+     "Increase environmental stimulation to distract the patient from the voices",
+     "Argue firmly with the content until the patient concedes that it is not real"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A 62-year-old with no psychiatric history develops psychosis over two weeks with a low-grade fever and a new focal neurologic deficit. What does the module advise?",
+    "ch": [
+     "Diagnose schizophreniform disorder, since the duration is under six months",
+     "Attribute the picture to negative symptoms and begin psychosocial rehabilitation",
+     "Start clozapine, because late-onset psychosis is typically treatment-resistant",
+     "Think delirium, autoimmune (anti-NMDA) encephalitis, or CNS pathology rather than primary schizophrenia",
+     "Diagnose late-onset schizophrenia and start a second-generation antipsychotic"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient who has been on clozapine for four weeks calls with fever and a sore throat. What is the correct action per the module?",
+    "ch": [
+     "Add benztropine, because these are early extrapyramidal symptoms",
+     "Increase the clozapine dose, since psychosis often flares during an infection",
+     "Perform an AIMS exam to screen for tardive dyskinesia at the next scheduled visit",
+     "Hold the drug and evaluate urgently for agranulocytosis",
+     "Reassure the patient and continue clozapine, since this is a common benign viral illness"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient has relapsed three times after stopping oral risperidone. Which intervention does the module recommend, and with what caveat?",
+    "ch": [
+     "Start a VMAT2 inhibitor, which improves adherence by reducing movement side effects",
+     "Switch to haloperidol, because first-generation agents have better adherence profiles",
+     "A long-acting injectable — but establish tolerability with the oral form first, and missed injections still risk relapse",
+     "Add benztropine prophylactically, since EPS is the usual reason patients stop antipsychotics",
+     "Stop all antipsychotics and rely on psychosocial rehabilitation and family psychoeducation"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which statement about outcome and prognosis in schizophrenia matches the module?",
+    "ch": [
+     "Suicide is rare in schizophrenia and cardiovascular disease contributes little to mortality",
+     "Prominent negative symptoms and insidious onset predict the best long-term outcome",
+     "Lower socioeconomic status causes schizophrenia rather than resulting from it",
+     "Negative and cognitive symptoms respond best of all symptoms to current antipsychotics",
+     "Acute onset, mood symptoms, older onset, female sex and good premorbid function are favorable"
+    ]
+   }
+  ]
+ },
+ "withdrawal": {
+  "condition": "Alcohol & Substance Withdrawal",
+  "questions": [
+   {
+    "n": 1,
+    "q": "What neuroadaptation does the module give as the basis for alcohol and sedative-hypnotic withdrawal?",
+    "ch": [
+     "Chronic alcohol potentiates GABA-A and suppresses NMDA/glutamate; withdrawal leaves unopposed glutamatergic excitation plus a noradrenergic surge",
+     "Chronic alcohol blocks mu-opioid receptors, and withdrawal releases locus coeruleus inhibition",
+     "Chronic alcohol depletes dopamine stores, and withdrawal produces mesolimbic hyperdopaminergia",
+     "Chronic alcohol upregulates GABA-A tone, and withdrawal leaves unopposed GABAergic inhibition",
+     "Chronic alcohol downregulates NMDA receptors, and withdrawal produces a glutamate deficiency"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Per the module's alcohol withdrawal timeline, when do delirium tremens typically occur after the last drink?",
+    "ch": [
+     "6-12 hours",
+     "12-24 hours",
+     "12-48 hours",
+     "48-96 hours",
+     "7-10 days"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "A malnourished patient with alcohol use disorder arrives hypoglycemic. What does the module require?",
+    "ch": [
+     "Give thiamine only after the glucose has been normal for 24 hours",
+     "Give thiamine before or with the dextrose to avoid precipitating Wernicke encephalopathy",
+     "Withhold both until an ethanol level and a CIWA-Ar score are available",
+     "Give folate instead, since thiamine is needed only once ataxia is present",
+     "Give dextrose immediately and add thiamine only if confusion later develops"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Why does the module prefer symptom-triggered benzodiazepine dosing over a fixed schedule?",
+    "ch": [
+     "It eliminates the risk of withdrawal seizures without any pharmacologic prophylaxis",
+     "It uses less total drug, shortens treatment duration, and produces fewer complications",
+     "It removes the need for any further nursing reassessment once the first dose is given",
+     "It allows a lower-potency agent to be used, avoiding all risk of respiratory depression",
+     "It substitutes for thiamine repletion in patients who are already malnourished"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which benzodiazepine does the module prefer for a patient in alcohol withdrawal who has cirrhosis, and why?",
+    "ch": [
+     "Midazolam, because it is the only agent that reliably prevents delirium tremens",
+     "Chlordiazepoxide, because its long half-life provides an automatic taper",
+     "Lorazepam, because it has no active metabolites",
+     "Diazepam, because hepatic metabolism is increased in cirrhosis",
+     "Phenobarbital, because it is a benzodiazepine with purely hepatic clearance"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient in severe withdrawal is started on dexmedetomidine for tachycardia and hypertension. What caution does the module give?",
+    "ch": [
+     "Autonomic adjuncts are contraindicated in withdrawal because they mask the CIWA-Ar score entirely",
+     "Dexmedetomidine should replace the benzodiazepines in order to minimize total sedation",
+     "Dexmedetomidine treats Wernicke encephalopathy and makes thiamine unnecessary",
+     "Clonidine and propranolol are first-line and benzodiazepines are only adjuncts",
+     "Adjuncts control autonomic hyperactivity but do not prevent seizures or DTs, so benzodiazepines must continue"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Eighteen hours after his last drink, a man reports seeing bugs on the wall but is fully oriented with normal vital signs. How should this be classified per the module?",
+    "ch": [
+     "Wernicke encephalopathy, given the new visual disturbance",
+     "Anti-NMDA receptor encephalitis until neuroimaging proves otherwise",
+     "Alcoholic hallucinosis — hallucinations with a clear sensorium at roughly 12-24 hours",
+     "Delirium tremens, because visual hallucinations are what define DTs",
+     "A withdrawal seizure prodrome requiring immediate phenobarbital loading"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which factor does the module call the strongest predictor that a patient will have a withdrawal seizure or delirium tremens?",
+    "ch": [
+     "A urine drug screen that is positive for opioids",
+     "An elevated mean corpuscular volume on the CBC",
+     "A first-ever drinking binge lasting more than one week",
+     "A high blood alcohol concentration on arrival",
+     "A prior history of withdrawal seizures or delirium tremens"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient's CIWA-Ar scores keep climbing despite escalating lorazepam doses. What does the module say refractory withdrawal points toward?",
+    "ch": [
+     "Phenobarbital, or magnesium and electrolyte correction, rather than simply more benzodiazepine",
+     "Beginning disulfiram so the patient associates alcohol with illness",
+     "Reducing the benzodiazepine dose, because oversedation is masking improvement",
+     "Switching to buprenorphine to cover a concurrent opioid withdrawal",
+     "Starting naltrexone immediately to blunt the craving driving the agitation"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "How does the module characterize opioid withdrawal compared with alcohol withdrawal?",
+    "ch": [
+     "Identical in mechanism, since both act through GABA-A and NMDA receptors",
+     "Safely managed with symptom-triggered CIWA-Ar dosing of benzodiazepines",
+     "Best treated by withholding all medication so that tolerance resets completely",
+     "Intensely uncomfortable but rarely lethal in healthy adults; the danger lies in relapse with lost tolerance",
+     "More lethal than alcohol withdrawal because of its seizures and delirium tremens"
+    ]
+   }
+  ]
+ },
+ "delirium": {
+  "condition": "Delirium",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which feature is the hallmark of delirium, without which the diagnosis should be questioned?",
+    "ch": [
+     "Depressed mood with anhedonia lasting at least two weeks",
+     "Progressive memory loss developing gradually over months to years",
+     "Fixed persecutory delusions with a preserved level of consciousness",
+     "Inattention with an acute, fluctuating course",
+     "Tremor and autonomic instability with a normal attention span"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which delirium subtype is the most common and the most frequently missed?",
+    "ch": [
+     "Hypoactive — lethargic and withdrawn, mistaken for depression or fatigue",
+     "Hyperactive — agitated and hallucinating, easily recognized at the bedside",
+     "Mixed — alternating agitation and lethargy across a single hospital day",
+     "Nocturnal — confusion confined entirely to the overnight hours",
+     "Catatonic — mutism and posturing with no fluctuation in awareness"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Using the Confusion Assessment Method (CAM), which combination of features establishes delirium?",
+    "ch": [
+     "Acute and fluctuating course AND inattention, PLUS disorganized thinking OR altered consciousness",
+     "Acute and fluctuating course plus disorganized thinking, with attention fully preserved",
+     "Inattention plus an altered level of consciousness, with gradual onset over several weeks",
+     "Any two of the four CAM features, in any combination at all",
+     "Disorganized thinking plus altered consciousness, regardless of attention"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "In which situation is a benzodiazepine the appropriate treatment for a delirious patient?",
+    "ch": [
+     "Hypoactive delirium with a disrupted sleep-wake cycle",
+     "Agitated delirium in a mechanically ventilated ICU patient",
+     "Delirium superimposed on dementia in a frail elderly patient",
+     "Any severe agitation that has not responded to a first dose of haloperidol",
+     "Delirium caused by alcohol or sedative withdrawal"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A nurse is caring for a hospitalized older adult with new fluctuating confusion. Which intervention is first-line for both prevention and treatment?",
+    "ch": [
+     "Nightly lorazepam to consolidate sleep and reduce nighttime wandering",
+     "A non-pharmacologic bundle: reorientation, sleep hygiene, mobility, and sensory aids",
+     "Quetiapine at bedtime for sleep disturbance and mild agitation",
+     "Scheduled low-dose haloperidol around the clock every eight hours",
+     "Soft wrist restraints applied routinely to keep lines and catheters in place"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which neurotransmitter imbalance explains why anticholinergic drugs precipitate delirium?",
+    "ch": [
+     "Glutamate depletion from reduced NMDA receptor signaling",
+     "Relative cholinergic deficiency with dopaminergic excess",
+     "Cholinergic excess with depletion of central dopamine",
+     "Serotonin excess from impaired reuptake in the brainstem",
+     "GABA deficiency that is corrected by benzodiazepine therapy"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "An anticoagulated patient develops acute confusion after an unwitnessed fall and now has a new focal neurologic deficit. What is the priority action?",
+    "ch": [
+     "Start scheduled haloperidol for symptomatic agitation control",
+     "Obtain an EEG to exclude nonconvulsive status epilepticus",
+     "Obtain urgent neuroimaging to exclude stroke or hemorrhage",
+     "Begin a lorazepam taper for presumed sedative withdrawal",
+     "Apply the reorientation bundle and reassess in the morning"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "For an agitated, mechanically ventilated ICU patient, which sedation strategy reduces delirium duration?",
+    "ch": [
+     "Continuous midazolam infusion titrated to deep sedation",
+     "Intermittent lorazepam boluses given as needed for agitation",
+     "Scheduled diphenhydramine every night for sleep",
+     "A high-dose opioid infusion used as the sole sedative",
+     "Dexmedetomidine, with monitoring for bradycardia and hypotension"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient with known dementia becomes abruptly inattentive and drowsy over 24 hours. Which statement is correct?",
+    "ch": [
+     "Delirium cannot be diagnosed once dementia has been established",
+     "An abrupt change like this is diagnostic of dementia rather than delirium",
+     "This is the expected progression of dementia and needs no further workup",
+     "This is delirium superimposed on dementia and requires a hunt for a precipitant",
+     "Attention is impaired early in dementia, so this is simply a bad day"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which statement about antipsychotics in delirium reflects the current evidence?",
+    "ch": [
+     "Haloperidol is the preferred agent in Parkinson and Lewy body disease",
+     "They are first-line for hypoactive delirium in order to improve alertness",
+     "They carry a black box warning for increased mortality in elderly dementia and have not been shown to shorten delirium",
+     "Atypical agents are free of QTc prolongation and metabolic side effects",
+     "They shorten the duration of delirium and should be started at diagnosis"
+    ]
+   }
+  ]
+ },
+ "suicide": {
+  "condition": "Suicide Risk Assessment",
+  "questions": [
+   {
+    "n": 1,
+    "q": "What does the evidence say about directly asking a patient whether they are thinking of suicide?",
+    "ch": [
+     "It is only appropriate once the patient has already made an attempt",
+     "It is acceptable only if the patient raises the topic themselves first",
+     "It plants the idea and increases risk, so a written screening tool should be used instead",
+     "Asking does not increase risk and is protective; ask directly and non-judgmentally",
+     "It should be deferred until a psychiatrist is available to conduct the interview"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which factor is the single strongest predictor of a future suicide attempt?",
+    "ch": [
+     "A diagnosis of generalized anxiety disorder",
+     "Living alone in an urban setting",
+     "A prior suicide attempt",
+     "Non-suicidal self-injury without intent to die",
+     "Female sex"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which sequence correctly describes the continuum of suicidal behavior?",
+    "ch": [
+     "Attempt, preparatory acts, intent, plan, then active ideation",
+     "Passive ideation, active ideation, plan, intent, preparatory acts, attempt",
+     "Non-suicidal self-injury, passive ideation, attempt, then active ideation",
+     "Plan, passive ideation, intent, active ideation, then attempt",
+     "Hopelessness, command hallucinations, passive ideation, then plan"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which statement about structured tools such as the C-SSRS, SAD PERSONS, and PHQ-9 is accurate?",
+    "ch": [
+     "A low C-SSRS score reliably guarantees that the patient will remain safe",
+     "They replace clinical judgment and determine disposition entirely on their own",
+     "SAD PERSONS is the tool used to characterize the lethality of a specific plan",
+     "A positive PHQ-9 item 9 is by itself diagnostic of active suicidal intent",
+     "They standardize assessment and documentation but do not replace clinical judgment"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which two agents have the strongest evidence for reducing suicide, and in which populations?",
+    "ch": [
+     "Lithium in bipolar and recurrent unipolar depression, and clozapine in schizophrenia",
+     "Valproate in bipolar disorder and haloperidol in schizoaffective disorder",
+     "Buspirone in anxiety disorders and naltrexone in alcohol use disorder",
+     "Sertraline in adolescents and quetiapine in schizophrenia",
+     "Ketamine in bipolar disorder and ECT in borderline personality disorder"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient with recent suicidal ideation is preparing for discharge. Which intervention is evidence-based?",
+    "ch": [
+     "Reassurance that risk is lowest in the days right after discharge",
+     "A signed no-suicide contract placed in the chart before discharge",
+     "A collaborative safety plan with warning signs, coping strategies, contacts, and 988",
+     "A promise from the nurse to keep the ideation secret from the family",
+     "Deferring any follow-up appointment until the patient requests one"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A severely depressed inpatient who was withdrawn and psychomotor-retarded now appears brighter and more energetic. Why does the nurse increase vigilance?",
+    "ch": [
+     "Risk rises as psychomotor retardation lifts, giving the patient the volition to act before mood recovers",
+     "Recovery of speech and engagement rules out ongoing suicidal ideation",
+     "Improvement in mood confirms the antidepressant has reached full effect",
+     "Increased energy means the patient can safely be moved off observation",
+     "Brightening always means the SSRI dose should be immediately reduced"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient swallowed six acetaminophen tablets believing the dose would be fatal. How should this be interpreted?",
+    "ch": [
+     "Risk is determined solely by whether the patient left a written note",
+     "High risk — perceived lethality with high intent matters more than the objective lethality of the act",
+     "Low risk — the objective lethality of the dose was minimal, so this was only a gesture",
+     "Low risk — this is non-suicidal self-injury, since the dose taken could not kill",
+     "Risk cannot be assessed at all until the acetaminophen level returns from the lab"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which presentation most clearly warrants inpatient admission, including an involuntary hold if necessary?",
+    "ch": [
+     "An attempt ten years ago in a patient who is currently euthymic and future-oriented",
+     "Chronic non-suicidal self-injury with no intent to die and an established therapist",
+     "Hopelessness alone with no ideation, no plan, and no access to lethal means",
+     "Active ideation with a specific plan, intent, and a firearm at home",
+     "Passive ideation without a plan, strong social support, and engagement in outpatient therapy"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which option is the fastest and most effective treatment for acutely suicidal, catatonic, or psychotic depression?",
+    "ch": [
+     "Switching the patient from lithium to valproate",
+     "A standing dose of lorazepam for agitation",
+     "Starting an SSRI and waiting for the therapeutic effect to appear",
+     "Adding buspirone to an existing antidepressant regimen",
+     "Electroconvulsive therapy (ECT)"
+    ]
+   }
+  ]
+ },
+ "preeclampsia": {
+  "condition": "Preeclampsia & Eclampsia",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which finding set defines preeclampsia?",
+    "ch": [
+     "Generalized tonic-clonic seizures in the third trimester with a normal blood pressure",
+     "Hypertension present before 20 weeks with proteinuria of at least 300 mg per 24 hours",
+     "New-onset hypertension after 20 weeks that always requires proteinuria for diagnosis",
+     "Isolated proteinuria after 20 weeks with normal blood pressure throughout pregnancy",
+     "New-onset blood pressure at or above 140/90 after 20 weeks plus proteinuria or end-organ dysfunction"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "What is the role of magnesium sulfate in severe preeclampsia?",
+    "ch": [
+     "It replaces delivery as definitive treatment once severe features appear",
+     "It is the first-line agent for lowering severe-range blood pressure",
+     "It is given for seizure prophylaxis and for treating recurrent eclamptic seizures",
+     "It accelerates fetal lung maturity when delivery is anticipated before 34 weeks",
+     "It reverses the anti-angiogenic imbalance driving endothelial dysfunction"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which finding qualifies as a severe feature of preeclampsia?",
+    "ch": [
+     "Dipstick proteinuria of 2+ on a clean-catch urine specimen",
+     "Blood pressure of 148/94 confirmed on readings four hours apart",
+     "Mild dependent lower-extremity edema noted at 34 weeks gestation",
+     "A uric acid level at the upper limit of the reference range",
+     "Platelet count below 100,000 with new visual scotomata"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "What is the only definitive treatment for preeclampsia?",
+    "ch": [
+     "Delivery of the placenta",
+     "Intravenous magnesium sulfate continued until the blood pressure normalizes",
+     "Maximal antihypertensive therapy with labetalol and nifedipine together",
+     "Low-dose aspirin started immediately at the time of diagnosis",
+     "Bed rest in the left lateral position until 37 weeks gestation"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient receiving a magnesium sulfate infusion has lost her patellar reflexes. What does this indicate, and what should be at the bedside?",
+    "ch": [
+     "A normal finding in pregnancy; document it and continue routine monitoring",
+     "Therapeutic effect; continue the infusion at the current rate",
+     "Impending eclampsia; increase the magnesium infusion rate",
+     "Early magnesium toxicity; calcium gluconate should be at the bedside",
+     "Hypocalcemia; give oral calcium supplementation with the next meal"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A woman at 33 weeks reports right upper quadrant pain and malaise; her blood pressure is 138/86. What does this presentation demand?",
+    "ch": [
+     "No further testing, since the blood pressure is below the diagnostic threshold",
+     "A repeat blood pressure in one week at the next scheduled prenatal visit",
+     "Immediate delivery without any laboratory evaluation beforehand",
+     "LFTs, platelets, and LDH to evaluate for HELLP syndrome",
+     "MRI of the brain to exclude posterior reversible encephalopathy syndrome"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A woman presents five days after an uncomplicated delivery with a new severe headache. What should be assumed until proven otherwise?",
+    "ch": [
+     "A tension headache from sleep deprivation with a newborn at home",
+     "Postpartum preeclampsia",
+     "Migraine recurrence now that the pregnancy has ended",
+     "Dehydration related to breastfeeding and poor oral intake",
+     "Post-dural-puncture headache from her labor analgesia"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which mechanism underlies the maternal endothelial dysfunction of preeclampsia?",
+    "ch": [
+     "Shallow trophoblast invasion causing placental ischemia with a rise in sFlt-1 and a fall in PlGF",
+     "Excess placental lactogen production causing maternal insulin resistance",
+     "Autoimmune destruction of the maternal glomerular basement membrane",
+     "Platelet consumption caused by a deficiency of ADAMTS13",
+     "Direct fetal antibody-mediated injury to maternal blood vessels"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "For a patient at high risk of preeclampsia, when should low-dose aspirin be started?",
+    "ch": [
+     "In the third trimester, once fetal growth restriction appears",
+     "Immediately postpartum, to prevent recurrence in a later pregnancy",
+     "Between 12 and 28 weeks, ideally before 16 weeks",
+     "Only once proteinuria has been documented on a prenatal visit",
+     "At the first appearance of a severe-range blood pressure reading"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "How does the presence of severe features change delivery timing in preeclampsia?",
+    "ch": [
+     "Delivery timing is identical whether or not severe features are present",
+     "Without severe features deliver at 37 weeks or later; with severe features expedite, often at 34 weeks or immediately",
+     "With severe features, delivery is postponed until betamethasone can be given at 36 weeks",
+     "Delivery is indicated only after an eclamptic seizure has actually occurred",
+     "Delivery is delayed to 40 weeks in both groups to maximize fetal maturity"
+    ]
+   }
+  ]
+ },
+ "gdm": {
+  "condition": "Gestational Diabetes",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which hormone is the main driver of pregnancy-related insulin resistance?",
+    "ch": [
+     "Fetal insulin crossing the placenta into the maternal circulation",
+     "Maternal thyroid-stimulating hormone rising in the first trimester",
+     "Oxytocin released progressively across the third trimester",
+     "Prolactin suppressing maternal hepatic gluconeogenesis",
+     "Human placental lactogen (hPL)"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "In the standard two-step U.S. approach, what is the first step of gestational diabetes screening at 24-28 weeks?",
+    "ch": [
+     "A non-fasting 50 g glucose challenge with a one-hour draw",
+     "A fasting 100 g three-hour oral glucose tolerance test",
+     "Random capillary glucose checked at three consecutive visits",
+     "A fasting 75 g two-hour oral glucose tolerance test",
+     "A hemoglobin A1c drawn at the routine prenatal visit"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which set of self-monitoring blood glucose targets is used in gestational diabetes?",
+    "ch": [
+     "Fasting under 110, 1-hour postprandial under 155, 2-hour under 140 mg/dL",
+     "Fasting under 120, 1-hour postprandial under 180, 2-hour under 160 mg/dL",
+     "Fasting under 95, 1-hour postprandial under 140, 2-hour under 120 mg/dL",
+     "Fasting under 70, 1-hour postprandial under 100, 2-hour under 90 mg/dL",
+     "Fasting under 130, 1-hour postprandial under 200, 2-hour under 180 mg/dL"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Diet and exercise fail to control a patient's glucose at 30 weeks. What is the preferred pharmacotherapy, and why?",
+    "ch": [
+     "A combination of metformin and a sulfonylurea for broader coverage",
+     "Insulin, because it does not cross the placenta",
+     "No pharmacotherapy; intensify the diet until delivery regardless of the readings",
+     "Glyburide, because an oral agent improves adherence",
+     "Metformin, because it is the ACOG and ADA drug of choice in pregnancy"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "What follow-up test is required after a pregnancy complicated by gestational diabetes?",
+    "ch": [
+     "A 50 g glucose challenge on the day of hospital discharge",
+     "No testing, because gestational diabetes always resolves at delivery",
+     "Annual fasting insulin levels beginning at age fifty",
+     "A 75 g oral glucose tolerance test at 6-12 weeks postpartum",
+     "A hemoglobin A1c drawn at the six-month well-child visit"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A macrosomic newborn of a mother with poorly controlled gestational diabetes becomes jittery an hour after birth. What explains this?",
+    "ch": [
+     "Hypocalcemia is the only recognized cause of jitteriness in these infants",
+     "Delayed surfactant production directly lowers the neonatal glucose level",
+     "Placental lactogen keeps raising the newborn's insulin resistance after birth",
+     "Fetal hyperinsulinemia persists after cord clamping removes the maternal glucose supply",
+     "Maternal insulin crossed the placenta and still circulates in the neonate"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Betamethasone is ordered at 31 weeks for a patient with insulin-treated gestational diabetes. What should be anticipated?",
+    "ch": [
+     "An immediate need to switch from insulin therapy to oral metformin",
+     "Permanent conversion of A1GDM to lifelong insulin dependence after delivery",
+     "A sharp fall in maternal insulin requirements lasting about a week",
+     "No change in maternal glucose, since steroids act only on the fetal lung",
+     "A transient rise in maternal glucose for about 3-5 days, requiring insulin up-titration"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient's first prenatal visit at 9 weeks shows a hemoglobin A1c of 6.9%. How should this be interpreted?",
+    "ch": [
+     "Evidence of laboratory error, since A1c cannot be measured during pregnancy",
+     "Gestational diabetes found early, managed identically to disease found at 26 weeks",
+     "Overt, pre-existing diabetes, carrying a higher risk of congenital malformations",
+     "A normal pregnancy value that requires no further evaluation",
+     "An indication to proceed to the routine 50 g glucose challenge at 28 weeks"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which delivery complication should be anticipated when gestational diabetes has produced macrosomia?",
+    "ch": [
+     "Cord prolapse caused directly by fetal hyperinsulinemia",
+     "Shoulder dystocia, risking brachial plexus injury and asphyxia",
+     "Amniotic fluid embolism triggered by antenatal steroid administration",
+     "Uterine inversion caused by a rapid second stage of labor",
+     "Placenta previa developing during the course of labor"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "What distinguishes A1GDM from A2GDM?",
+    "ch": [
+     "A1GDM is controlled with diet and exercise; A2GDM requires pharmacotherapy",
+     "A1GDM is diagnosed by the one-step test and A2GDM by the two-step test",
+     "A1GDM occurs in the first trimester and A2GDM only after 24 weeks",
+     "A1GDM carries no fetal risk, whereas A2GDM alone causes macrosomia",
+     "A1GDM resolves postpartum whereas A2GDM never resolves at all"
+    ]
+   }
+  ]
+ }
+}

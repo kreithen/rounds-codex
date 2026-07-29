@@ -1,0 +1,922 @@
+{
+ "tb": {
+  "condition": "Tuberculosis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "How is Mycobacterium tuberculosis transmitted?",
+    "ch": [
+     "By direct contact with broken skin",
+     "By inhaled airborne droplet nuclei that reach the alveoli",
+     "By the faecal-oral route from contaminated water",
+     "By transfusion of contaminated blood products",
+     "By an arthropod vector during a blood meal"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "What distinguishes latent tuberculosis infection from active disease?",
+    "ch": [
+     "Latent infection requires four-drug therapy",
+     "Latent infection cannot be detected by any test",
+     "Latent infection is symptomatic but non-infectious",
+     "Latent infection is asymptomatic, non-infectious and contained by cell-mediated immunity",
+     "Latent infection always shows cavitation on chest X-ray"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What is the hallmark histological finding in tuberculosis?",
+    "ch": [
+     "Eosinophilic infiltration",
+     "Non-caseating granuloma",
+     "Caseating granuloma with Langhans giant cells",
+     "Neutrophilic abscess",
+     "Hyaline membrane formation"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which test is the gold standard for confirming active pulmonary tuberculosis?",
+    "ch": [
+     "Tuberculin skin test read at 48 to 72 hours",
+     "Interferon-gamma release assay on whole blood",
+     "Sputum acid-fast bacilli smear and culture",
+     "Chest X-ray showing upper-lobe cavitation",
+     "Serum antibody testing for mycobacterial antigens"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Why does reactivation tuberculosis localise to the upper lobes?",
+    "ch": [
+     "Because high oxygen tension there favours the aerobic organism",
+     "Because of reduced lymphatic drainage",
+     "Because the upper lobes have thinner pleura",
+     "Because bronchi are wider in the upper lobes",
+     "Because of gravity-dependent drainage"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which adverse effect is characteristic of ethambutol?",
+    "ch": [
+     "Orange-red discoloration of body fluids",
+     "Optic neuritis",
+     "Hyperuricaemia",
+     "Myelosuppression",
+     "Peripheral neuropathy"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Why must pyridoxine be co-administered with isoniazid?",
+    "ch": [
+     "To prevent hyperuricaemia",
+     "To enhance bactericidal activity",
+     "To prevent hepatotoxicity",
+     "To prevent peripheral neuropathy",
+     "To prevent optic neuritis"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient is about to start infliximab. Why must latent tuberculosis be excluded first?",
+    "ch": [
+     "Because infliximab causes false-positive sputum cultures",
+     "Because infliximab is contraindicated with rifampin",
+     "Because infliximab causes optic neuritis",
+     "Because infliximab is directly toxic to mycobacteria",
+     "Because TNF-alpha maintains granuloma integrity, and blocking it allows reactivation"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "What is the standard treatment regimen for drug-susceptible active pulmonary tuberculosis?",
+    "ch": [
+     "RIPE for 2 months then isoniazid and rifampin for 4 months",
+     "Rifampin and isoniazid for 2 months total",
+     "A single dose of rifapentine",
+     "Bedaquiline, linezolid and pretomanid for 6 months",
+     "Isoniazid alone for 9 months"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient who received BCG vaccination has a positive tuberculin skin test. How can this pitfall be resolved?",
+    "ch": [
+     "Assume the result is a true positive and start RIPE",
+     "Assume the result is false and take no further action",
+     "Perform a sputum smear as the screening test",
+     "Repeat the skin test in the other arm",
+     "Use an interferon-gamma release assay, which is unaffected by BCG"
+    ]
+   }
+  ]
+ },
+ "lung-cancer": {
+  "condition": "Lung Cancer",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which broad division of lung cancer accounts for roughly 85% of cases?",
+    "ch": [
+     "Metastatic disease from other primaries",
+     "Small cell lung cancer",
+     "Non-small cell lung cancer",
+     "Carcinoid tumour",
+     "Mesothelioma"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which subtype is the most common and the most frequent type in non-smokers?",
+    "ch": [
+     "Carcinoid",
+     "Squamous cell carcinoma",
+     "Small cell carcinoma",
+     "Adenocarcinoma",
+     "Large cell carcinoma"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which is the leading cause of lung cancer in people who have never smoked?",
+    "ch": [
+     "Radon",
+     "Air pollution",
+     "Prior radiation therapy",
+     "Second-hand smoke",
+     "Asbestos"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which tumour locations and smoking associations are correct?",
+    "ch": [
+     "Adenocarcinoma central and smoking-related; squamous peripheral",
+     "Squamous and small cell central and smoking-related; adenocarcinoma peripheral",
+     "All subtypes arise peripherally in the lung fields",
+     "All subtypes arise centrally near the hilum",
+     "Tumour location does not correlate with subtype"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "What is required to establish a definitive diagnosis of lung cancer?",
+    "ch": [
+     "Tissue biopsy for histology and molecular testing",
+     "Sputum cytology showing malignant cells",
+     "A rising serum tumour marker on serial testing",
+     "The appearance of the mass on contrast chest CT",
+     "Avidity of the lesion on PET-CT imaging"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient with small cell lung cancer develops hyponatremia. Which paraneoplastic syndrome is most likely?",
+    "ch": [
+     "Hypertrophic osteoarthropathy",
+     "Carcinoid syndrome",
+     "Cushing syndrome from cortisol-secreting adrenal adenoma",
+     "PTHrP-mediated hypercalcaemia",
+     "SIADH"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which paraneoplastic syndrome is associated with squamous cell lung cancer?",
+    "ch": [
+     "Ectopic ACTH secretion",
+     "Hypercalcaemia from PTHrP",
+     "Lambert-Eaton myasthenic syndrome",
+     "Polycythaemia",
+     "SIADH"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which criteria define eligibility for annual low-dose CT lung cancer screening?",
+    "ch": [
+     "Only patients with a first-degree family history of lung cancer",
+     "Any patient presenting with a chronic cough",
+     "Ages 30-50 with any history of cigarette smoking",
+     "Any adult over 40 who has ever smoked cigarettes",
+     "Ages 50-80 with a 20 pack-year history, currently smoking or quit within 15 years"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient presents with facial and neck swelling, distended neck veins and dyspnea. What complication should be suspected?",
+    "ch": [
+     "Spinal cord compression",
+     "Brain metastasis",
+     "Pancoast tumour",
+     "Superior vena cava syndrome",
+     "Malignant pleural effusion"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Why should molecular and PD-L1 testing be ordered on advanced non-squamous NSCLC before selecting systemic therapy?",
+    "ch": [
+     "To establish the TNM stage of the disease",
+     "To confirm the histological subtype of the tumour",
+     "Because the driver mutation determines which targeted or immune therapy to use",
+     "To determine whether the tumour is surgically resectable",
+     "To calculate the appropriate radiation dose"
+    ]
+   }
+  ]
+ },
+ "pleural-effusion": {
+  "condition": "Pleural Effusion",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which diagnostic procedure is the cornerstone for evaluating a new unexplained pleural effusion?",
+    "ch": [
+     "MRI",
+     "Spirometry",
+     "Echocardiography",
+     "Bronchoscopy",
+     "Diagnostic thoracentesis"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Light's criteria are used to:",
+    "ch": [
+     "Classify transudates vs exudates",
+     "Detect pneumothorax",
+     "Measure pleural pressure",
+     "Assess oxygenation",
+     "Diagnose empyema"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Preferred imaging guidance for thoracentesis?",
+    "ch": [
+     "PET",
+     "Ultrasound",
+     "Fluoroscopy",
+     "CT angiography",
+     "MRI"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Milky pleural fluid suggests:",
+    "ch": [
+     "Empyema",
+     "Hemothorax",
+     "Chylothorax",
+     "CHF",
+     "TB"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Classic exam finding?",
+    "ch": [
+     "Hyperresonance",
+     "Wheezing",
+     "Dullness to percussion",
+     "Stridor",
+     "Crackles only"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Most common transudative cause?",
+    "ch": [
+     "CHF",
+     "Malignancy",
+     "TB",
+     "Pancreatitis",
+     "Pneumonia"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Empyema treatment?",
+    "ch": [
+     "Steroids",
+     "Antibiotics plus drainage",
+     "Bronchodilators",
+     "Anticoagulation",
+     "Observation"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Pleurodesis is mainly for:",
+    "ch": [
+     "Asthma",
+     "Small CHF effusions",
+     "Viral pleuritis",
+     "Recurrent malignant effusions",
+     "COPD"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Bloody pleural fluid suggests:",
+    "ch": [
+     "Cirrhosis",
+     "Nephrotic syndrome",
+     "Chylothorax",
+     "Hemothorax or malignancy",
+     "CHF"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Overall treatment principle?",
+    "ch": [
+     "Surgery for all",
+     "Steroids",
+     "Antibiotics for all",
+     "Drain all effusions",
+     "Treat the underlying cause"
+    ]
+   }
+  ]
+ },
+ "osa": {
+  "condition": "Obstructive Sleep Apnea",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which finding distinguishes obstructive sleep apnea from central sleep apnea?",
+    "ch": [
+     "Continued respiratory effort against an obstructed airway",
+     "Bradycardia",
+     "Hyperventilation",
+     "Hemoptysis",
+     "Absence of snoring"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which screening tool considers a score >=3 high risk?",
+    "ch": [
+     "APGAR",
+     "CHA2DS2-VASc",
+     "Wells",
+     "STOP-BANG",
+     "CURB-65"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Gold-standard diagnostic test?",
+    "ch": [
+     "Chest X-ray",
+     "ECG",
+     "Chest CT",
+     "MRI",
+     "In-lab polysomnography"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Mild OSA AHI range?",
+    "ch": [
+     "<5",
+     "5-15",
+     "15-30",
+     ">30",
+     ">50"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "First-line treatment for moderate-severe OSA?",
+    "ch": [
+     "CPAP",
+     "Antibiotics",
+     "Surgery",
+     "Oxygen",
+     "Steroids"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "HSAT is appropriate for:",
+    "ch": [
+     "COPD overlap",
+     "Heart failure",
+     "Uncomplicated adults with high pretest probability",
+     "Neuromuscular disease",
+     "All patients"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which worsens OSA?",
+    "ch": [
+     "Metformin",
+     "Acetaminophen",
+     "Vitamin D",
+     "Alcohol",
+     "Penicillin"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Supplemental oxygen alone is:",
+    "ch": [
+     "First-line",
+     "Not a substitute for PAP",
+     "Preferred over CPAP",
+     "Recommended for all",
+     "Curative"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Selected CPAP-intolerant patients may benefit from:",
+    "ch": [
+     "Bronchoscopy",
+     "Dialysis",
+     "Hypoglossal nerve stimulation",
+     "ECMO",
+     "Lobectomy"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Untreated OSA is strongly associated with:",
+    "ch": [
+     "Peptic ulcer",
+     "Hyperthyroidism",
+     "Kidney stones",
+     "Appendicitis",
+     "AF recurrence"
+    ]
+   }
+  ]
+ },
+ "hhs": {
+  "condition": "Hyperosmolar Hyperglycemic State (HHS)",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which laboratory profile best defines HHS?",
+    "ch": [
+     "Normal glucose with acidosis",
+     "Glucose >600 mg/dL, effective osmolality >320 mOsm/kg, minimal ketones, pH >7.30",
+     "Glucose >250 mg/dL with marked ketones and pH <7.30",
+     "Glucose <200 mg/dL with normal osmolality",
+     "Isolated elevated ketones"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "What is the first treatment priority?",
+    "ch": [
+     "Aggressive isotonic IV fluids",
+     "Dialysis",
+     "Dextrose",
+     "IV insulin",
+     "Sodium bicarbonate"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Mental status correlates most closely with:",
+    "ch": [
+     "HbA1c",
+     "Lactate",
+     "Glucose",
+     "Potassium",
+     "Effective serum osmolality"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "HHS most commonly occurs in:",
+    "ch": [
+     "Children",
+     "Athletes",
+     "Young type 1 DM",
+     "Older adults with type 2 DM",
+     "Pregnancy"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Ketones in HHS are usually:",
+    "ch": [
+     "Moderate",
+     "Minimal/absent",
+     "Always positive",
+     "Severe",
+     "Markedly elevated"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Insulin should be delayed until:",
+    "ch": [
+     "HbA1c returns",
+     "Fever resolves",
+     "Troponin normal",
+     "CT complete",
+     "Potassium assessed/replaced if low"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Major precipitant:",
+    "ch": [
+     "Fracture",
+     "Appendicitis",
+     "Migraine",
+     "Infection",
+     "Asthma"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Typical fluid deficit:",
+    "ch": [
+     "1-2 L",
+     "3-4 L",
+     "5-10 L",
+     ">20 L",
+     "None"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Major complication of overly rapid correction:",
+    "ch": [
+     "DKA",
+     "Hyperkalemia",
+     "Cerebral edema",
+     "GI bleed",
+     "Hepatitis"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Before stopping IV insulin:",
+    "ch": [
+     "Give SC basal insulin with overlap",
+     "Wait 24 h",
+     "Stop abruptly",
+     "Give bicarbonate",
+     "Normalize HbA1c"
+    ]
+   }
+  ]
+ },
+ "hypoglycemia": {
+  "condition": "Hypoglycemia",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which combination defines Whipple's triad, the criterion used to decide whether a low glucose is truly pathologic?",
+    "ch": [
+     "Tremor, diaphoresis and palpitations occurring together after unaccustomed exercise",
+     "A fingerstick below 70 mg/dL on three separate mornings in an asymptomatic patient",
+     "A low plasma glucose with a high insulin level and a suppressed C-peptide level",
+     "Confusion, seizure and coma developing in a patient who is taking insulin",
+     "Symptoms consistent with low glucose, a measured low plasma glucose, and resolution of symptoms with glucose correction"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which statement about the ADA tiered definitions of hypoglycemia in diabetes is correct?",
+    "ch": [
+     "Level 1 applies only when the patient reports adrenergic symptoms",
+     "Level 1 is the glucose alert value, a plasma glucose below 70 mg/dL",
+     "Level 2, clinically significant hypoglycemia, begins below 60 mg/dL",
+     "Level 3 is defined by a plasma glucose below 40 mg/dL regardless of symptoms",
+     "Level 3 cannot be assigned unless a plasma glucose value is documented"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What is the most common cause of hypoglycemia?",
+    "ch": [
+     "An insulinoma secreting insulin autonomously",
+     "Drug-induced hypoglycemia from excess insulin or a sulfonylurea or meglitinide",
+     "Adrenal or pituitary insufficiency with loss of counter-regulation",
+     "Liver failure with depleted hepatic glycogen stores",
+     "Sepsis in a critically ill hospitalized patient"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A well-appearing non-diabetic patient has a documented plasma glucose of 38 mg/dL. The critical sample drawn during the event shows a high insulin with a low C-peptide. What does this pattern indicate?",
+    "ch": [
+     "Exogenous injected insulin, as in factitious hypoglycemia",
+     "Adrenal insufficiency with loss of cortisol counter-regulation",
+     "Liver failure with exhausted hepatic glycogen stores",
+     "An insulinoma secreting endogenous insulin autonomously",
+     "Sulfonylurea ingestion driving endogenous insulin release"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A malnourished man with alcohol use disorder is found obtunded with a glucose of 30 mg/dL. Why is intramuscular glucagon a poor choice here?",
+    "ch": [
+     "Glucagon cannot be given intramuscularly to a patient who is obtunded and unable to swallow",
+     "Glucagon suppresses insulin release and would drive the plasma glucose down further",
+     "Glucagon precipitates Wernicke encephalopathy when given to a malnourished patient",
+     "Glucagon raises glucose only when the underlying cause is a sulfonylurea overdose",
+     "Glucagon needs intact glycogen stores, which are depleted in alcoholics, starvation and liver failure"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "An alert diabetic inpatient reports tremor and sweating and the bedside fingerstick reads 58 mg/dL. What does the Rule of 15 direct you to do?",
+    "ch": [
+     "Give 15 g of fast-acting carbohydrate, recheck in 15 minutes, and repeat if still below 70 mg/dL",
+     "Hold the next insulin dose and recheck the glucose before the next meal is served",
+     "Give intranasal glucagon and observe for 15 minutes before offering any food",
+     "Wait for the lab plasma glucose to verify the bedside reading before treating",
+     "Give 50 mL of IV dextrose and recheck the glucose in one hour"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient is found unresponsive on the ward with a point-of-care glucose of 32 mg/dL. Which action is correct?",
+    "ch": [
+     "Draw a critical sample and treat once insulin and C-peptide result",
+     "Place glucose gel under the tongue and reassess in 15 minutes",
+     "Withhold treatment until the laboratory plasma glucose returns",
+     "Give IV dextrose now, with thiamine if the patient is malnourished",
+     "Give juice through a straw with the head of the bed elevated"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "An elderly woman taking glipizide arrives with a glucose of 40 mg/dL, wakes fully after IV dextrose, and asks to go home. What is the appropriate plan?",
+    "ch": [
+     "Discharge her with a glucagon kit and clinic follow-up the next day",
+     "Discharge her with instructions to eat a meal and recheck her glucose at home",
+     "Discharge her after four hours if her glucose stays above 70 mg/dL",
+     "Admit her for prolonged glucose monitoring, adding octreotide if lows recur",
+     "Admit her only if a lab plasma glucose confirms the initial bedside reading"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient with long-standing diabetes taking a beta-blocker has repeated severe lows with no warning symptoms beforehand. Which statement best explains this and its management?",
+    "ch": [
+     "Tightening the glycemic target will retrain the patient to detect early lows sooner",
+     "Glucagon is contraindicated in beta-blocked patients, so only oral carbohydrate may be used",
+     "Blunted counter-regulation plus beta-blockade masks the adrenergic warning signs, and relaxing glycemic targets can restore them",
+     "The beta-blocker itself lowers plasma glucose and should be swapped for a calcium channel blocker",
+     "Without adrenergic symptoms these events are unlikely to represent true hypoglycemia at all"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "As plasma glucose falls in a healthy person, which sequence of counter-regulatory events occurs?",
+    "ch": [
+     "Growth hormone rises first and is the response diabetics lose earliest over time",
+     "Cortisol and growth hormone rise first, then glucagon, and epinephrine last of all",
+     "Insulin secretion stops first, then glucagon and epinephrine rise, then cortisol and growth hormone",
+     "Epinephrine rises first, followed by a fall in insulin secretion and then a glucagon surge",
+     "Glucagon and cortisol rise together while insulin secretion continues unchanged throughout"
+    ]
+   }
+  ]
+ },
+ "t1dm": {
+  "condition": "Type 1 Diabetes Mellitus",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement most accurately characterizes Type 1 diabetes mellitus?",
+    "ch": [
+     "Insulin resistance with progressive beta-cell exhaustion and a tendency toward HHS",
+     "T-cell-mediated autoimmune destruction of islet beta cells causing absolute insulin deficiency",
+     "A defect in hepatic glucose uptake with entirely preserved insulin secretion",
+     "An acquired deficiency of glucagon that leaves insulin action unopposed",
+     "Beta-cell loss from chronic pancreatitis with negative islet autoantibodies"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which single result meets the diagnostic criteria for diabetes?",
+    "ch": [
+     "A 2-hour OGTT value of 165 mg/dL",
+     "A fasting glucose of 110 mg/dL with polyuria",
+     "A fasting plasma glucose of 118 mg/dL",
+     "An HbA1c of 6.5%",
+     "A random glucose of 180 mg/dL in an asymptomatic patient"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which presentation is most characteristic of new-onset Type 1 diabetes?",
+    "ch": [
+     "An adult with isolated fasting hyperglycemia and negative islet autoantibodies",
+     "A lean adolescent with polyuria, polydipsia, polyphagia and unexplained weight loss",
+     "An obese adult found to be hyperglycemic on routine screening, with no symptoms",
+     "An older adult with profound hyperosmolar dehydration and no ketones on testing",
+     "A child with recurrent hypoglycemia and an inappropriately high C-peptide level"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A 32-year-old labeled Type 2 has failed oral agents within a year of diagnosis. Which pair of results would confirm Type 1 diabetes presenting as LADA?",
+    "ch": [
+     "A normal C-peptide with a positive tTG-IgA",
+     "An undetectable C-peptide with a positive TPO antibody alone",
+     "A high C-peptide with a positive insulin autoantibody",
+     "A high C-peptide with negative islet autoantibodies",
+     "A low C-peptide with positive GAD65 and IA-2 autoantibodies"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient in DKA has an initial serum potassium of 3.0 mEq/L. What does this require?",
+    "ch": [
+     "Hold insulin until the potassium is at least 3.3 mEq/L while repleting it",
+     "Give bicarbonate first to shift potassium out of the cells",
+     "Start insulin and add dextrose immediately to prevent hypokalemia",
+     "Hold IV fluids until the potassium has normalized",
+     "Start the insulin infusion and replete potassium at the same time"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which finding signals that DKA has resolved and the insulin infusion can be transitioned?",
+    "ch": [
+     "Urine ketones have cleared on dipstick testing",
+     "Kussmaul respirations have stopped",
+     "The serum potassium has returned to normal",
+     "The glucose has fallen to about 200 mg/dL",
+     "The anion gap has closed"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient on a hybrid closed-loop insulin pump develops nausea and ketones about six hours after the infusion set kinks. Why does ketosis appear so quickly?",
+    "ch": [
+     "A pump delivers only rapid-acting insulin, so there is no basal depot when delivery fails",
+     "Closed-loop systems over-deliver insulin whenever the infusion set occludes",
+     "Pump insulin is long-acting and keeps being absorbed for many hours",
+     "The ketosis reflects the honeymoon phase rather than any pump problem",
+     "Pramlintide in the reservoir slows gastric emptying and generates ketones"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A Type 1 patient vomiting from gastroenteritis has eaten nothing all day and asks whether to skip her insulin. What should she be told?",
+    "ch": [
+     "Halve the basal dose and stop checking ketones until she can eat",
+     "Hold both basal and bolus insulin until she is eating normally again",
+     "Hold the basal insulin but continue correction doses every four hours",
+     "Continue the basal insulin, check glucose and ketones frequently, and keep up hydration",
+     "Stop insulin and use pramlintide until oral intake resumes"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient has persistently high fasting glucose readings. Which test differentiates the dawn phenomenon from the Somogyi effect?",
+    "ch": [
+     "A 2-hour OGTT",
+     "Islet autoantibody testing",
+     "A 3 AM glucose check",
+     "An HbA1c",
+     "A C-peptide level"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Three months after diagnosis, a lean 16-year-old with Type 1 diabetes needs much less insulin and her HbA1c is normal. Her family asks whether the diabetes has gone. What is the best explanation?",
+    "ch": [
+     "Her insulin has been over-delivered, masking the true insulin requirement",
+     "Teplizumab given at diagnosis has reversed the beta-cell destruction",
+     "The honeymoon phase: transient residual beta-cell function that lowers insulin needs but is temporary",
+     "She was mislabeled and actually has Type 2 diabetes with insulin resistance",
+     "Her islet autoantibodies have cleared, so the autoimmune destruction has stopped"
+    ]
+   }
+  ]
+ },
+ "cushings": {
+  "condition": "Cushing's Syndrome",
+  "questions": [
+   {
+    "n": 1,
+    "q": "What is the most common cause of Cushing's syndrome overall?",
+    "ch": [
+     "Bilateral adrenal hyperplasia",
+     "A pituitary ACTH-secreting adenoma",
+     "Exogenous glucocorticoid therapy",
+     "A cortisol-secreting adrenal adenoma",
+     "Ectopic ACTH from small-cell lung cancer"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which cluster of findings is the classic Cushingoid habitus?",
+    "ch": [
+     "Hyperpigmented palmar creases with hypotension, salt craving and weight loss",
+     "Exophthalmos, heat intolerance, weight loss and a fine resting tremor",
+     "Coarse facial features, enlarging hands and feet, and prognathism",
+     "Symmetric proximal weakness with a heliotrope rash and Gottron papules",
+     "Moon face, buffalo hump, purple striae and central obesity with thin extremities"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which cause accounts for roughly 70-80% of endogenous Cushing's syndrome?",
+    "ch": [
+     "Bilateral ACTH-independent adrenal hyperplasia",
+     "A cortisol-secreting adrenal adenoma",
+     "An adrenal carcinoma producing cortisol",
+     "A pituitary ACTH-secreting adenoma, or Cushing's disease",
+     "Ectopic ACTH from a bronchial carcinoid tumor"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient has moon facies, wide purple striae and new hypertension. What is the correct first step?",
+    "ch": [
+     "Order an adrenal CT to look for a mass",
+     "Confirm hypercortisolism biochemically with two first-line tests",
+     "Measure a plasma ACTH to localize the source",
+     "Proceed to inferior petrosal sinus sampling",
+     "Order a pituitary MRI to look for an adenoma"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Screening confirms hypercortisolism and the plasma ACTH is suppressed. What does this indicate?",
+    "ch": [
+     "Pseudo-Cushing's from alcohol use, obesity or depression",
+     "Nelson syndrome following bilateral adrenalectomy",
+     "An ACTH-independent adrenal source such as adenoma, carcinoma or hyperplasia",
+     "A pituitary ACTH-secreting adenoma, that is, Cushing's disease",
+     "Ectopic ACTH secretion from a small-cell lung cancer"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which finding indicates that the cortisol excess is ACTH-dependent rather than adrenal in origin?",
+    "ch": [
+     "Hyperpigmentation of the skin",
+     "Wide purple abdominal striae",
+     "Proximal muscle weakness",
+     "A dorsocervical fat pad",
+     "New-onset hyperglycemia"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A smoker develops severe weakness, hypokalemic metabolic alkalosis, hyperpigmentation and marked hypercortisolism over two months, without a florid Cushingoid appearance. What is the most likely source?",
+    "ch": [
+     "Pseudo-Cushing's from heavy alcohol use",
+     "A cortisol-secreting adrenal adenoma",
+     "Exogenous glucocorticoid use the patient has not reported",
+     "Ectopic ACTH secretion, classically from small-cell lung cancer",
+     "A pituitary microadenoma causing Cushing's disease"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Hypercortisolism is confirmed and the ACTH is elevated, but the pituitary MRI shows no clear adenoma. What is the definitive next test?",
+    "ch": [
+     "A 24-hour urinary free cortisol",
+     "Adrenal CT with contrast",
+     "Late-night salivary cortisol",
+     "Repeat the 1 mg overnight dexamethasone suppression test",
+     "Inferior petrosal sinus sampling"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Three days after apparently curative transsphenoidal surgery, a patient becomes hypotensive with hypoglycemia and hyponatremia. What is happening and what is the immediate action?",
+    "ch": [
+     "Mifepristone effect; withhold the drug and recheck a serum cortisol level",
+     "Adrenal crisis from postoperative adrenal insufficiency; give IV hydrocortisone and fluids",
+     "Recurrent hypercortisolism; start a steroidogenesis inhibitor such as metyrapone",
+     "Pasireotide-induced hyperglycemia; start insulin and monitor the glucose closely",
+     "Nelson syndrome; arrange urgent pituitary imaging and consider radiotherapy"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Surgery has failed to cure a patient's Cushing's disease and medical therapy is being selected. Which statement about these agents is correct?",
+    "ch": [
+     "Ketoconazole requires LFT monitoring for hepatotoxicity",
+     "Pasireotide reliably improves glycemic control",
+     "Mifepristone lowers measured cortisol, which then guides dosing",
+     "Osilodrostat's main hazard is endometrial thickening",
+     "Etomidate is the preferred long-term outpatient option"
+    ]
+   }
+  ]
+ }
+}

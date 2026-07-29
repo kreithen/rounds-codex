@@ -1,0 +1,922 @@
+{
+ "icp": {
+  "condition": "Increased Intracranial Pressure / TBI",
+  "questions": [
+   {
+    "n": 1,
+    "q": "The Monro-Kellie doctrine explains rising intracranial pressure by which principle?",
+    "ch": [
+     "Cerebral perfusion pressure is the sum of mean arterial pressure and intracranial pressure",
+     "Cerebral blood flow rises linearly with arterial carbon dioxide without any limit",
+     "The skull expands slightly over hours to accommodate added intracranial volume",
+     "Cerebrospinal fluid production doubles whenever brain tissue volume increases",
+     "The rigid cranium holds a fixed volume of brain, blood and CSF, so once buffering fails ICP rises steeply"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "What is the normal intracranial pressure, and what level defines intracranial hypertension warranting treatment?",
+    "ch": [
+     "Normal 5-15 mmHg; treat when sustained above 20-22 mmHg",
+     "Normal 10-20 mmHg; treat above 30 mmHg",
+     "Normal 15-25 mmHg; treat above 40 mmHg",
+     "Normal 0-5 mmHg; treat above 10 mmHg",
+     "Normal 5-15 mmHg; treat above 15 mmHg"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which findings make up the Cushing triad, and what does it signify?",
+    "ch": [
+     "Hypotension, tachycardia and shallow respirations — early compensated raised pressure",
+     "Hypertension with a widened pulse pressure, bradycardia and irregular respirations — a late, ominous sign",
+     "Headache, vomiting and papilledema — the earliest reliable warning of herniation",
+     "Fever, neck stiffness and photophobia — the signature of infectious raised pressure",
+     "Anisocoria, hemiparesis and aphasia — the classic early triad of a mass lesion"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A severe TBI patient has a mean arterial pressure of 80 mmHg and an intracranial pressure of 25 mmHg. What is the cerebral perfusion pressure and what should be done?",
+    "ch": [
+     "105 mmHg — above target, so lower the blood pressure with an antihypertensive",
+     "55 mmHg — acceptable in severe traumatic brain injury, so no intervention is needed",
+     "25 mmHg — the intracranial pressure itself is the perfusion pressure and needs no correction",
+     "55 mmHg — below the 60-70 mmHg goal, so lower the ICP and support the MAP",
+     "80 mmHg — perfusion pressure equals MAP whenever a ventricular drain is in place"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which statement about corticosteroids in raised intracranial pressure is correct?",
+    "ch": [
+     "First-line therapy for the cytotoxic edema of diffuse axonal injury in severe head trauma",
+     "Recommended for all raised intracranial pressure once a ventricular drain has been placed",
+     "Equivalent to hypertonic saline as an osmotherapy for acutely lowering pressure after trauma",
+     "Contraindicated in tumor-related edema but considered standard of care in head trauma",
+     "Contraindicated in traumatic brain injury, where they increased mortality, but effective for vasogenic edema around tumors or abscess"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "What role does hyperventilation to a PaCO2 of 30-35 mmHg play in raised intracranial pressure?",
+    "ch": [
+     "A replacement for osmotherapy when serum sodium cannot be reliably monitored",
+     "A brief temporizing bridge for acute herniation or a new pupil change",
+     "A method of raising cerebral blood flow to improve the perfusion pressure",
+     "A prophylactic measure recommended for every intubated head-injured patient",
+     "A maintenance strategy for the first forty-eight hours after severe head injury"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which bundle of nursing measures is recommended to limit intracranial pressure spikes?",
+    "ch": [
+     "Permissive fever to 38.5°C and tight endotracheal tube ties for security",
+     "Scheduled Valsalva breathing exercises and withholding of stool softeners",
+     "Head of bed at 30° with the head midline, clustered care, and pre-oxygenated suctioning kept under 10 seconds",
+     "Head of bed flat with the head turned to one side and hourly suctioning",
+     "Trendelenburg positioning with frequent stimulation to assess arousal"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A head-injured patient's right pupil becomes fixed and dilated and he develops a new left hemiparesis. What is happening, and what is done?",
+    "ch": [
+     "Uncal herniation compressing cranial nerve III — emergency imaging and osmotherapy, with brief hyperventilation as a bridge",
+     "Tonsillar herniation — begin levetiracetam seizure prophylaxis and continue to observe",
+     "A benign anisocoria variant — document the finding and recheck at the next neuro check",
+     "Subfalcine herniation — start dexamethasone to reduce the traumatic cerebral edema",
+     "Direct orbital trauma — obtain an ophthalmology consultation before any further imaging"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient briefly loses consciousness, wakes and converses normally, then deteriorates rapidly; the head CT shows a biconvex, lens-shaped hematoma. Which lesion is this?",
+    "ch": [
+     "Diffuse axonal injury, seen far better on MRI than on non-contrast head CT",
+     "Subarachnoid hemorrhage producing a sudden severe headache without a lucid interval",
+     "Epidural hematoma from the middle meningeal artery, with the classic lucid interval",
+     "Intraparenchymal temporal contusion producing progressive delayed mass effect",
+     "Subdural hematoma from torn bridging veins, crescent-shaped and crossing sutures"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A trauma patient has a Glasgow Coma Scale of 7, an oxygen saturation of 88% and a systolic blood pressure of 85 mmHg. Which set of actions is prioritized?",
+    "ch": [
+     "Start dexamethasone and prophylactic hyperventilation to a PaCO2 of 25 mmHg",
+     "Obtain an MRI for diffuse axonal injury before beginning any resuscitative measures",
+     "Delay intubation until the head CT is complete so the neurologic exam is not obscured",
+     "Intubate for a GCS of 8 or less and correct the hypoxia and hypotension that drive secondary injury",
+     "Give mannitol first and accept the hypotension as an unavoidable side effect of osmotherapy"
+    ]
+   }
+  ]
+ },
+ "sci": {
+  "condition": "Spinal Cord Injury",
+  "questions": [
+   {
+    "n": 1,
+    "q": "How is a complete spinal cord injury defined?",
+    "ch": [
+     "Any injury graded C or worse on the ASIA Impairment Scale at the initial examination",
+     "Bilateral leg weakness with preserved perianal sensation and normal anal tone",
+     "Absence of the deep tendon reflexes for more than forty-eight hours after injury",
+     "No motor or sensory function below the level of injury, including no sacral sparing",
+     "Loss of motor function with preserved pain and temperature sensation below the level"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which finding distinguishes neurogenic shock from hemorrhagic shock?",
+    "ch": [
+     "Hypotension occurs only in hemorrhagic shock and never in neurogenic shock",
+     "Neurogenic shock responds to blood transfusion while hemorrhagic shock does not",
+     "Neurogenic shock occurs only with injuries at or below the level of T12",
+     "Neurogenic shock causes bradycardia whereas hemorrhagic shock causes tachycardia",
+     "Cool clammy skin is present in neurogenic shock and absent in hemorrhagic shock"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which incomplete syndrome is described as the most common, classically in an older patient with cervical stenosis after a hyperextension fall and weaker in the arms than the legs?",
+    "ch": [
+     "Conus medullaris syndrome",
+     "Brown-Séquard syndrome",
+     "Anterior cord syndrome",
+     "Cauda equina syndrome",
+     "Central cord syndrome"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "What hemodynamic target is given for acute spinal cord injury?",
+    "ch": [
+     "Mean arterial pressure of 60-70 mmHg, the same target used in head injury",
+     "Permissive hypotension until surgical decompression has been completed",
+     "Mean arterial pressure above 100 mmHg until the bulbocavernosus reflex returns",
+     "Systolic blood pressure above 140 mmHg for the first twenty-four hours",
+     "Mean arterial pressure of 85-90 mmHg maintained for approximately 7 days"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient with a T4 injury develops a pounding headache, a blood pressure of 210/110, flushing above the lesion and pallor below it. What is the first action?",
+    "ch": [
+     "Give sublingual nifedipine immediately and then lay the patient flat",
+     "Place the patient supine with the legs elevated to improve cerebral perfusion",
+     "Sit the patient upright, loosen constrictive clothing, and find and remove the trigger",
+     "Administer atropine for the associated bradycardia and continue to observe",
+     "Obtain an urgent head CT before any blood pressure intervention is undertaken"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "What does return of the bulbocavernosus reflex signify?",
+    "ch": [
+     "The end of spinal shock, the transient flaccid areflexia that follows injury",
+     "That the injury can now be reclassified as ASIA Impairment Scale grade E",
+     "That autonomic dysreflexia is imminent and prophylaxis should be started",
+     "That the patient has regained voluntary anal contraction and sacral sparing",
+     "That neurogenic shock has resolved and vasopressor support can be stopped"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Why is abrupt discontinuation of baclofen dangerous in a patient being treated for spasticity after spinal cord injury?",
+    "ch": [
+     "It causes rebound diaphragmatic weakness in injuries above the C5 level",
+     "Withdrawal causes seizures, rebound spasticity and rhabdomyolysis",
+     "Withdrawal precipitates neurogenic shock with bradycardia and hypotension",
+     "Discontinuation causes an irreversible loss of the bulbocavernosus reflex",
+     "Stopping it triggers a hypertensive crisis identical to autonomic dysreflexia"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient with a C4 injury is tiring, with a falling vital capacity and a rising carbon dioxide level, and suctioning provokes profound bradycardia. Which management pairing fits?",
+    "ch": [
+     "Anticipate ventilatory support and keep atropine at the bedside, pretreating before suctioning",
+     "Begin high-dose methylprednisolone, the current standard of care for high cervical injury",
+     "Withhold all suctioning permanently and rely on chest physiotherapy alone",
+     "Give a fluid bolus for the bradycardia and continue routine monitoring on the floor",
+     "Start baclofen for the respiratory muscle spasticity that is causing the fatigue"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which pair of interventions is described as the modern perfusion-and-timing pillars of acute spinal cord injury care?",
+    "ch": [
+     "Permissive hypotension together with early mobilization out of the cervical collar",
+     "Mean arterial pressure of 85-90 mmHg for 7 days and decompression within 24 hours",
+     "Mannitol osmotherapy with prophylactic hyperventilation to a PaCO2 of 30-35 mmHg",
+     "Immediate intrathecal baclofen and a scheduled bowel program starting on day one",
+     "High-dose methylprednisolone within eight hours plus six weeks of strict bed rest"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient reports saddle anesthesia, urinary retention and bilateral leg weakness. What does this represent?",
+    "ch": [
+     "Neurogenic shock, treated with vasopressors to a MAP goal of 85-90 mmHg",
+     "Autonomic dysreflexia, requiring immediate trigger removal and an antihypertensive",
+     "Cauda equina syndrome, a surgical emergency needing emergent decompression",
+     "Central cord syndrome, best managed with rehabilitation and close observation",
+     "Spinal shock, which resolves once the bulbocavernosus reflex has returned"
+    ]
+   }
+  ]
+ },
+ "migraine": {
+  "condition": "Migraine & Headache",
+  "questions": [
+   {
+    "n": 1,
+    "q": "The POUND criteria used to diagnose migraine consist of which features?",
+    "ch": [
+     "Photophobia, orbital pain, unilateral, nasal congestion, drowsiness",
+     "Pressing, occipital, universal, numbness, duration under one hour",
+     "Pulsatile, one-day duration of 4-72 hours, unilateral, nausea, disabling",
+     "Progressive, older age, undulating, neck stiffness, focal deficits",
+     "Positional, ocular, unremitting, nocturnal, and dizziness"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which mechanism underlies migraine?",
+    "ch": [
+     "Trigeminovascular activation with CGRP release causing neurogenic inflammation and vasodilation",
+     "Sustained cerebral vasospasm producing focal ischemia throughout each attack",
+     "Raised intracranial pressure from impaired CSF absorption at the arachnoid villi",
+     "Demyelination of the trigeminal nerve root from a post-infectious immune attack",
+     "Autoimmune antibodies directed against neuronal potassium channels in the cortex"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "How is migraine aura defined?",
+    "ch": [
+     "Nausea and vomiting that begin at least twenty-four hours before the pain",
+     "Sudden, maximal-at-onset visual loss that persists throughout the headache",
+     "A fixed focal neurologic deficit that remains after the headache resolves",
+     "Gradual, spreading, fully reversible visual or sensory symptoms lasting 5-60 minutes before the headache",
+     "Autonomic symptoms such as lacrimation and rhinorrhea during the attack"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which patient should not receive a triptan?",
+    "ch": [
+     "A 36-year-old with photophobia and phonophobia during every attack",
+     "A 58-year-old with known coronary artery disease and uncontrolled hypertension",
+     "A 30-year-old with migraine without aura and no other medical problems",
+     "A 25-year-old with episodic migraine who takes an oral iron supplement",
+     "A 44-year-old whose headache diary shows four disabling attacks each month"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient with severe migraine also has coronary artery disease. Which acute option avoids vasoconstriction?",
+    "ch": [
+     "Ergotamine, which is safe when it is combined with a low-dose triptan",
+     "Propranolol taken at the onset of each attack as an abortive medication",
+     "Repeated NSAID dosing on twenty days per month to stay ahead of attacks",
+     "Sumatriptan at a reduced dose, which removes the vascular risk entirely",
+     "A gepant such as ubrogepant or rimegepant, or the ditan lasmiditan"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient takes an NSAID or a triptan on about twenty days each month and her headaches have become daily. What does this describe?",
+    "ch": [
+     "Chronic migraine transformation requiring urgent MRI and MR venography",
+     "Medication-overuse (rebound) headache from abortive use beyond 10-15 days a month",
+     "Status migrainosus requiring admission for intravenous antiemetic therapy",
+     "A new secondary headache mandating non-contrast CT followed by lumbar puncture",
+     "Tension-type headache, which is bilateral, band-like and pressing in quality"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which description and acute treatment match cluster headache?",
+    "ch": [
+     "Bilateral band-like pressing pain, treated with amitriptyline taken at bedtime",
+     "Pulsatile unilateral pain with aura, treated acutely with a CGRP monoclonal antibody",
+     "Progressive morning headache with papilledema, treated with dexamethasone",
+     "Severe unilateral orbital pain with lacrimation, ptosis and rhinorrhea, aborted with high-flow oxygen and subcutaneous sumatriptan",
+     "Scalp tenderness with jaw claudication in a patient over fifty, treated with steroids"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A 45-year-old describes a headache that reached maximal intensity instantly and calls it the worst of his life. What is directed?",
+    "ch": [
+     "Rule out subarachnoid hemorrhage with non-contrast CT followed by lumbar puncture",
+     "Start a preventive such as topiramate and arrange outpatient follow-up",
+     "Check ESR and CRP and start steroids before a temporal artery biopsy",
+     "Diagnose migraine clinically, since the neurologic examination is normal",
+     "Give subcutaneous sumatriptan and judge the diagnosis by the response"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 28-year-old who smokes and has migraine with aura asks about starting a combined estrogen-containing contraceptive. What is advised?",
+    "ch": [
+     "Start it, because estrogen withdrawal is the only recognized migraine trigger",
+     "Start it only if she simultaneously begins a CGRP monoclonal antibody preventive",
+     "It is safe, because the aura rather than the pill determines her vascular risk",
+     "Estrogen is a concern only in tension-type headache and cluster headache",
+     "Avoid estrogen — aura plus smoking and estrogen markedly raises ischemic stroke risk"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A 72-year-old has a new headache with scalp tenderness and jaw claudication, and the ESR is markedly elevated. What should be done?",
+    "ch": [
+     "Wait for the temporal artery biopsy result before beginning any treatment",
+     "Perform non-contrast CT then lumbar puncture to exclude a subarachnoid bleed",
+     "Start steroids before biopsy to prevent blindness from giant cell arteritis",
+     "Obtain MRI and MR venography first, since venous thrombosis is the likelier cause",
+     "Diagnose late-onset migraine and start propranolol as a preventive medication"
+    ]
+   }
+  ]
+ },
+ "iron-anemia": {
+  "condition": "Iron Deficiency Anemia",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which red cell picture is characteristic of iron deficiency anemia?",
+    "ch": [
+     "Microcytic, hypochromic red cells with a low MCV and a low MCH",
+     "Normocytic red cells with brisk reticulocytosis and a low haptoglobin",
+     "Normocytic cells with sickle forms and Howell-Jolly bodies",
+     "Macrocytic oval cells with a high reticulocyte count",
+     "Macrocytic cells with hypersegmented neutrophils on the smear"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "A woman with menorrhagia reports pagophagia — a craving for chewing ice. Which additional classic clue supports iron deficiency?",
+    "ch": [
+     "Gum infiltration with petechiae and easy bruising",
+     "Koilonychia (spoon nails) with angular cheilitis and glossitis",
+     "Hypersegmented neutrophils with loss of vibration sense",
+     "Scleral icterus with splenomegaly and dark urine",
+     "Painless lymphadenopathy with drenching night sweats"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which single laboratory test is the most useful confirmatory test for iron deficiency?",
+    "ch": [
+     "Mean corpuscular volume reported by the automated CBC analyzer",
+     "Red cell distribution width reported with the routine CBC indices",
+     "Reticulocyte count obtained before any iron therapy is started",
+     "Serum ferritin, with a value under 30 ng/mL considered diagnostic",
+     "Total iron binding capacity measured on a fasting blood sample"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which set of iron studies fits iron deficiency anemia?",
+    "ch": [
+     "Normal serum iron, normal TIBC, normal ferritin, high transferrin saturation",
+     "Low serum iron, normal TIBC, normal ferritin, normal transferrin saturation",
+     "Low serum iron, low TIBC, high ferritin, normal transferrin saturation",
+     "High serum iron, low TIBC, high ferritin, high transferrin saturation",
+     "Low serum iron, high TIBC, low ferritin, transferrin saturation under 20%"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Both iron deficiency anemia and anemia of chronic disease show a low serum iron. Which pair of results separates them?",
+    "ch": [
+     "Transferrin saturation alone — it is under 20% in iron deficiency and entirely normal in chronic disease",
+     "Ferritin and TIBC — iron deficiency shows low ferritin with high TIBC, chronic disease normal/high ferritin with low TIBC",
+     "MCV and MCH — anemia of chronic disease is the microcytic, hypochromic one and iron deficiency is normocytic",
+     "Hemoglobin and hematocrit — the anemia of chronic disease is consistently far more severe than iron deficiency",
+     "Reticulocyte count and LDH — both are markedly elevated in iron deficiency and normal in chronic disease"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which combination best argues for thalassemia rather than iron deficiency in a microcytic patient?",
+    "ch": [
+     "A high RDW with a low ferritin and a high total iron binding capacity",
+     "A Mentzer index over 13 with pencil cells seen on the peripheral smear",
+     "A low transferrin saturation with an elevated soluble transferrin receptor",
+     "Koilonychia and pagophagia together with a low MCH on the CBC",
+     "A Mentzer index under 13 with a normal RDW and normal iron studies"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "What is the correct teaching for a patient starting oral ferrous sulfate?",
+    "ch": [
+     "Stop it immediately if the stools turn dark, since that signals GI bleeding",
+     "Take it with milk or an antacid to reduce the stomach upset",
+     "Take it on an empty stomach with vitamin C or juice and expect black stools",
+     "Take it with tea or coffee so the tannins slow absorption and reduce nausea",
+     "Take it together with a proton pump inhibitor to protect the gastric mucosa"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Why is alternate-day or single daily oral iron now preferred over multiple daily doses?",
+    "ch": [
+     "It lowers hepcidin spikes and improves fractional iron absorption and tolerance",
+     "It prevents the black stools that make many patients stop the medication",
+     "It removes the need to look for an underlying source of blood loss",
+     "It corrects the hemoglobin faster than any intravenous iron preparation",
+     "It allows a much larger total dose of elemental iron each week"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 68-year-old man has a new microcytic anemia with a ferritin of 8 ng/mL and no obvious bleeding. Beyond starting iron, what is the priority next step?",
+    "ch": [
+     "Start a proton pump inhibitor for presumed gastritis and reassess",
+     "Order hemoglobin electrophoresis to exclude thalassemia trait",
+     "Arrange bidirectional endoscopy — both EGD and colonoscopy",
+     "Transfuse packed red cells to correct the anemia quickly",
+     "Repeat the ferritin in three months to confirm the downward trend"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which complication should be monitored after repeated intravenous iron infusions?",
+    "ch": [
+     "Hypercalcemia from mobilization of skeletal calcium stores",
+     "Hypoglycemia in the hours following each infusion",
+     "Hypernatremia from the sodium load of the diluent",
+     "Hypophosphatemia, particularly with ferric carboxymaltose",
+     "Hyperkalemia requiring cardiac monitoring during the infusion"
+    ]
+   }
+  ]
+ },
+ "b12-anemia": {
+  "condition": "B12 / Folate Deficiency Anemia",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which blood picture defines the megaloblastic anemia of B12 or folate deficiency?",
+    "ch": [
+     "Microcytic hypochromic cells with a high RDW and pencil cells",
+     "Macrocytic anemia with an MCV over 100 and hypersegmented neutrophils",
+     "Normocytic anemia with sickle cells and target cells on the smear",
+     "Normocytic anemia with circulating blasts and Auer rods",
+     "Macrocytic anemia with a high reticulocyte count and normal neutrophils"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which statement comparing B12 and folate deficiency is correct?",
+    "ch": [
+     "Both deficiencies raise methylmalonic acid to about the same degree",
+     "Folate stores last years while B12 stores deplete within months",
+     "Only folate deficiency produces a macrocytic anemia with MCV over 100",
+     "Only folate deficiency produces hypersegmented neutrophils on the smear",
+     "Only B12 deficiency causes neurologic disease from demyelination"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which peripheral smear finding is the earliest and most specific sign of megaloblastic anemia?",
+    "ch": [
+     "Hypersegmented neutrophils with five or more nuclear lobes",
+     "Howell-Jolly bodies within the circulating red cells",
+     "Smudge cells against a background lymphocytosis",
+     "Pencil cells with an elevated platelet count",
+     "Fragmented red cells with marked polychromasia"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient has a borderline serum B12 level. Which pattern confirms B12 deficiency rather than folate deficiency?",
+    "ch": [
+     "Methylmalonic acid normal with homocysteine elevated",
+     "Methylmalonic acid elevated with homocysteine elevated",
+     "Methylmalonic acid elevated with homocysteine normal and a low LDH",
+     "Homocysteine elevated with a normal serum folate and a normal LDH",
+     "Methylmalonic acid normal with homocysteine also normal"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Why should folate never be given alone when B12 status is unproven?",
+    "ch": [
+     "Folate triggers a hemolytic crisis in patients with pernicious anemia",
+     "Folate blocks absorption of dietary B12 in the terminal ileum",
+     "Folate corrects the anemia while neurologic damage progresses irreversibly",
+     "Folate causes hypokalemia during the first days of therapy",
+     "Folate raises methylmalonic acid and masks the folate diagnosis"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which finding best supports pernicious anemia as the cause of a patient's B12 deficiency?",
+    "ch": [
+     "A history of long-term metformin therapy",
+     "A strictly vegan diet for the past two years",
+     "Prior ileal resection for Crohn's disease",
+     "Chronic heavy alcohol use with poor intake",
+     "A positive anti-intrinsic factor antibody"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which electrolyte must be watched in the first days after starting B12 for a severe megaloblastic anemia?",
+    "ch": [
+     "Potassium",
+     "Phosphate",
+     "Sodium",
+     "Calcium",
+     "Magnesium"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which commonly prescribed drug is an under-recognized cause of B12 deficiency?",
+    "ch": [
+     "Methotrexate",
+     "Trimethoprim",
+     "Phenytoin",
+     "Metformin",
+     "Leucovorin"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient with macrocytic anemia has a low reticulocyte count with an elevated LDH and elevated indirect bilirubin. What explains this combination?",
+    "ch": [
+     "Hypersplenism trapping mature red cells in the spleen",
+     "Peripheral destruction of red cells by autoantibodies",
+     "Ineffective intramedullary hemolysis from megaloblastic erythropoiesis",
+     "Acute blood loss with a delayed marrow response",
+     "Iron overload accumulated from repeated transfusion"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient with B12 deficiency has paresthesias, impaired vibration and position sense, and an unsteady gait. Which nursing action is the priority?",
+    "ch": [
+     "Start folic acid alone to correct the anemia more quickly",
+     "Restrict fluids to keep the ataxia from getting worse",
+     "Enforce bed rest until the vibration sense has normalized",
+     "Implement fall precautions and document a baseline neuro check",
+     "Withhold B12 until the neurologic workup has been completed"
+    ]
+   }
+  ]
+ },
+ "sickle-cell": {
+  "condition": "Sickle Cell Disease",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which molecular defect produces hemoglobin S in sickle cell disease?",
+    "ch": [
+     "Glutamate replaced by valine at position 6 of the beta-globin chain",
+     "A promoter mutation that raises fetal hemoglobin production",
+     "A frameshift that abolishes intrinsic factor production",
+     "A reciprocal translocation creating a fusion tyrosine kinase",
+     "Deletion of an alpha-globin gene on chromosome 16"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which set of conditions triggers HbS polymerization and sickling?",
+    "ch": [
+     "Alkalosis, generous hydration, warmth, and iron loading",
+     "Hyperoxia, low carbon dioxide, and a high dietary folate intake",
+     "High calcium, low potassium, and a high uric acid level",
+     "Excess vitamin C, supplemental oxygen therapy, and bed rest",
+     "Hypoxia, dehydration, acidosis, infection, cold, and stress"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which test confirms the diagnosis of sickle cell disease?",
+    "ch": [
+     "Bone marrow aspirate and biopsy with flow cytometry",
+     "A peripheral smear showing sickle cells and target cells",
+     "A reticulocyte count with LDH and haptoglobin levels",
+     "Hemoglobin electrophoresis or HPLC showing predominant HbS",
+     "Transcranial Doppler measuring cerebral blood flow velocity"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Howell-Jolly bodies on the smear of a child with sickle cell disease indicate what, and what does that require?",
+    "ch": [
+     "Acute chest syndrome, requiring oxygen and antibiotics",
+     "Iron overload, requiring chelation therapy",
+     "Functional asplenia, requiring penicillin prophylaxis and vaccination",
+     "Aplastic crisis, requiring urgent exchange transfusion",
+     "Ineffective erythropoiesis, requiring folic acid replacement"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "How does hydroxyurea reduce crisis frequency in sickle cell disease?",
+    "ch": [
+     "It chelates the iron accumulated from repeated transfusion",
+     "It blocks opioid tolerance so less analgesia is needed",
+     "It increases fetal hemoglobin, diluting HbS and lowering polymerization",
+     "It binds free hemoglobin and raises the haptoglobin level",
+     "It shrinks the spleen and prevents sequestration episodes"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient in vaso-occlusive crisis develops fever, chest pain, hypoxia, and a new pulmonary infiltrate on chest X-ray. What is this and how is it treated?",
+    "ch": [
+     "Splenic sequestration — transfuse and monitor the spleen size",
+     "Acute chest syndrome — give antibiotics, oxygen, and transfusion",
+     "Priapism with referred pain — arrange urologic evaluation",
+     "Pulmonary edema from overhydration — give diuretics alone",
+     "Aplastic crisis from parvovirus B19 — observe the reticulocytes"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A child with sickle cell disease arrives with a temperature of 39°C. What is the nursing priority?",
+    "ch": [
+     "Start a rapid saline bolus and hold antibiotics for now",
+     "Apply cooling blankets and cold compresses to the axillae",
+     "Administer high-flow oxygen regardless of the saturation",
+     "Obtain cultures and give the ordered antibiotics immediately",
+     "Give an antipyretic and reassess the temperature in an hour"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which statement about supportive care during a vaso-occlusive crisis is correct?",
+    "ch": [
+     "Cool the patient down to reduce the metabolic demand of the crisis",
+     "Withhold fluids until the reported pain score falls below four",
+     "Oxygen should be given routinely to every patient in crisis",
+     "Opioids should be minimized to avoid dependence in frequent presenters",
+     "Give oxygen only if the patient is hypoxic and avoid overhydration"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient with sickle cell disease has a sudden fall in hemoglobin with a reticulocyte count that has dropped rather than risen. Which crisis is this?",
+    "ch": [
+     "Aplastic crisis from parvovirus B19",
+     "Hyperhemolytic crisis",
+     "Splenic sequestration crisis",
+     "Acute chest syndrome",
+     "Vaso-occlusive crisis"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which principle guides transfusion in sickle cell disease?",
+    "ch": [
+     "Transfuse above a hemoglobin of 12 g/dL to suppress sickling fully",
+     "Avoid raising the hemoglobin much above 10 g/dL to prevent hyperviscosity",
+     "Simple transfusion is preferred over exchange for stroke and acute chest",
+     "Transfusion removes the need for hydroxyurea and folic acid",
+     "Iron overload is not a concern because hemolysis consumes the excess"
+    ]
+   }
+  ]
+ },
+ "leukemia": {
+  "condition": "Leukemia",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Why do patients with acute leukemia present with anemia, bleeding, and infection all at once?",
+    "ch": [
+     "Circulating blasts consume clotting factors and red cells in the periphery",
+     "The enlarging spleen sequesters all three cell lines simultaneously",
+     "Chemotherapy given before the diagnosis suppresses the marrow",
+     "Autoantibodies destroy red cells, platelets, and neutrophils at once",
+     "The malignant clone crowds the marrow, causing pancytopenia of the normal lines"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "How is acute leukemia defined on bone marrow examination?",
+    "ch": [
+     "At least 20% blasts in the marrow",
+     "Smudge cells with a mature lymphocytosis",
+     "Marrow fibrosis with tear-drop shaped red cells",
+     "Any immature white cells appearing on the peripheral smear",
+     "A white cell count above 100,000 together with organomegaly"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which smear finding is paired correctly with its leukemia?",
+    "ch": [
+     "Smudge cells indicate acute myeloid leukemia",
+     "Auer rods in myeloblasts indicate acute myeloid leukemia",
+     "Hypersegmented neutrophils indicate chronic myeloid leukemia",
+     "Howell-Jolly bodies indicate acute lymphoblastic leukemia",
+     "Auer rods indicate chronic lymphocytic leukemia"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which studies on the marrow sample classify and risk-stratify a newly diagnosed leukemia?",
+    "ch": [
+     "Serum LDH, uric acid, and a comprehensive metabolic panel",
+     "Hemoglobin electrophoresis together with full iron studies",
+     "Chest X-ray with transcranial Doppler of the cerebral vessels",
+     "Anti-intrinsic factor and anti-parietal cell antibody testing",
+     "Flow cytometry, cytogenetics, and molecular or FISH testing"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient with a markedly elevated white count is found to carry the Philadelphia chromosome, t(9;22). Which therapy is first-line?",
+    "ch": [
+     "ATRA combined with arsenic trioxide",
+     "A tyrosine kinase inhibitor such as imatinib",
+     "Cytarabine plus an anthracycline as 7+3 induction",
+     "Intrathecal methotrexate given for CNS prophylaxis",
+     "Rituximab-based chemoimmunotherapy"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which laboratory pattern defines tumor lysis syndrome during cytoreduction?",
+    "ch": [
+     "Normal potassium, high phosphate, high calcium, high creatinine",
+     "Low potassium, low phosphate, high calcium, low uric acid",
+     "High potassium, high phosphate, low calcium, high uric acid",
+     "High potassium, low phosphate, high calcium, high uric acid",
+     "Low potassium, high phosphate, low calcium, low uric acid"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Before giving rasburicase for tumor lysis prophylaxis, which condition must be excluded?",
+    "ch": [
+     "G6PD deficiency",
+     "Hepatitis B infection",
+     "Sickle cell trait",
+     "Pernicious anemia",
+     "Transfusional iron overload"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A neutropenic patient on induction chemotherapy spikes a temperature of 38.4°C. What must happen?",
+    "ch": [
+     "Give G-CSF alone and recheck the count in the morning",
+     "Give an antipyretic and continue with routine monitoring",
+     "Transfuse irradiated platelets and observe overnight",
+     "Empiric broad-spectrum antibiotics within one hour",
+     "Wait for the blood culture results before starting antibiotics"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A newly diagnosed patient has a white count over 100,000 with dyspnea, confusion, and visual changes. What is happening?",
+    "ch": [
+     "Tumor lysis syndrome with hyperkalemia",
+     "CNS involvement needing intrathecal chemotherapy",
+     "Differentiation syndrome from ATRA therapy",
+     "Leukostasis from hyperleukocytosis, needing urgent cytoreduction",
+     "Disseminated intravascular coagulation from APL"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Marrow review suggests acute promyelocytic leukemia and the patient is bleeding with a low fibrinogen. What should be done before the PML-RARA result returns?",
+    "ch": [
+     "Hold all therapy until cytogenetics confirm t(15;17)",
+     "Start a tyrosine kinase inhibitor empirically",
+     "Start ATRA immediately and support with blood products",
+     "Begin intrathecal methotrexate for CNS prophylaxis",
+     "Start allopurinol alone and reassess in the morning"
+    ]
+   }
+  ]
+ },
+ "lymphoma": {
+  "condition": "Lymphoma",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which finding defines Hodgkin lymphoma?",
+    "ch": [
+     "Sheets of CD20-positive large B cells effacing the node",
+     "Smudge cells with a peripheral blood lymphocytosis",
+     "At least 20% blasts on the bone marrow biopsy",
+     "Reed-Sternberg cells that are CD15-positive and CD30-positive",
+     "Starry sky histology with a very high proliferation rate"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which triad makes up the B symptoms used in lymphoma staging?",
+    "ch": [
+     "Splenomegaly, hepatomegaly, and jaundice",
+     "Fatigue, pruritus, and painless lymphadenopathy",
+     "Fever, drenching night sweats, and over 10% weight loss",
+     "Cough, dyspnea, and pleuritic chest pain",
+     "Anemia, thrombocytopenia, and neutropenia"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Why is excisional lymph node biopsy required rather than fine-needle aspiration?",
+    "ch": [
+     "Needle aspiration carries a higher risk of seeding tumor along the tract",
+     "Needle aspiration destroys the nodal architecture needed for classification",
+     "Needle aspiration cannot be performed on nodes above the diaphragm",
+     "Needle aspiration requires general anesthesia while excision does not",
+     "Needle aspiration cannot obtain enough cells for immunohistochemistry"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which lymphoma is the most common non-Hodgkin lymphoma overall, and which marker does it carry?",
+    "ch": [
+     "Follicular lymphoma, CD30-positive",
+     "Burkitt lymphoma, CD15-positive",
+     "Mantle cell lymphoma, CD15-positive",
+     "Diffuse large B-cell lymphoma, CD20-positive",
+     "Marginal zone lymphoma, CD30-positive"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "How does the behavior of Hodgkin lymphoma differ from non-Hodgkin lymphoma?",
+    "ch": [
+     "Hodgkin is usually disseminated at diagnosis while NHL stays localized",
+     "Hodgkin arises from T cells while every NHL arises from B cells",
+     "Hodgkin accounts for roughly 85% of all lymphoma diagnoses",
+     "Hodgkin is incurable while non-Hodgkin lymphoma is always curable",
+     "Hodgkin spreads contiguously node to node and has a bimodal age curve"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which translocation is paired correctly with its lymphoma?",
+    "ch": [
+     "t(9;22) BCR-ABL1 with follicular lymphoma",
+     "t(15;17) PML-RARA with mantle cell lymphoma",
+     "t(8;14) c-MYC with Burkitt lymphoma",
+     "t(14;18) BCL2 with Burkitt lymphoma",
+     "t(11;14) cyclin D1 with follicular lymphoma"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which toxicity pairing must be tracked during ABVD therapy?",
+    "ch": [
+     "Bleomycin causes pulmonary fibrosis and doxorubicin is cardiotoxic",
+     "Vinblastine causes pulmonary fibrosis and dacarbazine is cardiotoxic",
+     "Doxorubicin causes pulmonary fibrosis and bleomycin is cardiotoxic",
+     "Bleomycin causes peripheral neuropathy and dacarbazine is nephrotoxic",
+     "Dacarbazine causes pulmonary fibrosis and vinblastine is cardiotoxic"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which screening test is required before starting rituximab?",
+    "ch": [
+     "Hepatitis B serology",
+     "Transcranial Doppler study",
+     "Anti-intrinsic factor antibody",
+     "Hemoglobin electrophoresis",
+     "G6PD activity assay"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which lymphoma can regress with eradication of an infection alone?",
+    "ch": [
+     "Burkitt lymphoma with EBV-directed antiviral therapy",
+     "Diffuse large B-cell lymphoma with antiretroviral therapy",
+     "Hodgkin lymphoma with EBV-directed antiviral therapy",
+     "Mantle cell lymphoma with H. pylori eradication",
+     "Gastric MALT lymphoma with H. pylori eradication"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient with a large mediastinal mass develops facial and neck swelling with distended veins and dyspnea. What is this?",
+    "ch": [
+     "Tumor lysis syndrome with hypocalcemic tetany",
+     "Superior vena cava syndrome from the mediastinal mass",
+     "Neutropenic fever with early septic shock",
+     "Spinal cord compression from a nodal mass",
+     "Cytokine release syndrome from CAR-T therapy"
+    ]
+   }
+  ]
+ }
+}

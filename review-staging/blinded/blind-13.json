@@ -1,0 +1,922 @@
+{
+ "pph": {
+  "condition": "Postpartum Hemorrhage",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which of the 4 T's accounts for roughly 70-80% of postpartum hemorrhage?",
+    "ch": [
+     "Tone — uterine atony",
+     "Trauma — lacerations, hematoma, or uterine rupture",
+     "Tissue — retained placenta or products of conception",
+     "Thrombin — coagulopathy or disseminated intravascular coagulation",
+     "Thrombosis — a deep venous clot embolizing during the third stage"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which statement matches the updated ACOG definition of postpartum hemorrhage?",
+    "ch": [
+     "A visually estimated loss exceeding two saturated pads in a single hour",
+     "Cumulative loss of 1000 mL or more, or any loss with signs of hypovolemia, within 24 hours of birth regardless of route",
+     "Blood loss greater than 500 mL following a vaginal delivery only",
+     "Blood loss greater than 1500 mL following a cesarean delivery only",
+     "Any bleeding that requires a transfusion within the first postpartum week"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "A patient with preeclampsia has ongoing atony after oxytocin. Which uterotonic must be avoided?",
+    "ch": [
+     "Oxytocin infusion, because a second dose is contraindicated",
+     "Carboprost, because it can trigger bronchospasm",
+     "Tranexamic acid, because of the risk of hypotension",
+     "Methylergonovine, because it is an ergot that raises blood pressure",
+     "Misoprostol, because it causes fever and shivering"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A postpartum patient has heavy bleeding and a soft, boggy fundus displaced upward and to the right. What is the immediate nursing action?",
+    "ch": [
+     "Prepare the patient for uterine artery embolization",
+     "Perform firm fundal massage and empty the bladder",
+     "Inspect the cervix and vagina for lacerations first",
+     "Send a fibrinogen level and wait for the result",
+     "Position the patient flat and restrict all oral intake"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A healthy 24-year-old has a heart rate of 118 and a blood pressure of 112/78 with ongoing bleeding after delivery. How should this be interpreted?",
+    "ch": [
+     "Stable, since the blood pressure remains within normal limits",
+     "Expected postpartum tachycardia that requires no escalation",
+     "Evidence that the bleeding has stopped and compensation is complete",
+     "A rising shock index warning of hemorrhagic shock despite a normal blood pressure",
+     "An indication to hold uterotonics until hypotension actually develops"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Within what window should tranexamic acid be given for postpartum hemorrhage?",
+    "ch": [
+     "Only for secondary postpartum hemorrhage beyond 24 hours",
+     "At any point during the first postpartum week",
+     "Within 3 hours of birth",
+     "Within 12 hours of birth",
+     "Only after two units of packed red cells have been transfused"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Why is a fibrinogen level of 190 mg/dL concerning in a bleeding postpartum patient?",
+    "ch": [
+     "It falls in the normal non-pregnant range and is therefore reassuring",
+     "It indicates the patient has received too much tranexamic acid",
+     "It confirms retained placental tissue as the source of the bleeding",
+     "It effectively rules out disseminated intravascular coagulation",
+     "Fibrinogen is normally elevated in pregnancy, so a level under 200 predicts severe hemorrhage"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Bleeding from atony continues despite massage, oxytocin, methylergonovine, and carboprost. What is the next step on the escalation ladder?",
+    "ch": [
+     "Uterine balloon tamponade with a Bakri balloon",
+     "Observation with serial hemoglobin measurements",
+     "Discharge home on oral misoprostol with close follow-up",
+     "Proceed straight to hysterectomy as the first surgical option",
+     "Repeat the entire uterotonic sequence a second time"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A woman with a prior cesarean and known placenta previa has heavy bleeding and a placenta that will not separate. What should be suspected?",
+    "ch": [
+     "Secondary postpartum hemorrhage caused by endometritis",
+     "Amniotic fluid embolism with consumptive coagulopathy",
+     "A cervical laceration sustained during the second stage of labor",
+     "Uterine inversion requiring immediate manual replacement",
+     "Placenta accreta spectrum"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A woman returns 12 days after delivery with heavy bleeding and foul-smelling lochia. How is this best characterized and evaluated?",
+    "ch": [
+     "Normal lochia; reassure the patient and discharge without evaluation",
+     "Uterine atony; the 24-hour rule does not apply to bleeding this heavy",
+     "Secondary PPH from retained products or endometritis; evaluate with ultrasound and antibiotics",
+     "Thrombin-type hemorrhage; transfuse cryoprecipitate empirically",
+     "Primary postpartum hemorrhage; give oxytocin and observe her"
+    ]
+   }
+  ]
+ },
+ "labor": {
+  "condition": "Labor & Delivery Stages",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which description best defines true labor?",
+    "ch": [
+     "Irregular contractions that produce no cervical change over several hours",
+     "Regular uterine contractions causing progressive cervical effacement and dilation with fetal descent",
+     "Rupture of membranes with pooling of alkaline fluid but no contractions at all",
+     "Bloody show alone in the absence of any measurable cervical dilation",
+     "Painful contractions relieved entirely by hydration and a change of position"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "The third stage of labor is best defined as which interval?",
+    "ch": [
+     "The first one to two hours postpartum while hemostasis is established",
+     "Onset of regular contractions to the beginning of the active phase at 6 cm",
+     "Onset of labor to complete cervical dilation at 10 cm",
+     "Complete cervical dilation to delivery of the baby",
+     "Delivery of the baby to delivery of the placenta"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Per ACOG and the Consortium on Safe Labor, the active phase of the first stage is now generally considered to begin at what cervical dilation?",
+    "ch": [
+     "6 cm dilation",
+     "3 cm dilation",
+     "4 cm dilation",
+     "8 cm dilation",
+     "10 cm dilation"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which findings confirm rupture of membranes at the bedside?",
+    "ch": [
+     "Nitrazine paper turning yellow together with absent ferning on microscopy",
+     "Bloody show accompanied by cervical dilation of about 4 cm",
+     "A globular firm uterus with lengthening of the umbilical cord",
+     "Turtle sign with retraction of the fetal head against the perineum",
+     "Pooling of fluid, nitrazine turning blue, and ferning on microscopy"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Immediately after spontaneous rupture of membranes, what is the nurse's first priority?",
+    "ch": [
+     "Encourage ambulation and oral hydration to promote descent",
+     "Perform a digital cervical exam to document dilation and station",
+     "Increase the oxytocin infusion to augment contraction strength",
+     "Assess the fetal heart rate for evidence of cord prolapse",
+     "Send amniotic fluid for nitrazine and ferning confirmation"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Late decelerations on the fetal monitor are mechanistically explained by which process?",
+    "ch": [
+     "Maternal fever with chorioamnionitis",
+     "Fetal movement producing accelerations",
+     "Uteroplacental insufficiency",
+     "Fetal head compression",
+     "Umbilical cord compression"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A postpartum patient with asthma and chronic hypertension has continued hemorrhage despite oxytocin. Which additional agent is safest?",
+    "ch": [
+     "Misoprostol given simultaneously with a high-dose oxytocin infusion",
+     "Tranexamic acid, given within 3 hours of the onset of bleeding",
+     "Magnesium sulfate, to relax the uterus and slow the rate of bleeding",
+     "Carboprost, because prostaglandin F2-alpha is first line for uterine atony",
+     "Methylergonovine, because ergot agents act fastest on the uterine muscle"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which criteria must be met before diagnosing arrest of the first stage of labor?",
+    "ch": [
+     "At 6 cm or more, no cervical change for at least 4 hours with adequate contractions of 200 MVU or more",
+     "Failure to deliver after 1 hour of pushing in a nulliparous patient with an epidural",
+     "Any Category II tracing persisting through two consecutive cervical examinations",
+     "A Bishop score below 5 after 12 hours of prostaglandin cervical ripening",
+     "No cervical change for 2 hours at 4 cm regardless of contraction adequacy"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "During the third stage, which combination of findings indicates that the placenta has separated?",
+    "ch": [
+     "Sustained tachysystole with more than five contractions in ten minutes",
+     "Loss of deep tendon reflexes with a decreasing respiratory rate",
+     "Cord shortening with a soft, wide, ill-defined uterine fundus",
+     "A gush of blood, lengthening of the cord, and a globular firm uterus",
+     "A boggy uterus with heavy lochia and maternal tachycardia"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "The fetal head delivers then retracts tightly against the perineum, and the shoulders do not deliver with routine traction. What is the correct response?",
+    "ch": [
+     "Apply firm fundal pressure to push the anterior shoulder past the symphysis",
+     "Elevate the presenting part and proceed directly to emergent cesarean delivery",
+     "Call for help and begin the HELPERR maneuver sequence, avoiding fundal pressure",
+     "Start a magnesium sulfate infusion to relax the uterus and free the shoulder",
+     "Increase the oxytocin infusion to strengthen contractions and drive expulsion"
+    ]
+   }
+  ]
+ },
+ "bronchiolitis": {
+  "condition": "Bronchiolitis (RSV)",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which pathogen is the most common cause of bronchiolitis?",
+    "ch": [
+     "Human metapneumovirus (hMPV)",
+     "Respiratory syncytial virus (RSV)",
+     "Adenovirus, an occasional cause",
+     "Rhinovirus, another viral cause",
+     "Parainfluenza virus, types 1 and 3"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Bronchiolitis primarily affects which group, and when does it peak?",
+    "ch": [
+     "Infants under 2 years, peaking at 12-18 months of age",
+     "Neonates in the first two weeks of life, with no seasonal variation",
+     "Infants under 2 years, peaking at 3-6 months, in winter and early spring",
+     "Children 6 months to 3 years, peaking in fall and early winter",
+     "School-age children and adolescents, peaking in the late spring months"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which statement about the diagnostic workup of bronchiolitis is correct?",
+    "ch": [
+     "Serial complete blood counts are used to grade the severity of illness",
+     "A chest X-ray should be obtained routinely to confirm the diagnosis",
+     "The diagnosis is clinical, and routine chest X-ray and labs are not recommended",
+     "RSV PCR is required in every infant before any treatment can be started",
+     "A normal pulse oximetry reading excludes the diagnosis of bronchiolitis"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which examination findings are the hallmark of bronchiolitis?",
+    "ch": [
+     "Diffuse wheezes and fine crackles with tachypnea and retractions",
+     "A barking, seal-like cough with inspiratory stridor and hoarseness",
+     "Focal consolidation with dullness to percussion and a high fever",
+     "An absent cough with drooling and a tripod sitting posture",
+     "Clear lungs with normal work of breathing and an isolated fever"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Why does a trial of albuterol usually fail in an infant with bronchiolitis?",
+    "ch": [
+     "Because concurrent systemic steroids are required for albuterol to have any effect",
+     "Because infants cannot generate enough inspiratory flow to inhale a nebulized drug",
+     "Because beta-2 receptors are absent from the airway until about 2 years of age",
+     "Because the wheeze in bronchiolitis is transmitted from the upper airway only",
+     "Because the obstruction is mucus plugging and edema, not reversible bronchospasm"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "An infant with bronchiolitis has moderate-to-severe distress and hypoxia not met by low-flow oxygen. Which escalation is recommended?",
+    "ch": [
+     "Empiric intravenous antibiotics pending a chest X-ray result",
+     "Chest physiotherapy with postural drainage every four hours",
+     "Nebulized hypertonic saline given in the emergency department",
+     "Heated high-flow nasal cannula, escalating to CPAP or ICU if it fails",
+     "Nebulized albuterol every 20 minutes plus a systemic corticosteroid"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which nursing intervention best addresses the primary airway problem in bronchiolitis?",
+    "ch": [
+     "Nasal suctioning before feeds and as needed, with the head elevated",
+     "Restricting oral fluids to reduce the production of secretions",
+     "Obtaining a daily chest X-ray to follow atelectasis and hyperinflation",
+     "Administering a scheduled bronchodilator before each feeding",
+     "Placing the infant flat and supine to promote chest expansion"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A 6-week-old former premature infant with bronchiolitis is described by parents as unusually quiet. Which concern is highest?",
+    "ch": [
+     "Reactive airway disease that will respond to a bronchodilator trial",
+     "Simple tiredness from the URI prodrome, expected around day 3-5",
+     "Post-tussive emesis causing a self-limited aversion to feeding",
+     "Apnea, which can be the presenting sign in young or premature infants",
+     "Bacterial superinfection requiring immediate empiric antibiotic therapy"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which agent is given as a single dose to infants entering or during their first RSV season?",
+    "ch": [
+     "Nebulized hypertonic saline 3% used prophylactically",
+     "Oral dexamethasone at the onset of the RSV season",
+     "Heated high-flow nasal cannula started at the first cough",
+     "Palivizumab, dosed monthly through the season",
+     "Nirsevimab, a long-acting RSV monoclonal antibody"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which factor most strongly favors admitting an infant with bronchiolitis?",
+    "ch": [
+     "Diffuse wheezing that has not changed after nebulized albuterol",
+     "Age under 12 weeks together with hypoxia, dehydration, or apnea",
+     "Hyperinflation and atelectasis reported on a chest X-ray",
+     "A cough lingering for 10 days in an infant who is feeding normally",
+     "A positive RSV swab in a well-appearing, well-feeding infant"
+    ]
+   }
+  ]
+ },
+ "croup": {
+  "condition": "Croup",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which triad is classic for croup?",
+    "ch": [
+     "Expiratory grunting with focal consolidation and dullness to percussion",
+     "Wheezing with fine crackles and preceding rhinorrhea in an infant",
+     "Drooling with high fever and a toxic appearance and no cough",
+     "Sudden choking with unilateral decreased breath sounds and no prodrome",
+     "Barking, seal-like cough with inspiratory stridor and hoarseness"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which virus most commonly causes croup?",
+    "ch": [
+     "Influenza virus during flu season",
+     "Measles virus, now rarely seen",
+     "Respiratory syncytial virus (RSV)",
+     "Parainfluenza virus, types 1 and 3",
+     "Adenovirus, an occasional cause"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Why does a few millimeters of subglottic edema produce stridor in a toddler?",
+    "ch": [
+     "Because the subglottis is the narrowest point and resistance rises steeply as the radius falls",
+     "Because the trachea has no cartilage and collapses inward on inspiration",
+     "Because bronchiolar mucus plugging creates a ball-valve air-trapping effect",
+     "Because vocal cord paralysis accompanies the viral inflammatory response",
+     "Because alveolar surfactant is depleted by the viral infection at this age"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A toddler has mild croup with a barking cough and no stridor at rest. What treatment is indicated?",
+    "ch": [
+     "Nebulized epinephrine now, with discharge after a brief recovery",
+     "A single dose of dexamethasone, given even for mild disease",
+     "A five-day course of oral amoxicillin for a presumed bacterial cause",
+     "Scheduled nebulized albuterol every four hours until symptoms resolve",
+     "No medication; supportive humidified air and reassurance alone"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "After nebulized epinephrine is given for croup, what must happen before discharge?",
+    "ch": [
+     "A repeat AP neck film to confirm the steeple sign has cleared",
+     "A second dose of nebulized epinephrine given exactly one hour later",
+     "Admission for at least 24 hours of continuous pulse oximetry",
+     "Documentation of a Westley score of zero before the child may leave",
+     "Observation for 3-4 hours to detect rebound stridor"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which tool grades croup severity to guide disposition?",
+    "ch": [
+     "The Bishop score, using cervical dilation, effacement, station, consistency, and position",
+     "The Westley score, using stridor, retractions, air entry, cyanosis, and consciousness",
+     "The Braden scale, using sensory perception, moisture, activity, mobility, and nutrition",
+     "The Parkland formula, using body weight and percentage of total body surface area",
+     "The NPIAP staging system, using the anatomic depth of tissue involvement"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A child arrives toxic-appearing, drooling, sitting in a tripod position with high fever and no cough. What does this suggest?",
+    "ch": [
+     "Classic croup that simply presents at the severe end of the spectrum",
+     "Spasmodic croup, the recurrent allergic variant with nighttime onset",
+     "An inhaled foreign body with sudden onset and no viral prodrome",
+     "Epiglottitis — do not agitate the child and secure the airway",
+     "Bronchiolitis with impending respiratory failure and a silent chest"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which nursing action is most important while a child with croup is being evaluated?",
+    "ch": [
+     "Insert an intravenous line immediately so steroids can be given by vein",
+     "Draw a complete blood count and blood culture before any treatment",
+     "Keep the child calm on the caregiver's lap and minimize invasive exams",
+     "Obtain an AP neck radiograph promptly to look for the steeple sign",
+     "Place the child supine on the stretcher for a careful oropharyngeal exam"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A child with croup is vomiting and cannot keep down oral dexamethasone. What is the appropriate alternative?",
+    "ch": [
+     "Nebulized budesonide as an alternative or adjunct steroid",
+     "Oral prednisone for five days once the vomiting settles",
+     "Withhold steroids entirely and treat with humidified oxygen only",
+     "Nebulized epinephrine used as a substitute for the steroid dose",
+     "Oral antipyretics alone, on the basis that they reduce airway swelling"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A child with croup received dexamethasone and nebulized epinephrine but is now quiet, with decreasing air entry and lethargy. How should this be read?",
+    "ch": [
+     "Expected improvement, since the nebulized epinephrine has taken effect",
+     "Rebound stridor, which resolves on its own without further treatment",
+     "A critical warning of impending airway failure requiring escalation",
+     "Normal night-time worsening that will improve with cool humid air",
+     "Simple exhaustion from crying, best managed by letting the child sleep"
+    ]
+   }
+  ]
+ },
+ "pressure-injury": {
+  "condition": "Pressure Injuries",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which finding defines a Stage 1 pressure injury?",
+    "ch": [
+     "A wound base obscured by slough or eschar so depth is unknown",
+     "Erythema that whitens completely when light pressure is applied",
+     "Intact skin with non-blanchable erythema over a bony prominence",
+     "Partial-thickness loss with exposed dermis and a shallow open ulcer",
+     "Full-thickness loss with visible subcutaneous fat in the wound bed"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "A sacral wound exposes tendon and bone and has undermining at its edges. How is it staged?",
+    "ch": [
+     "Deep tissue injury, because the wound extends deeply",
+     "Stage 2, because the dermis is exposed",
+     "Stage 3, because subcutaneous fat is visible",
+     "Stage 4, because fascia, muscle, tendon, or bone is exposed",
+     "Unstageable, because undermining is present"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "How should a Braden Scale score be interpreted?",
+    "ch": [
+     "It measures wound surface area in order to track healing over time",
+     "A lower score indicates higher risk, with 18 or below considered at risk",
+     "It predicts the need for surgical flap closure of Stage 3-4 wounds",
+     "A higher score indicates higher risk, with 18 or above considered at risk",
+     "It stages wound depth once a pressure injury has already developed"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Unrelieved pressure over a bony prominence causes ischemia once it exceeds which threshold?",
+    "ch": [
+     "The interface pressure of about 100 mmHg",
+     "The systolic blood pressure of about 120 mmHg",
+     "The mean arterial pressure of about 65 mmHg",
+     "The capillary closing pressure of about 32 mmHg",
+     "The central venous pressure of about 8 mmHg"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which set of nursing measures correctly prevents pressure injuries?",
+    "ch": [
+     "Turn every 4 hours, use a donut cushion, and massage reddened bony areas",
+     "Keep the head of bed above 45 degrees and slide the patient up in bed",
+     "Place a ring cushion under the sacrum and rest the heels on the mattress",
+     "Reposition only when the patient reports discomfort over a bony prominence",
+     "Turn q2h with a 30-degree lateral tilt, float the heels, and lift rather than drag"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A bedbound patient with poor perfusion has stable, dry, intact eschar on the heel. What is the correct action?",
+    "ch": [
+     "Leave the eschar intact and offload the heel from the mattress",
+     "Apply an alginate dressing to absorb drainage from beneath it",
+     "Start systemic antibiotics for presumed underlying osteomyelitis",
+     "Sharply debride the eschar so the wound can be staged",
+     "Apply collagenase daily until the eschar has fully dissolved"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A Stage 4 sacral wound has granulated in and is now shallow. How should it be documented?",
+    "ch": [
+     "As a Stage 2, because the current depth reaches only the dermis",
+     "As a Stage 1, because the wound surface is nearly intact again",
+     "As unstageable, because the original depth can no longer be seen",
+     "As a deep tissue injury, because damage began at the muscle-bone interface",
+     "As a healing Stage 4, because pressure injuries are never reverse-staged"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A persistent maroon-purple area of intact skin over the heel does not blanch. What is it, and why does it matter?",
+    "ch": [
+     "An unstageable wound whose base is obscured by adherent slough",
+     "Deep tissue injury, which can rapidly declare as a Stage 3 or 4 wound",
+     "A Stage 1 injury, which resolves with a single episode of repositioning",
+     "Moisture-associated skin damage from incontinence and maceration",
+     "A resolving bruise that needs only observation over several days"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A non-healing full-thickness sacral wound probes to bone. What is the appropriate workup?",
+    "ch": [
+     "MRI with bone biopsy and culture to evaluate for osteomyelitis",
+     "Serial photography with weekly reassessment of the Braden score",
+     "Negative pressure wound therapy started before any imaging is done",
+     "Albumin and prealbumin levels alone to explain the poor healing",
+     "Superficial wound swab culture followed by empiric oral antibiotics"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A hospitalized patient develops a new Stage 3 pressure injury. Which statement best captures its significance?",
+    "ch": [
+     "It should be reverse-staged as it heals to demonstrate quality improvement",
+     "It confirms that malnutrition alone was the cause of the wound",
+     "It is a hospital-acquired CMS never event demanding immediate escalation",
+     "It requires systemic antibiotics because all Stage 3 wounds are infected",
+     "It is an expected complication of critical illness and needs no escalation"
+    ]
+   }
+  ]
+ },
+ "burns": {
+  "condition": "Burns",
+  "questions": [
+   {
+    "n": 1,
+    "q": "A burn is leathery, dry, and insensate. What depth does this describe?",
+    "ch": [
+     "Superficial (first-degree), involving the epidermis only",
+     "Partial-thickness (second-degree), extending into the dermis",
+     "Superficial burn with blistering and marked moist pain",
+     "Fourth-degree burn, which by definition reaches muscle and bone",
+     "Full-thickness (third-degree), extending through the dermis"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Using the Rule of Nines in an adult, the entire front torso represents what proportion of TBSA?",
+    "ch": [
+     "18%",
+     "9%",
+     "1%",
+     "36%",
+     "4.5%"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "An 80 kg adult has 30% TBSA of partial-thickness and full-thickness burns. By the Parkland formula, how much lactated Ringer's is given in the first 8 hours from the time of injury?",
+    "ch": [
+     "9,600 mL",
+     "2,400 mL",
+     "4,800 mL",
+     "1,200 mL",
+     "19,200 mL"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which statement about estimating TBSA for burn resuscitation is correct?",
+    "ch": [
+     "Superficial first-degree burns are included in the TBSA calculation",
+     "The Rule of Nines is the preferred estimation method in children",
+     "The patient's whole hand including fingers equals about 5% TBSA",
+     "Superficial first-degree burns are NOT counted in the TBSA calculation",
+     "TBSA is unnecessary once fluids are titrated to hourly urine output"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient rescued from a closed-space house fire is confused, and the pulse oximeter reads 99%. What does this most likely indicate?",
+    "ch": [
+     "Rhabdomyolysis from deep muscle damage after an electrical burn",
+     "Adequate oxygenation, so hypoxia can be excluded as a cause",
+     "Possible carbon monoxide poisoning, since pulse oximetry cannot detect it",
+     "Early burn shock from capillary leak in the first 24 hours",
+     "Mafenide-induced metabolic acidosis affecting mental status"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "What is the primary endpoint used to titrate fluid resuscitation in an adult with major burns?",
+    "ch": [
+     "Normalization of the carboxyhemoglobin level on repeat co-oximetry",
+     "Resolution of pain at the burn site during dressing changes",
+     "A normal chest X-ray obtained six hours after the injury",
+     "Urine output of 0.5 mL/kg/h measured hourly via a Foley catheter",
+     "Strict adherence to the calculated Parkland volume regardless of response"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient with a circumferential full-thickness burn of the forearm loses distal pulses and reports paresthesia. What does this require?",
+    "ch": [
+     "Immediate silver sulfadiazine application with elevation of the limb",
+     "An increase in the opioid dose with reassessment in four hours",
+     "Reduction of the fluid rate to limit further extremity swelling",
+     "Application of mafenide acetate so that it penetrates the eschar",
+     "Urgent escharotomy to relieve the constricting burn eschar"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which patient should NOT receive topical silver sulfadiazine?",
+    "ch": [
+     "An adult with a partial-thickness burn of the anterior thigh",
+     "An infant under 2 months old with a documented sulfa allergy",
+     "An adult with a full-thickness burn needing a topical antimicrobial",
+     "A patient with a thigh burn who has already had tetanus prophylaxis",
+     "A patient with a leg burn who is receiving intravenous opioids"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which finding by itself meets American Burn Association criteria for transfer to a burn center?",
+    "ch": [
+     "A partial-thickness burn involving the hands, face, or genitalia",
+     "Any burn in an adult who reports pain during dressing changes",
+     "A 5% TBSA partial-thickness burn of the thigh in a healthy adult",
+     "A first-degree sunburn covering the back and both shoulders",
+     "A small blister on the forearm that healed without any dressing"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "How does the pathophysiology of a major burn evolve after the first 48 hours?",
+    "ch": [
+     "The wound becomes sterile as the eschar seals the skin barrier",
+     "It shifts to a hypermetabolic catabolic state with high infection risk",
+     "Metabolic demand falls, so calorie and protein needs decline sharply",
+     "Pain resolves once the full-thickness areas have become insensate",
+     "Capillary leak intensifies, so fluid rates must be steadily increased"
+    ]
+   }
+  ]
+ },
+ "wound-care": {
+  "condition": "Surgical Wound Care & Dehiscence",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement best distinguishes wound dehiscence from evisceration?",
+    "ch": [
+     "Dehiscence means abdominal viscera protrude through the incision, while evisceration is edge separation",
+     "Dehiscence is infection of the incision, while evisceration is separation of the wound layers",
+     "Dehiscence is partial or complete separation of the layers of a surgical wound; evisceration is protrusion of abdominal viscera through it",
+     "Both terms describe superficial incisional surgical-site infection at different depths",
+     "Dehiscence occurs only in clean wounds, while evisceration occurs only in dirty wounds"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Wound dehiscence most often occurs at which point after surgery, and why?",
+    "ch": [
+     "Postoperative day 5-8, when collagen tensile strength is still low",
+     "Within the first 12 hours, before hemostasis is complete",
+     "At 6 weeks, when remodeling reaches about 80% of original strength",
+     "On postoperative day 1, when the inflammatory phase begins",
+     "After 3 months, once the maturation phase has fully ended"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "A patient 6 days after laparotomy has a sudden gush of pink, salmon-colored fluid from the incision. What does this most likely signify?",
+    "ch": [
+     "A hematoma under the incision that should be evacuated at the bedside",
+     "Purulent drainage indicating an established organ-space surgical-site infection",
+     "A lymphatic leak that will resolve with an abdominal binder alone",
+     "Serosanguineous drainage warning of impending dehiscence, often by 1-2 days",
+     "Normal serous drainage that requires only a routine dressing change"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "The nurse finds bowel protruding through a patient's abdominal incision. Which set of actions is correct?",
+    "ch": [
+     "Gently replace the viscera, close the wound edges with tape, and continue the diet as ordered",
+     "Keep the patient still and supine with knees flexed, cover the viscera with sterile saline-moistened gauze, keep NPO, and notify the surgeon",
+     "Pack the wound with dry gauze, sit the patient upright, and give oral fluids while awaiting the surgeon",
+     "Irrigate the protruding bowel with full-strength povidone-iodine and apply an abdominal binder tightly",
+     "Apply negative-pressure wound therapy directly over the exposed bowel and reassess in one hour"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which solution is the cleansing agent of choice for a granulating open wound bed?",
+    "ch": [
+     "Wet-to-dry gauze soaks, because nonselective debridement speeds healing",
+     "Full-strength povidone-iodine, because it sterilizes the granulation tissue",
+     "Hydrogen peroxide, because bubbling lifts slough out of the wound bed",
+     "Chlorhexidine-alcohol, because it is the preferred preoperative skin prep",
+     "Sterile normal saline, because it cleanses without harming granulation tissue"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Negative-pressure wound therapy (wound VAC) is contraindicated in which situation?",
+    "ch": [
+     "A secondary-intention wound that is granulating from the base up",
+     "Over exposed vessels or organs, untreated osteomyelitis, or malignancy",
+     "A large open dehisced abdominal wound with moderate exudate",
+     "A wound with edema and drainage that needs granulation encouraged",
+     "A postoperative wound in a patient with well-controlled diabetes"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A contaminated abdominal wound is left open to heal from the base up with granulation. Which closure strategy does this describe?",
+    "ch": [
+     "Flap closure, which bypasses the proliferative phase entirely",
+     "Skin-only approximation with staples over an open fascia",
+     "Primary intention, used for clean low-tension wounds",
+     "Delayed primary (tertiary) intention, closed after a few days of observation",
+     "Secondary intention, in which the wound granulates from the base up"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "On dressing change the wound bed is covered with yellow slough and a patch of black eschar. What does this indicate?",
+    "ch": [
+     "Maceration of the periwound skin from excess moisture",
+     "Beefy red tissue signaling adequate perfusion of the bed",
+     "Nonviable tissue requiring debridement before the bed can heal",
+     "Healthy granulation that should simply be kept moist",
+     "Epithelialization at the wound edge that must not be disturbed"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which element belongs to the surgical-site infection prevention bundle you would cite on rounds?",
+    "ch": [
+     "Permissive hyperglycemia to supply the healing wound with energy",
+     "Wet-to-dry gauze dressings applied to every clean closed incision",
+     "Routine hydrogen peroxide irrigation of the closed incision daily",
+     "Chlorhexidine-alcohol skin prep with a prophylactic antibiotic within 60 minutes of incision",
+     "Postoperative hypothermia to reduce metabolic demand at the wound"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A dehisced wound has scant drainage and no erythema, warmth, fever, or spreading cellulitis. What is the appropriate antibiotic decision?",
+    "ch": [
+     "Withhold antibiotics — this is colonization, not true infection",
+     "Give a prophylactic dose now and repeat it every 60 minutes",
+     "Start oral cephalexin, because any draining wound is infected",
+     "Start vancomycin empirically to cover MRSA in all open wounds",
+     "Treat the wound culture result even if it only shows colonization"
+    ]
+   }
+  ]
+ },
+ "anaphylaxis": {
+  "condition": "Anaphylaxis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "What is the first-line, life-saving treatment for anaphylaxis?",
+    "ch": [
+     "Intravenous diphenhydramine given as a rapid push",
+     "Intramuscular epinephrine into the anterolateral thigh",
+     "Intravenous methylprednisolone before any other therapy",
+     "Nebulized albuterol repeated every five minutes",
+     "Subcutaneous epinephrine into the upper arm"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which mechanism underlies classic anaphylaxis?",
+    "ch": [
+     "Type I IgE-mediated mast cell and basophil degranulation",
+     "Autoantibody blockade of postsynaptic receptors at the junction",
+     "Type IV delayed T-cell hypersensitivity to a contact allergen",
+     "Immune-complex deposition activating complement in vessel walls",
+     "Direct bacterial toxin release causing distributive vasodilation"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "How is the diagnosis of anaphylaxis established?",
+    "ch": [
+     "Clinically — acute onset with skin/mucosal involvement plus respiratory compromise, hypotension, or GI symptoms",
+     "By a serum tryptase level drawn before any treatment is given",
+     "By skin-prick and specific-IgE testing performed in the emergency department",
+     "By demonstrating an elevated total serum IgE on the day of the reaction",
+     "By a documented drop in blood pressure of at least 50 mmHg on two readings"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "How should a hypotensive anaphylaxis patient be positioned?",
+    "ch": [
+     "Trendelenburg with the head lowered as far as the bed allows",
+     "Sitting fully upright to maximize chest expansion",
+     "Prone with the head turned to one side",
+     "Supine with the legs raised, unless respiratory distress requires sitting",
+     "High Fowler's with the legs dependent over the bed edge"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "What is the role of diphenhydramine in anaphylaxis?",
+    "ch": [
+     "It is the first-line drug and should be given before epinephrine",
+     "It reverses upper-airway edema faster than epinephrine does",
+     "It restores blood pressure by increasing systemic vascular resistance",
+     "It replaces the need for an observation period after treatment",
+     "It is a second-line adjunct that relieves cutaneous itching and hives only"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient taking a beta-blocker remains hypotensive after repeated doses of IM epinephrine. What should be given next?",
+    "ch": [
+     "Intramuscular epinephrine into the deltoid instead of the thigh",
+     "A second antihistamine dose to deepen mediator blockade",
+     "Glucagon, which bypasses beta-receptor blockade",
+     "Oral prednisone to shorten the reaction",
+     "Inhaled albuterol as the definitive rescue therapy"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Why is a patient who has fully improved after epinephrine still observed before discharge?",
+    "ch": [
+     "Because corticosteroids reliably prevent any later recurrence",
+     "To allow the serum tryptase to normalize before testing",
+     "To complete a mandatory 24-hour course of antihistamines",
+     "To confirm the trigger by supervised re-exposure",
+     "Because a biphasic reaction can recur hours after apparent recovery"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient with suspected anaphylaxis has a normal serum tryptase. How should this be interpreted?",
+    "ch": [
+     "It means the sample was correctly drawn 24 hours after onset",
+     "It establishes that the patient was reacting to radiocontrast media",
+     "A normal tryptase does not exclude anaphylaxis, especially food-induced",
+     "It rules out anaphylaxis, so epinephrine should be withheld",
+     "It confirms a non-IgE anaphylactoid reaction rather than anaphylaxis"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Minutes into a radiocontrast infusion a patient develops flushing, wheeze, and hypotension. Management should be:",
+    "ch": [
+     "Limited to stopping the infusion and giving an antihistamine dose",
+     "Identical to IgE-mediated anaphylaxis — stop the infusion and give IM epinephrine now",
+     "Deferred to steroid premedication before the contrast is restarted",
+     "Directed at bronchospasm alone with nebulized albuterol therapy",
+     "Withheld until IgE testing proves an allergic mechanism is present"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which discharge plan best reflects the module's teaching after an episode of anaphylaxis?",
+    "ch": [
+     "A corticosteroid taper alone, on the grounds that the trigger has already been identified",
+     "Antihistamines as needed at home, with follow-up arranged only if symptoms recur",
+     "Immediate skin-prick and specific-IgE testing performed before the patient leaves the department",
+     "Two epinephrine auto-injectors with demonstrated technique, an action plan, MedicAlert, and allergist referral",
+     "One auto-injector only, with instructions to fill a second prescription sometime later"
+    ]
+   }
+  ]
+ }
+}

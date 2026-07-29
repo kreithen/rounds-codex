@@ -1,0 +1,922 @@
+{
+ "fracture": {
+  "condition": "Fractures",
+  "questions": [
+   {
+    "n": 1,
+    "q": "In what sequence does fracture healing proceed?",
+    "ch": [
+     "Hematoma, then hard callus, then soft callus, then remodeling",
+     "Hematoma, then soft callus, then hard callus, then remodeling",
+     "Soft callus, then hematoma, then remodeling, then hard callus",
+     "Remodeling, then hematoma, then soft callus, then hard callus",
+     "Hard callus, then soft callus, then hematoma, then remodeling"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Among the 6 P's of compartment syndrome, which is the earliest sign?",
+    "ch": [
+     "Pain out of proportion, worse with passive stretch",
+     "Paralysis of the affected muscle group",
+     "Poikilothermia, with the limb cool to touch",
+     "Pulselessness in the distal extremity",
+     "Pallor and mottling of the distal extremity"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What is the standard confirmatory imaging for a suspected fracture?",
+    "ch": [
+     "A single anteroposterior radiograph of the injured bone",
+     "MRI of the affected limb obtained before any plain films",
+     "CT of the whole body regardless of the region injured",
+     "Bedside ultrasound of the limb performed by the nurse",
+     "Plain radiographs in at least two orthogonal views, including the joint above and below"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient arrives with an open tibia fracture and exposed bone. What does the module prioritize?",
+    "ch": [
+     "IV antibiotics started as soon as possible, ideally within 1 hour, plus tetanus prophylaxis and urgent operative washout",
+     "Splinting and observation, because open fractures heal much like closed ones",
+     "Delay antibiotics until the wound has been cultured in the operating room",
+     "Tetanus prophylaxis alone, since the wound will be washed out later anyway",
+     "Oral cephalexin at discharge with outpatient orthopedic follow-up arranged"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient fell on an outstretched hand and has anatomic snuffbox tenderness, but the X-ray is normal. What is the correct management?",
+    "ch": [
+     "Assume a distal radius fracture and perform closed reduction now",
+     "Reassure the patient and permit an immediate return to full activity",
+     "Treat as a scaphoid fracture with a thumb spica splint and repeat imaging",
+     "Obtain a whole-body bone scan before applying any immobilization",
+     "Apply a cast only if the pain is still present beyond three weeks"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Forty-eight hours after a femoral shaft fracture, a patient develops dyspnea, confusion and a petechial rash. What is the diagnosis?",
+    "ch": [
+     "Deep vein thrombosis of the ipsilateral calf",
+     "Delayed union of the femoral shaft fracture",
+     "Fat embolism syndrome",
+     "Compartment syndrome of the thigh compartment",
+     "Hemorrhagic shock from ongoing femoral blood loss"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "What caution does the module attach to NSAIDs for fracture pain?",
+    "ch": [
+     "They are the only analgesic that carries no daily dose limit at all",
+     "They cause fat embolism syndrome when used after long-bone fractures",
+     "They are absolutely contraindicated in every fracture without exception",
+     "They must be combined with aspirin in order to be effective analgesics",
+     "Beyond renal, GI and cardiovascular risk, there is theoretical concern for delayed bone healing and nonunion"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient in a cast reports escalating pain that worsens with passive stretch, and the compartment feels tense. What is the correct action?",
+    "ch": [
+     "Wait for a compartment pressure measurement before taking any action",
+     "Elevate the limb above the heart and continue with routine cast care",
+     "Obtain an MRI of the limb to confirm the diagnosis before intervening",
+     "Treat as compartment syndrome and proceed to emergent fasciotomy — it is a clinical diagnosis",
+     "Give additional opioid and reassess the limb in six hours"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 78-year-old sustains a hip fracture after a fall from standing height. Beyond fixation, what should happen?",
+    "ch": [
+     "No further evaluation, since falls in older adults are largely unavoidable",
+     "Repeat radiographs monthly until union with no other workup performed",
+     "Long-term NSAIDs to suppress the inflammation of the healing bone",
+     "Treat it as a sentinel event: order a DEXA scan and start osteoporosis therapy to prevent the next fracture",
+     "Defer surgery well beyond 48 hours to let the fracture hematoma organize"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which validated decision tools does the module cite to limit unnecessary fracture imaging?",
+    "ch": [
+     "The Gustilo-Anderson and Salter-Harris classifications",
+     "The Ottawa Ankle and Knee Rules and the Canadian C-Spine Rule",
+     "The Garden and AO classifications of hip fracture",
+     "The 6 P's of compartment syndrome assessment",
+     "The SALTR mnemonic for physeal injury patterns"
+    ]
+   }
+  ]
+ },
+ "osteoporosis": {
+  "condition": "Osteoporosis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which DXA T-score defines osteoporosis?",
+    "ch": [
+     "Any T-score at all in a patient who has sustained a fall",
+     "A T-score of -1.0 or higher on hip and spine",
+     "A T-score between -1.0 and -2.5 on hip or spine",
+     "A T-score of -2.5 or lower",
+     "A Z-score of -2.0 or lower in a postmenopausal woman"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "What cellular imbalance underlies osteoporosis?",
+    "ch": [
+     "Replacement of marrow by fibrous tissue from excess parathyroid hormone",
+     "Failure of osteoclasts to resorb bone, producing dense but brittle bone",
+     "Osteoclast resorption outpacing osteoblast formation",
+     "Defective mineralization of normally formed osteoid from vitamin D deficiency",
+     "Osteoblast formation outpacing osteoclast resorption over time"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "How should an oral bisphosphonate be taken?",
+    "ch": [
+     "With milk or an antacid to buffer the stomach and reduce nausea",
+     "At any time of day, as long as the calcium supplement is taken at the same time",
+     "Dissolved in juice and taken while reclining right after breakfast",
+     "With a full meal at bedtime, then lying flat to prevent dizziness",
+     "First thing in the morning, fasting, with a full glass of plain water, remaining upright 30 to 60 minutes"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient on denosumab wants to stop the injections. What is the key teaching?",
+    "ch": [
+     "Stop it and rely on calcium and vitamin D alone to preserve the gains",
+     "Taper the dose over 12 months by halving each successive injection",
+     "Do not stop abruptly — rebound bone loss with multiple vertebral fractures can occur, so transition to a bisphosphonate",
+     "Stopping is safe at any time because the effect on bone density is permanent",
+     "Stop it and begin romosozumab, even though she had a stroke last month"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A 72-year-old fractures a vertebra after falling from standing height; her DXA T-score is -1.8. How is she classified?",
+    "ch": [
+     "Osteomalacia, because the fracture followed only low-energy trauma",
+     "Osteopenia only, so no pharmacologic therapy is warranted yet",
+     "Normal bone density, because the T-score is above -2.5",
+     "Secondary osteoporosis, which requires a bone biopsy to confirm",
+     "Clinical osteoporosis — a hip or vertebral fragility fracture makes the diagnosis regardless of T-score"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which medication class is the most common drug cause of secondary osteoporosis?",
+    "ch": [
+     "Statins prescribed for hyperlipidemia",
+     "Thiazide diuretics prescribed for hypertension",
+     "Bisphosphonates continued over many years",
+     "Chronic glucocorticoids",
+     "Beta-blockers used after myocardial infarction"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which element of the history makes romosozumab inappropriate?",
+    "ch": [
+     "A myocardial infarction three months ago",
+     "A prior fragility fracture of the distal radius",
+     "Chronic kidney disease with a creatinine clearance of 60",
+     "A history of hot flashes while on hormone therapy",
+     "A family history of osteoporosis in her mother"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient with severe osteoporosis and multiple vertebral fractures is starting therapy. What sequencing is recommended?",
+    "ch": [
+     "An anabolic agent first in severe disease, followed by an antiresorptive to preserve the gains",
+     "Calcium and vitamin D alone for two years, then reassess her with a repeat DXA",
+     "Raloxifene first, because it also reduces the risk of hip fracture",
+     "Denosumab indefinitely, with no plan for transition or follow-on therapy",
+     "An antiresorptive first, then an anabolic agent afterwards to lock in the gains"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A woman with osteopenia has a FRAX 10-year hip fracture probability of 4%. What does the module advise?",
+    "ch": [
+     "Order a bone biopsy to decide whether pharmacologic therapy is warranted",
+     "Treat — a FRAX of 3% or more for hip, or 20% or more for major osteoporotic fracture, meets the threshold",
+     "Do not treat, since only a T-score of -2.5 or lower can justify pharmacologic therapy",
+     "Repeat the DXA in five years and defer any treatment decision until then",
+     "Treat only if she has already sustained a fracture of the distal radius"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient on long-term bisphosphonate therapy reports new thigh and groin pain. What should be suspected?",
+    "ch": [
+     "Esophagitis from incorrect oral bisphosphonate administration",
+     "An atypical femoral fracture, whose prodrome precedes completion",
+     "A vertebral compression fracture with spinal cord compression",
+     "Osteonecrosis of the jaw presenting as referred thigh pain",
+     "Hypocalcemia causing perioral tingling and muscle cramps"
+    ]
+   }
+  ]
+ },
+ "osteoarthritis": {
+  "condition": "Osteoarthritis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which description best characterizes the morning stiffness of osteoarthritis?",
+    "ch": [
+     "Stiffness lasting less than 30 minutes, with gelling after inactivity",
+     "Stiffness accompanied by symmetric swelling of the MCP joints and the wrists",
+     "Stiffness lasting more than one hour that improves as the joints are used",
+     "Stiffness occurring only after prolonged rest at night and never in the morning",
+     "Stiffness that steadily worsens through the day and is unrelieved by rest"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "How do Heberden's and Bouchard's nodes differ?",
+    "ch": [
+     "Heberden's nodes are at the PIP joints and Bouchard's nodes at the DIP joints",
+     "Both Heberden's and Bouchard's nodes occur only at the MCP joints of the hand",
+     "Heberden's nodes are at the first CMC joint and Bouchard's nodes at the wrist",
+     "Both are soft-tissue swellings of the wrist seen only in inflammatory arthritis",
+     "Heberden's nodes are at the DIP joints and Bouchard's nodes at the PIP joints"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which set of radiographic findings matches the LOSS hallmarks of osteoarthritis?",
+    "ch": [
+     "Symmetric joint-space narrowing, juxta-articular osteopenia and marginal erosions",
+     "Entirely normal radiographs with an elevated ESR and CRP confirming the diagnosis",
+     "Diffuse demineralization with vertebral compression and no osteophyte formation",
+     "Chondrocalcinosis of the menisci with rhomboid calcium pyrophosphate deposits",
+     "Asymmetric loss of joint space, osteophytes, subchondral sclerosis and subchondral cysts"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "An 82-year-old with knee osteoarthritis, chronic kidney disease and prior peptic ulcer disease needs better analgesia. Which option is preferred first-line?",
+    "ch": [
+     "Oral glucosamine with chondroitin taken daily as a supplement",
+     "Repeated intra-articular corticosteroid injections every four weeks",
+     "Oral naproxen with a proton pump inhibitor added for gastroprotection",
+     "Topical diclofenac gel applied to the affected knee",
+     "Scheduled tramadol titrated upward for chronic daily pain control"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "What is the cornerstone non-pharmacologic therapy that should be taught to every patient with osteoarthritis?",
+    "ch": [
+     "Weight loss with low-impact exercise such as walking, swimming, cycling and quadriceps strengthening",
+     "Immobilizing the affected joint in a rigid cast or brace for several weeks at a time",
+     "Early referral for total joint arthroplasty before conservative measures are optimized",
+     "Strict joint rest with avoidance of all exercise until the pain has fully resolved",
+     "Daily oral glucosamine and chondroitin supplements combined with bedtime capsaicin cream"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient with painful right knee osteoarthritis is being fitted for a cane. How should it be used?",
+    "ch": [
+     "Not at all, because assistive devices weaken the quadriceps over time",
+     "In the left hand, to offload the affected right knee",
+     "In the right hand, on the same side as the painful knee",
+     "In either hand, since the side makes no difference to joint loading",
+     "Only indoors, with crutches used outdoors to unload both legs"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which statement reflects the modern understanding of osteoarthritis pathophysiology?",
+    "ch": [
+     "OA is an immune-complex disease driven by autoantibodies against nuclear antigens",
+     "OA results from monosodium urate crystal deposition within the articular cartilage",
+     "OA is an active whole-joint remodeling process with MMP and IL-1/TNF-alpha driven cartilage catabolism",
+     "OA is caused by synovial pannus formation eroding bone at the joint margins",
+     "OA is purely passive mechanical wear of cartilage with no inflammatory component"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A 70-year-old followed for knee osteoarthritis presents with a hot, red, swollen knee and a temperature of 38.6 C. What is the appropriate action?",
+    "ch": [
+     "Order weight-bearing radiographs to grade the Kellgren-Lawrence stage",
+     "Perform arthrocentesis, since septic arthritis or crystal arthropathy must be excluded",
+     "Inject intra-articular corticosteroid to abort what is likely an osteoarthritis flare",
+     "Start duloxetine for presumed central sensitization of chronic knee pain",
+     "Increase the oral NSAID dose and reassess in two weeks"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 58-year-old carrying a diagnosis of hand osteoarthritis reports 90 minutes of morning stiffness with symmetric swelling of the MCP joints and wrists, and the ESR and CRP are elevated. How should this be interpreted?",
+    "ch": [
+     "This represents erosive osteoarthritis of the hands, which shows a gull-wing radiographic appearance",
+     "These findings confirm advanced Kellgren-Lawrence grade 4 disease of the small joints of the hand",
+     "This pattern is consistent with first CMC squaring and requires only a topical NSAID for treatment",
+     "The diagnosis should be reconsidered, because this pattern points to an inflammatory arthritis",
+     "This is expected, because osteoarthritis is now known to be a cytokine-driven inflammatory disease"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A 68-year-old with end-stage knee osteoarthritis has failed exercise, weight loss, physical therapy, topical and oral NSAIDs and injections, and pain now limits all activities of daily living. What is the definitive next step?",
+    "ch": [
+     "Monthly intra-articular corticosteroid injections continued indefinitely",
+     "A trial of long-acting opioid analgesia to preserve remaining joint function",
+     "Referral for total knee arthroplasty for refractory pain and functional loss",
+     "Initiation of a disease-modifying OA drug to restore the cartilage matrix",
+     "A course of oral glucosamine and chondroitin for at least six months"
+    ]
+   }
+  ]
+ },
+ "ra": {
+  "condition": "Rheumatoid Arthritis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which joint pattern is most characteristic of rheumatoid arthritis?",
+    "ch": [
+     "Asymmetric involvement of the DIP joints with bony enlargement and crepitus",
+     "Monoarticular involvement of the first metatarsophalangeal joint overnight",
+     "Symmetric small-joint arthritis of the MCPs, PIPs, wrists and MTPs, sparing the DIPs",
+     "Isolated involvement of the first carpometacarpal joint with thumb-base squaring",
+     "Migratory large-joint arthritis limited to the knees and hips after minor trauma"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which statement about rheumatoid serology is correct?",
+    "ch": [
+     "A negative rheumatoid factor and a negative anti-CCP together exclude the diagnosis",
+     "Anti-CCP correlates with disease activity and is used to track treat-to-target response",
+     "The antinuclear antibody is the confirmatory diagnostic test for rheumatoid arthritis",
+     "Anti-CCP is the most specific marker and predicts erosive, more severe disease",
+     "Rheumatoid factor is highly specific and is essentially never positive in other diseases"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which description of morning stiffness fits rheumatoid arthritis?",
+    "ch": [
+     "Absent entirely, with joint pain occurring only at night and waking the patient",
+     "Variable in length but always confined to the distal interphalangeal joints",
+     "Present only once the disease has become radiographically erosive on X-ray",
+     "Under 30 minutes, worsening with activity and relieved by a period of rest",
+     "Longer than one hour and improving as the joints are used through the day"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A nurse is teaching a newly diagnosed patient who is starting methotrexate. Which instruction is correct?",
+    "ch": [
+     "Alcohol in moderation is acceptable while taking weekly methotrexate",
+     "Pregnancy is safe on methotrexate provided folic acid is taken every day",
+     "Take it once weekly with folic acid, avoid alcohol, and use reliable contraception",
+     "Expect relief within 48 hours, and if not, double the next scheduled dose",
+     "Take the tablets every day and stop them as soon as the joints feel better"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Before starting a TNF-alpha inhibitor, which step is required?",
+    "ch": [
+     "Obtain a baseline and annual retinal examination to detect retinopathy",
+     "Check HLA-B*5801 status in patients of Han Chinese or Thai ancestry",
+     "Administer live attenuated vaccines during the first month of therapy",
+     "Document a normal serum uric acid level and creatinine clearance",
+     "Screen for latent tuberculosis and hepatitis B before the first dose"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which combination defines Felty syndrome?",
+    "ch": [
+     "Rheumatoid arthritis with atlantoaxial subluxation and cord compression",
+     "Rheumatoid arthritis with splenomegaly and neutropenia",
+     "Rheumatoid arthritis with pneumoconiosis nodules on chest imaging",
+     "Rheumatoid arthritis with sterile verrucous vegetations on a heart valve",
+     "Rheumatoid arthritis with keratoconjunctivitis sicca and xerostomia"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient with 20 years of rheumatoid arthritis is scheduled for elective cholecystectomy. Which preoperative evaluation is specifically flagged?",
+    "ch": [
+     "Cervical spine evaluation for atlantoaxial (C1-C2) subluxation before intubation",
+     "Pulmonary function testing to quantify the degree of pleural thickening",
+     "Bone density scanning to guide bisphosphonate therapy before anesthesia",
+     "Baseline retinal photography to document hydroxychloroquine exposure",
+     "Echocardiography to screen for rheumatoid valvular vegetations"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient taking adalimumab for rheumatoid arthritis presents with one acutely hot, swollen knee and a low-grade temperature. How should this be approached?",
+    "ch": [
+     "Switch to a JAK inhibitor because the TNF inhibitor has failed",
+     "Reassure the patient, since biologics reliably prevent joint infection",
+     "Order anti-CCP and rheumatoid factor titers to confirm disease activity",
+     "Rule out septic arthritis rather than assuming a flare",
+     "Increase the prednisone dose and review in one week as a flare"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient started on methotrexate three months ago still has moderate disease activity by DAS28. What does a treat-to-target approach direct?",
+    "ch": [
+     "Add or switch to a biologic or JAK inhibitor after TB and hepatitis screening",
+     "Replace the DMARD with long-term NSAID monotherapy for symptom control",
+     "Stop all DMARDs and treat with maintenance prednisone at the lowest dose",
+     "Repeat the anti-CCP to see whether the patient has become seronegative",
+     "Continue methotrexate unchanged and reassess again in one year"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which point about rheumatoid arthritis as a systemic disease should be raised on rounds?",
+    "ch": [
+     "Fatigue and depression are unrelated to the disease and need no attention",
+     "Chronic inflammation accelerates atherosclerosis, making rheumatoid arthritis an independent cardiovascular risk factor",
+     "Extra-articular involvement is confined to subcutaneous rheumatoid nodules",
+     "Joint damage is the only irreversible consequence of untreated disease",
+     "Smoking raises disease risk but has no bearing on treatment response"
+    ]
+   }
+  ]
+ },
+ "gout": {
+  "condition": "Gout",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Synovial fluid from an acutely inflamed joint is examined under polarized light. Which finding confirms gout?",
+    "ch": [
+     "Needle-shaped crystals that are negatively birefringent",
+     "Cholesterol crystals with a flat, plate-like appearance",
+     "No crystals at all, with a white cell count under 2000",
+     "Rhomboid crystals that are negatively birefringent",
+     "Rhomboid crystals that are positively birefringent"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "What is the classic site of a first gout attack?",
+    "ch": [
+     "The knee, with a large effusion developing over several days",
+     "The wrist, with symmetric swelling and prolonged morning stiffness",
+     "The distal interphalangeal joints, with bony enlargement and nodes",
+     "The first metatarsophalangeal joint, known as podagra",
+     "The sacroiliac joints, with inflammatory back pain at night"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "In roughly 90 percent of patients, hyperuricemia in gout arises by which mechanism?",
+    "ch": [
+     "Excess dietary calcium binding urate within the gut",
+     "Underexcretion of urate by the kidney",
+     "Overproduction of urate from HGPRT deficiency",
+     "Overproduction of urate from tumor lysis and high purine turnover",
+     "Deficient xanthine oxidase activity within the liver"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient with an acutely red, hot first metatarsophalangeal joint has a serum uric acid of 5.2 mg/dL. How should this be interpreted?",
+    "ch": [
+     "Gout is excluded, because urate must exceed 6.8 mg/dL during a flare",
+     "The level confirms the treatment target and no further action is needed",
+     "Urate can be normal or low during a flare, so recheck about 2 weeks after it resolves",
+     "The result indicates pseudogout rather than gout, so no aspiration is required",
+     "It indicates urate overproduction with a compensatory renal clearance response"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient with stage 4 chronic kidney disease and a recent GI bleed has an acute gout flare. Which treatment is favored?",
+    "ch": [
+     "Full-dose colchicine continued daily until the symptoms fully resolve",
+     "Corticosteroids, oral or intra-articular once a septic joint is excluded",
+     "Indomethacin at full dose until the flare resolves",
+     "Naproxen with a proton pump inhibitor for gastroprotection",
+     "Allopurinol started immediately and titrated rapidly to abort the flare"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Allopurinol is being started for a patient with recurrent gout flares. Which approach is correct?",
+    "ch": [
+     "Test HLA-B*5801 in every patient regardless of ancestry or renal function",
+     "Begin at the maximum dose to reach the urate target as fast as possible",
+     "Stop the allopurinol if a flare occurs during the first months of therapy",
+     "Withhold urate-lowering therapy until tophi become radiographically visible",
+     "Start low, titrate to a target urate below 6 mg/dL, with flare prophylaxis"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which teaching point about urate-lowering therapy should be emphasized to a patient?",
+    "ch": [
+     "It should be paused before dental work and any other minor procedure",
+     "Take it only when a flare begins and stop once the pain has settled",
+     "It is lifelong and must be continued even when you have no symptoms",
+     "It can be stopped once the serum urate is normal on two occasions",
+     "It removes the need for any anti-inflammatory treatment during a flare"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A febrile patient with known tophaceous gout presents with a hot, swollen knee and rigors. What is the priority?",
+    "ch": [
+     "Aspirate the joint for Gram stain and culture before antibiotics or steroids",
+     "Give oral prednisone for a presumed polyarticular gout flare",
+     "Inject the knee with corticosteroid to give the fastest relief",
+     "Start allopurinol to lower the urate load driving the attack",
+     "Begin colchicine and reassess the joint in 24 hours"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Two weeks after starting allopurinol, a patient develops fever, a spreading rash with mucosal involvement and eosinophilia. What should be done?",
+    "ch": [
+     "Continue the allopurinol and add an antihistamine for the rash",
+     "Switch to pegloticase without checking G6PD status beforehand",
+     "Halve the allopurinol dose and recheck the serum urate in one month",
+     "Attribute the rash to colchicine prophylaxis and stop the colchicine",
+     "Stop the allopurinol immediately, since this is allopurinol hypersensitivity"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient with established coronary disease cannot tolerate allopurinol. Which consideration applies to febuxostat?",
+    "ch": [
+     "It cannot lower serum urate below the 6 mg/dL treat-to-target threshold",
+     "It is contraindicated in G6PD deficiency and must be screened for first",
+     "It is a uricosuric and is contraindicated when nephrolithiasis is present",
+     "It carries an FDA boxed warning for cardiovascular death, so use it cautiously here",
+     "It requires HLA-B*5801 testing before the first dose in every patient treated"
+    ]
+   }
+  ]
+ },
+ "compartment": {
+  "condition": "Compartment Syndrome",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which findings are the earliest reliable signs of acute compartment syndrome?",
+    "ch": [
+     "Pain out of proportion to the injury and pain on passive stretch",
+     "Absent distal pulses with a cool, pale limb",
+     "Paralysis of the compartment muscles with foot drop",
+     "A soft, easily compressible compartment on palpation",
+     "Poikilothermia with a temperature difference between limbs"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which is the single most common cause of acute compartment syndrome?",
+    "ch": [
+     "Prolonged immobility on an operating table",
+     "Tibial shaft fracture",
+     "Cellulitis of the lower leg",
+     "Chronic venous insufficiency with stasis edema",
+     "Deep vein thrombosis of the calf veins"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What is the correct understanding of the classic 6 P's in compartment syndrome?",
+    "ch": [
+     "They are more sensitive than measuring intracompartmental pressures",
+     "All six must be present before fasciotomy can be justified",
+     "They appear in a predictable order that reliably times the ischemia",
+     "Pulselessness is the earliest sign and mandates immediate surgery",
+     "They are misleading, since pulselessness and paralysis are very late findings"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A hypotensive trauma patient has an intracompartmental pressure of 32 mmHg and a diastolic blood pressure of 55 mmHg. What does the preferred threshold indicate?",
+    "ch": [
+     "The absolute pressure is under 40 mmHg, so no intervention is warranted",
+     "Pressures cannot be interpreted at all while the patient remains hypotensive",
+     "Serial measurements over 24 hours should be obtained before any decision",
+     "Delta pressure is 23 mmHg, at or below 30, which supports fasciotomy",
+     "Delta pressure is 87 mmHg, which is reassuring and excludes the diagnosis"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "How should the limb be positioned in suspected acute compartment syndrome?",
+    "ch": [
+     "Elevated well above the heart to reduce compartment swelling",
+     "At the level of the heart, because elevation lowers perfusion pressure",
+     "Dependent below the heart to maximize arterial inflow to the limb",
+     "Elevated and wrapped in a compressive bandage to limit further edema",
+     "Immobilized in a snug circumferential cast to prevent any movement"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient with a tibial fracture in a cast reports escalating pain that is unrelieved by IV morphine. What is the correct nursing action?",
+    "ch": [
+     "Apply ice over the cast and continue routine hourly checks",
+     "Increase the opioid dose and document the improved comfort",
+     "Elevate the limb on two pillows and reassess it in an hour",
+     "Report immediately and advocate for the cast to be bivalved",
+     "Request a regional nerve block to control the ischemic pain"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "In a sedated, intubated patient with a high-risk femoral fracture and a tense thigh, what is the appropriate step?",
+    "ch": [
+     "Lower the threshold to measure intracompartmental pressures",
+     "Rely on serial pulse and capillary refill checks alone",
+     "Wait until sedation is lightened so the patient can report pain",
+     "Obtain an X-ray of the femur to look for compartment swelling",
+     "Place a regional block so pain can be assessed once it wears off"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Six hours after a four-compartment fasciotomy the patient becomes hyperkalemic and acidotic with tea-colored urine. What is happening?",
+    "ch": [
+     "Chronic exertional compartment syndrome unmasked by the surgery",
+     "An allergic reaction to the wound dressing used at the time of closure",
+     "Reperfusion injury with rhabdomyolysis threatening acute kidney injury",
+     "Recurrent compartment syndrome within the released compartments",
+     "Volkmann ischemic contracture developing in the released limb"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Numbness of the first web space of the foot with foot drop localizes to which compartment and nerve?",
+    "ch": [
+     "Deep posterior compartment, tibial nerve",
+     "Superficial posterior compartment, sural nerve",
+     "Anterior compartment, deep peroneal nerve",
+     "Gluteal compartment, sciatic nerve",
+     "Lateral compartment, superficial peroneal nerve"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "What is the definitive treatment for acute compartment syndrome, and within what window?",
+    "ch": [
+     "IV isotonic crystalloid and supplemental oxygen with serial neurovascular checks",
+     "Sodium bicarbonate infusion to alkalinize the urine and correct the acidosis",
+     "High-dose IV opioids with immobilization until the limb swelling subsides",
+     "Therapeutic anticoagulation to restore flow through the compartment vessels",
+     "Emergent fasciotomy of all involved compartments before 6 to 8 hours of ischemia"
+    ]
+   }
+  ]
+ },
+ "lupus": {
+  "condition": "Systemic Lupus Erythematosus (SLE)",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which feature of the malar rash is the key distinguishing clue in lupus?",
+    "ch": [
+     "It appears only after immunosuppressive therapy has been started",
+     "It involves the nasolabial folds prominently and symmetrically",
+     "It is photosensitive but confined to sun-protected areas of skin",
+     "It spares the nasolabial folds",
+     "It is a scarring rash that always precedes any joint symptoms"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which statement about the antinuclear antibody in lupus is correct?",
+    "ch": [
+     "It is over 95 percent sensitive but not specific, so a negative ANA makes lupus very unlikely",
+     "It is highly specific, so a positive ANA establishes the diagnosis of lupus",
+     "It tracks disease activity and falls during an active nephritis flare",
+     "It is checked only after a renal biopsy has confirmed lupus nephritis",
+     "It is negative in the majority of patients with drug-induced lupus"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which antibody is the most specific for lupus but does not track disease activity?",
+    "ch": [
+     "Anti-Ro/SSA",
+     "Anti-Smith",
+     "Anti-dsDNA",
+     "Antinuclear antibody",
+     "Anti-histone antibody"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which statement about hydroxychloroquine in lupus is correct?",
+    "ch": [
+     "It is foundational for all patients and improves survival",
+     "It is stopped during pregnancy because of fetal risk",
+     "It requires monitoring of serum potassium and blood pressure",
+     "It is dosed by ideal body weight at 10 mg/kg per day",
+     "It is reserved for patients who fail mycophenolate and glucocorticoids"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which laboratory pattern best indicates an active lupus flare?",
+    "ch": [
+     "A markedly elevated CRP with entirely normal complement levels",
+     "A newly positive anti-histone antibody with a normal urinalysis",
+     "Falling C3 and C4 with a rising anti-dsDNA titer",
+     "A rising ANA titer with unchanged complement and anti-dsDNA",
+     "Rising C3 and C4 with a falling anti-dsDNA titer"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which teaching point is the priority for a patient with photosensitive lupus skin disease?",
+    "ch": [
+     "Restricting fluids and dietary salt to reduce facial swelling from the rash",
+     "Strict sun protection with broad-spectrum SPF, hats and avoiding peak UV hours",
+     "Regular tanning-bed exposure to desensitize the skin to ultraviolet light",
+     "Topical antibiotics applied to the malar rash twice daily to prevent scarring",
+     "Discontinuing hydroxychloroquine during the summer to avoid photo-toxicity"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient taking hydralazine develops arthralgia, pleuritic chest pain and a positive ANA, with a normal urinalysis and creatinine. Which finding fits this syndrome?",
+    "ch": [
+     "Anti-Smith positivity that persists lifelong despite drug withdrawal",
+     "Neuropsychiatric involvement with seizures as the presenting feature",
+     "Anti-dsDNA positivity with rapidly falling C3 and C4",
+     "Class IV lupus nephritis requiring induction immunosuppression",
+     "Anti-histone antibodies, with the illness reversing when the drug is stopped"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A woman with lupus has a rising creatinine, an active urinary sediment and nephrotic-range proteinuria. What is directed?",
+    "ch": [
+     "Add an NSAID for the associated arthralgia and monitor weekly",
+     "Repeat the ANA titer to confirm the diagnosis before acting",
+     "Urgent renal biopsy with immunosuppression for a nephritis flare",
+     "Start voclosporin alone, without steroids or mycophenolate",
+     "Increase hydroxychloroquine to the maximum tolerated dose"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient on prednisone and mycophenolate develops a temperature of 38.4 C. What is the correct stance?",
+    "ch": [
+     "Fever is expected on mycophenolate and needs no specific evaluation",
+     "Check the ANA titer, and if it is rising, treat the fever as a flare",
+     "Withhold hydroxychloroquine, which is the usual source of drug fever",
+     "This is almost certainly a lupus flare, so the steroid dose should be increased",
+     "Assume serious infection until proven otherwise, since infection is a leading cause of death"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A woman with quiescent lupus and anti-Ro antibodies wants to conceive. Which plan is correct?",
+    "ch": [
+     "Stop hydroxychloroquine before conception in order to protect the fetus",
+     "Conceive during an active flare so that treatment can be intensified early",
+     "Substitute methotrexate for mycophenolate before attempting conception",
+     "Conceive in remission, continue hydroxychloroquine, stop teratogens, and monitor for congenital heart block",
+     "Continue mycophenolate throughout pregnancy for maintenance control"
+    ]
+   }
+  ]
+ },
+ "depression": {
+  "condition": "Major Depressive Disorder",
+  "questions": [
+   {
+    "n": 1,
+    "q": "According to the DSM-5-TR criteria taught in this module, what is the minimum requirement to diagnose major depressive disorder?",
+    "ch": [
+     "At least 2 of 9 symptoms for at least 2 weeks plus a confirmatory serum marker",
+     "Any 3 of the 9 symptoms present for at least 1 week, regardless of impairment",
+     "At least 5 of 9 symptoms lasting at least 6 months, including guilt or worthlessness",
+     "At least 5 of 9 symptoms for at least 2 weeks, including depressed mood or anhedonia, with functional impairment",
+     "All 9 of the 9 symptoms for at least 2 weeks, with psychomotor change mandatory"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "The mnemonic SIG E CAPS is taught for major depressive disorder. Which set of items does it represent?",
+    "ch": [
+     "Distractibility, Impulsivity, Grandiosity, Flight of ideas, Activity increase, decreased Sleep need, Talkativeness",
+     "Restlessness, fatigue, poor concentration, irritability, muscle tension, and sleep disturbance",
+     "Confusion, ophthalmoplegia, ataxia, anterograde amnesia, and confabulation",
+     "Delusions, hallucinations, disorganized speech, catatonic behavior, and negative symptoms",
+     "Sleep change, Interest loss, Guilt, Energy loss, Concentration impairment, Appetite change, Psychomotor change, Suicidal ideation"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "The module highlights a black-box warning attached to antidepressants. Which group does it identify as requiring especially close early monitoring?",
+    "ch": [
+     "Pregnant patients in the third trimester",
+     "Patients with comorbid chronic pain",
+     "Patients under 25 years of age",
+     "Patients with a first-degree relative who has depression",
+     "Patients over 65 years of age"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient with major depression reports prominent insomnia and a 12-pound unintentional weight loss. Which agent does the module specifically match to this presentation?",
+    "ch": [
+     "Phenelzine",
+     "Nortriptyline",
+     "Fluoxetine",
+     "Bupropion",
+     "Mirtazapine"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A nurse cares for a severely depressed patient started on sertraline 10 days ago. The patient is noticeably more energetic and active but still voices hopelessness. What does the module teach about this?",
+    "ch": [
+     "It is an anticholinergic effect that will fade without any change in monitoring",
+     "Psychomotor retardation can lift before mood improves, so suicide risk may rise and precautions must continue",
+     "It confirms a full therapeutic response, so the dose can now be reduced",
+     "It signals serotonin syndrome and the SSRI should be stopped at once",
+     "It indicates an antidepressant-induced manic switch requiring a mood stabilizer"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "How does the module define treatment-resistant depression?",
+    "ch": [
+     "A PHQ-9 score that remains above 20 at the first follow-up visit",
+     "Failure of at least two adequate antidepressant trials, meaning adequate dose and duration",
+     "Any relapse occurring after the medication has been tapered and stopped",
+     "Failure of a single antidepressant given for two weeks at any dose",
+     "Failure of psychotherapy alone after six months of weekly sessions"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which statement about ECT best reflects the module's teaching?",
+    "ch": [
+     "It is the most effective acute treatment and is indicated for severe or psychotic depression, catatonia, acute suicidality, and pregnancy",
+     "It is a true last resort, permitted only after both esketamine and an MAOI trial have clearly failed",
+     "It is contraindicated during pregnancy because of the risk of inducing fetal seizures and preterm labor",
+     "It is used mainly for mild depression that has not responded to a course of psychotherapy alone",
+     "It works by directly raising synaptic serotonin faster than any SSRI can achieve"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Three weeks after starting an SSRI for what was diagnosed as major depression, a 22-year-old is sleeping 3 hours a night, speaking rapidly, and has spent his tuition money. What does the module direct?",
+    "ch": [
+     "Emergence of mania or hypomania — reassess for bipolar disorder and stop the offending agent",
+     "This is a discontinuation syndrome; restart the SSRI at the original dose and taper slowly",
+     "This is akathisia from the SSRI; add a beta-blocker and continue at the current dose",
+     "This is the expected paradoxical energy surge; continue the SSRI and reassess in two weeks",
+     "This is serotonin syndrome; add cyproheptadine and continue the SSRI at a lower dose"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient who frequently misses doses asks which antidepressant is least likely to cause symptoms if a dose is skipped. Which answer matches the module's pearls?",
+    "ch": [
+     "Venlafaxine, because it has both serotonergic and noradrenergic activity",
+     "Amitriptyline, because its anticholinergic effects buffer withdrawal symptoms",
+     "Phenelzine, because monoamine oxidase inhibition is irreversible",
+     "Fluoxetine, because its long half-life makes it effectively self-tapering",
+     "Paroxetine, because it is highly protein-bound in plasma"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient describes hypersomnia, marked overeating, a heavy leaden feeling in the limbs, and intense sensitivity to perceived rejection. Which specifier and drug class does the module attach to this picture?",
+    "ch": [
+     "Peripartum depression — consider brexanolone or zuranolone",
+     "Melancholic depression — consider esketamine under REMS monitoring",
+     "Atypical depression — consider an MAOI such as phenelzine",
+     "Psychotic depression — consider antipsychotic augmentation or ECT",
+     "Seasonal depression — consider bupropion for its activating profile"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,922 @@
+{
+ "cirrhosis": {
+  "condition": "Cirrhosis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "A patient with cirrhosis develops new ascites. Which event marks decompensated cirrhosis?",
+    "ch": [
+     "Fatigue",
+     "Mild thrombocytopenia",
+     "Spider angiomas",
+     "Ascites",
+     "Elevated AST"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Portal hypertension primarily results from:",
+    "ch": [
+     "Increased intrahepatic resistance",
+     "Portal vein thrombosis alone",
+     "Renal vasoconstriction",
+     "Splenic stenosis",
+     "Increased cardiac output"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Best initial imaging?",
+    "ch": [
+     "ERCP",
+     "MRI",
+     "CT",
+     "PET",
+     "Ultrasound"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "SAAG >=1.1 indicates:",
+    "ch": [
+     "Pancreatic ascites",
+     "Cancer",
+     "Nephrotic syndrome",
+     "TB",
+     "Portal hypertension"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Lactulose goal?",
+    "ch": [
+     "1 stool",
+     "2-3 soft stools/day",
+     "5 stools",
+     "No stools",
+     "Weekly"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "First-line ascites therapy?",
+    "ch": [
+     "Acetazolamide",
+     "Mannitol",
+     "Spironolactone +/- furosemide",
+     "HCTZ",
+     "Bumetanide"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "SBP diagnosed when PMN is:",
+    "ch": [
+     "50",
+     "100",
+     "250",
+     "500",
+     "1000"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Transplant score:",
+    "ch": [
+     "MELD-Na",
+     "BISAP",
+     "SOFA",
+     "APACHE",
+     "Child-Pugh"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Classic encephalopathy sign?",
+    "ch": [
+     "Babinski",
+     "Homans",
+     "Murphy",
+     "Asterixis",
+     "Cullen"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "HCC surveillance?",
+    "ch": [
+     "MRI yearly",
+     "US +/- AFP q6mo",
+     "PET",
+     "None",
+     "CT yearly"
+    ]
+   }
+  ]
+ },
+ "cholecystitis": {
+  "condition": "Cholecystitis & Cholelithiasis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Most gallstones in cholelithiasis are composed of what?",
+    "ch": [
+     "Uric acid stones related to hyperuricemia and gout",
+     "Protein and bile salt plugs formed purely from bile stasis",
+     "Cholesterol stones, which make up roughly 75% of gallstones",
+     "Pigment stones, seen with hemolysis, cirrhosis, or infection",
+     "Calcium oxalate crystals, as in renal stone disease"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Acute calculous cholecystitis results most directly from which event?",
+    "ch": [
+     "A stone lodged in the common bile duct with rising bilirubin",
+     "Bile stasis and ischemia in a fasting, critically ill patient",
+     "Ascending bacterial infection of the intrahepatic bile ducts",
+     "A stone impacted in the cystic duct, causing wall edema and distension",
+     "A stone eroding through the wall into the adjacent small bowel"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "The classic “5 F's” mnemonic for cholelithiasis risk stands for which set of factors?",
+    "ch": [
+     "Fasting, Fistula, Fibrosis, Failure, Fracture",
+     "Female, Fat, Forty, Fertile, Fair",
+     "Family history, Fluid overload, Fever, Fatigue, Fainting",
+     "Fat intolerance, Fetor, Fissure, Fibroma, Frequency",
+     "Fever, Fatigue, Flatulence, Fullness, Flushing"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which examination finding is described as Murphy’s sign?",
+    "ch": [
+     "Pain on passive extension of the right hip with the knee flexed",
+     "Flank ecchymosis appearing two to three days after symptom onset",
+     "A palpable, nontender gallbladder in a jaundiced patient",
+     "Rebound tenderness in the right lower quadrant at McBurney’s point",
+     "Inspiratory arrest on deep RUQ palpation, sensitive for acute cholecystitis"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "RUQ ultrasound is first-line for suspected acute cholecystitis. Which combination of findings confirms it?",
+    "ch": [
+     "A dilated common bile duct containing a filling defect on MRCP",
+     "Diffuse calcification of the gallbladder wall without any stones",
+     "Stones, wall thickening over 3 mm, pericholecystic fluid, sonographic Murphy's sign",
+     "Nonvisualization of the gallbladder after radiotracer administration",
+     "Pneumobilia with small-bowel obstruction on plain radiography"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "When RUQ ultrasound is equivocal, which study is the most specific for acute cholecystitis?",
+    "ch": [
+     "Repeat ultrasound in 24 hours after a fatty meal challenge",
+     "Abdominal plain films looking for a porcelain gallbladder",
+     "Serum lipase to exclude a coexisting gallstone pancreatitis",
+     "ERCP to visualize and clear the common bile duct",
+     "HIDA scan — nonvisualization of the gallbladder confirms cystic duct obstruction"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient has RUQ pain, fever, and jaundice together. Which diagnosis does this triad indicate?",
+    "ch": [
+     "Acalculous cholecystitis in a critically ill patient",
+     "Cholangitis — Charcot's triad, which is not cholecystitis",
+     "Gallstone ileus with pneumobilia and bowel obstruction",
+     "Acute cholecystitis with a positive Murphy’s sign",
+     "Biliary colic triggered by a recent fatty meal"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A stable patient with mild acute cholecystitis has been resuscitated with IV fluids and started on antibiotics. What is the definitive management?",
+    "ch": [
+     "Early laparoscopic cholecystectomy, ideally within 72 hours",
+     "Ursodeoxycholic acid to dissolve the stones over several months",
+     "Percutaneous cholecystostomy as the definitive procedure",
+     "Delayed cholecystectomy after six weeks of oral antibiotics",
+     "ERCP with sphincterotomy and stone extraction from the duct"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A critically ill post-op patient on TPN develops fever and RUQ pain, and ultrasound shows no stones. What is the likely diagnosis?",
+    "ch": [
+     "Acalculous cholecystitis from bile stasis and ischemia",
+     "Biliary colic from a stone that has already passed",
+     "Porcelain gallbladder with malignant transformation",
+     "Mirizzi syndrome from a stone compressing the hepatic duct",
+     "Gallstone ileus from a stone eroding into the small bowel"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient admitted with acute cholecystitis develops markedly rising bilirubin and ALP with a dilated common bile duct. What does this suggest?",
+    "ch": [
+     "Post-cholecystectomy syndrome from retained insufflated gas",
+     "Simple biliary colic that will resolve without intervention",
+     "Emphysematous cholecystitis with crepitus over the wall",
+     "Choledocholithiasis — obtain MRCP or ERCP for duct stones",
+     "Courvoisier's sign of malignant biliary obstruction"
+    ]
+   }
+  ]
+ },
+ "hepatitis": {
+  "condition": "Viral Hepatitis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which virus is transmitted fecal-orally and rarely becomes chronic?",
+    "ch": [
+     "HCV",
+     "HDV",
+     "HAV",
+     "Hepatitis G",
+     "HBV"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which virus requires HBsAg to replicate?",
+    "ch": [
+     "HAV",
+     "HBV",
+     "HCV",
+     "HDV",
+     "HEV"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Acute viral hepatitis lab pattern?",
+    "ch": [
+     "Normal",
+     "CK only",
+     "AST>ALT",
+     "ALT>AST",
+     "Isolated ALP"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Highest chronicity risk?",
+    "ch": [
+     "Neonatal HBV",
+     "HAV+HEV",
+     "Vaccinated adult",
+     "Adult HAV",
+     "Adult HEV"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "First-line chronic HCV therapy?",
+    "ch": [
+     "Ribavirin",
+     "DAAs",
+     "Transplant",
+     "Steroids",
+     "Peg-IFN"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Acute liver failure sign?",
+    "ch": [
+     "Confusion + INR>1.5",
+     "Pruritus",
+     "Nausea",
+     "Fatigue",
+     "ALT elevation"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Long-term complication?",
+    "ch": [
+     "Pancreatitis",
+     "Diverticulitis",
+     "Gallstones",
+     "Appendicitis",
+     "HCC"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "HEV is:",
+    "ch": [
+     "Requires HBV",
+     "Dangerous in pregnancy",
+     "Prevented by HBV vaccine",
+     "Lifelong antivirals",
+     "Usually chronic"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Appropriate counseling?",
+    "ch": [
+     "Bedrest forever",
+     "Lifelong antibiotics",
+     "Drink alcohol",
+     "Avoid vaccines",
+     "Avoid alcohol/hepatotoxins"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "HCV cure confirmed by:",
+    "ch": [
+     "ALT normal",
+     "Negative antibody",
+     "SVR12 undetectable RNA",
+     "Bilirubin",
+     "HBsAg"
+    ]
+   }
+  ]
+ },
+ "appendicitis": {
+  "condition": "Appendicitis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Pain migration is explained by?",
+    "ch": [
+     "Visceral then parietal pain",
+     "Ischemia",
+     "Ileal obstruction",
+     "Nerve compression",
+     "Bacterial invasion"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Most common initiating event?",
+    "ch": [
+     "Embolism",
+     "Viral gastroenteritis",
+     "Luminal obstruction by fecalith",
+     "Cecal volvulus",
+     "Thrombosis"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "LLQ palpation causing RLQ pain?",
+    "ch": [
+     "Obturator",
+     "Rovsing",
+     "Dunphy",
+     "McBurney",
+     "Psoas"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Preferred adult imaging?",
+    "ch": [
+     "X-ray",
+     "MRI",
+     "CT with IV contrast",
+     "Barium",
+     "Colonoscopy"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "US first in?",
+    "ch": [
+     "Children",
+     "Diverticulitis",
+     "Constipation",
+     "Adults",
+     "Elderly"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Suggests perforation?",
+    "ch": [
+     "Mild WBC",
+     "Constipation",
+     "Hunger",
+     "Nausea",
+     "Sudden pain relief then worsening"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Definitive treatment?",
+    "ch": [
+     "Observe",
+     "Delay",
+     "Antibiotics",
+     "Open surgery",
+     "Laparoscopic appendectomy"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Nonoperative candidate?",
+    "ch": [
+     "Shock",
+     "Selected uncomplicated case",
+     "Perforated",
+     "Diffuse peritonitis",
+     "Peritonitis"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Delayed treatment risk?",
+    "ch": [
+     "Cholecystitis",
+     "AAA",
+     "Pancreatitis",
+     "Abscess",
+     "Ulcer"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Clinical pearl?",
+    "ch": [
+     "CT always required",
+     "Normal appetite",
+     "Migratory pain unimportant",
+     "Early treatment reduces complications",
+     "WBC always elevated"
+    ]
+   }
+  ]
+ },
+ "ibd": {
+  "condition": "Inflammatory Bowel Disease",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which description most accurately characterizes ulcerative colitis?",
+    "ch": [
+     "Transmural inflammation occurring anywhere from mouth to anus",
+     "Continuous mucosal inflammation beginning in the rectum and confined to the colon",
+     "Patchy inflammation involving the terminal ileum but sparing the colon",
+     "Granulomatous inflammation limited to the small intestine",
+     "Perianal fistulizing disease with skip lesions"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which complication is most directly explained by the transmural nature of Crohn's disease?",
+    "ch": [
+     "Fistula formation",
+     "Loss of colonic haustra",
+     "Continuous proctitis",
+     "Tenesmus",
+     "Superficial rectal bleeding"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which presentation most strongly favors ulcerative colitis over Crohn's disease?",
+    "ch": [
+     "Intra-abdominal abscess with fever",
+     "Right lower-quadrant pain with a draining perianal fistula",
+     "Weight loss with terminal ileal inflammation",
+     "Bloody diarrhea with urgency and tenesmus",
+     "Recurrent bowel obstruction from a fibrotic stricture"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which test is considered confirmatory for inflammatory bowel disease and helps distinguish ulcerative colitis from Crohn's disease?",
+    "ch": [
+     "Ileocolonoscopy with biopsy",
+     "Fecal calprotectin alone",
+     "CT enterography alone",
+     "Serum ASCA and p-ANCA testing",
+     "Abdominal ultrasound"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient with known IBD presents with worsening diarrhea while receiving immunosuppressive therapy. Which step should occur before escalating immunosuppression?",
+    "ch": [
+     "Schedule colectomy regardless of IBD subtype",
+     "Begin long-term prednisone immediately",
+     "Exclude infection, including Clostridioides difficile",
+     "Order ASCA testing to confirm an acute flare",
+     "Start an antidiarrheal agent before further evaluation"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which statement about corticosteroid therapy in IBD is correct?",
+    "ch": [
+     "Corticosteroids prevent postoperative Crohn's recurrence indefinitely",
+     "Corticosteroids should be stopped abruptly once symptoms improve",
+     "Corticosteroids are preferred for lifelong maintenance",
+     "Corticosteroids are used to induce remission during moderate or severe flares",
+     "Corticosteroids are curative in ulcerative colitis"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient with moderate-to-severe IBD is being evaluated for immunomodulator and biologic therapy. Which assessment set is most appropriate?",
+    "ch": [
+     "ASCA testing alone",
+     "Serum amylase, lipase, and troponin testing",
+     "Colonoscopy only, without infectious screening",
+     "Immediate biologic treatment without laboratory evaluation",
+     "Latent tuberculosis screening, hepatitis B testing, CBC/TPMT assessment, and exclusion of active infection"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A hospitalized patient with ulcerative colitis develops fever, tachycardia, marked abdominal distension, and colonic dilation greater than 6 cm. What is the most appropriate interpretation?",
+    "ch": [
+     "Irritable bowel syndrome requiring reassurance",
+     "Toxic megacolon requiring urgent medical and surgical evaluation",
+     "Mild ulcerative-colitis flare appropriate for outpatient mesalamine alone",
+     "Functional constipation requiring stimulant laxatives",
+     "Crohn's-related terminal ileal stricture"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient with terminal ileal Crohn's disease is at increased risk for which combination?",
+    "ch": [
+     "Vitamin C excess, uric-acid stones, and hypercalcemia",
+     "Iron overload, cholesterol deficiency, and nephrotic syndrome",
+     "Folate toxicity, pancreatic cancer, and cystinuria",
+     "Vitamin A excess, pigment stones, and respiratory alkalosis",
+     "Vitamin B12 deficiency, gallstones, and calcium-oxalate kidney stones"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient has had extensive ulcerative colitis for nine years and also has primary sclerosing cholangitis. Which management principle is most appropriate?",
+    "ch": [
+     "Use ASCA levels as the primary colorectal cancer screening test",
+     "Delay colorectal cancer surveillance until symptoms worsen",
+     "Begin or continue surveillance colonoscopy because risk increases with disease duration, with earlier surveillance warranted in PSC",
+     "Use corticosteroids indefinitely to prevent colorectal cancer",
+     "Reassure the patient that colectomy cannot cure ulcerative colitis"
+    ]
+   }
+  ]
+ },
+ "diverticulitis": {
+  "condition": "Diverticulitis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "What best describes diverticulosis?",
+    "ch": [
+     "Full-thickness ulceration of the colon",
+     "Diffuse colitis",
+     "Inflammation of colonic diverticula",
+     "Perforation of the sigmoid colon",
+     "Mucosal and submucosal outpouchings through the muscular wall without inflammation"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "The most common location of diverticulitis is the:",
+    "ch": [
+     "Cecum",
+     "Ascending colon",
+     "Transverse colon",
+     "Sigmoid colon",
+     "Rectum"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which mechanism most commonly initiates acute diverticulitis?",
+    "ch": [
+     "Viral infection",
+     "Autoimmune vasculitis",
+     "Obstruction of a diverticulum with subsequent microperforation",
+     "Mesenteric ischemia",
+     "Colon cancer invasion"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which combination is the classic presentation of uncomplicated diverticulitis?",
+    "ch": [
+     "RLQ pain, jaundice, diarrhea",
+     "LLQ pain, fever, leukocytosis",
+     "Diffuse abdominal pain with hematemesis",
+     "Painless rectal bleeding",
+     "RUQ pain after meals"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Preferred imaging study?",
+    "ch": [
+     "Plain abdominal radiograph",
+     "Colonoscopy",
+     "Barium enema",
+     "MRI abdomen",
+     "CT abdomen/pelvis with IV contrast"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Characteristic CT finding?",
+    "ch": [
+     "Pericolic fat stranding",
+     "Apple-core lesion",
+     "Pneumoperitoneum only",
+     "Pneumobilia",
+     "Portal venous gas"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Management of a 4-cm pericolic abscess?",
+    "ch": [
+     "Percutaneous drainage plus antibiotics",
+     "Colonoscopy",
+     "High-fiber diet",
+     "Observation",
+     "Emergent colectomy"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which statement about antibiotics is correct?",
+    "ch": [
+     "Antibiotics are never used",
+     "Mild uncomplicated disease in selected immunocompetent patients may be managed without routine antibiotics",
+     "Oral antibiotics are contraindicated",
+     "Antibiotics only for perforation",
+     "Everyone needs IV antibiotics"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which Hinchey stage represents generalized fecal peritonitis?",
+    "ch": [
+     "Ib",
+     "II",
+     "III",
+     "IV",
+     "Ia"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Best long-term recurrence prevention?",
+    "ch": [
+     "Lifelong antibiotics",
+     "Liquid diet forever",
+     "High-fiber diet, exercise, smoking cessation, and weight management",
+     "Annual CT scans",
+     "Surgery after every second episode"
+    ]
+   }
+  ]
+ },
+ "bowel-obstruction": {
+  "condition": "Bowel Obstruction",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which is the first priority in suspected bowel obstruction?",
+    "ch": [
+     "Resuscitation with IV fluids, bowel rest, and decompression",
+     "Laxatives",
+     "Routine antibiotics",
+     "Colonoscopy",
+     "Immediate oral feeding"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "The most common cause of adult small bowel obstruction is:",
+    "ch": [
+     "Crohn disease",
+     "Intussusception",
+     "Hernia",
+     "Volvulus",
+     "Adhesions"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Preferred imaging study?",
+    "ch": [
+     "CT abdomen/pelvis with IV contrast",
+     "Colonoscopy",
+     "Barium enema",
+     "MRI",
+     "Ultrasound"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which finding raises concern for strangulation?",
+    "ch": [
+     "Normal CT",
+     "Passing flatus",
+     "Improving pain",
+     "Rising lactate",
+     "Hyperactive bowel sounds only"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Typical proximal SBO symptom?",
+    "ch": [
+     "Hemoptysis",
+     "Early bilious vomiting",
+     "Massive hematochezia",
+     "Jaundice",
+     "Dysuria"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Perforation risk rises once cecal diameter exceeds approximately:",
+    "ch": [
+     "3 cm",
+     "6 cm",
+     "9-12 cm",
+     "15 cm",
+     "20 cm"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "When is nonoperative management appropriate?",
+    "ch": [
+     "Septic shock",
+     "Peritonitis",
+     "Closed-loop obstruction",
+     "Stable adhesive SBO without ischemia",
+     "Free air"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which medication class should generally be avoided in fixed mechanical obstruction?",
+    "ch": [
+     "Statins",
+     "PPIs",
+     "Prokinetics",
+     "NSAIDs",
+     "Antihistamines"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which complication most directly results from impaired bowel perfusion?",
+    "ch": [
+     "Asthma",
+     "Ischemia",
+     "Migraine",
+     "Pancreatitis",
+     "Nephrolithiasis"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "The best summary principle is:",
+    "ch": [
+     "Antibiotics cure all SBO",
+     "Ignore serial exams",
+     "Delay surgery until pain resolves",
+     "Feed immediately",
+     "Resuscitate, decompress, assess, decide, act early"
+    ]
+   }
+  ]
+ },
+ "cdiff": {
+  "condition": "C. difficile Colitis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which description best characterizes Clostridioides difficile and how it produces colitis?",
+    "ch": [
+     "A Gram-negative rod that invades the small bowel mucosa and elaborates a heat-labile enterotoxin",
+     "A Gram-positive, spore-forming anaerobe that overgrows the colon after antibiotics disrupt the gut microbiota",
+     "A protozoan parasite acquired from contaminated water that adheres to the duodenal brush border",
+     "A Gram-positive coccus that forms a preformed toxin in food and produces vomiting within a few hours",
+     "An enveloped virus that destroys villous enterocytes and produces osmotic diarrhea in institutional outbreaks"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Toxin A and toxin B produce C. difficile colitis primarily by which mechanism?",
+    "ch": [
+     "Activating adenylate cyclase to produce a purely secretory, non-inflammatory watery diarrhea",
+     "Fermenting unabsorbed carbohydrate in the colonic lumen to produce an osmotic diarrhea",
+     "Blocking acetylcholine release at the neuromuscular junction of colonic smooth muscle",
+     "Cleaving mucosal IgA so that luminal flora invade the submucosa and bloodstream directly",
+     "Disrupting the colonocyte cytoskeleton, causing inflammation, fluid secretion, and pseudomembranes"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which infection-control approach is required for a hospitalized patient with C. difficile colitis?",
+    "ch": [
+     "Standard precautions only, because C. difficile spores are not transmitted from patient to patient",
+     "Alcohol-based hand gel after every contact, which is sufficient to kill C. difficile spores",
+     "Airborne precautions with a fitted N95 respirator for everyone who enters the patient's room",
+     "Contact precautions with soap-and-water hand hygiene and bleach (sporicidal) equipment cleaning",
+     "Droplet precautions with a surgical mask and routine quaternary-ammonium surface disinfection"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Per the IDSA/ACG guidance cited in the module, which agent is preferred first-line for an initial episode of C. difficile infection?",
+    "ch": [
+     "Fidaxomicin, a narrow-spectrum macrocyclic agent",
+     "Oral metronidazole 500 mg three times daily",
+     "Bezlotoxumab given as a single-agent infusion",
+     "Intravenous vancomycin with oral rehydration",
+     "Oral vancomycin 125 mg four times daily"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A resident orders intravenous vancomycin for a patient with confirmed C. difficile colitis. Why is this order wrong?",
+    "ch": [
+     "Intravenous vancomycin is active only against the hypervirulent NAP1/BI/027 strain",
+     "Intravenous vancomycin is inactivated by colonic anaerobes before it can bind toxin",
+     "Intravenous vancomycin does not reach the colonic lumen, so it has no activity in C. difficile infection",
+     "Intravenous vancomycin works only when bezlotoxumab is infused at the same time",
+     "Intravenous vancomycin causes an ileus that raises the risk of toxic megacolon"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient with C. difficile infection has a WBC of 22,000 and a creatinine of 1.8 mg/dL, with a normal blood pressure, no ileus, and no colonic dilation. How is this episode classified?",
+    "ch": [
+     "Severe infection",
+     "Fulminant colitis",
+     "Asymptomatic colonization",
+     "Recurrent infection",
+     "Non-severe infection"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Why does the module direct clinicians to avoid loperamide and other antimotility agents in C. difficile colitis?",
+    "ch": [
+     "They bind oral vancomycin in the gut and lower its luminal concentration",
+     "They accelerate transit and wash fidaxomicin out of the colon before it can act",
+     "They impair clearance of toxin, risking ileus and toxic megacolon",
+     "They cause a disulfiram-like reaction when combined with metronidazole",
+     "They stimulate the hypervirulent NAP1/BI/027 strain to shed more spores"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which statement about C. difficile stool testing reflects the diagnostic stewardship the module teaches?",
+    "ch": [
+     "Formed stool should be sent for testing whenever a hospitalized patient has recently received antibiotics",
+     "A test-of-cure should be sent at the end of therapy to document microbiologic eradication before discharge",
+     "A toxin EIA on its own is the confirmatory test of choice in every hospitalized patient who has diarrhea",
+     "Test only symptomatic patients and do not perform a test-of-cure, because PCR stays positive after recovery",
+     "Colonoscopy looking for pseudomembranes is the routine first-line test used to confirm the diagnosis"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which statement best describes the role of bezlotoxumab in C. difficile infection?",
+    "ch": [
+     "An oral macrocyclic antibiotic that replaces vancomycin in the treatment of fulminant colitis",
+     "A live biotherapeutic product that restores microbiota diversity after multiply recurrent disease",
+     "A toxin-binding resin taken with meals to neutralize toxin A within the colonic lumen",
+     "A first-line single agent for the treatment of an initial episode of non-severe infection",
+     "A monoclonal antibody against toxin B used as an adjunct to prevent recurrence in high-risk patients"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "On hospital day 4 of oral vancomycin for C. difficile infection, a patient's stool output falls sharply while the abdomen becomes distended with absent bowel sounds and the blood pressure drops to 84/50. What does this picture most likely represent?",
+    "ch": [
+     "Recurrent infection that will need a tapered vancomycin course started at discharge",
+     "Ileus with fulminant colitis and possible toxic megacolon — a surgical emergency",
+     "An unrelated small-bowel obstruction manageable with nasogastric suction alone",
+     "Expected clinical improvement, since falling stool frequency is the best marker of response",
+     "Vancomycin-induced constipation that should be relieved with a stimulant laxative"
+    ]
+   }
+  ]
+ }
+}

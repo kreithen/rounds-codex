@@ -1,0 +1,577 @@
+{
+ "skin-cancer": {
+  "condition": "Non-Melanoma Skin Cancer (BCC/SCC)",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which description best characterizes basal cell carcinoma on skin examination?",
+    "ch": [
+     "A firm, scaly, hyperkeratotic and often tender ulcerated nodule on sun-exposed skin",
+     "A pearly, translucent papule with rolled borders and telangiectasias, sometimes centrally ulcerated",
+     "A chronic non-healing ulcer arising within an old burn scar on the lower leg",
+     "A well-demarcated scaly plaque representing full-thickness in-situ change",
+     "A rough, sandpaper-like erythematous macule that is felt more easily than it is seen"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which statement correctly contrasts the metastatic behavior of BCC and cutaneous SCC?",
+    "ch": [
+     "Both BCC and SCC metastasize in roughly 2-5% of cases and are therefore managed identically",
+     "SCC essentially never metastasizes while BCC spreads to regional nodes in most patients",
+     "BCC metastasizes in about 2-5% of cases and SCC in fewer than 0.1% of cases",
+     "Neither tumor is capable of metastasis, so neither one requires any risk stratification",
+     "BCC metastasizes rarely (<0.1%) but is locally destructive, whereas SCC metastasizes in roughly 2-5% of cases"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Actinic keratosis is best described as which of the following?",
+    "ch": [
+     "A rough, sandpaper-like erythematous macule on the precursor spectrum leading to SCC",
+     "A benign lesion with no relationship to skin cancer that requires no treatment at all",
+     "Squamous cell carcinoma in situ, which carries the specific name Bowen disease",
+     "A pearly papule showing arborizing vessels when examined with dermoscopy",
+     "A locally destructive tumor driven by PTCH1 mutation in the Hedgehog pathway"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A 68-year-old has a biopsy-proven basal cell carcinoma with ill-defined borders on the nasal ala. Which treatment does the module identify as preferred?",
+    "ch": [
+     "Cryotherapy to the clinically apparent border",
+     "Vismodegib, a Hedgehog pathway inhibitor",
+     "Electrodesiccation and curettage of the visible lesion",
+     "Mohs micrographic surgery for complete margin control",
+     "Topical 5-fluorouracil applied as field therapy"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A skin biopsy shows basaloid nests with peripheral palisading and retraction clefting. What is the diagnosis?",
+    "ch": [
+     "Marjolin ulcer arising in a chronic burn scar",
+     "Squamous cell carcinoma, based on keratin pearls",
+     "Actinic keratosis, the precursor spectrum lesion",
+     "Bowen disease, squamous cell carcinoma in situ",
+     "Basal cell carcinoma, most often the nodular subtype"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient starting topical 5-fluorouracil for actinic keratoses asks what to expect. Which counseling point does the module specify?",
+    "ch": [
+     "It works by blocking the Hedgehog pathway and causes muscle spasms and dysgeusia",
+     "It is appropriate first-line therapy for a nodular basal cell carcinoma on the nose",
+     "Brisk erythema and erosion are an expected therapeutic reaction, and the treated area needs sun protection",
+     "The drug is safe in pregnancy and requires no additional precautions",
+     "Any redness means an allergic reaction and the cream should be stopped at once"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which set of features identifies a cutaneous squamous cell carcinoma as high-risk and drives workup or adjuvant therapy?",
+    "ch": [
+     "A pearly translucent appearance with rolled borders and arborizing vessels on dermoscopy",
+     "Palmar pits, jaw keratocysts and multiple basal cell carcinomas of early onset",
+     "Size >2 cm, depth >2 mm, poor differentiation, perineural invasion, ear or lip location, immunosuppression, recurrence",
+     "Sandpaper-like texture across a broad field of erythematous macules on a bald scalp",
+     "Defective nucleotide excision repair with severe photosensitivity beginning in childhood"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A kidney transplant recipient on chronic immunosuppression has a rapidly enlarging, ulcerating squamous cell carcinoma on the ear with new numbness in the area. Which approach matches the module?",
+    "ch": [
+     "Treat with cryotherapy because the ear is a cosmetically sensitive site that should be spared surgery",
+     "Treat this as high-risk SCC — new numbness suggests perineural invasion — and consider reducing immunosuppression with aggressive surveillance",
+     "Reassure him that SCC in transplant recipients behaves like SCC in anyone else and simply observe the lesion",
+     "Begin topical imiquimod, since an immune modulator is the logical choice for invasive disease in this setting",
+     "Start anti-PD-1 immunotherapy immediately as first-line therapy without regard to his allograft"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 22-year-old with multiple basal cell carcinomas, jaw keratocysts and palmar pits is offered treatment options. Why does the module caution against radiation therapy for him?",
+    "ch": [
+     "Radiation predictably causes muscle spasms, dysgeusia and alopecia in patients with this syndrome",
+     "Radiation would provoke immune-related adverse events and put a transplanted allograft at risk of rejection",
+     "Radiation provides no histologic margin confirmation, so it is never an acceptable option for any basal cell carcinoma",
+     "Radiation should be avoided in young patients and in genetic syndromes such as basal cell nevus syndrome because of secondary tumor risk",
+     "Radiation is a recognized teratogen and demands the same strict contraception required with Hedgehog inhibitors"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "You are presenting a patient with a 1 cm pearly papule with a rolled border and telangiectasias on the nose. What does the module say to state next?",
+    "ch": [
+     "That you are most concerned about a nodular BCC and biopsy is definitive, then recommend Mohs for this facial site",
+     "That empiric topical 5-fluorouracil should be started and the lesion reassessed in three months",
+     "That dermoscopy showing arborizing vessels has established the diagnosis and no biopsy is needed",
+     "That imaging and laboratory studies should be ordered to stage the lesion before any treatment",
+     "That a sentinel lymph node biopsy should be arranged given the metastatic risk of this lesion"
+    ]
+   }
+  ]
+ },
+ "urticaria": {
+  "condition": "Urticaria (Hives)",
+  "questions": [
+   {
+    "n": 1,
+    "q": "What is the diagnostic hallmark of ordinary urticaria?",
+    "ch": [
+     "Dusky targetoid macules with mucosal erosions and a positive Nikolsky sign",
+     "Painful, burning lesions that persist for several days and leave bruising behind",
+     "Migratory, intensely pruritic wheals in which each individual lesion resolves within 24 hours",
+     "Deep, non-pruritic swelling of the lips and tongue occurring without any wheals",
+     "Fixed, sharply demarcated erythematous plaques confined to the site of contact"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "By the definition used in this module, urticaria is called chronic when wheals recur most days for at least how long?",
+    "ch": [
+     "24 hours",
+     "1 week",
+     "4 weeks",
+     "6 weeks",
+     "6 months"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which mechanism produces the wheals of urticaria?",
+    "ch": [
+     "Mast-cell and basophil degranulation releasing histamine, causing superficial dermal edema",
+     "Bradykinin accumulation producing deep swelling without itch or wheals",
+     "Cytotoxic T cells releasing granulysin and causing keratinocyte apoptosis",
+     "Direct chemical injury to keratinocytes from an external irritant agent",
+     "Leukocytoclastic vasculitis of small dermal vessels with immune complex deposition"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient with chronic spontaneous urticaria asks which medication should form the backbone of her therapy. What does the module recommend first-line?",
+    "ch": [
+     "Montelukast, a leukotriene receptor antagonist, as initial monotherapy",
+     "A scheduled second-generation H1 antihistamine such as cetirizine, loratadine or fexofenadine",
+     "First-generation diphenhydramine taken only on the days when itching flares",
+     "A short prednisone burst continued indefinitely as maintenance therapy",
+     "Famotidine used as single-agent H2 receptor blockade"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A woman with chronic spontaneous urticaria remains symptomatic on a standard dose of cetirizine. According to the guideline ladder in the module, what is the next step?",
+    "ch": [
+     "Add a systemic corticosteroid for long-term maintenance control",
+     "Switch to hydroxyzine because sedating agents control wheals better",
+     "Up-dose the second-generation antihistamine to as much as 4x the standard dose",
+     "Start omalizumab immediately before adjusting the antihistamine dose",
+     "Order a broad allergy panel and defer any change in her therapy"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which set of findings should prompt a skin biopsy for urticarial vasculitis rather than reassurance about ordinary hives?",
+    "ch": [
+     "Lesions lasting more than 24 hours that are painful or burning and resolve with purpura",
+     "Deep swelling of the lips without wheals in a patient taking an ACE inhibitor",
+     "Blanching wheals with pale centers that move from site to site each day",
+     "Small punctate wheals appearing with exercise, heat, or emotional sweating",
+     "A linear wheal that appears within minutes of stroking the skin"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient reports linear welts wherever her skin is scratched or where a bag strap presses. Which office test does the module list to confirm this form?",
+    "ch": [
+     "Skin-prick testing with a standard broad aeroallergen panel",
+     "Patch testing applied to the back and read at 48 and 96 hours",
+     "Measuring serum complement levels and inflammatory markers",
+     "Applying an ice cube to the forearm and observing for a wheal",
+     "Stroking the skin to elicit a linear wheal, confirming dermographism"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A man develops hives after a new antibiotic and now has wheezing, vomiting and light-headedness. What is the immediate priority?",
+    "ch": [
+     "Give IV diphenhydramine and observe the response",
+     "Start a scheduled second-generation H1 antihistamine",
+     "Administer a prednisone burst as the primary intervention",
+     "Arrange outpatient omalizumab as soon as possible",
+     "Give IM epinephrine into the anterolateral thigh"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient on lisinopril has isolated lip and tongue swelling with no wheals and no itch, and has not improved with antihistamines. What does the module say explains this?",
+    "ch": [
+     "Urticarial vasculitis, which requires a skin biopsy and complement levels",
+     "Bradykinin-mediated angioedema, which does not respond to antihistamines or epinephrine the way histaminergic disease does",
+     "Histamine acting at H1 receptors, so the antihistamine should simply be up-dosed to four times the standard dose",
+     "Chronic spontaneous urticaria of an autoimmune type that will respond to add-on omalizumab",
+     "Cholinergic urticaria triggered by heat, exercise, and emotional sweating"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient with refractory chronic spontaneous urticaria is starting omalizumab. Which monitoring point does the module emphasize?",
+    "ch": [
+     "Taper the drug over two to three weeks to prevent rebound urticaria",
+     "Check a broad food allergy panel before each subcutaneous dose",
+     "Expect a boxed warning for neuropsychiatric events and screen for mood change",
+     "Observe the patient after the subcutaneous injection because of anaphylaxis risk",
+     "Monitor renal function and blood pressure at every visit while on therapy"
+    ]
+   }
+  ]
+ },
+ "sjs-ten": {
+  "condition": "Stevens-Johnson Syndrome / TEN",
+  "questions": [
+   {
+    "n": 1,
+    "q": "How are SJS, SJS/TEN overlap, and TEN distinguished from one another?",
+    "ch": [
+     "By the depth of the split, subcorneal in SJS and full thickness in TEN",
+     "By the SCORTEN score, with TEN defined as a score greater than four",
+     "By body surface area of epidermal detachment: SJS <10%, overlap 10-30%, TEN >30%",
+     "By the number of mucosal surfaces involved, with TEN requiring three or more sites",
+     "By whether the trigger is a drug, meaning TEN, or an infection, meaning SJS"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which immunologic mechanism underlies SJS/TEN?",
+    "ch": [
+     "Autoantibodies against desmosomal proteins with positive direct immunofluorescence",
+     "Type IV T-cell-mediated cytotoxicity with granulysin driving keratinocyte apoptosis",
+     "Immune complex deposition causing leukocytoclastic vasculitis of dermal vessels",
+     "Direct chemical injury to keratinocytes from an exogenous irritant agent",
+     "Type I IgE-mediated mast-cell degranulation with histamine release"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which drug does the module name as the single most common cause of SJS/TEN worldwide?",
+    "ch": [
+     "Lamotrigine, one of the anticonvulsant culprits",
+     "An oxicam NSAID such as piroxicam",
+     "Carbamazepine, especially in HLA-B*15:02 carriers",
+     "Allopurinol, often started for asymptomatic hyperuricemia",
+     "Trimethoprim-sulfamethoxazole, a sulfonamide antibiotic"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient develops painful dusky macules and oral erosions. Which exposure window does the module use to identify the culprit drug?",
+    "ch": [
+     "Only after the drug has already been stopped",
+     "Within minutes to two hours of the first dose",
+     "Within 24 to 48 hours of starting the drug",
+     "Only after continuous use for more than one year",
+     "4 to 28 days after the drug was started"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A child has diffuse superficial peeling with a positive Nikolsky sign but no mucosal involvement, and biopsy shows a subcorneal split. What does the module identify?",
+    "ch": [
+     "Staphylococcal scalded skin syndrome, which splits subcorneally and spares mucosa",
+     "Toxic epidermal necrolysis with more than 30% detachment",
+     "SJS/TEN overlap with 10-30% detachment",
+     "Erythema multiforme major from an infectious trigger",
+     "An autoimmune blistering disease with positive direct immunofluorescence"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient with TEN triggered by trimethoprim-sulfamethoxazole has wound care orders written. Which order should you question?",
+    "ch": [
+     "Silver sulfadiazine applied to the denuded areas",
+     "Frequent ophthalmic lubrication with an urgent ophthalmology consult",
+     "Pre-medication with opioid analgesia before dressing changes",
+     "Nanocrystalline silver non-adherent dressings",
+     "Petrolatum-based non-stick dressings"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "On rounds you are asked why you favor early cyclosporine over late systemic corticosteroids in TEN. Which answer matches the module?",
+    "ch": [
+     "Cyclosporine has no laboratory monitoring requirements at all, which makes it the safer choice in any patient",
+     "IVIG has demonstrated clear superiority over both agents in trials and should be substituted for either one",
+     "Corticosteroids are effective only in staphylococcal scalded skin syndrome and have no role at all in necrolysis",
+     "Cyclosporine is increasingly favored as first-line adjunctive therapy, while steroids may raise infection and mortality risk if given late or prolonged",
+     "Systemic steroids are contraindicated in this setting because they are teratogenic, whereas cyclosporine carries no such risk"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which combination of findings would worsen a TEN patient’s SCORTEN and prompt escalation of care?",
+    "ch": [
+     "A urine output at the target set for fluid resuscitation",
+     "Age under 40 with a normal bicarbonate and a heart rate of 80",
+     "A negative Nikolsky sign with fewer than two mucosal sites involved",
+     "Negative direct immunofluorescence on the diagnostic skin biopsy",
+     "Rising BUN, a heart rate above 120, and a falling bicarbonate"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "How does fluid management in TEN differ from that of a thermal burn of similar body surface area?",
+    "ch": [
+     "Requirements are identical, so standard burn formulas can be applied unchanged",
+     "TEN requires substantially more fluid because losses through denuded skin are greater",
+     "TEN requires less fluid than a thermal burn, and over-resuscitation risks pulmonary edema",
+     "Fluids should be withheld entirely and losses replaced by the enteral route",
+     "Fluid volume is dictated by the SCORTEN score rather than by clinical response"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient recovering from carbamazepine-induced SJS is being prepared for discharge. Which two measures does the module emphasize?",
+    "ch": [
+     "Sentinel lymph node sampling of the involved regions, followed by lifelong scheduled antihistamine therapy",
+     "Lifelong avoidance of the culprit and cross-reactive drugs with a medical alert bracelet, plus HLA-B*15:02 screening to prevent future cases",
+     "Cautiously restart the drug at a lower dose under close observation, with weekly laboratory monitoring thereafter",
+     "Lifelong avoidance of all live vaccines, with a repeat diagnostic skin biopsy arranged in three months",
+     "Indefinite systemic corticosteroids at a maintenance dose, together with strict avoidance of all NSAIDs"
+    ]
+   }
+  ]
+ },
+ "contact-dermatitis": {
+  "condition": "Contact Dermatitis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement correctly describes irritant contact dermatitis?",
+    "ch": [
+     "It is the most common form, a non-immune direct cytotoxic injury that anyone exposed to enough irritant develops",
+     "It is an IgE-mediated type I reaction best confirmed with skin-prick testing and serum IgE",
+     "It is a type IV delayed cell-mediated hypersensitivity that requires prior sensitization to the agent",
+     "It accounts for roughly 20% of cases and develops only in individuals who have been sensitized",
+     "It is the form confirmed by patch testing applied to the back and read at 48 and 72-96 hours"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which bedside discriminator does the module give for separating allergic from irritant contact dermatitis?",
+    "ch": [
+     "Allergic disease burns immediately on contact while irritant disease itches only after several days have passed",
+     "Irritant disease burns and is sharply demarcated; allergic disease itches and peaks at 24-72 hours, spreading beyond the contact site",
+     "Only allergic disease produces vesicles, because irritant disease never blisters, weeps, or becomes eroded",
+     "Irritant disease requires prior sensitization to the agent whereas allergic disease can occur on first exposure",
+     "Allergic disease is confirmed by a KOH preparation taken from the advancing edge of the lesion"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "A hiker develops intensely itchy linear streaks of vesicles on his forearms two days after clearing brush. What does this pattern indicate?",
+    "ch": [
+     "Nickel allergy from a metal watch strap",
+     "Irritant dermatitis from repetitive wet work",
+     "Poison ivy or oak urushiol contact, a type IV hypersensitivity",
+     "Neomycin sensitization at a healing wound edge",
+     "Para-phenylenediamine reaction from hair dye"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which statement about patch testing matches the module?",
+    "ch": [
+     "Reactions are graded on the SCORTEN scale from one through seven",
+     "Allergens are applied to the back, read at 48 h and again at 72-96 h, and positives must be clinically relevant",
+     "A single reading taken at 24 hours after application is sufficient to capture all reactions",
+     "It is the confirmatory gold standard for diagnosing irritant contact dermatitis",
+     "A positive reaction is clinically relevant by definition and requires no correlation with exposure"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient has allergic contact dermatitis of the eyelids from a new cosmetic. Which choice matches the module’s site-based approach?",
+    "ch": [
+     "High-potency clobetasol applied twice daily to the eyelids until the rash clears",
+     "A five-day course of oral prednisone stopped abruptly without any taper",
+     "Oral diphenhydramine used as the sole treatment for the eruption",
+     "Dupilumab started immediately as the initial steroid-sparing measure",
+     "A topical calcineurin inhibitor such as tacrolimus, with low-potency steroid if a steroid is used"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A parent asks whether her child’s poison ivy blisters will spread the rash to siblings. What is the correct teaching?",
+    "ch": [
+     "Spread indicates a secondary bacterial infection requiring oral antibiotics",
+     "The blister fluid is contagious, so the child should be isolated until the vesicles dry",
+     "Vesicle fluid does not spread the rash; new lesions come from residual urushiol or delayed absorption",
+     "New lesions prove an ongoing type I IgE-mediated allergy and require prick testing",
+     "The rash spreads only if the child scratches, so antihistamines alone will stop it"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient’s minor laceration keeps worsening with increasing itch and vesicles at the wound edges while she applies triple antibiotic ointment. What should you suspect?",
+    "ch": [
+     "Cellulitis requiring oral antibiotic therapy",
+     "Irritant dermatitis from the wound dressing adhesive",
+     "Tinea, which a KOH preparation would confirm",
+     "Allergic contact dermatitis to neomycin or bacitracin, frequent sensitizers",
+     "A phototoxic reaction at a sun-exposed site"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient with extensive poison ivy involving the face is given oral prednisone. What does the module say about the course?",
+    "ch": [
+     "Pair it with a KOH prep before every dose adjustment",
+     "Give a single dose and rely on topical steroids thereafter",
+     "Continue it indefinitely to prevent recurrence after future exposure",
+     "Taper over 2-3 weeks, because short courses cause rebound",
+     "Avoid systemic corticosteroids entirely in contact dermatitis"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient being treated for presumed contact dermatitis now has oral erosions, targetoid lesions and skin sloughing. What does the module direct you to consider?",
+    "ch": [
+     "SJS/TEN, erythema multiforme or angioedema rather than simple contact dermatitis",
+     "A stronger topical corticosteroid applied to the affected areas",
+     "Extended patch testing to identify additional relevant allergens",
+     "A KOH preparation to exclude a dermatophyte infection",
+     "A trial of a topical calcineurin inhibitor for the mucosal lesions"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A machinist with chronic hand dermatitis gets only partial relief from topical steroids. Which intervention does the module identify as the definitive one?",
+    "ch": [
+     "Increasing the topical corticosteroid potency indefinitely and continuing it long-term",
+     "Adding a sedating oral antihistamine at bedtime for symptomatic relief",
+     "Starting cyclosporine as the first-line treatment for his hand disease",
+     "Confirming the diagnosis with serum IgE and skin-prick testing",
+     "Identifying and avoiding the allergen or irritant, with barrier repair using emollients and protective gloves"
+    ]
+   }
+  ]
+ },
+ "acne": {
+  "condition": "Acne Vulgaris",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which set of factors does the module identify as the pathophysiology of acne vulgaris?",
+    "ch": [
+     "Follicular hyperkeratinization, androgen-driven sebum overproduction, Cutibacterium acnes colonization, and inflammation",
+     "A type IV delayed hypersensitivity reaction to a sebaceous antigen with memory T-cell activation",
+     "Mast-cell histamine release producing follicular edema, wheals, and intense pruritus",
+     "Cumulative ultraviolet damage to keratinocytes driving p53 pyrimidine-dimer mutation",
+     "Autoantibodies directed at the sebaceous gland with positive direct immunofluorescence"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "What accounts for the dark color of an open comedone (blackhead)?",
+    "ch": [
+     "Trapped dirt that responds to vigorous scrubbing",
+     "Post-inflammatory hyperpigmentation from prior nodules",
+     "Oxidized keratin and melanin within the open follicular plug",
+     "Hemosiderin deposition from ruptured follicular vessels",
+     "Minocycline-induced pigment deposition in the dermis"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "A teenager has purely comedonal acne with blackheads and whiteheads and no inflammatory lesions. What is first-line therapy?",
+    "ch": [
+     "Topical clindamycin used as single-agent monotherapy",
+     "A topical retinoid such as tretinoin or adapalene, applied at night",
+     "Spironolactone combined with an oral contraceptive pill",
+     "Oral doxycycline given for a three-to-four month course",
+     "Oral isotretinoin under iPLEDGE with monthly pregnancy testing"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Why does the module insist that every topical or oral antibiotic for acne be paired with benzoyl peroxide?",
+    "ch": [
+     "Benzoyl peroxide replaces the need to limit oral antibiotic courses in time",
+     "Benzoyl peroxide neutralizes the photosensitivity caused by the tetracyclines",
+     "Benzoyl peroxide kills C. acnes without promoting resistance, so pairing prevents antibiotic resistance",
+     "Benzoyl peroxide is required to keep the antibiotic from bleaching fabrics and hair",
+     "Benzoyl peroxide is needed to protect against pseudotumor cerebri"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A 7-year-old is brought in with inflammatory acne and the family asks about doxycycline. Which concern applies?",
+    "ch": [
+     "Tetracyclines must be paired with a combined oral contraceptive",
+     "Tetracyclines cause potassium retention requiring serial monitoring",
+     "Tetracyclines are comedolytic and normalize follicular keratinization",
+     "Tetracyclines are contraindicated in pregnancy and in children under 8 because of tooth staining",
+     "Tetracyclines require iPLEDGE enrollment and monthly pregnancy tests"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A 24-year-old woman has sudden severe acne along the jawline with hirsutism and irregular menses. What does the module advise?",
+    "ch": [
+     "Reassure her that adult-onset acne requires no additional laboratory evaluation",
+     "Begin oral isotretinoin immediately without any baseline laboratory testing",
+     "Order patch testing to identify a cosmetic allergen as the underlying cause",
+     "Perform a KOH preparation of a pustule to exclude fungal folliculitis",
+     "Screen for hyperandrogenism and PCOS with total and free testosterone and DHEA-S, considering LH/FSH"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient on isotretinoin develops a severe headache with blurred vision. Which combination does the module warn causes this, and what should be done?",
+    "ch": [
+     "Isotretinoin plus spironolactone; check a potassium level and continue",
+     "Isotretinoin plus a tetracycline causes pseudotumor cerebri; stop and evaluate immediately",
+     "Isotretinoin plus a topical retinoid; reduce the topical to alternate nights",
+     "Isotretinoin plus a combined oral contraceptive; discontinue the contraceptive",
+     "Isotretinoin plus benzoyl peroxide; stop the benzoyl peroxide only"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "On rounds you are asked why isotretinoin can produce durable remission when other agents cannot. What is the module’s reasoning?",
+    "ch": [
+     "It permanently eradicates C. acnes from the follicle through a purely bactericidal mechanism",
+     "It blocks androgen receptors in the sebaceous gland in the same way that spironolactone does",
+     "It acts purely as a comedolytic agent and requires no other mechanism to be effective",
+     "Its long half-life maintains therapeutic drug levels in the skin for years after the course ends",
+     "It uniquely hits all four pathogenic factors — shrinking sebaceous glands, normalizing keratinization, reducing C. acnes, and anti-inflammatory action"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A teenager develops abrupt ulcerating hemorrhagic nodules with fever, arthralgia and leukocytosis. What does the module call this and how is it handled?",
+    "ch": [
+     "Gram-negative folliculitis; stop all antibiotics and observe",
+     "Nodulocystic acne; begin isotretinoin at the usual starting dose",
+     "Perioral dermatitis; switch to a low-potency topical steroid",
+     "Acne fulminans, a dermatologic emergency requiring systemic steroids",
+     "Rosacea flare; start topical metronidazole and avoid triggers"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient starting a topical retinoid returns after three weeks frustrated that her skin is drier and looks worse. Which counseling matches the module?",
+    "ch": [
+     "Topical results take 8-12 weeks and initial dryness and purging are expected, so continue and use sunscreen",
+     "She should scrub her face more vigorously to clear the blackheads more quickly",
+     "She should switch to applying the retinoid in the morning instead, to reduce dryness",
+     "The worsening indicates an allergic reaction and she needs patch testing to confirm it",
+     "The retinoid has failed at three weeks and should be replaced with an oral antibiotic"
+    ]
+   }
+  ]
+ }
+}

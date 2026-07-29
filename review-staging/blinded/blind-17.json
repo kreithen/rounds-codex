@@ -1,0 +1,922 @@
+{
+ "breast-cancer": {
+  "condition": "Breast Cancer",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which histologic type accounts for most breast cancers?",
+    "ch": [
+     "Invasive ductal carcinoma (no special type), roughly 70-80% of cases",
+     "Squamous cell carcinoma arising from the overlying skin of the nipple",
+     "Sarcoma arising from the fibrous stroma between the lobules",
+     "Invasive lobular carcinoma, the commonest invasive subtype by a wide margin",
+     "Lobular carcinoma in situ, a true precursor that has breached the basement membrane"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "How do ductal carcinoma in situ (DCIS) and lobular carcinoma in situ (LCIS) differ?",
+    "ch": [
+     "Both have breached the basement membrane and are therefore staged as invasive",
+     "DCIS is defined by HER2 amplification and LCIS by estrogen-receptor positivity",
+     "Neither lesion is visible on mammography, so both are found only at mastectomy",
+     "DCIS is a non-invasive lesion that has not breached the basement membrane, while LCIS is a risk marker rather than a true precursor",
+     "DCIS is only a risk marker, while LCIS is the true precursor of invasive cancer"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "A biopsy is reported as ER-negative, PR-negative, and HER2-negative. What does that mean for treatment?",
+    "ch": [
+     "It is endocrine-responsive, so a CDK4/6 inhibitor plus endocrine therapy is standard",
+     "It is triple-negative disease, with no targeted receptor therapy and a worse prognosis",
+     "It is hormone-driven and should be treated with tamoxifen or an aromatase inhibitor",
+     "It is HER2-amplified and should receive trastuzumab with pertuzumab and chemotherapy",
+     "It cannot be treated with any systemic therapy and is managed with surgery alone"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which screening strategy does the module cite for breast cancer?",
+    "ch": [
+     "Mammography as the primary tool, with USPSTF biennial screening from ages 40 to 74",
+     "No screening until a palpable mass appears, then a diagnostic mammogram",
+     "Annual mammography starting at age 25 for all women regardless of their risk",
+     "Clinical breast examination alone until age 50, then mammography every five years",
+     "Breast MRI as the primary screening tool for women at average risk"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Why is core needle biopsy, rather than fine-needle aspiration, required to diagnose breast cancer?",
+    "ch": [
+     "Because it removes the entire lesion and therefore serves as definitive treatment",
+     "Because it establishes the TNM stage without any need for further imaging",
+     "Because it is the only breast biopsy that can be performed under ultrasound guidance",
+     "Because FNA cannot reach lesions that were detected only on screening mammography",
+     "Because it preserves architecture for histologic grade and for ER, PR, and HER2 testing"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A premenopausal woman with ER-positive breast cancer is starting tamoxifen. Which counseling point is most important?",
+    "ch": [
+     "Monitor complete blood counts for neutropenia and obtain an ECG before each cycle",
+     "The drug is a vesicant, so the infusion site must be watched for extravasation",
+     "Report abnormal vaginal bleeding or leg swelling, given the endometrial cancer and VTE risk",
+     "Expect arthralgias and accelerated bone loss, so bone density will be monitored",
+     "Serial echocardiograms are required because the drug lowers ejection fraction"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which monitoring is required before and during trastuzumab therapy for HER2-positive breast cancer?",
+    "ch": [
+     "Serial complete blood counts, since neutropenia is the dose-limiting toxicity",
+     "Baseline and serial echocardiography or MUGA for a decline in ejection fraction",
+     "Baseline and serial bone density scans to detect accelerated bone loss",
+     "Serial endometrial biopsies because of the risk of uterine malignancy",
+     "Baseline and periodic nerve conduction studies for sensory neuropathy"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A woman has a rapidly enlarging, erythematous, warm, edematous breast with peau d'orange. What is the concern?",
+    "ch": [
+     "Ductal carcinoma in situ, which is confined and carries an excellent prognosis",
+     "Lymphedema of the breast following prior axillary surgery on that side",
+     "Acute mastitis, which should be treated with oral antibiotics and warm compresses",
+     "A benign fibrocystic change that fluctuates with the menstrual cycle",
+     "Inflammatory breast cancer, aggressive clinical stage III/IV disease, not an infection"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient has just undergone axillary lymph node dissection. Which nursing measure protects the affected arm?",
+    "ch": [
+     "Draw all laboratory samples from that arm in order to spare the unoperated side",
+     "Delay reporting any arm swelling until the surgical drains have been removed",
+     "Immobilize the arm in a sling and avoid all movement of it for six weeks",
+     "Use no blood pressure cuffs, venipunctures, or IVs on that side, and teach lymphedema prevention",
+     "Apply ice to the axilla continuously and restrict the patient's oral fluid intake"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A 58-year-old woman has a node-negative, ER-positive, HER2-negative early breast cancer. Which tool helps decide whether she benefits from chemotherapy?",
+    "ch": [
+     "A bone scan and PET to search for occult metastatic disease",
+     "BI-RADS scoring of the diagnostic mammogram and ultrasound",
+     "A genomic assay such as the Oncotype DX recurrence score",
+     "Sentinel lymph node biopsy performed after completion of surgery",
+     "HER2 testing by FISH, repeated on the surgical specimen"
+    ]
+   }
+  ]
+ },
+ "colorectal-cancer": {
+  "condition": "Colorectal Cancer",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which sequence describes how most colorectal cancers develop?",
+    "ch": [
+     "Direct spread of a gastric adenocarcinoma along the wall of the transverse colon",
+     "Chronic mucosal ischemia progressing directly to an invasive squamous carcinoma",
+     "Hyperplasia of neuroendocrine cells progressing to a carcinoid tumor of the colon",
+     "Malignant transformation of a submucosal lipoma into an invasive adenocarcinoma",
+     "Normal mucosa to adenomatous polyp to invasive cancer, driven by APC, KRAS, and TP53"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which test is the gold standard for confirming colorectal cancer?",
+    "ch": [
+     "CT of the chest, abdomen, and pelvis with intravenous contrast",
+     "Colonoscopy with biopsy, which also removes synchronous polyps",
+     "Carcinoembryonic antigen (CEA) drawn at the time of presentation",
+     "Barium enema demonstrating a napkin-ring filling defect",
+     "Endorectal ultrasound of the distal rectum and perirectal tissue"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "At what age should colorectal cancer screening begin in average-risk adults, and at what colonoscopy interval?",
+    "ch": [
+     "Age 45, with colonoscopy every 10 years",
+     "Age 30, with colonoscopy every 3 years",
+     "Age 40, with colonoscopy every 5 years",
+     "Age 50, with colonoscopy every 15 years",
+     "Age 60, with a single lifetime colonoscopy"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "How do right-sided and left-sided colorectal tumors typically differ in presentation?",
+    "ch": [
+     "Left-sided tumors metastasize only to bone, while right-sided tumors spare the liver",
+     "Right-sided tumors bleed occultly and cause iron-deficiency anemia; left-sided tumors constrict and obstruct",
+     "Right-sided tumors obstruct early, while left-sided tumors present with iron-deficiency anemia",
+     "Both sides present identically, with painless rectal bleeding and no anemia at all",
+     "Right-sided tumors cause pencil-thin stools, while left-sided tumors stay bulky and silent"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "What is the correct use of carcinoembryonic antigen (CEA) in colorectal cancer?",
+    "ch": [
+     "It replaces surveillance colonoscopy once the primary tumor has been resected",
+     "It is the screening test of choice for average-risk adults from age 45 onward",
+     "It establishes the diagnosis whenever it is above the laboratory reference range",
+     "It is a prognostic and surveillance marker — a rising post-operative level suggests recurrence",
+     "It determines whether anti-EGFR therapy may be used in metastatic disease"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A CT colonography report describes a circumferential constricting annular filling defect. What is this classically called, and what does it signify?",
+    "ch": [
+     "A right-sided bulky mass that bleeds occultly without ever obstructing",
+     "A napkin-ring stricture caused by Crohn's disease of the terminal ileum",
+     "An apple-core lesion, signalling an obstructing colorectal adenocarcinoma, typically left-sided",
+     "A lead-pipe colon produced by long-standing ulcerative colitis",
+     "A pedunculated adenomatous polyp that is still confined to the mucosa"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient starting FOLFOX asks what to expect. Which teaching point is specific to oxaliplatin?",
+    "ch": [
+     "Avoid cold drinks and cold exposure, which trigger a peripheral sensory neuropathy",
+     "Expect a cholinergic diarrhea within minutes of the infusion starting",
+     "Take the oral tablets twice daily and watch for hand-foot syndrome",
+     "Report an acneiform rash, which correlates with response to the drug",
+     "Expect mucositis and diarrhea, and be screened for DPD deficiency first"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A 68-year-old man is found to have iron-deficiency anemia on routine labs with no overt bleeding. What is the next step?",
+    "ch": [
+     "Start oral iron replacement and recheck the hemoglobin in three months",
+     "Order a CEA level to determine whether an occult malignancy is present",
+     "Obtain a barium enema, looking for the classic apple-core filling defect",
+     "Reassure him, since iron-deficiency anemia in adult men is usually dietary",
+     "Perform colonoscopy with biopsy — this anemia is colon cancer until proven otherwise"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A resected colon cancer is node-positive (stage III) with no distant metastases. What is the standard adjuvant therapy?",
+    "ch": [
+     "Neoadjuvant chemoradiation, delivered after the resection",
+     "Surveillance CEA and colonoscopy with no chemotherapy at all",
+     "FOLFOX — 5-FU with leucovorin plus oxaliplatin",
+     "Cetuximab alone, regardless of the tumor's RAS status",
+     "Pembrolizumab alone, regardless of the tumor's MSI/MMR status"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Before starting cetuximab or panitumumab in metastatic colorectal cancer, which result must be confirmed?",
+    "ch": [
+     "A UGT1A1 polymorphism placing the patient at low risk",
+     "MSI-high or mismatch-repair-deficient tumor status",
+     "A BRAF V600E mutation in the primary tumor",
+     "RAS wild-type status — KRAS and NRAS not mutated",
+     "A normal serum magnesium at the time of the first dose"
+    ]
+   }
+  ]
+ },
+ "prostate-cancer": {
+  "condition": "Prostate Cancer",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Where does prostate adenocarcinoma most often arise, and how does that differ from benign prostatic hyperplasia?",
+    "ch": [
+     "Both arise in the central zone, which is why the two cannot be distinguished on examination",
+     "Cancer arises in the anterior fibromuscular stroma and is therefore never palpable at all",
+     "Cancer arises in the seminal vesicles and only secondarily invades the prostate gland",
+     "Cancer arises in the peripheral zone and is palpable on DRE; BPH arises in the transition zone and obstructs",
+     "Cancer arises in the transition zone and obstructs; BPH arises in the peripheral zone and is palpable"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "How is the Gleason score derived and reported?",
+    "ch": [
+     "It is the percentage of biopsy cores involved, reported as Grade Groups 1 to 5",
+     "It is the sum of the two most common histologic patterns, 6-10, reported as Grade Groups 1-5",
+     "It is the PSA level multiplied by the clinical T-stage, reported as a risk category",
+     "It is the number of positive nodes added to the tumor diameter in centimeters",
+     "It is the single highest histologic pattern seen, reported on a scale of 1 to 5"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What is the characteristic radiographic appearance of prostate cancer bone metastases?",
+    "ch": [
+     "Periosteal reaction with a sunburst pattern in the distal femur",
+     "Diffuse osteopenia throughout the skeleton without focal lesions",
+     "Expansile lucent lesions confined to the appendicular skeleton",
+     "Osteoblastic (sclerotic) lesions of the axial skeleton — spine, pelvis, and ribs",
+     "Punched-out lytic lesions of the skull and the long bones"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which statement about PSA is correct?",
+    "ch": [
+     "It is used to assign the Gleason Grade Group without performing a biopsy",
+     "It is cancer-specific, so any elevation above the reference range confirms malignancy",
+     "It is not cancer-specific — BPH, prostatitis, DRE, and ejaculation raise it, so trends matter more than a single value",
+     "It should be drawn after the digital rectal exam so that the gland is fully expressed",
+     "A normal PSA excludes the need for any further evaluation, imaging, or biopsy"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Why is a GnRH agonist such as leuprolide paired with an antiandrogen when androgen-deprivation therapy is started?",
+    "ch": [
+     "To prevent the initial testosterone flare, which can worsen tumor flare and cord compression",
+     "To protect bone density and prevent osteonecrosis of the jaw during therapy",
+     "To speed the fall in testosterone so that castrate levels are reached within hours",
+     "To prevent the hypokalemia and hypertension caused by mineralocorticoid excess",
+     "To reduce the seizures and falls seen with androgen-receptor pathway inhibitors"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A man is started on abiraterone with prednisone. Which set of adverse effects should be monitored?",
+    "ch": [
+     "Gynecomastia and hot flashes as the principal expected toxicities",
+     "Neutropenia requiring a complete blood count before every cycle",
+     "Seizures, falls, and fatigue from central nervous system effects",
+     "Osteonecrosis of the jaw and hypocalcemia after the first dose",
+     "Hypokalemia, hypertension, fluid retention, and liver enzyme elevation"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "What must be done before starting denosumab or zoledronic acid in metastatic prostate cancer?",
+    "ch": [
+     "Document a castrate testosterone level and a rising PSA on two occasions",
+     "Correct hypocalcemia, give calcium and vitamin D, and obtain dental clearance",
+     "Obtain a baseline echocardiogram and then repeat it every three months",
+     "Confirm RAS wild-type status in the tumor before giving the first dose",
+     "Withhold all androgen-deprivation therapy for the duration of treatment"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A man with metastatic prostate cancer reports new back pain with leg weakness and urinary retention. What is the priority?",
+    "ch": [
+     "Schedule an outpatient bone scan within the next two weeks",
+     "Start an oral opioid and reassess the pain at the next clinic visit",
+     "Begin a GnRH agonist alone to shrink the metastatic deposits",
+     "Order a PSA and alkaline phosphatase and await the results",
+     "Emergent MRI with corticosteroids, then radiation or surgery for cord compression"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 70-year-old man has Grade Group 1 (Gleason 6) cancer in two cores with a low PSA. Which management does the module support?",
+    "ch": [
+     "Active surveillance, since many men die with prostate cancer rather than of it",
+     "Androgen-deprivation therapy plus an androgen-receptor pathway inhibitor",
+     "Docetaxel chemotherapy followed by radium-223 directed at the bone",
+     "Bilateral orchiectomy with denosumab added for bone protection",
+     "Immediate radical prostatectomy to remove all of the disease"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A man with metastatic prostate cancer is found to carry a germline BRCA2 mutation. What are the implications?",
+    "ch": [
+     "Anti-HER2 therapy with trastuzumab becomes the treatment of choice for him",
+     "His bone metastases will now be osteolytic rather than osteoblastic in pattern",
+     "The cancer tends to be more aggressive and may respond to a PARP inhibitor such as olaparib",
+     "PSA can no longer be used to monitor his response to systemic therapy",
+     "The disease is typically indolent and is best managed by surveillance alone"
+    ]
+   }
+  ]
+ },
+ "pancreatic-cancer": {
+  "condition": "Pancreatic Cancer",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which description fits the majority of pancreatic cancers?",
+    "ch": [
+     "Lymphoma arising in peripancreatic nodes and invading the gland secondarily",
+     "Acinar cell carcinoma of the tail, presenting with early painless jaundice",
+     "Ductal adenocarcinoma of exocrine duct epithelium, 60-70% in the head of the pancreas",
+     "Neuroendocrine tumors of the islet cells, which carry a far better prognosis",
+     "Squamous cell carcinoma arising from the main pancreatic duct epithelium"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "An older adult has painless jaundice, dark urine, pale stools, and a palpable non-tender gallbladder. What does this combination indicate?",
+    "ch": [
+     "Courvoisier sign — malignant distal biliary obstruction, typically a pancreatic head cancer",
+     "A pancreatic neuroendocrine tumor of the tail producing hormonal symptoms",
+     "Acute cholecystitis caused by a stone impacted in the gallbladder neck",
+     "Choledocholithiasis, in which the gallbladder is scarred and non-distensible",
+     "Viral hepatitis producing a hepatocellular pattern of hyperbilirubinemia"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which mutation is the near-universal driver in pancreatic ductal adenocarcinoma?",
+    "ch": [
+     "Mismatch-repair gene loss, producing microsatellite instability in most tumors",
+     "APC, lost as the first hit in the adenoma-carcinoma sequence",
+     "KRAS, activated in more than 90% of cases",
+     "BRCA2, present in the majority of sporadic tumors",
+     "HER2/ERBB2 amplification, driving growth-factor signaling"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "How should CA 19-9 be used in pancreatic cancer?",
+    "ch": [
+     "As a reliable value in every patient, since cholestasis does not affect it",
+     "For baseline prognosis and for monitoring response or recurrence — never for screening",
+     "As a screening test in anyone with new-onset diabetes after the age of 50",
+     "As the definitive diagnostic test, replacing tissue confirmation by EUS-FNA",
+     "As the marker that determines resectability and the choice of operation"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient with pancreatic cancer has steatorrhea, malabsorption, and continuing weight loss. What is the appropriate treatment, and how is it taken?",
+    "ch": [
+     "Celiac plexus neurolysis performed for opioid-refractory visceral pain",
+     "A scheduled high-dose opioid, with a bowel regimen to pre-empt constipation",
+     "Low-molecular-weight heparin injected daily to reduce the thrombotic risk",
+     "Pancreatic enzyme replacement (pancrelipase) with every meal and snack, beads not crushed",
+     "An endoscopic biliary stent placed at ERCP to relieve the obstruction"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A pancreatic head mass is suspected. What is the correct order of the workup?",
+    "ch": [
+     "CA 19-9 first, proceeding to surgery only if the level is elevated",
+     "Pancreatic-protocol contrast CT first for detection and staging, then EUS-FNA for tissue",
+     "PET scan first, followed by percutaneous biopsy of the largest lesion",
+     "EUS-FNA first, with imaging only if the biopsy is non-diagnostic",
+     "ERCP with brushings first, and CT only if the brushings are negative"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which structures does a Whipple procedure (pancreaticoduodenectomy) remove?",
+    "ch": [
+     "The pancreatic head alone, leaving the duodenum and bile duct intact",
+     "The duodenum and gallbladder only, sparing all pancreatic tissue",
+     "The entire pancreas together with the spleen and the distal stomach",
+     "The pancreatic head, duodenum, distal bile duct, gallbladder, and part of the stomach",
+     "The pancreatic body and tail together with the spleen"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A man with pancreatic adenocarcinoma develops migratory superficial thrombophlebitis. What does this represent, and how is cancer-associated VTE treated?",
+    "ch": [
+     "A local infection of the vein, treated with antibiotics and warm compresses",
+     "A drug reaction to gemcitabine, managed by holding the next infusion",
+     "An expected consequence of biliary stenting that needs no specific therapy",
+     "Exocrine insufficiency, treated by increasing the enzyme replacement dose",
+     "Trousseau syndrome, a paraneoplastic clue; LMWH is preferred over warfarin"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "What determines whether a pancreatic adenocarcinoma is resectable, borderline resectable, locally advanced, or metastatic?",
+    "ch": [
+     "The presence of painless jaundice with a palpable non-tender gallbladder",
+     "Whether the tumor arises in the head rather than in the body or the tail",
+     "The CA 19-9 level at diagnosis and its rate of change over time",
+     "The histologic grade reported on the EUS-FNA specimen",
+     "Involvement of the SMA, celiac axis, and SMV-portal confluence, plus distant spread"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Three days after a biliary stent was placed at ERCP, a patient develops fever, worsening jaundice, and right-upper-quadrant pain. What is this?",
+    "ch": [
+     "Ascending cholangitis (Charcot triad) — an emergency needing decompression and antibiotics",
+     "Post-ERCP pancreatitis, which resolves with observation and early oral intake",
+     "Expected pruritus from cholestasis, treated with cool compresses and skin care",
+     "Delayed gastric emptying, a recognized complication after a Whipple procedure",
+     "A pancreatic fistula from the anastomosis, managed with enzyme replacement"
+    ]
+   }
+  ]
+ },
+ "ovarian-cancer": {
+  "condition": "Ovarian Cancer",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement best characterizes the most common and most aggressive form of epithelial ovarian cancer?",
+    "ch": [
+     "Germ cell tumor of young women with elevated AFP, beta-hCG, and LDH levels",
+     "High-grade serous carcinoma, which frequently arises from a STIC lesion in the fallopian tube fimbria",
+     "Mucinous carcinoma, best distinguished from a GI primary by measuring CEA",
+     "Krukenberg tumor, a bilateral mucin-filled ovarian mass seeded from the stomach",
+     "Granulosa cell tumor, an estrogen-secreting sex cord-stromal tumor marked by inhibin"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "A woman finishing chemotherapy for epithelial ovarian cancer asks what her CA-125 level is used for. Which statement is most accurate?",
+    "ch": [
+     "It is the tumor marker of choice for germ cell tumors in women under the age of thirty",
+     "An elevated level is diagnostic of malignancy and makes tissue confirmation unnecessary",
+     "It rises only in malignancy, so benign gynecologic disease never elevates the value",
+     "It is best used to track response to treatment and to detect recurrence, not to screen for cancer",
+     "It is a specific screening test that reliably detects early-stage ovarian cancer in the general population"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "A 58-year-old woman has several weeks of bloating and pelvic pressure, and a pelvic mass is suspected. Which imaging study is first-line?",
+    "ch": [
+     "Percutaneous needle biopsy of the suspected adnexal mass",
+     "Serial CA-125 measurements alone over the next six months",
+     "Exploratory laparotomy with peritoneal washings and omentectomy",
+     "Transvaginal ultrasound to characterize the adnexal mass",
+     "CT of the abdomen and pelvis to assess spread and stage the disease"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which factor is associated with a LOWER lifetime risk of ovarian cancer?",
+    "ch": [
+     "Late menopause, with menses continuing past the mid-fifties",
+     "Early menarche, with menses beginning before the age of twelve",
+     "Multiple pregnancies with prolonged breastfeeding and oral contraceptive use",
+     "Nulliparity in a woman who has never used oral contraceptives",
+     "A germline BRCA1 mutation inherited from an affected parent"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A 22-year-old woman is found to have a solid pelvic mass. Which set of tumor markers should be ordered?",
+    "ch": [
+     "CEA alone, to exclude a gastrointestinal primary tumor",
+     "Serum estradiol and progesterone levels only",
+     "AFP, beta-hCG, LDH, and inhibin",
+     "No markers at all; proceed directly to laparotomy",
+     "CA-125 as the single marker to follow over time"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Why are PARP inhibitors such as olaparib and niraparib especially effective in BRCA-mutated ovarian cancer?",
+    "ch": [
+     "They block VEGF signaling and starve the tumor of the blood supply it needs to grow",
+     "They form DNA crosslinks in the same way that platinum agents such as cisplatin do",
+     "They suppress ovulation and remove the epithelial repair stimulus that drives mutation",
+     "They stabilize microtubules and arrest dividing tumor cells in mitosis, as paclitaxel does",
+     "The tumor already lacks homologous recombination, so blocking PARP leaves DNA damage unrepairable and the cell dies"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient receiving carboplatin and paclitaxel for ovarian cancer calls to report a temperature of 38.5 C. What is the priority interpretation?",
+    "ch": [
+     "Peripheral neuropathy from paclitaxel, which warrants a fall-risk assessment",
+     "Neutropenic fever, a medical emergency needing immediate cultures and broad-spectrum antibiotics",
+     "Early bowel obstruction from peritoneal spread, managed with scheduled antiemetics",
+     "An expected effect of paclitaxel premedication that can safely be observed at home",
+     "A sign of tense ascites, best followed with abdominal girth and daily weights"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A 64-year-old woman has two months of bloating and early satiety. Exam shows ascites, a fixed adnexal mass, and a firm periumbilical nodule. Which statement about her evaluation is correct?",
+    "ch": [
+     "The nodule is a Sister Mary Joseph nodule, and definitive diagnosis and staging will be surgical",
+     "A CA-125 below the laboratory cutoff would reliably exclude an ovarian malignancy",
+     "Percutaneous biopsy of the adnexal mass is the preferred way to establish the diagnosis",
+     "Transvaginal ultrasound showing thick septations would confirm the diagnosis histologically",
+     "The periumbilical nodule is an incidental umbilical hernia and does not raise concern"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which triad defines Meigs syndrome?",
+    "ch": [
+     "Bilateral mucin-filled ovarian metastases arising from a gastric primary tumor",
+     "A periumbilical nodule with omental caking and a markedly elevated CA-125",
+     "Laminated psammoma bodies with serous histology and a BRCA1 mutation",
+     "Estrogen excess from a granulosa cell tumor with an elevated inhibin level",
+     "A benign ovarian fibroma with ascites and pleural effusion, resolving after tumor removal"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which precaution is specific to bevacizumab when it is added to chemotherapy for ovarian cancer?",
+    "ch": [
+     "Hold the drug around surgery, because it impairs wound healing and can cause GI perforation",
+     "Monitor for peripheral neuropathy and premedicate for hypersensitivity reactions",
+     "Follow the CBC closely for the small long-term risk of MDS or AML",
+     "Give aggressive intravenous hydration, because the drug is highly nephrotoxic and ototoxic",
+     "Check an ECG before dosing, because the drug prolongs the QT interval"
+    ]
+   }
+  ]
+ },
+ "cervical-cancer": {
+  "condition": "Cervical Cancer",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Cervical cancer characteristically arises at which anatomic site?",
+    "ch": [
+     "The fallopian tube fimbria, where an intraepithelial precursor lesion forms",
+     "The vaginal introitus, at the junction of skin and mucous membrane",
+     "The transformation zone, the squamocolumnar junction where metaplastic epithelium is vulnerable",
+     "The myometrium, within the smooth muscle layer of the uterine wall",
+     "The endometrial lining of the uterine fundus, where glandular hyperplasia begins"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which statement about high-risk HPV types in cervical cancer is correct?",
+    "ch": [
+     "HPV causes fewer than half of cervical cancers, the remainder arising without viral infection",
+     "HPV 16 and 18 cause about 70% of cases, and the 9-valent vaccine covers these plus five more oncogenic types",
+     "Only one high-risk HPV type is oncogenic, which is why a monovalent vaccine is sufficient",
+     "High-risk HPV causes cancer only when the infection clears rapidly within a few months",
+     "HPV 16 and 18 account for essentially every case, so vaccination eliminates all future risk"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "By what mechanism do high-risk HPV oncoproteins transform cervical epithelium?",
+    "ch": [
+     "E7 stabilizes p53 while E6 activates Rb, arresting the cell cycle permanently",
+     "The virus makes an estrogen-like protein that stimulates glandular proliferation",
+     "E6 degrades p53 and E7 inactivates Rb, releasing the cell-cycle checkpoint",
+     "E6 and E7 activate the VEGF pathway and directly drive tumor angiogenesis",
+     "The virus integrates and amplifies the BRCA1 locus, impairing homologous repair"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which statement about cervical cancer histology is correct?",
+    "ch": [
+     "Most cervical cancers are sarcomas of the myometrium that extend down into the cervix",
+     "Squamous cell carcinoma is 70-80% of cases; adenocarcinoma is 20-25% and is more easily missed by cytology",
+     "Adenocarcinoma is the most common type and arises from the ectocervical squamous surface",
+     "Nearly all cervical cancers are small cell neuroendocrine tumors of the endocervical canal",
+     "Squamous and glandular tumors occur equally often and are detected equally well by cytology"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A 41-year-old woman reports several months of bleeding after intercourse. What is the appropriate interpretation?",
+    "ch": [
+     "Reassurance is appropriate because painless bleeding is rarely malignant",
+     "A negative Pap two years ago excludes malignancy and makes examination unnecessary",
+     "It is a normal variant in premenopausal women and requires no examination",
+     "It is almost always vaginal atrophy and is treated with topical estrogen",
+     "Postcoital bleeding is cervical cancer until proven otherwise - the cervix must be examined"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A woman has abnormal cervical cytology and a positive HPV test. What is the next step, and what establishes the diagnosis?",
+    "ch": [
+     "Immediate radical hysterectomy, since cytology has already established malignancy",
+     "Concurrent cisplatin chemoradiation begun on the basis of the cytology result",
+     "Repeat cytology in three years, since HPV positivity alone is not actionable",
+     "Pelvic MRI and PET/CT to assign a FIGO stage before any tissue sampling",
+     "Colposcopy with directed biopsy of the transformation zone, because tissue is required"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which option reflects the currently preferred cervical cancer screening strategy?",
+    "ch": [
+     "Co-testing every 6 months for any woman who has ever had a positive HPV test",
+     "Screening only those women who have never received the HPV vaccine",
+     "A single Pap at age 30, with no further screening if that result is normal",
+     "Primary HPV testing every 5 years, generally starting at age 21-25 and stopping around 65",
+     "Cytology alone every year, beginning at the time of first sexual intercourse"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A 52-year-old woman has biopsy-proven cervical squamous cell carcinoma with parametrial extension to the pelvic sidewall. What is the appropriate treatment approach?",
+    "ch": [
+     "Concurrent cisplatin-based chemoradiation with brachytherapy",
+     "LEEP excision of the lesion followed by observation",
+     "Pembrolizumab monotherapy as initial definitive treatment",
+     "Fertility-sparing radical trachelectomy alone",
+     "Cold-knife conization with close cytologic follow-up"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Imaging in a woman with cervical cancer shows hydronephrosis from ureteral obstruction by the tumor. What does this indicate?",
+    "ch": [
+     "Stage IA microinvasive disease that remains suitable for conization",
+     "A benign obstructive process unrelated to local tumor extension",
+     "That fertility-sparing surgery can still safely be offered",
+     "At least FIGO stage IIIB, an automatic upstaging that worsens prognosis",
+     "That renal function need not be checked, because staging is clinical"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A parent asks about HPV vaccination for their 11-year-old. Which counseling point is correct?",
+    "ch": [
+     "Vaccinate routinely at age 11-12, before sexual debut, and continue screening later in life",
+     "Vaccination replaces the need for any future cervical cancer screening",
+     "The vaccine is given only to adults over 26 through shared decision making",
+     "It is safe in pregnancy and is best given during the third trimester",
+     "Wait until after a first abnormal Pap result, since the vaccine is therapeutic"
+    ]
+   }
+  ]
+ },
+ "bladder-cancer": {
+  "condition": "Bladder Cancer",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which histologic type accounts for roughly 90% of bladder cancers?",
+    "ch": [
+     "Sarcoma of the detrusor muscle",
+     "Urothelial (transitional cell) carcinoma",
+     "Squamous cell carcinoma",
+     "Adenocarcinoma of the bladder",
+     "Small cell neuroendocrine carcinoma"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "A 67-year-old man with a 40-pack-year smoking history reports two episodes of painless blood in his urine. How should this be interpreted?",
+    "ch": [
+     "As insignificant, because the bleeding stopped on its own between the episodes",
+     "As a urinary tract infection that can be treated empirically with antibiotics",
+     "As benign prostatic hyperplasia, which explains intermittent bleeding in older men",
+     "As bladder cancer until cystoscopy proves otherwise, not as a simple urinary tract infection",
+     "As glomerular bleeding, since painless hematuria is renal rather than urologic"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which test is the gold standard for diagnosing bladder cancer?",
+    "ch": [
+     "Urine culture with sensitivity testing",
+     "Cystoscopy with biopsy of suspicious lesions",
+     "Urine cytology on a voided specimen",
+     "CT urography of the kidneys and ureters",
+     "MRI of the pelvis with contrast enhancement"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A pathology report on a TURBT specimen notes that no detrusor muscle is present in the sample. Why does this matter?",
+    "ch": [
+     "It confirms non-muscle-invasive disease and lets intravesical therapy proceed",
+     "It has no consequence, because CT urography assigns the T stage instead",
+     "Without detrusor muscle the specimen cannot show muscle invasion, so the tumor cannot be staged",
+     "It indicates bladder perforation and rules out any further intravesical instillation",
+     "It means the tumor must be high grade, since grade is read from the muscle layer"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Intravesical BCG is indicated in which situation?",
+    "ch": [
+     "Metastatic urothelial carcinoma, as preferred first-line systemic therapy",
+     "A single immediate instillation after every TURBT regardless of grade or stage",
+     "Any patient with an active urinary tract infection and ongoing gross hematuria",
+     "Muscle-invasive disease, as an alternative to radical cystectomy in all patients",
+     "High-risk non-muscle-invasive disease - high-grade Ta/T1 or carcinoma in situ - after TURBT"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Before instilling intravesical BCG, which finding must prompt the nurse to hold the treatment?",
+    "ch": [
+     "Mild dysuria that resolved completely several weeks earlier",
+     "A urine cytology result that was negative for high-grade cells",
+     "A long smoking history with ongoing nicotine replacement therapy",
+     "A prior TURBT whose specimen contained detrusor muscle",
+     "A traumatic catheterization, an active urinary tract infection, or gross hematuria"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Two days after an intravesical BCG instillation a patient develops fever, rigors, and hypotension. What is the concern and the action?",
+    "ch": [
+     "Clot retention, relieved by catheterization and continuous bladder irrigation",
+     "An immune-related adverse event from checkpoint blockade, treated with corticosteroids",
+     "Expected mitomycin C myelosuppression, followed with serial blood counts",
+     "BCG sepsis, a medical emergency requiring urgent anti-tuberculous antimicrobial therapy",
+     "Routine post-procedure chemical cystitis, managed with oral fluids at home"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A TURBT shows high-grade urothelial carcinoma invading the detrusor muscle, and renal function is normal. What is the standard treatment approach?",
+    "ch": [
+     "Neoadjuvant cisplatin-based chemotherapy followed by radical cystectomy",
+     "A single immediate instillation of mitomycin C after the resection",
+     "Enfortumab vedotin with pembrolizumab as initial curative therapy",
+     "Repeat TURBT every three months without any systemic treatment",
+     "Intravesical BCG instillations with surveillance cystoscopy alone"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Why does a patient need lifelong surveillance cystoscopy after complete resection of a bladder tumor?",
+    "ch": [
+     "The entire urothelium is at risk, so tumors are often multifocal and recur throughout the tract",
+     "Because intravesical BCG itself causes new tumors at the site of each instillation",
+     "Because urine cytology is so sensitive that every low-grade tumor is found early",
+     "Because smoking cessation has no effect on recurrence once cancer is diagnosed",
+     "Because radical cystectomy is scheduled for every patient at the five-year mark"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which pairing of exposure and bladder tumor histology is correct?",
+    "ch": [
+     "Cigarette smoking with adenocarcinoma of the bladder dome",
+     "Cyclophosphamide therapy with sarcoma of the detrusor muscle",
+     "Chronic Schistosoma haematobium infection with squamous cell carcinoma",
+     "Prior pelvic radiation with small cell carcinoma of the bladder",
+     "Occupational aromatic amine exposure with squamous cell carcinoma"
+    ]
+   }
+  ]
+ },
+ "gastric-cancer": {
+  "condition": "Gastric Cancer",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement best describes the Lauren classification of gastric adenocarcinoma?",
+    "ch": [
+     "It grades tumors by depth of invasion into the wall and by the number of involved regional nodes",
+     "It divides tumors by HER2, PD-L1, and mismatch-repair status to select first-line systemic therapy",
+     "Intestinal type contains signet-ring cells while diffuse type is gland-forming and confined proximally",
+     "Intestinal type is gland-forming and distal and linked to H. pylori; diffuse type has signet-ring cells and a worse prognosis",
+     "It separates squamous carcinoma of the stomach from adenocarcinoma of the gastroesophageal junction"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which sequence describes the Correa cascade of gastric carcinogenesis?",
+    "ch": [
+     "Barrett esophagus to esophageal dysplasia to squamous carcinoma of the stomach",
+     "Chronic H. pylori gastritis to atrophic gastritis to intestinal metaplasia to dysplasia to carcinoma",
+     "Signet-ring dysplasia to an acquired CDH1 mutation to hereditary diffuse gastric cancer",
+     "Peptic ulcer to gastric outlet obstruction to linitis plastica to peritoneal spread",
+     "Pernicious anemia to B12 deficiency to dumping syndrome to gastric adenocarcinoma"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What does the term linitis plastica describe?",
+    "ch": [
+     "A left supraclavicular lymph node draining gastric cancer via the thoracic duct",
+     "Diffuse signet-ring infiltration that thickens and rigidifies the wall and effaces the rugae",
+     "Bilateral ovarian metastasis of gastric cancer filled with mucin-producing cells",
+     "A periumbilical nodule signaling intraperitoneal spread of gastric adenocarcinoma",
+     "A well-circumscribed distal polypoid mass formed by gland-forming intestinal-type tumor"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "In which patient should gastric cancer be suspected and upper endoscopy pursued?",
+    "ch": [
+     "A 24-year-old with two days of epigastric burning that resolves with an antacid",
+     "A 30-year-old with heartburn after large meals and no change in body weight",
+     "A 45-year-old with intermittent nausea during the first trimester of pregnancy",
+     "A 50-year-old whose dyspepsia resolved completely after H. pylori eradication",
+     "A 64-year-old with new dyspepsia, six months of weight loss, and iron-deficiency anemia"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "An endoscopist suspects linitis plastica, but the superficial biopsies return negative. What explains this, and what should be done?",
+    "ch": [
+     "Submucosal infiltration can spare the mucosa, so multiple deep biopsies with EUS are needed",
+     "A negative superficial biopsy reliably excludes malignancy, so no further sampling is needed",
+     "Urine cytology should be sent instead, since it detects poorly cohesive tumor cells",
+     "The diagnosis should rest on the CT appearance alone without tissue confirmation",
+     "H. pylori testing alone is sufficient, because eradication treats the underlying tumor"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient with apparently resectable gastric cancer has a CT that shows no metastatic disease. Which additional step is recommended before curative resection?",
+    "ch": [
+     "Bilateral oophorectomy to exclude an occult Krukenberg tumor before surgery",
+     "Repeat upper endoscopy with urea breath testing while on a proton pump inhibitor",
+     "Serial carcinoembryonic antigen levels followed over the next six months",
+     "Empiric perioperative FLOT chemotherapy with no further staging at all",
+     "Staging laparoscopy, which detects peritoneal disease that CT misses"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient with gastric adenocarcinoma has a firm, enlarged left supraclavicular lymph node. What does this finding signify?",
+    "ch": [
+     "A Krukenberg tumor, bilateral ovarian metastasis of signet-ring cancer",
+     "Reactive adenopathy from H. pylori gastritis that does not affect staging",
+     "A Blumer shelf, palpable on digital rectal examination in advanced disease",
+     "A Virchow node, the signal node of GI malignancy, indicating metastatic disease",
+     "A Sister Mary Joseph nodule, the periumbilical sign of intraperitoneal spread"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient with advanced gastric adenocarcinoma is being considered for trastuzumab. Which step is required first, and what must be monitored?",
+    "ch": [
+     "Confirm HER2 by IHC or FISH first, then follow cardiac function with serial echocardiogram or MUGA",
+     "Check DPYD status first, then follow the patient for cold-triggered peripheral neuropathy",
+     "Document PD-L1 CPS first, then watch for immune colitis, pneumonitis, and thyroiditis",
+     "Confirm H. pylori eradication first, then repeat urea breath testing after four weeks",
+     "Measure creatinine clearance first, then give aggressive hydration for nephrotoxicity"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which teaching is essential for a patient recovering from total gastrectomy?",
+    "ch": [
+     "Take large high-carbohydrate meals with generous fluids during each meal",
+     "Supplement iron only, since intrinsic factor production is unaffected",
+     "Lifelong vitamin B12 replacement, plus small low-simple-sugar meals to limit dumping syndrome",
+     "Sit fully upright for several hours after every meal to speed gastric emptying",
+     "Stop all surveillance endoscopy, since the stomach has been removed"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "How should eradication be confirmed after treating H. pylori in a patient with gastric cancer?",
+    "ch": [
+     "No confirmation is needed once the dyspepsia has fully resolved",
+     "A single stool antigen sample sent 48 hours after starting antibiotics",
+     "Urea breath or stool antigen testing at least 4 weeks after antibiotics, off PPI for 1-2 weeks",
+     "Repeat serology on the day the antibiotic course is completed",
+     "Urea breath testing while the patient continues a daily proton pump inhibitor"
+    ]
+   }
+  ]
+ }
+}

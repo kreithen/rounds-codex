@@ -1,0 +1,922 @@
+{
+ "chf": {
+  "condition": "Heart Failure",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement best defines heart failure?",
+    "ch": [
+     "A clinical syndrome caused by structural or functional cardiac abnormality that impairs filling or ejection of blood",
+     "An ejection fraction below 50% in every patient",
+     "Isolated peripheral edema from any cause",
+     "A diagnosis made only by an elevated BNP",
+     "Any patient with cardiomegaly on chest radiography"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which ejection-fraction category is classified as HFrEF in current US guidelines?",
+    "ch": [
+     "Any normal LVEF with dyspnea",
+     "LVEF ≤40%",
+     "LVEF 41–49%",
+     "LVEF 50–59%",
+     "LVEF ≥60%"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which compensatory system contributes to vasoconstriction, sodium retention, and adverse remodeling in chronic heart failure?",
+    "ch": [
+     "Isolated parasympathetic activation",
+     "Suppression of aldosterone",
+     "Reduced sympathetic signaling",
+     "Increased insulin secretion",
+     "RAAS activation"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which symptom is most characteristic of orthopnea?",
+    "ch": [
+     "Breathlessness when supine that improves with sitting upright",
+     "Sudden calf pain with walking",
+     "Chest pain reproducible by palpation",
+     "Dyspnea that improves when lying flat",
+     "Dyspnea occurring only after meals"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which finding most strongly supports systemic venous congestion in heart failure?",
+    "ch": [
+     "Hyperreflexia",
+     "Localized wrist swelling",
+     "Unilateral facial weakness",
+     "Elevated jugular venous pressure",
+     "Isolated fever"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which test is central to defining cardiac structure, LVEF, valvular disease, and diastolic function in suspected heart failure?",
+    "ch": [
+     "Spirometry alone",
+     "Ankle radiograph",
+     "Transthoracic echocardiography",
+     "Screening colonoscopy",
+     "Noncontrast head CT"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which group represents the four foundational medication classes for eligible patients with chronic HFrEF?",
+    "ch": [
+     "Aspirin, calcium supplement, antibiotic, and nitrate",
+     "Loop diuretic, digoxin, amiodarone, and warfarin for every patient",
+     "Statin, fibrinolytic, dual antiplatelet therapy, and heparin",
+     "Thiazide, alpha-blocker, verapamil, and niacin",
+     "ARNI/ACEI/ARB, evidence-based beta-blocker, MRA, and SGLT2 inhibitor"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "What is the primary role of loop diuretics in heart failure?",
+    "ch": [
+     "Replace all disease-modifying therapy",
+     "Increase sodium retention",
+     "Relieve congestion and achieve euvolemia",
+     "Reverse myocardial scar",
+     "Cure all causes of HF"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient with symptomatic HFpEF has hypertension, obesity, atrial fibrillation, and diabetes. Which approach is most appropriate?",
+    "ch": [
+     "Withhold exercise and rehabilitation permanently",
+     "Implant an ICD solely because EF is preserved",
+     "Stop all diabetes treatment",
+     "Treat comorbidities, control blood pressure, use diuretics for congestion, and consider an SGLT2 inhibitor",
+     "Give fibrinolytic therapy routinely"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which patient should prompt early referral to an advanced heart-failure team?",
+    "ch": [
+     "Brief fatigue after strenuous exercise in a healthy athlete",
+     "Recurrent hospitalizations, refractory symptoms, hypotension, or progressive organ dysfunction despite therapy",
+     "A single normal echocardiogram with no symptoms",
+     "Mild ankle sprain",
+     "Stable hypertension controlled with one medication"
+    ]
+   }
+  ]
+ },
+ "acs": {
+  "condition": "Acute Coronary Syndrome / MI",
+  "questions": [
+   {
+    "n": 1,
+    "q": "A 62-year-old patient has 45 minutes of crushing substernal pressure with ST-segment elevation in leads II, III, and aVF. In a typical right-dominant coronary circulation, which vessel is most likely occluded?",
+    "ch": [
+     "Left anterior descending artery",
+     "Left circumflex artery",
+     "Right coronary artery",
+     "First diagonal branch",
+     "Left main coronary artery"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which event most directly converts chronic atherosclerotic coronary disease into a type 1 acute coronary syndrome?",
+    "ch": [
+     "Progressive calcification without thrombosis",
+     "Plaque rupture or erosion with superimposed thrombus",
+     "Isolated severe anemia",
+     "Stable fixed stenosis without change",
+     "Pericardial inflammation"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which presentation should raise concern for ACS even when classic crushing chest pain is absent?",
+    "ch": [
+     "Brief pain lasting one second",
+     "Pain confined to a bruised rib",
+     "Dyspnea, nausea, diaphoresis, or unusual fatigue in an older adult",
+     "Sharp pain reproducible with one fingertip",
+     "Pain only with deep inspiration after coughing"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which bedside finding most strongly suggests a mechanical complication after myocardial infarction?",
+    "ch": [
+     "A new loud holosystolic murmur with acute pulmonary edema",
+     "Mild isolated hypertension",
+     "Stable sinus rhythm",
+     "Normal jugular venous pressure",
+     "Reproducible chest-wall tenderness"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "What is the recommended first diagnostic test in a patient with suspected acute coronary syndrome?",
+    "ch": [
+     "Coronary calcium score",
+     "12-lead ECG obtained as rapidly as possible, ideally within 10 minutes",
+     "Exercise treadmill test",
+     "Outpatient echocardiography",
+     "Cardiac MRI"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which statement best describes the interpretation of high-sensitivity cardiac troponin in suspected MI?",
+    "ch": [
+     "Chronic kidney disease cannot elevate troponin",
+     "One normal result always excludes MI",
+     "Any elevation automatically proves type 1 MI",
+     "A rise and/or fall indicating acute injury must be interpreted with evidence of ischemia",
+     "Troponin is elevated only in STEMI"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which gross pathologic change is most typical approximately 3-7 days after a myocardial infarction?",
+    "ch": [
+     "Calcified valve leaflets",
+     "No visible change",
+     "Dark mottling only",
+     "Yellow-tan softening with a hyperemic border",
+     "Dense gray-white fibrous scar"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which histologic finding is most characteristic of approximately 1-3 days after an acute myocardial infarction?",
+    "ch": [
+     "Mature granulation tissue",
+     "Complete myocardial regeneration",
+     "Caseating granulomas",
+     "Dense collagen scar",
+     "Prominent neutrophilic infiltration with coagulative necrosis"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient presents with STEMI at a PCI-capable hospital. Which reperfusion strategy is preferred when it can be delivered promptly?",
+    "ch": [
+     "Primary percutaneous coronary intervention",
+     "Observation until troponin peaks",
+     "Routine fibrinolysis before ECG confirmation",
+     "Exercise stress testing",
+     "Aspirin alone without reperfusion"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient has NSTEMI with recurrent chest pain, dynamic ST changes, rising troponin, and hemodynamic instability. What is the most appropriate management strategy?",
+    "ch": [
+     "Stop antiplatelet therapy",
+     "Perform an exercise test during active symptoms",
+     "Discharge with outpatient follow-up",
+     "Routine fibrinolytic therapy",
+     "Urgent or immediate invasive coronary angiography with revascularization as indicated"
+    ]
+   }
+  ]
+ },
+ "afib": {
+  "condition": "Atrial Fibrillation",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which electrocardiographic finding is most characteristic of atrial fibrillation?",
+    "ch": [
+     "Sawtooth flutter waves with a fixed 2:1 conduction ratio",
+     "Progressive PR prolongation followed by a dropped QRS complex",
+     "Wide-complex tachycardia with atrioventricular dissociation",
+     "Regular narrow-complex rhythm with a P wave before every QRS complex",
+     "Irregularly irregular R-R intervals with no consistent discrete P waves"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which structure is the most common source of ectopic triggers that initiate atrial fibrillation?",
+    "ch": [
+     "Aortic valve commissures",
+     "Right ventricular outflow tract",
+     "Papillary muscles of the left ventricle",
+     "Pulmonary-vein myocardial sleeves near the left atrium",
+     "His bundle"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "A patient has self-terminating episodes of atrial fibrillation that last 6 hours. Which AF pattern is most appropriate?",
+    "ch": [
+     "Permanent atrial fibrillation",
+     "Ventricular fibrillation",
+     "Paroxysmal atrial fibrillation",
+     "Persistent atrial fibrillation",
+     "Long-standing persistent atrial fibrillation"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which statement best describes stroke prevention in atrial fibrillation?",
+    "ch": [
+     "Anticoagulation is unnecessary after successful cardioversion in every patient",
+     "Bleeding-risk scores should be used to automatically deny anticoagulation",
+     "Anticoagulation decisions should be based only on whether AF is paroxysmal or persistent",
+     "Aspirin is equivalent to an oral anticoagulant for most patients at elevated stroke risk",
+     "Thromboembolic risk should be estimated with a validated clinical risk approach and reassessed over time"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which patient with atrial fibrillation requires immediate synchronized electrical cardioversion?",
+    "ch": [
+     "A patient with hypotension, pulmonary edema, and ongoing ischemic chest discomfort attributable to AF",
+     "A patient with a smartwatch alert but no confirmatory rhythm tracing",
+     "A patient with controlled AF undergoing a routine office visit",
+     "An asymptomatic patient with a ventricular rate of 82 beats/min",
+     "A stable patient with intermittent palpitations for three months"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which test is most appropriate for evaluating left atrial size, ventricular function, and valvular disease in a newly diagnosed patient with atrial fibrillation?",
+    "ch": [
+     "Pulmonary-function testing alone",
+     "Transthoracic echocardiography",
+     "Noncontrast head CT",
+     "Routine coronary angiography for every patient",
+     "Ankle radiography"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "What is the principal purpose of transesophageal echocardiography before selected cardioversion or ablation procedures?",
+    "ch": [
+     "Replace all anticoagulation decisions",
+     "Measure coronary calcium",
+     "Exclude left atrial or left atrial appendage thrombus",
+     "Diagnose pulmonary embolism in every patient",
+     "Determine the patient's blood type"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which intervention best addresses the arrhythmogenic triggers that initiate most atrial fibrillation?",
+    "ch": [
+     "Inferior vena cava filter placement",
+     "Pulmonary-vein isolation by catheter ablation",
+     "Carotid endarterectomy",
+     "Coronary-artery bypass grafting for every patient",
+     "Permanent discontinuation of all exercise"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which statement about atrial remodeling is correct?",
+    "ch": [
+     "Sustained AF can promote electrical and structural changes that make AF easier to maintain",
+     "Left atrial dilation has no relationship to AF progression",
+     "Atrial remodeling occurs only after cardiac surgery",
+     "Myocyte hypertrophy and fibrosis are incompatible with AF",
+     "Fibrosis makes atrial conduction more uniform and prevents AF"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which management plan best reflects contemporary integrated care for atrial fibrillation?",
+    "ch": [
+     "Stop follow-up after sinus rhythm is restored",
+     "Treat the rhythm only and ignore hypertension, obesity, sleep apnea, diabetes, and alcohol use",
+     "Use anticoagulation for every patient regardless of stroke or bleeding risk",
+     "Combine comorbidity and risk-factor management, stroke prevention, symptom-directed rate or rhythm control, and periodic reassessment",
+     "Avoid shared decision-making because it reduces adherence"
+    ]
+   }
+  ]
+ },
+ "htn": {
+  "condition": "Hypertension",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which blood pressure reading meets the current US definition of stage 1 hypertension?",
+    "ch": [
+     "116/74 mm Hg",
+     "124/76 mm Hg",
+     "132/84 mm Hg",
+     "142/92 mm Hg",
+     "118/82 mm Hg"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "What is the best method to confirm hypertension in a patient with repeated elevated office readings but no symptoms?",
+    "ch": [
+     "Repeat the measurement only after exercise",
+     "Use wrist-cuff readings exclusively",
+     "Diagnose hypertension from a single reading",
+     "Use home or ambulatory blood pressure monitoring with validated technique",
+     "Order coronary angiography"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which pathophysiologic change most directly increases systemic vascular resistance in chronic hypertension?",
+    "ch": [
+     "Arteriolar vasoconstriction and medial remodeling",
+     "Reduced sympathetic tone",
+     "Increased nitric oxide bioavailability",
+     "Decreased sodium retention",
+     "Reduced renin-angiotensin signaling in all patients"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which finding is most consistent with hypertension-mediated target-organ damage?",
+    "ch": [
+     "Normal retinal examination",
+     "Left ventricular hypertrophy",
+     "Normal urinalysis and ECG",
+     "Isolated seasonal rhinitis",
+     "Healed ankle sprain"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which histologic lesion is classically associated with long-standing nonmalignant hypertension?",
+    "ch": [
+     "Fibrinous pericarditis",
+     "Fat necrosis",
+     "Hyaline arteriolosclerosis",
+     "Caseating granuloma",
+     "Amyloid plaque of the brain"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which lifestyle intervention is recommended for nearly all adults with elevated blood pressure or hypertension?",
+    "ch": [
+     "Intentional sleep deprivation",
+     "A heart-healthy dietary pattern with sodium reduction and regular physical activity",
+     "Routine high-sodium supplementation",
+     "Complete avoidance of all physical activity",
+     "Tobacco use for stress reduction"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which medication classes are generally considered first-line options for uncomplicated primary hypertension?",
+    "ch": [
+     "Thiazide-type diuretics, ACE inhibitors or ARBs, and calcium-channel blockers",
+     "Long-term nitrates alone",
+     "Class I antiarrhythmics",
+     "Loop diuretics for every patient",
+     "Digoxin monotherapy"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient has blood pressure of 184/122 mm Hg with acute confusion and pulmonary edema. What is the most appropriate classification?",
+    "ch": [
+     "Stable stage 1 hypertension",
+     "Masked hypertension",
+     "White-coat hypertension",
+     "Hypertensive emergency",
+     "Elevated blood pressure without hypertension"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which feature should prompt evaluation for a secondary cause of hypertension?",
+    "ch": [
+     "Stable pressure controlled with one low-dose medication",
+     "Normal kidney function and electrolytes",
+     "Gradual onset in an older adult with no unusual findings",
+     "Normal sleep and no medication contributors",
+     "Resistant hypertension despite an appropriate multidrug regimen"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which statement best reflects contemporary hypertension management?",
+    "ch": [
+     "Only symptomatic patients require treatment",
+     "Target-organ assessment is unnecessary",
+     "Medication adherence does not affect outcomes",
+     "Treatment ends once one normal reading is obtained",
+     "Management combines accurate diagnosis, cardiovascular-risk assessment, lifestyle treatment, appropriate medication, and repeated follow-up"
+    ]
+   }
+  ]
+ },
+ "aortic-stenosis": {
+  "condition": "Aortic Stenosis (Valvular Heart Disease)",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which valve is affected in aortic stenosis?",
+    "ch": [
+     "Aortic valve",
+     "Pulmonary valve",
+     "Mitral and tricuspid valves",
+     "Mitral valve",
+     "Tricuspid valve"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which murmur is classic for AS?",
+    "ch": [
+     "Holosystolic",
+     "Early diastolic",
+     "Crescendo-decrescendo systolic ejection",
+     "Continuous machinery",
+     "Opening snap"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Classic symptom triad includes:",
+    "ch": [
+     "None",
+     "Angina, syncope, dyspnea",
+     "Palpitations, edema, fever",
+     "Cough, wheeze, fever",
+     "Headache, edema, rash"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Pressure overload occurs in the:",
+    "ch": [
+     "RV",
+     "LA",
+     "LV",
+     "Aorta",
+     "RA"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Best initial diagnostic test?",
+    "ch": [
+     "Echo",
+     "MRI",
+     "CT",
+     "ECG",
+     "Chest X-ray"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Severe AS typically has peak velocity:",
+    "ch": [
+     "<2",
+     "2-2.9",
+     "3-3.9",
+     "≥4.0",
+     "Unknown"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Definitive treatment is:",
+    "ch": [
+     "Statin",
+     "ACE inhibitor",
+     "Diuretic",
+     "Valve replacement",
+     "Beta blocker"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Typical carotid pulse:",
+    "ch": [
+     "Water hammer",
+     "Alternans",
+     "Bisferiens",
+     "Bounding",
+     "Pulsus parvus et tardus"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Ideal TAVR candidate:",
+    "ch": [
+     "Athlete",
+     "Child",
+     "Young low-risk",
+     "Needs CABG",
+     "Older higher-risk"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Why intervene early?",
+    "ch": [
+     "Medical therapy cures",
+     "Valve replacement improves survival",
+     "Symptoms always benign",
+     "Disease reverses",
+     "Antibiotics cure"
+    ]
+   }
+  ]
+ },
+ "copd": {
+  "condition": "COPD",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which feature most reliably distinguishes COPD from asthma?",
+    "ch": [
+     "A history of cigarette smoking",
+     "Symptoms that worsen at night",
+     "Response to inhaled corticosteroids",
+     "Presence of wheeze on auscultation",
+     "Airflow limitation that is not fully reversible"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Chronic bronchitis is defined clinically as a productive cough for:",
+    "ch": [
+     "Any duration if sputum is purulent",
+     "At least 2 weeks in a single year",
+     "At least 1 month in a single year",
+     "At least 3 months per year for 2 consecutive years",
+     "At least 6 months in a single year"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which test is required to establish a diagnosis of COPD?",
+    "ch": [
+     "Arterial blood gas showing CO2 retention",
+     "Spirometry with a post-bronchodilator FEV1/FVC below 0.70",
+     "Alpha-1 antitrypsin level",
+     "Resting pulse oximetry below 92%",
+     "Chest X-ray showing hyperinflation"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "What is the appropriate oxygen saturation target in a patient with COPD?",
+    "ch": [
+     "Above 98%",
+     "94-98%",
+     "88-92%",
+     "80-85%",
+     "Whatever is needed to abolish all dyspnea"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient presents with an acute COPD exacerbation and increased sputum purulence and volume. Which combination is most appropriate?",
+    "ch": [
+     "Long-acting bronchodilators alone",
+     "High-flow oxygen titrated to 100% saturation",
+     "Inhaled corticosteroid monotherapy",
+     "Short-acting bronchodilators, systemic steroids, and antibiotics",
+     "Antibiotics alone"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "What is the role of non-invasive ventilation (BiPAP) in an acute hypercapnic COPD exacerbation?",
+    "ch": [
+     "It reduces the need for intubation and reduces mortality",
+     "It is used only after intubation has failed",
+     "It is reserved for patients who are already comatose",
+     "It has no proven benefit over oxygen alone",
+     "It is contraindicated because it worsens air trapping"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which two interventions have been shown to prolong survival in COPD?",
+    "ch": [
+     "Mucolytics and chest physiotherapy",
+     "Systemic steroids and antibiotics",
+     "Inhaled corticosteroids and pulmonary rehabilitation",
+     "Long-acting bronchodilators and annual vaccination",
+     "Smoking cessation and long-term oxygen therapy in chronically hypoxemic patients"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A 38-year-old who has never smoked is diagnosed with emphysema. Which investigation is most important?",
+    "ch": [
+     "Alpha-1 antitrypsin level",
+     "Sweat chloride testing",
+     "High-resolution CT of the sinuses",
+     "Serum IgE and eosinophil count",
+     "Methacholine challenge testing"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "How is the blood eosinophil count used in modern COPD management?",
+    "ch": [
+     "To confirm the diagnosis of COPD without spirometry",
+     "To decide whether a patient is likely to benefit from an inhaled corticosteroid",
+     "To determine the target oxygen saturation range",
+     "To grade disease severity in place of spirometry",
+     "To decide the duration of antibiotic therapy"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A COPD patient on oxygen becomes progressively drowsy. What is the most appropriate next step?",
+    "ch": [
+     "Increase the oxygen flow rate",
+     "Administer a sedative for agitation",
+     "Check an arterial blood gas",
+     "Discontinue oxygen entirely",
+     "Obtain an urgent CT of the head"
+    ]
+   }
+  ]
+ },
+ "asthma": {
+  "condition": "Asthma",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which feature defines asthma and separates it from COPD?",
+    "ch": [
+     "Reversible airflow obstruction",
+     "Presence of a productive cough",
+     "Chronic hypercapnia",
+     "Barrel-shaped chest",
+     "Irreversible alveolar destruction"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which spirometric result demonstrates reversibility and supports a diagnosis of asthma?",
+    "ch": [
+     "A total lung capacity above predicted",
+     "A normal spirometry result on a single occasion",
+     "A fall in FEV1 of 12% after bronchodilator",
+     "An FEV1 improvement of at least 12% and 200 mL after bronchodilator",
+     "An FEV1/FVC ratio below 0.70 that does not change"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which medication is the cornerstone controller therapy for persistent asthma?",
+    "ch": [
+     "Long-acting beta-agonist used alone",
+     "Inhaled corticosteroid",
+     "Oral theophylline",
+     "Leukotriene receptor antagonist as sole therapy",
+     "Short-acting beta-agonist"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "During an acute asthma attack the wheeze diminishes markedly while the patient's distress worsens. What does this indicate?",
+    "ch": [
+     "The patient has developed a pneumothorax",
+     "Bronchodilator therapy has been effective",
+     "The patient is hyperventilating",
+     "The attack is resolving",
+     "Air movement has become dangerously reduced"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "An arterial blood gas during a severe asthma attack shows a PaCO2 that has risen from low to normal. How should this be interpreted?",
+    "ch": [
+     "Reassuring, as the gas is now normal",
+     "A sign the patient is tiring toward respiratory failure",
+     "Evidence of over-treatment with bronchodilators",
+     "An expected effect of supplemental oxygen",
+     "A laboratory error requiring a repeat sample"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Why must a long-acting beta-agonist never be prescribed as monotherapy in asthma?",
+    "ch": [
+     "It increases the risk of death in asthma",
+     "It is less effective than a short-acting agent",
+     "It causes oral candidiasis",
+     "It is only licensed for use in COPD",
+     "It causes intolerable tremor"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient reports using their rescue inhaler every day. What does this most likely represent?",
+    "ch": [
+     "Successful self-management",
+     "Appropriate use of a reliever",
+     "Under-controlled airway inflammation requiring step-up",
+     "Tolerance to beta-agonists requiring a higher dose",
+     "A need to stop the inhaled corticosteroid"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient's asthma remains uncontrolled despite an appropriate inhaled corticosteroid prescription. What should be checked before escalating drug therapy?",
+    "ch": [
+     "Chest CT for bronchiectasis",
+     "Alpha-1 antitrypsin level",
+     "Arterial blood gas",
+     "Serum theophylline concentration",
+     "Inhaler technique and adherence"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which modern approach does GINA favour over short-acting beta-agonist-only treatment?",
+    "ch": [
+     "Leukotriene antagonist monotherapy for all patients",
+     "Oral corticosteroids taken intermittently",
+     "Inhaled corticosteroid-formoterol as combined controller and reliever",
+     "Long-acting beta-agonist monotherapy",
+     "Theophylline as first-line therapy"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient in an acute attack has a peak expiratory flow below 50% of personal best that is not responding to treatment, with exhaustion and altered mentation. What does this represent?",
+    "ch": [
+     "An expected response to nebulized therapy",
+     "Anxiety-driven hyperventilation",
+     "A moderate exacerbation suitable for discharge with oral steroids",
+     "Life-threatening asthma requiring preparation for intubation",
+     "Vocal cord dysfunction rather than asthma"
+    ]
+   }
+  ]
+ },
+ "cap": {
+  "condition": "Community-Acquired Pneumonia",
+  "questions": [
+   {
+    "n": 1,
+    "q": "What pathological process underlies the consolidation seen in pneumonia?",
+    "ch": [
+     "Bronchial smooth muscle constriction",
+     "Alveoli filling with inflammatory exudate",
+     "Destruction of alveolar walls",
+     "Fluid accumulation in the pleural space",
+     "Thrombotic occlusion of pulmonary arteries"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which organism is the most common cause of community-acquired pneumonia?",
+    "ch": [
+     "Moraxella catarrhalis",
+     "Respiratory syncytial virus",
+     "Mycoplasma pneumoniae",
+     "Legionella pneumophila",
+     "Streptococcus pneumoniae"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "An 84-year-old is brought in confused after a fall, with no fever. Which principle applies?",
+    "ch": [
+     "Antibiotics should be withheld until fever develops",
+     "A normal temperature means the infection is viral",
+     "Pneumonia is effectively excluded by the absence of fever",
+     "Elderly patients may present with confusion or a fall rather than fever",
+     "Confusion in the elderly always indicates a primary neurological cause"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which tool is used to decide whether a patient with pneumonia needs admission?",
+    "ch": [
+     "Wells score",
+     "CURB-65",
+     "GOLD group",
+     "Child-Pugh score",
+     "Glasgow Coma Scale"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient has pneumonia with hyponatremia, prominent gastrointestinal symptoms and a high fever. Which pathogen should be considered?",
+    "ch": [
+     "Influenza virus",
+     "Streptococcus pneumoniae",
+     "Mycoplasma pneumoniae",
+     "Legionella pneumophila",
+     "Haemophilus influenzae"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Cultures have been ordered but not yet drawn in a septic patient with pneumonia. What is the correct approach?",
+    "ch": [
+     "Give antibiotics without delay, obtaining cultures if it does not hold up treatment",
+     "Withhold antibiotics until the chest X-ray is reported",
+     "Give antibiotics only after the severity score is calculated",
+     "Treat with antipyretics alone until cultures return",
+     "Delay antibiotics until all cultures are collected"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient hospitalised with pneumonia is not improving after 72 hours of appropriate empiric therapy. What should be considered?",
+    "ch": [
+     "Repeating the same antibiotic course from the beginning",
+     "This is the expected course and no further action is needed",
+     "The wrong organism or drug, a complication such as empyema, or the wrong diagnosis",
+     "Immediate discharge on oral therapy with outpatient follow-up",
+     "Automatic escalation to empiric antifungal therapy"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A parapneumonic effusion persists and is not resolving with antibiotics. What is the appropriate action?",
+    "ch": [
+     "Start systemic corticosteroids",
+     "Begin diuretic therapy",
+     "Repeat the chest X-ray in one month",
+     "Continue antibiotics alone and observe",
+     "Sample the fluid to exclude empyema, which requires drainage"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "What does antibiotic de-escalation mean in the management of pneumonia?",
+    "ch": [
+     "Adding a second agent to cover resistant organisms",
+     "Stopping antibiotics as soon as the fever settles",
+     "Narrowing therapy once culture and antigen results identify the organism",
+     "Reducing the dose while keeping the same broad agent",
+     "Switching from intravenous to oral therapy regardless of results"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which oxygen saturation target applies to a patient with pneumonia who also has COPD?",
+    "ch": [
+     "88-92%",
+     "At least 96%",
+     "Above 98%",
+     "No target is required",
+     "At least 92%"
+    ]
+   }
+  ]
+ }
+}

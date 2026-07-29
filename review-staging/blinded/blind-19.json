@@ -1,0 +1,922 @@
+{
+ "pid": {
+  "condition": "Pelvic Inflammatory Disease",
+  "questions": [
+   {
+    "n": 1,
+    "q": "What is sufficient on pelvic exam to justify empiric treatment for PID in a sexually active young woman with pelvic pain?",
+    "ch": [
+     "A documented positive NAAT for gonorrhea or chlamydia",
+     "An oral temperature above 101 F together with mucopurulent discharge",
+     "Laparoscopic visualization of inflamed fallopian tubes",
+     "Any one of cervical motion tenderness, uterine tenderness, or adnexal tenderness",
+     "All three of cervical motion, uterine, and adnexal tenderness present together"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "The \"chandelier sign\" in pelvic inflammatory disease refers to which finding?",
+    "ch": [
+     "A palpable adnexal mass with peripherally displaced follicles on imaging",
+     "Rebound tenderness in the right lower quadrant on deep palpation",
+     "Referred shoulder-tip pain from blood irritating the diaphragm",
+     "Cervical motion tenderness from peritoneal irritation as the swollen adnexa move",
+     "A boggy, enlarged, tender uterus in a multiparous woman"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which organisms are the classic pathogens of pelvic inflammatory disease?",
+    "ch": [
+     "Group B Streptococcus colonizing the vagina during pregnancy",
+     "Escherichia coli ascending from the urinary tract in isolation",
+     "Neisseria gonorrhoeae and Chlamydia trachomatis, often with anaerobes and endogenous vaginal flora",
+     "Candida albicans overgrowth of the endocervical canal",
+     "Treponema pallidum invading the fallopian tubes directly"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which outpatient antibiotic regimen is recommended for pelvic inflammatory disease?",
+    "ch": [
+     "Doxycycline alone taken for a full 14 days",
+     "Clindamycin plus gentamicin given by mouth",
+     "Ceftriaxone plus doxycycline plus metronidazole",
+     "Metronidazole plus an NSAID for symptomatic control",
+     "Ceftriaxone alone as a single weight-based intramuscular dose"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which test must be obtained in every woman being evaluated for pelvic inflammatory disease, and is the most commonly missed step?",
+    "ch": [
+     "An erythrocyte sedimentation rate with C-reactive protein",
+     "A saline microscopy wet mount looking for white blood cells",
+     "Diagnostic laparoscopy of the pelvis",
+     "Blood cultures drawn from two separate sites",
+     "A urine or serum pregnancy test"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A young woman with PID develops right upper quadrant pain with near-normal liver function tests. What is the likely explanation?",
+    "ch": [
+     "A tubo-ovarian abscess that has ruptured into the peritoneum",
+     "Fitz-Hugh-Curtis perihepatitis with violin-string adhesions",
+     "Hepatocellular injury caused by doxycycline therapy",
+     "Referred pain from intraperitoneal blood irritating the diaphragm",
+     "Acute cholecystitis requiring urgent cholecystectomy"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A woman with an intrauterine device is diagnosed with PID and started on antibiotics. What should be done with the IUD?",
+    "ch": [
+     "Leave it in place and reassess after 48-72 hours of therapy",
+     "Remove it immediately before the first antibiotic dose is given",
+     "Remove it and defer antibiotics until culture results return",
+     "Replace it with a combined oral contraceptive the same day",
+     "Admit her for parenteral clindamycin and gentamicin because of the device"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Tubal scarring from pelvic inflammatory disease leads to which classic set of sequelae?",
+    "ch": [
+     "Infertility, ectopic pregnancy, and chronic pelvic pain",
+     "Endometrial hyperplasia progressing to endometrial carcinoma",
+     "Ovarian torsion caused by an enlarging dermoid cyst",
+     "Premature ovarian insufficiency with a markedly elevated FSH",
+     "Cervical dysplasia progressing to invasive cervical carcinoma"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 22-year-old with PID has a fever of 102 F and ultrasound showing a thick-walled adnexal mass with fluid-filled tubes. What is the appropriate disposition?",
+    "ch": [
+     "Refer her for outpatient diagnostic laparoscopy in one week",
+     "Discharge on oral doxycycline and metronidazole with follow-up in two weeks",
+     "Discharge after a single intramuscular dose of ceftriaxone",
+     "Observe without antibiotics until the ultrasound can be repeated",
+     "Admit for parenteral therapy because a tubo-ovarian abscess is present"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient treated for PID has had no clinical improvement after 72 hours of appropriate antibiotics. What does this suggest?",
+    "ch": [
+     "The expected course, since relief typically takes a full two weeks",
+     "A tubo-ovarian abscess, a resistant organism, or the wrong diagnosis",
+     "Doxycycline-induced esophagitis explaining her ongoing symptoms",
+     "A disulfiram-like reaction between metronidazole and alcohol",
+     "Reinfection from an untreated sexual partner during the course"
+    ]
+   }
+  ]
+ },
+ "ectopic-pregnancy": {
+  "condition": "Ectopic Pregnancy",
+  "questions": [
+   {
+    "n": 1,
+    "q": "What is the single most common site of an ectopic pregnancy?",
+    "ch": [
+     "The endocervical canal of the uterine cervix",
+     "The surface of the ovary itself",
+     "The interstitial or cornual segment of the tube",
+     "A prior cesarean section scar",
+     "The ampulla of the fallopian tube"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "A 24-year-old woman presents with unilateral pelvic pain and vaginal bleeding after a missed period. What is the first diagnostic step?",
+    "ch": [
+     "A serum progesterone level to assess viability",
+     "A CBC with type and crossmatch only",
+     "A urine or serum beta-hCG",
+     "Transvaginal ultrasound performed before any laboratory testing",
+     "Diagnostic laparoscopy of the pelvis"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What does the \"discriminatory zone\" describe in the evaluation of a possible ectopic pregnancy?",
+    "ch": [
+     "It is the beta-hCG below which methotrexate therapy always fails",
+     "It is the percentage rise in beta-hCG expected over 48 hours",
+     "An intrauterine gestational sac should be visible on TVUS once beta-hCG is roughly 1,500-3,500 mIU/mL",
+     "It is the beta-hCG level at which Rh(D) immune globulin becomes necessary",
+     "beta-hCG must exceed 10,000 mIU/mL before any gestational sac becomes visible"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "In a stable patient with an indeterminate scan, what beta-hCG rise over 48 hours is expected in a normal intrauterine pregnancy?",
+    "ch": [
+     "A doubling every 12 hours without exception",
+     "A rise of at least about 49-53%",
+     "Any rise at all, however small, which confirms viability",
+     "A fall of at least 15% between days 4 and 7",
+     "No change, because beta-hCG plateaus early in normal pregnancy"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which clinical picture makes a patient a candidate for methotrexate rather than surgery?",
+    "ch": [
+     "Breastfeeding with a known immunodeficiency and no reliable follow-up available",
+     "Hemodynamic instability with free pelvic fluid and peritoneal signs on exam",
+     "Documented fetal cardiac activity within a large adnexal mass on ultrasound",
+     "Stable and unruptured with a low or plateauing beta-hCG, a small mass, no fetal cardiac activity, and reliable follow-up",
+     "Active peptic ulcer disease with abnormal hepatic and renal laboratory studies"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "How is response to methotrexate for an ectopic pregnancy monitored?",
+    "ch": [
+     "Recheck on day 1 and expect the level to have already fallen",
+     "Expect a 15% decline measured from the day of dosing to day 4",
+     "Repeat the dose automatically on day 7 regardless of the trend",
+     "Stop surveillance as soon as the patient’s pain has resolved",
+     "Recheck beta-hCG on days 4 and 7, expecting at least a 15% decline between them"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient with a positive pregnancy test reports new referred pain in her shoulder. What does this Kehr sign indicate?",
+    "ch": [
+     "Intraperitoneal blood irritating the diaphragm, suggesting rupture",
+     "Perihepatic adhesions left by a prior chlamydial infection",
+     "Carbon dioxide retained in the abdomen after laparoscopic surgery",
+     "An expected methotrexate reaction related to photosensitivity",
+     "Referred pain arising from a distended urinary bladder"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "An Rh-negative woman with an unruptured ectopic pregnancy and vaginal bleeding is treated medically. What must be given before discharge?",
+    "ch": [
+     "An NSAID for cramping pain during treatment",
+     "Rh(D) immune globulin to prevent alloimmunization",
+     "A prenatal vitamin containing folate",
+     "Immediate activation of the massive transfusion protocol",
+     "Folic acid supplementation to support the pregnancy"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which statement correctly contrasts salpingostomy with salpingectomy for a tubal ectopic pregnancy?",
+    "ch": [
+     "Salpingostomy preserves the tube but requires postoperative beta-hCG follow-up for persistent trophoblast",
+     "Salpingostomy removes the tube and eliminates any risk of recurrence",
+     "Both procedures require a dose of methotrexate afterward in every patient",
+     "Neither procedure requires beta-hCG follow-up once the specimen is confirmed",
+     "Salpingectomy preserves the tube and needs no further beta-hCG monitoring"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "After IVF, a patient has an intrauterine gestational sac plus a separate adnexal gestation on TVUS. What is this?",
+    "ch": [
+     "A normal intrauterine pregnancy, since the sac excludes an ectopic",
+     "A ruptured corpus luteum cyst accounting for the adnexal finding",
+     "An interstitial ectopic pregnancy that has already ruptured",
+     "A heterotopic pregnancy, which is notably more common after assisted reproduction",
+     "An incomplete abortion of the intrauterine gestation"
+    ]
+   }
+  ]
+ },
+ "ovarian-torsion": {
+  "condition": "Ovarian Torsion",
+  "questions": [
+   {
+    "n": 1,
+    "q": "What is the correct sequence of vascular events in ovarian torsion?",
+    "ch": [
+     "Venous and lymphatic outflow are occluded first, and continued torsion then compromises arterial inflow",
+     "Hemorrhage into the ovarian stroma ruptures the capsule at the outset",
+     "Arterial inflow stops first, causing immediate infarction of the ovary",
+     "Only lymphatic drainage is affected, so true ischemia never develops",
+     "Bacterial invasion of the pedicle produces inflammatory thrombosis"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "What is the classic lead point for ovarian torsion?",
+    "ch": [
+     "A degenerating uterine leiomyoma",
+     "An ovarian endometrioma, or chocolate cyst",
+     "A mature cystic teratoma, or dermoid",
+     "A tubo-ovarian abscess from ascending infection",
+     "A cluster of arrested antral follicles in the ovary"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What is the most heavily tested pearl about Doppler ultrasound in suspected ovarian torsion?",
+    "ch": [
+     "Doppler findings determine whether a beta-hCG is needed",
+     "Preserved arterial flow reliably excludes the diagnosis",
+     "Absent flow is an early and reassuring finding",
+     "Preserved arterial flow does not rule out torsion",
+     "Doppler is more specific than the whirlpool sign"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "The \"whirlpool sign\" on pelvic ultrasound represents which structure?",
+    "ch": [
+     "Violin-string adhesions over the liver capsule",
+     "The twisted vascular pedicle",
+     "A homogeneous ground-glass cystic adnexal mass",
+     "Thick, fluid-filled fallopian tubes",
+     "Free intraperitoneal fluid with an empty uterus"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Why does the right ovary torse more often than the left?",
+    "ch": [
+     "Dermoid cysts arise almost exclusively on the right side",
+     "Prior appendicitis on the right predisposes to adhesions",
+     "The sigmoid colon may stabilize the left adnexa",
+     "The right ovarian vein drains directly into the inferior vena cava",
+     "The right ovary is normally substantially larger than the left"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which laboratory test should be obtained first in a woman with sudden severe unilateral pelvic pain and a suspected adnexal mass?",
+    "ch": [
+     "Tumor markers, to characterize the adnexal mass",
+     "beta-hCG, to exclude ectopic pregnancy",
+     "A white blood cell count, because leukocytosis confirms torsion",
+     "An erythrocyte sedimentation rate",
+     "A urinalysis, to diagnose nephrolithiasis first"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "At laparoscopy for torsion, the ovary appears dusky. What is the recommended management?",
+    "ch": [
+     "Urgent initiation of a combined oral contraceptive in the emergency department",
+     "Oophorectomy whenever the ovary appears dusky at surgery",
+     "Observation with analgesia until Doppler flow disappears",
+     "Antibiotics alone, because infection drives the ischemia",
+     "Detorsion with ovarian conservation, since most dusky ovaries recover"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "What is the characteristic history of intermittent ovarian torsion?",
+    "ch": [
+     "Recurrent, self-limited episodes of pain from twisting and untwisting before a sustained event",
+     "Cyclic pain that begins one to two days before each menses",
+     "Pain that occurs only in patients undergoing ovulation induction",
+     "Steadily worsening pain that never remits at any point",
+     "Pain that is relieved only by a course of antibiotic therapy"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 19-year-old has sudden severe right pelvic pain, vomiting, and a 6 cm adnexal mass; Doppler shows preserved arterial flow. What is the next step?",
+    "ch": [
+     "Start a combined oral contraceptive and reassess in a month",
+     "Treat her empirically for pelvic inflammatory disease",
+     "Discharge her, because normal Doppler flow excludes torsion",
+     "Repeat the ultrasound in two weeks as an outpatient",
+     "Proceed to diagnostic laparoscopy despite the reassuring Doppler study"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A 9-year-old girl is found to have torsion of a normal-sized ovary. What explains this?",
+    "ch": [
+     "Torsion cannot occur without an adnexal mass at any age",
+     "Ovulation induction is the only risk factor operating in this age group",
+     "Preserved Doppler flow makes torsion impossible in a child",
+     "A long mesosalpinx or utero-ovarian ligament allows a normal ovary to torse",
+     "A dermoid cyst is invariably present even when the imaging looks normal"
+    ]
+   }
+  ]
+ },
+ "aub": {
+  "condition": "Abnormal Uterine Bleeding",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement best defines abnormal uterine bleeding?",
+    "ch": [
+     "Bleeding that occurs only after a woman has completed twelve consecutive months of amenorrhea",
+     "Painful menses severe enough to interfere with daily activity, whatever the bleeding volume happens to be",
+     "Vaginal bleeding that arises from a cervical, vaginal, or traumatic source rather than from the uterus",
+     "Bleeding accompanied by a positive pregnancy test together with cramping lower abdominal pelvic pain",
+     "Bleeding that is abnormal in frequency, regularity, duration, or volume, and which also includes intermenstrual bleeding"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which statement correctly describes the FIGO PALM-COEIN classification of abnormal uterine bleeding?",
+    "ch": [
+     "PALM names the non-structural causes, which are identified by laboratory testing and history rather than by imaging",
+     "COEIN names the structural lesions of the uterus that transvaginal ultrasound and hysteroscopy are used to detect",
+     "PALM names the structural causes — polyp, adenomyosis, leiomyoma, and malignancy or hyperplasia — that imaging or biopsy finds",
+     "The N in COEIN stands for neoplasia, the malignant category of causes of abnormal uterine bleeding",
+     "PALM-COEIN replaced transvaginal ultrasound as the recommended imaging protocol for abnormal uterine bleeding"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which test must always come first in evaluating abnormal uterine bleeding in a reproductive-age woman?",
+    "ch": [
+     "A urine or serum hCG to exclude pregnancy before anything else",
+     "An endometrial biopsy to assess for endometrial hyperplasia or carcinoma",
+     "A TSH and prolactin level to look for causes of ovulatory dysfunction",
+     "A CBC with ferritin and iron studies to quantify the degree of anemia",
+     "A transvaginal ultrasound, the first-line imaging study for structural causes"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A 34-year-old with PCOS reports unpredictable, sometimes very heavy bleeding at intervals of 45 to 70 days. Which mechanism best explains her ovulatory dysfunction (AUB-O)?",
+    "ch": [
+     "An acquired coagulopathy prevents clot formation in endometrial vessels after otherwise normal ovulation",
+     "Anovulation removes progesterone, so unopposed estrogen builds an unstable proliferative endometrium that sheds irregularly",
+     "Iatrogenic breakthrough bleeding from an exogenous progestin that has already atrophied the endometrial lining",
+     "A submucosal leiomyoma distorts the uterine cavity and produces predictable, cyclic heavy menstrual bleeding",
+     "Excess progesterone from a persistent corpus luteum thins the endometrium and shortens every cycle interval"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A 38-year-old with obesity and PCOS has had heavy irregular bleeding for a year and has not responded to six months of cyclic progestin. Which step is indicated?",
+    "ch": [
+     "Start combined oral contraceptives and reassess her in another year without any further evaluation",
+     "Defer any tissue sampling until she turns 45, the age threshold at which endometrial biopsy becomes indicated",
+     "Proceed directly to hysterectomy, because medical therapy for anovulatory bleeding has already failed her",
+     "Perform an endometrial biopsy, since unopposed-estrogen risk and failed medical therapy are indications under 45",
+     "Repeat a transvaginal ultrasound alone, which reliably excludes endometrial hyperplasia in a patient like this"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which medical therapy is the most effective option for reducing menstrual blood loss in heavy menstrual bleeding?",
+    "ch": [
+     "The levonorgestrel-releasing IUD, which delivers local progestin to atrophy the endometrium",
+     "Naproxen taken during menses to lower prostaglandin-driven menstrual flow and cramping",
+     "Tranexamic acid taken on heavy bleeding days as a non-hormonal antifibrinolytic agent",
+     "Cyclic oral progestin used to counter unopposed estrogen between anovulatory cycles",
+     "A GnRH agonist continued long term to maintain amenorrhea indefinitely as monotherapy"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient with heavy menstrual bleeding who hopes to conceive soon asks about tranexamic acid. Which statement is accurate?",
+    "ch": [
+     "It is a progestin that thins the endometrium and must be taken continuously on every day of the cycle",
+     "It regulates cycle length and provides contraception, so it must be stopped before attempting pregnancy",
+     "It is a non-hormonal antifibrinolytic taken only during menses; it neither regulates cycles nor gives contraception",
+     "It is safe in active thromboembolic disease and is the preferred agent for a patient with a recent clot",
+     "It is given intravenously in hospital for acute stabilization of hemodynamically significant heavy bleeding"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A 15-year-old has had flooding periods since menarche and bruises easily; her mother has similar bleeding. Which addition to the workup does the module emphasize?",
+    "ch": [
+     "Serial ferritin and iron studies alone, deferring any bleeding-disorder evaluation entirely",
+     "An endometrial biopsy to exclude endometrial hyperplasia and carcinoma at this age",
+     "Saline infusion sonohysterography to characterize a suspected submucosal leiomyoma",
+     "Prolactin and TSH only, since anovulation explains all heavy bleeding in adolescents",
+     "A von Willebrand panel with platelet count to evaluate for an inherited coagulopathy"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 61-year-old reports two episodes of vaginal bleeding. Transvaginal ultrasound shows an endometrial thickness of 3 mm, and bleeding continues at follow-up. What is the appropriate action?",
+    "ch": [
+     "Reassure her that a stripe of 4 mm or less excludes carcinoma, so no further evaluation is needed",
+     "Obtain endometrial tissue sampling, because persistent postmenopausal bleeding still warrants biopsy",
+     "Start systemic estrogen for presumed atrophic bleeding and reassess her again in one year",
+     "Repeat the ultrasound in six months and biopsy only if the endometrial stripe has thickened",
+     "Check a TSH and prolactin level, since ovulatory dysfunction is the likely cause at her age"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A woman arrives soaking more than one pad per hour with a heart rate of 124 and systolic pressure of 84. Which approach is the priority?",
+    "ch": [
+     "Place a levonorgestrel IUD immediately, as the most effective medical therapy for bleeding volume",
+     "Begin cyclic oral progestin and recheck a hemoglobin level at her next scheduled clinic visit",
+     "Obtain a von Willebrand panel and defer resuscitation until the coagulopathy results return",
+     "Prioritize ABCs and hemodynamic stability with large-bore IV access, fluids, possible transfusion, and high-dose hormonal therapy",
+     "Arrange an outpatient transvaginal ultrasound and start an NSAID for prostaglandin-driven menstrual flow"
+    ]
+   }
+  ]
+ },
+ "fibroids": {
+  "condition": "Uterine Fibroids (Leiomyoma)",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which description best characterizes uterine fibroids (leiomyomas)?",
+    "ch": [
+     "Benign monoclonal proliferations of uterine smooth muscle and extracellular matrix driven by estrogen and progesterone",
+     "Hormone-independent fibrous nodules of the cervix that characteristically enlarge after menopause begins",
+     "Polypoid overgrowths of the endometrial lining that remain confined to the endometrial cavity",
+     "Malignant smooth-muscle tumors of the myometrium that arise in most women during the reproductive years",
+     "Endometrial glands and stroma implanted within the myometrium, producing a tender, diffusely boggy uterus"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which combination is the classic presentation of symptomatic uterine fibroids?",
+    "ch": [
+     "Purulent cervical discharge with cervical motion tenderness and adnexal tenderness on bimanual examination",
+     "Postmenopausal bleeding with a thin endometrial stripe and a small, mobile, retroverted uterus",
+     "Menorrhagia plus bulk or pressure symptoms with an enlarged, firm, irregular, non-tender uterus",
+     "Cyclic pelvic pain with a fixed, exquisitely tender uterus and nodular thickening of the uterosacral ligaments",
+     "Amenorrhea with hot flashes and night sweats plus a persistently elevated follicle-stimulating hormone level"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which imaging study is first-line and confirmatory for suspected uterine fibroids?",
+    "ch": [
+     "Contrast-enhanced CT of the abdomen and pelvis with delayed images through the pelvis",
+     "Pelvic MRI, which is reserved for mapping number, size, and location before surgery",
+     "Saline infusion sonohysterography, which is used mainly to define the endometrial cavity",
+     "Diagnostic hysteroscopy, which directly visualizes submucosal lesions within the cavity",
+     "Transvaginal ultrasound, showing hypoechoic, well-circumscribed myometrial masses"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A woman has severe heavy menstrual bleeding and secondary infertility but no pelvic pressure. Which fibroid location best explains this?",
+    "ch": [
+     "Pedunculated on a stalk, presenting with acute severe pain when the stalk undergoes torsion",
+     "Submucosal, distorting the endometrial cavity and causing the worst bleeding and infertility",
+     "Cervical, presenting with obstructed labor rather than with any change in menstrual flow",
+     "Intramural and small, discovered incidentally and asymptomatic in the vast majority of women",
+     "Subserosal, projecting outward from the serosal surface and producing bulk and pressure effects"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Why might a levonorgestrel IUD fail to control bleeding in a woman with fibroids?",
+    "ch": [
+     "A submucosal fibroid distorting the uterine cavity makes the levonorgestrel IUD less effective",
+     "Fibroids metabolize levonorgestrel within the myometrium before it reaches the endometrium",
+     "The IUD raises circulating estrogen levels and therefore stimulates further fibroid growth",
+     "Local progestin has no effect on the endometrium and never reduces menstrual blood flow",
+     "The device requires venous thromboembolism screening before it can safely be inserted"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A woman with anemia from fibroids is started on leuprolide before myomectomy. Which counseling point is essential?",
+    "ch": [
+     "It is a reliable contraceptive and permanently eliminates the fibroids, so surgery can be cancelled entirely",
+     "It should be taken only on heavy bleeding days, exactly like the non-hormonal antifibrinolytic option would be",
+     "It works by raising circulating estrogen levels, which is what shrinks the fibroids and corrects the anemia",
+     "It can be continued indefinitely because it has no measurable effect on bone mineral density over time",
+     "It is a short-term bridge, usually up to six months, because the hypoestrogenic state causes bone loss and menopausal symptoms"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which statement about uterine artery embolization for fibroids is correct?",
+    "ch": [
+     "It is the definitive cure for fibroids and eliminates any possibility of later recurrence",
+     "It requires removal of the uterus and is therefore reserved for completed childbearing",
+     "It is a hormonal therapy that shrinks fibroids by inducing a hypoestrogenic menopausal state",
+     "It spares the uterus by radiologic infarction of fibroids but is not for women desiring future fertility",
+     "It is the preferred option for a woman who wants to become pregnant within the next year"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A 58-year-old who is three years past menopause has a uterine mass that has enlarged noticeably over six months. What is the key concern?",
+    "ch": [
+     "Adenomyosis, which characteristically enlarges the uterus during the years following menopause",
+     "A degenerating pedunculated fibroid, whose only possible presentation is acute severe pelvic pain",
+     "Iron-deficiency anemia from chronic blood loss, which drives compensatory uterine enlargement",
+     "Leiomyosarcoma, since rapid or postmenopausal growth cannot be reliably excluded by imaging",
+     "Ordinary fibroid growth, which is expected after menopause as circulating estrogen levels decline"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which pairing correctly matches a fibroid treatment to the patient it suits?",
+    "ch": [
+     "Uterine artery embolization when future pregnancy is planned; myomectomy for bulk symptoms only",
+     "Endometrial ablation when fertility is desired; GnRH agonists as lifelong definitive therapy",
+     "Myomectomy when fertility is desired; hysterectomy, the definitive cure, when childbearing is complete",
+     "Tranexamic acid as the definitive surgical cure; iron supplementation for cavity-distorting lesions",
+     "Hysterectomy when fertility is desired; myomectomy once childbearing has already been completed"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A woman with fibroid-related menorrhagia is discharged on iron and tranexamic acid. Which teaching is correct?",
+    "ch": [
+     "Avoid vitamin C with iron because it blocks absorption, and take both medicines only during menses",
+     "Take the iron with vitamin C and expect dark stools and constipation; take tranexamic acid on heavy days only",
+     "Take the iron with an antacid to prevent nausea, and take tranexamic acid every day of the month",
+     "Report dark stools immediately as gastrointestinal bleeding and stop the iron supplement at once",
+     "Take tranexamic acid continuously for contraception, and stop the iron as soon as the fatigue improves"
+    ]
+   }
+  ]
+ },
+ "menopause": {
+  "condition": "Menopause",
+  "questions": [
+   {
+    "n": 1,
+    "q": "How is menopause defined?",
+    "ch": [
+     "By a single elevated follicle-stimulating hormone level drawn at any point during perimenopause",
+     "Clinically and retrospectively, after twelve consecutive months of amenorrhea without another cause",
+     "By the onset of hot flashes and night sweats, regardless of the menstrual bleeding pattern",
+     "By six consecutive months of erratic cycles accompanied by a low serum estradiol level",
+     "By an endometrial biopsy showing an atrophic endometrium in a woman older than forty-five"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Why does FSH rise before, and higher than, LH in menopause?",
+    "ch": [
+     "The hypothalamic thermoregulatory center directly suppresses LH during each hot flash",
+     "Prolactin excess blocks LH secretion while leaving FSH secretion entirely intact",
+     "Progesterone from a persistent corpus luteum selectively inhibits LH but spares FSH",
+     "Loss of inhibin B removes selective negative feedback on FSH as follicles are depleted",
+     "Rising estradiol from the depleted ovary selectively stimulates pituitary FSH release"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "A 52-year-old with classic hot flashes, night sweats, and twelve months of amenorrhea asks what testing she needs. What is the correct approach?",
+    "ch": [
+     "Check FSH and estradiol levels twice, several weeks apart, to confirm ovarian follicular failure",
+     "Order a karyotype and FMR1 premutation test to identify the cause of her ovarian failure",
+     "Obtain a transvaginal ultrasound and an endometrial biopsy to establish the diagnosis",
+     "Measure FSH once, since a single value reliably confirms menopause even in perimenopause",
+     "No lab testing is required; the diagnosis rests on the pattern of amenorrhea and symptoms"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A 60-year-old who is eight years past her last menstrual period reports light vaginal spotting. What is the correct interpretation?",
+    "ch": [
+     "Evaluation is warranted only if the bleeding becomes heavy or recurs more than three times",
+     "Any postmenopausal bleeding is endometrial cancer until proven otherwise and mandates ultrasound or biopsy",
+     "It is a normal consequence of estrogen decline and should simply be treated with vaginal estrogen",
+     "Light spotting this long after menopause is expected atrophic bleeding and needs no evaluation",
+     "The spotting proves she has not truly reached menopause, so the twelve-month clock restarts"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A woman with an intact uterus is starting systemic estrogen for severe vasomotor symptoms. What must be added, and why?",
+    "ch": [
+     "A progestogen such as micronized progesterone, to prevent endometrial hyperplasia and cancer",
+     "Low-dose vaginal estrogen, because systemic estrogen alone cannot reach the endometrium",
+     "A bisphosphonate, because systemic estrogen accelerates postmenopausal bone loss",
+     "Nothing additional, since unopposed systemic estrogen is safe when the uterus is intact",
+     "A selective serotonin reuptake inhibitor, which is required to make the estrogen effective"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which therapy is first-line for genitourinary syndrome of menopause — vaginal dryness, dyspareunia, and recurrent urinary tract infections?",
+    "ch": [
+     "Fezolinetant, an NK3 receptor antagonist that acts directly on the vaginal epithelium",
+     "A bisphosphonate with calcium and vitamin D, which restores vaginal epithelial thickness",
+     "Low-dose vaginal estrogen, with minimal systemic absorption and usually no added progestogen",
+     "Systemic transdermal estrogen with a progestogen, titrated upward to control genital symptoms",
+     "Gabapentin dosed at bedtime, which relieves genital dryness along with nightly discomfort"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A woman taking tamoxifen for breast cancer has disabling hot flashes. Which non-hormonal choice is appropriate?",
+    "ch": [
+     "Low-dose paroxetine, which is FDA-approved for vasomotor symptoms and therefore preferred here",
+     "Fluoxetine, because a strong CYP2D6 inhibitor increases the effectiveness of tamoxifen",
+     "Systemic estrogen with a progestogen, the most effective therapy for vasomotor symptoms",
+     "Venlafaxine, avoiding paroxetine and fluoxetine because CYP2D6 inhibition blunts tamoxifen activation",
+     "Low-dose vaginal estrogen, which controls vasomotor symptoms without any systemic risk"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which patient best fits the timing hypothesis for a favorable hormone-therapy risk-benefit balance?",
+    "ch": [
+     "A 72-year-old with bothersome hot flashes twenty years past her final menstrual period",
+     "A 58-year-old with prior estrogen-receptor-positive breast cancer and severe hot flashes",
+     "A symptomatic 54-year-old three years past menopause with no contraindications to estrogen",
+     "A 61-year-old with a prior deep vein thrombosis and unexplained vaginal bleeding",
+     "A 49-year-old with active liver disease who is seeking systemic therapy for night sweats"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 34-year-old has had no menses for a year along with hot flashes. Which workup is specified for suspected primary ovarian insufficiency?",
+    "ch": [
+     "A single FSH level, which is sufficient to diagnose ovarian failure at any age",
+     "No testing at all, since menopause is always a clinical and retrospective diagnosis",
+     "An endometrial biopsy with transvaginal ultrasound to establish ovarian follicular failure",
+     "DEXA scanning alone, deferring any hormonal evaluation until she reaches age forty",
+     "Two FSH levels weeks apart plus estradiol, with karyotype and FMR1 premutation testing considered"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A woman with several venous thromboembolism risk factors needs systemic hormone therapy. Which route is preferred, and why?",
+    "ch": [
+     "Transdermal estrogen, because bypassing hepatic first-pass metabolism lowers VTE risk",
+     "Oral estrogen with a progestogen, the route the WHI showed to reduce thromboembolic risk",
+     "Intravenous conjugated estrogen, which avoids thromboembolic risk altogether in this setting",
+     "Either route is equivalent, since the thromboembolic risk of estrogen is identical in both forms",
+     "Oral estrogen, because hepatic first-pass metabolism inactivates the clotting factors"
+    ]
+   }
+  ]
+ },
+ "kawasaki": {
+  "condition": "Kawasaki Disease",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which description best characterizes Kawasaki disease?",
+    "ch": [
+     "An acute self-limited medium-vessel vasculitis threatening the coronary arteries",
+     "A post-streptococcal immune reaction producing mitral valve scarring",
+     "A hereditary connective tissue disorder causing aortic root dilation",
+     "A small-vessel vasculitis with palpable purpura and renal involvement",
+     "A large-vessel arteritis causing jaw claudication and vision loss"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which clinical criteria establish a diagnosis of complete (classic) Kawasaki disease?",
+    "ch": [
+     "Coronary dilation on echocardiography plus an elevated CRP",
+     "Fever for at least 5 days plus 2 of the 5 CRASH criteria in an infant",
+     "Fever for at least 5 days plus 4 of the 5 CRASH criteria",
+     "Fever of any duration plus a positive throat culture for streptococci",
+     "Fever for at least 5 days plus thrombocytosis on the blood count"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which statement about diagnosing Kawasaki disease is correct?",
+    "ch": [
+     "Characteristic thrombocytosis in the first week confirms the diagnosis",
+     "Coronary angiography is the diagnostic gold standard in young children",
+     "A specific serologic antibody titer confirms the diagnosis",
+     "There is no confirmatory laboratory test — the diagnosis is clinical",
+     "Echocardiographic coronary dilation is required to make the diagnosis"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "What is the first-line treatment for Kawasaki disease and its timing?",
+    "ch": [
+     "Infliximab as initial therapy for every newly diagnosed child",
+     "Low-dose aspirin alone until the fever resolves spontaneously",
+     "Warfarin plus low-dose aspirin from the day of diagnosis",
+     "IVIG plus aspirin, ideally within the first 10 days of illness",
+     "Corticosteroids alone, started once the fever exceeds 5 days"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Why does the aspirin dose change during the course of Kawasaki disease?",
+    "ch": [
+     "Dosing is titrated to the child's response to the IVIG infusion itself",
+     "High dose is anti-inflammatory acutely; low dose is antiplatelet once fever resolves",
+     "Aspirin is stopped entirely once the first echocardiogram is normal",
+     "Low dose is used acutely to avoid Reye syndrome and then raised",
+     "The dose is halved only if thrombocytosis develops in the second week"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "How is IVIG resistance defined, and what is the standard next step?",
+    "ch": [
+     "A rising platelet count after the infusion — start anticoagulation",
+     "Persistent or recrudescent fever at least 36 hours after the first dose — give a second IVIG dose",
+     "New coronary dilation on echo at 6 weeks — restart high-dose aspirin",
+     "Failure of the rash to fade within 48 hours — start infliximab",
+     "Any fever within 12 hours of the infusion — begin corticosteroids"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which family teaching point follows IVIG administration for Kawasaki disease?",
+    "ch": [
+     "Aspirin may be stopped as soon as the child is afebrile at home",
+     "The annual influenza vaccine should be avoided while on aspirin",
+     "Follow-up echocardiography is unnecessary if the first study was normal",
+     "Ibuprofen should replace aspirin to lower the risk of Reye syndrome",
+     "Live vaccines such as MMR and varicella are deferred about 11 months"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A 7-month-old has 8 days of fever with only conjunctivitis and a rash, a CRP of 6 mg/dL, and an ESR of 55 mm/h. What does the module advise?",
+    "ch": [
+     "Apply the incomplete Kawasaki algorithm with supplemental labs and an echocardiogram",
+     "Wait for a third clinical criterion before ordering any cardiac imaging",
+     "Reassure the family, because incomplete disease carries little aneurysm risk",
+     "Treat as scarlet fever with oral antibiotics and recheck in 48 hours",
+     "Defer IVIG past day 10 to see whether the fever resolves on its own"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A child with Kawasaki disease and known giant coronary aneurysms develops chest pain and poor perfusion. Which additional therapy does the module attach to giant aneurysms?",
+    "ch": [
+     "Infliximab given to reverse the established aneurysm",
+     "A third dose of IVIG infused over 24 hours",
+     "Anticoagulation with warfarin or low-molecular-weight heparin",
+     "High-dose aspirin restarted for its anti-inflammatory effect",
+     "Long-term corticosteroids to remodel the coronary vessel wall"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which statement about coronary outcomes in Kawasaki disease is correct?",
+    "ch": [
+     "Coronary involvement is the leading cause of congenital heart disease in children",
+     "Aneurysms occur in about 5% of untreated and 25% of treated children",
+     "Coronary abnormalities are limited to children meeting complete criteria",
+     "Aneurysm risk is unaffected by the timing of IVIG within the first month",
+     "About 25% develop coronary abnormalities untreated, under 5% with treatment"
+    ]
+   }
+  ]
+ },
+ "epiglottitis": {
+  "condition": "Epiglottitis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which description best fits epiglottitis?",
+    "ch": [
+     "Bacterial inflammation and edema of the epiglottis and supraglottic tissues",
+     "A tracheal foreign body producing sudden unilateral loss of breath sounds",
+     "A viral, subglottic process producing a barky cough and gradual onset",
+     "A retropharyngeal abscess causing neck stiffness over one to two weeks",
+     "Bronchiolar inflammation producing wheeze and a prolonged expiratory phase"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which triad is the classic high-yield presentation of epiglottitis?",
+    "ch": [
+     "Trismus, uvular deviation, and a muffled cry",
+     "Cough, coryza, and conjunctival injection",
+     "Barky cough, inspiratory stridor, and hoarseness",
+     "Drooling, dysphagia, and distress",
+     "Fever, wheeze, and a prolonged expiratory phase"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "A toxic febrile child sits forward leaning on his hands, neck extended and chin thrust forward. What does this posture represent?",
+    "ch": [
+     "A seizure prodrome requiring immediate benzodiazepine therapy",
+     "Meningeal irritation from bacterial meningitis",
+     "Opisthotonic posturing from a brainstem process",
+     "Guarding from an acute abdomen with referred pain",
+     "The tripod position, adopted to maximize airway diameter"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which action must be avoided in suspected epiglottitis before the airway is secured?",
+    "ch": [
+     "Allowing the child to sit upright on a parent's lap",
+     "Offering humidified oxygen by blow-by from a distance",
+     "Examining the throat with a tongue depressor",
+     "Calling anesthesia and ENT to the bedside immediately",
+     "Bringing intubation and surgical airway equipment to the room"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which radiographic sign corresponds to epiglottitis, and which to croup?",
+    "ch": [
+     "Thumbprint sign in both, differing only in degree of severity",
+     "Sail sign in epiglottitis; thumbprint sign in croup",
+     "Steeple sign in epiglottitis; sail sign in croup",
+     "Thumbprint sign in epiglottitis; steeple sign in croup",
+     "Steeple sign in epiglottitis; thumbprint sign in croup"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "How and where is the diagnosis of epiglottitis definitively confirmed?",
+    "ch": [
+     "By contrast CT of the neck once the child is sedated and supine",
+     "By a lateral neck radiograph obtained in the emergency department",
+     "By a throat culture taken at triage before antibiotics are given",
+     "By flexible nasal endoscopy performed at the bedside without preparation",
+     "By direct visualization of a cherry-red swollen epiglottis in the OR"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which empiric antibiotic therapy does the module recommend for epiglottitis?",
+    "ch": [
+     "Oral amoxicillin, adequate for most community organisms",
+     "IV third-generation cephalosporin, adding vancomycin when MRSA is a concern",
+     "IV metronidazole alone to cover the oral anaerobes",
+     "Nebulized antibiotics delivered with humidified oxygen",
+     "Oral rifampin as both treatment and contact prophylaxis"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Why does the module say to suspect epiglottitis in unvaccinated children and in adults?",
+    "ch": [
+     "Because Haemophilus influenzae type b has become far more virulent",
+     "Because Hib vaccination cut pediatric cases and shifted the age distribution older",
+     "Because croup and epiglottitis have merged into a single clinical entity",
+     "Because racemic epinephrine has become the definitive therapy",
+     "Because the thumbprint sign is now seen only in adult patients"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A child with suspected epiglottitis becomes quiet and less responsive after a period of agitation, and the oxygen saturation is falling. What does this indicate?",
+    "ch": [
+     "A sedation effect that should be reversed before any intervention",
+     "Resolution of edema that now permits a bedside throat examination",
+     "Impending complete airway obstruction requiring the airway team immediately",
+     "A therapeutic response to the nebulized racemic epinephrine",
+     "Improvement, since the work of breathing has visibly decreased"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "After the airway is secured in a confirmed Hib case, which actions belong to the recovery and prevention phase?",
+    "ch": [
+     "Rifampin prophylaxis for eligible contacts and reinforcing Hib vaccination",
+     "Daily repeat lateral neck films until the thumbprint sign has cleared",
+     "Nebulized racemic epinephrine every four hours until extubation",
+     "Immediate extubation in the OR and discharge on oral antibiotics",
+     "Hourly deep suctioning and withholding sedation to assess breathing"
+    ]
+   }
+  ]
+ }
+}

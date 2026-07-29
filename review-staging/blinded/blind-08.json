@@ -1,0 +1,922 @@
+{
+ "tia": {
+  "condition": "Transient Ischemic Attack",
+  "questions": [
+   {
+    "n": 1,
+    "q": "How does the module define a transient ischemic attack?",
+    "ch": [
+     "Transient focal neurologic dysfunction from ischemia without acute infarction on imaging",
+     "A hemorrhagic event that resolves once the blood is reabsorbed by the brain",
+     "Any neurologic deficit that resolves within 24 hours, regardless of imaging",
+     "A small completed infarct that produces only mild, temporary symptoms",
+     "A migraine-equivalent phenomenon with positive visual and sensory features"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "A patient describes a curtain coming down over one eye, lasting five minutes and then clearing completely. What does the module say this signals, and what should be imaged?",
+    "ch": [
+     "Retinal migraine; no vascular imaging is required after a normal eye exam",
+     "Amaurosis fugax from ipsilateral carotid disease — image the carotids",
+     "Occipital lobe ischemia; the finding localizes to the posterior circulation",
+     "Optic neuritis; obtain an orbital MRI with contrast rather than vessel imaging",
+     "Papilledema from raised intracranial pressure; measure an opening pressure"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which items make up the ABCD² score as the module lists it?",
+    "ch": [
+     "Age ≥60, BP ≥140/90, clinical features, duration ≥60 minutes, and diabetes",
+     "Atrial fibrillation, BMI, carotid stenosis, DWI lesion, and dyslipidemia",
+     "Age, baseline NIHSS, CT findings, dissection risk, and dehydration",
+     "Age, bleeding risk, cholesterol, duration, and dysphagia",
+     "Aphasia, blood glucose, creatinine, diplopia, and dizziness"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which imaging test does the module prefer to distinguish a TIA from a minor stroke?",
+    "ch": [
+     "Echocardiography, which detects the infarct as a wall motion change",
+     "Catheter angiography, performed routinely in every TIA presentation",
+     "MRI with DWI, because a DWI-positive lesion means infarction, not TIA",
+     "Non-contrast head CT, which reliably shows small early infarcts",
+     "Carotid duplex ultrasound, which images the brain parenchyma directly"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Why does the module call a TIA a medical emergency rather than a benign event?",
+    "ch": [
+     "Because the deficit is likely to persist for several weeks before improving",
+     "Because TIA converts to intracerebral hemorrhage in most untreated patients",
+     "Because the transient deficit itself causes permanent cognitive impairment",
+     "Because a TIA always indicates a mechanical valve requiring urgent surgery",
+     "Up to 10-15% have a stroke within 90 days, half of those in the first 48 hours"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient has a high-risk TIA with an ABCD² score of 5. Which antiplatelet strategy does the module support?",
+    "ch": [
+     "Clopidogrel alone, started only after the carotid imaging has returned",
+     "No antiplatelet until an echocardiogram excludes a cardioembolic source",
+     "Aspirin monotherapy alone, since dual therapy has no role in high-risk TIA",
+     "Aspirin plus clopidogrel for 21 days, then step down to a single agent",
+     "Aspirin plus clopidogrel continued indefinitely for maximal protection"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Carotid imaging after a TIA shows 80% stenosis on the symptomatic side. What does the module recommend?",
+    "ch": [
+     "Repeat duplex ultrasound in one year with no change to current therapy",
+     "Medical therapy only, since revascularization is reserved for total occlusion",
+     "Endarterectomy deferred at least six months to let the plaque stabilize first",
+     "Anticoagulation with a DOAC instead of any surgical or stenting procedure",
+     "Endarterectomy or stenting, ideally within about two weeks of the event"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A TIA patient is found to have atrial fibrillation and a mechanical mitral valve. Which anticoagulant does the module specify?",
+    "ch": [
+     "Rivaroxaban, dose-reduced for the valve rather than for renal function",
+     "Aspirin plus clopidogrel indefinitely in place of anticoagulation entirely",
+     "Dabigatran, which the module recommends specifically for mechanical valves",
+     "Warfarin, with an INR target of 2.5-3.5 for a mechanical mitral valve",
+     "Apixaban, because DOACs are preferred in every atrial fibrillation patient"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 38-year-old has a transient hemiparesis along with neck pain, headache, and a partial ptosis with miosis on the same side. What does the module say to suspect?",
+    "ch": [
+     "Crescendo TIAs from a critical carotid plaque requiring urgent endarterectomy",
+     "Small-vessel lacunar disease from long-standing untreated hypertension",
+     "Arterial dissection, suggested by neck pain and headache with Horner syndrome in a younger patient",
+     "Cardioembolism from previously undiagnosed paroxysmal atrial fibrillation",
+     "Migraine aura, because the deficit was transient in a patient under forty"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "The standard workup after a TIA is unrevealing and no embolic source is found. Which next step does the module recommend?",
+    "ch": [
+     "Proceed to carotid endarterectomy despite the absence of any stenosis",
+     "Prolonged rhythm monitoring — a 30-day event monitor or loop recorder — for paroxysmal AF",
+     "Stop all antithrombotic therapy, since no mechanism has been identified",
+     "Start empiric warfarin with an INR target of 2.5-3.5 for presumed embolism",
+     "Repeat the MRI with DWI weekly until a lesion eventually appears on imaging"
+    ]
+   }
+  ]
+ },
+ "meningitis": {
+  "condition": "Bacterial Meningitis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which organism is the most common overall cause of bacterial meningitis in adults?",
+    "ch": [
+     "Neisseria meningitidis",
+     "Listeria monocytogenes",
+     "Group B Streptococcus (S. agalactiae)",
+     "Staphylococci and gram-negative rods",
+     "Streptococcus pneumoniae"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which set of findings is the classic triad of bacterial meningitis?",
+    "ch": [
+     "Fever, nuchal rigidity, and altered mental status",
+     "Fever, papilledema, and photophobia",
+     "Headache, petechial rash, and bradycardia",
+     "Neck stiffness, new seizure, and hypotension",
+     "Fever, focal deficit, and sensorineural hearing loss"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which CSF profile is characteristic of bacterial meningitis?",
+    "ch": [
+     "Low opening pressure with a normal cell count and low protein",
+     "High opening pressure, neutrophilic pleocytosis, low glucose, and high protein",
+     "Normal opening pressure, lymphocytic pleocytosis, normal glucose, and mildly high protein",
+     "Lymphocytic pleocytosis with very low glucose and very high protein",
+     "Neutrophilic pleocytosis with normal glucose and normal protein"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A 74-year-old man presents with fever, neck stiffness, and confusion. Which empiric antibiotic regimen is appropriate?",
+    "ch": [
+     "Vancomycin and acyclovir",
+     "Ceftriaxone, vancomycin, and rifampin",
+     "Ceftriaxone and vancomycin",
+     "Ceftriaxone, vancomycin, and ampicillin",
+     "Ceftriaxone alone at meningitic dosing"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which finding is an indication to obtain a CT head before lumbar puncture in suspected bacterial meningitis?",
+    "ch": [
+     "Nuchal rigidity on examination",
+     "A petechial rash over the trunk",
+     "Papilledema on fundoscopic examination",
+     "Fever above 39 degrees Celsius",
+     "A positive Kernig sign"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "When should dexamethasone be given in suspected pneumococcal meningitis?",
+    "ch": [
+     "Only once CSF culture confirms pneumococcus",
+     "Only if the patient develops hearing loss",
+     "Only after the CT head has been completed",
+     "Before or with the first antibiotic dose",
+     "Twenty-four hours after antibiotics have started"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient with suspected Neisseria meningitidis meningitis is admitted. Which infection-control measure is required?",
+    "ch": [
+     "Droplet precautions until at least 24 hours of effective antibiotics",
+     "Contact precautions only, until the petechial rash has fully resolved",
+     "Standard precautions only, because the organism is not transmissible",
+     "Protective isolation to shield the patient from other hospital infections",
+     "Airborne precautions in a negative-pressure room until cultures are final"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient admitted with bacterial meningitis develops rising blood pressure with a widening pulse pressure, bradycardia, and irregular respirations. What does this indicate?",
+    "ch": [
+     "SIADH with dilutional hyponatremia",
+     "Impending herniation from raised intracranial pressure",
+     "Early septic shock from meningococcemia",
+     "A drug reaction to vancomycin",
+     "Hypoglycemia caused by dexamethasone"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A young adult with fever and rapidly spreading petechiae becomes hypotensive with oozing from IV sites. Which complication should be anticipated?",
+    "ch": [
+     "Communicating hydrocephalus from impaired CSF resorption",
+     "SIADH producing dilutional hyponatremia during recovery",
+     "Fulminant meningococcemia with DIC and Waterhouse-Friderichsen adrenal hemorrhage",
+     "Subdural empyema complicating contiguous spread from sinusitis",
+     "Delayed sensorineural hearing loss needing a discharge hearing screen"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient with suspected meningitis has a new focal deficit, so a CT head is needed before the lumbar puncture. What is the correct sequence?",
+    "ch": [
+     "Perform the LP immediately without imaging to avoid delaying treatment",
+     "Give antibiotics only after the CSF Gram stain result has returned",
+     "Withhold antibiotics until the CT has excluded a mass lesion",
+     "Obtain the CT first, then draw blood cultures, then give antibiotics",
+     "Draw blood cultures, give antibiotics, then obtain the CT and the LP"
+    ]
+   }
+  ]
+ },
+ "seizure": {
+  "condition": "Seizure & Status Epilepticus",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement defines status epilepticus at the operational t1 threshold?",
+    "ch": [
+     "A seizure lasting 30 minutes or longer, regardless of recovery between events",
+     "Two or more seizures within a single 24-hour period with full recovery between them",
+     "A convulsion followed by more than one hour of post-ictal confusion",
+     "A seizure lasting 5 minutes or longer, or two or more seizures without recovery of consciousness between them",
+     "Any seizure occurring in a patient with an established diagnosis of epilepsy"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which agent is first-line to abort an actively seizing patient who already has IV access?",
+    "ch": [
+     "IV levetiracetam",
+     "IV fosphenytoin",
+     "IV valproate",
+     "IV propofol infusion",
+     "IV lorazepam"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What should be checked first in every seizing patient?",
+    "ch": [
+     "Continuous EEG",
+     "Fingerstick glucose",
+     "Serum prolactin",
+     "Head CT",
+     "AED drug levels"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient is convulsing in the field and IV access cannot be obtained. Which rescue therapy is preferred?",
+    "ch": [
+     "Rectal valproate as a loading dose",
+     "IM midazolam",
+     "IV lorazepam once access is finally achieved",
+     "Oral levetiracetam given between convulsions",
+     "IV fosphenytoin through an intraosseous line"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "After an adequately dosed benzodiazepine, which statement about second-line urgent control is correct?",
+    "ch": [
+     "No second-line agent is needed once the benzodiazepine has worked",
+     "Levetiracetam requires cardiac monitoring for bradyarrhythmia risk",
+     "Levetiracetam, fosphenytoin, and valproate are roughly equal in efficacy",
+     "Fosphenytoin is clearly superior and should always be chosen first",
+     "Valproate is the preferred agent in pregnancy because it is well tolerated"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient begins a generalized tonic-clonic seizure in bed. Which nursing action is appropriate?",
+    "ch": [
+     "Insert a padded tongue blade to protect the airway and the teeth",
+     "Restrain the limbs firmly to prevent injury from the convulsion",
+     "Leave the bedside to summon help and return with the crash cart",
+     "Sit the patient upright and give oral glucose immediately",
+     "Turn the patient to the side, protect the head, and time the seizure"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "After a witnessed convulsion a patient has transient right-arm weakness that resolves over several hours. What is the most likely explanation?",
+    "ch": [
+     "A psychogenic nonepileptic event",
+     "Propofol infusion syndrome",
+     "Todd's paralysis",
+     "An acute ischemic stroke in evolution",
+     "Ongoing nonconvulsive status epilepticus"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Convulsions stopped 40 minutes ago after lorazepam and levetiracetam, but the patient still does not wake up. What is the priority?",
+    "ch": [
+     "Repeat the levetiracetam dose and reassess in another hour",
+     "Order a lumbar puncture before any further neurologic monitoring",
+     "Start a propofol infusion empirically without any EEG monitoring",
+     "Obtain continuous EEG to look for nonconvulsive status epilepticus",
+     "Assume a prolonged post-ictal state and simply observe overnight"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient in status epilepticus fails benzodiazepines and a full second-line load. Which reversible cause deserves active consideration?",
+    "ch": [
+     "INH (isoniazid) toxicity, treated with pyridoxine",
+     "Chronic migraine with aura",
+     "Benign essential tremor",
+     "Peripheral neuropathy from B12 deficiency",
+     "A simple febrile convulsion of childhood"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A woman at 32 weeks of pregnancy has a generalized convulsion. What is the immediate treatment priority?",
+    "ch": [
+     "Magnesium sulfate for eclampsia with obstetric emergency management",
+     "An IV valproate load as the urgent-control agent",
+     "Oral levetiracetam started at a low maintenance dose",
+     "Observation alone, since seizures in pregnancy are usually benign",
+     "Rectal diazepam only, avoiding all intravenous therapy"
+    ]
+   }
+  ]
+ },
+ "parkinsons": {
+  "condition": "Parkinson's Disease",
+  "questions": [
+   {
+    "n": 1,
+    "q": "What is the pathologic hallmark of Parkinson's disease?",
+    "ch": [
+     "Extracellular amyloid plaques with neuritic degeneration",
+     "Hyperphosphorylated tau neurofibrillary tangles in the cortex",
+     "Inflammatory demyelinating plaques with oligodendrocyte loss",
+     "Spongiform vacuolation with prion protein deposition",
+     "Intraneuronal Lewy bodies composed of aggregated alpha-synuclein"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "The TRAP mnemonic summarizes the cardinal motor features of Parkinson's disease. What does it stand for?",
+    "ch": [
+     "Tremor, reflex loss, athetosis, and ptosis of the eyelids",
+     "Resting tremor, rigidity, akinesia/bradykinesia, and postural instability",
+     "Intention tremor, rigidity, ataxia, and progressive paralysis",
+     "Resting tremor, restlessness, apraxia, and painful paresthesia",
+     "Titubation, rigidity, aphasia, and photophobia on exposure"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which tremor description fits Parkinson's disease?",
+    "ch": [
+     "A 4-6 Hz pill-rolling resting tremor that improves with movement",
+     "A high-frequency intention tremor that worsens as the target is approached",
+     "A postural tremor of the hands that improves markedly with alcohol",
+     "A head-nodding tremor that is present only during sleep",
+     "A symmetric tremor appearing only during sustained physical exertion"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Under the MDS diagnostic criteria, what is required to diagnose Parkinson's disease?",
+    "ch": [
+     "Bradykinesia plus resting tremor and/or rigidity",
+     "An abnormal DaTscan result in every patient",
+     "MRI evidence of substantia nigra atrophy",
+     "A positive alpha-synuclein blood test",
+     "Postural instability as the earliest feature"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient started on pramipexole develops new compulsive gambling. What does this represent?",
+    "ch": [
+     "Levodopa-induced dyskinesia requiring amantadine",
+     "Parkinsonism-hyperpyrexia from abrupt drug withdrawal",
+     "Anticholinergic confusion from trihexyphenidyl",
+     "An impulse control disorder from the dopamine agonist",
+     "A wearing-off phenomenon between levodopa doses"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which nursing action best supports a hospitalized patient taking carbidopa-levodopa?",
+    "ch": [
+     "Substitute metoclopramide whenever the patient reports nausea",
+     "Stop levodopa for 24 hours before any scheduled procedure",
+     "Give levodopa on time, every time, and separate doses from high-protein meals",
+     "Hold the morning dose until the patient is fully awake and oriented",
+     "Crush and combine all of the daily doses into one morning dose"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "An older adult taking metoclopramide develops symmetric rigidity and bradykinesia. What is the most likely diagnosis?",
+    "ch": [
+     "Progressive supranuclear palsy with early falls",
+     "Multiple system atrophy with early autonomic failure",
+     "Corticobasal degeneration with limb apraxia",
+     "Drug-induced parkinsonism from dopamine blockade",
+     "Idiopathic Parkinson's disease with asymmetric onset"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A hospitalized patient's levodopa is withheld for three days. He becomes febrile and rigid with confusion and unstable vital signs. What has happened?",
+    "ch": [
+     "Orthostatic hypotension causing syncope and falls",
+     "Levodopa-induced dyskinesia from over-treatment",
+     "Parkinsonism-hyperpyrexia syndrome from abrupt levodopa withdrawal",
+     "Serotonin syndrome from an MAO-B inhibitor interaction",
+     "Aspiration pneumonia from progressive dysphagia"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient with Parkinson's disease develops distressing visual hallucinations. Which antipsychotic choice is appropriate?",
+    "ch": [
+     "Chlorpromazine given at bedtime nightly",
+     "Quetiapine, clozapine, or pimavanserin",
+     "Haloperidol, a high-potency typical agent",
+     "Fluphenazine given as a depot injection",
+     "Risperidone titrated to a high daily dose"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Why is the onset of Parkinson's disease symptoms so insidious?",
+    "ch": [
+     "The blood-brain barrier delays the delivery of endogenous dopamine",
+     "Lewy bodies only begin to form after the motor symptoms have started",
+     "Cortical compensation completely prevents any tremor until very late",
+     "Dopamine receptors are progressively upregulated throughout the cortex",
+     "Symptoms appear only after roughly 60-80% of nigrostriatal neurons are lost"
+    ]
+   }
+  ]
+ },
+ "dementia": {
+  "condition": "Alzheimer's & Dementia",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which pathologic changes define Alzheimer's disease?",
+    "ch": [
+     "Intraneuronal Lewy bodies composed of aggregated alpha-synuclein",
+     "Multiple cortical and subcortical infarcts accumulating in a stepwise way",
+     "Focal frontal and temporal lobar atrophy with early personality change",
+     "Spongiform change with prion protein deposition and prominent myoclonus",
+     "Extracellular amyloid plaques and intracellular hyperphosphorylated tau tangles"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which feature best distinguishes delirium from dementia?",
+    "ch": [
+     "Prominent early personality and language change",
+     "Acute onset with a fluctuating course and inattention",
+     "Gradual decline over years with attention preserved",
+     "Loss of smell with REM sleep behavior disorder",
+     "Stepwise decline with focal neurologic deficits"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What is the hallmark early clinical feature of Alzheimer's disease?",
+    "ch": [
+     "Prominent visual hallucinations",
+     "Magnetic gait with incontinence",
+     "Disinhibited social behavior",
+     "Stepwise motor deficits",
+     "Short-term (episodic) memory loss"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which laboratory tests are obtained mainly to catch reversible causes of cognitive decline?",
+    "ch": [
+     "Amyloid PET imaging",
+     "Plasma p-tau217",
+     "APOE genotyping",
+     "TSH and vitamin B12",
+     "CSF amyloid and tau"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient with fluctuating cognition, visual hallucinations, and parkinsonism becomes agitated overnight. Which order should be challenged?",
+    "ch": [
+     "A review of the medication list",
+     "Haloperidol for agitation",
+     "A structured routine with reorientation cues",
+     "Evaluation for pain, infection, or constipation",
+     "A low-dose cholinesterase inhibitor"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "What is first-line management of behavioral and psychological symptoms of dementia?",
+    "ch": [
+     "A scheduled benzodiazepine given at bedtime nightly",
+     "An anticholinergic agent for restlessness and pacing",
+     "Physical restraints applied during agitated episodes",
+     "Non-pharmacologic care with a structured routine and environmental modification",
+     "An atypical antipsychotic started at the lowest dose"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient started on donepezil should be monitored for which adverse effect?",
+    "ch": [
+     "Extrapyramidal rigidity and tremor",
+     "Photosensitivity rash on the face",
+     "Bradycardia with syncope and GI upset",
+     "Amyloid-related imaging abnormalities",
+     "Hyponatremia from renal salt wasting"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "An older adult has urinary incontinence, cognitive decline, and a magnetic gait. Which diagnosis is potentially reversible?",
+    "ch": [
+     "Normal pressure hydrocephalus",
+     "Alzheimer's disease",
+     "Frontotemporal dementia",
+     "Creutzfeldt-Jakob disease",
+     "Lewy body dementia"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient with early Alzheimer's disease and confirmed amyloid begins lecanemab. What monitoring is required?",
+    "ch": [
+     "Serial MRI for ARIA",
+     "Serial ECGs for QT prolongation",
+     "Monthly TSH measurement",
+     "Weekly liver function tests",
+     "Annual DaTscan imaging"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "How is Lewy body dementia distinguished from Parkinson disease dementia?",
+    "ch": [
+     "The complete absence of any visual hallucinations",
+     "A stepwise decline accompanied by focal deficits",
+     "Cognitive decline before or within about a year of parkinsonism",
+     "Cognitive decline appearing many years after the motor symptoms",
+     "The presence of a resting tremor at the time of onset"
+    ]
+   }
+  ]
+ },
+ "ms": {
+  "condition": "Multiple Sclerosis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "What is the hallmark of multiple sclerosis pathology?",
+    "ch": [
+     "Degeneration of the anterior horn cells",
+     "Amyloid deposition in cortical vessels",
+     "Lesions disseminated in space and in time",
+     "A single monophasic demyelinating event",
+     "Demyelination confined to peripheral nerves"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which risk-factor profile is most typical of multiple sclerosis?",
+    "ch": [
+     "Female, age 20-40, higher latitude, low vitamin D, and prior EBV infection",
+     "Male, age over 65, low latitude, and high vitamin D levels",
+     "Female, age over 70, with hypertension and long-standing diabetes",
+     "Male, childhood onset, with a documented measles infection",
+     "Either sex, age 40-60, with heavy alcohol use and smoking"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which disease course accounts for about 85% of multiple sclerosis?",
+    "ch": [
+     "Primary progressive MS",
+     "Secondary progressive MS",
+     "Radiologically isolated syndrome",
+     "Clinically isolated syndrome",
+     "Relapsing-remitting MS"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which investigation is the key test for diagnosing multiple sclerosis?",
+    "ch": [
+     "Serum creatine kinase and aldolase levels",
+     "Muscle biopsy taken from the quadriceps",
+     "MRI brain and spinal cord with gadolinium",
+     "CT head without contrast to exclude a mass",
+     "Nerve conduction studies of all four limbs"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Under the 2017 McDonald criteria, what can CSF oligoclonal bands substitute for?",
+    "ch": [
+     "Dissemination in time",
+     "Dissemination in space",
+     "A positive AQP4 antibody",
+     "An abnormal EDSS score",
+     "A gadolinium-enhancing lesion"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which teaching point addresses the Uhthoff phenomenon?",
+    "ch": [
+     "Restrict fluid intake to reduce neurogenic bladder urgency",
+     "Avoid hot baths, saunas, and overheating, and use cooling strategies",
+     "Avoid all physical exercise permanently to prevent relapse",
+     "Sleep in a warm room in order to reduce night-time spasticity",
+     "Take hot showers to relieve neuropathic pain in the limbs"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient with known MS presents with a new episode of painful monocular vision loss. What is first-line treatment for the relapse?",
+    "ch": [
+     "Start ocrelizumab that same day",
+     "Begin dalfampridine for walking",
+     "Give baclofen for spasticity",
+     "Start teriflunomide immediately",
+     "High-dose IV methylprednisolone"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient on natalizumab develops new progressive deficits and cognitive decline. What should be suspected and done?",
+    "ch": [
+     "Treat it as an ordinary relapse with oral baclofen",
+     "Reassure the patient and repeat the EDSS in six months",
+     "Switch immediately to teriflunomide without any imaging",
+     "Suspect PML, stop the drug, and obtain MRI and JCV testing",
+     "Increase the natalizumab dose and continue treatment"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient has bilateral optic neuritis and a longitudinally extensive cord lesion. What must be excluded before choosing a therapy?",
+    "ch": [
+     "Benign fasciculation syndrome, by needle EMG",
+     "NMOSD, by testing aquaporin-4 and MOG antibodies",
+     "Vitamin D deficiency, by a 25-hydroxy level",
+     "Migraine with aura, by keeping a headache diary",
+     "Carpal tunnel syndrome, by nerve conduction"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which screening is required before starting an anti-CD20 monoclonal antibody such as ocrelizumab?",
+    "ch": [
+     "Baseline ECG for bradycardia",
+     "Macular OCT for edema",
+     "Teriflunomide washout period",
+     "Hepatitis B screening",
+     "Anti-JCV antibody index"
+    ]
+   }
+  ]
+ },
+ "gbs": {
+  "condition": "Guillain-Barré Syndrome",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which description best characterizes Guillain-Barré syndrome?",
+    "ch": [
+     "A mechanical disruption of ascending and descending spinal cord tracts after trauma",
+     "A degeneration of anterior horn cells producing painless progressive weakness with brisk reflexes",
+     "A chronic, relapsing demyelinating neuropathy progressing beyond eight weeks",
+     "An autoimmune attack on postsynaptic acetylcholine receptors at the neuromuscular junction",
+     "An acute, immune-mediated polyradiculoneuropathy causing ascending weakness and areflexia"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which antecedent infection is identified as the number-one trigger of GBS?",
+    "ch": [
+     "Listeria monocytogenes from contaminated food",
+     "Campylobacter jejuni, classically after a diarrheal illness",
+     "Streptococcus pyogenes after a pharyngitis",
+     "Clostridioides difficile after antibiotic exposure",
+     "Helicobacter pylori causing chronic gastritis"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What is the classic cerebrospinal fluid finding in GBS?",
+    "ch": [
+     "Xanthochromia with a markedly elevated red cell count",
+     "Normal protein with a lymphocytic pleocytosis",
+     "Elevated protein with a normal white cell count",
+     "An elevated white cell count with a normal protein level",
+     "Low glucose with a neutrophilic pleocytosis"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient with ascending weakness has a forced vital capacity of 18 mL/kg and a negative inspiratory force of -25 cm H2O. Applying the 20/30/40 rule, what does this mean?",
+    "ch": [
+     "Both values have crossed the thresholds — consider intubation for neuromuscular respiratory failure",
+     "Give a dose of pyridostigmine and repeat the measurements in six hours",
+     "Start high-dose corticosteroids to halt progression before the airway fails",
+     "Transfer to an unmonitored medical floor with daily respiratory therapy checks",
+     "Continue routine observation because the oxygen saturation is still normal"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient who can no longer walk presents 6 days after the onset of symmetric ascending weakness. Which treatment plan matches the module?",
+    "ch": [
+     "IVIG 2 g/kg over 5 days OR plasma exchange, but not both together",
+     "Watchful waiting until the weakness plateaus, then beginning immunotherapy",
+     "High-dose intravenous methylprednisolone as monotherapy for five days",
+     "IVIG and plasma exchange given together for additive benefit",
+     "Oral prednisone tapered over six weeks with supportive care alone"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Before beginning IVIG in GBS, which screening and monitoring does the module specifically require?",
+    "ch": [
+     "Give a meningococcal vaccination at least two weeks before the first infusion",
+     "Correct hypocalcemia and any coagulopathy before every scheduled infusion",
+     "Obtain a chest CT to exclude a thymoma before the first dose is given",
+     "Screen for IgA deficiency and monitor for volume overload, renal injury and thromboembolism",
+     "Check thiopurine methyltransferase activity and obtain baseline liver function tests"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which nursing action is the stated priority for a patient newly admitted with GBS?",
+    "ch": [
+     "Applying compression devices and giving enoxaparin for VTE prophylaxis",
+     "Range-of-motion exercises to prevent contractures from immobility",
+     "Emotional support, because patients stay alert while becoming paralyzed",
+     "Serial FVC and NIF measurement with intubation equipment kept ready",
+     "Titrating gabapentin to control the neuropathic pain of the illness"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A 34-year-old develops ophthalmoplegia, gait ataxia and areflexia two weeks after a diarrheal illness; limb strength is preserved. Which antibody is associated with this variant?",
+    "ch": [
+     "Anti-LRP4 antibody",
+     "Anti-GQ1b ganglioside antibody",
+     "Anti-GM1 ganglioside antibody",
+     "Anti-acetylcholine receptor antibody",
+     "Anti-muscle-specific kinase antibody"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A GBS patient in week 3 is beginning to regain limb strength when he abruptly becomes bradycardic to 30 with profound hypotension. What does this illustrate?",
+    "ch": [
+     "An expected consequence of the gabapentin used for neuropathic pain",
+     "A predictable cholinergic effect of the IVIG infusion being given",
+     "Autonomic instability, which can be fatal even while limb strength recovers",
+     "A second, biphasic wave of demyelination typical of the disease",
+     "Evolution to CIDP requiring an urgent change of immunotherapy"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient treated for GBS is still worsening 10 weeks after onset rather than plateauing. What should this prompt?",
+    "ch": [
+     "Testing anti-GQ1b antibodies to confirm Miller Fisher syndrome instead",
+     "Repeating the IVIG course, since relapse is the expected pattern in GBS",
+     "Adding plasma exchange on top of the IVIG that has already been given",
+     "Reassurance, because the monophasic course normally lasts three months",
+     "Reassessment for CIDP, the chronic form defined by progression beyond 8 weeks"
+    ]
+   }
+  ]
+ },
+ "myasthenia": {
+  "condition": "Myasthenia Gravis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which pattern of weakness is the classic hallmark of myasthenia gravis?",
+    "ch": [
+     "Fixed proximal weakness with a raised creatine kinase and preserved reflexes",
+     "Symmetric ascending weakness with loss of the deep tendon reflexes",
+     "Fatigable weakness that worsens with use and improves with rest",
+     "Weakness that improves after a period of sustained repetitive activity",
+     "Weakness with sensory loss in a stocking-glove distribution below the knees"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which antibody is present in about 85% of patients with myasthenia gravis?",
+    "ch": [
+     "Anti-acetylcholine receptor (anti-AChR) antibody",
+     "Anti-presynaptic voltage-gated calcium channel antibody",
+     "Anti-muscle-specific kinase (anti-MuSK) antibody",
+     "Anti-LRP4 (lipoprotein-related protein 4) antibody",
+     "Anti-GQ1b ganglioside antibody"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "An ice pack is held on a patient's closed eyelid for two minutes and the ptosis improves. Why does the module include this test?",
+    "ch": [
+     "Cold constricts the blood supply to the levator and unmasks a true ptosis",
+     "A positive result confirms thymoma and makes chest imaging unnecessary",
+     "It reliably separates a cholinergic crisis from a myasthenic crisis at the bedside",
+     "It has replaced single-fiber EMG as the most sensitive confirmatory test",
+     "Cold slows acetylcholinesterase, making it a cheap, safe bedside clue to MG"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "When should pyridostigmine be scheduled for a patient with bulbar weakness?",
+    "ch": [
+     "Only when weakness appears, because scheduled dosing produces tolerance",
+     "About 30-60 minutes before meals so chewing and swallowing are strongest",
+     "Immediately after meals in order to reduce gastrointestinal side effects",
+     "Every six hours around the clock regardless of when meals are served",
+     "At bedtime, so that the peak effect covers the overnight hours"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which group of drugs is listed as able to unmask or worsen myasthenia gravis?",
+    "ch": [
+     "Aminoglycosides, fluoroquinolones, magnesium and beta-blockers",
+     "Proton pump inhibitors, statins and inhaled corticosteroids",
+     "Loop diuretics, ACE inhibitors and calcium channel blockers",
+     "Serotonin reuptake inhibitors, triptans and gabapentinoids",
+     "Penicillins, cephalosporins and the antifungal azole agents"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Why might a severely weak patient receive IVIG or plasma exchange before high-dose prednisone is started?",
+    "ch": [
+     "Corticosteroids are contraindicated in anti-AChR-positive generalized disease",
+     "Prednisone cannot be given until a thymoma has been surgically resected",
+     "IVIG and corticosteroids can never be used in the same patient safely",
+     "High-dose steroids can transiently worsen weakness in the first 1-2 weeks",
+     "Plasma exchange is required to make corticosteroids pharmacologically effective"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Repetitive nerve stimulation in myasthenia gravis shows which pattern, and how does Lambert-Eaton syndrome differ?",
+    "ch": [
+     "An incremental response in MG, while Lambert-Eaton shows a decremental response",
+     "A decremental response in MG, while Lambert-Eaton shows an incremental response",
+     "A normal response in both, so only single-fiber EMG can separate the two",
+     "A decremental response in both, distinguished only by antibody testing",
+     "An incremental response in both, distinguished only by chest imaging"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A woman with myasthenia gravis develops pneumonia and over 12 hours has worsening dysphagia, a weak cough and a falling FVC. Her oxygen saturation is 96%. What is the priority?",
+    "ch": [
+     "Double the pyridostigmine dose and continue care on the general ward",
+     "Start azathioprine immediately to bring the underlying disease under control",
+     "Obtain a chest CT for thymoma before making any decision about the airway",
+     "Treat this as myasthenic crisis — airway and ventilation, guided by FVC and NIF rather than saturation",
+     "Reassure and recheck in the morning, since the oxygen saturation is normal"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient with prominent bulbar, neck and respiratory weakness is anti-AChR negative, anti-MuSK positive, and has responded poorly to pyridostigmine. Which agent is highlighted for this subtype?",
+    "ch": [
+     "Eculizumab, a complement C5 inhibitor",
+     "Efgartigimod, an FcRn inhibitor",
+     "Mycophenolate as a steroid-sparing agent",
+     "A higher dose of pyridostigmine",
+     "Rituximab, an anti-CD20 antibody"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which statement about the thymus in myasthenia gravis is correct?",
+    "ch": [
+     "Thymectomy is considered only after biologic therapy has already failed",
+     "Chest imaging is reserved for patients over the age of fifty years",
+     "Every newly diagnosed patient needs chest CT or MRI; thymoma occurs in ~10-15%",
+     "Thymic hyperplasia is seen almost exclusively in anti-MuSK positive disease",
+     "Thymectomy has no benefit in non-thymomatous anti-AChR generalized disease"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,922 @@
+{
+ "salicylate-od": {
+  "condition": "Salicylate (Aspirin) Overdose",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which acid-base picture is classic for salicylate toxicity?",
+    "ch": [
+     "A pure metabolic alkalosis produced by the vomiting",
+     "Respiratory alkalosis and a high anion-gap metabolic acidosis occurring simultaneously",
+     "A hyperchloremic metabolic acidosis from large-volume saline",
+     "An isolated respiratory acidosis from a depressed medullary respiratory drive",
+     "An isolated normal anion-gap metabolic acidosis"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which triad should raise suspicion for salicylate toxicity?",
+    "ch": [
+     "Elevated jugular venous pressure, an S3 gallop and crackles",
+     "Orthostatic hypotension, flat neck veins and oliguria",
+     "Miosis, respiratory depression and depressed consciousness",
+     "Tinnitus or hearing changes, tachypnea and hyperpnea, and nausea and vomiting",
+     "Right upper quadrant pain, transaminases in the thousands and a rising INR"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "How does salicylate generate the metabolic component of its acid-base disorder?",
+    "ch": [
+     "By delivering a large chloride load that displaces bicarbonate",
+     "By activating RAAS and causing avid renal sodium retention",
+     "By depleting hepatic glutathione and causing centrilobular necrosis",
+     "By blocking mu receptors in the brainstem respiratory centers",
+     "By uncoupling oxidative phosphorylation, generating lactic acid and ketones"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which salicylate-containing product is hyperconcentrated enough that a teaspoon can kill a toddler?",
+    "ch": [
+     "Oil of wintergreen (methyl salicylate)",
+     "Topical keratolytic salicylic acid pads",
+     "Activated charcoal suspension",
+     "Bismuth subsalicylate liquid such as Pepto-Bismol",
+     "Plain low-dose aspirin tablets"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "How should serum salicylate concentrations be followed after an ingestion?",
+    "ch": [
+     "A single level on arrival, which reliably reflects the peak",
+     "One level at 4 hours plotted on the Done nomogram",
+     "Levels drawn only once altered mental status develops",
+     "Serial levels every 2 hours until they peak and fall",
+     "One level each morning alongside the daily weight"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Sodium bicarbonate is started for alkalinization. What must accompany it, and what is the urine target?",
+    "ch": [
+     "Potassium restriction, targeting a urine pH below 6.0",
+     "Potassium repletion first, targeting a urine pH of 7.5 to 8.0",
+     "A loop diuretic to force diuresis, targeting a urine pH near 6.5",
+     "An N-acetylcysteine infusion, targeting a serum pH of 7.20",
+     "Naloxone boluses, targeting a normal respiratory rate"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A salicylate-toxic patient becomes confused and the fingerstick glucose is normal. What should be given?",
+    "ch": [
+     "Nothing, since a normal fingerstick excludes any glucose problem",
+     "Activated charcoal, since confusion means absorption is continuing",
+     "Immediate intubation to protect the airway before anything else",
+     "A large fluid bolus alone, since confusion reflects hypoperfusion",
+     "IV dextrose, because CNS glucose can be low despite a normal serum level"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Why is intubation particularly hazardous in severe salicylate toxicity?",
+    "ch": [
+     "An endotracheal tube prevents the administration of sodium bicarbonate",
+     "Intubation makes hemodialysis technically impossible",
+     "Sedation, paralysis and inadequate ventilator rates remove compensatory hyperventilation and cause a fatal pH drop",
+     "Positive pressure ventilation traps salicylate in the lungs and delays its clearance",
+     "Laryngoscopy reliably provokes a seizure in these patients"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which situation is an indication for hemodialysis in salicylate toxicity?",
+    "ch": [
+     "Altered mental status, seizures, cerebral or pulmonary edema, renal failure or refractory acidosis",
+     "Tinnitus with a level of 25 mg/dL and a normal pH",
+     "Any patient in whom activated charcoal is being given",
+     "Vomiting that prevents the patient from drinking fluids",
+     "A single reassuring level drawn on arrival"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "An elderly patient taking therapeutic aspirin is confused and tachypneic, and the salicylate level is only modestly elevated. How should this be interpreted?",
+    "ch": [
+     "Laboratory error, since a modest level cannot coexist with tachypnea",
+     "Acute toxicity, which requires a level above 100 mg/dL before any treatment",
+     "Chronic toxicity, which is deadlier and lethal at lower measured levels",
+     "A therapeutic level that excludes salicylate as the cause of the confusion",
+     "Sepsis, since chronic salicylate toxicity does not cause confusion"
+    ]
+   }
+  ]
+ },
+ "opioid-od": {
+  "condition": "Opioid Overdose",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which triad is classic for opioid overdose?",
+    "ch": [
+     "Respiratory depression, pinpoint (miotic) pupils and depressed consciousness",
+     "Dilated pupils, hypertension and hyperthermia",
+     "Tinnitus, hyperpnea and vomiting",
+     "Elevated jugular venous pressure, an S3 gallop and crackles",
+     "Tachycardia, flat neck veins and oliguria"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "What is the actual mechanism of death in opioid overdose?",
+    "ch": [
+     "Miosis and the resulting loss of the pupillary light reflex",
+     "A high anion-gap metabolic acidosis from uncoupled oxidative phosphorylation",
+     "Acute hepatic necrosis produced by a reactive metabolite",
+     "The sedation itself, through loss of protective reflexes alone",
+     "Hypoventilation and hypoxia"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Naloxone acts as which type of agent?",
+    "ch": [
+     "A partial mu-opioid agonist",
+     "A mu-opioid agonist with a long half-life",
+     "A competitive mu-opioid antagonist",
+     "A benzodiazepine receptor antagonist",
+     "A direct respiratory stimulant acting on medullary chemoreceptors"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Naloxone should be titrated to which endpoint?",
+    "ch": [
+     "Pupil size returning fully to normal",
+     "A negative urine drug screen",
+     "Complete resolution of any QTc prolongation",
+     "Adequate ventilation",
+     "Full alertness and complete orientation"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient is found apneic and cyanotic with pinpoint pupils. What takes priority?",
+    "ch": [
+     "Starting a naloxone infusion at two-thirds of the waking bolus per hour",
+     "Bag-valve-mask ventilation with oxygen, provided before and during naloxone",
+     "Naloxone alone, withholding ventilation until it takes effect",
+     "Obtaining a urine drug screen before any intervention",
+     "Waiting for a blood gas to confirm respiratory acidosis"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient woke up after naloxone and an hour later is drowsy with a respiratory rate of 8. What explains this?",
+    "ch": [
+     "Naloxone wore off before the opioid did, so the patient re-sedated",
+     "Tolerance to naloxone that developed within a single dose",
+     "Precipitated withdrawal, which presents with somnolence and slow breathing",
+     "Noncardiogenic pulmonary edema, which presents without any hypoxia",
+     "Hypoglycemia, which the naloxone dose reliably corrected"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A urine drug screen is negative in a patient with the full opioid toxidrome. How should that result be used?",
+    "ch": [
+     "It excludes opioid overdose, so another diagnosis must be found",
+     "It is not reassuring, because standard immunoassays often miss fentanyl and synthetic opioids",
+     "It shows a long-acting opioid was taken instead of a short-acting one",
+     "It means naloxone should be withheld until a confirmatory test returns",
+     "It establishes clonidine as the cause rather than an opioid"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which additional monitoring and treatment does suspected methadone overdose require?",
+    "ch": [
+     "Activated charcoal with serial levels drawn every 2 hours",
+     "Sodium bicarbonate to alkalinize the urine and speed elimination",
+     "An ECG for QTc prolongation together with a naloxone infusion for the prolonged toxicity",
+     "Immediate buprenorphine to shorten the observation period",
+     "A single naloxone bolus, with discharge once the patient is awake"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "When may ED-initiated buprenorphine be started after an opioid overdose?",
+    "ch": [
+     "Never, because buprenorphine is contraindicated in anyone who has overdosed",
+     "Immediately after naloxone, while the patient is still sedated",
+     "Only once a negative urine drug screen confirms the opioid has cleared",
+     "Once the patient is in objective withdrawal with an adequate COWS score",
+     "Only after the QTc has fully normalized on the ECG"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient fails to respond to escalating doses of naloxone. What should be reconsidered?",
+    "ch": [
+     "That the diagnosis is confirmed anyway, since a response is not required",
+     "That the patient has simply developed tolerance to naloxone itself",
+     "That precipitated withdrawal is masking the reversal",
+     "That the dose must be halved to avoid over-reversal",
+     "Co-ingestants, massive fentanyl exposure, hypoxic brain injury or an alternative diagnosis"
+    ]
+   }
+  ]
+ },
+ "benzodiazepine-od": {
+  "condition": "Benzodiazepine Overdose",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Benzodiazepines produce sedation through which action at the GABA-A receptor?",
+    "ch": [
+     "Inhibiting presynaptic reuptake of GABA from the synapse",
+     "Increasing the frequency of chloride channel opening",
+     "Increasing the duration of chloride channel opening",
+     "Acting as a direct GABA-A agonist independent of GABA",
+     "Blocking postsynaptic glutamate receptor activation"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "A patient arrives somnolent with slurred speech and ataxia. Which examination finding best supports a sedative-hypnotic rather than an opioid cause?",
+    "ch": [
+     "Profound hypotension together with bradycardia",
+     "Normal or midsize pupils with preserved hemodynamics",
+     "Dry flushed skin with hyperthermia and retention",
+     "Pinpoint pupils with a very low respiratory rate",
+     "Fixed dilated pupils with a deepening coma"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What is the first-line and definitive management for the great majority of isolated benzodiazepine overdoses?",
+    "ch": [
+     "Urgent hemodialysis to clear the ingested drug",
+     "Immediate flumazenil to reverse the sedation",
+     "Supportive care with supplemental oxygen and airway support",
+     "Routine activated charcoal for every ingestion",
+     "Empiric vasopressors to support the blood pressure"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A urine benzodiazepine immunoassay is negative in a patient you strongly suspect has overdosed. How should that result be interpreted?",
+    "ch": [
+     "It means a serum benzodiazepine level should guide care",
+     "It indicates that flumazenil can now be given safely",
+     "It does not exclude overdose, because many agents are missed",
+     "It reliably excludes benzodiazepine ingestion",
+     "It confirms an opioid must be the responsible drug"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "In which situation is flumazenil most appropriately used?",
+    "ch": [
+     "A patient with a widened QRS suggesting TCA co-ingestion",
+     "A drowsy patient with a known underlying seizure disorder",
+     "Any comatose patient with an unknown ingestion history",
+     "A chronic alprazolam user who has become deeply sedated",
+     "Reversal of iatrogenic procedural sedation in a naive patient"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which complication should be anticipated after flumazenil is given, even to a correctly selected patient?",
+    "ch": [
+     "Sustained reversal outlasting the benzodiazepine itself",
+     "Permanent blockade of the benzodiazepine binding site",
+     "A rise in blood pressure requiring antihypertensives",
+     "Reversal of any co-ingested opioid effect as a bonus",
+     "Resedation once the short half-life of the antidote wears off"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which testing is prioritized in an undifferentiated CNS-depressed patient with suspected benzodiazepine overdose?",
+    "ch": [
+     "A serum benzodiazepine concentration drawn immediately",
+     "A urine immunoassay to confirm the diagnosis first",
+     "Head CT before any laboratory testing is obtained",
+     "Fingerstick glucose, acetaminophen and salicylate levels, and an ECG",
+     "Blood cultures and empiric broad-spectrum antibiotics"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A 22-year-old found beside an empty alprazolam bottle is somnolent with a blood pressure of 78/44 and a QRS of 128 ms. What does this picture indicate?",
+    "ch": [
+     "A dangerous co-ingestant rather than isolated benzodiazepine toxicity",
+     "Evidence that the urine screen will settle the diagnosis",
+     "A benign finding as long as the pupils remain midsize",
+     "Expected findings after a large oral benzodiazepine dose",
+     "A clear indication for immediate flumazenil administration"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient maintained on chronic clonazepam is given flumazenil and has a generalized seizure. Why is this outcome so feared?",
+    "ch": [
+     "The precipitated seizures are intractable and hard to treat",
+     "The seizure proves an opioid co-ingestion was present",
+     "Such seizures respond promptly to intravenous phenytoin",
+     "It shows the initial flumazenil dose was far too low",
+     "Seizures in this setting are brief and need no monitoring"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Naloxone is given empirically to a CNS-depressed patient with possible opioid co-ingestion. What is the correct titration endpoint?",
+    "ch": [
+     "Normalization of pupil size on serial exams",
+     "A fully normal Glasgow Coma Scale score",
+     "A complete return to baseline alertness",
+     "Adequate respiration rather than full arousal",
+     "Reversal of the benzodiazepine sedation too"
+    ]
+   }
+  ]
+ },
+ "tca-od": {
+  "condition": "Tricyclic Antidepressant Overdose",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which mechanism explains the QRS widening of tricyclic antidepressant overdose?",
+    "ch": [
+     "Calcium channel blockade slowing AV nodal conduction",
+     "Fast sodium-channel blockade slowing phase-0 depolarization",
+     "Inhibition of the myocardial Na+/K+-ATPase pump",
+     "Beta-adrenergic blockade depressing the myocardium",
+     "Potassium channel blockade prolonging repolarization"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which single test is most useful in suspected tricyclic antidepressant overdose?",
+    "ch": [
+     "A non-contrast head CT of the brain",
+     "An echocardiogram to assess contractility",
+     "A 12-lead ECG",
+     "A serum tricyclic antidepressant concentration",
+     "A urine drug screen for antidepressant classes"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which cluster of findings makes up the anticholinergic toxidrome of tricyclic overdose?",
+    "ch": [
+     "Dry flushed skin, mydriasis, urinary retention, hyperthermia, and tachycardia",
+     "Diaphoresis, miosis, salivation, bronchorrhea, and bradycardia",
+     "Pinpoint pupils, hypoventilation, and a depressed level of consciousness",
+     "Normal pupils, preserved vitals, hypoventilation, and slurred speech",
+     "Yellow-green visual halos, anorexia, and a new bradyarrhythmia"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "What do QRS durations above 100 ms and above 160 ms respectively predict?",
+    "ch": [
+     "Hypotension above 100 ms and complete heart block above 160 ms",
+     "Anticholinergic delirium above 100 ms and coma above 160 ms",
+     "Nothing, because QRS width does not stratify risk here",
+     "Ventricular dysrhythmias above 100 ms and seizures above 160 ms",
+     "Seizures above 100 ms and ventricular dysrhythmias above 160 ms"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "How does sodium bicarbonate work as the antidote for tricyclic cardiotoxicity?",
+    "ch": [
+     "A sodium load plus alkalinization overcoming sodium-channel blockade",
+     "Competitively antagonizing muscarinic receptor blockade",
+     "Chelating the drug so the kidney can excrete it faster",
+     "Blocking potassium channels to shorten repolarization",
+     "Acidifying the serum to trap the drug in the urine"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient with tricyclic overdose seizes. Which agent is first-line and which must be avoided?",
+    "ch": [
+     "Give physostigmine; avoid sodium bicarbonate",
+     "Give procainamide; avoid magnesium sulfate",
+     "Give an infusion of lidocaine; avoid all fluids",
+     "Give a benzodiazepine; avoid phenytoin",
+     "Give phenytoin; avoid benzodiazepines entirely"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient with tricyclic overdose stays hypotensive after adequate crystalloid. Which vasopressor is preferred, and why?",
+    "ch": [
+     "Dopamine, because it acts indirectly through catecholamine release",
+     "Phenylephrine, because it slows the reflex sinus tachycardia",
+     "Vasopressin, because it avoids all adrenergic receptors",
+     "Dobutamine, because inotropy alone restores adequate perfusion",
+     "Norepinephrine, because it counters alpha-adrenergic blockade"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which agent is explicitly contraindicated in tricyclic antidepressant overdose because it can precipitate asystole?",
+    "ch": [
+     "Lorazepam",
+     "Physostigmine",
+     "Norepinephrine",
+     "Magnesium sulfate",
+     "Sodium bicarbonate"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 19-year-old is tachycardic and confused after an unknown ingestion. The ECG shows a 3.5 mm terminal R wave in aVR with an R/S ratio of 0.9. What does this indicate?",
+    "ch": [
+     "Hyperkalemia that calls for calcium and insulin therapy",
+     "A normal variant that requires no specific treatment",
+     "Tricyclic poisoning with sodium-channel blockade needing bicarbonate",
+     "Digoxin toxicity that should be treated with immune Fab",
+     "A benign drug effect producing scooped ST depression"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Why does worsening acidosis create a vicious cycle in tricyclic overdose?",
+    "ch": [
+     "Low pH blocks potassium channels and prolongs the QT interval",
+     "Acidosis shrinks the volume of distribution and raises the level",
+     "Acidosis stops benzodiazepines from controlling the seizures",
+     "Low pH raises the free drug fraction bound to sodium channels",
+     "Acidosis stops mattering once bicarbonate has been started"
+    ]
+   }
+  ]
+ },
+ "digoxin-toxicity": {
+  "condition": "Digoxin Toxicity",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Digoxin's therapeutic inotropy and its toxic arrhythmias both follow from inhibition of which target?",
+    "ch": [
+     "The cardiac fast sodium channel",
+     "The myocardial Na+/K+-ATPase",
+     "The L-type calcium channel of the AV node",
+     "The beta-1 adrenergic receptor",
+     "Hepatic alcohol dehydrogenase"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which visual symptom is the classic clue to digoxin toxicity?",
+    "ch": [
+     "Sudden painless monocular loss of vision",
+     "A \"snowstorm\" whiteout of the visual field",
+     "Bilateral homonymous hemianopsia on testing",
+     "A painful red eye with marked photophobia",
+     "Yellow-green halos around lights, or xanthopsia"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which arrhythmia is considered near-pathognomonic for digoxin toxicity?",
+    "ch": [
+     "Wolff-Parkinson-White with a delta wave",
+     "Sinus tachycardia at 130 beats per minute",
+     "Bidirectional ventricular tachycardia",
+     "Rapidly conducted atrial fibrillation",
+     "Torsades de pointes with a long QT"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient taking digoxin has downsloping \"scooped\" ST depression on the ECG and feels entirely well. What does this represent?",
+    "ch": [
+     "The benign digoxin effect seen at therapeutic levels",
+     "Hyperkalemia from an acute glycoside overdose",
+     "An indication to withhold all further doses at once",
+     "Definite toxicity requiring digoxin immune Fab",
+     "Acute myocardial ischemia requiring catheterization"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "How does potassium typically differ between acute and chronic digoxin toxicity?",
+    "ch": [
+     "Both the acute and the chronic patterns reliably produce hyperkalemia",
+     "Potassium is unchanged in either pattern of glycoside toxicity",
+     "Acute toxicity often brings hyperkalemia, while chronic toxicity is often normo- or hypokalemic",
+     "Only chronic toxicity moves the potassium, and it always moves upward",
+     "Acute toxicity brings hypokalemia, while chronic toxicity brings hyperkalemia"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which of the following is an indication for digoxin immune Fab?",
+    "ch": [
+     "A potassium above 5.0-5.5 mEq/L in acute toxicity",
+     "A digoxin level of 1.2 ng/mL drawn at steady state",
+     "Isolated nausea that settles with an antiemetic",
+     "Hypokalemia in a patient on chronic digoxin therapy",
+     "Scooped ST depression on a routine screening ECG"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient with acute digoxin toxicity has a potassium of 6.1 mEq/L. Which standard hyperkalemia therapy is classically avoided?",
+    "ch": [
+     "Atropine for symptomatic bradycardia",
+     "Digoxin immune Fab",
+     "Continuous cardiac monitoring",
+     "Intravenous calcium",
+     "Magnesium sulfate for arrhythmia"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "What must a nurse do before administering each dose of digoxin?",
+    "ch": [
+     "Obtain a serum digoxin level with every single dose",
+     "Give intravenous potassium along with each dose",
+     "Perform a formal bedside visual acuity examination",
+     "Check the apical pulse for a full minute and hold for a rate below 60",
+     "Confirm a completely normal 12-lead ECG before dosing"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "An 82-year-old on a long-stable digoxin dose is started on amiodarone, and two weeks later has nausea, confusion, and new PVCs. What best explains this?",
+    "ch": [
+     "A new illness entirely unrelated to the digoxin regimen",
+     "Digoxin withdrawal from a run of missed doses",
+     "Amiodarone-induced hypothyroidism causing the symptoms",
+     "An expected therapeutic response needing no action",
+     "An interacting drug acting as a precipitant of toxicity"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "When should a serum digoxin level be drawn to give a valid steady-state result?",
+    "ch": [
+     "Timing does not affect how the level is read",
+     "At least 6 hours after the dose was given",
+     "Immediately after the dose has been swallowed",
+     "Only after digoxin immune Fab has been given",
+     "Within about 30 minutes of an oral dose"
+    ]
+   }
+  ]
+ },
+ "carbon-monoxide": {
+  "condition": "Carbon Monoxide Poisoning",
+  "questions": [
+   {
+    "n": 1,
+    "q": "How does carbon monoxide impair oxygen delivery to tissues?",
+    "ch": [
+     "It oxidizes the hemoglobin iron to the ferric state, forming methemoglobin",
+     "It causes bronchospasm that reduces alveolar oxygen uptake",
+     "It dissolves in plasma and directly lowers the measured PaO2",
+     "It binds hemoglobin far tighter than oxygen and shifts the dissociation curve left",
+     "It destroys red cells and produces an acute hemolytic anemia"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Why is a standard pulse oximeter unreliable in carbon monoxide poisoning?",
+    "ch": [
+     "It measures dissolved oxygen instead of bound oxygen",
+     "It needs an arterial sample that is often unavailable",
+     "It underestimates saturation whenever the lactate is high",
+     "It cannot distinguish carboxyhemoglobin from oxyhemoglobin",
+     "It fails because peripheral perfusion is always poor here"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What is the first-line therapy for all suspected carbon monoxide poisoning?",
+    "ch": [
+     "Reflexive sodium bicarbonate for the acidosis",
+     "Room-air observation until symptoms resolve",
+     "Hydroxocobalamin given before any oxygen therapy",
+     "Waiting for the COHb result before treating",
+     "100% oxygen by non-rebreather, started immediately"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "What happens to the carboxyhemoglobin elimination half-life as oxygen therapy escalates?",
+    "ch": [
+     "About 240-320 minutes on room air, 60-90 minutes on 100% oxygen, and 20-30 minutes with hyperbaric oxygen",
+     "About 30 minutes on room air, 240 minutes on 100% oxygen, and 320 minutes with hyperbaric oxygen",
+     "Roughly 60 minutes on room air, and unchanged by either supplemental or hyperbaric oxygen",
+     "About 240 minutes on room air, unchanged on 100% oxygen, and 60 minutes with hyperbaric oxygen",
+     "Roughly 20-30 minutes on room air and about 240-320 minutes once hyperbaric oxygen is given"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which feature best supports transfer for hyperbaric oxygen therapy?",
+    "ch": [
+     "Loss of consciousness during the exposure",
+     "A headache that resolves on high-flow oxygen",
+     "A COHb level of 8% in a chronic smoker",
+     "A normal pulse oximeter reading on arrival",
+     "Cherry-red skin discoloration of the trunk"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "How should the classic finding of cherry-red skin be regarded in carbon monoxide poisoning?",
+    "ch": [
+     "Present in nearly every significant exposure",
+     "The earliest sign, appearing before any headache",
+     "Uncommon, and usually a late or postmortem finding",
+     "A specific sign that hyperbaric oxygen is unnecessary",
+     "Proof that concurrent cyanide toxicity is present"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Exposure to which household product can produce carbon monoxide poisoning hours after the exposure has ended?",
+    "ch": [
+     "Organophosphate garden insecticide",
+     "Concentrated drain-cleaner lye",
+     "Antifreeze containing ethylene glycol",
+     "Chlorine bleach mixed with ammonia",
+     "Methylene chloride paint stripper"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A house-fire victim has soot in the airway, altered mental status, and a profound lactic acidosis. What should be added to the 100% oxygen?",
+    "ch": [
+     "Empiric antibiotics for inhalation pneumonitis",
+     "Naloxone titrated to the mental status",
+     "Hydroxocobalamin for suspected cyanide co-toxicity",
+     "A nitrite-based cyanide antidote kit",
+     "Reflexive bicarbonate to correct the lactate"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which neuroimaging finding is the signature of carbon monoxide toxicity?",
+    "ch": [
+     "Bilateral occipital cortical calcification",
+     "Bilateral globus pallidus lesions",
+     "Cerebellar vermis atrophy",
+     "Unilateral middle cerebral artery infarction",
+     "Diffuse subarachnoid hemorrhage"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A pregnant woman has a mild headache after a faulty heater exposure and a COHb of 21%. What is the appropriate approach?",
+    "ch": [
+     "Use the maternal level alone to decide about transfer",
+     "Treat aggressively, because pregnancy lowers the hyperbaric oxygen threshold",
+     "Discharge her, because her symptoms are only mild",
+     "Observe her on room air and recheck the level later",
+     "Withhold oxygen until fetal monitoring is arranged"
+    ]
+   }
+  ]
+ },
+ "toxic-alcohols": {
+  "condition": "Toxic Alcohols (Methanol/Ethylene Glycol)",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Why are methanol and ethylene glycol so dangerous when the parent alcohols are only mildly intoxicating?",
+    "ch": [
+     "They inhibit the myocardial Na+/K+-ATPase pump",
+     "They accumulate unchanged because they are not metabolized",
+     "Alcohol dehydrogenase converts them into toxic acid metabolites",
+     "They are directly corrosive to the gastric mucosa",
+     "They bind hemoglobin and impair oxygen delivery"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which metabolite causes methanol's characteristic organ injury, and what does it injure?",
+    "ch": [
+     "Acetaldehyde, which produces hepatic necrosis",
+     "Formate, which poisons the optic nerve and retina",
+     "Glycolate, which causes immediate cardiac arrest",
+     "Formaldehyde, which damages the cerebellum",
+     "Oxalate, which deposits as crystals in the kidney"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which urine finding supports a diagnosis of ethylene glycol poisoning?",
+    "ch": [
+     "Myoglobin without red cells on microscopy",
+     "Muddy brown granular casts",
+     "Red cell casts with dysmorphic red cells",
+     "Positive nitrites and leukocyte esterase",
+     "Calcium oxalate crystals on microscopy"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "How do the osmolar gap and the anion gap behave over the course of toxic alcohol poisoning?",
+    "ch": [
+     "The osmolar gap is high early and narrows as the anion gap rises",
+     "The anion gap is high early and falls as the osmolar gap rises",
+     "Both gaps rise together and stay elevated throughout the course",
+     "Neither gap changes until renal failure has developed",
+     "The osmolar gap stays normal while the anion gap also stays normal"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Why is fomepizole preferred over an ethanol infusion as the antidote?",
+    "ch": [
+     "Predictable dosing with no intoxication, sedation, or hypoglycemia",
+     "It corrects the metabolic acidosis directly and rapidly",
+     "It requires no laboratory monitoring of any kind",
+     "It works through a different enzyme than ethanol does",
+     "It removes the toxic metabolites that have already formed"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which cofactor therapy matches which toxic alcohol poisoning?",
+    "ch": [
+     "Thiamine and pyridoxine for methanol; folinic acid for ethylene glycol",
+     "Pyridoxine alone, used for both methanol and ethylene glycol",
+     "Folic acid for ethylene glycol; no cofactor at all for methanol",
+     "Folic or folinic acid for methanol; thiamine and pyridoxine for ethylene glycol",
+     "Niacin for methanol; cyanocobalamin for ethylene glycol"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which finding is an indication for hemodialysis in toxic alcohol poisoning?",
+    "ch": [
+     "An osmolar gap of 12 with a normal pH",
+     "Successful administration of fomepizole",
+     "A co-ingested ethanol level of 120 mg/dL",
+     "Resolution of the anion gap on serial labs",
+     "Severe metabolic acidosis or visual symptoms"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient who drank antifreeze develops carpopedal spasm and a prolonged QT interval. What explains these findings?",
+    "ch": [
+     "Formate injuring the optic nerve and the retina",
+     "Oxalate binding calcium and producing hypocalcemia",
+     "Hyperkalemia arising from the metabolic acidosis",
+     "Hypoglycemia caused by an ethanol antidote infusion",
+     "Direct sodium-channel blockade by the parent alcohol"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A methanol-poisoned patient already on fomepizole is started on hemodialysis. What must change about the antidote?",
+    "ch": [
+     "The dose should be reduced to avoid accumulation",
+     "It should be switched to an intravenous ethanol infusion",
+     "No change is needed, since the drug is not dialyzable",
+     "The dose is increased and the dosing interval shortened",
+     "It should be stopped as soon as dialysis begins"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "An intoxicated patient presents late with a pH of 7.10, an anion gap of 28, and a normal osmolar gap. How should that normal osmolar gap be interpreted?",
+    "ch": [
+     "It reliably rules out methanol and ethylene glycol",
+     "It means the anion gap must come from lactate instead",
+     "It does not exclude toxic alcohol poisoning, especially late",
+     "It indicates that fomepizole should now be withheld",
+     "It confirms that hemodialysis will be unnecessary"
+    ]
+   }
+  ]
+ },
+ "organophosphate": {
+  "condition": "Organophosphate Poisoning",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Organophosphates such as malathion, parathion, and the nerve agent sarin produce toxicity by which mechanism?",
+    "ch": [
+     "Excess release of norepinephrine from sympathetic nerve terminals",
+     "Competitive antagonism of nicotinic receptors at the neuromuscular junction",
+     "Phosphorylation and inhibition of acetylcholinesterase, so acetylcholine accumulates at synapses",
+     "Blockade of muscarinic receptors, preventing acetylcholine from reaching its target",
+     "Depletion of acetylcholine from presynaptic vesicles, leaving synapses empty"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which cluster of findings represents the muscarinic (SLUDGE/DUMBELS) component of organophosphate toxicity?",
+    "ch": [
+     "Hypertension, tachycardia, and laryngospasm during a rapid intravenous push",
+     "Salivation, lacrimation, urination, defecation, GI cramping, and emesis",
+     "Muscle fasciculations, weakness, tachycardia, and mydriasis",
+     "Agitation, seizures, and coma without any peripheral findings",
+     "Dry mouth, flushed skin, hyperthermia, and urinary retention"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "The \"Killer B's\" name the features that actually cause death in organophosphate poisoning. Which triad is it?",
+    "ch": [
+     "Blindness, bulbar weakness, and blistering of exposed skin",
+     "Bradycardia, bruising, and bacteremia from secondary infection",
+     "Bradypnea, bradykinesia, and bilateral miosis",
+     "Bradycardia, bronchorrhea, and bronchospasm",
+     "Bronchiectasis, bleeding, and bilateral fasciculations"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Atropine is being titrated in a patient with organophosphate poisoning. What is the correct therapeutic endpoint?",
+    "ch": [
+     "Drying of pulmonary secretions with clear breath sounds and adequate oxygenation",
+     "Complete resolution of muscle fasciculations and proximal weakness",
+     "Normalization of the red-blood-cell acetylcholinesterase level",
+     "A heart rate consistently above 100 beats per minute",
+     "Dilation of the pinpoint pupils back to a normal size"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Why is pralidoxime (2-PAM) added to atropine rather than giving atropine alone?",
+    "ch": [
+     "It sedates the patient and terminates cholinergic seizures more reliably",
+     "It blocks muscarinic receptors more completely than atropine and dries secretions faster",
+     "It is withheld until enzyme aging is complete and then restores the phosphorylated enzyme",
+     "It chelates the organophosphate in the bloodstream so the kidneys can clear it",
+     "It reactivates acetylcholinesterase and reverses nicotinic fasciculations and weakness that atropine cannot"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient with organophosphate poisoning needs intubation for respiratory failure. Which agent should be avoided, and why?",
+    "ch": [
+     "Midazolam — benzodiazepines are contraindicated in cholinergic poisoning",
+     "Pralidoxime — the oxime must be held until the airway has been secured",
+     "Supplemental oxygen — a high inspired fraction aggravates cholinergic seizures",
+     "Succinylcholine — cholinesterase inhibition markedly prolongs its paralysis",
+     "Atropine — it worsens bronchorrhea and must be stopped before airway management"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "An organophosphate-poisoned patient begins seizing. Which treatment is first-line?",
+    "ch": [
+     "Succinylcholine to abolish the motor activity while ventilating",
+     "Phenytoin, the preferred anticonvulsant for this toxidrome",
+     "Escalating atropine alone until the seizure activity stops",
+     "A rapid intravenous push of pralidoxime to reactivate the enzyme",
+     "A benzodiazepine such as diazepam, midazolam, or lorazepam"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A farmer treated for organophosphate poisoning improved and was weaned off atropine. On hospital day 3 he develops proximal limb weakness and a falling tidal volume. What is happening?",
+    "ch": [
+     "Organophosphate-induced delayed polyneuropathy, which appears weeks after exposure",
+     "The intermediate syndrome — proximal and respiratory muscle weakness 24-96 hours after exposure",
+     "Anticholinergic toxicity from over-atropinization, with hyperthermia and delirium",
+     "Carbamate poisoning, whose cholinesterase inhibition is reversible and transient",
+     "Laryngospasm caused by a too-rapid pralidoxime infusion"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which laboratory test best confirms organophosphate exposure, and how should it affect management?",
+    "ch": [
+     "Arterial blood gas, which establishes the diagnosis of cholinergic crisis",
+     "The QTc interval on the ECG, which confirms cholinesterase inhibition",
+     "Red-blood-cell acetylcholinesterase, which best reflects the synaptic effect — but treatment must not wait for it",
+     "Plasma (butyryl) cholinesterase, the more specific of the two available assays",
+     "A quantitative serum organophosphate concentration drawn before atropine"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Two farm workers arrive in wet, pesticide-soaked clothing with pinpoint pupils and a garlic odor. Which action protects both the patients and the staff before hands-on care begins?",
+    "ch": [
+     "Don chemical-protective equipment, then remove and bag the clothing and irrigate the skin",
+     "Begin hands-on care at once, since dermal absorption stops once a patient is indoors",
+     "Paralyze and intubate both patients with succinylcholine before decontamination",
+     "Send red-blood-cell acetylcholinesterase and await the result before any treatment",
+     "Give activated charcoal to both patients regardless of the route of exposure"
+    ]
+   }
+  ]
+ }
+}

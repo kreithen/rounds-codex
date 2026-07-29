@@ -1,0 +1,922 @@
+{
+ "epistaxis": {
+  "condition": "Epistaxis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Roughly 90% of nosebleeds arise from which site?",
+    "ch": [
+     "The middle meatus at the ostiomeatal complex",
+     "The nasopharynx at the site of adenoid tissue",
+     "The sphenopalatine artery in the posterior nasal cavity",
+     "Kiesselbach's plexus (Little's area) on the anterior nasal septum",
+     "The cavernous sinus draining through the nasal mucosa"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "A posterior nosebleed that fails pressure, cautery, and packing most likely arises from which vessel, and what is the definitive surgical target?",
+    "ch": [
+     "Superior labial artery, controlled by ligating the lip artery",
+     "Anterior ethmoidal artery, controlled by ethmoidectomy",
+     "Sphenopalatine artery, controlled by SPA ligation or embolization",
+     "Greater palatine artery, controlled by cautery of the palate",
+     "Internal jugular vein, controlled by venous ligation"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What is the correct first-aid technique for an anterior nosebleed?",
+    "ch": [
+     "Lean forward and pinch the soft part of the nose firmly for 10-15 minutes",
+     "Apply an ice pack to the bridge without any compression at all",
+     "Blow the nose forcefully to clear clots, then rest lying supine",
+     "Tilt the head back and pinch the bony bridge for about 2 minutes",
+     "Pack the nostril with cotton at home and then lie flat"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which combination of findings most suggests a posterior rather than an anterior bleeding source?",
+    "ch": [
+     "No source visible anteriorly, with bilateral bleeding and brisk blood in the posterior pharynx",
+     "A small clot on Little's area that stops with 10 minutes of pressure",
+     "Bleeding that began after vigorous nose-picking in a young child",
+     "Unilateral bleeding relieved immediately by topical oxymetazoline",
+     "Blood running steadily out of one nostril with a visible septal vessel"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "When silver nitrate chemical cautery is used on a visualized anterior septal bleeding vessel, which precaution prevents septal perforation?",
+    "ch": [
+     "Cauterize both sides at once to balance the injury",
+     "Cauterize before evacuating clot so the vessel stays under pressure",
+     "Cauterize briskly bleeding points that cannot be directly seen",
+     "Cauterize only after a posterior balloon pack is in place",
+     "Cauterize only one side of the septum at a time"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Firm compression and topical oxymetazoline have failed, and a discrete anterior bleeding point is clearly visible. What is the next step in the stepwise algorithm?",
+    "ch": [
+     "Systemic reversal of anticoagulation",
+     "Posterior balloon packing",
+     "Sphenopalatine artery ligation",
+     "Chemical or electrocautery of the visualized point",
+     "Angiographic embolization"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "For which patient with epistaxis are CBC, PT/INR, aPTT, and type & screen indicated?",
+    "ch": [
+     "An adult with a single bleed that stopped with firm pressure",
+     "A patient with a heavy, recurrent bleed who takes an anticoagulant",
+     "Any patient presenting with epistaxis, as a routine screen",
+     "A patient whose bleeding stopped after topical oxymetazoline",
+     "A child with a 3-minute anterior bleed after nose-picking"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient has just had a posterior balloon pack placed for a brisk posterior bleed. What is the priority nursing monitoring?",
+    "ch": [
+     "Hourly measurement of nasal mucosal moisture and humidity",
+     "Teaching saline and emollient use in preparation for discharge",
+     "Checking that the patient leans backward to reduce drainage",
+     "Encouraging forceful nose blowing to clear the old clot",
+     "Continuous monitoring for airway obstruction, hypoxia, and pain"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 15-year-old boy has recurrent unilateral epistaxis with progressive nasal obstruction and a vascular-appearing nasal mass. What is the key management point?",
+    "ch": [
+     "Attribute the bleeding to nose-picking and discharge with emollient",
+     "Suspect juvenile nasopharyngeal angiofibroma and do not biopsy it",
+     "Apply bilateral silver nitrate cautery to the nasal septum",
+     "Send anti-streptococcal titers to look for an infectious cause",
+     "Biopsy the mass in the emergency department to obtain tissue"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "An adult has years of recurrent nosebleeds, mucocutaneous telangiectasias, and a family history of the same problem. Which diagnosis does this pattern suggest?",
+    "ch": [
+     "Rhinitis medicamentosa from topical decongestant overuse",
+     "Isolated hypertension as the sole cause of the bleeding",
+     "Hereditary hemorrhagic telangiectasia (Osler-Weber-Rendu)",
+     "Simple mucosal dryness from low-humidity indoor air",
+     "Juvenile nasopharyngeal angiofibroma of the nasopharynx"
+    ]
+   }
+  ]
+ },
+ "bppv": {
+  "condition": "Benign Paroxysmal Positional Vertigo",
+  "questions": [
+   {
+    "n": 1,
+    "q": "What is the mechanism of canalithiasis in benign paroxysmal positional vertigo?",
+    "ch": [
+     "Otoconia break free from the utricular macula and settle in a semicircular canal, deflecting the cupula",
+     "Inflammation of the vestibular nerve producing constant vertigo lasting days",
+     "Ischemia of the posterior circulation affecting brainstem vestibular pathways",
+     "Otoconia adhering directly to the cupula rather than moving freely in the canal",
+     "Endolymphatic hydrops distending the membranous labyrinth of the inner ear"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which semicircular canal is involved in the large majority of BPPV cases?",
+    "ch": [
+     "The horizontal (lateral) canal, involved in most cases",
+     "The posterior canal, involved in roughly 85-90% of cases",
+     "The utricle itself, where the otoconia originate",
+     "The cochlear duct adjacent to the vestibule",
+     "The anterior canal, which is the rare form of the disease"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which symptom pattern is characteristic of pure BPPV?",
+    "ch": [
+     "Constant, non-positional vertigo for several days with marked gait instability",
+     "Vertigo lasting minutes to hours accompanied by tinnitus and aural fullness",
+     "Vertigo with dysarthria, diplopia, and limb ataxia on examination",
+     "Progressive unilateral hearing loss with mild persistent imbalance",
+     "Brief vertigo under 60 seconds triggered by position change, without hearing loss or tinnitus"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which pairing of bedside maneuvers with their purpose is correct for posterior-canal BPPV?",
+    "ch": [
+     "Dix-Hallpike treats the condition and Epley diagnoses it",
+     "Dix-Hallpike diagnoses the condition and Epley treats it",
+     "Supine roll diagnoses it and Brandt-Daroff is first-line treatment",
+     "The HINTS exam diagnoses it and meclizine treats it",
+     "Gufoni diagnoses it and the Lempert roll treats it"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A positive Dix-Hallpike test for posterior-canal BPPV shows which nystagmus characteristics?",
+    "ch": [
+     "No nystagmus at all despite reproducible severe positional vertigo",
+     "Purely horizontal nystagmus that is geotropic on both sides",
+     "Direction-changing gaze-evoked nystagmus without any latency",
+     "Down-beating vertical nystagmus that does not fatigue",
+     "Upbeating-torsional nystagmus with latency, a crescendo-decrescendo course, and fatigability"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Positional vertigo with purely horizontal nystagmus on the supine roll (Pagnini-McClure) test is best treated with which maneuver?",
+    "ch": [
+     "The Dix-Hallpike maneuver repeated daily",
+     "MRI of the brain followed by observation",
+     "The Epley canalith repositioning maneuver",
+     "The Lempert (barbecue) roll or the Gufoni maneuver",
+     "A short course of meclizine at bedtime"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "What is the guideline stance on meclizine in the management of BPPV?",
+    "ch": [
+     "It is first-line therapy and should be given before any maneuver",
+     "It is curative because it dissolves the displaced otoconia",
+     "It is recommended against for routine use and is symptomatic only, at best short-term",
+     "It is preferred over ondansetron because it is not sedating",
+     "It should be continued for months to prevent recurrence"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient describes vertigo lasting one to two hours at a time with tinnitus, unilateral hearing loss, and aural fullness. How does this differ from BPPV?",
+    "ch": [
+     "It fits Meniere disease: minutes to hours with hearing loss, tinnitus, and aural fullness",
+     "It is a posterior-circulation stroke and needs immediate thrombolysis",
+     "It is the classic Dix-Hallpike-positive pattern of posterior-canal BPPV",
+     "It represents cupulolithiasis of the horizontal canal instead",
+     "It is vestibular neuritis, which lasts days and is constant"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "During positional testing a patient shows direction-changing nystagmus with no latency and no fatigability, and symptoms persist after two Epley maneuvers. What is the appropriate next step?",
+    "ch": [
+     "Start scheduled meclizine and reassess the patient in two weeks",
+     "Teach Brandt-Daroff exercises for home habituation instead",
+     "Reassure the patient that BPPV recurs and no action is needed",
+     "Obtain MRI of the brain and posterior fossa for a suspected central lesion",
+     "Repeat the Epley maneuver twice more before doing anything else"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A young woman has had three episodes of Dix-Hallpike-positive BPPV in two years. Besides counseling on recurrence and fall safety, which modifiable risk factor should be evaluated?",
+    "ch": [
+     "Excessive dietary sodium intake",
+     "Occupational loud-noise exposure",
+     "Vitamin D deficiency and low bone density",
+     "Untreated essential hypertension",
+     "Chronic macrolide antibiotic exposure"
+    ]
+   }
+  ]
+ },
+ "otitis-externa": {
+  "condition": "Otitis Externa",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which organisms predominate in acute otitis externa?",
+    "ch": [
+     "Pseudomonas aeruginosa and Staphylococcus aureus",
+     "Streptococcus pyogenes and Fusobacterium necrophorum",
+     "Haemophilus influenzae and Mycoplasma pneumoniae",
+     "Streptococcus pneumoniae and Moraxella catarrhalis",
+     "Aspergillus and Candida species"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which examination finding is the hallmark that distinguishes otitis externa from acute otitis media?",
+    "ch": [
+     "A bulging, immobile tympanic membrane with middle-ear effusion",
+     "Purulent drainage visible in the middle meatus on rhinoscopy",
+     "Tenderness over the maxillary and frontal sinus regions",
+     "Tender anterior cervical adenopathy with tonsillar exudates",
+     "Severe pain on tragal pressure or auricle traction with a normal tympanic membrane"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "How is otitis externa classified by duration and invasiveness?",
+    "ch": [
+     "Geotropic, apogeotropic, and central, based on nystagmus direction",
+     "Anterior, posterior, and refractory, based on the site of bleeding",
+     "Acute under 6 weeks, chronic over 3 months, and malignant or necrotizing when it invades the skull base",
+     "Acute under 4 weeks, subacute 4-12 weeks, and chronic at 12 weeks or more",
+     "Mild, moderate, and severe, based on the reported pain score alone"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "What is first-line therapy for uncomplicated acute otitis externa?",
+    "ch": [
+     "Isopropyl alcohol instilled into the inflamed canal",
+     "Topical clotrimazole after thorough canal debridement",
+     "Oral ciprofloxacin for seven to ten days",
+     "Topical fluoroquinolone drops such as ciprofloxacin or ofloxacin",
+     "Oral amoxicillin-clavulanate plus a topical anesthetic"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Before recommending a neomycin-polymyxin-hydrocortisone otic combination, what must be established?",
+    "ch": [
+     "That the patient has already failed a course of topical antifungal therapy",
+     "That the ESR and CRP are within normal limits",
+     "That the canal has already been packed with a wick",
+     "That the tympanic membrane is intact, because of ototoxicity risk",
+     "That a Gallium-67 scan shows no abnormal uptake"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient's ear canal is so edematous that instilled drops cannot reach the deep canal. Which intervention addresses this?",
+    "ch": [
+     "Instill acetic acid to shrink the canal quickly",
+     "Place an ear wick to deliver the drops",
+     "Order a CT of the temporal bone before treating",
+     "Add a topical anesthetic to reduce the swelling",
+     "Switch to an oral fluoroquinolone instead of using drops"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which instruction is correct when teaching an adult to self-administer otic drops?",
+    "ch": [
+     "Pull the auricle down and back, using the same technique as for a young child",
+     "Insert a cotton swab into the canal afterward to hold the medication in place",
+     "Warm the drops to body temperature, pull the auricle up and back, and lie with the treated ear up for several minutes",
+     "Instill the drops sitting upright and then stand immediately to resume activity",
+     "Use the drops straight from the refrigerator so the cold numbs the canal"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient with persistent ear symptoms has not improved on antibacterial drops, and otoscopy shows fluffy fungal hyphae with black spores. What is the management?",
+    "ch": [
+     "Place a wick and continue the same antibiotic drops",
+     "Meticulous cleaning and debridement plus topical antifungals",
+     "Order a Technetium-99m bone scan before changing therapy",
+     "Extend the same antibacterial drops for another two weeks",
+     "Begin systemic anti-pseudomonal therapy for skull-base osteomyelitis"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "An elderly diabetic patient has severe deep nocturnal ear pain out of proportion to the exam and granulation tissue at the bony-cartilaginous junction. Which workup is indicated?",
+    "ch": [
+     "ESR and CRP, glucose and HbA1c, and CT of the temporal bone",
+     "A Dix-Hallpike maneuver to exclude a vestibular cause",
+     "Reassurance now with repeat otoscopy in two weeks",
+     "Coagulation studies and a type & screen for blood loss",
+     "Canal culture alone, with the same topical drops continued"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which prevention counseling is appropriate at discharge for a swimmer with resolving otitis externa?",
+    "ch": [
+     "Take a prophylactic oral fluoroquinolone before swim practice",
+     "Use a topical anesthetic before swimming to prevent pain",
+     "Apply a neomycin-containing combination drop once weekly",
+     "Dry the canal with a cotton swab after each swim",
+     "Instill acidifying drying drops after swimming and avoid cotton swabs"
+    ]
+   }
+  ]
+ },
+ "peritonsillar-abscess": {
+  "condition": "Peritonsillar Abscess",
+  "questions": [
+   {
+    "n": 1,
+    "q": "In a peritonsillar abscess, where does the pus actually collect?",
+    "ch": [
+     "Inside the parotid gland duct system draining into the mouth",
+     "Beneath the epiglottis within the supraglottic soft tissues",
+     "In the retropharyngeal space behind the posterior pharyngeal wall",
+     "Within the substance of the tongue base musculature itself",
+     "In the potential space between the tonsillar capsule and the superior pharyngeal constrictor muscle"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which set of examination findings does the module call the hallmark of peritonsillar abscess?",
+    "ch": [
+     "A painless neck mass with drenching night sweats and unintentional weight loss",
+     "Symmetric soft palate swelling with a normal voice and full painless mouth opening",
+     "Hot potato (muffled) voice, uvula deviation away from the abscess, and trismus",
+     "Bilateral tonsillar exudate with a scarlatiniform rash and a strawberry tongue",
+     "Inspiratory stridor with a barking cough and marked suprasternal retractions"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which way does the uvula deviate in a peritonsillar abscess, and why?",
+    "ch": [
+     "Downward and posteriorly, obstructing the view of the oropharynx entirely",
+     "It does not deviate at all; the uvula stays midline in a peritonsillar abscess",
+     "Toward whichever side the patient turns the head during the examination",
+     "Away from the abscess, pushed toward the healthy side by the mass of pus",
+     "Toward the side of the abscess, pulled by scarring of the tonsillar capsule"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "The diagnosis is largely clinical. What does the module call the most direct confirmatory test?",
+    "ch": [
+     "Contrast-enhanced CT of the neck in every suspected case before treatment",
+     "Needle aspiration yielding purulent material, which is both diagnostic and therapeutic",
+     "A rapid streptococcal antigen swab of the posterior pharyngeal wall",
+     "An elevated CRP and white blood cell count on routine laboratory testing",
+     "A monospot test for Epstein-Barr virus infectious mononucleosis"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "How does the module distinguish peritonsillar cellulitis from a true peritonsillar abscess?",
+    "ch": [
+     "Cellulitis shows fullness without a drainable pocket, while an abscess is fluctuant and yields pus on aspiration",
+     "Cellulitis is caused by anaerobes and an abscess only by Group A Streptococcus",
+     "Cellulitis causes trismus whereas an abscess never limits mouth opening at all",
+     "Cellulitis deviates the uvula while an abscess leaves the uvula in the midline",
+     "Cellulitis requires drainage whereas an abscess responds to antibiotics alone"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "What is the first-line empiric antibiotic choice for a peritonsillar abscess?",
+    "ch": [
+     "Amoxicillin-clavulanate, or ampicillin-sulbactam IV, for Strep and oral anaerobe coverage",
+     "Oral azithromycin monotherapy for five days without any drainage procedure",
+     "Topical benzocaine gargles with antibiotics delayed until fever continues",
+     "Oral fluconazole, because the infection is usually fungal in young adults",
+     "Intravenous vancomycin alone, targeting methicillin-resistant staphylococci"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which antibiotic does the module name for a penicillin-allergic patient with a peritonsillar abscess?",
+    "ch": [
+     "Gentamicin, which reliably covers the oral anaerobes in this infection",
+     "Metronidazole alone, which fully covers Group A Streptococcus as well",
+     "Ceftriaxone, which shares the same beta-lactam ring and cross-reacts fully",
+     "Nafcillin, which is preferred whenever a penicillin allergy is documented",
+     "Clindamycin, which gives strong anaerobic and Group A Strep coverage"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "When performing needle aspiration of a peritonsillar abscess, how is the needle directed and why?",
+    "ch": [
+     "Aim inferiorly toward the tongue base, where no major vessels are present",
+     "Aspiration should be avoided entirely because of the bleeding risk involved",
+     "Aim posteriorly through the soft palate to reach the superior pole safely",
+     "Aim medial and shallow, because the internal carotid artery lies just lateral",
+     "Aim laterally and deeply, since the carotid artery lies medial to the tonsil"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 22-year-old is drained for a peritonsillar abscess and discharged on oral antibiotics. Three days later he returns with persistent spiking fevers, rigors, and unilateral neck pain and tenderness. Which complication does this pattern suggest?",
+    "ch": [
+     "Postoperative bleeding from injury to the internal carotid artery",
+     "Lemierre syndrome — Fusobacterium septic thrombophlebitis of the internal jugular vein",
+     "Infectious mononucleosis reactivating after the drainage procedure",
+     "Peritonsillar cellulitis that never actually progressed to an abscess",
+     "An allergic drug reaction to the amoxicillin-clavulanate prescribed"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient with a peritonsillar abscess develops stridor, pooling secretions, and cannot swallow saliva. What is the nursing priority?",
+    "ch": [
+     "Document the uvula position and the degree of trismus, then continue with rounds",
+     "Begin warm saltwater gargles and schedule the analgesics around the clock for comfort",
+     "Escalate immediately for airway management, keeping the patient upright with suction and emergency airway equipment at the bedside",
+     "Withhold all intravenous fluids until the patient can tolerate oral intake safely",
+     "Offer cool soft liquids by mouth and reassess the pain score again in one hour"
+    ]
+   }
+  ]
+ },
+ "menieres": {
+  "condition": "Meniere's Disease",
+  "questions": [
+   {
+    "n": 1,
+    "q": "What is the underlying pathophysiology of Meniere's disease?",
+    "ch": [
+     "A benign schwannoma of the vestibulocochlear nerve within the internal auditory canal",
+     "Inflammation of the vestibular nerve following a viral upper respiratory infection",
+     "Conductive blockage of the ossicular chain by abnormal bone at the stapes footplate",
+     "Otoconia displaced into the posterior semicircular canal of the inner ear",
+     "Idiopathic endolymphatic hydrops — excess endolymph distending the membranous labyrinth"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which grouping is the classic tetrad of Meniere's disease?",
+    "ch": [
+     "Positional vertigo of seconds, nystagmus, nausea, and normal hearing",
+     "Episodic vertigo, fluctuating sensorineural hearing loss, tinnitus, and aural fullness",
+     "Progressive asymmetric hearing loss, unilateral tinnitus, and imbalance",
+     "Vertigo, facial nerve palsy, painful ear vesicles, and hearing loss",
+     "Headache, photophobia, phonophobia, and normal audiometric hearing"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What pattern of hearing loss does audiometry show early in Meniere's disease?",
+    "ch": [
+     "High-frequency sensorineural loss that is fixed and steadily progressive",
+     "Conductive loss with Rinne showing bone conduction better than air",
+     "Loss confined to the mid frequencies with a normal-appearing audiogram",
+     "Complete unilateral deafness present from the very first vertigo attack",
+     "Low-frequency sensorineural loss that fluctuates early in the disease"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which combination satisfies the clinical diagnostic criteria for Meniere's disease?",
+    "ch": [
+     "Vertigo lasting only a few seconds that is reliably provoked by the Dix-Hallpike positioning maneuver",
+     "Two or more spontaneous vertigo episodes of 20 minutes to 12 hours plus documented low/mid-frequency sensorineural loss",
+     "Continuous unremitting vertigo for several days accompanied by completely normal audiometric hearing",
+     "An abnormal contrast MRI of the internal auditory canals demonstrating endolymphatic hydrops directly",
+     "A single vertigo episode of any duration together with a subjective sense of hearing change in either ear"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "What do the Weber and Rinne tests show in a patient with Meniere's disease?",
+    "ch": [
+     "Weber lateralizes to the affected ear with Rinne air greater than bone",
+     "Both Weber and Rinne are normal because the loss is purely central",
+     "Weber lateralizes to the unaffected ear and Rinne stays air greater than bone",
+     "Weber lateralizes to the affected ear and Rinne shows bone better than air",
+     "Weber stays midline and Rinne is reversed bilaterally in both of the ears"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "What is first-line maintenance therapy to reduce Meniere's attack frequency?",
+    "ch": [
+     "Long-term daily meclizine taken continuously to prevent future attacks",
+     "Intratympanic gentamicin injection at the very first clinic visit",
+     "Chronic benzodiazepine therapy to keep the vestibular system suppressed",
+     "A low-sodium diet plus a thiazide or thiazide-like diuretic to reduce endolymph volume",
+     "Oral prednisone tapers repeated monthly regardless of attack frequency"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which caution does the module attach to meclizine in Meniere's disease?",
+    "ch": [
+     "It is sedating and anticholinergic, so use caution in the elderly and limit it to short-term acute use",
+     "It requires electrolyte monitoring for hypokalemia and hyponatremia",
+     "It is ototoxic and can worsen the sensorineural hearing loss further",
+     "It must be given by intratympanic injection to reach the labyrinth",
+     "It is a preferred long-term prophylactic agent because it is non-sedating"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient with refractory disabling vertigo still has useful hearing in the affected ear. Which second-line option is favored when hearing preservation is the priority?",
+    "ch": [
+     "Intratympanic dexamethasone, a hearing-sparing corticosteroid injection",
+     "Intratympanic gentamicin, which is ototoxic and vestibulotoxic",
+     "Surgical labyrinthectomy to remove the vestibular end organ entirely",
+     "Betahistine, which is FDA-approved in the United States for this use",
+     "Daily high-dose meclizine continued indefinitely for vertigo control"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient with long-standing Meniere's describes sudden falls to the ground without any loss of consciousness. What does this represent?",
+    "ch": [
+     "A posterior circulation stroke, given the abrupt loss of postural tone",
+     "A benign positional event that resolves with the Epley repositioning",
+     "Tumarkin otolithic crisis — a drop attack marking advanced disease and high fall risk",
+     "A vasovagal syncopal episode unrelated to the inner ear disorder",
+     "An expected side effect of the thiazide diuretic causing hypotension"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "During an acute Meniere's vertigo attack, which nursing action is the priority?",
+    "ch": [
+     "Place the patient flat with the head lower than the body and dim the lights",
+     "Encourage the patient to walk the hallway to promote vestibular compensation",
+     "Brighten the room lighting and encourage active head-turning exercises",
+     "Keep the patient still in a quiet, dimly lit room with side rails up, bed low, call light in reach, and an emesis basin ready",
+     "Withhold all oral fluids for 24 hours and restrict potassium in the diet"
+    ]
+   }
+  ]
+ },
+ "herpes-zoster": {
+  "condition": "Herpes Zoster (Shingles)",
+  "questions": [
+   {
+    "n": 1,
+    "q": "What is the underlying mechanism of herpes zoster?",
+    "ch": [
+     "Primary infection with varicella-zoster virus acquired from a household contact",
+     "An autoimmune attack on epidermal desmoglein producing flaccid blisters",
+     "A hypersensitivity reaction to a recently started medication or antibiotic",
+     "Direct spread of herpes simplex virus along the trigeminal nerve branches",
+     "Reactivation of latent varicella-zoster virus in a sensory ganglion as cell-mediated immunity declines"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which description matches the classic herpes zoster rash?",
+    "ch": [
+     "Ill-defined scaly flexural patches with chronic lichenification and excoriation",
+     "Diffuse migratory urticarial wheals that move over the body within a few hours",
+     "Symmetric bilateral crops of vesicles that freely cross the midline of the trunk",
+     "A unilateral single-dermatome eruption of grouped vesicles on an erythematous base that does not cross the midline",
+     "Sharply demarcated plaques with thick adherent silvery scale over both elbows and knees"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What is the most common complication of herpes zoster?",
+    "ch": [
+     "Secondary bacterial cellulitis requiring intravenous antibiotic therapy",
+     "Postherpetic neuralgia — dermatomal neuropathic pain lasting more than 90 days after rash onset",
+     "Chronic recurrent vesicle formation in the same dermatome every month",
+     "Disseminated visceral involvement in otherwise immunocompetent adults",
+     "Permanent motor weakness in the involved dermatome after the rash heals"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "When laboratory confirmation of zoster is needed, which test is most sensitive and specific?",
+    "ch": [
+     "Skin biopsy showing Munro microabscesses within the thickened epidermis",
+     "Bacterial wound culture of the crusted lesions after they have healed",
+     "PCR of a vesicle swab or scraping",
+     "Tzanck smear, which reliably distinguishes varicella-zoster from herpes simplex",
+     "Serum varicella IgG titer drawn during the acute vesicular eruption"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "What is the Hutchinson sign and what does it signify?",
+    "ch": [
+     "Vesicles on the tip or side of the nose, signalling nasociliary V1 involvement and ocular risk",
+     "A dermatomal rash that crosses the midline in an immunocompromised host",
+     "A vesicle in the external auditory canal predicting facial nerve palsy",
+     "Pinpoint bleeding when adherent scale is scraped from a plaque surface",
+     "New lesions appearing at sites of skin trauma or vigorous scratching"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "How should the timing of antiviral therapy for zoster be decided?",
+    "ch": [
+     "Antivirals are indicated only for otherwise healthy patients younger than fifty years of age",
+     "Topical acyclovir cream applied directly to the rash fully replaces oral antiviral therapy",
+     "Antivirals should be withheld altogether once any vesicles have already appeared on the skin surface",
+     "Antivirals are reserved exclusively for postherpetic neuralgia after the skin lesions have healed",
+     "Start within 72 hours of rash onset, but treat later if lesions are still forming, in ophthalmic or facial disease, or in immunocompromise"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which is first-line pharmacologic therapy for the neuropathic pain of postherpetic neuralgia?",
+    "ch": [
+     "Gabapentin or pregabalin, titrated slowly, as first-line neuropathic therapy",
+     "Systemic corticosteroids, which reliably prevent postherpetic neuralgia",
+     "Long-acting opioids as the initial and preferred single agent for the pain",
+     "Topical capsaicin applied directly onto open, actively weeping vesicles",
+     "Intravenous acyclovir continued for several months after lesions crust"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A 68-year-old has new right facial droop, painful vesicles in the right ear canal, and vertigo with hearing change. Which diagnosis fits?",
+    "ch": [
+     "Herpes zoster ophthalmicus from nasociliary branch involvement",
+     "Disseminated zoster with more than twenty lesions off the dermatome",
+     "Postherpetic neuralgia arising early in the course of the eruption",
+     "Ramsay Hunt syndrome — zoster of the geniculate ganglion",
+     "Bell palsy unrelated to varicella-zoster virus reactivation"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A hospitalized immunocompromised patient has widespread zoster lesions beyond the original dermatome. Which precautions are required?",
+    "ch": [
+     "Contact precautions alone with the rash left uncovered for air drying",
+     "Airborne plus contact precautions until all the lesions have crusted",
+     "Standard precautions only, since crusted zoster lesions are never infectious",
+     "No precautions are needed because zoster cannot be transmitted to others",
+     "Droplet precautions for 24 hours after the first antiviral dose is given"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "How is zoster prevented, and in whom?",
+    "ch": [
+     "Vaccination replaces antiviral therapy during an active zoster outbreak",
+     "Zostavax, the live vaccine, is preferred and is safe in immunocompromise",
+     "Recombinant zoster vaccine (Shingrix) — non-live, two doses, for adults 50+ and immunocompromised adults 19+",
+     "A single dose of live attenuated vaccine given during the acute eruption",
+     "No vaccine is indicated once a patient has already had an episode of zoster"
+    ]
+   }
+  ]
+ },
+ "psoriasis": {
+  "condition": "Psoriasis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement best describes the pathophysiology of psoriasis?",
+    "ch": [
+     "Immune-mediated keratinocyte hyperproliferation driven by the IL-23/Th17 axis, with turnover accelerated to about 4 days",
+     "A defective epidermal barrier from filaggrin loss-of-function mutations with a Th2 immune skew",
+     "Circulating autoantibodies directed against the dermal-epidermal basement membrane proteins",
+     "Reactivation of a latent virus lying dormant within the cutaneous sensory ganglia",
+     "Blockage and bacterial colonization of the pilosebaceous follicular unit of the skin"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which lesion description and distribution is classic for chronic plaque psoriasis?",
+    "ch": [
+     "Annular patches with central clearing and a raised scaly advancing peripheral border",
+     "Ill-defined scaly erythematous patches in the antecubital and popliteal flexural folds",
+     "Grouped vesicles on an erythematous base confined within a single sensory dermatome",
+     "Sharply demarcated erythematous plaques with adherent silvery scale on extensor surfaces, scalp, sacrum, and umbilicus",
+     "Honey-colored crusted erosions clustered around the nose and mouth of a young child"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What is the Auspitz sign?",
+    "ch": [
+     "Pinpoint bleeding when scale is scraped off a plaque",
+     "A silvery scale that lifts off intact without any bleeding at all",
+     "New plaques forming at sites of skin trauma or scratching",
+     "Pinpoint pustules erupting across more than 90% of the body",
+     "Salmon-colored oil-drop discoloration underneath the nail plate"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A 14-year-old develops numerous drop-like scaly lesions about two weeks after a sore throat. Which variant is this, and what should be considered?",
+    "ch": [
+     "Pustular psoriasis following an abrupt withdrawal of systemic steroids",
+     "Plaque psoriasis vulgaris on extensor surfaces; begin phototherapy now",
+     "Guttate psoriasis after streptococcal infection; consider strep testing and treat the strep",
+     "Inverse psoriasis in flexural sites; apply a high-potency steroid there",
+     "Erythrodermic psoriasis; admit urgently for fluid and temperature support"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which group of drugs does the module list as psoriasis triggers?",
+    "ch": [
+     "Statins, metformin, aspirin, and inhaled bronchodilator therapy",
+     "Beta-blockers, lithium, antimalarials, steroid withdrawal, and interferon",
+     "Proton pump inhibitors, calcium supplements, and vitamin D analogs",
+     "Loop diuretics, insulin, warfarin, and inhaled corticosteroid sprays",
+     "Antihistamines, emollients, oral contraceptives, and folic acid tablets"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient has two small plaques on the elbows and nothing else. What is first-line therapy?",
+    "ch": [
+     "Use narrowband UVB phototherapy as the initial step for two plaques",
+     "Prescribe oral prednisone and stop it abruptly once the plaques clear",
+     "Topical corticosteroids with a vitamin D analog such as calcipotriene",
+     "Start a TNF-alpha inhibitor immediately for any visible plaque disease",
+     "Begin methotrexate with folic acid before trying any topical therapy"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which counseling points belong with methotrexate for psoriasis?",
+    "ch": [
+     "It is safe in pregnancy and requires no laboratory monitoring at all",
+     "It works by blocking IL-17 and needs no hepatic or marrow monitoring",
+     "Alcohol is unrestricted, and folic acid should be avoided during therapy",
+     "It is applied topically to plaques and has no systemic toxicity risk",
+     "It is teratogenic and hepatotoxic, so monitor CBC and LFTs, avoid alcohol, and co-prescribe folic acid"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "What must be done before starting a biologic such as a TNF-alpha inhibitor for psoriasis?",
+    "ch": [
+     "Order a PASI score and a skin biopsy before the first dose is given",
+     "Screen for latent tuberculosis with PPD or IGRA and for hepatitis B before starting",
+     "Give all live vaccines during therapy to maintain full immunity levels",
+     "Check serum calcium weekly, as biologics commonly cause hypercalcemia",
+     "No screening is needed because biologics do not raise infection risk"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which caution is specific to IL-17 inhibitors such as secukinumab and ixekizumab?",
+    "ch": [
+     "They are safe to combine with all live vaccines during active therapy",
+     "They require no infection or tuberculosis screening before initiation",
+     "They frequently cause hypercalcemia and require weekly calcium levels",
+     "They are the preferred agent in a patient with active Crohn's disease",
+     "They can worsen or unmask inflammatory bowel disease and cause mucocutaneous candidiasis"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient with plaque psoriasis abruptly stops systemic steroids and returns with widespread sterile pustules and systemic toxicity. What has happened?",
+    "ch": [
+     "Guttate psoriasis triggered by an unrecognized streptococcal infection",
+     "Psoriatic arthritis presenting with dactylitis and enthesitis at the joints",
+     "An allergic contact dermatitis reaction to a topical vitamin D analog",
+     "Generalized von Zumbusch pustular psoriasis, a dermatologic emergency",
+     "A Koebner response with new plaques appearing at sites of skin trauma"
+    ]
+   }
+  ]
+ },
+ "eczema": {
+  "condition": "Atopic Dermatitis (Eczema)",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which best describes the pathophysiology of atopic dermatitis?",
+    "ch": [
+     "A delayed hypersensitivity response confined to a single site of nickel contact",
+     "An IL-23/Th17-driven keratinocyte hyperproliferation producing thick silvery scale",
+     "Reactivation of a latent virus lying dormant in a dorsal root sensory ganglion",
+     "Autoantibodies against desmoglein producing flaccid intraepidermal blistering",
+     "Epidermal barrier dysfunction from filaggrin loss-of-function plus Th2 immune dysregulation with elevated IL-4 and IL-13"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "What does the module's phrase \"the itch that rashes\" mean?",
+    "ch": [
+     "The rash appears first and the itching develops only after lichenification",
+     "Itching is absent in atopic dermatitis and suggests an alternate diagnosis",
+     "Pruritus occurs only at night and never during the daytime hours",
+     "The itching comes from the topical steroids rather than the disease itself",
+     "Pruritus precedes the visible lesions — it is the itch that rashes"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "How does the distribution of atopic dermatitis shift with age?",
+    "ch": [
+     "Flexural involvement in infants and extensor or facial disease in adults, the reverse pattern",
+     "Facial and extensor involvement in infants, flexural antecubital and popliteal lichenified plaques in children and adults",
+     "Disease confined strictly to the palms and soles at every age from infancy onward",
+     "Involvement restricted to the scalp, sacrum, and umbilicus throughout the lifespan",
+     "Always a single unilateral dermatome that stops abruptly at the body midline"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which statement about confirming a diagnosis of atopic dermatitis is correct?",
+    "ch": [
+     "A skin biopsy demonstrating Munro microabscesses firmly establishes the diagnosis",
+     "There is no confirmatory lab test; diagnosis is clinical from chronic relapsing pruritus, age-typical morphology, and atopy history",
+     "A positive PCR result from a vesicle swab reliably confirms atopic dermatitis",
+     "An absolute peripheral eosinophil count above a fixed threshold is diagnostic",
+     "Total serum IgE is the confirmatory test and must be elevated before the diagnosis can be made"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which sequence is the soak-and-seal method taught to patients with eczema?",
+    "ch": [
+     "Avoid all bathing entirely and apply no moisturizer to the affected areas",
+     "Bathe, air dry completely for an hour, then apply an alcohol-based astringent",
+     "Bathe only when the skin is flaring and stop all emollients once it is clear",
+     "Lukewarm bath with a gentle fragrance-free cleanser, pat dry, then emollient within 3 minutes",
+     "Hot bath with a strongly fragranced antibacterial soap, then rub the skin dry"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "What role do topical calcineurin inhibitors such as tacrolimus and pimecrolimus play?",
+    "ch": [
+     "Steroid-sparing agents for the face, eyelids, and folds that cause no skin atrophy",
+     "They cause more skin atrophy and striae than topical corticosteroids do",
+     "They are used only as a systemic oral therapy for refractory disease",
+     "They must be avoided on the face because they thin the periorbital skin",
+     "They are the highest-potency option reserved for thick lichenified plaques"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which statement about emollients in atopic dermatitis is correct?",
+    "ch": [
+     "Emollients are only used when a topical steroid is unavailable at home",
+     "Emollients should be applied before the steroid so the steroid seals in",
+     "Emollients are never stopped — maintenance even when the skin looks clear prevents relapse",
+     "Emollients should be reserved for severe disease only, not for mild cases",
+     "Stop emollients as soon as the skin looks clear to avoid dependence"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A child with known atopic dermatitis develops rapidly spreading monomorphic punched-out vesicles with fever and malaise. What is the diagnosis and treatment?",
+    "ch": [
+     "Eczema herpeticum; give urgent systemic acyclovir and refer to dermatology",
+     "Allergic contact dermatitis; begin patch testing before any treatment",
+     "An ordinary exacerbation; add a sedating antihistamine at bedtime",
+     "Bacterial superinfection; start a short course of oral antibiotics only",
+     "A steroid-induced flare; increase the topical corticosteroid potency now"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which statement about dupilumab for atopic dermatitis is correct?",
+    "ch": [
+     "It is a topical cream applied to the face and eyelid folds only",
+     "It carries boxed warnings for thrombosis, malignancy, and MACE",
+     "It is an oral JAK inhibitor requiring baseline lipids and TB screening",
+     "It blocks IL-4/IL-13 signaling through the IL-4 receptor alpha and needs no routine lab monitoring",
+     "It blocks TNF-alpha and requires monthly liver function testing"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "What is required before starting an oral JAK inhibitor such as upadacitinib or abrocitinib?",
+    "ch": [
+     "Patch testing for contact allergens is the required baseline evaluation",
+     "A skin biopsy showing lichenification must document severity beforehand",
+     "Baseline and ongoing labs, TB and hepatitis screening, and a vaccination review",
+     "No baseline testing is needed since these agents are very well tolerated",
+     "Only a serum IgE level is required before the first oral dose is given"
+    ]
+   }
+  ]
+ }
+}

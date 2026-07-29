@@ -1,0 +1,922 @@
+{
+ "pe": {
+  "condition": "Pulmonary Embolism",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Where does the thrombus causing a pulmonary embolism usually originate?",
+    "ch": [
+     "The renal artery",
+     "A lower-extremity deep vein",
+     "The left atrium",
+     "A carotid plaque",
+     "The pulmonary vein"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which triad describes the risk factors for venous thromboembolism?",
+    "ch": [
+     "Samter's triad",
+     "Beck's triad",
+     "Virchow's triad",
+     "Charcot's triad",
+     "Cushing's triad"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What is the most common ECG finding in pulmonary embolism?",
+    "ch": [
+     "Sinus tachycardia",
+     "Atrial fibrillation",
+     "ST elevation in the inferior leads",
+     "Complete heart block",
+     "S1Q3T3 pattern"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient has a high clinical probability of PE by Wells score. What is the correct next step?",
+    "ch": [
+     "Send a D-dimer and image only if positive",
+     "Start warfarin and arrange outpatient follow-up",
+     "Send a D-dimer and discharge if negative",
+     "Proceed directly to CT pulmonary angiography",
+     "Observe for 24 hours and repeat the Wells score"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which imaging test is preferred when CT pulmonary angiography is contraindicated by renal failure or pregnancy?",
+    "ch": [
+     "Ventilation-perfusion scan",
+     "Coronary angiography",
+     "Abdominal ultrasound",
+     "Cardiac MRI",
+     "Chest X-ray"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "How is confirmed PE risk-stratified to guide treatment intensity?",
+    "ch": [
+     "By the absolute D-dimer level at presentation",
+     "By the size of the clot burden on CT alone",
+     "By hemodynamic status and evidence of right ventricular strain",
+     "By the patient's age and comorbidity burden",
+     "By the presence or absence of pleuritic chest pain"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which treatment is indicated for a massive PE with hemodynamic instability?",
+    "ch": [
+     "An inferior vena cava filter alone",
+     "Aspirin and observation",
+     "Compression stockings and early mobilisation",
+     "Oral apixaban alone",
+     "Thrombolytic therapy such as alteplase"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "When is an inferior vena cava filter appropriate?",
+    "ch": [
+     "As a replacement for anticoagulation in stable patients",
+     "When anticoagulation is contraindicated",
+     "Only after thrombolysis has failed",
+     "In any patient with a raised D-dimer",
+     "In all patients with confirmed PE"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which tool identifies low-risk patients with PE who may be suitable for outpatient management?",
+    "ch": [
+     "CHA2DS2-VASc",
+     "GOLD group A-E",
+     "Wells criteria",
+     "CURB-65 score",
+     "Simplified PESI"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient with high clinical suspicion of PE becomes hypotensive before imaging can be performed. What is the most appropriate approach?",
+    "ch": [
+     "Start oral anticoagulation and arrange imaging in the morning",
+     "Place an IVC filter before any other intervention",
+     "Wait for CT pulmonary angiography before any treatment",
+     "Treat the physiology, giving empiric anticoagulation or thrombolysis as indicated",
+     "Give a fluid bolus and repeat the D-dimer"
+    ]
+   }
+  ]
+ },
+ "dka": {
+  "condition": "Diabetic Ketoacidosis (DKA)",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which triad defines diabetic ketoacidosis?",
+    "ch": [
+     "Hyperglycemia, hypernatremia and respiratory alkalosis",
+     "Hypoglycemia, ketosis and metabolic alkalosis",
+     "Hyperglycemia, hyperkalemia and normal anion gap",
+     "Hyperosmolality, minimal ketones and a normal pH",
+     "Hyperglycemia, ketosis and high-anion-gap metabolic acidosis"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which mnemonic captures the common precipitants of DKA?",
+    "ch": [
+     "The 5 F's: fat, fluid, flatus, faeces and fetus",
+     "The 5 I's: infection, insulin omission, ischemia, intoxication, iatrogenic",
+     "The 6 P's: pain, pallor, pulselessness, paraesthesia, paralysis, poikilothermia",
+     "The 4 T's: trauma, tumour, thyroid disease, transfusion",
+     "The 3 C's: cough, cyanosis and clubbing"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What is the first treatment priority in DKA?",
+    "ch": [
+     "Subcutaneous rapid-acting insulin",
+     "Oral rehydration with a glucose solution",
+     "Intravenous insulin infusion",
+     "Intravenous isotonic fluid to restore volume",
+     "Sodium bicarbonate to correct the acidosis"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient in DKA has a serum potassium of 3.0 mmol/L. What must be done?",
+    "ch": [
+     "Start the insulin infusion at a reduced rate",
+     "Hold insulin until potassium is repleted",
+     "Give insulin together with sodium bicarbonate",
+     "Proceed with the standard insulin infusion",
+     "Give a potassium-binding resin before insulin"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Why can the serum potassium look normal or high at presentation in DKA?",
+    "ch": [
+     "Because the failing kidney retains potassium throughout the acidotic period",
+     "Because circulating ketone bodies falsely raise the measured potassium value",
+     "Because dehydration reduces renal potassium excretion to essentially zero",
+     "Because acidosis and insulin deficiency shift potassium out of cells despite a total-body deficit",
+     "Because total body potassium stores are genuinely elevated in ketoacidosis"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "When should the intravenous insulin infusion be stopped in DKA?",
+    "ch": [
+     "After a fixed period of six hours",
+     "As soon as the glucose falls below 200 mg/dL",
+     "Once the anion gap has closed",
+     "After the first litre of fluid has been given",
+     "When urinary ketones first become negative"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Why must subcutaneous insulin overlap with the intravenous infusion before it is stopped?",
+    "ch": [
+     "Because subcutaneous insulin reaches peak effect within a few seconds",
+     "Because the overlap period allows potassium to redistribute safely",
+     "Because intravenous insulin has a very short half-life and ketosis rebounds after an unbridged stop",
+     "Because the subcutaneous dose would otherwise cause profound hypoglycemia",
+     "Because overlapping the two routes reduces the total daily insulin requirement"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A child being treated for DKA develops headache and deteriorating consciousness. What should be suspected?",
+    "ch": [
+     "Cerebral edema",
+     "Hypoglycemia from excess insulin",
+     "An unrelated migraine",
+     "Resolution of the acidosis",
+     "Rebound hyperglycemia"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "An acidotic patient with type 2 diabetes on an SGLT2 inhibitor has a glucose of 180 mg/dL. What should be considered?",
+    "ch": [
+     "Hyperosmolar hyperglycemic state",
+     "Simple starvation ketosis",
+     "A laboratory error in the glucose measurement",
+     "Lactic acidosis from metformin",
+     "Euglycemic diabetic ketoacidosis"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient with DKA remains acidotic despite appropriate fluids, insulin and potassium replacement. What should be considered?",
+    "ch": [
+     "Ongoing sepsis or ischemia, or inadequate insulin and fluid delivery",
+     "That bicarbonate should be given routinely",
+     "That the diagnosis must be HHS instead",
+     "That treatment should be stopped and restarted",
+     "That the anion gap is an unreliable measure"
+    ]
+   }
+  ]
+ },
+ "t2dm": {
+  "condition": "Type 2 Diabetes Mellitus",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which pair of abnormalities underlies type 2 diabetes?",
+    "ch": [
+     "Impaired renal glucose reabsorption alone",
+     "Deficient thyroid hormone with slowed metabolism",
+     "Autoimmune beta-cell destruction and absolute insulin deficiency",
+     "Insulin resistance with relative insulin deficiency",
+     "Excess glucagon with normal insulin sensitivity"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which result establishes a diagnosis of diabetes?",
+    "ch": [
+     "HbA1c of 5.9%",
+     "Two-hour OGTT value of 150 mg/dL",
+     "Random glucose of 160 mg/dL without symptoms",
+     "Fasting glucose of 110 mg/dL",
+     "HbA1c of 6.5% or above"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which agent is first-line pharmacotherapy for type 2 diabetes?",
+    "ch": [
+     "Empagliflozin",
+     "Glipizide",
+     "Metformin",
+     "Insulin glargine",
+     "Sitagliptin"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which agent should be preferred in a patient with type 2 diabetes and heart failure or chronic kidney disease?",
+    "ch": [
+     "A thiazolidinedione",
+     "A sulfonylurea",
+     "An SGLT2 inhibitor",
+     "A DPP-4 inhibitor",
+     "Basal insulin alone"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "When should metformin be temporarily withheld?",
+    "ch": [
+     "Around iodinated contrast administration and in acute kidney injury",
+     "Before every meal to avoid gastrointestinal upset",
+     "During any febrile illness regardless of severity",
+     "Whenever the glycated haemoglobin falls below 7%",
+     "Before any period of moderate physical exercise"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "What is the '15-15 rule' for treating hypoglycemia?",
+    "ch": [
+     "15 units of insulin then recheck in 15 minutes",
+     "15 grams of fast-acting carbohydrate then recheck in 15 minutes",
+     "15 mL of dextrose over 15 seconds",
+     "A 15% dextrose infusion for 15 hours",
+     "15 minutes of rest then 15 minutes of activity"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which complications are classified as microvascular in diabetes?",
+    "ch": [
+     "Retinopathy, stroke and peripheral arterial disease",
+     "Nephropathy, coronary disease and neuropathy",
+     "Cataract, gastritis and osteoporosis",
+     "Coronary artery disease, stroke and peripheral arterial disease",
+     "Retinopathy, nephropathy and neuropathy"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which screening assessments should be performed for diabetic complications?",
+    "ch": [
+     "Annual chest radiography with spirometry and arterial blood gas",
+     "Bone density scanning with thyroid function and parathyroid hormone",
+     "Liver ultrasound with serum ferritin and transferrin saturation",
+     "Dilated eye exam, urine albumin-to-creatinine ratio, foot exam, lipids and blood pressure",
+     "Echocardiography and carotid ultrasound with annual stress testing"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Why should blood pressure and lipids be treated as aggressively as glucose in type 2 diabetes?",
+    "ch": [
+     "Because most of the mortality in diabetes is cardiovascular",
+     "Because glucose control has no benefit",
+     "Because they determine the A1c value",
+     "Because they prevent hypoglycemia",
+     "Because they are easier to control"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "In which situation may the HbA1c be misleading?",
+    "ch": [
+     "In a patient taking metformin",
+     "In haemolysis, recent blood loss or iron deficiency",
+     "In any patient over the age of 60",
+     "When the fasting glucose is normal",
+     "When the patient is on insulin"
+    ]
+   }
+  ]
+ },
+ "metabolic-syndrome": {
+  "condition": "Metabolic Syndrome",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which combination is required to diagnose metabolic syndrome?",
+    "ch": [
+     "Hypertension plus dyslipidemia only",
+     "Diabetes mellitus alone",
+     "Elevated fasting glucose plus obesity",
+     "Central obesity only",
+     "Any 3 of the 5 diagnostic criteria"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which process is considered the central pathophysiologic driver of metabolic syndrome?",
+    "ch": [
+     "Cortisol deficiency",
+     "Autoimmune inflammation",
+     "Hyperthyroidism",
+     "Beta-cell destruction",
+     "Insulin resistance"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which lipid abnormality is most characteristic?",
+    "ch": [
+     "Elevated triglycerides with low HDL",
+     "Elevated Lp(a)",
+     "Low triglycerides",
+     "Elevated HDL",
+     "Low LDL"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which physical finding suggests insulin resistance?",
+    "ch": [
+     "Acanthosis nigricans",
+     "Janeway lesions",
+     "Clubbing",
+     "Splinter hemorrhages",
+     "Xanthelasma"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Greatest lifestyle intervention?",
+    "ch": [
+     "Bed rest",
+     "High-protein diet only",
+     "5-10% body weight loss with exercise",
+     "Vitamins",
+     "Eliminate carbohydrates"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Medication class with weight-loss and cardiometabolic benefit?",
+    "ch": [
+     "TZDs",
+     "GLP-1 receptor agonists / dual GIP-GLP-1 agonists",
+     "Alpha-glucosidase inhibitors",
+     "Sulfonylureas",
+     "DPP-4 inhibitors"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Common associated disease?",
+    "ch": [
+     "Multiple sclerosis",
+     "MASLD",
+     "Myasthenia gravis",
+     "Ulcerative colitis",
+     "Crohn disease"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Approximate increase in type 2 diabetes risk?",
+    "ch": [
+     "1.5x",
+     "2x",
+     "3x",
+     "5x",
+     "10x"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Best marker of chronic glycemic control?",
+    "ch": [
+     "Random glucose",
+     "Insulin",
+     "OGTT",
+     "Hemoglobin A1c",
+     "Ketones"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Best treatment philosophy?",
+    "ch": [
+     "Medicate everyone",
+     "Focus only on glucose",
+     "Treat each risk factor and emphasize lifestyle modification",
+     "Wait until diabetes develops",
+     "Treat obesity only"
+    ]
+   }
+  ]
+ },
+ "hypothyroid": {
+  "condition": "Hypothyroidism",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which laboratory pattern indicates primary hypothyroidism?",
+    "ch": [
+     "Low TSH with a low free T4",
+     "Raised TSH with a normal free T4",
+     "Low TSH with a raised free T4",
+     "Normal TSH with a raised free T4",
+     "Raised TSH with a low free T4"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "What is the most common cause of hypothyroidism in iodine-sufficient regions?",
+    "ch": [
+     "Iodine deficiency in the diet",
+     "Hashimoto's chronic autoimmune thyroiditis",
+     "A pituitary macroadenoma",
+     "Amiodarone-induced thyroid dysfunction",
+     "Congenital thyroid agenesis"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which antibody confirms an autoimmune aetiology for hypothyroidism?",
+    "ch": [
+     "Anti-smooth muscle antibody",
+     "Anti-TSH receptor antibody",
+     "Anti-thyroid peroxidase antibody",
+     "Anti-nuclear antibody",
+     "Anti-mitochondrial antibody"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "How should levothyroxine be taken to ensure adequate absorption?",
+    "ch": [
+     "On an empty stomach, 30 to 60 minutes before breakfast",
+     "Together with a calcium supplement",
+     "At bedtime with an evening snack",
+     "With an antacid to protect the stomach",
+     "With breakfast to reduce nausea"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "How long after a levothyroxine dose change should the TSH be rechecked?",
+    "ch": [
+     "Immediately before the next dose",
+     "After 3 to 5 days",
+     "After 6 to 8 weeks",
+     "After 24 hours",
+     "After 6 months"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Why should levothyroxine be started at a low dose in an elderly patient with cardiac disease?",
+    "ch": [
+     "Because the elderly need less hormone overall",
+     "Because renal clearance of levothyroxine is reduced",
+     "Because the TSH assay is unreliable in older patients",
+     "Because absorption is unpredictable with age",
+     "Because raising metabolic demand can precipitate angina or arrhythmia"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient presents with hypothermia, bradycardia, hyponatremia and altered mentation. What is the diagnosis?",
+    "ch": [
+     "Septic shock",
+     "Hyperosmolar hyperglycemic state",
+     "Thyroid storm",
+     "Myxedema coma",
+     "Adrenal crisis"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "In suspected myxedema coma with possible adrenal insufficiency, which should be given first?",
+    "ch": [
+     "Intravenous levothyroxine",
+     "Hydrocortisone before levothyroxine",
+     "Intravenous glucose alone",
+     "Broad-spectrum antibiotics only",
+     "Active external rewarming alone"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which laboratory abnormalities may accompany untreated hypothyroidism?",
+    "ch": [
+     "Hyperlipidemia, hyponatremia, anemia and a raised creatine kinase",
+     "Hypolipidemia, hypernatremia and a low creatine kinase",
+     "Polycythaemia with a raised bicarbonate",
+     "Hypercalcaemia with a suppressed parathyroid hormone",
+     "Metabolic alkalosis with hypokalaemia"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient is investigated for unexplained hyperlipidemia and fatigue. Which single test is most appropriate?",
+    "ch": [
+     "Thyroid ultrasound",
+     "Radioactive iodine uptake scan",
+     "Free T3 level",
+     "Serum TSH",
+     "Anti-TPO antibody"
+    ]
+   }
+  ]
+ },
+ "thyroidstorm": {
+  "condition": "Thyroid Storm / Hyperthyroidism",
+  "questions": [
+   {
+    "n": 1,
+    "q": "What is the most common cause of hyperthyroidism?",
+    "ch": [
+     "A TSH-secreting pituitary adenoma",
+     "A single toxic nodule",
+     "Graves' disease",
+     "Subacute thyroiditis",
+     "Excess exogenous thyroid hormone"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which laboratory pattern indicates primary hyperthyroidism?",
+    "ch": [
+     "Suppressed TSH with a raised free T4 or T3",
+     "Suppressed TSH with a low free T4",
+     "Normal TSH with a low free T3",
+     "Raised TSH with a low free T4",
+     "Raised TSH with a raised free T4"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which findings point specifically to Graves' disease rather than a toxic nodular goiter?",
+    "ch": [
+     "Ophthalmopathy and pretibial myxedema",
+     "A tender, painful thyroid with raised inflammatory markers",
+     "Low radioactive iodine uptake",
+     "Recent iodinated contrast exposure",
+     "A solitary palpable nodule with local tenderness"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "How does radioactive iodine uptake help distinguish causes of thyrotoxicosis?",
+    "ch": [
+     "High uptake indicates thyroiditis and low uptake indicates Graves'",
+     "High uptake indicates Graves' or a toxic nodule; low uptake indicates thyroiditis or exogenous hormone",
+     "Uptake is always high in thyrotoxicosis regardless of cause",
+     "Uptake correlates with the free T4 level rather than the cause",
+     "Uptake distinguishes benign from malignant nodules only"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Why must a thionamide be given before iodine in thyroid storm?",
+    "ch": [
+     "Because iodine inactivates the thionamide",
+     "Because iodine given first supplies substrate and fuels new hormone synthesis",
+     "Because iodine causes an allergic reaction if given second",
+     "Because the thionamide works only in an iodine-free environment",
+     "Because iodine must be given with food"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which antipyretic should be used for fever in thyroid storm, and why?",
+    "ch": [
+     "No antipyretic should be given",
+     "Aspirin, because it also reduces inflammation",
+     "Acetaminophen, because aspirin displaces thyroid hormone from binding proteins",
+     "Ibuprofen, because it lowers metabolic rate",
+     "Aspirin, because it lowers the free T4 level"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient on methimazole develops fever and a sore throat. What is the correct action?",
+    "ch": [
+     "Double the dose to control the thyrotoxicosis",
+     "Add aspirin for symptomatic relief",
+     "Switch immediately to radioactive iodine",
+     "Reassure and continue the drug",
+     "Stop the drug and check a full blood count for agranulocytosis"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which thionamide is preferred in thyroid storm and in the first trimester of pregnancy?",
+    "ch": [
+     "Lithium carbonate",
+     "Potassium perchlorate",
+     "Methimazole",
+     "Propylthiouracil",
+     "Carbimazole"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "How is thyroid storm diagnosed?",
+    "ch": [
+     "By a free T4 rising above a defined diagnostic threshold",
+     "By radioactive iodine uptake scanning of the gland",
+     "By demonstrating TSH-receptor antibodies in the serum",
+     "By the characteristic appearance on thyroid ultrasound",
+     "Clinically, for example using the Burch-Wartofsky score, without waiting for labs"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Why are glucocorticoids given in thyroid storm?",
+    "ch": [
+     "To prevent thionamide-induced agranulocytosis developing",
+     "To slow the ventricular rate directly during the storm",
+     "To improve radioiodine uptake by the thyroid gland",
+     "To reduce peripheral T4 to T3 conversion and cover relative adrenal insufficiency",
+     "To block the release of preformed hormone from the gland"
+    ]
+   }
+  ]
+ },
+ "endocarditis": {
+  "condition": "Infective Endocarditis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which sequence best describes the pathophysiology of infective endocarditis?",
+    "ch": [
+     "Bacteria invade wholly normal endothelium and destroy the valve without any thrombus",
+     "Immune complexes deposit on the valve leaflets and later become secondarily infected",
+     "Chronic pressure overload thickens and calcifies the valve, which then becomes infected",
+     "Septic emboli lodge in the coronary arteries and seed the valve from the myocardium",
+     "Endothelial injury forms sterile platelet-fibrin thrombi that transient bacteremia then seeds"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which organism is the most common overall cause of infective endocarditis, including right-sided disease in injection drug use?",
+    "ch": [
+     "Staphylococcus aureus, the typical organism of acute virulent disease",
+     "Staphylococcus epidermidis, seen in early prosthetic valve infection",
+     "HACEK organisms, fastidious colonizers of the oropharynx",
+     "Viridans group streptococci from poor dentition or a dental procedure",
+     "Enterococcus faecalis arising from a genitourinary or GI source"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which peripheral finding of infective endocarditis is painful?",
+    "ch": [
+     "Janeway lesions on the palms and soles",
+     "Splinter hemorrhages beneath the fingernails",
+     "Roth spots seen on retinal examination",
+     "Osler nodes on the finger and toe pulps",
+     "Petechiae on the conjunctiva and mucosa"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "By the Modified Duke (2023 ISCVID) criteria, which combination establishes definite infective endocarditis?",
+    "ch": [
+     "1 major criterion alone, with no minor criteria required",
+     "2 major criteria, such as sustained bacteremia plus echo evidence",
+     "1 major criterion plus 1 minor criterion in a predisposed patient",
+     "3 minor criteria alone in a patient with a fever above 38 degrees",
+     "2 minor criteria plus one positive blood culture from a single site"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "What is the nurse's responsibility regarding blood cultures in suspected infective endocarditis?",
+    "ch": [
+     "Draw a single set from the existing central line after the first antibiotic dose",
+     "Draw cultures only when the temperature is above 38 degrees at that moment",
+     "Delay the cultures until echocardiography has confirmed a valve vegetation",
+     "Draw at least three sets from separate venipuncture sites before antibiotics",
+     "Draw two sets from the same site thirty minutes apart once vancomycin is running"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Transthoracic echocardiography is negative in a patient with a prosthetic aortic valve and persistent Staphylococcus aureus bacteremia. What is the next step?",
+    "ch": [
+     "Repeat the transthoracic study in one week once antibiotics have taken effect",
+     "Obtain a transesophageal echocardiogram, essential for prosthetic valves and abscess",
+     "Proceed directly to surgical valve replacement without any further imaging",
+     "Order coronary angiography to look for a mycotic aneurysm of a coronary artery",
+     "Accept the negative study and treat this as bacteremia without endocarditis"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Blood cultures in an older patient with subacute endocarditis grow Streptococcus gallolyticus (bovis). What should you order?",
+    "ch": [
+     "Serology for Coxiella, Bartonella, and Brucella as fastidious organisms",
+     "Chest CT to look for septic pulmonary emboli from a tricuspid vegetation",
+     "Colonoscopy, because gallolyticus bacteremia is associated with colon cancer",
+     "Panoramic dental radiographs to look for a periapical or periodontal abscess",
+     "Urinalysis and prostate examination to identify a genitourinary portal of entry"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient who injects drugs has fever, a tricuspid regurgitant murmur, and multiple peripheral nodular opacities on chest imaging. Which statement best fits this presentation?",
+    "ch": [
+     "Left-sided viridans streptococcal endocarditis seeded from poor dentition",
+     "Early prosthetic valve endocarditis caused by Staphylococcus epidermidis",
+     "Enterococcal endocarditis arising from a genitourinary portal of entry",
+     "Culture-negative endocarditis caused by Coxiella or Bartonella species",
+     "Right-sided S. aureus endocarditis with septic pulmonary emboli, often managed medically"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient being treated for aortic valve endocarditis develops new first-degree AV block that progresses on telemetry. What does this suggest?",
+    "ch": [
+     "A perivalvular root abscess that requires urgent surgical evaluation",
+     "An embolic stroke involving the brainstem and its conduction pathways",
+     "Anemia of chronic disease producing a rate-related conduction delay",
+     "Immunologic glomerulonephritis with hyperkalemia slowing conduction",
+     "An expected effect of the beta-lactam antibiotic on the cardiac conduction system"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which regimen is now favored for Enterococcus faecalis endocarditis in order to avoid aminoglycoside toxicity?",
+    "ch": [
+     "Ampicillin plus gentamicin for a synergistic bactericidal effect",
+     "Penicillin G alone, dosed once daily as outpatient parenteral therapy",
+     "Ampicillin plus ceftriaxone as a double beta-lactam regimen",
+     "Rifampin plus nafcillin to penetrate biofilm on the infected valve",
+     "Vancomycin monotherapy given for a four to six week intravenous course"
+    ]
+   }
+  ]
+ },
+ "pericarditis": {
+  "condition": "Acute Pericarditis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which description best fits the chest pain of acute pericarditis?",
+    "ch": [
+     "Burning epigastric pain after meals that is worse when supine at night",
+     "A dull constant ache unchanged by position, breathing, or exertion",
+     "Crushing substernal pressure on exertion, relieved by rest and nitroglycerin",
+     "Sharp retrosternal pain that is worse lying flat and relieved by sitting forward",
+     "Tearing interscapular pain that is of maximal intensity at the moment of onset"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which ECG pattern is the signature of acute pericarditis?",
+    "ch": [
+     "Diffuse concave ST elevation with PR depression, plus PR elevation in aVR",
+     "Deep symmetric T-wave inversion confined to the anterior precordial leads",
+     "Electrical alternans with low voltage across all twelve of the leads",
+     "Left bundle branch block with discordant ST changes in the lateral leads",
+     "Regional ST elevation with reciprocal ST depression in the opposite leads"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "How is the pericardial friction rub best heard?",
+    "ch": [
+     "At the apex in the left lateral decubitus position using the bell",
+     "Over the right second intercostal space during a held inspiration",
+     "At the left sternal border with the patient leaning forward at end-expiration",
+     "At the posterior lung bases, where it persists unchanged over several days",
+     "Only with the patient lying completely flat and breathing quietly"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "How many of the four diagnostic criteria are required to diagnose acute pericarditis?",
+    "ch": [
+     "1 criterion: pleuritic positional chest pain by itself is sufficient",
+     "2 of the 4: pain, friction rub, ECG changes, or a new effusion",
+     "3 of the 4, one of which must be a documented pericardial effusion",
+     "4 of the 4, since every criterion must be documented before treating",
+     "0 criteria; the diagnosis rests entirely on excluding coronary syndrome"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "What is the evidence-based first-line drug therapy for acute idiopathic pericarditis?",
+    "ch": [
+     "Opioid analgesia with activity restriction and watchful observation",
+     "Prednisone at a low-to-moderate dose with a slow and careful taper",
+     "Colchicine alone, dosed by weight and adjusted for renal impairment",
+     "An NSAID or aspirin combined with colchicine and gastroprotection",
+     "Anakinra or rilonacept to block interleukin-1 from the outset"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "What is the main benefit of adding colchicine, as shown in the ICAP and CORP trials?",
+    "ch": [
+     "It prevents the troponin elevation that defines myopericarditis",
+     "It allows corticosteroids to be started earlier and at a higher dose",
+     "It removes the need to follow serial CRP during the medication taper",
+     "It resolves an existing pericardial effusion faster than drainage does",
+     "It roughly halves the risk of recurrent pericarditis and speeds remission"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which feature most reliably distinguishes acute pericarditis from STEMI on the ECG?",
+    "ch": [
+     "Diffuse non-territorial elevation with PR depression and no reciprocal depression",
+     "Sinus tachycardia accompanying the ST-segment changes on the tracing",
+     "T-wave inversion occurring at the same time as the ST elevation",
+     "The absolute height of the ST elevation measured in the inferior leads",
+     "The presence of pathologic Q waves within the first hour of symptoms"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient with pericarditis becomes hypotensive with jugular venous distention, muffled heart sounds, and a pulsus paradoxus of 18 mmHg. What is required?",
+    "ch": [
+     "Give a fluid bolus and repeat the ECG in two hours before intervening",
+     "Emergency pericardiocentesis to drain the effusion causing tamponade",
+     "Begin anakinra for colchicine-resistant, steroid-dependent recurrent disease",
+     "Increase the NSAID dose and add a proton pump inhibitor for gastroprotection",
+     "Start high-dose prednisone with a slow taper for refractory inflammation"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient with typical pericarditis has a rising troponin but a preserved ejection fraction on echocardiography. How is this best classified and managed?",
+    "ch": [
+     "Dressler syndrome, treated with aspirin rather than with indomethacin",
+     "Effusive-constrictive disease requiring urgent pericardiocentesis today",
+     "STEMI requiring immediate cardiac catheterization and urgent reperfusion",
+     "Constrictive pericarditis requiring evaluation for surgical pericardiectomy",
+     "Myopericarditis — manage as pericarditis, restrict activity, monitor LV function"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Three weeks after a myocardial infarction a patient develops pleuritic positional chest pain and a friction rub. Which treatment is preferred?",
+    "ch": [
+     "Ibuprofen, because non-aspirin NSAIDs are preferred after a myocardial infarction",
+     "Colchicine as monotherapy, without any additional anti-inflammatory agent",
+     "Aspirin combined with colchicine and gastroprotection",
+     "Indomethacin, chosen as the most potent NSAID for pericardial inflammation",
+     "High-dose prednisone started immediately in order to shorten the course"
+    ]
+   }
+  ]
+ }
+}

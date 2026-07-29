@@ -1,0 +1,922 @@
+{
+ "otitis-media": {
+  "condition": "Acute Otitis Media",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which otoscopic finding does the module identify as the single most reliable sign of acute otitis media?",
+    "ch": [
+     "Tenderness on traction of the auricle with a swollen external canal",
+     "A retracted tympanic membrane with normal mobility on insufflation",
+     "Loss of the light reflex as the only abnormality on the membrane",
+     "An erythematous tympanic membrane alone in a crying, febrile toddler",
+     "Moderate-to-severe bulging of the tympanic membrane"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which trio of organisms does the module list as the top bacterial pathogens in acute otitis media?",
+    "ch": [
+     "Staphylococcus aureus, Pseudomonas aeruginosa, and Proteus mirabilis",
+     "Neisseria meningitidis, Listeria monocytogenes, and group B Streptococcus",
+     "Streptococcus pneumoniae, nontypeable Haemophilus influenzae, and Moraxella catarrhalis",
+     "Group A Streptococcus, Escherichia coli, and Klebsiella pneumoniae",
+     "Mycoplasma pneumoniae, Chlamydia pneumoniae, and Legionella species"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Why does the module say acute otitis media peaks in children 6 to 24 months old?",
+    "ch": [
+     "The mastoid air cells are fully pneumatized and seed the middle-ear cleft directly",
+     "Their Eustachian tubes are shorter, more horizontal, and floppier than an adult's",
+     "Their tympanic membranes are thicker and rupture far less readily than an adult's",
+     "They have not yet developed any mucosal immunity to respiratory viruses at all",
+     "Middle-ear pressure is normally positive at this age and traps infected secretions"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Pneumatic otoscopy is described as the confirmatory exam in acute otitis media. Which result supports the diagnosis?",
+    "ch": [
+     "A normal-appearing membrane whose mobility is preserved once the child stops crying",
+     "A retracted membrane with exaggerated excursion on insufflation of the ear canal",
+     "A bulging, opaque membrane with reduced or absent mobility and loss of the light reflex",
+     "A translucent membrane that moves briskly with both positive and negative pressure",
+     "A mobile membrane with a crisp light reflex and clearly visible ossicular landmarks"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A 2-year-old with no drug allergies is started on high-dose amoxicillin, roughly 80-90 mg/kg/day divided twice daily, for acute otitis media. Why is the dose high?",
+    "ch": [
+     "To raise middle-ear drug levels above the MIC of penicillin-intermediate S. pneumoniae",
+     "To allow the whole treatment course to be compressed into a single observed dose",
+     "To achieve therapeutic concentrations in cerebrospinal fluid should meningitis follow",
+     "To provide reliable coverage for methicillin-resistant Staphylococcus aureus",
+     "To overcome beta-lactamase produced by Moraxella catarrhalis and H. influenzae"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A 3-year-old with acute otitis media also has purulent conjunctivitis. Which plan does the module recommend?",
+    "ch": [
+     "Topical antibiotic ear drops, since the infection is confined to the external ear canal",
+     "Oral cefdinir, since conjunctivitis is treated as evidence of true penicillin allergy",
+     "High-dose amoxicillin, since concurrent conjunctivitis does not alter the likely pathogen",
+     "Amoxicillin-clavulanate, since this syndrome suggests beta-lactamase-producing H. influenzae",
+     "Observation for 48-72 hours, since conjunctivitis makes a purely viral course likely"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "For which child does the module say watchful waiting is a preferred initial strategy?",
+    "ch": [
+     "A child 6 months or older with unilateral non-severe AOM and reliable follow-up",
+     "Any child under 6 months of age whose fever has already broken with ibuprofen",
+     "A child with bilateral AOM, a temperature of 39.5C, and severe otalgia at rest",
+     "A child with new otorrhea draining through a perforated tympanic membrane",
+     "A child who completed a course of amoxicillin for AOM three weeks earlier"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A 4-year-old has a middle-ear effusion on tympanometry but no ear pain, no fever, and no membrane bulging. How does the module direct management?",
+    "ch": [
+     "Start high-dose amoxicillin, because any middle-ear effusion represents infection",
+     "This is otitis media with effusion: no antibiotics, only follow-up and hearing surveillance",
+     "Obtain CT of the temporal bones to exclude occult intracranial extension of infection",
+     "Give a single dose of IM ceftriaxone to clear the effusion before school entry",
+     "Refer for immediate tympanocentesis to identify the organism in the middle ear"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which element does the module insist belongs in every acute otitis media plan, whether or not an antibiotic is prescribed?",
+    "ch": [
+     "A prescription for oral antihistamines to help drain the middle-ear effusion",
+     "An audiogram obtained on the same day the diagnosis is first established",
+     "A course of oral corticosteroids to shrink Eustachian tube mucosal edema",
+     "An analgesia plan with ibuprofen or acetaminophen for otalgia and fever",
+     "A repeat pneumatic otoscopy examination within the next twenty-four hours"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A 15-month-old on day 3 of amoxicillin for acute otitis media returns with high fever, redness and swelling behind the ear, and a protruding auricle. What does this represent?",
+    "ch": [
+     "Expected postauricular lymphadenopathy from the viral upper respiratory infection",
+     "A healing tympanic membrane perforation causing referred pain behind the ear",
+     "Uncomplicated treatment failure, managed with a longer oral course at home",
+     "Otitis externa from swimming, treated with topical drops and canal precautions",
+     "Acute mastoiditis, requiring urgent imaging and intravenous antibiotics"
+    ]
+   }
+  ]
+ },
+ "intussusception": {
+  "condition": "Intussusception",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which description matches the anatomy of intussusception as the module defines it?",
+    "ch": [
+     "Outpouching of a persistent vitelline duct remnant on the border of the ileum",
+     "Muscular hypertrophy of a bowel sphincter producing a functional outlet obstruction",
+     "A congenital narrowing of the ileocecal valve that obstructs stool passage",
+     "Twisting of the midgut around its mesenteric axis, cutting off arterial inflow",
+     "A proximal bowel segment invaginating into the distal segment, dragging its mesentery inward"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which test does the module call the diagnostic test of choice for suspected intussusception?",
+    "ch": [
+     "Diagnostic laparoscopy performed before any attempt at enema reduction",
+     "Abdominal ultrasound, showing the target sign and the pseudokidney sign",
+     "Plain abdominal radiography, which is diagnostic when gas is absent from the RLQ",
+     "CT of the abdomen with intravenous and oral contrast in every suspected case",
+     "Stool guaiac testing, which confirms the diagnosis once it turns positive"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What is the peak age range the module gives for intussusception?",
+    "ch": [
+     "10 to 14 years, coinciding with the adolescent growth spurt",
+     "The first 3 to 6 weeks of life, as feeding volumes are increasing",
+     "School age, 5 to 10 years, following adenoviral gastroenteritis",
+     "6 months to 3 years, where disease is typically idiopathic and ileocolic",
+     "Birth to 2 weeks, as meconium clears through the terminal ileum"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A parent asks whether their toddler could have intussusception without bloody stool. What does the module teach about the classic triad?",
+    "ch": [
+     "The full triad of colicky pain, vomiting, and currant jelly stool appears in fewer than 25% of cases",
+     "The triad is present in nearly every case, so its absence effectively rules the diagnosis out",
+     "Bloody stool is the earliest of the three findings and precedes the onset of colicky pain",
+     "The triad applies only to children over 2 years of age who have a pathologic lead point",
+     "Vomiting is the only element of the triad that appears before bowel ischemia has begun"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A toddler with intermittent colicky pain passes stool mixed with blood and mucus. How should this finding be interpreted?",
+    "ch": [
+     "Evidence of a coexisting bacterial enteritis rather than intussusception",
+     "A benign consequence of the contrast enema already given for reduction",
+     "A late, ominous sign of ischemic mucosa that must be reported immediately",
+     "Proof that the intussusception has already reduced itself spontaneously",
+     "An early screening finding that appears before any mucosal compromise"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which set of findings does the module list as contraindications to enema reduction?",
+    "ch": [
+     "Leukocytosis, dehydration, and a first episode of colicky abdominal pain",
+     "Currant jelly stool, vomiting, and a palpable right upper quadrant mass",
+     "Age under 2 years, recent viral illness, and hypertrophied Peyer patches",
+     "Perforation, peritonitis, and hemodynamic instability",
+     "A positive ultrasound target sign with an empty right lower quadrant"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A stable 14-month-old has a positive ultrasound, no peritoneal signs, and no free air on radiograph. What does the module say happens next?",
+    "ch": [
+     "Discharge home with oral rehydration and a scheduled return visit in 48 hours",
+     "Broad-spectrum antibiotics alone, to shrink the hypertrophied Peyer patches",
+     "Barium enema, chosen specifically for its safety if the bowel should perforate",
+     "Immediate laparotomy with resection of the involved bowel segment",
+     "NPO status, IV access, isotonic fluids, and pneumatic (air) enema with surgery on standby"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A 5-year-old presents with his second episode of intussusception in six months. What does the module direct you to look for?",
+    "ch": [
+     "Chronic constipation with stool impaction acting as the obstructing mass",
+     "A missed diagnosis, since intussusception does not recur after enema reduction",
+     "A pathologic lead point such as a Meckel diverticulum, polyp, lymphoma, or HSP hematoma",
+     "Reinfection with rotavirus from an incompletely administered vaccine series",
+     "An inherited disorder of colonic motility explaining the recurrent invagination"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 10-month-old is admitted after successful air enema reduction. Which development in the next 24 to 72 hours should prompt urgent reassessment?",
+    "ch": [
+     "A single loose stool as bowel function returns and oral intake resumes",
+     "Return of colicky pain or vomiting, which may signal recurrence",
+     "Mild fussiness that settles fully when the infant is held and fed",
+     "Passage of flatus followed by tolerating a small volume of formula",
+     "A transient rise in appetite once the obstruction has been relieved"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "During a pneumatic enema an infant abruptly develops respiratory distress with a tense, distended abdomen. What is happening and what is needed?",
+    "ch": [
+     "Tension pneumoperitoneum from perforation, needing immediate needle decompression and surgery",
+     "A vasovagal response to the rectal catheter, managed by pausing and reassuring",
+     "Swallowed air from crying, managed by placing a nasogastric tube for venting",
+     "Contrast aspiration into the airway, managed with suction and supplemental oxygen",
+     "Anaphylaxis to the enema contrast, managed with intramuscular epinephrine"
+    ]
+   }
+  ]
+ },
+ "pyloric-stenosis": {
+  "condition": "Pyloric Stenosis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which triad does the module give as classic for infantile hypertrophic pyloric stenosis?",
+    "ch": [
+     "Fever, refusal to feed, and a hyperchloremic metabolic acidosis",
+     "Non-bilious projectile vomiting, a palpable olive, and hypokalemic metabolic alkalosis",
+     "Painless bloody stool, brisk weight gain, and a normal serum bicarbonate",
+     "Bilious vomiting, a distended abdomen, and a metabolic acidosis",
+     "Colicky pain, currant jelly stool, and a sausage-shaped abdominal mass"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which laboratory pattern is the module's lab fingerprint of pyloric stenosis?",
+    "ch": [
+     "Elevated lactate with an anion gap metabolic acidosis",
+     "Isolated hypoglycemia with otherwise normal electrolytes",
+     "Hyperkalemia with a normal anion gap metabolic acidosis",
+     "Hypernatremic dehydration with a respiratory alkalosis",
+     "Low chloride, low potassium, and an elevated bicarbonate"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which presentation best fits the module's description of pyloric stenosis?",
+    "ch": [
+     "A 4-week-old firstborn male with non-bilious vomiting who refeeds eagerly",
+     "A 3-year-old with intermittent vomiting and bloody stool after a viral illness",
+     "A 2-month-old with effortless post-feed regurgitation and normal weight gain",
+     "A 6-month-old with bilious vomiting who has no interest in feeding at all",
+     "A newborn vomiting from the first day of life with abdominal distension"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which ultrasound measurements does the module give as diagnostic thresholds for pyloric stenosis?",
+    "ch": [
+     "Antral diameter over 30 mm with free peritoneal fluid clearly present",
+     "Bowel wall thickness of 2 mm with a target sign on the transverse view",
+     "Pyloric muscle wall thickness of 3 mm or more with channel length of 14 to 16 mm or more",
+     "Gastric wall thickness under 1 mm with a pyloric channel shorter than 5 mm",
+     "Pyloric wall thickness of 10 mm or more with a channel of any measured length"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A 5-week-old with pyloric stenosis is dehydrated, with a chloride of 88 and a potassium of 2.9. What is the priority?",
+    "ch": [
+     "Give an oral macrolide to reduce pyloric inflammation before any surgery",
+     "Book pyloromyotomy immediately, since the obstruction is a surgical emergency",
+     "Isotonic fluid resuscitation and correction of electrolytes before anesthesia",
+     "Start ondansetron to stop the vomiting, then feed the infant slowly by mouth",
+     "Place a nasogastric tube and begin continuous feeding through the pylorus"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "When may potassium chloride be added to this infant's maintenance IV fluids?",
+    "ch": [
+     "Only if the serum bicarbonate has already fallen below the normal range",
+     "Immediately on arrival, given as an undiluted intravenous push",
+     "Only after the pyloromyotomy has been completed in the operating room",
+     "Never, because the hypokalemia corrects on its own once vomiting stops",
+     "Only once urine output is established, with serum potassium and ECG monitoring"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "How does the module explain the paradoxical aciduria seen late in pyloric stenosis?",
+    "ch": [
+     "Hypoglycemia forces ketone excretion, which acidifies the urine directly",
+     "Vomited hydrochloric acid is reabsorbed from the stomach and cleared renally",
+     "Renal tubular acidosis develops from the chronic vomiting and dehydration",
+     "Volume depletion drives aldosterone, which reabsorbs sodium at the expense of potassium and hydrogen",
+     "The kidney excretes the excess bicarbonate generated by the gastric mucosa"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A 4-week-old is referred for suspected pyloric stenosis, but the vomiting is described as green. What does the module say to do with that detail?",
+    "ch": [
+     "Proceed with pyloromyotomy, because the palpable olive remains the deciding finding",
+     "Attribute it to reflux of duodenal contents through the hypertrophied pylorus",
+     "Start high-dose antiemetics and repeat the abdominal ultrasound in one week",
+     "Treat it as malrotation with midgut volvulus, a surgical emergency needing immediate evaluation",
+     "Ignore the colour, since bile staining is common once vomiting becomes forceful"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A caregiver panics on the first postoperative day because the infant vomited twice after feeds. What does the module have the nurse teach?",
+    "ch": [
+     "An antiemetic should be started at home and continued for several weeks",
+     "Some emesis in the first 24 to 48 hours is expected and does not mean surgery failed",
+     "The pyloromyotomy has failed and a second operation will be needed shortly",
+     "Feeds should be stopped entirely and the infant kept NPO for a full week",
+     "The vomiting proves an incidental viral gastroenteritis was acquired in hospital"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which exposure does the module tell you to screen for in the history of an infant with suspected pyloric stenosis?",
+    "ch": [
+     "Postnatal macrolide exposure such as erythromycin or azithromycin",
+     "Rotavirus vaccination given at the two-month well-child visit",
+     "Exclusive breastfeeding from the first day after delivery",
+     "Prenatal exposure to maternal rubella in early pregnancy",
+     "Maternal use of prenatal vitamins during the third trimester"
+    ]
+   }
+  ]
+ },
+ "febrile-seizure": {
+  "condition": "Febrile Seizure",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which definition matches the module's description of a febrile seizure?",
+    "ch": [
+     "A seizure with fever in a child 6 months to 5 years, without CNS infection or prior afebrile seizures",
+     "A seizure occurring only during the defervescence phase of a bacterial illness",
+     "A generalized convulsion that requires an abnormal EEG before it can be diagnosed",
+     "A seizure with fever in any child who also has a known epilepsy syndrome",
+     "Any convulsion in a child under 10 years, regardless of temperature or history"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which features define a SIMPLE febrile seizure in the module's classification?",
+    "ch": [
+     "Focal onset, under 5 minutes, with normal postictal mental status",
+     "Any duration, as long as the child has a documented source of fever",
+     "Two episodes in 24 hours, each of them shorter than 10 minutes",
+     "Generalized, over 15 minutes, with a prolonged postictal period",
+     "Generalized, under 15 minutes, and a single episode within 24 hours"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What does the module say about scheduled antipyretics in a child with a history of febrile seizures?",
+    "ch": [
+     "They reliably prevent recurrence and should be given around the clock in fevers",
+     "They should be replaced by a daily prophylactic anticonvulsant in every case",
+     "They are used for comfort and fever reduction but do NOT prevent recurrence",
+     "They are contraindicated because lowering the temperature triggers seizures",
+     "They work only if the child's temperature is held below 36.5C at all times"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A 2-year-old had a single 3-minute generalized convulsion with fever from an obvious viral illness and is back to baseline with a normal exam. Which workup does the module support?",
+    "ch": [
+     "A basic metabolic panel, CBC, and blood culture drawn routinely",
+     "Non-contrast head CT to exclude a structural lesion as the trigger",
+     "No routine labs, EEG, or neuroimaging for a simple febrile seizure with a reassuring exam",
+     "EEG and MRI of the brain before discharge from the emergency department",
+     "Lumbar puncture for every child who has had any seizure with fever"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "In which situation does the module say lumbar puncture should be considered after a febrile seizure?",
+    "ch": [
+     "Any child with a family history of febrile seizures in a sibling",
+     "An infant 6 to 12 months old who is under-immunized for Hib and pneumococcus",
+     "A 4-year-old with a brief generalized seizure and a clear ear infection",
+     "Any child in whom antipyretics failed to lower the temperature quickly",
+     "Every child whose temperature exceeded 39C during the febrile illness"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A child's febrile seizure has now continued for five minutes in the emergency department. What is first-line?",
+    "ch": [
+     "Intravenous acetaminophen to bring the temperature down as fast as possible",
+     "A loading dose of levetiracetam given before any benzodiazepine is tried",
+     "Physical restraint and a bite block to protect the tongue and the teeth",
+     "Observation alone, since all febrile seizures terminate spontaneously",
+     "An intravenous benzodiazepine such as lorazepam, with airway support ready"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which nursing actions does the module direct during an active febrile seizure?",
+    "ch": [
+     "Place the child prone with the head lower than the chest to aid drainage",
+     "Begin chest compressions as soon as the convulsion is recognized",
+     "Hold the limbs still and insert a padded airway between the teeth",
+     "Turn the child on their side, clear the area, do not restrain, and time the seizure",
+     "Sit the child upright and offer oral acetaminophen as soon as possible"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Parents of a child who has had a first simple febrile seizure ask about the future. Which numbers does the module have you give them?",
+    "ch": [
+     "A 25% risk of death unless daily anticonvulsant prophylaxis is started",
+     "Roughly 30 to 35% recurrence and about a 1 to 2% risk of later epilepsy",
+     "Nearly universal recurrence and a 50% chance of developing epilepsy",
+     "About 5% recurrence and no measurable increase in epilepsy risk at all",
+     "A 10% risk of permanent brain damage from each additional seizure"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which factor does the module name as the single biggest predictor of recurrent febrile seizures?",
+    "ch": [
+     "Young age at the first seizure, under about 12 to 18 months",
+     "The peak temperature recorded during the first febrile illness",
+     "Whether the seizure followed a vaccination rather than a virus",
+     "The number of days of fever before the seizure occurred",
+     "Whether antipyretics were given on a scheduled basis at home"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "An 8-month-old has a seizure with fever and, on exam, has a bulging fontanelle, meningismus, and a petechial rash while remaining lethargic. What does the module require?",
+    "ch": [
+     "Discharge with reassurance, since a febrile seizure is a benign diagnosis",
+     "Scheduled antipyretics and a follow-up visit with the pediatrician in a week",
+     "Rectal diazepam prescribed for home use as the definitive management step",
+     "Urgent evaluation for meningitis or sepsis, with antibiotics not delayed for LP or imaging",
+     "An outpatient EEG to distinguish a febrile seizure from an epilepsy syndrome"
+    ]
+   }
+  ]
+ },
+ "congenital-heart": {
+  "condition": "Congenital Heart Defects",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which question does the module call the pivotal one in evaluating a congenital heart defect?",
+    "ch": [
+     "Whether the hemoglobin is elevated from chronic hypoxemia",
+     "Whether the lesion is cyanotic or acyanotic, and whether flow is ductal-dependent",
+     "Whether the murmur is heard best in systole or in diastole",
+     "Whether the defect formed before or after week 8 of gestation",
+     "Whether the infant was born vaginally or by cesarean delivery"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which lesion does the module identify as the most common congenital heart defect overall?",
+    "ch": [
+     "Tetralogy of Fallot",
+     "Transposition of the great arteries",
+     "Ventricular septal defect",
+     "Total anomalous pulmonary venous return",
+     "Coarctation of the aorta"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "A fixed, widely split S2 on auscultation should make you think of which defect?",
+    "ch": [
+     "Ventricular septal defect",
+     "Patent ductus arteriosus",
+     "Tetralogy of Fallot",
+     "Coarctation of the aorta",
+     "Atrial septal defect"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A cyanotic newborn is placed on 100% oxygen and the PaO2 barely rises. How does the module interpret this hyperoxia test?",
+    "ch": [
+     "A cyanotic cardiac lesion is present rather than pulmonary disease",
+     "The oxygen was delivered at inadequate flow and the test should be repeated",
+     "Methemoglobinemia is the cause and methylene blue should be given",
+     "The result is normal for a newborn in the first day of life",
+     "Primary pulmonary disease such as surfactant deficiency is the likely cause"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A neonate with a suspected ductal-dependent lesion is started on prostaglandin E1. Which complication must the team be prepared for?",
+    "ch": [
+     "Malignant hyperthermia requiring dantrolene kept at the bedside",
+     "Acute closure of the ductus arteriosus within a few minutes",
+     "Severe hyperkalemia requiring calcium and insulin-dextrose",
+     "Apnea and hypotension, with intubation equipment ready at the bedside",
+     "Profound hypertension needing an intravenous beta-blocker infusion"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "An infant with Tetralogy of Fallot suddenly becomes deeply cyanotic and agitated, and the murmur disappears. What is the immediate nursing response?",
+    "ch": [
+     "Begin chest compressions and prepare for immediate cardioversion",
+     "Start an indomethacin infusion to reduce pulmonary blood flow",
+     "Place the infant knee-chest, give oxygen, stay calm, and call the provider",
+     "Lay the infant flat and administer a rapid intravenous vasodilator",
+     "Withhold oxygen to avoid closing the ductus arteriosus prematurely"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which examination findings does the module tie to coarctation of the aorta?",
+    "ch": [
+     "Bounding pulses in all four extremities with a continuous murmur",
+     "A fixed split S2 with a soft systolic murmur in the pulmonic area",
+     "Hepatomegaly with a gallop and a harsh holosystolic murmur",
+     "Weak or delayed femoral pulses with upper-extremity hypertension",
+     "Equal pre- and post-ductal saturations with a single loud S2"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A large ventricular septal defect is left unrepaired for years and the child, previously acyanotic, becomes cyanotic. What has happened?",
+    "ch": [
+     "Tetralogy of Fallot has developed on top of the septal defect over time",
+     "Eisenmenger syndrome: pulmonary vascular resistance rose until the shunt reversed",
+     "The ductus arteriosus has reopened and is now shunting from right to left",
+     "The defect has spontaneously closed, trapping blood in the right ventricle",
+     "Chronic diuretic therapy has produced a hypochloremic metabolic alkalosis"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Why does the module warn against indomethacin or ibuprofen in an infant with a suspected ductal-dependent lesion?",
+    "ch": [
+     "They interact with digoxin and produce fatal bradycardia in neonates",
+     "They cause apnea and hypotension identical to prostaglandin E1",
+     "They inhibit aldosterone and cause a hypochloremic metabolic alkalosis",
+     "They raise pulmonary vascular resistance and precipitate a Tet spell",
+     "They close the ductus arteriosus, the opposite of what PGE1 is doing"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A cyanotic newborn has a single S2, a systolic murmur, and a boot-shaped heart on chest radiograph. Which lesion and components fit?",
+    "ch": [
+     "Tetralogy of Fallot: pulmonary stenosis, RVH, overriding aorta, and VSD",
+     "Atrial septal defect, with a fixed split S2 and a normal cardiac contour",
+     "Transposition of the great arteries, with an egg-on-a-string silhouette",
+     "Coarctation of the aorta, with a 3-sign and rib notching on the film",
+     "Total anomalous pulmonary venous return, with a snowman silhouette"
+    ]
+   }
+  ]
+ },
+ "failure-to-thrive": {
+  "condition": "Failure to Thrive",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which finding fits the definition of failure to thrive?",
+    "ch": [
+     "Height below the fifth percentile with weight tracking normally along its own growth curve",
+     "A single weight measurement at the tenth percentile at one routine well-child visit",
+     "Weight or weight-for-length below the third to fifth percentile, or crossing down two major percentile lines",
+     "Head circumference below the third percentile with normal weight and length for age",
+     "Weight gain that plateaus for one week during an acute viral gastrointestinal illness"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which set of categories is the pathophysiologic framework for failure to thrive?",
+    "ch": [
+     "Inadequate caloric intake, inadequate absorption or utilization, and increased metabolic demand",
+     "Endocrine, genetic, and constitutional variants of short stature in the young child",
+     "Acute, subacute, and chronic dehydration with the corresponding electrolyte derangements",
+     "Mild, moderate, and severe malnutrition graded by anthropometric z-score cutoff values",
+     "Prenatal, perinatal, and postnatal causes of impaired linear growth during early childhood"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which statement about the causes of failure to thrive is correct?",
+    "ch": [
+     "Every case is either purely organic or purely non-organic, because mixed presentations do not occur",
+     "Organic disease accounts for most cases, so an extensive laboratory panel is always indicated",
+     "Malabsorption from celiac disease is the single most common cause in infants and toddlers",
+     "Non-organic psychosocial causes dominate, so a broad lab panel in a well-appearing child is low-yield",
+     "Increased metabolic demand from congenital heart disease explains the majority of all cases"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A 9-month-old has weight that has fallen off the curve, length that is beginning to lag, and a normal head circumference. What does this pattern suggest?",
+    "ch": [
+     "Familial short stature, in which weight is preserved and only linear height is affected",
+     "Constitutional growth delay, a normal variant that needs no nutritional intervention at all",
+     "Endocrine short stature, in which head circumference falls before weight begins to decline",
+     "A nutritional cause, since weight falls first and head sparing argues against a prenatal cause",
+     "A genetic or prenatal cause such as a TORCH infection or a teratogen exposure in utero"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which step is the highest-yield part of the failure-to-thrive evaluation?",
+    "ch": [
+     "Sweat chloride testing and celiac serology ordered routinely on every child who presents",
+     "Abdominal imaging to look for an anatomic cause of impaired caloric absorption",
+     "A detailed diet and feeding history with a psychosocial screen, including formula dilution errors",
+     "An empiric trial of acid suppression to treat presumed reflux-related feeding aversion",
+     "A broad screening laboratory panel obtained before any feeding history has been taken"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A well-appearing 14-month-old with poor weight gain gains weight appropriately on a structured high-calorie regimen. What does this establish?",
+    "ch": [
+     "It proves familial short stature, since catch-up growth cannot occur in true failure to thrive",
+     "It supports non-organic FTT, since a trial of adequate nutrition is diagnostic and therapeutic",
+     "It excludes inadequate caloric intake and shifts suspicion toward malabsorptive disease",
+     "It confirms an organic cause that was temporarily masked by the additional calories",
+     "It is uninterpretable without celiac serology, sweat chloride testing, and stool studies"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A severely malnourished toddler is admitted and calories are advanced quickly. Which laboratory changes signal the expected complication?",
+    "ch": [
+     "Falling phosphate, potassium, and magnesium — the hallmark of refeeding syndrome",
+     "Falling sodium alone, with phosphate and magnesium levels remaining entirely normal",
+     "Rising ferritin and hemoglobin, reflecting a brisk response to caloric repletion",
+     "Falling thyroid-stimulating hormone with a rising free thyroxine concentration",
+     "Rising phosphate with rising potassium and a widening metabolic acid-base gap"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A caregiver has already started a gluten-free diet on her own, before any testing, in a child with poor growth and diarrhea. Why is this a problem?",
+    "ch": [
+     "It delays pancreatic enzyme replacement, which is the definitive treatment for celiac disease",
+     "A gluten-free diet causes refeeding syndrome by rapidly increasing dietary caloric density",
+     "Gluten withdrawal produces a false-positive tissue transglutaminase IgA antibody result",
+     "A gluten-free diet remains contraindicated even after celiac disease has been confirmed",
+     "Starting a gluten-free diet before diagnostic testing invalidates celiac serology and biopsy"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 4-month-old is below the third percentile for weight. The mother reports adding extra water to every bottle so the formula lasts longer. What is the mechanism?",
+    "ch": [
+     "A genetic cause of small size, since formula dilution errors do not affect weight gain",
+     "Inadequate caloric intake from improper formula dilution, a classic and easily missed cause",
+     "Inadequate absorption from a secondary lactase deficiency caused by the excess free water",
+     "Increased metabolic demand from the work of feeding the larger diluted bottle volumes",
+     "Refeeding syndrome from the abrupt increase in the infant's daily free-water intake"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A 3-year-old is short for age, but weight-for-length is normal, growth has tracked steadily along a low curve, and both parents are short. How should this be interpreted?",
+    "ch": [
+     "Malabsorptive FTT, warranting celiac serology, sweat chloride testing, and stool studies",
+     "Refeeding risk, so calories must be advanced slowly with close phosphate monitoring",
+     "Failure to thrive from inadequate caloric intake, requiring immediate caloric fortification",
+     "Non-organic FTT from neglect, which mandates an urgent child-protection report today",
+     "Short stature with preserved weight, suggesting endocrine or genetic short stature rather than FTT"
+    ]
+   }
+  ]
+ },
+ "acute-glaucoma": {
+  "condition": "Acute Angle-Closure Glaucoma",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which mechanism best explains the abrupt pressure rise in acute angle-closure glaucoma?",
+    "ch": [
+     "Increased outflow resistance at an anatomically open trabecular meshwork",
+     "Ciliary body shutdown with markedly reduced aqueous humor production",
+     "The peripheral iris bows forward and occludes the trabecular meshwork, halting aqueous drainage",
+     "Choroidal neovascular membranes leaking fluid beneath the central retina",
+     "Separation of the neurosensory retina from the retinal pigment epithelium"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "On examination of a patient in an acute angle-closure attack, what is the expected pupil finding?",
+    "ch": [
+     "A fixed mid-dilated 4-6 mm pupil that is non-reactive to light",
+     "A pinpoint pupil that constricts briskly to a light stimulus",
+     "A fully dilated pupil that still reacts normally to bright light",
+     "A small, irregular pupil of the kind described in anterior uveitis",
+     "A relative afferent pupillary defect with an otherwise normal pupil size"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which classic triad does the module give for acute angle-closure glaucoma?",
+    "ch": [
+     "Bilateral itching, stringy mucoid discharge, and cobblestone papillae",
+     "Drusen, wavy distorted lines, and a dense central scotoma",
+     "Painful red eye, fixed mid-dilated pupil, and halos around lights",
+     "Flashes, floaters, and a curtain descending over the visual field",
+     "Painless peripheral field loss, optic disc cupping, and an open angle"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient with a shallow anterior chamber develops an acute attack shortly after taking an over-the-counter cold remedy. Which drug property precipitated it?",
+    "ch": [
+     "Anticholinergic mydriatic effect that mid-dilates the pupil into the danger zone",
+     "Cholinergic agonism producing pupillary constriction",
+     "Prostaglandin-mediated increase in uveoscleral outflow",
+     "Carbonic anhydrase inhibition reducing aqueous formation",
+     "Beta-blockade reducing aqueous humor production"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Why does the module warn that pilocarpine is often ineffective early in an acute attack?",
+    "ch": [
+     "It is inactivated by the steamy edematous cornea and never reaches the anterior chamber",
+     "It works only after a laser peripheral iridotomy has already been performed",
+     "It requires an intact trabecular meshwork in order to increase aqueous outflow",
+     "It transiently raises intraocular pressure further before it starts to lower it",
+     "At very high pressure the iris sphincter is ischemic and paralyzed, so miotics fail until pressure drops"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which nursing action does the module specify for a patient in an acute angle-closure attack?",
+    "ch": [
+     "Apply firm pressure over the closed globe to help drive aqueous out",
+     "Position the patient supine so the lens falls back off the iris, and keep the room comfortably lit",
+     "Place the patient in high Fowler's position with the head of the bed fully upright",
+     "Darken the room completely to reduce photophobia and eye discomfort",
+     "Instill a mydriatic drop so the ophthalmologist can view the fundus"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A 68-year-old hyperopic woman has severe right eye pain, halos, vomiting, and a rock-hard globe with an intraocular pressure of 56 mmHg. Topical timolol, brimonidine, and dorzolamide have been given. What does the module describe next?",
+    "ch": [
+     "Topical atropine to relax the ciliary body and deepen the anterior chamber",
+     "Urgent trabeculectomy with a glaucoma drainage implant to bypass the meshwork",
+     "Observation with serial tonometry every four hours until the pressure normalizes",
+     "Immediate laser peripheral iridotomy performed through the edematous, steamy cornea",
+     "Systemic acetazolamide and IV mannitol to crash the pressure, then pilocarpine to reopen the angle"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Before giving systemic acetazolamide during an acute attack, which history would the module have you flag?",
+    "ch": [
+     "Prior uncomplicated cataract surgery in the affected eye",
+     "Sickle cell disease with a documented sulfa allergy and severe renal impairment",
+     "Well-controlled hypertension treated with a thiazide diuretic",
+     "Hyperopia with a shallow anterior chamber in the fellow eye",
+     "A family history of primary open-angle glaucoma in two siblings"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "What does the module identify as the definitive treatment, and what does it say about the fellow eye?",
+    "ch": [
+     "Trabeculectomy in the affected eye only, with pressure-lowering drops for the fellow eye",
+     "Lifelong pilocarpine in both eyes, with no procedure required at any point",
+     "Selective laser trabeculoplasty in the affected eye and annual screening of the fellow eye",
+     "Laser peripheral iridotomy, with prophylactic iridotomy of the fellow eye because it shares the anatomy",
+     "Intravitreal anti-VEGF injection, repeated in the fellow eye if the pressure rises"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient presents with headache, intractable nausea and vomiting, and blurred vision with halos. Why does the module insist you examine and palpate the eye?",
+    "ch": [
+     "Because visual acuity is normal in angle closure and confirms a neurologic cause",
+     "Because vomiting itself raises the intraocular pressure and must first be quantified",
+     "Because the differential is limited to migraine and requires imaging before treatment",
+     "Because these symptoms can masquerade as migraine or a GI emergency while the eye is the source",
+     "Because antiemetics cannot be given until the corneal reflex has been documented"
+    ]
+   }
+  ]
+ },
+ "open-glaucoma": {
+  "condition": "Primary Open-Angle Glaucoma",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which description best characterizes primary open-angle glaucoma?",
+    "ch": [
+     "Separation of the neurosensory retina from the retinal pigment epithelium",
+     "An acute, painful optic neuropathy with a closed angle and a rock-hard globe",
+     "A chronic, painless optic neuropathy with an anatomically open anterior chamber angle",
+     "A degenerative disease of the macula producing drusen and central vision loss",
+     "Inflammation of the conjunctiva with discharge and a normal visual acuity"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Why does the module call primary open-angle glaucoma the \"silent thief of sight\"?",
+    "ch": [
+     "It causes sudden painless central vision loss with wavy, distorted straight lines",
+     "It produces halos and severe eye pain that patients often attribute to a migraine",
+     "It is asymptomatic because intraocular pressure stays within the normal range in every case",
+     "It is painless and takes peripheral vision first, sparing central acuity until late, so patients present dangerously late",
+     "It only begins to progress after an optic disc hemorrhage announces itself on fundoscopy"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which fundoscopic finding supports a diagnosis of primary open-angle glaucoma?",
+    "ch": [
+     "Cup-to-disc ratio greater than 0.5 with rim thinning or notching and a disc hemorrhage",
+     "Yellow drusen deposits and pigment changes clustered at the macula",
+     "An elevated, corrugated, mobile retina with a visible peripheral tear",
+     "A gray-green subretinal membrane with hemorrhage and hard exudate",
+     "Cobblestone papillae seen on the everted upper eyelid"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Why does the module insist on interpreting intraocular pressure alongside central corneal thickness?",
+    "ch": [
+     "Corneal thickness determines whether the anterior chamber angle is open or closed",
+     "Pachymetry replaces Goldmann applanation as the reference standard for pressure",
+     "Corneal thickness predicts how well the patient will respond to prostaglandin analogs",
+     "Thin corneas under-read pressure and are themselves an independent risk factor for progression",
+     "Thick corneas make gonioscopy impossible and must therefore be excluded first"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient started on latanoprost asks what to expect. Which counseling point does the module give?",
+    "ch": [
+     "Expect wheezing and a slow pulse from systemic absorption of the drop",
+     "Expect whorl-like corneal deposits and marked conjunctival hyperemia",
+     "Expect iris and periocular darkening plus increased eyelash growth",
+     "Expect fatigue and an allergic conjunctivitis reaction to the drop",
+     "Expect paresthesias, metabolic acidosis, and a low potassium level"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which drop-instillation teaching does the module give to limit systemic absorption of timolol?",
+    "ch": [
+     "Rest the bottle tip against the lashes to steady the hand during instillation",
+     "Instill two drops in rapid succession to guarantee that an adequate dose reaches the eye",
+     "Instill all of the prescribed drops back to back so that none of them is forgotten",
+     "Rinse the eye with sterile saline immediately after each drop has been instilled",
+     "One drop, then punctal occlusion and eyelid closure for about one minute, waiting five minutes between different drops"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient has classic disc cupping and arcuate field defects but every pressure reading is under 21 mmHg. How does the module frame this?",
+    "ch": [
+     "A normal examination, because glaucoma cannot occur at pressures below 21 mmHg",
+     "Normal-tension glaucoma — treat by lowering pressure anyway and consider vascular and secondary contributors",
+     "Ocular hypertension without glaucoma, so neither treatment nor further follow-up is needed",
+     "Acute angle-closure disease that has been intermittently decompressing itself over time",
+     "Age-related macular degeneration presenting unusually with a peripheral field defect"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which option does the module offer specifically to sidestep problems with drop adherence?",
+    "ch": [
+     "Oral acetazolamide once daily as a long-term substitute for all topical therapy",
+     "A trabeculectomy performed at the time of diagnosis in every patient",
+     "Switching from a prostaglandin analog to a topical beta-blocker instead",
+     "Prescribing an AREDS2 supplement to slow structural progression",
+     "Selective laser trabeculoplasty, usable first-line or as an adjunct and repeatable over time"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "How does the module say a target pressure should be expressed?",
+    "ch": [
+     "As a set percentage reduction from that patient's own baseline pressure",
+     "As the pressure at which the cup-to-disc ratio returns toward normal",
+     "As the pressure at which the visual field defects reverse and disappear",
+     "As a single universal number below 21 mmHg applied to every patient",
+     "As whatever value the patient's thinnest corneal reading happens to produce"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A treated patient's pressure is at target, but a new splinter disc hemorrhage and a deepening arcuate scotoma appear. What does the module advise?",
+    "ch": [
+     "Continue the current therapy unchanged, since the pressure target has already been met",
+     "Escalate therapy urgently — a disc hemorrhage with field progression signals active damage",
+     "Stop all of the drops and observe for six months before repeating the visual fields",
+     "Refer the patient for laser peripheral iridotomy of both eyes",
+     "Begin intravitreal anti-VEGF injections to protect the remaining optic nerve fibers"
+    ]
+   }
+  ]
+ }
+}

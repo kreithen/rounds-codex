@@ -1,0 +1,922 @@
+{
+ "conjunctivitis": {
+  "condition": "Conjunctivitis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "The module names viral conjunctivitis as the most common form. Which organism is usually responsible?",
+    "ch": [
+     "Chlamydia trachomatis",
+     "Pseudomonas aeruginosa",
+     "Adenovirus",
+     "Staphylococcus aureus",
+     "Neisseria gonorrhoeae"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "According to the module, which discharge pattern points to bacterial conjunctivitis?",
+    "ch": [
+     "Stringy mucoid discharge with intense bilateral itching",
+     "Thick purulent discharge with eyelids stuck shut in the morning",
+     "No discharge at all, with photophobia and a ciliary flush",
+     "Clear tearing with normal lids and cobblestone papillae",
+     "Watery discharge with a tender preauricular lymph node"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which cluster of findings does the module give for allergic conjunctivitis?",
+    "ch": [
+     "Unilateral hyperacute copious purulent discharge within 12 to 24 hours",
+     "Watery discharge with a tender preauricular lymph node and lid follicles",
+     "Reduced visual acuity with severe pain and a fluorescein-staining dendrite",
+     "Purulent discharge in a neonate on the third or fourth day of life",
+     "Bilateral intense itching, stringy mucoid discharge, cobblestone papillae, and rhinitis"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Why does the module call fluorescein staining the pivotal step in a contact-lens wearer with a red eye?",
+    "ch": [
+     "It measures the intraocular pressure without any instrument contacting the cornea",
+     "It confirms the presence of tender preauricular lymphadenopathy on the affected side",
+     "It identifies cobblestone papillae hidden on the everted upper eyelid",
+     "It distinguishes viral from bacterial discharge by staining the pus directly",
+     "It excludes corneal ulcer, abrasion, and a herpetic dendrite before any steroid is considered"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A contact-lens wearer has purulent bacterial conjunctivitis. Which topical agent does the module prefer, and why?",
+    "ch": [
+     "An aminoglycoside for prolonged use, because it penetrates lenses well",
+     "A fluoroquinolone, because it covers Pseudomonas in contact-lens wearers",
+     "Artificial tears alone, because all bacterial cases resolve on their own",
+     "Erythromycin ointment, because it is the best tolerated agent overnight",
+     "A topical corticosteroid, because it settles the inflammation fastest"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A young adult develops copious purulent discharge in one eye over 18 hours. What does the module direct you to do?",
+    "ch": [
+     "Prescribe olopatadine drops and cold compresses for presumed allergy",
+     "Reassure and observe, since most conjunctivitis is self-limited over one to two weeks",
+     "Give IM ceftriaxone plus topical therapy, co-treat for chlamydia, and refer to ophthalmology urgently",
+     "Start a topical corticosteroid to prevent membrane formation on the lids",
+     "Send a viral panel and withhold all antibiotics pending the result"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which infection-control instruction does the module give for active viral or bacterial conjunctivitis?",
+    "ch": [
+     "Continue wearing contact lenses so they shield the cornea from irritants",
+     "Wipe the discharge from the outer canthus inward toward the nose",
+     "Keep the eye makeup and start reusing it once the discharge has cleared",
+     "Separate towels, no eye rubbing, discard eye makeup, and stay home while discharge is active",
+     "Share the same warm compress between both eyes to keep the eyelids soft"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which finding tells you a red eye is NOT simple conjunctivitis and needs escalation?",
+    "ch": [
+     "Bilateral itching with stringy discharge and lid papillae",
+     "Eyelids stuck shut on waking with thick purulent discharge",
+     "Diffuse conjunctival redness with a normal visual acuity",
+     "Decreased visual acuity with severe eye pain and photophobia",
+     "Watery discharge with a tender preauricular lymph node"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "In uncomplicated conjunctivitis, what should the visual acuity and cornea look like?",
+    "ch": [
+     "Acuity normal, with the sclera and cornea both remaining clear",
+     "Acuity reduced by two lines, with a hazy steamy cornea",
+     "Acuity normal, with a dendritic corneal lesion on staining",
+     "Acuity reduced, with a gray-green subretinal membrane",
+     "Acuity normal, with a fixed mid-dilated non-reactive pupil"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A 4-day-old neonate has purulent conjunctival discharge. How does the module classify this?",
+    "ch": [
+     "Urgent — treat any neonatal conjunctivitis as urgent and report it to the provider immediately",
+     "Self-limited viral disease requiring only hand hygiene and cool compresses",
+     "Routine bacterial conjunctivitis to treat with erythromycin ointment at home",
+     "Allergic conjunctivitis, since neonates are commonly atopic at this age",
+     "Chemical irritation that will resolve without any further evaluation"
+    ]
+   }
+  ]
+ },
+ "retinal-detachment": {
+  "condition": "Retinal Detachment",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which symptom triad does the module give for retinal detachment?",
+    "ch": [
+     "Thick purulent discharge, lids stuck shut on waking, and normal acuity",
+     "Severe eye pain, halos around lights, and intractable vomiting",
+     "Intense itching, stringy mucoid discharge, and bilateral redness",
+     "Gradual central blur, wavy lines, and a need for brighter reading light",
+     "New flashes of light, a shower of new floaters, and a curtain over the peripheral field"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which mechanism defines a rhegmatogenous retinal detachment?",
+    "ch": [
+     "The peripheral iris occludes the trabecular meshwork and the pressure rises",
+     "Drusen accumulate under the retina and the pigment epithelium atrophies",
+     "A retinal tear or break lets liquefied vitreous seep under the retina",
+     "Fibrovascular bands pull the retina, as in proliferative diabetic retinopathy",
+     "Fluid leaks beneath the retina without any break, as with tumors or inflammation"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What does the module mean by the phrase \"mac-on = go\"?",
+    "ch": [
+     "Only mac-off detachments require a dilated fundoscopic examination and an OCT",
+     "A macula-off detachment must be taken to the operating room within minutes of presentation",
+     "Macular status does not affect the surgical timing at all, only the choice of procedure",
+     "A mac-on rhegmatogenous detachment is a surgical emergency, repaired within about 24 hours to protect central vision",
+     "The macula must already be detached before surgical repair can be attempted safely"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient has an intraocular SF6 gas bubble after vitrectomy. Which two exposures are absolutely contraindicated until it resorbs?",
+    "ch": [
+     "Scleral depression and B-scan ocular ultrasound",
+     "Nitrous oxide anesthesia and air travel or high altitude",
+     "Topical timolol drops and oral acetazolamide",
+     "Cycloplegic drops and topical corticosteroids",
+     "Anti-VEGF injections and laser photocoagulation"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "What does Shafer's sign indicate on examination?",
+    "ch": [
+     "Yellow lipid deposits accumulating beneath the retinal pigment epithelium",
+     "A corrugated, mobile retina visible on indirect ophthalmoscopy",
+     "Distortion of straight lines reported by the patient on an Amsler grid",
+     "A relative afferent pupillary defect caused by a large detachment",
+     "Pigmented \"tobacco dust\" cells in the anterior vitreous, strongly suggesting a retinal break"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which preoperative nursing instruction does the module give for a patient awaiting detachment repair?",
+    "ch": [
+     "Have the patient sit fully upright at all times to drain subretinal fluid",
+     "Minimize head movement and avoid bending, straining, or heavy lifting",
+     "Encourage ambulation and light aerobic exercise to maintain circulation",
+     "Instill a mydriatic drop hourly to keep the pupil dilated overnight",
+     "Apply a firm pressure patch and irrigate the eyelids every hour"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "The module matches the repair procedure to the anatomy. Which pairing does it give?",
+    "ch": [
+     "Pneumatic retinopexy is preferred for complex pseudophakic detachments with media opacity",
+     "Trabeculectomy is the operation of choice for a single superior retinal break",
+     "A scleral buckle is preferred when the vitreous cavity view is obscured by hemorrhage",
+     "Pneumatic retinopexy for a single superior break, scleral buckle in younger phakic patients, vitrectomy for complex cases",
+     "Laser peripheral iridotomy repairs tractional detachment in proliferative diabetic retinopathy"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A high myope reports new floaters and a temporal shadow three months after cataract surgery. Why do these two facts matter mechanistically?",
+    "ch": [
+     "Axial elongation thins the peripheral retina and cataract surgery accelerates vitreous liquefaction",
+     "Both of them produce drusen and geographic atrophy at the central macula",
+     "Both of them cause conjunctival inflammation that mimics a true field defect",
+     "Both of them raise intraocular pressure and close the anterior chamber angle",
+     "Both of them cause VEGF-driven choroidal neovascularization beneath the macula"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient reports new flashes and floaters but has no field loss at all. What does the module say to do?",
+    "ch": [
+     "Order a B-scan ultrasound only if the acuity drops below 20/40",
+     "Start topical timolol to lower the intraocular pressure prophylactically",
+     "Perform a dilated exam, since any acute PVD warrants exclusion of a retinal break",
+     "Reassure and follow up in one year, since a field defect is absent",
+     "Begin anti-VEGF injections to prevent progression to a detachment"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Two days after vitrectomy with gas tamponade a patient reports severe eye pain, nausea, and halos. What does this suggest?",
+    "ch": [
+     "Dangerous intraocular pressure elevation requiring urgent treatment",
+     "Endophthalmitis that mandates immediate intravitreal anti-VEGF therapy",
+     "Recurrent macular detachment that will resolve with positioning alone",
+     "An allergic reaction to the cycloplegic drop, treated by stopping it",
+     "Normal postoperative discomfort that needs only oral analgesia"
+    ]
+   }
+  ]
+ },
+ "macular-degeneration": {
+  "condition": "Age-Related Macular Degeneration",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which pairing correctly distinguishes dry from wet age-related macular degeneration?",
+    "ch": [
+     "Dry = closed anterior chamber angle; wet = open angle with elevated pressure",
+     "Dry = drusen and RPE atrophy; wet = VEGF-driven choroidal neovascularization",
+     "Dry = choroidal neovascularization; wet = drusen and pigment epithelial atrophy",
+     "Dry = peripheral field loss; wet = optic disc cupping and a high pressure",
+     "Dry = retinal tear with subretinal fluid; wet = fibrovascular vitreous traction"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "How does the module describe the relative frequency and impact of wet AMD?",
+    "ch": [
+     "About half of all cases, and it carries the mildest visual consequences",
+     "About 85-90% of cases, progressing slowly toward geographic atrophy",
+     "About 10-15% of cases, but responsible for most severe vision loss",
+     "About 10-15% of cases, and it never threatens the central acuity",
+     "About 30% of cases, and it is prevented entirely by AREDS2 supplements"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What functional pattern of vision loss does the module attribute to AMD?",
+    "ch": [
+     "Complete blindness in most patients within a year of the diagnosis",
+     "Loss of peripheral vision with fully preserved reading ability",
+     "Painful loss of vision that begins with halos around lights",
+     "Tunnel vision progressing down to a small central island",
+     "Loss of reading, driving, and face recognition, with peripheral vision spared"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient with intermediate dry AMD reports that straight lines suddenly look wavy. What does this most likely represent?",
+    "ch": [
+     "A retinal detachment, since flashes and floaters always precede distortion",
+     "A side effect of the AREDS2 supplement that resolves once it is stopped",
+     "Expected progression of drusen that warrants only routine yearly follow-up",
+     "Metamorphopsia signalling conversion to wet AMD — an urgent referral",
+     "A cataract requiring surgical extraction before the vision can improve"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "For which patient does the module say AREDS2 supplementation is indicated?",
+    "ch": [
+     "A patient with no drusen at all but a strong family history of AMD",
+     "Any adult over 50 as primary prevention against developing AMD",
+     "A patient with early AMD and small drusen only on fundoscopy",
+     "A patient with wet AMD, used in place of anti-VEGF injections",
+     "A patient with intermediate AMD, or with advanced disease in one eye"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Why did AREDS2 replace beta-carotene with lutein and zeaxanthin?",
+    "ch": [
+     "Beta-carotene raised the intraocular pressure in treated patients",
+     "Beta-carotene caused zinc-induced copper deficiency anemia in treated patients",
+     "Beta-carotene was found to accelerate choroidal neovascularization",
+     "Beta-carotene raised lung cancer risk in smokers",
+     "Lutein and zeaxanthin restore vision that has already been lost"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "What role does the module assign to OCT in age-related macular degeneration?",
+    "ch": [
+     "A screening test that replaces dilated fundoscopic examination entirely",
+     "Key confirmatory imaging showing intraretinal and subretinal fluid, and it guides anti-VEGF re-treatment",
+     "A dye-based angiographic test that localizes choroidal neovascular leakage",
+     "A home self-monitoring tool that the patient uses once daily in each eye",
+     "The reference standard for measuring the intraocular pressure accurately"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient reports eye pain, increasing redness, discharge, and worsening vision three days after an intravitreal anti-VEGF injection. What must be excluded?",
+    "ch": [
+     "A systemic thromboembolic event caused by the injected drug",
+     "Failure of the AREDS2 supplement to slow the progression",
+     "Endophthalmitis, a sight-threatening emergency",
+     "Expected mild irritation and floaters following the injection",
+     "Progression of geographic atrophy within the treated eye"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which intervention does the module call the single most important modifiable step to reduce AMD progression?",
+    "ch": [
+     "Smoking cessation, alongside cardiovascular risk factor control",
+     "Beginning prophylactic anti-VEGF injections before any CNV appears",
+     "Referral for low-vision rehabilitation with magnifiers and lighting",
+     "Daily Amsler grid self-monitoring performed at home in each eye",
+     "Starting AREDS2 supplements in every patient over the age of 50"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "What does the module say about pegcetacoplan and avacincaptad pegol in advanced dry AMD?",
+    "ch": [
+     "They slow geographic atrophy growth without improving vision, and can convert dry AMD to wet",
+     "They eliminate the need for any continued smoking cessation counseling",
+     "They reverse geographic atrophy and restore the lost central visual acuity",
+     "They are oral agents taken alongside the AREDS2 supplement formulation",
+     "They are first-line therapy for wet AMD, replacing anti-VEGF injections"
+    ]
+   }
+  ]
+ },
+ "cataracts": {
+  "condition": "Cataracts",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which description best characterizes a cataract?",
+    "ch": [
+     "Acute rise in intraocular pressure producing a painful red eye with halos and a fixed pupil",
+     "Degeneration of the central retina causing distorted central vision with drusen",
+     "Progressive opacification of the crystalline lens producing painless, gradual loss of acuity and contrast",
+     "Inflammation of the uveal tract producing photophobia with anterior chamber cells and flare",
+     "Separation of the retina producing flashes, floaters, and a curtain across the visual field"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "A 58-year-old with diabetes who has taken long-term corticosteroids reports disabling glare and difficulty reading. Which cataract morphology is most likely?",
+    "ch": [
+     "Cortical spoke-like cataract",
+     "Congenital rubella-associated cataract",
+     "Traumatic cataract from remote blunt injury",
+     "Posterior subcapsular cataract",
+     "Nuclear sclerotic cataract"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "An 80-year-old who has needed reading glasses for 25 years now reads the newspaper without them, while his distance vision is worsening. What explains this?",
+    "ch": [
+     "A nuclear sclerotic cataract producing a myopic shift, known as 'second sight'",
+     "Posterior capsular opacification developing after previous lens surgery",
+     "Resolution of presbyopia as the ciliary muscle strengthens with age",
+     "A cortical cataract producing spoke-like wedge opacities in the lens periphery",
+     "Steroid-induced posterior subcapsular change that improves near focus"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which statement about treating an age-related cataract is correct?",
+    "ch": [
+     "Topical antioxidant drops slowly reverse lens opacification over several months",
+     "Phacoemulsification with intraocular lens implantation is the only proven treatment",
+     "YAG laser capsulotomy is the standard first procedure for a cloudy natural lens",
+     "A tapering course of prednisolone acetate clears the lens opacity in most patients",
+     "Updated spectacle correction halts progression and removes the need for surgery"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "What is the modern indication for cataract surgery?",
+    "ch": [
+     "Vision loss and glare that impair the patient's daily function",
+     "A myopic shift documented on the most recent spectacle refraction",
+     "A Snellen acuity of 20/50 or worse in the better-seeing eye",
+     "Any visible lens opacity discovered on slit-lamp examination",
+     "An absent red reflex on penlight examination of the adult eye"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Before phacoemulsification, which assessment selects the power of the intraocular lens?",
+    "ch": [
+     "Dilated fundus examination of the macula and optic disc",
+     "Snellen visual acuity testing at distance and at near",
+     "Slit-lamp grading of the density of the lens opacity",
+     "Optical biometry measuring keratometry and axial length",
+     "Brightness acuity (glare) testing under bright illumination"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient is discharged the day of cataract surgery. Which instruction is most important to reinforce?",
+    "ch": [
+     "Return this week to be fitted for the final new spectacle prescription",
+     "Avoid rubbing, bending, straining, or lifting heavy objects and wear the eye shield",
+     "Sleep flat on the back with no eye covering so the eye can breathe",
+     "Stop all drops as soon as the eye feels comfortable and vision clears",
+     "Expect severe eye pain for the first week and manage it at home"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Two days after uncomplicated phacoemulsification a patient returns with increasing eye pain, redness, a layered white collection in the anterior chamber, and vision that has dropped. What is the diagnosis?",
+    "ch": [
+     "Expected post-operative inflammation",
+     "Retinal detachment",
+     "Steroid-induced intraocular pressure rise",
+     "Posterior capsular opacification",
+     "Endophthalmitis"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Eighteen months after successful cataract surgery a patient reports gradually returning cloudy vision with glare; the eye is painless and not red. What is the most likely cause and its treatment?",
+    "ch": [
+     "Retinal detachment, requiring urgent surgical reattachment of the retina",
+     "Acute angle-closure glaucoma, requiring urgent pressure-lowering therapy",
+     "Endophthalmitis, requiring same-day intravitreal antibiotic therapy",
+     "Recurrence of the cataract, requiring repeat phacoemulsification",
+     "Posterior capsular opacification, treated with YAG laser capsulotomy"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A pediatrician notes leukocoria with an absent red reflex in a 4-month-old infant. What is the correct next step and why?",
+    "ch": [
+     "Prescribe patching of the better eye and recheck the infant in six months",
+     "Order optical biometry and schedule elective lens surgery at age two",
+     "Refer urgently to ophthalmology for congenital cataract versus retinoblastoma",
+     "Start topical corticosteroid drops and repeat the examination in one month",
+     "Reassure the parents, since red reflex asymmetry is normal at this age"
+    ]
+   }
+  ]
+ },
+ "uveitis": {
+  "condition": "Uveitis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which structures make up the uveal tract that is inflamed in uveitis?",
+    "ch": [
+     "Lens, vitreous, and posterior capsule",
+     "Cornea, anterior chamber, and trabecular meshwork",
+     "Iris, ciliary body, and choroid",
+     "Retina, optic nerve, and macula",
+     "Conjunctiva, sclera, and episclera"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which history pattern is most characteristic of ANTERIOR uveitis?",
+    "ch": [
+     "Chronic itching with stringy discharge and conjunctival cobblestones",
+     "Painless floaters with vitreous cells and snowbanks on dilated exam",
+     "Bilateral painless blurring with chorioretinal lesions and retinal vasculitis",
+     "Gradual painless dimming with a dulled red reflex and a lens opacity",
+     "Acute unilateral pain, photophobia, redness, and tearing"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Recurrent acute unilateral anterior uveitis is classically associated with which of the following?",
+    "ch": [
+     "Vogt-Koyanagi-Harada disease with poliosis, vitiligo, and hearing loss",
+     "Oligoarticular juvenile idiopathic arthritis with a chronic white eye",
+     "Ocular toxoplasmosis with focal chorioretinal scarring on dilated exam",
+     "Sarcoidosis with mutton-fat keratic precipitates and iris nodules",
+     "HLA-B27 spondyloarthropathies such as ankylosing spondylitis and reactive arthritis"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Why is a cycloplegic such as cyclopentolate added to topical corticosteroid in anterior uveitis?",
+    "ch": [
+     "To relieve ciliary spasm pain and prevent posterior synechiae",
+     "To improve near vision that has blurred because of the inflammation",
+     "To substitute for anti-inflammatory therapy in mild anterior disease",
+     "To lower intraocular pressure and prevent steroid-induced glaucoma",
+     "To sterilize the anterior chamber and treat an infectious cause"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which slit-lamp findings confirm active anterior chamber inflammation?",
+    "ch": [
+     "A mid-dilated fixed pupil with corneal edema",
+     "Vitreous snowballs and snowbanks over the pars plana",
+     "Spoke-like wedge opacities within the lens cortex",
+     "Anterior chamber cells and flare with keratic precipitates",
+     "Drusen and pigmentary change at the macula"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient with unilateral anterior uveitis has an elevated intraocular pressure and decreased corneal sensation. Which principle governs management?",
+    "ch": [
+     "Order a full autoimmune serologic panel before beginning any treatment",
+     "Exclude or cover herpetic infection before giving corticosteroids alone",
+     "Start high-dose topical corticosteroid at once and defer any further workup",
+     "Begin adalimumab as first-line therapy for this unilateral episode",
+     "Withhold cycloplegics because they will worsen the pressure elevation"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Mutton-fat keratic precipitates with iris nodules indicate which category of uveitis, and which causes should be considered?",
+    "ch": [
+     "Non-granulomatous uveitis — HLA-B27 spondyloarthropathy or Behcet disease",
+     "Infectious endophthalmitis — post-surgical staphylococcal or streptococcal seeding",
+     "Intermediate uveitis — pars planitis with vitreous snowballs and snowbanks",
+     "Granulomatous uveitis — sarcoidosis, tuberculosis, syphilis, or VKH",
+     "Steroid-related change — an early cataract with an intraocular pressure spike"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient with chronic bilateral non-infectious posterior uveitis remains inflamed on systemic prednisone. What is the appropriate next step on the module's escalation ladder?",
+    "ch": [
+     "Switch to topical prednisolone acetate 1% as the sole therapy",
+     "Add a steroid-sparing immunomodulator such as methotrexate or mycophenolate",
+     "Stop all therapy abruptly and observe for spontaneous remission",
+     "Add atropine as the only ongoing treatment for the inflammation",
+     "Begin empiric acyclovir despite no evidence of an infectious cause"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 5-year-old with oligoarticular juvenile idiopathic arthritis has no eye complaints and a white, comfortable eye. What does the module advise?",
+    "ch": [
+     "Screen with slit-lamp examination, because the uveitis is asymptomatic",
+     "No ocular follow-up is needed unless the child reports pain or redness",
+     "Obtain HLA-B27 testing to establish the ocular risk before any examination",
+     "Treat empirically with a topical steroid taper to prevent future attacks",
+     "Reassure the family, since JIA-associated uveitis is always symptomatic"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A young adult has recurrent panuveitis with a hypopyon and reports recurrent oral and genital ulcers. Which systemic diagnosis does the module link to this picture?",
+    "ch": [
+     "Vogt-Koyanagi-Harada disease with poliosis and hearing loss",
+     "Sarcoidosis with hilar adenopathy on chest imaging",
+     "Behcet disease with recurrent mucocutaneous ulceration",
+     "Ankylosing spondylitis with back pain and morning stiffness",
+     "Ocular toxoplasmosis with focal chorioretinal scarring"
+    ]
+   }
+  ]
+ },
+ "orbital-cellulitis": {
+  "condition": "Orbital Cellulitis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which anatomic feature distinguishes orbital cellulitis from preseptal cellulitis?",
+    "ch": [
+     "Infection limited to eyelid skin and subcutaneous tissue",
+     "Inflammation of the conjunctival and corneal surfaces",
+     "Infection posterior to the orbital septum, in orbital fat and muscle",
+     "Involvement of the lacrimal drainage system of the eyelid",
+     "Extension of the infection into the maxillary sinus cavity"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which combination of examination findings indicates postseptal (orbital) rather than preseptal cellulitis?",
+    "ch": [
+     "Purulent discharge, matted lashes, and ocular itching",
+     "Proptosis, painful restricted eye movements, and diplopia",
+     "Photophobia, ciliary flush, and anterior chamber cells",
+     "Preauricular adenopathy, watery discharge, and follicles",
+     "Fever, eyelid erythema, and tenderness to palpation"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What is the most common source of orbital cellulitis in children?",
+    "ch": [
+     "Ascending infection from an obstructed nasolacrimal duct",
+     "Contiguous spread from chronic suppurative otitis media",
+     "Ethmoid sinusitis spreading through the lamina papyracea",
+     "Hematogenous seeding from bacterial endocarditis",
+     "Direct inoculation from a penetrating eyelid laceration"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which imaging study confirms postseptal involvement and identifies a drainable abscess?",
+    "ch": [
+     "Contrast MRI of the orbits as the first-line study",
+     "Plain orbital radiographs obtained in two views",
+     "Bedside ocular ultrasound of the affected globe",
+     "Non-contrast head CT limited to the brain parenchyma",
+     "Contrast-enhanced CT of the orbits and sinuses"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "The Chandler classification communicates severity of orbital infection. Which sequence of stages I through V is correct?",
+    "ch": [
+     "Preseptal cellulitis, subperiosteal abscess, orbital cellulitis, cavernous sinus thrombosis, orbital abscess",
+     "Orbital abscess, orbital cellulitis, preseptal cellulitis, cavernous sinus thrombosis, subperiosteal abscess",
+     "Cavernous sinus thrombosis, orbital abscess, subperiosteal abscess, orbital cellulitis, preseptal cellulitis",
+     "Orbital cellulitis, preseptal cellulitis, orbital abscess, subperiosteal abscess, cavernous sinus thrombosis",
+     "Preseptal cellulitis, orbital cellulitis, subperiosteal abscess, orbital abscess, cavernous sinus thrombosis"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which finding is the earliest sign of optic nerve compromise in orbital cellulitis?",
+    "ch": [
+     "A new relative afferent pupillary defect or color desaturation",
+     "Chemosis of the inferior conjunctival surface",
+     "Fever above 39 degrees Celsius on admission",
+     "A rising C-reactive protein and ESR over 24 hours",
+     "Leukocytosis with a left shift on the CBC differential"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which empiric intravenous regimen does the module recommend after blood cultures are drawn?",
+    "ch": [
+     "Vancomycin plus a broad beta-lactam such as ceftriaxone or ampicillin-sulbactam",
+     "Metronidazole alone to cover the sinus and dental anaerobes",
+     "Topical fluoroquinolone drops with warm compresses to the lid",
+     "Oral amoxicillin-clavulanate with outpatient follow-up in 24 hours",
+     "Liposomal amphotericin B alone pending fungal culture results"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A child with CT-confirmed orbital cellulitis and a subperiosteal abscess has worsening proptosis and pain after 36 hours of IV antibiotics. What is the next step?",
+    "ch": [
+     "Obtain a repeat non-contrast CT daily until the abscess resolves",
+     "Surgical drainage by ENT or oculoplastics, with endoscopic sinus surgery for the source",
+     "Continue the same antibiotics for another 72 hours before reassessing",
+     "Change to oral antibiotics and discharge with next-day follow-up",
+     "Add nebulized racemic epinephrine to reduce the orbital swelling"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "An adult with orbital cellulitis develops bilateral proptosis, multiple cranial nerve palsies, severe headache, and altered mental status. Which complication is suspected and which study is added?",
+    "ch": [
+     "Orbital abscess — a repeat contrast CT of the orbits",
+     "Mucormycosis — urgent nasal endoscopy with tissue biopsy",
+     "Endophthalmitis — an immediate anterior chamber tap",
+     "Cavernous sinus thrombosis — contrast MRI of the brain and orbits",
+     "Optic neuritis — visual field testing and color plates"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A poorly controlled diabetic presents with a rapidly progressive orbital infection, facial numbness, and a black eschar on the palate. What is the correct emergency pathway?",
+    "ch": [
+     "Elective sinus surgery scheduled once the infection has cooled",
+     "Topical antifungal drops with close ophthalmology follow-up",
+     "IV ceftriaxone alone with close observation for 48 hours",
+     "Liposomal amphotericin B with urgent surgical debridement",
+     "High-dose IV corticosteroids to reduce the orbital inflammation"
+    ]
+   }
+  ]
+ },
+ "sinusitis": {
+  "condition": "Sinusitis (Rhinosinusitis)",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement best characterizes the etiology of acute rhinosinusitis?",
+    "ch": [
+     "Most cases are bacterial from the outset, so antibiotics are appropriate initial therapy",
+     "Most cases are viral and self-limited, with only about 0.5-2% progressing to acute bacterial rhinosinusitis",
+     "Most cases are caused by invasive fungal organisms invading the sinus mucosa directly",
+     "Most cases represent a purely allergic process without any infectious component at all",
+     "Most cases arise from dental infection seeding the maxillary sinus through its floor"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which trio of organisms are the leading bacterial pathogens in acute bacterial rhinosinusitis?",
+    "ch": [
+     "Mycoplasma pneumoniae, Chlamydophila pneumoniae, and Legionella pneumophila",
+     "Aspergillus, Candida, and Rhizopus species acquired from the environment",
+     "Pseudomonas aeruginosa, Staphylococcus aureus, and Escherichia coli",
+     "Streptococcus pyogenes, Fusobacterium necrophorum, and Neisseria gonorrhoeae",
+     "Streptococcus pneumoniae, Haemophilus influenzae, and Moraxella catarrhalis"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "By the duration-based classification of rhinosinusitis, how long must symptoms persist for disease to be called chronic?",
+    "ch": [
+     "Less than 4 weeks, which is the acute category",
+     "4 to 12 weeks, which is the subacute category",
+     "12 weeks or more",
+     "3 to 4 days of severe symptoms with high fever",
+     "10 or more days without any improvement"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient with a cold improved on day 5 and then developed new fever and worsening purulent discharge on day 7. Which criterion for acute bacterial rhinosinusitis does this illustrate?",
+    "ch": [
+     "Severe onset with fever of 39C and purulent discharge for 3-4 days",
+     "Chronic rhinosinusitis with nasal polyps",
+     "Rhinitis medicamentosa from rebound congestion",
+     "Double worsening, meaning initial improvement followed by relapse",
+     "Persistent symptoms for 10 or more days without improvement"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient insists that thick green nasal discharge on day 4 of a cold proves a bacterial infection. What is the most accurate response?",
+    "ch": [
+     "Only clear discharge occurs in viral rhinosinusitis, so this must be bacterial",
+     "Purulence indicates fungal invasion of the sinus mucosa and needs urgent CT",
+     "Green discharge is diagnostic of Streptococcus pneumoniae and requires amoxicillin-clavulanate",
+     "Discharge color and thickness reflect neutrophils and the viral course, not the pathogen",
+     "Purulent discharge means the infection has already spread into the orbit"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Why is amoxicillin-clavulanate preferred over plain amoxicillin as first-line therapy for acute bacterial rhinosinusitis?",
+    "ch": [
+     "Clavulanate adds antifungal activity in case of invasive mucormycosis",
+     "Clavulanate covers beta-lactamase-producing Haemophilus influenzae and Moraxella catarrhalis",
+     "Clavulanate removes the risk of diarrhea seen with amoxicillin alone",
+     "Plain amoxicillin has no activity against Streptococcus pneumoniae at any dose",
+     "Clavulanate shortens the required treatment course to a single dose"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which antibiotic is the preferred alternative for acute bacterial rhinosinusitis in a penicillin-allergic adult?",
+    "ch": [
+     "Oral prednisone",
+     "Intranasal oxymetazoline",
+     "Doxycycline",
+     "Moxifloxacin",
+     "High-dose amoxicillin-clavulanate"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient has used oxymetazoline nasal spray for ten days and reports worsening congestion each time it wears off. What has developed, and what is the teaching point?",
+    "ch": [
+     "Rhinitis medicamentosa; topical decongestants should be limited to 3 days",
+     "Chronic rhinosinusitis with nasal polyps; oral corticosteroids are needed",
+     "Invasive fungal sinusitis; urgent surgical debridement is required",
+     "Antibiotic failure; therapy should be broadened to a fluoroquinolone",
+     "Pill esophagitis; the medication must be taken sitting upright with water"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A poorly controlled diabetic patient has rapidly progressive facial pain and a black, necrotic area on a nasal turbinate. What does this represent?",
+    "ch": [
+     "Uncomplicated viral rhinosinusitis that needs only saline irrigation and analgesics",
+     "Rhinitis medicamentosa from more than three days of topical decongestant use",
+     "Acute bacterial rhinosinusitis treatable with outpatient amoxicillin-clavulanate",
+     "A post-streptococcal complication that is confirmed with antibody titers",
+     "Invasive fungal sinusitis (mucormycosis), a surgical emergency needing urgent ENT and debridement"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "On day 8 of an upper respiratory illness a patient has purulent discharge and facial pressure but is steadily improving and has no fever. What is the most appropriate management?",
+    "ch": [
+     "Continue saline irrigation, intranasal corticosteroids, and analgesics without antibiotics",
+     "Start oral corticosteroids to reduce mucosal edema and ostial obstruction",
+     "Obtain a blind nasal swab culture to identify the responsible organism",
+     "Order CT of the sinuses to look for sinus opacification before deciding",
+     "Prescribe a respiratory fluoroquinolone because symptoms have lasted a week"
+    ]
+   }
+  ]
+ },
+ "strep-pharyngitis": {
+  "condition": "Streptococcal Pharyngitis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Streptococcal pharyngitis is caused by which organism, and how is it transmitted?",
+    "ch": [
+     "Neisseria gonorrhoeae, transmitted sexually and colonizing the pharynx",
+     "Streptococcus pneumoniae, spread by droplets from nasopharyngeal carriage",
+     "Epstein-Barr virus, transmitted by saliva with a several-week incubation",
+     "Streptococcus pyogenes (group A beta-hemolytic strep), spread by respiratory droplets with a 2-5 day incubation",
+     "Fusobacterium necrophorum, spreading from the oropharynx into the jugular vein"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Approximately what share of acute sore throats is caused by group A Streptococcus?",
+    "ch": [
+     "About 50-60% in adults and 80% in children",
+     "Essentially all sore throats, viral and bacterial alike",
+     "About 15-30% in children and 5-15% in adults",
+     "About 90% in both children and adults",
+     "About 0.5-2% of all cases regardless of age"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "A full 10-day course of penicillin is prescribed for GABHS pharyngitis. What is the primary reason the entire course must be completed?",
+    "ch": [
+     "To eradicate the organism and prevent acute rheumatic fever",
+     "To keep the patient non-contagious for the full ten days of therapy",
+     "To avoid the morbilliform rash seen with the aminopenicillins",
+     "To prevent post-streptococcal glomerulonephritis, which antibiotics reliably prevent",
+     "To overcome penicillin resistance that emerges during shorter courses"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which finding is one of the Centor (modified McIsaac) criteria for streptococcal pharyngitis?",
+    "ch": [
+     "Splenomegaly on abdominal examination",
+     "The presence of a productive cough",
+     "Posterior cervical lymphadenopathy",
+     "Conjunctivitis with clear rhinorrhea",
+     "The absence of cough"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient with a sore throat also has cough, hoarseness, coryza, and conjunctivitis. How should these findings be interpreted?",
+    "ch": [
+     "They indicate a peritonsillar abscess that requires urgent drainage",
+     "They are the classic diagnostic features of scarlet fever",
+     "They suggest a chronic streptococcal carrier needing clindamycin",
+     "They confirm GABHS and justify empiric penicillin without any testing",
+     "They point away from GABHS and toward a viral cause"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A 7-year-old with tonsillar exudates, fever, tender anterior nodes, and no cough has a negative rapid antigen detection test. What is the next step?",
+    "ch": [
+     "Send anti-streptococcal antibody titers such as ASO and anti-DNase B",
+     "Send a throat culture as backup because rapid testing is imperfectly sensitive",
+     "Start a 10-day course of penicillin V regardless of the test result",
+     "Immediately repeat the rapid antigen test from the opposite tonsil",
+     "Reassure the family that a virus is responsible and give supportive care"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A parent asks when their child with GABHS pharyngitis may return to school. What is the correct teaching?",
+    "ch": [
+     "After two weeks, once the risk of rheumatic fever has passed",
+     "Only after the full 10-day antibiotic course has been finished",
+     "After about 24 hours of effective antibiotics, if afebrile",
+     "Immediately, because streptococcal pharyngitis is not contagious",
+     "After a repeat rapid strep test documents clearance of the organism"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A 17-year-old treated empirically with amoxicillin for sore throat develops a diffuse morbilliform rash and has fatigue, posterior cervical adenopathy, and splenomegaly. What does this suggest?",
+    "ch": [
+     "Acute rheumatic fever with erythema marginatum",
+     "Underlying infectious mononucleosis from Epstein-Barr virus",
+     "An IgE-mediated anaphylactic penicillin reaction",
+     "Post-streptococcal glomerulonephritis with periorbital edema",
+     "Scarlet fever produced by a streptococcal exotoxin"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient with several days of sore throat now has drooling, trismus, and a muffled 'hot potato' voice. What is the priority action?",
+    "ch": [
+     "Give a weight-based dose of acetaminophen and reassess in an hour",
+     "Perform a rapid antigen detection test before any other intervention",
+     "Discharge with a 10-day course of penicillin V and close follow-up",
+     "Escalate urgently for airway and ENT evaluation, suspecting peritonsillar abscess",
+     "Order ASO and anti-DNase B titers to confirm streptococcal infection"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Two weeks after a documented and fully treated GABHS pharyngitis, a child develops tea-colored urine, hypertension, and periorbital edema. What best explains this?",
+    "ch": [
+     "Post-streptococcal glomerulonephritis, which antibiotic treatment does not reliably prevent",
+     "Lemierre syndrome from Fusobacterium septic thrombophlebitis",
+     "A peritonsillar abscess that has drained into the bloodstream",
+     "Scarlet fever developing after the antibiotic course ended",
+     "Acute rheumatic fever, which the completed antibiotic course should have prevented"
+    ]
+   }
+  ]
+ }
+}

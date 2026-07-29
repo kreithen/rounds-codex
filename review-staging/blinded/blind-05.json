@@ -1,0 +1,922 @@
+{
+ "addisons": {
+  "condition": "Adrenal Insufficiency (Addison's)",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement best characterizes primary adrenal insufficiency (Addison's disease)?",
+    "ch": [
+     "Pituitary disease with a low ACTH that spares aldosterone and causes no hyperpigmentation",
+     "Hypothalamic disease with a low ACTH in which the renin-aldosterone axis is fully preserved",
+     "Excess cortisol production by an adrenal cortical adenoma with a suppressed plasma ACTH level",
+     "Isolated aldosterone deficiency with a normal cortisol and a normal response to cosyntropin",
+     "Destruction of the adrenal cortex with deficiency of both cortisol and aldosterone and a high ACTH"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "In developed countries, what is the most common cause of primary adrenal insufficiency?",
+    "ch": [
+     "Abrupt withdrawal of chronic exogenous glucocorticoid therapy after long use",
+     "Tuberculous destruction of the adrenal glands, which remains a major cause worldwide",
+     "Autoimmune adrenalitis, often part of an autoimmune polyglandular syndrome",
+     "Adrenal hemorrhage from meningococcemia (Waterhouse-Friderichsen syndrome)",
+     "Bilateral adrenal metastases seeded from a distant primary malignancy"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which set of laboratory findings is classic for primary adrenal insufficiency?",
+    "ch": [
+     "Hyponatremia, hyperkalemia, and a mild metabolic acidosis",
+     "Normal sodium and potassium with an isolated elevated bicarbonate",
+     "Hypernatremia, hyperkalemia, and a marked metabolic alkalosis",
+     "Hypernatremia, hypokalemia, and a metabolic alkalosis",
+     "Hyponatremia, hypokalemia, and a respiratory alkalosis"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient with fatigue, weight loss, and salt craving has hyperpigmentation of the skin creases, scars, and buccal mucosa. What does this finding indicate?",
+    "ch": [
+     "Secondary insufficiency arising from pituitary disease with a low ACTH",
+     "Primary insufficiency, because a high ACTH and POMC-derived MSH drive pigmentation",
+     "Tertiary insufficiency arising from hypothalamic disease with a low ACTH",
+     "Adrenal insufficiency caused by chronic exogenous glucocorticoid therapy",
+     "Aldosterone deficiency alone, occurring independently of the ACTH level"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A low morning (8 AM) serum cortisol has been drawn. Which test confirms the diagnosis of adrenal insufficiency?",
+    "ch": [
+     "A 21-hydroxylase antibody titer sent with the initial screening labs",
+     "Adrenal CT imaging to look for hemorrhage, tuberculosis, or metastases",
+     "The ACTH (cosyntropin) stimulation test, looking for an inadequate cortisol rise",
+     "A single random afternoon serum cortisol repeated on a separate day",
+     "Plasma renin and aldosterone levels drawn while the patient is upright"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Why is fludrocortisone required in primary adrenal insufficiency but not in secondary insufficiency?",
+    "ch": [
+     "Patients with secondary insufficiency have a high ACTH that maintains aldosterone output",
+     "Secondary insufficiency spares aldosterone, so mineralocorticoid replacement is unnecessary",
+     "Fludrocortisone is a glucocorticoid and hydrocortisone already supplies that activity",
+     "Secondary insufficiency causes more sodium wasting, which fludrocortisone would worsen",
+     "Fludrocortisone is used only during adrenal crisis, when stress dosing is inadequate"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A patient in adrenal crisis is hypotensive and vomiting. What is the nursing priority?",
+    "ch": [
+     "Encourage oral rehydration and reassess the blood pressure in one hour",
+     "Sit the patient upright and obtain orthostatic blood pressures before treating",
+     "Obtain a morning cortisol and withhold treatment until the result returns",
+     "Restrict sodium and fluids to prevent overly rapid correction of the sodium",
+     "Obtain large-bore IV access, give rapid normal saline, and give IV hydrocortisone"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A known Addison's patient with influenza who has missed several hydrocortisone doses arrives with a blood pressure of 76/44, vomiting, and confusion. What is the immediate management?",
+    "ch": [
+     "Fludrocortisone alone, since aldosterone deficiency is causing the hypotension",
+     "A vasopressor infusion while awaiting the cosyntropin stimulation result",
+     "A potassium binder and insulin-dextrose for hyperkalemia before any steroid",
+     "IV hydrocortisone 100 mg bolus with aggressive normal saline and dextrose",
+     "Oral hydrocortisone at double the usual dose together with oral fluids"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "You suspect adrenal crisis in an undiagnosed patient but still want to run a cosyntropin stimulation test. Which steroid should you give?",
+    "ch": [
+     "Dexamethasone, because it does not interfere with the cortisol assay",
+     "Hydrocortisone, because its short half-life will not affect the cortisol assay",
+     "Fludrocortisone, because it has essentially no glucocorticoid activity at all",
+     "Prednisone, because oral dosing avoids interference with the cortisol assay",
+     "No steroid at all until the cosyntropin stimulation test has been completed"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient on lifelong hydrocortisone replacement develops fever and vomiting at home. What should the sick-day teaching have told them to do?",
+    "ch": [
+     "Continue the usual dose and call the clinic in the morning if not improved",
+     "Take extra fludrocortisone and add dietary salt instead of the glucocorticoid",
+     "Skip the dose until the vomiting stops in order to avoid gastric irritation",
+     "Inject the emergency hydrocortisone and seek care, because vomiting blocks oral dosing",
+     "Halve the oral dose until the fever resolves, then resume the usual regimen"
+    ]
+   }
+  ]
+ },
+ "siadh": {
+  "condition": "SIADH",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Typical SIADH laboratory pattern?",
+    "ch": [
+     "Hypernatremia, dilute urine",
+     "Euvolemic hypotonic hyponatremia with concentrated urine and high urine sodium",
+     "Hypervolemic hyponatremia",
+     "Hypovolemic dilute urine",
+     "Hypernatremia with high osmolality"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Classic ectopic ADH malignancy?",
+    "ch": [
+     "Melanoma",
+     "Renal cell carcinoma",
+     "Pancreatic adenocarcinoma",
+     "Small-cell lung cancer",
+     "Colon cancer"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "First-line therapy for chronic mild-to-moderate SIADH?",
+    "ch": [
+     "D5W",
+     "Normal saline",
+     "Dialysis",
+     "Hypertonic saline",
+     "Fluid restriction"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Drugs blocking V2 receptors?",
+    "ch": [
+     "ACE inhibitors",
+     "Loop diuretics",
+     "Vaptans",
+     "Thiazides",
+     "Beta blockers"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Initial treatment for seizures from SIADH?",
+    "ch": [
+     "Normal saline",
+     "Salt tablets",
+     "Fluid restriction",
+     "Controlled 3% saline",
+     "Demeclocycline"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Best discriminator from cerebral salt wasting?",
+    "ch": [
+     "Volume status",
+     "Glucose",
+     "Uric acid",
+     "Urine sodium",
+     "Osmolality"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Supportive laboratory clue?",
+    "ch": [
+     "High uric acid",
+     "High BUN",
+     "Low uric acid and low-normal BUN",
+     "High calcium",
+     "High creatinine"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Major risk of rapid correction?",
+    "ch": [
+     "Osmotic demyelination syndrome",
+     "AKI",
+     "Pulmonary edema",
+     "Hyperkalemia",
+     "Cerebral edema"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Must exclude before diagnosing SIADH?",
+    "ch": [
+     "COPD",
+     "Liver disease",
+     "Diabetes",
+     "CKD",
+     "Hypovolemia, hypervolemia, hypothyroidism, adrenal insufficiency"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Definitive management?",
+    "ch": [
+     "Permanent restriction",
+     "Treat/remove the underlying cause",
+     "Dialysis",
+     "IV fluids",
+     "Lifelong hypertonic saline"
+    ]
+   }
+  ]
+ },
+ "di": {
+  "condition": "Diabetes Insipidus",
+  "questions": [
+   {
+    "n": 1,
+    "q": "A 42-year-old man reports producing 7 liters of urine daily and drinking water constantly. Which mechanism best explains diabetes insipidus?",
+    "ch": [
+     "Increased aldosterone secretion",
+     "Excess glucose causing osmotic diuresis",
+     "Increased atrial natriuretic peptide secretion",
+     "Excess insulin secretion",
+     "Impaired AVP (ADH) production or renal response causing inability to concentrate urine"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which laboratory profile is most consistent with untreated diabetes insipidus?",
+    "ch": [
+     "Low serum osmolality with concentrated urine",
+     "High urine osmolality with low serum sodium",
+     "High serum osmolality with urine osmolality below 300 mOsm/kg",
+     "Low serum sodium with concentrated urine",
+     "Urine specific gravity above 1.030"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "After a water-deprivation test, urine osmolality rises by more than 50% following desmopressin. What is the most likely diagnosis?",
+    "ch": [
+     "SIADH",
+     "Hyperglycemic osmotic diuresis",
+     "Primary polydipsia",
+     "Nephrogenic diabetes insipidus",
+     "Central diabetes insipidus"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which medication is first-line therapy for central diabetes insipidus?",
+    "ch": [
+     "Desmopressin",
+     "Indomethacin",
+     "Furosemide",
+     "Hydrochlorothiazide",
+     "Amiloride"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient taking lithium develops nephrogenic diabetes insipidus. Which medication is specifically preferred?",
+    "ch": [
+     "Acetazolamide",
+     "Amiloride",
+     "Spironolactone",
+     "Furosemide",
+     "Mannitol"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which MRI finding is classically associated with central diabetes insipidus?",
+    "ch": [
+     "Empty sella",
+     "Loss of the posterior pituitary bright spot on T1-weighted imaging",
+     "Pineal calcification",
+     "Temporal-lobe edema",
+     "Enlarged lateral ventricles"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which modern laboratory approach is increasingly replacing the traditional water-deprivation test?",
+    "ch": [
+     "Serum aldosterone measurement",
+     "ACTH stimulation testing",
+     "BNP measurement",
+     "Stimulated copeptin testing",
+     "Plasma renin activity"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient with diabetes insipidus becomes lethargic and develops seizures after losing access to drinking water. Which complication is most likely?",
+    "ch": [
+     "Severe hypoglycemia",
+     "Hyperkalemia",
+     "Severe hypernatremia",
+     "Hypercalcemia",
+     "Metabolic acidosis"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient receiving desmopressin develops headache, nausea, confusion, and seizures. What is the most likely cause?",
+    "ch": [
+     "Hyponatremia from water intoxication",
+     "Hyperglycemia",
+     "Hypercalcemia",
+     "Intracranial hemorrhage",
+     "Hypernatremia from undertreatment"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which statement best distinguishes diabetes insipidus from SIADH?",
+    "ch": [
+     "Diabetes insipidus always causes hyponatremia",
+     "Both disorders produce concentrated urine",
+     "Both disorders cause persistent hypoglycemia",
+     "Diabetes insipidus produces dilute urine, whereas SIADH produces concentrated urine",
+     "SIADH typically causes polyuria with hypernatremia"
+    ]
+   }
+  ]
+ },
+ "gerd": {
+  "condition": "GERD",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement best describes the pathophysiology of GERD?",
+    "ch": [
+     "Excess gastrin from a neuroendocrine tumor drives acid hypersecretion and ulceration",
+     "An incompetent or transiently relaxing lower esophageal sphincter allows reflux that overwhelms esophageal clearance and mucosal defense",
+     "Autoimmune destruction of the gastric parietal cells eliminates acid secretion entirely",
+     "Loss of myenteric ganglion cells prevents the lower esophageal sphincter from ever relaxing",
+     "Eosinophilic infiltration of the esophageal mucosa produces rings, furrows, and dysphagia"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Why is a proton pump inhibitor taken 30 to 60 minutes before breakfast?",
+    "ch": [
+     "It forms a floating raft over the gastric contents before the meal arrives",
+     "Fasting administration avoids interference with calcium and magnesium absorption",
+     "PPIs bind only actively secreting proton pumps, and the meal stimulates secretion",
+     "Food destroys the drug, so it can only be given on a completely empty stomach",
+     "Morning dosing prevents the tachyphylaxis that develops with regular use"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Endoscopy in a patient with long-standing reflux shows salmon-colored mucosa in the distal esophagus. What confirms Barrett's esophagus, and why does it matter?",
+    "ch": [
+     "Intestinal metaplasia with goblet cells on biopsy; it is the key premalignant lesion",
+     "Eosinophils above 15 per high-power field; it predicts failure of acid suppression",
+     "Los Angeles grade D erosions; they establish irreversible sphincter incompetence",
+     "Absent peristalsis on manometry; it confirms progression toward achalasia",
+     "A positive H. pylori stain; it identifies the organism driving the reflux"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which finding in a patient with reflux symptoms mandates prompt upper endoscopy instead of an empiric PPI trial?",
+    "ch": [
+     "Regurgitation of sour fluid a few times each week after dinner",
+     "Dysphagia, weight loss, GI bleeding, anemia, or new onset over age 60",
+     "Heartburn that is worse after large meals and when lying supine",
+     "A hiatal hernia noted incidentally on a previous chest radiograph",
+     "Symptoms that respond within three days of starting famotidine"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "How is erosive esophagitis graded, and what does a normal endoscopy in a symptomatic patient suggest?",
+    "ch": [
+     "Prague C and M criteria; a normal endoscopy points to functional dyspepsia only",
+     "Savary-Miller stages 1 to 5; a normal endoscopy indicates achalasia is present",
+     "Barrett's dysplasia grading; a normal endoscopy rules out pathologic acid exposure",
+     "Los Angeles grades A to D; a normal endoscopy suggests non-erosive reflux disease",
+     "Los Angeles grades I to IV; a normal endoscopy excludes reflux disease entirely"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which set of lifestyle measures is recommended for reflux?",
+    "ch": [
+     "Increased caffeine and alcohol intake to stimulate lower esophageal sphincter tone",
+     "Sleeping completely flat without a pillow and eating the largest meal just before bed",
+     "Routine NSAID use with meals plus a calcium channel blocker to relax the sphincter",
+     "Weight loss, elevating the head of the bed 6 to 8 inches, and avoiding meals within 3 hours of lying down",
+     "Large evening meals followed by supine rest to help the stomach empty more completely"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Before anti-reflux surgery, which tests objectively confirm the diagnosis and assess motility?",
+    "ch": [
+     "Ambulatory pH monitoring with impedance, plus esophageal manometry",
+     "A barium swallow alone, repeated after an eight-week course of therapy",
+     "H. pylori stool antigen testing and a fasting serum gastrin level",
+     "Coronary angiography to exclude a cardiac cause of the chest pain",
+     "Capsule endoscopy of the small bowel with mucosal biopsy sampling"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient with 15 years of heartburn now reports new solid-food dysphagia. What must be considered until proven otherwise?",
+    "ch": [
+     "Functional heartburn, best managed with reassurance and further observation",
+     "A hiatal hernia, which is synonymous with GERD and needs no further workup",
+     "Peptic stricture or Barrett's with adenocarcinoma, requiring urgent endoscopy",
+     "Tachyphylaxis to famotidine, managed by switching him to an antacid",
+     "Hypomagnesemia from chronic acid suppression, corrected by supplementation"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 24-year-old has reflux symptoms that do not respond to a full-dose PPI. What should be considered next?",
+    "ch": [
+     "Doubling the PPI dose indefinitely without any further evaluation",
+     "Immediate fundoplication regardless of objective reflux testing",
+     "Long-term metoclopramide as first-line maintenance monotherapy",
+     "Antacids alone, on the reasoning that acid is clearly not involved",
+     "Eosinophilic esophagitis — endoscopy with biopsy is warranted"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which risks justify using the lowest effective PPI dose and reassessing therapy periodically?",
+    "ch": [
+     "Tardive dyskinesia and extrapyramidal symptoms with prolonged therapy",
+     "Dental erosions and hoarseness, which are extraesophageal reflux effects",
+     "Constipation with aluminum salts and diarrhea with magnesium salts",
+     "Hypergastrinemia that reliably progresses to esophageal adenocarcinoma",
+     "Hypomagnesemia, B12 and iron malabsorption, C. difficile, and fractures"
+    ]
+   }
+  ]
+ },
+ "hyperparathyroid": {
+  "condition": "Hyperparathyroidism",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Elevated calcium with inappropriately normal PTH suggests?",
+    "ch": [
+     "Secondary hyperparathyroidism",
+     "Vitamin D deficiency",
+     "Hypoparathyroidism",
+     "FHH",
+     "Primary hyperparathyroidism"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Most common cause of primary hyperparathyroidism?",
+    "ch": [
+     "MEN2A",
+     "CKD",
+     "Vitamin D deficiency",
+     "Single adenoma",
+     "Carcinoma"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Best test to exclude FHH?",
+    "ch": [
+     "ACTH",
+     "Troponin",
+     "24-hour urine Ca/Cr clearance ratio",
+     "TSH",
+     "MRI"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Rapid bridge therapy for severe hypercalcemia?",
+    "ch": [
+     "Calcitonin",
+     "Cinacalcet",
+     "Vitamin D",
+     "Alendronate",
+     "Thiazide"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "ECG change in hypercalcemia?",
+    "ch": [
+     "Long QT",
+     "Delta wave",
+     "ST elevation",
+     "AF",
+     "Short QT"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "DXA site most affected?",
+    "ch": [
+     "Calcaneus",
+     "Skull",
+     "Distal 1/3 radius",
+     "Hip",
+     "Lumbar spine"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "First treatment in hypercalcemic crisis?",
+    "ch": [
+     "Cinacalcet",
+     "IV saline",
+     "Dialysis",
+     "Loop diuretic",
+     "Bisphosphonate"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Classic mnemonic excludes?",
+    "ch": [
+     "Bones",
+     "Groans",
+     "Psychiatric moans",
+     "Hematuria",
+     "Stones"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Post-op prolonged hypocalcemia syndrome?",
+    "ch": [
+     "Hungry bone syndrome",
+     "SIADH",
+     "TLS",
+     "Addison crisis",
+     "DKA"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Medication to avoid?",
+    "ch": [
+     "ASA",
+     "Thiazides",
+     "Loops",
+     "Metformin",
+     "Insulin"
+    ]
+   }
+  ]
+ },
+ "pud": {
+  "condition": "Peptic Ulcer Disease",
+  "questions": [
+   {
+    "n": 1,
+    "q": "What are the two most common causes of peptic ulcer disease?",
+    "ch": [
+     "Alcohol",
+     "Gallstones",
+     "Viral infection",
+     "Crohn disease",
+     "H. pylori infection and NSAID use"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Duodenal ulcer pain classically:",
+    "ch": [
+     "Shoulder pain",
+     "Exercise-induced",
+     "Worsens with food",
+     "Improves with food",
+     "Unrelated to meals"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Diagnostic gold standard?",
+    "ch": [
+     "CT",
+     "MRI",
+     "Upper endoscopy (EGD)",
+     "Ultrasound",
+     "X-ray"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Why biopsy gastric ulcers?",
+    "ch": [
+     "Exclude malignancy",
+     "Stage gastritis",
+     "Check bleeding",
+     "Measure acid",
+     "Detect H. pylori only"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Active H. pylori testing includes:",
+    "ch": [
+     "ESR",
+     "Lipase",
+     "Troponin",
+     "Urea breath test",
+     "ANA"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "First-line acid suppression:",
+    "ch": [
+     "PPI",
+     "Steroid",
+     "Antacid only",
+     "Antibiotic",
+     "Misoprostol"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Rigid board-like abdomen suggests:",
+    "ch": [
+     "Ileus",
+     "Perforation",
+     "IBS",
+     "Pancreatitis",
+     "Constipation"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Posterior duodenal ulcers may erode the:",
+    "ch": [
+     "Renal artery",
+     "Splenic artery",
+     "Gastroduodenal artery",
+     "SMA",
+     "Hepatic artery"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Preferred regimen with high clarithromycin resistance:",
+    "ch": [
+     "Triple therapy",
+     "Bismuth quadruple therapy",
+     "H2 blocker",
+     "Misoprostol",
+     "Antacid"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "After treatment of H. pylori:",
+    "ch": [
+     "Repeat CT only",
+     "Colonoscopy",
+     "Lifelong PPI",
+     "Stop follow-up",
+     "Confirm eradication"
+    ]
+   }
+  ]
+ },
+ "gi-bleed": {
+  "condition": "Upper GI Bleed",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Upper GI bleeding is defined by a bleeding source located where?",
+    "ch": [
+     "Confined to the duodenum distal to the ampulla of Vater",
+     "Proximal to the ligament of Treitz — esophagus, stomach, or duodenum",
+     "Distal to the ligament of Treitz in the jejunum and ileum",
+     "Anywhere in the colon, from the cecum through the rectum",
+     "Limited to the esophagus above the diaphragmatic hiatus"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which is the leading cause of upper GI bleeding?",
+    "ch": [
+     "Esophagogastric varices from portal hypertension in cirrhosis",
+     "Peptic ulcer disease related to H. pylori or NSAIDs/aspirin",
+     "A Dieulafoy lesion eroding into a large submucosal artery",
+     "Erosive gastritis and esophagitis from acid mucosal injury",
+     "Mallory-Weiss tear following retching or forceful vomiting"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Coffee-ground emesis in an upper GI bleed most directly reflects which process?",
+    "ch": [
+     "Bile mixing with gastric contents from duodenogastric reflux",
+     "Swallowed blood from a nasopharyngeal rather than a luminal source",
+     "Brisk arterial bleeding with rapid transit through the stomach",
+     "Blood altered by gastric acid, implying a slower or stopped bleed",
+     "Blood retained in the colon long enough to be digested by bacteria"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient arrives with active hematemesis. Which nursing action takes priority?",
+    "ch": [
+     "Position the patient flat and supine to maximize cerebral perfusion pressure",
+     "Send a stool specimen for occult blood before other interventions",
+     "Give an oral proton pump inhibitor and start clear liquids as tolerated",
+     "Arrange upper endoscopy immediately, before any resuscitation is started",
+     "Establish two large-bore IVs (16-18 gauge), apply oxygen, and prepare for volume resuscitation"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A BUN:creatinine ratio above 30:1 in a bleeding patient points to what?",
+    "ch": [
+     "A falsely elevated hemoglobin from hemoconcentration",
+     "Active hemolysis rather than luminal blood loss",
+     "An upper source — digested blood as a nitrogen load plus a prerenal state",
+     "A lower GI source distal to the ligament of Treitz",
+     "Intrinsic renal failure from acute tubular necrosis"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which transfusion strategy is recommended for a hemodynamically stable patient with an acute upper GI bleed?",
+    "ch": [
+     "A restrictive threshold, transfusing to a hemoglobin target of 7-8 g/dL",
+     "Withhold all blood products until endoscopy identifies the source",
+     "Transfuse only once the hemoglobin has fallen below 5 g/dL",
+     "A liberal threshold, transfusing to keep hemoglobin above 10 g/dL",
+     "Fresh frozen plasma routinely in place of packed RBC transfusion"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A Glasgow-Blatchford Score of 0-1 identifies which kind of patient?",
+    "ch": [
+     "A patient with the highest predicted rebleeding and mortality risk",
+     "A patient requiring prophylactic intubation before upper endoscopy",
+     "A very-low-risk patient potentially safe for outpatient management",
+     "A patient needing immediate balloon tamponade of bleeding varices",
+     "A patient with a Forrest Ia spurting ulcer requiring urgent therapy"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A cirrhotic patient with hematemesis is started on octreotide before endoscopy. Which added therapy independently reduces mortality?",
+    "ch": [
+     "Fresh frozen plasma to fully normalize the INR",
+     "Liberal transfusion to a hemoglobin above 10 g/dL",
+     "High-dose oral beta-blocker during the acute bleed",
+     "Tranexamic acid as an antifibrinolytic adjunct",
+     "Prophylactic ceftriaxone, given to every cirrhotic with a GI bleed"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Why is tranexamic acid no longer recommended in acute GI bleeding?",
+    "ch": [
+     "It raises portal pressure and provokes variceal rebleeding",
+     "It obscures endoscopic visualization of the gastric mucosa",
+     "It prolongs the QT interval the way intravenous erythromycin does",
+     "The HALT-IT trial showed no mortality benefit and more thromboembolism and seizures",
+     "It reverses the effect of proton pump inhibitors on gastric pH"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Esophageal variceal bleeding continues despite octreotide and band ligation. What is the appropriate escalation?",
+    "ch": [
+     "Balloon tamponade as a bridge, with TIPS as definitive therapy",
+     "Repeat a high-dose proton pump inhibitor infusion and observe",
+     "Epinephrine injection with thermal coagulation of the varices",
+     "Start tranexamic acid to correct an antifibrinolytic deficit",
+     "Observation with serial hemoglobin measurement every six hours"
+    ]
+   }
+  ]
+ },
+ "pancreatitis": {
+  "condition": "Acute Pancreatitis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Diagnosis of acute pancreatitis requires:",
+    "ch": [
+     "Any 2 of: characteristic pain, lipase/amylase >3x ULN, characteristic imaging",
+     "Fever plus leukocytosis",
+     "Positive blood cultures",
+     "Elevated lipase alone",
+     "Characteristic imaging alone"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Preferred laboratory test:",
+    "ch": [
+     "Lipase",
+     "Bilirubin",
+     "CRP",
+     "LDH",
+     "AST"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Preferred initial IV fluid:",
+    "ch": [
+     "D5W",
+     "Half-normal saline",
+     "Lactated Ringer's",
+     "Hypertonic saline",
+     "Albumin"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Most common etiologies:",
+    "ch": [
+     "Trauma and ERCP",
+     "Gallstones and alcohol",
+     "Autoimmune disease and steroids",
+     "Hypercalcemia and mumps",
+     "Scorpion sting and drugs"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Contrast CT is generally most useful:",
+    "ch": [
+     "Immediately",
+     "6 hours",
+     "24 hours",
+     "48-72 hours",
+     "After 2 weeks"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Prophylactic antibiotics in sterile necrosis:",
+    "ch": [
+     "Recommended for all necrosis",
+     "Only before surgery",
+     "Not recommended",
+     "Always indicated",
+     "Only in ICU"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Severe pancreatitis is defined by:",
+    "ch": [
+     "Hypocalcemia",
+     "Fever",
+     "Lipase >1000",
+     "Necrosis on CT",
+     "Persistent organ failure >48 hours"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Preferred nutrition:",
+    "ch": [
+     "Clear liquids for 2 weeks",
+     "IV dextrose only",
+     "TPN immediately",
+     "Prolonged NPO",
+     "Early enteral feeding"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which signs suggest hemorrhagic pancreatitis?",
+    "ch": [
+     "McBurney and Obturator",
+     "Kernig and Brudzinski",
+     "Murphy and Rovsing",
+     "Cullen and Grey Turner",
+     "Chvostek and Trousseau"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Gallstone pancreatitis with cholangitis requires:",
+    "ch": [
+     "Observation",
+     "Urgent ERCP",
+     "MRI only",
+     "Colonoscopy",
+     "Immediate surgery"
+    ]
+   }
+  ]
+ }
+}

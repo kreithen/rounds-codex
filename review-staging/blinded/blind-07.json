@@ -1,0 +1,922 @@
+{
+ "aki": {
+  "condition": "Acute Kidney Injury",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which finding meets the definition of acute kidney injury given in the module?",
+    "ch": [
+     "Any elevation of BUN above 20 mg/dL in a patient who has recently received intravenous contrast",
+     "Small echogenic kidneys on renal ultrasound together with a long-standing normocytic anemia",
+     "A urine albumin-to-creatinine ratio above 300 mg/g in a patient with long-standing diabetes",
+     "A rise in serum creatinine of at least 0.3 mg/dL in 48 hours, or urine output under 0.5 mL/kg/h",
+     "An eGFR below 60 mL/min/1.73m² documented on two occasions more than three months apart"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which cause of acute kidney injury is classified as postrenal?",
+    "ch": [
+     "Aminoglycoside-induced acute tubular necrosis",
+     "Bladder outlet obstruction from benign prostatic hyperplasia",
+     "Acute interstitial nephritis following a new medication",
+     "Glomerulonephritis producing red blood cell casts",
+     "Sepsis with prolonged hypotension and hypoperfusion"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Urine microscopy in a patient with acute kidney injury shows muddy-brown granular casts. Which cause does this indicate?",
+    "ch": [
+     "Glomerulonephritis",
+     "Postrenal obstruction from a ureteral stone",
+     "Prerenal azotemia from volume depletion",
+     "Acute tubular necrosis",
+     "Acute interstitial nephritis"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient taking chronic furosemide develops acute kidney injury. Why is the fractional excretion of urea preferred over the fractional excretion of sodium in this setting?",
+    "ch": [
+     "FEUrea is unaffected by diuretics, whereas diuretic-induced natriuresis makes FENa unreliable",
+     "FEUrea rises above 35% in prerenal disease and is therefore the more specific of the two tests",
+     "FENa can only be interpreted when the urine sediment shows muddy-brown granular casts",
+     "FEUrea replaces the need for a renal ultrasound to exclude obstruction in a diuretic-treated patient",
+     "FENa is valid only in postrenal obstruction and can never be applied to prerenal states"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which statement about loop diuretics in acute kidney injury reflects the module's guidance?",
+    "ch": [
+     "Furosemide should be given early to convert oliguric acute kidney injury to non-oliguric injury",
+     "Furosemide manages volume overload but does not prevent or treat acute kidney injury itself",
+     "Furosemide improves renal recovery and mortality when it is started within the first 24 hours",
+     "Furosemide is the first-line therapy for prerenal acute kidney injury caused by hypovolemia",
+     "Furosemide is contraindicated in acute kidney injury under all circumstances, including pulmonary edema"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient with acute kidney injury has a potassium of 7.1 mEq/L with peaked T waves on the ECG. Which sequence of management is correct?",
+    "ch": [
+     "Shift with insulin and dextrose, then stabilize with calcium, then remove with dialysis",
+     "Remove with a potassium binder, then shift with albuterol, then stabilize with calcium",
+     "Stabilize with calcium gluconate, then shift with insulin and albuterol, then remove with binders or dialysis",
+     "Stabilize with sodium bicarbonate, then remove with furosemide, then shift with calcium gluconate",
+     "Give calcium gluconate alone, because it reliably lowers the serum potassium within minutes"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which finding is an emergent indication for dialysis under the AEIOU mnemonic?",
+    "ch": [
+     "Intravenous contrast exposure within the previous 48 to 72 hours",
+     "A BUN-to-creatinine ratio above 20 to 1",
+     "Muddy-brown granular casts seen on urine microscopy",
+     "A fractional excretion of sodium above 2%",
+     "Uremic pericarditis with a pericardial friction rub"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which nursing assessment is the most reliable marker of fluid status in a patient with acute kidney injury?",
+    "ch": [
+     "Urine specific gravity measured at the bedside",
+     "Blood pressure recorded in both arms",
+     "Skin turgor checked once each shift",
+     "A single serum sodium drawn each morning",
+     "Daily weights taken on the same scale at the same time"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient admitted with several days of vomiting has a creatinine of 2.1 mg/dL from a baseline of 0.9, a BUN-to-creatinine ratio of 28 to 1, a FENa of 0.4%, and a bland urine sediment. What is the most appropriate initial management?",
+    "ch": [
+     "Place a urinary catheter and arrange a percutaneous nephrostomy for obstruction",
+     "Start furosemide to increase urine output and relieve the azotemia",
+     "Give intravenous isotonic crystalloid to restore renal perfusion",
+     "Arrange urgent dialysis for the rise in serum creatinine",
+     "Begin empiric high-dose corticosteroids for interstitial nephritis"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient with acute kidney injury needs a contrast-enhanced CT. Which combination best limits further kidney injury?",
+    "ch": [
+     "Isotonic fluid before and after the scan, with NSAIDs and ACE inhibitors held",
+     "A low-dose dopamine infusion during the scan for renal protection",
+     "A single dose of an aminoglycoside to cover procedural infection risk",
+     "Continuing metformin through the study to avoid rebound hyperglycemia",
+     "Prophylactic furosemide before and after the scan to maintain urine flow"
+    ]
+   }
+  ]
+ },
+ "uti": {
+  "condition": "Urinary Tract Infection",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which organism causes roughly 80% of uncomplicated urinary tract infections?",
+    "ch": [
+     "Klebsiella pneumoniae",
+     "Staphylococcus saprophyticus",
+     "Enterococcus faecalis",
+     "Proteus mirabilis",
+     "Escherichia coli"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which patient's urinary tract infection is considered complicated?",
+    "ch": [
+     "A 22-year-old woman with suprapubic pain and positive leukocyte esterase",
+     "A 40-year-old woman with dysuria who reports a sulfa allergy",
+     "A healthy 24-year-old non-pregnant woman with dysuria and urinary frequency",
+     "A 68-year-old man with dysuria and an indwelling urinary catheter",
+     "A 30-year-old woman with a second episode of simple cystitis this year"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "A symptomatic young woman has a urinalysis with positive leukocyte esterase but negative nitrites. How should this be interpreted?",
+    "ch": [
+     "It excludes urinary tract infection, because nitrites must be positive to make the diagnosis",
+     "It indicates a contaminated specimen that should be discarded and recollected",
+     "It still supports infection, since Enterococcus and Staph. saprophyticus do not reduce nitrate",
+     "It indicates asymptomatic bacteriuria, which does not require antibiotic treatment",
+     "It is diagnostic of pyelonephritis rather than of lower tract cystitis"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Why must nitrofurantoin and fosfomycin never be used to treat pyelonephritis?",
+    "ch": [
+     "They are inactivated by the alkaline urine that accompanies upper tract infection",
+     "They concentrate in urine but do not achieve adequate renal tissue or blood levels",
+     "They select for extended-spectrum beta-lactamase producing organisms within days",
+     "They cannot be given orally and require intravenous administration in the hospital",
+     "They are active only against Gram-positive uropathogens such as Enterococcus"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "In which situation should asymptomatic bacteriuria be treated?",
+    "ch": [
+     "A man with diabetes found to have pyuria on a routine urinalysis and no complaints",
+     "A patient with an ileal conduit and persistently positive surveillance urine cultures",
+     "An 80-year-old nursing-home resident with a positive urine culture and no symptoms",
+     "A patient with a chronic indwelling catheter whose urine is cloudy and malodorous",
+     "A pregnant patient with a culture-proven bacteriuria and no urinary symptoms"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "An 84-year-old is admitted with new confusion and is found to have a positive urinalysis. What does the module advise?",
+    "ch": [
+     "New confusion can be the presenting sign, but avoid the UTI reflex and look for another source",
+     "Order a CT of the abdomen and pelvis in every elderly patient found to have pyuria",
+     "Attribute the delirium to the infection and start a fluoroquinolone without further workup",
+     "Treat only if the urine culture grows more than one organism, since that confirms infection",
+     "Withhold all antibiotics until the urine culture has been finalized about 48 hours later"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "What should a nurse teach a patient who is starting phenazopyridine for dysuria?",
+    "ch": [
+     "It is an antibiotic and will eradicate the infection within about three days",
+     "It turns urine orange, stains clothing and contact lenses, and should be limited to about two days",
+     "It should be continued for the entire length of the antibiotic course for the best effect",
+     "It prevents recurrent cystitis when it is taken after sexual intercourse",
+     "It should be taken only on an empty stomach in order to prevent methemoglobinemia"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient hospitalized with pyelonephritis is still febrile with flank pain after 72 hours of appropriate intravenous antibiotics. What is the next step?",
+    "ch": [
+     "Discontinue antibiotics and repeat the urinalysis in one week as an outpatient",
+     "Continue the same regimen for another 48 hours before reassessing the patient",
+     "Switch to oral nitrofurantoin so the patient can complete an outpatient course",
+     "Image the urinary tract and reassess for abscess, obstruction, or a resistant organism",
+     "Add phenazopyridine for symptom control and plan discharge in the morning"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient with a known obstructing ureteral stone develops fever, hypotension, tachycardia, and altered mentation. What is the priority?",
+    "ch": [
+     "Oral antibiotics with outpatient urology follow-up arranged in one week",
+     "Fluoroquinolone monotherapy alone while awaiting the final urine culture",
+     "Urgent decompression of the obstructed system with intravenous antibiotics and sepsis care",
+     "Nitrofurantoin plus increased oral fluid intake to help flush the urinary tract",
+     "A repeat urinalysis in 24 hours before committing to any definitive therapy"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which antibiotic is preferred for a urinary tract infection in a pregnant patient?",
+    "ch": [
+     "Cephalexin",
+     "Phenazopyridine alone",
+     "Nitrofurantoin at term",
+     "Trimethoprim-sulfamethoxazole in the first trimester",
+     "Ciprofloxacin"
+    ]
+   }
+  ]
+ },
+ "ckd": {
+  "condition": "Chronic Kidney Disease",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement best defines chronic kidney disease?",
+    "ch": [
+     "Any single eGFR value below 90 mL/min/1.73m² measured on a routine outpatient metabolic panel",
+     "Bilateral hydronephrosis seen on renal ultrasound in a patient with a normal serum creatinine",
+     "Symptomatic uremia with fatigue, pruritus, nausea, and edema in a long-standing diabetic patient",
+     "A rise in serum creatinine of at least 0.3 mg/dL within 48 hours in a hospitalized adult patient",
+     "Abnormal kidney structure or function for more than 3 months, with eGFR under 60 or damage markers such as albuminuria"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which two conditions together account for roughly two-thirds of chronic kidney disease?",
+    "ch": [
+     "NSAID use and intravenous contrast exposure",
+     "Diabetes mellitus and hypertension",
+     "Glomerulonephritis and polycystic kidney disease",
+     "Obstructive nephropathy and reflux nephropathy",
+     "Recurrent pyelonephritis and nephrolithiasis"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "A patient has an eGFR of 38 mL/min/1.73m² and a urine albumin-to-creatinine ratio of 550 mg/g. How is this staged under KDIGO?",
+    "ch": [
+     "G5 A3",
+     "G2 A1",
+     "G3a A2",
+     "G3b A3",
+     "G4 A2"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Two weeks after starting lisinopril for CKD with albuminuria, a patient's creatinine has risen from 1.6 to 2.0 mg/dL, a 25% increase, with a potassium of 4.6 mEq/L. What should be done?",
+    "ch": [
+     "Substitute an NSAID for analgesia and recheck the creatinine in six months",
+     "Stop the lisinopril permanently and avoid all future RAAS blockade",
+     "Continue the lisinopril, because a rise of up to about 30% is expected and acceptable",
+     "Add an ARB to the regimen in order to intensify RAAS blockade",
+     "Arrange urgent dialysis in response to the rise in serum creatinine"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient started on empagliflozin for chronic kidney disease has a small drop in eGFR at the first recheck. How is this best explained?",
+    "ch": [
+     "It is an early, reversible dip reflecting the protective fall in intraglomerular pressure",
+     "It signals euglycemic diabetic ketoacidosis and requires an insulin infusion",
+     "It indicates a genital mycotic infection and requires antifungal therapy",
+     "It is early nephrotoxicity and the drug should be stopped immediately",
+     "It reflects volume depletion requiring intravenous fluid resuscitation"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "What hemoglobin target does the module give for erythropoiesis-stimulating agent therapy in chronic kidney disease?",
+    "ch": [
+     "Whatever level abolishes the need for transfusion, with no upper limit",
+     "Below 8 g/dL, transfusing only when the patient becomes symptomatic",
+     "About 10 to 11 g/dL, after iron stores have been repleted",
+     "Normalization to 13 to 14 g/dL in order to relieve fatigue",
+     "Above 12 g/dL in every patient who is receiving dialysis"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which sequence explains secondary hyperparathyroidism in CKD-mineral bone disorder?",
+    "ch": [
+     "Excess renal calcium reabsorption raises serum calcium and suppresses phosphate excretion",
+     "Phosphate retention with falling 1,25-vitamin D drives PTH upward before calcium changes",
+     "Loss of erythropoietin production stimulates parathyroid gland hyperplasia directly",
+     "Metabolic alkalosis from bicarbonate retention leaches calcium out of the skeleton",
+     "Increased 1-alpha-hydroxylation raises vitamin D and removes the need for phosphate binders"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which nursing action protects a current or future dialysis access?",
+    "ch": [
+     "Place a peripheral IV distal to the fistula for administration of antibiotics",
+     "Draw all morning laboratory samples from the fistula arm to spare the other veins",
+     "Apply the blood-pressure cuff to the fistula arm so perfusion can be monitored",
+     "Avoid cuffs, venipunctures, and IVs in that arm, and assess for a thrill and bruit",
+     "Keep the arm elevated in a sling continuously in order to reduce swelling"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which finding should prompt referral to nephrology?",
+    "ch": [
+     "A hemoglobin of 11.5 g/dL in a patient with stage G3a chronic kidney disease",
+     "Well-controlled hypertension on a single agent with a completely normal urinalysis",
+     "An eGFR of 72 mL/min/1.73m² with a urine albumin-to-creatinine ratio of 18 mg/g",
+     "A one-time creatinine of 1.3 mg/dL in a patient with no prior laboratory values",
+     "An eGFR below 30 mL/min/1.73m², a rapid decline, or persistent A3 albuminuria"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient with G4 chronic kidney disease asks what is most likely to end their life. What does the module identify as the leading cause of death in CKD?",
+    "ch": [
+     "Cardiovascular disease",
+     "Complications of dialysis access",
+     "Hyperkalemic arrhythmia during an acute illness",
+     "Renal osteodystrophy leading to hip fracture",
+     "Infection from immunosuppression after transplant"
+    ]
+   }
+  ]
+ },
+ "nephrolithiasis": {
+  "condition": "Nephrolithiasis (Kidney Stones)",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which stone type accounts for about 75% of kidney stones?",
+    "ch": [
+     "Cystine",
+     "Calcium oxalate",
+     "Calcium phosphate",
+     "Uric acid",
+     "Struvite"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which bedside observation best distinguishes renal colic from peritonitis?",
+    "ch": [
+     "The patient's pain builds gradually over several days rather than starting suddenly",
+     "The patient writhes and cannot stay still, whereas peritonitis makes a patient lie motionless",
+     "The patient reports pain that is worse with deep inspiration than with any movement",
+     "The patient has rebound tenderness, a finding that is characteristically absent in peritonitis",
+     "The patient has gross hematuria, which is equally typical of peritoneal inflammation"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which imaging study is the gold standard for confirming a suspected kidney stone?",
+    "ch": [
+     "Non-contrast helical CT of the abdomen and pelvis",
+     "Contrast-enhanced CT urography of the collecting system",
+     "Renal ultrasound with Doppler of the ureteral jets",
+     "MRI of the abdomen performed without gadolinium",
+     "Plain abdominal radiography of the kidneys, ureters, and bladder"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A pregnant patient presents with flank pain suggesting a stone. Which imaging should be obtained first?",
+    "ch": [
+     "Contrast CT urography in order to fully define the collecting system",
+     "No imaging at all, since the diagnosis is made clinically during pregnancy",
+     "Non-contrast helical CT, since it is the gold standard in all patients",
+     "Plain radiography of the kidneys, ureters, and bladder with abdominal shielding",
+     "Renal ultrasound, which is first-line in pregnancy and in children"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Why are NSAIDs preferred over opioids as first-line analgesia for renal colic?",
+    "ch": [
+     "They are safe in renal insufficiency, dehydration, and active peptic ulcer disease",
+     "They dissolve calcium oxalate stones and thereby speed spontaneous passage",
+     "They reduce ureteral wall edema and prostaglandin-mediated pain, often outperforming opioids",
+     "They relax distal ureteral smooth muscle in the same manner as tamsulosin",
+     "They alkalinize the urine and prevent further crystal nucleation in the collecting system"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "For which stone is medical expulsive therapy with tamsulosin most appropriate?",
+    "ch": [
+     "A 12 mm stone in a patient with fever and hypotension",
+     "A 3 mm stone lodged at the ureteropelvic junction",
+     "A 14 mm stone in the proximal ureter",
+     "A staghorn calculus filling the entire renal pelvis",
+     "A 7 mm stone in the distal ureter"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "What should a recurrent calcium oxalate stone former be taught about dietary calcium?",
+    "ch": [
+     "Maintain normal dietary calcium, because restriction increases oxalate absorption",
+     "Replace dietary calcium with supplements taken between meals instead of with food",
+     "Increase calcium intake only if the 24-hour urine collection shows hypocitraturia",
+     "Restrict calcium and sodium together in order to halve urinary calcium excretion",
+     "Restrict calcium strictly, since dietary calcium is the direct source of the stone"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Recurrent urinary infections with a urease-producing organism and alkaline urine most typically produce which stone?",
+    "ch": [
+     "Hereditary cystine stones",
+     "Calcium phosphate stones",
+     "Struvite staghorn calculi",
+     "Calcium oxalate stones",
+     "Radiolucent uric acid stones"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient with a 9 mm obstructing ureteral stone develops a temperature of 39.2°C with rigors. What does this require?",
+    "ch": [
+     "Immediate shockwave lithotripsy in order to fragment the obstructing stone",
+     "Tamsulosin with an NSAID to promote spontaneous passage of the stone",
+     "Increased oral fluids with outpatient re-imaging arranged in one week",
+     "Emergent decompression with a ureteral stent or percutaneous nephrostomy plus antibiotics",
+     "Intravenous antibiotics alone, adding decompression only if fever persists for 72 hours"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A 71-year-old man presents with sudden left flank pain radiating to the groin. Which diagnosis must be considered before anchoring on renal colic?",
+    "ch": [
+     "Uncomplicated cystitis with dysuria and frequency",
+     "Primary hyperparathyroidism causing hypercalciuria",
+     "Hypocitraturia identified on a 24-hour urine collection",
+     "A leaking abdominal aortic aneurysm",
+     "Acute interstitial nephritis from a new medication"
+    ]
+   }
+  ]
+ },
+ "hyperkalemia": {
+  "condition": "Hyperkalemia",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Hyperkalemia is defined as a serum potassium above which range, and why do small serum changes carry such large meaning?",
+    "ch": [
+     "Above 3.5 mEq/L; the serum value tracks total body potassium almost exactly in health and disease",
+     "Above 4.5 mEq/L; potassium is distributed evenly between the intracellular and extracellular compartments",
+     "Above 5.0-5.5 mEq/L; about 98% of body potassium is intracellular, so small serum shifts reflect large disturbances",
+     "Above 7.0 mEq/L; anything below that is graded as normal and needs no evaluation or ECG at all",
+     "Above 6.0 mEq/L; the threshold is set by the level at which the sine wave pattern appears on the ECG"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "The module groups the causes of hyperkalemia into three mechanistic buckets. Which one is the most common cause?",
+    "ch": [
+     "Decreased renal excretion of potassium",
+     "Increased dietary potassium intake alone",
+     "Transcellular shift of potassium out of cells",
+     "Pseudohyperkalemia from a hemolyzed sample",
+     "Increased gastrointestinal potassium absorption"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "A potassium returns at 6.4 mEq/L after a difficult draw with a tight tourniquet and repeated fist-clenching. The ECG is normal and the patient feels well. What should be done first?",
+    "ch": [
+     "Arrange urgent hemodialysis for a potassium in the moderate severity range",
+     "Begin a potassium binder such as patiromer and recheck the level in one week",
+     "Suspect pseudohyperkalemia and recheck a fresh, non-hemolyzed sample",
+     "Give IV calcium gluconate immediately because the level exceeds 6.0 mEq/L",
+     "Start insulin with dextrose and nebulized albuterol before rechecking anything"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Why is IV calcium gluconate the first drug given when hyperkalemia produces ECG changes?",
+    "ch": [
+     "It enhances renal potassium excretion in patients who still make urine",
+     "It binds potassium in the gut and removes it from the body quickly",
+     "It corrects the metabolic acidosis that is driving potassium out of cells",
+     "It shifts potassium into cells faster than insulin and dextrose can",
+     "It stabilizes the cardiac membrane within minutes but does not lower potassium"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "After insulin and D50 are given for hyperkalemia, which nursing action does the module make a priority?",
+    "ch": [
+     "Restrict oral fluids and record strict intake and output for 24 hours",
+     "Hold the next dose of the patient's ACE inhibitor until the ECG normalizes",
+     "Repeat the nebulized albuterol every fifteen minutes until the tremor resolves",
+     "Recheck blood glucose per protocol to catch delayed hypoglycemia",
+     "Redraw the potassium from the same site with a tourniquet left in place"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which sequence captures the three-step treatment logic the module teaches for hyperkalemia?",
+    "ch": [
+     "Shift potassium into cells, remove potassium from the body, then stabilize the membrane",
+     "Stabilize the membrane, remove potassium from the body, then shift potassium into cells",
+     "Shift potassium into cells, stabilize the membrane, then remove potassium from the body",
+     "Stabilize the membrane, shift potassium into cells, then remove potassium from the body",
+     "Remove potassium from the body, stabilize the membrane, then shift potassium into cells"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which ECG progression does the module describe as classic for worsening hyperkalemia?",
+    "ch": [
+     "ST elevation, then Q waves, then a new left bundle branch block",
+     "Peaked T waves, then flattened P and prolonged PR, then widened QRS, then a sine wave",
+     "Delta waves, then a shortened PR interval, then supraventricular tachycardia",
+     "Diffuse ST depression, then T wave inversion, then electrical alternans",
+     "Prolonged QT interval, then U waves, then torsades de pointes"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A dialysis patient with chronic hyperkalemia needs an agent for ongoing outpatient control so that guideline-directed RAAS therapy can continue. Which option matches the module?",
+    "ch": [
+     "Patiromer or sodium zirconium cyclosilicate for subacute and chronic control",
+     "Sodium polystyrene sulfonate, named by the module as the modern agent of choice",
+     "Nebulized albuterol used at home each morning as the sole potassium therapy",
+     "Intravenous calcium gluconate given whenever muscle weakness develops at home",
+     "Sodium bicarbonate as a first-line long-term potassium-lowering medication"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient with digoxin toxicity has hyperkalemia with ECG changes. What does the module say about giving calcium?",
+    "ch": [
+     "Calcium is entirely safe here and is the only agent that will actually lower the potassium",
+     "Withhold all therapy until the digoxin level returns, since digoxin lowers potassium anyway",
+     "Substitute Kayexalate for calcium as the emergency membrane-stabilizing agent of choice",
+     "Give a rapid calcium chloride push peripherally, since digoxin blunts the calcium effect",
+     "Use extreme caution or avoid it, giving it as a slow infusion because of the stone heart concern"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which medication combination does the module call a classic setup for impaired potassium excretion, especially with underlying CKD?",
+    "ch": [
+     "Patiromer plus sodium zirconium cyclosilicate plus a low-potassium diet",
+     "ACE inhibitor or ARB plus a potassium-sparing diuretic plus an NSAID",
+     "Digoxin-specific antibody fragments plus IV calcium plus hemodialysis",
+     "Loop diuretic plus insulin with dextrose plus nebulized albuterol",
+     "Thiazide diuretic plus a beta-2 agonist plus oral sodium bicarbonate"
+    ]
+   }
+  ]
+ },
+ "bph": {
+  "condition": "Benign Prostatic Hyperplasia",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement best describes the pathophysiology of benign prostatic hyperplasia?",
+    "ch": [
+     "Denervation of the detrusor muscle causing failure to empty without any prostatic enlargement",
+     "Malignant transformation of peripheral zone glands driven by falling testosterone with age",
+     "Non-malignant hyperplasia of the prostatic transition zone driven by DHT, plus alpha-1 smooth muscle tone",
+     "Autoimmune destruction of prostatic stroma leading to fibrosis and a shrunken, scarred gland",
+     "Bacterial infection of the prostate producing swelling and secondary bladder outlet obstruction"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Weak stream, hesitancy, straining, and terminal dribbling belong to which symptom category in the module's classification?",
+    "ch": [
+     "Voiding or obstructive symptoms",
+     "Inflammatory or infectious symptoms",
+     "Storage or irritative symptoms",
+     "Systemic or constitutional symptoms",
+     "Neurogenic or reflex bladder symptoms"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which digital rectal exam finding is typical of uncomplicated BPH?",
+    "ch": [
+     "An exquisitely tender, boggy gland with fever and chills",
+     "A markedly asymmetric gland fixed to the rectal wall",
+     "A small, atrophic gland with an obliterated median sulcus",
+     "A smooth, firm, symmetrically enlarged, rubbery gland",
+     "A hard nodule in one lobe with surrounding induration"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which set of investigations matches the module's initial evaluation of a man with bothersome LUTS?",
+    "ch": [
+     "Transrectal ultrasound and urodynamic studies in every patient at first presentation",
+     "Prostate biopsy and pelvic MRI before any medical therapy is started for symptoms",
+     "Cystoscopy and retrograde urethrogram as the standard first-line obstruction assessment",
+     "Serum testosterone and dihydrotestosterone levels to confirm the hormonal mechanism",
+     "AUA Symptom Index/IPSS, digital rectal exam, urinalysis, and post-void residual"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A man with moderate LUTS and a 25 mL prostate wants relief as quickly as possible. Which therapy does the module support?",
+    "ch": [
+     "Saw palmetto, which the module cites as effective in randomized trials",
+     "An antimuscarinic such as oxybutynin as first-line outlet obstruction therapy",
+     "Finasteride, because it shrinks the gland within a few days of starting",
+     "Combination dutasteride and tamsulosin as the fastest available option",
+     "An alpha-1 blocker such as tamsulosin, which relieves symptoms within days"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A man has taken dutasteride for a year and his PSA is 1.4 ng/mL. How should this value be interpreted?",
+    "ch": [
+     "PSA is unaffected by 5-ARIs and can be read at face value in this patient",
+     "PSA becomes uninterpretable on a 5-ARI and should simply never be measured",
+     "5-ARIs lower PSA roughly by half, so double it to about 2.8 ng/mL",
+     "The value proves prostate cancer, since any detectable PSA on therapy is abnormal",
+     "5-ARIs raise PSA about twofold, so the true value is roughly 0.7 ng/mL"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which counseling point does the module tie specifically to tamsulosin before cataract surgery?",
+    "ch": [
+     "The drug must be stopped two weeks beforehand to allow the prostate to shrink",
+     "The eye surgeon must be told, because of intraoperative floppy iris syndrome",
+     "The drug doubles the measured PSA and will confound preoperative screening",
+     "Women of childbearing age must not handle the crushed or broken tablets",
+     "The drug is contraindicated with nitrates and can cause severe hypotension"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A man with known BPH has a tense, painful suprapubic bladder and has not voided for ten hours. What is the nursing priority, and what should be anticipated afterward?",
+    "ch": [
+     "Withhold catheterization and arrange an outpatient uroflowmetry study this week",
+     "Prompt catheterization, then watch for post-obstructive diuresis with I&O and electrolytes",
+     "Encourage oral fluids and timed voiding, then reassess the bladder in the morning",
+     "Give an over-the-counter antihistamine for comfort and repeat the bladder scan later",
+     "Start finasteride and expect retention to resolve as the gland gradually shrinks"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Before adding solifenacin for persistent urgency and frequency in a man treated for BPH, what does the module say to do?",
+    "ch": [
+     "Stop the alpha-blocker first, because the two classes cannot be combined at all",
+     "Obtain a transrectal ultrasound to confirm the gland is under 30 mL in volume",
+     "Order urodynamic testing in every patient before any storage-symptom therapy",
+     "Check the post-void residual first, because antimuscarinics risk urinary retention",
+     "Double the measured PSA to account for the antimuscarinic effect on screening"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which situation matches the module's threshold for referring a BPH patient for a procedure such as TURP, UroLift, or Rezum?",
+    "ch": [
+     "Refractory symptoms or complications: retention, recurrent UTI, stones, hematuria, renal impairment",
+     "Any man over 70, since histologic BPH is present in most men by that age",
+     "A man whose PSA fell by half after starting a 5-alpha-reductase inhibitor",
+     "Any patient whose IPSS is above zero at the first clinic visit",
+     "A man who has taken tamsulosin for one week without complete relief"
+    ]
+   }
+  ]
+ },
+ "hyponatremia": {
+  "condition": "Hyponatremia",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Hyponatremia is best understood as which kind of disorder?",
+    "ch": [
+     "A disorder of water balance, with free water retained relative to sodium and usually ADH-mediated",
+     "A pure deficit of dietary salt intake that resolves with salt tablets alone",
+     "A disorder of potassium handling that secondarily lowers the measured sodium",
+     "A laboratory artifact in nearly all cases, requiring no further investigation",
+     "A primary failure of the kidney to reabsorb sodium in the proximal tubule"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "A patient with a glucose of 600 mg/dL has a measured sodium of 128 mEq/L. How does the module classify and handle this?",
+    "ch": [
+     "Pseudohyponatremia from paraproteins, best confirmed with a lipid panel",
+     "Hypertonic hyponatremia; correct the sodium by about 2 mEq/L per 100 mg/dL of glucose above 100",
+     "Euvolemic hyponatremia that meets the criteria for SIADH by definition",
+     "Hypovolemic hyponatremia requiring 0.9% normal saline for volume repletion",
+     "True hypotonic hyponatremia requiring immediate 3% hypertonic saline"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which three-step sequence does the module teach for working up hyponatremia?",
+    "ch": [
+     "TSH, then cortisol, then vaptan therapy begun on the first hospital day",
+     "Serum osmolality, then volume status, then urine osmolality and urine sodium",
+     "Daily weights, then intake and output, then a trial of hypertonic saline",
+     "Urine sodium, then serum potassium, then a formal water deprivation test",
+     "Serum sodium, then head CT, then empiric fluid restriction for every patient"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A euvolemic patient has a serum osmolality of 260 mOsm/kg, a urine osmolality of 480 mOsm/kg, and a urine sodium of 55 mEq/L, with normal thyroid, adrenal, and renal function and no diuretic use. What does this pattern indicate?",
+    "ch": [
+     "Beer potomania",
+     "Hypovolemic hyponatremia",
+     "Pseudohyponatremia",
+     "SIADH",
+     "Primary polydipsia"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "What correction limit does the module set for raising the serum sodium, and why?",
+    "ch": [
+     "No limit at all, provided the patient's neurologic symptoms are steadily improving",
+     "Correction to a normal sodium of 140 mEq/L within the first six hours of treatment",
+     "A fall of 6-8 mEq/L in 24 hours, since the danger lies in the sodium being too high",
+     "At least 12 mEq/L in 24 hours, to relieve cerebral edema as quickly as possible",
+     "About 4-6 mEq/L in the first hours and under 8 mEq/L per 24 hours, to avoid osmotic demyelination"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Several days after a chronic hyponatremia was corrected, a patient develops dysarthria, dysphagia, and quadriparesis. What does the module say this represents?",
+    "ch": [
+     "Recurrent hyponatremia from inadequate fluid restriction after discharge",
+     "Cerebral edema because the sodium was raised far too slowly to help",
+     "Osmotic demyelination syndrome, also called central pontine myelinolysis",
+     "A vaptan-induced hepatotoxicity reaction requiring liver transplantation",
+     "An expected transient effect of hypertonic saline that resolves within hours"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which treatment does the module pair with hypovolemic hyponatremia, and what is the mechanism of benefit?",
+    "ch": [
+     "Tolvaptan, which blocks V2 receptors and is first-line for volume depletion",
+     "Fluid restriction to under 1000 mL per day, which is first-line in this subtype",
+     "Oral urea, which promotes osmotic water excretion in the depleted patient",
+     "Desmopressin with D5W, which clamps ADH and repletes the circulation",
+     "0.9% normal saline, because restoring volume shuts off ADH and sodium self-corrects"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient with a recent subarachnoid hemorrhage is hyponatremic with a high urine sodium but is clearly hypovolemic. How does the module resolve this?",
+    "ch": [
+     "It is beer potomania; the urine osmolality will be under 100 mOsm/kg",
+     "It is SIADH; begin fluid restriction to under 1000 mL per day immediately",
+     "It is cerebral salt wasting; volume status separates it from SIADH and it is treated with salt and fluids",
+     "It is pseudohyponatremia; recheck after sending lipids and serum protein levels",
+     "It is hypertonic hyponatremia; correct the sodium for the measured glucose first"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which of the following does the module identify as a classic drug cause of hyponatremia?",
+    "ch": [
+     "Thiazide diuretics, which impair urinary dilution — along with SSRIs and carbamazepine",
+     "Oral urea, the leading iatrogenic cause of a falling serum sodium",
+     "Loop diuretics, which impair urinary dilution more than any other class",
+     "Nebulized albuterol, through a direct action on the collecting duct",
+     "High-intensity statins, through a described effect on free-water clearance"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "During active correction, a nurse notices the serum sodium has jumped far more than expected over a few hours, and the patient seems more alert. What does the module direct the nurse to do?",
+    "ch": [
+     "Lift the fluid restriction and allow the patient free access to oral water",
+     "Increase the hypertonic saline rate while the patient is responding so well",
+     "Withhold the next serum sodium draw until morning to reduce needle sticks",
+     "Report it immediately as a red flag for osmotic demyelination, even though the patient looks better",
+     "Document the improvement and continue the hypertonic saline at the ordered rate"
+    ]
+   }
+  ]
+ },
+ "stroke": {
+  "condition": "Ischemic Stroke",
+  "questions": [
+   {
+    "n": 1,
+    "q": "What is the ischemic penumbra, and why does it matter in acute stroke?",
+    "ch": [
+     "The watershed zone between two arterial territories, seen only in global hypoperfusion",
+     "Ischemic but still viable tissue around the infarct core — the target of reperfusion therapy",
+     "The rim of hemorrhagic transformation seen after thrombolysis in a completed infarct",
+     "Tissue already infarcted beyond salvage, which defines the size of the final deficit",
+     "The area of vasogenic edema that appears three to five days after a large infarct"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "What is the specific job of the immediate non-contrast head CT in suspected acute ischemic stroke?",
+    "ch": [
+     "To measure the NIHSS objectively and replace the bedside neurologic examination",
+     "To identify a large-vessel occlusion so that thrombectomy can be planned promptly",
+     "To define the ischemic core and penumbra before an extended-window decision",
+     "To exclude hemorrhage before thrombolytics are given",
+     "To confirm the infarct, since early ischemia is conspicuous on CT within minutes"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Why does the module prefer BE-FAST over FAST for rapid field and bedside stroke screening?",
+    "ch": [
+     "It records the last known well time, which FAST deliberately leaves out",
+     "It substitutes a fingerstick glucose for the neurologic screening examination",
+     "It adds a blood pressure threshold that determines thrombolysis eligibility",
+     "The added Balance and Eyes items catch posterior-circulation strokes",
+     "It replaces the NIHSS as the definitive severity score used in the hospital"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which pair of time windows does the module give for acute reperfusion in ischemic stroke?",
+    "ch": [
+     "IV thrombolysis within 4.5 hours; thrombectomy up to 24 hours for LVO with favorable perfusion imaging",
+     "IV thrombolysis within 12 hours; thrombectomy only within that same 12 hours",
+     "IV thrombolysis at any time; thrombectomy only after aspirin has been given",
+     "IV thrombolysis up to 24 hours; thrombectomy up to 4.5 hours after onset",
+     "IV thrombolysis up to 3 hours; thrombectomy up to 6 hours in all patients"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "What blood pressure thresholds does the module attach to thrombolysis?",
+    "ch": [
+     "No threshold before, but below 185/110 for the following week",
+     "Below 220/120 before and below 200/110 after thrombolysis",
+     "Below 140/90 before and below 130/80 after thrombolysis",
+     "Below 160/100 before, with no target specified afterward at all",
+     "Below 185/110 before and below 180/105 after thrombolysis"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "When does the module say aspirin should be started after IV thrombolysis?",
+    "ch": [
+     "After 21 days, once dual antiplatelet therapy has been completed in full",
+     "After 24 hours, once repeat imaging has confirmed there is no hemorrhage",
+     "Immediately, together with the thrombolytic bolus, to prevent re-occlusion",
+     "Within one hour of the infusion finishing, once the NIHSS has improved",
+     "Never, because thrombolysed patients go straight to long-term anticoagulation"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which nursing action does the module tie to preventing a leading complication after stroke?",
+    "ch": [
+     "Allow permissive hyperthermia, since fever is protective after infarction",
+     "Maintain a blood glucose above 200 mg/dL to fuel the ischemic penumbra",
+     "Screen the swallow and keep the patient NPO until the screen is passed",
+     "Encourage early oral hydration to reduce the risk of hemoconcentration",
+     "Keep the head of the bed flat to maximize cerebral perfusion pressure"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Six hours after alteplase, a patient develops a sudden severe headache, vomiting, and a falling level of consciousness. What is the concern and the immediate action?",
+    "ch": [
+     "Hemorrhagic conversion; stop the thrombolytic and obtain an emergent CT",
+     "Recurrent embolism; start therapeutic anticoagulation without imaging",
+     "Expected post-thrombolysis fatigue; recheck the NIHSS in the morning",
+     "Malignant MCA edema; proceed directly to decompressive hemicraniectomy",
+     "Hypoglycemia mimic; give aspirin and repeat the fingerstick glucose"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient's stroke workup shows atrial fibrillation on telemetry. Which secondary prevention strategy does the module tie to this mechanism?",
+    "ch": [
+     "Long-term dual antiplatelet therapy with aspirin plus clopidogrel indefinitely",
+     "Carotid endarterectomy followed by antiplatelet therapy and a high-intensity statin",
+     "Anticoagulation with a DOAC or warfarin, timed according to infarct size",
+     "Aggressive risk-factor control alone, as used for lacunar small-vessel disease",
+     "Permissive hypertension maintained indefinitely to preserve collateral flow"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which statement reflects the module's impress-the-attending points on acute stroke care?",
+    "ch": [
+     "The clock alone should decide late-window therapy, since perfusion imaging is unreliable",
+     "Cryptogenic stroke should default to antiplatelet therapy without further rhythm monitoring",
+     "Statins should be started only when the baseline LDL is elevated above target",
+     "Alteplase should always be chosen over tenecteplase, especially before transfer",
+     "Tenecteplase is a single-bolus alternative to alteplase, and door-to-needle should be under 60 minutes"
+    ]
+   }
+  ]
+ }
+}

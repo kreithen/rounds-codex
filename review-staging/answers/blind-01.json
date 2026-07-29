@@ -1,0 +1,98 @@
+{
+ "chf": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "acs": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ },
+ "afib": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "htn": {
+  "1": {"answer": "C", "confidence": "high", "concern": "TWO options meet the ACC/AHA 2017 definition of stage 1 hypertension. Stage 1 is SBP 130-139 OR DBP 80-89 — the criteria are disjunctive. Option C (132/84) qualifies on systolic, but option E (118/82) qualifies on DIASTOLIC (82 is within 80-89) and is therefore also stage 1 hypertension, not 'normal' or 'elevated'. The module's own text writes the range as '130-139/80-89', which reads as conjunctive and probably misled the author. Either replace option E with a diastolic below 80 (e.g. 118/76) or reword the stem."},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ },
+ "aortic-stenosis": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high", "concern": "No units anywhere in the stem or options. Peak aortic velocity for severe AS is >=4.0 m/s, but a bare '>=4.0' is uninterpretable and a student could read the numbers as mean gradient (where 4.0 mmHg is trivial) or valve area (where >=4.0 cm2 is normal). Add 'm/s' to the stem."},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "medium", "concern": "The premise is dated. TAVR is now approved and guideline-endorsed across all surgical-risk tiers, including low-risk patients, and this module's own text says so twice ('TAVR increasingly used across surgical-risk categories', 'the shift toward TAVR across surgical-risk tiers'). So the question as framed contradicts its own module. E is still the least-wrong answer because age <65 favours SAVR for lifetime valve durability, and option D (needs CABG) clearly favours SAVR — but the discriminator is age, not surgical risk. Recommend rewriting as 'older patient with limited life expectancy' or dropping the item."},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "copd": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high", "concern": "Minor overgeneralisation in the stem. 88-92% is the target when titrating supplemental oxygen in a COPD patient at risk of hypercapnia (classically during an exacerbation); it is not a ceiling to be imposed on a stable COPD patient who sits at 95% on room air. The module states it flatly as the COPD target, so C is the intended and defensible answer, but the stem would be safer as 'receiving supplemental oxygen'."},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "asthma": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "cap": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ }
+}

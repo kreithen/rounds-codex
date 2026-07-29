@@ -1,0 +1,922 @@
+{
+ "shock": {
+  "condition": "Shock (Types & Management)",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement best defines shock?",
+    "ch": [
+     "Failure of the lungs to oxygenate blood despite supplemental oxygen",
+     "Circulatory failure causing inadequate tissue perfusion and oxygen delivery",
+     "A serum lactate above 2 mmol/L regardless of the clinical picture",
+     "A systolic blood pressure below 90 mmHg on two consecutive readings",
+     "Any sustained heart rate above 120 beats per minute with cool skin"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which list correctly names the four physiologic categories of shock?",
+    "ch": [
+     "Hemorrhagic, septic, neurogenic, and anaphylactic",
+     "Warm, cold, early, and late",
+     "Preload, afterload, contractility, and rate",
+     "Compensated, uncompensated, refractory, and irreversible",
+     "Hypovolemic, cardiogenic, distributive, and obstructive"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which laboratory value is the key marker of tissue hypoperfusion and is trended to judge whether resuscitation is adequate?",
+    "ch": [
+     "Serum lactate",
+     "Serum sodium",
+     "Total bilirubin",
+     "Serum amylase",
+     "Hemoglobin A1c"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A hypotensive patient has bounding pulses, flushed warm skin, and flash capillary refill. Which category does this suggest?",
+    "ch": [
+     "Cardiogenic shock — cold shock from a failing pump",
+     "Hypovolemic shock — cold shock from lost preload",
+     "Obstructive shock — cold shock from tamponade or tension pneumothorax",
+     "Neurogenic shock is excluded by warm skin and requires cool mottled extremities",
+     "Distributive shock — warm shock from vasodilation and low systemic vascular resistance"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which vasopressor is first-line in septic and most undifferentiated shock, and to what target?",
+    "ch": [
+     "Phenylephrine, titrated to a systolic pressure above 140",
+     "Dobutamine, titrated to a heart rate under 100",
+     "Vasopressin as monotherapy, titrated upward to effect",
+     "Norepinephrine, titrated to a MAP of at least 65",
+     "Dopamine, titrated to a urine output above 2 mL/kg/hr"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A patient is hypotensive and bradycardic after a cervical spinal cord injury. Which type of shock is this?",
+    "ch": [
+     "Neurogenic shock from loss of sympathetic tone",
+     "Septic shock from early bacteremia",
+     "Hypovolemic shock from occult hemorrhage",
+     "Cardiogenic shock from myocardial contusion",
+     "Obstructive shock from tension pneumothorax"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "By the Sepsis-3 definition taught in the module, septic shock requires which of the following?",
+    "ch": [
+     "Hypotension that responds to a single crystalloid fluid bolus",
+     "Antibiotics given more than one hour after sepsis recognition",
+     "Two SIRS criteria plus a positive blood culture result",
+     "Vasopressors to keep MAP at least 65 AND lactate above 2 despite adequate fluids",
+     "A qSOFA score of 3 with any documented source of infection"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A hypotensive patient has distended neck veins with clear lung fields. What does this point to, and what does it need?",
+    "ch": [
+     "Anaphylactic shock needing intramuscular epinephrine in the thigh",
+     "Compensated shock needing only observation and serial lactate levels",
+     "Obstructive shock — likely tamponade — needing a mechanical fix such as pericardiocentesis",
+     "Hypovolemic shock needing 30 mL/kg of balanced crystalloid",
+     "Distributive shock needing norepinephrine as the sole therapy"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "In cardiogenic shock with poor contractility and an adequate MAP, which approach fits the module's teaching?",
+    "ch": [
+     "Rely on permissive hypotension until the coronary lesion is treated",
+     "Add dobutamine for inotropy and avoid flooding the failing left ventricle",
+     "Give repeated 30 mL/kg crystalloid boluses until the lactate clears",
+     "Use vasopressin alone to raise systemic vascular resistance",
+     "Withhold all vasoactive drugs until an echocardiogram is completed"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A trauma patient is in hemorrhagic shock 90 minutes after injury. Which resuscitation strategy does the module endorse?",
+    "ch": [
+     "Large-volume crystalloid alone until blood products can be arranged",
+     "Vasopressors first to raise the MAP before any transfusion is started",
+     "Balanced 1:1:1 blood products with TXA and hemorrhage control",
+     "Active warming withheld to reduce the patient's metabolic demand",
+     "Immediate stress-dose hydrocortisone as the initial intervention"
+    ]
+   }
+  ]
+ },
+ "acute-abdomen": {
+  "condition": "Acute Abdomen",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement best characterizes an acute abdomen?",
+    "ch": [
+     "A clinical syndrome of rapid-onset pain with peritoneal signs — a presentation, not a diagnosis",
+     "A specific diagnosis that is established once the CT imaging returns",
+     "Any abdominal pain that has lasted longer than four to six weeks",
+     "A synonym for appendicitis in a patient with right lower quadrant pain",
+     "A benign condition managed with analgesia and outpatient follow-up"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "A patient describes dull periumbilical pain that later becomes sharp and localized to the right lower quadrant. What explains this shift?",
+    "ch": [
+     "Referred pain from the diaphragm irritating the phrenic nerve",
+     "Colicky pain from obstruction of a hollow viscus resolving spontaneously",
+     "Visceral pain becoming parietal as the parietal peritoneum is irritated",
+     "Ischemic pain out of proportion to a benign abdominal examination",
+     "Hemorrhagic pain from a ruptured ectopic pregnancy tracking downward"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which test must be obtained in every woman of childbearing age with acute abdominal pain?",
+    "ch": [
+     "A serum lipase level",
+     "An upright chest x-ray",
+     "A urinalysis with culture",
+     "An Alvarado score calculation",
+     "A urine or serum hCG"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient with severe abdominal pain has not yet been seen by surgery. What does the module teach about giving opioid analgesia?",
+    "ch": [
+     "Give an opioid only after the CT abdomen and pelvis has been completed",
+     "Withhold opioids until the surgeon has personally examined the abdomen",
+     "Withhold opioids because analgesia increases the rate of missed diagnoses",
+     "Give only oral acetaminophen so that the peritoneal signs stay intact",
+     "Give opioid analgesia — it does not mask the exam or cause missed diagnoses"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which imaging choice fits the module's teaching for a pregnant patient with right upper quadrant pain?",
+    "ch": [
+     "CT abdomen and pelvis with contrast as the first study",
+     "Right upper quadrant ultrasound, the modality of choice in pregnancy",
+     "Upright chest x-ray to look for free air under the diaphragm",
+     "CT angiography of the mesenteric vessels without oral contrast",
+     "No imaging at all, relying on serial abdominal examinations"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "An 82-year-old with atrial fibrillation has severe abdominal pain but a soft, minimally tender abdomen. What is the leading concern?",
+    "ch": [
+     "Functional abdominal pain, given the reassuring physical examination",
+     "A perforated peptic ulcer producing free air under the diaphragm",
+     "Small bowel obstruction requiring nasogastric decompression only",
+     "Mesenteric ischemia — pain out of proportion to exam until proven otherwise",
+     "Uncomplicated diverticulitis that can be treated as an outpatient"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A hypotensive, tachycardic patient with abdominal pain and a pulsatile mass arrives in the emergency department. What is the next step?",
+    "ch": [
+     "CT abdomen and pelvis with contrast before any consultation",
+     "Observation with serial abdominal examinations over six hours",
+     "Straight to the operating room or interventional suite, bypassing CT",
+     "Oral contrast administration to improve the quality of the scan",
+     "Discharge with outpatient vascular follow-up once the pain improves"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which nursing action is correct while an undiagnosed acute abdomen is being worked up?",
+    "ch": [
+     "Keep the patient NPO and never apply heat to the abdomen",
+     "Apply a heating pad to the abdomen for comfort between exams",
+     "Offer clear liquids as tolerated while awaiting the surgeon",
+     "Position the patient flat with both legs fully extended",
+     "Defer vital sign checks until the imaging results return"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient reports intermittent cramping pain that comes in waves, with distension and vomiting. What does the pain character suggest?",
+    "ch": [
+     "Inflammation of a solid organ such as the pancreas",
+     "Ischemia of the bowel from an arterial embolus",
+     "Hemorrhage into the peritoneal cavity from a ruptured vessel",
+     "Obstruction of a hollow viscus, which produces colicky pain",
+     "Perforation of a viscus with free air under the diaphragm"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Using embryologic pain referral, where does a patient localize early midgut pain?",
+    "ch": [
+     "Epigastric, because that is where foregut structures refer",
+     "Periumbilical, because that is where the midgut refers",
+     "Suprapubic, because that is where hindgut structures refer",
+     "Right shoulder, because of diaphragmatic irritation",
+     "Flank and groin, because of ureteral distension"
+    ]
+   }
+  ]
+ },
+ "dka-peds": {
+  "condition": "Pediatric Fever & Sepsis Workup",
+  "questions": [
+   {
+    "n": 1,
+    "q": "How is fever defined in the pediatric workup taught in this module?",
+    "ch": [
+     "A core temperature of at least 37.0°C (98.6°F)",
+     "Any axillary temperature above 37.5°C (99.5°F)",
+     "A core temperature of at least 39.5°C (103.1°F)",
+     "Any temperature rise that responds to acetaminophen",
+     "A core temperature of at least 38.0°C (100.4°F)"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "A 3-week-old has a rectal temperature of 38.2°C and looks completely well. What is the correct approach?",
+    "ch": [
+     "Full sepsis workup and admission regardless of how well the baby appears",
+     "Urinalysis alone, since a well appearance excludes bacteremia",
+     "Viral panel only, since occult bacteremia is now rare after vaccination",
+     "Observe at home with return precautions and a follow-up call",
+     "Give weight-based acetaminophen and reassess the appearance in one hour"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which is the most common serious bacterial infection in a young febrile infant?",
+    "ch": [
+     "Occult pneumococcal bacteremia",
+     "Lobar pneumonia",
+     "Septic arthritis",
+     "Urinary tract infection",
+     "Bacterial meningitis"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Why is ceftriaxone avoided as empiric therapy in a febrile neonate?",
+    "ch": [
+     "It has no gram-negative activity during the newborn period",
+     "It causes biliary sludging and displaces bilirubin, risking kernicterus",
+     "It cannot cross the blood-brain barrier at any dose",
+     "It is inactivated by breast milk and is therefore ineffective",
+     "It requires trough and AUC monitoring that is impractical"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which antipyretic teaching point is correct for a febrile child?",
+    "ch": [
+     "Ibuprofen is safe at any age, including the first month of life",
+     "A normal temperature after medication excludes serious infection",
+     "Never give aspirin — Reye syndrome; the exception is Kawasaki disease",
+     "Antipyretics should be withheld so the fever curve stays interpretable",
+     "Aspirin is preferred because it lowers the temperature fastest"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which finding is the LATE sign in pediatric shock?",
+    "ch": [
+     "Hypotension",
+     "Tachycardia",
+     "Prolonged capillary refill",
+     "Cool, mottled extremities",
+     "Irritability or altered mentation"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "During fluid resuscitation of a child in septic shock, what must the nurse do after EACH bolus?",
+    "ch": [
+     "Draw a repeat blood culture before continuing the resuscitation",
+     "Give a dose of antipyretic to keep the temperature normalized",
+     "Double the volume of the next bolus to speed up resuscitation",
+     "Wait 30 minutes before any further assessment is performed",
+     "Reassess for hepatomegaly, rales, or worsening work of breathing"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which framework does the module cite for defining pediatric sepsis?",
+    "ch": [
+     "The Alvarado score applied to the febrile child",
+     "The Glasgow Coma Scale threshold for organ dysfunction",
+     "A qSOFA score of at least 2, validated in children",
+     "The Phoenix Sepsis Score (2024), with a score of at least 2 defining sepsis",
+     "SIRS criteria, which remain the standard in children"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A well-appearing 40-day-old has a fever with no source. Which approach does the module endorse?",
+    "ch": [
+     "Automatic lumbar puncture and admission for every infant of this age",
+     "Apply a validated risk tool using procalcitonin, CRP, ANC, and urinalysis",
+     "Discharge without any testing, because the infant appears well",
+     "Start empiric acyclovir and vancomycin before any results return",
+     "Repeat the temperature in 24 hours and test only if fever recurs"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A febrile toddler has a rapidly spreading non-blanching petechial rash. What is the priority?",
+    "ch": [
+     "Give an antipyretic and reassess the rash in one hour",
+     "Order a viral panel and await the results before treating",
+     "Treat as meningococcemia — do not delay antibiotics",
+     "Apply a topical steroid and arrange outpatient follow-up",
+     "Obtain a dermatology consult before starting any therapy"
+    ]
+   }
+  ]
+ },
+ "hypernatremia": {
+  "condition": "Hypernatremia",
+  "questions": [
+   {
+    "n": 1,
+    "q": "A hospitalized patient has a serum sodium of 152 mEq/L. This value is best understood as which of the following?",
+    "ch": [
+     "A laboratory artifact of hyperlipidemia that requires no free-water replacement at all",
+     "A deficit of free water relative to sodium, producing a hyperosmolar state that dehydrates cells",
+     "An absolute excess of total body sodium in every case, independent of the water balance",
+     "A hypo-osmolar state that drives water into cells and swells neurons dangerously",
+     "An expected finding whenever the thirst mechanism and water access are both intact"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Sustained hypernatremia occurs almost exclusively in infants, the elderly, intubated patients, and those with altered mental status. Why?",
+    "ch": [
+     "These groups ingest far more dietary sodium than other hospitalized patients do",
+     "Their kidneys cannot excrete sodium at all, so sodium accumulates in the plasma",
+     "Each group has an inherited defect of the renal sodium-potassium ATPase pump",
+     "Antidiuretic hormone is congenitally absent in all of these patient groups",
+     "The thirst mechanism is so protective that hypernatremia persists only when a patient cannot drink"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which nursing assessment does the module identify as the hallmark to monitor in a patient with hypernatremia?",
+    "ch": [
+     "Hourly deep tendon reflex checks, the earliest indicator of a rising serum sodium",
+     "Frequent neurologic checks, because CNS irritability progressing to lethargy is the hallmark",
+     "Serial Chvostek and Trousseau signs, which grade the severity of the water deficit",
+     "Continuous pulse oximetry, because hypernatremia principally impairs gas exchange",
+     "Daily fundoscopic examination, to detect papilledema before mental status changes"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A hypernatremic patient has a urine osmolality of 750 mOsm/kg. What does this indicate?",
+    "ch": [
+     "An osmotic diuresis, which characteristically produces isosthenuric urine",
+     "A primary sodium gain from hypertonic saline or sodium bicarbonate infusion",
+     "An appropriate renal response to water loss, pointing to extrarenal or insensible losses",
+     "Complete central diabetes insipidus, with essentially absent circulating ADH",
+     "Complete nephrogenic diabetes insipidus, with full renal resistance to ADH"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which expression does the module give for estimating the free water deficit in hypernatremia?",
+    "ch": [
+     "0.9 x body weight in kilograms, divided by the measured serum osmolality",
+     "Measured calcium plus 0.8 x (4.0 - serum albumin), correcting for protein binding",
+     "Urine osmolality divided by serum osmolality, multiplied by total body weight",
+     "TBW x [(serum Na / 140) - 1], with TBW about 0.6 x weight in men and 0.5 x weight in women",
+     "Serum sodium minus 140, multiplied by the height in centimeters and then halved"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "What correction rate does the module specify for hypernatremia, and what is the danger of exceeding it?",
+    "ch": [
+     "As rapidly as tolerated, since the whole danger comes from the elevated sodium itself",
+     "About 10 mEq/L per hour, aiming to normalize the sodium within a single shift",
+     "No rate limit is needed as long as the fluid given is isotonic rather than hypotonic",
+     "No faster than about 10 mEq/L per 24 hours, because faster correction risks cerebral edema",
+     "Slowly, in order to prevent osmotic demyelination, the risk of overcorrected hypernatremia"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A bipolar patient on long-term lithium has polyuria, dilute urine, and a sodium of 149 mEq/L. Which pharmacologic step does the module describe for this form of diabetes insipidus?",
+    "ch": [
+     "A thiazide diuretic with a low-solute diet, which paradoxically reduces urine output",
+     "High-dose desmopressin, which fully reverses renal ADH resistance in nephrogenic DI",
+     "Hypertonic saline, to raise serum osmolality and stimulate endogenous ADH release",
+     "A loop diuretic alone, to increase free-water delivery to the collecting duct",
+     "Fluid restriction, allowing the renal concentrating defect to correct on its own"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "What is the purpose of a water deprivation test with a desmopressin (DDAVP) challenge?",
+    "ch": [
+     "To measure the free water deficit directly rather than estimating it from body weight",
+     "To separate hypovolemic from hypervolemic hypernatremia by the change in body weight",
+     "To screen for mineralocorticoid excess as a hypervolemic cause of sodium gain",
+     "To confirm that the serum sodium exceeds 145 mEq/L before free-water replacement begins",
+     "To distinguish central DI, where urine concentrates after DDAVP, from nephrogenic DI, which does not respond"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A nursing-home resident with several days of diarrhea arrives with a sodium of 168 mEq/L, blood pressure 82/50, and marked tachycardia. What is the first fluid step?",
+    "ch": [
+     "Furosemide with free water, the regimen for sodium-overload hypernatremia",
+     "Fluid restriction with hourly sodium checks until the blood pressure normalizes",
+     "Isotonic 0.9% normal saline, to restore perfusion before switching to hypotonic fluid",
+     "D5W at a rate that corrects the entire calculated free-water deficit within six hours",
+     "Desmopressin, since diarrheal hypernatremia reflects deficient ADH release"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Why is rapid correction specifically dangerous when hypernatremia has been present for more than 48 hours?",
+    "ch": [
+     "The brain has generated idiogenic osmoles, so a rapid osmolality drop pulls water into brain cells",
+     "Neurons permanently lose sodium-potassium ATPase activity after 48 hours of hyperosmolality",
+     "Chronic hypernatremia depletes cerebral glucose, so dextrose-free fluid worsens the deficit",
+     "The kidney can no longer excrete free water, so all administered fluid is retained",
+     "Rapid correction shifts potassium into cells, producing life-threatening hypokalemia"
+    ]
+   }
+  ]
+ },
+ "hypokalemia": {
+  "condition": "Hypokalemia",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement about serum potassium in hypokalemia is most accurate?",
+    "ch": [
+     "Hypokalemia begins below 5.0 mEq/L, the level at which muscle weakness reliably appears",
+     "Potassium is chiefly extracellular, so the serum value mirrors the whole-body deficit",
+     "A level below 3.5 mEq/L reflects only a small share of total-body stores, since potassium is mainly intracellular",
+     "Because potassium is protein-bound, the level must be corrected for albumin before treatment",
+     "The serum level tracks total-body potassium precisely and stays reliable during acid-base shifts"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which ECG pattern does the module describe as the classic finding in hypokalemia?",
+    "ch": [
+     "Prominent U waves with flattened T waves and ST-segment depression",
+     "Delta waves with a short PR interval on the resting tracing",
+     "Diffuse ST elevation with PR-segment depression in most leads",
+     "Peaked, tented T waves with a progressively widening QRS complex",
+     "A shortened QT interval with bradyarrhythmias and heart block"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Using the module's grading of severity, which serum potassium constitutes severe hypokalemia and a medical emergency?",
+    "ch": [
+     "3.0 to 3.4 mEq/L, the band the module grades as mild",
+     "2.5 to 2.9 mEq/L, the band the module grades as moderate",
+     "Under 3.5 mEq/L, since any value below the reference range counts as severe",
+     "Under 2.5 mEq/L, or any level that is symptomatic",
+     "Under 1.7 mEq/L, the threshold the module gives for this electrolyte"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient's potassium will not rise despite repeated doses of potassium chloride. Which laboratory value explains this and must be corrected?",
+    "ch": [
+     "Serum chloride, because potassium can only be replaced as the chloride salt in alkalosis",
+     "Serum magnesium, because low magnesium drives renal potassium wasting and makes repletion futile",
+     "Serum albumin, because potassium is protein-bound and the measured level understates stores",
+     "Serum calcium, because hypocalcemia blocks potassium entry into the intracellular space",
+     "Serum phosphate, which must be normal before any oral potassium salt can be absorbed"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which statement about intravenous potassium chloride administration is correct?",
+    "ch": [
+     "It is preferred over oral repletion in all mild hypokalemia to shorten hospital stay",
+     "It must never be given by IV push; dilute it and infuse by pump with continuous cardiac monitoring",
+     "IV push is acceptable once the potassium falls below 2.5 mEq/L in a symptomatic patient",
+     "It may be given undiluted through any peripheral line provided the site is well secured",
+     "Cardiac monitoring is unnecessary, since potassium repletion cannot itself cause arrhythmia"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Why is hypokalemia particularly dangerous in a patient taking digoxin?",
+    "ch": [
+     "Digoxin shifts potassium out of cells, producing a rebound hyperkalemia during repletion",
+     "Hypokalemia blunts digoxin's effect, so the dose must be doubled during repletion",
+     "Digoxin binds potassium in the gut, so oral repletion becomes entirely ineffective",
+     "Hypokalemia accelerates renal digoxin clearance and causes loss of rate control",
+     "Hypokalemia potentiates digoxin toxicity, raising the risk of dangerous arrhythmias"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "How does the urine potassium help localize the cause of hypokalemia?",
+    "ch": [
+     "Urine potassium applies only to refeeding syndrome and has no other clinical use",
+     "A high urine potassium establishes poor dietary intake as the mechanism of the deficit",
+     "Urine potassium distinguishes metabolic alkalosis from metabolic acidosis in the same patient",
+     "A high urine potassium indicates renal wasting; a low value points to GI loss or a transcellular shift",
+     "A high urine potassium confirms a transcellular shift and a low value confirms diuretic use"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Hypokalemia accompanied by metabolic alkalosis most suggests which group of causes?",
+    "ch": [
+     "Vomiting, diuretic use, or mineralocorticoid excess",
+     "Renal tubular acidosis or ongoing diarrheal losses",
+     "Insulin administration or beta-agonist therapy alone",
+     "Poor dietary intake in an otherwise healthy adult",
+     "Refeeding of a malnourished patient after prolonged starvation"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient treated for hyperkalemia with insulin now has a potassium of 3.1 mEq/L. What does this mechanism imply about total-body potassium?",
+    "ch": [
+     "Total-body potassium is severely depleted and needs a full calculated repletion dose",
+     "Total-body potassium cannot be judged until the serum magnesium exceeds 2.5 mg/dL",
+     "Total-body potassium is high, because insulin blocks renal potassium excretion completely",
+     "Total-body potassium is depleted through renal wasting, the mechanism insulin triggers",
+     "Total-body potassium is normal, because the low level reflects a shift of potassium into cells"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A malnourished patient with alcohol use disorder is started on nutritional support and by day two has a potassium of 2.7 mEq/L. Which syndrome is this, and what else should be checked?",
+    "ch": [
+     "Hyperaldosteronism — obtain an aldosterone-to-renin ratio before replacing any potassium",
+     "Laxative abuse — no laboratory follow-up is needed once laxatives are discontinued",
+     "Refeeding syndrome — also check phosphate and magnesium, which fall alongside potassium",
+     "A pure transcellular shift needing no repletion, since total-body potassium must be normal",
+     "Renal tubular acidosis — check an arterial pH, which will show a metabolic alkalosis"
+    ]
+   }
+  ]
+ },
+ "hypocalcemia": {
+  "condition": "Hypocalcemia",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which measurement does the module identify as the most accurate assessment of calcium status, especially when albumin is abnormal?",
+    "ch": [
+     "Ionized (free) calcium, the physiologically active fraction of serum calcium",
+     "Serum alkaline phosphatase, as a surrogate marker of calcium turnover",
+     "The calcium-phosphate product calculated from the basic metabolic panel",
+     "Total serum calcium reported without any correction for the albumin level",
+     "Urinary calcium excretion measured over a 24-hour collection period"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which pair of examination findings does the module describe as the classic signs of tetany?",
+    "ch": [
+     "Chvostek sign, a facial twitch on tapping the facial nerve, and Trousseau sign, carpopedal spasm after cuff inflation",
+     "Homans sign and a palpable cord, elicited by dorsiflexion of the affected ankle",
+     "Murphy sign and rebound tenderness, elicited by palpating the right upper quadrant",
+     "Grey Turner and Cullen signs, seen as flank and periumbilical bruising",
+     "Kernig and Brudzinski signs, elicited by flexing the neck and then the hip"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What ECG change does hypocalcemia produce, and what rhythm risk does it create?",
+    "ch": [
+     "Diffuse ST elevation, with a risk of progression to cardiac tamponade",
+     "A shortened QT interval, with a risk of bradyarrhythmias and heart block",
+     "Prominent U waves, with a risk of progression to ventricular fibrillation",
+     "A widened QRS with peaked T waves, with a risk of asystole",
+     "A prolonged QT interval, with a risk of torsades de pointes"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A patient with hypoalbuminemia has a total calcium of 7.8 mg/dL. How is the corrected calcium calculated?",
+    "ch": [
+     "Measured calcium + 1.5 x serum phosphate, accounting for the calcium-phosphate product",
+     "Measured calcium + 0.8 x (4.0 - serum albumin), which adjusts for protein binding",
+     "Measured calcium - 0.8 x (4.0 - serum albumin), subtracting the bound fraction",
+     "Measured calcium multiplied by (serum albumin / 4.0), scaling to the albumin level",
+     "Total body water x [(measured calcium / 140) - 1], the deficit-style calculation"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which laboratory pattern points to hypoparathyroidism rather than to vitamin D deficiency or chronic kidney disease?",
+    "ch": [
+     "Normal ionized calcium with a low albumin and a low measured total calcium",
+     "Low calcium with a high PTH and a low phosphate",
+     "Low calcium with a high PTH and a high phosphate",
+     "Low calcium with an inappropriately low PTH",
+     "High calcium with a suppressed PTH and an elevated PTHrP"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Hypocalcemia is not responding to repeated calcium replacement. Which value should be checked, and why?",
+    "ch": [
+     "Serum bicarbonate, because acidosis binds ionized calcium tightly to albumin",
+     "Serum creatine kinase, because rhabdomyolysis releases calcium into the urine",
+     "Serum magnesium, because low magnesium blocks both PTH release and PTH action",
+     "Serum sodium, because hyponatremia dilutes the measured total calcium",
+     "Serum potassium, because hypokalemia prevents intestinal calcium absorption"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Why is calcium gluconate generally preferred over calcium chloride for peripheral intravenous repletion?",
+    "ch": [
+     "Gluconate can be given without cardiac monitoring in patients taking digoxin",
+     "Gluconate acts by stimulating PTH release rather than by delivering calcium directly",
+     "Gluconate contains roughly three times the elemental calcium that chloride contains",
+     "Gluconate may be safely mixed with sodium bicarbonate, whereas chloride precipitates",
+     "Gluconate is less irritating to veins, while chloride is sclerosing and causes necrosis on extravasation"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "One day after total thyroidectomy a patient develops stridor and perioral numbness. What is the nursing priority?",
+    "ch": [
+     "Start oral calcium carbonate with food and reassess the patient in the morning",
+     "Restrict dietary phosphate and recheck the total calcium on the next routine draw",
+     "Secure the airway and give emergent IV calcium, since stridor signals impending laryngospasm",
+     "Place the patient in Trendelenburg position and give a rapid isotonic saline bolus",
+     "Obtain a 24-hour urine calcium collection before administering any calcium"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Why does massive transfusion cause hypocalcemia?",
+    "ch": [
+     "Stored blood is rich in phosphate, which drives PTH oversecretion and bone uptake",
+     "Transfusion dilutes serum albumin and thereby lowers the ionized calcium fraction",
+     "Transfused blood delivers magnesium that directly suppresses PTH secretion",
+     "Citrate in the transfused blood products chelates circulating calcium",
+     "Transfused red cells consume calcium as a cofactor for their own metabolism"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "An anxious patient hyperventilating in the emergency department develops perioral tingling and carpopedal spasm, but the total calcium is normal. What explains this?",
+    "ch": [
+     "Hyperventilation causes true calcium loss through an acute renal calcium diuresis",
+     "Alkalosis increases calcium binding to albumin, dropping the ionized calcium despite a normal total",
+     "Anxiety alone produces Chvostek and Trousseau signs without any change in calcium",
+     "The patient must have occult hypoalbuminemia that renders the total calcium falsely normal",
+     "The total calcium was drawn before the parathyroid glands had time to respond"
+    ]
+   }
+  ]
+ },
+ "hypercalcemia": {
+  "condition": "Hypercalcemia",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which symptom cluster corresponds to the classic hypercalcemia mnemonic?",
+    "ch": [
+     "Tetany, tingling, laryngospasm, seizures, and a prolonged QT interval",
+     "Tremor, hyperreflexia, torsades de pointes, and refractory hypokalemia",
+     "Flat T waves, prominent U waves, ileus, and flaccid muscle paralysis",
+     "Kidney stones, bone pain, abdominal groans, polyuria, and altered mood",
+     "Thirst, dry mucous membranes, and dilute urine with a rising serum sodium"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which two diagnoses account for roughly 90% of hypercalcemia?",
+    "ch": [
+     "Primary hyperparathyroidism, usually mild, and malignancy, usually severe",
+     "Granulomatous sarcoidosis and vitamin D supplement toxicity",
+     "Prolonged immobilization and milk-alkali syndrome from heavy antacid use",
+     "Familial hypocalciuric hypercalcemia and lymphoma-derived 1,25-vitamin D",
+     "Thiazide diuretic use and long-term lithium therapy for bipolar disorder"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "What does the ECG classically show in severe hypercalcemia?",
+    "ch": [
+     "A prolonged QT interval, with a predisposition to torsades de pointes",
+     "Prominent U waves with flattened T waves and ST-segment depression",
+     "Peaked T waves with progressive widening of the QRS complex",
+     "Electrical alternans with uniformly low-voltage QRS complexes",
+     "A shortened QT interval, the mirror image of hypocalcemia's prolonged QT"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "What does the module identify as the pivotal branch point in the hypercalcemia workup?",
+    "ch": [
+     "The ECG QT interval, which grades severity and dictates the treatment sequence",
+     "The serum albumin, which determines whether the hypercalcemia is real at all",
+     "The intact PTH, splitting PTH-dependent from PTH-independent causes",
+     "The serum phosphate, which separates PTH-driven from vitamin D-driven disease",
+     "The 24-hour urine calcium, the only way to identify hypercalcemia of malignancy"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "By corrected calcium, which value does the module grade as severe hypercalcemia?",
+    "ch": [
+     "Above 18 mg/dL, the threshold given for considering hemodialysis",
+     "Below 12 mg/dL, the band the module grades as mild",
+     "12 to 14 mg/dL, the band the module grades as moderate",
+     "Above 10.5 mg/dL, the upper limit of the normal total calcium",
+     "Above 14 mg/dL, with symptoms tracking the level and the rate of rise"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Why are calcitonin and a bisphosphonate given together in severe hypercalcemia?",
+    "ch": [
+     "Bisphosphonates act within minutes, so calcitonin covers the later phase of therapy",
+     "Calcitonin lowers calcium within hours but fizzles by 48 hours, while the bisphosphonate lasts",
+     "The pair is needed to prevent the rebound hypercalcemia that isotonic saline causes",
+     "Calcitonin is used only because bisphosphonates are contraindicated in malignancy",
+     "Calcitonin blocks intestinal absorption while the bisphosphonate blocks renal reabsorption"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "In which setting are glucocorticoids an effective calcium-lowering therapy?",
+    "ch": [
+     "Vitamin D-mediated causes such as granulomatous disease, lymphoma, and vitamin D toxicity",
+     "PTH-driven primary hyperparathyroidism, where they suppress parathyroid hormone release",
+     "PTHrP-mediated humoral hypercalcemia from a squamous cell malignancy",
+     "Osteolytic metastatic bone destruction, which they directly inhibit at the osteoclast",
+     "Familial hypocalciuric hypercalcemia, restoring normal urinary calcium excretion"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient has a high calcium, a non-suppressed PTH, and a low urine calcium. Which test settles the diagnosis, and why does it matter?",
+    "ch": [
+     "A suppressed PTHrP level, which identifies FHH and prompts a malignancy workup",
+     "A calcium/creatinine clearance ratio below 0.01, which identifies FHH and spares a parathyroidectomy",
+     "A sestamibi scan, which separates them, though both conditions require parathyroidectomy",
+     "A 1,25-vitamin D level above normal, identifying FHH and indicating glucocorticoids",
+     "A neck ultrasound showing a single adenoma, which confirms FHH and mandates urgent surgery"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "After a patient receives zoledronic acid or denosumab for hypercalcemia of malignancy, which complication should nursing monitor for?",
+    "ch": [
+     "Hypernatremia from the sodium load carried in the infusion",
+     "Hypomagnesemia presenting as a loss of deep tendon reflexes",
+     "Hypocalcemia, assessed with Trousseau and Chvostek signs",
+     "Hyperkalemia, requiring all potassium-sparing diuretics to be held",
+     "Rebound hypercalcemia within the first six hours of the infusion"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A hospitalized patient with lung cancer, weight loss, and a corrected calcium of 15.2 mg/dL is obtunded and has heart failure with an ejection fraction of 25%. What consideration does the module raise about the cornerstone of acute therapy?",
+    "ch": [
+     "Saline should be replaced by a thiazide diuretic to accelerate urinary calcium excretion",
+     "Saline alone is definitive here, so no osteoclast-directed therapy is needed",
+     "Saline must be withheld until the intact PTH result returns from the laboratory",
+     "Saline must be given cautiously with close monitoring for fluid overload, with dialysis if it cannot be given safely",
+     "Saline is contraindicated in malignancy-related hypercalcemia, so glucocorticoids are used instead"
+    ]
+   }
+  ]
+ },
+ "hypomagnesemia": {
+  "condition": "Hypomagnesemia",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement correctly gives the defining threshold for hypomagnesemia and magnesium's principal cellular role?",
+    "ch": [
+     "Below 8.5 mg/dL; magnesium circulates bound to albumin and must be albumin-corrected",
+     "Below 1.7 mg/dL; magnesium acts chiefly as an extracellular buffer of hydrogen ions",
+     "Below 145 mEq/L; magnesium's main role is stimulating parathyroid hormone secretion",
+     "Below 3.5 mEq/L; magnesium is the principal extracellular cation setting plasma osmolality",
+     "Below 1.7 mg/dL; magnesium is an intracellular cation and cofactor for ATP-dependent enzymes and the Na-K-ATPase pump"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Why does a normal serum magnesium fail to exclude magnesium depletion?",
+    "ch": [
+     "Only about 1% of total body magnesium is in the serum compartment",
+     "Serum magnesium rises transiently after any intravenous fluid bolus is given",
+     "Laboratory assays for magnesium carry a very wide analytic imprecision",
+     "Serum magnesium is reported in mg/dL rather than in mmol/L, so the units mislead",
+     "Magnesium is protein-bound, so the total value overstates the free fraction"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which set of ECG changes does the module attribute to hypomagnesemia?",
+    "ch": [
+     "Diffuse ST elevation with reciprocal PR-segment depression",
+     "Electrical alternans with low-voltage QRS complexes in all leads",
+     "A prolonged QT, a widened QRS, PR prolongation, and T-wave flattening",
+     "A shortened QT with bradyarrhythmias and progressive heart block",
+     "Peaked T waves with a sine-wave pattern and loss of the P waves"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "What mechanism explains why magnesium depletion produces hypokalemia that is refractory to potassium replacement?",
+    "ch": [
+     "Magnesium depletion stimulates aldosterone release, which retains potassium in the kidney",
+     "Intracellular magnesium normally blocks ROMK channels, so depletion unblocks them and wastes potassium",
+     "Low magnesium chelates administered potassium chloride within the infusion tubing itself",
+     "Magnesium depletion inhibits intestinal absorption of potassium from food and supplements",
+     "Low magnesium shifts potassium from the extracellular fluid into the intracellular space"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "How does hypomagnesemia produce hypocalcemia?",
+    "ch": [
+     "It binds ionized calcium directly in the plasma, lowering the free calcium fraction",
+     "It blocks intestinal calcium absorption by inactivating the vitamin D receptor",
+     "It impairs PTH secretion and end-organ responsiveness, causing functional hypoparathyroidism",
+     "It causes renal calcium wasting by inhibiting the tubular calcium-sensing receptor",
+     "It drives calcium into bone by stimulating osteoblast activity across the skeleton"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A monitored patient develops torsades de pointes and the serum magnesium returns at 2.0 mg/dL. What does the module advise?",
+    "ch": [
+     "Give IV magnesium sulfate anyway, since it is first-line for torsades even with a normal level",
+     "Withhold magnesium, because giving it at a normal level causes immediate respiratory arrest",
+     "Give oral magnesium oxide instead, since the intravenous route adds nothing here",
+     "Give IV calcium gluconate first, as it is the drug of choice for torsades de pointes",
+     "Correct the potassium alone, since magnesium is indicated only below 1.7 mg/dL"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "During an IV magnesium sulfate infusion, which finding is the early warning of toxicity, and what should be kept available?",
+    "ch": [
+     "New prominent U waves, with oral potassium chloride kept at the bedside",
+     "A widening QRS complex, with sodium bicarbonate available to stabilize the membrane",
+     "Hyperreflexia with clonus, with a benzodiazepine available for seizure control",
+     "A rising blood pressure, with a loop diuretic available to force magnesium excretion",
+     "Loss of deep tendon reflexes, with IV calcium gluconate available as the antidote"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient on chronic omeprazole has hypomagnesemia that does not improve on oral supplements. What does the module recommend?",
+    "ch": [
+     "Continue an indefinite IV magnesium infusion while leaving the PPI in place",
+     "Add a loop diuretic, which increases magnesium retention in the distal tubule",
+     "Accept the level as a benign laboratory artifact of acid suppression therapy",
+     "Discontinue the PPI, since PPI-induced hypomagnesemia often will not correct until the drug stops",
+     "Double the oral magnesium oxide dose while continuing the PPI unchanged"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "How is renal magnesium wasting distinguished from gastrointestinal magnesium loss?",
+    "ch": [
+     "An ECG QT interval measurement, prolonged only in gastrointestinal magnesium loss",
+     "A 24-hour urine magnesium or fractional excretion of magnesium, high in renal wasting",
+     "A serum magnesium drawn before and after a single intravenous magnesium loading dose",
+     "The ratio of serum magnesium to serum calcium, which is low only in renal wasting",
+     "Deep tendon reflex testing, preserved in GI loss and absent in renal wasting"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A malnourished patient admitted for alcohol withdrawal is started on nutrition; by day three the phosphate, potassium, and magnesium are all low. Which explanation fits best?",
+    "ch": [
+     "Aminoglycoside nephrotoxicity, the only cause that can explain renal magnesium loss",
+     "Pancreatitis-driven redistribution alone, which does not affect potassium or phosphate",
+     "Chronic proton pump inhibitor therapy, which explains all three abnormalities at once",
+     "Refeeding syndrome, whose triad is hypophosphatemia, hypokalemia, and hypomagnesemia",
+     "Gitelman syndrome, a tubular disorder that declares itself after a period of fasting"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,1017 @@
+{
+ "cardiomyopathy": {
+  "condition": "Cardiomyopathy",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement best defines cardiomyopathy?",
+    "ch": [
+     "A myocardial disorder causing structural, mechanical, or electrical dysfunction not explained solely by coronary, valve, hypertensive, or congenital disease",
+     "A congenital malformation of a heart valve",
+     "A transient rhythm disturbance without myocardial disease",
+     "Any myocardial dysfunction caused by obstructive coronary artery disease"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which finding most strongly supports a dilated cardiomyopathy phenotype?",
+    "ch": [
+     "Unexplained asymmetric septal hypertrophy with dynamic outflow obstruction",
+     "Small ventricular cavities with marked biatrial enlargement and preserved ejection fraction",
+     "Isolated valve calcification with normal ventricular function",
+     "Left-ventricular or biventricular dilation with reduced systolic function"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which combination is most characteristic of hypertrophic cardiomyopathy?",
+    "ch": [
+     "Thin ventricular walls, severe chamber dilation, and isolated right-sided valve disease",
+     "Normal myocardium with an isolated pericardial effusion",
+     "Small atria with normal diastolic filling and low arrhythmic risk",
+     "Unexplained ventricular hypertrophy, impaired relaxation, and possible dynamic left-ventricular outflow obstruction"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which pattern best describes restrictive cardiomyopathy early in its course?",
+    "ch": [
+     "Isolated enlargement of the ascending aorta",
+     "Transient ventricular dysfunction after emotional stress only",
+     "Markedly dilated ventricles with severe systolic dysfunction in every case",
+     "Normal or small ventricles, impaired filling, biatrial enlargement, and potentially preserved ejection fraction"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which feature is most typical of arrhythmogenic cardiomyopathy?",
+    "ch": [
+     "Reversible pericardial inflammation without myocardial injury",
+     "Ventricular scar or fibrofatty disease with ventricular arrhythmias that may precede heart failure",
+     "Purely atrial disease without ventricular involvement",
+     "A fixed aortic-valve obstruction"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which cause of ventricular dysfunction is often at least partially reversible when the underlying problem is corrected?",
+    "ch": [
+     "A fixed congenital absence of the pericardium",
+     "Long-standing calcific aortic stenosis without intervention",
+     "An inherited sarcomeric variant in every affected patient",
+     "Persistent rapid tachyarrhythmia causing tachycardia-mediated cardiomyopathy"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "In obstructive hypertrophic cardiomyopathy, which maneuver commonly makes the systolic murmur louder?",
+    "ch": [
+     "Squatting",
+     "Passive leg elevation",
+     "Standing suddenly or performing the Valsalva maneuver",
+     "Increasing venous return with fluid loading"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "What is the usual first-line imaging test when cardiomyopathy is suspected?",
+    "ch": [
+     "Coronary angiography as the only initial test",
+     "Transthoracic echocardiography",
+     "Positron-emission tomography for every patient",
+     "Endomyocardial biopsy for every patient"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "What is a major reason to obtain cardiac magnetic resonance imaging in cardiomyopathy?",
+    "ch": [
+     "To replace the clinical history and pedigree",
+     "To characterize myocardial tissue, scar, edema, infiltration, and anatomy",
+     "To diagnose every inherited variant without genetic testing",
+     "To measure blood pressure more accurately"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "An older adult has increased ventricular wall thickness and suspected cardiac amyloidosis. Which sequence is most appropriate before using bone-avid tracer scintigraphy to support ATTR amyloidosis?",
+    "ch": [
+     "Serum free light chains plus serum and urine immunofixation; proceed to scintigraphy if no monoclonal protein is detected",
+     "Exercise ECG followed by chest radiography",
+     "Start disease-specific treatment without defining the amyloid type",
+     "Bone-avid tracer scintigraphy first, with no laboratory testing"
+    ]
+   },
+   {
+    "n": 11,
+    "q": "Which group represents the four foundational medication classes for chronic HFrEF when tolerated?",
+    "ch": [
+     "ARNI/ACE inhibitor/ARB, evidence-based beta-blocker, mineralocorticoid receptor antagonist, and SGLT2 inhibitor",
+     "Loop diuretic, aspirin, statin, and calcium supplement",
+     "Nitrate, digoxin, anticoagulant, and antiarrhythmic for every patient",
+     "Antibiotic, corticosteroid, colchicine, and NSAID"
+    ]
+   },
+   {
+    "n": 12,
+    "q": "A patient with hypertrophic cardiomyopathy develops atrial fibrillation. Which statement is most accurate?",
+    "ch": [
+     "Anticoagulation is generally indicated regardless of the CHA2DS2-VASc score, unless contraindicated",
+     "Anticoagulation is never used because HCM is not thromboembolic",
+     "Anticoagulation is considered only after a second stroke",
+     "A normal ejection fraction eliminates thromboembolic risk"
+    ]
+   },
+   {
+    "n": 13,
+    "q": "Which findings may occur in cardiomyopathy? Select all that apply.",
+    "ch": [
+     "Dyspnea or orthopnea",
+     "Elevated jugular venous pressure or peripheral edema",
+     "Palpitations, presyncope, or syncope",
+     "A localized skin rash as the defining cardiac manifestation"
+    ],
+    "selectAll": true
+   },
+   {
+    "n": 14,
+    "q": "Which findings should trigger urgent evaluation in a patient with known or suspected cardiomyopathy? Select all that apply.",
+    "ch": [
+     "Exertional syncope",
+     "Sustained ventricular tachycardia or cardiac arrest",
+     "Acute pulmonary edema, hypotension, or shock",
+     "Stable mild fatigue unchanged for months"
+    ],
+    "selectAll": true
+   },
+   {
+    "n": 15,
+    "q": "Which cardiomyopathy forms or causes may improve substantially when the trigger is removed or treated? Select all that apply.",
+    "ch": [
+     "Tachycardia-mediated cardiomyopathy after effective rate or rhythm control",
+     "Toxic or therapy-related cardiomyopathy after exposure recognition and appropriate management",
+     "Stress-related Takotsubo syndrome",
+     "Peripartum cardiomyopathy in some patients with pregnancy-aware heart-failure care",
+     "Uncomplicated hypertension without a myocardial phenotype"
+    ],
+    "selectAll": true
+   },
+   {
+    "n": 16,
+    "q": "Which actions belong in the evaluation of possible inherited cardiomyopathy? Select all that apply.",
+    "ch": [
+     "Obtain a three-generation family pedigree",
+     "Use genetic counseling and testing when inherited disease is suspected",
+     "Screen first-degree relatives according to phenotype, age, and family context",
+     "Wait for relatives to become symptomatic before discussing screening"
+    ],
+    "selectAll": true
+   },
+   {
+    "n": 17,
+    "q": "Case: A 22-year-old with HCM has no symptoms and asks about exercise. Which counseling is most consistent with current guidance?",
+    "ch": [
+     "Avoid all physical activity permanently",
+     "Healthy recreational exercise is encouraged; rigorous competitive training should be individualized through shared decision-making and periodic expert reevaluation",
+     "Competitive exercise is automatically safe without risk assessment",
+     "Exercise advice is unrelated to HCM phenotype or arrhythmic risk"
+    ]
+   },
+   {
+    "n": 18,
+    "q": "Case: A 76-year-old has exertional dyspnea, increased ventricular wall thickness, biatrial enlargement, and ECG voltage that appears low relative to wall thickness. Which process should be strongly considered?",
+    "ch": [
+     "Uncomplicated essential hypertension only",
+     "A normal age-related finding requiring no further evaluation",
+     "Cardiac amyloidosis causing an infiltrative/restrictive phenotype",
+     "Isolated acute pericarditis"
+    ]
+   },
+   {
+    "n": 19,
+    "q": "Case: A patient develops new dilated cardiomyopathy after anthracycline exposure. Which interpretation is most appropriate?",
+    "ch": [
+     "The diagnosis must be HCM because the patient received cancer therapy",
+     "Family screening replaces assessment of the treatment exposure",
+     "Therapy-related myocardial injury is a plausible cause and the exposure history should guide evaluation and management",
+     "The exposure is irrelevant once ventricular dilation is visible"
+    ]
+   },
+   {
+    "n": 20,
+    "q": "Case: A patient with symptomatic obstructive HCM remains limited despite an appropriate first-line nonvasodilating beta-blocker. What is the best next general strategy?",
+    "ch": [
+     "Treat the patient as uncomplicated HFrEF without reassessing obstruction",
+     "Stop all therapy and observe indefinitely",
+     "Refer for specialty-directed escalation, which may include a cardiac myosin inhibitor or other therapy and consideration of expert septal reduction when refractory",
+     "Use large, unmonitored preload reductions to increase the obstruction"
+    ]
+   }
+  ]
+ },
+ "pad": {
+  "condition": "Peripheral Arterial Disease",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which statement best characterizes peripheral arterial disease (PAD)?",
+    "ch": [
+     "Lymphatic obstruction producing non-pitting limb swelling with thickened overlying skin",
+     "Atherosclerotic narrowing of the limb arteries causing exertional claudication and marking systemic cardiovascular risk",
+     "Venous valve incompetence producing dependent edema and stasis pigmentation of the calf",
+     "Inflammatory small-vessel vasculitis confined to the digital arteries of the hands",
+     "Acute thrombosis of the deep calf veins presenting with unilateral swelling and tenderness"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which resting ankle-brachial index (ABI) value is diagnostic of peripheral arterial disease?",
+    "ch": [
+     "≤0.90",
+     "0.91–0.99",
+     "1.00–1.09",
+     "1.10–1.39",
+     "≥1.40"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which set of findings makes up the '6 Ps' of acute limb ischemia?",
+    "ch": [
+     "Pain, pruritus, purpura, pallor, pitting edema, pulsatility",
+     "Pallor, palpitations, pyrexia, paralysis, petechiae, pain",
+     "Paresthesia, pyuria, pallor, pain, photophobia, pulselessness",
+     "Pain, pallor, polyuria, pulselessness, pruritus, paresis",
+     "Pain, pallor, pulselessness, paresthesia, paralysis, poikilothermia"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A man with long-standing diabetes and chronic kidney disease has classic calf claudication, but his resting ABI is 1.48. What is the best next step?",
+    "ch": [
+     "Proceed directly to surgical bypass of the femoropopliteal segment",
+     "Obtain CT angiography of the lower extremities as a screening test",
+     "Toe-brachial index, because medial calcification makes the ankle vessels non-compressible",
+     "Repeat the resting ABI in one week and accept the result if it is unchanged",
+     "Reassure him that an ABI above 1.40 excludes peripheral arterial disease"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which agent is the first-line symptomatic drug to increase pain-free walking distance in claudication, yet is contraindicated in heart failure?",
+    "ch": [
+     "Warfarin, a vitamin K antagonist",
+     "Lisinopril, an ACE inhibitor",
+     "Cilostazol, a phosphodiesterase-3 inhibitor",
+     "Low-dose aspirin, an antiplatelet agent",
+     "Atorvastatin, a high-intensity statin"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "A 64-year-old smoker reports cramping buttock and hip pain with walking, erectile dysfunction, and absent femoral pulses. Where is the lesion?",
+    "ch": [
+     "Infrapopliteal tibial disease",
+     "Isolated dorsalis pedis occlusion",
+     "Subclavian artery stenosis",
+     "Aortoiliac disease — Leriche syndrome",
+     "Femoropopliteal disease"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which treatment for intermittent claudication is a Class I, guideline first-line recommendation that improves walking distance as much as many drugs?",
+    "ch": [
+     "Chronic warfarin anticoagulation targeting an INR of 2 to 3",
+     "Graduated compression stockings worn during all waking hours",
+     "Elevating both legs above heart level for an hour each day",
+     "Supervised exercise therapy — a structured walking program",
+     "Strict bed rest until the leg pain resolves completely"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient with known PAD now wakes at night with foot pain that improves when he hangs the foot off the side of the bed. What does this indicate?",
+    "ch": [
+     "Critical limb-threatening ischemia with rest pain, needing urgent vascular referral",
+     "Simple nocturnal leg cramps requiring only stretching and better hydration",
+     "Improving collateral circulation and a favorable response to a walking program",
+     "Deep vein thrombosis of the calf, best confirmed with duplex ultrasound",
+     "Neurogenic pseudoclaudication arising from lumbar spinal stenosis"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A 70-year-old has leg pain with walking that is relieved only by sitting or bending forward; his pedal pulses and ABI are normal. What is the most likely explanation?",
+    "ch": [
+     "Atheroembolism causing blue toe syndrome, with mottled toes and intact proximal pulses",
+     "Neurogenic pseudoclaudication from spinal stenosis, relieved by flexion rather than by rest alone",
+     "Aortoiliac Leriche disease, which typically abolishes the femoral pulses and lowers the ABI",
+     "Critical limb-threatening ischemia, which causes rest pain and ulceration rather than exertional pain",
+     "Acute limb ischemia, which presents abruptly with the 6 Ps including pulselessness and pallor"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which statement best reflects the prognosis of symptomatic PAD and the lipid goal that follows from it?",
+    "ch": [
+     "PAD risk is confined to the limb, so the lipid target is the same as for the general population",
+     "Amputation is the leading cause of death in PAD, so a statin adds little beyond exercise therapy",
+     "Statins should be avoided in PAD because myalgias limit walking distance in claudication",
+     "Lipid lowering is indicated only after revascularization has failed to relieve the symptoms",
+     "PAD is a coronary heart disease risk equivalent — most patients die of MI or stroke — so a high-intensity statin targeting LDL below 70 mg/dL is recommended"
+    ]
+   }
+  ]
+ },
+ "dvt": {
+  "condition": "Deep Vein Thrombosis",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which veins are most commonly involved in clinically significant lower-extremity deep vein thrombosis?",
+    "ch": [
+     "Small saphenous vein only",
+     "Dorsal venous arch",
+     "Great saphenous vein only",
+     "Posterior tibial and peroneal veins only",
+     "Femoral, popliteal, and iliac veins"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Virchow's triad consists of which three major contributors to venous thrombosis?",
+    "ch": [
+     "Platelet dysfunction, anemia, and dehydration",
+     "Trauma, edema, and hypoxia",
+     "Infection, vasospasm, and hypertension",
+     "Hypercoagulability, venous stasis, and endothelial injury",
+     "Smoking, obesity, and diabetes"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which symptom is most commonly associated with acute lower-extremity DVT?",
+    "ch": [
+     "Unilateral leg swelling and pain",
+     "Severe abdominal pain",
+     "Hemoptysis without leg symptoms",
+     "Bilateral calf paralysis",
+     "Sudden painless foot drop"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which physical examination finding is considered most suggestive of DVT?",
+    "ch": [
+     "Bilateral absent pedal pulses",
+     "Generalized edema",
+     "Cyanosis of both feet",
+     "Localized calf tenderness with unilateral swelling",
+     "Positive Babinski sign"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "What is the first-line imaging study for suspected lower-extremity DVT?",
+    "ch": [
+     "CT angiography",
+     "Compression duplex ultrasonography",
+     "Venography",
+     "Plain radiography",
+     "MRI"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which histologic component predominates in a venous thrombus?",
+    "ch": [
+     "Fibrin and trapped red blood cells",
+     "Smooth muscle bundles",
+     "Cholesterol crystals",
+     "Calcified plaque",
+     "Neutrophilic abscess"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "What is the most serious complication of untreated DVT?",
+    "ch": [
+     "Peripheral neuropathy",
+     "Osteomyelitis",
+     "Cellulitis",
+     "Chronic venous insufficiency",
+     "Pulmonary embolism"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which medication class is recommended as first-line treatment for most patients with acute DVT?",
+    "ch": [
+     "Corticosteroids",
+     "Aspirin",
+     "Direct oral anticoagulants (DOACs)",
+     "Beta-blockers",
+     "Statins"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which patient has the greatest risk for developing DVT?",
+    "ch": [
+     "Healthy teenager",
+     "Marathon runner",
+     "Recent major orthopedic surgery with prolonged immobilization",
+     "Mild seasonal allergies",
+     "Controlled hypothyroidism"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which statement best summarizes modern DVT management?",
+    "ch": [
+     "Compression stockings alone are sufficient.",
+     "Early diagnosis and anticoagulation prevent pulmonary embolism and long-term complications.",
+     "DVT always resolves without treatment.",
+     "Antibiotics are first-line therapy.",
+     "All patients require surgery."
+    ]
+   }
+  ]
+ },
+ "aortic-dissection": {
+  "condition": "Aortic Aneurysm & Dissection",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which layer of the aortic wall first tears in an acute aortic dissection?",
+    "ch": [
+     "Adventitia",
+     "Intima",
+     "Media",
+     "Endothelium only",
+     "Vasa vasorum"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which classification system is most commonly used for aortic dissections?",
+    "ch": [
+     "Stanford",
+     "Rutherford",
+     "CEAP",
+     "Fontaine",
+     "Wells"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which symptom is most characteristic of acute aortic dissection?",
+    "ch": [
+     "Fever",
+     "Abdominal bloating",
+     "Gradual calf pain",
+     "Sudden severe tearing chest or back pain",
+     "Chronic cough"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which imaging study is preferred for a hemodynamically stable patient with suspected aortic dissection?",
+    "ch": [
+     "Plain CT",
+     "MRI brain",
+     "Chest X-ray",
+     "Echocardiography only",
+     "CT angiography"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "What is the major goal of initial medical management for acute aortic dissection?",
+    "ch": [
+     "Lower blood pressure and reduce shear stress",
+     "Administer antibiotics",
+     "Begin thrombolysis",
+     "Correct anemia",
+     "Increase heart rate"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which inherited disorder is strongly associated with thoracic aortic aneurysm?",
+    "ch": [
+     "Psoriasis",
+     "Multiple sclerosis",
+     "Cystic fibrosis",
+     "Marfan syndrome",
+     "Crohn disease"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which physical examination finding may occur in proximal (Type A) aortic dissection?",
+    "ch": [
+     "Carpal tunnel syndrome",
+     "Diastolic murmur of aortic regurgitation",
+     "Splenomegaly",
+     "Clubbing",
+     "Wheezing"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "Which complication is most feared with an enlarging abdominal aortic aneurysm?",
+    "ch": [
+     "Diverticulitis",
+     "Venous thrombosis",
+     "Rupture",
+     "Appendicitis",
+     "Pancreatitis"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which treatment is definitive for most Stanford Type A dissections?",
+    "ch": [
+     "Physical therapy",
+     "Long-term antibiotics",
+     "Aspirin",
+     "Observation",
+     "Emergency surgical repair"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "What is the most important long-term management strategy after successful treatment of aortic aneurysm or dissection?",
+    "ch": [
+     "High-intensity exercise",
+     "Routine antibiotics",
+     "Lifelong blood pressure control and surveillance imaging",
+     "Daily aspirin alone",
+     "Bed rest"
+    ]
+   }
+  ]
+ },
+ "cardiac-arrest": {
+  "condition": "Cardiac Arrest (ACLS)",
+  "questions": [
+   {
+    "n": 1,
+    "q": "A patient is unresponsive, not breathing normally, and has no definite carotid pulse within 10 seconds. What is the next step?",
+    "ch": [
+     "Start high-quality CPR immediately",
+     "Obtain a 12-lead ECG",
+     "Check pupils",
+     "Wait for monitor",
+     "Give epinephrine"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Recommended adult chest compression rate is:",
+    "ch": [
+     "60–80/min",
+     "80–100/min",
+     "100–120/min",
+     "120–140/min",
+     "As fast as possible"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which rhythm is shockable?",
+    "ch": [
+     "AV block",
+     "Asystole",
+     "PEA",
+     "VF",
+     "Sinus bradycardia"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Primary purpose of high-quality CPR is:",
+    "ch": [
+     "Terminate VF",
+     "Treat acidosis",
+     "Reverse MI",
+     "Restore normal BP",
+     "Maintain coronary and cerebral perfusion"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Which is NOT one of the Hs and Ts?",
+    "ch": [
+     "Tamponade",
+     "Toxins",
+     "Hypovolemia",
+     "Hypoxia",
+     "Hyperglycemia"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "During adult cardiac arrest, epinephrine dose is:",
+    "ch": [
+     "0.5 mg q10 min",
+     "1 mg IV/IO every 3–5 min",
+     "2 mg once",
+     "5 mg q5 min",
+     "300 mg once"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "With an advanced airway in place:",
+    "ch": [
+     "Continuous compressions with 1 breath every 6 sec",
+     "1 breath every 3 sec",
+     "Stop ventilation",
+     "Pause compressions for breaths",
+     "30:2 continues"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "An abrupt sustained rise in ETCOI during CPR most likely indicates:",
+    "ch": [
+     "Asystole",
+     "Poor compressions",
+     "Hyperventilation",
+     "ROSC",
+     "Pulmonary embolism"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "After ROSC, an appropriate MAP target is:",
+    "ch": [
+     "40 mmHg",
+     "50 mmHg",
+     "≥65 mmHg",
+     "≥90 mmHg",
+     "No target"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "Which statement best summarizes ACLS priorities?",
+    "ch": [
+     "Medications save most lives",
+     "CPR and early defibrillation are the highest priorities",
+     "Troponin guides CPR",
+     "CT first",
+     "Shock all rhythms"
+    ]
+   }
+  ]
+ },
+ "hyperlipidemia": {
+  "condition": "Hyperlipidemia",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Which mechanism best explains how elevated LDL-C causes atherosclerotic cardiovascular disease?",
+    "ch": [
+     "Retained ApoB-containing particles enter the arterial intima, oxidize, and trigger foam-cell and plaque formation",
+     "Cholesterol crystals precipitate directly within the cardiac valves and produce stenosis",
+     "Excess circulating lipid raises blood viscosity enough to mechanically obstruct the arteries",
+     "Triglycerides are deposited within the myocardium and progressively impair contractile function",
+     "HDL particles carry cholesterol into the vessel wall, where it accumulates as fatty streaks"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "A 32-year-old with an untreated LDL-C of 245 mg/dL has thickened Achilles tendons and firm nodules over the knuckles. What do these findings indicate?",
+    "ch": [
+     "Corneal arcus, an entirely expected age-related change",
+     "Gouty tophi, reflecting chronically elevated serum uric acid",
+     "Tendon xanthomas, the classic sign of familial hypercholesterolemia",
+     "Eruptive xanthomas, which accompany severe hypertriglyceridemia",
+     "Xanthelasma, a periorbital deposit without lipid significance"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "By what mechanism do statins lower LDL-C?",
+    "ch": [
+     "They activate PPAR-alpha and thereby accelerate triglyceride clearance",
+     "They inhibit HMG-CoA reductase, upregulating hepatic LDL receptors",
+     "They block intestinal cholesterol absorption at the brush border",
+     "They inhibit ATP-citrate lyase upstream of hepatic cholesterol synthesis",
+     "They are monoclonal antibodies that neutralize circulating PCSK9"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "Which of the following is one of the four AHA/ACC statin benefit groups?",
+    "ch": [
+     "Isolated triglycerides of 200 mg/dL on a fasting panel",
+     "Any adult over the age of 40 regardless of risk factors",
+     "A total cholesterol above 180 mg/dL in a nonsmoking adult",
+     "Untreated LDL-C of 190 mg/dL or higher at any age",
+     "An HDL-C below 40 mg/dL in an otherwise healthy adult"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "A patient's triglycerides return at 1,200 mg/dL and he has epigastric pain. Which risk does this represent, and which drug class targets it?",
+    "ch": [
+     "Cholestatic liver injury — treated with observation and imaging",
+     "Acute pancreatitis — treated with a fibrate such as fenofibrate",
+     "Accelerated atherosclerosis — treated with a PCSK9 inhibitor",
+     "Rhabdomyolysis — treated by stopping all lipid-lowering therapy",
+     "Hypothyroid myopathy — treated with levothyroxine replacement"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which drug combination carries the greatest risk of dangerous myopathy in a patient who needs both LDL and triglyceride lowering?",
+    "ch": [
+     "Fenofibrate plus a statin",
+     "Ezetimibe plus a statin",
+     "Icosapent ethyl plus a statin",
+     "Bempedoic acid plus ezetimibe",
+     "Gemfibrozil plus a statin"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A very high-risk ASCVD patient is not at LDL goal on a maximally tolerated high-intensity statin. What is the next step in the titration sequence?",
+    "ch": [
+     "Stop the statin and start a fibrate as monotherapy instead",
+     "Add niacin and recheck the lipid panel in one year's time",
+     "Escalate the statin beyond the maximally tolerated dose",
+     "Defer any further therapy until a repeat CAC score is obtained",
+     "Add ezetimibe, then a PCSK9 inhibitor or bempedoic acid if still not at goal"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A patient taking atorvastatin reports severe muscle pain, weakness, and dark tea-colored urine. What is the priority concern?",
+    "ch": [
+     "Tendon rupture, the characteristic risk of bempedoic acid therapy",
+     "Statin hepatotoxicity, which baseline LFTs would have predicted",
+     "Dehydration producing concentrated but otherwise normal urine",
+     "Rhabdomyolysis — a red flag requiring immediate evaluation",
+     "Ordinary statin-associated muscle symptoms; continue unchanged"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "How is the coronary artery calcium (CAC) score best used in lipid management?",
+    "ch": [
+     "To reclassify intermediate-risk patients when the statin treatment decision is uncertain",
+     "To replace the lipid panel as the primary screening test for dyslipidemia",
+     "To confirm familial hypercholesterolemia in a patient with tendon xanthomas",
+     "To monitor the response to therapy every three months after starting a statin",
+     "To decide whether triglyceride lowering is needed to prevent acute pancreatitis"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A previously well patient is found to have new, marked hyperlipidemia. Which workup best screens for secondary causes?",
+    "ch": [
+     "Abdominal ultrasound and 24-hour ambulatory blood pressure monitoring",
+     "A genetic panel for PCSK9 gain-of-function mutations in every patient",
+     "TSH, fasting glucose or HbA1c, renal and liver panel, and urine protein",
+     "Coronary angiography together with an exercise treadmill test",
+     "Serum CK and an electromyogram of the proximal muscle groups"
+    ]
+   }
+  ]
+ },
+ "ards": {
+  "condition": "Acute Respiratory Distress Syndrome (ARDS)",
+  "questions": [
+   {
+    "n": 1,
+    "q": "What is the fundamental abnormality in ARDS?",
+    "ch": [
+     "Destruction of alveolar septa",
+     "Left ventricular failure raising pulmonary capillary pressure",
+     "Increased alveolar-capillary permeability flooding alveoli with protein-rich fluid",
+     "Bronchial smooth muscle constriction",
+     "Obstruction of the pulmonary arteries by thrombus"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which parameter does the Berlin definition use to stage ARDS severity?",
+    "ch": [
+     "The PaO2/FiO2 ratio on PEEP of at least 5",
+     "Peak airway pressure measured at end-inspiration",
+     "Serum lactate corrected for cardiac output",
+     "The alveolar-arterial oxygen gradient alone",
+     "Tidal volume per kilogram of predicted body weight"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "Which two causes are the most common triggers of ARDS?",
+    "ch": [
+     "Drowning and inhalation injury",
+     "Transfusion and pulmonary contusion",
+     "Aspiration and shock",
+     "Sepsis and pneumonia",
+     "Pancreatitis and trauma"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "What is the cornerstone ventilatory strategy in ARDS?",
+    "ch": [
+     "High tidal volumes to recruit collapsed lung",
+     "Low tidal volume of 6 mL/kg predicted body weight with a limited plateau pressure",
+     "Tidal volume set by the patient's actual body weight",
+     "Minimising PEEP to avoid barotrauma",
+     "Maintaining FiO2 at 1.0 throughout"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Why does raising the FiO2 alone often fail to correct hypoxemia in ARDS?",
+    "ch": [
+     "Because reduced cardiac output limits oxygen delivery to the tissues",
+     "Because methemoglobin cannot bind oxygen at normal partial pressures",
+     "Because increased dead space prevents carbon dioxide clearance",
+     "Because intrapulmonary shunt means blood bypasses ventilated alveoli",
+     "Because carbon monoxide is occupying the haemoglobin binding sites"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "What does the term 'baby lung' describe in ARDS?",
+    "ch": [
+     "The characteristic appearance of the lung on bedside ultrasound",
+     "ARDS occurring in paediatric rather than adult patients",
+     "That only a small fraction of lung remains aerated, so normal tidal volumes overdistend it",
+     "The reduced lung volume remaining after a lobectomy",
+     "Congenital surfactant deficiency in the newborn lung"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "Which intervention has been shown to improve survival in severe ARDS?",
+    "ch": [
+     "Inhaled nitric oxide",
+     "Prone positioning",
+     "Routine high-frequency oscillatory ventilation",
+     "Liberal fluid administration",
+     "Maintaining a supranormal PaO2"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "A ventilated ARDS patient suddenly desaturates with rising airway pressures and hypotension. What should be suspected first?",
+    "ch": [
+     "Tension pneumothorax from barotrauma",
+     "Ventilator-associated pneumonia",
+     "Pulmonary embolism",
+     "Acute kidney injury",
+     "Progression of the underlying sepsis"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "A patient develops ARDS within 6 hours of receiving a blood product. What should be considered?",
+    "ch": [
+     "Volume overload from transfusion",
+     "Haemolytic transfusion reaction",
+     "Citrate toxicity",
+     "Anaphylaxis",
+     "Transfusion-related acute lung injury"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient with severe ARDS remains profoundly hypoxemic despite optimised PEEP, proning and neuromuscular blockade. What is the appropriate next escalation?",
+    "ch": [
+     "Add a loop diuretic",
+     "Start broad-spectrum antifungal therapy",
+     "Accept the hypoxemia and continue current settings",
+     "Increase tidal volume to improve minute ventilation",
+     "Prompt evaluation for veno-venous ECMO"
+    ]
+   }
+  ]
+ },
+ "pneumothorax": {
+  "condition": "Pneumothorax",
+  "questions": [
+   {
+    "n": 1,
+    "q": "Why does the lung collapse when air enters the pleural space?",
+    "ch": [
+     "The bronchi constrict and trap air distally",
+     "The diaphragm becomes paralysed on the affected side",
+     "Surfactant is inactivated and the alveoli collapse",
+     "The alveoli fill with protein-rich fluid",
+     "The negative intrapleural pressure is lost and the lung recoils inward"
+    ]
+   },
+   {
+    "n": 2,
+    "q": "Which patient fits the classic description of a primary spontaneous pneumothorax?",
+    "ch": [
+     "A patient on mechanical ventilation",
+     "A patient who has just had a central line placed",
+     "A patient with cystic fibrosis",
+     "An elderly patient with severe COPD",
+     "A tall, thin young male smoker"
+    ]
+   },
+   {
+    "n": 3,
+    "q": "In which direction does the trachea deviate in a tension pneumothorax?",
+    "ch": [
+     "Downward",
+     "It deviates only in children",
+     "Toward the affected side",
+     "Away from the affected side",
+     "It does not deviate"
+    ]
+   },
+   {
+    "n": 4,
+    "q": "A hypotensive patient has absent breath sounds and hyperresonance on one side with distended neck veins. What is the correct immediate action?",
+    "ch": [
+     "Give a fluid bolus and reassess in 15 minutes",
+     "Start non-invasive ventilation",
+     "Obtain an urgent chest X-ray to confirm",
+     "Perform needle decompression immediately",
+     "Arrange a CT chest"
+    ]
+   },
+   {
+    "n": 5,
+    "q": "Why is high-flow supplemental oxygen given in pneumothorax?",
+    "ch": [
+     "It is required before any chest tube insertion",
+     "It re-expands the lung mechanically",
+     "It accelerates reabsorption of pleural air by nitrogen washout",
+     "It prevents infection of the pleural space",
+     "It reduces pleuritic pain"
+    ]
+   },
+   {
+    "n": 6,
+    "q": "Which bedside ultrasound finding suggests pneumothorax?",
+    "ch": [
+     "Absence of lung sliding with a barcode sign on M-mode",
+     "B-lines throughout the lung fields",
+     "A thickened pleural line",
+     "Consolidation with air bronchograms",
+     "Presence of lung sliding"
+    ]
+   },
+   {
+    "n": 7,
+    "q": "A supine trauma patient may show which subtle radiographic sign of pneumothorax?",
+    "ch": [
+     "Westermark sign",
+     "Kerley B lines",
+     "The deep sulcus sign",
+     "Air bronchograms",
+     "Batwing opacity"
+    ]
+   },
+   {
+    "n": 8,
+    "q": "What does recent evidence suggest about management of many primary spontaneous pneumothoraces?",
+    "ch": [
+     "All require immediate large-bore chest tube drainage",
+     "Conservative watchful waiting is non-inferior in many cases",
+     "All require surgical pleurodesis at first presentation",
+     "Needle aspiration is contraindicated",
+     "Oxygen should be withheld"
+    ]
+   },
+   {
+    "n": 9,
+    "q": "Which patient is least suitable for observation alone and most likely to need a chest tube?",
+    "ch": [
+     "A patient with underlying COPD and a secondary spontaneous pneumothorax",
+     "A patient whose pneumothorax has already resolved on repeat film",
+     "A patient with a resolved iatrogenic pneumothorax after line removal",
+     "An asymptomatic patient with normal saturations and a tiny apical rim",
+     "A young patient with a small asymptomatic primary pneumothorax"
+    ]
+   },
+   {
+    "n": 10,
+    "q": "A patient who is a commercial diver has had a second spontaneous pneumothorax. What definitive management should be considered?",
+    "ch": [
+     "Repeat needle aspiration only",
+     "Pleurodesis or VATS with bleb resection",
+     "Long-term oxygen therapy",
+     "Annual chest X-ray surveillance alone",
+     "Inhaled corticosteroids"
+    ]
+   }
+  ]
+ }
+}

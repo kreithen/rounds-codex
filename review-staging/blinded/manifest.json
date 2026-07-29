@@ -1,0 +1,321 @@
+[
+ {
+  "file": "blind-01.json",
+  "ids": [
+   "chf",
+   "acs",
+   "afib",
+   "htn",
+   "aortic-stenosis",
+   "copd",
+   "asthma",
+   "cap"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-02.json",
+  "ids": [
+   "pe",
+   "dka",
+   "t2dm",
+   "metabolic-syndrome",
+   "hypothyroid",
+   "thyroidstorm",
+   "endocarditis",
+   "pericarditis"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-03.json",
+  "ids": [
+   "cardiomyopathy",
+   "pad",
+   "dvt",
+   "aortic-dissection",
+   "cardiac-arrest",
+   "hyperlipidemia",
+   "ards",
+   "pneumothorax"
+  ],
+  "questions": 90
+ },
+ {
+  "file": "blind-04.json",
+  "ids": [
+   "tb",
+   "lung-cancer",
+   "pleural-effusion",
+   "osa",
+   "hhs",
+   "hypoglycemia",
+   "t1dm",
+   "cushings"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-05.json",
+  "ids": [
+   "addisons",
+   "siadh",
+   "di",
+   "gerd",
+   "hyperparathyroid",
+   "pud",
+   "gi-bleed",
+   "pancreatitis"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-06.json",
+  "ids": [
+   "cirrhosis",
+   "cholecystitis",
+   "hepatitis",
+   "appendicitis",
+   "ibd",
+   "diverticulitis",
+   "bowel-obstruction",
+   "cdiff"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-07.json",
+  "ids": [
+   "aki",
+   "uti",
+   "ckd",
+   "nephrolithiasis",
+   "hyperkalemia",
+   "bph",
+   "hyponatremia",
+   "stroke"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-08.json",
+  "ids": [
+   "tia",
+   "meningitis",
+   "seizure",
+   "parkinsons",
+   "dementia",
+   "ms",
+   "gbs",
+   "myasthenia"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-09.json",
+  "ids": [
+   "icp",
+   "sci",
+   "migraine",
+   "iron-anemia",
+   "b12-anemia",
+   "sickle-cell",
+   "leukemia",
+   "lymphoma"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-10.json",
+  "ids": [
+   "thrombocytopenia",
+   "sepsis",
+   "dic",
+   "cellulitis",
+   "hiv",
+   "influenza",
+   "covid",
+   "osteomyelitis"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-11.json",
+  "ids": [
+   "fracture",
+   "osteoporosis",
+   "osteoarthritis",
+   "ra",
+   "gout",
+   "compartment",
+   "lupus",
+   "depression"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-12.json",
+  "ids": [
+   "anxiety",
+   "bipolar",
+   "schizophrenia",
+   "withdrawal",
+   "delirium",
+   "suicide",
+   "preeclampsia",
+   "gdm"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-13.json",
+  "ids": [
+   "pph",
+   "labor",
+   "bronchiolitis",
+   "croup",
+   "pressure-injury",
+   "burns",
+   "wound-care",
+   "anaphylaxis"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-14.json",
+  "ids": [
+   "shock",
+   "acute-abdomen",
+   "dka-peds",
+   "hypernatremia",
+   "hypokalemia",
+   "hypocalcemia",
+   "hypercalcemia",
+   "hypomagnesemia"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-15.json",
+  "ids": [
+   "hypophosphatemia",
+   "metabolic-acidosis",
+   "metabolic-alkalosis",
+   "respiratory-acidosis",
+   "respiratory-alkalosis",
+   "hypovolemia",
+   "fluid-overload",
+   "acetaminophen-od"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-16.json",
+  "ids": [
+   "salicylate-od",
+   "opioid-od",
+   "benzodiazepine-od",
+   "tca-od",
+   "digoxin-toxicity",
+   "carbon-monoxide",
+   "toxic-alcohols",
+   "organophosphate"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-17.json",
+  "ids": [
+   "breast-cancer",
+   "colorectal-cancer",
+   "prostate-cancer",
+   "pancreatic-cancer",
+   "ovarian-cancer",
+   "cervical-cancer",
+   "bladder-cancer",
+   "gastric-cancer"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-18.json",
+  "ids": [
+   "melanoma",
+   "brain-tumor",
+   "tumor-lysis",
+   "febrile-neutropenia",
+   "cord-compression",
+   "svc-syndrome",
+   "pcos",
+   "endometriosis"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-19.json",
+  "ids": [
+   "pid",
+   "ectopic-pregnancy",
+   "ovarian-torsion",
+   "aub",
+   "fibroids",
+   "menopause",
+   "kawasaki",
+   "epiglottitis"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-20.json",
+  "ids": [
+   "otitis-media",
+   "intussusception",
+   "pyloric-stenosis",
+   "febrile-seizure",
+   "congenital-heart",
+   "failure-to-thrive",
+   "acute-glaucoma",
+   "open-glaucoma"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-21.json",
+  "ids": [
+   "conjunctivitis",
+   "retinal-detachment",
+   "macular-degeneration",
+   "cataracts",
+   "uveitis",
+   "orbital-cellulitis",
+   "sinusitis",
+   "strep-pharyngitis"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-22.json",
+  "ids": [
+   "epistaxis",
+   "bppv",
+   "otitis-externa",
+   "peritonsillar-abscess",
+   "menieres",
+   "herpes-zoster",
+   "psoriasis",
+   "eczema"
+  ],
+  "questions": 80
+ },
+ {
+  "file": "blind-23.json",
+  "ids": [
+   "skin-cancer",
+   "urticaria",
+   "sjs-ten",
+   "contact-dermatitis",
+   "acne"
+  ],
+  "questions": 50
+ }
+]
