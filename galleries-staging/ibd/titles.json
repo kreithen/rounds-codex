@@ -1,0 +1,8 @@
+{
+  "_note": "This batch uses a NEW page format with no 'IMAGE TITLE' footer field — the old footer block (IMAGE TITLE / CATEGORY / DIFFICULTY / CLINICAL SOURCE) is replaced by 'IBD-MODULE-00N'. Titles are therefore read from the subtitle line under the main heading. Fill in 6-10 when they arrive.",
+  "1": "Overview: Ulcerative Colitis vs Crohn's Disease",
+  "2": "Annotated GI Anatomy",
+  "3": "Pathophysiology",
+  "4": "Clinical Presentation",
+  "5": "Endoscopic Findings"
+}

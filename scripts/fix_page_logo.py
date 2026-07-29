@@ -104,7 +104,28 @@ def lockup(a, W, H):
             int(x1) + 8, min(below - 1, int(y1) + 8))
 
 
-SIZE = (1024, 1536)   # pages sometimes arrive a pixel short; a gallery ships one uniform size
+# Pages sometimes arrive a pixel short, and a gallery must ship one uniform size -- but the
+# size is the SET's, not a constant. Hard-coded at (1024,1536) this silently downscaled the
+# first 1536x2304 batch production sent, throwing away real detail with no warning. Now it is
+# measured from the pages, and a genuinely mixed set is an error rather than a quiet resample.
+def target_size(paths):
+    from collections import Counter
+    sizes = Counter(Image.open(f).size for f in paths)
+    if len(sizes) > 1:
+        # a pixel or two of drift is the renderer; a different resolution is a different batch
+        w, h = max(sizes, key=lambda s: s[0] * s[1])
+        if any(abs(a - w) > 4 or abs(b - h) > 4 for a, b in sizes):
+            raise SystemExit(
+                "mixed page resolutions in this set: %s\n"
+                "  A gallery ships one size. Re-render the odd pages rather than resampling --\n"
+                "  upscaling invents detail and downscaling discards it. Override with\n"
+                "  RC_PAGE_SIZE=WxH if you really mean to resample."
+                % ", ".join("%dx%d (%d pages)" % (a, b, n) for (a, b), n in sizes.items()))
+    return max(sizes, key=lambda s: s[0] * s[1])
+
+
+_env = os.environ.get("RC_PAGE_SIZE")
+SIZE = tuple(int(x) for x in _env.lower().split("x")) if _env else None
 
 
 def placement(paths):
@@ -145,6 +166,33 @@ def render(path, out, quality=88, place=None):
     bg = np.median(a[top + 1:below, int(W * 0.68):int(W * 0.88)].reshape(-1, 3), axis=0).mean()
     band = a[top + 1:below, 0:int(W * 0.45)]
     plate = ((band.mean(axis=2) > bg + 2) & (band.max(axis=2) <= INK)).mean(axis=0) > 0.5
+
+
+    # NOTE: do NOT try to auto-detect a plate DARKER than the header. The IBD batch composites
+    # the lockup on an opaque black plate, and an edge-detection pass over the column profile
+    # was tried here to catch it. It over-reached: on IBD page 4 it erased the "IM" from
+    # "IMAGE 4 OF 10" and smeared the first three progress dots, because the header's own
+    # gradient and the centred page-number text produce steps just as sharp as a plate edge.
+    # A cosmetic artifact is not worth a heuristic that can eat the page number -- the plate
+    # belongs to the render, so it gets fixed in production, not here.
+
+    # A plate sits BEHIND the lockup, so its columns must touch the lockup. Without that
+    # constraint the test above is just "brighter than the right-hand edge", which on the IBD
+    # page format is true of most of the header -- its background gradient is brighter in the
+    # middle than at the sampling strip. That ran the erase out to x=656 on page 4 and took the
+    # "IM" off "IMAGE 4 OF 10" along with the first three progress dots. Keeping only the run
+    # that overlaps the measured lockup makes a runaway impossible by construction.
+    if plate.any():
+        runs, start = [], None
+        for i, v in enumerate(plate):
+            if v and start is None: start = i
+            elif not v and start is not None: runs.append((start, i - 1)); start = None
+        if start is not None: runs.append((start, len(plate) - 1))
+        touching = [r for r in runs if r[1] >= x0 - 2 and r[0] <= x1 + 2]
+        plate = np.zeros_like(plate)
+        for a_, b_ in touching:
+            plate[a_:b_ + 1] = True
+
     px = np.where(plate)[0]
     if len(px):
         # never left of FRAME_X: the frame's own rule lives there and must survive
@@ -183,6 +231,10 @@ def main():
                    if f.lower().endswith((".png", ".jpg", ".jpeg")))
     if not files:
         sys.exit("no pages in " + src)
+    global SIZE
+    if SIZE is None:
+        SIZE = target_size(files)
+    print("  pages ship at %dx%d" % SIZE)
     place = placement(files)                      # pass 1: one size for the whole set
     print("  logo %dx%d at (%d, %d)" % (round(place[2] * ASPECT), place[2], place[0], place[1]))
     for f in files:                               # pass 2: render
