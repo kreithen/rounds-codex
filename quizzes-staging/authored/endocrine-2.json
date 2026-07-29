@@ -5,20 +5,20 @@
    {
     "q": "Which laboratory pattern indicates primary hypothyroidism?",
     "ch": [
-     "Raised TSH with a low free T4",
      "Low TSH with a low free T4",
      "Raised TSH with a normal free T4",
      "Low TSH with a raised free T4",
-     "Normal TSH with a raised free T4"
+     "Normal TSH with a raised free T4",
+     "Raised TSH with a low free T4"
     ],
-    "correct": 0,
+    "correct": 4,
     "exp": "Primary hypothyroidism shows a raised TSH with a low free T4: the gland fails and the pituitary drives it harder.",
     "why": [
-     "",
      "A low TSH with low free T4 indicates central hypothyroidism, where the pituitary fails to respond.",
      "A raised TSH with a normal free T4 is subclinical hypothyroidism.",
      "A low TSH with a raised free T4 indicates hyperthyroidism.",
-     "A normal TSH with a raised free T4 does not fit primary hypothyroidism."
+     "A normal TSH with a raised free T4 does not fit primary hypothyroidism.",
+     ""
     ],
     "img": [
      6
@@ -71,20 +71,20 @@
    {
     "q": "How should levothyroxine be taken to ensure adequate absorption?",
     "ch": [
+     "On an empty stomach, 30 to 60 minutes before breakfast",
+     "Together with a calcium supplement",
      "At bedtime with an evening snack",
      "With an antacid to protect the stomach",
-     "With breakfast to reduce nausea",
-     "On an empty stomach, 30 to 60 minutes before breakfast",
-     "Together with a calcium supplement"
+     "With breakfast to reduce nausea"
     ],
-    "correct": 3,
+    "correct": 0,
     "exp": "Levothyroxine is taken on an empty stomach 30 to 60 minutes before breakfast, separated from calcium and iron. Food, calcium, iron and proton pump inhibitors all impair absorption.",
     "why": [
+     "",
+     "Calcium binds levothyroxine and must be separated from the dose.",
      "An evening snack reintroduces the food-absorption problem.",
      "Acid suppression reduces levothyroxine absorption.",
-     "Taking it with food substantially reduces absorption.",
-     "",
-     "Calcium binds levothyroxine and must be separated from the dose."
+     "Taking it with food substantially reduces absorption."
     ],
     "img": [
      7
@@ -93,20 +93,20 @@
    {
     "q": "How long after a levothyroxine dose change should the TSH be rechecked?",
     "ch": [
-     "After 24 hours",
-     "After 6 months",
      "Immediately before the next dose",
      "After 3 to 5 days",
-     "After 6 to 8 weeks"
+     "After 6 to 8 weeks",
+     "After 24 hours",
+     "After 6 months"
     ],
-    "correct": 4,
+    "correct": 2,
     "exp": "Recheck the TSH about 6 to 8 weeks after any dose change. Steady state takes weeks and earlier testing misleads.",
     "why": [
-     "A day after a change reflects nothing about steady state.",
-     "Six months delays appropriate titration unnecessarily.",
      "Timing relative to a single dose is not the issue; steady state is.",
      "Three to five days is far short of steady state and gives a misleading result.",
-     ""
+     "",
+     "A day after a change reflects nothing about steady state.",
+     "Six months delays appropriate titration unnecessarily."
     ],
     "img": [
      9
@@ -115,20 +115,20 @@
    {
     "q": "Why should levothyroxine be started at a low dose in an elderly patient with cardiac disease?",
     "ch": [
-     "Because raising metabolic demand can precipitate angina or arrhythmia",
      "Because the elderly need less hormone overall",
      "Because renal clearance of levothyroxine is reduced",
      "Because the TSH assay is unreliable in older patients",
-     "Because absorption is unpredictable with age"
+     "Because absorption is unpredictable with age",
+     "Because raising metabolic demand can precipitate angina or arrhythmia"
     ],
-    "correct": 0,
+    "correct": 4,
     "exp": "Start low and go slow in the elderly or those with cardiac disease. Restoring metabolic rate raises cardiac demand and can precipitate angina or arrhythmia.",
     "why": [
-     "",
      "The eventual replacement requirement is based on weight and residual function, not simply age.",
      "Levothyroxine is not primarily cleared renally.",
      "The TSH assay remains valid in older patients.",
-     "Absorption is affected by food and drugs rather than age itself."
+     "Absorption is affected by food and drugs rather than age itself.",
+     ""
     ],
     "img": [
      7
@@ -137,20 +137,20 @@
    {
     "q": "A patient presents with hypothermia, bradycardia, hyponatremia and altered mentation. What is the diagnosis?",
     "ch": [
+     "Septic shock",
+     "Hyperosmolar hyperglycemic state",
      "Thyroid storm",
      "Myxedema coma",
-     "Adrenal crisis",
-     "Septic shock",
-     "Hyperosmolar hyperglycemic state"
+     "Adrenal crisis"
     ],
-    "correct": 1,
+    "correct": 3,
     "exp": "Hypothermia with bradycardia, hyponatremia and altered mentation is myxedema coma, an ICU emergency at the severe extreme of hypothyroidism.",
     "why": [
+     "Septic shock typically causes fever and tachycardia.",
+     "HHS is defined by marked hyperglycemia and hyperosmolality.",
      "Thyroid storm is the hyperthyroid emergency, with fever and tachyarrhythmia.",
      "",
-     "Adrenal crisis causes hypotension and hyperkalaemia rather than this pattern.",
-     "Septic shock typically causes fever and tachycardia.",
-     "HHS is defined by marked hyperglycemia and hyperosmolality."
+     "Adrenal crisis causes hypotension and hyperkalaemia rather than this pattern."
     ],
     "img": [
      8
@@ -159,20 +159,20 @@
    {
     "q": "In suspected myxedema coma with possible adrenal insufficiency, which should be given first?",
     "ch": [
-     "Active external rewarming alone",
      "Intravenous levothyroxine",
      "Hydrocortisone before levothyroxine",
      "Intravenous glucose alone",
-     "Broad-spectrum antibiotics only"
+     "Broad-spectrum antibiotics only",
+     "Active external rewarming alone"
     ],
-    "correct": 2,
+    "correct": 1,
     "exp": "Give hydrocortisone before levothyroxine if adrenal insufficiency is possible, because thyroid hormone accelerates cortisol clearance and can precipitate a crisis.",
     "why": [
-     "Rewarming alone does not correct the underlying hormone deficits.",
      "Giving thyroid hormone first can precipitate adrenal crisis by speeding cortisol clearance.",
      "",
      "Glucose alone does not address either hormone deficiency.",
-     "Antibiotics treat a precipitant but not the endocrine emergency."
+     "Antibiotics treat a precipitant but not the endocrine emergency.",
+     "Rewarming alone does not correct the underlying hormone deficits."
     ],
     "img": [
      8
@@ -181,20 +181,20 @@
    {
     "q": "Which laboratory abnormalities may accompany untreated hypothyroidism?",
     "ch": [
+     "Hyperlipidemia, hyponatremia, anemia and a raised creatine kinase",
+     "Hypolipidemia, hypernatremia and a low creatine kinase",
      "Polycythaemia with a raised bicarbonate",
      "Hypercalcaemia with a suppressed parathyroid hormone",
-     "Metabolic alkalosis with hypokalaemia",
-     "Hyperlipidemia, hyponatremia, anemia and a raised creatine kinase",
-     "Hypolipidemia, hypernatremia and a low creatine kinase"
+     "Metabolic alkalosis with hypokalaemia"
     ],
-    "correct": 3,
+    "correct": 0,
     "exp": "Hyperlipidemia, hyponatremia, anemia and a raised creatine kinase can all accompany hypothyroidism.",
     "why": [
+     "",
+     "These are the opposite of the recognised associations.",
      "Polycythaemia is not a feature; anemia is.",
      "Calcium and parathyroid abnormalities are not characteristic.",
-     "This acid-base pattern is not associated with hypothyroidism.",
-     "",
-     "These are the opposite of the recognised associations."
+     "This acid-base pattern is not associated with hypothyroidism."
     ],
     "img": [
      6
@@ -203,20 +203,20 @@
    {
     "q": "A patient is investigated for unexplained hyperlipidemia and fatigue. Which single test is most appropriate?",
     "ch": [
-     "Anti-TPO antibody",
      "Thyroid ultrasound",
      "Radioactive iodine uptake scan",
      "Free T3 level",
-     "Serum TSH"
+     "Serum TSH",
+     "Anti-TPO antibody"
     ],
-    "correct": 4,
+    "correct": 3,
     "exp": "TSH is the most sensitive screening test for primary thyroid disease, and new hypothyroidism can present as hyperlipidemia, hyponatremia or unexplained fatigue.",
     "why": [
-     "Anti-TPO confirms aetiology once hypothyroidism is established; it is not the screen.",
      "Ultrasound assesses structure, not function.",
      "Uptake scanning is used to investigate hyperthyroidism.",
      "Free T3 is not the screening test for hypothyroidism.",
-     ""
+     "",
+     "Anti-TPO confirms aetiology once hypothyroidism is established; it is not the screen."
     ],
     "img": [
      6
@@ -230,20 +230,20 @@
    {
     "q": "What is the most common cause of hyperthyroidism?",
     "ch": [
+     "A TSH-secreting pituitary adenoma",
+     "A single toxic nodule",
      "Graves' disease",
      "Subacute thyroiditis",
-     "Excess exogenous thyroid hormone",
-     "A TSH-secreting pituitary adenoma",
-     "A single toxic nodule"
+     "Excess exogenous thyroid hormone"
     ],
-    "correct": 0,
+    "correct": 2,
     "exp": "Graves' disease, an autoimmune condition driven by TSH-receptor antibodies, is the most common cause of hyperthyroidism.",
     "why": [
+     "A TSH-secreting adenoma is rare.",
+     "A toxic nodule causes hyperthyroidism but is less common than Graves'.",
      "",
      "Thyroiditis causes a transient thyrotoxic phase and is less common.",
-     "Exogenous hormone excess is a recognised but less frequent cause.",
-     "A TSH-secreting adenoma is rare.",
-     "A toxic nodule causes hyperthyroidism but is less common than Graves'."
+     "Exogenous hormone excess is a recognised but less frequent cause."
     ],
     "img": [
      3
@@ -252,20 +252,20 @@
    {
     "q": "Which laboratory pattern indicates primary hyperthyroidism?",
     "ch": [
-     "Raised TSH with a raised free T4",
      "Suppressed TSH with a raised free T4 or T3",
      "Suppressed TSH with a low free T4",
      "Normal TSH with a low free T3",
-     "Raised TSH with a low free T4"
+     "Raised TSH with a low free T4",
+     "Raised TSH with a raised free T4"
     ],
-    "correct": 1,
+    "correct": 0,
     "exp": "Primary hyperthyroidism shows a suppressed TSH with a raised free T4 or T3. TSH is the most sensitive marker.",
     "why": [
-     "A raised TSH with raised T4 suggests a TSH-secreting lesion or assay interference.",
      "",
      "A suppressed TSH with low T4 suggests central hypothyroidism or recovery.",
      "This pattern does not indicate hyperthyroidism.",
-     "Raised TSH with low T4 is primary hypothyroidism."
+     "Raised TSH with low T4 is primary hypothyroidism.",
+     "A raised TSH with raised T4 suggests a TSH-secreting lesion or assay interference."
     ],
     "img": [
      6
@@ -274,20 +274,20 @@
    {
     "q": "Which findings point specifically to Graves' disease rather than a toxic nodular goiter?",
     "ch": [
-     "Recent iodinated contrast exposure",
-     "A solitary palpable nodule with local tenderness",
      "Ophthalmopathy and pretibial myxedema",
      "A tender, painful thyroid with raised inflammatory markers",
-     "Low radioactive iodine uptake"
+     "Low radioactive iodine uptake",
+     "Recent iodinated contrast exposure",
+     "A solitary palpable nodule with local tenderness"
     ],
-    "correct": 2,
+    "correct": 0,
     "exp": "Graves' has the eye disease and pretibial myxedema; a toxic nodular goiter does not. TSH-receptor antibodies or radioactive iodine uptake confirm it.",
     "why": [
-     "Contrast exposure may precipitate thyrotoxicosis but is not a Graves' feature.",
-     "A solitary tender nodule suggests nodular disease or haemorrhage rather than Graves'.",
      "",
      "A painful thyroid with raised inflammatory markers suggests subacute thyroiditis.",
-     "Low uptake indicates thyroiditis or exogenous hormone, not Graves'."
+     "Low uptake indicates thyroiditis or exogenous hormone, not Graves'.",
+     "Contrast exposure may precipitate thyrotoxicosis but is not a Graves' feature.",
+     "A solitary tender nodule suggests nodular disease or haemorrhage rather than Graves'."
     ],
     "img": [
      4
@@ -296,20 +296,20 @@
    {
     "q": "How does radioactive iodine uptake help distinguish causes of thyrotoxicosis?",
     "ch": [
-     "Uptake correlates with the free T4 level rather than the cause",
-     "Uptake distinguishes benign from malignant nodules only",
      "High uptake indicates thyroiditis and low uptake indicates Graves'",
      "High uptake indicates Graves' or a toxic nodule; low uptake indicates thyroiditis or exogenous hormone",
-     "Uptake is always high in thyrotoxicosis regardless of cause"
+     "Uptake is always high in thyrotoxicosis regardless of cause",
+     "Uptake correlates with the free T4 level rather than the cause",
+     "Uptake distinguishes benign from malignant nodules only"
     ],
-    "correct": 3,
+    "correct": 1,
     "exp": "High uptake indicates Graves' disease or a toxic nodule, where the gland is actively making hormone. Low uptake indicates thyroiditis or exogenous hormone, where it is not.",
     "why": [
-     "Uptake reflects the mechanism rather than the hormone level.",
-     "Uptake scanning here distinguishes mechanism, not malignancy.",
      "This reverses the correct interpretation.",
      "",
-     "Uptake is low in thyroiditis and exogenous thyrotoxicosis."
+     "Uptake is low in thyroiditis and exogenous thyrotoxicosis.",
+     "Uptake reflects the mechanism rather than the hormone level.",
+     "Uptake scanning here distinguishes mechanism, not malignancy."
     ],
     "img": [
      6
@@ -318,20 +318,20 @@
    {
     "q": "Why must a thionamide be given before iodine in thyroid storm?",
     "ch": [
+     "Because iodine inactivates the thionamide",
+     "Because iodine given first supplies substrate and fuels new hormone synthesis",
      "Because iodine causes an allergic reaction if given second",
      "Because the thionamide works only in an iodine-free environment",
-     "Because iodine must be given with food",
-     "Because iodine inactivates the thionamide",
-     "Because iodine given first supplies substrate and fuels new hormone synthesis"
+     "Because iodine must be given with food"
     ],
-    "correct": 4,
+    "correct": 1,
     "exp": "Thionamide before iodine, always. Iodine given first provides substrate for new hormone synthesis and can worsen the storm. Iodine follows at least an hour after the thionamide.",
     "why": [
+     "Iodine does not inactivate the thionamide.",
+     "",
      "The sequence is about synthesis, not allergy.",
      "Thionamides work by blocking synthesis and do not require an iodine-free state.",
-     "Food timing is not the reason for the sequence.",
-     "Iodine does not inactivate the thionamide.",
-     ""
+     "Food timing is not the reason for the sequence."
     ],
     "img": [
      7
@@ -340,20 +340,20 @@
    {
     "q": "Which antipyretic should be used for fever in thyroid storm, and why?",
     "ch": [
+     "No antipyretic should be given",
+     "Aspirin, because it also reduces inflammation",
      "Acetaminophen, because aspirin displaces thyroid hormone from binding proteins",
      "Ibuprofen, because it lowers metabolic rate",
-     "Aspirin, because it lowers the free T4 level",
-     "No antipyretic should be given",
-     "Aspirin, because it also reduces inflammation"
+     "Aspirin, because it lowers the free T4 level"
     ],
-    "correct": 0,
+    "correct": 2,
     "exp": "Use acetaminophen rather than aspirin. Aspirin displaces thyroid hormone from its binding proteins and raises free hormone levels.",
     "why": [
+     "Fever in storm should be treated, with the right agent.",
+     "Aspirin is specifically avoided because it raises free hormone levels.",
      "",
      "Ibuprofen does not lower metabolic rate and is not the recommended choice.",
-     "Aspirin raises rather than lowers the free T4.",
-     "Fever in storm should be treated, with the right agent.",
-     "Aspirin is specifically avoided because it raises free hormone levels."
+     "Aspirin raises rather than lowers the free T4."
     ],
     "img": [
      7
@@ -362,20 +362,20 @@
    {
     "q": "A patient on methimazole develops fever and a sore throat. What is the correct action?",
     "ch": [
-     "Reassure and continue the drug",
-     "Stop the drug and check a full blood count for agranulocytosis",
      "Double the dose to control the thyrotoxicosis",
      "Add aspirin for symptomatic relief",
-     "Switch immediately to radioactive iodine"
+     "Switch immediately to radioactive iodine",
+     "Reassure and continue the drug",
+     "Stop the drug and check a full blood count for agranulocytosis"
     ],
-    "correct": 1,
+    "correct": 4,
     "exp": "Sore throat and fever on methimazole or propylthiouracil means stopping the drug and checking a full blood count for agranulocytosis.",
     "why": [
-     "Continuing risks overwhelming sepsis if the count is suppressed.",
-     "",
      "Increasing the dose worsens the risk.",
      "Aspirin is avoided in thyrotoxicosis and does not address the marrow.",
-     "Definitive therapy is a later decision; the immediate issue is possible agranulocytosis."
+     "Definitive therapy is a later decision; the immediate issue is possible agranulocytosis.",
+     "Continuing risks overwhelming sepsis if the count is suppressed.",
+     ""
     ],
     "img": [
      9
@@ -384,20 +384,20 @@
    {
     "q": "Which thionamide is preferred in thyroid storm and in the first trimester of pregnancy?",
     "ch": [
+     "Lithium carbonate",
      "Potassium perchlorate",
      "Methimazole",
      "Propylthiouracil",
-     "Carbimazole",
-     "Lithium carbonate"
+     "Carbimazole"
     ],
-    "correct": 2,
+    "correct": 3,
     "exp": "Propylthiouracil is preferred in storm and in the first trimester; methimazole is first-line otherwise.",
     "why": [
+     "Lithium is not a standard thionamide alternative.",
      "Perchlorate is a rarely used second-line agent.",
      "Methimazole is first-line in most other situations but not in storm or the first trimester.",
      "",
-     "Carbimazole is a methimazole prodrug and carries the same first-trimester concern.",
-     "Lithium is not a standard thionamide alternative."
+     "Carbimazole is a methimazole prodrug and carries the same first-trimester concern."
     ],
     "img": [
      7
@@ -406,20 +406,20 @@
    {
     "q": "How is thyroid storm diagnosed?",
     "ch": [
+     "By a free T4 rising above a defined diagnostic threshold",
      "By radioactive iodine uptake scanning of the gland",
      "By demonstrating TSH-receptor antibodies in the serum",
      "By the characteristic appearance on thyroid ultrasound",
-     "Clinically, for example using the Burch-Wartofsky score, without waiting for labs",
-     "By a free T4 rising above a defined diagnostic threshold"
+     "Clinically, for example using the Burch-Wartofsky score, without waiting for labs"
     ],
-    "correct": 3,
+    "correct": 4,
     "exp": "Thyroid storm is a clinical diagnosis, for example by the Burch-Wartofsky score. Do not wait for laboratory confirmation to treat.",
     "why": [
+     "Hormone levels in storm overlap with uncomplicated thyrotoxicosis and do not define it.",
      "Uptake scanning identifies the underlying cause, not the decompensated state.",
      "TRAb indicates Graves' aetiology rather than storm.",
      "Ultrasound assesses structure, not decompensation.",
-     "",
-     "Hormone levels in storm overlap with uncomplicated thyrotoxicosis and do not define it."
+     ""
     ],
     "img": [
      7
@@ -428,20 +428,20 @@
    {
     "q": "Why are glucocorticoids given in thyroid storm?",
     "ch": [
-     "To block the release of preformed hormone from the gland",
      "To prevent thionamide-induced agranulocytosis developing",
      "To slow the ventricular rate directly during the storm",
      "To improve radioiodine uptake by the thyroid gland",
-     "To reduce peripheral T4 to T3 conversion and cover relative adrenal insufficiency"
+     "To reduce peripheral T4 to T3 conversion and cover relative adrenal insufficiency",
+     "To block the release of preformed hormone from the gland"
     ],
-    "correct": 4,
+    "correct": 3,
     "exp": "Glucocorticoids reduce peripheral conversion of T4 to T3 and also cover relative adrenal insufficiency in storm.",
     "why": [
-     "Iodine blocks hormone release; steroids do not.",
      "Steroids do not prevent thionamide-induced agranulocytosis.",
      "Rate control is achieved with a beta-blocker.",
      "Steroids are not given to enhance iodine uptake.",
-     ""
+     "",
+     "Iodine blocks hormone release; steroids do not."
     ],
     "img": [
      7

@@ -1,0 +1,677 @@
+{
+ "hypoglycemia": {
+  "condition": "Hypoglycemia",
+  "questions": [
+   {
+    "q": "Which combination defines Whipple's triad, the criterion used to decide whether a low glucose is truly pathologic?",
+    "ch": [
+     "Tremor, diaphoresis and palpitations occurring together after unaccustomed exercise",
+     "A fingerstick below 70 mg/dL on three separate mornings in an asymptomatic patient",
+     "A low plasma glucose with a high insulin level and a suppressed C-peptide level",
+     "Confusion, seizure and coma developing in a patient who is taking insulin",
+     "Symptoms consistent with low glucose, a measured low plasma glucose, and resolution of symptoms with glucose correction"
+    ],
+    "correct": 4,
+    "exp": "Whipple's triad is symptoms consistent with low glucose, a measured low plasma glucose, and resolution of those symptoms with glucose correction. It is what decides whether a low glucose is truly pathologic and worth working up.",
+    "why": [
+     "Adrenergic symptoms alone are not the triad; a measured low plasma glucose and relief with sugar are both required.",
+     "Asymptomatic readings do not satisfy the triad, which requires symptoms and their resolution with glucose correction.",
+     "High insulin with a low C-peptide is the critical-sample pattern for exogenous insulin, not the definition of the triad.",
+     "Neuroglycopenic signs are only one element; the triad also needs the measured low glucose and relief with sugar.",
+     ""
+    ],
+    "img": [
+     1
+    ]
+   },
+   {
+    "q": "Which statement about the ADA tiered definitions of hypoglycemia in diabetes is correct?",
+    "ch": [
+     "Level 1 applies only when the patient reports adrenergic symptoms",
+     "Level 1 is the glucose alert value, a plasma glucose below 70 mg/dL",
+     "Level 2, clinically significant hypoglycemia, begins below 60 mg/dL",
+     "Level 3 is defined by a plasma glucose below 40 mg/dL regardless of symptoms",
+     "Level 3 cannot be assigned unless a plasma glucose value is documented"
+    ],
+    "correct": 1,
+    "exp": "The ADA tiers are Level 1 (below 70 mg/dL, the glucose alert value), Level 2 (below 54 mg/dL, clinically significant), and Level 3 (a severe event with altered mental or physical status requiring assistance).",
+    "why": [
+     "Level 1 is a glucose alert value based on the measurement itself and does not depend on symptoms.",
+     "",
+     "Level 2, clinically significant hypoglycemia, is defined below 54 mg/dL, not 60 mg/dL.",
+     "Level 3 is defined by a severe event with altered mental or physical status requiring assistance, not by a glucose number.",
+     "Level 3 is a clinical definition; a severe event requiring assistance qualifies even without a documented value."
+    ],
+    "img": [
+     1
+    ]
+   },
+   {
+    "q": "What is the most common cause of hypoglycemia?",
+    "ch": [
+     "An insulinoma secreting insulin autonomously",
+     "Drug-induced hypoglycemia from excess insulin or a sulfonylurea or meglitinide",
+     "Adrenal or pituitary insufficiency with loss of counter-regulation",
+     "Liver failure with depleted hepatic glycogen stores",
+     "Sepsis in a critically ill hospitalized patient"
+    ],
+    "correct": 1,
+    "exp": "The most common cause is drug-induced: excess insulin or a sulfonylurea or meglitinide, often unmasked by skipped meals, exercise, renal failure, or alcohol.",
+    "why": [
+     "Insulinoma is a recognized non-diabetic cause but is rare compared with drug-induced lows.",
+     "",
+     "Adrenal and pituitary insufficiency are listed non-diabetic causes, not the most common one.",
+     "Liver failure causes hypoglycemia and blunts the response to glucagon, but it is uncommon as a cause overall.",
+     "Sepsis is one of the non-diabetic causes but accounts for far fewer cases than medications."
+    ],
+    "img": [
+     3
+    ]
+   },
+   {
+    "q": "A well-appearing non-diabetic patient has a documented plasma glucose of 38 mg/dL. The critical sample drawn during the event shows a high insulin with a low C-peptide. What does this pattern indicate?",
+    "ch": [
+     "Exogenous injected insulin, as in factitious hypoglycemia",
+     "Adrenal insufficiency with loss of cortisol counter-regulation",
+     "Liver failure with exhausted hepatic glycogen stores",
+     "An insulinoma secreting endogenous insulin autonomously",
+     "Sulfonylurea ingestion driving endogenous insulin release"
+    ],
+    "correct": 0,
+    "exp": "A high insulin with a low C-peptide means the insulin was not made by the pancreas but injected. C-peptide is the endogenous-insulin marker, so exogenous insulin suppresses it while an insulinoma or a sulfonylurea raises both.",
+    "why": [
+     "",
+     "Adrenal insufficiency causes non-insulin-mediated hypoglycemia; insulin would not be high.",
+     "Hepatic failure causes hypoglycemia without a high insulin level.",
+     "An insulinoma raises insulin and C-peptide together, because the insulin is endogenous.",
+     "A sulfonylurea drives endogenous secretion, so insulin and C-peptide are both high."
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "A malnourished man with alcohol use disorder is found obtunded with a glucose of 30 mg/dL. Why is intramuscular glucagon a poor choice here?",
+    "ch": [
+     "Glucagon cannot be given intramuscularly to a patient who is obtunded and unable to swallow",
+     "Glucagon suppresses insulin release and would drive the plasma glucose down further",
+     "Glucagon precipitates Wernicke encephalopathy when given to a malnourished patient",
+     "Glucagon raises glucose only when the underlying cause is a sulfonylurea overdose",
+     "Glucagon needs intact glycogen stores, which are depleted in alcoholics, starvation and liver failure"
+    ],
+    "correct": 4,
+    "exp": "Glucagon raises glucose by mobilizing glycogen, so it is ineffective when glycogen stores are depleted, as in alcoholics, starvation and liver failure. Reach for IV dextrose instead, giving thiamine first or concurrently to avoid precipitating Wernicke's.",
+    "why": [
+     "The IM, SC and intranasal routes exist precisely for the patient who cannot take oral carbohydrate; route is not the problem.",
+     "Octreotide is the agent that suppresses insulin release; glucagon raises glucose by mobilizing glycogen.",
+     "It is glucose given without thiamine that risks Wernicke's in the malnourished; glucagon itself does not.",
+     "Refractory sulfonylurea-induced lows are treated with octreotide; glucagon is not sulfonylurea-specific.",
+     ""
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "An alert diabetic inpatient reports tremor and sweating and the bedside fingerstick reads 58 mg/dL. What does the Rule of 15 direct you to do?",
+    "ch": [
+     "Give 15 g of fast-acting carbohydrate, recheck in 15 minutes, and repeat if still below 70 mg/dL",
+     "Hold the next insulin dose and recheck the glucose before the next meal is served",
+     "Give intranasal glucagon and observe for 15 minutes before offering any food",
+     "Wait for the lab plasma glucose to verify the bedside reading before treating",
+     "Give 50 mL of IV dextrose and recheck the glucose in one hour"
+    ],
+    "correct": 0,
+    "exp": "The Rule of 15 is 15 g of oral fast-acting carbohydrate such as glucose tabs or juice, recheck in 15 minutes, repeat if the glucose is still below 70 mg/dL, then give a complex-carb meal. This patient is conscious and able to swallow, so oral carbohydrate is first-line.",
+    "why": [
+     "",
+     "Holding insulin addresses recurrence but does not treat the low glucose in front of you.",
+     "Glucagon is reserved for a severe low with no IV access in a patient who cannot swallow.",
+     "Treatment is never withheld waiting on the lab plasma glucose.",
+     "IV dextrose is for severe hypoglycemia or a patient unable to take oral carbohydrate; this patient is alert and able to swallow."
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "A patient is found unresponsive on the ward with a point-of-care glucose of 32 mg/dL. Which action is correct?",
+    "ch": [
+     "Draw a critical sample and treat once insulin and C-peptide result",
+     "Place glucose gel under the tongue and reassess in 15 minutes",
+     "Withhold treatment until the laboratory plasma glucose returns",
+     "Give IV dextrose now, with thiamine if the patient is malnourished",
+     "Give juice through a straw with the head of the bed elevated"
+    ],
+    "correct": 3,
+    "exp": "An obtunded patient cannot protect the airway, so oral carbohydrate is unsafe; give IV dextrose, or glucagon if there is no IV access. Treatment is never withheld waiting on the lab glucose, and thiamine is given first or concurrently in the malnourished to avoid Wernicke's.",
+    "why": [
+     "The critical sample is drawn during the event but never delays raising the glucose.",
+     "Oral carbohydrate in any form is unsafe in a patient who cannot protect the airway.",
+     "Never withhold treatment waiting on the lab; the bedside glucose is enough to act on.",
+     "",
+     "Giving fluids by mouth to an unresponsive patient risks aspiration; use IV dextrose or glucagon."
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "An elderly woman taking glipizide arrives with a glucose of 40 mg/dL, wakes fully after IV dextrose, and asks to go home. What is the appropriate plan?",
+    "ch": [
+     "Discharge her with a glucagon kit and clinic follow-up the next day",
+     "Discharge her with instructions to eat a meal and recheck her glucose at home",
+     "Discharge her after four hours if her glucose stays above 70 mg/dL",
+     "Admit her for prolonged glucose monitoring, adding octreotide if lows recur",
+     "Admit her only if a lab plasma glucose confirms the initial bedside reading"
+    ],
+    "correct": 3,
+    "exp": "Sulfonylurea-induced hypoglycemia recurs for hours to days, so the brisk recovery after dextrose is deceptive. These patients need admission with frequent glucose monitoring, and octreotide, which suppresses insulin release, for refractory or recurrent lows.",
+    "why": [
+     "A glucagon kit does not protect against recurrent lows, and glucagon is a poor rescue in prolonged sulfonylurea toxicity.",
+     "Discharge is unsafe: sulfonylurea lows recur for hours to days after an apparent recovery.",
+     "A few hours of observation does not cover the prolonged action of a sulfonylurea.",
+     "",
+     "The bedside value plus the clinical response already establishes the diagnosis; admission does not hinge on a repeat lab."
+    ],
+    "img": [
+     10
+    ]
+   },
+   {
+    "q": "A patient with long-standing diabetes taking a beta-blocker has repeated severe lows with no warning symptoms beforehand. Which statement best explains this and its management?",
+    "ch": [
+     "Tightening the glycemic target will retrain the patient to detect early lows sooner",
+     "Glucagon is contraindicated in beta-blocked patients, so only oral carbohydrate may be used",
+     "Blunted counter-regulation plus beta-blockade masks the adrenergic warning signs, and relaxing glycemic targets can restore them",
+     "The beta-blocker itself lowers plasma glucose and should be swapped for a calcium channel blocker",
+     "Without adrenergic symptoms these events are unlikely to represent true hypoglycemia at all"
+    ],
+    "correct": 2,
+    "exp": "Recurrent lows blunt counter-regulation and beta-blockade masks the adrenergic warning signs of tremor and palpitations, so the patient may present only with confusion or diaphoresis. This is hypoglycemia unawareness, and the fix is to relax glycemic targets for two to three weeks so autonomic warning signs recover.",
+    "why": [
+     "Tighter targets deepen hypoglycemia unawareness; targets should be relaxed to allow autonomic recovery.",
+     "Glucagon remains a rescue option; the issue is the absence of warning symptoms before the event.",
+     "",
+     "The problem is masking of adrenergic warning signs, not a glucose-lowering effect of the beta-blocker.",
+     "Whipple's triad, not the presence of adrenergic symptoms, decides whether hypoglycemia is real."
+    ],
+    "img": [
+     4
+    ]
+   },
+   {
+    "q": "As plasma glucose falls in a healthy person, which sequence of counter-regulatory events occurs?",
+    "ch": [
+     "Growth hormone rises first and is the response diabetics lose earliest over time",
+     "Cortisol and growth hormone rise first, then glucagon, and epinephrine last of all",
+     "Insulin secretion stops first, then glucagon and epinephrine rise, then cortisol and growth hormone",
+     "Epinephrine rises first, followed by a fall in insulin secretion and then a glucagon surge",
+     "Glucagon and cortisol rise together while insulin secretion continues unchanged throughout"
+    ],
+    "correct": 2,
+    "exp": "Counter-regulation is ordered: insulin secretion stops first, then glucagon and epinephrine rise, and cortisol and growth hormone follow. Diabetics lose these responses over time, which is the basis of hypoglycemia unawareness.",
+    "why": [
+     "Growth hormone is a late response; diabetics lose glucagon and epinephrine responses as the practical problem.",
+     "Cortisol and growth hormone are the last responses, not the first.",
+     "",
+     "Insulin secretion switching off precedes the epinephrine response, not the other way round.",
+     "Stopping insulin secretion is the first step in counter-regulation, so it does not continue unchanged."
+    ],
+    "img": [
+     2
+    ]
+   }
+  ]
+ },
+ "t1dm": {
+  "condition": "Type 1 Diabetes Mellitus",
+  "questions": [
+   {
+    "q": "Which statement most accurately characterizes Type 1 diabetes mellitus?",
+    "ch": [
+     "Insulin resistance with progressive beta-cell exhaustion and a tendency toward HHS",
+     "T-cell-mediated autoimmune destruction of islet beta cells causing absolute insulin deficiency",
+     "A defect in hepatic glucose uptake with entirely preserved insulin secretion",
+     "An acquired deficiency of glucagon that leaves insulin action unopposed",
+     "Beta-cell loss from chronic pancreatitis with negative islet autoantibodies"
+    ],
+    "correct": 1,
+    "exp": "Type 1 is T-cell-mediated autoimmune destruction of pancreatic islet beta cells producing absolute insulin deficiency, unlike the insulin resistance of Type 2. That absolute lack of insulin is why unchecked lipolysis and ketogenesis predispose to DKA.",
+    "why": [
+     "Insulin resistance and a tendency to HHS describe Type 2 diabetes.",
+     "",
+     "Insulin secretion is not preserved in Type 1; C-peptide is low or undetectable.",
+     "The deficiency in Type 1 is of insulin, not glucagon.",
+     "Type 1 is autoimmune and marked by positive islet autoantibodies such as GAD65 and IA-2."
+    ],
+    "img": [
+     3
+    ]
+   },
+   {
+    "q": "Which single result meets the diagnostic criteria for diabetes?",
+    "ch": [
+     "A 2-hour OGTT value of 165 mg/dL",
+     "A fasting glucose of 110 mg/dL with polyuria",
+     "A fasting plasma glucose of 118 mg/dL",
+     "An HbA1c of 6.5%",
+     "A random glucose of 180 mg/dL in an asymptomatic patient"
+    ],
+    "correct": 3,
+    "exp": "The diagnostic criteria are a fasting glucose of 126 mg/dL or more, a random glucose of 200 mg/dL or more with symptoms, a 2-hour OGTT of 200 mg/dL or more, or an HbA1c of 6.5% or more. An HbA1c of 6.5% meets the threshold.",
+    "why": [
+     "The 2-hour OGTT threshold is 200 mg/dL or more, so 165 mg/dL falls short.",
+     "Symptoms do not lower the fasting threshold of 126 mg/dL.",
+     "The fasting threshold is 126 mg/dL or more, so 118 mg/dL does not qualify.",
+     "",
+     "A random glucose is diagnostic at 200 mg/dL or more and only with symptoms."
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "Which presentation is most characteristic of new-onset Type 1 diabetes?",
+    "ch": [
+     "An adult with isolated fasting hyperglycemia and negative islet autoantibodies",
+     "A lean adolescent with polyuria, polydipsia, polyphagia and unexplained weight loss",
+     "An obese adult found to be hyperglycemic on routine screening, with no symptoms",
+     "An older adult with profound hyperosmolar dehydration and no ketones on testing",
+     "A child with recurrent hypoglycemia and an inappropriately high C-peptide level"
+    ],
+    "correct": 1,
+    "exp": "The classic history is polyuria, polydipsia, polyphagia and unexplained weight loss with fatigue, typically in a young lean patient, and many first present in DKA.",
+    "why": [
+     "Negative autoantibodies with isolated fasting hyperglycemia does not support autoimmune diabetes.",
+     "",
+     "Asymptomatic hyperglycemia found on screening in an obese adult fits Type 2 diabetes.",
+     "Hyperosmolar dehydration without ketones is HHS, the Type 2 decompensation.",
+     "A high C-peptide indicates preserved endogenous insulin, which argues against Type 1."
+    ],
+    "img": [
+     4
+    ]
+   },
+   {
+    "q": "A 32-year-old labeled Type 2 has failed oral agents within a year of diagnosis. Which pair of results would confirm Type 1 diabetes presenting as LADA?",
+    "ch": [
+     "A normal C-peptide with a positive tTG-IgA",
+     "An undetectable C-peptide with a positive TPO antibody alone",
+     "A high C-peptide with a positive insulin autoantibody",
+     "A high C-peptide with negative islet autoantibodies",
+     "A low C-peptide with positive GAD65 and IA-2 autoantibodies"
+    ],
+    "correct": 4,
+    "exp": "Type 1 is confirmed by positive islet autoantibodies such as GAD65, IA-2, ZnT8 or IAA together with a low or undetectable C-peptide reflecting poor endogenous insulin. In an adult failing oral agents this is LADA, latent autoimmune diabetes in adults.",
+    "why": [
+     "tTG-IgA screens for celiac disease, an associated autoimmune condition, and does not establish the type of diabetes.",
+     "TPO antibody marks autoimmune thyroid disease, which is screened for at diagnosis but is not an islet autoantibody.",
+     "A high C-peptide argues against the absolute insulin deficiency that defines Type 1.",
+     "A high C-peptide with no autoantibodies is the Type 2 pattern.",
+     ""
+    ],
+    "img": [
+     8
+    ]
+   },
+   {
+    "q": "A patient in DKA has an initial serum potassium of 3.0 mEq/L. What does this require?",
+    "ch": [
+     "Hold insulin until the potassium is at least 3.3 mEq/L while repleting it",
+     "Give bicarbonate first to shift potassium out of the cells",
+     "Start insulin and add dextrose immediately to prevent hypokalemia",
+     "Hold IV fluids until the potassium has normalized",
+     "Start the insulin infusion and replete potassium at the same time"
+    ],
+    "correct": 0,
+    "exp": "Insulin drives potassium intracellularly and can cause fatal hypokalemia, so it is not started in DKA until the potassium is at least 3.3 mEq/L. The sequence is fluids first, then potassium repletion, then insulin.",
+    "why": [
+     "",
+     "Bicarbonate would drive potassium further into the cells and worsen the hypokalemia.",
+     "Dextrose is added when the glucose approaches 200 mg/dL; it does not protect the potassium.",
+     "Fluids come first in DKA and are not withheld for the potassium.",
+     "Insulin must be held, not merely accompanied by repletion, when the potassium is below 3.3 mEq/L."
+    ],
+    "img": [
+     10
+    ]
+   },
+   {
+    "q": "Which finding signals that DKA has resolved and the insulin infusion can be transitioned?",
+    "ch": [
+     "Urine ketones have cleared on dipstick testing",
+     "Kussmaul respirations have stopped",
+     "The serum potassium has returned to normal",
+     "The glucose has fallen to about 200 mg/dL",
+     "The anion gap has closed"
+    ],
+    "correct": 4,
+    "exp": "DKA has resolved when the anion gap is closed, not when the glucose is normal. Dextrose is added as the glucose falls toward 200 mg/dL so the infusion can keep closing the gap, and SubQ insulin is overlapped with the drip before it is stopped.",
+    "why": [
+     "Urine ketone testing lags and does not define resolution; the anion gap does.",
+     "Improved breathing is reassuring but is not the criterion for stopping the infusion.",
+     "Potassium must be watched closely throughout, but a normal value does not mean the gap has closed.",
+     "A glucose near 200 mg/dL is the trigger to add dextrose, not evidence that DKA has resolved.",
+     ""
+    ],
+    "img": [
+     10
+    ]
+   },
+   {
+    "q": "A patient on a hybrid closed-loop insulin pump develops nausea and ketones about six hours after the infusion set kinks. Why does ketosis appear so quickly?",
+    "ch": [
+     "A pump delivers only rapid-acting insulin, so there is no basal depot when delivery fails",
+     "Closed-loop systems over-deliver insulin whenever the infusion set occludes",
+     "Pump insulin is long-acting and keeps being absorbed for many hours",
+     "The ketosis reflects the honeymoon phase rather than any pump problem",
+     "Pramlintide in the reservoir slows gastric emptying and generates ketones"
+    ],
+    "correct": 0,
+    "exp": "An insulin pump uses only rapid-acting insulin, so there is no long-acting basal depot to fall back on. When delivery fails the patient ketoses rapidly, which is why pump patients need sick-day rules and a backup injection plan.",
+    "why": [
+     "",
+     "An occluded set means insulin is not delivered at all, not over-delivered.",
+     "Pumps use rapid-acting insulin only; no long-acting insulin is in the reservoir.",
+     "The honeymoon phase is transient residual beta-cell function after diagnosis and lowers insulin needs; it does not cause ketosis.",
+     "Pramlintide is a separate injection that blunts post-prandial glucose; it is not delivered by the pump."
+    ],
+    "img": [
+     10
+    ]
+   },
+   {
+    "q": "A Type 1 patient vomiting from gastroenteritis has eaten nothing all day and asks whether to skip her insulin. What should she be told?",
+    "ch": [
+     "Halve the basal dose and stop checking ketones until she can eat",
+     "Hold both basal and bolus insulin until she is eating normally again",
+     "Hold the basal insulin but continue correction doses every four hours",
+     "Continue the basal insulin, check glucose and ketones frequently, and keep up hydration",
+     "Stop insulin and use pramlintide until oral intake resumes"
+    ],
+    "correct": 3,
+    "exp": "Sick-day rules: never skip basal insulin even when ill or not eating, because omission precipitates DKA. Continue insulin, check glucose and ketones frequently, maintain hydration, and know when to seek care.",
+    "why": [
+     "Ketone checks are most important when the patient is ill, and the basal dose should not be arbitrarily cut.",
+     "Omitting basal insulin is exactly what precipitates DKA in a Type 1 patient.",
+     "Basal insulin is the dose that must not be held; correction doses alone leave a basal gap.",
+     "",
+     "Pramlintide is an adjunct to mealtime insulin, never a substitute for basal insulin."
+    ],
+    "img": [
+     10
+    ]
+   },
+   {
+    "q": "A patient has persistently high fasting glucose readings. Which test differentiates the dawn phenomenon from the Somogyi effect?",
+    "ch": [
+     "A 2-hour OGTT",
+     "Islet autoantibody testing",
+     "A 3 AM glucose check",
+     "An HbA1c",
+     "A C-peptide level"
+    ],
+    "correct": 2,
+    "exp": "The dawn phenomenon is an early-morning counter-regulatory hormone surge, whereas the Somogyi effect is rebound hyperglycemia after nocturnal hypoglycemia. Check a 3 AM glucose to differentiate them: a low value points to the Somogyi effect.",
+    "why": [
+     "An OGTT is a diagnostic test for diabetes, not a way to examine nocturnal glucose.",
+     "Islet autoantibodies confirm the autoimmune diagnosis and do not address fasting hyperglycemia.",
+     "",
+     "HbA1c reflects about three months of glucose control and says nothing about overnight patterns.",
+     "C-peptide marks endogenous insulin and is used to confirm the type of diabetes."
+    ],
+    "img": [
+     10
+    ]
+   },
+   {
+    "q": "Three months after diagnosis, a lean 16-year-old with Type 1 diabetes needs much less insulin and her HbA1c is normal. Her family asks whether the diabetes has gone. What is the best explanation?",
+    "ch": [
+     "Her insulin has been over-delivered, masking the true insulin requirement",
+     "Teplizumab given at diagnosis has reversed the beta-cell destruction",
+     "The honeymoon phase: transient residual beta-cell function that lowers insulin needs but is temporary",
+     "She was mislabeled and actually has Type 2 diabetes with insulin resistance",
+     "Her islet autoantibodies have cleared, so the autoimmune destruction has stopped"
+    ],
+    "correct": 2,
+    "exp": "This is the honeymoon phase: transient residual beta-cell function after diagnosis can lower insulin needs, but it is temporary. Insulin must continue, because omission precipitates DKA.",
+    "why": [
+     "Falling insulin needs this soon after diagnosis reflect residual beta-cell function, not a delivery problem.",
+     "Teplizumab delays progression from stage 2 to stage 3 in at-risk individuals; it does not reverse established disease.",
+     "",
+     "A lean, ketosis-prone phenotype with positive autoantibodies and low C-peptide establishes Type 1; Type 2 is insulin resistance.",
+     "Islet autoantibodies mark an ongoing autoimmune process, and beta-cell destruction is not reversed."
+    ],
+    "img": [
+     10
+    ]
+   }
+  ]
+ },
+ "cushings": {
+  "condition": "Cushing's Syndrome",
+  "questions": [
+   {
+    "q": "What is the most common cause of Cushing's syndrome overall?",
+    "ch": [
+     "Bilateral adrenal hyperplasia",
+     "A pituitary ACTH-secreting adenoma",
+     "Exogenous glucocorticoid therapy",
+     "A cortisol-secreting adrenal adenoma",
+     "Ectopic ACTH from small-cell lung cancer"
+    ],
+    "correct": 2,
+    "exp": "Exogenous, iatrogenic glucocorticoid use is by far the most common cause overall, which is why the history should always start with steroids.",
+    "why": [
+     "Adrenal hyperplasia is an ACTH-independent cause and accounts for few cases.",
+     "A pituitary adenoma is the most common endogenous cause but not the most common cause overall.",
+     "",
+     "An adrenal adenoma is an ACTH-independent endogenous cause and is much less common.",
+     "Ectopic ACTH is an uncommon ACTH-dependent endogenous cause."
+    ],
+    "img": [
+     1
+    ]
+   },
+   {
+    "q": "Which cluster of findings is the classic Cushingoid habitus?",
+    "ch": [
+     "Hyperpigmented palmar creases with hypotension, salt craving and weight loss",
+     "Exophthalmos, heat intolerance, weight loss and a fine resting tremor",
+     "Coarse facial features, enlarging hands and feet, and prognathism",
+     "Symmetric proximal weakness with a heliotrope rash and Gottron papules",
+     "Moon face, buffalo hump, purple striae and central obesity with thin extremities"
+    ],
+    "correct": 4,
+    "exp": "Buffalo hump, moon face, wide purple striae and central obesity with thin extremities make up the classic Cushingoid habitus, along with easy bruising and proximal muscle weakness.",
+    "why": [
+     "Hyperpigmentation with hypotension and salt craving describes adrenal insufficiency, the opposite state.",
+     "Exophthalmos with heat intolerance and tremor is thyrotoxicosis, not cortisol excess.",
+     "Coarse features with enlarging hands and prognathism describe growth hormone excess.",
+     "A heliotrope rash with Gottron papules is dermatomyositis; Cushing's weakness comes with the Cushingoid habitus.",
+     ""
+    ],
+    "img": [
+     5
+    ]
+   },
+   {
+    "q": "Which cause accounts for roughly 70-80% of endogenous Cushing's syndrome?",
+    "ch": [
+     "Bilateral ACTH-independent adrenal hyperplasia",
+     "A cortisol-secreting adrenal adenoma",
+     "An adrenal carcinoma producing cortisol",
+     "A pituitary ACTH-secreting adenoma, or Cushing's disease",
+     "Ectopic ACTH from a bronchial carcinoid tumor"
+    ],
+    "correct": 3,
+    "exp": "Cushing's disease, a pituitary ACTH-secreting adenoma, accounts for roughly 70-80% of endogenous cases and is the most common endogenous cause.",
+    "why": [
+     "Adrenal hyperplasia is an ACTH-independent cause and is not the leading one.",
+     "An adrenal adenoma is ACTH-independent and accounts for a minority of endogenous cases.",
+     "Adrenal carcinoma is a rare ACTH-independent cause.",
+     "",
+     "Ectopic ACTH from tumors such as carcinoid or small-cell lung cancer is uncommon by comparison."
+    ],
+    "img": [
+     1
+    ]
+   },
+   {
+    "q": "A patient has moon facies, wide purple striae and new hypertension. What is the correct first step?",
+    "ch": [
+     "Order an adrenal CT to look for a mass",
+     "Confirm hypercortisolism biochemically with two first-line tests",
+     "Measure a plasma ACTH to localize the source",
+     "Proceed to inferior petrosal sinus sampling",
+     "Order a pituitary MRI to look for an adenoma"
+    ],
+    "correct": 1,
+    "exp": "Step 1 is to confirm hypercortisolism with at least two of late-night salivary cortisol, 24-hour urinary free cortisol, or the 1 mg overnight dexamethasone suppression test. Imaging first causes errors, because incidental pituitary and adrenal lesions are common.",
+    "why": [
+     "Adrenal CT belongs after hypercortisolism is proven and ACTH has localized the source.",
+     "",
+     "Plasma ACTH is step 2, splitting ACTH-dependent from ACTH-independent disease once hypercortisolism is confirmed.",
+     "IPSS confirms a pituitary source when the MRI is equivocal; it is not a screening test.",
+     "Imaging before biochemical confirmation causes errors, since incidental pituitary lesions are common."
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "Screening confirms hypercortisolism and the plasma ACTH is suppressed. What does this indicate?",
+    "ch": [
+     "Pseudo-Cushing's from alcohol use, obesity or depression",
+     "Nelson syndrome following bilateral adrenalectomy",
+     "An ACTH-independent adrenal source such as adenoma, carcinoma or hyperplasia",
+     "A pituitary ACTH-secreting adenoma, that is, Cushing's disease",
+     "Ectopic ACTH secretion from a small-cell lung cancer"
+    ],
+    "correct": 2,
+    "exp": "A low or suppressed ACTH points to an ACTH-independent, adrenal source: adenoma, carcinoma or hyperplasia. A normal or high ACTH is what defines ACTH-dependent disease.",
+    "why": [
+     "Pseudo-Cushing's mimics the biochemistry of hypercortisolism, which has already been confirmed here.",
+     "Nelson syndrome is driven by pituitary ACTH overproduction after adrenalectomy, giving a high ACTH.",
+     "",
+     "A pituitary adenoma secretes ACTH, so the ACTH would be normal or high rather than suppressed.",
+     "Ectopic ACTH is ACTH-dependent and produces a high, unsuppressed ACTH."
+    ],
+    "img": [
+     8
+    ]
+   },
+   {
+    "q": "Which finding indicates that the cortisol excess is ACTH-dependent rather than adrenal in origin?",
+    "ch": [
+     "Hyperpigmentation of the skin",
+     "Wide purple abdominal striae",
+     "Proximal muscle weakness",
+     "A dorsocervical fat pad",
+     "New-onset hyperglycemia"
+    ],
+    "correct": 0,
+    "exp": "Hyperpigmentation occurs only in ACTH-dependent disease, because ACTH shares a precursor with MSH. It is absent in adrenal, ACTH-independent causes.",
+    "why": [
+     "",
+     "Wide purple striae reflect protein catabolism from cortisol excess of any source.",
+     "Proximal muscle weakness is a catabolic effect of cortisol and does not localize the source.",
+     "Fat redistribution occurs with hypercortisolism whatever the driver.",
+     "Hyperglycemia reflects cortisol's diabetogenic effect and occurs in every form."
+    ],
+    "img": [
+     5
+    ]
+   },
+   {
+    "q": "A smoker develops severe weakness, hypokalemic metabolic alkalosis, hyperpigmentation and marked hypercortisolism over two months, without a florid Cushingoid appearance. What is the most likely source?",
+    "ch": [
+     "Pseudo-Cushing's from heavy alcohol use",
+     "A cortisol-secreting adrenal adenoma",
+     "Exogenous glucocorticoid use the patient has not reported",
+     "Ectopic ACTH secretion, classically from small-cell lung cancer",
+     "A pituitary microadenoma causing Cushing's disease"
+    ],
+    "correct": 3,
+    "exp": "Ectopic ACTH classically presents with rapid onset, severe hypokalemic alkalosis, hyperpigmentation and less florid Cushingoid features; think small-cell lung cancer or carcinoid. The cortisol load overwhelms 11-beta-HSD2 and activates mineralocorticoid receptors.",
+    "why": [
+     "Pseudo-Cushing's does not produce marked hypercortisolism with hypokalemic alkalosis.",
+     "An adrenal source is ACTH-independent, so hyperpigmentation would be absent.",
+     "Exogenous steroids suppress ACTH and do not cause hyperpigmentation.",
+     "",
+     "Cushing's disease develops gradually with florid Cushingoid features and rarely this degree of hypokalemic alkalosis."
+    ],
+    "img": [
+     3
+    ]
+   },
+   {
+    "q": "Hypercortisolism is confirmed and the ACTH is elevated, but the pituitary MRI shows no clear adenoma. What is the definitive next test?",
+    "ch": [
+     "A 24-hour urinary free cortisol",
+     "Adrenal CT with contrast",
+     "Late-night salivary cortisol",
+     "Repeat the 1 mg overnight dexamethasone suppression test",
+     "Inferior petrosal sinus sampling"
+    ],
+    "correct": 4,
+    "exp": "Inferior petrosal sinus sampling is the gold standard for confirming a pituitary source when the MRI is equivocal or shows no clear adenoma.",
+    "why": [
+     "Urinary free cortisol is a first-line screening test and adds nothing to localization here.",
+     "An elevated ACTH already excludes an ACTH-independent adrenal source.",
+     "Late-night salivary cortisol is a screening test for hypercortisolism, not a localizing one.",
+     "The overnight dexamethasone test screens for hypercortisolism, which is already confirmed.",
+     ""
+    ],
+    "img": [
+     8
+    ]
+   },
+   {
+    "q": "Three days after apparently curative transsphenoidal surgery, a patient becomes hypotensive with hypoglycemia and hyponatremia. What is happening and what is the immediate action?",
+    "ch": [
+     "Mifepristone effect; withhold the drug and recheck a serum cortisol level",
+     "Adrenal crisis from postoperative adrenal insufficiency; give IV hydrocortisone and fluids",
+     "Recurrent hypercortisolism; start a steroidogenesis inhibitor such as metyrapone",
+     "Pasireotide-induced hyperglycemia; start insulin and monitor the glucose closely",
+     "Nelson syndrome; arrange urgent pituitary imaging and consider radiotherapy"
+    ],
+    "correct": 1,
+    "exp": "Removing the source leaves a suppressed axis that cannot yet respond, so adrenal insufficiency is expected after curative surgery. Hypotension, shock, hypoglycemia and hyponatremia are adrenal crisis: give IV hydrocortisone and fluids immediately, then replace and taper slowly with sick-day dosing.",
+    "why": [
+     "Mifepristone blocks the glucocorticoid receptor and raises measured cortisol; it is not the issue after curative surgery.",
+     "",
+     "The picture is cortisol deficiency, not excess; lowering cortisol further would be harmful.",
+     "Pasireotide causes hyperglycemia, the opposite of this patient's hypoglycemia.",
+     "Nelson syndrome follows bilateral adrenalectomy and presents with tumor growth and hyperpigmentation, not acute shock."
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "Surgery has failed to cure a patient's Cushing's disease and medical therapy is being selected. Which statement about these agents is correct?",
+    "ch": [
+     "Ketoconazole requires LFT monitoring for hepatotoxicity",
+     "Pasireotide reliably improves glycemic control",
+     "Mifepristone lowers measured cortisol, which then guides dosing",
+     "Osilodrostat's main hazard is endometrial thickening",
+     "Etomidate is the preferred long-term outpatient option"
+    ],
+    "correct": 0,
+    "exp": "Ketoconazole is a steroidogenesis inhibitor whose hepatotoxicity requires LFT monitoring; over-suppression with any of these agents can cause adrenal insufficiency.",
+    "why": [
+     "",
+     "Pasireotide frequently causes hyperglycemia, so glucose must be monitored closely.",
+     "Mifepristone blocks the glucocorticoid receptor, so cortisol rises and cannot be used to guide dosing.",
+     "Endometrial thickening is a mifepristone effect; the flagged hazard with osilodrostat is QT prolongation.",
+     "Etomidate is given IV in the ICU for emergent cortisol lowering, not as long-term outpatient therapy."
+    ],
+    "img": [
+     7
+    ]
+   }
+  ]
+ }
+}

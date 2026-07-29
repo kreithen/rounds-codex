@@ -1,0 +1,691 @@
+{
+ "pad": {
+  "condition": "Peripheral Arterial Disease",
+  "questions": [
+   {
+    "q": "Which statement best characterizes peripheral arterial disease (PAD)?",
+    "ch": [
+     "Lymphatic obstruction producing non-pitting limb swelling with thickened overlying skin",
+     "Atherosclerotic narrowing of the limb arteries causing exertional claudication and marking systemic cardiovascular risk",
+     "Venous valve incompetence producing dependent edema and stasis pigmentation of the calf",
+     "Inflammatory small-vessel vasculitis confined to the digital arteries of the hands",
+     "Acute thrombosis of the deep calf veins presenting with unilateral swelling and tenderness"
+    ],
+    "correct": 1,
+    "exp": "PAD is atherosclerosis of the limb arteries — the same plaque as coronary disease — producing a supply-demand mismatch: flow is adequate at rest but insufficient during exertion, which is intermittent claudication. It is a coronary heart disease risk equivalent.",
+    "why": [
+     "Non-pitting swelling with thickened skin is lymphedema, which does not produce claudication or absent pulses.",
+     "",
+     "Dependent edema with stasis pigmentation describes chronic venous insufficiency, not arterial occlusive disease.",
+     "PAD is atherosclerotic plaque in the large and medium limb arteries, not a small-vessel vasculitis of the hands.",
+     "Acute unilateral calf swelling and tenderness is deep vein thrombosis; PAD causes exertional pain with diminished pulses."
+    ],
+    "img": [
+     1,
+     3
+    ]
+   },
+   {
+    "q": "Which resting ankle-brachial index (ABI) value is diagnostic of peripheral arterial disease?",
+    "ch": [
+     "≤0.90",
+     "0.91–0.99",
+     "1.00–1.09",
+     "1.10–1.39",
+     "≥1.40"
+    ],
+    "correct": 0,
+    "exp": "A resting ankle-brachial index of 0.90 or less is diagnostic of peripheral arterial disease; the index is the ratio of ankle systolic to the higher brachial systolic pressure.",
+    "why": [
+     "",
+     "This is the borderline range, not the diagnostic cutoff for peripheral arterial disease.",
+     "This is a normal resting ankle-brachial index.",
+     "This is a normal resting ankle-brachial index and does not establish the diagnosis.",
+     "A value above 1.40 suggests non-compressible, calcified vessels rather than health, and is not the diagnostic cutoff."
+    ],
+    "img": [
+     8
+    ]
+   },
+   {
+    "q": "Which set of findings makes up the '6 Ps' of acute limb ischemia?",
+    "ch": [
+     "Pain, pruritus, purpura, pallor, pitting edema, pulsatility",
+     "Pallor, palpitations, pyrexia, paralysis, petechiae, pain",
+     "Paresthesia, pyuria, pallor, pain, photophobia, pulselessness",
+     "Pain, pallor, polyuria, pulselessness, pruritus, paresis",
+     "Pain, pallor, pulselessness, paresthesia, paralysis, poikilothermia"
+    ],
+    "correct": 4,
+    "exp": "The 6 Ps of acute limb ischemia are pain, pallor, pulselessness, paresthesia, paralysis, and poikilothermia (cold) — a surgical emergency requiring urgent anticoagulation and revascularization.",
+    "why": [
+     "Pruritus, purpura, and pitting edema are not features of acute arterial occlusion.",
+     "Palpitations, pyrexia, and petechiae are not part of the acute limb ischemia mnemonic.",
+     "Pyuria and photophobia have nothing to do with limb perfusion.",
+     "Polyuria and pruritus are not among the six; paresthesia and poikilothermia are.",
+     ""
+    ],
+    "img": [
+     5
+    ]
+   },
+   {
+    "q": "A man with long-standing diabetes and chronic kidney disease has classic calf claudication, but his resting ABI is 1.48. What is the best next step?",
+    "ch": [
+     "Proceed directly to surgical bypass of the femoropopliteal segment",
+     "Obtain CT angiography of the lower extremities as a screening test",
+     "Toe-brachial index, because medial calcification makes the ankle vessels non-compressible",
+     "Repeat the resting ABI in one week and accept the result if it is unchanged",
+     "Reassure him that an ABI above 1.40 excludes peripheral arterial disease"
+    ],
+    "correct": 2,
+    "exp": "An ABI above 1.40 means non-compressible, medially calcified vessels — common in diabetes and chronic kidney disease — not healthy arteries. The toe-brachial index (TBI ≤0.70) is used when the ABI is falsely elevated by medial calcification.",
+    "why": [
+     "Revascularization is not undertaken before the diagnosis is confirmed and medical therapy tried.",
+     "Anatomic imaging is reserved for planning revascularization, not for screening or diagnosis.",
+     "",
+     "Repeating the same falsely elevated measurement does not overcome medial calcification.",
+     "An ABI above 1.40 indicates non-compressible calcified vessels, not the absence of disease."
+    ],
+    "img": [
+     8
+    ]
+   },
+   {
+    "q": "Which agent is the first-line symptomatic drug to increase pain-free walking distance in claudication, yet is contraindicated in heart failure?",
+    "ch": [
+     "Warfarin, a vitamin K antagonist",
+     "Lisinopril, an ACE inhibitor",
+     "Cilostazol, a phosphodiesterase-3 inhibitor",
+     "Low-dose aspirin, an antiplatelet agent",
+     "Atorvastatin, a high-intensity statin"
+    ],
+    "correct": 2,
+    "exp": "Cilostazol is the first-line symptomatic drug for claudication, increasing pain-free walking distance, but as a phosphodiesterase-3 inhibitor it is contraindicated in heart failure — a favorite exam trap.",
+    "why": [
+     "Warfarin has no role in stable claudication and is not a symptomatic agent.",
+     "An ACE inhibitor is used for blood pressure and cardiovascular risk reduction, not for walking distance.",
+     "",
+     "Aspirin reduces MI, stroke, and cardiovascular death in symptomatic PAD but does not improve walking distance.",
+     "A statin stabilizes plaque and lowers LDL; it is not a symptomatic claudication drug."
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "A 64-year-old smoker reports cramping buttock and hip pain with walking, erectile dysfunction, and absent femoral pulses. Where is the lesion?",
+    "ch": [
+     "Infrapopliteal tibial disease",
+     "Isolated dorsalis pedis occlusion",
+     "Subclavian artery stenosis",
+     "Aortoiliac disease — Leriche syndrome",
+     "Femoropopliteal disease"
+    ],
+    "correct": 3,
+    "exp": "Buttock and hip claudication with impotence and absent femoral pulses localizes the lesion to the aortoiliac segment — Leriche syndrome.",
+    "why": [
+     "Distal tibial disease produces foot and calf symptoms, and the femoral pulses remain palpable.",
+     "An isolated pedal occlusion cannot explain buttock claudication or loss of the femoral pulse.",
+     "Subclavian disease affects the arm, not the buttock, hip, or erectile function.",
+     "",
+     "Femoropopliteal disease causes calf claudication, not buttock pain with absent femoral pulses."
+    ],
+    "img": [
+     4
+    ]
+   },
+   {
+    "q": "Which treatment for intermittent claudication is a Class I, guideline first-line recommendation that improves walking distance as much as many drugs?",
+    "ch": [
+     "Chronic warfarin anticoagulation targeting an INR of 2 to 3",
+     "Graduated compression stockings worn during all waking hours",
+     "Elevating both legs above heart level for an hour each day",
+     "Supervised exercise therapy — a structured walking program",
+     "Strict bed rest until the leg pain resolves completely"
+    ],
+    "correct": 3,
+    "exp": "Supervised exercise therapy is a Class I, first-line recommendation: the patient walks to near-maximal claudication pain, rests, and repeats. It improves walking distance as much as many drugs.",
+    "why": [
+     "Anticoagulation is not the treatment for stable claudication and adds bleeding risk.",
+     "Compression stockings treat venous disease and can worsen arterial perfusion.",
+     "Elevating an ischemic leg reduces perfusion — ischemic legs are kept dependent, below the heart.",
+     "",
+     "Bed rest deconditions the patient; exertional claudication pain is expected and therapeutic, not harmful."
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "A patient with known PAD now wakes at night with foot pain that improves when he hangs the foot off the side of the bed. What does this indicate?",
+    "ch": [
+     "Critical limb-threatening ischemia with rest pain, needing urgent vascular referral",
+     "Simple nocturnal leg cramps requiring only stretching and better hydration",
+     "Improving collateral circulation and a favorable response to a walking program",
+     "Deep vein thrombosis of the calf, best confirmed with duplex ultrasound",
+     "Neurogenic pseudoclaudication arising from lumbar spinal stenosis"
+    ],
+    "correct": 0,
+    "exp": "Rest pain that is worse lying flat and relieved by dangling the foot off the bed for gravity flow is advanced, critical limb-threatening ischemia, and it needs urgent vascular referral to save the limb.",
+    "why": [
+     "",
+     "Benign cramps are not relieved by gravity and do not occur in this pattern in a patient with known PAD.",
+     "Gravity-dependent relief signals inadequate resting perfusion, not improving collaterals.",
+     "Deep vein thrombosis causes swelling and tenderness, not pain relieved by dangling the foot.",
+     "Pseudoclaudication is exertional and relieved by flexion or sitting, not by dangling the foot at night."
+    ],
+    "img": [
+     5
+    ]
+   },
+   {
+    "q": "A 70-year-old has leg pain with walking that is relieved only by sitting or bending forward; his pedal pulses and ABI are normal. What is the most likely explanation?",
+    "ch": [
+     "Atheroembolism causing blue toe syndrome, with mottled toes and intact proximal pulses",
+     "Neurogenic pseudoclaudication from spinal stenosis, relieved by flexion rather than by rest alone",
+     "Aortoiliac Leriche disease, which typically abolishes the femoral pulses and lowers the ABI",
+     "Critical limb-threatening ischemia, which causes rest pain and ulceration rather than exertional pain",
+     "Acute limb ischemia, which presents abruptly with the 6 Ps including pulselessness and pallor"
+    ],
+    "correct": 1,
+    "exp": "Neurogenic pseudoclaudication from spinal stenosis is relieved by flexion or sitting rather than by standing rest alone, and the pulses and ABI are normal — the key mimic to distinguish from true claudication.",
+    "why": [
+     "Blue toe syndrome presents with mottled discolored toes, which this patient does not have.",
+     "",
+     "Leriche disease gives absent femoral pulses and an abnormal ABI; both are normal in this patient.",
+     "Critical ischemia causes rest pain and tissue loss with a very low ABI, not normal pulses.",
+     "Acute limb ischemia is sudden and dramatic, not a chronic reproducible walking complaint."
+    ],
+    "img": [
+     4,
+     7
+    ]
+   },
+   {
+    "q": "Which statement best reflects the prognosis of symptomatic PAD and the lipid goal that follows from it?",
+    "ch": [
+     "PAD risk is confined to the limb, so the lipid target is the same as for the general population",
+     "Amputation is the leading cause of death in PAD, so a statin adds little beyond exercise therapy",
+     "Statins should be avoided in PAD because myalgias limit walking distance in claudication",
+     "Lipid lowering is indicated only after revascularization has failed to relieve the symptoms",
+     "PAD is a coronary heart disease risk equivalent — most patients die of MI or stroke — so a high-intensity statin targeting LDL below 70 mg/dL is recommended"
+    ],
+    "correct": 4,
+    "exp": "PAD is a coronary heart disease risk equivalent: most patients die of MI or stroke, not limb loss. A high-intensity statin is recommended for essentially all PAD patients, targeting LDL below 70 mg/dL and by many accounts below 55.",
+    "why": [
+     "PAD risk is systemic — the leg is the messenger, and the ABI speaks to the coronaries and carotids too.",
+     "Most PAD patients die of MI or stroke rather than limb loss, and statin therapy is central, not marginal.",
+     "A statin is recommended for essentially all PAD patients; myalgias are monitored, not a reason to withhold it.",
+     "Lipid lowering is core secondary prevention from the moment of diagnosis, independent of revascularization.",
+     ""
+    ],
+    "img": [
+     10
+    ]
+   }
+  ]
+ },
+ "hyperlipidemia": {
+  "condition": "Hyperlipidemia",
+  "questions": [
+   {
+    "q": "Which mechanism best explains how elevated LDL-C causes atherosclerotic cardiovascular disease?",
+    "ch": [
+     "Retained ApoB-containing particles enter the arterial intima, oxidize, and trigger foam-cell and plaque formation",
+     "Cholesterol crystals precipitate directly within the cardiac valves and produce stenosis",
+     "Excess circulating lipid raises blood viscosity enough to mechanically obstruct the arteries",
+     "Triglycerides are deposited within the myocardium and progressively impair contractile function",
+     "HDL particles carry cholesterol into the vessel wall, where it accumulates as fatty streaks"
+    ],
+    "correct": 0,
+    "exp": "Retained ApoB-containing lipoprotein particles enter the arterial intima, oxidize, and trigger foam-cell and plaque formation — the basis of atherosclerotic cardiovascular disease.",
+    "why": [
+     "",
+     "Valvular cholesterol crystal deposition is not the mechanism of atherosclerosis described here.",
+     "Viscosity does not mechanically obstruct arteries; retained ApoB particles in the intima drive plaque.",
+     "Myocardial triglyceride deposition is not the mechanism; very high triglycerides instead threaten pancreatitis.",
+     "HDL does not deposit cholesterol in the wall — the retained ApoB-containing particles do."
+    ],
+    "img": [
+     3
+    ]
+   },
+   {
+    "q": "A 32-year-old with an untreated LDL-C of 245 mg/dL has thickened Achilles tendons and firm nodules over the knuckles. What do these findings indicate?",
+    "ch": [
+     "Corneal arcus, an entirely expected age-related change",
+     "Gouty tophi, reflecting chronically elevated serum uric acid",
+     "Tendon xanthomas, the classic sign of familial hypercholesterolemia",
+     "Eruptive xanthomas, which accompany severe hypertriglyceridemia",
+     "Xanthelasma, a periorbital deposit without lipid significance"
+    ],
+    "correct": 2,
+    "exp": "Tendon xanthomas of the Achilles and knuckles are the classic sign of familial hypercholesterolemia; suspect it when untreated LDL-C is 190 mg/dL or higher, or with a strong premature-CAD family history.",
+    "why": [
+     "Corneal arcus is a corneal ring, and in a young patient it is itself abnormal — it is not what is described.",
+     "Tophi are urate deposits of gout and are unrelated to an untreated LDL-C of 245 mg/dL.",
+     "",
+     "Eruptive xanthomas go with very high triglycerides, not an isolated LDL-C elevation.",
+     "Xanthelasma is a periorbital lipid deposit and is a genuine clue to dyslipidemia, but it is not a tendon finding."
+    ],
+    "img": [
+     5
+    ]
+   },
+   {
+    "q": "By what mechanism do statins lower LDL-C?",
+    "ch": [
+     "They activate PPAR-alpha and thereby accelerate triglyceride clearance",
+     "They inhibit HMG-CoA reductase, upregulating hepatic LDL receptors",
+     "They block intestinal cholesterol absorption at the brush border",
+     "They inhibit ATP-citrate lyase upstream of hepatic cholesterol synthesis",
+     "They are monoclonal antibodies that neutralize circulating PCSK9"
+    ],
+    "correct": 1,
+    "exp": "Statins inhibit HMG-CoA reductase, upregulating hepatic LDL receptors — which is also why PCSK9, the protein that degrades those receptors, matters so much.",
+    "why": [
+     "Accelerating triglyceride clearance describes the fibrates, such as fenofibrate.",
+     "",
+     "Blocking intestinal cholesterol absorption is the mechanism of ezetimibe.",
+     "ATP-citrate lyase inhibition is the mechanism of bempedoic acid.",
+     "Monoclonal antibodies against PCSK9 are evolocumab and alirocumab, not statins."
+    ],
+    "img": [
+     2,
+     9
+    ]
+   },
+   {
+    "q": "Which of the following is one of the four AHA/ACC statin benefit groups?",
+    "ch": [
+     "Isolated triglycerides of 200 mg/dL on a fasting panel",
+     "Any adult over the age of 40 regardless of risk factors",
+     "A total cholesterol above 180 mg/dL in a nonsmoking adult",
+     "Untreated LDL-C of 190 mg/dL or higher at any age",
+     "An HDL-C below 40 mg/dL in an otherwise healthy adult"
+    ],
+    "correct": 3,
+    "exp": "The four statin benefit groups are clinical ASCVD, LDL-C of 190 mg/dL or higher, diabetes at age 40 to 75, and an elevated 10-year risk by the pooled cohort estimator.",
+    "why": [
+     "Moderately elevated triglycerides alone are not a statin benefit group; they are a separate problem.",
+     "Age over 40 alone is not a benefit group — diabetes at age 40 to 75 is.",
+     "A total cholesterol threshold is not how the benefit groups are defined.",
+     "",
+     "A low HDL-C by itself is not one of the four statin benefit groups."
+    ],
+    "img": [
+     6,
+     9
+    ]
+   },
+   {
+    "q": "A patient's triglycerides return at 1,200 mg/dL and he has epigastric pain. Which risk does this represent, and which drug class targets it?",
+    "ch": [
+     "Cholestatic liver injury — treated with observation and imaging",
+     "Acute pancreatitis — treated with a fibrate such as fenofibrate",
+     "Accelerated atherosclerosis — treated with a PCSK9 inhibitor",
+     "Rhabdomyolysis — treated by stopping all lipid-lowering therapy",
+     "Hypothyroid myopathy — treated with levothyroxine replacement"
+    ],
+    "correct": 1,
+    "exp": "Severe hypertriglyceridemia above 500 mg/dL shifts the risk from atherosclerosis toward acute pancreatitis, and the primary target of a fibrate such as fenofibrate is very high triglycerides to prevent pancreatitis.",
+    "why": [
+     "Cholestasis can raise lipids as a secondary cause, but it is not the risk this triglyceride level creates.",
+     "",
+     "A PCSK9 inhibitor targets LDL-C; the immediate threat at this triglyceride level is pancreatitis.",
+     "Rhabdomyolysis is a rare statin adverse effect, not a consequence of very high triglycerides.",
+     "Hypothyroidism is a secondary cause of dyslipidemia but is not the acute risk in this presentation."
+    ],
+    "img": [
+     4,
+     6
+    ]
+   },
+   {
+    "q": "Which drug combination carries the greatest risk of dangerous myopathy in a patient who needs both LDL and triglyceride lowering?",
+    "ch": [
+     "Fenofibrate plus a statin",
+     "Ezetimibe plus a statin",
+     "Icosapent ethyl plus a statin",
+     "Bempedoic acid plus ezetimibe",
+     "Gemfibrozil plus a statin"
+    ],
+    "correct": 4,
+    "exp": "Gemfibrozil combined with a statin is the dangerous myopathy combination; when a fibrate is needed with a statin, fenofibrate is used instead.",
+    "why": [
+     "Fenofibrate is the fibrate chosen when one must be used with a statin, precisely because it is safer.",
+     "Ezetimibe with a statin is well tolerated and is the standard first add-on for additional LDL lowering.",
+     "Icosapent ethyl is added for residual risk with triglycerides of 150 to 499; its concerns are atrial fibrillation and bleeding.",
+     "Bempedoic acid is used in statin intolerance; its distinctive risks are raised uric acid and tendon rupture.",
+     ""
+    ],
+    "img": [
+     9,
+     10
+    ]
+   },
+   {
+    "q": "A very high-risk ASCVD patient is not at LDL goal on a maximally tolerated high-intensity statin. What is the next step in the titration sequence?",
+    "ch": [
+     "Stop the statin and start a fibrate as monotherapy instead",
+     "Add niacin and recheck the lipid panel in one year's time",
+     "Escalate the statin beyond the maximally tolerated dose",
+     "Defer any further therapy until a repeat CAC score is obtained",
+     "Add ezetimibe, then a PCSK9 inhibitor or bempedoic acid if still not at goal"
+    ],
+    "correct": 4,
+    "exp": "If the LDL goal is not met on a maximally tolerated statin, add ezetimibe — which blocks intestinal cholesterol absorption for a modest additional 15 to 20% reduction — then a PCSK9 inhibitor or bempedoic acid for very high-risk patients.",
+    "why": [
+     "Stopping the statin sacrifices the largest source of LDL lowering and worsens ASCVD risk.",
+     "Niacin is not part of this titration sequence, and a one-year recheck is far too long an interval.",
+     "Exceeding the maximally tolerated dose is not the recommended move; add a nonstatin agent instead.",
+     "CAC scoring refines intermediate-risk decisions, not the management of a very high-risk patient already on therapy.",
+     ""
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "A patient taking atorvastatin reports severe muscle pain, weakness, and dark tea-colored urine. What is the priority concern?",
+    "ch": [
+     "Tendon rupture, the characteristic risk of bempedoic acid therapy",
+     "Statin hepatotoxicity, which baseline LFTs would have predicted",
+     "Dehydration producing concentrated but otherwise normal urine",
+     "Rhabdomyolysis — a red flag requiring immediate evaluation",
+     "Ordinary statin-associated muscle symptoms; continue unchanged"
+    ],
+    "correct": 3,
+    "exp": "Severe muscle pain and weakness with dark tea-colored urine on a statin is the red flag for rhabdomyolysis. Statin-associated muscle symptoms are common and true rhabdomyolysis is rare, but CK should be checked whenever the patient is symptomatic.",
+    "why": [
+     "Tendon rupture risk belongs to bempedoic acid, and this patient is taking a statin.",
+     "Baseline LFTs are checked with statins, but hepatotoxicity does not present as muscle pain with dark urine.",
+     "Dehydration does not explain severe muscle pain and weakness in a patient on a statin.",
+     "",
+     "Common statin-associated muscle symptoms do not include weakness with dark urine; that combination demands evaluation."
+    ],
+    "img": [
+     4,
+     10
+    ]
+   },
+   {
+    "q": "How is the coronary artery calcium (CAC) score best used in lipid management?",
+    "ch": [
+     "To reclassify intermediate-risk patients when the statin treatment decision is uncertain",
+     "To replace the lipid panel as the primary screening test for dyslipidemia",
+     "To confirm familial hypercholesterolemia in a patient with tendon xanthomas",
+     "To monitor the response to therapy every three months after starting a statin",
+     "To decide whether triglyceride lowering is needed to prevent acute pancreatitis"
+    ],
+    "correct": 0,
+    "exp": "CAC scoring reclassifies intermediate-risk patients and personalizes the statin decision when treatment decisions are uncertain; a score of zero can reasonably defer statins in selected intermediate-risk patients.",
+    "why": [
+     "",
+     "The lipid panel remains the core test; CAC refines risk rather than replacing screening.",
+     "Familial hypercholesterolemia is suspected from LDL-C of 190 or higher, family history, and exam findings.",
+     "CAC is not a monitoring tool; follow-up lipid panels 4 to 12 weeks after a change serve that purpose.",
+     "Pancreatitis risk is judged from the triglyceride level itself, not from a calcium score."
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "A previously well patient is found to have new, marked hyperlipidemia. Which workup best screens for secondary causes?",
+    "ch": [
+     "Abdominal ultrasound and 24-hour ambulatory blood pressure monitoring",
+     "A genetic panel for PCSK9 gain-of-function mutations in every patient",
+     "TSH, fasting glucose or HbA1c, renal and liver panel, and urine protein",
+     "Coronary angiography together with an exercise treadmill test",
+     "Serum CK and an electromyogram of the proximal muscle groups"
+    ],
+    "correct": 2,
+    "exp": "Screening for secondary causes means TSH, fasting glucose or HbA1c, renal and liver panel, and urine protein — capturing hypothyroidism, diabetes, nephrotic syndrome, and cholestasis, alongside a review of drugs such as thiazides and steroids.",
+    "why": [
+     "Ambulatory blood pressure monitoring addresses hypertension, not secondary dyslipidemia.",
+     "Genetic testing of every patient is not the screening strategy; familial disease is suspected from LDL-C and family history.",
+     "",
+     "Coronary testing evaluates established disease, not the secondary causes of the lipid abnormality.",
+     "CK and electromyography evaluate muscle symptoms on therapy, not secondary causes of hyperlipidemia."
+    ],
+    "img": [
+     6
+    ]
+   }
+  ]
+ },
+ "gerd": {
+  "condition": "GERD",
+  "questions": [
+   {
+    "q": "Which statement best describes the pathophysiology of GERD?",
+    "ch": [
+     "Excess gastrin from a neuroendocrine tumor drives acid hypersecretion and ulceration",
+     "An incompetent or transiently relaxing lower esophageal sphincter allows reflux that overwhelms esophageal clearance and mucosal defense",
+     "Autoimmune destruction of the gastric parietal cells eliminates acid secretion entirely",
+     "Loss of myenteric ganglion cells prevents the lower esophageal sphincter from ever relaxing",
+     "Eosinophilic infiltration of the esophageal mucosa produces rings, furrows, and dysphagia"
+    ],
+    "correct": 1,
+    "exp": "GERD arises from an incompetent or transiently relaxing lower esophageal sphincter that lets acidic reflux, along with bile and pepsin, overwhelm esophageal clearance and mucosal defense — it is a barrier failure, not simply too much acid.",
+    "why": [
+     "Gastrin-driven hypersecretion is a distinct rare entity; GERD is failure of the antireflux barrier.",
+     "",
+     "Loss of parietal cells causes achlorhydria, essentially the opposite of acid reflux disease.",
+     "Failure of the sphincter to relax describes achalasia, which manometry is used to rule out.",
+     "Eosinophilic infiltration with rings and furrows is eosinophilic esophagitis, a mimic of GERD."
+    ],
+    "img": [
+     3
+    ]
+   },
+   {
+    "q": "Why is a proton pump inhibitor taken 30 to 60 minutes before breakfast?",
+    "ch": [
+     "It forms a floating raft over the gastric contents before the meal arrives",
+     "Fasting administration avoids interference with calcium and magnesium absorption",
+     "PPIs bind only actively secreting proton pumps, and the meal stimulates secretion",
+     "Food destroys the drug, so it can only be given on a completely empty stomach",
+     "Morning dosing prevents the tachyphylaxis that develops with regular use"
+    ],
+    "correct": 2,
+    "exp": "PPI timing matters because PPIs bind only actively secreting proton pumps, so the dose is given before the first meal; full benefit takes several days, and the drug should not be treated like an on-demand antacid.",
+    "why": [
+     "Forming a floating raft is how alginate works, and alginate is best taken after meals.",
+     "Mineral malabsorption is a long-term PPI concern, not the reason for dosing before breakfast.",
+     "",
+     "PPIs are not destroyed by food; the timing exists to catch actively secreting pumps.",
+     "Tachyphylaxis develops with H2 receptor antagonists such as famotidine, not from PPI timing."
+    ],
+    "img": [
+     9,
+     10
+    ]
+   },
+   {
+    "q": "Endoscopy in a patient with long-standing reflux shows salmon-colored mucosa in the distal esophagus. What confirms Barrett's esophagus, and why does it matter?",
+    "ch": [
+     "Intestinal metaplasia with goblet cells on biopsy; it is the key premalignant lesion",
+     "Eosinophils above 15 per high-power field; it predicts failure of acid suppression",
+     "Los Angeles grade D erosions; they establish irreversible sphincter incompetence",
+     "Absent peristalsis on manometry; it confirms progression toward achalasia",
+     "A positive H. pylori stain; it identifies the organism driving the reflux"
+    ],
+    "correct": 0,
+    "exp": "Barrett's esophagus is salmon-colored mucosa with intestinal metaplasia and goblet cells on biopsy — the key premalignant lesion on the pathway from chronic reflux through dysplasia to esophageal adenocarcinoma.",
+    "why": [
+     "",
+     "Dense esophageal eosinophilia defines eosinophilic esophagitis, a separate diagnosis.",
+     "The Los Angeles grades describe the severity of erosive esophagitis, not Barrett's metaplasia.",
+     "Absent peristalsis suggests achalasia, which manometry is used to exclude before surgery.",
+     "H. pylori is tested for when dyspepsia overlaps, but it does not define Barrett's esophagus."
+    ],
+    "img": [
+     7,
+     8
+    ]
+   },
+   {
+    "q": "Which finding in a patient with reflux symptoms mandates prompt upper endoscopy instead of an empiric PPI trial?",
+    "ch": [
+     "Regurgitation of sour fluid a few times each week after dinner",
+     "Dysphagia, weight loss, GI bleeding, anemia, or new onset over age 60",
+     "Heartburn that is worse after large meals and when lying supine",
+     "A hiatal hernia noted incidentally on a previous chest radiograph",
+     "Symptoms that respond within three days of starting famotidine"
+    ],
+    "correct": 1,
+    "exp": "Alarm features — dysphagia, odynophagia, weight loss, GI bleed, anemia, vomiting, and new onset over age 60 — mandate prompt EGD; uncomplicated classic symptoms are handled with an empiric PPI trial.",
+    "why": [
+     "Occasional sour regurgitation without alarm features does not by itself require endoscopy.",
+     "",
+     "Postprandial and supine heartburn is the classic uncomplicated picture treated with an empiric trial.",
+     "An incidental hiatal hernia predisposes to reflux but is not synonymous with GERD and is not an alarm feature.",
+     "A prompt response to acid suppression is reassuring and is not an indication for endoscopy."
+    ],
+    "img": [
+     4,
+     6
+    ]
+   },
+   {
+    "q": "How is erosive esophagitis graded, and what does a normal endoscopy in a symptomatic patient suggest?",
+    "ch": [
+     "Prague C and M criteria; a normal endoscopy points to functional dyspepsia only",
+     "Savary-Miller stages 1 to 5; a normal endoscopy indicates achalasia is present",
+     "Barrett's dysplasia grading; a normal endoscopy rules out pathologic acid exposure",
+     "Los Angeles grades A to D; a normal endoscopy suggests non-erosive reflux disease",
+     "Los Angeles grades I to IV; a normal endoscopy excludes reflux disease entirely"
+    ],
+    "correct": 3,
+    "exp": "Erosive esophagitis is graded by the Los Angeles classification A to D, and non-erosive reflux disease often has a normal endoscopy despite genuine reflux symptoms.",
+    "why": [
+     "The Prague criteria describe the extent of Barrett's, not the grade of erosive esophagitis.",
+     "Erosive disease is graded by the Los Angeles classification, and a normal study does not mean achalasia.",
+     "Dysplasia grading applies to Barrett's biopsies; a normal endoscopy is entirely compatible with NERD.",
+     "",
+     "The Los Angeles system uses letters A to D, and a normal endoscopy does not exclude reflux."
+    ],
+    "img": [
+     7,
+     8
+    ]
+   },
+   {
+    "q": "Which set of lifestyle measures is recommended for reflux?",
+    "ch": [
+     "Increased caffeine and alcohol intake to stimulate lower esophageal sphincter tone",
+     "Sleeping completely flat without a pillow and eating the largest meal just before bed",
+     "Routine NSAID use with meals plus a calcium channel blocker to relax the sphincter",
+     "Weight loss, elevating the head of the bed 6 to 8 inches, and avoiding meals within 3 hours of lying down",
+     "Large evening meals followed by supine rest to help the stomach empty more completely"
+    ],
+    "correct": 3,
+    "exp": "Lifestyle modification for reflux means weight loss, elevating the head of the bed 6 to 8 inches, avoiding meals within 3 hours of lying down, smaller meals, limiting trigger foods, and smoking and alcohol cessation.",
+    "why": [
+     "Caffeine and alcohol are provocants of reflux; the advice is to limit them, not increase them.",
+     "Sleeping flat and eating just before bed are exactly the behaviors patients are taught to avoid.",
+     "NSAIDs and calcium channel blockers are cautioned against because they aggravate reflux or lower LES tone.",
+     "",
+     "Large evening meals followed by lying down provoke reflux rather than relieving it."
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "Before anti-reflux surgery, which tests objectively confirm the diagnosis and assess motility?",
+    "ch": [
+     "Ambulatory pH monitoring with impedance, plus esophageal manometry",
+     "A barium swallow alone, repeated after an eight-week course of therapy",
+     "H. pylori stool antigen testing and a fasting serum gastrin level",
+     "Coronary angiography to exclude a cardiac cause of the chest pain",
+     "Capsule endoscopy of the small bowel with mucosal biopsy sampling"
+    ],
+    "correct": 0,
+    "exp": "Ambulatory pH monitoring, with or without impedance, is the gold standard for confirming pathologic acid exposure before anti-reflux surgery, and esophageal manometry assesses motility and LES function while ruling out achalasia.",
+    "why": [
+     "",
+     "A barium swallow does not quantify acid exposure or assess esophageal motility.",
+     "H. pylori and gastrin testing address other diagnoses, not preoperative reflux confirmation.",
+     "Cardiac testing is considered when atypical chest pain overlaps, not as preoperative reflux assessment.",
+     "Capsule endoscopy examines the small bowel and has no role in preoperative reflux evaluation."
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "A patient with 15 years of heartburn now reports new solid-food dysphagia. What must be considered until proven otherwise?",
+    "ch": [
+     "Functional heartburn, best managed with reassurance and further observation",
+     "A hiatal hernia, which is synonymous with GERD and needs no further workup",
+     "Peptic stricture or Barrett's with adenocarcinoma, requiring urgent endoscopy",
+     "Tachyphylaxis to famotidine, managed by switching him to an antacid",
+     "Hypomagnesemia from chronic acid suppression, corrected by supplementation"
+    ],
+    "correct": 2,
+    "exp": "New dysphagia on a background of long-standing GERD means peptic stricture or Barrett's and adenocarcinoma until proven otherwise; dysphagia is an alarm feature that requires urgent EGD.",
+    "why": [
+     "Functional heartburn is a diagnosis of exclusion and never explains a new alarm feature.",
+     "A hiatal hernia predisposes to reflux but is not synonymous with GERD and does not account for dysphagia.",
+     "",
+     "Tachyphylaxis to an H2 blocker does not cause dysphagia, and switching to an antacid ignores an alarm feature.",
+     "Hypomagnesemia is a long-term PPI effect and does not produce solid-food dysphagia."
+    ],
+    "img": [
+     4,
+     7
+    ]
+   },
+   {
+    "q": "A 24-year-old has reflux symptoms that do not respond to a full-dose PPI. What should be considered next?",
+    "ch": [
+     "Doubling the PPI dose indefinitely without any further evaluation",
+     "Immediate fundoplication regardless of objective reflux testing",
+     "Long-term metoclopramide as first-line maintenance monotherapy",
+     "Antacids alone, on the reasoning that acid is clearly not involved",
+     "Eosinophilic esophagitis — endoscopy with biopsy is warranted"
+    ],
+    "correct": 4,
+    "exp": "Refractory reflux unresponsive to PPIs in a young patient should raise eosinophilic esophagitis, and biopsy is warranted; functional heartburn is the other mimic, and simply up-dosing acid suppression misses both.",
+    "why": [
+     "Escalating the dose indefinitely without evaluation is exactly the reflex to avoid in a PPI non-responder.",
+     "Surgery requires objective reflux documented by pH or impedance testing and adequate motility first.",
+     "Metoclopramide is a short-course adjunct for delayed gastric emptying, limited by tardive dyskinesia.",
+     "Antacids give only brief on-demand relief and do not address the cause of PPI non-response.",
+     ""
+    ],
+    "img": [
+     8,
+     10
+    ]
+   },
+   {
+    "q": "Which risks justify using the lowest effective PPI dose and reassessing therapy periodically?",
+    "ch": [
+     "Tardive dyskinesia and extrapyramidal symptoms with prolonged therapy",
+     "Dental erosions and hoarseness, which are extraesophageal reflux effects",
+     "Constipation with aluminum salts and diarrhea with magnesium salts",
+     "Hypergastrinemia that reliably progresses to esophageal adenocarcinoma",
+     "Hypomagnesemia, B12 and iron malabsorption, C. difficile, and fractures"
+    ],
+    "correct": 4,
+    "exp": "Long-term PPI risks include hypomagnesemia, B12 and iron malabsorption, C. difficile, and fractures — so the lowest effective dose is used and therapy is reassessed, with monitoring of magnesium and B12.",
+    "why": [
+     "Tardive dyskinesia and extrapyramidal symptoms are metoclopramide risks, not PPI risks.",
+     "Dental erosions and hoarseness are extraesophageal manifestations of reflux itself, not effects of PPI therapy.",
+     "Constipation with aluminum and diarrhea with magnesium are antacid effects, not PPI effects.",
+     "Hypergastrinemia is monitored with vonoprazan, and it does not reliably progress to adenocarcinoma.",
+     ""
+    ],
+    "img": [
+     9,
+     10
+    ]
+   }
+  ]
+ }
+}

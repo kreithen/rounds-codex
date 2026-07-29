@@ -5,20 +5,20 @@
    {
     "q": "How is Mycobacterium tuberculosis transmitted?",
     "ch": [
+     "By direct contact with broken skin",
      "By inhaled airborne droplet nuclei that reach the alveoli",
      "By the faecal-oral route from contaminated water",
      "By transfusion of contaminated blood products",
-     "By an arthropod vector during a blood meal",
-     "By direct contact with broken skin"
+     "By an arthropod vector during a blood meal"
     ],
-    "correct": 0,
+    "correct": 1,
     "exp": "TB spreads by inhaled airborne droplet nuclei of 1 to 5 microns that travel to the alveoli. This is why airborne isolation is required.",
     "why": [
+     "Skin contact does not transmit pulmonary TB.",
      "",
      "TB is not a faecal-oral pathogen.",
      "Bloodborne transmission is not the route of spread.",
-     "There is no insect vector for TB.",
-     "Skin contact does not transmit pulmonary TB."
+     "There is no insect vector for TB."
     ],
     "img": [
      1
@@ -27,20 +27,20 @@
    {
     "q": "What distinguishes latent tuberculosis infection from active disease?",
     "ch": [
+     "Latent infection requires four-drug therapy",
+     "Latent infection cannot be detected by any test",
      "Latent infection is symptomatic but non-infectious",
      "Latent infection is asymptomatic, non-infectious and contained by cell-mediated immunity",
-     "Latent infection always shows cavitation on chest X-ray",
-     "Latent infection requires four-drug therapy",
-     "Latent infection cannot be detected by any test"
+     "Latent infection always shows cavitation on chest X-ray"
     ],
-    "correct": 1,
+    "correct": 3,
     "exp": "Latent infection is contained by cell-mediated immunity: asymptomatic and non-infectious, with a 5 to 10 percent lifetime risk of reactivation that rises with HIV, TNF inhibitors and diabetes.",
     "why": [
+     "Latent infection is treated with single-drug or short-course regimens, not RIPE.",
+     "TST and IGRA detect infection, though they cannot separate latent from active.",
      "Latent infection is asymptomatic by definition.",
      "",
-     "Cavitation indicates active reactivation disease.",
-     "Latent infection is treated with single-drug or short-course regimens, not RIPE.",
-     "TST and IGRA detect infection, though they cannot separate latent from active."
+     "Cavitation indicates active reactivation disease."
     ],
     "img": [
      3
@@ -71,20 +71,20 @@
    {
     "q": "Which test is the gold standard for confirming active pulmonary tuberculosis?",
     "ch": [
-     "Serum antibody testing for mycobacterial antigens",
      "Tuberculin skin test read at 48 to 72 hours",
      "Interferon-gamma release assay on whole blood",
      "Sputum acid-fast bacilli smear and culture",
-     "Chest X-ray showing upper-lobe cavitation"
+     "Chest X-ray showing upper-lobe cavitation",
+     "Serum antibody testing for mycobacterial antigens"
     ],
-    "correct": 3,
+    "correct": 2,
     "exp": "Sputum AFB smear and culture is the confirmatory gold standard, with NAAT or Xpert MTB/RIF for rapid detection and rifampin resistance. Three sputum specimens should be obtained.",
     "why": [
-     "Serology is not a reliable diagnostic test for TB.",
      "The tuberculin skin test detects infection, not active disease.",
      "IGRA also detects infection only and cannot distinguish latent from active.",
      "",
-     "Imaging supports the diagnosis but does not confirm the organism."
+     "Imaging supports the diagnosis but does not confirm the organism.",
+     "Serology is not a reliable diagnostic test for TB."
     ],
     "img": [
      6
@@ -93,20 +93,20 @@
    {
     "q": "Why does reactivation tuberculosis localise to the upper lobes?",
     "ch": [
+     "Because high oxygen tension there favours the aerobic organism",
      "Because of reduced lymphatic drainage",
      "Because the upper lobes have thinner pleura",
      "Because bronchi are wider in the upper lobes",
-     "Because of gravity-dependent drainage",
-     "Because high oxygen tension there favours the aerobic organism"
+     "Because of gravity-dependent drainage"
     ],
-    "correct": 4,
+    "correct": 0,
     "exp": "M. tuberculosis is aerobic, and the higher oxygen tension in the apices favours its growth. That is why reactivation causes upper-lobe cavitation.",
     "why": [
+     "",
      "Lymphatic drainage does not explain the apical predilection.",
      "Pleural thickness is irrelevant to organism growth.",
      "Bronchial calibre does not determine the site of reactivation.",
-     "Gravity-dependent drainage would favour lower lobes.",
-     ""
+     "Gravity-dependent drainage would favour lower lobes."
     ],
     "img": [
      3
@@ -115,20 +115,20 @@
    {
     "q": "Which adverse effect is characteristic of ethambutol?",
     "ch": [
+     "Orange-red discoloration of body fluids",
      "Optic neuritis",
      "Hyperuricaemia",
      "Myelosuppression",
-     "Peripheral neuropathy",
-     "Orange-red discoloration of body fluids"
+     "Peripheral neuropathy"
     ],
-    "correct": 0,
+    "correct": 1,
     "exp": "Ethambutol causes optic neuritis. Check baseline visual acuity and red-green colour discrimination, and teach the patient to report any change in vision.",
     "why": [
+     "Orange-red secretions are caused by rifampin.",
      "",
      "Raised uric acid is caused by pyrazinamide.",
      "Myelosuppression is a feature of linezolid in MDR regimens.",
-     "Peripheral neuropathy is caused by isoniazid and prevented with pyridoxine.",
-     "Orange-red secretions are caused by rifampin."
+     "Peripheral neuropathy is caused by isoniazid and prevented with pyridoxine."
     ],
     "img": [
      7
@@ -137,20 +137,20 @@
    {
     "q": "Why must pyridoxine be co-administered with isoniazid?",
     "ch": [
+     "To prevent hyperuricaemia",
+     "To enhance bactericidal activity",
      "To prevent hepatotoxicity",
      "To prevent peripheral neuropathy",
-     "To prevent optic neuritis",
-     "To prevent hyperuricaemia",
-     "To enhance bactericidal activity"
+     "To prevent optic neuritis"
     ],
-    "correct": 1,
+    "correct": 3,
     "exp": "Isoniazid causes peripheral neuropathy, and pyridoxine prevents it. It is essential in pregnancy, alcoholism, diabetes, malnutrition and HIV.",
     "why": [
+     "Hyperuricaemia is a pyrazinamide effect.",
+     "Pyridoxine is protective, not potentiating.",
      "Isoniazid is hepatotoxic, but pyridoxine does not prevent that; LFT monitoring does.",
      "",
-     "Optic neuritis is an ethambutol effect.",
-     "Hyperuricaemia is a pyrazinamide effect.",
-     "Pyridoxine is protective, not potentiating."
+     "Optic neuritis is an ethambutol effect."
     ],
     "img": [
      7
@@ -159,20 +159,20 @@
    {
     "q": "A patient is about to start infliximab. Why must latent tuberculosis be excluded first?",
     "ch": [
+     "Because infliximab causes false-positive sputum cultures",
+     "Because infliximab is contraindicated with rifampin",
      "Because infliximab causes optic neuritis",
      "Because infliximab is directly toxic to mycobacteria",
-     "Because TNF-alpha maintains granuloma integrity, and blocking it allows reactivation",
-     "Because infliximab causes false-positive sputum cultures",
-     "Because infliximab is contraindicated with rifampin"
+     "Because TNF-alpha maintains granuloma integrity, and blocking it allows reactivation"
     ],
-    "correct": 2,
+    "correct": 4,
     "exp": "TNF-alpha maintains granuloma integrity. Anti-TNF biologics such as infliximab allow latent TB to reactivate, so screening is mandatory before starting.",
     "why": [
+     "It does not interfere with culture results.",
+     "Drug interaction is not the reason for pre-treatment screening.",
      "Optic neuritis is an ethambutol effect.",
      "Infliximab has no antimycobacterial activity.",
-     "",
-     "It does not interfere with culture results.",
-     "Drug interaction is not the reason for pre-treatment screening."
+     ""
     ],
     "img": [
      3
@@ -181,20 +181,20 @@
    {
     "q": "What is the standard treatment regimen for drug-susceptible active pulmonary tuberculosis?",
     "ch": [
+     "RIPE for 2 months then isoniazid and rifampin for 4 months",
+     "Rifampin and isoniazid for 2 months total",
      "A single dose of rifapentine",
      "Bedaquiline, linezolid and pretomanid for 6 months",
-     "Isoniazid alone for 9 months",
-     "RIPE for 2 months then isoniazid and rifampin for 4 months",
-     "Rifampin and isoniazid for 2 months total"
+     "Isoniazid alone for 9 months"
     ],
-    "correct": 3,
+    "correct": 0,
     "exp": "Standard therapy is RIPE (rifampin, isoniazid, pyrazinamide, ethambutol) for a 2-month intensive phase, then isoniazid and rifampin for a 4-month continuation phase, six months total, adjusted for susceptibilities.",
     "why": [
+     "",
+     "Two months of two drugs is inadequate for active disease.",
      "A single dose does not treat active tuberculosis.",
      "BPaL is the regimen for MDR or XDR disease, not drug-susceptible TB.",
-     "Isoniazid monotherapy treats latent infection, not active disease, and would breed resistance.",
-     "",
-     "Two months of two drugs is inadequate for active disease."
+     "Isoniazid monotherapy treats latent infection, not active disease, and would breed resistance."
     ],
     "img": [
      7
@@ -230,20 +230,20 @@
    {
     "q": "Which broad division of lung cancer accounts for roughly 85% of cases?",
     "ch": [
+     "Metastatic disease from other primaries",
+     "Small cell lung cancer",
      "Non-small cell lung cancer",
      "Carcinoid tumour",
-     "Mesothelioma",
-     "Metastatic disease from other primaries",
-     "Small cell lung cancer"
+     "Mesothelioma"
     ],
-    "correct": 0,
+    "correct": 2,
     "exp": "Non-small cell lung cancer accounts for about 85% of cases and includes adenocarcinoma, squamous cell and large cell. Small cell lung cancer, a neuroendocrine tumour, makes up about 15%.",
     "why": [
+     "Metastases to the lung are common but are not primary lung cancer.",
+     "Small cell accounts for about 15%.",
      "",
      "Carcinoid tumours are a small minority.",
-     "Mesothelioma arises from pleura, not lung parenchyma.",
-     "Metastases to the lung are common but are not primary lung cancer.",
-     "Small cell accounts for about 15%."
+     "Mesothelioma arises from pleura, not lung parenchyma."
     ],
     "img": [
      1
@@ -252,20 +252,20 @@
    {
     "q": "Which subtype is the most common and the most frequent type in non-smokers?",
     "ch": [
+     "Carcinoid",
+     "Squamous cell carcinoma",
      "Small cell carcinoma",
      "Adenocarcinoma",
-     "Large cell carcinoma",
-     "Carcinoid",
-     "Squamous cell carcinoma"
+     "Large cell carcinoma"
     ],
-    "correct": 1,
+    "correct": 3,
     "exp": "Adenocarcinoma is now the most common subtype and the most frequent type in non-smokers. It is peripheral and carries targetable driver mutations such as EGFR, ALK, ROS1 and KRAS G12C.",
     "why": [
+     "Carcinoid is uncommon and neuroendocrine.",
+     "Squamous cell is classically central and strongly smoking-associated.",
      "Small cell is central, aggressive and strongly smoking-associated.",
      "",
-     "Large cell is a less common NSCLC subtype.",
-     "Carcinoid is uncommon and neuroendocrine.",
-     "Squamous cell is classically central and strongly smoking-associated."
+     "Large cell is a less common NSCLC subtype."
     ],
     "img": [
      9
@@ -274,20 +274,20 @@
    {
     "q": "Which is the leading cause of lung cancer in people who have never smoked?",
     "ch": [
-     "Second-hand smoke",
-     "Asbestos",
      "Radon",
      "Air pollution",
-     "Prior radiation therapy"
+     "Prior radiation therapy",
+     "Second-hand smoke",
+     "Asbestos"
     ],
-    "correct": 2,
+    "correct": 0,
     "exp": "Radon is the leading cause of lung cancer in non-smokers and the second leading cause overall.",
     "why": [
-     "Second-hand smoke raises risk but radon leads among non-smokers.",
-     "Asbestos is an important occupational risk but not the leading non-smoker cause.",
      "",
      "Air pollution contributes but ranks below radon.",
-     "Prior radiation is an uncommon cause."
+     "Prior radiation is an uncommon cause.",
+     "Second-hand smoke raises risk but radon leads among non-smokers.",
+     "Asbestos is an important occupational risk but not the leading non-smoker cause."
     ],
     "img": [
      1
@@ -296,20 +296,20 @@
    {
     "q": "Which tumour locations and smoking associations are correct?",
     "ch": [
-     "All subtypes arise centrally near the hilum",
-     "Tumour location does not correlate with subtype",
      "Adenocarcinoma central and smoking-related; squamous peripheral",
      "Squamous and small cell central and smoking-related; adenocarcinoma peripheral",
-     "All subtypes arise peripherally in the lung fields"
+     "All subtypes arise peripherally in the lung fields",
+     "All subtypes arise centrally near the hilum",
+     "Tumour location does not correlate with subtype"
     ],
-    "correct": 3,
+    "correct": 1,
     "exp": "Squamous cell and small cell are classically central and smoking-associated. Adenocarcinoma is peripheral and the most common subtype in non-smokers.",
     "why": [
-     "Adenocarcinoma is characteristically peripheral.",
-     "Location is a genuinely useful pointer to subtype.",
      "This reverses the correct associations.",
      "",
-     "Central location is characteristic of squamous and small cell."
+     "Central location is characteristic of squamous and small cell.",
+     "Adenocarcinoma is characteristically peripheral.",
+     "Location is a genuinely useful pointer to subtype."
     ],
     "img": [
      2
@@ -318,20 +318,20 @@
    {
     "q": "What is required to establish a definitive diagnosis of lung cancer?",
     "ch": [
+     "Tissue biopsy for histology and molecular testing",
      "Sputum cytology showing malignant cells",
      "A rising serum tumour marker on serial testing",
      "The appearance of the mass on contrast chest CT",
-     "Avidity of the lesion on PET-CT imaging",
-     "Tissue biopsy for histology and molecular testing"
+     "Avidity of the lesion on PET-CT imaging"
     ],
-    "correct": 4,
+    "correct": 0,
     "exp": "Definitive diagnosis requires tissue: bronchoscopy, EBUS-guided nodal sampling, CT-guided core biopsy or thoracentesis cytology, providing histology and material for molecular testing.",
     "why": [
+     "",
      "Sputum cytology alone is insufficient and often non-diagnostic.",
      "Tumour markers are not used to diagnose lung cancer.",
      "CT characterises a mass but cannot establish histology.",
-     "PET avidity supports malignancy and aids staging but is not diagnostic.",
-     ""
+     "PET avidity supports malignancy and aids staging but is not diagnostic."
     ],
     "img": [
      6
@@ -340,20 +340,20 @@
    {
     "q": "A patient with small cell lung cancer develops hyponatremia. Which paraneoplastic syndrome is most likely?",
     "ch": [
-     "SIADH",
      "Hypertrophic osteoarthropathy",
      "Carcinoid syndrome",
      "Cushing syndrome from cortisol-secreting adrenal adenoma",
-     "PTHrP-mediated hypercalcaemia"
+     "PTHrP-mediated hypercalcaemia",
+     "SIADH"
     ],
-    "correct": 0,
+    "correct": 4,
     "exp": "Small cell lung cancer secretes ADH, causing SIADH, and may also secrete ACTH producing Cushing syndrome. PTHrP-mediated hypercalcaemia is the squamous cell association.",
     "why": [
-     "",
      "Hypertrophic osteoarthropathy causes digital clubbing and periostitis, not hyponatremia.",
      "Carcinoid syndrome causes flushing and diarrhoea.",
      "SCLC-related Cushing arises from ectopic ACTH, not an adrenal adenoma.",
-     "PTHrP hypercalcaemia is associated with squamous cell carcinoma."
+     "PTHrP hypercalcaemia is associated with squamous cell carcinoma.",
+     ""
     ],
     "img": [
      4
@@ -384,20 +384,20 @@
    {
     "q": "Which criteria define eligibility for annual low-dose CT lung cancer screening?",
     "ch": [
+     "Only patients with a first-degree family history of lung cancer",
+     "Any patient presenting with a chronic cough",
      "Ages 30-50 with any history of cigarette smoking",
      "Any adult over 40 who has ever smoked cigarettes",
-     "Ages 50-80 with a 20 pack-year history, currently smoking or quit within 15 years",
-     "Only patients with a first-degree family history of lung cancer",
-     "Any patient presenting with a chronic cough"
+     "Ages 50-80 with a 20 pack-year history, currently smoking or quit within 15 years"
     ],
-    "correct": 2,
+    "correct": 4,
     "exp": "USPSTF recommends annual low-dose CT for ages 50 to 80 with a 20 pack-year history who currently smoke or quit within the past 15 years.",
     "why": [
+     "Family history alone is not the screening criterion.",
+     "A chronic cough warrants diagnostic evaluation, not a screening programme.",
      "The age band begins at 50, not 30.",
      "Screening is not offered to all ever-smokers over 40.",
-     "",
-     "Family history alone is not the screening criterion.",
-     "A chronic cough warrants diagnostic evaluation, not a screening programme."
+     ""
     ],
     "img": [
      10
@@ -428,20 +428,20 @@
    {
     "q": "Why should molecular and PD-L1 testing be ordered on advanced non-squamous NSCLC before selecting systemic therapy?",
     "ch": [
-     "To determine whether the tumour is surgically resectable",
-     "To calculate the appropriate radiation dose",
      "To establish the TNM stage of the disease",
      "To confirm the histological subtype of the tumour",
-     "Because the driver mutation determines which targeted or immune therapy to use"
+     "Because the driver mutation determines which targeted or immune therapy to use",
+     "To determine whether the tumour is surgically resectable",
+     "To calculate the appropriate radiation dose"
     ],
-    "correct": 4,
+    "correct": 2,
     "exp": "Match the driver to the drug. EGFR, ALK, ROS1, BRAF, KRAS G12C, MET, RET and NTRK, plus PD-L1 expression, determine which targeted agent or checkpoint inhibitor to use, so testing should be reflexive in advanced non-squamous NSCLC.",
     "why": [
-     "Resectability is determined by stage and pulmonary reserve.",
-     "Radiation dosing is not set by molecular results.",
      "Staging is determined by imaging and nodal sampling.",
      "Subtype is established by histology, not molecular testing.",
-     ""
+     "",
+     "Resectability is determined by stage and pulmonary reserve.",
+     "Radiation dosing is not set by molecular results."
     ],
     "img": [
      8

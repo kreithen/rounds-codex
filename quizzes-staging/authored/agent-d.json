@@ -1,0 +1,463 @@
+{
+ "gi-bleed": {
+  "condition": "Upper GI Bleed",
+  "questions": [
+   {
+    "q": "Upper GI bleeding is defined by a bleeding source located where?",
+    "ch": [
+     "Confined to the duodenum distal to the ampulla of Vater",
+     "Proximal to the ligament of Treitz — esophagus, stomach, or duodenum",
+     "Distal to the ligament of Treitz in the jejunum and ileum",
+     "Anywhere in the colon, from the cecum through the rectum",
+     "Limited to the esophagus above the diaphragmatic hiatus"
+    ],
+    "correct": 1,
+    "exp": "Upper GI bleeding arises from a source proximal to the ligament of Treitz — esophagus, stomach, and duodenum — and classically presents with hematemesis, coffee-ground emesis, or melena.",
+    "why": [
+     "The whole duodenum is included, and this definition would wrongly exclude the esophagus and stomach.",
+     "",
+     "A source distal to the ligament of Treitz is by definition not an upper GI bleed.",
+     "Colonic bleeding presents as hematochezia and lies well distal to the ligament of Treitz.",
+     "The esophagus is only one of the three upper segments; the stomach and duodenum count as well."
+    ],
+    "img": [
+     1,
+     2
+    ]
+   },
+   {
+    "q": "Which is the leading cause of upper GI bleeding?",
+    "ch": [
+     "Esophagogastric varices from portal hypertension in cirrhosis",
+     "Peptic ulcer disease related to H. pylori or NSAIDs/aspirin",
+     "A Dieulafoy lesion eroding into a large submucosal artery",
+     "Erosive gastritis and esophagitis from acid mucosal injury",
+     "Mallory-Weiss tear following retching or forceful vomiting"
+    ],
+    "correct": 1,
+    "exp": "Peptic ulcer disease — driven by H. pylori and NSAIDs/aspirin — is the leading cause of upper GI bleeding; the remaining causes include varices, Mallory-Weiss tears, erosive gastritis/esophagitis, malignancy, and Dieulafoy lesions.",
+    "why": [
+     "Varices are the major variceal etiology but are less common overall than peptic ulcer disease.",
+     "",
+     "A Dieulafoy lesion is listed among the other causes, not the leading one.",
+     "Erosive gastritis and esophagitis contribute but rank below peptic ulcer disease.",
+     "A Mallory-Weiss tear is a recognized cause but is far less common, and most stop spontaneously."
+    ],
+    "img": [
+     1,
+     7
+    ]
+   },
+   {
+    "q": "Coffee-ground emesis in an upper GI bleed most directly reflects which process?",
+    "ch": [
+     "Bile mixing with gastric contents from duodenogastric reflux",
+     "Swallowed blood from a nasopharyngeal rather than a luminal source",
+     "Brisk arterial bleeding with rapid transit through the stomach",
+     "Blood altered by gastric acid, implying a slower or stopped bleed",
+     "Blood retained in the colon long enough to be digested by bacteria"
+    ],
+    "correct": 3,
+    "exp": "Coffee-ground emesis reflects blood altered by gastric acid, which implies a slower or already stopped upper bleed — unlike bright-red hematemesis, which signals active bleeding.",
+    "why": [
+     "Bile-stained emesis is green-yellow and is not the altered blood of a coffee-ground appearance.",
+     "Swallowed blood can be vomited, but the coffee-ground appearance itself reflects acid alteration, not the origin.",
+     "Brisk bleeding gives bright-red hematemesis, or even hematochezia, because the blood has no time to be altered by acid.",
+     "",
+     "Coffee-ground material is vomited from the stomach; colonic retention is not what alters it."
+    ],
+    "img": [
+     4
+    ]
+   },
+   {
+    "q": "A patient arrives with active hematemesis. Which nursing action takes priority?",
+    "ch": [
+     "Position the patient flat and supine to maximize cerebral perfusion pressure",
+     "Send a stool specimen for occult blood before other interventions",
+     "Give an oral proton pump inhibitor and start clear liquids as tolerated",
+     "Arrange upper endoscopy immediately, before any resuscitation is started",
+     "Establish two large-bore IVs (16-18 gauge), apply oxygen, and prepare for volume resuscitation"
+    ],
+    "correct": 4,
+    "exp": "The priority is ABCs: two large-bore IVs (16-18 gauge), oxygen, and preparation for volume resuscitation before anything else — resuscitate before you investigate.",
+    "why": [
+     "Positioning should protect the airway against aspiration of hematemesis, with suction ready.",
+     "Overt hematemesis already establishes the bleed; occult blood testing only delays resuscitation.",
+     "The patient is kept NPO for endoscopy, and the proton pump inhibitor is given intravenously.",
+     "EGD is the gold standard but follows stabilization — a stable patient tolerates endoscopy far better.",
+     ""
+    ],
+    "img": [
+     4,
+     8
+    ]
+   },
+   {
+    "q": "A BUN:creatinine ratio above 30:1 in a bleeding patient points to what?",
+    "ch": [
+     "A falsely elevated hemoglobin from hemoconcentration",
+     "Active hemolysis rather than luminal blood loss",
+     "An upper source — digested blood as a nitrogen load plus a prerenal state",
+     "A lower GI source distal to the ligament of Treitz",
+     "Intrinsic renal failure from acute tubular necrosis"
+    ],
+    "correct": 2,
+    "exp": "Blood is a cathartic and a nitrogen load, so digested blood plus a prerenal state elevates the BUN; a BUN:creatinine ratio above 30:1 is a useful bedside clue pointing to an upper source over a lower one.",
+    "why": [
+     "Hemoglobin may be falsely normal early because whole blood is lost proportionally, but that is unrelated to the BUN.",
+     "The nitrogen load here comes from blood digested in the gut lumen, not from intravascular hemolysis.",
+     "",
+     "A lower source does not deliver the same nitrogen load to be absorbed and does not raise the ratio this way.",
+     "Intrinsic renal failure typically lowers the ratio rather than driving it above 30:1."
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "Which transfusion strategy is recommended for a hemodynamically stable patient with an acute upper GI bleed?",
+    "ch": [
+     "A restrictive threshold, transfusing to a hemoglobin target of 7-8 g/dL",
+     "Withhold all blood products until endoscopy identifies the source",
+     "Transfuse only once the hemoglobin has fallen below 5 g/dL",
+     "A liberal threshold, transfusing to keep hemoglobin above 10 g/dL",
+     "Fresh frozen plasma routinely in place of packed RBC transfusion"
+    ],
+    "correct": 0,
+    "exp": "A restrictive transfusion threshold (Hgb 7 g/dL, target 7-8) is used in stable patients; liberal transfusion raises portal pressure and disrupts clot, increasing rebleeding and mortality (Villanueva, NEJM 2013).",
+    "why": [
+     "",
+     "Resuscitation with crystalloid and packed RBCs precedes endoscopy rather than waiting on it.",
+     "That threshold is far below the recommended 7 g/dL and would leave the patient dangerously anemic.",
+     "Liberal transfusion increases rebleeding and mortality and is exactly what the restrictive strategy avoids.",
+     "Packed RBCs restore oxygen delivery; PCC is preferred over FFP for warfarin reversal, and plasma is not a routine substitute."
+    ],
+    "img": [
+     8
+    ]
+   },
+   {
+    "q": "A Glasgow-Blatchford Score of 0-1 identifies which kind of patient?",
+    "ch": [
+     "A patient with the highest predicted rebleeding and mortality risk",
+     "A patient requiring prophylactic intubation before upper endoscopy",
+     "A very-low-risk patient potentially safe for outpatient management",
+     "A patient needing immediate balloon tamponade of bleeding varices",
+     "A patient with a Forrest Ia spurting ulcer requiring urgent therapy"
+    ],
+    "correct": 2,
+    "exp": "The Glasgow-Blatchford Score identifies low-risk patients who may avoid admission; a score of 0-1 flags a very-low-risk patient potentially safe for outpatient management.",
+    "why": [
+     "That is what the Rockall score predicts, and a Glasgow-Blatchford of 0-1 means the lowest risk, not the highest.",
+     "Prophylactic intubation is considered for ongoing hematemesis with altered mental status, a red flag rather than a low score.",
+     "",
+     "Balloon tamponade is reserved for refractory variceal bleeding, the opposite end of the risk spectrum.",
+     "The Forrest classification grades endoscopic stigmata after scoping; Forrest Ia is a high-risk lesion, not a low score."
+    ],
+    "img": [
+     6,
+     9
+    ]
+   },
+   {
+    "q": "A cirrhotic patient with hematemesis is started on octreotide before endoscopy. Which added therapy independently reduces mortality?",
+    "ch": [
+     "Fresh frozen plasma to fully normalize the INR",
+     "Liberal transfusion to a hemoglobin above 10 g/dL",
+     "High-dose oral beta-blocker during the acute bleed",
+     "Tranexamic acid as an antifibrinolytic adjunct",
+     "Prophylactic ceftriaxone, given to every cirrhotic with a GI bleed"
+    ],
+    "correct": 4,
+    "exp": "Antibiotic prophylaxis with ceftriaxone is standard of care for every cirrhotic with a GI bleed and is given even without overt infection — it independently reduces infection, rebleeding, and mortality, making it as important as octreotide.",
+    "why": [
+     "Coagulopathy should not be over-corrected in cirrhosis, and PCC is preferred over FFP when reversal is needed.",
+     "Liberal transfusion raises portal pressure and worsens variceal rebleeding and mortality.",
+     "A nonselective beta-blocker is for secondary prevention after recovery, not during the acute bleed.",
+     "Tranexamic acid is not recommended: HALT-IT showed no mortality benefit and more venous thromboembolism and seizures.",
+     ""
+    ],
+    "img": [
+     8
+    ]
+   },
+   {
+    "q": "Why is tranexamic acid no longer recommended in acute GI bleeding?",
+    "ch": [
+     "It raises portal pressure and provokes variceal rebleeding",
+     "It obscures endoscopic visualization of the gastric mucosa",
+     "It prolongs the QT interval the way intravenous erythromycin does",
+     "The HALT-IT trial showed no mortality benefit and more thromboembolism and seizures",
+     "It reverses the effect of proton pump inhibitors on gastric pH"
+    ],
+    "correct": 3,
+    "exp": "Tranexamic acid was historically considered an antifibrinolytic adjunct, but the HALT-IT trial showed no mortality benefit and increased venous thromboembolism and seizures, so it is not recommended.",
+    "why": [
+     "Raising portal pressure and disrupting clot is the problem with liberal transfusion, not with tranexamic acid.",
+     "Visualization is addressed by giving intravenous erythromycin as a prokinetic to clear gastric blood.",
+     "QT prolongation is the caution attached to erythromycin, not the reason tranexamic acid was abandoned.",
+     "",
+     "Tranexamic acid has no effect on gastric pH; the PPI raises pH to stabilize clot independently."
+    ],
+    "img": [
+     8,
+     9
+    ]
+   },
+   {
+    "q": "Esophageal variceal bleeding continues despite octreotide and band ligation. What is the appropriate escalation?",
+    "ch": [
+     "Balloon tamponade as a bridge, with TIPS as definitive therapy",
+     "Repeat a high-dose proton pump inhibitor infusion and observe",
+     "Epinephrine injection with thermal coagulation of the varices",
+     "Start tranexamic acid to correct an antifibrinolytic deficit",
+     "Observation with serial hemoglobin measurement every six hours"
+    ],
+    "correct": 0,
+    "exp": "For refractory variceal bleeding, escalate to balloon tamponade as a bridge and TIPS as definitive therapy; angiographic embolization or surgery is the parallel escalation for uncontrolled ulcer bleeding.",
+    "why": [
+     "",
+     "High-dose PPI targets non-variceal peptic ulcer bleeding and does nothing for portal pressure.",
+     "Epinephrine plus a second modality is the endoscopic therapy for high-risk ulcers; varices are treated with band ligation.",
+     "Tranexamic acid is not recommended in GI bleeding after HALT-IT showed harm without benefit.",
+     "Ongoing bleeding is a red flag for hemodynamic collapse; observation is not an escalation."
+    ],
+    "img": [
+     5,
+     8
+    ]
+   }
+  ]
+ },
+ "cholecystitis": {
+  "condition": "Cholecystitis & Cholelithiasis",
+  "questions": [
+   {
+    "q": "Most gallstones in cholelithiasis are composed of what?",
+    "ch": [
+     "Uric acid stones related to hyperuricemia and gout",
+     "Protein and bile salt plugs formed purely from bile stasis",
+     "Cholesterol stones, which make up roughly 75% of gallstones",
+     "Pigment stones, seen with hemolysis, cirrhosis, or infection",
+     "Calcium oxalate crystals, as in renal stone disease"
+    ],
+    "correct": 2,
+    "exp": "Cholelithiasis means gallstones in the gallbladder, and roughly 75% of them are cholesterol stones; the rest are pigment stones associated with hemolysis, cirrhosis, or infection.",
+    "why": [
+     "Uric acid stones are a renal stone type; gallstones are classified as cholesterol or pigment.",
+     "Bile stasis matters most in acalculous disease, where by definition there are no stones at all.",
+     "",
+     "Pigment stones make up the minority, forming the remainder after cholesterol stones.",
+     "Calcium oxalate is a urinary stone composition and is not the makeup of gallstones."
+    ],
+    "img": [
+     7
+    ]
+   },
+   {
+    "q": "Acute calculous cholecystitis results most directly from which event?",
+    "ch": [
+     "A stone lodged in the common bile duct with rising bilirubin",
+     "Bile stasis and ischemia in a fasting, critically ill patient",
+     "Ascending bacterial infection of the intrahepatic bile ducts",
+     "A stone impacted in the cystic duct, causing wall edema and distension",
+     "A stone eroding through the wall into the adjacent small bowel"
+    ],
+    "correct": 3,
+    "exp": "Acute cholecystitis is usually caused by a stone impacted in the cystic duct (calculous, about 90%), producing wall edema, gallbladder distension, mucosal ischemia, and secondary infection.",
+    "why": [
+     "A stone in the common bile duct is choledocholithiasis, suggested by markedly high bilirubin and ALP or a dilated duct.",
+     "That mechanism describes acalculous cholecystitis, which occurs without stones.",
+     "Ascending infection of the ducts is cholangitis; infection in cholecystitis is secondary to the obstruction.",
+     "",
+     "A stone eroding into the gut causes gallstone ileus, a late complication rather than the initiating event."
+    ],
+    "img": [
+     3,
+     8
+    ]
+   },
+   {
+    "q": "The classic “5 F's” mnemonic for cholelithiasis risk stands for which set of factors?",
+    "ch": [
+     "Fasting, Fistula, Fibrosis, Failure, Fracture",
+     "Female, Fat, Forty, Fertile, Fair",
+     "Family history, Fluid overload, Fever, Fatigue, Fainting",
+     "Fat intolerance, Fetor, Fissure, Fibroma, Frequency",
+     "Fever, Fatigue, Flatulence, Fullness, Flushing"
+    ],
+    "correct": 1,
+    "exp": "The 5 F's — Female, Fat, Forty, Fertile, Fair — is the classic cholelithiasis risk mnemonic; rapid weight loss, pregnancy, and estrogen therapy also raise risk.",
+    "why": [
+     "Fasting does predispose to acalculous disease, but this is not the classic risk mnemonic.",
+     "",
+     "These items are not the five factors in the mnemonic taught for gallstone risk.",
+     "Fat intolerance is a symptom of biliary disease, and the rest are unrelated to gallstone risk.",
+     "These are symptoms rather than the demographic risk factors the mnemonic captures."
+    ],
+    "img": [
+     1,
+     10
+    ]
+   },
+   {
+    "q": "Which examination finding is described as Murphy’s sign?",
+    "ch": [
+     "Pain on passive extension of the right hip with the knee flexed",
+     "Flank ecchymosis appearing two to three days after symptom onset",
+     "A palpable, nontender gallbladder in a jaundiced patient",
+     "Rebound tenderness in the right lower quadrant at McBurney’s point",
+     "Inspiratory arrest on deep RUQ palpation, sensitive for acute cholecystitis"
+    ],
+    "correct": 4,
+    "exp": "Murphy's sign is inspiratory arrest on deep RUQ palpation and is sensitive for acute cholecystitis; the same finding seen during ultrasound is a sonographic Murphy's sign, and pain may radiate to the right scapula or shoulder.",
+    "why": [
+     "That is a psoas sign; biliary pain instead radiates to the right scapula or shoulder.",
+     "Flank ecchymosis points to retroperitoneal hemorrhage, not to cystic duct obstruction.",
+     "A palpable nontender gallbladder with jaundice is Courvoisier's sign, which points to malignant obstruction rather than stones.",
+     "Right lower quadrant rebound suggests appendicitis, not gallbladder inflammation.",
+     ""
+    ],
+    "img": [
+     5
+    ]
+   },
+   {
+    "q": "RUQ ultrasound is first-line for suspected acute cholecystitis. Which combination of findings confirms it?",
+    "ch": [
+     "A dilated common bile duct containing a filling defect on MRCP",
+     "Diffuse calcification of the gallbladder wall without any stones",
+     "Stones, wall thickening over 3 mm, pericholecystic fluid, sonographic Murphy's sign",
+     "Nonvisualization of the gallbladder after radiotracer administration",
+     "Pneumobilia with small-bowel obstruction on plain radiography"
+    ],
+    "correct": 2,
+    "exp": "RUQ ultrasound is first-line and confirmatory: it shows stones, gallbladder wall thickening over 3 mm, pericholecystic fluid, and a sonographic Murphy's sign.",
+    "why": [
+     "A dilated duct with a stone indicates choledocholithiasis rather than gallbladder inflammation.",
+     "Wall calcification is a porcelain gallbladder, which raises cancer risk but is not acute inflammation.",
+     "",
+     "Nonvisualization is the HIDA scan finding, used when the ultrasound is equivocal.",
+     "Air in the biliary tree with obstruction describes gallstone ileus, a separate complication."
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "When RUQ ultrasound is equivocal, which study is the most specific for acute cholecystitis?",
+    "ch": [
+     "Repeat ultrasound in 24 hours after a fatty meal challenge",
+     "Abdominal plain films looking for a porcelain gallbladder",
+     "Serum lipase to exclude a coexisting gallstone pancreatitis",
+     "ERCP to visualize and clear the common bile duct",
+     "HIDA scan — nonvisualization of the gallbladder confirms cystic duct obstruction"
+    ],
+    "correct": 4,
+    "exp": "The HIDA scan (cholescintigraphy) is the most specific test: nonvisualization of the gallbladder confirms cystic duct obstruction when the ultrasound is equivocal.",
+    "why": [
+     "Repeating a nondiagnostic ultrasound delays care when a more specific test is available.",
+     "Plain films may show a porcelain gallbladder or pneumobilia but cannot confirm acute cholecystitis.",
+     "Lipase evaluates the pancreas and says nothing about cystic duct obstruction.",
+     "ERCP is reserved for suspected choledocholithiasis or cholangitis, not for confirming gallbladder inflammation.",
+     ""
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "A patient has RUQ pain, fever, and jaundice together. Which diagnosis does this triad indicate?",
+    "ch": [
+     "Acalculous cholecystitis in a critically ill patient",
+     "Cholangitis — Charcot's triad, which is not cholecystitis",
+     "Gallstone ileus with pneumobilia and bowel obstruction",
+     "Acute cholecystitis with a positive Murphy’s sign",
+     "Biliary colic triggered by a recent fatty meal"
+    ],
+    "correct": 1,
+    "exp": "Charcot's triad — RUQ pain, fever, and jaundice — indicates ascending cholangitis; adding hypotension and altered mental status makes Reynolds' pentad and signals septic shock requiring urgent biliary decompression by ERCP.",
+    "why": [
+     "Acalculous disease is defined by the absence of stones in a critically ill patient, not by this triad.",
+     "",
+     "Gallstone ileus presents with small-bowel obstruction and air in the biliary tree, not with jaundice and fever.",
+     "Cholecystitis gives persistent RUQ pain and fever, but jaundice is not part of its classic picture.",
+     "Biliary colic is intermittent pain that resolves, without fever or leukocytosis."
+    ],
+    "img": [
+     4,
+     10
+    ]
+   },
+   {
+    "q": "A stable patient with mild acute cholecystitis has been resuscitated with IV fluids and started on antibiotics. What is the definitive management?",
+    "ch": [
+     "Early laparoscopic cholecystectomy, ideally within 72 hours",
+     "Ursodeoxycholic acid to dissolve the stones over several months",
+     "Percutaneous cholecystostomy as the definitive procedure",
+     "Delayed cholecystectomy after six weeks of oral antibiotics",
+     "ERCP with sphincterotomy and stone extraction from the duct"
+    ],
+    "correct": 0,
+    "exp": "Laparoscopic cholecystectomy is the definitive treatment, and early surgery within 72 hours lowers morbidity and shortens hospital stay compared with delayed surgery.",
+    "why": [
+     "",
+     "Ursodeoxycholic acid is slow, of low efficacy, and reserved for nonsurgical candidates — it is not for acute cholecystitis.",
+     "Cholecystostomy is the option for a poor surgical candidate, and it is a bridge rather than definitive therapy.",
+     "Delaying surgery increases morbidity compared with operating within 72 hours.",
+     "ERCP addresses stones in the common bile duct, which is a different problem from an inflamed gallbladder."
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "A critically ill post-op patient on TPN develops fever and RUQ pain, and ultrasound shows no stones. What is the likely diagnosis?",
+    "ch": [
+     "Acalculous cholecystitis from bile stasis and ischemia",
+     "Biliary colic from a stone that has already passed",
+     "Porcelain gallbladder with malignant transformation",
+     "Mirizzi syndrome from a stone compressing the hepatic duct",
+     "Gallstone ileus from a stone eroding into the small bowel"
+    ],
+    "correct": 0,
+    "exp": "Acalculous cholecystitis occurs without stones in critically ill, fasting, TPN, or post-op patients from bile stasis and ischemia; it carries higher morbidity, so keep a low threshold for HIDA and percutaneous drainage.",
+    "why": [
+     "",
+     "Biliary colic is intermittent pain that resolves and does not produce fever in a critically ill patient.",
+     "A porcelain gallbladder is a chronic calcified wall raising cancer risk, not an acute febrile illness.",
+     "Mirizzi syndrome requires a stone, and the ultrasound here shows none.",
+     "Gallstone ileus needs a stone and presents with small-bowel obstruction and pneumobilia."
+    ],
+    "img": [
+     3,
+     9
+    ]
+   },
+   {
+    "q": "A patient admitted with acute cholecystitis develops markedly rising bilirubin and ALP with a dilated common bile duct. What does this suggest?",
+    "ch": [
+     "Post-cholecystectomy syndrome from retained insufflated gas",
+     "Simple biliary colic that will resolve without intervention",
+     "Emphysematous cholecystitis with crepitus over the wall",
+     "Choledocholithiasis — obtain MRCP or ERCP for duct stones",
+     "Courvoisier's sign of malignant biliary obstruction"
+    ],
+    "correct": 3,
+    "exp": "Markedly elevated bilirubin and ALP with a dilated common bile duct is the red flag for choledocholithiasis; the next step is MRCP or ERCP to find and clear the duct stone.",
+    "why": [
+     "This patient has not had surgery, and insufflated CO2 causes referred shoulder pain rather than duct dilation.",
+     "Biliary colic is transient pain without fever, leukocytosis, or a rising bilirubin and dilated duct.",
+     "Emphysematous cholecystitis is signaled by crepitus and peritoneal signs, not by an obstructive lab pattern.",
+     "",
+     "Courvoisier's sign is a palpable nontender gallbladder with jaundice and points away from stones."
+    ],
+    "img": [
+     6,
+     9
+    ]
+   }
+  ]
+ }
+}

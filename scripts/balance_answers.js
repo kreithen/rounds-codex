@@ -43,9 +43,23 @@ for (const file of files) {
     qs.forEach(q => { if (isOrdered(q.ch)) fixedPos.push(q.correct); });
 
     // Aim for an even spread across the positions available, accounting for the locked ones.
+    //
+    // Even is not the same as random. The first version of this assigned targets round-robin,
+    // which produced a flawless 2/2/2/2/2 in every quiz -- and the identical sequence
+    // A B C D E A B C D E in ALL of them, so question 1's answer was A app-wide. That is worse
+    // than an accidental skew: it is a rule, and a student who spots it never reads a stem again.
+    // So the even target list is SHUFFLED, seeded off the quiz id: reproducible build-to-build,
+    // but no pattern shared between quizzes and none a reader can carry from one to the next.
     const nOpt = Math.min(...qs.map(q => q.ch.length));
     const want = [];
     for (let i = 0; i < qs.length; i++) want.push(i % nOpt);
+    let seed = 2166136261;
+    for (const ch of id) { seed ^= ch.charCodeAt(0); seed = Math.imul(seed, 16777619) >>> 0; }
+    const rnd = () => { seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0; return seed / 4294967296; };
+    for (let i = want.length - 1; i > 0; i--) {
+      const j = Math.floor(rnd() * (i + 1));
+      const t = want[i]; want[i] = want[j]; want[j] = t;
+    }
     // drop one slot per already-locked answer so the target histogram stays balanced overall
     for (const p of fixedPos) { const k = want.indexOf(p); if (k >= 0) want.splice(k, 1); }
 

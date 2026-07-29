@@ -5,20 +5,20 @@
    {
     "q": "Which feature most reliably distinguishes COPD from asthma?",
     "ch": [
-     "Airflow limitation that is not fully reversible",
      "A history of cigarette smoking",
      "Symptoms that worsen at night",
      "Response to inhaled corticosteroids",
-     "Presence of wheeze on auscultation"
+     "Presence of wheeze on auscultation",
+     "Airflow limitation that is not fully reversible"
     ],
-    "correct": 0,
+    "correct": 4,
     "exp": "COPD is defined by persistent airflow limitation that is not fully reversible; asthma's obstruction is reversible. This is the central contrast between the two.",
     "why": [
-     "",
      "Smoking is the dominant cause of COPD but many smokers never develop it and some COPD patients never smoked.",
      "Nocturnal worsening is more characteristic of asthma.",
      "Inhaled corticosteroids help selected COPD patients, so a response does not exclude COPD.",
-     "Wheeze occurs in both and does not separate them."
+     "Wheeze occurs in both and does not separate them.",
+     ""
     ],
     "img": [
      1
@@ -27,20 +27,20 @@
    {
     "q": "Chronic bronchitis is defined clinically as a productive cough for:",
     "ch": [
+     "Any duration if sputum is purulent",
+     "At least 2 weeks in a single year",
      "At least 1 month in a single year",
      "At least 3 months per year for 2 consecutive years",
-     "At least 6 months in a single year",
-     "Any duration if sputum is purulent",
-     "At least 2 weeks in a single year"
+     "At least 6 months in a single year"
     ],
-    "correct": 1,
+    "correct": 3,
     "exp": "Chronic bronchitis is a clinical definition: a productive cough for at least 3 months per year over 2 consecutive years.",
     "why": [
+     "Purulence indicates infection or exacerbation, not the chronic bronchitis definition.",
+     "Two weeks describes an acute bronchitis, not the chronic phenotype.",
      "One month is far short of the definition.",
      "",
-     "Six months in one year still does not meet the two-consecutive-year requirement.",
-     "Purulence indicates infection or exacerbation, not the chronic bronchitis definition.",
-     "Two weeks describes an acute bronchitis, not the chronic phenotype."
+     "Six months in one year still does not meet the two-consecutive-year requirement."
     ],
     "img": [
      3
@@ -49,20 +49,20 @@
    {
     "q": "Which test is required to establish a diagnosis of COPD?",
     "ch": [
-     "Resting pulse oximetry below 92%",
-     "Chest X-ray showing hyperinflation",
      "Arterial blood gas showing CO2 retention",
      "Spirometry with a post-bronchodilator FEV1/FVC below 0.70",
-     "Alpha-1 antitrypsin level"
+     "Alpha-1 antitrypsin level",
+     "Resting pulse oximetry below 92%",
+     "Chest X-ray showing hyperinflation"
     ],
-    "correct": 3,
+    "correct": 1,
     "exp": "Spirometry is required. A post-bronchodilator FEV1/FVC below 0.70 confirms persistent airflow limitation; COPD should not be diagnosed on clinical grounds alone.",
     "why": [
-     "Oximetry measures oxygenation and says nothing about airflow limitation.",
-     "Hyperinflation and flattened diaphragms support the diagnosis but do not establish it.",
      "Chronic respiratory acidosis reflects severity, not diagnosis.",
      "",
-     "Alpha-1 antitrypsin is checked selectively in young or non-smoking patients, not to diagnose COPD."
+     "Alpha-1 antitrypsin is checked selectively in young or non-smoking patients, not to diagnose COPD.",
+     "Oximetry measures oxygenation and says nothing about airflow limitation.",
+     "Hyperinflation and flattened diaphragms support the diagnosis but do not establish it."
     ],
     "img": [
      6
@@ -93,20 +93,20 @@
    {
     "q": "A patient presents with an acute COPD exacerbation and increased sputum purulence and volume. Which combination is most appropriate?",
     "ch": [
-     "Antibiotics alone",
      "Long-acting bronchodilators alone",
      "High-flow oxygen titrated to 100% saturation",
      "Inhaled corticosteroid monotherapy",
-     "Short-acting bronchodilators, systemic steroids, and antibiotics"
+     "Short-acting bronchodilators, systemic steroids, and antibiotics",
+     "Antibiotics alone"
     ],
-    "correct": 4,
+    "correct": 3,
     "exp": "Exacerbations are treated with short-acting bronchodilators, a short course of systemic steroids, and antibiotics when sputum purulence and volume increase, alongside controlled oxygen.",
     "why": [
-     "Antibiotics address the infective trigger but leave the bronchospasm and inflammation untreated.",
      "Long-acting bronchodilators are maintenance therapy, not rescue.",
      "Targeting 100% saturation risks worsening hypercapnia.",
      "Inhaled corticosteroids are not monotherapy in COPD and do not treat an acute exacerbation.",
-     ""
+     "",
+     "Antibiotics address the infective trigger but leave the bronchospasm and inflammation untreated."
     ],
     "img": [
      9
@@ -137,20 +137,20 @@
    {
     "q": "Which two interventions have been shown to prolong survival in COPD?",
     "ch": [
-     "Long-acting bronchodilators and annual vaccination",
-     "Smoking cessation and long-term oxygen therapy in chronically hypoxemic patients",
      "Mucolytics and chest physiotherapy",
      "Systemic steroids and antibiotics",
-     "Inhaled corticosteroids and pulmonary rehabilitation"
+     "Inhaled corticosteroids and pulmonary rehabilitation",
+     "Long-acting bronchodilators and annual vaccination",
+     "Smoking cessation and long-term oxygen therapy in chronically hypoxemic patients"
     ],
-    "correct": 1,
+    "correct": 4,
     "exp": "Only smoking cessation and long-term oxygen therapy in chronically hypoxemic patients clearly prolong survival. Everything else is symptom control.",
     "why": [
-     "Bronchodilators and vaccines reduce symptoms and exacerbations without a clear survival benefit.",
-     "",
      "These are adjuncts with no established mortality benefit.",
      "These treat exacerbations; they do not modify long-term survival.",
-     "Both improve symptoms and exacerbation frequency but are not the survival-modifying pair."
+     "Both improve symptoms and exacerbation frequency but are not the survival-modifying pair.",
+     "Bronchodilators and vaccines reduce symptoms and exacerbations without a clear survival benefit.",
+     ""
     ],
     "img": [
      9
@@ -159,20 +159,20 @@
    {
     "q": "A 38-year-old who has never smoked is diagnosed with emphysema. Which investigation is most important?",
     "ch": [
-     "Serum IgE and eosinophil count",
-     "Methacholine challenge testing",
      "Alpha-1 antitrypsin level",
      "Sweat chloride testing",
-     "High-resolution CT of the sinuses"
+     "High-resolution CT of the sinuses",
+     "Serum IgE and eosinophil count",
+     "Methacholine challenge testing"
     ],
-    "correct": 2,
+    "correct": 0,
     "exp": "Emphysema in a young or non-smoking patient should prompt measurement of alpha-1 antitrypsin, an inherited cause of early emphysema.",
     "why": [
-     "IgE and eosinophils point toward allergic asthma rather than emphysema.",
-     "Methacholine challenge tests for airway hyperresponsiveness in suspected asthma.",
      "",
      "Sweat chloride tests for cystic fibrosis, which presents differently and far earlier.",
-     "Sinus imaging does not explain emphysema."
+     "Sinus imaging does not explain emphysema.",
+     "IgE and eosinophils point toward allergic asthma rather than emphysema.",
+     "Methacholine challenge tests for airway hyperresponsiveness in suspected asthma."
     ],
     "img": [
      6
@@ -181,20 +181,20 @@
    {
     "q": "How is the blood eosinophil count used in modern COPD management?",
     "ch": [
-     "To grade disease severity in place of spirometry",
-     "To decide the duration of antibiotic therapy",
      "To confirm the diagnosis of COPD without spirometry",
      "To decide whether a patient is likely to benefit from an inhaled corticosteroid",
-     "To determine the target oxygen saturation range"
+     "To determine the target oxygen saturation range",
+     "To grade disease severity in place of spirometry",
+     "To decide the duration of antibiotic therapy"
     ],
-    "correct": 3,
+    "correct": 1,
     "exp": "Eosinophil count now helps identify which patients benefit from inhaled corticosteroids, letting you justify or withhold them on a guideline basis.",
     "why": [
-     "Severity is graded by FEV1 percent predicted and GOLD groups.",
-     "Antibiotic duration is guided by clinical response, not eosinophils.",
      "Diagnosis requires spirometry, not a blood count.",
      "",
-     "The oxygen target is 88-92% regardless of eosinophils."
+     "The oxygen target is 88-92% regardless of eosinophils.",
+     "Severity is graded by FEV1 percent predicted and GOLD groups.",
+     "Antibiotic duration is guided by clinical response, not eosinophils."
     ],
     "img": [
      9
@@ -203,20 +203,20 @@
    {
     "q": "A COPD patient on oxygen becomes progressively drowsy. What is the most appropriate next step?",
     "ch": [
-     "Discontinue oxygen entirely",
-     "Obtain an urgent CT of the head",
      "Increase the oxygen flow rate",
      "Administer a sedative for agitation",
-     "Check an arterial blood gas"
+     "Check an arterial blood gas",
+     "Discontinue oxygen entirely",
+     "Obtain an urgent CT of the head"
     ],
-    "correct": 4,
+    "correct": 2,
     "exp": "Increasing drowsiness on oxygen suggests CO2 retention. Check an arterial blood gas rather than simply increasing oxygen; rising CO2 with declining consciousness signals impending respiratory failure.",
     "why": [
-     "Oxygen should be titrated, never abruptly withdrawn from a hypoxic patient.",
-     "Imaging delays recognition of a metabolic cause that a blood gas identifies immediately.",
      "Increasing oxygen may worsen the hypercapnia that is causing the drowsiness.",
      "Sedation would further depress ventilation in a patient already retaining CO2.",
-     ""
+     "",
+     "Oxygen should be titrated, never abruptly withdrawn from a hypoxic patient.",
+     "Imaging delays recognition of a metabolic cause that a blood gas identifies immediately."
     ],
     "img": [
      10
@@ -252,20 +252,20 @@
    {
     "q": "Which spirometric result demonstrates reversibility and supports a diagnosis of asthma?",
     "ch": [
+     "A total lung capacity above predicted",
+     "A normal spirometry result on a single occasion",
      "A fall in FEV1 of 12% after bronchodilator",
      "An FEV1 improvement of at least 12% and 200 mL after bronchodilator",
-     "An FEV1/FVC ratio below 0.70 that does not change",
-     "A total lung capacity above predicted",
-     "A normal spirometry result on a single occasion"
+     "An FEV1/FVC ratio below 0.70 that does not change"
     ],
-    "correct": 1,
+    "correct": 3,
     "exp": "Reversibility is demonstrated when FEV1 improves by at least 12% and 200 mL after a bronchodilator. Prove the diagnosis with these numbers rather than describing wheeze.",
     "why": [
+     "Increased total lung capacity reflects hyperinflation, not reversibility.",
+     "Normal spirometry does not exclude asthma; consider bronchoprovocation testing.",
      "A fall in FEV1 after bronchodilator is not reversibility.",
      "",
-     "A fixed ratio that does not change describes irreversible obstruction, favouring COPD.",
-     "Increased total lung capacity reflects hyperinflation, not reversibility.",
-     "Normal spirometry does not exclude asthma; consider bronchoprovocation testing."
+     "A fixed ratio that does not change describes irreversible obstruction, favouring COPD."
     ],
     "img": [
      8
@@ -274,20 +274,20 @@
    {
     "q": "Which medication is the cornerstone controller therapy for persistent asthma?",
     "ch": [
-     "Short-acting beta-agonist",
      "Long-acting beta-agonist used alone",
      "Inhaled corticosteroid",
      "Oral theophylline",
-     "Leukotriene receptor antagonist as sole therapy"
+     "Leukotriene receptor antagonist as sole therapy",
+     "Short-acting beta-agonist"
     ],
-    "correct": 2,
+    "correct": 1,
     "exp": "The inhaled corticosteroid is the cornerstone of controller therapy in persistent asthma, taken daily even when the patient feels well.",
     "why": [
-     "A short-acting beta-agonist is a reliever; frequent use signals poor control rather than providing it.",
      "A long-acting beta-agonist must never be used alone in asthma.",
      "",
      "Theophylline is an older adjunct with a narrow therapeutic window.",
-     "A leukotriene antagonist is an add-on or alternative, not the cornerstone."
+     "A leukotriene antagonist is an add-on or alternative, not the cornerstone.",
+     "A short-acting beta-agonist is a reliever; frequent use signals poor control rather than providing it."
     ],
     "img": [
      9
@@ -296,20 +296,20 @@
    {
     "q": "During an acute asthma attack the wheeze diminishes markedly while the patient's distress worsens. What does this indicate?",
     "ch": [
+     "The patient has developed a pneumothorax",
      "Bronchodilator therapy has been effective",
      "The patient is hyperventilating",
      "The attack is resolving",
-     "Air movement has become dangerously reduced",
-     "The patient has developed a pneumothorax"
+     "Air movement has become dangerously reduced"
     ],
-    "correct": 3,
+    "correct": 4,
     "exp": "A silent chest is an emergency: it means almost no air is moving, not that the patient is improving. Prepare for escalation and possible intubation.",
     "why": [
+     "Pneumothorax is possible but the classic meaning of a quiet chest with rising distress is critically reduced airflow.",
      "Effective treatment relieves distress; here distress is worsening.",
      "Hyperventilation would increase, not reduce, audible air movement.",
      "Diminishing wheeze with worsening distress is deterioration, not resolution.",
-     "",
-     "Pneumothorax is possible but the classic meaning of a quiet chest with rising distress is critically reduced airflow."
+     ""
     ],
     "img": [
      7
@@ -318,20 +318,20 @@
    {
     "q": "An arterial blood gas during a severe asthma attack shows a PaCO2 that has risen from low to normal. How should this be interpreted?",
     "ch": [
+     "Reassuring, as the gas is now normal",
+     "A sign the patient is tiring toward respiratory failure",
      "Evidence of over-treatment with bronchodilators",
      "An expected effect of supplemental oxygen",
-     "A laboratory error requiring a repeat sample",
-     "Reassuring, as the gas is now normal",
-     "A sign the patient is tiring toward respiratory failure"
+     "A laboratory error requiring a repeat sample"
     ],
-    "correct": 4,
+    "correct": 1,
     "exp": "A normalizing or rising PaCO2 in an acute attack is ominous. The patient who was hyperventilating is now fatiguing, and this warrants ICU-level care.",
     "why": [
+     "A 'normal' CO2 in a patient who should be blowing it off is a red flag, not reassurance.",
+     "",
      "Bronchodilators do not cause CO2 to rise in this pattern.",
      "Supplemental oxygen does not explain fatigue-driven CO2 retention in asthma.",
-     "The finding fits the clinical picture and should be acted on, not dismissed.",
-     "A 'normal' CO2 in a patient who should be blowing it off is a red flag, not reassurance.",
-     ""
+     "The finding fits the clinical picture and should be acted on, not dismissed."
     ],
     "img": [
      7
@@ -362,20 +362,20 @@
    {
     "q": "A patient reports using their rescue inhaler every day. What does this most likely represent?",
     "ch": [
+     "Successful self-management",
      "Appropriate use of a reliever",
      "Under-controlled airway inflammation requiring step-up",
      "Tolerance to beta-agonists requiring a higher dose",
-     "A need to stop the inhaled corticosteroid",
-     "Successful self-management"
+     "A need to stop the inhaled corticosteroid"
     ],
-    "correct": 1,
+    "correct": 2,
     "exp": "Daily rescue inhaler use, or more than two canisters a year, predicts exacerbations and should be treated as under-controlled inflammation rather than a dosing problem.",
     "why": [
+     "Frequent reliever use is a marker of failed control, not success.",
      "A reliever is for occasional symptoms; daily need signals poor control.",
      "",
      "The answer is not to increase the beta-agonist but to address the underlying inflammation.",
-     "Stopping the controller would worsen control.",
-     "Frequent reliever use is a marker of failed control, not success."
+     "Stopping the controller would worsen control."
     ],
     "img": [
      5
@@ -384,20 +384,20 @@
    {
     "q": "A patient's asthma remains uncontrolled despite an appropriate inhaled corticosteroid prescription. What should be checked before escalating drug therapy?",
     "ch": [
+     "Chest CT for bronchiectasis",
+     "Alpha-1 antitrypsin level",
      "Arterial blood gas",
      "Serum theophylline concentration",
-     "Inhaler technique and adherence",
-     "Chest CT for bronchiectasis",
-     "Alpha-1 antitrypsin level"
+     "Inhaler technique and adherence"
     ],
-    "correct": 2,
+    "correct": 4,
     "exp": "Poor inhaler technique and non-adherence are leading causes of apparently uncontrolled asthma. Check these systematically before adding drugs.",
     "why": [
+     "Imaging is reasonable later, but technique and adherence come first.",
+     "Alpha-1 antitrypsin deficiency causes emphysema, not refractory asthma.",
      "A blood gas assesses an acute attack, not chronic control.",
      "Theophylline levels are only relevant if the patient is taking it.",
-     "",
-     "Imaging is reasonable later, but technique and adherence come first.",
-     "Alpha-1 antitrypsin deficiency causes emphysema, not refractory asthma."
+     ""
     ],
     "img": [
      9
@@ -406,20 +406,20 @@
    {
     "q": "Which modern approach does GINA favour over short-acting beta-agonist-only treatment?",
     "ch": [
-     "Theophylline as first-line therapy",
      "Leukotriene antagonist monotherapy for all patients",
      "Oral corticosteroids taken intermittently",
      "Inhaled corticosteroid-formoterol as combined controller and reliever",
-     "Long-acting beta-agonist monotherapy"
+     "Long-acting beta-agonist monotherapy",
+     "Theophylline as first-line therapy"
     ],
-    "correct": 3,
+    "correct": 2,
     "exp": "GINA has shifted away from SABA-only treatment toward inhaled corticosteroid-containing therapy, including ICS-formoterol used as both maintenance and reliever in a single inhaler.",
     "why": [
-     "Theophylline is not first-line in modern guidance.",
      "Leukotriene antagonists are an option for some patients but not a universal replacement.",
      "Intermittent oral steroids carry cumulative toxicity and are not a control strategy.",
      "",
-     "LABA monotherapy is precisely what the safety rationale forbids."
+     "LABA monotherapy is precisely what the safety rationale forbids.",
+     "Theophylline is not first-line in modern guidance."
     ],
     "img": [
      9
@@ -428,20 +428,20 @@
    {
     "q": "A patient in an acute attack has a peak expiratory flow below 50% of personal best that is not responding to treatment, with exhaustion and altered mentation. What does this represent?",
     "ch": [
-     "Vocal cord dysfunction rather than asthma",
      "An expected response to nebulized therapy",
      "Anxiety-driven hyperventilation",
      "A moderate exacerbation suitable for discharge with oral steroids",
-     "Life-threatening asthma requiring preparation for intubation"
+     "Life-threatening asthma requiring preparation for intubation",
+     "Vocal cord dysfunction rather than asthma"
     ],
-    "correct": 4,
+    "correct": 3,
     "exp": "Exhaustion, cyanosis or altered mentation with a peak flow below 50% of personal best that is not responding defines life-threatening asthma; prepare for intubation.",
     "why": [
-     "Vocal cord dysfunction can mimic asthma but does not explain this degree of objective airflow limitation with exhaustion.",
      "Failure to respond is the concerning feature.",
      "Altered mentation in this setting reflects respiratory failure, not anxiety.",
      "This combination is far beyond a moderate exacerbation and is not safe for discharge.",
-     ""
+     "",
+     "Vocal cord dysfunction can mimic asthma but does not explain this degree of objective airflow limitation with exhaustion."
     ],
     "img": [
      7

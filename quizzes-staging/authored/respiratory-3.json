@@ -5,20 +5,20 @@
    {
     "q": "What is the fundamental abnormality in ARDS?",
     "ch": [
+     "Destruction of alveolar septa",
+     "Left ventricular failure raising pulmonary capillary pressure",
      "Increased alveolar-capillary permeability flooding alveoli with protein-rich fluid",
      "Bronchial smooth muscle constriction",
-     "Obstruction of the pulmonary arteries by thrombus",
-     "Destruction of alveolar septa",
-     "Left ventricular failure raising pulmonary capillary pressure"
+     "Obstruction of the pulmonary arteries by thrombus"
     ],
-    "correct": 0,
+    "correct": 2,
     "exp": "Injury to the alveolar-capillary membrane increases permeability, flooding alveoli with protein-rich fluid, inactivating surfactant and producing diffuse alveolar damage with hyaline membranes. This is non-cardiogenic pulmonary edema.",
     "why": [
+     "Septal destruction describes emphysema.",
+     "Raised hydrostatic pressure from left heart failure is cardiogenic edema, the key distinction from ARDS.",
      "",
      "Bronchoconstriction describes asthma.",
-     "Arterial obstruction describes pulmonary embolism.",
-     "Septal destruction describes emphysema.",
-     "Raised hydrostatic pressure from left heart failure is cardiogenic edema, the key distinction from ARDS."
+     "Arterial obstruction describes pulmonary embolism."
     ],
     "img": [
      3
@@ -27,20 +27,20 @@
    {
     "q": "Which parameter does the Berlin definition use to stage ARDS severity?",
     "ch": [
-     "Tidal volume per kilogram of predicted body weight",
      "The PaO2/FiO2 ratio on PEEP of at least 5",
      "Peak airway pressure measured at end-inspiration",
      "Serum lactate corrected for cardiac output",
-     "The alveolar-arterial oxygen gradient alone"
+     "The alveolar-arterial oxygen gradient alone",
+     "Tidal volume per kilogram of predicted body weight"
     ],
-    "correct": 1,
+    "correct": 0,
     "exp": "Berlin stages severity by the P/F ratio on PEEP of at least 5: mild 200-300, moderate 100-200, severe 100 or below.",
     "why": [
-     "Tidal volume is a ventilator setting, not a severity criterion.",
      "",
      "Peak airway pressure reflects resistance and compliance but does not stage ARDS.",
      "Lactate reflects perfusion and shock, not the Berlin criteria.",
-     "The A-a gradient is widened in ARDS but the staging parameter is the P/F ratio."
+     "The A-a gradient is widened in ARDS but the staging parameter is the P/F ratio.",
+     "Tidal volume is a ventilator setting, not a severity criterion."
     ],
     "img": [
      6
@@ -49,20 +49,20 @@
    {
     "q": "Which two causes are the most common triggers of ARDS?",
     "ch": [
+     "Drowning and inhalation injury",
      "Transfusion and pulmonary contusion",
      "Aspiration and shock",
      "Sepsis and pneumonia",
-     "Pancreatitis and trauma",
-     "Drowning and inhalation injury"
+     "Pancreatitis and trauma"
     ],
-    "correct": 2,
+    "correct": 3,
     "exp": "Causes are direct (pneumonia, aspiration, drowning, inhalation, contusion) or indirect (sepsis, pancreatitis, transfusion, trauma, shock). Sepsis and pneumonia are the most common.",
     "why": [
+     "Both are direct causes but uncommon relative to sepsis and pneumonia.",
      "Both cause ARDS but are less frequent triggers.",
      "Both are genuine causes but not the leading pair.",
      "",
-     "Both are recognised causes but neither is among the most common.",
-     "Both are direct causes but uncommon relative to sepsis and pneumonia."
+     "Both are recognised causes but neither is among the most common."
     ],
     "img": [
      4
@@ -71,20 +71,20 @@
    {
     "q": "What is the cornerstone ventilatory strategy in ARDS?",
     "ch": [
-     "Minimising PEEP to avoid barotrauma",
-     "Maintaining FiO2 at 1.0 throughout",
      "High tidal volumes to recruit collapsed lung",
      "Low tidal volume of 6 mL/kg predicted body weight with a limited plateau pressure",
-     "Tidal volume set by the patient's actual body weight"
+     "Tidal volume set by the patient's actual body weight",
+     "Minimising PEEP to avoid barotrauma",
+     "Maintaining FiO2 at 1.0 throughout"
     ],
-    "correct": 3,
+    "correct": 1,
     "exp": "Lung-protective ventilation at 6 mL/kg predicted body weight with a limited plateau pressure is the cornerstone, permitting permissive hypercapnia. Predicted body weight is based on height and sex, not actual weight.",
     "why": [
-     "PEEP is needed to recruit alveoli and reduce shunt; minimising it worsens hypoxemia.",
-     "Sustained FiO2 of 1.0 causes oxygen toxicity and does not correct shunt.",
      "High tidal volumes overdistend the small aerated fraction and cause volutrauma.",
      "",
-     "Using actual body weight overestimates lung size and delivers injurious volumes."
+     "Using actual body weight overestimates lung size and delivers injurious volumes.",
+     "PEEP is needed to recruit alveoli and reduce shunt; minimising it worsens hypoxemia.",
+     "Sustained FiO2 of 1.0 causes oxygen toxicity and does not correct shunt."
     ],
     "img": [
      8
@@ -93,20 +93,20 @@
    {
     "q": "Why does raising the FiO2 alone often fail to correct hypoxemia in ARDS?",
     "ch": [
-     "Because carbon monoxide is occupying the haemoglobin binding sites",
      "Because reduced cardiac output limits oxygen delivery to the tissues",
      "Because methemoglobin cannot bind oxygen at normal partial pressures",
      "Because increased dead space prevents carbon dioxide clearance",
-     "Because intrapulmonary shunt means blood bypasses ventilated alveoli"
+     "Because intrapulmonary shunt means blood bypasses ventilated alveoli",
+     "Because carbon monoxide is occupying the haemoglobin binding sites"
     ],
-    "correct": 4,
+    "correct": 3,
     "exp": "Flooded alveoli create intrapulmonary shunt. Blood passes lung units that are not ventilated at all, so adding oxygen to ventilated units cannot fix it. PEEP and recruitment are needed rather than simply more oxygen.",
     "why": [
-     "Carbon monoxide poisoning is unrelated to the ARDS mechanism.",
      "Low cardiac output can worsen oxygen delivery but is not why FiO2 fails.",
      "Methemoglobinemia is a rare complication of inhaled nitric oxide, not the underlying mechanism.",
      "Dead space is ventilation without perfusion and causes CO2 retention rather than refractory hypoxemia.",
-     ""
+     "",
+     "Carbon monoxide poisoning is unrelated to the ARDS mechanism."
     ],
     "img": [
      3
@@ -115,20 +115,20 @@
    {
     "q": "What does the term 'baby lung' describe in ARDS?",
     "ch": [
+     "The characteristic appearance of the lung on bedside ultrasound",
+     "ARDS occurring in paediatric rather than adult patients",
      "That only a small fraction of lung remains aerated, so normal tidal volumes overdistend it",
      "The reduced lung volume remaining after a lobectomy",
-     "Congenital surfactant deficiency in the newborn lung",
-     "The characteristic appearance of the lung on bedside ultrasound",
-     "ARDS occurring in paediatric rather than adult patients"
+     "Congenital surfactant deficiency in the newborn lung"
     ],
-    "correct": 0,
+    "correct": 2,
     "exp": "Only a small fraction of the lung is aerated in ARDS, so a normal tidal volume overdistends that remnant. This is the rationale for low tidal volume ventilation.",
     "why": [
+     "It is a physiological concept, not a radiological sign.",
+     "The term describes lung volume, not patient age.",
      "",
      "It refers to functional aerated volume in ARDS, not surgical resection.",
-     "Congenital surfactant deficiency is neonatal respiratory distress syndrome, a different entity.",
-     "It is a physiological concept, not a radiological sign.",
-     "The term describes lung volume, not patient age."
+     "Congenital surfactant deficiency is neonatal respiratory distress syndrome, a different entity."
     ],
     "img": [
      3
@@ -159,20 +159,20 @@
    {
     "q": "A ventilated ARDS patient suddenly desaturates with rising airway pressures and hypotension. What should be suspected first?",
     "ch": [
-     "Acute kidney injury",
-     "Progression of the underlying sepsis",
      "Tension pneumothorax from barotrauma",
      "Ventilator-associated pneumonia",
-     "Pulmonary embolism"
+     "Pulmonary embolism",
+     "Acute kidney injury",
+     "Progression of the underlying sepsis"
     ],
-    "correct": 2,
+    "correct": 0,
     "exp": "Sudden desaturation with rising airway pressures and hypotension on the ventilator should raise immediate suspicion of tension pneumothorax from barotrauma, which requires emergency treatment.",
     "why": [
-     "Renal injury does not produce this ventilatory picture.",
-     "Sepsis progression is usually more gradual and does not typically spike airway pressures acutely.",
      "",
      "Ventilator-associated pneumonia develops over days, not in a sudden decompensation.",
-     "PE is possible but does not characteristically raise airway pressures."
+     "PE is possible but does not characteristically raise airway pressures.",
+     "Renal injury does not produce this ventilatory picture.",
+     "Sepsis progression is usually more gradual and does not typically spike airway pressures acutely."
     ],
     "img": [
      9
@@ -181,20 +181,20 @@
    {
     "q": "A patient develops ARDS within 6 hours of receiving a blood product. What should be considered?",
     "ch": [
+     "Volume overload from transfusion",
      "Haemolytic transfusion reaction",
      "Citrate toxicity",
      "Anaphylaxis",
-     "Transfusion-related acute lung injury",
-     "Volume overload from transfusion"
+     "Transfusion-related acute lung injury"
     ],
-    "correct": 3,
+    "correct": 4,
     "exp": "TRALI is ARDS occurring within 6 hours of a blood product. Always ask about recent transfusion when ARDS appears without an obvious trigger.",
     "why": [
+     "Circulatory overload is cardiogenic pulmonary edema, which the Berlin definition specifically excludes.",
      "A haemolytic reaction causes fever, haemoglobinuria and renal injury.",
      "Citrate toxicity causes hypocalcaemia, not alveolar injury.",
      "Anaphylaxis presents with urticaria, bronchospasm and shock rather than the diffuse alveolar damage of ARDS.",
-     "",
-     "Circulatory overload is cardiogenic pulmonary edema, which the Berlin definition specifically excludes."
+     ""
     ],
     "img": [
      4
@@ -230,20 +230,20 @@
    {
     "q": "Why does the lung collapse when air enters the pleural space?",
     "ch": [
-     "The negative intrapleural pressure is lost and the lung recoils inward",
      "The bronchi constrict and trap air distally",
      "The diaphragm becomes paralysed on the affected side",
      "Surfactant is inactivated and the alveoli collapse",
-     "The alveoli fill with protein-rich fluid"
+     "The alveoli fill with protein-rich fluid",
+     "The negative intrapleural pressure is lost and the lung recoils inward"
     ],
-    "correct": 0,
+    "correct": 4,
     "exp": "Air in the pleural space breaks the negative intrapleural pressure that holds the lung expanded, so elastic recoil collapses it, producing ventilation-perfusion mismatch and hypoxemia.",
     "why": [
-     "",
      "Bronchoconstriction describes asthma.",
      "Diaphragmatic paralysis is a separate cause of respiratory compromise.",
      "Surfactant inactivation is a feature of ARDS.",
-     "Alveolar flooding describes pneumonia or pulmonary edema."
+     "Alveolar flooding describes pneumonia or pulmonary edema.",
+     ""
     ],
     "img": [
      3
@@ -252,20 +252,20 @@
    {
     "q": "Which patient fits the classic description of a primary spontaneous pneumothorax?",
     "ch": [
-     "An elderly patient with severe COPD",
-     "A tall, thin young male smoker",
      "A patient on mechanical ventilation",
      "A patient who has just had a central line placed",
-     "A patient with cystic fibrosis"
+     "A patient with cystic fibrosis",
+     "An elderly patient with severe COPD",
+     "A tall, thin young male smoker"
     ],
-    "correct": 1,
+    "correct": 4,
     "exp": "Primary spontaneous pneumothorax classically occurs in tall, thin young smokers from rupture of apical blebs.",
     "why": [
-     "COPD makes it a secondary spontaneous pneumothorax, which is tolerated far less well.",
-     "",
      "Positive pressure ventilation makes it iatrogenic.",
      "A central line makes it iatrogenic.",
-     "Cystic fibrosis is underlying lung disease, so this would be secondary."
+     "Cystic fibrosis is underlying lung disease, so this would be secondary.",
+     "COPD makes it a secondary spontaneous pneumothorax, which is tolerated far less well.",
+     ""
     ],
     "img": [
      8
@@ -274,20 +274,20 @@
    {
     "q": "In which direction does the trachea deviate in a tension pneumothorax?",
     "ch": [
+     "Downward",
      "It deviates only in children",
      "Toward the affected side",
      "Away from the affected side",
-     "It does not deviate",
-     "Downward"
+     "It does not deviate"
     ],
-    "correct": 2,
+    "correct": 3,
     "exp": "The trachea deviates away from a tension pneumothorax, as accumulating air pushes the mediastinum across. It deviates toward the side in atelectasis, which is the high-yield distinction.",
     "why": [
+     "Downward deviation is not a described finding.",
      "The mechanism is not age-specific.",
      "Deviation toward the lesion occurs in atelectasis, where volume is lost rather than gained.",
      "",
-     "Deviation is a recognised, if late, sign of tension physiology.",
-     "Downward deviation is not a described finding."
+     "Deviation is a recognised, if late, sign of tension physiology."
     ],
     "img": [
      5
@@ -318,20 +318,20 @@
    {
     "q": "Why is high-flow supplemental oxygen given in pneumothorax?",
     "ch": [
-     "It prevents infection of the pleural space",
-     "It reduces pleuritic pain",
      "It is required before any chest tube insertion",
      "It re-expands the lung mechanically",
-     "It accelerates reabsorption of pleural air by nitrogen washout"
+     "It accelerates reabsorption of pleural air by nitrogen washout",
+     "It prevents infection of the pleural space",
+     "It reduces pleuritic pain"
     ],
-    "correct": 4,
+    "correct": 2,
     "exp": "High-flow oxygen accelerates pleural air reabsorption through nitrogen washout, up to roughly fourfold. It should still be titrated, with caution in COPD CO2 retainers.",
     "why": [
-     "Oxygen has no antimicrobial role here.",
-     "Analgesia treats pain, not oxygen.",
      "Oxygen is given to all patients but is not a prerequisite for drainage.",
      "Oxygen speeds reabsorption; it does not mechanically re-expand the lung.",
-     ""
+     "",
+     "Oxygen has no antimicrobial role here.",
+     "Analgesia treats pain, not oxygen."
     ],
     "img": [
      9
@@ -362,20 +362,20 @@
    {
     "q": "A supine trauma patient may show which subtle radiographic sign of pneumothorax?",
     "ch": [
+     "Westermark sign",
      "Kerley B lines",
      "The deep sulcus sign",
      "Air bronchograms",
-     "Batwing opacity",
-     "Westermark sign"
+     "Batwing opacity"
     ],
-    "correct": 1,
+    "correct": 2,
     "exp": "In a supine trauma patient, pleural air collects anteriorly and may show only the deep sulcus sign. Ultrasound outperforms supine films here.",
     "why": [
+     "Westermark sign is an oligaemia sign described in pulmonary embolism.",
      "Kerley B lines indicate interstitial edema.",
      "",
      "Air bronchograms indicate alveolar consolidation.",
-     "Batwing opacity indicates pulmonary edema.",
-     "Westermark sign is an oligaemia sign described in pulmonary embolism."
+     "Batwing opacity indicates pulmonary edema."
     ],
     "img": [
      6
@@ -384,20 +384,20 @@
    {
     "q": "What does recent evidence suggest about management of many primary spontaneous pneumothoraces?",
     "ch": [
-     "Oxygen should be withheld",
      "All require immediate large-bore chest tube drainage",
      "Conservative watchful waiting is non-inferior in many cases",
      "All require surgical pleurodesis at first presentation",
-     "Needle aspiration is contraindicated"
+     "Needle aspiration is contraindicated",
+     "Oxygen should be withheld"
     ],
-    "correct": 2,
+    "correct": 1,
     "exp": "A conservative-management trial in primary spontaneous pneumothorax showed watchful waiting was non-inferior for many patients, a shift away from routine intervention. Management still depends on size, symptoms and underlying lung.",
     "why": [
-     "Oxygen is beneficial and should be given.",
      "Routine large-bore drainage is exactly the practice this evidence moved away from.",
      "",
      "Pleurodesis is reserved for recurrence, persistent air leak or high-risk occupations.",
-     "Aspiration remains a reasonable first attempt in primary spontaneous pneumothorax."
+     "Aspiration remains a reasonable first attempt in primary spontaneous pneumothorax.",
+     "Oxygen is beneficial and should be given."
     ],
     "img": [
      9
@@ -406,20 +406,20 @@
    {
     "q": "Which patient is least suitable for observation alone and most likely to need a chest tube?",
     "ch": [
+     "A patient with underlying COPD and a secondary spontaneous pneumothorax",
+     "A patient whose pneumothorax has already resolved on repeat film",
      "A patient with a resolved iatrogenic pneumothorax after line removal",
      "An asymptomatic patient with normal saturations and a tiny apical rim",
-     "A young patient with a small asymptomatic primary pneumothorax",
-     "A patient with underlying COPD and a secondary spontaneous pneumothorax",
-     "A patient whose pneumothorax has already resolved on repeat film"
+     "A young patient with a small asymptomatic primary pneumothorax"
     ],
-    "correct": 3,
+    "correct": 0,
     "exp": "Secondary spontaneous pneumothorax in a patient with parenchymal disease is tolerated poorly and usually requires drainage. Small asymptomatic primary cases may be observed with oxygen.",
     "why": [
+     "",
+     "A resolved pneumothorax needs no drainage.",
      "A resolved iatrogenic case needs no tube.",
      "An asymptomatic tiny rim with normal saturations can be observed.",
-     "A small asymptomatic primary pneumothorax is the classic candidate for observation.",
-     "",
-     "A resolved pneumothorax needs no drainage."
+     "A small asymptomatic primary pneumothorax is the classic candidate for observation."
     ],
     "img": [
      9
@@ -428,20 +428,20 @@
    {
     "q": "A patient who is a commercial diver has had a second spontaneous pneumothorax. What definitive management should be considered?",
     "ch": [
+     "Repeat needle aspiration only",
+     "Pleurodesis or VATS with bleb resection",
      "Long-term oxygen therapy",
      "Annual chest X-ray surveillance alone",
-     "Inhaled corticosteroids",
-     "Repeat needle aspiration only",
-     "Pleurodesis or VATS with bleb resection"
+     "Inhaled corticosteroids"
     ],
-    "correct": 4,
+    "correct": 1,
     "exp": "Recurrence, a persistent air leak, or a high-risk occupation such as diving or flying warrants definitive treatment with pleurodesis or VATS. Surgical bleb resection markedly lowers recurrence, and divers often need it.",
     "why": [
+     "Repeat aspiration does not prevent the next recurrence.",
+     "",
      "Long-term oxygen has no role in preventing recurrence.",
      "Surveillance alone leaves a diver at risk of a pneumothorax at depth.",
-     "Inhaled corticosteroids do not prevent pneumothorax.",
-     "Repeat aspiration does not prevent the next recurrence.",
-     ""
+     "Inhaled corticosteroids do not prevent pneumothorax."
     ],
     "img": [
      9

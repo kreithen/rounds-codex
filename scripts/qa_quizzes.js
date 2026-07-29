@@ -40,7 +40,11 @@ const GAL = JSON.parse(fs.readFileSync(path.join(CONTENT, 'galleries.json'), 'ut
 const byId = Object.fromEntries(DATA.map(d => [d.id, d]));
 
 const STOP = new Set(('a an the and or of in to for with on at is are was were be been by that this these those which what who whom whose how why when where all any both each few more most other some such no nor not only own same so than too very can will just should now it its his her their they them then there here also may might must shall from into during including until against among throughout because about above below up down out off over under again further once as if but do does did doing have has had having i you he she we us our your patient patients').split(' '));
-const words = s => String(s).toLowerCase().replace(/<[^>]*>/g, ' ').replace(/[^a-z0-9\s-]/g, ' ')
+// Strip HTML tags only. The naive /<[^>]*>/ is wrong here: clinical text is full of bare
+// comparators ("hold insulin if K+ <3.3 mEq/L", "target often <7%"), and that pattern eats
+// everything from such a '<' to the next '>' -- which silently deleted whole fields from the
+// traceability vocabulary and failed correctly-sourced questions. Require a tag-like opener.
+const words = s => String(s).toLowerCase().replace(/<\/?[a-z][^>]*>/gi, ' ').replace(/[^a-z0-9\s-]/g, ' ')
   .split(/\s+/).filter(w => w.length > 3 && !STOP.has(w));
 
 const FIELDS = ['tagline', 'whatItIs', 'diagnosis', 'meds', 'nursing', 'medStudent', 'pearls', 'flow', 'redFlags', 'impress'];

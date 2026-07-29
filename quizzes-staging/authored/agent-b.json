@@ -1,0 +1,686 @@
+{
+ "addisons": {
+  "condition": "Adrenal Insufficiency (Addison's)",
+  "questions": [
+   {
+    "q": "Which statement best characterizes primary adrenal insufficiency (Addison's disease)?",
+    "ch": [
+     "Destruction of the adrenal cortex with deficiency of both cortisol and aldosterone and a high ACTH",
+     "Pituitary disease with a low ACTH that spares aldosterone and causes no hyperpigmentation",
+     "Hypothalamic disease with a low ACTH in which the renin-aldosterone axis is fully preserved",
+     "Excess cortisol production by an adrenal cortical adenoma with a suppressed plasma ACTH level",
+     "Isolated aldosterone deficiency with a normal cortisol and a normal response to cosyntropin"
+    ],
+    "correct": 0,
+    "exp": "Primary adrenal insufficiency is destruction of the adrenal cortex, so both cortisol and aldosterone are deficient; the pituitary responds with a high ACTH, which drives hyperpigmentation.",
+    "why": [
+     "",
+     "Low ACTH with preserved aldosterone and no hyperpigmentation describes secondary insufficiency.",
+     "Hypothalamic (tertiary) disease also lowers ACTH and spares the renin-aldosterone axis.",
+     "Addison's disease is cortisol deficiency, not the cortisol excess of an adrenal adenoma.",
+     "Both cortisol and aldosterone are lost in primary disease, and the cosyntropin response is subnormal."
+    ],
+    "img": [
+     1,
+     2
+    ]
+   },
+   {
+    "q": "In developed countries, what is the most common cause of primary adrenal insufficiency?",
+    "ch": [
+     "Bilateral adrenal metastases seeded from a distant primary malignancy",
+     "Abrupt withdrawal of chronic exogenous glucocorticoid therapy after long use",
+     "Tuberculous destruction of the adrenal glands, which remains a major cause worldwide",
+     "Autoimmune adrenalitis, often part of an autoimmune polyglandular syndrome",
+     "Adrenal hemorrhage from meningococcemia (Waterhouse-Friderichsen syndrome)"
+    ],
+    "correct": 3,
+    "exp": "Autoimmune adrenalitis is the most common cause of Addison's in developed countries and is often part of the autoimmune polyglandular syndromes.",
+    "why": [
+     "Adrenal metastases are sought on the etiology imaging workup but are not the usual cause.",
+     "Abrupt steroid withdrawal produces secondary insufficiency, not destruction of the adrenal cortex.",
+     "Tuberculosis is a major cause worldwide but not the leading cause in developed countries.",
+     "",
+     "Adrenal hemorrhage from meningococcemia causes acute primary failure but is uncommon."
+    ],
+    "img": [
+     1,
+     6
+    ]
+   },
+   {
+    "q": "Which set of laboratory findings is classic for primary adrenal insufficiency?",
+    "ch": [
+     "Hypernatremia, hypokalemia, and a metabolic alkalosis",
+     "Hyponatremia, hypokalemia, and a respiratory alkalosis",
+     "Hyponatremia, hyperkalemia, and a mild metabolic acidosis",
+     "Normal sodium and potassium with an isolated elevated bicarbonate",
+     "Hypernatremia, hyperkalemia, and a marked metabolic alkalosis"
+    ],
+    "correct": 2,
+    "exp": "Loss of aldosterone causes salt wasting with hyponatremia, hyperkalemia, and a mild metabolic acidosis; hypoglycemia and eosinophilia may also be present.",
+    "why": [
+     "High sodium with low potassium and alkalosis is the opposite pattern of mineralocorticoid excess.",
+     "Potassium is high, not low, because aldosterone deficiency impairs potassium excretion.",
+     "",
+     "Electrolytes are characteristically deranged in primary disease rather than normal.",
+     "Sodium is low from salt wasting, and the acid-base disturbance is a mild acidosis."
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "A patient with fatigue, weight loss, and salt craving has hyperpigmentation of the skin creases, scars, and buccal mucosa. What does this finding indicate?",
+    "ch": [
+     "Adrenal insufficiency caused by chronic exogenous glucocorticoid therapy",
+     "Aldosterone deficiency alone, occurring independently of the ACTH level",
+     "Secondary insufficiency arising from pituitary disease with a low ACTH",
+     "Primary insufficiency, because a high ACTH and POMC-derived MSH drive pigmentation",
+     "Tertiary insufficiency arising from hypothalamic disease with a low ACTH"
+    ],
+    "correct": 3,
+    "exp": "Hyperpigmentation occurs only in primary disease: the failing adrenal cortex drives ACTH up, and POMC-derived MSH activity pigments skin creases, scars, and buccal mucosa.",
+    "why": [
+     "Chronic exogenous steroids suppress the HPA axis and ACTH, so pigmentation does not develop.",
+     "Pigmentation tracks the high ACTH and MSH of primary disease, not the aldosterone level.",
+     "Secondary disease lowers ACTH, so hyperpigmentation is absent — its absence points to secondary.",
+     "",
+     "Hypothalamic (tertiary) disease also has a low ACTH and therefore no hyperpigmentation."
+    ],
+    "img": [
+     4,
+     5
+    ]
+   },
+   {
+    "q": "A low morning (8 AM) serum cortisol has been drawn. Which test confirms the diagnosis of adrenal insufficiency?",
+    "ch": [
+     "A single random afternoon serum cortisol repeated on a separate day",
+     "Plasma renin and aldosterone levels drawn while the patient is upright",
+     "A 21-hydroxylase antibody titer sent with the initial screening labs",
+     "Adrenal CT imaging to look for hemorrhage, tuberculosis, or metastases",
+     "The ACTH (cosyntropin) stimulation test, looking for an inadequate cortisol rise"
+    ],
+    "correct": 4,
+    "exp": "A low morning cortisol is the screening test; the ACTH (cosyntropin) stimulation test confirms the diagnosis when the cortisol rise is inadequate.",
+    "why": [
+     "A random afternoon cortisol is unreliable; screening uses a morning level and cosyntropin confirms.",
+     "Renin and aldosterone help localize primary disease but do not confirm cortisol deficiency.",
+     "21-hydroxylase antibodies establish an autoimmune etiology after the diagnosis is made.",
+     "Adrenal CT belongs to the etiology workup, not to confirming the hormone deficiency.",
+     ""
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "Why is fludrocortisone required in primary adrenal insufficiency but not in secondary insufficiency?",
+    "ch": [
+     "Secondary insufficiency spares aldosterone, so mineralocorticoid replacement is unnecessary",
+     "Fludrocortisone is a glucocorticoid and hydrocortisone already supplies that activity",
+     "Secondary insufficiency causes more sodium wasting, which fludrocortisone would worsen",
+     "Fludrocortisone is used only during adrenal crisis, when stress dosing is inadequate",
+     "Patients with secondary insufficiency have a high ACTH that maintains aldosterone output"
+    ],
+    "correct": 0,
+    "exp": "Fludrocortisone replaces aldosterone in primary insufficiency to retain sodium and excrete potassium; secondary insufficiency spares the renin-aldosterone axis, so it is not required.",
+    "why": [
+     "",
+     "Fludrocortisone is the mineralocorticoid; hydrocortisone is the glucocorticoid replacement.",
+     "Salt wasting is a feature of primary disease, and salt should not be restricted.",
+     "In crisis, stress-dose hydrocortisone already supplies enough mineralocorticoid effect.",
+     "Secondary insufficiency is defined by a low ACTH, and ACTH is not what drives aldosterone."
+    ],
+    "img": [
+     8
+    ]
+   },
+   {
+    "q": "A patient in adrenal crisis is hypotensive and vomiting. What is the nursing priority?",
+    "ch": [
+     "Restrict sodium and fluids to prevent overly rapid correction of the sodium",
+     "Obtain large-bore IV access, give rapid normal saline, and give IV hydrocortisone",
+     "Encourage oral rehydration and reassess the blood pressure in one hour",
+     "Sit the patient upright and obtain orthostatic blood pressures before treating",
+     "Obtain a morning cortisol and withhold treatment until the result returns"
+    ],
+    "correct": 1,
+    "exp": "The priority in crisis is circulation: large-bore IV access, rapid normal saline, and the prescribed IV hydrocortisone, while monitoring for shock.",
+    "why": [
+     "Aggressive normal saline is required, and salt is not restricted in primary insufficiency.",
+     "",
+     "Oral rehydration cannot reverse hypovolemic shock, and this patient is vomiting.",
+     "Orthostatic measurement is routine assessment, and abrupt position changes risk syncope.",
+     "Treat first and test later — waiting for results during a crisis can be fatal."
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "A known Addison's patient with influenza who has missed several hydrocortisone doses arrives with a blood pressure of 76/44, vomiting, and confusion. What is the immediate management?",
+    "ch": [
+     "A vasopressor infusion while awaiting the cosyntropin stimulation result",
+     "A potassium binder and insulin-dextrose for hyperkalemia before any steroid",
+     "IV hydrocortisone 100 mg bolus with aggressive normal saline and dextrose",
+     "Oral hydrocortisone at double the usual dose together with oral fluids",
+     "Fludrocortisone alone, since aldosterone deficiency is causing the hypotension"
+    ],
+    "correct": 2,
+    "exp": "Adrenal crisis is treated immediately with an IV hydrocortisone 100 mg bolus plus aggressive normal saline with dextrose, and by treating the precipitating illness — do not wait for test results.",
+    "why": [
+     "Steroids and saline come before confirmatory testing in a suspected adrenal crisis.",
+     "Hyperkalemia resolves with hydrocortisone and volume resuscitation, which must not be delayed.",
+     "",
+     "The patient is vomiting and in shock, so oral dosing cannot be absorbed or relied on.",
+     "Fludrocortisone is maintenance therapy; stress-dose hydrocortisone covers mineralocorticoid needs."
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "You suspect adrenal crisis in an undiagnosed patient but still want to run a cosyntropin stimulation test. Which steroid should you give?",
+    "ch": [
+     "No steroid at all until the cosyntropin stimulation test has been completed",
+     "Dexamethasone, because it does not interfere with the cortisol assay",
+     "Hydrocortisone, because its short half-life will not affect the cortisol assay",
+     "Fludrocortisone, because it has essentially no glucocorticoid activity at all",
+     "Prednisone, because oral dosing avoids interference with the cortisol assay"
+    ],
+    "correct": 1,
+    "exp": "Dexamethasone is the crisis steroid of choice when the diagnosis is unconfirmed: it treats the patient without interfering with the cortisol assay, so cosyntropin stimulation can still proceed.",
+    "why": [
+     "Withholding steroids in a suspected crisis can be fatal — treat first, test later.",
+     "",
+     "Hydrocortisone is measured by the cortisol assay and would invalidate the test.",
+     "Fludrocortisone is a mineralocorticoid and does not treat glucocorticoid deficiency in crisis.",
+     "Oral therapy is inappropriate in crisis, and prednisone does not solve the assay problem."
+    ],
+    "img": [
+     9,
+     10
+    ]
+   },
+   {
+    "q": "A patient on lifelong hydrocortisone replacement develops fever and vomiting at home. What should the sick-day teaching have told them to do?",
+    "ch": [
+     "Halve the oral dose until the fever resolves, then resume the usual regimen",
+     "Continue the usual dose and call the clinic in the morning if not improved",
+     "Take extra fludrocortisone and add dietary salt instead of the glucocorticoid",
+     "Skip the dose until the vomiting stops in order to avoid gastric irritation",
+     "Inject the emergency hydrocortisone and seek care, because vomiting blocks oral dosing"
+    ],
+    "correct": 4,
+    "exp": "Sick-day rules: double or triple the oral dose with fever, and if vomiting, inject the emergency hydrocortisone and seek care. Steroids are never skipped or stopped.",
+    "why": [
+     "The dose must be increased for illness and stress, never reduced.",
+     "Fever calls for an increased dose and vomiting calls for injection, not watchful waiting.",
+     "Extra mineralocorticoid does not replace the glucocorticoid needed for the stress response.",
+     "Steroids must never be skipped or stopped — omission precipitates adrenal crisis.",
+     ""
+    ],
+    "img": [
+     8,
+     10
+    ]
+   }
+  ]
+ },
+ "endocarditis": {
+  "condition": "Infective Endocarditis",
+  "questions": [
+   {
+    "q": "Which sequence best describes the pathophysiology of infective endocarditis?",
+    "ch": [
+     "Endothelial injury forms sterile platelet-fibrin thrombi that transient bacteremia then seeds",
+     "Bacteria invade wholly normal endothelium and destroy the valve without any thrombus",
+     "Immune complexes deposit on the valve leaflets and later become secondarily infected",
+     "Chronic pressure overload thickens and calcifies the valve, which then becomes infected",
+     "Septic emboli lodge in the coronary arteries and seed the valve from the myocardium"
+    ],
+    "correct": 0,
+    "exp": "Endothelial injury creates sterile platelet-fibrin thrombi (nonbacterial thrombotic endocarditis); transient bacteremia seeds these, forming infected vegetations that destroy valves and shed septic emboli.",
+    "why": [
+     "",
+     "A damaged or turbulent endothelial surface and a platelet-fibrin thrombus must come first.",
+     "Immunologic phenomena such as Osler nodes and Roth spots are consequences, not the initial lesion.",
+     "Structural heart disease is a risk factor because it creates turbulence and endothelial injury.",
+     "Septic emboli are shed from an established vegetation; they do not create it."
+    ],
+    "img": [
+     3
+    ]
+   },
+   {
+    "q": "Which organism is the most common overall cause of infective endocarditis, including right-sided disease in injection drug use?",
+    "ch": [
+     "Viridans group streptococci from poor dentition or a dental procedure",
+     "Enterococcus faecalis arising from a genitourinary or GI source",
+     "Staphylococcus aureus, the typical organism of acute virulent disease",
+     "Staphylococcus epidermidis, seen in early prosthetic valve infection",
+     "HACEK organisms, fastidious colonizers of the oropharynx"
+    ],
+    "correct": 2,
+    "exp": "Staphylococcus aureus is the most common cause overall and the organism of acute, virulent disease, including right-sided tricuspid endocarditis in injection drug use.",
+    "why": [
+     "Viridans streptococci cause indolent subacute disease linked to the mouth and dental procedures.",
+     "Enterococci are associated with a GU or GI source and are not the most common organism.",
+     "",
+     "S. epidermidis is typical of early prosthetic valve endocarditis, not the leading overall cause.",
+     "HACEK organisms arise from the oropharynx and are an uncommon, fastidious cause."
+    ],
+    "img": [
+     1
+    ]
+   },
+   {
+    "q": "Which peripheral finding of infective endocarditis is painful?",
+    "ch": [
+     "Janeway lesions on the palms and soles",
+     "Splinter hemorrhages beneath the fingernails",
+     "Roth spots seen on retinal examination",
+     "Osler nodes on the finger and toe pulps",
+     "Petechiae on the conjunctiva and mucosa"
+    ],
+    "correct": 3,
+    "exp": "Osler is Ouchy: painful nodes on the finger and toe pulps, an immunologic phenomenon. Janeway lesions, by contrast, are painless.",
+    "why": [
+     "Janeway lesions are painless macules on the palms and soles caused by septic emboli.",
+     "Splinter hemorrhages are painless linear marks under the nails.",
+     "Roth spots are painless retinal lesions found on fundoscopy.",
+     "",
+     "Petechiae are painless and are among the classic peripheral signs."
+    ],
+    "img": [
+     5
+    ]
+   },
+   {
+    "q": "By the Modified Duke (2023 ISCVID) criteria, which combination establishes definite infective endocarditis?",
+    "ch": [
+     "1 major criterion alone, with no minor criteria required",
+     "2 major criteria, such as sustained bacteremia plus echo evidence",
+     "1 major criterion plus 1 minor criterion in a predisposed patient",
+     "3 minor criteria alone in a patient with a fever above 38 degrees",
+     "2 minor criteria plus one positive blood culture from a single site"
+    ],
+    "correct": 1,
+    "exp": "Definite infective endocarditis requires 2 major criteria, or 1 major plus 3 minor, or 5 minor criteria.",
+    "why": [
+     "A single major criterion by itself is not sufficient for a definite diagnosis.",
+     "",
+     "One major criterion requires three minor criteria, not one.",
+     "Five minor criteria are needed when no major criterion is met.",
+     "This reaches none of the accepted combinations; one culture is microbiologic evidence not meeting major."
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "What is the nurse's responsibility regarding blood cultures in suspected infective endocarditis?",
+    "ch": [
+     "Draw two sets from the same site thirty minutes apart once vancomycin is running",
+     "Draw a single set from the existing central line after the first antibiotic dose",
+     "Draw cultures only when the temperature is above 38 degrees at that moment",
+     "Delay the cultures until echocardiography has confirmed a valve vegetation",
+     "Draw at least three sets from separate venipuncture sites before antibiotics"
+    ],
+    "correct": 4,
+    "exp": "At least three sets of blood cultures should be drawn from separate venipuncture sites using strict aseptic technique before antibiotics are started.",
+    "why": [
+     "Separate sites are required, and drawing after vancomycin has started lowers the yield.",
+     "Cultures must precede antibiotics and must come from multiple separate venipuncture sites.",
+     "Fever is often intermittent, so cultures are not withheld for a normal temperature.",
+     "Cultures and echocardiography are the two pillars, and the cultures come first.",
+     ""
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "Transthoracic echocardiography is negative in a patient with a prosthetic aortic valve and persistent Staphylococcus aureus bacteremia. What is the next step?",
+    "ch": [
+     "Accept the negative study and treat this as bacteremia without endocarditis",
+     "Repeat the transthoracic study in one week once antibiotics have taken effect",
+     "Obtain a transesophageal echocardiogram, essential for prosthetic valves and abscess",
+     "Proceed directly to surgical valve replacement without any further imaging",
+     "Order coronary angiography to look for a mycotic aneurysm of a coronary artery"
+    ],
+    "correct": 2,
+    "exp": "Transesophageal echocardiography has higher sensitivity than TTE and is essential for prosthetic valves, small vegetations, and perivalvular abscess, so a negative TTE does not exclude endocarditis.",
+    "why": [
+     "A negative TTE does not exclude endocarditis with a prosthetic valve and sustained bacteremia.",
+     "Delaying imaging risks missing a perivalvular abscess or progressive valve destruction.",
+     "",
+     "Surgical timing is a multidisciplinary decision and still requires diagnostic imaging.",
+     "Angiography does not image vegetations; cardiac CT or PET are the advanced adjuncts."
+    ],
+    "img": [
+     8,
+     9
+    ]
+   },
+   {
+    "q": "Blood cultures in an older patient with subacute endocarditis grow Streptococcus gallolyticus (bovis). What should you order?",
+    "ch": [
+     "Chest CT to look for septic pulmonary emboli from a tricuspid vegetation",
+     "Colonoscopy, because gallolyticus bacteremia is associated with colon cancer",
+     "Panoramic dental radiographs to look for a periapical or periodontal abscess",
+     "Urinalysis and prostate examination to identify a genitourinary portal of entry",
+     "Serology for Coxiella, Bartonella, and Brucella as fastidious organisms"
+    ],
+    "correct": 1,
+    "exp": "Streptococcus gallolyticus (bovis) bacteremia should prompt a colonoscopy to look for colon cancer — always match the organism to its portal of entry.",
+    "why": [
+     "Septic pulmonary emboli suggest right-sided disease from injection drug use with S. aureus.",
+     "",
+     "A dental source points to viridans group streptococci rather than gallolyticus.",
+     "A GU or GI source suggests enterococcus rather than gallolyticus.",
+     "Coxiella, Bartonella, and Brucella are considered in culture-negative disease; these cultures grew."
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "A patient who injects drugs has fever, a tricuspid regurgitant murmur, and multiple peripheral nodular opacities on chest imaging. Which statement best fits this presentation?",
+    "ch": [
+     "Right-sided S. aureus endocarditis with septic pulmonary emboli, often managed medically",
+     "Left-sided viridans streptococcal endocarditis seeded from poor dentition",
+     "Early prosthetic valve endocarditis caused by Staphylococcus epidermidis",
+     "Enterococcal endocarditis arising from a genitourinary portal of entry",
+     "Culture-negative endocarditis caused by Coxiella or Bartonella species"
+    ],
+    "correct": 0,
+    "exp": "Injection drug use causes right-sided tricuspid endocarditis with S. aureus and septic pulmonary emboli; right-sided disease is often managed medically, while left-sided disease is more embolic and dangerous.",
+    "why": [
+     "",
+     "Viridans streptococci come from the mouth and cause left-sided subacute disease.",
+     "Early prosthetic valve infection requires a prosthetic valve, which this patient does not have.",
+     "Enterococcal disease arises from a GU or GI source and does not shed septic pulmonary emboli.",
+     "Culture-negative disease follows prior antibiotics or fastidious organisms, not this classic picture."
+    ],
+    "img": [
+     4,
+     7
+    ]
+   },
+   {
+    "q": "A patient being treated for aortic valve endocarditis develops new first-degree AV block that progresses on telemetry. What does this suggest?",
+    "ch": [
+     "Anemia of chronic disease producing a rate-related conduction delay",
+     "Immunologic glomerulonephritis with hyperkalemia slowing conduction",
+     "An expected effect of the beta-lactam antibiotic on the cardiac conduction system",
+     "A perivalvular root abscess that requires urgent surgical evaluation",
+     "An embolic stroke involving the brainstem and its conduction pathways"
+    ],
+    "correct": 3,
+    "exp": "New AV block or conduction delay on the ECG suggests a perivalvular or root abscess and is a red flag requiring urgent surgical evaluation.",
+    "why": [
+     "Anemia is a laboratory finding in endocarditis and does not cause conduction block.",
+     "Hematuria and immunologic phenomena occur, but conduction block points to an abscess.",
+     "Nafcillin and cefazolin are linked to interstitial nephritis and neutropenia, not heart block.",
+     "",
+     "Embolic stroke produces sudden focal neurologic deficits rather than progressive AV block."
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "Which regimen is now favored for Enterococcus faecalis endocarditis in order to avoid aminoglycoside toxicity?",
+    "ch": [
+     "Rifampin plus nafcillin to penetrate biofilm on the infected valve",
+     "Vancomycin monotherapy given for a four to six week intravenous course",
+     "Ampicillin plus gentamicin for a synergistic bactericidal effect",
+     "Penicillin G alone, dosed once daily as outpatient parenteral therapy",
+     "Ampicillin plus ceftriaxone as a double beta-lactam regimen"
+    ],
+    "correct": 4,
+    "exp": "Ampicillin plus ceftriaxone is now preferred for Enterococcus faecalis endocarditis because this double beta-lactam regimen spares the nephrotoxicity and ototoxicity of gentamicin.",
+    "why": [
+     "Rifampin is an adjunct for prosthetic valve staph infection and is never used as monotherapy.",
+     "Vancomycin is empiric coverage for staph, not the preferred definitive enterococcal therapy.",
+     "Ampicillin with gentamicin is the older regimen, and gentamicin is nephrotoxic and ototoxic.",
+     "Penicillin G or ceftriaxone alone is used for viridans streptococcal native-valve disease.",
+     ""
+    ],
+    "img": [
+     10
+    ]
+   }
+  ]
+ },
+ "pericarditis": {
+  "condition": "Acute Pericarditis",
+  "questions": [
+   {
+    "q": "Which description best fits the chest pain of acute pericarditis?",
+    "ch": [
+     "Sharp retrosternal pain that is worse lying flat and relieved by sitting forward",
+     "Tearing interscapular pain that is of maximal intensity at the moment of onset",
+     "Burning epigastric pain after meals that is worse when supine at night",
+     "A dull constant ache unchanged by position, breathing, or exertion",
+     "Crushing substernal pressure on exertion, relieved by rest and nitroglycerin"
+    ],
+    "correct": 0,
+    "exp": "Pericarditis causes sharp retrosternal pain that is pleuritic and positional — worse lying flat and with inspiration, relieved by sitting forward — and it may radiate to the trapezius ridge.",
+    "why": [
+     "",
+     "Tearing pain of instant maximal intensity suggests aortic dissection instead.",
+     "Postprandial burning that is worse supine suggests reflux rather than pericardial inflammation.",
+     "Pericardial pain is characteristically positional and pleuritic, not unchanged by position.",
+     "Exertional pressure relieved by rest describes angina, not pleuritic positional pain."
+    ],
+    "img": [
+     4
+    ]
+   },
+   {
+    "q": "Which ECG pattern is the signature of acute pericarditis?",
+    "ch": [
+     "Left bundle branch block with discordant ST changes in the lateral leads",
+     "Regional ST elevation with reciprocal ST depression in the opposite leads",
+     "Diffuse concave ST elevation with PR depression, plus PR elevation in aVR",
+     "Deep symmetric T-wave inversion confined to the anterior precordial leads",
+     "Electrical alternans with low voltage across all twelve of the leads"
+    ],
+    "correct": 2,
+    "exp": "Diffuse concave (upsloping) ST elevation with PR depression is the ECG signature of acute pericarditis, and PR elevation in aVR is a helpful clue.",
+    "why": [
+     "Bundle branch block is not among the suggestive ECG changes for pericarditis.",
+     "Regional elevation with reciprocal depression describes STEMI; pericarditis is diffuse.",
+     "",
+     "Isolated anterior T-wave inversion is not the described pericarditis pattern.",
+     "Electrical alternans suggests a large effusion or tamponade rather than pericarditis itself."
+    ],
+    "img": [
+     5,
+     7
+    ]
+   },
+   {
+    "q": "How is the pericardial friction rub best heard?",
+    "ch": [
+     "Only with the patient lying completely flat and breathing quietly",
+     "At the apex in the left lateral decubitus position using the bell",
+     "Over the right second intercostal space during a held inspiration",
+     "At the left sternal border with the patient leaning forward at end-expiration",
+     "At the posterior lung bases, where it persists unchanged over several days"
+    ],
+    "correct": 3,
+    "exp": "The scratchy, triphasic rub is best heard at the left sternal border with the patient leaning forward at end-expiration; it is evanescent, so listen often.",
+    "why": [
+     "Lying flat is the position that worsens the pain; the rub is sought leaning forward.",
+     "The left lateral decubitus position with the bell is used for a mitral diastolic murmur.",
+     "The right second intercostal space is the aortic area, not where the rub is sought.",
+     "",
+     "The rub is a pericardial sound at the left sternal border and it comes and goes."
+    ],
+    "img": [
+     4
+    ]
+   },
+   {
+    "q": "How many of the four diagnostic criteria are required to diagnose acute pericarditis?",
+    "ch": [
+     "1 criterion: pleuritic positional chest pain by itself is sufficient",
+     "2 of the 4: pain, friction rub, ECG changes, or a new effusion",
+     "3 of the 4, one of which must be a documented pericardial effusion",
+     "4 of the 4, since every criterion must be documented before treating",
+     "0 criteria; the diagnosis rests entirely on excluding coronary syndrome"
+    ],
+    "correct": 1,
+    "exp": "Diagnosis requires at least 2 of 4 criteria: pleuritic/positional chest pain, a pericardial friction rub, suggestive ECG changes, or a new or worsening pericardial effusion.",
+    "why": [
+     "Chest pain alone is one criterion, and a second criterion is required.",
+     "",
+     "Three criteria exceed the requirement, and an effusion is not mandatory.",
+     "All four are not required — many patients never develop a pericardial effusion.",
+     "Pericarditis has explicit positive criteria rather than being purely a diagnosis of exclusion."
+    ],
+    "img": [
+     5
+    ]
+   },
+   {
+    "q": "What is the evidence-based first-line drug therapy for acute idiopathic pericarditis?",
+    "ch": [
+     "Anakinra or rilonacept to block interleukin-1 from the outset",
+     "Opioid analgesia with activity restriction and watchful observation",
+     "Prednisone at a low-to-moderate dose with a slow and careful taper",
+     "Colchicine alone, dosed by weight and adjusted for renal impairment",
+     "An NSAID or aspirin combined with colchicine and gastroprotection"
+    ],
+    "correct": 4,
+    "exp": "An NSAID (or aspirin) plus colchicine is the evidence-based first-line combination, given with gastroprotection; colchicine speeds remission and halves recurrence.",
+    "why": [
+     "Anti-IL-1 biologics are reserved for colchicine-resistant, steroid-dependent recurrent disease.",
+     "Analgesia alone does not treat the inflammation or reduce the risk of recurrence.",
+     "Early corticosteroids raise the risk of recurrence and are second-line therapy.",
+     "Colchicine is added to an NSAID rather than used by itself as initial therapy.",
+     ""
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "What is the main benefit of adding colchicine, as shown in the ICAP and CORP trials?",
+    "ch": [
+     "It roughly halves the risk of recurrent pericarditis and speeds remission",
+     "It prevents the troponin elevation that defines myopericarditis",
+     "It allows corticosteroids to be started earlier and at a higher dose",
+     "It removes the need to follow serial CRP during the medication taper",
+     "It resolves an existing pericardial effusion faster than drainage does"
+    ],
+    "correct": 0,
+    "exp": "Colchicine added to an NSAID speeds remission and cuts recurrence roughly in half in the ICAP and CORP trials, and it is the mainstay of recurrent disease.",
+    "why": [
+     "",
+     "Troponin elevation reflects myopericarditis and is not what colchicine addresses.",
+     "Early steroids are specifically avoided because they raise the recurrence risk.",
+     "Serial CRP still guides the duration of therapy and the timing of the taper.",
+     "Pericardiocentesis, not colchicine, drains a large or tamponading pericardial effusion."
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "Which feature most reliably distinguishes acute pericarditis from STEMI on the ECG?",
+    "ch": [
+     "Sinus tachycardia accompanying the ST-segment changes on the tracing",
+     "T-wave inversion occurring at the same time as the ST elevation",
+     "The absolute height of the ST elevation measured in the inferior leads",
+     "The presence of pathologic Q waves within the first hour of symptoms",
+     "Diffuse non-territorial elevation with PR depression and no reciprocal depression"
+    ],
+    "correct": 4,
+    "exp": "Pericarditis produces diffuse, non-territorial concave ST elevation with PR depression and no reciprocal ST depression except in aVR and V1; STEMI is regional with reciprocal depression.",
+    "why": [
+     "Tachycardia is nonspecific and occurs in both conditions.",
+     "T-wave timing is not the discriminating feature; PR depression and no reciprocal change are.",
+     "The height of the elevation does not separate the two; distribution and the PR segment do.",
+     "Q waves are not part of the described distinction between pericarditis and STEMI.",
+     ""
+    ],
+    "img": [
+     7
+    ]
+   },
+   {
+    "q": "A patient with pericarditis becomes hypotensive with jugular venous distention, muffled heart sounds, and a pulsus paradoxus of 18 mmHg. What is required?",
+    "ch": [
+     "Start high-dose prednisone with a slow taper for refractory inflammation",
+     "Give a fluid bolus and repeat the ECG in two hours before intervening",
+     "Emergency pericardiocentesis to drain the effusion causing tamponade",
+     "Begin anakinra for colchicine-resistant, steroid-dependent recurrent disease",
+     "Increase the NSAID dose and add a proton pump inhibitor for gastroprotection"
+    ],
+    "correct": 2,
+    "exp": "Beck triad — hypotension, JVD, and muffled heart sounds — with a pulsus paradoxus over 10 mmHg indicates cardiac tamponade, an emergency requiring drainage by pericardiocentesis.",
+    "why": [
+     "Corticosteroids are second-line anti-inflammatory therapy and do not treat tamponade.",
+     "Tamponade is an emergency, and delaying drainage to repeat testing risks arrest.",
+     "",
+     "Anti-IL-1 biologics treat recurrent disease, not acute hemodynamic compromise.",
+     "Escalating anti-inflammatory therapy does not relieve hemodynamic compromise from tamponade."
+    ],
+    "img": [
+     8
+    ]
+   },
+   {
+    "q": "A patient with typical pericarditis has a rising troponin but a preserved ejection fraction on echocardiography. How is this best classified and managed?",
+    "ch": [
+     "Effusive-constrictive disease requiring urgent pericardiocentesis today",
+     "STEMI requiring immediate cardiac catheterization and urgent reperfusion",
+     "Constrictive pericarditis requiring evaluation for surgical pericardiectomy",
+     "Myopericarditis — manage as pericarditis, restrict activity, monitor LV function",
+     "Dressler syndrome, treated with aspirin rather than with indomethacin"
+    ],
+    "correct": 3,
+    "exp": "A troponin elevation with a preserved ejection fraction defines myopericarditis: manage as pericarditis but restrict activity and monitor left ventricular function. Elevated troponin is also a high-risk feature favoring admission.",
+    "why": [
+     "Effusive-constrictive disease is a follow-up endpoint, and no tamponading effusion is described.",
+     "Pericarditis gives diffuse concave elevation without reciprocal change and is not reperfused.",
+     "Constriction presents later with Kussmaul sign, a pericardial knock, and right heart failure.",
+     "",
+     "Dressler syndrome is immune-mediated pericarditis weeks after an MI, which is not described."
+    ],
+    "img": [
+     8
+    ]
+   },
+   {
+    "q": "Three weeks after a myocardial infarction a patient develops pleuritic positional chest pain and a friction rub. Which treatment is preferred?",
+    "ch": [
+     "Colchicine as monotherapy, without any additional anti-inflammatory agent",
+     "Aspirin combined with colchicine and gastroprotection",
+     "Indomethacin, chosen as the most potent NSAID for pericardial inflammation",
+     "High-dose prednisone started immediately in order to shorten the course",
+     "Ibuprofen, because non-aspirin NSAIDs are preferred after a myocardial infarction"
+    ],
+    "correct": 1,
+    "exp": "This is Dressler syndrome — immune-mediated pericarditis weeks after an MI. Aspirin is the preferred anti-inflammatory post-MI, combined with colchicine and gastroprotection.",
+    "why": [
+     "Colchicine is added to an anti-inflammatory rather than used alone as first-line.",
+     "",
+     "Dressler syndrome is treated with aspirin, not with indomethacin.",
+     "Early corticosteroids raise the risk of recurrent pericarditis and are second-line.",
+     "Non-aspirin NSAIDs are avoided post-MI; aspirin is the preferred agent."
+    ],
+    "img": [
+     6,
+     10
+    ]
+   }
+  ]
+ }
+}
