@@ -1,0 +1,782 @@
+{
+ "aub": {
+  "condition": "Abnormal Uterine Bleeding",
+  "questions": [
+   {
+    "q": "Which statement best defines abnormal uterine bleeding?",
+    "ch": [
+     "Bleeding that occurs only after a woman has completed twelve consecutive months of amenorrhea",
+     "Painful menses severe enough to interfere with daily activity, whatever the bleeding volume happens to be",
+     "Vaginal bleeding that arises from a cervical, vaginal, or traumatic source rather than from the uterus",
+     "Bleeding accompanied by a positive pregnancy test together with cramping lower abdominal pelvic pain",
+     "Bleeding that is abnormal in frequency, regularity, duration, or volume, and which also includes intermenstrual bleeding"
+    ],
+    "correct": 4,
+    "exp": "AUB is menstrual bleeding outside normal limits — abnormal in frequency (cycles under 24 or over 38 days), duration (over 8 days), volume (heavy menstrual bleeding), or regularity — and it includes intermenstrual bleeding.",
+    "why": [
+     "That is postmenopausal bleeding, a red flag within AUB that mandates evaluation for endometrial carcinoma — not the definition of AUB itself.",
+     "Dysmenorrhea describes menstrual pain; the definition of AUB is built on frequency, regularity, duration, and volume.",
+     "A cervical, vaginal, or trauma source is what the pelvic and speculum exam is done to exclude, not what AUB means.",
+     "Bleeding with a positive hCG suggests ectopic pregnancy or miscarriage — a red flag to exclude first, not the definition.",
+     ""
+    ]
+   },
+   {
+    "q": "Which statement correctly describes the FIGO PALM-COEIN classification of abnormal uterine bleeding?",
+    "ch": [
+     "PALM names the non-structural causes, which are identified by laboratory testing and history rather than by imaging",
+     "COEIN names the structural lesions of the uterus that transvaginal ultrasound and hysteroscopy are used to detect",
+     "PALM names the structural causes — polyp, adenomyosis, leiomyoma, and malignancy or hyperplasia — that imaging or biopsy finds",
+     "The N in COEIN stands for neoplasia, the malignant category of causes of abnormal uterine bleeding",
+     "PALM-COEIN replaced transvaginal ultrasound as the recommended imaging protocol for abnormal uterine bleeding"
+    ],
+    "correct": 2,
+    "exp": "PALM is the structural half of the FIGO system: polyp, adenomyosis, leiomyoma, and malignancy or hyperplasia. The shortcut is that imaging or biopsy finds PALM, while labs and history find the non-structural group.",
+    "why": [
+     "This reverses the two halves: PALM is structural and found by imaging or biopsy, while COEIN is the non-structural group found by labs and history.",
+     "COEIN is the non-structural half — coagulopathy, ovulatory dysfunction, endometrial, iatrogenic, not otherwise classified — and is not defined by imaging findings.",
+     "",
+     "The N stands for 'not otherwise classified'; malignancy and hyperplasia are the M of PALM, not a COEIN category.",
+     "PALM-COEIN is a classification framework for causes, not an imaging protocol; transvaginal ultrasound remains first-line imaging for structural causes."
+    ]
+   },
+   {
+    "q": "Which test must always come first in evaluating abnormal uterine bleeding in a reproductive-age woman?",
+    "ch": [
+     "A urine or serum hCG to exclude pregnancy before anything else",
+     "An endometrial biopsy to assess for endometrial hyperplasia or carcinoma",
+     "A TSH and prolactin level to look for causes of ovulatory dysfunction",
+     "A CBC with ferritin and iron studies to quantify the degree of anemia",
+     "A transvaginal ultrasound, the first-line imaging study for structural causes"
+    ],
+    "correct": 0,
+    "exp": "The rule is absolute: always exclude pregnancy first with a urine or serum hCG. The first test in reproductive-age bleeding is always a pregnancy test, because a positive hCG changes the differential to ectopic pregnancy or miscarriage.",
+    "why": [
+     "",
+     "Endometrial biopsy is reserved for defined indications such as age 45 and older or unopposed-estrogen risk, and never precedes a pregnancy test.",
+     "TSH and prolactin help identify ovulatory dysfunction, but they are part of the later laboratory workup rather than the first test.",
+     "CBC and iron studies assess the consequence of heavy bleeding; they do not exclude the pregnancy that must be ruled out first.",
+     "Transvaginal ultrasound is indeed first-line imaging for structural causes, but it comes after pregnancy has been excluded."
+    ]
+   },
+   {
+    "q": "A 34-year-old with PCOS reports unpredictable, sometimes very heavy bleeding at intervals of 45 to 70 days. Which mechanism best explains her ovulatory dysfunction (AUB-O)?",
+    "ch": [
+     "An acquired coagulopathy prevents clot formation in endometrial vessels after otherwise normal ovulation",
+     "Anovulation removes progesterone, so unopposed estrogen builds an unstable proliferative endometrium that sheds irregularly",
+     "Iatrogenic breakthrough bleeding from an exogenous progestin that has already atrophied the endometrial lining",
+     "A submucosal leiomyoma distorts the uterine cavity and produces predictable, cyclic heavy menstrual bleeding",
+     "Excess progesterone from a persistent corpus luteum thins the endometrium and shortens every cycle interval"
+    ],
+    "correct": 1,
+    "exp": "In AUB-O — anovulation from PCOS, thyroid disease, hyperprolactinemia, or perimenopause — no corpus luteum forms and progesterone is absent, so unopposed estrogen overgrows an unstable proliferative endometrium that sheds unpredictably and sometimes heavily.",
+    "why": [
+     "Coagulopathy is the C of COEIN, a separate non-structural category; her PCOS points to anovulation instead.",
+     "",
+     "Iatrogenic bleeding is the I of COEIN and requires an exogenous agent; nothing here indicates she is taking a progestin.",
+     "A leiomyoma is the L of the structural PALM group, not ovulatory dysfunction, and her bleeding is irregular rather than cyclic.",
+     "AUB-O is defined by the absence of progesterone, not an excess of it, and her cycles are lengthened rather than shortened."
+    ]
+   },
+   {
+    "q": "A 38-year-old with obesity and PCOS has had heavy irregular bleeding for a year and has not responded to six months of cyclic progestin. Which step is indicated?",
+    "ch": [
+     "Start combined oral contraceptives and reassess her in another year without any further evaluation",
+     "Defer any tissue sampling until she turns 45, the age threshold at which endometrial biopsy becomes indicated",
+     "Proceed directly to hysterectomy, because medical therapy for anovulatory bleeding has already failed her",
+     "Perform an endometrial biopsy, since unopposed-estrogen risk and failed medical therapy are indications under 45",
+     "Repeat a transvaginal ultrasound alone, which reliably excludes endometrial hyperplasia in a patient like this"
+    ],
+    "correct": 3,
+    "exp": "Endometrial biopsy is indicated at age 45 and older with AUB, and under 45 when there is unopposed-estrogen risk such as obesity, PCOS, or chronic anovulation, plus Lynch syndrome, failed medical therapy, or persistent bleeding — she has several of those triggers.",
+    "why": [
+     "Hormonal therapy without excluding malignancy in a patient with failed therapy and unopposed-estrogen risk delays a cancer diagnosis.",
+     "Age 45 is one trigger, not the only one; under 45 the unopposed-estrogen risk factors and failed therapy independently indicate sampling.",
+     "Escalation to hysterectomy comes after the cause is established and is weighed against fertility goals; the tissue diagnosis comes first.",
+     "",
+     "Ultrasound screens structure but cannot exclude hyperplasia or carcinoma; assessing for hyperplasia requires tissue."
+    ]
+   },
+   {
+    "q": "Which medical therapy is the most effective option for reducing menstrual blood loss in heavy menstrual bleeding?",
+    "ch": [
+     "The levonorgestrel-releasing IUD, which delivers local progestin to atrophy the endometrium",
+     "Naproxen taken during menses to lower prostaglandin-driven menstrual flow and cramping",
+     "Tranexamic acid taken on heavy bleeding days as a non-hormonal antifibrinolytic agent",
+     "Cyclic oral progestin used to counter unopposed estrogen between anovulatory cycles",
+     "A GnRH agonist continued long term to maintain amenorrhea indefinitely as monotherapy"
+    ],
+    "correct": 0,
+    "exp": "The levonorgestrel-releasing IUD is the preferred long-term therapy and the most effective medical option for reducing bleeding volume, delivering local progestin that atrophies the endometrium; expect irregular spotting for the first few months before amenorrhea.",
+    "why": [
+     "",
+     "NSAIDs reduce menstrual blood loss and dysmenorrhea, but they are less effective for volume reduction than local progestin.",
+     "Tranexamic acid genuinely reduces blood loss during menses, but it neither regulates cycles nor matches the IUD for volume reduction.",
+     "Cyclic progestin treats unopposed estrogen and prevents hyperplasia, yet breakthrough bleeding is common and volume control is inferior.",
+     "GnRH agonists are limited to short courses because of bone density loss and hypoestrogenic symptoms, so they are a bridge rather than long-term therapy."
+    ]
+   },
+   {
+    "q": "A patient with heavy menstrual bleeding who hopes to conceive soon asks about tranexamic acid. Which statement is accurate?",
+    "ch": [
+     "It is a progestin that thins the endometrium and must be taken continuously on every day of the cycle",
+     "It regulates cycle length and provides contraception, so it must be stopped before attempting pregnancy",
+     "It is a non-hormonal antifibrinolytic taken only during menses; it neither regulates cycles nor gives contraception",
+     "It is safe in active thromboembolic disease and is the preferred agent for a patient with a recent clot",
+     "It is given intravenously in hospital for acute stabilization of hemodynamically significant heavy bleeding"
+    ],
+    "correct": 2,
+    "exp": "Tranexamic acid is a non-hormonal antifibrinolytic taken only during menses to reduce menstrual blood loss. It does not regulate cycles or provide contraception, and it is avoided in active thromboembolic disease.",
+    "why": [
+     "It is not hormonal at all, and dosing is restricted to bleeding days rather than continuous.",
+     "It does neither; cycle regulation and contraception come from hormonal options such as combined oral contraceptives or the levonorgestrel IUD.",
+     "",
+     "An antifibrinolytic is avoided in active thromboembolic disease, so a recent clot is a reason not to use it.",
+     "High-dose IV conjugated estrogen, not tranexamic acid, is the module's agent for emergency stabilization with hospital monitoring."
+    ]
+   },
+   {
+    "q": "A 15-year-old has had flooding periods since menarche and bruises easily; her mother has similar bleeding. Which addition to the workup does the module emphasize?",
+    "ch": [
+     "Serial ferritin and iron studies alone, deferring any bleeding-disorder evaluation entirely",
+     "An endometrial biopsy to exclude endometrial hyperplasia and carcinoma at this age",
+     "Saline infusion sonohysterography to characterize a suspected submucosal leiomyoma",
+     "Prolactin and TSH only, since anovulation explains all heavy bleeding in adolescents",
+     "A von Willebrand panel with platelet count to evaluate for an inherited coagulopathy"
+    ],
+    "correct": 4,
+    "exp": "Bleeding heavily since menarche with easy bruising or a family history points to von Willebrand disease, so a von Willebrand panel with platelet count must be actively pursued to evaluate for an inherited coagulopathy.",
+    "why": [
+     "Iron studies quantify the anemia and guide replacement, but they do not identify the underlying coagulopathy.",
+     "Biopsy triggers are age 45 and older, or under 45 with unopposed-estrogen risk, Lynch syndrome, or failed therapy — none of which describes this adolescent.",
+     "Sonohysterography characterizes intracavitary lesions, but bleeding since menarche with bruising points to the coagulopathy branch of COEIN instead.",
+     "Prolactin and TSH belong in the workup, but stopping there would miss the bleeding disorder this history specifically suggests.",
+     ""
+    ]
+   },
+   {
+    "q": "A 61-year-old reports two episodes of vaginal bleeding. Transvaginal ultrasound shows an endometrial thickness of 3 mm, and bleeding continues at follow-up. What is the appropriate action?",
+    "ch": [
+     "Reassure her that a stripe of 4 mm or less excludes carcinoma, so no further evaluation is needed",
+     "Obtain endometrial tissue sampling, because persistent postmenopausal bleeding still warrants biopsy",
+     "Start systemic estrogen for presumed atrophic bleeding and reassess her again in one year",
+     "Repeat the ultrasound in six months and biopsy only if the endometrial stripe has thickened",
+     "Check a TSH and prolactin level, since ovulatory dysfunction is the likely cause at her age"
+    ],
+    "correct": 1,
+    "exp": "Postmenopausal bleeding is endometrial cancer until proven otherwise, and tissue sampling is mandatory. A thin stripe makes cancer very unlikely but does not replace sampling when bleeding persists.",
+    "why": [
+     "A thin stripe reassures but does not exclude carcinoma; persistent bleeding overrides the reassuring measurement.",
+     "",
+     "Unexplained vaginal bleeding must be evaluated before hormones are given, and unopposed estrogen in a woman with a uterus adds hyperplasia risk.",
+     "Waiting six months while bleeding continues delays the diagnosis; the persistence of bleeding is itself the indication to sample now.",
+     "Ovulatory dysfunction is a reproductive-age and perimenopausal mechanism; after menopause the priority is excluding carcinoma."
+    ]
+   },
+   {
+    "q": "A woman arrives soaking more than one pad per hour with a heart rate of 124 and systolic pressure of 84. Which approach is the priority?",
+    "ch": [
+     "Place a levonorgestrel IUD immediately, as the most effective medical therapy for bleeding volume",
+     "Begin cyclic oral progestin and recheck a hemoglobin level at her next scheduled clinic visit",
+     "Obtain a von Willebrand panel and defer resuscitation until the coagulopathy results return",
+     "Prioritize ABCs and hemodynamic stability with large-bore IV access, fluids, possible transfusion, and high-dose hormonal therapy",
+     "Arrange an outpatient transvaginal ultrasound and start an NSAID for prostaglandin-driven menstrual flow"
+    ],
+    "correct": 3,
+    "exp": "Soaking one pad or more per hour with tachycardia and hypotension is life-threatening hemorrhage: prioritize ABCs and hemodynamic stability with large-bore IV access and fluids, prepare for transfusion, and control flow with high-dose hormonal therapy or an urgent procedure.",
+    "why": [
+     "The IUD is the best long-term option for volume reduction, but it is not an acute resuscitation measure for hemorrhagic shock.",
+     "Deferred follow-up ignores tachycardia and hypotension; unstable bleeding needs IV access, fluids, and transfusion assessment now.",
+     "A coagulopathy workup may be appropriate later, but resuscitation is never delayed for a pending laboratory result.",
+     "",
+     "Outpatient imaging and an NSAID are chronic-management steps that do nothing for a hemodynamically unstable hemorrhage in front of you."
+    ]
+   }
+  ]
+ },
+ "fibroids": {
+  "condition": "Uterine Fibroids (Leiomyoma)",
+  "questions": [
+   {
+    "q": "Which description best characterizes uterine fibroids (leiomyomas)?",
+    "ch": [
+     "Benign monoclonal proliferations of uterine smooth muscle and extracellular matrix driven by estrogen and progesterone",
+     "Hormone-independent fibrous nodules of the cervix that characteristically enlarge after menopause begins",
+     "Polypoid overgrowths of the endometrial lining that remain confined to the endometrial cavity",
+     "Malignant smooth-muscle tumors of the myometrium that arise in most women during the reproductive years",
+     "Endometrial glands and stroma implanted within the myometrium, producing a tender, diffusely boggy uterus"
+    ],
+    "correct": 0,
+    "exp": "Fibroids are benign monoclonal proliferations of uterine smooth muscle (myometrium) and extracellular matrix. Because growth is driven by estrogen and progesterone, they enlarge in the reproductive years and regress after menopause.",
+    "why": [
+     "",
+     "Fibroids are hormone-dependent and regress after menopause, and although cervical variants occur, most are myometrial.",
+     "That describes an endometrial polyp, the P of PALM-COEIN; fibroids arise from smooth muscle of the myometrium.",
+     "Fibroids are benign; malignant transformation to leiomyosarcoma is rare, well under one percent of cases.",
+     "That describes adenomyosis, the A of PALM-COEIN; the fibroid uterus is firm and irregular rather than boggy and tender."
+    ]
+   },
+   {
+    "q": "Which combination is the classic presentation of symptomatic uterine fibroids?",
+    "ch": [
+     "Purulent cervical discharge with cervical motion tenderness and adnexal tenderness on bimanual examination",
+     "Postmenopausal bleeding with a thin endometrial stripe and a small, mobile, retroverted uterus",
+     "Menorrhagia plus bulk or pressure symptoms with an enlarged, firm, irregular, non-tender uterus",
+     "Cyclic pelvic pain with a fixed, exquisitely tender uterus and nodular thickening of the uterosacral ligaments",
+     "Amenorrhea with hot flashes and night sweats plus a persistently elevated follicle-stimulating hormone level"
+    ],
+    "correct": 2,
+    "exp": "The classic triad is menorrhagia, bulk or pressure symptoms (pelvic pressure, urinary frequency, constipation, dyspareunia), and an enlarged, firm, irregular or bosselated, non-tender uterus on bimanual exam, described in weeks-gestation equivalents.",
+    "why": [
+     "That picture is infectious, whereas fibroids cause heavy bleeding, pressure effects, and a firm irregular uterus.",
+     "Fibroids are a reproductive-age problem that regress after menopause, and postmenopausal bleeding demands evaluation for carcinoma instead.",
+     "",
+     "The fibroid uterus is classically non-tender; a fixed tender uterus with nodularity suggests a different pelvic pathology.",
+     "Those are menopausal features; fibroids present with heavy bleeding and bulk symptoms rather than amenorrhea."
+    ]
+   },
+   {
+    "q": "Which imaging study is first-line and confirmatory for suspected uterine fibroids?",
+    "ch": [
+     "Contrast-enhanced CT of the abdomen and pelvis with delayed images through the pelvis",
+     "Pelvic MRI, which is reserved for mapping number, size, and location before surgery",
+     "Saline infusion sonohysterography, which is used mainly to define the endometrial cavity",
+     "Diagnostic hysteroscopy, which directly visualizes submucosal lesions within the cavity",
+     "Transvaginal ultrasound, showing hypoechoic, well-circumscribed myometrial masses"
+    ],
+    "correct": 4,
+    "exp": "Transvaginal ultrasound is the first-line and confirmatory imaging study for fibroids, showing hypoechoic, well-circumscribed masses; a transabdominal view is added when the uterus is large.",
+    "why": [
+     "CT is not part of the fibroid pathway; ultrasound is the go-to first test and MRI handles surgical mapping.",
+     "MRI does map number, size, and location, but it is used before myomectomy or embolization rather than as the initial test.",
+     "Sonohysterography best defines submucosal fibroids and the cavity, and it follows rather than replaces the initial ultrasound.",
+     "Hysteroscopy characterizes intracavitary lesions but is invasive and reserved for cavity assessment after imaging.",
+     ""
+    ]
+   },
+   {
+    "q": "A woman has severe heavy menstrual bleeding and secondary infertility but no pelvic pressure. Which fibroid location best explains this?",
+    "ch": [
+     "Pedunculated on a stalk, presenting with acute severe pain when the stalk undergoes torsion",
+     "Submucosal, distorting the endometrial cavity and causing the worst bleeding and infertility",
+     "Cervical, presenting with obstructed labor rather than with any change in menstrual flow",
+     "Intramural and small, discovered incidentally and asymptomatic in the vast majority of women",
+     "Subserosal, projecting outward from the serosal surface and producing bulk and pressure effects"
+    ],
+    "correct": 1,
+    "exp": "Submucosal fibroids, FIGO types 0 to 2, distort the endometrial cavity, which is why they cause the worst heavy bleeding and are the location most linked to infertility.",
+    "why": [
+     "A torsed pedunculated fibroid presents with acute severe pain, a red flag, not with chronic heavy bleeding and infertility.",
+     "",
+     "Cervical variants occur but are not the location that distorts the endometrial cavity and drives heavy menstrual bleeding.",
+     "Most fibroids are indeed asymptomatic and incidental, which is exactly why they do not explain severe bleeding and infertility.",
+     "Subserosal fibroids (FIGO 6 to 7) cause bulk and pressure symptoms, which this patient specifically does not have."
+    ]
+   },
+   {
+    "q": "Why might a levonorgestrel IUD fail to control bleeding in a woman with fibroids?",
+    "ch": [
+     "A submucosal fibroid distorting the uterine cavity makes the levonorgestrel IUD less effective",
+     "Fibroids metabolize levonorgestrel within the myometrium before it reaches the endometrium",
+     "The IUD raises circulating estrogen levels and therefore stimulates further fibroid growth",
+     "Local progestin has no effect on the endometrium and never reduces menstrual blood flow",
+     "The device requires venous thromboembolism screening before it can safely be inserted"
+    ],
+    "correct": 0,
+    "exp": "The levonorgestrel IUD markedly reduces flow, but it is less effective when the cavity is distorted by submucosal fibroids — anatomy-driven therapy, and a reason to characterize the cavity with sonohysterography or hysteroscopy first.",
+    "why": [
+     "",
+     "There is no such myometrial metabolism; the failure is mechanical, from a cavity distorted by submucosal fibroids.",
+     "The device delivers local progestin, not estrogen, so it does not raise circulating estrogen or drive fibroid growth.",
+     "Local progestin atrophies the endometrium and markedly reduces flow; the limitation is anatomic distortion, not lack of effect.",
+     "It is the estrogen-containing options that need VTE screening; a progestin-only IUD does not carry that requirement."
+    ]
+   },
+   {
+    "q": "A woman with anemia from fibroids is started on leuprolide before myomectomy. Which counseling point is essential?",
+    "ch": [
+     "It is a reliable contraceptive and permanently eliminates the fibroids, so surgery can be cancelled entirely",
+     "It should be taken only on heavy bleeding days, exactly like the non-hormonal antifibrinolytic option would be",
+     "It works by raising circulating estrogen levels, which is what shrinks the fibroids and corrects the anemia",
+     "It can be continued indefinitely because it has no measurable effect on bone mineral density over time",
+     "It is a short-term bridge, usually up to six months, because the hypoestrogenic state causes bone loss and menopausal symptoms"
+    ],
+    "correct": 4,
+    "exp": "GnRH agonists such as leuprolide induce a hypoestrogenic state that shrinks fibroids and corrects anemia before surgery, but they are a short-term bridge of usually up to six months because of menopausal symptoms and bone loss; add-back therapy mitigates this.",
+    "why": [
+     "The effect is temporary shrinkage to bridge to surgery or correct anemia, not permanent elimination of the fibroids.",
+     "Bleeding-day-only dosing describes tranexamic acid; a GnRH agonist is given continuously to induce amenorrhea.",
+     "The mechanism is the opposite — a hypoestrogenic state — since fibroid growth is driven by estrogen and progesterone.",
+     "Bone density loss is the specific limitation that caps the duration of therapy and prompts add-back treatment.",
+     ""
+    ]
+   },
+   {
+    "q": "Which statement about uterine artery embolization for fibroids is correct?",
+    "ch": [
+     "It is the definitive cure for fibroids and eliminates any possibility of later recurrence",
+     "It requires removal of the uterus and is therefore reserved for completed childbearing",
+     "It is a hormonal therapy that shrinks fibroids by inducing a hypoestrogenic menopausal state",
+     "It spares the uterus by radiologic infarction of fibroids but is not for women desiring future fertility",
+     "It is the preferred option for a woman who wants to become pregnant within the next year"
+    ],
+    "correct": 3,
+    "exp": "Uterine artery embolization is a uterus-sparing radiologic infarction of fibroids offered to symptomatic women who decline surgery; it is not for women desiring future fertility, and post-embolization syndrome with pain, fever, and malaise can follow.",
+    "why": [
+     "Hysterectomy is the definitive cure; uterus-sparing options carry a risk of recurrence that requires follow-up.",
+     "The whole point of embolization is that the uterus is preserved — no hysterectomy is performed.",
+     "That describes GnRH agonists or antagonists; embolization is an interventional radiologic procedure, not a drug.",
+     "",
+     "Embolization is specifically not for women desiring future fertility; myomectomy is the fertility-sparing choice."
+    ]
+   },
+   {
+    "q": "A 58-year-old who is three years past menopause has a uterine mass that has enlarged noticeably over six months. What is the key concern?",
+    "ch": [
+     "Adenomyosis, which characteristically enlarges the uterus during the years following menopause",
+     "A degenerating pedunculated fibroid, whose only possible presentation is acute severe pelvic pain",
+     "Iron-deficiency anemia from chronic blood loss, which drives compensatory uterine enlargement",
+     "Leiomyosarcoma, since rapid or postmenopausal growth cannot be reliably excluded by imaging",
+     "Ordinary fibroid growth, which is expected after menopause as circulating estrogen levels decline"
+    ],
+    "correct": 3,
+    "exp": "Malignant transformation to leiomyosarcoma is rare, well under one percent, but rapid growth — especially postmenopausal growth, when fibroids should be regressing — raises concern, and imaging cannot reliably exclude it.",
+    "why": [
+     "Adenomyosis is a separate structural cause of bleeding in reproductive-age women, not an explanation for a growing postmenopausal mass.",
+     "Degeneration or torsion presents with acute severe pain, not with steady enlargement over six months after menopause.",
+     "Anemia is a consequence of heavy bleeding and is treated with iron; it does not cause the uterus to enlarge.",
+     "",
+     "Fibroids are estrogen- and progesterone-driven and regress after menopause, so postmenopausal growth is precisely what is abnormal."
+    ]
+   },
+   {
+    "q": "Which pairing correctly matches a fibroid treatment to the patient it suits?",
+    "ch": [
+     "Uterine artery embolization when future pregnancy is planned; myomectomy for bulk symptoms only",
+     "Endometrial ablation when fertility is desired; GnRH agonists as lifelong definitive therapy",
+     "Myomectomy when fertility is desired; hysterectomy, the definitive cure, when childbearing is complete",
+     "Tranexamic acid as the definitive surgical cure; iron supplementation for cavity-distorting lesions",
+     "Hysterectomy when fertility is desired; myomectomy once childbearing has already been completed"
+    ],
+    "correct": 2,
+    "exp": "Management tracks fertility goals: myomectomy is the fertility-sparing operation, while hysterectomy is the definitive cure once childbearing is complete — and fibroids are the number one indication for hysterectomy in the United States.",
+    "why": [
+     "Embolization is not for women desiring future fertility, and myomectomy is not restricted to bulk symptoms.",
+     "Ablation is for completed childbearing, and GnRH agonists are short-term bridges limited by bone loss.",
+     "",
+     "Tranexamic acid is a medical agent taken on bleeding days, and iron corrects anemia rather than treating the fibroid.",
+     "This reverses the two operations: hysterectomy ends fertility, whereas myomectomy is the uterus-preserving choice."
+    ]
+   },
+   {
+    "q": "A woman with fibroid-related menorrhagia is discharged on iron and tranexamic acid. Which teaching is correct?",
+    "ch": [
+     "Avoid vitamin C with iron because it blocks absorption, and take both medicines only during menses",
+     "Take the iron with vitamin C and expect dark stools and constipation; take tranexamic acid on heavy days only",
+     "Take the iron with an antacid to prevent nausea, and take tranexamic acid every day of the month",
+     "Report dark stools immediately as gastrointestinal bleeding and stop the iron supplement at once",
+     "Take tranexamic acid continuously for contraception, and stop the iron as soon as the fatigue improves"
+    ],
+    "correct": 1,
+    "exp": "Iron is taken with vitamin C to aid absorption, with darkened stools and constipation expected and follow-up ferritin and CBC to confirm response; tranexamic acid is timed to heavy bleeding days only.",
+    "why": [
+     "Vitamin C aids rather than blocks iron absorption, and iron is taken continuously rather than only during menses.",
+     "",
+     "Vitamin C, not an antacid, aids iron absorption, and tranexamic acid is dosed on bleeding days rather than daily.",
+     "Darkened stools are an expected effect of oral iron, so teaching should normalize them rather than prompt stopping therapy.",
+     "Tranexamic acid provides no contraception, and iron is continued with repeat ferritin and CBC rather than stopped on symptoms."
+    ]
+   }
+  ]
+ },
+ "menopause": {
+  "condition": "Menopause",
+  "questions": [
+   {
+    "q": "How is menopause defined?",
+    "ch": [
+     "By a single elevated follicle-stimulating hormone level drawn at any point during perimenopause",
+     "Clinically and retrospectively, after twelve consecutive months of amenorrhea without another cause",
+     "By the onset of hot flashes and night sweats, regardless of the menstrual bleeding pattern",
+     "By six consecutive months of erratic cycles accompanied by a low serum estradiol level",
+     "By an endometrial biopsy showing an atrophic endometrium in a woman older than forty-five"
+    ],
+    "correct": 1,
+    "exp": "Menopause is the permanent loss of ovarian follicular activity, defined clinically and retrospectively as twelve consecutive months of amenorrhea without another cause, at an average age of about 51. It is a look-back, not a lab.",
+    "why": [
+     "A single FSH value can be misleading in perimenopause, when hormones fluctuate erratically; the diagnosis is not made on one lab.",
+     "",
+     "Vasomotor symptoms support the clinical picture but the definition rests on twelve months of amenorrhea.",
+     "Erratic cycles describe perimenopause; the threshold is twelve consecutive months of amenorrhea, not six months of irregularity.",
+     "Endometrial biopsy is for evaluating postmenopausal bleeding, not for establishing that menopause has occurred."
+    ]
+   },
+   {
+    "q": "Why does FSH rise before, and higher than, LH in menopause?",
+    "ch": [
+     "The hypothalamic thermoregulatory center directly suppresses LH during each hot flash",
+     "Prolactin excess blocks LH secretion while leaving FSH secretion entirely intact",
+     "Progesterone from a persistent corpus luteum selectively inhibits LH but spares FSH",
+     "Loss of inhibin B removes selective negative feedback on FSH as follicles are depleted",
+     "Rising estradiol from the depleted ovary selectively stimulates pituitary FSH release"
+    ],
+    "correct": 3,
+    "exp": "Follicular depletion lowers estradiol and inhibin B; because inhibin B feeds back selectively on FSH, its loss makes FSH rise first and disproportionately, with LH rising as well but less.",
+    "why": [
+     "Estrogen-related instability of the thermoregulatory center explains hot flashes, not the pattern of gonadotropin elevation.",
+     "Hyperprolactinemia is an alternative cause of amenorrhea to exclude, not the mechanism behind the menopausal FSH rise.",
+     "Follicular depletion means no corpus luteum forms at all, so there is no progesterone source to inhibit LH.",
+     "",
+     "Estradiol falls rather than rises in menopause, and the loss of its negative feedback raises gonadotropins rather than stimulating them."
+    ]
+   },
+   {
+    "q": "A 52-year-old with classic hot flashes, night sweats, and twelve months of amenorrhea asks what testing she needs. What is the correct approach?",
+    "ch": [
+     "Check FSH and estradiol levels twice, several weeks apart, to confirm ovarian follicular failure",
+     "Order a karyotype and FMR1 premutation test to identify the cause of her ovarian failure",
+     "Obtain a transvaginal ultrasound and an endometrial biopsy to establish the diagnosis",
+     "Measure FSH once, since a single value reliably confirms menopause even in perimenopause",
+     "No lab testing is required; the diagnosis rests on the pattern of amenorrhea and symptoms"
+    ],
+    "correct": 4,
+    "exp": "In a woman of typical age with menstrual change plus vasomotor symptoms, menopause is a clinical diagnosis and no lab testing is required; FSH is reserved for age under 45, prior hysterectomy, or genuine diagnostic uncertainty.",
+    "why": [
+     "Two FSH levels weeks apart plus estradiol is the protocol for suspected primary ovarian insufficiency under age 40, not for a typical 52-year-old.",
+     "Karyotype and FMR1 testing are considered for primary ovarian insufficiency before age 40, not for menopause at the expected age.",
+     "That evaluation is triggered by postmenopausal bleeding; this woman has amenorrhea and needs no endometrial sampling.",
+     "A single FSH value can be misleading during perimenopause, and no FSH is needed at all in a classic presentation.",
+     ""
+    ]
+   },
+   {
+    "q": "A 60-year-old who is eight years past her last menstrual period reports light vaginal spotting. What is the correct interpretation?",
+    "ch": [
+     "Evaluation is warranted only if the bleeding becomes heavy or recurs more than three times",
+     "Any postmenopausal bleeding is endometrial cancer until proven otherwise and mandates ultrasound or biopsy",
+     "It is a normal consequence of estrogen decline and should simply be treated with vaginal estrogen",
+     "Light spotting this long after menopause is expected atrophic bleeding and needs no evaluation",
+     "The spotting proves she has not truly reached menopause, so the twelve-month clock restarts"
+    ],
+    "correct": 1,
+    "exp": "Any bleeding after menopause is never normal: it is endometrial cancer until proven otherwise and mandates evaluation with transvaginal ultrasound and/or endometrial biopsy before it is attributed to atrophy.",
+    "why": [
+     "There is no volume or frequency threshold; any postmenopausal bleeding warrants evaluation for carcinoma.",
+     "",
+     "Unexplained vaginal bleeding is a contraindication to starting estrogen and must be evaluated first.",
+     "Atrophy may end up being the explanation, but only after endometrial evaluation — never as the initial assumption.",
+     "Postmenopausal bleeding is a red flag to investigate, not a reason to reclassify her menopausal status."
+    ]
+   },
+   {
+    "q": "A woman with an intact uterus is starting systemic estrogen for severe vasomotor symptoms. What must be added, and why?",
+    "ch": [
+     "A progestogen such as micronized progesterone, to prevent endometrial hyperplasia and cancer",
+     "Low-dose vaginal estrogen, because systemic estrogen alone cannot reach the endometrium",
+     "A bisphosphonate, because systemic estrogen accelerates postmenopausal bone loss",
+     "Nothing additional, since unopposed systemic estrogen is safe when the uterus is intact",
+     "A selective serotonin reuptake inhibitor, which is required to make the estrogen effective"
+    ],
+    "correct": 0,
+    "exp": "Systemic estrogen must be given with a progestogen whenever the uterus is present: unopposed estrogen in a woman with a uterus is unsafe and causes endometrial hyperplasia and cancer.",
+    "why": [
+     "",
+     "Vaginal estrogen treats genitourinary symptoms locally; it does not provide the endometrial protection a progestogen gives.",
+     "Systemic estrogen protects against bone loss rather than accelerating it, and bisphosphonates are used for established osteoporosis.",
+     "This is the classic error: unopposed estrogen in a woman with a uterus drives endometrial hyperplasia and carcinoma.",
+     "SSRIs are an alternative non-hormonal therapy for hot flashes, not an adjunct that makes estrogen work."
+    ]
+   },
+   {
+    "q": "Which therapy is first-line for genitourinary syndrome of menopause — vaginal dryness, dyspareunia, and recurrent urinary tract infections?",
+    "ch": [
+     "Fezolinetant, an NK3 receptor antagonist that acts directly on the vaginal epithelium",
+     "A bisphosphonate with calcium and vitamin D, which restores vaginal epithelial thickness",
+     "Low-dose vaginal estrogen, with minimal systemic absorption and usually no added progestogen",
+     "Systemic transdermal estrogen with a progestogen, titrated upward to control genital symptoms",
+     "Gabapentin dosed at bedtime, which relieves genital dryness along with nightly discomfort"
+    ],
+    "correct": 2,
+    "exp": "Low-dose vaginal estrogen is first-line for genitourinary syndrome of menopause. Systemic absorption is minimal, so it is generally safe, usually does not require an added progestogen, and is useful when systemic hormones are declined or contraindicated.",
+    "why": [
+     "Fezolinetant targets hypothalamic KNDy neurons that drive vasomotor symptoms, not the vaginal epithelium.",
+     "That regimen addresses bone health after estrogen decline and has no effect on genitourinary symptoms.",
+     "",
+     "Systemic therapy carries more risk than needed for local symptoms, and a woman with a uterus would then require a progestogen.",
+     "Gabapentin is a non-hormonal option for night sweats and sleep disruption; it does nothing for vaginal atrophy."
+    ]
+   },
+   {
+    "q": "A woman taking tamoxifen for breast cancer has disabling hot flashes. Which non-hormonal choice is appropriate?",
+    "ch": [
+     "Low-dose paroxetine, which is FDA-approved for vasomotor symptoms and therefore preferred here",
+     "Fluoxetine, because a strong CYP2D6 inhibitor increases the effectiveness of tamoxifen",
+     "Systemic estrogen with a progestogen, the most effective therapy for vasomotor symptoms",
+     "Venlafaxine, avoiding paroxetine and fluoxetine because CYP2D6 inhibition blunts tamoxifen activation",
+     "Low-dose vaginal estrogen, which controls vasomotor symptoms without any systemic risk"
+    ],
+    "correct": 3,
+    "exp": "SSRIs and SNRIs are effective non-hormonal options for hot flashes, but paroxetine and fluoxetine must be avoided in women on tamoxifen because CYP2D6 inhibition reduces tamoxifen activation — venlafaxine is the safer choice.",
+    "why": [
+     "Low-dose paroxetine is FDA-approved for vasomotor symptoms, but it is exactly the agent to avoid on tamoxifen because of CYP2D6 inhibition.",
+     "CYP2D6 inhibition reduces rather than increases tamoxifen activation, so fluoxetine blunts the drug's benefit.",
+     "Systemic estrogen is the most effective therapy overall, but prior breast cancer is a contraindication to it.",
+     "",
+     "Vaginal estrogen treats local genitourinary symptoms; it is not a therapy for hot flashes."
+    ]
+   },
+   {
+    "q": "Which patient best fits the timing hypothesis for a favorable hormone-therapy risk-benefit balance?",
+    "ch": [
+     "A 72-year-old with bothersome hot flashes twenty years past her final menstrual period",
+     "A 58-year-old with prior estrogen-receptor-positive breast cancer and severe hot flashes",
+     "A symptomatic 54-year-old three years past menopause with no contraindications to estrogen",
+     "A 61-year-old with a prior deep vein thrombosis and unexplained vaginal bleeding",
+     "A 49-year-old with active liver disease who is seeking systemic therapy for night sweats"
+    ],
+    "correct": 2,
+    "exp": "Under the timing hypothesis, benefits generally outweigh risks in symptomatic women under 60 or within 10 years of menopause who have no contraindications — this patient satisfies both the age and the interval criteria.",
+    "why": [
+     "She is both over 60 and well beyond 10 years from menopause, which is precisely where the risk-benefit balance turns unfavorable.",
+     "Prior breast cancer or estrogen-sensitive cancer is an absolute contraindication to systemic estrogen regardless of timing.",
+     "",
+     "Prior VTE and unexplained vaginal bleeding are both contraindications, and the bleeding itself needs endometrial evaluation.",
+     "Her age and interval are favorable, but active liver disease is a listed contraindication to systemic estrogen."
+    ]
+   },
+   {
+    "q": "A 34-year-old has had no menses for a year along with hot flashes. Which workup is specified for suspected primary ovarian insufficiency?",
+    "ch": [
+     "A single FSH level, which is sufficient to diagnose ovarian failure at any age",
+     "No testing at all, since menopause is always a clinical and retrospective diagnosis",
+     "An endometrial biopsy with transvaginal ultrasound to establish ovarian follicular failure",
+     "DEXA scanning alone, deferring any hormonal evaluation until she reaches age forty",
+     "Two FSH levels weeks apart plus estradiol, with karyotype and FMR1 premutation testing considered"
+    ],
+    "correct": 4,
+    "exp": "Primary ovarian insufficiency is menopause before age 40. For suspected POI, obtain two FSH levels weeks apart plus estradiol and consider karyotype and FMR1 premutation testing, while excluding pregnancy, thyroid disease, and hyperprolactinemia.",
+    "why": [
+     "A single value can be misleading; POI evaluation calls for two FSH levels drawn weeks apart together with estradiol.",
+     "Testing is deliberately reserved for atypical age, and 34 is exactly the atypical age that triggers it.",
+     "That pathway evaluates postmenopausal bleeding for carcinoma; it cannot establish ovarian insufficiency.",
+     "POI warrants prompt workup and long-term estrogen replacement to protect bone and cardiovascular health, not deferral.",
+     ""
+    ]
+   },
+   {
+    "q": "A woman with several venous thromboembolism risk factors needs systemic hormone therapy. Which route is preferred, and why?",
+    "ch": [
+     "Transdermal estrogen, because bypassing hepatic first-pass metabolism lowers VTE risk",
+     "Oral estrogen with a progestogen, the route the WHI showed to reduce thromboembolic risk",
+     "Intravenous conjugated estrogen, which avoids thromboembolic risk altogether in this setting",
+     "Either route is equivalent, since the thromboembolic risk of estrogen is identical in both forms",
+     "Oral estrogen, because hepatic first-pass metabolism inactivates the clotting factors"
+    ],
+    "correct": 0,
+    "exp": "Transdermal estrogen beats oral for VTE risk because it bypasses hepatic first-pass metabolism, so transdermal routes carry lower thromboembolic risk in a woman with VTE risk factors.",
+    "why": [
+     "",
+     "The WHI showed estrogen plus progestin increased VTE and breast cancer risk rather than reducing it.",
+     "High-dose IV conjugated estrogen is an emergency measure for severe bleeding, and VTE risk must still be assessed before use.",
+     "The routes are not equivalent: transdermal delivery carries a lower VTE risk than oral.",
+     "Hepatic first-pass exposure is the reason oral estrogen carries the higher VTE risk, so this reverses the mechanism."
+    ]
+   }
+  ]
+ },
+ "failure-to-thrive": {
+  "condition": "Failure to Thrive",
+  "questions": [
+   {
+    "q": "Which finding fits the definition of failure to thrive?",
+    "ch": [
+     "Height below the fifth percentile with weight tracking normally along its own growth curve",
+     "A single weight measurement at the tenth percentile at one routine well-child visit",
+     "Weight or weight-for-length below the third to fifth percentile, or crossing down two major percentile lines",
+     "Head circumference below the third percentile with normal weight and length for age",
+     "Weight gain that plateaus for one week during an acute viral gastrointestinal illness"
+    ],
+    "correct": 2,
+    "exp": "Failure to thrive is inadequate weight gain or growth, classically weight or weight-for-length below the third to fifth percentile, or crossing down two or more major percentile lines on a standardized growth chart.",
+    "why": [
+     "Short stature with preserved weight suggests endocrine or genetic short stature rather than failure to thrive.",
+     "A single point is far less meaningful than a documented trend, and the tenth percentile is not below the defining threshold.",
+     "",
+     "Head circumference is the last parameter to fall in nutritional FTT; an isolated small head with normal weight suggests a genetic or prenatal cause.",
+     "A brief plateau during an acute illness is not the sustained inadequate growth or downward percentile crossing that defines FTT."
+    ]
+   },
+   {
+    "q": "Which set of categories is the pathophysiologic framework for failure to thrive?",
+    "ch": [
+     "Inadequate caloric intake, inadequate absorption or utilization, and increased metabolic demand",
+     "Endocrine, genetic, and constitutional variants of short stature in the young child",
+     "Acute, subacute, and chronic dehydration with the corresponding electrolyte derangements",
+     "Mild, moderate, and severe malnutrition graded by anthropometric z-score cutoff values",
+     "Prenatal, perinatal, and postnatal causes of impaired linear growth during early childhood"
+    ],
+    "correct": 0,
+    "exp": "The three buckets are inadequate caloric intake (most common), inadequate absorption or utilization such as celiac disease or cystic fibrosis, and increased metabolic demand from cardiac, pulmonary, chronic infectious, or thyroid disease.",
+    "why": [
+     "",
+     "Those are mimics of FTT to distinguish from it, such as familial short stature and constitutional growth delay, not its pathophysiologic buckets.",
+     "Dehydration and electrolyte derangement are complications to correct before aggressive refeeding, not the causal framework.",
+     "Z-score grading is how severity is staged; it does not identify which of the three mechanisms is responsible.",
+     "Timing categories do not sort the mechanism; the framework asks whether calories are too few in, too few absorbed, or too many burned."
+    ]
+   },
+   {
+    "q": "Which statement about the causes of failure to thrive is correct?",
+    "ch": [
+     "Every case is either purely organic or purely non-organic, because mixed presentations do not occur",
+     "Organic disease accounts for most cases, so an extensive laboratory panel is always indicated",
+     "Malabsorption from celiac disease is the single most common cause in infants and toddlers",
+     "Non-organic psychosocial causes dominate, so a broad lab panel in a well-appearing child is low-yield",
+     "Increased metabolic demand from congenital heart disease explains the majority of all cases"
+    ],
+    "correct": 3,
+    "exp": "Non-organic causes dominate — feeding technique, neglect, poverty, and caregiver-infant interaction — so over-investigating a well-appearing child with a poor feeding history using a broad lab and imaging panel is low-yield and not cost-effective.",
+    "why": [
+     "Many cases are explicitly mixed, with a medical condition and feeding or psychosocial factors contributing together.",
+     "Organic disease is the minority, and labs are guided by history and exam rather than shotgunned at every child.",
+     "Celiac disease is one example of the malabsorption bucket, but inadequate caloric intake is the most common mechanism overall.",
+     "",
+     "Cardiac disease sits in the increased-demand bucket, which is far less common than inadequate caloric intake."
+    ]
+   },
+   {
+    "q": "A 9-month-old has weight that has fallen off the curve, length that is beginning to lag, and a normal head circumference. What does this pattern suggest?",
+    "ch": [
+     "Familial short stature, in which weight is preserved and only linear height is affected",
+     "Constitutional growth delay, a normal variant that needs no nutritional intervention at all",
+     "Endocrine short stature, in which head circumference falls before weight begins to decline",
+     "A nutritional cause, since weight falls first and head sparing argues against a prenatal cause",
+     "A genetic or prenatal cause such as a TORCH infection or a teratogen exposure in utero"
+    ],
+    "correct": 3,
+    "exp": "The sequence of decline is clinically informative: weight drops first, then length or height, and finally head circumference. Head sparing suggests a nutritional rather than a genetic or prenatal cause.",
+    "why": [
+     "In familial short stature weight is preserved; here weight fell first, which is the nutritional pattern.",
+     "Constitutional growth delay is a normal-variant mimic without the downward weight crossing this child shows.",
+     "Head circumference is the last parameter to fall, and endocrine short stature spares weight rather than dropping it first.",
+     "",
+     "Genetic and prenatal causes produce symmetric small size with a low head circumference, not the head sparing seen here."
+    ]
+   },
+   {
+    "q": "Which step is the highest-yield part of the failure-to-thrive evaluation?",
+    "ch": [
+     "Sweat chloride testing and celiac serology ordered routinely on every child who presents",
+     "Abdominal imaging to look for an anatomic cause of impaired caloric absorption",
+     "A detailed diet and feeding history with a psychosocial screen, including formula dilution errors",
+     "An empiric trial of acid suppression to treat presumed reflux-related feeding aversion",
+     "A broad screening laboratory panel obtained before any feeding history has been taken"
+    ],
+    "correct": 2,
+    "exp": "History is the highest-yield step: a detailed diet and feeding history covering formula preparation, breastfeeding, meal patterns, and dilution errors, plus a psychosocial screen for food insecurity, caregiver mental health, and neglect. The diet history is worth more than the lab panel.",
+    "why": [
+     "Sweat chloride and celiac serology are added only when the history points toward malabsorption, not routinely.",
+     "Imaging is not part of the initial evaluation; over-investigating a well-appearing child is low-yield and not cost-effective.",
+     "",
+     "Acid suppression is not routine FTT treatment and is used only with clear reflux-related feeding impairment.",
+     "Labs are guided by history and exam rather than shotgunned, and ordering them first inverts the diagnostic sequence."
+    ]
+   },
+   {
+    "q": "A well-appearing 14-month-old with poor weight gain gains weight appropriately on a structured high-calorie regimen. What does this establish?",
+    "ch": [
+     "It proves familial short stature, since catch-up growth cannot occur in true failure to thrive",
+     "It supports non-organic FTT, since a trial of adequate nutrition is diagnostic and therapeutic",
+     "It excludes inadequate caloric intake and shifts suspicion toward malabsorptive disease",
+     "It confirms an organic cause that was temporarily masked by the additional calories",
+     "It is uninterpretable without celiac serology, sweat chloride testing, and stool studies"
+    ],
+    "correct": 1,
+    "exp": "The strongest diagnostic-therapeutic test is a trial of adequate nutrition: appropriate catch-up growth on sufficient calories effectively rules in non-organic failure to thrive.",
+    "why": [
+     "Catch-up growth is exactly what is expected with adequate calories in non-organic FTT, and familial short stature spares weight.",
+     "",
+     "Responding to added calories points toward inadequate intake as the mechanism, not away from it.",
+     "Catch-up growth on adequate calories argues against an organic cause rather than confirming one.",
+     "Those tests are reserved for histories pointing to malabsorption; the feeding trial is itself the strongest test here."
+    ]
+   },
+   {
+    "q": "A severely malnourished toddler is admitted and calories are advanced quickly. Which laboratory changes signal the expected complication?",
+    "ch": [
+     "Falling phosphate, potassium, and magnesium — the hallmark of refeeding syndrome",
+     "Falling sodium alone, with phosphate and magnesium levels remaining entirely normal",
+     "Rising ferritin and hemoglobin, reflecting a brisk response to caloric repletion",
+     "Falling thyroid-stimulating hormone with a rising free thyroxine concentration",
+     "Rising phosphate with rising potassium and a widening metabolic acid-base gap"
+    ],
+    "correct": 0,
+    "exp": "In severe malnutrition the danger is the treatment: advancing calories too fast triggers refeeding syndrome with falling phosphate, potassium, and magnesium, plus edema, weakness, or arrhythmia. Start conservatively and replete phosphate, potassium, and magnesium.",
+    "why": [
+     "",
+     "The characteristic derangements are in phosphate, potassium, and magnesium, which is what monitoring targets.",
+     "Improving iron studies are a desired response, not the dangerous complication of rapid caloric advancement.",
+     "Thyroid testing screens for increased metabolic demand as a cause; it does not signal refeeding syndrome.",
+     "Refeeding drives these electrolytes down, not up, as they shift intracellularly with the carbohydrate load."
+    ]
+   },
+   {
+    "q": "A caregiver has already started a gluten-free diet on her own, before any testing, in a child with poor growth and diarrhea. Why is this a problem?",
+    "ch": [
+     "It delays pancreatic enzyme replacement, which is the definitive treatment for celiac disease",
+     "A gluten-free diet causes refeeding syndrome by rapidly increasing dietary caloric density",
+     "Gluten withdrawal produces a false-positive tissue transglutaminase IgA antibody result",
+     "A gluten-free diet remains contraindicated even after celiac disease has been confirmed",
+     "Starting a gluten-free diet before diagnostic testing invalidates celiac serology and biopsy"
+    ],
+    "correct": 4,
+    "exp": "Do not start a gluten-free diet before diagnostic testing, because it invalidates celiac serology and biopsy. The gluten-free diet is definitive management only once celiac disease is confirmed, with a dietitian involved and associated deficiencies screened.",
+    "why": [
+     "Pancreatic enzyme replacement is for pancreatic insufficiency, classically cystic fibrosis, not celiac disease.",
+     "Refeeding syndrome comes from advancing calories too fast in a severely malnourished child, not from removing gluten.",
+     "Withdrawal makes the serology falsely negative by removing the antigenic stimulus, not falsely positive.",
+     "It is the definitive management of confirmed celiac disease; the only problem is starting it before testing.",
+     ""
+    ]
+   },
+   {
+    "q": "A 4-month-old is below the third percentile for weight. The mother reports adding extra water to every bottle so the formula lasts longer. What is the mechanism?",
+    "ch": [
+     "A genetic cause of small size, since formula dilution errors do not affect weight gain",
+     "Inadequate caloric intake from improper formula dilution, a classic and easily missed cause",
+     "Inadequate absorption from a secondary lactase deficiency caused by the excess free water",
+     "Increased metabolic demand from the work of feeding the larger diluted bottle volumes",
+     "Refeeding syndrome from the abrupt increase in the infant's daily free-water intake"
+    ],
+    "correct": 1,
+    "exp": "Improper formula dilution — over-diluting to save money, or measurement errors — is a classic, easily missed cause of caloric failure to thrive, which is why the feeding history must always include how the formula is prepared.",
+    "why": [
+     "Dilution errors are a well-recognized cause of caloric FTT, and the feeding history here explains the poor weight gain.",
+     "",
+     "Over-dilution reduces the calories delivered; it does not create a malabsorptive lactase deficiency.",
+     "The increased-demand bucket covers cardiac, pulmonary, chronic infectious, and thyroid disease, not the effort of bottle feeding.",
+     "Refeeding syndrome follows rapid caloric advancement during nutritional rehabilitation, not dilution of feeds."
+    ]
+   },
+   {
+    "q": "A 3-year-old is short for age, but weight-for-length is normal, growth has tracked steadily along a low curve, and both parents are short. How should this be interpreted?",
+    "ch": [
+     "Malabsorptive FTT, warranting celiac serology, sweat chloride testing, and stool studies",
+     "Refeeding risk, so calories must be advanced slowly with close phosphate monitoring",
+     "Failure to thrive from inadequate caloric intake, requiring immediate caloric fortification",
+     "Non-organic FTT from neglect, which mandates an urgent child-protection report today",
+     "Short stature with preserved weight, suggesting endocrine or genetic short stature rather than FTT"
+    ],
+    "correct": 4,
+    "exp": "Short stature with preserved weight points to endocrine or genetic short stature rather than failure to thrive; familial short stature and constitutional growth delay are normal-variant mimics that can look abnormal on a growth chart.",
+    "why": [
+     "Malabsorption would compromise weight gain; those tests are reserved for histories that point toward malabsorption.",
+     "Refeeding precautions apply to the severely malnourished child, which this well-proportioned child is not.",
+     "Inadequate intake shows up first as weight falling off the curve, and this child's weight-for-length is normal.",
+     "Nothing here suggests neglect, and steady tracking with preserved weight-for-length is not the pattern of undernutrition.",
+     ""
+    ]
+   }
+  ]
+ }
+}

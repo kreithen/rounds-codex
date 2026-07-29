@@ -1,0 +1,977 @@
+{
+ "benzodiazepine-od": {
+  "condition": "Benzodiazepine Overdose",
+  "questions": [
+   {
+    "q": "Benzodiazepines produce sedation through which action at the GABA-A receptor?",
+    "ch": [
+     "Inhibiting presynaptic reuptake of GABA from the synapse",
+     "Increasing the frequency of chloride channel opening",
+     "Increasing the duration of chloride channel opening",
+     "Acting as a direct GABA-A agonist independent of GABA",
+     "Blocking postsynaptic glutamate receptor activation"
+    ],
+    "correct": 1,
+    "exp": "Benzodiazepines are positive allosteric modulators at GABA-A that increase the frequency of chloride channel opening, hyperpolarizing neurons and producing sedation, anxiolysis, and respiratory depression.",
+    "why": [
+     "Allosteric modulation of the chloride channel is the mechanism given, not blockade of GABA reuptake.",
+     "",
+     "Increasing channel-opening duration is the barbiturate mechanism — \"Frequent Benzos, Barbiturates last a Duration.\"",
+     "Benzodiazepines are positive allosteric modulators that require GABA to be present, not independent direct agonists.",
+     "The sedation described in this module comes from GABA-A potentiation, not from glutamate receptor blockade."
+    ]
+   },
+   {
+    "q": "A patient arrives somnolent with slurred speech and ataxia. Which examination finding best supports a sedative-hypnotic rather than an opioid cause?",
+    "ch": [
+     "Profound hypotension together with bradycardia",
+     "Normal or midsize pupils with preserved hemodynamics",
+     "Dry flushed skin with hyperthermia and retention",
+     "Pinpoint pupils with a very low respiratory rate",
+     "Fixed dilated pupils with a deepening coma"
+    ],
+    "correct": 1,
+    "exp": "Benzodiazepine overdose classically shows CNS depression with slurred speech and ataxia while pupils remain normal or midsize and hemodynamics are preserved — the feature that separates it from opioid toxicity.",
+    "why": [
+     "Profound hypotension and bradycardia are atypical for benzodiazepines and signal a dangerous co-ingestant.",
+     "",
+     "Those are anticholinergic features rather than the sedative-hypnotic picture described here.",
+     "Miosis is the opioid finding; in benzodiazepine overdose the pupils are typically normal or midsize.",
+     "Fixed pupils and deepening coma are a red flag prompting a search for opioids, hypoglycemia, or an intracranial catastrophe."
+    ]
+   },
+   {
+    "q": "What is the first-line and definitive management for the great majority of isolated benzodiazepine overdoses?",
+    "ch": [
+     "Urgent hemodialysis to clear the ingested drug",
+     "Immediate flumazenil to reverse the sedation",
+     "Supportive care with supplemental oxygen and airway support",
+     "Routine activated charcoal for every ingestion",
+     "Empiric vasopressors to support the blood pressure"
+    ],
+    "correct": 2,
+    "exp": "Positioning, suction, oxygenation, and bag-valve-mask or intubation for inadequate ventilation are first-line and definitive; most patients recover with observation alone, which is why management is summarized as \"airway and time.\"",
+    "why": [
+     "Dialysis is not part of the described management; airway support and time are what the patient needs.",
+     "Flumazenil is reserved for carefully selected patients and can precipitate intractable seizures; it is not routine therapy.",
+     "",
+     "Routine charcoal is avoided because the aspiration risk in a sedated patient usually outweighs any benefit.",
+     "Significant hypotension is atypical for isolated benzodiazepines, so pressors are not part of first-line care."
+    ]
+   },
+   {
+    "q": "A urine benzodiazepine immunoassay is negative in a patient you strongly suspect has overdosed. How should that result be interpreted?",
+    "ch": [
+     "It means a serum benzodiazepine level should guide care",
+     "It indicates that flumazenil can now be given safely",
+     "It does not exclude overdose, because many agents are missed",
+     "It reliably excludes benzodiazepine ingestion",
+     "It confirms an opioid must be the responsible drug"
+    ],
+    "correct": 2,
+    "exp": "Urine benzodiazepine immunoassays are unreliable and miss clonazepam, lorazepam, and alprazolam, so a negative screen does not exclude overdose — the diagnosis is clinical.",
+    "why": [
+     "A benzodiazepine level does not change management and is not worth sending.",
+     "A negative screen does not remove the flumazenil contraindications of chronic use, seizure disorder, or proconvulsant co-ingestion.",
+     "",
+     "A negative screen does not rule out overdose; false negatives are common with several agents.",
+     "A negative benzodiazepine screen says nothing about which other agent might be involved."
+    ]
+   },
+   {
+    "q": "In which situation is flumazenil most appropriately used?",
+    "ch": [
+     "A patient with a widened QRS suggesting TCA co-ingestion",
+     "A drowsy patient with a known underlying seizure disorder",
+     "Any comatose patient with an unknown ingestion history",
+     "A chronic alprazolam user who has become deeply sedated",
+     "Reversal of iatrogenic procedural sedation in a naive patient"
+    ],
+    "correct": 4,
+    "exp": "Flumazenil is reserved chiefly for reversal of iatrogenic or procedural sedation, or for a benzodiazepine-naive child — settings where dependence and proconvulsant co-ingestion are not in play.",
+    "why": [
+     "Proconvulsant co-ingestion, especially a tricyclic, is an explicit contraindication to flumazenil.",
+     "A known seizure disorder is listed as a contraindication to giving flumazenil.",
+     "An undifferentiated overdose may involve proconvulsants or chronic use, both of which make flumazenil dangerous.",
+     "Chronic benzodiazepine use is a contraindication because flumazenil can precipitate intractable seizures.",
+     ""
+    ]
+   },
+   {
+    "q": "Which complication should be anticipated after flumazenil is given, even to a correctly selected patient?",
+    "ch": [
+     "Sustained reversal outlasting the benzodiazepine itself",
+     "Permanent blockade of the benzodiazepine binding site",
+     "A rise in blood pressure requiring antihypertensives",
+     "Reversal of any co-ingested opioid effect as a bonus",
+     "Resedation once the short half-life of the antidote wears off"
+    ],
+    "correct": 4,
+    "exp": "Flumazenil's short half-life means resedation — the patient can slip back under after the antidote wears off — so monitoring continues well beyond the drug's duration, alongside seizure precautions.",
+    "why": [
+     "The opposite is true: the antidote wears off first, so the patient can slip back under.",
+     "Flumazenil is a competitive antagonist at that site, not an irreversible blocker.",
+     "The anticipated problems are abrupt agitation, seizures, and resedation rather than a hypertensive complication.",
+     "Flumazenil is selective for the benzodiazepine site; naloxone is what addresses opioid toxicity.",
+     ""
+    ]
+   },
+   {
+    "q": "Which testing is prioritized in an undifferentiated CNS-depressed patient with suspected benzodiazepine overdose?",
+    "ch": [
+     "A serum benzodiazepine concentration drawn immediately",
+     "A urine immunoassay to confirm the diagnosis first",
+     "Head CT before any laboratory testing is obtained",
+     "Fingerstick glucose, acetaminophen and salicylate levels, and an ECG",
+     "Blood cultures and empiric broad-spectrum antibiotics"
+    ],
+    "correct": 3,
+    "exp": "Always obtain a fingerstick glucose, acetaminophen and salicylate levels, and an ECG to screen for co-ingested cardiotoxins; these matter far more than a benzodiazepine level, which does not change management.",
+    "why": [
+     "A benzodiazepine level does not change management, so it is not a priority.",
+     "The immunoassay is unreliable and the diagnosis is clinical, so it does not drive care.",
+     "Imaging is not the stated priority; glucose, co-ingestant levels, and an ECG come first.",
+     "",
+     "Infection is not part of the described benzodiazepine overdose workup."
+    ]
+   },
+   {
+    "q": "A 22-year-old found beside an empty alprazolam bottle is somnolent with a blood pressure of 78/44 and a QRS of 128 ms. What does this picture indicate?",
+    "ch": [
+     "A dangerous co-ingestant rather than isolated benzodiazepine toxicity",
+     "Evidence that the urine screen will settle the diagnosis",
+     "A benign finding as long as the pupils remain midsize",
+     "Expected findings after a large oral benzodiazepine dose",
+     "A clear indication for immediate flumazenil administration"
+    ],
+    "correct": 0,
+    "exp": "Profound hypotension, bradycardia, or QRS/QTc widening is atypical for isolated benzodiazepine toxicity and is a red flag for a dangerous co-ingestant — the co-ingestant, not the benzodiazepine, is the real killer.",
+    "why": [
+     "",
+     "A urine benzodiazepine screen is unreliable and would not explain the hypotension or the widened QRS.",
+     "Hypotension with QRS widening is a listed red flag and cannot be dismissed on the basis of pupil size.",
+     "Isolated oral benzodiazepine overdose preserves hemodynamics; hypotension with a wide QRS is not expected.",
+     "QRS widening suggests a proconvulsant co-ingestant, which is exactly when flumazenil is contraindicated."
+    ]
+   },
+   {
+    "q": "A patient maintained on chronic clonazepam is given flumazenil and has a generalized seizure. Why is this outcome so feared?",
+    "ch": [
+     "The precipitated seizures are intractable and hard to treat",
+     "The seizure proves an opioid co-ingestion was present",
+     "Such seizures respond promptly to intravenous phenytoin",
+     "It shows the initial flumazenil dose was far too low",
+     "Seizures in this setting are brief and need no monitoring"
+    ],
+    "correct": 0,
+    "exp": "Flumazenil can precipitate intractable seizures, arrhythmias, and death in a chronic benzodiazepine user or with proconvulsant co-ingestion — the antidote can be worse than the poison, and there is no good rescue.",
+    "why": [
+     "",
+     "A seizure after flumazenil reflects abrupt loss of GABA-A potentiation in a dependent patient, not opioid involvement.",
+     "No easy rescue is described; the danger is precisely that these seizures are hard to treat.",
+     "The hazard comes from giving flumazenil to a chronic user at all, not from underdosing it.",
+     "Seizure after flumazenil is listed as life-threatening and demands seizure precautions and rescue airway equipment."
+    ]
+   },
+   {
+    "q": "Naloxone is given empirically to a CNS-depressed patient with possible opioid co-ingestion. What is the correct titration endpoint?",
+    "ch": [
+     "Normalization of pupil size on serial exams",
+     "A fully normal Glasgow Coma Scale score",
+     "A complete return to baseline alertness",
+     "Adequate respiration rather than full arousal",
+     "Reversal of the benzodiazepine sedation too"
+    ],
+    "correct": 3,
+    "exp": "Naloxone is titrated to adequate respiration, not to full arousal; a response supports opioid involvement but does not reverse the benzodiazepine component of the overdose.",
+    "why": [
+     "Pupil size is a diagnostic clue in the toxidrome, not the titration endpoint.",
+     "The Glasgow Coma Scale grades depth of sedation and guides airway decisions; it is not the naloxone target.",
+     "Titration is to adequate respiration, not to full arousal.",
+     "",
+     "Naloxone is an opioid antagonist and does not reverse benzodiazepine effect at all."
+    ]
+   }
+  ]
+ },
+ "tca-od": {
+  "condition": "Tricyclic Antidepressant Overdose",
+  "questions": [
+   {
+    "q": "Which mechanism explains the QRS widening of tricyclic antidepressant overdose?",
+    "ch": [
+     "Calcium channel blockade slowing AV nodal conduction",
+     "Fast sodium-channel blockade slowing phase-0 depolarization",
+     "Inhibition of the myocardial Na+/K+-ATPase pump",
+     "Beta-adrenergic blockade depressing the myocardium",
+     "Potassium channel blockade prolonging repolarization"
+    ],
+    "correct": 1,
+    "exp": "Blockade of cardiac fast sodium channels slows phase-0 depolarization, widening the QRS and predisposing to ventricular dysrhythmias; a rightward terminal R wave in aVR is the hallmark.",
+    "why": [
+     "Calcium channel blockade is not among the four overlapping toxicities described for tricyclics.",
+     "",
+     "Na+/K+-ATPase inhibition is the digoxin mechanism, not the tricyclic mechanism.",
+     "Tricyclics block alpha-adrenergic receptors, and that produces hypotension rather than QRS widening.",
+     "QRS widening here comes from fast sodium-channel blockade slowing phase 0, not from potassium channel effects."
+    ]
+   },
+   {
+    "q": "Which single test is most useful in suspected tricyclic antidepressant overdose?",
+    "ch": [
+     "A non-contrast head CT of the brain",
+     "An echocardiogram to assess contractility",
+     "A 12-lead ECG",
+     "A serum tricyclic antidepressant concentration",
+     "A urine drug screen for antidepressant classes"
+    ],
+    "correct": 2,
+    "exp": "The single most useful test is a 12-lead ECG: look for a QRS above 100 ms, a terminal R wave above 3 mm in aVR, an R/S ratio above 0.7 in aVR, and sinus tachycardia.",
+    "why": [
+     "Imaging is not the stated priority; the ECG is what justifies starting bicarbonate.",
+     "Echocardiography is not part of the described workup; QRS width is the risk marker.",
+     "",
+     "Tricyclic levels are not used for acute management decisions; treat by clinical status and the ECG.",
+     "Risk stratification is driven by the ECG and the clinical picture, not by a urine screen."
+    ]
+   },
+   {
+    "q": "Which cluster of findings makes up the anticholinergic toxidrome of tricyclic overdose?",
+    "ch": [
+     "Dry flushed skin, mydriasis, urinary retention, hyperthermia, and tachycardia",
+     "Diaphoresis, miosis, salivation, bronchorrhea, and bradycardia",
+     "Pinpoint pupils, hypoventilation, and a depressed level of consciousness",
+     "Normal pupils, preserved vitals, hypoventilation, and slurred speech",
+     "Yellow-green visual halos, anorexia, and a new bradyarrhythmia"
+    ],
+    "correct": 0,
+    "exp": "History of ingestion plus an anticholinergic toxidrome — dry flushed skin, mydriasis, urinary retention, hyperthermia, tachycardia, and altered mental status — should raise tricyclic overdose: hot as a hare, dry as a bone, red as a beet, blind as a bat, mad as a hatter.",
+    "why": [
+     "",
+     "Those are cholinergic muscarinic findings — the opposite of the anticholinergic picture described.",
+     "That combination points to opioid toxicity rather than to an anticholinergic toxidrome.",
+     "Normal pupils with preserved vitals and hypoventilation is the sedative-hypnotic picture, not tricyclic overdose.",
+     "Visual halos with bradyarrhythmia suggests digoxin toxicity rather than a tricyclic."
+    ]
+   },
+   {
+    "q": "What do QRS durations above 100 ms and above 160 ms respectively predict?",
+    "ch": [
+     "Hypotension above 100 ms and complete heart block above 160 ms",
+     "Anticholinergic delirium above 100 ms and coma above 160 ms",
+     "Nothing, because QRS width does not stratify risk here",
+     "Ventricular dysrhythmias above 100 ms and seizures above 160 ms",
+     "Seizures above 100 ms and ventricular dysrhythmias above 160 ms"
+    ],
+    "correct": 4,
+    "exp": "QRS width predicts risk: above 100 ms correlates with seizures and above 160 ms with ventricular dysrhythmias, and these thresholds drive bicarbonate therapy rather than the drug level.",
+    "why": [
+     "The two thresholds are tied to seizures and ventricular dysrhythmias, not to hypotension and heart block.",
+     "QRS width predicts seizures and ventricular dysrhythmias; delirium and coma are not the stated thresholds.",
+     "QRS width is the central risk stratifier in this poisoning and drives bicarbonate therapy.",
+     "The thresholds are reversed: the narrower cutoff flags seizures and the wider one flags ventricular dysrhythmias.",
+     ""
+    ]
+   },
+   {
+    "q": "How does sodium bicarbonate work as the antidote for tricyclic cardiotoxicity?",
+    "ch": [
+     "A sodium load plus alkalinization overcoming sodium-channel blockade",
+     "Competitively antagonizing muscarinic receptor blockade",
+     "Chelating the drug so the kidney can excrete it faster",
+     "Blocking potassium channels to shorten repolarization",
+     "Acidifying the serum to trap the drug in the urine"
+    ],
+    "correct": 0,
+    "exp": "Sodium bicarbonate is first-line for cardiotoxicity and works by both a sodium load and alkalinization, with a target serum pH of about 7.45-7.55, reversing sodium-channel blockade and narrowing the QRS.",
+    "why": [
+     "",
+     "Bicarbonate does not act at muscarinic receptors; that would be physostigmine, which is contraindicated.",
+     "Bicarbonate does not bind the drug; it works through a sodium load and a rise in pH.",
+     "The mechanism is sodium loading and alkalinization, not potassium channel blockade.",
+     "The target is alkalemia around a pH of 7.45-7.55, and acidosis worsens toxicity."
+    ]
+   },
+   {
+    "q": "A patient with tricyclic overdose seizes. Which agent is first-line and which must be avoided?",
+    "ch": [
+     "Give physostigmine; avoid sodium bicarbonate",
+     "Give procainamide; avoid magnesium sulfate",
+     "Give an infusion of lidocaine; avoid all fluids",
+     "Give a benzodiazepine; avoid phenytoin",
+     "Give phenytoin; avoid benzodiazepines entirely"
+    ],
+    "correct": 3,
+    "exp": "Benzodiazepines such as lorazepam or diazepam are first-line for tricyclic-induced seizures and also reduce the catecholamine surge; phenytoin must be avoided because it is itself a sodium-channel blocker.",
+    "why": [
+     "Physostigmine can precipitate asystole and seizures here, and bicarbonate is the first-line cardiac antidote.",
+     "Procainamide is a sodium-channel blocker that worsens conduction, and magnesium is an accepted adjunct.",
+     "Benzodiazepines are the named anticonvulsant, and fluids are the first step for hypotension rather than something to avoid.",
+     "",
+     "Phenytoin is a sodium-channel blocker and is the drug to avoid, while benzodiazepines are first-line."
+    ]
+   },
+   {
+    "q": "A patient with tricyclic overdose stays hypotensive after adequate crystalloid. Which vasopressor is preferred, and why?",
+    "ch": [
+     "Dopamine, because it acts indirectly through catecholamine release",
+     "Phenylephrine, because it slows the reflex sinus tachycardia",
+     "Vasopressin, because it avoids all adrenergic receptors",
+     "Dobutamine, because inotropy alone restores adequate perfusion",
+     "Norepinephrine, because it counters alpha-adrenergic blockade"
+    ],
+    "correct": 4,
+    "exp": "Fluids come first; if hypotension is refractory, a direct vasopressor such as norepinephrine is chosen because it counters the alpha-adrenergic blockade, with bicarbonate escalated concurrently.",
+    "why": [
+     "A direct vasopressor is what is called for; an indirect agent is not the recommended choice.",
+     "Norepinephrine is the agent named specifically for refractory hypotension from alpha-blockade.",
+     "The stated rationale is to counter alpha-adrenergic blockade, which vasopressin does not do.",
+     "Dobutamine is not the listed agent; the hypotension reflects alpha-blockade plus myocardial depression.",
+     ""
+    ]
+   },
+   {
+    "q": "Which agent is explicitly contraindicated in tricyclic antidepressant overdose because it can precipitate asystole?",
+    "ch": [
+     "Lorazepam",
+     "Physostigmine",
+     "Norepinephrine",
+     "Magnesium sulfate",
+     "Sodium bicarbonate"
+    ],
+    "correct": 1,
+    "exp": "Physostigmine can precipitate asystole and seizures in tricyclic overdose and should not be used; the other agents to avoid are phenytoin and the Class Ia, Ic, and III antiarrhythmics.",
+    "why": [
+     "Benzodiazepines such as lorazepam are first-line for tricyclic-induced seizures and agitation.",
+     "",
+     "Norepinephrine is recommended for hypotension refractory to fluids.",
+     "Magnesium is used as an adjunct for refractory ventricular dysrhythmias.",
+     "Bicarbonate is the first-line antidote for cardiotoxicity, not a contraindicated agent."
+    ]
+   },
+   {
+    "q": "A 19-year-old is tachycardic and confused after an unknown ingestion. The ECG shows a 3.5 mm terminal R wave in aVR with an R/S ratio of 0.9. What does this indicate?",
+    "ch": [
+     "Hyperkalemia that calls for calcium and insulin therapy",
+     "A normal variant that requires no specific treatment",
+     "Tricyclic poisoning with sodium-channel blockade needing bicarbonate",
+     "Digoxin toxicity that should be treated with immune Fab",
+     "A benign drug effect producing scooped ST depression"
+    ],
+    "correct": 2,
+    "exp": "A terminal R wave above 3 mm in aVR and an R/S ratio above 0.7 in aVR are the classic tricyclic fingerprint of fast sodium-channel blockade, and they justify starting sodium bicarbonate.",
+    "why": [
+     "These aVR findings are the tricyclic fingerprint; potassium is checked but is not what this pattern shows.",
+     "A terminal R above 3 mm in aVR with an R/S ratio above 0.7 is the classic tricyclic fingerprint, not a normal variant.",
+     "",
+     "The aVR terminal R wave pattern is the tricyclic signature; it is not how glycoside toxicity presents.",
+     "Scooped ST depression is an entirely different finding and does not describe an aVR terminal R wave."
+    ]
+   },
+   {
+    "q": "Why does worsening acidosis create a vicious cycle in tricyclic overdose?",
+    "ch": [
+     "Low pH blocks potassium channels and prolongs the QT interval",
+     "Acidosis shrinks the volume of distribution and raises the level",
+     "Acidosis stops benzodiazepines from controlling the seizures",
+     "Low pH raises the free drug fraction bound to sodium channels",
+     "Acidosis stops mattering once bicarbonate has been started"
+    ],
+    "correct": 3,
+    "exp": "Low pH increases the free, sodium-channel-bound drug fraction, so seizures and hypoventilation directly worsen cardiotoxicity — which is why worsening acidosis is a red flag and alkalemia is the target.",
+    "why": [
+     "The cycle is explained through the sodium-channel-bound drug fraction, not through potassium channel effects.",
+     "The mechanism given is a change in the free, sodium-channel-bound fraction rather than the volume of distribution.",
+     "Seizures worsen acidosis; acidosis is not described as blocking benzodiazepine efficacy.",
+     "",
+     "Worsening acidosis is a red flag throughout and demands immediate correction."
+    ]
+   }
+  ]
+ },
+ "digoxin-toxicity": {
+  "condition": "Digoxin Toxicity",
+  "questions": [
+   {
+    "q": "Digoxin's therapeutic inotropy and its toxic arrhythmias both follow from inhibition of which target?",
+    "ch": [
+     "The cardiac fast sodium channel",
+     "The myocardial Na+/K+-ATPase",
+     "The L-type calcium channel of the AV node",
+     "The beta-1 adrenergic receptor",
+     "Hepatic alcohol dehydrogenase"
+    ],
+    "correct": 1,
+    "exp": "Digoxin inhibits the myocardial Na+/K+-ATPase, raising intracellular sodium and, through the Na+/Ca2+ exchanger, intracellular calcium — boosting inotropy but also increasing automaticity and vagal tone that slows AV conduction.",
+    "why": [
+     "Fast sodium-channel blockade is the tricyclic mechanism, not the mechanism of a cardiac glycoside.",
+     "",
+     "Digoxin raises intracellular calcium indirectly through the Na+/Ca2+ exchanger rather than by blocking calcium channels.",
+     "Digoxin does not act at the beta-1 receptor; it inhibits an ion pump.",
+     "That enzyme belongs to toxic-alcohol poisoning and has nothing to do with digoxin."
+    ]
+   },
+   {
+    "q": "Which visual symptom is the classic clue to digoxin toxicity?",
+    "ch": [
+     "Sudden painless monocular loss of vision",
+     "A \"snowstorm\" whiteout of the visual field",
+     "Bilateral homonymous hemianopsia on testing",
+     "A painful red eye with marked photophobia",
+     "Yellow-green halos around lights, or xanthopsia"
+    ],
+    "correct": 4,
+    "exp": "Classic visual disturbances are yellow-green halos and xanthopsia, alongside nausea, vomiting, anorexia, fatigue, and confusion — famously linked to Van Gogh's palette in exam lore.",
+    "why": [
+     "The described visual clue is a yellow-green color halo disturbance, not monocular vision loss.",
+     "Snowstorm vision belongs to methanol poisoning rather than to digoxin toxicity.",
+     "A visual field cut is not among the findings listed for digoxin toxicity.",
+     "An inflamed painful eye is not the visual disturbance described in this module.",
+     ""
+    ]
+   },
+   {
+    "q": "Which arrhythmia is considered near-pathognomonic for digoxin toxicity?",
+    "ch": [
+     "Wolff-Parkinson-White with a delta wave",
+     "Sinus tachycardia at 130 beats per minute",
+     "Bidirectional ventricular tachycardia",
+     "Rapidly conducted atrial fibrillation",
+     "Torsades de pointes with a long QT"
+    ],
+    "correct": 2,
+    "exp": "Bidirectional ventricular tachycardia is the near-pathognomonic arrhythmia of digoxin toxicity, reflecting increased automaticity with impaired conduction; it is also seen in catecholaminergic polymorphic VT.",
+    "why": [
+     "A delta wave reflects an accessory pathway and is unrelated to glycoside toxicity.",
+     "Digoxin increases vagal tone and slows AV conduction, so a sinus tachycardia is not its fingerprint.",
+     "",
+     "Almost any arrhythmia except a rapidly conducted supraventricular rhythm can occur, so this one argues against the diagnosis.",
+     "Torsades is not the digoxin signature; the characteristic rhythm is bidirectional ventricular tachycardia."
+    ]
+   },
+   {
+    "q": "A patient taking digoxin has downsloping \"scooped\" ST depression on the ECG and feels entirely well. What does this represent?",
+    "ch": [
+     "The benign digoxin effect seen at therapeutic levels",
+     "Hyperkalemia from an acute glycoside overdose",
+     "An indication to withhold all further doses at once",
+     "Definite toxicity requiring digoxin immune Fab",
+     "Acute myocardial ischemia requiring catheterization"
+    ],
+    "correct": 0,
+    "exp": "Downsloping \"scooped\" ST depression — the Salvador Dali mustache — is the benign digoxin effect that appears at therapeutic levels and must not be confused with true toxicity.",
+    "why": [
+     "",
+     "Hyperkalemia is a severity marker in acute toxicity, not the cause of scooped ST depression.",
+     "Because the pattern is a therapeutic effect, it does not by itself mandate stopping the drug.",
+     "The scooped ST depression is a therapeutic effect, not toxicity, and does not by itself indicate the antidote.",
+     "This pattern is the expected drug effect rather than a sign of ischemia."
+    ]
+   },
+   {
+    "q": "How does potassium typically differ between acute and chronic digoxin toxicity?",
+    "ch": [
+     "Both the acute and the chronic patterns reliably produce hyperkalemia",
+     "Potassium is unchanged in either pattern of glycoside toxicity",
+     "Acute toxicity often brings hyperkalemia, while chronic toxicity is often normo- or hypokalemic",
+     "Only chronic toxicity moves the potassium, and it always moves upward",
+     "Acute toxicity brings hypokalemia, while chronic toxicity brings hyperkalemia"
+    ],
+    "correct": 2,
+    "exp": "Acute overdose drives potassium out of cells and produces hyperkalemia, a severity marker, whereas chronic toxicity is often normo- or hypokalemic, with diuretic-driven hypokalemia frequently the precipitant.",
+    "why": [
+     "Chronic toxicity often coexists with hypokalemia from diuretics rather than with hyperkalemia.",
+     "Potassium is central to both patterns and is the key severity marker in acute ingestion.",
+     "",
+     "Acute toxicity is the pattern tied to hyperkalemia, and chronic toxicity to a low potassium.",
+     "The pattern is reversed: acute overdose drives potassium out of cells, and chronic toxicity coexists with diuretic-driven hypokalemia."
+    ]
+   },
+   {
+    "q": "Which of the following is an indication for digoxin immune Fab?",
+    "ch": [
+     "A potassium above 5.0-5.5 mEq/L in acute toxicity",
+     "A digoxin level of 1.2 ng/mL drawn at steady state",
+     "Isolated nausea that settles with an antiemetic",
+     "Hypokalemia in a patient on chronic digoxin therapy",
+     "Scooped ST depression on a routine screening ECG"
+    ],
+    "correct": 0,
+    "exp": "Fab indications are ventricular arrhythmias, symptomatic bradycardia unresponsive to atropine, a potassium above 5.0-5.5 in acute toxicity, a large ingestion, or a very high measured level.",
+    "why": [
+     "",
+     "That sits inside the target range of roughly 0.5-2.0 ng/mL and is not an indication.",
+     "Mild GI upset alone is not among the listed indications for the antidote.",
+     "Low potassium in chronic toxicity is corrected with repletion rather than treated with Fab.",
+     "That pattern is the benign digoxin effect and is not an antidote indication."
+    ]
+   },
+   {
+    "q": "A patient with acute digoxin toxicity has a potassium of 6.1 mEq/L. Which standard hyperkalemia therapy is classically avoided?",
+    "ch": [
+     "Atropine for symptomatic bradycardia",
+     "Digoxin immune Fab",
+     "Continuous cardiac monitoring",
+     "Intravenous calcium",
+     "Magnesium sulfate for arrhythmia"
+    ],
+    "correct": 3,
+    "exp": "The classic \"stone heart\" teaching cautions against IV calcium in digoxin-induced hyperkalemia because intracellular calcium is already high; treat the hyperkalemia by giving Fab instead.",
+    "why": [
+     "Atropine is a legitimate temporizing measure for bradycardia and high-grade AV block.",
+     "Fab is precisely how this hyperkalemia should be treated, since potassium above 5.0-5.5 is an indication.",
+     "Continuous monitoring is a core part of care and is never withheld in significant toxicity.",
+     "",
+     "Magnesium is used as an adjunct, though cautiously in bradycardia, AV block, and renal failure."
+    ]
+   },
+   {
+    "q": "What must a nurse do before administering each dose of digoxin?",
+    "ch": [
+     "Obtain a serum digoxin level with every single dose",
+     "Give intravenous potassium along with each dose",
+     "Perform a formal bedside visual acuity examination",
+     "Check the apical pulse for a full minute and hold for a rate below 60",
+     "Confirm a completely normal 12-lead ECG before dosing"
+    ],
+    "correct": 3,
+    "exp": "Before every digoxin dose, check the apical pulse for a full minute and hold the dose for a heart rate below 60 in adults, and verify recent potassium, magnesium, and renal function.",
+    "why": [
+     "Levels are timed and periodic, not drawn before each dose.",
+     "Potassium is repleted only when it is low, and never when the patient is hyperkalemic.",
+     "Visual changes are symptoms to teach the patient to report, not a pre-dose safety check.",
+     "",
+     "The described pre-dose check is the apical pulse plus recent potassium, magnesium, and renal labs."
+    ]
+   },
+   {
+    "q": "An 82-year-old on a long-stable digoxin dose is started on amiodarone, and two weeks later has nausea, confusion, and new PVCs. What best explains this?",
+    "ch": [
+     "A new illness entirely unrelated to the digoxin regimen",
+     "Digoxin withdrawal from a run of missed doses",
+     "Amiodarone-induced hypothyroidism causing the symptoms",
+     "An expected therapeutic response needing no action",
+     "An interacting drug acting as a precipitant of toxicity"
+    ],
+    "correct": 4,
+    "exp": "Suspect toxicity whenever an interacting drug such as amiodarone, verapamil, or quinidine — or worsening renal function — is added to a stable regimen, because the narrow therapeutic window means small pharmacokinetic shifts tip an elderly patient into toxicity.",
+    "why": [
+     "This scenario is the classic picture of a precipitant tipping a stable regimen into toxicity.",
+     "The picture described is toxicity, and amiodarone raises rather than lowers digoxin exposure.",
+     "Deterioration on a stable regimen is attributed to interacting drugs and renal decline, not to thyroid disease.",
+     "Nausea, confusion, and new PVCs are early toxicity findings that require prompt evaluation.",
+     ""
+    ]
+   },
+   {
+    "q": "When should a serum digoxin level be drawn to give a valid steady-state result?",
+    "ch": [
+     "Timing does not affect how the level is read",
+     "At least 6 hours after the dose was given",
+     "Immediately after the dose has been swallowed",
+     "Only after digoxin immune Fab has been given",
+     "Within about 30 minutes of an oral dose"
+    ],
+    "correct": 1,
+    "exp": "Interpret a serum digoxin level against its timing: draw it at least 6 hours post-dose for a valid steady-state value, and recognize that levels become far less useful and can mislead once Fab has been given.",
+    "why": [
+     "Timing is essential, because the level is interpreted against how long after the dose it was drawn.",
+     "",
+     "A level drawn that early does not reflect steady state and will be misleading.",
+     "Levels are far less useful and can be misleading once Fab has been administered.",
+     "That is far too early for distribution; the sample must be drawn at least 6 hours post-dose."
+    ]
+   }
+  ]
+ },
+ "carbon-monoxide": {
+  "condition": "Carbon Monoxide Poisoning",
+  "questions": [
+   {
+    "q": "How does carbon monoxide impair oxygen delivery to tissues?",
+    "ch": [
+     "It oxidizes the hemoglobin iron to the ferric state, forming methemoglobin",
+     "It causes bronchospasm that reduces alveolar oxygen uptake",
+     "It dissolves in plasma and directly lowers the measured PaO2",
+     "It binds hemoglobin far tighter than oxygen and shifts the dissociation curve left",
+     "It destroys red cells and produces an acute hemolytic anemia"
+    ],
+    "correct": 3,
+    "exp": "CO binds hemoglobin with roughly 200-250 times the affinity of oxygen, forming carboxyhemoglobin that lowers oxygen-carrying capacity and shifts the oxyhemoglobin dissociation curve left, impairing oxygen release to tissues.",
+    "why": [
+     "Methemoglobinemia is a different problem; it is what nitrite-based cyanide kits cause and why they are avoided here.",
+     "This is a hemoglobin-binding and cellular respiration problem, not airway obstruction.",
+     "PaO2 is often normal because it reflects dissolved oxygen rather than the poisoned hemoglobin.",
+     "",
+     "The module describes carboxyhemoglobin formation and cellular toxicity, not hemolysis."
+    ]
+   },
+   {
+    "q": "Why is a standard pulse oximeter unreliable in carbon monoxide poisoning?",
+    "ch": [
+     "It measures dissolved oxygen instead of bound oxygen",
+     "It needs an arterial sample that is often unavailable",
+     "It underestimates saturation whenever the lactate is high",
+     "It cannot distinguish carboxyhemoglobin from oxyhemoglobin",
+     "It fails because peripheral perfusion is always poor here"
+    ],
+    "correct": 3,
+    "exp": "A standard pulse oximeter reads falsely normal because it cannot distinguish carboxyhemoglobin from oxyhemoglobin; only CO-oximetry measuring the COHb level reveals the true picture.",
+    "why": [
+     "That description fits PaO2, which is also misleading, rather than the pulse oximeter.",
+     "Pulse oximetry is noninvasive; CO-oximetry on arterial or venous blood is what gives the true level.",
+     "The false reading is not driven by lactate; the device reads carboxyhemoglobin as oxyhemoglobin.",
+     "",
+     "The falsely normal reading is a limitation of the measurement, not a perfusion artifact."
+    ]
+   },
+   {
+    "q": "What is the first-line therapy for all suspected carbon monoxide poisoning?",
+    "ch": [
+     "Reflexive sodium bicarbonate for the acidosis",
+     "Room-air observation until symptoms resolve",
+     "Hydroxocobalamin given before any oxygen therapy",
+     "Waiting for the COHb result before treating",
+     "100% oxygen by non-rebreather, started immediately"
+    ],
+    "correct": 4,
+    "exp": "Apply 100% oxygen by non-rebreather immediately and empirically in all suspected CO poisoning, before the COHb level even returns, and continue until symptoms resolve and COHb normalizes.",
+    "why": [
+     "The lactic acidosis is treated by restoring oxygenation, not by reflexive bicarbonate.",
+     "On room air the COHb half-life stays around 240-320 minutes, so high-flow oxygen is required.",
+     "Hydroxocobalamin is for suspected concurrent cyanide toxicity, not the first-line therapy for CO.",
+     "Oxygen is started empirically before the COHb level returns.",
+     ""
+    ]
+   },
+   {
+    "q": "What happens to the carboxyhemoglobin elimination half-life as oxygen therapy escalates?",
+    "ch": [
+     "About 240-320 minutes on room air, 60-90 minutes on 100% oxygen, and 20-30 minutes with hyperbaric oxygen",
+     "About 30 minutes on room air, 240 minutes on 100% oxygen, and 320 minutes with hyperbaric oxygen",
+     "Roughly 60 minutes on room air, and unchanged by either supplemental or hyperbaric oxygen",
+     "About 240 minutes on room air, unchanged on 100% oxygen, and 60 minutes with hyperbaric oxygen",
+     "Roughly 20-30 minutes on room air and about 240-320 minutes once hyperbaric oxygen is given"
+    ],
+    "correct": 0,
+    "exp": "The COHb half-life falls from roughly 240-320 minutes on room air to about 60-90 minutes on 100% oxygen and about 20-30 minutes with hyperbaric oxygen, which is what justifies matching aggressiveness to severity.",
+    "why": [
+     "",
+     "The order is inverted: room air gives the longest half-life and hyperbaric oxygen the shortest.",
+     "Oxygen therapy shortens the half-life dramatically rather than leaving it unchanged.",
+     "100% oxygen already shortens the half-life to about 60-90 minutes rather than leaving it unchanged.",
+     "The values are reversed — hyperbaric oxygen produces the shortest half-life, about 20-30 minutes."
+    ]
+   },
+   {
+    "q": "Which feature best supports transfer for hyperbaric oxygen therapy?",
+    "ch": [
+     "Loss of consciousness during the exposure",
+     "A headache that resolves on high-flow oxygen",
+     "A COHb level of 8% in a chronic smoker",
+     "A normal pulse oximeter reading on arrival",
+     "Cherry-red skin discoloration of the trunk"
+    ],
+    "correct": 0,
+    "exp": "Hyperbaric oxygen is considered for severe poisoning — loss of consciousness, neurologic deficits, cardiac ischemia, a COHb generally above 25% (or above 20% in pregnancy), or persistent symptoms — ideally treated within about 6 hours.",
+    "why": [
+     "",
+     "Symptoms that resolve on oxygen do not meet the severity criteria for hyperbaric therapy.",
+     "Smokers run up to 10-15% at baseline, so that level does not by itself indicate severe poisoning.",
+     "SpO2 reads falsely normal in CO poisoning and is not a severity criterion at all.",
+     "Cherry-red skin is uncommon and usually a late or postmortem finding, not a hyperbaric indication."
+    ]
+   },
+   {
+    "q": "How should the classic finding of cherry-red skin be regarded in carbon monoxide poisoning?",
+    "ch": [
+     "Present in nearly every significant exposure",
+     "The earliest sign, appearing before any headache",
+     "Uncommon, and usually a late or postmortem finding",
+     "A specific sign that hyperbaric oxygen is unnecessary",
+     "Proof that concurrent cyanide toxicity is present"
+    ],
+    "correct": 2,
+    "exp": "Cherry-red skin is a classic board answer but is uncommon and usually a late or postmortem finding — do not wait for it before starting treatment.",
+    "why": [
+     "It is described as uncommon, so its absence is entirely expected.",
+     "It is a late finding rather than an early one.",
+     "",
+     "Skin color does not determine hyperbaric indications, which rest on end-organ injury.",
+     "Cyanide co-toxicity is suggested by soot, a high lactate, and collapse, not by skin color."
+    ]
+   },
+   {
+    "q": "Exposure to which household product can produce carbon monoxide poisoning hours after the exposure has ended?",
+    "ch": [
+     "Organophosphate garden insecticide",
+     "Concentrated drain-cleaner lye",
+     "Antifreeze containing ethylene glycol",
+     "Chlorine bleach mixed with ammonia",
+     "Methylene chloride paint stripper"
+    ],
+    "correct": 4,
+    "exp": "Methylene chloride in paint remover is metabolized in the liver to carbon monoxide, so poisoning can appear hours after the exposure itself is over.",
+    "why": [
+     "Organophosphates produce a cholinergic syndrome rather than carboxyhemoglobinemia.",
+     "A caustic injures tissue directly and is not converted to carbon monoxide.",
+     "Ethylene glycol causes acidosis and renal injury, not CO poisoning.",
+     "That mixture releases irritant gases and is not metabolized to carbon monoxide.",
+     ""
+    ]
+   },
+   {
+    "q": "A house-fire victim has soot in the airway, altered mental status, and a profound lactic acidosis. What should be added to the 100% oxygen?",
+    "ch": [
+     "Empiric antibiotics for inhalation pneumonitis",
+     "Naloxone titrated to the mental status",
+     "Hydroxocobalamin for suspected cyanide co-toxicity",
+     "A nitrite-based cyanide antidote kit",
+     "Reflexive bicarbonate to correct the lactate"
+    ],
+    "correct": 2,
+    "exp": "In a fire victim with soot, altered mental status, and profound lactic acidosis, actively consider concurrent cyanide toxicity and give hydroxocobalamin, the preferred antidote in fire victims.",
+    "why": [
+     "Infection is not part of the described acute management of this presentation.",
+     "This picture is attributed to cyanide co-toxicity, not to opioid effect.",
+     "",
+     "Nitrite kits induce methemoglobinemia, which further impairs oxygen carrying when COHb is already high.",
+     "The lactic acidosis is treated by restoring oxygenation rather than by reflexive bicarbonate."
+    ]
+   },
+   {
+    "q": "Which neuroimaging finding is the signature of carbon monoxide toxicity?",
+    "ch": [
+     "Bilateral occipital cortical calcification",
+     "Bilateral globus pallidus lesions",
+     "Cerebellar vermis atrophy",
+     "Unilateral middle cerebral artery infarction",
+     "Diffuse subarachnoid hemorrhage"
+    ],
+    "correct": 1,
+    "exp": "Bilateral globus pallidus lesions on CT or MRI are the neuroimaging signature of CO toxicity, classically a late finding; a head CT is obtained for focal deficits or coma.",
+    "why": [
+     "The classic lesions sit in the globus pallidus, not the occipital cortex.",
+     "",
+     "Cerebellar atrophy is not the imaging signature given for this poisoning.",
+     "A single vascular territory infarct is not the described signature of CO toxicity.",
+     "Hemorrhage is not among the imaging findings listed for CO poisoning."
+    ]
+   },
+   {
+    "q": "A pregnant woman has a mild headache after a faulty heater exposure and a COHb of 21%. What is the appropriate approach?",
+    "ch": [
+     "Use the maternal level alone to decide about transfer",
+     "Treat aggressively, because pregnancy lowers the hyperbaric oxygen threshold",
+     "Discharge her, because her symptoms are only mild",
+     "Observe her on room air and recheck the level later",
+     "Withhold oxygen until fetal monitoring is arranged"
+    ],
+    "correct": 1,
+    "exp": "Pregnancy lowers the hyperbaric oxygen threshold, generally to a COHb above 20%, because fetal hemoglobin binds CO avidly and fetal COHb lags and outlasts maternal levels — the fetus is at high risk even when maternal symptoms seem mild.",
+    "why": [
+     "Fetal levels lag and outlast maternal levels, so the maternal number understates the fetal risk.",
+     "",
+     "Pregnancy with any significant exposure is a red flag; the fetus is at high risk even with mild maternal symptoms.",
+     "Room air leaves a very long COHb half-life; 100% oxygen is started immediately.",
+     "Oxygen is never delayed; it is first-line therapy in all suspected CO poisoning."
+    ]
+   }
+  ]
+ },
+ "toxic-alcohols": {
+  "condition": "Toxic Alcohols (Methanol/Ethylene Glycol)",
+  "questions": [
+   {
+    "q": "Why are methanol and ethylene glycol so dangerous when the parent alcohols are only mildly intoxicating?",
+    "ch": [
+     "They inhibit the myocardial Na+/K+-ATPase pump",
+     "They accumulate unchanged because they are not metabolized",
+     "Alcohol dehydrogenase converts them into toxic acid metabolites",
+     "They are directly corrosive to the gastric mucosa",
+     "They bind hemoglobin and impair oxygen delivery"
+    ],
+    "correct": 2,
+    "exp": "The parent alcohols are only mildly intoxicating, but alcohol dehydrogenase converts them into toxic acids, which is why blocking that enzyme is the first-line intervention.",
+    "why": [
+     "Pump inhibition is the digoxin mechanism and is unrelated to the toxic alcohols.",
+     "The hazard is precisely that they are metabolized; blocking that metabolism is the treatment.",
+     "",
+     "The danger described is metabolic conversion to acids, not direct caustic injury.",
+     "That describes carbon monoxide rather than either of the toxic alcohols."
+    ]
+   },
+   {
+    "q": "Which metabolite causes methanol's characteristic organ injury, and what does it injure?",
+    "ch": [
+     "Acetaldehyde, which produces hepatic necrosis",
+     "Formate, which poisons the optic nerve and retina",
+     "Glycolate, which causes immediate cardiac arrest",
+     "Formaldehyde, which damages the cerebellum",
+     "Oxalate, which deposits as crystals in the kidney"
+    ],
+    "correct": 1,
+    "exp": "Methanol yields formic acid and formate, which poisons the optic nerve and retina and causes blindness — 'Formate for eyes, Oxalate for kidneys.'",
+    "why": [
+     "Toxic-alcohol injury is not attributed to acetaldehyde or to the liver in this module.",
+     "",
+     "Glycolic acid comes from ethylene glycol, and its course is renal rather than immediate arrest.",
+     "The named acid is formic acid/formate, and the injury localizes to the retina, optic nerve, and putamen.",
+     "Oxalate is the ethylene glycol metabolite and causes renal injury rather than visual loss."
+    ]
+   },
+   {
+    "q": "Which urine finding supports a diagnosis of ethylene glycol poisoning?",
+    "ch": [
+     "Myoglobin without red cells on microscopy",
+     "Muddy brown granular casts",
+     "Red cell casts with dysmorphic red cells",
+     "Positive nitrites and leukocyte esterase",
+     "Calcium oxalate crystals on microscopy"
+    ],
+    "correct": 4,
+    "exp": "Calcium oxalate crystals in the urine, plus possible urine fluorescence under a Wood's lamp from the fluorescein additive in antifreeze, support ethylene glycol poisoning — supportive findings, not definitive ones.",
+    "why": [
+     "Pigment nephropathy is not the mechanism here; oxalate crystal deposition is.",
+     "Granular casts are not the urine finding named for ethylene glycol poisoning.",
+     "A glomerulonephritis pattern is not part of the described picture.",
+     "Those indicate urinary infection rather than glycol metabolite deposition.",
+     ""
+    ]
+   },
+   {
+    "q": "How do the osmolar gap and the anion gap behave over the course of toxic alcohol poisoning?",
+    "ch": [
+     "The osmolar gap is high early and narrows as the anion gap rises",
+     "The anion gap is high early and falls as the osmolar gap rises",
+     "Both gaps rise together and stay elevated throughout the course",
+     "Neither gap changes until renal failure has developed",
+     "The osmolar gap stays normal while the anion gap also stays normal"
+    ],
+    "correct": 0,
+    "exp": "The parent alcohol is osmotically active but not acidic, so the osmolar gap is elevated early and narrows as alcohol dehydrogenase makes acids and the anion gap climbs — the two gaps see-saw over time.",
+    "why": [
+     "",
+     "The sequence is reversed: the parent alcohol raises the osmolar gap first, then its acids raise the anion gap.",
+     "The two gaps see-saw over time rather than moving up together.",
+     "Both gaps change as metabolism proceeds, well before any renal failure.",
+     "A high osmolar gap early is a key clue, and the anion gap climbs as acids accumulate."
+    ]
+   },
+   {
+    "q": "Why is fomepizole preferred over an ethanol infusion as the antidote?",
+    "ch": [
+     "Predictable dosing with no intoxication, sedation, or hypoglycemia",
+     "It corrects the metabolic acidosis directly and rapidly",
+     "It requires no laboratory monitoring of any kind",
+     "It works through a different enzyme than ethanol does",
+     "It removes the toxic metabolites that have already formed"
+    ],
+    "correct": 0,
+    "exp": "Fomepizole is a potent competitive inhibitor of alcohol dehydrogenase and is preferred over ethanol because its dosing is predictable and it causes no intoxication, sedation, hypoglycemia, or drip titration.",
+    "why": [
+     "",
+     "Sodium bicarbonate addresses the acidemia; the antidote blocks the enzyme.",
+     "The advantage cited is predictable dosing, not freedom from monitoring; gaps and pH are still followed.",
+     "Both act at alcohol dehydrogenase, with ethanol competing as the preferred substrate.",
+     "Removing metabolites already formed requires hemodialysis; the antidote only stops further production."
+    ]
+   },
+   {
+    "q": "Which cofactor therapy matches which toxic alcohol poisoning?",
+    "ch": [
+     "Thiamine and pyridoxine for methanol; folinic acid for ethylene glycol",
+     "Pyridoxine alone, used for both methanol and ethylene glycol",
+     "Folic acid for ethylene glycol; no cofactor at all for methanol",
+     "Folic or folinic acid for methanol; thiamine and pyridoxine for ethylene glycol",
+     "Niacin for methanol; cyanocobalamin for ethylene glycol"
+    ],
+    "correct": 3,
+    "exp": "Give folic or folinic acid in methanol poisoning to accelerate metabolism of formate to CO2 and water, and thiamine plus pyridoxine in ethylene glycol poisoning to shunt glyoxylate toward nontoxic metabolites.",
+    "why": [
+     "The pairing is reversed: folate speeds formate clearance in methanol, and thiamine plus pyridoxine shunt glyoxylate in ethylene glycol.",
+     "Pyridoxine belongs to the ethylene glycol regimen, while methanol is treated with folic or folinic acid.",
+     "Folate is the methanol cofactor, and both poisonings have their own cofactor therapy.",
+     "",
+     "Neither niacin nor cyanocobalamin is among the cofactors given for these poisonings."
+    ]
+   },
+   {
+    "q": "Which finding is an indication for hemodialysis in toxic alcohol poisoning?",
+    "ch": [
+     "An osmolar gap of 12 with a normal pH",
+     "Successful administration of fomepizole",
+     "A co-ingested ethanol level of 120 mg/dL",
+     "Resolution of the anion gap on serial labs",
+     "Severe metabolic acidosis or visual symptoms"
+    ],
+    "correct": 4,
+    "exp": "Hemodialysis is considered for severe metabolic acidosis, visual symptoms, renal failure, high measured levels, or clinical deterioration despite the antidote, and it removes both parent alcohol and toxic metabolites.",
+    "why": [
+     "A modestly raised osmolar gap alone is suggestive of ingestion but is not itself a dialysis indication.",
+     "Starting the antidote does not create a dialysis indication; deterioration despite it does.",
+     "Co-ingested ethanol delays metabolism and is not a reason to dialyze.",
+     "Improvement argues against escalating to hemodialysis.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient who drank antifreeze develops carpopedal spasm and a prolonged QT interval. What explains these findings?",
+    "ch": [
+     "Formate injuring the optic nerve and the retina",
+     "Oxalate binding calcium and producing hypocalcemia",
+     "Hyperkalemia arising from the metabolic acidosis",
+     "Hypoglycemia caused by an ethanol antidote infusion",
+     "Direct sodium-channel blockade by the parent alcohol"
+    ],
+    "correct": 1,
+    "exp": "Ethylene glycol's oxalate binds calcium, so hypocalcemia with tetany, Chvostek and Trousseau signs, prolonged QT, and seizures develops; monitor calcium and watch urine output for developing renal failure.",
+    "why": [
+     "Formate drives methanol's visual toxicity and does not explain tetany or a prolonged QT.",
+     "",
+     "Tetany and QT prolongation here are attributed to hypocalcemia from oxalate, not to potassium.",
+     "Hypoglycemia is a hazard of ethanol therapy but does not cause carpopedal spasm with QT prolongation.",
+     "Sodium-channel blockade belongs to tricyclic poisoning rather than to ethylene glycol."
+    ]
+   },
+   {
+    "q": "A methanol-poisoned patient already on fomepizole is started on hemodialysis. What must change about the antidote?",
+    "ch": [
+     "The dose should be reduced to avoid accumulation",
+     "It should be switched to an intravenous ethanol infusion",
+     "No change is needed, since the drug is not dialyzable",
+     "The dose is increased and the dosing interval shortened",
+     "It should be stopped as soon as dialysis begins"
+    ],
+    "correct": 3,
+    "exp": "Fomepizole is dialyzable, so its dose is increased and its dosing interval shortened during hemodialysis, and the alcohol dehydrogenase blocker is continued until the toxic alcohol is cleared.",
+    "why": [
+     "The drug is removed by the dialyzer, so more is required rather than less.",
+     "Ethanol is the alternative only when fomepizole is unavailable, and it is far more labor-intensive.",
+     "It is dialyzable, which is precisely why the dosing must be adjusted.",
+     "",
+     "The enzyme blocker is continued until the toxin is cleared, not stopped when dialysis starts."
+    ]
+   },
+   {
+    "q": "An intoxicated patient presents late with a pH of 7.10, an anion gap of 28, and a normal osmolar gap. How should that normal osmolar gap be interpreted?",
+    "ch": [
+     "It reliably rules out methanol and ethylene glycol",
+     "It means the anion gap must come from lactate instead",
+     "It does not exclude toxic alcohol poisoning, especially late",
+     "It indicates that fomepizole should now be withheld",
+     "It confirms that hemodialysis will be unnecessary"
+    ],
+    "correct": 2,
+    "exp": "A normal osmolar gap does not exclude poisoning, especially late, because the gap narrows as the parent alcohol is converted to acids while the anion gap climbs; correlate with the anion gap, pH, and history.",
+    "why": [
+     "A normal osmolar gap must never be used to rule out ingestion, particularly in a late presentation.",
+     "A high anion gap with a normal osmolar gap is exactly the late toxic-alcohol pattern and does not point to lactate.",
+     "",
+     "With strong suspicion the antidote is given empirically rather than withheld.",
+     "Severe metabolic acidosis is itself a dialysis indication regardless of the osmolar gap."
+    ]
+   }
+  ]
+ }
+}

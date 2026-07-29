@@ -1,0 +1,977 @@
+{
+ "organophosphate": {
+  "condition": "Organophosphate Poisoning",
+  "questions": [
+   {
+    "q": "Organophosphates such as malathion, parathion, and the nerve agent sarin produce toxicity by which mechanism?",
+    "ch": [
+     "Excess release of norepinephrine from sympathetic nerve terminals",
+     "Competitive antagonism of nicotinic receptors at the neuromuscular junction",
+     "Phosphorylation and inhibition of acetylcholinesterase, so acetylcholine accumulates at synapses",
+     "Blockade of muscarinic receptors, preventing acetylcholine from reaching its target",
+     "Depletion of acetylcholine from presynaptic vesicles, leaving synapses empty"
+    ],
+    "correct": 2,
+    "exp": "Organophosphates phosphorylate and inhibit acetylcholinesterase, so acetylcholine accumulates at muscarinic, nicotinic, and CNS synapses — the tri-receptor basis of cholinergic crisis.",
+    "why": [
+     "The toxidrome is cholinergic; it is not driven by catecholamine release.",
+     "Nicotinic receptors are overstimulated by the excess acetylcholine, producing fasciculations and weakness, not competitively blocked.",
+     "",
+     "Muscarinic blockade is how atropine treats the poisoning, not how the poison works.",
+     "Acetylcholine floods the synapse in this poisoning; it is not depleted."
+    ]
+   },
+   {
+    "q": "Which cluster of findings represents the muscarinic (SLUDGE/DUMBELS) component of organophosphate toxicity?",
+    "ch": [
+     "Hypertension, tachycardia, and laryngospasm during a rapid intravenous push",
+     "Salivation, lacrimation, urination, defecation, GI cramping, and emesis",
+     "Muscle fasciculations, weakness, tachycardia, and mydriasis",
+     "Agitation, seizures, and coma without any peripheral findings",
+     "Dry mouth, flushed skin, hyperthermia, and urinary retention"
+    ],
+    "correct": 1,
+    "exp": "SLUDGE — Salivation, Lacrimation, Urination, Defecation, GI cramping, Emesis — is the muscarinic cholinergic toxidrome; the DUMBELS version adds miosis and bradycardia.",
+    "why": [
+     "Those effects follow a too-rapid intravenous pralidoxime push, not muscarinic stimulation.",
+     "",
+     "These are the nicotinic effects, which conflict with the muscarinic signs and create the classic opposing-sign pitfall.",
+     "Agitation, seizures, and coma are the CNS component of the tri-receptor toxidrome, not the muscarinic one.",
+     "Dry skin, hyperthermia, and urinary retention describe anticholinergic toxicity from over-atropinization — the opposite of cholinergic excess."
+    ]
+   },
+   {
+    "q": "The \"Killer B's\" name the features that actually cause death in organophosphate poisoning. Which triad is it?",
+    "ch": [
+     "Blindness, bulbar weakness, and blistering of exposed skin",
+     "Bradycardia, bruising, and bacteremia from secondary infection",
+     "Bradypnea, bradykinesia, and bilateral miosis",
+     "Bradycardia, bronchorrhea, and bronchospasm",
+     "Bronchiectasis, bleeding, and bilateral fasciculations"
+    ],
+    "correct": 3,
+    "exp": "The Killer B's are bradycardia, bronchorrhea, and bronchospasm: respiratory failure from copious secretions and bronchospasm, compounded by diaphragmatic weakness, is the leading cause of death.",
+    "why": [
+     "Blistering and blindness are not features of the cholinergic toxidrome; miosis, not blindness, is the ocular finding.",
+     "Bradycardia belongs, but bruising and bacteremia are not part of this toxidrome.",
+     "Miosis is a real muscarinic sign but bradykinesia is not, and the lethal problem is secretions and bronchospasm.",
+     "",
+     "Fasciculations are nicotinic and real, but bronchiectasis and bleeding are not features of acute poisoning."
+    ]
+   },
+   {
+    "q": "Atropine is being titrated in a patient with organophosphate poisoning. What is the correct therapeutic endpoint?",
+    "ch": [
+     "Drying of pulmonary secretions with clear breath sounds and adequate oxygenation",
+     "Complete resolution of muscle fasciculations and proximal weakness",
+     "Normalization of the red-blood-cell acetylcholinesterase level",
+     "A heart rate consistently above 100 beats per minute",
+     "Dilation of the pinpoint pupils back to a normal size"
+    ],
+    "correct": 0,
+    "exp": "Atropine is titrated to drying of pulmonary secretions — clear lungs and adequate oxygenation — explicitly not to heart rate or pupil size; doubling the dose every few minutes is standard and large cumulative amounts may be required.",
+    "why": [
+     "",
+     "Fasciculations and weakness are nicotinic and do not respond to atropine — that is what pralidoxime is for.",
+     "Cholinesterase levels are confirmatory tests that treatment must not wait on, let alone be titrated to.",
+     "Heart rate is explicitly not the endpoint, and it is unreliable here because nicotinic and muscarinic effects push it in opposite directions.",
+     "Pupil size is explicitly not the endpoint; miosis may persist after the lungs are dry."
+    ]
+   },
+   {
+    "q": "Why is pralidoxime (2-PAM) added to atropine rather than giving atropine alone?",
+    "ch": [
+     "It sedates the patient and terminates cholinergic seizures more reliably",
+     "It blocks muscarinic receptors more completely than atropine and dries secretions faster",
+     "It is withheld until enzyme aging is complete and then restores the phosphorylated enzyme",
+     "It chelates the organophosphate in the bloodstream so the kidneys can clear it",
+     "It reactivates acetylcholinesterase and reverses nicotinic fasciculations and weakness that atropine cannot"
+    ],
+    "correct": 4,
+    "exp": "Pralidoxime is an oxime that reactivates acetylcholinesterase, addressing the nicotinic fasciculations and weakness atropine cannot touch; it must be given early, before the enzyme-phosphate bond ages, and always alongside atropine.",
+    "why": [
+     "Benzodiazepines, not the oxime, are first-line for organophosphate-induced seizures and agitation.",
+     "Muscarinic blockade is atropine's job; the oxime works on the enzyme itself.",
+     "This inverts the timing — once the bond ages, pralidoxime is ineffective, so it must be given early.",
+     "Pralidoxime reactivates the enzyme rather than binding and clearing the poison.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with organophosphate poisoning needs intubation for respiratory failure. Which agent should be avoided, and why?",
+    "ch": [
+     "Midazolam — benzodiazepines are contraindicated in cholinergic poisoning",
+     "Pralidoxime — the oxime must be held until the airway has been secured",
+     "Supplemental oxygen — a high inspired fraction aggravates cholinergic seizures",
+     "Succinylcholine — cholinesterase inhibition markedly prolongs its paralysis",
+     "Atropine — it worsens bronchorrhea and must be stopped before airway management"
+    ],
+    "correct": 3,
+    "exp": "Succinylcholine must never be used: its paralysis is dangerously prolonged by cholinesterase inhibition. Aggressive atropinization to reduce secretions is prioritized before intubation when feasible.",
+    "why": [
+     "Benzodiazepines are first-line for organophosphate-induced seizures and agitation.",
+     "Pralidoxime should be given early, before enzyme aging, not deferred for the airway.",
+     "Oxygen is part of treatment for hypoxia from bronchorrhea, bronchospasm, and diaphragmatic weakness.",
+     "",
+     "Atropine dries secretions and is the first-line antidote; it is escalated, not stopped, around intubation."
+    ]
+   },
+   {
+    "q": "An organophosphate-poisoned patient begins seizing. Which treatment is first-line?",
+    "ch": [
+     "Succinylcholine to abolish the motor activity while ventilating",
+     "Phenytoin, the preferred anticonvulsant for this toxidrome",
+     "Escalating atropine alone until the seizure activity stops",
+     "A rapid intravenous push of pralidoxime to reactivate the enzyme",
+     "A benzodiazepine such as diazepam, midazolam, or lorazepam"
+    ],
+    "correct": 4,
+    "exp": "Benzodiazepines — diazepam, midazolam, or lorazepam — are first-line for organophosphate-induced seizures and agitation, and are given prophylactically in severe nerve-agent exposure; monitor for respiratory depression and support the airway.",
+    "why": [
+     "Succinylcholine must be avoided entirely here, and paralysis would mask rather than treat the seizure.",
+     "Phenytoin is ineffective for organophosphate-induced seizures.",
+     "Atropine reverses muscarinic effects and is titrated to dry lungs; it is not the anticonvulsant.",
+     "A too-rapid pralidoxime push causes hypertension, tachycardia, and laryngospasm, and the oxime is not an anticonvulsant.",
+     ""
+    ]
+   },
+   {
+    "q": "A farmer treated for organophosphate poisoning improved and was weaned off atropine. On hospital day 3 he develops proximal limb weakness and a falling tidal volume. What is happening?",
+    "ch": [
+     "Organophosphate-induced delayed polyneuropathy, which appears weeks after exposure",
+     "The intermediate syndrome — proximal and respiratory muscle weakness 24-96 hours after exposure",
+     "Anticholinergic toxicity from over-atropinization, with hyperthermia and delirium",
+     "Carbamate poisoning, whose cholinesterase inhibition is reversible and transient",
+     "Laryngospasm caused by a too-rapid pralidoxime infusion"
+    ],
+    "correct": 1,
+    "exp": "New proximal and respiratory muscle weakness 24-96 hours after apparent recovery is the intermediate syndrome, a red flag demanding urgent ventilatory support — which is why monitoring continues even in the improving patient.",
+    "why": [
+     "OPIDN is the third temporal syndrome but it appears weeks later, not on day 3.",
+     "",
+     "Over-atropinization causes hyperthermia, delirium, and urinary retention rather than proximal and respiratory weakness, and the atropine had already been weaned.",
+     "Carbamate inhibition is transient and reversible; it does not produce a delayed weakness syndrome.",
+     "Infusion-related laryngospasm is immediate and upper-airway, not a day-3 proximal muscle weakness."
+    ]
+   },
+   {
+    "q": "Which laboratory test best confirms organophosphate exposure, and how should it affect management?",
+    "ch": [
+     "Arterial blood gas, which establishes the diagnosis of cholinergic crisis",
+     "The QTc interval on the ECG, which confirms cholinesterase inhibition",
+     "Red-blood-cell acetylcholinesterase, which best reflects the synaptic effect — but treatment must not wait for it",
+     "Plasma (butyryl) cholinesterase, the more specific of the two available assays",
+     "A quantitative serum organophosphate concentration drawn before atropine"
+    ],
+    "correct": 2,
+    "exp": "Red-blood-cell acetylcholinesterase is the confirmatory test that best reflects the synaptic effect, yet the diagnosis is made clinically from the toxidrome and history — empiric atropine and pralidoxime cannot wait on the result.",
+    "why": [
+     "An ABG is an adjunct that measures respiratory failure; it does not confirm the exposure.",
+     "QTc prolongation and bradyarrhythmias are monitored on the ECG but they do not confirm the diagnosis.",
+     "",
+     "Plasma cholinesterase is also sent, but the red-blood-cell enzyme better reflects the synaptic effect.",
+     "Management rests on the toxidrome and cholinesterase activity, not on a quantitative poison level."
+    ]
+   },
+   {
+    "q": "Two farm workers arrive in wet, pesticide-soaked clothing with pinpoint pupils and a garlic odor. Which action protects both the patients and the staff before hands-on care begins?",
+    "ch": [
+     "Don chemical-protective equipment, then remove and bag the clothing and irrigate the skin",
+     "Begin hands-on care at once, since dermal absorption stops once a patient is indoors",
+     "Paralyze and intubate both patients with succinylcholine before decontamination",
+     "Send red-blood-cell acetylcholinesterase and await the result before any treatment",
+     "Give activated charcoal to both patients regardless of the route of exposure"
+    ],
+    "correct": 0,
+    "exp": "Decontamination stops ongoing dermal absorption and protects staff: rescuers don chemical-protective equipment, contaminated clothing is removed and bagged, and the skin and eyes are copiously irrigated. Signs of staff or bystander contamination mean PPE and decontamination have failed.",
+    "why": [
+     "",
+     "Absorption continues from contaminated skin and clothing, and unprotected hands-on care causes secondary contamination of staff.",
+     "Succinylcholine is contraindicated because cholinesterase inhibition prolongs its paralysis, and decontamination cannot be skipped.",
+     "Treatment is empiric and must never wait on the confirmatory cholinesterase result.",
+     "Charcoal may be considered for recent large ingestions per poison-control guidance, not for a dermal exposure."
+    ]
+   }
+  ]
+ },
+ "breast-cancer": {
+  "condition": "Breast Cancer",
+  "questions": [
+   {
+    "q": "Which histologic type accounts for most breast cancers?",
+    "ch": [
+     "Invasive ductal carcinoma (no special type), roughly 70-80% of cases",
+     "Squamous cell carcinoma arising from the overlying skin of the nipple",
+     "Sarcoma arising from the fibrous stroma between the lobules",
+     "Invasive lobular carcinoma, the commonest invasive subtype by a wide margin",
+     "Lobular carcinoma in situ, a true precursor that has breached the basement membrane"
+    ],
+    "correct": 0,
+    "exp": "Invasive ductal carcinoma (IDC, no special type) arises from the terminal duct-lobular unit and accounts for roughly 70-80% of cases, making it the most common type.",
+    "why": [
+     "",
+     "Breast cancers are adenocarcinomas of glandular origin, not squamous skin cancers.",
+     "Stromal sarcomas of the breast are rare; the overwhelming majority are adenocarcinomas.",
+     "Invasive lobular carcinoma is the second most common invasive type, not the first.",
+     "LCIS is a risk marker rather than a true precursor, and in-situ disease by definition has not breached the basement membrane."
+    ]
+   },
+   {
+    "q": "How do ductal carcinoma in situ (DCIS) and lobular carcinoma in situ (LCIS) differ?",
+    "ch": [
+     "Both have breached the basement membrane and are therefore staged as invasive",
+     "DCIS is defined by HER2 amplification and LCIS by estrogen-receptor positivity",
+     "Neither lesion is visible on mammography, so both are found only at mastectomy",
+     "DCIS is a non-invasive lesion that has not breached the basement membrane, while LCIS is a risk marker rather than a true precursor",
+     "DCIS is only a risk marker, while LCIS is the true precursor of invasive cancer"
+    ],
+    "correct": 3,
+    "exp": "DCIS is the non-invasive lesion that has not breached the basement membrane; LCIS, by contrast, is regarded as a risk marker rather than a true precursor lesion.",
+    "why": [
+     "In-situ disease by definition has not breached the basement membrane.",
+     "Receptor status is tested on the tumor to guide therapy; it does not define these in-situ lesions.",
+     "In-situ lesions are frequently screen-detected, and mastectomy is not required to identify them.",
+     "",
+     "This reverses the two — LCIS is the risk marker and DCIS the non-invasive lesion."
+    ]
+   },
+   {
+    "q": "A biopsy is reported as ER-negative, PR-negative, and HER2-negative. What does that mean for treatment?",
+    "ch": [
+     "It is endocrine-responsive, so a CDK4/6 inhibitor plus endocrine therapy is standard",
+     "It is triple-negative disease, with no targeted receptor therapy and a worse prognosis",
+     "It is hormone-driven and should be treated with tamoxifen or an aromatase inhibitor",
+     "It is HER2-amplified and should receive trastuzumab with pertuzumab and chemotherapy",
+     "It cannot be treated with any systemic therapy and is managed with surgery alone"
+    ],
+    "correct": 1,
+    "exp": "ER-negative, PR-negative, HER2-negative disease is triple-negative: there is no targeted receptor to exploit and the prognosis is worse, so a cytotoxic chemotherapy backbone of an anthracycline plus a taxane carries the treatment.",
+    "why": [
+     "CDK4/6 inhibitors are added to endocrine therapy in hormone-receptor-positive disease, not in triple-negative disease.",
+     "",
+     "Endocrine therapy requires ER positivity; it has nothing to act on in an ER-negative tumor.",
+     "Anti-HER2 therapy is for HER2-positive disease; this tumor is HER2-negative.",
+     "Cytotoxic chemotherapy is very much used in triple-negative disease, and PARP inhibitors are an option in BRCA-mutated tumors."
+    ]
+   },
+   {
+    "q": "Which screening strategy does the module cite for breast cancer?",
+    "ch": [
+     "Mammography as the primary tool, with USPSTF biennial screening from ages 40 to 74",
+     "No screening until a palpable mass appears, then a diagnostic mammogram",
+     "Annual mammography starting at age 25 for all women regardless of their risk",
+     "Clinical breast examination alone until age 50, then mammography every five years",
+     "Breast MRI as the primary screening tool for women at average risk"
+    ],
+    "correct": 0,
+    "exp": "Screening mammography is the primary tool, and the USPSTF now recommends biennial screening from ages 40 to 74; high-risk women (BRCA carriers, prior chest radiation) add annual breast MRI.",
+    "why": [
+     "",
+     "Waiting for a palpable mass defeats the purpose of screening, which is to find disease before it is felt.",
+     "Average-risk screening starts around age 40, not 25, and intensity is risk-stratified.",
+     "Examination does not substitute for mammography, and a five-year interval is far too long.",
+     "MRI is added annually for high-risk women such as BRCA carriers; it is not the average-risk tool."
+    ]
+   },
+   {
+    "q": "Why is core needle biopsy, rather than fine-needle aspiration, required to diagnose breast cancer?",
+    "ch": [
+     "Because it removes the entire lesion and therefore serves as definitive treatment",
+     "Because it establishes the TNM stage without any need for further imaging",
+     "Because it is the only breast biopsy that can be performed under ultrasound guidance",
+     "Because FNA cannot reach lesions that were detected only on screening mammography",
+     "Because it preserves architecture for histologic grade and for ER, PR, and HER2 testing"
+    ],
+    "correct": 4,
+    "exp": "Definitive diagnosis requires core needle biopsy because it preserves architecture for histologic grade plus receptor testing — ER and PR by IHC, HER2 by IHC or FISH — which FNA cannot reliably provide.",
+    "why": [
+     "A core biopsy samples the lesion; surgery (lumpectomy or mastectomy) is the definitive local treatment.",
+     "Staging integrates tumor size, nodes, and metastasis and often needs imaging; biopsy alone does not supply it.",
+     "Both core biopsy and FNA can be ultrasound-guided; guidance is not what distinguishes them.",
+     "Image-guided sampling can reach non-palpable lesions; the issue is the quality of the tissue obtained.",
+     ""
+    ]
+   },
+   {
+    "q": "A premenopausal woman with ER-positive breast cancer is starting tamoxifen. Which counseling point is most important?",
+    "ch": [
+     "Monitor complete blood counts for neutropenia and obtain an ECG before each cycle",
+     "The drug is a vesicant, so the infusion site must be watched for extravasation",
+     "Report abnormal vaginal bleeding or leg swelling, given the endometrial cancer and VTE risk",
+     "Expect arthralgias and accelerated bone loss, so bone density will be monitored",
+     "Serial echocardiograms are required because the drug lowers ejection fraction"
+    ],
+    "correct": 2,
+    "exp": "Tamoxifen is a SERM that is anti-estrogenic in the breast but pro-estrogenic on the uterus, so it increases the risk of endometrial cancer and venous thromboembolism — abnormal vaginal bleeding or leg swelling must be reported.",
+    "why": [
+     "Neutropenia monitoring and ECG surveillance for QT prolongation belong to the CDK4/6 inhibitors.",
+     "Extravasation precautions apply to intravenous vesicants such as doxorubicin, not to an oral endocrine agent.",
+     "",
+     "Arthralgias and bone loss are the aromatase-inhibitor profile, and AIs are not used alone in premenopausal women.",
+     "A falling LVEF is the trastuzumab and anthracycline concern, not a tamoxifen effect."
+    ]
+   },
+   {
+    "q": "Which monitoring is required before and during trastuzumab therapy for HER2-positive breast cancer?",
+    "ch": [
+     "Serial complete blood counts, since neutropenia is the dose-limiting toxicity",
+     "Baseline and serial echocardiography or MUGA for a decline in ejection fraction",
+     "Baseline and serial bone density scans to detect accelerated bone loss",
+     "Serial endometrial biopsies because of the risk of uterine malignancy",
+     "Baseline and periodic nerve conduction studies for sensory neuropathy"
+    ],
+    "correct": 1,
+    "exp": "Trastuzumab causes cardiotoxicity with a decreased LVEF, so a baseline and serial echocardiogram or MUGA are obtained and concurrent anthracycline overlap is avoided.",
+    "why": [
+     "Neutropenia monitoring belongs to cytotoxic chemotherapy and the CDK4/6 inhibitors.",
+     "",
+     "Bone density monitoring belongs to the aromatase inhibitors, which accelerate bone loss.",
+     "Endometrial cancer risk is a tamoxifen effect; abnormal bleeding prompts evaluation.",
+     "Neuropathy is a taxane toxicity and is followed clinically, not by routine conduction studies."
+    ]
+   },
+   {
+    "q": "A woman has a rapidly enlarging, erythematous, warm, edematous breast with peau d'orange. What is the concern?",
+    "ch": [
+     "Ductal carcinoma in situ, which is confined and carries an excellent prognosis",
+     "Lymphedema of the breast following prior axillary surgery on that side",
+     "Acute mastitis, which should be treated with oral antibiotics and warm compresses",
+     "A benign fibrocystic change that fluctuates with the menstrual cycle",
+     "Inflammatory breast cancer, aggressive clinical stage III/IV disease, not an infection"
+    ],
+    "correct": 4,
+    "exp": "Rapid-onset erythema with peau d'orange indicates inflammatory breast cancer — aggressive disease that is clinical stage III/IV rather than an infection, and it must not be dismissed as mastitis.",
+    "why": [
+     "DCIS is non-invasive and does not cause an inflamed, edematous breast.",
+     "Post-surgical lymphedema follows axillary intervention and does not present as a new rapidly enlarging erythematous breast.",
+     "Treating this as an infection is the classic error; the module warns explicitly not to dismiss it as mastitis.",
+     "Fibrocystic change does not produce rapidly progressive erythema, warmth, and skin edema.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient has just undergone axillary lymph node dissection. Which nursing measure protects the affected arm?",
+    "ch": [
+     "Draw all laboratory samples from that arm in order to spare the unoperated side",
+     "Delay reporting any arm swelling until the surgical drains have been removed",
+     "Immobilize the arm in a sling and avoid all movement of it for six weeks",
+     "Use no blood pressure cuffs, venipunctures, or IVs on that side, and teach lymphedema prevention",
+     "Apply ice to the axilla continuously and restrict the patient's oral fluid intake"
+    ],
+    "correct": 3,
+    "exp": "After axillary surgery or node dissection the affected arm is protected — no blood pressure cuffs, venipunctures, or IVs on that side — and the patient is taught lymphedema prevention and early reporting of arm swelling.",
+    "why": [
+     "This is exactly backwards — venipunctures on the operated side raise the lymphedema and infection risk.",
+     "Arm swelling should be reported early, because early recognition is central to lymphedema management.",
+     "Prolonged immobilization is not the teaching; protecting the arm from cuffs and needles while restoring function is.",
+     "",
+     "Neither continuous ice nor fluid restriction is part of lymphedema prevention."
+    ]
+   },
+   {
+    "q": "A 58-year-old woman has a node-negative, ER-positive, HER2-negative early breast cancer. Which tool helps decide whether she benefits from chemotherapy?",
+    "ch": [
+     "A bone scan and PET to search for occult metastatic disease",
+     "BI-RADS scoring of the diagnostic mammogram and ultrasound",
+     "A genomic assay such as the Oncotype DX recurrence score",
+     "Sentinel lymph node biopsy performed after completion of surgery",
+     "HER2 testing by FISH, repeated on the surgical specimen"
+    ],
+    "correct": 2,
+    "exp": "Genomic assays such as the Oncotype DX recurrence score help decide chemotherapy benefit in early-stage ER-positive, HER2-negative, node-negative breast cancer.",
+    "why": [
+     "Metastatic imaging is reserved for advanced disease workup, not for an early node-negative tumor.",
+     "BI-RADS grades imaging findings to guide biopsy; it says nothing about chemotherapy benefit.",
+     "",
+     "Sentinel node biopsy evaluates the axilla at the time of surgery, and this axilla is already node-negative.",
+     "HER2 status is already known to be negative here; repeating it does not answer the chemotherapy question."
+    ]
+   }
+  ]
+ },
+ "colorectal-cancer": {
+  "condition": "Colorectal Cancer",
+  "questions": [
+   {
+    "q": "Which sequence describes how most colorectal cancers develop?",
+    "ch": [
+     "Direct spread of a gastric adenocarcinoma along the wall of the transverse colon",
+     "Chronic mucosal ischemia progressing directly to an invasive squamous carcinoma",
+     "Hyperplasia of neuroendocrine cells progressing to a carcinoid tumor of the colon",
+     "Malignant transformation of a submucosal lipoma into an invasive adenocarcinoma",
+     "Normal mucosa to adenomatous polyp to invasive cancer, driven by APC, KRAS, and TP53"
+    ],
+    "correct": 4,
+    "exp": "Over 95% of colorectal cancers are adenocarcinomas arising through the adenoma-to-carcinoma sequence — normal mucosa to adenomatous polyp to invasive cancer — as APC is lost and KRAS and TP53 mutations accumulate, which is why polypectomy is preventive.",
+    "why": [
+     "These are primary colorectal tumors arising from their own mucosa, not gastric extension.",
+     "Colorectal cancers are adenocarcinomas of glandular mucosa, and ischemia is not the driver.",
+     "Carcinoid tumors are a separate and far less common entity than adenocarcinoma.",
+     "A lipoma is benign mesenchymal tissue and is not the precursor lesion; the adenomatous polyp is.",
+     ""
+    ]
+   },
+   {
+    "q": "Which test is the gold standard for confirming colorectal cancer?",
+    "ch": [
+     "CT of the chest, abdomen, and pelvis with intravenous contrast",
+     "Colonoscopy with biopsy, which also removes synchronous polyps",
+     "Carcinoembryonic antigen (CEA) drawn at the time of presentation",
+     "Barium enema demonstrating a napkin-ring filling defect",
+     "Endorectal ultrasound of the distal rectum and perirectal tissue"
+    ],
+    "correct": 1,
+    "exp": "Colonoscopy with biopsy is the gold standard: it visualizes and biopsies the lesion and removes synchronous polyps at the same sitting.",
+    "why": [
+     "CT is for metastatic staging of the liver and lungs; it provides no tissue diagnosis.",
+     "",
+     "CEA is a baseline prognostic and surveillance marker, not a diagnostic or screening test.",
+     "Barium enema is largely historical and may suggest an apple-core lesion, but it cannot biopsy it.",
+     "Endorectal ultrasound assesses local T-stage in rectal cancer rather than establishing the diagnosis."
+    ]
+   },
+   {
+    "q": "At what age should colorectal cancer screening begin in average-risk adults, and at what colonoscopy interval?",
+    "ch": [
+     "Age 45, with colonoscopy every 10 years",
+     "Age 30, with colonoscopy every 3 years",
+     "Age 40, with colonoscopy every 5 years",
+     "Age 50, with colonoscopy every 15 years",
+     "Age 60, with a single lifetime colonoscopy"
+    ],
+    "correct": 0,
+    "exp": "Screening begins at age 45 for average-risk adults, and colonoscopy every 10 years is the gold-standard modality; polypectomy at screening interrupts the adenoma-carcinoma sequence.",
+    "why": [
+     "",
+     "Age 30 is earlier than the average-risk threshold; that intensity is reserved for hereditary syndromes.",
+     "Average-risk screening starts at 45, and the standard colonoscopy interval is 10 years.",
+     "The threshold was lowered from 50 to 45, and no guideline supports a 15-year interval.",
+     "Starting at 60 misses a decade and a half of preventable disease, and screening is repeated rather than one-time."
+    ]
+   },
+   {
+    "q": "How do right-sided and left-sided colorectal tumors typically differ in presentation?",
+    "ch": [
+     "Left-sided tumors metastasize only to bone, while right-sided tumors spare the liver",
+     "Right-sided tumors bleed occultly and cause iron-deficiency anemia; left-sided tumors constrict and obstruct",
+     "Right-sided tumors obstruct early, while left-sided tumors present with iron-deficiency anemia",
+     "Both sides present identically, with painless rectal bleeding and no anemia at all",
+     "Right-sided tumors cause pencil-thin stools, while left-sided tumors stay bulky and silent"
+    ],
+    "correct": 1,
+    "exp": "Right-sided (proximal) tumors are bulky and bleed occultly, producing iron-deficiency anemia, while left-sided (distal) tumors are annular and constricting, producing obstruction and a change in stool caliber — right bleeds, left obstructs.",
+    "why": [
+     "Liver and lung are the common metastatic sites for colorectal cancer regardless of side.",
+     "",
+     "This reverses the mnemonic: right bleeds, left obstructs.",
+     "Side-specific presentation is a reliable localization clue, and occult bleeding commonly does cause anemia.",
+     "Pencil-thin stools reflect a constricting left-sided lesion; the bulky lesions are right-sided."
+    ]
+   },
+   {
+    "q": "What is the correct use of carcinoembryonic antigen (CEA) in colorectal cancer?",
+    "ch": [
+     "It replaces surveillance colonoscopy once the primary tumor has been resected",
+     "It is the screening test of choice for average-risk adults from age 45 onward",
+     "It establishes the diagnosis whenever it is above the laboratory reference range",
+     "It is a prognostic and surveillance marker — a rising post-operative level suggests recurrence",
+     "It determines whether anti-EGFR therapy may be used in metastatic disease"
+    ],
+    "correct": 3,
+    "exp": "CEA is drawn as a baseline and trended as a prognostic and surveillance marker, because a persistently elevated or rising post-operative level suggests residual or recurrent disease.",
+    "why": [
+     "Serial CEA and surveillance colonoscopy are complementary; neither replaces the other.",
+     "CEA is explicitly not a screening test; colonoscopy is the screening modality from age 45.",
+     "Diagnosis requires colonoscopy with biopsy; an elevated marker alone proves nothing.",
+     "",
+     "RAS mutational status, not CEA, decides eligibility for cetuximab or panitumumab."
+    ]
+   },
+   {
+    "q": "A CT colonography report describes a circumferential constricting annular filling defect. What is this classically called, and what does it signify?",
+    "ch": [
+     "A right-sided bulky mass that bleeds occultly without ever obstructing",
+     "A napkin-ring stricture caused by Crohn's disease of the terminal ileum",
+     "An apple-core lesion, signalling an obstructing colorectal adenocarcinoma, typically left-sided",
+     "A lead-pipe colon produced by long-standing ulcerative colitis",
+     "A pedunculated adenomatous polyp that is still confined to the mucosa"
+    ],
+    "correct": 2,
+    "exp": "The apple-core (napkin-ring) lesion is a circumferential constricting annular filling defect that signals an obstructing colorectal adenocarcinoma, classically on the left side.",
+    "why": [
+     "Bulky occultly bleeding lesions are the right-sided pattern; this description is of a constricting tumor.",
+     "The napkin-ring name refers to this malignant annular lesion, and the description here is of a constricting colonic cancer.",
+     "",
+     "Lead-pipe colon is a diffuse featureless colon, not a focal annular constricting defect.",
+     "A polyp projects into the lumen; it does not constrict the bowel circumferentially."
+    ]
+   },
+   {
+    "q": "A patient starting FOLFOX asks what to expect. Which teaching point is specific to oxaliplatin?",
+    "ch": [
+     "Avoid cold drinks and cold exposure, which trigger a peripheral sensory neuropathy",
+     "Expect a cholinergic diarrhea within minutes of the infusion starting",
+     "Take the oral tablets twice daily and watch for hand-foot syndrome",
+     "Report an acneiform rash, which correlates with response to the drug",
+     "Expect mucositis and diarrhea, and be screened for DPD deficiency first"
+    ],
+    "correct": 0,
+    "exp": "Oxaliplatin's signature toxicity is a cold-induced peripheral sensory neuropathy, so patients are taught to avoid cold drinks and cold exposure; the neuropathy is cumulative and dose-limiting.",
+    "why": [
+     "",
+     "Early cholinergic diarrhea is an irinotecan effect, seen in FOLFIRI rather than FOLFOX.",
+     "Hand-foot syndrome with an oral 5-FU prodrug describes capecitabine; oxaliplatin is given intravenously.",
+     "The acneiform rash that correlates with response belongs to the anti-EGFR antibodies cetuximab and panitumumab.",
+     "Mucositis, diarrhea, and DPD-deficiency screening belong to 5-FU and leucovorin, the other half of FOLFOX."
+    ]
+   },
+   {
+    "q": "A 68-year-old man is found to have iron-deficiency anemia on routine labs with no overt bleeding. What is the next step?",
+    "ch": [
+     "Start oral iron replacement and recheck the hemoglobin in three months",
+     "Order a CEA level to determine whether an occult malignancy is present",
+     "Obtain a barium enema, looking for the classic apple-core filling defect",
+     "Reassure him, since iron-deficiency anemia in adult men is usually dietary",
+     "Perform colonoscopy with biopsy — this anemia is colon cancer until proven otherwise"
+    ],
+    "correct": 4,
+    "exp": "Iron-deficiency anemia in an older man or a postmenopausal woman is colon cancer until proven otherwise, because right-sided lesions bleed occultly — colonoscopy with biopsy is mandated.",
+    "why": [
+     "Replacing iron without finding the source of the blood loss delays a cancer diagnosis.",
+     "CEA is a prognostic and surveillance marker and cannot be used to rule a malignancy in or out.",
+     "Barium enema is largely historical and cannot biopsy; colonoscopy both visualizes and samples.",
+     "Iron-deficiency anemia in an older man is precisely the presentation that mandates colonoscopy.",
+     ""
+    ]
+   },
+   {
+    "q": "A resected colon cancer is node-positive (stage III) with no distant metastases. What is the standard adjuvant therapy?",
+    "ch": [
+     "Neoadjuvant chemoradiation, delivered after the resection",
+     "Surveillance CEA and colonoscopy with no chemotherapy at all",
+     "FOLFOX — 5-FU with leucovorin plus oxaliplatin",
+     "Cetuximab alone, regardless of the tumor's RAS status",
+     "Pembrolizumab alone, regardless of the tumor's MSI/MMR status"
+    ],
+    "correct": 2,
+    "exp": "Adjuvant FOLFOX — 5-FU and leucovorin plus oxaliplatin — is standard for node-positive stage III colon cancer; resection alone suffices only for earlier localized disease.",
+    "why": [
+     "Neoadjuvant chemoradiation precedes surgery and is for locally advanced rectal cancer, not resected colon cancer.",
+     "Surveillance is part of follow-up, but node-positive disease warrants adjuvant chemotherapy.",
+     "",
+     "Anti-EGFR antibodies are used in metastatic disease and only when the tumor is RAS wild-type.",
+     "Pembrolizumab is reserved for MSI-high or mismatch-repair-deficient metastatic tumors."
+    ]
+   },
+   {
+    "q": "Before starting cetuximab or panitumumab in metastatic colorectal cancer, which result must be confirmed?",
+    "ch": [
+     "A UGT1A1 polymorphism placing the patient at low risk",
+     "MSI-high or mismatch-repair-deficient tumor status",
+     "A BRAF V600E mutation in the primary tumor",
+     "RAS wild-type status — KRAS and NRAS not mutated",
+     "A normal serum magnesium at the time of the first dose"
+    ],
+    "correct": 3,
+    "exp": "Anti-EGFR antibodies are used in metastatic disease only if the tumor is RAS wild-type, meaning KRAS and NRAS are not mutated; they are ineffective and potentially harmful in RAS-mutant tumors.",
+    "why": [
+     "UGT1A1 polymorphisms modify irinotecan toxicity risk, not anti-EGFR eligibility.",
+     "MSI-high/dMMR status selects patients for pembrolizumab immunotherapy and triggers a Lynch syndrome evaluation, not anti-EGFR therapy.",
+     "BRAF is checked alongside RAS, but a BRAF mutation is not the prerequisite for anti-EGFR use.",
+     "",
+     "Hypomagnesemia is monitored during anti-EGFR therapy but it is not the selection criterion."
+    ]
+   }
+  ]
+ },
+ "prostate-cancer": {
+  "condition": "Prostate Cancer",
+  "questions": [
+   {
+    "q": "Where does prostate adenocarcinoma most often arise, and how does that differ from benign prostatic hyperplasia?",
+    "ch": [
+     "Both arise in the central zone, which is why the two cannot be distinguished on examination",
+     "Cancer arises in the anterior fibromuscular stroma and is therefore never palpable at all",
+     "Cancer arises in the seminal vesicles and only secondarily invades the prostate gland",
+     "Cancer arises in the peripheral zone and is palpable on DRE; BPH arises in the transition zone and obstructs",
+     "Cancer arises in the transition zone and obstructs; BPH arises in the peripheral zone and is palpable"
+    ],
+    "correct": 3,
+    "exp": "Prostate cancer favors the peripheral zone, which is why it is palpable as a firm, hard, or nodular area on digital rectal exam, whereas BPH arises in the transition zone and produces obstructive urinary symptoms.",
+    "why": [
+     "The zonal difference is exactly what makes cancer palpable posteriorly and BPH obstructive.",
+     "Peripheral-zone tumors are classically palpable on digital rectal exam.",
+     "The tumor arises from prostatic glandular epithelium; seminal vesicle involvement is a feature of spread.",
+     "",
+     "This reverses the two zones and therefore the clinical consequences."
+    ]
+   },
+   {
+    "q": "How is the Gleason score derived and reported?",
+    "ch": [
+     "It is the percentage of biopsy cores involved, reported as Grade Groups 1 to 5",
+     "It is the sum of the two most common histologic patterns, 6-10, reported as Grade Groups 1-5",
+     "It is the PSA level multiplied by the clinical T-stage, reported as a risk category",
+     "It is the number of positive nodes added to the tumor diameter in centimeters",
+     "It is the single highest histologic pattern seen, reported on a scale of 1 to 5"
+    ],
+    "correct": 1,
+    "exp": "The Gleason score is the sum of the two most common histologic patterns and runs from 6 to 10, reported as Grade Groups 1 to 5; Gleason 6 is the lowest reported score and equals Grade Group 1, and higher scores indicate more aggressive disease.",
+    "why": [
+     "Core involvement informs risk, but the score itself is a sum of histologic patterns.",
+     "",
+     "PSA and clinical stage are separate axes of risk stratification, not components of the score.",
+     "Nodes and tumor size belong to TNM staging, not to histologic grading.",
+     "It is a sum of two patterns rather than one, which is why the lowest reported score is 6."
+    ]
+   },
+   {
+    "q": "What is the characteristic radiographic appearance of prostate cancer bone metastases?",
+    "ch": [
+     "Periosteal reaction with a sunburst pattern in the distal femur",
+     "Diffuse osteopenia throughout the skeleton without focal lesions",
+     "Expansile lucent lesions confined to the appendicular skeleton",
+     "Osteoblastic (sclerotic) lesions of the axial skeleton — spine, pelvis, and ribs",
+     "Punched-out lytic lesions of the skull and the long bones"
+    ],
+    "correct": 3,
+    "exp": "Metastatic prostate cancer is the classic cause of osteoblastic (sclerotic) bone lesions in the axial skeleton — spine, pelvis, and ribs — whereas most solid tumors go osteolytic; these lesions correlate with an elevated alkaline phosphatase and a positive bone scan.",
+    "why": [
+     "A sunburst periosteal reaction suggests a primary bone tumor rather than prostate metastasis.",
+     "Diffuse bone loss is what androgen-deprivation therapy causes; metastases are focal and sclerotic.",
+     "Prostate metastases favor the axial skeleton and are sclerotic rather than lucent.",
+     "",
+     "Lytic destruction is the pattern of most other solid tumors, not of prostate cancer."
+    ]
+   },
+   {
+    "q": "Which statement about PSA is correct?",
+    "ch": [
+     "It is used to assign the Gleason Grade Group without performing a biopsy",
+     "It is cancer-specific, so any elevation above the reference range confirms malignancy",
+     "It is not cancer-specific — BPH, prostatitis, DRE, and ejaculation raise it, so trends matter more than a single value",
+     "It should be drawn after the digital rectal exam so that the gland is fully expressed",
+     "A normal PSA excludes the need for any further evaluation, imaging, or biopsy"
+    ],
+    "correct": 2,
+    "exp": "PSA is the key serum marker for screening and monitoring, but it is not cancer-specific: BPH, prostatitis, a digital rectal exam, and ejaculation all raise it, so trends and PSA velocity matter more than one number.",
+    "why": [
+     "Grade Group comes from histology on a biopsy specimen; PSA cannot supply it.",
+     "Many benign conditions raise PSA, so an elevation does not confirm cancer.",
+     "",
+     "The sample is drawn before the DRE, because the examination itself can transiently raise the value.",
+     "An abnormal DRE or a rising trend still warrants MRI and biopsy despite a value in range."
+    ]
+   },
+   {
+    "q": "Why is a GnRH agonist such as leuprolide paired with an antiandrogen when androgen-deprivation therapy is started?",
+    "ch": [
+     "To prevent the initial testosterone flare, which can worsen tumor flare and cord compression",
+     "To protect bone density and prevent osteonecrosis of the jaw during therapy",
+     "To speed the fall in testosterone so that castrate levels are reached within hours",
+     "To prevent the hypokalemia and hypertension caused by mineralocorticoid excess",
+     "To reduce the seizures and falls seen with androgen-receptor pathway inhibitors"
+    ],
+    "correct": 0,
+    "exp": "GnRH agonists cause an initial testosterone flare, so they are covered with an antiandrogen such as bicalutamide to prevent tumor flare and worsening spinal cord compression; a GnRH antagonist such as degarelix or relugolix suppresses immediately without a flare when rapid control is needed.",
+    "why": [
+     "",
+     "Bone protection comes from denosumab or zoledronic acid with calcium and vitamin D, and osteonecrosis of the jaw is a risk of those agents.",
+     "Immediate suppression comes from switching to an antagonist, not from adding an antiandrogen to an agonist.",
+     "Mineralocorticoid excess is the abiraterone problem, managed with concurrent prednisone.",
+     "Seizures and falls are enzalutamide effects; darolutamide has fewer CNS effects."
+    ]
+   },
+   {
+    "q": "A man is started on abiraterone with prednisone. Which set of adverse effects should be monitored?",
+    "ch": [
+     "Gynecomastia and hot flashes as the principal expected toxicities",
+     "Neutropenia requiring a complete blood count before every cycle",
+     "Seizures, falls, and fatigue from central nervous system effects",
+     "Osteonecrosis of the jaw and hypocalcemia after the first dose",
+     "Hypokalemia, hypertension, fluid retention, and liver enzyme elevation"
+    ],
+    "correct": 4,
+    "exp": "Abiraterone is a CYP17 inhibitor given with prednisone; the mineralocorticoid excess it produces causes hypokalemia, hypertension, and fluid retention, and liver enzymes must be followed.",
+    "why": [
+     "Gynecomastia and hot flashes are the bicalutamide profile.",
+     "Neutropenia monitoring belongs to docetaxel chemotherapy.",
+     "Those are enzalutamide effects among the androgen-receptor pathway inhibitors.",
+     "Those belong to the bone-targeted agents denosumab and zoledronic acid.",
+     ""
+    ]
+   },
+   {
+    "q": "What must be done before starting denosumab or zoledronic acid in metastatic prostate cancer?",
+    "ch": [
+     "Document a castrate testosterone level and a rising PSA on two occasions",
+     "Correct hypocalcemia, give calcium and vitamin D, and obtain dental clearance",
+     "Obtain a baseline echocardiogram and then repeat it every three months",
+     "Confirm RAS wild-type status in the tumor before giving the first dose",
+     "Withhold all androgen-deprivation therapy for the duration of treatment"
+    ],
+    "correct": 1,
+    "exp": "Before a bone-targeted agent, hypocalcemia is corrected and calcium and vitamin D are given, and a dental evaluation is obtained because osteonecrosis of the jaw is the feared complication.",
+    "why": [
+     "That describes the definition of castration resistance, not the safety checklist for these drugs.",
+     "",
+     "Serial cardiac imaging is not the prerequisite for starting a bone-targeted agent.",
+     "RAS testing belongs to anti-EGFR therapy in colorectal cancer, not to bone protection here.",
+     "Bone agents are given alongside ADT, partly to treat the bone loss that ADT causes."
+    ]
+   },
+   {
+    "q": "A man with metastatic prostate cancer reports new back pain with leg weakness and urinary retention. What is the priority?",
+    "ch": [
+     "Schedule an outpatient bone scan within the next two weeks",
+     "Start an oral opioid and reassess the pain at the next clinic visit",
+     "Begin a GnRH agonist alone to shrink the metastatic deposits",
+     "Order a PSA and alkaline phosphatase and await the results",
+     "Emergent MRI with corticosteroids, then radiation or surgery for cord compression"
+    ],
+    "correct": 4,
+    "exp": "New back pain with leg weakness, saddle anesthesia, or bladder and bowel dysfunction signals malignant spinal cord compression — a neuro-oncologic emergency requiring urgent MRI, steroids, and radiation or surgery.",
+    "why": [
+     "A delayed outpatient scan misses the window in which neurologic function can be salvaged.",
+     "Analgesia alone ignores the neurologic deficit that defines this emergency.",
+     "An agonist alone risks a testosterone flare that would worsen the cord compression.",
+     "Laboratory trends cannot exclude cord compression, and waiting for them delays imaging.",
+     ""
+    ]
+   },
+   {
+    "q": "A 70-year-old man has Grade Group 1 (Gleason 6) cancer in two cores with a low PSA. Which management does the module support?",
+    "ch": [
+     "Active surveillance, since many men die with prostate cancer rather than of it",
+     "Androgen-deprivation therapy plus an androgen-receptor pathway inhibitor",
+     "Docetaxel chemotherapy followed by radium-223 directed at the bone",
+     "Bilateral orchiectomy with denosumab added for bone protection",
+     "Immediate radical prostatectomy to remove all of the disease"
+    ],
+    "correct": 0,
+    "exp": "Active surveillance is the recommended approach for low-risk Grade Group 1 disease, because many men die with prostate cancer rather than of it; definitive local therapy is reserved for intermediate- and high-risk disease.",
+    "why": [
+     "",
+     "ADT-based systemic therapy is for advanced or metastatic disease.",
+     "Docetaxel and radium-223 are used in high-volume metastatic and castration-resistant disease.",
+     "Castration plus bone-protective therapy is far beyond what low-risk localized disease requires.",
+     "Definitive local therapy is matched to intermediate- and high-risk disease, not to Grade Group 1."
+    ]
+   },
+   {
+    "q": "A man with metastatic prostate cancer is found to carry a germline BRCA2 mutation. What are the implications?",
+    "ch": [
+     "Anti-HER2 therapy with trastuzumab becomes the treatment of choice for him",
+     "His bone metastases will now be osteolytic rather than osteoblastic in pattern",
+     "The cancer tends to be more aggressive and may respond to a PARP inhibitor such as olaparib",
+     "PSA can no longer be used to monitor his response to systemic therapy",
+     "The disease is typically indolent and is best managed by surveillance alone"
+    ],
+    "correct": 2,
+    "exp": "BRCA2 carriers develop more aggressive prostate cancer and may respond to PARP inhibitors such as olaparib, which is why germline testing is recommended in high-risk or metastatic disease.",
+    "why": [
+     "Trastuzumab targets HER2-amplified breast cancer and has no role here.",
+     "Prostate cancer metastases remain characteristically osteoblastic regardless of germline status.",
+     "",
+     "PSA remains the marker tracked during systemic therapy.",
+     "BRCA2-associated disease is more aggressive, the opposite of an indolent surveillance candidate."
+    ]
+   }
+  ]
+ },
+ "pancreatic-cancer": {
+  "condition": "Pancreatic Cancer",
+  "questions": [
+   {
+    "q": "Which description fits the majority of pancreatic cancers?",
+    "ch": [
+     "Lymphoma arising in peripancreatic nodes and invading the gland secondarily",
+     "Acinar cell carcinoma of the tail, presenting with early painless jaundice",
+     "Ductal adenocarcinoma of exocrine duct epithelium, 60-70% in the head of the pancreas",
+     "Neuroendocrine tumors of the islet cells, which carry a far better prognosis",
+     "Squamous cell carcinoma arising from the main pancreatic duct epithelium"
+    ],
+    "correct": 2,
+    "exp": "Most cases are pancreatic ductal adenocarcinoma (PDAC) arising from exocrine duct epithelium, and roughly 60-70% occur in the head of the pancreas, where they obstruct the common bile duct.",
+    "why": [
+     "Pancreatic cancer is a primary epithelial malignancy of the gland itself.",
+     "Tail tumors present late with vague back pain and weight loss; painless jaundice is the head-tumor presentation.",
+     "",
+     "PNETs behave very differently and carry a far better prognosis, but they are only a minority of pancreatic cancers.",
+     "The duct epithelium gives rise to adenocarcinoma, not squamous carcinoma."
+    ]
+   },
+   {
+    "q": "An older adult has painless jaundice, dark urine, pale stools, and a palpable non-tender gallbladder. What does this combination indicate?",
+    "ch": [
+     "Courvoisier sign — malignant distal biliary obstruction, typically a pancreatic head cancer",
+     "A pancreatic neuroendocrine tumor of the tail producing hormonal symptoms",
+     "Acute cholecystitis caused by a stone impacted in the gallbladder neck",
+     "Choledocholithiasis, in which the gallbladder is scarred and non-distensible",
+     "Viral hepatitis producing a hepatocellular pattern of hyperbilirubinemia"
+    ],
+    "correct": 0,
+    "exp": "A palpable, non-tender gallbladder with jaundice is the Courvoisier sign, which points to malignant distal biliary obstruction — a pancreatic head cancer until proven otherwise.",
+    "why": [
+     "",
+     "A tail lesion does not obstruct the bile duct, and PNETs present with hormonal syndromes instead.",
+     "Cholecystitis produces a tender gallbladder with pain and fever, not painless jaundice.",
+     "Courvoisier's law is exactly the point: gallstone disease leaves a scarred, non-distensible gallbladder, so a distended one argues against stones.",
+     "Hepatitis gives a hepatocellular pattern without pale stools or a distended gallbladder from duct obstruction."
+    ]
+   },
+   {
+    "q": "Which mutation is the near-universal driver in pancreatic ductal adenocarcinoma?",
+    "ch": [
+     "Mismatch-repair gene loss, producing microsatellite instability in most tumors",
+     "APC, lost as the first hit in the adenoma-carcinoma sequence",
+     "KRAS, activated in more than 90% of cases",
+     "BRCA2, present in the majority of sporadic tumors",
+     "HER2/ERBB2 amplification, driving growth-factor signaling"
+    ],
+    "correct": 2,
+    "exp": "Activating KRAS mutations are present in more than 90% of pancreatic ductal adenocarcinoma — the near-universal driver — with loss of CDKN2A, TP53, and SMAD4 completing the stepwise progression from PanIN precursor lesions.",
+    "why": [
+     "Mismatch-repair deficiency defines the MSI pathway of Lynch syndrome tumors, not most PDAC.",
+     "APC loss initiates the colorectal adenoma-carcinoma sequence, not pancreatic ductal adenocarcinoma.",
+     "",
+     "BRCA2 is a hereditary risk factor in a minority of patients, not the near-universal driver.",
+     "HER2 amplification is a breast cancer driver and a therapeutic target there."
+    ]
+   },
+   {
+    "q": "How should CA 19-9 be used in pancreatic cancer?",
+    "ch": [
+     "As a reliable value in every patient, since cholestasis does not affect it",
+     "For baseline prognosis and for monitoring response or recurrence — never for screening",
+     "As a screening test in anyone with new-onset diabetes after the age of 50",
+     "As the definitive diagnostic test, replacing tissue confirmation by EUS-FNA",
+     "As the marker that determines resectability and the choice of operation"
+    ],
+    "correct": 1,
+    "exp": "CA 19-9 is used for prognosis and to monitor treatment response and recurrence, never for screening; it is falsely low in Lewis-antigen-negative patients and falsely elevated by cholestasis.",
+    "why": [
+     "Cholestasis falsely elevates it, and Lewis-antigen-negative patients do not express it at all.",
+     "",
+     "New-onset diabetes after age 50 with weight loss is a clinical clue that prompts imaging, but the marker is still not a screening test.",
+     "Tissue diagnosis comes from EUS with fine-needle aspiration; a tumor marker cannot replace it.",
+     "Resectability is determined by vascular involvement on pancreatic-protocol CT."
+    ]
+   },
+   {
+    "q": "A patient with pancreatic cancer has steatorrhea, malabsorption, and continuing weight loss. What is the appropriate treatment, and how is it taken?",
+    "ch": [
+     "Celiac plexus neurolysis performed for opioid-refractory visceral pain",
+     "A scheduled high-dose opioid, with a bowel regimen to pre-empt constipation",
+     "Low-molecular-weight heparin injected daily to reduce the thrombotic risk",
+     "Pancreatic enzyme replacement (pancrelipase) with every meal and snack, beads not crushed",
+     "An endoscopic biliary stent placed at ERCP to relieve the obstruction"
+    ],
+    "correct": 3,
+    "exp": "Exocrine insufficiency causing steatorrhea, malabsorption, and weight loss is treated with pancreatic enzyme replacement (pancrelipase) taken with every meal and snack; the enteric-coated beads must not be crushed.",
+    "why": [
+     "A neurolytic block is a pain intervention and does nothing for steatorrhea.",
+     "Opioids treat severe visceral cancer pain and would worsen, not correct, malabsorption.",
+     "LMWH addresses this cancer's high thrombogenicity, not exocrine insufficiency.",
+     "",
+     "A stent relieves obstructive jaundice and pruritus; it does not replace pancreatic enzymes."
+    ]
+   },
+   {
+    "q": "A pancreatic head mass is suspected. What is the correct order of the workup?",
+    "ch": [
+     "CA 19-9 first, proceeding to surgery only if the level is elevated",
+     "Pancreatic-protocol contrast CT first for detection and staging, then EUS-FNA for tissue",
+     "PET scan first, followed by percutaneous biopsy of the largest lesion",
+     "EUS-FNA first, with imaging only if the biopsy is non-diagnostic",
+     "ERCP with brushings first, and CT only if the brushings are negative"
+    ],
+    "correct": 1,
+    "exp": "Pancreatic-protocol contrast CT is first-line for detection and staging, and EUS with fine-needle aspiration then supplies the tissue diagnosis; biopsy of a clearly resectable mass is avoided when it would delay surgery.",
+    "why": [
+     "The marker is for prognosis and monitoring and cannot select patients for an operation.",
+     "",
+     "Pancreatic-protocol CT, not PET, is the first-line study for detection and staging.",
+     "Staging imaging comes first, because it defines resectability and may make biopsy unnecessary before surgery.",
+     "ERCP assesses and decompresses the biliary tree and carries a pancreatitis risk; it is not the first staging step."
+    ]
+   },
+   {
+    "q": "Which structures does a Whipple procedure (pancreaticoduodenectomy) remove?",
+    "ch": [
+     "The pancreatic head alone, leaving the duodenum and bile duct intact",
+     "The duodenum and gallbladder only, sparing all pancreatic tissue",
+     "The entire pancreas together with the spleen and the distal stomach",
+     "The pancreatic head, duodenum, distal bile duct, gallbladder, and part of the stomach",
+     "The pancreatic body and tail together with the spleen"
+    ],
+    "correct": 3,
+    "exp": "A Whipple (pancreaticoduodenectomy) removes the pancreatic head, the duodenum, the distal bile duct, the gallbladder, and part of the stomach; distal tumors instead undergo distal pancreatectomy with splenectomy.",
+    "why": [
+     "The duodenum and distal bile duct are resected along with the head.",
+     "The operation exists precisely to remove the pancreatic head tumor.",
+     "The Whipple is a head resection, not a total pancreatectomy with splenectomy.",
+     "",
+     "That describes distal pancreatectomy with splenectomy, the operation for body and tail tumors."
+    ]
+   },
+   {
+    "q": "A man with pancreatic adenocarcinoma develops migratory superficial thrombophlebitis. What does this represent, and how is cancer-associated VTE treated?",
+    "ch": [
+     "A local infection of the vein, treated with antibiotics and warm compresses",
+     "A drug reaction to gemcitabine, managed by holding the next infusion",
+     "An expected consequence of biliary stenting that needs no specific therapy",
+     "Exocrine insufficiency, treated by increasing the enzyme replacement dose",
+     "Trousseau syndrome, a paraneoplastic clue; LMWH is preferred over warfarin"
+    ],
+    "correct": 4,
+    "exp": "Migratory superficial thrombophlebitis is the Trousseau sign of malignancy, a classic paraneoplastic association with pancreatic adenocarcinoma and a marker of its strong hypercoagulability; low-molecular-weight heparin is preferred over warfarin for active-cancer VTE.",
+    "why": [
+     "The migratory pattern marks a paraneoplastic thrombotic process, not an infection.",
+     "Gemcitabine toxicity is myelosuppression and neuropathy, not migratory thrombophlebitis.",
+     "Stent complications are pancreatitis, cholangitis, and occlusion, and this finding does need anticoagulation.",
+     "Exocrine insufficiency causes steatorrhea and weight loss, not thrombophlebitis.",
+     ""
+    ]
+   },
+   {
+    "q": "What determines whether a pancreatic adenocarcinoma is resectable, borderline resectable, locally advanced, or metastatic?",
+    "ch": [
+     "The presence of painless jaundice with a palpable non-tender gallbladder",
+     "Whether the tumor arises in the head rather than in the body or the tail",
+     "The CA 19-9 level at diagnosis and its rate of change over time",
+     "The histologic grade reported on the EUS-FNA specimen",
+     "Involvement of the SMA, celiac axis, and SMV-portal confluence, plus distant spread"
+    ],
+    "correct": 4,
+    "exp": "Resectability is classified surgically by vascular involvement — the superior mesenteric artery, the celiac axis, and the SMV-portal confluence — together with distant metastasis, and that classification dictates upfront surgery versus neoadjuvant therapy.",
+    "why": [
+     "Courvoisier sign points to the diagnosis and its location, not to resectability.",
+     "Location determines which operation is performed, not whether resection is possible.",
+     "CA 19-9 is prognostic and used for monitoring; it does not define the resectability category.",
+     "Grade informs prognosis, but the surgical categories are anatomic and vascular.",
+     ""
+    ]
+   },
+   {
+    "q": "Three days after a biliary stent was placed at ERCP, a patient develops fever, worsening jaundice, and right-upper-quadrant pain. What is this?",
+    "ch": [
+     "Ascending cholangitis (Charcot triad) — an emergency needing decompression and antibiotics",
+     "Post-ERCP pancreatitis, which resolves with observation and early oral intake",
+     "Expected pruritus from cholestasis, treated with cool compresses and skin care",
+     "Delayed gastric emptying, a recognized complication after a Whipple procedure",
+     "A pancreatic fistula from the anastomosis, managed with enzyme replacement"
+    ],
+    "correct": 0,
+    "exp": "Fever, jaundice, and right-upper-quadrant pain make up the Charcot triad of ascending cholangitis after biliary obstruction or ERCP — a medical emergency requiring urgent decompression and antibiotics.",
+    "why": [
+     "",
+     "Post-ERCP pancreatitis is a real risk, but fever with rising bilirubin and RUQ pain points to biliary infection.",
+     "Pruritus is a symptom of cholestasis and does not explain fever and pain.",
+     "Delayed gastric emptying follows a Whipple resection, and this patient had a stent placed.",
+     "A fistula is a post-operative complication of resection, and enzyme replacement is not its treatment."
+    ]
+   }
+  ]
+ }
+}

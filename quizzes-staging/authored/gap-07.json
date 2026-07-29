@@ -1,0 +1,977 @@
+{
+ "brain-tumor": {
+  "condition": "Brain Tumors",
+  "questions": [
+   {
+    "q": "Which type of intracranial tumor is the most common in adults?",
+    "ch": [
+     "Medulloblastoma of the posterior fossa, which is the usual adult infratentorial tumor",
+     "Oligodendroglioma defined by 1p/19q codeletion, the leading adult intracranial mass",
+     "Meningioma arising from the dura and behaving as a WHO grade 4 malignancy",
+     "Metastatic tumors spread from a primary such as lung, breast, melanoma, renal, or colon cancer",
+     "Glioblastoma, which accounts for the majority of all intracranial masses in adults"
+    ],
+    "correct": 3,
+    "exp": "Metastases outnumber primary tumors, so a new brain lesion in an adult is metastatic until proven otherwise — lung is the number one primary, followed by breast, melanoma, renal, and colon.",
+    "why": [
+     "Medulloblastoma is a childhood infratentorial tumor; in children most brain tumors are infratentorial, the opposite of adults.",
+     "1p/19q codeletion does define oligodendroglioma, but it is an uncommon glioma and nowhere near the leading adult intracranial mass.",
+     "Meningioma is the most common PRIMARY tumor overall, but it is usually a benign WHO grade 1 extra-axial lesion, not grade 4.",
+     "",
+     "Glioblastoma is only the most common malignant PRIMARY brain tumor in adults; metastases are far more common overall."
+    ]
+   },
+   {
+    "q": "Which description best characterizes a meningioma?",
+    "ch": [
+     "An infiltrative astrocytoma with necrosis and microvascular proliferation crossing the corpus callosum",
+     "A usually benign WHO grade 1 extra-axial tumor showing a dural tail and homogeneous enhancement",
+     "Multiple small enhancing lesions clustered at the gray-white junction of both hemispheres",
+     "A posterior fossa mass of childhood that typically causes obstructive hydrocephalus",
+     "A glioma defined by IDH mutation and 1p/19q codeletion arising within the white matter"
+    ],
+    "correct": 1,
+    "exp": "Meningioma is the most common primary brain tumor overall, is usually benign (WHO grade 1) and extra-axial, and on MRI shows a dural tail with homogeneous enhancement; it is more common in women and may express progesterone receptors.",
+    "why": [
+     "That describes glioblastoma (WHO grade 4), the most common malignant primary brain tumor in adults.",
+     "",
+     "Multiple ring-enhancing lesions at the gray-white junction favor metastases, with abscess and toxoplasmosis on the differential.",
+     "Posterior fossa masses of childhood such as medulloblastoma and pilocytic astrocytoma are a different entity from meningioma.",
+     "1p/19q codeletion defines oligodendroglioma; meningioma is extra-axial and is not graded by those molecular markers."
+    ]
+   },
+   {
+    "q": "Which imaging study is the test of choice for characterizing a suspected brain tumor?",
+    "ch": [
+     "MRI of the brain with and without gadolinium contrast",
+     "Skull radiographs to look for bony erosion from the underlying mass",
+     "Whole-body PET as the initial study to characterize the intracranial lesion itself",
+     "Non-contrast head CT alone, which reliably grades the tumor and excludes edema",
+     "Lumbar puncture with CSF cytology performed before any imaging is obtained"
+    ],
+    "correct": 0,
+    "exp": "MRI brain with and without gadolinium is the imaging test of choice; it shows the ring enhancement and central necrosis of glioblastoma and the dural tail of meningioma.",
+    "why": [
+     "",
+     "Plain skull films cannot characterize an intracranial mass, its enhancement pattern, or the surrounding vasogenic edema.",
+     "PET is considered when hunting for an unknown primary in suspected metastasis, not as the initial test to characterize the brain lesion.",
+     "CT may show a mass, but grading requires histology plus molecular markers, and CT does not characterize the lesion the way gadolinium MRI does.",
+     "Lumbar puncture is often contraindicated when a mass with raised intracranial pressure is present because of herniation risk — image first."
+    ]
+   },
+   {
+    "q": "An adult has a solitary ring-enhancing lesion with central necrosis that crosses the corpus callosum. Which tumor does this appearance describe?",
+    "ch": [
+     "Oligodendroglioma with 1p/19q codeletion",
+     "Glioblastoma (WHO grade 4 astrocytoma)",
+     "Meningioma with a dural tail",
+     "Pilocytic astrocytoma of the cerebellum",
+     "Multiple metastases at the gray-white junction"
+    ],
+    "correct": 1,
+    "exp": "A solitary butterfly lesion that ring-enhances, is centrally necrotic, and crosses the corpus callosum is glioblastoma — a highly infiltrative astrocytoma with necrosis and microvascular proliferation and the worst prognosis of the gliomas.",
+    "why": [
+     "Oligodendroglioma is a lower-grade glioma defined by 1p/19q codeletion and does not classically produce a necrotic butterfly lesion.",
+     "",
+     "Meningioma is extra-axial with a dural tail and homogeneous enhancement; it does not show central necrosis or cross the corpus callosum.",
+     "Pilocytic astrocytoma is an infratentorial tumor of childhood, not a necrotic midline-crossing adult hemispheric mass.",
+     "Metastases are typically MULTIPLE ring-enhancing lesions at the gray-white junction, whereas this is a solitary lesion crossing the midline."
+    ]
+   },
+   {
+    "q": "What is the purpose of giving dexamethasone to a patient with a brain tumor?",
+    "ch": [
+     "It provides definitive antitumor therapy and replaces the need for resection or radiation",
+     "It prevents seizures and is therefore given instead of an antiseizure medication",
+     "It lowers serum glucose, which limits tumor growth within the cranial vault",
+     "It reduces peritumoral vasogenic edema and rapidly improves symptoms of raised intracranial pressure",
+     "It reverses the Monro-Kellie doctrine by expanding the volume of the cranial vault itself"
+    ],
+    "correct": 3,
+    "exp": "Dexamethasone reduces peritumoral vasogenic edema and rapidly improves symptoms of raised intracranial pressure; monitor hyperglycemia, add GI/PJP prophylaxis on prolonged courses, and never stop it abruptly.",
+    "why": [
+     "Steroids buy time but the definitive treatment is maximal safe resection followed by radiation and chemotherapy, or neurosurgical decompression for herniation.",
+     "Seizure control or prophylaxis is the role of levetiracetam, not dexamethasone.",
+     "Dexamethasone RAISES glucose — hyperglycemia is a monitored side effect, and fingerstick glucose is checked on steroids.",
+     "",
+     "The skull is fixed; the Monro-Kellie doctrine cannot be reversed, and steroids act on edema rather than on vault volume."
+    ]
+   },
+   {
+    "q": "Why is levetiracetam preferred over phenytoin for seizure control in a patient receiving chemotherapy for a brain tumor?",
+    "ch": [
+     "Levetiracetam lowers intracranial pressure directly and prevents herniation",
+     "Phenytoin causes irritability and mood changes, a side effect levetiracetam never has",
+     "Levetiracetam also reduces vasogenic edema, making dexamethasone unnecessary",
+     "Phenytoin cannot be given to any patient who has had a seizure from a brain tumor",
+     "Levetiracetam has few drug interactions with chemotherapy, whereas phenytoin is an enzyme inducer"
+    ],
+    "correct": 4,
+    "exp": "Levetiracetam is preferred because it has few drug interactions with chemotherapy, unlike enzyme-inducing agents such as phenytoin; watch levetiracetam for irritability and mood changes.",
+    "why": [
+     "Acutely raised intracranial pressure is treated with osmotic therapy, head-of-bed elevation, steroids, and neurosurgery — not with an antiseizure drug.",
+     "Irritability and mood changes are in fact the side effect to watch for with levetiracetam itself.",
+     "Reducing peritumoral vasogenic edema is the role of dexamethasone; levetiracetam does not replace it.",
+     "The issue is interaction with chemotherapy through enzyme induction, not an absolute prohibition on phenytoin.",
+     ""
+    ]
+   },
+   {
+    "q": "Which molecular finding predicts a better response to temozolomide in glioblastoma?",
+    "ch": [
+     "MGMT promoter methylation",
+     "Microvascular proliferation on histology",
+     "1p/19q codeletion",
+     "IDH-wildtype status",
+     "Progesterone receptor expression"
+    ],
+    "correct": 0,
+    "exp": "MGMT promoter methylation predicts temozolomide response — benefit from the alkylating chemotherapy is greatest in methylated tumors.",
+    "why": [
+     "",
+     "Microvascular proliferation and necrosis are histologic hallmarks of glioblastoma, not predictors of chemotherapy response.",
+     "1p/19q codeletion defines oligodendroglioma; it is a diagnostic marker rather than the predictor of temozolomide response.",
+     "IDH-wildtype status defines classic glioblastoma but is not what predicts benefit from temozolomide.",
+     "Progesterone receptors may be expressed by meningiomas, which are not treated with the temozolomide protocol."
+    ]
+   },
+   {
+    "q": "Which nursing measure most directly helps lower intracranial pressure in a patient with a brain tumor?",
+    "ch": [
+     "Cluster all care activities together to give the patient long uninterrupted rest periods",
+     "Encourage vigorous Valsalva maneuvers several times each hour to promote venous return",
+     "Keep the head of the bed at 30 degrees with the head and neck midline and neutral",
+     "Withhold pain medication so that the neurologic examination is never obscured",
+     "Place a padded tongue blade in the mouth at the onset of any seizure activity"
+    ],
+    "correct": 2,
+    "exp": "Nursing measures that reduce intracranial pressure include head of bed at 30 degrees, head and neck midline and neutral, avoiding clustered care, and minimizing Valsalva by managing constipation and pain.",
+    "why": [
+     "Clustering care is specifically to be AVOIDED because the stacked stimulation raises intracranial pressure.",
+     "Valsalva should be MINIMIZED — constipation and pain are managed precisely to avoid it, since it worsens a headache from raised pressure.",
+     "",
+     "Pain must be assessed and managed; uncontrolled pain promotes Valsalva and raises intracranial pressure.",
+     "Seizure precautions include padded rails plus suction and oxygen at the bedside, and nothing is ever placed in the mouth during a seizure."
+    ]
+   },
+   {
+    "q": "A 58-year-old presents with a morning headache worsened by Valsalva, vomiting, and papilledema. A trainee suggests an immediate lumbar puncture. What is the correct next step?",
+    "ch": [
+     "Perform the lumbar puncture only after the Cushing triad has appeared",
+     "Perform the lumbar puncture after giving ondansetron to control the vomiting",
+     "Skip imaging and go straight to stereotactic biopsy for histology and molecular markers",
+     "Proceed with the lumbar puncture, since CSF cytology grades the tumor definitively",
+     "Obtain imaging first, because lumbar puncture risks herniation when a mass with raised intracranial pressure is present"
+    ],
+    "correct": 4,
+    "exp": "A morning headache with vomiting and papilledema is the classic raised-intracranial-pressure triad — image before any lumbar puncture, because LP is often contraindicated with a mass and raised pressure due to herniation risk.",
+    "why": [
+     "The Cushing triad is a late and ominous herniation sign — do not wait for it, and never use it as permission to perform an LP.",
+     "Ondansetron is supportive for nausea and vomiting and is not a substitute for treating the underlying raised pressure or for imaging first.",
+     "Gadolinium MRI comes first to characterize the lesion; biopsy follows imaging rather than replacing it.",
+     "Definitive typing and grading of a primary tumor requires stereotactic or open biopsy with histology plus molecular markers, and LP carries herniation risk here.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with a known brain tumor becomes progressively less responsive, with one fixed dilated pupil, hypertension, bradycardia, and irregular respirations. Which combination is the appropriate emergency response?",
+    "ch": [
+     "Give ondansetron and reassess the neurologic examination in the morning",
+     "Start oral temozolomide and arrange outpatient radiation planning",
+     "Osmotic therapy with mannitol or hypertonic saline plus emergent neurosurgical decompression or CSF diversion",
+     "Give bevacizumab to reduce steroid-dependent edema and observe overnight",
+     "Order an urgent lumbar puncture to lower intracranial pressure by draining CSF"
+    ],
+    "correct": 2,
+    "exp": "Declining level of consciousness with a fixed dilated pupil and the Cushing triad signals impending herniation: give emergency osmotic therapy with mannitol or hypertonic saline, and recognize that neurosurgical decompression or CSF diversion is the definitive fix.",
+    "why": [
+     "A declining level of consciousness must be reported and acted on immediately; delaying until morning ignores an impending-herniation emergency.",
+     "The Stupp protocol is definitive oncologic therapy over weeks; it does nothing for impending herniation happening now.",
+     "",
+     "Bevacizumab is an option for recurrent glioblastoma and steroid-dependent edema, and it is specifically avoided around surgery — observation here would be fatal.",
+     "Lumbar puncture in a mass with raised pressure risks herniation and is contraindicated — this patient is already herniating."
+    ]
+   }
+  ]
+ },
+ "tumor-lysis": {
+  "condition": "Tumor Lysis Syndrome",
+  "questions": [
+   {
+    "q": "Which set of laboratory abnormalities is the classic quartet of tumor lysis syndrome?",
+    "ch": [
+     "Low potassium, low phosphate, low uric acid, high calcium",
+     "High potassium, low phosphate, high calcium, low uric acid",
+     "High potassium, high phosphate, high uric acid, low calcium",
+     "Low potassium, high phosphate, low uric acid, high calcium",
+     "High calcium, high phosphate, low potassium, low uric acid"
+    ],
+    "correct": 2,
+    "exp": "The classic quartet is up potassium, up phosphate, up uric acid — down calcium; potassium and phosphate come from lysed cells and nucleic acid turnover yields uric acid.",
+    "why": [
+     "This is the exact opposite of tumor lysis syndrome, in which intracellular contents are released into the blood.",
+     "Phosphate and uric acid both RISE, and calcium falls as phosphate binds it.",
+     "",
+     "Potassium and uric acid rise, not fall, and hypocalcemia rather than hypercalcemia is the hallmark.",
+     "Hypercalcemia is wrong — rising phosphate binds calcium and precipitates calcium phosphate, producing hypocalcemia."
+    ]
+   },
+   {
+    "q": "Which malignancies carry the highest risk of tumor lysis syndrome, and when does it typically occur?",
+    "ch": [
+     "Any malignancy treated with surgery alone, typically on the first postoperative day",
+     "Low-burden localized disease with a normal LDH, typically before any therapy is planned",
+     "Radiation-treated bone metastases only, typically after the final fraction is delivered",
+     "Bulky, rapidly proliferating, chemo-sensitive cancers such as Burkitt lymphoma, ALL, and AML, typically 12–72 hours after starting cytotoxic therapy",
+     "Slow-growing, chemo-resistant solid tumors, typically several months after the first dose of therapy"
+    ],
+    "correct": 3,
+    "exp": "Risk is highest in bulky, rapidly proliferating, chemo-sensitive cancers — Burkitt lymphoma, ALL, and AML — usually within 12–72 hours of starting cytotoxic therapy, though it can occur spontaneously.",
+    "why": [
+     "The trigger is massive cell lysis from cytotoxic therapy, not an operation.",
+     "High tumor burden and elevated LDH define HIGH risk; low burden with a normal LDH is the low-risk profile.",
+     "The board-favorite trigger is a bulky fast-growing tumor meeting chemotherapy; treated bone metastases are not the classic setting.",
+     "",
+     "Chemo-resistant, slow-growing tumors lyse too little and too slowly; the syndrome is an early event measured in hours, not months."
+    ]
+   },
+   {
+    "q": "What is the cornerstone of both prevention and treatment of tumor lysis syndrome?",
+    "ch": [
+     "Scheduled IV calcium gluconate for every patient regardless of symptoms",
+     "Immediate hemodialysis for every patient before the first chemotherapy dose",
+     "Routine urinary alkalinization with sodium bicarbonate infusions",
+     "Fluid restriction to protect the kidneys from crystal load",
+     "Aggressive IV isotonic fluids to maintain a brisk urine output"
+    ],
+    "correct": 4,
+    "exp": "Aggressive hydration with isotonic saline maintains high urine output and flushes uric acid and phosphate crystals from the renal tubules — the cornerstone of prevention and treatment, paired with a urate-lowering agent before chemotherapy.",
+    "why": [
+     "Calcium is reserved for hyperkalemia with ECG changes or symptomatic hypocalcemia; giving it routinely raises the calcium-phosphate product.",
+     "Dialysis is for refractory hyperkalemia, severe hyperphosphatemia, symptomatic hypocalcemia, or oliguric acute kidney injury — not universal prophylaxis.",
+     "Routine alkalinization is no longer recommended: raising urine pH solubilizes uric acid but promotes calcium phosphate deposition in the tubules — net harm.",
+     "Restricting fluid is backwards; brisk diuresis is exactly what clears the crystals obstructing the renal tubules.",
+     ""
+    ]
+   },
+   {
+    "q": "Why does hypocalcemia develop in tumor lysis syndrome?",
+    "ch": [
+     "Calcium is released from lysed tumor cells and then rapidly excreted in the urine",
+     "Rising phosphate binds calcium and precipitates calcium phosphate in tissues",
+     "Uric acid chelates calcium directly within the circulation",
+     "Potassium shifting into cells drags calcium along with it",
+     "Allopurinol blocks intestinal absorption of dietary calcium"
+    ],
+    "correct": 1,
+    "exp": "Hypocalcemia is a consequence of hyperphosphatemia, not a primary release: rising phosphate binds calcium, precipitating calcium phosphate in tissues, and those crystals also obstruct renal tubules.",
+    "why": [
+     "Potassium and phosphate are the intracellular ions released by lysis; calcium falls secondarily rather than being released.",
+     "",
+     "Uric acid comes from nucleic acid metabolism and obstructs tubules as crystals; phosphate, not urate, is what binds calcium.",
+     "Intracellular potassium shifting is a treatment effect of insulin and dextrose, and it does not explain the hypocalcemia.",
+     "Allopurinol is a xanthine oxidase inhibitor that blocks new uric acid formation and has nothing to do with calcium absorption."
+    ]
+   },
+   {
+    "q": "Under the Cairo-Bishop framework, what distinguishes clinical tumor lysis syndrome from laboratory tumor lysis syndrome?",
+    "ch": [
+     "Clinical TLS is diagnosed only after hemodialysis has already been started",
+     "Clinical TLS adds an end-organ event — creatinine at least 1.5 times the upper limit of normal, cardiac arrhythmia or sudden death, or seizure",
+     "Clinical TLS is confirmed only when the uric acid level exceeds 20 mg/dL",
+     "Clinical TLS requires that the patient be receiving chemotherapy rather than lysing spontaneously",
+     "Clinical TLS requires four rather than two abnormal electrolytes on the same specimen"
+    ],
+    "correct": 1,
+    "exp": "Laboratory TLS is defined by the Cairo-Bishop lab criteria alone, while clinical TLS adds an end-organ event — creatinine 1.5 times the upper limit of normal, cardiac arrhythmia or sudden death, or seizure — and that is what defines the emergency and drives escalation to dialysis.",
+    "why": [
+     "Dialysis is a treatment escalation for refractory disease, not part of the definition.",
+     "",
+     "The laboratory threshold is uric acid 8 mg/dL or more; no higher urate cutoff defines clinical TLS.",
+     "Tumor lysis syndrome can occur spontaneously; the lab-versus-clinical distinction rests on end-organ injury, not on the trigger.",
+     "The laboratory criteria require two or more of uric acid, potassium, phosphate, or calcium abnormalities; the clinical label is not a count of electrolytes."
+    ]
+   },
+   {
+    "q": "How do allopurinol and rasburicase differ in their effect on uric acid?",
+    "ch": [
+     "Neither drug lowers uric acid; both work by raising urinary pH to dissolve crystals",
+     "Allopurinol is reserved for high-risk patients, while rasburicase is used only for prophylaxis in low risk",
+     "Both drugs destroy uric acid already present, so they are interchangeable",
+     "Allopurinol converts uric acid to allantoin, while rasburicase inhibits xanthine oxidase",
+     "Allopurinol blocks new uric acid formation, while rasburicase enzymatically converts existing uric acid to soluble allantoin"
+    ],
+    "correct": 4,
+    "exp": "Allopurinol is a xanthine oxidase inhibitor that blocks new uric acid formation and is used for prophylaxis in lower-risk patients; rasburicase is recombinant urate oxidase that converts existing uric acid to soluble allantoin and is first-line for high-risk patients or established hyperuricemia.",
+    "why": [
+     "Both are urate-lowering agents, and routine urinary alkalinization is no longer recommended because it promotes calcium phosphate deposition.",
+     "The risk assignment is inverted: allopurinol is for prophylaxis in lower risk and rasburicase for high risk or established hyperuricemia.",
+     "Allopurinol does NOT lower existing uric acid — that is precisely why rasburicase is chosen when hyperuricemia is already established.",
+     "The mechanisms are reversed: rasburicase is the urate oxidase producing allantoin, and allopurinol is the xanthine oxidase inhibitor.",
+     ""
+    ]
+   },
+   {
+    "q": "Which condition must be excluded before rasburicase is given, and why?",
+    "ch": [
+     "G6PD deficiency, because rasburicase triggers hemolysis and methemoglobinemia",
+     "Diabetes mellitus, because rasburicase causes profound hypoglycemia",
+     "Hypercalcemia, because rasburicase raises the calcium-phosphate product",
+     "Thrombocytopenia, because rasburicase directly destroys circulating platelets",
+     "Hypertension, because rasburicase causes a hypertensive crisis"
+    ],
+    "correct": 0,
+    "exp": "Rasburicase is contraindicated in G6PD deficiency because it triggers hemolysis and methemoglobinemia; screen high-risk patients first and verify G6PD status is documented before the drug is given.",
+    "why": [
+     "",
+     "Hypoglycemia is the risk of insulin plus dextroses given for hyperkalemia, which is why glucose is monitored closely.",
+     "Raising the calcium-phosphate product is the concern with giving calcium for asymptomatic hypocalcemia, not with rasburicase.",
+     "Rasburicase acts on uric acid; hemolysis in G6PD deficiency, not platelet destruction, is the adverse effect to screen for.",
+     "Hypertension is not a rasburicase contraindication; the documented hazard is hemolysis and methemoglobinemia in G6PD deficiency."
+    ]
+   },
+   {
+    "q": "A high-risk patient received rasburicase, and the uric acid drawn afterward returns unexpectedly normal while phosphate and potassium remain high. What is the most likely explanation?",
+    "ch": [
+     "The syndrome has fully resolved, so no further monitoring is needed",
+     "Allopurinol was also given, which destroyed the uric acid already present",
+     "The sample was not kept on ice, so rasburicase continued degrading uric acid in the tube and gave a falsely low value",
+     "Urinary alkalinization dissolved the uric acid before the blood was drawn",
+     "Hyperphosphatemia interferes with the uric acid assay and reports it as normal"
+    ],
+    "correct": 2,
+    "exp": "Samples for uric acid must be kept on ice after rasburicase — otherwise the enzyme keeps working in the tube and the laboratory reports a falsely low level; nurses should ice the specimen and deliver it promptly.",
+    "why": [
+     "Persistent hyperphosphatemia and hyperkalemia mean the syndrome is active; labs are trended every 4–6 hours in high-risk patients.",
+     "Allopurinol does not lower existing uric acid — it only blocks new formation, which is why rasburicase exists.",
+     "",
+     "Alkalinization affects urinary solubility and is no longer routinely recommended; it does not lower a serum level drawn from the patient.",
+     "The recognized pre-analytic pitfall is ex vivo enzyme activity in an unchilled tube, not phosphate interference."
+    ]
+   },
+   {
+    "q": "A patient with tumor lysis syndrome has a calcium of 6.8 mg/dL and a phosphate of 8 mg/dL but no tetany, seizure, or arrhythmia. What is the appropriate approach to the calcium?",
+    "ch": [
+     "Give IV calcium gluconate immediately to normalize the level",
+     "Give oral calcium plus vitamin D to correct the level over 24 hours",
+     "Infuse calcium gluconate together with sodium bicarbonate in the same line",
+     "Withhold calcium because treating asymptomatic hypocalcemia raises the calcium-phosphate product and worsens tissue precipitation",
+     "Start hemodialysis solely to correct the asymptomatic hypocalcemia"
+    ],
+    "correct": 3,
+    "exp": "Treat only symptomatic hypocalcemia — tetany, seizure, or arrhythmia; giving calcium to an asymptomatic patient raises the calcium-phosphate product and worsens crystal deposition in tissues.",
+    "why": [
+     "IV calcium gluconate is for cardiac membrane stabilization in hyperkalemia with ECG changes or for symptomatic hypocalcemia — neither is present here.",
+     "Any calcium load raises the calcium-phosphate product; oral binders are used to lower PHOSPHATE instead.",
+     "Calcium and sodium bicarbonate must never be mixed in the same line, and calcium is not indicated here at all.",
+     "",
+     "Dialysis triggers are refractory hyperkalemia, severe hyperphosphatemia, SYMPTOMATIC hypocalcemia, or volume overload and oliguric acute kidney injury."
+    ]
+   },
+   {
+    "q": "A patient with AML on chemotherapy has a potassium of 6.9 mEq/L with a widened QRS despite insulin, dextrose, and a beta-agonist, and has become anuric with a rising creatinine. What is the appropriate escalation?",
+    "ch": [
+     "Urgent hemodialysis or CRRT with nephrology involvement",
+     "Increase the IV isotonic fluid rate as the sole intervention",
+     "Add allopurinol to bring the potassium down",
+     "Switch to oral phosphate binders as the definitive therapy for the potassium",
+     "Repeat the same insulin and dextrose dose and continue observing"
+    ],
+    "correct": 0,
+    "exp": "Refractory hyperkalemia and oliguric or anuric acute kidney injury unresponsive to medical therapy are explicit dialysis triggers — hemodialysis or CRRT is definitive, and nephrology should be involved early in high-risk patients.",
+    "why": [
+     "",
+     "Fluids are the cornerstone of prevention, but in an anuric patient they risk volume overload and cannot clear the potassium.",
+     "Allopurinol blocks new uric acid formation and has no effect on potassium.",
+     "Binders lower phosphate; renal replacement therapy is what is definitive for refractory hyperkalemia with anuria.",
+     "Insulin and dextrose only shift potassium temporarily and must be paired with a potassium-REMOVING strategy; a widened QRS is impending hyperkalemic cardiac arrest."
+    ]
+   }
+  ]
+ },
+ "febrile-neutropenia": {
+  "condition": "Febrile Neutropenia",
+  "questions": [
+   {
+    "q": "Which set of criteria defines febrile neutropenia?",
+    "ch": [
+     "Fever with a documented infiltrate on chest X-ray and an ANC below 100",
+     "Fever with hypotension in a patient who has completed chemotherapy within the past year",
+     "Two separate temperatures above 39.5°C with an ANC below 1500 on the same day",
+     "A single oral temperature of 38.3°C or higher, or 38.0°C sustained for 1 hour, with an ANC below 500 or expected to fall below 500 within 48 hours",
+     "Fever plus a positive blood culture in a patient with any white blood cell count"
+    ],
+    "correct": 3,
+    "exp": "Febrile neutropenia is a single oral temperature of 38.3°C (101°F) or a sustained temperature of 38.0°C (100.4°F) for 1 hour, together with an absolute neutrophil count below 500 cells/mm3 or expected to fall below 500 within 48 hours.",
+    "why": [
+     "Because neutrophils drive pus and localizing signs, there may be no infiltrate at all; ANC below 100 describes profound neutropenia, not the definition.",
+     "Hypotension is a red flag for septic shock, not part of the definition, and the relevant timing is the chemotherapy nadir.",
+     "A SINGLE fever qualifies, and the neutrophil threshold is an ANC below 500, not 1500.",
+     "",
+     "A positive culture is not required — in neutropenia fever alone is the source until proven otherwise, and infections are often occult."
+    ]
+   },
+   {
+    "q": "A patient 8 days after chemotherapy has a temperature of 38.6°C and an ANC of 240. What is the single most important immediate action?",
+    "ch": [
+     "Start G-CSF alone and defer antibiotics until the ANC recovers",
+     "Wait for blood culture results before giving any antibiotic",
+     "Give acetaminophen and recheck the temperature in 4 hours",
+     "Give empiric broad-spectrum antipseudomonal antibiotics within 1 hour",
+     "Perform a digital rectal examination to find the occult source"
+    ],
+    "correct": 3,
+    "exp": "Fever plus neutropenia means antibiotics within 1 hour — treat first and investigate second; cultures are drawn before antibiotics but must never delay the first dose.",
+    "why": [
+     "G-CSF shortens the duration of neutropenia in high-risk patients but is not a substitute for empiric antibiotics within the hour.",
+     "Cultures are obtained BEFORE antibiotics but must not delay therapy — waiting for results forfeits the door-to-needle hour.",
+     "Masking the fever is dangerous; patients are specifically taught not to take antipyretics that could hide a fever without instruction.",
+     "",
+     "Digital rectal examination is avoided to prevent seeding bacteremia, along with rectal temperatures, suppositories, and IM injections."
+    ]
+   },
+   {
+    "q": "How is the absolute neutrophil count calculated from the differential?",
+    "ch": [
+     "ANC = total WBC count, since neutrophils are the only circulating white cells",
+     "ANC = platelet count x % bands",
+     "ANC = WBC x (% segmented neutrophils + % bands)",
+     "ANC = WBC x % lymphocytes",
+     "ANC = WBC divided by the percentage of segmented neutrophils"
+    ],
+    "correct": 2,
+    "exp": "ANC = WBC x (% segmented neutrophils + % bands); an ANC below 500 defines neutropenia and below 100 is profound neutropenia with the highest infection risk, so calculate and report it at the bedside rather than quoting the WBC.",
+    "why": [
+     "The WBC includes lymphocytes and monocytes, which is exactly why the differential must be used rather than the raw WBC.",
+     "Platelets have nothing to do with the neutrophil count.",
+     "",
+     "Lymphocytes are not neutrophils; the calculation uses segmented neutrophils plus bands.",
+     "The percentages are multiplied by the WBC, not divided into it."
+    ]
+   },
+   {
+    "q": "Which empiric antibiotic choice is appropriate first-line monotherapy for high-risk febrile neutropenia?",
+    "ch": [
+     "Oral amoxicillin-clavulanate alone for every patient",
+     "Cefepime, an antipseudomonal beta-lactam",
+     "Meropenem for every patient regardless of prior isolates",
+     "An echinocandin antifungal as the initial single agent",
+     "Vancomycin as a single agent"
+    ],
+    "correct": 1,
+    "exp": "Cefepime is first-line empiric monotherapy because it covers gram-negatives including Pseudomonas aeruginosa; piperacillin-tazobactam is the alternative, and the first dose should hang within 1 hour.",
+    "why": [
+     "Oral fluoroquinolone plus amoxicillin-clavulanate is reserved for low-risk outpatients by MASCC score, not for every patient.",
+     "",
+     "Carbapenems are reserved for suspected ESBL organisms, prior resistant isolates, or severe sepsis, to preserve activity and reduce resistance pressure.",
+     "Antifungals are for persistent fever of 4–7 days in prolonged neutropenia, not initial empiric therapy.",
+     "Vancomycin is ADDED to a beta-lactam only for specific indications and never provides the required antipseudomonal gram-negative coverage."
+    ]
+   },
+   {
+    "q": "Which finding is an appropriate indication to ADD vancomycin to the empiric beta-lactam?",
+    "ch": [
+     "An ANC of 400 with no other abnormality",
+     "A MASCC score of 21 or higher indicating low risk",
+     "Bone pain after a dose of pegfilgrastim",
+     "A first fever in an otherwise stable patient with no localizing findings",
+     "A catheter-related infection with erythema and tenderness at the central line site"
+    ],
+    "correct": 4,
+    "exp": "Vancomycin is added only for specific indications: catheter-related infection, skin or soft-tissue infection, hemodynamic instability, severe mucositis, or known MRSA colonization — not reflexively.",
+    "why": [
+     "An ANC below 500 defines neutropenia and drives empiric beta-lactam therapy, but it is not by itself a vancomycin indication.",
+     "A MASCC score of 21 or more identifies low risk suitable for oral outpatient therapy, the opposite of an escalation trigger.",
+     "Bone pain is the classic side effect of G-CSF and is not an infection requiring added gram-positive coverage.",
+     "That is the standard case for antipseudomonal monotherapy; adding vancomycin routinely is exactly what should be avoided.",
+     ""
+    ]
+   },
+   {
+    "q": "During the physical examination of a febrile neutropenic patient, which maneuver should be avoided?",
+    "ch": [
+     "Digital rectal examination, because it can seed bacteremia",
+     "Inspection of the central venous catheter exit site",
+     "Gentle examination of the oropharynx for mucositis",
+     "Auscultation of the lungs and palpation of the abdomen",
+     "Visual inspection of the perianal area without instrumentation"
+    ],
+    "correct": 0,
+    "exp": "The survey should be meticulous but gentle — inspect skin, catheter sites, oropharynx, lungs, abdomen, and the perianal area, but avoid digital rectal examination to prevent seeding bacteremia; rectal temperatures, suppositories, and IM injections are likewise avoided.",
+    "why": [
+     "",
+     "The line site must be inspected — catheter-related bloodstream infection is a key consideration and an indication to add vancomycin.",
+     "Mucositis is a common bacterial entry portal, so the oropharynx should be examined and gentle oral care provided.",
+     "Lungs and abdomen are part of the meticulous survey; a clean examination does not reassure, but it should still be performed.",
+     "Visual inspection of the perianal area is appropriate; it is the digital and instrumented maneuvers that are avoided."
+    ]
+   },
+   {
+    "q": "When after cytotoxic chemotherapy is the neutrophil nadir, and therefore the febrile-neutropenic call, typically expected?",
+    "ch": [
+     "Roughly 6 months after therapy is completed",
+     "Within the first 2 hours of the infusion",
+     "Around 7 to 10 days after treatment",
+     "At 6 to 8 weeks after the final cycle",
+     "Only after the ANC has already recovered above 500"
+    ],
+    "correct": 2,
+    "exp": "The chemotherapy nadir hits around days 7 to 10 — cytotoxic therapy wipes out marrow neutrophil production, and that window is when to expect the febrile-neutropenic call.",
+    "why": [
+     "That is far outside the nadir window created by the chemotherapy cycle.",
+     "Marrow neutrophil production takes days to fall; an immediate reaction during the infusion is a different problem entirely.",
+     "",
+     "By then the ANC has usually recovered; the nadir is measured in days after treatment, not weeks.",
+     "Antibiotics are continued until the ANC recovers above 500 and the patient is afebrile — recovery is the end of the risk window, not the nadir."
+    ]
+   },
+   {
+    "q": "A high-risk patient with prolonged neutropenia remains febrile on day 5 of cefepime with negative cultures. What is the appropriate next step?",
+    "ch": [
+     "Add an empiric antifungal and pursue invasive fungal disease with chest CT and galactomannan or beta-D-glucan",
+     "Give G-CSF alone and continue the current regimen unchanged",
+     "Change to oral amoxicillin-clavulanate and discharge the patient",
+     "Perform a digital rectal examination to find the hidden source",
+     "Stop all antibiotics because the cultures are negative"
+    ],
+    "correct": 0,
+    "exp": "Persistent fever for 4 to 7 days despite broad antibiotics in a prolonged-neutropenic host points to invasive fungal infection — escalate to empiric antifungals and hunt for aspergillosis with chest CT and galactomannan or beta-D-glucan markers.",
+    "why": [
+     "",
+     "G-CSF shortens neutropenia duration in high-risk patients but does not address a likely invasive fungal infection.",
+     "Oral outpatient therapy is only for low-risk patients by MASCC score, not a persistently febrile high-risk host.",
+     "Digital rectal examination is avoided in neutropenia because it can seed bacteremia.",
+     "Infections are often occult in neutropenia; antibiotics continue until the ANC recovers above 500 and the patient is afebrile."
+    ]
+   },
+   {
+    "q": "What is the purpose of the MASCC index in febrile neutropenia?",
+    "ch": [
+     "It replaces blood cultures in patients with an indwelling central line",
+     "It predicts the exact day of the chemotherapy nadir",
+     "It determines whether vancomycin should be added to the beta-lactam",
+     "It measures the depth of neutropenia in place of calculating the ANC",
+     "It stratifies risk, with a score of 21 or higher identifying low-risk patients suitable for outpatient oral therapy"
+    ],
+    "correct": 4,
+    "exp": "The MASCC index stratifies risk: a score of 21 or higher identifies low risk suitable for outpatient oral fluoroquinolone plus amoxicillin-clavulanate, while high-risk patients require admission and IV antibiotics.",
+    "why": [
+     "Two culture sets, one peripheral and one from each central line lumen, are still drawn regardless of the risk score.",
+     "The nadir timing comes from the chemotherapy regimen, typically days 7 to 10, not from a risk score.",
+     "Vancomycin is added for line infection, skin or soft-tissue infection, instability, severe mucositis, or MRSA colonization — separate specific triggers.",
+     "Depth of neutropenia is measured by the ANC itself, calculated from the differential.",
+     ""
+    ]
+   },
+   {
+    "q": "A neutropenic patient develops fever with new right lower quadrant pain and bowel-wall thickening on CT. Which complication does this describe, and how is it managed?",
+    "ch": [
+     "Invasive pulmonary aspergillosis — start voriconazole and obtain galactomannan",
+     "Typhlitis (neutropenic enterocolitis) — provide bowel rest and anaerobic coverage, avoiding surgery unless perforation occurs",
+     "Severe mucositis — begin gentle oral care with a soft brush and monitor intake",
+     "Septic shock — activate the sepsis protocol for hypotension and altered mentation",
+     "Catheter-related bloodstream infection — remove the line immediately and add vancomycin"
+    ],
+    "correct": 1,
+    "exp": "Typhlitis, or neutropenic enterocolitis, is a neutropenic patient with fever, right lower quadrant pain, and bowel-wall thickening on CT: think anaerobes, favor piperacillin-tazobactam for anaerobic coverage with surgical consultation, and avoid surgery unless perforated.",
+    "why": [
+     "That is the fungal pathway for persistent fever of 4 to 7 days with pulmonary nodules on chest CT, not an abdominal syndrome.",
+     "",
+     "Mucositis is an oral entry portal for bacteria; it does not produce right lower quadrant pain and bowel-wall thickening.",
+     "Septic shock is defined by hypotension, tachycardia, or altered mentation; those features are not described here.",
+     "Line infection is suggested by site erythema and tenderness, not by right lower quadrant pain with bowel-wall thickening."
+    ]
+   }
+  ]
+ },
+ "cord-compression": {
+  "condition": "Malignant Spinal Cord Compression",
+  "questions": [
+   {
+    "q": "Which symptom is present in roughly 90 to 95% of patients with malignant spinal cord compression and usually appears first?",
+    "ch": [
+     "Sudden complete paraplegia without any preceding symptom",
+     "Urinary retention with overflow incontinence",
+     "Saddle anesthesia with absent reflexes",
+     "Progressive back pain, often worse lying flat, with Valsalva, or at night",
+     "Hypercalcemia with confusion and polyuria"
+    ],
+    "correct": 3,
+    "exp": "Progressive back pain is present in about 90 to 95% of cases and typically precedes neurologic signs by weeks; pain that is worse lying flat or at night in a cancer patient is a classic malignant red flag, whereas benign mechanical pain usually improves with rest.",
+    "why": [
+     "Rapid complete paraplegia rarely recovers, but pain typically precedes neurologic signs by weeks rather than deficits appearing out of nowhere.",
+     "Bladder and bowel dysfunction is a LATE, ominous sign of advanced compression — by the time the bladder fails the therapeutic window is closing.",
+     "Saddle anesthesia and areflexia point to cauda equina syndrome and are late lower-motor-neuron findings, not the earliest symptom.",
+     "",
+     "Hypercalcemia of malignancy is a co-emergency that should be screened for, but it is not the presenting symptom of cord compression."
+    ]
+   },
+   {
+    "q": "Which imaging study is the confirmatory test of choice for suspected malignant spinal cord compression?",
+    "ch": [
+     "Plain radiographs of the painful spinal segment",
+     "Whole-spine MRI with and without contrast, obtained emergently",
+     "Bone scan of the axial skeleton",
+     "MRI limited to the single level suggested by the sensory level",
+     "Lumbar puncture with CSF cytology"
+    ],
+    "correct": 1,
+    "exp": "Whole-spine MRI with and without contrast is the confirmatory test of choice and should be obtained emergently — ideally within 24 hours, sooner with rapid decline; CT myelography is the alternative when MRI is contraindicated or unavailable.",
+    "why": [
+     "Plain films are insufficient to exclude epidural disease.",
+     "",
+     "Bone scan is also insufficient to exclude epidural disease and cannot define cord compression.",
+     "The entire spine must be imaged because multiple non-contiguous skip lesions occur in up to a third of patients and change the radiation field.",
+     "Lumbar puncture is not the diagnostic pathway here; imaging of the whole spine is what establishes the level and extent of epidural disease."
+    ]
+   },
+   {
+    "q": "A cancer patient has progressive back pain and new leg weakness. Which drug should be given first?",
+    "ch": [
+     "Morphine alone, deferring other therapy until imaging is complete",
+     "Dexamethasone, started immediately to reduce vasogenic edema",
+     "An antibiotic pending exclusion of epidural abscess",
+     "Enoxaparin for venous thromboembolism prophylaxis",
+     "A bisphosphonate to reduce skeletal-related events"
+    ],
+    "correct": 1,
+    "exp": "Dexamethasone is the first drug given: it reduces vasogenic edema and pain and may preserve neurologic function while definitive therapy is arranged — start it immediately, even before imaging in suspected cases with deficits, and never wait for a tissue diagnosis.",
+    "why": [
+     "Opioids control severe mechanical and radicular pain, but steroids and MRI happen together — neither is delayed for the other.",
+     "",
+     "The described picture is malignant epidural extension from vertebral metastasis; steroids plus emergent imaging is the pathway.",
+     "VTE prophylaxis matters in an immobilized cancer patient, but it does nothing for cord edema and must be weighed against planned surgery.",
+     "Bone-modifying agents reduce skeletal-related events and treat hypercalcemia over the longer term; they are not the emergency drug."
+    ]
+   },
+   {
+    "q": "Why must the ENTIRE spine be imaged rather than only the symptomatic level?",
+    "ch": [
+     "Compression is nearly always cervical, which single-level thoracic imaging would miss",
+     "Whole-spine imaging replaces the need to document a baseline neurologic examination",
+     "The MRI machine cannot be limited to a single spinal segment",
+     "Multiple non-contiguous skip lesions occur in up to a third of patients and change the radiation field",
+     "Whole-spine imaging is required to establish the tissue diagnosis"
+    ],
+    "correct": 3,
+    "exp": "Multiple non-contiguous levels occur in up to a third of patients, so the whole spine must be imaged — the high rate of skip lesions changes the radiation field.",
+    "why": [
+     "Cervical involvement is only about 10%; the thoracic spine accounts for roughly 60% of cases.",
+     "A precise baseline neurologic examination is essential because ambulatory status at presentation is the strongest predictor of walking afterward.",
+     "Limited-segment MRI is technically possible; the reason to image everything is the biology of skip lesions.",
+     "",
+     "Tissue diagnosis comes from biopsy or from PSA/SPEP work-up when the primary is unknown; imaging defines the anatomy."
+    ]
+   },
+   {
+    "q": "Which region of the spine is most commonly involved in malignant cord compression?",
+    "ch": [
+     "Sacrum alone, in roughly 60% of cases",
+     "Cervical and lumbosacral equally, at roughly 45% each",
+     "Cervical, in roughly 60% of cases",
+     "Lumbosacral, in roughly 60% of cases",
+     "Thoracic, in roughly 60% of cases"
+    ],
+    "correct": 4,
+    "exp": "The thoracic spine is involved in roughly 60% of cases — think \"T for Tumor\" — with lumbosacral around 30% and cervical about 10%.",
+    "why": [
+     "The sacrum alone is not the leading site; lumbosacral disease overall is about 30%.",
+     "These proportions are wrong and leave no room for the thoracic spine, which dominates at roughly 60%.",
+     "Cervical involvement accounts for only about 10% of cases.",
+     "Lumbosacral disease is around 30%, second to the thoracic spine.",
+     ""
+    ]
+   },
+   {
+    "q": "What is the single strongest predictor of whether a patient will walk after treatment for malignant cord compression?",
+    "ch": [
+     "Ambulatory status at the time of presentation",
+     "Whether a bisphosphonate was given before radiation",
+     "The number of vertebral levels involved on MRI",
+     "The serum calcium level at admission",
+     "The histology of the primary tumor"
+    ],
+    "correct": 0,
+    "exp": "Function at presentation — especially ambulatory status — is the single strongest predictor of walking after treatment, which is why the examination must be documented precisely and why patients walking at diagnosis usually keep walking.",
+    "why": [
+     "",
+     "Bone-modifying agents reduce skeletal-related events; they do not determine ambulatory outcome.",
+     "Multilevel disease influences the choice of radiation versus surgery, but it is not the strongest predictor of ambulation.",
+     "Calcium is checked to screen for hypercalcemia of malignancy, a co-emergency, not to predict walking.",
+     "Radioresistant histologies such as renal cell, melanoma, and sarcoma may favor surgery first, but histology is not the strongest prognostic factor for ambulation."
+    ]
+   },
+   {
+    "q": "While awaiting emergent MRI in a patient with suspected cord compression and new weakness, which nursing action is most important?",
+    "ch": [
+     "Withhold the scheduled dexamethasone dose until the MRI is read",
+     "Administer a rectal suppository to prevent constipation from opioids",
+     "Defer the neurologic assessment until the radiology report is available",
+     "Encourage independent ambulation to the bathroom to preserve strength",
+     "Maintain spinal precautions with log-rolling and spinal alignment until instability is excluded"
+    ],
+    "correct": 4,
+    "exp": "Maintain spinal precautions until instability is excluded — log-roll, keep the spine aligned, and avoid unsupervised transfers to prevent catastrophic cord injury.",
+    "why": [
+     "Scheduled dexamethasone must be given on time and never allowed to lapse; steroids and imaging proceed together.",
+     "A bowel regimen matters with opioids and autonomic dysfunction, but it is not the priority over preventing further cord injury.",
+     "Serial motor strength, sensory level, and gait must be assessed and any worsening deficit reported immediately as time-critical.",
+     "Unsupervised transfers are specifically avoided until instability is excluded, because they risk catastrophic cord injury.",
+     ""
+    ]
+   },
+   {
+    "q": "Which sequence best describes how malignancy produces spinal cord compression?",
+    "ch": [
+     "Metastasis seeds the vertebral body, extends into the epidural space, obstructs the venous plexus, and causes vasogenic edema and eventually cord infarction",
+     "A herniated intervertebral disc is displaced by adjacent tumor and compresses the cord",
+     "Hypercalcemia of malignancy weakens the vertebra, which then collapses onto the cord",
+     "Leptomeningeal tumor cells in the CSF strangle the cord without any bony involvement",
+     "Tumor arises within the cord itself and expands outward against the dura"
+    ],
+    "correct": 0,
+    "exp": "Compression most often arises from epidural extension of vertebral body metastases; injury is both mechanical and vascular, with venous plexus obstruction, vasogenic edema, and eventually cord infarction — which is why bony pain precedes myelopathy and why edema-reducing steroids are given emergently.",
+    "why": [
+     "",
+     "Disc herniation is not the malignant mechanism; tumor in the vertebral body extends into the epidural space directly.",
+     "Hypercalcemia is a co-emergency to screen for and treat, but it is not the mechanism of epidural compression.",
+     "Vertebral body metastasis with epidural extension is the classic route, and bony pain preceding myelopathy reflects exactly that.",
+     "The usual mechanism is extrinsic compression from epidural extension of vertebral metastases, not an intramedullary tumor."
+    ]
+   },
+   {
+    "q": "Which findings distinguish cauda equina syndrome from cord compression above the conus?",
+    "ch": [
+     "Facial weakness and dysarthria accompanying the back pain",
+     "Upper motor neuron signs with hyperreflexia and upgoing toes below the lesion",
+     "Lower motor neuron signs with saddle anesthesia, areflexia, and early urinary retention",
+     "A symmetric bilateral sensory level at the nipple line with preserved reflexes",
+     "Isolated back pain with an entirely normal neurologic examination"
+    ],
+    "correct": 2,
+    "exp": "Cauda equina syndrome produces lower motor neuron findings — saddle anesthesia, areflexia, and early retention — whereas cord compression gives upper motor neuron, symmetric bilateral signs; both are emergencies but differ in level and examination.",
+    "why": [
+     "Cranial nerve findings are not part of either syndrome, which involve the cord and cauda equina below the foramen magnum.",
+     "Hyperreflexia and upgoing toes below the lesion are the UMN pattern of cord compression, not cauda equina.",
+     "",
+     "A symmetric bilateral sensory level is the cord compression pattern and helps predict the MRI level.",
+     "Back pain alone is the earliest presentation of compression and is not what defines cauda equina syndrome."
+    ]
+   },
+   {
+    "q": "According to the Patchell trial, which patient is best served by decompressive surgery plus radiation rather than radiation alone?",
+    "ch": [
+     "A patient with multilevel non-contiguous disease and very poor performance status",
+     "A patient already completely paraplegic for several weeks with widespread disease",
+     "A fit patient with a single site of compression, spinal instability or bony retropulsion, and a radioresistant tumor",
+     "Any patient with breast cancer, because breast tumors are radioresistant",
+     "A patient with back pain only and no compression on whole-spine MRI"
+    ],
+    "correct": 2,
+    "exp": "The Patchell trial showed decompressive surgery plus radiation beats radiation alone for keeping selected patients ambulatory: circumferential decompression with stabilization followed by radiation is favored in fit patients with a single site, spinal instability or bony retropulsion, or a radioresistant tumor such as renal cell, melanoma, or sarcoma.",
+    "why": [
+     "Surgery is specifically not for multilevel disease or very poor prognosis; radiation alone is appropriate there.",
+     "Rapid complete paraplegia rarely recovers, and surgery is reserved for patients whose performance status and life expectancy support recovery.",
+     "",
+     "Breast cancer is one of the classic culprits but is not radioresistant; renal cell, melanoma, and sarcoma are the radioresistant histologies.",
+     "Without epidural compression there is nothing to decompress; pain is managed and the underlying bone disease treated."
+    ]
+   }
+  ]
+ },
+ "svc-syndrome": {
+  "condition": "Superior Vena Cava Syndrome",
+  "questions": [
+   {
+    "q": "What is the underlying disturbance in superior vena cava syndrome?",
+    "ch": [
+     "Arterial obstruction of the aortic arch reduces perfusion to the head, neck, and arms, so the upper body becomes ischemic rather than congested",
+     "Compression, invasion, or thrombosis of the SVC obstructs venous drainage from the upper body, forcing blood through azygos, internal mammary, and chest wall collaterals",
+     "Lymphatic obstruction of the cervical chains produces isolated facial lymphedema without any distension of the neck or chest wall veins",
+     "Left ventricular failure raises pulmonary pressures and transmits congestion backward to the head, neck, and arms as facial swelling",
+     "Pericardial fluid restricts cardiac filling and causes distended PULSATILE neck veins with a normal superior vena cava"
+    ],
+    "correct": 1,
+    "exp": "The SVC is compressed, invaded, or thrombosed, obstructing venous drainage from the head, neck, and arms; pressure rises and blood is forced through collateral veins (azygos, internal mammary, chest wall).",
+    "why": [
+     "The problem is venous, not arterial — congestion and swelling result from obstructed drainage, not reduced inflow.",
+     "",
+     "Swelling here comes from raised venous pressure with visible distended neck and chest wall veins, not from lymphatic blockage.",
+     "Heart failure is not the mechanism; the SVC is a thin-walled low-pressure vessel compressed by a mediastinal mass.",
+     "The neck veins in SVC syndrome are distended and NON-pulsatile, and the obstruction is in the vena cava itself."
+    ]
+   },
+   {
+    "q": "Which cause accounts for the largest share of superior vena cava syndrome cases?",
+    "ch": [
+     "Lung cancer, both non-small cell and small cell",
+     "Indwelling catheters and pacemaker leads",
+     "Fibrosing mediastinitis",
+     "Aortic aneurysm",
+     "Non-Hodgkin lymphoma"
+    ],
+    "correct": 0,
+    "exp": "Malignancy causes roughly 60 to 85% of cases, and non-small cell and small cell lung cancer are the most common overall — think lung cancer first, then non-Hodgkin lymphoma, in an adult with new facial and arm swelling.",
+    "why": [
+     "",
+     "Catheter- and device-related thrombosis is an increasing share of cases and must always be asked about, but malignancy still causes 60 to 85%.",
+     "Fibrosing mediastinitis is one of the non-malignant causes and is uncommon compared with lung cancer.",
+     "Aortic aneurysm is listed among the rising non-malignant causes but is far less common than malignancy.",
+     "Non-Hodgkin lymphoma is an important malignant cause and is second on the list, but lung cancer is the most common overall."
+    ]
+   },
+   {
+    "q": "What does a positive Pemberton sign consist of?",
+    "ch": [
+     "Pulsatile distension of the neck veins on deep inspiration",
+     "Facial congestion, plethora, or stridor developing when the patient raises both arms overhead",
+     "A drop in blood pressure of more than 10 mmHg during inspiration",
+     "Facial twitching elicited by tapping over the facial nerve",
+     "Carpal spasm produced by inflating a blood pressure cuff on the arm"
+    ],
+    "correct": 1,
+    "exp": "Pemberton sign is facial congestion, plethora, and sometimes stridor reproduced by raising both arms overhead — a classic bedside clue to mediastinal venous obstruction.",
+    "why": [
+     "The distended neck and chest wall veins of SVC syndrome are non-pulsatile, and the maneuver that elicits Pemberton sign is raising the arms.",
+     "",
+     "That describes pulsus paradoxus, which is not part of the SVC syndrome examination.",
+     "Facial twitching on tapping is Chvostek sign, a hypocalcemia finding.",
+     "Carpal spasm with cuff inflation is Trousseau sign, another hypocalcemia finding."
+    ]
+   },
+   {
+    "q": "Which imaging study is the test of choice to localize and characterize superior vena cava obstruction?",
+    "ch": [
+     "Transthoracic echocardiography",
+     "Upper extremity arteriography",
+     "Abdominal ultrasound",
+     "Chest X-ray alone",
+     "Contrast-enhanced CT of the chest"
+    ],
+    "correct": 4,
+    "exp": "Contrast-enhanced CT of the chest is the test of choice — it localizes the obstruction, shows collaterals, and defines the causative mass; CT venography or MR venography is used if contrast is contraindicated.",
+    "why": [
+     "Echocardiography does not localize the level of caval obstruction or define the causative mediastinal mass.",
+     "The pathology is venous; arteriography images the wrong circulation.",
+     "The obstruction is in the mediastinum, well outside the field of an abdominal ultrasound.",
+     "Chest X-ray often shows a mediastinal or right hilar mass but is not definitive.",
+     ""
+    ]
+   },
+   {
+    "q": "Where should intravenous access be placed in a patient with acute superior vena cava syndrome?",
+    "ch": [
+     "In the antecubital fossa of the dominant arm",
+     "Through a new subclavian central line on the right",
+     "In an external jugular vein to bypass the obstruction",
+     "In a dorsal hand vein with the arm raised overhead",
+     "In the lower extremities, because upper-body venous return is obstructed"
+    ],
+    "correct": 4,
+    "exp": "Place IVs in the lower extremities rather than the arms, because upper-body venous return is obstructed and infusions pool or fail; blood should also be drawn from the legs in acute SVC syndrome.",
+    "why": [
+     "Arm veins drain into the obstructed SVC, so infusions pool or fail.",
+     "A new central line adds catheter-related thrombosis risk in the very vessel that is obstructed — indwelling catheters and leads are themselves a rising cause.",
+     "Jugular drainage also passes through the obstructed SVC, so it does not bypass anything.",
+     "Raising the arm reproduces the Pemberton sign and worsens congestion; hand veins still drain into the SVC.",
+     ""
+    ]
+   },
+   {
+    "q": "A stable patient has facial swelling and a mediastinal mass, and lymphoma is on the differential. Why should empiric corticosteroids be withheld?",
+    "ch": [
+     "Steroids are ineffective in every mediastinal tumor",
+     "Steroids interfere with contrast-enhanced CT of the chest",
+     "Steroids raise venous pressure and worsen the facial swelling",
+     "Steroids can lyse lymphoma cells and render the biopsy non-diagnostic",
+     "Steroids cause stent thrombosis after endovascular stenting"
+    ],
+    "correct": 3,
+    "exp": "Avoid empiric steroids before biopsy if lymphoma is suspected — they can lyse cells and obscure the diagnosis, and histology (small cell versus non-small cell lung cancer versus lymphoma) determines whether chemotherapy, radiation, or steroids is the right modality.",
+    "why": [
+     "Steroids are in fact useful in steroid-responsive tumors such as lymphoma and thymoma — which is exactly why the tissue must be obtained first.",
+     "Corticosteroids do not degrade CT imaging; the risk is to the histologic specimen.",
+     "Corticosteroids REDUCE peritumoral and airway edema; the concern is diagnostic, not hemodynamic.",
+     "",
+     "Stent thrombosis, migration, and rare rupture are stent complications; anticoagulation, not steroid avoidance, addresses thrombosis."
+    ]
+   },
+   {
+    "q": "Which position and activity advice is appropriate for a patient with superior vena cava syndrome?",
+    "ch": [
+     "Keep the head of the bed elevated and upright, and avoid bending over, tight neck clothing, and Valsalva",
+     "Keep the arms raised overhead to drain the upper body",
+     "Wear a snug cervical collar to compress the distended neck veins",
+     "Lie flat to promote venous return to the heart",
+     "Bend forward periodically to open the collateral veins"
+    ],
+    "correct": 0,
+    "exp": "Elevate the head of the bed and keep the patient upright to promote venous drainage and reduce facial and airway swelling, and teach the patient to avoid bending over, tight clothing at the neck, and Valsalva.",
+    "why": [
+     "",
+     "Raising the arms overhead reproduces facial plethora and congestion — that is the Pemberton sign, not a therapy.",
+     "Tight clothing at the neck is exactly what the patient is taught to avoid.",
+     "Symptoms characteristically worsen when lying flat — head fullness increases, which is itself a clue to SVC obstruction.",
+     "Bending forward worsens the sensation of head fullness and congestion and is specifically to be avoided."
+    ]
+   },
+   {
+    "q": "A patient with a large mediastinal mass develops stridor, hoarseness, and confusion with rapidly worsening facial swelling. Which intervention gives the fastest relief and does not require a tissue diagnosis first?",
+    "ch": [
+     "External beam radiation to the mediastinal mass",
+     "Systemic chemotherapy for a presumed small cell primary",
+     "Endovascular stenting of the superior vena cava",
+     "High-dose furosemide as the primary intervention",
+     "Sputum cytology followed by mediastinoscopy before any treatment"
+    ],
+    "correct": 2,
+    "exp": "For a genuinely unstable patient — stridor and airway compromise or cerebral edema, which upgrade SVC syndrome to a true oncologic emergency — endovascular stenting gives the fastest relief within hours to days and can precede diagnosis; couple it with anticoagulation when thrombus is present.",
+    "why": [
+     "Radiation relieves obstruction from radiosensitive tumors, but symptom relief may take days to weeks and tissue diagnosis is preferred first when feasible.",
+     "Chemotherapy is definitive for chemosensitive tumors such as small cell lung cancer and non-Hodgkin lymphoma, but it should follow histology and does not act within hours.",
+     "",
+     "Loop diuretics are only a transient adjunct, and overdiuresis lowers preload and can worsen low-flow thrombosis.",
+     "Tissue before treatment applies to the STABLE patient; with stridor and confusion the airway and cerebral edema come first."
+    ]
+   },
+   {
+    "q": "Why do two patients with the same degree of SVC narrowing differ so much in symptom severity?",
+    "ch": [
+     "Symptoms depend only on whether the obstruction sits above or below the level of the aortic arch, independent of how fast it developed",
+     "Symptom severity depends only on the histologic type of the tumor, so small cell and non-small cell disease always congest to the same degree",
+     "Only patients who also have a coexisting pleural effusion become symptomatic, and those without one remain at grade 0",
+     "Gradual obstruction lets azygos and chest wall collaterals form and is better tolerated, while rapid obstruction outpaces collateralization",
+     "Severity is determined by the serum sodium at presentation, which sets how much interstitial edema the upper body retains"
+    ],
+    "correct": 3,
+    "exp": "Severity depends on how fast the obstruction develops: gradual onset recruits azygos and chest-wall collaterals and is better tolerated, whereas rapid onset from thrombus or an aggressive tumor outpaces collateralization and produces severe congestion.",
+    "why": [
+     "The critical variable is the RATE of onset and the degree of collateralization it permits, not the level relative to the arch.",
+     "Histology determines the treatment modality — chemotherapy, radiation, or steroids — rather than the degree of congestion.",
+     "Symptoms arise from raised upper-body venous pressure; a pleural effusion is not the determinant of the Yale/Wilson grade.",
+     "",
+     "Sodium has no role in grading SVC syndrome; the Yale/Wilson system grades severity from asymptomatic to life-threatening cerebral and laryngeal edema."
+    ]
+   },
+   {
+    "q": "Which pairing of underlying cause and definitive treatment modality is correct?",
+    "ch": [
+     "Non-small cell lung cancer — anticoagulation alone",
+     "Catheter-associated SVC thrombosis — external beam radiation",
+     "Small cell lung cancer or non-Hodgkin lymphoma — chemotherapy",
+     "Suspected lymphoma in a stable patient — empiric high-dose steroids before biopsy",
+     "Any cause — loop diuretics as definitive therapy"
+    ],
+    "correct": 2,
+    "exp": "Match the modality to the cause: chemotherapy is definitive for chemosensitive tumors — small cell lung cancer, non-Hodgkin lymphoma, and germ cell tumors — while radiation treats radiosensitive or non-chemosensitive tumors such as non-small cell lung cancer, and anticoagulation treats thrombosis.",
+    "why": [
+     "Radiation relieves obstruction from non-small cell lung cancer; anticoagulation is for catheter-associated or intrinsic SVC thrombosis.",
+     "Catheter-associated thrombosis is treated with anticoagulation, and the offending catheter often must be removed as the nidus.",
+     "",
+     "Empiric steroids before biopsy can lyse lymphoma cells and make the tissue non-diagnostic.",
+     "Loop diuretics are only a transient adjunct to reduce edema and venous congestion, and overdiuresis can worsen low-flow thrombosis."
+    ]
+   }
+  ]
+ }
+}

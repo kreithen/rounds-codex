@@ -1,0 +1,977 @@
+{
+ "pcos": {
+  "condition": "Polycystic Ovary Syndrome (PCOS)",
+  "questions": [
+   {
+    "q": "What does the Rotterdam criteria set require in order to diagnose polycystic ovary syndrome?",
+    "ch": [
+     "An elevated LH:FSH ratio greater than 2:1 confirmed on two separate blood draws",
+     "Two of three: oligo/anovulation, clinical or biochemical hyperandrogenism, and polycystic ovarian morphology on ultrasound",
+     "Transvaginal ultrasound showing polycystic ovaries alone, regardless of cycles or androgens",
+     "A markedly elevated total testosterone together with rapidly progressive virilization",
+     "All three of oligo/anovulation, hyperandrogenism, and polycystic ovarian morphology must be documented"
+    ],
+    "correct": 1,
+    "exp": "Rotterdam criteria require 2 of 3 — oligo/anovulation, clinical or biochemical hyperandrogenism, and polycystic ovarian morphology on ultrasound — and PCOS remains a diagnosis of exclusion.",
+    "why": [
+     "An elevated LH:FSH ratio helps explain the pathophysiology but is not a Rotterdam criterion.",
+     "",
+     "Ultrasound morphology alone is insufficient, and ultrasound is not even required when the other two criteria are met.",
+     "Markedly elevated testosterone with rapid virilization should redirect the workup toward an androgen-secreting tumor rather than confirm PCOS.",
+     "Rotterdam requires only two of the three features, not all three."
+    ]
+   },
+   {
+    "q": "The \"cysts\" seen on ultrasound in polycystic ovary syndrome actually represent which of the following?",
+    "ch": [
+     "Corpus luteum cysts left over from repeated ovulation",
+     "Endometriomas filled with old, degraded blood",
+     "Malignant neoplasms arising from ovarian theca cells",
+     "Arrested antral follicles rather than true cysts",
+     "Multiple true fluid-filled cysts that require surgical drainage"
+    ],
+    "correct": 3,
+    "exp": "The polycystic ovaries of PCOS are arrested antral follicles, not true cysts — follicle maturation stalls, producing the peripheral string of pearls pattern.",
+    "why": [
+     "PCOS is characterized by anovulation, so repeated corpus luteum formation is not the mechanism.",
+     "Chocolate-cyst endometriomas belong to endometriosis, not to PCOS.",
+     "The follicles of PCOS are benign; an androgen-secreting tumor is a separate consideration flagged by rapid virilization.",
+     "",
+     "They are not true cysts, and no drainage procedure is indicated in PCOS."
+    ]
+   },
+   {
+    "q": "Which mechanism best explains the core hormonal derangement of polycystic ovary syndrome?",
+    "ch": [
+     "Primary ovarian failure producing low estrogen with a markedly elevated FSH",
+     "Excess prolactin secretion suppressing pituitary gonadotropin release",
+     "Cortisol excess from an adrenal adenoma driving central obesity and striae",
+     "An enzyme block causing 17-hydroxyprogesterone to accumulate in the adrenal",
+     "Insulin resistance with hyperinsulinemia raises ovarian and adrenal androgens and lowers SHBG, increasing free testosterone"
+    ],
+    "correct": 4,
+    "exp": "Insulin resistance and compensatory hyperinsulinemia increase ovarian and adrenal androgen production and lower sex hormone-binding globulin, raising free testosterone — which explains both the hirsutism and the anovulation.",
+    "why": [
+     "PCOS features anovulation with androgen excess, not a hypergonadotropic ovarian-failure pattern.",
+     "Hyperprolactinemia is a mimic that must be excluded with a prolactin level, not the mechanism of PCOS.",
+     "Cushing syndrome is one of the mimics excluded during the PCOS workup.",
+     "That describes nonclassic congenital adrenal hyperplasia, which the 17-OHP level excludes.",
+     ""
+    ]
+   },
+   {
+    "q": "Which skin finding in a woman with polycystic ovary syndrome is specifically a marker of underlying insulin resistance?",
+    "ch": [
+     "Hirsutism scored with the modified Ferriman-Gallwey scale",
+     "A malar rash spreading across the cheeks and nose",
+     "Acanthosis nigricans",
+     "Abdominal striae with easy bruising and proximal muscle weakness",
+     "Androgenic alopecia at the vertex of the scalp"
+    ],
+    "correct": 2,
+    "exp": "Acanthosis nigricans — velvety, darkened skin folds — is a clinical marker of the underlying insulin resistance in PCOS.",
+    "why": [
+     "Hirsutism is a hyperandrogenism finding; the velvety dark skin folds are the insulin-resistance clue.",
+     "A malar rash is not among the PCOS skin findings; the insulin-resistance clue is velvety hyperpigmentation of skin folds.",
+     "",
+     "Those findings suggest Cushing syndrome, an alternate diagnosis requiring urgent workup.",
+     "Androgenic alopecia reflects androgen excess rather than insulin resistance specifically."
+    ]
+   },
+   {
+    "q": "A 29-year-old woman with PCOS wishes to conceive. Which therapy is first-line?",
+    "ch": [
+     "Letrozole, an aromatase inhibitor, for ovulation induction",
+     "Clomiphene citrate, because it gives superior live-birth rates",
+     "Metformin alone, prescribed specifically to induce ovulation",
+     "A combined oral contraceptive to regulate the menstrual cycle",
+     "Spironolactone to lower the free testosterone level"
+    ],
+    "correct": 0,
+    "exp": "Letrozole is first-line for ovulation induction and infertility in PCOS, with superior live-birth rates versus clomiphene as shown in the PPCOS II trial.",
+    "why": [
+     "",
+     "Clomiphene is an acceptable alternative, but letrozole showed the superior live-birth rates in the head-to-head comparison.",
+     "Metformin is an insulin sensitizer for metabolic features, weight, and cycle regularity, not first-line ovulation induction.",
+     "COCs are first-line for menstrual regulation and hirsutism in patients NOT seeking pregnancy — they prevent conception.",
+     "Spironolactone is an anti-androgen for hirsutism and is teratogenic, so it demands reliable contraception rather than conception."
+    ]
+   },
+   {
+    "q": "Why does chronic anovulation in polycystic ovary syndrome raise the lifetime risk of endometrial carcinoma?",
+    "ch": [
+     "Repeated corpus luteum progesterone surges drive glandular hyperplasia",
+     "Insulin resistance causes direct malignant transformation of ovarian theca cells",
+     "It leaves the endometrium exposed to unopposed estrogen without cyclic progesterone",
+     "An elevated anti-Mullerian hormone directly stimulates endometrial proliferation",
+     "Metformin therapy progressively thins the endometrium and predisposes to cancer"
+    ],
+    "correct": 2,
+    "exp": "Chronic anovulation means no progesterone to oppose estrogen, so unopposed estrogen drives endometrial hyperplasia and raises lifetime endometrial cancer risk — which is why cyclic progestin or a COC protects the endometrium.",
+    "why": [
+     "Progesterone opposes estrogen and protects the endometrium; the problem in PCOS is its absence.",
+     "Insulin resistance drives androgen excess; the endometrial risk comes from unopposed estrogen, and theca cells are not the site.",
+     "",
+     "AMH is elevated and used as a surrogate for polycystic morphology, but it is not the mechanism of endometrial hyperplasia.",
+     "Metformin is an insulin sensitizer and is not implicated in endometrial cancer risk in this module."
+    ]
+   },
+   {
+    "q": "Before starting spironolactone for hirsutism in a reproductive-age woman, which measure is essential?",
+    "ch": [
+     "Discontinuation of any combined oral contraceptive she is currently taking",
+     "A potassium supplement to offset expected urinary potassium losses",
+     "Weekly liver function testing for the first three months of therapy",
+     "Folic acid supplementation to prevent fetal neural tube defects",
+     "Reliable contraception, because spironolactone is teratogenic"
+    ],
+    "correct": 4,
+    "exp": "Spironolactone is teratogenic and can feminize a male fetus, so an anti-androgen must never be given without reliable contraception; potassium also requires monitoring.",
+    "why": [
+     "Spironolactone is usually added to a COC, and that COC also supplies the required contraception.",
+     "Spironolactone raises potassium — monitor the level and avoid other potassium-raising drugs rather than supplementing.",
+     "Contraception and potassium monitoring are the stated safety priorities, not routine weekly liver testing.",
+     "The stated requirement is contraception because of the teratogenic risk, not folate supplementation.",
+     ""
+    ]
+   },
+   {
+    "q": "A 26-year-old woman has six months of deepening voice, clitoromegaly, and temporal balding with a markedly elevated total testosterone. What should the workup pursue?",
+    "ch": [
+     "Nonclassic congenital adrenal hyperplasia detected by 17-hydroxyprogesterone",
+     "Hyperprolactinemia from a pituitary prolactinoma",
+     "Thyroid disease causing menstrual irregularity",
+     "An androgen-secreting tumor",
+     "Polycystic ovary syndrome diagnosed on Rotterdam criteria"
+    ],
+    "correct": 3,
+    "exp": "Rapidly progressive virilization — deepening voice, clitoromegaly, balding — with markedly elevated testosterone or DHEA-S is a red flag that redirects the workup toward an androgen-secreting tumor rather than PCOS.",
+    "why": [
+     "Nonclassic CAH is screened with 17-OHP and does not typically produce virilization at this tempo.",
+     "A prolactinoma causes irregular menses and galactorrhea rather than rapid virilization.",
+     "Thyroid disease is excluded with a TSH and does not produce clitoromegaly or voice deepening.",
+     "",
+     "Rapidly progressive virilization with a very high testosterone is a red flag that redirects the workup away from PCOS."
+    ]
+   },
+   {
+    "q": "Which intervention is the cornerstone first-line therapy for every patient with polycystic ovary syndrome?",
+    "ch": [
+     "Immediate laparoscopic ovarian surgery to remove the follicles",
+     "Lifestyle modification, since 5-10% weight loss can restore ovulation",
+     "A GnRH agonist to suppress the ovaries pharmacologically",
+     "Exogenous insulin therapy to treat the insulin resistance",
+     "Spironolactone monotherapy as the foundation of all care"
+    ],
+    "correct": 1,
+    "exp": "Lifestyle modification — nutrition, activity, and modest weight loss — is the cornerstone first-line therapy for all patients with PCOS, and even 5-10% weight reduction can restore ovulation.",
+    "why": [
+     "Ovarian surgery is not part of the PCOS management ladder described in the module.",
+     "",
+     "GnRH agonists are not used for PCOS here; lifestyle change is the cornerstone first-line therapy.",
+     "Insulin resistance is addressed with lifestyle change and metformin, not with exogenous insulin.",
+     "Spironolactone treats hirsutism and acne as an add-on to a COC and is not the foundational therapy."
+    ]
+   },
+   {
+    "q": "Which statement about the role of transvaginal ultrasound in diagnosing polycystic ovary syndrome is correct?",
+    "ch": [
+     "It is not required when the other two Rotterdam criteria are met and should be avoided within about 8 years of menarche",
+     "It should be repeated every cycle to track follicle number and ovarian volume",
+     "It has been replaced entirely by anti-Mullerian hormone testing in all age groups",
+     "It must document at least 20 follicles per ovary in every patient before the diagnosis is made",
+     "It is the single most specific confirmatory test and overrides the clinical criteria"
+    ],
+    "correct": 0,
+    "exp": "Transvaginal ultrasound looks for at least 20 follicles per ovary or an ovarian volume above 10 mL, but it is not required if the other two Rotterdam criteria are met, and it should be avoided within roughly 8 years of menarche.",
+    "why": [
+     "",
+     "Serial cycle-by-cycle scanning of follicle counts is not part of the diagnostic approach described.",
+     "AMH is increasingly used as a surrogate for polycystic morphology in adults, not as a universal replacement across all ages.",
+     "Ultrasound morphology is only one of three criteria and is unnecessary when the other two are already satisfied.",
+     "No single criterion overrides the others; PCOS is diagnosed on 2 of 3 and remains a diagnosis of exclusion."
+    ]
+   }
+  ]
+ },
+ "endometriosis": {
+  "condition": "Endometriosis",
+  "questions": [
+   {
+    "q": "Which description most accurately characterizes endometriosis?",
+    "ch": [
+     "An ascending polymicrobial infection of the fallopian tubes and pelvic peritoneum",
+     "Malignant transformation of ovarian surface epithelium into clear cell carcinoma",
+     "A benign smooth-muscle tumor of the uterine wall that degenerates and causes pain",
+     "Endometrium growing within the myometrium of an enlarged, boggy, tender uterus",
+     "Endometrial-like glands and stroma implanted outside the uterine cavity, responding to cyclic hormones with bleeding and inflammation"
+    ],
+    "correct": 4,
+    "exp": "Endometriosis is endometrial-like glands and stroma implanted outside the uterine cavity — ovaries, peritoneum, uterosacral ligaments, cul-de-sac — where they respond to cyclic estrogen and progesterone, bleed, and drive chronic inflammation, fibrosis, and adhesions.",
+    "why": [
+     "That describes pelvic inflammatory disease, which sits on the differential for pelvic pain.",
+     "Malignant transformation is a red-flag complication of a complex or enlarging mass, not the definition of the disease.",
+     "A degenerating fibroid is a separate cause of pelvic pain, not ectopic endometrial-like tissue.",
+     "That is adenomyosis, the classic endometriosis mimic seen in multiparous women.",
+     ""
+    ]
+   },
+   {
+    "q": "What is the classic symptom triad of endometriosis?",
+    "ch": [
+     "Sudden unilateral pain, vomiting, and a palpable adnexal mass",
+     "Amenorrhea, vaginal bleeding, and unilateral pelvic pain",
+     "Fever, mucopurulent cervical discharge, and cervical motion tenderness",
+     "Oligomenorrhea, hirsutism, and acanthosis nigricans",
+     "Dysmenorrhea, dyspareunia, and infertility"
+    ],
+    "correct": 4,
+    "exp": "The classic triad of endometriosis is dysmenorrhea, dyspareunia, and infertility, with dyschezia added when the cul-de-sac is involved.",
+    "why": [
+     "That presentation suggests ovarian torsion, a surgical emergency.",
+     "That triad points to ectopic pregnancy, which must be excluded before anchoring on endometriosis.",
+     "Those findings suggest pelvic inflammatory disease rather than endometriosis.",
+     "Those are the features of polycystic ovary syndrome.",
+     ""
+    ]
+   },
+   {
+    "q": "A \"chocolate cyst\" refers to which of the following?",
+    "ch": [
+     "A cluster of arrested antral follicles at the ovarian periphery",
+     "An ovarian endometrioma filled with old, degraded blood",
+     "A mature cystic teratoma containing hair and sebaceous material",
+     "A tubo-ovarian abscess walled off after ascending pelvic infection",
+     "A corpus luteum cyst that has ruptured and bled into the pelvis"
+    ],
+    "correct": 1,
+    "exp": "A chocolate cyst is an ovarian endometrioma filled with old, degraded chocolate-colored blood; on transvaginal ultrasound it appears as a homogeneous ground-glass cystic mass.",
+    "why": [
+     "Peripherally arranged arrested follicles describe polycystic ovarian morphology.",
+     "",
+     "A dermoid is the classic lead point for ovarian torsion, not the chocolate cyst.",
+     "A TOA is a complication of pelvic inflammatory disease.",
+     "A ruptured corpus luteum cyst is a differential item for acute pain, not an endometrioma."
+    ]
+   },
+   {
+    "q": "How does symptom severity in endometriosis relate to rASRM stage?",
+    "ch": [
+     "Stage IV disease is required before pain becomes clinically significant",
+     "Severity correlates poorly with stage, so management is symptom-based rather than stage-based",
+     "The CA-125 level reliably reflects the stage and should guide therapy",
+     "Only deep infiltrating disease causes pain, so superficial lesions can be ignored",
+     "Severity rises predictably with each successive rASRM stage"
+    ],
+    "correct": 1,
+    "exp": "Symptom severity does not correlate with rASRM stage — a board-favorite pitfall — so you treat the patient’s symptoms rather than the imaging or the stage.",
+    "why": [
+     "Minimal disease can be debilitating, so stage is not a threshold for treating pain.",
+     "",
+     "CA-125 may be elevated but is neither sensitive nor specific and is not used to diagnose or stage the disease.",
+     "Superficial peritoneal disease can be painful; phenotype does not determine whether pain is treated.",
+     "Severity does not track with stage: extensive disease may be asymptomatic and minimal disease debilitating."
+    ]
+   },
+   {
+    "q": "What remains the histologic gold standard for diagnosing endometriosis?",
+    "ch": [
+     "Laparoscopy with histologic confirmation, although empiric medical therapy may begin without it",
+     "A serum CA-125 level, which confirms the diagnosis when it is elevated",
+     "Transvaginal ultrasound, which is definitive for every disease phenotype",
+     "Pelvic MRI, which is the accepted diagnostic reference standard",
+     "Endometrial biopsy showing glands and stroma inside the uterine cavity"
+    ],
+    "correct": 0,
+    "exp": "Laparoscopy with histologic confirmation remains the gold standard, classically showing powder-burn or blue-black lesions and adhesions, but ESHRE/ACOG guidelines support empiric medical therapy on a clinical diagnosis without mandatory laparoscopy.",
+    "why": [
+     "",
+     "CA-125 can be elevated but is useless for diagnosis or screening and should not be ordered to make the diagnosis.",
+     "TVUS is first-line and detects endometriomas, but it does not provide histologic confirmation.",
+     "MRI maps deep infiltrating disease before surgery rather than establishing the diagnosis.",
+     "Biopsy of ectopic lesions at laparoscopy confirms the diagnosis; endometrium inside the cavity is normal."
+    ]
+   },
+   {
+    "q": "When a GnRH agonist such as leuprolide is prescribed for refractory endometriosis pain, what should accompany it?",
+    "ch": [
+     "A daily NSAID prescribed specifically to prevent the initial flare",
+     "Immediate escalation to hysterectomy with bilateral salpingo-oophorectomy",
+     "Add-back therapy to protect bone mineral density and control vasomotor symptoms",
+     "Discontinuation after one week to avoid inducing a pseudo-menopause",
+     "Folate supplementation to reduce the frequency of hot flashes"
+    ],
+    "correct": 2,
+    "exp": "GnRH agonists cause an initial flare then hypoestrogenism, so use is limited in duration and add-back therapy is given to protect bone mineral density and mitigate vasomotor symptoms.",
+    "why": [
+     "The initial flare is intrinsic to agonist therapy; NSAIDs treat prostaglandin-mediated dysmenorrhea instead.",
+     "Definitive surgery is reserved for completed childbearing with disabling refractory disease.",
+     "",
+     "The hypoestrogenic pseudo-menopause is the intended therapeutic effect; use is limited and paired with add-back, not stopped at a week.",
+     "Add-back hormonal therapy, not folate, protects bone and controls vasomotor symptoms."
+    ]
+   },
+   {
+    "q": "A 31-year-old with biopsy-proven endometriosis is actively trying to conceive. Which management improves her fertility?",
+    "ch": [
+     "Elagolix for dose-dependent estrogen suppression",
+     "Depot medroxyprogesterone injections every three months",
+     "Continuous combined oral contraceptives to atrophy the ectopic lesions",
+     "Laparoscopic excision, because ovulation-suppressing medical therapy is contraceptive",
+     "A levonorgestrel intrauterine device for local progestin delivery"
+    ],
+    "correct": 3,
+    "exp": "For infertility, surgical management improves fertility while medical suppression does not — the ovulation-suppressing drugs are themselves contraceptive.",
+    "why": [
+     "A GnRH antagonist suppresses estrogen and is not fertility-promoting therapy.",
+     "Depot progestin is contraceptive and additionally risks bone density loss.",
+     "COCs suppress ovulation and are contraceptive, so a patient trying to conceive cannot use them.",
+     "",
+     "The LNG-IUD decidualizes ectopic tissue but prevents pregnancy."
+    ]
+   },
+   {
+    "q": "A 28-year-old woman presents with acute severe pelvic pain and a presumed history of endometriosis. What must be excluded first?",
+    "ch": [
+     "Pregnancy, with ectopic pregnancy excluded before anchoring on endometriosis",
+     "Adenomyosis, obtaining a pelvic MRI before any other test",
+     "Interstitial cystitis, using a bladder-instillation challenge",
+     "Inflammatory bowel disease, proceeding directly to colonoscopy",
+     "Ovarian malignancy, using CA-125 as a screening test"
+    ],
+    "correct": 0,
+    "exp": "In any woman of reproductive age with pelvic pain, rule out pregnancy first — acute severe pain with a positive pregnancy test means excluding ectopic pregnancy before attributing symptoms to endometriosis.",
+    "why": [
+     "",
+     "Adenomyosis is a common comorbid mimic, but pregnancy must be excluded before it.",
+     "Interstitial cystitis sits on the differential for pelvic pain but is not the first thing to exclude.",
+     "IBS and IBD are differential items; ruling out pregnancy comes first.",
+     "CA-125 is not a screening test, and malignancy concern arises mainly with a complex or rapidly enlarging mass."
+    ]
+   },
+   {
+    "q": "A woman with known endometriosis reports cyclic hematochezia with cramping and obstructive symptoms. What does this indicate?",
+    "ch": [
+     "An expected adverse effect of continuous combined oral contraceptive use",
+     "Malignant transformation, which a CA-125 level would confirm",
+     "Deep infiltrating endometriosis invading the bowel, requiring urgent surgical referral",
+     "Expected cul-de-sac dyschezia that will respond to a scheduled NSAID",
+     "Bacterial superinfection that should be treated with ceftriaxone and doxycycline"
+    ],
+    "correct": 2,
+    "exp": "Cyclic hematuria, hematochezia, or bowel obstruction indicates deep infiltrating endometriosis invading the bladder or bowel — a red flag requiring urgent surgical referral.",
+    "why": [
+     "Continuous COCs may cause breakthrough uterine bleeding, not cyclic rectal bleeding with obstruction.",
+     "Malignant transformation is a concern with a complex or enlarging mass, and CA-125 cannot confirm it.",
+     "",
+     "Cyclic rectal bleeding with obstructive symptoms goes well beyond dyschezia and needs urgent surgical referral, not analgesia alone.",
+     "This is not an infectious process, so antibiotic regimens used for PID do not apply."
+    ]
+   },
+   {
+    "q": "Which sequence correctly represents the management ladder for endometriosis-associated pain?",
+    "ch": [
+     "Serial CA-125 monitoring to time therapy, escalating hormonal treatment only when the level rises above normal",
+     "Laparoscopic excision as the first step, then NSAIDs for breakthrough pain, reserving hormonal suppression for later recurrence",
+     "Hysterectomy with bilateral salpingo-oophorectomy first, followed by estrogen replacement and NSAIDs as needed for pain",
+     "NSAIDs plus combined OCPs or progestins, then GnRH agonists or antagonists with add-back, then laparoscopic excision, with hysterectomy-BSO as definitive therapy",
+     "GnRH agonist monotherapy from the outset, then NSAIDs if pain persists, avoiding any surgical management altogether"
+    ],
+    "correct": 3,
+    "exp": "The ladder is NSAIDs plus combined OCPs or progestins first, escalating to GnRH agonists or antagonists with add-back therapy, then laparoscopic excision, reserving hysterectomy with bilateral salpingo-oophorectomy as definitive therapy.",
+    "why": [
+     "CA-125 is useless for diagnosis or monitoring in endometriosis and cannot be used to guide escalation.",
+     "Surgery is an escalation after medical therapy fails, not the opening move ahead of NSAIDs and hormonal suppression.",
+     "Definitive surgery is reserved for women with completed childbearing and disabling refractory disease.",
+     "",
+     "GnRH agonists are a limited-duration escalation step given with add-back, and surgery remains part of the ladder."
+    ]
+   }
+  ]
+ },
+ "pid": {
+  "condition": "Pelvic Inflammatory Disease",
+  "questions": [
+   {
+    "q": "What is sufficient on pelvic exam to justify empiric treatment for PID in a sexually active young woman with pelvic pain?",
+    "ch": [
+     "A documented positive NAAT for gonorrhea or chlamydia",
+     "An oral temperature above 101 F together with mucopurulent discharge",
+     "Laparoscopic visualization of inflamed fallopian tubes",
+     "Any one of cervical motion tenderness, uterine tenderness, or adnexal tenderness",
+     "All three of cervical motion, uterine, and adnexal tenderness present together"
+    ],
+    "correct": 3,
+    "exp": "Treatment is started empirically when just one minimum CDC criterion is present on exam — cervical motion tenderness, uterine tenderness, or adnexal tenderness — because presumptive therapy prevents irreversible tubal damage.",
+    "why": [
+     "Documented cervical gonorrhea or chlamydia is a supportive criterion that raises specificity, not a minimum requirement.",
+     "Fever and mucopurulent cervical discharge are additional supportive criteria, not the minimum threshold to treat.",
+     "Laparoscopy is the most specific criterion overall but is reserved for uncertain or refractory cases.",
+     "",
+     "Only one minimum criterion is needed; requiring all three would delay fertility-protecting therapy."
+    ]
+   },
+   {
+    "q": "The \"chandelier sign\" in pelvic inflammatory disease refers to which finding?",
+    "ch": [
+     "A palpable adnexal mass with peripherally displaced follicles on imaging",
+     "Rebound tenderness in the right lower quadrant on deep palpation",
+     "Referred shoulder-tip pain from blood irritating the diaphragm",
+     "Cervical motion tenderness from peritoneal irritation as the swollen adnexa move",
+     "A boggy, enlarged, tender uterus in a multiparous woman"
+    ],
+    "correct": 3,
+    "exp": "The chandelier sign is cervical motion tenderness so painful the patient reaches for the chandelier; it reflects peritoneal irritation as the swollen adnexa move and is the bimanual-exam hallmark of PID.",
+    "why": [
+     "That picture suggests an enlarged edematous ovary as seen in torsion, not cervical motion tenderness.",
+     "That is a peritoneal sign associated with appendicitis, not the cervical exam finding named here.",
+     "Referred shoulder pain suggests intraperitoneal blood, as in a ruptured ectopic pregnancy.",
+     "",
+     "A boggy tender uterus points to adenomyosis rather than PID."
+    ]
+   },
+   {
+    "q": "Which organisms are the classic pathogens of pelvic inflammatory disease?",
+    "ch": [
+     "Group B Streptococcus colonizing the vagina during pregnancy",
+     "Escherichia coli ascending from the urinary tract in isolation",
+     "Neisseria gonorrhoeae and Chlamydia trachomatis, often with anaerobes and endogenous vaginal flora",
+     "Candida albicans overgrowth of the endocervical canal",
+     "Treponema pallidum invading the fallopian tubes directly"
+    ],
+    "correct": 2,
+    "exp": "PID is an ascending polymicrobial infection: the classic sexually transmitted pathogens are Neisseria gonorrhoeae and Chlamydia trachomatis, with many cases also involving Mycoplasma genitalium, anaerobes, and endogenous vaginal flora including bacterial vaginosis organisms.",
+    "why": [
+     "GBS colonization is not the polymicrobial cause of PID described in this module.",
+     "PID ascends from the cervix and vagina; the classic pathogens are the sexually transmitted organisms.",
+     "",
+     "Candida does not cause ascending upper genital tract infection.",
+     "Syphilis is screened for alongside HIV in these patients but is not a PID pathogen."
+    ]
+   },
+   {
+    "q": "Which outpatient antibiotic regimen is recommended for pelvic inflammatory disease?",
+    "ch": [
+     "Doxycycline alone taken for a full 14 days",
+     "Clindamycin plus gentamicin given by mouth",
+     "Ceftriaxone plus doxycycline plus metronidazole",
+     "Metronidazole plus an NSAID for symptomatic control",
+     "Ceftriaxone alone as a single weight-based intramuscular dose"
+    ],
+    "correct": 2,
+    "exp": "Outpatient PID is treated with ceftriaxone plus doxycycline plus metronidazole, with the oral agents continued for 14 days; metronidazole supplies the anaerobic and bacterial-vaginosis coverage now recommended in most regimens.",
+    "why": [
+     "Doxycycline covers chlamydia and atypicals but not gonorrhea or anaerobes.",
+     "Clindamycin plus gentamicin is an alternative parenteral inpatient regimen, favored when a tubo-ovarian abscess is present.",
+     "",
+     "Metronidazole alone covers only anaerobes, and NSAIDs are supportive and never a substitute for antibiotics.",
+     "Ceftriaxone covers gonorrhea but leaves chlamydia and anaerobic organisms untreated."
+    ]
+   },
+   {
+    "q": "Which test must be obtained in every woman being evaluated for pelvic inflammatory disease, and is the most commonly missed step?",
+    "ch": [
+     "An erythrocyte sedimentation rate with C-reactive protein",
+     "A saline microscopy wet mount looking for white blood cells",
+     "Diagnostic laparoscopy of the pelvis",
+     "Blood cultures drawn from two separate sites",
+     "A urine or serum pregnancy test"
+    ],
+    "correct": 4,
+    "exp": "Always obtain a urine or serum pregnancy test — a positive beta-hCG with adnexal tenderness reprioritizes the differential toward ectopic pregnancy and surgical or obstetric evaluation, and it must precede teratogenic drugs like doxycycline.",
+    "why": [
+     "ESR and CRP are supportive criteria that raise specificity but do not change the differential the way pregnancy status does.",
+     "Abundant WBCs on saline microscopy support the diagnosis but cannot exclude ectopic pregnancy.",
+     "Laparoscopy is the most specific criterion but is reserved for uncertain or refractory cases.",
+     "Blood cultures are not part of the described PID workup.",
+     ""
+    ]
+   },
+   {
+    "q": "A young woman with PID develops right upper quadrant pain with near-normal liver function tests. What is the likely explanation?",
+    "ch": [
+     "A tubo-ovarian abscess that has ruptured into the peritoneum",
+     "Fitz-Hugh-Curtis perihepatitis with violin-string adhesions",
+     "Hepatocellular injury caused by doxycycline therapy",
+     "Referred pain from intraperitoneal blood irritating the diaphragm",
+     "Acute cholecystitis requiring urgent cholecystectomy"
+    ],
+    "correct": 1,
+    "exp": "Right upper quadrant pain in a young woman with PID suggests Fitz-Hugh-Curtis syndrome — perihepatic spread producing violin-string adhesions on the liver capsule at laparoscopy, with liver function tests often near-normal.",
+    "why": [
+     "TOA rupture presents with a rigid abdomen, high fever, and hemodynamic instability, not isolated RUQ pain.",
+     "",
+     "Fitz-Hugh-Curtis is perihepatitis rather than hepatocellular disease, which is why the LFTs stay near-normal.",
+     "Blood irritating the diaphragm suggests a ruptured ectopic pregnancy rather than perihepatitis.",
+     "Perihepatitis mimics cholecystitis, but this is capsular inflammation from PID and the LFTs are typically near-normal."
+    ]
+   },
+   {
+    "q": "A woman with an intrauterine device is diagnosed with PID and started on antibiotics. What should be done with the IUD?",
+    "ch": [
+     "Leave it in place and reassess after 48-72 hours of therapy",
+     "Remove it immediately before the first antibiotic dose is given",
+     "Remove it and defer antibiotics until culture results return",
+     "Replace it with a combined oral contraceptive the same day",
+     "Admit her for parenteral clindamycin and gentamicin because of the device"
+    ],
+    "correct": 0,
+    "exp": "An IUD does not require removal in most cases of PID — start empiric antibiotics and reconsider removal only if there is no clinical improvement after 48-72 hours.",
+    "why": [
+     "",
+     "An IUD does not require removal in most cases; removal is considered only when there is no clinical improvement.",
+     "Antibiotics are started empirically without waiting for cultures, and immediate removal is unnecessary.",
+     "Contraceptive counseling can follow; the immediate priority is empiric antibiotic therapy.",
+     "An IUD by itself is not an admission criterion — admission is for TOA, pregnancy, severe illness, PO intolerance, or failed oral therapy."
+    ]
+   },
+   {
+    "q": "Tubal scarring from pelvic inflammatory disease leads to which classic set of sequelae?",
+    "ch": [
+     "Infertility, ectopic pregnancy, and chronic pelvic pain",
+     "Endometrial hyperplasia progressing to endometrial carcinoma",
+     "Ovarian torsion caused by an enlarging dermoid cyst",
+     "Premature ovarian insufficiency with a markedly elevated FSH",
+     "Cervical dysplasia progressing to invasive cervical carcinoma"
+    ],
+    "correct": 0,
+    "exp": "Tubal inflammation causes scarring that produces the classic sequelae of PID — infertility, ectopic pregnancy, and chronic pelvic pain — and the risk compounds with each episode.",
+    "why": [
+     "",
+     "Endometrial risk comes from unopposed estrogen in chronic anovulation, not from tubal scarring.",
+     "A dermoid lead point causes torsion and is unrelated to tubal scarring from infection.",
+     "Ovarian failure is not a described sequela of ascending tubal infection.",
+     "Cervical dysplasia is HPV-driven and is not a consequence of tubal inflammation."
+    ]
+   },
+   {
+    "q": "A 22-year-old with PID has a fever of 102 F and ultrasound showing a thick-walled adnexal mass with fluid-filled tubes. What is the appropriate disposition?",
+    "ch": [
+     "Refer her for outpatient diagnostic laparoscopy in one week",
+     "Discharge on oral doxycycline and metronidazole with follow-up in two weeks",
+     "Discharge after a single intramuscular dose of ceftriaxone",
+     "Observe without antibiotics until the ultrasound can be repeated",
+     "Admit for parenteral therapy because a tubo-ovarian abscess is present"
+    ],
+    "correct": 4,
+    "exp": "Admission is indicated for tubo-ovarian abscess, pregnancy, failed oral therapy, inability to tolerate oral intake, severe illness with high fever, or when a surgical emergency cannot be excluded; a TOA warrants inpatient parenteral cefotetan or cefoxitin plus doxycycline.",
+    "why": [
+     "Laparoscopy is reserved for uncertain or refractory cases and does not replace inpatient antibiotics for a TOA.",
+     "A tubo-ovarian abscess is an admission criterion, and oral outpatient therapy is not adequate for it.",
+     "One intramuscular dose neither treats a TOA nor supplies the 14 days of oral coverage.",
+     "Antibiotics are started empirically and immediately; withholding them risks irreversible tubal damage.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient treated for PID has had no clinical improvement after 72 hours of appropriate antibiotics. What does this suggest?",
+    "ch": [
+     "The expected course, since relief typically takes a full two weeks",
+     "A tubo-ovarian abscess, a resistant organism, or the wrong diagnosis",
+     "Doxycycline-induced esophagitis explaining her ongoing symptoms",
+     "A disulfiram-like reaction between metronidazole and alcohol",
+     "Reinfection from an untreated sexual partner during the course"
+    ],
+    "correct": 1,
+    "exp": "No improvement after 48-72 hours of appropriate therapy is a red flag suggesting a tubo-ovarian abscess, a resistant organism, or the wrong diagnosis, and it warrants reassessment including ultrasound.",
+    "why": [
+     "Clinical improvement should be confirmed within 48-72 hours, so its absence is a red flag rather than expected.",
+     "",
+     "Esophagitis from doxycycline causes retrosternal symptoms, not persistent pelvic pain and fever.",
+     "That reaction causes flushing and vomiting after alcohol, not persistent pelvic infection.",
+     "Partner treatment and abstinence prevent reinfection, but failure to improve within 72 hours points to abscess, resistance, or a wrong diagnosis."
+    ]
+   }
+  ]
+ },
+ "ectopic-pregnancy": {
+  "condition": "Ectopic Pregnancy",
+  "questions": [
+   {
+    "q": "What is the single most common site of an ectopic pregnancy?",
+    "ch": [
+     "The endocervical canal of the uterine cervix",
+     "The surface of the ovary itself",
+     "The interstitial or cornual segment of the tube",
+     "A prior cesarean section scar",
+     "The ampulla of the fallopian tube"
+    ],
+    "correct": 4,
+    "exp": "Over 95% of ectopic pregnancies are tubal, most commonly in the ampulla; interstitial or cornual, ovarian, cervical, cesarean-scar, and abdominal implantations are far rarer.",
+    "why": [
+     "Cervical implantation is one of the rare sites, not the most common one.",
+     "Ovarian implantation is rare compared with tubal implantation.",
+     "Interstitial and cornual ectopics are uncommon, though they tend to rupture later and bleed catastrophically.",
+     "Cesarean-scar implantation is listed among the rarer sites.",
+     ""
+    ]
+   },
+   {
+    "q": "A 24-year-old woman presents with unilateral pelvic pain and vaginal bleeding after a missed period. What is the first diagnostic step?",
+    "ch": [
+     "A serum progesterone level to assess viability",
+     "A CBC with type and crossmatch only",
+     "A urine or serum beta-hCG",
+     "Transvaginal ultrasound performed before any laboratory testing",
+     "Diagnostic laparoscopy of the pelvis"
+    ],
+    "correct": 2,
+    "exp": "The first step is a urine or serum beta-hCG — a positive test with no confirmed intrauterine pregnancy is an ectopic pregnancy until proven otherwise.",
+    "why": [
+     "Progesterone measurement is not part of the described workup.",
+     "Those are obtained when rupture is a concern, but they do not answer whether the patient is pregnant.",
+     "",
+     "TVUS is the key imaging test, but the first step is establishing pregnancy status with a beta-hCG.",
+     "Laparoscopy is not the first diagnostic step in a hemodynamically stable patient."
+    ]
+   },
+   {
+    "q": "What does the \"discriminatory zone\" describe in the evaluation of a possible ectopic pregnancy?",
+    "ch": [
+     "It is the beta-hCG below which methotrexate therapy always fails",
+     "It is the percentage rise in beta-hCG expected over 48 hours",
+     "An intrauterine gestational sac should be visible on TVUS once beta-hCG is roughly 1,500-3,500 mIU/mL",
+     "It is the beta-hCG level at which Rh(D) immune globulin becomes necessary",
+     "beta-hCG must exceed 10,000 mIU/mL before any gestational sac becomes visible"
+    ],
+    "correct": 2,
+    "exp": "The discriminatory zone is the beta-hCG level — roughly 1,500-3,500 mIU/mL — above which an intrauterine gestational sac should be visible on transvaginal ultrasound; its absence at that level strongly suggests an ectopic or nonviable pregnancy.",
+    "why": [
+     "The discriminatory zone is a sonographic visibility threshold, not a treatment-failure cutoff.",
+     "The expected rise of about 49-53% over 48 hours is a separate concept from the discriminatory zone.",
+     "",
+     "Rh(D) immune globulin is given based on Rh status and bleeding, not on a beta-hCG threshold.",
+     "The discriminatory zone is roughly 1,500-3,500 mIU/mL, far below that figure."
+    ]
+   },
+   {
+    "q": "In a stable patient with an indeterminate scan, what beta-hCG rise over 48 hours is expected in a normal intrauterine pregnancy?",
+    "ch": [
+     "A doubling every 12 hours without exception",
+     "A rise of at least about 49-53%",
+     "Any rise at all, however small, which confirms viability",
+     "A fall of at least 15% between days 4 and 7",
+     "No change, because beta-hCG plateaus early in normal pregnancy"
+    ],
+    "correct": 1,
+    "exp": "Serial beta-hCG is followed in stable patients with an indeterminate scan: a normal intrauterine pregnancy usually rises by at least about 49-53% over 48 hours, whereas a plateau or an abnormal rise or fall suggests an ectopic pregnancy.",
+    "why": [
+     "The benchmark is a rise of at least roughly 49-53% over 48 hours, not a 12-hour doubling.",
+     "",
+     "A suboptimal rise suggests a nonviable or ectopic gestation rather than confirming viability.",
+     "That 15% decline is the methotrexate response target, not the rise expected in a normal pregnancy.",
+     "A plateau is precisely the abnormal pattern that suggests an ectopic pregnancy."
+    ]
+   },
+   {
+    "q": "Which clinical picture makes a patient a candidate for methotrexate rather than surgery?",
+    "ch": [
+     "Breastfeeding with a known immunodeficiency and no reliable follow-up available",
+     "Hemodynamic instability with free pelvic fluid and peritoneal signs on exam",
+     "Documented fetal cardiac activity within a large adnexal mass on ultrasound",
+     "Stable and unruptured with a low or plateauing beta-hCG, a small mass, no fetal cardiac activity, and reliable follow-up",
+     "Active peptic ulcer disease with abnormal hepatic and renal laboratory studies"
+    ],
+    "correct": 3,
+    "exp": "Methotrexate is first-line for a stable, unruptured ectopic pregnancy meeting criteria — low or plateauing beta-hCG, a small mass, no fetal cardiac activity, and reliable follow-up — while rupture, instability, and hepatic, renal, or hematologic disease are contraindications.",
+    "why": [
+     "Breastfeeding, immunodeficiency, and unreliable follow-up each preclude methotrexate therapy.",
+     "Instability and rupture are contraindications to methotrexate and mandate emergent surgery.",
+     "Cardiac activity with a large mass or high beta-hCG favors surgical management instead.",
+     "",
+     "Hepatic, renal, and hematologic disease and active peptic ulcer disease are all contraindications to methotrexate."
+    ]
+   },
+   {
+    "q": "How is response to methotrexate for an ectopic pregnancy monitored?",
+    "ch": [
+     "Recheck on day 1 and expect the level to have already fallen",
+     "Expect a 15% decline measured from the day of dosing to day 4",
+     "Repeat the dose automatically on day 7 regardless of the trend",
+     "Stop surveillance as soon as the patient’s pain has resolved",
+     "Recheck beta-hCG on days 4 and 7, expecting at least a 15% decline between them"
+    ],
+    "correct": 4,
+    "exp": "After methotrexate, beta-hCG is rechecked on days 4 and 7 with an expected decline of at least 15% between those two values — the level may rise before it falls — and then weekly until nonpregnant levels are reached.",
+    "why": [
+     "The beta-hCG may rise before it falls, so an early value is not the endpoint.",
+     "The 15% decline is measured from day 4 to day 7, not from the day of dosing.",
+     "A second dose or surgery follows failure to achieve the expected decline, not a fixed schedule.",
+     "Beta-hCG is trended weekly to nonpregnant levels regardless of how the patient feels.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with a positive pregnancy test reports new referred pain in her shoulder. What does this Kehr sign indicate?",
+    "ch": [
+     "Intraperitoneal blood irritating the diaphragm, suggesting rupture",
+     "Perihepatic adhesions left by a prior chlamydial infection",
+     "Carbon dioxide retained in the abdomen after laparoscopic surgery",
+     "An expected methotrexate reaction related to photosensitivity",
+     "Referred pain arising from a distended urinary bladder"
+    ],
+    "correct": 0,
+    "exp": "Kehr sign — referred shoulder-tip pain — reflects intraperitoneal blood irritating the diaphragm and should be treated as rupture until proven otherwise.",
+    "why": [
+     "",
+     "Violin-string perihepatic adhesions belong to Fitz-Hugh-Curtis syndrome in PID.",
+     "Insufflated CO2 causes shoulder-tip pain after laparoscopy, but in an untreated ectopic this sign means intraperitoneal blood.",
+     "Photosensitivity is a cutaneous effect; shoulder pain is not an expected methotrexate reaction.",
+     "Bladder distension does not refer pain to the shoulder."
+    ]
+   },
+   {
+    "q": "An Rh-negative woman with an unruptured ectopic pregnancy and vaginal bleeding is treated medically. What must be given before discharge?",
+    "ch": [
+     "An NSAID for cramping pain during treatment",
+     "Rh(D) immune globulin to prevent alloimmunization",
+     "A prenatal vitamin containing folate",
+     "Immediate activation of the massive transfusion protocol",
+     "Folic acid supplementation to support the pregnancy"
+    ],
+    "correct": 1,
+    "exp": "Rh(D) immune globulin is given to Rh-negative patients with an ectopic pregnancy or first-trimester bleeding to prevent alloimmunization, and Rh status should be verified and documented in every pregnancy-related bleeding evaluation.",
+    "why": [
+     "NSAIDs are avoided during methotrexate treatment because they reduce clearance and increase toxicity.",
+     "",
+     "Folate-containing prenatal vitamins must be avoided until methotrexate treatment is complete.",
+     "Massive transfusion is for hemorrhagic shock from rupture, not for a stable patient managed medically.",
+     "Folate is held during methotrexate therapy because it blunts the drug’s antimetabolite effect."
+    ]
+   },
+   {
+    "q": "Which statement correctly contrasts salpingostomy with salpingectomy for a tubal ectopic pregnancy?",
+    "ch": [
+     "Salpingostomy preserves the tube but requires postoperative beta-hCG follow-up for persistent trophoblast",
+     "Salpingostomy removes the tube and eliminates any risk of recurrence",
+     "Both procedures require a dose of methotrexate afterward in every patient",
+     "Neither procedure requires beta-hCG follow-up once the specimen is confirmed",
+     "Salpingectomy preserves the tube and needs no further beta-hCG monitoring"
+    ],
+    "correct": 0,
+    "exp": "Salpingectomy removes the tube while salpingostomy preserves it, but tube-sparing surgery risks persistent trophoblast, so postoperative beta-hCG follow-up is required.",
+    "why": [
+     "",
+     "Salpingostomy preserves the tube, and salpingectomy is the tube-removing procedure.",
+     "Methotrexate is an alternative to surgery, not routine adjuvant therapy after it.",
+     "Tube-sparing surgery risks persistent trophoblast and therefore needs beta-hCG surveillance.",
+     "Salpingectomy removes the tube; it is salpingostomy that spares it and needs follow-up."
+    ]
+   },
+   {
+    "q": "After IVF, a patient has an intrauterine gestational sac plus a separate adnexal gestation on TVUS. What is this?",
+    "ch": [
+     "A normal intrauterine pregnancy, since the sac excludes an ectopic",
+     "A ruptured corpus luteum cyst accounting for the adnexal finding",
+     "An interstitial ectopic pregnancy that has already ruptured",
+     "A heterotopic pregnancy, which is notably more common after assisted reproduction",
+     "An incomplete abortion of the intrauterine gestation"
+    ],
+    "correct": 3,
+    "exp": "A heterotopic pregnancy — simultaneous intrauterine and ectopic gestation — is rare in spontaneous conception but notably more common after IVF or other assisted reproduction, so an intrauterine sac does not fully exclude a coexisting ectopic in that setting.",
+    "why": [
+     "An intrauterine sac does not fully exclude a coexisting ectopic pregnancy after IVF or ART.",
+     "A ruptured corpus luteum cyst is on the differential but does not explain a separate adnexal gestation.",
+     "Interstitial ectopics rupture later and bleed catastrophically, but the finding here is a coexisting intrauterine and ectopic gestation.",
+     "",
+     "Incomplete abortion is a differential item for early bleeding and does not account for the adnexal gestation."
+    ]
+   }
+  ]
+ },
+ "ovarian-torsion": {
+  "condition": "Ovarian Torsion",
+  "questions": [
+   {
+    "q": "What is the correct sequence of vascular events in ovarian torsion?",
+    "ch": [
+     "Venous and lymphatic outflow are occluded first, and continued torsion then compromises arterial inflow",
+     "Hemorrhage into the ovarian stroma ruptures the capsule at the outset",
+     "Arterial inflow stops first, causing immediate infarction of the ovary",
+     "Only lymphatic drainage is affected, so true ischemia never develops",
+     "Bacterial invasion of the pedicle produces inflammatory thrombosis"
+    ],
+    "correct": 0,
+    "exp": "The ovary rotates on its vascular pedicle, first occluding low-pressure venous and lymphatic outflow to produce congestion and edema; continued torsion then compromises arterial inflow, leading to ischemia and necrosis.",
+    "why": [
+     "",
+     "The initial event is venous and lymphatic congestion with edema, not capsular rupture.",
+     "Low-pressure venous and lymphatic outflow is occluded first, and arterial compromise follows.",
+     "Continued torsion does compromise arterial inflow and leads to ischemia and necrosis.",
+     "Torsion is mechanical rotation on the vascular pedicle, not an infectious process."
+    ]
+   },
+   {
+    "q": "What is the classic lead point for ovarian torsion?",
+    "ch": [
+     "A degenerating uterine leiomyoma",
+     "An ovarian endometrioma, or chocolate cyst",
+     "A mature cystic teratoma, or dermoid",
+     "A tubo-ovarian abscess from ascending infection",
+     "A cluster of arrested antral follicles in the ovary"
+    ],
+    "correct": 2,
+    "exp": "Torsion is almost always associated with an enlarged ovary or an adnexal mass of at least 5 cm, and the classic lead point is a benign mature cystic teratoma (dermoid).",
+    "why": [
+     "A degenerating fibroid is a differential diagnosis for the pain, not an adnexal lead point.",
+     "An endometrioma belongs to endometriosis; the classic torsion lead point is the dermoid.",
+     "",
+     "A TOA complicates pelvic inflammatory disease and sits on the differential rather than serving as the lead point.",
+     "Arrested antral follicles describe polycystic ovarian morphology."
+    ]
+   },
+   {
+    "q": "What is the most heavily tested pearl about Doppler ultrasound in suspected ovarian torsion?",
+    "ch": [
+     "Doppler findings determine whether a beta-hCG is needed",
+     "Preserved arterial flow reliably excludes the diagnosis",
+     "Absent flow is an early and reassuring finding",
+     "Preserved arterial flow does not rule out torsion",
+     "Doppler is more specific than the whirlpool sign"
+    ],
+    "correct": 3,
+    "exp": "Doppler flow present does NOT rule out torsion — the dual arterial supply (ovarian artery plus a uterine artery branch) and the possibility of intermittent torsion mean arterial flow may persist, while absent flow is a late and ominous finding.",
+    "why": [
+     "beta-hCG is obtained first regardless of imaging, to exclude ectopic pregnancy.",
+     "Because of the dual arterial supply and intermittent torsion, flow may persist in a torsed ovary.",
+     "Absent flow is a late, ominous finding indicating advanced ischemia.",
+     "",
+     "The whirlpool sign of the twisted pedicle is the highly specific sonographic finding."
+    ]
+   },
+   {
+    "q": "The \"whirlpool sign\" on pelvic ultrasound represents which structure?",
+    "ch": [
+     "Violin-string adhesions over the liver capsule",
+     "The twisted vascular pedicle",
+     "A homogeneous ground-glass cystic adnexal mass",
+     "Thick, fluid-filled fallopian tubes",
+     "Free intraperitoneal fluid with an empty uterus"
+    ],
+    "correct": 1,
+    "exp": "The whirlpool sign represents the twisted vascular pedicle and is highly specific for ovarian torsion; an enlarged, edematous ovary with peripherally displaced follicles is another classic sonographic clue.",
+    "why": [
+     "Violin-string perihepatic adhesions are the Fitz-Hugh-Curtis finding in PID.",
+     "",
+     "A ground-glass cystic mass describes an ovarian endometrioma.",
+     "Thickened fluid-filled tubes suggest a tubo-ovarian abscess in PID.",
+     "That pattern suggests a ruptured ectopic pregnancy."
+    ]
+   },
+   {
+    "q": "Why does the right ovary torse more often than the left?",
+    "ch": [
+     "Dermoid cysts arise almost exclusively on the right side",
+     "Prior appendicitis on the right predisposes to adhesions",
+     "The sigmoid colon may stabilize the left adnexa",
+     "The right ovarian vein drains directly into the inferior vena cava",
+     "The right ovary is normally substantially larger than the left"
+    ],
+    "correct": 2,
+    "exp": "The right ovary torses more often than the left because the sigmoid colon may stabilize, or splint, the left adnexa.",
+    "why": [
+     "The dermoid is the classic lead point on either side; the sigmoid colon explains the side difference.",
+     "Appendicitis is a differential diagnosis rather than the explanation for side predilection.",
+     "",
+     "The stated reason is that the sigmoid colon splints the left side, not the venous drainage anatomy.",
+     "Side predilection is attributed to the sigmoid colon stabilizing the left adnexa, not to a size difference."
+    ]
+   },
+   {
+    "q": "Which laboratory test should be obtained first in a woman with sudden severe unilateral pelvic pain and a suspected adnexal mass?",
+    "ch": [
+     "Tumor markers, to characterize the adnexal mass",
+     "beta-hCG, to exclude ectopic pregnancy",
+     "A white blood cell count, because leukocytosis confirms torsion",
+     "An erythrocyte sedimentation rate",
+     "A urinalysis, to diagnose nephrolithiasis first"
+    ],
+    "correct": 1,
+    "exp": "beta-hCG is obtained first to exclude ectopic pregnancy or confirm pregnancy; the remaining labs are nonspecific and mainly serve to exclude alternative diagnoses.",
+    "why": [
+     "Tumor markers may be considered if a mass needs characterization, but pregnancy testing comes first.",
+     "",
+     "Mild leukocytosis may be present, but labs are nonspecific and cannot confirm torsion.",
+     "Inflammatory markers are not part of the described torsion workup.",
+     "Nephrolithiasis is on the differential, but excluding ectopic pregnancy comes first."
+    ]
+   },
+   {
+    "q": "At laparoscopy for torsion, the ovary appears dusky. What is the recommended management?",
+    "ch": [
+     "Urgent initiation of a combined oral contraceptive in the emergency department",
+     "Oophorectomy whenever the ovary appears dusky at surgery",
+     "Observation with analgesia until Doppler flow disappears",
+     "Antibiotics alone, because infection drives the ischemia",
+     "Detorsion with ovarian conservation, since most dusky ovaries recover"
+    ],
+    "correct": 4,
+    "exp": "Management is detorsion with ovarian conservation even when the ovary looks dusky — most recover — with oophorectomy reserved for frank necrosis or malignancy concern, plus cystectomy of the lead point and possible oophoropexy for recurrence.",
+    "why": [
+     "Ovarian suppression is an outpatient measure to reduce recurrence, not an acute treatment.",
+     "Most dusky ovaries recover after detorsion; oophorectomy is reserved for frank necrosis or malignancy concern.",
+     "Absent flow is a late, ominous finding, and ischemia time drives outcome, so surgery must not be delayed.",
+     "Perioperative antibiotics are prophylactic only and are never a substitute for source control.",
+     ""
+    ]
+   },
+   {
+    "q": "What is the characteristic history of intermittent ovarian torsion?",
+    "ch": [
+     "Recurrent, self-limited episodes of pain from twisting and untwisting before a sustained event",
+     "Cyclic pain that begins one to two days before each menses",
+     "Pain that occurs only in patients undergoing ovulation induction",
+     "Steadily worsening pain that never remits at any point",
+     "Pain that is relieved only by a course of antibiotic therapy"
+    ],
+    "correct": 0,
+    "exp": "Torsion can be intermittent — twisting and untwisting — producing recurrent, self-limited pain before a complete, sustained torsion occurs.",
+    "why": [
+     "",
+     "Pain tied to the menstrual cycle suggests endometriosis rather than intermittent torsion.",
+     "Ovulation induction raises risk, but intermittent torsion is not limited to that setting.",
+     "Intermittent torsion produces episodes that resolve and then recur.",
+     "Torsion is mechanical, and antibiotics do not relieve it."
+    ]
+   },
+   {
+    "q": "A 19-year-old has sudden severe right pelvic pain, vomiting, and a 6 cm adnexal mass; Doppler shows preserved arterial flow. What is the next step?",
+    "ch": [
+     "Start a combined oral contraceptive and reassess in a month",
+     "Treat her empirically for pelvic inflammatory disease",
+     "Discharge her, because normal Doppler flow excludes torsion",
+     "Repeat the ultrasound in two weeks as an outpatient",
+     "Proceed to diagnostic laparoscopy despite the reassuring Doppler study"
+    ],
+    "correct": 4,
+    "exp": "When clinical suspicion for torsion remains high despite reassuring imaging, proceed to diagnostic laparoscopy — imaging supports but does not exclude the diagnosis, and ischemia time is the enemy.",
+    "why": [
+     "Ovarian suppression is not an acute treatment and the evidence for preventing recurrence is limited.",
+     "PID is on the differential, but empiric antibiotics do not address a twisted vascular pedicle.",
+     "Preserved arterial flow never excludes torsion, so a reassuring study cannot justify discharge.",
+     "Ischemia time drives outcome, so imaging must not delay a strongly suspected case.",
+     ""
+    ]
+   },
+   {
+    "q": "A 9-year-old girl is found to have torsion of a normal-sized ovary. What explains this?",
+    "ch": [
+     "Torsion cannot occur without an adnexal mass at any age",
+     "Ovulation induction is the only risk factor operating in this age group",
+     "Preserved Doppler flow makes torsion impossible in a child",
+     "A long mesosalpinx or utero-ovarian ligament allows a normal ovary to torse",
+     "A dermoid cyst is invariably present even when the imaging looks normal"
+    ],
+    "correct": 3,
+    "exp": "A normal-sized ovary rarely torses, but young girls can torse a normal ovary because of a long mesosalpinx or utero-ovarian ligament; in adults, ovulation induction, IVF, and pregnancy enlarge the ovaries and raise risk.",
+    "why": [
+     "A normal-sized ovary rarely torses, yet it does so in young girls with a long mesosalpinx.",
+     "Ovulation induction, IVF, and pregnancy raise risk through enlarged ovaries, but none apply to a young girl.",
+     "Preserved flow never excludes torsion at any age.",
+     "",
+     "A mass of at least 5 cm is the usual lead point in adults, but a young girl can torse a normal ovary without one."
+    ]
+   }
+  ]
+ }
+}

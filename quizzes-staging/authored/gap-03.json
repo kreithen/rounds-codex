@@ -1,0 +1,977 @@
+{
+ "hypovolemia": {
+  "condition": "Hypovolemia / Fluid Volume Deficit",
+  "questions": [
+   {
+    "q": "Which description most accurately characterizes hypovolemia as an isotonic fluid loss?",
+    "ch": [
+     "Pure water is lost, so serum sodium and osmolality rise while total body sodium is unchanged",
+     "Water and sodium are lost in roughly equal proportion, contracting the extracellular space while serum osmolality stays near normal",
+     "Sodium is lost far in excess of water, so serum osmolality climbs well above normal",
+     "Fluid shifts out of the extracellular space into the cells, leaving total body water unchanged",
+     "Total body sodium and water are both increased but trapped in the interstitium as edema"
+    ],
+    "correct": 1,
+    "exp": "Hypovolemia is an isotonic loss: water and solute, mainly sodium, leave in roughly equal proportion, so the extracellular (intravascular plus interstitial) space contracts while serum osmolality often stays near normal.",
+    "why": [
+     "Pure water loss with rising sodium and osmolality is dehydration, a concentration problem rather than an isotonic volume loss.",
+     "",
+     "Losing sodium out of proportion to water lowers serum osmolality; isotonic loss keeps osmolality near normal.",
+     "Hypovolemia is a true deficit of extracellular fluid volume, not a redistribution that leaves total body water unchanged.",
+     "Excess total body sodium and water pushed into the interstitium describes fluid volume overload, the opposite problem."
+    ]
+   },
+   {
+    "q": "Hypovolemia and dehydration overlap but are not the same. Which contrast is correct?",
+    "ch": [
+     "Dehydration contracts the extracellular space while hypovolemia contracts only the cells",
+     "Hypovolemia is a volume problem from losing salt and water together; dehydration is a concentration problem from losing water",
+     "Hypovolemia always raises the serum sodium while dehydration always lowers it",
+     "Hypovolemia is a concentration problem from pure water loss; dehydration is an isotonic volume deficit",
+     "Both are pure water deficits and differ only in how quickly the losses develop"
+    ],
+    "correct": 1,
+    "exp": "Hypovolemia is loss of salt plus water, a volume problem with osmolality near normal, while dehydration is loss of water with rising sodium and osmolality, a concentration problem; the labs and the treatment differ.",
+    "why": [
+     "Hypovolemia contracts the extracellular (intravascular and interstitial) space rather than selectively shrinking cells.",
+     "",
+     "Serum sodium in volume loss may be low, normal or high depending on the tonicity of the loss, so it is not fixed either way.",
+     "This reverses the two: pure water loss with rising sodium and osmolality is dehydration, not hypovolemia.",
+     "Neither is defined by speed of onset, and hypovolemia is not a pure water deficit because sodium leaves with the water."
+    ]
+   },
+   {
+    "q": "Which vital-sign change appears earliest as hypovolemia develops?",
+    "ch": [
+     "Hypotension",
+     "Bradycardia",
+     "Widening of the pulse pressure",
+     "A rising central venous pressure",
+     "Tachycardia"
+    ],
+    "correct": 4,
+    "exp": "Tachycardia is the earliest sign: falling preload lowers stroke volume, and baroreceptor-mediated sympathetic activation raises the heart rate long before the blood pressure falls.",
+    "why": [
+     "Hypotension is a late and ominous finding in volume loss, and waiting for the blood pressure to drop wastes the warning.",
+     "Baroreceptor-mediated sympathetic activation drives the heart rate up rather than slowing it down.",
+     "Falling stroke volume narrows the pulse pressure in hypovolemia, so widening is not the expected change.",
+     "Reduced preload lowers filling pressures, and a climbing central venous pressure suggests congestion instead.",
+     ""
+    ]
+   },
+   {
+    "q": "Which laboratory pattern supports volume depletion rather than intrinsic renal failure?",
+    "ch": [
+     "BUN:creatinine ratio under 10:1 with FENa above 2% and dilute urine",
+     "Urine sodium above 40 mEq/L with a low urine specific gravity",
+     "FENa above 1% with a normal BUN:creatinine ratio and a falling lactate",
+     "High urine sodium together with a rising hematocrit and a normal lactate",
+     "BUN:creatinine ratio above 20:1 with FENa under 1% and urine sodium under 20 mEq/L"
+    ],
+    "correct": 4,
+    "exp": "The prerenal signature of BUN:Cr above 20:1, FENa under 1%, urine sodium under 20 mEq/L and concentrated urine shows the kidney appropriately holding on to sodium, which distinguishes volume depletion from intrinsic renal failure.",
+    "why": [
+     "A low ratio with a high FENa and dilute urine points toward intrinsic renal failure such as ATN, not prerenal volume depletion.",
+     "High urine sodium with dilute urine means the kidney is not conserving sodium, which argues against volume depletion.",
+     "A FENa above 1% with a normal ratio does not show the avid sodium retention that defines the prerenal picture.",
+     "The rising hematocrit fits volume contraction, but high urine sodium contradicts the prerenal signature.",
+     ""
+    ]
+   },
+   {
+    "q": "Which orthostatic vital-sign change flags significant volume loss?",
+    "ch": [
+     "A pulse rise above 5 bpm or a systolic drop above 5 mmHg on standing",
+     "A diastolic rise above 10 mmHg on standing with an unchanged pulse",
+     "A pulse rise above 20 bpm or a systolic drop above 20 mmHg on standing",
+     "A systolic drop above 20 mmHg measured only while the patient stays lying flat",
+     "Any fall in oxygen saturation on standing regardless of pulse or blood pressure"
+    ],
+    "correct": 2,
+    "exp": "Orthostatic hypotension, a systolic drop above 20 mmHg, a diastolic drop above 10 mmHg, or a pulse rise above 20 bpm on standing, flags significant volume loss and explains the falls risk from orthostatic dizziness.",
+    "why": [
+     "Changes that small fall within normal variation and do not flag significant volume loss.",
+     "Orthostatic hypotension is a fall in pressure rather than a rise, and the pulse typically climbs at the same time.",
+     "",
+     "Orthostatics compare lying with standing, so a supine-only reading cannot demonstrate them.",
+     "Oxygen saturation is not part of orthostatic assessment, which tracks pulse and blood pressure with a change in position."
+    ]
+   },
+   {
+    "q": "Why are hypotonic fluids such as 0.45% saline and D5W inappropriate for acute resuscitation of hypovolemic shock?",
+    "ch": [
+     "They cause hyperchloremic metabolic acidosis when given in large volumes",
+     "They cannot be infused peripherally and always require central access",
+     "They distribute poorly to the intravascular space and can worsen hyponatremia",
+     "They bind sodium in the gut and block the glucose-sodium co-transport mechanism",
+     "They expand the intravascular space so fast that pulmonary edema is unavoidable"
+    ],
+    "correct": 2,
+    "exp": "Hypotonic fluids are for maintenance or free-water replacement once volume is restored: they distribute poorly to the intravascular space and can worsen hyponatremia, and sodium should be corrected no faster than about 10-12 mEq/L per 24 hr.",
+    "why": [
+     "Hyperchloremic metabolic acidosis is the large-volume normal saline problem, not a hypotonic fluid problem.",
+     "Route of access is not the limitation; the issue is that they do not stay in the intravascular compartment.",
+     "",
+     "Glucose-sodium co-transport is what oral rehydration solution exploits, and hypotonic IV fluids do not block it.",
+     "Hypotonic fluids are poor volume expanders, so excessively rapid intravascular expansion is not the problem with them."
+    ]
+   },
+   {
+    "q": "Which bedside measure is the most reliable indicator of a patient fluid status?",
+    "ch": [
+     "The thirst the patient reports on questioning",
+     "A single static central venous pressure reading",
+     "Skin turgor assessed once at the time of admission",
+     "Daily weights, where about 1 kg of change equals about 1 L of fluid",
+     "Serum sodium measured once each morning"
+    ],
+    "correct": 3,
+    "exp": "Strict intake and output plus daily weights are the backbone of monitoring, and weight is the most reliable measure of fluid status at roughly 1 kg of weight change per 1 L of fluid.",
+    "why": [
+     "Thirst is an early symptom of volume loss rather than a measurement of volume status.",
+     "A static central venous pressure is a poor guide, which is why dynamic measures of fluid responsiveness are preferred.",
+     "Skin turgor is a useful perfusion clue, but a single snapshot is far less reliable than a trend in weight.",
+     "",
+     "Serum sodium sorts the type of loss but does not quantify volume, since it may be low, normal or high."
+    ]
+   },
+   {
+    "q": "A patient in hypovolemic shock receives several liters of 0.9% normal saline. Which complication should be anticipated?",
+    "ch": [
+     "Hyperchloremic metabolic acidosis",
+     "Hypochloremic metabolic alkalosis",
+     "Osmotic demyelination from rapid sodium correction",
+     "Citrate-induced hypocalcemia",
+     "Hyperkalemia from the potassium content of the fluid"
+    ],
+    "correct": 0,
+    "exp": "Large-volume normal saline causes hyperchloremic metabolic acidosis, which is why balanced solutions such as Lactated Ringer or Plasma-Lyte are often preferred, though LR is avoided in significant hyperkalemia.",
+    "why": [
+     "",
+     "Large-volume saline delivers a chloride load, which acidifies rather than alkalinizes the blood.",
+     "Osmotic demyelination follows overly rapid sodium correction, not the chloride load of isotonic saline.",
+     "Citrate-induced hypocalcemia is a blood-product transfusion complication rather than a crystalloid one.",
+     "Normal saline contains no potassium; it is Lactated Ringer that is avoided in significant hyperkalemia."
+    ]
+   },
+   {
+    "q": "A trauma patient has ongoing bleeding, tachycardia and a narrowing pulse pressure after two liters of crystalloid. What does this patient need?",
+    "ch": [
+     "Norepinephrine titrated to a mean arterial pressure of at least 65 mmHg",
+     "0.45% saline infused to replace the free-water deficit",
+     "Oral rehydration solution given as small frequent sips",
+     "Balanced 1:1:1 transfusion with massive transfusion protocol activation and immediate source control",
+     "Continued crystalloid boluses alone until the blood pressure finally normalizes"
+    ],
+    "correct": 3,
+    "exp": "Hemorrhagic hypovolemia needs blood: balanced 1:1:1 transfusion with the massive transfusion protocol plus immediate hemostasis, because crystalloid alone worsens dilutional coagulopathy; watch for citrate-induced hypocalcemia and hyperkalemia.",
+    "why": [
+     "Vasopressors are not a substitute for volume, and using them on an empty tank worsens organ ischemia.",
+     "Hypotonic fluid is not a resuscitation fluid and does nothing for hemorrhagic shock.",
+     "Oral rehydration suits mild-to-moderate losses in a patient who can drink, not active hemorrhage.",
+     "",
+     "Crystalloid alone worsens dilutional coagulopathy and replaces neither oxygen-carrying capacity nor clotting factors."
+    ]
+   },
+   {
+    "q": "A hypotensive patient has already received fluid. Which approach best establishes whether more fluid will help?",
+    "ch": [
+     "A dynamic measure such as passive leg raise, IVC collapsibility or pulse pressure variation",
+     "A single static central venous pressure value",
+     "The serum sodium trend across the last 24 hours",
+     "Urine specific gravity on a single spot sample",
+     "Giving fluid empirically until the heart rate normalizes"
+    ],
+    "correct": 0,
+    "exp": "Fluid responsiveness is assessed dynamically with passive leg raise, IVC collapsibility or pulse pressure variation rather than a static CVP, because not every hypotensive patient benefits from more fluid and over-resuscitation causes edema and acidosis.",
+    "why": [
+     "",
+     "A static central venous pressure does not predict fluid responsiveness, which is why dynamic assessment is favored over it.",
+     "Serum sodium identifies the tonicity of the loss but says nothing about whether the patient is fluid responsive.",
+     "Concentrated urine supports volume depletion but does not tell you whether another bolus will raise cardiac output.",
+     "Not every hypotensive patient benefits from more fluid, and over-resuscitation causes edema and acidosis."
+    ]
+   }
+  ]
+ },
+ "fluid-overload": {
+  "condition": "Fluid Volume Overload",
+  "questions": [
+   {
+    "q": "Which description most accurately characterizes fluid volume overload?",
+    "ch": [
+     "Excess total body sodium and water expand the extracellular fluid volume, raising hydrostatic pressure and pushing fluid into the interstitium",
+     "Loss of water and sodium in equal proportion, contracting the extracellular space",
+     "Redistribution of fluid from the interstitium into the cells with normal total body sodium",
+     "Low hydrostatic pressure in the veins drawing fluid out of the interstitium",
+     "A pure excess of free water that lowers total body sodium without expanding any compartment"
+    ],
+    "correct": 0,
+    "exp": "Excess total body sodium and water expands the extracellular fluid volume, raising hydrostatic pressure and driving fluid into the interstitium as edema and into the vascular space as congestion.",
+    "why": [
+     "",
+     "Equal-proportion loss contracting the extracellular space is hypovolemia, the opposite problem.",
+     "Overload involves excess total body sodium rather than a shift into the cells at a normal sodium.",
+     "Overload raises hydrostatic pressure and pushes fluid into the interstitium instead of pulling it back out.",
+     "Overload is an excess of sodium and water together, so a pure water excess without volume expansion does not describe it."
+    ]
+   },
+   {
+    "q": "Which combination is the classic triad of decompensated left-sided congestion?",
+    "ch": [
+     "S3 gallop, jugular venous distention and crackles",
+     "Hepatojugular reflux, ascites and a low BNP",
+     "Flat neck veins, dry mucous membranes and oliguria",
+     "Tinnitus, tachypnea and vomiting",
+     "Miosis, respiratory depression and coma"
+    ],
+    "correct": 0,
+    "exp": "S3 gallop plus jugular venous distention plus crackles is the classic triad of decompensated left-sided congestion, usually alongside orthopnea, weight gain and dependent pitting edema.",
+    "why": [
+     "",
+     "Hepatojugular reflux and ascites do occur, but a low BNP argues against decompensated heart failure.",
+     "Flat neck veins with dry mucous membranes are signs of volume deficit rather than congestion.",
+     "That triad points to salicylate toxicity and has nothing to do with cardiac congestion.",
+     "Those are the features of opioid overdose and are unrelated to congestion."
+    ]
+   },
+   {
+    "q": "Which chest X-ray findings are the fingerprint of pulmonary venous congestion?",
+    "ch": [
+     "A collapsible inferior vena cava with a small hyperdynamic left ventricle",
+     "Diffuse A-lines on lung ultrasound with clear costophrenic angles",
+     "Cephalization and Kerley B lines with pleural effusions",
+     "Hyperinflation with flattened diaphragms and a narrow cardiac silhouette",
+     "A focal lobar consolidation with air bronchograms"
+    ],
+    "correct": 2,
+    "exp": "Cephalization, Kerley B lines and effusions on chest X-ray are the fingerprint of pulmonary venous congestion, and bedside lung ultrasound shows diffuse B-lines with IVC plethora.",
+    "why": [
+     "Those are ultrasound findings of volume depletion and the opposite of the IVC plethora seen in congestion.",
+     "Congestion produces diffuse B-lines on lung ultrasound, so A-lines argue against interstitial fluid.",
+     "",
+     "Those changes suggest air trapping rather than the pulmonary venous congestion of volume overload.",
+     "A focal consolidation suggests pneumonia rather than the diffuse congestion pattern of overload."
+    ]
+   },
+   {
+    "q": "How should daily weights be obtained, and what change warrants notifying the provider?",
+    "ch": [
+     "Whenever convenient during the shift, reporting only a gain above 20 lb in a month",
+     "On admission and again at discharge, reporting any difference between the two",
+     "Once weekly after the diuretic dose, reporting a loss of more than 1 lb",
+     "At the same time, on the same scale, in the same clothing, reporting a gain of 2-3 lb in a day or 5 lb in a week",
+     "Estimated from the degree of pitting edema instead of using a scale at all"
+    ],
+    "correct": 3,
+    "exp": "Daily weights at the same time, on the same scale, in the same clothing are the cheapest and most sensitive volume monitor; a gain of 2-3 lb in a day or 5 lb in a week signals fluid retention and warrants provider notification.",
+    "why": [
+     "Inconsistent timing makes the trend meaningless, and waiting for a 20 lb gain misses early fluid retention entirely.",
+     "A single before-and-after pair cannot detect day-to-day retention or show the response to a diuretic.",
+     "Weights are taken daily rather than weekly, and modest weight loss is the goal of diuresis rather than a concern.",
+     "",
+     "Pitting edema is graded on exam but cannot replace the measured weight, the most sensitive volume monitor available."
+    ]
+   },
+   {
+    "q": "Which drug class is first-line to remove sodium and water in congestive overload?",
+    "ch": [
+     "A mineralocorticoid receptor antagonist used alone for acute pulmonary edema",
+     "An SGLT2 inhibitor used as the sole agent for acute decongestion",
+     "Hypotonic 0.45% saline given to dilute the retained sodium",
+     "Isotonic crystalloid boluses of normal saline or Lactated Ringer",
+     "Loop diuretics such as furosemide, bumetanide or torsemide"
+    ],
+    "correct": 4,
+    "exp": "Loop diuretics such as furosemide, bumetanide and torsemide are first-line to remove sodium and water in congestive overload; monitor potassium, magnesium and renal function and watch for ototoxicity with rapid high-dose IV push.",
+    "why": [
+     "MRAs are preferred in cirrhosis and are disease-modifying in HFrEF, but IV loop diuretics decongest acute pulmonary edema.",
+     "SGLT2 inhibitors are guideline-directed therapy providing only mild osmotic diuresis, not first-line acute decongestion.",
+     "Adding fluid, especially free water, worsens the overload and can deepen a coexisting hyponatremia.",
+     "Isotonic crystalloid replaces a volume deficit and would only add to the congestion here.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient on high-dose IV furosemide has falling urine output and a weight that will not drop, so metolazone is added. When should the metolazone be given?",
+    "ch": [
+     "At the same moment as a potassium-sparing agent, replacing the loop diuretic entirely",
+     "Only once the serum potassium has risen above the normal range",
+     "At bedtime, several hours after the loop diuretic has finished working",
+     "Only after ultrafiltration has already been started",
+     "About 30 minutes before the loop diuretic, to achieve sequential nephron blockade"
+    ],
+    "correct": 4,
+    "exp": "Adding metolazone about 30 minutes before the loop diuretic unlocks diuretic resistance through sequential nephron blockade; the combination is potent, so watch closely for hypokalemia, hyponatremia and volume depletion.",
+    "why": [
+     "Metolazone is added to the loop diuretic rather than substituted for it, and pairing it this way does not address resistance.",
+     "The combination causes hypokalemia rather than hyperkalemia, so a high potassium is not what triggers adding it.",
+     "Dosing well after the loop diuretic wastes the sequential blockade, which depends on the two agents acting together.",
+     "Metolazone is tried to unlock diuretic resistance before escalating to mechanical fluid removal.",
+     ""
+    ]
+   },
+   {
+    "q": "Which diuretic is preferred for the ascites of cirrhosis?",
+    "ch": [
+     "Furosemide as the sole therapy",
+     "Sacubitril-valsartan",
+     "Spironolactone",
+     "Metolazone used alone",
+     "Hydrochlorothiazide used alone"
+    ],
+    "correct": 2,
+    "exp": "In cirrhosis, think spironolactone first because distal sodium avidity from hyperaldosteronism drives the ascites; watch for hyperkalemia, especially with CKD or an ACE inhibitor or ARB.",
+    "why": [
+     "Loop diuretics have a role in congestion, but the rule for cirrhosis is spironolactone first.",
+     "ARNI therapy blunts RAAS-driven sodium retention in heart failure and is not the diuretic of choice for ascites.",
+     "",
+     "Metolazone is a thiazide-type agent added to a loop diuretic for resistance, not the preferred first agent in ascites.",
+     "A thiazide alone does not address the distal sodium avidity from hyperaldosteronism that drives the ascites."
+    ]
+   },
+   {
+    "q": "A patient is clearly fluid overloaded and also hyponatremic. What does this indicate and what follows from it?",
+    "ch": [
+     "Diuretic resistance, so ultrafiltration should be started immediately",
+     "Excess water more than salt, so free water should be restricted rather than only chasing the sodium",
+     "Over-diuresis, so all diuretics should stop and fluids should be liberalized",
+     "Nephrotic syndrome, confirmed once an ACE inhibitor lowers the urine protein",
+     "A pure sodium deficit, so hypertonic saline boluses should run until the sodium normalizes"
+    ],
+    "correct": 1,
+    "exp": "A patient who is fluid overloaded but hyponatremic has excess water more than salt, so free-water restriction is key alongside the ordered sodium and fluid limits and reinforced daily weights.",
+    "why": [
+     "Hyponatremia with overload is a free-water problem and is not what defines diuretic resistance.",
+     "",
+     "Liberalizing fluid intake in a patient with excess water worsens both the congestion and the hyponatremia.",
+     "Urine protein is worth checking for a renal cause, but it neither explains the water excess nor sets the immediate plan.",
+     "The problem is too much water rather than too little total body sodium, so loading sodium is not the answer."
+    ]
+   },
+   {
+    "q": "A patient has severe dyspnea, hypoxia, pink frothy sputum and diffuse crackles from acute pulmonary edema. Which nursing actions come first?",
+    "ch": [
+     "Give potassium and magnesium first and hold the diuretic until the levels return",
+     "Position upright in high Fowler position, apply oxygen, and give the ordered IV loop diuretic",
+     "Lay the patient flat and give an isotonic fluid bolus",
+     "Elevate the legs above the heart and withhold oxygen until a blood gas returns",
+     "Begin sodium and fluid restriction teaching and recheck the weight in the morning"
+    ],
+    "correct": 1,
+    "exp": "Assess respiratory status first with lung sounds, work of breathing and SpO2, then position upright in high Fowler position, apply oxygen and give IV diuresis, considering noninvasive ventilation if hypoxic respiratory failure threatens.",
+    "why": [
+     "Electrolytes are monitored after diuresis, and delaying decongestion in respiratory distress is unsafe.",
+     "",
+     "Lying flat worsens the work of breathing, and a fluid bolus adds volume to an already congested circulation.",
+     "Raising the legs increases venous return to a congested circulation, and oxygen must not wait on a laboratory result.",
+     "Sodium and fluid limits with daily weights matter for prevention but do nothing for acute hypoxic distress right now."
+    ]
+   },
+   {
+    "q": "Urine output is declining and the weight is not falling despite adequate loop and thiazide dosing. What comes next?",
+    "ch": [
+     "Switch to oral furosemide at the same dose and reassess in a week",
+     "Add an SGLT2 inhibitor as the sole decongestive strategy",
+     "Give isotonic crystalloid to improve renal perfusion and restart the diuresis",
+     "Ultrafiltration or dialysis for mechanical fluid removal",
+     "Stop the diuretics and rely on sodium restriction alone"
+    ],
+    "correct": 3,
+    "exp": "That is diuretic resistance: after ensuring adequate dosing and combining agents for sequential nephron blockade, escalate to ultrafiltration or dialysis, which needs vascular access and hemodynamic monitoring and must avoid overly rapid removal causing hypotension.",
+    "why": [
+     "Acute congestion calls for IV loop diuretics, and a week of waiting is not an option in a decompensating patient.",
+     "SGLT2 inhibitors are guideline-directed therapy with only mild osmotic diuresis and will not rescue refractory congestion.",
+     "Adding volume to a congested patient worsens the overload rather than restoring the diuretic response.",
+     "",
+     "Sodium and fluid restriction is a cornerstone of control but cannot clear volume already retained in refractory overload."
+    ]
+   }
+  ]
+ },
+ "acetaminophen-od": {
+  "condition": "Acetaminophen Overdose",
+  "questions": [
+   {
+    "q": "Which sequence explains hepatotoxicity in acetaminophen overdose?",
+    "ch": [
+     "Sulfation is blocked by alcohol, producing an anion-gap acidosis as the primary injury",
+     "Acetaminophen itself binds hepatocyte proteins directly without being metabolized at all",
+     "CYP2E1 is inhibited, so unmetabolized drug accumulates in the biliary tree",
+     "Glucuronidation and sulfation saturate, more drug shunts through CYP2E1 to NAPQI, and glutathione is depleted",
+     "Hepatic glutathione stores rise and trap the drug in the centrilobular zone"
+    ],
+    "correct": 3,
+    "exp": "In overdose glucuronidation and sulfation saturate and more drug is shunted through CYP2E1 to NAPQI; once hepatic glutathione falls to roughly 30%, free NAPQI binds hepatocyte proteins, which is why NAC, a glutathione precursor, is the antidote.",
+    "why": [
+     "Acidosis is a marker of severity in this poisoning, not the primary mechanism of hepatocyte injury.",
+     "The parent drug is not the toxin; hepatocyte injury comes from the reactive metabolite NAPQI.",
+     "Overdose shunts more drug through CYP2E1 rather than inhibiting it, and biliary accumulation is not the mechanism.",
+     "",
+     "Glutathione is depleted rather than increased, and once it falls free NAPQI binds hepatocyte proteins."
+    ]
+   },
+   {
+    "q": "Which histologic pattern is classic for acetaminophen hepatotoxicity?",
+    "ch": [
+     "Centrilobular (zone 3) necrosis",
+     "Diffuse macrovesicular steatosis without necrosis",
+     "Granulomatous inflammation of the portal tracts",
+     "Bile duct destruction producing a cholestatic picture",
+     "Periportal (zone 1) necrosis"
+    ],
+    "correct": 0,
+    "exp": "Zone 3 centrilobular necrosis is the classic histology because CYP2E1, the enzyme that generates NAPQI, concentrates in that zone.",
+    "why": [
+     "",
+     "The lesion is hepatocyte necrosis rather than fat accumulation without cell death.",
+     "Granulomas are not a feature of NAPQI-mediated hepatocyte injury.",
+     "The pattern is hepatocellular, with transaminases rising into the thousands, rather than a ductal cholestatic injury.",
+     "Injury concentrates in zone 3 because CYP2E1 concentrates there, so a periportal pattern is not expected."
+    ]
+   },
+   {
+    "q": "What is characteristic of Stage 1, the first 24 hours after a potentially lethal acetaminophen ingestion?",
+    "ch": [
+     "Recovery with liver enzymes already returning toward normal",
+     "The patient is asymptomatic or has only nausea and vomiting",
+     "Right upper quadrant pain with transaminases already rising steeply",
+     "Fulminant hepatic failure with encephalopathy and a climbing INR",
+     "Tinnitus and hyperpnea from a mixed acid-base disorder"
+    ],
+    "correct": 1,
+    "exp": "The silent early phase is the trap: in the first 24 hours patients are often asymptomatic or have only nausea and vomiting, so a well-appearing patient can be in the middle of a lethal poisoning.",
+    "why": [
+     "Recovery or death is Stage 4 and comes well after the first 24 hours.",
+     "",
+     "RUQ pain with rising transaminases belongs to Stage 2, roughly 24 to 72 hours after ingestion.",
+     "Peak hepatotoxicity and fulminant failure define Stage 3, about 72 to 96 hours after ingestion.",
+     "Tinnitus with hyperpnea is the salicylate toxidrome rather than early acetaminophen toxicity."
+    ]
+   },
+   {
+    "q": "When must the serum acetaminophen level be drawn for the Rumack-Matthew nomogram to be interpretable, and what is the treatment line?",
+    "ch": [
+     "At whatever time is convenient, since the nomogram corrects for elapsed time automatically",
+     "At or after 4 hours post-ingestion, with a treatment line of 150 mcg/mL at 4 hours",
+     "Immediately on arrival, with a treatment line of 150 mcg/mL at that moment",
+     "At 2 hours post-ingestion, with a treatment line of 50 mcg/mL",
+     "At 24 hours post-ingestion, with a treatment line of 10 mcg/mL"
+    ],
+    "correct": 1,
+    "exp": "The Rumack-Matthew nomogram starts at 4 hours with a treatment line of 150 mcg/mL at 4 h, so the level must be drawn at or after 4 hours post-ingestion, and establishing the exact time of ingestion drives every decision.",
+    "why": [
+     "Timing is everything: the nomogram is read against the hours since a single acute ingestion and cannot correct for an unknown time.",
+     "",
+     "A level before 4 hours cannot be plotted because absorption is incomplete and the nomogram is invalid there.",
+     "Two hours is too early for the nomogram, and that is not its treatment threshold.",
+     "The nomogram is invalid beyond 24 hours, so a level drawn then cannot be plotted against any line."
+    ]
+   },
+   {
+    "q": "In which situation is the Rumack-Matthew nomogram invalid?",
+    "ch": [
+     "A single acute ingestion with the level drawn at 6 hours",
+     "A single acute ingestion with the level drawn at 10 hours",
+     "A staggered ingestion spread over two days with an unknown total dose",
+     "A single acute ingestion in a patient who has vomited once since",
+     "A single acute ingestion in a patient whose transaminases are still normal"
+    ],
+    "correct": 2,
+    "exp": "The nomogram is valid only for a single acute ingestion between 4 and 24 hours, never before 4 h, after 24 h, or for staggered ingestions, and in those cases NAC is started without relying on it.",
+    "why": [
+     "That is precisely what the nomogram was built for, a single acute ingestion sampled between 4 and 24 hours.",
+     "Ten hours falls inside the valid 4-to-24-hour window for a single acute ingestion.",
+     "",
+     "Vomiting does not invalidate the nomogram, since a documented single ingestion time still allows the level to be plotted.",
+     "Normal transaminases are expected early and have no bearing on whether the nomogram applies."
+    ]
+   },
+   {
+    "q": "The acetaminophen level will not return until 10 hours after a known ingestion. What should be done?",
+    "ch": [
+     "Start N-acetylcysteine empirically now rather than waiting for the result",
+     "Correct the INR with fresh frozen plasma while awaiting the level",
+     "Wait for the level and start NAC only if it plots above the treatment line",
+     "Withhold NAC because it is ineffective once transaminases begin to rise",
+     "Give activated charcoal instead and reassess again in the morning"
+    ],
+    "correct": 0,
+    "exp": "NAC is nearly 100% hepatoprotective when started within 8 hours, so if the level cannot return inside that window it should be started empirically, and it is given even late or in established liver failure.",
+    "why": [
+     "",
+     "Routine INR correction is avoided because the INR is a key transplant prognostic marker.",
+     "Waiting past the 8-hour window forfeits near-complete hepatoprotection for a result that would not change the plan.",
+     "NAC is given even late, beyond 24 hours and in established liver failure, so rising transaminases do not withhold it.",
+     "Charcoal is most useful within 1 to 2 hours of ingestion and is no substitute for the antidote."
+    ]
+   },
+   {
+    "q": "Twenty minutes into an IV NAC infusion the patient develops flushing and urticaria. What is the correct response?",
+    "ch": [
+     "Switch to activated charcoal as the definitive antidote instead",
+     "Give fresh frozen plasma to blunt the reaction",
+     "Stop NAC permanently and document a true allergy to acetylcysteine",
+     "Continue at the same rate, since flushing is expected and entirely harmless",
+     "Recognize a rate-related anaphylactoid reaction, slow or pause the infusion, and notify the provider"
+    ],
+    "correct": 4,
+    "exp": "Anaphylactoid reactions to IV NAC such as flushing, urticaria and wheezing are rate-related, so slow or pause the infusion and notify the provider rather than automatically abandoning the antidote.",
+    "why": [
+     "Charcoal binds unabsorbed drug and is neither an antidote nor a replacement for NAC.",
+     "Plasma is considered for active bleeding or before invasive procedures in coagulopathy, not for infusion reactions.",
+     "The reaction is rate-related, so abandoning the antidote outright is the wrong move in a poisoning this lethal.",
+     "The infusion should be slowed or paused and the provider notified rather than pushed on unchanged.",
+     ""
+    ]
+   },
+   {
+    "q": "Why is routine correction of the INR discouraged in acetaminophen-induced acute liver failure?",
+    "ch": [
+     "Vitamin K worsens centrilobular necrosis by further inducing CYP2E1",
+     "Coagulopathy in this setting never causes clinically important bleeding",
+     "A normal INR is required before activated charcoal can be given safely",
+     "Fresh frozen plasma inactivates N-acetylcysteine and blunts its hepatoprotection",
+     "The INR is a key transplant prognostic marker and masking it can delay listing"
+    ],
+    "correct": 4,
+    "exp": "Correct coagulopathy only for active bleeding or before invasive procedures, because the INR is a key transplant prognostic marker in the King College Criteria and normalizing it can delay listing.",
+    "why": [
+     "Vitamin K does not drive NAPQI formation, since enzyme induction comes from chronic alcohol use and other inducers.",
+     "Bleeding can occur, and correction is appropriate for active bleeding or before an invasive procedure.",
+     "Charcoal depends on a protected airway and a recent ingestion rather than on the INR.",
+     "Plasma does not interfere with NAC; the concern is losing the prognostic information the INR carries.",
+     ""
+    ]
+   },
+   {
+    "q": "Which findings meet King College Criteria and should trigger transplant-center referral?",
+    "ch": [
+     "An acetaminophen level plotting above the 150 line at 4 hours",
+     "AST and ALT in the thousands with a normal INR and normal mental status",
+     "Nausea and vomiting within the first 24 hours of ingestion",
+     "Arterial pH below 7.3, or the triad of INR above 6.5, creatinine above 3.4 mg/dL and grade III-IV encephalopathy",
+     "A staggered ingestion in a patient with chronic alcohol use"
+    ],
+    "correct": 3,
+    "exp": "King College Criteria, an arterial pH below 7.3 or the triad of INR above 6.5, creatinine above 3.4 mg/dL and grade III-IV encephalopathy, flag the need for liver transplant referral, and the call should be made before encephalopathy advances.",
+    "why": [
+     "A level above the treatment line indicates NAC rather than transplant listing.",
+     "Massive transaminase elevation shows hepatocellular injury but by itself does not meet the criteria.",
+     "Those are Stage 1 features and carry no prognostic weight for transplant.",
+     "",
+     "That combination raises susceptibility and argues for empiric NAC, but it is not a transplant criterion."
+    ]
+   },
+   {
+    "q": "A malnourished patient with chronic alcohol use ingests a dose below the usual adult hepatotoxic threshold. Why is the risk still high?",
+    "ch": [
+     "Malnutrition slows gastric emptying so the level peaks only after 24 hours",
+     "Chronic alcohol use inhibits CYP2E1, so NAPQI accumulates upstream of the enzyme",
+     "Induced CYP2E1 generates more NAPQI while depleted glutathione stores cannot detoxify it",
+     "Liver disease raises the safe daily acetaminophen ceiling above 4 g per day",
+     "Alcohol saturates glucuronidation so the drug is excreted unchanged in the urine"
+    ],
+    "correct": 2,
+    "exp": "Chronic alcohol use, malnutrition and fasting amplify risk because enzyme inducers raise CYP2E1 and lower glutathione stores, so these patients are hepatotoxic at lower doses, and the usual 4 g/day adult ceiling is lower still for them.",
+    "why": [
+     "A delayed peak is not the described modifier, since susceptibility comes from enzyme induction and low glutathione.",
+     "Enzyme induction rather than inhibition is what raises NAPQI production in these patients.",
+     "",
+     "The safe ceiling is lower, not higher, with liver disease or significant alcohol use.",
+     "Unchanged renal excretion is not the pathway; the danger is that more drug is shunted toward NAPQI."
+    ]
+   }
+  ]
+ },
+ "salicylate-od": {
+  "condition": "Salicylate (Aspirin) Overdose",
+  "questions": [
+   {
+    "q": "Which acid-base picture is classic for salicylate toxicity?",
+    "ch": [
+     "A pure metabolic alkalosis produced by the vomiting",
+     "Respiratory alkalosis and a high anion-gap metabolic acidosis occurring simultaneously",
+     "A hyperchloremic metabolic acidosis from large-volume saline",
+     "An isolated respiratory acidosis from a depressed medullary respiratory drive",
+     "An isolated normal anion-gap metabolic acidosis"
+    ],
+    "correct": 1,
+    "exp": "The classic gas is a simultaneous respiratory alkalosis and high anion-gap metabolic acidosis, because salicylate directly stimulates the medullary respiratory center while uncoupling oxidative phosphorylation to produce lactic acid and ketones.",
+    "why": [
+     "Vomiting does occur in this toxidrome, but the defining derangement is a mixed disorder with an anion-gap acidosis.",
+     "",
+     "That is a crystalloid complication rather than the mixed acid-base disorder salicylate itself produces.",
+     "Salicylate stimulates the medullary respiratory center rather than depressing it, and respiratory acidosis fits opioid overdose.",
+     "The metabolic component here is a high anion-gap acidosis from lactic acid and ketones."
+    ]
+   },
+   {
+    "q": "Which triad should raise suspicion for salicylate toxicity?",
+    "ch": [
+     "Elevated jugular venous pressure, an S3 gallop and crackles",
+     "Orthostatic hypotension, flat neck veins and oliguria",
+     "Miosis, respiratory depression and depressed consciousness",
+     "Tinnitus or hearing changes, tachypnea and hyperpnea, and nausea and vomiting",
+     "Right upper quadrant pain, transaminases in the thousands and a rising INR"
+    ],
+    "correct": 3,
+    "exp": "Tinnitus or hearing changes with tachypnea and hyperpnea plus nausea and vomiting is the salicylate triad, so think salicylates until proven otherwise, and treat altered mental status as a sign of severe CNS toxicity.",
+    "why": [
+     "That is decompensated congestion from fluid volume overload rather than a toxic ingestion.",
+     "Those are volume-depletion findings and are not part of any overdose toxidrome.",
+     "That triad is opioid overdose, in which the respiratory rate falls rather than rises.",
+     "",
+     "Those findings point to acetaminophen hepatotoxicity in its second and third stages."
+    ]
+   },
+   {
+    "q": "How does salicylate generate the metabolic component of its acid-base disorder?",
+    "ch": [
+     "By delivering a large chloride load that displaces bicarbonate",
+     "By activating RAAS and causing avid renal sodium retention",
+     "By depleting hepatic glutathione and causing centrilobular necrosis",
+     "By blocking mu receptors in the brainstem respiratory centers",
+     "By uncoupling oxidative phosphorylation, generating lactic acid and ketones"
+    ],
+    "correct": 4,
+    "exp": "Salicylate uncouples oxidative phosphorylation, producing lactic acid and ketones and therefore the high anion-gap metabolic acidosis; the same uncoupling explains hyperthermia, which is an ominous sign.",
+    "why": [
+     "A chloride load produces a normal anion-gap acidosis and is not how salicylate acts.",
+     "RAAS-driven sodium retention drives volume overload rather than an anion-gap metabolic acidosis.",
+     "Glutathione depletion with zone 3 necrosis is the acetaminophen mechanism, not a salicylate one.",
+     "Mu receptor effects belong to the opioid story, while salicylate stimulates the medullary respiratory center directly.",
+     ""
+    ]
+   },
+   {
+    "q": "Which salicylate-containing product is hyperconcentrated enough that a teaspoon can kill a toddler?",
+    "ch": [
+     "Oil of wintergreen (methyl salicylate)",
+     "Topical keratolytic salicylic acid pads",
+     "Activated charcoal suspension",
+     "Bismuth subsalicylate liquid such as Pepto-Bismol",
+     "Plain low-dose aspirin tablets"
+    ],
+    "correct": 0,
+    "exp": "Oil of wintergreen, methyl salicylate, is hyperconcentrated and one teaspoon can kill a toddler, which is why teaching covers safe storage of aspirin and wintergreen oil away from children.",
+    "why": [
+     "",
+     "Topical keratolytics are a recognized source of exposure but are not the hyperconcentrated lethal one.",
+     "Charcoal is a decontamination treatment that binds salicylate rather than a source of it.",
+     "It does contain salicylate and can contribute to toxicity, but it is not the hyperconcentrated source described.",
+     "Low-dose aspirin is a common source of chronic accumulation rather than a teaspoon-lethal concentrate."
+    ]
+   },
+   {
+    "q": "How should serum salicylate concentrations be followed after an ingestion?",
+    "ch": [
+     "A single level on arrival, which reliably reflects the peak",
+     "One level at 4 hours plotted on the Done nomogram",
+     "Levels drawn only once altered mental status develops",
+     "Serial levels every 2 hours until they peak and fall",
+     "One level each morning alongside the daily weight"
+    ],
+    "correct": 3,
+    "exp": "Draw serial salicylate levels every 2 hours until they peak and fall, because a single level can be falsely reassuring given delayed and erratic absorption and bezoar formation, and the Done nomogram is obsolete.",
+    "why": [
+     "A single level can be falsely reassuring because absorption is delayed and erratic and a bezoar may form.",
+     "The Done nomogram is obsolete and unreliable and should not be used to guide care.",
+     "Waiting for CNS signs means missing the trend, and altered mentation is a dialysis trigger rather than a cue to start testing.",
+     "",
+     "Daily sampling is far too infrequent for a toxin whose absorption is delayed and erratic."
+    ]
+   },
+   {
+    "q": "Sodium bicarbonate is started for alkalinization. What must accompany it, and what is the urine target?",
+    "ch": [
+     "Potassium restriction, targeting a urine pH below 6.0",
+     "Potassium repletion first, targeting a urine pH of 7.5 to 8.0",
+     "A loop diuretic to force diuresis, targeting a urine pH near 6.5",
+     "An N-acetylcysteine infusion, targeting a serum pH of 7.20",
+     "Naloxone boluses, targeting a normal respiratory rate"
+    ],
+    "correct": 1,
+    "exp": "Alkalinization targets a urine pH of 7.5 to 8.0 and a serum pH around 7.45 to 7.55, but it is ineffective and dangerous if potassium is low because hypokalemia causes paradoxical aciduria, so replete potassium first and watch for fluid overload and cerebral edema.",
+    "why": [
+     "Acidic urine defeats elimination, and withholding potassium leaves the hypokalemia that blocks alkalinization.",
+     "",
+     "Forced diuresis at that urine pH does not trap ionized salicylate, since the goal is frankly alkaline urine.",
+     "NAC is the acetaminophen antidote, and a serum pH of 7.20 is dangerous acidemia rather than a treatment goal.",
+     "Naloxone reverses opioid toxicity and has no role here, and suppressing compensatory hyperpnea would be harmful."
+    ]
+   },
+   {
+    "q": "A salicylate-toxic patient becomes confused and the fingerstick glucose is normal. What should be given?",
+    "ch": [
+     "Nothing, since a normal fingerstick excludes any glucose problem",
+     "Activated charcoal, since confusion means absorption is continuing",
+     "Immediate intubation to protect the airway before anything else",
+     "A large fluid bolus alone, since confusion reflects hypoperfusion",
+     "IV dextrose, because CNS glucose can be low despite a normal serum level"
+    ],
+    "correct": 4,
+    "exp": "Give glucose for altered mental status even when the serum glucose is normal, because CNS neuroglycopenia is real in salicylate toxicity, and treat the altered mentation itself as a marker of severe CNS penetration.",
+    "why": [
+     "Neuroglycopenia is real in salicylate toxicity even when the measured serum glucose reads normal.",
+     "Charcoal requires a protected airway and is avoided with altered mental status because of aspiration risk.",
+     "Intubation is high-risk here, because removing compensatory hyperventilation can cause a fatal pH drop.",
+     "Aggressive fluids risk pulmonary and cerebral edema and do nothing for neuroglycopenia.",
+     ""
+    ]
+   },
+   {
+    "q": "Why is intubation particularly hazardous in severe salicylate toxicity?",
+    "ch": [
+     "An endotracheal tube prevents the administration of sodium bicarbonate",
+     "Intubation makes hemodialysis technically impossible",
+     "Sedation, paralysis and inadequate ventilator rates remove compensatory hyperventilation and cause a fatal pH drop",
+     "Positive pressure ventilation traps salicylate in the lungs and delays its clearance",
+     "Laryngoscopy reliably provokes a seizure in these patients"
+    ],
+    "correct": 2,
+    "exp": "Never let the pH drop: sedating and paralyzing a salicylate patient and then under-ventilating them removes the compensatory hyperventilation and can be fatal, so ventilator settings must match the patient high minute ventilation.",
+    "why": [
+     "Bicarbonate is given intravenously and is entirely unaffected by the airway.",
+     "Dialysis is routinely performed in intubated patients and remains the definitive means of removal.",
+     "",
+     "Pulmonary trapping of the drug is not the mechanism; the danger is losing the respiratory compensation.",
+     "Seizures reflect CNS penetration driven by acidemia rather than the act of laryngoscopy."
+    ]
+   },
+   {
+    "q": "Which situation is an indication for hemodialysis in salicylate toxicity?",
+    "ch": [
+     "Altered mental status, seizures, cerebral or pulmonary edema, renal failure or refractory acidosis",
+     "Tinnitus with a level of 25 mg/dL and a normal pH",
+     "Any patient in whom activated charcoal is being given",
+     "Vomiting that prevents the patient from drinking fluids",
+     "A single reassuring level drawn on arrival"
+    ],
+    "correct": 0,
+    "exp": "Hemodialysis is the most effective intervention when criteria are met: a level above roughly 90 to 100 mg/dL acute or 70 chronic, altered mental status, seizures, cerebral or pulmonary edema, renal failure, or refractory acidosis, and it both clears drug and corrects the acidosis.",
+    "why": [
+     "",
+     "That level sits below the toxic range, and isolated tinnitus without CNS or acid-base compromise is not a dialysis trigger.",
+     "Charcoal is decontamination for a recent ingestion and says nothing about the need for extracorporeal removal.",
+     "Vomiting is expected in this toxidrome and is managed supportively rather than with dialysis.",
+     "A single level cannot establish severity at all, let alone justify extracorporeal removal."
+    ]
+   },
+   {
+    "q": "An elderly patient taking therapeutic aspirin is confused and tachypneic, and the salicylate level is only modestly elevated. How should this be interpreted?",
+    "ch": [
+     "Laboratory error, since a modest level cannot coexist with tachypnea",
+     "Acute toxicity, which requires a level above 100 mg/dL before any treatment",
+     "Chronic toxicity, which is deadlier and lethal at lower measured levels",
+     "A therapeutic level that excludes salicylate as the cause of the confusion",
+     "Sepsis, since chronic salicylate toxicity does not cause confusion"
+    ],
+    "correct": 2,
+    "exp": "Chronic toxicity from repeated dosing, often an elderly patient on therapeutic aspirin, is deadlier and frequently missed at therapeutic levels, presenting with confusion that mimics sepsis or dementia, so treat the patient and the pH rather than the number.",
+    "why": [
+     "Tachypnea follows direct medullary stimulation at any level, so the value is not spurious.",
+     "This is chronic accumulation, and waiting for a very high number before treating would be a fatal error.",
+     "",
+     "Chronic patients are frequently missed precisely because their levels look therapeutic while they are severely poisoned.",
+     "Chronic toxicity classically presents with confusion that mimics sepsis or dementia."
+    ]
+   }
+  ]
+ },
+ "opioid-od": {
+  "condition": "Opioid Overdose",
+  "questions": [
+   {
+    "q": "Which triad is classic for opioid overdose?",
+    "ch": [
+     "Respiratory depression, pinpoint (miotic) pupils and depressed consciousness",
+     "Dilated pupils, hypertension and hyperthermia",
+     "Tinnitus, hyperpnea and vomiting",
+     "Elevated jugular venous pressure, an S3 gallop and crackles",
+     "Tachycardia, flat neck veins and oliguria"
+    ],
+    "correct": 0,
+    "exp": "Excess mu receptor agonism in the brainstem produces the classic triad of respiratory depression, pinpoint miotic pupils and depressed consciousness, though the respiratory rate is the vital sign that predicts death.",
+    "why": [
+     "",
+     "Opioids cause miosis, so dilated pupils with hyperadrenergic findings point somewhere else entirely.",
+     "That is the salicylate toxidrome, in which the respiratory rate rises rather than falls.",
+     "Those are congestion findings in fluid volume overload rather than signs of a toxic ingestion.",
+     "Those suggest volume depletion rather than central nervous system and respiratory depression."
+    ]
+   },
+   {
+    "q": "What is the actual mechanism of death in opioid overdose?",
+    "ch": [
+     "Miosis and the resulting loss of the pupillary light reflex",
+     "A high anion-gap metabolic acidosis from uncoupled oxidative phosphorylation",
+     "Acute hepatic necrosis produced by a reactive metabolite",
+     "The sedation itself, through loss of protective reflexes alone",
+     "Hypoventilation and hypoxia"
+    ],
+    "correct": 4,
+    "exp": "Death results from hypoventilation and hypoxia, so the airway and breathing are the killers, which is why oxygen and assisted ventilation matter as much as the antidote.",
+    "why": [
+     "Miosis is a diagnostic sign with no bearing on whether the patient survives.",
+     "That mechanism belongs to salicylate toxicity, not to opioid overdose.",
+     "Metabolite-driven hepatic necrosis describes acetaminophen overdose instead.",
+     "Death results from hypoventilation and hypoxia rather than from the sedation itself.",
+     ""
+    ]
+   },
+   {
+    "q": "Naloxone acts as which type of agent?",
+    "ch": [
+     "A partial mu-opioid agonist",
+     "A mu-opioid agonist with a long half-life",
+     "A competitive mu-opioid antagonist",
+     "A benzodiazepine receptor antagonist",
+     "A direct respiratory stimulant acting on medullary chemoreceptors"
+    ],
+    "correct": 2,
+    "exp": "Naloxone is a competitive mu-opioid antagonist given by intranasal, IM, IV or SubQ routes, and a positive response to it is both diagnostic and therapeutic.",
+    "why": [
+     "A partial mu agonist describes buprenorphine, used as medication for opioid use disorder rather than for reversal.",
+     "Naloxone blocks the receptor, whereas a long-acting agonist such as methadone is what prolongs toxicity.",
+     "",
+     "Benzodiazepines are co-ingestants that worsen outcomes, but naloxone does not act at their receptor.",
+     "Naloxone works by receptor antagonism and does not directly stimulate the brainstem respiratory centers."
+    ]
+   },
+   {
+    "q": "Naloxone should be titrated to which endpoint?",
+    "ch": [
+     "Pupil size returning fully to normal",
+     "A negative urine drug screen",
+     "Complete resolution of any QTc prolongation",
+     "Adequate ventilation",
+     "Full alertness and complete orientation"
+    ],
+    "correct": 3,
+    "exp": "Titrate naloxone to restore adequate ventilation rather than full alertness, because over-reversal precipitates withdrawal, a catecholamine surge and rarely noncardiogenic pulmonary edema.",
+    "why": [
+     "Pinpoint pupils can even be absent when co-ingestants are involved, so the pupils are not the titration target.",
+     "Urine screens are unreliable and frequently miss fentanyl, so they cannot guide antidote dosing.",
+     "QTc is monitored in suspected methadone toxicity but is not an endpoint for naloxone titration.",
+     "",
+     "Over-reversal to full alertness precipitates withdrawal and a catecholamine surge and is not the goal of dosing."
+    ]
+   },
+   {
+    "q": "A patient is found apneic and cyanotic with pinpoint pupils. What takes priority?",
+    "ch": [
+     "Starting a naloxone infusion at two-thirds of the waking bolus per hour",
+     "Bag-valve-mask ventilation with oxygen, provided before and during naloxone",
+     "Naloxone alone, withholding ventilation until it takes effect",
+     "Obtaining a urine drug screen before any intervention",
+     "Waiting for a blood gas to confirm respiratory acidosis"
+    ],
+    "correct": 1,
+    "exp": "The priority is airway, breathing and circulation: position, suction and provide bag-valve-mask ventilation before and while giving naloxone, because airway management takes priority over the antidote.",
+    "why": [
+     "An infusion follows an effective waking bolus for long-acting opioids and is not the first action in apnea.",
+     "",
+     "Airway management takes priority over the antidote, since ventilation is the immediate life-saver in a hypoxic patient.",
+     "Urine screens are unreliable and must never delay resuscitation of an apneic patient.",
+     "A gas may confirm an elevated PaCO2 later, but airway, breathing and circulation come first."
+    ]
+   },
+   {
+    "q": "A patient woke up after naloxone and an hour later is drowsy with a respiratory rate of 8. What explains this?",
+    "ch": [
+     "Naloxone wore off before the opioid did, so the patient re-sedated",
+     "Tolerance to naloxone that developed within a single dose",
+     "Precipitated withdrawal, which presents with somnolence and slow breathing",
+     "Noncardiogenic pulmonary edema, which presents without any hypoxia",
+     "Hypoglycemia, which the naloxone dose reliably corrected"
+    ],
+    "correct": 0,
+    "exp": "Naloxone wears off before the opioid does, so a patient who woke up can re-sedate and die; keep them monitored for several hours and be ready to re-dose, especially after fentanyl or a long-acting opioid.",
+    "why": [
+     "",
+     "The problem is the short duration of action of the antagonist rather than tolerance to it.",
+     "Precipitated withdrawal presents with agitation, vomiting, tachycardia and diaphoresis rather than somnolence.",
+     "That complication presents with persistent hypoxia and frothy sputum rather than isolated drowsiness.",
+     "Glucose should be checked as a mimic of altered mental status, but naloxone does nothing for hypoglycemia."
+    ]
+   },
+   {
+    "q": "A urine drug screen is negative in a patient with the full opioid toxidrome. How should that result be used?",
+    "ch": [
+     "It excludes opioid overdose, so another diagnosis must be found",
+     "It is not reassuring, because standard immunoassays often miss fentanyl and synthetic opioids",
+     "It shows a long-acting opioid was taken instead of a short-acting one",
+     "It means naloxone should be withheld until a confirmatory test returns",
+     "It establishes clonidine as the cause rather than an opioid"
+    ],
+    "correct": 1,
+    "exp": "A negative urine drug screen does not exclude opioid overdose, because standard immunoassays frequently miss fentanyl and synthetic opioids, so order the workup based on the clinical picture rather than the assay.",
+    "why": [
+     "A negative screen never rules out overdose, and the workup should follow the clinical picture rather than the assay.",
+     "",
+     "A negative screen says nothing about the duration of action of whatever was taken.",
+     "Withholding the antidote for a laboratory result in a hypoventilating patient is unsafe.",
+     "Clonidine can mimic the triad and is worth considering, but a negative screen is not what points to it."
+    ]
+   },
+   {
+    "q": "Which additional monitoring and treatment does suspected methadone overdose require?",
+    "ch": [
+     "Activated charcoal with serial levels drawn every 2 hours",
+     "Sodium bicarbonate to alkalinize the urine and speed elimination",
+     "An ECG for QTc prolongation together with a naloxone infusion for the prolonged toxicity",
+     "Immediate buprenorphine to shorten the observation period",
+     "A single naloxone bolus, with discharge once the patient is awake"
+    ],
+    "correct": 2,
+    "exp": "Methadone brings a long half-life plus QT prolongation, so monitor the ECG, expect prolonged toxicity, and consider a naloxone infusion at roughly two-thirds of the effective waking bolus per hour titrated to respiratory status.",
+    "why": [
+     "Serial two-hourly levels belong to salicylate poisoning rather than to opioid overdose.",
+     "Alkalinization is a salicylate strategy and has no role in reversing opioid toxicity.",
+     "",
+     "Buprenorphine is started only in objective withdrawal and links the patient to treatment; it is not an antidote.",
+     "The long half-life of methadone means prolonged toxicity and re-sedation, so one bolus and discharge is unsafe."
+    ]
+   },
+   {
+    "q": "When may ED-initiated buprenorphine be started after an opioid overdose?",
+    "ch": [
+     "Never, because buprenorphine is contraindicated in anyone who has overdosed",
+     "Immediately after naloxone, while the patient is still sedated",
+     "Only once a negative urine drug screen confirms the opioid has cleared",
+     "Once the patient is in objective withdrawal with an adequate COWS score",
+     "Only after the QTc has fully normalized on the ECG"
+    ],
+    "correct": 3,
+    "exp": "Initiate buprenorphine, a partial mu agonist used as medication for opioid use disorder, only when the patient is in objective withdrawal with an adequate COWS score, to avoid precipitated withdrawal; it is a key harm-reduction and relapse-prevention step.",
+    "why": [
+     "ED-initiated buprenorphine is an evidence-based, life-saving disposition step rather than a contraindication.",
+     "Starting a partial mu agonist before objective withdrawal risks precipitated withdrawal.",
+     "Urine screens are unreliable and are not the gate for initiating treatment.",
+     "",
+     "QTc monitoring matters in methadone toxicity but does not govern buprenorphine initiation."
+    ]
+   },
+   {
+    "q": "A patient fails to respond to escalating doses of naloxone. What should be reconsidered?",
+    "ch": [
+     "That the diagnosis is confirmed anyway, since a response is not required",
+     "That the patient has simply developed tolerance to naloxone itself",
+     "That precipitated withdrawal is masking the reversal",
+     "That the dose must be halved to avoid over-reversal",
+     "Co-ingestants, massive fentanyl exposure, hypoxic brain injury or an alternative diagnosis"
+    ],
+    "correct": 4,
+    "exp": "Failure to respond to escalating naloxone should prompt reconsideration of co-ingestants such as benzodiazepines or alcohol, massive fentanyl exposure, hypoxic brain injury, or an alternative diagnosis, with mimics such as hypoglycemia, clonidine and pontine stroke in mind.",
+    "why": [
+     "A positive response to naloxone is both diagnostic and therapeutic, so its absence should prompt reconsideration.",
+     "Tolerance to the antagonist is not the explanation; the differential widens to co-ingestants and other causes.",
+     "Precipitated withdrawal produces agitation, vomiting and tachycardia, which would be obvious rather than concealing a response.",
+     "Halving the dose in a patient who is still not breathing adequately abandons the reversal attempt.",
+     ""
+    ]
+   }
+  ]
+ }
+}

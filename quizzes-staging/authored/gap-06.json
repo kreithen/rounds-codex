@@ -1,0 +1,977 @@
+{
+ "ovarian-cancer": {
+  "condition": "Ovarian Cancer",
+  "questions": [
+   {
+    "q": "Which statement best characterizes the most common and most aggressive form of epithelial ovarian cancer?",
+    "ch": [
+     "Germ cell tumor of young women with elevated AFP, beta-hCG, and LDH levels",
+     "High-grade serous carcinoma, which frequently arises from a STIC lesion in the fallopian tube fimbria",
+     "Mucinous carcinoma, best distinguished from a GI primary by measuring CEA",
+     "Krukenberg tumor, a bilateral mucin-filled ovarian mass seeded from the stomach",
+     "Granulosa cell tumor, an estrogen-secreting sex cord-stromal tumor marked by inhibin"
+    ],
+    "correct": 1,
+    "exp": "Most ovarian cancers are epithelial, and high-grade serous carcinoma is the most common and most aggressive subtype; many actually begin as a serous tubal intraepithelial carcinoma (STIC) lesion in the fallopian tube fimbria, which is why risk-reducing surgery removes the tubes as well as the ovaries.",
+    "why": [
+     "Germ cell tumors occur in young women and form a separate, much less common category than epithelial carcinoma.",
+     "",
+     "CEA does help separate a mucinous ovarian tumor from a GI primary, but mucinous carcinoma is neither the most common nor the most aggressive epithelial subtype.",
+     "A Krukenberg tumor is metastatic disease from the stomach or GI tract, not a primary epithelial ovarian cancer.",
+     "Granulosa cell tumors are estrogen-secreting sex cord-stromal tumors followed with inhibin, and they are far less common than high-grade serous carcinoma."
+    ]
+   },
+   {
+    "q": "A woman finishing chemotherapy for epithelial ovarian cancer asks what her CA-125 level is used for. Which statement is most accurate?",
+    "ch": [
+     "It is the tumor marker of choice for germ cell tumors in women under the age of thirty",
+     "An elevated level is diagnostic of malignancy and makes tissue confirmation unnecessary",
+     "It rises only in malignancy, so benign gynecologic disease never elevates the value",
+     "It is best used to track response to treatment and to detect recurrence, not to screen for cancer",
+     "It is a specific screening test that reliably detects early-stage ovarian cancer in the general population"
+    ],
+    "correct": 3,
+    "exp": "CA-125 is the key tumor marker in epithelial ovarian cancer but it is nonspecific - it rises in endometriosis, fibroids, PID, pregnancy, and cirrhosis - so its value lies in tracking treatment response and surveillance for recurrence rather than screening.",
+    "why": [
+     "Germ cell tumors are followed with AFP, beta-hCG, and LDH; CA-125 is the marker for epithelial disease.",
+     "Definitive diagnosis of ovarian cancer is surgical and histologic - no marker value substitutes for tissue.",
+     "CA-125 is nonspecific and is elevated in endometriosis, fibroids, PID, pregnancy, and cirrhosis.",
+     "",
+     "CA-125 is not specific enough for population screening and it misses many early cancers, which is why no effective screening test exists."
+    ]
+   },
+   {
+    "q": "A 58-year-old woman has several weeks of bloating and pelvic pressure, and a pelvic mass is suspected. Which imaging study is first-line?",
+    "ch": [
+     "Percutaneous needle biopsy of the suspected adnexal mass",
+     "Serial CA-125 measurements alone over the next six months",
+     "Exploratory laparotomy with peritoneal washings and omentectomy",
+     "Transvaginal ultrasound to characterize the adnexal mass",
+     "CT of the abdomen and pelvis to assess spread and stage the disease"
+    ],
+    "correct": 3,
+    "exp": "Transvaginal ultrasound is the first-line imaging test for a suspected adnexal mass; concerning features include solid components, thick septations, papillary projections, and ascites. CT of the abdomen and pelvis is then used to assess spread and staging.",
+    "why": [
+     "Percutaneous biopsy of a suspected early-stage ovarian mass is avoided because it risks tumor seeding.",
+     "CA-125 is nonspecific and is used for tracking treatment response; watching it for months would delay diagnosis of a suspicious mass.",
+     "Exploratory laparotomy provides surgical staging and debulking, but it comes after non-invasive imaging rather than replacing it.",
+     "",
+     "CT abdomen and pelvis assesses spread and staging, but it follows the ultrasound that first characterizes the mass."
+    ]
+   },
+   {
+    "q": "Which factor is associated with a LOWER lifetime risk of ovarian cancer?",
+    "ch": [
+     "Late menopause, with menses continuing past the mid-fifties",
+     "Early menarche, with menses beginning before the age of twelve",
+     "Multiple pregnancies with prolonged breastfeeding and oral contraceptive use",
+     "Nulliparity in a woman who has never used oral contraceptives",
+     "A germline BRCA1 mutation inherited from an affected parent"
+    ],
+    "correct": 2,
+    "exp": "Risk tracks with lifetime ovulations, so anything that suppresses ovulation is protective: oral contraceptives, multiparity, and breastfeeding all lower risk, while nulliparity, early menarche, late menopause, and increasing age raise it.",
+    "why": [
+     "Late menopause extends the ovulatory years and increases risk.",
+     "Early menarche increases the number of lifetime ovulations and therefore raises risk.",
+     "",
+     "Nulliparity means uninterrupted ovulation over many years and is an established risk factor.",
+     "A germline BRCA1 mutation confers roughly a 40% lifetime ovarian cancer risk - the opposite of protective."
+    ]
+   },
+   {
+    "q": "A 22-year-old woman is found to have a solid pelvic mass. Which set of tumor markers should be ordered?",
+    "ch": [
+     "CEA alone, to exclude a gastrointestinal primary tumor",
+     "Serum estradiol and progesterone levels only",
+     "AFP, beta-hCG, LDH, and inhibin",
+     "No markers at all; proceed directly to laparotomy",
+     "CA-125 as the single marker to follow over time"
+    ],
+    "correct": 2,
+    "exp": "In women under 30 with a pelvic mass, order germ cell markers - AFP, beta-hCG, and LDH - plus inhibin for a granulosa cell tumor, because these subtypes rather than epithelial carcinoma dominate in this age group.",
+    "why": [
+     "CEA helps distinguish a mucinous ovarian tumor from a GI primary; it is not the panel for a young woman with a pelvic mass.",
+     "Sex steroid levels are not the markers used here - inhibin is what points to a granulosa cell tumor.",
+     "",
+     "Skipping markers discards the information that identifies a germ cell or sex cord-stromal tumor before surgery.",
+     "CA-125 is the epithelial marker and is nonspecific; used alone in a woman under 30 it would miss a germ cell or granulosa cell tumor."
+    ]
+   },
+   {
+    "q": "Why are PARP inhibitors such as olaparib and niraparib especially effective in BRCA-mutated ovarian cancer?",
+    "ch": [
+     "They block VEGF signaling and starve the tumor of the blood supply it needs to grow",
+     "They form DNA crosslinks in the same way that platinum agents such as cisplatin do",
+     "They suppress ovulation and remove the epithelial repair stimulus that drives mutation",
+     "They stabilize microtubules and arrest dividing tumor cells in mitosis, as paclitaxel does",
+     "The tumor already lacks homologous recombination, so blocking PARP leaves DNA damage unrepairable and the cell dies"
+    ],
+    "correct": 4,
+    "exp": "This is synthetic lethality: BRCA-mutant tumors have already lost homologous recombination repair, so PARP inhibition removes the remaining repair route, unrepairable DNA damage accumulates, and the cell dies. PARP inhibitors are used as maintenance therapy in BRCA-mutated and HRD-positive disease.",
+    "why": [
+     "Inhibiting VEGF-driven angiogenesis is the mechanism of bevacizumab, not of a PARP inhibitor.",
+     "Crosslinking DNA is the platinum mechanism; PARP inhibitors work by blocking a DNA repair enzyme.",
+     "Suppressing ovulation is how oral contraceptives lower risk; it is a prevention mechanism, not a treatment one.",
+     "Acting on microtubules describes paclitaxel; PARP inhibitors target DNA repair instead.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient receiving carboplatin and paclitaxel for ovarian cancer calls to report a temperature of 38.5 C. What is the priority interpretation?",
+    "ch": [
+     "Peripheral neuropathy from paclitaxel, which warrants a fall-risk assessment",
+     "Neutropenic fever, a medical emergency needing immediate cultures and broad-spectrum antibiotics",
+     "Early bowel obstruction from peritoneal spread, managed with scheduled antiemetics",
+     "An expected effect of paclitaxel premedication that can safely be observed at home",
+     "A sign of tense ascites, best followed with abdominal girth and daily weights"
+    ],
+    "correct": 1,
+    "exp": "Fever during chemotherapy is neutropenic fever until proven otherwise - a medical emergency requiring immediate cultures and broad-spectrum antibiotics. Nurses monitor the CBC and teach neutropenic precautions so that fever is reported promptly.",
+    "why": [
+     "Paclitaxel neuropathy and fall risk are real concerns, but neither explains a fever.",
+     "",
+     "Obstruction from peritoneal spread presents with vomiting, distension, and absent flatus or stool, not isolated fever.",
+     "Premedication is given for paclitaxel hypersensitivity; fever during chemotherapy is never something to watch at home.",
+     "Abdominal girth and daily weights track ascites, but ascites does not cause fever."
+    ]
+   },
+   {
+    "q": "A 64-year-old woman has two months of bloating and early satiety. Exam shows ascites, a fixed adnexal mass, and a firm periumbilical nodule. Which statement about her evaluation is correct?",
+    "ch": [
+     "The nodule is a Sister Mary Joseph nodule, and definitive diagnosis and staging will be surgical",
+     "A CA-125 below the laboratory cutoff would reliably exclude an ovarian malignancy",
+     "Percutaneous biopsy of the adnexal mass is the preferred way to establish the diagnosis",
+     "Transvaginal ultrasound showing thick septations would confirm the diagnosis histologically",
+     "The periumbilical nodule is an incidental umbilical hernia and does not raise concern"
+    ],
+    "correct": 0,
+    "exp": "A periumbilical mass in this setting is a Sister Mary Joseph nodule, a classic marker of intra-abdominal malignancy. Ovarian cancer is diagnosed and staged surgically (FIGO I-IV) with peritoneal washings, omentectomy, and lymph node sampling, and percutaneous biopsy is avoided to prevent seeding.",
+    "why": [
+     "",
+     "CA-125 is nonspecific and misses many cancers, so a normal value cannot exclude malignancy in a woman with this exam.",
+     "Percutaneous biopsy of a suspected ovarian mass is avoided because of the risk of tumor seeding.",
+     "Thick septations are a concerning ultrasound feature, but imaging cannot provide histology.",
+     "A firm periumbilical mass alongside ascites and an adnexal mass is a metastatic nodule, not an incidental hernia."
+    ]
+   },
+   {
+    "q": "Which triad defines Meigs syndrome?",
+    "ch": [
+     "Bilateral mucin-filled ovarian metastases arising from a gastric primary tumor",
+     "A periumbilical nodule with omental caking and a markedly elevated CA-125",
+     "Laminated psammoma bodies with serous histology and a BRCA1 mutation",
+     "Estrogen excess from a granulosa cell tumor with an elevated inhibin level",
+     "A benign ovarian fibroma with ascites and pleural effusion, resolving after tumor removal"
+    ],
+    "correct": 4,
+    "exp": "Meigs syndrome is a benign ovarian fibroma plus ascites plus pleural effusion, and its hallmark is that all three resolve once the tumor is removed.",
+    "why": [
+     "That describes a Krukenberg tumor, metastatic disease from the stomach or GI tract.",
+     "A periumbilical nodule is a Sister Mary Joseph nodule and omental caking reflects transcoelomic spread - features of advanced malignancy, not Meigs syndrome.",
+     "Psammoma bodies point toward a serous tumor on histology; they are unrelated to Meigs syndrome.",
+     "Estrogen secretion with elevated inhibin describes a granulosa cell sex cord-stromal tumor.",
+     ""
+    ]
+   },
+   {
+    "q": "Which precaution is specific to bevacizumab when it is added to chemotherapy for ovarian cancer?",
+    "ch": [
+     "Hold the drug around surgery, because it impairs wound healing and can cause GI perforation",
+     "Monitor for peripheral neuropathy and premedicate for hypersensitivity reactions",
+     "Follow the CBC closely for the small long-term risk of MDS or AML",
+     "Give aggressive intravenous hydration, because the drug is highly nephrotoxic and ototoxic",
+     "Check an ECG before dosing, because the drug prolongs the QT interval"
+    ],
+    "correct": 0,
+    "exp": "Bevacizumab is an anti-VEGF agent, so its distinctive toxicities are hypertension, proteinuria, thromboembolism, impaired wound healing, and rare GI perforation - which is why it is held around surgery.",
+    "why": [
+     "",
+     "Neuropathy and hypersensitivity premedication belong to paclitaxel.",
+     "The small risk of MDS or AML is associated with PARP inhibitor maintenance therapy.",
+     "Aggressive hydration for nephrotoxicity and ototoxicity is the precaution for cisplatin.",
+     "QT prolongation is a concern with ondansetron, the antiemetic, not with bevacizumab."
+    ]
+   }
+  ]
+ },
+ "cervical-cancer": {
+  "condition": "Cervical Cancer",
+  "questions": [
+   {
+    "q": "Cervical cancer characteristically arises at which anatomic site?",
+    "ch": [
+     "The fallopian tube fimbria, where an intraepithelial precursor lesion forms",
+     "The vaginal introitus, at the junction of skin and mucous membrane",
+     "The transformation zone, the squamocolumnar junction where metaplastic epithelium is vulnerable",
+     "The myometrium, within the smooth muscle layer of the uterine wall",
+     "The endometrial lining of the uterine fundus, where glandular hyperplasia begins"
+    ],
+    "correct": 2,
+    "exp": "Cervical cancer arises at the transformation zone (squamocolumnar junction), where metaplastic epithelium is most vulnerable to HPV-driven transformation - and it is the target of both the Pap sample and the colposcopic biopsy.",
+    "why": [
+     "A precursor lesion of the tubal fimbria is the origin of high-grade serous ovarian cancer, not cervical cancer.",
+     "The introitus is not the target of HPV transformation in cervical cancer or of the Pap sample.",
+     "",
+     "The myometrium is smooth muscle and gives rise to leiomyomas and sarcomas, not cervical carcinoma.",
+     "The endometrial lining is the site of endometrial cancer, not of HPV-driven cervical cancer."
+    ]
+   },
+   {
+    "q": "Which statement about high-risk HPV types in cervical cancer is correct?",
+    "ch": [
+     "HPV causes fewer than half of cervical cancers, the remainder arising without viral infection",
+     "HPV 16 and 18 cause about 70% of cases, and the 9-valent vaccine covers these plus five more oncogenic types",
+     "Only one high-risk HPV type is oncogenic, which is why a monovalent vaccine is sufficient",
+     "High-risk HPV causes cancer only when the infection clears rapidly within a few months",
+     "HPV 16 and 18 account for essentially every case, so vaccination eliminates all future risk"
+    ],
+    "correct": 1,
+    "exp": "HPV 16 and 18 cause roughly 70% of cervical cancers, and the 9-valent vaccine covers those two plus five additional oncogenic types - which is why vaccination prevents most but not all disease and screening must continue.",
+    "why": [
+     "Nearly all cervical cancers are caused by persistent high-risk HPV infection, not a minority of them.",
+     "",
+     "Several types are oncogenic, which is why the 9-valent vaccine targets 16 and 18 plus five more.",
+     "It is persistent infection, not rapidly cleared infection, that drives transformation at the transformation zone.",
+     "Types 16 and 18 cause about 70% of cases, so vaccinated patients still need routine screening."
+    ]
+   },
+   {
+    "q": "By what mechanism do high-risk HPV oncoproteins transform cervical epithelium?",
+    "ch": [
+     "E7 stabilizes p53 while E6 activates Rb, arresting the cell cycle permanently",
+     "The virus makes an estrogen-like protein that stimulates glandular proliferation",
+     "E6 degrades p53 and E7 inactivates Rb, releasing the cell-cycle checkpoint",
+     "E6 and E7 activate the VEGF pathway and directly drive tumor angiogenesis",
+     "The virus integrates and amplifies the BRCA1 locus, impairing homologous repair"
+    ],
+    "correct": 2,
+    "exp": "High-risk HPV E6 degrades p53 while E7 inactivates Rb - two oncoproteins disabling two tumor suppressors - which releases the cell-cycle checkpoint and drives dysplasia at the transformation zone.",
+    "why": [
+     "This reverses the pairing and the effect: E6 degrades p53 and E7 inactivates Rb, and the checkpoint is released rather than arrested.",
+     "HPV oncogenesis works through the E6 and E7 oncoproteins, not through hormonal stimulation.",
+     "",
+     "VEGF-driven angiogenesis is what bevacizumab targets in advanced disease; it is not how HPV transforms epithelium.",
+     "Loss of homologous recombination through BRCA mutation is an ovarian cancer mechanism, not an HPV one."
+    ]
+   },
+   {
+    "q": "Which statement about cervical cancer histology is correct?",
+    "ch": [
+     "Most cervical cancers are sarcomas of the myometrium that extend down into the cervix",
+     "Squamous cell carcinoma is 70-80% of cases; adenocarcinoma is 20-25% and is more easily missed by cytology",
+     "Adenocarcinoma is the most common type and arises from the ectocervical squamous surface",
+     "Nearly all cervical cancers are small cell neuroendocrine tumors of the endocervical canal",
+     "Squamous and glandular tumors occur equally often and are detected equally well by cytology"
+    ],
+    "correct": 1,
+    "exp": "Cervical cancer histology is predominantly squamous cell carcinoma (about 70-80%), followed by adenocarcinoma (about 20-25%) arising from endocervical glands; adenocarcinoma hides higher in the endocervical canal and is more likely to be missed by cytology, which is where HPV testing helps.",
+    "why": [
+     "Cervical cancer is a carcinoma arising at the transformation zone, not a myometrial sarcoma.",
+     "",
+     "Adenocarcinoma is the minority type and arises from endocervical glands, not the squamous surface.",
+     "Neuroendocrine tumors are rare; the predominant histology is squamous cell carcinoma.",
+     "They are not equally common, and adenocarcinoma hides higher in the canal so cytology detects it less well."
+    ]
+   },
+   {
+    "q": "A 41-year-old woman reports several months of bleeding after intercourse. What is the appropriate interpretation?",
+    "ch": [
+     "Reassurance is appropriate because painless bleeding is rarely malignant",
+     "A negative Pap two years ago excludes malignancy and makes examination unnecessary",
+     "It is a normal variant in premenopausal women and requires no examination",
+     "It is almost always vaginal atrophy and is treated with topical estrogen",
+     "Postcoital bleeding is cervical cancer until proven otherwise - the cervix must be examined"
+    ],
+    "correct": 4,
+    "exp": "Postcoital bleeding in a woman is cervical cancer until proven otherwise. Speculum exam may show a friable, exophytic or ulcerated cervical lesion, and bimanual and rectovaginal exam assess parametrial and pelvic sidewall extension - examine the cervix rather than reassuring.",
+    "why": [
+     "Reassurance without examining the cervix is exactly the error this presentation is meant to prevent.",
+     "A prior negative screen does not exclude cancer in a symptomatic patient, and cytology alone never establishes or excludes the diagnosis.",
+     "Postcoital bleeding is never dismissed as a normal variant; it is the classic presenting symptom of cervical cancer.",
+     "Treating presumptively for atrophy skips the speculum exam that could reveal a friable cervical lesion.",
+     ""
+    ]
+   },
+   {
+    "q": "A woman has abnormal cervical cytology and a positive HPV test. What is the next step, and what establishes the diagnosis?",
+    "ch": [
+     "Immediate radical hysterectomy, since cytology has already established malignancy",
+     "Concurrent cisplatin chemoradiation begun on the basis of the cytology result",
+     "Repeat cytology in three years, since HPV positivity alone is not actionable",
+     "Pelvic MRI and PET/CT to assign a FIGO stage before any tissue sampling",
+     "Colposcopy with directed biopsy of the transformation zone, because tissue is required"
+    ],
+    "correct": 4,
+    "exp": "An abnormal Pap or positive HPV test triggers colposcopy with directed biopsy of the transformation zone. Tissue biopsy - colposcopic biopsy, endocervical curettage, or excisional LEEP/cone - is required for diagnosis; never diagnose cancer on cytology alone.",
+    "why": [
+     "Cancer is never diagnosed on cytology alone, so definitive surgery cannot be based on a Pap result.",
+     "Chemoradiation is stage-directed treatment for locally advanced disease and requires histology and staging first.",
+     "An abnormal cytology result with positive HPV testing triggers colposcopy now, not a three-year interval.",
+     "MRI and PET/CT define local extent and nodal or distant disease once cancer is proven; they do not diagnose it.",
+     ""
+    ]
+   },
+   {
+    "q": "Which option reflects the currently preferred cervical cancer screening strategy?",
+    "ch": [
+     "Co-testing every 6 months for any woman who has ever had a positive HPV test",
+     "Screening only those women who have never received the HPV vaccine",
+     "A single Pap at age 30, with no further screening if that result is normal",
+     "Primary HPV testing every 5 years, generally starting at age 21-25 and stopping around 65",
+     "Cytology alone every year, beginning at the time of first sexual intercourse"
+    ],
+    "correct": 3,
+    "exp": "The options are primary HPV testing every 5 years (preferred), co-testing every 5 years, or cytology alone every 3 years, generally starting at age 21-25 and stopping around 65 with adequate prior negative results.",
+    "why": [
+     "Co-testing is done every 5 years; a 6-month interval is not a screening strategy.",
+     "Screening does not stop after vaccination, because the vaccine does not cover every oncogenic type.",
+     "Screening is a repeated interval process to about age 65 with adequate prior negatives, not a one-time test.",
+     "",
+     "Cytology alone is an option but at a 3-year interval, and screening begins by age rather than at sexual debut."
+    ]
+   },
+   {
+    "q": "A 52-year-old woman has biopsy-proven cervical squamous cell carcinoma with parametrial extension to the pelvic sidewall. What is the appropriate treatment approach?",
+    "ch": [
+     "Concurrent cisplatin-based chemoradiation with brachytherapy",
+     "LEEP excision of the lesion followed by observation",
+     "Pembrolizumab monotherapy as initial definitive treatment",
+     "Fertility-sparing radical trachelectomy alone",
+     "Cold-knife conization with close cytologic follow-up"
+    ],
+    "correct": 0,
+    "exp": "Locally advanced cervical cancer (IB3-IVA) is treated with concurrent cisplatin-based chemoradiation plus brachytherapy, cisplatin being given weekly as a radiosensitizer; surgery is favored for early stage IA-IB disease.",
+    "why": [
+     "",
+     "LEEP is an excisional treatment for CIN 2-3 precancer, far short of what locally advanced invasive disease requires.",
+     "Pembrolizumab is used in recurrent or metastatic disease, not as initial definitive therapy for locally advanced cancer.",
+     "Trachelectomy is a fertility-sparing option reserved for selected early-stage disease, not for parametrial extension.",
+     "Conization treats high-grade precancer and diagnoses microinvasive disease; it cannot treat locally advanced cancer."
+    ]
+   },
+   {
+    "q": "Imaging in a woman with cervical cancer shows hydronephrosis from ureteral obstruction by the tumor. What does this indicate?",
+    "ch": [
+     "Stage IA microinvasive disease that remains suitable for conization",
+     "A benign obstructive process unrelated to local tumor extension",
+     "That fertility-sparing surgery can still safely be offered",
+     "At least FIGO stage IIIB, an automatic upstaging that worsens prognosis",
+     "That renal function need not be checked, because staging is clinical"
+    ],
+    "correct": 3,
+    "exp": "Hydronephrosis from a cervical mass means at least FIGO stage IIIB - the ureters tell the stage - and it worsens prognosis. New flank pain, oliguria, or a rising creatinine raises concern for bilateral obstruction and obstructive renal failure.",
+    "why": [
+     "Microinvasive disease does not obstruct the ureters; hydronephrosis marks advanced local extension.",
+     "Hydronephrosis from a cervical mass reflects tumor obstruction of the ureter and is a staging finding.",
+     "Fertility-sparing surgery applies to selected early-stage disease, not to stage IIIB obstruction.",
+     "",
+     "Renal function must be checked - ureteral obstruction with hydronephrosis can cause obstructive renal failure."
+    ]
+   },
+   {
+    "q": "A parent asks about HPV vaccination for their 11-year-old. Which counseling point is correct?",
+    "ch": [
+     "Vaccinate routinely at age 11-12, before sexual debut, and continue screening later in life",
+     "Vaccination replaces the need for any future cervical cancer screening",
+     "The vaccine is given only to adults over 26 through shared decision making",
+     "It is safe in pregnancy and is best given during the third trimester",
+     "Wait until after a first abnormal Pap result, since the vaccine is therapeutic"
+    ],
+    "correct": 0,
+    "exp": "The 9-valent HPV vaccine is primary prevention and is most effective before sexual debut - routine at age 11-12 (it can start at 9), catch-up through 26, and shared decision making to 45. It is contraindicated in pregnancy, and screening continues after vaccination.",
+    "why": [
+     "",
+     "Screening does not stop after the vaccine - prevention and screening are two separate prongs.",
+     "Routine vaccination is at age 11-12 with catch-up through 26; shared decision making applies from 27 to 45.",
+     "The HPV vaccine is contraindicated in pregnancy.",
+     "The HPV vaccine is primary prevention given before exposure; it does not treat existing infection or dysplasia."
+    ]
+   }
+  ]
+ },
+ "bladder-cancer": {
+  "condition": "Bladder Cancer",
+  "questions": [
+   {
+    "q": "Which histologic type accounts for roughly 90% of bladder cancers?",
+    "ch": [
+     "Sarcoma of the detrusor muscle",
+     "Urothelial (transitional cell) carcinoma",
+     "Squamous cell carcinoma",
+     "Adenocarcinoma of the bladder",
+     "Small cell neuroendocrine carcinoma"
+    ],
+    "correct": 1,
+    "exp": "Bladder cancer arises from the bladder lining and is overwhelmingly urothelial (transitional cell) carcinoma, about 90% of cases; squamous cell carcinoma and adenocarcinoma are less common.",
+    "why": [
+     "Bladder cancer arises from the bladder lining rather than from the detrusor smooth muscle.",
+     "",
+     "Squamous cell carcinoma is the less common type linked to chronic irritation and Schistosoma haematobium.",
+     "Adenocarcinoma of the bladder occurs but is far less common than urothelial carcinoma.",
+     "Small cell carcinoma is not among the common bladder histologies; urothelial carcinoma dominates."
+    ]
+   },
+   {
+    "q": "A 67-year-old man with a 40-pack-year smoking history reports two episodes of painless blood in his urine. How should this be interpreted?",
+    "ch": [
+     "As insignificant, because the bleeding stopped on its own between the episodes",
+     "As a urinary tract infection that can be treated empirically with antibiotics",
+     "As benign prostatic hyperplasia, which explains intermittent bleeding in older men",
+     "As bladder cancer until cystoscopy proves otherwise, not as a simple urinary tract infection",
+     "As glomerular bleeding, since painless hematuria is renal rather than urologic"
+    ],
+    "correct": 3,
+    "exp": "Painless gross hematuria in a smoker over 40 is bladder cancer until proven otherwise. It is often intermittent, and the workup is cystoscopy plus upper-tract imaging with CT urography - not just a urine culture.",
+    "why": [
+     "The hematuria of bladder cancer is often intermittent, so spontaneous resolution does not make it benign.",
+     "Treating painless gross hematuria as a UTI is the classic error; a urine culture alone does not work this up.",
+     "Attributing hematuria to prostatic enlargement without cystoscopy leaves a bladder tumor undiagnosed.",
+     "",
+     "Painless gross hematuria in an older smoker points to the urothelium, and the upper tracts are evaluated with CT urography."
+    ]
+   },
+   {
+    "q": "Which test is the gold standard for diagnosing bladder cancer?",
+    "ch": [
+     "Urine culture with sensitivity testing",
+     "Cystoscopy with biopsy of suspicious lesions",
+     "Urine cytology on a voided specimen",
+     "CT urography of the kidneys and ureters",
+     "MRI of the pelvis with contrast enhancement"
+    ],
+    "correct": 1,
+    "exp": "Cystoscopy is the gold-standard diagnostic test because it directly visualizes the bladder mucosa and allows biopsy of suspicious lesions; cytology and CT urography complement it but do not replace it.",
+    "why": [
+     "A urine culture tests for infection and is exactly the shortcut that delays a bladder cancer diagnosis.",
+     "",
+     "Cytology aids detection of high-grade tumors and CIS but is insensitive for low-grade disease, so it complements rather than replaces cystoscopy.",
+     "CT urography evaluates the upper tracts and helps stage disease; it does not visualize and biopsy the bladder mucosa.",
+     "MRI helps assess muscle invasion but is not the diagnostic gold standard."
+    ]
+   },
+   {
+    "q": "A pathology report on a TURBT specimen notes that no detrusor muscle is present in the sample. Why does this matter?",
+    "ch": [
+     "It confirms non-muscle-invasive disease and lets intravesical therapy proceed",
+     "It has no consequence, because CT urography assigns the T stage instead",
+     "Without detrusor muscle the specimen cannot show muscle invasion, so the tumor cannot be staged",
+     "It indicates bladder perforation and rules out any further intravesical instillation",
+     "It means the tumor must be high grade, since grade is read from the muscle layer"
+    ],
+    "correct": 2,
+    "exp": "The TURBT specimen must contain detrusor muscle - no muscle, no staging. Muscle invasion is the central decision point separating bladder-sparing management of NMIBC from radical cystectomy for MIBC.",
+    "why": [
+     "Absence of muscle in the specimen does not prove absence of invasion - it means invasion was never assessed.",
+     "CT urography evaluates the upper tracts and spread; definitive staging comes from the TURBT specimen.",
+     "",
+     "Suspected perforation is a contraindication to mitomycin instillation, but it is not what a muscle-free specimen indicates.",
+     "Grade is assessed on the tumor cells themselves and is independent of whether muscle was sampled."
+    ]
+   },
+   {
+    "q": "Intravesical BCG is indicated in which situation?",
+    "ch": [
+     "Metastatic urothelial carcinoma, as preferred first-line systemic therapy",
+     "A single immediate instillation after every TURBT regardless of grade or stage",
+     "Any patient with an active urinary tract infection and ongoing gross hematuria",
+     "Muscle-invasive disease, as an alternative to radical cystectomy in all patients",
+     "High-risk non-muscle-invasive disease - high-grade Ta/T1 or carcinoma in situ - after TURBT"
+    ],
+    "correct": 4,
+    "exp": "Intravesical BCG is adjuvant immunotherapy for high-risk NMIBC - high-grade Ta/T1 and carcinoma in situ - given after TURBT. High-grade T1 and CIS behave aggressively despite being non-muscle-invasive, which is why they warrant BCG.",
+    "why": [
+     "Metastatic disease is treated systemically with cisplatin-based chemotherapy and checkpoint inhibitor or antibody-drug conjugate regimens.",
+     "A single immediate post-TURBT instillation describes mitomycin C in low or intermediate-risk disease, not BCG.",
+     "Active UTI and gross hematuria are contraindications to instilling BCG, not indications for it.",
+     "Muscle-invasive disease is treated with neoadjuvant cisplatin-based chemotherapy and radical cystectomy, or chemoradiation in selected patients.",
+     ""
+    ]
+   },
+   {
+    "q": "Before instilling intravesical BCG, which finding must prompt the nurse to hold the treatment?",
+    "ch": [
+     "Mild dysuria that resolved completely several weeks earlier",
+     "A urine cytology result that was negative for high-grade cells",
+     "A long smoking history with ongoing nicotine replacement therapy",
+     "A prior TURBT whose specimen contained detrusor muscle",
+     "A traumatic catheterization, an active urinary tract infection, or gross hematuria"
+    ],
+    "correct": 4,
+    "exp": "BCG must not be instilled after a traumatic catheterization or in the presence of an active urinary tract infection or gross hematuria, because these conditions let live bacteria reach the bloodstream and raise the risk of BCG sepsis.",
+    "why": [
+     "Resolved irritative symptoms are not an active infection and do not by themselves require holding therapy.",
+     "Cytology is insensitive for low-grade disease, and a negative result is not a contraindication to instillation.",
+     "Smoking history and cessation therapy are important to the treatment plan but are not a reason to hold an instillation.",
+     "A muscle-containing specimen means staging was adequate; it is reassuring rather than a contraindication.",
+     ""
+    ]
+   },
+   {
+    "q": "Two days after an intravesical BCG instillation a patient develops fever, rigors, and hypotension. What is the concern and the action?",
+    "ch": [
+     "Clot retention, relieved by catheterization and continuous bladder irrigation",
+     "An immune-related adverse event from checkpoint blockade, treated with corticosteroids",
+     "Expected mitomycin C myelosuppression, followed with serial blood counts",
+     "BCG sepsis, a medical emergency requiring urgent anti-tuberculous antimicrobial therapy",
+     "Routine post-procedure chemical cystitis, managed with oral fluids at home"
+    ],
+    "correct": 3,
+    "exp": "Fever, rigors, or hypotension after BCG suggests BCG sepsis, a medical emergency requiring urgent antimicrobial (anti-tuberculous) therapy - it must not be dismissed as a routine urinary tract infection.",
+    "why": [
+     "Clot retention presents with inability to void and a distended, painful bladder rather than systemic sepsis.",
+     "Immune-related adverse events such as colitis and pneumonitis follow PD-1/PD-L1 inhibitors, not intravesical BCG.",
+     "Myelosuppression is a rare mitomycin C effect and does not explain rigors and hypotension after BCG.",
+     "",
+     "Chemical cystitis is a mitomycin effect and causes irritative voiding, not fever with rigors and hypotension."
+    ]
+   },
+   {
+    "q": "A TURBT shows high-grade urothelial carcinoma invading the detrusor muscle, and renal function is normal. What is the standard treatment approach?",
+    "ch": [
+     "Neoadjuvant cisplatin-based chemotherapy followed by radical cystectomy",
+     "A single immediate instillation of mitomycin C after the resection",
+     "Enfortumab vedotin with pembrolizumab as initial curative therapy",
+     "Repeat TURBT every three months without any systemic treatment",
+     "Intravesical BCG instillations with surveillance cystoscopy alone"
+    ],
+    "correct": 0,
+    "exp": "Muscle-invasive bladder cancer is treated with neoadjuvant cisplatin-based combination chemotherapy, such as gemcitabine plus cisplatin, followed by radical cystectomy - or chemoradiation for bladder preservation in selected patients.",
+    "why": [
+     "",
+     "A single immediate mitomycin instillation lowers recurrence in low or intermediate-risk NMIBC, not in muscle-invasive disease.",
+     "That regimen is used in advanced or metastatic urothelial carcinoma rather than as curative therapy for localized muscle-invasive disease.",
+     "Surveillance resection alone leaves muscle-invasive disease untreated, and its prognosis is far worse than that of NMIBC.",
+     "BCG is for high-risk non-muscle-invasive disease; it is inadequate once the detrusor muscle is invaded."
+    ]
+   },
+   {
+    "q": "Why does a patient need lifelong surveillance cystoscopy after complete resection of a bladder tumor?",
+    "ch": [
+     "The entire urothelium is at risk, so tumors are often multifocal and recur throughout the tract",
+     "Because intravesical BCG itself causes new tumors at the site of each instillation",
+     "Because urine cytology is so sensitive that every low-grade tumor is found early",
+     "Because smoking cessation has no effect on recurrence once cancer is diagnosed",
+     "Because radical cystectomy is scheduled for every patient at the five-year mark"
+    ],
+    "correct": 0,
+    "exp": "Bladder cancer is a field-change disease: the whole urothelium is at risk, so tumors are often multifocal and prone to recur throughout the tract, which is why surveillance cystoscopy is lifelong even after complete resection.",
+    "why": [
+     "",
+     "BCG is immunotherapy that reduces recurrence in high-risk NMIBC; it does not create new tumors.",
+     "Cytology is insensitive for low-grade tumors, which is precisely why surveillance is done by cystoscopy.",
+     "Cessation lowers recurrence, progression, and second primaries even after diagnosis.",
+     "Cystectomy is reserved for muscle-invasive disease, not scheduled routinely for everyone."
+    ]
+   },
+   {
+    "q": "Which pairing of exposure and bladder tumor histology is correct?",
+    "ch": [
+     "Cigarette smoking with adenocarcinoma of the bladder dome",
+     "Cyclophosphamide therapy with sarcoma of the detrusor muscle",
+     "Chronic Schistosoma haematobium infection with squamous cell carcinoma",
+     "Prior pelvic radiation with small cell carcinoma of the bladder",
+     "Occupational aromatic amine exposure with squamous cell carcinoma"
+    ],
+    "correct": 2,
+    "exp": "Chronic irritation from Schistosoma haematobium is the classic cause of squamous cell bladder cancer, whereas cigarette smoking and occupational aromatic amines drive urothelial carcinoma.",
+    "why": [
+     "Smoking is the leading risk factor for urothelial carcinoma, accounting for roughly half of cases.",
+     "Cyclophosphamide is a risk factor for urothelial carcinoma; bladder cancer arises from the lining, not the muscle.",
+     "",
+     "Prior pelvic radiation is a risk factor for urothelial carcinoma rather than small cell carcinoma.",
+     "Aromatic amines from rubber, dye, paint, and leather work cause urothelial carcinoma, not squamous cell carcinoma."
+    ]
+   }
+  ]
+ },
+ "gastric-cancer": {
+  "condition": "Gastric Cancer",
+  "questions": [
+   {
+    "q": "Which statement best describes the Lauren classification of gastric adenocarcinoma?",
+    "ch": [
+     "It grades tumors by depth of invasion into the wall and by the number of involved regional nodes",
+     "It divides tumors by HER2, PD-L1, and mismatch-repair status to select first-line systemic therapy",
+     "Intestinal type contains signet-ring cells while diffuse type is gland-forming and confined proximally",
+     "Intestinal type is gland-forming and distal and linked to H. pylori; diffuse type has signet-ring cells and a worse prognosis",
+     "It separates squamous carcinoma of the stomach from adenocarcinoma of the gastroesophageal junction"
+    ],
+    "correct": 3,
+    "exp": "Over 90% of gastric cancers are adenocarcinoma, divided by Lauren classification into an intestinal type (gland-forming, distal, linked to H. pylori and chronic atrophic gastritis) and a diffuse type (poorly cohesive signet-ring cells, younger patients, worse prognosis).",
+    "why": [
+     "Depth of invasion and nodal burden belong to TNM/AJCC staging, not to the Lauren histologic classification.",
+     "HER2, PD-L1, and mismatch-repair status are biomarkers that guide systemic therapy; they are not the Lauren classification.",
+     "This reverses the two types: signet-ring, poorly cohesive cells define the diffuse type, and gland formation defines the intestinal type.",
+     "",
+     "Over 90% of gastric cancers are adenocarcinoma, and the Lauren system divides adenocarcinoma rather than separating it from squamous carcinoma."
+    ]
+   },
+   {
+    "q": "Which sequence describes the Correa cascade of gastric carcinogenesis?",
+    "ch": [
+     "Barrett esophagus to esophageal dysplasia to squamous carcinoma of the stomach",
+     "Chronic H. pylori gastritis to atrophic gastritis to intestinal metaplasia to dysplasia to carcinoma",
+     "Signet-ring dysplasia to an acquired CDH1 mutation to hereditary diffuse gastric cancer",
+     "Peptic ulcer to gastric outlet obstruction to linitis plastica to peritoneal spread",
+     "Pernicious anemia to B12 deficiency to dumping syndrome to gastric adenocarcinoma"
+    ],
+    "correct": 1,
+    "exp": "The Correa cascade runs from chronic H. pylori gastritis through atrophic gastritis and intestinal metaplasia to dysplasia and finally carcinoma - the reasoning that makes H. pylori eradication a preventive intervention.",
+    "why": [
+     "Barrett metaplasia is an esophageal process, and gastric cancer is adenocarcinoma rather than squamous carcinoma.",
+     "",
+     "CDH1 mutation in hereditary diffuse gastric cancer is a germline event, and that pathway is separate from the Correa cascade.",
+     "These are complications and patterns of spread, not the stepwise precancerous sequence of the Correa cascade.",
+     "Pernicious anemia is a risk factor and dumping syndrome is a post-gastrectomy complication; neither belongs in this cascade."
+    ]
+   },
+   {
+    "q": "What does the term linitis plastica describe?",
+    "ch": [
+     "A left supraclavicular lymph node draining gastric cancer via the thoracic duct",
+     "Diffuse signet-ring infiltration that thickens and rigidifies the wall and effaces the rugae",
+     "Bilateral ovarian metastasis of gastric cancer filled with mucin-producing cells",
+     "A periumbilical nodule signaling intraperitoneal spread of gastric adenocarcinoma",
+     "A well-circumscribed distal polypoid mass formed by gland-forming intestinal-type tumor"
+    ],
+    "correct": 1,
+    "exp": "Linitis plastica - leather bottle stomach - is diffuse-type infiltration by signet-ring cells that thickens and rigidifies the gastric wall, effaces the rugae, and markedly impairs distensibility.",
+    "why": [
+     "That describes a Virchow node, the signal node of GI malignancy.",
+     "",
+     "That describes a Krukenberg tumor, bilateral ovarian metastasis of signet-ring gastric cancer.",
+     "That describes a Sister Mary Joseph nodule, a periumbilical metastasis.",
+     "Linitis plastica is the opposite of a circumscribed mass - it is diffuse infiltration of the wall."
+    ]
+   },
+   {
+    "q": "In which patient should gastric cancer be suspected and upper endoscopy pursued?",
+    "ch": [
+     "A 24-year-old with two days of epigastric burning that resolves with an antacid",
+     "A 30-year-old with heartburn after large meals and no change in body weight",
+     "A 45-year-old with intermittent nausea during the first trimester of pregnancy",
+     "A 50-year-old whose dyspepsia resolved completely after H. pylori eradication",
+     "A 64-year-old with new dyspepsia, six months of weight loss, and iron-deficiency anemia"
+    ],
+    "correct": 4,
+    "exp": "Suspect gastric cancer with new-onset dyspepsia over age 60, or dyspepsia plus alarm features - weight loss, anemia, dysphagia, early satiety, vomiting, or GI bleeding - and confirm with upper endoscopy and biopsy.",
+    "why": [
+     "Brief antacid-responsive symptoms in a young patient carry no alarm features.",
+     "Postprandial heartburn with stable weight in a young patient lacks the alarm features that prompt endoscopy.",
+     "Nausea of early pregnancy is not dyspepsia with alarm features.",
+     "Complete resolution after eradication is a reassuring course rather than an alarm presentation.",
+     ""
+    ]
+   },
+   {
+    "q": "An endoscopist suspects linitis plastica, but the superficial biopsies return negative. What explains this, and what should be done?",
+    "ch": [
+     "Submucosal infiltration can spare the mucosa, so multiple deep biopsies with EUS are needed",
+     "A negative superficial biopsy reliably excludes malignancy, so no further sampling is needed",
+     "Urine cytology should be sent instead, since it detects poorly cohesive tumor cells",
+     "The diagnosis should rest on the CT appearance alone without tissue confirmation",
+     "H. pylori testing alone is sufficient, because eradication treats the underlying tumor"
+    ],
+    "correct": 0,
+    "exp": "Linitis plastica infiltrates the submucosa and can leave the mucosa looking normal, so superficial samples may be falsely negative; multiple deep biopsies are required, and endoscopic ultrasound defines depth of invasion and regional nodes.",
+    "why": [
+     "",
+     "Superficial samples yield false negatives in linitis plastica, which is exactly why multiple biopsies are required.",
+     "Urine cytology has no role in gastric cancer; diagnosis is by endoscopic biopsy.",
+     "CT screens for distant spread; upper endoscopy with biopsy is the confirmatory diagnostic test.",
+     "Eradication treats the carcinogenic infection and lowers recurrence risk, but it does not diagnose or treat an established cancer."
+    ]
+   },
+   {
+    "q": "A patient with apparently resectable gastric cancer has a CT that shows no metastatic disease. Which additional step is recommended before curative resection?",
+    "ch": [
+     "Bilateral oophorectomy to exclude an occult Krukenberg tumor before surgery",
+     "Repeat upper endoscopy with urea breath testing while on a proton pump inhibitor",
+     "Serial carcinoembryonic antigen levels followed over the next six months",
+     "Empiric perioperative FLOT chemotherapy with no further staging at all",
+     "Staging laparoscopy, which detects peritoneal disease that CT misses"
+    ],
+    "correct": 4,
+    "exp": "Staging laparoscopy is recommended before curative resection because it detects radiographically occult peritoneal disease that CT of the chest, abdomen, and pelvis misses - a finding that shifts intent from cure to palliation.",
+    "why": [
+     "A Krukenberg tumor is metastatic ovarian disease found on staging, not something excluded by prophylactic oophorectomy.",
+     "Urea breath testing on a PPI gives false negatives, and repeat endoscopy adds nothing about peritoneal spread.",
+     "Watching a marker for months would delay curative resection and would not detect peritoneal disease.",
+     "Perioperative FLOT is the chemotherapy backbone for resectable disease, but it does not substitute for completing staging.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with gastric adenocarcinoma has a firm, enlarged left supraclavicular lymph node. What does this finding signify?",
+    "ch": [
+     "A Krukenberg tumor, bilateral ovarian metastasis of signet-ring cancer",
+     "Reactive adenopathy from H. pylori gastritis that does not affect staging",
+     "A Blumer shelf, palpable on digital rectal examination in advanced disease",
+     "A Virchow node, the signal node of GI malignancy, indicating metastatic disease",
+     "A Sister Mary Joseph nodule, the periumbilical sign of intraperitoneal spread"
+    ],
+    "correct": 3,
+    "exp": "A left supraclavicular node is a Virchow node, the signal node of GI malignancy draining via the thoracic duct. With the Sister Mary Joseph nodule, Krukenberg tumor, and Blumer shelf it marks metastatic disease and shifts intent from cure to palliation.",
+    "why": [
+     "A Krukenberg tumor is an ovarian metastasis, found on imaging or examination of the pelvis rather than the neck.",
+     "A firm left supraclavicular node in gastric cancer signals metastatic disease and must not be dismissed as reactive.",
+     "A Blumer shelf is the rectal-shelf finding on digital rectal exam, not a supraclavicular node.",
+     "",
+     "A Sister Mary Joseph nodule is periumbilical, not supraclavicular."
+    ]
+   },
+   {
+    "q": "A patient with advanced gastric adenocarcinoma is being considered for trastuzumab. Which step is required first, and what must be monitored?",
+    "ch": [
+     "Confirm HER2 by IHC or FISH first, then follow cardiac function with serial echocardiogram or MUGA",
+     "Check DPYD status first, then follow the patient for cold-triggered peripheral neuropathy",
+     "Document PD-L1 CPS first, then watch for immune colitis, pneumonitis, and thyroiditis",
+     "Confirm H. pylori eradication first, then repeat urea breath testing after four weeks",
+     "Measure creatinine clearance first, then give aggressive hydration for nephrotoxicity"
+    ],
+    "correct": 0,
+    "exp": "Trastuzumab is added to first-line chemotherapy only in HER2-positive advanced gastric or GEJ adenocarcinoma, so HER2 must be confirmed by IHC or FISH; because the drug is cardiotoxic, baseline and serial echocardiogram or MUGA are required and concurrent anthracyclines are avoided.",
+    "why": [
+     "",
+     "DPYD status matters for fluoropyrimidine toxicity and cold-triggered neuropathy belongs to oxaliplatin, not trastuzumab.",
+     "PD-L1 CPS and immune-related adverse events apply to checkpoint inhibitors such as nivolumab or pembrolizumab.",
+     "Eradication confirmation is important care but is unrelated to selecting or monitoring trastuzumab.",
+     "Renal function and hydration are the concerns with cisplatin, which is nephrotoxic and ototoxic."
+    ]
+   },
+   {
+    "q": "Which teaching is essential for a patient recovering from total gastrectomy?",
+    "ch": [
+     "Take large high-carbohydrate meals with generous fluids during each meal",
+     "Supplement iron only, since intrinsic factor production is unaffected",
+     "Lifelong vitamin B12 replacement, plus small low-simple-sugar meals to limit dumping syndrome",
+     "Sit fully upright for several hours after every meal to speed gastric emptying",
+     "Stop all surveillance endoscopy, since the stomach has been removed"
+    ],
+    "correct": 2,
+    "exp": "Loss of intrinsic factor after total or subtotal gastrectomy causes B12 deficiency, so replacement - usually by injection - is lifelong. Dumping syndrome, with diaphoresis, palpitations, and diarrhea after meals, is managed with small, frequent, low-simple-sugar meals and lying down after eating.",
+    "why": [
+     "Large meals rich in simple sugars provoke dumping syndrome; the teaching is small, frequent, low-simple-sugar meals.",
+     "Gastrectomy removes the source of intrinsic factor, so B12 deficiency develops and replacement is required.",
+     "",
+     "Patients are taught to lie down after eating, which slows transit and reduces dumping symptoms.",
+     "Surveillance endoscopy and confirmation of H. pylori eradication remain part of follow-up."
+    ]
+   },
+   {
+    "q": "How should eradication be confirmed after treating H. pylori in a patient with gastric cancer?",
+    "ch": [
+     "No confirmation is needed once the dyspepsia has fully resolved",
+     "A single stool antigen sample sent 48 hours after starting antibiotics",
+     "Urea breath or stool antigen testing at least 4 weeks after antibiotics, off PPI for 1-2 weeks",
+     "Repeat serology on the day the antibiotic course is completed",
+     "Urea breath testing while the patient continues a daily proton pump inhibitor"
+    ],
+    "correct": 2,
+    "exp": "Eradication is confirmed with urea breath or stool antigen testing at least 4 weeks after completing antibiotics and off PPI for 1-2 weeks, because acid suppression causes false negatives; eradication reduces the risk of metachronous or recurrent cancer after early resection.",
+    "why": [
+     "Symptom relief does not prove eradication, and eradication lowers the risk of recurrent or metachronous cancer.",
+     "Testing during treatment is invalid; the interval is at least 4 weeks after antibiotics are finished.",
+     "",
+     "Testing immediately after therapy is too early, and confirmation is done with urea breath or stool antigen testing.",
+     "PPIs must be held for 1-2 weeks before testing, because acid suppression causes false-negative results."
+    ]
+   }
+  ]
+ },
+ "melanoma": {
+  "condition": "Melanoma",
+  "questions": [
+   {
+    "q": "Which set of features makes up the ABCDE rule for evaluating a pigmented lesion?",
+    "ch": [
+     "Asymmetry, border irregularity, color variation, diameter over 6 mm, and evolution over time",
+     "Age, body site, comorbidity, duration of exposure, and ethnicity of the patient",
+     "Anesthesia, biopsy, curettage, dermoscopy, and excision as sequential steps",
+     "Atrophy, bleeding, crusting, dryness, and erythema of the surrounding skin",
+     "Asymmetry, bleeding, color uniformity, depth over 6 mm, and elevation of the lesion"
+    ],
+    "correct": 0,
+    "exp": "ABCDE is Asymmetry, Border irregularity, Color variation, Diameter greater than 6 mm, and Evolution or change over time. It is used together with the ugly duckling sign - a lesion unlike the rest of that patient’s nevi.",
+    "why": [
+     "",
+     "These are patient characteristics rather than the lesion features the rule describes.",
+     "These are procedures; the ABCDE rule describes what makes a pigmented lesion suspicious.",
+     "These are nonspecific skin findings and are not the letters of the ABCDE rule.",
+     "Color variation rather than uniformity is the concerning feature, and the D stands for diameter, not depth."
+    ]
+   },
+   {
+    "q": "Which pathologic feature is the single strongest prognostic factor in cutaneous melanoma?",
+    "ch": [
+     "The Clark anatomic level of the lesion",
+     "The clinical diameter of the lesion in millimeters",
+     "The degree of pigmentation seen on inspection",
+     "The serum LDH at the time of diagnosis",
+     "Breslow depth measured in millimeters"
+    ],
+    "correct": 4,
+    "exp": "Breslow depth - millimeters from the granular layer to the deepest tumor cell - is the single strongest prognostic factor, because it reflects the vertical growth phase that gives melanoma metastatic access. Ulceration and mitotic rate are also reported.",
+    "why": [
+     "Clark level is anatomic and is now largely historical, superseded by Breslow depth.",
+     "Diameter appears in the ABCDE rule for recognition, but depth of invasion rather than width determines metastatic access.",
+     "Clinical pigmentation does not measure invasion and is not a staging variable.",
+     "LDH is prognostic in stage IV disease; it is not the primary tumor measurement that drives prognosis.",
+     ""
+    ]
+   },
+   {
+    "q": "A dermatologist plans to biopsy a 7 mm asymmetric pigmented lesion with irregular borders. Which technique is preferred, and why?",
+    "ch": [
+     "Deep shave biopsy, which removes the lesion quickly and leaves a smaller scar",
+     "Excisional full-thickness biopsy with 1-3 mm margins, which preserves depth for staging",
+     "Curettage of the pigmented surface, which yields cells for cytologic review",
+     "Wide local excision with 2 cm margins before any histology is available",
+     "Observation with repeat photography in six months to document evolution"
+    ],
+    "correct": 1,
+    "exp": "Excisional (full-thickness) biopsy with 1-3 mm margins is preferred whenever feasible because it preserves the full depth for Breslow measurement; a shave biopsy can transect the lesion, understage it, and misguide margin and sentinel node decisions.",
+    "why": [
+     "A shave biopsy can transect a melanoma and understage it, which is why it is avoided in a suspected lesion.",
+     "",
+     "Curettage destroys the architecture needed to measure Breslow depth and cannot stage the lesion.",
+     "Margins are scaled to Breslow depth, so wide excision follows the diagnostic biopsy rather than preceding it.",
+     "A lesion already meeting ABCDE criteria needs biopsy now; watching it risks progression to vertical growth."
+    ]
+   },
+   {
+    "q": "Which statement about melanoma subtypes is correct?",
+    "ch": [
+     "Acral lentiginous melanoma is caused by intermittent intense sun exposure and tanning bed use",
+     "Acral lentiginous melanoma is the most common subtype in darker-skinned patients and is unrelated to sun exposure",
+     "Nodular melanoma has a prolonged radial growth phase and is therefore usually thin at diagnosis",
+     "Lentigo maligna arises on the palms and soles of young adults with little cumulative sun damage",
+     "Superficial spreading melanoma is the rarest subtype and occurs almost only in the uveal tract"
+    ],
+    "correct": 1,
+    "exp": "Acral lentiginous melanoma involves the palms, soles, and nail beds, is the most common subtype in darker-skinned and Asian patients, and is unrelated to sun exposure - which is why it is easily missed unless soles and nails are examined.",
+    "why": [
+     "Intermittent intense UV exposure and tanning beds drive most melanoma, but acral lentiginous melanoma is the subtype not linked to UV.",
+     "",
+     "Nodular melanoma lacks a radial phase, enters vertical growth early, and presents thick and aggressive.",
+     "Lentigo maligna arises on the sun-damaged skin of elderly patients; palms and soles are the acral sites.",
+     "Superficial spreading is the most common subtype; melanoma can arise in the uvea but that is not this subtype."
+    ]
+   },
+   {
+    "q": "At what point is sentinel lymph node biopsy generally offered in cutaneous melanoma?",
+    "ch": [
+     "Only after distant metastases have already been confirmed on PET-CT",
+     "For every melanoma in situ, before the wide local excision is performed",
+     "Only when a BRAF V600 mutation has been found on molecular testing",
+     "For tumors at or above 0.8 mm Breslow depth, or when the primary is ulcerated",
+     "Only when the serum LDH is elevated above the upper limit of normal"
+    ],
+    "correct": 3,
+    "exp": "Sentinel lymph node biopsy is offered for tumors generally 0.8 mm or thicker, or with ulceration, to assess nodal spread; thin non-ulcerated tumors are managed with wide local excision alone.",
+    "why": [
+     "Sentinel node biopsy assesses regional nodal spread before distant disease is known; confirmed metastases make it unnecessary.",
+     "Thin, non-ulcerated tumors including in situ disease are treated with wide excision alone.",
+     "BRAF status guides targeted therapy in advanced disease; it does not determine sentinel node biopsy.",
+     "",
+     "LDH is a stage IV prognostic marker and is not the trigger for nodal sampling."
+    ]
+   },
+   {
+    "q": "A patient with metastatic melanoma has a BRAF V600 mutation. Which principle guides targeted therapy?",
+    "ch": [
+     "Use intralesional T-VEC instead, because targeted agents require wild-type BRAF",
+     "Use interferon alfa-2b, which remains the preferred option in BRAF-mutated disease",
+     "Give a BRAF inhibitor as monotherapy, since adding a MEK inhibitor only doubles toxicity",
+     "Give a MEK inhibitor alone, since BRAF inhibitors work only in BRAF wild-type tumors",
+     "Pair a BRAF inhibitor with a MEK inhibitor, because BRAF inhibition alone paradoxically activates MAPK"
+    ],
+    "correct": 4,
+    "exp": "BRAF V600-mutated melanoma is treated with a BRAF inhibitor plus a MEK inhibitor, such as dabrafenib with trametinib; a BRAF inhibitor is never given alone because of paradoxical MAPK activation. Monitor for pyrexia, QT prolongation, and ophthalmic and cardiac toxicity.",
+    "why": [
+     "T-VEC is an intralesional option for unresectable cutaneous or nodal lesions, and targeted therapy requires a mutation rather than wild-type BRAF.",
+     "Interferon alfa-2b is a poorly tolerated historical adjuvant option, largely replaced by checkpoint and targeted therapy.",
+     "A BRAF inhibitor is never used alone, precisely because single-agent blockade paradoxically activates the MAPK pathway.",
+     "This is backwards - BRAF inhibitors are for BRAF V600-mutated tumors, and the MEK inhibitor is the partner drug.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient receiving pembrolizumab for stage III melanoma reports new watery diarrhea and a dry cough. What is the appropriate concern?",
+    "ch": [
+     "Flu-like toxicity of interferon alfa-2b, which improves with continued dosing",
+     "Local viral shedding from T-VEC, prevented by limiting caregiver handling",
+     "Lymphedema after lymph node dissection, treated with elevation of the limb",
+     "Immune-related adverse events, colitis and pneumonitis, which need prompt reporting and evaluation",
+     "Expected pyrexia from BRAF and MEK inhibitor therapy, managed with antipyretics"
+    ],
+    "correct": 3,
+    "exp": "Checkpoint inhibitors cause immune-related adverse events - colitis, pneumonitis, hepatitis, and thyroid or pituitary endocrinopathies. New diarrhea, cough or dyspnea, rash, fatigue, or endocrine symptoms must be reported promptly, because early treatment, with corticosteroids in severe cases, prevents serious harm.",
+    "why": [
+     "Flu-like symptoms, depression, and hepatotoxicity belong to interferon alfa-2b, a historical adjuvant agent.",
+     "T-VEC is an intralesional oncolytic virus whose handling precautions protect caregivers; it does not cause diarrhea and cough.",
+     "Lymphedema follows lymph node dissection and affects the limb; it does not produce diarrhea or cough.",
+     "",
+     "Pyrexia is a BRAF/MEK inhibitor effect, and this patient is receiving a checkpoint inhibitor instead."
+    ]
+   },
+   {
+    "q": "A patient with known melanoma develops headache and a new focal neurologic deficit. Which workup does this reflect?",
+    "ch": [
+     "Urine catecholamines, since neurologic symptoms reflect a paraneoplastic syndrome",
+     "Serial photography of the remaining nevi to document evolution by the ABCDE rule",
+     "Brain MRI, because melanoma classically metastasizes to the brain, along with LDH",
+     "Repeat sentinel lymph node biopsy of the original nodal basin to restage disease",
+     "Dermoscopy of the excision scar to look for a recurrent radial growth phase"
+    ],
+    "correct": 2,
+    "exp": "Melanoma is one of the tumors that classically metastasizes to the brain, so new neurologic symptoms in a known melanoma patient prompt brain MRI; the advanced-disease workup also includes LDH, which is prognostic in stage IV, plus CT or PET-CT.",
+    "why": [
+     "Catecholamine testing has no role here; new neurologic deficits in melanoma raise concern for brain metastasis.",
+     "Photographic surveillance screens for new primary lesions, not for focal neurologic deficits.",
+     "",
+     "Sentinel node biopsy assesses regional spread at the time of the primary; it does not evaluate new neurologic symptoms.",
+     "Examining the scar does not address a possible brain metastasis."
+    ]
+   },
+   {
+    "q": "A patient has a band of pigment extending from under the thumbnail onto the proximal nail fold. What does this represent?",
+    "ch": [
+     "A benign melanonychia needing no examination of the other nails or the soles",
+     "A resolving subungual hematoma that will grow out with the nail over months",
+     "Hutchinson sign, suggesting a subungual acral melanoma rather than a bruise",
+     "The ugly duckling sign, which applies only to lesions on sun-exposed skin",
+     "Lentigo maligna, the subtype arising on chronically sun-damaged facial skin"
+    ],
+    "correct": 2,
+    "exp": "Hutchinson sign - pigment spreading onto the proximal nail fold - suggests a subungual acral melanoma rather than a bruise. Acral lentiginous melanoma involves palms, soles, and nail beds and is easily missed without a systematic full-body examination.",
+    "why": [
+     "This finding requires a full examination including soles, nails, and scalp rather than reassurance.",
+     "Pigment spreading onto the proximal nail fold is what distinguishes melanoma from a bruise, which does not extend onto the fold.",
+     "",
+     "The ugly duckling sign is a lesion unlike the rest of a person’s nevi and is not restricted to sun-exposed skin.",
+     "Lentigo maligna occurs on sun-damaged skin of elderly patients, not in the nail bed."
+    ]
+   },
+   {
+    "q": "A 1.2 mm non-ulcerated melanoma has been diagnosed on excisional biopsy. What is the definitive local treatment?",
+    "ch": [
+     "Wide local excision with margins scaled to Breslow depth, with sentinel node sampling",
+     "Combination ipilimumab and nivolumab as the initial local treatment approach",
+     "Intralesional T-VEC injections at the biopsy site instead of further surgery",
+     "Adjuvant interferon alfa-2b alone, without any further surgical treatment",
+     "Cryotherapy of the scar with monthly clinical photographs for surveillance"
+    ],
+    "correct": 0,
+    "exp": "Wide local excision is the definitive treatment of the primary melanoma, with margins scaled to Breslow depth (roughly 0.5-1 cm for in situ and up to 2 cm for thicker tumors); sentinel node biopsy is performed at the same setting when indicated, as it is at this depth.",
+    "why": [
+     "",
+     "Combination checkpoint blockade is systemic therapy for advanced disease, not local treatment of a 1.2 mm primary.",
+     "T-VEC is for unresectable cutaneous or nodal lesions, not for a resectable primary melanoma.",
+     "Interferon alfa-2b is a historical adjuvant option and never replaces excision of the primary tumor.",
+     "Cryotherapy leaves no specimen and does not achieve the depth-based margins melanoma requires."
+    ]
+   }
+  ]
+ }
+}

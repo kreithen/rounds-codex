@@ -4,7 +4,8 @@ Each file is one agent's or one hand-written batch's output, merged into
 `content/quizzes.json` by `scripts/merge_quizzes.js`. Kept as source so a quiz can be revised
 and re-merged without re-authoring.
 
-**Coverage: 137 of 181 conditions.** 44 remain — listed below.
+**Coverage: 181 of 181 conditions.** 1,820 questions, 1,660 with per-option rationales,
+310 with gallery references. Answer positions sit at 20% each for A/B/C/D/E bank-wide.
 
 ## Pipeline
 1. Author to a file here, grounded strictly in the condition's own module fields.
@@ -27,24 +28,15 @@ and re-merged without re-authoring.
    knowledge. Threshold calibrated against IBD (median 1.21x the mean distractor). Fix by
    lengthening distractors, never by truncating the answer.
 
-## Still to author (44)
-Blocked mid-run by a session limit, not by content. Groups re-run unchanged.
-
-- **Fluids & Electrolytes (12)** hypernatremia hypokalemia hypocalcemia hypercalcemia
-  hypomagnesemia hypophosphatemia metabolic-acidosis metabolic-alkalosis respiratory-acidosis
-  respiratory-alkalosis hypovolemia fluid-overload
-- **Oncology (14)** breast-cancer colorectal-cancer prostate-cancer pancreatic-cancer
-  ovarian-cancer cervical-cancer bladder-cancer gastric-cancer melanoma brain-tumor tumor-lysis
-  febrile-neutropenia cord-compression svc-syndrome
-- **Toxicology (9)** acetaminophen-od salicylate-od opioid-od benzodiazepine-od tca-od
-  digoxin-toxicity carbon-monoxide toxic-alcohols organophosphate
-- **Women's Health (8)** pcos endometriosis pid ectopic-pregnancy ovarian-torsion aub fibroids
-  menopause
-- **Pediatrics (1)** failure-to-thrive
-
 ## Open review items
+- **No independent medical re-read has been done.** Every item passed structural QA,
+  source-traceability against its own condition module, and full app verification — but each was
+  checked by the agent that wrote it. A second pass by reviewers other than the authors is the
+  remaining gap, and it is the one that matters most for clinical content.
 - `"Preferred imaging study?"` is the stem in both `diverticulitis` and `bowel-obstruction`
   (both transcribed from the physician's PDFs). Harmless but worth distinguishing.
-- Nine advisory QA notes remain across the bank, each hand-verified as a false positive of the
-  explanation-matches-option heuristic (an explanation naming a distractor to dismiss it, or
-  abbreviating where the option spells out).
+- Eleven advisory QA notes remain bank-wide, each hand-verified as a false positive of the
+  explanation-matches-option heuristic (an explanation naming a distractor in order to dismiss
+  it, or abbreviating where the option spells out).
+- `hyperparathyroid` was transcribed from a PDF and its options have since been rotated to break
+  an all-A pattern, so the app's option letters no longer match that printed PDF.

@@ -151,6 +151,20 @@ no backend. This file is context for future sessions — read it before starting
   while every source PDF states a letter, and an off-by-one turns a right answer wrong with
   nothing downstream able to detect it. The validator also checks `why[]` aligns with `ch[]`
   (and is empty at `correct`), and that no `img` points past the end of the gallery.
+- **Every condition has a quiz (181/181, 1,820 questions) as of 2026-07-29.** 24 were
+  transcribed from the physician's PDFs; the rest were authored from each condition's own module
+  text by agent fan-out. Pipeline: author to `quizzes-staging/authored/<file>.json` →
+  `scripts/qa_quizzes.js` (must hit 0 failures) → `scripts/balance_answers.js` →
+  `scripts/merge_quizzes.js` → `scripts/audit_quiz_bank.js` bank-wide. See
+  `quizzes-staging/authored/README.md`. **Three traps, all of which have bitten:** (1) ten
+  questions in a row land on the same letter — one quiz shipped 10/10 at B, and the *first* fix
+  made it worse by spreading evenly round-robin so every quiz read A B C D E A B C D E; the
+  balancer now shuffles from a per-quiz seed. (2) Rewriting a `ch[]` array reorders the options,
+  and not re-deriving `correct` marks a **distractor** as the answer while every structural check
+  still passes — capture the answer TEXT, then `correct = ch.indexOf(text)`, and rebuild `why[]`
+  keyed by option text. (3) A correct answer much longer than its distractors is pickable without
+  knowledge; threshold calibrated against IBD at ~1.2x. **No independent medical re-read has been
+  done** — authors checked their own work.
 - **Resident mode**: `RES_DATA` (array, each `.sec`=specialty code), `RES_ACTIVE` (Set of active
   codes), `RES_SECTION2_TITLE` (code→"Top X…" header), `RES_SPECIALTIES` (`[{id,n}]` picker),
   `RES_COND` (conditions per specialty). `resSpecHTML(spec)` renders a specialty page: section-2

@@ -1023,3 +1023,35 @@ Worth knowing before adding more. Correct-answer distribution over all 24 quizze
 
 None of this is a bug and none of it is transcription error; it is quiz design, and it belongs
 to whoever writes the items. Recorded so the next batch can be built with it in mind.
+
+### 16. Every condition has a quiz (`7f75d07`) — 181/181, 1,820 questions
+Closed the last 44 gaps with nine agents (fluids/electrolytes, toxicology, oncology, women's
+health, failure-to-thrive). Bank: **181 quizzes, 1,820 questions**, 1,660 with per-option
+rationales, 310 with gallery references. 24 quizzes are transcribed from the physician's PDFs;
+157 were authored from each condition's own module text.
+
+**Answer positions are flat at 20% each for A/B/C/D/E bank-wide.** They were not. Option E was
+correct in 3 of 240 transcribed questions — about 1% — which teaches a student to stop reading a
+fifth of every question, and `hyperparathyroid` was all-A. Both fixed by rotation (same options,
+same relative order, different starting point) with `why[]` and `correct` moved in lockstep;
+1,376 questions were cross-checked against a pre-rotation copy for identical answer text, option
+set, rationale pairing, stem and explanation.
+
+**The lesson worth keeping is that the first randomisation fix was wrong.** Spreading answers
+evenly by round-robin produced a perfect 2/2/2/2/2 per quiz *and* the identical sequence
+A B C D E A B C D E in every one, so question 1's answer was A app-wide. Even is not random — it
+is a rule, and a learnable one. The balancer now shuffles from a per-quiz seed.
+
+**Also worth keeping:** rewriting a `ch[]` array to even out option lengths reorders the options.
+Not re-deriving `correct` at the same moment marks a distractor as the right answer, and the quiz
+still runs, still scores and still looks correct — seven questions were wrong that way before a
+check existed for it. Two agents independently solved it by building each question from the
+answer's TEXT plus an option-text→rationale map, deriving the index from the text. That pattern
+is now in the brief.
+
+Verified by driving every quiz in the app: 1,820/1,820 grade the right answer correct,
+1,656/1,656 eligible questions show that option's own rationale on a wrong pick, zero errors.
+
+**Still open — the one that matters most:** no independent medical re-read. Every item was
+checked by the agent that wrote it. Structural QA, source-traceability and app verification all
+pass; a second clinician-level pass by non-authors does not exist yet.

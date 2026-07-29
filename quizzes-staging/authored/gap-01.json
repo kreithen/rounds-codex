@@ -1,0 +1,977 @@
+{
+ "hypernatremia": {
+  "condition": "Hypernatremia",
+  "questions": [
+   {
+    "q": "A hospitalized patient has a serum sodium of 152 mEq/L. This value is best understood as which of the following?",
+    "ch": [
+     "A laboratory artifact of hyperlipidemia that requires no free-water replacement at all",
+     "A deficit of free water relative to sodium, producing a hyperosmolar state that dehydrates cells",
+     "An absolute excess of total body sodium in every case, independent of the water balance",
+     "A hypo-osmolar state that drives water into cells and swells neurons dangerously",
+     "An expected finding whenever the thirst mechanism and water access are both intact"
+    ],
+    "correct": 1,
+    "exp": "Hypernatremia reflects a hyperosmolar state in which water is lost in excess of sodium, pulling water out of cells and causing cellular dehydration, most dangerously of neurons. Total body sodium may be low, normal, or high — the serum sodium reports free-water status.",
+    "why": [
+     "The module attributes hypernatremia to a real water deficit or sodium gain, and it requires calculated free-water replacement, not reassurance.",
+     "",
+     "Sodium gain is the least common mechanism; total body sodium can be low, normal, or high, and the serum sodium reports free-water status rather than total sodium.",
+     "Hypernatremia is hyperosmolar and pulls water OUT of cells; cellular dehydration of neurons, not swelling, is the acute danger.",
+     "The intact thirst mechanism is so protective that sustained hypernatremia mainly occurs in patients who cannot drink — this value is never an expected normal."
+    ]
+   },
+   {
+    "q": "Sustained hypernatremia occurs almost exclusively in infants, the elderly, intubated patients, and those with altered mental status. Why?",
+    "ch": [
+     "These groups ingest far more dietary sodium than other hospitalized patients do",
+     "Their kidneys cannot excrete sodium at all, so sodium accumulates in the plasma",
+     "Each group has an inherited defect of the renal sodium-potassium ATPase pump",
+     "Antidiuretic hormone is congenitally absent in all of these patient groups",
+     "The thirst mechanism is so protective that hypernatremia persists only when a patient cannot drink"
+    ],
+    "correct": 4,
+    "exp": "The thirst mechanism is so protective that sustained hypernatremia mainly occurs in patients who cannot drink. The module frames the key management question as \"why can't this patient access water?\"",
+    "why": [
+     "Sodium gain (hypertonic saline, bicarbonate, mineralocorticoid excess) is the uncommon hypervolemic mechanism, not a dietary feature of these groups.",
+     "Renal water handling, not an inability to excrete sodium, drives most cases; free-water loss rather than sodium retention is the problem.",
+     "The module names no inherited pump defect; the shared feature of these groups is impaired thirst or impaired access to water.",
+     "Deficient ADH describes central diabetes insipidus, which is one specific cause — it is not a feature shared by infants, the elderly, and intubated patients.",
+     ""
+    ]
+   },
+   {
+    "q": "Which nursing assessment does the module identify as the hallmark to monitor in a patient with hypernatremia?",
+    "ch": [
+     "Hourly deep tendon reflex checks, the earliest indicator of a rising serum sodium",
+     "Frequent neurologic checks, because CNS irritability progressing to lethargy is the hallmark",
+     "Serial Chvostek and Trousseau signs, which grade the severity of the water deficit",
+     "Continuous pulse oximetry, because hypernatremia principally impairs gas exchange",
+     "Daily fundoscopic examination, to detect papilledema before mental status changes"
+    ],
+    "correct": 1,
+    "exp": "The hallmark of hypernatremia is CNS irritability progressing to lethargy, so frequent neuro checks are the priority assessment — and because rapid correction can precipitate cerebral edema and seizures, any change in level of consciousness must be reported immediately.",
+    "why": [
+     "Loss of deep tendon reflexes is the toxicity monitor during magnesium repletion, not the hallmark assessment in hypernatremia.",
+     "",
+     "Chvostek and Trousseau are the tetany signs of hypocalcemia; they do not grade a free-water deficit.",
+     "Hypernatremia is a CNS problem of cellular dehydration; the module directs airway and suction readiness for altered or seizing patients rather than oximetry as the hallmark.",
+     "The module lists neuro checks, intake and output, daily weights, and serial sodium — not fundoscopy — as the monitoring plan."
+    ]
+   },
+   {
+    "q": "A hypernatremic patient has a urine osmolality of 750 mOsm/kg. What does this indicate?",
+    "ch": [
+     "An osmotic diuresis, which characteristically produces isosthenuric urine",
+     "A primary sodium gain from hypertonic saline or sodium bicarbonate infusion",
+     "An appropriate renal response to water loss, pointing to extrarenal or insensible losses",
+     "Complete central diabetes insipidus, with essentially absent circulating ADH",
+     "Complete nephrogenic diabetes insipidus, with full renal resistance to ADH"
+    ],
+    "correct": 2,
+    "exp": "A urine osmolality above roughly 600-800 mOsm/kg shows the kidney is concentrating appropriately, which localizes the problem outside the kidney — extrarenal (GI) or insensible/sweat free-water loss. Values under 300 mOsm/kg indicate complete diabetes insipidus, and intermediate or isosthenuric urine suggests osmotic diuresis or partial DI.",
+    "why": [
+     "Osmotic diuresis gives intermediate or isosthenuric urine, not the maximally concentrated urine seen here.",
+     "Sodium gain is diagnosed from the history and hypervolemic exam; urine osmolality is used to judge the renal water-handling response.",
+     "",
+     "Complete DI produces dilute urine, under about 300 mOsm/kg — concentrated urine argues against it.",
+     "Renal ADH resistance prevents concentration, so nephrogenic DI also gives dilute urine rather than 750 mOsm/kg."
+    ]
+   },
+   {
+    "q": "Which expression does the module give for estimating the free water deficit in hypernatremia?",
+    "ch": [
+     "0.9 x body weight in kilograms, divided by the measured serum osmolality",
+     "Measured calcium plus 0.8 x (4.0 - serum albumin), correcting for protein binding",
+     "Urine osmolality divided by serum osmolality, multiplied by total body weight",
+     "TBW x [(serum Na / 140) - 1], with TBW about 0.6 x weight in men and 0.5 x weight in women",
+     "Serum sodium minus 140, multiplied by the height in centimeters and then halved"
+    ],
+    "correct": 3,
+    "exp": "Free water deficit = TBW x [(serum Na / 140) - 1], where total body water is roughly 0.6 x weight in kg for men and 0.5 x weight in kg for women. The deficit is then replaced over 48-72 hours, plus maintenance and ongoing urinary or GI free-water losses.",
+    "why": [
+     "Serum osmolality is used to confirm the hyperosmolar state, not as a divisor in the deficit calculation.",
+     "That is the albumin-corrected calcium formula from the calcium disorders, not the free water deficit.",
+     "Urine osmolality localizes the mechanism (renal versus extrarenal); it does not quantify the water deficit.",
+     "",
+     "This is not a formula the module gives; the deficit is driven by total body water and the ratio of the measured sodium to 140."
+    ]
+   },
+   {
+    "q": "What correction rate does the module specify for hypernatremia, and what is the danger of exceeding it?",
+    "ch": [
+     "As rapidly as tolerated, since the whole danger comes from the elevated sodium itself",
+     "About 10 mEq/L per hour, aiming to normalize the sodium within a single shift",
+     "No rate limit is needed as long as the fluid given is isotonic rather than hypotonic",
+     "No faster than about 10 mEq/L per 24 hours, because faster correction risks cerebral edema",
+     "Slowly, in order to prevent osmotic demyelination, the risk of overcorrected hypernatremia"
+    ],
+    "correct": 3,
+    "exp": "Sodium should be lowered no faster than about 10 mEq/L per 24 hours (roughly 0.5 mEq/L/hr). In hypernatremia lasting more than 48 hours the brain generates idiogenic osmoles, so correcting faster draws water into brain cells and causes cerebral edema, seizures, and death.",
+    "why": [
+     "Over-rapid correction is itself listed as a red flag: exceeding roughly 10-12 mEq/L in 24 hours risks cerebral edema, seizures, and death.",
+     "The limit is about 10 mEq/L per 24 hours, not per hour; the target rate is roughly 0.5 mEq/L per hour.",
+     "The rate limit applies to the fall in serum sodium regardless of the fluid chosen, and isotonic saline is for perfusion, not free-water replacement.",
+     "",
+     "Slow correction is right, but the hazard in overcorrected hypernatremia is cerebral edema; osmotic demyelination is the mirror-image risk in overcorrected hyponatremia."
+    ]
+   },
+   {
+    "q": "A bipolar patient on long-term lithium has polyuria, dilute urine, and a sodium of 149 mEq/L. Which pharmacologic step does the module describe for this form of diabetes insipidus?",
+    "ch": [
+     "A thiazide diuretic with a low-solute diet, which paradoxically reduces urine output",
+     "High-dose desmopressin, which fully reverses renal ADH resistance in nephrogenic DI",
+     "Hypertonic saline, to raise serum osmolality and stimulate endogenous ADH release",
+     "A loop diuretic alone, to increase free-water delivery to the collecting duct",
+     "Fluid restriction, allowing the renal concentrating defect to correct on its own"
+    ],
+    "correct": 0,
+    "exp": "Lithium is the classic drug cause of nephrogenic diabetes insipidus. A thiazide diuretic with a low-solute, low-sodium diet paradoxically reduces urine output by inducing mild volume contraction and enhancing proximal water reabsorption — a classic board paradox. Amiloride is an option specifically for lithium-induced nephrogenic DI, alongside removing the offending cause.",
+    "why": [
+     "",
+     "There is no response to DDAVP in nephrogenic DI — that lack of response is exactly what distinguishes it from central DI.",
+     "Hypertonic saline is a cause of hypervolemic hypernatremia from sodium gain; it would worsen this patient.",
+     "Loop diuretics are listed as an adjunct in hypervolemic sodium-overload hypernatremia and are themselves a cause of free-water loss.",
+     "Restricting water in a patient already losing free water would drive the sodium higher; ongoing losses must be replaced."
+    ]
+   },
+   {
+    "q": "What is the purpose of a water deprivation test with a desmopressin (DDAVP) challenge?",
+    "ch": [
+     "To measure the free water deficit directly rather than estimating it from body weight",
+     "To separate hypovolemic from hypervolemic hypernatremia by the change in body weight",
+     "To screen for mineralocorticoid excess as a hypervolemic cause of sodium gain",
+     "To confirm that the serum sodium exceeds 145 mEq/L before free-water replacement begins",
+     "To distinguish central DI, where urine concentrates after DDAVP, from nephrogenic DI, which does not respond"
+    ],
+    "correct": 4,
+    "exp": "The DDAVP challenge separates the two forms of diabetes insipidus: in central DI the urine concentrates after desmopressin because the deficiency is of ADH itself, while in nephrogenic DI there is no response because the kidney is resistant to ADH.",
+    "why": [
+     "The deficit is estimated from total body water and the serum sodium; the deprivation test addresses mechanism, not magnitude.",
+     "Volume status is placed clinically — orthostatics, mucous membranes, skin turgor, JVP — not by a DDAVP challenge.",
+     "Mineralocorticoid excess is a sodium-gain cause identified on other grounds; DDAVP tests renal responsiveness to ADH.",
+     "The diagnosis of hypernatremia is made on the serum sodium and osmolality; no provocative test is needed to confirm it.",
+     ""
+    ]
+   },
+   {
+    "q": "A nursing-home resident with several days of diarrhea arrives with a sodium of 168 mEq/L, blood pressure 82/50, and marked tachycardia. What is the first fluid step?",
+    "ch": [
+     "Furosemide with free water, the regimen for sodium-overload hypernatremia",
+     "Fluid restriction with hourly sodium checks until the blood pressure normalizes",
+     "Isotonic 0.9% normal saline, to restore perfusion before switching to hypotonic fluid",
+     "D5W at a rate that corrects the entire calculated free-water deficit within six hours",
+     "Desmopressin, since diarrheal hypernatremia reflects deficient ADH release"
+    ],
+    "correct": 2,
+    "exp": "Hemodynamic instability from severe hypovolemic hypernatremia is a red flag requiring immediate isotonic resuscitation before free-water correction: restore perfusion with 0.9% normal saline first, then switch to hypotonic fluid or free water for the calculated deficit. Despite being called saline, normal saline is hypotonic relative to this patient's hyperosmolar plasma.",
+    "why": [
+     "A loop diuretic is the adjunct for hypervolemic sodium gain; giving it to a hypotensive, volume-depleted patient would worsen perfusion.",
+     "Restricting fluid in hypovolemic hypernatremia deepens both the volume and free-water deficits.",
+     "",
+     "That violates the correction limit of about 10 mEq/L per 24 hours and ignores the hemodynamic instability that must be addressed first.",
+     "Diarrhea is a hypotonic GI loss; DDAVP treats central diabetes insipidus and would risk iatrogenic hyponatremia here."
+    ]
+   },
+   {
+    "q": "Why is rapid correction specifically dangerous when hypernatremia has been present for more than 48 hours?",
+    "ch": [
+     "The brain has generated idiogenic osmoles, so a rapid osmolality drop pulls water into brain cells",
+     "Neurons permanently lose sodium-potassium ATPase activity after 48 hours of hyperosmolality",
+     "Chronic hypernatremia depletes cerebral glucose, so dextrose-free fluid worsens the deficit",
+     "The kidney can no longer excrete free water, so all administered fluid is retained",
+     "Rapid correction shifts potassium into cells, producing life-threatening hypokalemia"
+    ],
+    "correct": 0,
+    "exp": "In chronic hypernatremia the brain generates idiogenic osmoles to defend cell volume. Lowering serum osmolality quickly then draws water into brain cells and causes cerebral edema, which is why slow correction is a safety imperative rather than a preference.",
+    "why": [
+     "",
+     "No permanent pump failure is described; the brain's adaptation is osmolyte generation, which is reversible but slow.",
+     "The glucose concern with D5W is hyperglycemia and osmotic diuresis from rapid infusion, not cerebral glucose depletion.",
+     "Impaired renal water handling causes free-water LOSS in these patients; retention of administered water is not the mechanism of harm.",
+     "The hazard the module names for over-rapid correction is cerebral edema with seizures, not a potassium shift."
+    ]
+   }
+  ]
+ },
+ "hypokalemia": {
+  "condition": "Hypokalemia",
+  "questions": [
+   {
+    "q": "Which statement about serum potassium in hypokalemia is most accurate?",
+    "ch": [
+     "Hypokalemia begins below 5.0 mEq/L, the level at which muscle weakness reliably appears",
+     "Potassium is chiefly extracellular, so the serum value mirrors the whole-body deficit",
+     "A level below 3.5 mEq/L reflects only a small share of total-body stores, since potassium is mainly intracellular",
+     "Because potassium is protein-bound, the level must be corrected for albumin before treatment",
+     "The serum level tracks total-body potassium precisely and stays reliable during acid-base shifts"
+    ],
+    "correct": 2,
+    "exp": "Hypokalemia is a serum potassium below 3.5 mEq/L. Because potassium is the major intracellular cation, the serum level reflects only a small fraction of total-body stores and can mislead in acid-base shifts.",
+    "why": [
+     "The defining threshold is 3.5 mEq/L; 5.0 mEq/L is within or above the normal range.",
+     "Potassium is the major INTRAcellular cation, which is precisely why the serum value understates total-body depletion.",
+     "",
+     "Albumin correction applies to calcium, not potassium; no protein-binding correction is described for potassium.",
+     "The opposite is true: serum potassium reflects only a small fraction of stores and is specifically noted to mislead in acid-base shifts."
+    ]
+   },
+   {
+    "q": "Which ECG pattern does the module describe as the classic finding in hypokalemia?",
+    "ch": [
+     "Prominent U waves with flattened T waves and ST-segment depression",
+     "Delta waves with a short PR interval on the resting tracing",
+     "Diffuse ST elevation with PR-segment depression in most leads",
+     "Peaked, tented T waves with a progressively widening QRS complex",
+     "A shortened QT interval with bradyarrhythmias and heart block"
+    ],
+    "correct": 0,
+    "exp": "The classic hypokalemia tracing shows flattened T waves, ST depression, and prominent U waves — the module's memory hook is \"U for hypo-K.\" With worsening loss the QT prolongs and ventricular arrhythmias follow, so the flat T and U waves come before the dangerous rhythms.",
+    "why": [
+     "",
+     "Delta waves indicate a ventricular pre-excitation pathway and have nothing to do with potassium.",
+     "That pattern suggests pericardial inflammation, not an electrolyte effect on repolarization.",
+     "Peaked T waves with QRS widening is the hyperkalemic pattern, the opposite disturbance.",
+     "A shortened QT belongs to hypercalcemia; hypokalemia prolongs the QT as losses worsen."
+    ]
+   },
+   {
+    "q": "Using the module's grading of severity, which serum potassium constitutes severe hypokalemia and a medical emergency?",
+    "ch": [
+     "3.0 to 3.4 mEq/L, the band the module grades as mild",
+     "2.5 to 2.9 mEq/L, the band the module grades as moderate",
+     "Under 3.5 mEq/L, since any value below the reference range counts as severe",
+     "Under 2.5 mEq/L, or any level that is symptomatic",
+     "Under 1.7 mEq/L, the threshold the module gives for this electrolyte"
+    ],
+    "correct": 3,
+    "exp": "The module grades hypokalemia as mild at 3.0-3.4, moderate at 2.5-2.9, and severe under 2.5 mEq/L or symptomatic — and severe disease is a medical emergency warranting monitored IV repletion and telemetry.",
+    "why": [
+     "That range is graded mild and is generally managed with oral potassium chloride.",
+     "That range is graded moderate; severe begins below 2.5 mEq/L.",
+     "Below 3.5 mEq/L defines hypokalemia itself; severity is then graded, so not every low value is severe.",
+     "",
+     "1.7 mg/dL is the magnesium threshold; the severe potassium cutoff is 2.5 mEq/L."
+    ]
+   },
+   {
+    "q": "A patient's potassium will not rise despite repeated doses of potassium chloride. Which laboratory value explains this and must be corrected?",
+    "ch": [
+     "Serum chloride, because potassium can only be replaced as the chloride salt in alkalosis",
+     "Serum magnesium, because low magnesium drives renal potassium wasting and makes repletion futile",
+     "Serum albumin, because potassium is protein-bound and the measured level understates stores",
+     "Serum calcium, because hypocalcemia blocks potassium entry into the intracellular space",
+     "Serum phosphate, which must be normal before any oral potassium salt can be absorbed"
+    ],
+    "correct": 1,
+    "exp": "Magnesium must always be co-checked in hypokalemia, because hypomagnesemia causes refractory hypokalemia that will not correct until the magnesium is repleted — magnesium deficiency drives renal potassium wasting, so repletion is futile until it is fixed.",
+    "why": [
+     "Potassium chloride is indeed preferred with metabolic alkalosis, but a chloride level is not the reason repletion fails.",
+     "",
+     "Potassium is not albumin-corrected; the module's reason the serum level understates stores is that potassium is intracellular.",
+     "No such calcium-dependent step is described; magnesium, not calcium, is the electrolyte that makes potassium refractory.",
+     "Phosphate falls with potassium in refeeding syndrome but is not described as a barrier to potassium repletion."
+    ]
+   },
+   {
+    "q": "Which statement about intravenous potassium chloride administration is correct?",
+    "ch": [
+     "It is preferred over oral repletion in all mild hypokalemia to shorten hospital stay",
+     "It must never be given by IV push; dilute it and infuse by pump with continuous cardiac monitoring",
+     "IV push is acceptable once the potassium falls below 2.5 mEq/L in a symptomatic patient",
+     "It may be given undiluted through any peripheral line provided the site is well secured",
+     "Cardiac monitoring is unnecessary, since potassium repletion cannot itself cause arrhythmia"
+    ],
+    "correct": 1,
+    "exp": "IV potassium must NEVER be given by IV push or bolus — it is fatal. It is diluted and infused via pump with continuous cardiac monitoring, concentrated infusions require a central line and a controlled rate, and the IV site is watched for phlebitis because KCl is irritating to veins.",
+    "why": [
+     "Oral potassium chloride is first-line for mild-to-moderate hypokalemia; IV is reserved for severe, symptomatic, or ECG-positive cases.",
+     "",
+     "Severity raises the urgency but never the route: IV push is fatal at any level.",
+     "It must be diluted and pump-controlled; concentrated infusions require central access, and KCl causes phlebitis peripherally.",
+     "Continuous cardiac monitoring is required during IV repletion, and adequate urine output must be ensured to avoid iatrogenic hyperkalemia."
+    ]
+   },
+   {
+    "q": "Why is hypokalemia particularly dangerous in a patient taking digoxin?",
+    "ch": [
+     "Digoxin shifts potassium out of cells, producing a rebound hyperkalemia during repletion",
+     "Hypokalemia blunts digoxin's effect, so the dose must be doubled during repletion",
+     "Digoxin binds potassium in the gut, so oral repletion becomes entirely ineffective",
+     "Hypokalemia accelerates renal digoxin clearance and causes loss of rate control",
+     "Hypokalemia potentiates digoxin toxicity, raising the risk of dangerous arrhythmias"
+    ],
+    "correct": 4,
+    "exp": "Hypokalemia potentiates digoxin toxicity, a dangerous combination in cardiac patients — nursing should monitor closely for nausea, visual changes, and arrhythmias, and the interaction is worth flagging proactively before it becomes a problem.",
+    "why": [
+     "Insulin and beta-agonists shift potassium into cells; digoxin is not described as a transcellular shifting agent.",
+     "The interaction goes the other way — toxicity is potentiated, so dose escalation would be hazardous.",
+     "No such binding interaction is described; the danger is potentiated digoxin toxicity, not failed absorption.",
+     "Hypokalemia increases digoxin toxicity rather than reducing its effect through faster clearance.",
+     ""
+    ]
+   },
+   {
+    "q": "How does the urine potassium help localize the cause of hypokalemia?",
+    "ch": [
+     "Urine potassium applies only to refeeding syndrome and has no other clinical use",
+     "A high urine potassium establishes poor dietary intake as the mechanism of the deficit",
+     "Urine potassium distinguishes metabolic alkalosis from metabolic acidosis in the same patient",
+     "A high urine potassium indicates renal wasting; a low value points to GI loss or a transcellular shift",
+     "A high urine potassium confirms a transcellular shift and a low value confirms diuretic use"
+    ],
+    "correct": 3,
+    "exp": "A high urine potassium points to renal wasting — diuretics, hyperaldosteronism, or Bartter/Gitelman syndromes — while a low urine potassium points to gastrointestinal loss or a transcellular shift. A 24-hour urine potassium or spot K/creatinine ratio is the practical test.",
+    "why": [
+     "It is a general tool for separating renal from extrarenal loss in any hypokalemia of unclear cause.",
+     "Poor intake is a rare cause and would be accompanied by renal conservation, not high urinary potassium.",
+     "Acid-base status is measured directly and used alongside the urine potassium; the urine value localizes the site of loss.",
+     "",
+     "This reverses the logic: diuretics cause renal wasting with HIGH urine potassium, while shifts give a low urine potassium."
+    ]
+   },
+   {
+    "q": "Hypokalemia accompanied by metabolic alkalosis most suggests which group of causes?",
+    "ch": [
+     "Vomiting, diuretic use, or mineralocorticoid excess",
+     "Renal tubular acidosis or ongoing diarrheal losses",
+     "Insulin administration or beta-agonist therapy alone",
+     "Poor dietary intake in an otherwise healthy adult",
+     "Refeeding of a malnourished patient after prolonged starvation"
+    ],
+    "correct": 0,
+    "exp": "Pairing the acid-base picture with the potassium narrows the differential: hypokalemia with metabolic alkalosis suggests vomiting, diuretics, or mineralocorticoid excess, whereas hypokalemia with acidosis points instead to renal tubular acidosis or diarrhea.",
+    "why": [
+     "",
+     "Those are the causes to think of when hypokalemia is paired with metabolic ACIDOSIS.",
+     "Those are transcellular shifts, in which total-body potassium is normal and the acid-base clue is alkalosis driving the shift, not producing it.",
+     "Low intake is a rare cause and does not generate a metabolic alkalosis.",
+     "Refeeding drops potassium, phosphate, and magnesium as cells resume metabolism; it is not the classic alkalosis pairing."
+    ]
+   },
+   {
+    "q": "A patient treated for hyperkalemia with insulin now has a potassium of 3.1 mEq/L. What does this mechanism imply about total-body potassium?",
+    "ch": [
+     "Total-body potassium is severely depleted and needs a full calculated repletion dose",
+     "Total-body potassium cannot be judged until the serum magnesium exceeds 2.5 mg/dL",
+     "Total-body potassium is high, because insulin blocks renal potassium excretion completely",
+     "Total-body potassium is depleted through renal wasting, the mechanism insulin triggers",
+     "Total-body potassium is normal, because the low level reflects a shift of potassium into cells"
+    ],
+    "correct": 4,
+    "exp": "Insulin and beta-agonists drive potassium into cells — a shift exploited to treat hyperkalemia that iatrogenically causes hypokalemia. When the mechanism is a transcellular shift rather than a loss, total-body potassium is normal, which is why the workup must first ask whether this is a shift, a loss, or low intake.",
+    "why": [
+     "A shift does not deplete body stores; treating it as a true deficit risks rebound hyperkalemia once the insulin effect wanes.",
+     "Magnesium matters for refractory hypokalemia from renal wasting, not for interpreting an insulin-induced shift.",
+     "Insulin moves potassium into cells; it is not described as blocking renal excretion.",
+     "Renal wasting is the diuretic and hyperaldosteronism mechanism; insulin acts by transcellular redistribution.",
+     ""
+    ]
+   },
+   {
+    "q": "A malnourished patient with alcohol use disorder is started on nutritional support and by day two has a potassium of 2.7 mEq/L. Which syndrome is this, and what else should be checked?",
+    "ch": [
+     "Hyperaldosteronism — obtain an aldosterone-to-renin ratio before replacing any potassium",
+     "Laxative abuse — no laboratory follow-up is needed once laxatives are discontinued",
+     "Refeeding syndrome — also check phosphate and magnesium, which fall alongside potassium",
+     "A pure transcellular shift needing no repletion, since total-body potassium must be normal",
+     "Renal tubular acidosis — check an arterial pH, which will show a metabolic alkalosis"
+    ],
+    "correct": 2,
+    "exp": "Refeeding syndrome classically drops potassium, phosphate, and magnesium as cells resume metabolism, so all three should be checked and repleted — and magnesium in particular because hypokalemia stays refractory until it is corrected.",
+    "why": [
+     "Hyperaldosteronism is evaluated when the cause is unclear and typically pairs with metabolic alkalosis, not with the onset of feeding.",
+     "Laxative abuse is a listed history item, but potassium and magnesium still need rechecking after any repletion.",
+     "",
+     "Refeeding involves genuine depletion of potassium, phosphate, and magnesium stores in a malnourished patient, so repletion is required.",
+     "RTA pairs hypokalemia with metabolic ACIDOSIS, and it does not explain onset with the start of feeding."
+    ]
+   }
+  ]
+ },
+ "hypocalcemia": {
+  "condition": "Hypocalcemia",
+  "questions": [
+   {
+    "q": "Which measurement does the module identify as the most accurate assessment of calcium status, especially when albumin is abnormal?",
+    "ch": [
+     "Ionized (free) calcium, the physiologically active fraction of serum calcium",
+     "Serum alkaline phosphatase, as a surrogate marker of calcium turnover",
+     "The calcium-phosphate product calculated from the basic metabolic panel",
+     "Total serum calcium reported without any correction for the albumin level",
+     "Urinary calcium excretion measured over a 24-hour collection period"
+    ],
+    "correct": 0,
+    "exp": "Ionized (free) calcium is the physiologically active fraction and the most accurate measure, particularly when albumin is abnormal; hypocalcemia is defined as a corrected serum calcium below 8.5 mg/dL or an ionized calcium below 4.65 mg/dL.",
+    "why": [
+     "",
+     "Alkaline phosphatase is one of the core labs drawn, but it does not measure calcium status.",
+     "Phosphate is measured to interpret the PTH axis; the product is not the module's measure of calcium status.",
+     "An uncorrected total misses pseudohypocalcemia from low albumin, which needs no calcium at all.",
+     "Urinary calcium is surveilled for hypercalciuria during maintenance therapy, not used to establish the diagnosis."
+    ]
+   },
+   {
+    "q": "Which pair of examination findings does the module describe as the classic signs of tetany?",
+    "ch": [
+     "Chvostek sign, a facial twitch on tapping the facial nerve, and Trousseau sign, carpopedal spasm after cuff inflation",
+     "Homans sign and a palpable cord, elicited by dorsiflexion of the affected ankle",
+     "Murphy sign and rebound tenderness, elicited by palpating the right upper quadrant",
+     "Grey Turner and Cullen signs, seen as flank and periumbilical bruising",
+     "Kernig and Brudzinski signs, elicited by flexing the neck and then the hip"
+    ],
+    "correct": 0,
+    "exp": "Chvostek sign is the facial twitch on tapping the facial nerve and Trousseau sign is carpopedal spasm after inflating a BP cuff above systolic for three minutes. The module's hook is Chvostek = Cheek, Trousseau = Tourniquet.",
+    "why": [
+     "",
+     "Those point toward venous thrombosis rather than neuromuscular hyperexcitability from low calcium.",
+     "Those are abdominal findings; hypocalcemia produces perioral and acral paresthesias, cramps, and tetany.",
+     "Acute pancreatitis is a listed cause of hypocalcemia, but these bruising signs are not the tetany examination.",
+     "Those are meningeal irritation signs and are not among the tetany findings described."
+    ]
+   },
+   {
+    "q": "What ECG change does hypocalcemia produce, and what rhythm risk does it create?",
+    "ch": [
+     "Diffuse ST elevation, with a risk of progression to cardiac tamponade",
+     "A shortened QT interval, with a risk of bradyarrhythmias and heart block",
+     "Prominent U waves, with a risk of progression to ventricular fibrillation",
+     "A widened QRS with peaked T waves, with a risk of asystole",
+     "A prolonged QT interval, with a risk of torsades de pointes"
+    ],
+    "correct": 4,
+    "exp": "Hypocalcemia prolongs the QT interval, creating a risk of torsades de pointes — the mirror image of hypercalcemia, which shortens the QT. That is why symptomatic patients go on continuous cardiac monitoring and QT prolongation is itself an indication for IV calcium.",
+    "why": [
+     "ST elevation is not among the ECG changes attributed to hypocalcemia; the finding to look for is the QT interval.",
+     "A shortened QT is the hypercalcemia pattern; hypocalcemia does the opposite.",
+     "Prominent U waves are the classic hypokalemia finding, not a calcium effect.",
+     "That pattern reflects hyperkalemia rather than a low calcium.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with hypoalbuminemia has a total calcium of 7.8 mg/dL. How is the corrected calcium calculated?",
+    "ch": [
+     "Measured calcium + 1.5 x serum phosphate, accounting for the calcium-phosphate product",
+     "Measured calcium + 0.8 x (4.0 - serum albumin), which adjusts for protein binding",
+     "Measured calcium - 0.8 x (4.0 - serum albumin), subtracting the bound fraction",
+     "Measured calcium multiplied by (serum albumin / 4.0), scaling to the albumin level",
+     "Total body water x [(measured calcium / 140) - 1], the deficit-style calculation"
+    ],
+    "correct": 1,
+    "exp": "Corrected calcium = measured calcium + 0.8 x (4.0 - albumin), which accounts for hypoalbuminemia. The module insists on correcting for albumin or ordering an ionized calcium before treating, because pseudohypocalcemia from low albumin needs no calcium.",
+    "why": [
+     "Phosphate is used to interpret the PTH axis, not to correct the measured calcium.",
+     "",
+     "The correction ADDS to the measured value when albumin is low, because less calcium is protein-bound.",
+     "The correction is additive with a 0.8 coefficient, not a proportional scaling.",
+     "That is the free water deficit formula from hypernatremia, not a calcium correction."
+    ]
+   },
+   {
+    "q": "Which laboratory pattern points to hypoparathyroidism rather than to vitamin D deficiency or chronic kidney disease?",
+    "ch": [
+     "Normal ionized calcium with a low albumin and a low measured total calcium",
+     "Low calcium with a high PTH and a low phosphate",
+     "Low calcium with a high PTH and a high phosphate",
+     "Low calcium with an inappropriately low PTH",
+     "High calcium with a suppressed PTH and an elevated PTHrP"
+    ],
+    "correct": 3,
+    "exp": "Low calcium with a low PTH points to hypoparathyroidism — the PTH is inappropriately low for the calcium. High PTH with high phosphate suggests CKD or pseudohypoparathyroidism, and high PTH with low phosphate suggests vitamin D deficiency.",
+    "why": [
+     "That is pseudohypocalcemia from hypoalbuminemia, which needs no calcium replacement at all.",
+     "A high PTH with low phosphate is the vitamin D deficiency pattern — an appropriate secondary response.",
+     "High PTH with high phosphate suggests chronic kidney disease or pseudohypoparathyroidism.",
+     "",
+     "That is a hypercalcemia pattern, not a cause of low calcium."
+    ]
+   },
+   {
+    "q": "Hypocalcemia is not responding to repeated calcium replacement. Which value should be checked, and why?",
+    "ch": [
+     "Serum bicarbonate, because acidosis binds ionized calcium tightly to albumin",
+     "Serum creatine kinase, because rhabdomyolysis releases calcium into the urine",
+     "Serum magnesium, because low magnesium blocks both PTH release and PTH action",
+     "Serum sodium, because hyponatremia dilutes the measured total calcium",
+     "Serum potassium, because hypokalemia prevents intestinal calcium absorption"
+    ],
+    "correct": 2,
+    "exp": "Refractory hypocalcemia is frequently occult hypomagnesemia: low magnesium blocks both PTH release and PTH action, so calcium will not correct until magnesium is repleted. The module's rule is that you cannot fix the calcium without fixing the magnesium.",
+    "why": [
+     "It is ALKALOSIS that increases calcium binding to albumin and lowers ionized calcium, and it is not the reason repletion fails.",
+     "CK is not part of this workup; tumor lysis and massive transfusion are the listed acute consumptive causes.",
+     "",
+     "No dilutional sodium effect on calcium is described; the value that makes calcium refractory is magnesium.",
+     "Intestinal calcium absorption depends on active vitamin D and gastric acid for carbonate, not on potassium."
+    ]
+   },
+   {
+    "q": "Why is calcium gluconate generally preferred over calcium chloride for peripheral intravenous repletion?",
+    "ch": [
+     "Gluconate can be given without cardiac monitoring in patients taking digoxin",
+     "Gluconate acts by stimulating PTH release rather than by delivering calcium directly",
+     "Gluconate contains roughly three times the elemental calcium that chloride contains",
+     "Gluconate may be safely mixed with sodium bicarbonate, whereas chloride precipitates",
+     "Gluconate is less irritating to veins, while chloride is sclerosing and causes necrosis on extravasation"
+    ],
+    "correct": 4,
+    "exp": "Calcium gluconate is preferred peripherally because it is less irritating than calcium chloride, which is highly sclerosing and vesicant — extravasation of chloride causes tissue necrosis, so it should go through a central line when possible.",
+    "why": [
+     "IV calcium is infused slowly with cardiac monitoring, and digoxin demands extreme caution because calcium potentiates its toxicity.",
+     "Both salts deliver elemental calcium; recombinant PTH, not gluconate, works on the PTH axis.",
+     "It is the reverse: calcium chloride contains roughly three times the elemental calcium of gluconate.",
+     "Calcium must never be mixed with bicarbonate or phosphate in any salt form, because it precipitates.",
+     ""
+    ]
+   },
+   {
+    "q": "One day after total thyroidectomy a patient develops stridor and perioral numbness. What is the nursing priority?",
+    "ch": [
+     "Start oral calcium carbonate with food and reassess the patient in the morning",
+     "Restrict dietary phosphate and recheck the total calcium on the next routine draw",
+     "Secure the airway and give emergent IV calcium, since stridor signals impending laryngospasm",
+     "Place the patient in Trendelenburg position and give a rapid isotonic saline bolus",
+     "Obtain a 24-hour urine calcium collection before administering any calcium"
+    ],
+    "correct": 2,
+    "exp": "Airway is the priority: stridor and laryngospasm signal impending airway obstruction requiring emergent IV calcium, with emergency airway equipment kept at the bedside. Post-thyroidectomy hypocalcemia from injured or removed parathyroids is the classic setting.",
+    "why": [
+     "Oral calcium is maintenance therapy for mild or chronic hypocalcemia, not a response to threatened airway obstruction.",
+     "Cautioning against phosphate-containing products is patient teaching, not the management of laryngospasm.",
+     "",
+     "Volume resuscitation does not treat low calcium, and positioning does not relieve laryngospasm.",
+     "Urinary calcium is surveilled during long-term maintenance; a patient with stridor needs emergent treatment now."
+    ]
+   },
+   {
+    "q": "Why does massive transfusion cause hypocalcemia?",
+    "ch": [
+     "Stored blood is rich in phosphate, which drives PTH oversecretion and bone uptake",
+     "Transfusion dilutes serum albumin and thereby lowers the ionized calcium fraction",
+     "Transfused blood delivers magnesium that directly suppresses PTH secretion",
+     "Citrate in the transfused blood products chelates circulating calcium",
+     "Transfused red cells consume calcium as a cofactor for their own metabolism"
+    ],
+    "correct": 3,
+    "exp": "Citrate in blood products chelates calcium, which is why massive transfusion is listed alongside tumor lysis as an acute cause of hypocalcemia.",
+    "why": [
+     "High phosphate with a high PTH is the CKD pattern; transfusion lowers calcium by chelation.",
+     "Low albumin lowers the TOTAL calcium while the ionized fraction is preserved — that is pseudohypocalcemia, not true hypocalcemia.",
+     "It is LOW magnesium that impairs PTH secretion and action; magnesium excess is not the transfusion mechanism.",
+     "",
+     "No such consumption by red cells is described; the mechanism is citrate chelation."
+    ]
+   },
+   {
+    "q": "An anxious patient hyperventilating in the emergency department develops perioral tingling and carpopedal spasm, but the total calcium is normal. What explains this?",
+    "ch": [
+     "Hyperventilation causes true calcium loss through an acute renal calcium diuresis",
+     "Alkalosis increases calcium binding to albumin, dropping the ionized calcium despite a normal total",
+     "Anxiety alone produces Chvostek and Trousseau signs without any change in calcium",
+     "The patient must have occult hypoalbuminemia that renders the total calcium falsely normal",
+     "The total calcium was drawn before the parathyroid glands had time to respond"
+    ],
+    "correct": 1,
+    "exp": "Alkalosis, including that produced by rapid hyperventilation, increases calcium binding to albumin and drops the ionized calcium — so tetany can appear with a normal total calcium. This is exactly why the module prefers an ionized level over the total.",
+    "why": [
+     "No renal calcium wasting is described here; the fall is in the ionized fraction, not in total body calcium.",
+     "",
+     "These are genuine tetany signs of a reduced ionized calcium, not a psychogenic finding.",
+     "Low albumin lowers the total calcium; here the total is normal and the ionized fraction has fallen.",
+     "PTH kinetics do not explain the discrepancy; the ionized fraction falls while the total stays normal because of increased albumin binding."
+    ]
+   }
+  ]
+ },
+ "hypercalcemia": {
+  "condition": "Hypercalcemia",
+  "questions": [
+   {
+    "q": "Which symptom cluster corresponds to the classic hypercalcemia mnemonic?",
+    "ch": [
+     "Tetany, tingling, laryngospasm, seizures, and a prolonged QT interval",
+     "Tremor, hyperreflexia, torsades de pointes, and refractory hypokalemia",
+     "Flat T waves, prominent U waves, ileus, and flaccid muscle paralysis",
+     "Kidney stones, bone pain, abdominal groans, polyuria, and altered mood",
+     "Thirst, dry mucous membranes, and dilute urine with a rising serum sodium"
+    ],
+    "correct": 3,
+    "exp": "The mnemonic is stones, bones, groans, thrones, and psychiatric overtones: kidney stones, bone pain, abdominal groans, polyuria, and altered mood. The polyuria is explained by hypercalcemia causing nephrogenic diabetes insipidus.",
+    "why": [
+     "That is the hypocalcemia picture of neuromuscular hyperexcitability, the opposite disturbance.",
+     "Those findings belong to hypomagnesemia, not to a high calcium.",
+     "That combination describes hypokalemia; hypercalcemia shortens rather than flattens repolarization.",
+     "",
+     "That is hypernatremia from a free-water deficit, although hypercalcemia can cause nephrogenic DI and contribute to it."
+    ]
+   },
+   {
+    "q": "Which two diagnoses account for roughly 90% of hypercalcemia?",
+    "ch": [
+     "Primary hyperparathyroidism, usually mild, and malignancy, usually severe",
+     "Granulomatous sarcoidosis and vitamin D supplement toxicity",
+     "Prolonged immobilization and milk-alkali syndrome from heavy antacid use",
+     "Familial hypocalciuric hypercalcemia and lymphoma-derived 1,25-vitamin D",
+     "Thiazide diuretic use and long-term lithium therapy for bipolar disorder"
+    ],
+    "correct": 0,
+    "exp": "About 90% of cases are either primary hyperparathyroidism — most common in outpatients and usually mild — or malignancy, most common in hospitalized patients and usually severe, acting through PTHrP, osteolytic metastases, or 1,25-vitamin D. Checking PTH first usually makes the diagnosis fall out.",
+    "why": [
+     "",
+     "These vitamin D-mediated causes are important because steroids work for them, but they are uncommon.",
+     "Both are recognized causes but account for a small share of cases.",
+     "FHH matters because it must not be operated on, and lymphoma acts through 1,25-vitamin D, but neither is among the two dominant causes.",
+     "Both are listed causes, but they belong to the minority group along with immobilization and milk-alkali syndrome."
+    ]
+   },
+   {
+    "q": "What does the ECG classically show in severe hypercalcemia?",
+    "ch": [
+     "A prolonged QT interval, with a predisposition to torsades de pointes",
+     "Prominent U waves with flattened T waves and ST-segment depression",
+     "Peaked T waves with progressive widening of the QRS complex",
+     "Electrical alternans with uniformly low-voltage QRS complexes",
+     "A shortened QT interval, the mirror image of hypocalcemia's prolonged QT"
+    ],
+    "correct": 4,
+    "exp": "Severe hypercalcemia classically shortens the QT interval — the mirror image of hypocalcemia's prolonged QT — and cardiac instability with bradyarrhythmias or heart block is a red flag, especially with concurrent digoxin.",
+    "why": [
+     "A prolonged QT is the hypocalcemia finding; hypercalcemia does the opposite.",
+     "Those are the hypokalemic changes, not a calcium effect.",
+     "That progression reflects hyperkalemia rather than a high calcium.",
+     "That suggests a large pericardial effusion and is unrelated to calcium.",
+     ""
+    ]
+   },
+   {
+    "q": "What does the module identify as the pivotal branch point in the hypercalcemia workup?",
+    "ch": [
+     "The ECG QT interval, which grades severity and dictates the treatment sequence",
+     "The serum albumin, which determines whether the hypercalcemia is real at all",
+     "The intact PTH, splitting PTH-dependent from PTH-independent causes",
+     "The serum phosphate, which separates PTH-driven from vitamin D-driven disease",
+     "The 24-hour urine calcium, the only way to identify hypercalcemia of malignancy"
+    ],
+    "correct": 2,
+    "exp": "The pivotal branch point is the intact PTH: a high or inappropriately normal PTH points to hyperparathyroidism or FHH, while a suppressed PTH points to malignancy, vitamin D, or other non-PTH causes and triggers PTHrP, vitamin D metabolites, and SPEP/UPEP testing.",
+    "why": [
+     "The ECG is obtained in severe cases, but severity is graded by corrected calcium and the differential is anchored on PTH.",
+     "Correcting for albumin or measuring ionized calcium confirms the hypercalcemia is real; PTH then determines the cause.",
+     "",
+     "Phosphate and renal function are obtained, but PTH is the test that divides the differential.",
+     "Urine calcium is used with the calcium/creatinine clearance ratio to detect FHH, not to diagnose malignancy."
+    ]
+   },
+   {
+    "q": "By corrected calcium, which value does the module grade as severe hypercalcemia?",
+    "ch": [
+     "Above 18 mg/dL, the threshold given for considering hemodialysis",
+     "Below 12 mg/dL, the band the module grades as mild",
+     "12 to 14 mg/dL, the band the module grades as moderate",
+     "Above 10.5 mg/dL, the upper limit of the normal total calcium",
+     "Above 14 mg/dL, with symptoms tracking the level and the rate of rise"
+    ],
+    "correct": 4,
+    "exp": "Severity is graded by corrected calcium as mild below 12, moderate 12-14, and severe above 14 mg/dL, with symptoms tracking both the level and the rate of rise. Severe hypercalcemia above 14 mg/dL with lethargy or obtundation is a hypercalcemic crisis.",
+    "why": [
+     "Above 18 mg/dL is where hemodialysis is considered for life-threatening disease, well beyond the threshold for severe.",
+     "That range is graded mild and is the usual presentation of primary hyperparathyroidism.",
+     "That is the moderate band; severe begins above 14 mg/dL.",
+     "That value defines hypercalcemia itself; grading of severity starts above it.",
+     ""
+    ]
+   },
+   {
+    "q": "Why are calcitonin and a bisphosphonate given together in severe hypercalcemia?",
+    "ch": [
+     "Bisphosphonates act within minutes, so calcitonin covers the later phase of therapy",
+     "Calcitonin lowers calcium within hours but fizzles by 48 hours, while the bisphosphonate lasts",
+     "The pair is needed to prevent the rebound hypercalcemia that isotonic saline causes",
+     "Calcitonin is used only because bisphosphonates are contraindicated in malignancy",
+     "Calcitonin blocks intestinal absorption while the bisphosphonate blocks renal reabsorption"
+    ],
+    "correct": 1,
+    "exp": "Calcitonin lowers calcium within hours but develops tachyphylaxis in about 48 hours, while a bisphosphonate such as zoledronic acid or pamidronate takes 2-4 days to work but gives durable osteoclast suppression — calcitonin works fast but fizzles, bisphosphonates work slow but last, so they are paired.",
+    "why": [
+     "The timing is reversed: bisphosphonate onset takes 2-4 days and calcitonin covers the first hours.",
+     "",
+     "Saline is the cornerstone of acute therapy and enhances calcium excretion; the rebound to anticipate after osteoclast-directed therapy is hypoCalcemia.",
+     "Bisphosphonates are the drug of choice for hypercalcemia of malignancy; the caution is severe renal failure.",
+     "Both act on bone turnover; reduced intestinal absorption is the glucocorticoid mechanism in vitamin D-mediated disease."
+    ]
+   },
+   {
+    "q": "In which setting are glucocorticoids an effective calcium-lowering therapy?",
+    "ch": [
+     "Vitamin D-mediated causes such as granulomatous disease, lymphoma, and vitamin D toxicity",
+     "PTH-driven primary hyperparathyroidism, where they suppress parathyroid hormone release",
+     "PTHrP-mediated humoral hypercalcemia from a squamous cell malignancy",
+     "Osteolytic metastatic bone destruction, which they directly inhibit at the osteoclast",
+     "Familial hypocalciuric hypercalcemia, restoring normal urinary calcium excretion"
+    ],
+    "correct": 0,
+    "exp": "Glucocorticoids lower calcium in vitamin D-mediated causes — granulomatous disease, lymphoma, and vitamin D toxicity — by reducing intestinal calcium absorption and 1,25-vitamin D production. They are ineffective for PTH- or PTHrP-driven disease.",
+    "why": [
+     "",
+     "Steroids are explicitly ineffective for PTH-driven disease; cinacalcet or parathyroidectomy addresses that axis.",
+     "Steroids are ineffective for PTHrP-driven disease, which calls for saline plus a bisphosphonate or denosumab.",
+     "Osteoclast inhibition is achieved by bisphosphonates or denosumab, not glucocorticoids.",
+     "FHH is a benign lifelong condition identified by a low calcium/creatinine clearance ratio and needs no calcium-lowering therapy."
+    ]
+   },
+   {
+    "q": "A patient has a high calcium, a non-suppressed PTH, and a low urine calcium. Which test settles the diagnosis, and why does it matter?",
+    "ch": [
+     "A suppressed PTHrP level, which identifies FHH and prompts a malignancy workup",
+     "A calcium/creatinine clearance ratio below 0.01, which identifies FHH and spares a parathyroidectomy",
+     "A sestamibi scan, which separates them, though both conditions require parathyroidectomy",
+     "A 1,25-vitamin D level above normal, identifying FHH and indicating glucocorticoids",
+     "A neck ultrasound showing a single adenoma, which confirms FHH and mandates urgent surgery"
+    ],
+    "correct": 1,
+    "exp": "A calcium/creatinine clearance ratio below 0.01 identifies familial hypocalciuric hypercalcemia — a benign lifelong picture with high-normal calcium and normal or high PTH — and those patients do not need parathyroidectomy. The module says to cite the ratio before anyone proposes surgery.",
+    "why": [
+     "PTHrP is checked when PTH is SUPPRESSED, to pursue humoral hypercalcemia of malignancy.",
+     "",
+     "Sestamibi is a localizing study for parathyroid disease, and FHH patients do not need an operation at all.",
+     "A high 1,25-vitamin D with suppressed PTH suggests sarcoidosis or lymphoma, which is where steroids work.",
+     "Neck imaging is directed at parathyroid disease, and FHH is precisely the diagnosis that should NOT go to surgery."
+    ]
+   },
+   {
+    "q": "After a patient receives zoledronic acid or denosumab for hypercalcemia of malignancy, which complication should nursing monitor for?",
+    "ch": [
+     "Hypernatremia from the sodium load carried in the infusion",
+     "Hypomagnesemia presenting as a loss of deep tendon reflexes",
+     "Hypocalcemia, assessed with Trousseau and Chvostek signs",
+     "Hyperkalemia, requiring all potassium-sparing diuretics to be held",
+     "Rebound hypercalcemia within the first six hours of the infusion"
+    ],
+    "correct": 2,
+    "exp": "After a bisphosphonate or denosumab, watch for hypocalcemia — assessing Trousseau and Chvostek signs — along with renal function and potassium, and anticipate this rebound as part of the treatment plan.",
+    "why": [
+     "The sodium and volume concern in this condition belongs to aggressive isotonic saline, monitored by weights and intake/output.",
+     "Loss of deep tendon reflexes signals magnesium EXCESS during magnesium repletion, and magnesium is not the electrolyte flagged after these drugs.",
+     "",
+     "Potassium is monitored along with renal function, but hypocalcemia is the specific complication these agents cause.",
+     "These agents suppress osteoclasts and lower calcium; it is the fall in calcium that must be watched for."
+    ]
+   },
+   {
+    "q": "A hospitalized patient with lung cancer, weight loss, and a corrected calcium of 15.2 mg/dL is obtunded and has heart failure with an ejection fraction of 25%. What consideration does the module raise about the cornerstone of acute therapy?",
+    "ch": [
+     "Saline should be replaced by a thiazide diuretic to accelerate urinary calcium excretion",
+     "Saline alone is definitive here, so no osteoclast-directed therapy is needed",
+     "Saline must be withheld until the intact PTH result returns from the laboratory",
+     "Saline must be given cautiously with close monitoring for fluid overload, with dialysis if it cannot be given safely",
+     "Saline is contraindicated in malignancy-related hypercalcemia, so glucocorticoids are used instead"
+    ],
+    "correct": 3,
+    "exp": "Aggressive isotonic saline is the cornerstone of acute therapy but must be monitored closely for fluid overload in heart failure and renal impairment, with lungs and JVD assessed and strict intake/output and daily weights recorded; hemodialysis is reserved for severe or refractory cases when saline cannot be given safely.",
+    "why": [
+     "Thiazides are a CAUSE of hypercalcemia and are held; the module lists stopping them among preventive steps.",
+     "Severe hypercalcemia needs calcitonin as a bridge plus a bisphosphonate or denosumab for durable control.",
+     "A hypercalcemic crisis with obtundation requires emergent calcium-lowering therapy while the workup proceeds.",
+     "",
+     "Steroids work only for vitamin D-mediated causes, and saline remains the cornerstone with careful monitoring."
+    ]
+   }
+  ]
+ },
+ "hypomagnesemia": {
+  "condition": "Hypomagnesemia",
+  "questions": [
+   {
+    "q": "Which statement correctly gives the defining threshold for hypomagnesemia and magnesium's principal cellular role?",
+    "ch": [
+     "Below 8.5 mg/dL; magnesium circulates bound to albumin and must be albumin-corrected",
+     "Below 1.7 mg/dL; magnesium acts chiefly as an extracellular buffer of hydrogen ions",
+     "Below 145 mEq/L; magnesium's main role is stimulating parathyroid hormone secretion",
+     "Below 3.5 mEq/L; magnesium is the principal extracellular cation setting plasma osmolality",
+     "Below 1.7 mg/dL; magnesium is an intracellular cation and cofactor for ATP-dependent enzymes and the Na-K-ATPase pump"
+    ],
+    "correct": 4,
+    "exp": "Hypomagnesemia is a serum magnesium below 1.7 mg/dL (roughly below 0.7 mmol/L). Magnesium is a key intracellular cation and a cofactor for hundreds of ATP-dependent enzymes and for the sodium-potassium ATPase pump.",
+    "why": [
+     "8.5 mg/dL is the corrected calcium threshold, and albumin correction belongs to calcium, not magnesium.",
+     "The threshold is right but the role is wrong: magnesium is an intracellular enzyme cofactor, not an acid-base buffer.",
+     "145 mEq/L is the sodium threshold; magnesium permits normal PTH secretion and action but that is not its principal cellular role.",
+     "3.5 mEq/L is the potassium threshold, and magnesium is an intracellular cation, not the determinant of plasma osmolality.",
+     ""
+    ]
+   },
+   {
+    "q": "Why does a normal serum magnesium fail to exclude magnesium depletion?",
+    "ch": [
+     "Only about 1% of total body magnesium is in the serum compartment",
+     "Serum magnesium rises transiently after any intravenous fluid bolus is given",
+     "Laboratory assays for magnesium carry a very wide analytic imprecision",
+     "Serum magnesium is reported in mg/dL rather than in mmol/L, so the units mislead",
+     "Magnesium is protein-bound, so the total value overstates the free fraction"
+    ],
+    "correct": 0,
+    "exp": "Serum holds only about 1% of total body magnesium, so a normal serum level does not exclude intracellular depletion — which is also why IV magnesium is given for torsades de pointes even when the level reads normal.",
+    "why": [
+     "",
+     "Dilution from fluid is not described; much of an IV magnesium bolus is renally excreted, which is a different point.",
+     "Assay imprecision is not the stated reason; the serum simply is not where the body stores magnesium.",
+     "Both units are given in the module and convert directly; the unit is not why a normal level can be falsely reassuring.",
+     "Protein binding and correction belong to calcium; the magnesium issue is compartmental distribution."
+    ]
+   },
+   {
+    "q": "Which set of ECG changes does the module attribute to hypomagnesemia?",
+    "ch": [
+     "Diffuse ST elevation with reciprocal PR-segment depression",
+     "Electrical alternans with low-voltage QRS complexes in all leads",
+     "A prolonged QT, a widened QRS, PR prolongation, and T-wave flattening",
+     "A shortened QT with bradyarrhythmias and progressive heart block",
+     "Peaked T waves with a sine-wave pattern and loss of the P waves"
+    ],
+    "correct": 2,
+    "exp": "Hypomagnesemia produces a prolonged QT, a widened QRS, PR prolongation, and T-wave flattening, with a predisposition to torsades de pointes — which is why an ECG is essential and symptomatic patients go on continuous cardiac monitoring.",
+    "why": [
+     "That pattern suggests pericardial inflammation and is not an electrolyte effect described here.",
+     "That finding points to a pericardial effusion rather than to a low magnesium.",
+     "",
+     "A shortened QT with bradyarrhythmias belongs to hypercalcemia; magnesium depletion prolongs the QT.",
+     "That progression describes severe hyperkalemia, not magnesium depletion."
+    ]
+   },
+   {
+    "q": "What mechanism explains why magnesium depletion produces hypokalemia that is refractory to potassium replacement?",
+    "ch": [
+     "Magnesium depletion stimulates aldosterone release, which retains potassium in the kidney",
+     "Intracellular magnesium normally blocks ROMK channels, so depletion unblocks them and wastes potassium",
+     "Low magnesium chelates administered potassium chloride within the infusion tubing itself",
+     "Magnesium depletion inhibits intestinal absorption of potassium from food and supplements",
+     "Low magnesium shifts potassium from the extracellular fluid into the intracellular space"
+    ],
+    "correct": 1,
+    "exp": "Intracellular magnesium normally blocks ROMK channels; when magnesium is depleted those channels are unblocked and the kidney wastes potassium, so hypokalemia stays refractory until magnesium is repleted. The module directs repleting magnesium first or simultaneously.",
+    "why": [
+     "Aldosterone excess causes renal potassium WASTING, and it is not the mechanism described for magnesium.",
+     "",
+     "No in-line chelation occurs; the interaction is physiologic and happens at the renal tubule.",
+     "The defect is renal potassium wasting through unblocked ROMK channels, not impaired gut absorption.",
+     "Transcellular shifting is the insulin and beta-agonist mechanism; magnesium depletion causes true renal loss."
+    ]
+   },
+   {
+    "q": "How does hypomagnesemia produce hypocalcemia?",
+    "ch": [
+     "It binds ionized calcium directly in the plasma, lowering the free calcium fraction",
+     "It blocks intestinal calcium absorption by inactivating the vitamin D receptor",
+     "It impairs PTH secretion and end-organ responsiveness, causing functional hypoparathyroidism",
+     "It causes renal calcium wasting by inhibiting the tubular calcium-sensing receptor",
+     "It drives calcium into bone by stimulating osteoblast activity across the skeleton"
+    ],
+    "correct": 2,
+    "exp": "Hypomagnesemia impairs both PTH secretion and end-organ responsiveness to PTH, producing a functional hypoparathyroidism — which is why calcium is often refractory until magnesium is restored.",
+    "why": [
+     "Citrate in blood products chelates calcium; magnesium acts through the PTH axis instead.",
+     "No vitamin D receptor effect is described; the defect is in PTH secretion and responsiveness.",
+     "",
+     "Renal calcium wasting through the calcium-sensing receptor is not the mechanism given for magnesium depletion.",
+     "Osteoblastic uptake describes hungry bone syndrome after parathyroidectomy, not magnesium depletion."
+    ]
+   },
+   {
+    "q": "A monitored patient develops torsades de pointes and the serum magnesium returns at 2.0 mg/dL. What does the module advise?",
+    "ch": [
+     "Give IV magnesium sulfate anyway, since it is first-line for torsades even with a normal level",
+     "Withhold magnesium, because giving it at a normal level causes immediate respiratory arrest",
+     "Give oral magnesium oxide instead, since the intravenous route adds nothing here",
+     "Give IV calcium gluconate first, as it is the drug of choice for torsades de pointes",
+     "Correct the potassium alone, since magnesium is indicated only below 1.7 mg/dL"
+    ],
+    "correct": 0,
+    "exp": "IV magnesium is first-line for torsades de pointes even when the serum magnesium is normal, because less than 1% of total body magnesium is in the serum and a normal level does not exclude depletion. The module says to reach for it reflexively.",
+    "why": [
+     "",
+     "Respiratory depression is a toxicity to monitor for during infusion, not a reason to withhold first-line therapy in torsades.",
+     "Oral magnesium is for mild-to-moderate asymptomatic depletion and is dose-limited by diarrhea; an arrhythmia needs IV.",
+     "Calcium gluconate is kept available as the ANTIDOTE for magnesium toxicity, not as the treatment for torsades.",
+     "Potassium and calcium do need correcting, but IV magnesium is indicated in torsades regardless of the serum level."
+    ]
+   },
+   {
+    "q": "During an IV magnesium sulfate infusion, which finding is the early warning of toxicity, and what should be kept available?",
+    "ch": [
+     "New prominent U waves, with oral potassium chloride kept at the bedside",
+     "A widening QRS complex, with sodium bicarbonate available to stabilize the membrane",
+     "Hyperreflexia with clonus, with a benzodiazepine available for seizure control",
+     "A rising blood pressure, with a loop diuretic available to force magnesium excretion",
+     "Loss of deep tendon reflexes, with IV calcium gluconate available as the antidote"
+    ],
+    "correct": 4,
+    "exp": "Loss of deep tendon reflexes is the early sign of magnesium toxicity — the reflex hammer is the bedside monitor — and IV calcium gluconate should be kept available as the antidote, alongside frequent assessment of respiratory rate and blood pressure.",
+    "why": [
+     "Prominent U waves are the hypokalemia finding, and potassium is not the antidote to magnesium excess.",
+     "A widened QRS is one of the ECG changes of magnesium DEPLETION; the toxicity monitor is the reflex exam.",
+     "Hyperreflexia is a sign of magnesium DEPLETION; toxicity causes reflexes to disappear.",
+     "Hypotension, not hypertension, is the pressure change to watch for during infusion.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient on chronic omeprazole has hypomagnesemia that does not improve on oral supplements. What does the module recommend?",
+    "ch": [
+     "Continue an indefinite IV magnesium infusion while leaving the PPI in place",
+     "Add a loop diuretic, which increases magnesium retention in the distal tubule",
+     "Accept the level as a benign laboratory artifact of acid suppression therapy",
+     "Discontinue the PPI, since PPI-induced hypomagnesemia often will not correct until the drug stops",
+     "Double the oral magnesium oxide dose while continuing the PPI unchanged"
+    ],
+    "correct": 3,
+    "exp": "Chronic PPI use is an underrecognized cause of hypomagnesemia, and levels often will not rise until the PPI is stopped — the module's advice is to flag the PPI as the culprit and recommend discontinuation rather than endless supplementation.",
+    "why": [
+     "Much of an IV bolus is renally excreted, and leaving the cause untreated commits the patient to endless supplementation.",
+     "Loop diuretics cause renal magnesium WASTING and are listed among the offending agents.",
+     "It is a real deficiency the FDA has warned about, and it carries the same arrhythmia and electrolyte risks.",
+     "",
+     "Higher oral doses mainly add diarrhea; the level often will not rise while the PPI continues."
+    ]
+   },
+   {
+    "q": "How is renal magnesium wasting distinguished from gastrointestinal magnesium loss?",
+    "ch": [
+     "An ECG QT interval measurement, prolonged only in gastrointestinal magnesium loss",
+     "A 24-hour urine magnesium or fractional excretion of magnesium, high in renal wasting",
+     "A serum magnesium drawn before and after a single intravenous magnesium loading dose",
+     "The ratio of serum magnesium to serum calcium, which is low only in renal wasting",
+     "Deep tendon reflex testing, preserved in GI loss and absent in renal wasting"
+    ],
+    "correct": 1,
+    "exp": "A 24-hour urine magnesium or a fractional excretion of magnesium separates the two: inappropriately high urinary magnesium during hypomagnesemia proves a renal or drug-induced tubular cause, whereas the kidney conserves magnesium when the loss is gastrointestinal.",
+    "why": [
+     "QT prolongation reflects the severity of depletion from any cause, not its source.",
+     "",
+     "No loading-dose test is described; the localizing test is urinary magnesium excretion.",
+     "Calcium is co-checked because it is often depleted, not used as a ratio to localize the loss.",
+     "Reflexes reflect neuromuscular excitability and magnesium toxicity, not the site of loss."
+    ]
+   },
+   {
+    "q": "A malnourished patient admitted for alcohol withdrawal is started on nutrition; by day three the phosphate, potassium, and magnesium are all low. Which explanation fits best?",
+    "ch": [
+     "Aminoglycoside nephrotoxicity, the only cause that can explain renal magnesium loss",
+     "Pancreatitis-driven redistribution alone, which does not affect potassium or phosphate",
+     "Chronic proton pump inhibitor therapy, which explains all three abnormalities at once",
+     "Refeeding syndrome, whose triad is hypophosphatemia, hypokalemia, and hypomagnesemia",
+     "Gitelman syndrome, a tubular disorder that declares itself after a period of fasting"
+    ],
+    "correct": 3,
+    "exp": "This is the refeeding syndrome triad of hypophosphatemia, hypokalemia, and hypomagnesemia in a malnourished or alcoholic patient starting nutrition. Alcoholism is itself a triple threat for magnesium — poor intake, GI loss, and renal wasting — so magnesium belongs on the panel of every withdrawal patient.",
+    "why": [
+     "Aminoglycosides do waste magnesium, but nothing here implicates them and they do not explain the phosphate drop.",
+     "Pancreatitis is a redistribution cause of low magnesium, but the simultaneous fall in all three points to refeeding.",
+     "PPIs are an underrecognized cause of low magnesium specifically; they do not produce the phosphate and potassium fall of refeeding.",
+     "",
+     "Gitelman is a classic renal magnesium-wasting etiology but is a lifelong tubular defect, not something triggered by starting feeds."
+    ]
+   }
+  ]
+ }
+}

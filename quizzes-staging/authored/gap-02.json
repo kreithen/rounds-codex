@@ -1,0 +1,977 @@
+{
+ "hypophosphatemia": {
+  "condition": "Phosphate Disorders",
+  "questions": [
+   {
+    "q": "Why does a serum phosphate level poorly reflect the body's total phosphate stores?",
+    "ch": [
+     "Most phosphate is stored in skeletal muscle as 2,3-DPG and is not exchangeable",
+     "Serum phosphate is held so tightly constant by PTH that it essentially never varies",
+     "Phosphate circulates almost entirely bound to albumin, so only a free fraction is measured",
+     "About 85% is stored in bone and only about 1% is extracellular",
+     "Roughly half of body phosphate is extracellular and half intracellular, so the pools cancel out"
+    ],
+    "correct": 3,
+    "exp": "Phosphate is the body's main intracellular anion, and about 85% is stored in bone mineral with only about 1% extracellular — so the measured serum level can be normal while total-body stores are depleted.",
+    "why": [
+     "2,3-DPG is one of the compounds phosphate supports, not a storage depot; about 85% of stores sit in bone mineral.",
+     "PTH and FGF-23 are phosphaturic regulators, but serum phosphate varies widely — including large shifts with insulin, glucose, and refeeding.",
+     "Phosphate is the main intracellular anion; the module attributes the poor correlation to bone storage, not to albumin binding.",
+     "",
+     "Only about 1% of phosphate is extracellular, so the two pools are nowhere near equal."
+    ]
+   },
+   {
+    "q": "Which serum phosphate value defines hypophosphatemia?",
+    "ch": [
+     "A serum phosphate below 4.5 mg/dL",
+     "A serum phosphate above 4.5 mg/dL",
+     "A serum phosphate below 2.5 mg/dL",
+     "A serum phosphate below 8.0 mg/dL",
+     "A serum phosphate below 1.0 mg/dL"
+    ],
+    "correct": 2,
+    "exp": "Hypophosphatemia is defined as a serum phosphate below 2.5 mg/dL; symptoms of hypophosphatemia typically appear once the phosphate falls below 1.0 mg/dL.",
+    "why": [
+     "4.5 mg/dL is the upper limit of normal; values above it define hyperphosphatemia.",
+     "A phosphate above 4.5 mg/dL is hyperphosphatemia, the opposite disorder.",
+     "",
+     "8.0 mg/dL is far above the normal range, so this cutoff would include entirely normal phosphate levels.",
+     "Below 1.0 mg/dL is the threshold at which symptoms such as muscle weakness and respiratory failure appear, not the definition of the disorder."
+    ]
+   },
+   {
+    "q": "Hypophosphatemia arises through which three mechanisms?",
+    "ch": [
+     "Transcellular shift, decreased gut absorption, and renal wasting",
+     "Increased bone resorption, hemolysis, and impaired renal excretion",
+     "Tumor lysis, rhabdomyolysis, and chronic kidney disease",
+     "Excess calcitriol, excess dietary intake, and volume contraction",
+     "Hypoparathyroidism, alkali ingestion, and hemodialysis"
+    ],
+    "correct": 0,
+    "exp": "The module frames hypophosphatemia by three mechanisms: transcellular shift (refeeding, respiratory alkalosis, insulin/glucose), decreased gut absorption (malnutrition, antacids, vitamin D deficiency), and renal wasting (hyperparathyroidism, Fanconi, diuretics).",
+    "why": [
+     "",
+     "Massive cellular release such as hemolysis and impaired renal excretion cause hyperphosphatemia, not hypophosphatemia.",
+     "Tumor lysis, rhabdomyolysis, and CKD are the classic causes of hyperphosphatemia listed in this module.",
+     "Calcitriol is the absorptive hormone and would raise, not lower, the serum phosphate.",
+     "PTH is phosphaturic, so a low PTH raises serum phosphate; none of these are the module’s three mechanisms."
+    ]
+   },
+   {
+    "q": "Symptoms of hypophosphatemia characteristically appear once the level falls below 1.0 mg/dL. Which cluster of findings is expected?",
+    "ch": [
+     "Diarrhea, hypercalcemia, and a suppressed PTH from oral supplementation",
+     "Tetany, Chvostek and Trousseau signs, paresthesias, and pruritus from metastatic calcification",
+     "Kussmaul respirations, deep sighing hyperventilation, and a widened anion gap on chemistry",
+     "Vascular calcification, secondary hyperparathyroidism, and renal osteodystrophy",
+     "Muscle weakness, respiratory failure from diaphragm weakness, hemolysis, confusion, and impaired myocardial contractility"
+    ],
+    "correct": 4,
+    "exp": "Once phosphate falls below 1.0 mg/dL, ATP and 2,3-DPG production suffer: muscle weakness, rhabdomyolysis, respiratory failure from diaphragm weakness, hemolysis, confusion, and impaired myocardial contractility.",
+    "why": [
+     "Diarrhea is a common side effect of oral phosphate repletion rather than a manifestation of a low phosphate.",
+     "Those findings belong to hyperphosphatemia and largely reflect the hypocalcemia it causes.",
+     "Kussmaul breathing and a widened anion gap are the signature of severe metabolic acidosis, not of phosphate depletion.",
+     "Those are consequences of retained phosphate in CKD-MBD, the hyperphosphatemic side of this module.",
+     ""
+    ]
+   },
+   {
+    "q": "A malnourished man with heavy alcohol use is admitted after a week of almost no oral intake, and nutrition is about to be started. Which plan best reflects the module’s guidance?",
+    "ch": [
+     "Advance calories slowly, replete phosphate, potassium and magnesium, and give thiamine with the carbohydrate load",
+     "Withhold all nutrition until the serum phosphate is above 4.5 mg/dL",
+     "Infuse calcium-containing fluids alongside the feeds to prevent metastatic calcification",
+     "Start full-calorie enteral feeding immediately and correct electrolytes only if symptoms develop",
+     "Give a phosphate binder with each meal to prevent a rise in the serum phosphate"
+    ],
+    "correct": 0,
+    "exp": "Refeeding syndrome is the classic cause of dangerous hypophosphatemia: advance calories slowly, replete phosphate first along with potassium and magnesium, and give thiamine before or with the carbohydrate load.",
+    "why": [
+     "",
+     "4.5 mg/dL is the upper limit of normal, and the module advances calories cautiously rather than withholding them until phosphate is supranormal.",
+     "Calcium-containing fluids are specifically avoided during phosphate repletion because of the precipitation risk.",
+     "Feeds are started low and slow precisely because a full carbohydrate load drives the life-threatening shifts of refeeding syndrome.",
+     "Binders are for CKD hyperphosphatemia; this patient is at risk of a dangerously low phosphate, not a high one."
+    ]
+   },
+   {
+    "q": "What is the key teaching point for a CKD patient starting calcium acetate as a phosphate binder?",
+    "ch": [
+     "Take it between meals on an empty stomach for the best absorption",
+     "Take it at bedtime with a full glass of water each night",
+     "Take it only on dialysis days, one hour before the treatment",
+     "Take it with a high-dairy snack to improve palatability and tolerance",
+     "Take it with meals so that it binds dietary phosphate in the gut"
+    ],
+    "correct": 4,
+    "exp": "Phosphate binders are taken WITH meals so they bind dietary phosphate in the gut — the module calls this a favorite NCLEX and boards discriminator. Calcium acetate also delivers a calcium load, so total elemental calcium is limited.",
+    "why": [
+     "Binders act in the gut on food phosphate, so a dose taken between meals is wasted — a favorite boards discriminator.",
+     "Dosing at bedtime separates the binder from the meal whose phosphate it is supposed to bind.",
+     "Binders are dosed with meals every day; they are not tied to the dialysis schedule.",
+     "Dairy is one of the high-phosphate foods the module tells CKD patients to limit, along with cola, processed meats, and nuts.",
+     ""
+    ]
+   },
+   {
+    "q": "Hyperphosphatemia produces tetany, paresthesias, and positive Chvostek and Trousseau signs. What explains these findings?",
+    "ch": [
+     "They come from FGF-23 excess driving renal phosphate wasting",
+     "They are the manifestations of the hypocalcemia that the high phosphate causes",
+     "They result from phosphate itself acting as a direct neuromuscular stimulant",
+     "They reflect the depletion of ATP and 2,3-DPG inside muscle cells",
+     "They are caused by the accompanying hypokalemia and hypomagnesemia"
+    ],
+    "correct": 1,
+    "exp": "The symptoms of hyperphosphatemia are really the symptoms of the hypocalcemia it causes — tetany, Chvostek and Trousseau signs, paresthesias, and metastatic calcification with pruritus.",
+    "why": [
+     "FGF-23-mediated wasting produces chronically low phosphate, as in tumor-induced osteomalacia.",
+     "",
+     "The module attributes these symptoms to the resultant hypocalcemia rather than to any direct excitatory effect of phosphate.",
+     "Impaired ATP and 2,3-DPG production is the mechanism behind hypophosphatemic weakness and hemolysis, not hyperphosphatemia.",
+     "Potassium and magnesium are tracked alongside phosphate, but the module ties these particular signs to a low calcium."
+    ]
+   },
+   {
+    "q": "A patient has a serum phosphate of 1.4 mg/dL. Which test best separates renal phosphate wasting from a transcellular shift?",
+    "ch": [
+     "A serum PTH level interpreted on its own without urine studies",
+     "Urine phosphate or the fractional excretion of phosphate",
+     "A 25-OH vitamin D level to assess absorptive capacity",
+     "A serum calcium and magnesium panel drawn during repletion",
+     "An FGF-23 level as the initial screening test"
+    ],
+    "correct": 1,
+    "exp": "A high urine phosphate, or a high fractional excretion of phosphate, alongside a low serum phosphate indicates renal loss rather than a shift — the module’s way of separating the shift, gut, and kidney mechanisms.",
+    "why": [
+     "PTH helps define the mechanism alongside calcium, but it is the urine phosphate that proves the loss is renal.",
+     "",
+     "Vitamin D is checked when decreased gut absorption is suspected, not to demonstrate renal wasting.",
+     "Calcium and magnesium must be tracked with phosphate during repletion, but they do not localize the loss to the kidney.",
+     "FGF-23 is reserved for unexplained chronic renal phosphate wasting once urine studies already point to the kidney."
+    ]
+   },
+   {
+    "q": "Which laboratory tetrad should you expect in tumor lysis syndrome?",
+    "ch": [
+     "Low phosphate, high potassium, high uric acid, and low calcium",
+     "High phosphate, high potassium, low uric acid, and high calcium",
+     "High phosphate, high potassium, high uric acid, and low calcium",
+     "Low phosphate, low potassium, low uric acid, and high calcium",
+     "High phosphate, low potassium, high calcium, and low uric acid"
+    ],
+    "correct": 2,
+    "exp": "The tumor lysis tetrad is up phosphate, up potassium, up uric acid, down calcium — prevented with hydration plus rasburicase or allopurinol, and treated with dialysis when severe.",
+    "why": [
+     "Phosphate rises in tumor lysis from massive cellular release; it does not fall.",
+     "Uric acid rises and calcium falls, which is why prophylaxis targets the urate load with rasburicase or allopurinol.",
+     "",
+     "That is the mirror image of the tetrad; tumor lysis releases intracellular contents and raises phosphate, potassium, and uric acid.",
+     "Potassium rises and calcium falls in tumor lysis, so this combination inverts both of them."
+    ]
+   },
+   {
+    "q": "A patient has a low serum phosphate, an elevated serum calcium, and an elevated PTH. What does this pattern indicate?",
+    "ch": [
+     "Vitamin D deficiency with decreased gut phosphate absorption",
+     "CKD-mineral and bone disorder from retained phosphate",
+     "Refeeding syndrome after a prolonged period of being NPO",
+     "Primary hyperparathyroidism causing phosphaturic renal phosphate loss",
+     "Tumor lysis syndrome with massive intracellular release"
+    ],
+    "correct": 3,
+    "exp": "Phosphate and calcium are inversely related through PTH and FGF-23: a low phosphate with a high calcium and a high PTH points to primary hyperparathyroidism, in which phosphaturic PTH wastes phosphate in the urine.",
+    "why": [
+     "Vitamin D deficiency reduces both calcium and phosphate absorption, so the calcium would not be elevated.",
+     "CKD-MBD features retained, high phosphate stimulating FGF-23 and PTH — not hypophosphatemia with hypercalcemia.",
+     "Refeeding shifts phosphate into cells but does not raise calcium or PTH; its tip-off is the recent carbohydrate load.",
+     "",
+     "Tumor lysis raises phosphate and lowers calcium, the opposite of this pattern."
+    ]
+   }
+  ]
+ },
+ "metabolic-acidosis": {
+  "condition": "Metabolic Acidosis",
+  "questions": [
+   {
+    "q": "Which set of findings defines metabolic acidosis?",
+    "ch": [
+     "A PaCO2 above 45 mmHg with an arterial pH below 7.35",
+     "A PaCO2 below 35 mmHg with an arterial pH above 7.45",
+     "A primary fall in HCO3- below about 22 mEq/L with an arterial pH below 7.35",
+     "A normal arterial pH with a widened anion gap and a normal bicarbonate",
+     "A primary rise in HCO3- above 26 mEq/L with an arterial pH above 7.45"
+    ],
+    "correct": 2,
+    "exp": "Metabolic acidosis is a primary metabolic process lowering HCO3- (typically below 22 mEq/L) and arterial pH (below 7.35), driven by acid gain, bicarbonate loss, or impaired renal acid excretion.",
+    "why": [
+     "A primary rise in PaCO2 from inadequate alveolar ventilation defines respiratory acidosis.",
+     "A primary fall in PaCO2 from alveolar hyperventilation defines respiratory alkalosis.",
+     "",
+     "The disorder is defined by a low bicarbonate and a low pH; a normal pH with a normal bicarbonate is not the primary process.",
+     "A primary elevation in bicarbonate with alkalemia is metabolic alkalosis."
+    ]
+   },
+   {
+    "q": "How is the serum anion gap calculated, and what is its normal range?",
+    "ch": [
+     "Measured osmolality minus calculated osmolality, normally 8-12 mEq/L",
+     "Na - (Cl + HCO3), normally 8-12 mEq/L",
+     "Na + K - Cl, normally 8-12 mEq/L",
+     "(Na + K) - (Cl + HCO3), normally 20-24 mEq/L",
+     "1.5 x HCO3 + 8, normally 8-12 mEq/L"
+    ],
+    "correct": 1,
+    "exp": "The anion gap is Na - (Cl + HCO3) with a normal range of 8-12 mEq/L; it forks the differential into a high anion gap acidosis from unmeasured acids versus a normal-gap hyperchloremic acidosis from bicarbonate loss.",
+    "why": [
+     "That is the osmolar gap, ordered when toxic alcohols are suspected.",
+     "",
+     "Na + K - Cl is the urine anion gap used to work up a non-gap acidosis, not the serum anion gap.",
+     "The module’s gap omits potassium and its normal range is 8-12 mEq/L.",
+     "1.5 x HCO3 + 8 is Winter’s formula for the expected PaCO2, not the anion gap."
+    ]
+   },
+   {
+    "q": "MUDPILES lists the causes of which category of metabolic acidosis?",
+    "ch": [
+     "Metabolic alkalosis maintained by chloride and potassium depletion",
+     "High anion gap metabolic acidosis from unmeasured acids",
+     "Chronic respiratory acidosis with renal bicarbonate retention",
+     "Mixed acid-base disorders detected by the delta-delta ratio",
+     "Normal anion gap hyperchloremic acidosis from bicarbonate loss"
+    ],
+    "correct": 1,
+    "exp": "MUDPILES — Methanol, Uremia, DKA, Propylene glycol/Paraldehyde, Iron/Isoniazid, Lactic acidosis, Ethylene glycol, Salicylates — is the high anion gap differential driven by unmeasured acids.",
+    "why": [
+     "MUDPILES has nothing to do with alkalosis; it lists unmeasured-acid causes of acidosis.",
+     "",
+     "MUDPILES is a metabolic mnemonic, not a description of a respiratory disorder.",
+     "The delta-delta ratio uncovers a second process inside a gap acidosis; MUDPILES names the gap causes themselves.",
+     "The non-gap causes follow USED CARP — practically, diarrhea, RTA, and carbonic anhydrase inhibitors."
+    ]
+   },
+   {
+    "q": "A patient has a serum HCO3 of 12 mEq/L. Which formula gives the expected PaCO2, and what does deviation from it mean?",
+    "ch": [
+     "Expected PaCO2 = 1.5 x HCO3 + 8 plus or minus 2; a value outside that range means a coexisting respiratory disorder",
+     "Expected PaCO2 = Na - (Cl + HCO3); a value outside that range means unmeasured acids are present",
+     "Expected PaCO2 rises 0.7 mmHg per 1 mEq/L rise in HCO3; deviation means an added metabolic problem",
+     "Expected HCO3 falls 2 mEq/L per 10 mmHg drop in PaCO2; deviation means a mixed disorder",
+     "Delta anion gap divided by delta HCO3; a ratio near 1-2 means a mixed disorder"
+    ],
+    "correct": 0,
+    "exp": "Winter’s formula gives the expected PaCO2 as 1.5 x HCO3 + 8 plus or minus 2; a measured PaCO2 outside that predicted range signals a coexisting respiratory disorder.",
+    "why": [
+     "",
+     "That expression is the anion gap, which classifies the acidosis rather than predicting compensation.",
+     "That rule describes compensation for metabolic alkalosis, where the bicarbonate is elevated.",
+     "That is the acute respiratory alkalosis compensation rule, not Winter’s formula.",
+     "The delta-delta unmasks a second metabolic process, and a ratio of about 1-2 actually indicates a pure gap acidosis."
+    ]
+   },
+   {
+    "q": "A patient has a normal anion gap metabolic acidosis and the urine anion gap (Na + K - Cl) is negative. What does that point to?",
+    "ch": [
+     "A renal cause such as renal tubular acidosis",
+     "A high anion gap acidosis from unmeasured acids",
+     "A concurrent metabolic alkalosis hidden inside the acidosis",
+     "Toxic alcohol ingestion requiring fomepizole",
+     "Gastrointestinal bicarbonate loss, such as diarrhea"
+    ],
+    "correct": 4,
+    "exp": "In a non-gap acidosis the urine anion gap separates the causes: a negative value points to gastrointestinal bicarbonate loss such as diarrhea, while a positive value points to a renal cause such as RTA.",
+    "why": [
+     "A positive urine anion gap points to a renal cause like RTA; a negative value points away from it.",
+     "The serum gap has already been measured as normal, so unmeasured acids are not the issue.",
+     "A concurrent alkalosis is unmasked by the delta-delta ratio, not by the urine anion gap.",
+     "Toxic alcohols produce a high anion gap with a high osmolar gap, not a normal-gap acidosis.",
+     ""
+    ]
+   },
+   {
+    "q": "Why must potassium be monitored especially closely as a metabolic acidosis is corrected?",
+    "ch": [
+     "Bicarbonate raises the serum potassium, so hyperkalemia worsens as the pH normalizes",
+     "Potassium binds the unmeasured acids and falsely widens the anion gap",
+     "Only patients already on dialysis have clinically important potassium shifts",
+     "Correction of the acidosis has no effect on potassium, but the fluids given dilute it",
+     "Acidosis shifts potassium out of cells, and insulin or bicarbonate can flip the patient into dangerous hypokalemia"
+    ],
+    "correct": 4,
+    "exp": "Acidosis shifts K+ out of cells and can present as hyperkalemia; once insulin or bicarbonate is given the potassium moves back into cells, and the module tells you to anticipate that swing — insulin is withheld in DKA if the K is below 3.3.",
+    "why": [
+     "Bicarbonate drives potassium intracellularly and risks hypokalemia rather than worsening hyperkalemia.",
+     "Potassium is not part of the module’s anion gap and does not bind the unmeasured acids.",
+     "The swing is expected whenever an acidosis is corrected, which is why the module pre-empts it in the DKA plan.",
+     "Correction drives potassium back into cells; the module emphasizes that transcellular shift, not dilution.",
+     ""
+    ]
+   },
+   {
+    "q": "When does the module support giving intravenous sodium bicarbonate in metabolic acidosis?",
+    "ch": [
+     "Routinely in lactic acidosis in order to restore tissue perfusion",
+     "In any acidosis with a pH below 7.35 to normalize the bicarbonate",
+     "For severe acidemia generally below a pH of 7.1, severe non-gap acidosis or RTA, and specific toxins such as salicylate or TCA",
+     "Whenever the calculated anion gap exceeds 12 mEq/L, regardless of the pH",
+     "Routinely in every case of DKA in order to close the anion gap faster"
+    ],
+    "correct": 2,
+    "exp": "Sodium bicarbonate is reserved for severe acidemia (generally a pH below 7.1), severe non-gap acidosis or RTA, and specific toxins such as salicylate or TCA; it is not routine in DKA or lactic acidosis and risks hypokalemia, hypocalcemia, volume overload, and paradoxical CNS acidosis.",
+    "why": [
+     "Bicarbonate is not routine in lactic acidosis either — fluids and source control restore perfusion.",
+     "A pH below 7.35 merely defines the disorder; alkali is reserved for far more severe acidemia.",
+     "",
+     "A gap above 12 simply classifies the acidosis and is not by itself an indication for alkali.",
+     "Bicarbonate is explicitly not routine in DKA; insulin with dextrose and potassium is the definitive therapy that halts ketogenesis."
+    ]
+   },
+   {
+    "q": "A patient has a high anion gap acidosis with no lactate or ketone source, and the osmolar gap is markedly elevated. What is the next step?",
+    "ch": [
+     "Recalculate the anion gap corrected for albumin and observe",
+     "Start intravenous insulin with dextrose and potassium to halt ketogenesis",
+     "Give large-volume 0.9% saline and recheck the anion gap in the morning",
+     "Give fomepizole early for suspected methanol or ethylene glycol, with hemodialysis in severe cases",
+     "Start oral sodium citrate to keep the serum bicarbonate near normal"
+    ],
+    "correct": 3,
+    "exp": "A high anion gap plus a high osmolar gap screams methanol or ethylene glycol: give fomepizole early to inhibit alcohol dehydrogenase, with hemodialysis to clear the toxin and correct the acidosis in severe cases.",
+    "why": [
+     "Albumin correction can uncover a hidden acidosis but does nothing about a toxic alcohol already flagged by the osmolar gap.",
+     "Ketogenesis is not the problem here, because ketones were already absent.",
+     "Delay is unsafe with a toxic alcohol, and large-volume normal saline can itself add a hyperchloremic non-gap acidosis.",
+     "",
+     "Oral alkali is for chronic non-gap acidosis from RTA or CKD, not for an acute toxic ingestion."
+    ]
+   },
+   {
+    "q": "A patient in DKA with deep, rapid Kussmaul respirations becomes quieter, breathing more slowly and shallowly. How should this be interpreted?",
+    "ch": [
+     "As the expected effect of sodium bicarbonate on the respiratory drive",
+     "As a superimposed respiratory alkalosis from anxiety",
+     "As evidence that the acidosis was a non-gap hyperchloremic process all along",
+     "As failing compensation and impending respiratory failure rather than improvement",
+     "As successful correction of the acidosis now that the anion gap is closing"
+    ],
+    "correct": 3,
+    "exp": "Kussmaul respirations are the bedside signature of severe metabolic acidosis; a tiring patient whose Kussmaul breathing slows or stops is a red flag for failing compensation and impending respiratory failure, not recovery.",
+    "why": [
+     "Bicarbonate is not routine in DKA, and a slowing respiratory pattern here reflects fatigue rather than a drug effect.",
+     "Anxious hyperventilation would increase, not decrease, the rate and depth of breathing.",
+     "The breathing pattern reflects compensation and fatigue, not whether the anion gap is wide or normal.",
+     "",
+     "The module warns explicitly that a patient who stops Kussmaul breathing may be tiring toward respiratory failure, not improving."
+    ]
+   },
+   {
+    "q": "In a high anion gap metabolic acidosis, a delta-delta ratio (delta AG / delta HCO3) greater than 2 suggests what?",
+    "ch": [
+     "A concurrent metabolic alkalosis hidden inside the gap acidosis",
+     "A concurrent non-gap hyperchloremic acidosis",
+     "An inappropriate degree of respiratory compensation",
+     "Hypoalbuminemia that is falsely lowering the anion gap",
+     "A pure high anion gap acidosis with no second process present"
+    ],
+    "correct": 0,
+    "exp": "The delta-delta ratio in a gap acidosis: about 1-2 is a pure gap acidosis, below 1 suggests a concurrent non-gap acidosis, and above 2 suggests a concurrent metabolic alkalosis.",
+    "why": [
+     "",
+     "A ratio below 1 is what suggests a concurrent non-gap acidosis.",
+     "Respiratory compensation is judged against Winter’s formula, not the delta-delta ratio.",
+     "Low albumin is handled separately by adding about 2.5 to the gap per 1 g/dL fall below 4.",
+     "A ratio of roughly 1-2 is what indicates a pure gap acidosis."
+    ]
+   }
+  ]
+ },
+ "metabolic-alkalosis": {
+  "condition": "Metabolic Alkalosis",
+  "questions": [
+   {
+    "q": "Which arterial blood gas pattern defines metabolic alkalosis?",
+    "ch": [
+     "A pH above 7.45 with a PaCO2 below 35 mmHg and a low HCO3-",
+     "A pH below 7.35 with HCO3- below 22 mEq/L and a low PaCO2",
+     "A pH below 7.35 with a PaCO2 above 45 mmHg and a raised HCO3-",
+     "A normal pH with a high HCO3- and an unchanged PaCO2",
+     "A pH above 7.45 with HCO3- above 26 mEq/L and a compensatory rise in PaCO2"
+    ],
+    "correct": 4,
+    "exp": "Metabolic alkalosis is a primary elevation in HCO3-: a pH above 7.45 with HCO3- above 26 mEq/L and compensatory hypoventilation raising the PaCO2 about 0.7 mmHg per 1 mEq/L rise in bicarbonate.",
+    "why": [
+     "That is respiratory alkalosis, in which hyperventilation lowers the PaCO2 and the bicarbonate falls.",
+     "A low bicarbonate with acidemia and compensatory hypocapnia is metabolic acidosis.",
+     "A primary rise in PaCO2 with acidemia is respiratory acidosis, where the kidney retains bicarbonate.",
+     "Metabolic alkalosis raises the pH, and compensation raises the PaCO2 rather than leaving it unchanged.",
+     ""
+    ]
+   },
+   {
+    "q": "Which single test is the most useful in classifying metabolic alkalosis?",
+    "ch": [
+     "The urine anion gap (Na + K - Cl)",
+     "The urine sodium concentration",
+     "The serum anion gap",
+     "The urine chloride concentration",
+     "The serum osmolar gap"
+    ],
+    "correct": 3,
+    "exp": "The single most useful test is the urine chloride: below 20 mEq/L means saline-responsive disease (chloride and volume depleted), and above 20 mEq/L means saline-resistant disease.",
+    "why": [
+     "The urine anion gap separates GI from renal causes of a non-gap metabolic acidosis.",
+     "Diuretics and vomiting can spuriously raise the urine sodium, so chloride better reflects effective volume.",
+     "The anion gap classifies metabolic acidosis; it plays no part in this split.",
+     "",
+     "The osmolar gap is used when toxic alcohols are suspected in a gap acidosis."
+    ]
+   },
+   {
+    "q": "Which cause of metabolic alkalosis is both the most common and saline-responsive?",
+    "ch": [
+     "Vomiting or nasogastric suction",
+     "Bartter or Gitelman syndrome",
+     "Licorice ingestion causing mineralocorticoid excess",
+     "Cushing syndrome with cortisol excess",
+     "Primary hyperaldosteronism with hypertension"
+    ],
+    "correct": 0,
+    "exp": "Vomiting and NG suction are the most common cause and are saline-responsive: loss of HCl generates the alkalosis, and volume, chloride, and potassium depletion maintain it.",
+    "why": [
+     "",
+     "These tubulopathies are saline-resistant and normotensive, with a high urine chloride.",
+     "Licorice acts like a mineralocorticoid and produces saline-resistant alkalosis.",
+     "Cushing syndrome is listed among the saline-resistant, mineralocorticoid-excess causes.",
+     "Hyperaldosteronism is the classic saline-resistant cause, with a urine chloride above 20 mEq/L."
+    ]
+   },
+   {
+    "q": "A vomiting patient has an alkalemic blood pH but an acidic urine. What explains this paradoxical aciduria?",
+    "ch": [
+     "The kidney is excreting the excess bicarbonate as fast as it is being generated",
+     "An unrecognized concurrent high anion gap metabolic acidosis is present",
+     "Carbonic anhydrase inhibition from an antacid the patient is taking",
+     "Hyperkalemia is driving hydrogen ions into the renal tubular cells",
+     "Volume and potassium depletion with secondary hyperaldosteronism force H+ excretion to reclaim Na+"
+    ],
+    "correct": 4,
+    "exp": "In the vomiting patient, loss of HCl generates the alkalosis and then volume, chloride, and potassium depletion with secondary hyperaldosteronism maintain it — forcing H+ excretion to reclaim Na+ and producing an acidic urine despite alkalemia.",
+    "why": [
+     "If the kidney could dump the bicarbonate the alkalosis would not be maintained at all, and the urine would be alkaline.",
+     "The acidic urine here is explained by the maintenance mechanism rather than by a second acid load.",
+     "Carbonic anhydrase inhibition produces a bicarbonate diuresis and an alkaline urine.",
+     "The vomiting patient is hypokalemic, and it is that potassium depletion which sustains H+ secretion.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with heart failure and volume overload develops a diuretic-induced metabolic alkalosis, and saline cannot safely be given. What is the appropriate treatment?",
+    "ch": [
+     "Ammonium chloride, which is safe in essentially all patients",
+     "Acetazolamide, which promotes a bicarbonate diuresis",
+     "0.9% sodium chloride at a high infusion rate",
+     "Spironolactone for mineralocorticoid excess",
+     "Intravenous hydrochloric acid through a peripheral line"
+    ],
+    "correct": 1,
+    "exp": "Acetazolamide is a carbonic anhydrase inhibitor that promotes a bicarbonate diuresis, and it is the module’s answer when saline cannot be given — as in CHF with diuretic-induced alkalosis. Monitor potassium, because it can worsen hypokalemia.",
+    "why": [
+     "Ammonium chloride is a specialist last resort and is contraindicated in hepatic failure.",
+     "",
+     "Saline is first-line only when the volume load can be tolerated; here it risks worsening the overload.",
+     "Aldosterone antagonists target saline-resistant mineralocorticoid-excess states, not diuretic-induced contraction alkalosis.",
+     "HCl is reserved for severe refractory alkalosis with a pH above 7.55 and requires a central line and ICU monitoring."
+    ]
+   },
+   {
+    "q": "Metabolic alkalosis requires both a generation phase and a maintenance phase. What does the maintenance phase imply?",
+    "ch": [
+     "Something is blocking renal bicarbonate excretion: volume depletion, chloride depletion, hypokalemia, or mineralocorticoid excess",
+     "Total body potassium is elevated, driving hydrogen ions into the cells",
+     "The lungs have stopped compensating for the elevated serum bicarbonate",
+     "An acid load is being added to the blood continuously from the tissues",
+     "The kidney is excreting bicarbonate faster than it can possibly be produced"
+    ],
+    "correct": 0,
+    "exp": "The kidney normally dumps excess bicarbonate rapidly, so persistence implies that something is blocking renal bicarbonate excretion — volume depletion, chloride depletion, hypokalemia, or mineralocorticoid excess.",
+    "why": [
+     "",
+     "Hypokalemia, not hyperkalemia, is the near-universal finding, and it sustains the alkalosis.",
+     "Compensatory hypoventilation is part of the disorder itself, not the reason the alkalosis persists.",
+     "A continuous acid load causes acidosis; alkalosis is generated by acid loss or bicarbonate gain.",
+     "Rapid renal bicarbonate excretion is exactly what normally terminates a metabolic alkalosis."
+    ]
+   },
+   {
+    "q": "A hypertensive patient has hypokalemia, a metabolic alkalosis, and a urine chloride of 45 mEq/L. What is the best next step?",
+    "ch": [
+     "Give a large bolus of isotonic saline and recheck the bicarbonate",
+     "Start acetazolamide to induce a bicarbonate diuresis",
+     "Check an aldosterone-to-renin ratio for mineralocorticoid excess",
+     "Start a proton pump inhibitor to reduce gastric acid loss",
+     "Order genetic testing for Bartter or Gitelman syndrome first"
+    ],
+    "correct": 2,
+    "exp": "Hypertension plus hypokalemia plus metabolic alkalosis with a urine chloride above 20 mEq/L is saline-resistant mineralocorticoid excess; the module’s move is an aldosterone:renin ratio rather than reflexively giving saline.",
+    "why": [
+     "A urine chloride above 20 mEq/L marks saline-resistant disease, in which saline is ineffective.",
+     "Acetazolamide is the workaround when saline cannot be given, not the diagnostic step in a hypertensive, resistant patient.",
+     "",
+     "A PPI limits ongoing generation in vomiting or NG suction, which is not the picture described here.",
+     "Those tubulopathies also raise the urine chloride but characteristically present with normotension, not hypertension."
+    ]
+   },
+   {
+    "q": "Why will the pH often not normalize until the potassium is repleted, and why is potassium chloride the preferred salt?",
+    "ch": [
+     "Potassium is required for carbonic anhydrase activity, which the chloride blocks",
+     "Hyperkalemia perpetuates the alkalosis, so potassium must be driven into cells",
+     "The potassium raises the urine chloride and converts resistant to responsive disease",
+     "Hypokalemia both causes and sustains the alkalosis, and the chloride salt also repairs the chloride depletion",
+     "Potassium buffers hydrogen ions directly in the plasma, and the chloride is inert"
+    ],
+    "correct": 3,
+    "exp": "Chloride depletion and hypokalemia are the unifying drivers, both stimulating distal H+ secretion and bicarbonate reabsorption, so the chloride salt is preferred because it repairs the potassium and the chloride deficit at once.",
+    "why": [
+     "Carbonic anhydrase is the target of acetazolamide; that is not why KCl is the chosen salt.",
+     "Hypokalemia, not hyperkalemia, is the near-universal finding in metabolic alkalosis.",
+     "Urine chloride is a diagnostic marker of the underlying mechanism, not a treatment target to be manipulated.",
+     "",
+     "The module’s mechanism is stimulation of distal H+ secretion and bicarbonate reabsorption, and the chloride is itself therapeutic."
+    ]
+   },
+   {
+    "q": "Which finding in metabolic alkalosis represents a medical emergency?",
+    "ch": [
+     "Gynecomastia developing in a patient taking spironolactone",
+     "A urine chloride below 20 mEq/L in a patient who has been vomiting",
+     "Severe alkalemia with a pH above 7.55 accompanied by arrhythmias, seizures, or tetany",
+     "A PaCO2 that has risen 0.7 mmHg per 1 mEq/L rise in bicarbonate",
+     "A serum chloride at the low end of normal with a normal potassium"
+    ],
+    "correct": 2,
+    "exp": "Severe alkalemia with a pH above 7.55 accompanied by arrhythmias, seizures, tetany, or altered mental status is a medical emergency, and it is the setting in which HCl or ammonium chloride is considered.",
+    "why": [
+     "Gynecomastia is a recognized spironolactone side effect, not an acid-base emergency.",
+     "That simply classifies the alkalosis as saline-responsive, the most common and most readily treated form.",
+     "",
+     "That is precisely the expected, appropriate compensation for the disorder.",
+     "A low chloride is characteristic of the disorder and is not by itself an emergency."
+    ]
+   },
+   {
+    "q": "A patient with metabolic alkalosis and limited respiratory reserve is prescribed a sedative. Why should the nurse question the order?",
+    "ch": [
+     "Sedatives interfere with the accuracy of the urine chloride measurement",
+     "Compensatory hypoventilation is already depressing breathing, and a sedative can blunt it further and produce hypoxemia",
+     "Sedatives increase the risk of gynecomastia when combined with spironolactone",
+     "Sedatives raise the serum bicarbonate and deepen the alkalosis directly",
+     "Sedatives cause a bicarbonate diuresis with unpredictable potassium loss"
+    ],
+    "correct": 1,
+    "exp": "Metabolic alkalosis is compensated by hypoventilation, and marked compensatory hypoventilation can itself produce hypoxemia in a patient with limited respiratory reserve — so the module says to hold or question sedatives that could blunt an already-depressed respiratory drive.",
+    "why": [
+     "Nothing in the module ties sedatives to the interpretation of a urine chloride.",
+     "",
+     "Gynecomastia is a spironolactone effect and is unrelated to sedation or to acid-base status.",
+     "The concern is respiratory depression added on top of compensatory hypoventilation, not a direct effect on bicarbonate.",
+     "A bicarbonate diuresis with potassium loss describes acetazolamide, not a sedative."
+    ]
+   }
+  ]
+ },
+ "respiratory-acidosis": {
+  "condition": "Respiratory Acidosis",
+  "questions": [
+   {
+    "q": "Which arterial blood gas values define respiratory acidosis?",
+    "ch": [
+     "A PaCO2 above 45 mmHg with a pH above 7.45",
+     "A PaCO2 above 45 mmHg with a pH below 7.35",
+     "A PaCO2 below 35 mmHg with a pH above 7.45",
+     "An HCO3- below 22 mEq/L with a pH below 7.35",
+     "An HCO3- above 26 mEq/L with a pH above 7.45"
+    ],
+    "correct": 1,
+    "exp": "Respiratory acidosis is defined by a PaCO2 above 45 mmHg with a pH below 7.35, caused by inadequate alveolar ventilation that lets carbonic acid accumulate.",
+    "why": [
+     "In a respiratory disorder pH and PaCO2 move in opposite directions — ROME: Respiratory Opposite, Metabolic Equal.",
+     "",
+     "A low PaCO2 with alkalemia is respiratory alkalosis from alveolar hyperventilation.",
+     "A primary fall in bicarbonate defines metabolic acidosis.",
+     "A primary rise in bicarbonate defines metabolic alkalosis."
+    ]
+   },
+   {
+    "q": "The module groups the causes of respiratory acidosis into which three categories?",
+    "ch": [
+     "Transcellular shift, decreased gut absorption, and renal wasting",
+     "A generation phase, a maintenance phase, and a correction phase",
+     "Saline-responsive, saline-resistant, and mixed disease",
+     "Won’t breathe, can’t breathe, and pump failure",
+     "Acid gain, bicarbonate loss, and impaired renal acid excretion"
+    ],
+    "correct": 3,
+    "exp": "Causes are framed by the defect: won’t breathe (CNS or opioid-benzodiazepine depression, brainstem lesion), can’t breathe (COPD, severe asthma, pneumothorax, obesity hypoventilation), or pump failure (Guillain-Barre, myasthenia gravis, kyphoscoliosis).",
+    "why": [
+     "That framework belongs to phosphate disorders, not to a ventilation problem.",
+     "Generation and maintenance phases are the framework for metabolic alkalosis.",
+     "The saline-responsive split classifies metabolic alkalosis by urine chloride.",
+     "",
+     "Those are the three mechanisms of metabolic acidosis."
+    ]
+   },
+   {
+    "q": "Which cluster of findings is the classic bedside sign of dangerous hypercapnia?",
+    "ch": [
+     "Muscle weakness, hemolysis, and rhabdomyolysis",
+     "Tetany, carpopedal spasm, and perioral tingling",
+     "Kussmaul respirations with a widened anion gap",
+     "Chvostek and Trousseau signs with pruritus",
+     "Somnolence, headache, and asterixis"
+    ],
+    "correct": 4,
+    "exp": "CO2 narcosis — somnolence, headache, and asterixis — is the classic sign of dangerous hypercapnia; flushed warm skin and accessory muscle use are also described on exam.",
+    "why": [
+     "That cluster is the presentation of severe hypophosphatemia.",
+     "Those are the neuromuscular signs of alkalosis with a reduced ionized calcium.",
+     "Deep Kussmaul breathing is the bedside signature of severe metabolic acidosis, not of CO2 retention.",
+     "Those reflect hypocalcemia, classically from hyperphosphatemia.",
+     ""
+    ]
+   },
+   {
+    "q": "An arterial blood gas shows a PaCO2 of 80 mmHg with an HCO3- of 34 mEq/L and only a mildly reduced pH. How is this best classified?",
+    "ch": [
+     "Acute respiratory acidosis, since HCO3- rises about 1 mEq/L per 10 mmHg of PaCO2",
+     "Chronic respiratory acidosis, since HCO3- rises about 3-4 mEq/L per 10 mmHg of PaCO2",
+     "A primary metabolic alkalosis with compensatory hypoventilation",
+     "A pure respiratory alkalosis with renal bicarbonate wasting",
+     "A normal gas that requires no further interpretation"
+    ],
+    "correct": 1,
+    "exp": "A markedly elevated HCO3- with only a mildly low pH indicates chronic respiratory acidosis: the kidneys retain bicarbonate over 3-5 days, raising it about 3-4 mEq/L per 10 mmHg of PaCO2 versus only about 1 mEq/L acutely.",
+    "why": [
+     "An acute 40 mmHg rise would lift the bicarbonate only about 4 mEq/L and would drop the pH sharply.",
+     "",
+     "Compensatory hypoventilation for an alkalosis would come with an elevated pH, not a reduced one.",
+     "Respiratory alkalosis features a low PaCO2 with a raised pH and a falling bicarbonate.",
+     "A PaCO2 of 80 mmHg with a low pH is markedly abnormal by the module’s own definition."
+    ]
+   },
+   {
+    "q": "What SpO2 target does the module set for a COPD patient with chronic hypercapnia, and why?",
+    "ch": [
+     "92-96%, because that range protects tissue oxygen delivery in every patient",
+     "Above 98%, because a fully normal saturation is always the safest goal",
+     "88-92%, because excessive oxygen worsens CO2 retention and blunts respiratory drive",
+     "80-85%, because permissive hypoxemia stimulates the respiratory centre",
+     "Any value at all, provided the patient is receiving BiPAP at the time"
+    ],
+    "correct": 2,
+    "exp": "In chronic COPD hypercapnia the target SpO2 is 88-92%: excessive oxygen worsens CO2 retention through V/Q mismatch, the Haldane effect, and reduced respiratory drive, and chasing a normal saturation can tip a retainer into hypercapnic coma.",
+    "why": [
+     "92-96% is the target used for hypoxemia-driven hyperventilation, not for a known CO2 retainer.",
+     "Chasing a normal saturation is exactly what can tip a retainer into hypercapnic coma.",
+     "",
+     "The module never endorses a saturation that low; the stated target is 88-92%.",
+     "Oxygen is titrated to the prescribed target whether or not noninvasive ventilation is running."
+    ]
+   },
+   {
+    "q": "A COPD patient in acute hypercapnic respiratory failure is alert and protecting the airway. What is the evidence-based first move?",
+    "ch": [
+     "Intravenous sodium bicarbonate to correct the pH",
+     "Flumazenil to reverse any sedative contribution",
+     "Noninvasive ventilation with BiPAP",
+     "Immediate intubation and mechanical ventilation",
+     "High-flow oxygen titrated to an SpO2 above 98%"
+    ],
+    "correct": 2,
+    "exp": "Noninvasive ventilation with BiPAP is the evidence-based first move in COPD-related acute hypercapnic failure and often prevents intubation; it is avoided if the patient cannot protect the airway or is obtunded.",
+    "why": [
+     "Nothing in this module supports alkali for hypercapnia — the fix is restoring alveolar ventilation.",
+     "Flumazenil reverses isolated benzodiazepine hypoventilation and can precipitate seizures in chronic users or mixed overdose.",
+     "",
+     "Intubation is the definitive support reserved for failure of noninvasive ventilation or an unprotected airway.",
+     "Over-oxygenating a retainer worsens CO2 retention; the target in chronic hypercapnia is 88-92%."
+    ]
+   },
+   {
+    "q": "An opioid overdose patient has a PaCO2 of 70 mmHg and a respiratory rate of 6. How should naloxone be used?",
+    "ch": [
+     "Give a single large dose to achieve full arousal and then simply observe",
+     "Withhold it and proceed directly to intubation in every such case",
+     "Substitute flumazenil, which reverses both opioids and benzodiazepines",
+     "Give it only once the arterial pH has fallen below 7.20",
+     "Titrate it to restore respirations rather than full arousal, expecting to redose because its half-life is short"
+    ],
+    "correct": 4,
+    "exp": "Naloxone reverses opioid-induced respiratory depression — the \"won’t breathe\" category — and is titrated to restore respirations rather than full arousal; its short half-life means re-narcotization and repeat dosing or an infusion may be needed.",
+    "why": [
+     "Naloxone is titrated to respirations, and its short half-life means re-narcotization can follow one large dose.",
+     "This is a \"won’t breathe\" problem with a specific reversal agent; intubation is for failure or an unprotected airway.",
+     "Flumazenil reverses benzodiazepines only, and it carries a seizure risk in chronic users or mixed overdose.",
+     "A pH below 7.20 is already a decompensation red flag; a reversal agent is not held back waiting for it.",
+     ""
+    ]
+   },
+   {
+    "q": "Why must a chronically elevated PaCO2 not be lowered too quickly on mechanical ventilation?",
+    "ch": [
+     "Rapid correction causes post-hypercapnic metabolic alkalosis and seizures",
+     "Rapid correction triggers rebound cerebral vasodilation and raised ICP",
+     "Rapid correction causes a hyperchloremic non-gap metabolic acidosis",
+     "Rapid correction drives potassium out of cells and causes hyperkalemia",
+     "Rapid correction abolishes the compensatory rise in the PaO2"
+    ],
+    "correct": 0,
+    "exp": "The kidneys have retained bicarbonate to buffer the chronic hypercapnia, so dropping the PaCO2 quickly leaves that bicarbonate unopposed and causes post-hypercapnic metabolic alkalosis and seizures.",
+    "why": [
+     "",
+     "That caution applies to correcting chronic hypocapnia in respiratory alkalosis, not chronic hypercapnia.",
+     "Hyperchloremic non-gap acidosis comes from bicarbonate loss or large-volume saline, not from correcting hypercapnia.",
+     "The hazard the module names for fast correction is post-hypercapnic alkalosis with seizures, not a potassium shift.",
+     "Oxygenation is managed with titrated oxygen; the hazard here is the retained bicarbonate left behind."
+    ]
+   },
+   {
+    "q": "A patient with Guillain-Barre syndrome is being watched for hypercapnic respiratory failure. Which bedside measurements best track the ventilatory pump?",
+    "ch": [
+     "Chvostek and Trousseau signs at the bedside",
+     "Glasgow Coma Scale score and pupillary response",
+     "Urine chloride and serum potassium trends",
+     "Negative inspiratory force and vital capacity",
+     "Serum anion gap and osmolar gap calculations"
+    ],
+    "correct": 3,
+    "exp": "For neuromuscular pump failure such as Guillain-Barre or myasthenia gravis the module’s bedside tools are negative inspiratory force and vital capacity, while the Glasgow Coma Scale is used for a depressed respiratory drive.",
+    "why": [
+     "Those test for neuromuscular irritability from a low ionized calcium, not for pump strength.",
+     "The Glasgow Coma Scale is the module’s tool for a depressed respiratory drive, not for ventilatory muscle strength.",
+     "Those are metabolic alkalosis measures and say nothing about respiratory muscle strength.",
+     "",
+     "Those calculations belong to the metabolic acidosis workup."
+    ]
+   },
+   {
+    "q": "A fatiguing asthmatic on BiPAP develops a silent chest, paradoxical abdominal breathing, and a falling respiratory rate. What does this indicate?",
+    "ch": [
+     "Imminent pump failure requiring escalation to intubation",
+     "Development of a superimposed respiratory alkalosis",
+     "An expected effect of controlled oxygen at an SpO2 of 88-92%",
+     "Post-hypercapnic metabolic alkalosis from too-rapid correction",
+     "Successful noninvasive ventilation with resolving bronchospasm"
+    ],
+    "correct": 0,
+    "exp": "A silent chest, paradoxical (abdominal) breathing, or a falling respiratory rate in a fatiguing patient are red flags for imminent pump failure — the module’s explicit trigger to escalate to intubation when noninvasive ventilation is failing.",
+    "why": [
+     "",
+     "An alkalosis would require increased alveolar ventilation, the opposite of what is happening here.",
+     "Titrated oxygen at the target saturation does not produce a silent chest or paradoxical breathing.",
+     "That complication follows rapid lowering of a chronically high PaCO2, not clinical fatigue.",
+     "A silent chest with a falling rate in a fatiguing patient is a sign of failure, not of resolution."
+    ]
+   }
+  ]
+ },
+ "respiratory-alkalosis": {
+  "condition": "Respiratory Alkalosis",
+  "questions": [
+   {
+    "q": "Which arterial blood gas pattern defines respiratory alkalosis?",
+    "ch": [
+     "A PaCO2 above 45 mmHg with a pH below 7.35",
+     "An HCO3 above 26 mEq/L with a pH above 7.45",
+     "A PaCO2 below 35 mmHg with a pH above 7.45",
+     "An HCO3 below 22 mEq/L with a pH below 7.35",
+     "A PaCO2 below 35 mmHg with a pH below 7.35"
+    ],
+    "correct": 2,
+    "exp": "Respiratory alkalosis is defined by a PaCO2 less than 35 mmHg with a resulting pH greater than 7.45, produced when alveolar ventilation exceeds metabolic CO2 production.",
+    "why": [
+     "That is respiratory acidosis from alveolar hypoventilation.",
+     "A primary rise in bicarbonate is metabolic alkalosis.",
+     "",
+     "A primary fall in bicarbonate is metabolic acidosis.",
+     "A low PaCO2 with acidemia is respiratory compensation for a metabolic acidosis, which the ABG is used to distinguish from a primary alkalosis."
+    ]
+   },
+   {
+    "q": "The mnemonic CHAMPS covers the causes of respiratory alkalosis. What does it stand for?",
+    "ch": [
+     "CNS disease, Hypoxia, Anxiety, Mechanical ventilation, Progesterone/Pregnancy, Salicylates/Sepsis",
+     "Chloride depletion, Hypokalemia, Aldosterone excess, Milk-alkali, Pyloric stenosis, Suction",
+     "Cushing, Hyperaldosteronism, Antacids, Milk-alkali, Post-hypercapnia, Saline resistance",
+     "Cannot breathe, Hypoventilation, Airway obstruction, Myasthenia, Pump failure, Sedatives",
+     "Methanol, Uremia, DKA, Propylene glycol, Iron, Lactic acidosis, Ethylene glycol, Salicylates"
+    ],
+    "correct": 0,
+    "exp": "CHAMPS: CNS disease, Hypoxia, Anxiety, Mechanical ventilation, Progesterone/Pregnancy, Salicylates/Sepsis.",
+    "why": [
+     "",
+     "Those are drivers of metabolic alkalosis, not of hyperventilation.",
+     "That list is assembled from metabolic alkalosis causes rather than causes of hypocapnia.",
+     "Those describe the hypoventilation categories of respiratory acidosis.",
+     "That expansion is MUDPILES, the high anion gap metabolic acidosis differential."
+    ]
+   },
+   {
+    "q": "A young anxious patient is hyperventilating with tingling fingers. Which intervention does the module explicitly forbid?",
+    "ch": [
+     "Screening for hypoxemia with pulse oximetry",
+     "A short-term benzodiazepine once organic causes are excluded",
+     "Staying at the bedside throughout the episode",
+     "Paper-bag rebreathing to raise the PaCO2",
+     "Reassurance with coached, paced breathing"
+    ],
+    "correct": 3,
+    "exp": "Paper-bag rebreathing is explicitly forbidden — it risks fatal hypoxia and can mask a serious cause such as PE or DKA; instead coach slow, controlled breathing and stay with the patient.",
+    "why": [
+     "Assessing oxygenation first is exactly what the module prioritizes, because the patient may be hypoxic from PE.",
+     "A benzodiazepine is an accepted cautious adjunct for severe panic-driven hyperventilation refractory to coaching.",
+     "Staying with the patient is part of the recommended nursing response.",
+     "",
+     "Coached, paced breathing with reassurance is the first-line treatment for acute anxiety-driven hyperventilation."
+    ]
+   },
+   {
+    "q": "A hyperventilating patient has perioral and digital paresthesias with carpopedal spasm, yet the total serum calcium is normal. What explains the symptoms?",
+    "ch": [
+     "Cerebral vasoconstriction from hypocapnia is producing the tingling",
+     "Alkalemia increases albumin’s affinity for calcium, lowering the ionized fraction",
+     "Hyperkalemia is increasing neuromuscular excitability",
+     "The total calcium result is spurious and should be corrected for albumin",
+     "Hypophosphatemia from a transcellular shift is causing the spasm"
+    ],
+    "correct": 1,
+    "exp": "Alkalemia increases albumin’s affinity for calcium, so the ionized calcium falls while the total calcium stays normal — producing neuromuscular irritability with perioral and fingertip tingling and carpopedal spasm.",
+    "why": [
+     "Cerebral vasoconstriction explains the lightheadedness and syncope, not the perioral and digital paresthesias and spasm.",
+     "",
+     "Respiratory alkalosis trends toward mild hypokalemia rather than hyperkalemia.",
+     "The total calcium genuinely stays normal; it is the ionized fraction that falls.",
+     "Mild hypophosphatemia can accompany respiratory alkalosis, but the module attributes the paresthesias to a reduced ionized calcium."
+    ]
+   },
+   {
+    "q": "How does the expected bicarbonate response differ between acute and chronic respiratory alkalosis?",
+    "ch": [
+     "HCO3 rises about 1 mEq/L per 10 mmHg acutely and about 3-4 mEq/L per 10 mmHg when chronic",
+     "HCO3 falls about 4-5 mEq/L per 10 mmHg acutely and about 2 mEq/L per 10 mmHg when chronic",
+     "The PaCO2 is expected to rise 0.7 mmHg per 1 mEq/L rise in HCO3 in both",
+     "The expected PaCO2 is 1.5 x HCO3 + 8 plus or minus 2 in both acute and chronic disease",
+     "HCO3 falls about 2 mEq/L per 10 mmHg drop in PaCO2 acutely and about 4-5 mEq/L per 10 mmHg when chronic"
+    ],
+    "correct": 4,
+    "exp": "Acute respiratory alkalosis has minimal renal compensation, with HCO3 falling about 2 mEq/L per 10 mmHg drop in PaCO2; chronic disease involves renal HCO3 wasting, with HCO3 falling about 4-5 mEq/L per 10 mmHg drop.",
+    "why": [
+     "Those are the compensation rules for respiratory acidosis, where a rising PaCO2 raises the bicarbonate.",
+     "The values are reversed: renal bicarbonate wasting takes days, so the larger fall is the chronic one.",
+     "That rule describes the expected compensation for a metabolic alkalosis.",
+     "Winter’s formula predicts compensation for a metabolic acidosis, not for hypocapnia.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with tinnitus is tachypneic, the ABG shows a low PaCO2, and there is a high anion gap. What is the classic explanation?",
+    "ch": [
+     "High-altitude hypocapnia being treated with acetazolamide",
+     "Pure anxiety-driven hyperventilation with an otherwise normal chemistry panel",
+     "Salicylate toxicity, which stimulates the medulla and simultaneously causes an anion-gap acidosis",
+     "Pregnancy-related chronic respiratory alkalosis from progesterone",
+     "Iatrogenic over-ventilation from the mechanical ventilator settings"
+    ],
+    "correct": 2,
+    "exp": "Salicylate toxicity independently stimulates the medulla to produce a respiratory alkalosis AND causes an anion-gap metabolic acidosis — a mixed picture with tinnitus that the module names as the board favorite and a red flag needing urgent management.",
+    "why": [
+     "Altitude hypocapnia is hypoxia-driven, acetazolamide is given to aid acclimatization, and tinnitus is not part of the picture.",
+     "Anxiety does not widen the anion gap, and the module treats it as a diagnosis of exclusion.",
+     "",
+     "Progesterone-driven hyperventilation is a normal chronic hypocapnia without a wide anion gap or tinnitus.",
+     "Over-ventilation lowers the PaCO2 but adds no unmeasured acids and causes no tinnitus."
+    ]
+   },
+   {
+    "q": "A patient with pneumonia is hyperventilating because of hypoxemia. How should oxygen be used?",
+    "ch": [
+     "Titrate oxygen to an SpO2 of 88-92 percent as in chronic hypercapnia",
+     "Give a benzodiazepine first and add oxygen only if it fails",
+     "Apply paper-bag rebreathing to bring the PaCO2 back toward normal",
+     "Give supplemental oxygen titrated to an SpO2 of 92-96 percent to relieve the hypoxic drive",
+     "Withhold oxygen so that the hypoxic respiratory drive is preserved"
+    ],
+    "correct": 3,
+    "exp": "Supplemental oxygen corrects hypoxemia-driven hyperventilation from PE, pneumonia, or altitude by relieving the hypoxic respiratory drive; titrate to an SpO2 of 92-96 percent and reassess.",
+    "why": [
+     "88-92 percent is the COPD retainer target in respiratory acidosis, not the target this module gives.",
+     "A benzodiazepine is reserved for severe panic-driven hyperventilation once organic causes have been excluded.",
+     "Paper-bag rebreathing risks fatal hypoxia and is never used, least of all in a hypoxemic patient.",
+     "",
+     "Relieving the hypoxic drive is the therapeutic goal here, and oxygen is the specific treatment for hypoxemia-driven hyperventilation."
+    ]
+   },
+   {
+    "q": "A tachypneic patient with pleuritic chest pain and hypoxemia is labelled \"anxiety\" by the team. What is the correct stance?",
+    "ch": [
+     "Attribute the paresthesias to hyperkalemia and recheck the potassium",
+     "Reduce the ventilator rate in order to raise the PaCO2",
+     "Accept the label and begin coached breathing with reassurance",
+     "Give lorazepam immediately to break the hyperventilation cycle",
+     "Exclude PE, sepsis, DKA, and a CNS event first, because anxiety is a diagnosis of exclusion"
+    ],
+    "correct": 4,
+    "exp": "Hyperventilation with hypoxemia or pleuritic chest pain should prompt suspicion of pulmonary embolism or pneumonia rather than anxiety — the module insists anxiety is a diagnosis of exclusion once PE, sepsis, DKA, CNS events, and hypoxemia are ruled out.",
+    "why": [
+     "The paresthesias come from a reduced ionized calcium, and respiratory alkalosis trends toward hypokalemia.",
+     "Adjusting settings applies to iatrogenic over-ventilation on mechanical support, which is not the situation here.",
+     "Coaching is right for true psychogenic hyperventilation, but hypoxemia with pleuritic pain points to an organic cause.",
+     "A benzodiazepine is used only after organic causes are excluded and can itself depress respiration.",
+     ""
+    ]
+   },
+   {
+    "q": "A ventilated patient with chronic hypocapnia is being weaned toward a normal PaCO2. What caution applies?",
+    "ch": [
+     "Add acetazolamide to accelerate the rise in the PaCO2",
+     "Raise the PaCO2 gradually to avoid rebound cerebral vasodilation and increased ICP",
+     "Increase the set respiratory rate to shorten the weaning period",
+     "Raise the PaCO2 quickly, since hypocapnia has no cerebral vascular effects",
+     "Correct it slowly to avoid post-hypercapnic metabolic alkalosis and seizures"
+    ],
+    "correct": 1,
+    "exp": "For iatrogenic over-ventilation, lower the respiratory rate or tidal volume to raise the PaCO2 — but correct the PaCO2 gradually in chronic hypocapnia to avoid rebound cerebral vasodilation and increased ICP.",
+    "why": [
+     "Acetazolamide is used for high-altitude illness and causes a mild metabolic acidosis; it is not a tool for raising PaCO2.",
+     "",
+     "Raising the rate lowers the PaCO2 further and worsens the iatrogenic hypocapnia.",
+     "Hypocapnia causes cerebral vasoconstriction, and correcting it abruptly is what risks rebound vasodilation.",
+     "That hazard belongs to lowering a chronically high PaCO2 in respiratory acidosis, not to raising a chronically low one."
+    ]
+   },
+   {
+    "q": "Beyond the change in pH, what effect does alkalemia have on oxygen delivery in respiratory alkalosis?",
+    "ch": [
+     "It shifts the oxyhemoglobin curve left, so hemoglobin holds oxygen more tightly and tissue offloading falls",
+     "It shifts the oxyhemoglobin curve right, improving tissue oxygen offloading",
+     "It has no effect on the oxyhemoglobin curve, only on the ionized calcium",
+     "It raises 2,3-DPG production and so increases oxygen release to tissues",
+     "It dilates cerebral vessels, raising cerebral blood flow and oxygen supply"
+    ],
+    "correct": 0,
+    "exp": "Alkalosis shifts the oxyhemoglobin curve left, so hemoglobin holds oxygen more tightly and tissue offloading is reduced; cerebral vasoconstriction additionally lowers cerebral blood flow, explaining lightheadedness and syncope.",
+    "why": [
+     "",
+     "Alkalosis shifts the curve left, which reduces rather than improves tissue oxygen delivery.",
+     "The module describes both a left-shifted curve and a fall in the ionized calcium.",
+     "2,3-DPG is discussed under phosphate depletion, and the effect described here is a left shift that holds oxygen more tightly.",
+     "Hypocapnia causes cerebral vasoconstriction and lowers cerebral blood flow, which is why patients feel lightheaded."
+    ]
+   }
+  ]
+ }
+}
