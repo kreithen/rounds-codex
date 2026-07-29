@@ -1,0 +1,51 @@
+Heart failure.
+
+Heart failure is a clinical syndrome, not a single disease. The heart fails as a pump, and that failure shows up in two directions. Blood backs up, which causes congestion. Or blood fails to move forward, which causes poor perfusion. Most patients have some of both.
+
+The first split to make is by ejection fraction. Heart failure with reduced ejection fraction, HFrEF, means an ejection fraction of 40 percent or less. Heart failure with preserved ejection fraction, HFpEF, means 50 percent or more. This distinction matters more than any other, because it changes the entire evidence base for treatment.
+
+The second split is by side. Left-sided failure backs up into the lungs, so you get shortness of breath and crackles. Right-sided failure backs up into the body, so you get raised neck veins, swollen legs, and an enlarged liver.
+
+The commonest cause is ischemic heart disease. After that: high blood pressure, valve disease, cardiomyopathy, and arrhythmia.
+
+Now, diagnosis.
+
+The history is distinctive. Breathlessness on exertion. Orthopnea, meaning breathlessness lying flat. Paroxysmal nocturnal dyspnea, waking at night gasping for air. Fatigue, weight gain, and swelling. A useful bedside question is simply: how many pillows do you sleep on? The answer quantifies orthopnea in one sentence.
+
+On examination, hunt for four things. A raised jugular venous pressure, and quantify it in centimetres. Hepatojugular reflux. Crackles at both lung bases. And a third heart sound.
+
+That third heart sound is worth dwelling on. It is the sound of a volume-overloaded ventricle. The rhythm is often taught as SLOSH-ing-in, or Kentucky. Compare it with a fourth heart sound, which is a stiff ventricle: Tennessee.
+
+For tests, B-type natriuretic peptide, or B-N-P, is the key rule-out. It is produced by ventricular stretch, so it rises with volume and pressure overload. A low B-N-P makes heart failure unlikely. Be careful with three things that shift it: obesity lowers it, while renal failure and older age raise it.
+
+The definitive test is the echocardiogram. It quantifies the ejection fraction, wall motion, the valves, and chamber size.
+
+A chest X-ray may show an enlarged heart, pulmonary congestion, Kerley B lines, and pleural effusions. Then an E-C-G, troponin, electrolytes, renal function, a full blood count and a thyroid test, all aimed at finding the cause and the precipitant.
+
+Severity is staged two ways. The A-C-C and A-H-A stages A through D describe disease progression. The New York Heart Association classes one through four describe function.
+
+Now, treatment. And here is the single most useful framing: treat every admission as heart failure plus a precipitant. Something tipped this patient over, and finding it is half the job.
+
+The mnemonic is FAILURE. Forgot medications. Arrhythmia or anemia. Ischemia, infection, or infarction. Lifestyle, meaning salt and fluid. Upregulation, such as pregnancy or thyroid disease. Renal failure. And embolism, meaning pulmonary embolism.
+
+For chronic treatment of reduced ejection fraction, there are four pillars, and all four improve survival.
+
+One. An angiotensin receptor-neprilysin inhibitor, ARNI, or an ACE inhibitor, or an angiotensin receptor blocker. Watch potassium, watch renal function, watch for cough with an ACE inhibitor, and for angioedema. An ARNI needs a 36-hour washout after an ACE inhibitor.
+
+Two. A beta-blocker. Carvedilol, metoprolol succinate, or bisoprolol. Start low and go slow.
+
+Three. A mineralocorticoid receptor antagonist. Spironolactone or eplerenone. The risk here is high potassium, so monitor potassium and creatinine.
+
+Four. A sodium-glucose cotransporter 2 inhibitor. Dapagliflozin or empagliflozin. These now benefit both reduced and preserved ejection fraction. Watch for genital infections and for euglycemic diabetic ketoacidosis.
+
+Hydralazine with isosorbide dinitrate is an add-on, particularly valuable in self-identified Black patients already on full therapy.
+
+Separately from those four, a loop diuretic such as furosemide relieves symptoms by reducing congestion. Hold that distinction clearly: diuretics improve how the patient feels, but the four pillars are what keep them alive.
+
+For acute decompensation, the sequence is L-M-N-O-P. Lasix. Morphine, though its use is now limited. Nitrates. Oxygen. And position, meaning sit them upright.
+
+Two cautions before we finish.
+
+Never start or increase a beta-blocker in a wet patient, meaning one who is fluid-overloaded. Diurese first, then beta-block. Starting a beta-blocker during acute decompensation makes things worse.
+
+And know the red flags. Pink frothy sputum with a falling oxygen saturation and severe breathlessness means acute pulmonary edema, and that is an emergency. Low blood pressure with cool mottled limbs and altered mental state means cardiogenic shock. New chest pain or new E-C-G changes means you must rule out an acute coronary syndrome as the precipitant.

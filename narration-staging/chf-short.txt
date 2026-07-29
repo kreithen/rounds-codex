@@ -1,0 +1,21 @@
+Heart failure.
+
+Heart failure is a syndrome, not a single disease. The heart fails as a pump, so blood either backs up, causing congestion, or fails to move forward, causing poor perfusion.
+
+Split it first by ejection fraction. Heart failure with reduced ejection fraction, HFrEF, is 40 percent or less. Heart failure with preserved ejection fraction, HFpEF, is 50 percent or more. That distinction changes the whole evidence base for treatment.
+
+Then split it by side. Left-sided failure backs up into the lungs: breathlessness and crackles. Right-sided backs up into the body: raised neck veins, leg swelling, enlarged liver.
+
+For diagnosis, B-type natriuretic peptide is the rule-out, produced by ventricular stretch. Remember obesity lowers it, while renal failure and age raise it. The echocardiogram is definitive.
+
+On examination, the finding to chase is a third heart sound. It is the sound of a volume-overloaded ventricle.
+
+For treatment, frame every admission as heart failure plus a precipitant. Something tipped this patient over, and finding it is half the job.
+
+Chronic therapy for reduced ejection fraction rests on four pillars, and all four improve survival. An angiotensin receptor-neprilysin inhibitor, ARNI, or an ACE inhibitor, or an angiotensin receptor blocker. A beta-blocker. A mineralocorticoid receptor antagonist. And a sodium-glucose cotransporter 2 inhibitor.
+
+Diuretics are not one of those pillars. They improve how the patient feels; the four pillars are what keep them alive.
+
+Two things to hold onto. Never start or increase a beta-blocker in a fluid-overloaded patient. Diurese first, then beta-block.
+
+And the red flags: pink frothy sputum with falling oxygen saturation is acute pulmonary edema. Low blood pressure with cool mottled limbs is cardiogenic shock. New chest pain means rule out an acute coronary syndrome.
