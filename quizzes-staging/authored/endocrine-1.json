@@ -1,0 +1,452 @@
+{
+ "dka": {
+  "condition": "Diabetic Ketoacidosis (DKA)",
+  "questions": [
+   {
+    "q": "Which triad defines diabetic ketoacidosis?",
+    "ch": [
+     "Hyperglycemia, ketosis and high-anion-gap metabolic acidosis",
+     "Hyperglycemia, hypernatremia and respiratory alkalosis",
+     "Hypoglycemia, ketosis and metabolic alkalosis",
+     "Hyperglycemia, hyperkalemia and normal anion gap",
+     "Hyperosmolality, minimal ketones and a normal pH"
+    ],
+    "correct": 0,
+    "exp": "DKA is defined by the triad of hyperglycemia, ketosis and a high-anion-gap metabolic acidosis, driven by insulin deficiency with lipolysis and ketone production.",
+    "why": [
+     "",
+     "Hypernatremia and alkalosis are not features of DKA.",
+     "Glucose is elevated, not low, and the disturbance is an acidosis.",
+     "The acidosis in DKA is high anion gap, not normal gap.",
+     "Hyperosmolality with minimal ketones and a normal pH describes HHS, not DKA."
+    ],
+    "img": [
+     1
+    ]
+   },
+   {
+    "q": "Which mnemonic captures the common precipitants of DKA?",
+    "ch": [
+     "The 5 F's: fat, fluid, flatus, faeces and fetus",
+     "The 5 I's: infection, insulin omission, ischemia, intoxication, iatrogenic",
+     "The 6 P's: pain, pallor, pulselessness, paraesthesia, paralysis, poikilothermia",
+     "The 4 T's: trauma, tumour, thyroid disease, transfusion",
+     "The 3 C's: cough, cyanosis and clubbing"
+    ],
+    "correct": 1,
+    "exp": "The 5 I's: Infection, Insulin deficiency or missed doses, Ischemia or infarction, Intoxication, and Iatrogenic causes. New-onset type 1 diabetes is also a common presentation.",
+    "why": [
+     "The 5 F's describe causes of abdominal distension, not DKA.",
+     "",
+     "The 6 P's describe acute limb ischemia.",
+     "The 4 T's describe causes of an anterior mediastinal mass.",
+     "The 3 C's are not a DKA mnemonic."
+    ],
+    "img": [
+     1
+    ]
+   },
+   {
+    "q": "What is the first treatment priority in DKA?",
+    "ch": [
+     "Oral rehydration with a glucose solution",
+     "Intravenous insulin infusion",
+     "Intravenous isotonic fluid to restore volume",
+     "Sodium bicarbonate to correct the acidosis",
+     "Subcutaneous rapid-acting insulin"
+    ],
+    "correct": 2,
+    "exp": "Restoring volume with isotonic fluid is the first priority. Osmotic diuresis has caused profound dehydration, and fluids are corrected before or alongside insulin.",
+    "why": [
+     "Oral rehydration is inadequate and glucose would worsen the hyperglycemia.",
+     "Insulin follows fluid and potassium; it is not the first step.",
+     "",
+     "Bicarbonate is reserved for severe acidosis with a pH below 6.9 and is not routine.",
+     "The subcutaneous route is unreliable in a dehydrated, acidotic patient."
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "A patient in DKA has a serum potassium of 3.0 mmol/L. What must be done?",
+    "ch": [
+     "Proceed with the standard insulin infusion",
+     "Give a potassium-binding resin before insulin",
+     "Start the insulin infusion at a reduced rate",
+     "Hold insulin until potassium is repleted",
+     "Give insulin together with sodium bicarbonate"
+    ],
+    "correct": 3,
+    "exp": "Insulin must be held until potassium is repleted if it is below 3.3 mmol/L. Insulin drives potassium into cells and giving it to a hypokalemic patient can precipitate a fatal arrhythmia.",
+    "why": [
+     "Standard infusion in a hypokalemic patient is exactly the lethal error.",
+     "A binding resin lowers potassium further, the opposite of what is needed.",
+     "Reducing the rate does not remove the arrhythmia risk; insulin must be held.",
+     "",
+     "Bicarbonate lowers potassium further and compounds the danger."
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "Why can the serum potassium look normal or high at presentation in DKA?",
+    "ch": [
+     "Because total body potassium stores are genuinely elevated in ketoacidosis",
+     "Because the failing kidney retains potassium throughout the acidotic period",
+     "Because circulating ketone bodies falsely raise the measured potassium value",
+     "Because dehydration reduces renal potassium excretion to essentially zero",
+     "Because acidosis and insulin deficiency shift potassium out of cells despite a total-body deficit"
+    ],
+    "correct": 4,
+    "exp": "Total body potassium is depleted even when the serum value looks normal or high, because acidosis and insulin deficiency shift potassium extracellularly. It will plummet once treatment begins.",
+    "why": [
+     "Total body potassium is depleted, not elevated.",
+     "Osmotic diuresis causes renal potassium loss rather than retention.",
+     "Ketones do not interfere with the potassium assay.",
+     "Excretion is increased by the osmotic diuresis, not abolished.",
+     ""
+    ],
+    "img": [
+     7
+    ]
+   },
+   {
+    "q": "When should the intravenous insulin infusion be stopped in DKA?",
+    "ch": [
+     "Once the anion gap has closed",
+     "After the first litre of fluid has been given",
+     "When urinary ketones first become negative",
+     "After a fixed period of six hours",
+     "As soon as the glucose falls below 200 mg/dL"
+    ],
+    "correct": 0,
+    "exp": "Treat the gap, not the glucose. Insulin continues, with dextrose added to the fluid as glucose falls, until the anion gap closes.",
+    "why": [
+     "",
+     "Fluid volume is not the endpoint for insulin.",
+     "Urine ketones lag and reflect acetoacetate rather than beta-hydroxybutyrate.",
+     "A fixed duration ignores the patient's biochemistry.",
+     "Glucose normalises before ketogenesis stops; stopping here leaves the patient acidotic."
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "Why must subcutaneous insulin overlap with the intravenous infusion before it is stopped?",
+    "ch": [
+     "Because the overlap period allows potassium to redistribute safely",
+     "Because intravenous insulin has a very short half-life and ketosis rebounds after an unbridged stop",
+     "Because the subcutaneous dose would otherwise cause profound hypoglycemia",
+     "Because overlapping the two routes reduces the total daily insulin requirement",
+     "Because subcutaneous insulin reaches peak effect within a few seconds"
+    ],
+    "correct": 1,
+    "exp": "Intravenous insulin has a very short half-life. Subcutaneous insulin must be given 1 to 2 hours before the drip is stopped, or ketosis rebounds in the gap.",
+    "why": [
+     "Potassium shifts are managed by replacement and monitoring, not by the overlap.",
+     "",
+     "The risk of an unbridged stop is rebound ketosis, not hypoglycemia.",
+     "Overlap is about continuity of insulin effect, not total dose.",
+     "Subcutaneous insulin takes time to act, which is precisely why overlap is needed."
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "A child being treated for DKA develops headache and deteriorating consciousness. What should be suspected?",
+    "ch": [
+     "Resolution of the acidosis",
+     "Rebound hyperglycemia",
+     "Cerebral edema",
+     "Hypoglycemia from excess insulin",
+     "An unrelated migraine"
+    ],
+    "correct": 2,
+    "exp": "Headache and deteriorating mentation in a child during DKA treatment signals cerebral edema, an emergency.",
+    "why": [
+     "Resolution improves rather than depresses consciousness.",
+     "Rebound hyperglycemia does not cause acute deterioration in consciousness.",
+     "",
+     "Hypoglycemia is possible and should be checked, but this specific pattern in a child is the classic warning of cerebral edema.",
+     "Attributing new neurological deterioration to migraine risks missing a lethal complication."
+    ],
+    "img": [
+     10
+    ]
+   },
+   {
+    "q": "An acidotic patient with type 2 diabetes on an SGLT2 inhibitor has a glucose of 180 mg/dL. What should be considered?",
+    "ch": [
+     "Simple starvation ketosis",
+     "A laboratory error in the glucose measurement",
+     "Lactic acidosis from metformin",
+     "Euglycemic diabetic ketoacidosis",
+     "Hyperosmolar hyperglycemic state"
+    ],
+    "correct": 3,
+    "exp": "Think euglycemic DKA in an acidotic diabetic on an SGLT2 inhibitor whose glucose is deceptively normal. The ketoacidosis is present despite the unremarkable glucose.",
+    "why": [
+     "Starvation ketosis does not usually produce a severe high-gap acidosis in this context.",
+     "Dismissing the glucose as an error misses a recognised and dangerous presentation.",
+     "Metformin-associated lactic acidosis is rare and would not produce ketosis.",
+     "",
+     "HHS is defined by marked hyperglycemia and hyperosmolality with minimal ketones."
+    ],
+    "img": [
+     10
+    ]
+   },
+   {
+    "q": "A patient with DKA remains acidotic despite appropriate fluids, insulin and potassium replacement. What should be considered?",
+    "ch": [
+     "That bicarbonate should be given routinely",
+     "That the diagnosis must be HHS instead",
+     "That treatment should be stopped and restarted",
+     "That the anion gap is an unreliable measure",
+     "Ongoing sepsis or ischemia, or inadequate insulin and fluid delivery"
+    ],
+    "correct": 4,
+    "exp": "Persistent acidosis despite treatment points to an ongoing precipitant such as sepsis or ischemia, or to inadequate insulin and fluid delivery. Search for the precipitant.",
+    "why": [
+     "Bicarbonate is reserved for a pH below 6.9 and does not address the cause.",
+     "HHS is characterised by minimal ketones and would not explain persistent ketoacidosis.",
+     "Interrupting treatment worsens the acidosis.",
+     "The anion gap is the standard measure used to track resolution.",
+     ""
+    ],
+    "img": [
+     9
+    ]
+   }
+  ]
+ },
+ "t2dm": {
+  "condition": "Type 2 Diabetes Mellitus",
+  "questions": [
+   {
+    "q": "Which pair of abnormalities underlies type 2 diabetes?",
+    "ch": [
+     "Insulin resistance with relative insulin deficiency",
+     "Excess glucagon with normal insulin sensitivity",
+     "Impaired renal glucose reabsorption alone",
+     "Deficient thyroid hormone with slowed metabolism",
+     "Autoimmune beta-cell destruction and absolute insulin deficiency"
+    ],
+    "correct": 0,
+    "exp": "Type 2 diabetes results from insulin resistance plus relative insulin deficiency from progressive beta-cell dysfunction, strongly linked to obesity, inactivity, genetics and metabolic syndrome.",
+    "why": [
+     "",
+     "Glucagon excess is not the defining mechanism.",
+     "Renal glucose handling is not the primary defect.",
+     "Thyroid deficiency is an unrelated endocrine disorder.",
+     "Autoimmune destruction with absolute deficiency describes type 1 diabetes."
+    ],
+    "img": [
+     3
+    ]
+   },
+   {
+    "q": "Which result establishes a diagnosis of diabetes?",
+    "ch": [
+     "Random glucose of 160 mg/dL without symptoms",
+     "Fasting glucose of 110 mg/dL",
+     "HbA1c of 6.5% or above",
+     "HbA1c of 5.9%",
+     "Two-hour OGTT value of 150 mg/dL"
+    ],
+    "correct": 2,
+    "exp": "Diagnosis requires any of: HbA1c 6.5% or above, fasting glucose 126 mg/dL or above, two-hour OGTT 200 mg/dL or above, or a random glucose of 200 mg/dL or above with symptoms, confirmed on repeat unless unequivocal.",
+    "why": [
+     "A random glucose of 160 is below the threshold and there are no symptoms.",
+     "A fasting glucose of 110 falls in the prediabetes range of 100 to 125.",
+     "",
+     "An HbA1c of 5.9% is prediabetes, which spans 5.7 to 6.4%.",
+     "A two-hour value of 150 is below the 200 threshold."
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "Which agent is first-line pharmacotherapy for type 2 diabetes?",
+    "ch": [
+     "Sitagliptin",
+     "Empagliflozin",
+     "Glipizide",
+     "Metformin",
+     "Insulin glargine"
+    ],
+    "correct": 3,
+    "exp": "Metformin is first-line, reducing hepatic glucose output. It does not cause hypoglycemia or weight gain.",
+    "why": [
+     "A DPP-4 inhibitor gives modest, weight-neutral benefit and is not first-line.",
+     "An SGLT2 inhibitor is preferred where there is CKD or heart failure, but metformin remains first-line.",
+     "A sulfonylurea is inexpensive and effective but causes hypoglycemia and weight gain.",
+     "",
+     "Insulin is reserved for when oral agents are insufficient or the A1c is very high."
+    ],
+    "img": [
+     7
+    ]
+   },
+   {
+    "q": "Which agent should be preferred in a patient with type 2 diabetes and heart failure or chronic kidney disease?",
+    "ch": [
+     "A DPP-4 inhibitor",
+     "Basal insulin alone",
+     "A thiazolidinedione",
+     "A sulfonylurea",
+     "An SGLT2 inhibitor"
+    ],
+    "correct": 4,
+    "exp": "SGLT2 inhibitors have cardiovascular, renal and heart-failure benefit and are preferred with CKD or heart failure. With ASCVD or obesity, a GLP-1 receptor agonist is favoured. Choose for organ benefit, not just glucose.",
+    "why": [
+     "DPP-4 inhibitors are weight-neutral but lack the cardiorenal benefit.",
+     "Insulin controls glucose without the organ-protective effect.",
+     "Thiazolidinediones can worsen fluid retention in heart failure.",
+     "Sulfonylureas offer no organ protection and cause hypoglycemia.",
+     ""
+    ],
+    "img": [
+     7
+    ]
+   },
+   {
+    "q": "When should metformin be temporarily withheld?",
+    "ch": [
+     "Around iodinated contrast administration and in acute kidney injury",
+     "Before every meal to avoid gastrointestinal upset",
+     "During any febrile illness regardless of severity",
+     "Whenever the glycated haemoglobin falls below 7%",
+     "Before any period of moderate physical exercise"
+    ],
+    "correct": 0,
+    "exp": "Metformin is held around iodinated contrast and in renal impairment or acute kidney injury, because of the rare risk of lactic acidosis.",
+    "why": [
+     "",
+     "Metformin is taken with meals to reduce gastrointestinal upset, not withheld.",
+     "Fever alone is not an indication to stop metformin.",
+     "A good A1c is not a reason to withhold a dose.",
+     "Exercise does not require holding metformin."
+    ],
+    "img": [
+     7
+    ]
+   },
+   {
+    "q": "What is the '15-15 rule' for treating hypoglycemia?",
+    "ch": [
+     "15 units of insulin then recheck in 15 minutes",
+     "15 grams of fast-acting carbohydrate then recheck in 15 minutes",
+     "15 mL of dextrose over 15 seconds",
+     "A 15% dextrose infusion for 15 hours",
+     "15 minutes of rest then 15 minutes of activity"
+    ],
+    "correct": 1,
+    "exp": "Give 15 grams of fast-acting carbohydrate and recheck the glucose in 15 minutes.",
+    "why": [
+     "Insulin would deepen the hypoglycemia.",
+     "",
+     "This is not the described rule and the volume is inadequate.",
+     "A prolonged infusion is not what the rule describes.",
+     "Rest and activity do not treat hypoglycemia."
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "Which complications are classified as microvascular in diabetes?",
+    "ch": [
+     "Coronary artery disease, stroke and peripheral arterial disease",
+     "Retinopathy, nephropathy and neuropathy",
+     "Retinopathy, stroke and peripheral arterial disease",
+     "Nephropathy, coronary disease and neuropathy",
+     "Cataract, gastritis and osteoporosis"
+    ],
+    "correct": 1,
+    "exp": "Chronic hyperglycemia damages small vessels, producing retinopathy, nephropathy and neuropathy. Coronary disease, stroke and peripheral arterial disease are the macrovascular complications.",
+    "why": [
+     "These three are the macrovascular complications.",
+     "",
+     "Stroke and peripheral arterial disease are macrovascular.",
+     "Coronary disease is macrovascular.",
+     "These are not the recognised microvascular triad."
+    ],
+    "img": [
+     8
+    ]
+   },
+   {
+    "q": "Which screening assessments should be performed for diabetic complications?",
+    "ch": [
+     "Bone density scanning with thyroid function and parathyroid hormone",
+     "Liver ultrasound with serum ferritin and transferrin saturation",
+     "Dilated eye exam, urine albumin-to-creatinine ratio, foot exam, lipids and blood pressure",
+     "Echocardiography and carotid ultrasound with annual stress testing",
+     "Annual chest radiography with spirometry and arterial blood gas"
+    ],
+    "correct": 2,
+    "exp": "Complication screening comprises a dilated eye exam, urine albumin-to-creatinine ratio, foot exam with monofilament, lipids and blood pressure.",
+    "why": [
+     "These are not the recommended diabetes complication screens.",
+     "These do not address the microvascular and macrovascular complications.",
+     "",
+     "These assess vascular disease but omit the core screening set.",
+     "Respiratory screening is not part of routine diabetes care."
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "Why should blood pressure and lipids be treated as aggressively as glucose in type 2 diabetes?",
+    "ch": [
+     "Because they determine the A1c value",
+     "Because they prevent hypoglycemia",
+     "Because they are easier to control",
+     "Because most of the mortality in diabetes is cardiovascular",
+     "Because glucose control has no benefit"
+    ],
+    "correct": 3,
+    "exp": "Most of the mortality in diabetes is cardiovascular, so blood pressure and lipid control matter as much as glycemic control.",
+    "why": [
+     "Blood pressure and lipids do not determine the A1c.",
+     "They have no bearing on hypoglycemia risk.",
+     "Ease of control is not the rationale.",
+     "",
+     "Glucose control does have benefit, particularly for microvascular disease."
+    ],
+    "img": [
+     8
+    ]
+   },
+   {
+    "q": "In which situation may the HbA1c be misleading?",
+    "ch": [
+     "In any patient over the age of 60",
+     "When the fasting glucose is normal",
+     "When the patient is on insulin",
+     "In a patient taking metformin",
+     "In haemolysis, recent blood loss or iron deficiency"
+    ],
+    "correct": 4,
+    "exp": "HbA1c can read falsely low with haemolysis or blood loss and falsely high with iron deficiency, so it should be interpreted in context.",
+    "why": [
+     "Age alone does not invalidate the test.",
+     "A normal fasting glucose does not make the A1c unreliable.",
+     "Insulin therapy does not interfere with the assay.",
+     "Metformin does not distort the A1c measurement.",
+     ""
+    ],
+    "img": [
+     6
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,452 @@
+{
+ "cap": {
+  "condition": "Community-Acquired Pneumonia",
+  "questions": [
+   {
+    "q": "What pathological process underlies the consolidation seen in pneumonia?",
+    "ch": [
+     "Alveoli filling with inflammatory exudate",
+     "Destruction of alveolar walls",
+     "Fluid accumulation in the pleural space",
+     "Thrombotic occlusion of pulmonary arteries",
+     "Bronchial smooth muscle constriction"
+    ],
+    "correct": 0,
+    "exp": "Infection inflames the alveoli and fills them with exudate, impairing gas exchange. That alveolar filling is what produces consolidation on imaging.",
+    "why": [
+     "",
+     "Alveolar wall destruction is emphysema.",
+     "Pleural fluid is an effusion, which is a different radiographic finding and may complicate pneumonia.",
+     "Arterial occlusion describes pulmonary embolism.",
+     "Bronchoconstriction describes asthma and does not produce consolidation."
+    ],
+    "img": [
+     3
+    ]
+   },
+   {
+    "q": "Which organism is the most common cause of community-acquired pneumonia?",
+    "ch": [
+     "Legionella pneumophila",
+     "Streptococcus pneumoniae",
+     "Moraxella catarrhalis",
+     "Respiratory syncytial virus",
+     "Mycoplasma pneumoniae"
+    ],
+    "correct": 1,
+    "exp": "Streptococcus pneumoniae is the most common typical pathogen in community-acquired pneumonia.",
+    "why": [
+     "Legionella is an important atypical cause but is far less common.",
+     "",
+     "Moraxella is a recognised typical pathogen but much less frequent than pneumococcus.",
+     "Viral causes are common but RSV specifically is not the leading cause in adults.",
+     "Mycoplasma is a common atypical cause, classically in younger patients, but not the most common overall."
+    ],
+    "img": [
+     4
+    ]
+   },
+   {
+    "q": "An 84-year-old is brought in confused after a fall, with no fever. Which principle applies?",
+    "ch": [
+     "A normal temperature means the infection is viral",
+     "Pneumonia is effectively excluded by the absence of fever",
+     "Elderly patients may present with confusion or a fall rather than fever",
+     "Confusion in the elderly always indicates a primary neurological cause",
+     "Antibiotics should be withheld until fever develops"
+    ],
+    "correct": 2,
+    "exp": "Elderly patients with pneumonia may present with confusion or a fall and no fever at all. Suspicion has to stay high.",
+    "why": [
+     "Temperature does not distinguish bacterial from viral aetiology.",
+     "Absence of fever does not exclude pneumonia in an older patient.",
+     "",
+     "Confusion has many causes and infection is among the most common in this group.",
+     "Waiting for fever delays treatment in a group where fever may never appear."
+    ],
+    "img": [
+     5
+    ]
+   },
+   {
+    "q": "Which tool is used to decide whether a patient with pneumonia needs admission?",
+    "ch": [
+     "Child-Pugh score",
+     "Glasgow Coma Scale",
+     "Wells score",
+     "CURB-65",
+     "GOLD group"
+    ],
+    "correct": 3,
+    "exp": "CURB-65 (Confusion, Urea above 7, Respiratory rate 30 or more, Blood pressure below 90/60, age 65 or over) structures the disposition decision. A score of 2 or more generally warrants admission and 3 or more prompts consideration of ICU.",
+    "why": [
+     "Child-Pugh grades liver disease severity.",
+     "The Glasgow Coma Scale measures consciousness, not pneumonia severity.",
+     "Wells estimates the probability of pulmonary embolism.",
+     "",
+     "GOLD grades COPD severity."
+    ],
+    "img": [
+     5
+    ]
+   },
+   {
+    "q": "A patient has pneumonia with hyponatremia, prominent gastrointestinal symptoms and a high fever. Which pathogen should be considered?",
+    "ch": [
+     "Haemophilus influenzae",
+     "Influenza virus",
+     "Streptococcus pneumoniae",
+     "Mycoplasma pneumoniae",
+     "Legionella pneumophila"
+    ],
+    "correct": 4,
+    "exp": "Hyponatremia with gastrointestinal symptoms and high fever in a patient with pneumonia is the classic Legionella pattern.",
+    "why": [
+     "Haemophilus is a typical pathogen, often in those with underlying lung disease, without this pattern.",
+     "Influenza may precede bacterial pneumonia but does not produce this triad.",
+     "Pneumococcal pneumonia is typically an abrupt lobar illness without this electrolyte and GI signature.",
+     "Mycoplasma classically causes a walking pneumonia in a younger patient, sometimes with bullous myringitis.",
+     ""
+    ],
+    "img": [
+     4
+    ]
+   },
+   {
+    "q": "Cultures have been ordered but not yet drawn in a septic patient with pneumonia. What is the correct approach?",
+    "ch": [
+     "Give antibiotics without delay, obtaining cultures if it does not hold up treatment",
+     "Withhold antibiotics until the chest X-ray is reported",
+     "Give antibiotics only after the severity score is calculated",
+     "Treat with antipyretics alone until cultures return",
+     "Delay antibiotics until all cultures are collected"
+    ],
+    "correct": 0,
+    "exp": "Obtain cultures before antibiotics when feasible, but never delay antibiotics in a septic patient to get them. Timely first dose matters.",
+    "why": [
+     "",
+     "Treatment should not wait on radiology in a septic patient.",
+     "Scoring guides disposition, not the timing of the first dose.",
+     "Antipyretics do not treat the infection.",
+     "Delaying antibiotics in sepsis worsens outcomes."
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "A patient hospitalised with pneumonia is not improving after 72 hours of appropriate empiric therapy. What should be considered?",
+    "ch": [
+     "This is the expected course and no further action is needed",
+     "The wrong organism or drug, a complication such as empyema, or the wrong diagnosis",
+     "Immediate discharge on oral therapy with outpatient follow-up",
+     "Automatic escalation to empiric antifungal therapy",
+     "Repeating the same antibiotic course from the beginning"
+    ],
+    "correct": 1,
+    "exp": "Improvement is expected within 48 to 72 hours. Failure to improve should prompt reconsideration of the organism and drug, a search for complications such as empyema or abscess, and a review of whether the diagnosis is right.",
+    "why": [
+     "Persistent illness at 72 hours is not the expected course and requires reassessment.",
+     "",
+     "Discharging a non-responding patient is unsafe.",
+     "Antifungal therapy is not an automatic next step without specific risk factors.",
+     "Repeating an ineffective regimen does not address why it failed."
+    ],
+    "img": [
+     10
+    ]
+   },
+   {
+    "q": "A parapneumonic effusion persists and is not resolving with antibiotics. What is the appropriate action?",
+    "ch": [
+     "Repeat the chest X-ray in one month",
+     "Continue antibiotics alone and observe",
+     "Sample the fluid to exclude empyema, which requires drainage",
+     "Start systemic corticosteroids",
+     "Begin diuretic therapy"
+    ],
+    "correct": 2,
+    "exp": "A persistent effusion should be tapped to exclude empyema. Empyema needs drainage, not antibiotics alone.",
+    "why": [
+     "Waiting a month risks a loculated, harder-to-drain empyema.",
+     "Antibiotics alone will not clear an established empyema.",
+     "",
+     "Steroids do not treat an infected pleural collection.",
+     "Diuretics treat transudative effusions from heart failure, not a parapneumonic collection."
+    ],
+    "img": [
+     7
+    ]
+   },
+   {
+    "q": "What does antibiotic de-escalation mean in the management of pneumonia?",
+    "ch": [
+     "Switching from intravenous to oral therapy regardless of results",
+     "Adding a second agent to cover resistant organisms",
+     "Stopping antibiotics as soon as the fever settles",
+     "Narrowing therapy once culture and antigen results identify the organism",
+     "Reducing the dose while keeping the same broad agent"
+    ],
+    "correct": 3,
+    "exp": "Empiric antibiotics are chosen by site of care and risk factors, then narrowed once cultures and antigen results return. That is stewardship.",
+    "why": [
+     "Route change is a separate decision from narrowing spectrum.",
+     "Adding an agent is escalation, the opposite of de-escalation.",
+     "Stopping at defervescence may truncate a needed course; de-escalation is about spectrum, not duration.",
+     "",
+     "De-escalation narrows the spectrum rather than simply lowering the dose."
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "Which oxygen saturation target applies to a patient with pneumonia who also has COPD?",
+    "ch": [
+     "At least 96%",
+     "Above 98%",
+     "No target is required",
+     "At least 92%",
+     "88-92%"
+    ],
+    "correct": 4,
+    "exp": "The general target in pneumonia is at least 92%, but a patient with coexisting COPD is targeted to 88-92% to avoid worsening hypercapnia.",
+    "why": [
+     "96% or above risks CO2 retention in COPD.",
+     "Above 98% is unsafe in this group.",
+     "Oxygen always requires a defined target.",
+     "At least 92% is the general pneumonia target and does not account for the COPD.",
+     ""
+    ],
+    "img": [
+     9
+    ]
+   }
+  ]
+ },
+ "pe": {
+  "condition": "Pulmonary Embolism",
+  "questions": [
+   {
+    "q": "Where does the thrombus causing a pulmonary embolism usually originate?",
+    "ch": [
+     "A lower-extremity deep vein",
+     "The left atrium",
+     "A carotid plaque",
+     "The pulmonary vein",
+     "The renal artery"
+    ],
+    "correct": 0,
+    "exp": "A pulmonary embolus is typically a thrombus from a lower-extremity deep vein that travels to the pulmonary circulation, which is why PE and DVT are together termed venous thromboembolism.",
+    "why": [
+     "",
+     "Left atrial thrombus embolises to the systemic circulation, causing stroke rather than PE.",
+     "Carotid plaque embolises to the brain.",
+     "Pulmonary veins carry blood back to the left heart, so clot there would embolise systemically.",
+     "Renal artery thrombus does not reach the pulmonary arteries."
+    ],
+    "img": [
+     2
+    ]
+   },
+   {
+    "q": "Which triad describes the risk factors for venous thromboembolism?",
+    "ch": [
+     "Beck's triad",
+     "Virchow's triad",
+     "Charcot's triad",
+     "Cushing's triad",
+     "Samter's triad"
+    ],
+    "correct": 1,
+    "exp": "Virchow's triad: stasis (immobility, surgery, travel), hypercoagulability (cancer, pregnancy, oral contraceptives, thrombophilia) and endothelial injury.",
+    "why": [
+     "Beck's triad describes cardiac tamponade.",
+     "",
+     "Charcot's triad describes ascending cholangitis.",
+     "Cushing's triad describes raised intracranial pressure.",
+     "Samter's triad describes aspirin-exacerbated respiratory disease."
+    ],
+    "img": [
+     3
+    ]
+   },
+   {
+    "q": "What is the most common ECG finding in pulmonary embolism?",
+    "ch": [
+     "Complete heart block",
+     "S1Q3T3 pattern",
+     "Sinus tachycardia",
+     "Atrial fibrillation",
+     "ST elevation in the inferior leads"
+    ],
+    "correct": 2,
+    "exp": "Sinus tachycardia is the most common ECG finding. S1Q3T3 is classic but uncommon.",
+    "why": [
+     "Complete heart block is unrelated to the usual physiology of PE.",
+     "S1Q3T3 is the textbook pattern but is seen in only a minority of cases.",
+     "",
+     "Atrial fibrillation may occur but is not the typical finding.",
+     "Inferior ST elevation suggests myocardial infarction."
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "A patient has a high clinical probability of PE by Wells score. What is the correct next step?",
+    "ch": [
+     "Send a D-dimer and image only if positive",
+     "Start warfarin and arrange outpatient follow-up",
+     "Send a D-dimer and discharge if negative",
+     "Proceed directly to CT pulmonary angiography",
+     "Observe for 24 hours and repeat the Wells score"
+    ],
+    "correct": 3,
+    "exp": "A negative D-dimer is only useful when pretest probability is low. In a high-probability patient, go straight to CT pulmonary angiography.",
+    "why": [
+     "Making imaging conditional on the D-dimer is precisely the error in a high-probability patient.",
+     "Warfarin alone without a bridge is inadequate initial anticoagulation, and the diagnosis is unconfirmed.",
+     "A negative D-dimer cannot rule out PE in a high-probability patient.",
+     "",
+     "Observation delays diagnosis in a potentially lethal condition."
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "Which imaging test is preferred when CT pulmonary angiography is contraindicated by renal failure or pregnancy?",
+    "ch": [
+     "Coronary angiography",
+     "Abdominal ultrasound",
+     "Cardiac MRI",
+     "Chest X-ray",
+     "Ventilation-perfusion scan"
+    ],
+    "correct": 4,
+    "exp": "A V/Q scan is the alternative when contrast is contraindicated, such as in renal failure or pregnancy.",
+    "why": [
+     "Coronary angiography images the coronary arteries.",
+     "Abdominal ultrasound does not assess the pulmonary circulation, though leg ultrasound may find the source DVT.",
+     "Cardiac MRI is not the standard alternative for diagnosing PE.",
+     "A chest X-ray cannot diagnose or exclude PE.",
+     ""
+    ],
+    "img": [
+     6
+    ]
+   },
+   {
+    "q": "How is confirmed PE risk-stratified to guide treatment intensity?",
+    "ch": [
+     "By hemodynamic status and evidence of right ventricular strain",
+     "By the patient's age and comorbidity burden",
+     "By the presence or absence of pleuritic chest pain",
+     "By the absolute D-dimer level at presentation",
+     "By the size of the clot burden on CT alone"
+    ],
+    "correct": 0,
+    "exp": "Risk stratification into massive (hypotension or shock), submassive (right ventricular strain but normotensive) and low risk is driven by hemodynamics plus RV strain markers, and it determines whether to thrombolyse.",
+    "why": [
+     "",
+     "Age contributes to prognostic scores but does not define the categories.",
+     "Pleuritic pain reflects peripheral infarction, not severity.",
+     "D-dimer helps rule out disease, not stratify confirmed disease.",
+     "Clot burden alone does not determine physiological impact."
+    ],
+    "img": [
+     4
+    ]
+   },
+   {
+    "q": "Which treatment is indicated for a massive PE with hemodynamic instability?",
+    "ch": [
+     "Oral apixaban alone",
+     "Thrombolytic therapy such as alteplase",
+     "An inferior vena cava filter alone",
+     "Aspirin and observation",
+     "Compression stockings and early mobilisation"
+    ],
+    "correct": 1,
+    "exp": "Massive PE with hemodynamic instability is the indication for thrombolysis, accepting the major bleeding risk that restricts it to high-risk patients.",
+    "why": [
+     "A DOAC is first-line for hemodynamically stable PE, not for shock.",
+     "",
+     "An IVC filter prevents further embolism but does not treat the obstructing clot.",
+     "Aspirin is not adequate treatment for PE.",
+     "These are prevention measures, not treatment for an unstable patient."
+    ],
+    "img": [
+     8
+    ]
+   },
+   {
+    "q": "When is an inferior vena cava filter appropriate?",
+    "ch": [
+     "In all patients with confirmed PE",
+     "As a replacement for anticoagulation in stable patients",
+     "When anticoagulation is contraindicated",
+     "Only after thrombolysis has failed",
+     "In any patient with a raised D-dimer"
+    ],
+    "correct": 2,
+    "exp": "An IVC filter is used when anticoagulation is contraindicated. It is not a substitute for anticoagulation when anticoagulation can be given.",
+    "why": [
+     "Most patients are managed with anticoagulation alone.",
+     "A filter is explicitly not a substitute when anticoagulation is possible.",
+     "",
+     "Filter placement is not contingent on failed thrombolysis.",
+     "A raised D-dimer is non-specific and is not an indication for a filter."
+    ],
+    "img": [
+     9
+    ]
+   },
+   {
+    "q": "Which tool identifies low-risk patients with PE who may be suitable for outpatient management?",
+    "ch": [
+     "GOLD group A-E",
+     "Wells criteria",
+     "CURB-65 score",
+     "Simplified PESI",
+     "CHA2DS2-VASc"
+    ],
+    "correct": 3,
+    "exp": "PESI and simplified PESI identify low-risk patients who may be managed as outpatients, a modern and cost-conscious option.",
+    "why": [
+     "GOLD grades COPD.",
+     "Wells estimates pretest probability of PE before diagnosis, not prognosis after it.",
+     "CURB-65 scores pneumonia severity.",
+     "",
+     "CHA2DS2-VASc estimates stroke risk in atrial fibrillation."
+    ],
+    "img": [
+     10
+    ]
+   },
+   {
+    "q": "A patient with high clinical suspicion of PE becomes hypotensive before imaging can be performed. What is the most appropriate approach?",
+    "ch": [
+     "Give a fluid bolus and repeat the D-dimer",
+     "Start oral anticoagulation and arrange imaging in the morning",
+     "Place an IVC filter before any other intervention",
+     "Wait for CT pulmonary angiography before any treatment",
+     "Treat the physiology, giving empiric anticoagulation or thrombolysis as indicated"
+    ],
+    "correct": 4,
+    "exp": "In a crashing patient with high suspicion, empiric anticoagulation or thrombolysis may precede confirmatory imaging. Treat the physiology.",
+    "why": [
+     "A repeat D-dimer adds nothing in a high-probability unstable patient.",
+     "Deferring to the morning is unsafe in obstructive shock.",
+     "A filter does not relieve the existing obstruction causing the shock.",
+     "Waiting for imaging in a patient in shock risks death.",
+     ""
+    ],
+    "img": [
+     8
+    ]
+   }
+  ]
+ }
+}
