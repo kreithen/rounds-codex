@@ -1,0 +1,127 @@
+{
+ "bowel-obstruction": {
+  "1": {
+   "Oral laxatives to move the obstruction along": "Laxatives increase peristalsis against a mechanical block, worsening distension and raising the risk of perforation.",
+   "Routine broad-spectrum antibiotics for every case": "Antibiotics are reserved for suspected ischemia, perforation or peritonitis, not given routinely.",
+   "Immediate colonoscopy to locate the transition point": "Colonoscopy risks perforating a distended bowel and is not how the transition point is found.",
+   "Immediate oral feeding to test bowel function": "Feeding into an obstruction adds volume above the block and risks vomiting and aspiration."
+  },
+  "2": {
+   "Crohn disease": "Crohn strictures cause obstruction, but they are far less common overall than postoperative adhesions.",
+   "Intussusception": "Intussusception is chiefly a pediatric cause; in adults it is rare and usually signals a lead-point lesion.",
+   "Hernia": "An incarcerated hernia is the second commonest cause, but it does not overtake adhesions.",
+   "Volvulus": "Volvulus more often affects the large bowel, at the sigmoid or cecum."
+  },
+  "3": {
+   "Colonoscopy as the initial study": "Colonoscopy is not the initial study and risks perforation in a distended obstructed bowel.",
+   "Barium enema under fluoroscopy": "Barium is hazardous if perforation is possible and does not assess the small bowel or the bowel wall.",
+   "MRI of the abdomen and pelvis": "MRI is slower and less available, and adds little over CT in the acute setting.",
+   "Transabdominal ultrasound": "Ultrasound is limited by bowel gas, which is precisely what obstruction produces."
+  },
+  "4": {
+   "Normal CT": "A normal CT argues against strangulation rather than for it.",
+   "Passing flatus": "Passing flatus suggests the obstruction is partial or resolving.",
+   "Improving pain": "Improving pain is reassuring. Pain that becomes constant rather than colicky is the worrying change.",
+   "Hyperactive bowel sounds only": "Hyperactive high-pitched sounds are typical of early mechanical obstruction. It is their disappearance, with peritonism, that signals trouble."
+  },
+  "5": {
+   "Hemoptysis": "Coughing blood is a respiratory symptom with no bearing on bowel obstruction.",
+   "Massive hematochezia": "Brisk rectal bleeding suggests a lower gastrointestinal bleed, not proximal obstruction.",
+   "Jaundice": "Jaundice reflects hepatobiliary disease rather than mechanical bowel obstruction.",
+   "Dysuria": "Dysuria is a urinary symptom and unrelated."
+  },
+  "6": {
+   "3 cm": "Three centimetres is within the normal range for cecal diameter.",
+   "6 cm": "Six centimetres is the threshold often quoted for the colon generally, but the cecum tolerates more before perforation risk climbs.",
+   "15 cm": "By 15 centimetres perforation risk is already extreme; the threshold for concern is reached well below this.",
+   "20 cm": "Far beyond the point at which intervention is needed. Waiting for this would be negligent."
+  },
+  "7": {
+   "Septic shock on presentation": "Septic shock demands resuscitation and operative source control.",
+   "Generalized peritonitis": "Generalized peritonitis is an indication for urgent laparotomy.",
+   "A closed-loop obstruction": "A closed loop cannot decompress and progresses to ischemia, so it requires operation.",
+   "Free intraperitoneal air": "Free air means perforation and mandates surgery."
+  },
+  "8": {
+   "Statins": "Statins have no effect on bowel motility and are not contraindicated.",
+   "PPIs": "Proton pump inhibitors reduce gastric acid and are not a motility problem here.",
+   "NSAIDs": "NSAIDs are avoided for other reasons, chiefly ulceration and renal injury, but they are not the class that worsens a fixed mechanical block.",
+   "Antihistamines": "Antihistamines can be mildly constipating but are not the class specifically contraindicated in mechanical obstruction."
+  },
+  "9": {
+   "Asthma": "Asthma is an airway disease and unrelated to bowel perfusion.",
+   "Migraine": "Migraine has no relationship to mesenteric blood flow in this context.",
+   "Pancreatitis": "Pancreatitis is a differential for abdominal pain but is not a consequence of impaired bowel perfusion.",
+   "Nephrolithiasis": "Renal stones cause colicky pain that can mimic obstruction but are unrelated to bowel perfusion."
+  },
+  "10": {
+   "Antibiotics cure all SBO": "Antibiotics treat infective complications; they do not relieve a mechanical obstruction.",
+   "Ignore serial exams": "Serial examination is the main way deterioration toward strangulation is detected.",
+   "Delay surgery until pain resolves": "Waiting for pain to settle in a deteriorating patient allows ischemia to become infarction.",
+   "Feed immediately": "Early feeding is inappropriate while the obstruction persists."
+  }
+ },
+
+ "pud": {
+  "1": {
+   "Alcohol use and cigarette smoking": "Both contribute to ulcer risk and impair healing, but neither is among the two principal causes.",
+   "Gallstones and biliary sludge": "Gallstones cause biliary colic and cholecystitis, not peptic ulceration.",
+   "Viral infection and food allergy": "Neither is an established cause of peptic ulcer disease.",
+   "Crohn disease and celiac disease": "Both can involve the upper gastrointestinal tract but account for only a tiny fraction of peptic ulcers."
+  },
+  "2": {
+   "Shoulder pain": "Referred shoulder pain suggests diaphragmatic irritation, as in perforation or biliary disease.",
+   "Exercise-induced": "Exertional pain points to cardiac ischemia, not ulcer disease.",
+   "Worsens with food": "Pain worsening with food is the classic pattern of a GASTRIC ulcer, which is the distinction being tested.",
+   "Unrelated to meals": "Duodenal ulcer pain has a characteristic relationship to meals, which is what makes the history useful."
+  },
+  "3": {
+   "CT": "CT is valuable for complications such as perforation but does not directly visualize or biopsy mucosa.",
+   "MRI": "MRI has no established role in diagnosing peptic ulcer disease.",
+   "Ultrasound": "Ultrasound assesses the biliary tree and solid organs, not gastric or duodenal mucosa.",
+   "X-ray": "A plain film may show free air after perforation but cannot diagnose an ulcer."
+  },
+  "4": {
+   "To stage chronic gastritis": "Gastritis may be reported incidentally, but staging it is not the reason a gastric ulcer is biopsied.",
+   "To check for active bleeding": "Active bleeding is assessed visually at endoscopy and treated endoscopically; biopsy is not how it is detected.",
+   "To measure gastric acid output": "Acid output is not measured from a biopsy, and has no role in routine ulcer care.",
+   "To detect H. pylori, which is the only indication": "Biopsy does test for H. pylori, but calling that the ONLY indication is what makes this wrong: excluding malignancy is the critical reason."
+  },
+  "5": {
+   "ESR": "The erythrocyte sedimentation rate is a nonspecific inflammatory marker and does not detect H. pylori.",
+   "Lipase": "Lipase assesses the pancreas.",
+   "Troponin": "Troponin assesses myocardial injury.",
+   "ANA": "Antinuclear antibody screens for connective tissue disease."
+  },
+  "6": {
+   "Steroid": "Corticosteroids impair mucosal healing and increase ulcer risk.",
+   "Antacid only": "Antacids give brief symptomatic relief but do not heal ulcers.",
+   "Antibiotic": "Antibiotics are essential when H. pylori is present, but they are eradication therapy rather than acid suppression.",
+   "Misoprostol": "Misoprostol is used to prevent NSAID-related ulcers, not as first-line acid suppression for an established ulcer."
+  },
+  "7": {
+   "Ileus": "Ileus produces a distended, silent but soft abdomen, not board-like rigidity.",
+   "IBS": "Irritable bowel syndrome causes no peritoneal signs.",
+   "Pancreatitis": "Pancreatitis causes epigastric tenderness and guarding but rarely the rigid abdomen of free perforation.",
+   "Constipation": "Constipation does not produce peritonism."
+  },
+  "8": {
+   "Renal artery": "The renal arteries lie in the retroperitoneum, away from the duodenal bulb.",
+   "Splenic artery": "The splenic artery runs behind the stomach along the pancreas and is not the vessel classically eroded by a posterior duodenal ulcer.",
+   "SMA": "The superior mesenteric artery arises below the duodenal bulb and is not the classic vessel.",
+   "Hepatic artery": "The hepatic artery runs in the porta hepatis and is not the usual vessel involved."
+  },
+  "9": {
+   "Triple therapy": "Clarithromycin-based triple therapy is precisely what fails where clarithromycin resistance is high.",
+   "H2 blocker": "An H2 blocker suppresses acid but does not eradicate the organism.",
+   "Misoprostol": "Misoprostol is prophylaxis against NSAID injury and has no antimicrobial action.",
+   "Antacid": "Antacids neutralize acid transiently and do not eradicate H. pylori."
+  },
+  "10": {
+   "Repeat CT only": "CT does not assess whether the organism has been cleared.",
+   "Colonoscopy": "Colonoscopy examines the large bowel and is irrelevant to H. pylori eradication.",
+   "Lifelong PPI": "Indefinite acid suppression is not required once the organism is eradicated and any ulcer has healed.",
+   "Stop follow-up": "Eradication fails often enough that confirmation is recommended, particularly after a complicated ulcer."
+  }
+ }
+}

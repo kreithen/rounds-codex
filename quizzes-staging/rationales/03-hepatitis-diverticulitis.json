@@ -1,0 +1,127 @@
+{
+ "hepatitis": {
+  "1": {
+   "HCV": "Hepatitis C is bloodborne and becomes chronic in the majority of untreated infections, which is the opposite of what the stem describes.",
+   "HDV": "Hepatitis D is bloodborne and depends on hepatitis B; it worsens chronicity rather than avoiding it.",
+   "Hepatitis G": "Hepatitis G is not an established cause of clinical hepatitis and is not the fecal-oral virus.",
+   "HBV": "Hepatitis B is transmitted by blood, sexual contact and perinatally, and carries a real risk of chronic infection."
+  },
+  "2": {
+   "HAV": "Hepatitis A replicates independently and has no dependence on any other virus.",
+   "HBV": "Hepatitis B produces the surface antigen; it does not require it from another source.",
+   "HCV": "Hepatitis C replicates independently of hepatitis B.",
+   "HEV": "Hepatitis E replicates independently and is transmitted fecal-orally."
+  },
+  "3": {
+   "Normal": "Transaminases are characteristically high in acute viral hepatitis; a normal pattern would argue against the diagnosis.",
+   "CK only": "An isolated creatine kinase rise points to muscle injury, not hepatocellular damage.",
+   "AST>ALT": "AST exceeding ALT, classically by a ratio above 2, suggests alcoholic liver disease rather than acute viral hepatitis.",
+   "Isolated ALP": "An isolated alkaline phosphatase rise indicates a cholestatic or infiltrative process, not hepatocellular inflammation."
+  },
+  "4": {
+   "HAV+HEV": "Neither hepatitis A nor hepatitis E establishes chronic infection in the immunocompetent host.",
+   "Vaccinated adult": "Effective vaccination prevents infection, so there is no chronicity risk at all.",
+   "Adult HAV": "Adult hepatitis A is usually more symptomatic than childhood infection but does not become chronic.",
+   "Adult HEV": "Hepatitis E is typically self-limiting in adults; chronic infection is largely confined to the immunosuppressed."
+  },
+  "5": {
+   "Ribavirin": "Ribavirin was part of the older interferon-based regimens and is no longer first-line as monotherapy.",
+   "Transplant": "Transplantation treats end-stage liver disease, not the viral infection, and the virus recurs without antiviral therapy.",
+   "Steroids": "Corticosteroids are used in autoimmune hepatitis and would impair viral clearance here.",
+   "Peg-IFN": "Pegylated interferon has been superseded by direct-acting antivirals, which are far better tolerated and more effective."
+  },
+  "6": {
+   "Pruritus": "Itching reflects cholestasis and is not a marker of hepatic failure.",
+   "Nausea": "Nausea is a common nonspecific symptom of any acute hepatitis.",
+   "Fatigue": "Fatigue accompanies most acute hepatitis and does not indicate failure.",
+   "ALT elevation": "A raised ALT indicates hepatocyte injury but says nothing about synthetic function. Failure is defined by encephalopathy plus coagulopathy."
+  },
+  "7": {
+   "Pancreatitis": "Pancreatitis is not a recognized long-term sequela of chronic viral hepatitis.",
+   "Diverticulitis": "Diverticular disease is a colonic condition unrelated to hepatic infection.",
+   "Gallstones": "Gallstones are common in general but are not a consequence of chronic hepatitis.",
+   "Appendicitis": "Appendicitis has no relationship to chronic viral hepatitis."
+  },
+  "8": {
+   "Requires HBV": "It is hepatitis D that requires hepatitis B. Hepatitis E replicates independently.",
+   "Prevented by HBV vaccine": "The hepatitis B vaccine gives no protection against hepatitis E; they are unrelated viruses.",
+   "Lifelong antivirals": "Hepatitis E is usually self-limiting and does not require lifelong therapy.",
+   "Usually chronic": "Hepatitis E is usually acute and self-limiting. Chronic infection is largely restricted to the immunosuppressed."
+  },
+  "9": {
+   "Bedrest forever": "Prolonged bed rest offers no benefit and brings deconditioning and thromboembolic risk.",
+   "Lifelong antibiotics": "Viral hepatitis does not respond to antibiotics.",
+   "Drink alcohol": "Alcohol accelerates fibrosis and is precisely what must be avoided.",
+   "Avoid vaccines": "The opposite applies. Hepatitis A and B vaccination is recommended in chronic liver disease."
+  },
+  "10": {
+   "ALT normal": "Transaminases often normalize on treatment without the virus being cleared, so a normal ALT does not prove cure.",
+   "Negative antibody": "Hepatitis C antibody usually persists for life after infection, cured or not, so it cannot confirm cure.",
+   "Bilirubin": "Bilirubin reflects hepatic function and excretion, not viral clearance.",
+   "HBsAg": "Hepatitis B surface antigen concerns hepatitis B and has no bearing on hepatitis C cure."
+  }
+ },
+
+ "diverticulitis": {
+  "1": {
+   "Full-thickness ulceration of the colon": "Full-thickness ulceration describes a different pathology; diverticula are herniations, not ulcers.",
+   "Diffuse colitis": "Diffuse colitis is mucosal inflammation throughout the colon, whereas diverticulosis is a structural change without inflammation.",
+   "Inflammation of colonic diverticula": "That is diverticulITIS. Diverticulosis is the presence of the outpouchings without inflammation.",
+   "Perforation of the sigmoid colon": "Perforation is a complication of diverticulitis, not a description of diverticulosis."
+  },
+  "2": {
+   "Cecum": "Cecal diverticulitis occurs and is relatively more common in Asian populations, but it is not the usual site in Western practice.",
+   "Ascending colon": "Right-sided disease is uncommon in Western populations.",
+   "Transverse colon": "The transverse colon is an unusual site for diverticular disease.",
+   "Rectum": "The rectum has a continuous outer muscular layer and characteristically does not form diverticula."
+  },
+  "3": {
+   "Primary viral infection of the colonic mucosa": "Diverticulitis is not initiated by a primary viral infection.",
+   "Autoimmune vasculitis of the mesenteric vessels": "Mesenteric vasculitis is a distinct entity producing ischemic bowel injury.",
+   "Acute mesenteric ischemia from arterial occlusion": "Mesenteric ischemia causes pain out of proportion to findings and is a separate diagnosis.",
+   "Direct invasion by an underlying colon cancer": "A malignancy can mimic or complicate diverticulitis, but it is not the usual initiating mechanism."
+  },
+  "4": {
+   "RLQ pain, jaundice, diarrhea": "Right-sided pain with jaundice suggests a hepatobiliary problem.",
+   "Diffuse abdominal pain with hematemesis": "Hematemesis indicates upper gastrointestinal bleeding, not diverticulitis.",
+   "Painless rectal bleeding": "That describes diverticular bleeding, which is a separate presentation from diverticulitis and is characteristically painless.",
+   "RUQ pain after meals": "Postprandial right upper quadrant pain suggests biliary colic."
+  },
+  "5": {
+   "Plain abdominal radiograph": "A plain film may show free air if perforation has occurred but cannot confirm or grade diverticulitis.",
+   "Colonoscopy during the acute phase": "Colonoscopy is avoided acutely because insufflation risks perforating an inflamed segment. It is done after resolution to exclude malignancy.",
+   "Barium enema under fluoroscopy": "Barium enema is contraindicated acutely, since extravasated barium in the peritoneum is highly injurious.",
+   "MRI of the abdomen and pelvis": "MRI can demonstrate diverticulitis but is slower and less available, and offers no advantage over CT here."
+  },
+  "6": {
+   "Apple-core lesion": "An apple-core stricture is the classic appearance of an annular colonic carcinoma.",
+   "Pneumoperitoneum only": "Free air indicates perforation, which is a complication rather than the characteristic finding of uncomplicated disease.",
+   "Pneumobilia": "Air in the biliary tree follows instrumentation, a biliary-enteric fistula or gallstone ileus.",
+   "Portal venous gas": "Portal venous gas is an ominous sign of bowel necrosis, not a feature of ordinary diverticulitis."
+  },
+  "7": {
+   "Colonoscopy during the acute episode": "Colonoscopy is contraindicated acutely because of the perforation risk, and does not drain an abscess.",
+   "A high-fiber diet and outpatient follow-up": "Fiber is for long-term prevention. It does not treat an established abscess of this size.",
+   "Observation with serial abdominal exams": "Observation is reasonable for a small abscess, but a 6 cm collection is unlikely to resolve on antibiotics alone.",
+   "Emergent colectomy with end colostomy": "Emergency resection is reserved for generalized peritonitis or failure of drainage. A drainable abscess should be drained first."
+  },
+  "8": {
+   "Antibiotics are never used": "Antibiotics remain standard in complicated disease and in patients with comorbidity or immunosuppression.",
+   "Oral antibiotics are contraindicated": "Oral antibiotics are appropriate for many outpatients who can tolerate them.",
+   "Antibiotics only for perforation": "Antibiotics are indicated well before perforation, including in complicated non-perforated disease.",
+   "Everyone needs IV antibiotics": "Intravenous therapy is reserved for those who cannot tolerate oral intake or who have complicated disease."
+  },
+  "9": {
+   "Ib": "Stage Ib is a confined pericolic abscess.",
+   "II": "Stage II is a pelvic, retroperitoneal or distant abscess.",
+   "III": "Stage III is generalized PURULENT peritonitis, not fecal.",
+   "Ia": "Stage Ia is phlegmon or confined pericolic inflammation without an abscess."
+  },
+  "10": {
+   "Lifelong antibiotics": "There is no role for continuous antibiotics in preventing recurrence.",
+   "Liquid diet forever": "A permanent liquid diet is neither necessary nor nutritionally sound. Clear liquids are only for the acute phase.",
+   "Annual CT scans": "Routine annual CT provides no preventive benefit and carries a cumulative radiation burden.",
+   "Surgery after every second episode": "Elective resection is now individualized by severity, complications and patient factors, rather than triggered by a fixed episode count."
+  }
+ }
+}

@@ -1,0 +1,127 @@
+{
+ "cardiac-arrest": {
+  "1": {
+   "Obtain a 12-lead ECG": "A 12-lead ECG delays compressions and changes nothing about the immediate action in a pulseless patient.",
+   "Check pupils": "Pupillary examination has no role in the initial recognition of arrest and wastes time.",
+   "Wait for monitor": "Waiting for a monitor delays compressions. Recognition of arrest is clinical, not electrical.",
+   "Give epinephrine": "Epinephrine comes after compressions are underway and, in a shockable rhythm, after the first shock. It is never the first action."
+  },
+  "2": {
+   "60–80/min": "Too slow to generate adequate cardiac output.",
+   "80–100/min": "Below the recommended range and associated with inadequate perfusion.",
+   "120–140/min": "Above the recommended range. Excessive rate shortens diastole and reduces chest recoil, so filling suffers.",
+   "As fast as possible": "Faster is not better. Beyond about 120 per minute, incomplete recoil reduces the very perfusion compressions are meant to generate."
+  },
+  "3": {
+   "AV block": "AV block is a conduction abnormality with organized activity; it is treated with pacing or chronotropes, not defibrillation.",
+   "Asystole": "Asystole is the absence of electrical activity. There is no organized rhythm to reset, so shocking it is futile.",
+   "PEA": "In pulseless electrical activity there is organized electrical activity without mechanical output. Treatment is CPR and reversing the underlying cause, not shock.",
+   "Sinus bradycardia": "Sinus bradycardia is an organized perfusing rhythm and is not a shockable arrest rhythm."
+  },
+  "4": {
+   "Terminate ventricular fibrillation": "Defibrillation terminates ventricular fibrillation. Compressions maintain perfusion until that shock can be delivered.",
+   "Correct the metabolic acidosis": "Acidosis improves as circulation is restored, but correcting it is not the purpose of compressions.",
+   "Reverse the myocardial infarction": "Reperfusion of an infarct requires catheterization or thrombolysis, not chest compressions.",
+   "Restore a normal blood pressure": "Even excellent CPR generates only a fraction of normal cardiac output. The goal is enough coronary and cerebral flow to preserve viability, not a normal pressure."
+  },
+  "5": {
+   "Tamponade": "Cardiac tamponade is one of the Ts and is a reversible cause of arrest.",
+   "Toxins": "Toxins are one of the Ts.",
+   "Hypovolemia": "Hypovolemia is one of the Hs.",
+   "Hypoxia": "Hypoxia is one of the Hs and among the commonest reversible causes."
+  },
+  "6": {
+   "0.5 mg q10 min": "Both the dose and the interval are wrong; this under-treats.",
+   "2 mg once": "A single 2 mg dose is not a recognized regimen. Epinephrine is given repeatedly during arrest.",
+   "5 mg q5 min": "Five milligrams is far above the recommended dose. High-dose epinephrine has not improved survival and may worsen outcome.",
+   "300 mg once": "300 mg is the amiodarone dose for refractory ventricular fibrillation, not the epinephrine dose."
+  },
+  "7": {
+   "1 breath every 3 sec": "That is roughly 20 breaths a minute, which risks hyperventilation, raised intrathoracic pressure and reduced venous return.",
+   "Stop ventilation": "Ventilation continues after an advanced airway is placed; only its coordination with compressions changes.",
+   "Pause compressions for breaths": "The point of an advanced airway is that compressions no longer pause. Interruptions reduce coronary perfusion pressure.",
+   "30:2 continues": "The 30:2 ratio applies before an advanced airway is in place. Afterwards, compressions become continuous."
+  },
+  "8": {
+   "Asystole": "Asystole would be accompanied by a fall in end-tidal carbon dioxide, not a rise.",
+   "Poor compressions": "Ineffective compressions lower end-tidal carbon dioxide, because less carbon dioxide is delivered to the lungs.",
+   "Hyperventilation": "Hyperventilation blows off carbon dioxide and lowers the end-tidal value.",
+   "Pulmonary embolism": "A large pulmonary embolism obstructs pulmonary flow and produces a persistently low end-tidal carbon dioxide."
+  },
+  "9": {
+   "40 mmHg": "A mean arterial pressure of 40 is frankly hypotensive and will not perfuse a brain recovering from arrest.",
+   "50 mmHg": "Still below the threshold associated with adequate post-arrest organ perfusion.",
+   "≥90 mmHg": "Higher than required, and pursuing it may mean unnecessary vasopressor exposure.",
+   "No target": "Post-arrest care is explicitly hemodynamically goal-directed. Hypotension after return of spontaneous circulation worsens neurological outcome."
+  },
+  "10": {
+   "Medications save more lives than compressions": "This inverts the evidence. Compressions and early defibrillation drive survival; no drug has shown a comparable benefit.",
+   "Serial troponin levels guide the CPR strategy": "Troponin has no role during resuscitation. It reflects myocardial injury after the event.",
+   "Obtain a head CT before starting compressions": "Imaging before compressions would be fatal. Nothing precedes CPR in a pulseless patient.",
+   "Defibrillate every rhythm including asystole": "Asystole and pulseless electrical activity are not shockable. Shocking them delays effective compressions."
+  }
+ },
+
+ "appendicitis": {
+  "1": {
+   "Ischemia": "Ischemia contributes to later wall necrosis and perforation, but it does not explain why pain moves from the periumbilical area to the right lower quadrant.",
+   "Ileal obstruction": "The obstruction is of the appendiceal lumen, not the ileum, and luminal obstruction alone does not account for the shift in location.",
+   "Nerve compression": "There is no compressive neuropathy here. The migration reflects which nerves are carrying the signal, not compression of them.",
+   "Bacterial invasion": "Bacterial invasion drives the inflammatory process, but the change in pain location is explained by the shift from visceral to parietal innervation."
+  },
+  "2": {
+   "Arterial embolism": "Arterial embolism causes mesenteric ischemia, a different and more catastrophic presentation.",
+   "Preceding viral gastroenteritis": "Lymphoid hyperplasia after a viral illness can obstruct the lumen, particularly in children, but it is not the commonest initiating event overall.",
+   "Volvulus of the cecum": "Cecal volvulus is a large-bowel obstruction, distinct from appendiceal luminal obstruction.",
+   "Mesenteric venous thrombosis": "Mesenteric venous thrombosis produces a subacute ischemic picture rather than appendicitis."
+  },
+  "3": {
+   "Obturator": "The obturator sign is pain on internal rotation of a flexed hip, suggesting a pelvic appendix.",
+   "Dunphy": "Dunphy's sign is increased pain on coughing, reflecting peritoneal irritation.",
+   "McBurney": "McBurney's point is an anatomical landmark of maximal tenderness, not a maneuver.",
+   "Psoas": "The psoas sign is pain on hip extension, suggesting a retrocecal appendix."
+  },
+  "4": {
+   "Plain abdominal radiograph": "A plain film is neither sensitive nor specific and rarely alters management.",
+   "MRI of the abdomen": "MRI is accurate but slower and less available. It is reserved for pregnancy, where radiation is the concern.",
+   "Barium contrast study": "Barium studies have no role and are contraindicated if perforation is suspected.",
+   "Urgent colonoscopy": "Colonoscopy does not assess the appendix and risks perforation in an acutely inflamed abdomen."
+  },
+  "5": {
+   "Diverticulitis": "Diverticulitis is assessed with CT, not ultrasound.",
+   "Constipation": "Constipation is a clinical diagnosis and does not call for first-line ultrasound.",
+   "Adults": "In adults, CT is preferred because body habitus limits ultrasound and CT accuracy is higher.",
+   "Elderly": "Older patients need CT, both for accuracy and because malignancy and diverticular disease enter the differential."
+  },
+  "6": {
+   "A mildly elevated white cell count": "A mild leukocytosis is expected in uncomplicated appendicitis and does not indicate perforation.",
+   "Constipation for the past two days": "Bowel habit change is nonspecific and does not signal perforation.",
+   "A normal appetite and hunger": "Preserved appetite argues against appendicitis altogether, let alone perforation.",
+   "Nausea without vomiting": "Nausea is common in uncomplicated appendicitis and carries no implication of perforation."
+  },
+  "7": {
+   "Observation with serial exams alone": "Observation may be appropriate while the diagnosis is uncertain, but it is not definitive treatment.",
+   "Delayed elective surgery in six weeks": "Delay risks perforation and abscess. Interval appendectomy applies only after a contained phlegmon has been managed nonoperatively.",
+   "Antibiotics alone without surgery": "Antibiotics alone succeed in selected uncomplicated cases but carry a substantial recurrence rate, so they are not the definitive treatment.",
+   "Interval imaging with a repeat CT in 72 hours": "Repeat imaging delays treatment and does not address the inflamed appendix."
+  },
+  "8": {
+   "Shock": "Shock indicates a systemic response requiring resuscitation and operative source control, not nonoperative management.",
+   "Perforated": "Perforation is an indication for operative or drainage-based management, not antibiotics alone.",
+   "Diffuse peritonitis": "Diffuse peritonitis mandates urgent operation.",
+   "Peritonitis": "Peritoneal signs indicate spread beyond the appendix and rule out a nonoperative approach."
+  },
+  "9": {
+   "Cholecystitis": "Cholecystitis is a separate biliary condition, not a consequence of delayed appendectomy.",
+   "AAA": "An abdominal aortic aneurysm is unrelated, although it belongs in the differential for abdominal pain.",
+   "Pancreatitis": "Pancreatitis is not a sequela of untreated appendicitis.",
+   "Ulcer": "Peptic ulcer disease is unrelated to appendiceal inflammation."
+  },
+  "10": {
+   "CT is always required before surgery": "A convincing clinical picture, particularly in a young man, can justify operating without imaging.",
+   "A normal appetite rules out appendicitis": "Preserved appetite makes appendicitis less likely but does not exclude it.",
+   "Migratory pain is unimportant to the diagnosis": "Migration from periumbilical to right lower quadrant is one of the most useful features in the history.",
+   "The white cell count is always elevated": "A normal white cell count occurs, especially early, and does not exclude the diagnosis."
+  }
+ }
+}

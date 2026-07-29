@@ -1,0 +1,127 @@
+{
+ "cirrhosis": {
+  "1": {
+   "Fatigue and malaise": "Fatigue is common in compensated cirrhosis and is not a decompensating event.",
+   "Mild thrombocytopenia": "Thrombocytopenia reflects splenic sequestration and reduced thrombopoietin. It is a marker of portal hypertension, not decompensation.",
+   "Spider angiomas on the chest": "Spider angiomas are a cutaneous stigma of chronic liver disease and can be present while fully compensated.",
+   "A mildly elevated AST": "Transaminases reflect ongoing injury and are often only mildly raised, or even normal, in established cirrhosis."
+  },
+  "2": {
+   "Portal vein thrombosis alone": "Portal vein thrombosis causes prehepatic portal hypertension. It can complicate cirrhosis but is not the primary mechanism.",
+   "Renal vasoconstriction": "Renal vasoconstriction is a consequence of the splanchnic vasodilation seen in advanced disease, and underlies hepatorenal syndrome.",
+   "Splenic stenosis": "Splenic stenosis is not a recognized entity. Splenomegaly is a result of portal hypertension, not its cause.",
+   "Increased cardiac output": "The hyperdynamic circulation contributes to sustaining portal pressure, but the initiating lesion is fibrotic resistance within the liver."
+  },
+  "3": {
+   "ERCP": "ERCP is a therapeutic biliary procedure with real complication risk, not an initial imaging test for cirrhosis.",
+   "MRI": "MRI characterizes focal lesions well but is slower and costlier than ultrasound for first assessment.",
+   "CT": "CT is useful for complications and lesion characterization but involves radiation and contrast, and is not the first step.",
+   "PET": "PET has no role in the initial assessment of cirrhosis."
+  },
+  "4": {
+   "Pancreatic ascites": "Pancreatic ascites gives a low gradient, reflecting an exudative process rather than portal hypertension.",
+   "Cancer": "Peritoneal carcinomatosis produces a LOW serum-ascites albumin gradient, below 1.1.",
+   "Nephrotic syndrome": "Nephrotic ascites results from hypoalbuminemia and gives a low gradient.",
+   "TB": "Tuberculous peritonitis is an exudative process with a low gradient."
+  },
+  "5": {
+   "1 stool": "One stool a day is generally insufficient to clear the nitrogenous load driving encephalopathy.",
+   "5 stools": "Five or more risks dehydration and electrolyte disturbance, which can themselves precipitate encephalopathy.",
+   "No stools": "Withholding stool defeats the entire mechanism, which depends on catharsis to remove ammonia.",
+   "Weekly": "Weekly dosing is far too infrequent for a therapy that works by regular catharsis."
+  },
+  "6": {
+   "Acetazolamide": "Acetazolamide is a weak diuretic that causes metabolic acidosis, which can worsen encephalopathy.",
+   "Mannitol": "Mannitol is an osmotic agent used for raised intracranial pressure, not for ascites.",
+   "HCTZ": "Thiazides are not effective for the ascites of portal hypertension and risk hyponatremia.",
+   "Bumetanide": "Bumetanide is a loop diuretic and can be used, but the first-line combination is built on an aldosterone antagonist, since hyperaldosteronism drives the sodium retention."
+  },
+  "7": {
+   "50": "Fifty polymorphonuclear cells per cubic millimetre is below the diagnostic threshold.",
+   "100": "One hundred is still below the accepted cut-off.",
+   "500": "Five hundred exceeds the threshold, so using it as the definition would miss patients who need treatment.",
+   "1000": "A thousand would delay diagnosis and treatment in a condition where mortality rises sharply with delay."
+  },
+  "8": {
+   "BISAP": "BISAP scores severity in acute pancreatitis.",
+   "SOFA": "The SOFA score quantifies organ dysfunction in critical illness generally.",
+   "APACHE": "APACHE is a general intensive care severity-of-illness score.",
+   "Child-Pugh": "Child-Pugh stratifies prognosis in cirrhosis and remains useful, but organ allocation and waitlist priority use MELD-Na."
+  },
+  "9": {
+   "Babinski": "The Babinski sign is an upper motor neuron finding.",
+   "Homans": "Homans' sign relates to deep vein thrombosis.",
+   "Murphy": "Murphy's sign indicates acute cholecystitis.",
+   "Cullen": "Cullen's sign is periumbilical bruising, seen in hemorrhagic pancreatitis."
+  },
+  "10": {
+   "MRI once a year": "Annual MRI is both too infrequent for surveillance and unnecessarily expensive as a first-line modality.",
+   "PET-CT annually": "PET has no established role in hepatocellular carcinoma surveillance.",
+   "No surveillance": "Cirrhosis carries a substantial annual risk of hepatocellular carcinoma, and surveillance detects tumours at a curable stage.",
+   "CT once a year": "Annual CT is too infrequent and carries a cumulative radiation burden without added benefit."
+  }
+ },
+
+ "pancreatitis": {
+  "1": {
+   "Fever plus leukocytosis on presentation": "Fever and leukocytosis are nonspecific inflammatory findings and appear in no diagnostic criterion.",
+   "Positive blood cultures for enteric organisms": "Bacteremia indicates an infective complication, not the diagnosis itself.",
+   "An elevated serum lipase alone, at any level": "Two of three criteria are required, and the enzyme threshold is three times the upper limit, not any elevation.",
+   "Characteristic cross-sectional imaging alone": "Imaging is one of the three criteria, but a single criterion is not sufficient."
+  },
+  "2": {
+   "Bilirubin": "Bilirubin may indicate a biliary cause but does not diagnose pancreatitis.",
+   "CRP": "C-reactive protein is used to gauge severity at 48 hours, not to make the diagnosis.",
+   "LDH": "Lactate dehydrogenase is a nonspecific marker included in older severity scores.",
+   "AST": "AST reflects hepatocellular injury and can point to a gallstone cause, but it is not the diagnostic test."
+  },
+  "3": {
+   "D5W": "Dextrose in water provides free water without the electrolytes or volume expansion needed.",
+   "Half-normal saline": "Hypotonic fluid is a poor volume expander and risks hyponatremia.",
+   "Hypertonic saline": "Hypertonic saline is for symptomatic hyponatremia or raised intracranial pressure, not for pancreatitis resuscitation.",
+   "Albumin": "Colloid offers no advantage here and is considerably more expensive."
+  },
+  "4": {
+   "Trauma and ERCP": "Both cause pancreatitis but are far less frequent than the leading two.",
+   "Autoimmune disease and steroids": "Autoimmune pancreatitis is uncommon, and steroids are a rare drug cause.",
+   "Hypercalcemia and mumps": "Both are recognized but rare causes.",
+   "Scorpion sting and drugs": "Scorpion venom is a classic examination answer but vanishingly rare in practice."
+  },
+  "5": {
+   "Immediately": "Imaging on arrival underestimates necrosis, because necrosis takes time to declare itself radiologically.",
+   "6 hours": "Still far too early for necrosis to be visible.",
+   "24 hours": "Necrosis is frequently not yet apparent at 24 hours, so a scan then can falsely reassure.",
+   "After 2 weeks": "Waiting a fortnight delays recognition of complications that need intervention."
+  },
+  "6": {
+   "Recommended for all necrosis": "Prophylaxis in sterile necrosis has not improved outcomes and promotes resistance and fungal infection.",
+   "Only before surgery": "Perioperative prophylaxis is a separate question from managing sterile necrosis.",
+   "Always indicated": "Routine prophylaxis is specifically discouraged in current guidance.",
+   "Only in ICU": "Severity of illness does not convert sterile necrosis into an indication for prophylaxis."
+  },
+  "7": {
+   "Hypocalcemia on admission labs": "Hypocalcemia reflects fat saponification and appears in severity scores, but it does not define severe disease.",
+   "Fever above 38.5 degrees C": "Fever is common in the inflammatory response and is not a defining criterion.",
+   "A serum lipase above 1000 U/L": "Enzyme magnitude does not correlate with severity. A very high lipase can accompany mild disease.",
+   "Pancreatic necrosis seen on CT": "Necrosis defines MODERATELY severe disease when organ failure is transient or absent. Persistent organ failure is what defines severe."
+  },
+  "8": {
+   "Clear liquids for 2 weeks": "Two weeks of clear fluids provides inadequate nutrition and prolongs recovery.",
+   "IV dextrose only": "Dextrose alone supplies calories without protein or micronutrients.",
+   "TPN immediately": "Parenteral nutrition carries line infection and metabolic risk, and enteral feeding preserves gut barrier function better.",
+   "Prolonged NPO": "Prolonged fasting was traditional teaching but worsens outcomes by promoting mucosal atrophy and bacterial translocation."
+  },
+  "9": {
+   "McBurney and Obturator": "Both are appendicitis signs.",
+   "Kernig and Brudzinski": "Both indicate meningeal irritation.",
+   "Murphy and Rovsing": "Murphy's sign indicates cholecystitis and Rovsing's appendicitis.",
+   "Chvostek and Trousseau": "Both indicate hypocalcemia, which can accompany pancreatitis but are not signs of hemorrhage."
+  },
+  "10": {
+   "Observation": "Observation in the presence of cholangitis risks progression to sepsis and death.",
+   "MRI only": "MRCP defines anatomy but does not relieve the obstruction, which is what cholangitis demands.",
+   "Colonoscopy": "Colonoscopy examines the large bowel and has no role here.",
+   "Immediate surgery": "Cholecystectomy is needed eventually, but the urgent requirement is biliary decompression, which ERCP achieves less invasively."
+  }
+ }
+}

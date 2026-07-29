@@ -1,0 +1,127 @@
+{
+ "hyperparathyroid": {
+  "1": {
+   "Secondary hyperparathyroidism": "In secondary disease the PTH rises in response to a LOW or normal calcium, most often from renal failure or vitamin D deficiency. Calcium is not elevated.",
+   "Vitamin D deficiency": "Vitamin D deficiency lowers calcium and raises PTH appropriately.",
+   "Hypoparathyroidism": "Hypoparathyroidism produces low calcium with a low PTH, the reverse of this picture.",
+   "FHH": "Familial hypocalciuric hypercalcemia gives the same calcium and PTH pattern, which is exactly why it must be excluded. The discriminator is the urine calcium: it is LOW in FHH and high here."
+  },
+  "2": {
+   "MEN2A": "MEN2A can include hyperparathyroidism, but hereditary syndromes account for only a small minority of cases.",
+   "CKD": "Chronic kidney disease causes SECONDARY and then tertiary hyperparathyroidism, not primary.",
+   "Vitamin D deficiency": "Vitamin D deficiency drives secondary hyperparathyroidism.",
+   "Carcinoma": "Parathyroid carcinoma is rare, accounting for well under one percent of cases."
+  },
+  "3": {
+   "Serum adrenocorticotropic hormone level": "ACTH assesses the pituitary-adrenal axis and has no bearing on calcium handling.",
+   "Serum high-sensitivity troponin": "Troponin assesses myocardial injury.",
+   "Serum thyroid-stimulating hormone": "TSH assesses thyroid function, not calcium excretion.",
+   "MRI of the neck and mediastinum": "Imaging may localize an adenoma but cannot distinguish primary hyperparathyroidism from FHH, since both can show normal glands."
+  },
+  "4": {
+   "Cinacalcet": "Cinacalcet lowers PTH but works over days and is used for chronic control, not acute rescue.",
+   "Vitamin D": "Vitamin D raises calcium and would worsen the situation.",
+   "Alendronate": "Oral bisphosphonates act far too slowly. Intravenous bisphosphonates take two to four days even when given parenterally.",
+   "Thiazide": "Thiazides reduce urinary calcium excretion and raise serum calcium, which is precisely wrong here."
+  },
+  "5": {
+   "Long QT": "A long QT is associated with HYPOcalcemia.",
+   "Delta wave": "A delta wave indicates ventricular pre-excitation in Wolff-Parkinson-White syndrome.",
+   "ST elevation": "ST elevation indicates myocardial injury, though severe hypercalcemia can occasionally mimic it.",
+   "AF": "Atrial fibrillation is not the characteristic ECG change of hypercalcemia."
+  },
+  "6": {
+   "Calcaneus": "The calcaneus is used for screening ultrasound densitometry but is not the site preferentially affected.",
+   "Skull": "The skull is not a standard densitometry site and is not preferentially lost.",
+   "Hip": "The hip has mixed cortical and trabecular bone and is affected, but less selectively.",
+   "Lumbar spine": "The lumbar spine is predominantly trabecular bone and is relatively preserved in primary hyperparathyroidism, which characteristically targets cortical bone."
+  },
+  "7": {
+   "Cinacalcet": "Cinacalcet is too slow for a crisis.",
+   "Dialysis": "Dialysis is reserved for refractory hypercalcemia or renal failure, not the first step.",
+   "Loop diuretic": "Loop diuretics were traditional teaching but are given only AFTER volume repletion; used first they worsen dehydration and raise calcium further.",
+   "Bisphosphonate": "Bisphosphonates are essential but take two to four days to act, so they follow rather than replace fluid resuscitation."
+  },
+  "8": {
+   "Bones": "Bone pain and osteitis fibrosa cystica are part of the mnemonic.",
+   "Groans": "Abdominal groans, meaning constipation, nausea and peptic symptoms, are part of it.",
+   "Psychiatric moans": "Depression, confusion and lethargy are part of it.",
+   "Stones": "Renal stones are part of it, and are among the commonest manifestations."
+  },
+  "9": {
+   "SIADH": "SIADH causes hyponatremia through water retention and has no relation to post-parathyroidectomy calcium.",
+   "TLS": "Tumour lysis syndrome follows cytotoxic therapy and causes hyperkalemia, hyperphosphatemia and hypocalcemia.",
+   "Addison crisis": "Adrenal crisis presents with hypotension, hyponatremia and hyperkalemia.",
+   "DKA": "Diabetic ketoacidosis is a hyperglycemic emergency unrelated to parathyroid surgery."
+  },
+  "10": {
+   "ASA": "Aspirin does not affect calcium handling.",
+   "Loops": "Loop diuretics increase calcium excretion and are used therapeutically in hypercalcemia, so they are not the class to avoid.",
+   "Metformin": "Metformin has no effect on calcium.",
+   "Insulin": "Insulin does not raise serum calcium."
+  }
+ },
+
+ "metabolic-syndrome": {
+  "1": {
+   "Hypertension plus dyslipidemia only": "Two components are insufficient; three of the five are required.",
+   "Diabetes mellitus alone": "Established diabetes is neither necessary nor sufficient. Impaired fasting glucose is one of five criteria.",
+   "Elevated fasting glucose plus obesity": "Again only two criteria, one short of the threshold.",
+   "Central obesity only": "Central obesity is the most characteristic single component but is not diagnostic on its own."
+  },
+  "2": {
+   "Cortisol deficiency": "Cortisol EXCESS, as in Cushing syndrome, produces a metabolic-syndrome-like picture. Deficiency does the opposite.",
+   "Autoimmune inflammation": "Low-grade inflammation accompanies the syndrome but is a consequence of adiposity rather than the central driver.",
+   "Hyperthyroidism": "Hyperthyroidism causes weight loss and increased metabolic rate, the opposite pattern.",
+   "Beta-cell destruction": "Beta-cell destruction is the mechanism of type 1 diabetes. Here beta cells initially compensate by hypersecreting insulin."
+  },
+  "3": {
+   "An elevated lipoprotein(a) level": "Lipoprotein(a) is a genetically determined atherogenic particle, not a component of the metabolic syndrome definition.",
+   "Low triglycerides with high HDL": "That is the favourable pattern, the reverse of what the syndrome produces.",
+   "An isolated elevated HDL": "High HDL is protective and is not part of the syndrome.",
+   "A low LDL cholesterol": "LDL is often near normal in the metabolic syndrome; the abnormality is small dense LDL particles alongside high triglycerides and low HDL."
+  },
+  "4": {
+   "Janeway lesions": "Janeway lesions are painless palmar macules of infective endocarditis.",
+   "Clubbing": "Clubbing suggests chronic hypoxemia, malignancy or endocarditis.",
+   "Splinter hemorrhages": "Splinter hemorrhages occur in endocarditis and trauma.",
+   "Xanthelasma": "Xanthelasma indicates hyperlipidemia generally rather than insulin resistance specifically."
+  },
+  "5": {
+   "Strict bed rest and calorie counting": "Bed rest worsens insulin resistance; physical activity is a core part of the benefit.",
+   "A high-protein diet with no exercise": "Macronutrient composition matters far less than weight loss combined with activity.",
+   "Daily multivitamin supplementation": "Supplements do not improve insulin sensitivity or any component of the syndrome.",
+   "Complete elimination of all carbohydrates": "Total carbohydrate elimination is neither necessary nor sustainable, and the evidence favours modest weight loss with exercise."
+  },
+  "6": {
+   "Thiazolidinediones such as pioglitazone": "Pioglitazone improves insulin sensitivity but causes weight GAIN and fluid retention.",
+   "Alpha-glucosidase inhibitors such as acarbose": "Acarbose has modest glycemic effect and poor tolerability, with little weight benefit.",
+   "Sulfonylureas such as glipizide": "Sulfonylureas cause weight gain and hypoglycemia.",
+   "DPP-4 inhibitors such as sitagliptin": "DPP-4 inhibitors are weight-neutral and have not shown cardiovascular benefit."
+  },
+  "7": {
+   "Multiple sclerosis": "Multiple sclerosis is a demyelinating disease with no metabolic association.",
+   "Myasthenia gravis": "Myasthenia gravis is an autoimmune neuromuscular junction disorder.",
+   "Ulcerative colitis": "Ulcerative colitis is an inflammatory bowel disease unrelated to insulin resistance.",
+   "Crohn disease": "Crohn disease likewise has no established association with the metabolic syndrome."
+  },
+  "8": {
+   "1.5x": "This substantially understates the risk.",
+   "2x": "Roughly two-fold is the figure for CARDIOVASCULAR disease, not for diabetes. Picking it usually means the two numbers have been swapped.",
+   "3x": "Published estimates range from about three- to five-fold depending on cohort and definition, but the module's figure is the higher end.",
+   "10x": "Ten-fold overstates the risk."
+  },
+  "9": {
+   "Random glucose": "A random glucose reflects a single moment and is heavily influenced by recent intake.",
+   "Insulin": "Insulin levels are not standardized for clinical monitoring and vary widely.",
+   "OGTT": "The oral glucose tolerance test is a diagnostic provocation test, not a measure of control over time.",
+   "Ketones": "Ketones indicate acute metabolic decompensation, not chronic glycemia."
+  },
+  "10": {
+   "Medicate everyone": "Lifestyle modification is the foundation; medication is added for specific risk factors rather than to everyone.",
+   "Focus only on glucose": "Glucose is one of five components. Ignoring blood pressure, lipids and waist circumference leaves most of the risk untreated.",
+   "Wait until diabetes develops": "The whole point of identifying the syndrome is to intervene before diabetes and cardiovascular disease appear.",
+   "Treat obesity only": "Weight loss helps every component, but hypertension and dyslipidemia often still need direct treatment."
+  }
+ }
+}

@@ -1,0 +1,129 @@
+{
+ "_note": "Per-option rationales keyed by exact option TEXT, never by position. Applied by scripts/add_rationales.py.",
+
+ "aortic-dissection": {
+  "1": {
+   "Adventitia": "The adventitia is the outermost layer and the last to give way. When it does, the result is free rupture rather than a dissection plane.",
+   "Media": "Blood tracks through the media to form the false lumen, but the media is not where the tear begins.",
+   "Endothelium only": "The endothelium is the single cell layer lining the intima; an isolated endothelial injury does not create a dissection plane.",
+   "Vasa vasorum": "Rupture of the vasa vasorum is implicated in intramural hematoma, which is a related but distinct entity from a primary intimal tear."
+  },
+  "2": {
+   "Rutherford": "Rutherford grades acute and chronic limb ischemia in peripheral arterial disease.",
+   "CEAP": "CEAP classifies chronic venous disease by clinical, etiologic, anatomic and pathophysiologic features.",
+   "Fontaine": "Fontaine stages claudication severity in peripheral arterial disease.",
+   "Wells": "The Wells score estimates pretest probability of deep vein thrombosis or pulmonary embolism."
+  },
+  "3": {
+   "Low-grade fever developing over days": "A subacute febrile course suggests an infectious or inflammatory aortitis. The defining feature of dissection is abruptness.",
+   "Progressive abdominal bloating after meals": "Postprandial bloating is a gastrointestinal complaint. Dissection pain is sudden and maximal at onset.",
+   "Gradually worsening unilateral calf pain": "Gradual unilateral calf pain suggests deep vein thrombosis rather than an aortic event.",
+   "A chronic dry cough for several weeks": "A weeks-long cough is a chronic respiratory symptom and does not describe the sudden onset that characterizes dissection."
+  },
+  "4": {
+   "Plain CT": "A noncontrast study cannot opacify the lumen, so it will not show the intimal flap or separate true from false lumen.",
+   "MRI brain": "Brain imaging addresses a neurological complication, not the aorta itself.",
+   "Chest X-ray": "A chest film may hint at a widened mediastinum but can neither confirm nor exclude dissection.",
+   "Echocardiography only": "Transthoracic echo can suggest root involvement and pericardial fluid, but it does not image the whole aorta. It is an adjunct, not the definitive study."
+  },
+  "5": {
+   "Give broad-spectrum antibiotics for suspected infectious aortitis": "Infectious aortitis is rare and is not the initial concern here. Antibiotics do nothing for a propagating tear.",
+   "Begin systemic thrombolysis to dissolve the intimal thrombus": "Thrombolysis is actively dangerous: it extends the dissection and worsens bleeding. This is the classic harm when dissection is mistaken for myocardial infarction.",
+   "Transfuse packed red cells to correct anemia before imaging": "Transfusion does not address the shear stress driving propagation, and delaying imaging delays the diagnosis.",
+   "Increase the heart rate to maintain distal organ perfusion": "Raising the heart rate increases dP/dt and shear stress, which is precisely what propagates the dissection."
+  },
+  "6": {
+   "Psoriasis": "Psoriasis is an inflammatory skin disease. It carries general cardiovascular risk but no specific association with thoracic aortic aneurysm.",
+   "Multiple sclerosis": "Multiple sclerosis is a demyelinating disease of the central nervous system with no aortic involvement.",
+   "Cystic fibrosis": "Cystic fibrosis affects chloride transport in the lungs, pancreas and gut, not the aortic media.",
+   "Crohn disease": "Crohn disease is a transmural inflammatory bowel disease and does not cause medial degeneration of the aorta."
+  },
+  "7": {
+   "Bilateral carpal tunnel syndrome": "Carpal tunnel syndrome is a median nerve entrapment, unrelated to the aortic root.",
+   "Splenomegaly on abdominal exam": "An enlarged spleen points to hematological, infectious or portal causes rather than aortic root dilatation.",
+   "Digital clubbing of the fingers": "Clubbing develops over months in chronic hypoxemia, malignancy or endocarditis, not during an acute dissection.",
+   "Diffuse expiratory wheezing": "Wheeze reflects lower airway obstruction, not aortic valve incompetence."
+  },
+  "8": {
+   "Diverticulitis": "Diverticulitis is colonic inflammation. It may coexist but is not a complication of an aneurysm.",
+   "Venous thrombosis": "Venous thrombosis is a separate process; an aneurysm is an arterial problem.",
+   "Appendicitis": "Appendicitis is unrelated to aortic dilatation, though it can mimic the abdominal pain.",
+   "Pancreatitis": "Pancreatitis can present with epigastric or back pain and is a mimic, but it is not a consequence of aneurysmal growth."
+  },
+  "9": {
+   "Physical therapy": "Physical therapy has no role in an acutely dissecting ascending aorta.",
+   "Long-term antibiotics": "Antibiotics treat infection, not a mechanical tear.",
+   "Aspirin": "Antiplatelet therapy risks bleeding into the false lumen and does nothing to repair the tear.",
+   "Observation": "Observation is the strategy for uncomplicated Type B dissection. In Type A the risks of rupture, tamponade and coronary involvement demand surgery."
+  },
+  "10": {
+   "High-intensity resistance exercise training": "Heavy resistance work produces blood pressure spikes that raise aortic wall stress, and is specifically discouraged.",
+   "Routine long-term prophylactic antibiotics": "There is no infectious indication for ongoing antibiotics after aortic repair.",
+   "Daily low-dose aspirin as sole therapy": "Aspirin neither controls blood pressure nor detects progression, so it cannot substitute for surveillance.",
+   "Prolonged bed rest to limit aortic wall stress": "Prolonged bed rest brings deconditioning and thromboembolic risk without protecting the aorta."
+  }
+ },
+
+ "dvt": {
+  "1": {
+   "Small saphenous vein only": "The small saphenous vein is superficial. Thrombosis there is superficial venous thrombosis, not DVT.",
+   "Dorsal venous arch": "The dorsal venous arch is a superficial network in the foot and is not a deep vein.",
+   "Great saphenous vein only": "The great saphenous vein is superficial, so involvement alone does not constitute DVT.",
+   "Posterior tibial and peroneal veins only": "These are deep calf veins and can thrombose, but isolated distal calf DVT carries a much lower embolic risk than the proximal veins the question asks about."
+  },
+  "2": {
+   "Platelet dysfunction, anemia, and dehydration": "None of these three is a component of the triad, although dehydration can contribute to stasis.",
+   "Trauma, edema, and hypoxia": "Trauma acts through endothelial injury, but edema and hypoxia are not elements of the triad.",
+   "Infection, vasospasm, and hypertension": "These are inflammatory and arterial processes. The triad describes venous thrombogenesis.",
+   "Smoking, obesity, and diabetes": "These are risk factors that act through the triad rather than the mechanisms themselves."
+  },
+  "3": {
+   "Severe abdominal pain": "Abdominal pain points elsewhere. A lower-extremity DVT presents in the limb.",
+   "Hemoptysis without leg symptoms": "Hemoptysis suggests pulmonary embolism, which is a complication of DVT rather than its presenting feature.",
+   "Bilateral calf paralysis": "Paralysis is a neurological sign and is not caused by venous thrombosis.",
+   "Sudden painless foot drop": "Foot drop reflects peroneal nerve or lumbar root pathology, not venous obstruction."
+  },
+  "4": {
+   "Bilateral absent pedal pulses": "Absent pulses indicate arterial disease. DVT does not abolish pulses.",
+   "Generalized edema": "Generalized edema suggests cardiac, hepatic or renal causes. DVT edema is unilateral.",
+   "Cyanosis of both feet": "Bilateral cyanosis points to a central or arterial cause rather than unilateral venous obstruction.",
+   "Positive Babinski sign": "The Babinski sign is an upper motor neuron finding with no venous significance."
+  },
+  "5": {
+   "CT angiography": "CT angiography is used for pulmonary embolism, and for pelvic or caval veins in selected cases, but not as the first test for a leg DVT.",
+   "Venography": "Contrast venography is the historical gold standard but is invasive and has been displaced by ultrasound.",
+   "Plain radiography": "A plain film cannot visualize venous thrombus.",
+   "MRI": "MRI can image veins but is slower and costlier, and is reserved for problem cases such as pelvic or caval thrombus."
+  },
+  "6": {
+   "Smooth muscle bundles": "Smooth muscle is a component of the vessel wall, not of thrombus.",
+   "Cholesterol crystals": "Cholesterol clefts belong to atherosclerotic plaque, which is an arterial lesion.",
+   "Calcified plaque": "Calcification is a feature of chronic arterial disease, not of acute venous clot.",
+   "Neutrophilic abscess": "A neutrophil-rich abscess indicates infection such as septic thrombophlebitis, rather than bland venous thrombus."
+  },
+  "7": {
+   "Peripheral neuropathy": "Neuropathy is not a consequence of venous thrombosis.",
+   "Osteomyelitis": "Bone infection is unrelated to DVT.",
+   "Cellulitis": "Cellulitis is a differential diagnosis for a red swollen leg, not a complication of DVT.",
+   "Chronic venous insufficiency": "Post-thrombotic syndrome is a genuine long-term complication, but it is disabling rather than immediately life-threatening. The question asks for the most serious."
+  },
+  "8": {
+   "Systemic corticosteroids": "Corticosteroids have no antithrombotic action.",
+   "Low-dose aspirin alone": "Aspirin is a weak antithrombotic in venous disease and is inadequate as sole treatment for acute DVT.",
+   "Beta-blockers such as metoprolol": "Beta-blockade affects heart rate and blood pressure, not coagulation.",
+   "High-intensity statin therapy": "Statins modestly reduce the risk of venous thromboembolism but do not treat established thrombus."
+  },
+  "9": {
+   "A healthy teenager playing school sports": "Youth and activity are protective. There is no stasis, endothelial injury or hypercoagulability here.",
+   "A marathon runner training six days a week": "Regular vigorous exercise promotes venous return rather than stasis.",
+   "An adult with mild seasonal allergic rhinitis": "Allergic rhinitis carries no thrombotic risk.",
+   "An adult with well-controlled hypothyroidism": "Treated hypothyroidism is not an established risk factor for venous thromboembolism."
+  },
+  "10": {
+   "Compression stockings alone are sufficient.": "Stockings help post-thrombotic symptoms but neither treat thrombus nor prevent embolism.",
+   "DVT always resolves without treatment.": "Untreated DVT can propagate and embolize. This is the dangerous misconception the question tests.",
+   "Antibiotics are first-line therapy.": "DVT is a thrombotic condition, not an infectious one.",
+   "All patients require surgery.": "Thrombolysis or thrombectomy is reserved for limb-threatening iliofemoral thrombosis. Most patients are managed medically."
+  }
+ }
+}

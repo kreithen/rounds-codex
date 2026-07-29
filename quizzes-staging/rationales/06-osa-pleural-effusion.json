@@ -1,0 +1,127 @@
+{
+ "osa": {
+  "1": {
+   "Sinus bradycardia during the apneic episode": "Bradycardia occurs in both obstructive and central apnea, so it cannot separate them.",
+   "Sustained hyperventilation throughout the night": "Sustained hyperventilation is not a feature of either. Periodic hyperventilation alternating with apnea suggests a central pattern.",
+   "Hemoptysis on waking in the morning": "Hemoptysis is a respiratory red flag unrelated to sleep-disordered breathing.",
+   "Complete absence of snoring in all patients": "Snoring is common in obstructive apnea, and its absence in every patient is simply untrue."
+  },
+  "2": {
+   "APGAR": "APGAR scores newborn condition immediately after birth.",
+   "CHA2DS2-VASc": "CHA2DS2-VASc estimates stroke risk in atrial fibrillation.",
+   "Wells": "The Wells score estimates pretest probability of venous thromboembolism.",
+   "CURB-65": "CURB-65 assesses severity in community-acquired pneumonia."
+  },
+  "3": {
+   "Chest X-ray": "A chest film cannot assess breathing during sleep.",
+   "ECG": "An ECG records cardiac electrical activity, not respiratory events.",
+   "Chest CT": "CT images structure and cannot measure apneas or hypopneas.",
+   "MRI": "MRI may show upper airway anatomy but does not quantify sleep-disordered breathing."
+  },
+  "4": {
+   "<5": "An index below 5 is within normal limits and does not define apnea at all.",
+   "15 to <30": "That band defines MODERATE disease.",
+   ">=30": "Thirty or more defines SEVERE disease.",
+   ">50": "Above 50 is severe disease, well beyond the mild range."
+  },
+  "5": {
+   "Antibiotics": "There is no infection to treat; obstructive apnea is a mechanical problem.",
+   "Surgery": "Surgical options exist for selected anatomy or for positive-pressure intolerance, but they are not first-line.",
+   "Oxygen": "Oxygen may raise saturation but does not relieve the obstruction, and can prolong apneas.",
+   "Steroids": "Corticosteroids have no role except where a specific inflammatory upper airway condition coexists."
+  },
+  "6": {
+   "Adults with COPD-OSA overlap syndrome": "Significant cardiopulmonary comorbidity reduces home-test accuracy and calls for laboratory study.",
+   "Patients with decompensated heart failure": "Heart failure raises the likelihood of central events, which a home test may miss or misclassify.",
+   "Patients with significant neuromuscular disease": "Neuromuscular disease brings hypoventilation that home testing is not designed to characterize.",
+   "All patients regardless of comorbidity": "Home testing is explicitly restricted to uncomplicated patients, so applying it universally would misclassify the very patients most at risk."
+  },
+  "7": {
+   "Metformin": "Metformin has no effect on upper airway tone, and any weight benefit would help rather than harm.",
+   "Acetaminophen": "Acetaminophen is not a sedative and does not affect airway muscle tone.",
+   "Vitamin D": "Vitamin D has no bearing on upper airway collapsibility.",
+   "Penicillin": "Antibiotics do not affect airway tone."
+  },
+  "8": {
+   "First-line": "Positive airway pressure is first-line. Oxygen does not address the obstruction.",
+   "Preferred over CPAP": "Oxygen is not preferred; it may raise saturation while apneas and arousals continue unchecked.",
+   "Recommended for all": "Oxygen is used selectively for persistent desaturation despite adequate positive pressure.",
+   "Curative": "Nothing about oxygen is curative here; it treats a consequence, not the mechanism."
+  },
+  "9": {
+   "Bronchoscopy": "Bronchoscopy examines the lower airways and is not a treatment for obstructive apnea.",
+   "Dialysis": "Dialysis treats renal failure. Fluid shifts can influence apnea severity, but it is not a treatment for it.",
+   "ECMO": "Extracorporeal support is for refractory cardiorespiratory failure, not sleep apnea.",
+   "Lobectomy": "Removing lung tissue does nothing for an upper airway obstruction."
+  },
+  "10": {
+   "Peptic ulcer": "There is no established association between untreated apnea and peptic ulcer disease.",
+   "Hyperthyroidism": "It is HYPOthyroidism that is associated with obstructive apnea, and as a cause rather than a consequence.",
+   "Kidney stones": "No established association.",
+   "Appendicitis": "No relationship to sleep-disordered breathing."
+  }
+ },
+
+ "pleural-effusion": {
+  "1": {
+   "MRI": "MRI can characterize pleural disease but does not obtain fluid for analysis, which is what an unexplained effusion needs.",
+   "Spirometry": "Spirometry may show a restrictive pattern but tells you nothing about the nature of the fluid.",
+   "Echocardiography": "Echo helps when heart failure is suspected, but it does not establish the cause of an unexplained effusion.",
+   "Bronchoscopy": "Bronchoscopy examines the airways, not the pleural space."
+  },
+  "2": {
+   "Detect pneumothorax": "Pneumothorax is diagnosed on imaging, not by fluid chemistry.",
+   "Measure pleural pressure": "Pleural pressure is measured by manometry during drainage, not by Light's criteria.",
+   "Assess oxygenation": "Oxygenation is assessed by blood gas or pulse oximetry.",
+   "Diagnose empyema": "Empyema is identified by frank pus, positive culture, or pleural fluid pH and glucose. Light's criteria only separate transudate from exudate."
+  },
+  "3": {
+   "PET": "PET is a metabolic imaging study and cannot guide a bedside procedure.",
+   "Fluoroscopy": "Fluoroscopy adds radiation and shows fluid less reliably than ultrasound.",
+   "CT angiography": "CT angiography assesses the pulmonary vasculature and cannot guide a needle in real time.",
+   "MRI": "MRI is impractical for real-time procedural guidance."
+  },
+  "4": {
+   "Empyema": "Empyema fluid is frank pus, turbid and foul rather than milky.",
+   "Hemothorax": "Hemothorax fluid is bloody, not milky.",
+   "CHF": "Heart failure produces clear, straw-coloured transudate.",
+   "TB": "Tuberculous effusion is a clear, lymphocyte-rich exudate."
+  },
+  "5": {
+   "Hyperresonance": "Hyperresonance indicates air, as in pneumothorax, and is the opposite of what fluid produces.",
+   "Wheezing": "Wheeze reflects airway narrowing rather than pleural fluid.",
+   "Stridor": "Stridor indicates upper airway obstruction.",
+   "Crackles only": "Crackles suggest alveolar disease such as pneumonia or pulmonary edema."
+  },
+  "6": {
+   "Malignancy": "Malignancy is the commonest EXUDATIVE cause.",
+   "TB": "Tuberculosis produces an exudate and is uncommon as a cause of transudate.",
+   "Pancreatitis": "Pancreatitis causes an exudative effusion, typically left-sided with high amylase.",
+   "Pneumonia": "Parapneumonic effusion is exudative."
+  },
+  "7": {
+   "Steroids": "Corticosteroids do not clear infected pleural fluid and may impair the response to infection.",
+   "Bronchodilators": "Bronchodilators act on airway smooth muscle and have no effect on the pleural space.",
+   "Anticoagulation": "Anticoagulation has no role and adds bleeding risk around drainage.",
+   "Observation": "Observation allows loculation and fibrosis. Infected pleural fluid must be drained."
+  },
+  "8": {
+   "Asthma": "Asthma is an airway disease and does not produce effusions.",
+   "Small CHF effusions": "Heart failure effusions respond to treating the heart failure; obliterating the pleural space is unnecessary and inappropriate.",
+   "Viral pleuritis": "Viral pleuritis is self-limiting.",
+   "COPD": "COPD does not characteristically cause recurrent effusions."
+  },
+  "9": {
+   "Cirrhosis": "Hepatic hydrothorax is a clear transudate.",
+   "Nephrotic syndrome": "Nephrotic effusions are clear transudates from hypoalbuminemia.",
+   "Chylothorax": "Chylous fluid is milky white from triglycerides, not bloody.",
+   "CHF": "Heart failure produces clear straw-coloured fluid."
+  },
+  "10": {
+   "Surgery for all": "Most effusions never require surgery; it is reserved for empyema that fails drainage or for recurrent malignant effusions.",
+   "Steroids": "Steroids have no general role in managing pleural effusion.",
+   "Antibiotics for all": "Antibiotics are indicated only when the effusion is infective.",
+   "Drain all effusions": "Small asymptomatic effusions often need no drainage, and drainage alone does not address why the fluid formed."
+  }
+ }
+}

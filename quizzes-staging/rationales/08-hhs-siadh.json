@@ -1,0 +1,127 @@
+{
+ "hhs": {
+  "1": {
+   "Normal glucose with acidosis": "Marked hyperglycemia is the defining feature. Acidosis with a normal glucose points elsewhere entirely.",
+   "Glucose >250 mg/dL with marked ketones and pH <7.30": "That is diabetic ketoacidosis. The distinction from HHS is the presence of significant ketosis and acidemia.",
+   "Glucose <200 mg/dL with normal osmolality": "These are essentially normal values and exclude the diagnosis.",
+   "Isolated elevated ketones": "Isolated ketosis without hyperglycemia suggests starvation or alcoholic ketosis."
+  },
+  "2": {
+   "Urgent hemodialysis": "Dialysis is reserved for refractory renal failure or severe electrolyte derangement, not the first step.",
+   "An IV dextrose bolus": "Giving dextrose to a patient with a glucose above 600 would worsen the osmolar problem.",
+   "An IV insulin infusion first": "Insulin before volume repletion drives glucose and water intracellularly, which can precipitate circulatory collapse in a profoundly depleted patient.",
+   "IV sodium bicarbonate": "There is little or no acidosis to correct in HHS, and bicarbonate risks hypokalemia and sodium loading."
+  },
+  "3": {
+   "HbA1c": "The HbA1c reflects glycemic control over months and has no relation to acute mental status.",
+   "Lactate": "Lactate may rise with hypoperfusion but is not what tracks conscious level here.",
+   "Glucose": "Glucose contributes, but it is the resulting osmolality that determines cerebral water shift, and glucose is only one contributor to it.",
+   "Potassium": "Potassium abnormalities cause weakness and arrhythmia rather than the graded obtundation of HHS."
+  },
+  "4": {
+   "Children under ten years old": "Children with new diabetes present far more often with ketoacidosis.",
+   "Endurance athletes after exertion": "Exertion is not a risk factor. HHS develops over days in a patient unable to maintain fluid intake.",
+   "Young adults with type 1 diabetes": "Type 1 diabetes characteristically produces ketoacidosis, because insulin deficiency is absolute.",
+   "Pregnancy with gestational diabetes": "Gestational diabetes does not typically produce the profound dehydration and hyperosmolality of HHS."
+  },
+  "5": {
+   "Moderate": "Residual insulin in type 2 diabetes suppresses lipolysis enough to prevent significant ketogenesis.",
+   "Always positive": "Ketones are characteristically minimal, which is what separates HHS from ketoacidosis.",
+   "Severe": "Severe ketosis defines ketoacidosis, not HHS.",
+   "Markedly elevated": "A markedly raised ketone level should prompt reconsideration toward ketoacidosis or a mixed picture."
+  },
+  "6": {
+   "The HbA1c result returns": "The HbA1c is irrelevant to acute management and does not gate insulin.",
+   "Any fever has resolved": "Infection is often the precipitant and is treated in parallel; insulin is not withheld for fever.",
+   "The troponin is normal": "Troponin may be checked if ischemia is suspected, but it does not determine insulin timing.",
+   "A head CT is completed": "Imaging may be needed for altered mentation but does not gate insulin therapy."
+  },
+  "7": {
+   "Fracture": "A fracture can be a stressor but is far less commonly the trigger.",
+   "Appendicitis": "Any acute illness can precipitate HHS, but appendicitis is not a leading cause.",
+   "Migraine": "Migraine is not a precipitant.",
+   "Asthma": "Asthma exacerbation is not among the common precipitants."
+  },
+  "8": {
+   "1-2 L": "One to two litres substantially underestimates the deficit and would leave the patient profoundly under-resuscitated.",
+   "3-4 L": "Still well below the typical deficit in HHS.",
+   ">20 L": "Over twenty litres is implausible and would exceed total body water in many patients.",
+   "None": "There is always a large deficit; the osmotic diuresis that produces HHS is precisely what causes it."
+  },
+  "9": {
+   "DKA": "Ketoacidosis is a separate presentation, not a consequence of correcting HHS.",
+   "Hyperkalemia": "Potassium tends to FALL during treatment as insulin drives it intracellularly.",
+   "GI bleed": "Gastrointestinal bleeding is not a recognized consequence of rapid correction.",
+   "Hepatitis": "Hepatitis is unrelated to the rate of correction."
+  },
+  "10": {
+   "Wait a full 24 hours after resolution": "Waiting a fixed 24 hours without subcutaneous cover leaves a window with no effective insulin.",
+   "Stop the infusion abruptly": "Intravenous insulin has a half-life of minutes, so abrupt cessation without overlap allows rapid rebound hyperglycemia and ketosis.",
+   "Give a bicarbonate infusion first": "There is no significant acidosis in HHS to justify bicarbonate.",
+   "Wait until the HbA1c normalizes": "The HbA1c takes months to change and has no place in this decision."
+  }
+ },
+
+ "siadh": {
+  "1": {
+   "Hypernatremia with dilute urine and low urine sodium": "That describes a water-deficit state such as diabetes insipidus, the opposite of SIADH.",
+   "Hypervolemic hyponatremia with peripheral edema": "Hypervolemic hyponatremia occurs in heart failure, cirrhosis and nephrotic syndrome. SIADH is euvolemic.",
+   "Hypovolemic hyponatremia with dilute urine": "Hypovolemia with dilute urine suggests excess water intake or renal salt wasting, not SIADH.",
+   "Hypernatremia with a high serum osmolality": "SIADH produces a LOW serum osmolality from water retention."
+  },
+  "2": {
+   "Melanoma": "Melanoma is not a classic cause of ectopic antidiuretic hormone secretion.",
+   "Renal cell carcinoma": "Renal cell carcinoma produces other paraneoplastic syndromes, including erythropoietin and PTH-related peptide effects.",
+   "Pancreatic adenocarcinoma": "Pancreatic cancer is associated with hypercoagulability rather than ectopic antidiuretic hormone.",
+   "Colon cancer": "Colon cancer is not a recognized cause of ectopic antidiuretic hormone secretion."
+  },
+  "3": {
+   "D5W": "Dextrose in water is free water and would worsen the hyponatremia.",
+   "Normal saline": "Isotonic saline can paradoxically lower the sodium further in SIADH, because the kidney excretes the salt and retains the water.",
+   "Dialysis": "Dialysis is reserved for refractory cases with renal failure.",
+   "Hypertonic saline": "Hypertonic saline is for severe symptomatic hyponatremia, not for chronic mild-to-moderate disease."
+  },
+  "4": {
+   "ACE inhibitors": "ACE inhibitors act on the renin-angiotensin system, not on vasopressin receptors.",
+   "Loop diuretics": "Loop diuretics impair urinary concentration and are sometimes used as an adjunct, but they do not block the receptor.",
+   "Thiazides": "Thiazides CAUSE hyponatremia and are a common drug precipitant of a SIADH-like picture.",
+   "Beta blockers": "Beta blockers have no action at the vasopressin receptor."
+  },
+  "5": {
+   "Normal saline": "Isotonic saline corrects too slowly and can lower the sodium further in SIADH.",
+   "Salt tablets": "Oral sodium acts far too slowly for an actively seizing patient.",
+   "Fluid restriction": "Restriction is the chronic treatment and does nothing fast enough for a seizure.",
+   "Demeclocycline": "Demeclocycline takes days to induce nephrogenic resistance to antidiuretic hormone."
+  },
+  "6": {
+   "Glucose": "Glucose has no discriminating value between the two.",
+   "Uric acid": "Uric acid is low in both conditions, so it cannot separate them.",
+   "Urine sodium": "Urine sodium is high in both, which is exactly why it fails as a discriminator.",
+   "Osmolality": "Serum and urine osmolality overlap between the two conditions."
+  },
+  "7": {
+   "High uric acid with a high BUN": "That combination suggests volume depletion, which points away from SIADH.",
+   "High BUN with a normal uric acid": "A high BUN suggests reduced effective circulating volume rather than the dilution of SIADH.",
+   "High serum calcium and phosphate": "Calcium and phosphate are not part of the SIADH picture, and hypercalcemia is itself a separate cause of altered mentation.",
+   "High creatinine with a low eGFR": "Renal impairment is a competing cause of hyponatremia and must be excluded rather than being a supportive clue."
+  },
+  "8": {
+   "AKI": "Acute kidney injury is not a consequence of correcting sodium too quickly.",
+   "Pulmonary edema": "Pulmonary edema is a risk of volume overload, not of the rate of sodium correction.",
+   "Hyperkalemia": "Potassium is not driven up by rapid sodium correction.",
+   "Cerebral edema": "Cerebral edema results from correcting hyponatremia too SLOWLY or from lowering sodium further. Rapid correction causes the opposite injury, demyelination."
+  },
+  "9": {
+   "Asthma, pneumonia, tuberculosis, small-cell lung cancer": "These are pulmonary CAUSES of SIADH, not conditions excluded before diagnosing it.",
+   "Iron deficiency, folate deficiency, B12 deficiency, anemia": "None of these affects water handling or forms part of the diagnostic exclusions.",
+   "Type 1 diabetes, type 2 diabetes, prediabetes, obesity": "Hyperglycemia can cause a pseudohyponatremia that needs correcting for, but these are not the exclusions the diagnosis requires.",
+   "Nephrolithiasis, urinary infection, prostatic hyperplasia": "These are urological conditions and do not enter the diagnostic criteria."
+  },
+  "10": {
+   "Permanent fluid restriction": "Indefinite restriction manages the consequence rather than the cause, and is poorly tolerated long term.",
+   "Long-term hemodialysis": "Dialysis is a rescue measure for refractory cases, not definitive treatment.",
+   "Continuous IV normal saline": "Isotonic saline can worsen the hyponatremia in SIADH and is not a long-term strategy.",
+   "Lifelong hypertonic saline": "Hypertonic saline is an acute rescue therapy for symptomatic hyponatremia and is unsafe as chronic treatment."
+  }
+ }
+}
