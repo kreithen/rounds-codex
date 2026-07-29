@@ -1,0 +1,977 @@
+{
+ "meningitis": {
+  "condition": "Bacterial Meningitis",
+  "questions": [
+   {
+    "q": "Which organism is the most common overall cause of bacterial meningitis in adults?",
+    "ch": [
+     "Neisseria meningitidis",
+     "Listeria monocytogenes",
+     "Group B Streptococcus (S. agalactiae)",
+     "Staphylococci and gram-negative rods",
+     "Streptococcus pneumoniae"
+    ],
+    "correct": 4,
+    "exp": "Streptococcus pneumoniae is listed as the top adult pathogen and the most common overall cause of bacterial meningitis in adults.",
+    "why": [
+     "Neisseria meningitidis is a leading adult pathogen but ranks behind pneumococcus as the most common overall cause.",
+     "Listeria monocytogenes is an add-on concern in age over 50, pregnancy, or immunocompromise rather than the usual adult cause.",
+     "Group B Streptococcus is a neonatal pathogen alongside E. coli and Listeria.",
+     "Staphylococci and gram-negative rods are the post-neurosurgery and shunt-associated organisms.",
+     ""
+    ]
+   },
+   {
+    "q": "Which set of findings is the classic triad of bacterial meningitis?",
+    "ch": [
+     "Fever, nuchal rigidity, and altered mental status",
+     "Fever, papilledema, and photophobia",
+     "Headache, petechial rash, and bradycardia",
+     "Neck stiffness, new seizure, and hypotension",
+     "Fever, focal deficit, and sensorineural hearing loss"
+    ],
+    "correct": 0,
+    "exp": "The classic triad is fever, neck stiffness (nuchal rigidity), and altered mental status, although all three are present in fewer than half of cases.",
+    "why": [
+     "",
+     "Papilledema is an indication for CT before lumbar puncture, not a component of the classic triad.",
+     "A petechial rash points to meningococcemia and bradycardia belongs to the Cushing triad of raised ICP.",
+     "A new seizure is a red flag and a CT-before-LP indication rather than part of the presenting triad.",
+     "A focal deficit is a red flag and hearing loss is a later complication, not a presenting triad feature."
+    ]
+   },
+   {
+    "q": "Which CSF profile is characteristic of bacterial meningitis?",
+    "ch": [
+     "Low opening pressure with a normal cell count and low protein",
+     "High opening pressure, neutrophilic pleocytosis, low glucose, and high protein",
+     "Normal opening pressure, lymphocytic pleocytosis, normal glucose, and mildly high protein",
+     "Lymphocytic pleocytosis with very low glucose and very high protein",
+     "Neutrophilic pleocytosis with normal glucose and normal protein"
+    ],
+    "correct": 1,
+    "exp": "The bacterial pattern on lumbar puncture is a high opening pressure, neutrophilic pleocytosis often over 1000, low glucose with a CSF:serum ratio under 0.4, and high protein.",
+    "why": [
+     "Opening pressure is high in bacterial meningitis, not low, and the cell count is markedly raised.",
+     "",
+     "That is the viral pattern — lymphocytes with a normal glucose.",
+     "Lymphocytes with a very low glucose and high protein fit the TB or fungal pattern.",
+     "Bacterial meningitis lowers the CSF glucose and raises the protein, so normal values do not fit."
+    ]
+   },
+   {
+    "q": "A 74-year-old man presents with fever, neck stiffness, and confusion. Which empiric antibiotic regimen is appropriate?",
+    "ch": [
+     "Vancomycin and acyclovir",
+     "Ceftriaxone, vancomycin, and rifampin",
+     "Ceftriaxone and vancomycin",
+     "Ceftriaxone, vancomycin, and ampicillin",
+     "Ceftriaxone alone at meningitic dosing"
+    ],
+    "correct": 3,
+    "exp": "Above age 50 Listeria coverage is required, and cephalosporins do not cover Listeria, so ampicillin is added to the baseline ceftriaxone and vancomycin.",
+    "why": [
+     "This pairing leaves pneumococcal and meningococcal coverage inadequate for empiric therapy.",
+     "Rifampin is used for chemoprophylaxis of close contacts, not as part of the empiric regimen.",
+     "Ceftriaxone with vancomycin is the baseline regimen but misses Listeria in a host over 50.",
+     "",
+     "Ceftriaxone alone omits coverage for resistant pneumococcus and for Listeria."
+    ]
+   },
+   {
+    "q": "Which finding is an indication to obtain a CT head before lumbar puncture in suspected bacterial meningitis?",
+    "ch": [
+     "Nuchal rigidity on examination",
+     "A petechial rash over the trunk",
+     "Papilledema on fundoscopic examination",
+     "Fever above 39 degrees Celsius",
+     "A positive Kernig sign"
+    ],
+    "correct": 2,
+    "exp": "CT head before lumbar puncture is obtained for focal deficit, new seizure, papilledema, immunocompromise, or reduced GCS because of herniation risk.",
+    "why": [
+     "Nuchal rigidity is an expected meningismus sign and does not by itself raise herniation concern.",
+     "A petechial rash strongly suggests meningococcemia but is not one of the imaging indications.",
+     "",
+     "Fever is part of the classic triad and is not an indication for imaging before the tap.",
+     "A positive Kernig sign is a low-sensitivity meningismus sign, not a marker of herniation risk."
+    ]
+   },
+   {
+    "q": "When should dexamethasone be given in suspected pneumococcal meningitis?",
+    "ch": [
+     "Only once CSF culture confirms pneumococcus",
+     "Only if the patient develops hearing loss",
+     "Only after the CT head has been completed",
+     "Before or with the first antibiotic dose",
+     "Twenty-four hours after antibiotics have started"
+    ],
+    "correct": 3,
+    "exp": "Dexamethasone is given before or with the first antibiotic dose in suspected pneumococcal meningitis to reduce hearing loss and mortality, and is discontinued if pneumococcus is excluded.",
+    "why": [
+     "Waiting for culture confirmation delays it past the window; it is started empirically and stopped if pneumococcus is excluded.",
+     "Dexamethasone is given to prevent hearing loss, not as a rescue after hearing loss appears.",
+     "Neither antibiotics nor dexamethasone should wait for imaging in a suspected case.",
+     "",
+     "Delaying the steroid until the next day forfeits the benefit, which depends on giving it with the first dose."
+    ]
+   },
+   {
+    "q": "A patient with suspected Neisseria meningitidis meningitis is admitted. Which infection-control measure is required?",
+    "ch": [
+     "Droplet precautions until at least 24 hours of effective antibiotics",
+     "Contact precautions only, until the petechial rash has fully resolved",
+     "Standard precautions only, because the organism is not transmissible",
+     "Protective isolation to shield the patient from other hospital infections",
+     "Airborne precautions in a negative-pressure room until cultures are final"
+    ],
+    "correct": 0,
+    "exp": "Droplet precautions are initiated for suspected Neisseria meningitidis and continued until the patient has had at least 24 hours of effective antibiotics.",
+    "why": [
+     "",
+     "Contact precautions do not address droplet spread, and the rash is not the criterion for stopping isolation.",
+     "Meningococcus is transmissible to close contacts, who also need chemoprophylaxis.",
+     "The purpose is to protect staff and other patients from the patient, not the reverse.",
+     "Airborne precautions are not what the meningococcal protocol calls for; droplet precautions are the standard."
+    ]
+   },
+   {
+    "q": "A patient admitted with bacterial meningitis develops rising blood pressure with a widening pulse pressure, bradycardia, and irregular respirations. What does this indicate?",
+    "ch": [
+     "SIADH with dilutional hyponatremia",
+     "Impending herniation from raised intracranial pressure",
+     "Early septic shock from meningococcemia",
+     "A drug reaction to vancomycin",
+     "Hypoglycemia caused by dexamethasone"
+    ],
+    "correct": 1,
+    "exp": "Widening pulse pressure, bradycardia, and irregular respirations are the Cushing triad of rising ICP, signalling impending herniation.",
+    "why": [
+     "SIADH is a recognized complication but causes hyponatremia, not the Cushing triad.",
+     "",
+     "Septic shock presents with hypotension and poor perfusion rather than hypertension with bradycardia.",
+     "Vancomycin reactions do not produce this specific triad of vital-sign changes.",
+     "Steroid effects on glucose run high, and hypoglycemia would not give this vital-sign pattern."
+    ]
+   },
+   {
+    "q": "A young adult with fever and rapidly spreading petechiae becomes hypotensive with oozing from IV sites. Which complication should be anticipated?",
+    "ch": [
+     "Communicating hydrocephalus from impaired CSF resorption",
+     "SIADH producing dilutional hyponatremia during recovery",
+     "Fulminant meningococcemia with DIC and Waterhouse-Friderichsen adrenal hemorrhage",
+     "Subdural empyema complicating contiguous spread from sinusitis",
+     "Delayed sensorineural hearing loss needing a discharge hearing screen"
+    ],
+    "correct": 2,
+    "exp": "Rapidly spreading petechiae and purpura with hypotension indicate fulminant meningococcemia — think DIC and Waterhouse-Friderichsen adrenal collapse.",
+    "why": [
+     "Hydrocephalus is a later complication and does not cause coagulopathic bleeding.",
+     "SIADH is a complication of meningitis but does not produce purpura, bleeding, or hypotension.",
+     "",
+     "Subdural empyema is a recognized complication but does not explain spreading purpura with bleeding and shock.",
+     "Hearing loss is a late complication to screen for at discharge, not the acute emergency here."
+    ]
+   },
+   {
+    "q": "A patient with suspected meningitis has a new focal deficit, so a CT head is needed before the lumbar puncture. What is the correct sequence?",
+    "ch": [
+     "Perform the LP immediately without imaging to avoid delaying treatment",
+     "Give antibiotics only after the CSF Gram stain result has returned",
+     "Withhold antibiotics until the CT has excluded a mass lesion",
+     "Obtain the CT first, then draw blood cultures, then give antibiotics",
+     "Draw blood cultures, give antibiotics, then obtain the CT and the LP"
+    ],
+    "correct": 4,
+    "exp": "Blood cultures then antibiotics come first; when CT is indicated before the LP the antibiotics are still given first, because the LP can wait and treatment cannot.",
+    "why": [
+     "A focal deficit makes an immediate tap unsafe because of herniation risk, so imaging is required first.",
+     "Waiting for the Gram stain delays empiric therapy that should already be running.",
+     "Antibiotics are never withheld while imaging is pending in a suspected case.",
+     "Imaging before antibiotics delays treatment, and door-to-antibiotic time drives mortality.",
+     ""
+    ]
+   }
+  ]
+ },
+ "seizure": {
+  "condition": "Seizure & Status Epilepticus",
+  "questions": [
+   {
+    "q": "Which statement defines status epilepticus at the operational t1 threshold?",
+    "ch": [
+     "A seizure lasting 30 minutes or longer, regardless of recovery between events",
+     "Two or more seizures within a single 24-hour period with full recovery between them",
+     "A convulsion followed by more than one hour of post-ictal confusion",
+     "A seizure lasting 5 minutes or longer, or two or more seizures without recovery of consciousness between them",
+     "Any seizure occurring in a patient with an established diagnosis of epilepsy"
+    ],
+    "correct": 3,
+    "exp": "Status epilepticus at t1 is a seizure lasting 5 minutes or longer, or two or more seizures without recovery of consciousness between them; t2 at 30 minutes is when long-term neuronal injury begins.",
+    "why": [
+     "Thirty minutes is the t2 threshold for neuronal injury, not the operational t1 that triggers treatment.",
+     "Recovery of consciousness between events is exactly what excludes status epilepticus.",
+     "Prolonged post-ictal confusion is expected after a convulsion and is not the definition.",
+     "",
+     "Epilepsy means recurrent unprovoked seizures; it does not by itself define status epilepticus."
+    ]
+   },
+   {
+    "q": "Which agent is first-line to abort an actively seizing patient who already has IV access?",
+    "ch": [
+     "IV levetiracetam",
+     "IV fosphenytoin",
+     "IV valproate",
+     "IV propofol infusion",
+     "IV lorazepam"
+    ],
+    "correct": 4,
+    "exp": "IV lorazepam is the first-line benzodiazepine for emergent abortive therapy, enhancing GABA-A chloride conductance to halt the discharge.",
+    "why": [
+     "Levetiracetam is a second-line urgent-control agent given after the benzodiazepine, not the abortive drug.",
+     "Fosphenytoin is second-line urgent control and needs cardiac monitoring; it does not replace the benzodiazepine.",
+     "Valproate is a second-line option after the benzodiazepine and is avoided in pregnancy.",
+     "Propofol is a third-line anesthetic infusion for refractory status requiring intubation and cEEG.",
+     ""
+    ]
+   },
+   {
+    "q": "What should be checked first in every seizing patient?",
+    "ch": [
+     "Continuous EEG",
+     "Fingerstick glucose",
+     "Serum prolactin",
+     "Head CT",
+     "AED drug levels"
+    ],
+    "correct": 1,
+    "exp": "Check a glucose on every seizing patient before anything else, because hypoglycemia is instantly reversible; the immediate fingerstick glucose precedes electrolytes, toxicology, and imaging.",
+    "why": [
+     "Continuous EEG is for status that does not wake up, not the first bedside action.",
+     "",
+     "Prolactin supports a seizure over a psychogenic event afterwards; it is not the immediate first test.",
+     "Imaging follows the immediate bedside glucose and does not come before it.",
+     "AED levels matter in a known epileptic but are drawn with the other labs, after the glucose."
+    ]
+   },
+   {
+    "q": "A patient is convulsing in the field and IV access cannot be obtained. Which rescue therapy is preferred?",
+    "ch": [
+     "Rectal valproate as a loading dose",
+     "IM midazolam",
+     "IV lorazepam once access is finally achieved",
+     "Oral levetiracetam given between convulsions",
+     "IV fosphenytoin through an intraosseous line"
+    ],
+    "correct": 1,
+    "exp": "IM midazolam is first-line when there is no IV access, is rapidly absorbed prehospital, and was supported by the RAMPART trial.",
+    "why": [
+     "Rectal rescue in the community uses diazepam or midazolam, not valproate.",
+     "",
+     "Waiting for IV access delays the benzodiazepine, and delay is what makes status harder to stop.",
+     "An actively convulsing patient cannot safely take oral medication.",
+     "Fosphenytoin is a second-line agent and does not substitute for the first-line benzodiazepine."
+    ]
+   },
+   {
+    "q": "After an adequately dosed benzodiazepine, which statement about second-line urgent control is correct?",
+    "ch": [
+     "No second-line agent is needed once the benzodiazepine has worked",
+     "Levetiracetam requires cardiac monitoring for bradyarrhythmia risk",
+     "Levetiracetam, fosphenytoin, and valproate are roughly equal in efficacy",
+     "Fosphenytoin is clearly superior and should always be chosen first",
+     "Valproate is the preferred agent in pregnancy because it is well tolerated"
+    ],
+    "correct": 2,
+    "exp": "ESETT showed levetiracetam, fosphenytoin, and valproate are roughly equal in efficacy as second-line agents given after a benzodiazepine to prevent recurrence.",
+    "why": [
+     "A second-line agent is loaded after the benzodiazepine precisely to prevent recurrence.",
+     "Cardiac monitoring belongs to fosphenytoin; levetiracetam's cautions are neuropsychiatric and mood effects.",
+     "",
+     "The three second-line agents performed about equally, so no clear superiority justifies always choosing one.",
+     "Valproate is specifically avoided in pregnancy and carries hepatotoxicity and hyperammonemia risk."
+    ]
+   },
+   {
+    "q": "A patient begins a generalized tonic-clonic seizure in bed. Which nursing action is appropriate?",
+    "ch": [
+     "Insert a padded tongue blade to protect the airway and the teeth",
+     "Restrain the limbs firmly to prevent injury from the convulsion",
+     "Leave the bedside to summon help and return with the crash cart",
+     "Sit the patient upright and give oral glucose immediately",
+     "Turn the patient to the side, protect the head, and time the seizure"
+    ],
+    "correct": 4,
+    "exp": "Safety first: protect the head, remove hazards, turn the patient to the side in the recovery position, and time the seizure while preparing suction and oxygen.",
+    "why": [
+     "Nothing is ever inserted in the mouth of a seizing patient.",
+     "The limbs are not restrained; restraint causes injury rather than preventing it.",
+     "The patient is not left alone during a seizure.",
+     "Nothing is given by mouth during a convulsion, and the side-lying recovery position is what protects the airway.",
+     ""
+    ]
+   },
+   {
+    "q": "After a witnessed convulsion a patient has transient right-arm weakness that resolves over several hours. What is the most likely explanation?",
+    "ch": [
+     "A psychogenic nonepileptic event",
+     "Propofol infusion syndrome",
+     "Todd's paralysis",
+     "An acute ischemic stroke in evolution",
+     "Ongoing nonconvulsive status epilepticus"
+    ],
+    "correct": 2,
+    "exp": "Todd's paralysis is transient focal weakness after a seizure that mimics stroke but resolves within hours.",
+    "why": [
+     "A psychogenic event is suggested by anterior tongue-tip biting and rapid recovery, not post-ictal focal weakness.",
+     "Propofol infusion syndrome involves acidosis and rhabdomyolysis with prolonged high-dose infusion.",
+     "",
+     "A stroke deficit would not be expected to resolve completely within hours after a witnessed convulsion.",
+     "Nonconvulsive status is suspected when the patient does not wake up, not when a focal weakness clears."
+    ]
+   },
+   {
+    "q": "Convulsions stopped 40 minutes ago after lorazepam and levetiracetam, but the patient still does not wake up. What is the priority?",
+    "ch": [
+     "Repeat the levetiracetam dose and reassess in another hour",
+     "Order a lumbar puncture before any further neurologic monitoring",
+     "Start a propofol infusion empirically without any EEG monitoring",
+     "Obtain continuous EEG to look for nonconvulsive status epilepticus",
+     "Assume a prolonged post-ictal state and simply observe overnight"
+    ],
+    "correct": 3,
+    "exp": "A patient who does not return to baseline after convulsions stop may be in nonconvulsive status epilepticus, and continuous EEG is required to diagnose it and guide therapy.",
+    "why": [
+     "Repeating a dose without knowing whether seizures continue electrically leaves the diagnosis unmade.",
+     "Lumbar puncture is indicated for fever or meningismus; it does not answer whether seizures are ongoing.",
+     "Anesthetic infusions require intubation and cEEG-guided titration, not empiric use without monitoring.",
+     "",
+     "Assuming a post-ictal state is the classic way nonconvulsive status is missed."
+    ]
+   },
+   {
+    "q": "A patient in status epilepticus fails benzodiazepines and a full second-line load. Which reversible cause deserves active consideration?",
+    "ch": [
+     "INH (isoniazid) toxicity, treated with pyridoxine",
+     "Chronic migraine with aura",
+     "Benign essential tremor",
+     "Peripheral neuropathy from B12 deficiency",
+     "A simple febrile convulsion of childhood"
+    ],
+    "correct": 0,
+    "exp": "Refractory status epilepticus unresponsive to standard medications should prompt thought of INH toxicity, treated with pyridoxine, as well as autoimmune anti-NMDA encephalitis or eclampsia treated with magnesium.",
+    "why": [
+     "",
+     "Migraine is not among the listed triggers of status epilepticus and does not explain refractoriness.",
+     "Essential tremor is a movement disorder and has no role in refractory status epilepticus.",
+     "Peripheral neuropathy is not a cause of ongoing cortical seizure activity.",
+     "A febrile convulsion of childhood does not explain refractory status in this setting."
+    ]
+   },
+   {
+    "q": "A woman at 32 weeks of pregnancy has a generalized convulsion. What is the immediate treatment priority?",
+    "ch": [
+     "Magnesium sulfate for eclampsia with obstetric emergency management",
+     "An IV valproate load as the urgent-control agent",
+     "Oral levetiracetam started at a low maintenance dose",
+     "Observation alone, since seizures in pregnancy are usually benign",
+     "Rectal diazepam only, avoiding all intravenous therapy"
+    ],
+    "correct": 0,
+    "exp": "A seizure in a pregnant patient beyond 20 weeks is treated as eclampsia with magnesium sulfate and obstetric emergency management.",
+    "why": [
+     "",
+     "Valproate is specifically avoided in pregnancy because of its teratogenic and hepatic risks.",
+     "A low oral maintenance dose does nothing for an acute convulsion in a pregnant patient.",
+     "A seizure after 20 weeks is a red flag for eclampsia, never something to observe.",
+     "Rectal rescue is a community measure and does not replace magnesium in suspected eclampsia."
+    ]
+   }
+  ]
+ },
+ "parkinsons": {
+  "condition": "Parkinson's Disease",
+  "questions": [
+   {
+    "q": "What is the pathologic hallmark of Parkinson's disease?",
+    "ch": [
+     "Extracellular amyloid plaques with neuritic degeneration",
+     "Hyperphosphorylated tau neurofibrillary tangles in the cortex",
+     "Inflammatory demyelinating plaques with oligodendrocyte loss",
+     "Spongiform vacuolation with prion protein deposition",
+     "Intraneuronal Lewy bodies composed of aggregated alpha-synuclein"
+    ],
+    "correct": 4,
+    "exp": "The pathologic hallmark of Parkinson's disease is the intraneuronal Lewy body, composed of aggregated alpha-synuclein, accompanying loss of dopaminergic neurons in the substantia nigra.",
+    "why": [
+     "Amyloid plaques are a feature of Alzheimer pathology, not the hallmark of Parkinson's disease.",
+     "Tau neurofibrillary tangles belong to Alzheimer pathology rather than to nigral degeneration.",
+     "Demyelinating plaques describe an inflammatory demyelinating disease, not nigral neuron loss.",
+     "Spongiform change with prion deposition describes a rapidly progressive prion disease.",
+     ""
+    ]
+   },
+   {
+    "q": "The TRAP mnemonic summarizes the cardinal motor features of Parkinson's disease. What does it stand for?",
+    "ch": [
+     "Tremor, reflex loss, athetosis, and ptosis of the eyelids",
+     "Resting tremor, rigidity, akinesia/bradykinesia, and postural instability",
+     "Intention tremor, rigidity, ataxia, and progressive paralysis",
+     "Resting tremor, restlessness, apraxia, and painful paresthesia",
+     "Titubation, rigidity, aphasia, and photophobia on exposure"
+    ],
+    "correct": 1,
+    "exp": "TRAP is resting Tremor, cogwheel Rigidity, Akinesia/bradykinesia, and Postural instability — the classic tetrad of Parkinson's disease.",
+    "why": [
+     "Reflex loss, athetosis, and ptosis do not appear in the cardinal motor tetrad.",
+     "",
+     "The tremor of Parkinson's disease is a resting tremor, and ataxia is not one of the cardinal features.",
+     "Restlessness, apraxia, and paresthesia are not part of the described tetrad.",
+     "Titubation, aphasia, and photophobia are not cardinal motor features of the disease."
+    ]
+   },
+   {
+    "q": "Which tremor description fits Parkinson's disease?",
+    "ch": [
+     "A 4-6 Hz pill-rolling resting tremor that improves with movement",
+     "A high-frequency intention tremor that worsens as the target is approached",
+     "A postural tremor of the hands that improves markedly with alcohol",
+     "A head-nodding tremor that is present only during sleep",
+     "A symmetric tremor appearing only during sustained physical exertion"
+    ],
+    "correct": 0,
+    "exp": "Parkinson's disease produces a 4-6 Hz pill-rolling resting tremor that improves with movement, the opposite of an intention or cerebellar tremor.",
+    "why": [
+     "",
+     "A tremor that worsens on approaching a target is an intention or cerebellar tremor, the opposite pattern.",
+     "An alcohol-responsive postural tremor is not the resting tremor described in this module.",
+     "The parkinsonian tremor is a resting tremor of the awake limb, not a sleep phenomenon.",
+     "Onset is characteristically asymmetric, and the tremor is present at rest rather than only with exertion."
+    ]
+   },
+   {
+    "q": "Under the MDS diagnostic criteria, what is required to diagnose Parkinson's disease?",
+    "ch": [
+     "Bradykinesia plus resting tremor and/or rigidity",
+     "An abnormal DaTscan result in every patient",
+     "MRI evidence of substantia nigra atrophy",
+     "A positive alpha-synuclein blood test",
+     "Postural instability as the earliest feature"
+    ],
+    "correct": 0,
+    "exp": "Parkinson's disease is a clinical diagnosis: bradykinesia plus resting tremor and/or rigidity per the MDS diagnostic criteria, with a robust sustained levodopa response as a supportive criterion.",
+    "why": [
+     "",
+     "DaTscan is reserved for confirming a presynaptic dopaminergic deficit when the diagnosis is unclear.",
+     "MRI is typically normal and is done to exclude structural and vascular mimics.",
+     "There is no such diagnostic blood test in the criteria described here.",
+     "Postural instability is part of the tetrad but early falls are actually a red flag for Parkinson-plus."
+    ]
+   },
+   {
+    "q": "A patient started on pramipexole develops new compulsive gambling. What does this represent?",
+    "ch": [
+     "Levodopa-induced dyskinesia requiring amantadine",
+     "Parkinsonism-hyperpyrexia from abrupt drug withdrawal",
+     "Anticholinergic confusion from trihexyphenidyl",
+     "An impulse control disorder from the dopamine agonist",
+     "A wearing-off phenomenon between levodopa doses"
+    ],
+    "correct": 3,
+    "exp": "Dopamine agonists such as pramipexole and ropinirole carry a risk of impulse control disorders including gambling and hypersexuality, along with sleep attacks and hallucinations.",
+    "why": [
+     "Dyskinesia is involuntary movement from levodopa, not a compulsive behavior.",
+     "Parkinsonism-hyperpyrexia follows abrupt levodopa withdrawal with fever and rigidity.",
+     "Anticholinergics cause confusion and memory loss in the elderly, not compulsive gambling.",
+     "",
+     "Wearing-off is a return of motor symptoms before the next dose, not a behavioral compulsion."
+    ]
+   },
+   {
+    "q": "Which nursing action best supports a hospitalized patient taking carbidopa-levodopa?",
+    "ch": [
+     "Substitute metoclopramide whenever the patient reports nausea",
+     "Stop levodopa for 24 hours before any scheduled procedure",
+     "Give levodopa on time, every time, and separate doses from high-protein meals",
+     "Hold the morning dose until the patient is fully awake and oriented",
+     "Crush and combine all of the daily doses into one morning dose"
+    ],
+    "correct": 2,
+    "exp": "Levodopa must be given on time, every time, because missed or late doses cause severe off periods, and high-protein meals can reduce its absorption.",
+    "why": [
+     "Metoclopramide is a dopamine blocker that causes drug-induced parkinsonism and should be avoided.",
+     "Levodopa is never stopped abruptly because of the risk of a parkinsonism-hyperpyrexia crisis.",
+     "",
+     "Holding a dose creates exactly the off period that on-time dosing is meant to prevent.",
+     "Combining doses destroys the dosing schedule that keeps motor symptoms controlled."
+    ]
+   },
+   {
+    "q": "An older adult taking metoclopramide develops symmetric rigidity and bradykinesia. What is the most likely diagnosis?",
+    "ch": [
+     "Progressive supranuclear palsy with early falls",
+     "Multiple system atrophy with early autonomic failure",
+     "Corticobasal degeneration with limb apraxia",
+     "Drug-induced parkinsonism from dopamine blockade",
+     "Idiopathic Parkinson's disease with asymmetric onset"
+    ],
+    "correct": 3,
+    "exp": "Antipsychotics and metoclopramide are dopamine blockers that cause drug-induced parkinsonism, which is characteristically symmetric — always review the medication list.",
+    "why": [
+     "Progressive supranuclear palsy is a Parkinson-plus syndrome, not a medication effect.",
+     "Multiple system atrophy is a Parkinson-plus syndrome with early autonomic failure, not drug-induced.",
+     "Corticobasal degeneration is another Parkinson-plus syndrome rather than a drug effect.",
+     "",
+     "Idiopathic disease is characteristically asymmetric at onset and is not explained by a dopamine blocker."
+    ]
+   },
+   {
+    "q": "A hospitalized patient's levodopa is withheld for three days. He becomes febrile and rigid with confusion and unstable vital signs. What has happened?",
+    "ch": [
+     "Orthostatic hypotension causing syncope and falls",
+     "Levodopa-induced dyskinesia from over-treatment",
+     "Parkinsonism-hyperpyrexia syndrome from abrupt levodopa withdrawal",
+     "Serotonin syndrome from an MAO-B inhibitor interaction",
+     "Aspiration pneumonia from progressive dysphagia"
+    ],
+    "correct": 2,
+    "exp": "Abruptly stopping levodopa risks parkinsonism-hyperpyrexia, a neuroleptic malignant syndrome-like crisis with fever, rigidity, altered mental status, and autonomic instability.",
+    "why": [
+     "Orthostatic hypotension causes falls and syncope, not fever with rigidity.",
+     "Dyskinesia is an excess-movement complication of levodopa, not a withdrawal crisis.",
+     "",
+     "Serotonin syndrome relates to MAO-B inhibitors combined with meperidine or SSRIs, not to withholding levodopa.",
+     "Aspiration pneumonia is a leading cause of death in this disease but would not follow from stopping the drug."
+    ]
+   },
+   {
+    "q": "A patient with Parkinson's disease develops distressing visual hallucinations. Which antipsychotic choice is appropriate?",
+    "ch": [
+     "Chlorpromazine given at bedtime nightly",
+     "Quetiapine, clozapine, or pimavanserin",
+     "Haloperidol, a high-potency typical agent",
+     "Fluphenazine given as a depot injection",
+     "Risperidone titrated to a high daily dose"
+    ],
+    "correct": 1,
+    "exp": "Typical antipsychotics are avoided in Parkinson's disease psychosis; quetiapine, clozapine, or pimavanserin are used because their minimal D2 blockade avoids worsening motor symptoms.",
+    "why": [
+     "Chlorpromazine is a typical antipsychotic and blocks dopamine, so it is avoided here.",
+     "",
+     "Haloperidol is a high-potency dopamine blocker that will worsen the motor symptoms.",
+     "Depot fluphenazine is a typical antipsychotic and its long duration makes the motor worsening harder to reverse.",
+     "Higher-dose risperidone brings substantial D2 blockade and worsens parkinsonism."
+    ]
+   },
+   {
+    "q": "Why is the onset of Parkinson's disease symptoms so insidious?",
+    "ch": [
+     "The blood-brain barrier delays the delivery of endogenous dopamine",
+     "Lewy bodies only begin to form after the motor symptoms have started",
+     "Cortical compensation completely prevents any tremor until very late",
+     "Dopamine receptors are progressively upregulated throughout the cortex",
+     "Symptoms appear only after roughly 60-80% of nigrostriatal neurons are lost"
+    ],
+    "correct": 4,
+    "exp": "Symptoms emerge only after roughly 60-80% of nigrostriatal dopaminergic neurons are lost, which explains the insidious onset and drives interest in neuroprotection.",
+    "why": [
+     "The barrier issue concerns getting levodopa into the brain, not the timing of symptom onset.",
+     "Lewy bodies are the pathologic hallmark of the underlying degeneration, not a later consequence.",
+     "Tremor is one of the cardinal presenting features rather than something suppressed until late.",
+     "Receptor upregulation in the cortex is not the explanation given for the delayed presentation.",
+     ""
+    ]
+   }
+  ]
+ },
+ "dementia": {
+  "condition": "Alzheimer's & Dementia",
+  "questions": [
+   {
+    "q": "Which pathologic changes define Alzheimer's disease?",
+    "ch": [
+     "Intraneuronal Lewy bodies composed of aggregated alpha-synuclein",
+     "Multiple cortical and subcortical infarcts accumulating in a stepwise way",
+     "Focal frontal and temporal lobar atrophy with early personality change",
+     "Spongiform change with prion protein deposition and prominent myoclonus",
+     "Extracellular amyloid plaques and intracellular hyperphosphorylated tau tangles"
+    ],
+    "correct": 4,
+    "exp": "Alzheimer's disease is defined by extracellular amyloid plaques plus intracellular hyperphosphorylated tau tangles, with cholinergic neuron loss and hippocampal and temporoparietal atrophy.",
+    "why": [
+     "Lewy bodies of alpha-synuclein characterize Lewy body dementia with its fluctuating cognition and hallucinations.",
+     "Accumulating infarcts with stepwise decline describe vascular dementia rather than Alzheimer pathology.",
+     "Early personality and language change with lobar atrophy describes frontotemporal dementia.",
+     "Prion pathology with myoclonus suggests Creutzfeldt-Jakob disease, a rapidly progressive dementia.",
+     ""
+    ]
+   },
+   {
+    "q": "Which feature best distinguishes delirium from dementia?",
+    "ch": [
+     "Prominent early personality and language change",
+     "Acute onset with a fluctuating course and inattention",
+     "Gradual decline over years with attention preserved",
+     "Loss of smell with REM sleep behavior disorder",
+     "Stepwise decline with focal neurologic deficits"
+    ],
+    "correct": 1,
+    "exp": "Delirium is acute and fluctuating with inattention and is potentially reversible, whereas dementia is a chronic acquired loss of cognition that impairs independence.",
+    "why": [
+     "Early personality and language change points to frontotemporal dementia.",
+     "",
+     "A gradual decline over years describes dementia itself, not delirium.",
+     "Hyposmia with REM sleep behavior disorder points toward Lewy body pathology rather than delirium.",
+     "Stepwise decline with focal deficits suggests vascular dementia, not an acute confusional state."
+    ]
+   },
+   {
+    "q": "What is the hallmark early clinical feature of Alzheimer's disease?",
+    "ch": [
+     "Prominent visual hallucinations",
+     "Magnetic gait with incontinence",
+     "Disinhibited social behavior",
+     "Stepwise motor deficits",
+     "Short-term (episodic) memory loss"
+    ],
+    "correct": 4,
+    "exp": "The hallmark early feature of Alzheimer's disease is short-term or episodic memory loss, localizing to the hippocampus and temporal lobe.",
+    "why": [
+     "Visual hallucinations with fluctuating cognition point to Lewy body dementia.",
+     "A magnetic gait with incontinence belongs to the normal pressure hydrocephalus triad.",
+     "Disinhibited behavior and early personality change point to frontotemporal dementia.",
+     "Stepwise decline with focal deficits suggests a vascular cause.",
+     ""
+    ]
+   },
+   {
+    "q": "Which laboratory tests are obtained mainly to catch reversible causes of cognitive decline?",
+    "ch": [
+     "Amyloid PET imaging",
+     "Plasma p-tau217",
+     "APOE genotyping",
+     "TSH and vitamin B12",
+     "CSF amyloid and tau"
+    ],
+    "correct": 3,
+    "exp": "TSH and vitamin B12 are drawn to exclude reversible causes of cognitive decline, along with CBC, CMP, and RPR or HIV testing when indicated.",
+    "why": [
+     "Amyloid PET is a specialty biomarker rather than a test for reversible mimics.",
+     "Plasma p-tau217 is an emerging Alzheimer biomarker, not a reversible-cause screen.",
+     "APOE genotyping reflects risk and ARIA susceptibility rather than a treatable cause.",
+     "",
+     "CSF amyloid and tau are biomarkers supporting an Alzheimer diagnosis, not a screen for reversible causes."
+    ]
+   },
+   {
+    "q": "A patient with fluctuating cognition, visual hallucinations, and parkinsonism becomes agitated overnight. Which order should be challenged?",
+    "ch": [
+     "A review of the medication list",
+     "Haloperidol for agitation",
+     "A structured routine with reorientation cues",
+     "Evaluation for pain, infection, or constipation",
+     "A low-dose cholinesterase inhibitor"
+    ],
+    "correct": 1,
+    "exp": "These features describe Lewy body dementia, in which severe neuroleptic sensitivity makes a high-potency antipsychotic such as haloperidol potentially fatal.",
+    "why": [
+     "Reviewing the medication list is a sound step in evaluating new agitation.",
+     "",
+     "A structured routine with reorientation is appropriate first-line non-pharmacologic care.",
+     "Identifying triggers such as pain, infection, or constipation is exactly what should be done first.",
+     "Cholinesterase inhibitors are used in Lewy body dementia and are a reasonable order."
+    ]
+   },
+   {
+    "q": "What is first-line management of behavioral and psychological symptoms of dementia?",
+    "ch": [
+     "A scheduled benzodiazepine given at bedtime nightly",
+     "An anticholinergic agent for restlessness and pacing",
+     "Physical restraints applied during agitated episodes",
+     "Non-pharmacologic care with a structured routine and environmental modification",
+     "An atypical antipsychotic started at the lowest dose"
+    ],
+    "correct": 3,
+    "exp": "Non-pharmacologic care — structured routine, reorientation, and environmental modification — is first-line for behavioral and psychological symptoms, and triggers such as pain, infection, constipation, and sensory deficits are identified before any medication is added.",
+    "why": [
+     "A nightly benzodiazepine adds sedation and fall risk without addressing the trigger.",
+     "Anticholinergic burden worsens confusion in this population.",
+     "Restraints do not address the underlying trigger and add injury risk.",
+     "",
+     "Antipsychotics are reserved for severe agitation or psychosis after non-drug measures fail, and carry a black box warning of increased mortality."
+    ]
+   },
+   {
+    "q": "A patient started on donepezil should be monitored for which adverse effect?",
+    "ch": [
+     "Extrapyramidal rigidity and tremor",
+     "Photosensitivity rash on the face",
+     "Bradycardia with syncope and GI upset",
+     "Amyloid-related imaging abnormalities",
+     "Hyponatremia from renal salt wasting"
+    ],
+    "correct": 2,
+    "exp": "Cholinesterase inhibitors produce cholinergic effects including bradycardia, syncope, GI upset, and weight loss, so monitor heart rate, GI tolerance, and weight.",
+    "why": [
+     "Extrapyramidal effects are an antipsychotic concern, especially in Lewy body dementia.",
+     "Photosensitivity is not among the described adverse effects of this drug class.",
+     "",
+     "ARIA is monitored with serial MRI for anti-amyloid monoclonal antibodies, not for donepezil.",
+     "Hyponatremia is a monitoring point for SSRIs in this population rather than for cholinesterase inhibitors."
+    ]
+   },
+   {
+    "q": "An older adult has urinary incontinence, cognitive decline, and a magnetic gait. Which diagnosis is potentially reversible?",
+    "ch": [
+     "Normal pressure hydrocephalus",
+     "Alzheimer's disease",
+     "Frontotemporal dementia",
+     "Creutzfeldt-Jakob disease",
+     "Lewy body dementia"
+    ],
+    "correct": 0,
+    "exp": "The wet, wacky, wobbly triad of urinary incontinence, cognitive decline, and magnetic gait is normal pressure hydrocephalus, which is potentially reversible with shunting.",
+    "why": [
+     "",
+     "Alzheimer's disease presents with episodic memory loss and is not reversible with a procedure.",
+     "Frontotemporal dementia presents with early personality and language change at a younger age.",
+     "Creutzfeldt-Jakob disease is a rapidly progressive dementia with myoclonus, not a reversible cause.",
+     "Lewy body dementia features fluctuating cognition, visual hallucinations, and parkinsonism."
+    ]
+   },
+   {
+    "q": "A patient with early Alzheimer's disease and confirmed amyloid begins lecanemab. What monitoring is required?",
+    "ch": [
+     "Serial MRI for ARIA",
+     "Serial ECGs for QT prolongation",
+     "Monthly TSH measurement",
+     "Weekly liver function tests",
+     "Annual DaTscan imaging"
+    ],
+    "correct": 0,
+    "exp": "Anti-amyloid monoclonal antibodies require surveillance MRI for ARIA — amyloid-related imaging abnormalities with edema or hemorrhage — and the risk is higher in APOE carriers.",
+    "why": [
+     "",
+     "QT monitoring relates to citalopram dosing in the elderly, not to anti-amyloid antibodies.",
+     "TSH is a one-time screen for a reversible cause rather than ongoing therapy monitoring.",
+     "Liver testing is not the monitoring requirement described for this drug class.",
+     "DaTscan is a movement-disorder study and has no role in monitoring this therapy."
+    ]
+   },
+   {
+    "q": "How is Lewy body dementia distinguished from Parkinson disease dementia?",
+    "ch": [
+     "The complete absence of any visual hallucinations",
+     "A stepwise decline accompanied by focal deficits",
+     "Cognitive decline before or within about a year of parkinsonism",
+     "Cognitive decline appearing many years after the motor symptoms",
+     "The presence of a resting tremor at the time of onset"
+    ],
+    "correct": 2,
+    "exp": "Cognitive decline before or within about one year of parkinsonism indicates Lewy body dementia, whereas motor symptoms preceding cognition by years indicates Parkinson disease dementia.",
+    "why": [
+     "Visual hallucinations are a core feature of Lewy body dementia rather than being absent.",
+     "Stepwise decline with focal deficits points to vascular dementia.",
+     "",
+     "Motor symptoms first by years is the pattern that defines Parkinson disease dementia instead.",
+     "A resting tremor occurs in both and does not separate the two diagnoses."
+    ]
+   }
+  ]
+ },
+ "ms": {
+  "condition": "Multiple Sclerosis",
+  "questions": [
+   {
+    "q": "What is the hallmark of multiple sclerosis pathology?",
+    "ch": [
+     "Degeneration of the anterior horn cells",
+     "Amyloid deposition in cortical vessels",
+     "Lesions disseminated in space and in time",
+     "A single monophasic demyelinating event",
+     "Demyelination confined to peripheral nerves"
+    ],
+    "correct": 2,
+    "exp": "The hallmark of multiple sclerosis is separation of lesions in space, meaning multiple CNS sites, and in time, meaning episodes over time.",
+    "why": [
+     "Anterior horn cell degeneration is a motor neuron process, not an inflammatory demyelinating one.",
+     "Amyloid in cortical vessels is unrelated to immune-mediated CNS demyelination.",
+     "",
+     "A single monophasic event is a clinically isolated syndrome, which by itself lacks dissemination in time.",
+     "Multiple sclerosis attacks CNS myelin and oligodendrocytes, not peripheral nerves."
+    ]
+   },
+   {
+    "q": "Which risk-factor profile is most typical of multiple sclerosis?",
+    "ch": [
+     "Female, age 20-40, higher latitude, low vitamin D, and prior EBV infection",
+     "Male, age over 65, low latitude, and high vitamin D levels",
+     "Female, age over 70, with hypertension and long-standing diabetes",
+     "Male, childhood onset, with a documented measles infection",
+     "Either sex, age 40-60, with heavy alcohol use and smoking"
+    ],
+    "correct": 0,
+    "exp": "Risk factors include female sex at roughly 3:1, age 20-40, higher latitude with low vitamin D, EBV infection, smoking, and the HLA-DRB1 genetic association.",
+    "why": [
+     "",
+     "Male sex, older age, and high vitamin D run opposite to the described risk profile.",
+     "Onset after 70 with vascular comorbidity does not match the 20-40 age window.",
+     "Childhood male onset after measles is not the described epidemiologic pattern; EBV is the implicated virus.",
+     "The peak age is 20-40 with a female predominance rather than an even distribution at 40-60."
+    ]
+   },
+   {
+    "q": "Which disease course accounts for about 85% of multiple sclerosis?",
+    "ch": [
+     "Primary progressive MS",
+     "Secondary progressive MS",
+     "Radiologically isolated syndrome",
+     "Clinically isolated syndrome",
+     "Relapsing-remitting MS"
+    ],
+    "correct": 4,
+    "exp": "Relapsing-remitting MS is the most common disease course in multiple sclerosis, making up about 85%.",
+    "why": [
+     "Primary progressive disease is a separate, less common course, and ocrelizumab is its only approved therapy.",
+     "Secondary progressive disease follows an initial relapsing-remitting course rather than accounting for most cases.",
+     "A radiologically isolated syndrome is an incidental imaging category, not the dominant course.",
+     "A clinically isolated syndrome is a first attack, not an established disease course.",
+     ""
+    ]
+   },
+   {
+    "q": "Which investigation is the key test for diagnosing multiple sclerosis?",
+    "ch": [
+     "Serum creatine kinase and aldolase levels",
+     "Muscle biopsy taken from the quadriceps",
+     "MRI brain and spinal cord with gadolinium",
+     "CT head without contrast to exclude a mass",
+     "Nerve conduction studies of all four limbs"
+    ],
+    "correct": 2,
+    "exp": "MRI of the brain and spinal cord with gadolinium is the key test, showing periventricular, juxtacortical, infratentorial, and cord lesions with Dawson fingers, while enhancing lesions imply active disease.",
+    "why": [
+     "Muscle enzymes assess myopathy and have no role in establishing this diagnosis.",
+     "Muscle biopsy investigates primary muscle disease, not CNS demyelination.",
+     "",
+     "CT lacks the sensitivity to show demyelinating plaques and is not the diagnostic study.",
+     "Nerve conduction studies assess peripheral nerve, whereas this disease is a CNS process."
+    ]
+   },
+   {
+    "q": "Under the 2017 McDonald criteria, what can CSF oligoclonal bands substitute for?",
+    "ch": [
+     "Dissemination in time",
+     "Dissemination in space",
+     "A positive AQP4 antibody",
+     "An abnormal EDSS score",
+     "A gadolinium-enhancing lesion"
+    ],
+    "correct": 0,
+    "exp": "Under the 2017 McDonald criteria, CSF oligoclonal bands can substitute for dissemination in time in a clinically isolated syndrome.",
+    "why": [
+     "",
+     "Dissemination in space is shown by lesions at multiple CNS sites on MRI, not by oligoclonal bands.",
+     "AQP4 antibody testing is used to exclude NMOSD, a mimic, not to satisfy the criteria.",
+     "The EDSS tracks disability over time and plays no part in making the diagnosis.",
+     "Enhancing lesions indicate activity but are not what the bands replace in the criteria."
+    ]
+   },
+   {
+    "q": "Which teaching point addresses the Uhthoff phenomenon?",
+    "ch": [
+     "Restrict fluid intake to reduce neurogenic bladder urgency",
+     "Avoid hot baths, saunas, and overheating, and use cooling strategies",
+     "Avoid all physical exercise permanently to prevent relapse",
+     "Sleep in a warm room in order to reduce night-time spasticity",
+     "Take hot showers to relieve neuropathic pain in the limbs"
+    ],
+    "correct": 1,
+    "exp": "The Uhthoff phenomenon is transient worsening with heat, so teach heat avoidance — hot baths, saunas, fever, and overheating — along with cooling strategies.",
+    "why": [
+     "Fluid restriction is not the recommended bladder strategy and does not concern heat sensitivity.",
+     "",
+     "Exercise is encouraged rather than avoided; the specific issue is overheating.",
+     "Deliberately warming the sleeping environment worsens symptoms in a heat-sensitive patient.",
+     "Hot showers are precisely what triggers the transient worsening being taught about."
+    ]
+   },
+   {
+    "q": "A patient with known MS presents with a new episode of painful monocular vision loss. What is first-line treatment for the relapse?",
+    "ch": [
+     "Start ocrelizumab that same day",
+     "Begin dalfampridine for walking",
+     "Give baclofen for spasticity",
+     "Start teriflunomide immediately",
+     "High-dose IV methylprednisolone"
+    ],
+    "correct": 4,
+    "exp": "High-dose IV methylprednisolone is first-line for an acute relapse to speed recovery, although it does not change long-term disability; plasma exchange is used for steroid-refractory severe relapses.",
+    "why": [
+     "Ocrelizumab is a disease-modifying therapy to prevent future relapses, not the acute relapse treatment.",
+     "Dalfampridine is symptomatic therapy for walking speed and does nothing for an acute attack.",
+     "Baclofen treats spasticity and has no role in aborting a relapse.",
+     "Teriflunomide is an oral disease-modifying therapy, not an acute relapse treatment.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient on natalizumab develops new progressive deficits and cognitive decline. What should be suspected and done?",
+    "ch": [
+     "Treat it as an ordinary relapse with oral baclofen",
+     "Reassure the patient and repeat the EDSS in six months",
+     "Switch immediately to teriflunomide without any imaging",
+     "Suspect PML, stop the drug, and obtain MRI and JCV testing",
+     "Increase the natalizumab dose and continue treatment"
+    ],
+    "correct": 3,
+    "exp": "New progressive deficits, cognitive decline, or focal signs on natalizumab suggest PML from JC virus — stop the drug and obtain MRI and JCV testing.",
+    "why": [
+     "Baclofen treats spasticity and would not address a suspected opportunistic brain infection.",
+     "Waiting six months allows a potentially devastating infection to progress unchecked.",
+     "Switching therapy without imaging leaves the suspected diagnosis unconfirmed and untreated.",
+     "",
+     "Escalating the drug that carries the PML risk is exactly the wrong move."
+    ]
+   },
+   {
+    "q": "A patient has bilateral optic neuritis and a longitudinally extensive cord lesion. What must be excluded before choosing a therapy?",
+    "ch": [
+     "Benign fasciculation syndrome, by needle EMG",
+     "NMOSD, by testing aquaporin-4 and MOG antibodies",
+     "Vitamin D deficiency, by a 25-hydroxy level",
+     "Migraine with aura, by keeping a headache diary",
+     "Carpal tunnel syndrome, by nerve conduction"
+    ],
+    "correct": 1,
+    "exp": "Longitudinally extensive transverse myelitis or bilateral optic neuritis points to NMOSD rather than MS, so check aquaporin-4 and MOG antibodies, because the wrong disease-modifying therapy can worsen NMOSD.",
+    "why": [
+     "Fasciculations are a peripheral phenomenon and do not account for optic neuritis.",
+     "",
+     "Low vitamin D is a risk factor but does not explain this lesion pattern or change the immediate therapy decision.",
+     "Migraine does not produce a longitudinally extensive cord lesion.",
+     "Carpal tunnel syndrome is a peripheral entrapment and is unrelated to CNS demyelination."
+    ]
+   },
+   {
+    "q": "Which screening is required before starting an anti-CD20 monoclonal antibody such as ocrelizumab?",
+    "ch": [
+     "Baseline ECG for bradycardia",
+     "Macular OCT for edema",
+     "Teriflunomide washout period",
+     "Hepatitis B screening",
+     "Anti-JCV antibody index"
+    ],
+    "correct": 3,
+    "exp": "Anti-CD20 monoclonal antibodies require hepatitis B screening first because of the risk of hepatitis B reactivation, alongside attention to infusion reactions and infection risk, and live vaccines are held.",
+    "why": [
+     "A baseline ECG is required for S1P modulators because of first-dose bradycardia and AV block.",
+     "Macular edema surveillance belongs to the S1P modulators rather than to anti-CD20 agents.",
+     "A washout for teratogenicity applies to teriflunomide in pregnancy planning.",
+     "",
+     "The anti-JCV antibody index stratifies PML risk for natalizumab, not for anti-CD20 therapy."
+    ]
+   }
+  ]
+ }
+}

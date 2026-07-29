@@ -1,0 +1,977 @@
+{
+ "depression": {
+  "condition": "Major Depressive Disorder",
+  "questions": [
+   {
+    "q": "According to the DSM-5-TR criteria taught in this module, what is the minimum requirement to diagnose major depressive disorder?",
+    "ch": [
+     "At least 2 of 9 symptoms for at least 2 weeks plus a confirmatory serum marker",
+     "Any 3 of the 9 symptoms present for at least 1 week, regardless of impairment",
+     "At least 5 of 9 symptoms lasting at least 6 months, including guilt or worthlessness",
+     "At least 5 of 9 symptoms for at least 2 weeks, including depressed mood or anhedonia, with functional impairment",
+     "All 9 of the 9 symptoms for at least 2 weeks, with psychomotor change mandatory"
+    ],
+    "correct": 3,
+    "exp": "DSM-5-TR requires at least 5 of 9 symptoms for at least 2 weeks, at least one of which must be depressed mood or anhedonia, causing functional impairment.",
+    "why": [
+     "Two symptoms is below threshold, and the module stresses there is no confirmatory lab test for MDD.",
+     "Three symptoms over one week falls short of both the symptom count and the two-week duration, and functional impairment is required.",
+     "Six months is the duration threshold used for generalized anxiety disorder; MDD requires only two weeks.",
+     "",
+     "All nine symptoms are not required — five suffice — and no single symptom such as psychomotor change is mandatory."
+    ]
+   },
+   {
+    "q": "The mnemonic SIG E CAPS is taught for major depressive disorder. Which set of items does it represent?",
+    "ch": [
+     "Distractibility, Impulsivity, Grandiosity, Flight of ideas, Activity increase, decreased Sleep need, Talkativeness",
+     "Restlessness, fatigue, poor concentration, irritability, muscle tension, and sleep disturbance",
+     "Confusion, ophthalmoplegia, ataxia, anterograde amnesia, and confabulation",
+     "Delusions, hallucinations, disorganized speech, catatonic behavior, and negative symptoms",
+     "Sleep change, Interest loss, Guilt, Energy loss, Concentration impairment, Appetite change, Psychomotor change, Suicidal ideation"
+    ],
+    "correct": 4,
+    "exp": "SIG E CAPS — Sleep, Interest, Guilt, Energy, Concentration, Appetite, Psychomotor, Suicidality — plus depressed mood is the module's memory aid for the nine MDD criteria.",
+    "why": [
+     "That list is DIG FAST, the mnemonic the app uses for manic symptoms in bipolar disorder.",
+     "Those are the associated symptoms of generalized anxiety disorder, not the MDD criteria.",
+     "That describes the Wernicke/Korsakoff picture taught under alcohol withdrawal, not depression.",
+     "Those are the five core DSM-5 symptom domains used to diagnose schizophrenia.",
+     ""
+    ]
+   },
+   {
+    "q": "The module highlights a black-box warning attached to antidepressants. Which group does it identify as requiring especially close early monitoring?",
+    "ch": [
+     "Pregnant patients in the third trimester",
+     "Patients with comorbid chronic pain",
+     "Patients under 25 years of age",
+     "Patients with a first-degree relative who has depression",
+     "Patients over 65 years of age"
+    ],
+    "correct": 2,
+    "exp": "The black-box suicidality warning applies to patients under 25, and the module pairs it with close monitoring early in therapy.",
+    "why": [
+     "Peripartum depression is listed as a specifier and brexanolone/zuranolone as options, but pregnancy is not the black-box group.",
+     "Comorbid pain steers drug choice toward an SNRI such as duloxetine; it is not the black-box population.",
+     "",
+     "Heritability is roughly 40%, but family history is not what the black-box warning is keyed to.",
+     "Older adults carry other cautions such as TCA and anticholinergic risk, but the black-box suicidality warning is specified for those under 25."
+    ]
+   },
+   {
+    "q": "A patient with major depression reports prominent insomnia and a 12-pound unintentional weight loss. Which agent does the module specifically match to this presentation?",
+    "ch": [
+     "Phenelzine",
+     "Nortriptyline",
+     "Fluoxetine",
+     "Bupropion",
+     "Mirtazapine"
+    ],
+    "correct": 4,
+    "exp": "The module matches insomnia with poor appetite and weight loss to mirtazapine, whose sedation and weight gain become therapeutic rather than unwanted effects.",
+    "why": [
+     "Phenelzine is an MAOI reserved for atypical or treatment-resistant depression and requires a tyramine-free diet.",
+     "Nortriptyline is a TCA used second- or third-line for refractory or melancholic depression and is lethal in overdose.",
+     "Fluoxetine is a first-line SSRI, but it is not the agent the module matches to insomnia with weight loss.",
+     "Bupropion is reserved for depression with fatigue or low energy, or when sexual and weight side effects must be avoided; it is activating and would worsen insomnia.",
+     ""
+    ]
+   },
+   {
+    "q": "A nurse cares for a severely depressed patient started on sertraline 10 days ago. The patient is noticeably more energetic and active but still voices hopelessness. What does the module teach about this?",
+    "ch": [
+     "It is an anticholinergic effect that will fade without any change in monitoring",
+     "Psychomotor retardation can lift before mood improves, so suicide risk may rise and precautions must continue",
+     "It confirms a full therapeutic response, so the dose can now be reduced",
+     "It signals serotonin syndrome and the SSRI should be stopped at once",
+     "It indicates an antidepressant-induced manic switch requiring a mood stabilizer"
+    ],
+    "correct": 1,
+    "exp": "The module warns of a paradoxical energy surge in the first 1-2 weeks of antidepressant therapy: as psychomotor retardation lifts before mood improves, suicide risk can rise.",
+    "why": [
+     "Anticholinergic effects belong to the TCAs, and this change demands more monitoring rather than less.",
+     "",
+     "Full antidepressant effect takes 2-6 weeks, and persisting hopelessness shows the mood symptoms have not yet responded.",
+     "Serotonin syndrome presents with agitation, tremor, fever and clonus, not with isolated improvement in activity.",
+     "A manic switch involves elevated or irritable mood with decreased need for sleep and grandiosity, not persisting hopelessness."
+    ]
+   },
+   {
+    "q": "How does the module define treatment-resistant depression?",
+    "ch": [
+     "A PHQ-9 score that remains above 20 at the first follow-up visit",
+     "Failure of at least two adequate antidepressant trials, meaning adequate dose and duration",
+     "Any relapse occurring after the medication has been tapered and stopped",
+     "Failure of a single antidepressant given for two weeks at any dose",
+     "Failure of psychotherapy alone after six months of weekly sessions"
+    ],
+    "correct": 1,
+    "exp": "Treatment-resistant depression is failure of at least two adequate antidepressant trials — adequate dose and duration, which the module defines as a therapeutic dose for 6-8 weeks — and prompts augmentation, ECT, or esketamine.",
+    "why": [
+     "A high PHQ-9 grades severity and guides titration, but resistance is defined by failed drug trials.",
+     "",
+     "Relapse after taper is why maintenance runs 6-12 months or longer; it is not the definition of resistance.",
+     "Two weeks is far short of an adequate trial; the module defines adequacy as a therapeutic dose for 6-8 weeks.",
+     "The definition is anchored on failed antidepressant trials, not on the number of psychotherapy sessions."
+    ]
+   },
+   {
+    "q": "Which statement about ECT best reflects the module's teaching?",
+    "ch": [
+     "It is the most effective acute treatment and is indicated for severe or psychotic depression, catatonia, acute suicidality, and pregnancy",
+     "It is a true last resort, permitted only after both esketamine and an MAOI trial have clearly failed",
+     "It is contraindicated during pregnancy because of the risk of inducing fetal seizures and preterm labor",
+     "It is used mainly for mild depression that has not responded to a course of psychotherapy alone",
+     "It works by directly raising synaptic serotonin faster than any SSRI can achieve"
+    ],
+    "correct": 0,
+    "exp": "The module calls ECT the fastest and most effective acute treatment — explicitly not a last resort — with indications including severe or psychotic depression, catatonia, acute suicidality, pregnancy, and refractory illness.",
+    "why": [
+     "",
+     "The module states plainly that ECT is not a last resort; it is the fastest and most effective option for severe disease.",
+     "Pregnancy is listed as an indication for ECT in this module, not as a contraindication.",
+     "ECT is reserved for severe, psychotic, catatonic, suicidal, or refractory depression rather than mild illness.",
+     "ECT's benefit is not explained by an immediate rise in synaptic serotonin; the module ties therapeutic lag to downstream neuroplasticity and BDNF."
+    ]
+   },
+   {
+    "q": "Three weeks after starting an SSRI for what was diagnosed as major depression, a 22-year-old is sleeping 3 hours a night, speaking rapidly, and has spent his tuition money. What does the module direct?",
+    "ch": [
+     "Emergence of mania or hypomania — reassess for bipolar disorder and stop the offending agent",
+     "This is a discontinuation syndrome; restart the SSRI at the original dose and taper slowly",
+     "This is akathisia from the SSRI; add a beta-blocker and continue at the current dose",
+     "This is the expected paradoxical energy surge; continue the SSRI and reassess in two weeks",
+     "This is serotonin syndrome; add cyproheptadine and continue the SSRI at a lower dose"
+    ],
+    "correct": 0,
+    "exp": "The module lists emergence of mania or hypomania after starting an antidepressant as a red flag: reassess for bipolar disorder and stop the offending agent, since unopposed antidepressant can precipitate mania or rapid cycling.",
+    "why": [
+     "",
+     "Discontinuation syndrome follows abrupt stopping of the drug, and this patient is still taking it.",
+     "Akathisia is a motor restlessness, not reduced sleep need with pressured speech and impulsive spending.",
+     "The paradoxical energy surge is a lift in psychomotor retardation during the first 1-2 weeks, not decreased sleep need with grandiose spending.",
+     "Serotonin syndrome is agitation, tremor, fever and clonus, not a sustained elevated-mood syndrome."
+    ]
+   },
+   {
+    "q": "A patient who frequently misses doses asks which antidepressant is least likely to cause symptoms if a dose is skipped. Which answer matches the module's pearls?",
+    "ch": [
+     "Venlafaxine, because it has both serotonergic and noradrenergic activity",
+     "Amitriptyline, because its anticholinergic effects buffer withdrawal symptoms",
+     "Phenelzine, because monoamine oxidase inhibition is irreversible",
+     "Fluoxetine, because its long half-life makes it effectively self-tapering",
+     "Paroxetine, because it is highly protein-bound in plasma"
+    ],
+    "correct": 3,
+    "exp": "The module's pearl is that fluoxetine has the longest half-life and is therefore self-tapering, while paroxetine and venlafaxine have the worst discontinuation syndrome.",
+    "why": [
+     "Venlafaxine is specifically cited for a marked discontinuation syndrome, and the module also warns it raises blood pressure.",
+     "Amitriptyline is a TCA reserved for refractory or melancholic depression and is lethal in overdose; the module does not present it as forgiving of missed doses.",
+     "Phenelzine is an MAOI requiring a tyramine-free diet and washout periods, which makes erratic adherence more dangerous rather than safer.",
+     "",
+     "Paroxetine is named as one of the two agents with the worst discontinuation syndrome."
+    ]
+   },
+   {
+    "q": "A patient describes hypersomnia, marked overeating, a heavy leaden feeling in the limbs, and intense sensitivity to perceived rejection. Which specifier and drug class does the module attach to this picture?",
+    "ch": [
+     "Peripartum depression — consider brexanolone or zuranolone",
+     "Melancholic depression — consider esketamine under REMS monitoring",
+     "Atypical depression — consider an MAOI such as phenelzine",
+     "Psychotic depression — consider antipsychotic augmentation or ECT",
+     "Seasonal depression — consider bupropion for its activating profile"
+    ],
+    "correct": 2,
+    "exp": "Atypical depression is defined in the module as hypersomnia, hyperphagia, leaden paralysis and rejection sensitivity, and MAOIs are the class it lists for atypical or treatment-resistant disease.",
+    "why": [
+     "Brexanolone and zuranolone are named for postpartum depression, which is not the presentation described here.",
+     "Melancholic features are a separate specifier, and esketamine is reserved for treatment-resistant depression and acute suicidality.",
+     "",
+     "Psychotic features mean delusions or hallucinations such as nihilistic guilt or command content, which this patient does not have.",
+     "Seasonal is a listed specifier, but the described cluster of leaden paralysis and rejection sensitivity defines atypical depression."
+    ]
+   }
+  ]
+ },
+ "anxiety": {
+  "condition": "Anxiety Disorders",
+  "questions": [
+   {
+    "q": "Per the module, generalized anxiety disorder requires excessive worry lasting how long, plus how many associated symptoms?",
+    "ch": [
+     "At least 6 months of worry plus at least 3 associated symptoms",
+     "At least 2 weeks of worry plus at least 4 associated symptoms",
+     "At least 6 weeks of worry plus at least 2 associated symptoms",
+     "At least 12 months of worry plus at least 6 associated symptoms",
+     "At least 1 month of worry plus at least 5 associated symptoms"
+    ],
+    "correct": 0,
+    "exp": "GAD is defined as excessive worry for at least 6 months plus at least 3 of restlessness, fatigue, poor concentration, irritability, muscle tension, and sleep disturbance.",
+    "why": [
+     "",
+     "Two weeks is the duration threshold for a major depressive episode, not for GAD.",
+     "The module specifies six months, not six weeks, along with three associated symptoms.",
+     "Twelve months and six symptoms overstate both thresholds the module gives.",
+     "One month of anticipatory worry is the panic disorder criterion, and GAD requires three associated symptoms rather than five."
+    ]
+   },
+   {
+    "q": "Which screening tool and cut-off does the module use to quantify anxiety severity?",
+    "ch": [
+     "PHQ-9, with a score of 15 or more indicating moderate anxiety",
+     "CIWA-Ar, with a score of 10 or more indicating moderate anxiety",
+     "MDQ, with 7 or more positive items indicating moderate anxiety",
+     "C-SSRS, with any positive item indicating moderate anxiety",
+     "GAD-7, with a score of 10 or more indicating moderate anxiety"
+    ],
+    "correct": 4,
+    "exp": "The module quantifies anxiety with the GAD-7 and cites 10 or more as moderate — a common threshold at which to consider treatment.",
+    "why": [
+     "PHQ-9 is used alongside the GAD-7, but it screens for comorbid depression rather than grading anxiety severity.",
+     "CIWA-Ar grades alcohol withdrawal severity, not anxiety disorders.",
+     "The Mood Disorder Questionnaire is a bipolar screening tool.",
+     "The C-SSRS is a structured suicide risk assessment instrument, not an anxiety severity scale.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with GAD asks whether buspirone can be taken only when she feels panicky. What does the module teach?",
+    "ch": [
+     "It should be reserved for performance anxiety and taken one hour before the event",
+     "It can be used as needed, but only if an SSRI is taken at the same time",
+     "It must be taken daily, has a delayed onset over weeks, and gives no acute panic relief",
+     "It works within 20 minutes and is the preferred rescue agent for panic attacks",
+     "It is habit-forming, so it should be limited to occasional use during severe episodes"
+    ],
+    "correct": 2,
+    "exp": "Buspirone has a delayed onset of weeks, is not effective as a PRN, and gives no acute panic relief — though it is non-sedating and carries no dependence risk.",
+    "why": [
+     "Propranolol, not buspirone, is the agent the module lists for performance or situational anxiety.",
+     "Buspirone is listed as a non-sedating augmentation or alternative for GAD, but pairing it with an SSRI does not make it work as needed.",
+     "",
+     "Buspirone's onset is weeks, not minutes, and the module explicitly says it is not effective for acute panic.",
+     "The module states buspirone carries no dependence risk; that concern belongs to the benzodiazepines."
+    ]
+   },
+   {
+    "q": "A patient started on escitalopram for panic disorder calls on day 6 saying her anxiety is worse than before. Which response reflects the module's teaching?",
+    "ch": [
+     "Add a long-term daily benzodiazepine as definitive therapy in place of the SSRI",
+     "Stop the drug immediately, because worsening anxiety indicates an allergic reaction",
+     "Conclude the diagnosis is wrong and screen her for hyperthyroidism instead",
+     "SSRIs can transiently worsen anxiety in the first 1-2 weeks; reinforce adherence while awaiting the 4-6 week effect",
+     "Double the dose today, because the starting dose was clearly too low for panic disorder"
+    ],
+    "correct": 3,
+    "exp": "The module warns that SSRIs may transiently worsen anxiety in the first 1-2 weeks — start low and go slow, and warn patients or they quit early — with full effect at 4-6 weeks.",
+    "why": [
+     "Benzodiazepines are a short-term bridge only and are never definitive long-term monotherapy.",
+     "Early worsening is an expected transient effect of the drug, not an allergic reaction.",
+     "A TSH should be checked at baseline to exclude hyperthyroidism, but expected early worsening does not overturn the diagnosis.",
+     "",
+     "The module advises starting low, going slow, and titrating, rather than doubling the dose within the first week."
+    ]
+   },
+   {
+    "q": "Propranolol is being considered for a musician with performance anxiety. Which comorbidity on the module's list makes this a poor choice?",
+    "ch": [
+     "Mild iron-deficiency anemia",
+     "Asthma",
+     "Gastroesophageal reflux disease",
+     "Well-controlled essential hypertension",
+     "A long history of migraine headaches"
+    ],
+    "correct": 1,
+    "exp": "The module lists asthma, bradycardia, and decompensated heart failure as the settings in which propranolol should be avoided, and notes it treats somatic symptoms rather than cognitive worry.",
+    "why": [
+     "Anemia is not one of the listed contraindications, although the module does stress excluding organic mimics generally.",
+     "",
+     "Reflux is not among the situations in which the module says to avoid propranolol.",
+     "Hypertension is not a listed contraindication; the blood-pressure caution in this module attaches to venlafaxine, which raises BP.",
+     "Migraine is not among the cautions the module gives for propranolol."
+    ]
+   },
+   {
+    "q": "A patient is having an acute panic attack in the emergency department. Which nursing approach does the module prioritize?",
+    "ch": [
+     "Encourage the patient to describe the childhood origins of the fear in detail",
+     "Have the patient breathe rapidly into a paper bag until the symptoms resolve",
+     "Stay with the patient in a calm low-stimulation setting, give short simple directions, and guide slow breathing",
+     "Leave the patient alone in a darkened room to prevent overstimulation",
+     "Provide detailed written teaching about the fear circuit while symptoms peak"
+    ],
+    "correct": 2,
+    "exp": "The module directs the nurse to stay with the patient, provide a calm low-stimulation environment, use short simple directions, and guide slow breathing.",
+    "why": [
+     "Exploratory work belongs to CBT and exposure therapy over time, not to the peak of an acute attack.",
+     "Rapid breathing into a bag is not the taught intervention; the module teaches guided slow diaphragmatic breathing.",
+     "",
+     "The environment should be low-stimulation, but the module directs the nurse to stay with the patient rather than leave them alone.",
+     "The priority is to reduce anxiety to a manageable level before beginning any teaching."
+    ]
+   },
+   {
+    "q": "A 74-year-old with no psychiatric history develops severe new anxiety with palpitations and sweating. Which red flag from the module applies?",
+    "ch": [
+     "New severe anxiety in an older adult suggests a medical cause — pheochromocytoma, hyperthyroidism, hypoxia, or medication — until proven otherwise",
+     "Older adults tolerate benzodiazepines well, so lorazepam is the safest first step here",
+     "Anxiety of new onset after age 70 is almost always a prodrome of major depressive disorder",
+     "No workup is needed, because anxiety disorders are clinical diagnoses with no confirmatory test",
+     "This is expected late-onset GAD; start buspirone and reassess in six weeks"
+    ],
+    "correct": 0,
+    "exp": "The module flags new severe anxiety in an older adult as a signal to think medical cause — pheochromocytoma, hyperthyroid, hypoxia, medication — until proven otherwise.",
+    "why": [
+     "",
+     "Benzodiazepines carry sedation, dependence and fall risk and are a Beers-criteria concern in the elderly.",
+     "Comorbid depression should be screened for, but the module attributes new severe late-onset anxiety to medical causes first.",
+     "Anxiety is a clinical diagnosis, yet the module still requires excluding organic mimics such as hyperthyroidism before committing to it.",
+     "Anchoring on a primary anxiety disorder is exactly what this red flag warns against, and buspirone's delayed onset would leave a medical cause untreated."
+    ]
+   },
+   {
+    "q": "Which combination does the module single out as producing dangerous respiratory depression?",
+    "ch": [
+     "CBT plus an SNRI",
+     "A benzodiazepine plus opioids or alcohol",
+     "Venlafaxine plus hydroxyzine",
+     "Buspirone plus hydroxyzine",
+     "Propranolol plus an SSRI"
+    ],
+    "correct": 1,
+    "exp": "The module warns that benzodiazepines combined with opioids or alcohol cause dangerous respiratory depression, and notes benzodiazepines are also a Beers-list concern in the elderly.",
+    "why": [
+     "CBT combined with pharmacotherapy is presented as producing the best outcomes, not as a hazard.",
+     "",
+     "Venlafaxine with hydroxyzine is not the flagged pair; the venlafaxine caution in this module is a dose-related rise in blood pressure.",
+     "Buspirone is non-sedating with no dependence risk and hydroxyzine is offered as a non-addictive option; this pair is not the flagged danger.",
+     "Propranolol with an SSRI is not the flagged combination; propranolol's cautions are asthma, bradycardia, and decompensated heart failure."
+    ]
+   },
+   {
+    "q": "A 58-year-old smoker presents with 20 minutes of chest pain, dyspnea, and a sense of dread that peaked within minutes. Which approach matches the module's teaching?",
+    "ch": [
+     "Give a benzodiazepine and discharge once the patient feels calmer, with no further testing",
+     "Order a GAD-7 and treat if the score is 10 or more, deferring any cardiac evaluation",
+     "Start an SSRI immediately, because chest pain from panic responds within 48 hours",
+     "Exclude ACS, PE, and hyperthyroid storm before attributing the episode to a panic attack",
+     "Diagnose panic disorder now, since symptoms peaking within minutes are pathognomonic"
+    ],
+    "correct": 3,
+    "exp": "The module's red flag is explicit: with chest pain, syncope, or arrhythmia, exclude ACS, PE, and hyperthyroid storm before calling it panic — and its workup includes ECG and troponin when chest pain is present.",
+    "why": [
+     "Discharging without evaluation ignores the red flag to exclude ACS and PE first.",
+     "The GAD-7 quantifies anxiety severity; it cannot exclude an acute coronary syndrome.",
+     "SSRIs take 4-6 weeks for full effect and can transiently worsen anxiety, and starting one does not address a possible ACS.",
+     "",
+     "Peaking within minutes is characteristic of panic, but it is not enough to skip the cardiac and pulmonary workup in this patient."
+    ]
+   },
+   {
+    "q": "An inpatient develops tremor, tachycardia, and severe anxiety two days after admission. Which module red flag should be considered before treating this as an anxiety disorder?",
+    "ch": [
+     "Serotonin syndrome caused by as-needed hydroxyzine doses",
+     "A conversion reaction to the stress of being hospitalized",
+     "An emerging manic episode caused by an antidepressant switch",
+     "Tardive dyskinesia from a previously prescribed antipsychotic",
+     "Benzodiazepine or alcohol withdrawal masquerading as anxiety"
+    ],
+    "correct": 4,
+    "exp": "The module lists signs of benzodiazepine or alcohol withdrawal — tremor, tachycardia, seizures — as a red flag that can masquerade as anxiety, and its workup includes screening for substance withdrawal.",
+    "why": [
+     "Hydroxyzine is an antihistamine, and serotonin syndrome features clonus, fever and agitation rather than this withdrawal timeline.",
+     "The module directs excluding substance withdrawal and organic mimics before attributing new symptoms to psychological stress.",
+     "A manic switch presents with elevated mood and decreased need for sleep rather than isolated tremor and tachycardia.",
+     "Tardive dyskinesia is a late choreoathetoid movement disorder, not an acute autonomic surge.",
+     ""
+    ]
+   }
+  ]
+ },
+ "bipolar": {
+  "condition": "Bipolar Disorder",
+  "questions": [
+   {
+    "q": "Which statement correctly distinguishes bipolar I from bipolar II as the module defines them?",
+    "ch": [
+     "Bipolar I requires both a manic and a major depressive episode, whereas bipolar II requires neither of them",
+     "Bipolar I requires a hypomanic episode, while bipolar II requires at least one full manic episode",
+     "Bipolar I is diagnosed only after four or more distinct mood episodes have occurred within one year",
+     "Bipolar I requires at least one manic episode; bipolar II requires a hypomanic episode plus a major depressive episode with no full mania",
+     "Bipolar I and bipolar II differ only in whether psychotic features have ever been present"
+    ],
+    "correct": 3,
+    "exp": "One manic episode — 7 days or more, or requiring hospitalization — makes it bipolar I, and depression is not required. Bipolar II is a hypomanic episode plus a major depressive episode with no full mania.",
+    "why": [
+     "Depression is common in bipolar I but is not required; a single manic episode is sufficient.",
+     "This reverses the definitions: mania defines bipolar I and hypomania defines bipolar II.",
+     "Four or more episodes in a year defines rapid cycling, which is a course specifier rather than the type.",
+     "",
+     "Psychosis marks an episode as manic rather than hypomanic, but the type rests on mania versus hypomania, not on psychosis alone."
+    ]
+   },
+   {
+    "q": "The mnemonic DIG FAST is used for which set of findings?",
+    "ch": [
+     "The laboratory parameters required for monitoring before and during lithium therapy",
+     "The five core symptom domains used to diagnose schizophrenia",
+     "The nine DSM-5-TR criteria for a major depressive episode",
+     "Manic symptoms: distractibility, impulsivity, grandiosity, flight of ideas, increased activity, decreased sleep need, talkativeness",
+     "The staged timeline of alcohol withdrawal from tremor through delirium tremens"
+    ],
+    "correct": 3,
+    "exp": "DIG FAST — Distractibility, Impulsivity/Indiscretion, Grandiosity, Flight of ideas, Activity/energy increase, decreased Sleep need, Talkativeness — is the module's mania mnemonic.",
+    "why": [
+     "Lithium monitoring covers level, renal function, TSH and calcium, which is not what DIG FAST stands for.",
+     "The schizophrenia criteria are delusions, hallucinations, disorganized speech, disorganized or catatonic behavior, and negative symptoms.",
+     "SIG E CAPS, not DIG FAST, is the mnemonic for the depressive criteria.",
+     "",
+     "The alcohol withdrawal timeline is tracked by hours from the last drink and graded with CIWA-Ar, not by DIG FAST."
+    ]
+   },
+   {
+    "q": "Which agent does the module identify as the only mood stabilizer with robust evidence of reducing suicide?",
+    "ch": [
+     "Lithium",
+     "Valproate",
+     "Lamotrigine",
+     "Carbamazepine",
+     "Quetiapine"
+    ],
+    "correct": 0,
+    "exp": "Lithium is the gold-standard mood stabilizer for acute mania and maintenance and has the strongest anti-suicide evidence of any agent in the module.",
+    "why": [
+     "",
+     "Valproate treats acute mania, mixed episodes and rapid cycling, but the anti-suicide evidence belongs to lithium.",
+     "Lamotrigine is used for maintenance and bipolar depression prophylaxis and is weak for acute mania.",
+     "Carbamazepine is an alternative for mania, especially mixed or rapid cycling, and is notable for CYP3A4 autoinduction.",
+     "Quetiapine covers acute mania, agitation, psychosis and bipolar depression, but lithium is the agent named for suicide reduction."
+    ]
+   },
+   {
+    "q": "A patient stable on lithium develops coarse tremor, ataxia, vomiting and confusion after a week of gastroenteritis and daily ibuprofen. Which explanation does the module give?",
+    "ch": [
+     "Ibuprofen displaces lithium from plasma protein binding sites, increasing the free drug fraction",
+     "Gastroenteritis induces hepatic CYP3A4 and accelerates the metabolism of lithium",
+     "These are expected steady-state effects of a therapeutic lithium level of 0.6-1.2 mEq/L",
+     "This is a Stevens-Johnson prodrome, so the lithium must be titrated more slowly",
+     "Volume depletion and NSAIDs reduce renal lithium clearance, raising the level into the toxic range"
+    ],
+    "correct": 4,
+    "exp": "Lithium is renally cleared, so dehydration, NSAIDs, thiazides and ACE inhibitors/ARBs raise levels toward toxicity; coarse tremor, ataxia, vomiting and confusion are the module's toxicity signs.",
+    "why": [
+     "The module explains lithium toxicity through reduced renal clearance, not through protein-binding displacement.",
+     "CYP3A4 autoinduction is a carbamazepine issue; lithium is cleared renally in the module's account.",
+     "Tremor, ataxia, vomiting and confusion are toxicity signs, not expected effects at a therapeutic level.",
+     "Stevens-Johnson syndrome and slow titration belong to lamotrigine, not to lithium.",
+     ""
+    ]
+   },
+   {
+    "q": "A hyperactive manic patient will not sit down for meals. Which nursing intervention does the module specify?",
+    "ch": [
+     "Withhold food until the patient agrees to remain seated at the table",
+     "Provide a large hot meal in the busy dayroom to encourage social interaction",
+     "Offer high-calorie finger foods the patient can eat while moving",
+     "Insert a nasogastric tube to guarantee caloric intake during the episode",
+     "Restrict fluids to reduce the pacing and agitation before offering any food"
+    ],
+    "correct": 2,
+    "exp": "The module directs offering high-calorie finger foods the patient can eat on the move, since manic patients may not sit to eat, while promoting rest, hydration and nutrition.",
+    "why": [
+     "Withholding food is punitive and conflicts with the directive to promote nutrition; limits are set on intrusive behavior, not on meals.",
+     "A stimulating dayroom setting works against the low-stimulation environment the module requires.",
+     "",
+     "Nothing in the module escalates to tube feeding for a manic patient who is simply too active to sit down.",
+     "Hydration is to be promoted, and steady salt and fluid intake is specifically important on lithium."
+    ]
+   },
+   {
+    "q": "A patient two weeks into a lamotrigine titration reports a spreading rash with mouth sores. What does the module direct?",
+    "ch": [
+     "Stop lamotrigine immediately — this may be Stevens-Johnson syndrome",
+     "Hold the lithium and check a lithium level along with renal function",
+     "Check an ANC urgently, because this presentation suggests agranulocytosis",
+     "Reduce the dose by half and re-titrate back up over the next 48 hours",
+     "Continue lamotrigine and add an antihistamine, since rash is common and self-limited"
+    ],
+    "correct": 0,
+    "exp": "An emerging rash on lamotrigine, especially with mucosal involvement, means stopping the drug immediately for possible Stevens-Johnson syndrome; slow titration is the safeguard against it.",
+    "why": [
+     "",
+     "Lithium toxicity presents with tremor, ataxia, vomiting and confusion; this patient's problem is a drug rash.",
+     "Agranulocytosis with ANC monitoring is a carbamazepine and clozapine concern, not the lamotrigine rash pathway.",
+     "Slow titration prevents the reaction, but once rash with mucosal involvement appears the drug is stopped, not re-titrated.",
+     "The module treats a rash on lamotrigine as a stop signal, not as a nuisance to manage with antihistamines."
+    ]
+   },
+   {
+    "q": "A 24-year-old with bipolar II presents in a depressive episode. Why does the module caution against starting an SSRI alone, and what does it favor instead?",
+    "ch": [
+     "SSRIs cause tardive dyskinesia in bipolar patients, so a VMAT2 inhibitor is started first",
+     "SSRIs are ineffective in any form of depression, so lamotrigine is used purely as a placebo-sparing measure",
+     "SSRIs cause Ebstein anomaly, so valproate is preferred in anyone of childbearing potential",
+     "SSRIs raise lithium levels, so carbamazepine must be substituted before any antidepressant is added",
+     "Unopposed antidepressants risk a manic switch or rapid cycling, so mood stabilizers or quetiapine, lurasidone or cariprazine come first"
+    ],
+    "correct": 4,
+    "exp": "The module's antidepressant monotherapy caution: in bipolar depression, unopposed antidepressants risk a manic switch or rapid cycling, so guidelines favor mood stabilizers or quetiapine, lurasidone, or cariprazine — the agents FDA-approved for bipolar depression.",
+    "why": [
+     "Tardive dyskinesia is an antipsychotic complication and VMAT2 inhibitors are its treatment, not a bipolar depression therapy.",
+     "The concern is a manic switch rather than lack of antidepressant efficacy, and lamotrigine has real value in preventing depressive relapse.",
+     "Ebstein anomaly is the lithium teratogenicity risk, and valproate is the agent to avoid in people who may become pregnant.",
+     "Lithium levels rise with dehydration, NSAIDs, thiazides and ACEi/ARBs, not with SSRIs.",
+     ""
+    ]
+   },
+   {
+    "q": "A 27-year-old with bipolar I is planning a pregnancy. Which pairing of drug and reproductive risk matches the module?",
+    "ch": [
+     "Quetiapine — neural tube defects; valproate — Stevens-Johnson syndrome",
+     "Valproate — neural tube defects; lithium — Ebstein anomaly",
+     "Lithium — neural tube defects; valproate — Ebstein anomaly",
+     "Lamotrigine — Ebstein anomaly; quetiapine — neural tube defects",
+     "Carbamazepine — Ebstein anomaly; lithium — agranulocytosis"
+    ],
+    "correct": 1,
+    "exp": "The module pairs valproate with neural tube defects — avoid it in people who may become pregnant — and lithium with Ebstein anomaly, and notes ECT is an option during pregnancy.",
+    "why": [
+     "Stevens-Johnson syndrome is the lamotrigine and carbamazepine risk; valproate's teratogenic signature is neural tube defects.",
+     "",
+     "This reverses the two: neural tube defects belong to valproate and Ebstein anomaly to lithium.",
+     "Lamotrigine's signature risk is Stevens-Johnson syndrome, and quetiapine's is metabolic burden.",
+     "Ebstein anomaly is a lithium risk, and agranulocytosis is associated with carbamazepine rather than lithium."
+    ]
+   },
+   {
+    "q": "Which depressive presentation should most strongly prompt screening for bipolar disorder before an antidepressant is started, per the module?",
+    "ch": [
+     "A single mild episode following a job loss, with a normal TSH",
+     "Early-onset, recurrent, psychotic or postpartum depression, or prior antidepressant-induced hypomania",
+     "Depression with hypersomnia and hyperphagia in a patient over 65",
+     "Depression accompanied by muscle tension and six months of uncontrollable worry",
+     "A first episode at age 58 with prominent comorbid neuropathic pain"
+    ],
+    "correct": 1,
+    "exp": "The module says to suspect bipolar in depression that is early-onset, recurrent, psychotic, postpartum, or accompanied by antidepressant-induced hypomania, and notes peak onset is the late teens to mid-20s.",
+    "why": [
+     "A single mild reactive episode with normal thyroid function is not among the bipolar warning features listed.",
+     "",
+     "Hypersomnia and hyperphagia describe atypical depression, for which MAOIs are considered.",
+     "Muscle tension with six months of worry describes generalized anxiety disorder.",
+     "A later first onset with comorbid pain points toward an SNRI such as duloxetine rather than toward a bipolar screen."
+    ]
+   },
+   {
+    "q": "A patient with delirious mania is dehydrated, exhausted, and not responding to a mood stabilizer plus an antipsychotic. Per the module, what should be considered?",
+    "ch": [
+     "Discharging with mood charting and close outpatient follow-up",
+     "Withholding all fluids to avoid raising the lithium level further",
+     "Electroconvulsive therapy — indicated for severe, refractory, or life-threatening mania",
+     "Starting an SSRI to address the underlying depressive substrate",
+     "Adding lamotrigine and titrating rapidly to a therapeutic dose"
+    ],
+    "correct": 2,
+    "exp": "Delirious or severe mania with dehydration and exhaustion is called a medical emergency that may need ECT; the module lists ECT for severe or refractory mania or depression, catatonia and pregnancy, and calls it first-line when rapid response is needed.",
+    "why": [
+     "This presentation is described as a medical emergency, not a situation for outpatient management.",
+     "Dehydration raises lithium levels toward toxicity; the module directs steady salt and fluid intake.",
+     "",
+     "An antidepressant in bipolar disorder risks a manic switch and would worsen an active manic episode.",
+     "Lamotrigine is weak for acute mania and requires slow titration to avoid Stevens-Johnson syndrome."
+    ]
+   }
+  ]
+ },
+ "schizophrenia": {
+  "condition": "Schizophrenia",
+  "questions": [
+   {
+    "q": "Which set of durations distinguishes schizophrenia from schizophreniform and brief psychotic disorder in the module?",
+    "ch": [
+     "Brief psychotic disorder under 1 week, schizophreniform 1-3 months, schizophrenia 1 year or more",
+     "Brief psychotic disorder under 2 weeks, schizophreniform 2-12 weeks, schizophrenia 3 months or more",
+     "All three require six months and are distinguished only by whether negative symptoms are present",
+     "Duration is irrelevant; the three are separated by whether the hallucinations are auditory",
+     "Brief psychotic disorder under 1 month, schizophreniform 1-6 months, schizophrenia 6 months or more of continuous disturbance"
+    ],
+    "correct": 4,
+    "exp": "The module's duration-based differential is brief psychotic disorder under 1 month, schizophreniform 1-6 months, and schizophrenia 6 months or more of total continuous disturbance including prodrome and residual, with functional decline.",
+    "why": [
+     "The cut-offs are one month and six months, not one week, three months, and a year.",
+     "These intervals do not match the module, which requires at least six months of continuous disturbance for schizophrenia.",
+     "Duration is precisely what separates the three diagnoses in the module.",
+     "The module bases the differential on duration, not on the modality of the hallucinations.",
+     ""
+    ]
+   },
+   {
+    "q": "How does the module's dopamine hypothesis explain positive versus negative symptoms?",
+    "ch": [
+     "Mesolimbic hyperdopaminergia drives positive symptoms; mesocortical hypodopaminergia drives negative and cognitive symptoms",
+     "Both symptom clusters arise from excess serotonin acting at limbic 5-HT2A receptors",
+     "Both symptom clusters arise from NMDA receptor overactivity in the prefrontal cortex",
+     "Mesolimbic hypodopaminergia drives positive symptoms; mesocortical hyperdopaminergia drives negative symptoms",
+     "Nigrostriatal hyperdopaminergia drives positive symptoms; tuberoinfundibular blockade drives negative symptoms"
+    ],
+    "correct": 0,
+    "exp": "Mesolimbic hyperdopaminergia drives positive symptoms while mesocortical hypodopaminergia drives negative and cognitive symptoms; glutamate (NMDA hypofunction) and serotonin also contribute.",
+    "why": [
+     "",
+     "5-HT2A blockade is part of how atypicals work, but serotonin excess is not the module's explanation for the symptom clusters.",
+     "The module describes NMDA hypofunction, not NMDA overactivity.",
+     "This reverses the model — the mesolimbic pathway is overactive and the mesocortical pathway is underactive.",
+     "The nigrostriatal pathway produces EPS and tardive dyskinesia when blocked, and the tuberoinfundibular pathway governs prolactin."
+    ]
+   },
+   {
+    "q": "When does the module say clozapine should be started?",
+    "ch": [
+     "After failure of at least two adequate antipsychotic trials — treatment-resistant disease",
+     "Only after electroconvulsive therapy has been tried and has failed",
+     "As soon as any extrapyramidal symptom appears on another antipsychotic",
+     "Whenever a patient develops tardive dyskinesia on a first-generation agent",
+     "At first presentation, because it is the most effective agent available"
+    ],
+    "correct": 0,
+    "exp": "Clozapine is the gold standard for treatment-resistant schizophrenia — failure of at least two antipsychotics — and uniquely reduces suicidality, but the module says it is never first-line because agranulocytosis mandates ANC monitoring.",
+    "why": [
+     "",
+     "The algorithm escalates to clozapine after two failed antipsychotic trials, and ECT is not a prerequisite in this module.",
+     "Extrapyramidal symptoms are managed with benztropine or diphenhydramine, or by switching agents, not by moving to clozapine.",
+     "Tardive dyskinesia is treated with a VMAT2 inhibitor such as valbenazine or deutetrabenazine.",
+     "The module states clozapine is never first-line; two adequate trials must fail first."
+    ]
+   },
+   {
+    "q": "A patient on haloperidol develops fever, lead-pipe rigidity, labile blood pressure, and a markedly elevated CK. What does the module direct?",
+    "ch": [
+     "Diagnose akathisia and reassure the patient that it will resolve on its own",
+     "Hold only the next scheduled dose and recheck the CK in 48 hours",
+     "Stop the antipsychotic, cool the patient, and give dantrolene or bromocriptine — this is NMS",
+     "Continue the haloperidol and add benztropine to treat the rigidity",
+     "Diagnose tardive dyskinesia and start valbenazine at the next visit"
+    ],
+    "correct": 2,
+    "exp": "NMS is lead-pipe rigidity, hyperthermia, autonomic instability and elevated CK; the module directs stopping the antipsychotic, cooling, and giving dantrolene or bromocriptine.",
+    "why": [
+     "Akathisia is subjective inner restlessness, not fever with rigidity and a raised CK.",
+     "NMS is a red-flag emergency requiring the drug to be stopped and treated now, not observed.",
+     "",
+     "Benztropine treats acute dystonia and drug-induced parkinsonism, and continuing the antipsychotic in NMS is dangerous.",
+     "Tardive dyskinesia is a late choreoathetoid movement disorder without fever or an elevated CK."
+    ]
+   },
+   {
+    "q": "Which side-effect pairing matches the module's description of second-generation antipsychotics?",
+    "ch": [
+     "Quetiapine — tardive dyskinesia is impossible with it; olanzapine — causes no weight gain",
+     "Olanzapine — the worst metabolic offender; risperidone — raises prolactin",
+     "Risperidone — requires REMS ANC monitoring; olanzapine — treats tardive dyskinesia",
+     "Olanzapine — the highest prolactin elevation; risperidone — the least metabolic burden of any agent",
+     "Aripiprazole — agranulocytosis requiring ANC monitoring; quetiapine — Ebstein anomaly"
+    ],
+    "correct": 1,
+    "exp": "Among the second-generation agents the module names olanzapine as the worst metabolic offender and risperidone as the one that raises prolactin.",
+    "why": [
+     "Tardive dyskinesia remains a risk with antipsychotics, and olanzapine causes substantial weight gain.",
+     "",
+     "REMS ANC monitoring is clozapine's requirement, and tardive dyskinesia is treated with VMAT2 inhibitors.",
+     "This reverses the pairing: olanzapine is the metabolic offender and risperidone is the prolactin-raising agent.",
+     "ANC monitoring under REMS belongs to clozapine, and Ebstein anomaly is a lithium risk."
+    ]
+   },
+   {
+    "q": "A patient tells the nurse that voices are speaking to him. Which approach to hallucinations and delusions does the module teach?",
+    "ch": [
+     "Agree with the content to build rapport and reduce the patient's distress",
+     "Acknowledge the patient's feelings while presenting reality, without arguing or reinforcing the content",
+     "Ignore the statement entirely and redirect only to activities of daily living",
+     "Increase environmental stimulation to distract the patient from the voices",
+     "Argue firmly with the content until the patient concedes that it is not real"
+    ],
+    "correct": 1,
+    "exp": "The module says to establish trust in a calm low-stimulation environment and neither argue with nor reinforce delusions and hallucinations — acknowledge feelings while presenting reality. Command hallucinations are additionally a red flag requiring immediate safety intervention.",
+    "why": [
+     "Agreeing reinforces the hallucination or delusion, which the module prohibits.",
+     "",
+     "Supporting ADLs matters, but ignoring the disclosure misses both the therapeutic response and the safety assessment.",
+     "The environment should be kept calm and low-stimulation, not made more stimulating.",
+     "Arguing with the content is specifically what the module tells the nurse not to do."
+    ]
+   },
+   {
+    "q": "A 62-year-old with no psychiatric history develops psychosis over two weeks with a low-grade fever and a new focal neurologic deficit. What does the module advise?",
+    "ch": [
+     "Diagnose schizophreniform disorder, since the duration is under six months",
+     "Attribute the picture to negative symptoms and begin psychosocial rehabilitation",
+     "Start clozapine, because late-onset psychosis is typically treatment-resistant",
+     "Think delirium, autoimmune (anti-NMDA) encephalitis, or CNS pathology rather than primary schizophrenia",
+     "Diagnose late-onset schizophrenia and start a second-generation antipsychotic"
+    ],
+    "correct": 3,
+    "exp": "The module flags new psychosis with focal neuro signs, fever, or older age of onset as a signal for delirium, autoimmune (anti-NMDA) encephalitis, or CNS pathology, and directs MRI/CT and EEG when the presentation is atypical.",
+    "why": [
+     "Schizophreniform disorder is still a primary psychotic diagnosis and requires excluding medical and neurologic causes.",
+     "Negative symptoms are flat affect, avolition, alogia and anhedonia — they do not explain fever and a focal deficit.",
+     "Clozapine follows two failed antipsychotic trials and is never a first move, least of all before CNS pathology is excluded.",
+     "",
+     "Typical onset is the late teens to mid-20s in men and the late 20s in women; this presentation is atypical and demands a workup first."
+    ]
+   },
+   {
+    "q": "A patient who has been on clozapine for four weeks calls with fever and a sore throat. What is the correct action per the module?",
+    "ch": [
+     "Add benztropine, because these are early extrapyramidal symptoms",
+     "Increase the clozapine dose, since psychosis often flares during an infection",
+     "Perform an AIMS exam to screen for tardive dyskinesia at the next scheduled visit",
+     "Hold the drug and evaluate urgently for agranulocytosis",
+     "Reassure the patient and continue clozapine, since this is a common benign viral illness"
+    ],
+    "correct": 3,
+    "exp": "Fever and sore throat on clozapine is the module's red flag for agranulocytosis, alongside myocarditis: hold the drug and evaluate urgently, and ensure the ANC draws happen on schedule per REMS.",
+    "why": [
+     "Benztropine treats acute dystonia and drug-induced parkinsonism, not fever with sore throat.",
+     "Raising the dose ignores a potentially fatal hematologic emergency.",
+     "The AIMS exam screens for tardive dyskinesia and does nothing to detect neutropenia.",
+     "",
+     "The module treats these symptoms as a red flag, not as something to reassure the patient about."
+    ]
+   },
+   {
+    "q": "A patient has relapsed three times after stopping oral risperidone. Which intervention does the module recommend, and with what caveat?",
+    "ch": [
+     "Start a VMAT2 inhibitor, which improves adherence by reducing movement side effects",
+     "Switch to haloperidol, because first-generation agents have better adherence profiles",
+     "A long-acting injectable — but establish tolerability with the oral form first, and missed injections still risk relapse",
+     "Add benztropine prophylactically, since EPS is the usual reason patients stop antipsychotics",
+     "Stop all antipsychotics and rely on psychosocial rehabilitation and family psychoeducation"
+    ],
+    "correct": 2,
+    "exp": "Long-acting injectables improve adherence in chronic or relapsing patients with poor oral compliance; the module's caveats are to ensure tolerability with the oral form first and to recognize that missed injections still risk relapse.",
+    "why": [
+     "VMAT2 inhibitors are the FDA-approved treatment for tardive dyskinesia, not an adherence strategy.",
+     "First-generation agents carry high EPS and tardive dyskinesia risk; the module's adherence tool is the long-acting injectable.",
+     "",
+     "Benztropine treats acute dystonia and parkinsonism and is not the module's answer to repeated non-adherence.",
+     "Stopping medication is described as the most common cause of relapse, and psychosocial care supplements rather than replaces it."
+    ]
+   },
+   {
+    "q": "Which statement about outcome and prognosis in schizophrenia matches the module?",
+    "ch": [
+     "Suicide is rare in schizophrenia and cardiovascular disease contributes little to mortality",
+     "Prominent negative symptoms and insidious onset predict the best long-term outcome",
+     "Lower socioeconomic status causes schizophrenia rather than resulting from it",
+     "Negative and cognitive symptoms respond best of all symptoms to current antipsychotics",
+     "Acute onset, mood symptoms, older onset, female sex and good premorbid function are favorable"
+    ],
+    "correct": 4,
+    "exp": "The module lists acute onset, mood symptoms, older onset, female sex and good premorbid function as good prognostic factors, while insidious onset and prominent negative symptoms are poor ones.",
+    "why": [
+     "The module cites elevated mortality from cardiovascular disease and a lifetime suicide risk of roughly 5%.",
+     "Insidious onset and prominent negative symptoms are named as poor prognostic factors, not good ones.",
+     "The module describes downward drift — low socioeconomic status is a consequence of the illness rather than a cause.",
+     "Negative and cognitive symptoms respond poorly to current antipsychotics and best predict long-term disability.",
+     ""
+    ]
+   }
+  ]
+ },
+ "withdrawal": {
+  "condition": "Alcohol & Substance Withdrawal",
+  "questions": [
+   {
+    "q": "What neuroadaptation does the module give as the basis for alcohol and sedative-hypnotic withdrawal?",
+    "ch": [
+     "Chronic alcohol potentiates GABA-A and suppresses NMDA/glutamate; withdrawal leaves unopposed glutamatergic excitation plus a noradrenergic surge",
+     "Chronic alcohol blocks mu-opioid receptors, and withdrawal releases locus coeruleus inhibition",
+     "Chronic alcohol depletes dopamine stores, and withdrawal produces mesolimbic hyperdopaminergia",
+     "Chronic alcohol upregulates GABA-A tone, and withdrawal leaves unopposed GABAergic inhibition",
+     "Chronic alcohol downregulates NMDA receptors, and withdrawal produces a glutamate deficiency"
+    ],
+    "correct": 0,
+    "exp": "Chronic alcohol, benzodiazepines and barbiturates potentiate inhibitory GABA-A tone and suppress excitatory NMDA/glutamate tone; abrupt withdrawal leaves unopposed glutamatergic excitation plus an autonomic noradrenergic surge, which is why GABA agonists are the mechanistically correct treatment.",
+    "why": [
+     "",
+     "Mu-opioid receptors and the locus coeruleus are the module's mechanism for opioid withdrawal, which it explicitly contrasts with alcohol.",
+     "Mesolimbic hyperdopaminergia is the schizophrenia model; the module frames alcohol withdrawal around GABA and glutamate.",
+     "Withdrawal removes GABA tone rather than leaving it unopposed — the excess is glutamatergic.",
+     "Chronic ethanol upregulates NMDA receptors, and withdrawal produces glutamate excitotoxicity rather than deficiency."
+    ]
+   },
+   {
+    "q": "Per the module's alcohol withdrawal timeline, when do delirium tremens typically occur after the last drink?",
+    "ch": [
+     "6-12 hours",
+     "12-24 hours",
+     "12-48 hours",
+     "48-96 hours",
+     "7-10 days"
+    ],
+    "correct": 3,
+    "exp": "The module's timeline is tremor and anxiety at 6-12h, alcoholic hallucinosis at 12-24h, withdrawal seizures at 12-48h, and delirium tremens at 48-96h.",
+    "why": [
+     "Six to twelve hours is when tremor and anxiety appear.",
+     "Twelve to twenty-four hours is the window for alcoholic hallucinosis with a clear sensorium.",
+     "Twelve to forty-eight hours is when withdrawal seizures occur.",
+     "",
+     "The module places DTs at 48-96 hours, well before a week has elapsed."
+    ]
+   },
+   {
+    "q": "A malnourished patient with alcohol use disorder arrives hypoglycemic. What does the module require?",
+    "ch": [
+     "Give thiamine only after the glucose has been normal for 24 hours",
+     "Give thiamine before or with the dextrose to avoid precipitating Wernicke encephalopathy",
+     "Withhold both until an ethanol level and a CIWA-Ar score are available",
+     "Give folate instead, since thiamine is needed only once ataxia is present",
+     "Give dextrose immediately and add thiamine only if confusion later develops"
+    ],
+    "correct": 1,
+    "exp": "Thiamine before glucose — always. Giving glucose first can precipitate Wernicke encephalopathy, so thiamine goes before or with dextrose in every alcohol patient.",
+    "why": [
+     "Delaying thiamine leaves the patient exposed during the very period in which glucose is being given.",
+     "",
+     "Hypoglycemia must be corrected promptly, and the thiamine rule applies regardless of the CIWA-Ar score.",
+     "Folate is listed among the deficiencies to correct, but it does not substitute for thiamine, and Wernicke is prevented rather than awaited.",
+     "Glucose first is exactly the sequence the module warns can precipitate Wernicke encephalopathy."
+    ]
+   },
+   {
+    "q": "Why does the module prefer symptom-triggered benzodiazepine dosing over a fixed schedule?",
+    "ch": [
+     "It eliminates the risk of withdrawal seizures without any pharmacologic prophylaxis",
+     "It uses less total drug, shortens treatment duration, and produces fewer complications",
+     "It removes the need for any further nursing reassessment once the first dose is given",
+     "It allows a lower-potency agent to be used, avoiding all risk of respiratory depression",
+     "It substitutes for thiamine repletion in patients who are already malnourished"
+    ],
+    "correct": 1,
+    "exp": "Symptom-triggered dosing guided by CIWA-Ar means less total benzodiazepine, a shorter duration of treatment, and fewer complications than a fixed schedule.",
+    "why": [
+     "The benzodiazepine is itself the seizure prophylaxis; symptom-triggered dosing changes how it is given, not whether it is needed.",
+     "",
+     "Symptom-triggered dosing depends on serial CIWA-Ar reassessment with documentation of the trend.",
+     "Respiratory depression and oversedation remain concerns with any benzodiazepine dosing strategy.",
+     "Thiamine is a separate mandatory intervention and is not replaced by any benzodiazepine strategy."
+    ]
+   },
+   {
+    "q": "Which benzodiazepine does the module prefer for a patient in alcohol withdrawal who has cirrhosis, and why?",
+    "ch": [
+     "Midazolam, because it is the only agent that reliably prevents delirium tremens",
+     "Chlordiazepoxide, because its long half-life provides an automatic taper",
+     "Lorazepam, because it has no active metabolites",
+     "Diazepam, because hepatic metabolism is increased in cirrhosis",
+     "Phenobarbital, because it is a benzodiazepine with purely hepatic clearance"
+    ],
+    "correct": 2,
+    "exp": "The module specifies lorazepam in liver failure and in the elderly because it has no active metabolites, while still watching for oversedation and respiratory depression.",
+    "why": [
+     "No single benzodiazepine is described as uniquely preventing DTs; symptom-triggered dosing of a first-line agent does that.",
+     "Chlordiazepoxide is a listed first-line agent, but the module names lorazepam specifically for liver failure and the elderly.",
+     "",
+     "Hepatic metabolism is impaired, not increased, in cirrhosis, which is precisely why agents with active metabolites are avoided.",
+     "Phenobarbital is a barbiturate rather than a benzodiazepine and is reserved for benzodiazepine-refractory or severe withdrawal."
+    ]
+   },
+   {
+    "q": "A patient in severe withdrawal is started on dexmedetomidine for tachycardia and hypertension. What caution does the module give?",
+    "ch": [
+     "Autonomic adjuncts are contraindicated in withdrawal because they mask the CIWA-Ar score entirely",
+     "Dexmedetomidine should replace the benzodiazepines in order to minimize total sedation",
+     "Dexmedetomidine treats Wernicke encephalopathy and makes thiamine unnecessary",
+     "Clonidine and propranolol are first-line and benzodiazepines are only adjuncts",
+     "Adjuncts control autonomic hyperactivity but do not prevent seizures or DTs, so benzodiazepines must continue"
+    ],
+    "correct": 4,
+    "exp": "Dexmedetomidine, propranolol and clonidine are adjuncts for autonomic hyperactivity only — the module states plainly that they do not replace benzodiazepines because they do not prevent seizures or DTs.",
+    "why": [
+     "The module lists these agents as useful adjuncts rather than contraindicated, while cautioning that they are not seizure prophylaxis.",
+     "The module says explicitly that these agents do not replace benzodiazepines.",
+     "Wernicke prophylaxis and treatment is high-dose thiamine; no autonomic adjunct substitutes for it.",
+     "The ordering is reversed: benzodiazepines are first-line and clonidine or propranolol are the adjuncts.",
+     ""
+    ]
+   },
+   {
+    "q": "Eighteen hours after his last drink, a man reports seeing bugs on the wall but is fully oriented with normal vital signs. How should this be classified per the module?",
+    "ch": [
+     "Wernicke encephalopathy, given the new visual disturbance",
+     "Anti-NMDA receptor encephalitis until neuroimaging proves otherwise",
+     "Alcoholic hallucinosis — hallucinations with a clear sensorium at roughly 12-24 hours",
+     "Delirium tremens, because visual hallucinations are what define DTs",
+     "A withdrawal seizure prodrome requiring immediate phenobarbital loading"
+    ],
+    "correct": 2,
+    "exp": "Alcoholic hallucinosis occurs at roughly 12-24 hours with a clear sensorium, in contrast to delirium tremens at 48-96 hours, which adds clouded consciousness and autonomic instability.",
+    "why": [
+     "Wernicke encephalopathy is confusion, ophthalmoplegia and ataxia, and this patient is oriented with normal vital signs.",
+     "Autoimmune encephalitis is a consideration for atypical new psychosis, not for a classic withdrawal timeline.",
+     "",
+     "DTs require clouded consciousness and autonomic instability at 48-96 hours, neither of which fits this patient.",
+     "Withdrawal seizures fall at 12-48 hours, but this patient has hallucinations with a clear sensorium, and phenobarbital is reserved for refractory or severe withdrawal."
+    ]
+   },
+   {
+    "q": "Which factor does the module call the strongest predictor that a patient will have a withdrawal seizure or delirium tremens?",
+    "ch": [
+     "A urine drug screen that is positive for opioids",
+     "An elevated mean corpuscular volume on the CBC",
+     "A first-ever drinking binge lasting more than one week",
+     "A high blood alcohol concentration on arrival",
+     "A prior history of withdrawal seizures or delirium tremens"
+    ],
+    "correct": 4,
+    "exp": "The module names prior DTs or withdrawal seizures as the strongest predictor of recurrence, alongside a high CIWA score, comorbid illness, and older age.",
+    "why": [
+     "Opioid withdrawal is uncomfortable but rarely life-threatening and does not predict DTs.",
+     "Mean corpuscular volume is not among the DT predictors the module lists.",
+     "The module emphasizes prior withdrawal complications rather than the length of a single first binge.",
+     "An ethanol level is part of the lab workup but is not the predictor the module singles out.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient's CIWA-Ar scores keep climbing despite escalating lorazepam doses. What does the module say refractory withdrawal points toward?",
+    "ch": [
+     "Phenobarbital, or magnesium and electrolyte correction, rather than simply more benzodiazepine",
+     "Beginning disulfiram so the patient associates alcohol with illness",
+     "Reducing the benzodiazepine dose, because oversedation is masking improvement",
+     "Switching to buprenorphine to cover a concurrent opioid withdrawal",
+     "Starting naltrexone immediately to blunt the craving driving the agitation"
+    ],
+    "correct": 0,
+    "exp": "Refractory withdrawal points to phenobarbital or to magnesium and electrolyte correction rather than just more benzodiazepine; escalating benzodiazepine requirements is itself a red flag for impending DT or a missed diagnosis.",
+    "why": [
+     "",
+     "Disulfiram is a maintenance agent requiring adherence and no recent alcohol, not an acute treatment.",
+     "Escalating requirements signal impending DT or a missed diagnosis, so reducing therapy would be dangerous.",
+     "Buprenorphine treats opioid withdrawal and can precipitate withdrawal if given too early; it does nothing for alcohol withdrawal.",
+     "Naltrexone is for maintaining abstinence after withdrawal is complete and is contraindicated with active opioid use."
+    ]
+   },
+   {
+    "q": "How does the module characterize opioid withdrawal compared with alcohol withdrawal?",
+    "ch": [
+     "Identical in mechanism, since both act through GABA-A and NMDA receptors",
+     "Safely managed with symptom-triggered CIWA-Ar dosing of benzodiazepines",
+     "Best treated by withholding all medication so that tolerance resets completely",
+     "Intensely uncomfortable but rarely lethal in healthy adults; the danger lies in relapse with lost tolerance",
+     "More lethal than alcohol withdrawal because of its seizures and delirium tremens"
+    ],
+    "correct": 3,
+    "exp": "Opioid withdrawal is intensely uncomfortable — flu-like and GI — but rarely life-threatening in healthy adults; the risk lies in relapse and lost tolerance driving overdose, and it is treated with buprenorphine or methadone plus symptomatic clonidine, ondansetron and loperamide.",
+    "why": [
+     "Opioids act via mu-opioid receptors and the locus coeruleus, which the module explicitly contrasts with the GABA-A/NMDA mechanism.",
+     "CIWA-Ar grades alcohol withdrawal; opioid readiness is screened with COWS and treated with buprenorphine or methadone.",
+     "Withholding treatment increases suffering and relapse risk; the module urges starting MAT during the admission.",
+     "",
+     "Seizures and delirium tremens belong to alcohol and sedative-hypnotic withdrawal, which the module calls the dangerous, potentially fatal type."
+    ]
+   }
+  ]
+ }
+}

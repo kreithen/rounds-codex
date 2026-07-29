@@ -37,7 +37,11 @@ for (const file of files) {
   const batch = JSON.parse(fs.readFileSync(file, 'utf8'));
   for (const [id, quiz] of Object.entries(batch)) {
     if (id.startsWith('_')) continue;
-    const qs = quiz.questions;
+    // A multi-select question carries `correct` as an ARRAY (the engine branches on
+    // Array.isArray). Rotating one would corrupt the index arithmetic, and it has no single
+    // answer letter to balance anyway, so leave those questions exactly where they are.
+    const qs = quiz.questions.filter(q => !Array.isArray(q.correct));
+    if (!qs.length) { console.log(`  ${id.padEnd(18)} multi-select only — left untouched`); continue; }
 
     const fixedPos = [];                       // positions locked by ordered questions
     qs.forEach(q => { if (isOrdered(q.ch)) fixedPos.push(q.correct); });

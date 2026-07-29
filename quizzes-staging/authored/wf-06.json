@@ -1,0 +1,977 @@
+{
+ "thrombocytopenia": {
+  "condition": "Thrombocytopenia",
+  "questions": [
+   {
+    "q": "How does the module define thrombocytopenia and its bleeding-risk thresholds?",
+    "ch": [
+     "A platelet count below 100,000/µL, with severe or CNS bleeding risk appearing once the count falls below 50,000",
+     "A platelet count below 150,000/µL, with spontaneous bleeding risk rising below 20,000 and severe or CNS bleeding below 10,000",
+     "A platelet count below 50,000/µL, with bleeding risk appearing only once the count falls below 5,000",
+     "Any platelet count that has fallen by half from the patient's baseline, regardless of the absolute number",
+     "A platelet count below 400,000/µL, with spontaneous bleeding expected once the count falls below 150,000"
+    ],
+    "correct": 1,
+    "exp": "The module defines thrombocytopenia as a platelet count below 150,000/µL; spontaneous bleeding risk rises below 20,000 and severe or CNS bleeding risk with counts below 10,000.",
+    "why": [
+     "100,000 sits below the module's 150,000 diagnostic threshold, and severe or CNS bleeding risk is quoted below 10,000, not 50,000.",
+     "",
+     "50,000 is a procedural transfusion threshold in the module, not the definition, and bleeding risk begins well above a count of 5,000.",
+     "The module uses an absolute count of 150,000/µL, not a proportional fall from baseline.",
+     "400,000 is near the upper limit of normal, not a diagnostic cutoff, and bleeding is not expected at a count of 150,000."
+    ]
+   },
+   {
+    "q": "Which trio of mechanisms does the module use to organize the causes of thrombocytopenia?",
+    "ch": [
+     "Decreased production, increased destruction, and sequestration",
+     "Decreased production, impaired platelet function, and hemodilution",
+     "Increased destruction, vitamin K deficiency, and plasma volume expansion",
+     "Sequestration, factor VIII deficiency, and accelerated fibrinolysis",
+     "Marrow fibrosis, reduced erythropoietin, and impaired renal clearance"
+    ],
+    "correct": 0,
+    "exp": "The module classifies thrombocytopenia by three mechanisms: decreased production (marrow failure, chemotherapy, leukemia, B12/folate deficiency), increased destruction (ITP, TTP/HUS, DIC, HIT, drugs), and sequestration (splenomegaly, hypersplenism).",
+    "why": [
+     "",
+     "Impaired platelet function causes bleeding with a normal count and is not one of the module's three mechanisms; hemodilution is not listed either.",
+     "Vitamin K deficiency affects clotting factors rather than platelet number, and it is not one of the module's three mechanisms.",
+     "Factor VIII deficiency is hemophilia A, a coagulation-factor disorder, and fibrinolysis is not a listed mechanism of low platelets.",
+     "Marrow fibrosis falls under decreased production, but erythropoietin and renal clearance are not part of the module's framework."
+    ]
+   },
+   {
+    "q": "An automated CBC reports a platelet count of 22,000/µL in a well-appearing patient with no bruising or bleeding. What must always be excluded first?",
+    "ch": [
+     "Heparin-induced thrombocytopenia from a heparin line flush given earlier",
+     "Sequestration from an enlarged spleen that was missed on abdominal exam",
+     "Thrombotic thrombocytopenic purpura presenting before neurologic changes appear",
+     "Pseudothrombocytopenia from EDTA-induced in vitro clumping, confirmed with a citrate tube and smear",
+     "Immune thrombocytopenia triggered by an unrecognized recent viral illness"
+    ],
+    "correct": 3,
+    "exp": "Pseudothrombocytopenia is EDTA-induced in vitro platelet clumping producing a falsely low automated count; the module says always exclude it by confirming with a citrate tube and a peripheral blood smear.",
+    "why": [
+     "HIT requires heparin exposure with a fall over roughly 5 to 10 days and is prothrombotic, not an artifact of the specimen tube.",
+     "Splenomegaly causes real sequestration, but the module still directs excluding a falsely low automated count before pursuing a mechanism.",
+     "TTP is accompanied by schistocytes and anemia on the smear, and it would not present as an isolated count in a well patient.",
+     "",
+     "ITP is a diagnosis of exclusion in the module and cannot be entertained until an artifactually low count has been ruled out."
+    ]
+   },
+   {
+    "q": "A patient is found to have an isolated platelet count of 40,000/µL. What does the module list as the confirmatory first step?",
+    "ch": [
+     "Send ADAMTS13 activity and hold all further testing until it returns",
+     "Begin empiric corticosteroids for presumed immune thrombocytopenia",
+     "Transfuse one unit of platelets and recheck the count one hour later",
+     "Bone marrow biopsy to look for marrow failure or infiltrating blasts",
+     "Repeat the CBC and review the peripheral blood smear"
+    ],
+    "correct": 4,
+    "exp": "The module's confirmatory first step is to repeat the CBC and review the peripheral blood smear, which rules out clumping and reveals schistocytes, blasts, or large platelets.",
+    "why": [
+     "ADAMTS13 is sent when microangiopathy is suspected, and the module says never to hold treatment or workup waiting for it.",
+     "Steroids are first-line for ITP, but ITP is a diagnosis of exclusion that requires the smear first.",
+     "Transfusion is reserved for severe bleeding or profound thrombocytopenia and does nothing to establish the mechanism.",
+     "The module reserves marrow biopsy for unexplained cytopenias, atypical cells, or features suggesting primary marrow disease; typical ITP needs none.",
+     ""
+    ]
+   },
+   {
+    "q": "In which two conditions does the module say platelet transfusion should be avoided unless there is life-threatening hemorrhage?",
+    "ch": [
+     "Immune thrombocytopenia and hepatitis C-associated thrombocytopenia",
+     "Immune thrombocytopenia and gestational thrombocytopenia",
+     "Disseminated intravascular coagulation and B12 deficiency",
+     "Hypersplenism and chemotherapy-induced marrow suppression",
+     "Thrombotic thrombocytopenic purpura and heparin-induced thrombocytopenia"
+    ],
+    "correct": 4,
+    "exp": "In TTP and HIT, transfused platelets add fuel to the microthrombi, so the module says never transfuse in these two unless there is life-threatening hemorrhage.",
+    "why": [
+     "The module treats these as immune or infection-associated destruction, not as prothrombotic states requiring transfusion avoidance.",
+     "Neither ITP nor gestational thrombocytopenia is a microthrombotic state; the module's transfusion caution does not apply to them.",
+     "DIC transfusion is guided by bleeding and thresholds rather than being contraindicated, and B12 deficiency is a production problem.",
+     "Both are non-thrombotic mechanisms, and prophylactic transfusion below 10,000 is explicitly endorsed in marrow suppression.",
+     ""
+    ]
+   },
+   {
+    "q": "Platelets fall from 210,000 to 70,000 on hospital day 7 in a patient receiving heparin, and a new DVT is found. What does the module direct?",
+    "ch": [
+     "Stop all heparin and start a non-heparin anticoagulant such as argatroban, bivalirudin, or fondaparinux",
+     "Continue heparin at a reduced dose and transfuse platelets to a goal above 50,000",
+     "Start warfarin alone immediately and bridge once the platelet count has fully recovered",
+     "Begin corticosteroids and IVIG, the first-line therapy for antibody-mediated destruction",
+     "Start therapeutic plasma exchange while sending ADAMTS13 activity for confirmation"
+    ],
+    "correct": 0,
+    "exp": "HIT is a paradoxically prothrombotic state: the module says stop all heparin, including flushes and coated lines, and anticoagulate with a non-heparin agent such as argatroban, bivalirudin, or fondaparinux.",
+    "why": [
+     "",
+     "Any continued heparin perpetuates HIT, and the module warns against transfusing platelets in HIT because it fuels thrombosis.",
+     "The module explicitly warns not to start warfarin alone until platelets recover, because of the risk of venous limb gangrene.",
+     "Steroids and IVIG are first-line for ITP, not for HIT, where the priority is removing heparin and anticoagulating.",
+     "Plasma exchange and ADAMTS13 belong to TTP; the timing after heparin plus new thrombosis points to HIT and the 4Ts score."
+    ]
+   },
+   {
+    "q": "Which platelet transfusion threshold matches the indication the module pairs with it?",
+    "ch": [
+     "Below 150,000 in a patient with fever or hemodynamic instability",
+     "Below 50,000 for routine prophylaxis in a stable patient with no bleeding",
+     "Below 20,000 before any neurosurgical or central nervous system procedure",
+     "Below 100,000 for CNS or neurosurgical procedures",
+     "Below 10,000 for an invasive procedure or for active bleeding"
+    ],
+    "correct": 3,
+    "exp": "The module lists below 10,000 for prophylaxis, below 20,000 with fever or instability, below 50,000 for procedures or active bleeding, and below 100,000 for CNS or neurosurgical procedures.",
+    "why": [
+     "150,000 is the lower limit of normal and is not a transfusion trigger anywhere in the module.",
+     "The module's routine prophylactic threshold is below 10,000; 50,000 is the threshold for procedures or active bleeding.",
+     "The module reserves 20,000 for a patient with fever or instability; neurosurgery uses the far higher 100,000 threshold.",
+     "",
+     "Below 10,000 is the prophylactic threshold in a stable patient; procedures and active bleeding use 50,000."
+    ]
+   },
+   {
+    "q": "A woman has platelets of 18,000, hemoglobin 8.1, schistocytes on smear, new confusion, and a rising creatinine. What is the module's immediate action?",
+    "ch": [
+     "Wait for the ADAMTS13 result before committing to any specific therapy",
+     "Start therapeutic plasma exchange empirically while ADAMTS13 is pending",
+     "Transfuse platelets above 50,000 before any other intervention is started",
+     "Give high-dose corticosteroids and IVIG and observe the count over 48 hours",
+     "Stop all heparin products and begin argatroban for presumed HIT with thrombosis"
+    ],
+    "correct": 1,
+    "exp": "Schistocytes with anemia plus neurologic and renal changes is TTP; the module says start plasma exchange emergently and treat empirically before ADAMTS13 confirms, and do not transfuse platelets.",
+    "why": [
+     "The module says low ADAMTS13 confirms TTP but that treatment must be started empirically rather than waiting.",
+     "",
+     "The module says never transfuse platelets in TTP unless there is life-threatening hemorrhage, because it fuels the microthrombi.",
+     "Steroids and IVIG are the ITP pathway; an isolated clean-smear thrombocytopenia, not a microangiopathy with schistocytes.",
+     "Nothing here suggests heparin exposure or the 4Ts pattern, and HIT does not produce schistocytes with anemia and renal failure."
+    ]
+   },
+   {
+    "q": "Which laboratory pattern does the module use to distinguish DIC from immune thrombocytopenia?",
+    "ch": [
+     "Low platelets with a high 4Ts score and thrombosis five to ten days after heparin",
+     "Isolated low platelets with a clean smear and normal fibrinogen and coagulation studies",
+     "Low platelets with low fibrinogen, high D-dimer, and prolonged PT and aPTT",
+     "Low platelets with large young platelets on the smear and normal other cell lines",
+     "Low platelets with reduced ADAMTS13 activity and entirely normal coagulation studies"
+    ],
+    "correct": 2,
+    "exp": "The module teaches that DIC shows low platelets AND low fibrinogen, high D-dimer, and prolonged PT/aPTT, and that the underlying trigger such as sepsis, malignancy, or an obstetric catastrophe must be treated.",
+    "why": [
+     "A high 4Ts score with thrombosis after heparin exposure defines HIT, not DIC.",
+     "That pattern describes ITP, where the smear is clean and coagulation studies are unaffected.",
+     "",
+     "Large young platelets with normal other cell lines is the module's smear description of ITP, not DIC.",
+     "Low ADAMTS13 activity defines TTP, a separate microangiopathy in the module's destruction category."
+    ]
+   },
+   {
+    "q": "A woman at 34 weeks' gestation has a platelet count of 118,000, normal blood pressure, normal liver enzymes, and no bleeding. What does the module say is most likely?",
+    "ch": [
+     "Immune thrombocytopenia, which requires corticosteroids started immediately",
+     "Thrombotic thrombocytopenic purpura, which requires emergent plasma exchange",
+     "Gestational thrombocytopenia, which is common, mild, third-trimester, and benign",
+     "Disseminated intravascular coagulation from an unrecognized placental abruption",
+     "HELLP syndrome, which requires urgent delivery regardless of blood pressure"
+    ],
+    "correct": 2,
+    "exp": "Gestational thrombocytopenia is common, mild, third-trimester and benign; the module stresses distinguishing it from HELLP/preeclampsia and from ITP when evaluating a pregnant patient.",
+    "why": [
+     "ITP is possible in pregnancy, but the module treats a mild third-trimester count in an otherwise well patient as gestational, and ITP is a diagnosis of exclusion.",
+     "TTP requires schistocytes, anemia, and neurologic or renal changes, which this patient does not have.",
+     "",
+     "DIC would show low fibrinogen, high D-dimer, and prolonged coagulation studies in a clinically unwell patient.",
+     "HELLP involves hemolysis, elevated liver enzymes, and usually hypertension, none of which are present here."
+    ]
+   }
+  ]
+ },
+ "dic": {
+  "condition": "Disseminated Intravascular Coagulation (DIC)",
+  "questions": [
+   {
+    "q": "Which statement best characterizes disseminated intravascular coagulation as the module describes it?",
+    "ch": [
+     "An isolated deficiency of clotting factors caused by impaired hepatic synthesis in liver failure",
+     "Widespread tissue factor exposure driving thrombin generation that consumes platelets and factors, so the patient clots and bleeds at once",
+     "An antibody-mediated destruction of circulating platelets that leaves coagulation studies entirely normal",
+     "A primary bone marrow disorder that produces too few platelets and too few clotting factors",
+     "A deficiency of ADAMTS13 causing platelet-rich microthrombi with normal coagulation studies"
+    ],
+    "correct": 1,
+    "exp": "Widespread tissue factor exposure triggers systemic thrombin generation and microvascular fibrin clots that consume platelets and clotting factors, then secondary fibrinolysis, producing simultaneous thrombosis and hemorrhage.",
+    "why": [
+     "Liver failure impairs factor synthesis but does not consume platelets in microvascular clots, and the module uses fibrinogen and D-dimer to separate the two.",
+     "",
+     "Antibody-mediated platelet destruction with normal coagulation studies is immune thrombocytopenia, not a consumptive coagulopathy.",
+     "The module stresses that DIC is always secondary to a trigger, not a primary marrow disorder.",
+     "ADAMTS13 deficiency with normal coagulation studies defines TTP, one of the microangiopathies DIC must be distinguished from."
+    ]
+   },
+   {
+    "q": "Which statement about the etiology of DIC does the module emphasize?",
+    "ch": [
+     "It is a primary hematologic diagnosis that can arise without any other illness",
+     "It is caused by heparin exposure five to ten days before the platelets fall",
+     "It occurs almost exclusively in patients with an inherited thrombophilia",
+     "It is always secondary to an underlying trigger and never a primary diagnosis",
+     "It is a late complication of chronic anticoagulation with warfarin therapy"
+    ],
+    "correct": 3,
+    "exp": "The module states DIC is always secondary to an underlying trigger and never a primary diagnosis; classic causes are sepsis, trauma and burns, obstetric catastrophes, malignancy, and snakebite or hemolytic transfusion reactions.",
+    "why": [
+     "The module says the opposite: DIC is never a primary diagnosis and will not resolve until the trigger is controlled.",
+     "That timing describes heparin-induced thrombocytopenia, one of the entities on the differential rather than the cause of DIC.",
+     "Inherited thrombophilia is not among the triggers the module lists; sepsis, trauma, obstetric events, and malignancy are.",
+     "",
+     "Warfarin prolongs the PT but does not produce the consumptive picture of low fibrinogen with a very high D-dimer."
+    ]
+   },
+   {
+    "q": "Which set of results is the classic laboratory quartet the module lists for DIC?",
+    "ch": [
+     "High platelets, shortened PT and aPTT, high fibrinogen, and an undetectable D-dimer",
+     "Low platelets, prolonged aPTT only, normal fibrinogen, and a normal D-dimer level",
+     "Low platelets, prolonged PT and aPTT, low fibrinogen, and markedly elevated D-dimer",
+     "Low platelets, normal PT and aPTT, high fibrinogen, and a normal D-dimer level",
+     "Normal platelets, prolonged PT only, low fibrinogen, and a mildly elevated D-dimer"
+    ],
+    "correct": 2,
+    "exp": "The classic quartet is falling platelets, prolonged PT and aPTT, low fibrinogen, and a markedly raised D-dimer or fibrin degradation product level, with serial trends mattering more than any single value.",
+    "why": [
+     "Every element is reversed: DIC consumes platelets and fibrinogen and prolongs, rather than shortens, the coagulation studies.",
+     "Both PT and aPTT prolong, fibrinogen falls, and the D-dimer is the single most sensitive marker in the module.",
+     "",
+     "Consumption prolongs the coagulation studies and lowers fibrinogen, and fibrinolysis of cross-linked fibrin raises rather than normalizes the D-dimer.",
+     "The module describes platelets as consumed and falling, and calls the D-dimer rise marked rather than mild."
+    ]
+   },
+   {
+    "q": "The module says no single test confirms DIC. Which scoring tool does it name, and what value is compatible with overt DIC?",
+    "ch": [
+     "The SOFA score, with an increase of 2 or more points",
+     "The Wells score, with a total of 4 or more points",
+     "The ISTH DIC score, with a score of 5 or more",
+     "The 4Ts score, with a total of 6 or more points",
+     "The Eron classification, with class III or higher"
+    ],
+    "correct": 2,
+    "exp": "The ISTH DIC score uses platelets, PT prolongation, fibrinogen, and D-dimer, and a score of 5 or more is compatible with overt DIC; serial trending establishes the diagnosis rather than a single snapshot.",
+    "why": [
+     "A SOFA increase of 2 or more defines organ dysfunction in sepsis under Sepsis-3, not DIC.",
+     "The Wells score estimates pretest probability of venous thromboembolism, not consumptive coagulopathy.",
+     "",
+     "The 4Ts score is used to assess the probability of heparin-induced thrombocytopenia, not DIC.",
+     "The Eron classification grades the severity of skin and soft-tissue infection, not a coagulopathy."
+    ]
+   },
+   {
+    "q": "A patient with septic DIC has platelets of 38,000 and a fibrinogen of 90 mg/dL but is not bleeding. What principle does the module apply?",
+    "ch": [
+     "Do not transfuse on labs alone — replace products to stop or prevent bleeding",
+     "Start therapeutic heparin because the bleeding phenotype has not yet appeared",
+     "Withhold antibiotics until the coagulopathy corrects, to reduce transfusion need",
+     "Transfuse plasma and cryoprecipitate until every laboratory value has normalized",
+     "Give tranexamic acid routinely to prevent bleeding before it can develop"
+    ],
+    "correct": 0,
+    "exp": "The module's 'don't feed the fire' principle is that blood products are guided by bleeding plus labs, not labs alone: replace products to stop or prevent bleeding rather than to normalize numbers.",
+    "why": [
+     "",
+     "Heparin is reserved for the thrombosis-predominant or chronic phenotype and is described as dangerous in bleeding patients.",
+     "Treating the trigger is the only definitive therapy, so antibiotics and source control must never be withheld.",
+     "Chasing numbers in a non-bleeding patient is exactly what the module warns against, and volume overload or TACO is a real risk.",
+     "The module says tranexamic acid is generally avoided in typical DIC because inhibiting fibrinolysis can worsen microthrombosis."
+    ]
+   },
+   {
+    "q": "Which product does the module prefer when hypofibrinogenemia is the main problem and volume overload is a concern?",
+    "ch": [
+     "Tranexamic acid, which raises fibrinogen by blocking its breakdown by plasmin",
+     "Prophylactic low-dose heparin, which slows the ongoing consumption of fibrinogen",
+     "Fresh frozen plasma, which replaces multiple consumed clotting factors at once",
+     "Cryoprecipitate, targeting a fibrinogen above roughly 100 to 150 mg/dL if bleeding",
+     "Platelet transfusion, given the rapid consumption of platelets in the microcirculation"
+    ],
+    "correct": 3,
+    "exp": "Cryoprecipitate is concentrated fibrinogen replacement with a goal generally above 100 to 150 mg/dL if bleeding, and the module prefers it over FFP when hypofibrinogenemia is the main problem and volume is a concern.",
+    "why": [
+     "Tranexamic acid inhibits fibrinolysis and does not replace fibrinogen; the module generally avoids it in typical DIC.",
+     "Heparin addresses the thrombotic phenotype and is not a fibrinogen replacement strategy.",
+     "FFP does replace multiple factors, but the module names it as the option to avoid when volume is a concern and fibrinogen is the issue.",
+     "",
+     "Platelets are transfused for bleeding below 50,000 or prophylaxis below 10,000 to 20,000; they do not replace fibrinogen."
+    ]
+   },
+   {
+    "q": "A newly diagnosed leukemia patient develops florid DIC with mucosal bleeding. Which drug does the module say to start emergently?",
+    "ch": [
+     "All-trans retinoic acid (ATRA) for acute promyelocytic leukemia-associated DIC",
+     "Eltrombopag, to drive marrow production and overcome platelet consumption",
+     "Rituximab, to deplete the malignant B-cell clone driving the coagulopathy",
+     "Argatroban, because the coagulopathy is fundamentally a prothrombotic state",
+     "Recombinant activated protein C, restoring the depleted anticoagulant pathway"
+    ],
+    "correct": 0,
+    "exp": "APL-associated DIC is a bleeding emergency and a board-favorite trigger: the module says start all-trans retinoic acid emergently with aggressive cryoprecipitate and platelet support while it takes effect.",
+    "why": [
+     "",
+     "A thrombopoietin agonist works too slowly and does not address the malignancy driving the coagulopathy.",
+     "Rituximab is an anti-CD20 agent for B-cell disease and has no role in the leukemia the module names as the DIC trigger.",
+     "A non-heparin anticoagulant is the answer for heparin-induced thrombocytopenia, and this patient is bleeding, not clotting.",
+     "The module states explicitly that recombinant activated protein C is no longer used."
+    ]
+   },
+   {
+    "q": "A patient with metastatic adenocarcinoma has a compensated coagulopathy with recurrent thrombosis and a near-normal fibrinogen. Which phenotype does the module describe, and how is it treated?",
+    "ch": [
+     "Acute, bleeding-predominant DIC, which requires plasma and cryoprecipitate",
+     "Thrombotic thrombocytopenic purpura, which requires emergent plasma exchange",
+     "Heparin-induced thrombocytopenia, which requires stopping all heparin sources",
+     "HELLP syndrome, which resolves only after delivery of the fetus and placenta",
+     "Chronic, thrombosis-predominant DIC, which is the heparin-responsive phenotype"
+    ],
+    "correct": 4,
+    "exp": "The module classifies chronic or non-overt DIC in solid tumors, retained dead fetus, and aortic aneurysm as compensated and thrombosis-predominant, and names it the heparin-responsive phenotype.",
+    "why": [
+     "The acute, decompensated, bleeding-predominant phenotype is the sepsis picture; this patient is compensated and clotting.",
+     "TTP is a separate microangiopathy with ADAMTS13 deficiency and normal coagulation studies.",
+     "HIT requires heparin exposure and the 4Ts pattern, neither of which is described here.",
+     "HELLP is one of the obstetric triggers of DIC and does not apply to a patient with metastatic solid tumor.",
+     ""
+    ]
+   },
+   {
+    "q": "Which laboratory feature does the module use to separate DIC from the other microangiopathies and from liver failure?",
+    "ch": [
+     "The presence of schistocytes on the peripheral smear, which is unique to DIC",
+     "A prolonged aPTT, which occurs only when factors are consumed and never in liver disease",
+     "A low platelet count, which is specific to consumptive coagulopathy among these disorders",
+     "A normal ADAMTS13 activity, which by itself establishes DIC over every alternative",
+     "A disproportionately high D-dimer with low fibrinogen — fibrinogen is often normal early in liver disease"
+    ],
+    "correct": 4,
+    "exp": "The module notes that fibrinogen is often normal early in liver disease and that the D-dimer is disproportionately high in DIC, which is how it separates DIC from TTP/HUS, HELLP, liver failure, and heparin effect.",
+    "why": [
+     "Schistocytes appear in DIC but also in the other thrombotic microangiopathies, so they do not discriminate.",
+     "Liver disease also prolongs the aPTT through reduced factor synthesis, so this does not separate the two.",
+     "Low platelets are shared by TTP, HUS, HELLP, and liver failure and cannot distinguish among them.",
+     "Normal ADAMTS13 argues against TTP but does nothing to separate DIC from HELLP or liver failure.",
+     ""
+    ]
+   },
+   {
+    "q": "Which group of obstetric events does the module list as causes of DIC?",
+    "ch": [
+     "Hyperemesis gravidarum, cholestasis of pregnancy, and postpartum thyroiditis",
+     "Placental abruption, amniotic fluid embolism, retained dead fetus, and HELLP",
+     "Gestational thrombocytopenia, placenta previa, and physiologic anemia of pregnancy",
+     "Preeclampsia without severe features, twin gestation, and prolonged rupture of membranes",
+     "Gestational diabetes, polyhydramnios, breech presentation, and preterm labor"
+    ],
+    "correct": 1,
+    "exp": "The module's obstetric mnemonic for DIC is abruption, amniotic fluid embolism, retained dead fetus, and HELLP, and it names delivery or evacuation as the definitive treatment for obstetric DIC.",
+    "why": [
+     "These are pregnancy complications, but the module does not list any of them as a cause of consumptive coagulopathy.",
+     "",
+     "Gestational thrombocytopenia is a benign isolated low count and previa causes hemorrhage without the consumptive pattern.",
+     "The module names HELLP specifically; preeclampsia without severe features and twin gestation are not listed triggers.",
+     "None of these appears among the obstetric triggers the module names, and none exposes tissue factor in the way abruption does."
+    ]
+   }
+  ]
+ },
+ "sepsis": {
+  "condition": "Sepsis & Septic Shock",
+  "questions": [
+   {
+    "q": "How does the Sepsis-3 definition presented in the module define sepsis?",
+    "ch": [
+     "Life-threatening organ dysfunction caused by a dysregulated host response to infection",
+     "A serum lactate above 2 mmol/L in any patient with a suspected or confirmed infection",
+     "Two or more SIRS criteria in a patient with a documented positive blood culture",
+     "Any infection accompanied by a fever above 38.3°C and a white count above 12,000",
+     "Hypotension requiring vasopressors in a patient with a suspected infectious source"
+    ],
+    "correct": 0,
+    "exp": "Sepsis-3 defines sepsis as life-threatening organ dysfunction caused by a dysregulated host response to infection, operationalized as a SOFA score increase of 2 or more points.",
+    "why": [
+     "",
+     "Lactate above 2 is part of the septic shock definition alongside vasopressor-requiring hypotension, not the definition of sepsis.",
+     "The module says SIRS was dropped from the definition because it is sensitive but nonspecific, and a positive culture is not required.",
+     "Fever and leukocytosis are SIRS criteria, which no longer define sepsis under Sepsis-3.",
+     "Vasopressor-requiring hypotension defines septic shock, a subset of sepsis, not sepsis itself."
+    ]
+   },
+   {
+    "q": "Which combination defines septic shock in the module?",
+    "ch": [
+     "Hypotension that corrects completely after a 30 mL/kg crystalloid bolus has been given",
+     "Any infection with a serum lactate above 4 mmol/L regardless of the blood pressure",
+     "Vasopressor-requiring hypotension with a MAP below 65 plus a lactate above 2 mmol/L despite adequate fluids",
+     "A systolic blood pressure at or below 100 with a respiratory rate of 22 or more and altered mentation",
+     "A SOFA score increase of 2 or more points in a patient with a confirmed source of infection"
+    ],
+    "correct": 2,
+    "exp": "Septic shock is the subset of sepsis with profound circulatory, cellular, and metabolic abnormality: vasopressor-requiring hypotension with MAP below 65 AND lactate above 2 mmol/L despite adequate fluid resuscitation.",
+    "why": [
+     "Hypotension that resolves with fluid is not septic shock; the definition requires persistence despite adequate fluids.",
+     "Lactate of 4 or more triggers the fluid bolus in the module's bundle but does not by itself define shock.",
+     "",
+     "Those are the three qSOFA elements, which the module calls a bedside risk flag rather than a definition of shock.",
+     "A SOFA rise of 2 or more defines sepsis, not the shock subset that additionally requires vasopressors and a raised lactate."
+    ]
+   },
+   {
+    "q": "What type of shock is sepsis physiologically, according to the module?",
+    "ch": [
+     "Neurogenic shock, with loss of sympathetic tone and an inappropriately slow heart rate",
+     "Cardiogenic shock, with a low cardiac output and a high systemic vascular resistance",
+     "Distributive shock, with vasodilation and capillary leak producing high output and low SVR",
+     "Hypovolemic shock, with true intravascular volume loss and a low cardiac output",
+     "Obstructive shock, with impaired ventricular filling from an extracardiac obstruction"
+    ],
+    "correct": 2,
+    "exp": "Sepsis is distributive shock: vasodilation, capillary leak, and relative hypovolemia produce a high-cardiac-output, low-SVR state with impaired oxygen utilization, which is why norepinephrine and not fluid alone is first-line.",
+    "why": [
+     "Neurogenic shock is not the mechanism the module assigns to a dysregulated response to infection.",
+     "The module describes sepsis as classically warm and hyperdynamic early, the opposite of the low-output, high-resistance cardiogenic pattern.",
+     "",
+     "The hypovolemia in sepsis is relative, from vasodilation and capillary leak, rather than true volume loss.",
+     "There is no extracardiac obstruction in sepsis; the problem is loss of vascular tone."
+    ]
+   },
+   {
+    "q": "What does the module say about the sequence of blood cultures and antibiotics?",
+    "ch": [
+     "Draw two blood cultures before antibiotics, but never let culture logistics delay them",
+     "Give antibiotics only after all cultures have resulted, to ensure the correct agent",
+     "Cultures may be omitted entirely because they rarely change management in sepsis",
+     "Antibiotics should be delayed up to four hours while the source is imaged and located",
+     "Draw a single blood culture after antibiotics have already been started, to save time"
+    ],
+    "correct": 0,
+    "exp": "The module says obtain blood cultures x2 before antibiotics and do not delay antibiotics more than 45 minutes for cultures, with empiric broad-spectrum antibiotics given within 1 hour of recognizing septic shock.",
+    "why": [
+     "",
+     "Each hour of delayed appropriate antibiotics in septic shock increases mortality, so waiting for culture results is unacceptable.",
+     "Cultures guide de-escalation to a narrower agent, which the module treats as a core part of stewardship.",
+     "The module's Hour-1 bundle gives antibiotics within one hour; imaging localizes the source in parallel, not first.",
+     "The module specifies two sets drawn before antibiotics, because cultures obtained afterward are far less likely to grow."
+    ]
+   },
+   {
+    "q": "Which initial fluid strategy does the module specify for hypotension or a lactate of 4 or more?",
+    "ch": [
+     "Albumin 25% as the initial resuscitation fluid in every patient with septic shock",
+     "Packed red blood cells to a hemoglobin of 10 g/dL before any crystalloid is given",
+     "One litre of 0.9% saline over 12 hours titrated to a central venous pressure of 8 to 12",
+     "Vasopressors alone, because fluid administration worsens capillary leak in sepsis",
+     "30 mL/kg of balanced crystalloid within 3 hours, then dynamic reassessment"
+    ],
+    "correct": 4,
+    "exp": "The module gives 30 mL/kg IV balanced crystalloid within 3 hours for hypotension or lactate of 4 or more, then reassesses dynamically with a passive leg raise or stroke volume to avoid over-resuscitation.",
+    "why": [
+     "Balanced crystalloids such as Lactated Ringer's or Plasma-Lyte are the module's initial resuscitation fluid, not concentrated albumin.",
+     "Transfusion to a fixed hemoglobin target is not part of the module's initial resuscitation.",
+     "The module prefers balanced crystalloids over 0.9% saline and calls static CVP targets outdated after the goal-directed therapy trials.",
+     "Fluids remain the initial resuscitation step; norepinephrine is added when fluids fail to correct hypotension.",
+     ""
+    ]
+   },
+   {
+    "q": "What vasopressor sequence does the module describe for septic shock?",
+    "ch": [
+     "Phenylephrine first, then epinephrine, with hydrocortisone as the third agent",
+     "Norepinephrine first, then add vasopressin, then hydrocortisone for refractory shock",
+     "Dobutamine first to raise cardiac output, then norepinephrine only if the MAP stays low",
+     "Dopamine first, then dobutamine, then norepinephrine for refractory shock",
+     "Vasopressin first, titrated to effect, with norepinephrine reserved as rescue"
+    ],
+    "correct": 1,
+    "exp": "The module's ladder is norepinephrine first-line to restore a MAP of 65 or more, vasopressin added at a fixed low dose to reduce the catecholamine burden, and hydrocortisone for shock refractory to escalating vasopressors.",
+    "why": [
+     "Phenylephrine and epinephrine are not named in the module's ladder; norepinephrine is the explicit first-line agent.",
+     "",
+     "Dobutamine is added only for persistent hypoperfusion with an adequate MAP and can worsen hypotension if given first.",
+     "Dopamine is not in the module's ladder, and dobutamine is reserved for low cardiac output with an adequate MAP.",
+     "Vasopressin is an add-on given at a fixed low dose rather than titrated, and it is not the first-line agent."
+    ]
+   },
+   {
+    "q": "How does the module characterize qSOFA?",
+    "ch": [
+     "A scoring system that replaced SOFA for defining organ dysfunction under Sepsis-3",
+     "A laboratory-based score requiring lactate, bilirubin, creatinine, and platelet counts",
+     "A tool used only after septic shock is established, to predict vasopressor duration",
+     "A prognostic red flag rather than a screening test — a negative qSOFA does not rule out sepsis",
+     "The most sensitive available screen, so that a negative result safely excludes sepsis"
+    ],
+    "correct": 3,
+    "exp": "The module calls qSOFA (respiratory rate 22 or more, altered mentation, systolic pressure 100 or less) a bedside flag for high risk and a poor screening tool: prognostic, not a screen, and a negative qSOFA does not rule out sepsis.",
+    "why": [
+     "SOFA still defines organ dysfunction in Sepsis-3; qSOFA is a bedside adjunct rather than a replacement.",
+     "qSOFA uses three bedside variables and requires no laboratory testing at all.",
+     "qSOFA is applied at the bedside to flag risk early, not after shock is already established.",
+     "",
+     "The module explicitly calls qSOFA a poor screening tool and points to NEWS2 or SIRS for early detection instead."
+    ]
+   },
+   {
+    "q": "A patient in septic shock is on appropriate antibiotics and norepinephrine but keeps deteriorating; CT shows an undrained intra-abdominal abscess. What does the module emphasize?",
+    "ch": [
+     "Escalate norepinephrine and defer any procedure until the shock has fully resolved",
+     "Add dobutamine, since ongoing deterioration indicates myocardial dysfunction",
+     "Repeat the 30 mL/kg crystalloid bolus and target a central venous pressure of 12",
+     "Broaden the antibiotic regimen further and add empiric antifungal coverage",
+     "Source control is as important as antibiotics — antibiotics fail without drainage"
+    ],
+    "correct": 4,
+    "exp": "The module teaches that source control — draining abscesses, removing infected lines, debriding tissue — is as important as antibiotics, and that antibiotics fail without it.",
+    "why": [
+     "An undrained abscess is listed as an emergent source-control red flag; deferring drainage perpetuates the shock.",
+     "Dobutamine is for persistent hypoperfusion with an adequate MAP, and it does not address an undrained collection.",
+     "The module rejects static CVP targets, and more fluid will not overcome an uncontrolled source.",
+     "The module reserves antifungals for patients with fungal risk and directs de-escalation on culture data, not reflexive broadening.",
+     ""
+    ]
+   },
+   {
+    "q": "How does the module say serum lactate should be used during resuscitation?",
+    "ch": [
+     "Lactate should be used to set a fixed central venous pressure target for fluids",
+     "Lactate reflects the infection burden and should be used to choose the antibiotic",
+     "Lactate is useful only once vasopressors have already been started for shock",
+     "Lactate marks hypoperfusion and should be trended — failure to clear is ominous",
+     "A single normal lactate reliably excludes sepsis and ends the resuscitation"
+    ],
+    "correct": 3,
+    "exp": "Lactate reflects hypoperfusion and anaerobic metabolism; the module says trend it, because lactate clearance guides the adequacy of resuscitation and a lactate that fails to clear is an ominous sign.",
+    "why": [
+     "The module says lactate clearance guides resuscitation rather than a fixed CVP target, which it calls outdated.",
+     "Lactate reflects perfusion, not the organism, and antibiotic choice follows the likely source and cultures.",
+     "A lactate of 4 or more triggers the initial fluid bolus, so it is used well before vasopressors are started.",
+     "",
+     "The module treats lactate as a marker of hypoperfusion to be trended, and one value cannot exclude sepsis."
+    ]
+   },
+   {
+    "q": "Which bedside change does the module identify as often the first clue to sepsis, before hypotension appears?",
+    "ch": [
+     "A widening pulse pressure with bounding peripheral pulses at rest",
+     "A rising respiratory rate or new confusion",
+     "A rising serum creatinine noted on the daily metabolic panel",
+     "A new fever spike above 39°C recorded on routine vital signs",
+     "A falling hemoglobin on the morning complete blood count"
+    ],
+    "correct": 1,
+    "exp": "The module tells nurses to trend vital signs, mentation, urine output, and lactate, and to escalate a rising respiratory rate or new confusion, which is often the first clue before hypotension develops.",
+    "why": [
+     "Bounding pulses describe the warm shock physiology, but the module names respiratory rate and mentation as the earliest clue.",
+     "",
+     "A rising creatinine is listed as a sign of organ injury, but it lags behind the bedside changes the module highlights.",
+     "Fever is a common but nonspecific SIRS finding, and the module notes hypothermia can occur instead.",
+     "Anemia is not among the early signs of organ dysfunction the module asks nurses to trend."
+    ]
+   }
+  ]
+ },
+ "cellulitis": {
+  "condition": "Cellulitis",
+  "questions": [
+   {
+    "q": "Which description matches the module's definition of cellulitis?",
+    "ch": [
+     "A chronic bilateral inflammatory change of the lower legs caused by venous hypertension",
+     "A localized collection of pus within the dermis requiring drainage as primary therapy",
+     "A non-purulent bacterial infection of the deep dermis and subcutaneous fat with flat, ill-defined margins",
+     "A superficial infection of the upper dermis and lymphatics with sharply raised borders",
+     "A necrotizing infection of the fascial planes causing crepitus and rapid skin necrosis"
+    ],
+    "correct": 2,
+    "exp": "Cellulitis is a non-purulent bacterial infection of the deep dermis and subcutaneous tissue with flat, ill-defined margins, most often caused by beta-hemolytic streptococci and Staphylococcus aureus.",
+    "why": [
+     "That describes stasis dermatitis, the classic pseudocellulitis the module warns about in bilateral leg erythema.",
+     "A drainable pus collection is an abscess, which implies purulent disease and requires incision and drainage.",
+     "",
+     "That describes erysipelas, which the module contrasts with cellulitis by its sharply demarcated, raised border.",
+     "That describes necrotizing fasciitis, the surgical emergency the module lists as a red flag rather than the diagnosis itself."
+    ]
+   },
+   {
+    "q": "How does the module distinguish erysipelas from cellulitis?",
+    "ch": [
+     "Erysipelas is bilateral by definition while cellulitis is unilateral in every case",
+     "Erysipelas is caused only by Staphylococcus aureus while cellulitis is caused only by streptococci",
+     "Erysipelas is always purulent and requires drainage, whereas cellulitis is always non-purulent",
+     "Erysipelas involves the subcutaneous fat while cellulitis is confined to the epidermis alone",
+     "Erysipelas is more superficial with sharply demarcated, raised borders; cellulitis has flat, ill-defined margins"
+    ],
+    "correct": 4,
+    "exp": "The module's rule is that erysipelas is raised and sharply demarcated, involving the upper dermis and lymphatics, while cellulitis is flat and ill-defined in the deep dermis and subcutaneous fat.",
+    "why": [
+     "Laterality is not the distinction the module draws; it uses bilateral leg erythema to raise suspicion for stasis dermatitis instead.",
+     "The module attributes non-purulent cellulitis chiefly to beta-hemolytic streptococci and S. aureus, so this pairing is inverted.",
+     "Purulence in the module signals abscess or furuncle and drives MRSA coverage; it is not what separates erysipelas from cellulitis.",
+     "The depths are reversed: erysipelas is the more superficial upper-dermal process and cellulitis reaches subcutaneous fat.",
+     ""
+    ]
+   },
+   {
+    "q": "The module calls cellulitis a clinical diagnosis based on a classic tetrad. What is that tetrad?",
+    "ch": [
+     "Fluctuance, purulent drainage, a central punctum, and surrounding induration",
+     "Rubor, calor, dolor, and tumor — redness, warmth, pain, and swelling",
+     "Fever, leukocytosis, tachycardia, and an elevated C-reactive protein",
+     "Crepitus, bullae, skin necrosis, and pain out of proportion to the exam",
+     "Pruritus, scaling, lichenification, and hyperpigmentation of the lower leg"
+    ],
+    "correct": 1,
+    "exp": "The module diagnoses cellulitis clinically by the tetrad of rubor, calor, dolor, and tumor — redness, warmth, pain, and swelling — usually unilateral and most common on the lower extremity.",
+    "why": [
+     "These findings describe an abscess or furuncle, which indicates purulent disease requiring incision and drainage.",
+     "",
+     "These are systemic markers the module reserves for patients with toxicity or failure to improve; labs are usually unnecessary in mild disease.",
+     "These are the module's red flags for necrotizing fasciitis, which mandates emergent surgical consultation.",
+     "These are chronic skin changes of stasis dermatitis, the pseudocellulitis the module warns against."
+    ]
+   },
+   {
+    "q": "A patient is admitted for 'bilateral lower-leg cellulitis' with symmetric erythema, no fever, and chronic edema. What does the module suggest?",
+    "ch": [
+     "Necrotizing fasciitis, which requires an emergent surgical consultation",
+     "Purulent cellulitis from MRSA, which requires vancomycin and drainage",
+     "Erysipelas, which becomes bilateral when lymphatic drainage is impaired",
+     "Stasis dermatitis or venous disease — bilateral erythema is usually not infection",
+     "Orbital cellulitis spread, which requires urgent imaging of the head and orbits"
+    ],
+    "correct": 3,
+    "exp": "Cellulitis is nearly always unilateral; the module teaches that bilateral lower-leg erythema is usually stasis dermatitis or venous disease, a classic pseudocellulitis, and that antibiotics will not help.",
+    "why": [
+     "Necrotizing fasciitis presents with pain out of proportion, rapid progression, bullae, or crepitus, none of which are described here.",
+     "There is no purulence or abscess described, and the module says routine MRSA coverage is unnecessary without purulence or systemic toxicity.",
+     "Erysipelas is a sharply demarcated infection and does not explain symmetric bilateral erythema with chronic edema.",
+     "",
+     "Orbital cellulitis is a periorbital emergency with vision change or proptosis and has no relationship to bilateral leg erythema."
+    ]
+   },
+   {
+    "q": "Which oral agents does the module prefer for purulent cellulitis with suspected community-acquired MRSA?",
+    "ch": [
+     "TMP-SMX or doxycycline, the preferred outpatient oral coverage for CA-MRSA",
+     "Amoxicillin or penicillin V, which cover beta-hemolytic streptococci reliably",
+     "Nafcillin or oxacillin, the anti-staphylococcal penicillins used for MSSA disease",
+     "Vancomycin, which requires trough or AUC monitoring during intravenous therapy",
+     "Cephalexin or dicloxacillin, which cover streptococci and methicillin-sensitive S. aureus"
+    ],
+    "correct": 0,
+    "exp": "The module names TMP-SMX or doxycycline as preferred oral outpatient coverage for purulent cellulitis and suspected CA-MRSA, since purulence implies S. aureus including MRSA.",
+    "why": [
+     "",
+     "Aminopenicillins target streptococci and provide no MRSA activity, so they are inadequate for purulent disease.",
+     "The anti-staphylococcal penicillins treat MSSA, and the module states they are not active against MRSA.",
+     "Vancomycin does cover MRSA, but the module reserves it for severe, systemic, or hospitalized patients rather than oral outpatient therapy.",
+     "Cephalexin and dicloxacillin cover strep and MSSA but explicitly do not cover MRSA in the module."
+    ]
+   },
+   {
+    "q": "A fluctuant 4 cm abscess is found within an area of cellulitis. What does the module identify as primary therapy?",
+    "ch": [
+     "Clindamycin alone, for its antitoxin effect in streptococcal disease",
+     "Incision and drainage, with the fluid sent for culture",
+     "Oral cephalexin alone, continued for a full five- to six-day course",
+     "Intravenous vancomycin alone, with trough monitoring throughout therapy",
+     "Warm compresses and limb elevation alone until the collection resorbs"
+    ],
+    "correct": 1,
+    "exp": "Incision and drainage is primary therapy for any associated abscess or purulent collection; the module states antibiotics alone are inadequate for a drainable abscess and that the fluid should be sent for culture.",
+    "why": [
+     "Clindamycin has an antitoxin role in severe streptococcal disease and carries the highest C. difficile risk; it does not replace drainage.",
+     "",
+     "Cephalexin does not cover MRSA and, more importantly, no antibiotic alone is adequate for a drainable collection.",
+     "Vancomycin covers MRSA, but the module still calls drainage the primary therapy for a purulent collection.",
+     "Elevation is a nursing priority for the limb overall, but it will not resolve a drainable abscess."
+    ]
+   },
+   {
+    "q": "Why does the module recommend marking and dating the leading edge of the erythema?",
+    "ch": [
+     "Because it is an objective bedside tool to track spread or response",
+     "Because it establishes the Eron class and determines the antibiotic dose",
+     "Because erythema crossing the mark always indicates necrotizing fasciitis",
+     "Because it removes the need for any antibiotic therapy in mild disease",
+     "Because it identifies the causative organism without sending a culture"
+    ],
+    "correct": 0,
+    "exp": "Marking and dating the border is an objective bedside tool to track spread or response to therapy, and it helps distinguish true progression from the transient post-lysis erythema of the first 24 to 48 hours.",
+    "why": [
+     "",
+     "The Eron classification is based on systemic instability and comorbidity, not on the position of a pen mark.",
+     "The module notes erythema can transiently worsen in the first 24 to 48 hours as bacteria lyse, so crossing the mark is not automatically necrotizing disease.",
+     "Marking is a monitoring tool, not a treatment; the module still directs empiric antibiotics tailored to purulence and MRSA risk.",
+     "Only culture of drained fluid or blood identifies an organism; a pen mark cannot."
+    ]
+   },
+   {
+    "q": "Which finding in a patient with a red, swollen leg is the module's red flag demanding emergent surgical consultation?",
+    "ch": [
+     "Interdigital fissuring and scaling consistent with untreated tinea pedis",
+     "A temperature of 38.1°C with a mild leukocytosis on the admission labs",
+     "Sharply demarcated raised borders over the anterior shin and the cheek",
+     "Pain out of proportion to the exam with rapid progression, bullae, or crepitus",
+     "Erythema that has expanded slightly beyond the pen mark at 24 hours"
+    ],
+    "correct": 3,
+    "exp": "Pain out of proportion to the exam, rapid progression, bullae, crepitus, or skin necrosis are the module's red flags for necrotizing fasciitis, a surgical emergency requiring emergent surgical consultation.",
+    "why": [
+     "Tinea pedis is the portal of entry the module tells you to find and treat, not a surgical emergency.",
+     "Low-grade fever with a mild leukocytosis is common in cellulitis; the module's sepsis red flag is fever with hypotension, tachycardia, and confusion.",
+     "Sharply demarcated raised borders describe erysipelas, which is treated medically rather than surgically.",
+     "",
+     "The module notes erythema can transiently worsen in the first 24 to 48 hours after antibiotics as bacteria lyse, and this is not necessarily failure."
+    ]
+   },
+   {
+    "q": "A patient has had three episodes of left leg cellulitis in one year. Which intervention does the module emphasize to prevent recurrence?",
+    "ch": [
+     "Obtain blood cultures at every episode to identify a persistent organism",
+     "Rotating oral antibiotic classes with each new episode to avoid resistance",
+     "Routine MRSA coverage for every future episode regardless of purulence",
+     "Bed rest with the limb dependent, to improve arterial inflow to the skin",
+     "Treat the interdigital tinea pedis and manage lymphedema and edema"
+    ],
+    "correct": 4,
+    "exp": "The module calls interdigital tinea pedis a frequently overlooked portal of entry for recurrent leg cellulitis: treat it, manage lymphedema and edema, and consider prophylactic penicillin V for recurrent disease.",
+    "why": [
+     "Blood cultures are reserved for systemic toxicity, immunocompromise, or failure to improve, and they do not prevent recurrence.",
+     "The module addresses recurrence by fixing predisposing factors, not by cycling antibiotic classes.",
+     "The module states routine MRSA coverage is not needed for simple non-purulent cellulitis without systemic toxicity or MRSA risk factors.",
+     "The module directs elevating the limb above heart level to reduce edema, which is the opposite of keeping it dependent.",
+     ""
+    ]
+   },
+   {
+    "q": "Twenty-four hours after starting cephalexin, a patient's erythema looks slightly more intense, though she is afebrile and feels better systemically. What does the module say?",
+    "ch": [
+     "This means the diagnosis is wrong and the antibiotic should simply be stopped",
+     "This confirms treatment failure and requires immediate escalation to vancomycin",
+     "Erythema can transiently worsen in the first 24 to 48 hours as bacteria lyse",
+     "This indicates an occult abscess and mandates immediate incision and drainage",
+     "This is diagnostic of necrotizing fasciitis and requires emergent debridement"
+    ],
+    "correct": 2,
+    "exp": "The module notes erythema can transiently worsen in the first 24 to 48 hours after antibiotics are started as bacteria lyse, and that this is not necessarily failure, which is why the marked and dated border is used to judge true progression.",
+    "why": [
+     "The module directs completing the full antibiotic course; stopping therapy at 24 hours risks relapse.",
+     "The module warns against reading early intensification as failure, and vancomycin is reserved for severe, systemic, or hospitalized disease.",
+     "",
+     "An occult abscess is sought with ultrasound when suspected; slight early intensification alone does not establish one.",
+     "Necrotizing fasciitis is signaled by pain out of proportion, rapid progression, bullae, or crepitus, none of which are present."
+    ]
+   }
+  ]
+ },
+ "hiv": {
+  "condition": "HIV / AIDS",
+  "questions": [
+   {
+    "q": "Which description matches the module's account of what HIV is?",
+    "ch": [
+     "A prion that accumulates in lymphoid tissue and progressively destroys immune cells",
+     "An RNA virus that infects only hepatocytes and is cleared with direct-acting antivirals",
+     "A single-stranded RNA retrovirus that uses reverse transcriptase to integrate into host DNA and infects CD4+ T-lymphocytes",
+     "A double-stranded DNA herpesvirus that establishes lifelong latency in sensory ganglia",
+     "A bacterium that survives inside macrophages and is treated with combination antibiotics"
+    ],
+    "correct": 2,
+    "exp": "HIV is a single-stranded RNA retrovirus that uses reverse transcriptase to integrate into host DNA, infecting CD4+ T-lymphocytes, macrophages, and dendritic cells.",
+    "why": [
+     "A prion is a misfolded protein, not a retrovirus with reverse transcriptase.",
+     "Hepatotropic RNA viruses such as hepatitis C are co-infections the module screens for, not HIV itself.",
+     "",
+     "Latency in sensory ganglia describes the herpesviruses; HIV integrates into host DNA in CD4+ cells instead.",
+     "HIV is a virus, and the module treats it with antiretroviral therapy rather than antibiotics."
+    ]
+   },
+   {
+    "q": "How does the module define AIDS?",
+    "ch": [
+     "A CD4 count below 200 cells/mm³ or an AIDS-defining opportunistic illness",
+     "Any detectable HIV RNA viral load in a patient who has never taken therapy",
+     "A CD4 count below 500 cells/mm³ documented on two separate occasions",
+     "A reactive 4th-generation antigen/antibody combination immunoassay result",
+     "Acute retroviral syndrome occurring two to four weeks after an exposure"
+    ],
+    "correct": 0,
+    "exp": "The module defines AIDS as a CD4 count below 200 cells/mm³ or an AIDS-defining condition such as PCP, esophageal candidiasis, Kaposi sarcoma, or disseminated MAC.",
+    "why": [
+     "",
+     "A detectable viral load establishes HIV infection but says nothing about immune stage or AIDS.",
+     "The module's staging threshold is 200 cells/mm³, not 500.",
+     "A reactive screening assay diagnoses infection and must still be confirmed; it does not stage disease.",
+     "Acute retroviral syndrome is the earliest phase of infection, the opposite end of the natural history from AIDS."
+    ]
+   },
+   {
+    "q": "Which test does the module name as the screening test for HIV?",
+    "ch": [
+     "Genotypic resistance testing, performed before any other HIV test",
+     "HIV-1 RNA viral load, drawn as the initial screen in every patient",
+     "The CD4 count, which establishes both infection and disease stage",
+     "The 4th-generation HIV-1/2 antigen/antibody combination immunoassay",
+     "The HIV-1/HIV-2 antibody differentiation assay, used as the first step"
+    ],
+    "correct": 3,
+    "exp": "Screening uses the 4th-generation HIV-1/2 Ag/Ab combo immunoassay, which detects p24 antigen plus antibodies and thereby closes the window period; reactive screens then go to the differentiation assay.",
+    "why": [
+     "Genotypic resistance testing is a baseline test performed after diagnosis to guide the choice of regimen.",
+     "The module orders HIV-1 RNA to confirm when the differentiation assay is indeterminate or negative, or when acute infection is suspected, not as the routine screen.",
+     "The CD4 count measures immune status at baseline and does not establish that infection is present.",
+     "",
+     "The differentiation assay is the confirmatory step performed after a reactive screen, not the first step."
+    ]
+   },
+   {
+    "q": "Twelve days after a high-risk exposure, a patient has fever, pharyngitis, rash, and lymphadenopathy, and the antibody differentiation assay is negative. What does the module direct?",
+    "ch": [
+     "Order an HIV-1 RNA viral load — acute HIV may be antibody-negative early",
+     "Start post-exposure prophylaxis, which remains effective up to 30 days out",
+     "Order a CD4 count, since a value below 200 would establish acute infection",
+     "Treat empirically for infectious mononucleosis and recheck antibodies in a year",
+     "Reassure the patient that HIV is excluded and repeat no further testing"
+    ],
+    "correct": 0,
+    "exp": "Acute HIV carries a very high viral load but may be antibody-negative early; the module says that if the differentiation assay is indeterminate or negative, order HIV-1 RNA, and to consider HIV RNA whenever acute infection is suspected.",
+    "why": [
+     "",
+     "The module specifies post-exposure prophylaxis must start within 72 hours of exposure, so 12 days is far outside the window.",
+     "The CD4 count falls progressively over years and does not diagnose acute infection.",
+     "Acute retroviral syndrome mimics mononucleosis, which is precisely why the module says to ask about exposure and test HIV RNA.",
+     "A negative antibody differentiation assay does not exclude acute infection, which is exactly the scenario the module flags."
+    ]
+   },
+   {
+    "q": "What does the module describe as the typical first-line antiretroviral regimen?",
+    "ch": [
+     "An integrase inhibitor alone, once the viral load has become undetectable",
+     "An integrase strand transfer inhibitor plus two NRTIs",
+     "Tenofovir with emtricitabine alone, the same regimen used for oral PrEP",
+     "A boosted protease inhibitor combined with a single nucleoside analogue",
+     "Three nucleoside reverse transcriptase inhibitors given together"
+    ],
+    "correct": 1,
+    "exp": "First-line ART is an INSTI anchor such as dolutegravir or bictegravir plus a dual-nucleoside backbone of tenofovir with emtricitabine or lamivudine, started rapidly in essentially everyone regardless of CD4 count.",
+    "why": [
+     "Reverse transcriptase lacks proofreading, which is the module's rationale for combination therapy rather than monotherapy.",
+     "",
+     "Tenofovir with emtricitabine alone is the oral PrEP regimen for HIV-negative people, not treatment for established infection.",
+     "Boosted darunavir is the module's high-resistance-barrier alternative for resistance or adherence concerns, and the backbone is dual, not single.",
+     "The module pairs two NRTIs with an INSTI anchor rather than using three nucleosides."
+    ]
+   },
+   {
+    "q": "Which CD4 threshold matches the opportunistic infection the module pairs with it?",
+    "ch": [
+     "CD4 below 350 — cryptococcal meningitis and toxoplasmosis",
+     "CD4 below 50 — esophageal candidiasis as the earliest infection",
+     "CD4 below 100 — cytomegalovirus retinitis and MAC bacteremia",
+     "CD4 below 200 — Pneumocystis jirovecii pneumonia",
+     "CD4 below 500 — disseminated Mycobacterium avium complex"
+    ],
+    "correct": 3,
+    "exp": "The module's 200/100/50 rule pairs a CD4 below 200 with Pneumocystis jirovecii pneumonia (PCP), below 100 with toxoplasmosis and cryptococcus, and below 50 with MAC and CMV; TMP-SMX prophylaxis begins when the CD4 falls below 200.",
+    "why": [
+     "The module places cryptococcus and toxoplasma at a CD4 below 100, not 350.",
+     "The module places CD4 below 50 with MAC and CMV; esophageal candidiasis is an AIDS-defining illness but not the earliest infection at that threshold.",
+     "The module assigns CMV and MAC to a CD4 below 50; below 100 is the toxoplasma and cryptococcus threshold.",
+     "",
+     "The module places disseminated MAC at a CD4 below 50, not 500."
+    ]
+   },
+   {
+    "q": "Which test does the module require before starting abacavir?",
+    "ch": [
+     "Renal function and urine protein, because of proximal tubular toxicity",
+     "Hepatitis B surface antigen, to avoid reactivation on withdrawal",
+     "HLA-B*57:01 testing, to prevent a fatal hypersensitivity reaction",
+     "G6PD activity, to prevent hemolysis on exposure to the drug",
+     "Genotypic resistance testing, repeated at every regimen change"
+    ],
+    "correct": 2,
+    "exp": "The module states abacavir requires HLA-B*57:01 testing before use, to prevent a life-threatening hypersensitivity reaction.",
+    "why": [
+     "Renal and bone toxicity is the module's caution for tenofovir disoproxil fumarate, not abacavir.",
+     "Hepatitis B is part of the baseline co-infection screen; the module does not link it to abacavir safety.",
+     "",
+     "The module ties G6PD and sulfa allergy checks to TMP-SMX prophylaxis, not to abacavir.",
+     "Genotypic resistance testing is a baseline test to guide the regimen, but it is not the abacavir-specific safety test."
+    ]
+   },
+   {
+    "q": "A patient on ART with a sustained undetectable viral load asks whether he can transmit HIV to his partner. What counseling does the module give?",
+    "ch": [
+     "Transmission risk depends on the CD4 count rather than on the plasma viral load",
+     "He must remain abstinent until two consecutive CD4 counts exceed 500 cells/mm³",
+     "Transmission risk is reduced but condoms remain the only reliable barrier against infection",
+     "He should start his partner on post-exposure prophylaxis after every sexual encounter",
+     "Undetectable = Untransmittable — sustained suppression means HIV cannot be sexually transmitted"
+    ],
+    "correct": 4,
+    "exp": "U=U (Undetectable = Untransmittable) is the module's cornerstone counseling message: a sustained undetectable viral load means HIV cannot be sexually transmitted.",
+    "why": [
+     "The module ties transmission to the viral load; CD4 recovery follows suppression and indexes immune status, not infectiousness.",
+     "The module counsels U=U rather than abstinence, and CD4 thresholds do not govern transmissibility.",
+     "The module states that durable suppression eliminates sexual transmission rather than merely reducing the risk.",
+     "The module reserves post-exposure prophylaxis for an acute high-risk exposure started within 72 hours, not routine use with a suppressed partner.",
+     ""
+    ]
+   },
+   {
+    "q": "Two weeks after starting ART, a patient with treated tuberculosis develops fever and worsening lymphadenopathy. What does the module call this?",
+    "ch": [
+     "Antiretroviral treatment failure caused by a resistant viral strain",
+     "Immune reconstitution inflammatory syndrome (IRIS)",
+     "Acute retroviral syndrome from a second HIV superinfection",
+     "An AIDS-defining illness establishing progression to AIDS",
+     "Abacavir hypersensitivity reaction from an unscreened HLA type"
+    ],
+    "correct": 1,
+    "exp": "IRIS is a paradoxical worsening of an opportunistic infection after ART is started, as immunity recovers; the module flags it especially with underlying TB or cryptococcus.",
+    "why": [
+     "Treatment failure is signaled by a rising viral load or falling CD4, not by inflammatory worsening two weeks into therapy.",
+     "",
+     "Acute retroviral syndrome occurs two to four weeks after initial exposure, not after starting therapy in a known patient.",
+     "The worsening here reflects recovering immunity rather than progressive immunodeficiency.",
+     "Abacavir hypersensitivity is prevented by HLA-B*57:01 testing and does not present as worsening of a treated opportunistic infection."
+    ]
+   },
+   {
+    "q": "A nurse sustains a needlestick from a patient with HIV. What does the module specify about post-exposure prophylaxis?",
+    "ch": [
+     "It is begun 72 hours after exposure, to allow seroconversion to occur",
+     "A single antiretroviral agent taken for seven days is sufficient",
+     "It is started only after the source patient's viral load has resulted",
+     "It is indicated only if the exposed worker's own HIV test is positive",
+     "Three-drug ART started within 72 hours and continued for 28 days"
+    ],
+    "correct": 4,
+    "exp": "The module specifies post-exposure prophylaxis as three-drug ART started within 72 hours of exposure and continued for 28 days, with baseline and follow-up HIV testing, and the sooner the better.",
+    "why": [
+     "72 hours is the outer limit for starting prophylaxis, not the time to begin; the module says the sooner the better.",
+     "The module specifies a three-drug regimen for 28 days, not a single agent for a week.",
+     "The module treats exposure as time-sensitive, so prophylaxis cannot wait on the source patient's results.",
+     "A positive baseline test in the exposed worker would mean established infection requiring treatment, not prophylaxis.",
+     ""
+    ]
+   }
+  ]
+ }
+}

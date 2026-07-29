@@ -1,0 +1,977 @@
+{
+ "osteoarthritis": {
+  "condition": "Osteoarthritis",
+  "questions": [
+   {
+    "q": "Which description best characterizes the morning stiffness of osteoarthritis?",
+    "ch": [
+     "Stiffness lasting less than 30 minutes, with gelling after inactivity",
+     "Stiffness accompanied by symmetric swelling of the MCP joints and the wrists",
+     "Stiffness lasting more than one hour that improves as the joints are used",
+     "Stiffness occurring only after prolonged rest at night and never in the morning",
+     "Stiffness that steadily worsens through the day and is unrelieved by rest"
+    ],
+    "correct": 0,
+    "exp": "OA produces brief morning stiffness of under 30 minutes plus gelling after inactivity; the pain is activity-related and improves with rest.",
+    "why": [
+     "",
+     "Symmetric MCP and wrist swelling is the RA pattern; OA involves the DIPs, PIPs, first CMC and weight-bearing joints.",
+     "Morning stiffness over one hour that improves with use suggests an inflammatory arthritis such as RA.",
+     "Gelling after inactivity does occur, but the module also describes brief morning stiffness, so 'never in the morning' is wrong.",
+     "OA pain is activity-related and improves with rest, so pain unrelieved by rest argues against the diagnosis."
+    ]
+   },
+   {
+    "q": "How do Heberden's and Bouchard's nodes differ?",
+    "ch": [
+     "Heberden's nodes are at the PIP joints and Bouchard's nodes at the DIP joints",
+     "Both Heberden's and Bouchard's nodes occur only at the MCP joints of the hand",
+     "Heberden's nodes are at the first CMC joint and Bouchard's nodes at the wrist",
+     "Both are soft-tissue swellings of the wrist seen only in inflammatory arthritis",
+     "Heberden's nodes are at the DIP joints and Bouchard's nodes at the PIP joints"
+    ],
+    "correct": 4,
+    "exp": "Heberden's nodes are bony enlargements of the DIP joints and Bouchard's nodes of the PIP joints; the memory aid is alphabetical, B before H, and PIP is proximal.",
+    "why": [
+     "This reverses them; the alphabetical aid (B before H, PIP proximal) places Bouchard's nodes at the PIP joints.",
+     "The MCP joints are characteristically spared in hand OA, and MCP involvement should suggest RA or hemochromatosis.",
+     "First CMC squaring is a real hand-OA finding but it is not a Heberden's node, and the wrist is spared in OA.",
+     "These are bony enlargements rather than soft-tissue swelling, and OA spares the wrist.",
+     ""
+    ]
+   },
+   {
+    "q": "Which set of radiographic findings matches the LOSS hallmarks of osteoarthritis?",
+    "ch": [
+     "Symmetric joint-space narrowing, juxta-articular osteopenia and marginal erosions",
+     "Entirely normal radiographs with an elevated ESR and CRP confirming the diagnosis",
+     "Diffuse demineralization with vertebral compression and no osteophyte formation",
+     "Chondrocalcinosis of the menisci with rhomboid calcium pyrophosphate deposits",
+     "Asymmetric loss of joint space, osteophytes, subchondral sclerosis and subchondral cysts"
+    ],
+    "correct": 4,
+    "exp": "The LOSS mnemonic is Loss of joint space (asymmetric), Osteophytes, Subchondral sclerosis and Subchondral cysts, the four radiographic hallmarks of OA.",
+    "why": [
+     "Symmetric narrowing with juxta-articular osteopenia and marginal erosions is the rheumatoid radiographic pattern.",
+     "In OA the ESR and CRP are normal, and abnormal inflammatory labs should make you reconsider the diagnosis.",
+     "Diffuse demineralization describes osteoporosis, whereas osteophyte formation is a defining feature of OA.",
+     "Chondrocalcinosis with rhomboid crystals is CPPD, which the module lists as a cause of secondary OA rather than an OA hallmark.",
+     ""
+    ]
+   },
+   {
+    "q": "An 82-year-old with knee osteoarthritis, chronic kidney disease and prior peptic ulcer disease needs better analgesia. Which option is preferred first-line?",
+    "ch": [
+     "Oral glucosamine with chondroitin taken daily as a supplement",
+     "Repeated intra-articular corticosteroid injections every four weeks",
+     "Oral naproxen with a proton pump inhibitor added for gastroprotection",
+     "Topical diclofenac gel applied to the affected knee",
+     "Scheduled tramadol titrated upward for chronic daily pain control"
+    ],
+    "correct": 3,
+    "exp": "Topical NSAIDs such as diclofenac gel are preferred first-line for knee and hand OA per ACR/OARSI, with fewer GI and renal effects, making them ideal in elderly and comorbid patients.",
+    "why": [
+     "Glucosamine and chondroitin lack strong evidence and are conditionally recommended against by ACR.",
+     "Intra-articular steroids last only weeks and their frequency must be limited, since repeated injections may accelerate cartilage loss.",
+     "Oral NSAIDs are avoided in CKD, peptic ulcer disease and cardiovascular disease, and a PPI does not make them safe here.",
+     "",
+     "ACR conditionally recommends against routine opioids because of dependence, falls and sedation; they are a last resort."
+    ]
+   },
+   {
+    "q": "What is the cornerstone non-pharmacologic therapy that should be taught to every patient with osteoarthritis?",
+    "ch": [
+     "Weight loss with low-impact exercise such as walking, swimming, cycling and quadriceps strengthening",
+     "Immobilizing the affected joint in a rigid cast or brace for several weeks at a time",
+     "Early referral for total joint arthroplasty before conservative measures are optimized",
+     "Strict joint rest with avoidance of all exercise until the pain has fully resolved",
+     "Daily oral glucosamine and chondroitin supplements combined with bedtime capsaicin cream"
+    ],
+    "correct": 0,
+    "exp": "Weight loss and low-impact exercise (walking, swimming, cycling, quadriceps strengthening) are the cornerstone non-drug therapy, started before or alongside any medication.",
+    "why": [
+     "",
+     "Immobilization is not part of the ladder; joint protection uses assistive devices, braces and pacing rather than casting.",
+     "Arthroplasty is reserved for end-stage disease refractory to optimized conservative management.",
+     "Rest helps acutely, but structured low-impact exercise is the cornerstone; rest is paired with pacing, not with exercise avoidance.",
+     "Capsaicin is only an adjunct, and glucosamine with chondroitin lacks strong evidence and is conditionally recommended against."
+    ]
+   },
+   {
+    "q": "A patient with painful right knee osteoarthritis is being fitted for a cane. How should it be used?",
+    "ch": [
+     "Not at all, because assistive devices weaken the quadriceps over time",
+     "In the left hand, to offload the affected right knee",
+     "In the right hand, on the same side as the painful knee",
+     "In either hand, since the side makes no difference to joint loading",
+     "Only indoors, with crutches used outdoors to unload both legs"
+    ],
+    "correct": 1,
+    "exp": "A cane belongs in the contralateral hand, so a painful right knee is offloaded by a cane in the left hand, a concrete mechanical intervention that reduces load on the affected joint.",
+    "why": [
+     "Assistive devices are recommended for joint protection and are paired with quadriceps strengthening rather than avoided.",
+     "",
+     "Holding the cane on the same side does not offload the joint; it must be used in the opposite hand.",
+     "The side matters, because the whole point of the contralateral cane is to shift load away from the painful joint.",
+     "Assistive devices are recommended as part of joint protection generally, not restricted to one setting."
+    ]
+   },
+   {
+    "q": "Which statement reflects the modern understanding of osteoarthritis pathophysiology?",
+    "ch": [
+     "OA is an immune-complex disease driven by autoantibodies against nuclear antigens",
+     "OA results from monosodium urate crystal deposition within the articular cartilage",
+     "OA is an active whole-joint remodeling process with MMP and IL-1/TNF-alpha driven cartilage catabolism",
+     "OA is caused by synovial pannus formation eroding bone at the joint margins",
+     "OA is purely passive mechanical wear of cartilage with no inflammatory component"
+    ],
+    "correct": 2,
+    "exp": "OA is a whole-joint metabolic disease in which an imbalance of MMPs and cytokines (IL-1, TNF-alpha) drives cartilage matrix degradation beyond chondrocyte repair, which explains the synovitis and effusions.",
+    "why": [
+     "Autoantibodies against nuclear antigens describe lupus, and in OA the RF and ANA are negative.",
+     "Urate crystal deposition is gout, whereas OA synovial fluid is non-inflammatory with a WBC under 2000.",
+     "",
+     "Pannus eroding the joint margins is the mechanism of rheumatoid arthritis rather than osteoarthritis.",
+     "This is the outdated view; the stated paradigm shift is that OA is an active remodeling process, not passive wear."
+    ]
+   },
+   {
+    "q": "A 70-year-old followed for knee osteoarthritis presents with a hot, red, swollen knee and a temperature of 38.6 C. What is the appropriate action?",
+    "ch": [
+     "Order weight-bearing radiographs to grade the Kellgren-Lawrence stage",
+     "Perform arthrocentesis, since septic arthritis or crystal arthropathy must be excluded",
+     "Inject intra-articular corticosteroid to abort what is likely an osteoarthritis flare",
+     "Start duloxetine for presumed central sensitization of chronic knee pain",
+     "Increase the oral NSAID dose and reassess in two weeks"
+    ],
+    "correct": 1,
+    "exp": "A hot, swollen, red joint with fever is a red flag: septic arthritis or crystal arthropathy must be ruled out, and arthrocentesis is mandatory.",
+    "why": [
+     "Radiographic grading correlates poorly with symptoms and does nothing to exclude infection in a febrile hot joint.",
+     "",
+     "Injecting steroid into a possibly septic joint is hazardous; the effusion must be aspirated and analyzed first.",
+     "Duloxetine is an adjunct for chronic knee OA pain, not an answer to an acute febrile hot joint.",
+     "Escalating NSAIDs treats a presumed flare and delays diagnosis of a potentially joint-destroying infection."
+    ]
+   },
+   {
+    "q": "A 58-year-old carrying a diagnosis of hand osteoarthritis reports 90 minutes of morning stiffness with symmetric swelling of the MCP joints and wrists, and the ESR and CRP are elevated. How should this be interpreted?",
+    "ch": [
+     "This represents erosive osteoarthritis of the hands, which shows a gull-wing radiographic appearance",
+     "These findings confirm advanced Kellgren-Lawrence grade 4 disease of the small joints of the hand",
+     "This pattern is consistent with first CMC squaring and requires only a topical NSAID for treatment",
+     "The diagnosis should be reconsidered, because this pattern points to an inflammatory arthritis",
+     "This is expected, because osteoarthritis is now known to be a cytokine-driven inflammatory disease"
+    ],
+    "correct": 3,
+    "exp": "Prolonged stiffness over an hour, symmetric small-joint swelling and elevated inflammatory markers are red flags to reconsider the diagnosis, because in OA the ESR and CRP are normal and the RF and ANA are negative.",
+    "why": [
+     "Erosive OA is a recognized hand subtype but it does not explain symmetric MCP and wrist involvement with elevated markers.",
+     "Kellgren-Lawrence grades radiographic severity only, and it cannot be inferred from stiffness and inflammatory labs.",
+     "First CMC squaring is a hand-OA sign, but OA characteristically spares the MCP joints and the wrist.",
+     "",
+     "Although OA involves low-grade cytokine-driven inflammation, the ESR and CRP are normal, and abnormal inflammatory labs should prompt reconsideration."
+    ]
+   },
+   {
+    "q": "A 68-year-old with end-stage knee osteoarthritis has failed exercise, weight loss, physical therapy, topical and oral NSAIDs and injections, and pain now limits all activities of daily living. What is the definitive next step?",
+    "ch": [
+     "Monthly intra-articular corticosteroid injections continued indefinitely",
+     "A trial of long-acting opioid analgesia to preserve remaining joint function",
+     "Referral for total knee arthroplasty for refractory pain and functional loss",
+     "Initiation of a disease-modifying OA drug to restore the cartilage matrix",
+     "A course of oral glucosamine and chondroitin for at least six months"
+    ],
+    "correct": 2,
+    "exp": "Total joint arthroplasty is the definitive treatment for end-stage hip or knee OA and is indicated for refractory pain and functional loss after conservative management is optimized.",
+    "why": [
+     "Injection frequency must be limited because repeated injections may accelerate cartilage loss, and relief lasts only weeks.",
+     "ACR conditionally recommends against routine opioids, which carry dependence, fall and sedation risk and do not address end-stage structural disease.",
+     "",
+     "Disease-modifying OA drugs remain investigational, so management stays symptom-focused until arthroplasty.",
+     "Glucosamine and chondroitin lack strong evidence and are conditionally recommended against by ACR."
+    ]
+   }
+  ]
+ },
+ "ra": {
+  "condition": "Rheumatoid Arthritis",
+  "questions": [
+   {
+    "q": "Which joint pattern is most characteristic of rheumatoid arthritis?",
+    "ch": [
+     "Asymmetric involvement of the DIP joints with bony enlargement and crepitus",
+     "Monoarticular involvement of the first metatarsophalangeal joint overnight",
+     "Symmetric small-joint arthritis of the MCPs, PIPs, wrists and MTPs, sparing the DIPs",
+     "Isolated involvement of the first carpometacarpal joint with thumb-base squaring",
+     "Migratory large-joint arthritis limited to the knees and hips after minor trauma"
+    ],
+    "correct": 2,
+    "exp": "Rheumatoid arthritis is a symmetric polyarthritis of the small joints (MCPs, PIPs, wrists, MTPs) with morning stiffness over an hour, and it classically spares the DIP joints.",
+    "why": [
+     "Asymmetric DIP involvement with bony enlargement is the osteoarthritis pattern, and rheumatoid arthritis spares the DIPs.",
+     "A sudden overnight first MTP monoarthritis describes podagra in gout rather than rheumatoid arthritis.",
+     "",
+     "First CMC involvement with thumb-base squaring is a hand osteoarthritis finding, not a rheumatoid one.",
+     "Rheumatoid arthritis is a persistent symmetric small-joint disease, not a post-traumatic migratory large-joint arthritis."
+    ]
+   },
+   {
+    "q": "Which statement about rheumatoid serology is correct?",
+    "ch": [
+     "A negative rheumatoid factor and a negative anti-CCP together exclude the diagnosis",
+     "Anti-CCP correlates with disease activity and is used to track treat-to-target response",
+     "The antinuclear antibody is the confirmatory diagnostic test for rheumatoid arthritis",
+     "Anti-CCP is the most specific marker and predicts erosive, more severe disease",
+     "Rheumatoid factor is highly specific and is essentially never positive in other diseases"
+    ],
+    "correct": 3,
+    "exp": "Anti-CCP is the most specific and prognostic marker in rheumatoid arthritis, predicting erosive disease and justifying earlier aggressive therapy, whereas rheumatoid factor is sensitive but nonspecific.",
+    "why": [
+     "Both antibodies can be negative in seronegative disease, so negative serology does not exclude rheumatoid arthritis.",
+     "Disease activity is tracked with composite scores such as DAS28, CDAI and RAPID3, not with anti-CCP titers.",
+     "The antinuclear antibody is not the confirmatory test; anti-CCP and rheumatoid factor are the serologies used.",
+     "",
+     "Rheumatoid factor is sensitive but nonspecific and also appears in hepatitis C, Sjogren syndrome and endocarditis."
+    ]
+   },
+   {
+    "q": "Which description of morning stiffness fits rheumatoid arthritis?",
+    "ch": [
+     "Absent entirely, with joint pain occurring only at night and waking the patient",
+     "Variable in length but always confined to the distal interphalangeal joints",
+     "Present only once the disease has become radiographically erosive on X-ray",
+     "Under 30 minutes, worsening with activity and relieved by a period of rest",
+     "Longer than one hour and improving as the joints are used through the day"
+    ],
+    "correct": 4,
+    "exp": "Morning stiffness in rheumatoid arthritis lasts more than an hour and improves with use, in contrast to osteoarthritis, where stiffness is brief and pain is activity-related and eased by rest.",
+    "why": [
+     "Prolonged morning stiffness is a hallmark of rheumatoid arthritis rather than an absent feature.",
+     "Rheumatoid arthritis spares the DIP joints and targets the MCPs, PIPs and wrists.",
+     "Morning stiffness is present from the inflammatory phase onward and is part of the classification criteria, well before erosions appear.",
+     "Brief stiffness that worsens with activity and eases with rest is the osteoarthritis pattern.",
+     ""
+    ]
+   },
+   {
+    "q": "A nurse is teaching a newly diagnosed patient who is starting methotrexate. Which instruction is correct?",
+    "ch": [
+     "Alcohol in moderation is acceptable while taking weekly methotrexate",
+     "Pregnancy is safe on methotrexate provided folic acid is taken every day",
+     "Take it once weekly with folic acid, avoid alcohol, and use reliable contraception",
+     "Expect relief within 48 hours, and if not, double the next scheduled dose",
+     "Take the tablets every day and stop them as soon as the joints feel better"
+    ],
+    "correct": 2,
+    "exp": "Methotrexate is dosed weekly, never daily, with folic acid, no alcohol, and confirmed contraception, because the drug is hepatotoxic and teratogenic.",
+    "why": [
+     "Methotrexate is hepatotoxic, so alcohol is avoided and LFTs are monitored on therapy.",
+     "Methotrexate is teratogenic and contraindicated in pregnancy, and folic acid does not make it safe.",
+     "",
+     "DMARDs take weeks to work, and self-doubling a dose is unsafe; patients are counseled to expect a delayed effect.",
+     "Daily dosing is a classic and dangerous error, and DMARDs must be continued during remission rather than stopped."
+    ]
+   },
+   {
+    "q": "Before starting a TNF-alpha inhibitor, which step is required?",
+    "ch": [
+     "Obtain a baseline and annual retinal examination to detect retinopathy",
+     "Check HLA-B*5801 status in patients of Han Chinese or Thai ancestry",
+     "Administer live attenuated vaccines during the first month of therapy",
+     "Document a normal serum uric acid level and creatinine clearance",
+     "Screen for latent tuberculosis and hepatitis B before the first dose"
+    ],
+    "correct": 4,
+    "exp": "The pre-biologic safety checklist is latent tuberculosis and hepatitis B and C screening plus updating inactivated vaccines, because TNF inhibitors increase infection risk.",
+    "why": [
+     "Retinal screening is a hydroxychloroquine requirement, not part of the TNF inhibitor checklist.",
+     "HLA-B*5801 screening is an allopurinol precaution in gout, not a rheumatoid biologic requirement.",
+     "Inactivated vaccines are given before starting biologics, and live vaccines are avoided in immunosuppressed patients.",
+     "Urate and creatinine clearance are not part of the pre-biologic checklist for rheumatoid arthritis.",
+     ""
+    ]
+   },
+   {
+    "q": "Which combination defines Felty syndrome?",
+    "ch": [
+     "Rheumatoid arthritis with atlantoaxial subluxation and cord compression",
+     "Rheumatoid arthritis with splenomegaly and neutropenia",
+     "Rheumatoid arthritis with pneumoconiosis nodules on chest imaging",
+     "Rheumatoid arthritis with sterile verrucous vegetations on a heart valve",
+     "Rheumatoid arthritis with keratoconjunctivitis sicca and xerostomia"
+    ],
+    "correct": 1,
+    "exp": "Felty syndrome is rheumatoid arthritis plus splenomegaly plus neutropenia; the pneumoconiosis-nodule pairing is Caplan syndrome instead.",
+    "why": [
+     "C1-C2 subluxation is an important rheumatoid complication but it is not Felty syndrome.",
+     "",
+     "That combination is Caplan syndrome, rheumatoid arthritis with pneumoconiosis nodules.",
+     "Sterile verrucous valve vegetations are a lupus finding rather than a rheumatoid syndrome.",
+     "Sicca symptoms describe secondary Sjogren syndrome, which is listed as a separate extra-articular manifestation."
+    ]
+   },
+   {
+    "q": "A patient with 20 years of rheumatoid arthritis is scheduled for elective cholecystectomy. Which preoperative evaluation is specifically flagged?",
+    "ch": [
+     "Cervical spine evaluation for atlantoaxial (C1-C2) subluxation before intubation",
+     "Pulmonary function testing to quantify the degree of pleural thickening",
+     "Bone density scanning to guide bisphosphonate therapy before anesthesia",
+     "Baseline retinal photography to document hydroxychloroquine exposure",
+     "Echocardiography to screen for rheumatoid valvular vegetations"
+    ],
+    "correct": 0,
+    "exp": "The cervical spine must always be evaluated for C1-C2 subluxation before elective surgery or intubation, because instability risks spinal cord compression.",
+    "why": [
+     "",
+     "Pleuritis and interstitial lung disease are recognized extra-articular problems, but the specific pre-intubation warning is C1-C2 instability.",
+     "Steroid-related bone loss matters generally, but it is not the highlighted pre-intubation evaluation.",
+     "Retinal examination is hydroxychloroquine monitoring and is unrelated to anesthetic risk.",
+     "Valvular vegetations are not a described rheumatoid feature; the flagged preoperative issue is the cervical spine."
+    ]
+   },
+   {
+    "q": "A patient taking adalimumab for rheumatoid arthritis presents with one acutely hot, swollen knee and a low-grade temperature. How should this be approached?",
+    "ch": [
+     "Switch to a JAK inhibitor because the TNF inhibitor has failed",
+     "Reassure the patient, since biologics reliably prevent joint infection",
+     "Order anti-CCP and rheumatoid factor titers to confirm disease activity",
+     "Rule out septic arthritis rather than assuming a flare",
+     "Increase the prednisone dose and review in one week as a flare"
+    ],
+    "correct": 3,
+    "exp": "An acutely hot, single swollen joint is a red flag: rule out septic arthritis rather than assuming a flare, remembering that biologics blunt the inflammatory response and mask the signs of infection.",
+    "why": [
+     "Switching biologics presumes a flare, when infection must be excluded first in a febrile hot joint.",
+     "Biologics increase infection risk and blunt the inflammatory response, so they mask rather than prevent infection.",
+     "Serologies cannot distinguish a flare from infection; the priority is excluding septic arthritis.",
+     "",
+     "Escalating steroids in a possibly septic joint worsens the infection and delays the diagnosis."
+    ]
+   },
+   {
+    "q": "A patient started on methotrexate three months ago still has moderate disease activity by DAS28. What does a treat-to-target approach direct?",
+    "ch": [
+     "Add or switch to a biologic or JAK inhibitor after TB and hepatitis screening",
+     "Replace the DMARD with long-term NSAID monotherapy for symptom control",
+     "Stop all DMARDs and treat with maintenance prednisone at the lowest dose",
+     "Repeat the anti-CCP to see whether the patient has become seronegative",
+     "Continue methotrexate unchanged and reassess again in one year"
+    ],
+    "correct": 0,
+    "exp": "Treat-to-target means adjusting therapy roughly every three months toward remission or low disease activity, so persisting moderate activity calls for adding or switching to a biologic or JAK inhibitor after tuberculosis and hepatitis screening.",
+    "why": [
+     "",
+     "NSAIDs give symptomatic relief only, are not disease-modifying, and should not be used as monotherapy.",
+     "Glucocorticoids are a short-term bridge to be tapered, never a substitute for DMARD therapy.",
+     "Serology does not track activity; composite scores such as DAS28, CDAI and RAPID3 do.",
+     "Waiting a year contradicts the treat-to-target strategy of adjusting therapy every three months."
+    ]
+   },
+   {
+    "q": "Which point about rheumatoid arthritis as a systemic disease should be raised on rounds?",
+    "ch": [
+     "Fatigue and depression are unrelated to the disease and need no attention",
+     "Chronic inflammation accelerates atherosclerosis, making rheumatoid arthritis an independent cardiovascular risk factor",
+     "Extra-articular involvement is confined to subcutaneous rheumatoid nodules",
+     "Joint damage is the only irreversible consequence of untreated disease",
+     "Smoking raises disease risk but has no bearing on treatment response"
+    ],
+    "correct": 1,
+    "exp": "Chronic inflammation accelerates atherosclerosis, so rheumatoid arthritis is an independent cardiovascular risk factor that requires aggressive risk-factor control.",
+    "why": [
+     "Fatigue, depression and cardiovascular burden are explicitly part of the systemic burden nurses are told to address.",
+     "",
+     "Extra-articular disease also includes interstitial lung disease, pleuritis, pericarditis, scleritis, Felty syndrome and secondary Sjogren syndrome.",
+     "Irreversible harm extends beyond the joints to accelerated atherosclerosis, interstitial lung disease, amyloidosis and vasculitis.",
+     "Smoking both raises disease risk through citrullination and worsens the response to therapy, so cessation counseling is disease-modifying."
+    ]
+   }
+  ]
+ },
+ "gout": {
+  "condition": "Gout",
+  "questions": [
+   {
+    "q": "Synovial fluid from an acutely inflamed joint is examined under polarized light. Which finding confirms gout?",
+    "ch": [
+     "Needle-shaped crystals that are negatively birefringent",
+     "Cholesterol crystals with a flat, plate-like appearance",
+     "No crystals at all, with a white cell count under 2000",
+     "Rhomboid crystals that are negatively birefringent",
+     "Rhomboid crystals that are positively birefringent"
+    ],
+    "correct": 0,
+    "exp": "Gout is confirmed by needle-shaped, negatively birefringent monosodium urate crystals, captured by the mnemonic NeeDle equals Negative; rhomboid, positively birefringent crystals indicate pseudogout.",
+    "why": [
+     "",
+     "Cholesterol crystals are not the diagnostic finding described for gout.",
+     "A non-inflammatory fluid with a white cell count under 2000 fits osteoarthritis; gout fluid has inflammatory counts.",
+     "The birefringence is right but the shape is wrong, since urate crystals are needle-shaped rather than rhomboid.",
+     "Rhomboid, positively birefringent crystals are calcium pyrophosphate, which means pseudogout rather than gout."
+    ]
+   },
+   {
+    "q": "What is the classic site of a first gout attack?",
+    "ch": [
+     "The knee, with a large effusion developing over several days",
+     "The wrist, with symmetric swelling and prolonged morning stiffness",
+     "The distal interphalangeal joints, with bony enlargement and nodes",
+     "The first metatarsophalangeal joint, known as podagra",
+     "The sacroiliac joints, with inflammatory back pain at night"
+    ],
+    "correct": 3,
+    "exp": "Podagra, involving the first metatarsophalangeal joint, is the classic first-attack site, so think gout in any acute red, hot, painful great toe.",
+    "why": [
+     "The knee can be involved, but the classic first-attack site is the first metatarsophalangeal joint.",
+     "Symmetric wrist swelling with prolonged stiffness describes rheumatoid arthritis, not an acute gout flare.",
+     "Bony distal interphalangeal enlargement describes the nodes of osteoarthritis.",
+     "",
+     "Inflammatory sacroiliac back pain is not the acute monoarthritis presentation described for gout."
+    ]
+   },
+   {
+    "q": "In roughly 90 percent of patients, hyperuricemia in gout arises by which mechanism?",
+    "ch": [
+     "Excess dietary calcium binding urate within the gut",
+     "Underexcretion of urate by the kidney",
+     "Overproduction of urate from HGPRT deficiency",
+     "Overproduction of urate from tumor lysis and high purine turnover",
+     "Deficient xanthine oxidase activity within the liver"
+    ],
+    "correct": 1,
+    "exp": "About 90 percent of gout is due to underexcretion of urate by the kidney, driven by CKD, diuretics or low-dose aspirin, rather than by urate overproduction.",
+    "why": [
+     "Dietary calcium binding in the gut is not part of the urate handling described in gout.",
+     "",
+     "HGPRT deficiency is an overproduction cause, and overproduction accounts for the minority of cases.",
+     "Tumor lysis raises urate through high purine turnover, which is the less common overproduction mechanism.",
+     "Xanthine oxidase is the enzyme allopurinol inhibits to lower urate, so deficiency would lower rather than raise it."
+    ]
+   },
+   {
+    "q": "A patient with an acutely red, hot first metatarsophalangeal joint has a serum uric acid of 5.2 mg/dL. How should this be interpreted?",
+    "ch": [
+     "Gout is excluded, because urate must exceed 6.8 mg/dL during a flare",
+     "The level confirms the treatment target and no further action is needed",
+     "Urate can be normal or low during a flare, so recheck about 2 weeks after it resolves",
+     "The result indicates pseudogout rather than gout, so no aspiration is required",
+     "It indicates urate overproduction with a compensatory renal clearance response"
+    ],
+    "correct": 2,
+    "exp": "Serum uric acid may be normal or even low during an acute flare because of an acute-phase uricosuric effect, so a normal urate does not exclude gout; recheck at steady state about 2 weeks after the flare resolves.",
+    "why": [
+     "A normal serum urate does not rule out an acute gout flare, which is stated explicitly in the module.",
+     "The target below 6 mg/dL applies to urate-lowering therapy at steady state, not to a level drawn during a flare.",
+     "",
+     "The urate level cannot distinguish gout from pseudogout; arthrocentesis with crystal analysis does that.",
+     "Urate shifts into the inflamed joint during a flare, so a normal level is not evidence of overproduction."
+    ]
+   },
+   {
+    "q": "A patient with stage 4 chronic kidney disease and a recent GI bleed has an acute gout flare. Which treatment is favored?",
+    "ch": [
+     "Full-dose colchicine continued daily until the symptoms fully resolve",
+     "Corticosteroids, oral or intra-articular once a septic joint is excluded",
+     "Indomethacin at full dose until the flare resolves",
+     "Naproxen with a proton pump inhibitor for gastroprotection",
+     "Allopurinol started immediately and titrated rapidly to abort the flare"
+    ],
+    "correct": 1,
+    "exp": "Corticosteroids, oral prednisone or intra-articular, are the flare treatment when NSAIDs and colchicine are contraindicated, as in CKD, with the caveat that a septic joint must be excluded before injecting.",
+    "why": [
+     "Colchicine requires dose reduction in renal impairment and causes GI toxicity, so full daily dosing is unsafe here.",
+     "",
+     "NSAIDs are avoided in chronic kidney disease and in active GI bleeding or peptic ulcer disease.",
+     "A proton pump inhibitor does not make an NSAID safe with stage 4 CKD and a recent GI bleed.",
+     "Urate-lowering therapy is started after the flare settles, and abrupt urate shifts can precipitate attacks."
+    ]
+   },
+   {
+    "q": "Allopurinol is being started for a patient with recurrent gout flares. Which approach is correct?",
+    "ch": [
+     "Test HLA-B*5801 in every patient regardless of ancestry or renal function",
+     "Begin at the maximum dose to reach the urate target as fast as possible",
+     "Stop the allopurinol if a flare occurs during the first months of therapy",
+     "Withhold urate-lowering therapy until tophi become radiographically visible",
+     "Start low, titrate to a target urate below 6 mg/dL, with flare prophylaxis"
+    ],
+    "correct": 4,
+    "exp": "Allopurinol is started low and titrated to a treat-to-target serum urate below 6 mg/dL, with colchicine or an NSAID co-prescribed as flare prophylaxis for the first 3 to 6 months.",
+    "why": [
+     "HLA-B*5801 testing is targeted at high-risk groups such as Han Chinese, Thai and Korean patients with CKD, not everyone.",
+     "Therapy is started low and titrated upward rather than begun at the maximum dose.",
+     "Urate-lowering therapy should not be stopped if a flare occurs, which is exactly why prophylaxis is co-prescribed.",
+     "Therapy is offered after recurrent flares, tophi, radiographic damage or CKD stage 3 or worse, so waiting for visible tophi is too late.",
+     ""
+    ]
+   },
+   {
+    "q": "Which teaching point about urate-lowering therapy should be emphasized to a patient?",
+    "ch": [
+     "It should be paused before dental work and any other minor procedure",
+     "Take it only when a flare begins and stop once the pain has settled",
+     "It is lifelong and must be continued even when you have no symptoms",
+     "It can be stopped once the serum urate is normal on two occasions",
+     "It removes the need for any anti-inflammatory treatment during a flare"
+    ],
+    "correct": 2,
+    "exp": "Urate-lowering therapy is lifelong and must be continued even when the patient is asymptomatic, because adherence is what prevents flares and tophi.",
+    "why": [
+     "No such pause is advised, and the emphasis is on uninterrupted lifelong therapy.",
+     "Urate-lowering therapy is preventive; a flare is aborted with NSAIDs, colchicine or corticosteroids instead.",
+     "",
+     "Reaching the target urate is the goal of continuing therapy, not a reason to stop it.",
+     "Urate-lowering therapy does not treat an acute flare, so anti-inflammatory treatment is still required."
+    ]
+   },
+   {
+    "q": "A febrile patient with known tophaceous gout presents with a hot, swollen knee and rigors. What is the priority?",
+    "ch": [
+     "Aspirate the joint for Gram stain and culture before antibiotics or steroids",
+     "Give oral prednisone for a presumed polyarticular gout flare",
+     "Inject the knee with corticosteroid to give the fastest relief",
+     "Start allopurinol to lower the urate load driving the attack",
+     "Begin colchicine and reassess the joint in 24 hours"
+    ],
+    "correct": 0,
+    "exp": "Septic arthritis can coexist with gout, so synovial fluid goes for Gram stain and culture and arthrocentesis comes before antibiotics or steroids, because infection destroys the joint.",
+    "why": [
+     "",
+     "Steroids given for an untreated septic joint can be catastrophic, so infection must be excluded first.",
+     "A septic joint must be excluded before any intra-articular injection is performed.",
+     "Urate-lowering therapy has no role in the acute presentation and does not address possible infection.",
+     "Colchicine treats a flare, but a 24-hour delay risks joint destruction from untreated infection."
+    ]
+   },
+   {
+    "q": "Two weeks after starting allopurinol, a patient develops fever, a spreading rash with mucosal involvement and eosinophilia. What should be done?",
+    "ch": [
+     "Continue the allopurinol and add an antihistamine for the rash",
+     "Switch to pegloticase without checking G6PD status beforehand",
+     "Halve the allopurinol dose and recheck the serum urate in one month",
+     "Attribute the rash to colchicine prophylaxis and stop the colchicine",
+     "Stop the allopurinol immediately, since this is allopurinol hypersensitivity"
+    ],
+    "correct": 4,
+    "exp": "Allopurinol hypersensitivity with SJS, TEN or DRESS presents as rash, fever, eosinophilia and mucosal or organ involvement, and it is a red flag to stop the drug immediately.",
+    "why": [
+     "Continuing the drug through a hypersensitivity reaction risks progression to SJS or TEN.",
+     "Pegloticase requires G6PD screening first and carries anaphylaxis risk, and it is reserved for refractory tophaceous disease.",
+     "Dose reduction does not treat a hypersensitivity reaction, and the drug must be stopped outright.",
+     "Colchicine causes GI toxicity such as diarrhea, not this mucocutaneous hypersensitivity picture.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with established coronary disease cannot tolerate allopurinol. Which consideration applies to febuxostat?",
+    "ch": [
+     "It cannot lower serum urate below the 6 mg/dL treat-to-target threshold",
+     "It is contraindicated in G6PD deficiency and must be screened for first",
+     "It is a uricosuric and is contraindicated when nephrolithiasis is present",
+     "It carries an FDA boxed warning for cardiovascular death, so use it cautiously here",
+     "It requires HLA-B*5801 testing before the first dose in every patient treated"
+    ],
+    "correct": 3,
+    "exp": "Febuxostat is a xanthine oxidase inhibitor used when allopurinol fails or is not tolerated, but it carries an FDA boxed warning for cardiovascular death and is used cautiously in established cardiovascular disease.",
+    "why": [
+     "Febuxostat is an effective urate-lowering alternative, so the concern is cardiovascular safety rather than efficacy.",
+     "G6PD screening is required before pegloticase rather than before febuxostat.",
+     "Probenecid is the uricosuric contraindicated in nephrolithiasis; febuxostat is a xanthine oxidase inhibitor.",
+     "",
+     "HLA-B*5801 testing applies to allopurinol in high-risk populations, not to febuxostat."
+    ]
+   }
+  ]
+ },
+ "compartment": {
+  "condition": "Compartment Syndrome",
+  "questions": [
+   {
+    "q": "Which findings are the earliest reliable signs of acute compartment syndrome?",
+    "ch": [
+     "Pain out of proportion to the injury and pain on passive stretch",
+     "Absent distal pulses with a cool, pale limb",
+     "Paralysis of the compartment muscles with foot drop",
+     "A soft, easily compressible compartment on palpation",
+     "Poikilothermia with a temperature difference between limbs"
+    ],
+    "correct": 0,
+    "exp": "Pain out of proportion to the injury and pain with passive stretch of the compartment muscles are the earliest reliable signs, and the diagnosis is largely clinical.",
+    "why": [
+     "",
+     "Pulses are usually present, and pulselessness is a very late and misleading finding.",
+     "Paralysis is a late finding, and by the time it appears the limb may already be lost.",
+     "The compartment is tense, firm and swollen, and a normal-feeling compartment argues against the diagnosis.",
+     "Poikilothermia is one of the misleading 6 P's rather than an early sign."
+    ]
+   },
+   {
+    "q": "Which is the single most common cause of acute compartment syndrome?",
+    "ch": [
+     "Prolonged immobility on an operating table",
+     "Tibial shaft fracture",
+     "Cellulitis of the lower leg",
+     "Chronic venous insufficiency with stasis edema",
+     "Deep vein thrombosis of the calf veins"
+    ],
+    "correct": 1,
+    "exp": "Long-bone fractures are the commonest cause and the tibia is number one, so compartment syndrome should be considered in every closed leg fracture.",
+    "why": [
+     "Operative positioning is not among the named causes; long-bone fracture is the leading one.",
+     "",
+     "Cellulitis is not a listed cause, and the classic setup is a closed tibial shaft fracture.",
+     "Chronic stasis edema is not the acute closed-compartment mechanism described.",
+     "The listed causes are fractures, crush injury, reperfusion, tight casts or dressings and burns, not venous thrombosis."
+    ]
+   },
+   {
+    "q": "What is the correct understanding of the classic 6 P's in compartment syndrome?",
+    "ch": [
+     "They are more sensitive than measuring intracompartmental pressures",
+     "All six must be present before fasciotomy can be justified",
+     "They appear in a predictable order that reliably times the ischemia",
+     "Pulselessness is the earliest sign and mandates immediate surgery",
+     "They are misleading, since pulselessness and paralysis are very late findings"
+    ],
+    "correct": 4,
+    "exp": "The 6 P's are a trap: pulses are usually present, and pulselessness and paralysis are very late, so by the time they appear the limb may already be lost.",
+    "why": [
+     "Pressure measurement is what is recommended when the clinical examination is unreliable.",
+     "Waiting for all six signs guarantees a missed diagnosis, and the rule is not to wait for all signs.",
+     "There is no reliable ordering that times the ischemia; the earliest reliable signs are the pain findings.",
+     "Pulselessness is late rather than early, because arterial pressure far exceeds the pressure that collapses capillaries.",
+     ""
+    ]
+   },
+   {
+    "q": "A hypotensive trauma patient has an intracompartmental pressure of 32 mmHg and a diastolic blood pressure of 55 mmHg. What does the preferred threshold indicate?",
+    "ch": [
+     "The absolute pressure is under 40 mmHg, so no intervention is warranted",
+     "Pressures cannot be interpreted at all while the patient remains hypotensive",
+     "Serial measurements over 24 hours should be obtained before any decision",
+     "Delta pressure is 23 mmHg, at or below 30, which supports fasciotomy",
+     "Delta pressure is 87 mmHg, which is reassuring and excludes the diagnosis"
+    ],
+    "correct": 3,
+    "exp": "Delta pressure is the diastolic blood pressure minus the compartment pressure, so 55 minus 32 gives 23 mmHg; a delta pressure of 30 mmHg or less supports fasciotomy and is more sensitive than a fixed absolute cutoff, especially in hypotensive patients.",
+    "why": [
+     "Delta pressure is preferred to a fixed absolute cutoff, and an absolute pressure above 30 mmHg already supports fasciotomy.",
+     "Hypotension is precisely why delta pressure exists, since it accounts for the patient's own perfusion pressure.",
+     "Delay is limb-threatening, because irreversible muscle and nerve damage begins by 6 to 8 hours.",
+     "",
+     "Delta pressure is diastolic minus compartment pressure, so 55 minus 32 is 23 mmHg rather than 87."
+    ]
+   },
+   {
+    "q": "How should the limb be positioned in suspected acute compartment syndrome?",
+    "ch": [
+     "Elevated well above the heart to reduce compartment swelling",
+     "At the level of the heart, because elevation lowers perfusion pressure",
+     "Dependent below the heart to maximize arterial inflow to the limb",
+     "Elevated and wrapped in a compressive bandage to limit further edema",
+     "Immobilized in a snug circumferential cast to prevent any movement"
+    ],
+    "correct": 1,
+    "exp": "The limb is kept at the level of the heart and not elevated, because elevation lowers arterial perfusion pressure to already ischemic tissue.",
+    "why": [
+     "Elevation above the heart reduces arterial perfusion pressure and worsens the ischemia.",
+     "",
+     "Heart level is what is specified, and a dependent position is not recommended.",
+     "Compressive wrapping adds external constriction, which is exactly what needs to be removed.",
+     "Circumferential casts should be bivalved and cut down to skin rather than applied more snugly."
+    ]
+   },
+   {
+    "q": "A patient with a tibial fracture in a cast reports escalating pain that is unrelieved by IV morphine. What is the correct nursing action?",
+    "ch": [
+     "Apply ice over the cast and continue routine hourly checks",
+     "Increase the opioid dose and document the improved comfort",
+     "Elevate the limb on two pillows and reassess it in an hour",
+     "Report immediately and advocate for the cast to be bivalved",
+     "Request a regional nerve block to control the ischemic pain"
+    ],
+    "correct": 3,
+    "exp": "Escalating pain unrelieved by opioids is a red alert that must be reported immediately rather than treated by simply increasing analgesia, and splitting or bivalving the constricting cast down to skin is the first bedside maneuver.",
+    "why": [
+     "Ice and routine checks delay decompression in a time-critical, limb-threatening problem.",
+     "Simply increasing analgesia is explicitly the wrong response, because the escalating pain is the warning sign.",
+     "Elevation lowers perfusion pressure and worsens ischemia; the limb is kept at heart level.",
+     "",
+     "Regional blocks mask the key warning sign of pain and delay the diagnosis."
+    ]
+   },
+   {
+    "q": "In a sedated, intubated patient with a high-risk femoral fracture and a tense thigh, what is the appropriate step?",
+    "ch": [
+     "Lower the threshold to measure intracompartmental pressures",
+     "Rely on serial pulse and capillary refill checks alone",
+     "Wait until sedation is lightened so the patient can report pain",
+     "Obtain an X-ray of the femur to look for compartment swelling",
+     "Place a regional block so pain can be assessed once it wears off"
+    ],
+    "correct": 0,
+    "exp": "When the examination is unreliable, as in an obtunded, sedated, nerve-blocked or pediatric patient, the threshold to measure intracompartmental pressures should be lowered, because delay is limb-threatening.",
+    "why": [
+     "",
+     "Pulses and capillary refill are unreliable, since capillary perfusion fails long before pulses disappear.",
+     "Delay is limb-threatening, because irreversible damage begins by 6 to 8 hours of ischemia.",
+     "Imaging is for the underlying fracture, not for diagnosing the syndrome itself.",
+     "Regional blocks mask the pain that is the key warning sign and are specifically warned against."
+    ]
+   },
+   {
+    "q": "Six hours after a four-compartment fasciotomy the patient becomes hyperkalemic and acidotic with tea-colored urine. What is happening?",
+    "ch": [
+     "Chronic exertional compartment syndrome unmasked by the surgery",
+     "An allergic reaction to the wound dressing used at the time of closure",
+     "Reperfusion injury with rhabdomyolysis threatening acute kidney injury",
+     "Recurrent compartment syndrome within the released compartments",
+     "Volkmann ischemic contracture developing in the released limb"
+    ],
+    "correct": 2,
+    "exp": "Release of ischemic byproducts after fasciotomy or revascularization causes reperfusion injury with hyperkalemia, acidosis and rhabdomyolysis with myoglobinuria, so renal function must be monitored and hyperkalemia treated promptly.",
+    "why": [
+     "Chronic exertional compartment syndrome is a reversible exercise-induced form, unrelated to post-fasciotomy metabolic derangement.",
+     "A dressing allergy does not produce hyperkalemia, acidosis and myoglobinuria.",
+     "",
+     "Recurrence after decompression would present as returning pain and a tense compartment, not this metabolic picture.",
+     "Volkmann contracture is a late sequela of missed compartment syndrome, developing over weeks to months."
+    ]
+   },
+   {
+    "q": "Numbness of the first web space of the foot with foot drop localizes to which compartment and nerve?",
+    "ch": [
+     "Deep posterior compartment, tibial nerve",
+     "Superficial posterior compartment, sural nerve",
+     "Anterior compartment, deep peroneal nerve",
+     "Gluteal compartment, sciatic nerve",
+     "Lateral compartment, superficial peroneal nerve"
+    ],
+    "correct": 2,
+    "exp": "The leg has four compartments, and the anterior compartment, the most common site, is paired with deep peroneal nerve palsy causing first web-space numbness and foot drop.",
+    "why": [
+     "The deep posterior compartment is one of the four, but it does not produce first web-space sensory loss with foot drop.",
+     "The superficial posterior compartment is not the site linked to this particular deficit.",
+     "",
+     "Gluteal compartment syndrome does occur, but the leg compartment responsible for foot drop is the anterior one.",
+     "The lateral compartment and superficial peroneal nerve are one of the four, but first web-space loss with foot drop belongs to the deep peroneal nerve."
+    ]
+   },
+   {
+    "q": "What is the definitive treatment for acute compartment syndrome, and within what window?",
+    "ch": [
+     "IV isotonic crystalloid and supplemental oxygen with serial neurovascular checks",
+     "Sodium bicarbonate infusion to alkalinize the urine and correct the acidosis",
+     "High-dose IV opioids with immobilization until the limb swelling subsides",
+     "Therapeutic anticoagulation to restore flow through the compartment vessels",
+     "Emergent fasciotomy of all involved compartments before 6 to 8 hours of ischemia"
+    ],
+    "correct": 4,
+    "exp": "Emergent fasciotomy is the definitive and only true treatment for acute compartment syndrome, releasing all involved compartments, four in the leg, because irreversible muscle and nerve damage begins by 6 to 8 hours.",
+    "why": [
+     "Fluids and oxygen are supportive measures and do not substitute for surgical decompression.",
+     "Bicarbonate is an adjunct for rhabdomyolysis after reperfusion rather than the definitive treatment.",
+     "Opioids provide analgesia while preparing for the operating room, and immobilization does nothing to relieve compartment pressure.",
+     "Anticoagulation is not part of management, because the problem is compartment pressure exceeding capillary perfusion pressure.",
+     ""
+    ]
+   }
+  ]
+ },
+ "lupus": {
+  "condition": "Systemic Lupus Erythematosus (SLE)",
+  "questions": [
+   {
+    "q": "Which feature of the malar rash is the key distinguishing clue in lupus?",
+    "ch": [
+     "It appears only after immunosuppressive therapy has been started",
+     "It involves the nasolabial folds prominently and symmetrically",
+     "It is photosensitive but confined to sun-protected areas of skin",
+     "It spares the nasolabial folds",
+     "It is a scarring rash that always precedes any joint symptoms"
+    ],
+    "correct": 3,
+    "exp": "The malar or butterfly rash spares the nasolabial folds, which is the clue that distinguishes it from dermatomyositis and rosacea.",
+    "why": [
+     "The rash is a presenting manifestation of the disease rather than a consequence of treatment.",
+     "Involvement of the nasolabial folds argues against lupus, because the malar rash spares them.",
+     "The rash is photosensitive and appears on sun-exposed skin, since ultraviolet light is a trigger.",
+     "",
+     "Discoid lesions can scar, but the malar rash is not described as scarring or as always preceding arthritis."
+    ]
+   },
+   {
+    "q": "Which statement about the antinuclear antibody in lupus is correct?",
+    "ch": [
+     "It is over 95 percent sensitive but not specific, so a negative ANA makes lupus very unlikely",
+     "It is highly specific, so a positive ANA establishes the diagnosis of lupus",
+     "It tracks disease activity and falls during an active nephritis flare",
+     "It is checked only after a renal biopsy has confirmed lupus nephritis",
+     "It is negative in the majority of patients with drug-induced lupus"
+    ],
+    "correct": 0,
+    "exp": "The ANA is the screening test, over 95 percent sensitive but not specific, so a negative ANA makes lupus very unlikely, and it is the entry criterion of the 2019 EULAR/ACR classification.",
+    "why": [
+     "",
+     "A positive ANA alone is common and non-diagnostic, and anti-dsDNA and anti-Smith supply the specificity.",
+     "Falling C3 and C4 with a rising anti-dsDNA signal a flare; the ANA is not an activity marker.",
+     "The ANA is the screening step that comes first, before specific serologies and before biopsy.",
+     "Drug-induced lupus is ANA-positive and is characterized by anti-histone antibodies."
+    ]
+   },
+   {
+    "q": "Which antibody is the most specific for lupus but does not track disease activity?",
+    "ch": [
+     "Anti-Ro/SSA",
+     "Anti-Smith",
+     "Anti-dsDNA",
+     "Antinuclear antibody",
+     "Anti-histone antibody"
+    ],
+    "correct": 1,
+    "exp": "Anti-Smith is the most specific antibody in lupus but it does not track activity, whereas anti-dsDNA and low complement are the markers that correlate with disease activity and nephritis.",
+    "why": [
+     "Anti-Ro/SSA is linked to neonatal lupus and congenital heart block rather than to diagnostic specificity.",
+     "",
+     "Anti-dsDNA is specific but it does track activity, especially nephritis, which is what makes it useful for monitoring.",
+     "The antinuclear antibody is sensitive and non-specific and serves as the screening entry criterion.",
+     "Anti-histone antibodies point instead to drug-induced lupus."
+    ]
+   },
+   {
+    "q": "Which statement about hydroxychloroquine in lupus is correct?",
+    "ch": [
+     "It is foundational for all patients and improves survival",
+     "It is stopped during pregnancy because of fetal risk",
+     "It requires monitoring of serum potassium and blood pressure",
+     "It is dosed by ideal body weight at 10 mg/kg per day",
+     "It is reserved for patients who fail mycophenolate and glucocorticoids"
+    ],
+    "correct": 0,
+    "exp": "Hydroxychloroquine is foundational therapy for all patients with lupus, reducing flares, organ damage and thrombosis and improving survival; it is dosed by real body weight at 5 mg/kg/day or less with baseline and annual retinal exams.",
+    "why": [
+     "",
+     "Hydroxychloroquine is continued in pregnancy, while mycophenolate, cyclophosphamide and methotrexate are the drugs stopped.",
+     "Potassium and blood pressure monitoring belongs to voclosporin, whereas hydroxychloroquine needs retinal screening.",
+     "Dosing is by real body weight at no more than 5 mg/kg/day, not ideal body weight at 10 mg/kg/day.",
+     "Hydroxychloroquine is the backbone for everyone from the outset rather than a salvage agent."
+    ]
+   },
+   {
+    "q": "Which laboratory pattern best indicates an active lupus flare?",
+    "ch": [
+     "A markedly elevated CRP with entirely normal complement levels",
+     "A newly positive anti-histone antibody with a normal urinalysis",
+     "Falling C3 and C4 with a rising anti-dsDNA titer",
+     "A rising ANA titer with unchanged complement and anti-dsDNA",
+     "Rising C3 and C4 with a falling anti-dsDNA titer"
+    ],
+    "correct": 2,
+    "exp": "Low or falling complement with a rising anti-dsDNA titer signals active lupus, whereas a high CRP favors infection over a flare.",
+    "why": [
+     "A high CRP favors infection rather than a lupus flare, and complement typically falls during a flare.",
+     "Anti-histone antibodies suggest drug-induced lupus, which typically spares the kidney and the CNS.",
+     "",
+     "The ANA does not track disease activity, because it is a screening test.",
+     "This is the reverse pattern, since complement rises and anti-dsDNA falls as the disease quiets."
+    ]
+   },
+   {
+    "q": "Which teaching point is the priority for a patient with photosensitive lupus skin disease?",
+    "ch": [
+     "Restricting fluids and dietary salt to reduce facial swelling from the rash",
+     "Strict sun protection with broad-spectrum SPF, hats and avoiding peak UV hours",
+     "Regular tanning-bed exposure to desensitize the skin to ultraviolet light",
+     "Topical antibiotics applied to the malar rash twice daily to prevent scarring",
+     "Discontinuing hydroxychloroquine during the summer to avoid photo-toxicity"
+    ],
+    "correct": 1,
+    "exp": "Because ultraviolet light triggers flares, strict sun protection with broad-spectrum SPF, hats and avoidance of peak UV is taught alongside assessment of the malar and discoid rash.",
+    "why": [
+     "Fluid and salt restriction relates to renal disease management, not to the photosensitive rash.",
+     "",
+     "Ultraviolet light is a trigger for flares, so deliberate exposure is harmful rather than protective.",
+     "Topical antibiotics are not part of the described skin care, and sun protection is the emphasized measure.",
+     "Hydroxychloroquine should never be stopped, and adherence to it is specifically stressed."
+    ]
+   },
+   {
+    "q": "A patient taking hydralazine develops arthralgia, pleuritic chest pain and a positive ANA, with a normal urinalysis and creatinine. Which finding fits this syndrome?",
+    "ch": [
+     "Anti-Smith positivity that persists lifelong despite drug withdrawal",
+     "Neuropsychiatric involvement with seizures as the presenting feature",
+     "Anti-dsDNA positivity with rapidly falling C3 and C4",
+     "Class IV lupus nephritis requiring induction immunosuppression",
+     "Anti-histone antibodies, with the illness reversing when the drug is stopped"
+    ],
+    "correct": 4,
+    "exp": "Drug-induced lupus from hydralazine, procainamide, isoniazid or minocycline features anti-histone antibodies, typically spares the kidney and CNS, and reverses when the offending drug is stopped.",
+    "why": [
+     "Anti-Smith is a marker of idiopathic lupus, whereas drug-induced lupus is the anti-histone, reversible variant.",
+     "Drug-induced lupus typically spares the CNS as well as the kidney.",
+     "Anti-dsDNA with consumed complement indicates idiopathic lupus activity rather than the drug-induced variant.",
+     "Drug-induced lupus typically spares the kidney, and this patient has a normal urinalysis and creatinine.",
+     ""
+    ]
+   },
+   {
+    "q": "A woman with lupus has a rising creatinine, an active urinary sediment and nephrotic-range proteinuria. What is directed?",
+    "ch": [
+     "Add an NSAID for the associated arthralgia and monitor weekly",
+     "Repeat the ANA titer to confirm the diagnosis before acting",
+     "Urgent renal biopsy with immunosuppression for a nephritis flare",
+     "Start voclosporin alone, without steroids or mycophenolate",
+     "Increase hydroxychloroquine to the maximum tolerated dose"
+    ],
+    "correct": 2,
+    "exp": "Rapidly rising creatinine, active urinary sediment or nephrotic-range proteinuria signal a lupus nephritis flare needing urgent biopsy and immunosuppression; the biopsy classifies the ISN/RPS class, and proliferative Class III or IV drives induction with mycophenolate or cyclophosphamide plus steroids.",
+    "why": [
+     "NSAIDs are used cautiously when there is renal involvement and would not treat nephritis.",
+     "The ANA does not track activity, and repeating it delays urgent biopsy and treatment.",
+     "",
+     "Voclosporin is added to mycophenolate plus steroids to boost renal response rather than used as monotherapy.",
+     "Hydroxychloroquine is the backbone for every patient but it does not by itself treat proliferative nephritis."
+    ]
+   },
+   {
+    "q": "A patient on prednisone and mycophenolate develops a temperature of 38.4 C. What is the correct stance?",
+    "ch": [
+     "Fever is expected on mycophenolate and needs no specific evaluation",
+     "Check the ANA titer, and if it is rising, treat the fever as a flare",
+     "Withhold hydroxychloroquine, which is the usual source of drug fever",
+     "This is almost certainly a lupus flare, so the steroid dose should be increased",
+     "Assume serious infection until proven otherwise, since infection is a leading cause of death"
+    ],
+    "correct": 4,
+    "exp": "Fever in an immunosuppressed lupus patient is treated as serious infection until proven otherwise, because infection is a leading cause of death and steroids blunt the febrile response; a high CRP favors infection while falling complement with rising anti-dsDNA favors a flare.",
+    "why": [
+     "Fever is never dismissed in an immunosuppressed lupus patient and demands prompt evaluation.",
+     "The ANA does not track disease activity, so it cannot distinguish a flare from an infection.",
+     "Hydroxychloroquine is the drug that should never be stopped, and it is not described as a cause of fever.",
+     "Flare and infection both cause fever and cytopenias, and the rule is to assume infection first.",
+     ""
+    ]
+   },
+   {
+    "q": "A woman with quiescent lupus and anti-Ro antibodies wants to conceive. Which plan is correct?",
+    "ch": [
+     "Stop hydroxychloroquine before conception in order to protect the fetus",
+     "Conceive during an active flare so that treatment can be intensified early",
+     "Substitute methotrexate for mycophenolate before attempting conception",
+     "Conceive in remission, continue hydroxychloroquine, stop teratogens, and monitor for congenital heart block",
+     "Continue mycophenolate throughout pregnancy for maintenance control"
+    ],
+    "correct": 3,
+    "exp": "Patients are counseled to conceive during remission, continue hydroxychloroquine, avoid the teratogens mycophenolate, cyclophosphamide and methotrexate, and coordinate high-risk obstetric care, and anti-Ro/La confers neonatal lupus and congenital heart block risk.",
+    "why": [
+     "Hydroxychloroquine is continued in pregnancy and is the drug that should never be stopped.",
+     "Conception is advised during remission rather than during active disease.",
+     "Methotrexate is also a teratogen that must be stopped, so substituting it would be unsafe.",
+     "",
+     "Mycophenolate is strongly teratogenic and must be stopped before conception."
+    ]
+   }
+  ]
+ }
+}

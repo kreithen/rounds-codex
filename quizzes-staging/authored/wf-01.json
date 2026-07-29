@@ -1,0 +1,977 @@
+{
+ "cdiff": {
+  "condition": "C. difficile Colitis",
+  "questions": [
+   {
+    "q": "Which description best characterizes Clostridioides difficile and how it produces colitis?",
+    "ch": [
+     "A Gram-negative rod that invades the small bowel mucosa and elaborates a heat-labile enterotoxin",
+     "A Gram-positive, spore-forming anaerobe that overgrows the colon after antibiotics disrupt the gut microbiota",
+     "A protozoan parasite acquired from contaminated water that adheres to the duodenal brush border",
+     "A Gram-positive coccus that forms a preformed toxin in food and produces vomiting within a few hours",
+     "An enveloped virus that destroys villous enterocytes and produces osmotic diarrhea in institutional outbreaks"
+    ],
+    "correct": 1,
+    "exp": "Clostridioides difficile is a Gram-positive, spore-forming anaerobe that colonizes the colon after antibiotics disrupt the protective gut microbiota (dysbiosis).",
+    "why": [
+     "C. difficile is Gram-positive and spore-forming, and it causes a colitis rather than a small-bowel infection.",
+     "",
+     "It is a bacterium, not a parasite; the disease follows antibiotic-induced dysbiosis of the colonic flora.",
+     "Preformed-toxin food poisoning is a different syndrome; C. difficile toxins are elaborated in the colon after spores germinate.",
+     "C. difficile is a spore-forming anaerobic bacterium, not a virus, and the diarrhea is inflammatory."
+    ]
+   },
+   {
+    "q": "Toxin A and toxin B produce C. difficile colitis primarily by which mechanism?",
+    "ch": [
+     "Activating adenylate cyclase to produce a purely secretory, non-inflammatory watery diarrhea",
+     "Fermenting unabsorbed carbohydrate in the colonic lumen to produce an osmotic diarrhea",
+     "Blocking acetylcholine release at the neuromuscular junction of colonic smooth muscle",
+     "Cleaving mucosal IgA so that luminal flora invade the submucosa and bloodstream directly",
+     "Disrupting the colonocyte cytoskeleton, causing inflammation, fluid secretion, and pseudomembranes"
+    ],
+    "correct": 4,
+    "exp": "Disease is mediated by toxin A (enterotoxin) and toxin B (cytotoxin), which disrupt the colonocyte cytoskeleton, causing inflammation, fluid secretion, and pseudomembrane formation.",
+    "why": [
+     "C. difficile colitis is inflammatory with pseudomembrane formation, not a purely secretory toxin effect.",
+     "Osmotic diarrhea from unabsorbed carbohydrate is not the mechanism; toxin-mediated inflammation is.",
+     "Neuromuscular blockade describes botulinum toxin, not the cytoskeletal injury caused by toxins A and B.",
+     "The toxins injure colonocytes directly; IgA cleavage and submucosal invasion are not the described mechanism.",
+     ""
+    ]
+   },
+   {
+    "q": "Which infection-control approach is required for a hospitalized patient with C. difficile colitis?",
+    "ch": [
+     "Standard precautions only, because C. difficile spores are not transmitted from patient to patient",
+     "Alcohol-based hand gel after every contact, which is sufficient to kill C. difficile spores",
+     "Airborne precautions with a fitted N95 respirator for everyone who enters the patient's room",
+     "Contact precautions with soap-and-water hand hygiene and bleach (sporicidal) equipment cleaning",
+     "Droplet precautions with a surgical mask and routine quaternary-ammonium surface disinfection"
+    ],
+    "correct": 3,
+    "exp": "Place the patient on contact precautions and use soap-and-water hand hygiene, because alcohol gels do not kill spores; dedicate and disinfect equipment with a sporicidal (bleach) agent.",
+    "why": [
+     "Spores are readily transmitted in healthcare settings, so standard precautions alone are inadequate.",
+     "Alcohol hand rub does not kill C. difficile spores — soap and water is required.",
+     "Spores spread on hands and surfaces, so contact rather than airborne precautions apply.",
+     "",
+     "Droplet precautions do not address spore transmission, and a sporicidal bleach agent is needed for equipment."
+    ]
+   },
+   {
+    "q": "Per the IDSA/ACG guidance cited in the module, which agent is preferred first-line for an initial episode of C. difficile infection?",
+    "ch": [
+     "Fidaxomicin, a narrow-spectrum macrocyclic agent",
+     "Oral metronidazole 500 mg three times daily",
+     "Bezlotoxumab given as a single-agent infusion",
+     "Intravenous vancomycin with oral rehydration",
+     "Oral vancomycin 125 mg four times daily"
+    ],
+    "correct": 0,
+    "exp": "Fidaxomicin is preferred first-line per IDSA/ACG: it is a narrow-spectrum macrocyclic antibiotic that spares normal flora and produces lower recurrence than vancomycin, with cost the main barrier.",
+    "why": [
+     "",
+     "Metronidazole is no longer first-line and is reserved for non-severe disease when vancomycin or fidaxomicin is unavailable.",
+     "Bezlotoxumab is an anti-toxin-B monoclonal used to prevent recurrence; it does not treat active infection.",
+     "Intravenous vancomycin does not reach the colonic lumen and has no activity against C. difficile.",
+     "Oral vancomycin is effective first-line therapy, but the guidelines place fidaxomicin ahead of it because of lower recurrence."
+    ]
+   },
+   {
+    "q": "A resident orders intravenous vancomycin for a patient with confirmed C. difficile colitis. Why is this order wrong?",
+    "ch": [
+     "Intravenous vancomycin is active only against the hypervirulent NAP1/BI/027 strain",
+     "Intravenous vancomycin is inactivated by colonic anaerobes before it can bind toxin",
+     "Intravenous vancomycin does not reach the colonic lumen, so it has no activity in C. difficile infection",
+     "Intravenous vancomycin works only when bezlotoxumab is infused at the same time",
+     "Intravenous vancomycin causes an ileus that raises the risk of toxic megacolon"
+    ],
+    "correct": 2,
+    "exp": "Vancomycin must reach the colonic lumen to work, which is why it is given orally (poor absorption is the desired property) or per rectum in ileus; intravenous vancomycin does not treat C. difficile — a classic exam distractor.",
+    "why": [
+     "Strain type does not change the delivery problem; intravenous vancomycin treats no strain of C. difficile.",
+     "The problem is luminal delivery, not inactivation — the drug never reaches the colon where the organism lives.",
+     "",
+     "No adjunct makes the intravenous route work; oral or rectal delivery to the colon is required.",
+     "Ileus and toxic megacolon are complications of fulminant disease and antimotility agents, not of intravenous vancomycin."
+    ]
+   },
+   {
+    "q": "A patient with C. difficile infection has a WBC of 22,000 and a creatinine of 1.8 mg/dL, with a normal blood pressure, no ileus, and no colonic dilation. How is this episode classified?",
+    "ch": [
+     "Severe infection",
+     "Fulminant colitis",
+     "Asymptomatic colonization",
+     "Recurrent infection",
+     "Non-severe infection"
+    ],
+    "correct": 0,
+    "exp": "Severe C. difficile infection is defined by a WBC above 15,000 or a creatinine of 1.5 mg/dL or higher; fulminant disease additionally requires hypotension or shock, ileus, or megacolon.",
+    "why": [
+     "",
+     "Fulminant disease requires hypotension or shock, ileus, or megacolon, none of which this patient has.",
+     "The patient has symptomatic colitis with leukocytosis and a rising creatinine, not asymptomatic colonization.",
+     "Recurrence describes the return of disease after treatment, not the severity of the current episode.",
+     "Non-severe requires a WBC of 15,000 or less and a creatinine below 1.5; both thresholds are exceeded here."
+    ]
+   },
+   {
+    "q": "Why does the module direct clinicians to avoid loperamide and other antimotility agents in C. difficile colitis?",
+    "ch": [
+     "They bind oral vancomycin in the gut and lower its luminal concentration",
+     "They accelerate transit and wash fidaxomicin out of the colon before it can act",
+     "They impair clearance of toxin, risking ileus and toxic megacolon",
+     "They cause a disulfiram-like reaction when combined with metronidazole",
+     "They stimulate the hypervirulent NAP1/BI/027 strain to shed more spores"
+    ],
+    "correct": 2,
+    "exp": "Loperamide and opioids impair clearance of toxin from the colon, which risks ileus and toxic megacolon; the inciting antibiotic should be stopped and the patient supported with fluid and electrolyte repletion instead.",
+    "why": [
+     "The hazard is retained toxin, not drug binding; vancomycin dosing is not the concern.",
+     "Antimotility agents slow rather than accelerate colonic transit.",
+     "",
+     "The disulfiram-like reaction belongs to metronidazole taken with alcohol, not to loperamide.",
+     "Strain virulence is not altered by antimotility agents; the danger is toxin retention."
+    ]
+   },
+   {
+    "q": "Which statement about C. difficile stool testing reflects the diagnostic stewardship the module teaches?",
+    "ch": [
+     "Formed stool should be sent for testing whenever a hospitalized patient has recently received antibiotics",
+     "A test-of-cure should be sent at the end of therapy to document microbiologic eradication before discharge",
+     "A toxin EIA on its own is the confirmatory test of choice in every hospitalized patient who has diarrhea",
+     "Test only symptomatic patients and do not perform a test-of-cure, because PCR stays positive after recovery",
+     "Colonoscopy looking for pseudomembranes is the routine first-line test used to confirm the diagnosis"
+    ],
+    "correct": 3,
+    "exp": "Test only symptomatic patients with at least three unformed stools in 24 hours, do not test formed stool, and never send a test-of-cure, because PCR remains positive after clinical recovery.",
+    "why": [
+     "Formed stool should not be tested; testing is limited to symptomatic patients with unformed stools.",
+     "Test-of-cure is explicitly discouraged, since PCR stays positive after the patient has recovered.",
+     "The recommended confirmatory approach is NAAT/PCR or a two-step GDH plus toxin EIA algorithm with NAAT arbitration.",
+     "",
+     "Colonoscopy showing pseudomembranes is confirmatory but is not routinely needed."
+    ]
+   },
+   {
+    "q": "Which statement best describes the role of bezlotoxumab in C. difficile infection?",
+    "ch": [
+     "An oral macrocyclic antibiotic that replaces vancomycin in the treatment of fulminant colitis",
+     "A live biotherapeutic product that restores microbiota diversity after multiply recurrent disease",
+     "A toxin-binding resin taken with meals to neutralize toxin A within the colonic lumen",
+     "A first-line single agent for the treatment of an initial episode of non-severe infection",
+     "A monoclonal antibody against toxin B used as an adjunct to prevent recurrence in high-risk patients"
+    ],
+    "correct": 4,
+    "exp": "Bezlotoxumab is a monoclonal antibody against toxin B given as an adjunct to antibiotics to prevent recurrence in high-risk patients; it does not treat active infection, and it should be used cautiously in heart failure.",
+    "why": [
+     "Fidaxomicin is the macrocyclic antibiotic; bezlotoxumab is not an antibiotic at all.",
+     "Fecal microbiota transplant and FDA-approved live biotherapeutics restore microbiota diversity; bezlotoxumab is an antibody.",
+     "It is an infused monoclonal antibody rather than an oral toxin-binding resin.",
+     "It does not treat active infection and is never used as a single agent for an initial episode.",
+     ""
+    ]
+   },
+   {
+    "q": "On hospital day 4 of oral vancomycin for C. difficile infection, a patient's stool output falls sharply while the abdomen becomes distended with absent bowel sounds and the blood pressure drops to 84/50. What does this picture most likely represent?",
+    "ch": [
+     "Recurrent infection that will need a tapered vancomycin course started at discharge",
+     "Ileus with fulminant colitis and possible toxic megacolon — a surgical emergency",
+     "An unrelated small-bowel obstruction manageable with nasogastric suction alone",
+     "Expected clinical improvement, since falling stool frequency is the best marker of response",
+     "Vancomycin-induced constipation that should be relieved with a stimulant laxative"
+    ],
+    "correct": 1,
+    "exp": "A paradoxical decrease in stool output with worsening distension signals ileus, not improvement; with hypotension this is fulminant colitis with possible toxic megacolon, requiring high-dose oral or rectal vancomycin plus IV metronidazole and early surgical involvement.",
+    "why": [
+     "Recurrence presents as return of diarrhea after treatment, not as hypotension with an ileus.",
+     "",
+     "The picture is colonic ileus and possible toxic megacolon from fulminant infection, and surgery must be involved early.",
+     "A paradoxical fall in stool output with rising distension signals ileus rather than recovery.",
+     "The distension, absent bowel sounds, and hypotension indicate fulminant colitis; a laxative would be dangerous."
+    ]
+   }
+  ]
+ },
+ "aki": {
+  "condition": "Acute Kidney Injury",
+  "questions": [
+   {
+    "q": "Which finding meets the definition of acute kidney injury given in the module?",
+    "ch": [
+     "Any elevation of BUN above 20 mg/dL in a patient who has recently received intravenous contrast",
+     "Small echogenic kidneys on renal ultrasound together with a long-standing normocytic anemia",
+     "A urine albumin-to-creatinine ratio above 300 mg/g in a patient with long-standing diabetes",
+     "A rise in serum creatinine of at least 0.3 mg/dL in 48 hours, or urine output under 0.5 mL/kg/h",
+     "An eGFR below 60 mL/min/1.73m² documented on two occasions more than three months apart"
+    ],
+    "correct": 3,
+    "exp": "AKI is an abrupt drop in GFR over hours to days, defined by a creatinine rise of at least 0.3 mg/dL in 48 hours or 1.5 times baseline in 7 days, and/or urine output below 0.5 mL/kg/h.",
+    "why": [
+     "BUN alone does not define AKI; serum creatinine and urine output anchor the diagnosis and KDIGO staging.",
+     "Small echogenic kidneys and chronic anemia are chronicity clues that point toward CKD.",
+     "Albuminuria is a marker of chronic kidney damage and is not part of the AKI definition.",
+     "",
+     "Two abnormal eGFR values more than three months apart define chronic kidney disease, not acute injury."
+    ]
+   },
+   {
+    "q": "Which cause of acute kidney injury is classified as postrenal?",
+    "ch": [
+     "Aminoglycoside-induced acute tubular necrosis",
+     "Bladder outlet obstruction from benign prostatic hyperplasia",
+     "Acute interstitial nephritis following a new medication",
+     "Glomerulonephritis producing red blood cell casts",
+     "Sepsis with prolonged hypotension and hypoperfusion"
+    ],
+    "correct": 1,
+    "exp": "Postrenal AKI is obstruction — BPH, stones, or tumor. Prerenal is hypoperfusion, and intrinsic is most commonly acute tubular necrosis, along with acute interstitial nephritis and glomerulonephritis.",
+    "why": [
+     "Aminoglycoside nephrotoxicity produces acute tubular necrosis, an intrinsic cause.",
+     "",
+     "Acute interstitial nephritis is an intrinsic/intrarenal cause, not obstruction.",
+     "Glomerulonephritis with RBC casts is an intrinsic glomerular cause.",
+     "Sepsis with hypotension causes renal hypoperfusion, which is a prerenal cause."
+    ]
+   },
+   {
+    "q": "Urine microscopy in a patient with acute kidney injury shows muddy-brown granular casts. Which cause does this indicate?",
+    "ch": [
+     "Glomerulonephritis",
+     "Postrenal obstruction from a ureteral stone",
+     "Prerenal azotemia from volume depletion",
+     "Acute tubular necrosis",
+     "Acute interstitial nephritis"
+    ],
+    "correct": 3,
+    "exp": "Muddy-brown granular casts are the classic sign of acute tubular necrosis, the intrinsic endpoint of prolonged ischemia or nephrotoxin exposure, with loss of concentrating ability and FENa above 2%.",
+    "why": [
+     "Glomerulonephritis produces RBC casts and dysmorphic red cells.",
+     "Obstruction is identified on renal ultrasound and does not produce muddy-brown casts.",
+     "Prerenal injury produces a bland sediment with concentrated urine, not granular casts.",
+     "",
+     "Acute interstitial nephritis is suggested by WBC casts and eosinophils, often with fever and rash after a new drug."
+    ]
+   },
+   {
+    "q": "A patient taking chronic furosemide develops acute kidney injury. Why is the fractional excretion of urea preferred over the fractional excretion of sodium in this setting?",
+    "ch": [
+     "FEUrea is unaffected by diuretics, whereas diuretic-induced natriuresis makes FENa unreliable",
+     "FEUrea rises above 35% in prerenal disease and is therefore the more specific of the two tests",
+     "FENa can only be interpreted when the urine sediment shows muddy-brown granular casts",
+     "FEUrea replaces the need for a renal ultrasound to exclude obstruction in a diuretic-treated patient",
+     "FENa is valid only in postrenal obstruction and can never be applied to prerenal states"
+    ],
+    "correct": 0,
+    "exp": "FENa below 1% suggests prerenal disease and above 2% suggests ATN, but diuretics force sodium excretion and invalidate FENa; FEUrea below 35% is the useful substitute in a patient on diuretics.",
+    "why": [
+     "",
+     "A FEUrea below 35%, not above it, supports a prerenal state.",
+     "FENa interpretation does not depend on the presence of granular casts on microscopy.",
+     "A renal ultrasound is still required to exclude obstruction; FEUrea says nothing about it.",
+     "FENa is used precisely to separate prerenal disease from ATN, not to diagnose obstruction."
+    ]
+   },
+   {
+    "q": "Which statement about loop diuretics in acute kidney injury reflects the module's guidance?",
+    "ch": [
+     "Furosemide should be given early to convert oliguric acute kidney injury to non-oliguric injury",
+     "Furosemide manages volume overload but does not prevent or treat acute kidney injury itself",
+     "Furosemide improves renal recovery and mortality when it is started within the first 24 hours",
+     "Furosemide is the first-line therapy for prerenal acute kidney injury caused by hypovolemia",
+     "Furosemide is contraindicated in acute kidney injury under all circumstances, including pulmonary edema"
+    ],
+    "correct": 1,
+    "exp": "Loop diuretics are used to manage volume overload and pulmonary edema in fluid-overloaded AKI, but they do not prevent or treat the injury itself and offer no benefit on renal recovery or mortality.",
+    "why": [
+     "Converting oliguric to non-oliguric injury with diuretics does not improve renal recovery or survival.",
+     "",
+     "There is no benefit on recovery or mortality, which is exactly why forced diuresis is rejected.",
+     "First-line for prerenal injury is isotonic crystalloid to restore renal perfusion, not a diuretic.",
+     "Diuretics remain appropriate for volume overload and pulmonary edema, so they are not absolutely contraindicated."
+    ]
+   },
+   {
+    "q": "A patient with acute kidney injury has a potassium of 7.1 mEq/L with peaked T waves on the ECG. Which sequence of management is correct?",
+    "ch": [
+     "Shift with insulin and dextrose, then stabilize with calcium, then remove with dialysis",
+     "Remove with a potassium binder, then shift with albuterol, then stabilize with calcium",
+     "Stabilize with calcium gluconate, then shift with insulin and albuterol, then remove with binders or dialysis",
+     "Stabilize with sodium bicarbonate, then remove with furosemide, then shift with calcium gluconate",
+     "Give calcium gluconate alone, because it reliably lowers the serum potassium within minutes"
+    ],
+    "correct": 2,
+    "exp": "Hyperkalemia management is stabilize (calcium), then shift (insulin with dextrose, albuterol, bicarbonate), then remove (dialysis, potassium binders, diuretics). Calcium gluconate stabilizes the cardiac membrane in minutes but does not lower potassium.",
+    "why": [
+     "Membrane stabilization with calcium must come first when there are ECG changes.",
+     "Potassium binders have a slow onset; ECG changes demand immediate calcium followed by shifting therapy.",
+     "",
+     "Bicarbonate is a shifting agent rather than the stabilizer, and calcium does not remove potassium from the body.",
+     "Calcium does not lower potassium, and its short duration means shifting and removal must follow."
+    ]
+   },
+   {
+    "q": "Which finding is an emergent indication for dialysis under the AEIOU mnemonic?",
+    "ch": [
+     "Intravenous contrast exposure within the previous 48 to 72 hours",
+     "A BUN-to-creatinine ratio above 20 to 1",
+     "Muddy-brown granular casts seen on urine microscopy",
+     "A fractional excretion of sodium above 2%",
+     "Uremic pericarditis with a pericardial friction rub"
+    ],
+    "correct": 4,
+    "exp": "AEIOU lists the emergent dialysis indications: Acidosis, Electrolytes (hyperkalemia), Intoxications, Overload, and Uremia — uremic pericarditis or encephalopathy is the U.",
+    "why": [
+     "Recent contrast raises the risk of contrast-associated nephropathy but is not a dialysis indication.",
+     "A BUN-to-creatinine ratio above 20 to 1 suggests a prerenal cause and is not a dialysis indication.",
+     "Granular casts identify acute tubular necrosis but do not by themselves require dialysis.",
+     "A FENa above 2% supports ATN as the diagnosis and says nothing about the need for dialysis.",
+     ""
+    ]
+   },
+   {
+    "q": "Which nursing assessment is the most reliable marker of fluid status in a patient with acute kidney injury?",
+    "ch": [
+     "Urine specific gravity measured at the bedside",
+     "Blood pressure recorded in both arms",
+     "Skin turgor checked once each shift",
+     "A single serum sodium drawn each morning",
+     "Daily weights taken on the same scale at the same time"
+    ],
+    "correct": 4,
+    "exp": "Strict intake and output plus daily weights are the core nursing monitoring in AKI, and weight is the most reliable marker of fluid status.",
+    "why": [
+     "Specific gravity reflects concentrating ability, which is lost in acute tubular necrosis, and does not quantify volume.",
+     "Bilateral blood pressures screen for vascular differences and do not track fluid balance.",
+     "Skin turgor is a soft sign and far less reliable than the trend in daily weight.",
+     "A single serum sodium reflects tonicity rather than total body fluid volume.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient admitted with several days of vomiting has a creatinine of 2.1 mg/dL from a baseline of 0.9, a BUN-to-creatinine ratio of 28 to 1, a FENa of 0.4%, and a bland urine sediment. What is the most appropriate initial management?",
+    "ch": [
+     "Place a urinary catheter and arrange a percutaneous nephrostomy for obstruction",
+     "Start furosemide to increase urine output and relieve the azotemia",
+     "Give intravenous isotonic crystalloid to restore renal perfusion",
+     "Arrange urgent dialysis for the rise in serum creatinine",
+     "Begin empiric high-dose corticosteroids for interstitial nephritis"
+    ],
+    "correct": 2,
+    "exp": "A BUN-to-creatinine ratio above 20 to 1, a FENa below 1%, and a bland sediment identify prerenal AKI from hypovolemia; intravenous isotonic crystalloid is first-line to restore renal perfusion.",
+    "why": [
+     "Obstruction produces a postrenal picture; the low FENa and bland sediment point to hypoperfusion.",
+     "Diuretics do not treat acute kidney injury and would deepen hypovolemia in a prerenal state.",
+     "",
+     "Dialysis is reserved for AEIOU indications, none of which is present in this patient.",
+     "Steroids would target interstitial nephritis, which is suggested by WBC casts and eosinophils rather than a bland sediment."
+    ]
+   },
+   {
+    "q": "A patient with acute kidney injury needs a contrast-enhanced CT. Which combination best limits further kidney injury?",
+    "ch": [
+     "Isotonic fluid before and after the scan, with NSAIDs and ACE inhibitors held",
+     "A low-dose dopamine infusion during the scan for renal protection",
+     "A single dose of an aminoglycoside to cover procedural infection risk",
+     "Continuing metformin through the study to avoid rebound hyperglycemia",
+     "Prophylactic furosemide before and after the scan to maintain urine flow"
+    ],
+    "correct": 0,
+    "exp": "Contrast-associated nephropathy peaks at 48 to 72 hours and is prevented with isotonic fluids and by holding nephrotoxins such as NSAIDs, ACE inhibitors and ARBs, and aminoglycosides; metformin is also held because of lactic acidosis risk.",
+    "why": [
+     "",
+     "Renal-dose dopamine is rejected by modern guidelines as a renal protective strategy.",
+     "Aminoglycosides are nephrotoxins to be stopped or avoided, not given prophylactically.",
+     "Metformin should be held in acute kidney injury because of the risk of lactic acidosis.",
+     "Furosemide neither prevents nor treats acute kidney injury and can worsen volume depletion."
+    ]
+   }
+  ]
+ },
+ "uti": {
+  "condition": "Urinary Tract Infection",
+  "questions": [
+   {
+    "q": "Which organism causes roughly 80% of uncomplicated urinary tract infections?",
+    "ch": [
+     "Klebsiella pneumoniae",
+     "Staphylococcus saprophyticus",
+     "Enterococcus faecalis",
+     "Proteus mirabilis",
+     "Escherichia coli"
+    ],
+    "correct": 4,
+    "exp": "E. coli is king — ascending gut flora cause about 80% of uncomplicated cases, and it is the most common cause of both cystitis and pyelonephritis.",
+    "why": [
+     "Klebsiella is one of the other Enterobacterales and is not the organism behind roughly 80% of cases.",
+     "Staph. saprophyticus is classic in young, sexually active women and is the second most common cause of uncomplicated cystitis.",
+     "Enterococcus is a recognized uropathogen but is much less common and does not reduce nitrate to nitrite.",
+     "Proteus matters because its urease alkalinizes urine and forms struvite stones, but it is not the leading cause.",
+     ""
+    ]
+   },
+   {
+    "q": "Which patient's urinary tract infection is considered complicated?",
+    "ch": [
+     "A 22-year-old woman with suprapubic pain and positive leukocyte esterase",
+     "A 40-year-old woman with dysuria who reports a sulfa allergy",
+     "A healthy 24-year-old non-pregnant woman with dysuria and urinary frequency",
+     "A 68-year-old man with dysuria and an indwelling urinary catheter",
+     "A 30-year-old woman with a second episode of simple cystitis this year"
+    ],
+    "correct": 3,
+    "exp": "Complicated UTI means male sex, pregnancy, catheter, obstruction, immunosuppression, stones, or a structural or functional abnormality — and any UTI in a male, child, or pregnant patient is complicated until proven otherwise.",
+    "why": [
+     "Suprapubic pain with pyuria in a healthy woman describes simple cystitis.",
+     "A drug allergy changes the antibiotic choice but not the complicated versus uncomplicated classification.",
+     "A healthy non-pregnant woman with a normal tract is the definition of an uncomplicated infection.",
+     "",
+     "A second episode in an otherwise healthy woman does not by itself make the infection complicated."
+    ]
+   },
+   {
+    "q": "A symptomatic young woman has a urinalysis with positive leukocyte esterase but negative nitrites. How should this be interpreted?",
+    "ch": [
+     "It excludes urinary tract infection, because nitrites must be positive to make the diagnosis",
+     "It indicates a contaminated specimen that should be discarded and recollected",
+     "It still supports infection, since Enterococcus and Staph. saprophyticus do not reduce nitrate",
+     "It indicates asymptomatic bacteriuria, which does not require antibiotic treatment",
+     "It is diagnostic of pyelonephritis rather than of lower tract cystitis"
+    ],
+    "correct": 2,
+    "exp": "Nitrites imply nitrate-reducing Enterobacterales; a positive leukocyte esterase with negative nitrites still supports UTI, because Enterococcus and Staph. saprophyticus do not reduce nitrate.",
+    "why": [
+     "Negative nitrites do not exclude infection, since several uropathogens cannot reduce nitrate.",
+     "Pyuria in a symptomatic patient supports infection, and nothing here suggests contamination.",
+     "",
+     "Asymptomatic bacteriuria means bacteriuria without symptoms, and this patient is symptomatic.",
+     "Pyelonephritis is distinguished by fever, flank pain, and CVA tenderness, not by the nitrite result."
+    ]
+   },
+   {
+    "q": "Why must nitrofurantoin and fosfomycin never be used to treat pyelonephritis?",
+    "ch": [
+     "They are inactivated by the alkaline urine that accompanies upper tract infection",
+     "They concentrate in urine but do not achieve adequate renal tissue or blood levels",
+     "They select for extended-spectrum beta-lactamase producing organisms within days",
+     "They cannot be given orally and require intravenous administration in the hospital",
+     "They are active only against Gram-positive uropathogens such as Enterococcus"
+    ],
+    "correct": 1,
+    "exp": "Nitrofurantoin and fosfomycin concentrate in the urine but not in renal tissue or blood, so they must never be used for pyelonephritis or urosepsis.",
+    "why": [
+     "Urine pH is not the issue; the limitation is that these drugs do not reach the renal parenchyma.",
+     "",
+     "Fosfomycin is in fact useful for resistant and ESBL cystitis, so resistance selection is not the stated reason.",
+     "Both are oral agents — nitrofurantoin as a five-day course and fosfomycin as a single dose.",
+     "Both cover common Gram-negative uropathogens; the limitation is pharmacokinetic rather than spectrum."
+    ]
+   },
+   {
+    "q": "In which situation should asymptomatic bacteriuria be treated?",
+    "ch": [
+     "A man with diabetes found to have pyuria on a routine urinalysis and no complaints",
+     "A patient with an ileal conduit and persistently positive surveillance urine cultures",
+     "An 80-year-old nursing-home resident with a positive urine culture and no symptoms",
+     "A patient with a chronic indwelling catheter whose urine is cloudy and malodorous",
+     "A pregnant patient with a culture-proven bacteriuria and no urinary symptoms"
+    ],
+    "correct": 4,
+    "exp": "Do not treat asymptomatic bacteriuria except in pregnancy or before a urologic procedure; treating culture-proven bacteriuria in pregnancy prevents pyelonephritis and preterm labor.",
+    "why": [
+     "Diabetes is not one of the two exceptions; only pregnancy and pre-urologic-procedure qualify.",
+     "A chronically colonized urinary diversion does not warrant treatment in the absence of symptoms.",
+     "Treating asymptomatic bacteriuria in an elderly patient is precisely the practice the guidelines advise against.",
+     "Cloudy or malodorous urine is not a symptom that justifies treating bacteriuria in a catheterized patient.",
+     ""
+    ]
+   },
+   {
+    "q": "An 84-year-old is admitted with new confusion and is found to have a positive urinalysis. What does the module advise?",
+    "ch": [
+     "New confusion can be the presenting sign, but avoid the UTI reflex and look for another source",
+     "Order a CT of the abdomen and pelvis in every elderly patient found to have pyuria",
+     "Attribute the delirium to the infection and start a fluoroquinolone without further workup",
+     "Treat only if the urine culture grows more than one organism, since that confirms infection",
+     "Withhold all antibiotics until the urine culture has been finalized about 48 hours later"
+    ],
+    "correct": 0,
+    "exp": "In the elderly, new confusion can be the presenting sign of a urinary tract infection, but the module cautions against attributing delirium to a positive urinalysis alone — avoid the UTI reflex and look for another source.",
+    "why": [
+     "",
+     "Imaging is reserved for suspected obstruction, stone, abscess, or failure to improve at 48 to 72 hours.",
+     "That is exactly the UTI reflex the module warns against, and fluoroquinolones are meant to be reserved.",
+     "Polymicrobial growth more often suggests contamination or colonization than true infection.",
+     "Withholding therapy from a patient who genuinely has an infection risks progression to urosepsis."
+    ]
+   },
+   {
+    "q": "What should a nurse teach a patient who is starting phenazopyridine for dysuria?",
+    "ch": [
+     "It is an antibiotic and will eradicate the infection within about three days",
+     "It turns urine orange, stains clothing and contact lenses, and should be limited to about two days",
+     "It should be continued for the entire length of the antibiotic course for the best effect",
+     "It prevents recurrent cystitis when it is taken after sexual intercourse",
+     "It should be taken only on an empty stomach in order to prevent methemoglobinemia"
+    ],
+    "correct": 1,
+    "exp": "Phenazopyridine is an analgesic and not an antibiotic; it turns urine and secretions orange and stains contacts and clothing, should be limited to about two days, can mask symptoms, and can cause methemoglobinemia.",
+    "why": [
+     "It is a urinary analgesic with no antibacterial activity, so it cannot clear the infection.",
+     "",
+     "Use is limited to roughly two days because it masks symptoms; it is not continued through the antibiotic course.",
+     "Post-coital voiding, hydration, and prophylaxis reduce recurrence; phenazopyridine does not.",
+     "Timing with food does not prevent methemoglobinemia; limiting the duration of use is the safeguard."
+    ]
+   },
+   {
+    "q": "A patient hospitalized with pyelonephritis is still febrile with flank pain after 72 hours of appropriate intravenous antibiotics. What is the next step?",
+    "ch": [
+     "Discontinue antibiotics and repeat the urinalysis in one week as an outpatient",
+     "Continue the same regimen for another 48 hours before reassessing the patient",
+     "Switch to oral nitrofurantoin so the patient can complete an outpatient course",
+     "Image the urinary tract and reassess for abscess, obstruction, or a resistant organism",
+     "Add phenazopyridine for symptom control and plan discharge in the morning"
+    ],
+    "correct": 3,
+    "exp": "Pyelonephritis that is not improving at 48 to 72 hours should prompt imaging and reassessment for abscess, obstruction, or a resistant organism.",
+    "why": [
+     "Stopping antibiotics in a febrile patient with upper tract infection risks progression to urosepsis.",
+     "Waiting longer without imaging risks missing an abscess or an obstructed, infected kidney.",
+     "Nitrofurantoin does not reach renal tissue and must never be used for pyelonephritis.",
+     "",
+     "Phenazopyridine only masks symptoms and does nothing about the failure to respond."
+    ]
+   },
+   {
+    "q": "A patient with a known obstructing ureteral stone develops fever, hypotension, tachycardia, and altered mentation. What is the priority?",
+    "ch": [
+     "Oral antibiotics with outpatient urology follow-up arranged in one week",
+     "Fluoroquinolone monotherapy alone while awaiting the final urine culture",
+     "Urgent decompression of the obstructed system with intravenous antibiotics and sepsis care",
+     "Nitrofurantoin plus increased oral fluid intake to help flush the urinary tract",
+     "A repeat urinalysis in 24 hours before committing to any definitive therapy"
+    ],
+    "correct": 2,
+    "exp": "Obstruction with infection — pyonephrosis — is a urologic emergency requiring urgent decompression or drainage, and urosepsis means activating the sepsis protocol with intravenous antibiotics within the hour.",
+    "why": [
+     "This is urosepsis with obstruction, so outpatient oral therapy would be unsafe.",
+     "Antibiotics alone cannot treat an obstructed, infected collecting system, which must be drained.",
+     "",
+     "Nitrofurantoin does not reach renal tissue and does nothing for an obstructed upper tract.",
+     "Delaying therapy in a septic patient is dangerous; intravenous antibiotics are needed within the hour."
+    ]
+   },
+   {
+    "q": "Which antibiotic is preferred for a urinary tract infection in a pregnant patient?",
+    "ch": [
+     "Cephalexin",
+     "Phenazopyridine alone",
+     "Nitrofurantoin at term",
+     "Trimethoprim-sulfamethoxazole in the first trimester",
+     "Ciprofloxacin"
+    ],
+    "correct": 0,
+    "exp": "Cephalosporins such as cephalexin are preferred in pregnancy and are generally safe, with low cross-reactivity in penicillin allergy; fluoroquinolones are avoided, and TMP-SMX and nitrofurantoin are avoided at the extremes of gestation.",
+    "why": [
+     "",
+     "Phenazopyridine is a urinary analgesic rather than an antibiotic and cannot treat the infection.",
+     "Nitrofurantoin is avoided at term because of the risk of neonatal hemolysis.",
+     "TMP-SMX is avoided in the first trimester and near term.",
+     "Fluoroquinolones are avoided in pregnancy and children and carry black-box warnings."
+    ]
+   }
+  ]
+ },
+ "ckd": {
+  "condition": "Chronic Kidney Disease",
+  "questions": [
+   {
+    "q": "Which statement best defines chronic kidney disease?",
+    "ch": [
+     "Any single eGFR value below 90 mL/min/1.73m² measured on a routine outpatient metabolic panel",
+     "Bilateral hydronephrosis seen on renal ultrasound in a patient with a normal serum creatinine",
+     "Symptomatic uremia with fatigue, pruritus, nausea, and edema in a long-standing diabetic patient",
+     "A rise in serum creatinine of at least 0.3 mg/dL within 48 hours in a hospitalized adult patient",
+     "Abnormal kidney structure or function for more than 3 months, with eGFR under 60 or damage markers such as albuminuria"
+    ],
+    "correct": 4,
+    "exp": "CKD is abnormality of kidney structure or function present for more than 3 months with implications for health — either an eGFR below 60 mL/min/1.73m² or markers of damage, most commonly albuminuria.",
+    "why": [
+     "A single value is never enough; two abnormal results more than 3 months apart are required to establish chronicity.",
+     "Hydronephrosis suggests obstruction but does not by itself satisfy the definition of chronic kidney disease.",
+     "Uremic symptoms are late findings; the disease is usually silent and is defined by eGFR and albuminuria.",
+     "That is the definition of acute kidney injury rather than chronic kidney disease.",
+     ""
+    ]
+   },
+   {
+    "q": "Which two conditions together account for roughly two-thirds of chronic kidney disease?",
+    "ch": [
+     "NSAID use and intravenous contrast exposure",
+     "Diabetes mellitus and hypertension",
+     "Glomerulonephritis and polycystic kidney disease",
+     "Obstructive nephropathy and reflux nephropathy",
+     "Recurrent pyelonephritis and nephrolithiasis"
+    ],
+    "correct": 1,
+    "exp": "Diabetes mellitus and hypertension are the leading causes of chronic kidney disease, together accounting for about two-thirds of cases.",
+    "why": [
+     "Nephrotoxin exposure is a cause of acute injury and something to avoid, not a leading cause of chronic disease.",
+     "",
+     "Glomerulonephritis and polycystic kidney disease are listed among the other causes, not the leading two.",
+     "Obstructive and reflux nephropathy are recognized causes but account for a small share of cases.",
+     "Recurrent infection and stones are not among the leading causes named in the module."
+    ]
+   },
+   {
+    "q": "A patient has an eGFR of 38 mL/min/1.73m² and a urine albumin-to-creatinine ratio of 550 mg/g. How is this staged under KDIGO?",
+    "ch": [
+     "G5 A3",
+     "G2 A1",
+     "G3a A2",
+     "G3b A3",
+     "G4 A2"
+    ],
+    "correct": 3,
+    "exp": "Staging is CGA — Cause, GFR category, and Albuminuria. An eGFR of 30 to 44 is G3b and a UACR above 300 mg/g is A3, placing this patient at G3b A3, high on the KDIGO risk heat map.",
+    "why": [
+     "G5 is an eGFR under 15, which would represent advanced kidney failure.",
+     "G2 is an eGFR of 60 to 89 and A1 is a UACR under 30 mg/g; both are far from these values.",
+     "G3a is an eGFR of 45 to 59 and A2 is 30 to 300 mg/g; this eGFR is lower and this UACR higher.",
+     "",
+     "G4 is an eGFR of 15 to 29, below this patient's value, and A2 tops out at 300 mg/g."
+    ]
+   },
+   {
+    "q": "Two weeks after starting lisinopril for CKD with albuminuria, a patient's creatinine has risen from 1.6 to 2.0 mg/dL, a 25% increase, with a potassium of 4.6 mEq/L. What should be done?",
+    "ch": [
+     "Substitute an NSAID for analgesia and recheck the creatinine in six months",
+     "Stop the lisinopril permanently and avoid all future RAAS blockade",
+     "Continue the lisinopril, because a rise of up to about 30% is expected and acceptable",
+     "Add an ARB to the regimen in order to intensify RAAS blockade",
+     "Arrange urgent dialysis in response to the rise in serum creatinine"
+    ],
+    "correct": 2,
+    "exp": "A creatinine rise of up to about 30% after starting an ACE inhibitor or ARB is expected and acceptable, so the drug should be continued; a larger jump suggests renal artery stenosis or volume depletion, and potassium and creatinine are monitored 2 to 4 weeks after start or titration.",
+    "why": [
+     "NSAIDs are nephrotoxins to avoid in chronic kidney disease, and a six-month interval is far too long.",
+     "Stopping the drug forfeits the protective fall in intraglomerular pressure for a change that is expected.",
+     "",
+     "ACE inhibitors and ARBs should not be combined.",
+     "Nothing here meets an AEIOU dialysis indication; the creatinine change is hemodynamic and expected."
+    ]
+   },
+   {
+    "q": "A patient started on empagliflozin for chronic kidney disease has a small drop in eGFR at the first recheck. How is this best explained?",
+    "ch": [
+     "It is an early, reversible dip reflecting the protective fall in intraglomerular pressure",
+     "It signals euglycemic diabetic ketoacidosis and requires an insulin infusion",
+     "It indicates a genital mycotic infection and requires antifungal therapy",
+     "It is early nephrotoxicity and the drug should be stopped immediately",
+     "It reflects volume depletion requiring intravenous fluid resuscitation"
+    ],
+    "correct": 0,
+    "exp": "SGLT2 inhibitors cause an early, reversible eGFR dip that reflects the same protective drop in intraglomerular pressure that makes them guideline-directed therapy — the dip that protects.",
+    "why": [
+     "",
+     "Euglycemic ketoacidosis is a separate adverse effect that presents with acidosis, not an isolated eGFR change.",
+     "Genital mycotic infection is a known side effect but has nothing to do with the eGFR dip.",
+     "The dip is hemodynamic and reversible rather than injury, and the drug slows progression of kidney disease.",
+     "Volume depletion is a reason to hold the drug during acute illness, but an expected small dip alone is not."
+    ]
+   },
+   {
+    "q": "What hemoglobin target does the module give for erythropoiesis-stimulating agent therapy in chronic kidney disease?",
+    "ch": [
+     "Whatever level abolishes the need for transfusion, with no upper limit",
+     "Below 8 g/dL, transfusing only when the patient becomes symptomatic",
+     "About 10 to 11 g/dL, after iron stores have been repleted",
+     "Normalization to 13 to 14 g/dL in order to relieve fatigue",
+     "Above 12 g/dL in every patient who is receiving dialysis"
+    ],
+    "correct": 2,
+    "exp": "Do not normalize hemoglobin with ESAs — target about 10 to 11 g/dL and ensure iron stores are adequate first, because overshooting raises stroke and thrombosis risk.",
+    "why": [
+     "An open-ended target invites the cardiovascular harm associated with high hemoglobin on ESAs.",
+     "That is a transfusion threshold rather than the ESA target, and it leaves symptomatic anemia untreated.",
+     "",
+     "Normalizing hemoglobin with ESAs increases cardiovascular events, stroke, and thrombosis.",
+     "A target above 12 g/dL is exactly the overshoot the module warns against."
+    ]
+   },
+   {
+    "q": "Which sequence explains secondary hyperparathyroidism in CKD-mineral bone disorder?",
+    "ch": [
+     "Excess renal calcium reabsorption raises serum calcium and suppresses phosphate excretion",
+     "Phosphate retention with falling 1,25-vitamin D drives PTH upward before calcium changes",
+     "Loss of erythropoietin production stimulates parathyroid gland hyperplasia directly",
+     "Metabolic alkalosis from bicarbonate retention leaches calcium out of the skeleton",
+     "Increased 1-alpha-hydroxylation raises vitamin D and removes the need for phosphate binders"
+    ],
+    "correct": 1,
+    "exp": "In CKD-MBD, phosphate rises and 1,25-vitamin D falls early — reduced 1-alpha-hydroxylation plus phosphate retention drives secondary hyperparathyroidism and renal osteodystrophy before calcium changes.",
+    "why": [
+     "Calcium reabsorption is not increased; phosphate retention and low active vitamin D drive the process.",
+     "",
+     "Reduced erythropoietin production causes the anemia of chronic kidney disease, not parathyroid stimulation.",
+     "Chronic kidney disease produces metabolic acidosis from impaired acid excretion, not alkalosis.",
+     "1-alpha-hydroxylation falls in chronic kidney disease, which is why 1,25-vitamin D declines."
+    ]
+   },
+   {
+    "q": "Which nursing action protects a current or future dialysis access?",
+    "ch": [
+     "Place a peripheral IV distal to the fistula for administration of antibiotics",
+     "Draw all morning laboratory samples from the fistula arm to spare the other veins",
+     "Apply the blood-pressure cuff to the fistula arm so perfusion can be monitored",
+     "Avoid cuffs, venipunctures, and IVs in that arm, and assess for a thrill and bruit",
+     "Keep the arm elevated in a sling continuously in order to reduce swelling"
+    ],
+    "correct": 3,
+    "exp": "Protect a current or future dialysis access: no blood-pressure cuffs, venipunctures, or IVs in the fistula or graft arm, and assess the access for a thrill and bruit.",
+    "why": [
+     "IVs of any kind are avoided in the access arm, whether they are placed proximal or distal.",
+     "Venipuncture in the access arm risks damaging the fistula and is specifically avoided.",
+     "Blood-pressure cuffs are not permitted on the access arm.",
+     "",
+     "Continuous elevation in a sling is not part of access care and does not protect the fistula."
+    ]
+   },
+   {
+    "q": "Which finding should prompt referral to nephrology?",
+    "ch": [
+     "A hemoglobin of 11.5 g/dL in a patient with stage G3a chronic kidney disease",
+     "Well-controlled hypertension on a single agent with a completely normal urinalysis",
+     "An eGFR of 72 mL/min/1.73m² with a urine albumin-to-creatinine ratio of 18 mg/g",
+     "A one-time creatinine of 1.3 mg/dL in a patient with no prior laboratory values",
+     "An eGFR below 30 mL/min/1.73m², a rapid decline, or persistent A3 albuminuria"
+    ],
+    "correct": 4,
+    "exp": "Refer to nephrology for an eGFR below 30, a rapid decline in function, persistent A3 albuminuria, or refractory complications, and plan dialysis access early before end-stage kidney disease.",
+    "why": [
+     "A hemoglobin of 11.5 g/dL is at or above the ESA target and is not a referral trigger.",
+     "Controlled blood pressure with a normal urinalysis argues against advanced kidney disease.",
+     "That eGFR and albuminuria sit in the low-risk green zone of the KDIGO heat map and do not require referral.",
+     "A single elevated creatinine is not chronic kidney disease; two values more than 3 months apart are needed.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with G4 chronic kidney disease asks what is most likely to end their life. What does the module identify as the leading cause of death in CKD?",
+    "ch": [
+     "Cardiovascular disease",
+     "Complications of dialysis access",
+     "Hyperkalemic arrhythmia during an acute illness",
+     "Renal osteodystrophy leading to hip fracture",
+     "Infection from immunosuppression after transplant"
+    ],
+    "correct": 0,
+    "exp": "Cardiovascular disease, not dialysis, is the number-one killer in chronic kidney disease, which is why management is framed around aggressive cardiovascular risk reduction including a statin in adults 50 and older who are not on dialysis.",
+    "why": [
+     "",
+     "Access complications matter clinically but are not the leading cause of death in chronic kidney disease.",
+     "Hyperkalemia is a red-flag emergency requiring urgent treatment, but it is not the leading cause of death overall.",
+     "CKD-mineral bone disorder causes bone disease and fall risk, yet cardiovascular disease remains the leading killer.",
+     "Transplant offers the best long-term outcome, and post-transplant infection is not the leading cause of death."
+    ]
+   }
+  ]
+ },
+ "nephrolithiasis": {
+  "condition": "Nephrolithiasis (Kidney Stones)",
+  "questions": [
+   {
+    "q": "Which stone type accounts for about 75% of kidney stones?",
+    "ch": [
+     "Cystine",
+     "Calcium oxalate",
+     "Calcium phosphate",
+     "Uric acid",
+     "Struvite"
+    ],
+    "correct": 1,
+    "exp": "Calcium oxalate is the most common stone type, making up roughly 75% of kidney stones.",
+    "why": [
+     "Cystine stones are hereditary and are uncommon.",
+     "",
+     "Calcium phosphate is a calcium stone but occurs less frequently than calcium oxalate.",
+     "Uric acid stones are radiolucent and form in acidic urine, but they are much less common.",
+     "Struvite stones form with urease-producing organisms and build staghorn calculi; they are not the most common."
+    ]
+   },
+   {
+    "q": "Which bedside observation best distinguishes renal colic from peritonitis?",
+    "ch": [
+     "The patient's pain builds gradually over several days rather than starting suddenly",
+     "The patient writhes and cannot stay still, whereas peritonitis makes a patient lie motionless",
+     "The patient reports pain that is worse with deep inspiration than with any movement",
+     "The patient has rebound tenderness, a finding that is characteristically absent in peritonitis",
+     "The patient has gross hematuria, which is equally typical of peritoneal inflammation"
+    ],
+    "correct": 1,
+    "exp": "The patient who writhes and cannot lie still has colic; the one who lies motionless has peritonitis — a key bedside discriminator.",
+    "why": [
+     "Renal colic begins suddenly and severely rather than building over days.",
+     "",
+     "Pleuritic pain is not the described feature of renal colic, which is sudden, severe, and colicky.",
+     "Rebound tenderness is a feature of peritonitis rather than something absent from it.",
+     "Hematuria is typical of stones but is not a feature of peritonitis."
+    ]
+   },
+   {
+    "q": "Which imaging study is the gold standard for confirming a suspected kidney stone?",
+    "ch": [
+     "Non-contrast helical CT of the abdomen and pelvis",
+     "Contrast-enhanced CT urography of the collecting system",
+     "Renal ultrasound with Doppler of the ureteral jets",
+     "MRI of the abdomen performed without gadolinium",
+     "Plain abdominal radiography of the kidneys, ureters, and bladder"
+    ],
+    "correct": 0,
+    "exp": "Non-contrast helical CT of the abdomen and pelvis is the gold standard: it detects nearly all stones, including radiolucent uric acid stones, and reports size and location.",
+    "why": [
+     "",
+     "Contrast is not required, and non-contrast CT is what the module names as the standard.",
+     "Ultrasound is first-line in pregnancy and children but is less sensitive for small or distal stones.",
+     "MRI is not among the imaging modalities the module recommends for stone disease.",
+     "Plain radiography misses radiolucent uric acid stones and does not reliably size or locate them."
+    ]
+   },
+   {
+    "q": "A pregnant patient presents with flank pain suggesting a stone. Which imaging should be obtained first?",
+    "ch": [
+     "Contrast CT urography in order to fully define the collecting system",
+     "No imaging at all, since the diagnosis is made clinically during pregnancy",
+     "Non-contrast helical CT, since it is the gold standard in all patients",
+     "Plain radiography of the kidneys, ureters, and bladder with abdominal shielding",
+     "Renal ultrasound, which is first-line in pregnancy and in children"
+    ],
+    "correct": 4,
+    "exp": "Ultrasound is first-line in pregnancy and children and for radiation avoidance; it shows hydronephrosis, although it is less sensitive for small or distal stones.",
+    "why": [
+     "Contrast CT adds both radiation and contrast exposure and is not the first-line study here.",
+     "Imaging is still needed, and ultrasound provides it without any radiation exposure.",
+     "CT is the general gold standard, but imaging is chosen by patient and radiation is avoided in pregnancy.",
+     "Plain radiography still uses ionizing radiation and misses radiolucent stones.",
+     ""
+    ]
+   },
+   {
+    "q": "Why are NSAIDs preferred over opioids as first-line analgesia for renal colic?",
+    "ch": [
+     "They are safe in renal insufficiency, dehydration, and active peptic ulcer disease",
+     "They dissolve calcium oxalate stones and thereby speed spontaneous passage",
+     "They reduce ureteral wall edema and prostaglandin-mediated pain, often outperforming opioids",
+     "They relax distal ureteral smooth muscle in the same manner as tamsulosin",
+     "They alkalinize the urine and prevent further crystal nucleation in the collecting system"
+    ],
+    "correct": 2,
+    "exp": "NSAIDs reduce ureteral wall edema and prostaglandin-mediated pain and are often superior to opioids, which is the physiologic rationale for making them first-line in renal colic.",
+    "why": [
+     "NSAIDs are in fact avoided in renal insufficiency, dehydration, and active bleeding or ulcer disease.",
+     "NSAIDs do not dissolve stones; only uric acid stones dissolve, and that requires urine alkalinization.",
+     "",
+     "Alpha-blockers such as tamsulosin relax distal ureteral smooth muscle; that is not the NSAID mechanism.",
+     "Potassium citrate alkalinizes the urine and raises citrate; NSAIDs do neither."
+    ]
+   },
+   {
+    "q": "For which stone is medical expulsive therapy with tamsulosin most appropriate?",
+    "ch": [
+     "A 12 mm stone in a patient with fever and hypotension",
+     "A 3 mm stone lodged at the ureteropelvic junction",
+     "A 14 mm stone in the proximal ureter",
+     "A staghorn calculus filling the entire renal pelvis",
+     "A 7 mm stone in the distal ureter"
+    ],
+    "correct": 4,
+    "exp": "Medical expulsive therapy with an alpha-blocker relaxes distal ureteral smooth muscle and benefits distal ureteral stones in the roughly 5 to 10 mm range.",
+    "why": [
+     "A stone with fever and hypotension is infected obstruction, an emergency needing decompression rather than expulsive therapy.",
+     "Stones under 5 mm usually pass spontaneously, and the benefit of expulsive therapy is described for larger distal stones.",
+     "Stones over 10 mm rarely pass, and a proximal stone is not the target of expulsive therapy; this needs urology.",
+     "Staghorn calculi are struvite infection stones that require complete surgical removal to cure.",
+     ""
+    ]
+   },
+   {
+    "q": "What should a recurrent calcium oxalate stone former be taught about dietary calcium?",
+    "ch": [
+     "Maintain normal dietary calcium, because restriction increases oxalate absorption",
+     "Replace dietary calcium with supplements taken between meals instead of with food",
+     "Increase calcium intake only if the 24-hour urine collection shows hypocitraturia",
+     "Restrict calcium and sodium together in order to halve urinary calcium excretion",
+     "Restrict calcium strictly, since dietary calcium is the direct source of the stone"
+    ],
+    "correct": 0,
+    "exp": "Do not restrict dietary calcium — low calcium frees up oxalate for absorption and paradoxically increases calcium oxalate stones; teach normal dietary calcium along with less sodium and animal protein and enough fluid to make 2 to 2.5 L of urine a day.",
+    "why": [
+     "",
+     "The teaching is to maintain normal dietary calcium rather than to substitute supplements for food sources.",
+     "Hypocitraturia is treated with potassium citrate, not by adjusting calcium intake.",
+     "Reducing sodium is correct, but pairing it with calcium restriction is exactly the error to avoid.",
+     "Calcium restriction backfires by increasing oxalate absorption and therefore stone formation."
+    ]
+   },
+   {
+    "q": "Recurrent urinary infections with a urease-producing organism and alkaline urine most typically produce which stone?",
+    "ch": [
+     "Hereditary cystine stones",
+     "Calcium phosphate stones",
+     "Struvite staghorn calculi",
+     "Calcium oxalate stones",
+     "Radiolucent uric acid stones"
+    ],
+    "correct": 2,
+    "exp": "Struvite stones are infection stones formed by urease-producing organisms such as Proteus and Klebsiella; they alkalinize the urine and build staghorn calculi that require complete surgical removal to cure.",
+    "why": [
+     "Cystine stones are hereditary and are unrelated to urease-producing infection.",
+     "Calcium phosphate can form in alkaline urine but is not the urease-driven infection stone.",
+     "",
+     "Calcium oxalate is the most common stone overall but is not the infection stone.",
+     "Uric acid stones form in acidic rather than alkaline urine and are radiolucent on plain films."
+    ]
+   },
+   {
+    "q": "A patient with a 9 mm obstructing ureteral stone develops a temperature of 39.2°C with rigors. What does this require?",
+    "ch": [
+     "Immediate shockwave lithotripsy in order to fragment the obstructing stone",
+     "Tamsulosin with an NSAID to promote spontaneous passage of the stone",
+     "Increased oral fluids with outpatient re-imaging arranged in one week",
+     "Emergent decompression with a ureteral stent or percutaneous nephrostomy plus antibiotics",
+     "Intravenous antibiotics alone, adding decompression only if fever persists for 72 hours"
+    ],
+    "correct": 3,
+    "exp": "Fever with an obstructing stone means obstructive pyelonephritis or urosepsis — a urologic emergency requiring emergent decompression with a stent or percutaneous nephrostomy plus antibiotics, because antibiotics alone are inadequate.",
+    "why": [
+     "Lithotripsy is a definitive procedure for a non-infected stone; the infected obstruction must first be drained.",
+     "Medical expulsive therapy does not relieve infected obstruction and would delay definitive drainage.",
+     "This is a urologic emergency and cannot be managed as an outpatient problem.",
+     "",
+     "Antibiotics alone are explicitly inadequate for an infected, obstructed collecting system."
+    ]
+   },
+   {
+    "q": "A 71-year-old man presents with sudden left flank pain radiating to the groin. Which diagnosis must be considered before anchoring on renal colic?",
+    "ch": [
+     "Uncomplicated cystitis with dysuria and frequency",
+     "Primary hyperparathyroidism causing hypercalciuria",
+     "Hypocitraturia identified on a 24-hour urine collection",
+     "A leaking abdominal aortic aneurysm",
+     "Acute interstitial nephritis from a new medication"
+    ],
+    "correct": 3,
+    "exp": "Mistaking a leaking abdominal aortic aneurysm for renal colic in an older patient is a listed red flag; consider aneurysm before anchoring on a stone.",
+    "why": [
+     "Cystitis causes dysuria and frequency without the sudden severe flank pain of renal colic.",
+     "Hyperparathyroidism is a secondary cause of calcium stones to look for later, not the emergency to exclude now.",
+     "Hypocitraturia is a metabolic risk factor found on a 24-hour urine, not an acute alternative diagnosis.",
+     "",
+     "Interstitial nephritis presents as a drug reaction rather than sudden colicky flank pain radiating to the groin."
+    ]
+   }
+  ]
+ }
+}

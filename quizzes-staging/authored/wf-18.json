@@ -1,0 +1,977 @@
+{
+ "otitis-media": {
+  "condition": "Acute Otitis Media",
+  "questions": [
+   {
+    "q": "Which otoscopic finding does the module identify as the single most reliable sign of acute otitis media?",
+    "ch": [
+     "Tenderness on traction of the auricle with a swollen external canal",
+     "A retracted tympanic membrane with normal mobility on insufflation",
+     "Loss of the light reflex as the only abnormality on the membrane",
+     "An erythematous tympanic membrane alone in a crying, febrile toddler",
+     "Moderate-to-severe bulging of the tympanic membrane"
+    ],
+    "correct": 4,
+    "exp": "A bulging tympanic membrane is the single most reliable sign of AOM, and the AAP criteria require moderate-to-severe bulging (or new otorrhea) to make the diagnosis.",
+    "why": [
+     "Canal swelling with pain on auricular traction describes otitis externa, which the criteria specifically exclude.",
+     "A retracted, normally mobile membrane argues against an acutely infected middle-ear effusion.",
+     "Loss of the light reflex accompanies the bulging membrane but is not the most reliable single sign.",
+     "A red membrane alone can be produced by crying or fever and does not qualify as AOM.",
+     ""
+    ]
+   },
+   {
+    "q": "Which trio of organisms does the module list as the top bacterial pathogens in acute otitis media?",
+    "ch": [
+     "Staphylococcus aureus, Pseudomonas aeruginosa, and Proteus mirabilis",
+     "Neisseria meningitidis, Listeria monocytogenes, and group B Streptococcus",
+     "Streptococcus pneumoniae, nontypeable Haemophilus influenzae, and Moraxella catarrhalis",
+     "Group A Streptococcus, Escherichia coli, and Klebsiella pneumoniae",
+     "Mycoplasma pneumoniae, Chlamydia pneumoniae, and Legionella species"
+    ],
+    "correct": 2,
+    "exp": "The classic middle-ear trio is Streptococcus pneumoniae, nontypeable Haemophilus influenzae, and Moraxella catarrhalis, although many episodes of AOM are viral or self-limited.",
+    "why": [
+     "Pseudomonas and Proteus belong to canal and chronic-drainage disease rather than acute otitis media.",
+     "These are neonatal meningitis and sepsis organisms, not the middle-ear trio.",
+     "",
+     "Group A Streptococcus and enteric gram-negatives are not the pathogens the module highlights.",
+     "These atypical respiratory organisms are not among the middle-ear pathogens the module names."
+    ]
+   },
+   {
+    "q": "Why does the module say acute otitis media peaks in children 6 to 24 months old?",
+    "ch": [
+     "The mastoid air cells are fully pneumatized and seed the middle-ear cleft directly",
+     "Their Eustachian tubes are shorter, more horizontal, and floppier than an adult's",
+     "Their tympanic membranes are thicker and rupture far less readily than an adult's",
+     "They have not yet developed any mucosal immunity to respiratory viruses at all",
+     "Middle-ear pressure is normally positive at this age and traps infected secretions"
+    ],
+    "correct": 1,
+    "exp": "The 6-24 month peak is attributed to Eustachian tube anatomy: shorter, more horizontal, and more floppy tubes than an adult's, which impairs middle-ear ventilation after a viral URI.",
+    "why": [
+     "Mastoid pneumatization is discussed as a complication site (mastoiditis), not as the cause.",
+     "",
+     "Membrane thickness is not the mechanism the module gives for the age distribution.",
+     "The module ties the peak to tube anatomy, not to a complete absence of viral immunity.",
+     "The module describes negative middle-ear pressure with effusion, not positive pressure."
+    ]
+   },
+   {
+    "q": "Pneumatic otoscopy is described as the confirmatory exam in acute otitis media. Which result supports the diagnosis?",
+    "ch": [
+     "A normal-appearing membrane whose mobility is preserved once the child stops crying",
+     "A retracted membrane with exaggerated excursion on insufflation of the ear canal",
+     "A bulging, opaque membrane with reduced or absent mobility and loss of the light reflex",
+     "A translucent membrane that moves briskly with both positive and negative pressure",
+     "A mobile membrane with a crisp light reflex and clearly visible ossicular landmarks"
+    ],
+    "correct": 2,
+    "exp": "The confirmatory exam is pneumatic otoscopy showing a bulging, opaque tympanic membrane with reduced or absent mobility and loss of the light reflex; tympanometry is the backup when otoscopy is equivocal.",
+    "why": [
+     "A normal membrane with preserved mobility does not meet the diagnostic criteria for AOM.",
+     "Retraction with exaggerated excursion is not the pattern the module attributes to AOM.",
+     "",
+     "Brisk movement of a translucent membrane is a normal exam and excludes an acute effusion.",
+     "Preserved mobility with a crisp light reflex describes a normal middle ear."
+    ]
+   },
+   {
+    "q": "A 2-year-old with no drug allergies is started on high-dose amoxicillin, roughly 80-90 mg/kg/day divided twice daily, for acute otitis media. Why is the dose high?",
+    "ch": [
+     "To raise middle-ear drug levels above the MIC of penicillin-intermediate S. pneumoniae",
+     "To allow the whole treatment course to be compressed into a single observed dose",
+     "To achieve therapeutic concentrations in cerebrospinal fluid should meningitis follow",
+     "To provide reliable coverage for methicillin-resistant Staphylococcus aureus",
+     "To overcome beta-lactamase produced by Moraxella catarrhalis and H. influenzae"
+    ],
+    "correct": 0,
+    "exp": "High-dose amoxicillin raises middle-ear fluid concentrations above the MIC of penicillin-intermediate pneumococci, whose resistance comes from altered penicillin-binding proteins rather than beta-lactamase.",
+    "why": [
+     "",
+     "The module keeps a full course with reassessment at 48-72 hours, not a single dose.",
+     "Dosing is aimed at middle-ear fluid levels; CSF penetration is not the stated rationale.",
+     "MRSA is not among the middle-ear pathogens this module treats with amoxicillin.",
+     "Beta-lactamase producers are the reason to ADD clavulanate; a higher amoxicillin dose does not defeat that enzyme."
+    ]
+   },
+   {
+    "q": "A 3-year-old with acute otitis media also has purulent conjunctivitis. Which plan does the module recommend?",
+    "ch": [
+     "Topical antibiotic ear drops, since the infection is confined to the external ear canal",
+     "Oral cefdinir, since conjunctivitis is treated as evidence of true penicillin allergy",
+     "High-dose amoxicillin, since concurrent conjunctivitis does not alter the likely pathogen",
+     "Amoxicillin-clavulanate, since this syndrome suggests beta-lactamase-producing H. influenzae",
+     "Observation for 48-72 hours, since conjunctivitis makes a purely viral course likely"
+    ],
+    "correct": 3,
+    "exp": "AOM with purulent conjunctivitis is enriched for nontypeable Haemophilus influenzae, so the module moves to amoxicillin-clavulanate for the added beta-lactamase coverage.",
+    "why": [
+     "The infection sits in the middle ear behind an intact membrane, where drops do not reach.",
+     "Cefdinir is reserved for non-severe penicillin allergy or treatment failure, not for conjunctivitis.",
+     "Concurrent purulent conjunctivitis is one of the module's explicit reasons to move off plain amoxicillin.",
+     "",
+     "The module lists this syndrome as a first-line antibiotic indication, not an observation candidate."
+    ]
+   },
+   {
+    "q": "For which child does the module say watchful waiting is a preferred initial strategy?",
+    "ch": [
+     "A child 6 months or older with unilateral non-severe AOM and reliable follow-up",
+     "Any child under 6 months of age whose fever has already broken with ibuprofen",
+     "A child with bilateral AOM, a temperature of 39.5C, and severe otalgia at rest",
+     "A child with new otorrhea draining through a perforated tympanic membrane",
+     "A child who completed a course of amoxicillin for AOM three weeks earlier"
+    ],
+    "correct": 0,
+    "exp": "Observation is offered for children 6 months and older with unilateral non-severe AOM (or 24 months and older with bilateral non-severe disease) when follow-up is reliable, with antibiotics started if there is no improvement in 48-72 hours.",
+    "why": [
+     "",
+     "Infants under 6 months are not offered observation in the module's scheme.",
+     "Fever at or above 39C with severe otalgia defines severe disease and calls for antibiotics.",
+     "New otorrhea is itself a diagnostic criterion for AOM and prompts treatment.",
+     "Amoxicillin within the past 30 days pushes the choice toward amoxicillin-clavulanate."
+    ]
+   },
+   {
+    "q": "A 4-year-old has a middle-ear effusion on tympanometry but no ear pain, no fever, and no membrane bulging. How does the module direct management?",
+    "ch": [
+     "Start high-dose amoxicillin, because any middle-ear effusion represents infection",
+     "This is otitis media with effusion: no antibiotics, only follow-up and hearing surveillance",
+     "Obtain CT of the temporal bones to exclude occult intracranial extension of infection",
+     "Give a single dose of IM ceftriaxone to clear the effusion before school entry",
+     "Refer for immediate tympanocentesis to identify the organism in the middle ear"
+    ],
+    "correct": 1,
+    "exp": "Fluid without acute inflammation is otitis media with effusion, which should not be treated with antibiotics; it needs follow-up and hearing surveillance because persistent effusion can affect speech and school.",
+    "why": [
+     "OME is effusion without acute infection, so antibiotics are explicitly not warranted.",
+     "",
+     "Imaging is reserved for suspected complications such as mastoiditis or intracranial spread.",
+     "Ceftriaxone is for vomiting children or amoxicillin failure in true AOM, not for OME.",
+     "Tympanocentesis is a last resort after failed appropriate therapy, not a step in OME."
+    ]
+   },
+   {
+    "q": "Which element does the module insist belongs in every acute otitis media plan, whether or not an antibiotic is prescribed?",
+    "ch": [
+     "A prescription for oral antihistamines to help drain the middle-ear effusion",
+     "An audiogram obtained on the same day the diagnosis is first established",
+     "A course of oral corticosteroids to shrink Eustachian tube mucosal edema",
+     "An analgesia plan with ibuprofen or acetaminophen for otalgia and fever",
+     "A repeat pneumatic otoscopy examination within the next twenty-four hours"
+    ],
+    "correct": 3,
+    "exp": "Analgesia with ibuprofen or acetaminophen is a core part of every AOM plan and is emphasized regardless of whether antibiotics are given; no child should go home without a pain plan.",
+    "why": [
+     "Antihistamines are not part of the module's treatment plan for AOM.",
+     "Audiology follow-up is arranged for persistent effusion or hearing concerns, not routinely at diagnosis.",
+     "Corticosteroids are not among the treatments this module lists.",
+     "",
+     "Reassessment is set at 48-72 hours, not within a single day."
+    ]
+   },
+   {
+    "q": "A 15-month-old on day 3 of amoxicillin for acute otitis media returns with high fever, redness and swelling behind the ear, and a protruding auricle. What does this represent?",
+    "ch": [
+     "Expected postauricular lymphadenopathy from the viral upper respiratory infection",
+     "A healing tympanic membrane perforation causing referred pain behind the ear",
+     "Uncomplicated treatment failure, managed with a longer oral course at home",
+     "Otitis externa from swimming, treated with topical drops and canal precautions",
+     "Acute mastoiditis, requiring urgent imaging and intravenous antibiotics"
+    ],
+    "correct": 4,
+    "exp": "Postauricular erythema and swelling with a protruding auricle is the red flag for acute mastoiditis, which needs urgent imaging and IV antibiotics rather than continued oral therapy.",
+    "why": [
+     "The module names this exact picture as mastoiditis, a complication, not benign adenopathy.",
+     "A perforation classically brings sudden pain relief with otorrhea, not postauricular swelling.",
+     "Treatment failure by itself does not produce postauricular swelling and a protruding ear.",
+     "Otitis externa causes canal pain and swelling, not swelling behind the auricle.",
+     ""
+    ]
+   }
+  ]
+ },
+ "intussusception": {
+  "condition": "Intussusception",
+  "questions": [
+   {
+    "q": "Which description matches the anatomy of intussusception as the module defines it?",
+    "ch": [
+     "Outpouching of a persistent vitelline duct remnant on the border of the ileum",
+     "Muscular hypertrophy of a bowel sphincter producing a functional outlet obstruction",
+     "A congenital narrowing of the ileocecal valve that obstructs stool passage",
+     "Twisting of the midgut around its mesenteric axis, cutting off arterial inflow",
+     "A proximal bowel segment invaginating into the distal segment, dragging its mesentery inward"
+    ],
+    "correct": 4,
+    "exp": "The intussusceptum telescopes into the intussuscipiens and drags its mesentery inward, producing venous congestion, bowel-wall edema, and eventual ischemia; the classic site is ileocolic at the ileocecal valve.",
+    "why": [
+     "That describes a Meckel diverticulum, which the module lists only as a possible lead point.",
+     "Sphincter muscle hypertrophy describes pyloric stenosis, not telescoping bowel.",
+     "The module describes an acquired invagination, not a congenital valve stenosis.",
+     "Twisting about the mesenteric axis is volvulus, a different mechanism entirely.",
+     ""
+    ]
+   },
+   {
+    "q": "Which test does the module call the diagnostic test of choice for suspected intussusception?",
+    "ch": [
+     "Diagnostic laparoscopy performed before any attempt at enema reduction",
+     "Abdominal ultrasound, showing the target sign and the pseudokidney sign",
+     "Plain abdominal radiography, which is diagnostic when gas is absent from the RLQ",
+     "CT of the abdomen with intravenous and oral contrast in every suspected case",
+     "Stool guaiac testing, which confirms the diagnosis once it turns positive"
+    ],
+    "correct": 1,
+    "exp": "Abdominal ultrasound is the diagnostic test of choice, highly sensitive and specific, with the target/donut sign on transverse view and the pseudokidney sign on longitudinal view.",
+    "why": [
+     "Surgery is reserved for failed enema, perforation, peritonitis, shock, or a lead point.",
+     "",
+     "Plain films are nonspecific here; they mainly help exclude free air before an enema.",
+     "CT is not the module's first-line study for this diagnosis in children.",
+     "Guaiac may be positive before gross blood appears, but it is supportive, not diagnostic."
+    ]
+   },
+   {
+    "q": "What is the peak age range the module gives for intussusception?",
+    "ch": [
+     "10 to 14 years, coinciding with the adolescent growth spurt",
+     "The first 3 to 6 weeks of life, as feeding volumes are increasing",
+     "School age, 5 to 10 years, following adenoviral gastroenteritis",
+     "6 months to 3 years, where disease is typically idiopathic and ileocolic",
+     "Birth to 2 weeks, as meconium clears through the terminal ileum"
+    ],
+    "correct": 3,
+    "exp": "Intussusception is the most common cause of intestinal obstruction in children 6 months to 3 years, and in that window the module says to think idiopathic and ileocolic.",
+    "why": [
+     "Adolescence falls outside the described window and would raise concern for a lead point.",
+     "Three to six weeks of age is the classic window for pyloric stenosis instead.",
+     "Presentation after age 2 shifts suspicion toward a pathologic lead point.",
+     "",
+     "The neonatal period is not the peak the module describes."
+    ]
+   },
+   {
+    "q": "A parent asks whether their toddler could have intussusception without bloody stool. What does the module teach about the classic triad?",
+    "ch": [
+     "The full triad of colicky pain, vomiting, and currant jelly stool appears in fewer than 25% of cases",
+     "The triad is present in nearly every case, so its absence effectively rules the diagnosis out",
+     "Bloody stool is the earliest of the three findings and precedes the onset of colicky pain",
+     "The triad applies only to children over 2 years of age who have a pathologic lead point",
+     "Vomiting is the only element of the triad that appears before bowel ischemia has begun"
+    ],
+    "correct": 0,
+    "exp": "The classic triad of intermittent colicky pain, vomiting, and currant jelly stool is complete in fewer than one in four children, so its absence does not rule out intussusception; episodic lethargy alone can be the sole presentation.",
+    "why": [
+     "",
+     "The module says the opposite: the full triad is the exception rather than the rule.",
+     "Currant jelly stool is a late finding reflecting mucosal ischemia, not the earliest sign.",
+     "The triad is described for the typical idiopathic case, not restricted to lead-point disease.",
+     "The module does not single vomiting out this way; pain and lethargy commonly come first."
+    ]
+   },
+   {
+    "q": "A toddler with intermittent colicky pain passes stool mixed with blood and mucus. How should this finding be interpreted?",
+    "ch": [
+     "Evidence of a coexisting bacterial enteritis rather than intussusception",
+     "A benign consequence of the contrast enema already given for reduction",
+     "A late, ominous sign of ischemic mucosa that must be reported immediately",
+     "Proof that the intussusception has already reduced itself spontaneously",
+     "An early screening finding that appears before any mucosal compromise"
+    ],
+    "correct": 2,
+    "exp": "Currant jelly stool is blood plus mucus from ischemic mucosa, a late and ominous finding rather than an early screening sign; nursing guidance is to document and report its first appearance immediately.",
+    "why": [
+     "The finding is attributed to ischemic bowel mucosa in this module, not to enteritis.",
+     "The stool change reflects mucosal ischemia and is not an artifact of contrast.",
+     "",
+     "Bloody mucoid stool signals advancing ischemia, not spontaneous resolution.",
+     "The module explicitly warns that currant jelly stool is late, not an early screening finding."
+    ]
+   },
+   {
+    "q": "Which set of findings does the module list as contraindications to enema reduction?",
+    "ch": [
+     "Leukocytosis, dehydration, and a first episode of colicky abdominal pain",
+     "Currant jelly stool, vomiting, and a palpable right upper quadrant mass",
+     "Age under 2 years, recent viral illness, and hypertrophied Peyer patches",
+     "Perforation, peritonitis, and hemodynamic instability",
+     "A positive ultrasound target sign with an empty right lower quadrant"
+    ],
+    "correct": 3,
+    "exp": "The contraindications to enema are stated plainly as perforation, peritonitis, and shock; the child is resuscitated and surgery is involved before any reduction attempt.",
+    "why": [
+     "Dehydration and leukocytosis prompt resuscitation and raise concern for ischemia, but are not the listed contraindications.",
+     "These are presenting features of intussusception itself, not reasons to withhold the enema.",
+     "Young age with a preceding viral illness describes the typical idiopathic case that gets an enema.",
+     "",
+     "A positive target sign in a stable child is exactly the indication for enema reduction."
+    ]
+   },
+   {
+    "q": "A stable 14-month-old has a positive ultrasound, no peritoneal signs, and no free air on radiograph. What does the module say happens next?",
+    "ch": [
+     "Discharge home with oral rehydration and a scheduled return visit in 48 hours",
+     "Broad-spectrum antibiotics alone, to shrink the hypertrophied Peyer patches",
+     "Barium enema, chosen specifically for its safety if the bowel should perforate",
+     "Immediate laparotomy with resection of the involved bowel segment",
+     "NPO status, IV access, isotonic fluids, and pneumatic (air) enema with surgery on standby"
+    ],
+    "correct": 4,
+    "exp": "A stable child with a positive ultrasound and no peritonitis goes to air enema after being made NPO with IV access and isotonic fluids, with surgery on standby because of the tension pneumoperitoneum risk.",
+    "why": [
+     "Intussusception is an obstruction requiring reduction, not outpatient rehydration.",
+     "Antibiotics are empiric coverage when ischemia or surgery is anticipated, not a reduction method.",
+     "Barium is generally avoided because of peritoneal soiling if perforation occurs.",
+     "Operative reduction is for failed enema, perforation, peritonitis, shock, or a lead point.",
+     ""
+    ]
+   },
+   {
+    "q": "A 5-year-old presents with his second episode of intussusception in six months. What does the module direct you to look for?",
+    "ch": [
+     "Chronic constipation with stool impaction acting as the obstructing mass",
+     "A missed diagnosis, since intussusception does not recur after enema reduction",
+     "A pathologic lead point such as a Meckel diverticulum, polyp, lymphoma, or HSP hematoma",
+     "Reinfection with rotavirus from an incompletely administered vaccine series",
+     "An inherited disorder of colonic motility explaining the recurrent invagination"
+    ],
+    "correct": 2,
+    "exp": "In atypical ages (under 3 months or over 2 years) and in recurrent cases the module says to hunt for a pathologic lead point, with Meckel diverticulum the classic pediatric culprit.",
+    "why": [
+     "Constipation is not among the lead points or mechanisms the module lists.",
+     "Recurrence occurs in up to about 10% after enema reduction, so it is expected, not impossible.",
+     "",
+     "The vaccine link concerns the withdrawn RotaShield product and a small attributable risk, not recurrence workup.",
+     "The module does not describe an inherited motility disorder as a cause."
+    ]
+   },
+   {
+    "q": "A 10-month-old is admitted after successful air enema reduction. Which development in the next 24 to 72 hours should prompt urgent reassessment?",
+    "ch": [
+     "A single loose stool as bowel function returns and oral intake resumes",
+     "Return of colicky pain or vomiting, which may signal recurrence",
+     "Mild fussiness that settles fully when the infant is held and fed",
+     "Passage of flatus followed by tolerating a small volume of formula",
+     "A transient rise in appetite once the obstruction has been relieved"
+    ],
+    "correct": 1,
+    "exp": "Recurrence follows enema reduction in up to about 10% of children and typically presents as returning colicky pain or vomiting within 24 to 72 hours, so monitoring for it is built into the disposition plan.",
+    "why": [
+     "Passing stool is a sign of returning bowel function, which the module frames as reassuring.",
+     "",
+     "Fussiness that settles completely does not match the episodic colicky pain of recurrence.",
+     "Passing air and tolerating oral intake are the recovery signs the nurse is watching for.",
+     "Improved feeding after relief of the obstruction is an expected part of recovery."
+    ]
+   },
+   {
+    "q": "During a pneumatic enema an infant abruptly develops respiratory distress with a tense, distended abdomen. What is happening and what is needed?",
+    "ch": [
+     "Tension pneumoperitoneum from perforation, needing immediate needle decompression and surgery",
+     "A vasovagal response to the rectal catheter, managed by pausing and reassuring",
+     "Swallowed air from crying, managed by placing a nasogastric tube for venting",
+     "Contrast aspiration into the airway, managed with suction and supplemental oxygen",
+     "Anaphylaxis to the enema contrast, managed with intramuscular epinephrine"
+    ],
+    "correct": 0,
+    "exp": "Tension pneumoperitoneum is the post-reduction catastrophe of air enema: sudden respiratory distress requiring immediate needle decompression and surgery, which is why surgery must be on standby.",
+    "why": [
+     "",
+     "A vasovagal episode does not produce a tense, distended abdomen with respiratory distress.",
+     "Swallowed air does not explain acute distress during insufflation under pressure.",
+     "Air, not liquid contrast, is being insufflated during a pneumatic enema.",
+     "Air enema uses no contrast agent, so a reaction to contrast is not the mechanism."
+    ]
+   }
+  ]
+ },
+ "pyloric-stenosis": {
+  "condition": "Pyloric Stenosis",
+  "questions": [
+   {
+    "q": "Which triad does the module give as classic for infantile hypertrophic pyloric stenosis?",
+    "ch": [
+     "Fever, refusal to feed, and a hyperchloremic metabolic acidosis",
+     "Non-bilious projectile vomiting, a palpable olive, and hypokalemic metabolic alkalosis",
+     "Painless bloody stool, brisk weight gain, and a normal serum bicarbonate",
+     "Bilious vomiting, a distended abdomen, and a metabolic acidosis",
+     "Colicky pain, currant jelly stool, and a sausage-shaped abdominal mass"
+    ],
+    "correct": 1,
+    "exp": "The classic triad is non-bilious projectile vomiting, a palpable olive in the epigastrium, and a hypochloremic, hypokalemic metabolic alkalosis.",
+    "why": [
+     "The metabolic picture is an alkalosis from lost gastric HCl, not an acidosis.",
+     "",
+     "Bloody stool and weight gain are not features of gastric outlet obstruction in this module.",
+     "Bilious vomiting points away from pyloric stenosis and toward malrotation with volvulus.",
+     "Colicky pain with currant jelly stool and a sausage-shaped mass describes intussusception."
+    ]
+   },
+   {
+    "q": "Which laboratory pattern is the module's lab fingerprint of pyloric stenosis?",
+    "ch": [
+     "Elevated lactate with an anion gap metabolic acidosis",
+     "Isolated hypoglycemia with otherwise normal electrolytes",
+     "Hyperkalemia with a normal anion gap metabolic acidosis",
+     "Hypernatremic dehydration with a respiratory alkalosis",
+     "Low chloride, low potassium, and an elevated bicarbonate"
+    ],
+    "correct": 4,
+    "exp": "Persistent vomiting of gastric HCl produces a hypochloremic, hypokalemic metabolic alkalosis - low chloride, low potassium, elevated bicarbonate - with a late paradoxical aciduria.",
+    "why": [
+     "Lactic acidosis is not the described picture; loss of gastric acid raises the bicarbonate.",
+     "Hypoglycemia is a risk while NPO but is not the characteristic electrolyte fingerprint.",
+     "The potassium falls rather than rises, and the disturbance is an alkalosis.",
+     "The module describes a metabolic alkalosis from acid loss, not a respiratory one.",
+     ""
+    ]
+   },
+   {
+    "q": "Which presentation best fits the module's description of pyloric stenosis?",
+    "ch": [
+     "A 4-week-old firstborn male with non-bilious vomiting who refeeds eagerly",
+     "A 3-year-old with intermittent vomiting and bloody stool after a viral illness",
+     "A 2-month-old with effortless post-feed regurgitation and normal weight gain",
+     "A 6-month-old with bilious vomiting who has no interest in feeding at all",
+     "A newborn vomiting from the first day of life with abdominal distension"
+    ],
+    "correct": 0,
+    "exp": "The classic case is a 3-to-6-week-old, often a firstborn male, with progressive non-bilious vomiting who stays hungry and refeeds eagerly; the condition is not present at birth but develops over the first weeks of life.",
+    "why": [
+     "",
+     "Vomiting with bloody stool after a viral illness in a toddler suggests intussusception.",
+     "Effortless regurgitation with normal growth describes GERD, which lacks the olive and alkalosis.",
+     "Bilious vomiting flips the differential toward malrotation with midgut volvulus.",
+     "Pyloric stenosis is not present at birth; it develops over the first weeks of life."
+    ]
+   },
+   {
+    "q": "Which ultrasound measurements does the module give as diagnostic thresholds for pyloric stenosis?",
+    "ch": [
+     "Antral diameter over 30 mm with free peritoneal fluid clearly present",
+     "Bowel wall thickness of 2 mm with a target sign on the transverse view",
+     "Pyloric muscle wall thickness of 3 mm or more with channel length of 14 to 16 mm or more",
+     "Gastric wall thickness under 1 mm with a pyloric channel shorter than 5 mm",
+     "Pyloric wall thickness of 10 mm or more with a channel of any measured length"
+    ],
+    "correct": 2,
+    "exp": "Abdominal ultrasound is the imaging gold standard, with diagnostic thresholds of pyloric muscle wall thickness of at least 3 mm and channel length of at least 14 to 16 mm.",
+    "why": [
+     "Antral diameter and free peritoneal fluid are not the criteria the module gives.",
+     "A target sign on transverse view is the ultrasound finding of intussusception.",
+     "",
+     "These values fall below the diagnostic thresholds and describe a normal pylorus.",
+     "Ten millimetres far exceeds the 3 mm threshold the module actually cites."
+    ]
+   },
+   {
+    "q": "A 5-week-old with pyloric stenosis is dehydrated, with a chloride of 88 and a potassium of 2.9. What is the priority?",
+    "ch": [
+     "Give an oral macrolide to reduce pyloric inflammation before any surgery",
+     "Book pyloromyotomy immediately, since the obstruction is a surgical emergency",
+     "Isotonic fluid resuscitation and correction of electrolytes before anesthesia",
+     "Start ondansetron to stop the vomiting, then feed the infant slowly by mouth",
+     "Place a nasogastric tube and begin continuous feeding through the pylorus"
+    ],
+    "correct": 2,
+    "exp": "This is a medical resuscitation before a surgical problem: give isotonic fluids and normalize chloride, potassium, and bicarbonate before anesthesia, because operating on an alkalotic, hypokalemic infant risks postoperative apnea and arrhythmia.",
+    "why": [
+     "Macrolides are a risk factor for the disease, not a treatment for it.",
+     "Pyloromyotomy is not an emergency; the metabolic derangement is what must be fixed first.",
+     "",
+     "Antiemetics do not treat a mechanical obstruction and can mask progression.",
+     "The infant is kept NPO; the gastric outlet is obstructed, so enteral feeding is not the answer."
+    ]
+   },
+   {
+    "q": "When may potassium chloride be added to this infant's maintenance IV fluids?",
+    "ch": [
+     "Only if the serum bicarbonate has already fallen below the normal range",
+     "Immediately on arrival, given as an undiluted intravenous push",
+     "Only after the pyloromyotomy has been completed in the operating room",
+     "Never, because the hypokalemia corrects on its own once vomiting stops",
+     "Only once urine output is established, with serum potassium and ECG monitoring"
+    ],
+    "correct": 4,
+    "exp": "KCl is added only after urine output is established, with monitoring of serum potassium and the ECG, and undiluted IV potassium is never given by push.",
+    "why": [
+     "Replacement is tied to urine output, not to waiting for the bicarbonate to fall.",
+     "Undiluted IV potassium push is explicitly forbidden in the module.",
+     "Potassium is corrected before anesthesia, not after the operation is finished.",
+     "Correcting hypokalemia is part of the preoperative plan, not something left to resolve itself.",
+     ""
+    ]
+   },
+   {
+    "q": "How does the module explain the paradoxical aciduria seen late in pyloric stenosis?",
+    "ch": [
+     "Hypoglycemia forces ketone excretion, which acidifies the urine directly",
+     "Vomited hydrochloric acid is reabsorbed from the stomach and cleared renally",
+     "Renal tubular acidosis develops from the chronic vomiting and dehydration",
+     "Volume depletion drives aldosterone, which reabsorbs sodium at the expense of potassium and hydrogen",
+     "The kidney excretes the excess bicarbonate generated by the gastric mucosa"
+    ],
+    "correct": 3,
+    "exp": "Volume depletion stimulates aldosterone, which reabsorbs sodium in exchange for potassium and hydrogen ions; that renal acid loss produces hypokalemia and an acid urine despite the systemic alkalosis.",
+    "why": [
+     "Hypoglycemia is a separate risk of being NPO and is not the mechanism given.",
+     "Acid is lost in the emesis; it is not reabsorbed and then re-excreted.",
+     "The module attributes the finding to aldosterone-driven volume conservation, not renal tubular acidosis.",
+     "",
+     "Bicarbonate is retained rather than excreted, which is why the alkalosis persists."
+    ]
+   },
+   {
+    "q": "A 4-week-old is referred for suspected pyloric stenosis, but the vomiting is described as green. What does the module say to do with that detail?",
+    "ch": [
+     "Proceed with pyloromyotomy, because the palpable olive remains the deciding finding",
+     "Attribute it to reflux of duodenal contents through the hypertrophied pylorus",
+     "Start high-dose antiemetics and repeat the abdominal ultrasound in one week",
+     "Treat it as malrotation with midgut volvulus, a surgical emergency needing immediate evaluation",
+     "Ignore the colour, since bile staining is common once vomiting becomes forceful"
+    ],
+    "correct": 3,
+    "exp": "Bilious (green) vomiting is NOT pyloric stenosis, because that obstruction is proximal to the ampulla of Vater; the differential flips to malrotation with midgut volvulus, a surgical emergency.",
+    "why": [
+     "Green vomiting argues against pyloric stenosis, so operating on that assumption is unsafe.",
+     "Pyloric obstruction is proximal to the ampulla of Vater, so bile should not appear in the emesis.",
+     "Antiemetics are not indicated, and delay in suspected volvulus risks losing bowel.",
+     "",
+     "The module makes bilious versus non-bilious the reflex question precisely because it changes the diagnosis."
+    ]
+   },
+   {
+    "q": "A caregiver panics on the first postoperative day because the infant vomited twice after feeds. What does the module have the nurse teach?",
+    "ch": [
+     "An antiemetic should be started at home and continued for several weeks",
+     "Some emesis in the first 24 to 48 hours is expected and does not mean surgery failed",
+     "The pyloromyotomy has failed and a second operation will be needed shortly",
+     "Feeds should be stopped entirely and the infant kept NPO for a full week",
+     "The vomiting proves an incidental viral gastroenteritis was acquired in hospital"
+    ],
+    "correct": 1,
+    "exp": "Postoperative teaching is that feeds are advanced gradually per protocol and that some emesis in the first 24 to 48 hours is expected; it does not mean the pyloromyotomy failed.",
+    "why": [
+     "Antiemetics are not part of the module's plan for this condition.",
+     "",
+     "Early emesis is anticipated and is not evidence of a failed pyloromyotomy.",
+     "Feeds are advanced gradually per protocol rather than withheld for a week.",
+     "The module explains the emesis as an expected postoperative finding, not a new infection."
+    ]
+   },
+   {
+    "q": "Which exposure does the module tell you to screen for in the history of an infant with suspected pyloric stenosis?",
+    "ch": [
+     "Postnatal macrolide exposure such as erythromycin or azithromycin",
+     "Rotavirus vaccination given at the two-month well-child visit",
+     "Exclusive breastfeeding from the first day after delivery",
+     "Prenatal exposure to maternal rubella in early pregnancy",
+     "Maternal use of prenatal vitamins during the third trimester"
+    ],
+    "correct": 0,
+    "exp": "Postnatal macrolide exposure - erythromycin or azithromycin, especially in the first two weeks of life - is listed alongside firstborn male sex and family history as a risk factor to screen for.",
+    "why": [
+     "",
+     "Rotavirus vaccine is linked to intussusception risk, not to pyloric stenosis.",
+     "Breastfeeding is not listed as a risk factor for this condition.",
+     "Maternal rubella is associated with congenital heart disease, specifically PDA.",
+     "Prenatal vitamins are not among the risk factors described."
+    ]
+   }
+  ]
+ },
+ "febrile-seizure": {
+  "condition": "Febrile Seizure",
+  "questions": [
+   {
+    "q": "Which definition matches the module's description of a febrile seizure?",
+    "ch": [
+     "A seizure with fever in a child 6 months to 5 years, without CNS infection or prior afebrile seizures",
+     "A seizure occurring only during the defervescence phase of a bacterial illness",
+     "A generalized convulsion that requires an abnormal EEG before it can be diagnosed",
+     "A seizure with fever in any child who also has a known epilepsy syndrome",
+     "Any convulsion in a child under 10 years, regardless of temperature or history"
+    ],
+    "correct": 0,
+    "exp": "A febrile seizure is an age-limited seizure with fever (typically 38C or higher) in a child 6 months to 5 years, without CNS infection, metabolic derangement, or previous afebrile seizures.",
+    "why": [
+     "",
+     "The module ties the seizure to the rate and height of temperature rise, not to defervescence.",
+     "EEG is explicitly not indicated for a simple febrile seizure; the diagnosis is clinical.",
+     "A prior afebrile seizure or established epilepsy takes the case outside this definition.",
+     "The definition is bounded by the 6 month to 5 year age window and requires fever."
+    ]
+   },
+   {
+    "q": "Which features define a SIMPLE febrile seizure in the module's classification?",
+    "ch": [
+     "Focal onset, under 5 minutes, with normal postictal mental status",
+     "Any duration, as long as the child has a documented source of fever",
+     "Two episodes in 24 hours, each of them shorter than 10 minutes",
+     "Generalized, over 15 minutes, with a prolonged postictal period",
+     "Generalized, under 15 minutes, and a single episode within 24 hours"
+    ],
+    "correct": 4,
+    "exp": "Simple febrile seizures are generalized, last under 15 minutes, and occur once in 24 hours; focal features, duration over 15 minutes, or recurrence within 24 hours make the seizure complex.",
+    "why": [
+     "Focal features make a febrile seizure complex, whatever its duration.",
+     "Duration matters: 15 minutes is the dividing line between simple and complex.",
+     "Recurrence within 24 hours is one of the criteria that defines a complex seizure.",
+     "A seizure over 15 minutes with a prolonged postictal state is complex, not simple.",
+     ""
+    ]
+   },
+   {
+    "q": "What does the module say about scheduled antipyretics in a child with a history of febrile seizures?",
+    "ch": [
+     "They reliably prevent recurrence and should be given around the clock in fevers",
+     "They should be replaced by a daily prophylactic anticonvulsant in every case",
+     "They are used for comfort and fever reduction but do NOT prevent recurrence",
+     "They are contraindicated because lowering the temperature triggers seizures",
+     "They work only if the child's temperature is held below 36.5C at all times"
+    ],
+    "correct": 2,
+    "exp": "Antipyretics are for comfort and fever reduction only; they do not prevent recurrence of febrile seizures, which the module calls a favorite exam distractor.",
+    "why": [
+     "The module states directly that antipyretics do not prevent recurrence.",
+     "Daily prophylactic anticonvulsants are generally not recommended for simple febrile seizures.",
+     "",
+     "Antipyretics are recommended for comfort, not contraindicated.",
+     "No such temperature target is given, and round-the-clock dosing does not prevent recurrence."
+    ]
+   },
+   {
+    "q": "A 2-year-old had a single 3-minute generalized convulsion with fever from an obvious viral illness and is back to baseline with a normal exam. Which workup does the module support?",
+    "ch": [
+     "A basic metabolic panel, CBC, and blood culture drawn routinely",
+     "Non-contrast head CT to exclude a structural lesion as the trigger",
+     "No routine labs, EEG, or neuroimaging for a simple febrile seizure with a reassuring exam",
+     "EEG and MRI of the brain before discharge from the emergency department",
+     "Lumbar puncture for every child who has had any seizure with fever"
+    ],
+    "correct": 2,
+    "exp": "Routine labs, EEG, and neuroimaging are not indicated for a simple febrile seizure with a reassuring exam; the module calls them low-yield and a source of unnecessary cost and radiation.",
+    "why": [
+     "Routine labs are explicitly not indicated in this scenario.",
+     "CT adds radiation without yield in a classic simple febrile seizure.",
+     "",
+     "EEG and MRI are reserved for complex features, a prolonged postictal state, or focal deficits.",
+     "LP is considered selectively - meningeal signs, under-immunized infants 6 to 12 months, or antibiotic pretreatment."
+    ]
+   },
+   {
+    "q": "In which situation does the module say lumbar puncture should be considered after a febrile seizure?",
+    "ch": [
+     "Any child with a family history of febrile seizures in a sibling",
+     "An infant 6 to 12 months old who is under-immunized for Hib and pneumococcus",
+     "A 4-year-old with a brief generalized seizure and a clear ear infection",
+     "Any child in whom antipyretics failed to lower the temperature quickly",
+     "Every child whose temperature exceeded 39C during the febrile illness"
+    ],
+    "correct": 1,
+    "exp": "LP is considered when meningeal signs are present, in infants 6 to 12 months who are under-immunized for Hib and pneumococcus, or in children pretreated with antibiotics that could mask meningitis.",
+    "why": [
+     "Family history reflects genetic predisposition and does not by itself prompt an LP.",
+     "",
+     "A brief generalized seizure with an identified fever source and reassuring exam does not need LP.",
+     "Response to antipyretics is not a criterion; antibiotic pretreatment is.",
+     "Height of fever alone is not one of the module's LP triggers."
+    ]
+   },
+   {
+    "q": "A child's febrile seizure has now continued for five minutes in the emergency department. What is first-line?",
+    "ch": [
+     "Intravenous acetaminophen to bring the temperature down as fast as possible",
+     "A loading dose of levetiracetam given before any benzodiazepine is tried",
+     "Physical restraint and a bite block to protect the tongue and the teeth",
+     "Observation alone, since all febrile seizures terminate spontaneously",
+     "An intravenous benzodiazepine such as lorazepam, with airway support ready"
+    ],
+    "correct": 4,
+    "exp": "A seizure lasting 5 minutes or more is febrile status epilepticus, and first-line abortive therapy is a benzodiazepine - IV lorazepam or IV/IO diazepam - with monitoring for respiratory depression and hypotension.",
+    "why": [
+     "Antipyretics do not stop a seizure; they are given for comfort and fever reduction.",
+     "Levetiracetam is second-line, for benzodiazepine-refractory febrile status epilepticus.",
+     "The module says never to restrain the child or place anything in the mouth.",
+     "Most seizures self-terminate, but at 5 minutes the module calls for abortive therapy.",
+     ""
+    ]
+   },
+   {
+    "q": "Which nursing actions does the module direct during an active febrile seizure?",
+    "ch": [
+     "Place the child prone with the head lower than the chest to aid drainage",
+     "Begin chest compressions as soon as the convulsion is recognized",
+     "Hold the limbs still and insert a padded airway between the teeth",
+     "Turn the child on their side, clear the area, do not restrain, and time the seizure",
+     "Sit the child upright and offer oral acetaminophen as soon as possible"
+    ],
+    "correct": 3,
+    "exp": "During the event the nurse protects the airway and prevents injury: side-lying position, clear the area, no restraint and nothing in the mouth, and time the seizure while monitoring ABCs and oxygen saturation.",
+    "why": [
+     "The module specifies side-lying positioning, not a prone head-down position.",
+     "Compressions are for pulselessness; a convulsing child with a pulse needs airway protection.",
+     "Restraining the child and placing objects in the mouth are both explicitly prohibited.",
+     "",
+     "Nothing is given by mouth during a seizure, and antipyretics do not stop it."
+    ]
+   },
+   {
+    "q": "Parents of a child who has had a first simple febrile seizure ask about the future. Which numbers does the module have you give them?",
+    "ch": [
+     "A 25% risk of death unless daily anticonvulsant prophylaxis is started",
+     "Roughly 30 to 35% recurrence and about a 1 to 2% risk of later epilepsy",
+     "Nearly universal recurrence and a 50% chance of developing epilepsy",
+     "About 5% recurrence and no measurable increase in epilepsy risk at all",
+     "A 10% risk of permanent brain damage from each additional seizure"
+    ],
+    "correct": 1,
+    "exp": "The counseling numbers are about one in three for recurrence (30 to 35%) and only a 1 to 2% risk of epilepsy after a simple febrile seizure, with higher epilepsy risk when there are complex features, family history, or neurodevelopmental abnormality.",
+    "why": [
+     "Simple febrile seizures do not cause death, and daily prophylaxis is not recommended.",
+     "",
+     "These figures are far above the module's stated risks and would frighten a family needlessly.",
+     "Recurrence is about one in three, not one in twenty.",
+     "The module states that simple febrile seizures do not cause brain damage."
+    ]
+   },
+   {
+    "q": "Which factor does the module name as the single biggest predictor of recurrent febrile seizures?",
+    "ch": [
+     "Young age at the first seizure, under about 12 to 18 months",
+     "The peak temperature recorded during the first febrile illness",
+     "Whether the seizure followed a vaccination rather than a virus",
+     "The number of days of fever before the seizure occurred",
+     "Whether antipyretics were given on a scheduled basis at home"
+    ],
+    "correct": 0,
+    "exp": "Young age at the first seizure - under roughly 12 to 18 months - is named as the single biggest predictor of recurrence.",
+    "why": [
+     "",
+     "The module invokes the rate and height of temperature rise in pathophysiology, not peak fever as the recurrence predictor.",
+     "Post-vaccination fever is listed as a less common trigger, not as the recurrence predictor.",
+     "Duration of fever before the seizure is not the predictor the module names.",
+     "Scheduled antipyretics do not change the recurrence risk at all."
+    ]
+   },
+   {
+    "q": "An 8-month-old has a seizure with fever and, on exam, has a bulging fontanelle, meningismus, and a petechial rash while remaining lethargic. What does the module require?",
+    "ch": [
+     "Discharge with reassurance, since a febrile seizure is a benign diagnosis",
+     "Scheduled antipyretics and a follow-up visit with the pediatrician in a week",
+     "Rectal diazepam prescribed for home use as the definitive management step",
+     "Urgent evaluation for meningitis or sepsis, with antibiotics not delayed for LP or imaging",
+     "An outpatient EEG to distinguish a febrile seizure from an epilepsy syndrome"
+    ],
+    "correct": 3,
+    "exp": "Meningismus, a bulging fontanelle, a petechial rash, or persistently altered mental status are red flags for meningitis or sepsis; evaluate urgently and do not delay empiric antibiotics for LP or imaging in a toxic-appearing child.",
+    "why": [
+     "A febrile seizure is a diagnosis of the well-appearing, back-to-baseline child, and this child is neither.",
+     "Antipyretics and routine follow-up do not address a suspected CNS infection.",
+     "Rescue benzodiazepines abort prolonged seizures; they do not treat meningitis.",
+     "",
+     "EEG is low-yield here and would delay treatment of possible bacterial meningitis."
+    ]
+   }
+  ]
+ },
+ "congenital-heart": {
+  "condition": "Congenital Heart Defects",
+  "questions": [
+   {
+    "q": "Which question does the module call the pivotal one in evaluating a congenital heart defect?",
+    "ch": [
+     "Whether the hemoglobin is elevated from chronic hypoxemia",
+     "Whether the lesion is cyanotic or acyanotic, and whether flow is ductal-dependent",
+     "Whether the murmur is heard best in systole or in diastole",
+     "Whether the defect formed before or after week 8 of gestation",
+     "Whether the infant was born vaginally or by cesarean delivery"
+    ],
+    "correct": 1,
+    "exp": "The pivotal question is cyanotic versus acyanotic, and whether the lesion is ductal-dependent - that is, whether pulmonary or systemic flow relies on a patent ductus arteriosus.",
+    "why": [
+     "Polycythemia can follow chronic hypoxemia but is not the organizing question.",
+     "",
+     "Murmur timing helps localize a lesion but is not the pivotal framing question.",
+     "Cardiac development occurs in weeks 3 to 8, but that timing is not the clinical pivot.",
+     "Mode of delivery is not part of the module's classification of these defects."
+    ]
+   },
+   {
+    "q": "Which lesion does the module identify as the most common congenital heart defect overall?",
+    "ch": [
+     "Tetralogy of Fallot",
+     "Transposition of the great arteries",
+     "Ventricular septal defect",
+     "Total anomalous pulmonary venous return",
+     "Coarctation of the aorta"
+    ],
+    "correct": 2,
+    "exp": "VSD is the most common congenital heart defect overall, and small ones - which produce the louder murmur - often close spontaneously.",
+    "why": [
+     "Tetralogy of Fallot is the classic cyanotic lesion but not the most common defect overall.",
+     "Transposition is a cyanotic mixing lesion linked to maternal diabetes, not the most common.",
+     "",
+     "TAPVR is one of the five T's of cyanotic disease and is uncommon.",
+     "Coarctation is an acyanotic obstructive lesion, not the most common defect."
+    ]
+   },
+   {
+    "q": "A fixed, widely split S2 on auscultation should make you think of which defect?",
+    "ch": [
+     "Ventricular septal defect",
+     "Patent ductus arteriosus",
+     "Tetralogy of Fallot",
+     "Coarctation of the aorta",
+     "Atrial septal defect"
+    ],
+    "correct": 4,
+    "exp": "A fixed, widely split S2 means atrial septal defect until proven otherwise.",
+    "why": [
+     "VSD produces a harsh holosystolic murmur at the left lower sternal border.",
+     "PDA is an acyanotic shunt lesion classically linked to maternal rubella.",
+     "Tetralogy of Fallot gives a single S2 with a systolic murmur.",
+     "Coarctation presents with weak femoral pulses and upper-extremity hypertension.",
+     ""
+    ]
+   },
+   {
+    "q": "A cyanotic newborn is placed on 100% oxygen and the PaO2 barely rises. How does the module interpret this hyperoxia test?",
+    "ch": [
+     "A cyanotic cardiac lesion is present rather than pulmonary disease",
+     "The oxygen was delivered at inadequate flow and the test should be repeated",
+     "Methemoglobinemia is the cause and methylene blue should be given",
+     "The result is normal for a newborn in the first day of life",
+     "Primary pulmonary disease such as surfactant deficiency is the likely cause"
+    ],
+    "correct": 0,
+    "exp": "Failure of PaO2 to rise substantially on 100% oxygen points to a cyanotic cardiac cause rather than lung disease; cyanosis that does not improve on 100% oxygen is cyanotic congenital heart disease.",
+    "why": [
+     "",
+     "The flat response is itself the finding, and the module treats it as diagnostic direction.",
+     "Methemoglobinemia is not among the causes this module discusses.",
+     "A flat oxygen response is abnormal and prompts echocardiography.",
+     "Pulmonary causes of cyanosis generally do improve with supplemental oxygen."
+    ]
+   },
+   {
+    "q": "A neonate with a suspected ductal-dependent lesion is started on prostaglandin E1. Which complication must the team be prepared for?",
+    "ch": [
+     "Malignant hyperthermia requiring dantrolene kept at the bedside",
+     "Acute closure of the ductus arteriosus within a few minutes",
+     "Severe hyperkalemia requiring calcium and insulin-dextrose",
+     "Apnea and hypotension, with intubation equipment ready at the bedside",
+     "Profound hypertension needing an intravenous beta-blocker infusion"
+    ],
+    "correct": 3,
+    "exp": "PGE1 maintains ductal patency but causes apnea, hypotension, fever, and flushing, so airway and intubation equipment stay at the bedside and the infant is monitored closely.",
+    "why": [
+     "Malignant hyperthermia is an anesthetic reaction; fever and flushing are the PGE1 effects described.",
+     "PGE1 keeps the duct open; indomethacin or ibuprofen is what closes it.",
+     "Hyperkalemia is a concern with ACE inhibitors, not with prostaglandin E1.",
+     "",
+     "Hypotension, not hypertension, is the hemodynamic effect the module describes."
+    ]
+   },
+   {
+    "q": "An infant with Tetralogy of Fallot suddenly becomes deeply cyanotic and agitated, and the murmur disappears. What is the immediate nursing response?",
+    "ch": [
+     "Begin chest compressions and prepare for immediate cardioversion",
+     "Start an indomethacin infusion to reduce pulmonary blood flow",
+     "Place the infant knee-chest, give oxygen, stay calm, and call the provider",
+     "Lay the infant flat and administer a rapid intravenous vasodilator",
+     "Withhold oxygen to avoid closing the ductus arteriosus prematurely"
+    ],
+    "correct": 2,
+    "exp": "A hypercyanotic Tet spell - sudden deep cyanosis, agitation, and disappearance of the murmur - is managed with knee-chest positioning, oxygen, calming the infant, and calling the provider, because knee-chest raises systemic vascular resistance and reduces right-to-left shunting.",
+    "why": [
+     "A Tet spell is a shunting emergency, not a pulseless arrhythmia.",
+     "Indomethacin closes a PDA and is avoided in ductal-dependent physiology.",
+     "",
+     "Agents that drop systemic vascular resistance worsen the right-to-left shunt and are avoided.",
+     "Oxygen is part of treating a Tet spell, along with morphine and IV fluids."
+    ]
+   },
+   {
+    "q": "Which examination findings does the module tie to coarctation of the aorta?",
+    "ch": [
+     "Bounding pulses in all four extremities with a continuous murmur",
+     "A fixed split S2 with a soft systolic murmur in the pulmonic area",
+     "Hepatomegaly with a gallop and a harsh holosystolic murmur",
+     "Weak or delayed femoral pulses with upper-extremity hypertension",
+     "Equal pre- and post-ductal saturations with a single loud S2"
+    ],
+    "correct": 3,
+    "exp": "Weak or delayed femoral pulses with upper-extremity hypertension point to coarctation, and a right-hand versus foot gradient on pre- and post-ductal pulse oximetry suggests a ductal or coarctation lesion.",
+    "why": [
+     "The hallmark is diminished lower-extremity pulses, not bounding pulses everywhere.",
+     "A fixed split S2 is the atrial septal defect finding.",
+     "Hepatomegaly with a gallop reflects decompensated heart failure, and a holosystolic murmur suggests VSD.",
+     "",
+     "Coarctation produces a pre- to post-ductal saturation gradient rather than equal saturations."
+    ]
+   },
+   {
+    "q": "A large ventricular septal defect is left unrepaired for years and the child, previously acyanotic, becomes cyanotic. What has happened?",
+    "ch": [
+     "Tetralogy of Fallot has developed on top of the septal defect over time",
+     "Eisenmenger syndrome: pulmonary vascular resistance rose until the shunt reversed",
+     "The ductus arteriosus has reopened and is now shunting from right to left",
+     "The defect has spontaneously closed, trapping blood in the right ventricle",
+     "Chronic diuretic therapy has produced a hypochloremic metabolic alkalosis"
+    ],
+    "correct": 1,
+    "exp": "Eisenmenger syndrome: a chronic uncorrected left-to-right shunt raises pulmonary vascular resistance until the shunt reverses and cyanosis develops - which is a reason to repair early.",
+    "why": [
+     "Tetralogy of Fallot is a congenital outflow-tract malformation, not an acquired one.",
+     "",
+     "The module attributes late cyanosis here to rising pulmonary vascular resistance, not a reopened duct.",
+     "Spontaneous closure of a small VSD resolves the shunt rather than causing cyanosis.",
+     "Diuretic-induced alkalosis is an electrolyte problem and does not cause cyanosis."
+    ]
+   },
+   {
+    "q": "Why does the module warn against indomethacin or ibuprofen in an infant with a suspected ductal-dependent lesion?",
+    "ch": [
+     "They interact with digoxin and produce fatal bradycardia in neonates",
+     "They cause apnea and hypotension identical to prostaglandin E1",
+     "They inhibit aldosterone and cause a hypochloremic metabolic alkalosis",
+     "They raise pulmonary vascular resistance and precipitate a Tet spell",
+     "They close the ductus arteriosus, the opposite of what PGE1 is doing"
+    ],
+    "correct": 4,
+    "exp": "Indomethacin and ibuprofen close a hemodynamically significant PDA by inhibiting prostaglandins - the opposite effect of PGE1 - so they are avoided in ductal-dependent lesions where the duct supplies pulmonary or systemic flow.",
+    "why": [
+     "The module's digoxin cautions concern its narrow therapeutic index, hypokalemia, and bradycardia.",
+     "Apnea and hypotension are the adverse effects listed for PGE1 itself.",
+     "These drugs inhibit prostaglandins; they are not aldosterone antagonists.",
+     "Their action is prostaglandin inhibition and duct closure, not a rise in pulmonary vascular resistance.",
+     ""
+    ]
+   },
+   {
+    "q": "A cyanotic newborn has a single S2, a systolic murmur, and a boot-shaped heart on chest radiograph. Which lesion and components fit?",
+    "ch": [
+     "Tetralogy of Fallot: pulmonary stenosis, RVH, overriding aorta, and VSD",
+     "Atrial septal defect, with a fixed split S2 and a normal cardiac contour",
+     "Transposition of the great arteries, with an egg-on-a-string silhouette",
+     "Coarctation of the aorta, with a 3-sign and rib notching on the film",
+     "Total anomalous pulmonary venous return, with a snowman silhouette"
+    ],
+    "correct": 0,
+    "exp": "A boot-shaped heart with a single S2 and systolic murmur is Tetralogy of Fallot, whose components are PROVe - pulmonary stenosis, right ventricular hypertrophy, overriding aorta, and VSD - with the degree of RVOT obstruction driving cyanosis.",
+    "why": [
+     "",
+     "ASD is acyanotic and gives a fixed split S2 with a different chest film.",
+     "Transposition gives the egg-on-a-string silhouette, not the boot shape.",
+     "Coarctation is acyanotic and shows the 3-sign with rib notching.",
+     "TAPVR produces the snowman or figure-8 silhouette."
+    ]
+   }
+  ]
+ }
+}

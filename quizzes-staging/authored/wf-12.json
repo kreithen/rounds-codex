@@ -1,0 +1,977 @@
+{
+ "wound-care": {
+  "condition": "Surgical Wound Care & Dehiscence",
+  "questions": [
+   {
+    "q": "Which statement best distinguishes wound dehiscence from evisceration?",
+    "ch": [
+     "Dehiscence means abdominal viscera protrude through the incision, while evisceration is edge separation",
+     "Dehiscence is infection of the incision, while evisceration is separation of the wound layers",
+     "Dehiscence is partial or complete separation of the layers of a surgical wound; evisceration is protrusion of abdominal viscera through it",
+     "Both terms describe superficial incisional surgical-site infection at different depths",
+     "Dehiscence occurs only in clean wounds, while evisceration occurs only in dirty wounds"
+    ],
+    "correct": 2,
+    "exp": "Dehiscence is partial or complete separation of the layers of a surgical wound; evisceration is the emergency extreme, in which abdominal viscera protrude through a fully dehisced wound.",
+    "why": [
+     "This reverses the two terms — protruding viscera define evisceration, not dehiscence.",
+     "Surgical-site infection may precipitate breakdown, but dehiscence is defined by separation of the wound layers, not by infection itself.",
+     "",
+     "Neither term is a depth category of SSI; SSI depth is classified as superficial incisional, deep incisional, or organ/space.",
+     "Contamination class raises risk, but neither term is restricted to a particular class of wound."
+    ]
+   },
+   {
+    "q": "Wound dehiscence most often occurs at which point after surgery, and why?",
+    "ch": [
+     "Postoperative day 5-8, when collagen tensile strength is still low",
+     "Within the first 12 hours, before hemostasis is complete",
+     "At 6 weeks, when remodeling reaches about 80% of original strength",
+     "On postoperative day 1, when the inflammatory phase begins",
+     "After 3 months, once the maturation phase has fully ended"
+    ],
+    "correct": 0,
+    "exp": "Dehiscence peaks around postoperative day 5-8, coinciding with the lag before collagen tensile strength builds; a wound has only about 5-10% of its original strength at 1-2 weeks.",
+    "why": [
+     "",
+     "Hemostasis is the first phase of healing and is complete long before tensile strength becomes the limiting factor.",
+     "Remodeling brings the wound toward about 80% of original strength, so risk is falling by then rather than peaking.",
+     "The inflammatory phase begins immediately, but the classic dehiscence window comes later, at day 5-8.",
+     "By 3 months the wound has regained most of its strength; risk is highest in the first postoperative week."
+    ]
+   },
+   {
+    "q": "A patient 6 days after laparotomy has a sudden gush of pink, salmon-colored fluid from the incision. What does this most likely signify?",
+    "ch": [
+     "A hematoma under the incision that should be evacuated at the bedside",
+     "Purulent drainage indicating an established organ-space surgical-site infection",
+     "A lymphatic leak that will resolve with an abdominal binder alone",
+     "Serosanguineous drainage warning of impending dehiscence, often by 1-2 days",
+     "Normal serous drainage that requires only a routine dressing change"
+    ],
+    "correct": 3,
+    "exp": "A sudden gush of serosanguineous (pink/salmon) fluid frequently precedes dehiscence by 1-2 days — 'pink drainage today, dehiscence tomorrow' is the classic pre-dehiscence warning sign.",
+    "why": [
+     "A hematoma is a collection under the incision, not a sudden gush of salmon-colored fluid, and bedside evacuation is not the response here.",
+     "Purulent drainage is thick and cloudy and points to infection; salmon-colored fluid signals impending separation.",
+     "An abdominal binder provides incisional support, but this drainage demands assessment for fascial dehiscence.",
+     "",
+     "Treating this as routine serous drainage misses the classic warning that the wound is about to separate."
+    ]
+   },
+   {
+    "q": "The nurse finds bowel protruding through a patient's abdominal incision. Which set of actions is correct?",
+    "ch": [
+     "Gently replace the viscera, close the wound edges with tape, and continue the diet as ordered",
+     "Keep the patient still and supine with knees flexed, cover the viscera with sterile saline-moistened gauze, keep NPO, and notify the surgeon",
+     "Pack the wound with dry gauze, sit the patient upright, and give oral fluids while awaiting the surgeon",
+     "Irrigate the protruding bowel with full-strength povidone-iodine and apply an abdominal binder tightly",
+     "Apply negative-pressure wound therapy directly over the exposed bowel and reassess in one hour"
+    ],
+    "correct": 1,
+    "exp": "For evisceration, keep the patient still and supine with knees flexed, cover the protruding tissue with sterile saline-moistened gauze, do NOT push organs back in, keep the patient NPO, and notify the surgeon immediately to prepare for the OR.",
+    "why": [
+     "Eviscerated organs are never pushed back in, and the patient must be kept NPO in preparation for the operating room.",
+     "",
+     "Dry gauze and an upright position are both wrong; the covering must be sterile saline-moistened and the patient kept supine with knees flexed.",
+     "Full-strength povidone-iodine is cytotoxic, and a tight binder over protruding viscera is unsafe.",
+     "Negative-pressure therapy is contraindicated over exposed vessels or organs; this is an emergency needing the surgeon."
+    ]
+   },
+   {
+    "q": "Which solution is the cleansing agent of choice for a granulating open wound bed?",
+    "ch": [
+     "Wet-to-dry gauze soaks, because nonselective debridement speeds healing",
+     "Full-strength povidone-iodine, because it sterilizes the granulation tissue",
+     "Hydrogen peroxide, because bubbling lifts slough out of the wound bed",
+     "Chlorhexidine-alcohol, because it is the preferred preoperative skin prep",
+     "Sterile normal saline, because it cleanses without harming granulation tissue"
+    ],
+    "correct": 4,
+    "exp": "Sterile normal saline irrigation is the cleansing choice for the wound bed because it is nontoxic to granulation tissue; routine antiseptics and peroxide are cytotoxic to fibroblasts.",
+    "why": [
+     "Wet-to-dry gauze is nonselective, traumatic debridement and is largely outdated versus moist wound healing.",
+     "Full-strength povidone-iodine is cytotoxic to fibroblasts and should not be used routinely on healthy granulation.",
+     "Peroxide is also cytotoxic to fibroblasts and is not an appropriate routine wound cleanser.",
+     "Chlorhexidine-alcohol is the preoperative skin antisepsis of choice for reducing surgical-site infection, not a wound bed cleanser.",
+     ""
+    ]
+   },
+   {
+    "q": "Negative-pressure wound therapy (wound VAC) is contraindicated in which situation?",
+    "ch": [
+     "A secondary-intention wound that is granulating from the base up",
+     "Over exposed vessels or organs, untreated osteomyelitis, or malignancy",
+     "A large open dehisced abdominal wound with moderate exudate",
+     "A wound with edema and drainage that needs granulation encouraged",
+     "A postoperative wound in a patient with well-controlled diabetes"
+    ],
+    "correct": 1,
+    "exp": "Negative-pressure wound therapy removes exudate, reduces edema, and promotes granulation in open dehisced or large wounds, but it is contraindicated over exposed vessels or organs, untreated osteomyelitis, or malignancy, and bleeding must be monitored.",
+    "why": [
+     "Wounds healing by secondary intention are commonly managed with negative-pressure therapy.",
+     "",
+     "A large open dehisced wound with exudate is a classic indication for negative-pressure therapy, not a contraindication.",
+     "Removing exudate, reducing edema, and promoting granulation are exactly what the device is used to do.",
+     "Diabetes is a risk factor for breakdown that should be optimized, but controlled diabetes does not prohibit the device."
+    ]
+   },
+   {
+    "q": "A contaminated abdominal wound is left open to heal from the base up with granulation. Which closure strategy does this describe?",
+    "ch": [
+     "Flap closure, which bypasses the proliferative phase entirely",
+     "Skin-only approximation with staples over an open fascia",
+     "Primary intention, used for clean low-tension wounds",
+     "Delayed primary (tertiary) intention, closed after a few days of observation",
+     "Secondary intention, in which the wound granulates from the base up"
+    ],
+    "correct": 4,
+    "exp": "Secondary intention means the wound is left open and granulates from the base up, and it is the strategy chosen for contaminated or infected wounds.",
+    "why": [
+     "A flap is a reconstructive technique, not a description of an open wound granulating from its base.",
+     "Approximating skin over open fascia does not describe healing by granulation and risks trapping infection.",
+     "Primary intention is direct approximation of a clean, low-tension wound — inappropriate for a contaminated wound.",
+     "Delayed primary (tertiary) closure means the wound is closed after a few days of observation, not left to granulate to closure.",
+     ""
+    ]
+   },
+   {
+    "q": "On dressing change the wound bed is covered with yellow slough and a patch of black eschar. What does this indicate?",
+    "ch": [
+     "Maceration of the periwound skin from excess moisture",
+     "Beefy red tissue signaling adequate perfusion of the bed",
+     "Nonviable tissue requiring debridement before the bed can heal",
+     "Healthy granulation that should simply be kept moist",
+     "Epithelialization at the wound edge that must not be disturbed"
+    ],
+    "correct": 2,
+    "exp": "Healthy granulation is beefy red; pale or dusky tissue suggests poor perfusion, and yellow slough or black eschar is nonviable tissue that needs debridement — sharp debridement suits thick eschar, enzymatic when surgery is not feasible.",
+    "why": [
+     "Maceration is soggy, whitened periwound skin from excess exudate — a different problem from nonviable tissue in the bed.",
+     "Beefy red is the appearance of healthy granulation; yellow slough and black eschar are the opposite finding.",
+     "",
+     "Healthy granulation is beefy red, not yellow and black; moist dressings alone will not clear nonviable tissue.",
+     "Epithelialization appears at the advancing edge as new surface tissue, not as slough and eschar in the bed."
+    ]
+   },
+   {
+    "q": "Which element belongs to the surgical-site infection prevention bundle you would cite on rounds?",
+    "ch": [
+     "Permissive hyperglycemia to supply the healing wound with energy",
+     "Wet-to-dry gauze dressings applied to every clean closed incision",
+     "Routine hydrogen peroxide irrigation of the closed incision daily",
+     "Chlorhexidine-alcohol skin prep with a prophylactic antibiotic within 60 minutes of incision",
+     "Postoperative hypothermia to reduce metabolic demand at the wound"
+    ],
+    "correct": 3,
+    "exp": "The prevention bundle is chlorhexidine-alcohol skin antisepsis, a prophylactic antibiotic within 60 minutes of incision, normothermia, and glycemic control; chlorhexidine-alcohol beats povidone-iodine for reducing infection in most clean-contaminated cases.",
+    "why": [
+     "Glycemic control is the bundle element; hyperglycemia impairs collagen synthesis and promotes breakdown.",
+     "Wet-to-dry gauze is outdated nonselective debridement and has no role on a clean closed incision.",
+     "Peroxide is cytotoxic to fibroblasts and is not part of any prevention bundle.",
+     "",
+     "The bundle calls for normothermia — hypothermia increases, not decreases, surgical-site infection risk."
+    ]
+   },
+   {
+    "q": "A dehisced wound has scant drainage and no erythema, warmth, fever, or spreading cellulitis. What is the appropriate antibiotic decision?",
+    "ch": [
+     "Withhold antibiotics — this is colonization, not true infection",
+     "Give a prophylactic dose now and repeat it every 60 minutes",
+     "Start oral cephalexin, because any draining wound is infected",
+     "Start vancomycin empirically to cover MRSA in all open wounds",
+     "Treat the wound culture result even if it only shows colonization"
+    ],
+    "correct": 0,
+    "exp": "Empiric antibiotics are indicated only when a true surgical-site infection is present — spreading cellulitis or systemic signs — and not for colonization; differentiating the two is basic antibiotic stewardship.",
+    "why": [
+     "",
+     "Dosing within 60 minutes refers to the timing of the preoperative prophylactic dose, not repeat dosing of a dehisced wound.",
+     "Not every draining wound is infected; treating colonization is exactly the stewardship error to avoid.",
+     "MRSA coverage is added by risk and culture direction in a true infection, not empirically for every open wound.",
+     "A culture growing organisms without clinical signs reflects colonization and does not warrant therapy."
+    ]
+   }
+  ]
+ },
+ "anaphylaxis": {
+  "condition": "Anaphylaxis",
+  "questions": [
+   {
+    "q": "What is the first-line, life-saving treatment for anaphylaxis?",
+    "ch": [
+     "Intravenous diphenhydramine given as a rapid push",
+     "Intramuscular epinephrine into the anterolateral thigh",
+     "Intravenous methylprednisolone before any other therapy",
+     "Nebulized albuterol repeated every five minutes",
+     "Subcutaneous epinephrine into the upper arm"
+    ],
+    "correct": 1,
+    "exp": "Epinephrine given intramuscularly into the anterolateral thigh (vastus lateralis) is the immediate first-line treatment; it reverses vasodilation, bronchoconstriction, and edema, and the IM thigh route gives the fastest, most reliable absorption.",
+    "why": [
+     "Antihistamines are second-line adjuncts that relieve itching and hives only; they do not treat airway compromise or shock.",
+     "",
+     "Corticosteroids have a slow onset and weak evidence for preventing biphasic reactions — never the priority.",
+     "Albuterol is an adjunct for persistent bronchospasm and does nothing for upper-airway edema or hypotension.",
+     "The intramuscular thigh route, not subcutaneous into the arm, gives the fastest and most reliable absorption."
+    ]
+   },
+   {
+    "q": "Which mechanism underlies classic anaphylaxis?",
+    "ch": [
+     "Type I IgE-mediated mast cell and basophil degranulation",
+     "Autoantibody blockade of postsynaptic receptors at the junction",
+     "Type IV delayed T-cell hypersensitivity to a contact allergen",
+     "Immune-complex deposition activating complement in vessel walls",
+     "Direct bacterial toxin release causing distributive vasodilation"
+    ],
+    "correct": 0,
+    "exp": "Anaphylaxis is a type I, IgE-mediated hypersensitivity: allergen cross-links mast cell and basophil IgE, triggering massive release of histamine, tryptase, leukotrienes, and prostaglandins.",
+    "why": [
+     "",
+     "Receptor-blocking autoantibodies cause neuromuscular disease, not mediator release from mast cells.",
+     "Delayed T-cell hypersensitivity underlies contact dermatitis, not the minutes-to-hours multisystem reaction of anaphylaxis.",
+     "Immune-complex disease is a different hypersensitivity mechanism and does not describe mast cell degranulation.",
+     "Toxin-driven distributive shock is septic physiology; anaphylaxis follows allergen cross-linking of IgE."
+    ]
+   },
+   {
+    "q": "How is the diagnosis of anaphylaxis established?",
+    "ch": [
+     "Clinically — acute onset with skin/mucosal involvement plus respiratory compromise, hypotension, or GI symptoms",
+     "By a serum tryptase level drawn before any treatment is given",
+     "By skin-prick and specific-IgE testing performed in the emergency department",
+     "By demonstrating an elevated total serum IgE on the day of the reaction",
+     "By a documented drop in blood pressure of at least 50 mmHg on two readings"
+    ],
+    "correct": 0,
+    "exp": "Anaphylaxis is a clinical diagnosis: acute onset over minutes to hours involving skin or mucosa plus respiratory compromise, hypotension, or GI symptoms — or hypotension alone after a known allergen.",
+    "why": [
+     "",
+     "Serum tryptase drawn 15 minutes to 3 hours after onset can support the diagnosis retrospectively but must never delay treatment.",
+     "Skin-prick and specific-IgE testing belong to later outpatient allergy evaluation, not the acute episode.",
+     "Total IgE is not part of the diagnostic criteria for an acute reaction.",
+     "No specific numeric blood-pressure drop defines the syndrome; the criteria are clinical patterns of organ involvement."
+    ]
+   },
+   {
+    "q": "How should a hypotensive anaphylaxis patient be positioned?",
+    "ch": [
+     "Trendelenburg with the head lowered as far as the bed allows",
+     "Sitting fully upright to maximize chest expansion",
+     "Prone with the head turned to one side",
+     "Supine with the legs raised, unless respiratory distress requires sitting",
+     "High Fowler's with the legs dependent over the bed edge"
+    ],
+    "correct": 3,
+    "exp": "Position the patient supine with the legs raised; if respiratory distress demands it, allow sitting, but avoid sudden upright posture, which risks empty-vena-cava syndrome.",
+    "why": [
+     "Head-down positioning is not what the module teaches; supine with legs raised is the recommended position.",
+     "Sudden upright posture is specifically avoided because of empty-vena-cava syndrome.",
+     "Prone positioning does not support venous return and impedes airway access and monitoring.",
+     "",
+     "Letting the legs hang dependent worsens venous return in a patient who is already hypotensive."
+    ]
+   },
+   {
+    "q": "What is the role of diphenhydramine in anaphylaxis?",
+    "ch": [
+     "It is the first-line drug and should be given before epinephrine",
+     "It reverses upper-airway edema faster than epinephrine does",
+     "It restores blood pressure by increasing systemic vascular resistance",
+     "It replaces the need for an observation period after treatment",
+     "It is a second-line adjunct that relieves cutaneous itching and hives only"
+    ],
+    "correct": 4,
+    "exp": "H1 antihistamines are second-line adjuncts that relieve cutaneous itching and hives only; they do not treat airway compromise or shock and are never a substitute for epinephrine.",
+    "why": [
+     "Epinephrine is first-line; most anaphylaxis deaths follow delayed epinephrine administration.",
+     "Antihistamines do nothing for airway edema — epinephrine is what reverses the edema.",
+     "The alpha-1 effect of epinephrine, not an antihistamine, counters vasodilation and capillary leak.",
+     "Observation for a biphasic reaction is still required no matter which adjuncts were given.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient taking a beta-blocker remains hypotensive after repeated doses of IM epinephrine. What should be given next?",
+    "ch": [
+     "Intramuscular epinephrine into the deltoid instead of the thigh",
+     "A second antihistamine dose to deepen mediator blockade",
+     "Glucagon, which bypasses beta-receptor blockade",
+     "Oral prednisone to shorten the reaction",
+     "Inhaled albuterol as the definitive rescue therapy"
+    ],
+    "correct": 2,
+    "exp": "Patients on beta-blockers may be epinephrine-refractory; glucagon bypasses beta-receptor blockade and is the drug to reach for, while watching for vomiting and protecting the airway.",
+    "why": [
+     "Changing the injection site to the arm does not overcome beta-blockade; the anterolateral thigh remains preferred.",
+     "More antihistamine will not restore perfusion; it treats itching and hives only.",
+     "",
+     "An oral corticosteroid is slow in onset and does not rescue refractory hypotension.",
+     "Albuterol is an adjunct for bronchospasm and does not address hypotension."
+    ]
+   },
+   {
+    "q": "Why is a patient who has fully improved after epinephrine still observed before discharge?",
+    "ch": [
+     "Because corticosteroids reliably prevent any later recurrence",
+     "To allow the serum tryptase to normalize before testing",
+     "To complete a mandatory 24-hour course of antihistamines",
+     "To confirm the trigger by supervised re-exposure",
+     "Because a biphasic reaction can recur hours after apparent recovery"
+    ],
+    "correct": 4,
+    "exp": "Biphasic reactions occur in up to about 20% of patients and can appear 1 to 72 hours later, typically within 8 hours, so patients are observed for at least 4 to 6 hours — longer if the reaction was severe — before discharge.",
+    "why": [
+     "Evidence that corticosteroids prevent biphasic reactions is weak, which is exactly why observation is still required.",
+     "Tryptase is drawn 15 minutes to 3 hours after onset to support the diagnosis; it does not set the observation period.",
+     "There is no mandatory 24-hour antihistamine course; antihistamines are adjuncts for itching and hives.",
+     "Deliberate re-exposure is never done acutely; trigger identification is an outpatient allergy evaluation.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with suspected anaphylaxis has a normal serum tryptase. How should this be interpreted?",
+    "ch": [
+     "It means the sample was correctly drawn 24 hours after onset",
+     "It establishes that the patient was reacting to radiocontrast media",
+     "A normal tryptase does not exclude anaphylaxis, especially food-induced",
+     "It rules out anaphylaxis, so epinephrine should be withheld",
+     "It confirms a non-IgE anaphylactoid reaction rather than anaphylaxis"
+    ],
+    "correct": 2,
+    "exp": "Serum tryptase drawn 15 minutes to 3 hours after onset can support the diagnosis retrospectively, but a normal level does not exclude anaphylaxis — particularly food-induced — and testing must never delay treatment.",
+    "why": [
+     "The correct sampling window is 15 minutes to 3 hours after onset, not 24 hours.",
+     "Tryptase does not identify the trigger; trigger identification is done later in an allergy clinic.",
+     "",
+     "Anaphylaxis is a clinical diagnosis, and epinephrine is never withheld on the basis of a laboratory value.",
+     "IgE-mediated and non-IgE anaphylactoid reactions are clinically identical and are not separated by a tryptase level."
+    ]
+   },
+   {
+    "q": "Minutes into a radiocontrast infusion a patient develops flushing, wheeze, and hypotension. Management should be:",
+    "ch": [
+     "Limited to stopping the infusion and giving an antihistamine dose",
+     "Identical to IgE-mediated anaphylaxis — stop the infusion and give IM epinephrine now",
+     "Deferred to steroid premedication before the contrast is restarted",
+     "Directed at bronchospasm alone with nebulized albuterol therapy",
+     "Withheld until IgE testing proves an allergic mechanism is present"
+    ],
+    "correct": 1,
+    "exp": "Non-IgE (anaphylactoid) reactions to agents such as contrast, opioids, and vancomycin are clinically identical to anaphylaxis and are managed the same way: stop the trigger and give IM epinephrine without pausing to debate the mechanism.",
+    "why": [
+     "Stopping the infusion is right, but an antihistamine alone leaves the airway and shock untreated.",
+     "",
+     "Premedication is a prevention question for a future study, not treatment of a reaction happening now.",
+     "Albuterol addresses bronchospasm only and does nothing for hypotension or upper-airway edema.",
+     "Epinephrine is never delayed to debate mechanism; management is identical either way."
+    ]
+   },
+   {
+    "q": "Which discharge plan best reflects the module's teaching after an episode of anaphylaxis?",
+    "ch": [
+     "A corticosteroid taper alone, on the grounds that the trigger has already been identified",
+     "Antihistamines as needed at home, with follow-up arranged only if symptoms recur",
+     "Immediate skin-prick and specific-IgE testing performed before the patient leaves the department",
+     "Two epinephrine auto-injectors with demonstrated technique, an action plan, MedicAlert, and allergist referral",
+     "One auto-injector only, with instructions to fill a second prescription sometime later"
+    ],
+    "correct": 3,
+    "exp": "Prescribe two epinephrine auto-injectors, confirm the patient or family can actually use them, provide an anaphylaxis action plan and MedicAlert, and refer to an allergist for trigger identification.",
+    "why": [
+     "Steroids are a weak adjunct and do not substitute for auto-injectors, an action plan, and referral.",
+     "Antihistamines relieve itching and hives only; the patient still needs epinephrine available and allergy follow-up.",
+     "Skin-prick and specific-IgE testing are done later in an allergy clinic, not before discharge.",
+     "",
+     "Two auto-injectors are prescribed, not one, and the ability to use them must be confirmed before discharge."
+    ]
+   }
+  ]
+ },
+ "shock": {
+  "condition": "Shock (Types & Management)",
+  "questions": [
+   {
+    "q": "Which statement best defines shock?",
+    "ch": [
+     "Failure of the lungs to oxygenate blood despite supplemental oxygen",
+     "Circulatory failure causing inadequate tissue perfusion and oxygen delivery",
+     "A serum lactate above 2 mmol/L regardless of the clinical picture",
+     "A systolic blood pressure below 90 mmHg on two consecutive readings",
+     "Any sustained heart rate above 120 beats per minute with cool skin"
+    ],
+    "correct": 1,
+    "exp": "Shock is a state of inadequate tissue perfusion and cellular oxygen delivery — circulatory failure creating an imbalance between oxygen delivery and demand that drives anaerobic metabolism, lactate production, and multi-organ dysfunction.",
+    "why": [
+     "Failure of oxygenation is respiratory failure; shock is failure of perfusion and oxygen delivery.",
+     "",
+     "Lactate is the key marker of hypoperfusion, but a number alone does not define the syndrome.",
+     "Hypotension is one sign, but compensation with tachycardia and vasoconstriction precedes it — shock can exist with a normal pressure.",
+     "Tachycardia is a compensatory response, not the definition of circulatory failure."
+    ]
+   },
+   {
+    "q": "Which list correctly names the four physiologic categories of shock?",
+    "ch": [
+     "Hemorrhagic, septic, neurogenic, and anaphylactic",
+     "Warm, cold, early, and late",
+     "Preload, afterload, contractility, and rate",
+     "Compensated, uncompensated, refractory, and irreversible",
+     "Hypovolemic, cardiogenic, distributive, and obstructive"
+    ],
+    "correct": 4,
+    "exp": "The four physiologic categories are hypovolemic (hemorrhage, fluid loss), cardiogenic (pump failure), distributive (septic, anaphylactic, neurogenic), and obstructive (tamponade, tension pneumothorax, massive PE).",
+    "why": [
+     "Septic, neurogenic, and anaphylactic are subtypes of distributive shock, and hemorrhagic is a subtype of hypovolemic.",
+     "Warm versus cold is a fast bedside distinction between distributive and low-output states, not the four-category scheme.",
+     "These are determinants of cardiac output, not categories of shock.",
+     "These are severity stages, not the physiologic categories of shock.",
+     ""
+    ]
+   },
+   {
+    "q": "Which laboratory value is the key marker of tissue hypoperfusion and is trended to judge whether resuscitation is adequate?",
+    "ch": [
+     "Serum lactate",
+     "Serum sodium",
+     "Total bilirubin",
+     "Serum amylase",
+     "Hemoglobin A1c"
+    ],
+    "correct": 0,
+    "exp": "Serum lactate is the key marker of hypoperfusion — elevated above 2 mmol/L and trending — and lactate clearance guides whether resuscitation of the shock patient is adequate.",
+    "why": [
+     "",
+     "Sodium reflects water balance and is not a marker of tissue hypoperfusion.",
+     "Bilirubin reflects hepatic and hemolytic processes, not global tissue perfusion.",
+     "Amylase points to pancreatic pathology and has no role in judging perfusion.",
+     "HbA1c reflects months of glycemic control and is irrelevant to acute resuscitation."
+    ]
+   },
+   {
+    "q": "A hypotensive patient has bounding pulses, flushed warm skin, and flash capillary refill. Which category does this suggest?",
+    "ch": [
+     "Cardiogenic shock — cold shock from a failing pump",
+     "Hypovolemic shock — cold shock from lost preload",
+     "Obstructive shock — cold shock from tamponade or tension pneumothorax",
+     "Neurogenic shock is excluded by warm skin and requires cool mottled extremities",
+     "Distributive shock — warm shock from vasodilation and low systemic vascular resistance"
+    ],
+    "correct": 4,
+    "exp": "Warm shock — bounding pulses, flash capillary refill, flushed skin — is the bedside signature of a distributive process with high cardiac output and low systemic vascular resistance.",
+    "why": [
+     "Cardiogenic shock is a cold, low-output state with clamped-down, cool, mottled skin.",
+     "Hypovolemic shock also presents cold and mottled with delayed capillary refill.",
+     "Obstructive shock is a cold, low-output state with findings such as distended neck veins.",
+     "Neurogenic shock is itself a distributive state and can present warm and flushed.",
+     ""
+    ]
+   },
+   {
+    "q": "Which vasopressor is first-line in septic and most undifferentiated shock, and to what target?",
+    "ch": [
+     "Phenylephrine, titrated to a systolic pressure above 140",
+     "Dobutamine, titrated to a heart rate under 100",
+     "Vasopressin as monotherapy, titrated upward to effect",
+     "Norepinephrine, titrated to a MAP of at least 65",
+     "Dopamine, titrated to a urine output above 2 mL/kg/hr"
+    ],
+    "correct": 3,
+    "exp": "Norepinephrine is the first-line vasopressor in septic and most distributive or undifferentiated shock — potent alpha with modest beta support — titrated to a MAP of at least 65 and given centrally when feasible.",
+    "why": [
+     "A systolic target of 140 is not a resuscitation goal; the target is a MAP of at least 65.",
+     "Dobutamine is an inotrope for poor cardiac output, and its beta-agonist vasodilation can drop blood pressure further.",
+     "Vasopressin is a fixed low-dose adjunct to norepinephrine, not a titrated first-line monotherapy.",
+     "",
+     "Urine output is a resuscitation endpoint, but it is not the target that defines first-line pressor titration."
+    ]
+   },
+   {
+    "q": "A patient is hypotensive and bradycardic after a cervical spinal cord injury. Which type of shock is this?",
+    "ch": [
+     "Neurogenic shock from loss of sympathetic tone",
+     "Septic shock from early bacteremia",
+     "Hypovolemic shock from occult hemorrhage",
+     "Cardiogenic shock from myocardial contusion",
+     "Obstructive shock from tension pneumothorax"
+    ],
+    "correct": 0,
+    "exp": "Neurogenic shock is the exception to the usual pattern: hypotension with bradycardia rather than the usual tachycardia, caused by loss of sympathetic tone from cord injury.",
+    "why": [
+     "",
+     "Early septic shock is warm and tachycardic, and bacteremia does not explain bradycardia after trauma.",
+     "Occult hemorrhage produces hypotension with compensatory tachycardia, not bradycardia.",
+     "Cardiogenic shock is a cold, low-output state and does not explain bradycardia after a cord injury.",
+     "Tension pneumothorax gives tracheal deviation and absent breath sounds with tachycardia."
+    ]
+   },
+   {
+    "q": "By the Sepsis-3 definition taught in the module, septic shock requires which of the following?",
+    "ch": [
+     "Hypotension that responds to a single crystalloid fluid bolus",
+     "Antibiotics given more than one hour after sepsis recognition",
+     "Two SIRS criteria plus a positive blood culture result",
+     "Vasopressors to keep MAP at least 65 AND lactate above 2 despite adequate fluids",
+     "A qSOFA score of 3 with any documented source of infection"
+    ],
+    "correct": 3,
+    "exp": "Sepsis-3 defines septic shock as sepsis requiring vasopressors to maintain a MAP of at least 65 AND a lactate above 2 despite adequate fluid resuscitation.",
+    "why": [
+     "Hypotension that resolves with fluid alone does not meet the vasopressor requirement in the definition.",
+     "Antibiotic timing within one hour is a quality target, not part of the definition.",
+     "SIRS criteria and a positive culture are neither necessary nor sufficient under the Sepsis-3 definition.",
+     "",
+     "qSOFA is a screening tool for sepsis risk, not the definition of septic shock."
+    ]
+   },
+   {
+    "q": "A hypotensive patient has distended neck veins with clear lung fields. What does this point to, and what does it need?",
+    "ch": [
+     "Anaphylactic shock needing intramuscular epinephrine in the thigh",
+     "Compensated shock needing only observation and serial lactate levels",
+     "Obstructive shock — likely tamponade — needing a mechanical fix such as pericardiocentesis",
+     "Hypovolemic shock needing 30 mL/kg of balanced crystalloid",
+     "Distributive shock needing norepinephrine as the sole therapy"
+    ],
+    "correct": 2,
+    "exp": "Distended neck veins with clear lungs is the classic sign of tamponade, a form of obstructive shock, and obstructive shock needs a mechanical fix — pericardiocentesis, needle or finger thoracostomy, or thrombolysis — rather than more fluid.",
+    "why": [
+     "Anaphylaxis presents with urticaria, angioedema, or wheeze after an exposure, not isolated venous distension.",
+     "This patient is hypotensive from a reversible mechanical cause; observation alone would be fatal.",
+     "",
+     "Hypovolemia collapses the IVC and flattens the neck veins; volume alone will not relieve an obstruction.",
+     "A distributive process is warm with low systemic vascular resistance and does not distend the neck veins with clear lungs."
+    ]
+   },
+   {
+    "q": "In cardiogenic shock with poor contractility and an adequate MAP, which approach fits the module's teaching?",
+    "ch": [
+     "Rely on permissive hypotension until the coronary lesion is treated",
+     "Add dobutamine for inotropy and avoid flooding the failing left ventricle",
+     "Give repeated 30 mL/kg crystalloid boluses until the lactate clears",
+     "Use vasopressin alone to raise systemic vascular resistance",
+     "Withhold all vasoactive drugs until an echocardiogram is completed"
+    ],
+    "correct": 1,
+    "exp": "Dobutamine is the inotrope for cardiogenic shock or for poor cardiac output despite an adequate MAP; fluids can worsen cardiogenic shock, so do not flood a failing left ventricle.",
+    "why": [
+     "Permissive hypotension belongs to uncontrolled hemorrhage, not to cardiogenic shock.",
+     "",
+     "Fluids help hypovolemic and distributive shock but worsen cardiogenic shock by overloading a failing ventricle.",
+     "Vasopressin is a fixed low-dose adjunct in septic shock, not a treatment for poor contractility.",
+     "Time-critical therapy is not deferred for imaging; resuscitation and diagnosis proceed together."
+    ]
+   },
+   {
+    "q": "A trauma patient is in hemorrhagic shock 90 minutes after injury. Which resuscitation strategy does the module endorse?",
+    "ch": [
+     "Large-volume crystalloid alone until blood products can be arranged",
+     "Vasopressors first to raise the MAP before any transfusion is started",
+     "Balanced 1:1:1 blood products with TXA and hemorrhage control",
+     "Active warming withheld to reduce the patient's metabolic demand",
+     "Immediate stress-dose hydrocortisone as the initial intervention"
+    ],
+    "correct": 2,
+    "exp": "Hemorrhagic shock is treated with balanced 1:1:1 transfusion plus hemorrhage control and TXA within 3 hours of trauma; blood is preferred over large-volume crystalloid, with permissive hypotension until the source is controlled.",
+    "why": [
+     "Blood is preferred over large-volume crystalloid in a bleeding patient, which also risks dilutional coagulopathy.",
+     "Pressors do not replace transfusion and hemorrhage control in a patient who is actively losing blood.",
+     "",
+     "Keeping the patient warm is explicitly part of trauma care because hypothermia worsens coagulopathy.",
+     "Stress-dose hydrocortisone is reserved for vasopressor-refractory septic shock, not initial hemorrhage management."
+    ]
+   }
+  ]
+ },
+ "acute-abdomen": {
+  "condition": "Acute Abdomen",
+  "questions": [
+   {
+    "q": "Which statement best characterizes an acute abdomen?",
+    "ch": [
+     "A clinical syndrome of rapid-onset pain with peritoneal signs — a presentation, not a diagnosis",
+     "A specific diagnosis that is established once the CT imaging returns",
+     "Any abdominal pain that has lasted longer than four to six weeks",
+     "A synonym for appendicitis in a patient with right lower quadrant pain",
+     "A benign condition managed with analgesia and outpatient follow-up"
+    ],
+    "correct": 0,
+    "exp": "Acute abdomen is a clinical syndrome of rapid-onset abdominal pain of less than 7 days with peritoneal signs that may require urgent surgical evaluation — it is a presentation, not a diagnosis.",
+    "why": [
+     "",
+     "It is a bedside syndrome that triggers evaluation; imaging identifies the cause but does not create the label.",
+     "The onset is rapid, under 7 days, rather than a chronic pain lasting several weeks.",
+     "Appendicitis is one of many causes; the syndrome spans inflammation, perforation, obstruction, ischemia, and hemorrhage.",
+     "It demands rapid triage for possible surgery, including cannot-miss killers such as ruptured AAA and mesenteric ischemia."
+    ]
+   },
+   {
+    "q": "A patient describes dull periumbilical pain that later becomes sharp and localized to the right lower quadrant. What explains this shift?",
+    "ch": [
+     "Referred pain from the diaphragm irritating the phrenic nerve",
+     "Colicky pain from obstruction of a hollow viscus resolving spontaneously",
+     "Visceral pain becoming parietal as the parietal peritoneum is irritated",
+     "Ischemic pain out of proportion to a benign abdominal examination",
+     "Hemorrhagic pain from a ruptured ectopic pregnancy tracking downward"
+    ],
+    "correct": 2,
+    "exp": "Pain is transmitted first as visceral — dull, poorly localized, midline — and shifts to parietal/somatic (sharp, localized) as the parietal peritoneum is irritated; the periumbilical-to-RLQ migration of appendicitis is the classic example.",
+    "why": [
+     "Phrenic referral produces shoulder pain, not migration from the periumbilical area to the right lower quadrant.",
+     "Colicky pain suggests obstruction of a hollow viscus, and this pain became constant and localized rather than resolving.",
+     "",
+     "Pain out of proportion to exam points to mesenteric ischemia, a different pattern from this classic migration.",
+     "A ruptured ectopic causes hemorrhage and instability rather than an orderly visceral-to-parietal migration."
+    ]
+   },
+   {
+    "q": "Which test must be obtained in every woman of childbearing age with acute abdominal pain?",
+    "ch": [
+     "A serum lipase level",
+     "An upright chest x-ray",
+     "A urinalysis with culture",
+     "An Alvarado score calculation",
+     "A urine or serum hCG"
+    ],
+    "correct": 4,
+    "exp": "Always get a pregnancy test — a urine or serum hCG — in any woman of childbearing age with acute abdominal pain, because ruptured ectopic pregnancy is a classic missed killer.",
+    "why": [
+     "Lipase belongs in the standard laboratory panel but does not detect the pregnancy that makes ruptured ectopic possible.",
+     "An upright film looks for free air under the diaphragm and says nothing about pregnancy.",
+     "Urinalysis is routinely sent, but the pregnancy test is the study that must never be missed.",
+     "The Alvarado score risk-stratifies appendicitis and does not exclude ectopic pregnancy.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with severe abdominal pain has not yet been seen by surgery. What does the module teach about giving opioid analgesia?",
+    "ch": [
+     "Give an opioid only after the CT abdomen and pelvis has been completed",
+     "Withhold opioids until the surgeon has personally examined the abdomen",
+     "Withhold opioids because analgesia increases the rate of missed diagnoses",
+     "Give only oral acetaminophen so that the peritoneal signs stay intact",
+     "Give opioid analgesia — it does not mask the exam or cause missed diagnoses"
+    ],
+    "correct": 4,
+    "exp": "Early opioid analgesia is humane and does not mask the examination or increase missed diagnoses; withholding opioids from a surgical abdomen is outdated dogma that the evidence has debunked.",
+    "why": [
+     "Pain control need not wait for imaging; humane analgesia is given while the workup proceeds.",
+     "Withholding opioids pending the surgeon's exam is exactly the outdated dogma the module rejects.",
+     "Analgesia has not been shown to increase missed diagnoses; that concern is a debunked myth.",
+     "Limiting the patient to oral acetaminophen is not needed to preserve peritoneal signs, and NPO status may apply.",
+     ""
+    ]
+   },
+   {
+    "q": "Which imaging choice fits the module's teaching for a pregnant patient with right upper quadrant pain?",
+    "ch": [
+     "CT abdomen and pelvis with contrast as the first study",
+     "Right upper quadrant ultrasound, the modality of choice in pregnancy",
+     "Upright chest x-ray to look for free air under the diaphragm",
+     "CT angiography of the mesenteric vessels without oral contrast",
+     "No imaging at all, relying on serial abdominal examinations"
+    ],
+    "correct": 1,
+    "exp": "CT abdomen/pelvis with contrast is the general workhorse, but ultrasound is first for biliary disease and is the modality of choice in pregnancy and pediatrics, minimizing fetal radiation.",
+    "why": [
+     "CT is the workhorse in general, but ultrasound or MRI is preferred in pregnancy to limit fetal radiation.",
+     "",
+     "An upright film answers the free-air question in suspected perforation, not biliary pain in pregnancy.",
+     "CT angiography is used when mesenteric ischemia is suspected, not for right upper quadrant biliary pain.",
+     "Serial exams have a role when the diagnosis is unclear, but ultrasound is safe and is the modality of choice here."
+    ]
+   },
+   {
+    "q": "An 82-year-old with atrial fibrillation has severe abdominal pain but a soft, minimally tender abdomen. What is the leading concern?",
+    "ch": [
+     "Functional abdominal pain, given the reassuring physical examination",
+     "A perforated peptic ulcer producing free air under the diaphragm",
+     "Small bowel obstruction requiring nasogastric decompression only",
+     "Mesenteric ischemia — pain out of proportion to exam until proven otherwise",
+     "Uncomplicated diverticulitis that can be treated as an outpatient"
+    ],
+    "correct": 3,
+    "exp": "Pain out of proportion to exam means mesenteric ischemia until proven otherwise; elderly plus atrial fibrillation plus acute abdomen is the buzzword combination, and the classic trap is a benign early exam with a lactate that later rises.",
+    "why": [
+     "A benign exam is exactly the trap here; elderly and immunosuppressed patients harbor catastrophic pathology.",
+     "Perforation produces a rigid, board-like abdomen with rebound, not a soft one.",
+     "Obstruction causes colicky pain with distension, and decompression alone would miss ischemic bowel.",
+     "",
+     "Diverticulitis is tender in the left lower quadrant and does not explain pain out of proportion in an Afib patient."
+    ]
+   },
+   {
+    "q": "A hypotensive, tachycardic patient with abdominal pain and a pulsatile mass arrives in the emergency department. What is the next step?",
+    "ch": [
+     "CT abdomen and pelvis with contrast before any consultation",
+     "Observation with serial abdominal examinations over six hours",
+     "Straight to the operating room or interventional suite, bypassing CT",
+     "Oral contrast administration to improve the quality of the scan",
+     "Discharge with outpatient vascular follow-up once the pain improves"
+    ],
+    "correct": 2,
+    "exp": "The unstable patient bypasses CT and goes directly to the OR or interventional suite — resuscitation and imaging are not sequential when the patient is crashing, and hypotension with a pulsatile mass suggests ruptured AAA.",
+    "why": [
+     "Scanning an unstable patient with a suspected ruptured aneurysm delays the only intervention that will save them.",
+     "Serial exams are for a stable patient with an unclear diagnosis, not for hemodynamic instability.",
+     "",
+     "Oral contrast only adds delay and is irrelevant in a crashing patient.",
+     "Hypotension with a pulsatile mass is a surgical emergency and is never an outpatient problem."
+    ]
+   },
+   {
+    "q": "Which nursing action is correct while an undiagnosed acute abdomen is being worked up?",
+    "ch": [
+     "Keep the patient NPO and never apply heat to the abdomen",
+     "Apply a heating pad to the abdomen for comfort between exams",
+     "Offer clear liquids as tolerated while awaiting the surgeon",
+     "Position the patient flat with both legs fully extended",
+     "Defer vital sign checks until the imaging results return"
+    ],
+    "correct": 0,
+    "exp": "Maintain NPO status in preparation for possible emergent surgery, never apply heat to an undiagnosed abdomen, position for comfort (often knees flexed, side-lying), and monitor vital signs and trends for shock.",
+    "why": [
+     "",
+     "Heat is never applied to an undiagnosed abdomen.",
+     "The patient is kept strictly nil-by-mouth to prepare for possible emergent surgery and reduce aspiration risk.",
+     "Comfort positioning is usually knees flexed and side-lying rather than flat with the legs extended.",
+     "Vital signs are monitored frequently for rising heart rate, falling blood pressure, and decreased urine output."
+    ]
+   },
+   {
+    "q": "A patient reports intermittent cramping pain that comes in waves, with distension and vomiting. What does the pain character suggest?",
+    "ch": [
+     "Inflammation of a solid organ such as the pancreas",
+     "Ischemia of the bowel from an arterial embolus",
+     "Hemorrhage into the peritoneal cavity from a ruptured vessel",
+     "Obstruction of a hollow viscus, which produces colicky pain",
+     "Perforation of a viscus with free air under the diaphragm"
+    ],
+    "correct": 3,
+    "exp": "Colicky pain suggests obstruction of a hollow viscus, whereas constant, worsening pain suggests inflammation or ischemia; obstruction with vomiting and distension is also the setting for nasogastric decompression.",
+    "why": [
+     "Inflammation produces constant, worsening pain rather than pain that comes in waves.",
+     "Ischemic pain is constant and classically out of proportion to the examination.",
+     "Intraperitoneal hemorrhage presents with sudden pain and hemodynamic instability, not colic.",
+     "",
+     "Perforation causes sudden severe pain with a rigid, board-like abdomen, not intermittent cramping."
+    ]
+   },
+   {
+    "q": "Using embryologic pain referral, where does a patient localize early midgut pain?",
+    "ch": [
+     "Epigastric, because that is where foregut structures refer",
+     "Periumbilical, because that is where the midgut refers",
+     "Suprapubic, because that is where hindgut structures refer",
+     "Right shoulder, because of diaphragmatic irritation",
+     "Flank and groin, because of ureteral distension"
+    ],
+    "correct": 1,
+    "exp": "Visceral afferents localize poorly to the midline by embryologic gut origin: the foregut refers to the epigastrium, the midgut to the periumbilical area, and the hindgut to the suprapubic region — which is why appendicitis starts periumbilical.",
+    "why": [
+     "The epigastrium is where foregut structures refer, not the midgut.",
+     "",
+     "Suprapubic pain reflects hindgut origin, such as the distal colon.",
+     "Shoulder pain reflects diaphragmatic irritation, not embryologic midgut referral.",
+     "Flank-to-groin pain is the ureteral pattern and is not an embryologic gut referral site."
+    ]
+   }
+  ]
+ },
+ "dka-peds": {
+  "condition": "Pediatric Fever & Sepsis Workup",
+  "questions": [
+   {
+    "q": "How is fever defined in the pediatric workup taught in this module?",
+    "ch": [
+     "A core temperature of at least 37.0°C (98.6°F)",
+     "Any axillary temperature above 37.5°C (99.5°F)",
+     "A core temperature of at least 39.5°C (103.1°F)",
+     "Any temperature rise that responds to acetaminophen",
+     "A core temperature of at least 38.0°C (100.4°F)"
+    ],
+    "correct": 4,
+    "exp": "Fever is a core temperature of at least 38.0°C (100.4°F) — a regulated rise in the hypothalamic set point rather than hyperthermia — and is most often driven by self-limited viral infection.",
+    "why": [
+     "37.0°C is a normal core temperature, not the threshold that defines fever.",
+     "Rectal measurement is the gold standard in young infants, and the threshold is a core temperature of 38.0°C.",
+     "39.5°C is a high fever, but the definition begins at 38.0°C.",
+     "Response to antipyretics does not define fever and does not distinguish serious from benign illness.",
+     ""
+    ]
+   },
+   {
+    "q": "A 3-week-old has a rectal temperature of 38.2°C and looks completely well. What is the correct approach?",
+    "ch": [
+     "Full sepsis workup and admission regardless of how well the baby appears",
+     "Urinalysis alone, since a well appearance excludes bacteremia",
+     "Viral panel only, since occult bacteremia is now rare after vaccination",
+     "Observe at home with return precautions and a follow-up call",
+     "Give weight-based acetaminophen and reassess the appearance in one hour"
+    ],
+    "correct": 0,
+    "exp": "A temperature of at least 38.0°C rectal in a neonate means a full sepsis workup — CBC, blood culture, catheter urinalysis and urine culture, and lumbar puncture with CSF studies — plus admission, no matter how well the baby looks.",
+    "why": [
+     "",
+     "Urinalysis is essential but does not replace blood culture and lumbar puncture in a neonate.",
+     "Occult pneumococcal bacteremia is rarer after PCV13, but neonates remain at highest risk of invasive bacterial infection.",
+     "Neonates are worked up aggressively regardless of appearance; home observation is unsafe at this age.",
+     "Response to antipyretics does not exclude serious infection and cannot substitute for the workup."
+    ]
+   },
+   {
+    "q": "Which is the most common serious bacterial infection in a young febrile infant?",
+    "ch": [
+     "Occult pneumococcal bacteremia",
+     "Lobar pneumonia",
+     "Septic arthritis",
+     "Urinary tract infection",
+     "Bacterial meningitis"
+    ],
+    "correct": 3,
+    "exp": "Urinary tract infection is the most common serious bacterial infection in young febrile infants — always obtain a catheter urine specimen before assuming a viral source.",
+    "why": [
+     "Occult bacteremia has become rare in the post-PCV13 and Hib vaccine era.",
+     "Pneumonia is considered when respiratory signs are present, and a chest x-ray is obtained only then.",
+     "Septic arthritis is uncommon compared with urinary tract infection in this age group.",
+     "",
+     "Meningitis is the feared diagnosis driving lumbar puncture in neonates, but it is far less common than UTI."
+    ]
+   },
+   {
+    "q": "Why is ceftriaxone avoided as empiric therapy in a febrile neonate?",
+    "ch": [
+     "It has no gram-negative activity during the newborn period",
+     "It causes biliary sludging and displaces bilirubin, risking kernicterus",
+     "It cannot cross the blood-brain barrier at any dose",
+     "It is inactivated by breast milk and is therefore ineffective",
+     "It requires trough and AUC monitoring that is impractical"
+    ],
+    "correct": 1,
+    "exp": "Ceftriaxone is avoided in neonates because it causes biliary sludging and displaces bilirubin, risking kernicterus — especially with calcium-containing fluids; cefotaxime with ampicillin and gentamicin is used instead.",
+    "why": [
+     "Ceftriaxone has broad gram-negative coverage; the problem is bilirubin displacement, not its spectrum.",
+     "",
+     "Poor CSF penetration is not the issue; ceftriaxone is used for meningitis outside the neonatal period.",
+     "Breast milk does not inactivate the drug.",
+     "Trough and AUC monitoring applies to vancomycin, not to ceftriaxone."
+    ]
+   },
+   {
+    "q": "Which antipyretic teaching point is correct for a febrile child?",
+    "ch": [
+     "Ibuprofen is safe at any age, including the first month of life",
+     "A normal temperature after medication excludes serious infection",
+     "Never give aspirin — Reye syndrome; the exception is Kawasaki disease",
+     "Antipyretics should be withheld so the fever curve stays interpretable",
+     "Aspirin is preferred because it lowers the temperature fastest"
+    ],
+    "correct": 2,
+    "exp": "Aspirin is never given to febrile children because of Reye syndrome, with Kawasaki disease as the exception; ibuprofen is used only above 6 months of age in a well-hydrated child, and antipyretics are given for comfort.",
+    "why": [
+     "Ibuprofen is used only above 6 months of age and only if the child is well hydrated.",
+     "Response to antipyretics does not reliably distinguish serious bacterial infection from benign viral illness.",
+     "",
+     "Antipyretics are given for comfort — they improve feeding and appearance — and are not withheld to watch the curve.",
+     "Aspirin is contraindicated in febrile children because of Reye syndrome."
+    ]
+   },
+   {
+    "q": "Which finding is the LATE sign in pediatric shock?",
+    "ch": [
+     "Hypotension",
+     "Tachycardia",
+     "Prolonged capillary refill",
+     "Cool, mottled extremities",
+     "Irritability or altered mentation"
+    ],
+    "correct": 0,
+    "exp": "Hypotension is a late, ominous finding in pediatric shock because children maintain blood pressure by increasing heart rate; tachycardia, prolonged capillary refill, cool extremities, and altered mentation come first.",
+    "why": [
+     "",
+     "Tachycardia is the early compensatory mechanism children use to maintain blood pressure.",
+     "Prolonged capillary refill is an early perfusion sign used to recognize compensated shock.",
+     "Cool extremities with a normal blood pressure define compensated shock, which is an early state.",
+     "Changes in mentation are early warning signs that should trigger escalation."
+    ]
+   },
+   {
+    "q": "During fluid resuscitation of a child in septic shock, what must the nurse do after EACH bolus?",
+    "ch": [
+     "Draw a repeat blood culture before continuing the resuscitation",
+     "Give a dose of antipyretic to keep the temperature normalized",
+     "Double the volume of the next bolus to speed up resuscitation",
+     "Wait 30 minutes before any further assessment is performed",
+     "Reassess for hepatomegaly, rales, or worsening work of breathing"
+    ],
+    "correct": 4,
+    "exp": "Boluses of balanced isotonic crystalloid, commonly 10–20 mL/kg, are titrated to perfusion, and the child is reassessed after EACH bolus for hepatomegaly, rales, or worsening work of breathing — stop if there are signs of fluid overload.",
+    "why": [
+     "Cultures are drawn before antibiotics, not repeated between fluid boluses.",
+     "Antipyretics are for comfort and have no role in judging the response to a fluid bolus.",
+     "Volumes are titrated to perfusion and stopped for signs of overload, never escalated automatically.",
+     "Reassessment is immediate after each bolus; a fixed delay risks missing fluid overload.",
+     ""
+    ]
+   },
+   {
+    "q": "Which framework does the module cite for defining pediatric sepsis?",
+    "ch": [
+     "The Alvarado score applied to the febrile child",
+     "The Glasgow Coma Scale threshold for organ dysfunction",
+     "A qSOFA score of at least 2, validated in children",
+     "The Phoenix Sepsis Score (2024), with a score of at least 2 defining sepsis",
+     "SIRS criteria, which remain the standard in children"
+    ],
+    "correct": 3,
+    "exp": "The 2024 Phoenix Sepsis criteria replaced SIRS-based definitions, defining pediatric sepsis by measured respiratory, cardiovascular, coagulation, and neurologic organ dysfunction points, with a score of at least 2 defining sepsis.",
+    "why": [
+     "The Alvarado score risk-stratifies appendicitis, not sepsis.",
+     "Neurologic dysfunction contributes points, but the Glasgow scale alone is not the sepsis definition.",
+     "qSOFA is an adult screening tool and is not the pediatric criterion cited here.",
+     "",
+     "The module explicitly describes the shift away from SIRS-based definitions."
+    ]
+   },
+   {
+    "q": "A well-appearing 40-day-old has a fever with no source. Which approach does the module endorse?",
+    "ch": [
+     "Automatic lumbar puncture and admission for every infant of this age",
+     "Apply a validated risk tool using procalcitonin, CRP, ANC, and urinalysis",
+     "Discharge without any testing, because the infant appears well",
+     "Start empiric acyclovir and vancomycin before any results return",
+     "Repeat the temperature in 24 hours and test only if fever recurs"
+    ],
+    "correct": 1,
+    "exp": "For infants 29–60 days, validated risk tools such as PECARN and Step-by-Step combine procalcitonin, CRP, absolute neutrophil count, and urinalysis to decide safely about lumbar puncture and admission.",
+    "why": [
+     "Automatic lumbar puncture is the neonatal (0–28 day) approach; validated tools can safely defer it at this age.",
+     "",
+     "A well appearance alone does not clear a febrile infant of this age; urinalysis and inflammatory markers are still needed.",
+     "Acyclovir is for ill-appearing neonates with seizures, vesicles, or CSF pleocytosis, and vancomycin is added for MRSA or resistant pneumococcal concern.",
+     "Delaying evaluation for 24 hours risks missing a urinary tract infection or bacteremia."
+    ]
+   },
+   {
+    "q": "A febrile toddler has a rapidly spreading non-blanching petechial rash. What is the priority?",
+    "ch": [
+     "Give an antipyretic and reassess the rash in one hour",
+     "Order a viral panel and await the results before treating",
+     "Treat as meningococcemia — do not delay antibiotics",
+     "Apply a topical steroid and arrange outpatient follow-up",
+     "Obtain a dermatology consult before starting any therapy"
+    ],
+    "correct": 2,
+    "exp": "A non-blanching petechial or purpuric rash with fever means meningococcemia until proven otherwise, and antibiotics must not be delayed — they are given within one hour of sepsis recognition.",
+    "why": [
+     "Response to antipyretics does not exclude serious infection and wastes the critical first hour.",
+     "Viral testing may be sent, but antibiotics cannot wait for the results.",
+     "",
+     "A petechial rash with fever is not a topical dermatologic problem; it signals invasive infection.",
+     "Waiting for a consult delays antibiotics in a potentially fatal invasive infection."
+    ]
+   }
+  ]
+ }
+}

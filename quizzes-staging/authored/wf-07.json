@@ -1,0 +1,977 @@
+{
+ "influenza": {
+  "condition": "Influenza",
+  "questions": [
+   {
+    "q": "Influenza A is subtyped by two surface glycoproteins. Which pair are they?",
+    "ch": [
+     "Hemagglutinin and the TMPRSS2 priming protease of the host cell",
+     "Hemagglutinin (H) and neuraminidase (N)",
+     "Neuraminidase and a cap-dependent endonuclease encoded by the virus",
+     "Matrix protein and a reverse transcriptase carried in the virion",
+     "Spike protein and the ACE2 receptor on respiratory epithelium"
+    ],
+    "correct": 1,
+    "exp": "Influenza is an enveloped RNA orthomyxovirus with types A, B and C. Type A drives pandemics and is subtyped by its surface glycoproteins hemagglutinin (H) and neuraminidase (N) — for example H1N1 and H3N2.",
+    "why": [
+     "TMPRSS2 primes coronavirus spike protein; it is not an influenza surface glycoprotein.",
+     "",
+     "Cap-dependent endonuclease is the viral enzyme targeted by baloxavir, not a surface glycoprotein used for subtyping.",
+     "Reverse transcriptase is a retroviral enzyme; influenza is an enveloped RNA orthomyxovirus without one.",
+     "Spike protein and ACE2 belong to SARS-CoV-2 entry, not to influenza subtyping."
+    ]
+   },
+   {
+    "q": "Minor point mutations in the influenza surface antigens that cause annual epidemics and force yearly vaccine reformulation are called what?",
+    "ch": [
+     "Latency in respiratory epithelium with periodic reactivation each winter",
+     "Recombination of the viral genome with host bacterial DNA in the airway",
+     "Loss of the neuraminidase gene under antiviral selection pressure",
+     "Antigenic drift",
+     "Antigenic shift with reassortment in a mixing host such as swine or birds"
+    ],
+    "correct": 3,
+    "exp": "Antigenic drift is the accumulation of minor point mutations; it causes the annual epidemics and is why the vaccine is reformulated every year. Antigenic shift — reassortment — is the separate mechanism that causes pandemics.",
+    "why": [
+     "Influenza does not establish latency with reactivation; seasonal epidemics come from drift in circulating strains.",
+     "The virus does not recombine with bacterial DNA; drift is point mutation within the viral genome.",
+     "Losing neuraminidase is not the mechanism of seasonal change; neuraminidase is a subtyping glycoprotein and an antiviral target.",
+     "",
+     "Antigenic shift is reassortment in a mixing host and produces pandemics, not the annual epidemic drift."
+    ]
+   },
+   {
+    "q": "Influenza has a notably short incubation. How long is it?",
+    "ch": [
+     "6 to 12 hours after exposure",
+     "5 to 7 days after exposure",
+     "10 to 14 days after exposure",
+     "2 to 3 weeks after exposure",
+     "1 to 4 days after exposure"
+    ],
+    "correct": 4,
+    "exp": "Incubation is short — 1 to 4 days. Patients are contagious from roughly 1 day before symptom onset through about 5 to 7 days after onset, and longer in children and the immunocompromised.",
+    "why": [
+     "6 to 12 hours is shorter than the influenza incubation, which runs 1 to 4 days.",
+     "5 to 7 days after onset is the contagious window, not the incubation period.",
+     "10 to 14 days is far longer than the short influenza incubation.",
+     "Two to three weeks does not fit an illness with abrupt onset days after exposure.",
+     ""
+    ]
+   },
+   {
+    "q": "During peak flu season a patient has abrupt high fever, myalgias and dry cough. The rapid influenza diagnostic test is negative. What is the best next step?",
+    "ch": [
+     "Withhold antivirals until a chest X-ray demonstrates bilateral interstitial infiltrates",
+     "Conclude influenza is excluded, discontinue droplet precautions and discharge the patient",
+     "Treat empirically and confirm with RT-PCR, because a negative rapid antigen test does not rule out flu",
+     "Start empiric antibiotics for community-acquired pneumonia before any further testing is done",
+     "Repeat the rapid antigen test every day until the result finally turns positive"
+    ],
+    "correct": 2,
+    "exp": "Rapid influenza diagnostic tests are fast but less sensitive, so a negative rapid antigen test does not rule out flu when clinical suspicion is high. Treat empirically and confirm with RT-PCR, the gold standard.",
+    "why": [
+     "Antivirals work best early and should not wait on imaging; a chest X-ray is for suspected pneumonia.",
+     "A negative rapid test has poor sensitivity and cannot exclude influenza; droplet precautions should continue.",
+     "",
+     "Antibiotics do not treat the virus and are reserved for suspected secondary bacterial pneumonia.",
+     "Serial rapid antigen testing does not fix the sensitivity problem; molecular testing is the confirmatory test."
+    ]
+   },
+   {
+    "q": "Which patient should NOT be given inhaled zanamivir?",
+    "ch": [
+     "A 30-year-old healthy adult with 24 hours of fever and dry cough",
+     "A 20-year-old with uncomplicated flu who cannot tolerate the GI upset of oseltamivir",
+     "A 14-year-old with uncomplicated influenza and no chronic medical illness",
+     "A 62-year-old with COPD, because inhaled zanamivir can cause bronchospasm",
+     "A 45-year-old with well-controlled hypertension and mild influenza symptoms"
+    ],
+    "correct": 3,
+    "exp": "Zanamivir is inhaled and is contraindicated in asthma and COPD because it can cause bronchospasm; it is also unsuitable for severe or hospitalized patients who cannot use an inhaler.",
+    "why": [
+     "A healthy adult early in uncomplicated influenza is an appropriate candidate for zanamivir.",
+     "Intolerance of oseltamivir's GI upset is a reason to consider an alternative such as zanamivir.",
+     "Zanamivir is an option for uncomplicated flu in patients 7 years and older, so a 14-year-old qualifies.",
+     "",
+     "Well-controlled hypertension is not a contraindication to inhaled zanamivir; chronic airway disease is."
+    ]
+   },
+   {
+    "q": "An 8-year-old with influenza has fever and myalgia. Which antipyretic instruction does the module emphasize?",
+    "ch": [
+     "Antipyretics should be withheld so that fever can help fight the viral infection",
+     "No antipyretic is needed because oseltamivir itself controls the fever adequately",
+     "Avoid aspirin in children and teens because of the risk of Reye syndrome",
+     "Aspirin is preferred in children because it treats both the fever and the myalgia",
+     "Ibuprofen is contraindicated in influenza at any age and must never be given"
+    ],
+    "correct": 2,
+    "exp": "Acetaminophen or NSAIDs plus supportive care are used for fever and myalgia, but aspirin must be avoided in children and teenagers because of the risk of Reye syndrome.",
+    "why": [
+     "Antipyretics are given as ordered for fever and myalgia; withholding them is not the teaching.",
+     "Oseltamivir shortens illness but supportive antipyretics are still part of symptom control.",
+     "",
+     "Aspirin is exactly what must be avoided in this age group because of Reye syndrome.",
+     "NSAIDs are listed for symptom control; it is aspirin in children and teens that is prohibited."
+    ]
+   },
+   {
+    "q": "A patient with influenza improves for two days, then develops recurrent high fever and a productive cough with new lobar consolidation on chest X-ray. What has most likely happened?",
+    "ch": [
+     "Rhabdomyolysis from influenza myositis presenting as recurrent high fever",
+     "Secondary bacterial pneumonia, classically S. pneumoniae or S. aureus including MRSA",
+     "Antigenic drift occurring inside the patient and producing a second viral strain",
+     "Oseltamivir treatment failure that requires an immediate switch to inhaled zanamivir",
+     "Reye syndrome caused by the acetaminophen that was given for the fever"
+    ],
+    "correct": 1,
+    "exp": "This is the classic biphasic course: initial improvement then re-worsening fever with a new consolidation points to secondary bacterial pneumonia — S. pneumoniae, S. aureus including MRSA, or H. influenzae — because the virus destroys respiratory epithelium and impairs mucociliary clearance.",
+    "why": [
+     "Rhabdomyolysis presents with severe muscle pain, elevated CK and dark urine, not a new lobar consolidation.",
+     "",
+     "Antigenic drift is a population-level mechanism behind annual epidemics, not an in-host cause of biphasic worsening.",
+     "Biphasic worsening with lobar consolidation signals bacterial superinfection, not a need to swap neuraminidase inhibitors.",
+     "Reye syndrome is associated with aspirin in children, not with acetaminophen, and does not cause lobar consolidation."
+    ]
+   },
+   {
+    "q": "A pregnant patient is hospitalized on day 4 of influenza symptoms. Should antiviral therapy be started?",
+    "ch": [
+     "Only if a rapid antigen test performed on the day of admission is positive",
+     "Only after a chest X-ray confirms bilateral interstitial infiltrates of viral pneumonia",
+     "No — antivirals have no value after 48 hours and should be withheld at this point",
+     "No — neuraminidase inhibitors are contraindicated throughout pregnancy in all trimesters",
+     "Yes — hospitalized, severe or high-risk patients are treated with antivirals even beyond 48 hours"
+    ],
+    "correct": 4,
+    "exp": "Oseltamivir is most effective within 48 hours, but IDSA/CDC guidance is to treat hospitalized, severe or progressive, and high-risk patients — including pregnancy, age extremes, chronic lung or heart disease, and immunocompromise — with antivirals at any point in the illness.",
+    "why": [
+     "A negative rapid antigen test does not rule out flu, so treatment should not hinge on that result.",
+     "Antivirals should not be delayed for imaging; a chest X-ray is obtained when pneumonia is suspected.",
+     "The 48-hour window describes maximum benefit, not a cutoff; hospitalized and high-risk patients are still treated.",
+     "Pregnancy is a high-risk feature that argues for antiviral treatment rather than against it.",
+     ""
+    ]
+   },
+   {
+    "q": "A previously healthy adult with influenza deteriorates rapidly with hypoxia and cavitary, necrotizing infiltrates on imaging. Which organism should empiric coverage target?",
+    "ch": [
+     "Staphylococcus aureus, including MRSA",
+     "H. influenzae alone, treated with ceftriaxone monotherapy",
+     "Influenza B virus that has become resistant to neuraminidase inhibitors",
+     "Salmonella species seeding the lung from the bloodstream",
+     "Pseudomonas aeruginosa acquired from the ventilator circuit"
+    ],
+    "correct": 0,
+    "exp": "Rapid deterioration in a flu patient with cavitary or necrotizing infiltrates should raise suspicion for post-influenza Staphylococcus aureus pneumonia, including MRSA, and empiric coverage should be broadened accordingly.",
+    "why": [
+     "",
+     "H. influenzae can complicate flu but does not account for necrotizing cavitary disease, and MRSA coverage would be missed.",
+     "Antiviral resistance would not produce cavitary necrotizing infiltrates; this pattern is bacterial superinfection.",
+     "Salmonella is not among the post-influenza pneumonia organisms taught here.",
+     "Pseudomonas is not the classic post-influenza necrotizing pathogen in a previously healthy adult."
+    ]
+   },
+   {
+    "q": "Which statement about influenza vaccination matches current ACIP guidance as taught here?",
+    "ch": [
+     "Egg allergy is no longer a barrier, and the injectable vaccine is inactivated so it cannot cause influenza",
+     "Annual vaccination is recommended only for adults aged 65 and older",
+     "Vaccination should be delayed until local influenza activity has been confirmed",
+     "Standard-dose vaccine is preferred over high-dose or adjuvanted formulations in adults 65 and older",
+     "The injectable vaccine contains live virus and can cause a mild case of influenza"
+    ],
+    "correct": 0,
+    "exp": "The inactivated or recombinant vaccine is recommended annually for everyone 6 months and older; it is not a live virus and cannot cause the flu, and egg allergy is no longer a barrier under current ACIP guidance.",
+    "why": [
+     "",
+     "Annual vaccination is for everyone 6 months and older, not just adults 65 and older.",
+     "Vaccine is best given in the fall, before activity rises, rather than after an outbreak is confirmed.",
+     "High-dose or adjuvanted formulations are the preferred option for adults 65 and older.",
+     "The injectable vaccine is inactivated; soreness or low-grade fever is an immune response, not infection."
+    ]
+   }
+  ]
+ },
+ "covid": {
+  "condition": "COVID-19",
+  "questions": [
+   {
+    "q": "How does SARS-CoV-2 enter host cells?",
+    "ch": [
+     "Through the CD4 receptor with CCR5 acting as a coreceptor",
+     "Through the ACE2 receptor, primed by the host protease TMPRSS2",
+     "By binding sialic acid residues that are then cleaved by neuraminidase",
+     "Through the ACE2 receptor, primed by viral neuraminidase activity",
+     "Through Toll-like receptor 4 expressed on alveolar macrophages"
+    ],
+    "correct": 1,
+    "exp": "SARS-CoV-2 is an enveloped single-stranded RNA betacoronavirus that enters cells via the ACE2 receptor primed by TMPRSS2, with the respiratory epithelium as its main target.",
+    "why": [
+     "CD4 and CCR5 are the entry receptors for HIV, not for SARS-CoV-2.",
+     "",
+     "Sialic acid binding with neuraminidase cleavage describes influenza, not a betacoronavirus.",
+     "Entry is at ACE2, but the priming protease is host TMPRSS2; the virus has no neuraminidase.",
+     "Toll-like receptor 4 participates in innate immune signaling and is not the viral entry receptor."
+    ]
+   },
+   {
+    "q": "COVID-19 is described as a biphasic illness. Which pairing correctly matches the two phases?",
+    "ch": [
+     "A prodromal allergic phase followed by fibrotic lung remodeling within 48 hours",
+     "An early inflammatory phase followed by a late phase of viral replication",
+     "An early bacterial superinfection followed by a late viral replication phase",
+     "Two identical waves of viral replication separated by a latent period of weeks",
+     "An early viral replication phase over days 1 to 7, followed in some patients by a host inflammatory and immunothrombotic phase"
+    ],
+    "correct": 4,
+    "exp": "Disease is biphasic: an early viral replication phase over days 1 to 7, then in some patients a host inflammatory and immunothrombotic phase that drives ARDS, cytokine surge and hypercoagulability. Timing dictates therapy — antivirals early, immunomodulation later.",
+    "why": [
+     "There is no allergic prodrome, and fibrotic remodeling does not occur within 48 hours.",
+     "The order is reversed: viral replication comes first and the inflammatory phase follows.",
+     "Bacterial superinfection is a complication, not the first phase of the biphasic model.",
+     "The two phases are different in mechanism, not identical waves of replication.",
+     ""
+    ]
+   },
+   {
+    "q": "Which findings define severe COVID-19 in the severity classification taught here?",
+    "ch": [
+     "Any fever above 38 degrees C together with a positive antigen test",
+     "Anosmia and ageusia persisting for more than five days after onset",
+     "Respiratory failure, shock, or multi-organ dysfunction requiring the ICU",
+     "Lower respiratory tract disease with SpO2 at or above 94% on room air",
+     "SpO2 below 94%, respiratory rate above 30, or infiltrates involving more than 50% of the lung"
+    ],
+    "correct": 4,
+    "exp": "Severe disease is defined by SpO2 below 94%, respiratory rate above 30, or infiltrates covering more than 50% of the lung — one rung below critical disease.",
+    "why": [
+     "Fever with a positive test does not by itself define severity; oxygenation and lung involvement do.",
+     "Anosmia and ageusia are symptoms of infection and are not part of the severity classification.",
+     "Respiratory failure, shock and multi-organ dysfunction define critical, not severe, disease.",
+     "Lower-tract disease with SpO2 at or above 94% is moderate disease.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with COVID-19 has an SpO2 of 97% on room air and no dyspnea. What does the module say about dexamethasone?",
+    "ch": [
+     "Give a half dose of dexamethasone because the inflammatory phase is already beginning on day one",
+     "Give dexamethasone together with tocilizumab to prevent any progression to hypoxemia",
+     "Give dexamethasone only if the D-dimer is elevated, regardless of the oxygen requirement",
+     "Do not give it — the benefit is limited to patients requiring supplemental oxygen and it may harm those without an oxygen requirement",
+     "Give it now, since dexamethasone reduces mortality in every patient with COVID-19 regardless of oxygen"
+    ],
+    "correct": 3,
+    "exp": "Dexamethasone reduces mortality in patients requiring supplemental oxygen or ventilation, but it should not be given when there is no oxygen requirement, where it may cause harm. Corticosteroid benefit is oxygen-dependent.",
+    "why": [
+     "Steroids are not indicated at any dose in a patient with no oxygen requirement.",
+     "Baricitinib or tocilizumab is added to steroids in rapidly progressing severe or critical disease, not in mild disease.",
+     "The D-dimer guides thinking about immunothrombosis and pulmonary embolism, not the decision to start steroids.",
+     "",
+     "The mortality benefit is oxygen-requirement dependent, not universal across all patients."
+    ]
+   },
+   {
+    "q": "A high-risk outpatient tests positive on day 2 of symptoms. Which statement about nirmatrelvir-ritonavir (Paxlovid) applies?",
+    "ch": [
+     "It is an IV infusion reserved for hospitalized patients who already require oxygen",
+     "Start it within 5 days of symptom onset and run a CYP3A4 drug-interaction check because of ritonavir",
+     "Withhold it until a CT scan demonstrates bilateral peripheral ground-glass opacities",
+     "It replaces dexamethasone once the patient begins to require supplemental oxygen",
+     "It can be started at any point in the illness and has no meaningful drug interactions"
+    ],
+    "correct": 1,
+    "exp": "Nirmatrelvir-ritonavir is the first-line oral antiviral for high-risk outpatients and must be started within 5 days of symptom onset. Ritonavir causes major CYP3A4 interactions with statins, DOACs and immunosuppressants, so always run the interaction check and adjust for renal function.",
+    "why": [
+     "Remdesivir is the IV antiviral for hospitalized patients; Paxlovid is oral and for outpatients.",
+     "",
+     "Imaging is not required in mild disease, and waiting for it would waste the 5-day antiviral window.",
+     "Antivirals and steroids target different phases; Paxlovid does not substitute for dexamethasone.",
+     "Paxlovid works only early, and ritonavir is a drug-interaction minefield via CYP3A4."
+    ]
+   },
+   {
+    "q": "A hospitalized COVID-19 patient appears comfortable and denies dyspnea, but pulse oximetry reads 86%. What should the nurse do?",
+    "ch": [
+     "Ask the patient to hold their breath and then repeat the measurement in ten minutes",
+     "Document the reading as artifact because the patient is comfortable, and recheck it in the morning",
+     "Report it immediately as silent hypoxemia and escalate oxygen therapy",
+     "Withhold oxygen in order to preserve the patient's hypoxic respiratory drive",
+     "Encourage ambulation in the hallway to see whether the saturation improves on its own"
+    ],
+    "correct": 2,
+    "exp": "Silent hypoxemia — dangerously low SpO2 with minimal distress — is a hallmark of COVID-19 and must be reported immediately, with oxygen titrated to a target SpO2 of 92 to 96%.",
+    "why": [
+     "Delaying ten minutes for a repeat measurement postpones treatment of profound desaturation.",
+     "A comfortable appearance is exactly what makes silent hypoxemia dangerous; the reading must not be dismissed.",
+     "",
+     "Oxygen is not withheld here; the target SpO2 is 92 to 96% and hypoxemia requires escalation.",
+     "Exertional desaturation testing is a screening tool, not a response to a saturation already at 86%."
+    ]
+   },
+   {
+    "q": "What is the classic chest imaging signature of COVID-19 pneumonia?",
+    "ch": [
+     "Bilateral peripheral ground-glass opacities",
+     "Diffuse Kerley B lines with cardiomegaly on the frontal film",
+     "Unilateral lobar consolidation with prominent air bronchograms",
+     "Apical cavitary lesions with surrounding fibrosis and volume loss",
+     "A large unilateral pleural effusion causing mediastinal shift"
+    ],
+    "correct": 0,
+    "exp": "CXR or CT in COVID-19 classically shows bilateral peripheral ground-glass opacities; imaging is not required in mild disease.",
+    "why": [
+     "",
+     "Kerley B lines with cardiomegaly suggest cardiogenic pulmonary edema.",
+     "Unilateral lobar consolidation suggests a bacterial pneumonia rather than COVID-19.",
+     "Apical cavitary disease with fibrosis points toward tuberculosis, not COVID-19.",
+     "A large effusion with mediastinal shift is not the described COVID-19 pattern."
+    ]
+   },
+   {
+    "q": "A hospitalized COVID-19 patient on oxygen abruptly develops chest pain and worsening dyspnea with a rising D-dimer. What should be considered first?",
+    "ch": [
+     "Pulmonary embolism from COVID-19 immunothrombosis",
+     "Paxlovid rebound of symptoms after finishing treatment",
+     "Dexamethasone-induced hyperglycemia causing air hunger",
+     "Anosmia and ageusia signaling infection with a new variant",
+     "Long COVID presenting acutely during the hospital stay"
+    ],
+    "correct": 0,
+    "exp": "COVID-19 is a prothrombotic illness driven by endothelial injury and immunothrombosis. Chest pain, syncope or acute dyspnea with a rising D-dimer should prompt evaluation for pulmonary embolism, and hospitalized patients receive VTE prophylaxis for this reason.",
+    "why": [
+     "",
+     "Paxlovid rebound occurs days after completing treatment and is usually mild, not an acute chest pain syndrome.",
+     "Hyperglycemia is a steroid adverse effect to monitor, but it does not explain pleuritic chest pain with a rising D-dimer.",
+     "Anosmia and ageusia are early symptoms and do not account for acute deterioration on oxygen.",
+     "Post-acute sequelae are a follow-up concern weeks later, not an explanation for sudden inpatient decline."
+    ]
+   },
+   {
+    "q": "A patient with severe COVID-19 is on high-flow nasal cannula. Which combination reflects the oxygenation strategy taught here?",
+    "ch": [
+     "Target an SpO2 of 88 to 90% and avoid proning because it displaces lines",
+     "Target an SpO2 of 92 to 96% but avoid steroids while on high-flow oxygen",
+     "Wean oxygen off entirely and rely on dexamethasone alone to treat the hypoxemia",
+     "Target an SpO2 of 92 to 96%, use awake prone positioning, and escalate to high-flow before intubation",
+     "Target an SpO2 of 100% and intubate as soon as high-flow oxygen is begun"
+    ],
+    "correct": 3,
+    "exp": "Oxygen is titrated to a target SpO2 of 92 to 96% at the lowest effective FiO2, with awake prone positioning and escalation to high-flow nasal cannula as evidence-based strategies before intubation.",
+    "why": [
+     "The target range taught here is 92 to 96%, and awake proning is actively encouraged with monitoring of tolerance.",
+     "The target is right, but dexamethasone is exactly what a patient on supplemental oxygen should receive.",
+     "Weaning oxygen off in a hypoxemic patient is unsafe; steroids do not substitute for oxygen.",
+     "",
+     "A target of 100% oversupplies oxygen, and escalation to high-flow precedes intubation rather than following it immediately."
+    ]
+   },
+   {
+    "q": "Which monitoring priority does the module attach specifically to a COVID-19 patient started on dexamethasone?",
+    "ch": [
+     "Watch for tendon rupture and QT prolongation on continuous telemetry",
+     "Check the serum potassium every hour for the first 24 hours of therapy",
+     "Monitor blood glucose and watch for signs of secondary infection",
+     "Check liver function tests every 6 hours for the entire admission",
+     "Watch for orange discoloration of the urine and other body secretions"
+    ],
+    "correct": 2,
+    "exp": "Dexamethasone causes hyperglycemia and predisposes to secondary infection, so nursing care includes monitoring blood glucose and watching for secondary infection as well as for VTE.",
+    "why": [
+     "Tendon rupture and QT prolongation are fluoroquinolone warnings, not corticosteroid monitoring.",
+     "Hourly potassium checks are not part of the dexamethasone monitoring described here.",
+     "",
+     "LFT and renal monitoring belong with remdesivir; they are not the dexamethasone-specific priority.",
+     "Orange secretions are a rifampin effect and have nothing to do with dexamethasone."
+    ]
+   }
+  ]
+ },
+ "osteomyelitis": {
+  "condition": "Osteomyelitis",
+  "questions": [
+   {
+    "q": "Which organism is the most common cause of osteomyelitis overall?",
+    "ch": [
+     "Salmonella species, the classic sickle cell association",
+     "Pseudomonas aeruginosa from a plantar puncture wound",
+     "Kingella kingae, seen mainly in very young children",
+     "Staphylococcus aureus, including MRSA",
+     "Escherichia coli seeding bone from a urinary source"
+    ],
+    "correct": 3,
+    "exp": "Osteomyelitis is an infection of bone and marrow most often caused by Staphylococcus aureus, including MRSA, producing inflammatory bone destruction with sequestrum and involucrum formation.",
+    "why": [
+     "Salmonella is the classic board association with sickle cell disease, but S. aureus remains the most common cause overall.",
+     "Pseudomonas is associated with IV drug use and puncture wounds through shoes, not with osteomyelitis in general.",
+     "Kingella is a recognized pathogen in young children but is not the leading cause overall.",
+     "",
+     "Gram-negative rods can cause osteomyelitis but are far less common than S. aureus."
+    ]
+   },
+   {
+    "q": "What is the gold-standard confirmatory test for osteomyelitis?",
+    "ch": [
+     "Plain radiographs of the affected bone in two orthogonal views",
+     "Bone biopsy with culture and histopathology, obtained before antibiotics when safe",
+     "Elevated ESR and CRP together with a peripheral leukocytosis",
+     "Blood cultures drawn from two separate peripheral sites",
+     "A tagged white blood cell nuclear scan of the affected region"
+    ],
+    "correct": 1,
+    "exp": "Bone biopsy with culture and histopathology is the gold standard because it guides targeted antibiotics; obtain it before starting antibiotics whenever it is clinically safe to wait.",
+    "why": [
+     "Plain films lag 10 to 14 days behind the disease and cannot serve as the confirmatory test.",
+     "",
+     "ESR and CRP are supportive inflammatory markers and are useful for trending response, not for confirming the diagnosis.",
+     "Blood cultures are often positive in hematogenous disease but do not replace bone culture as the gold standard.",
+     "Nuclear studies are a fallback when MRI is contraindicated, such as with hardware in place."
+    ]
+   },
+   {
+    "q": "In chronic osteomyelitis, what do the terms sequestrum and involucrum describe?",
+    "ch": [
+     "Sequestrum is the biofilm layer on hardware and involucrum is the implant itself",
+     "Sequestrum is dead necrotic bone and involucrum is the surrounding new reactive bone",
+     "Sequestrum is new reactive bone and involucrum is the dead necrotic bone",
+     "Both terms describe the marrow edema seen on MRI in early disease",
+     "Sequestrum is the draining sinus tract and involucrum is the overlying ulcer"
+    ],
+    "correct": 1,
+    "exp": "Sequestrum is dead necrotic bone and involucrum is the new reactive bone formed around it — the hallmarks of chronic osteomyelitis, and the reason antibiotics alone rarely cure it.",
+    "why": [
+     "Biofilm on hardware is a separate concept from the sequestrum and involucrum of chronic bone infection.",
+     "",
+     "The two definitions are swapped: involucrum is the new reactive bone, sequestrum is the dead bone.",
+     "Marrow edema is an early MRI finding, not what either of these terms means.",
+     "A draining sinus tract suggests chronic disease but is not what sequestrum denotes."
+    ]
+   },
+   {
+    "q": "A patient has four days of focal bone pain and fever, and plain films are normal. What does the module teach?",
+    "ch": [
+     "A nuclear bone scan is preferred over MRI in every patient with normal plain films",
+     "Start antibiotics and defer all imaging until the CRP has normalized",
+     "Normal plain films at four days effectively exclude osteomyelitis",
+     "Repeating the plain films in 24 hours will reveal lytic change if infection is present",
+     "Plain films lag 10 to 14 days and need 30 to 50% bone loss to change, so obtain MRI"
+    ],
+    "correct": 4,
+    "exp": "Plain films lag 10 to 14 days behind the disease and are normal early because roughly 30 to 50% bone loss is needed before changes appear. MRI is the most sensitive and specific test for early disease and marrow edema.",
+    "why": [
+     "Nuclear studies are reserved for when MRI is contraindicated, such as with hardware, not used routinely first.",
+     "Deferring imaging and giving antibiotics first risks sterilizing bone cultures and delays diagnosis.",
+     "Early plain films are expected to be normal and therefore cannot exclude the diagnosis.",
+     "Waiting 24 hours does not close a 10 to 14 day imaging lag.",
+     ""
+    ]
+   },
+   {
+    "q": "A child with sickle cell disease develops osteomyelitis. Which organism is the classic association?",
+    "ch": [
+     "Escherichia coli from an ascending urinary infection",
+     "Group B Streptococcus from perinatal transmission",
+     "Salmonella",
+     "Pseudomonas aeruginosa from a puncture wound through a shoe",
+     "Kingella kingae from oropharyngeal colonization"
+    ],
+    "correct": 2,
+    "exp": "Sickle cell disease plus osteomyelitis is the classic board association with Salmonella, although Staphylococcus aureus is still a common cause in these patients.",
+    "why": [
+     "Gram-negative urinary organisms are not the classic sickle cell association.",
+     "Group B Streptococcus is a neonatal pathogen and is not the sickle cell association taught here.",
+     "",
+     "Pseudomonas is the association with IV drug use and plantar puncture wounds through shoes.",
+     "Kingella is the organism to think of in young children generally, not specifically in sickle cell disease."
+    ]
+   },
+   {
+    "q": "Which bedside findings substantially raise the probability of osteomyelitis under a diabetic foot ulcer?",
+    "ch": [
+     "Absence of fever together with a normal white blood cell count",
+     "A palpable dorsalis pedis pulse with brisk capillary refill",
+     "A positive probe-to-bone test, an ulcer larger than 2 cm squared, or an ESR above 70",
+     "Relief of the pain when the affected foot is elevated",
+     "A dry ulcer smaller than 1 cm squared with a normal ESR"
+    ],
+    "correct": 2,
+    "exp": "In a diabetic foot ulcer, a positive probe-to-bone test, an ulcer larger than 2 cm squared, or an ESR above 70 each raise the probability of underlying osteomyelitis substantially.",
+    "why": [
+     "Fever is often absent in chronic osteomyelitis, so its absence carries little diagnostic weight.",
+     "Good perfusion is reassuring for healing but says nothing about whether bone is infected.",
+     "",
+     "Positional relief of pain is not one of the bedside clues described for diabetic foot osteomyelitis.",
+     "A small dry ulcer with a normal ESR argues against underlying bone infection rather than for it."
+    ]
+   },
+   {
+    "q": "Why is rifampin added for prosthetic- or hardware-associated staphylococcal bone infection?",
+    "ch": [
+     "It penetrates biofilm, and it is never used as monotherapy",
+     "It is a CYP450 inhibitor that raises levels of the companion antibiotic",
+     "It removes the need for surgical debridement in chronic osteomyelitis",
+     "It supplies Pseudomonas coverage for infections seen in IV drug users",
+     "It is the single most effective agent against MSSA and can be given as monotherapy"
+    ],
+    "correct": 0,
+    "exp": "Rifampin is added for hardware and prosthetic-associated staph infection because it penetrates biofilm — but it is never used as monotherapy. It is a potent CYP450 inducer, can be hepatotoxic, and turns secretions orange.",
+    "why": [
+     "",
+     "Rifampin is a potent CYP450 inducer, not an inhibitor, and lowers rather than raises other drug levels.",
+     "Debridement remains essential for cure in chronic and biofilm-associated disease; rifampin does not replace it.",
+     "Pseudomonas coverage comes from cefepime or ceftazidime, not from rifampin.",
+     "Nafcillin, oxacillin or cefazolin are the definitive agents for MSSA, and rifampin is never given alone."
+    ]
+   },
+   {
+    "q": "A patient on empiric vancomycin has bone biopsy cultures growing methicillin-susceptible Staphylococcus aureus. What is the best next step?",
+    "ch": [
+     "Stop all antibiotics because MSSA rarely requires prolonged therapy",
+     "Add rifampin as monotherapy and discontinue the vancomycin",
+     "Switch to ciprofloxacin because of its excellent bone penetration",
+     "De-escalate to nafcillin, oxacillin or cefazolin, which beat vancomycin for MSSA",
+     "Continue vancomycin, since it covers MSSA just as effectively"
+    ],
+    "correct": 3,
+    "exp": "Nafcillin, oxacillin or cefazolin are definitive therapy for confirmed MSSA and are more effective than vancomycin, so de-escalation matters once susceptibilities return. Cefazolin is often preferred for tolerability and dosing convenience.",
+    "why": [
+     "Bone infection typically needs roughly 4 to 6 weeks of therapy; stopping antibiotics invites relapse.",
+     "Rifampin is never used as monotherapy; it is an adjunct for biofilm on hardware.",
+     "Fluoroquinolones have excellent bone penetration but are used mainly for gram-negatives and oral step-down, not as MSSA therapy of choice.",
+     "",
+     "Vancomycin is inferior to beta-lactams for MSSA and carries nephrotoxicity and level-monitoring burdens."
+    ]
+   },
+   {
+    "q": "A patient who injects drugs has vertebral osteomyelitis and develops new leg weakness with urinary retention. What is the concern?",
+    "ch": [
+     "Necrotizing soft-tissue infection tracking along the flank",
+     "Fluoroquinolone-associated tendon rupture in the lower limb",
+     "Vancomycin nephrotoxicity producing the urinary retention",
+     "Contiguous septic arthritis of the adjacent hip joint",
+     "Epidural abscess with cord compression — a surgical emergency"
+    ],
+    "correct": 4,
+    "exp": "Vertebral osteomyelitis with new neurologic deficits, saddle anesthesia, or bowel and bladder dysfunction should raise immediate suspicion for adjacent discitis with epidural abscess and cord compression — a surgical emergency.",
+    "why": [
+     "Necrotizing soft-tissue infection presents with rapidly spreading erythema, crepitus or bullae.",
+     "Tendon rupture is a fluoroquinolone boxed warning but would not cause urinary retention.",
+     "Nephrotoxicity affects renal function and drug levels; it does not cause focal leg weakness.",
+     "Septic arthritis presents as an acutely hot, swollen, immobile joint, not as cord-level neurologic deficits.",
+     ""
+    ]
+   },
+   {
+    "q": "Why does chronic osteomyelitis usually require surgical debridement rather than antibiotics alone?",
+    "ch": [
+     "Avascular sequestrum and biofilm shield the bacteria from antibiotics and immune cells",
+     "Antibiotics cannot safely be continued beyond two weeks in any bone infection",
+     "Oral antibiotics have no bone penetration, so only surgery can deliver a cure",
+     "Debridement is the only way to obtain the ESR and CRP values that guide therapy",
+     "Surgery is required in order to assign the Cierny-Mader host physiologic class"
+    ],
+    "correct": 0,
+    "exp": "Chronic osteomyelitis needs surgery because avascular sequestrum and biofilm shield bacteria from both antibiotics and immune cells; debridement removes necrotic bone and infected hardware and is essential for cure.",
+    "why": [
+     "",
+     "Therapy typically runs 4 to 6 weeks, so a two-week ceiling is not the reason surgery is needed.",
+     "Fluoroquinolones in particular have excellent bone penetration, so poor penetration is not the explanation.",
+     "ESR and CRP are simple blood tests and require no operation.",
+     "Cierny-Mader combines anatomic type with host class to guide strategy; staging is not the reason for debridement."
+    ]
+   }
+  ]
+ },
+ "fracture": {
+  "condition": "Fractures",
+  "questions": [
+   {
+    "q": "In what sequence does fracture healing proceed?",
+    "ch": [
+     "Hematoma, then hard callus, then soft callus, then remodeling",
+     "Hematoma, then soft callus, then hard callus, then remodeling",
+     "Soft callus, then hematoma, then remodeling, then hard callus",
+     "Remodeling, then hematoma, then soft callus, then hard callus",
+     "Hard callus, then soft callus, then hematoma, then remodeling"
+    ],
+    "correct": 1,
+    "exp": "Fracture healing proceeds from hematoma to soft callus to hard callus to remodeling. Adequate blood supply, stability and apposition drive union.",
+    "why": [
+     "Soft callus precedes hard callus, so this order is inverted in the middle.",
+     "",
+     "The hematoma forms first, before any callus develops.",
+     "Remodeling is the final stage of healing, not the first.",
+     "Hard callus follows soft callus, and both follow the hematoma."
+    ]
+   },
+   {
+    "q": "Among the 6 P's of compartment syndrome, which is the earliest sign?",
+    "ch": [
+     "Pain out of proportion, worse with passive stretch",
+     "Paralysis of the affected muscle group",
+     "Poikilothermia, with the limb cool to touch",
+     "Pulselessness in the distal extremity",
+     "Pallor and mottling of the distal extremity"
+    ],
+    "correct": 0,
+    "exp": "Pain is the earliest of the 6 P's — classically out of proportion to the injury and worse with passive stretch. Pain with passive stretch means compartment syndrome until proven otherwise.",
+    "why": [
+     "",
+     "Paralysis reflects established ischemic injury and appears late.",
+     "Poikilothermia is a late change, well after pain has appeared.",
+     "Pulselessness is a late finding and its absence never rules out compartment syndrome.",
+     "Pallor develops after pain and is not the earliest sign."
+    ]
+   },
+   {
+    "q": "What is the standard confirmatory imaging for a suspected fracture?",
+    "ch": [
+     "A single anteroposterior radiograph of the injured bone",
+     "MRI of the affected limb obtained before any plain films",
+     "CT of the whole body regardless of the region injured",
+     "Bedside ultrasound of the limb performed by the nurse",
+     "Plain radiographs in at least two orthogonal views, including the joint above and below"
+    ],
+    "correct": 4,
+    "exp": "The confirmatory test is plain radiographs in at least two orthogonal views — AP and lateral — including the joint above and below the injury.",
+    "why": [
+     "A single view can miss displacement and angulation; at least two orthogonal views are required.",
+     "MRI is reserved for occult fractures such as hip or scaphoid, or for stress fractures not seen on X-ray.",
+     "CT is used for intra-articular, complex, spine and pelvis fractures, not as the routine first study.",
+     "Ultrasound is not the standard confirmatory imaging for fracture.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient arrives with an open tibia fracture and exposed bone. What does the module prioritize?",
+    "ch": [
+     "IV antibiotics started as soon as possible, ideally within 1 hour, plus tetanus prophylaxis and urgent operative washout",
+     "Splinting and observation, because open fractures heal much like closed ones",
+     "Delay antibiotics until the wound has been cultured in the operating room",
+     "Tetanus prophylaxis alone, since the wound will be washed out later anyway",
+     "Oral cephalexin at discharge with outpatient orthopedic follow-up arranged"
+    ],
+    "correct": 0,
+    "exp": "An open fracture means antibiotics plus tetanus plus urgent operative washout, with IV antibiotics such as cefazolin started as soon as possible and ideally within 1 hour — time to antibiotics matters more than time to debridement.",
+    "why": [
+     "",
+     "Open fractures carry a high infection risk and need antibiotics, tetanus and debridement, not observation.",
+     "Delaying antibiotics for cultures is exactly what the 1-hour target is meant to prevent.",
+     "Tetanus prophylaxis is necessary but not sufficient; antibiotics and washout are also required.",
+     "An open fracture is a surgical emergency, not an outpatient problem managed with oral antibiotics."
+    ]
+   },
+   {
+    "q": "A patient fell on an outstretched hand and has anatomic snuffbox tenderness, but the X-ray is normal. What is the correct management?",
+    "ch": [
+     "Assume a distal radius fracture and perform closed reduction now",
+     "Reassure the patient and permit an immediate return to full activity",
+     "Treat as a scaphoid fracture with a thumb spica splint and repeat imaging",
+     "Obtain a whole-body bone scan before applying any immobilization",
+     "Apply a cast only if the pain is still present beyond three weeks"
+    ],
+    "correct": 2,
+    "exp": "Snuffbox tenderness is treated as a scaphoid fracture even when the X-ray is normal, because scaphoid fractures are often occult on the initial film and carry a risk of avascular necrosis. Splint in a thumb spica and repeat imaging.",
+    "why": [
+     "The examination localizes to the scaphoid, not the distal radius, and no reduction is indicated.",
+     "The scaphoid fracture is occult on the initial film, so reassurance risks avascular necrosis.",
+     "",
+     "MRI is the study for occult scaphoid injury, and immobilization should not wait on further imaging.",
+     "Immobilization should begin now rather than after three weeks of unprotected use."
+    ]
+   },
+   {
+    "q": "Forty-eight hours after a femoral shaft fracture, a patient develops dyspnea, confusion and a petechial rash. What is the diagnosis?",
+    "ch": [
+     "Deep vein thrombosis of the ipsilateral calf",
+     "Delayed union of the femoral shaft fracture",
+     "Fat embolism syndrome",
+     "Compartment syndrome of the thigh compartment",
+     "Hemorrhagic shock from ongoing femoral blood loss"
+    ],
+    "correct": 2,
+    "exp": "Dyspnea, confusion and petechiae 24 to 72 hours after a long-bone or pelvic fracture is the classic triad of fat embolism syndrome, and nurses are taught to watch for it after long-bone fractures.",
+    "why": [
+     "DVT causes unilateral leg swelling; it does not explain confusion with petechiae.",
+     "Delayed union is a late healing problem with no acute respiratory or neurologic features.",
+     "",
+     "Compartment syndrome presents with escalating limb pain on passive stretch and a tense compartment, not petechiae.",
+     "Hemorrhagic shock causes hypotension and tachycardia, and does not produce a petechial rash."
+    ]
+   },
+   {
+    "q": "What caution does the module attach to NSAIDs for fracture pain?",
+    "ch": [
+     "They are the only analgesic that carries no daily dose limit at all",
+     "They cause fat embolism syndrome when used after long-bone fractures",
+     "They are absolutely contraindicated in every fracture without exception",
+     "They must be combined with aspirin in order to be effective analgesics",
+     "Beyond renal, GI and cardiovascular risk, there is theoretical concern for delayed bone healing and nonunion"
+    ],
+    "correct": 4,
+    "exp": "NSAIDs are effective for acute fracture pain, but beyond renal, GI bleeding and cardiovascular risk there is a theoretical concern for delayed bone healing and nonunion, so prolonged use is avoided in high-risk fractures. The data are mixed, which is why many surgeons favor multimodal opioid-sparing analgesia.",
+    "why": [
+     "Acetaminophen carries an explicit daily cap, and NSAIDs also have dose and duration limits.",
+     "Fat embolism syndrome follows the fracture itself, not NSAID administration.",
+     "NSAIDs are listed as effective analgesia for acute fracture pain, so a blanket contraindication overstates it.",
+     "Aspirin is not required for NSAID analgesia and is not part of the multimodal regimen described.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient in a cast reports escalating pain that worsens with passive stretch, and the compartment feels tense. What is the correct action?",
+    "ch": [
+     "Wait for a compartment pressure measurement before taking any action",
+     "Elevate the limb above the heart and continue with routine cast care",
+     "Obtain an MRI of the limb to confirm the diagnosis before intervening",
+     "Treat as compartment syndrome and proceed to emergent fasciotomy — it is a clinical diagnosis",
+     "Give additional opioid and reassess the limb in six hours"
+    ],
+    "correct": 3,
+    "exp": "Compartment syndrome is a clinical diagnosis and a surgical emergency treated with fasciotomy. A delta pressure under 30 mmHg supports it, but you act on the clinical picture rather than waiting for numbers, and a tight cast complaint is never ignored.",
+    "why": [
+     "A pressure reading may support the diagnosis, but you do not wait for numbers before acting.",
+     "Elevation and routine cast care do not address a developing compartment syndrome.",
+     "MRI delays a diagnosis that is made clinically and treated emergently.",
+     "",
+     "Masking the pain with more opioid and waiting six hours allows irreversible ischemic injury."
+    ]
+   },
+   {
+    "q": "A 78-year-old sustains a hip fracture after a fall from standing height. Beyond fixation, what should happen?",
+    "ch": [
+     "No further evaluation, since falls in older adults are largely unavoidable",
+     "Repeat radiographs monthly until union with no other workup performed",
+     "Long-term NSAIDs to suppress the inflammation of the healing bone",
+     "Treat it as a sentinel event: order a DEXA scan and start osteoporosis therapy to prevent the next fracture",
+     "Defer surgery well beyond 48 hours to let the fracture hematoma organize"
+    ],
+    "correct": 3,
+    "exp": "A low-energy fracture in an older adult is a fragility fracture and should be treated as a sentinel event: order a DEXA scan, start anti-resorptive or anabolic therapy, and manage the patient in an ortho-geriatric pathway with early surgery, a fascia iliaca block and delirium prevention.",
+    "why": [
+     "A fragility fracture flags treatable osteoporosis, and doing nothing perpetuates the treatment gap.",
+     "Following union radiographically ignores the underlying bone health problem that caused the fracture.",
+     "Prolonged NSAIDs raise concern for delayed bone healing and do nothing for bone density.",
+     "",
+     "Ortho-geriatric care favors early surgery within 48 hours, not deliberate delay."
+    ]
+   },
+   {
+    "q": "Which validated decision tools does the module cite to limit unnecessary fracture imaging?",
+    "ch": [
+     "The Gustilo-Anderson and Salter-Harris classifications",
+     "The Ottawa Ankle and Knee Rules and the Canadian C-Spine Rule",
+     "The Garden and AO classifications of hip fracture",
+     "The 6 P's of compartment syndrome assessment",
+     "The SALTR mnemonic for physeal injury patterns"
+    ],
+    "correct": 1,
+    "exp": "The Ottawa Ankle and Knee Rules and the Canadian C-Spine Rule are the validated decision rules used to limit imaging and justify when radiographs are actually needed.",
+    "why": [
+     "Gustilo-Anderson grades open fracture severity and Salter-Harris classifies physeal injury; neither decides whether to image.",
+     "",
+     "Garden and AO classify hip fractures already visible on imaging rather than determining whether to image.",
+     "The 6 P's are a bedside assessment for compartment syndrome, not an imaging decision rule.",
+     "SALTR is a memory aid for the Salter-Harris types and does not guide imaging decisions."
+    ]
+   }
+  ]
+ },
+ "osteoporosis": {
+  "condition": "Osteoporosis",
+  "questions": [
+   {
+    "q": "Which DXA T-score defines osteoporosis?",
+    "ch": [
+     "Any T-score at all in a patient who has sustained a fall",
+     "A T-score of -1.0 or higher on hip and spine",
+     "A T-score between -1.0 and -2.5 on hip or spine",
+     "A T-score of -2.5 or lower",
+     "A Z-score of -2.0 or lower in a postmenopausal woman"
+    ],
+    "correct": 3,
+    "exp": "On DXA of the hip and lumbar spine, a T-score at or below -2.5 defines osteoporosis; normal is -1.0 or above and osteopenia is -1.0 to -2.5. Each standard deviation drop roughly doubles fracture risk.",
+    "why": [
+     "A fall alone does not make the diagnosis; a hip or vertebral fragility fracture does.",
+     "A T-score of -1.0 or higher is normal bone density.",
+     "A T-score between -1.0 and -2.5 defines osteopenia rather than osteoporosis.",
+     "",
+     "Z-scores are used in premenopausal women and young men, not to define osteoporosis in a postmenopausal woman."
+    ]
+   },
+   {
+    "q": "What cellular imbalance underlies osteoporosis?",
+    "ch": [
+     "Replacement of marrow by fibrous tissue from excess parathyroid hormone",
+     "Failure of osteoclasts to resorb bone, producing dense but brittle bone",
+     "Osteoclast resorption outpacing osteoblast formation",
+     "Defective mineralization of normally formed osteoid from vitamin D deficiency",
+     "Osteoblast formation outpacing osteoclast resorption over time"
+    ],
+    "correct": 2,
+    "exp": "Osteoporosis reflects an imbalance in which osteoclast resorption outpaces osteoblast formation, producing low bone mineral density and deteriorated microarchitecture. Estrogen normally restrains osteoclasts, so menopausal estrogen loss accelerates RANKL-driven bone loss.",
+    "why": [
+     "Marrow replaced by fibrous tissue describes osteitis fibrosa cystica from hyperparathyroidism.",
+     "Failure of osteoclast resorption produces dense bone, the opposite of the low bone mass seen here.",
+     "",
+     "Defective mineralization with low vitamin D describes osteomalacia; in primary osteoporosis mineralization is normal and labs are typically normal.",
+     "This is the reverse of the imbalance; formation outpacing resorption would increase bone mass."
+    ]
+   },
+   {
+    "q": "How should an oral bisphosphonate be taken?",
+    "ch": [
+     "With milk or an antacid to buffer the stomach and reduce nausea",
+     "At any time of day, as long as the calcium supplement is taken at the same time",
+     "Dissolved in juice and taken while reclining right after breakfast",
+     "With a full meal at bedtime, then lying flat to prevent dizziness",
+     "First thing in the morning, fasting, with a full glass of plain water, remaining upright 30 to 60 minutes"
+    ],
+    "correct": 4,
+    "exp": "The oral bisphosphonate mantra is empty stomach, big glass of plain water, stay upright. Take it first thing in the morning fasting and remain upright 30 to 60 minutes with no food or other medications in that window, to avoid esophagitis.",
+    "why": [
+     "Milk and antacids interfere with absorption, and the dose must be taken on an empty stomach.",
+     "Timing matters, and no food or other medication, including calcium, should be taken in that window.",
+     "Reclining after breakfast violates both the fasting requirement and the upright requirement.",
+     "Lying flat after the dose is exactly what causes esophagitis; the patient must remain upright.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient on denosumab wants to stop the injections. What is the key teaching?",
+    "ch": [
+     "Stop it and rely on calcium and vitamin D alone to preserve the gains",
+     "Taper the dose over 12 months by halving each successive injection",
+     "Do not stop abruptly — rebound bone loss with multiple vertebral fractures can occur, so transition to a bisphosphonate",
+     "Stopping is safe at any time because the effect on bone density is permanent",
+     "Stop it and begin romosozumab, even though she had a stroke last month"
+    ],
+    "correct": 2,
+    "exp": "Denosumab must never be stopped cold: discontinuation causes rebound bone loss and multiple vertebral fractures. Bridge the patient to a bisphosphonate rather than leaving denosumab unopposed.",
+    "why": [
+     "Calcium and vitamin D are foundational adjuncts but cannot prevent the rebound after denosumab.",
+     "Tapering is not the described approach; the answer is a transition to a bisphosphonate.",
+     "",
+     "The effect is not permanent; stopping produces rebound bone loss and vertebral fractures.",
+     "Romosozumab is contraindicated with recent myocardial infarction or stroke because of its boxed cardiovascular warning."
+    ]
+   },
+   {
+    "q": "A 72-year-old fractures a vertebra after falling from standing height; her DXA T-score is -1.8. How is she classified?",
+    "ch": [
+     "Osteomalacia, because the fracture followed only low-energy trauma",
+     "Osteopenia only, so no pharmacologic therapy is warranted yet",
+     "Normal bone density, because the T-score is above -2.5",
+     "Secondary osteoporosis, which requires a bone biopsy to confirm",
+     "Clinical osteoporosis — a hip or vertebral fragility fracture makes the diagnosis regardless of T-score"
+    ],
+    "correct": 4,
+    "exp": "Osteoporosis is diagnosed clinically regardless of T-score after a hip or vertebral fragility fracture — a fracture from a fall from standing height or less. Her T-score in the osteopenic range does not change that.",
+    "why": [
+     "Osteomalacia is defective mineralization from vitamin D deficiency; primary osteoporosis has normal labs.",
+     "A vertebral fragility fracture overrides the T-score, so calling this osteopenia alone misses the diagnosis.",
+     "A T-score of -1.8 is osteopenia, not normal, and the fracture is what settles the diagnosis.",
+     "Secondary causes are screened for with labs, not a bone biopsy, and this is a fragility fracture.",
+     ""
+    ]
+   },
+   {
+    "q": "Which medication class is the most common drug cause of secondary osteoporosis?",
+    "ch": [
+     "Statins prescribed for hyperlipidemia",
+     "Thiazide diuretics prescribed for hypertension",
+     "Bisphosphonates continued over many years",
+     "Chronic glucocorticoids",
+     "Beta-blockers used after myocardial infarction"
+    ],
+    "correct": 3,
+    "exp": "Chronic glucocorticoids are the most common drug cause of secondary osteoporosis, and glucocorticoid-induced osteoporosis is its own entity requiring early bisphosphonate prophylaxis in patients on chronic steroids.",
+    "why": [
+     "Statins are not implicated; the drugs to reconcile are glucocorticoids, PPIs, aromatase inhibitors and anticonvulsants.",
+     "Thiazides are not listed among the secondary causes of osteoporosis taught here.",
+     "Bisphosphonates treat osteoporosis; their long-term risks are osteonecrosis of the jaw and atypical femoral fracture, not bone loss.",
+     "",
+     "Beta-blockers are not among the medications to reconcile when screening for secondary causes."
+    ]
+   },
+   {
+    "q": "Which element of the history makes romosozumab inappropriate?",
+    "ch": [
+     "A myocardial infarction three months ago",
+     "A prior fragility fracture of the distal radius",
+     "Chronic kidney disease with a creatinine clearance of 60",
+     "A history of hot flashes while on hormone therapy",
+     "A family history of osteoporosis in her mother"
+    ],
+    "correct": 0,
+    "exp": "Romosozumab carries a boxed cardiovascular warning and is contraindicated with a recent myocardial infarction or stroke. It is otherwise a 12-month dual anabolic and antiresorptive course for very-high-risk postmenopausal women.",
+    "why": [
+     "",
+     "A prior fragility fracture raises fracture risk and supports treatment rather than prohibiting this drug.",
+     "Denosumab is the antiresorptive favored in renal impairment; a clearance of 60 is not a romosozumab contraindication.",
+     "Hot flashes are an adverse effect of raloxifene and are not relevant to romosozumab.",
+     "A family history is a risk factor for osteoporosis, not a contraindication to therapy."
+    ]
+   },
+   {
+    "q": "A patient with severe osteoporosis and multiple vertebral fractures is starting therapy. What sequencing is recommended?",
+    "ch": [
+     "An anabolic agent first in severe disease, followed by an antiresorptive to preserve the gains",
+     "Calcium and vitamin D alone for two years, then reassess her with a repeat DXA",
+     "Raloxifene first, because it also reduces the risk of hip fracture",
+     "Denosumab indefinitely, with no plan for transition or follow-on therapy",
+     "An antiresorptive first, then an anabolic agent afterwards to lock in the gains"
+    ],
+    "correct": 0,
+    "exp": "In severe disease the sequence is anabolic before antiresorptive: teriparatide, abaloparatide or romosozumab builds bone, and an antiresorptive then follows to preserve the gains. Very-high-risk patients should lead with an anabolic agent.",
+    "why": [
+     "",
+     "Calcium and vitamin D are foundational adjuncts, not a substitute for pharmacologic therapy in severe disease.",
+     "Raloxifene reduces vertebral fractures but has no proven hip fracture benefit and raises VTE risk.",
+     "Denosumab must never be left unopposed; stopping it without a bisphosphonate bridge causes rebound fractures.",
+     "The order is reversed; leading with an antiresorptive is not the recommended sequence in severe disease."
+    ]
+   },
+   {
+    "q": "A woman with osteopenia has a FRAX 10-year hip fracture probability of 4%. What does the module advise?",
+    "ch": [
+     "Order a bone biopsy to decide whether pharmacologic therapy is warranted",
+     "Treat — a FRAX of 3% or more for hip, or 20% or more for major osteoporotic fracture, meets the threshold",
+     "Do not treat, since only a T-score of -2.5 or lower can justify pharmacologic therapy",
+     "Repeat the DXA in five years and defer any treatment decision until then",
+     "Treat only if she has already sustained a fracture of the distal radius"
+    ],
+    "correct": 1,
+    "exp": "FRAX estimates the 10-year fracture probability and guides treatment in osteopenia: treat when the hip fracture probability is 3% or more, or the major osteoporotic fracture probability is 20% or more. Her 4% hip risk crosses that threshold.",
+    "why": [
+     "Diagnosis rests on DXA, FRAX and labs to exclude secondary causes, not on bone biopsy.",
+     "",
+     "Treatment thresholds include a T-score at or below -2.5, a prior hip or vertebral fragility fracture, or osteopenia with a qualifying FRAX.",
+     "Repeat DXA is normally about 2 years, and deferring ignores a FRAX result that already meets the threshold.",
+     "A prior fracture is one route to treatment, but FRAX-guided treatment does not require one."
+    ]
+   },
+   {
+    "q": "A patient on long-term bisphosphonate therapy reports new thigh and groin pain. What should be suspected?",
+    "ch": [
+     "Esophagitis from incorrect oral bisphosphonate administration",
+     "An atypical femoral fracture, whose prodrome precedes completion",
+     "A vertebral compression fracture with spinal cord compression",
+     "Osteonecrosis of the jaw presenting as referred thigh pain",
+     "Hypocalcemia causing perioral tingling and muscle cramps"
+    ],
+    "correct": 1,
+    "exp": "New thigh or groin pain in a patient on long-term bisphosphonate or denosumab therapy is a red flag for an atypical femoral fracture; the prodromal pain precedes completion of the fracture.",
+    "why": [
+     "Esophagitis from a dosing error causes GI and esophageal symptoms, not thigh and groin pain.",
+     "",
+     "A vertebral compression fracture presents with acute severe back pain, potentially with neurologic deficit.",
+     "Osteonecrosis of the jaw is a rare antiresorptive complication involving the jaw, and it does not refer pain to the thigh.",
+     "Hypocalcemia causes perioral tingling, cramps and positive Chvostek or Trousseau signs, not focal thigh pain."
+    ]
+   }
+  ]
+ }
+}

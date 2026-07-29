@@ -1,0 +1,977 @@
+{
+ "hyperkalemia": {
+  "condition": "Hyperkalemia",
+  "questions": [
+   {
+    "q": "Hyperkalemia is defined as a serum potassium above which range, and why do small serum changes carry such large meaning?",
+    "ch": [
+     "Above 3.5 mEq/L; the serum value tracks total body potassium almost exactly in health and disease",
+     "Above 4.5 mEq/L; potassium is distributed evenly between the intracellular and extracellular compartments",
+     "Above 5.0-5.5 mEq/L; about 98% of body potassium is intracellular, so small serum shifts reflect large disturbances",
+     "Above 7.0 mEq/L; anything below that is graded as normal and needs no evaluation or ECG at all",
+     "Above 6.0 mEq/L; the threshold is set by the level at which the sine wave pattern appears on the ECG"
+    ],
+    "correct": 2,
+    "exp": "The module defines hyperkalemia as a serum potassium above 5.0-5.5 mEq/L. Because roughly 98% of body potassium is intracellular, a small rise in the serum value reflects a large disturbance in transcellular balance or renal excretion.",
+    "why": [
+     "3.5 mEq/L is the lower limit of normal, and serum potassium is a poor mirror of total body stores — DKA patients can be hyperkalemic while total-body depleted.",
+     "Potassium is not evenly distributed; the module stresses that about 98% sits inside cells, which is exactly why serum shifts are amplified signals.",
+     "",
+     "A level of 7.0 mEq/L or above is the module's cut-off for severe hyperkalemia, not the definition; mild 5.5-6.0 and moderate 6.1-6.9 still demand an ECG.",
+     "A sine wave is a pre-terminal ECG finding rather than a defining serum threshold; the module grades 6.1-6.9 as moderate hyperkalemia."
+    ]
+   },
+   {
+    "q": "The module groups the causes of hyperkalemia into three mechanistic buckets. Which one is the most common cause?",
+    "ch": [
+     "Decreased renal excretion of potassium",
+     "Increased dietary potassium intake alone",
+     "Transcellular shift of potassium out of cells",
+     "Pseudohyperkalemia from a hemolyzed sample",
+     "Increased gastrointestinal potassium absorption"
+    ],
+    "correct": 0,
+    "exp": "Of the three mechanisms the module names — increased intake, transcellular shift out of cells, and decreased renal excretion — impaired renal excretion is the most common cause.",
+    "why": [
+     "",
+     "Increased intake is listed as a mechanism that rarely causes hyperkalemia on its own.",
+     "Transcellular shift from acidosis, insulin deficiency, cell lysis, beta-blockade, or digoxin is a real bucket, but not the most common one.",
+     "Pseudohyperkalemia is an artifact to exclude before treating, not one of the three true mechanisms.",
+     "Increased gastrointestinal absorption is not one of the module's buckets; intake, shift, and excretion are."
+    ]
+   },
+   {
+    "q": "A potassium returns at 6.4 mEq/L after a difficult draw with a tight tourniquet and repeated fist-clenching. The ECG is normal and the patient feels well. What should be done first?",
+    "ch": [
+     "Arrange urgent hemodialysis for a potassium in the moderate severity range",
+     "Begin a potassium binder such as patiromer and recheck the level in one week",
+     "Suspect pseudohyperkalemia and recheck a fresh, non-hemolyzed sample",
+     "Give IV calcium gluconate immediately because the level exceeds 6.0 mEq/L",
+     "Start insulin with dextrose and nebulized albuterol before rechecking anything"
+    ],
+    "correct": 2,
+    "exp": "A difficult draw with a tight tourniquet and fist-clenching, a normal ECG, and a well patient is the classic pseudohyperkalemia picture. The module says to exclude it by rechecking a fresh, non-hemolyzed sample before treating.",
+    "why": [
+     "Dialysis is reserved for severe or refractory hyperkalemia and renal failure, not an unconfirmed value with a normal ECG.",
+     "Binders are for subacute or chronic control and would be premature before the value has even been confirmed.",
+     "",
+     "Calcium is indicated for ECG changes; this ECG is normal and the value is very likely an artifact of the draw technique.",
+     "Shifting agents treat a real elevation; confirming the value comes first when the draw was difficult and the ECG is benign."
+    ]
+   },
+   {
+    "q": "Why is IV calcium gluconate the first drug given when hyperkalemia produces ECG changes?",
+    "ch": [
+     "It enhances renal potassium excretion in patients who still make urine",
+     "It binds potassium in the gut and removes it from the body quickly",
+     "It corrects the metabolic acidosis that is driving potassium out of cells",
+     "It shifts potassium into cells faster than insulin and dextrose can",
+     "It stabilizes the cardiac membrane within minutes but does not lower potassium"
+    ],
+    "correct": 4,
+    "exp": "Calcium is the first drug when the ECG is abnormal because it stabilizes the cardiac membrane within 1-3 minutes. It buys time; it does not lower the potassium, which the module calls the single most tested distinction.",
+    "why": [
+     "Loop diuretics such as furosemide enhance renal potassium excretion; calcium has no effect on excretion.",
+     "Gastrointestinal removal is what patiromer and sodium zirconium cyclosilicate do, and they are too slow for emergencies.",
+     "Sodium bicarbonate is the adjunct aimed at acidosis, and even then it is a weak, slow potassium-lowering agent.",
+     "Insulin with dextrose is the shifting agent, with onset in 10-20 minutes; calcium does not shift potassium at all.",
+     ""
+    ]
+   },
+   {
+    "q": "After insulin and D50 are given for hyperkalemia, which nursing action does the module make a priority?",
+    "ch": [
+     "Restrict oral fluids and record strict intake and output for 24 hours",
+     "Hold the next dose of the patient's ACE inhibitor until the ECG normalizes",
+     "Repeat the nebulized albuterol every fifteen minutes until the tremor resolves",
+     "Recheck blood glucose per protocol to catch delayed hypoglycemia",
+     "Redraw the potassium from the same site with a tourniquet left in place"
+    ],
+    "correct": 3,
+    "exp": "Insulin without adequate glucose causes hypoglycemia, and the dip can be delayed for hours. The module tells nurses to recheck blood glucose per protocol — for example at one hour and periodically afterward.",
+    "why": [
+     "Fluid restriction is not part of hyperkalemia care; glucose monitoring after insulin is the taught safety step.",
+     "Offending drugs such as ACE inhibitors are addressed in the prevention stage, not as the immediate post-insulin priority.",
+     "Albuterol needs high doses and causes tremor and tachycardia; repeating it to abolish tremor is not taught, and up to 40% of patients do not respond.",
+     "",
+     "A prolonged tourniquet and fist-clenching are exactly what the module says to avoid, because they produce pseudohyperkalemia."
+    ]
+   },
+   {
+    "q": "Which sequence captures the three-step treatment logic the module teaches for hyperkalemia?",
+    "ch": [
+     "Shift potassium into cells, remove potassium from the body, then stabilize the membrane",
+     "Stabilize the membrane, remove potassium from the body, then shift potassium into cells",
+     "Shift potassium into cells, stabilize the membrane, then remove potassium from the body",
+     "Stabilize the membrane, shift potassium into cells, then remove potassium from the body",
+     "Remove potassium from the body, stabilize the membrane, then shift potassium into cells"
+    ],
+    "correct": 3,
+    "exp": "The module frames therapy as stabilize the membrane with calcium, shift potassium into cells with insulin and glucose, albuterol, or bicarbonate, then remove potassium from the body with diuretics, binders, or dialysis.",
+    "why": [
+     "Shifting is temporary and follows membrane stabilization, which is the immediate priority once ECG changes appear.",
+     "Removal is slower than shifting, so shifting comes second and removal last in the module's logic.",
+     "Calcium comes before the shifting agents when ECG changes are present, because it protects the heart within minutes.",
+     "",
+     "Removal is the last and definitive step, not the first; membrane stabilization must come first when the ECG is abnormal."
+    ]
+   },
+   {
+    "q": "Which ECG progression does the module describe as classic for worsening hyperkalemia?",
+    "ch": [
+     "ST elevation, then Q waves, then a new left bundle branch block",
+     "Peaked T waves, then flattened P and prolonged PR, then widened QRS, then a sine wave",
+     "Delta waves, then a shortened PR interval, then supraventricular tachycardia",
+     "Diffuse ST depression, then T wave inversion, then electrical alternans",
+     "Prolonged QT interval, then U waves, then torsades de pointes"
+    ],
+    "correct": 1,
+    "exp": "Peaked T waves are the earliest sign. The progression runs peaked T waves, then flattened P waves with a prolonged PR, then a widened QRS, then a sine wave, then VF or asystole — the sine wave being pre-terminal.",
+    "why": [
+     "ST elevation with Q waves reflects infarction, not the potassium-driven membrane changes described here.",
+     "",
+     "Delta waves with a short PR describe pre-excitation, which the module does not list among hyperkalemic changes.",
+     "Diffuse ST depression and electrical alternans are not part of the described hyperkalemia progression.",
+     "A prolonged QT with U waves and torsades is not the hyperkalemia pattern this module describes."
+    ]
+   },
+   {
+    "q": "A dialysis patient with chronic hyperkalemia needs an agent for ongoing outpatient control so that guideline-directed RAAS therapy can continue. Which option matches the module?",
+    "ch": [
+     "Patiromer or sodium zirconium cyclosilicate for subacute and chronic control",
+     "Sodium polystyrene sulfonate, named by the module as the modern agent of choice",
+     "Nebulized albuterol used at home each morning as the sole potassium therapy",
+     "Intravenous calcium gluconate given whenever muscle weakness develops at home",
+     "Sodium bicarbonate as a first-line long-term potassium-lowering medication"
+    ],
+    "correct": 0,
+    "exp": "Patiromer and sodium zirconium cyclosilicate remove potassium through the gut and are used for subacute and chronic control, including to enable continued RAAS therapy. They are too slow for emergencies.",
+    "why": [
+     "",
+     "SPS (Kayexalate) is largely avoided because of colonic necrosis, especially with sorbitol or after surgery; the modern binders replaced it.",
+     "Albuterol requires high doses, has roughly a 40% non-response rate, and the module says never to use it as sole therapy.",
+     "Calcium protects the heart for only 30-60 minutes and does not lower potassium, so it cannot provide chronic control.",
+     "Bicarbonate is a weak, slow adjunct used mainly when metabolic acidosis is present, and it risks volume and sodium overload."
+    ]
+   },
+   {
+    "q": "A patient with digoxin toxicity has hyperkalemia with ECG changes. What does the module say about giving calcium?",
+    "ch": [
+     "Calcium is entirely safe here and is the only agent that will actually lower the potassium",
+     "Withhold all therapy until the digoxin level returns, since digoxin lowers potassium anyway",
+     "Substitute Kayexalate for calcium as the emergency membrane-stabilizing agent of choice",
+     "Give a rapid calcium chloride push peripherally, since digoxin blunts the calcium effect",
+     "Use extreme caution or avoid it, giving it as a slow infusion because of the stone heart concern"
+    ],
+    "correct": 4,
+    "exp": "The module flags digoxin toxicity as the special case: hold calcium or give it as a slow infusion because of the stone heart concern, and note that digoxin itself causes hyperkalemia. Digoxin-specific antibody fragments are the definitive fix.",
+    "why": [
+     "Calcium never lowers potassium — it only stabilizes the membrane — and digoxin toxicity is the setting that demands caution.",
+     "Digoxin causes hyperkalemia rather than lowering it, and ECG changes mandate treatment without waiting for a level.",
+     "Kayexalate is a slow gut binder that risks bowel necrosis; it stabilizes no membranes and has no emergency role.",
+     "A rapid push is exactly what the module warns against here, and calcium chloride is a vesicant that prefers a central line.",
+     ""
+    ]
+   },
+   {
+    "q": "Which medication combination does the module call a classic setup for impaired potassium excretion, especially with underlying CKD?",
+    "ch": [
+     "Patiromer plus sodium zirconium cyclosilicate plus a low-potassium diet",
+     "ACE inhibitor or ARB plus a potassium-sparing diuretic plus an NSAID",
+     "Digoxin-specific antibody fragments plus IV calcium plus hemodialysis",
+     "Loop diuretic plus insulin with dextrose plus nebulized albuterol",
+     "Thiazide diuretic plus a beta-2 agonist plus oral sodium bicarbonate"
+    ],
+    "correct": 1,
+    "exp": "The module names an ACE inhibitor or ARB plus a potassium-sparing diuretic such as spironolactone plus an NSAID as the classic drug synergy that impairs renal potassium excretion, particularly with underlying CKD. It also says to ask about salt substitutes.",
+    "why": [
+     "Binders plus a low-potassium diet are the prevention strategy the module recommends, not a cause of the problem.",
+     "",
+     "These are treatments for digoxin toxicity and severe hyperkalemia, not causes of impaired excretion.",
+     "These are all potassium-lowering interventions rather than drivers of impaired renal excretion.",
+     "Beta-2 agonists drive potassium into cells and bicarbonate is used to lower it, so this combination does not cause hyperkalemia."
+    ]
+   }
+  ]
+ },
+ "bph": {
+  "condition": "Benign Prostatic Hyperplasia",
+  "questions": [
+   {
+    "q": "Which statement best describes the pathophysiology of benign prostatic hyperplasia?",
+    "ch": [
+     "Denervation of the detrusor muscle causing failure to empty without any prostatic enlargement",
+     "Malignant transformation of peripheral zone glands driven by falling testosterone with age",
+     "Non-malignant hyperplasia of the prostatic transition zone driven by DHT, plus alpha-1 smooth muscle tone",
+     "Autoimmune destruction of prostatic stroma leading to fibrosis and a shrunken, scarred gland",
+     "Bacterial infection of the prostate producing swelling and secondary bladder outlet obstruction"
+    ],
+    "correct": 2,
+    "exp": "BPH is non-malignant hyperplasia of stromal and epithelial cells in the periurethral transition zone. Testosterone is converted by 5-alpha-reductase to dihydrotestosterone, the key growth stimulus, and alpha-1 adrenergic smooth-muscle tone adds dynamic obstruction.",
+    "why": [
+     "Neurogenic bladder is one of the mimics the module says to rule out, not the mechanism of BPH.",
+     "BPH is benign and arises in the transition zone; the peripheral zone is where prostate cancer favors, and androgens drive growth rather than their decline.",
+     "",
+     "There is no autoimmune destruction in BPH; the gland enlarges and obstructs rather than scarring down.",
+     "Bacterial prostatitis is listed as a red flag superimposed on obstruction, not as the mechanism of BPH itself."
+    ]
+   },
+   {
+    "q": "Weak stream, hesitancy, straining, and terminal dribbling belong to which symptom category in the module's classification?",
+    "ch": [
+     "Voiding or obstructive symptoms",
+     "Inflammatory or infectious symptoms",
+     "Storage or irritative symptoms",
+     "Systemic or constitutional symptoms",
+     "Neurogenic or reflex bladder symptoms"
+    ],
+    "correct": 0,
+    "exp": "The module splits lower urinary tract symptoms into voiding/obstructive symptoms — weak stream, hesitancy, straining, dribbling — and storage/irritative symptoms such as frequency, urgency, and nocturia.",
+    "why": [
+     "",
+     "Infection is something the urinalysis is meant to exclude, not one of the two symptom categories.",
+     "Storage or irritative symptoms are frequency, urgency, and nocturia rather than stream and hesitancy problems.",
+     "Constitutional symptoms such as weight loss and bone pain are red flags for malignancy, not a LUTS category.",
+     "The module does not use a neurogenic category for BPH symptoms; neurogenic bladder is a mimic to exclude."
+    ]
+   },
+   {
+    "q": "Which digital rectal exam finding is typical of uncomplicated BPH?",
+    "ch": [
+     "An exquisitely tender, boggy gland with fever and chills",
+     "A markedly asymmetric gland fixed to the rectal wall",
+     "A small, atrophic gland with an obliterated median sulcus",
+     "A smooth, firm, symmetrically enlarged, rubbery gland",
+     "A hard nodule in one lobe with surrounding induration"
+    ],
+    "correct": 3,
+    "exp": "BPH gives a smooth, firm, symmetrically enlarged, rubbery gland on digital rectal exam. Nodules, asymmetry, or induration should instead raise concern for malignancy.",
+    "why": [
+     "A tender, boggy gland with fever suggests acute bacterial prostatitis, which the module lists as a red flag.",
+     "Marked asymmetry and fixation point toward cancer rather than benign hyperplasia.",
+     "BPH enlarges the gland, so an atrophic gland is not the expected examination finding.",
+     "",
+     "A nodule with induration is precisely the finding the module says should raise concern for malignancy."
+    ]
+   },
+   {
+    "q": "Which set of investigations matches the module's initial evaluation of a man with bothersome LUTS?",
+    "ch": [
+     "Transrectal ultrasound and urodynamic studies in every patient at first presentation",
+     "Prostate biopsy and pelvic MRI before any medical therapy is started for symptoms",
+     "Cystoscopy and retrograde urethrogram as the standard first-line obstruction assessment",
+     "Serum testosterone and dihydrotestosterone levels to confirm the hormonal mechanism",
+     "AUA Symptom Index/IPSS, digital rectal exam, urinalysis, and post-void residual"
+    ],
+    "correct": 4,
+    "exp": "The module's initial workup is to quantify symptoms with the AUA Symptom Index/IPSS, examine the gland by digital rectal exam, obtain a urinalysis in all patients to exclude infection and hematuria, and assess a post-void residual by bladder scan.",
+    "why": [
+     "Transrectal ultrasound and urodynamics are reserved for complex cases rather than the initial evaluation.",
+     "Biopsy and MRI are not part of the initial BPH workup; even PSA is optional and shared-decision.",
+     "Cystoscopy and urethrography are not first-line here; urethral stricture is a mimic considered when the basics do not fit.",
+     "The module never recommends measuring testosterone or DHT levels; BPH is a clinical diagnosis.",
+     ""
+    ]
+   },
+   {
+    "q": "A man with moderate LUTS and a 25 mL prostate wants relief as quickly as possible. Which therapy does the module support?",
+    "ch": [
+     "Saw palmetto, which the module cites as effective in randomized trials",
+     "An antimuscarinic such as oxybutynin as first-line outlet obstruction therapy",
+     "Finasteride, because it shrinks the gland within a few days of starting",
+     "Combination dutasteride and tamsulosin as the fastest available option",
+     "An alpha-1 blocker such as tamsulosin, which relieves symptoms within days"
+    ],
+    "correct": 4,
+    "exp": "Alpha-1 blockers relax prostatic and bladder-neck smooth muscle and are first-line for symptom relief, working within days and regardless of gland size.",
+    "why": [
+     "The module cites the CAMUS trial showing saw palmetto has no benefit over placebo.",
+     "Antimuscarinics are add-ons for storage symptoms after the outlet is treated, and they risk urinary retention.",
+     "5-alpha-reductase inhibitors take 6-12 months to work and are added for large prostates above roughly 30-40 mL.",
+     "Combination therapy targets moderate-to-severe LUTS with an enlarged gland and high progression risk, and adds side effects.",
+     ""
+    ]
+   },
+   {
+    "q": "A man has taken dutasteride for a year and his PSA is 1.4 ng/mL. How should this value be interpreted?",
+    "ch": [
+     "PSA is unaffected by 5-ARIs and can be read at face value in this patient",
+     "PSA becomes uninterpretable on a 5-ARI and should simply never be measured",
+     "5-ARIs lower PSA roughly by half, so double it to about 2.8 ng/mL",
+     "The value proves prostate cancer, since any detectable PSA on therapy is abnormal",
+     "5-ARIs raise PSA about twofold, so the true value is roughly 0.7 ng/mL"
+    ],
+    "correct": 2,
+    "exp": "Finasteride and dutasteride cut PSA roughly in half, so the measured value must be doubled when screening. Failing to do so can hide a prostate cancer.",
+    "why": [
+     "PSA is very much affected; the module calls the halving effect a pitfall to preempt.",
+     "PSA remains useful on a 5-ARI as long as the measured value is doubled.",
+     "",
+     "A detectable PSA is not itself diagnostic of cancer; the point is to adjust for the drug effect.",
+     "The direction is wrong — 5-alpha-reductase inhibitors lower PSA, they do not raise it."
+    ]
+   },
+   {
+    "q": "Which counseling point does the module tie specifically to tamsulosin before cataract surgery?",
+    "ch": [
+     "The drug must be stopped two weeks beforehand to allow the prostate to shrink",
+     "The eye surgeon must be told, because of intraoperative floppy iris syndrome",
+     "The drug doubles the measured PSA and will confound preoperative screening",
+     "Women of childbearing age must not handle the crushed or broken tablets",
+     "The drug is contraindicated with nitrates and can cause severe hypotension"
+    ],
+    "correct": 1,
+    "exp": "Alpha-1 blockers, tamsulosin especially, are associated with intraoperative floppy iris syndrome, so the module says always to ask about upcoming eye surgery and to tell the ophthalmologist.",
+    "why": [
+     "Gland shrinkage is a 5-alpha-reductase inhibitor effect over 6-12 months and has nothing to do with cataract surgery.",
+     "",
+     "PSA halving is a 5-alpha-reductase inhibitor effect, not an alpha-blocker effect.",
+     "The teratogenicity warning about handling tablets applies to finasteride and dutasteride.",
+     "The nitrate contraindication belongs to tadalafil, the PDE-5 inhibitor option in this module."
+    ]
+   },
+   {
+    "q": "A man with known BPH has a tense, painful suprapubic bladder and has not voided for ten hours. What is the nursing priority, and what should be anticipated afterward?",
+    "ch": [
+     "Withhold catheterization and arrange an outpatient uroflowmetry study this week",
+     "Prompt catheterization, then watch for post-obstructive diuresis with I&O and electrolytes",
+     "Encourage oral fluids and timed voiding, then reassess the bladder in the morning",
+     "Give an over-the-counter antihistamine for comfort and repeat the bladder scan later",
+     "Start finasteride and expect retention to resolve as the gland gradually shrinks"
+    ],
+    "correct": 1,
+    "exp": "Acute urinary retention is a priority: a tense, painful suprapubic bladder needs prompt catheterization, and the nurse should then anticipate post-obstructive diuresis and monitor intake/output and electrolytes.",
+    "why": [
+     "Uroflowmetry assesses obstruction electively; withholding catheterization risks obstructive uropathy and upper-tract damage.",
+     "",
+     "Fluids and timed voiding are chronic measures; a painful distended bladder is a red flag needing immediate decompression.",
+     "Antihistamines and anticholinergics can precipitate retention and are exactly what the module tells patients to avoid.",
+     "A 5-alpha-reductase inhibitor takes 6-12 months to work and cannot relieve acute retention."
+    ]
+   },
+   {
+    "q": "Before adding solifenacin for persistent urgency and frequency in a man treated for BPH, what does the module say to do?",
+    "ch": [
+     "Stop the alpha-blocker first, because the two classes cannot be combined at all",
+     "Obtain a transrectal ultrasound to confirm the gland is under 30 mL in volume",
+     "Order urodynamic testing in every patient before any storage-symptom therapy",
+     "Check the post-void residual first, because antimuscarinics risk urinary retention",
+     "Double the measured PSA to account for the antimuscarinic effect on screening"
+    ],
+    "correct": 3,
+    "exp": "Antimuscarinics are add-ons for predominant storage or OAB symptoms once the outlet has been treated, and the module says to check the post-void residual first because they risk precipitating urinary retention.",
+    "why": [
+     "The module positions antimuscarinics as add-on therapy after the outlet is treated, not as a replacement for the alpha-blocker.",
+     "Transrectal ultrasound is reserved for complex cases and is not the safety step before an antimuscarinic.",
+     "Urodynamics is a complex-case investigation, not a universal prerequisite for storage-symptom therapy.",
+     "",
+     "PSA halving is a 5-alpha-reductase inhibitor effect; antimuscarinics do not alter the PSA."
+    ]
+   },
+   {
+    "q": "Which situation matches the module's threshold for referring a BPH patient for a procedure such as TURP, UroLift, or Rezum?",
+    "ch": [
+     "Refractory symptoms or complications: retention, recurrent UTI, stones, hematuria, renal impairment",
+     "Any man over 70, since histologic BPH is present in most men by that age",
+     "A man whose PSA fell by half after starting a 5-alpha-reductase inhibitor",
+     "Any patient whose IPSS is above zero at the first clinic visit",
+     "A man who has taken tamsulosin for one week without complete relief"
+    ],
+    "correct": 0,
+    "exp": "The module escalates to surgical or procedural therapy for refractory LUTS or for complications: recurrent retention, recurrent urinary tract infections, stones, hematuria, and renal insufficiency.",
+    "why": [
+     "",
+     "Histologic BPH in most men by their 70s-80s is an epidemiologic fact, not a surgical indication.",
+     "A PSA drop of roughly half is the expected pharmacologic effect of a 5-ARI, not a complication.",
+     "IPSS is used to stage severity and drive shared decision-making, not to trigger surgery at any score above zero.",
+     "Alpha-blockers work within days, but incomplete relief at one week is not treatment failure; combination or add-on therapy comes first."
+    ]
+   }
+  ]
+ },
+ "hyponatremia": {
+  "condition": "Hyponatremia",
+  "questions": [
+   {
+    "q": "Hyponatremia is best understood as which kind of disorder?",
+    "ch": [
+     "A disorder of water balance, with free water retained relative to sodium and usually ADH-mediated",
+     "A pure deficit of dietary salt intake that resolves with salt tablets alone",
+     "A disorder of potassium handling that secondarily lowers the measured sodium",
+     "A laboratory artifact in nearly all cases, requiring no further investigation",
+     "A primary failure of the kidney to reabsorb sodium in the proximal tubule"
+    ],
+    "correct": 0,
+    "exp": "The module frames hyponatremia as a relative excess of water rather than a lack of salt: free water is retained relative to sodium, almost always mediated by ADH that is either appropriately or inappropriately switched on.",
+    "why": [
+     "",
+     "The module explicitly says this is an excess of water, not a lack of salt; salt tablets are only a chronic SIADH adjunct.",
+     "Potassium handling is not the mechanism the module teaches; ADH-driven water retention is.",
+     "Pseudohyponatremia from hyperlipidemia or paraproteins is one specific category to exclude, not the usual explanation.",
+     "Proximal tubular sodium wasting is not the framework this module uses to explain hyponatremia."
+    ]
+   },
+   {
+    "q": "A patient with a glucose of 600 mg/dL has a measured sodium of 128 mEq/L. How does the module classify and handle this?",
+    "ch": [
+     "Pseudohyponatremia from paraproteins, best confirmed with a lipid panel",
+     "Hypertonic hyponatremia; correct the sodium by about 2 mEq/L per 100 mg/dL of glucose above 100",
+     "Euvolemic hyponatremia that meets the criteria for SIADH by definition",
+     "Hypovolemic hyponatremia requiring 0.9% normal saline for volume repletion",
+     "True hypotonic hyponatremia requiring immediate 3% hypertonic saline"
+    ],
+    "correct": 1,
+    "exp": "Hyperglycemia pulls water out of cells and produces hypertonic hyponatremia. The module says to add roughly 2 mEq/L to the measured sodium for every 100 mg/dL of glucose above 100, and the corrected value may be normal.",
+    "why": [
+     "Pseudohyponatremia is isotonic and comes from hyperlipidemia or paraproteins, not from hyperglycemia.",
+     "",
+     "SIADH requires hypotonic hyponatremia with urine osm above 100 and urine sodium above 30 in a euvolemic patient.",
+     "There is no evidence of volume depletion here, and saline does not address the osmotic pull of glucose.",
+     "Hypertonic saline is for severe symptomatic hypotonic hyponatremia; this is a translocational effect of glucose."
+    ]
+   },
+   {
+    "q": "Which three-step sequence does the module teach for working up hyponatremia?",
+    "ch": [
+     "TSH, then cortisol, then vaptan therapy begun on the first hospital day",
+     "Serum osmolality, then volume status, then urine osmolality and urine sodium",
+     "Daily weights, then intake and output, then a trial of hypertonic saline",
+     "Urine sodium, then serum potassium, then a formal water deprivation test",
+     "Serum sodium, then head CT, then empiric fluid restriction for every patient"
+    ],
+    "correct": 1,
+    "exp": "The module's algorithm is serum osmolality first, to confirm true hypotonic hyponatremia below 275 mOsm/kg, then volume status, then urine osmolality and urine sodium to localize the cause.",
+    "why": [
+     "TSH and morning cortisol exclude mimics before diagnosing SIADH, but they are not the first step, and vaptans are for refractory cases.",
+     "",
+     "Weights and intake/output are monitoring measures; hypertonic saline is reserved for severe symptomatic disease.",
+     "A water deprivation test is not part of the module's hyponatremia workup at all.",
+     "Head imaging is not in the sequence; serum osmolality comes first and fluid restriction is cause-specific."
+    ]
+   },
+   {
+    "q": "A euvolemic patient has a serum osmolality of 260 mOsm/kg, a urine osmolality of 480 mOsm/kg, and a urine sodium of 55 mEq/L, with normal thyroid, adrenal, and renal function and no diuretic use. What does this pattern indicate?",
+    "ch": [
+     "Beer potomania",
+     "Hypovolemic hyponatremia",
+     "Pseudohyponatremia",
+     "SIADH",
+     "Primary polydipsia"
+    ],
+    "correct": 3,
+    "exp": "The module's SIADH criteria are hypotonic hyponatremia, urine osmolality above 100, urine sodium above 30, clinical euvolemia, and normal thyroid, adrenal, and renal function with no diuretic use — exactly this pattern.",
+    "why": [
+     "Beer potomania also gives a low urine osmolality because of low solute intake.",
+     "Hypovolemic states typically show a urine sodium below 20, and this patient is clinically euvolemic.",
+     "Pseudohyponatremia is isotonic; here the serum osmolality is low, so the hyponatremia is real.",
+     "",
+     "Primary polydipsia produces an appropriately dilute urine, with a urine osmolality below 100."
+    ]
+   },
+   {
+    "q": "What correction limit does the module set for raising the serum sodium, and why?",
+    "ch": [
+     "No limit at all, provided the patient's neurologic symptoms are steadily improving",
+     "Correction to a normal sodium of 140 mEq/L within the first six hours of treatment",
+     "A fall of 6-8 mEq/L in 24 hours, since the danger lies in the sodium being too high",
+     "At least 12 mEq/L in 24 hours, to relieve cerebral edema as quickly as possible",
+     "About 4-6 mEq/L in the first hours and under 8 mEq/L per 24 hours, to avoid osmotic demyelination"
+    ],
+    "correct": 4,
+    "exp": "The module's rule is low and slow: aim for a rise of 4-6 mEq/L in the first hours and stay under 8 mEq/L in 24 hours, tighter in high-risk patients, because overcorrection causes osmotic demyelination syndrome.",
+    "why": [
+     "Improving symptoms do not remove the ceiling; the module calls a sudden large jump a red flag even when the patient looks better.",
+     "Racing to a normal sodium within six hours would far exceed the 24-hour correction limit.",
+     "The problem is a low sodium; the limit governs how fast it is raised, not how fast it is lowered.",
+     "Twelve mEq/L in 24 hours exceeds the ceiling and is precisely the overcorrection that causes central pontine myelinolysis.",
+     ""
+    ]
+   },
+   {
+    "q": "Several days after a chronic hyponatremia was corrected, a patient develops dysarthria, dysphagia, and quadriparesis. What does the module say this represents?",
+    "ch": [
+     "Recurrent hyponatremia from inadequate fluid restriction after discharge",
+     "Cerebral edema because the sodium was raised far too slowly to help",
+     "Osmotic demyelination syndrome, also called central pontine myelinolysis",
+     "A vaptan-induced hepatotoxicity reaction requiring liver transplantation",
+     "An expected transient effect of hypertonic saline that resolves within hours"
+    ],
+    "correct": 2,
+    "exp": "Osmotic demyelination is delayed, presenting days later with dysarthria, dysphagia, quadriparesis, and a locked-in state after chronic hyponatremia has been corrected too fast.",
+    "why": [
+     "Recurrent hyponatremia would lower the sodium again rather than produce this delayed brainstem syndrome.",
+     "Cerebral edema comes from an acute fall in sodium, not from correcting it; here the sodium was raised.",
+     "",
+     "Vaptan hepatotoxicity is a genuine caution in the module, but it does not cause dysarthria, dysphagia, and quadriparesis.",
+     "These deficits are not a transient expected effect; the module lists them explicitly as a red flag."
+    ]
+   },
+   {
+    "q": "Which treatment does the module pair with hypovolemic hyponatremia, and what is the mechanism of benefit?",
+    "ch": [
+     "Tolvaptan, which blocks V2 receptors and is first-line for volume depletion",
+     "Fluid restriction to under 1000 mL per day, which is first-line in this subtype",
+     "Oral urea, which promotes osmotic water excretion in the depleted patient",
+     "Desmopressin with D5W, which clamps ADH and repletes the circulation",
+     "0.9% normal saline, because restoring volume shuts off ADH and sodium self-corrects"
+    ],
+    "correct": 4,
+    "exp": "Isotonic 0.9% saline repletes volume in hypovolemic hyponatremia. Once volume is restored the ADH stimulus switches off and the sodium self-corrects; watch for a sudden brisk diuresis signaling overcorrection.",
+    "why": [
+     "Vaptans are for euvolemic or hypervolemic hyponatremia refractory to fluid restriction, not for volume depletion.",
+     "Fluid restriction is first-line for SIADH and for hypervolemic states such as heart failure and cirrhosis.",
+     "Oral urea is a chronic SIADH management option rather than a treatment for hypovolemia.",
+     "DDAVP with D5W is the rescue used when the correction is happening too fast.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with a recent subarachnoid hemorrhage is hyponatremic with a high urine sodium but is clearly hypovolemic. How does the module resolve this?",
+    "ch": [
+     "It is beer potomania; the urine osmolality will be under 100 mOsm/kg",
+     "It is SIADH; begin fluid restriction to under 1000 mL per day immediately",
+     "It is cerebral salt wasting; volume status separates it from SIADH and it is treated with salt and fluids",
+     "It is pseudohyponatremia; recheck after sending lipids and serum protein levels",
+     "It is hypertonic hyponatremia; correct the sodium for the measured glucose first"
+    ],
+    "correct": 2,
+    "exp": "Cerebral salt wasting and SIADH both show a high urine sodium, but CSW is hypovolemic and often follows subarachnoid hemorrhage. Volume status is the discriminator and the treatments are opposite — CSW gets salt and fluids.",
+    "why": [
+     "Beer potomania is a low-solute state with a dilute urine, not a hypovolemic high-urine-sodium state.",
+     "SIADH requires clinical euvolemia, and restricting fluid in a hypovolemic patient is the opposite of what is needed.",
+     "",
+     "Pseudohyponatremia is isotonic and comes from hyperlipidemia or paraproteins, not from a volume-depleted neurosurgical patient.",
+     "There is nothing here to suggest hyperglycemia driving a translocational fall in sodium."
+    ]
+   },
+   {
+    "q": "Which of the following does the module identify as a classic drug cause of hyponatremia?",
+    "ch": [
+     "Thiazide diuretics, which impair urinary dilution — along with SSRIs and carbamazepine",
+     "Oral urea, the leading iatrogenic cause of a falling serum sodium",
+     "Loop diuretics, which impair urinary dilution more than any other class",
+     "Nebulized albuterol, through a direct action on the collecting duct",
+     "High-intensity statins, through a described effect on free-water clearance"
+    ],
+    "correct": 0,
+    "exp": "The module names thiazides, SSRIs, carbamazepine, and desmopressin among the medications to ask about, and its pearl is thiazides, not loops: thiazides impair urinary dilution while loop diuretics tend not to cause hyponatremia.",
+    "why": [
+     "",
+     "Oral urea is a treatment used in chronic SIADH to promote water excretion, not a cause of hyponatremia.",
+     "The module's pearl is the reverse — loop diuretics tend not to cause hyponatremia.",
+     "Albuterol is not among the medications this module lists as a cause of hyponatremia.",
+     "Statins are not listed anywhere in this module as a cause of a low sodium."
+    ]
+   },
+   {
+    "q": "During active correction, a nurse notices the serum sodium has jumped far more than expected over a few hours, and the patient seems more alert. What does the module direct the nurse to do?",
+    "ch": [
+     "Lift the fluid restriction and allow the patient free access to oral water",
+     "Increase the hypertonic saline rate while the patient is responding so well",
+     "Withhold the next serum sodium draw until morning to reduce needle sticks",
+     "Report it immediately as a red flag for osmotic demyelination, even though the patient looks better",
+     "Document the improvement and continue the hypertonic saline at the ordered rate"
+    ],
+    "correct": 3,
+    "exp": "The module tells nurses that a sudden large jump in sodium is a red flag for osmotic demyelination and must be reported immediately even if the patient looks better. Correction can then be halted and DDAVP with D5W used as rescue.",
+    "why": [
+     "Free access to water is not the controlled rescue the module describes; DDAVP with D5W under serial sodium monitoring is.",
+     "Increasing the rate is exactly the wrong response to an overly rapid rise in sodium.",
+     "Serial sodium checks every two to four hours during active correction are the monitoring standard here.",
+     "",
+     "Continuing at the same rate risks exceeding the 8 mEq/L per 24-hour ceiling and causing demyelination."
+    ]
+   }
+  ]
+ },
+ "stroke": {
+  "condition": "Ischemic Stroke",
+  "questions": [
+   {
+    "q": "What is the ischemic penumbra, and why does it matter in acute stroke?",
+    "ch": [
+     "The watershed zone between two arterial territories, seen only in global hypoperfusion",
+     "Ischemic but still viable tissue around the infarct core — the target of reperfusion therapy",
+     "The rim of hemorrhagic transformation seen after thrombolysis in a completed infarct",
+     "Tissue already infarcted beyond salvage, which defines the size of the final deficit",
+     "The area of vasogenic edema that appears three to five days after a large infarct"
+    ],
+    "correct": 1,
+    "exp": "The penumbra is ischemic but salvageable tissue surrounding the infarcted core. It is the rationale for reperfusion — time is brain — and perfusion imaging showing core-penumbra mismatch is what extends treatment windows to 24 hours.",
+    "why": [
+     "The watershed or border-zone pattern reflects hypoperfusion and is a separate concept from the penumbra.",
+     "",
+     "Hemorrhagic conversion is a complication to watch for after thrombolysis, not the definition of the penumbra.",
+     "The infarcted, unsalvageable tissue is the core; the penumbra is specifically what can still be saved.",
+     "Malignant edema after a large MCA infarct is listed as a red flag in this module, not as the penumbra."
+    ]
+   },
+   {
+    "q": "What is the specific job of the immediate non-contrast head CT in suspected acute ischemic stroke?",
+    "ch": [
+     "To measure the NIHSS objectively and replace the bedside neurologic examination",
+     "To identify a large-vessel occlusion so that thrombectomy can be planned promptly",
+     "To define the ischemic core and penumbra before an extended-window decision",
+     "To exclude hemorrhage before thrombolytics are given",
+     "To confirm the infarct, since early ischemia is conspicuous on CT within minutes"
+    ],
+    "correct": 3,
+    "exp": "The non-contrast head CT is the immediate confirmatory step and its job is to exclude hemorrhage before thrombolytics; early ischemia may be subtle. Thrombolytics given into a bleed are catastrophic.",
+    "why": [
+     "The NIHSS is a clinical score from 0 to 42 obtained at the bedside, not derived from imaging.",
+     "CTA is the study that identifies large-vessel occlusion for thrombectomy.",
+     "CT or MR perfusion is what defines core versus penumbra for extended-window therapy.",
+     "",
+     "Early ischemic change may be subtle on CT; DWI-MRI is the sensitive test for early infarction."
+    ]
+   },
+   {
+    "q": "Why does the module prefer BE-FAST over FAST for rapid field and bedside stroke screening?",
+    "ch": [
+     "It records the last known well time, which FAST deliberately leaves out",
+     "It substitutes a fingerstick glucose for the neurologic screening examination",
+     "It adds a blood pressure threshold that determines thrombolysis eligibility",
+     "The added Balance and Eyes items catch posterior-circulation strokes",
+     "It replaces the NIHSS as the definitive severity score used in the hospital"
+    ],
+    "correct": 3,
+    "exp": "BE-FAST stands for Balance, Eyes, Face, Arm, Speech, Time. The module says it beats FAST by catching posterior-circulation strokes through the added Balance and Eyes items.",
+    "why": [
+     "Establishing last known well is essential, but the T in both FAST and BE-FAST already stands for Time.",
+     "Glucose is checked to rule out the classic mimic; it does not replace the neurologic screen.",
+     "Blood pressure thresholds such as under 185/110 before thrombolysis are treatment criteria, not part of the screening mnemonic.",
+     "",
+     "The NIHSS remains the severity score from 0 to 42; BE-FAST is a rapid screening tool."
+    ]
+   },
+   {
+    "q": "Which pair of time windows does the module give for acute reperfusion in ischemic stroke?",
+    "ch": [
+     "IV thrombolysis within 4.5 hours; thrombectomy up to 24 hours for LVO with favorable perfusion imaging",
+     "IV thrombolysis within 12 hours; thrombectomy only within that same 12 hours",
+     "IV thrombolysis at any time; thrombectomy only after aspirin has been given",
+     "IV thrombolysis up to 24 hours; thrombectomy up to 4.5 hours after onset",
+     "IV thrombolysis up to 3 hours; thrombectomy up to 6 hours in all patients"
+    ],
+    "correct": 0,
+    "exp": "The module's two windows are IV thrombolysis within 4.5 hours of last known well, and mechanical thrombectomy up to 24 hours for large-vessel occlusion when perfusion imaging shows salvageable tissue, per DAWN and DEFUSE-3.",
+    "why": [
+     "",
+     "Neither of the module's two windows is 12 hours.",
+     "Thrombolysis is strictly time-limited, and aspirin is deliberately withheld for 24 hours after thrombolysis.",
+     "The windows are reversed here; thrombolysis is the shorter 4.5-hour window and thrombectomy the longer one.",
+     "The module gives 4.5 hours for thrombolysis, and thrombectomy extends to 24 hours with perfusion mismatch rather than 6 hours for everyone."
+    ]
+   },
+   {
+    "q": "What blood pressure thresholds does the module attach to thrombolysis?",
+    "ch": [
+     "No threshold before, but below 185/110 for the following week",
+     "Below 220/120 before and below 200/110 after thrombolysis",
+     "Below 140/90 before and below 130/80 after thrombolysis",
+     "Below 160/100 before, with no target specified afterward at all",
+     "Below 185/110 before and below 180/105 after thrombolysis"
+    ],
+    "correct": 4,
+    "exp": "Blood pressure must be below 185/110 before thrombolysis and kept below 180/105 afterward. Uncontrolled hypertension above 185/110 is a red flag that must be lowered before treatment to reduce bleeding risk.",
+    "why": [
+     "A pre-treatment threshold is explicitly required — treatment is withheld until the pressure is below 185/110.",
+     "Those numbers sit far above the module's thresholds and would carry an unacceptable bleeding risk.",
+     "Permissive hypertension is allowed in patients who are not thrombolysed; driving the pressure this low is not the taught target.",
+     "The module specifies both a pre-treatment and a post-treatment target, not just one.",
+     ""
+    ]
+   },
+   {
+    "q": "When does the module say aspirin should be started after IV thrombolysis?",
+    "ch": [
+     "After 21 days, once dual antiplatelet therapy has been completed in full",
+     "After 24 hours, once repeat imaging has confirmed there is no hemorrhage",
+     "Immediately, together with the thrombolytic bolus, to prevent re-occlusion",
+     "Within one hour of the infusion finishing, once the NIHSS has improved",
+     "Never, because thrombolysed patients go straight to long-term anticoagulation"
+    ],
+    "correct": 1,
+    "exp": "Aspirin is started within 24-48 hours of stroke, but if thrombolysis was given the module says to wait 24 hours and confirm there is no hemorrhage on repeat imaging first.",
+    "why": [
+     "The 21-day course is short-term dual antiplatelet therapy for minor stroke or high-risk TIA, not a delay before aspirin.",
+     "",
+     "Antiplatelets in the first 24 hours after thrombolysis add bleeding risk and are explicitly not given.",
+     "One hour is well inside the 24-hour hold the module requires after thrombolysis.",
+     "Aspirin is standard; anticoagulation is reserved for cardioembolic mechanisms and its timing depends on infarct size."
+    ]
+   },
+   {
+    "q": "Which nursing action does the module tie to preventing a leading complication after stroke?",
+    "ch": [
+     "Allow permissive hyperthermia, since fever is protective after infarction",
+     "Maintain a blood glucose above 200 mg/dL to fuel the ischemic penumbra",
+     "Screen the swallow and keep the patient NPO until the screen is passed",
+     "Encourage early oral hydration to reduce the risk of hemoconcentration",
+     "Keep the head of the bed flat to maximize cerebral perfusion pressure"
+    ],
+    "correct": 2,
+    "exp": "Aspiration is a leading complication, so the module says to screen the swallow for dysphagia and keep the patient NPO until it is passed, elevate the head of the bed, and monitor for aspiration pneumonia.",
+    "why": [
+     "Normothermia is the goal; fever worsens outcomes and should be treated.",
+     "Normoglycemia is the goal; hyperglycemia worsens outcomes after stroke.",
+     "",
+     "Oral intake before a passed swallow screen is precisely the aspiration risk the module warns about.",
+     "The module says to elevate the head of the bed, not keep the patient flat."
+    ]
+   },
+   {
+    "q": "Six hours after alteplase, a patient develops a sudden severe headache, vomiting, and a falling level of consciousness. What is the concern and the immediate action?",
+    "ch": [
+     "Hemorrhagic conversion; stop the thrombolytic and obtain an emergent CT",
+     "Recurrent embolism; start therapeutic anticoagulation without imaging",
+     "Expected post-thrombolysis fatigue; recheck the NIHSS in the morning",
+     "Malignant MCA edema; proceed directly to decompressive hemicraniectomy",
+     "Hypoglycemia mimic; give aspirin and repeat the fingerstick glucose"
+    ],
+    "correct": 0,
+    "exp": "Sudden severe headache, vomiting, a rapid decline in consciousness, or a new deficit after tPA suggests hemorrhagic conversion. The module says to stop the thrombolytic and get an emergent CT.",
+    "why": [
+     "",
+     "Anticoagulating a possible intracranial bleed without imaging would be dangerous.",
+     "The module treats any acute change after thrombolysis as a possible bleed requiring immediate notification, not observation.",
+     "Malignant edema after a large MCA infarct evolves over days and is a separate red flag; surgery would never precede imaging.",
+     "Glucose is the classic mimic at presentation, and aspirin is contraindicated in the first 24 hours after thrombolysis."
+    ]
+   },
+   {
+    "q": "A patient's stroke workup shows atrial fibrillation on telemetry. Which secondary prevention strategy does the module tie to this mechanism?",
+    "ch": [
+     "Long-term dual antiplatelet therapy with aspirin plus clopidogrel indefinitely",
+     "Carotid endarterectomy followed by antiplatelet therapy and a high-intensity statin",
+     "Anticoagulation with a DOAC or warfarin, timed according to infarct size",
+     "Aggressive risk-factor control alone, as used for lacunar small-vessel disease",
+     "Permissive hypertension maintained indefinitely to preserve collateral flow"
+    ],
+    "correct": 2,
+    "exp": "Classifying by TOAST mechanism drives prevention: atrial fibrillation means cardioembolic stroke, so anticoagulate. Timing depends on infarct size because of bleeding risk, and routine combination with an antiplatelet is avoided without a separate indication.",
+    "why": [
+     "The module limits dual antiplatelet therapy to about 21 days for minor stroke or high-risk TIA and warns against long-term DAPT.",
+     "Endarterectomy belongs to the carotid stenosis mechanism, not to cardioembolism.",
+     "",
+     "Risk-factor control alone is the lacunar small-vessel strategy; atrial fibrillation calls for anticoagulation.",
+     "Permissive hypertension is an acute-phase strategy in non-thrombolysed patients, not a prevention plan."
+    ]
+   },
+   {
+    "q": "Which statement reflects the module's impress-the-attending points on acute stroke care?",
+    "ch": [
+     "The clock alone should decide late-window therapy, since perfusion imaging is unreliable",
+     "Cryptogenic stroke should default to antiplatelet therapy without further rhythm monitoring",
+     "Statins should be started only when the baseline LDL is elevated above target",
+     "Alteplase should always be chosen over tenecteplase, especially before transfer",
+     "Tenecteplase is a single-bolus alternative to alteplase, and door-to-needle should be under 60 minutes"
+    ],
+    "correct": 4,
+    "exp": "The module highlights the shift toward tenecteplase as a single-bolus alternative to alteplase, especially in drip-and-ship transfers, and quotes a door-to-needle goal of under 60 minutes.",
+    "why": [
+     "The module frames late-window decisions around core versus penumbra on perfusion imaging rather than the clock alone.",
+     "For cryptogenic stroke it proposes prolonged rhythm monitoring to detect occult atrial fibrillation before defaulting to antiplatelet-only.",
+     "A high-intensity statin is started regardless of the baseline LDL.",
+     "The module says tenecteplase is increasingly preferred and is favored before transfer for thrombectomy.",
+     ""
+    ]
+   }
+  ]
+ },
+ "tia": {
+  "condition": "Transient Ischemic Attack",
+  "questions": [
+   {
+    "q": "How does the module define a transient ischemic attack?",
+    "ch": [
+     "Transient focal neurologic dysfunction from ischemia without acute infarction on imaging",
+     "A hemorrhagic event that resolves once the blood is reabsorbed by the brain",
+     "Any neurologic deficit that resolves within 24 hours, regardless of imaging",
+     "A small completed infarct that produces only mild, temporary symptoms",
+     "A migraine-equivalent phenomenon with positive visual and sensory features"
+    ],
+    "correct": 0,
+    "exp": "The definition is tissue-based: transient focal neurologic dysfunction caused by ischemia without evidence of acute infarction on imaging. The old time-based rule of under 24 hours is obsolete.",
+    "why": [
+     "",
+     "TIA is ischemic; hemorrhage on CT means no antithrombotics and management as hemorrhagic stroke.",
+     "The 24-hour time-based rule is explicitly called obsolete by the module.",
+     "If there is an infarct — a DWI-positive lesion — it is a stroke, not a TIA, no matter how fast the symptoms resolved.",
+     "Migraine aura is listed as a stroke mimic with positive phenomena, not as a form of TIA."
+    ]
+   },
+   {
+    "q": "A patient describes a curtain coming down over one eye, lasting five minutes and then clearing completely. What does the module say this signals, and what should be imaged?",
+    "ch": [
+     "Retinal migraine; no vascular imaging is required after a normal eye exam",
+     "Amaurosis fugax from ipsilateral carotid disease — image the carotids",
+     "Occipital lobe ischemia; the finding localizes to the posterior circulation",
+     "Optic neuritis; obtain an orbital MRI with contrast rather than vessel imaging",
+     "Papilledema from raised intracranial pressure; measure an opening pressure"
+    ],
+    "correct": 1,
+    "exp": "Amaurosis fugax — transient monocular vision loss described as a curtain coming down over one eye — signals ipsilateral carotid disease, and the module says to image the carotids.",
+    "why": [
+     "The module treats this as a vascular warning sign requiring carotid imaging, not as a benign migraine variant.",
+     "",
+     "Monocular vision loss localizes to the eye or its arterial supply; occipital lesions cause a hemianopia instead.",
+     "Optic neuritis is not among the mechanisms this module describes for transient monocular vision loss.",
+     "Papilledema is not a mechanism of transient ischemic monocular vision loss in this module."
+    ]
+   },
+   {
+    "q": "Which items make up the ABCD² score as the module lists it?",
+    "ch": [
+     "Age ≥60, BP ≥140/90, clinical features, duration ≥60 minutes, and diabetes",
+     "Atrial fibrillation, BMI, carotid stenosis, DWI lesion, and dyslipidemia",
+     "Age, baseline NIHSS, CT findings, dissection risk, and dehydration",
+     "Age, bleeding risk, cholesterol, duration, and dysphagia",
+     "Aphasia, blood glucose, creatinine, diplopia, and dizziness"
+    ],
+    "correct": 0,
+    "exp": "ABCD² is Age ≥60, BP ≥140/90, Clinical features (unilateral weakness or speech disturbance), Duration ≥60 minutes, and Diabetes. It estimates short-term stroke risk and guides the urgency of admission and workup.",
+    "why": [
+     "",
+     "Atrial fibrillation, carotid stenosis, and DWI lesions are workup findings rather than score components.",
+     "The NIHSS and CT findings belong to acute stroke assessment, not to the ABCD² score.",
+     "Bleeding risk, cholesterol, and dysphagia are not components of this score.",
+     "None of these five items belongs to ABCD², although glucose is checked separately as a stroke mimic."
+    ]
+   },
+   {
+    "q": "Which imaging test does the module prefer to distinguish a TIA from a minor stroke?",
+    "ch": [
+     "Echocardiography, which detects the infarct as a wall motion change",
+     "Catheter angiography, performed routinely in every TIA presentation",
+     "MRI with DWI, because a DWI-positive lesion means infarction, not TIA",
+     "Non-contrast head CT, which reliably shows small early infarcts",
+     "Carotid duplex ultrasound, which images the brain parenchyma directly"
+    ],
+    "correct": 2,
+    "exp": "MRI with DWI is preferred because it excludes infarction and separates TIA from minor stroke; a DWI-positive scan means it is a stroke regardless of how quickly the symptoms resolved. Non-contrast CT is often obtained first only to rule out hemorrhage.",
+    "why": [
+     "Echocardiography looks for an embolic source, not for cerebral infarction itself.",
+     "Catheter angiography is not the routine test the module recommends for evaluating a TIA.",
+     "",
+     "CT is often first to rule out hemorrhage, but it is not the sensitive test for small early infarcts.",
+     "Carotid duplex is vascular imaging looking for stenosis or dissection; it does not image brain tissue."
+    ]
+   },
+   {
+    "q": "Why does the module call a TIA a medical emergency rather than a benign event?",
+    "ch": [
+     "Because the deficit is likely to persist for several weeks before improving",
+     "Because TIA converts to intracerebral hemorrhage in most untreated patients",
+     "Because the transient deficit itself causes permanent cognitive impairment",
+     "Because a TIA always indicates a mechanical valve requiring urgent surgery",
+     "Up to 10-15% have a stroke within 90 days, half of those in the first 48 hours"
+    ],
+    "correct": 4,
+    "exp": "TIA and ischemic stroke are a continuum: up to 10-15% of patients have a stroke within 90 days and half of those occur within the first 48 hours, which is why transient does not mean benign.",
+    "why": [
+     "By definition the deficit resolves completely, usually within minutes — the danger lies in what comes next.",
+     "The module describes progression to ischemic stroke, not conversion to hemorrhage.",
+     "The concern is a subsequent stroke, not cognitive damage from the transient event itself.",
+     "Mechanical valves are one specific anticoagulation scenario, not a universal implication of TIA.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient has a high-risk TIA with an ABCD² score of 5. Which antiplatelet strategy does the module support?",
+    "ch": [
+     "Clopidogrel alone, started only after the carotid imaging has returned",
+     "No antiplatelet until an echocardiogram excludes a cardioembolic source",
+     "Aspirin monotherapy alone, since dual therapy has no role in high-risk TIA",
+     "Aspirin plus clopidogrel for 21 days, then step down to a single agent",
+     "Aspirin plus clopidogrel continued indefinitely for maximal protection"
+    ],
+    "correct": 3,
+    "exp": "For high-risk TIA with an ABCD² of 4 or more, or minor stroke, the module supports short-course dual antiplatelet therapy — aspirin plus clopidogrel for 21 days — then a single agent, citing POINT and CHANCE.",
+    "why": [
+     "Aspirin should start promptly once hemorrhage is excluded, without waiting for the vascular workup.",
+     "The module says not to delay antiplatelet therapy for the full workup in non-cardioembolic TIA.",
+     "Dual antiplatelet therapy is specifically indicated for high-risk TIA per the POINT and CHANCE trials.",
+     "",
+     "The module says never to continue long-term dual antiplatelet therapy, because bleeding risk outweighs benefit."
+    ]
+   },
+   {
+    "q": "Carotid imaging after a TIA shows 80% stenosis on the symptomatic side. What does the module recommend?",
+    "ch": [
+     "Repeat duplex ultrasound in one year with no change to current therapy",
+     "Medical therapy only, since revascularization is reserved for total occlusion",
+     "Endarterectomy deferred at least six months to let the plaque stabilize first",
+     "Anticoagulation with a DOAC instead of any surgical or stenting procedure",
+     "Endarterectomy or stenting, ideally within about two weeks of the event"
+    ],
+    "correct": 4,
+    "exp": "Symptomatic carotid stenosis of 70-99%, and selected cases of 50-69%, benefits from revascularization by endarterectomy or stenting, ideally within about two weeks.",
+    "why": [
+     "Watchful waiting at this degree of symptomatic stenosis misses the narrow window of maximum benefit.",
+     "Revascularization is indicated at 70-99% symptomatic stenosis, well short of total occlusion.",
+     "Delay works against the patient; the module emphasizes acting within roughly two weeks of the event.",
+     "Anticoagulation is for cardioembolic mechanisms such as atrial fibrillation, not for symptomatic carotid atherosclerosis.",
+     ""
+    ]
+   },
+   {
+    "q": "A TIA patient is found to have atrial fibrillation and a mechanical mitral valve. Which anticoagulant does the module specify?",
+    "ch": [
+     "Rivaroxaban, dose-reduced for the valve rather than for renal function",
+     "Aspirin plus clopidogrel indefinitely in place of anticoagulation entirely",
+     "Dabigatran, which the module recommends specifically for mechanical valves",
+     "Warfarin, with an INR target of 2.5-3.5 for a mechanical mitral valve",
+     "Apixaban, because DOACs are preferred in every atrial fibrillation patient"
+    ],
+    "correct": 3,
+    "exp": "DOACs are contraindicated with mechanical valves and severe mitral stenosis, so warfarin is used. The module gives an INR target of 2.5-3.5 for mechanical mitral valves, versus 2-3 for mitral stenosis with AF and current-generation mechanical aortic valves.",
+    "why": [
+     "Rivaroxaban is a DOAC and is contraindicated here, and DOAC dose adjustment is renal rather than valvular.",
+     "Dual antiplatelet therapy is a 21-day strategy for high-risk TIA and does not substitute for anticoagulation in a mechanical valve.",
+     "Dabigatran is a DOAC and is likewise contraindicated in mechanical valves.",
+     "",
+     "DOACs are preferred for non-valvular atrial fibrillation; a mechanical valve is the stated exception."
+    ]
+   },
+   {
+    "q": "A 38-year-old has a transient hemiparesis along with neck pain, headache, and a partial ptosis with miosis on the same side. What does the module say to suspect?",
+    "ch": [
+     "Crescendo TIAs from a critical carotid plaque requiring urgent endarterectomy",
+     "Small-vessel lacunar disease from long-standing untreated hypertension",
+     "Arterial dissection, suggested by neck pain and headache with Horner syndrome in a younger patient",
+     "Cardioembolism from previously undiagnosed paroxysmal atrial fibrillation",
+     "Migraine aura, because the deficit was transient in a patient under forty"
+    ],
+    "correct": 2,
+    "exp": "The module lists neck pain or headache with Horner syndrome in a younger patient as the red flag for arterial dissection, which it also names as a less common mechanism of TIA.",
+    "why": [
+     "Crescendo TIAs are repeated or worsening attacks; the neck pain and Horner syndrome here point elsewhere.",
+     "Lacunar small-vessel disease does not produce neck pain or a Horner syndrome.",
+     "",
+     "Cardioembolism would not explain the ipsilateral neck pain and Horner syndrome.",
+     "Migraine aura is a positive phenomenon; this is a negative focal deficit with vascular red flags."
+    ]
+   },
+   {
+    "q": "The standard workup after a TIA is unrevealing and no embolic source is found. Which next step does the module recommend?",
+    "ch": [
+     "Proceed to carotid endarterectomy despite the absence of any stenosis",
+     "Prolonged rhythm monitoring — a 30-day event monitor or loop recorder — for paroxysmal AF",
+     "Stop all antithrombotic therapy, since no mechanism has been identified",
+     "Start empiric warfarin with an INR target of 2.5-3.5 for presumed embolism",
+     "Repeat the MRI with DWI weekly until a lesion eventually appears on imaging"
+    ],
+    "correct": 1,
+    "exp": "For cryptogenic cases the module recommends prolonged cardiac monitoring, such as a 30-day event monitor or an implantable loop recorder, to detect paroxysmal atrial fibrillation.",
+    "why": [
+     "Endarterectomy is indicated only for symptomatic stenosis of 70-99%, or selected 50-69% lesions.",
+     "",
+     "Antiplatelet therapy and a statin remain the backbone of secondary prevention even when the mechanism is unclear.",
+     "Empiric anticoagulation is not recommended; the aim is to document atrial fibrillation first.",
+     "Serial MRI does not identify the embolic source, whereas rhythm monitoring can."
+    ]
+   }
+  ]
+ }
+}

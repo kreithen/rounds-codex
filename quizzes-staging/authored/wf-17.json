@@ -1,0 +1,977 @@
+{
+ "cataracts": {
+  "condition": "Cataracts",
+  "questions": [
+   {
+    "q": "Which description best characterizes a cataract?",
+    "ch": [
+     "Acute rise in intraocular pressure producing a painful red eye with halos and a fixed pupil",
+     "Degeneration of the central retina causing distorted central vision with drusen",
+     "Progressive opacification of the crystalline lens producing painless, gradual loss of acuity and contrast",
+     "Inflammation of the uveal tract producing photophobia with anterior chamber cells and flare",
+     "Separation of the retina producing flashes, floaters, and a curtain across the visual field"
+    ],
+    "correct": 2,
+    "exp": "A cataract is clouding of the normally transparent crystalline lens from oxidative damage and cross-linking of lens crystallin proteins, which scatters and blocks light and reduces both acuity and contrast — painlessly and gradually.",
+    "why": [
+     "A painful red eye with halos and a mid-dilated fixed pupil is acute angle-closure glaucoma, which the module says explicitly is NOT a cataract.",
+     "Macular degeneration is one of the competing diagnoses the dilated fundus exam is performed to exclude; it is a retinal, not a lens, process.",
+     "",
+     "Anterior chamber cells and flare with photophobia describe uveitis; a cataract is not an inflammatory process.",
+     "Flashes, floaters, and a curtain over the visual field describe retinal detachment — a post-operative red flag rather than the cataract itself."
+    ]
+   },
+   {
+    "q": "A 58-year-old with diabetes who has taken long-term corticosteroids reports disabling glare and difficulty reading. Which cataract morphology is most likely?",
+    "ch": [
+     "Cortical spoke-like cataract",
+     "Congenital rubella-associated cataract",
+     "Traumatic cataract from remote blunt injury",
+     "Posterior subcapsular cataract",
+     "Nuclear sclerotic cataract"
+    ],
+    "correct": 3,
+    "exp": "Posterior subcapsular cataract sits at the back of the lens, is the type the module ties to steroid use and diabetes, and is the one that most impairs near vision and causes glare.",
+    "why": [
+     "Cortical cataract forms spoke-like wedges and is not the morphology the module links to steroids or diabetes.",
+     "Congenital cataract from rubella or another TORCH infection presents in infancy with leukocoria, not in an adult on steroids.",
+     "Prior trauma is a listed risk factor but does not account for this patient's steroid and diabetes exposure or the glare pattern described.",
+     "",
+     "Nuclear sclerosis is the central age-related change that causes a myopic shift, not the steroid and diabetes cataract."
+    ]
+   },
+   {
+    "q": "An 80-year-old who has needed reading glasses for 25 years now reads the newspaper without them, while his distance vision is worsening. What explains this?",
+    "ch": [
+     "A nuclear sclerotic cataract producing a myopic shift, known as 'second sight'",
+     "Posterior capsular opacification developing after previous lens surgery",
+     "Resolution of presbyopia as the ciliary muscle strengthens with age",
+     "A cortical cataract producing spoke-like wedge opacities in the lens periphery",
+     "Steroid-induced posterior subcapsular change that improves near focus"
+    ],
+    "correct": 0,
+    "exp": "Nuclear sclerotic cataract causes a temporary myopic shift — 'second sight' — that improves near vision and lets some elderly patients read without glasses again even as overall acuity declines.",
+    "why": [
+     "",
+     "Posterior capsular opacification is the late clouding that follows cataract surgery; this patient has had no surgery, and it does not improve near vision.",
+     "Presbyopia does not resolve with age, and the module attributes improved near reading to a change in the lens rather than to the ciliary muscle.",
+     "Cortical cataract is described only as spoke-like wedge opacities; the module attributes the myopic shift specifically to nuclear sclerosis.",
+     "Posterior subcapsular cataract is the type that most impairs near vision and causes glare — the opposite of this patient's improved reading."
+    ]
+   },
+   {
+    "q": "Which statement about treating an age-related cataract is correct?",
+    "ch": [
+     "Topical antioxidant drops slowly reverse lens opacification over several months",
+     "Phacoemulsification with intraocular lens implantation is the only proven treatment",
+     "YAG laser capsulotomy is the standard first procedure for a cloudy natural lens",
+     "A tapering course of prednisolone acetate clears the lens opacity in most patients",
+     "Updated spectacle correction halts progression and removes the need for surgery"
+    ],
+    "correct": 1,
+    "exp": "The module states that surgery — phacoemulsification with intraocular lens implantation — is the definitive and only proven treatment, and that no drug reverses a cataract.",
+    "why": [
+     "No drug or drop reverses a cataract; the module says this explicitly in the treatment section.",
+     "",
+     "YAG capsulotomy treats posterior capsular opacification AFTER cataract surgery, not the original cloudy natural lens.",
+     "Topical prednisolone controls post-operative intraocular inflammation, and chronic steroids are themselves a cataract risk factor.",
+     "Updated glasses are only a short-term bridge for early, non-disabling cataract and do not halt progression."
+    ]
+   },
+   {
+    "q": "What is the modern indication for cataract surgery?",
+    "ch": [
+     "Vision loss and glare that impair the patient's daily function",
+     "A myopic shift documented on the most recent spectacle refraction",
+     "A Snellen acuity of 20/50 or worse in the better-seeing eye",
+     "Any visible lens opacity discovered on slit-lamp examination",
+     "An absent red reflex on penlight examination of the adult eye"
+    ],
+    "correct": 0,
+    "exp": "Surgery is offered once glare and vision loss impair daily function — driving, reading, falls — rather than by a fixed acuity number, and the module says to document that visual-function rationale.",
+    "why": [
+     "",
+     "A myopic shift is the 'second sight' of nuclear sclerosis and may even improve near reading; it is not an indication to operate.",
+     "The module is explicit that surgery is indicated by functional impairment, not by a fixed acuity cutoff.",
+     "A lens opacity on slit lamp confirms and grades the diagnosis but by itself does not justify operating.",
+     "A dulled or absent red reflex is a diagnostic clue, and in a child an emergency, but in an adult it is not the surgical trigger."
+    ]
+   },
+   {
+    "q": "Before phacoemulsification, which assessment selects the power of the intraocular lens?",
+    "ch": [
+     "Dilated fundus examination of the macula and optic disc",
+     "Snellen visual acuity testing at distance and at near",
+     "Slit-lamp grading of the density of the lens opacity",
+     "Optical biometry measuring keratometry and axial length",
+     "Brightness acuity (glare) testing under bright illumination"
+    ],
+    "correct": 3,
+    "exp": "Optical biometry — keratometry plus axial length — is the pre-operative measurement that calculates intraocular lens power.",
+    "why": [
+     "The dilated fundus exam establishes candidacy by excluding competing causes such as macular degeneration, glaucoma, or retinopathy.",
+     "Snellen acuity quantifies functional loss but gives no information about the required intraocular lens power.",
+     "Slit-lamp grading characterizes and grades the cataract itself, not the optics needed to replace the lens.",
+     "",
+     "Brightness acuity testing reveals disabling glare when Snellen acuity looks fair; it does not measure the eye for a lens."
+    ]
+   },
+   {
+    "q": "A patient is discharged the day of cataract surgery. Which instruction is most important to reinforce?",
+    "ch": [
+     "Return this week to be fitted for the final new spectacle prescription",
+     "Avoid rubbing, bending, straining, or lifting heavy objects and wear the eye shield",
+     "Sleep flat on the back with no eye covering so the eye can breathe",
+     "Stop all drops as soon as the eye feels comfortable and vision clears",
+     "Expect severe eye pain for the first week and manage it at home"
+    ],
+    "correct": 1,
+    "exp": "Post-operative teaching centers on not rubbing, bending, straining, or lifting heavy objects — all of which raise intraocular pressure — and on wearing the protective eye shield, especially at night.",
+    "why": [
+     "New glasses are prescribed only once vision stabilizes, usually weeks later, because depth perception is still altered.",
+     "",
+     "The protective shield is specifically to be worn, especially at night; the module never advises sleeping flat without eye protection.",
+     "Drops follow an exact taper schedule, and stopping early risks uncontrolled inflammation and infection.",
+     "Mild grittiness and light sensitivity are expected, but severe pain is not — it is a report-immediately finding."
+    ]
+   },
+   {
+    "q": "Two days after uncomplicated phacoemulsification a patient returns with increasing eye pain, redness, a layered white collection in the anterior chamber, and vision that has dropped. What is the diagnosis?",
+    "ch": [
+     "Expected post-operative inflammation",
+     "Retinal detachment",
+     "Steroid-induced intraocular pressure rise",
+     "Posterior capsular opacification",
+     "Endophthalmitis"
+    ],
+    "correct": 4,
+    "exp": "Increasing pain, redness, hypopyon, and dropping vision after cataract surgery is endophthalmitis — a sight-threatening emergency needing same-day ophthalmology.",
+    "why": [
+     "Mild grittiness and light sensitivity are expected; increasing pain with hypopyon and falling vision are not.",
+     "Retinal detachment presents with flashes, new floaters, and a curtain or shadow rather than pain and a hypopyon.",
+     "A steroid-induced pressure rise is monitored for during the taper but does not produce a layered white cell collection in the anterior chamber.",
+     "Posterior capsular opacification appears weeks to years later as painless clouding, not as acute pain with a hypopyon.",
+     ""
+    ]
+   },
+   {
+    "q": "Eighteen months after successful cataract surgery a patient reports gradually returning cloudy vision with glare; the eye is painless and not red. What is the most likely cause and its treatment?",
+    "ch": [
+     "Retinal detachment, requiring urgent surgical reattachment of the retina",
+     "Acute angle-closure glaucoma, requiring urgent pressure-lowering therapy",
+     "Endophthalmitis, requiring same-day intravitreal antibiotic therapy",
+     "Recurrence of the cataract, requiring repeat phacoemulsification",
+     "Posterior capsular opacification, treated with YAG laser capsulotomy"
+    ],
+    "correct": 4,
+    "exp": "Clouding weeks to years after successful surgery is usually posterior capsular opacification, the 'after-cataract', and it is fixed quickly with YAG laser capsulotomy rather than repeat surgery.",
+    "why": [
+     "Retinal detachment produces flashes, floaters, and a curtain rather than gradual painless clouding with glare.",
+     "Acute angle-closure glaucoma is a sudden painful red eye with halos, nausea, and a mid-dilated fixed pupil.",
+     "Endophthalmitis is an early post-operative emergency with pain, redness, and hypopyon; this eye is painless and not red.",
+     "The natural lens has been removed, so the cataract cannot recur; the module names posterior capsular opacification and says repeat surgery is not the fix.",
+     ""
+    ]
+   },
+   {
+    "q": "A pediatrician notes leukocoria with an absent red reflex in a 4-month-old infant. What is the correct next step and why?",
+    "ch": [
+     "Prescribe patching of the better eye and recheck the infant in six months",
+     "Order optical biometry and schedule elective lens surgery at age two",
+     "Refer urgently to ophthalmology for congenital cataract versus retinoblastoma",
+     "Start topical corticosteroid drops and repeat the examination in one month",
+     "Reassure the parents, since red reflex asymmetry is normal at this age"
+    ],
+    "correct": 2,
+    "exp": "Leukocoria — a white pupil or absent red reflex — in an infant is an emergency: the differential is congenital cataract versus retinoblastoma, and urgent referral is required to prevent irreversible amblyopia.",
+    "why": [
+     "Patching addresses neither a lens opacity nor a tumor, and a six-month delay risks irreversible amblyopia.",
+     "Delaying surgery to age two forfeits the amblyopia window, and biometry is a pre-operative step rather than the response to leukocoria.",
+     "",
+     "Corticosteroids are themselves a cataract risk factor and do nothing for congenital cataract or retinoblastoma.",
+     "An abnormal red reflex is never normal; the module calls leukocoria a red-reflex emergency in infants."
+    ]
+   }
+  ]
+ },
+ "uveitis": {
+  "condition": "Uveitis",
+  "questions": [
+   {
+    "q": "Which structures make up the uveal tract that is inflamed in uveitis?",
+    "ch": [
+     "Lens, vitreous, and posterior capsule",
+     "Cornea, anterior chamber, and trabecular meshwork",
+     "Iris, ciliary body, and choroid",
+     "Retina, optic nerve, and macula",
+     "Conjunctiva, sclera, and episclera"
+    ],
+    "correct": 2,
+    "exp": "The uvea is the pigmented middle layer of the eye — iris and ciliary body anteriorly, choroid posteriorly — and inflammation of any part of it is uveitis.",
+    "why": [
+     "The lens and vitreous are not uveal; vitreous cells are a sign of intermediate uveitis rather than part of the uvea.",
+     "The cornea and trabecular meshwork are not uveal structures; outflow through the meshwork matters for intraocular pressure, not for defining uveitis.",
+     "",
+     "Retina, optic nerve, and macula may be involved secondarily in posterior disease but are not the uveal tract itself.",
+     "Conjunctiva, sclera, and episclera are the outer coats, and inflammation there is conjunctivitis, scleritis, or episcleritis."
+    ]
+   },
+   {
+    "q": "Which history pattern is most characteristic of ANTERIOR uveitis?",
+    "ch": [
+     "Chronic itching with stringy discharge and conjunctival cobblestones",
+     "Painless floaters with vitreous cells and snowbanks on dilated exam",
+     "Bilateral painless blurring with chorioretinal lesions and retinal vasculitis",
+     "Gradual painless dimming with a dulled red reflex and a lens opacity",
+     "Acute unilateral pain, photophobia, redness, and tearing"
+    ],
+    "correct": 4,
+    "exp": "The module's history pattern for anterior uveitis (iritis/iridocyclitis) is acute unilateral pain with photophobia, redness, and tearing, whereas posterior disease gives painless floaters and decreased vision without much redness.",
+    "why": [
+     "Itching with stringy discharge is an allergic conjunctivitis picture and is not part of the uveitis presentation the module teaches.",
+     "Painless floaters with vitreous cells and snowballs or snowbanks describe intermediate uveitis, not anterior disease.",
+     "Bilateral painless blurring with chorioretinal lesions and retinal vasculitis is the posterior uveitis pattern.",
+     "Painless gradual dimming with a dulled red reflex is cataract, a lens and media problem rather than uveal inflammation.",
+     ""
+    ]
+   },
+   {
+    "q": "Recurrent acute unilateral anterior uveitis is classically associated with which of the following?",
+    "ch": [
+     "Vogt-Koyanagi-Harada disease with poliosis, vitiligo, and hearing loss",
+     "Oligoarticular juvenile idiopathic arthritis with a chronic white eye",
+     "Ocular toxoplasmosis with focal chorioretinal scarring on dilated exam",
+     "Sarcoidosis with mutton-fat keratic precipitates and iris nodules",
+     "HLA-B27 spondyloarthropathies such as ankylosing spondylitis and reactive arthritis"
+    ],
+    "correct": 4,
+    "exp": "HLA-B27 is the classic association for acute, recurrent, unilateral anterior uveitis — ankylosing spondylitis, reactive arthritis, inflammatory bowel disease, and psoriatic arthritis.",
+    "why": [
+     "Vogt-Koyanagi-Harada is remembered for uveitis with poliosis, vitiligo, and hearing loss and causes bilateral posterior disease rather than recurrent unilateral attacks.",
+     "Oligoarticular juvenile idiopathic arthritis causes chronic, painless, white-eye anterior uveitis found on slit-lamp screening, not recurrent acute painful episodes.",
+     "Toxoplasmosis is an infectious posterior cause that must be treated before or alongside any steroid.",
+     "Sarcoidosis is a granulomatous cause marked by mutton-fat keratic precipitates and iris nodules rather than the HLA-B27 pattern.",
+     ""
+    ]
+   },
+   {
+    "q": "Why is a cycloplegic such as cyclopentolate added to topical corticosteroid in anterior uveitis?",
+    "ch": [
+     "To relieve ciliary spasm pain and prevent posterior synechiae",
+     "To improve near vision that has blurred because of the inflammation",
+     "To substitute for anti-inflammatory therapy in mild anterior disease",
+     "To lower intraocular pressure and prevent steroid-induced glaucoma",
+     "To sterilize the anterior chamber and treat an infectious cause"
+    ],
+    "correct": 0,
+    "exp": "Cycloplegics relieve ciliary spasm pain and keep the pupil mobile, preventing or breaking posterior synechiae; they are an adjunct and never a replacement for anti-inflammatory therapy.",
+    "why": [
+     "",
+     "Cycloplegic drops blur near vision and cause light sensitivity — patients must be warned about exactly this effect.",
+     "The module states that a cycloplegic is not a substitute for anti-inflammatory therapy.",
+     "Steroid-induced glaucoma is monitored for during therapy, but a cycloplegic does not lower intraocular pressure.",
+     "Cycloplegics have no antimicrobial action; an identified infectious cause requires directed anti-infective therapy."
+    ]
+   },
+   {
+    "q": "Which slit-lamp findings confirm active anterior chamber inflammation?",
+    "ch": [
+     "A mid-dilated fixed pupil with corneal edema",
+     "Vitreous snowballs and snowbanks over the pars plana",
+     "Spoke-like wedge opacities within the lens cortex",
+     "Anterior chamber cells and flare with keratic precipitates",
+     "Drusen and pigmentary change at the macula"
+    ],
+    "correct": 3,
+    "exp": "The slit lamp is the key test: anterior chamber cells and flare, keratic precipitates on the corneal endothelium, and a possible hypopyon confirm active intraocular inflammation.",
+    "why": [
+     "A mid-dilated fixed pupil with corneal edema suggests acute angle-closure glaucoma, one of the red flags to distinguish from uveitis.",
+     "Snowballs and snowbanks are dilated-exam findings of intermediate uveitis, seen behind the lens rather than in the anterior chamber.",
+     "Cortical spoke-like lens opacity is cataract, which may complicate steroid therapy but is not a sign of active inflammation.",
+     "",
+     "Drusen and macular pigmentary change belong to age-related macular degeneration rather than to uveitis."
+    ]
+   },
+   {
+    "q": "A patient with unilateral anterior uveitis has an elevated intraocular pressure and decreased corneal sensation. Which principle governs management?",
+    "ch": [
+     "Order a full autoimmune serologic panel before beginning any treatment",
+     "Exclude or cover herpetic infection before giving corticosteroids alone",
+     "Start high-dose topical corticosteroid at once and defer any further workup",
+     "Begin adalimumab as first-line therapy for this unilateral episode",
+     "Withhold cycloplegics because they will worsen the pressure elevation"
+    ],
+    "correct": 1,
+    "exp": "Elevated intraocular pressure with decreased corneal sensation suggests herpetic uveitis, and the module's rule is to ask whether the process is infectious before giving steroids, because steroids alone can worsen infectious uveitis dramatically.",
+    "why": [
+     "The module argues for a targeted workup justified by red-flag features rather than a reflexive full autoimmune panel.",
+     "",
+     "Steroids given alone to infectious herpetic uveitis can worsen it dramatically, so the infectious question must come first.",
+     "Biologic anti-TNF therapy is reserved for severe non-infectious intermediate, posterior, or panuveitis, not a first unilateral episode.",
+     "Cycloplegics are used to relieve ciliary spasm and prevent synechiae; the caution the module gives is for narrow anterior chambers."
+    ]
+   },
+   {
+    "q": "Mutton-fat keratic precipitates with iris nodules indicate which category of uveitis, and which causes should be considered?",
+    "ch": [
+     "Non-granulomatous uveitis — HLA-B27 spondyloarthropathy or Behcet disease",
+     "Infectious endophthalmitis — post-surgical staphylococcal or streptococcal seeding",
+     "Intermediate uveitis — pars planitis with vitreous snowballs and snowbanks",
+     "Granulomatous uveitis — sarcoidosis, tuberculosis, syphilis, or VKH",
+     "Steroid-related change — an early cataract with an intraocular pressure spike"
+    ],
+    "correct": 3,
+    "exp": "Mutton-fat keratic precipitates and iris nodules define granulomatous uveitis, which narrows the etiologic differential to sarcoidosis, tuberculosis, syphilis, and Vogt-Koyanagi-Harada.",
+    "why": [
+     "HLA-B27 disease is the classic non-granulomatous pattern, and mutton-fat precipitates point away from it.",
+     "Endophthalmitis is suspected when a painful hypopyon follows intraocular surgery or trauma, not from mutton-fat precipitates.",
+     "Pars planitis with vitreous snowballs is intermediate disease, defined by anatomic location rather than by granulomatous features.",
+     "",
+     "Cataract and a pressure spike are steroid complications the module says to monitor for, not a category of inflammation."
+    ]
+   },
+   {
+    "q": "A patient with chronic bilateral non-infectious posterior uveitis remains inflamed on systemic prednisone. What is the appropriate next step on the module's escalation ladder?",
+    "ch": [
+     "Switch to topical prednisolone acetate 1% as the sole therapy",
+     "Add a steroid-sparing immunomodulator such as methotrexate or mycophenolate",
+     "Stop all therapy abruptly and observe for spontaneous remission",
+     "Add atropine as the only ongoing treatment for the inflammation",
+     "Begin empiric acyclovir despite no evidence of an infectious cause"
+    ],
+    "correct": 1,
+    "exp": "The escalation ladder runs topical steroid plus cycloplegic, then regional or systemic steroid, then a steroid-sparing immunomodulator such as methotrexate, mycophenolate, or azathioprine, then a biologic — which also limits long-term steroid exposure and its cataract and glaucoma risk.",
+    "why": [
+     "Topical drops do not control intermediate, posterior, or panuveitis, which is precisely why regional or systemic therapy was started.",
+     "",
+     "Steroids must be tapered slowly; abrupt cessation risks rebound inflammation, and the nursing teaching is never to stop abruptly.",
+     "A cycloplegic relieves ciliary spasm and prevents synechiae but is explicitly not a substitute for anti-inflammatory therapy.",
+     "Anti-infective therapy is directed at an identified infectious cause, and there is no evidence of one here."
+    ]
+   },
+   {
+    "q": "A 5-year-old with oligoarticular juvenile idiopathic arthritis has no eye complaints and a white, comfortable eye. What does the module advise?",
+    "ch": [
+     "Screen with slit-lamp examination, because the uveitis is asymptomatic",
+     "No ocular follow-up is needed unless the child reports pain or redness",
+     "Obtain HLA-B27 testing to establish the ocular risk before any examination",
+     "Treat empirically with a topical steroid taper to prevent future attacks",
+     "Reassure the family, since JIA-associated uveitis is always symptomatic"
+    ],
+    "correct": 0,
+    "exp": "Children with oligoarticular juvenile idiopathic arthritis develop chronic, painless, white-eye anterior uveitis that is asymptomatic until vision is lost, so the module says to screen them with slit-lamp examination.",
+    "why": [
+     "",
+     "Waiting for symptoms is the trap: this uveitis is silent until vision has already been lost.",
+     "HLA-B27 is the association for acute recurrent unilateral anterior uveitis, ANA is the pediatric test, and neither replaces the slit-lamp screen.",
+     "Steroids are not given prophylactically, and chronic steroid exposure carries cataract and glaucoma risk.",
+     "The module states the opposite — JIA-associated uveitis is a chronic, painless, white eye."
+    ]
+   },
+   {
+    "q": "A young adult has recurrent panuveitis with a hypopyon and reports recurrent oral and genital ulcers. Which systemic diagnosis does the module link to this picture?",
+    "ch": [
+     "Vogt-Koyanagi-Harada disease with poliosis and hearing loss",
+     "Sarcoidosis with hilar adenopathy on chest imaging",
+     "Behcet disease with recurrent mucocutaneous ulceration",
+     "Ankylosing spondylitis with back pain and morning stiffness",
+     "Ocular toxoplasmosis with focal chorioretinal scarring"
+    ],
+    "correct": 2,
+    "exp": "The module's dangerous triad pairs uveitis with oral and genital ulcers as Behcet, and it also lists hypopyon as a feature of HLA-B27 disease or Behcet.",
+    "why": [
+     "Vogt-Koyanagi-Harada is uveitis with poliosis, vitiligo, and hearing loss rather than mucocutaneous ulceration.",
+     "Sarcoidosis is a granulomatous cause suggested by mutton-fat precipitates and worked up with ACE and chest imaging, not by oral and genital ulcers.",
+     "",
+     "Ankylosing spondylitis is an HLA-B27 spondyloarthropathy suggested by back pain and morning stiffness rather than by ulcers.",
+     "Toxoplasmosis is an infectious posterior cause and does not produce recurrent oral and genital ulceration."
+    ]
+   }
+  ]
+ },
+ "orbital-cellulitis": {
+  "condition": "Orbital Cellulitis",
+  "questions": [
+   {
+    "q": "Which anatomic feature distinguishes orbital cellulitis from preseptal cellulitis?",
+    "ch": [
+     "Infection limited to eyelid skin and subcutaneous tissue",
+     "Inflammation of the conjunctival and corneal surfaces",
+     "Infection posterior to the orbital septum, in orbital fat and muscle",
+     "Involvement of the lacrimal drainage system of the eyelid",
+     "Extension of the infection into the maxillary sinus cavity"
+    ],
+    "correct": 2,
+    "exp": "The orbital septum is the key anatomic barrier: infection anterior to it is preseptal and mild, while postseptal infection of the orbital fat and muscle threatens the optic nerve and cavernous sinus.",
+    "why": [
+     "Infection confined to eyelid skin and subcutaneous tissue anterior to the septum is preseptal cellulitis, the mild form.",
+     "Conjunctival and corneal inflammation is not what defines postseptal orbital disease.",
+     "",
+     "The lacrimal drainage system is not the dividing structure; the orbital septum is.",
+     "Maxillary sinus disease is not the classic route — infection most often spreads from the ethmoid sinus through the lamina papyracea."
+    ]
+   },
+   {
+    "q": "Which combination of examination findings indicates postseptal (orbital) rather than preseptal cellulitis?",
+    "ch": [
+     "Purulent discharge, matted lashes, and ocular itching",
+     "Proptosis, painful restricted eye movements, and diplopia",
+     "Photophobia, ciliary flush, and anterior chamber cells",
+     "Preauricular adenopathy, watery discharge, and follicles",
+     "Fever, eyelid erythema, and tenderness to palpation"
+    ],
+    "correct": 1,
+    "exp": "Proptosis, painful or restricted extraocular movements, diplopia, and chemosis are the hallmark findings of orbital cellulitis; preseptal cellulitis lacks all of these.",
+    "why": [
+     "Purulent discharge with matted lashes and itching suggests conjunctivitis rather than an orbital infection.",
+     "",
+     "Photophobia with ciliary flush and anterior chamber cells describes uveitis, not orbital cellulitis.",
+     "Preauricular adenopathy with watery discharge and follicles is a viral conjunctivitis pattern.",
+     "Fever with eyelid erythema and tenderness occurs in preseptal disease as well and does not localize infection behind the septum."
+    ]
+   },
+   {
+    "q": "What is the most common source of orbital cellulitis in children?",
+    "ch": [
+     "Ascending infection from an obstructed nasolacrimal duct",
+     "Contiguous spread from chronic suppurative otitis media",
+     "Ethmoid sinusitis spreading through the lamina papyracea",
+     "Hematogenous seeding from bacterial endocarditis",
+     "Direct inoculation from a penetrating eyelid laceration"
+    ],
+    "correct": 2,
+    "exp": "Infection most often spreads directly from adjacent ethmoid sinusitis through the paper-thin lamina papyracea, which is the leading source in children.",
+    "why": [
+     "The nasolacrimal duct is not among the described routes of spread into the orbit.",
+     "Otitis media is not among the sources the module lists; sinusitis and dental infection are.",
+     "",
+     "The module names direct spread from adjacent sinus disease, not hematogenous seeding, as the usual route into the orbit.",
+     "Trauma and orbital surgery are listed history clues but are not the leading source in children."
+    ]
+   },
+   {
+    "q": "Which imaging study confirms postseptal involvement and identifies a drainable abscess?",
+    "ch": [
+     "Contrast MRI of the orbits as the first-line study",
+     "Plain orbital radiographs obtained in two views",
+     "Bedside ocular ultrasound of the affected globe",
+     "Non-contrast head CT limited to the brain parenchyma",
+     "Contrast-enhanced CT of the orbits and sinuses"
+    ],
+    "correct": 4,
+    "exp": "Contrast-enhanced CT of the orbits and sinuses is the confirmatory imaging of choice: it defines postseptal involvement, a subperiosteal or orbital abscess, and the sinus disease behind it.",
+    "why": [
+     "Contrast MRI is added when cavernous sinus thrombosis or intracranial extension is suspected, not as the first study.",
+     "Plain radiographs are not among the studies the module uses to confirm or stage orbital infection.",
+     "Bedside ultrasound is not the confirmatory test named for defining postseptal disease or an abscess.",
+     "A non-contrast brain-only CT omits the orbits and sinuses and cannot define an abscess.",
+     ""
+    ]
+   },
+   {
+    "q": "The Chandler classification communicates severity of orbital infection. Which sequence of stages I through V is correct?",
+    "ch": [
+     "Preseptal cellulitis, subperiosteal abscess, orbital cellulitis, cavernous sinus thrombosis, orbital abscess",
+     "Orbital abscess, orbital cellulitis, preseptal cellulitis, cavernous sinus thrombosis, subperiosteal abscess",
+     "Cavernous sinus thrombosis, orbital abscess, subperiosteal abscess, orbital cellulitis, preseptal cellulitis",
+     "Orbital cellulitis, preseptal cellulitis, orbital abscess, subperiosteal abscess, cavernous sinus thrombosis",
+     "Preseptal cellulitis, orbital cellulitis, subperiosteal abscess, orbital abscess, cavernous sinus thrombosis"
+    ],
+    "correct": 4,
+    "exp": "The Chandler stages run preseptal cellulitis, orbital cellulitis, subperiosteal abscess, orbital abscess, and cavernous sinus thrombosis.",
+    "why": [
+     "Subperiosteal abscess is stage III, after orbital cellulitis, and cavernous sinus thrombosis is the final stage V.",
+     "This ordering puts the most advanced stages first, whereas Chandler I is preseptal cellulitis.",
+     "This is the sequence inverted — cavernous sinus thrombosis is stage V, not stage I.",
+     "This reverses the first two stages; preseptal cellulitis is stage I and orbital cellulitis is stage II.",
+     ""
+    ]
+   },
+   {
+    "q": "Which finding is the earliest sign of optic nerve compromise in orbital cellulitis?",
+    "ch": [
+     "A new relative afferent pupillary defect or color desaturation",
+     "Chemosis of the inferior conjunctival surface",
+     "Fever above 39 degrees Celsius on admission",
+     "A rising C-reactive protein and ESR over 24 hours",
+     "Leukocytosis with a left shift on the CBC differential"
+    ],
+    "correct": 0,
+    "exp": "A new relative afferent pupillary defect or red color desaturation is the earliest sign of optic nerve compromise, and the module calls it a call-the-attending finding.",
+    "why": [
+     "",
+     "Chemosis helps separate postseptal from preseptal disease but says nothing about optic nerve function.",
+     "Fever reflects the severity of the infection, not the state of the optic nerve.",
+     "CRP and ESR trend severity over time and give no information about nerve function.",
+     "Leukocytosis supports an infectious process but is not a measure of vision or nerve function."
+    ]
+   },
+   {
+    "q": "Which empiric intravenous regimen does the module recommend after blood cultures are drawn?",
+    "ch": [
+     "Vancomycin plus a broad beta-lactam such as ceftriaxone or ampicillin-sulbactam",
+     "Metronidazole alone to cover the sinus and dental anaerobes",
+     "Topical fluoroquinolone drops with warm compresses to the lid",
+     "Oral amoxicillin-clavulanate with outpatient follow-up in 24 hours",
+     "Liposomal amphotericin B alone pending fungal culture results"
+    ],
+    "correct": 0,
+    "exp": "Empiric therapy is IV vancomycin for MRSA plus a broad beta-lactam such as ceftriaxone or ampicillin-sulbactam covering streptococci, gram-negatives, and anaerobes, narrowed later by culture.",
+    "why": [
+     "",
+     "Metronidazole is an add-on for anaerobic coverage, especially with chronic sinusitis, rather than monotherapy.",
+     "Topical drops cannot treat an infection behind the orbital septum.",
+     "Orbital cellulitis requires hospitalization and intravenous therapy, not oral antibiotics with outpatient follow-up.",
+     "Amphotericin is reserved for suspected invasive fungal disease in diabetic or immunocompromised patients."
+    ]
+   },
+   {
+    "q": "A child with CT-confirmed orbital cellulitis and a subperiosteal abscess has worsening proptosis and pain after 36 hours of IV antibiotics. What is the next step?",
+    "ch": [
+     "Obtain a repeat non-contrast CT daily until the abscess resolves",
+     "Surgical drainage by ENT or oculoplastics, with endoscopic sinus surgery for the source",
+     "Continue the same antibiotics for another 72 hours before reassessing",
+     "Change to oral antibiotics and discharge with next-day follow-up",
+     "Add nebulized racemic epinephrine to reduce the orbital swelling"
+    ],
+    "correct": 1,
+    "exp": "A drainable subperiosteal or orbital abscess, worsening vision, or failure to improve within 24-48 hours of IV antibiotics are the surgical thresholds for drainage by ENT or oculoplastics, and endoscopic sinus surgery may address the source ethmoid disease.",
+    "why": [
+     "Repeat imaging does not achieve source control, and this abscess already meets criteria for drainage.",
+     "",
+     "Non-response at 24-48 hours is itself the trigger for drainage; waiting another three days risks the vision.",
+     "Oral therapy is appropriate only once the patient is improving and afebrile, which this child is not.",
+     "Racemic epinephrine is used for airway edema and does nothing for an orbital abscess."
+    ]
+   },
+   {
+    "q": "An adult with orbital cellulitis develops bilateral proptosis, multiple cranial nerve palsies, severe headache, and altered mental status. Which complication is suspected and which study is added?",
+    "ch": [
+     "Orbital abscess — a repeat contrast CT of the orbits",
+     "Mucormycosis — urgent nasal endoscopy with tissue biopsy",
+     "Endophthalmitis — an immediate anterior chamber tap",
+     "Cavernous sinus thrombosis — contrast MRI of the brain and orbits",
+     "Optic neuritis — visual field testing and color plates"
+    ],
+    "correct": 3,
+    "exp": "Bilateral proptosis, cranial nerve palsies of III, IV, V1, and VI, and altered mental status point to cavernous sinus thrombosis or intracranial extension, and contrast MRI is added when that is suspected.",
+    "why": [
+     "An orbital abscess is a unilateral process and does not explain bilateral findings or altered mental status.",
+     "Mucormycosis is suggested by black necrotic eschar and rapid necrosis in a diabetic or immunocompromised patient.",
+     "Endophthalmitis follows intraocular surgery or trauma and presents with a hypopyon, not cranial nerve palsies.",
+     "",
+     "Optic neuritis does not cause bilateral proptosis, multiple cranial nerve palsies, or altered mental status."
+    ]
+   },
+   {
+    "q": "A poorly controlled diabetic presents with a rapidly progressive orbital infection, facial numbness, and a black eschar on the palate. What is the correct emergency pathway?",
+    "ch": [
+     "Elective sinus surgery scheduled once the infection has cooled",
+     "Topical antifungal drops with close ophthalmology follow-up",
+     "IV ceftriaxone alone with close observation for 48 hours",
+     "Liposomal amphotericin B with urgent surgical debridement",
+     "High-dose IV corticosteroids to reduce the orbital inflammation"
+    ],
+    "correct": 3,
+    "exp": "Black eschar, facial numbness, and rapid necrosis in a diabetic or immunocompromised patient indicate invasive fungal orbital infection: liposomal amphotericin B plus urgent surgical debridement and correction of the underlying immunosuppression.",
+    "why": [
+     "Debridement in invasive fungal disease is urgent, not elective; delay allows further necrosis.",
+     "Topical drops cannot reach postseptal tissue, and this requires systemic antifungal therapy with debridement.",
+     "A beta-lactam does not treat Mucor or Aspergillus, and observation squanders the window in a surgical emergency.",
+     "",
+     "Corticosteroids deepen the immunosuppression that permitted this infection and are not part of the pathway."
+    ]
+   }
+  ]
+ },
+ "kawasaki": {
+  "condition": "Kawasaki Disease",
+  "questions": [
+   {
+    "q": "Which description best characterizes Kawasaki disease?",
+    "ch": [
+     "An acute self-limited medium-vessel vasculitis threatening the coronary arteries",
+     "A post-streptococcal immune reaction producing mitral valve scarring",
+     "A hereditary connective tissue disorder causing aortic root dilation",
+     "A small-vessel vasculitis with palpable purpura and renal involvement",
+     "A large-vessel arteritis causing jaw claudication and vision loss"
+    ],
+    "correct": 0,
+    "exp": "Kawasaki disease is an acute, self-limited vasculitis of medium-sized arteries with a striking predilection for the coronary arteries, where its real danger is silent coronary artery aneurysm.",
+    "why": [
+     "",
+     "The module does not frame Kawasaki as post-streptococcal; the trigger is unknown, and scarlet fever is a mimic to exclude.",
+     "Kawasaki is an acquired inflammatory vasculitis rather than a hereditary connective tissue disorder.",
+     "Palpable purpura with renal involvement describes a small-vessel vasculitis; Kawasaki is a medium-vessel disease.",
+     "Jaw claudication and vision loss belong to large-vessel arteritis of adults, not a febrile illness of young children."
+    ]
+   },
+   {
+    "q": "Which clinical criteria establish a diagnosis of complete (classic) Kawasaki disease?",
+    "ch": [
+     "Coronary dilation on echocardiography plus an elevated CRP",
+     "Fever for at least 5 days plus 2 of the 5 CRASH criteria in an infant",
+     "Fever for at least 5 days plus 4 of the 5 CRASH criteria",
+     "Fever of any duration plus a positive throat culture for streptococci",
+     "Fever for at least 5 days plus thrombocytosis on the blood count"
+    ],
+    "correct": 2,
+    "exp": "Complete Kawasaki disease requires fever of at least 5 days plus 4 of 5 criteria — conjunctivitis, rash, adenopathy, strawberry tongue, and hands/feet changes — the CRASH and burn mnemonic.",
+    "why": [
+     "Echocardiography is the key imaging study to screen for aneurysm but is explicitly not a diagnostic criterion.",
+     "Fever with only 2-3 features is the incomplete Kawasaki picture, handled through the supportive-lab algorithm.",
+     "",
+     "A positive throat culture points toward scarlet fever, one of the mimics the module says must be excluded.",
+     "Thrombocytosis is a supportive lab that peaks in the second week and is not a diagnostic criterion."
+    ]
+   },
+   {
+    "q": "Which statement about diagnosing Kawasaki disease is correct?",
+    "ch": [
+     "Characteristic thrombocytosis in the first week confirms the diagnosis",
+     "Coronary angiography is the diagnostic gold standard in young children",
+     "A specific serologic antibody titer confirms the diagnosis",
+     "There is no confirmatory laboratory test — the diagnosis is clinical",
+     "Echocardiographic coronary dilation is required to make the diagnosis"
+    ],
+    "correct": 3,
+    "exp": "Kawasaki disease is a clinical diagnosis with no confirmatory laboratory test, so mimics such as measles, scarlet fever, drug reaction, Stevens-Johnson syndrome, and adenovirus must be excluded.",
+    "why": [
+     "Thrombocytosis is characteristic but appears in the second week, so early platelets can be normal and cannot confirm anything.",
+     "Angiography is not part of the diagnostic pathway; echocardiography is the key imaging study.",
+     "No serologic antibody titer establishes Kawasaki disease; the module says there is no confirmatory test at all.",
+     "",
+     "Echocardiography screens for coronary dilation and aneurysm, and the module states it is not a diagnostic criterion."
+    ]
+   },
+   {
+    "q": "What is the first-line treatment for Kawasaki disease and its timing?",
+    "ch": [
+     "Infliximab as initial therapy for every newly diagnosed child",
+     "Low-dose aspirin alone until the fever resolves spontaneously",
+     "Warfarin plus low-dose aspirin from the day of diagnosis",
+     "IVIG plus aspirin, ideally within the first 10 days of illness",
+     "Corticosteroids alone, started once the fever exceeds 5 days"
+    ],
+    "correct": 3,
+    "exp": "IVIG with aspirin given within the first 10 days is first-line therapy and cuts coronary aneurysm risk from roughly 25% to under 5%.",
+    "why": [
+     "Infliximab is rescue therapy for refractory disease after a second IVIG dose or in select high-risk patients.",
+     "High-dose aspirin is used in the acute phase for its anti-inflammatory effect, and aspirin alone is not the regimen.",
+     "Anticoagulation is added to antiplatelet therapy only for giant coronary aneurysms.",
+     "",
+     "Corticosteroids are adjunctive with IVIG for high-risk or IVIG-resistant patients, not a first-line substitute."
+    ]
+   },
+   {
+    "q": "Why does the aspirin dose change during the course of Kawasaki disease?",
+    "ch": [
+     "Dosing is titrated to the child's response to the IVIG infusion itself",
+     "High dose is anti-inflammatory acutely; low dose is antiplatelet once fever resolves",
+     "Aspirin is stopped entirely once the first echocardiogram is normal",
+     "Low dose is used acutely to avoid Reye syndrome and then raised",
+     "The dose is halved only if thrombocytosis develops in the second week"
+    ],
+    "correct": 1,
+    "exp": "High-dose aspirin is given during the acute phase for its anti-inflammatory effect, then switched to low dose for antiplatelet effect once the fever resolves.",
+    "why": [
+     "The dose change follows resolution of fever rather than the response to the infusion.",
+     "",
+     "Low-dose antiplatelet aspirin is continued with serial echocardiographic surveillance rather than stopped.",
+     "The sequence is the reverse; Reye syndrome is a caution with influenza or varicella exposure, not a reason to start low.",
+     "Thrombocytosis in the second week is expected and does not drive a reduction in the aspirin dose."
+    ]
+   },
+   {
+    "q": "How is IVIG resistance defined, and what is the standard next step?",
+    "ch": [
+     "A rising platelet count after the infusion — start anticoagulation",
+     "Persistent or recrudescent fever at least 36 hours after the first dose — give a second IVIG dose",
+     "New coronary dilation on echo at 6 weeks — restart high-dose aspirin",
+     "Failure of the rash to fade within 48 hours — start infliximab",
+     "Any fever within 12 hours of the infusion — begin corticosteroids"
+    ],
+    "correct": 1,
+    "exp": "IVIG resistance is persistent or recrudescent fever at least 36 hours after the first dose, and a second IVIG dose is the standard next step, with escalation to corticosteroids or infliximab if fever persists.",
+    "why": [
+     "Thrombocytosis is an expected second-week finding, and anticoagulation is reserved for giant aneurysms.",
+     "",
+     "Late coronary dilation is a surveillance finding managed with cardiology, not the definition of IVIG resistance.",
+     "Resistance is defined by the fever curve, and infliximab is rescue therapy after a second IVIG dose.",
+     "The threshold is fever persisting or recurring at 36 hours, not any fever within the first 12."
+    ]
+   },
+   {
+    "q": "Which family teaching point follows IVIG administration for Kawasaki disease?",
+    "ch": [
+     "Aspirin may be stopped as soon as the child is afebrile at home",
+     "The annual influenza vaccine should be avoided while on aspirin",
+     "Follow-up echocardiography is unnecessary if the first study was normal",
+     "Ibuprofen should replace aspirin to lower the risk of Reye syndrome",
+     "Live vaccines such as MMR and varicella are deferred about 11 months"
+    ],
+    "correct": 4,
+    "exp": "Live vaccines such as MMR and varicella are deferred roughly 11 months after IVIG; families are also taught to continue aspirin exactly as prescribed and to report influenza or varicella exposure.",
+    "why": [
+     "Aspirin continues as low-dose antiplatelet therapy exactly as prescribed, not only until the fever breaks.",
+     "The module says to GIVE the annual influenza vaccine and counsel families, because influenza raises Reye risk on aspirin.",
+     "Serial follow-up echocardiograms are required to monitor the coronary arteries over time.",
+     "Aspirin is one of the rare pediatric indications and is not replaced; Reye risk is managed by vaccination and counseling.",
+     ""
+    ]
+   },
+   {
+    "q": "A 7-month-old has 8 days of fever with only conjunctivitis and a rash, a CRP of 6 mg/dL, and an ESR of 55 mm/h. What does the module advise?",
+    "ch": [
+     "Apply the incomplete Kawasaki algorithm with supplemental labs and an echocardiogram",
+     "Wait for a third clinical criterion before ordering any cardiac imaging",
+     "Reassure the family, because incomplete disease carries little aneurysm risk",
+     "Treat as scarlet fever with oral antibiotics and recheck in 48 hours",
+     "Defer IVIG past day 10 to see whether the fever resolves on its own"
+    ],
+    "correct": 0,
+    "exp": "Prolonged fever with only 2-3 criteria plus a CRP of at least 3 mg/dL or an ESR of at least 40 meets the incomplete Kawasaki algorithm: obtain supplemental labs and an echocardiogram rather than waiting.",
+    "why": [
+     "",
+     "The algorithm exists precisely so that treatment is not delayed while waiting for additional criteria to appear.",
+     "Incomplete cases are more common in infants and carry equal or higher coronary aneurysm risk.",
+     "Scarlet fever is a mimic to exclude, and this infant's prolonged fever with elevated CRP and ESR fits the incomplete algorithm.",
+     "The 10-day window is what protects the coronaries, and deferring past it forfeits that benefit."
+    ]
+   },
+   {
+    "q": "A child with Kawasaki disease and known giant coronary aneurysms develops chest pain and poor perfusion. Which additional therapy does the module attach to giant aneurysms?",
+    "ch": [
+     "Infliximab given to reverse the established aneurysm",
+     "A third dose of IVIG infused over 24 hours",
+     "Anticoagulation with warfarin or low-molecular-weight heparin",
+     "High-dose aspirin restarted for its anti-inflammatory effect",
+     "Long-term corticosteroids to remodel the coronary vessel wall"
+    ],
+    "correct": 2,
+    "exp": "Anticoagulation with warfarin or LMWH is added to antiplatelet therapy for giant coronary aneurysms to prevent thrombosis, and it requires close INR or anti-Xa monitoring with bleeding precautions.",
+    "why": [
+     "Infliximab is rescue therapy for refractory acute disease and does not reverse an existing aneurysm.",
+     "A second IVIG dose addresses IVIG resistance defined by the fever curve; it is not the therapy for established giant aneurysms.",
+     "",
+     "High-dose aspirin belongs to the acute inflammatory phase; long-term therapy is low-dose antiplatelet aspirin plus anticoagulation.",
+     "Corticosteroids are adjunctive for high-risk or resistant acute disease, not a vessel-remodeling therapy."
+    ]
+   },
+   {
+    "q": "Which statement about coronary outcomes in Kawasaki disease is correct?",
+    "ch": [
+     "Coronary involvement is the leading cause of congenital heart disease in children",
+     "Aneurysms occur in about 5% of untreated and 25% of treated children",
+     "Coronary abnormalities are limited to children meeting complete criteria",
+     "Aneurysm risk is unaffected by the timing of IVIG within the first month",
+     "About 25% develop coronary abnormalities untreated, under 5% with treatment"
+    ],
+    "correct": 4,
+    "exp": "Untreated, roughly 25% of children develop coronary artery abnormalities, and timely treatment with IVIG and aspirin drops this to under 5%.",
+    "why": [
+     "Kawasaki is the leading cause of ACQUIRED heart disease in children, not of congenital heart disease.",
+     "The figures are reversed — about 25% untreated and under 5% with timely treatment.",
+     "Incomplete cases carry equal or higher aneurysm risk and are more common in infants.",
+     "Treatment within the first 10 days is what protects the coronaries, so timing matters a great deal.",
+     ""
+    ]
+   }
+  ]
+ },
+ "epiglottitis": {
+  "condition": "Epiglottitis",
+  "questions": [
+   {
+    "q": "Which description best fits epiglottitis?",
+    "ch": [
+     "Bacterial inflammation and edema of the epiglottis and supraglottic tissues",
+     "A tracheal foreign body producing sudden unilateral loss of breath sounds",
+     "A viral, subglottic process producing a barky cough and gradual onset",
+     "A retropharyngeal abscess causing neck stiffness over one to two weeks",
+     "Bronchiolar inflammation producing wheeze and a prolonged expiratory phase"
+    ],
+    "correct": 0,
+    "exp": "Epiglottitis, also called supraglottitis, is acute bacterial inflammation and edema of the epiglottis and adjacent supraglottic tissues that can obstruct the airway at the laryngeal inlet.",
+    "why": [
+     "",
+     "A foreign body is not the described entity; this is an infectious supraglottic process.",
+     "A viral, subglottic, gradual process with a barky cough is croup — the module's key contrast to epiglottitis.",
+     "The module does not describe a retropharyngeal abscess, and epiglottitis progresses over hours rather than weeks.",
+     "Wheeze with a prolonged expiratory phase is a lower-airway pattern, not supraglottic obstruction."
+    ]
+   },
+   {
+    "q": "Which triad is the classic high-yield presentation of epiglottitis?",
+    "ch": [
+     "Trismus, uvular deviation, and a muffled cry",
+     "Cough, coryza, and conjunctival injection",
+     "Barky cough, inspiratory stridor, and hoarseness",
+     "Drooling, dysphagia, and distress",
+     "Fever, wheeze, and a prolonged expiratory phase"
+    ],
+    "correct": 3,
+    "exp": "The 3 D's — drooling, dysphagia, and distress — together with a muffled voice and tripoding are the classic clues in a toxic child who will not swallow.",
+    "why": [
+     "Trismus with uvular deviation suggests a peritonsillar process, which the module does not describe here.",
+     "Cough, coryza, and conjunctival injection are viral prodromal features, not the epiglottitis triad.",
+     "A barky cough with hoarseness is croup, and epiglottitis characteristically has no cough.",
+     "",
+     "Fever with wheeze and prolonged expiration points to lower airway disease rather than supraglottitis."
+    ]
+   },
+   {
+    "q": "A toxic febrile child sits forward leaning on his hands, neck extended and chin thrust forward. What does this posture represent?",
+    "ch": [
+     "A seizure prodrome requiring immediate benzodiazepine therapy",
+     "Meningeal irritation from bacterial meningitis",
+     "Opisthotonic posturing from a brainstem process",
+     "Guarding from an acute abdomen with referred pain",
+     "The tripod position, adopted to maximize airway diameter"
+    ],
+    "correct": 4,
+    "exp": "The tripod position — sitting forward on the hands with the neck extended and chin thrust forward — maximizes airway diameter, and stridor appearing later is a late, ominous sign.",
+    "why": [
+     "The posture is a compensatory airway maneuver, not a seizure prodrome.",
+     "Meningeal irritation produces neck stiffness and pain on flexion rather than deliberate forward tripoding to breathe.",
+     "Opisthotonos is involuntary arching from a central process, not a chosen airway-opening posture.",
+     "Abdominal guarding does not involve neck extension or chin thrusting to move air.",
+     ""
+    ]
+   },
+   {
+    "q": "Which action must be avoided in suspected epiglottitis before the airway is secured?",
+    "ch": [
+     "Allowing the child to sit upright on a parent's lap",
+     "Offering humidified oxygen by blow-by from a distance",
+     "Examining the throat with a tongue depressor",
+     "Calling anesthesia and ENT to the bedside immediately",
+     "Bringing intubation and surgical airway equipment to the room"
+    ],
+    "correct": 2,
+    "exp": "A tongue-depressor throat exam, IV attempts, supine positioning, and any agitating maneuver can trigger complete airway obstruction and must be avoided until the airway is secured.",
+    "why": [
+     "Keeping the child calm and upright in a position of comfort, ideally on a parent's lap, is exactly what the module advises.",
+     "Humidified oxygen should be delivered in a non-threatening way such as blow-by; only forcing a mask is contraindicated.",
+     "",
+     "Having anesthesia and ENT at the bedside is a priority nursing action, not something to avoid.",
+     "Emergency airway and surgical-airway equipment should be ready at the bedside before anything else happens."
+    ]
+   },
+   {
+    "q": "Which radiographic sign corresponds to epiglottitis, and which to croup?",
+    "ch": [
+     "Thumbprint sign in both, differing only in degree of severity",
+     "Sail sign in epiglottitis; thumbprint sign in croup",
+     "Steeple sign in epiglottitis; sail sign in croup",
+     "Thumbprint sign in epiglottitis; steeple sign in croup",
+     "Steeple sign in epiglottitis; thumbprint sign in croup"
+    ],
+    "correct": 3,
+    "exp": "The thumbprint sign on a lateral neck film reflects the swollen epiglottis, while croup gives the subglottic steeple sign — but imaging must never delay airway management.",
+    "why": [
+     "The signs are distinct: the thumbprint sign for the swollen epiglottis and the steeple sign for croup.",
+     "The module names the thumbprint sign for epiglottitis and the steeple sign for croup, not a sail sign.",
+     "The steeple sign belongs to croup, and the module does not use a sail sign for either condition.",
+     "",
+     "This reverses the two signs; the steeple sign is the subglottic narrowing of croup."
+    ]
+   },
+   {
+    "q": "How and where is the diagnosis of epiglottitis definitively confirmed?",
+    "ch": [
+     "By contrast CT of the neck once the child is sedated and supine",
+     "By a lateral neck radiograph obtained in the emergency department",
+     "By a throat culture taken at triage before antibiotics are given",
+     "By flexible nasal endoscopy performed at the bedside without preparation",
+     "By direct visualization of a cherry-red swollen epiglottis in the OR"
+    ],
+    "correct": 4,
+    "exp": "Diagnosis is clinical, and definitive confirmation is direct visualization of a cherry-red, swollen epiglottis by laryngoscopy performed by an airway expert in a controlled setting such as the operating room.",
+    "why": [
+     "Laying the child supine for CT is an agitating maneuver that risks precipitating complete obstruction.",
+     "A lateral neck film may show the thumbprint sign but is not definitive and must never delay airway management.",
+     "Cultures identify the organism after the airway is addressed; they do not confirm the diagnosis.",
+     "Visualization must be done by an airway expert in a controlled setting, not casually at the bedside.",
+     ""
+    ]
+   },
+   {
+    "q": "Which empiric antibiotic therapy does the module recommend for epiglottitis?",
+    "ch": [
+     "Oral amoxicillin, adequate for most community organisms",
+     "IV third-generation cephalosporin, adding vancomycin when MRSA is a concern",
+     "IV metronidazole alone to cover the oral anaerobes",
+     "Nebulized antibiotics delivered with humidified oxygen",
+     "Oral rifampin as both treatment and contact prophylaxis"
+    ],
+    "correct": 1,
+    "exp": "Empiric therapy is an IV third-generation cephalosporin such as ceftriaxone or cefotaxime, with vancomycin added for suspected MRSA or severe toxic disease, then narrowed by culture.",
+    "why": [
+     "This is an airway emergency treated with intravenous therapy, not with oral amoxicillin.",
+     "",
+     "Metronidazole is not among the agents the module lists for epiglottitis.",
+     "Humidified oxygen supports oxygenation, but antibiotics are given intravenously.",
+     "Rifampin is post-exposure chemoprophylaxis for under-immunized close contacts in confirmed Hib cases, not treatment."
+    ]
+   },
+   {
+    "q": "Why does the module say to suspect epiglottitis in unvaccinated children and in adults?",
+    "ch": [
+     "Because Haemophilus influenzae type b has become far more virulent",
+     "Because Hib vaccination cut pediatric cases and shifted the age distribution older",
+     "Because croup and epiglottitis have merged into a single clinical entity",
+     "Because racemic epinephrine has become the definitive therapy",
+     "Because the thumbprint sign is now seen only in adult patients"
+    ],
+    "correct": 1,
+    "exp": "Since routine Hib vaccination, pediatric cases have fallen dramatically and the age distribution has shifted older and toward unvaccinated or immunocompromised patients, with S. pyogenes, S. pneumoniae, and S. aureus causing a larger share.",
+    "why": [
+     "Hib did not become more virulent; vaccination reduced its share of cases and cut pediatric incidence.",
+     "",
+     "Croup and epiglottitis remain distinct: viral and subglottic versus bacterial and supraglottic.",
+     "Racemic epinephrine may transiently reduce edema but is never definitive and never substitutes for securing the airway.",
+     "The thumbprint sign reflects a swollen epiglottis in any patient and is not an age-specific finding."
+    ]
+   },
+   {
+    "q": "A child with suspected epiglottitis becomes quiet and less responsive after a period of agitation, and the oxygen saturation is falling. What does this indicate?",
+    "ch": [
+     "A sedation effect that should be reversed before any intervention",
+     "Resolution of edema that now permits a bedside throat examination",
+     "Impending complete airway obstruction requiring the airway team immediately",
+     "A therapeutic response to the nebulized racemic epinephrine",
+     "Improvement, since the work of breathing has visibly decreased"
+    ],
+    "correct": 2,
+    "exp": "Stridor, cyanosis, severe retractions, or a quieting and tiring child signal impending complete airway obstruction, and sudden agitation followed by lethargy with a falling SpO2 suggests critical obstruction and possible respiratory arrest.",
+    "why": [
+     "Sedation is maintained only after the airway is secured, and this child has not been intubated.",
+     "A throat examination is contraindicated until the airway is secured and can precipitate obstruction.",
+     "",
+     "Racemic epinephrine is only a transient adjunct and would not explain a falling oxygen saturation.",
+     "A quieting, tiring child is deteriorating rather than improving — this is the classic trap."
+    ]
+   },
+   {
+    "q": "After the airway is secured in a confirmed Hib case, which actions belong to the recovery and prevention phase?",
+    "ch": [
+     "Rifampin prophylaxis for eligible contacts and reinforcing Hib vaccination",
+     "Daily repeat lateral neck films until the thumbprint sign has cleared",
+     "Nebulized racemic epinephrine every four hours until extubation",
+     "Immediate extubation in the OR and discharge on oral antibiotics",
+     "Hourly deep suctioning and withholding sedation to assess breathing"
+    ],
+    "correct": 0,
+    "exp": "Recovery means extubating once the edema resolves, completing the antibiotic course, arranging Hib chemoprophylaxis for eligible contacts, and reinforcing vaccination with the family.",
+    "why": [
+     "",
+     "Imaging is not used to follow recovery, and it must never delay or replace airway care.",
+     "Racemic epinephrine is a transient adjunct rather than a scheduled recovery medication.",
+     "Extubation waits until the edema resolves, and the full antibiotic course must be completed first.",
+     "After the airway is secured, sedation is maintained per orders to prevent tube dislodgement."
+    ]
+   }
+  ]
+ }
+}

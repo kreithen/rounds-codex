@@ -1,0 +1,977 @@
+{
+ "sinusitis": {
+  "condition": "Sinusitis (Rhinosinusitis)",
+  "questions": [
+   {
+    "q": "Which statement best characterizes the etiology of acute rhinosinusitis?",
+    "ch": [
+     "Most cases are bacterial from the outset, so antibiotics are appropriate initial therapy",
+     "Most cases are viral and self-limited, with only about 0.5-2% progressing to acute bacterial rhinosinusitis",
+     "Most cases are caused by invasive fungal organisms invading the sinus mucosa directly",
+     "Most cases represent a purely allergic process without any infectious component at all",
+     "Most cases arise from dental infection seeding the maxillary sinus through its floor"
+    ],
+    "correct": 1,
+    "exp": "Most acute rhinosinusitis is viral (rhinovirus, influenza, parainfluenza) complicating a common cold, and only about 0.5-2% progress to acute bacterial rhinosinusitis, which is why antibiotics are reserved for the minority that are truly bacterial.",
+    "why": [
+     "Bacterial disease is the small minority; treating every acute case as bacterial is exactly the antibiotic-stewardship error the module warns against.",
+     "",
+     "Invasive fungal sinusitis is rare and largely confined to diabetic or immunocompromised hosts, not the usual acute case.",
+     "Allergy contributes to recurrent and chronic disease but does not explain most acute rhinosinusitis, which follows a viral cold.",
+     "Odontogenic maxillary disease exists but is not the leading mechanism; ostial obstruction after a viral cold is."
+    ]
+   },
+   {
+    "q": "Which trio of organisms are the leading bacterial pathogens in acute bacterial rhinosinusitis?",
+    "ch": [
+     "Mycoplasma pneumoniae, Chlamydophila pneumoniae, and Legionella pneumophila",
+     "Aspergillus, Candida, and Rhizopus species acquired from the environment",
+     "Pseudomonas aeruginosa, Staphylococcus aureus, and Escherichia coli",
+     "Streptococcus pyogenes, Fusobacterium necrophorum, and Neisseria gonorrhoeae",
+     "Streptococcus pneumoniae, Haemophilus influenzae, and Moraxella catarrhalis"
+    ],
+    "correct": 4,
+    "exp": "The leading bacterial pathogens in acute bacterial rhinosinusitis are Streptococcus pneumoniae, Haemophilus influenzae, and Moraxella catarrhalis, the same trio as acute otitis media.",
+    "why": [
+     "Atypical pneumonia organisms are not the pathogens named for bacterial sinus disease.",
+     "Fungal organisms matter only in invasive fungal sinusitis in diabetic or immunocompromised hosts.",
+     "Pseudomonas and Staph aureus drive otitis externa, not the usual acute bacterial rhinosinusitis.",
+     "Streptococcus pyogenes causes pharyngitis and Fusobacterium causes Lemierre syndrome; neither is a leading sinus pathogen.",
+     ""
+    ]
+   },
+   {
+    "q": "By the duration-based classification of rhinosinusitis, how long must symptoms persist for disease to be called chronic?",
+    "ch": [
+     "Less than 4 weeks, which is the acute category",
+     "4 to 12 weeks, which is the subacute category",
+     "12 weeks or more",
+     "3 to 4 days of severe symptoms with high fever",
+     "10 or more days without any improvement"
+    ],
+    "correct": 2,
+    "exp": "Rhinosinusitis is classified by duration: acute is less than 4 weeks, subacute is 4-12 weeks, and chronic is 12 weeks or more.",
+    "why": [
+     "Less than 4 weeks is the definition of acute rhinosinusitis, not chronic disease.",
+     "Four to 12 weeks is the subacute category that sits between acute and chronic.",
+     "",
+     "Three to four days of severe symptoms with fever is a criterion for acute bacterial disease, not a duration class.",
+     "Ten or more days without improvement is the persistence criterion for acute bacterial disease, far short of the chronic threshold."
+    ]
+   },
+   {
+    "q": "A patient with a cold improved on day 5 and then developed new fever and worsening purulent discharge on day 7. Which criterion for acute bacterial rhinosinusitis does this illustrate?",
+    "ch": [
+     "Severe onset with fever of 39C and purulent discharge for 3-4 days",
+     "Chronic rhinosinusitis with nasal polyps",
+     "Rhinitis medicamentosa from rebound congestion",
+     "Double worsening, meaning initial improvement followed by relapse",
+     "Persistent symptoms for 10 or more days without improvement"
+    ],
+    "correct": 3,
+    "exp": "Initial improvement followed by relapse is double worsening, the S (switch) of the PES triad (Persistent 10 or more days, Extreme or severe onset, Switch) that identifies acute bacterial rhinosinusitis.",
+    "why": [
+     "Severe onset means high fever with purulent discharge from the start, not a relapse after improvement.",
+     "Nasal polyp status characterizes chronic rhinosinusitis lasting 12 weeks or more, not this acute course.",
+     "Rhinitis medicamentosa is rebound congestion from more than 3 days of topical decongestant, not a bacterial criterion.",
+     "",
+     "Persistence describes symptoms that never improve for 10 or more days, whereas this patient clearly improved first."
+    ]
+   },
+   {
+    "q": "A patient insists that thick green nasal discharge on day 4 of a cold proves a bacterial infection. What is the most accurate response?",
+    "ch": [
+     "Only clear discharge occurs in viral rhinosinusitis, so this must be bacterial",
+     "Purulence indicates fungal invasion of the sinus mucosa and needs urgent CT",
+     "Green discharge is diagnostic of Streptococcus pneumoniae and requires amoxicillin-clavulanate",
+     "Discharge color and thickness reflect neutrophils and the viral course, not the pathogen",
+     "Purulent discharge means the infection has already spread into the orbit"
+    ],
+    "correct": 3,
+    "exp": "Purulent snot is not proof of bacteria: color and thickness reflect neutrophils and the viral course, not the pathogen. Bacterial disease is identified by time and pattern (persistent 10 or more days, severe onset, or double worsening), not by discharge color.",
+    "why": [
+     "Purulent nasal discharge is a routine feature of viral rhinosinusitis and part of the clinical diagnosis in both forms.",
+     "Invasive fungal disease presents with black or necrotic nasal mucosa in a diabetic or immunocompromised host, not ordinary purulence.",
+     "No discharge color identifies a specific organism, and this patient does not meet any bacterial criterion.",
+     "",
+     "Orbital spread announces itself with periorbital swelling, proptosis, or vision change, not with purulent discharge."
+    ]
+   },
+   {
+    "q": "Why is amoxicillin-clavulanate preferred over plain amoxicillin as first-line therapy for acute bacterial rhinosinusitis?",
+    "ch": [
+     "Clavulanate adds antifungal activity in case of invasive mucormycosis",
+     "Clavulanate covers beta-lactamase-producing Haemophilus influenzae and Moraxella catarrhalis",
+     "Clavulanate removes the risk of diarrhea seen with amoxicillin alone",
+     "Plain amoxicillin has no activity against Streptococcus pneumoniae at any dose",
+     "Clavulanate shortens the required treatment course to a single dose"
+    ],
+    "correct": 1,
+    "exp": "Clavulanate covers beta-lactamase-producing H. influenzae and M. catarrhalis, and that pathogen triad with rising beta-lactamase resistance is why amoxicillin-clavulanate is first-line once acute bacterial rhinosinusitis is diagnosed.",
+    "why": [
+     "Clavulanate is a beta-lactamase inhibitor with no antifungal activity; mucormycosis needs urgent ENT and surgical debridement.",
+     "",
+     "The opposite is true: patients taking amoxicillin-clavulanate should be counseled about diarrhea.",
+     "Amoxicillin is active against S. pneumoniae; the gap clavulanate fills is beta-lactamase production by the other two pathogens.",
+     "Adding clavulanate does not shorten therapy; single-dose intramuscular therapy belongs to benzathine penicillin for strep pharyngitis."
+    ]
+   },
+   {
+    "q": "Which antibiotic is the preferred alternative for acute bacterial rhinosinusitis in a penicillin-allergic adult?",
+    "ch": [
+     "Oral prednisone",
+     "Intranasal oxymetazoline",
+     "Doxycycline",
+     "Moxifloxacin",
+     "High-dose amoxicillin-clavulanate"
+    ],
+    "correct": 2,
+    "exp": "Doxycycline is the preferred alternative in penicillin-allergic adults with acute bacterial rhinosinusitis; respiratory fluoroquinolones are reserved second-line because of boxed warnings for tendon rupture, QT prolongation, aortic aneurysm, and CNS or glucose effects.",
+    "why": [
+     "Oral corticosteroids are an adjunct mainly in chronic rhinosinusitis with nasal polyps and are not indicated for uncomplicated acute disease.",
+     "Topical decongestants give short-term relief of congestion only and provide no antibacterial coverage.",
+     "",
+     "Respiratory fluoroquinolones such as moxifloxacin are a reserved second-line option rather than the preferred alternative, because of their boxed warnings.",
+     "Amoxicillin-clavulanate is a penicillin and must be avoided in true penicillin allergy at any dose."
+    ]
+   },
+   {
+    "q": "A patient has used oxymetazoline nasal spray for ten days and reports worsening congestion each time it wears off. What has developed, and what is the teaching point?",
+    "ch": [
+     "Rhinitis medicamentosa; topical decongestants should be limited to 3 days",
+     "Chronic rhinosinusitis with nasal polyps; oral corticosteroids are needed",
+     "Invasive fungal sinusitis; urgent surgical debridement is required",
+     "Antibiotic failure; therapy should be broadened to a fluoroquinolone",
+     "Pill esophagitis; the medication must be taken sitting upright with water"
+    ],
+    "correct": 0,
+    "exp": "Oxymetazoline used for more than 3 days causes rhinitis medicamentosa, the classic rebound-congestion trap, so topical decongestant sprays must be limited to 3 days.",
+    "why": [
+     "",
+     "Nasal polyps define a chronic rhinosinusitis phenotype lasting 12 weeks or more, not rebound congestion from a spray.",
+     "Invasive fungal sinusitis presents with black or necrotic nasal mucosa and rapidly progressive facial pain in a diabetic or immunocompromised patient.",
+     "There is no antibiotic to fail here; the congestion is drug-induced rebound and resolves by stopping the spray.",
+     "Pill esophagitis is a doxycycline counseling point about swallowing a tablet upright with water, not a nasal spray effect."
+    ]
+   },
+   {
+    "q": "A poorly controlled diabetic patient has rapidly progressive facial pain and a black, necrotic area on a nasal turbinate. What does this represent?",
+    "ch": [
+     "Uncomplicated viral rhinosinusitis that needs only saline irrigation and analgesics",
+     "Rhinitis medicamentosa from more than three days of topical decongestant use",
+     "Acute bacterial rhinosinusitis treatable with outpatient amoxicillin-clavulanate",
+     "A post-streptococcal complication that is confirmed with antibody titers",
+     "Invasive fungal sinusitis (mucormycosis), a surgical emergency needing urgent ENT and debridement"
+    ],
+    "correct": 4,
+    "exp": "Black or necrotic nasal mucosa with rapidly progressive facial pain in a diabetic or immunocompromised patient is invasive fungal sinusitis (mucormycosis), a surgical emergency requiring urgent ENT evaluation and surgical debridement rather than routine outpatient management.",
+    "why": [
+     "Necrotic mucosa is never a feature of uncomplicated viral disease, and supportive care alone would be dangerous here.",
+     "Rebound congestion causes obstruction, not black necrotic turbinates or rapidly progressive facial pain.",
+     "Bacterial sinusitis does not produce necrotic tissue, and outpatient oral antibiotics would delay emergent debridement.",
+     "Post-streptococcal antibody titers belong to suspected rheumatic fever or glomerulonephritis, not to sinus necrosis.",
+     ""
+    ]
+   },
+   {
+    "q": "On day 8 of an upper respiratory illness a patient has purulent discharge and facial pressure but is steadily improving and has no fever. What is the most appropriate management?",
+    "ch": [
+     "Continue saline irrigation, intranasal corticosteroids, and analgesics without antibiotics",
+     "Start oral corticosteroids to reduce mucosal edema and ostial obstruction",
+     "Obtain a blind nasal swab culture to identify the responsible organism",
+     "Order CT of the sinuses to look for sinus opacification before deciding",
+     "Prescribe a respiratory fluoroquinolone because symptoms have lasted a week"
+    ],
+    "correct": 0,
+    "exp": "Symptoms under 10 days that are improving, without severe onset or double worsening, indicate viral rhinosinusitis: saline irrigation, intranasal corticosteroids, and analgesics are first-line, antibiotics are withheld, and imaging is not indicated for uncomplicated acute disease.",
+    "why": [
+     "",
+     "Oral corticosteroids are an adjunct mainly in chronic rhinosinusitis with nasal polyps, not in uncomplicated acute disease.",
+     "Blind nasal swabs are unhelpful; endoscopically-guided culture is reserved for refractory or immunocompromised cases.",
+     "Imaging is not routine for uncomplicated acute disease; CT of the sinuses is reserved for suspected complications, chronic-refractory disease, or preoperative planning.",
+     "No bacterial criterion is met, and fluoroquinolones are a reserved second-line agent because of their boxed warnings."
+    ]
+   }
+  ]
+ },
+ "strep-pharyngitis": {
+  "condition": "Streptococcal Pharyngitis",
+  "questions": [
+   {
+    "q": "Streptococcal pharyngitis is caused by which organism, and how is it transmitted?",
+    "ch": [
+     "Neisseria gonorrhoeae, transmitted sexually and colonizing the pharynx",
+     "Streptococcus pneumoniae, spread by droplets from nasopharyngeal carriage",
+     "Epstein-Barr virus, transmitted by saliva with a several-week incubation",
+     "Streptococcus pyogenes (group A beta-hemolytic strep), spread by respiratory droplets with a 2-5 day incubation",
+     "Fusobacterium necrophorum, spreading from the oropharynx into the jugular vein"
+    ],
+    "correct": 3,
+    "exp": "Streptococcal pharyngitis is an acute infection of the pharynx and tonsils caused by Streptococcus pyogenes, group A beta-hemolytic strep (GABHS), spread by respiratory droplets with a 2-5 day incubation.",
+    "why": [
+     "Gonococcal pharyngitis is listed as a mimic to distinguish from GABHS, not as its cause.",
+     "S. pneumoniae is a sinus and middle-ear pathogen, not the group A organism responsible here.",
+     "EBV mononucleosis is a key mimic with posterior nodes and splenomegaly, but it is not the cause of GABHS pharyngitis.",
+     "",
+     "Fusobacterium causes Lemierre syndrome, a septic jugular thrombophlebitis complication, rather than the primary pharyngitis."
+    ]
+   },
+   {
+    "q": "Approximately what share of acute sore throats is caused by group A Streptococcus?",
+    "ch": [
+     "About 50-60% in adults and 80% in children",
+     "Essentially all sore throats, viral and bacterial alike",
+     "About 15-30% in children and 5-15% in adults",
+     "About 90% in both children and adults",
+     "About 0.5-2% of all cases regardless of age"
+    ],
+    "correct": 2,
+    "exp": "Most sore throats are viral; GABHS accounts for only about 15-30% in children and 5-15% in adults, which is why not everyone needs testing or antibiotics.",
+    "why": [
+     "These figures invert the epidemiology and would justify the reflexive prescribing that stewardship argues against.",
+     "Sore throats are overwhelmingly viral, so GABHS cannot account for essentially all of them.",
+     "",
+     "Ninety percent badly overstates it; the great majority of sore throats are viral.",
+     "That figure is the share of acute rhinosinusitis that becomes bacterial, not the GABHS share of sore throats."
+    ]
+   },
+   {
+    "q": "A full 10-day course of penicillin is prescribed for GABHS pharyngitis. What is the primary reason the entire course must be completed?",
+    "ch": [
+     "To eradicate the organism and prevent acute rheumatic fever",
+     "To keep the patient non-contagious for the full ten days of therapy",
+     "To avoid the morbilliform rash seen with the aminopenicillins",
+     "To prevent post-streptococcal glomerulonephritis, which antibiotics reliably prevent",
+     "To overcome penicillin resistance that emerges during shorter courses"
+    ],
+    "correct": 0,
+    "exp": "A full 10-day course eradicates the organism and prevents acute rheumatic fever; antibiotics only modestly shorten symptoms, so preventing rheumatic fever is the primary benefit, and it works even when treatment starts up to 9 days into the illness.",
+    "why": [
+     "",
+     "Patients are no longer contagious after about 24 hours of effective antibiotics, well before the course ends.",
+     "The aminopenicillin rash reflects underlying EBV mononucleosis and has nothing to do with course length.",
+     "Treating strep prevents rheumatic fever but does NOT reliably prevent post-streptococcal glomerulonephritis, a classic exam distinction.",
+     "GABHS has no documented penicillin resistance, so resistance is not the reason for the 10-day course."
+    ]
+   },
+   {
+    "q": "Which finding is one of the Centor (modified McIsaac) criteria for streptococcal pharyngitis?",
+    "ch": [
+     "Splenomegaly on abdominal examination",
+     "The presence of a productive cough",
+     "Posterior cervical lymphadenopathy",
+     "Conjunctivitis with clear rhinorrhea",
+     "The absence of cough"
+    ],
+    "correct": 4,
+    "exp": "The Centor (modified McIsaac) criteria are tonsillar exudate, tender anterior cervical nodes, fever above 38C, absence of cough, and an age adjustment (+1 for 3-14 years, 0 for 15-44, and -1 for 45 and older).",
+    "why": [
+     "Splenomegaly is an infectious mononucleosis finding and is not part of the Centor score.",
+     "Cough counts against strep; its presence points toward a virus, and the criterion is the absence of cough.",
+     "Tender anterior cervical adenopathy is the Centor node finding, whereas posterior nodes suggest EBV mononucleosis.",
+     "Conjunctivitis and coryza are viral features that argue against GABHS and are not scoring criteria.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with a sore throat also has cough, hoarseness, coryza, and conjunctivitis. How should these findings be interpreted?",
+    "ch": [
+     "They indicate a peritonsillar abscess that requires urgent drainage",
+     "They are the classic diagnostic features of scarlet fever",
+     "They suggest a chronic streptococcal carrier needing clindamycin",
+     "They confirm GABHS and justify empiric penicillin without any testing",
+     "They point away from GABHS and toward a viral cause"
+    ],
+    "correct": 4,
+    "exp": "Cough, coryza, hoarseness, and conjunctivitis all point away from GABHS and toward a virus. The classic strep history is a sudden sore throat with fever and odynophagia notably without cough or coryza.",
+    "why": [
+     "Peritonsillar abscess presents with drooling, trismus, and a muffled hot-potato voice, not coryza and conjunctivitis.",
+     "Scarlet fever is marked by a sandpaper rash and strawberry tongue rather than cough and conjunctivitis.",
+     "Carriers are identified by a positive test during a viral illness; these viral features neither define carriage nor call for clindamycin.",
+     "These are the very findings that argue against strep, so neither testing nor empiric antibiotics is indicated.",
+     ""
+    ]
+   },
+   {
+    "q": "A 7-year-old with tonsillar exudates, fever, tender anterior nodes, and no cough has a negative rapid antigen detection test. What is the next step?",
+    "ch": [
+     "Send anti-streptococcal antibody titers such as ASO and anti-DNase B",
+     "Send a throat culture as backup because rapid testing is imperfectly sensitive",
+     "Start a 10-day course of penicillin V regardless of the test result",
+     "Immediately repeat the rapid antigen test from the opposite tonsil",
+     "Reassure the family that a virus is responsible and give supportive care"
+    ],
+    "correct": 1,
+    "exp": "Because the rapid antigen detection test has imperfect sensitivity, a negative result in a child should be backed up by throat culture, which is the gold standard.",
+    "why": [
+     "ASO and anti-DNase B titers confirm recent infection retrospectively for suspected rheumatic fever or glomerulonephritis, not acute pharyngitis.",
+     "",
+     "Treating before confirmation abandons the stewardship logic of testing; the culture should decide.",
+     "Repeating the same insensitive test does not address its sensitivity limitation, whereas culture does.",
+     "This child's findings are highly suggestive of GABHS, so a negative rapid test in a child cannot end the evaluation."
+    ]
+   },
+   {
+    "q": "A parent asks when their child with GABHS pharyngitis may return to school. What is the correct teaching?",
+    "ch": [
+     "After two weeks, once the risk of rheumatic fever has passed",
+     "Only after the full 10-day antibiotic course has been finished",
+     "After about 24 hours of effective antibiotics, if afebrile",
+     "Immediately, because streptococcal pharyngitis is not contagious",
+     "After a repeat rapid strep test documents clearance of the organism"
+    ],
+    "correct": 2,
+    "exp": "Patients are no longer contagious after about 24 hours of effective antibiotics and may return to school or work then if afebrile; the toothbrush should also be replaced after 24 hours of treatment.",
+    "why": [
+     "Rheumatic fever risk is addressed by completing therapy, not by prolonged isolation.",
+     "The full 10 days is needed to eradicate the organism and prevent rheumatic fever, but contagiousness ends far earlier.",
+     "",
+     "GABHS spreads by respiratory droplets and remains contagious until effective antibiotics have been taken for about a day.",
+     "No test of cure is required for uncomplicated GABHS pharyngitis."
+    ]
+   },
+   {
+    "q": "A 17-year-old treated empirically with amoxicillin for sore throat develops a diffuse morbilliform rash and has fatigue, posterior cervical adenopathy, and splenomegaly. What does this suggest?",
+    "ch": [
+     "Acute rheumatic fever with erythema marginatum",
+     "Underlying infectious mononucleosis from Epstein-Barr virus",
+     "An IgE-mediated anaphylactic penicillin reaction",
+     "Post-streptococcal glomerulonephritis with periorbital edema",
+     "Scarlet fever produced by a streptococcal exotoxin"
+    ],
+    "correct": 1,
+    "exp": "A diffuse morbilliform eruption after an aminopenicillin strongly suggests underlying EBV infectious mononucleosis, supported here by fatigue, posterior adenopathy, and splenomegaly, which is why amoxicillin is avoided empirically when mononucleosis is possible.",
+    "why": [
+     "Erythema marginatum belongs to acute rheumatic fever, which appears weeks later with migratory polyarthritis, carditis, or chorea.",
+     "",
+     "A morbilliform rash is not IgE-mediated; anaphylaxis presents acutely with urticaria, angioedema, and airway compromise.",
+     "Glomerulonephritis presents with tea-colored urine, hypertension, and periorbital edema rather than a morbilliform rash.",
+     "Scarlet fever produces a sandpaper rash with strawberry tongue during the infection, not a rash triggered by starting amoxicillin."
+    ]
+   },
+   {
+    "q": "A patient with several days of sore throat now has drooling, trismus, and a muffled 'hot potato' voice. What is the priority action?",
+    "ch": [
+     "Give a weight-based dose of acetaminophen and reassess in an hour",
+     "Perform a rapid antigen detection test before any other intervention",
+     "Discharge with a 10-day course of penicillin V and close follow-up",
+     "Escalate urgently for airway and ENT evaluation, suspecting peritonsillar abscess",
+     "Order ASO and anti-DNase B titers to confirm streptococcal infection"
+    ],
+    "correct": 3,
+    "exp": "Drooling, trismus, a muffled hot-potato voice, or stridor signal a peritonsillar or retropharyngeal abscess with impending airway obstruction and require emergent airway and ENT evaluation: a compromised airway outranks pain control, and pain control outranks patient teaching.",
+    "why": [
+     "Analgesia matters but ranks below the airway, and treating pain first would delay recognition of an airway emergency.",
+     "Testing does not change the immediate priority when the airway is threatened.",
+     "An abscess needs drainage and airway assessment, so oral antibiotics and discharge would be unsafe.",
+     "",
+     "Antibody titers are retrospective tests for rheumatic fever or glomerulonephritis and are useless in an acute airway emergency."
+    ]
+   },
+   {
+    "q": "Two weeks after a documented and fully treated GABHS pharyngitis, a child develops tea-colored urine, hypertension, and periorbital edema. What best explains this?",
+    "ch": [
+     "Post-streptococcal glomerulonephritis, which antibiotic treatment does not reliably prevent",
+     "Lemierre syndrome from Fusobacterium septic thrombophlebitis",
+     "A peritonsillar abscess that has drained into the bloodstream",
+     "Scarlet fever developing after the antibiotic course ended",
+     "Acute rheumatic fever, which the completed antibiotic course should have prevented"
+    ],
+    "correct": 0,
+    "exp": "Tea-colored urine, hypertension, and periorbital edema signal post-streptococcal glomerulonephritis: treating strep prevents acute rheumatic fever but does NOT reliably prevent glomerulonephritis.",
+    "why": [
+     "",
+     "Lemierre syndrome causes persistent high fever, a rigid neck, unilateral neck swelling, and sepsis rather than hematuria and edema.",
+     "Peritonsillar abscess is a suppurative local complication with drooling and trismus during the acute illness.",
+     "Scarlet fever is a sandpaper rash with strawberry tongue during active infection, not a delayed renal syndrome.",
+     "Rheumatic fever presents with migratory polyarthritis, carditis, subcutaneous nodules, erythema marginatum, or chorea, and it is the sequela antibiotics do prevent."
+    ]
+   }
+  ]
+ },
+ "epistaxis": {
+  "condition": "Epistaxis",
+  "questions": [
+   {
+    "q": "Roughly 90% of nosebleeds arise from which site?",
+    "ch": [
+     "The middle meatus at the ostiomeatal complex",
+     "The nasopharynx at the site of adenoid tissue",
+     "The sphenopalatine artery in the posterior nasal cavity",
+     "Kiesselbach's plexus (Little's area) on the anterior nasal septum",
+     "The cavernous sinus draining through the nasal mucosa"
+    ],
+    "correct": 3,
+    "exp": "About 90% of bleeds are anterior, arising from Kiesselbach's plexus (Little's area) on the anterior nasal septum, where the anterior ethmoidal, sphenopalatine, greater palatine, and superior labial arteries anastomose.",
+    "why": [
+     "The middle meatus is where purulent drainage is seen in rhinosinusitis, not the plexus that bleeds.",
+     "Adenoid tissue is not the source; a nasopharyngeal mass in an adolescent raises concern for angiofibroma instead.",
+     "Sphenopalatine artery branches supply the roughly 10% of bleeds that are posterior.",
+     "",
+     "Cavernous sinus thrombosis is a complication of sinus infection rather than a source of nosebleeds."
+    ]
+   },
+   {
+    "q": "A posterior nosebleed that fails pressure, cautery, and packing most likely arises from which vessel, and what is the definitive surgical target?",
+    "ch": [
+     "Superior labial artery, controlled by ligating the lip artery",
+     "Anterior ethmoidal artery, controlled by ethmoidectomy",
+     "Sphenopalatine artery, controlled by SPA ligation or embolization",
+     "Greater palatine artery, controlled by cautery of the palate",
+     "Internal jugular vein, controlled by venous ligation"
+    ],
+    "correct": 2,
+    "exp": "Posterior bleeds originate from sphenopalatine artery branches, and the definitive treatment for a refractory posterior bleed is sphenopalatine artery ligation or embolization.",
+    "why": [
+     "The superior labial artery contributes to Kiesselbach's plexus anteriorly and is not the posterior source or surgical target.",
+     "The anterior ethmoidal artery also feeds the anterior septal plexus; posterior control targets the sphenopalatine artery.",
+     "",
+     "The greater palatine artery is another anterior anastomotic contributor rather than the definitive posterior target.",
+     "Jugular vein pathology belongs to Lemierre syndrome and has no role in controlling epistaxis."
+    ]
+   },
+   {
+    "q": "What is the correct first-aid technique for an anterior nosebleed?",
+    "ch": [
+     "Lean forward and pinch the soft part of the nose firmly for 10-15 minutes",
+     "Apply an ice pack to the bridge without any compression at all",
+     "Blow the nose forcefully to clear clots, then rest lying supine",
+     "Tilt the head back and pinch the bony bridge for about 2 minutes",
+     "Pack the nostril with cotton at home and then lie flat"
+    ],
+    "correct": 0,
+    "exp": "Firm continuous pinching of the soft (cartilaginous) part of the nose for 10-15 minutes while sitting upright and leaning forward is the correct first aid, and an ice pack to the bridge may help as an adjunct.",
+    "why": [
+     "",
+     "An ice pack to the bridge may help, but it is an adjunct to firm pressure rather than a substitute for it.",
+     "Forceful nose blowing is specifically discouraged because it dislodges clot and restarts the bleeding.",
+     "Leaning back risks aspiration and swallowed blood, and pinching the bony bridge does nothing.",
+     "Patients are taught not to pack the nose with cotton at home, and lying flat worsens drainage into the pharynx."
+    ]
+   },
+   {
+    "q": "Which combination of findings most suggests a posterior rather than an anterior bleeding source?",
+    "ch": [
+     "No source visible anteriorly, with bilateral bleeding and brisk blood in the posterior pharynx",
+     "A small clot on Little's area that stops with 10 minutes of pressure",
+     "Bleeding that began after vigorous nose-picking in a young child",
+     "Unilateral bleeding relieved immediately by topical oxymetazoline",
+     "Blood running steadily out of one nostril with a visible septal vessel"
+    ],
+    "correct": 0,
+    "exp": "A source that cannot be seen anteriorly, plus bleeding from both nares or brisk posterior pharyngeal bleeding, points to a posterior bleed; these bleed into the pharynx, are harder to visualize, and carry higher risk in older, hypertensive, or anticoagulated patients.",
+    "why": [
+     "",
+     "A clot on Little's area that responds to pressure is anterior and reassuring.",
+     "Digital trauma from nose-picking is the commonest local cause of an anterior bleed.",
+     "Prompt control with a topical vasoconstrictor is typical of anterior disease.",
+     "A visible septal vessel with blood running out the nose is the classic anterior bleed from Kiesselbach's plexus."
+    ]
+   },
+   {
+    "q": "When silver nitrate chemical cautery is used on a visualized anterior septal bleeding vessel, which precaution prevents septal perforation?",
+    "ch": [
+     "Cauterize both sides at once to balance the injury",
+     "Cauterize before evacuating clot so the vessel stays under pressure",
+     "Cauterize briskly bleeding points that cannot be directly seen",
+     "Cauterize only after a posterior balloon pack is in place",
+     "Cauterize only one side of the septum at a time"
+    ],
+    "correct": 4,
+    "exp": "Silver nitrate cautery should be applied to only one side of the septum at a time, because bilateral cautery risks septal perforation; it is also used only on a clearly visualized anterior bleeding vessel after hemostasis.",
+    "why": [
+     "Bilateral septal cautery is precisely what causes septal perforation.",
+     "Clot must be evacuated and topical decongestant applied so the bleeding point can be directly visualized first.",
+     "Actively brisk bleeding that cannot be seen should not be cauterized; move to packing instead.",
+     "A posterior balloon is used for posterior bleeds and is not a prerequisite for anterior cautery.",
+     ""
+    ]
+   },
+   {
+    "q": "Firm compression and topical oxymetazoline have failed, and a discrete anterior bleeding point is clearly visible. What is the next step in the stepwise algorithm?",
+    "ch": [
+     "Systemic reversal of anticoagulation",
+     "Posterior balloon packing",
+     "Sphenopalatine artery ligation",
+     "Chemical or electrocautery of the visualized point",
+     "Angiographic embolization"
+    ],
+    "correct": 3,
+    "exp": "The stepwise algorithm runs compression, then topical vasoconstrictor, then chemical or electrocautery of a visualized bleeding point, then anterior packing, then posterior packing, and finally interventional sphenopalatine artery ligation or embolization.",
+    "why": [
+     "Reversal is considered in severe bleeding and must weigh thrombotic risk; it does not replace local control of a visible vessel.",
+     "Posterior packing is for posterior bleeds or for failure after anterior measures including cautery and anterior packing.",
+     "Arterial ligation is the last rung of the ladder, reserved for refractory posterior bleeding.",
+     "",
+     "Embolization is likewise reserved for refractory posterior bleeds guided by CTA or angiography."
+    ]
+   },
+   {
+    "q": "For which patient with epistaxis are CBC, PT/INR, aPTT, and type & screen indicated?",
+    "ch": [
+     "An adult with a single bleed that stopped with firm pressure",
+     "A patient with a heavy, recurrent bleed who takes an anticoagulant",
+     "Any patient presenting with epistaxis, as a routine screen",
+     "A patient whose bleeding stopped after topical oxymetazoline",
+     "A child with a 3-minute anterior bleed after nose-picking"
+    ],
+    "correct": 1,
+    "exp": "Labs are not routine for simple anterior bleeds; CBC, PT/INR, aPTT, and type & screen are obtained for heavy, recurrent, or anticoagulated patients, or when there are signs of hemodynamic compromise.",
+    "why": [
+     "A single bleed controlled by pressure does not meet the threshold for coagulation testing.",
+     "",
+     "Routine coagulation testing of every nosebleed is specifically not recommended.",
+     "Prompt control with a topical vasoconstrictor marks a reassuring anterior bleed.",
+     "A brief anterior bleed after digital trauma is the prototype of a simple bleed that needs no labs."
+    ]
+   },
+   {
+    "q": "A patient has just had a posterior balloon pack placed for a brisk posterior bleed. What is the priority nursing monitoring?",
+    "ch": [
+     "Hourly measurement of nasal mucosal moisture and humidity",
+     "Teaching saline and emollient use in preparation for discharge",
+     "Checking that the patient leans backward to reduce drainage",
+     "Encouraging forceful nose blowing to clear the old clot",
+     "Continuous monitoring for airway obstruction, hypoxia, and pain"
+    ],
+    "correct": 4,
+    "exp": "Patients with posterior packing must be monitored continuously for airway obstruction, hypoxia, and pain, with an appropriate head-of-bed position, and should never be left unmonitored, because brisk posterior bleeding or a dislodged posterior pack can compromise the airway.",
+    "why": [
+     "Mucosal moisturization matters for preventing future dryness-related bleeds, not for immediate post-packing safety.",
+     "Saline and emollient teaching belongs to discharge planning once the bleed is controlled.",
+     "Patients should lean forward, not backward, to prevent aspiration and swallowed blood.",
+     "Forceful blowing is discouraged because it dislodges clot and can restart the bleed.",
+     ""
+    ]
+   },
+   {
+    "q": "A 15-year-old boy has recurrent unilateral epistaxis with progressive nasal obstruction and a vascular-appearing nasal mass. What is the key management point?",
+    "ch": [
+     "Attribute the bleeding to nose-picking and discharge with emollient",
+     "Suspect juvenile nasopharyngeal angiofibroma and do not biopsy it",
+     "Apply bilateral silver nitrate cautery to the nasal septum",
+     "Send anti-streptococcal titers to look for an infectious cause",
+     "Biopsy the mass in the emergency department to obtain tissue"
+    ],
+    "correct": 1,
+    "exp": "An adolescent male with recurrent unilateral epistaxis and a nasal mass suggests juvenile nasopharyngeal angiofibroma, a can't-miss vascular tumor that should not be biopsied in the emergency department.",
+    "why": [
+     "Digital trauma does not explain a unilateral nasal mass with progressive obstruction.",
+     "",
+     "Bilateral septal cautery risks perforation and does nothing for a nasopharyngeal tumor.",
+     "Streptococcal serology has no role in evaluating a vascular nasal mass.",
+     "Biopsy of this vascular mass is dangerous and is explicitly to be avoided in the emergency department."
+    ]
+   },
+   {
+    "q": "An adult has years of recurrent nosebleeds, mucocutaneous telangiectasias, and a family history of the same problem. Which diagnosis does this pattern suggest?",
+    "ch": [
+     "Rhinitis medicamentosa from topical decongestant overuse",
+     "Isolated hypertension as the sole cause of the bleeding",
+     "Hereditary hemorrhagic telangiectasia (Osler-Weber-Rendu)",
+     "Simple mucosal dryness from low-humidity indoor air",
+     "Juvenile nasopharyngeal angiofibroma of the nasopharynx"
+    ],
+    "correct": 2,
+    "exp": "Recurrent bleeds with mucocutaneous telangiectasias and a positive family history are the pattern of hereditary hemorrhagic telangiectasia (Osler-Weber-Rendu), which should be suspected in recurrent or refractory epistaxis.",
+    "why": [
+     "Rebound congestion from prolonged topical decongestant use causes neither telangiectasias nor a family history.",
+     "Hypertension is usually a marker or aggravator rather than the primary cause, and it explains neither the telangiectasias nor the family history.",
+     "",
+     "Dry, low-humidity air is a common local cause of isolated anterior bleeds but not of a familial telangiectatic syndrome.",
+     "Angiofibroma occurs in adolescent males with a unilateral nasal mass, not with familial telangiectasias."
+    ]
+   }
+  ]
+ },
+ "bppv": {
+  "condition": "Benign Paroxysmal Positional Vertigo",
+  "questions": [
+   {
+    "q": "What is the mechanism of canalithiasis in benign paroxysmal positional vertigo?",
+    "ch": [
+     "Otoconia break free from the utricular macula and settle in a semicircular canal, deflecting the cupula",
+     "Inflammation of the vestibular nerve producing constant vertigo lasting days",
+     "Ischemia of the posterior circulation affecting brainstem vestibular pathways",
+     "Otoconia adhering directly to the cupula rather than moving freely in the canal",
+     "Endolymphatic hydrops distending the membranous labyrinth of the inner ear"
+    ],
+    "correct": 0,
+    "exp": "In canalithiasis, calcium carbonate crystals (otoconia) break free from the utricular macula and settle into a semicircular canal, where gravity-driven movement of the debris deflects the cupula and produces vertigo.",
+    "why": [
+     "",
+     "Vestibular neuritis produces continuous vertigo lasting days rather than brief positional spells.",
+     "Posterior-circulation ischemia is the central mimic to exclude, signaled by focal deficits and direction-changing nystagmus.",
+     "Otoconia adherent to the cupula is cupulolithiasis, a distinct entity producing more persistent positional nystagmus.",
+     "Endolymphatic hydrops underlies Meniere disease, which brings hearing loss, tinnitus, and aural fullness lasting minutes to hours."
+    ]
+   },
+   {
+    "q": "Which semicircular canal is involved in the large majority of BPPV cases?",
+    "ch": [
+     "The horizontal (lateral) canal, involved in most cases",
+     "The posterior canal, involved in roughly 85-90% of cases",
+     "The utricle itself, where the otoconia originate",
+     "The cochlear duct adjacent to the vestibule",
+     "The anterior canal, which is the rare form of the disease"
+    ],
+    "correct": 1,
+    "exp": "The posterior canal is involved in roughly 85-90% of BPPV cases; the horizontal (lateral) canal is next most common, and anterior canal BPPV is rare.",
+    "why": [
+     "The horizontal canal is the second most common site rather than the majority.",
+     "",
+     "The utricular macula is where otoconia originate, but vertigo is produced once they enter a canal.",
+     "The cochlear duct serves hearing, and pure BPPV involves no hearing loss or tinnitus.",
+     "Anterior canal BPPV is explicitly described as the rare form."
+    ]
+   },
+   {
+    "q": "Which symptom pattern is characteristic of pure BPPV?",
+    "ch": [
+     "Constant, non-positional vertigo for several days with marked gait instability",
+     "Vertigo lasting minutes to hours accompanied by tinnitus and aural fullness",
+     "Vertigo with dysarthria, diplopia, and limb ataxia on examination",
+     "Progressive unilateral hearing loss with mild persistent imbalance",
+     "Brief vertigo under 60 seconds triggered by position change, without hearing loss or tinnitus"
+    ],
+    "correct": 4,
+    "exp": "BPPV causes brief episodic vertigo, typically under 60 seconds, provoked by positional change such as rolling over in bed, looking up, or bending forward, and there is no hearing loss and no tinnitus in pure BPPV.",
+    "why": [
+     "Continuous vertigo lasting days is the pattern of vestibular neuritis rather than BPPV.",
+     "Minutes-to-hours vertigo with tinnitus and aural fullness describes Meniere disease.",
+     "Focal neurologic deficits such as dysarthria, diplopia, and ataxia raise concern for posterior-circulation stroke.",
+     "Progressive hearing loss points toward labyrinthine pathology, and hearing is spared in pure BPPV.",
+     ""
+    ]
+   },
+   {
+    "q": "Which pairing of bedside maneuvers with their purpose is correct for posterior-canal BPPV?",
+    "ch": [
+     "Dix-Hallpike treats the condition and Epley diagnoses it",
+     "Dix-Hallpike diagnoses the condition and Epley treats it",
+     "Supine roll diagnoses it and Brandt-Daroff is first-line treatment",
+     "The HINTS exam diagnoses it and meclizine treats it",
+     "Gufoni diagnoses it and the Lempert roll treats it"
+    ],
+    "correct": 1,
+    "exp": "Dix-Hallpike diagnoses, Epley treats: the Dix-Hallpike maneuver is the confirmatory test for posterior-canal BPPV, and the Epley canalith repositioning maneuver is first-line definitive treatment.",
+    "why": [
+     "This reverses the pair, since the Dix-Hallpike is diagnostic and the Epley is therapeutic.",
+     "",
+     "The supine roll test is for horizontal-canal disease, and Brandt-Daroff exercises are a lower-efficacy home adjunct rather than first-line.",
+     "The HINTS exam helps exclude a central cause, and meclizine is not a treatment for BPPV.",
+     "Lempert and Gufoni are both treatment maneuvers, and both are used for the horizontal canal."
+    ]
+   },
+   {
+    "q": "A positive Dix-Hallpike test for posterior-canal BPPV shows which nystagmus characteristics?",
+    "ch": [
+     "No nystagmus at all despite reproducible severe positional vertigo",
+     "Purely horizontal nystagmus that is geotropic on both sides",
+     "Direction-changing gaze-evoked nystagmus without any latency",
+     "Down-beating vertical nystagmus that does not fatigue",
+     "Upbeating-torsional nystagmus with latency, a crescendo-decrescendo course, and fatigability"
+    ],
+    "correct": 4,
+    "exp": "A positive Dix-Hallpike shows upbeating-torsional nystagmus with latency of a few seconds, a crescendo-decrescendo course, and fatigability on repeat testing; central lesions lack all three of those features.",
+    "why": [
+     "A normal Dix-Hallpike with persistent symptoms is itself a reason to consider central causes and imaging.",
+     "Horizontal geotropic nystagmus is elicited by the supine roll test in lateral-canal disease.",
+     "Direction-changing gaze-evoked nystagmus without latency is a central red flag warranting MRI.",
+     "Purely vertical or down-beating nystagmus that does not fatigue suggests a posterior fossa lesion.",
+     ""
+    ]
+   },
+   {
+    "q": "Positional vertigo with purely horizontal nystagmus on the supine roll (Pagnini-McClure) test is best treated with which maneuver?",
+    "ch": [
+     "The Dix-Hallpike maneuver repeated daily",
+     "MRI of the brain followed by observation",
+     "The Epley canalith repositioning maneuver",
+     "The Lempert (barbecue) roll or the Gufoni maneuver",
+     "A short course of meclizine at bedtime"
+    ],
+    "correct": 3,
+    "exp": "Horizontal nystagmus on the supine roll test localizes to the horizontal (lateral) canal, and the Lempert (barbecue) roll or Gufoni maneuver is the repositioning treatment for that canal.",
+    "why": [
+     "The Dix-Hallpike is a diagnostic test for the posterior canal rather than a treatment.",
+     "Imaging is not indicated for a typical positional syndrome and is reserved for red flags or suspected central causes.",
+     "The Epley is for posterior-canal disease and is not interchangeable with the horizontal-canal maneuvers.",
+     "",
+     "Vestibular suppressants are symptomatic only, and guidelines recommend against their routine use."
+    ]
+   },
+   {
+    "q": "What is the guideline stance on meclizine in the management of BPPV?",
+    "ch": [
+     "It is first-line therapy and should be given before any maneuver",
+     "It is curative because it dissolves the displaced otoconia",
+     "It is recommended against for routine use and is symptomatic only, at best short-term",
+     "It is preferred over ondansetron because it is not sedating",
+     "It should be continued for months to prevent recurrence"
+    ],
+    "correct": 2,
+    "exp": "Meclizine is not a treatment for BPPV and guidelines recommend against routine use: it masks nystagmus, impairs central compensation, and causes sedation, anticholinergic effects, and fall risk in the elderly, so it is at most a short-term measure for severe nausea.",
+    "why": [
+     "Canalith repositioning is first-line, and reflexively prescribing meclizine instead is the error to avoid.",
+     "No medication relocates or dissolves otoconia; only repositioning maneuvers move them.",
+     "",
+     "Meclizine is sedating and anticholinergic, whereas ondansetron is the option that avoids the sedation of antihistamines.",
+     "Chronic use is discouraged, particularly in older adults per the Beers criteria."
+    ]
+   },
+   {
+    "q": "A patient describes vertigo lasting one to two hours at a time with tinnitus, unilateral hearing loss, and aural fullness. How does this differ from BPPV?",
+    "ch": [
+     "It fits Meniere disease: minutes to hours with hearing loss, tinnitus, and aural fullness",
+     "It is a posterior-circulation stroke and needs immediate thrombolysis",
+     "It is the classic Dix-Hallpike-positive pattern of posterior-canal BPPV",
+     "It represents cupulolithiasis of the horizontal canal instead",
+     "It is vestibular neuritis, which lasts days and is constant"
+    ],
+    "correct": 0,
+    "exp": "The timing rule separates the causes: BPPV is seconds and positional, vestibular neuritis is days and constant, and Meniere disease is minutes to hours with hearing loss, tinnitus, and aural fullness. No hearing loss or tinnitus occurs in pure BPPV.",
+    "why": [
+     "",
+     "Stroke is a continuous spontaneous syndrome with focal deficits or a positive HINTS pattern, not recurrent hours-long spells with aural fullness.",
+     "BPPV episodes last seconds and are triggered by position change, with no hearing loss or tinnitus.",
+     "Cupulolithiasis is still a positional disorder producing persistent positional nystagmus, not hours-long spells with hearing loss.",
+     "Vestibular neuritis is a continuous syndrome lasting days without the auditory symptoms described here."
+    ]
+   },
+   {
+    "q": "During positional testing a patient shows direction-changing nystagmus with no latency and no fatigability, and symptoms persist after two Epley maneuvers. What is the appropriate next step?",
+    "ch": [
+     "Start scheduled meclizine and reassess the patient in two weeks",
+     "Teach Brandt-Daroff exercises for home habituation instead",
+     "Reassure the patient that BPPV recurs and no action is needed",
+     "Obtain MRI of the brain and posterior fossa for a suspected central lesion",
+     "Repeat the Epley maneuver twice more before doing anything else"
+    ],
+    "correct": 3,
+    "exp": "Direction-changing nystagmus without latency or fatigability that fails to respond to repositioning suggests a central (posterior fossa) lesion, and MRI of the brain and posterior fossa is indicated in that setting rather than another Epley.",
+    "why": [
+     "Vestibular suppressants mask nystagmus and impair central compensation, which is exactly wrong when a central lesion is suspected.",
+     "Home habituation exercises are for residual peripheral symptoms, not for a suspected posterior fossa lesion.",
+     "Recurrence counseling applies to confirmed BPPV, and these nystagmus features are red flags rather than typical BPPV.",
+     "",
+     "Central lesions fail to respond to repositioning, so these patients earn an MRI rather than another Epley."
+    ]
+   },
+   {
+    "q": "A young woman has had three episodes of Dix-Hallpike-positive BPPV in two years. Besides counseling on recurrence and fall safety, which modifiable risk factor should be evaluated?",
+    "ch": [
+     "Excessive dietary sodium intake",
+     "Occupational loud-noise exposure",
+     "Vitamin D deficiency and low bone density",
+     "Untreated essential hypertension",
+     "Chronic macrolide antibiotic exposure"
+    ],
+    "correct": 2,
+    "exp": "Recurrence is common (about 15-50% over years), and recurrent BPPV, classically in a young woman, should prompt evaluation for vitamin D deficiency and low bone density as a modifiable risk factor for otoconial instability.",
+    "why": [
+     "Sodium restriction is associated with Meniere disease management rather than BPPV recurrence.",
+     "Noise exposure damages hearing, and pure BPPV involves no hearing loss or tinnitus.",
+     "",
+     "Blood pressure control matters generally but is not the modifiable risk linked to recurrent otoconial instability.",
+     "Macrolides are not implicated; the medication caution in BPPV concerns vestibular suppressants."
+    ]
+   }
+  ]
+ },
+ "otitis-externa": {
+  "condition": "Otitis Externa",
+  "questions": [
+   {
+    "q": "Which organisms predominate in acute otitis externa?",
+    "ch": [
+     "Pseudomonas aeruginosa and Staphylococcus aureus",
+     "Streptococcus pyogenes and Fusobacterium necrophorum",
+     "Haemophilus influenzae and Mycoplasma pneumoniae",
+     "Streptococcus pneumoniae and Moraxella catarrhalis",
+     "Aspergillus and Candida species"
+    ],
+    "correct": 0,
+    "exp": "Most acute otitis externa is bacterial, with Pseudomonas aeruginosa and Staphylococcus aureus predominating; swimmer's ear and Pseudomonas are the two-word answer on most exams for acute otitis externa.",
+    "why": [
+     "",
+     "These organisms cause pharyngitis and its Lemierre complication, not external canal infection.",
+     "These are respiratory pathogens and are not the predominant external canal organisms.",
+     "S. pneumoniae and M. catarrhalis are middle-ear and sinus pathogens rather than canal organisms.",
+     "Aspergillus and Candida cause otomycosis in chronic or refractory cases rather than most acute disease."
+    ]
+   },
+   {
+    "q": "Which examination finding is the hallmark that distinguishes otitis externa from acute otitis media?",
+    "ch": [
+     "A bulging, immobile tympanic membrane with middle-ear effusion",
+     "Purulent drainage visible in the middle meatus on rhinoscopy",
+     "Tenderness over the maxillary and frontal sinus regions",
+     "Tender anterior cervical adenopathy with tonsillar exudates",
+     "Severe pain on tragal pressure or auricle traction with a normal tympanic membrane"
+    ],
+    "correct": 4,
+    "exp": "Otitis externa is marked by severe pain on tragal pressure or auricle traction with a normal-appearing tympanic membrane, whereas acute otitis media shows a bulging, immobile tympanic membrane with middle-ear effusion behind an intact canal.",
+    "why": [
+     "A bulging immobile membrane with effusion is the finding of acute otitis media, the condition being excluded.",
+     "Purulent drainage in the middle meatus is a rhinosinusitis finding, not an ear canal finding.",
+     "Sinus tenderness belongs to rhinosinusitis rather than external canal disease.",
+     "Exudates with tender anterior nodes describe streptococcal pharyngitis.",
+     ""
+    ]
+   },
+   {
+    "q": "How is otitis externa classified by duration and invasiveness?",
+    "ch": [
+     "Geotropic, apogeotropic, and central, based on nystagmus direction",
+     "Anterior, posterior, and refractory, based on the site of bleeding",
+     "Acute under 6 weeks, chronic over 3 months, and malignant or necrotizing when it invades the skull base",
+     "Acute under 4 weeks, subacute 4-12 weeks, and chronic at 12 weeks or more",
+     "Mild, moderate, and severe, based on the reported pain score alone"
+    ],
+    "correct": 2,
+    "exp": "Otitis externa is classified as acute (under 6 weeks), chronic (over 3 months), or malignant/necrotizing otitis externa, an invasive osteomyelitis of the skull base seen in diabetics and the immunocompromised.",
+    "why": [
+     "Geotropic and apogeotropic describe nystagmus direction in positional vertigo.",
+     "Anterior versus posterior is the classification used for nosebleeds.",
+     "",
+     "That is the duration classification used for rhinosinusitis, not for otitis externa.",
+     "Pain severity guides analgesia but is not the classification scheme for this disease."
+    ]
+   },
+   {
+    "q": "What is first-line therapy for uncomplicated acute otitis externa?",
+    "ch": [
+     "Isopropyl alcohol instilled into the inflamed canal",
+     "Topical clotrimazole after thorough canal debridement",
+     "Oral ciprofloxacin for seven to ten days",
+     "Topical fluoroquinolone drops such as ciprofloxacin or ofloxacin",
+     "Oral amoxicillin-clavulanate plus a topical anesthetic"
+    ],
+    "correct": 3,
+    "exp": "Topical fluoroquinolone drops such as ciprofloxacin or ofloxacin are first-line for uncomplicated acute otitis externa: they cover Pseudomonas, lack ototoxicity, and topical therapy is first-line over oral antibiotics per AAO-HNS guidelines.",
+    "why": [
+     "Acidifying and drying agents are for mild disease and prevention, and instilling alcohol into an inflamed canal causes stinging.",
+     "Antifungals are for otomycosis, which is suspected when there is no response to antibacterials.",
+     "Systemic anti-pseudomonal fluoroquinolones are for malignant/necrotizing disease or spread beyond the canal, not uncomplicated disease.",
+     "",
+     "Oral antibiotics are not first-line, and topical anesthetics can obscure exam findings, so systemic analgesia is preferred."
+    ]
+   },
+   {
+    "q": "Before recommending a neomycin-polymyxin-hydrocortisone otic combination, what must be established?",
+    "ch": [
+     "That the patient has already failed a course of topical antifungal therapy",
+     "That the ESR and CRP are within normal limits",
+     "That the canal has already been packed with a wick",
+     "That the tympanic membrane is intact, because of ototoxicity risk",
+     "That a Gallium-67 scan shows no abnormal uptake"
+    ],
+    "correct": 3,
+    "exp": "Aminoglycoside-containing combinations such as neomycin-polymyxin must be avoided when the tympanic membrane may be perforated, because of ototoxicity risk; ofloxacin is the drop that is safe with a perforated membrane, and neomycin can also cause contact dermatitis.",
+    "why": [
+     "Antifungals are considered when antibacterial drops fail, which is a different decision point entirely.",
+     "ESR and CRP are markers for diagnosing and tracking necrotizing otitis externa, not prerequisites for choosing a drop.",
+     "A wick is placed when the canal is too edematous for drops to penetrate, and it does not address ototoxicity.",
+     "",
+     "Gallium-67 scanning tracks resolution of necrotizing disease and has no role in routine drop selection."
+    ]
+   },
+   {
+    "q": "A patient's ear canal is so edematous that instilled drops cannot reach the deep canal. Which intervention addresses this?",
+    "ch": [
+     "Instill acetic acid to shrink the canal quickly",
+     "Place an ear wick to deliver the drops",
+     "Order a CT of the temporal bone before treating",
+     "Add a topical anesthetic to reduce the swelling",
+     "Switch to an oral fluoroquinolone instead of using drops"
+    ],
+    "correct": 1,
+    "exp": "An ear wick is placed when the canal is too edematous for medication to penetrate; it delivers the drops and is removed or allowed to fall out as swelling subsides so the drops reach the deep canal.",
+    "why": [
+     "Acidifying and drying agents are for mild disease and prevention and sting an inflamed canal; they do not overcome edema.",
+     "",
+     "CT of the temporal bone is for suspected malignant otitis externa rather than for canal edema.",
+     "Topical anesthetics can obscure exam findings and have no effect on canal swelling.",
+     "Topical therapy remains first-line for uncomplicated disease, and oral antibiotics are reserved for spread beyond the canal or immunocompromise."
+    ]
+   },
+   {
+    "q": "Which instruction is correct when teaching an adult to self-administer otic drops?",
+    "ch": [
+     "Pull the auricle down and back, using the same technique as for a young child",
+     "Insert a cotton swab into the canal afterward to hold the medication in place",
+     "Warm the drops to body temperature, pull the auricle up and back, and lie with the treated ear up for several minutes",
+     "Instill the drops sitting upright and then stand immediately to resume activity",
+     "Use the drops straight from the refrigerator so the cold numbs the canal"
+    ],
+    "correct": 2,
+    "exp": "Correct technique is to warm the drops to body temperature, pull the auricle up and back in adults (down and back in young children), and have the patient lie with the affected ear up for several minutes.",
+    "why": [
+     "Down and back is the technique for young children, whereas adults require up and back.",
+     "Nothing should be inserted into the canal, and cotton swabs cause the canal trauma that predisposes to otitis externa.",
+     "",
+     "Standing immediately lets the drops run out before they can reach the deep canal.",
+     "Drops should be warmed to body temperature, since cold drops are uncomfortable and poorly tolerated."
+    ]
+   },
+   {
+    "q": "A patient with persistent ear symptoms has not improved on antibacterial drops, and otoscopy shows fluffy fungal hyphae with black spores. What is the management?",
+    "ch": [
+     "Place a wick and continue the same antibiotic drops",
+     "Meticulous cleaning and debridement plus topical antifungals",
+     "Order a Technetium-99m bone scan before changing therapy",
+     "Extend the same antibacterial drops for another two weeks",
+     "Begin systemic anti-pseudomonal therapy for skull-base osteomyelitis"
+    ],
+    "correct": 1,
+    "exp": "Fluffy hyphae with black spores indicate Aspergillus otomycosis, suspected when there is no response to antibacterials; management centers on meticulous cleaning and debridement with topical antifungals such as clotrimazole or acetic acid rather than more antibiotics.",
+    "why": [
+     "A wick helps when edema blocks drop delivery, but the drug class here is still wrong.",
+     "",
+     "Bone scanning is used for suspected necrotizing disease rather than for visible fungal hyphae.",
+     "Continuing antibacterials is exactly the error, since failure to respond is the clue to a fungal cause.",
+     "Systemic anti-pseudomonal therapy is for malignant/necrotizing otitis externa, which presents with deep pain and granulation tissue."
+    ]
+   },
+   {
+    "q": "An elderly diabetic patient has severe deep nocturnal ear pain out of proportion to the exam and granulation tissue at the bony-cartilaginous junction. Which workup is indicated?",
+    "ch": [
+     "ESR and CRP, glucose and HbA1c, and CT of the temporal bone",
+     "A Dix-Hallpike maneuver to exclude a vestibular cause",
+     "Reassurance now with repeat otoscopy in two weeks",
+     "Coagulation studies and a type & screen for blood loss",
+     "Canal culture alone, with the same topical drops continued"
+    ],
+    "correct": 0,
+    "exp": "Deep unremitting pain and granulation tissue at the bony-cartilaginous junction in an elderly diabetic suggest malignant (necrotizing) otitis externa: check ESR/CRP, which are markedly elevated, plus glucose and HbA1c, and confirm with CT of the temporal bone, with Technetium-99m and Gallium-67 scanning available to diagnose and track resolution.",
+    "why": [
+     "",
+     "Positional testing addresses vertigo rather than an invasive ear canal infection.",
+     "Delay is dangerous, because necrotizing disease threatens the facial nerve and the skull base.",
+     "Coagulation testing belongs to the evaluation of heavy nosebleeds, not ear pain.",
+     "Culture is appropriate for refractory disease, but continuing topical drops alone would miss skull-base osteomyelitis."
+    ]
+   },
+   {
+    "q": "Which prevention counseling is appropriate at discharge for a swimmer with resolving otitis externa?",
+    "ch": [
+     "Take a prophylactic oral fluoroquinolone before swim practice",
+     "Use a topical anesthetic before swimming to prevent pain",
+     "Apply a neomycin-containing combination drop once weekly",
+     "Dry the canal with a cotton swab after each swim",
+     "Instill acidifying drying drops after swimming and avoid cotton swabs"
+    ],
+    "correct": 4,
+    "exp": "Prevention counseling centers on keeping the ear dry and intact: acidifying and drying agents such as acetic acid or isopropyl alcohol as post-swim prophylaxis, ear protection such as a fitted plug or shower cap, and never inserting cotton swabs or objects into the canal.",
+    "why": [
+     "Oral antibiotics are reserved for spread beyond the canal or immunocompromise and are never used as prophylaxis.",
+     "Topical anesthetics can obscure exam findings and have no preventive role.",
+     "Routine neomycin exposure risks contact dermatitis and ototoxicity if the membrane is perforated.",
+     "Cotton swabs cause the canal trauma that is a listed risk factor and should never be inserted.",
+     ""
+    ]
+   }
+  ]
+ }
+}

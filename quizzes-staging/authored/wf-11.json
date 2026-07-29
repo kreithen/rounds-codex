@@ -1,0 +1,977 @@
+{
+ "labor": {
+  "condition": "Labor & Delivery Stages",
+  "questions": [
+   {
+    "q": "Which description best defines true labor?",
+    "ch": [
+     "Irregular contractions that produce no cervical change over several hours",
+     "Regular uterine contractions causing progressive cervical effacement and dilation with fetal descent",
+     "Rupture of membranes with pooling of alkaline fluid but no contractions at all",
+     "Bloody show alone in the absence of any measurable cervical dilation",
+     "Painful contractions relieved entirely by hydration and a change of position"
+    ],
+    "correct": 1,
+    "exp": "Labor is regular uterine contractions causing progressive cervical effacement and dilation plus fetal descent; Braxton-Hicks contractions are irregular and produce no cervical change.",
+    "why": [
+     "Irregular contractions without cervical change are Braxton-Hicks contractions, not labor.",
+     "",
+     "Rupture of membranes may precede labor, but without contractions producing cervical change it is not labor.",
+     "Bloody show is a common sign of impending labor, but labor requires demonstrated cervical change.",
+     "Contractions that resolve with hydration and repositioning suggest false labor rather than true labor."
+    ]
+   },
+   {
+    "q": "The third stage of labor is best defined as which interval?",
+    "ch": [
+     "The first one to two hours postpartum while hemostasis is established",
+     "Onset of regular contractions to the beginning of the active phase at 6 cm",
+     "Onset of labor to complete cervical dilation at 10 cm",
+     "Complete cervical dilation to delivery of the baby",
+     "Delivery of the baby to delivery of the placenta"
+    ],
+    "correct": 4,
+    "exp": "The third stage runs from delivery of the baby to delivery of the placenta; the first stage is onset to full 10 cm dilation, the second stage is full dilation to delivery of the baby, and the fourth stage is the first 1-2 hours postpartum.",
+    "why": [
+     "The first 1-2 hours postpartum, when hemostasis is established, is the functional fourth stage.",
+     "That describes the latent portion of the first stage, before the active phase begins at 6 cm.",
+     "Onset of labor to full 10 cm dilation is the first stage.",
+     "Full dilation to delivery of the baby is the second stage.",
+     ""
+    ]
+   },
+   {
+    "q": "Per ACOG and the Consortium on Safe Labor, the active phase of the first stage is now generally considered to begin at what cervical dilation?",
+    "ch": [
+     "6 cm dilation",
+     "3 cm dilation",
+     "4 cm dilation",
+     "8 cm dilation",
+     "10 cm dilation"
+    ],
+    "correct": 0,
+    "exp": "The active phase is now defined as beginning at 6 cm rather than the older Friedman threshold; this ACOG and Consortium on Safe Labor change reduced unnecessary primary cesarean delivery.",
+    "why": [
+     "",
+     "3 cm is below any accepted active-phase threshold and would label most latent labor as active.",
+     "4 cm was the older Friedman threshold that the 6 cm definition replaced.",
+     "8 cm is well into active labor; using it would delay recognition of the active phase.",
+     "10 cm is complete dilation, which marks the end of the first stage rather than the start of the active phase."
+    ]
+   },
+   {
+    "q": "Which findings confirm rupture of membranes at the bedside?",
+    "ch": [
+     "Nitrazine paper turning yellow together with absent ferning on microscopy",
+     "Bloody show accompanied by cervical dilation of about 4 cm",
+     "A globular firm uterus with lengthening of the umbilical cord",
+     "Turtle sign with retraction of the fetal head against the perineum",
+     "Pooling of fluid, nitrazine turning blue, and ferning on microscopy"
+    ],
+    "correct": 4,
+    "exp": "Rupture of membranes is confirmed by pooling of fluid, nitrazine paper turning blue because amniotic fluid is alkaline, and ferning on microscopy; AmniSure/PAMG-1 is added when the result is uncertain.",
+    "why": [
+     "Nitrazine turns blue, not yellow, with alkaline amniotic fluid, and ferning should be present.",
+     "Bloody show and cervical dilation reflect labor progress but say nothing about membrane status.",
+     "A globular firm uterus with cord lengthening indicates placental separation in the third stage.",
+     "The turtle sign indicates shoulder dystocia, not rupture of membranes.",
+     ""
+    ]
+   },
+   {
+    "q": "Immediately after spontaneous rupture of membranes, what is the nurse's first priority?",
+    "ch": [
+     "Encourage ambulation and oral hydration to promote descent",
+     "Perform a digital cervical exam to document dilation and station",
+     "Increase the oxytocin infusion to augment contraction strength",
+     "Assess the fetal heart rate for evidence of cord prolapse",
+     "Send amniotic fluid for nitrazine and ferning confirmation"
+    ],
+    "correct": 3,
+    "exp": "After rupture of membranes the nurse immediately assesses the fetal heart rate because cord prolapse causes fetal bradycardia; fluid color (meconium), amount, and odor are then noted.",
+    "why": [
+     "Ambulation and hydration are appropriate in early labor but not before fetal heart rate assessment.",
+     "A cervical exam may follow, but it does not detect the fetal bradycardia of cord prolapse.",
+     "Raising oxytocin before assessing the fetal heart rate risks worsening an unrecognized problem.",
+     "",
+     "Nitrazine and ferning confirm a rupture that has already occurred; they are not the immediate safety priority."
+    ]
+   },
+   {
+    "q": "Late decelerations on the fetal monitor are mechanistically explained by which process?",
+    "ch": [
+     "Maternal fever with chorioamnionitis",
+     "Fetal movement producing accelerations",
+     "Uteroplacental insufficiency",
+     "Fetal head compression",
+     "Umbilical cord compression"
+    ],
+    "correct": 2,
+    "exp": "Late decelerations reflect uteroplacental insufficiency and are the worrisome pattern; early decelerations come from head compression and variable decelerations from cord compression.",
+    "why": [
+     "Maternal fever is not the mechanism given for late decelerations.",
+     "Accelerations with fetal movement are a reassuring finding, not a deceleration.",
+     "",
+     "Head compression produces early decelerations, which are benign.",
+     "Cord compression produces variable decelerations rather than late ones."
+    ]
+   },
+   {
+    "q": "A postpartum patient with asthma and chronic hypertension has continued hemorrhage despite oxytocin. Which additional agent is safest?",
+    "ch": [
+     "Misoprostol given simultaneously with a high-dose oxytocin infusion",
+     "Tranexamic acid, given within 3 hours of the onset of bleeding",
+     "Magnesium sulfate, to relax the uterus and slow the rate of bleeding",
+     "Carboprost, because prostaglandin F2-alpha is first line for uterine atony",
+     "Methylergonovine, because ergot agents act fastest on the uterine muscle"
+    ],
+    "correct": 1,
+    "exp": "Tranexamic acid, most effective when given within 3 hours of bleeding onset, is the appropriate additional agent here because carboprost is contraindicated in asthma and methylergonovine in hypertension.",
+    "why": [
+     "Prostaglandins should not be given simultaneously with oxytocin, and this choice ignores both contraindications.",
+     "",
+     "Magnesium sulfate relaxes the uterus and would worsen atonic bleeding; it is used for seizure prophylaxis and fetal neuroprotection.",
+     "Carboprost (PGF2-alpha) is contraindicated in asthma.",
+     "Methylergonovine is contraindicated in hypertension."
+    ]
+   },
+   {
+    "q": "Which criteria must be met before diagnosing arrest of the first stage of labor?",
+    "ch": [
+     "At 6 cm or more, no cervical change for at least 4 hours with adequate contractions of 200 MVU or more",
+     "Failure to deliver after 1 hour of pushing in a nulliparous patient with an epidural",
+     "Any Category II tracing persisting through two consecutive cervical examinations",
+     "A Bishop score below 5 after 12 hours of prostaglandin cervical ripening",
+     "No cervical change for 2 hours at 4 cm regardless of contraction adequacy"
+    ],
+    "correct": 0,
+    "exp": "First-stage arrest requires the patient to be at 6 cm or more with no cervical change for at least 4 hours despite adequate contractions of 200 MVU or more, or at least 6 hours with inadequate contractions.",
+    "why": [
+     "",
+     "Pushing duration applies to arrest of descent in the second stage, where 3 hours for a nullipara plus 1 hour for an epidural is allowed.",
+     "A Category II tracing prompts intrauterine resuscitation, not a diagnosis of labor arrest.",
+     "The Bishop score quantifies cervical favorability for induction; it is not an arrest criterion.",
+     "The 4 cm and 2 hour standard reflects the older Friedman thresholds that the 6 cm definition replaced."
+    ]
+   },
+   {
+    "q": "During the third stage, which combination of findings indicates that the placenta has separated?",
+    "ch": [
+     "Sustained tachysystole with more than five contractions in ten minutes",
+     "Loss of deep tendon reflexes with a decreasing respiratory rate",
+     "Cord shortening with a soft, wide, ill-defined uterine fundus",
+     "A gush of blood, lengthening of the cord, and a globular firm uterus",
+     "A boggy uterus with heavy lochia and maternal tachycardia"
+    ],
+    "correct": 3,
+    "exp": "Signs of placental separation are a gush of blood, lengthening of the cord, and a uterus that becomes globular and firm; the cord should never be pulled.",
+    "why": [
+     "Tachysystole is an oxytocin complication, not a sign of placental separation.",
+     "Loss of deep tendon reflexes with respiratory depression indicates magnesium toxicity.",
+     "The cord lengthens and the uterus becomes firm and globular; these findings are the reverse.",
+     "",
+     "A boggy uterus with heavy lochia suggests uterine atony and postpartum hemorrhage."
+    ]
+   },
+   {
+    "q": "The fetal head delivers then retracts tightly against the perineum, and the shoulders do not deliver with routine traction. What is the correct response?",
+    "ch": [
+     "Apply firm fundal pressure to push the anterior shoulder past the symphysis",
+     "Elevate the presenting part and proceed directly to emergent cesarean delivery",
+     "Call for help and begin the HELPERR maneuver sequence, avoiding fundal pressure",
+     "Start a magnesium sulfate infusion to relax the uterus and free the shoulder",
+     "Increase the oxytocin infusion to strengthen contractions and drive expulsion"
+    ],
+    "correct": 2,
+    "exp": "The turtle sign signals shoulder dystocia, an obstetric emergency: call for help and work through the HELPERR sequence, and do NOT apply fundal pressure.",
+    "why": [
+     "Fundal pressure is explicitly contraindicated in shoulder dystocia and further impacts the shoulder.",
+     "Elevating the presenting part and moving to cesarean is the response to cord prolapse, not to a dystocia after the head has delivered.",
+     "",
+     "Magnesium sulfate is used for seizure prophylaxis and fetal neuroprotection, not for shoulder dystocia.",
+     "More oxytocin increases contraction force against an impacted shoulder and risks injury."
+    ]
+   }
+  ]
+ },
+ "bronchiolitis": {
+  "condition": "Bronchiolitis (RSV)",
+  "questions": [
+   {
+    "q": "Which pathogen is the most common cause of bronchiolitis?",
+    "ch": [
+     "Human metapneumovirus (hMPV)",
+     "Respiratory syncytial virus (RSV)",
+     "Adenovirus, an occasional cause",
+     "Rhinovirus, another viral cause",
+     "Parainfluenza virus, types 1 and 3"
+    ],
+    "correct": 1,
+    "exp": "RSV, respiratory syncytial virus, is the most common cause of bronchiolitis and the leading cause of infant hospitalization in the US; rhinovirus, human metapneumovirus, parainfluenza, influenza, and adenovirus also cause it.",
+    "why": [
+     "Human metapneumovirus does cause bronchiolitis, but far less often than RSV.",
+     "",
+     "Adenovirus is an occasional cause and is not the leading one.",
+     "Rhinovirus is listed among the other agents, not as the most common cause.",
+     "Parainfluenza is the classic cause of croup and only a minor cause of bronchiolitis."
+    ]
+   },
+   {
+    "q": "Bronchiolitis primarily affects which group, and when does it peak?",
+    "ch": [
+     "Infants under 2 years, peaking at 12-18 months of age",
+     "Neonates in the first two weeks of life, with no seasonal variation",
+     "Infants under 2 years, peaking at 3-6 months, in winter and early spring",
+     "Children 6 months to 3 years, peaking in fall and early winter",
+     "School-age children and adolescents, peaking in the late spring months"
+    ],
+    "correct": 2,
+    "exp": "Bronchiolitis primarily affects infants under 2 years, peaks at 3-6 months of age, and has winter and early-spring seasonality.",
+    "why": [
+     "The peak is at 3-6 months, considerably younger than 12-18 months.",
+     "Bronchiolitis is not a disease of the first two weeks of life and it is strongly seasonal.",
+     "",
+     "Ages 6 months to 3 years with a fall and early-winter peak describes croup.",
+     "School-age children and adolescents who wheeze are far more likely to have asthma than bronchiolitis."
+    ]
+   },
+   {
+    "q": "Which statement about the diagnostic workup of bronchiolitis is correct?",
+    "ch": [
+     "Serial complete blood counts are used to grade the severity of illness",
+     "A chest X-ray should be obtained routinely to confirm the diagnosis",
+     "The diagnosis is clinical, and routine chest X-ray and labs are not recommended",
+     "RSV PCR is required in every infant before any treatment can be started",
+     "A normal pulse oximetry reading excludes the diagnosis of bronchiolitis"
+    ],
+    "correct": 2,
+    "exp": "Bronchiolitis is a clinical diagnosis; routine chest X-ray is not recommended because it shows nonspecific hyperinflation or atelectasis and drives unnecessary antibiotics, and routine labs are not needed.",
+    "why": [
+     "Severity is graded by work of breathing, feeding ability, hydration, apnea, and SpO2, not by serial blood counts.",
+     "Routine chest X-ray is specifically not recommended because it is nonspecific and drives unnecessary antibiotics.",
+     "",
+     "RSV PCR or antigen testing is done only when it changes management, such as cohorting or ruling out influenza.",
+     "Pulse oximetry guides admission decisions, but a normal saturation does not exclude bronchiolitis."
+    ]
+   },
+   {
+    "q": "Which examination findings are the hallmark of bronchiolitis?",
+    "ch": [
+     "Diffuse wheezes and fine crackles with tachypnea and retractions",
+     "A barking, seal-like cough with inspiratory stridor and hoarseness",
+     "Focal consolidation with dullness to percussion and a high fever",
+     "An absent cough with drooling and a tripod sitting posture",
+     "Clear lungs with normal work of breathing and an isolated fever"
+    ],
+    "correct": 0,
+    "exp": "The hallmark findings are diffuse wheezes and fine crackles with tachypnea, nasal flaring, retractions, prolonged expiration, and often hypoxia, following a URI prodrome.",
+    "why": [
+     "",
+     "A barking cough with inspiratory stridor describes croup rather than bronchiolitis.",
+     "Focal consolidation with high fever points to pneumonia.",
+     "Absent cough with drooling and tripod posture suggests epiglottitis.",
+     "Clear lungs with normal work of breathing is inconsistent with bronchiolitis."
+    ]
+   },
+   {
+    "q": "Why does a trial of albuterol usually fail in an infant with bronchiolitis?",
+    "ch": [
+     "Because concurrent systemic steroids are required for albuterol to have any effect",
+     "Because infants cannot generate enough inspiratory flow to inhale a nebulized drug",
+     "Because beta-2 receptors are absent from the airway until about 2 years of age",
+     "Because the wheeze in bronchiolitis is transmitted from the upper airway only",
+     "Because the obstruction is mucus plugging and edema, not reversible bronchospasm"
+    ],
+    "correct": 4,
+    "exp": "Bronchiolar obstruction comes from epithelial necrosis, edema, and mucus plugs creating a ball-valve effect with air trapping, not from reversible smooth-muscle bronchospasm, which is why bronchodilators are not routinely recommended.",
+    "why": [
+     "Systemic steroids are also not routinely recommended, so adding them would not rescue albuterol.",
+     "Nebulized delivery does work in infants; the problem is the nature of the obstruction, not drug delivery.",
+     "Beta-2 receptors are present in infancy, and receptor absence is not the explanation given.",
+     "The wheeze arises from the inflamed lower airways, the bronchioles, not from transmitted upper-airway noise.",
+     ""
+    ]
+   },
+   {
+    "q": "An infant with bronchiolitis has moderate-to-severe distress and hypoxia not met by low-flow oxygen. Which escalation is recommended?",
+    "ch": [
+     "Empiric intravenous antibiotics pending a chest X-ray result",
+     "Chest physiotherapy with postural drainage every four hours",
+     "Nebulized hypertonic saline given in the emergency department",
+     "Heated high-flow nasal cannula, escalating to CPAP or ICU if it fails",
+     "Nebulized albuterol every 20 minutes plus a systemic corticosteroid"
+    ],
+    "correct": 3,
+    "exp": "Heated high-flow nasal cannula is used for moderate-severe distress or hypoxia not met by low-flow oxygen; it provides humidified flow and some PEEP, and failure warrants escalation to CPAP or the ICU.",
+    "why": [
+     "Antibiotics are not routinely recommended, and routine chest X-ray is what drives exactly this unnecessary treatment.",
+     "Chest physiotherapy is among the therapies that are not routinely recommended.",
+     "Hypertonic saline may modestly reduce length of stay in admitted patients but is not recommended in the ED setting.",
+     "",
+     "Bronchodilators and systemic steroids are not routinely recommended in bronchiolitis."
+    ]
+   },
+   {
+    "q": "Which nursing intervention best addresses the primary airway problem in bronchiolitis?",
+    "ch": [
+     "Nasal suctioning before feeds and as needed, with the head elevated",
+     "Restricting oral fluids to reduce the production of secretions",
+     "Obtaining a daily chest X-ray to follow atelectasis and hyperinflation",
+     "Administering a scheduled bronchodilator before each feeding",
+     "Placing the infant flat and supine to promote chest expansion"
+    ],
+    "correct": 0,
+    "exp": "Prioritizing a patent airway means nasal bulb or nasopharyngeal suctioning before feeds and as needed with the head elevated; suctioning and hydration do more than any drug because the problem is airway plugging.",
+    "why": [
+     "",
+     "Hydration must be maintained with small frequent feeds or IV/NG fluids if tachypnea impairs safe oral intake.",
+     "Routine chest X-ray is not recommended and would do nothing for the airway.",
+     "Bronchodilators are not routinely recommended and do not clear the mucus plugging that causes the obstruction.",
+     "The infant should be positioned with the head elevated rather than flat and supine."
+    ]
+   },
+   {
+    "q": "A 6-week-old former premature infant with bronchiolitis is described by parents as unusually quiet. Which concern is highest?",
+    "ch": [
+     "Reactive airway disease that will respond to a bronchodilator trial",
+     "Simple tiredness from the URI prodrome, expected around day 3-5",
+     "Post-tussive emesis causing a self-limited aversion to feeding",
+     "Apnea, which can be the presenting sign in young or premature infants",
+     "Bacterial superinfection requiring immediate empiric antibiotic therapy"
+    ],
+    "correct": 3,
+    "exp": "Apnea can be the first sign of bronchiolitis in young or premature infants, so a quiet baby is not reassuring; apnea with pallor or cyanosis is a red flag, especially under 2 months.",
+    "why": [
+     "Bronchodilator-responsive reactive airway disease is a feature of asthma in an older child.",
+     "The illness does peak around day 3-5, but a quiet young infant must be evaluated for apnea rather than assumed to be tired.",
+     "Feeding difficulty matters, but it does not carry the immediate risk that apnea does.",
+     "",
+     "Antibiotics are not routinely recommended in bronchiolitis and would not explain the quiet infant."
+    ]
+   },
+   {
+    "q": "Which agent is given as a single dose to infants entering or during their first RSV season?",
+    "ch": [
+     "Nebulized hypertonic saline 3% used prophylactically",
+     "Oral dexamethasone at the onset of the RSV season",
+     "Heated high-flow nasal cannula started at the first cough",
+     "Palivizumab, dosed monthly through the season",
+     "Nirsevimab, a long-acting RSV monoclonal antibody"
+    ],
+    "correct": 4,
+    "exp": "Nirsevimab is a long-acting monoclonal antibody given as a single dose for infants entering or during the first RSV season; it is passive immunization and largely replaces palivizumab.",
+    "why": [
+     "Hypertonic saline is a treatment that may shorten stay in admitted patients; it is not prophylaxis.",
+     "Systemic steroids are not routinely recommended in bronchiolitis and have no preventive role.",
+     "High-flow nasal cannula is an escalation therapy for distress, not an immunization.",
+     "Palivizumab is given monthly to select high-risk infants, not as a single dose for most infants.",
+     ""
+    ]
+   },
+   {
+    "q": "Which factor most strongly favors admitting an infant with bronchiolitis?",
+    "ch": [
+     "Diffuse wheezing that has not changed after nebulized albuterol",
+     "Age under 12 weeks together with hypoxia, dehydration, or apnea",
+     "Hyperinflation and atelectasis reported on a chest X-ray",
+     "A cough lingering for 10 days in an infant who is feeding normally",
+     "A positive RSV swab in a well-appearing, well-feeding infant"
+    ],
+    "correct": 1,
+    "exp": "Disposition drivers are age under 12 weeks, prematurity, comorbidities, hypoxia, dehydration, apnea, and severe work of breathing; pulse oximetry and feeding ability guide the admission decision.",
+    "why": [
+     "Bronchodilators usually fail in bronchiolitis, so a non-response is expected and not a disposition criterion.",
+     "",
+     "Chest X-ray is not recommended, and hyperinflation with atelectasis is a nonspecific finding.",
+     "Parents are taught that cough lingers 2-3 weeks, so a lingering cough with normal feeding is expected.",
+     "RSV testing is done only when it changes management, and a positive swab in a well infant does not."
+    ]
+   }
+  ]
+ },
+ "croup": {
+  "condition": "Croup",
+  "questions": [
+   {
+    "q": "Which triad is classic for croup?",
+    "ch": [
+     "Expiratory grunting with focal consolidation and dullness to percussion",
+     "Wheezing with fine crackles and preceding rhinorrhea in an infant",
+     "Drooling with high fever and a toxic appearance and no cough",
+     "Sudden choking with unilateral decreased breath sounds and no prodrome",
+     "Barking, seal-like cough with inspiratory stridor and hoarseness"
+    ],
+    "correct": 4,
+    "exp": "The classic croup triad is a barking, seal-like cough with inspiratory stridor and hoarseness, usually preceded by 1-3 days of URI or coryza with low-grade fever.",
+    "why": [
+     "Grunting with focal consolidation points to pneumonia rather than upper-airway obstruction.",
+     "Wheezing with fine crackles in an infant describes bronchiolitis.",
+     "Drooling, high fever, and a toxic child with no cough suggest epiglottitis.",
+     "Sudden onset with no viral prodrome suggests an inhaled foreign body.",
+     ""
+    ]
+   },
+   {
+    "q": "Which virus most commonly causes croup?",
+    "ch": [
+     "Influenza virus during flu season",
+     "Measles virus, now rarely seen",
+     "Respiratory syncytial virus (RSV)",
+     "Parainfluenza virus, types 1 and 3",
+     "Adenovirus, an occasional cause"
+    ],
+    "correct": 3,
+    "exp": "Parainfluenza virus, types 1 and 3, is the classic and most common cause of croup; RSV, influenza, adenovirus, and rarely measles can also cause it.",
+    "why": [
+     "Influenza can cause croup but is not the classic culprit.",
+     "Measles is a rare cause, especially where vaccination is widespread.",
+     "RSV can cause croup but is best known as the leading cause of bronchiolitis.",
+     "",
+     "Adenovirus is listed as a less common cause of croup."
+    ]
+   },
+   {
+    "q": "Why does a few millimeters of subglottic edema produce stridor in a toddler?",
+    "ch": [
+     "Because the subglottis is the narrowest point and resistance rises steeply as the radius falls",
+     "Because the trachea has no cartilage and collapses inward on inspiration",
+     "Because bronchiolar mucus plugging creates a ball-valve air-trapping effect",
+     "Because vocal cord paralysis accompanies the viral inflammatory response",
+     "Because alveolar surfactant is depleted by the viral infection at this age"
+    ],
+    "correct": 0,
+    "exp": "The subglottis is the narrowest part of a young child's airway and is encircled by rigid cricoid cartilage, so by Poiseuille's law resistance rises with the inverse fourth power of the radius and small edema causes disproportionate obstruction.",
+    "why": [
+     "",
+     "The subglottic ring is rigid cricoid cartilage, which is precisely why edema there is so consequential.",
+     "Ball-valve mucus plugging in the bronchioles is the mechanism of bronchiolitis.",
+     "Hoarseness comes from laryngeal inflammation, not from vocal cord paralysis.",
+     "Surfactant depletion is not part of the croup mechanism described."
+    ]
+   },
+   {
+    "q": "A toddler has mild croup with a barking cough and no stridor at rest. What treatment is indicated?",
+    "ch": [
+     "Nebulized epinephrine now, with discharge after a brief recovery",
+     "A single dose of dexamethasone, given even for mild disease",
+     "A five-day course of oral amoxicillin for a presumed bacterial cause",
+     "Scheduled nebulized albuterol every four hours until symptoms resolve",
+     "No medication; supportive humidified air and reassurance alone"
+    ],
+    "correct": 1,
+    "exp": "Dexamethasone is first-line for ALL severities of croup, even mild disease; a single PO, IM, or IV dose of roughly 0.15-0.6 mg/kg has a long half-life that covers the illness and reduces return visits.",
+    "why": [
+     "Nebulized epinephrine is reserved for moderate-to-severe croup with stridor at rest and requires 3-4 hours of observation.",
+     "",
+     "Croup is viral, so antibiotics have no role in treatment.",
+     "Albuterol treats lower-airway bronchospasm and does not relieve subglottic edema.",
+     "Steroids benefit even mild croup, reducing symptom duration, return visits, and admissions."
+    ]
+   },
+   {
+    "q": "After nebulized epinephrine is given for croup, what must happen before discharge?",
+    "ch": [
+     "A repeat AP neck film to confirm the steeple sign has cleared",
+     "A second dose of nebulized epinephrine given exactly one hour later",
+     "Admission for at least 24 hours of continuous pulse oximetry",
+     "Documentation of a Westley score of zero before the child may leave",
+     "Observation for 3-4 hours to detect rebound stridor"
+    ],
+    "correct": 4,
+    "exp": "Nebulized epinephrine acts fast but its effect wanes in about 2 hours, so the child must be observed 3-4 hours for rebound stridor before discharge.",
+    "why": [
+     "The steeple sign is nonspecific and imaging is not required in croup at all.",
+     "A scheduled second dose is not required; the child is observed and re-dosed only if needed.",
+     "Most children are managed as outpatients after an adequate observation period.",
+     "The Westley score guides severity and disposition, but a score of zero is not a discharge requirement.",
+     ""
+    ]
+   },
+   {
+    "q": "Which tool grades croup severity to guide disposition?",
+    "ch": [
+     "The Bishop score, using cervical dilation, effacement, station, consistency, and position",
+     "The Westley score, using stridor, retractions, air entry, cyanosis, and consciousness",
+     "The Braden scale, using sensory perception, moisture, activity, mobility, and nutrition",
+     "The Parkland formula, using body weight and percentage of total body surface area",
+     "The NPIAP staging system, using the anatomic depth of tissue involvement"
+    ],
+    "correct": 1,
+    "exp": "The Westley Croup Score grades severity using stridor, retractions, air entry, cyanosis, and level of consciousness, and it guides the disposition decision.",
+    "why": [
+     "The Bishop score quantifies cervical favorability for labor induction.",
+     "",
+     "The Braden scale scores the risk of developing a pressure injury.",
+     "The Parkland formula calculates fluid resuscitation volume in burns.",
+     "NPIAP staging describes the anatomic depth of a pressure injury."
+    ]
+   },
+   {
+    "q": "A child arrives toxic-appearing, drooling, sitting in a tripod position with high fever and no cough. What does this suggest?",
+    "ch": [
+     "Classic croup that simply presents at the severe end of the spectrum",
+     "Spasmodic croup, the recurrent allergic variant with nighttime onset",
+     "An inhaled foreign body with sudden onset and no viral prodrome",
+     "Epiglottitis — do not agitate the child and secure the airway",
+     "Bronchiolitis with impending respiratory failure and a silent chest"
+    ],
+    "correct": 3,
+    "exp": "Drooling, a toxic appearance, tripod posture, and an absent cough suggest epiglottitis or bacterial tracheitis rather than croup; do not agitate the child, and secure the airway.",
+    "why": [
+     "Croup produces a barking cough, and the child is not toxic-appearing or drooling.",
+     "Spasmodic croup has sudden nighttime onset without a viral prodrome and is not toxic.",
+     "A foreign body is sudden in onset but does not produce fever, drooling, and toxicity.",
+     "",
+     "Bronchiolitis is a lower-airway disease of infants with wheeze and crackles, not drooling with stridor."
+    ]
+   },
+   {
+    "q": "Which nursing action is most important while a child with croup is being evaluated?",
+    "ch": [
+     "Insert an intravenous line immediately so steroids can be given by vein",
+     "Draw a complete blood count and blood culture before any treatment",
+     "Keep the child calm on the caregiver's lap and minimize invasive exams",
+     "Obtain an AP neck radiograph promptly to look for the steeple sign",
+     "Place the child supine on the stretcher for a careful oropharyngeal exam"
+    ],
+    "correct": 2,
+    "exp": "Agitation worsens airway obstruction, so the child is kept calm in a position of comfort on the caregiver's lap while invasive exams and crying are minimized.",
+    "why": [
+     "Oral dexamethasone is as effective as IM, so an IV stick is an unnecessary upset in a distressed child.",
+     "Croup is a clinical diagnosis; routine labs are not needed and a needle stick only agitates the child.",
+     "",
+     "Imaging is not required, and the trip to radiology agitates the child for a nonspecific finding.",
+     "Laying the child supine and probing the oropharynx increases distress and can worsen obstruction."
+    ]
+   },
+   {
+    "q": "A child with croup is vomiting and cannot keep down oral dexamethasone. What is the appropriate alternative?",
+    "ch": [
+     "Nebulized budesonide as an alternative or adjunct steroid",
+     "Oral prednisone for five days once the vomiting settles",
+     "Withhold steroids entirely and treat with humidified oxygen only",
+     "Nebulized epinephrine used as a substitute for the steroid dose",
+     "Oral antipyretics alone, on the basis that they reduce airway swelling"
+    ],
+    "correct": 0,
+    "exp": "Nebulized budesonide is the alternative or adjunct steroid when oral dosing is not tolerated because of vomiting; it is more costly, so dexamethasone is generally preferred and simpler when it can be given.",
+    "why": [
+     "",
+     "Croup is treated with a single long-acting dexamethasone dose, not a five-day prednisone course.",
+     "Every croup patient should receive a steroid, so withholding it is not appropriate.",
+     "Nebulized epinephrine does not alter the disease course and must always be paired with a steroid.",
+     "Antipyretics are supportive only and do not treat airway edema."
+    ]
+   },
+   {
+    "q": "A child with croup received dexamethasone and nebulized epinephrine but is now quiet, with decreasing air entry and lethargy. How should this be read?",
+    "ch": [
+     "Expected improvement, since the nebulized epinephrine has taken effect",
+     "Rebound stridor, which resolves on its own without further treatment",
+     "A critical warning of impending airway failure requiring escalation",
+     "Normal night-time worsening that will improve with cool humid air",
+     "Simple exhaustion from crying, best managed by letting the child sleep"
+    ],
+    "correct": 2,
+    "exp": "A fatiguing, quiet child with decreasing air entry and lethargy, or a poor response to epinephrine and steroids, is a critical warning of impending airway failure requiring emergent escalation and possible intubation.",
+    "why": [
+     "Improvement would show less stridor with good air entry and an alert child, not lethargy.",
+     "Rebound stridor requires re-treatment and continued observation, and it does not cause lethargy.",
+     "",
+     "Symptoms are characteristically worse at night, but altered mental status and falling air entry are never attributed to that.",
+     "Lethargy with decreasing air entry signals respiratory failure, not tiredness from crying."
+    ]
+   }
+  ]
+ },
+ "pressure-injury": {
+  "condition": "Pressure Injuries",
+  "questions": [
+   {
+    "q": "Which finding defines a Stage 1 pressure injury?",
+    "ch": [
+     "A wound base obscured by slough or eschar so depth is unknown",
+     "Erythema that whitens completely when light pressure is applied",
+     "Intact skin with non-blanchable erythema over a bony prominence",
+     "Partial-thickness loss with exposed dermis and a shallow open ulcer",
+     "Full-thickness loss with visible subcutaneous fat in the wound bed"
+    ],
+    "correct": 2,
+    "exp": "Stage 1 is intact skin with non-blanchable erythema; if the redness blanches (whitens) with pressure it is not yet a pressure injury.",
+    "why": [
+     "A base obscured by slough or eschar describes an unstageable injury.",
+     "Erythema that blanches with pressure is not a pressure injury at all.",
+     "",
+     "Partial-thickness loss with exposed dermis is Stage 2.",
+     "Full-thickness loss with visible subcutaneous fat is Stage 3."
+    ]
+   },
+   {
+    "q": "A sacral wound exposes tendon and bone and has undermining at its edges. How is it staged?",
+    "ch": [
+     "Deep tissue injury, because the wound extends deeply",
+     "Stage 2, because the dermis is exposed",
+     "Stage 3, because subcutaneous fat is visible",
+     "Stage 4, because fascia, muscle, tendon, or bone is exposed",
+     "Unstageable, because undermining is present"
+    ],
+    "correct": 3,
+    "exp": "Stage 4 is full-thickness loss that exposes fascia, muscle, tendon, or bone, and it may have undermining and tunneling.",
+    "why": [
+     "Deep tissue injury is intact or blistered skin with persistent deep discoloration, not an open wound exposing bone.",
+     "Stage 2 is partial-thickness loss with exposed dermis, not exposed bone.",
+     "Stage 3 shows subcutaneous fat with no exposed fascia, muscle, tendon, or bone.",
+     "",
+     "Unstageable means the base is obscured by slough or eschar; here the base is visible."
+    ]
+   },
+   {
+    "q": "How should a Braden Scale score be interpreted?",
+    "ch": [
+     "It measures wound surface area in order to track healing over time",
+     "A lower score indicates higher risk, with 18 or below considered at risk",
+     "It predicts the need for surgical flap closure of Stage 3-4 wounds",
+     "A higher score indicates higher risk, with 18 or above considered at risk",
+     "It stages wound depth once a pressure injury has already developed"
+    ],
+    "correct": 1,
+    "exp": "The Braden Scale scores sensory perception, moisture, activity, mobility, nutrition, and friction/shear; think of it as a golf score, where a lower number means higher risk, with 18 or below flagged as at-risk.",
+    "why": [
+     "Braden is a risk-prediction score, not a wound measurement tool.",
+     "",
+     "Braden does not predict the need for surgical flap closure.",
+     "The direction is reversed: a lower Braden number, not a higher one, means higher risk.",
+     "Staging uses the NPIAP system based on anatomic depth, not the Braden Scale."
+    ]
+   },
+   {
+    "q": "Unrelieved pressure over a bony prominence causes ischemia once it exceeds which threshold?",
+    "ch": [
+     "The interface pressure of about 100 mmHg",
+     "The systolic blood pressure of about 120 mmHg",
+     "The mean arterial pressure of about 65 mmHg",
+     "The capillary closing pressure of about 32 mmHg",
+     "The central venous pressure of about 8 mmHg"
+    ],
+    "correct": 3,
+    "exp": "Capillary closing pressure is roughly 32 mmHg; interface pressures above this over time cause local ischemia, reperfusion injury, and cell death, and hypotension, vasopressors, and anemia lower the tolerable threshold further.",
+    "why": [
+     "Interface pressure is what is applied to the skin; the threshold it must exceed is capillary closing pressure.",
+     "Systolic blood pressure is not the pressure at which skin capillaries close.",
+     "Mean arterial pressure is a systemic perfusion measure, not the local capillary threshold.",
+     "",
+     "Central venous pressure reflects volume status rather than tissue interface loading."
+    ]
+   },
+   {
+    "q": "Which set of nursing measures correctly prevents pressure injuries?",
+    "ch": [
+     "Turn every 4 hours, use a donut cushion, and massage reddened bony areas",
+     "Keep the head of bed above 45 degrees and slide the patient up in bed",
+     "Place a ring cushion under the sacrum and rest the heels on the mattress",
+     "Reposition only when the patient reports discomfort over a bony prominence",
+     "Turn q2h with a 30-degree lateral tilt, float the heels, and lift rather than drag"
+    ],
+    "correct": 4,
+    "exp": "Reposition at-risk patients at least every 2 hours using a 30-degree lateral tilt, keep the head of bed at or below 30 degrees to limit shear, float the heels off the mattress, and lift rather than drag the patient.",
+    "why": [
+     "Donut and ring cushions are not used, massage over bony prominences worsens deep injury, and turns are every 2 hours.",
+     "The head of bed should be at or below 30 degrees, and sliding the patient up in bed creates shear.",
+     "Ring cushions are avoided, and the heels must be floated off the mattress rather than resting on it.",
+     "Many at-risk patients have sensory impairment and will never report discomfort, so turning is scheduled.",
+     ""
+    ]
+   },
+   {
+    "q": "A bedbound patient with poor perfusion has stable, dry, intact eschar on the heel. What is the correct action?",
+    "ch": [
+     "Leave the eschar intact and offload the heel from the mattress",
+     "Apply an alginate dressing to absorb drainage from beneath it",
+     "Start systemic antibiotics for presumed underlying osteomyelitis",
+     "Sharply debride the eschar so the wound can be staged",
+     "Apply collagenase daily until the eschar has fully dissolved"
+    ],
+    "correct": 0,
+    "exp": "Stable, dry, intact eschar on an ischemic heel acts as a biologic cover and should not be debrided; instead the heel is floated off the mattress to remove the load.",
+    "why": [
+     "",
+     "Alginate is for highly exudative or cavity wounds and has no role on dry intact eschar.",
+     "Antibiotics are reserved for spreading cellulitis, sepsis, or biopsy-proven osteomyelitis.",
+     "Sharp debridement of stable heel eschar removes the natural cover and can worsen the wound.",
+     "Enzymatic debridement with collagenase is still debridement and is avoided for stable dry heel eschar."
+    ]
+   },
+   {
+    "q": "A Stage 4 sacral wound has granulated in and is now shallow. How should it be documented?",
+    "ch": [
+     "As a Stage 2, because the current depth reaches only the dermis",
+     "As a Stage 1, because the wound surface is nearly intact again",
+     "As unstageable, because the original depth can no longer be seen",
+     "As a deep tissue injury, because damage began at the muscle-bone interface",
+     "As a healing Stage 4, because pressure injuries are never reverse-staged"
+    ],
+    "correct": 4,
+    "exp": "Staging reflects anatomic depth at its worst, not a healing timeline; pressure injuries heal with granulation and scar rather than regenerating lost tissue layers, so a healing Stage 4 is documented as a healing Stage 4.",
+    "why": [
+     "Reverse-staging a healing wound down to Stage 2 is exactly the documentation error to avoid.",
+     "A closing surface does not return the wound to Stage 1, because lost tissue layers are not regenerated.",
+     "Unstageable applies when slough or eschar obscures the base, not to a granulating wound.",
+     "Deep tissue injury describes intact discolored skin or a blood-filled blister, not a healing open wound.",
+     ""
+    ]
+   },
+   {
+    "q": "A persistent maroon-purple area of intact skin over the heel does not blanch. What is it, and why does it matter?",
+    "ch": [
+     "An unstageable wound whose base is obscured by adherent slough",
+     "Deep tissue injury, which can rapidly declare as a Stage 3 or 4 wound",
+     "A Stage 1 injury, which resolves with a single episode of repositioning",
+     "Moisture-associated skin damage from incontinence and maceration",
+     "A resolving bruise that needs only observation over several days"
+    ],
+    "correct": 1,
+    "exp": "Persistent non-blanchable deep red, maroon, or purple discoloration or a blood-filled blister is a deep tissue injury; damage starts at the muscle-bone interface and evolves outward, so a small purple area can deteriorate fast despite an intact surface.",
+    "why": [
+     "Unstageable requires an open wound with slough or eschar obscuring the base; here the skin is intact.",
+     "",
+     "Stage 1 is non-blanchable erythema rather than deep maroon or purple discoloration, and it does not carry the same rapid-deterioration risk.",
+     "Moisture-associated skin damage arises from incontinence and maceration in skin folds, not as deep discoloration over a bony prominence.",
+     "This discoloration is persistent and non-blanchable, which is what distinguishes it from a simple bruise."
+    ]
+   },
+   {
+    "q": "A non-healing full-thickness sacral wound probes to bone. What is the appropriate workup?",
+    "ch": [
+     "MRI with bone biopsy and culture to evaluate for osteomyelitis",
+     "Serial photography with weekly reassessment of the Braden score",
+     "Negative pressure wound therapy started before any imaging is done",
+     "Albumin and prealbumin levels alone to explain the poor healing",
+     "Superficial wound swab culture followed by empiric oral antibiotics"
+    ],
+    "correct": 0,
+    "exp": "A persistent non-healing full-thickness wound over bone warrants MRI with bone biopsy and culture to evaluate for osteomyelitis, rather than a superficial swab.",
+    "why": [
+     "",
+     "Photography and Braden reassessment are useful monitoring but will not diagnose bone infection.",
+     "Negative pressure wound therapy is contraindicated over untreated osteomyelitis, so the infection must be evaluated first.",
+     "Nutritional markers support the healing assessment but do not evaluate the bone.",
+     "Superficial swab cultures are unreliable; colonization is not infection and should not be treated in a stable wound."
+    ]
+   },
+   {
+    "q": "A hospitalized patient develops a new Stage 3 pressure injury. Which statement best captures its significance?",
+    "ch": [
+     "It should be reverse-staged as it heals to demonstrate quality improvement",
+     "It confirms that malnutrition alone was the cause of the wound",
+     "It is a hospital-acquired CMS never event demanding immediate escalation",
+     "It requires systemic antibiotics because all Stage 3 wounds are infected",
+     "It is an expected complication of critical illness and needs no escalation"
+    ],
+    "correct": 2,
+    "exp": "A new full-thickness Stage 3 or 4 wound in a hospitalized patient is a hospital-acquired CMS never event that is not reimbursed and demands immediate escalation; prevention is framed by the SSKIN bundle.",
+    "why": [
+     "Pressure injuries are never reverse-staged as they heal.",
+     "Malnutrition is one driver, but immobility, shear, moisture, perfusion, and age all contribute.",
+     "",
+     "Antibiotics are indicated only for spreading cellulitis, sepsis, or biopsy-proven osteomyelitis.",
+     "Pressure injuries are described as largely preventable and a key marker of care quality, not an accepted complication."
+    ]
+   }
+  ]
+ },
+ "burns": {
+  "condition": "Burns",
+  "questions": [
+   {
+    "q": "A burn is leathery, dry, and insensate. What depth does this describe?",
+    "ch": [
+     "Superficial (first-degree), involving the epidermis only",
+     "Partial-thickness (second-degree), extending into the dermis",
+     "Superficial burn with blistering and marked moist pain",
+     "Fourth-degree burn, which by definition reaches muscle and bone",
+     "Full-thickness (third-degree), extending through the dermis"
+    ],
+    "correct": 4,
+    "exp": "Full-thickness (third-degree) burns extend through the dermis and appear leathery, dry, and insensate because the nerve endings have been destroyed.",
+    "why": [
+     "Superficial first-degree burns are red and painful with no blisters and involve the epidermis only.",
+     "Partial-thickness second-degree burns are moist, blistered, and very painful.",
+     "Blistering with moist painful skin is partial-thickness; superficial burns do not blister.",
+     "Fourth-degree burns reach muscle or bone, beyond what this description states.",
+     ""
+    ]
+   },
+   {
+    "q": "Using the Rule of Nines in an adult, the entire front torso represents what proportion of TBSA?",
+    "ch": [
+     "18%",
+     "9%",
+     "1%",
+     "36%",
+     "4.5%"
+    ],
+    "correct": 0,
+    "exp": "By the Rule of Nines the front torso is 18% and the back is 18%; the head is 9%, each arm 9%, each anterior or posterior leg 9%, and the perineum 1%.",
+    "why": [
+     "",
+     "9% is the head, an arm, or one anterior or posterior leg surface, not the whole front torso.",
+     "1% is the perineum, and also the size of the patient's palm.",
+     "36% is the front torso and back combined, not the anterior torso alone.",
+     "4.5% would be half of a 9% segment rather than a torso surface."
+    ]
+   },
+   {
+    "q": "An 80 kg adult has 30% TBSA of partial-thickness and full-thickness burns. By the Parkland formula, how much lactated Ringer's is given in the first 8 hours from the time of injury?",
+    "ch": [
+     "9,600 mL",
+     "2,400 mL",
+     "4,800 mL",
+     "1,200 mL",
+     "19,200 mL"
+    ],
+    "correct": 2,
+    "exp": "Parkland is 4 mL x weight in kg x %TBSA of lactated Ringer's over 24 hours, so 4 x 80 x 30 = 9,600 mL total, with half of it, 4,800 mL, in the first 8 hours from the time of injury.",
+    "why": [
+     "9,600 mL is the full 24-hour Parkland volume; only half of it goes in the first 8 hours.",
+     "2,400 mL is a quarter of the 24-hour volume and under-resuscitates the first 8 hours.",
+     "",
+     "1,200 mL results from using 4 mL per kilogram without multiplying by the %TBSA.",
+     "19,200 mL is double the 24-hour requirement and is the kind of over-resuscitation that causes fluid creep."
+    ]
+   },
+   {
+    "q": "Which statement about estimating TBSA for burn resuscitation is correct?",
+    "ch": [
+     "Superficial first-degree burns are included in the TBSA calculation",
+     "The Rule of Nines is the preferred estimation method in children",
+     "The patient's whole hand including fingers equals about 5% TBSA",
+     "Superficial first-degree burns are NOT counted in the TBSA calculation",
+     "TBSA is unnecessary once fluids are titrated to hourly urine output"
+    ],
+    "correct": 3,
+    "exp": "Superficial first-degree burns are excluded from the TBSA used in the Parkland calculation; the Rule of Nines applies to adults, the Lund-Browder chart is used in children, and the patient's palm is about 1% TBSA.",
+    "why": [
+     "First-degree burns are explicitly excluded from the TBSA used for Parkland.",
+     "The Lund-Browder chart is used in children; the Rule of Nines applies to adults.",
+     "The patient's palm is about 1% TBSA, not 5%.",
+     "",
+     "Urine output titration guides ongoing therapy, but TBSA is still needed to start the resuscitation."
+    ]
+   },
+   {
+    "q": "A patient rescued from a closed-space house fire is confused, and the pulse oximeter reads 99%. What does this most likely indicate?",
+    "ch": [
+     "Rhabdomyolysis from deep muscle damage after an electrical burn",
+     "Adequate oxygenation, so hypoxia can be excluded as a cause",
+     "Possible carbon monoxide poisoning, since pulse oximetry cannot detect it",
+     "Early burn shock from capillary leak in the first 24 hours",
+     "Mafenide-induced metabolic acidosis affecting mental status"
+    ],
+    "correct": 2,
+    "exp": "Pulse oximetry is falsely normal in carbon monoxide poisoning because it cannot distinguish carboxyhemoglobin, so a normal SpO2 after a closed-space fire does not rule it out; obtain co-oximetry and give 100% oxygen.",
+    "why": [
+     "Rhabdomyolysis follows electrical injury with dark urine and rising CK, not a closed-space fire exposure.",
+     "A normal pulse oximetry reading does not exclude hypoxia when carboxyhemoglobin is present.",
+     "",
+     "Burn shock causes hypovolemia and hypotension, not isolated confusion with a normal saturation right after rescue.",
+     "Mafenide acidosis is a complication of topical therapy applied later, not of the initial rescue."
+    ]
+   },
+   {
+    "q": "What is the primary endpoint used to titrate fluid resuscitation in an adult with major burns?",
+    "ch": [
+     "Normalization of the carboxyhemoglobin level on repeat co-oximetry",
+     "Resolution of pain at the burn site during dressing changes",
+     "A normal chest X-ray obtained six hours after the injury",
+     "Urine output of 0.5 mL/kg/h measured hourly via a Foley catheter",
+     "Strict adherence to the calculated Parkland volume regardless of response"
+    ],
+    "correct": 3,
+    "exp": "Resuscitation is titrated to urine output of 0.5 mL/kg/h in adults, about 1 mL/kg/h in children, monitored hourly via Foley, rather than to the formula alone.",
+    "why": [
+     "Carboxyhemoglobin guides oxygen therapy for CO poisoning, not the fluid rate.",
+     "Pain control matters, but full-thickness burns are painless and pain is not a perfusion endpoint.",
+     "The chest X-ray is often normal early and does not reflect resuscitation adequacy.",
+     "",
+     "Blindly following the formula causes over-resuscitation, or fluid creep, with edema and compartment syndrome."
+    ]
+   },
+   {
+    "q": "A patient with a circumferential full-thickness burn of the forearm loses distal pulses and reports paresthesia. What does this require?",
+    "ch": [
+     "Immediate silver sulfadiazine application with elevation of the limb",
+     "An increase in the opioid dose with reassessment in four hours",
+     "Reduction of the fluid rate to limit further extremity swelling",
+     "Application of mafenide acetate so that it penetrates the eschar",
+     "Urgent escharotomy to relieve the constricting burn eschar"
+    ],
+    "correct": 4,
+    "exp": "Circumferential full-thickness burns can restrict perfusion or ventilation; loss of pulses or paresthesia distal to the burn must be reported and may need urgent escharotomy.",
+    "why": [
+     "Topical antimicrobials and elevation do nothing to relieve a constricting circumferential eschar.",
+     "Increasing analgesia masks the ischemia instead of treating it, and delay costs the limb.",
+     "Under-resuscitating a burn patient to control swelling causes shock and does not restore the pulse.",
+     "Mafenide penetrates eschar for infection control but does not release the constriction.",
+     ""
+    ]
+   },
+   {
+    "q": "Which patient should NOT receive topical silver sulfadiazine?",
+    "ch": [
+     "An adult with a partial-thickness burn of the anterior thigh",
+     "An infant under 2 months old with a documented sulfa allergy",
+     "An adult with a full-thickness burn needing a topical antimicrobial",
+     "A patient with a thigh burn who has already had tetanus prophylaxis",
+     "A patient with a leg burn who is receiving intravenous opioids"
+    ],
+    "correct": 1,
+    "exp": "Silver sulfadiazine is avoided on the face and in sulfa allergy, G6PD deficiency, pregnancy near term, and infants under 2 months; it can also cause transient leukopenia.",
+    "why": [
+     "Partial-thickness burns of the trunk or limbs are exactly where silver sulfadiazine is used.",
+     "",
+     "Silver sulfadiazine is indicated as a topical antimicrobial for partial-thickness and full-thickness burn wounds.",
+     "Tetanus prophylaxis is given to every burn patient and does not preclude silver sulfadiazine.",
+     "Intravenous opioid analgesia is expected in burn care and is not a contraindication to the topical agent."
+    ]
+   },
+   {
+    "q": "Which finding by itself meets American Burn Association criteria for transfer to a burn center?",
+    "ch": [
+     "A partial-thickness burn involving the hands, face, or genitalia",
+     "Any burn in an adult who reports pain during dressing changes",
+     "A 5% TBSA partial-thickness burn of the thigh in a healthy adult",
+     "A first-degree sunburn covering the back and both shoulders",
+     "A small blister on the forearm that healed without any dressing"
+    ],
+    "correct": 0,
+    "exp": "ABA transfer criteria include partial-thickness burns over 10% TBSA, burns of the face, hands, feet, genitalia, or major joints, full-thickness burns, electrical and chemical injury, inhalation injury, and burns in the very young or old or with comorbidities.",
+    "why": [
+     "",
+     "Pain is universal in burn care and is not itself a transfer criterion.",
+     "A 5% partial-thickness burn is below the 10% TBSA threshold and is not in a special-site area.",
+     "First-degree burns are not even counted in TBSA and do not trigger transfer.",
+     "A small blister that has already healed requires no transfer."
+    ]
+   },
+   {
+    "q": "How does the pathophysiology of a major burn evolve after the first 48 hours?",
+    "ch": [
+     "The wound becomes sterile as the eschar seals the skin barrier",
+     "It shifts to a hypermetabolic catabolic state with high infection risk",
+     "Metabolic demand falls, so calorie and protein needs decline sharply",
+     "Pain resolves once the full-thickness areas have become insensate",
+     "Capillary leak intensifies, so fluid rates must be steadily increased"
+    ],
+    "correct": 1,
+    "exp": "The first 24-48 hours are dominated by capillary leak and burn shock; later phases shift to a hypermetabolic, catabolic state with high infection risk, the leading cause of late death, which is why high-protein high-calorie nutrition and early excision and grafting matter.",
+    "why": [
+     "Loss of the skin barrier makes infection the leading cause of late death; eschar does not sterilize the wound.",
+     "",
+     "Metabolic demand rises, which is exactly why high-protein, high-calorie nutrition is emphasized.",
+     "Full-thickness centers are insensate, but the surrounding partial-thickness areas remain very painful.",
+     "Capillary leak dominates the first 24-48 hours, and pushing fluids past that point causes fluid creep and compartment syndrome."
+    ]
+   }
+  ]
+ }
+}

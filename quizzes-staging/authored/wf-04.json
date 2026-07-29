@@ -1,0 +1,977 @@
+{
+ "gbs": {
+  "condition": "Guillain-Barré Syndrome",
+  "questions": [
+   {
+    "q": "Which description best characterizes Guillain-Barré syndrome?",
+    "ch": [
+     "A mechanical disruption of ascending and descending spinal cord tracts after trauma",
+     "A degeneration of anterior horn cells producing painless progressive weakness with brisk reflexes",
+     "A chronic, relapsing demyelinating neuropathy progressing beyond eight weeks",
+     "An autoimmune attack on postsynaptic acetylcholine receptors at the neuromuscular junction",
+     "An acute, immune-mediated polyradiculoneuropathy causing ascending weakness and areflexia"
+    ],
+    "correct": 4,
+    "exp": "GBS is an acute, immune-mediated polyradiculoneuropathy of nerve roots and peripheral nerves that produces symmetric ascending weakness with loss of deep tendon reflexes, and it is a neurologic emergency because of respiratory and autonomic failure.",
+    "why": [
+     "Mechanical disruption of cord tracts is spinal cord injury, one of the mimics the module tells you to rule out.",
+     "GBS attacks nerve roots and peripheral nerves, not anterior horn cells, and it abolishes reflexes rather than making them brisk.",
+     "Progression beyond eight weeks or a relapsing course describes CIDP, the chronic form GBS is contrasted with — the GBS course is monophasic.",
+     "Antibodies against the postsynaptic acetylcholine receptor define myasthenia gravis; GBS antibodies target peripheral nerve gangliosides.",
+     ""
+    ]
+   },
+   {
+    "q": "Which antecedent infection is identified as the number-one trigger of GBS?",
+    "ch": [
+     "Listeria monocytogenes from contaminated food",
+     "Campylobacter jejuni, classically after a diarrheal illness",
+     "Streptococcus pyogenes after a pharyngitis",
+     "Clostridioides difficile after antibiotic exposure",
+     "Helicobacter pylori causing chronic gastritis"
+    ],
+    "correct": 1,
+    "exp": "Campylobacter jejuni is the #1 trigger: antibodies raised against its lipooligosaccharides cross-react with nerve gangliosides by molecular mimicry, typically 1-3 weeks after the infection. Ascending symmetric weakness with areflexia after a diarrheal illness is GBS until proven otherwise.",
+    "why": [
+     "Listeria causes meningitis and bacteremia, not the post-infectious polyradiculoneuropathy of GBS.",
+     "",
+     "Streptococcal pharyngitis is not a recognized GBS trigger; the module lists Campylobacter, CMV, EBV, Zika and Mycoplasma.",
+     "C. difficile colitis is not among the antecedent infections linked to GBS by molecular mimicry.",
+     "H. pylori causes chronic gastritis and is not one of the infections preceding GBS."
+    ]
+   },
+   {
+    "q": "What is the classic cerebrospinal fluid finding in GBS?",
+    "ch": [
+     "Xanthochromia with a markedly elevated red cell count",
+     "Normal protein with a lymphocytic pleocytosis",
+     "Elevated protein with a normal white cell count",
+     "An elevated white cell count with a normal protein level",
+     "Low glucose with a neutrophilic pleocytosis"
+    ],
+    "correct": 2,
+    "exp": "Albuminocytologic dissociation — elevated CSF protein with a normal cell count — is the classic lumbar puncture finding. Importantly, it may be normal in the first week, so a normal early LP does not exclude GBS and treatment proceeds on clinical grounds.",
+    "why": [
+     "Xanthochromia and red cells point to subarachnoid hemorrhage, not an immune polyradiculoneuropathy.",
+     "A pleocytosis of any kind argues against GBS, where the defining feature is a normal cell count.",
+     "",
+     "An elevated cell count with normal protein is the opposite of albuminocytologic dissociation and suggests an infectious or inflammatory process.",
+     "Low glucose with neutrophils indicates bacterial meningitis, not the acellular high-protein CSF of GBS."
+    ]
+   },
+   {
+    "q": "A patient with ascending weakness has a forced vital capacity of 18 mL/kg and a negative inspiratory force of -25 cm H2O. Applying the 20/30/40 rule, what does this mean?",
+    "ch": [
+     "Both values have crossed the thresholds — consider intubation for neuromuscular respiratory failure",
+     "Give a dose of pyridostigmine and repeat the measurements in six hours",
+     "Start high-dose corticosteroids to halt progression before the airway fails",
+     "Transfer to an unmonitored medical floor with daily respiratory therapy checks",
+     "Continue routine observation because the oxygen saturation is still normal"
+    ],
+    "correct": 0,
+    "exp": "The 20/30/40 rule says to consider intubation when FVC is below 20 mL/kg, NIF is less negative than -30 cm H2O, or maximal expiratory pressure is under 40 cm H2O. An FVC of 18 and a NIF of -25 have both crossed, so neuromuscular respiratory failure is impending.",
+    "why": [
+     "",
+     "Pyridostigmine treats myasthenia gravis; it has no role in GBS and delaying for six hours risks a respiratory arrest.",
+     "Steroids are specifically not recommended in GBS and would do nothing for a failing vital capacity.",
+     "Declining vital capacity and bulbar weakness require escalation to a monitored or ICU setting, not de-escalation.",
+     "Oxygen saturation falls late in neuromuscular respiratory failure; serial FVC and NIF, not saturation, drive the decision."
+    ]
+   },
+   {
+    "q": "A patient who can no longer walk presents 6 days after the onset of symmetric ascending weakness. Which treatment plan matches the module?",
+    "ch": [
+     "IVIG 2 g/kg over 5 days OR plasma exchange, but not both together",
+     "Watchful waiting until the weakness plateaus, then beginning immunotherapy",
+     "High-dose intravenous methylprednisolone as monotherapy for five days",
+     "IVIG and plasma exchange given together for additive benefit",
+     "Oral prednisone tapered over six weeks with supportive care alone"
+    ],
+    "correct": 0,
+    "exp": "Immunotherapy is indicated for non-ambulatory or rapidly progressing patients and works best when started within 2 weeks of onset. IVIG 2 g/kg over 5 days and plasma exchange are equally effective first-line options and are never combined, because there is no added benefit.",
+    "why": [
+     "",
+     "Immunotherapy is indicated once the patient cannot walk or is progressing rapidly, and it should ideally start within 2 weeks — waiting for a plateau forfeits the window.",
+     "Corticosteroids have no proven benefit in GBS and guidelines advise against steroid monotherapy.",
+     "Combining IVIG with plasma exchange adds no benefit and is explicitly discouraged.",
+     "Prednisone is ineffective in GBS; contrast this with CIDP, where steroids do help."
+    ]
+   },
+   {
+    "q": "Before beginning IVIG in GBS, which screening and monitoring does the module specifically require?",
+    "ch": [
+     "Give a meningococcal vaccination at least two weeks before the first infusion",
+     "Correct hypocalcemia and any coagulopathy before every scheduled infusion",
+     "Obtain a chest CT to exclude a thymoma before the first dose is given",
+     "Screen for IgA deficiency and monitor for volume overload, renal injury and thromboembolism",
+     "Check thiopurine methyltransferase activity and obtain baseline liver function tests"
+    ],
+    "correct": 3,
+    "exp": "The IVIG note lists screening for IgA deficiency and monitoring for volume overload, aseptic meningitis, renal injury and thromboembolism/hyperviscosity, with attention to hydration.",
+    "why": [
+     "Meningococcal vaccination is required for complement inhibitors, not for IVIG.",
+     "Hypocalcemia and coagulopathy are the hazards of plasma exchange, the alternative first-line therapy.",
+     "Thymoma imaging belongs to myasthenia gravis workup and has no place in GBS.",
+     "",
+     "TPMT testing and liver monitoring belong to azathioprine, not to immunoglobulin infusion."
+    ]
+   },
+   {
+    "q": "Which nursing action is the stated priority for a patient newly admitted with GBS?",
+    "ch": [
+     "Applying compression devices and giving enoxaparin for VTE prophylaxis",
+     "Range-of-motion exercises to prevent contractures from immobility",
+     "Emotional support, because patients stay alert while becoming paralyzed",
+     "Serial FVC and NIF measurement with intubation equipment kept ready",
+     "Titrating gabapentin to control the neuropathic pain of the illness"
+    ],
+    "correct": 3,
+    "exp": "Airway and breathing are the stated priority: perform serial FVC/NIF with continuous respiratory assessment, keep intubation equipment at hand, and escalate for a declining vital capacity or new bulbar weakness.",
+    "why": [
+     "VTE prophylaxis is essential in an immobilized weak patient but is a complication-prevention measure, not the priority.",
+     "Range-of-motion to prevent contractures is genuine GBS nursing care but ranks below airway and breathing.",
+     "Emotional support matters because patients are fully alert while progressively paralyzed, but it is not the priority assessment.",
+     "",
+     "Neuropathic pain is common and must be treated, yet pain control never outranks a failing vital capacity."
+    ]
+   },
+   {
+    "q": "A 34-year-old develops ophthalmoplegia, gait ataxia and areflexia two weeks after a diarrheal illness; limb strength is preserved. Which antibody is associated with this variant?",
+    "ch": [
+     "Anti-LRP4 antibody",
+     "Anti-GQ1b ganglioside antibody",
+     "Anti-GM1 ganglioside antibody",
+     "Anti-acetylcholine receptor antibody",
+     "Anti-muscle-specific kinase antibody"
+    ],
+    "correct": 1,
+    "exp": "The triad of ophthalmoplegia, ataxia and areflexia is Miller Fisher syndrome, the GBS variant associated with anti-GQ1b antibodies.",
+    "why": [
+     "Anti-LRP4 is another myasthenia gravis antibody and is not part of the GBS panel.",
+     "",
+     "Anti-GM1 marks the axonal variant AMAN, which causes limb weakness rather than the Miller Fisher triad.",
+     "Anti-acetylcholine receptor antibodies define myasthenia gravis, where reflexes are preserved and weakness is fatigable.",
+     "Anti-MuSK antibodies belong to a myasthenia gravis subtype, not to any GBS variant."
+    ]
+   },
+   {
+    "q": "A GBS patient in week 3 is beginning to regain limb strength when he abruptly becomes bradycardic to 30 with profound hypotension. What does this illustrate?",
+    "ch": [
+     "An expected consequence of the gabapentin used for neuropathic pain",
+     "A predictable cholinergic effect of the IVIG infusion being given",
+     "Autonomic instability, which can be fatal even while limb strength recovers",
+     "A second, biphasic wave of demyelination typical of the disease",
+     "Evolution to CIDP requiring an urgent change of immunotherapy"
+    ],
+    "correct": 2,
+    "exp": "Autonomic dysfunction produces labile blood pressure and bradyarrhythmias and is a leading cause of death in GBS — patients can die of a sudden arrhythmia even as limb strength improves, which is why continuous cardiac and BP monitoring is required. Treat with short-acting titratable agents and be ready for atropine and pacing.",
+    "why": [
+     "Gabapentin causes sedation and dizziness; it does not produce malignant bradycardia.",
+     "IVIG causes volume overload, renal injury and thromboembolism, not bradycardia from cholinergic excess.",
+     "",
+     "The GBS course is monophasic — progression, plateau, then recovery — not biphasic.",
+     "CIDP is defined by progression or relapse beyond 8 weeks, not by an acute bradyarrhythmia in week 3."
+    ]
+   },
+   {
+    "q": "A patient treated for GBS is still worsening 10 weeks after onset rather than plateauing. What should this prompt?",
+    "ch": [
+     "Testing anti-GQ1b antibodies to confirm Miller Fisher syndrome instead",
+     "Repeating the IVIG course, since relapse is the expected pattern in GBS",
+     "Adding plasma exchange on top of the IVIG that has already been given",
+     "Reassurance, because the monophasic course normally lasts three months",
+     "Reassessment for CIDP, the chronic form defined by progression beyond 8 weeks"
+    ],
+    "correct": 4,
+    "exp": "GBS is monophasic, progressing over days to about 4 weeks before plateau and gradual recovery. Relapse or progression beyond 8 weeks should prompt reassessment for CIDP, the chronic form — a distinction that matters because steroids do help in CIDP.",
+    "why": [
+     "Miller Fisher is defined by ophthalmoplegia, ataxia and areflexia, not by a prolonged progressive course.",
+     "GBS is monophasic; relapse is not the expected pattern and is itself the clue that the diagnosis needs revisiting.",
+     "IVIG and plasma exchange are never combined — there is no added benefit from stacking them.",
+     "Progression should stop by about 4 weeks; continued worsening at 10 weeks is not the normal monophasic course.",
+     ""
+    ]
+   }
+  ]
+ },
+ "myasthenia": {
+  "condition": "Myasthenia Gravis",
+  "questions": [
+   {
+    "q": "Which pattern of weakness is the classic hallmark of myasthenia gravis?",
+    "ch": [
+     "Fixed proximal weakness with a raised creatine kinase and preserved reflexes",
+     "Symmetric ascending weakness with loss of the deep tendon reflexes",
+     "Fatigable weakness that worsens with use and improves with rest",
+     "Weakness that improves after a period of sustained repetitive activity",
+     "Weakness with sensory loss in a stocking-glove distribution below the knees"
+    ],
+    "correct": 2,
+    "exp": "Fatigable weakness of ocular, bulbar, limb and respiratory muscles that worsens through the day and with repetitive activity — and improves with rest — is the classic teaching hallmark of myasthenia gravis.",
+    "why": [
+     "A fixed weakness with a raised creatine kinase points to a myopathy rather than the fluctuating junction disorder.",
+     "Ascending weakness with areflexia describes Guillain-Barré syndrome; in myasthenia gravis reflexes and sensation are normal.",
+     "",
+     "Weakness improving with activity, with an incremental response on stimulation, describes Lambert-Eaton syndrome.",
+     "Sensation is normal in myasthenia gravis because the defect is at the neuromuscular junction, not in the sensory nerves."
+    ]
+   },
+   {
+    "q": "Which antibody is present in about 85% of patients with myasthenia gravis?",
+    "ch": [
+     "Anti-acetylcholine receptor (anti-AChR) antibody",
+     "Anti-presynaptic voltage-gated calcium channel antibody",
+     "Anti-muscle-specific kinase (anti-MuSK) antibody",
+     "Anti-LRP4 (lipoprotein-related protein 4) antibody",
+     "Anti-GQ1b ganglioside antibody"
+    ],
+    "correct": 0,
+    "exp": "About 85% of patients have anti-AChR antibodies against the postsynaptic acetylcholine receptor, and this is the most specific first-line serologic test. Anti-MuSK and anti-LRP4 are checked when it is negative, and roughly 10-15% remain seronegative.",
+    "why": [
+     "",
+     "Presynaptic voltage-gated calcium channel antibodies define Lambert-Eaton syndrome, the contrast disorder.",
+     "Anti-MuSK identifies a smaller subset and is tested only after anti-AChR returns negative.",
+     "Anti-LRP4 defines another small subset and is also a second-line test.",
+     "Anti-GQ1b belongs to Miller Fisher syndrome, a Guillain-Barré variant, not to myasthenia gravis."
+    ]
+   },
+   {
+    "q": "An ice pack is held on a patient's closed eyelid for two minutes and the ptosis improves. Why does the module include this test?",
+    "ch": [
+     "Cold constricts the blood supply to the levator and unmasks a true ptosis",
+     "A positive result confirms thymoma and makes chest imaging unnecessary",
+     "It reliably separates a cholinergic crisis from a myasthenic crisis at the bedside",
+     "It has replaced single-fiber EMG as the most sensitive confirmatory test",
+     "Cold slows acetylcholinesterase, making it a cheap, safe bedside clue to MG"
+    ],
+    "correct": 4,
+    "exp": "The ice-pack test improves ptosis because cold slows acetylcholinesterase, leaving more acetylcholine at the junction. It is described as a cheap, safe bedside clue and has largely displaced the older edrophonium (Tensilon) test.",
+    "why": [
+     "The mechanism is enzymatic, not vascular — cooling inhibits acetylcholinesterase rather than constricting vessels.",
+     "Every newly diagnosed patient still needs chest CT or MRI for thymoma; no bedside test substitutes for it.",
+     "Both crises cause weakness; bedside FVC and NIF, not an ice pack, drive that distinction.",
+     "Single-fiber EMG remains the most sensitive test, showing increased jitter; the ice-pack test is only a clue.",
+     ""
+    ]
+   },
+   {
+    "q": "When should pyridostigmine be scheduled for a patient with bulbar weakness?",
+    "ch": [
+     "Only when weakness appears, because scheduled dosing produces tolerance",
+     "About 30-60 minutes before meals so chewing and swallowing are strongest",
+     "Immediately after meals in order to reduce gastrointestinal side effects",
+     "Every six hours around the clock regardless of when meals are served",
+     "At bedtime, so that the peak effect covers the overnight hours"
+    ],
+    "correct": 1,
+    "exp": "Activities and medications are timed to energy peaks: giving pyridostigmine roughly 30-60 minutes before meals means the patient's chewing and swallowing are strongest when eating, which reduces aspiration risk.",
+    "why": [
+     "Pyridostigmine is first-line scheduled symptomatic therapy, not an as-needed rescue medication.",
+     "",
+     "Dosing after meals leaves the patient weakest exactly when swallowing, increasing aspiration risk.",
+     "Rigid clock dosing ignores the module's instruction to match medication timing to meals and energy peaks.",
+     "Overnight dosing misses the point — the drug should peak when the patient needs bulbar strength to eat."
+    ]
+   },
+   {
+    "q": "Which group of drugs is listed as able to unmask or worsen myasthenia gravis?",
+    "ch": [
+     "Aminoglycosides, fluoroquinolones, magnesium and beta-blockers",
+     "Proton pump inhibitors, statins and inhaled corticosteroids",
+     "Loop diuretics, ACE inhibitors and calcium channel blockers",
+     "Serotonin reuptake inhibitors, triptans and gabapentinoids",
+     "Penicillins, cephalosporins and the antifungal azole agents"
+    ],
+    "correct": 0,
+    "exp": "Aminoglycosides, fluoroquinolones, magnesium, beta-blockers and neuromuscular blockers can unmask or worsen myasthenia gravis, which is why patients are taught to carry a medication card and why this list should be raised proactively when co-managing infection or surgery.",
+    "why": [
+     "",
+     "These agents are not on the list of drugs to avoid in myasthenia gravis.",
+     "Beta-blockers are the cardiac class to avoid; loop diuretics, ACE inhibitors and calcium channel blockers are not named.",
+     "Antidepressants, triptans and gabapentinoids are not identified as myasthenia gravis precipitants.",
+     "Aminoglycosides and fluoroquinolones are the antibiotics of concern, not penicillins, cephalosporins or azoles."
+    ]
+   },
+   {
+    "q": "Why might a severely weak patient receive IVIG or plasma exchange before high-dose prednisone is started?",
+    "ch": [
+     "Corticosteroids are contraindicated in anti-AChR-positive generalized disease",
+     "Prednisone cannot be given until a thymoma has been surgically resected",
+     "IVIG and corticosteroids can never be used in the same patient safely",
+     "High-dose steroids can transiently worsen weakness in the first 1-2 weeks",
+     "Plasma exchange is required to make corticosteroids pharmacologically effective"
+    ],
+    "correct": 3,
+    "exp": "Prednisone is a mainstay of chronic therapy but can cause transient worsening in the first 1-2 weeks, so it is started low and titrated slowly — and severe patients may be covered with IVIG or plasma exchange first.",
+    "why": [
+     "Corticosteroids are the mainstay of chronic immunosuppression, not a contraindicated drug in anti-AChR disease.",
+     "Steroids are routinely used before and independently of thymectomy; resection is not a prerequisite.",
+     "IVIG and steroids are frequently combined — IVIG is used precisely to cover the steroid-initiation period.",
+     "",
+     "Corticosteroids act on their own; plasma exchange is a rapid rescue therapy, not a required primer."
+    ]
+   },
+   {
+    "q": "Repetitive nerve stimulation in myasthenia gravis shows which pattern, and how does Lambert-Eaton syndrome differ?",
+    "ch": [
+     "An incremental response in MG, while Lambert-Eaton shows a decremental response",
+     "A decremental response in MG, while Lambert-Eaton shows an incremental response",
+     "A normal response in both, so only single-fiber EMG can separate the two",
+     "A decremental response in both, distinguished only by antibody testing",
+     "An incremental response in both, distinguished only by chest imaging"
+    ],
+    "correct": 1,
+    "exp": "Fewer functional acetylcholine receptors mean successive nerve impulses fail to reach threshold, producing the decremental response on repetitive nerve stimulation. Lambert-Eaton is a presynaptic disorder of voltage-gated calcium channels in which weakness improves with activity and the response is incremental.",
+    "why": [
+     "This reverses the two: the postsynaptic receptor loss of MG produces decrement, and the presynaptic defect of Lambert-Eaton produces increment.",
+     "",
+     "Repetitive nerve stimulation is abnormal in both disorders; single-fiber EMG is the most sensitive test but is not the only discriminator.",
+     "Lambert-Eaton shows an incremental, not a decremental, response, so the electrophysiology itself separates them.",
+     "Myasthenia gravis shows decrement, and chest imaging looks for thymoma rather than distinguishing the two syndromes."
+    ]
+   },
+   {
+    "q": "A woman with myasthenia gravis develops pneumonia and over 12 hours has worsening dysphagia, a weak cough and a falling FVC. Her oxygen saturation is 96%. What is the priority?",
+    "ch": [
+     "Double the pyridostigmine dose and continue care on the general ward",
+     "Start azathioprine immediately to bring the underlying disease under control",
+     "Obtain a chest CT for thymoma before making any decision about the airway",
+     "Treat this as myasthenic crisis — airway and ventilation, guided by FVC and NIF rather than saturation",
+     "Reassure and recheck in the morning, since the oxygen saturation is normal"
+    ],
+    "correct": 3,
+    "exp": "Rapidly worsening bulbar and respiratory weakness with a falling FVC after an infection is myasthenic crisis — a neuromuscular emergency requiring ICU care and possible intubation. Bedside FVC and NIF, not oxygen saturation, drive the disposition, and IVIG or plasmapheresis is the rescue therapy.",
+    "why": [
+     "The priority in myasthenic crisis is airway and ventilation, not more pyridostigmine, and cholinergic excess can itself cause weakness.",
+     "Azathioprine takes months to work and does nothing for a crisis unfolding over hours.",
+     "Thymoma imaging is part of the diagnostic workup and must never delay airway management in a crisis.",
+     "",
+     "Oxygen saturation falls late in neuromuscular weakness, so a normal reading gives false reassurance in an evolving crisis."
+    ]
+   },
+   {
+    "q": "A patient with prominent bulbar, neck and respiratory weakness is anti-AChR negative, anti-MuSK positive, and has responded poorly to pyridostigmine. Which agent is highlighted for this subtype?",
+    "ch": [
+     "Eculizumab, a complement C5 inhibitor",
+     "Efgartigimod, an FcRn inhibitor",
+     "Mycophenolate as a steroid-sparing agent",
+     "A higher dose of pyridostigmine",
+     "Rituximab, an anti-CD20 antibody"
+    ],
+    "correct": 4,
+    "exp": "Anti-MuSK myasthenia gravis has prominent bulbar, neck and respiratory involvement, often responds poorly to pyridostigmine, and responds preferentially to rituximab in refractory disease.",
+    "why": [
+     "Complement inhibitors are indicated for refractory anti-AChR-positive generalized disease, not for the anti-MuSK subtype.",
+     "The FcRn blocker efgartigimod is also aimed at refractory anti-AChR-positive generalized myasthenia gravis.",
+     "Mycophenolate is a slow-onset steroid-sparing agent for maintenance, not the highlighted therapy for anti-MuSK disease.",
+     "Anti-MuSK disease often responds poorly to pyridostigmine, so escalating the dose mainly adds cholinergic side effects.",
+     ""
+    ]
+   },
+   {
+    "q": "Which statement about the thymus in myasthenia gravis is correct?",
+    "ch": [
+     "Thymectomy is considered only after biologic therapy has already failed",
+     "Chest imaging is reserved for patients over the age of fifty years",
+     "Every newly diagnosed patient needs chest CT or MRI; thymoma occurs in ~10-15%",
+     "Thymic hyperplasia is seen almost exclusively in anti-MuSK positive disease",
+     "Thymectomy has no benefit in non-thymomatous anti-AChR generalized disease"
+    ],
+    "correct": 2,
+    "exp": "There is a strong link to the thymus: chest CT or MRI is obtained in every newly diagnosed patient, thymoma is found in about 10-15%, and many younger patients have thymic hyperplasia.",
+    "why": [
+     "Thymectomy is part of early management alongside pyridostigmine and immunosuppression, not a last resort after biologics.",
+     "Imaging is indicated in all newly diagnosed patients regardless of age; younger patients in particular have thymic hyperplasia.",
+     "",
+     "Thymic hyperplasia is described in many younger patients generally, and it is anti-AChR disease that carries the thymic link.",
+     "Thymectomy specifically benefits non-thymomatous anti-AChR generalized disease, especially in younger patients."
+    ]
+   }
+  ]
+ },
+ "icp": {
+  "condition": "Increased Intracranial Pressure / TBI",
+  "questions": [
+   {
+    "q": "The Monro-Kellie doctrine explains rising intracranial pressure by which principle?",
+    "ch": [
+     "Cerebral perfusion pressure is the sum of mean arterial pressure and intracranial pressure",
+     "Cerebral blood flow rises linearly with arterial carbon dioxide without any limit",
+     "The skull expands slightly over hours to accommodate added intracranial volume",
+     "Cerebrospinal fluid production doubles whenever brain tissue volume increases",
+     "The rigid cranium holds a fixed volume of brain, blood and CSF, so once buffering fails ICP rises steeply"
+    ],
+    "correct": 4,
+    "exp": "The rigid cranium holds a fixed volume made up of brain (~80%), blood (~10%) and CSF (~10%). Compensatory displacement of CSF and venous blood buys time, but once that buffering is exhausted the pressure-volume curve steepens and small additions cause abrupt ICP rises.",
+    "why": [
+     "Cerebral perfusion pressure is MAP minus ICP, not their sum — the subtraction is why a rising ICP steals perfusion.",
+     "Carbon dioxide does drive cerebral blood flow, but that is the basis of hyperventilation therapy, not the Monro-Kellie doctrine.",
+     "The cranium is rigid and cannot expand; that inflexibility is the entire premise of the doctrine.",
+     "CSF is displaced rather than overproduced as a compensatory mechanism; increased production would worsen the problem.",
+     ""
+    ]
+   },
+   {
+    "q": "What is the normal intracranial pressure, and what level defines intracranial hypertension warranting treatment?",
+    "ch": [
+     "Normal 5-15 mmHg; treat when sustained above 20-22 mmHg",
+     "Normal 10-20 mmHg; treat above 30 mmHg",
+     "Normal 15-25 mmHg; treat above 40 mmHg",
+     "Normal 0-5 mmHg; treat above 10 mmHg",
+     "Normal 5-15 mmHg; treat above 15 mmHg"
+    ],
+    "correct": 0,
+    "exp": "Normal intracranial pressure is 5-15 mmHg, and a sustained pressure above 20-22 mmHg defines intracranial hypertension and warrants treatment — the Brain Trauma Foundation threshold of treating ICP above 22 mmHg.",
+    "why": [
+     "",
+     "A pressure of 10-20 mmHg overlaps normal, and waiting until 30 mmHg delays treatment well past the threshold.",
+     "A pressure of 15-25 mmHg is already abnormal, and 40 mmHg would mean treating only at the point of herniation.",
+     "This sets both the normal range and the treatment threshold too low and would lead to treating physiologic pressures.",
+     "The normal range is right but 15 mmHg is the top of normal, not the treatment threshold."
+    ]
+   },
+   {
+    "q": "Which findings make up the Cushing triad, and what does it signify?",
+    "ch": [
+     "Hypotension, tachycardia and shallow respirations — early compensated raised pressure",
+     "Hypertension with a widened pulse pressure, bradycardia and irregular respirations — a late, ominous sign",
+     "Headache, vomiting and papilledema — the earliest reliable warning of herniation",
+     "Fever, neck stiffness and photophobia — the signature of infectious raised pressure",
+     "Anisocoria, hemiparesis and aphasia — the classic early triad of a mass lesion"
+    ],
+    "correct": 1,
+    "exp": "The Cushing triad is hypertension with a widened pulse pressure, bradycardia and irregular respirations. It is a late, ominous sign of impending herniation — the point is not to wait for it before acting.",
+    "why": [
+     "Hypotension with tachycardia is the pattern of hemorrhagic shock, the opposite of the Cushing reflex.",
+     "",
+     "Headache, vomiting and papilledema are the classic triad of raised intracranial pressure, but they are not the Cushing triad and are not a herniation sign.",
+     "Fever with meningismus suggests CNS infection; it is not the Cushing reflex.",
+     "A blown pupil with contralateral hemiparesis suggests uncal herniation, but this combination is not the Cushing triad."
+    ]
+   },
+   {
+    "q": "A severe TBI patient has a mean arterial pressure of 80 mmHg and an intracranial pressure of 25 mmHg. What is the cerebral perfusion pressure and what should be done?",
+    "ch": [
+     "105 mmHg — above target, so lower the blood pressure with an antihypertensive",
+     "55 mmHg — acceptable in severe traumatic brain injury, so no intervention is needed",
+     "25 mmHg — the intracranial pressure itself is the perfusion pressure and needs no correction",
+     "55 mmHg — below the 60-70 mmHg goal, so lower the ICP and support the MAP",
+     "80 mmHg — perfusion pressure equals MAP whenever a ventricular drain is in place"
+    ],
+    "correct": 3,
+    "exp": "CPP equals MAP minus ICP, so 80 minus 25 is 55 mmHg — below the target CPP of 60-70 mmHg. Both arms of the equation are treated: lower the ICP with osmotherapy and CSF drainage and support the MAP with vasopressors, because hypotension drives secondary injury.",
+    "why": [
+     "Adding rather than subtracting ICP gives a falsely reassuring number, and lowering the MAP would worsen cerebral perfusion.",
+     "The arithmetic is right but 55 mmHg is below the 60-70 mmHg goal and demands intervention.",
+     "ICP is subtracted from MAP to yield perfusion pressure; it is not the perfusion pressure itself.",
+     "",
+     "A ventricular drain lowers ICP but does not remove it from the equation; CPP remains MAP minus ICP."
+    ]
+   },
+   {
+    "q": "Which statement about corticosteroids in raised intracranial pressure is correct?",
+    "ch": [
+     "First-line therapy for the cytotoxic edema of diffuse axonal injury in severe head trauma",
+     "Recommended for all raised intracranial pressure once a ventricular drain has been placed",
+     "Equivalent to hypertonic saline as an osmotherapy for acutely lowering pressure after trauma",
+     "Contraindicated in tumor-related edema but considered standard of care in head trauma",
+     "Contraindicated in traumatic brain injury, where they increased mortality, but effective for vasogenic edema around tumors or abscess"
+    ],
+    "correct": 4,
+    "exp": "Dexamethasone is effective for the vasogenic edema surrounding tumors and abscesses, but steroids are contraindicated in traumatic brain injury because the CRASH trial showed excess mortality.",
+    "why": [
+     "Steroids are not used for traumatic edema at all; the CRASH trial showed they increase mortality in TBI.",
+     "Placing a drain does not change the contraindication — steroids still have no role in traumatic edema.",
+     "Steroids are not osmotherapy; hypertonic saline and mannitol are the osmotic agents that acutely lower pressure.",
+     "This reverses the rule: steroids help vasogenic tumor edema and harm patients with head trauma.",
+     ""
+    ]
+   },
+   {
+    "q": "What role does hyperventilation to a PaCO2 of 30-35 mmHg play in raised intracranial pressure?",
+    "ch": [
+     "A replacement for osmotherapy when serum sodium cannot be reliably monitored",
+     "A brief temporizing bridge for acute herniation or a new pupil change",
+     "A method of raising cerebral blood flow to improve the perfusion pressure",
+     "A prophylactic measure recommended for every intubated head-injured patient",
+     "A maintenance strategy for the first forty-eight hours after severe head injury"
+    ],
+    "correct": 1,
+    "exp": "Brief hyperventilation to a PaCO2 of 30-35 mmHg is a temporizing bridge for acute herniation or a pupil change. Prolonged or aggressive hyperventilation causes vasoconstriction and ischemic secondary injury, so it buys time only until definitive therapy.",
+    "why": [
+     "Hyperventilation does not substitute for osmotherapy, and hypertonic saline dosing requires sodium monitoring rather than avoiding it.",
+     "",
+     "Hyperventilation causes cerebral vasoconstriction and reduces blood flow — that is precisely why it is dangerous if prolonged.",
+     "Prophylactic hyperventilation is specifically to be avoided under the Brain Trauma Foundation targets.",
+     "Sustained hypocapnia causes ischemic secondary injury; it is never a maintenance strategy."
+    ]
+   },
+   {
+    "q": "Which bundle of nursing measures is recommended to limit intracranial pressure spikes?",
+    "ch": [
+     "Permissive fever to 38.5°C and tight endotracheal tube ties for security",
+     "Scheduled Valsalva breathing exercises and withholding of stool softeners",
+     "Head of bed at 30° with the head midline, clustered care, and pre-oxygenated suctioning kept under 10 seconds",
+     "Head of bed flat with the head turned to one side and hourly suctioning",
+     "Trendelenburg positioning with frequent stimulation to assess arousal"
+    ],
+    "correct": 2,
+    "exp": "Elevate the head of the bed to 30° and keep the head midline to promote venous drainage, cluster care to minimize noxious stimuli, and pre-oxygenate before suctioning while limiting each pass to under 10 seconds.",
+    "why": [
+     "Fever raises cerebral metabolic demand and must be treated aggressively; tight tube ties impede jugular venous drainage.",
+     "Valsalva raises pressure, which is why stool softeners are given and straining is prevented.",
+     "",
+     "A flat bed with the head turned obstructs venous drainage, and frequent suctioning provokes exactly the pressure spikes to be avoided.",
+     "Head-down positioning raises intracranial pressure, and frequent stimulation adds noxious input rather than limiting it."
+    ]
+   },
+   {
+    "q": "A head-injured patient's right pupil becomes fixed and dilated and he develops a new left hemiparesis. What is happening, and what is done?",
+    "ch": [
+     "Uncal herniation compressing cranial nerve III — emergency imaging and osmotherapy, with brief hyperventilation as a bridge",
+     "Tonsillar herniation — begin levetiracetam seizure prophylaxis and continue to observe",
+     "A benign anisocoria variant — document the finding and recheck at the next neuro check",
+     "Subfalcine herniation — start dexamethasone to reduce the traumatic cerebral edema",
+     "Direct orbital trauma — obtain an ophthalmology consultation before any further imaging"
+    ],
+    "correct": 0,
+    "exp": "A blown pupil with contralateral hemiparesis is uncal herniation compressing cranial nerve III until proven otherwise. It demands emergency imaging and osmotherapy, with short-term hyperventilation to a PaCO2 of 30-35 mmHg only as a bridge to definitive therapy.",
+    "why": [
+     "",
+     "Tonsillar herniation presents with respiratory arrest from brainstem compression, and seizure prophylaxis does nothing for herniation.",
+     "A new fixed dilated pupil is a herniation emergency, never a variant to be observed until the next check.",
+     "Subfalcine herniation does not cause a third nerve palsy, and steroids are contraindicated in traumatic brain injury.",
+     "The contralateral hemiparesis localizes the problem inside the skull; delaying for a consult wastes the herniation window."
+    ]
+   },
+   {
+    "q": "A patient briefly loses consciousness, wakes and converses normally, then deteriorates rapidly; the head CT shows a biconvex, lens-shaped hematoma. Which lesion is this?",
+    "ch": [
+     "Diffuse axonal injury, seen far better on MRI than on non-contrast head CT",
+     "Subarachnoid hemorrhage producing a sudden severe headache without a lucid interval",
+     "Epidural hematoma from the middle meningeal artery, with the classic lucid interval",
+     "Intraparenchymal temporal contusion producing progressive delayed mass effect",
+     "Subdural hematoma from torn bridging veins, crescent-shaped and crossing sutures"
+    ],
+    "correct": 2,
+    "exp": "An epidural hematoma is arterial bleeding from the middle meningeal artery that appears as a lens-shaped (biconvex) collection and classically produces a lucid interval before rapid deterioration.",
+    "why": [
+     "Diffuse axonal injury has no lens-shaped collection on CT and is the lesion MRI is more sensitive for.",
+     "Subarachnoid hemorrhage does not produce a biconvex hematoma and lacks the lucid interval described here.",
+     "",
+     "A parenchymal contusion is an irregular intra-axial lesion, not the sharply biconvex extra-axial collection shown.",
+     "A subdural hematoma is a crescent-shaped venous collection from bridging veins, common in the elderly and anticoagulated."
+    ]
+   },
+   {
+    "q": "A trauma patient has a Glasgow Coma Scale of 7, an oxygen saturation of 88% and a systolic blood pressure of 85 mmHg. Which set of actions is prioritized?",
+    "ch": [
+     "Start dexamethasone and prophylactic hyperventilation to a PaCO2 of 25 mmHg",
+     "Obtain an MRI for diffuse axonal injury before beginning any resuscitative measures",
+     "Delay intubation until the head CT is complete so the neurologic exam is not obscured",
+     "Intubate for a GCS of 8 or less and correct the hypoxia and hypotension that drive secondary injury",
+     "Give mannitol first and accept the hypotension as an unavoidable side effect of osmotherapy"
+    ],
+    "correct": 3,
+    "exp": "A GCS of 8 or less is the threshold for intubation, and hypoxia below an SpO2 of 90 with a systolic pressure under 90 are the secondary insults that most drive outcome. Securing the airway and restoring oxygenation and perfusion come before anything else.",
+    "why": [
+     "Steroids are contraindicated in traumatic brain injury and prophylactic aggressive hyperventilation causes ischemia.",
+     "Non-contrast head CT is the first-line imaging in acute trauma, and no scan precedes resuscitation.",
+     "A GCS of 8 or less means intubate now; delaying the airway for imaging allows exactly the hypoxic secondary injury being avoided.",
+     "",
+     "Mannitol causes hypovolemia and hypotension and should be held in a hypotensive patient — hypertonic saline is preferred here."
+    ]
+   }
+  ]
+ },
+ "sci": {
+  "condition": "Spinal Cord Injury",
+  "questions": [
+   {
+    "q": "How is a complete spinal cord injury defined?",
+    "ch": [
+     "Any injury graded C or worse on the ASIA Impairment Scale at the initial examination",
+     "Bilateral leg weakness with preserved perianal sensation and normal anal tone",
+     "Absence of the deep tendon reflexes for more than forty-eight hours after injury",
+     "No motor or sensory function below the level of injury, including no sacral sparing",
+     "Loss of motor function with preserved pain and temperature sensation below the level"
+    ],
+    "correct": 3,
+    "exp": "Injuries are classified by level (the highest normal segment) and by completeness: complete means no motor or sensory function below the level of injury including sacral sparing, whereas incomplete means some function is preserved.",
+    "why": [
+     "The ASIA Impairment Scale grades severity from A to E; grade C describes an incomplete injury with preserved motor function.",
+     "Preserved perianal sensation and anal tone are sacral sparing, the finding that defines an incomplete injury.",
+     "Transient flaccid areflexia is spinal shock and does not establish whether the injury is complete or incomplete.",
+     "",
+     "Preserved pain and temperature sensation below the level means function is preserved, which makes the injury incomplete."
+    ]
+   },
+   {
+    "q": "Which finding distinguishes neurogenic shock from hemorrhagic shock?",
+    "ch": [
+     "Hypotension occurs only in hemorrhagic shock and never in neurogenic shock",
+     "Neurogenic shock responds to blood transfusion while hemorrhagic shock does not",
+     "Neurogenic shock occurs only with injuries at or below the level of T12",
+     "Neurogenic shock causes bradycardia whereas hemorrhagic shock causes tachycardia",
+     "Cool clammy skin is present in neurogenic shock and absent in hemorrhagic shock"
+    ],
+    "correct": 3,
+    "exp": "Neurogenic shock is hypotension with bradycardia from loss of sympathetic outflow, while hemorrhagic shock produces a compensatory tachycardia — the heart rate is what distinguishes them.",
+    "why": [
+     "Both cause hypotension, which is why heart rate rather than blood pressure is the discriminator.",
+     "Neurogenic shock is treated with vasopressors to a MAP goal, not with transfusion, and hemorrhagic shock is the one that needs blood.",
+     "Loss of sympathetic outflow, and therefore neurogenic shock, follows injuries at or above T6.",
+     "",
+     "Neurogenic shock produces warm, dry skin from loss of sympathetic tone; cool clammy skin points to hemorrhage."
+    ]
+   },
+   {
+    "q": "Which incomplete syndrome is described as the most common, classically in an older patient with cervical stenosis after a hyperextension fall and weaker in the arms than the legs?",
+    "ch": [
+     "Conus medullaris syndrome",
+     "Brown-Séquard syndrome",
+     "Anterior cord syndrome",
+     "Cauda equina syndrome",
+     "Central cord syndrome"
+    ],
+    "correct": 4,
+    "exp": "Central cord syndrome is the most common incomplete spinal cord injury, classically in an older patient with cervical stenosis after a hyperextension fall, and it produces upper-extremity weakness greater than lower-extremity weakness.",
+    "why": [
+     "A conus lesion affects sacral segments and bladder and bowel function rather than causing arms weaker than legs.",
+     "Brown-Séquard is a hemicord lesion with ipsilateral motor and dorsal column loss and contralateral pain and temperature loss.",
+     "Anterior cord syndrome spares the dorsal columns and does not show the arm-worse-than-leg pattern.",
+     "Cauda equina presents with saddle anesthesia, urinary retention and bilateral leg weakness, not arm weakness.",
+     ""
+    ]
+   },
+   {
+    "q": "What hemodynamic target is given for acute spinal cord injury?",
+    "ch": [
+     "Mean arterial pressure of 60-70 mmHg, the same target used in head injury",
+     "Permissive hypotension until surgical decompression has been completed",
+     "Mean arterial pressure above 100 mmHg until the bulbocavernosus reflex returns",
+     "Systolic blood pressure above 140 mmHg for the first twenty-four hours",
+     "Mean arterial pressure of 85-90 mmHg maintained for approximately 7 days"
+    ],
+    "correct": 4,
+    "exp": "Vasopressors such as norepinephrine are used to maintain a MAP goal of 85-90 mmHg for about 7 days to optimize cord perfusion — one of the two modern perfusion-and-timing pillars, alongside decompression within 24 hours.",
+    "why": [
+     "A MAP of 60-70 mmHg is the cerebral perfusion pressure goal in traumatic brain injury; the cord target is higher.",
+     "Hypotension threatens cord perfusion and causes secondary ischemic injury, so it is treated rather than tolerated.",
+     "Return of the bulbocavernosus reflex marks the end of spinal shock and is not the endpoint for blood pressure support.",
+     "The target is stated as a mean arterial pressure over about a week, not a systolic threshold for one day.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with a T4 injury develops a pounding headache, a blood pressure of 210/110, flushing above the lesion and pallor below it. What is the first action?",
+    "ch": [
+     "Give sublingual nifedipine immediately and then lay the patient flat",
+     "Place the patient supine with the legs elevated to improve cerebral perfusion",
+     "Sit the patient upright, loosen constrictive clothing, and find and remove the trigger",
+     "Administer atropine for the associated bradycardia and continue to observe",
+     "Obtain an urgent head CT before any blood pressure intervention is undertaken"
+    ],
+    "correct": 2,
+    "exp": "This is autonomic dysreflexia, an emergency in injuries at or above T6. The first steps are to sit the patient up, loosen anything constrictive, and find and remove the noxious trigger — most often a full bladder or an impacted bowel — before reaching for a rapid antihypertensive.",
+    "why": [
+     "Rapid antihypertensives such as nifedipine come after upright positioning and trigger removal, and lying the patient flat raises the pressure further.",
+     "Supine positioning with legs elevated raises blood pressure and worsens the hypertensive crisis.",
+     "",
+     "Atropine treats the bradycardia of neurogenic shock; dysreflexia is a hypertensive crisis, not a hypotensive one.",
+     "Imaging delays removal of the trigger in a stroke-risk emergency that can be reversed within minutes."
+    ]
+   },
+   {
+    "q": "What does return of the bulbocavernosus reflex signify?",
+    "ch": [
+     "The end of spinal shock, the transient flaccid areflexia that follows injury",
+     "That the injury can now be reclassified as ASIA Impairment Scale grade E",
+     "That autonomic dysreflexia is imminent and prophylaxis should be started",
+     "That the patient has regained voluntary anal contraction and sacral sparing",
+     "That neurogenic shock has resolved and vasopressor support can be stopped"
+    ],
+    "correct": 0,
+    "exp": "Spinal shock is a transient flaccid areflexia after injury, distinct from the hemodynamic loss of sympathetic tone in neurogenic shock. Return of the bulbocavernosus reflex marks the end of spinal shock.",
+    "why": [
+     "",
+     "Grade E means normal function on the ASIA scale; a returning reflex says nothing about motor or sensory recovery.",
+     "Dysreflexia is a chronic-phase emergency in injuries at or above T6 and is not heralded by this reflex.",
+     "Voluntary anal contraction and perianal sensation are the sacral sparing checked for completeness, which is a separate finding from this reflex arc.",
+     "Neurogenic shock is a hemodynamic problem and is tracked by blood pressure and heart rate, not by this reflex."
+    ]
+   },
+   {
+    "q": "Why is abrupt discontinuation of baclofen dangerous in a patient being treated for spasticity after spinal cord injury?",
+    "ch": [
+     "It causes rebound diaphragmatic weakness in injuries above the C5 level",
+     "Withdrawal causes seizures, rebound spasticity and rhabdomyolysis",
+     "Withdrawal precipitates neurogenic shock with bradycardia and hypotension",
+     "Discontinuation causes an irreversible loss of the bulbocavernosus reflex",
+     "Stopping it triggers a hypertensive crisis identical to autonomic dysreflexia"
+    ],
+    "correct": 1,
+    "exp": "Baclofen must not be stopped abruptly: withdrawal causes seizures, rebound spasticity and rhabdomyolysis. This applies to oral therapy and to intrathecal baclofen used for refractory spasticity.",
+    "why": [
+     "Diaphragmatic function depends on the C3-C5 segments and is not restored or removed by baclofen.",
+     "",
+     "Neurogenic shock comes from loss of sympathetic outflow in the acute phase, not from stopping an antispasticity drug.",
+     "The bulbocavernosus reflex reflects the end of spinal shock and is unrelated to baclofen dosing.",
+     "Dysreflexia is triggered by a noxious stimulus such as a full bladder or impacted bowel, not by baclofen withdrawal."
+    ]
+   },
+   {
+    "q": "A patient with a C4 injury is tiring, with a falling vital capacity and a rising carbon dioxide level, and suctioning provokes profound bradycardia. Which management pairing fits?",
+    "ch": [
+     "Anticipate ventilatory support and keep atropine at the bedside, pretreating before suctioning",
+     "Begin high-dose methylprednisolone, the current standard of care for high cervical injury",
+     "Withhold all suctioning permanently and rely on chest physiotherapy alone",
+     "Give a fluid bolus for the bradycardia and continue routine monitoring on the floor",
+     "Start baclofen for the respiratory muscle spasticity that is causing the fatigue"
+    ],
+    "correct": 0,
+    "exp": "A high cervical injury threatens the diaphragm through the C3-C5 segments, so vital capacity is monitored and ventilatory support anticipated. Unopposed vagal tone makes suctioning a trigger for bradycardia or vagal arrest, so atropine is kept at the bedside and given as pretreatment.",
+    "why": [
+     "",
+     "High-dose steroids are no longer standard of care and are described as a controversial optional intervention at best.",
+     "Secretions still have to be cleared; the answer is pretreatment and vigilance, not abandoning suctioning.",
+     "The bradycardia is vagal rather than volume-related, and rising carbon dioxide with fatigue needs airway control, not floor monitoring.",
+     "Baclofen treats chronic-phase spasticity and does nothing for diaphragmatic fatigue and ventilatory failure."
+    ]
+   },
+   {
+    "q": "Which pair of interventions is described as the modern perfusion-and-timing pillars of acute spinal cord injury care?",
+    "ch": [
+     "Permissive hypotension together with early mobilization out of the cervical collar",
+     "Mean arterial pressure of 85-90 mmHg for 7 days and decompression within 24 hours",
+     "Mannitol osmotherapy with prophylactic hyperventilation to a PaCO2 of 30-35 mmHg",
+     "Immediate intrathecal baclofen and a scheduled bowel program starting on day one",
+     "High-dose methylprednisolone within eight hours plus six weeks of strict bed rest"
+    ],
+    "correct": 1,
+    "exp": "Time is cord: supporting a MAP of 85-90 mmHg for 7 days and pursuing surgical decompression within 24 hours are the two modern pillars, aimed at perfusion and at limiting secondary injury.",
+    "why": [
+     "Hypotension causes secondary ischemic injury, and spinal precautions are maintained until the spine is cleared.",
+     "",
+     "Osmotherapy and hyperventilation belong to raised intracranial pressure management, not to cord perfusion.",
+     "Baclofen and the bowel program are recovery-phase measures rather than the acute perfusion-and-timing pillars.",
+     "High-dose methylprednisolone is no longer standard of care, and prolonged bed rest is not part of modern management."
+    ]
+   },
+   {
+    "q": "A patient reports saddle anesthesia, urinary retention and bilateral leg weakness. What does this represent?",
+    "ch": [
+     "Neurogenic shock, treated with vasopressors to a MAP goal of 85-90 mmHg",
+     "Autonomic dysreflexia, requiring immediate trigger removal and an antihypertensive",
+     "Cauda equina syndrome, a surgical emergency needing emergent decompression",
+     "Central cord syndrome, best managed with rehabilitation and close observation",
+     "Spinal shock, which resolves once the bulbocavernosus reflex has returned"
+    ],
+    "correct": 2,
+    "exp": "Saddle anesthesia with urinary retention and bilateral leg weakness is cauda equina syndrome — a surgical emergency requiring emergent decompression.",
+    "why": [
+     "Neurogenic shock is a hemodynamic state of hypotension with bradycardia, not a focal sacral deficit.",
+     "Dysreflexia presents with a pounding headache and severe hypertension in injuries at or above T6, not with saddle anesthesia.",
+     "",
+     "Central cord syndrome causes upper-extremity weakness greater than lower-extremity weakness without saddle anesthesia.",
+     "Spinal shock is a transient flaccid areflexia and does not by itself produce saddle anesthesia with retention."
+    ]
+   }
+  ]
+ },
+ "migraine": {
+  "condition": "Migraine & Headache",
+  "questions": [
+   {
+    "q": "The POUND criteria used to diagnose migraine consist of which features?",
+    "ch": [
+     "Photophobia, orbital pain, unilateral, nasal congestion, drowsiness",
+     "Pressing, occipital, universal, numbness, duration under one hour",
+     "Pulsatile, one-day duration of 4-72 hours, unilateral, nausea, disabling",
+     "Progressive, older age, undulating, neck stiffness, focal deficits",
+     "Positional, ocular, unremitting, nocturnal, and dizziness"
+    ],
+    "correct": 2,
+    "exp": "Migraine is a clinical diagnosis using POUND/ICHD-3 criteria: Pulsatile, One-day duration (4-72 hours), Unilateral, Nausea, and Disabling — four or more features strongly suggest migraine.",
+    "why": [
+     "Photophobia and nasal congestion are associated symptoms, and autonomic signs such as congestion point toward cluster headache.",
+     "Pressing, band-like and bilateral describes tension-type headache, and migraine lasts 4-72 hours rather than under an hour.",
+     "",
+     "Progressive headache in an older patient with neck stiffness or focal deficits is a red-flag list for secondary headache, not the migraine criteria.",
+     "These words fit the mnemonic letters but not the criteria; a positional or nocturnal headache actually suggests a secondary cause."
+    ]
+   },
+   {
+    "q": "Which mechanism underlies migraine?",
+    "ch": [
+     "Trigeminovascular activation with CGRP release causing neurogenic inflammation and vasodilation",
+     "Sustained cerebral vasospasm producing focal ischemia throughout each attack",
+     "Raised intracranial pressure from impaired CSF absorption at the arachnoid villi",
+     "Demyelination of the trigeminal nerve root from a post-infectious immune attack",
+     "Autoimmune antibodies directed against neuronal potassium channels in the cortex"
+    ],
+    "correct": 0,
+    "exp": "Migraine is a primary headache disorder caused by trigeminovascular activation and release of calcitonin gene-related peptide (CGRP), which produces neurogenic inflammation and vasodilation; cortical spreading depression underlies the aura.",
+    "why": [
+     "",
+     "The vascular change described is vasodilation from neurogenic inflammation, not sustained vasospasm with ischemia.",
+     "Raised intracranial pressure is a secondary headache cause that would show papilledema and prompt imaging.",
+     "There is no demyelinating or post-infectious mechanism described for migraine.",
+     "Migraine is a neurovascular disorder, not an antibody-mediated channelopathy of the cortex."
+    ]
+   },
+   {
+    "q": "How is migraine aura defined?",
+    "ch": [
+     "Nausea and vomiting that begin at least twenty-four hours before the pain",
+     "Sudden, maximal-at-onset visual loss that persists throughout the headache",
+     "A fixed focal neurologic deficit that remains after the headache resolves",
+     "Gradual, spreading, fully reversible visual or sensory symptoms lasting 5-60 minutes before the headache",
+     "Autonomic symptoms such as lacrimation and rhinorrhea during the attack"
+    ],
+    "correct": 3,
+    "exp": "Aura is defined as gradual, spreading, fully reversible visual or sensory symptoms lasting 5-60 minutes and preceding the headache, reflecting the wave of cortical spreading depression.",
+    "why": [
+     "Nausea is one of the POUND criteria accompanying the attack, not a preceding reversible neurologic symptom.",
+     "Sudden maximal-at-onset symptoms suggest a vascular event; aura evolves gradually and is fully reversible.",
+     "A deficit that persists after the headache is a red flag for a secondary cause and prompts imaging.",
+     "",
+     "Lacrimation, ptosis and rhinorrhea are the autonomic features of cluster headache, not migraine aura."
+    ]
+   },
+   {
+    "q": "Which patient should not receive a triptan?",
+    "ch": [
+     "A 36-year-old with photophobia and phonophobia during every attack",
+     "A 58-year-old with known coronary artery disease and uncontrolled hypertension",
+     "A 30-year-old with migraine without aura and no other medical problems",
+     "A 25-year-old with episodic migraine who takes an oral iron supplement",
+     "A 44-year-old whose headache diary shows four disabling attacks each month"
+    ],
+    "correct": 1,
+    "exp": "Triptans are vasoconstrictors and are contraindicated in coronary artery disease, uncontrolled hypertension, prior stroke, and hemiplegic or basilar migraine. For a patient with vascular disease, a gepant or a ditan is the safe alternative.",
+    "why": [
+     "Photophobia and phonophobia are typical migraine features and do not contraindicate a triptan.",
+     "",
+     "Migraine without aura in an otherwise healthy young adult is the standard indication for a triptan as first-line acute therapy.",
+     "Oral iron is not among the contraindications; the concerns are cardiovascular disease and serotonergic co-prescribing.",
+     "Four attacks a month is the threshold for adding a preventive, not a reason to withhold an acute triptan."
+    ]
+   },
+   {
+    "q": "A patient with severe migraine also has coronary artery disease. Which acute option avoids vasoconstriction?",
+    "ch": [
+     "Ergotamine, which is safe when it is combined with a low-dose triptan",
+     "Propranolol taken at the onset of each attack as an abortive medication",
+     "Repeated NSAID dosing on twenty days per month to stay ahead of attacks",
+     "Sumatriptan at a reduced dose, which removes the vascular risk entirely",
+     "A gepant such as ubrogepant or rimegepant, or the ditan lasmiditan"
+    ],
+    "correct": 4,
+    "exp": "Gepants (ubrogepant, rimegepant) are CGRP-receptor antagonists and lasmiditan is a 5-HT1F agonist; neither causes vasoconstriction, which makes them the safe choice when triptans are contraindicated by cardiovascular disease.",
+    "why": [
+     "Ergots are vasoconstrictors, are avoided in coronary artery disease, and are never combined with a triptan.",
+     "Propranolol is a preventive taken daily to reduce attack frequency, not an abortive for an attack in progress.",
+     "Using an abortive on twenty days a month causes medication-overuse headache and does not address the vascular contraindication.",
+     "Sumatriptan remains a vasoconstrictor at any dose and is contraindicated in coronary artery disease.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient takes an NSAID or a triptan on about twenty days each month and her headaches have become daily. What does this describe?",
+    "ch": [
+     "Chronic migraine transformation requiring urgent MRI and MR venography",
+     "Medication-overuse (rebound) headache from abortive use beyond 10-15 days a month",
+     "Status migrainosus requiring admission for intravenous antiemetic therapy",
+     "A new secondary headache mandating non-contrast CT followed by lumbar puncture",
+     "Tension-type headache, which is bilateral, band-like and pressing in quality"
+    ],
+    "correct": 1,
+    "exp": "Overusing abortive medication on more than 10-15 days per month causes medication-overuse (rebound) headache. Patients are taught to dose early in an attack but to respect that ceiling, and NSAIDs specifically are limited to fewer than 15 days a month.",
+    "why": [
+     "Imaging with MRI and MRV is reserved for atypical or progressive patterns, not for a headache explained by abortive overuse.",
+     "",
+     "Status migrainosus is a single prolonged unremitting attack, not a daily pattern driven by frequent abortive dosing.",
+     "CT followed by lumbar puncture is the pathway for suspected subarachnoid hemorrhage after a thunderclap headache.",
+     "Tension-type headache is a distinct primary headache and does not explain the relationship to abortive frequency here."
+    ]
+   },
+   {
+    "q": "Which description and acute treatment match cluster headache?",
+    "ch": [
+     "Bilateral band-like pressing pain, treated with amitriptyline taken at bedtime",
+     "Pulsatile unilateral pain with aura, treated acutely with a CGRP monoclonal antibody",
+     "Progressive morning headache with papilledema, treated with dexamethasone",
+     "Severe unilateral orbital pain with lacrimation, ptosis and rhinorrhea, aborted with high-flow oxygen and subcutaneous sumatriptan",
+     "Scalp tenderness with jaw claudication in a patient over fifty, treated with steroids"
+    ],
+    "correct": 3,
+    "exp": "Cluster headache is a trigeminal autonomic cephalalgia: male-predominant, circadian, with severe unilateral orbital pain and ipsilateral lacrimation, ptosis and rhinorrhea. It is aborted with 100% high-flow oxygen and subcutaneous sumatriptan, with verapamil for prevention.",
+    "why": [
+     "Bilateral band-like pressing pain is tension-type headache, and amitriptyline is a preventive rather than an abortive.",
+     "Pulsatile unilateral pain with aura is migraine, and CGRP monoclonal antibodies are preventives given monthly or quarterly.",
+     "A progressive headache with papilledema is a red flag for a mass or raised intracranial pressure, not a cluster attack.",
+     "",
+     "Scalp tenderness and jaw claudication over age fifty describe temporal arteritis, treated with steroids before biopsy."
+    ]
+   },
+   {
+    "q": "A 45-year-old describes a headache that reached maximal intensity instantly and calls it the worst of his life. What is directed?",
+    "ch": [
+     "Rule out subarachnoid hemorrhage with non-contrast CT followed by lumbar puncture",
+     "Start a preventive such as topiramate and arrange outpatient follow-up",
+     "Check ESR and CRP and start steroids before a temporal artery biopsy",
+     "Diagnose migraine clinically, since the neurologic examination is normal",
+     "Give subcutaneous sumatriptan and judge the diagnosis by the response"
+    ],
+    "correct": 0,
+    "exp": "A thunderclap headache — sudden and maximal at onset, the worst headache of life — must be worked up for subarachnoid hemorrhage with non-contrast CT followed by lumbar puncture looking for xanthochromia; cerebral venous thrombosis is the other concern.",
+    "why": [
+     "",
+     "Starting a preventive treats a primary headache disorder and misses the secondary emergency this presentation demands.",
+     "ESR, CRP and steroids address giant cell arteritis, which presents over age fifty with jaw claudication and scalp tenderness rather than thunderclap onset.",
+     "A normal examination does not exclude subarachnoid hemorrhage, and thunderclap onset is an explicit red flag.",
+     "Response to a triptan is not a diagnostic test and treating empirically delays detection of a bleed."
+    ]
+   },
+   {
+    "q": "A 28-year-old who smokes and has migraine with aura asks about starting a combined estrogen-containing contraceptive. What is advised?",
+    "ch": [
+     "Start it, because estrogen withdrawal is the only recognized migraine trigger",
+     "Start it only if she simultaneously begins a CGRP monoclonal antibody preventive",
+     "It is safe, because the aura rather than the pill determines her vascular risk",
+     "Estrogen is a concern only in tension-type headache and cluster headache",
+     "Avoid estrogen — aura plus smoking and estrogen markedly raises ischemic stroke risk"
+    ],
+    "correct": 4,
+    "exp": "Migraine with aura combined with smoking and estrogen-containing contraceptives markedly increases ischemic stroke risk, so estrogen should be avoided — a management pivot worth raising before being asked.",
+    "why": [
+     "Menstruation and estrogen withdrawal are listed among many triggers including stress, sleep disruption, fasting, alcohol and dehydration.",
+     "A preventive reduces attack frequency but does nothing to offset the stroke risk of estrogen in a smoker with aura.",
+     "The combination is the problem: aura, smoking and estrogen together are what raise the stroke risk.",
+     "The stroke interaction is specific to migraine with aura, not to tension-type or cluster headache.",
+     ""
+    ]
+   },
+   {
+    "q": "A 72-year-old has a new headache with scalp tenderness and jaw claudication, and the ESR is markedly elevated. What should be done?",
+    "ch": [
+     "Wait for the temporal artery biopsy result before beginning any treatment",
+     "Perform non-contrast CT then lumbar puncture to exclude a subarachnoid bleed",
+     "Start steroids before biopsy to prevent blindness from giant cell arteritis",
+     "Obtain MRI and MR venography first, since venous thrombosis is the likelier cause",
+     "Diagnose late-onset migraine and start propranolol as a preventive medication"
+    ],
+    "correct": 2,
+    "exp": "A new headache over age 50 with jaw claudication, scalp tenderness and an elevated ESR is temporal arteritis (giant cell arteritis). Steroids are started before the biopsy because the condition is vision-threatening.",
+    "why": [
+     "Waiting for the biopsy risks irreversible blindness, which is exactly why steroids are started first.",
+     "CT then lumbar puncture is the pathway for a thunderclap headache and suspected subarachnoid hemorrhage.",
+     "",
+     "MRI and MRV are reserved for atypical or progressive patterns; this presentation is a classic temporal arteritis picture.",
+     "A new headache after age fifty with these features is a red flag for secondary headache, not a new primary migraine."
+    ]
+   }
+  ]
+ }
+}

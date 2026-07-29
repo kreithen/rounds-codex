@@ -1,0 +1,977 @@
+{
+ "iron-anemia": {
+  "condition": "Iron Deficiency Anemia",
+  "questions": [
+   {
+    "q": "Which red cell picture is characteristic of iron deficiency anemia?",
+    "ch": [
+     "Microcytic, hypochromic red cells with a low MCV and a low MCH",
+     "Normocytic red cells with brisk reticulocytosis and a low haptoglobin",
+     "Normocytic cells with sickle forms and Howell-Jolly bodies",
+     "Macrocytic oval cells with a high reticulocyte count",
+     "Macrocytic cells with hypersegmented neutrophils on the smear"
+    ],
+    "correct": 0,
+    "exp": "Insufficient iron for heme synthesis starves hemoglobin production, so the red cells are microcytic (low MCV) and hypochromic (low MCH) with reduced hemoglobin content, usually with a high RDW.",
+    "why": [
+     "",
+     "Normocytic anemia with reticulocytosis points to hemolysis rather than iron-starved erythropoiesis.",
+     "Sickle forms and Howell-Jolly bodies belong to sickle cell disease with functional asplenia.",
+     "Iron deficiency lowers the MCV; oval macrocytes with a high reticulocyte count are not its pattern.",
+     "Macrocytosis with hypersegmented neutrophils is the megaloblastic picture of B12 or folate deficiency."
+    ]
+   },
+   {
+    "q": "A woman with menorrhagia reports pagophagia — a craving for chewing ice. Which additional classic clue supports iron deficiency?",
+    "ch": [
+     "Gum infiltration with petechiae and easy bruising",
+     "Koilonychia (spoon nails) with angular cheilitis and glossitis",
+     "Hypersegmented neutrophils with loss of vibration sense",
+     "Scleral icterus with splenomegaly and dark urine",
+     "Painless lymphadenopathy with drenching night sweats"
+    ],
+    "correct": 1,
+    "exp": "Pica and ice craving (pagophagia) are classic and surprisingly specific clues to iron deficiency that resolve quickly with iron; other classic signs are koilonychia (spoon nails), angular cheilitis, and glossitis.",
+    "why": [
+     "Gum infiltration with petechiae suggests leukemic marrow infiltration rather than iron deficiency.",
+     "",
+     "Hypersegmented neutrophils and lost vibration sense indicate B12 deficiency, not depleted iron stores.",
+     "Icterus, splenomegaly, and dark urine suggest hemolysis rather than iron deficiency.",
+     "Painless nodes with night sweats describe lymphoma, not an iron-deficient state."
+    ]
+   },
+   {
+    "q": "Which single laboratory test is the most useful confirmatory test for iron deficiency?",
+    "ch": [
+     "Mean corpuscular volume reported by the automated CBC analyzer",
+     "Red cell distribution width reported with the routine CBC indices",
+     "Reticulocyte count obtained before any iron therapy is started",
+     "Serum ferritin, with a value under 30 ng/mL considered diagnostic",
+     "Total iron binding capacity measured on a fasting blood sample"
+    ],
+    "correct": 3,
+    "exp": "Low serum ferritin is the single best test for iron deficiency — under 30 ng/mL is diagnostic and under 15 is highly specific — though it is an acute-phase reactant that can be falsely normal in infection or inflammation.",
+    "why": [
+     "A low MCV identifies a microcytic anemia but cannot separate iron deficiency from thalassemia or the other TAILS causes.",
+     "A high RDW favors iron deficiency over thalassemia trait but does not confirm depleted stores.",
+     "The reticulocyte count tracks the response to iron therapy rather than confirming the diagnosis.",
+     "",
+     "TIBC is high in iron deficiency and is useful, but it is not the single best confirmatory test."
+    ]
+   },
+   {
+    "q": "Which set of iron studies fits iron deficiency anemia?",
+    "ch": [
+     "Normal serum iron, normal TIBC, normal ferritin, high transferrin saturation",
+     "Low serum iron, normal TIBC, normal ferritin, normal transferrin saturation",
+     "Low serum iron, low TIBC, high ferritin, normal transferrin saturation",
+     "High serum iron, low TIBC, high ferritin, high transferrin saturation",
+     "Low serum iron, high TIBC, low ferritin, transferrin saturation under 20%"
+    ],
+    "correct": 4,
+    "exp": "Iron deficiency shows a low serum iron with a high TIBC/transferrin, a low ferritin, a transferrin saturation under 20%, and an elevated soluble transferrin receptor.",
+    "why": [
+     "Entirely normal iron studies with a low MCV would suggest thalassemia rather than iron deficiency.",
+     "A normal ferritin with a normal TIBC argues against depleted iron stores.",
+     "Low serum iron with a low TIBC and high ferritin is the anemia of chronic disease pattern, where hepcidin sequesters iron.",
+     "High serum iron with high saturation and high ferritin suggests iron overload, the opposite of depleted stores.",
+     ""
+    ]
+   },
+   {
+    "q": "Both iron deficiency anemia and anemia of chronic disease show a low serum iron. Which pair of results separates them?",
+    "ch": [
+     "Transferrin saturation alone — it is under 20% in iron deficiency and entirely normal in chronic disease",
+     "Ferritin and TIBC — iron deficiency shows low ferritin with high TIBC, chronic disease normal/high ferritin with low TIBC",
+     "MCV and MCH — anemia of chronic disease is the microcytic, hypochromic one and iron deficiency is normocytic",
+     "Hemoglobin and hematocrit — the anemia of chronic disease is consistently far more severe than iron deficiency",
+     "Reticulocyte count and LDH — both are markedly elevated in iron deficiency and normal in chronic disease"
+    ],
+    "correct": 1,
+    "exp": "Both have a low serum iron, but iron deficiency has a low ferritin with a high TIBC, while anemia of chronic disease has a normal or high ferritin with a low TIBC because hepcidin sequesters iron.",
+    "why": [
+     "Transferrin saturation is low in both conditions, so on its own it cannot separate them.",
+     "",
+     "Both can be microcytic, so the MCV and MCH do not separate iron deficiency from anemia of chronic disease.",
+     "The severity of the hemoglobin drop does not distinguish the two conditions.",
+     "Reticulocytes are not elevated in untreated iron deficiency; reticulocytosis appears about a week after iron is started."
+    ]
+   },
+   {
+    "q": "Which combination best argues for thalassemia rather than iron deficiency in a microcytic patient?",
+    "ch": [
+     "A high RDW with a low ferritin and a high total iron binding capacity",
+     "A Mentzer index over 13 with pencil cells seen on the peripheral smear",
+     "A low transferrin saturation with an elevated soluble transferrin receptor",
+     "Koilonychia and pagophagia together with a low MCH on the CBC",
+     "A Mentzer index under 13 with a normal RDW and normal iron studies"
+    ],
+    "correct": 4,
+    "exp": "Thalassemia gives a low MCV disproportionate to a mild anemia, a normal or high RBC count, normal iron studies, and a usually normal RDW; the Mentzer index (MCV divided by RBC) under 13 suggests thalassemia.",
+    "why": [
+     "A high RDW with a low ferritin and a high TIBC is the iron deficiency pattern, not thalassemia.",
+     "A Mentzer index over 13 and pencil cells both point toward iron deficiency.",
+     "Low saturation with a high soluble transferrin receptor reflects iron-restricted erythropoiesis in iron deficiency.",
+     "Koilonychia and pagophagia are classic iron deficiency signs, not features of thalassemia trait.",
+     ""
+    ]
+   },
+   {
+    "q": "What is the correct teaching for a patient starting oral ferrous sulfate?",
+    "ch": [
+     "Stop it immediately if the stools turn dark, since that signals GI bleeding",
+     "Take it with milk or an antacid to reduce the stomach upset",
+     "Take it on an empty stomach with vitamin C or juice and expect black stools",
+     "Take it with tea or coffee so the tannins slow absorption and reduce nausea",
+     "Take it together with a proton pump inhibitor to protect the gastric mucosa"
+    ],
+    "correct": 2,
+    "exp": "Oral iron is best absorbed on an empty stomach with vitamin C or juice, separated by at least 2 hours from dairy, antacids, and caffeine; black or dark stools are expected and harmless.",
+    "why": [
+     "Black or dark stools are an expected, harmless effect of oral iron and are not a reason to stop.",
+     "Calcium in dairy and antacids blunt absorption and should be separated from the iron dose by at least 2 hours.",
+     "",
+     "Tannins in tea and coffee impair iron absorption, so they should be spaced away from the dose.",
+     "PPIs raise gastric pH and blunt iron absorption; they should be separated from the dose, not taken with it."
+    ]
+   },
+   {
+    "q": "Why is alternate-day or single daily oral iron now preferred over multiple daily doses?",
+    "ch": [
+     "It lowers hepcidin spikes and improves fractional iron absorption and tolerance",
+     "It prevents the black stools that make many patients stop the medication",
+     "It removes the need to look for an underlying source of blood loss",
+     "It corrects the hemoglobin faster than any intravenous iron preparation",
+     "It allows a much larger total dose of elemental iron each week"
+    ],
+    "correct": 0,
+    "exp": "Hepcidin blocks iron absorption and release, and frequent dosing spikes it; alternate-day or single daily dosing minimizes those spikes and improves both fractional absorption and GI tolerance.",
+    "why": [
+     "",
+     "Dark stools occur on any oral iron schedule and are harmless, so they are not the reason for the change.",
+     "The source of blood loss must still be found — in adults, occult GI malignancy is the priority.",
+     "IV iron repletes stores faster; alternate-day oral dosing is about absorption efficiency, not speed.",
+     "Alternate-day dosing does not raise the weekly dose; the benefit is better absorption of each dose."
+    ]
+   },
+   {
+    "q": "A 68-year-old man has a new microcytic anemia with a ferritin of 8 ng/mL and no obvious bleeding. Beyond starting iron, what is the priority next step?",
+    "ch": [
+     "Start a proton pump inhibitor for presumed gastritis and reassess",
+     "Order hemoglobin electrophoresis to exclude thalassemia trait",
+     "Arrange bidirectional endoscopy — both EGD and colonoscopy",
+     "Transfuse packed red cells to correct the anemia quickly",
+     "Repeat the ferritin in three months to confirm the downward trend"
+    ],
+    "correct": 2,
+    "exp": "New iron deficiency in a man or postmenopausal woman is occult GI blood loss — colon cancer until proven otherwise — so unexplained cases warrant bidirectional endoscopy to find the source; treating the number without finding the cause misses malignancy.",
+    "why": [
+     "A PPI raises gastric pH and blunts iron absorption, and it does not evaluate for a bleeding source.",
+     "Thalassemia has normal iron studies, and a ferritin of 8 already establishes iron deficiency.",
+     "",
+     "Transfusion treats symptoms rather than iron stores and is reserved for instability or severe symptomatic anemia.",
+     "Delaying the search for a source risks missing a colorectal malignancy, and the ferritin is already diagnostic."
+    ]
+   },
+   {
+    "q": "Which complication should be monitored after repeated intravenous iron infusions?",
+    "ch": [
+     "Hypercalcemia from mobilization of skeletal calcium stores",
+     "Hypoglycemia in the hours following each infusion",
+     "Hypernatremia from the sodium load of the diluent",
+     "Hypophosphatemia, particularly with ferric carboxymaltose",
+     "Hyperkalemia requiring cardiac monitoring during the infusion"
+    ],
+    "correct": 3,
+    "exp": "IV iron requires monitoring for infusion reactions, and ferric carboxymaltose in particular is associated with hypophosphatemia; modern formulations rarely cause anaphylaxis.",
+    "why": [
+     "Hypercalcemia is not associated with ferric carboxymaltose or other IV iron products.",
+     "Hypoglycemia is not a monitored complication of iron repletion.",
+     "Hypernatremia is not linked to the iron preparations used for repletion.",
+     "",
+     "Hyperkalemia is not a recognized effect of intravenous iron infusion."
+    ]
+   }
+  ]
+ },
+ "b12-anemia": {
+  "condition": "B12 / Folate Deficiency Anemia",
+  "questions": [
+   {
+    "q": "Which blood picture defines the megaloblastic anemia of B12 or folate deficiency?",
+    "ch": [
+     "Microcytic hypochromic cells with a high RDW and pencil cells",
+     "Macrocytic anemia with an MCV over 100 and hypersegmented neutrophils",
+     "Normocytic anemia with sickle cells and target cells on the smear",
+     "Normocytic anemia with circulating blasts and Auer rods",
+     "Macrocytic anemia with a high reticulocyte count and normal neutrophils"
+    ],
+    "correct": 1,
+    "exp": "Deficiency of B12 or folate stalls nuclear maturation while the cytoplasm keeps growing, producing a macrocytic anemia with an MCV over 100, oval macrocytes, hypersegmented neutrophils, and low reticulocytes.",
+    "why": [
+     "Microcytic hypochromic cells with pencil cells describe iron deficiency, not a megaloblastic process.",
+     "",
+     "Sickle cells and target cells belong to sickle cell disease rather than vitamin deficiency.",
+     "Blasts and Auer rods indicate acute myeloid leukemia rather than megaloblastic anemia.",
+     "Reticulocytes are low because erythropoiesis is ineffective; reticulocytosis is a non-megaloblastic cause of macrocytosis."
+    ]
+   },
+   {
+    "q": "Which statement comparing B12 and folate deficiency is correct?",
+    "ch": [
+     "Both deficiencies raise methylmalonic acid to about the same degree",
+     "Folate stores last years while B12 stores deplete within months",
+     "Only folate deficiency produces a macrocytic anemia with MCV over 100",
+     "Only folate deficiency produces hypersegmented neutrophils on the smear",
+     "Only B12 deficiency causes neurologic disease from demyelination"
+    ],
+    "correct": 4,
+    "exp": "Both deficiencies cause a macrocytic megaloblastic anemia with hypersegmented neutrophils, but only B12 deficiency causes neurologic disease — demyelination of the dorsal columns and lateral corticospinal tracts.",
+    "why": [
+     "MMA rises only in B12 deficiency and stays normal in folate deficiency.",
+     "It is the reverse: B12 stores last years while folate stores deplete in months.",
+     "Both deficiencies produce macrocytosis with an MCV over 100.",
+     "Hypersegmented neutrophils occur in both B12 and folate deficiency.",
+     ""
+    ]
+   },
+   {
+    "q": "Which peripheral smear finding is the earliest and most specific sign of megaloblastic anemia?",
+    "ch": [
+     "Hypersegmented neutrophils with five or more nuclear lobes",
+     "Howell-Jolly bodies within the circulating red cells",
+     "Smudge cells against a background lymphocytosis",
+     "Pencil cells with an elevated platelet count",
+     "Fragmented red cells with marked polychromasia"
+    ],
+    "correct": 0,
+    "exp": "Hypersegmented neutrophils with five or more lobes are the earliest and most specific smear finding in megaloblastic anemia, appearing alongside oval macrocytes.",
+    "why": [
+     "",
+     "Howell-Jolly bodies signal functional asplenia, as in sickle cell disease.",
+     "Smudge cells with a lymphocytosis point to chronic lymphocytic leukemia.",
+     "Pencil cells with thrombocytosis are seen in iron deficiency anemia.",
+     "Fragmented red cells indicate mechanical destruction, not a megaloblastic marrow."
+    ]
+   },
+   {
+    "q": "A patient has a borderline serum B12 level. Which pattern confirms B12 deficiency rather than folate deficiency?",
+    "ch": [
+     "Methylmalonic acid normal with homocysteine elevated",
+     "Methylmalonic acid elevated with homocysteine elevated",
+     "Methylmalonic acid elevated with homocysteine normal and a low LDH",
+     "Homocysteine elevated with a normal serum folate and a normal LDH",
+     "Methylmalonic acid normal with homocysteine also normal"
+    ],
+    "correct": 1,
+    "exp": "B12 runs the methylmalonyl-CoA reaction, so methylmalonic acid rises only in B12 deficiency while homocysteine is elevated in both; MMA and homocysteine both high means B12, and a high homocysteine with a normal MMA means folate.",
+    "why": [
+     "An elevated homocysteine with a normal MMA is the folate deficiency pattern.",
+     "",
+     "Homocysteine is elevated in B12 deficiency, and LDH rises rather than falls with ineffective erythropoiesis.",
+     "Homocysteine alone cannot separate the two, because it is elevated in both deficiencies.",
+     "Both values normal argues against either deficiency."
+    ]
+   },
+   {
+    "q": "Why should folate never be given alone when B12 status is unproven?",
+    "ch": [
+     "Folate triggers a hemolytic crisis in patients with pernicious anemia",
+     "Folate blocks absorption of dietary B12 in the terminal ileum",
+     "Folate corrects the anemia while neurologic damage progresses irreversibly",
+     "Folate causes hypokalemia during the first days of therapy",
+     "Folate raises methylmalonic acid and masks the folate diagnosis"
+    ],
+    "correct": 2,
+    "exp": "Giving folate alone corrects the megaloblastic anemia but does nothing for the neurologic damage of B12 deficiency, which continues and may become irreversible — a can't-miss error, so confirm B12 first.",
+    "why": [
+     "Folate does not provoke hemolysis; the danger is unopposed neurologic decline.",
+     "Folate does not block B12 absorption; the danger is masking the anemia, not causing malabsorption.",
+     "",
+     "Hypokalemia is a risk of brisk erythropoiesis after B12 repletion, not a reason to withhold folate.",
+     "MMA is elevated by B12 deficiency, and folate replacement does not raise it."
+    ]
+   },
+   {
+    "q": "Which finding best supports pernicious anemia as the cause of a patient's B12 deficiency?",
+    "ch": [
+     "A history of long-term metformin therapy",
+     "A strictly vegan diet for the past two years",
+     "Prior ileal resection for Crohn's disease",
+     "Chronic heavy alcohol use with poor intake",
+     "A positive anti-intrinsic factor antibody"
+    ],
+    "correct": 4,
+    "exp": "Pernicious anemia is autoimmune loss of intrinsic factor; anti-intrinsic factor and anti-parietal cell antibodies support it, it is associated with other autoimmune disease and increased gastric cancer risk, and it requires lifelong B12 therapy.",
+    "why": [
+     "Metformin is a common cause of B12 deficiency, but through a drug effect rather than autoimmune intrinsic factor loss.",
+     "A vegan diet causes dietary B12 deficiency, which responds to high-dose oral replacement.",
+     "Ileal disease or resection causes B12 malabsorption without autoimmune intrinsic factor loss.",
+     "Alcoholism is the classic cause of folate deficiency from poor intake.",
+     ""
+    ]
+   },
+   {
+    "q": "Which electrolyte must be watched in the first days after starting B12 for a severe megaloblastic anemia?",
+    "ch": [
+     "Potassium",
+     "Phosphate",
+     "Sodium",
+     "Calcium",
+     "Magnesium"
+    ],
+    "correct": 0,
+    "exp": "As the marrow ramps up and new cells consume potassium, a refeeding-like hypokalemia can develop in the first days of B12 therapy; check potassium early and report weakness or ECG changes.",
+    "why": [
+     "",
+     "Phosphate monitoring belongs to intravenous iron therapy, not B12 repletion.",
+     "Sodium shifts are not the recognized risk of early B12 repletion.",
+     "Calcium is not the electrolyte consumed by brisk erythropoiesis after B12.",
+     "Magnesium is not the electrolyte monitored during B12 repletion."
+    ]
+   },
+   {
+    "q": "Which commonly prescribed drug is an under-recognized cause of B12 deficiency?",
+    "ch": [
+     "Methotrexate",
+     "Trimethoprim",
+     "Phenytoin",
+     "Metformin",
+     "Leucovorin"
+    ],
+    "correct": 3,
+    "exp": "Metformin, along with proton pump inhibitors, is a common and under-recognized cause of B12 deficiency; long-term users benefit from periodic B12 screening.",
+    "why": [
+     "Methotrexate is an antifolate and causes folate deficiency.",
+     "Trimethoprim impairs folate metabolism and causes folate rather than B12 deficiency.",
+     "Phenytoin is a classic drug cause of folate deficiency.",
+     "",
+     "Leucovorin is given to rescue antifolate toxicity rather than to cause a deficiency."
+    ]
+   },
+   {
+    "q": "A patient with macrocytic anemia has a low reticulocyte count with an elevated LDH and elevated indirect bilirubin. What explains this combination?",
+    "ch": [
+     "Hypersplenism trapping mature red cells in the spleen",
+     "Peripheral destruction of red cells by autoantibodies",
+     "Ineffective intramedullary hemolysis from megaloblastic erythropoiesis",
+     "Acute blood loss with a delayed marrow response",
+     "Iron overload accumulated from repeated transfusion"
+    ],
+    "correct": 2,
+    "exp": "In megaloblastic anemia the marrow makes cells that die before release, so reticulocytes stay low while LDH and indirect bilirubin rise — ineffective intramedullary hemolysis rather than peripheral destruction.",
+    "why": [
+     "Splenic trapping is peripheral destruction, which would raise the reticulocyte count.",
+     "Peripheral autoimmune destruction would drive the reticulocyte count up, not down.",
+     "",
+     "Acute blood loss does not produce macrocytosis with a high LDH and indirect bilirubin.",
+     "Iron overload follows chronic transfusion and does not cause megaloblastic changes."
+    ]
+   },
+   {
+    "q": "A patient with B12 deficiency has paresthesias, impaired vibration and position sense, and an unsteady gait. Which nursing action is the priority?",
+    "ch": [
+     "Start folic acid alone to correct the anemia more quickly",
+     "Restrict fluids to keep the ataxia from getting worse",
+     "Enforce bed rest until the vibration sense has normalized",
+     "Implement fall precautions and document a baseline neuro check",
+     "Withhold B12 until the neurologic workup has been completed"
+    ],
+    "correct": 3,
+    "exp": "Impaired proprioception, ataxia, and an unsteady gait from B12 neuropathy make this patient a fall risk, so safety precautions and a documented baseline neuro check of vibration, position sense, and balance come first; the damage may be permanent if treatment is delayed.",
+    "why": [
+     "Folate alone corrects the anemia while allowing the neurologic damage to progress.",
+     "Fluid restriction has no role in B12 deficiency and does not affect ataxia.",
+     "Bed rest is not the intervention, and vibration sense may never fully normalize.",
+     "",
+     "Delaying B12 risks permanent neurologic damage, so treatment should not wait on the workup."
+    ]
+   }
+  ]
+ },
+ "sickle-cell": {
+  "condition": "Sickle Cell Disease",
+  "questions": [
+   {
+    "q": "Which molecular defect produces hemoglobin S in sickle cell disease?",
+    "ch": [
+     "Glutamate replaced by valine at position 6 of the beta-globin chain",
+     "A promoter mutation that raises fetal hemoglobin production",
+     "A frameshift that abolishes intrinsic factor production",
+     "A reciprocal translocation creating a fusion tyrosine kinase",
+     "Deletion of an alpha-globin gene on chromosome 16"
+    ],
+    "correct": 0,
+    "exp": "Sickle cell disease is an autosomal recessive point mutation swapping glutamate for valine at position 6 of the beta-globin chain, producing HbS; homozygous HbSS is classic sickle cell anemia.",
+    "why": [
+     "",
+     "Raising fetal hemoglobin is the therapeutic goal of hydroxyurea, not the causative mutation.",
+     "Loss of intrinsic factor causes pernicious anemia and B12 deficiency.",
+     "The t(9;22) fusion kinase belongs to chronic myeloid leukemia, not sickle cell disease.",
+     "Alpha-globin gene deletions cause alpha-thalassemia, not HbS."
+    ]
+   },
+   {
+    "q": "Which set of conditions triggers HbS polymerization and sickling?",
+    "ch": [
+     "Alkalosis, generous hydration, warmth, and iron loading",
+     "Hyperoxia, low carbon dioxide, and a high dietary folate intake",
+     "High calcium, low potassium, and a high uric acid level",
+     "Excess vitamin C, supplemental oxygen therapy, and bed rest",
+     "Hypoxia, dehydration, acidosis, infection, cold, and stress"
+    ],
+    "correct": 4,
+    "exp": "HbS polymerizes when deoxygenated, so hypoxia, dehydration, acidosis, infection, cold, and stress all precipitate sickling and vaso-occlusion — which is why hydration, warmth, and oxygen for hypoxia anchor crisis care.",
+    "why": [
+     "Alkalosis, warmth, and good hydration reduce sickling rather than provoke it.",
+     "Hyperoxia does not trigger sickling; it is deoxygenation that drives polymerization.",
+     "These electrolyte abnormalities describe tumor lysis syndrome, not sickling triggers.",
+     "Vitamin C and rest are not triggers, and oxygen is given for hypoxia to reduce sickling.",
+     ""
+    ]
+   },
+   {
+    "q": "Which test confirms the diagnosis of sickle cell disease?",
+    "ch": [
+     "Bone marrow aspirate and biopsy with flow cytometry",
+     "A peripheral smear showing sickle cells and target cells",
+     "A reticulocyte count with LDH and haptoglobin levels",
+     "Hemoglobin electrophoresis or HPLC showing predominant HbS",
+     "Transcranial Doppler measuring cerebral blood flow velocity"
+    ],
+    "correct": 3,
+    "exp": "Hemoglobin electrophoresis, or HPLC, is the confirmatory test, showing predominant HbS with absent or low HbA in HbSS; universal newborn screening detects the disease at birth.",
+    "why": [
+     "Marrow biopsy with flow cytometry is a leukemia workup, not the test for a hemoglobinopathy.",
+     "The smear shows sickle cells, target cells, and Howell-Jolly bodies but does not identify the hemoglobin type.",
+     "Reticulocytes, LDH, and haptoglobin document hemolysis without confirming HbS.",
+     "",
+     "Transcranial Doppler stratifies stroke risk in children and is not a diagnostic test."
+    ]
+   },
+   {
+    "q": "Howell-Jolly bodies on the smear of a child with sickle cell disease indicate what, and what does that require?",
+    "ch": [
+     "Acute chest syndrome, requiring oxygen and antibiotics",
+     "Iron overload, requiring chelation therapy",
+     "Functional asplenia, requiring penicillin prophylaxis and vaccination",
+     "Aplastic crisis, requiring urgent exchange transfusion",
+     "Ineffective erythropoiesis, requiring folic acid replacement"
+    ],
+    "correct": 2,
+    "exp": "Howell-Jolly bodies signal functional asplenia, which leaves the patient exposed to overwhelming sepsis from encapsulated organisms — hence penicillin prophylaxis, especially to age 5, plus pneumococcal, meningococcal, Hib, and influenza vaccination.",
+    "why": [
+     "Acute chest syndrome is a new pulmonary infiltrate with respiratory symptoms, not a smear finding.",
+     "Iron overload follows chronic transfusion and is managed with chelation; it is not signalled by Howell-Jolly bodies.",
+     "",
+     "Aplastic crisis is caused by parvovirus B19 and shows a drop in reticulocytes.",
+     "Folic acid supports high red cell turnover but is unrelated to Howell-Jolly bodies."
+    ]
+   },
+   {
+    "q": "How does hydroxyurea reduce crisis frequency in sickle cell disease?",
+    "ch": [
+     "It chelates the iron accumulated from repeated transfusion",
+     "It blocks opioid tolerance so less analgesia is needed",
+     "It increases fetal hemoglobin, diluting HbS and lowering polymerization",
+     "It binds free hemoglobin and raises the haptoglobin level",
+     "It shrinks the spleen and prevents sequestration episodes"
+    ],
+    "correct": 2,
+    "exp": "Hydroxyurea raises fetal hemoglobin (HbF), which dilutes HbS and lowers polymerization, reducing crises, acute chest syndrome, and transfusion need; onset is slow over weeks to months, it is myelosuppressive, and it is teratogenic.",
+    "why": [
+     "Chelation is a separate therapy for transfusional iron overload.",
+     "Hydroxyurea is disease-modifying rather than an analgesic adjunct.",
+     "",
+     "Hydroxyurea does not bind hemoglobin or alter haptoglobin levels.",
+     "It does not act on the spleen, and splenic sequestration remains a risk."
+    ]
+   },
+   {
+    "q": "A patient in vaso-occlusive crisis develops fever, chest pain, hypoxia, and a new pulmonary infiltrate on chest X-ray. What is this and how is it treated?",
+    "ch": [
+     "Splenic sequestration — transfuse and monitor the spleen size",
+     "Acute chest syndrome — give antibiotics, oxygen, and transfusion",
+     "Priapism with referred pain — arrange urologic evaluation",
+     "Pulmonary edema from overhydration — give diuretics alone",
+     "Aplastic crisis from parvovirus B19 — observe the reticulocytes"
+    ],
+    "correct": 1,
+    "exp": "A new pulmonary infiltrate with fever, chest pain, or hypoxia is acute chest syndrome, a leading cause of death in sickle cell disease, and it is treated aggressively with antibiotics, oxygen, and transfusion.",
+    "why": [
+     "Splenic sequestration causes rapid pallor with an enlarging spleen and hypotension.",
+     "",
+     "Priapism is a sustained painful erection and does not produce a pulmonary infiltrate.",
+     "Overhydration can contribute, but diuretics alone do not treat a leading cause of death in this disease.",
+     "Aplastic crisis presents with a falling reticulocyte count, not a new infiltrate."
+    ]
+   },
+   {
+    "q": "A child with sickle cell disease arrives with a temperature of 39°C. What is the nursing priority?",
+    "ch": [
+     "Start a rapid saline bolus and hold antibiotics for now",
+     "Apply cooling blankets and cold compresses to the axillae",
+     "Administer high-flow oxygen regardless of the saturation",
+     "Obtain cultures and give the ordered antibiotics immediately",
+     "Give an antipyretic and reassess the temperature in an hour"
+    ],
+    "correct": 3,
+    "exp": "Fever in a functionally asplenic patient is an emergency because of the risk of overwhelming sepsis from encapsulated organisms; obtain cultures and give the ordered antibiotics quickly.",
+    "why": [
+     "Fluids are part of care, but antibiotics must not be held in a febrile asplenic patient.",
+     "Cold exposure is a trigger for sickling and does nothing about the sepsis risk.",
+     "Oxygen is given for hypoxia rather than routinely, and it does not treat infection.",
+     "",
+     "Waiting an hour to reassess delays antibiotics in a patient at risk of overwhelming sepsis."
+    ]
+   },
+   {
+    "q": "Which statement about supportive care during a vaso-occlusive crisis is correct?",
+    "ch": [
+     "Cool the patient down to reduce the metabolic demand of the crisis",
+     "Withhold fluids until the reported pain score falls below four",
+     "Oxygen should be given routinely to every patient in crisis",
+     "Opioids should be minimized to avoid dependence in frequent presenters",
+     "Give oxygen only if the patient is hypoxic and avoid overhydration"
+    ],
+    "correct": 4,
+    "exp": "Oxygen helps only if the patient is hypoxic — routine oxygen in a normoxic crisis offers no benefit and may suppress reticulocytes — and while IV fluids correct dehydration, overhydration risks acute chest syndrome and pulmonary edema.",
+    "why": [
+     "Cold is a trigger for sickling, so the patient should be kept warm.",
+     "Dehydration drives sickling, so fluids are given rather than withheld.",
+     "Routine oxygen in a normoxic patient offers no benefit and may suppress reticulocytes.",
+     "Pain must not be undertreated; opioids are the mainstay for moderate to severe crisis pain.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with sickle cell disease has a sudden fall in hemoglobin with a reticulocyte count that has dropped rather than risen. Which crisis is this?",
+    "ch": [
+     "Aplastic crisis from parvovirus B19",
+     "Hyperhemolytic crisis",
+     "Splenic sequestration crisis",
+     "Acute chest syndrome",
+     "Vaso-occlusive crisis"
+    ],
+    "correct": 0,
+    "exp": "Parvovirus B19 shuts down red cell production, so the hallmark of an aplastic crisis is a drop in reticulocytes alongside worsening anemia, unlike the other crisis types where reticulocytosis persists.",
+    "why": [
+     "",
+     "A hyperhemolytic crisis destroys red cells peripherally and drives reticulocytes up.",
+     "Splenic sequestration traps blood in an enlarging spleen with rapid pallor and hypotension.",
+     "Acute chest syndrome presents with a new infiltrate and respiratory symptoms.",
+     "Vaso-occlusive crisis causes ischemic pain without a collapse in the reticulocyte count."
+    ]
+   },
+   {
+    "q": "Which principle guides transfusion in sickle cell disease?",
+    "ch": [
+     "Transfuse above a hemoglobin of 12 g/dL to suppress sickling fully",
+     "Avoid raising the hemoglobin much above 10 g/dL to prevent hyperviscosity",
+     "Simple transfusion is preferred over exchange for stroke and acute chest",
+     "Transfusion removes the need for hydroxyurea and folic acid",
+     "Iron overload is not a concern because hemolysis consumes the excess"
+    ],
+    "correct": 1,
+    "exp": "Transfusion is used for acute chest syndrome, stroke, severe symptomatic anemia, and preoperative optimization, but hemoglobin is kept below about 10 g/dL to avoid hyperviscosity.",
+    "why": [
+     "Pushing the hemoglobin that high risks hyperviscosity in a patient with sickle cells.",
+     "",
+     "Exchange transfusion, not simple transfusion, is preferred for stroke and acute chest syndrome.",
+     "Hydroxyurea and folic acid remain part of chronic management regardless of transfusion.",
+     "Iron overload is a real risk of chronic transfusion and requires monitoring and chelation."
+    ]
+   }
+  ]
+ },
+ "leukemia": {
+  "condition": "Leukemia",
+  "questions": [
+   {
+    "q": "Why do patients with acute leukemia present with anemia, bleeding, and infection all at once?",
+    "ch": [
+     "Circulating blasts consume clotting factors and red cells in the periphery",
+     "The enlarging spleen sequesters all three cell lines simultaneously",
+     "Chemotherapy given before the diagnosis suppresses the marrow",
+     "Autoantibodies destroy red cells, platelets, and neutrophils at once",
+     "The malignant clone crowds the marrow, causing pancytopenia of the normal lines"
+    ],
+    "correct": 4,
+    "exp": "Clonal expansion of hematopoietic precursors that fail to mature replaces healthy marrow, so the normal lines fall together: anemia causes fatigue, thrombocytopenia causes bleeding, and neutropenia causes infection.",
+    "why": [
+     "Blasts do not consume peripheral cells; the problem is failed production inside the marrow.",
+     "Splenomegaly may occur, but marrow replacement is the mechanism behind the triad.",
+     "The cytopenias are present at diagnosis, before any chemotherapy has been given.",
+     "Autoimmune destruction is not the mechanism of leukemic pancytopenia.",
+     ""
+    ]
+   },
+   {
+    "q": "How is acute leukemia defined on bone marrow examination?",
+    "ch": [
+     "At least 20% blasts in the marrow",
+     "Smudge cells with a mature lymphocytosis",
+     "Marrow fibrosis with tear-drop shaped red cells",
+     "Any immature white cells appearing on the peripheral smear",
+     "A white cell count above 100,000 together with organomegaly"
+    ],
+    "correct": 0,
+    "exp": "Bone marrow aspirate and biopsy is confirmatory, and acute leukemia is defined by at least 20% blasts — though some defining cytogenetic or molecular lesions establish AML regardless of the blast percentage.",
+    "why": [
+     "",
+     "Smudge cells with a mature lymphocytosis describe chronic lymphocytic leukemia.",
+     "Marrow fibrosis is not the defining feature of acute leukemia.",
+     "Immature cells can circulate in many conditions; the definition rests on the marrow blast percentage.",
+     "A very high white cell count raises leukostasis concern but does not define acute leukemia."
+    ]
+   },
+   {
+    "q": "Which smear finding is paired correctly with its leukemia?",
+    "ch": [
+     "Smudge cells indicate acute myeloid leukemia",
+     "Auer rods in myeloblasts indicate acute myeloid leukemia",
+     "Hypersegmented neutrophils indicate chronic myeloid leukemia",
+     "Howell-Jolly bodies indicate acute lymphoblastic leukemia",
+     "Auer rods indicate chronic lymphocytic leukemia"
+    ],
+    "correct": 1,
+    "exp": "Auer rods are seen in myeloblasts and point to acute myeloid leukemia, with the sharpest examples found in acute promyelocytic leukemia.",
+    "why": [
+     "Smudge cells with lymphocytosis in an older adult indicate CLL, the most common adult leukemia.",
+     "",
+     "Hypersegmented neutrophils are a megaloblastic anemia finding, not a leukemia marker.",
+     "Howell-Jolly bodies indicate functional asplenia, as in sickle cell disease.",
+     "Auer rods are a myeloid finding and are not a feature of CLL."
+    ]
+   },
+   {
+    "q": "Which studies on the marrow sample classify and risk-stratify a newly diagnosed leukemia?",
+    "ch": [
+     "Serum LDH, uric acid, and a comprehensive metabolic panel",
+     "Hemoglobin electrophoresis together with full iron studies",
+     "Chest X-ray with transcranial Doppler of the cerebral vessels",
+     "Anti-intrinsic factor and anti-parietal cell antibody testing",
+     "Flow cytometry, cytogenetics, and molecular or FISH testing"
+    ],
+    "correct": 4,
+    "exp": "Flow cytometry (immunophenotyping), cytogenetics/karyotype, and molecular or FISH testing for BCR-ABL1, PML-RARA, FLT3, and NPM1 classify the leukemia and, with measurable residual disease, drive risk stratification and transplant decisions.",
+    "why": [
+     "LDH, uric acid, and electrolytes are supporting labs that gauge tumor lysis risk, not classifiers.",
+     "Hemoglobin electrophoresis and iron studies address hemoglobinopathy and anemia, not leukemia.",
+     "Imaging does not classify leukemia; the marrow sample and its molecular testing do.",
+     "Those antibodies are part of the pernicious anemia workup.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with a markedly elevated white count is found to carry the Philadelphia chromosome, t(9;22). Which therapy is first-line?",
+    "ch": [
+     "ATRA combined with arsenic trioxide",
+     "A tyrosine kinase inhibitor such as imatinib",
+     "Cytarabine plus an anthracycline as 7+3 induction",
+     "Intrathecal methotrexate given for CNS prophylaxis",
+     "Rituximab-based chemoimmunotherapy"
+    ],
+    "correct": 1,
+    "exp": "The Philadelphia chromosome t(9;22) creates BCR-ABL1, and tyrosine kinase inhibitors such as imatinib, dasatinib, or nilotinib are first-line for CML and Ph-positive ALL, with response tracked by BCR-ABL PCR.",
+    "why": [
+     "ATRA plus arsenic is the regimen for acute promyelocytic leukemia with t(15;17).",
+     "",
+     "7+3 induction is used for acute myeloid leukemia rather than BCR-ABL1 driven disease.",
+     "Intrathecal chemotherapy is CNS prophylaxis, essential in ALL, not a first-line CML therapy.",
+     "Rituximab targets CD20 on B cells and has no activity against BCR-ABL1."
+    ]
+   },
+   {
+    "q": "Which laboratory pattern defines tumor lysis syndrome during cytoreduction?",
+    "ch": [
+     "Normal potassium, high phosphate, high calcium, high creatinine",
+     "Low potassium, low phosphate, high calcium, low uric acid",
+     "High potassium, high phosphate, low calcium, high uric acid",
+     "High potassium, low phosphate, high calcium, high uric acid",
+     "Low potassium, high phosphate, low calcium, low uric acid"
+    ],
+    "correct": 2,
+    "exp": "Tumor lysis syndrome produces hyperkalemia, hyperphosphatemia, hyperuricemia, and hypocalcemia, threatening arrhythmia and acute renal failure; prevent it with IV hydration plus allopurinol or rasburicase.",
+    "why": [
+     "Potassium rises and calcium falls, so a normal potassium with a high calcium does not fit.",
+     "This is the mirror image of tumor lysis, where potassium, phosphate, and uric acid all rise.",
+     "",
+     "Calcium falls in tumor lysis rather than rising, and phosphate rises rather than falling.",
+     "Potassium and uric acid rise in tumor lysis; they do not fall."
+    ]
+   },
+   {
+    "q": "Before giving rasburicase for tumor lysis prophylaxis, which condition must be excluded?",
+    "ch": [
+     "G6PD deficiency",
+     "Hepatitis B infection",
+     "Sickle cell trait",
+     "Pernicious anemia",
+     "Transfusional iron overload"
+    ],
+    "correct": 0,
+    "exp": "Rasburicase is contraindicated in G6PD deficiency because it causes hemolysis, so screen before use; allopurinol, the alternative, needs renal dose adjustment.",
+    "why": [
+     "",
+     "Hepatitis B screening is required before rituximab, not before rasburicase.",
+     "Sickle cell trait is generally benign and is not a contraindication to rasburicase.",
+     "Pernicious anemia has no bearing on the safety of rasburicase.",
+     "Iron overload is a chronic transfusion complication, not a rasburicase contraindication."
+    ]
+   },
+   {
+    "q": "A neutropenic patient on induction chemotherapy spikes a temperature of 38.4°C. What must happen?",
+    "ch": [
+     "Give G-CSF alone and recheck the count in the morning",
+     "Give an antipyretic and continue with routine monitoring",
+     "Transfuse irradiated platelets and observe overnight",
+     "Empiric broad-spectrum antibiotics within one hour",
+     "Wait for the blood culture results before starting antibiotics"
+    ],
+    "correct": 3,
+    "exp": "Any fever in a neutropenic patient is a medical emergency: obtain cultures and give empiric broad-spectrum antibiotics within one hour, alongside strict neutropenic precautions and hand hygiene.",
+    "why": [
+     "G-CSF does not treat an established infection and delays definitive therapy.",
+     "An antipyretic masks the fever without treating a potentially fatal infection.",
+     "Platelets address bleeding risk rather than neutropenic infection.",
+     "",
+     "Cultures are drawn first, but antibiotics must not wait for the results to return."
+    ]
+   },
+   {
+    "q": "A newly diagnosed patient has a white count over 100,000 with dyspnea, confusion, and visual changes. What is happening?",
+    "ch": [
+     "Tumor lysis syndrome with hyperkalemia",
+     "CNS involvement needing intrathecal chemotherapy",
+     "Differentiation syndrome from ATRA therapy",
+     "Leukostasis from hyperleukocytosis, needing urgent cytoreduction",
+     "Disseminated intravascular coagulation from APL"
+    ],
+    "correct": 3,
+    "exp": "Hyperleukocytosis with a white count often above 100,000 causes leukostasis — dyspnea, confusion, visual changes, and priapism — and it needs urgent cytoreduction or leukapheresis.",
+    "why": [
+     "Tumor lysis is a metabolic emergency of cytoreduction defined by its electrolyte pattern.",
+     "CNS leukemia is diagnosed by lumbar puncture and does not explain the very high white count.",
+     "Differentiation syndrome causes fever, dyspnea, and edema during ATRA therapy for APL.",
+     "",
+     "DIC in APL presents with spontaneous bleeding, prolonged coagulation times, and a low fibrinogen."
+    ]
+   },
+   {
+    "q": "Marrow review suggests acute promyelocytic leukemia and the patient is bleeding with a low fibrinogen. What should be done before the PML-RARA result returns?",
+    "ch": [
+     "Hold all therapy until cytogenetics confirm t(15;17)",
+     "Start a tyrosine kinase inhibitor empirically",
+     "Start ATRA immediately and support with blood products",
+     "Begin intrathecal methotrexate for CNS prophylaxis",
+     "Start allopurinol alone and reassess in the morning"
+    ],
+    "correct": 2,
+    "exp": "APL is an oncologic emergency because of DIC, so start ATRA on suspicion rather than waiting for confirmatory PML-RARA testing, supporting the coagulopathy with blood products and watching for differentiation syndrome.",
+    "why": [
+     "Waiting for genetic confirmation costs lives, because patients die of DIC in the first hours.",
+     "Tyrosine kinase inhibitors target BCR-ABL1 in CML and Ph-positive ALL, not PML-RARA.",
+     "",
+     "CNS prophylaxis is essential in ALL and does nothing for the coagulopathy of APL.",
+     "Allopurinol addresses tumor lysis risk but does nothing for the bleeding of APL."
+    ]
+   }
+  ]
+ },
+ "lymphoma": {
+  "condition": "Lymphoma",
+  "questions": [
+   {
+    "q": "Which finding defines Hodgkin lymphoma?",
+    "ch": [
+     "Sheets of CD20-positive large B cells effacing the node",
+     "Smudge cells with a peripheral blood lymphocytosis",
+     "At least 20% blasts on the bone marrow biopsy",
+     "Reed-Sternberg cells that are CD15-positive and CD30-positive",
+     "Starry sky histology with a very high proliferation rate"
+    ],
+    "correct": 3,
+    "exp": "Hodgkin lymphoma is defined by Reed-Sternberg cells, the binucleate owl-eye cells that are CD15-positive and CD30-positive; non-Hodgkin lymphoma is the heterogeneous remainder, about 85% of cases.",
+    "why": [
+     "CD20-positive sheets of large B cells describe diffuse large B-cell lymphoma.",
+     "Smudge cells with a lymphocytosis point to chronic lymphocytic leukemia.",
+     "A 20% blast threshold defines acute leukemia rather than lymphoma.",
+     "",
+     "Starry sky histology describes Burkitt lymphoma, a highly aggressive non-Hodgkin lymphoma."
+    ]
+   },
+   {
+    "q": "Which triad makes up the B symptoms used in lymphoma staging?",
+    "ch": [
+     "Splenomegaly, hepatomegaly, and jaundice",
+     "Fatigue, pruritus, and painless lymphadenopathy",
+     "Fever, drenching night sweats, and over 10% weight loss",
+     "Cough, dyspnea, and pleuritic chest pain",
+     "Anemia, thrombocytopenia, and neutropenia"
+    ],
+    "correct": 2,
+    "exp": "B symptoms are fever, drenching night sweats, and more than 10% weight loss; they are appended as A or B to the Lugano stage and are screened for at each nursing assessment.",
+    "why": [
+     "Organomegaly and jaundice are not part of the B symptom triad.",
+     "Fatigue, pruritus, and painless nodes are common in lymphoma but are not the defined B symptoms.",
+     "",
+     "Respiratory symptoms may reflect a mediastinal mass but are not part of the B symptom definition.",
+     "Cytopenias reflect marrow involvement or chemotherapy rather than the B symptom triad."
+    ]
+   },
+   {
+    "q": "Why is excisional lymph node biopsy required rather than fine-needle aspiration?",
+    "ch": [
+     "Needle aspiration carries a higher risk of seeding tumor along the tract",
+     "Needle aspiration destroys the nodal architecture needed for classification",
+     "Needle aspiration cannot be performed on nodes above the diaphragm",
+     "Needle aspiration requires general anesthesia while excision does not",
+     "Needle aspiration cannot obtain enough cells for immunohistochemistry"
+    ],
+    "correct": 1,
+    "exp": "Excisional biopsy is required because the nodal architecture is essential for classification and grading, and fine-needle aspiration destroys it; subtype and grade dictate entirely different treatments and prognoses.",
+    "why": [
+     "Tract seeding is not the reason excisional biopsy is preferred in lymphoma.",
+     "",
+     "Aspiration is technically possible at many nodal sites; adequacy for classification is the issue.",
+     "Anesthesia requirements are not the reason for choosing an excisional biopsy.",
+     "Cell yield is not the stated problem — the loss of architecture is."
+    ]
+   },
+   {
+    "q": "Which lymphoma is the most common non-Hodgkin lymphoma overall, and which marker does it carry?",
+    "ch": [
+     "Follicular lymphoma, CD30-positive",
+     "Burkitt lymphoma, CD15-positive",
+     "Mantle cell lymphoma, CD15-positive",
+     "Diffuse large B-cell lymphoma, CD20-positive",
+     "Marginal zone lymphoma, CD30-positive"
+    ],
+    "correct": 3,
+    "exp": "Diffuse large B-cell lymphoma is the most common non-Hodgkin lymphoma and is CD20-positive, which is why the CD20-directed antibody rituximab anchors first-line R-CHOP.",
+    "why": [
+     "Follicular lymphoma is the most common indolent NHL, and CD30 is a Hodgkin marker.",
+     "Burkitt lymphoma is highly aggressive but not the most common, and CD15 is a Hodgkin marker.",
+     "Mantle cell lymphoma carries t(11;14) cyclin D1 and is not defined by CD15.",
+     "",
+     "Marginal zone lymphoma is indolent and is not the most common non-Hodgkin lymphoma."
+    ]
+   },
+   {
+    "q": "How does the behavior of Hodgkin lymphoma differ from non-Hodgkin lymphoma?",
+    "ch": [
+     "Hodgkin is usually disseminated at diagnosis while NHL stays localized",
+     "Hodgkin arises from T cells while every NHL arises from B cells",
+     "Hodgkin accounts for roughly 85% of all lymphoma diagnoses",
+     "Hodgkin is incurable while non-Hodgkin lymphoma is always curable",
+     "Hodgkin spreads contiguously node to node and has a bimodal age curve"
+    ],
+    "correct": 4,
+    "exp": "Hodgkin lymphoma spreads contiguously from node to node and has a bimodal age curve, whereas non-Hodgkin lymphoma spreads unpredictably and is often disseminated at diagnosis.",
+    "why": [
+     "It is the reverse: NHL is often disseminated at diagnosis while Hodgkin spreads contiguously.",
+     "NHL can arise from B cells, T cells, or NK cells, and Hodgkin is not defined as T-cell derived.",
+     "Non-Hodgkin lymphoma accounts for about 85% of cases, not Hodgkin lymphoma.",
+     "Aggressive lymphomas are potentially curable, while indolent ones are slow but often incurable.",
+     ""
+    ]
+   },
+   {
+    "q": "Which translocation is paired correctly with its lymphoma?",
+    "ch": [
+     "t(9;22) BCR-ABL1 with follicular lymphoma",
+     "t(15;17) PML-RARA with mantle cell lymphoma",
+     "t(8;14) c-MYC with Burkitt lymphoma",
+     "t(14;18) BCL2 with Burkitt lymphoma",
+     "t(11;14) cyclin D1 with follicular lymphoma"
+    ],
+    "correct": 2,
+    "exp": "Burkitt lymphoma carries t(8;14) involving c-MYC; it shows starry sky histology, is the fastest-doubling human tumor, and carries a high tumor lysis risk.",
+    "why": [
+     "The Philadelphia chromosome t(9;22) belongs to chronic myeloid leukemia, not follicular lymphoma.",
+     "t(15;17) PML-RARA defines acute promyelocytic leukemia, not a lymphoma.",
+     "",
+     "t(14;18) BCL2 is the follicular lymphoma translocation rather than the Burkitt one.",
+     "t(11;14) cyclin D1 belongs to mantle cell lymphoma, not follicular lymphoma."
+    ]
+   },
+   {
+    "q": "Which toxicity pairing must be tracked during ABVD therapy?",
+    "ch": [
+     "Bleomycin causes pulmonary fibrosis and doxorubicin is cardiotoxic",
+     "Vinblastine causes pulmonary fibrosis and dacarbazine is cardiotoxic",
+     "Doxorubicin causes pulmonary fibrosis and bleomycin is cardiotoxic",
+     "Bleomycin causes peripheral neuropathy and dacarbazine is nephrotoxic",
+     "Dacarbazine causes pulmonary fibrosis and vinblastine is cardiotoxic"
+    ],
+    "correct": 0,
+    "exp": "In ABVD, bleomycin causes pulmonary fibrosis so PFTs are monitored, while doxorubicin is cardiotoxic so cumulative dose and ejection fraction are tracked; baseline echo and PFTs are ordered before treatment.",
+    "why": [
+     "",
+     "Vinblastine is not the pulmonary toxin and dacarbazine is not the cardiotoxic agent in ABVD.",
+     "The pairing is reversed — bleomycin injures the lungs and doxorubicin injures the heart.",
+     "Bleomycin's signature toxicity is pulmonary rather than neuropathic.",
+     "Dacarbazine does not cause pulmonary fibrosis and vinblastine is not cardiotoxic."
+    ]
+   },
+   {
+    "q": "Which screening test is required before starting rituximab?",
+    "ch": [
+     "Hepatitis B serology",
+     "Transcranial Doppler study",
+     "Anti-intrinsic factor antibody",
+     "Hemoglobin electrophoresis",
+     "G6PD activity assay"
+    ],
+    "correct": 0,
+    "exp": "Rituximab targets CD20 and carries a risk of hepatitis B reactivation, so hepatitis B screening is required before use, along with infusion-reaction precautions.",
+    "why": [
+     "",
+     "Transcranial Doppler screens stroke risk in sickle cell disease, not lymphoma therapy risk.",
+     "Intrinsic factor antibodies belong to the pernicious anemia workup.",
+     "Hemoglobin electrophoresis diagnoses hemoglobinopathies, not lymphoma treatment risk.",
+     "G6PD screening is required before rasburicase rather than before rituximab."
+    ]
+   },
+   {
+    "q": "Which lymphoma can regress with eradication of an infection alone?",
+    "ch": [
+     "Burkitt lymphoma with EBV-directed antiviral therapy",
+     "Diffuse large B-cell lymphoma with antiretroviral therapy",
+     "Hodgkin lymphoma with EBV-directed antiviral therapy",
+     "Mantle cell lymphoma with H. pylori eradication",
+     "Gastric MALT lymphoma with H. pylori eradication"
+    ],
+    "correct": 4,
+    "exp": "Gastric MALT lymphoma is driven by H. pylori and can regress with eradication of the organism alone, which is why H. pylori sits among the infectious risk factors for lymphoma.",
+    "why": [
+     "Burkitt lymphoma is EBV-associated but requires intensive chemotherapy, not antiviral therapy.",
+     "DLBCL requires R-CHOP; antiretroviral therapy alone does not treat it.",
+     "Hodgkin lymphoma is EBV-associated but is treated with ABVD, not with antivirals.",
+     "Mantle cell lymphoma is not driven by H. pylori and does not regress with eradication.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with a large mediastinal mass develops facial and neck swelling with distended veins and dyspnea. What is this?",
+    "ch": [
+     "Tumor lysis syndrome with hypocalcemic tetany",
+     "Superior vena cava syndrome from the mediastinal mass",
+     "Neutropenic fever with early septic shock",
+     "Spinal cord compression from a nodal mass",
+     "Cytokine release syndrome from CAR-T therapy"
+    ],
+    "correct": 1,
+    "exp": "Facial and neck swelling with distended veins and dyspnea in a patient with a mediastinal mass is superior vena cava syndrome, one of the red flags of lymphoma requiring urgent attention.",
+    "why": [
+     "Tumor lysis causes hyperkalemia, acute kidney injury, and hypocalcemic tetany, not venous congestion.",
+     "",
+     "Neutropenic fever is defined by a temperature above 38°C on chemotherapy, not by facial swelling.",
+     "Cord compression causes neurologic deficits rather than facial and neck swelling.",
+     "Cytokine release syndrome follows CAR-T therapy and is managed with tocilizumab and steroids."
+    ]
+   }
+  ]
+ }
+}

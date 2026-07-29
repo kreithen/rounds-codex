@@ -1,0 +1,977 @@
+{
+ "peritonsillar-abscess": {
+  "condition": "Peritonsillar Abscess",
+  "questions": [
+   {
+    "q": "In a peritonsillar abscess, where does the pus actually collect?",
+    "ch": [
+     "Inside the parotid gland duct system draining into the mouth",
+     "Beneath the epiglottis within the supraglottic soft tissues",
+     "In the retropharyngeal space behind the posterior pharyngeal wall",
+     "Within the substance of the tongue base musculature itself",
+     "In the potential space between the tonsillar capsule and the superior pharyngeal constrictor muscle"
+    ],
+    "correct": 4,
+    "exp": "A peritonsillar abscess is a collection of pus in the potential space between the tonsillar capsule and the superior pharyngeal constrictor / palatopharyngeus muscle, and abscesses often form near Weber glands at the superior pole.",
+    "why": [
+     "The parotid duct is a salivary structure and has nothing to do with the peritonsillar potential space.",
+     "Supraglottic swelling beneath the epiglottis describes epiglottitis, which the module lists as a separate differential diagnosis.",
+     "A retropharyngeal abscess sits behind the pharynx and is a separate deep neck space infection the module lists in the differential.",
+     "The tongue base musculature is not the peritonsillar space; pus collects lateral to the tonsillar capsule, not in the tongue.",
+     ""
+    ]
+   },
+   {
+    "q": "Which set of examination findings does the module call the hallmark of peritonsillar abscess?",
+    "ch": [
+     "A painless neck mass with drenching night sweats and unintentional weight loss",
+     "Symmetric soft palate swelling with a normal voice and full painless mouth opening",
+     "Hot potato (muffled) voice, uvula deviation away from the abscess, and trismus",
+     "Bilateral tonsillar exudate with a scarlatiniform rash and a strawberry tongue",
+     "Inspiratory stridor with a barking cough and marked suprasternal retractions"
+    ],
+    "correct": 2,
+    "exp": "The hallmark exam findings are a hot potato (muffled) voice, uvula deviation away from the abscess, a bulging fluctuant superior soft palate, and ipsilateral tender cervical lymphadenopathy, with trismus from pterygoid irritation.",
+    "why": [
+     "A painless mass with night sweats and weight loss suggests neoplasm, which the module lists as a differential rather than the classic abscess picture.",
+     "Symmetric swelling with a normal voice and full mouth opening argues against an abscess, which is unilateral with trismus and a muffled voice.",
+     "",
+     "Bilateral exudative tonsillitis with rash and strawberry tongue is a streptococcal/scarlet fever picture, not the unilateral bulge of an abscess.",
+     "Stridor with a barking cough points to upper airway obstruction of a different cause; the module lists stridor as a red flag, not the hallmark presentation."
+    ]
+   },
+   {
+    "q": "Which way does the uvula deviate in a peritonsillar abscess, and why?",
+    "ch": [
+     "Downward and posteriorly, obstructing the view of the oropharynx entirely",
+     "It does not deviate at all; the uvula stays midline in a peritonsillar abscess",
+     "Toward whichever side the patient turns the head during the examination",
+     "Away from the abscess, pushed toward the healthy side by the mass of pus",
+     "Toward the side of the abscess, pulled by scarring of the tonsillar capsule"
+    ],
+    "correct": 3,
+    "exp": "The pearl is that the uvula points away from the abscess — the mass effect of the pus pushes it toward the healthy, uninvolved side.",
+    "why": [
+     "The uvula is displaced laterally toward the uninvolved side; downward obstruction of the whole oropharynx is not the described finding.",
+     "Uvula deviation is one of the hallmark findings the module lists, so a midline uvula argues against the diagnosis.",
+     "Head position does not determine uvular deviation; the direction is set by the side the pus occupies.",
+     "",
+     "Deviation is toward the healthy side, not the abscess; the process is acute mass effect from pus, not chronic scarring."
+    ]
+   },
+   {
+    "q": "The diagnosis is largely clinical. What does the module call the most direct confirmatory test?",
+    "ch": [
+     "Contrast-enhanced CT of the neck in every suspected case before treatment",
+     "Needle aspiration yielding purulent material, which is both diagnostic and therapeutic",
+     "A rapid streptococcal antigen swab of the posterior pharyngeal wall",
+     "An elevated CRP and white blood cell count on routine laboratory testing",
+     "A monospot test for Epstein-Barr virus infectious mononucleosis"
+    ],
+    "correct": 1,
+    "exp": "Diagnosis is largely clinical, and the most direct confirmatory test is needle aspiration yielding purulent material — diagnostic and therapeutic at the same time.",
+    "why": [
+     "Contrast CT is reserved for atypical, severe, or uncertain cases and when trismus limits the exam, not for every suspected abscess.",
+     "",
+     "A rapid strep swab is a supportive test that can be considered, but it does not confirm that a walled-off collection of pus is present.",
+     "Labs such as CBC and CRP support the impression but explicitly do not confirm the diagnosis.",
+     "Monospot testing is considered because mononucleosis can coexist, but it does not confirm a peritonsillar abscess."
+    ]
+   },
+   {
+    "q": "How does the module distinguish peritonsillar cellulitis from a true peritonsillar abscess?",
+    "ch": [
+     "Cellulitis shows fullness without a drainable pocket, while an abscess is fluctuant and yields pus on aspiration",
+     "Cellulitis is caused by anaerobes and an abscess only by Group A Streptococcus",
+     "Cellulitis causes trismus whereas an abscess never limits mouth opening at all",
+     "Cellulitis deviates the uvula while an abscess leaves the uvula in the midline",
+     "Cellulitis requires drainage whereas an abscess responds to antibiotics alone"
+    ],
+    "correct": 0,
+    "exp": "The key distinction is that peritonsillar cellulitis shows fullness without a drainable pocket, whereas an abscess is fluctuant and yields pus on aspiration.",
+    "why": [
+     "",
+     "Both are polymicrobial in origin; the module names Group A Strep, Fusobacterium necrophorum, and mixed oral anaerobes together.",
+     "Trismus from pterygoid irritation is part of the abscess picture; it is not a feature that separates cellulitis from abscess in this direction.",
+     "Uvular deviation reflects the mass effect of an abscess, so this reverses the finding the module actually teaches.",
+     "This inverts management: the abscess is what needs drainage for source control, while cellulitis has no drainable pocket."
+    ]
+   },
+   {
+    "q": "What is the first-line empiric antibiotic choice for a peritonsillar abscess?",
+    "ch": [
+     "Amoxicillin-clavulanate, or ampicillin-sulbactam IV, for Strep and oral anaerobe coverage",
+     "Oral azithromycin monotherapy for five days without any drainage procedure",
+     "Topical benzocaine gargles with antibiotics delayed until fever continues",
+     "Oral fluconazole, because the infection is usually fungal in young adults",
+     "Intravenous vancomycin alone, targeting methicillin-resistant staphylococci"
+    ],
+    "correct": 0,
+    "exp": "First-line empiric therapy is amoxicillin-clavulanate, or IV ampicillin-sulbactam, given after or alongside drainage; beta-lactamase coverage is key because the infection is polymicrobial with Group A Strep and oral anaerobes.",
+    "why": [
+     "",
+     "A macrolide alone is not the module's empiric choice, and it omits the source control that drainage provides.",
+     "Gargles are supportive comfort care; delaying antibiotics is not the described management of a drainable deep neck infection.",
+     "The dominant pathogens listed are bacterial — Group A Strep, Fusobacterium, and oral anaerobes — not fungal.",
+     "Vancomycin alone does not cover the oral anaerobes that make this infection polymicrobial."
+    ]
+   },
+   {
+    "q": "Which antibiotic does the module name for a penicillin-allergic patient with a peritonsillar abscess?",
+    "ch": [
+     "Gentamicin, which reliably covers the oral anaerobes in this infection",
+     "Metronidazole alone, which fully covers Group A Streptococcus as well",
+     "Ceftriaxone, which shares the same beta-lactam ring and cross-reacts fully",
+     "Nafcillin, which is preferred whenever a penicillin allergy is documented",
+     "Clindamycin, which gives strong anaerobic and Group A Strep coverage"
+    ],
+    "correct": 4,
+    "exp": "Clindamycin is the alternative for penicillin-allergic patients because it provides strong anaerobic and Group A Strep coverage; monitor for C. difficile diarrhea, and it is useful when toxin suppression is desired.",
+    "why": [
+     "An aminoglycoside does not provide the oral anaerobic coverage this polymicrobial infection requires.",
+     "Metronidazole covers anaerobes but leaves Group A Streptococcus uncovered, so it is not adequate alone.",
+     "A cephalosporin is not the module's named penicillin-allergy alternative for this infection.",
+     "Nafcillin is itself a penicillin, so it is exactly what must be avoided once allergy is verified.",
+     ""
+    ]
+   },
+   {
+    "q": "When performing needle aspiration of a peritonsillar abscess, how is the needle directed and why?",
+    "ch": [
+     "Aim inferiorly toward the tongue base, where no major vessels are present",
+     "Aspiration should be avoided entirely because of the bleeding risk involved",
+     "Aim posteriorly through the soft palate to reach the superior pole safely",
+     "Aim medial and shallow, because the internal carotid artery lies just lateral",
+     "Aim laterally and deeply, since the carotid artery lies medial to the tonsil"
+    ],
+    "correct": 3,
+    "exp": "The internal carotid artery lies just lateral and posterior to the tonsil, so aspiration is directed medial and shallow to avoid catastrophic vascular injury.",
+    "why": [
+     "The pus sits at the superior pole of the peritonsillar space, and aiming inferiorly does not address the vascular pitfall the module emphasizes.",
+     "Aspiration is the module's definitive source control and the most direct confirmatory test, so avoiding it is not the answer.",
+     "Direction through the palate posteriorly moves toward the lateral vessels rather than away from them.",
+     "",
+     "This reverses the anatomy — the carotid is lateral, so aiming laterally and deeply is exactly the catastrophic error the module warns against."
+    ]
+   },
+   {
+    "q": "A 22-year-old is drained for a peritonsillar abscess and discharged on oral antibiotics. Three days later he returns with persistent spiking fevers, rigors, and unilateral neck pain and tenderness. Which complication does this pattern suggest?",
+    "ch": [
+     "Postoperative bleeding from injury to the internal carotid artery",
+     "Lemierre syndrome — Fusobacterium septic thrombophlebitis of the internal jugular vein",
+     "Infectious mononucleosis reactivating after the drainage procedure",
+     "Peritonsillar cellulitis that never actually progressed to an abscess",
+     "An allergic drug reaction to the amoxicillin-clavulanate prescribed"
+    ],
+    "correct": 1,
+    "exp": "Persistent spiking fevers, rigors, and unilateral neck tenderness after a sore throat point to Lemierre syndrome — Fusobacterium septic thrombophlebitis of the internal jugular vein.",
+    "why": [
+     "Carotid injury from aspiration presents as catastrophic bleeding at the time of the procedure, not as spiking fevers and rigors days later.",
+     "",
+     "Mononucleosis can coexist with abscess, but it does not explain rigors with unilateral neck tenderness after successful drainage.",
+     "Cellulitis without a pocket would not produce rigors and progressive unilateral neck tenderness after pus was obtained.",
+     "A drug reaction does not cause rigors with focal unilateral neck tenderness; this pattern is septic spread."
+    ]
+   },
+   {
+    "q": "A patient with a peritonsillar abscess develops stridor, pooling secretions, and cannot swallow saliva. What is the nursing priority?",
+    "ch": [
+     "Document the uvula position and the degree of trismus, then continue with rounds",
+     "Begin warm saltwater gargles and schedule the analgesics around the clock for comfort",
+     "Escalate immediately for airway management, keeping the patient upright with suction and emergency airway equipment at the bedside",
+     "Withhold all intravenous fluids until the patient can tolerate oral intake safely",
+     "Offer cool soft liquids by mouth and reassess the pain score again in one hour"
+    ],
+    "correct": 2,
+    "exp": "Airway assessment comes first: stridor, pooling secretions, and inability to swallow saliva require immediate escalation, with the patient positioned upright in high-Fowler's and suction plus emergency airway equipment kept at the bedside.",
+    "why": [
+     "Documenting the uvula and trismus is appropriate assessment, but it does not come before escalating an obstructing airway.",
+     "Gargles and scheduled analgesia are discharge teaching and comfort measures, not the response to impending airway compromise.",
+     "",
+     "IV fluids are exactly what this patient needs while unable to swallow; withholding them worsens dehydration.",
+     "Offering oral liquids to a patient who cannot handle secretions risks aspiration; the airway must be addressed first."
+    ]
+   }
+  ]
+ },
+ "menieres": {
+  "condition": "Meniere's Disease",
+  "questions": [
+   {
+    "q": "What is the underlying pathophysiology of Meniere's disease?",
+    "ch": [
+     "A benign schwannoma of the vestibulocochlear nerve within the internal auditory canal",
+     "Inflammation of the vestibular nerve following a viral upper respiratory infection",
+     "Conductive blockage of the ossicular chain by abnormal bone at the stapes footplate",
+     "Otoconia displaced into the posterior semicircular canal of the inner ear",
+     "Idiopathic endolymphatic hydrops — excess endolymph distending the membranous labyrinth"
+    ],
+    "correct": 4,
+    "exp": "Meniere's disease is idiopathic endolymphatic hydrops: excess endolymph distends the membranous labyrinth of the inner ear and disrupts both cochlear and vestibular function. Meniere's is the disease; hydrops is the mechanism.",
+    "why": [
+     "Vestibular schwannoma is the retrocochlear tumor that contrast MRI is ordered to exclude, and it causes progressive asymmetric loss rather than hydrops.",
+     "Vestibular neuritis is a single prolonged attack lasting days without hearing loss — one of the mimics contrasted with Meniere's.",
+     "The hearing loss in Meniere's is sensorineural, not conductive, so an ossicular or stapes problem does not fit.",
+     "Displaced otoconia describe BPPV, which the module contrasts as positional vertigo lasting seconds with normal hearing.",
+     ""
+    ]
+   },
+   {
+    "q": "Which grouping is the classic tetrad of Meniere's disease?",
+    "ch": [
+     "Positional vertigo of seconds, nystagmus, nausea, and normal hearing",
+     "Episodic vertigo, fluctuating sensorineural hearing loss, tinnitus, and aural fullness",
+     "Progressive asymmetric hearing loss, unilateral tinnitus, and imbalance",
+     "Vertigo, facial nerve palsy, painful ear vesicles, and hearing loss",
+     "Headache, photophobia, phonophobia, and normal audiometric hearing"
+    ],
+    "correct": 1,
+    "exp": "The classic tetrad is episodic vertigo lasting minutes to hours, fluctuating sensorineural hearing loss affecting low frequencies first, tinnitus, and aural fullness — usually unilateral early in the disease.",
+    "why": [
+     "Positional vertigo lasting seconds with normal hearing is BPPV, which is separated from Meniere's by duration and the absence of hearing loss.",
+     "",
+     "Progressive asymmetric loss with unilateral tinnitus is the vestibular schwannoma pattern that prompts MRI, not the fluctuating Meniere's tetrad.",
+     "Facial palsy with painful ear vesicles is Ramsay Hunt syndrome, not the Meniere's tetrad.",
+     "Headache with photophobia and normal hearing describes vestibular migraine, a mimic the module explicitly contrasts."
+    ]
+   },
+   {
+    "q": "What pattern of hearing loss does audiometry show early in Meniere's disease?",
+    "ch": [
+     "High-frequency sensorineural loss that is fixed and steadily progressive",
+     "Conductive loss with Rinne showing bone conduction better than air",
+     "Loss confined to the mid frequencies with a normal-appearing audiogram",
+     "Complete unilateral deafness present from the very first vertigo attack",
+     "Low-frequency sensorineural loss that fluctuates early in the disease"
+    ],
+    "correct": 4,
+    "exp": "Audiometry is the key confirmatory test and shows a low-frequency sensorineural hearing loss that fluctuates early; a rising or peaked, tent-shaped audiogram is classic, and this distinguishes it from most other sensorineural loss, which begins at high frequencies.",
+    "why": [
+     "Most other sensorineural hearing loss starts high-frequency; Meniere's is the one that begins low-frequency and fluctuates.",
+     "Rinne stays air greater than bone in Meniere's because the loss is sensorineural, not conductive.",
+     "The audiogram is abnormal — a low/mid-frequency loss must be documented for the diagnosis, so a normal audiogram does not fit.",
+     "Hearing loss fluctuates early and permanent loss accrues over years as attacks burn out, not at the first attack.",
+     ""
+    ]
+   },
+   {
+    "q": "Which combination satisfies the clinical diagnostic criteria for Meniere's disease?",
+    "ch": [
+     "Vertigo lasting only a few seconds that is reliably provoked by the Dix-Hallpike positioning maneuver",
+     "Two or more spontaneous vertigo episodes of 20 minutes to 12 hours plus documented low/mid-frequency sensorineural loss",
+     "Continuous unremitting vertigo for several days accompanied by completely normal audiometric hearing",
+     "An abnormal contrast MRI of the internal auditory canals demonstrating endolymphatic hydrops directly",
+     "A single vertigo episode of any duration together with a subjective sense of hearing change in either ear"
+    ],
+    "correct": 1,
+    "exp": "The criteria are two or more spontaneous vertigo episodes lasting 20 minutes to 12 hours, plus audiometrically documented low/mid-frequency sensorineural hearing loss in the affected ear, plus fluctuating aural symptoms such as tinnitus or fullness.",
+    "why": [
+     "Seconds-long positional vertigo provoked by Dix-Hallpike is the BPPV pattern, which falls outside the 20 minute to 12 hour window.",
+     "",
+     "Days of continuous vertigo with normal hearing describes vestibular neuritis, not Meniere's.",
+     "MRI is obtained to exclude vestibular schwannoma or central lesions, not to demonstrate hydrops and make the diagnosis.",
+     "Two or more documented episodes are required, and the hearing loss must be documented audiometrically rather than reported subjectively."
+    ]
+   },
+   {
+    "q": "What do the Weber and Rinne tests show in a patient with Meniere's disease?",
+    "ch": [
+     "Weber lateralizes to the affected ear with Rinne air greater than bone",
+     "Both Weber and Rinne are normal because the loss is purely central",
+     "Weber lateralizes to the unaffected ear and Rinne stays air greater than bone",
+     "Weber lateralizes to the affected ear and Rinne shows bone better than air",
+     "Weber stays midline and Rinne is reversed bilaterally in both of the ears"
+    ],
+    "correct": 2,
+    "exp": "Because the loss is sensorineural, the Weber test lateralizes to the unaffected (good) ear and Rinne stays air greater than bone — a quick bedside clue that the pattern is not conductive.",
+    "why": [
+     "The Rinne half is right, but Weber lateralizes away from the affected ear in a sensorineural loss, not toward it.",
+     "The lesion localizes to the inner ear and labyrinth, not centrally, and the bedside tuning fork tests are not normal.",
+     "",
+     "Lateralizing to the affected ear with bone better than air is the conductive pattern, the opposite of what Meniere's produces.",
+     "A midline Weber with bilaterally reversed Rinne does not describe the unilateral sensorineural pattern the module teaches."
+    ]
+   },
+   {
+    "q": "What is first-line maintenance therapy to reduce Meniere's attack frequency?",
+    "ch": [
+     "Long-term daily meclizine taken continuously to prevent future attacks",
+     "Intratympanic gentamicin injection at the very first clinic visit",
+     "Chronic benzodiazepine therapy to keep the vestibular system suppressed",
+     "A low-sodium diet plus a thiazide or thiazide-like diuretic to reduce endolymph volume",
+     "Oral prednisone tapers repeated monthly regardless of attack frequency"
+    ],
+    "correct": 3,
+    "exp": "First-line maintenance is sodium restriction of about 1.5-2 g/day plus a thiazide or thiazide-like diuretic such as hydrochlorothiazide, often with triamterene, to reduce endolymph volume and attack frequency, with electrolytes monitored for hypokalemia and hyponatremia.",
+    "why": [
+     "Meclizine is an acute vestibular suppressant for short-term use, explicitly not chronic prevention.",
+     "Gentamicin ablation is reserved for refractory disabling vertigo after conservative therapy, not the first visit.",
+     "Benzodiazepines are used sparingly and short-term; prolonged use brings dependence, falls, and delayed central compensation.",
+     "",
+     "Repeated systemic steroid tapers are not the described maintenance strategy; intratympanic dexamethasone is the steroid option and it is second-line."
+    ]
+   },
+   {
+    "q": "Which caution does the module attach to meclizine in Meniere's disease?",
+    "ch": [
+     "It is sedating and anticholinergic, so use caution in the elderly and limit it to short-term acute use",
+     "It requires electrolyte monitoring for hypokalemia and hyponatremia",
+     "It is ototoxic and can worsen the sensorineural hearing loss further",
+     "It must be given by intratympanic injection to reach the labyrinth",
+     "It is a preferred long-term prophylactic agent because it is non-sedating"
+    ],
+    "correct": 0,
+    "exp": "Meclizine is an acute vestibular suppressant that is sedating and anticholinergic — caution in the elderly for falls, urinary retention, and glaucoma — and it is intended for short-term acute use, not chronic prevention.",
+    "why": [
+     "",
+     "Electrolyte monitoring for hypokalemia and hyponatremia belongs to the thiazide diuretic, not to meclizine.",
+     "Ototoxicity and worsening sensorineural hearing loss are the risks of intratympanic gentamicin, not meclizine.",
+     "Meclizine is taken orally; intratympanic delivery describes dexamethasone or gentamicin.",
+     "Meclizine is sedating and is for short-term acute use, so it is not a preferred long-term prophylactic."
+    ]
+   },
+   {
+    "q": "A patient with refractory disabling vertigo still has useful hearing in the affected ear. Which second-line option is favored when hearing preservation is the priority?",
+    "ch": [
+     "Intratympanic dexamethasone, a hearing-sparing corticosteroid injection",
+     "Intratympanic gentamicin, which is ototoxic and vestibulotoxic",
+     "Surgical labyrinthectomy to remove the vestibular end organ entirely",
+     "Betahistine, which is FDA-approved in the United States for this use",
+     "Daily high-dose meclizine continued indefinitely for vertigo control"
+    ],
+    "correct": 0,
+    "exp": "Intratympanic dexamethasone is second-line for refractory vertigo when hearing preservation is desired; it is the hearing-sparing alternative to ablation, although the effect may be temporary and require repeat treatment.",
+    "why": [
+     "",
+     "Gentamicin is chemical ablation and is vestibulotoxic and ototoxic, reserved for cases where hearing is already poor or vertigo control outweighs hearing risk.",
+     "Labyrinthectomy is an ablative surgical option at the far end of the ladder, not the hearing-preserving choice.",
+     "Betahistine is not FDA-approved in the United States and is a maintenance prophylactic used mainly abroad, not the second-line refractory option.",
+     "Meclizine is a short-term acute suppressant and does not control refractory disease when continued indefinitely."
+    ]
+   },
+   {
+    "q": "A patient with long-standing Meniere's describes sudden falls to the ground without any loss of consciousness. What does this represent?",
+    "ch": [
+     "A posterior circulation stroke, given the abrupt loss of postural tone",
+     "A benign positional event that resolves with the Epley repositioning",
+     "Tumarkin otolithic crisis — a drop attack marking advanced disease and high fall risk",
+     "A vasovagal syncopal episode unrelated to the inner ear disorder",
+     "An expected side effect of the thiazide diuretic causing hypotension"
+    ],
+    "correct": 2,
+    "exp": "Tumarkin otolithic crisis is a sudden drop attack without loss of consciousness; it is a red flag signalling advanced disease with high fall and injury risk, and it drives more aggressive intervention.",
+    "why": [
+     "Central signs such as diplopia, dysarthria, dysphagia, focal weakness, or ataxia would point to a posterior circulation stroke; an isolated drop attack in known Meniere's does not.",
+     "The Epley maneuver treats BPPV, a positional disorder with vertigo lasting seconds, not a drop attack in Meniere's.",
+     "",
+     "Syncope involves loss of consciousness, which is specifically absent in a Tumarkin drop attack.",
+     "A thiazide can cause orthostatic symptoms, but a sudden drop attack without loss of consciousness is a recognized manifestation of advanced disease itself."
+    ]
+   },
+   {
+    "q": "During an acute Meniere's vertigo attack, which nursing action is the priority?",
+    "ch": [
+     "Place the patient flat with the head lower than the body and dim the lights",
+     "Encourage the patient to walk the hallway to promote vestibular compensation",
+     "Brighten the room lighting and encourage active head-turning exercises",
+     "Keep the patient still in a quiet, dimly lit room with side rails up, bed low, call light in reach, and an emesis basin ready",
+     "Withhold all oral fluids for 24 hours and restrict potassium in the diet"
+    ],
+    "correct": 3,
+    "exp": "Safety comes first during an attack: side rails up, bed low, call light in reach, an emesis basin ready, and the patient positioned still in a quiet, dimly lit room while sudden head movements are minimized.",
+    "why": [
+     "The taught position is lying still with the gaze fixed in a dim quiet room, not head-down positioning.",
+     "Ambulating during an active attack is a fall hazard; assistance with ambulation and fall precautions are the point.",
+     "Bright light and active head movement worsen the spell; a quiet, dimly lit room with minimal head movement is what is taught.",
+     "",
+     "Hydration status is assessed and supported during attacks, and potassium restriction is the opposite of the concern with a thiazide, which risks hypokalemia."
+    ]
+   }
+  ]
+ },
+ "herpes-zoster": {
+  "condition": "Herpes Zoster (Shingles)",
+  "questions": [
+   {
+    "q": "What is the underlying mechanism of herpes zoster?",
+    "ch": [
+     "Primary infection with varicella-zoster virus acquired from a household contact",
+     "An autoimmune attack on epidermal desmoglein producing flaccid blisters",
+     "A hypersensitivity reaction to a recently started medication or antibiotic",
+     "Direct spread of herpes simplex virus along the trigeminal nerve branches",
+     "Reactivation of latent varicella-zoster virus in a sensory ganglion as cell-mediated immunity declines"
+    ],
+    "correct": 4,
+    "exp": "After primary varicella, VZV lies dormant in the dorsal root and cranial sensory ganglia; declining cell-mediated immunity allows reactivation and spread down the sensory nerve to the skin, which is why age and immunosuppression are the key risk factors.",
+    "why": [
+     "Primary varicella infection is chickenpox; zoster is the later reactivation of virus already latent in the ganglia.",
+     "Autoantibodies against desmoglein describe a pemphigus blistering disease, not viral reactivation in a ganglion.",
+     "A drug hypersensitivity eruption is not dermatomal and does not arise from latent virus in a sensory ganglion.",
+     "The latent virus in zoster is varicella-zoster virus, and a Tzanck smear cannot distinguish it from HSV, which is precisely why PCR is used.",
+     ""
+    ]
+   },
+   {
+    "q": "Which description matches the classic herpes zoster rash?",
+    "ch": [
+     "Ill-defined scaly flexural patches with chronic lichenification and excoriation",
+     "Diffuse migratory urticarial wheals that move over the body within a few hours",
+     "Symmetric bilateral crops of vesicles that freely cross the midline of the trunk",
+     "A unilateral single-dermatome eruption of grouped vesicles on an erythematous base that does not cross the midline",
+     "Sharply demarcated plaques with thick adherent silvery scale over both elbows and knees"
+    ],
+    "correct": 3,
+    "exp": "Classic zoster is a unilateral, single-dermatome eruption that does not cross the midline, evolving from erythematous macules to grouped vesicles on an erythematous base, then pustules and crusts over 7-10 days.",
+    "why": [
+     "Flexural lichenified scaly patches describe atopic dermatitis rather than grouped vesicles in a dermatome.",
+     "Migratory urticarial wheals are a different reaction pattern entirely and are neither vesicular nor dermatomal.",
+     "Zoster respects the midline and is unilateral; bilateral lesions crossing the midline raise concern for dissemination or another diagnosis.",
+     "",
+     "Silvery-scaled extensor plaques describe psoriasis, not a vesicular dermatomal eruption."
+    ]
+   },
+   {
+    "q": "What is the most common complication of herpes zoster?",
+    "ch": [
+     "Secondary bacterial cellulitis requiring intravenous antibiotic therapy",
+     "Postherpetic neuralgia — dermatomal neuropathic pain lasting more than 90 days after rash onset",
+     "Chronic recurrent vesicle formation in the same dermatome every month",
+     "Disseminated visceral involvement in otherwise immunocompetent adults",
+     "Permanent motor weakness in the involved dermatome after the rash heals"
+    ],
+    "correct": 1,
+    "exp": "The most common complication is postherpetic neuralgia — dermatomal neuropathic pain persisting more than 90 days after rash onset — and the risk rises with older age and greater acute pain.",
+    "why": [
+     "Secondary bacterial infection is watched for and can occur, but it is not identified as the most common complication.",
+     "",
+     "Monthly recurrent vesicles in the same dermatome is not the described natural history of zoster.",
+     "Disseminated disease suggests severe immunocompromise and is a red flag, not the most common outcome in immunocompetent patients.",
+     "Motor weakness is not the complication the module names as most common; the dominant residual problem is neuropathic pain."
+    ]
+   },
+   {
+    "q": "When laboratory confirmation of zoster is needed, which test is most sensitive and specific?",
+    "ch": [
+     "Skin biopsy showing Munro microabscesses within the thickened epidermis",
+     "Bacterial wound culture of the crusted lesions after they have healed",
+     "PCR of a vesicle swab or scraping",
+     "Tzanck smear, which reliably distinguishes varicella-zoster from herpes simplex",
+     "Serum varicella IgG titer drawn during the acute vesicular eruption"
+    ],
+    "correct": 2,
+    "exp": "PCR of a vesicle swab or scraping is the most sensitive and specific test; direct fluorescent antibody is a faster alternative, and a Tzanck smear is nonspecific because it cannot separate VZV from HSV.",
+    "why": [
+     "Munro microabscesses are a psoriasis histology finding, not a feature used to confirm zoster.",
+     "Bacterial culture of healed crusts addresses secondary infection, not identification of the virus.",
+     "",
+     "A Tzanck smear shows multinucleated giant cells but cannot distinguish VZV from HSV, so it is nonspecific.",
+     "An IgG titer reflects prior exposure and does not confirm active reactivation in the dermatome being examined."
+    ]
+   },
+   {
+    "q": "What is the Hutchinson sign and what does it signify?",
+    "ch": [
+     "Vesicles on the tip or side of the nose, signalling nasociliary V1 involvement and ocular risk",
+     "A dermatomal rash that crosses the midline in an immunocompromised host",
+     "A vesicle in the external auditory canal predicting facial nerve palsy",
+     "Pinpoint bleeding when adherent scale is scraped from a plaque surface",
+     "New lesions appearing at sites of skin trauma or vigorous scratching"
+    ],
+    "correct": 0,
+    "exp": "Hutchinson sign is vesicles on the tip or side of the nose, indicating nasociliary (V1) involvement and risk of herpes zoster ophthalmicus, so urgent ophthalmology evaluation is required.",
+    "why": [
+     "",
+     "A rash crossing the midline suggests dissemination and immunocompromise; it is not the Hutchinson sign.",
+     "Ear canal vesicles with facial palsy describe Ramsay Hunt syndrome from geniculate ganglion involvement, a different named entity.",
+     "Pinpoint bleeding after scale removal is the Auspitz sign of psoriasis, not a zoster finding.",
+     "Lesions at sites of trauma describe the Koebner phenomenon, which belongs to psoriasis."
+    ]
+   },
+   {
+    "q": "How should the timing of antiviral therapy for zoster be decided?",
+    "ch": [
+     "Antivirals are indicated only for otherwise healthy patients younger than fifty years of age",
+     "Topical acyclovir cream applied directly to the rash fully replaces oral antiviral therapy",
+     "Antivirals should be withheld altogether once any vesicles have already appeared on the skin surface",
+     "Antivirals are reserved exclusively for postherpetic neuralgia after the skin lesions have healed",
+     "Start within 72 hours of rash onset, but treat later if lesions are still forming, in ophthalmic or facial disease, or in immunocompromise"
+    ],
+    "correct": 4,
+    "exp": "The 72-hour window is the mantra for starting valacyclovir, acyclovir, or famciclovir, but treat beyond that window if new lesions are still forming, if there is ophthalmic or facial involvement, or if the patient is immunocompromised.",
+    "why": [
+     "Age over 50 is a risk factor for zoster and for postherpetic neuralgia, so restricting antivirals to younger patients inverts the indication.",
+     "Systemic antivirals are the described therapy, with IV acyclovir for disseminated, sight-threatening, or severely immunocompromised disease.",
+     "The rash itself is the trigger to treat; the goal is to start antivirals early, ideally within 72 hours of rash onset.",
+     "Antivirals target acute viral replication; gabapentinoids and topical agents are what manage postherpetic neuralgia after healing.",
+     ""
+    ]
+   },
+   {
+    "q": "Which is first-line pharmacologic therapy for the neuropathic pain of postherpetic neuralgia?",
+    "ch": [
+     "Gabapentin or pregabalin, titrated slowly, as first-line neuropathic therapy",
+     "Systemic corticosteroids, which reliably prevent postherpetic neuralgia",
+     "Long-acting opioids as the initial and preferred single agent for the pain",
+     "Topical capsaicin applied directly onto open, actively weeping vesicles",
+     "Intravenous acyclovir continued for several months after lesions crust"
+    ],
+    "correct": 0,
+    "exp": "Gabapentin or pregabalin is first-line for neuropathic pain and postherpetic neuralgia; titrate slowly because sedation, dizziness, and peripheral edema are common, and reduce the dose in renal impairment.",
+    "why": [
+     "",
+     "Systemic corticosteroids are not routinely recommended and do not prevent postherpetic neuralgia.",
+     "The stepwise plan reaches for a gabapentinoid or a tricyclic first rather than reflexively using opioids.",
+     "Topical capsaicin and lidocaine patches are applied only to healed, intact skin, never to open vesicles.",
+     "IV acyclovir is reserved for disseminated or sight-threatening disease and severe immunocompromise, not chronic pain control."
+    ]
+   },
+   {
+    "q": "A 68-year-old has new right facial droop, painful vesicles in the right ear canal, and vertigo with hearing change. Which diagnosis fits?",
+    "ch": [
+     "Herpes zoster ophthalmicus from nasociliary branch involvement",
+     "Disseminated zoster with more than twenty lesions off the dermatome",
+     "Postherpetic neuralgia arising early in the course of the eruption",
+     "Ramsay Hunt syndrome — zoster of the geniculate ganglion",
+     "Bell palsy unrelated to varicella-zoster virus reactivation"
+    ],
+    "correct": 3,
+    "exp": "Ramsay Hunt syndrome is zoster of the geniculate ganglion: facial nerve palsy plus painful ear or oral vesicles plus hearing or vertigo symptoms, and it needs prompt antiviral and steroid treatment to preserve nerve function.",
+    "why": [
+     "Herpes zoster ophthalmicus involves the V1 nasociliary branch with eye findings and the Hutchinson sign, not facial palsy with ear vesicles.",
+     "Dissemination means more than twenty lesions outside the primary dermatome, which is not what a localized ear and facial nerve picture describes.",
+     "Postherpetic neuralgia is pain persisting more than 90 days after rash onset, so it cannot appear with a brand-new eruption.",
+     "",
+     "The ear vesicles tie the facial palsy directly to varicella-zoster reactivation, which distinguishes it from idiopathic Bell palsy."
+    ]
+   },
+   {
+    "q": "A hospitalized immunocompromised patient has widespread zoster lesions beyond the original dermatome. Which precautions are required?",
+    "ch": [
+     "Contact precautions alone with the rash left uncovered for air drying",
+     "Airborne plus contact precautions until all the lesions have crusted",
+     "Standard precautions only, since crusted zoster lesions are never infectious",
+     "No precautions are needed because zoster cannot be transmitted to others",
+     "Droplet precautions for 24 hours after the first antiviral dose is given"
+    ],
+    "correct": 1,
+    "exp": "Localized zoster in an immunocompetent patient with coverable lesions needs standard and contact precautions, but disseminated disease or an immunocompromised patient requires airborne plus contact precautions until the lesions crust.",
+    "why": [
+     "The rash should be kept covered, and disseminated disease in an immunocompromised host needs airborne precautions in addition to contact.",
+     "",
+     "Standard precautions alone apply to localized zoster with coverable lesions in an immunocompetent patient, not to disseminated disease.",
+     "Vesicle fluid is contagious and can cause chickenpox in non-immune contacts, so precautions are always needed.",
+     "Droplet precautions for a fixed 24 hours after dosing is not the described approach; the endpoint is crusting of lesions."
+    ]
+   },
+   {
+    "q": "How is zoster prevented, and in whom?",
+    "ch": [
+     "Vaccination replaces antiviral therapy during an active zoster outbreak",
+     "Zostavax, the live vaccine, is preferred and is safe in immunocompromise",
+     "Recombinant zoster vaccine (Shingrix) — non-live, two doses, for adults 50+ and immunocompromised adults 19+",
+     "A single dose of live attenuated vaccine given during the acute eruption",
+     "No vaccine is indicated once a patient has already had an episode of zoster"
+    ],
+    "correct": 2,
+    "exp": "The recombinant zoster vaccine (Shingrix) is non-live, given as a two-dose series, and recommended for adults age 50 and older and for immunocompromised adults 19 and older; it is preferred over the older live vaccine.",
+    "why": [
+     "The vaccine is not for acute treatment; antivirals are what treat an active eruption.",
+     "The older live vaccine is not preferred, and being live is exactly why it is unsuitable in immunocompromise.",
+     "",
+     "The recommended series is two doses of a non-live vaccine, and vaccination is prevention rather than acute treatment.",
+     "Vaccination is indicated even in patients with prior zoster, and the module says to recommend it after recovery."
+    ]
+   }
+  ]
+ },
+ "psoriasis": {
+  "condition": "Psoriasis",
+  "questions": [
+   {
+    "q": "Which statement best describes the pathophysiology of psoriasis?",
+    "ch": [
+     "Immune-mediated keratinocyte hyperproliferation driven by the IL-23/Th17 axis, with turnover accelerated to about 4 days",
+     "A defective epidermal barrier from filaggrin loss-of-function mutations with a Th2 immune skew",
+     "Circulating autoantibodies directed against the dermal-epidermal basement membrane proteins",
+     "Reactivation of a latent virus lying dormant within the cutaneous sensory ganglia",
+     "Blockage and bacterial colonization of the pilosebaceous follicular unit of the skin"
+    ],
+    "correct": 0,
+    "exp": "Psoriasis is a chronic immune-mediated inflammatory skin disease driven by the IL-23/Th17 axis (TNF-alpha, IL-17, IL-23), accelerating keratinocyte turnover to roughly 4 days versus the normal 28 and producing the classic thick silvery scale.",
+    "why": [
+     "",
+     "A filaggrin barrier defect with Th2 skew describes atopic dermatitis, not the IL-23/Th17-driven hyperproliferation of psoriasis.",
+     "Basement membrane autoantibodies describe an autoimmune blistering disease rather than accelerated keratinocyte turnover.",
+     "Latent virus reactivation in a sensory ganglion is the mechanism of herpes zoster, not psoriasis.",
+     "Follicular blockage and colonization is an acneiform mechanism and does not explain silvery-scaled plaques."
+    ]
+   },
+   {
+    "q": "Which lesion description and distribution is classic for chronic plaque psoriasis?",
+    "ch": [
+     "Annular patches with central clearing and a raised scaly advancing peripheral border",
+     "Ill-defined scaly erythematous patches in the antecubital and popliteal flexural folds",
+     "Grouped vesicles on an erythematous base confined within a single sensory dermatome",
+     "Sharply demarcated erythematous plaques with adherent silvery scale on extensor surfaces, scalp, sacrum, and umbilicus",
+     "Honey-colored crusted erosions clustered around the nose and mouth of a young child"
+    ],
+    "correct": 3,
+    "exp": "The diagnosis is largely clinical: sharply demarcated erythematous plaques with adherent silvery scale on extensor surfaces such as the elbows and knees, plus the scalp, sacrum, and umbilicus.",
+    "why": [
+     "Annular lesions with central clearing and an advancing scaly border are not the sharply demarcated silvery plaque the module describes.",
+     "Ill-defined flexural scaly patches are the atopic dermatitis pattern; psoriasis plaques are sharply demarcated and favor extensor surfaces.",
+     "Grouped vesicles in one dermatome describe herpes zoster, not a scaled plaque.",
+     "",
+     "Honey-colored crusts suggest a bacterial impetiginous process or superinfection rather than psoriatic plaques."
+    ]
+   },
+   {
+    "q": "What is the Auspitz sign?",
+    "ch": [
+     "Pinpoint bleeding when scale is scraped off a plaque",
+     "A silvery scale that lifts off intact without any bleeding at all",
+     "New plaques forming at sites of skin trauma or scratching",
+     "Pinpoint pustules erupting across more than 90% of the body",
+     "Salmon-colored oil-drop discoloration underneath the nail plate"
+    ],
+    "correct": 0,
+    "exp": "Auspitz sign is pinpoint bleeding when the scale is scraped off, reflecting dilated dermal capillaries beneath a thinned suprapapillary epidermis.",
+    "why": [
+     "",
+     "The point of the sign is that bleeding does occur, from the dilated capillaries under the thinned suprapapillary plate.",
+     "New lesions at sites of trauma is the Koebner phenomenon, a different psoriasis sign.",
+     "Widespread sterile pustules describe generalized pustular psoriasis, a dermatologic emergency, not the Auspitz sign.",
+     "The oil-drop or salmon patch is a nail finding examined alongside pitting and onycholysis, not the scrape response."
+    ]
+   },
+   {
+    "q": "A 14-year-old develops numerous drop-like scaly lesions about two weeks after a sore throat. Which variant is this, and what should be considered?",
+    "ch": [
+     "Pustular psoriasis following an abrupt withdrawal of systemic steroids",
+     "Plaque psoriasis vulgaris on extensor surfaces; begin phototherapy now",
+     "Guttate psoriasis after streptococcal infection; consider strep testing and treat the strep",
+     "Inverse psoriasis in flexural sites; apply a high-potency steroid there",
+     "Erythrodermic psoriasis; admit urgently for fluid and temperature support"
+    ],
+    "correct": 2,
+    "exp": "Guttate psoriasis is the post-streptococcal, drop-like variant typical of a child or young adult about two weeks after strep throat; the module says to consider strep testing in acute guttate flares and to treat the strep.",
+    "why": [
+     "Pustular psoriasis is widespread sterile pustules and characteristically follows abrupt steroid withdrawal, not strep throat.",
+     "Plaque psoriasis vulgaris is the chronic extensor-surface form, and phototherapy is for moderate-to-extensive disease rather than a post-strep flare.",
+     "",
+     "Inverse psoriasis is flexural with minimal scale, and high-potency steroids are exactly what is avoided in flexural sites.",
+     "Erythrodermic psoriasis is diffuse redness over more than 90% of the body surface with fever and fluid loss, not scattered drop-like lesions."
+    ]
+   },
+   {
+    "q": "Which group of drugs does the module list as psoriasis triggers?",
+    "ch": [
+     "Statins, metformin, aspirin, and inhaled bronchodilator therapy",
+     "Beta-blockers, lithium, antimalarials, steroid withdrawal, and interferon",
+     "Proton pump inhibitors, calcium supplements, and vitamin D analogs",
+     "Loop diuretics, insulin, warfarin, and inhaled corticosteroid sprays",
+     "Antihistamines, emollients, oral contraceptives, and folic acid tablets"
+    ],
+    "correct": 1,
+    "exp": "The trigger mnemonic BLAII covers beta-blockers, lithium, antimalarials, rapid steroid withdrawal, and interferon, alongside streptococcal infection, skin trauma (Koebner), stress, smoking, and alcohol.",
+    "why": [
+     "None of these agents appear among the listed drug triggers for psoriasis.",
+     "",
+     "Vitamin D analogs such as calcipotriene are treatments that slow keratinocyte proliferation, not triggers.",
+     "These are not the drug triggers named; abrupt withdrawal of steroids, not inhaled steroid use, is the steroid-related trigger.",
+     "Emollients and antihistamines are supportive skin measures, and none of these are listed triggers."
+    ]
+   },
+   {
+    "q": "A patient has two small plaques on the elbows and nothing else. What is first-line therapy?",
+    "ch": [
+     "Use narrowband UVB phototherapy as the initial step for two plaques",
+     "Prescribe oral prednisone and stop it abruptly once the plaques clear",
+     "Topical corticosteroids with a vitamin D analog such as calcipotriene",
+     "Start a TNF-alpha inhibitor immediately for any visible plaque disease",
+     "Begin methotrexate with folic acid before trying any topical therapy"
+    ],
+    "correct": 2,
+    "exp": "For limited plaque disease the ladder begins with topical corticosteroids, potency matched to the body site, combined with a vitamin D analog such as calcipotriene, which slows keratinocyte proliferation and is steroid-sparing.",
+    "why": [
+     "Phototherapy is for moderate-to-extensive disease not controlled by topicals, so it is not the first step here.",
+     "Abrupt steroid withdrawal risks rebound pustular or erythrodermic psoriasis, which the module warns against explicitly.",
+     "",
+     "Biologics are for moderate-to-severe plaque disease or psoriatic arthritis, not two small plaques.",
+     "Methotrexate is a systemic agent for moderate-to-severe disease and arthritis, and it sits above topicals on the ladder."
+    ]
+   },
+   {
+    "q": "Which counseling points belong with methotrexate for psoriasis?",
+    "ch": [
+     "It is safe in pregnancy and requires no laboratory monitoring at all",
+     "It works by blocking IL-17 and needs no hepatic or marrow monitoring",
+     "Alcohol is unrestricted, and folic acid should be avoided during therapy",
+     "It is applied topically to plaques and has no systemic toxicity risk",
+     "It is teratogenic and hepatotoxic, so monitor CBC and LFTs, avoid alcohol, and co-prescribe folic acid"
+    ],
+    "correct": 4,
+    "exp": "Methotrexate is a systemic agent for moderate-to-severe disease and psoriatic arthritis; it is teratogenic and contraindicated in pregnancy, hepatotoxic and myelosuppressive, so monitor CBC and LFTs, avoid alcohol, and co-prescribe folic acid.",
+    "why": [
+     "Methotrexate is teratogenic and contraindicated in pregnancy, and it requires CBC and LFT monitoring.",
+     "IL-17 blockade describes secukinumab and ixekizumab; methotrexate is hepatotoxic and myelosuppressive and does need monitoring.",
+     "Alcohol is to be avoided because of hepatotoxicity, and folic acid is co-prescribed rather than avoided.",
+     "Methotrexate is a systemic drug with real hepatic and marrow toxicity, not a topical agent.",
+     ""
+    ]
+   },
+   {
+    "q": "What must be done before starting a biologic such as a TNF-alpha inhibitor for psoriasis?",
+    "ch": [
+     "Order a PASI score and a skin biopsy before the first dose is given",
+     "Screen for latent tuberculosis with PPD or IGRA and for hepatitis B before starting",
+     "Give all live vaccines during therapy to maintain full immunity levels",
+     "Check serum calcium weekly, as biologics commonly cause hypercalcemia",
+     "No screening is needed because biologics do not raise infection risk"
+    ],
+    "correct": 1,
+    "exp": "Before a TNF-alpha inhibitor the pre-treatment checklist is screening for latent tuberculosis by PPD or IGRA and for hepatitis B, because infection risk increases on therapy; live vaccines are also avoided during treatment.",
+    "why": [
+     "PASI and BSA score severity and a biopsy is reserved for atypical cases; neither is the infection screening required before a biologic.",
+     "",
+     "Live vaccines are avoided during biologic therapy, not given.",
+     "Hypercalcemia is a risk of excessive vitamin D analog use, not a monitoring requirement for biologics.",
+     "Biologics increase infection risk, which is exactly why TB and hepatitis screening are mandatory first."
+    ]
+   },
+   {
+    "q": "Which caution is specific to IL-17 inhibitors such as secukinumab and ixekizumab?",
+    "ch": [
+     "They are safe to combine with all live vaccines during active therapy",
+     "They require no infection or tuberculosis screening before initiation",
+     "They frequently cause hypercalcemia and require weekly calcium levels",
+     "They are the preferred agent in a patient with active Crohn's disease",
+     "They can worsen or unmask inflammatory bowel disease and cause mucocutaneous candidiasis"
+    ],
+    "correct": 4,
+    "exp": "IL-17 inhibitors are highly effective against the Th17 pathway, but they can worsen or unmask inflammatory bowel disease and cause mucocutaneous candidiasis, and screening for infection and TB is still required.",
+    "why": [
+     "Live vaccines are avoided on targeted biologic therapy.",
+     "Screening for infection and TB is explicitly required before starting these agents.",
+     "Hypercalcemia relates to overuse of topical vitamin D analogs, not to IL-17 blockade.",
+     "Because IL-17 inhibitors can worsen or unmask inflammatory bowel disease, active Crohn's disease is a reason for caution rather than preference.",
+     ""
+    ]
+   },
+   {
+    "q": "A patient with plaque psoriasis abruptly stops systemic steroids and returns with widespread sterile pustules and systemic toxicity. What has happened?",
+    "ch": [
+     "Guttate psoriasis triggered by an unrecognized streptococcal infection",
+     "Psoriatic arthritis presenting with dactylitis and enthesitis at the joints",
+     "An allergic contact dermatitis reaction to a topical vitamin D analog",
+     "Generalized von Zumbusch pustular psoriasis, a dermatologic emergency",
+     "A Koebner response with new plaques appearing at sites of skin trauma"
+    ],
+    "correct": 3,
+    "exp": "Generalized (von Zumbusch) pustular psoriasis is widespread sterile pustules with systemic toxicity and can follow abrupt steroid withdrawal — a dermatologic emergency, which is why steroids are never stopped abruptly.",
+    "why": [
+     "Guttate psoriasis is drop-like lesions after strep throat, not sterile pustules following steroid withdrawal.",
+     "Psoriatic arthritis is a joint complication with dactylitis and enthesitis, not a pustular skin eruption.",
+     "Local irritation from a vitamin D analog is limited and does not produce widespread sterile pustules with systemic toxicity.",
+     "",
+     "The Koebner phenomenon produces new lesions at sites of trauma, not a generalized pustular flare after stopping steroids."
+    ]
+   }
+  ]
+ },
+ "eczema": {
+  "condition": "Atopic Dermatitis (Eczema)",
+  "questions": [
+   {
+    "q": "Which best describes the pathophysiology of atopic dermatitis?",
+    "ch": [
+     "A delayed hypersensitivity response confined to a single site of nickel contact",
+     "An IL-23/Th17-driven keratinocyte hyperproliferation producing thick silvery scale",
+     "Reactivation of a latent virus lying dormant in a dorsal root sensory ganglion",
+     "Autoantibodies against desmoglein producing flaccid intraepidermal blistering",
+     "Epidermal barrier dysfunction from filaggrin loss-of-function plus Th2 immune dysregulation with elevated IL-4 and IL-13"
+    ],
+    "correct": 4,
+    "exp": "Atopic dermatitis is a two-hit disease: epidermal barrier dysfunction, classically from filaggrin loss-of-function mutations, plus Th2 immune dysregulation with elevated IL-4, IL-13, and IgE, which together create the itch-inflammation loop.",
+    "why": [
+     "A single site of contact hypersensitivity describes allergic contact dermatitis, which is a coexisting condition to consider rather than the underlying mechanism.",
+     "The IL-23/Th17 axis with silvery scale is psoriasis; atopic dermatitis is a type 2 (Th2) disease with a barrier defect.",
+     "Latent virus reactivation in a sensory ganglion is the mechanism of herpes zoster, not atopic dermatitis.",
+     "Desmoglein autoantibodies describe an autoimmune blistering disease, not barrier dysfunction with Th2 skew.",
+     ""
+    ]
+   },
+   {
+    "q": "What does the module's phrase \"the itch that rashes\" mean?",
+    "ch": [
+     "The rash appears first and the itching develops only after lichenification",
+     "Itching is absent in atopic dermatitis and suggests an alternate diagnosis",
+     "Pruritus occurs only at night and never during the daytime hours",
+     "The itching comes from the topical steroids rather than the disease itself",
+     "Pruritus precedes the visible lesions — it is the itch that rashes"
+    ],
+    "correct": 4,
+    "exp": "The pearl is \"the itch that rashes, not the rash that itches\": pruritus precedes the visible lesions, and breaking the itch-scratch cycle is therefore the nursing priority.",
+    "why": [
+     "This reverses the pearl — the itch comes first and the visible lesions follow.",
+     "Atopic dermatitis is defined by chronic relapsing intense pruritus, so absent itch does not fit.",
+     "Itch disrupts sleep and is graded for sleep disruption, but it is not confined to nighttime.",
+     "Topical corticosteroids are the anti-inflammatory treatment for flares; the pruritus is the disease itself.",
+     ""
+    ]
+   },
+   {
+    "q": "How does the distribution of atopic dermatitis shift with age?",
+    "ch": [
+     "Flexural involvement in infants and extensor or facial disease in adults, the reverse pattern",
+     "Facial and extensor involvement in infants, flexural antecubital and popliteal lichenified plaques in children and adults",
+     "Disease confined strictly to the palms and soles at every age from infancy onward",
+     "Involvement restricted to the scalp, sacrum, and umbilicus throughout the lifespan",
+     "Always a single unilateral dermatome that stops abruptly at the body midline"
+    ],
+    "correct": 1,
+    "exp": "Morphology and distribution shift by age: infants show facial and extensor involvement, while children and adults show the classic flexural (antecubital and popliteal) lichenified plaques.",
+    "why": [
+     "This inverts the age pattern; the flexural pattern belongs to children and adults, and the facial/extensor pattern to infants.",
+     "",
+     "Atopic dermatitis is not confined to palms and soles at any age.",
+     "Scalp, sacrum, and umbilicus involvement is the psoriasis distribution, not the atopic pattern.",
+     "A unilateral dermatomal eruption respecting the midline describes herpes zoster, not atopic dermatitis."
+    ]
+   },
+   {
+    "q": "Which statement about confirming a diagnosis of atopic dermatitis is correct?",
+    "ch": [
+     "A skin biopsy demonstrating Munro microabscesses firmly establishes the diagnosis",
+     "There is no confirmatory lab test; diagnosis is clinical from chronic relapsing pruritus, age-typical morphology, and atopy history",
+     "A positive PCR result from a vesicle swab reliably confirms atopic dermatitis",
+     "An absolute peripheral eosinophil count above a fixed threshold is diagnostic",
+     "Total serum IgE is the confirmatory test and must be elevated before the diagnosis can be made"
+    ],
+    "correct": 1,
+    "exp": "Atopic dermatitis is primarily a clinical diagnosis based on chronic relapsing pruritus, age-specific morphology and distribution, and personal or family history of atopy (Hanifin-Rajka or UK Working Party criteria). There is no confirmatory lab test.",
+    "why": [
+     "Munro microabscesses are a psoriasis histology finding, and biopsy is not how atopic dermatitis is established.",
+     "",
+     "Vesicle PCR is used when superimposed viral infection such as eczema herpeticum is suspected, not to confirm the underlying eczema.",
+     "Eosinophils may be elevated but are nonspecific and are not a diagnostic threshold.",
+     "Total IgE may be elevated but it is nonspecific and explicitly not required for diagnosis."
+    ]
+   },
+   {
+    "q": "Which sequence is the soak-and-seal method taught to patients with eczema?",
+    "ch": [
+     "Avoid all bathing entirely and apply no moisturizer to the affected areas",
+     "Bathe, air dry completely for an hour, then apply an alcohol-based astringent",
+     "Bathe only when the skin is flaring and stop all emollients once it is clear",
+     "Lukewarm bath with a gentle fragrance-free cleanser, pat dry, then emollient within 3 minutes",
+     "Hot bath with a strongly fragranced antibacterial soap, then rub the skin dry"
+    ],
+    "correct": 3,
+    "exp": "Soak-and-seal is a lukewarm bath with a gentle fragrance-free cleanser, patting dry, then applying an emollient within 3 minutes to restore the barrier and reduce transepidermal water loss.",
+    "why": [
+     "Emollients are the foundational therapy and are applied liberally and frequently, so avoiding moisturizer is the opposite of the teaching.",
+     "The emollient must be sealed in within 3 minutes of bathing, and drying agents worsen the barrier defect.",
+     "Emollients are continued as maintenance even when the skin looks clear, because that is what prevents relapse.",
+     "",
+     "Baths should be lukewarm, not hot, with gentle fragrance-free cleansers, and the skin is patted rather than rubbed dry."
+    ]
+   },
+   {
+    "q": "What role do topical calcineurin inhibitors such as tacrolimus and pimecrolimus play?",
+    "ch": [
+     "Steroid-sparing agents for the face, eyelids, and folds that cause no skin atrophy",
+     "They cause more skin atrophy and striae than topical corticosteroids do",
+     "They are used only as a systemic oral therapy for refractory disease",
+     "They must be avoided on the face because they thin the periorbital skin",
+     "They are the highest-potency option reserved for thick lichenified plaques"
+    ],
+    "correct": 0,
+    "exp": "Tacrolimus and pimecrolimus are steroid-sparing options especially useful on the face, eyelids, and folds and for proactive twice-weekly maintenance; they cause transient burning but no skin atrophy, and the boxed malignancy warning is theoretical.",
+    "why": [
+     "",
+     "Atrophy, striae, and telangiectasia are corticosteroid effects; calcineurin inhibitors specifically cause no skin atrophy.",
+     "These are topical agents; the oral systemic options are JAK inhibitors such as upadacitinib and abrocitinib.",
+     "They are actually favored on the face and eyelids precisely because they do not thin the skin.",
+     "Potency matching is a corticosteroid concept; calcineurin inhibitors are the steroid-sparing alternative rather than the strongest option."
+    ]
+   },
+   {
+    "q": "Which statement about emollients in atopic dermatitis is correct?",
+    "ch": [
+     "Emollients are only used when a topical steroid is unavailable at home",
+     "Emollients should be applied before the steroid so the steroid seals in",
+     "Emollients are never stopped — maintenance even when the skin looks clear prevents relapse",
+     "Emollients should be reserved for severe disease only, not for mild cases",
+     "Stop emollients as soon as the skin looks clear to avoid dependence"
+    ],
+    "correct": 2,
+    "exp": "Emollients are the foundational, cornerstone maintenance therapy for all patients and all severities; the pearl is that they are never stopped, because continuing them even when the skin looks clear prevents relapse.",
+    "why": [
+     "Emollients are foundational therapy in their own right, used alongside topical steroids rather than as a substitute.",
+     "The taught technique is steroid to the active plaques first, then the emollient.",
+     "",
+     "Emollients are the cornerstone for all patients and all severities, including mild disease.",
+     "Stopping when clear is exactly what causes relapse; maintenance is continued through clear periods."
+    ]
+   },
+   {
+    "q": "A child with known atopic dermatitis develops rapidly spreading monomorphic punched-out vesicles with fever and malaise. What is the diagnosis and treatment?",
+    "ch": [
+     "Eczema herpeticum; give urgent systemic acyclovir and refer to dermatology",
+     "Allergic contact dermatitis; begin patch testing before any treatment",
+     "An ordinary exacerbation; add a sedating antihistamine at bedtime",
+     "Bacterial superinfection; start a short course of oral antibiotics only",
+     "A steroid-induced flare; increase the topical corticosteroid potency now"
+    ],
+    "correct": 0,
+    "exp": "Monomorphic punched-out vesicles with fever and malaise in a patient with eczema is eczema herpeticum, a dermatologic emergency requiring urgent systemic acyclovir and dermatology referral.",
+    "why": [
+     "",
+     "Patch testing is considered when a specific contact trigger is suspected, and it has no role in an acute febrile vesicular emergency.",
+     "Sedating antihistamines may aid sleep during itch but do nothing for a monomorphic vesicular eruption with fever.",
+     "Bacterial superinfection shows honey-colored crusts, pustules, and spreading erythema, and antibiotics do not treat a viral eruption.",
+     "Escalating steroid potency does not address a spreading viral infection and delays the acyclovir this child needs."
+    ]
+   },
+   {
+    "q": "Which statement about dupilumab for atopic dermatitis is correct?",
+    "ch": [
+     "It is a topical cream applied to the face and eyelid folds only",
+     "It carries boxed warnings for thrombosis, malignancy, and MACE",
+     "It is an oral JAK inhibitor requiring baseline lipids and TB screening",
+     "It blocks IL-4/IL-13 signaling through the IL-4 receptor alpha and needs no routine lab monitoring",
+     "It blocks TNF-alpha and requires monthly liver function testing"
+    ],
+    "correct": 3,
+    "exp": "Dupilumab is an anti-IL-4-receptor-alpha biologic for moderate-to-severe disease inadequately controlled by topicals; it blocks IL-4/IL-13 signaling, requires no routine lab monitoring, and can cause conjunctivitis and injection-site reactions.",
+    "why": [
+     "Dupilumab is an injected biologic; the topical steroid-sparing options for the face and folds are the calcineurin inhibitors.",
+     "Those boxed warnings belong to the JAK inhibitors, not to dupilumab.",
+     "Dupilumab is a biologic rather than an oral JAK inhibitor, and it does not need baseline lipids or TB screening.",
+     "",
+     "Dupilumab targets the IL-4 receptor alpha, not TNF-alpha, and no routine laboratory monitoring is required."
+    ]
+   },
+   {
+    "q": "What is required before starting an oral JAK inhibitor such as upadacitinib or abrocitinib?",
+    "ch": [
+     "Patch testing for contact allergens is the required baseline evaluation",
+     "A skin biopsy showing lichenification must document severity beforehand",
+     "Baseline and ongoing labs, TB and hepatitis screening, and a vaccination review",
+     "No baseline testing is needed since these agents are very well tolerated",
+     "Only a serum IgE level is required before the first oral dose is given"
+    ],
+    "correct": 2,
+    "exp": "Oral JAK inhibitors carry boxed warnings for serious infection, thrombosis, malignancy, and MACE, so baseline and ongoing labs, TB and hepatitis screening, lipids, and a vaccination review are needed before starting.",
+    "why": [
+     "Patch testing addresses a suspected contact trigger and is unrelated to JAK inhibitor safety screening.",
+     "Severity is scored with SCORAD, EASI, or POEM rather than documented by biopsy before systemic therapy.",
+     "",
+     "These agents carry boxed warnings, so baseline and ongoing monitoring is specifically required.",
+     "IgE is nonspecific and is not the pre-treatment evaluation for a systemic JAK inhibitor."
+    ]
+   }
+  ]
+ }
+}
