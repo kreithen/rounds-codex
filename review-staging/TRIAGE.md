@@ -1,5 +1,23 @@
 # Triage of the 94 blinded-review concerns
 
+> **STATUS 2026-07-29.** Tier 0 (4 items) is **live**. Tier 1 (9 teaching errors), the 20 genuine
+> length-cue items and the `dka-peds` rename are all **applied and verified but NOT pushed** —
+> three commits sitting on the app clone, awaiting a look before deploy. Tier 3 (module text) and
+> Tier 5 (stem wording) are untouched.
+>
+> Two corrections to this document's own first draft, both from measuring rather than reading:
+> - The length-cue sweep is **not mechanical**. These distractors are clinical fragments, not
+>   abbreviations, so lengthening one means writing medical text — and a padded distractor can
+>   become defensible.
+> - **"91 items" over-counts.** The ratio is measured in characters and assumes prose options, so
+>   it also flags term-list questions where every option is a short recognisable noun phrase.
+>   `cirrhosis` Q3 keys "Ultrasound" against ERCP/MRI/CT/PET at 3.33x, but nobody picks that on
+>   length. Only **20** have the exploitable clause-vs-fragment shape; those are fixed, the other
+>   71 deliberately left alone.
+>
+> Also resolved: all three "if the key is X this teaches a real error" flags were checked and
+> **none of the feared errors exists** (see below).
+
 Companion to `REVIEW-REPORT.md`, which records every concern verbatim. This is the decision
 document: what each one actually needs, ordered by whether a student is currently being taught
 something wrong.
