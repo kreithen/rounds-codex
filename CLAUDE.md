@@ -135,9 +135,12 @@ no backend. This file is context for future sessions — read it before starting
   `gthumbs/<id>-NN.jpg` set at 320 px q82 (12 MB). See `app-integration-queue.md`.
   New galleries use `base:''` with the folder in `file`, so `thumb` can reach `gthumbs/`.
   **The "Download Complete Gallery (PDF)" button is a stub app-wide** — it toasts, nothing more.
-- **Source artwork arrives at 1024x1536** (2:3 portrait). Ship it at native resolution, JPEG q88
-  (~440 kB/page); the old pipeline downscaled to 800x1200, which was below what a Pro Max screen
-  shows the viewer at. Ask production for 1536x2304 if the tool offers it.
+- **Source artwork ships at 1024x1536** (2:3 portrait), JPEG q88 (~440 kB/page). The old
+  pipeline downscaled to 800x1200, below what a Pro Max screen shows the viewer at.
+  **1024x1536 is the standard — decided 2026-07-29.** Production has started sending some pages
+  at 1536x2304; downscale those to 1024x1536 rather than mixing sizes or moving the standard.
+  A gallery must ship ONE size: `fix_page_logo.py` now errors on a mixed set and needs
+  `RC_PAGE_SIZE=1024x1536` to resample deliberately.
 - **Quizzes**: `QUIZZES={ "<id>": {condition, questions:[{q, ch:[...], correct, exp,
   pearl?, why?:[...], img?:[N]}]} }`. Having `QUIZZES[id]` auto-enables the "Take the Quiz"
   button in `detailHTML`. `img:[N]` links a question to gallery image N. `why[i]` shows on a

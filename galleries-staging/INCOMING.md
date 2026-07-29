@@ -14,25 +14,23 @@ gallery. Raw pages staged here as lossless PNG.
 | 5 | Endoscopic Findings | 1536×2304 | yes |
 | 6–10 | — | — | **missing** |
 
-### Blocking: the set is two different resolutions
-Pages 1–2 are 1024×1536; pages 3–5 are 1536×2304 — the larger size this project has been
-asking production for. A gallery must ship one size. Upscaling 1–2 invents detail; downscaling
-3–5 discards it. **Preferred fix: have production re-render pages 1 and 2 at 1536×2304** so the
-whole set ships at the better resolution. `fix_page_logo.py` now refuses a mixed set rather
-than silently resampling it (`RC_PAGE_SIZE=WxH` overrides if resampling is genuinely wanted).
+### Resolution: DECIDED — downscale to 1024×1536
+Pages 1–2 arrived at 1024×1536, pages 3–5 at 1536×2304. **Decision (2026-07-29): downscale 3–5
+to 1024×1536**, and 1024×1536 stays the standard for all new galleries. Build with
+`RC_PAGE_SIZE=1024x1536`, which is the deliberate-resample override; without it
+`fix_page_logo.py` now errors on a mixed set rather than silently resampling.
 
 ### Good news: the logo is correct
 Every page carries the canonical integrated mark. Production fixed what was wrong in the
 Hepatitis/Appendicitis batch — no `fix_page_logo.py` pass is needed for the mark itself.
 
 ### Production defects to report back
-- **Opaque black plate behind the logo on pages 2–5** (page 1 is clean), and a second one behind
-  the progress dots on page 3. The lockup is being composited on a solid black rectangle rather
-  than transparently, and it reads as a visible box against the header's blue gradient.
-  **Not auto-fixable**: an edge-detection pass to catch a dark plate was tried and rejected —
-  it erased the "IM" from "IMAGE 4 OF 10" and smeared three progress dots, because the header
-  gradient and the centred page number produce steps as sharp as a plate edge. This has to be
-  fixed in the render.
+- **NOT a defect — a false alarm worth recording.** These headers were first reported as having
+  an opaque black plate behind the logo. They do not. The "plate" was an artifact of inspecting
+  the header with a ×10 brightness stretch, which turns a 2–5 level difference out of 255 into
+  what looks like a hard-edged rectangle. At true brightness the headers are clean.
+  **Inspect dark UI at true brightness before calling a defect**; if a stretch is needed to see
+  something, the user cannot see it either.
 - **Progress dot strip wrong again**: 8 dots on pages 1–2, 10 on pages 3–5, where every page
   should show 10. Cosmetic, and the header text is correct on all five.
 - **Copyright year inconsistent**: page 1 says © 2025, pages 2–5 say © 2026.
