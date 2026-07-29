@@ -46,5 +46,33 @@ This container cannot reach ElevenLabs (egress is allowlist-only) and the Eleven
 needs an OAuth Client ID that must be registered in the ElevenLabs dashboard. So generation happens
 in the ElevenLabs web app: paste a script, pick the cloned voice, download the MP3.
 
-Audio files land at `assets/audio/<condition-id>.mp3` in the app repo and must be added to `CORE`
-in `sw.js` or they will be missing offline.
+Audio files land at `assets/audio/<condition-id>.mp3` in the app repo.
+
+**They must NOT be added to `CORE` in `sw.js`.** That was my first instinct and it is wrong: `CORE`
+is precached with `addAll()` at install, so listing the narration library would try to download
+every file before the app opens — hundreds of megabytes on a first visit. The existing fetch handler
+is already network-first with a cache write for assets, so each track is cached the first time it is
+played and is available offline after that. Nothing in the service worker needs to change.
+
+## App wiring
+
+`scripts/add_audio_player.js <index.html> --ids chf,acs,...` adds the Listen button and player.
+Re-run it with the full id list whenever a batch of narration ships; `RC_AUDIO` is generated, not
+hand-edited.
+
+It is **not applied to the live app yet**, on purpose — a Listen button with no audio behind it just
+toasts "Narration unavailable". Wire it when the first real MP3 exists.
+
+Verified behaviour (headless, zero pageerrors):
+
+| check | result |
+|---|---|
+| button appears only for ids in `RC_AUDIO` | present on `chf`, absent on `asthma` |
+| play / pause from the same button | label flips Listen ↔ Pause, `aria-pressed` tracks it |
+| **navigating to another condition** | **playback stops** — no narration bleeding across pages |
+| switching mode on the same condition | playback continues |
+| missing or unplayable file | toasts "Narration unavailable" |
+
+The bleed case is the one worth guarding: without it, Heart Failure keeps narrating while the user
+reads Asthma. `paint()` is the single choke point every navigation funnels through, and it already
+calls `closeViewer()` for the same reason, so the stop hook sits alongside that.
