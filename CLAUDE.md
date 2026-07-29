@@ -200,8 +200,25 @@ no backend. This file is context for future sessions — read it before starting
   page's "IMAGE TITLE" box (no text layer in the PDFs); pass them as a plain JSON array.
   `galleries-staging/` holds the 5 Cardiology gallery PDFs + 3 quiz JSONs + title defaults.
 - **Real/AI images** (`tools/`): `higgsfield-image-prompts.md` (231) → `build_image_manifest.py`
-  → `image-qa.html` (physician gate) → `incorporate_images.py`. Higgsfield API automation is
-  **ON HOLD** per the user.
+  → `image-qa.html` (physician gate) → `incorporate_images.py`.
+- **Higgsfield generation is LIVE via the MCP connector** (2026-07-29), not the HTTP API — the
+  proxy 403s `higgsfield.ai` and the result CDN, so **nothing generated can be fetched or seen
+  from this container**. Review happens in the user's Higgsfield gallery, or via
+  `tools/build_review_page.py`, which emits ONE standalone HTML the reviewer opens locally
+  (remote `<img>`, so it cannot be an Artifact — the Artifact CSP blocks external hosts).
+  - **`python3 tools/image_batch_plan.py --status | --next N | --record <id> <url>`** is the
+    resume point. It holds the three things that are easy to get wrong: what to skip, the
+    aspect ratio per modality, and what is already done (`tools/generated-image-urls.json`).
+  - Cost is **2 credits per image at either 1k or 2k**, so always ask for 2k.
+  - The server silently substitutes **`nano_banana_2`** for a `nano_banana_pro` request.
+  - **`isECG` in the manifest is incomplete** — `s1-0012` and `s1-0061` are ECGs it misses, so
+    `image_batch_plan.py` matches modality text as well. Fix in `build_image_manifest.py`.
+  - As of 2026-07-29: **24 of 198 eligible generated, 174 left (~348 credits).** 32 ECGs and the
+    genetics pedigree are excluded on purpose — keep the app's vector versions.
+- **Connector caveat:** a connector can read `connected: true` while `enabledInChat: false`, which
+  means authenticated but switched off for THAT conversation. Re-authorising the account does not
+  fix it; the per-chat toggle does. Check with `ListConnectors` before concluding anything is
+  broken. Higgsfield flipped off repeatedly in one session this way.
 - **Resident content** (`medcodex-resident-buildout` skill): `resident-staging/` has the 1308-entry
   master + wiring snippet.
 
