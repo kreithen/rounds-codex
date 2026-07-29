@@ -1,0 +1,978 @@
+{
+ "_note": "Endocrine/pulmonary quiz batch, 2026-07-29. Faithful transcription from the physician's PDFs. why[] appears only for Diabetes Insipidus, whose PDF supplied per-option rationales; img[] only for OSA, whose PDF gave a Reference Image per question. Adrenal Insufficiency is NOT here -- its PDF has the literal placeholder 'Incorrect option' for every distractor.",
+ "osa": {
+  "condition": "Obstructive Sleep Apnea",
+  "questions": [
+   {
+    "q": "Which finding distinguishes obstructive sleep apnea from central sleep apnea?",
+    "ch": [
+     "Absence of snoring",
+     "Continued respiratory effort against an obstructed airway",
+     "Bradycardia",
+     "Hyperventilation",
+     "Hemoptysis"
+    ],
+    "correct": 1,
+    "exp": "OSA maintains respiratory effort despite upper-airway collapse.",
+    "img": [
+     1
+    ]
+   },
+   {
+    "q": "Which screening tool considers a score >=3 high risk?",
+    "ch": [
+     "CHA2DS2-VASc",
+     "Wells",
+     "STOP-BANG",
+     "CURB-65",
+     "APGAR"
+    ],
+    "correct": 2,
+    "exp": "STOP-BANG is the standard screening questionnaire.",
+    "img": [
+     5
+    ]
+   },
+   {
+    "q": "Gold-standard diagnostic test?",
+    "ch": [
+     "Chest CT",
+     "MRI",
+     "In-lab polysomnography",
+     "Chest X-ray",
+     "ECG"
+    ],
+    "correct": 2,
+    "exp": "Polysomnography is the confirmatory test.",
+    "img": [
+     5
+    ]
+   },
+   {
+    "q": "Mild OSA AHI range?",
+    "ch": [
+     "<5",
+     "5-15",
+     "15-30",
+     ">30",
+     ">50"
+    ],
+    "correct": 1,
+    "exp": "An AHI of 5-15 defines mild OSA.",
+    "img": [
+     5
+    ]
+   },
+   {
+    "q": "First-line treatment for moderate-severe OSA?",
+    "ch": [
+     "Oxygen",
+     "Steroids",
+     "CPAP",
+     "Antibiotics",
+     "Surgery"
+    ],
+    "correct": 2,
+    "exp": "CPAP is first-line.",
+    "img": [
+     7
+    ]
+   },
+   {
+    "q": "HSAT is appropriate for:",
+    "ch": [
+     "All patients",
+     "COPD overlap",
+     "Heart failure",
+     "Uncomplicated adults with high pretest probability",
+     "Neuromuscular disease"
+    ],
+    "correct": 3,
+    "exp": "Home sleep apnea testing is reserved for uncomplicated high-probability adults.",
+    "img": [
+     5
+    ]
+   },
+   {
+    "q": "Which worsens OSA?",
+    "ch": [
+     "Vitamin D",
+     "Alcohol",
+     "Penicillin",
+     "Metformin",
+     "Acetaminophen"
+    ],
+    "correct": 1,
+    "exp": "Alcohol relaxes airway muscles.",
+    "img": [
+     4
+    ]
+   },
+   {
+    "q": "Supplemental oxygen alone is:",
+    "ch": [
+     "Curative",
+     "First-line",
+     "Not a substitute for PAP",
+     "Preferred over CPAP",
+     "Recommended for all"
+    ],
+    "correct": 2,
+    "exp": "Oxygen does not relieve airway obstruction.",
+    "img": [
+     7
+    ]
+   },
+   {
+    "q": "Selected CPAP-intolerant patients may benefit from:",
+    "ch": [
+     "Dialysis",
+     "Hypoglossal nerve stimulation",
+     "ECMO",
+     "Lobectomy",
+     "Bronchoscopy"
+    ],
+    "correct": 1,
+    "exp": "Hypoglossal nerve stimulation is an option in appropriate candidates.",
+    "img": [
+     8
+    ]
+   },
+   {
+    "q": "Untreated OSA is strongly associated with:",
+    "ch": [
+     "Appendicitis",
+     "AF recurrence",
+     "Peptic ulcer",
+     "Hyperthyroidism",
+     "Kidney stones"
+    ],
+    "correct": 1,
+    "exp": "OSA contributes to atrial fibrillation recurrence and cardiovascular risk.",
+    "img": [
+     10
+    ]
+   }
+  ]
+ },
+ "pleural-effusion": {
+  "condition": "Pleural Effusion",
+  "questions": [
+   {
+    "q": "Which diagnostic procedure is the cornerstone for evaluating a new unexplained pleural effusion?",
+    "ch": [
+     "Bronchoscopy",
+     "Diagnostic thoracentesis",
+     "MRI",
+     "Spirometry",
+     "Echocardiography"
+    ],
+    "correct": 1,
+    "exp": "Diagnostic thoracentesis allows pleural fluid analysis."
+   },
+   {
+    "q": "Light's criteria are used to:",
+    "ch": [
+     "Diagnose empyema",
+     "Classify transudates vs exudates",
+     "Detect pneumothorax",
+     "Measure pleural pressure",
+     "Assess oxygenation"
+    ],
+    "correct": 1,
+    "exp": "They distinguish exudates from transudates."
+   },
+   {
+    "q": "Preferred imaging guidance for thoracentesis?",
+    "ch": [
+     "MRI",
+     "PET",
+     "Ultrasound",
+     "Fluoroscopy",
+     "CT angiography"
+    ],
+    "correct": 2,
+    "exp": "Ultrasound improves safety."
+   },
+   {
+    "q": "Milky pleural fluid suggests:",
+    "ch": [
+     "Empyema",
+     "Hemothorax",
+     "Chylothorax",
+     "CHF",
+     "TB"
+    ],
+    "correct": 2,
+    "exp": "Chylothorax is classically milky."
+   },
+   {
+    "q": "Classic exam finding?",
+    "ch": [
+     "Hyperresonance",
+     "Wheezing",
+     "Dullness to percussion",
+     "Stridor",
+     "Crackles only"
+    ],
+    "correct": 2,
+    "exp": "Pleural fluid causes dullness to percussion."
+   },
+   {
+    "q": "Most common transudative cause?",
+    "ch": [
+     "Pneumonia",
+     "CHF",
+     "Malignancy",
+     "TB",
+     "Pancreatitis"
+    ],
+    "correct": 1,
+    "exp": "CHF is the classic transudative cause."
+   },
+   {
+    "q": "Empyema treatment?",
+    "ch": [
+     "Observation",
+     "Steroids",
+     "Antibiotics plus drainage",
+     "Bronchodilators",
+     "Anticoagulation"
+    ],
+    "correct": 2,
+    "exp": "Empyema requires drainage plus antibiotics."
+   },
+   {
+    "q": "Pleurodesis is mainly for:",
+    "ch": [
+     "Viral pleuritis",
+     "Recurrent malignant effusions",
+     "COPD",
+     "Asthma",
+     "Small CHF effusions"
+    ],
+    "correct": 1,
+    "exp": "Pleurodesis is used to reduce recurrence."
+   },
+   {
+    "q": "Bloody pleural fluid suggests:",
+    "ch": [
+     "Chylothorax",
+     "Hemothorax or malignancy",
+     "CHF",
+     "Cirrhosis",
+     "Nephrotic syndrome"
+    ],
+    "correct": 1,
+    "exp": "Hemorrhagic fluid raises concern for hemothorax or malignancy."
+   },
+   {
+    "q": "Overall treatment principle?",
+    "ch": [
+     "Drain all effusions",
+     "Treat the underlying cause",
+     "Surgery for all",
+     "Steroids",
+     "Antibiotics for all"
+    ],
+    "correct": 1,
+    "exp": "Management is etiology-directed."
+   }
+  ]
+ },
+ "hyperparathyroid": {
+  "condition": "Hyperparathyroidism",
+  "questions": [
+   {
+    "q": "Elevated calcium with inappropriately normal PTH suggests?",
+    "ch": [
+     "Primary hyperparathyroidism",
+     "Secondary hyperparathyroidism",
+     "Vitamin D deficiency",
+     "Hypoparathyroidism",
+     "FHH"
+    ],
+    "correct": 0,
+    "exp": "An inappropriately normal PTH in the face of hypercalcemia indicates primary hyperparathyroidism."
+   },
+   {
+    "q": "Most common cause of primary hyperparathyroidism?",
+    "ch": [
+     "Single adenoma",
+     "Carcinoma",
+     "MEN2A",
+     "CKD",
+     "Vitamin D deficiency"
+    ],
+    "correct": 0,
+    "exp": "About 85% are single adenomas."
+   },
+   {
+    "q": "Best test to exclude FHH?",
+    "ch": [
+     "24-hour urine Ca/Cr clearance ratio",
+     "TSH",
+     "MRI",
+     "ACTH",
+     "Troponin"
+    ],
+    "correct": 0,
+    "exp": "A low calcium/creatinine clearance ratio suggests familial hypocalciuric hypercalcemia."
+   },
+   {
+    "q": "Rapid bridge therapy for severe hypercalcemia?",
+    "ch": [
+     "Calcitonin",
+     "Cinacalcet",
+     "Vitamin D",
+     "Alendronate",
+     "Thiazide"
+    ],
+    "correct": 0,
+    "exp": "Calcitonin lowers calcium rapidly."
+   },
+   {
+    "q": "ECG change in hypercalcemia?",
+    "ch": [
+     "Short QT",
+     "Long QT",
+     "Delta wave",
+     "ST elevation",
+     "AF"
+    ],
+    "correct": 0,
+    "exp": "Hypercalcemia shortens the QT interval."
+   },
+   {
+    "q": "DXA site most affected?",
+    "ch": [
+     "Distal 1/3 radius",
+     "Hip",
+     "Lumbar spine",
+     "Calcaneus",
+     "Skull"
+    ],
+    "correct": 0,
+    "exp": "Cortical bone is preferentially affected."
+   },
+   {
+    "q": "First treatment in hypercalcemic crisis?",
+    "ch": [
+     "IV saline",
+     "Dialysis",
+     "Loop diuretic",
+     "Bisphosphonate",
+     "Cinacalcet"
+    ],
+    "correct": 0,
+    "exp": "Restore volume first."
+   },
+   {
+    "q": "Classic mnemonic excludes?",
+    "ch": [
+     "Hematuria",
+     "Stones",
+     "Bones",
+     "Groans",
+     "Psychiatric moans"
+    ],
+    "correct": 0,
+    "exp": "Hematuria is not part of the stones/bones/groans/moans mnemonic."
+   },
+   {
+    "q": "Post-op prolonged hypocalcemia syndrome?",
+    "ch": [
+     "Hungry bone syndrome",
+     "SIADH",
+     "TLS",
+     "Addison crisis",
+     "DKA"
+    ],
+    "correct": 0,
+    "exp": "Rapid bone remineralization causes hungry bone syndrome."
+   },
+   {
+    "q": "Medication to avoid?",
+    "ch": [
+     "Thiazides",
+     "Loops",
+     "Metformin",
+     "Insulin",
+     "ASA"
+    ],
+    "correct": 0,
+    "exp": "Thiazides raise serum calcium."
+   }
+  ]
+ },
+ "metabolic-syndrome": {
+  "condition": "Metabolic Syndrome",
+  "questions": [
+   {
+    "q": "Which combination is required to diagnose metabolic syndrome?",
+    "ch": [
+     "Elevated fasting glucose plus obesity",
+     "Central obesity only",
+     "Any 3 of the 5 diagnostic criteria",
+     "Hypertension plus dyslipidemia only",
+     "Diabetes mellitus alone"
+    ],
+    "correct": 2,
+    "exp": "Metabolic syndrome is diagnosed when any 3 of 5 criteria are present."
+   },
+   {
+    "q": "Which process is considered the central pathophysiologic driver of metabolic syndrome?",
+    "ch": [
+     "Autoimmune inflammation",
+     "Hyperthyroidism",
+     "Beta-cell destruction",
+     "Insulin resistance",
+     "Cortisol deficiency"
+    ],
+    "correct": 3,
+    "exp": "Insulin resistance drives the syndrome."
+   },
+   {
+    "q": "Which lipid abnormality is most characteristic?",
+    "ch": [
+     "Elevated HDL",
+     "Low LDL",
+     "Elevated triglycerides with low HDL",
+     "Elevated Lp(a)",
+     "Low triglycerides"
+    ],
+    "correct": 2,
+    "exp": "The classic dyslipidemia is high triglycerides with low HDL."
+   },
+   {
+    "q": "Which physical finding suggests insulin resistance?",
+    "ch": [
+     "Clubbing",
+     "Splinter hemorrhages",
+     "Xanthelasma",
+     "Acanthosis nigricans",
+     "Janeway lesions"
+    ],
+    "correct": 3,
+    "exp": "Acanthosis nigricans is strongly associated with insulin resistance."
+   },
+   {
+    "q": "Greatest lifestyle intervention?",
+    "ch": [
+     "Eliminate carbohydrates",
+     "Bed rest",
+     "High-protein diet only",
+     "5-10% body weight loss with exercise",
+     "Vitamins"
+    ],
+    "correct": 3,
+    "exp": "Modest weight loss improves all components."
+   },
+   {
+    "q": "Medication class with weight-loss and cardiometabolic benefit?",
+    "ch": [
+     "Sulfonylureas",
+     "DPP-4 inhibitors",
+     "TZDs",
+     "GLP-1 receptor agonists / dual GIP-GLP-1 agonists",
+     "Alpha-glucosidase inhibitors"
+    ],
+    "correct": 3,
+    "exp": "These agents improve weight and cardiometabolic risk."
+   },
+   {
+    "q": "Common associated disease?",
+    "ch": [
+     "Crohn disease",
+     "Multiple sclerosis",
+     "MASLD",
+     "Myasthenia gravis",
+     "Ulcerative colitis"
+    ],
+    "correct": 2,
+    "exp": "MASLD commonly accompanies metabolic syndrome."
+   },
+   {
+    "q": "Approximate increase in type 2 diabetes risk?",
+    "ch": [
+     "1.5x",
+     "2x",
+     "3x",
+     "5x",
+     "10x"
+    ],
+    "correct": 3,
+    "exp": "Risk is about fivefold."
+   },
+   {
+    "q": "Best marker of chronic glycemic control?",
+    "ch": [
+     "Random glucose",
+     "Insulin",
+     "OGTT",
+     "Hemoglobin A1c",
+     "Ketones"
+    ],
+    "correct": 3,
+    "exp": "HbA1c reflects the prior 2-3 months."
+   },
+   {
+    "q": "Best treatment philosophy?",
+    "ch": [
+     "Treat obesity only",
+     "Medicate everyone",
+     "Focus only on glucose",
+     "Treat each risk factor and emphasize lifestyle modification",
+     "Wait until diabetes develops"
+    ],
+    "correct": 3,
+    "exp": "Treat overall cardiovascular risk and each component."
+   }
+  ]
+ },
+ "hhs": {
+  "condition": "Hyperosmolar Hyperglycemic State (HHS)",
+  "questions": [
+   {
+    "q": "Which laboratory profile best defines HHS?",
+    "ch": [
+     "Glucose >600 mg/dL, effective osmolality >320 mOsm/kg, minimal ketones, pH >7.30",
+     "Glucose >250 mg/dL with marked ketones and pH <7.30",
+     "Glucose <200 mg/dL with normal osmolality",
+     "Isolated elevated ketones",
+     "Normal glucose with acidosis"
+    ],
+    "correct": 0,
+    "exp": "This combination is the classic diagnostic fingerprint of HHS."
+   },
+   {
+    "q": "What is the first treatment priority?",
+    "ch": [
+     "IV insulin",
+     "Sodium bicarbonate",
+     "Aggressive isotonic IV fluids",
+     "Dialysis",
+     "Dextrose"
+    ],
+    "correct": 2,
+    "exp": "Restore intravascular volume before insulin."
+   },
+   {
+    "q": "Mental status correlates most closely with:",
+    "ch": [
+     "Glucose",
+     "Potassium",
+     "Effective serum osmolality",
+     "HbA1c",
+     "Lactate"
+    ],
+    "correct": 2,
+    "exp": "Neurologic dysfunction tracks effective serum osmolality."
+   },
+   {
+    "q": "HHS most commonly occurs in:",
+    "ch": [
+     "Young type 1 DM",
+     "Older adults with type 2 DM",
+     "Pregnancy",
+     "Children",
+     "Athletes"
+    ],
+    "correct": 1,
+    "exp": "HHS typically affects older adults with type 2 diabetes."
+   },
+   {
+    "q": "Ketones in HHS are usually:",
+    "ch": [
+     "Markedly elevated",
+     "Moderate",
+     "Minimal/absent",
+     "Always positive",
+     "Severe"
+    ],
+    "correct": 2,
+    "exp": "Residual insulin suppresses ketogenesis."
+   },
+   {
+    "q": "Insulin should be delayed until:",
+    "ch": [
+     "CT complete",
+     "Potassium assessed/replaced if low",
+     "HbA1c returns",
+     "Fever resolves",
+     "Troponin normal"
+    ],
+    "correct": 1,
+    "exp": "Giving insulin before checking potassium risks worsening hypokalemia."
+   },
+   {
+    "q": "Major precipitant:",
+    "ch": [
+     "Migraine",
+     "Infection",
+     "Asthma",
+     "Fracture",
+     "Appendicitis"
+    ],
+    "correct": 1,
+    "exp": "Infection is the most common precipitant."
+   },
+   {
+    "q": "Typical fluid deficit:",
+    "ch": [
+     "1-2 L",
+     "3-4 L",
+     "5-10 L",
+     ">20 L",
+     "None"
+    ],
+    "correct": 2,
+    "exp": "HHS causes profound dehydration, typically 5-10 L."
+   },
+   {
+    "q": "Major complication of overly rapid correction:",
+    "ch": [
+     "Hyperkalemia",
+     "Cerebral edema",
+     "GI bleed",
+     "Hepatitis",
+     "DKA"
+    ],
+    "correct": 1,
+    "exp": "Avoid rapid osmolar shifts, which risk cerebral edema."
+   },
+   {
+    "q": "Before stopping IV insulin:",
+    "ch": [
+     "Normalize HbA1c",
+     "Give SC basal insulin with overlap",
+     "Wait 24 h",
+     "Stop abruptly",
+     "Give bicarbonate"
+    ],
+    "correct": 1,
+    "exp": "Overlap with subcutaneous basal insulin prevents rebound hyperglycemia."
+   }
+  ]
+ },
+ "siadh": {
+  "condition": "SIADH",
+  "questions": [
+   {
+    "q": "Typical SIADH laboratory pattern?",
+    "ch": [
+     "Hypernatremia, dilute urine",
+     "Euvolemic hypotonic hyponatremia with concentrated urine and high urine sodium",
+     "Hypervolemic hyponatremia",
+     "Hypovolemic dilute urine",
+     "Hypernatremia with high osmolality"
+    ],
+    "correct": 1,
+    "exp": "SIADH classically produces euvolemic hypotonic hyponatremia with concentrated urine and high urine sodium."
+   },
+   {
+    "q": "Classic ectopic ADH malignancy?",
+    "ch": [
+     "Renal cell carcinoma",
+     "Pancreatic adenocarcinoma",
+     "Small-cell lung cancer",
+     "Colon cancer",
+     "Melanoma"
+    ],
+    "correct": 2,
+    "exp": "Small-cell lung cancer is the classic malignant cause."
+   },
+   {
+    "q": "First-line therapy for chronic mild-to-moderate SIADH?",
+    "ch": [
+     "Dialysis",
+     "Hypertonic saline",
+     "Fluid restriction",
+     "D5W",
+     "Normal saline"
+    ],
+    "correct": 2,
+    "exp": "Fluid restriction is first-line."
+   },
+   {
+    "q": "Drugs blocking V2 receptors?",
+    "ch": [
+     "ACE inhibitors",
+     "Loop diuretics",
+     "Vaptans",
+     "Thiazides",
+     "Beta blockers"
+    ],
+    "correct": 2,
+    "exp": "Vaptans antagonize V2 receptors."
+   },
+   {
+    "q": "Initial treatment for seizures from SIADH?",
+    "ch": [
+     "Salt tablets",
+     "Fluid restriction",
+     "Controlled 3% saline",
+     "Demeclocycline",
+     "Normal saline"
+    ],
+    "correct": 2,
+    "exp": "Severe symptomatic hyponatremia requires hypertonic saline."
+   },
+   {
+    "q": "Best discriminator from cerebral salt wasting?",
+    "ch": [
+     "Urine sodium",
+     "Osmolality",
+     "Volume status",
+     "Glucose",
+     "Uric acid"
+    ],
+    "correct": 2,
+    "exp": "SIADH is euvolemic; cerebral salt wasting is hypovolemic."
+   },
+   {
+    "q": "Supportive laboratory clue?",
+    "ch": [
+     "High uric acid",
+     "High BUN",
+     "Low uric acid and low-normal BUN",
+     "High calcium",
+     "High creatinine"
+    ],
+    "correct": 2,
+    "exp": "Low uric acid and low-normal BUN support SIADH."
+   },
+   {
+    "q": "Major risk of rapid correction?",
+    "ch": [
+     "Cerebral edema",
+     "Osmotic demyelination syndrome",
+     "AKI",
+     "Pulmonary edema",
+     "Hyperkalemia"
+    ],
+    "correct": 1,
+    "exp": "Correcting faster than recommended risks osmotic demyelination."
+   },
+   {
+    "q": "Must exclude before diagnosing SIADH?",
+    "ch": [
+     "Diabetes",
+     "CKD",
+     "Hypovolemia, hypervolemia, hypothyroidism, adrenal insufficiency",
+     "COPD",
+     "Liver disease"
+    ],
+    "correct": 2,
+    "exp": "SIADH is a diagnosis of exclusion."
+   },
+   {
+    "q": "Definitive management?",
+    "ch": [
+     "Lifelong hypertonic saline",
+     "Permanent restriction",
+     "Treat/remove the underlying cause",
+     "Dialysis",
+     "IV fluids"
+    ],
+    "correct": 2,
+    "exp": "Treat the underlying trigger whenever possible."
+   }
+  ]
+ },
+ "di": {
+  "condition": "Diabetes Insipidus",
+  "questions": [
+   {
+    "q": "A 42-year-old man reports producing 7 liters of urine daily and drinking water constantly. Which mechanism best explains diabetes insipidus?",
+    "ch": [
+     "Excess insulin secretion",
+     "Impaired AVP (ADH) production or renal response causing inability to concentrate urine",
+     "Increased aldosterone secretion",
+     "Excess glucose causing osmotic diuresis",
+     "Increased atrial natriuretic peptide secretion"
+    ],
+    "correct": 1,
+    "exp": "Diabetes insipidus results from dysfunction of the AVP axis. Either AVP is deficient (central DI/AVP deficiency) or the kidney is resistant to AVP (nephrogenic DI/AVP resistance), so the collecting duct cannot concentrate urine.",
+    "why": [
+     "Insulin excess causes hypoglycemia, not hypotonic polyuria.",
+     "",
+     "Aldosterone primarily regulates sodium and potassium handling rather than aquaporin-2 insertion.",
+     "Glucose-mediated osmotic diuresis is a mimic that should be excluded and is not DI.",
+     "Increased ANP is not the defining mechanism of DI."
+    ]
+   },
+   {
+    "q": "Which laboratory profile is most consistent with untreated diabetes insipidus?",
+    "ch": [
+     "Low serum osmolality with concentrated urine",
+     "High urine osmolality with low serum sodium",
+     "High serum osmolality with urine osmolality below 300 mOsm/kg",
+     "Low serum sodium with concentrated urine",
+     "Urine specific gravity above 1.030"
+    ],
+    "correct": 2,
+    "exp": "Untreated DI classically produces a high serum osmolality with inappropriately dilute urine. Urine osmolality is often below 300 mOsm/kg, and urine specific gravity is typically below 1.005.",
+    "why": [
+     "DI causes dilute, not concentrated, urine.",
+     "Urine osmolality is low in DI and sodium may trend upward if water losses are not replaced.",
+     "",
+     "This pattern is more consistent with SIADH.",
+     "DI usually produces a very low urine specific gravity."
+    ]
+   },
+   {
+    "q": "After a water-deprivation test, urine osmolality rises by more than 50% following desmopressin. What is the most likely diagnosis?",
+    "ch": [
+     "Primary polydipsia",
+     "Nephrogenic diabetes insipidus",
+     "Central diabetes insipidus",
+     "SIADH",
+     "Hyperglycemic osmotic diuresis"
+    ],
+    "correct": 2,
+    "exp": "A marked rise in urine osmolality after desmopressin shows that the kidney can respond to AVP. This localizes the defect to inadequate AVP secretion, which is central DI.",
+    "why": [
+     "Primary polydipsia reflects excessive water intake rather than AVP deficiency.",
+     "Nephrogenic DI shows little or no concentrating response to desmopressin.",
+     "",
+     "SIADH causes concentrated urine before desmopressin.",
+     "Hyperglycemic osmotic diuresis is not classified by the desmopressin response."
+    ]
+   },
+   {
+    "q": "Which medication is first-line therapy for central diabetes insipidus?",
+    "ch": [
+     "Hydrochlorothiazide",
+     "Amiloride",
+     "Desmopressin",
+     "Indomethacin",
+     "Furosemide"
+    ],
+    "correct": 2,
+    "exp": "Desmopressin is a synthetic AVP analog and the first-line treatment for central DI. It may be given intranasally, orally, or parenterally and should be titrated to the lowest effective dose.",
+    "why": [
+     "Thiazides are mainly used for nephrogenic DI.",
+     "Amiloride is preferred for lithium-induced nephrogenic DI.",
+     "",
+     "NSAIDs are adjunctive therapy in nephrogenic DI.",
+     "Loop diuretics do not treat central DI."
+    ]
+   },
+   {
+    "q": "A patient taking lithium develops nephrogenic diabetes insipidus. Which medication is specifically preferred?",
+    "ch": [
+     "Acetazolamide",
+     "Amiloride",
+     "Spironolactone",
+     "Furosemide",
+     "Mannitol"
+    ],
+    "correct": 1,
+    "exp": "Amiloride blocks ENaC in collecting-duct cells, reducing lithium entry and helping restore concentrating ability. It is the preferred option for lithium-induced nephrogenic DI.",
+    "why": [
+     "Acetazolamide is not the preferred therapy for lithium-induced DI.",
+     "",
+     "Spironolactone does not specifically block lithium entry through ENaC.",
+     "Furosemide would worsen water loss.",
+     "Mannitol causes osmotic diuresis."
+    ]
+   },
+   {
+    "q": "Which MRI finding is classically associated with central diabetes insipidus?",
+    "ch": [
+     "Enlarged lateral ventricles",
+     "Empty sella",
+     "Loss of the posterior pituitary bright spot on T1-weighted imaging",
+     "Pineal calcification",
+     "Temporal-lobe edema"
+    ],
+    "correct": 2,
+    "exp": "Loss of the normal posterior pituitary bright spot on T1-weighted MRI is a classic clue to central DI and reflects loss of normal vasopressin storage in the posterior pituitary.",
+    "why": [
+     "Ventricular enlargement is not a classic DI finding.",
+     "Empty sella can occur in other pituitary disorders but is not the classic DI clue.",
+     "",
+     "Pineal calcification is unrelated.",
+     "Temporal-lobe edema is not characteristic of DI."
+    ]
+   },
+   {
+    "q": "Which modern laboratory approach is increasingly replacing the traditional water-deprivation test?",
+    "ch": [
+     "ACTH stimulation testing",
+     "BNP measurement",
+     "Stimulated copeptin testing",
+     "Plasma renin activity",
+     "Serum aldosterone measurement"
+    ],
+    "correct": 2,
+    "exp": "Copeptin is a stable surrogate for AVP. Measurement after hypertonic saline or arginine stimulation can distinguish central DI, nephrogenic DI, and primary polydipsia more reliably than the traditional water-deprivation test.",
+    "why": [
+     "ACTH testing evaluates adrenal function.",
+     "BNP evaluates cardiac stretch and heart failure.",
+     "",
+     "Renin testing assesses the renin-angiotensin system.",
+     "Aldosterone testing does not classify DI."
+    ]
+   },
+   {
+    "q": "A patient with diabetes insipidus becomes lethargic and develops seizures after losing access to drinking water. Which complication is most likely?",
+    "ch": [
+     "Severe hypoglycemia",
+     "Hyperkalemia",
+     "Severe hypernatremia",
+     "Hypercalcemia",
+     "Metabolic acidosis"
+    ],
+    "correct": 2,
+    "exp": "Unreplaced free-water loss in DI can cause severe hypernatremia. Neurologic manifestations include lethargy, confusion, seizures, and coma, making this a medical emergency.",
+    "why": [
+     "DI is unrelated to glucose metabolism.",
+     "Hyperkalemia is not the typical acute electrolyte complication.",
+     "",
+     "Hypercalcemia may cause nephrogenic DI but does not explain this acute presentation.",
+     "Severe hypernatremia, not acidosis, is the characteristic danger."
+    ]
+   },
+   {
+    "q": "A patient receiving desmopressin develops headache, nausea, confusion, and seizures. What is the most likely cause?",
+    "ch": [
+     "Hypernatremia from undertreatment",
+     "Hyponatremia from water intoxication",
+     "Hyperglycemia",
+     "Hypercalcemia",
+     "Intracranial hemorrhage"
+    ],
+    "correct": 1,
+    "exp": "Excess desmopressin combined with excess free-water intake can produce dilutional hyponatremia and water intoxication. Headache, nausea, confusion, and seizures are warning signs.",
+    "why": [
+     "Undertreated DI more often causes hypernatremia and ongoing polyuria.",
+     "",
+     "Hyperglycemia does not result directly from desmopressin.",
+     "Hypercalcemia does not explain this desmopressin-associated syndrome.",
+     "The symptom pattern in this context is most consistent with acute hyponatremia."
+    ]
+   },
+   {
+    "q": "Which statement best distinguishes diabetes insipidus from SIADH?",
+    "ch": [
+     "Both disorders produce concentrated urine",
+     "Both disorders cause persistent hypoglycemia",
+     "Diabetes insipidus produces dilute urine, whereas SIADH produces concentrated urine",
+     "SIADH typically causes polyuria with hypernatremia",
+     "Diabetes insipidus always causes hyponatremia"
+    ],
+    "correct": 2,
+    "exp": "DI and SIADH are mirror-image water-balance disorders. DI produces inappropriately dilute urine and tends toward hypernatremia, whereas SIADH produces inappropriately concentrated urine and tends toward hyponatremia.",
+    "why": [
+     "DI produces dilute urine.",
+     "Neither disorder is defined by hypoglycemia.",
+     "",
+     "SIADH usually causes water retention and hyponatremia rather than polyuria and hypernatremia.",
+     "Untreated DI tends toward hypernatremia, not hyponatremia."
+    ]
+   }
+  ]
+ }
+}

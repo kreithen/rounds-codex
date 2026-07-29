@@ -996,3 +996,30 @@ means the seven quizzes without rationales give less feedback on a miss than IBD
 
 **Still open:** per-option rationales for the seven non-IBD quizzes would make wrong answers
 teach rather than just retry. That is clinical writing, not transcription.
+
+### 15. Seven endocrine/pulmonary quizzes (`6ffdbee`) — 17 → 24 quizzes
+OSA, Pleural Effusion, Hyperparathyroidism, Diabetes Insipidus, Metabolic Syndrome, HHS, SIADH.
+All seven already had a condition page *and* a gallery. Batch in
+`quizzes-staging/endo-batch-2026-07-29.json`.
+
+**Diabetes Insipidus** carries per-option rationales (its PDF supplies them) and **OSA** carries
+a Reference Image per question, so all ten link to their gallery page. The other five are stems,
+options, answers and explanations only — as delivered.
+
+#### Adrenal Insufficiency was NOT shipped
+Its PDF has the literal string **"Incorrect option"** for options B–E on all ten questions. There
+is only ever one real choice, so the quiz cannot be got wrong. Writing four plausible distractors
+per question is clinical authoring, not transcription. **Waiting on the physician.**
+
+#### Answer-position skew across the whole bank
+Worth knowing before adding more. Correct-answer distribution over all 24 quizzes (240 questions):
+
+- **`hyperparathyroid` is all A — 10 of 10.** Transcribed correctly; the source really is all-A.
+  But it can be scored 10/10 by always tapping the first option. Flagged rather than reordered,
+  because option order is the physician's content. A reshuffle is mechanical if wanted.
+- Nine quizzes sit at 70–80% one letter, including `chf`, `dvt` and `aortic-dissection` which
+  shipped long before this batch — so this is a house pattern, not a new-batch problem.
+- **Option E is correct only 3 times in 240 questions.** A learner who notices never picks E.
+
+None of this is a bug and none of it is transcription error; it is quiz design, and it belongs
+to whoever writes the items. Recorded so the next batch can be built with it in mind.
