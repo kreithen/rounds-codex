@@ -1,0 +1,98 @@
+{
+ "epistaxis": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "bppv": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high", "concern": "Option E ('anterior canal, which is the rare form') is a factually TRUE statement about BPPV, just not an answer to 'which canal in the large majority.' Not defensible as the keyed answer, but a careless reader can be pulled to it; consider rewording E to something false."},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "otitis-externa": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high", "concern": "Option D (acute <4wk / subacute 4-12wk / chronic >=12wk) is a real duration scheme used for other otologic disease and reads plausibly; C is nonetheless uniquely correct because the stem asks for duration AND invasiveness and only C carries the necessarating/malignant axis. Acceptable, but D is the strongest distractor in the file."},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high", "concern": "Minor internal tension with the module, which warns that acidifying/drying drops (acetic acid, isopropyl alcohol) should NOT be instilled into an inflamed canal. The stem says 'resolving' OE, so post-swim acidifying prophylaxis is still the right teaching, but the stem would be cleaner as 'after full resolution' or 'once treatment is complete.'"}
+ },
+ "peritonsillar-abscess": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high", "concern": "Anatomically the internal carotid is posterolateral (not purely lateral) to the tonsil; 'just lateral' matches the module and standard exam teaching, so the keyed answer is fine, but a student who has learned 'posterolateral' should not be penalized."},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "menieres": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high", "concern": "Option B states only two of the three Barany/AAO-HNS criteria for DEFINITE Meniere disease — it omits fluctuating aural symptoms (tinnitus/fullness) in the affected ear, which the module itself lists. Still clearly the best option; consider adding the aural-symptom clause so the keyed answer is a complete criteria set."},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high", "concern": "Option D is much longer and more itemized than every distractor (it lists five separate safety measures). Length cue makes it pickable without knowledge; worth trimming toward the ~1.2x threshold used elsewhere in the bank."}
+ },
+ "herpes-zoster": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "psoriasis": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "eczema": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high", "concern": "Option A asserts TCIs 'cause no skin atrophy', which matches the module. Note the real-world caveat the option omits: tacrolimus/pimecrolimus carry a (theoretical) boxed malignancy warning — the module states this but the question never tests it. Not an error, just an incomplete picture if this is the only TCI item."},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ }
+}

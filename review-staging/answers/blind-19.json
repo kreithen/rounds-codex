@@ -1,0 +1,98 @@
+{
+ "pid": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "ectopic-pregnancy": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high", "concern": "Answer-length cue: D is 19 words vs ~11 for the distractors, and it is the only option that is not self-evidently disqualifying. Pickable without knowledge; consider trimming D or lengthening A/C."},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "ovarian-torsion": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high", "concern": "Wording nit only, not a keying error: 'Proceed to diagnostic laparoscopy' is right, but real-world phrasing is urgent gynecology consult for operative evaluation. A student who reads E as 'the ED orders laparoscopy' is still choosing correctly, so no change strictly required."},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "aub": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high", "concern": "Stem asks 'which statement is accurate' and option E is also a true statement about tranexamic acid — IV TXA (10 mg/kg) is an ACOG-endorsed option for acute hemodynamically significant AUB. C is the single best answer for this patient, but E is not strictly false. Suggest rewording E to attribute acute IV therapy to high-dose conjugated estrogen, or rewording the stem to 'best describes tranexamic acid for this patient'."},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "fibroids": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "menopause": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "kawasaki": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high", "concern": "Medicine is right; precision nit: the AHA definition is persistent/recrudescent fever beginning at least 36 hours after COMPLETION of the IVIG infusion. Option B says 'after the first dose', which is how the module words it, so it is internally consistent — no change needed unless the module is updated."},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ },
+ "epiglottitis": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ }
+}

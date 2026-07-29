@@ -1,0 +1,98 @@
+{
+ "otitis-media": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high", "concern": "Good discriminator, but note the reasoning must hold: high-dose amoxicillin beats altered-PBP penicillin-intermediate pneumococcus, NOT beta-lactamase (option E) — dose escalation does nothing against beta-lactamase. If the key is E this is a hard mechanistic error."},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ },
+ "intussusception": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "pyloric-stenosis": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "febrile-seizure": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "congenital-heart": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "failure-to-thrive": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high", "concern": "Minor internal tension in the module, not necessarily the item: whatItIs calls 'inadequate caloric intake' the most common bucket while medStudent says 'non-organic causes dominate.' Both point to D, so the item still works, but a student who reads 'inadequate intake' as an organic-neutral category could hesitate."},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ },
+ "acute-glaucoma": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "medium", "concern": "Mechanism label is imprecise: many OTC cold remedies mid-dilate the pupil by alpha-1 SYMPATHOMIMETIC action (pseudoephedrine, phenylephrine), not anticholinergic block; the antihistamine component is the anticholinergic one. A is still the only mydriatic option offered so the item is answerable, but the stem would be cleaner as 'antihistamine-containing cold remedy' or the option as 'mydriatic effect (anticholinergic or sympathomimetic).'"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high", "concern": "D (immediate LPI through a steamy cornea) is the trap and is correctly wrong — LPI needs a clear cornea. Confirm the key is E; if the key were D the item teaches a real clinical error."},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "open-glaucoma": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ }
+}

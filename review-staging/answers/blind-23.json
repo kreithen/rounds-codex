@@ -1,0 +1,62 @@
+{
+ "skin-cancer": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high", "concern": "Correct option is by far the longest and the only internally consistent one; the four distractors are all self-evidently absurd (both identical, fully reversed, neither metastasizes), so the item is answerable without knowing BCC/SCC biology. Medicine is correct."},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high", "concern": "Length/format cue: the keyed option is a long feature list while all four distractors describe entirely different entities (BCC dermoscopy, Gorlin, AK field, xeroderma pigmentosum). Content is accurate."},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "urticaria": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "sjs-ten": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high", "concern": "Allopurinol is right per EuroSCAR/RegiSCAR and per the module pearl, but TMP-SMX (option E) is what First Aid and most US-based teaching name as the classic/most common culprit. A well-read student can defensibly pick E; the stem is rescued only by the explicit 'does the module name' and 'worldwide' framing. Worth making the explanation cite the European registry data so the student who picks E learns why."},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high", "concern": "Minor: HLA-B*15:02 screening does not benefit this patient, who has already reacted and will avoid carbamazepine for life — its value is in screening relatives/future prescribing. The option's wording ('to prevent future cases') is defensible but a student may read it as screening this patient. Length cue also present (keyed option is much the longest)."}
+ },
+ "contact-dermatitis": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high", "concern": "Length cue only: keyed option is the longest and the sole non-absurd choice. Medicine (avoidance + barrier repair is definitive) is correct."}
+ },
+ "acne": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ }
+}

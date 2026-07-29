@@ -1,0 +1,98 @@
+{
+ "breast-cancer": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high", "concern": "Minor: the blanket 'no BP cuffs/venipuncture on that arm' rule is traditional nursing teaching and is what the module states, but modern breast-surgery data (e.g. AMAROS/ASBrS-era studies) have not shown ipsilateral BP cuffs or venipuncture to raise lymphedema risk. Answer is still the intended and only defensible option."},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "colorectal-cancer": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "prostate-cancer": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high", "concern": "Mechanistic error in the keyed option as written: an antiandrogen does NOT prevent the initial testosterone surge — the surge still occurs; the antiandrogen blocks the androgen receptor so the surge has no clinical (tumor-flare) effect. Option A says 'to prevent the initial testosterone flare', which teaches the wrong mechanism. Only a GnRH ANTAGONIST (degarelix/relugolix) prevents the surge. Recommend rewording to 'to block the clinical tumor flare caused by the initial testosterone surge'. A is still the only defensible choice."},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "pancreatic-cancer": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high", "concern": "The clause 'LMWH is preferred over warfarin' is true but now dated as a stand-alone statement — ASCO/ITAC/CHEST currently place apixaban/rivaroxaban/edoxaban alongside LMWH as first-line for cancer-associated VTE (LMWH still favored in luminal GI/unresected GI primaries, which does apply to pancreatic cancer). Consider adding 'or a DOAC' to the explanation so students are not taught DOACs are contraindicated."},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "ovarian-cancer": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "cervical-cancer": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "medium", "concern": "The age in the keyed option is wrong for the modality it names. Primary HPV testing is NOT endorsed from age 21 — ACS starts primary HPV at 25, USPSTF (2018) permits hrHPV-alone only from 30 (cytology alone 21-29). 'Primary HPV testing every 5 years, generally starting at age 21-25' conflates the start age for cytology with the start age for HPV testing. The module has the same conflation, so the fix belongs in both. D is still the only correct option (all others are clearly wrong), but the stated age range should read 25 (or 25-30)."},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "bladder-cancer": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "gastric-cancer": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high", "concern": "Distractor D ('Empiric perioperative FLOT chemotherapy with no further staging at all') names the actual guideline-standard treatment for resectable gastric cancer and is only made wrong by its trailing clause. A student who knows FLOT may pick D. Reword D to remove the correct-therapy bait (e.g. 'Proceed straight to gastrectomy with no further staging')."},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ }
+}

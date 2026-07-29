@@ -1,0 +1,98 @@
+{
+ "conjunctivitis": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high", "concern": "Option A is the only defensible choice, but it is the nursing-level answer ('urgent, notify provider'). At day 3-4 of life with purulent discharge this is gonococcal ophthalmia neonatorum until proven otherwise, and the specific pathway (Gram stain/culture/NAAT plus systemic ceftriaxone, corneal-perforation risk) is never taught anywhere in this quiz. Worth adding to the explanation."}
+ },
+ "retinal-detachment": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high", "concern": "Distractor B reads 'Endophthalmitis that mandates immediate intravitreal anti-VEGF therapy' — anti-VEGF is the wrong drug class entirely (endophthalmitis needs intravitreal antibiotics plus tap). It works as a wrong option, but the wrongness is in the treatment clause rather than the diagnosis, so a student who correctly suspects infection could be misled unless the feedback text explicitly corrects the drug class."}
+ },
+ "macular-degeneration": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "cataracts": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "uveitis": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "orbital-cellulitis": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "sinusitis": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high", "concern": "Two defensible options. IDSA lists doxycycline OR a respiratory fluoroquinolone (levofloxacin/moxifloxacin) for the penicillin-allergic adult, so D (moxifloxacin) is not clinically wrong — it is only second-line because of the boxed warnings. The item survives on the word 'preferred'; a student who picks D is reasoning correctly and should get feedback explaining the stewardship reason rather than being told moxifloxacin does not work."},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "strep-pharyngitis": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high", "concern": "Guideline answer is B (IDSA requires backup culture after a negative RADT in children), but this child has a McIsaac score of 4-5 and some clinicians would treat empirically, making C partly defensible in practice. Answer B stands; the explanation should say why empiric treatment is not the guideline-preferred route rather than calling it simply wrong."},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ }
+}
