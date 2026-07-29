@@ -929,11 +929,39 @@ where needed and encoded at q88; nothing else was touched.
 **Page format**: the new `<CONDITION>-MODULE-00N` footer with no IMAGE TITLE field is now the
 norm across all three sets. Titles come from the subtitle line under the main heading.
 
-**Content notes for the physician** (shipped as delivered — wording is a content call):
-- IBD page 9 subtitle reads "Crohnn's disease" — doubled n.
-- Diverticulitis page 5 labels the severity scale "(AMBROSMEITT)"; the classification is
-  **Ambrosetti**.
+**Two artwork typos, since corrected in `99d1dc6`** — see the technique note below.
+- IBD page 9 subtitle read "Crohnn's disease" — doubled n. **Fixed.**
+- Diverticulitis page 5 labelled the severity scale "(AMBROSMEITT)"; it is the **Ambrosetti**
+  classification. **Fixed.**
 - IBD progress dots show 8 on pages 1–2 and 10 on pages 3–10; several Bowel Obstruction pages
   show 11–12. Cosmetic only, and the header text is right everywhere — but see the standing
   note that the dot strip must never be used to order pages.
 - IBD page 1 is © 2025 where pages 2–10 are © 2026.
+
+
+### 13. Fixing typos baked into artwork (`99d1dc6`)
+Two text errors lived in the page images, not in any JSON, so they could only be fixed in
+pixels. **Both were repaired by moving the page's own glyphs — nothing was typeset.** That is
+the technique worth reusing: re-rendering text means matching the font, weight, colour, tracking
+and glow, and a near-miss on any of them is more conspicuous than the typo. Rearranging existing
+glyphs matches by construction.
+
+**"Crohnn's" → "Crohn's"** (IBD p9). The two `n` glyphs are adjacent and identical — mean
+difference of 10 levels, which is worth asserting before cutting. One advance (22px: glyph plus
+its letterspacing) was removed and the line re-composited around the gap, left half shifted
+right 11px and right half left 11px, so the centred line stays centred on 773.0.
+
+**"(AMBROSMEITT)" → "(AMBROSETTI)"** (Diverticulitis p5). The happy accident: `MEITT` contains
+exactly the letters `ETTI` needs. Drop the `M`, move the `I` behind the two `T`s, copying each
+block with its native trailing letterspacing. Word narrows by the M's 13px advance, re-centred
+on 887.
+
+**Do the surgery on the staged source PNG, before the downscale.** Editing the shipped
+1024×1536 JPEG would put the correction through a second lossy encode and work at two-thirds the
+pixels to align against. Then rebuild the affected thumbnail *and* the gallery PDF — both derive
+from the page and neither updates itself.
+
+Method that made this tractable: segment the line into glyph runs by column gaps, print each run
+with its width and advance, and map runs to letters before touching anything. The run list is
+also how you catch merged glyphs — `TT` came through as one 17px run, which would have wrecked a
+naive index-based edit.
