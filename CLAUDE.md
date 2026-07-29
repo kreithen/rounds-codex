@@ -268,6 +268,23 @@ no backend. This file is context for future sessions — read it before starting
 - `app-integration-queue.md` — running checklist of live-app changes (what's built/deployed).
 - `usmle-build-status.md`, `resident-staging/*.md`, `galleries-staging/README.md` — build state.
 
+## How to work here (set by the user 2026-07-29)
+1. **Auto-execute standard, low-risk actions.** Reading files, benign terminal commands, creating
+   code files, running tests, linting — just do them. No permission request.
+2. **Don't ask about minor edits, file creation, or routine multi-step execution.** Ask only before
+   something destructive or irreversible: deleting major files, overwriting production configs,
+   force-pushing, drop-table migrations. In this project that also means **anything that touches
+   the live app repo or a deploy**, and **any bulk generation that spends the user's credits** past
+   a validated pilot.
+3. **Work iteratively.** Make the change, verify it yourself, then present the finished result or
+   the next real checkpoint — not intermediate green lights.
+4. **On minor ambiguity, make the standard engineering assumption, say so in one line, and keep
+   going.** Don't block on a question that has an obvious default.
+
+The one thing this does NOT relax: **the physician is the medical gate.** Quiz answers, condition
+text and generated clinical imagery still get shown for Dr. Kreithen's review rather than shipped
+on my own judgement. Autonomy is about mechanics, not about medical correctness.
+
 ## Working branch
 Develop on **`claude/usmle-rounds-codex-module-bmpl61`**. Commit + push there; never push elsewhere
 without explicit permission. Do NOT open a PR unless the user asks.
