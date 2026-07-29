@@ -1,0 +1,98 @@
+{
+ "anxiety": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ },
+ "bipolar": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "schizophrenia": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ },
+ "withdrawal": {
+  "1": {"answer": "A", "confidence": "high", "concern": "Option A states the ACUTE pharmacologic action of ethanol (potentiates GABA-A, suppresses NMDA) while the stem asks for the NEUROADAPTATION. The actual chronic adaptation is the reverse at the receptor level — GABA-A downregulation plus NMDA upregulation — which is what the module's own medStudent bullet says ('chronic ethanol upregulates NMDA and downregulates GABA-A'). A is still the only defensible option (its second clause is correct and D/E are frankly wrong), but the two module sections conflict and a strong student could balk at the first clause. Suggest rewording A to 'chronic alcohol downregulates GABA-A and upregulates NMDA'."},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "delirium": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high", "concern": "Minor: the module explicitly teaches hypoactive as 'most common and most missed', so A is correct as written and against the module. Note only that several prospective hospital series report the MIXED subtype as most prevalent; 'most frequently missed' is uncontested for hypoactive. No change needed if the module stays the standard."},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "suicide": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ },
+ "preeclampsia": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "gdm": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ }
+}

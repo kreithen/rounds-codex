@@ -1,0 +1,98 @@
+{
+ "thrombocytopenia": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high", "concern": "Mild stem ambiguity: the question asks for the pattern that 'distinguishes DIC from ITP', and options B and D are accurate ITP patterns that equally serve that distinction. C is the only DIC-specific signature so it is the intended and defensible key, but the stem would be tighter as 'which pattern indicates DIC rather than ITP'."},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "sepsis": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "dic": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "cellulitis": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "hiv": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high", "concern": "Stem sequencing is slightly off the module's own algorithm — it reports a negative HIV-1/2 antibody DIFFERENTIATION assay, which is only run after a reactive Ag/Ab screen; at 12 days a 4th-gen screen would more plausibly be the first test. The intended teaching point (acute HIV can be antibody-negative, so order HIV RNA) is correct and A is unambiguous."},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ },
+ "influenza": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "covid": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "osteomyelitis": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ }
+}

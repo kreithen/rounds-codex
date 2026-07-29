@@ -1,0 +1,98 @@
+{
+ "fracture": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high", "concern": "Answer is right for this module (fracture module: 'pain is the earliest sign'), but the compartment-syndrome module in the same app teaches that the 6 P's 'are a trap'. A student meeting both items may read them as contradictory; consider adding 'and pain with passive stretch' framing rather than validating the 6 P's as an ordered sequence."},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "medium", "concern": "D is the only defensible option, but as written it teaches the wrong first move: in a casted limb the immediate bedside maneuver is to bivalve/split the cast and cut the padding to skin (the compartment module calls this the first maneuver, and compartment Q6 in this same review file requires it). D jumps straight from clinical suspicion to fasciotomy with no mention of releasing the external constriction. Recommend rewording D to 'remove/bivalve the cast and take the patient emergently for fasciotomy — it is a clinical diagnosis'."},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "osteoporosis": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "osteoarthritis": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "ra": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high", "concern": "Minor: the stem does not state that methotrexate was titrated to an adequate dose. Escalation is correct per ACR 2021 treat-to-target, but optimizing/maximizing the MTX dose (or adding csDMARDs as triple therapy) is a legitimate alternative step; adding 'despite an optimized methotrexate dose' to the stem would remove the ambiguity."},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "gout": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "compartment": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "E", "confidence": "high"}
+ },
+ "lupus": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "depression": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ }
+}

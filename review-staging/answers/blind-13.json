@@ -1,0 +1,98 @@
+{
+ "pph": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "labor": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "medium", "concern": "Misoprostol (option A) is the classic SAFE uterotonic in asthma plus hypertension — it is the textbook answer to 'which uterotonic can I still give this patient.' Option A is disqualified only by the appended clause 'given simultaneously with a high-dose oxytocin infusion' (a do-not-combine caveat that in the module belongs to cervical ripening in an UNDELIVERED patient, not to PPH treatment, where miso + oxytocin is routine). Two options are therefore defensible and the discriminator is a parenthetical, not the drug. Also note TXA is an antifibrinolytic adjunct, not a uterotonic, so it does not really answer 'continued hemorrhage despite oxytocin — which additional agent.' Suggest rewriting option A as plain 'Misoprostol' and making the correct answer that, or restating the stem as 'which adjunct reduces bleeding-related mortality.'"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "bronchiolitis": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "croup": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "pressure-injury": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high", "concern": "Minor terminology: 'never event' is NQF language; CMS lists Stage III/IV pressure ulcers as a Hospital-Acquired Condition (non-payment). Answer is correct and module-consistent, but a purist would want 'CMS hospital-acquired condition.'"}
+ },
+ "burns": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high", "concern": "Option B bundles two independent contraindications (age <2 months AND sulfa allergy), so it is correct but over-determined; option C ('full-thickness burn needing a topical antimicrobial') is a legitimate SSD indication and is fine as a distractor. No error, just note that the key is only unambiguous because B stacks two reasons."},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "wound-care": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "anaphylaxis": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ }
+}

@@ -1,0 +1,98 @@
+{
+ "shock": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high", "concern": "Option D is not parallel to the other choices (it is an assertion about neurogenic shock, not a category) and is factually false as written — neurogenic shock is a distributive/warm shock. Harmless as a distractor but stylistically off."},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "acute-abdomen": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "dka-peds": {
+  "1": {"answer": "E", "confidence": "high", "concern": "Not a quiz error, but the condition id is 'dka-peds' while the module and quiz are 'Pediatric Fever & Sepsis Workup'. A student searching for pediatric DKA will land on febrile-infant content, and there appears to be no pediatric DKA module."},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "hypernatremia": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "medium", "concern": "C is clearly the best option, but 750 mOsm/kg sits inside the module's own borderline band — the diagnosis bullet says '>600-800 = appropriate' while the medStudent bullet says '>700-800 = appropriate' and calls intermediate values partial DI/osmotic diuresis. A value of 850-900 would make the intended answer unambiguous."},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "D", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "hypokalemia": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "medium", "concern": "E is the intended and best answer (transcellular shift, so the deficit is not real), but the stem is imprecise: a patient who was HYPERkalemic before insulin most likely has a normal-to-HIGH total body potassium, not a normal one. Saying total-body K is 'normal' is only strictly true if the pre-treatment hyperkalemia was itself purely a shift. Reword as 'total-body potassium is not depleted' or change the stem to a beta-agonist-treated asthmatic."},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "hypocalcemia": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "D", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "C", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "hypercalcemia": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "hypomagnesemia": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ }
+}

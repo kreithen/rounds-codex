@@ -1,0 +1,98 @@
+{
+ "hypophosphatemia": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "A", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "metabolic-acidosis": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "A", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "metabolic-alkalosis": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "respiratory-acidosis": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high", "concern": "Numbers are internally inconsistent with the stem's own wording. PaCO2 80 (40 above normal) with a fully chronic 3-4 mEq/L per 10 mmHg rule predicts HCO3 36-40; the given HCO3 of 34 sits just below that, and the resulting pH is ~7.25, which is moderate rather than the 'only mildly reduced' the stem claims. B is still the best answer, but a strong student could argue acute-on-chronic. Cleaner fix: HCO3 38 with pH ~7.30."},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "respiratory-alkalosis": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high", "concern": "Two options (B and E) both endorse gradual correction and differ only in the stated mechanism. B is correct — rebound cerebral vasodilation and raised ICP is the hazard of correcting chronic HYPOcapnia. E's 'post-hypercapnic metabolic alkalosis and seizures' belongs to chronic HYPERcapnia and is wrong here. Defensible as written, but the discriminator is subtle and E will draw students who answer on the 'go slowly' cue alone."},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "hypovolemia": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "A", "confidence": "high"}
+ },
+ "fluid-overload": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high", "concern": "Minor conceptual point inherited from the module: JVD is a sign of raised RIGHT atrial/central venous pressure, so 'S3 + JVD + crackles' is really the triad of biventricular/decompensated heart failure rather than of isolated LEFT-sided congestion. A is unambiguously the intended and only workable answer; the label 'left-sided' is what is loose."},
+  "3": {"answer": "C", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "B", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "acetaminophen-od": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "E", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ }
+}

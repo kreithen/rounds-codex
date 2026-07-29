@@ -1,0 +1,98 @@
+{
+ "icp": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "sci": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "D", "confidence": "high"},
+  "3": {"answer": "E", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "A", "confidence": "high"},
+  "7": {"answer": "B", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "B", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "migraine": {
+  "1": {"answer": "C", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "iron-anemia": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "B", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "C", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "b12-anemia": {
+  "1": {"answer": "B", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "A", "confidence": "high"},
+  "4": {"answer": "B", "confidence": "high", "concern": "Option C ('MMA elevated with homocysteine normal and a low LDH') is partially defensible — an isolated MMA rise IS the B12-specific marker and does occur in early/mild B12 deficiency. C is only excluded by the tacked-on 'low LDH' (megaloblastic anemia raises LDH). B remains the single best answer and matches the module, but a strong student could argue C; consider rewording C so the MMA/homocysteine pattern itself is wrong rather than relying on the LDH clause."},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "E", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "C", "confidence": "high"},
+  "10": {"answer": "D", "confidence": "high"}
+ },
+ "sickle-cell": {
+  "1": {"answer": "A", "confidence": "high"},
+  "2": {"answer": "E", "confidence": "high"},
+  "3": {"answer": "D", "confidence": "high"},
+  "4": {"answer": "C", "confidence": "high"},
+  "5": {"answer": "C", "confidence": "high"},
+  "6": {"answer": "B", "confidence": "high"},
+  "7": {"answer": "D", "confidence": "high"},
+  "8": {"answer": "E", "confidence": "high"},
+  "9": {"answer": "A", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ },
+ "leukemia": {
+  "1": {"answer": "E", "confidence": "high"},
+  "2": {"answer": "A", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high"},
+  "4": {"answer": "E", "confidence": "high"},
+  "5": {"answer": "B", "confidence": "high", "concern": "Minor: the stem gives only t(9;22) plus a high WBC, which fits CML (TKI monotherapy first-line) but also Ph-positive ALL, where first-line is a TKI PLUS multiagent chemotherapy rather than a TKI alone. B is still the best answer as written; adding a lineage cue ('mature myeloid cells/basophilia' or 'chronic phase') would remove the residual ambiguity."},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "D", "confidence": "high"},
+  "9": {"answer": "D", "confidence": "high"},
+  "10": {"answer": "C", "confidence": "high"}
+ },
+ "lymphoma": {
+  "1": {"answer": "D", "confidence": "high"},
+  "2": {"answer": "C", "confidence": "high"},
+  "3": {"answer": "B", "confidence": "high", "concern": "Wording is factually loose (inherited from the module): FNA does not 'destroy' nodal architecture, it fails to sample/preserve it — the node is left intact. Option E is also partly true in practice (FNA cellularity is often inadequate for a full IHC panel), though flow cytometry can be run on aspirates. B is clearly the intended and best answer; suggest 'does not preserve the nodal architecture needed for classification'."},
+  "4": {"answer": "D", "confidence": "high"},
+  "5": {"answer": "E", "confidence": "high"},
+  "6": {"answer": "C", "confidence": "high"},
+  "7": {"answer": "A", "confidence": "high"},
+  "8": {"answer": "A", "confidence": "high"},
+  "9": {"answer": "E", "confidence": "high"},
+  "10": {"answer": "B", "confidence": "high"}
+ }
+}
