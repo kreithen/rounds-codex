@@ -1,9 +1,21 @@
 # Triage of the 94 blinded-review concerns
 
-> **STATUS 2026-07-29.** Tier 0 (4 items) is **live**. Tier 1 (9 teaching errors), the 20 genuine
-> length-cue items and the `dka-peds` rename are all **applied and verified but NOT pushed** —
-> three commits sitting on the app clone, awaiting a look before deploy. Tier 3 (module text) and
-> Tier 5 (stem wording) are untouched.
+> **STATUS 2026-07-29 — CLOSED. Every tier is applied, verified and live.**
+>
+> Tier 0 (4), Tier 1 (9 teaching errors), Tier 2 (38 length-cue items across two passes), Tier 3
+> (5 module-text edits), Tier 4 (the `dka-peds` rename) and Tier 5 (31 items: qualifiers, boundary
+> numbers, true distractors, empty items, explanation rewrites). **The bank audit now reports 0
+> failures and 0 warnings** — the first fully clean run, the last warning having been a duplicate
+> stem shared by `bowel-obstruction` Q3 and `diverticulitis` Q5 that keyed the same answer.
+>
+> Three items were examined and deliberately left alone, because the reviewers' own conclusions were
+> that they are fine: `otitis-externa` Q3 ("acceptable"), `myasthenia` Q9 ("the item stands"), and
+> `sinusitis` Q7, whose explanation already contained the stewardship reasoning requested.
+>
+> Four defects were found by my own assertions rather than by any reviewer: `diverticulitis` Q7's
+> length cue, `appendicitis` Q7 having **two correct answers** (open appendectomy is also definitive
+> treatment), `lung-cancer` Q6 keying a bare "SIADH" at 0.17x the mean distractor, and `cirrhosis`
+> Q1's stem containing its own answer. Checks for the last three are now permanent.
 >
 > Two corrections to this document's own first draft, both from measuring rather than reading:
 > - The length-cue sweep is **not mechanical**. These distractors are clinical fragments, not
