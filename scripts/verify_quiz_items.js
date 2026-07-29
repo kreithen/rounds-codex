@@ -49,13 +49,17 @@ const targets = SPECS.map(s => {
       for (let n = 0; n < qs.length; n++) {
         const q = qs[n];
         const choices = [...document.querySelectorAll('.choice')];
-        const pick = choices.find(c => (c.getAttribute('onclick') || '') === 'qPick(' + q.correct + ')');
-        if (!pick) return {err: 'no clickable option at q' + (n + 1)};
+        // `correct` is an ARRAY on select-all items (cardiomyopathy uses them). Clicking one index
+        // would leave the answer incomplete and the item would look broken, so click every index.
+        const want = Array.isArray(q.correct) ? q.correct : [q.correct];
+        const picks = want.map(i => choices.find(c => (c.getAttribute('onclick') || '') === 'qPick(' + i + ')'));
+        if (picks.some(x => !x)) return {err: 'no clickable option at q' + (n + 1)};
+        const pick = {click: () => picks.forEach(x => x.click())};
         if (n + 1 === qn) {
           target = {
             stem: (document.querySelector('.qstem') || {}).innerText || q.q,
             options: choices.map(c => c.innerText.replace(/\n/g, ' ').trim()),
-            keyed: 'ABCDE'[q.correct],
+            keyed: want.map(i => 'ABCDE'[i]).join(''),
           };
         }
         pick.click(); await sleep(60);
@@ -79,10 +83,12 @@ const targets = SPECS.map(s => {
       wrong = await p.evaluate(async ([cid, qn]) => {
         const sleep = ms => new Promise(res => setTimeout(res, ms));
         const q = QUIZZES[cid].questions[qn - 1];
+        if (Array.isArray(q.correct)) return {skipped: 'select-all item: the engine shows why[0] as one generic message'};
         if (!q.why) return {skipped: 'no why[] on this item'};
         for (let n = 0; n < qn - 1; n++) {
           const c = QUIZZES[cid].questions[n];
-          document.querySelector('.choice[onclick="qPick(' + c.correct + ')"]').click();
+          for (const i of (Array.isArray(c.correct) ? c.correct : [c.correct]))
+            document.querySelector('.choice[onclick="qPick(' + i + ')"]').click();
           await sleep(50);
           const s = document.querySelector('button.submit'); if (s) { s.click(); await sleep(180); }
           const nx = [...document.querySelectorAll('button')].find(x => /next|continue/i.test(x.textContent || ''));
