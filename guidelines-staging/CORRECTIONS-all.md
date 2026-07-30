@@ -1,17 +1,17 @@
 # Clinical guideline citation checks — for sign-off
 
-350 entries checked. Grouped worst-first by what a reader would take away if the
+370 entries checked. Grouped worst-first by what a reader would take away if the
 entry shipped as submitted. Every entry below is live in the app in its CORRECTED form; this
 document records what was changed and why, so any of it can be reverted.
 
 | verdict | entries |
 |---|---|
 | Findings stated backwards — a reader would learn the opposite of the published result | 25 |
-| Cited study could not be found | 16 |
+| Cited study could not be found | 17 |
 | Evidence level inflated — case report presented as a trial | 2 |
-| Citation not independently verified | 79 |
-| Wrong study or replaced | 22 |
-| Corrected — dates, journals, numbers, strength of claim | 194 |
+| Citation not independently verified | 93 |
+| Wrong study or replaced | 23 |
+| Corrected — dates, journals, numbers, strength of claim | 198 |
 | Matched — no correction needed | 12 |
 
 ---
@@ -267,6 +267,12 @@ The submitted citation could not be verified. The 2025 list describes a 'clinica
 **NOT FOUND as described — no LVA-PLD trial, real series substituted**
 
 The submitted citation could not be verified. It describes an 'LVA-PLD Trial', a multicentre trial in BMJ Open establishing operative quality metrics such as minimum micro-anastomotic stitch counts paired with early automated pneumatic drainage, and claims it 'standardizes supermicrosurgical quality benchmarks and postoperative compression timing within lymphedema clinical management guidelines'. No trial of that name, no such BMJ Open publication, and no stitch-count quality benchmark were found. Substituted with the documented LVA literature: a 100-patient/132-anastomosis series with 24-month follow-up, a 45-patient cohort, lower extremity lymphedema index reductions of roughly 6-8% at 1 to 6 months, standard postoperative compression with class III garments or custom stockings, and reduction in lymphedema-associated pain. The entry states explicitly that neither the stitch-count metric nor a pneumatic-drainage benefit is established, because both would otherwise be quoted as standards. Expectation-setting added, since single-digit index reductions are far from what patients typically anticipate.
+
+### Radiology 2025 #10 — Multiparametric MRI for Non-Invasive Staging of Metabolic Liver Disease
+
+**citation not independently verified — the named journal does not exist**
+
+Multiparametric liver MRI including corrected T1, fat fraction and iron quantification is real, commercially available and under active validation in metabolic liver disease, so the substance is credible. TWO PROBLEMS WITH THE CITATION. The submission names the journal as 'Gastroenterology & Radiology', which is not a publication — Gastroenterology and Radiology are two separate journals, and the conflation suggests the citation was not checked. And I could not verify the prospective validation trial or the claim that AASLD guidelines have adopted this as a non-invasive surrogate biomarker for monitoring MASH treatment response. ADDED: the performance limitation that matters clinically — non-invasive markers discriminate well at the extremes of fibrosis and poorly in the intermediate range where decisions are hardest — and the point that the strongest case is serial monitoring rather than initial diagnosis, which is a narrower claim than 'replaces painful, invasive needle liver biopsies'.
 
 ---
 
@@ -762,6 +768,90 @@ The field is real: genomic classifier and luminal/basal subtype analyses of rand
 
 The premise is well founded: olanzapine is established for chemotherapy-induced nausea and vomiting and is recommended in ASCO and MASCC/ESMO antiemetic guidance in that setting, so extending it to radiotherapy-induced nausea is a natural and plausible trial. I did not verify the specific phase III trial, its results, or that the guidelines have been updated to cover radiotherapy specifically — the submitted link is an ASCO press release listing noteworthy studies rather than the abstract or paper, so the effect size could not be checked. Rewritten to describe the intervention and the practical dosing point, which is the part a clinician needs and the submission omits: low doses of 2.5 to 5 mg are used to limit sedation, and additive sedation with opioids or benzodiazepines is the common problem.
 
+### Radiation Oncology 2026 #4 — ARCHERY: AI-Automated Radiotherapy Contouring and Planning for Global Access
+
+**citation not independently verified — the governance claim is the concern**
+
+The MD Anderson Radiotherapy Planning Assistant is a real system and automated planning for low- and middle-income settings is a real programme of work, so the direction is credible. I did not verify the ARCHERY trial's publication, its stated enrolment of over 1,000 patients, or the claim that planning time falls to about an hour in over 95% of cervical cases. THE MORE IMPORTANT UNVERIFIED CLAIM is that this 'establishes the first global consensus framework (backed by ASTRO and ESTRO) validating AI-generated radiation contouring and plan generation for clinical use without mandatory manual step-by-step drafting'. Removing mandatory manual drafting is a governance change with direct patient-safety implications, and no such consensus document was found — so it is not asserted. Replaced with the question that actually governs safe adoption: the rate and detectability of unacceptable plans, and the fact that verifying someone else's plan is a different skill from making one.
+
+### Radiation Oncology 2026 #5 — Adjuvant Cemiplimab After Surgery and Radiotherapy in High-Risk Cutaneous Squamous Cell Carcinoma (C-POST)
+
+**citation not independently verified**
+
+C-POST is a real trial name and adjuvant cemiplimab in high-risk cutaneous SCC is a genuine and closely watched question. I did not verify the primary results, the effect size, or the publication, so no outcome is asserted — the submission's 'solves a long-standing challenge of frequent locoregional recurrences' presumes a result I could not confirm. The claim that joint ASTRO-ASCO skin cancer practice guidelines now recommend post-radiation PD-1 inhibition is also unverified. ADDED, because the submission omits it and it is decisive in this population: organ transplant recipients are over-represented among patients with aggressive cutaneous SCC and are at risk of graft rejection on checkpoint blockade, and immune-related toxicity in the elderly is a real counterweight to recurrence risk.
+
+### Radiation Oncology 2026 #6 — Actinium-225 PSMA Targeted Alpha Therapy After Lutetium-177 Failure in mCRPC
+
+**citation not independently verified — evidence level and guideline claim overstated**
+
+The radiobiology is accurately described and the clinical direction is real: 225Ac-PSMA is under active investigation, principally in patients progressing after 177Lu-PSMA. But I could not verify 'multi-center Phase II/III trial data published in The Lancet Oncology' validating it, and the published evidence in this area is dominated by early-phase and dose-finding work. The claim that this 'establishes a formal sequencing guideline... positioning Alpha-emitters as the primary targeted radiation salvage after Beta-emitter failure' is not supported. ADDED: salivary gland xerostomia as the dose-limiting toxicity — the submission asserts alpha therapy 'minimis[es] toxicity to neighboring healthy tissues' on the strength of path length alone, which is true of the physics but not of the clinical experience, where salivary uptake is the constraint. Actinium-225 supply limitation added as the practical barrier.
+
+### Radiation Oncology 2026 #7 — Weekly versus Three-Weekly Cisplatin with Postoperative Radiotherapy in Head and Neck Cancer (JCOG1008)
+
+**citation not independently verified — long-term data unconfirmed, setting boundary added**
+
+JCOG1008 is a real trial and its primary non-inferiority result for weekly 40 mg/m² against three-weekly 100 mg/m² cisplatin with postoperative radiotherapy is established in the literature. I did not verify the long-term follow-up publication the submission cites or its findings, so maintained non-inferiority is described as the question rather than asserted, and the claim that NCCN and ESTRO guidelines now cement weekly cisplatin as an equal standard is not confirmed. ADDED: the setting boundary — this is postoperative chemoradiotherapy, and the weekly-versus-three-weekly question in DEFINITIVE chemoradiotherapy has different evidence — plus the point that cumulative dose is the outcome-associated variable. The submission's toxicity claims (emesis, nephrotoxicity, hospitalisations) are directionally consistent with the known profile but the specific reductions were not verified.
+
+### Radiation Oncology 2026 #8 — SBRT with Fc-Enhanced Dual Checkpoint Blockade in MSS Colorectal Liver Metastases
+
+**citation not independently verified — the abscopal claim is not testable in this design**
+
+Botensilimab and balstilimab are real agents with genuine activity signals in MSS colorectal cancer, and combining them with SBRT is a real trial concept. I did not verify this specific trial, its enrolment or its outcomes, so no result is asserted. THE SUBSTANTIVE CORRECTION is the submission's claim that the trial 'prov[es] that precise focal SBRT can trigger a systemic abscopal immune response when paired with next-generation immunotherapies'. In a single-arm or non-comparative design giving both systemic dual checkpoint blockade and radiotherapy, out-of-field response cannot be attributed to the radiation — that requires a comparator arm without it. The abscopal effect is invoked far more often than it is demonstrated, and the entry says so. Botensilimab's immune-related toxicity added, since the submission mentions none.
+
+### Radiation Oncology 2026 #9 — Adjuvant Avelumab After Radiotherapy in Merkel Cell Carcinoma (ADAM)
+
+**citation not independently verified — including the direction of the result**
+
+ADAM is a real trial name for adjuvant avelumab in Merkel cell carcinoma. I could not verify its results, and this is the entry where that matters most: the submission states it 'demonstrated that incorporating anti-PD-L1 immunotherapy... significantly improves relapse-free survival' and that it 'rewrites NCCN and ASCO cutaneous carcinoma guidelines'. Adjuvant checkpoint blockade has produced both positive and negative trials across tumour types, and given that this same review found IMvoke010 (adjuvant atezolizumab in head and neck cancer) to be negative while NIVOPOSTOP was positive, the direction of an unverified adjuvant immunotherapy result should not be assumed. Written so the trial and its question are described without asserting the outcome, and flagged for the physician to confirm before this is read as a recommendation.
+
+### Radiation Oncology 2026 #10 — Tislelizumab with Induction Chemotherapy and Chemoradiotherapy in Oesophageal Squamous Cell Carcinoma (EC-CRT-002)
+
+**citation not independently verified**
+
+Tislelizumab is a real agent with an oesophageal squamous cell carcinoma programme, and EC-CRT-002 follows a real trial-naming series in this field, so the entry is plausible. I did not verify the publication, results or effect size, so the PFS improvement the submission describes as 'markedly improve[d]' is not asserted. Note an internal inconsistency in the submission: the entry is titled 'Phase II EC-CRT-002' while the text describes practice-changing guideline impact — a randomised phase II motivates a phase III rather than shifting protocols. ADDED: the surrogate-endpoint caution, because organ preservation rests on complete CLINICAL response, which is not the same as pathological complete response, and the intensity of surveillance required is what makes non-operative management safe or unsafe.
+
+### Radiology 2025 #3 — Photon-Counting CT for Coronary Plaque Characterisation
+
+**citation not independently verified — physics accurate, guideline claim not confirmed**
+
+The technology and its advantage over energy-integrating detectors are accurately described, and reduced calcium blooming with improved spatial resolution is the established rationale for photon-counting CT in coronary imaging. I did not verify the specific multicentre Radiology trial, nor the claim that SCCT guidelines have been updated to establish photon-counting CT as 'the definitive non-invasive imaging standard for equivocal coronary calcifications' — that is a specific guideline assertion and no supporting document was found. Also softened 'dramatically decreases false-positive coronary artery disease diagnoses, sparing thousands of patients unnecessary invasive cardiac angiograms', which is a modelled implication rather than a measured outcome. ADDED: limited scanner availability, and the point that improved characterisation only helps if it changes management — for soft plaque, statin intensification is usually reachable without it.
+
+### Radiology 2025 #4 — PSMA-PET at Biochemical Recurrence and 177Lu-PSMA Theranostics
+
+**citation not independently verified — one claim goes beyond any endpoint**
+
+PSMA-PET's superior detection at low PSA and the theranostic pairing with 177Lu-PSMA are both well established, so the direction is sound. I did not verify the specific multicentre trial, the journal, or the claim that SNMMI and NCCN guidelines recommend restaging at PSA as low as 0.2 ng/mL. ONE SUBSTANTIVE CORRECTION: the submission says this combination 'detects and ERADICATES oligometastatic prostate lesions before standard CT/bone scans can visualize them'. Eradication is not an endpoint any radioligand trial has demonstrated; the measured endpoints are PSA response, progression-free survival and overall survival. ADDED: stage migration, which the submission does not mention — a more sensitive scan reclassifies patients as metastatic and can lead to more intensive treatment without evidence of benefit, and that is the standing critique of PSMA-PET-driven management.
+
+### Radiology 2025 #5 — Yttrium-90 Radioembolisation Combined with Immune Checkpoint Blockade in Unresectable HCC
+
+**citation not independently verified — 'unprecedented survival' not asserted**
+
+The combination is a real and active area: Y-90 radioembolisation is established in HCC and checkpoint blockade is first-line systemic therapy, so testing them together is a genuine trial concept. I did not verify the Lancet Oncology publication the submission cites or its outcomes, and the claim of 'unprecedented overall survival rates' is not asserted — nor is the claim that SIR and EASL algorithms have been modified to position radioembolisation as an upfront partner to immunotherapy. ADDED, because the submission presents only upside: in a cirrhotic patient, hepatic decompensation after liver-directed radiation can remove transplant eligibility altogether, which inverts the stated goal; and immune-related hepatitis on combination therapy is genuinely difficult to distinguish from progression or radiation change.
+
+### Radiology 2025 #6 — AI Triage for Intracranial Haemorrhage and Pulmonary Embolism
+
+**citation not independently verified — 'autonomous' is the wrong word**
+
+AI triage for intracranial haemorrhage and pulmonary embolism is real, FDA-cleared and widely deployed, and time-to-treatment reductions have been reported in real-world studies — so the direction is sound. I did not verify the specific multi-hospital validation studies or the 'over 40 minutes' figure, and the claim that ACR and ACEP workflow guidelines now integrate automated prioritisation was not confirmed. ONE CORRECTION OF SUBSTANCE: the submission's title calls these 'Autonomous AI Triage'. They are cleared as triage and notification devices, explicitly not autonomous and not diagnostic — they change reading order and are not permitted to make the call. That distinction is what makes the false-negative point critical: an unflagged worklist is not a negative result, and the entry now says so. Added that measured time savings depend on someone being free to act on the alert.
+
+### Radiology 2025 #7 — 68Ga-FAPI PET/CT in Tumours with Low FDG Avidity
+
+**citation not independently verified — specificity limit added**
+
+FAPI PET is real and the comparison with FDG in low-avidity gastrointestinal tumours is a genuine and active research area, so the submission's direction holds. I did not verify the specific pan-cancer diagnostic trial in the Journal of Nuclear Medicine, nor the claim that SNMMI diagnostic consensus has adopted FAPI-PET for staging these malignancies. ADDED, because it is the main limitation and the submission omits it entirely: fibroblast activation protein is expressed in fibrosis, inflammation and healing tissue, so FAPI uptake is not tumour-specific and inflammatory or post-treatment change can be mistaken for malignancy. The submission's claim that it 'eliminates diagnostic blind spots' and avoids 'futile exploratory laparotomies' is softened accordingly — a tracer with imperfect specificity can also cause a resectable patient to be denied surgery.
+
+### Radiology 2025 #8 — MR-Guided Focused Ultrasound Thalamotomy for Essential Tremor
+
+**citation not independently verified — comparison with DBS overstated**
+
+MRgFUS thalamotomy is real, FDA-approved for essential tremor, and the pivotal randomised trial is published in the New England Journal of Medicine, with long-term follow-up reports in the literature — so the substance is sound. I did not verify the specific five-year multicentre dataset, nor the claim that AAN and CNS guidelines designate it 'an equal first-line interventional alternative' to DBS. THE CORRECTION IS THE COMPARISON. The submission presents it as strictly superior — 'completely eliminates the need for open craniotomy, skull drilling, or implanted brain hardware'. It is incisionless, but the lesion is permanent and unadjustable where DBS is reversible and titratable and can be performed bilaterally; bilateral lesioning carries greater risk of speech and gait complications. Added the recognised adverse effects and the skull density ratio constraint, which determines candidacy and which the submission does not mention. Also note the submission's inclusion of Parkinson's disease in the title: the indications and evidence differ from essential tremor and are not asserted here.
+
+### Radiology 2025 #9 — Genicular Artery Embolisation for Knee Osteoarthritis
+
+**citation not independently verified — the sham-control claim is the load-bearing one**
+
+Genicular artery embolisation is a real procedure with a growing evidence base and genuine interest as an option for patients who are poor arthroplasty candidates. I did not verify the 'landmark randomized sham-controlled trial published in Radiology' the submission describes, and that is the claim the whole entry rests on: knee osteoarthritis pain is unusually placebo-responsive and any invasive procedure produces a large non-specific effect, so a sham-controlled result would be decisive while an uncontrolled one would be close to uninformative. Written to make that distinction explicit rather than asserting the result. ADDED: that embolisation targets pain without altering joint structure — the submission's 'significantly delaying or replacing the need for major joint replacement surgery' implies disease modification that the mechanism does not support — and non-target embolisation as the procedural risk.
+
 ---
 
 ## Wrong study or replaced
@@ -897,6 +987,12 @@ VERIFIED, INCLUDING THE SURVIVAL CLAIM I EXPECTED TO FAIL. Having established fo
 **corrected — phase II not III, and one figure wrong**
 
 Verified and the effect is real: the LUNAR trial, JCO 10.1200/JCO-25-01553, presented at ASTRO 2025, 92 patients, SBRT alone (47) versus two cycles of 177Lu-PNT2002 then SBRT (45), median PFS 7.4 to 17.6 months, HR 0.37 (0.22-0.61), P<.0001, no significant added toxicity. FOUR CORRECTIONS. (1) PHASE: submitted as 'A Phase III trial'; LUNAR is phase II, which is the difference between justifying a confirmatory trial and changing practice. (2) FIGURE: 17.6 months, not the 17.3 submitted — and the submission writes '7.4 vs 17.3', which reads as though 7.4 were the treated arm. (3) SEQUENCE: the radioligand is neoadjuvant, given before SBRT, not combined with it. (4) The claim that it 'delays the need for androgen deprivation therapy by a median of 10 additional months' appears to restate the PFS difference as an ADT-deferral result; time to ADT was not confirmed as an endpoint, so it is flagged rather than asserted. Also removed 'establishes a new paradigm in... treatment guidelines' — no guideline follows from a 92-patient phase II.
+
+### Radiology 2025 #1 — Abbreviated Breast MRI versus Digital Breast Tomosynthesis in Dense Breasts (ECOG-ACRIN EA1141)
+
+**corrected — sample size wrong by sevenfold and the date by five years**
+
+The trial is real and the direction is right: ECOG-ACRIN EA1141, JAMA, PMID 32096852, abbreviated breast MRI detecting significantly more invasive cancers than digital breast tomosynthesis in women with dense breasts. THREE CORRECTIONS. (1) SAMPLE SIZE: the submission describes 'a 10,000-patient prospective study'; the trial had 1,444 evaluable women. (2) DATE: published February 2020, not 2025. (3) POPULATION: the submission says 'extremely dense breast tissue'; the trial included heterogeneously dense as well, which materially widens who it applies to. The detection figures have been added — 17 of 17 versus 7 of 17, and 11.8 versus 4.8 per 1,000 — since they are more persuasive than the submission's general claim. Also added that the trial did not report mortality or interval-cancer outcomes and that additional detection brings additional benign biopsies, neither of which the submission mentions. The claim that ACR supplemental screening guidelines now prioritise fast MRI over secondary mammographic modalities was not verified.
 
 ---
 
@@ -2065,6 +2161,30 @@ Verified: NSABP B-51 / RTOG 1304, NEJMoa2414859, 1,556 patients with ypN0 after 
 **corrected — evidence level and guideline status overstated**
 
 STAR is real and the Washington University work the submission alludes to is genuine and important. But the submission calls it 'a landmark non-oncologic trial published in major medical literature' showing 'equivalent anti-arrhythmic control with far fewer treatment-related adverse events compared to catheter ablation', and says it is incorporated 'into multidisciplinary electrophysiology and radiation oncology consensus guidelines as a preferred non-invasive option'. I could not verify a randomised comparison against catheter ablation, and no consensus guideline designating STAR preferred was found — the published evidence is dominated by small single-centre series and early-phase studies in patients refractory to ablation. Rewritten to that evidence level. ADDED: the unresolved late-toxicity question, since the submission's '15-minute non-invasive intervention that avoids invasive catheter complications' frames a high single dose to the myocardium as though it carried no risk of its own.
+
+### Radiation Oncology 2026 #1 — TORPEdO: Proton Beam Therapy versus IMRT for Oropharyngeal Cancer (UK Phase 3)
+
+**corrected — narrowed to TORPEdO to remove a duplicate of the 2025 entry**
+
+Both trials in the submitted title are real and verified. But the MD Anderson consortium trial is already the 2025 entry in this specialty, so under the deduplication rule this entry is narrowed to TORPEdO — genuinely a separate UK phase 3 published in 2026 with a different primary endpoint. TWO CORRECTIONS. (1) The submission says the trials jointly demonstrate 'equivalent long-term oncologic control while significantly decreasing toxicities'. TORPEdO measured toxicity; the MD Anderson trial tested PFS non-inferiority and found an overall survival difference. Merging them into one 'definitive head-to-head' claim blurs which trial showed what. (2) The submission adds 'reduced radiation osteoradionecrosis' — I could not confirm osteoradionecrosis as a reported TORPEdO outcome, so it is not asserted; the verified toxicity figures are given instead. The cross-reference to the 2025 entry is stated so a reader meeting both knows they are different studies.
+
+### Radiation Oncology 2026 #2 — Adjuvant Nivolumab with Postoperative Chemoradiotherapy in High-Risk Resected HNSCC (NIVOPOSTOP, GORTEC 2018-01)
+
+**matched with corrections — trial name and journal**
+
+Verified in the otolaryngology review of the same trial: GORTEC 2018-01, 680 completely resected high-risk HNSCC patients, 3-year disease-free survival 63.1% versus 52.5%, HR 0.76 (0.60-0.98), P = 0.034, benefit irrespective of PD-L1 status. TWO CORRECTIONS. (1) The trial is NIVOPOSTOP, not 'NIVOPOST-OP' as submitted. (2) The submission attributes publication to The Lancet; the result was presented at ASCO 2025 and I could not confirm a Lancet publication, so the presentation is cited instead. ADDED: PD-L1 independence, the maturing overall survival data, and the age and resection-completeness limits — the submission claims it 'substantially lowers locoregional and distant recurrence rates' without noting this is a DFS endpoint. CROSS-SPECIALTY NOTE: this trial also appears under otolaryngology, framed against the negative IMvoke010 atezolizumab result; here it is framed for the radiation oncologist delivering the adjuvant chemoradiotherapy.
+
+### Radiation Oncology 2026 #3 — Fullerene Cream versus Trolamine for Preventing Acute Radiation Dermatitis
+
+**matched with corrections — real, and I expected it not to be**
+
+VERIFIED, AND MY SUSPICION WAS WRONG AGAIN. An antioxidant fullerene cream sounded like the least plausible item in the list; it is a real JCO publication (10.1200/JCO-25-02264), double-blind randomised phase II at West China Hospital, 132 patients randomised August 2024 to March 2025, fullerene versus trolamine three times daily from three days pre-RT to 14 days post, with significantly reduced acute radiation dermatitis and only mild allergic reactions. This is the fourth time in this review that a claim I read as fabricated checked out. TWO CORRECTIONS. (1) The submission describes a 'multi-center Phase III randomized placebo-controlled trial'; it is single-centre phase II with 132 patients, and the comparator is active trolamine, not placebo. (2) 'Rewrites supportive care consensus guidelines from MASCC/ESTRO/ASTRO' is not supportable from a 132-patient single-centre phase II, and no guideline change was found. Added the application schedule, since starting before radiotherapy is integral to the protocol.
+
+### Radiology 2025 #2 — Endovascular Thrombectomy for Large Ischaemic Core Stroke (SELECT2, ANGEL-ASPECT)
+
+**matched with corrections — date, and the magnitude of benefit**
+
+Verified in substance: SELECT2 and ANGEL-ASPECT both published in the New England Journal of Medicine in 2023, both showing benefit from endovascular thrombectomy in large-core ischaemic stroke, and both driving the expansion of eligibility in stroke guidance. THREE CORRECTIONS. (1) DATE: 2023, not 2025 — this is now standard practice, and presenting it as a 2025 development misstates where the field is. (2) The submission says thrombectomy 'yields significant functional independence'; the benefit is a shift in the modified Rankin distribution, with many treated patients still dependent, and overstating it sets up a conversation with a family that the outcome will not support. (3) ADDED: the higher rate of symptomatic intracranial haemorrhage in the large-core population, which the submission omits entirely while describing the alternative as 'comfort or palliative pathways'.
 
 ---
 

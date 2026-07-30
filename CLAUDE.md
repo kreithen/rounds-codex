@@ -246,9 +246,9 @@ no backend. This file is context for future sessions — read it before starting
   and strips** — review material, never app content. Anesthesiology is coded **`anes`**. Years sort
   **ascending**, so 2025 sits above 2026 (specified; not newest-first like the rest of the app).
   Built by `scripts/add_clinical_guidelines.js` + `scripts/add_guideline_share.js`.
-  **Live for 19 specialties (350 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `ent`,
+  **Live for 20 specialties (370 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `ent`,
   `fm`, `im`, `neuro`, `nsg`, `obgyn`, `ophtho`, `ortho`, `path`, `peds`, `plastics`, `pmr`, `prev`,
-  `psych`, `radonc`.
+  `psych`, `radonc`, `rads`. Four left to reach all 24: `gs`, `thoracic`, `uro`, `vasc`.
   A single-year specialty should **omit** the other year, not ship `2026: []` — an empty array
   renders a "Coming soon" button. `prev` shipped that way for one deploy before its 2026 arrived.
   **`prev` 2026 has 7**: four submitted entries repeated its own 2025 list.
@@ -265,6 +265,10 @@ no backend. This file is context for future sessions — read it before starting
   `trifluridine/tipiracil` (oral colorectal chemotherapy) for ocular surface squamous neoplasia;
   "**Microfracture** & Gene Therapy Scaling" — an orthopaedic cartilage term — on an otology entry;
   and a real AAO-HNS rhinosinusitis guideline credited to **AAOS**, the orthopaedic academy.
+  **My prior on odd-sounding claims is miscalibrated — four suspicions, four wrong.** `amivantamab`
+  in HNSCC, `nivobotulinumtoxinA`, the proton 10% OS gain, and an antioxidant **fullerene** cream for
+  radiation dermatitis (JCO, 132 patients) all read as fabricated and are all real. Search before
+  doubting; the failure mode in these submissions is overstated sourcing, not invented science.
   **Do not let a correct earlier finding make you doubt a real later one.** Having established that
   TORPEdO's proton result was toxicity rather than survival, I expected radiation oncology's claim of
   a 10% absolute 5-year OS gain for IMPT to be an overstatement. It is real — a separate MD Anderson

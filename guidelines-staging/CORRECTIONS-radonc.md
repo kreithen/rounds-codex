@@ -1,14 +1,14 @@
 # Clinical guideline citation checks — for sign-off
 
-10 entries checked. Grouped worst-first by what a reader would take away if the
+20 entries checked. Grouped worst-first by what a reader would take away if the
 entry shipped as submitted. Every entry below is live in the app in its CORRECTED form; this
 document records what was changed and why, so any of it can be reverted.
 
 | verdict | entries |
 |---|---|
-| Citation not independently verified | 6 |
+| Citation not independently verified | 13 |
 | Wrong study or replaced | 2 |
-| Corrected — dates, journals, numbers, strength of claim | 2 |
+| Corrected — dates, journals, numbers, strength of claim | 5 |
 
 ---
 
@@ -50,6 +50,48 @@ The field is real: genomic classifier and luminal/basal subtype analyses of rand
 
 The premise is well founded: olanzapine is established for chemotherapy-induced nausea and vomiting and is recommended in ASCO and MASCC/ESMO antiemetic guidance in that setting, so extending it to radiotherapy-induced nausea is a natural and plausible trial. I did not verify the specific phase III trial, its results, or that the guidelines have been updated to cover radiotherapy specifically — the submitted link is an ASCO press release listing noteworthy studies rather than the abstract or paper, so the effect size could not be checked. Rewritten to describe the intervention and the practical dosing point, which is the part a clinician needs and the submission omits: low doses of 2.5 to 5 mg are used to limit sedation, and additive sedation with opioids or benzodiazepines is the common problem.
 
+### Radiation Oncology 2026 #4 — ARCHERY: AI-Automated Radiotherapy Contouring and Planning for Global Access
+
+**citation not independently verified — the governance claim is the concern**
+
+The MD Anderson Radiotherapy Planning Assistant is a real system and automated planning for low- and middle-income settings is a real programme of work, so the direction is credible. I did not verify the ARCHERY trial's publication, its stated enrolment of over 1,000 patients, or the claim that planning time falls to about an hour in over 95% of cervical cases. THE MORE IMPORTANT UNVERIFIED CLAIM is that this 'establishes the first global consensus framework (backed by ASTRO and ESTRO) validating AI-generated radiation contouring and plan generation for clinical use without mandatory manual step-by-step drafting'. Removing mandatory manual drafting is a governance change with direct patient-safety implications, and no such consensus document was found — so it is not asserted. Replaced with the question that actually governs safe adoption: the rate and detectability of unacceptable plans, and the fact that verifying someone else's plan is a different skill from making one.
+
+### Radiation Oncology 2026 #5 — Adjuvant Cemiplimab After Surgery and Radiotherapy in High-Risk Cutaneous Squamous Cell Carcinoma (C-POST)
+
+**citation not independently verified**
+
+C-POST is a real trial name and adjuvant cemiplimab in high-risk cutaneous SCC is a genuine and closely watched question. I did not verify the primary results, the effect size, or the publication, so no outcome is asserted — the submission's 'solves a long-standing challenge of frequent locoregional recurrences' presumes a result I could not confirm. The claim that joint ASTRO-ASCO skin cancer practice guidelines now recommend post-radiation PD-1 inhibition is also unverified. ADDED, because the submission omits it and it is decisive in this population: organ transplant recipients are over-represented among patients with aggressive cutaneous SCC and are at risk of graft rejection on checkpoint blockade, and immune-related toxicity in the elderly is a real counterweight to recurrence risk.
+
+### Radiation Oncology 2026 #6 — Actinium-225 PSMA Targeted Alpha Therapy After Lutetium-177 Failure in mCRPC
+
+**citation not independently verified — evidence level and guideline claim overstated**
+
+The radiobiology is accurately described and the clinical direction is real: 225Ac-PSMA is under active investigation, principally in patients progressing after 177Lu-PSMA. But I could not verify 'multi-center Phase II/III trial data published in The Lancet Oncology' validating it, and the published evidence in this area is dominated by early-phase and dose-finding work. The claim that this 'establishes a formal sequencing guideline... positioning Alpha-emitters as the primary targeted radiation salvage after Beta-emitter failure' is not supported. ADDED: salivary gland xerostomia as the dose-limiting toxicity — the submission asserts alpha therapy 'minimis[es] toxicity to neighboring healthy tissues' on the strength of path length alone, which is true of the physics but not of the clinical experience, where salivary uptake is the constraint. Actinium-225 supply limitation added as the practical barrier.
+
+### Radiation Oncology 2026 #7 — Weekly versus Three-Weekly Cisplatin with Postoperative Radiotherapy in Head and Neck Cancer (JCOG1008)
+
+**citation not independently verified — long-term data unconfirmed, setting boundary added**
+
+JCOG1008 is a real trial and its primary non-inferiority result for weekly 40 mg/m² against three-weekly 100 mg/m² cisplatin with postoperative radiotherapy is established in the literature. I did not verify the long-term follow-up publication the submission cites or its findings, so maintained non-inferiority is described as the question rather than asserted, and the claim that NCCN and ESTRO guidelines now cement weekly cisplatin as an equal standard is not confirmed. ADDED: the setting boundary — this is postoperative chemoradiotherapy, and the weekly-versus-three-weekly question in DEFINITIVE chemoradiotherapy has different evidence — plus the point that cumulative dose is the outcome-associated variable. The submission's toxicity claims (emesis, nephrotoxicity, hospitalisations) are directionally consistent with the known profile but the specific reductions were not verified.
+
+### Radiation Oncology 2026 #8 — SBRT with Fc-Enhanced Dual Checkpoint Blockade in MSS Colorectal Liver Metastases
+
+**citation not independently verified — the abscopal claim is not testable in this design**
+
+Botensilimab and balstilimab are real agents with genuine activity signals in MSS colorectal cancer, and combining them with SBRT is a real trial concept. I did not verify this specific trial, its enrolment or its outcomes, so no result is asserted. THE SUBSTANTIVE CORRECTION is the submission's claim that the trial 'prov[es] that precise focal SBRT can trigger a systemic abscopal immune response when paired with next-generation immunotherapies'. In a single-arm or non-comparative design giving both systemic dual checkpoint blockade and radiotherapy, out-of-field response cannot be attributed to the radiation — that requires a comparator arm without it. The abscopal effect is invoked far more often than it is demonstrated, and the entry says so. Botensilimab's immune-related toxicity added, since the submission mentions none.
+
+### Radiation Oncology 2026 #9 — Adjuvant Avelumab After Radiotherapy in Merkel Cell Carcinoma (ADAM)
+
+**citation not independently verified — including the direction of the result**
+
+ADAM is a real trial name for adjuvant avelumab in Merkel cell carcinoma. I could not verify its results, and this is the entry where that matters most: the submission states it 'demonstrated that incorporating anti-PD-L1 immunotherapy... significantly improves relapse-free survival' and that it 'rewrites NCCN and ASCO cutaneous carcinoma guidelines'. Adjuvant checkpoint blockade has produced both positive and negative trials across tumour types, and given that this same review found IMvoke010 (adjuvant atezolizumab in head and neck cancer) to be negative while NIVOPOSTOP was positive, the direction of an unverified adjuvant immunotherapy result should not be assumed. Written so the trial and its question are described without asserting the outcome, and flagged for the physician to confirm before this is read as a recommendation.
+
+### Radiation Oncology 2026 #10 — Tislelizumab with Induction Chemotherapy and Chemoradiotherapy in Oesophageal Squamous Cell Carcinoma (EC-CRT-002)
+
+**citation not independently verified**
+
+Tislelizumab is a real agent with an oesophageal squamous cell carcinoma programme, and EC-CRT-002 follows a real trial-naming series in this field, so the entry is plausible. I did not verify the publication, results or effect size, so the PFS improvement the submission describes as 'markedly improve[d]' is not asserted. Note an internal inconsistency in the submission: the entry is titled 'Phase II EC-CRT-002' while the text describes practice-changing guideline impact — a randomised phase II motivates a phase III rather than shifting protocols. ADDED: the surrogate-endpoint caution, because organ preservation rests on complete CLINICAL response, which is not the same as pathological complete response, and the intensity of surveillance required is what makes non-operative management safe or unsafe.
+
 ---
 
 ## Wrong study or replaced
@@ -81,3 +123,21 @@ Verified: NSABP B-51 / RTOG 1304, NEJMoa2414859, 1,556 patients with ypN0 after 
 **corrected — evidence level and guideline status overstated**
 
 STAR is real and the Washington University work the submission alludes to is genuine and important. But the submission calls it 'a landmark non-oncologic trial published in major medical literature' showing 'equivalent anti-arrhythmic control with far fewer treatment-related adverse events compared to catheter ablation', and says it is incorporated 'into multidisciplinary electrophysiology and radiation oncology consensus guidelines as a preferred non-invasive option'. I could not verify a randomised comparison against catheter ablation, and no consensus guideline designating STAR preferred was found — the published evidence is dominated by small single-centre series and early-phase studies in patients refractory to ablation. Rewritten to that evidence level. ADDED: the unresolved late-toxicity question, since the submission's '15-minute non-invasive intervention that avoids invasive catheter complications' frames a high single dose to the myocardium as though it carried no risk of its own.
+
+### Radiation Oncology 2026 #1 — TORPEdO: Proton Beam Therapy versus IMRT for Oropharyngeal Cancer (UK Phase 3)
+
+**corrected — narrowed to TORPEdO to remove a duplicate of the 2025 entry**
+
+Both trials in the submitted title are real and verified. But the MD Anderson consortium trial is already the 2025 entry in this specialty, so under the deduplication rule this entry is narrowed to TORPEdO — genuinely a separate UK phase 3 published in 2026 with a different primary endpoint. TWO CORRECTIONS. (1) The submission says the trials jointly demonstrate 'equivalent long-term oncologic control while significantly decreasing toxicities'. TORPEdO measured toxicity; the MD Anderson trial tested PFS non-inferiority and found an overall survival difference. Merging them into one 'definitive head-to-head' claim blurs which trial showed what. (2) The submission adds 'reduced radiation osteoradionecrosis' — I could not confirm osteoradionecrosis as a reported TORPEdO outcome, so it is not asserted; the verified toxicity figures are given instead. The cross-reference to the 2025 entry is stated so a reader meeting both knows they are different studies.
+
+### Radiation Oncology 2026 #2 — Adjuvant Nivolumab with Postoperative Chemoradiotherapy in High-Risk Resected HNSCC (NIVOPOSTOP, GORTEC 2018-01)
+
+**matched with corrections — trial name and journal**
+
+Verified in the otolaryngology review of the same trial: GORTEC 2018-01, 680 completely resected high-risk HNSCC patients, 3-year disease-free survival 63.1% versus 52.5%, HR 0.76 (0.60-0.98), P = 0.034, benefit irrespective of PD-L1 status. TWO CORRECTIONS. (1) The trial is NIVOPOSTOP, not 'NIVOPOST-OP' as submitted. (2) The submission attributes publication to The Lancet; the result was presented at ASCO 2025 and I could not confirm a Lancet publication, so the presentation is cited instead. ADDED: PD-L1 independence, the maturing overall survival data, and the age and resection-completeness limits — the submission claims it 'substantially lowers locoregional and distant recurrence rates' without noting this is a DFS endpoint. CROSS-SPECIALTY NOTE: this trial also appears under otolaryngology, framed against the negative IMvoke010 atezolizumab result; here it is framed for the radiation oncologist delivering the adjuvant chemoradiotherapy.
+
+### Radiation Oncology 2026 #3 — Fullerene Cream versus Trolamine for Preventing Acute Radiation Dermatitis
+
+**matched with corrections — real, and I expected it not to be**
+
+VERIFIED, AND MY SUSPICION WAS WRONG AGAIN. An antioxidant fullerene cream sounded like the least plausible item in the list; it is a real JCO publication (10.1200/JCO-25-02264), double-blind randomised phase II at West China Hospital, 132 patients randomised August 2024 to March 2025, fullerene versus trolamine three times daily from three days pre-RT to 14 days post, with significantly reduced acute radiation dermatitis and only mild allergic reactions. This is the fourth time in this review that a claim I read as fabricated checked out. TWO CORRECTIONS. (1) The submission describes a 'multi-center Phase III randomized placebo-controlled trial'; it is single-centre phase II with 132 patients, and the comparator is active trolamine, not placebo. (2) 'Rewrites supportive care consensus guidelines from MASCC/ESTRO/ASTRO' is not supportable from a 132-patient single-centre phase II, and no guideline change was found. Added the application schedule, since starting before radiotherapy is integral to the protocol.

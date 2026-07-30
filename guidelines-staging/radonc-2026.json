@@ -1,0 +1,142 @@
+[
+ {
+  "title": "TORPEdO: Proton Beam Therapy versus IMRT for Oropharyngeal Cancer (UK Phase 3)",
+  "journal": "The Lancet",
+  "date": "2026",
+  "breakthrough": "TORPEdO is the UK phase 3 randomised trial of intensity-modulated proton therapy against IMRT in oropharyngeal cancer, and its endpoint is toxicity. Grade 3 acute events were less frequent with protons — mucositis 37% versus 54%, dysphagia 12% versus 24% — the mucositis difference tracking a lower planned median oral cavity dose (36.5 Gy versus 47.2 Gy). Moderate-to-severe xerostomia was lower late as well: 6% versus 20% at 18 to 24 months (P = 0.025) and 6% versus 20% at 24 to 36 months (P = 0.01).",
+  "impact": "Converts the dosimetric argument for protons into measured patient experience. Roughly a threefold difference in moderate-to-severe dry mouth two to three years out is what a survivor actually lives with.",
+  "practical": "Use these figures when discussing protons with a patient: less mucositis and dysphagia during treatment, and substantially less long-term xerostomia. Do not extend TORPEdO into a survival claim — it was designed and powered for toxicity. The separate MD Anderson phase III trial, on the 2025 list, is the one reporting a 5-year overall survival difference; the two trials are complementary and answer different questions.",
+  "link": "The Lancet — proton beam therapy for oropharyngeal cancer (TORPEdO): a phase 3, randomised controlled trial",
+  "url": "https://www.thelancet.com/journals/lanpsy/article/PIIS0140-6736(26)00314-4/fulltext",
+  "verify": {
+   "status": "corrected — narrowed to TORPEdO to remove a duplicate of the 2025 entry",
+   "note": "Both trials in the submitted title are real and verified. But the MD Anderson consortium trial is already the 2025 entry in this specialty, so under the deduplication rule this entry is narrowed to TORPEdO — genuinely a separate UK phase 3 published in 2026 with a different primary endpoint. TWO CORRECTIONS. (1) The submission says the trials jointly demonstrate 'equivalent long-term oncologic control while significantly decreasing toxicities'. TORPEdO measured toxicity; the MD Anderson trial tested PFS non-inferiority and found an overall survival difference. Merging them into one 'definitive head-to-head' claim blurs which trial showed what. (2) The submission adds 'reduced radiation osteoradionecrosis' — I could not confirm osteoradionecrosis as a reported TORPEdO outcome, so it is not asserted; the verified toxicity figures are given instead. The cross-reference to the 2025 entry is stated so a reader meeting both knows they are different studies."
+  }
+ },
+ {
+  "title": "Adjuvant Nivolumab with Postoperative Chemoradiotherapy in High-Risk Resected HNSCC (NIVOPOSTOP, GORTEC 2018-01)",
+  "journal": "Presented ASCO 2025",
+  "date": "2025 to 2026",
+  "breakthrough": "680 patients with completely resected head and neck squamous cell carcinoma at high risk of relapse were randomised to nivolumab added to adjuvant cisplatin-based chemoradiotherapy or to chemoradiotherapy alone. The trial met its primary endpoint: 3-year disease-free survival 63.1% with nivolumab versus 52.5% without, hazard ratio 0.76 (95% CI 0.60 to 0.98), P = 0.034 — and the benefit did not depend on PD-L1 status.",
+  "impact": "The adjuvant setting in head and neck cancer has resisted improvement for decades, and this is a positive result where atezolizumab in a comparable setting was negative. Checkpoint blockade after surgery is clearly not a class effect.",
+  "practical": "The candidates are patients with adverse pathology after complete resection — positive margins or extranodal extension. Two things to state accurately: PD-L1 status does not select for benefit here, unlike in the recurrent or metastatic setting, and overall survival data are still maturing, so this is a disease-free survival result. Enrolment was limited to patients under 75 with complete resection.",
+  "link": "GORTEC 2018-01 NIVOPOSTOP — adjuvant nivolumab in high-risk resected head and neck cancer",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/?term=NIVOPOSTOP+GORTEC+2018-01+nivolumab+adjuvant+chemoradiotherapy+head+and+neck",
+  "verify": {
+   "status": "matched with corrections — trial name and journal",
+   "note": "Verified in the otolaryngology review of the same trial: GORTEC 2018-01, 680 completely resected high-risk HNSCC patients, 3-year disease-free survival 63.1% versus 52.5%, HR 0.76 (0.60-0.98), P = 0.034, benefit irrespective of PD-L1 status. TWO CORRECTIONS. (1) The trial is NIVOPOSTOP, not 'NIVOPOST-OP' as submitted. (2) The submission attributes publication to The Lancet; the result was presented at ASCO 2025 and I could not confirm a Lancet publication, so the presentation is cited instead. ADDED: PD-L1 independence, the maturing overall survival data, and the age and resection-completeness limits — the submission claims it 'substantially lowers locoregional and distant recurrence rates' without noting this is a DFS endpoint. CROSS-SPECIALTY NOTE: this trial also appears under otolaryngology, framed against the negative IMvoke010 atezolizumab result; here it is framed for the radiation oncologist delivering the adjuvant chemoradiotherapy."
+  }
+ },
+ {
+  "title": "Fullerene Cream versus Trolamine for Preventing Acute Radiation Dermatitis",
+  "journal": "Journal of Clinical Oncology",
+  "date": "2026",
+  "breakthrough": "A double-blind randomised phase II trial at West China Hospital, Sichuan University, randomised 132 patients receiving definitive or adjuvant radiotherapy for non-metastatic head and neck cancer between August 2024 and March 2025 to fullerene cream (n=66) or trolamine cream (n=66), applied three times daily from three days before radiotherapy until 14 days after completion. Fullerene significantly reduced the incidence of acute radiation dermatitis. Treatment-related adverse events were mild allergic reactions in three fullerene and two trolamine patients, with no serious events.",
+  "impact": "A mechanistically distinct approach — fullerene scavenges radiation-induced free radicals directly, where trolamine supports hydration and wound healing. Radiation dermatitis causes treatment breaks, and a break in a curative head and neck course compromises outcome.",
+  "practical": "Promising and cheap, but hold the evidence at its actual level: 132 patients at a single centre, phase II, with a schedule that starts three days before radiotherapy and continues two weeks past the end — the timing is part of the intervention. Fullerene creams are not standard supportive care and availability varies. No guideline has changed on this.",
+  "link": "JCO — fullerene for reducing acute radiation dermatitis in head and neck cancer: a phase II, double-blind, randomized controlled trial",
+  "url": "https://ascopubs.org/doi/10.1200/JCO-25-02264",
+  "verify": {
+   "status": "matched with corrections — real, and I expected it not to be",
+   "note": "VERIFIED, AND MY SUSPICION WAS WRONG AGAIN. An antioxidant fullerene cream sounded like the least plausible item in the list; it is a real JCO publication (10.1200/JCO-25-02264), double-blind randomised phase II at West China Hospital, 132 patients randomised August 2024 to March 2025, fullerene versus trolamine three times daily from three days pre-RT to 14 days post, with significantly reduced acute radiation dermatitis and only mild allergic reactions. This is the fourth time in this review that a claim I read as fabricated checked out. TWO CORRECTIONS. (1) The submission describes a 'multi-center Phase III randomized placebo-controlled trial'; it is single-centre phase II with 132 patients, and the comparator is active trolamine, not placebo. (2) 'Rewrites supportive care consensus guidelines from MASCC/ESTRO/ASTRO' is not supportable from a 132-patient single-centre phase II, and no guideline change was found. Added the application schedule, since starting before radiotherapy is integral to the protocol."
+  }
+ },
+ {
+  "title": "ARCHERY: AI-Automated Radiotherapy Contouring and Planning for Global Access",
+  "journal": "Presented at ESTRO",
+  "date": "2026",
+  "breakthrough": "A prospective international study evaluated automated AI contouring and treatment planning — the MD Anderson Radiotherapy Planning Assistant — across patients with cervical, prostate and head and neck cancers, with the explicit aim of making radiotherapy planning feasible where planning expertise is scarce.",
+  "impact": "The bottleneck in global radiotherapy access is not linear accelerators alone but the physicists and dosimetrists to plan on them. Automating the plan attacks the constraint that actually limits treatment.",
+  "practical": "The relevant question for any autoplanning system is not average quality but the failure mode: how often a plan is unacceptable, and whether the reviewing clinician can reliably detect it. Automation shifts the workload from drafting to verification, and verification of a plan you did not build is a different and less practised skill. I could not verify the trial's size, its published results, or the claim that ASTRO and ESTRO have issued a consensus framework validating AI-generated plans for clinical use without manual drafting — that would be a substantial governance change and no such document was found.",
+  "link": "ARCHERY — automated AI radiotherapy planning, international evaluation",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/?term=ARCHERY+trial+automated+radiotherapy+planning+assistant+artificial+intelligence+contouring",
+  "verify": {
+   "status": "citation not independently verified — the governance claim is the concern",
+   "note": "The MD Anderson Radiotherapy Planning Assistant is a real system and automated planning for low- and middle-income settings is a real programme of work, so the direction is credible. I did not verify the ARCHERY trial's publication, its stated enrolment of over 1,000 patients, or the claim that planning time falls to about an hour in over 95% of cervical cases. THE MORE IMPORTANT UNVERIFIED CLAIM is that this 'establishes the first global consensus framework (backed by ASTRO and ESTRO) validating AI-generated radiation contouring and plan generation for clinical use without mandatory manual step-by-step drafting'. Removing mandatory manual drafting is a governance change with direct patient-safety implications, and no such consensus document was found — so it is not asserted. Replaced with the question that actually governs safe adoption: the rate and detectability of unacceptable plans, and the fact that verifying someone else's plan is a different skill from making one."
+  }
+ },
+ {
+  "title": "Adjuvant Cemiplimab After Surgery and Radiotherapy in High-Risk Cutaneous Squamous Cell Carcinoma (C-POST)",
+  "journal": "Phase III trial, presented 2025",
+  "date": "2025 to 2026",
+  "breakthrough": "The phase III C-POST trial evaluated adjuvant cemiplimab, an anti-PD-1 antibody, after surgery and postoperative radiotherapy in patients with high-risk cutaneous squamous cell carcinoma.",
+  "impact": "High-risk cutaneous SCC of the head and neck recurs locoregionally at rates that surgery plus radiotherapy has not solved, and unlike most skin cancer this is a disease that kills. An effective adjuvant would fill a real gap.",
+  "practical": "The candidate is the patient with adverse features after resection and postoperative radiotherapy — nodal involvement, perineural invasion, positive margins — not routine cutaneous SCC, which is cured by excision. Weigh immune-related toxicity against recurrence risk, particularly in the elderly and in organ transplant recipients, who are both over-represented in this disease and at risk of rejection on checkpoint blockade. I could not verify the trial's published results or effect size, nor the claim that joint ASTRO-ASCO skin cancer guidelines have been updated.",
+  "link": "C-POST — adjuvant cemiplimab in high-risk cutaneous squamous cell carcinoma",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/?term=C-POST+adjuvant+cemiplimab+high-risk+cutaneous+squamous+cell+carcinoma+phase+3",
+  "verify": {
+   "status": "citation not independently verified",
+   "note": "C-POST is a real trial name and adjuvant cemiplimab in high-risk cutaneous SCC is a genuine and closely watched question. I did not verify the primary results, the effect size, or the publication, so no outcome is asserted — the submission's 'solves a long-standing challenge of frequent locoregional recurrences' presumes a result I could not confirm. The claim that joint ASTRO-ASCO skin cancer practice guidelines now recommend post-radiation PD-1 inhibition is also unverified. ADDED, because the submission omits it and it is decisive in this population: organ transplant recipients are over-represented among patients with aggressive cutaneous SCC and are at risk of graft rejection on checkpoint blockade, and immune-related toxicity in the elderly is a real counterweight to recurrence risk."
+  }
+ },
+ {
+  "title": "Actinium-225 PSMA Targeted Alpha Therapy After Lutetium-177 Failure in mCRPC",
+  "journal": "Early-phase and dose-finding studies",
+  "date": "2025 to 2026",
+  "breakthrough": "Actinium-225-labelled PSMA radioligands deliver alpha particles rather than the beta particles of lutetium-177. Alpha emissions have high linear energy transfer and a path length of a few cell diameters, producing dense double-strand DNA breaks over a very short range — the rationale for using them after beta-emitter failure.",
+  "impact": "Physically distinct from what came before, and aimed at exactly the population created by the success of 177Lu-PSMA: men who responded and then progressed.",
+  "practical": "The dose-limiting problem is specific and worth knowing: xerostomia from salivary gland uptake has been the main toxicity constraining alpha-emitter PSMA therapy, and it can be severe and permanent in a way that beta-emitter dry mouth generally is not. Availability is a real constraint — actinium-225 supply is limited globally. I could not verify the phase II/III Lancet Oncology data the submission cites, nor a formal sequencing guideline positioning alpha-emitters as standard salvage after beta-emitter failure, so treat sequencing as a clinical-trial question rather than settled practice.",
+  "link": "Actinium-225 PSMA targeted alpha therapy in metastatic castration-resistant prostate cancer",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/?term=actinium-225+PSMA+targeted+alpha+therapy+metastatic+castration-resistant+prostate+cancer+after+lutetium",
+  "verify": {
+   "status": "citation not independently verified — evidence level and guideline claim overstated",
+   "note": "The radiobiology is accurately described and the clinical direction is real: 225Ac-PSMA is under active investigation, principally in patients progressing after 177Lu-PSMA. But I could not verify 'multi-center Phase II/III trial data published in The Lancet Oncology' validating it, and the published evidence in this area is dominated by early-phase and dose-finding work. The claim that this 'establishes a formal sequencing guideline... positioning Alpha-emitters as the primary targeted radiation salvage after Beta-emitter failure' is not supported. ADDED: salivary gland xerostomia as the dose-limiting toxicity — the submission asserts alpha therapy 'minimis[es] toxicity to neighboring healthy tissues' on the strength of path length alone, which is true of the physics but not of the clinical experience, where salivary uptake is the constraint. Actinium-225 supply limitation added as the practical barrier."
+  }
+ },
+ {
+  "title": "Weekly versus Three-Weekly Cisplatin with Postoperative Radiotherapy in Head and Neck Cancer (JCOG1008)",
+  "journal": "Journal of Clinical Oncology",
+  "date": "Primary report 2022; long-term follow-up 2025 to 2026",
+  "breakthrough": "JCOG1008 tested weekly cisplatin 40 mg/m² against three-weekly cisplatin 100 mg/m² concurrent with postoperative radiotherapy in high-risk head and neck squamous cell carcinoma, and found weekly dosing non-inferior. Long-term follow-up addresses whether that non-inferiority is maintained.",
+  "impact": "The three-weekly 100 mg/m² schedule is effective and punishing. If a gentler schedule holds up over years rather than months, the practical gain is patients completing radiotherapy without interruption.",
+  "practical": "Weekly cisplatin is a reasonable primary choice, particularly in a patient whose renal function, hearing or performance status makes 100 mg/m² hard to deliver. Two points of precision: the comparison is specifically in the POSTOPERATIVE setting, and non-inferiority in that setting should not be assumed to transfer to definitive chemoradiotherapy without surgery, where the evidence differs. Cumulative cisplatin dose remains the variable associated with outcome, so the schedule matters less than reaching the intended total.",
+  "link": "JCOG1008 — weekly versus three-weekly cisplatin with postoperative radiotherapy",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/?term=JCOG1008+weekly+cisplatin+3-weekly+postoperative+chemoradiotherapy+head+and+neck+noninferiority",
+  "verify": {
+   "status": "citation not independently verified — long-term data unconfirmed, setting boundary added",
+   "note": "JCOG1008 is a real trial and its primary non-inferiority result for weekly 40 mg/m² against three-weekly 100 mg/m² cisplatin with postoperative radiotherapy is established in the literature. I did not verify the long-term follow-up publication the submission cites or its findings, so maintained non-inferiority is described as the question rather than asserted, and the claim that NCCN and ESTRO guidelines now cement weekly cisplatin as an equal standard is not confirmed. ADDED: the setting boundary — this is postoperative chemoradiotherapy, and the weekly-versus-three-weekly question in DEFINITIVE chemoradiotherapy has different evidence — plus the point that cumulative dose is the outcome-associated variable. The submission's toxicity claims (emesis, nephrotoxicity, hospitalisations) are directionally consistent with the known profile but the specific reductions were not verified."
+  }
+ },
+ {
+  "title": "SBRT with Fc-Enhanced Dual Checkpoint Blockade in MSS Colorectal Liver Metastases",
+  "journal": "Phase II trial reporting",
+  "date": "2025 to 2026",
+  "breakthrough": "A phase II trial combined botensilimab and balstilimab — an Fc-enhanced anti-CTLA-4 with an anti-PD-1 — with stereotactic body radiotherapy to liver metastases in microsatellite stable colorectal cancer, testing whether focal radiation can make an immunologically cold tumour responsive.",
+  "impact": "MSS colorectal cancer is the canonical checkpoint-inhibitor failure, and liver metastases are the canonical site of immune tolerance. If radiation can convert that, the implication extends well beyond colorectal cancer.",
+  "practical": "Trial-only, and the framing deserves scepticism even if the result is positive: the abscopal effect is frequently invoked and rarely demonstrated, and in a trial giving both systemic dual checkpoint blockade and radiotherapy, a response outside the irradiated field cannot be attributed to radiation without a comparator arm that omits it. Botensilimab's Fc enhancement also brings substantial immune-related toxicity. I could not verify the trial's results, size or design.",
+  "link": "Botensilimab and balstilimab with SBRT in MSS colorectal liver metastases",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/?term=botensilimab+balstilimab+SBRT+microsatellite+stable+colorectal+liver+metastases",
+  "verify": {
+   "status": "citation not independently verified — the abscopal claim is not testable in this design",
+   "note": "Botensilimab and balstilimab are real agents with genuine activity signals in MSS colorectal cancer, and combining them with SBRT is a real trial concept. I did not verify this specific trial, its enrolment or its outcomes, so no result is asserted. THE SUBSTANTIVE CORRECTION is the submission's claim that the trial 'prov[es] that precise focal SBRT can trigger a systemic abscopal immune response when paired with next-generation immunotherapies'. In a single-arm or non-comparative design giving both systemic dual checkpoint blockade and radiotherapy, out-of-field response cannot be attributed to the radiation — that requires a comparator arm without it. The abscopal effect is invoked far more often than it is demonstrated, and the entry says so. Botensilimab's immune-related toxicity added, since the submission mentions none."
+  }
+ },
+ {
+  "title": "Adjuvant Avelumab After Radiotherapy in Merkel Cell Carcinoma (ADAM)",
+  "journal": "Phase III trial reporting",
+  "date": "2025 to 2026",
+  "breakthrough": "The ADAM trial is a randomised, double-blind phase III study of adjuvant avelumab, an anti-PD-L1 antibody, in Merkel cell carcinoma following definitive local therapy including radiotherapy.",
+  "impact": "Merkel cell carcinoma is rare, aggressive, and unusually immunoresponsive — checkpoint blockade transformed the metastatic setting, so whether it prevents relapse after local treatment is the obvious next question. Rarity is why a randomised trial here is notable at all.",
+  "practical": "Before quoting this, note that adjuvant checkpoint blockade has a mixed record across tumour types, and a trial being randomised and double-blind does not tell you which way it came out. I could not verify the ADAM results, the direction of effect, or the claim that NCCN and ASCO cutaneous carcinoma guidelines now recommend post-radiation anti-PD-L1 maintenance for high-risk localised and oligometastatic disease — so treat the recommendation as unconfirmed and check the primary report. In practice, patients with Merkel cell carcinoma should be discussed in a specialist multidisciplinary setting given how rare it is.",
+  "link": "ADAM — adjuvant avelumab in Merkel cell carcinoma",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/?term=ADAM+trial+adjuvant+avelumab+Merkel+cell+carcinoma+randomized+phase+3",
+  "verify": {
+   "status": "citation not independently verified — including the direction of the result",
+   "note": "ADAM is a real trial name for adjuvant avelumab in Merkel cell carcinoma. I could not verify its results, and this is the entry where that matters most: the submission states it 'demonstrated that incorporating anti-PD-L1 immunotherapy... significantly improves relapse-free survival' and that it 'rewrites NCCN and ASCO cutaneous carcinoma guidelines'. Adjuvant checkpoint blockade has produced both positive and negative trials across tumour types, and given that this same review found IMvoke010 (adjuvant atezolizumab in head and neck cancer) to be negative while NIVOPOSTOP was positive, the direction of an unverified adjuvant immunotherapy result should not be assumed. Written so the trial and its question are described without asserting the outcome, and flagged for the physician to confirm before this is read as a recommendation."
+  }
+ },
+ {
+  "title": "Tislelizumab with Induction Chemotherapy and Chemoradiotherapy in Oesophageal Squamous Cell Carcinoma (EC-CRT-002)",
+  "journal": "Journal of Clinical Oncology",
+  "date": "2026",
+  "breakthrough": "EC-CRT-002 is a randomised trial adding tislelizumab, an anti-PD-1 antibody, to induction chemotherapy followed by concurrent chemoradiotherapy in locally advanced oesophageal squamous cell carcinoma, in a definitive non-operative organ-preservation strategy.",
+  "impact": "Oesophagectomy is among the most morbid operations in oncology, so a definitive chemoradiotherapy strategy good enough to avoid it has value beyond the survival curve.",
+  "practical": "The submission labels this phase II in its title and describes it as a randomised trial — that distinction matters for whether it changes practice or motivates a phase III. Complete clinical response is the endpoint that enables organ preservation, but it is a surrogate: a complete clinical response is not a pathological one, and surveillance after non-operative management has to be intensive enough to catch salvageable local failure. I could not verify the trial's results or effect size.",
+  "link": "EC-CRT-002 — tislelizumab with induction chemotherapy and chemoradiotherapy in oesophageal squamous cell carcinoma",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/?term=EC-CRT-002+tislelizumab+induction+chemotherapy+chemoradiotherapy+esophageal+squamous+cell+carcinoma",
+  "verify": {
+   "status": "citation not independently verified",
+   "note": "Tislelizumab is a real agent with an oesophageal squamous cell carcinoma programme, and EC-CRT-002 follows a real trial-naming series in this field, so the entry is plausible. I did not verify the publication, results or effect size, so the PFS improvement the submission describes as 'markedly improve[d]' is not asserted. Note an internal inconsistency in the submission: the entry is titled 'Phase II EC-CRT-002' while the text describes practice-changing guideline impact — a randomised phase II motivates a phase III rather than shifting protocols. ADDED: the surrogate-endpoint caution, because organ preservation rests on complete CLINICAL response, which is not the same as pathological complete response, and the intensity of surveillance required is what makes non-operative management safe or unsafe."
+  }
+ }
+]
