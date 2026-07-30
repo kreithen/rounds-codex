@@ -1,13 +1,24 @@
 # Clinical guideline citation checks — for sign-off
 
-10 entries checked. Grouped worst-first by what a reader would take away if the
+17 entries checked. Grouped worst-first by what a reader would take away if the
 entry shipped as submitted. Every entry below is live in the app in its CORRECTED form; this
 document records what was changed and why, so any of it can be reverted.
 
 | verdict | entries |
 |---|---|
+| Findings stated backwards — a reader would learn the opposite of the published result | 1 |
 | Citation not independently verified | 3 |
-| Corrected — dates, journals, numbers, strength of claim | 7 |
+| Corrected — dates, journals, numbers, strength of claim | 13 |
+
+---
+
+## Findings stated backwards — a reader would learn the opposite of the published result
+
+### Preventive Medicine 2026 #7 — Gut Microbiome Testing in Practice: What Is and Is Not Established
+
+**REVERSED — presented as established clinical practice; almost none of it is, and the citation was a spa company**
+
+THE CITATION IS THE FIRST PROBLEM. The submission's source is 'Healing Holidays Health Journal' — Healing Holidays is a wellness-retreat travel company, not a medical journal. No entry in this project has previously cited a commercial wellness vendor as evidence. THE CONTENT IS THE SECOND. The submission claims clinical trials have produced 'validated dietary and psychobiotic therapeutic algorithms' for systemic inflammation, metabolic dysfunction and mood disorders, that microbiome assessment has moved 'into evidence-based integrative clinical guidelines for managing metabolic syndrome and gut-brain axis conditions', and that clinicians have 'actionable diagnostic tools to prescribe targeted microbial strains, prebiotic fibers, and barrier-repair protocols'. None of that is established: there is no validated microbiome test that directs therapy, no guideline recommending microbiome profiling for these indications, and no approved psychobiotic. The only FDA-approved microbiome-directed therapies are Rebyota and Vowst, both for recurrent C. difficile. Rewritten to state what is approved and to give the clinician something to say to a patient holding a commercial test result — the submitted version would have supported selling profiling and strain prescriptions on no evidence.
 
 ---
 
@@ -76,3 +87,39 @@ Verified: SELECT, NEJMoa2307563, PMID 37952131, 17,604 participants (8,803 semag
 **matched with corrections — the headline figure depends on which assay is used**
 
 Verified: phase 2 KRAKEN trial published in JAMA, muvalaplin as the first oral small-molecule Lp(a) disruptor, 12-week primary endpoint. ONE SUBSTANTIVE CORRECTION: the submission cites a single figure, 'reduced circulating Lp(a) levels by up to 85%', without saying which assay produced it. The trial reported placebo-adjusted reductions of up to 85.8% by intact Lp(a) particle assay but up to 70.0% by conventional apo(a) assay — a 15-point difference driven by assay method, since apo(a) assays also detect fragments. Reporting only the higher number would overstate what a clinician's own laboratory would measure. Both are now given with the reason they differ. Date corrected to 2024, and the phase-2 status made explicit.
+
+### Preventive Medicine 2026 #1 — 2026 AHA/ACC/ADA/ASN Guideline for Cardiovascular-Kidney-Metabolic (CKM) Syndrome
+
+**matched with corrections — stage count and two claims about scope**
+
+Verified and correctly identified: the first-ever CKM syndrome guideline, issued 9 June 2026 by ACC, AHA, ADA and ASN, co-published in Circulation and JACC. THREE CORRECTIONS. (1) STAGE COUNT: the submission says 'a standardized four-stage framework (Stages 0-4)', which is self-contradictory — 0 through 4 is five stages, and stage 4 is further split into 4a and 4b. The actual stages and their definitions are now given. (2) 'Mandates routine staging using waist circumference, eGFR and uACR starting in young adulthood' — the measures are plausible and eGFR/uACR are central, but I could not confirm a mandate or the young-adulthood starting point, so the entry describes the staging without asserting either. (3) 'Retires isolated disease-silo guidelines' overstates it; the guideline adds a cross-cutting framework rather than withdrawing the single-disease guidelines, which remain in force. The submission's practical point about combined organ-protective pharmacotherapy is sound and is kept.
+
+### Preventive Medicine 2026 #2 — 2026 ACC/AHA/Multisociety Guideline on the Management of Dyslipidemia
+
+**matched with corrections — real, and broader than submitted**
+
+Verified: the 2026 ACC/AHA/AACVPR/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA dyslipidemia guideline, published in JACC and co-published in Circulation in March 2026. Every submitted element checks out — PREVENT replacing legacy calculators, universal Lp(a) screening, expanded primary-prevention thresholds for statin and non-statin therapy. FOUR ADDITIONS the submission omits, all of which change what a clinician does: it replaces the 2018 blood cholesterol guideline; it covers CHILDREN as well as adults, with separate Lp(a) considerations under 18; it adds apoB alongside Lp(a) as an expanded biomarker; and it accounts for five newly FDA-approved lipid-lowering therapies. The submitted claim about incorporating social determinants of health could not be separately confirmed for this guideline (it is confirmed for PREVENT itself, which the guideline adopts), so it is not asserted independently.
+
+### Preventive Medicine 2026 #3 — Lancet HIV Report: A Paradigm Shift in Care for Older Adults Living with HIV
+
+**matched with corrections — document type and the guideline claim**
+
+Verified and very current: published online in The Lancet HIV on 27 July 2026, presented 28 July at AIDS 2026 in Rio de Janeiro, led by Johns Hopkins Bloomberg School of Public Health and Yale School of Medicine with more than 40 institutions and nine people living with HIV. THREE CORRECTIONS. (1) DOCUMENT TYPE: the submission titles it a 'Lancet Commission Report'. It is a report in The Lancet HIV; a Lancet Commission is a distinct branded format, and the attribution matters when someone goes looking for it. (2) 'Formally incorporates... into standard HIV management guidelines' — a report recommends, it does not amend guidelines; reworded. (3) The submission lists 'aggressive early screening for cardiovascular disease, osteopenia, and metabolic dysfunction' as recommendations; the confirmed recommendations are monitoring physiological age and functional decline, minimising polypharmacy, and promoting mental health and lifestyle, so those are used instead. ADDED: nearly a third of people with HIV were over 50 in 2025 and half will be by 2040, which is the argument for the whole report and is missing from the submission.
+
+### Preventive Medicine 2026 #4 — Multi-Cancer Early Detection Blood Testing: Specificity Is Not the Problem, Sensitivity Is
+
+**matched with corrections — the omitted number is the one that matters**
+
+The technology and the specificity claim are verified: >50 cancer types from a single draw, tissue-of-origin prediction, specificity 99.5% in case-control validation and 99.1% in prospective PATHFINDER, with real-world PPV of 49.4% over 111,080 tests. ONE MAJOR CORRECTION, identical to the one applied to this topic in the pathology list: the submission cites specificity >99% and concludes that primary care can 'identify hard-to-screen malignancies... at earlier, surgically curable stages', while omitting sensitivity entirely. Prospective sensitivity in asymptomatic people was 28.9%. Presenting a test that misses roughly seven cancers in ten as a way to catch hard-to-screen malignancies is the most misleading framing available, so the entry leads the practical field with it and states that no guideline recommends MCED for screening. Also corrected the journal attribution: the submission's link points at The Lancet's home page; the large real-world dataset is in Nature Communications and the validation in Annals of Oncology. CROSS-SPECIALTY NOTE: this development also appears under pathology, written to the laboratory's confirmatory role; this entry is written to the primary-care screening decision.
+
+### Preventive Medicine 2026 #5 — Epigenetic Clocks as Biomarkers of Biological Ageing
+
+**corrected — the clinical claims are not established and the citation was a press release**
+
+The underlying science is real: DNA methylation clocks do predict mortality, frailty and chronic disease onset independent of chronological age in cohort studies, and the submission is right about that much. THE CLINICAL CLAIMS ARE NOT. (1) The submission says this 'establishes clinical protocol benchmarks for tracking biological age deceleration in response to structured lifestyle, metabolic, and pharmacologic interventions'. No such benchmarks exist — there is no validated reference range, no actionable threshold, no demonstration that a clock reading responds interpretably to an intervention in an individual, and different clocks disagree on the same sample. (2) It says clinicians are 'equipped with objective molecular feedback to measure whether patient-specific interventions... are slowing underlying cellular aging'. That is precisely what has not been shown, and it is what direct-to-consumer biological-age tests are sold on. (3) The submitted citation is a Mass General Brigham news page, not a study — a press release standing in for evidence. Rewritten so the research finding is credited and the clinical claim is refused, because a patient will bring one of these tests to a visit and the clinician needs to know what it does not mean.
+
+### Preventive Medicine 2026 #6 — RSV Vaccination Extended to Adults Aged 50 to 59 at Increased Risk
+
+**corrected — narrowed to RSV, and the recommendation is risk-based not universal**
+
+TWO CORRECTIONS. (1) SCOPE: the submission bundles pneumococcal and RSV into one entry, but the pneumococcal age-50 change is already the 2025 entry in this specialty, so under the deduplication rule this entry is narrowed to the RSV extension, which is genuinely separate. (2) The submission describes lowering the threshold 'for universal pneumococcal conjugate (PCV20/PCV21) and RSV vaccination down to adults aged 50-64 with chronic health conditions' and then says it 'simplifies immunization schedules into age-based primary care prompts starting at age 50'. Those two statements conflict: a recommendation limited to people with chronic conditions is risk-based, not age-based, and cannot be an automatic age prompt. The RSV extension to 50-59 applies to those at increased risk of severe disease, and the entry says so. Added that adult RSV vaccination is a single dose without a revaccination recommendation, since the submission implies an annual wellness-visit prompt. The submitted claim that this 'reduces winter hospitalizations for exacerbations of COPD, asthma, heart failure, and diabetes' is a mechanism rather than a measured outcome of the age extension and is not asserted as one.

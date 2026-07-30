@@ -151,3 +151,107 @@ literature search, not a medical re-read — see `VERIFICATION.md` for the metho
 [KDIGO clinical practice guidelines](https://kdigo.org/guidelines/)
 
 > **Citation check — ⚠ citation not independently verified — direction well supported, cited sources not confirmed.** The clinical direction is well established: SGLT2 inhibitors reduce kidney disease progression and cardiovascular events in chronic kidney disease irrespective of diabetes status, and both KDIGO and ADA guidance support albuminuria screening and early initiation. But I did NOT verify the specific 'pooled clinical trial analyses published in The Lancet' the submission cites, and the submitted hyperlink is The Lancet's home page rather than a paper — the same signal as the AI calcium entry. 'Mandate' is also too strong for guideline recommendations and has been reworded. The entry is written around what is genuinely actionable and verifiable in primary care — annual uACR, treating albuminuria as an indication rather than an observation — rather than around a named analysis I could not pin down. Flagged for the physician to supply or confirm the primary citation.
+
+---
+
+## 2026
+
+7 entries · **7 with a citation problem — see the checks below**
+
+### 1. 2026 AHA/ACC/ADA/ASN Guideline for Cardiovascular-Kidney-Metabolic (CKM) Syndrome
+
+*Circulation and JACC (co-published) · 9 June 2026*
+
+**The breakthrough.** The first guideline of its kind, issued jointly by the ACC, AHA, American Diabetes Association and American Society of Nephrology. It stages CKM syndrome from 0 to 4: stage 0 is no CKM risk factors; stage 1 is overweight, obesity or prediabetes without other metabolic risk factors; stage 2 is metabolic risk factors — hypertension, hypertriglyceridaemia, metabolic syndrome, type 2 diabetes — or chronic kidney disease or both; stage 4 is clinical cardiovascular disease within CKM syndrome, split into 4a without kidney failure and 4b with it (eGFR <15 mL/min/1.73 m² or requiring chronic kidney replacement therapy).
+
+**Clinical guideline impact.** Puts four specialties behind one framework for what has always been one overlapping disease process. The staging is the practical output: it names a point at which overweight or prediabetes alone already constitutes a stage, rather than a risk factor to watch.
+
+**Practical implications.** Learn the stage boundaries, because they determine when combined organ protection becomes appropriate — SGLT2 inhibitors, GLP-1 receptor agonists and nonsteroidal mineralocorticoid receptor antagonists deployed before end-organ damage rather than after it. Note the 4a/4b split: kidney failure changes both prognosis and drug choice, which is why it is separated. The guideline reviews excess weight, blood pressure, lipids, glucose and kidney function as the risk-factor set.
+
+[ACC — first-ever guideline addresses CKM syndrome](https://www.acc.org/latest-in-cardiology/journal-scans/2026/06/08/17/44/first-ever-guideline-addresses-ckm-syndrome)
+
+> **Citation check — ⚠ matched with corrections — stage count and two claims about scope.** Verified and correctly identified: the first-ever CKM syndrome guideline, issued 9 June 2026 by ACC, AHA, ADA and ASN, co-published in Circulation and JACC. THREE CORRECTIONS. (1) STAGE COUNT: the submission says 'a standardized four-stage framework (Stages 0-4)', which is self-contradictory — 0 through 4 is five stages, and stage 4 is further split into 4a and 4b. The actual stages and their definitions are now given. (2) 'Mandates routine staging using waist circumference, eGFR and uACR starting in young adulthood' — the measures are plausible and eGFR/uACR are central, but I could not confirm a mandate or the young-adulthood starting point, so the entry describes the staging without asserting either. (3) 'Retires isolated disease-silo guidelines' overstates it; the guideline adds a cross-cutting framework rather than withdrawing the single-disease guidelines, which remain in force. The submission's practical point about combined organ-protective pharmacotherapy is sound and is kept.
+
+### 2. 2026 ACC/AHA/Multisociety Guideline on the Management of Dyslipidemia
+
+*JACC, co-published in Circulation · March 2026*
+
+**The breakthrough.** Replaces the 2018 blood cholesterol guideline and covers primordial, primary and secondary prevention in both adults and children. It incorporates the AHA PREVENT-ASCVD equations in place of legacy risk calculators, expands the primary-prevention population eligible for or considered for lipid-lowering therapy using PREVENT plus risk-enhancing factors including reproductive risk markers, updates LDL-C goals, broadens biomarker use to apoB and Lp(a), and accounts for five newly FDA-approved lipid-lowering therapies. Most consequentially, it recommends UNIVERSAL screening of adults for elevated Lp(a), with separate considerations for testing children under 18.
+
+**Clinical guideline impact.** Universal adult Lp(a) screening is the change with the widest reach — it converts a test ordered by specialists into a once-in-a-lifetime measurement for everyone, identifying causal ASCVD risk that is independent of LDL-C and invisible on a standard lipid panel.
+
+**Practical implications.** Order Lp(a) once in every adult; it is genetically determined and stable, so repeat testing adds nothing. Move to PREVENT for risk estimation. The ACC's own framing of the guideline is "lower sooner" — the expanded primary-prevention criteria mean more patients qualify for therapy earlier, and reproductive risk markers now count as risk-enhancing. Paediatric guidance is included, which the 2018 document did not cover in this way.
+
+[Circulation — 2026 ACC/AHA/multisociety guideline on the management of dyslipidemia](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001423)
+
+> **Citation check — ⚠ matched with corrections — real, and broader than submitted.** Verified: the 2026 ACC/AHA/AACVPR/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA dyslipidemia guideline, published in JACC and co-published in Circulation in March 2026. Every submitted element checks out — PREVENT replacing legacy calculators, universal Lp(a) screening, expanded primary-prevention thresholds for statin and non-statin therapy. FOUR ADDITIONS the submission omits, all of which change what a clinician does: it replaces the 2018 blood cholesterol guideline; it covers CHILDREN as well as adults, with separate Lp(a) considerations under 18; it adds apoB alongside Lp(a) as an expanded biomarker; and it accounts for five newly FDA-approved lipid-lowering therapies. The submitted claim about incorporating social determinants of health could not be separately confirmed for this guideline (it is confirmed for PREVENT itself, which the guideline adopts), so it is not asserted independently.
+
+### 3. Lancet HIV Report: A Paradigm Shift in Care for Older Adults Living with HIV
+
+*The Lancet HIV · 27 July 2026*
+
+**The breakthrough.** A report led from the Johns Hopkins Bloomberg School of Public Health and Yale School of Medicine, with colleagues at more than 40 institutions and nine people living with HIV, published online 27 July 2026 and presented the following day at AIDS 2026 in Rio de Janeiro. It argues that care for people over 50 with HIV must move beyond antiretroviral therapy to a healthy-ageing model. People over 50 living with HIV tend to have a physiological age greater than their chronological age as a consequence of chronic infection, and carry higher multimorbidity than age-matched people without HIV. Recommendations centre on monitoring physiological age and functional decline, minimising polypharmacy, and promoting mental health and healthy lifestyle — all while maintaining antiretroviral adherence.
+
+**Clinical guideline impact.** The demographics force the issue: nearly a third of people with HIV were over 50 in 2025, and half will be by 2040. A model built around viral suppression is being handed a geriatric population.
+
+**Practical implications.** For a patient over 50 with HIV, add functional and frailty assessment and a polypharmacy review to the visit that already checks viral load and CD4. Brain health deserves specific attention — epigenetic ageing, cardiovascular disease and frailty all appear earlier and more often in this group. Note the status of the document: it is a report making recommendations, not an amendment to HIV treatment guidelines.
+
+[Johns Hopkins — Lancet report recommends paradigm shift in care for older adults with HIV](https://publichealth.jhu.edu/2026/lancet-report-recommends-paradigm-shift-in-care-for-older-adults-with-hiv)
+
+> **Citation check — ⚠ matched with corrections — document type and the guideline claim.** Verified and very current: published online in The Lancet HIV on 27 July 2026, presented 28 July at AIDS 2026 in Rio de Janeiro, led by Johns Hopkins Bloomberg School of Public Health and Yale School of Medicine with more than 40 institutions and nine people living with HIV. THREE CORRECTIONS. (1) DOCUMENT TYPE: the submission titles it a 'Lancet Commission Report'. It is a report in The Lancet HIV; a Lancet Commission is a distinct branded format, and the attribution matters when someone goes looking for it. (2) 'Formally incorporates... into standard HIV management guidelines' — a report recommends, it does not amend guidelines; reworded. (3) The submission lists 'aggressive early screening for cardiovascular disease, osteopenia, and metabolic dysfunction' as recommendations; the confirmed recommendations are monitoring physiological age and functional decline, minimising polypharmacy, and promoting mental health and lifestyle, so those are used instead. ADDED: nearly a third of people with HIV were over 50 in 2025 and half will be by 2040, which is the argument for the whole report and is missing from the submission.
+
+### 4. Multi-Cancer Early Detection Blood Testing: Specificity Is Not the Problem, Sensitivity Is
+
+*Nature Communications and Annals of Oncology · 2021 to 2026*
+
+**The breakthrough.** Targeted cfDNA methylation assays detect a shared cancer signal across more than 50 tumour types from one blood draw and predict the tissue of origin. Real-world data on over 111,080 people gave a cancer signal detection rate of 0.91%, an empirical positive predictive value of 49.4% and 87% accuracy for signal origin. Specificity is consistently high — 99.5% in the case-control validation, 99.1% in the prospective PATHFINDER study.
+
+**Clinical guideline impact.** The high specificity the submission emphasises is real and is what makes a positive result worth acting on: roughly half of positives are true cancers, with the origin correctly predicted around 85 to 87% of the time, which makes the diagnostic workup tractable.
+
+**Practical implications.** The decisive number is the one usually left out. Sensitivity in the prospective asymptomatic population of PATHFINDER was 28.9%; the case-control estimate across more than 50 cancers was 51.5%. A negative result therefore excludes very little, and no patient should be told otherwise — nor should a negative MCED displace mammography, colonoscopy or any established screen. No guideline currently recommends MCED for population screening.
+
+[Nature Communications — real-world data from over 100,000 multi-cancer early detection tests](https://www.nature.com/articles/s41467-025-64094-7)
+
+> **Citation check — ⚠ matched with corrections — the omitted number is the one that matters.** The technology and the specificity claim are verified: >50 cancer types from a single draw, tissue-of-origin prediction, specificity 99.5% in case-control validation and 99.1% in prospective PATHFINDER, with real-world PPV of 49.4% over 111,080 tests. ONE MAJOR CORRECTION, identical to the one applied to this topic in the pathology list: the submission cites specificity >99% and concludes that primary care can 'identify hard-to-screen malignancies... at earlier, surgically curable stages', while omitting sensitivity entirely. Prospective sensitivity in asymptomatic people was 28.9%. Presenting a test that misses roughly seven cancers in ten as a way to catch hard-to-screen malignancies is the most misleading framing available, so the entry leads the practical field with it and states that no guideline recommends MCED for screening. Also corrected the journal attribution: the submission's link points at The Lancet's home page; the large real-world dataset is in Nature Communications and the validation in Annals of Oncology. CROSS-SPECIALTY NOTE: this development also appears under pathology, written to the laboratory's confirmatory role; this entry is written to the primary-care screening decision.
+
+### 5. Epigenetic Clocks as Biomarkers of Biological Ageing
+
+*Cohort and methodological literature · 2023 to 2026*
+
+**The breakthrough.** DNA methylation "clocks" — particularly second- and third-generation measures trained on health outcomes rather than chronological age — predict all-cause mortality, frailty and incident chronic disease over and above chronological age in large cohorts. They are among the most studied candidate biomarkers of biological ageing.
+
+**Clinical guideline impact.** A robust research finding: something measurable in blood tracks the ageing process better than a date of birth. That is the basis for the field, and it is genuine.
+
+**Practical implications.** Do not order one, and be ready to explain why to a patient who has bought one. Predicting outcomes in a cohort is not the same as guiding an individual's care: no epigenetic clock has an established reference range, clinically actionable threshold or demonstrated ability to show that an intervention changed anyone's trajectory, and different clocks disagree on the same sample. Commercial biological-age tests are sold without that validation. If a patient asks what would actually slow their ageing, the honest answer remains blood pressure, lipids, glucose, smoking, activity and sleep — all measurable, all actionable.
+
+[Epigenetic clocks and biological ageing: cohort evidence and clinical limits](https://pubmed.ncbi.nlm.nih.gov/?term=epigenetic+clock+DNA+methylation+mortality+frailty+biological+age+cohort)
+
+> **Citation check — ⚠ corrected — the clinical claims are not established and the citation was a press release.** The underlying science is real: DNA methylation clocks do predict mortality, frailty and chronic disease onset independent of chronological age in cohort studies, and the submission is right about that much. THE CLINICAL CLAIMS ARE NOT. (1) The submission says this 'establishes clinical protocol benchmarks for tracking biological age deceleration in response to structured lifestyle, metabolic, and pharmacologic interventions'. No such benchmarks exist — there is no validated reference range, no actionable threshold, no demonstration that a clock reading responds interpretably to an intervention in an individual, and different clocks disagree on the same sample. (2) It says clinicians are 'equipped with objective molecular feedback to measure whether patient-specific interventions... are slowing underlying cellular aging'. That is precisely what has not been shown, and it is what direct-to-consumer biological-age tests are sold on. (3) The submitted citation is a Mass General Brigham news page, not a study — a press release standing in for evidence. Rewritten so the research finding is credited and the clinical claim is refused, because a patient will bring one of these tests to a visit and the clinician needs to know what it does not mean.
+
+### 6. RSV Vaccination Extended to Adults Aged 50 to 59 at Increased Risk
+
+*CDC / Advisory Committee on Immunization Practices · 2025*
+
+**The breakthrough.** ACIP extended RSV vaccination below the previous age-60 threshold to adults aged 50 to 59 who are at increased risk of severe RSV disease — those with chronic cardiopulmonary, metabolic or other qualifying conditions, or residence in a long-term care facility. This sits alongside the separate lowering of the pneumococcal conjugate vaccine age threshold to 50.
+
+**Clinical guideline impact.** Extends respiratory protection into a decade previously excluded, in the group whose comorbidities make RSV dangerous — the same patients whose COPD, heart failure or diabetes decompensates during a winter viral illness.
+
+**Practical implications.** The RSV extension is risk-based, not universal, which is the practical difference from pneumococcal vaccination at 50: identify the qualifying condition rather than acting on age alone. RSV vaccination for adults is currently a single dose with no recommendation for revaccination, so it does not become an annual prompt. Note that the pneumococcal age change is a separate development, covered under the 2025 list.
+
+[CDC — adult RSV vaccination recommendations](https://www.cdc.gov/vaccines/vpd/rsv/hcp/older-adults.html)
+
+> **Citation check — ⚠ corrected — narrowed to RSV, and the recommendation is risk-based not universal.** TWO CORRECTIONS. (1) SCOPE: the submission bundles pneumococcal and RSV into one entry, but the pneumococcal age-50 change is already the 2025 entry in this specialty, so under the deduplication rule this entry is narrowed to the RSV extension, which is genuinely separate. (2) The submission describes lowering the threshold 'for universal pneumococcal conjugate (PCV20/PCV21) and RSV vaccination down to adults aged 50-64 with chronic health conditions' and then says it 'simplifies immunization schedules into age-based primary care prompts starting at age 50'. Those two statements conflict: a recommendation limited to people with chronic conditions is risk-based, not age-based, and cannot be an automatic age prompt. The RSV extension to 50-59 applies to those at increased risk of severe disease, and the entry says so. Added that adult RSV vaccination is a single dose without a revaccination recommendation, since the submission implies an annual wellness-visit prompt. The submitted claim that this 'reduces winter hospitalizations for exacerbations of COPD, asthma, heart failure, and diabetes' is a mechanism rather than a measured outcome of the age extension and is not asserted as one.
+
+### 7. Gut Microbiome Testing in Practice: What Is and Is Not Established
+
+*Regulatory approvals and review literature · 2023 to 2026*
+
+**The breakthrough.** Microbiome science has produced two FDA-approved live biotherapeutics — fecal microbiota, live-jslm (Rebyota) and fecal microbiota spores, live-brpk (Vowst) — both for preventing recurrence of Clostridioides difficile infection in adults following antibiotic treatment. That is the extent of approved microbiome-directed therapy.
+
+**Clinical guideline impact.** The honest state of the field. There is one indication in which manipulating the microbiome is an approved treatment, and it is recurrent C. difficile — the same condition whose gallery and guideline content this app already carries.
+
+**Practical implications.** Do not order commercial gut microbiome profiling, and do not prescribe strains on the basis of one. There is no validated test that maps a microbiome result to a therapeutic choice, no clinical guideline recommending microbiome assessment for metabolic syndrome or mood disorders, and no approved psychobiotic. Dietary fibre and a predominantly plant-based pattern are worth recommending for reasons that do not require a sequencing result. Patients will arrive with these tests; the useful response is to explain that the report describes their stool rather than directing their treatment.
+
+[FDA — approved live biotherapeutic products for recurrent C. difficile infection](https://www.fda.gov/vaccines-blood-biologics/cellular-gene-therapy-products/rebyota)
+
+> **Citation check — ⚠ REVERSED — presented as established clinical practice; almost none of it is, and the citation was a spa company.** THE CITATION IS THE FIRST PROBLEM. The submission's source is 'Healing Holidays Health Journal' — Healing Holidays is a wellness-retreat travel company, not a medical journal. No entry in this project has previously cited a commercial wellness vendor as evidence. THE CONTENT IS THE SECOND. The submission claims clinical trials have produced 'validated dietary and psychobiotic therapeutic algorithms' for systemic inflammation, metabolic dysfunction and mood disorders, that microbiome assessment has moved 'into evidence-based integrative clinical guidelines for managing metabolic syndrome and gut-brain axis conditions', and that clinicians have 'actionable diagnostic tools to prescribe targeted microbial strains, prebiotic fibers, and barrier-repair protocols'. None of that is established: there is no validated microbiome test that directs therapy, no guideline recommending microbiome profiling for these indications, and no approved psychobiotic. The only FDA-approved microbiome-directed therapies are Rebyota and Vowst, both for recurrent C. difficile. Rewritten to state what is approved and to give the clinician something to say to a patient holding a commercial test result — the submitted version would have supported selling profiling and strain prescriptions on no evidence.

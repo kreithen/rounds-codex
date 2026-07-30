@@ -246,10 +246,11 @@ no backend. This file is context for future sessions — read it before starting
   and strips** — review material, never app content. Anesthesiology is coded **`anes`**. Years sort
   **ascending**, so 2025 sits above 2026 (specified; not newest-first like the rest of the app).
   Built by `scripts/add_clinical_guidelines.js` + `scripts/add_guideline_share.js`.
-  **Live for 17 specialties (313 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `ent`,
+  **Live for 17 specialties (320 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `ent`,
   `fm`, `im`, `neuro`, `nsg`, `obgyn`, `ophtho`, `ortho`, `path`, `peds`, `plastics`, `pmr`, `prev`.
-  **`prev` ships 2025 only** — one year button, which is the right way to handle a single-year
-  specialty: an empty `2026: []` would render a "Coming soon" button instead. Omit the year.
+  A single-year specialty should **omit** the other year, not ship `2026: []` — an empty array
+  renders a "Coming soon" button. `prev` shipped that way for one deploy before its 2026 arrived.
+  **`prev` 2026 has 7**: four submitted entries repeated its own 2025 list.
   Reachable from the home page via the purple CLINICAL UPDATES button and at `/u/`.
   **`pmr` has 8/3, not 10/10**: the two submitted PM&R lists were 9/10 the same studies, so each
   distinct item went to the year its development actually belongs to (three verified 2026, eight
@@ -266,7 +267,7 @@ no backend. This file is context for future sessions — read it before starting
   **Do not assume a repeated suspicious name is the same error.** `amivantamab` appeared a third
   time, in ENT, and that one is REAL — OrigAMI-4 (ORR 56%, n=39) and phase 3 OrigAMI-5 are a genuine
   HNSCC programme. Check each occurrence.
-  **Every submitted entry must be citation-checked before merging.** Across all 313: 23 stated the
+  **Every submitted entry must be citation-checked before merging.** Across all 320: 24 stated the
   opposite of the published result, 16 cited studies that could not be found, 18 named the wrong
   study, 63 could not be resolved to a citation, and 11 were clean — the teaching was usually sound,
   the sourcing was not. `CORRECTIONS-all.md` is the running record, regenerated over every staging
@@ -280,6 +281,12 @@ no backend. This file is context for future sessions — read it before starting
   grouped all three, which is how the unapproved one travels. Same class of check caught a
   **paediatric safety inversion**: the omalizumab entry said the drug eases "reliance on strict food
   avoidance" — it does not, and a family acting on that could feed a child an allergen.
+  **Check what the cited publication actually is.** Preventive Medicine 2026 sourced its gut
+  microbiome entry to "Healing Holidays Health Journal" — a wellness-retreat travel company — and
+  its AI-calcium entry to Definitive Healthcare, a commercial data vendor. A press release also
+  stood in for evidence twice (Mass General Brigham News, Lilly investor releases). The microbiome
+  entry claimed validated psychobiotic algorithms and microbiome-directed clinical guidelines exist;
+  the only FDA-approved microbiome therapies are Rebyota and Vowst, both for recurrent C. difficile.
   **A hyperlink pointing at a journal home page is a tell.** Three Preventive Medicine entries
   cited "The Lancet" or "Lancet Digital Health" with a link to the journal's front door rather than
   an article — and all three were the entries whose specifics could not be resolved. Check the link
