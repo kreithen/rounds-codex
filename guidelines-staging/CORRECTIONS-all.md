@@ -1,6 +1,6 @@
 # Clinical guideline citation checks — for sign-off
 
-173 entries checked. Grouped worst-first by what a reader would take away if the
+193 entries checked. Grouped worst-first by what a reader would take away if the
 entry shipped as submitted. Every entry below is live in the app in its CORRECTED form; this
 document records what was changed and why, so any of it can be reverted.
 
@@ -9,9 +9,9 @@ document records what was changed and why, so any of it can be reverted.
 | Findings stated backwards — a reader would learn the opposite of the published result | 17 |
 | Cited study could not be found | 6 |
 | Evidence level inflated — case report presented as a trial | 2 |
-| Citation not independently verified | 55 |
-| Wrong study or replaced | 8 |
-| Corrected — dates, journals, numbers, strength of claim | 77 |
+| Citation not independently verified | 60 |
+| Wrong study or replaced | 9 |
+| Corrected — dates, journals, numbers, strength of claim | 91 |
 | Matched — no correction needed | 8 |
 
 ---
@@ -510,6 +510,36 @@ No specific ACOG guideline update endorsing CGM in GDM was located; the url is a
 
 ERAS in gynaecologic oncology is well established, but the specific multi-centre study was not located; the url is a PubMed title search, so the '2 days shorter stay' and '35% fewer surgical site infections' figures are not asserted. 'Establish MANDATORY perioperative pathways' softened — society guidelines recommend rather than mandate. Added the study-design caveat: much of this literature is before-and-after rather than randomised, which is the main reason to treat the effect sizes as indicative.
 
+### Ophthalmology 2025 #8 — Standalone Trabecular Micro-Bypass Surgery in Open-Angle Glaucoma
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific five-year standalone MIGS publication was located; the url is a PubMed title search. 'Reconfigured surgical glaucoma practice standards' could not be confirmed and was softened. Added the physiological ceiling — trabecular bypass cannot lower pressure below episcleral venous pressure — because the submission implied MIGS could substitute for trabeculectomy generally, and for advanced disease requiring low targets it cannot.
+
+### Ophthalmology 2026 #2 — Photobiomodulation in Intermediate Dry AMD (LIGHTSITE III)
+
+**NOT INDEPENDENTLY VERIFIED**
+
+LIGHTSITE III is a real trial published in Retina, but this specific 24-month report was not located; the url is a PubMed title search, so the submitted '+6.2 letters at 21 months' figure is not asserted. 'ESTABLISHES non-invasive office-based light therapy as an early-stage option' overstates a single sponsored trial programme, and has been reframed. Added AREDS2 and smoking cessation, which remain the standard of care and which the submission's framing risks displacing.
+
+### Ophthalmology 2026 #4 — Faricimab Long-Term Extension Data (AVONELLE-X, RHONE-X)
+
+**NOT INDEPENDENTLY VERIFIED**
+
+AVONELLE-X and RHONE-X are real extension trials but this specific 4-year report was not located; the url is a PubMed title search. 'Dual-pathway inhibition is ENDORSED for treatment-resistant retinal fluid... providing GREATER VASCULAR STABILITY than anti-VEGF monotherapy' could not be confirmed and overstates non-inferiority data. Added the selection-bias caveat on switch studies, which is why real-world switching data read better than randomised comparisons.
+
+### Ophthalmology 2026 #7 — Direct Selective Laser Trabeculoplasty
+
+**NOT INDEPENDENTLY VERIFIED**
+
+DSLT is a real technology but the specific trials and the AAO Preferred Practice Pattern update were not located; the url is a PubMed title search. Added the LiGHT trial, which is the evidence that makes laser-first glaucoma therapy defensible at all and which the submission did not mention — without it, the entry describes a delivery improvement to an intervention whose rationale is left unstated.
+
+### Ophthalmology 2026 #8 — Point-of-Care Autonomous AI for Diabetic Retinopathy Screening
+
+**NOT INDEPENDENTLY VERIFIED**
+
+Autonomous AI DR screening is real and FDA-cleared products exist, but this specific real-world validation was not located; the url is a PubMed title search, so the submitted '95.7% diagnostic completion rate' is not asserted, and the named commercial platform has been removed from the title. 'Clinical endocrinology and primary care guidelines NOW SUPPORT point-of-care autonomous AI exams' could not be confirmed. This topic also appears in the 2025 list; the entries were kept distinct because the 2025 one covers the underlying validation and this one covers real-world deployment.
+
 ---
 
 ## Wrong study or replaced
@@ -561,6 +591,12 @@ No JAMA study evaluating universal perinatal screening paired with primary-care-
 **corrected — the submitted title named the wrong drug**
 
 THE TITLE WAS WRONG: the submission headed this 'Subcutaneous Amivantamab and Disease-Modifying Monoclonal Antibodies in Neurodegenerative Guidelines'. Amivantamab is an EGFR/MET bispecific antibody for non-small-cell lung cancer and has no role in neurodegeneration; the body text described anti-amyloid antibodies, so the title appears to be a substitution error. Corrected to lecanemab and donanemab. The specific publications were not resolved and the url is a PubMed title search. Also added the modest effect size and the MRI/anticoagulation constraints, which determine feasibility and were absent. Kept here once; it appeared in both neurology lists.
+
+### Ophthalmology 2025 #10 — Topical Chemotherapy for Ocular Surface Squamous Neoplasia
+
+**REPLACED — the submitted title named the wrong drugs**
+
+THE TITLE WAS WRONG: the submission headed this 'Trifluridine/Tipiracil and Anti-VEGF Combinations in Ocular Surface Squamous Neoplasia'. Trifluridine/tipiracil is Lonsurf, an ORAL agent for metastatic colorectal and gastric cancer, with no role in OSSN; anti-VEGF is not a standard OSSN therapy either. The established topical agents are mitomycin C, 5-fluorouracil and interferon alfa-2b, and the entry has been rewritten accordingly. This is the SECOND wrong-drug title in these submissions — 'amivantamab' appeared in the neurology list where anti-amyloid antibodies were meant. Also corrected: the submission said topical therapy avoids limbal stem cell deficiency, when mitomycin C is a recognised CAUSE of it.
 
 ---
 
@@ -1027,6 +1063,90 @@ Fertility-sparing surgery is real and guideline-endorsed for selected early dise
 **corrected — the erosion rate was understated by roughly fivefold**
 
 No specific 2026 registry publication or AUGS/IUGA joint guideline was located; the url is a PubMed title search. THE CORRECTION MATTERS FOR CONSENT: the submission claimed 'extremely low erosion rates (<2%)'. The extended CARE trial — the longest randomised follow-up of abdominal sacrocolpopexy — reported mesh erosion approaching 10% by 7 years. Quoting under 2% to a patient would materially misstate the risk. 'Re-established... as the high-grade gold standard' softened, and the transvaginal-versus-abdominal mesh distinction was added explicitly, since the submission's unqualified use of 'synthetic mesh' invites exactly the conflation that makes this conversation difficult.
+
+### Ophthalmology 2025 #1 — Faricimab and Extended Dosing in Neovascular AMD (TENAYA, LUCERNE and Extension)
+
+**corrected — year and the nature of the result**
+
+Real; TENAYA and LUCERNE were published in The Lancet in 2022, not 2025, and the url is a PubMed title search since the specific extension publication was not resolved — the submitted 'over 80%' figure is therefore not asserted. TWO CORRECTIONS: the trials were designed as NON-INFERIORITY for visual acuity, so 'without loss of visual acuity' is right but 'dual-pathway agents as primary first-line therapies' overstates a guideline position that was not confirmed. Added that the benefit is interval length rather than better vision, which is what a patient should be told.
+
+### Ophthalmology 2025 #2 — Complement Inhibitors for Geographic Atrophy: Real-World Safety
+
+**corrected — a vision-threatening risk was omitted**
+
+The submission correctly identified exudative conversion and intraocular inflammation as real-world risks, which is more than most entries manage. THE OMISSION MATTERS: occlusive retinal vasculitis after pegcetacoplan, reported by the ASRS ReST Committee in 2023 and absent from DERBY and OAKS, is the vision-threatening complication that prompted a safety alert — and it is now labelled. Also added the differential risk profile between the two agents. 'AAO Preferred Practice Patterns were updated to MANDATE structured OCT monitoring' could not be confirmed; OCT surveillance is retained as practice rather than mandate.
+
+### Ophthalmology 2025 #3 — Gene Therapy for Leber Hereditary Optic Neuropathy (rAAV2/2-ND4)
+
+**corrected — approval status and the control problem**
+
+The trial programme is real, but the specific publication was not resolved and the url is a PubMed title search. TWO CORRECTIONS: the submission said phase 3 results 'CONFIRMED... sustained, bilateral visual acuity restoration' and framed this as a disease-modifying intervention now available — the therapy is NOT FDA-approved, and the bilateral improvement after unilateral injection undermined the intended within-patient control, which is central to interpreting the results. 'Restoration' also overstates partial improvement from a very low baseline. Added the misdiagnosis-as-optic-neuritis point, which is the actionable part.
+
+### Ophthalmology 2025 #4 — Sustained-Release Bimatoprost Implant versus Topical Therapy in Open-Angle Glaucoma
+
+**corrected — duration and a labelled restriction**
+
+The implant is real (FDA-approved 2020) but two claims were wrong. The submission said it 'maintain[s] target IOP control for up to two years following a single administration' — the duration of effect is months, and the product is labelled for a SINGLE administration per eye because of endothelial cell loss on repeat dosing. That restriction is the single most important fact about the drug and was absent. 'Glaucoma society guidelines integrated sustained-release systems... as primary initial therapy options' could not be confirmed; SLT's first-line evidence (LiGHT) was added instead.
+
+### Ophthalmology 2025 #5 — Netarsudil–Latanoprost Fixed Combination for Open-Angle Glaucoma and Ocular Hypertension
+
+**corrected — year**
+
+Real (the MERCURY programme; FDA-approved 2019), not a 2025 trial; the url is a PubMed title search. 'AAO Glaucoma Preferred Practice Patterns incorporated dual-action fixed combinations into step-up algorithms' could not be confirmed and was softened. Added the tolerability profile — hyperaemia, cornea verticillata, subconjunctival haemorrhage — because the submission described only benefits, and hyperaemia is what actually determines whether a patient stays on this drug.
+
+### Ophthalmology 2025 #6 — Low-Concentration Atropine for Childhood Myopia Control (LAMP Study)
+
+**corrected — generalisability**
+
+LAMP is real and the 0.05% conclusion is accurately reported; the specific 5-year publication was not resolved and the url is a PubMed title search. TWO ADDITIONS the submission omitted, both of which bear on whether to prescribe: the LAMP cohort was East Asian children in Hong Kong, and trials in other populations have been less consistent — so 'shifted baseline pharmacotherapy recommendations' overstates a globally settled position. Also 'minimal rebound effect upon cessation' is contestable; rebound is described and tapering is usual.
+
+### Ophthalmology 2025 #7 — Autonomous AI Screening for Diabetic Retinopathy in Primary Care
+
+**corrected — year**
+
+Real and well established, with FDA clearances from 2018 rather than a 2025 validation trial; the url is a PubMed title search and the submitted 'over 95% sensitivity' figure is not asserted. 'ADA and AAO JOINT guidelines formally endorsed autonomous AI screening as an EQUIVALENT diagnostic pathway to dilated eye exams' overstates — the ADA supports AI screening as an option, and it is not equivalent to a dilated examination, which is the point of the added note about what AI screening does not detect.
+
+### Ophthalmology 2025 #9 — Corneal Cross-Linking Protocols for Progressive Keratoconus
+
+**corrected — regulatory status**
+
+No specific consensus document was located; the url is a PubMed title search. IMPORTANT CORRECTION: the submission said accelerated cross-linking has 'REPLACED legacy Dresden protocols... as the evidence-based GLOBAL STANDARD of care'. In the US only the epi-off Dresden protocol is FDA-approved, and accelerated and epi-on protocols are off-label — which materially affects what a US surgeon can offer and bill. Added the oxygen-limitation mechanism and the epi-on trade-off, since 'reduces procedure times from 60 to under 20 minutes' presented only the upside.
+
+### Ophthalmology 2026 #1 — GALE Long-Term Extension of Pegcetacoplan in Geographic Atrophy
+
+**corrected — an anatomical endpoint was described as visual benefit**
+
+The GALE extension is real but the specific 5-year publication was not located; the url is a PubMed title search, and the submitted 'reduced lesion growth by approximately 1.5 years' is an unusual formulation that could not be verified. THE CORRECTION: the submission said patients 'experience sustained slowing of VISUAL FIELD LOSS and photoreceptor degradation'. The demonstrated effect is on lesion growth rate; the pivotal trials did not show a functional vision benefit. Added the labelled safety risks, absent here though the 2025 list acknowledged some of them.
+
+### Ophthalmology 2026 #3 — High-Dose Aflibercept 8 mg in Neovascular AMD and Diabetic Macular Edema (PULSAR, PHOTON)
+
+**corrected — year and a misplaced safety concern**
+
+Real (FDA-approved August 2023, trials published 2024), not a 2026 result; the url is a PubMed title search. TWO CORRECTIONS: 'clinical guidelines now recommend high-dose anti-VEGF agents as FIRST-LINE initial therapy' could not be confirmed and overstates a non-inferiority result. And the submission said extended dosing works 'without sacrificing INTRAOCULAR PRESSURE control' — IOP is not the safety issue with intravitreal anti-VEGF; intraocular inflammation is, and that has been corrected.
+
+### Ophthalmology 2026 #5 — Subretinal Gene Therapy for Neovascular AMD (ABBV-RGX-314: ATMOSPHERE, ASCENT)
+
+**corrected — 'cure' language and approval status**
+
+The programme is real and in phase 3, but no results publication was located; the url is a PubMed title search. THE CORRECTION: the submission described this as 'a one-time interventional CURE for neovascular age-related macular degeneration' and said the trials 'VALIDATE gene therapy as a paradigm shift'. The trials are ongoing, the therapy is not approved, and continuous anti-VEGF expression is suppression rather than cure — it does not reverse existing damage. Added that subretinal delivery is a surgical procedure, which the submission mentioned only as a delivery route.
+
+### Ophthalmology 2026 #6 — Travoprost Intracameral Implant (iDose TR) in Open-Angle Glaucoma
+
+**corrected — year and duration claim**
+
+Real; FDA-approved December 2023 rather than a 2026 development, and the url is a PubMed title search since no specific long-term study was located. TWO CORRECTIONS: 'releasing travoprost continuously... over MULTIPLE YEARS' and 'providing 24/7 IOP control without patient adherence barriers' overstate what is established, and the submission omitted that this is a single-administration product with limited repeat-dosing data. The endothelial-safety question is the same one that limits the bimatoprost implant and belongs here.
+
+### Ophthalmology 2026 #9 — Port Delivery System with Ranibizumab (Susvimo): Real-World Safety
+
+**corrected — a market recall was omitted**
+
+No specific ARVO registry presentation was located; the url is a PubMed title search. THE OMISSION: the submission referred to 'historic risk rates of septum dislodgement and endophthalmitis' being 'dramatically reduced' by refined technique, without saying that the device was VOLUNTARILY RECALLED in October 2022 over septum dislodgement and later reintroduced. A patient asking about this implant is often asking because they heard it was withdrawn, and the entry now states it plainly, along with the specific complication profile.
+
+### Ophthalmology 2026 #10 — Early Lens Extraction versus Laser Peripheral Iridotomy in Primary Angle Closure (EAGLE)
+
+**corrected — year and the enrolled population**
+
+EAGLE is real and was published in The Lancet in 2016, not a 2026 update; the url is a PubMed title search since no specific 5-year update was located. THE IMPORTANT CORRECTION: the submission recommended early lens extraction 'for patients over age 50 presenting with primary angle-closure glaucoma OR HIGH INTRAOCULAR PRESSURE WITH SHALLOW ANTERIOR CHAMBERS' — EAGLE required raised IOP or established glaucoma, and extending it to shallow chambers without raised pressure would mean operating on eyes the trial did not study. Added the loss of accommodation, which is the trade-off for a younger patient.
 
 ---
 

@@ -1,0 +1,142 @@
+[
+  {
+    "title": "GALE Long-Term Extension of Pegcetacoplan in Geographic Atrophy",
+    "journal": "Extension of the OAKS and DERBY phase 3 trials",
+    "date": "2026",
+    "breakthrough": "Long-term continuous treatment data from the GALE extension of OAKS and DERBY, reporting sustained slowing of geographic atrophy lesion growth with C3 inhibition, with effect size increasing over time.",
+    "impact": "The effect is on ANATOMY — lesion growth rate — not on visual acuity, which is the central limitation of every complement inhibitor to date. Neither OAKS nor DERBY met a functional vision endpoint, and that has not changed.",
+    "practical": "Counsel on what the treatment does and does not do: it slows the enlargement of atrophy, it does not restore or preserve measured acuity in the trials, and it requires injections indefinitely. Weigh that against the labelled risks — retinal vasculitis, retinal vascular occlusion, intraocular inflammation, endophthalmitis, and a higher rate of conversion to neovascular AMD than sham. For a patient with extrafoveal atrophy and years of useful vision to protect, the calculus differs from one with established foveal involvement.",
+    "link": "Pegcetacoplan long-term extension in geographic atrophy",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=pegcetacoplan+GALE+extension+geographic+atrophy+OAKS+DERBY+lesion+growth",
+    "verify": {
+      "status": "corrected — an anatomical endpoint was described as visual benefit",
+      "note": "The GALE extension is real but the specific 5-year publication was not located; the url is a PubMed title search, and the submitted 'reduced lesion growth by approximately 1.5 years' is an unusual formulation that could not be verified. THE CORRECTION: the submission said patients 'experience sustained slowing of VISUAL FIELD LOSS and photoreceptor degradation'. The demonstrated effect is on lesion growth rate; the pivotal trials did not show a functional vision benefit. Added the labelled safety risks, absent here though the 2025 list acknowledged some of them."
+    }
+  },
+  {
+    "title": "Photobiomodulation in Intermediate Dry AMD (LIGHTSITE III)",
+    "journal": "Retina",
+    "date": "2024, with 24-month data",
+    "breakthrough": "A multicentre double-masked sham-controlled trial of multiwavelength photobiomodulation — 590, 660 and 850 nm light delivered in a series of office sessions — in intermediate dry AMD, reporting improved best-corrected visual acuity and less progression to geographic atrophy in treated eyes.",
+    "impact": "Non-invasive, no injection, and aimed at the stage before atrophy develops — which is the gap in dry AMD care, since complement inhibitors only address established geographic atrophy.",
+    "practical": "Treat the evidence as promising rather than established. This is a single trial programme from a device manufacturer, the acuity gains are small in absolute terms, and photobiomodulation has a long history of positive small trials in other conditions that did not replicate. It is not a substitute for AREDS2 supplementation, smoking cessation and home Amsler monitoring, which remain the evidence-based core of intermediate dry AMD management.",
+    "link": "Retina - LIGHTSITE III photobiomodulation in dry age-related macular degeneration",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=LIGHTSITE+III+photobiomodulation+dry+age-related+macular+degeneration+multiwavelength",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "LIGHTSITE III is a real trial published in Retina, but this specific 24-month report was not located; the url is a PubMed title search, so the submitted '+6.2 letters at 21 months' figure is not asserted. 'ESTABLISHES non-invasive office-based light therapy as an early-stage option' overstates a single sponsored trial programme, and has been reframed. Added AREDS2 and smoking cessation, which remain the standard of care and which the submission's framing risks displacing."
+    }
+  },
+  {
+    "title": "High-Dose Aflibercept 8 mg in Neovascular AMD and Diabetic Macular Edema (PULSAR, PHOTON)",
+    "journal": "The Lancet / NEJM",
+    "date": "2024; FDA approval August 2023",
+    "breakthrough": "Aflibercept 8 mg achieved visual acuity outcomes non-inferior to 2 mg dosing while maintaining most patients on 12- to 16-week intervals — PULSAR in neovascular AMD, PHOTON in diabetic macular edema.",
+    "impact": "Together with faricimab, shifts the competitive question in retina from potency to durability. Both approaches reduce injection frequency without improving letters read.",
+    "practical": "Fewer visits for the patient and less clinic congestion, which in a real practice translates into fewer patients lost to follow-up — the commonest route to avoidable vision loss in nAMD. Note an important safety point the submission got wrong: intraocular pressure is not the relevant concern, but intraocular INFLAMMATION and the rare risk of retinal vasculitis with any intravitreal agent are, and higher-dose formulations warrant attention to that rather than to IOP.",
+    "link": "High-dose aflibercept 8 mg in neovascular AMD and diabetic macular edema",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=aflibercept+8+mg+PULSAR+PHOTON+neovascular+AMD+diabetic+macular+edema+extended+dosing",
+    "verify": {
+      "status": "corrected — year and a misplaced safety concern",
+      "note": "Real (FDA-approved August 2023, trials published 2024), not a 2026 result; the url is a PubMed title search. TWO CORRECTIONS: 'clinical guidelines now recommend high-dose anti-VEGF agents as FIRST-LINE initial therapy' could not be confirmed and overstates a non-inferiority result. And the submission said extended dosing works 'without sacrificing INTRAOCULAR PRESSURE control' — IOP is not the safety issue with intravitreal anti-VEGF; intraocular inflammation is, and that has been corrected."
+    }
+  },
+  {
+    "title": "Faricimab Long-Term Extension Data (AVONELLE-X, RHONE-X)",
+    "journal": "Extension trials of TENAYA/LUCERNE and YOSEMITE/RHINE",
+    "date": "2026",
+    "breakthrough": "Multi-year extension outcomes for faricimab in neovascular AMD (AVONELLE-X) and diabetic macular edema (RHONE-X), reporting maintained anatomical drying and vision with continued dual Ang-2/VEGF-A inhibition.",
+    "impact": "Extension data matter in retina specifically because durability claims made at year 2 have not always survived to year 4, and because patients on these drugs stay on them for the rest of their lives.",
+    "practical": "Switching a patient with persistent subretinal fluid on aflibercept to faricimab is a common and reasonable manoeuvre, and observational data support interval extension after switching. Bear in mind that switch cohorts are selected and unblinded, so reported gains overstate what a randomised comparison would show — regression to the mean does much of the work when you switch a patient at their worst.",
+    "link": "Faricimab long-term extension outcomes",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=faricimab+AVONELLE-X+RHONE-X+extension+neovascular+AMD+diabetic+macular+edema",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "AVONELLE-X and RHONE-X are real extension trials but this specific 4-year report was not located; the url is a PubMed title search. 'Dual-pathway inhibition is ENDORSED for treatment-resistant retinal fluid... providing GREATER VASCULAR STABILITY than anti-VEGF monotherapy' could not be confirmed and overstates non-inferiority data. Added the selection-bias caveat on switch studies, which is why real-world switching data read better than randomised comparisons."
+    }
+  },
+  {
+    "title": "Subretinal Gene Therapy for Neovascular AMD (ABBV-RGX-314: ATMOSPHERE, ASCENT)",
+    "journal": "Phase 3 programme",
+    "date": "Ongoing",
+    "breakthrough": "An AAV8 vector delivering a gene encoding an anti-VEGF Fab fragment, administered subretinally in a single procedure, producing continuous intraocular anti-VEGF protein expression — the aim being to replace repeated injections with one intervention.",
+    "impact": "If it works, it changes the shape of the disease: nAMD becomes a treated condition rather than a lifelong injection schedule. That is a large if, and the trials are still running.",
+    "practical": "Two things to be clear about with a patient who asks. This is not approved and not available outside trials. And it is not a cure — the vector produces an anti-VEGF protein, so it suppresses neovascular activity for as long as expression continues; it does not repair the macula or reverse existing atrophy or scarring. Subretinal delivery is a vitreoretinal surgical procedure with its own risks, which is a different proposition from an office injection.",
+    "link": "ABBV-RGX-314 subretinal gene therapy for neovascular AMD",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=RGX-314+subretinal+gene+therapy+neovascular+AMD+ATMOSPHERE+ASCENT+anti-VEGF",
+    "verify": {
+      "status": "corrected — 'cure' language and approval status",
+      "note": "The programme is real and in phase 3, but no results publication was located; the url is a PubMed title search. THE CORRECTION: the submission described this as 'a one-time interventional CURE for neovascular age-related macular degeneration' and said the trials 'VALIDATE gene therapy as a paradigm shift'. The trials are ongoing, the therapy is not approved, and continuous anti-VEGF expression is suppression rather than cure — it does not reverse existing damage. Added that subretinal delivery is a surgical procedure, which the submission mentioned only as a delivery route."
+    }
+  },
+  {
+    "title": "Travoprost Intracameral Implant (iDose TR) in Open-Angle Glaucoma",
+    "journal": "Glaucoma trials; FDA approval December 2023",
+    "date": "2023-2026",
+    "breakthrough": "A titanium intracameral implant releasing travoprost continuously within the anterior chamber over an extended period, anchored at the trabecular meshwork — sustained-release prostaglandin delivery without daily drops.",
+    "impact": "Part of the same shift as the bimatoprost implant and selective laser trabeculoplasty: moving glaucoma therapy away from a daily action the patient has to remember and toward interventions delivered by the clinician.",
+    "practical": "Addresses non-adherence and preservative-related ocular surface disease, both of which are underestimated causes of progression. Note the constraints that determine who is a candidate: it requires an anterior chamber procedure, is currently indicated for a single administration, and long-term data on repeat dosing and on corneal endothelial safety are limited — the same question that restricted the bimatoprost implant to one administration per eye.",
+    "link": "Travoprost intracameral implant for open-angle glaucoma",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=travoprost+intracameral+implant+iDose+glaucoma+sustained+release+intraocular+pressure",
+    "verify": {
+      "status": "corrected — year and duration claim",
+      "note": "Real; FDA-approved December 2023 rather than a 2026 development, and the url is a PubMed title search since no specific long-term study was located. TWO CORRECTIONS: 'releasing travoprost continuously... over MULTIPLE YEARS' and 'providing 24/7 IOP control without patient adherence barriers' overstate what is established, and the submission omitted that this is a single-administration product with limited repeat-dosing data. The endothelial-safety question is the same one that limits the bimatoprost implant and belongs here."
+    }
+  },
+  {
+    "title": "Direct Selective Laser Trabeculoplasty",
+    "journal": "Glaucoma trials and AAO guidance",
+    "date": "2026",
+    "breakthrough": "Automated non-contact direct selective laser trabeculoplasty delivers laser energy through the limbus without a gonioscopy contact lens, in a treatment lasting seconds and requiring less operator skill than conventional SLT.",
+    "impact": "The relevant background is LiGHT, which established conventional SLT as a reasonable FIRST-LINE alternative to drops in open-angle glaucoma, with better outcomes at 6 years and lower cost. DSLT aims to make that intervention deliverable by more clinicians in more settings.",
+    "practical": "The value proposition is access rather than efficacy — a laser that does not need a skilled gonioscopist widens who can deliver first-line laser therapy. Short-term IOP spikes occur after any laser trabeculoplasty and need prophylaxis and a same-day pressure check. Note that DSLT is a newer technology than conventional SLT and has correspondingly less long-term data behind it.",
+    "link": "Direct selective laser trabeculoplasty in open-angle glaucoma",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=direct+selective+laser+trabeculoplasty+DSLT+glaucoma+non-contact+intraocular+pressure",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "DSLT is a real technology but the specific trials and the AAO Preferred Practice Pattern update were not located; the url is a PubMed title search. Added the LiGHT trial, which is the evidence that makes laser-first glaucoma therapy defensible at all and which the submission did not mention — without it, the entry describes a delivery improvement to an intervention whose rationale is left unstated."
+    }
+  },
+  {
+    "title": "Point-of-Care Autonomous AI for Diabetic Retinopathy Screening",
+    "journal": "British Journal of Ophthalmology",
+    "date": "2026",
+    "breakthrough": "Real-world deployment of a fully autonomous AI diabetic retinopathy screening platform with portable cameras and EHR integration, reporting a high diagnostic completion rate without pharmacological pupil dilation in non-ophthalmic settings.",
+    "impact": "Undilated point-of-care screening integrated into the primary care visit is the configuration that closes the access gap, because it removes both the separate appointment and the hours of blurred vision that follow dilation.",
+    "practical": "A medical assistant can capture the images and the result returns within the visit, so a referral can be made while the patient is still present. Two limits worth stating: a positive result still needs ophthalmology capacity to absorb it, and AI retinopathy screening does not assess for the glaucoma, cataract or macular pathology that a dilated examination would find — so it substitutes for retinopathy screening, not for an eye examination.",
+    "link": "Autonomous AI point-of-care diabetic retinopathy screening",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=autonomous+artificial+intelligence+diabetic+retinopathy+point-of-care+undilated+British+Journal+of+Ophthalmology",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "Autonomous AI DR screening is real and FDA-cleared products exist, but this specific real-world validation was not located; the url is a PubMed title search, so the submitted '95.7% diagnostic completion rate' is not asserted, and the named commercial platform has been removed from the title. 'Clinical endocrinology and primary care guidelines NOW SUPPORT point-of-care autonomous AI exams' could not be confirmed. This topic also appears in the 2025 list; the entries were kept distinct because the 2025 one covers the underlying validation and this one covers real-world deployment."
+    }
+  },
+  {
+    "title": "Port Delivery System with Ranibizumab (Susvimo): Real-World Safety",
+    "journal": "Registry and post-marketing data",
+    "date": "2026",
+    "breakthrough": "A refillable surgically implanted ocular reservoir delivering ranibizumab continuously into the vitreous, refilled in clinic roughly every 6 months — continuous therapy in place of intermittent injections.",
+    "impact": "THE HISTORY MATTERS AND THE SUBMISSION OMITTED IT: Susvimo was VOLUNTARILY RECALLED from the market in October 2022 after septum dislodgement was identified during refill-exchange procedures, and was reintroduced after implant and procedure changes. Endophthalmitis rates were also higher than with intravitreal injection in the pivotal programme.",
+    "practical": "A genuine option for a patient with high treatment burden who is reliably responsive to ranibizumab. But it is a surgical implant with a specific and non-trivial complication profile — endophthalmitis, conjunctival erosion or retraction, implant-related vitreous haemorrhage — and it requires a surgeon trained in the insertion and refill technique. That combination is why uptake has been limited, and the recall is why patients ask about it.",
+    "link": "Port delivery system with ranibizumab: safety and real-world outcomes",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=port+delivery+system+ranibizumab+Susvimo+endophthalmitis+septum+dislodgement+recall",
+    "verify": {
+      "status": "corrected — a market recall was omitted",
+      "note": "No specific ARVO registry presentation was located; the url is a PubMed title search. THE OMISSION: the submission referred to 'historic risk rates of septum dislodgement and endophthalmitis' being 'dramatically reduced' by refined technique, without saying that the device was VOLUNTARILY RECALLED in October 2022 over septum dislodgement and later reintroduced. A patient asking about this implant is often asking because they heard it was withdrawn, and the entry now states it plainly, along with the specific complication profile."
+    }
+  },
+  {
+    "title": "Early Lens Extraction versus Laser Peripheral Iridotomy in Primary Angle Closure (EAGLE)",
+    "journal": "The Lancet",
+    "date": "2016, with long-term follow-up since",
+    "breakthrough": "The EAGLE randomised trial found that clear lens extraction gave better quality-of-life and intraocular pressure outcomes, and was more cost-effective, than laser peripheral iridotomy in patients aged 50 or over with primary angle closure and raised IOP, or primary angle-closure glaucoma.",
+    "impact": "Reframed primary angle closure as a lens-driven disease in this age group: removing the crystalline lens addresses the anatomical mechanism, where iridotomy addresses only the pupillary-block component.",
+    "practical": "The distinction the submission blurred: EAGLE enrolled patients aged 50 and over with primary angle closure and RAISED IOP, or established angle-closure glaucoma — not everyone with a shallow anterior chamber. An asymptomatic narrow angle without raised pressure is not an EAGLE population, and iridotomy remains appropriate there. Clear lens extraction in a phakic patient with good accommodation also means losing it, which matters more at 51 than at 71.",
+    "link": "The Lancet - EAGLE trial, lens extraction versus laser peripheral iridotomy",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=EAGLE+trial+clear+lens+extraction+laser+peripheral+iridotomy+primary+angle+closure+Lancet",
+    "verify": {
+      "status": "corrected — year and the enrolled population",
+      "note": "EAGLE is real and was published in The Lancet in 2016, not a 2026 update; the url is a PubMed title search since no specific 5-year update was located. THE IMPORTANT CORRECTION: the submission recommended early lens extraction 'for patients over age 50 presenting with primary angle-closure glaucoma OR HIGH INTRAOCULAR PRESSURE WITH SHALLOW ANTERIOR CHAMBERS' — EAGLE required raised IOP or established glaucoma, and extending it to shallow chambers without raised pressure would mean operating on eyes the trial did not study. Added the loss of accommodation, which is the trade-off for a younger patient."
+    }
+  }
+]

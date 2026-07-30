@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Faricimab and Extended Dosing in Neovascular AMD (TENAYA, LUCERNE and Extension)",
+    "journal": "The Lancet",
+    "date": "2022, with extension data since",
+    "breakthrough": "Dual inhibition of angiopoietin-2 and VEGF-A with faricimab achieved vision outcomes non-inferior to aflibercept in neovascular AMD, with a large majority of patients maintained on 12- or 16-week dosing intervals in the second year.",
+    "impact": "The durability rather than the potency is the advance. Anti-VEGF therapy works; what limits real-world outcomes is that patients cannot sustain injections every 4 to 8 weeks indefinitely, and undertreatment is the commonest cause of vision loss in nAMD outside a trial.",
+    "practical": "Fewer injections means fewer visits, less transport burden for an elderly patient and less cumulative endophthalmitis risk. Note this is a NON-INFERIORITY result on visual acuity — the gain is in interval length, not in letters read. Extension data (AVONELLE-X) address longer-term durability.",
+    "link": "The Lancet - faricimab in neovascular age-related macular degeneration",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=faricimab+TENAYA+LUCERNE+neovascular+age-related+macular+degeneration+durability",
+    "verify": {
+      "status": "corrected — year and the nature of the result",
+      "note": "Real; TENAYA and LUCERNE were published in The Lancet in 2022, not 2025, and the url is a PubMed title search since the specific extension publication was not resolved — the submitted 'over 80%' figure is therefore not asserted. TWO CORRECTIONS: the trials were designed as NON-INFERIORITY for visual acuity, so 'without loss of visual acuity' is right but 'dual-pathway agents as primary first-line therapies' overstates a guideline position that was not confirmed. Added that the benefit is interval length rather than better vision, which is what a patient should be told."
+    }
+  },
+  {
+    "title": "Complement Inhibitors for Geographic Atrophy: Real-World Safety",
+    "journal": "Ophthalmology / American Journal of Ophthalmology",
+    "date": "2023-2025",
+    "breakthrough": "Pegcetacoplan (C3 inhibitor, FDA-approved February 2023) and avacincaptad pegol (C5 inhibitor) slow geographic atrophy lesion growth. Post-marketing surveillance has defined the safety profile that the pivotal trials did not capture.",
+    "impact": "THE SIGNAL THE PIVOTAL TRIALS MISSED: no cases of retinal vasculitis or occlusive retinal vasculitis occurred in DERBY or OAKS, but the ASRS Research and Safety in Therapeutics Committee reported occlusive retinal vasculitis after intravitreal pegcetacoplan in 2023. Pegcetacoplan now carries labelled risks of retinal vasculitis, retinal vascular occlusion, intraocular inflammation and endophthalmitis, plus a higher rate of neovascular AMD than sham. Pharmacovigilance analysis suggests a narrower risk profile for avacincaptad pegol.",
+    "practical": "Two things this changes in clinic. First, OCT at each visit to detect occult conversion to exudative AMD, which is the expected and manageable risk. Second, and more urgent, a patient with sudden vision loss after a complement inhibitor injection needs same-day assessment for occlusive vasculitis — this is vision-threatening and is not the same as the conversion risk. Counsel on both before the first injection.",
+    "link": "American Journal of Ophthalmology - ocular adverse events with pegcetacoplan and avacincaptad pegol",
+    "url": "https://www.ajo.com/article/S0002-9394(25)00199-0/fulltext",
+    "verify": {
+      "status": "corrected — a vision-threatening risk was omitted",
+      "note": "The submission correctly identified exudative conversion and intraocular inflammation as real-world risks, which is more than most entries manage. THE OMISSION MATTERS: occlusive retinal vasculitis after pegcetacoplan, reported by the ASRS ReST Committee in 2023 and absent from DERBY and OAKS, is the vision-threatening complication that prompted a safety alert — and it is now labelled. Also added the differential risk profile between the two agents. 'AAO Preferred Practice Patterns were updated to MANDATE structured OCT monitoring' could not be confirmed; OCT surveillance is retained as practice rather than mandate."
+    }
+  },
+  {
+    "title": "Gene Therapy for Leber Hereditary Optic Neuropathy (rAAV2/2-ND4)",
+    "journal": "NEJM / ophthalmology trials",
+    "date": "RESCUE, REVERSE and REFLECT",
+    "breakthrough": "Intravitreal lenadogene nolparvovec, an AAV2 vector carrying wild-type ND4, improved visual acuity in patients with the m.11778G>A ND4 mutation. The striking and unexpected finding was BILATERAL improvement after UNILATERAL injection — a contralateral effect attributed to interocular vector transfer, demonstrated in non-human primates.",
+    "impact": "The contralateral effect is what makes the trial results difficult to interpret, because the untreated eye was the intended control. It also complicates any claim of a placebo-controlled demonstration of efficacy.",
+    "practical": "Confirmatory mitochondrial genetic testing in subacute bilateral optic neuropathy is worth doing regardless — LHON is frequently misdiagnosed as optic neuritis and treated with steroids to no effect, and the three primary mutations (ND4, ND1, ND6) are straightforward to test for. Note that this therapy is not FDA-approved, and idebenone is the agent with a European approval in LHON.",
+    "link": "Lenadogene nolparvovec gene therapy for ND4 Leber hereditary optic neuropathy",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=lenadogene+nolparvovec+rAAV2+ND4+Leber+hereditary+optic+neuropathy+RESCUE+REVERSE+REFLECT",
+    "verify": {
+      "status": "corrected — approval status and the control problem",
+      "note": "The trial programme is real, but the specific publication was not resolved and the url is a PubMed title search. TWO CORRECTIONS: the submission said phase 3 results 'CONFIRMED... sustained, bilateral visual acuity restoration' and framed this as a disease-modifying intervention now available — the therapy is NOT FDA-approved, and the bilateral improvement after unilateral injection undermined the intended within-patient control, which is central to interpreting the results. 'Restoration' also overstates partial improvement from a very low baseline. Added the misdiagnosis-as-optic-neuritis point, which is the actionable part."
+    }
+  },
+  {
+    "title": "Sustained-Release Bimatoprost Implant versus Topical Therapy in Open-Angle Glaucoma",
+    "journal": "JAMA Ophthalmology / glaucoma trials",
+    "date": "ARTEMIS programme; FDA approval 2020",
+    "breakthrough": "An intracameral biodegradable bimatoprost implant (Durysta) lowers intraocular pressure without daily drops, addressing the central problem in glaucoma care — that adherence to topical therapy is poor and unmeasurable.",
+    "impact": "Removes the drop entirely for a period, along with preservative-related ocular surface disease. Sustained-release delivery is a genuine direction of travel in glaucoma, alongside selective laser trabeculoplasty as a first-line alternative to drops (the LiGHT trial).",
+    "practical": "Read the label carefully: Durysta is approved for a SINGLE administration per eye, not repeat dosing, because of corneal endothelial cell loss with repeat implantation — which is the constraint that limits its role. Duration of effect is months rather than the two years the submission claimed. SLT, by contrast, is repeatable and has randomised first-line evidence behind it.",
+    "link": "Bimatoprost intracameral implant for open-angle glaucoma",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=bimatoprost+implant+Durysta+intracameral+intraocular+pressure+ARTEMIS+corneal+endothelial",
+    "verify": {
+      "status": "corrected — duration and a labelled restriction",
+      "note": "The implant is real (FDA-approved 2020) but two claims were wrong. The submission said it 'maintain[s] target IOP control for up to two years following a single administration' — the duration of effect is months, and the product is labelled for a SINGLE administration per eye because of endothelial cell loss on repeat dosing. That restriction is the single most important fact about the drug and was absent. 'Glaucoma society guidelines integrated sustained-release systems... as primary initial therapy options' could not be confirmed; SLT's first-line evidence (LiGHT) was added instead."
+    }
+  },
+  {
+    "title": "Netarsudil–Latanoprost Fixed Combination for Open-Angle Glaucoma and Ocular Hypertension",
+    "journal": "American Journal of Ophthalmology",
+    "date": "MERCURY trials; FDA approval 2019",
+    "breakthrough": "A fixed combination of the Rho-kinase inhibitor netarsudil with latanoprost lowers IOP more than either component alone, by combining increased trabecular outflow (and reduced episcleral venous pressure) with increased uveoscleral outflow.",
+    "impact": "The mechanistic appeal is real: netarsudil is the only class that targets the trabecular meshwork pharmacologically, which is where the pathology in primary open-angle glaucoma sits.",
+    "practical": "One evening drop replaces two, which helps adherence. The limiting factor in practice is tolerability rather than efficacy: conjunctival hyperaemia occurs in a substantial minority with netarsudil, along with cornea verticillata and subconjunctival haemorrhage, and hyperaemia is the commonest reason patients stop it. Warn the patient at the point of prescribing.",
+    "link": "Netarsudil-latanoprost fixed-dose combination for glaucoma and ocular hypertension",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=netarsudil+latanoprost+fixed+combination+MERCURY+intraocular+pressure+hyperemia",
+    "verify": {
+      "status": "corrected — year",
+      "note": "Real (the MERCURY programme; FDA-approved 2019), not a 2025 trial; the url is a PubMed title search. 'AAO Glaucoma Preferred Practice Patterns incorporated dual-action fixed combinations into step-up algorithms' could not be confirmed and was softened. Added the tolerability profile — hyperaemia, cornea verticillata, subconjunctival haemorrhage — because the submission described only benefits, and hyperaemia is what actually determines whether a patient stays on this drug."
+    }
+  },
+  {
+    "title": "Low-Concentration Atropine for Childhood Myopia Control (LAMP Study)",
+    "journal": "Ophthalmology",
+    "date": "LAMP and LAMP2, with extended follow-up",
+    "breakthrough": "The Low-Concentration Atropine for Myopia Progression study compared 0.05%, 0.025% and 0.01% atropine against placebo, and found a concentration-dependent effect, with 0.05% most effective at slowing both spherical equivalent progression and axial elongation.",
+    "impact": "Established 0.05% rather than 0.01% as the better-supported concentration in this population, which reversed a widely adopted practice based on earlier ATOM2 data.",
+    "practical": "Photophobia and near-blur increase with concentration, so 0.05% is a trade-off rather than a free improvement, and children need cycloplegic refraction and axial length monitoring rather than uncorrected acuity checks. Two important caveats: the LAMP population was East Asian children in Hong Kong, and trials in other populations — notably the US MOSAIC and CHAMP studies — have produced less consistent results, with some finding no benefit at 0.01%. Rebound on cessation is real and argues for tapering.",
+    "link": "Ophthalmology - LAMP study, low-concentration atropine for myopia progression",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=LAMP+study+low-concentration+atropine+myopia+progression+0.05%25+axial+elongation",
+    "verify": {
+      "status": "corrected — generalisability",
+      "note": "LAMP is real and the 0.05% conclusion is accurately reported; the specific 5-year publication was not resolved and the url is a PubMed title search. TWO ADDITIONS the submission omitted, both of which bear on whether to prescribe: the LAMP cohort was East Asian children in Hong Kong, and trials in other populations have been less consistent — so 'shifted baseline pharmacotherapy recommendations' overstates a globally settled position. Also 'minimal rebound effect upon cessation' is contestable; rebound is described and tapering is usual."
+    }
+  },
+  {
+    "title": "Autonomous AI Screening for Diabetic Retinopathy in Primary Care",
+    "journal": "JAMA Network Open and validation studies",
+    "date": "FDA clearances from 2018",
+    "breakthrough": "Autonomous AI fundus-image analysis detects more-than-mild and vision-threatening diabetic retinopathy without a physician reading the image. IDx-DR (now LumineticsCore) received FDA clearance in 2018 as the first autonomous diagnostic AI in any field of medicine, followed by EyeArt and others.",
+    "impact": "Screening can happen where the patient already is — the primary care or endocrinology visit — rather than requiring a separate ophthalmology appointment that a large proportion of diabetic patients never attend. That access gap, not diagnostic accuracy, is what causes preventable blindness from diabetes.",
+    "practical": "Two operational realities. A positive result generates a referral, so deploying screening without ophthalmology capacity to absorb it moves the bottleneck rather than removing it. And ungradable images are common — media opacity, small pupils, poor fixation — so a proportion of patients still need dilation or conventional examination. AI screening detects retinopathy; it does not detect the glaucoma or cataract a dilated examination would find.",
+    "link": "Autonomous AI for diabetic retinopathy screening in primary care",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=autonomous+artificial+intelligence+diabetic+retinopathy+screening+primary+care+validation+sensitivity",
+    "verify": {
+      "status": "corrected — year",
+      "note": "Real and well established, with FDA clearances from 2018 rather than a 2025 validation trial; the url is a PubMed title search and the submitted 'over 95% sensitivity' figure is not asserted. 'ADA and AAO JOINT guidelines formally endorsed autonomous AI screening as an EQUIVALENT diagnostic pathway to dilated eye exams' overstates — the ADA supports AI screening as an option, and it is not equivalent to a dilated examination, which is the point of the added note about what AI screening does not detect."
+    }
+  },
+  {
+    "title": "Standalone Trabecular Micro-Bypass Surgery in Open-Angle Glaucoma",
+    "journal": "Ophthalmology",
+    "date": "2025",
+    "breakthrough": "Prospective data on trabecular meshwork micro-stents implanted as a standalone procedure — independent of cataract surgery — reporting durable IOP reduction with endothelial cell loss rates comparable to physiological ageing.",
+    "impact": "Most MIGS evidence comes from procedures combined with phacoemulsification, where separating the effect of the stent from the effect of lens removal is genuinely difficult. Standalone data address that confound directly, which is why they matter.",
+    "practical": "Expands options for a phakic or pseudophakic patient failing drops but not yet needing trabeculectomy — the group with the fewest good choices. Keep the ceiling in mind: trabecular bypass lowers IOP to episcleral venous pressure at best, so it does not reach the low targets achievable with a filtering procedure, and a patient with advanced disease needing a pressure in the low teens is not a MIGS candidate.",
+    "link": "Ophthalmology - standalone trabecular micro-bypass in open-angle glaucoma",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=standalone+trabecular+micro-bypass+stent+glaucoma+five-year+endothelial+cell+loss",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific five-year standalone MIGS publication was located; the url is a PubMed title search. 'Reconfigured surgical glaucoma practice standards' could not be confirmed and was softened. Added the physiological ceiling — trabecular bypass cannot lower pressure below episcleral venous pressure — because the submission implied MIGS could substitute for trabeculectomy generally, and for advanced disease requiring low targets it cannot."
+    }
+  },
+  {
+    "title": "Corneal Cross-Linking Protocols for Progressive Keratoconus",
+    "journal": "Cornea and consensus statements",
+    "date": "2025",
+    "breakthrough": "Comparison of accelerated epithelium-off cross-linking against transepithelial (epi-on) protocols, with attention to UV fluence, riboflavin formulation and oxygen availability — oxygen being the rate-limiting factor that makes higher-irradiance protocols less effective per unit of energy delivered.",
+    "impact": "Cross-linking halts keratoconus progression, which is a genuine change in the natural history of a disease that used to end in transplantation for a significant minority. The protocol question is about how to deliver it, not whether it works.",
+    "practical": "Know the regulatory position where you practise: in the United States, only the epithelium-off Dresden protocol with Photrexa is FDA-approved, and accelerated and epi-on protocols are used off-label. Accelerated protocols shorten the procedure substantially and are standard in much of Europe. Epi-on is more comfortable and lower-risk for infection but achieves less stromal demarcation depth, so it is generally reserved for thinner corneas.",
+    "link": "Corneal cross-linking protocols for progressive keratoconus",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=corneal+cross-linking+accelerated+epithelium-off+transepithelial+keratoconus+consensus+protocol",
+    "verify": {
+      "status": "corrected — regulatory status",
+      "note": "No specific consensus document was located; the url is a PubMed title search. IMPORTANT CORRECTION: the submission said accelerated cross-linking has 'REPLACED legacy Dresden protocols... as the evidence-based GLOBAL STANDARD of care'. In the US only the epi-off Dresden protocol is FDA-approved, and accelerated and epi-on protocols are off-label — which materially affects what a US surgeon can offer and bill. Added the oxygen-limitation mechanism and the epi-on trade-off, since 'reduces procedure times from 60 to under 20 minutes' presented only the upside."
+    }
+  },
+  {
+    "title": "Topical Chemotherapy for Ocular Surface Squamous Neoplasia",
+    "journal": "American Journal of Ophthalmology and systematic reviews",
+    "date": "Established practice",
+    "breakthrough": "Topical chemotherapy can achieve complete resolution of ocular surface squamous neoplasia without surgical excision. The three agents in use are MITOMYCIN C, 5-FLUOROURACIL and INTERFERON ALFA-2B.",
+    "impact": "Topical therapy treats the whole ocular surface rather than a visible lesion with margins, which suits diffuse or limbal disease where excision would sacrifice limbal stem cells. In comparative series, resolution was achieved in about 96% with 5-FU and 81% with interferon, though treatment modality was not an independent predictor on multivariable analysis.",
+    "practical": "Choose on tolerability, since efficacy is broadly comparable. Interferon alfa-2b is the best tolerated but requires refrigeration and is expensive. Mitomycin C is effective but causes conjunctival hyperaemia, punctate epitheliopathy, punctal stenosis and — importantly — limbal stem cell deficiency and scleral thinning, so it needs punctal occlusion and limited cycles. 5-FU sits between the two.",
+    "link": "American Academy of Ophthalmology - topical treatments for ocular surface squamous neoplasia",
+    "url": "https://www.aao.org/eyenet/article/treatments-ocular-surface-squamous-neoplasia",
+    "verify": {
+      "status": "REPLACED — the submitted title named the wrong drugs",
+      "note": "THE TITLE WAS WRONG: the submission headed this 'Trifluridine/Tipiracil and Anti-VEGF Combinations in Ocular Surface Squamous Neoplasia'. Trifluridine/tipiracil is Lonsurf, an ORAL agent for metastatic colorectal and gastric cancer, with no role in OSSN; anti-VEGF is not a standard OSSN therapy either. The established topical agents are mitomycin C, 5-fluorouracil and interferon alfa-2b, and the entry has been rewritten accordingly. This is the SECOND wrong-drug title in these submissions — 'amivantamab' appeared in the neurology list where anti-amyloid antibodies were meant. Also corrected: the submission said topical therapy avoids limbal stem cell deficiency, when mitomycin C is a recognised CAUSE of it."
+    }
+  }
+]
