@@ -1,0 +1,142 @@
+[
+  {
+    "title": "2025 American Heart Association Guidelines for Cardiopulmonary Resuscitation and Emergency Cardiovascular Care",
+    "journal": "Circulation",
+    "date": "22 October 2025",
+    "breakthrough": "A full update to the 2020 guidelines, published as a multi-part document covering neonates, children and adults, for lay rescuers and clinicians. Organised around the Utstein Formula for Survival, with new recommendations in areas that previously had none.",
+    "impact": "Emphasises high-quality chest compressions, early defibrillation, and integration of advanced resuscitation techniques. Part 4 on Systems of Care is where the substantive shift sits: coordination across the Chain of Survival including emergency telecommunicators and untrained lay rescuers, elements common to resuscitating different populations, and how to improve team and system performance.",
+    "practical": "The framing is that survival is a property of the system, not of the individual resuscitation — telecommunicator-assisted CPR and bystander action are treated as links to be engineered rather than hoped for. On temperature: current guidance is to actively prevent fever (above roughly 37.7°C); a mandated 32-36°C target is no longer the standard framing, and entry 6 in this list covers the trial evidence behind that.",
+    "link": "Circulation - 2025 AHA Guidelines for CPR and ECC, Executive Summary",
+    "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001372",
+    "verify": {
+      "status": "corrected — several specifics unconfirmed, and one internally contradictory",
+      "note": "The guidelines are real: published 22 October 2025 in Circulation across multiple parts, Executive Summary DOI 10.1161/CIR.0000000000001372, PMID 41122893. FOUR SPECIFIC CLAIMS COULD NOT BE CONFIRMED and have been removed rather than asserted: consolidation of four Chains of Survival into a single 6-link chain; early double-sequential external defibrillation protocols for refractory VF; formalised eCPR referral criteria; and strict neuroprognostication timelines. Most importantly, the original's 'rapid targeted temperature management (32-36°C)' CONTRADICTS entry 6 in the same submitted list, which correctly describes the shift to fever prevention — and contradicts current guidance to avoid fever above about 37.7°C. Verify the removed specifics against the document before restoring them."
+    }
+  },
+  {
+    "title": "Endovascular Thrombectomy for Acute Ischemic Stroke with Medium-Vessel Occlusion (ESCAPE-MeVO and DISTAL)",
+    "journal": "NEJM",
+    "date": "February 2025",
+    "breakthrough": "Two negative trials, and they matter. ESCAPE-MeVO randomised 530 patients with medium-vessel occlusion within 12 hours of last seen normal to endovascular thrombectomy plus best medical care (n=257) or best medical care alone (n=272). EVT did NOT improve 90-day functional outcome. DISTAL and DISCOUNT reached the same conclusion independently.",
+    "impact": "The ESCAPE-MeVO investigators state plainly that their results 'do not support routine endovascular treatment of acute ischaemic stroke due to medium-vessel occlusion.' The accompanying NEJM editorial was titled 'Medium- and Distal-Vessel Occlusion — The Limit of Thrombectomy?' No guideline has expanded thrombectomy candidacy to MeVO on the basis of these trials, because they argue against it.",
+    "practical": "Do NOT rebuild ED imaging or activation pathways to capture medium-vessel occlusions for thrombectomy. Proximal large-vessel occlusion remains the indication. The technical ability to reach a distal vessel turned out not to translate into patient benefit — smaller vessels, smaller territory at risk, and more procedural risk per unit of tissue saved.",
+    "link": "NEJM - Medium- and Distal-Vessel Occlusion: The Limit of Thrombectomy?",
+    "url": "https://www.nejm.org/doi/abs/10.1056/NEJMe2500492",
+    "verify": {
+      "status": "REVERSED — original stated the opposite of the published result",
+      "note": "The trials are real, correctly journaled and correctly dated, and the original had the finding exactly backwards. It said EVT for MeVO 'significantly improves 90-day functional independence' and 'directly updated acute ischemic stroke guidelines, expanding interventional candidate selection'. ESCAPE-MeVO (530 patients), DISTAL and DISCOUNT all found NO clinical benefit. This is the most clinically consequential error in any list submitted so far: acting on the original would have EDs screening for and activating thrombectomy on MeVOs that three randomised trials say not to treat."
+    }
+  },
+  {
+    "title": "Zalunfiban at First Medical Contact for ST-Elevation Myocardial Infarction (CELEBRATE)",
+    "journal": "NEJM Evidence",
+    "date": "2025",
+    "breakthrough": "A phase 3 double-blind placebo-controlled trial of a single subcutaneous injection of zalunfiban, a glycoprotein IIb/IIIa inhibitor, given at first medical contact in STEMI patients headed for PCI. 2,467 patients across three arms (0.11 mg/kg n=853, 0.13 mg/kg n=818, placebo n=796). Zalunfiban improved pre-intervention infarct-related artery patency and reduced the likelihood of a worse 30-day hierarchical clinical endpoint.",
+    "impact": "Revives glycoprotein IIb/IIIa blockade, which had largely fallen out of use, by moving it to the earliest possible moment and making it a single subcutaneous injection. The primary endpoint was a hierarchical proportional odds model ranking death, stroke, reinfarction, acute stent thrombosis, heart failure, larger infarct size and no event.",
+    "practical": "A paramedic or triage nurse can give one subcutaneous injection at first contact. Bleeding: severe or life-threatening bleeding was NOT increased, but mild to moderate bleeding WAS — which is the trade-off to weigh, and the original entry omitted it.",
+    "link": "NEJM Evidence - Zalunfiban at first medical contact for STEMI",
+    "url": "https://evidence.nejm.org/doi/full/10.1056/EVIDoa2500268",
+    "verify": {
+      "status": "matched with corrections",
+      "note": "Real and positive. NEJM EVIDENCE (not NEJM), DOI 10.1056/EVIDoa2500268, PMID 41211981, 2,467 patients. Three additions: the trial size and dose arms; the increase in mild-to-moderate bleeding, which the original omitted entirely; and the actual endpoints. 'Refines prehospital acute coronary syndrome protocols' softened — no guideline revision has been identified, and an EHJ journal scan was headlined 'what should we CELEBRATE and what remains uncertain', so this is promising rather than settled."
+    }
+  },
+  {
+    "title": "Resuscitative Transesophageal Echocardiography in Cardiac Arrest and Refractory Shock",
+    "journal": "Annals of Emergency Medicine",
+    "date": "2025",
+    "breakthrough": "Multicentre registry data on point-of-care resuscitative TEE during active CPR, reporting shorter hands-off compression pauses, better discrimination of pseudo-PEA from fine ventricular fibrillation, and guidance of mechanical CPR positioning in real time.",
+    "impact": "TEE has a genuine mechanical advantage over transthoracic imaging in arrest: the probe stays in place during compressions, so it does not force a pause to acquire an image. Registry data can describe that association; it cannot establish that TEE improves ROSC.",
+    "practical": "Where TEE is available and someone is trained, it answers questions transthoracic imaging cannot during ongoing CPR. It does not replace transthoracic ultrasound — the barrier is training and equipment, and most EDs have neither for TEE.",
+    "link": "Annals of Emergency Medicine - resuscitative TEE",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=resuscitative+transesophageal+echocardiography+cardiac+arrest+registry+emergency",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED, and evidence level overstated",
+      "note": "No specific registry publication matching this description was located; the url is a PubMed title search. Two corrections regardless of the citation: registry data cannot 'prove' improved ROSC — that is an observational association, and the original's 'proved' has been removed. And the claim that TEE should be 'replacing standard transthoracic ultrasound during resuscitation' is not a position any consensus body has taken; it has been softened to where TEE adds something TTE cannot."
+    }
+  },
+  {
+    "title": "Single-Bolus Tenecteplase versus Alteplase for Acute Ischemic Stroke",
+    "journal": "The Lancet / NEJM (multiple trials)",
+    "date": "AcT 2022; ATTEST-2 and TASTE subsequently",
+    "breakthrough": "Tenecteplase 0.25 mg/kg as a single intravenous bolus is non-inferior to a one-hour alteplase infusion for 90-day functional outcome in acute ischemic stroke, established across several randomised trials — AcT in Canada being the pragmatic one that moved practice.",
+    "impact": "Tenecteplase has become the preferred thrombolytic across many stroke systems, on the strength of equivalent outcomes plus a dosing form that is far easier to deliver. Note that this is a body of non-inferiority evidence rather than a single superiority trial.",
+    "practical": "The operational gain is the real one: a single bolus removes infusion pump setup and removes the problem of transporting a patient mid-infusion, which shortens door-in-door-out time for transfer to a thrombectomy centre. See also BRIDGE-TNK, which showed tenecteplase before thrombectomy beats going straight to thrombectomy.",
+    "link": "Tenecteplase versus alteplase for acute ischaemic stroke",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=tenecteplase+versus+alteplase+acute+ischaemic+stroke+non-inferiority+randomised",
+    "verify": {
+      "status": "reframed — no single 2025 NEJM trial identified",
+      "note": "The clinical conclusion is well supported, but not by a single 2025 NEJM trial as submitted — no such publication was located. The evidence is a set of non-inferiority trials (AcT, Lancet 2022; ATTEST-2; TASTE). Reframed accordingly, and the original's 'superior early reperfusion' softened, since the trials were designed and reported as non-inferiority for functional outcome. 'Formally establishes tenecteplase as the preferred first-line agent in updated stroke guidelines, replacing alteplase' overstates a transition that has happened by adoption more than by formal replacement."
+    }
+  },
+  {
+    "title": "Targeted Temperature Management at 33°C versus Normothermia after Out-of-Hospital Cardiac Arrest (TTM2)",
+    "journal": "NEJM",
+    "date": "2021",
+    "breakthrough": "1,850 comatose survivors of out-of-hospital cardiac arrest randomised to 33°C or targeted normothermia (below 37.5°C). Survival and neurological outcome at 6 months were not clinically or statistically different — and the hypothermia arm had MORE hemodynamically compromising arrhythmias, 24% versus 17%.",
+    "impact": "Shifted post-arrest care from induced hypothermia toward active fever prevention. Current guidance is to avoid fever, defined as core temperature above roughly 37.7°C, rather than to cool to a fixed target.",
+    "practical": "The important exception runs OPPOSITE to the original entry: HYPERION found that targeting 33°C DID improve 90-day survival with favourable neurological outcome specifically in comatose patients after NON-SHOCKABLE arrest, compared with 37°C. So non-shockable rhythm is the one setting where cooling retains the strongest support, not the setting to abandon it in. Continuous core temperature monitoring and antipyretic control are the baseline in all comers.",
+    "link": "Targeted temperature management after cardiac arrest",
+    "url": "https://www.ahajournals.org/doi/10.1161/JAHA.122.026539",
+    "verify": {
+      "status": "corrected — wrong trial, wrong year, and the non-shockable claim reversed",
+      "note": "The described trial is TTM2, NEJM 2021 (1,850 patients), not a 2025 Lancet trial — no such 2025 publication was located. The equivalence finding is correct, and the arrhythmia signal (24% vs 17%) has been added. THE NON-SHOCKABLE CLAIM WAS BACKWARDS: the original said guidelines shifted toward fever prevention 'rather than induced therapeutic hypothermia FOR NON-SHOCKABLE cardiac arrest'. HYPERION found 33°C BENEFICIAL in non-shockable arrest versus 37°C, making that the subgroup where cooling is best supported. Note also that this entry contradicted entry 1 as submitted."
+    }
+  },
+  {
+    "title": "High-Sensitivity Cardiac Troponin 0/1-Hour Accelerated Diagnostic Protocols for Rule-Out of Myocardial Infarction",
+    "journal": "Multiple trials; incorporated into ESC and ACEP guidance",
+    "date": "Established pathway",
+    "breakthrough": "A 0/1-hour high-sensitivity troponin algorithm combined with clinical risk scoring allows a large proportion of low-risk chest pain patients to be ruled out and discharged from the ED within a few hours, with very high negative predictive value for 30-day major adverse cardiac events.",
+    "impact": "0/1-hour hs-cTn pathways are established in ESC guidance and in ACEP clinical policy on emergency chest pain evaluation, and have largely displaced serial 3-6 hour troponin sampling.",
+    "practical": "The clinical value is in what it removes: fewer observation admissions, fewer downstream stress tests in patients whose pretest probability was always low, and less ED crowding. The algorithm depends on a validated assay-specific cut-off — the thresholds are NOT interchangeable between manufacturers' assays, which is the commonest implementation error.",
+    "link": "High-sensitivity troponin 0/1-hour rule-out pathways",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=high-sensitivity+troponin+0%2F1-hour+algorithm+rule-out+myocardial+infarction+emergency+department",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "The approach is well established and correctly described, but no specific JAMA 2025 study matching the submitted description was located, so the two precise figures — discharge of 'over 60%' within 2 hours and a '99.8% 30-day NPV for MACE' — are not asserted here. They are plausible for this literature but should be tied to a specific paper before being taught as numbers. Added the assay-specificity caveat, which is the practical trap and was absent."
+    }
+  },
+  {
+    "title": "Balanced Crystalloids versus Saline in Noncritically Ill Adults (SALT-ED)",
+    "journal": "NEJM",
+    "date": "2018",
+    "breakthrough": "A single-centre pragmatic multiple-crossover trial in adults given intravenous crystalloid in the ED and then admitted outside the ICU. The PRIMARY outcome — hospital-free days — showed NO difference (median 25 days in both arms; adjusted OR 0.98, 95% CI 0.92-1.04, P = 0.41). Major adverse kidney events within 30 days, a SECONDARY outcome, were lower with balanced crystalloids: 4.7% versus 5.6% (adjusted OR 0.82, 95% CI 0.70-0.95, P = 0.01).",
+    "impact": "The renal signal is real but secondary, and the effect is small in absolute terms — under one percentage point. Large subsequent ICU trials (BaSICS and PLUS) were neutral, so the field is not unanimous that balanced fluids improve outcomes.",
+    "practical": "Reasonable to default to lactated Ringer's rather than 0.9% saline, since it costs nothing to do and the renal signal points one way. But this is a low-stakes preference supported by a secondary endpoint, not a practice mandate — and hyperchloremic acidosis is a physiological observation rather than a demonstrated harm in this trial.",
+    "link": "NEJM - Balanced Crystalloids versus Saline in Noncritically Ill Adults",
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1711586",
+    "verify": {
+      "status": "corrected — wrong year, and the primary outcome was null",
+      "note": "The trial is SALT-ED, NEJM 2018 (PMID 29485926), not a 2025 trial. Three corrections. It was SINGLE-CENTRE, not 'massive'. Its PRIMARY outcome — hospital-free days — was NULL; MAKE30 was a secondary outcome. And 'Rewrote emergency fluid resuscitation guidelines, designating balanced crystalloids as the primary first-line crystalloid' overstates: the large ICU trials BaSICS and PLUS were neutral, which the entry now says."
+    }
+  },
+  {
+    "title": "Gepotidacin for Uncomplicated Urinary Tract Infection and Uncomplicated Urogenital Gonorrhea (EAGLE-1, EAGLE-2, EAGLE-3)",
+    "journal": "The Lancet",
+    "date": "EAGLE-1 published April 2025",
+    "breakthrough": "Gepotidacin, a first-in-class oral triazaacenaphthylene antibiotic. EAGLE-1 in uncomplicated urogenital gonorrhea (about 600 patients) compared two oral 3,000 mg doses against intramuscular ceftriaxone plus oral azithromycin: 92.6% versus 91.2% urogenital success, with no failures from bacterial persistence in either arm. EAGLE-2 and EAGLE-3 (about 3,000 patients) showed non-inferiority and superiority to nitrofurantoin in uncomplicated UTI.",
+    "impact": "FDA approved in March 2025 for uncomplicated UTI in females aged 12 and over (at least 40 kg), and subsequently for uncomplicated urogenital gonorrhea in patients 12 and over (at least 45 kg). A genuinely new oral mechanism, which is rare.",
+    "practical": "An entirely oral option for gonorrhea, where the standard has been an intramuscular injection. Note the indication precisely: UNCOMPLICATED UTI and UNCOMPLICATED urogenital gonorrhea — not complicated UTI, and not established multi-drug-resistant infection. Gastrointestinal side effects are common: diarrhea in 16%, nausea in 9%, mostly mild.",
+    "link": "The Lancet - EAGLE-1 gepotidacin in uncomplicated urogenital gonorrhoea",
+    "url": "https://us.gsk.com/en-us/media/press-releases/blujepa-gepotidacin-approved-by-us-fda-as-oral-option-for-treatment-of-uncomplicated-urogenital-gonorrhea/",
+    "verify": {
+      "status": "matched with corrections",
+      "note": "Real and well supported. Two clinically material corrections. The original said gepotidacin showed high cure rates in organisms 'resistant to conventional fluoroquinolones and cephalosporins' and positioned it for 'suspected multi-drug resistant gonorrhea or COMPLEX UTIs'. EAGLE-1 compared it head-to-head against ceftriaxone plus azithromycin in uncomplicated gonorrhea generally, and the approved indications are UNCOMPLICATED UTI and UNCOMPLICATED urogenital gonorrhea. Recommending it for complicated UTI would be an off-label error. Added the trial numbers, the FDA approvals and the GI adverse event rates."
+    }
+  },
+  {
+    "title": "Viscoelastic Assay-Guided versus Conventional Coagulation-Directed Transfusion in Major Trauma Haemorrhage (ITACTIC)",
+    "journal": "Intensive Care Medicine",
+    "date": "2021",
+    "breakthrough": "A negative trial. 396 patients randomised to major haemorrhage protocols augmented by viscoelastic assay (n=201) or conventional coagulation testing (n=195). At 24 hours there was NO difference in the proportion alive and free of massive transfusion: 67% versus 64% (OR 1.15, 95% CI 0.76-1.73). 28-day mortality was also no different: 25% versus 28% (OR 0.84, 95% CI 0.54-1.31).",
+    "impact": "Does not support routine ROTEM/TEG-guided transfusion over conventional coagulation-guided protocols in major trauma haemorrhage. A pre-specified subgroup of 74 patients with severe traumatic brain injury showed a signal favouring viscoelastic guidance (64% vs 46% alive and free of massive transfusion, OR 2.12) — but the confidence interval crossed 1 (95% CI 0.84-5.34), so this is a hypothesis, not a finding.",
+    "practical": "Viscoelastic testing identifies specific coagulopathies — hyperfibrinolysis, hypofibrinogenemia — faster than conventional assays, and that remains its rationale. What ITACTIC shows is that having that information faster did not translate into better outcomes than a conventional-test-guided protocol. Balanced empiric transfusion plus early tranexamic acid remains the backbone.",
+    "link": "ITACTIC - viscoelastic haemostatic assay augmented protocols for major trauma haemorrhage",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7550843/",
+    "verify": {
+      "status": "REVERSED — original stated the opposite of the published result",
+      "note": "There is no 2025 JAMA Surgery trial matching the submission. The randomised evidence is ITACTIC (2021, 396 patients) and it was NEGATIVE on both the primary outcome and mortality. The original claimed viscoelastic guidance 'significantly reduces 24-hour mortality and total blood component usage compared to fixed 1:1:1 empirical transfusion ratios' and that guidelines now recommend early ROTEM/TEG in massive transfusion protocols. Worth noting: this is the SECOND submitted entry across these lists to claim a positive result for viscoelastic-guided transfusion where the trial was negative — the other was the postpartum haemorrhage entry in the Anesthesiology 2025 list (OBS2)."
+    }
+  }
+]

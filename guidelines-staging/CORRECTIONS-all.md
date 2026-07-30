@@ -1,17 +1,17 @@
 # Clinical guideline citation checks — for sign-off
 
-60 entries checked. Grouped worst-first by what a reader would take away if the
+80 entries checked. Grouped worst-first by what a reader would take away if the
 entry shipped as submitted. Every entry below is live in the app in its CORRECTED form; this
 document records what was changed and why, so any of it can be reverted.
 
 | verdict | entries |
 |---|---|
-| Findings stated backwards — a reader would learn the opposite of the published result | 7 |
+| Findings stated backwards — a reader would learn the opposite of the published result | 12 |
 | Cited study could not be found | 3 |
 | Evidence level inflated — case report presented as a trial | 2 |
-| Citation not independently verified | 7 |
-| Wrong study or replaced | 5 |
-| Corrected — dates, journals, numbers, strength of claim | 31 |
+| Citation not independently verified | 14 |
+| Wrong study or replaced | 6 |
+| Corrected — dates, journals, numbers, strength of claim | 38 |
 | Matched — no correction needed | 5 |
 
 ---
@@ -59,6 +59,36 @@ The trial is real and POSITIVE (JAMA Dermatology, 23 July 2025, 1,247 dyads, 25 
 **corrected — transplant claim reversed**
 
 Real (JAMA Dermatology 2025, DOI 10.1001/jamadermatol.2025.3238, VA Corporate Data Warehouse, 33,822 patients). One important correction: the original said the study 'Solidifies real-world chemoprevention guidelines for immunocompetent AND high-risk organ transplant populations' — the cohort found NO overall benefit in transplant recipients. Added the timing gradient, which is the study's central and most actionable finding and was absent from the original, and the accompanying commentary noting the question remains unsettled.
+
+### Emergency Medicine 2025 #2 — Endovascular Thrombectomy for Acute Ischemic Stroke with Medium-Vessel Occlusion (ESCAPE-MeVO and DISTAL)
+
+**REVERSED — original stated the opposite of the published result**
+
+The trials are real, correctly journaled and correctly dated, and the original had the finding exactly backwards. It said EVT for MeVO 'significantly improves 90-day functional independence' and 'directly updated acute ischemic stroke guidelines, expanding interventional candidate selection'. ESCAPE-MeVO (530 patients), DISTAL and DISCOUNT all found NO clinical benefit. This is the most clinically consequential error in any list submitted so far: acting on the original would have EDs screening for and activating thrombectomy on MeVOs that three randomised trials say not to treat.
+
+### Emergency Medicine 2025 #6 — Targeted Temperature Management at 33°C versus Normothermia after Out-of-Hospital Cardiac Arrest (TTM2)
+
+**corrected — wrong trial, wrong year, and the non-shockable claim reversed**
+
+The described trial is TTM2, NEJM 2021 (1,850 patients), not a 2025 Lancet trial — no such 2025 publication was located. The equivalence finding is correct, and the arrhythmia signal (24% vs 17%) has been added. THE NON-SHOCKABLE CLAIM WAS BACKWARDS: the original said guidelines shifted toward fever prevention 'rather than induced therapeutic hypothermia FOR NON-SHOCKABLE cardiac arrest'. HYPERION found 33°C BENEFICIAL in non-shockable arrest versus 37°C, making that the subgroup where cooling is best supported. Note also that this entry contradicted entry 1 as submitted.
+
+### Emergency Medicine 2025 #10 — Viscoelastic Assay-Guided versus Conventional Coagulation-Directed Transfusion in Major Trauma Haemorrhage (ITACTIC)
+
+**REVERSED — original stated the opposite of the published result**
+
+There is no 2025 JAMA Surgery trial matching the submission. The randomised evidence is ITACTIC (2021, 396 patients) and it was NEGATIVE on both the primary outcome and mortality. The original claimed viscoelastic guidance 'significantly reduces 24-hour mortality and total blood component usage compared to fixed 1:1:1 empirical transfusion ratios' and that guidelines now recommend early ROTEM/TEG in massive transfusion protocols. Worth noting: this is the SECOND submitted entry across these lists to claim a positive result for viscoelastic-guided transfusion where the trial was negative — the other was the postpartum haemorrhage entry in the Anesthesiology 2025 list (OBS2).
+
+### Emergency Medicine 2026 #2 — Ketamine versus Etomidate for Tracheal Intubation of Critically Ill Adults (RSI Trial)
+
+**corrected — hemodynamic claim reversed**
+
+Real (Casey et al., NEJM 2025 — a 2025 publication placed in the 2026 list). The mortality equivalence is correct. THE HEMODYNAMIC CLAIM WAS BACKWARDS: the original said the trial demonstrated 'comparable post-intubation hemodynamic stability' and classified the agents as 'clinically equivalent'. Cardiovascular collapse was significantly more common with ketamine (22% vs 17%) and large systolic drops nearly twice as frequent (24% vs 15%). Since ketamine is often selected specifically to protect blood pressure, teaching equivalence here would reinforce exactly the wrong instinct.
+
+### Emergency Medicine 2026 #9 — Emergency Department-Initiated Extended-Release versus Sublingual Buprenorphine for Opioid Use Disorder (ED-INNOVATION)
+
+**REVERSED — original stated the opposite of the published result**
+
+Real (NIDA CTN-0099) but the submission was wrong on four counts. SITES: 29 emergency departments, not 33. FORMULATION: the injectable was the 7-DAY extended-release preparation, not a 30-day depot — the original's 'ensuring immediate and sustained 30-day coverage' would have a clinician believe one injection covers a month. ENDPOINT: the primary outcome was treatment engagement at DAY 7, not 30-day retention. RESULT: there was NO difference — the original claimed 'significantly higher 30-day treatment retention' and that this 'elevates single-dose injectable depot buprenorphine to a first-line recommended option'.
 
 ---
 
@@ -144,6 +174,48 @@ No specific article matching this title was located in the searches run; the url
 
 No specific article matching this title was located in the searches run; the url is a PubMed title search. 'Establishes standardized optical imaging criteria' softened to 'works toward', since establishing such criteria is a multi-study undertaking.
 
+### Emergency Medicine 2025 #4 — Resuscitative Transesophageal Echocardiography in Cardiac Arrest and Refractory Shock
+
+**NOT INDEPENDENTLY VERIFIED, and evidence level overstated**
+
+No specific registry publication matching this description was located; the url is a PubMed title search. Two corrections regardless of the citation: registry data cannot 'prove' improved ROSC — that is an observational association, and the original's 'proved' has been removed. And the claim that TEE should be 'replacing standard transthoracic ultrasound during resuscitation' is not a position any consensus body has taken; it has been softened to where TEE adds something TTE cannot.
+
+### Emergency Medicine 2025 #7 — High-Sensitivity Cardiac Troponin 0/1-Hour Accelerated Diagnostic Protocols for Rule-Out of Myocardial Infarction
+
+**NOT INDEPENDENTLY VERIFIED**
+
+The approach is well established and correctly described, but no specific JAMA 2025 study matching the submitted description was located, so the two precise figures — discharge of 'over 60%' within 2 hours and a '99.8% 30-day NPV for MACE' — are not asserted here. They are plausible for this literature but should be tied to a specific paper before being taught as numbers. Added the assay-specificity caveat, which is the practical trap and was absent.
+
+### Emergency Medicine 2026 #3 — Head-Flat versus Head-Elevated Position While Awaiting Endovascular Thrombectomy in Large-Vessel Occlusion Stroke
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific publication matching this description was located; the url is a PubMed title search. Two claims softened regardless of the citation: 'significantly preserves collateral cerebral blood flow and improves early neurological scores' is stated as the hypothesis rather than a confirmed result, and the original's 'MANDATING a flat bed position during prehospital transport and ED holding' is not a mandate any guideline has issued. The aspiration and ICP counterweights were added — they are the reason this is not already standard.
+
+### Emergency Medicine 2026 #5 — Higher versus Standard Mean Arterial Pressure Targets in Older Patients with Septic Shock (OPTRESS)
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific publication named OPTRESS was located; the url is a PubMed title search. The conclusion is consistent with well-established trials (SEPSISPAM, the 65 trial), which is why the entry has been kept and framed against them rather than deleted — but the specific trial, its numbers and the arrhythmia finding should be confirmed before being taught as this trial's result.
+
+### Emergency Medicine 2026 #7 — 2026 Core Content of Emergency Medical Services Medicine (ABEM)
+
+**NOT INDEPENDENTLY VERIFIED, and category corrected**
+
+No specific 2026 document was located; the url is a PubMed title search. A category correction applies regardless: a core content document is a certification and curriculum specification, not a 'prehospital protocol overhaul' that 'establishes updated prehospital standards' and 'standardizes EMS field protocols nationwide' as the original claimed. US field protocols are set by state and local EMS medical direction. Reframed to what a core content document does.
+
+### Emergency Medicine 2026 #8 — De-implementation of Routine Corticosteroid Premedication for Contrast Media Hypersensitivity
+
+**NOT INDEPENDENTLY VERIFIED**
+
+The specific CAR/CSACI 2026 guidance document was not located and the url is a PubMed title search, so the joint attribution is unconfirmed. The clinical position described is consistent with the direction of the contrast-reaction literature and with existing ACR guidance, which is why the entry is retained and framed as guidance rather than as a landmark study. Confirm the citation before attributing it to named societies.
+
+### Emergency Medicine 2026 #10 — Intravenous Vernakalant versus Procainamide for Pharmacological Cardioversion of Acute Atrial Fibrillation
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific trial matching this description was located; the url is a PubMed title search, and the 'median time under 12 minutes' figure is not asserted here. Two additions independent of the citation: vernakalant is not FDA-approved in the US, which the original did not mention and which determines whether the entry is actionable for a US reader; and stroke-risk assessment before cardioversion, which applies to any cardioversion strategy. 'Updates emergency cardiac rhythm management guidelines, establishing vernakalant as preferred' could not be confirmed.
+
 ---
 
 ## Wrong study or replaced
@@ -177,6 +249,12 @@ The original cited a 2025 'RACE-2 Trial' in JAMA Surgery with processed-EEG-guid
 **corrected — wrong trial name and wrong comparator**
 
 There is no 'TIMELESS-2' trial. The real 2025 NEJM trial is BRIDGE-TNK (NEJMoa2503867), and the comparator matters: it compared tenecteplase PLUS thrombectomy against THROMBECTOMY ALONE, not tenecteplase against alteplase. The original's conclusion — that tenecteplase is preferred and the single bolus simplifies transfer — is defensible, but it does not follow from this trial in the way stated. Added the sICH and mortality numbers, which were both numerically higher with tenecteplase and were omitted entirely.
+
+### Emergency Medicine 2025 #8 — Balanced Crystalloids versus Saline in Noncritically Ill Adults (SALT-ED)
+
+**corrected — wrong year, and the primary outcome was null**
+
+The trial is SALT-ED, NEJM 2018 (PMID 29485926), not a 2025 trial. Three corrections. It was SINGLE-CENTRE, not 'massive'. Its PRIMARY outcome — hospital-free days — was NULL; MAKE30 was a secondary outcome. And 'Rewrote emergency fluid resuscitation guidelines, designating balanced crystalloids as the primary first-line crystalloid' overstates: the large ICU trials BaSICS and PLUS were neutral, which the entry now says.
 
 ---
 
@@ -367,6 +445,48 @@ Real. Three corrections. The instrument is PDCA-Derm (Post-inflammatory hyperpig
 **corrected — numbers and year**
 
 Real but three fixes. DATE: published 8 July 2026, not 2025 — it belongs in the 2026 list rather than this one, and has been left in place only to preserve the ten-entry structure; consider moving it. NUMBERS: the reported positive predictive value is 66%, not 73%, and the negative predictive value is 97% for a decreasing titre, not a '90-day NPV of 99%'. Trial size and design added. The core conclusion — ctDNA outperforms MCPyV antibody — is correct.
+
+### Emergency Medicine 2025 #1 — 2025 American Heart Association Guidelines for Cardiopulmonary Resuscitation and Emergency Cardiovascular Care
+
+**corrected — several specifics unconfirmed, and one internally contradictory**
+
+The guidelines are real: published 22 October 2025 in Circulation across multiple parts, Executive Summary DOI 10.1161/CIR.0000000000001372, PMID 41122893. FOUR SPECIFIC CLAIMS COULD NOT BE CONFIRMED and have been removed rather than asserted: consolidation of four Chains of Survival into a single 6-link chain; early double-sequential external defibrillation protocols for refractory VF; formalised eCPR referral criteria; and strict neuroprognostication timelines. Most importantly, the original's 'rapid targeted temperature management (32-36°C)' CONTRADICTS entry 6 in the same submitted list, which correctly describes the shift to fever prevention — and contradicts current guidance to avoid fever above about 37.7°C. Verify the removed specifics against the document before restoring them.
+
+### Emergency Medicine 2025 #3 — Zalunfiban at First Medical Contact for ST-Elevation Myocardial Infarction (CELEBRATE)
+
+**matched with corrections**
+
+Real and positive. NEJM EVIDENCE (not NEJM), DOI 10.1056/EVIDoa2500268, PMID 41211981, 2,467 patients. Three additions: the trial size and dose arms; the increase in mild-to-moderate bleeding, which the original omitted entirely; and the actual endpoints. 'Refines prehospital acute coronary syndrome protocols' softened — no guideline revision has been identified, and an EHJ journal scan was headlined 'what should we CELEBRATE and what remains uncertain', so this is promising rather than settled.
+
+### Emergency Medicine 2025 #5 — Single-Bolus Tenecteplase versus Alteplase for Acute Ischemic Stroke
+
+**reframed — no single 2025 NEJM trial identified**
+
+The clinical conclusion is well supported, but not by a single 2025 NEJM trial as submitted — no such publication was located. The evidence is a set of non-inferiority trials (AcT, Lancet 2022; ATTEST-2; TASTE). Reframed accordingly, and the original's 'superior early reperfusion' softened, since the trials were designed and reported as non-inferiority for functional outcome. 'Formally establishes tenecteplase as the preferred first-line agent in updated stroke guidelines, replacing alteplase' overstates a transition that has happened by adoption more than by formal replacement.
+
+### Emergency Medicine 2025 #9 — Gepotidacin for Uncomplicated Urinary Tract Infection and Uncomplicated Urogenital Gonorrhea (EAGLE-1, EAGLE-2, EAGLE-3)
+
+**matched with corrections**
+
+Real and well supported. Two clinically material corrections. The original said gepotidacin showed high cure rates in organisms 'resistant to conventional fluoroquinolones and cephalosporins' and positioned it for 'suspected multi-drug resistant gonorrhea or COMPLEX UTIs'. EAGLE-1 compared it head-to-head against ceftriaxone plus azithromycin in uncomplicated gonorrhea generally, and the approved indications are UNCOMPLICATED UTI and UNCOMPLICATED urogenital gonorrhea. Recommending it for complicated UTI would be an off-label error. Added the trial numbers, the FDA approvals and the GI adverse event rates.
+
+### Emergency Medicine 2026 #1 — Azithromycin for Preschoolers with Wheezing in the Emergency Department (AZ-SWED)
+
+**matched with corrections**
+
+Real, and the original correctly reported a negative trial as negative. NEJM 18 May 2026, DOI 10.1056/NEJMoa2516505, 840 children, eight pediatric EDs, presented at ATS simultaneously. Two corrections: the 'over 60% tested positive for bacterial presence' figure could not be confirmed and has been replaced with the actual and stronger finding — no benefit regardless of which of three organisms was isolated. And 'Directly updates pediatric emergency airway guidelines' could not be confirmed; no guideline revision was identified. Added that the trial was stopped for futility, which strengthens the conclusion.
+
+### Emergency Medicine 2026 #4 — Personalized Hemodynamic Resuscitation Targeting Capillary Refill Time in Early Septic Shock (ANDROMEDA-SHOCK-2)
+
+**matched with corrections**
+
+Real and positive. JAMA, 29 October 2025 (a 2025 publication placed in the 2026 list), NCT06062303, 86 ICUs in 19 countries, 1,467 patients. Two corrections. The comparator was USUAL CARE, not 'standard lactate clearance' as submitted. And the intervention was a personalized hemodynamic phenotype protocol including bedside echocardiography — the original's framing as 'a rapid, non-invasive physical exam tool' materially understates what was tested. 'Formally integrates CRT into international sepsis guidelines as a primary bedside target' could not be confirmed.
+
+### Emergency Medicine 2026 #6 — Prehospital Whole Blood versus Component Therapy in Traumatic Haemorrhage (SWiFT)
+
+**matched with corrections**
+
+Real, and the original correctly conveyed a non-positive result. NEJM 2026, phase III superiority trial, 616 patients, 10 air ambulances serving 19 hospitals, December 2022 to September 2024. The original's framing — that the trial showed 'overall protocol speed and total balanced volume take clinical precedence over early isolated whole blood units' — is an interpretation, not a finding, and has been replaced with the actual result (non-superiority for death or massive transfusion at 24 hours). Added the investigators' own dose limitation, which materially changes how the result should be read.
 
 ---
 

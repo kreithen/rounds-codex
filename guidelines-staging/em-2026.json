@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Azithromycin for Preschoolers with Wheezing in the Emergency Department (AZ-SWED)",
+    "journal": "NEJM",
+    "date": "18 May 2026",
+    "breakthrough": "A negative trial, stopped for futility. 840 children aged 18 to 59 months at eight pediatric emergency departments, randomised to five days of azithromycin or placebo after presenting with moderate-to-severe acute wheezing. Azithromycin did not reduce wheezing symptom severity, measured by the Asthma Flare-up Diary for Young Children score.",
+    "impact": "The precision-medicine element is what makes it decisive: the absence of benefit held REGARDLESS of whether Haemophilus influenzae, Moraxella catarrhalis or Streptococcus pneumoniae were isolated from the nasopharynx at the time of the illness. So the usual justification — that these children may have a bacterial component — does not rescue the practice. The NHLBI stopped the trial for futility on 10 December 2024 on DSMB recommendation.",
+    "practical": "Do not give empiric azithromycin for acute preschool wheezing. Bronchodilators, systemic corticosteroids and supportive care for what is almost always a viral trigger. Reserve antibiotics for clear evidence of bacterial pneumonia.",
+    "link": "NEJM - AZ-SWED azithromycin in preschool wheezing",
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2516505",
+    "verify": {
+      "status": "matched with corrections",
+      "note": "Real, and the original correctly reported a negative trial as negative. NEJM 18 May 2026, DOI 10.1056/NEJMoa2516505, 840 children, eight pediatric EDs, presented at ATS simultaneously. Two corrections: the 'over 60% tested positive for bacterial presence' figure could not be confirmed and has been replaced with the actual and stronger finding — no benefit regardless of which of three organisms was isolated. And 'Directly updates pediatric emergency airway guidelines' could not be confirmed; no guideline revision was identified. Added that the trial was stopped for futility, which strengthens the conclusion."
+    }
+  },
+  {
+    "title": "Ketamine versus Etomidate for Tracheal Intubation of Critically Ill Adults (RSI Trial)",
+    "journal": "NEJM",
+    "date": "2025",
+    "breakthrough": "A pragmatic trial in adults with non-traumatic critical illness undergoing emergency tracheal intubation in the ED or ICU, comparing ketamine 1-2 mg/kg with etomidate 0.2-0.3 mg/kg for induction. Mortality at 28 days did not differ: 28% versus 29% in hospital, and 32.2% versus 32.4% counting deaths anywhere.",
+    "impact": "Settles the long-running concern that etomidate's adrenal suppression costs lives — on mortality, the two agents are equivalent. But the drugs are NOT hemodynamically equivalent, which cuts against the common assumption.",
+    "practical": "Cardiovascular collapse was MORE common with ketamine, 22% versus 17%, and a systolic drop over 30 mmHg after induction occurred in 24% of ketamine patients versus 15% with etomidate. That is the opposite of the usual reason ketamine is chosen in a shocked patient, and it is the single most useful thing to take from this trial. Either agent is defensible on survival; etomidate looks steadier on induction hemodynamics.",
+    "link": "NEJM - RSI trial, ketamine versus etomidate",
+    "url": "https://rebelem.com/the-rsi-trial-ketamine-vs-etomidate-in-rapid-sequence-intubation/",
+    "verify": {
+      "status": "corrected — hemodynamic claim reversed",
+      "note": "Real (Casey et al., NEJM 2025 — a 2025 publication placed in the 2026 list). The mortality equivalence is correct. THE HEMODYNAMIC CLAIM WAS BACKWARDS: the original said the trial demonstrated 'comparable post-intubation hemodynamic stability' and classified the agents as 'clinically equivalent'. Cardiovascular collapse was significantly more common with ketamine (22% vs 17%) and large systolic drops nearly twice as frequent (24% vs 15%). Since ketamine is often selected specifically to protect blood pressure, teaching equivalence here would reinforce exactly the wrong instinct."
+    }
+  },
+  {
+    "title": "Head-Flat versus Head-Elevated Position While Awaiting Endovascular Thrombectomy in Large-Vessel Occlusion Stroke",
+    "journal": "The Lancet",
+    "date": "2026",
+    "breakthrough": "Compared a 0° flat head position against a 30° head-elevated position in patients with acute large-vessel occlusion stroke during the interval before endovascular thrombectomy, on the rationale that a flat position preserves collateral cerebral perfusion pressure.",
+    "impact": "If it holds, it is the rare intervention with no cost, no equipment and no drug — a bed angle. The mechanism is plausible: collateral flow to the ischemic penumbra is pressure-dependent, and head elevation reduces cerebral perfusion pressure.",
+    "practical": "Weigh against the reason heads are elevated in the first place — aspiration risk in a patient who may have impaired airway protection, and raised intracranial pressure if there is significant established infarct or hemorrhage. A blanket flat-bed rule for every stroke patient is not the same recommendation as flat positioning in a selected LVO patient awaiting thrombectomy.",
+    "link": "Head positioning before endovascular thrombectomy in large-vessel occlusion stroke",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=head+position+flat+versus+elevated+large+vessel+occlusion+stroke+endovascular+thrombectomy+randomised",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific publication matching this description was located; the url is a PubMed title search. Two claims softened regardless of the citation: 'significantly preserves collateral cerebral blood flow and improves early neurological scores' is stated as the hypothesis rather than a confirmed result, and the original's 'MANDATING a flat bed position during prehospital transport and ED holding' is not a mandate any guideline has issued. The aspiration and ICP counterweights were added — they are the reason this is not already standard."
+    }
+  },
+  {
+    "title": "Personalized Hemodynamic Resuscitation Targeting Capillary Refill Time in Early Septic Shock (ANDROMEDA-SHOCK-2)",
+    "journal": "JAMA",
+    "date": "29 October 2025",
+    "breakthrough": "1,467 patients across 86 ICUs in 19 countries, randomised to a capillary-refill-time-targeted personalized hemodynamic resuscitation protocol (n=720) or usual care (n=747) over a 6-hour intervention window. The protocol was superior on a hierarchical composite of mortality, duration of vital support and hospital length of stay, with less need for organ support at 28 days.",
+    "impact": "A positive trial in septic shock resuscitation, which is uncommon. Note what the intervention actually was: a phenotype-based protocol using pulse pressure, diastolic arterial pressure, fluid responsiveness and bedside echocardiography to tailor fluids, vasopressors and inotropes — with capillary refill time as the resuscitation target, not as the sole input.",
+    "practical": "Capillary refill time is free, instant and repeatable, and it does not wait for a lactate to come back. But the trial tested it inside a structured protocol that included echocardiography, so implementing it means adopting the protocol, not just checking a nail bed. The comparator was usual care, not lactate-guided resuscitation specifically.",
+    "link": "JAMA - ANDROMEDA-SHOCK-2 randomized clinical trial",
+    "url": "https://clinicaltrials.gov/study/NCT06062303",
+    "verify": {
+      "status": "matched with corrections",
+      "note": "Real and positive. JAMA, 29 October 2025 (a 2025 publication placed in the 2026 list), NCT06062303, 86 ICUs in 19 countries, 1,467 patients. Two corrections. The comparator was USUAL CARE, not 'standard lactate clearance' as submitted. And the intervention was a personalized hemodynamic phenotype protocol including bedside echocardiography — the original's framing as 'a rapid, non-invasive physical exam tool' materially understates what was tested. 'Formally integrates CRT into international sepsis guidelines as a primary bedside target' could not be confirmed."
+    }
+  },
+  {
+    "title": "Higher versus Standard Mean Arterial Pressure Targets in Older Patients with Septic Shock (OPTRESS)",
+    "journal": "Intensive Care Medicine",
+    "date": "2026",
+    "breakthrough": "Tested whether targeting a higher mean arterial pressure (above 85 mmHg) in older adults with septic shock improves outcomes compared with a standard target of 65-70 mmHg. It did not reduce mortality or need for renal replacement therapy, and was associated with more vasopressor-related arrhythmia.",
+    "impact": "Consistent with the existing evidence base — SEPSISPAM and 65 trial — that pushing MAP above the standard target does not help and does cost something. Reinforces MAP 65 as the default rather than a floor to be exceeded.",
+    "practical": "In an older patient with chronic hypertension the instinct is that they 'need' a higher pressure. The consistent finding across trials is that acting on that instinct buys vasopressor exposure, tachyarrhythmia and digital ischemia without buying organ protection.",
+    "link": "OPTRESS - higher versus standard MAP target in older patients with septic shock",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=OPTRESS+mean+arterial+pressure+target+older+septic+shock",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific publication named OPTRESS was located; the url is a PubMed title search. The conclusion is consistent with well-established trials (SEPSISPAM, the 65 trial), which is why the entry has been kept and framed against them rather than deleted — but the specific trial, its numbers and the arrhythmia finding should be confirmed before being taught as this trial's result."
+    }
+  },
+  {
+    "title": "Prehospital Whole Blood versus Component Therapy in Traumatic Haemorrhage (SWiFT)",
+    "journal": "NEJM",
+    "date": "2026",
+    "breakthrough": "A negative superiority trial. 616 patients with major traumatic haemorrhage attended by 10 air ambulance services covering 19 hospitals, randomised to up to 2 units of prehospital whole blood or standard component therapy (up to 2 units each of red cells and plasma). Whole blood was NOT superior for death or massive transfusion at 24 hours.",
+    "impact": "Whole blood has strong logistical and conceptual appeal in the prehospital setting — one product, one line, physiological ratios. This trial found no outcome advantage over components at the doses given. Safety profiles were similar, with slightly more adverse events in the standard-care arm.",
+    "practical": "An important limitation the investigators flag: up to two units may simply be too small a dose to reveal a difference in patients with major haemorrhage. So this is evidence against whole blood being clearly better at that dose, rather than evidence that whole blood does not work. Prehospital blood logistics decisions should rest on what a given system can actually deliver quickly.",
+    "link": "NEJM - SWiFT prehospital whole blood trial",
+    "url": "https://www.aabb.org/news-resources/news/article/2026/03/25/swift-trial-finds-no-advantage-to-prehospital-whole-blood-in-patients-with-life-threatening-trauma",
+    "verify": {
+      "status": "matched with corrections",
+      "note": "Real, and the original correctly conveyed a non-positive result. NEJM 2026, phase III superiority trial, 616 patients, 10 air ambulances serving 19 hospitals, December 2022 to September 2024. The original's framing — that the trial showed 'overall protocol speed and total balanced volume take clinical precedence over early isolated whole blood units' — is an interpretation, not a finding, and has been replaced with the actual result (non-superiority for death or massive transfusion at 24 hours). Added the investigators' own dose limitation, which materially changes how the result should be read."
+    }
+  },
+  {
+    "title": "2026 Core Content of Emergency Medical Services Medicine (ABEM)",
+    "journal": "Prehospital Emergency Care",
+    "date": "2026",
+    "breakthrough": "The American Board of Emergency Medicine's revised core content for EMS medicine, defining the knowledge base for the subspecialty across prehospital care, field triage, out-of-hospital airway management and physician medical oversight.",
+    "impact": "A core content document defines what an EMS physician is expected to know and what the certifying examination covers. It shapes fellowship curricula and medical direction expectations — it is not a clinical practice guideline and does not itself set treatment protocols.",
+    "practical": "Relevant to anyone doing EMS medical direction or sitting the subspecialty examination. Field protocols for analgesia, non-invasive ventilation and stroke or trauma centre bypass are set locally by medical directors; a core content revision influences that indirectly, through what directors are trained in.",
+    "link": "Prehospital Emergency Care - 2026 core content of EMS medicine",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=core+content+emergency+medical+services+medicine+ABEM+prehospital+emergency+care",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED, and category corrected",
+      "note": "No specific 2026 document was located; the url is a PubMed title search. A category correction applies regardless: a core content document is a certification and curriculum specification, not a 'prehospital protocol overhaul' that 'establishes updated prehospital standards' and 'standardizes EMS field protocols nationwide' as the original claimed. US field protocols are set by state and local EMS medical direction. Reframed to what a core content document does."
+    }
+  },
+  {
+    "title": "De-implementation of Routine Corticosteroid Premedication for Contrast Media Hypersensitivity",
+    "journal": "Joint allergy and radiology practice guidance",
+    "date": "2026",
+    "breakthrough": "Evidence synthesis concluding that empiric oral or intravenous corticosteroid premedication before contrast-enhanced CT in low and moderate risk patients offers negligible protection against severe reactions, while delaying imaging and disposition and causing hyperglycemia.",
+    "impact": "Advises against routine steroid premedication in the ED unless there is a documented history of severe, life-threatening anaphylaxis to iodinated contrast. Reflects a broader recognition that modern low-osmolar and iso-osmolar agents carry far lower reaction rates than the agents the premedication protocols were built around.",
+    "practical": "Removes the 4 to 13 hour premedication delay for patients whose 'contrast allergy' history is vague, mild, or actually a shellfish-allergy misconception. For a patient in the ED with a possible dissection or PE, that delay is the harm. A prior mild reaction is not a reason to premedicate; a prior anaphylaxis is a reason to involve allergy and consider alternatives.",
+    "link": "Practice guidance on contrast media hypersensitivity premedication",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=corticosteroid+premedication+contrast+media+hypersensitivity+guidance+de-implementation",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "The specific CAR/CSACI 2026 guidance document was not located and the url is a PubMed title search, so the joint attribution is unconfirmed. The clinical position described is consistent with the direction of the contrast-reaction literature and with existing ACR guidance, which is why the entry is retained and framed as guidance rather than as a landmark study. Confirm the citation before attributing it to named societies."
+    }
+  },
+  {
+    "title": "Emergency Department-Initiated Extended-Release versus Sublingual Buprenorphine for Opioid Use Disorder (ED-INNOVATION)",
+    "journal": "NIDA Clinical Trials Network CTN-0099",
+    "date": "2026",
+    "breakthrough": "A negative trial on its primary question. Across 29 emergency departments, patients with untreated opioid use disorder were randomised to a single dose of 7-DAY extended-release injectable buprenorphine or to sublingual buprenorphine taken daily. There was NO difference in treatment engagement at day 7 — the primary outcome.",
+    "impact": "What it does establish is feasibility and safety: both formulations were successfully and safely initiated across a large, geographically diverse set of US EDs, both were well tolerated, and precipitated withdrawal was rare despite a high prevalence of fentanyl. That last point is genuinely reassuring for anyone hesitant to start buprenorphine in the fentanyl era.",
+    "practical": "The injectable studied covers SEVEN DAYS, not thirty. Either formulation is a reasonable ED initiation strategy; the injectable does not buy better short-term engagement, so choose on logistics, cost and patient preference. The important finding for practice is that starting buprenorphine in the ED is safe and workable, not that one route wins.",
+    "link": "ED-INNOVATION - CTN-0099 emergency department buprenorphine trial",
+    "url": "https://ctnlibrary.org/protocol/ctn0099/",
+    "verify": {
+      "status": "REVERSED — original stated the opposite of the published result",
+      "note": "Real (NIDA CTN-0099) but the submission was wrong on four counts. SITES: 29 emergency departments, not 33. FORMULATION: the injectable was the 7-DAY extended-release preparation, not a 30-day depot — the original's 'ensuring immediate and sustained 30-day coverage' would have a clinician believe one injection covers a month. ENDPOINT: the primary outcome was treatment engagement at DAY 7, not 30-day retention. RESULT: there was NO difference — the original claimed 'significantly higher 30-day treatment retention' and that this 'elevates single-dose injectable depot buprenorphine to a first-line recommended option'."
+    }
+  },
+  {
+    "title": "Intravenous Vernakalant versus Procainamide for Pharmacological Cardioversion of Acute Atrial Fibrillation",
+    "journal": "Annals of Emergency Medicine",
+    "date": "2026",
+    "breakthrough": "A randomised comparison of intravenous vernakalant against intravenous procainamide for cardioversion of recent-onset, hemodynamically stable atrial fibrillation in the emergency department, reporting faster conversion to sinus rhythm with vernakalant and fewer hypotensive episodes.",
+    "impact": "Would position vernakalant as a fast-acting option for chemical cardioversion in acute-onset AF. Note a significant practical constraint: vernakalant is approved in Europe and Canada but is NOT FDA-approved in the United States, so this is not an option available to US emergency physicians.",
+    "practical": "Where it is available, rapid chemical cardioversion can avoid procedural sedation and electrical cardioversion and shorten ED length of stay. Candidate selection is the safety-critical part — recent-onset AF, hemodynamically stable, and an appropriate stroke-risk assessment before cardioversion regardless of the agent used.",
+    "link": "Vernakalant versus procainamide for acute atrial fibrillation",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=vernakalant+versus+procainamide+acute+atrial+fibrillation+randomized+emergency",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific trial matching this description was located; the url is a PubMed title search, and the 'median time under 12 minutes' figure is not asserted here. Two additions independent of the citation: vernakalant is not FDA-approved in the US, which the original did not mention and which determines whether the entry is actionable for a US reader; and stroke-risk assessment before cardioversion, which applies to any cardioversion strategy. 'Updates emergency cardiac rhythm management guidelines, establishing vernakalant as preferred' could not be confirmed."
+    }
+  }
+]

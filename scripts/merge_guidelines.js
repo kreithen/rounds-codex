@@ -28,6 +28,14 @@ if (!SPEC || !DIR || !PAIRS.length) {
 
 const SHIP = ['title', 'journal', 'date', 'breakthrough', 'impact', 'practical', 'link', 'url'];
 const REQUIRED = ['title', 'breakthrough', 'impact', 'practical'];
+
+/* Stripping the `verify` object is not enough. Review vocabulary leaks into SHIPPED fields when an
+   entry is being corrected -- "2025 entry as submitted" reached a resident-facing date field once,
+   caught only because a headless assertion happened to grep for it. These phrases have no reason to
+   appear in content a resident reads, so reject them at the merge instead of relying on the check
+   downstream being written that day. */
+const REVIEW_LANG = /\bas submitted\b|\bNOT (INDEPENDENTLY|FOUND)\b|\bREVERSED\b|\bmatched with correction|\bverify block\b|\bplaceholder\b|\bawaiting Dr\b|physician'?s original/i;
+
 const problems = [];
 
 const RESFILE = path.join(DIR, 'resident.json');
@@ -64,6 +72,10 @@ for (const pair of PAIRS) {
 
     const out = {};
     for (const k of SHIP) if (a[k] != null && a[k] !== '') out[k] = a[k];
+    for (const [k, v] of Object.entries(out)) {
+      const m = REVIEW_LANG.exec(String(v));
+      if (m) problems.push(`${tag}: review language "${m[0]}" in the shipped '${k}' field — that reaches a resident's screen`);
+    }
     return out;
   });
   console.log(`  ${year}: ${items.length} studies from ${file}`);
