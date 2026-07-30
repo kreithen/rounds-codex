@@ -1,0 +1,10 @@
+# Supabase project config (for the CLI).
+project_id = "emdrmxscgmnfxgvimbqn"
+
+# These functions are called by a database webhook / public email links,
+# so they must NOT require a user JWT.
+[functions.welcome]
+verify_jwt = false
+
+[functions.unsubscribe]
+verify_jwt = false

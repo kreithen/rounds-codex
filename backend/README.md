@@ -6,8 +6,10 @@ and newsletters (Phase 3) come later.
 
 ## Files
 - `schema.sql` — the `signups` + `admins` tables, row-level security, and `is_admin()`. Run once.
-- `functions/welcome/index.ts` — optional Supabase Edge Function that sends a welcome email via
-  Resend on each new signup. Not required for capture to work.
+- `../supabase/functions/welcome/index.ts` — Edge Function that sends a branded welcome email via
+  Resend on each new signup (Phase 3). Setup: `mail-setup-resend.md`.
+- `../supabase/functions/unsubscribe/index.ts` — one-click unsubscribe handler (Phase 3).
+- `migrations/002_phase3.sql` — unsubscribe tokens + newsletter tables.
 
 ## Phase 1 setup (≈10 min)
 
