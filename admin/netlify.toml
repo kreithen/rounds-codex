@@ -1,0 +1,27 @@
+# Netlify config for the admin dashboard (admin.roundscodex.com).
+# This is a SECOND, separate Netlify site from the landing page.
+# In the Netlify UI set the site's Base directory to "admin" so it reads THIS file.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# SPA + magic-link callback: serve index.html for any path.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Robots-Tag = "noindex, nofollow"
+    Content-Security-Policy = "default-src 'self'; base-uri 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://*.supabase.co wss://*.supabase.co; font-src 'self'; object-src 'none'; frame-ancestors 'none'"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
