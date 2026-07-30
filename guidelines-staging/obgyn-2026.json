@@ -1,0 +1,114 @@
+[
+  {
+    "title": "First-Trimester Preeclampsia Screening with PlGF, sFlt-1 and Uterine Artery Doppler",
+    "journal": "Obstetrics & Gynecology / practice advisory",
+    "date": "2026",
+    "breakthrough": "Multi-marker first-trimester screening — placental growth factor (PlGF), soluble fms-like tyrosine kinase-1 (sFlt-1), maternal mean arterial pressure and uterine artery Doppler pulsatility index, combined in an algorithm — identifies women at high risk of PRETERM preeclampsia far better than clinical risk factors alone. The ASPRE trial showed aspirin 150 mg daily in women selected this way reduced preterm preeclampsia by about 60%.",
+    "impact": "The competing-risks algorithm developed by the Fetal Medicine Foundation is used routinely in parts of Europe and the UK. ACOG, however, continues to recommend screening by CLINICAL RISK FACTORS and has not adopted first-trimester biomarker screening as its standard — so this is a genuine transatlantic divergence rather than a settled change.",
+    "practical": "Where the algorithm is available, it concentrates aspirin on the women who benefit rather than flagging most of the population. Timing is the non-negotiable part: aspirin must start before 16 weeks to affect placentation. Note the dose divergence — ASPRE and the European algorithm use 150 mg; ACOG recommends 81 mg. And the screening performs well for PRETERM preeclampsia specifically, much less so for term disease.",
+    "link": "First-trimester screening for preeclampsia with angiogenic markers",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=first-trimester+preeclampsia+screening+PlGF+sFlt-1+uterine+artery+Doppler+aspirin+ASPRE",
+    "verify": {
+      "status": "corrected — the guideline claim is reversed",
+      "note": "The screening approach and the ASPRE result are real, but the specific 2026 ACOG Practice Advisory was not located; the url is a PubMed title search. THE CORRECTION: the submission said biomarker screening 'REPLACED traditional demographic-only screening in updated ACOG and SMFM advisories, establishing early-trimester angiogenic biomarker testing as the PREFERRED STANDARD'. ACOG has not adopted first-trimester biomarker screening and continues to recommend clinical risk-factor assessment — the entry now presents this as a US-versus-Europe divergence, which is what it is. Added the 150 mg versus 81 mg dose divergence and the preterm-versus-term performance distinction."
+    }
+  },
+  {
+    "title": "Dual Neurokinin-1/3 Receptor Antagonists for Menopausal Vasomotor Symptoms",
+    "journal": "NEJM / JAMA",
+    "date": "2024-2026",
+    "breakthrough": "Elinzanetant, a dual NK1/NK3 receptor antagonist, produced rapid and sustained reduction in the frequency and severity of moderate-to-severe hot flushes across the phase 3 OASIS programme, with additional benefit on sleep disturbance — the NK1 component is the reason it addresses sleep as well as flushing.",
+    "impact": "A second mechanism-targeted non-hormonal option alongside the NK3-selective fezolinetant, for women who cannot or will not take oestrogen.",
+    "practical": "DO NOT generalise a clean hepatic profile across the class. Fezolinetant, the NK3-selective agent, carries an FDA BOXED WARNING for rare serious liver injury added in December 2024, with required liver function monitoring; transaminase elevations above three times the upper limit occurred in 2.3% of trial participants. Any patient starting a neurokinin antagonist needs to know which agent they are on and what monitoring it requires.",
+    "link": "Dual NK1/NK3 receptor antagonist for menopausal vasomotor symptoms",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=elinzanetant+neurokinin+1+3+receptor+antagonist+vasomotor+symptoms+phase+3+OASIS",
+    "verify": {
+      "status": "corrected — a safety claim was inverted",
+      "note": "The dual NK1/NK3 mechanism and the phase 3 programme are real, though the specific publication was not resolved and the url is a PubMed title search. THE CORRECTION IS THE IMPORTANT ONE: the submission stated these agents work 'WITHOUT LIVER TOXICITY or endometrial thickening'. Fezolinetant — an NK3 antagonist in the same class discussion — carries an FDA boxed warning for serious liver injury and requires liver function monitoring. Even if elinzanetant's hepatic profile proves cleaner, a blanket class claim of no liver toxicity would have a clinician skip mandated monitoring. 'Primary first-line options' softened to what it is: an option for women who cannot take hormone therapy."
+    }
+  },
+  {
+    "title": "Continuous Glucose Monitoring in Gestational Diabetes Mellitus",
+    "journal": "Obstetrics & Gynecology",
+    "date": "2026",
+    "breakthrough": "Continuous glucose monitoring in gestational diabetes improves time in the pregnancy target range and has been examined for effects on macrosomia and neonatal hypoglycaemia, compared with intermittent fingerstick testing.",
+    "impact": "The strongest randomised evidence for CGM in pregnancy comes from CONCEPTT, in women with TYPE 1 diabetes, where CGM improved neonatal outcomes. Extending that to gestational diabetes is a reasonable extrapolation but a weaker evidence base, and most women with GDM are managed on diet alone.",
+    "practical": "Most defensible in GDM requiring insulin, where the information changes titration decisions and where the neonatal risks are concentrated. The pregnancy target range is tighter than the non-pregnant one — commonly 63 to 140 mg/dL — and CGM makes postprandial excursions visible in a way that four fingersticks a day cannot. Weigh against cost, and against the burden of continuous data in a patient already anxious about her pregnancy.",
+    "link": "Continuous glucose monitoring in gestational diabetes",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=continuous+glucose+monitoring+gestational+diabetes+time+in+range+macrosomia+neonatal+hypoglycemia",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED, with the evidence base qualified",
+      "note": "No specific ACOG guideline update endorsing CGM in GDM was located; the url is a PubMed title search. QUALIFICATION ADDED: the submission stated CGM 'significantly reduc[es] fetal macrosomia and neonatal hypoglycemia' in GDM as an established finding. The randomised neonatal-outcome evidence for CGM in pregnancy is strongest in TYPE 1 diabetes (CONCEPTT); for gestational diabetes specifically it is weaker, and the entry now says so. The 63-140 mg/dL range from the submission is retained as the pregnancy target."
+    }
+  },
+  {
+    "title": "Prophylactic Tranexamic Acid after Vaginal Delivery: What the Trials Actually Show",
+    "journal": "NEJM",
+    "date": "TRAAP 2018; TRAAP2 2021; IPD meta-analysis 2024",
+    "breakthrough": "TRAAP randomised 4,079 women having a planned vaginal delivery at term to 1 g intravenous tranexamic acid or placebo, on top of prophylactic oxytocin. The PRIMARY outcome — postpartum haemorrhage of 500 mL or more — was NOT significantly reduced: 8.1% versus 9.8%, relative risk 0.83, with the confidence interval crossing 1. A secondary outcome, provider-assessed clinically significant haemorrhage, was lower.",
+    "impact": "TRAAP2, in cesarean delivery, found a statistically significant but clinically modest reduction. An individual patient data meta-analysis was published in The Lancet in 2024. Taken together the picture is a small effect at best after vaginal delivery, not a demonstrated benefit — which is why prophylactic TXA has not entered routine third-stage management.",
+    "practical": "Do not add prophylactic TXA to the routine active management of the third stage on the strength of these trials. Where it clearly belongs is TREATMENT of established postpartum haemorrhage, given within 3 hours (the WOMAN trial), and prophylaxis in specifically high-risk surgical deliveries. Oxytocin remains the prophylaxis that works.",
+    "link": "NEJM - tranexamic acid for the prevention of blood loss after vaginal delivery (TRAAP)",
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1800942",
+    "verify": {
+      "status": "REVERSED — original stated the opposite of the primary result",
+      "note": "The submission said a large prospective trial 'established that prophylactic IV tranexamic acid... in high-risk vaginal births SIGNIFICANTLY REDUCES blood loss ≥500 mL and postpartum blood transfusion rates', and that consensus protocols now integrate prophylactic TXA into active management of the third stage. TRAAP (NEJM 2018, 4,079 women) is the definitive trial of exactly this and its PRIMARY OUTCOME — PPH ≥500 mL — was NOT significantly reduced (8.1% vs 9.8%, RR 0.83). Rewritten to the actual findings across TRAAP, TRAAP2 and the 2024 IPD meta-analysis, and to distinguish prophylaxis from treatment, where TXA does have clear evidence (WOMAN trial, within 3 hours)."
+    }
+  },
+  {
+    "title": "First-Trimester CMV Screening with Valaciclovir to Prevent Congenital Infection",
+    "journal": "American Journal of Obstetrics & Gynecology / The Lancet",
+    "date": "2020-2026",
+    "breakthrough": "High-dose oral valaciclovir given after confirmed primary maternal cytomegalovirus infection in the first trimester reduced vertical transmission in a randomised placebo-controlled trial (Shahar-Nissan and colleagues, The Lancet 2020) — from about 30% to 11% of fetuses infected.",
+    "impact": "This is the finding that reopened the universal-screening question. The historic argument against screening was that identifying primary infection changed nothing; an effective intervention removes that objection. ACOG has NOT adopted universal CMV screening, and serologic interpretation remains difficult — IgM persists for months and IgG avidity testing is needed to date the infection.",
+    "practical": "Congenital CMV is the commonest infectious cause of sensorineural hearing loss in children, which is what makes this worth the trouble. If screening is undertaken, it has to be first-trimester and paired with a plan: confirmatory avidity testing, and treatment within a window where it can affect transmission. Screening without that pathway generates anxiety and amniocenteses without benefit.",
+    "link": "The Lancet - valaciclovir to prevent vertical transmission of cytomegalovirus",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=valacyclovir+prevent+vertical+transmission+cytomegalovirus+first+trimester+randomised+Lancet",
+    "verify": {
+      "status": "corrected — the guideline position",
+      "note": "The valaciclovir trial is real (Lancet 2020) and the transmission reduction is accurately described in outline; the specific 2026 screening trial in the submission was not located and the url is a PubMed title search. CORRECTION: the submission said this 'Prompted maternal-fetal medicine societies to re-evaluate long-standing opposition... shifting TOWARD early gestational serologic screening protocols' — ACOG has not adopted universal CMV screening, and the entry now says so. Added the serologic interpretation difficulty (IgM persistence, avidity testing), which is the practical reason universal screening remains contested."
+    }
+  },
+  {
+    "title": "ERAS Protocols in Major Gynecologic Oncology Surgery",
+    "journal": "Gynecologic Oncology / ERAS Society",
+    "date": "2026",
+    "breakthrough": "Structured perioperative pathways in gynaecologic oncology surgery — preoperative carbohydrate loading and shortened fasting, opioid-sparing multimodal analgesia, goal-directed fluid management, early feeding and early ambulation — associated with shorter length of stay and fewer complications.",
+    "impact": "Gynaecologic oncology was an early adopter of ERAS, and the outcome data are among the better ones in surgical oncology. The effect is attributable to the bundle rather than to individual components, and adherence rate predicts benefit.",
+    "practical": "The opioid-sparing element matters beyond the admission: a patient discharged after major pelvic surgery without an opioid prescription she does not need is the durable win. Note that these are largely before-and-after and cohort comparisons rather than randomised trials, so secular improvements in surgical care are a plausible partial explanation for reported gains.",
+    "link": "ERAS in gynecologic oncology surgery",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=enhanced+recovery+after+surgery+gynecologic+oncology+guidelines+length+of+stay+surgical+site+infection",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "ERAS in gynaecologic oncology is well established, but the specific multi-centre study was not located; the url is a PubMed title search, so the '2 days shorter stay' and '35% fewer surgical site infections' figures are not asserted. 'Establish MANDATORY perioperative pathways' softened — society guidelines recommend rather than mandate. Added the study-design caveat: much of this literature is before-and-after rather than randomised, which is the main reason to treat the effect sizes as indicative."
+    }
+  },
+  {
+    "title": "Fertility-Sparing Surgery for Early-Stage Cervical Cancer",
+    "journal": "The Lancet Oncology / SGO and NCCN guidance",
+    "date": "2026",
+    "breakthrough": "Radical trachelectomy with pelvic lymph node assessment preserves the uterus in selected women with early-stage cervical cancer, with oncologic outcomes reported as comparable to radical hysterectomy in tumours under 2 cm.",
+    "impact": "Two developments matter alongside it. ConCerv and the SHAPE trial showed that in carefully selected LOW-RISK early cervical cancer, LESS radical surgery — simple hysterectomy or conisation with nodal assessment — is oncologically adequate, so the field is moving toward de-escalation generally. And LACC showed minimally invasive radical hysterectomy had WORSE survival than open surgery, which is why the surgical approach matters as much as the extent.",
+    "practical": "Selection is everything: tumour under 2 cm, no lymphovascular space involvement, negative nodes, and a patient who genuinely wants future fertility. Counsel honestly about obstetric outcomes after trachelectomy — second-trimester loss and preterm birth rates are substantially raised, and a cerclage is usually placed. Most of the trachelectomy evidence is observational rather than randomised.",
+    "link": "Fertility-sparing surgery in early-stage cervical cancer",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=radical+trachelectomy+fertility+sparing+early+stage+cervical+cancer+oncologic+outcomes+survival",
+    "verify": {
+      "status": "corrected — study design and missing context",
+      "note": "Fertility-sparing surgery is real and guideline-endorsed for selected early disease, but no multi-year prospective trial establishing 'equivalent 5-year disease-free survival and overall survival' was located; the trachelectomy evidence base is largely OBSERVATIONAL, and the url is a PubMed title search. 'Gold standard recommendation' overstates an option requiring narrow selection. Added three things the submission omitted: the de-escalation direction from ConCerv and SHAPE, the LACC finding that minimally invasive radical hysterectomy was inferior, and the raised preterm birth and second-trimester loss rates after trachelectomy — which is the counselling point for a patient choosing this specifically for fertility."
+    }
+  },
+  {
+    "title": "Mesh and Native Tissue Repair in Apical Pelvic Organ Prolapse",
+    "journal": "American Journal of Obstetrics & Gynecology / AUGS-IUGA guidance",
+    "date": "2026",
+    "breakthrough": "Abdominal sacrocolpopexy with mesh — laparoscopic or robotic — provides better anatomical durability for apical prolapse than native tissue vaginal repair, and remains standard practice. This is a fundamentally different operation from the TRANSVAGINAL mesh kits that the FDA ordered off the market in 2019.",
+    "impact": "The distinction is the whole point. Transvaginal mesh for prolapse was withdrawn after unacceptable rates of erosion, pain and reoperation; abdominally placed sacrocolpopexy mesh was never withdrawn and has good long-term data. Conflating them is the commonest source of confusion in counselling a patient who has read about 'mesh'.",
+    "practical": "Mesh complications after sacrocolpopexy are not negligible: the extended CARE trial reported mesh erosion approaching 10% by 7 years, considerably higher than is often quoted. Durability has to be weighed against that, against the patient's age and activity, and against uterosacral or sacrospinous ligament suspension as a mesh-free alternative with a good evidence base.",
+    "link": "Sacrocolpopexy and native tissue repair for apical pelvic organ prolapse",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=sacrocolpopexy+mesh+apical+pelvic+organ+prolapse+long+term+outcomes+erosion+native+tissue+repair",
+    "verify": {
+      "status": "corrected — the erosion rate was understated by roughly fivefold",
+      "note": "No specific 2026 registry publication or AUGS/IUGA joint guideline was located; the url is a PubMed title search. THE CORRECTION MATTERS FOR CONSENT: the submission claimed 'extremely low erosion rates (<2%)'. The extended CARE trial — the longest randomised follow-up of abdominal sacrocolpopexy — reported mesh erosion approaching 10% by 7 years. Quoting under 2% to a patient would materially misstate the risk. 'Re-established... as the high-grade gold standard' softened, and the transvaginal-versus-abdominal mesh distinction was added explicitly, since the submission's unqualified use of 'synthetic mesh' invites exactly the conflation that makes this conversation difficult."
+    }
+  }
+]

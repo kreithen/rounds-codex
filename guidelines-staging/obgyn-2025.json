@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Self-Collected Vaginal Swabs for High-Risk HPV Cervical Cancer Screening",
+    "journal": "JAMA Network Open / The Lancet",
+    "date": "2024-2025",
+    "breakthrough": "Self-collected vaginal swab sampling achieves sensitivity for high-risk HPV and CIN2+ comparable to clinician-collected sampling. The FDA approved self-collection devices in 2024, and at-home collection kits followed.",
+    "impact": "Cervical cancer screening has never been limited mainly by the test interval — it is limited by the speculum examination and by who never comes in for one. The people at highest risk of cervical cancer are the underscreened, and self-collection reaches them.",
+    "practical": "Note the distinction the approvals turn on: the first FDA authorisations were for self-collection IN A HEALTHCARE SETTING — a private room rather than the examination table — with at-home kits authorised subsequently. Offer it to anyone who has declined or deferred speculum screening. A positive hrHPV result still requires clinician follow-up with cytology or colposcopy, so self-collection changes the sampling step, not the pathway after it.",
+    "link": "Self-collected HPV testing for cervical cancer screening",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=self-collected+vaginal+swab+HPV+testing+cervical+cancer+screening+sensitivity+CIN2",
+    "verify": {
+      "status": "corrected — setting, and consolidated from two submitted entries",
+      "note": "The evidence and the FDA approvals are real, but the specific studies were not resolved to citations and the url is a PubMed title search; the submitted '≥95% sensitivity' figure is therefore not asserted. ONE MATERIAL CORRECTION: the original said 'home- or clinic-based' as though both arrived together — the initial FDA authorisations were for self-collection in a healthcare setting, with at-home kits following, which is what determines what a clinic can actually offer today. This topic appeared in BOTH submitted OB/GYN lists (2025 #1 and 2026 #4); it is kept here once so it does not appear under both year buttons."
+    }
+  },
+  {
+    "title": "ACOG Clinical Practice Guideline: Intrapartum Fetal Heart Rate Monitoring",
+    "journal": "Obstetrics & Gynecology",
+    "date": "2025",
+    "breakthrough": "An updated framework for interpreting Category I, II and III intrapartum fetal heart rate tracings, with criteria for intrauterine resuscitation and for expedited delivery.",
+    "impact": "Recommends against relying on the adjunct technologies that were once expected to resolve tracing ambiguity — computerised FHR algorithms, fetal pulse oximetry, ST-segment analysis. None improved neonatal outcome in trials, and management rests on physiological interpretation instead.",
+    "practical": "Category II is where the work is, because it covers the large indeterminate middle ground and is the commonest tracing in labour. The resuscitation steps — position change, intravenous fluid, reducing or stopping oxytocin, correcting hypotension, considering amnioinfusion for cord compression — are what a Category II tracing calls for; Category III calls for expedited delivery. Note that routine maternal oxygen for a non-reassuring tracing has not been shown to improve outcomes.",
+    "link": "Obstetrics & Gynecology - ACOG guideline on intrapartum fetal heart rate monitoring",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=ACOG+clinical+practice+guideline+intrapartum+fetal+heart+rate+monitoring+interpretation+management",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific ACOG Clinical Practice Guideline No. 10 on intrapartum FHR monitoring was located and the url is a PubMed title search, so the guideline number and date are unconfirmed. The clinical content — the three-tier system, the case against FHR adjunct technologies, and the intrauterine resuscitation steps — is well established and has been stated explicitly rather than left as 'clear intrapartum intrauterine resuscitation steps', which taught nothing usable. Added the routine-oxygen point, which is a common reflex not supported by evidence."
+    }
+  },
+  {
+    "title": "ERAS Society Recommendations for Antenatal, Preoperative and Intraoperative Care in Cesarean Delivery",
+    "journal": "American Journal of Obstetrics & Gynecology",
+    "date": "Series published 2018-2019, with subsequent updates",
+    "breakthrough": "Perioperative pathways for planned and intrapartum cesarean delivery: preoperative carbohydrate loading and shortened fasting, multimodal opioid-sparing analgesia, active maintenance of normothermia, early feeding and early mobilisation.",
+    "impact": "Cesarean delivery is among the most common major operations performed anywhere, and it was one of the last to receive a structured recovery pathway. The ERAS Society published its cesarean recommendations as a three-part series covering antenatal/preoperative, intraoperative and postoperative care.",
+    "practical": "The opioid-sparing element has the largest downstream effect: scheduled paracetamol and NSAIDs with neuraxial morphine, reserving opioids for breakthrough pain, reduces both inpatient consumption and the discharge prescription — which is where persistent opioid use after cesarean begins. Note that ERAS pathways are bundles, and adherence to the whole bundle rather than to favourite components is what the outcome data reflect.",
+    "link": "American Journal of Obstetrics & Gynecology - ERAS Society recommendations for cesarean delivery",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=ERAS+Society+guidelines+cesarean+delivery+antenatal+preoperative+intraoperative+care",
+    "verify": {
+      "status": "corrected — date",
+      "note": "The ERAS Society cesarean recommendations are real and were published in AJOG as a three-part series in 2018-2019, not as a 2025 guideline; whether a further update appeared could not be confirmed, and the url is a PubMed title search. 'REQUIRES obstetric units to implement structured ERAS pathways' softened — a society recommendation does not require anything of a unit. Added the bundle-adherence point, since selective adoption is the usual reason ERAS pathways underperform in practice."
+    }
+  },
+  {
+    "title": "ACOG Clinical Consensus: Pain Management for In-Office Uterine and Cervical Procedures",
+    "journal": "Obstetrics & Gynecology",
+    "date": "2025",
+    "breakthrough": "Standardised analgesia for procedures long performed without it — IUD insertion, endometrial biopsy, hysteroscopy, cervical biopsy — after sustained patient advocacy about how badly the pain of these procedures has been underestimated.",
+    "impact": "Clinicians should counsel about expected pain and offer evidence-based options rather than assuming a brief procedure needs no analgesia. The gap between clinician-estimated and patient-reported pain for IUD insertion is one of the widest documented in any procedural setting.",
+    "practical": "Paracervical or intracervical lidocaine block has the best evidence for tenaculum placement and cervical dilation; topical lidocaine gel alone performs poorly for the deeper visceral pain of intrauterine instrumentation. Misoprostol before IUD insertion does NOT reduce pain and increases cramping — a common practice with evidence against it. Oral NSAIDs given in advance help with post-procedural cramping more than with the procedure itself.",
+    "link": "Obstetrics & Gynecology - ACOG clinical consensus on pain management for in-office procedures",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=ACOG+clinical+consensus+pain+management+in-office+uterine+cervical+procedures",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED, with two corrections",
+      "note": "ACOG has issued guidance in this area and the direction is real, but the specific 'Clinical Consensus No. 11' was not located; the url is a PubMed title search. TWO CORRECTIONS. 'Formally MANDATES that clinicians proactively offer' overstates — guidance recommends counselling and offering options. And 'eliminating the practice of unmedicated intrauterine procedures' is an aspiration, not an effect. Added what actually works and what does not: paracervical block over topical gel for visceral pain, and misoprostol pretreatment as a practice with evidence against it. This topic appeared in both submitted lists and is kept here once."
+    }
+  },
+  {
+    "title": "USPSTF Preeclampsia Risk Criteria and Uptake of Low-Dose Aspirin Prophylaxis",
+    "journal": "JAMA Network Open",
+    "date": "2025",
+    "breakthrough": "A cohort analysis found that current risk criteria classify a very large majority of pregnant people as at increased risk for preeclampsia, that moderate-risk demographic factors alone predict poorly, and that aspirin was prescribed to only a minority of eligible patients.",
+    "impact": "A screening rule that flags almost everyone stops functioning as a screening rule. The consequence described here is alert fatigue: broad criteria plus low prescribing suggests clinicians are discounting the flag rather than acting on it.",
+    "practical": "Prioritise aspirin in patients with objective high-risk features — previous preeclampsia, chronic hypertension, pregestational diabetes, chronic kidney disease, autoimmune disease, multifetal gestation — where the number needed to treat is favourable. Start before 16 weeks; the mechanism depends on affecting placentation, so late initiation is much less effective. ACOG's recommended dose is 81 mg daily, which differs from the 150 mg used in the European trials.",
+    "link": "JAMA Network Open - preeclampsia risk criteria and aspirin prophylaxis",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=USPSTF+preeclampsia+risk+criteria+low-dose+aspirin+prophylaxis+cohort+prescription+rates",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific national cohort study matching this description was located; the url is a PubMed title search, so the '90% classified as increased risk' and '37% prescribed' figures are not asserted here. The underlying problem — that broad moderate-risk criteria capture most pregnancies and that aspirin uptake is low — is well documented. Added the specific high-risk features, the before-16-weeks timing that determines whether aspirin works at all, and the ACOG 81 mg dose, which the submission gave as '81-150 mg' without noting the divergence."
+    }
+  },
+  {
+    "title": "Uterine Fibroids and Long-Term Cardiovascular Risk",
+    "journal": "JAMA Network Open",
+    "date": "2025",
+    "breakthrough": "A large population-based retrospective analysis reported that a diagnosis of uterine fibroids was independently associated with substantially higher long-term cardiovascular disease risk — coronary disease and stroke — with the association strongest in younger women.",
+    "impact": "Reframes fibroids from a local structural problem to a possible marker of systemic cardiometabolic risk. Shared risk factors are plausible: obesity, hypertension, insulin resistance and inflammation are associated with both fibroids and vascular disease.",
+    "practical": "Reasonable to check blood pressure, lipids and glycaemic status in a woman presenting with symptomatic fibroids, particularly a young one — she may be in the office for heavy bleeding and never otherwise get cardiovascular screening. But this is an ASSOCIATION in retrospective data, with obvious confounding and detection bias (women in gynaecologic care get measured more), so it justifies screening rather than a claim that fibroids cause vascular disease.",
+    "link": "JAMA Network Open - uterine fibroids and cardiovascular disease risk",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=uterine+fibroids+cardiovascular+disease+risk+population+cohort+JAMA+Network+Open",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific analysis matching this description was located; the url is a PubMed title search, so the '2.7 million women' and '81% higher risk' figures are not asserted. The claim that this 'Reconfigured general gynecology practice parameters' could not be confirmed and was removed. Added the confounding and detection-bias caveat: the submission presented an independent association from retrospective data as though it established fibroids as a systemic risk marker, and a resident should be able to tell those apart."
+    }
+  },
+  {
+    "title": "Prophylactic Tranexamic Acid in Cesarean Delivery for Placenta Previa",
+    "journal": "BMJ",
+    "date": "2025",
+    "breakthrough": "A randomised double-blind trial of intravenous tranexamic acid given at cord clamping during cesarean delivery for placenta previa reported reduced postpartum haemorrhage and reduced blood loss of 1000 mL or more.",
+    "impact": "Placenta previa is a setting where the bleeding risk is known in advance and the operation is planned, which makes it an unusually good target for prophylaxis — unlike unselected delivery, where the number needed to treat is poor.",
+    "practical": "Read alongside the wider TXA evidence, which is more mixed than a single positive trial suggests: TRAAP found no significant reduction in its primary outcome after vaginal delivery, and TRAAP2 found a statistically significant but clinically modest effect after cesarean. Prophylaxis makes most sense where baseline risk is high — abnormal placentation, known coagulopathy, prior haemorrhage — rather than as a routine addition to every delivery.",
+    "link": "BMJ - prophylactic tranexamic acid in cesarean delivery for placenta previa",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=tranexamic+acid+placenta+previa+cesarean+postpartum+hemorrhage+randomized+BMJ",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific BMJ trial matching this description was located; the url is a PubMed title search. Retained because prophylactic TXA in high-risk placental delivery is a plausible and much-studied question. 'Updated international obstetric hemorrhage protocols to recommend' could not be confirmed and was removed. Added the TRAAP and TRAAP2 context, because a reader given only a single positive trial in previa would reasonably generalise to routine prophylaxis — which the larger trials do not support."
+    }
+  },
+  {
+    "title": "Non-Hormonal Neurokinin Receptor Antagonists for Menopausal Vasomotor Symptoms",
+    "journal": "NEJM / The Lancet",
+    "date": "Fezolinetant approved 2023; boxed warning added December 2024",
+    "breakthrough": "Fezolinetant, an oral selective NK3 receptor antagonist, produces rapid and sustained reduction in moderate-to-severe vasomotor symptoms without oestrogen — the first genuinely mechanism-targeted non-hormonal option, acting on the KNDy neurons that drive thermoregulatory instability after oestrogen withdrawal.",
+    "impact": "Genuinely valuable for the patients who cannot take oestrogen at all: breast cancer survivors on endocrine therapy, and women with prior thromboembolic or significant cardiovascular disease.",
+    "practical": "SAFETY, which the submission omitted: on 16 December 2024 the FDA added a BOXED WARNING to fezolinetant for rare but serious liver injury, after a postmarketing case of hepatocellular injury within 40 days of starting the drug. Transaminase elevations above three times the upper limit occurred in 2.3% of women in trials. Baseline and periodic liver function testing is required, and the patient needs to know the symptoms — fatigue, nausea, pruritus, jaundice, pale stool, dark urine — and to stop and call.",
+    "link": "FDA - warning about rare serious liver injury with fezolinetant (Veozah)",
+    "url": "https://www.fda.gov/drugs/drug-safety-communications/fda-adds-warning-about-rare-occurrence-serious-liver-injury-use-veozah-fezolinetant-hot-flashes-due",
+    "verify": {
+      "status": "corrected — a boxed safety warning was omitted",
+      "note": "The efficacy claim is real; fezolinetant was FDA-approved in 2023 for moderate-to-severe vasomotor symptoms. THE CORRECTION IS A SAFETY ONE: the submission said these agents deliver relief 'without adverse endometrial proliferation' and, in the companion 2026 list, explicitly 'without liver toxicity'. Fezolinetant carries an FDA BOXED WARNING for serious liver injury, added 16 December 2024, with mandatory liver function monitoring. Presenting it as free of hepatic risk would have a clinician skip that monitoring. 'Primary first-line therapies' softened — it is an option for women who cannot take hormone therapy, not a first-line replacement for it."
+    }
+  },
+  {
+    "title": "Conception Rates in Endometriosis-Associated Infertility",
+    "journal": "The Lancet",
+    "date": "2025",
+    "breakthrough": "A long-term population cohort reported that women with infertility attributed to endometriosis achieve higher cumulative conception rates than has generally been assumed, compared with other causes of infertility.",
+    "impact": "Matters mostly for what it changes in the consultation. A diagnosis of endometriosis is often received as a verdict on fertility, and the cumulative-conception framing is both more accurate and less damaging than a single-cycle probability.",
+    "practical": "Counsel on cumulative rather than per-cycle chances. On surgery, be careful about the direction of the trade-off: excision of endometriomas can reduce ovarian reserve, so repeated or aggressive surgery for the sake of fertility can work against it. Diagnostic laparoscopy is no longer required to diagnose endometriosis, which can be made clinically and by imaging — so 'early diagnostic laparoscopy' is not the current standard.",
+    "link": "The Lancet - conception rates in endometriosis-associated infertility",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=endometriosis+infertility+cumulative+conception+rates+population+cohort+Lancet",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED, with one correction",
+      "note": "No specific 30-year cohort of over 4 million women was located; the url is a PubMed title search and those figures are not asserted. ONE CORRECTION: the submission recommended 'early diagnostic laparoscopy and conservative surgical optimization... to PRESERVE intrinsic ovarian reserve'. Current practice does not require laparoscopy to diagnose endometriosis, and endometrioma excision can REDUCE ovarian reserve rather than preserve it — so as written it pointed the wrong way on both counts."
+    }
+  },
+  {
+    "title": "Perinatal Opioid Use Disorder Management after Elimination of the DATA-Waiver",
+    "journal": "Obstetrics & Gynecology",
+    "date": "2025",
+    "breakthrough": "Practice guidance for obstetrician-gynaecologists following the removal of the federal DATA-2000 waiver requirement, which means any clinician with a standard DEA registration can now prescribe buprenorphine.",
+    "impact": "Pregnancy is a period of unusually high engagement with healthcare for a population that otherwise has poor access, so the obstetric visit is often the only opportunity to start treatment. Untreated opioid use disorder in pregnancy carries far greater risk than treatment does.",
+    "practical": "Buprenorphine or methadone are both appropriate in pregnancy and both are preferred to withdrawal management, which has high relapse and overdose risk. Note the access asymmetry: buprenorphine can now be prescribed from any office, while methadone for OUD still requires a federally certified opioid treatment programme. Neonatal opioid withdrawal syndrome is an expected, treatable consequence of maternal treatment — not a reason to withhold or taper it.",
+    "link": "Obstetrics & Gynecology - perinatal opioid use disorder practice update",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=ACOG+perinatal+opioid+use+disorder+buprenorphine+DATA+waiver+Obstetrics+Gynecology",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED, with two corrections",
+      "note": "The DATA-waiver elimination (Consolidated Appropriations Act, 2023) is real, but the specific ACOG practice update was not located; the url is a PubMed title search. TWO CORRECTIONS. Methadone was implicitly grouped with buprenorphine as office-prescribable — it still requires a certified opioid treatment programme. And 'reducing neonatal abstinence syndrome SEVERITY' inverts the framing: maternal treatment is expected to produce neonatal opioid withdrawal syndrome, which is treatable, and fear of it is a documented reason clinicians wrongly withhold or taper treatment."
+    }
+  }
+]

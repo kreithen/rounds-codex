@@ -1,17 +1,17 @@
 # Clinical guideline citation checks — for sign-off
 
-138 entries checked. Grouped worst-first by what a reader would take away if the
+156 entries checked. Grouped worst-first by what a reader would take away if the
 entry shipped as submitted. Every entry below is live in the app in its CORRECTED form; this
 document records what was changed and why, so any of it can be reverted.
 
 | verdict | entries |
 |---|---|
-| Findings stated backwards — a reader would learn the opposite of the published result | 13 |
+| Findings stated backwards — a reader would learn the opposite of the published result | 16 |
 | Cited study could not be found | 6 |
 | Evidence level inflated — case report presented as a trial | 2 |
-| Citation not independently verified | 37 |
+| Citation not independently verified | 46 |
 | Wrong study or replaced | 7 |
-| Corrected — dates, journals, numbers, strength of claim | 66 |
+| Corrected — dates, journals, numbers, strength of claim | 72 |
 | Matched — no correction needed | 7 |
 
 ---
@@ -95,6 +95,24 @@ Real (NIDA CTN-0099) but the submission was wrong on four counts. SITES: 29 emer
 **corrected — attribution reversed**
 
 The original said the AAFP 'updated its adult hypertension guidelines, formally adopting a target of <130/80'. The AAFP explicitly did NOT endorse the 2025 AHA/ACC guideline (nor did the ACP or ISH), and uses 'Affirmation of Value' rather than endorsement — a distinction that matters to a family physician, and one of the more instructive facts in this list. AAFP's own guidance does reference <130/80 with caveats, which is now stated accurately. Also 'Establishes out-of-office monitoring as a MANDATORY step' softened to strongly recommended.
+
+### Obstetrics & Gynecology 2026 #1 — First-Trimester Preeclampsia Screening with PlGF, sFlt-1 and Uterine Artery Doppler
+
+**corrected — the guideline claim is reversed**
+
+The screening approach and the ASPRE result are real, but the specific 2026 ACOG Practice Advisory was not located; the url is a PubMed title search. THE CORRECTION: the submission said biomarker screening 'REPLACED traditional demographic-only screening in updated ACOG and SMFM advisories, establishing early-trimester angiogenic biomarker testing as the PREFERRED STANDARD'. ACOG has not adopted first-trimester biomarker screening and continues to recommend clinical risk-factor assessment — the entry now presents this as a US-versus-Europe divergence, which is what it is. Added the 150 mg versus 81 mg dose divergence and the preterm-versus-term performance distinction.
+
+### Obstetrics & Gynecology 2026 #2 — Dual Neurokinin-1/3 Receptor Antagonists for Menopausal Vasomotor Symptoms
+
+**corrected — a safety claim was inverted**
+
+The dual NK1/NK3 mechanism and the phase 3 programme are real, though the specific publication was not resolved and the url is a PubMed title search. THE CORRECTION IS THE IMPORTANT ONE: the submission stated these agents work 'WITHOUT LIVER TOXICITY or endometrial thickening'. Fezolinetant — an NK3 antagonist in the same class discussion — carries an FDA boxed warning for serious liver injury and requires liver function monitoring. Even if elinzanetant's hepatic profile proves cleaner, a blanket class claim of no liver toxicity would have a clinician skip mandated monitoring. 'Primary first-line options' softened to what it is: an option for women who cannot take hormone therapy.
+
+### Obstetrics & Gynecology 2026 #4 — Prophylactic Tranexamic Acid after Vaginal Delivery: What the Trials Actually Show
+
+**REVERSED — original stated the opposite of the primary result**
+
+The submission said a large prospective trial 'established that prophylactic IV tranexamic acid... in high-risk vaginal births SIGNIFICANTLY REDUCES blood loss ≥500 mL and postpartum blood transfusion rates', and that consensus protocols now integrate prophylactic TXA into active management of the third stage. TRAAP (NEJM 2018, 4,079 women) is the definitive trial of exactly this and its PRIMARY OUTCOME — PPH ≥500 mL — was NOT significantly reduced (8.1% vs 9.8%, RR 0.83). Rewritten to the actual findings across TRAAP, TRAAP2 and the 2024 IPD meta-analysis, and to distinguish prophylaxis from treatment, where TXA does have clear evidence (WOMAN trial, within 3 hours).
 
 ---
 
@@ -377,6 +395,60 @@ No specific 2026 guideline document was located and the url is a PubMed title se
 **NOT INDEPENDENTLY VERIFIED**
 
 A multispecialty consensus on sacroiliac joint pain is consistent with recent Regional Anesthesia & Pain Medicine output, but the specific document was not located and the url is a PubMed title search. The 50% block-relief threshold stated in the submission is the conventional criterion in this literature and is retained as such rather than attributed to this document specifically.
+
+### Obstetrics & Gynecology 2025 #2 — ACOG Clinical Practice Guideline: Intrapartum Fetal Heart Rate Monitoring
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific ACOG Clinical Practice Guideline No. 10 on intrapartum FHR monitoring was located and the url is a PubMed title search, so the guideline number and date are unconfirmed. The clinical content — the three-tier system, the case against FHR adjunct technologies, and the intrauterine resuscitation steps — is well established and has been stated explicitly rather than left as 'clear intrapartum intrauterine resuscitation steps', which taught nothing usable. Added the routine-oxygen point, which is a common reflex not supported by evidence.
+
+### Obstetrics & Gynecology 2025 #4 — ACOG Clinical Consensus: Pain Management for In-Office Uterine and Cervical Procedures
+
+**NOT INDEPENDENTLY VERIFIED, with two corrections**
+
+ACOG has issued guidance in this area and the direction is real, but the specific 'Clinical Consensus No. 11' was not located; the url is a PubMed title search. TWO CORRECTIONS. 'Formally MANDATES that clinicians proactively offer' overstates — guidance recommends counselling and offering options. And 'eliminating the practice of unmedicated intrauterine procedures' is an aspiration, not an effect. Added what actually works and what does not: paracervical block over topical gel for visceral pain, and misoprostol pretreatment as a practice with evidence against it. This topic appeared in both submitted lists and is kept here once.
+
+### Obstetrics & Gynecology 2025 #5 — USPSTF Preeclampsia Risk Criteria and Uptake of Low-Dose Aspirin Prophylaxis
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific national cohort study matching this description was located; the url is a PubMed title search, so the '90% classified as increased risk' and '37% prescribed' figures are not asserted here. The underlying problem — that broad moderate-risk criteria capture most pregnancies and that aspirin uptake is low — is well documented. Added the specific high-risk features, the before-16-weeks timing that determines whether aspirin works at all, and the ACOG 81 mg dose, which the submission gave as '81-150 mg' without noting the divergence.
+
+### Obstetrics & Gynecology 2025 #6 — Uterine Fibroids and Long-Term Cardiovascular Risk
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific analysis matching this description was located; the url is a PubMed title search, so the '2.7 million women' and '81% higher risk' figures are not asserted. The claim that this 'Reconfigured general gynecology practice parameters' could not be confirmed and was removed. Added the confounding and detection-bias caveat: the submission presented an independent association from retrospective data as though it established fibroids as a systemic risk marker, and a resident should be able to tell those apart.
+
+### Obstetrics & Gynecology 2025 #7 — Prophylactic Tranexamic Acid in Cesarean Delivery for Placenta Previa
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific BMJ trial matching this description was located; the url is a PubMed title search. Retained because prophylactic TXA in high-risk placental delivery is a plausible and much-studied question. 'Updated international obstetric hemorrhage protocols to recommend' could not be confirmed and was removed. Added the TRAAP and TRAAP2 context, because a reader given only a single positive trial in previa would reasonably generalise to routine prophylaxis — which the larger trials do not support.
+
+### Obstetrics & Gynecology 2025 #9 — Conception Rates in Endometriosis-Associated Infertility
+
+**NOT INDEPENDENTLY VERIFIED, with one correction**
+
+No specific 30-year cohort of over 4 million women was located; the url is a PubMed title search and those figures are not asserted. ONE CORRECTION: the submission recommended 'early diagnostic laparoscopy and conservative surgical optimization... to PRESERVE intrinsic ovarian reserve'. Current practice does not require laparoscopy to diagnose endometriosis, and endometrioma excision can REDUCE ovarian reserve rather than preserve it — so as written it pointed the wrong way on both counts.
+
+### Obstetrics & Gynecology 2025 #10 — Perinatal Opioid Use Disorder Management after Elimination of the DATA-Waiver
+
+**NOT INDEPENDENTLY VERIFIED, with two corrections**
+
+The DATA-waiver elimination (Consolidated Appropriations Act, 2023) is real, but the specific ACOG practice update was not located; the url is a PubMed title search. TWO CORRECTIONS. Methadone was implicitly grouped with buprenorphine as office-prescribable — it still requires a certified opioid treatment programme. And 'reducing neonatal abstinence syndrome SEVERITY' inverts the framing: maternal treatment is expected to produce neonatal opioid withdrawal syndrome, which is treatable, and fear of it is a documented reason clinicians wrongly withhold or taper treatment.
+
+### Obstetrics & Gynecology 2026 #3 — Continuous Glucose Monitoring in Gestational Diabetes Mellitus
+
+**NOT INDEPENDENTLY VERIFIED, with the evidence base qualified**
+
+No specific ACOG guideline update endorsing CGM in GDM was located; the url is a PubMed title search. QUALIFICATION ADDED: the submission stated CGM 'significantly reduc[es] fetal macrosomia and neonatal hypoglycemia' in GDM as an established finding. The randomised neonatal-outcome evidence for CGM in pregnancy is strongest in TYPE 1 diabetes (CONCEPTT); for gestational diabetes specifically it is weaker, and the entry now says so. The 63-140 mg/dL range from the submission is retained as the pregnancy target.
+
+### Obstetrics & Gynecology 2026 #6 — ERAS Protocols in Major Gynecologic Oncology Surgery
+
+**NOT INDEPENDENTLY VERIFIED**
+
+ERAS in gynaecologic oncology is well established, but the specific multi-centre study was not located; the url is a PubMed title search, so the '2 days shorter stay' and '35% fewer surgical site infections' figures are not asserted. 'Establish MANDATORY perioperative pathways' softened — society guidelines recommend rather than mandate. Added the study-design caveat: much of this literature is before-and-after rather than randomised, which is the main reason to treat the effect sizes as indicative.
 
 ---
 
@@ -823,6 +895,42 @@ Real and positive; The Lancet, 2023 rather than 2026. The non-contrast CT select
 **corrected — year**
 
 Real; JAMA, 2024 rather than 2026, and the null result on 1-year patient-reported physical function is correctly reported in the submission. Added the specific approach-related risks that distinguish the two operations, since 'reducing instrumented fusion costs, surgical risk, and recovery times' does not say what the risks actually are — and dysphagia and recurrent laryngeal nerve injury are the ones that drive the decision.
+
+### Obstetrics & Gynecology 2025 #1 — Self-Collected Vaginal Swabs for High-Risk HPV Cervical Cancer Screening
+
+**corrected — setting, and consolidated from two submitted entries**
+
+The evidence and the FDA approvals are real, but the specific studies were not resolved to citations and the url is a PubMed title search; the submitted '≥95% sensitivity' figure is therefore not asserted. ONE MATERIAL CORRECTION: the original said 'home- or clinic-based' as though both arrived together — the initial FDA authorisations were for self-collection in a healthcare setting, with at-home kits following, which is what determines what a clinic can actually offer today. This topic appeared in BOTH submitted OB/GYN lists (2025 #1 and 2026 #4); it is kept here once so it does not appear under both year buttons.
+
+### Obstetrics & Gynecology 2025 #3 — ERAS Society Recommendations for Antenatal, Preoperative and Intraoperative Care in Cesarean Delivery
+
+**corrected — date**
+
+The ERAS Society cesarean recommendations are real and were published in AJOG as a three-part series in 2018-2019, not as a 2025 guideline; whether a further update appeared could not be confirmed, and the url is a PubMed title search. 'REQUIRES obstetric units to implement structured ERAS pathways' softened — a society recommendation does not require anything of a unit. Added the bundle-adherence point, since selective adoption is the usual reason ERAS pathways underperform in practice.
+
+### Obstetrics & Gynecology 2025 #8 — Non-Hormonal Neurokinin Receptor Antagonists for Menopausal Vasomotor Symptoms
+
+**corrected — a boxed safety warning was omitted**
+
+The efficacy claim is real; fezolinetant was FDA-approved in 2023 for moderate-to-severe vasomotor symptoms. THE CORRECTION IS A SAFETY ONE: the submission said these agents deliver relief 'without adverse endometrial proliferation' and, in the companion 2026 list, explicitly 'without liver toxicity'. Fezolinetant carries an FDA BOXED WARNING for serious liver injury, added 16 December 2024, with mandatory liver function monitoring. Presenting it as free of hepatic risk would have a clinician skip that monitoring. 'Primary first-line therapies' softened — it is an option for women who cannot take hormone therapy, not a first-line replacement for it.
+
+### Obstetrics & Gynecology 2026 #5 — First-Trimester CMV Screening with Valaciclovir to Prevent Congenital Infection
+
+**corrected — the guideline position**
+
+The valaciclovir trial is real (Lancet 2020) and the transmission reduction is accurately described in outline; the specific 2026 screening trial in the submission was not located and the url is a PubMed title search. CORRECTION: the submission said this 'Prompted maternal-fetal medicine societies to re-evaluate long-standing opposition... shifting TOWARD early gestational serologic screening protocols' — ACOG has not adopted universal CMV screening, and the entry now says so. Added the serologic interpretation difficulty (IgM persistence, avidity testing), which is the practical reason universal screening remains contested.
+
+### Obstetrics & Gynecology 2026 #7 — Fertility-Sparing Surgery for Early-Stage Cervical Cancer
+
+**corrected — study design and missing context**
+
+Fertility-sparing surgery is real and guideline-endorsed for selected early disease, but no multi-year prospective trial establishing 'equivalent 5-year disease-free survival and overall survival' was located; the trachelectomy evidence base is largely OBSERVATIONAL, and the url is a PubMed title search. 'Gold standard recommendation' overstates an option requiring narrow selection. Added three things the submission omitted: the de-escalation direction from ConCerv and SHAPE, the LACC finding that minimally invasive radical hysterectomy was inferior, and the raised preterm birth and second-trimester loss rates after trachelectomy — which is the counselling point for a patient choosing this specifically for fertility.
+
+### Obstetrics & Gynecology 2026 #8 — Mesh and Native Tissue Repair in Apical Pelvic Organ Prolapse
+
+**corrected — the erosion rate was understated by roughly fivefold**
+
+No specific 2026 registry publication or AUGS/IUGA joint guideline was located; the url is a PubMed title search. THE CORRECTION MATTERS FOR CONSENT: the submission claimed 'extremely low erosion rates (<2%)'. The extended CARE trial — the longest randomised follow-up of abdominal sacrocolpopexy — reported mesh erosion approaching 10% by 7 years. Quoting under 2% to a patient would materially misstate the risk. 'Re-established... as the high-grade gold standard' softened, and the transvaginal-versus-abdominal mesh distinction was added explicitly, since the submission's unqualified use of 'synthetic mesh' invites exactly the conflation that makes this conversation difficult.
 
 ---
 
