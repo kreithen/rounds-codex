@@ -246,7 +246,7 @@ no backend. This file is context for future sessions — read it before starting
   and strips** — review material, never app content. Anesthesiology is coded **`anes`**. Years sort
   **ascending**, so 2025 sits above 2026 (specified; not newest-first like the rest of the app).
   Built by `scripts/add_clinical_guidelines.js` + `scripts/add_guideline_share.js`.
-  **Live for 18 specialties (330 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `ent`,
+  **Live for 18 specialties (340 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `ent`,
   `fm`, `im`, `neuro`, `nsg`, `obgyn`, `ophtho`, `ortho`, `path`, `peds`, `plastics`, `pmr`, `prev`,
   `psych`.
   A single-year specialty should **omit** the other year, not ship `2026: []` — an empty array
@@ -268,9 +268,9 @@ no backend. This file is context for future sessions — read it before starting
   **Do not assume a repeated suspicious name is the same error.** `amivantamab` appeared a third
   time, in ENT, and that one is REAL — OrigAMI-4 (ORR 56%, n=39) and phase 3 OrigAMI-5 are a genuine
   HNSCC programme. Check each occurrence.
-  **Every submitted entry must be citation-checked before merging.** Across all 330: 25 stated the
-  opposite of the published result, 16 cited studies that could not be found, 18 named the wrong
-  study, 67 could not be resolved to a citation, and 12 were clean — the teaching was usually sound,
+  **Every submitted entry must be citation-checked before merging.** Across all 340: 25 stated the
+  opposite of the published result, 16 cited studies that could not be found, 20 named the wrong
+  study, 73 could not be resolved to a citation, and 12 were clean — the teaching was usually sound,
   the sourcing was not. `CORRECTIONS-all.md` is the running record, regenerated over every staging
   file (`build_corrections_summary.js`); the unsuffixed staging file is always canonical, with the
   physician's original kept as `-submitted` once corrections are approved.
@@ -286,8 +286,14 @@ no backend. This file is context for future sessions — read it before starting
   Protocols for "results from the landmark CONVOKE Phase 3 trial" — that journal publishes study
   protocols, so the citation and the claim were incompatible on their face.
   **Invented trial acronyms are a recurring failure.** The real LQD trial (lithium versus quetiapine
-  augmentation, Lancet Psychiatry 2025) was submitted as "LITH-QUE"; ESTEEM and ANGLE did not exist
-  at all. Search the acronym before trusting it — a wrong one sends the reader nowhere.
+  augmentation, Lancet Psychiatry 2025) was submitted as "LITH-QUE"; ESTEEM, ANGLE and "iCATSi2i" did
+  not resolve at all. Search the acronym before trusting it — a wrong one sends the reader nowhere.
+  **One journal cited repeatedly for unrelated topics means the citations are filler.** Psychiatry
+  2026 sourced five different entries — fMRI-guided TMS, a ketogenic diet RCT, mirtazapine for
+  methamphetamine, postpartum depression subtypes and school-based anxiety care — to the same
+  "editorial review on Shanghai Archives of Psychiatry". One of those five (mirtazapine) is a real
+  JAMA Psychiatry trial, so the content can be sound while the citation is invented. Check the topic
+  against the journal, not just the journal against a list of real journals.
   **Check what the cited publication actually is.** Preventive Medicine 2026 sourced its gut
   microbiome entry to "Healing Holidays Health Journal" — a wellness-retreat travel company — and
   its AI-calcium entry to Definitive Healthcare, a commercial data vendor. A press release also

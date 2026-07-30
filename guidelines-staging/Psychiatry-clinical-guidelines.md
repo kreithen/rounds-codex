@@ -151,3 +151,149 @@ literature search, not a medical re-read — see `VERIFICATION.md` for the metho
 [Systematic review and meta-analysis of randomised placebo-controlled trials of folate and vitamin B12 for depression](https://www.sciencedirect.com/science/article/pii/S1041610224005532)
 
 > **Citation check — ⚠ REVERSED — the evidence does not support the claim, and no guideline recommends the screening.** The submission states that 'large-scale meta-analyses and clinical trials confirm[] that correcting specific micronutrient deficiencies (such as folate/B9, B12, and high-dose Vitamin D3) significantly enhances standard antidepressant treatment response and improves cardiometabolic markers', and that this 'updates major depressive disorder evaluation guidelines to recommend baseline screening for nutritional, inflammatory, and metabolic biomarkers prior to or alongside psychotropic initiation'. THE EVIDENCE RUNS THE OTHER WAY. A large randomised trial found no clear potentiation of antidepressant effect by folic acid plus B12 (effect in one of four follow-up periods only); meta-analysis found short-term folate and B12 supplementation does not improve depressive symptoms in adults already on antidepressants; benefit was found in one trial specifically in patients with low-normal B12. For vitamin D, a 31-trial dose-response meta-analysis found a SLIGHT reduction per 1,000 IU/day, in people with and without depression. No guideline recommending baseline nutritional, inflammatory and metabolic biomarker panels before psychotropic initiation was found, and the cardiometabolic claim is not an established augmentation finding. Rewritten to give the actual trial results and a defensible clinical rule — test where there is a reason, correct what is low — because the submitted version would license selling supplement panels to every patient starting an antidepressant.
+
+---
+
+## 2026
+
+10 entries · **10 with a citation problem — see the checks below**
+
+### 1. Dose-Effect Network Meta-Analysis of ADHD Pharmacotherapy
+
+*The Lancet Psychiatry · June 2026*
+
+**The breakthrough.** The first comprehensive dose-effect network meta-analysis of ADHD medication, pooling 113 double-blind randomised trials — 14,138 children and adolescents and 11,016 adults — using a Bayesian hierarchical model with restricted cubic splines to map the shape of the dose-response curve rather than compare fixed doses. It covers oral stimulant and non-stimulant monotherapy from age 5 upwards, with efficacy on validated clinical scales as the primary outcome and discontinuation due to adverse events as the secondary.
+
+**Clinical guideline impact.** Answers the question prescribers actually face — not whether a drug works, but at what dose it stops adding benefit. Modelling the whole curve is what makes that answerable, and 25,000 patients is enough for the shape to be stable.
+
+**Practical implications.** Two errors it lets you avoid: leaving a patient on a sub-therapeutic dose and assuming non-response, and pushing past the licensed maximum in the hope of more effect. Read efficacy and tolerability curves together — they do not peak at the same dose, which is the whole point of a dose-effect analysis, and discontinuation for adverse events is the endpoint that decides whether a dose is usable.
+
+[The Lancet Psychiatry — pharmacological interventions for ADHD: a systematic review and dose-effect network meta-analysis](https://www.thelancet.com/journals/lanpsy/article/PIIS2215-0366(26)00091-X/fulltext)
+
+> **Citation check — ⚠ matched with corrections — accurate, with the guideline claim softened.** Verified and accurately described: The Lancet Psychiatry, June 2026, 113 double-blind randomised trials, 14,138 children/adolescents and 11,016 adults (the submission's '25,000+ patients' is correct), Bayesian hierarchical network model with restricted cubic splines, oral stimulant and non-stimulant monotherapy from age 5, efficacy on validated scales with tolerability as discontinuation due to adverse events. The best-sourced entry in this list. TWO CHANGES. The age breakdown, design and tolerability endpoint were added, since a dose-effect analysis is only interpretable if you know efficacy and tolerability curves are separate. And the claim that it 'updates international ADHD prescribing guidelines' is softened — the analysis informs guidelines rather than constituting one, and no guideline revision was verified.
+
+### 2. Interleukin-6 Receptor Blockade with Tocilizumab in Difficult-to-Treat Depression
+
+*JAMA Psychiatry · 2026*
+
+**The breakthrough.** A proof-of-concept randomised controlled trial tested whether blocking the IL-6 receptor with tocilizumab improves depressive symptoms in people with difficult-to-treat depression and low-grade inflammation. A 54% clinical remission rate was reported, with greater stepwise improvement over time in depression severity, somatic distress, anxiety and fatigue. Improvement correlated better with baseline high-sensitivity CRP than with IL-6 itself.
+
+**Clinical guideline impact.** The first targeted clinical signal that immune modulation might treat a biologically defined subgroup of depression rather than the diagnosis as a whole — and the finding that hs-CRP predicts better than IL-6 is practically useful, since hs-CRP is a routine test.
+
+**Practical implications.** Read this as proof of concept, not as a treatment pathway. The trial is a pilot, remission and response rates are described as numerically favouring tocilizumab, and an earlier study in medically ill patients found tocilizumab associated with WORSE depressive symptoms — so the direction is not settled across populations. Tocilizumab is not approved for depression and carries serious immunosuppression risk: serious infection, tuberculosis reactivation, hepatotoxicity and gastrointestinal perforation. Measuring hs-CRP in treatment-resistant depression is defensible as research stratification; prescribing a biologic on the result is not.
+
+[JAMA Psychiatry — interleukin 6 as a treatment target for depression: a proof-of-concept randomized clinical trial](https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2848978)
+
+> **Citation check — ⚠ matched with corrections — real, but the risk profile and a contrary trial were omitted.** Verified: JAMA Psychiatry proof-of-concept randomised trial of IL-6 receptor inhibition with tocilizumab in difficult-to-treat depression linked to low-grade inflammation, 54% remission, with improvement correlating with baseline hs-CRP better than IL-6. THREE CORRECTIONS. (1) The trial is a PILOT proof-of-concept and its remission and response rates are described as NUMERICALLY favouring tocilizumab — the submission presents 54% as an established treatment effect. (2) OMITTED CONTRARY EVIDENCE: an earlier study found tocilizumab associated with worse depression and related symptoms in medically ill patients, so the effect is not consistent across populations. (3) SAFETY OMITTED ENTIRELY: the submission recommends clinicians 'order routine inflammatory panels... to evaluate candidates for adjunctive biologic anti-inflammatory interventions' without mentioning that tocilizumab is an immunosuppressant carrying risk of serious infection, TB reactivation, hepatotoxicity and GI perforation, and is not approved for depression. A psychiatrist acting on the submitted version could expose a patient to those risks on the strength of one pilot trial.
+
+### 3. Cannabinoids for Psychiatric Disorders: No Evidence of Efficacy
+
+*Systematic review and meta-analysis · 2025 to 2026*
+
+**The breakthrough.** A large systematic review evaluating medicinal cannabis and cannabinoid products across major psychiatric indications found no evidence of efficacy for anxiety disorders, major depression or PTSD.
+
+**Clinical guideline impact.** A negative synthesis in a field where patient demand and commercial supply have both run far ahead of the evidence. Its clinical value is in giving a clinician something concrete to say.
+
+**Practical implications.** Use it in the conversation with a patient already self-medicating: there is no demonstrated benefit for anxiety, depression or PTSD, and there is demonstrated harm — psychosis risk, cannabis use disorder, and the opportunity cost of delaying treatment that does work. Distinguish products carefully: this concerns cannabinoids for psychiatric indications, not the separate and narrow evidence for cannabidiol in specific epilepsy syndromes. I could not confirm the specific review the submission cites or that guidelines have issued a strong recommendation against prescribing, so the direction here rests on the wider evidence base rather than on a named document.
+
+[Cannabinoids for psychiatric disorders: systematic review evidence](https://pubmed.ncbi.nlm.nih.gov/?term=cannabinoids+medicinal+cannabis+anxiety+depression+PTSD+systematic+review+efficacy)
+
+> **Citation check — ⚠ citation not independently verified — direction consistent with the evidence base.** The direction is well supported: systematic reviews of cannabinoids for anxiety, depression and PTSD have consistently failed to demonstrate efficacy, and the harms cited (psychosis risk, cannabis use disorder, delayed evidence-based care) are established. But I did not verify the specific review the submission describes as 'the largest multi-center analysis to date' in The Lancet, and I could not confirm that clinical practice guidelines now issue a strong recommendation against prescribing for mood and anxiety disorders — so neither is asserted. Also softened 'definitive evidence': an absence of demonstrated efficacy is not the same as proof of no effect, and overstating it invites a patient to dismiss the whole argument. Added the distinction from cannabidiol in epilepsy, since conflating the two is the commonest way this evidence gets rebutted in clinic.
+
+### 4. Switching from Oral Atypical Antipsychotics to Xanomeline-Trospium (Cobenfy): Open-Label Outpatient Switch Study
+
+*Company-reported trial results (Bristol Myers Squibb) · 2026*
+
+**The breakthrough.** An open-label outpatient study examined transitioning patients with schizophrenia from oral atypical antipsychotics to xanomeline-trospium, and reported symptom stability across the switch.
+
+**Clinical guideline impact.** The practical obstacle to using a new-mechanism antipsychotic is not the new drug but the handover: patients who are stable on a D2 blocker and intolerant of its metabolic or movement effects need a route across that does not risk destabilisation.
+
+**Practical implications.** Treat the cross-titration schedule as investigational until the peer-reviewed report is available — the source here is a company press release, and switch studies are open-label by design, so symptom stability is measured without blinding or a comparator arm. Two clinical points to hold onto: xanomeline-trospium is an M1/M4-preferring agonist paired with a peripherally restricted muscarinic antagonist rather than a dual agonist, and its gastrointestinal burden is the commonest reason patients stop it — so a switch trades one side-effect profile for another rather than eliminating side effects.
+
+[Bristol Myers Squibb — open-label outpatient switch study during transition from oral atypical antipsychotics to Cobenfy](https://investors.bms.com/iframes/press-releases/press-release-details/2026/Open-Label-Outpatient-Switch-Study-Demonstrates-Symptom-Stability-During-Transition-from-Oral-Atypical-Antipsychotics-to-Cobenfy-xanomeline-and-trospium-chloride/default.aspx)
+
+> **Citation check — ⚠ corrected — a press release described as codifying guidelines, and the mechanism repeated wrongly.** The study exists and the submitted link resolves to a Bristol Myers Squibb investor press release describing an open-label outpatient switch study showing symptom stability during transition to Cobenfy. THREE CORRECTIONS. (1) EVIDENCE STATUS: a company press release is not a peer-reviewed result, and the submission's claim that this 'codifies standardized 2-week and 4-week outpatient switching algorithms into clinical guidelines' is not supported — no guideline was found, and the specific schedules could not be verified. (2) The submission repeats the mechanism error from its own 2025 list, calling xanomeline-trospium a 'dual M1/M4 muscarinic receptor agonist'; trospium is a peripherally restricted muscarinic ANTAGONIST included to limit peripheral cholinergic effects. (3) 'Without triggering withdrawal psychosis or hospitalization' is stated as an outcome of an open-label study with no comparator, and the substantial GI burden of the new agent is again omitted. CROSS-REFERENCE: the 2025 list carries the Cobenfy implementation entry; this one is the switch study specifically.
+
+### 5. fMRI-Guided Targeting for Transcranial Magnetic Stimulation in PTSD
+
+*Early-stage neuromodulation research · 2025 to 2026*
+
+**The breakthrough.** Work in this area uses individual functional MRI to identify a patient-specific cortical target connected to threat circuitry, rather than locating the coil by scalp measurement or a standard anatomical rule, and applies repetitive TMS to that target in PTSD.
+
+**Clinical guideline impact.** Individualised connectivity-based targeting is the most credible direction in TMS, because the standard scalp-based rule places the coil over meaningfully different cortex in different heads.
+
+**Practical implications.** Not available outside research, and the arithmetic is unforgiving: individual fMRI plus neuronavigation adds scanning cost, analysis time and equipment that most interventional psychiatry clinics do not have, so a benefit has to be large to justify it. TMS is not an established PTSD treatment in the way it is for depression. I could not confirm the specific trial the submission describes, its amygdala reactivity findings, or the claim that trauma guidelines now elevate circuit-targeted neuromodulation — the citation given is an editorial review in Shanghai Archives of Psychiatry, which I could not resolve.
+
+[fMRI-guided individualised TMS targeting in PTSD](https://pubmed.ncbi.nlm.nih.gov/?term=fMRI-guided+individualized+rTMS+targeting+PTSD+amygdala+connectivity)
+
+> **Citation check — ⚠ citation not independently verified — plausible direction, specific trial and guideline claim not confirmed.** Individualised, connectivity-guided TMS targeting is a real research direction with a sound rationale, and reduced amygdala reactivity is a coherent hypothesis. But I did not verify the specific trial, the sustained reduction in right amygdala hyper-reactivity, or the claim that this 'elevates precision circuit-targeted neuromodulation within trauma guidelines'. The submitted citation — 'Editorial Review on Shanghai Archives of Psychiatry' — is one of five entries in this list pointing at the same journal for five unrelated topics, which is itself a reason to doubt the sourcing rather than the science. Rewritten to describe the approach and to state the practical barrier the submission omits: individual fMRI plus neuronavigation is beyond most interventional clinics, and TMS is not an established PTSD treatment. Flagged for the physician to supply primary citations.
+
+### 6. Ketogenic Diet as an Adjunct in Treatment-Resistant Depression
+
+*Early-stage metabolic psychiatry research · 2025 to 2026*
+
+**The breakthrough.** Metabolic psychiatry investigates whether a ketogenic diet, supervised alongside standard psychiatric care, improves depressive symptoms and brain energy metabolism in treatment-resistant depression.
+
+**Clinical guideline impact.** A genuinely different hypothesis about the biology of treatment resistance — bioenergetic rather than monoaminergic — and one that is testable.
+
+**Practical implications.** Do not offer this as an established adjunct. The field rests on pilot and open-label work; blinding a diet is close to impossible, which is exactly why an active comparator matters and why claims from unblinded studies should be read cautiously. There are real risks to manage in a psychiatric population: nutritional adequacy, interaction with eating-disorder history, and the demands of adherence in someone who is severely depressed. I could not confirm the randomised controlled trial with a matched active comparator that the submission describes, nor that any guideline supports metabolic psychiatry for severe depression.
+
+[Ketogenic diet in treatment-resistant depression: metabolic psychiatry evidence](https://pubmed.ncbi.nlm.nih.gov/?term=ketogenic+diet+treatment-resistant+depression+randomized+trial+metabolic+psychiatry)
+
+> **Citation check — ⚠ citation not independently verified — evidence level overstated.** Metabolic psychiatry and ketogenic interventions in mood disorders are a real area of investigation. But the submission claims 'a randomized controlled trial evaluating a structured ketogenic diet versus a matched active comparator diet' that 'confirmed measurable improvements', and says this 'provides high-level evidence supporting metabolic psychiatry within complementary management guidelines for severe major depressive disorder'. I could not verify that trial, and the citation given is again the Shanghai Archives of Psychiatry editorial review used for four other unrelated entries. Published work in this area is predominantly pilot and open-label. Rewritten to describe the hypothesis honestly and to add the risks the submission omits — nutritional adequacy, eating-disorder history, and adherence demands in severe depression — since a supervised restrictive diet in this population is not a neutral intervention.
+
+### 7. Mirtazapine for Methamphetamine Use Disorder (Tina Trial)
+
+*JAMA Psychiatry · 2026*
+
+**The breakthrough.** A phase 3, multisite, double-blind, placebo-controlled, parallel-arm randomised trial at six government-run outpatient alcohol and other drug clinics in Australia enrolled adults aged 18 to 65 with moderate or severe methamphetamine use disorder. Mirtazapine produced a modest but statistically significant reduction in methamphetamine use over 12 weeks, with no unexpected safety concerns. Drowsiness was more common on mirtazapine (47% versus 33%) as was weight gain (10% versus 3%). It follows an earlier randomised trial in cisgender men and transgender women who have sex with men.
+
+**Clinical guideline impact.** A pharmacological option in a disorder with no approved medication, tested in ordinary community addiction clinics rather than a research centre — which is where it would have to work.
+
+**Practical implications.** Worth offering, with the effect size stated plainly: modest, not transformative, and additive to psychosocial treatment rather than a substitute for it. Mirtazapine is not approved for this indication anywhere, so this is off-label prescribing. The side effects are the ones that determine adherence — nearly half report drowsiness, and weight gain is three times as common as on placebo — though sedation may be welcome in a patient with stimulant-related insomnia.
+
+[JAMA Psychiatry — mirtazapine for methamphetamine use disorder: a randomized clinical trial](https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2847070)
+
+> **Citation check — ⚠ corrected — 'first-line' overstates a modest effect, and the journal citation was wrong.** Verified: the Tina Trial, JAMA Psychiatry 2026, phase 3 multisite double-blind placebo-controlled parallel-arm randomised trial at six government-run outpatient AOD clinics in Australia, adults 18-65 with moderate or severe methamphetamine use disorder, modest but statistically significant reduction in use over 12 weeks, drowsiness 47% versus 33% and weight gain 10% versus 3%. THREE CORRECTIONS. (1) The submission says this 'updates addiction psychiatry clinical guidelines to recommend mirtazapine as a FIRST-LINE pharmacological option'. The source characterises the benefit as modest, mirtazapine has no approval for this indication, and no guideline change was found — so first-line is not supportable. (2) CITATION: the submission attributes this to a Shanghai Archives of Psychiatry editorial review; it is JAMA Psychiatry. (3) Added the effect size, the side-effect rates and the off-label status, none of which the submission gives, plus the earlier Coffin trial as context.
+
+### 8. Symptom Subtypes in Postpartum Depression
+
+*Cohort and latent class analysis literature · 2025 to 2026*
+
+**The breakthrough.** Latent class analysis of postpartum depressive symptoms identifies distinct symptom profiles rather than a single severity continuum, implying that a screen-positive or screen-negative cutoff discards clinically relevant information about which symptoms a woman actually has.
+
+**Clinical guideline impact.** Sound in principle: two women with the same Edinburgh Postnatal Depression Scale total can have entirely different presentations — one predominantly anhedonic, another anxious, another sleep-disrupted — and those are not the same clinical problem.
+
+**Practical implications.** The immediately usable point needs no new framework: read the item-level responses on the screening instrument, not only the total, and in particular treat the self-harm item as an independent trigger regardless of total score. Be careful with the submission's implication that subtype should direct treatment toward sleep-focused therapy or a neurosteroid — no validated subtype-to-treatment mapping exists, and zuranolone and brexanolone have specific indications and access constraints that a latent class does not override. I could not confirm the specific cohort study or the five profiles described.
+
+[Postpartum depressive symptom subtypes: latent class analyses](https://pubmed.ncbi.nlm.nih.gov/?term=postpartum+depression+latent+class+analysis+symptom+profiles+cohort)
+
+> **Citation check — ⚠ citation not independently verified — approach real, treatment-matching claim not supported.** Latent class analysis of perinatal depressive symptoms is a real and published approach, and the argument against relying on a binary screening cutoff is reasonable. But I did not verify the specific large-scale cohort study or the five distinct profiles, and the citation given is again the Shanghai Archives of Psychiatry editorial review shared with four unrelated entries. TWO CORRECTIONS. The claim that perinatal guidelines have shifted 'from a simple screen-positive vs. screen-negative binary cutoff to a multi-dimensional risk stratification model' was not confirmed. And the practical suggestion that clinicians tailor interventions 'ranging from sleep-focused therapies to neurosteroid administration' by symptom cluster implies a validated subtype-to-treatment mapping that does not exist — reworded, with the item-level reading of the screening instrument and the self-harm item offered as what is genuinely actionable now.
+
+### 9. Maintenance Dosing of Esketamine After Remission
+
+*Long-term extension and maintenance data · 2025 to 2026*
+
+**The breakthrough.** Maintenance-phase work examines how far esketamine dosing intervals can be extended — towards every two weeks or monthly — in patients who have achieved remission, and what happens to efficacy and safety over long-term administration.
+
+**Clinical guideline impact.** Frequency is the practical constraint on esketamine, not efficacy. Twice-weekly attendance at a certified site with two hours of observation each time is what patients discontinue over, so the interval question determines who can stay on treatment.
+
+**Practical implications.** Extend intervals guided by response, with the understanding that this is where the evidence is thinnest — long-term maintenance data are extension-phase and open-label rather than randomised withdrawal designs. Two safety domains genuinely need monitoring rather than reassurance: cognitive function and urinary tract symptoms, both raised by long-term ketamine exposure in other contexts. Do not treat interval extension as proven safe; treat it as a decision to review. I could not confirm the trials the submission cites, and its source is a treatment-centre website rather than a journal.
+
+[Esketamine long-term maintenance treatment in treatment-resistant depression](https://pubmed.ncbi.nlm.nih.gov/?term=esketamine+long-term+maintenance+dosing+interval+treatment-resistant+depression+safety)
+
+> **Citation check — ⚠ citation not independently verified — the cited source is a treatment-centre marketing page.** CITATION PROBLEM FIRST: the submission's source is 'Read Practice Guidelines via Villa Treatment Center Update' — a treatment centre, not a journal or guideline body. This is the second wellness- or treatment-provider website cited as evidence across these submissions, after 'Healing Holidays Health Journal' in the preventive medicine list. The underlying question is real: esketamine maintenance dosing intervals and long-term safety are genuinely under study. But the submission asserts that follow-up trials 'showed sustained treatment-resistant depression remission WITHOUT cognitive decline or urological toxicity' and that this 'standardizes maintenance phase guidelines' — I could not verify either, and cognitive and urological safety over long-term ketamine exposure are exactly the domains that warrant continued monitoring rather than an all-clear. Rewritten so those are presented as things to monitor, and the open-label extension nature of long-term data is stated. CROSS-REFERENCE: the 2025 list carries esketamine monotherapy approval; this entry is the maintenance question.
+
+### 10. School-Based Screening and Stepped Care for Youth Anxiety
+
+*School-based prevention and early-intervention literature · 2025 to 2026*
+
+**The breakthrough.** Delivering brief anxiety screening and low-intensity, stepped cognitive-behavioural intervention inside schools, rather than waiting for referral to a clinic, aims to reach young people who never reach specialist services at all.
+
+**Clinical guideline impact.** The rationale is about access rather than efficacy. Most anxious children are never referred, and school is where they already are — so a modest intervention delivered universally can outperform a better one that only a minority reach.
+
+**Practical implications.** Two conditions determine whether this helps or harms: a screening programme must have somewhere to refer the children it identifies, or it generates need it cannot meet; and school staff delivering intervention need supervision and a defined escalation route for a child who discloses risk. I could not confirm the trial the submission names — 'iCATSi2i' does not resolve as a trial acronym — nor its effect on clinical progression rates, nor the claim that child and adolescent guidelines now emphasise school-based over clinic-referred pathways.
+
+[School-based screening and stepped care for child and adolescent anxiety](https://pubmed.ncbi.nlm.nih.gov/?term=school-based+anxiety+screening+stepped+care+children+adolescents+randomized+trial)
+
+> **Citation check — ⚠ citation not independently verified — the trial acronym does not resolve.** School-based screening and stepped-care delivery for youth anxiety is a real and active field with a sound access rationale. But the trial named in the submission, 'iCATSi2i', does not resolve as a recognisable trial acronym — the fourth apparently invented or garbled acronym across these submissions after LITH-QUE, ESTEEM and ANGLE — and the citation given is the Shanghai Archives of Psychiatry editorial review shared with four unrelated entries in this same list. I also could not confirm the reduction in clinical progression rates or the claim that guidelines now emphasise school-based over clinic-referred pathways. Rewritten around the access argument, which is defensible, with the two implementation conditions added that the submission omits: capacity to receive referrals generated by screening, and supervision plus a risk-escalation route for school staff delivering the intervention.
