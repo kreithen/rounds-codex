@@ -1,0 +1,112 @@
+[
+  {
+    "title": "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes",
+    "journal": "",
+    "date": "2025",
+    "breakthrough": "Consolidated guidelines for STEMI and Non-ST-elevation ACS into a unified pathway, recommending potent P2Y12 inhibitors (ticagrelor or prasugrel) over clopidogrel and formalizing early high-intensity statin plus ezetimibe co-initiation.",
+    "impact": "Issued jointly by the ACC, AHA, and affiliated emergency and interventional societies, updating standard medical therapy, invasive catheterization timelines, and bleeding risk reduction strategies.",
+    "practical": "Mandates immediate upstream double-drug lipid lowering and routine PPI co-prescription for patients at high GI bleeding risk on dual antiplatelet therapy.",
+    "link": "2025 ACC/AHA ACS Management Guidelines",
+    "url": "",
+    "verify": {"status": "as submitted", "note": "Physician's original text, recorded for the correction diff."}
+  },
+  {
+    "title": "Aldosterone Synthase Inhibition with Baxdrostat for Treatment-Resistant Hypertension",
+    "journal": "NEJM",
+    "date": "2025",
+    "breakthrough": "Published in NEJM, this trial evaluated baxdrostat, a selective aldosterone synthase inhibitor, demonstrating significant blood pressure reductions in patients with treatment-resistant hypertension without causing clinically significant hyperkalemia or adrenal insufficiency.",
+    "impact": "Directly influenced updated AHA/ACC hypertension guidelines, adding aldosterone synthase inhibition as a novel class recommendation for refractory hypertension.",
+    "practical": "Provides a targeted hormonal mechanism to lower blood pressure for patients who fail triple-therapy antihypertensive regimens (including mineralocorticoid receptor antagonists).",
+    "link": "NEJM - Baxdrostat in Resistant Hypertension Trial",
+    "url": "",
+    "verify": {"status": "as submitted", "note": "Physician's original text, recorded for the correction diff."}
+  },
+  {
+    "title": "Early Discontinuation of Aspirin after PCI in Low-Risk Acute Myocardial Infarction (TARGET-FIRST Trial)",
+    "journal": "The Lancet",
+    "date": "2025",
+    "breakthrough": "Evaluated 1-month DAPT followed by P2Y12 inhibitor monotherapy versus standard 12-month DAPT in post-PCI acute MI patients, proving 1-month DAPT is non-inferior for ischemic protection while significantly reducing moderate-to-severe bleeding.",
+    "impact": "Directly accelerated the shift in post-PCI guidelines toward dropping aspirin after 30 days in favor of single P2Y12 monotherapy for low-to-intermediate risk MI patients.",
+    "practical": "Allows clinicians to routinely stop aspirin 4 weeks after stenting, cutting major bleeding complications by more than half without increasing stent thrombosis risk.",
+    "link": "The Lancet - TARGET-FIRST Trial",
+    "url": "",
+    "verify": {"status": "as submitted", "note": "Physician's original text, recorded for the correction diff."}
+  },
+  {
+    "title": "Tirzepatide in Patients with Heart Failure with Preserved Ejection Fraction and Obesity (SUMMIT Trial)",
+    "journal": "NEJM",
+    "date": "2025",
+    "breakthrough": "Published in NEJM, this trial evaluated dual GIP/GLP-1 receptor agonist tirzepatide in HFpEF patients with obesity, showing a 38% reduction in the composite of urgent HF visits, hospitalization, or CV death alongside substantial weight loss and functional recovery.",
+    "impact": "Rewrote Heart Failure Society guidelines to recommend dual GIP/GLP-1 receptor agonists alongside SGLT2 inhibitors as primary disease-modifying therapy for obese HFpEF phenotypes.",
+    "practical": "Establishes metabolic targeting as a cornerstone treatment strategy for heart failure with preserved ejection fraction.",
+    "link": "NEJM - SUMMIT Trial Tirzepatide in HFpEF",
+    "url": "",
+    "verify": {"status": "as submitted", "note": "Physician's original text, recorded for the correction diff."}
+  },
+  {
+    "title": "Early Transcatheter Aortic Valve Replacement (TAVR) vs. Watchful Waiting in Asymptomatic Severe Aortic Stenosis (EVOLVED Trial)",
+    "journal": "JAMA",
+    "date": "2025",
+    "breakthrough": "Demonstrated in JAMA that early intervention with TAVR in asymptomatic patients with severe aortic stenosis and early myocardial fibrosis (identified via cardiac MRI) significantly lowers 3-year mortality and heart failure re-admission compared to active surveillance.",
+    "impact": "Re-defined valvular heart disease guidelines, shifting early TAVR from a class IIb to a class I recommendation when early cardiac structural strain or fibrosis is present.",
+    "practical": "Changes clinical monitoring for asymptomatic aortic stenosis by adding non-invasive fibrosis screening to trigger intervention before symptoms develop.",
+    "link": "JAMA - Early TAVR in Asymptomatic Aortic Stenosis",
+    "url": "",
+    "verify": {"status": "as submitted", "note": "Physician's original text, recorded for the correction diff."}
+  },
+  {
+    "title": "Discontinuation vs. Continuation of Aspirin in Patients on Chronic Oral Anticoagulation (OAC-ALONE 2 Trial)",
+    "journal": "Circulation",
+    "date": "2025",
+    "breakthrough": "Showed that combining antiplatelet agents (like aspirin) with long-term oral anticoagulants in stable CAD patients markedly increases major bleeding and overall mortality without providing added protection against MI or stroke.",
+    "impact": "Formalized international consensus recommendations to de-escalate dual antithrombotic therapy to oral anticoagulant (DOAC) monotherapy in patients with stable coronary disease beyond 1 year post-PCI or ACS.",
+    "practical": "Instructs primary cardiologists to deprescribe routine daily aspirin in patients who are established on full-dose oral anticoagulation for atrial fibrillation or VTE.",
+    "link": "Circulation - OAC-ALONE 2 Trial Analysis",
+    "url": "",
+    "verify": {"status": "as submitted", "note": "Physician's original text, recorded for the correction diff."}
+  },
+  {
+    "title": "Intracoronary Optical Coherence Tomography (OCT) vs. Angiography Guidance for Complex PCI (OCCAMI Trial)",
+    "journal": "The Lancet",
+    "date": "2025",
+    "breakthrough": "Published in The Lancet, this trial demonstrated that OCT-guided intravascular imaging leads to significantly lower rates of target vessel failure, stent thrombosis, and cardiac death compared to standard angiography-guided stenting in complex lesions.",
+    "impact": "Upgraded intravascular imaging (OCT/IVUS) to a Class I guideline requirement during complex percutaneous coronary interventions (such as bifurcations, left main, or chronic total occlusions).",
+    "practical": "Drives catheterization labs to adopt routine intravascular imaging rather than relying solely on luminogram angiograms to optimize stent expansion and strut apposition.",
+    "link": "The Lancet - OCCAMI Trial OCT vs Angiography",
+    "url": "",
+    "verify": {"status": "as submitted", "note": "Physician's original text, recorded for the correction diff."}
+  },
+  {
+    "title": "Left Atrial Appendage Occlusion vs. NOACs in High-Bleeding-Risk Atrial Fibrillation (CLOSURE-AF Trial)",
+    "journal": "JACC",
+    "date": "2025",
+    "breakthrough": "Evaluated transcatheter left atrial appendage closure (LAAC) against novel oral anticoagulants in patients with non-valvular AF and high bleeding risk, proving non-inferiority for stroke prevention with a dramatic reduction in life-threatening bleeding.",
+    "impact": "Updated stroke prevention guidelines to recommend LAAC as an early, first-line alternative to NOACs for patients with high HAS-BLED scores rather than reserving it purely as a rescue therapy.",
+    "practical": "Expands interventional electrophysiology referral pathways for patients unable to tolerate long-term oral anticoagulation due to recurrent bleeding or severe anemia risk.",
+    "link": "JACC - CLOSURE-AF Trial Results",
+    "url": "",
+    "verify": {"status": "as submitted", "note": "Physician's original text, recorded for the correction diff."}
+  },
+  {
+    "title": "Broad-Spectrum Anti-Inflammatory Therapy with Low-Dose Colchicine in Post-MI Patients (COLCOT-2 Trial)",
+    "journal": "NEJM",
+    "date": "2025",
+    "breakthrough": "Published in NEJM, this large cardiovascular outcomes trial confirmed that adding low-dose colchicine (0.5 mg daily) to standard post-MI secondary prevention significantly reduces recurrent ischemic events and urgent revascularization.",
+    "impact": "Strengthened ACC/AHA and ESC secondary prevention guidelines, elevating targeted anti-inflammatory therapy to a routine recommendation alongside lipid-lowering and antiplatelet drugs.",
+    "practical": "Incorporates low-cost daily colchicine into post-myocardial infarction discharge regimens to suppress residual inflammatory risk (measured by high-sensitivity CRP).",
+    "link": "NEJM - COLCOT-2 Trial in Post-MI Inflammation",
+    "url": "",
+    "verify": {"status": "as submitted", "note": "Physician's original text, recorded for the correction diff."}
+  },
+  {
+    "title": "Intravenous Tenecteplase vs. Alteplase Prior to Endovascular Thrombectomy for Ischemic Stroke (TIMELESS-2 Trial)",
+    "journal": "NEJM",
+    "date": "2025",
+    "breakthrough": "Demonstrated in NEJM that IV tenecteplase (a single bolus tissue plasminogen activator) yields superior early reperfusion rates and better 90-day functional independence compared to alteplase infusion before mechanical thrombectomy.",
+    "impact": "Jointly endorsed by AHA/ASA and neuro-cardiology consensus panels, establishing tenecteplase as the primary first-line thrombolytic agent for acute ischemic stroke with large-vessel occlusion.",
+    "practical": "Simplifies acute emergency stroke protocols by replacing continuous infusion pumps with a single intravenous bolus, saving crucial minutes during emergency interventional transfers.",
+    "link": "NEJM - Tenecteplase in Large Vessel Occlusion Stroke",
+    "url": "",
+    "verify": {"status": "as submitted", "note": "Physician's original text, recorded for the correction diff."}
+  }
+]
