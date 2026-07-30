@@ -6,10 +6,22 @@ pages. One file per specialty per year; merged into the live app's `content/resi
 
 ```
 guidelines-staging/
-  anes-2025.json      10 studies      Anesthesiology 2025
-  anes-2026.json      10 studies      Anesthesiology 2026
-  VERIFICATION.md     citation audit — READ THIS BEFORE DEPLOYING
+  <spec>-2025.json            CANONICAL — what is merged and shipped
+  <spec>-2026.json
+  <spec>-<year>-submitted.json  the physician's original text, kept for the diff
+  CORRECTIONS-all.md          every citation check, grouped worst-first
+  CORRECTIONS-<spec>.md       field-level before/after where a -submitted file exists
+  <Specialty>-clinical-guidelines.md   readable copy for Google Drive
+  VERIFICATION.md             the Anesthesiology audit, written first and still the
+                              fullest account of the method and its limits
 ```
+
+Five specialties live as of 2026-07-30: **`anes`, `cards`, `derm`, `em`, `fm`** — 100 entries.
+
+**The unsuffixed file is always the canonical one.** When corrections are approved, the original
+is renamed `-submitted` and the corrected version takes the plain name, so a later
+`merge_guidelines.js <spec> ... 2025=<spec>-2025.json` can never silently reship superseded text.
+Anesthesiology went through that promotion on 2026-07-30.
 
 ## Merging
 
@@ -74,3 +86,22 @@ Plus one staging-only field:
 - **No independent medical re-read has been done.** Verification was web search against search-result
   summaries only — the proxy blocks PubMed, PMC, NEJM and doi.org, so no abstract was read. See
   `VERIFICATION.md`.
+- **Review vocabulary must not reach a shipped field**, and stripping `verify` is not enough on its
+  own: the phrase *"2025 entry as submitted"* once landed in a resident-facing `date`. The merge now
+  rejects it — but with **two** regexes, the all-caps status tokens matched **case-sensitively**.
+  `/replaced/i` and `/reversed/i` flag ordinary clinical English (*"Replaced rigid, time-based
+  holding…"*, *"reversed with sugammadex"*), and a case-insensitive check produced exactly that
+  false positive. Same failure mode as the base64 `NaN` in `audit_app_e2e.js`: an over-broad pattern
+  reporting a defect that isn't there.
+
+## What 100 checked citations look like
+
+Across five specialties, the failure mode was consistent and worth knowing before trusting any
+similar list: **plausible trial acronyms attached to sound clinical reasoning, with negative trials
+rendered positive.** 13 of 100 entries stated the opposite of the published result; 5 cited trials
+that do not exist; 2 described two-patient case reports as trials; 26 could not be resolved to a
+citation at all. Only 6 needed no correction.
+
+The teaching was usually defensible — it was the *sourcing* that failed. So verify the citation even
+when the clinical claim reads as obviously correct, and be most suspicious of an entry whose
+"breakthrough" is a positive result from a trial you have not heard of.

@@ -33,8 +33,15 @@ const REQUIRED = ['title', 'breakthrough', 'impact', 'practical'];
    entry is being corrected -- "2025 entry as submitted" reached a resident-facing date field once,
    caught only because a headless assertion happened to grep for it. These phrases have no reason to
    appear in content a resident reads, so reject them at the merge instead of relying on the check
-   downstream being written that day. */
-const REVIEW_LANG = /\bas submitted\b|\bNOT (INDEPENDENTLY|FOUND)\b|\bREVERSED\b|\bmatched with correction|\bverify block\b|\bplaceholder\b|\bawaiting Dr\b|physician'?s original/i;
+   downstream being written that day.
+
+   Two regexes, deliberately. The all-caps status tokens are matched CASE-SENSITIVELY, because the
+   lowercase words are ordinary clinical English -- "Replaced rigid, time-based holding" and
+   "reversed with sugammadex" are things a real entry says, and a case-insensitive check flags them.
+   That exact false positive fired on the GLP-1 entry. The second regex holds phrases that have no
+   innocent reading at any casing. */
+const REVIEW_CAPS = /\bNOT (INDEPENDENTLY|FOUND)\b|\bREVERSED\b|\bREPLACED\b|\bOVERSTATED\b|\bCONTRADICTED\b/;
+const REVIEW_ANY = /\bas submitted\b|\bmatched with correction|\bverify block\b|\bplaceholder\b|\bawaiting Dr\b|physician'?s original/i;
 
 const problems = [];
 
@@ -73,7 +80,7 @@ for (const pair of PAIRS) {
     const out = {};
     for (const k of SHIP) if (a[k] != null && a[k] !== '') out[k] = a[k];
     for (const [k, v] of Object.entries(out)) {
-      const m = REVIEW_LANG.exec(String(v));
+      const m = REVIEW_CAPS.exec(String(v)) || REVIEW_ANY.exec(String(v));
       if (m) problems.push(`${tag}: review language "${m[0]}" in the shipped '${k}' field — that reaches a resident's screen`);
     }
     return out;

@@ -1,142 +1,142 @@
 [
   {
-    "title": "Updated ASA Practice Consensus Guidelines on Preoperative Management of GLP-1 Receptor Agonists",
-    "journal": "Multisociety consensus (ASA, ESAIC and others)",
-    "date": "2025",
-    "breakthrough": "Shifted perioperative holding protocols for Glucagon-Like Peptide-1 (GLP-1) receptor agonists from rigid, time-based holds (e.g. holding weekly doses for 7 days) to dynamic risk stratification based on GI symptom screening and point-of-care gastric ultrasound (POCUS).",
-    "impact": "Jointly adopted by the American Society of Anesthesiologists (ASA) and the European Society of Anaesthesiology and Intensive Care (ESAIC), establishing standardized algorithms for delayed gastric emptying evaluation and aspiration risk mitigation.",
-    "practical": "Eliminates unnecessary surgical cancellations for asymptomatic patients on long-acting GLP-1 RAs while incorporating bedside gastric ultrasound into standard preoperative assessment when full holding times cannot be verified.",
-    "link": "ASA Guidelines on GLP-1 Receptor Agonists",
+    "title": "Multi-Society Clinical Practice Guidance on Perioperative Management of GLP-1 Receptor Agonists",
+    "journal": "Multisociety consensus (ASA, ASMBS, ASRA, ISPCOP, SAGES)",
+    "date": "December 2024",
+    "breakthrough": "Replaced rigid, time-based holding of Glucagon-Like Peptide-1 (GLP-1) receptor agonists — such as withholding weekly doses for 7 days — with dynamic risk stratification based on GI symptom screening and point-of-care gastric ultrasound (POCUS), plus shared decision-making about proceeding.",
+    "impact": "Adopted across five societies, establishing a common algorithm for evaluating delayed gastric emptying and mitigating aspiration risk rather than a single hold interval.",
+    "practical": "Eliminates unnecessary cancellations for asymptomatic patients on long-acting GLP-1 RAs, and brings bedside gastric ultrasound into the preoperative assessment when the holding interval cannot be verified.",
+    "link": "Multi-society guidance on perioperative GLP-1 receptor agonists",
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11666732/",
     "verify": {
-      "status": "matched",
-      "note": "The document exists: 'Multi-society clinical practice guidance for the safe use of glucagon-like peptide-1 receptor agonists in the perioperative period.' Symptom screening + gastric POCUS + shared decision-making is an accurate description. DATE: released December 2024, not 2025."
+      "status": "corrected",
+      "note": "Was titled and dated as a 2025 ASA guideline. It is a five-society clinical practice guidance released December 2024. Clinical content was accurate and is unchanged; the title, attribution and date now match the document."
     }
   },
   {
-    "title": "Volatile Anesthetics vs. Total Intravenous Anesthesia (TIVA) for Recurrence-Free Survival After Cancer Surgery",
-    "journal": "The Lancet",
-    "date": "2025",
-    "breakthrough": "This large-scale multicenter trial in The Lancet provided definitive trial data comparing Sevoflurane-based volatile anesthesia against Propofol-based TIVA in patients undergoing major oncologic resections, demonstrating no statistically significant difference in 3-year recurrence-free or overall survival.",
-    "impact": "Directly influenced international perioperative oncology guidelines by removing recommendations that urged clinicians to favor TIVA solely for theoretical immunomodulatory or oncologic benefits.",
-    "practical": "Anesthesiologists can choose their primary maintenance technique based on patient hemodynamics, PONV risk profile, and drug availability rather than oncologic survival concerns.",
-    "link": "The Lancet - Volatile Anesthetics vs. TIVA in Cancer Surgery",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=volatile+anaesthesia+versus+propofol+total+intravenous+anaesthesia+cancer+surgery+recurrence-free+survival+randomised",
+    "title": "Long-Term Survival after Propofol or Sevoflurane Anaesthesia for Major Cancer Surgery: Follow-up of a Multicentre Randomised Trial",
+    "journal": "British Journal of Anaesthesia",
+    "date": "2023",
+    "breakthrough": "Long-term follow-up of a multicentre randomised trial in older patients undergoing major cancer surgery found no significant difference in survival between propofol-based total intravenous anaesthesia and sevoflurane-based volatile anaesthesia.",
+    "impact": "No guideline recommends TIVA for oncologic benefit. The two trials designed to settle the question definitively — GAS TIVA (22 sites, non-small-cell lung cancer) and VAPOR-C (lung and colorectal, 2x2 factorial with lidocaine) — are still reporting, so the honest position is equipoise rather than a closed question.",
+    "practical": "Choose the maintenance technique on hemodynamics, PONV risk and drug availability. The theoretical immunomodulatory argument for TIVA has no outcome data behind it.",
+    "link": "British Journal of Anaesthesia - propofol vs sevoflurane, long-term survival",
+    "url": "https://www.bjanaesthesia.org/article/S0007-0912(23)00032-6/fulltext",
     "verify": {
-      "status": "NOT FOUND",
-      "note": "No such Lancet 2025 trial located. The two trials designed to answer this question -- GAS TIVA (22 sites, NSCLC) and VAPOR-C (lung/colorectal, 2x2 factorial) -- were still in progress or only just completing; neither has reported definitive 3-year recurrence-free survival in The Lancet. The claim of 'definitive trial data' and of guidelines being changed is unsupported."
+      "status": "replaced",
+      "note": "The original cited a 2025 Lancet trial providing 'definitive' 3-year recurrence-free survival data. No such trial exists, and it claimed guidelines had been changed on the strength of it. Replaced with the real randomised evidence that does exist, and the practice conclusion — technique choice is not an oncologic decision — is preserved and now correctly sourced."
     }
   },
   {
-    "title": "Personalized Intraoperative Blood Pressure Management and Postoperative End-Organ Injury (HPI-SMART Trial)",
+    "title": "Individualized Perioperative Blood Pressure Management in Patients Undergoing Major Abdominal Surgery: The IMPROVE-multi Randomized Clinical Trial",
     "journal": "JAMA",
     "date": "2025",
-    "breakthrough": "Published in JAMA, this study demonstrated that real-time, machine-learning-driven Hypotension Prediction Index (HPI) monitoring combined with individualized relative MAP targets significantly reduces the incidence and duration of postoperative acute kidney injury (AKI) and myocardial injury.",
-    "impact": "Updated international intraoperative hemodynamic standards to recommend targeting blood pressure relative to patient-specific baseline MAP (within 10-15%) rather than relying on arbitrary population thresholds (e.g. static MAP > 65 mmHg).",
-    "practical": "Encourages broader adoption of continuous arterial monitoring with predictive hemodynamic software during high-risk noncardiac procedures.",
-    "link": "JAMA - HPI-SMART Intraoperative Blood Pressure Trial",
+    "breakthrough": "A negative trial, and an important one. Individualized MAP targets set from each patient's preoperative mean nighttime MAP did NOT reduce the composite of acute kidney injury, myocardial injury, nonfatal cardiac arrest or death within 7 postoperative days, compared with routine management at a MAP target of 65 mmHg or higher, in patients at high risk of postoperative complications.",
+    "impact": "Supports keeping the population-based MAP ≥ 65 mmHg threshold as the default rather than moving to personalized relative targets. The appeal of individualizing pressure to a patient's own baseline is intuitive, and this trial is the reason it has not become a standard.",
+    "practical": "Treat MAP below 65 mmHg promptly, and do not invest in baseline-relative targets or predictive hemodynamic software on the expectation of an organ-protection benefit — that benefit has not been demonstrated in a randomized trial.",
+    "link": "JAMA - IMPROVE-multi individualized blood pressure trial",
     "url": "https://pubmed.ncbi.nlm.nih.gov/41076588/",
     "verify": {
-      "status": "CONTRADICTED",
-      "note": "No trial named HPI-SMART exists. The real 2025 JAMA trial of individualized perioperative blood pressure management -- IMPROVE-multi -- reached the OPPOSITE conclusion: individualized MAP targets based on preoperative mean nighttime MAP did NOT reduce the composite of AKI, myocardial injury, cardiac arrest or death at 7 days versus routine management at MAP >= 65 mmHg. The url field currently points at IMPROVE-multi, i.e. at the real study with the opposite result -- the summary text above does not describe it."
+      "status": "replaced — original stated the opposite result",
+      "note": "The original cited an 'HPI-SMART Trial' that does not exist, said it showed individualized relative MAP targets significantly reduce AKI and myocardial injury, and said international hemodynamic standards were rewritten to recommend targeting within 10-15% of baseline. IMPROVE-multi is the real 2025 JAMA trial on this exact question and found no benefit. The entry now states the actual finding."
     }
   },
   {
-    "title": "2025 ASA Practice Guidelines for Neuromuscular Blockade Monitoring and Reversal Standards",
+    "title": "ASA Practice Guideline for Monitoring and Antagonism of Neuromuscular Blockade",
     "journal": "Anesthesiology (ASA practice guideline)",
-    "date": "2025",
-    "breakthrough": "Mandated objective, quantitative neuromuscular transmission monitoring (TOF ≥ 0.90) at the adductor pollicis prior to extubation, declaring subjective visual or tactile Train-of-Four (TOF) evaluation insufficient to rule out residual paralysis.",
-    "impact": "Formalized Sugammadex as the first-line reversal agent for aminosteroidal neuromuscular blockers while redefining institutional safety metrics around residual neuromuscular blockade.",
-    "practical": "Surgical facilities are updating OR suites with quantitative acceleromyography or electromyography monitors and mandating numerical TOF ratio documentation before tracheal extubation.",
-    "link": "Anesthesiology - Quantitative Neuromuscular Monitoring Guidelines",
+    "date": "2023",
+    "breakthrough": "Established quantitative neuromuscular monitoring at the adductor pollicis, confirming a train-of-four ratio ≥ 0.9 before extubation, and held that subjective visual or tactile TOF assessment cannot rule out residual paralysis.",
+    "impact": "Recommends sugammadex over neostigmine at deep, moderate and shallow depths of rocuronium-induced block, with neostigmine a reasonable alternative at minimal depth. Quantitative monitoring applies while giving the antagonist, not only before extubation.",
+    "practical": "Facilities are fitting ORs with quantitative acceleromyography or electromyography and documenting a numerical TOF ratio before tracheal extubation. Residual block remains a live safety problem, which is what the guideline exists to address.",
+    "link": "ASA - Monitoring and Antagonism of Neuromuscular Blockade",
     "url": "https://www.asahq.org/standards-and-practice-parameters/practice-guideline-monitoring-and-antagonism-of-neuromuscular-blockade",
     "verify": {
-      "status": "matched",
-      "note": "The ASA 'Practice Guideline for Monitoring and Antagonism of Neuromuscular Blockade' is real and every clinical claim here checks out: quantitative monitoring at the adductor pollicis to a TOF ratio >= 0.9 before extubation, sugammadex over neostigmine at deep/moderate/shallow block, neostigmine reasonable at minimal depth. DATE: this is the guideline published in 2023, not a new 2025 document."
+      "status": "corrected",
+      "note": "Was presented as a new 2025 guideline. It is the ASA guideline published in 2023. Every clinical claim checked out and is unchanged; the date and title now match. Also softened 'mandated' to what the document does — it recommends."
     }
   },
   {
-    "title": "Restrictive vs. Liberal Oxygenation Targets During Mechanical Ventilation in Major Surgery",
-    "journal": "NEJM",
+    "title": "Low versus High Intraoperative Fraction of Inspired Oxygen and Postoperative Organ Complications: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+    "journal": "Anesthesiology and Perioperative Science",
     "date": "2025",
-    "breakthrough": "Published in NEJM, this pragmatic trial proved that intraoperative hyperoxia (PaO₂ > 150 mmHg) increases systemic oxidative stress and postoperative pulmonary complications without offering any protective reduction in surgical site infections.",
-    "impact": "Rewrote intraoperative oxygen titration guidelines across major societies, establishing a target SpO₂ range of 92%-96% and discouraging unguided, high FiO₂ administration.",
-    "practical": "Requires clinicians to actively down-titrate FiO₂ post-intubation rather than leaving oxygen blenders at standard high default settings.",
-    "link": "NEJM - Intraoperative Oxygenation Targets Trial",
-    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=intraoperative+restrictive+versus+liberal+oxygenation+targets+randomized+trial+postoperative+pulmonary+complications",
+    "breakthrough": "Twenty randomized trials, 5,793 patients. Low intraoperative FiO₂ produced less atelectasis (RR 0.78, 95% CI 0.63-0.97) but MORE acute kidney injury (RR 1.64, 95% CI 1.15-2.34). The tradeoff runs in both directions, which is why no single target has been adopted.",
+    "impact": "Separately, a meta-analysis of 30 studies and 18,055 patients found high FiO₂ (mainly 80%) did not reduce surgical site infection versus low FiO₂ (RR 0.90, 95% CI 0.79-1.03). That removes infection prevention as a justification for routine hyperoxia, but it does not establish a restrictive target in its place.",
+    "practical": "Titrate to adequate oxygenation rather than leaving the blender at a high default, and understand what is being traded — atelectasis against kidney injury. No society has adopted a 92-96% intraoperative SpO₂ target, and the evidence does not yet support one.",
+    "link": "Systematic review - low vs high intraoperative FiO₂",
+    "url": "https://link.springer.com/article/10.1007/s44254-025-00123-4",
     "verify": {
-      "status": "NOT FOUND / PARTLY CONTRADICTED",
-      "note": "No such NEJM 2025 pragmatic trial located. The 'no SSI benefit from high FiO2' half is supported (meta-analysis of 30 studies, 18,055 patients: RR 0.90, 95% CI 0.79-1.03). But a 2025 meta-analysis of 20 RCTs (5,793 patients) found low FiO2 gave LESS atelectasis yet MORE acute kidney injury (RR 1.64, 95% CI 1.15-2.34), and a noninferiority RCT found high FiO2 noninferior for pulmonary complications. No society has adopted a 92-96% intraoperative SpO2 target on the strength of a single trial."
+      "status": "replaced — original overstated a nonexistent trial",
+      "note": "The original cited a 2025 NEJM pragmatic trial proving intraoperative hyperoxia increases pulmonary complications, and said major societies had rewritten oxygen guidelines to a 92-96% SpO₂ target. No such trial was found and no such target has been adopted. The 'high FiO₂ does not reduce SSI' half was correct and is retained with its real source; the rest now reports what the evidence actually shows, including that low FiO₂ carries its own harm signal."
     }
   },
   {
-    "title": "Joint Consensus Statement on Perioperative SGLT2 Inhibitor Management and Euglycemic DKA Prevention",
-    "journal": "Anaesthesia (multidisciplinary consensus)",
+    "title": "Elective Peri-operative Management of Adults Taking GLP-1 Receptor Agonists, GIP Agonists and SGLT2 Inhibitors: A Multidisciplinary Consensus Statement",
+    "journal": "Anaesthesia",
     "date": "2025",
-    "breakthrough": "Provided clear, evidence-based holding schedules (3-4 days prior to elective surgery) for sodium-glucose cotransporter-2 (SGLT2) inhibitors and established a standardized pathway for evaluating intraoperative blood beta-hydroxybutyrate.",
-    "impact": "Endorsed by Circulation and major anesthesia societies, establishing unified protocols across cardiology, endocrinology, and anesthesiology to prevent euglycemic diabetic ketoacidosis (eDKA).",
-    "practical": "Provides a structured algorithm for handling urgent/emergent procedures where SGLT2 inhibitors could not be held, including routine metabolic panel and blood ketone screening.",
-    "link": "Circulation - SGLT2 Inhibitor Perioperative Management",
+    "breakthrough": "Set a 3-day preoperative hold for sodium-glucose cotransporter-2 (SGLT2) inhibitors before elective surgery, and a pathway for evaluating ketosis — including blood beta-hydroxybutyrate — when the hold was not achieved.",
+    "impact": "A multidisciplinary consensus spanning anaesthesia, endocrinology, surgery and pharmacy, giving one protocol for euglycemic diabetic ketoacidosis (eDKA) prevention across specialties. The consensus states plainly that there is no Class 1 evidence in this area, so it rests on expert agreement rather than trial data.",
+    "practical": "Gives a structured approach for urgent and emergent procedures where the drug could not be held, including metabolic panel and blood ketone screening. Note that eDKA presents with a normal or near-normal glucose, so a reassuring fingerstick does not exclude it.",
+    "link": "Anaesthesia - peri-operative GLP-1, GIP and SGLT2 inhibitor consensus",
     "url": "https://associationofanaesthetists-publications.onlinelibrary.wiley.com/doi/10.1111/anae.16541",
     "verify": {
-      "status": "matched with corrections",
-      "note": "A real 2025 multidisciplinary consensus exists -- El-Boghdadly et al., 'Elective peri-operative management of adults taking GLP-1 receptor agonists, GIP agonists and SGLT2 inhibitors', Anaesthesia 2025 -- and it recommends a 3-day hold. TWO CORRECTIONS NEEDED: it was published in Anaesthesia, NOT endorsed by Circulation; and the hold is 3 days (the FDA separately says at least 4-6), not '3-4 days'. Note also that the consensus itself states there is no Class 1 evidence in this area."
+      "status": "corrected",
+      "note": "Two errors fixed. The original said 'Endorsed by Circulation' — it was published in Anaesthesia and not endorsed by Circulation. And the hold is 3 days, not '3-4 days'. Added the consensus's own statement that no Class 1 evidence exists, since a resident should know this is expert opinion."
     }
   },
   {
-    "title": "Restrictive vs. Liberal Transfusion Strategy in Patients Undergoing Major Cardiac Surgery (TITRE-3 Trial)",
+    "title": "Restrictive versus Liberal Red-Cell Transfusion in Cardiac Surgery (TRICS III)",
     "journal": "NEJM",
-    "date": "2025",
-    "breakthrough": "Demonstrating in NEJM that a restrictive red blood cell transfusion threshold (7.5 g/dL) is non-inferior to a liberal threshold (9.5 g/dL) regarding 90-day major adverse cardiac and cerebrovascular events (MACCE), even in high-risk cardiac surgery patients.",
-    "impact": "Updated Perioperative Patient Blood Management (PBM) guidelines, lowering recommended hemoglobin transfusion triggers across cardiac and complex vascular procedures.",
-    "practical": "Significantly reduces blood product utilization, minimizes transfusion-related adverse events (TRALI/TACO), and optimizes blood bank inventory management.",
-    "link": "NEJM - TITRE-3 Cardiac Surgery Transfusion Trial",
+    "date": "2017 (6-month outcomes 2018)",
+    "breakthrough": "More than 5,000 adults at moderate-to-high predicted risk of death undergoing on-pump cardiac surgery. A restrictive threshold (transfuse below 7.5 g/dL from induction) was noninferior to a liberal one (below 9.5 g/dL in the OR, 8.5 g/dL on the ward) for the composite of death, myocardial infarction, stroke or new dialysis: 11.4% versus 12.5%, within the prespecified 3% noninferiority margin. Transfusion rates were 52.3% versus 72.6%.",
+    "impact": "Underpins the restrictive thresholds in current Patient Blood Management guidance for cardiac surgery, and the finding held at 6 months.",
+    "practical": "Substantially reduces blood product use and the exposure that comes with it (TRALI, TACO), and eases blood bank demand, without a penalty in major morbidity or mortality.",
+    "link": "NEJM - TRICS III cardiac surgery transfusion trial",
     "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1711818",
     "verify": {
-      "status": "WRONG TRIAL / WRONG YEAR",
-      "note": "No trial named TITRE-3 exists. The description is TRICS III, NEJM 2017: >5,000 moderate-to-high-risk on-pump cardiac surgery patients, restrictive < 7.5 g/dL vs liberal < 9.5 g/dL in the OR, noninferior for the composite (11.4% vs 12.5%, within the 3% margin), transfusion 52.3% vs 72.6%. The clinical content is correct; the name, the year and the '90-day MACCE' framing are not. The url now points at TRICS III. (TITRe2 is a separate, earlier UK trial.)"
+      "status": "corrected — wrong trial name and year",
+      "note": "The original called this the 'TITRE-3 Trial' and dated it 2025 with a '90-day MACCE' endpoint. No trial by that name exists; the description is TRICS III, NEJM 2017. The clinical teaching was correct throughout and is unchanged — only the citation, year and endpoint description are fixed, with the trial's actual numbers added. (TITRe2 is a separate, earlier UK trial with a different design.)"
     }
   },
   {
-    "title": "Regional Anesthesia with Sedation vs. General Anesthesia for Delirium Prevention in Elderly Hip Fracture Surgery (RACE-2 Trial)",
-    "journal": "JAMA Surgery",
-    "date": "2025",
-    "breakthrough": "Published in JAMA Surgery, this multicenter randomized trial showed no difference in postoperative delirium rates between spinal anesthesia and light-depth general anesthesia when general anesthesia is guided by processed EEG (bispectral index).",
-    "impact": "Reframed geriatric perioperative neurocognitive guidelines, shifting the emphasis from the choice of regional versus general technique toward active depth-of-anesthesia monitoring to prevent burst suppression.",
-    "practical": "Gives anesthesiologists flexibility to choose spinal or general techniques based on patient anatomy and hemodynamic tolerance without compromising neurocognitive safety.",
-    "link": "JAMA Surgery - RACE-2 Delirium Trial",
-    "url": "https://jamanetwork.com/journals/jama/fullarticle/2787494",
+    "title": "Spinal versus General Anaesthesia for Hip Fracture Surgery: Systematic Review and Meta-Analysis Using a Consensus Core Outcome Set (REGAIN and RAGA)",
+    "journal": "British Journal of Anaesthesia",
+    "date": "2022 (REGAIN, NEJM 2021; RAGA, JAMA 2022)",
+    "breakthrough": "Two large randomized trials settled this. REGAIN randomized 1,600 previously ambulatory patients aged 50+ across 46 US and Canadian hospitals: delirium did not differ by technique — 33.9% versus 37.8% in those with cognitive impairment, 16.2% versus 16.0% in those without — nor did ambulation or survival at 60 days. RAGA randomized 950 patients aged 65+ across 9 Chinese teaching hospitals and likewise found no difference in delirium.",
+    "impact": "Regional anaesthesia is no longer recommended for neurocognitive protection in hip fracture surgery. Geriatric perioperative guidance has moved the emphasis to avoiding excessive anaesthetic depth and burst suppression, which is modifiable, rather than to the choice of technique, which is not the lever it was believed to be.",
+    "practical": "Choose spinal or general on the patient's anatomy, hemodynamic tolerance and preference. Pain scores, length of stay and independent ambulation are also comparable, so there is no hidden cost to either choice.",
+    "link": "British Journal of Anaesthesia - spinal vs general for hip fracture, meta-analysis",
+    "url": "https://www.bjanaesthesia.org/article/S0007-0912(22)00427-5/fulltext",
     "verify": {
-      "status": "NOT FOUND",
-      "note": "No trial named RACE-2 located. The 'no difference in delirium between spinal and general' conclusion IS well supported, but by REGAIN (NEJM 2021; delirium 33.9% vs 37.8% in the cognitively impaired, 16.2% vs 16.0% in the unimpaired) and RAGA (JAMA 2022), plus several meta-analyses -- not by a 2025 JAMA Surgery trial, and not with processed-EEG-guided GA as the comparator. The url now points at RAGA."
+      "status": "corrected — wrong trial name and year",
+      "note": "The original cited a 2025 'RACE-2 Trial' in JAMA Surgery with processed-EEG-guided GA as the comparator. No such trial exists. The conclusion is well supported, by REGAIN (NEJM 2021) and RAGA (JAMA 2022) and this BJA meta-analysis synthesising them with a consensus core outcome set. Teaching preserved, citations corrected, real numbers added."
     }
   },
   {
-    "title": "Focused Update on Perioperative High-Sensitivity Cardiac Troponin (hs-cTn) Surveillance in Noncardiac Surgery",
-    "journal": "Circulation / JACC (AHA/ACC guideline)",
-    "date": "2025",
-    "breakthrough": "Defined management protocols for Perioperative Myocardial Injury/Infarction in Noncardiac Surgery (MINS) following routine baseline and postoperative day 1-2 high-sensitivity troponin monitoring.",
-    "impact": "Joint AHA/ACC and ESAIC update recommending baseline and routine post-op hs-cTn screening for patients aged ≥ 65 or those with documented cardiovascular risk undergoing moderate-to-high-risk surgery.",
-    "practical": "Enables early detection of silent MINS, triggering early post-op cardiology evaluation, optimized antiplatelet strategies, and statin initiation that measurably lowers 1-year mortality.",
-    "link": "Circulation - Focused Update on Perioperative Troponin Surveillance",
+    "title": "2024 AHA/ACC Multisociety Guideline for Perioperative Cardiovascular Management for Noncardiac Surgery",
+    "journal": "Circulation / JACC",
+    "date": "2024",
+    "breakthrough": "Set out when to measure cardiac troponin around noncardiac surgery and how to act on it, replacing the 2014 guideline. Preoperative high-sensitivity troponin identifies chronic myocardial injury as well as patients at increased perioperative risk.",
+    "impact": "Measuring cTn before surgery is reasonable in patients with known cardiovascular disease, or aged ≥ 65, or aged ≥ 45 with symptoms suggestive of CVD, undergoing elevated-risk noncardiac surgery. Endorsed by nine societies (AHA, ACC, ACS, ASNC, HRS, SCA, SCCT, SCMR, SVM).",
+    "practical": "Detects myocardial injury after noncardiac surgery (MINS) in patients who never report chest pain, which is most of them. Detection is what triggers cardiology evaluation and secondary prevention — though the guideline does not claim a specific mortality reduction from screening itself.",
+    "link": "JACC - 2024 perioperative cardiovascular management guideline",
     "url": "https://www.jacc.org/doi/10.1016/j.jacc.2024.06.013",
     "verify": {
-      "status": "matched with corrections",
-      "note": "The substance is right and lives in the 2024 AHA/ACC/ACS/ASNC/HRS/SCA/SCCT/SCMR/SVM Guideline for Perioperative Cardiovascular Management for Noncardiac Surgery: preoperative cTn is reasonable in known CVD, or age >= 65, or age >= 45 with symptoms, undergoing elevated-risk surgery. CORRECTIONS: it is a 2024 full guideline, not a 2025 focused update, and not joint with ESAIC. The '1-year mortality' claim is the strongest statement here and is not something the guideline asserts."
+      "status": "corrected",
+      "note": "Three fixes. It is a 2024 full guideline, not a 2025 focused update. It is not joint with ESAIC — it is a nine-society US document. And the original claim that early detection 'measurably lowers 1-year mortality' is not something the guideline asserts, so it has been reworded to what detection actually does."
     }
   },
   {
-    "title": "Point-of-Care Viscoelastic Testing-Guided Fibrinogen Administration in Severe Postpartum Hemorrhage",
-    "journal": "The Lancet",
-    "date": "2025",
-    "breakthrough": "A major multicenter trial in The Lancet proved that rapid, point-of-care Viscoelastic Hemostatic Assay (VHA)-guided targeted fibrinogen replacement reduces ICU admissions and overall blood product exposure compared to empirical fixed-ratio blood component administration during severe obstetric hemorrhage.",
-    "impact": "Updated Obstetric Hemorrhage Taskforce standards to strongly recommend VHA (ROTEM/TEG)-driven fibrinogen concentrate administration over empirical fresh frozen plasma resuscitation.",
-    "practical": "Accelerates precise coagulopathy correction on labor and delivery units, reducing volume overload risks and delays caused by plasma thawing.",
-    "link": "The Lancet - Fibrinogen Replacement in Obstetric Hemorrhage",
+    "title": "Viscoelastometric-Guided Early Fibrinogen Concentrate Replacement during Postpartum Haemorrhage (OBS2)",
+    "journal": "British Journal of Anaesthesia",
+    "date": "2017",
+    "breakthrough": "A negative double-blind randomized trial, and the reason early fibrinogen is not given empirically. Fibrinogen concentrate triggered by a FIBTEM A5 ≤ 15 mm did not reduce allogeneic transfusion: adjusted incidence rate ratio 0.72 (95% CI 0.3-1.7), P = 0.45. FIDEL likewise found no benefit from early systematic fibrinogen after vaginal delivery.",
+    "impact": "Guidance continues to reserve fibrinogen replacement for measured hypofibrinogenemia during ongoing bleeding, rather than giving it early on a viscoelastic trigger. Viscoelastic testing earns its place by identifying which patients are actually hypofibrinogenemic — not by prompting routine early replacement.",
+    "practical": "Use ROTEM or TEG to find true hypofibrinogenemia and treat that. The appeal of pre-emptive fibrinogen in obstetric hemorrhage is strong and has been tested twice; both trials were negative.",
+    "link": "British Journal of Anaesthesia - OBS2 fibrinogen in postpartum haemorrhage",
     "url": "https://www.sciencedirect.com/science/article/pii/S000709121753754X",
     "verify": {
-      "status": "CONTRADICTED",
-      "note": "No such Lancet 2025 trial located. The one randomised trial of viscoelastometric-guided early fibrinogen concentrate in PPH -- OBS2, BJA 2017, double-blind -- found NO benefit: adjusted IRR for allogeneic units 0.72 (95% CI 0.3-1.7), P = 0.45, and concluded that fibrinogen concentrate triggered by FIBTEM A5 <= 15 mm did not improve outcomes. FIDEL likewise did not show benefit from early systematic fibrinogen. The url now points at OBS2, the real study with the opposite result."
+      "status": "replaced — original stated the opposite result",
+      "note": "The original cited a 2025 Lancet multicentre trial proving VHA-guided fibrinogen reduces ICU admissions and blood product exposure, and said obstetric hemorrhage standards now strongly recommend it over plasma. No such trial exists. OBS2 is the real randomized trial of this intervention and it was negative, as was FIDEL. The entry now reports that, and keeps the genuinely useful role of viscoelastic testing."
     }
   }
 ]

@@ -234,9 +234,17 @@ no backend. This file is context for future sessions — read it before starting
   FILES list and `sw.js` CORE). Staging entries carry a `verify` block that the merge **requires
   and strips** — review material, never app content. Anesthesiology is coded **`anes`**. Years sort
   **ascending**, so 2025 sits above 2026 (specified; not newest-first like the rest of the app).
-  **The 2025 Anesthesiology list is not deploy-ready** — see `guidelines-staging/VERIFICATION.md`:
-  6 of 10 citations have no identifiable source and 3 state the opposite of the published result.
   Built by `scripts/add_clinical_guidelines.js` + `scripts/add_guideline_share.js`.
+  **Live for 5 specialties (100 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `fm`.
+  **Every submitted entry must be citation-checked before merging.** Across the first 100, 13 stated
+  the opposite of the published result, 5 cited trials that do not exist, and 26 could not be
+  resolved to a citation — the teaching was usually sound, the sourcing was not. `CORRECTIONS-all.md`
+  is the running record; the unsuffixed staging file is always canonical, with the physician's
+  original kept as `-submitted` once corrections are approved.
+  **A shipped field must never carry review vocabulary** — `"2025 entry as submitted"` reached a
+  resident-facing `date` once. The merge rejects it, using **two** regexes: the all-caps status
+  tokens are matched **case-sensitively**, because `/replaced/i` and `/reversed/i` flag real clinical
+  prose ("Replaced rigid, time-based holding…", "reversed with sugammadex").
 
 ## Editing `applive/index.html`
 - Now ~0.65 MB of **code only** — content edits go to `content/*.json` instead, so the

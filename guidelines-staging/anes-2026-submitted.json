@@ -1,0 +1,142 @@
+[
+  {
+    "title": "2026 American Society of Anesthesiologists Practice Guideline on Perioperative Pain Management Using Local and Regional Analgesia for Cardiothoracic Surgeries, Mastectomy, and Abdominal Surgeries",
+    "journal": "Anesthesiology",
+    "date": "January 2026",
+    "breakthrough": "Established evidence-based, procedure-specific recommendations for fascial plane blocks (e.g. TAP, ESP, serratus anterior, and parasternal plane blocks) across cardiothoracic, mastectomy, and abdominal surgical procedures.",
+    "impact": "Issued by the ASA Task Force on Perioperative Pain Management, elevating ultrasound-guided fascial plane blocks to a \"Strong Recommendation\" status for open surgeries in both adult and pediatric populations.",
+    "practical": "Demonstrates a significant reduction in 24-hour postoperative opioid consumption (reducing up to 60 mg oral morphine equivalents) and rest/dynamic pain scores, solidifying fascial plane blocks as a cornerstone of standardized opioid-sparing multimodal pathways.",
+    "link": "ASA Guidelines on Regional Analgesia and Perioperative Pain",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41363869/",
+    "verify": {
+      "status": "matched with corrections",
+      "note": "Real: Anesthesiology, January 2026, PMID 41363869. CORRECTION TO THE STRENGTH CLAIM: for ADULTS the Task Force recommendation is CONDITIONAL, and only for minimally invasive cardiothoracic surgery and open hernia repair. The STRONG recommendation applies to CHILDREN after open cardiac or thoracic surgery. The guideline also states its own analysis was limited by low methodologic quality, inconsistent outcome measurement and small single-centre samples -- worth keeping, since residents will be taught from this."
+    }
+  },
+  {
+    "title": "Intervals for Oscillometric Arterial Pressure Monitoring during Noncardiac Surgery: The \"2.5-Minute versus 5-Minute\" Randomized Clinical Trial",
+    "journal": "Anesthesiology",
+    "date": "2026",
+    "breakthrough": "Evaluated whether increasing non-invasive oscillometric blood pressure cycle frequency from the traditional 5-minute interval down to 2.5 minutes significantly reduces intraoperative hypotension exposure under general anesthesia.",
+    "impact": "Challenges the historic 5-minute standard blood pressure monitoring interval in noncardiac surgery guidelines by proving that shorter intervals detect transient drops much earlier, reducing total hypotensive depth and duration.",
+    "practical": "Prompts clinicians to shorten automated NIBP cycling to 2.5 minutes during high-risk surgical phases and induction, bridging the safety gap when invasive continuous arterial monitoring is not indicated.",
+    "link": "Anesthesiology - 2.5-Minute vs 5-Minute Blood Pressure Monitoring Trial",
+    "url": "https://clinicaltrials.gov/study/NCT06314074",
+    "verify": {
+      "status": "RESULT INVERTED",
+      "note": "The trial is real (NCT06314074, 264 patients, single centre, published in Anesthesiology with an accompanying editorial) but it was NEGATIVE. Cycling at 2.5 vs 5.0 min did NOT reduce the time-weighted average of MAP < 65 mmHg -- both arms were nearly identical and very low, most likely because 98% of patients were on norepinephrine infusions. Severe hypotension (MAP < 50) was 5.3% vs 9.9%, P = 0.24, not significant. The 'proving that shorter intervals... reduce total hypotensive depth and duration' claim and the recommendation to shorten cycling both state the opposite of the finding."
+    }
+  },
+  {
+    "title": "Videolaryngoscopy versus Direct Laryngoscopy for Double-Lumen Tube Intubation: The DOLVI Multicentre Randomized Trial",
+    "journal": "British Journal of Anaesthesia",
+    "date": "2026",
+    "breakthrough": "Published in the British Journal of Anaesthesia, this multicenter trial proved that videolaryngoscopy significantly improves first-attempt intubation success (84.7% vs 76.9%) and glottic exposure during double-lumen tube (DLT) placement for thoracic surgical lung isolation.",
+    "impact": "Directly updates thoracic airway management guidelines, establishing videolaryngoscopy as the preferred primary modality for anatomical lung isolation.",
+    "practical": "Reduces procedural difficulty, loss of glottic view, esophageal intubation rates, and airway trauma, establishing a faster, safer pathway to secure single-lung ventilation.",
+    "link": "British Journal of Anaesthesia - DOLVI Multicentre Trial",
+    "url": "https://www.bjanaesthesia.org/article/S0007-0912(26)00207-2/abstract",
+    "verify": {
+      "status": "matched",
+      "note": "Real: DOuble-Lumen intubation with VIdeolaryngoscopy (DOLVI), BJA 2026, four Spanish hospitals, Fernandez et al., with an accompanying editorial ('Videolaryngoscopy: the new standard for double-lumen tube placement?'). First-attempt success was the primary outcome; glottic visualisation, oesophageal intubation and tube malposition were secondary and all favoured videolaryngoscopy. Minor note: 'directly updates thoracic airway management guidelines' is the trialists' and editorialist's direction of travel rather than a guideline change that has already happened."
+    }
+  },
+  {
+    "title": "Management of Direct Oral Anticoagulants in Adult Patients Undergoing Cardiac Surgery: A Joint Consensus Statement by the SCA and STS",
+    "journal": "Anesthesia & Analgesia / The Annals of Thoracic Surgery",
+    "date": "April 2026",
+    "breakthrough": "Established unified timing, laboratory monitoring, and reversal algorithms for direct oral anticoagulants (DOACs) in adult cardiac surgical patients undergoing cardiopulmonary bypass.",
+    "impact": "Jointly published by the Society of Cardiovascular Anesthesiologists (SCA) and Society of Thoracic Surgeons (STS), standardizing preoperative hold duration based on renal function and providing clear criteria for targeted reversal agents versus prothrombin complex concentrates (PCC).",
+    "practical": "Reduces chest tube bleeding, transfusion requirements, and emergency re-operation rates while eliminating unnecessary delay for urgent cardiac procedures.",
+    "link": "Anesthesia & Analgesia - SCA/STS Joint DOAC Guidelines",
+    "url": "https://journals.lww.com/anesthesia-analgesia/fulltext/2026/04000/management_of_direct_oral_anticoagulants_in_adult.10.aspx",
+    "verify": {
+      "status": "matched",
+      "note": "Real: published 29 January 2026, appearing in the April 2026 issues of both Anesthesia & Analgesia and The Annals of Thoracic Surgery (121:774-789). Covers cessation before surgery, monitoring options, bridging, reversal agents and resumption -- exactly the domains described. The 'reduces chest tube bleeding, transfusion and re-operation' line is the consensus's stated goal, not a measured outcome."
+    }
+  },
+  {
+    "title": "Efficacy and Safety of Remimazolam versus Propofol for Prolonged Postoperative Mechanical Ventilation: A Phase 3 Trial",
+    "journal": "Anesthesiology",
+    "date": "2026",
+    "breakthrough": "Published in Anesthesiology, this multicenter trial demonstrated that the soft-drug, organ-independent benzodiazepine remimazolam provides non-inferior sedation efficacy to propofol with significantly lower rates of hypotension in patients requiring postop ventilatory support.",
+    "impact": "Formally integrates remimazolam into post-anesthesia care unit (PACU) and surgical ICU guidelines as a flumazenil-reversible alternative to propofol for postop mechanical ventilation.",
+    "practical": "Reduces intra-procedural vasopressor dependence and eliminates risks associated with propofol infusion syndrome (PRIS) and hypertriglyceridemia during extended postoperative sedation.",
+    "link": "Anesthesiology - Remimazolam vs Propofol Phase 3 Trial",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41855428/",
+    "verify": {
+      "status": "matched with corrections",
+      "note": "Real: 'Efficacy and Safety of Remimazolam Tosylate versus Propofol for Sedation of Postoperative Mechanically Ventilated Patients in Intensive Care Units: A Multicenter, Randomized, Single-blind, Noninferiority, Phase 3 Trial', PMID 41855428 (NCT06222294). CORRECTIONS: the trial studied SHORT-TERM sedation, not 'prolonged' -- the title as written overstates the duration, and 'extended postoperative sedation' in the practical implications does too. Lower hypotension with remimazolam is supported by companion trials. 'Formally integrates into PACU and surgical ICU guidelines' has not happened -- no society guideline has been revised on this."
+    }
+  },
+  {
+    "title": "Guidelines to the Practice of Anesthesia (Revised 2026 Edition)",
+    "journal": "Canadian Journal of Anesthesia",
+    "date": "January 2026",
+    "breakthrough": "A comprehensive overhaul of basic anesthesia care standards by the Canadian Anesthesiologists' Society (CAS), featuring new requirements for continuous capnography in all sedation locations and environmental sustainability standards.",
+    "impact": "Updates universal practice standards to require continuous micro-stream capnography during deep sedation outside the operating room (NORA) and formalizes institutional plans to phase out high-global-warming volatile agents (e.g. desflurane).",
+    "practical": "Accelerates the elimination of high-carbon anesthetic gases globally while enforcing stricter capnographic safety monitoring across gastrointestinal and interventional suites.",
+    "link": "Guidelines to the Practice of Anesthesia 2026 Edition",
+    "url": "https://link.springer.com/article/10.1007/s12630-026-03075-w",
+    "verify": {
+      "status": "document matched, specifics UNVERIFIED",
+      "note": "The document is real: CAS Guidelines to the Practice of Anesthesia, Revised Edition 2026, Can J Anesth, January 2026, PMID 41820767 -- the 49th annual revision and the 18th consecutive year in CJA. BUT 'a comprehensive overhaul' is the wrong characterisation: CAS states that existing sections are revised annually only where high-quality literature supports it, with new sections added as needed. The two specific claims -- a new continuous-capnography requirement for all sedation locations, and formal desflurane phase-out plans -- could not be confirmed from the abstract and need checking against the document itself."
+    }
+  },
+  {
+    "title": "Electroencephalographic Monitoring in the Recovery Room for Identification of Patients at Risk for Postoperative Delirium",
+    "journal": "Anesthesiology",
+    "date": "June 2026",
+    "breakthrough": "Demonstrated that automated frontal EEG monitoring during the immediate post-anesthesia recovery phase detects persistent subclinical slow-wave activity, accurately identifying patients at high risk for delirium before clinical symptoms emerge.",
+    "impact": "Refines perioperative brain health guidelines by recommending post-anesthesia EEG screening in the recovery room to trigger targeted non-pharmacological delirium bundles.",
+    "practical": "Enables PACU nursing and anesthesia teams to initiate early delirium precautions - such as reorientation, structured pain protocols, and avoiding anticholinergics - before patient transfer to surgical wards.",
+    "link": "Anesthesiology - PACU EEG Delirium Risk Screening",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41983562/",
+    "verify": {
+      "status": "matched with corrections",
+      "note": "Real: PMID 41983562, June 2026, Charite-Universitatsmedizin Berlin with Harvard/MIT. The finding is that recovery-room frontal EEG identifies a 'vulnerable brain' phenotype associated with increased delirium risk, and that integrating it into postoperative care MAY support risk stratification. CORRECTIONS: 'accurately identifying' overstates a risk-association study, and no guideline has been refined -- the authors propose this, they do not report a guideline change."
+    }
+  },
+  {
+    "title": "Long-Term Antiplatelet Monotherapy After PCI: 10-Year Outcomes of the HOST-EXAM Trial",
+    "journal": "The Lancet",
+    "date": "March 2026",
+    "breakthrough": "Published in The Lancet, this 10-year randomized trial showed that long-term clopidogrel monotherapy maintains superior reductions in major adverse cardiovascular events and bleeding compared to aspirin monotherapy in post-PCI patients.",
+    "impact": "Updates perioperative antiplatelet consensus recommendations regarding the long-term management of patients with drug-eluting stents presenting for elective noncardiac surgery.",
+    "practical": "Clarifies preoperative hold and restart timelines for chronic P2Y12 inhibitor monotherapy, reducing ischemic cardiac events and surgical bleeding complications.",
+    "link": "The Lancet - 10-Year Follow-up of HOST-EXAM Trial",
+    "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00422-8/abstract",
+    "verify": {
+      "status": "matched",
+      "note": "Real: 'Aspirin versus clopidogrel for chronic maintenance monotherapy after percutaneous coronary intervention: 10-year follow-up of the HOST-EXAM trial', Lancet 2026, presented at ACC 2026. 5,438 South Korean patients post-DES PCI who had completed 6-18 months of DAPT; median follow-up 10.5 years, 92.8% complete. Clopidogrel lower for the primary composite (25.4% vs 28.5%, HR 0.86, 95% CI 0.77-0.96, p = 0.0050) and for ischaemic and bleeding outcomes, but NOT for all-cause mortality -- worth stating, since 'superior reductions' alone implies a mortality benefit that was not found. The perioperative-guideline and hold-timeline implications are extrapolation, not trial findings."
+    }
+  },
+  {
+    "title": "Expert Consensus Statement on the Perioperative Management of Adult Patients Undergoing High-Risk Thyroidectomy",
+    "journal": "Anesthesia & Analgesia",
+    "date": "June 2026",
+    "breakthrough": "A multi-society expert consensus statement establishing standardized neural monitoring (IONM) protocols, vocal cord assessment algorithms, and acute post-thyroidectomy hematoma emergency pathways.",
+    "impact": "Issued in Anesthesia & Analgesia, establishing standardized endotracheal tube positioning protocols for intraoperative recurrent laryngeal nerve monitoring and bed-side wound decompression algorithms.",
+    "practical": "Significantly reduces permanent vocal cord paralysis rates and improves rapid response times for post-thyroidectomy airway compromise on surgical floors.",
+    "link": "Anesthesia & Analgesia - High-Risk Thyroidectomy Perioperative Consensus",
+    "url": "https://doi.org/10.1213/ANE.0000000000008141",
+    "verify": {
+      "status": "matched with corrections",
+      "note": "Real: Anesthesia & Analgesia, published 10 June 2026, DOI 10.1213/ANE.0000000000008141. CORRECTION: it is from the Society for Head and Neck Anesthesia specifically, not 'multi-society'. The 'significantly reduces permanent vocal cord paralysis rates' claim is an expected benefit of the consensus, not a measured outcome -- a consensus statement cannot demonstrate a rate reduction."
+    }
+  },
+  {
+    "title": "EEG-Guided Emergence Protocols and the Quality of Post-Anesthetic Recovery and Dreaming",
+    "journal": "Anesthesiology",
+    "date": "July 2026",
+    "breakthrough": "Demonstrated that a standardized, EEG-guided emergence bundle facilitates smooth emergence transitions out of general anesthesia, markedly reducing emergence agitation and post-traumatic stress responses.",
+    "impact": "Introduces processed EEG spectral emergence tracking into post-anesthesia recovery standards to prevent burst suppression during emergence.",
+    "practical": "Gives clinicians objective biophysical feedback to time anesthetic wash-out, resulting in calmer emergence transitions, higher patient satisfaction, and lower PACU nursing burden.",
+    "link": "Anesthesiology - EEG-Guided Emergence and Recovery Quality",
+    "url": "https://journals.lww.com/anesthesiology/fulltext/10.1097/aln.0000000000005968~feasibility-of-a-multicomponent-protocol-to-promote-dreaming",
+    "verify": {
+      "status": "OVERSTATED",
+      "note": "The study is real -- 'Feasibility of a Multicomponent Protocol to Promote Dreaming during Surgical Anesthesia', Anesthesiology, July 2026 -- but it is a FEASIBILITY study whose endpoint was DREAMING, not delirium, agitation or PTSD. Five elements: preinduction verbal priming about dreaming, propofol as the emergence anesthetic, EEG-guided emergence, >= 10 min of minimised stimulation before emergence, and immediate postemergence interviews. Results: 69% of 452 interviewed patients dreamed, 93% among the 57 with full protocol adherence; 86% of dreams positive, none very negative; dreamers reported better sleep quality (9.16 +/- 1.57 vs 7.65 +/- 2.86); safe, no awareness, no difference in recovery times or analgesic/antiemetic use. It did NOT measure emergence agitation or PTSD, and nothing has entered 'post-anesthesia recovery standards'."
+    }
+  }
+]
