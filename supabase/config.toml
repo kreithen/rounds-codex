@@ -8,3 +8,12 @@ verify_jwt = false
 
 [functions.unsubscribe]
 verify_jwt = false
+
+# draft + send-campaign are called from the admin dashboard. verify_jwt is off
+# so CORS preflight (OPTIONS, no JWT) succeeds; each function checks admin
+# membership manually before spending Anthropic credits or sending mail.
+[functions.draft]
+verify_jwt = false
+
+[functions.send-campaign]
+verify_jwt = false

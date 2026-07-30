@@ -6,8 +6,11 @@ landing page and shows nothing to anyone who isn't a signed-in administrator.
 
 - Email + password sign-in (Supabase Auth), with a "Forgot password?" reset flow.
 - Access limited to accounts listed in the `admins` table (row-level security enforces it).
-- Signup list with search, **CSV export**, live stats (total / subscribed / unsubscribed / by
-  role) and a 14-day signups sparkline.
+- **Signups tab** — signup list with search, **CSV export**, live stats (total / subscribed /
+  unsubscribed / by role) and a 14-day signups sparkline.
+- **Newsletters tab** — compose a newsletter, **Draft with AI** (Claude), edit, **Send test**,
+  **Approve**, then **Send to list** via Resend. Nothing auto-sends; a human is always the gate.
+  Backed by the `draft` + `send-campaign` edge functions (see `../backend/mail-setup-resend.md`).
 
 Public config only (`src/config.js`: project URL + publishable key). No secret keys here.
 
@@ -60,6 +63,13 @@ logins; a custom SMTP/Resend sender can be added later).
 
 Add more admins later by repeating step 4.2 with their email (after they've signed in once).
 
-## Not yet (Phase 3)
-Newsletters: `campaigns` tables, "Draft with AI" (Claude), Approve → Send via Resend, open/click
-stats. Specified in `../backend-plan.md`.
+## Newsletters (Phase 3) — setup
+The UI is built (Newsletters tab). To turn it on, deploy the edge functions and set the secrets
+per **`../backend/mail-setup-resend.md`** (steps 2–5): run migration `002_phase3.sql`, deploy
+`draft` + `send-campaign` (Verify JWT off), and set `RESEND_API_KEY` + `ANTHROPIC_API_KEY`
+(and optionally `MAIL_ADDRESS`) as Supabase secrets. Until then the tab loads but the AI-draft
+and send buttons return "not authorized"/"not set" errors.
+
+## Not yet (later)
+Open/click tracking and a support inbox (contact form → reply in-dashboard). Specified in
+`../backend-plan.md`.
