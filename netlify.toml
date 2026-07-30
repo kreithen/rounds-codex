@@ -1,0 +1,41 @@
+# Netlify config for the roundscodex.com landing site.
+# The site is the static folder landing/ in this repo. No build step.
+# Connect this repo in Netlify → it reads this file → publishes landing/.
+
+[build]
+  publish = "landing"
+
+# --- Security + privacy headers (apply to every response) ---
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), interest-cohort=()"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    # Everything is self-hosted and inline; nothing loads cross-origin.
+    Content-Security-Policy = "default-src 'self'; base-uri 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests"
+
+# --- Caching ---
+# Images never change under a given name → cache hard for a year.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/favicon.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# HTML must revalidate so content edits appear immediately.
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

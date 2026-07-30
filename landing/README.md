@@ -5,10 +5,16 @@ transferred here so it's version-controlled and portable off the ChatGPT host.
 
 - `index.html` — the whole page. Inline CSS + JS, no external scripts, no font/CDN dependencies
   (falls back to the system sans stack; Inter is named but not loaded).
-- `assets/` — 17 `.webp` images. `favicon.svg` sits at the folder root (that's the path the page
-  references). All present and verified (18/18 decode, 0 page errors).
+- `assets/` — 17 content `.webp` images + `og-cover.jpg` (1200×630 social card) +
+  `apple-touch-icon.png` (180×180). `favicon.svg` sits at the folder root.
+- `robots.txt`, `sitemap.xml` — crawl directives (apex `roundscodex.com`).
+- **`DEPLOY.md`** — Netlify + GoDaddy DNS steps to put it on roundscodex.com.
+- **`SEO.md`** — keyword strategy, what's implemented, verification tools.
+- Deploy config is the repo-root **`netlify.toml`** (`publish = "landing"`, security + caching
+  headers).
 
-Fully self-contained — nothing loads from the ChatGPT host anymore.
+Fully self-contained — nothing loads from the ChatGPT host anymore. Canonical URL is the apex
+`https://roundscodex.com/`.
 
 ## What was changed on transfer
 The original hard-coded every asset URL to
