@@ -64,7 +64,21 @@
 <h1>The future of clinical learning is <em>already in your hands.</em></h1>
 <p class="hero-lede">One beautifully focused medical library for the classroom, the wards, and every high-stakes moment between.</p>
 <div class="audience-row" aria-label="Designed for"><span>Nursing</span><span>Medical Students</span><span>Residents</span></div>
-<div class="hero-actions"><a class="button button-primary" href="#platform">Explore what's coming<span aria-hidden="true">↘</span></a><a class="button button-quiet" href="#mission">Our mission</a></div>
+<form class="signup signup-hero" id="signup-hero" novalidate>
+<div class="signup-row">
+<input class="signup-email" type="email" name="email" required placeholder="you@example.com" aria-label="Email address" autocomplete="email" inputmode="email">
+<select class="signup-role" name="role" aria-label="I am a">
+<option value="">I am a…</option>
+<option value="nursing">Nursing student</option>
+<option value="medical">Medical student</option>
+<option value="resident">Resident</option>
+<option value="other">Other</option>
+</select>
+<button class="button button-primary" type="submit">Notify me<span aria-hidden="true">→</span></button>
+</div>
+<p class="signup-msg" role="status" aria-live="polite"></p>
+<p class="signup-fine">Be first to know when we launch. No spam, unsubscribe anytime. <a href="#mission">Our mission →</a></p>
+</form>
 </div>
 <div class="hero-visual" aria-label="Rounds Codex in clinical use" data-parallax>
 <div class="image-halo" aria-hidden="true"></div>
@@ -292,41 +306,44 @@
 // Launch-list signup → Supabase (single opt-in). Config is public (anon key
 // behind row-level security). Falls back gracefully if not yet configured.
 (() => {
-  const form = document.getElementById("signup");
-  if (!form) return;
+  const forms = document.querySelectorAll("form.signup");
+  if (!forms.length) return;
   const cfg = window.RC_CONFIG || {};
   const configured = Boolean(cfg.SUPABASE_URL && cfg.SUPABASE_ANON_KEY);
-  const msg = form.querySelector(".signup-msg");
-  const btn = form.querySelector('button[type="submit"]');
-  const setMsg = (text, kind) => { msg.textContent = text; msg.dataset.kind = kind || ""; };
 
-  form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const email = form.email.value.trim();
-    const role = form.role.value || null;
-    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { setMsg("Please enter a valid email address.", "err"); return; }
-    if (!configured) { setMsg("Signups open soon — please check back shortly.", "err"); return; }
+  forms.forEach((form) => {
+    const msg = form.querySelector(".signup-msg");
+    const btn = form.querySelector('button[type="submit"]');
+    const setMsg = (text, kind) => { msg.textContent = text; msg.dataset.kind = kind || ""; };
 
-    btn.disabled = true; setMsg("Adding you…", "");
-    try {
-      const res = await fetch(cfg.SUPABASE_URL.replace(/\/+$/, "") + "/rest/v1/signups", {
-        method: "POST",
-        headers: {
-          "apikey": cfg.SUPABASE_ANON_KEY,
-          "Authorization": "Bearer " + cfg.SUPABASE_ANON_KEY,
-          "Content-Type": "application/json",
-          "Prefer": "return=minimal"
-        },
-        body: JSON.stringify({ email, role, source: "landing", user_agent: navigator.userAgent })
-      });
-      if (res.ok || res.status === 201) { form.reset(); setMsg("You're on the list — we'll be in touch. 🎉", "ok"); }
-      else if (res.status === 409) { setMsg("You're already on the list — thank you!", "ok"); }
-      else { console.error("signup failed", res.status, await res.text()); setMsg("Something went wrong. Please try again.", "err"); }
-    } catch (err) {
-      console.error(err); setMsg("Network error — please try again.", "err");
-    } finally {
-      btn.disabled = false;
-    }
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const email = form.email.value.trim();
+      const role = form.role.value || null;
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { setMsg("Please enter a valid email address.", "err"); return; }
+      if (!configured) { setMsg("Signups open soon — please check back shortly.", "err"); return; }
+
+      btn.disabled = true; setMsg("Adding you…", "");
+      try {
+        const res = await fetch(cfg.SUPABASE_URL.replace(/\/+$/, "") + "/rest/v1/signups", {
+          method: "POST",
+          headers: {
+            "apikey": cfg.SUPABASE_ANON_KEY,
+            "Authorization": "Bearer " + cfg.SUPABASE_ANON_KEY,
+            "Content-Type": "application/json",
+            "Prefer": "return=minimal"
+          },
+          body: JSON.stringify({ email, role, source: "landing", user_agent: navigator.userAgent })
+        });
+        if (res.ok || res.status === 201) { form.reset(); setMsg("You're on the list — we'll be in touch. 🎉", "ok"); }
+        else if (res.status === 409) { setMsg("You're already on the list — thank you!", "ok"); }
+        else { console.error("signup failed", res.status, await res.text()); setMsg("Something went wrong. Please try again.", "err"); }
+      } catch (err) {
+        console.error(err); setMsg("Network error — please try again.", "err");
+      } finally {
+        btn.disabled = false;
+      }
+    });
   });
 })();
 </script>
