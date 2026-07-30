@@ -1,6 +1,6 @@
 # Gallery coverage — what still needs artwork
 
-Generated from the live app: **54 of 181 conditions have a gallery**, 127 do not.
+Generated from the live app: **55 of 181 conditions have a gallery**, 126 do not.
 Every gallery currently live is 10 pages at 1024x1536.
 
 ## Summary by category
@@ -24,11 +24,11 @@ Every gallery currently live is 10 pages at 1024x1536.
 | Ophthalmology | 0 | 8 |
 | Pediatrics | 0 | 8 |
 | Psychiatry | 0 | 7 |
-| Renal & GU | 6 | 1 |
+| Renal & GU | 7 | 0 |
 | Respiratory | 10 | 0 |
 | Toxicology | 0 | 9 |
 | Women's Health | 0 | 8 |
-| **total** | **54** | **127** |
+| **total** | **55** | **126** |
 
 ## Conditions needing a gallery
 
@@ -185,10 +185,6 @@ The id in backticks is the folder name to use.
 - [ ] Delirium — `delirium`
 - [ ] Suicide Risk Assessment — `suicide`
 
-### Renal & GU (1)
-
-- [ ] Hyponatremia — `hyponatremia`
-
 ### Toxicology (9)
 
 - [ ] Acetaminophen Overdose — `acetaminophen-od`
@@ -217,19 +213,20 @@ The id in backticks is the folder name to use.
 - Cardiac (13)
 - Endocrine (13)
 - Gastrointestinal (12)
+- Renal & GU (7)
 - Respiratory (10)
 
 ## What to send, and how
 
-A folder named exactly the condition id, containing `<id>-01` … `<id>-10` plus a
-`titles.json`, or an approved production PDF.
+A folder named exactly the condition id, containing `<id>-01` … `<id>-10` plus a `titles.json`,
+or an approved production PDF. **Send all ten pages** — a partial set cannot be built, because each
+page header reads `IMAGE n OF 10`.
 
 Notes that have cost time:
 
-- **1024x1536, one size per gallery.** Pages at 1536x2304 are downscaled rather than shipped mixed.
-- **Page order is taken from the `IMAGE n OF 10` header, not filenames** — every batch so far has
-  arrived shuffled.
-- **Titles are read visually** from the subtitle under the main heading.
-- **Check the logo lockup on every page.** `scripts/fix_page_logo.py` redraws the canonical one;
-  the nephrolithiasis set arrived with a trademark variant on pages 5-10.
-- **Check the header progress dots.** They should show ONE filled dot at the current page.
+- **1024x1536, one size per gallery.**
+- **Page order comes from the `IMAGE n OF 10` header, not filenames** — every batch has arrived shuffled.
+- **Diff against the live artwork first.** Three of six batches were wholly or largely re-sends.
+- **Check the logo lockup** (`scripts/fix_page_logo.py` redraws the canonical one).
+- **Check the header progress dots** — ONE filled dot at the current page.
+- **Read the subtitles for typos.** Hyponatremia page 9 shipped with "MAᓎNGEMENT".

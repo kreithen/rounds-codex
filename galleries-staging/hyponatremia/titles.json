@@ -1,10 +1,15 @@
 {
-  "_status": "INCOMPLETE — 5 of 10 pages received 2026-07-30. Pages 6, 7, 8, 9 and 10 are missing.",
   "_note": "Titles read visually from the subtitle line under the main heading. Page numbers from the 'IMAGE n OF 10' header, not arrival order.",
-  "_checks": "Clean set: single filled progress dot on every page, canonical logo lockup (minor size/position drift that fix_page_logo.py normalises at build), category label RENAL & GU consistent, ICD-10 E87.1, all pages 1024x1536.",
+  "_defect": "Page 9's subtitle is misspelled IN THE ARTWORK: it renders 'LONG-TERM MAᓎNGEMENT' instead of 'MANAGEMENT'. The title below is spelled correctly, so the grid caption and viewer label read right, but the page image itself still shows the typo and needs a re-render.",
+  "_checks": "Single filled progress dot on every page, canonical logo lockup, RENAL & GU category label consistent, ICD-10 E87.1, all pages 1024x1536.",
   "1": "The Water Imbalance Disorder",
   "2": "Labeled Anatomy: Water Balance & ADH Physiology",
   "3": "Pathophysiology: Water Excess, Sodium Dilution",
   "4": "Clinical Presentation",
-  "5": "Physical Exam & Diagnostic Approach"
+  "5": "Physical Exam & Diagnostic Approach",
+  "6": "Diagnostic Imaging & Special Tests",
+  "7": "Pathophysiology & Mechanisms",
+  "8": "Cellular Pathophysiology & Histopathology",
+  "9": "Special Causes, Complications & Long-Term Management",
+  "10": "Clinical Pearls & Final Takeaways"
 }
