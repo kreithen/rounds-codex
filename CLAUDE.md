@@ -246,11 +246,11 @@ no backend. This file is context for future sessions — read it before starting
   and strips** — review material, never app content. Anesthesiology is coded **`anes`**. Years sort
   **ascending**, so 2025 sits above 2026 (specified; not newest-first like the rest of the app).
   Built by `scripts/add_clinical_guidelines.js` + `scripts/add_guideline_share.js`.
-  **Live for 21 specialties (399 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `ent`,
-  `fm`, `gs`, `im`, `neuro`, `nsg`, `obgyn`, `ophtho`, `ortho`, `path`, `peds`, `plastics`, `pmr`,
-  `prev`, `psych`, `radonc`, `rads`. Three left to reach all 24: `thoracic`, `uro`, `vasc`.
+  **Live for 23 specialties (438 entries) as of 2026-07-30**: everything except `vasc`.
   General Surgery is coded **`gs`** and displays as "Surgery (General)", so the name sort puts it
   after Radiology, not under G.
+  **`thoracic` 2025 has 9**: the STS POAF guideline was submitted under both years and is a 2026
+  publication, so it lives on 2026 only.
   A single-year specialty should **omit** the other year, not ship `2026: []` — an empty array
   renders a "Coming soon" button. `prev` shipped that way for one deploy before its 2026 arrived.
   **`prev` 2026 has 7**: four submitted entries repeated its own 2025 list.
@@ -367,6 +367,43 @@ no backend. This file is context for future sessions — read it before starting
   Watch-and-wait versus TME has never been randomised and probably cannot be — randomising a
   complete responder to surgery does not recruit. When a submission claims an RCT for something
   ethically unrandomisable, that is the signal, not the citation details.
+  **Check the trial's STATUS, not just that it exists.** Urology submitted three entries reporting
+  results from trials that have not reported: **PROBE**/SWOG S1931 (recruiting since 2021) was
+  credited with identifying subgroups that "gain a survival advantage from tumor debulking";
+  **WATER IV** (completes July 2027, and whose primary endpoints are continence and erectile
+  function, not oncologic) with "eliminat[ing] localized cancerous lesions"; **CURATE-UTUC**
+  (recruiting) with an EAU 2026 result. All three read as finished trials because they were written
+  in the past tense. Search the registry entry for status and primary endpoint before believing a
+  described outcome — and note that a trial's endpoints may not be the ones the claim needs.
+  **A non-inferiority trial is not a superiority trial.** PRIMARY2's PSMA-PET arm detected *less*
+  clinically significant cancer than systematic biopsy (12% vs 16%, non-inferior); it was submitted
+  as "significantly improved the detection" and as catching lesions MRI misses. Its real value is
+  halving biopsies and cutting insignificant-cancer diagnoses from 32% to 14%. When an entry claims
+  a *gain* from a de-escalation trial, the direction is usually the tell.
+  **The omitted number is often the negative predictive value.** ZIRCON's girentuximab PET has PPV
+  92.9% but **NPV 75.2%** — a negative scan still leaves one in four with clear cell carcinoma. The
+  submission quoted only the sensitivity/specificity and promised the rule-OUT use (avoiding surgery
+  for benign lesions) that the NPV forbids. Same shape as POTOMAC, submitted with its HR 0.68 intact
+  and no mention that grade 3–4 toxicity went from 4% to 21% in a BCG-naive population. Check which
+  number a claimed use depends on, and whether the submission gave it.
+  **A study of what happens is not a study of what to do.** The 77,383-patient congenital diaphragm
+  dysfunction paper is epidemiology and outcomes; it was submitted as proving early plication
+  "dramatically decreases" ventilator days, when separate evidence found no ventilation-time
+  difference (6 vs 8 days, p=0.36) and similar functional recovery. Descriptive papers get credited
+  with the intervention effect their subject implies.
+  **Invented numeric thresholds get audited against.** STS 2026's nodal paper (48,779 patients,
+  11.2% upstaged) was submitted as ">10 nodes across at least 3 N2 stations" with quality metrics
+  "penalizing" non-compliance; the actual recommendation is to take more than ONE N1 node. A
+  fabricated threshold in a quality metric is worse than a vague one — someone will measure it.
+  **Check the registry, not just the specialty.** The ATAAD hemiarch finding was attributed to "a
+  prospective STS registry study presented at STS 2026" in patients over 65; it is the **Shizuoka
+  Kokuho Database** — a Japanese prefecture-wide administrative *claims* database — retrospective,
+  age ≥60, published in ICVTS. The conclusion held; every element of the provenance was wrong.
+  **Watch for cardiac entries inside a thoracic list.** Six of ten Thoracic Surgery 2026 entries were
+  cardiac or congenital cardiac surgery (mitral valve-in-valve, type A dissection, paediatric
+  diaphragm plication, COVID donor hearts, POAF ×2). The STS POAF guideline is specifically *after
+  cardiac surgery*; post-resection POAF is a different problem with its own evidence. "Cardiothoracic"
+  in the submitter's mind, two specialties on the page.
   **Write the `verify.status` so it sorts.** `build_corrections_summary.js` buckets worst-first off
   that string, so a reversal phrased as "corrected — the result was submitted in the wrong
   direction" lands under routine date fixes and the physician meets it last. Use the established
