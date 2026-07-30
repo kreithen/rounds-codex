@@ -1,18 +1,18 @@
 # Clinical guideline citation checks — for sign-off
 
-80 entries checked. Grouped worst-first by what a reader would take away if the
+100 entries checked. Grouped worst-first by what a reader would take away if the
 entry shipped as submitted. Every entry below is live in the app in its CORRECTED form; this
 document records what was changed and why, so any of it can be reverted.
 
 | verdict | entries |
 |---|---|
-| Findings stated backwards — a reader would learn the opposite of the published result | 12 |
-| Cited study could not be found | 3 |
+| Findings stated backwards — a reader would learn the opposite of the published result | 13 |
+| Cited study could not be found | 5 |
 | Evidence level inflated — case report presented as a trial | 2 |
-| Citation not independently verified | 14 |
-| Wrong study or replaced | 6 |
-| Corrected — dates, journals, numbers, strength of claim | 38 |
-| Matched — no correction needed | 5 |
+| Citation not independently verified | 26 |
+| Wrong study or replaced | 7 |
+| Corrected — dates, journals, numbers, strength of claim | 41 |
+| Matched — no correction needed | 6 |
 
 ---
 
@@ -90,6 +90,12 @@ Real (Casey et al., NEJM 2025 — a 2025 publication placed in the 2026 list). T
 
 Real (NIDA CTN-0099) but the submission was wrong on four counts. SITES: 29 emergency departments, not 33. FORMULATION: the injectable was the 7-DAY extended-release preparation, not a 30-day depot — the original's 'ensuring immediate and sustained 30-day coverage' would have a clinician believe one injection covers a month. ENDPOINT: the primary outcome was treatment engagement at DAY 7, not 30-day retention. RESULT: there was NO difference — the original claimed 'significantly higher 30-day treatment retention' and that this 'elevates single-dose injectable depot buprenorphine to a first-line recommended option'.
 
+### Family Medicine 2025 #6 — 2025 AHA/ACC Hypertension Guideline and the AAFP's Position on It
+
+**corrected — attribution reversed**
+
+The original said the AAFP 'updated its adult hypertension guidelines, formally adopting a target of <130/80'. The AAFP explicitly did NOT endorse the 2025 AHA/ACC guideline (nor did the ACP or ISH), and uses 'Affirmation of Value' rather than endorsement — a distinction that matters to a family physician, and one of the more instructive facts in this list. AAFP's own guidance does reference <130/80 with caveats, which is now stated accurately. Also 'Establishes out-of-office monitoring as a MANDATORY step' softened to strongly recommended.
+
 ---
 
 ## Cited study could not be found
@@ -111,6 +117,18 @@ There is no 'COLCOT-2' trial. The original said a large NEJM outcomes trial 'con
 **NOT FOUND**
 
 Stapokibart is a real humanised anti-IL-4Rα antibody, approved in China for atopic dermatitis and allergic rhinitis, so the drug and mechanism are genuine. But NO publication on palmoplantar pustulosis was located in the searches run — searches returned only JAK inhibitor and apremilast case reports for refractory PPP, and reviews citing IL-17, IL-23, IL-36 and IL-1β as the targeted approaches. The claim of 'significant clearing of painful palmar and plantar pustules' and 'trial evidence for IL-4Rα blockade' is unsupported by anything found, and has been reduced to a neutral description. Verify this citation exists before shipping it.
+
+### Family Medicine 2025 #1 — Blood-Based Cell-Free DNA Testing for Colorectal Cancer Screening: Where It Actually Stands
+
+**REPLACED — the cited guideline does not exist**
+
+There is no 2025 USPSTF final recommendation integrating blood-based cfDNA. The current USPSTF colorectal cancer statement is from 2021 and explicitly does NOT include blood-based tests, on grounds of insufficient evidence and poor advanced-adenoma detection. The original said the USPSTF 'updated primary care screening guidelines to include' cfDNA and that this 'establishes formal primary care screening pathways' — it would have family physicians offering a test as guideline-endorsed when it is not. Rewritten around what does exist (ECLIPSE, the NCCN's narrow 2025 addition, the ASGE position) and the adenoma-sensitivity limitation the original omitted.
+
+### Family Medicine 2025 #4 — GLP-1 Receptor Agonists versus SGLT2 Inhibitors in Type 2 Diabetes: What the Indirect Evidence Shows
+
+**REPLACED — the cited trial does not exist**
+
+There is no head-to-head pragmatic primary care trial of GLP-1 RAs versus SGLT2 inhibitors in NEJM; the literature states plainly that no head-to-head trials exist. The original's directional conclusions are also partly reversed: it said the classes are equivalent for cardiovascular protection with SGLT2 superior for renal outcomes, whereas the meta-analytic picture is that GLP-1 RAs look better for MACE and SGLT2 inhibitors better for heart failure AND renal outcomes. Rewritten to state the evidence type explicitly, since 'a randomized head-to-head trial showed' and 'network meta-analysis suggests' carry very different weight at the bedside.
 
 ---
 
@@ -216,6 +234,78 @@ The specific CAR/CSACI 2026 guidance document was not located and the url is a P
 
 No specific trial matching this description was located; the url is a PubMed title search, and the 'median time under 12 minutes' figure is not asserted here. Two additions independent of the citation: vernakalant is not FDA-approved in the US, which the original did not mention and which determines whether the entry is actionable for a US reader; and stroke-risk assessment before cardioversion, which applies to any cardioversion strategy. 'Updates emergency cardiac rhythm management guidelines, establishing vernakalant as preferred' could not be confirmed.
 
+### Family Medicine 2025 #3 — Primary Care-Led Deprescribing of Long-Term Proton Pump Inhibitors
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific BJGP Open publication matching this description was located; the url is a PubMed title search, and the 'over 65% discontinued' figure is therefore not asserted here. The clinical approach is well established in deprescribing guidance. One framing correction: the original presented hypomagnesemia, C. difficile and osteoporosis as established PPI harms — these come from observational data with substantial confounding, which is worth a resident knowing.
+
+### Family Medicine 2025 #5 — Point-of-Care C-Reactive Protein Testing to Reduce Antibiotic Prescribing in Acute Respiratory Tract Infection
+
+**NOT INDEPENDENTLY VERIFIED, and one claim softened**
+
+No specific BJGP Open multicentre observational study matching the submission was located; the url is a PubMed title search, and the 'nearly 40%' reduction figure is not asserted (published trials generally report smaller reductions). The approach itself is well evidenced. IMPORTANT SOFTENING: the original stated that 'CRP < 20 mg/L RULES OUT bacterial pneumonia'. It does not — early presentation gives a low CRP in genuine bacterial infection because CRP takes 24-48 hours to rise, and teaching it as a rule-out invites a missed pneumonia.
+
+### Family Medicine 2025 #7 — AI-Driven Clinical Decision Support for Opioid Risk Stratification in Primary Care
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific publication matching this description was located; the url is a PubMed title search and the '47% increase in referrals' figure is not asserted. Two additions independent of the citation: algorithmic bias in opioid risk prediction is a documented and serious problem that the original did not mention, and the harm of abrupt tapering in response to a risk flag is well established. 'Endorsed by primary care addiction task forces, validating AI-assisted risk modeling as a standardized method' could not be confirmed and has been removed.
+
+### Family Medicine 2025 #9 — FIB-4 Index Screening for Advanced Fibrosis in Metabolic Dysfunction-Associated Steatotic Liver Disease (MASLD) in Primary Care
+
+**NOT INDEPENDENTLY VERIFIED, and one claim corrected**
+
+No specific Lancet Gastroenterology & Hepatology validation study matching the submission was located; the url is a PubMed title search. The approach is genuine and reflects AASLD guidance. CORRECTION: the original said 'Updated AASLD and AAFP guidelines MANDATE routine FIB-4 screening in ALL primary care patients with Type 2 Diabetes or metabolic syndrome' — guidance recommends risk-based stratification rather than mandating universal screening, and no AAFP mandate was identified. Added the age-dependence limitation and the indeterminate zone, both of which determine whether the tool is used well.
+
+### Family Medicine 2026 #2 — Underused Pharmacologic Therapies for ME/CFS and Long COVID before Specialist Referral
+
+**NOT INDEPENDENTLY VERIFIED**
+
+Not individually confirmed; the url is a PubMed title search. Two entries from this 2026 Family Medicine list were verified in detail and both matched exactly, which raises confidence that the set derives from real Annals content — but that is not confirmation of this specific paper. Added the post-exertional malaise caution against graded exercise, which is central to safe ME/CFS care and was absent. The original's 'supplement protocols' was removed as unsupported.
+
+### Family Medicine 2026 #3 — General Practitioner Performance in Carotid Plaque Detection Using AI-Assisted Point-of-Care Ultrasound
+
+**NOT INDEPENDENTLY VERIFIED**
+
+Not individually confirmed; the url is a PubMed title search, and the 87%/91% figures are reported as claimed rather than asserted. Added the downstream-utility caution: the original framed this as allowing providers to 'identify vascular disease early', which presumes a management consequence a feasibility study cannot demonstrate.
+
+### Family Medicine 2026 #5 — 2026-2027 AAFP Immunization Schedules for Children, Adolescents and Adults
+
+**NOT INDEPENDENTLY VERIFIED**
+
+The specific 2026-2027 schedule publication was not confirmed. However two component facts are independently correct and have been stated as such: pentavalent MenABCWY licensure (2025) and the PreHevbrio discontinuation. 'Establishes unified, streamlined immunization pathways across all life stages' softened — a schedule reflects ACIP recommendations rather than establishing pathways, and it is ACIP and CDC that a practice should check for current guidance.
+
+### Family Medicine 2026 #6 — Transmural Collaborative Cardiovascular Risk Management for Patients Taking Antipsychotics (TACTIC)
+
+**NOT INDEPENDENTLY VERIFIED**
+
+Not individually confirmed; the url is a PubMed title search. Added the mortality-gap context and the drug-specific metabolic risk, which make the entry useful regardless. 'Refines primary care guidelines... establishing structured shared-care framework expectations' overstates what a FEASIBILITY trial does, and has been softened — the original did note it was a feasibility trial while simultaneously crediting it with refining guidelines.
+
+### Family Medicine 2026 #7 — Older Black and Hispanic Patients' Perceptions of Medicare Annual Wellness Visits
+
+**NOT INDEPENDENTLY VERIFIED**
+
+Not individually confirmed; the url is a PubMed title search. One correction: the original said the study 'provided actionable communication solutions' and 'Prompts health systems to overhaul pre-visit messaging' — a qualitative study surfaces barriers and suggested directions; it does not validate solutions. Framed accordingly.
+
+### Family Medicine 2026 #8 — Dyadic Electronic Medical Record Linkage in Dementia Care
+
+**NOT INDEPENDENTLY VERIFIED**
+
+Not individually confirmed; the url is a PubMed title search. Added the consent and privacy consideration, which is the first practical obstacle to any record-linkage scheme between two competent adults and was absent from the original. 'Formalizing how family physicians monitor and support caregiver health' softened — a report describing an innovation does not formalise practice.
+
+### Family Medicine 2026 #9 — Pharmaceutical Promotional Payments and General Practice Prescribing Patterns
+
+**NOT INDEPENDENTLY VERIFIED**
+
+Not individually confirmed; the url is a PubMed title search. Mulinari is an established author on pharmaceutical payment transparency, which is consistent with the attribution. Added the wider literature context and the self-versus-others perception finding, which is what makes the entry actionable. Causal language avoided, since payment-and-prescribing studies are observational.
+
+### Family Medicine 2026 #10 — Primary hrHPV Testing as the Preferred Cervical Cancer Screening Pathway, Including Self-Collection
+
+**NOT INDEPENDENTLY VERIFIED**
+
+The primary hrHPV every 5 years pathway for ages 30-65 is long established, and self-collection has been moving into US guidance following FDA authorisations in 2024, so the substance is sound. The specific 2026 'HRSA/USPSTF' document and the joint attribution were not confirmed, and the url is a PubMed title search — HRSA maintains the Women's Preventive Services Guidelines, which is a separate instrument from a USPSTF recommendation, so the combined attribution should be checked. Added that follow-up of a positive result still requires clinician assessment.
+
 ---
 
 ## Wrong study or replaced
@@ -255,6 +345,12 @@ There is no 'TIMELESS-2' trial. The real 2025 NEJM trial is BRIDGE-TNK (NEJMoa25
 **corrected — wrong year, and the primary outcome was null**
 
 The trial is SALT-ED, NEJM 2018 (PMID 29485926), not a 2025 trial. Three corrections. It was SINGLE-CENTRE, not 'massive'. Its PRIMARY outcome — hospital-free days — was NULL; MAKE30 was a secondary outcome. And 'Rewrote emergency fluid resuscitation guidelines, designating balanced crystalloids as the primary first-line crystalloid' overstates: the large ICU trials BaSICS and PLUS were neutral, which the entry now says.
+
+### Family Medicine 2025 #10 — Screening and Treatment of Perinatal and Postpartum Depression in Primary Care
+
+**REPLACED — the cited study could not be found**
+
+No JAMA study evaluating universal perinatal screening paired with primary-care-initiated zuranolone or targeted psychotherapy was located. Zuranolone itself is real and the rapid onset is accurate. Rewritten around the USPSTF screening reaffirmation and the zuranolone approval evidence. Two safety facts were absent from the original and matter a great deal for a family physician prescribing it: zuranolone is a SCHEDULE IV controlled substance with significant sedation and a post-dose driving restriction, and infant care during a 14-day course needs planning. The original's framing of immediate primary care initiation 'without waiting for specialized psychiatric placement' needed that counterweight.
 
 ---
 
@@ -488,6 +584,24 @@ Real and positive. JAMA, 29 October 2025 (a 2025 publication placed in the 2026 
 
 Real, and the original correctly conveyed a non-positive result. NEJM 2026, phase III superiority trial, 616 patients, 10 air ambulances serving 19 hospitals, December 2022 to September 2024. The original's framing — that the trial showed 'overall protocol speed and total balanced volume take clinical precedence over early isolated whole blood units' — is an interpretation, not a finding, and has been replaced with the actual result (non-superiority for death or massive transfusion at 24 hours). Added the investigators' own dose limitation, which materially changes how the result should be read.
 
+### Family Medicine 2025 #2 — Recombinant Zoster Vaccine and Reduced Risk of Dementia
+
+**corrected — numbers and comparator**
+
+The finding is real and the literature is larger than the entry suggested, but the figure was wrong. The Nature Medicine 2024 study reported a 17% increase in diagnosis-free time over 6 YEARS versus the LIVE vaccine (164 additional days), not '20% lower risk over 7 years'; the Nature Communications cohort reported 51%. The comparator matters — the headline study was recombinant versus live zoster vaccine, not versus no vaccine. Also 'Directly influences adult immunization recommendations, adding neuroprotective benefits to the existing indication' has not happened, and these are observational designs.
+
+### Family Medicine 2025 #8 — Metabolic Surgery versus Medical/Lifestyle Therapy for Type 2 Diabetes: Long-Term Outcomes (ARMMS-T2D)
+
+**corrected**
+
+Real (ARMMS-T2D, JAMA 2024 — a 2024 publication placed in the 2025 list). Three corrections. BMI was 27-45 kg/m², not '≥35' as submitted. The follow-up is 7 and 12 years, not 10. And the original said this was compared against intensive medical therapy 'including modern GLP-1s' and that it 'proved... lower all-cause mortality' — the medical arms predate modern incretin therapy, and the trial was not powered for mortality; the mortality figures circulating for bariatric surgery come from observational cohorts.
+
+### Family Medicine 2026 #4 — Long-Standing Practice Registration, Urgent Hospital Admissions and Hospital Costs
+
+**matched with corrections**
+
+Real and the figures match exactly: Annals of Family Medicine, July 2026, Netherlands, 100,450 patients, 48 practices, 9-21% lower odds of urgent admission and 17-28% lower costs beyond 5 years of registration. Added the distinction the original omitted and which is the study's most useful finding — density of visits with one physician was associated with 6-7% lower costs but NOT fewer urgent admissions, so duration and density are not interchangeable. Also flagged the observational design, since 'definitive empirical backing' as originally written overstates a cohort study.
+
 ---
 
 ## Matched — no correction needed
@@ -521,3 +635,9 @@ A JAAD 2026 document with this scope was located (S0190-9622(26)00344-0), coveri
 **matched**
 
 Real and accurately summarised. JAMA Dermatology 2026;162(2):133-141, online 17 December 2025, PMID 41405882, DOI 10.1001/jamadermatol.2025.4950. Phase 2b, 189 patients, 72 centres, Ständer et al. The itch numbers, dose-dependence, first-in-class status and OSMRβ mechanism all confirmed. One softening: 'simultaneously halts both severe neurogenic itching and dermal nodular fibrosing' is the mechanistic hope rather than a demonstrated outcome.
+
+### Family Medicine 2026 #1 — Social Care via In-Person Navigation or Signposting? A Randomized Trial of the Access to Resources in the Community (ARC) Model
+
+**matched**
+
+Real and accurately summarised. Annals of Family Medicine, July/August 2026, 24(4):287, Dahrouge et al., 326 patients in Ottawa and Greater Sudbury. The submitted rates of 50.3% versus 35.8% are consistent with the reported 41% relative increase in accessing at least one resource. One of the best-sourced entries submitted across any specialty.

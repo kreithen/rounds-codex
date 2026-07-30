@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Blood-Based Cell-Free DNA Testing for Colorectal Cancer Screening: Where It Actually Stands",
+    "journal": "NEJM (ECLIPSE); NCCN and ASGE positions",
+    "date": "2024-2025",
+    "breakthrough": "An FDA-approved cell-free DNA blood test for colorectal cancer screening now exists, and the ECLIPSE validation study was published in NEJM. But the USPSTF has NOT added it: the current USPSTF colorectal cancer recommendation remains the 2021 statement, which lists colonoscopy, FIT, multitarget stool DNA and flexible sigmoidoscopy for adults 45 to 75, and does not include blood-based cfDNA.",
+    "impact": "In June 2025 the NCCN added blood-based testing to its guideline, but ONLY for average-risk people who cannot or will not use another screening method. The ASGE issued a position statement in August 2025. The reason for the caution is specific: cfDNA blood tests have poor sensitivity for ADVANCED ADENOMAS, so they detect cancer better than they prevent it.",
+    "practical": "Offer it as a last resort for a patient who has refused everything else — a completed imperfect test beats a declined good one. Do not present it as equivalent to colonoscopy or FIT. And counsel that a positive result still requires colonoscopy, while a negative result is less reassuring than a negative FIT.",
+    "link": "NEJM - cell-free DNA blood-based test for colorectal cancer screening (ECLIPSE)",
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2304714",
+    "verify": {
+      "status": "REPLACED — the cited guideline does not exist",
+      "note": "There is no 2025 USPSTF final recommendation integrating blood-based cfDNA. The current USPSTF colorectal cancer statement is from 2021 and explicitly does NOT include blood-based tests, on grounds of insufficient evidence and poor advanced-adenoma detection. The original said the USPSTF 'updated primary care screening guidelines to include' cfDNA and that this 'establishes formal primary care screening pathways' — it would have family physicians offering a test as guideline-endorsed when it is not. Rewritten around what does exist (ECLIPSE, the NCCN's narrow 2025 addition, the ASGE position) and the adenoma-sensitivity limitation the original omitted."
+    }
+  },
+  {
+    "title": "Recombinant Zoster Vaccine and Reduced Risk of Dementia",
+    "journal": "Nature Medicine; Nature Communications",
+    "date": "2024-2025",
+    "breakthrough": "A natural-experiment study of more than 200,000 people in Nature Medicine (2024) found that within 6 years of vaccination, the recombinant zoster vaccine was associated with lower dementia risk than the LIVE vaccine — a 17% increase in diagnosis-free time, or 164 additional days lived without a dementia diagnosis among those eventually diagnosed. A subsequent Nature Communications cohort study reported a 51% lower dementia risk after two doses in adults 65 and over, which remained significant after accounting for healthy-vaccinee bias.",
+    "impact": "Multiple independent cohorts using Medicare and Kaiser Permanente data have found the same association, and a related signal has been reported for the AS01 adjuvant shared with the RSV vaccine. No immunization guideline has added a dementia indication — recombinant zoster vaccine is recommended for adults 50 and over (and immunocompromised adults 19 and over) on its shingles and postherpetic neuralgia merits.",
+    "practical": "Reasonable to mention when counselling a hesitant older adult, but describe it accurately: these are OBSERVATIONAL studies showing association, and the strongest one compared the recombinant vaccine against the live vaccine rather than against no vaccination. The shingles indication is the reason to vaccinate; this is a possible bonus, not an established neuroprotective effect.",
+    "link": "Nature Medicine - recombinant shingles vaccine and lower dementia risk",
+    "url": "https://www.nature.com/articles/s41591-024-03201-5",
+    "verify": {
+      "status": "corrected — numbers and comparator",
+      "note": "The finding is real and the literature is larger than the entry suggested, but the figure was wrong. The Nature Medicine 2024 study reported a 17% increase in diagnosis-free time over 6 YEARS versus the LIVE vaccine (164 additional days), not '20% lower risk over 7 years'; the Nature Communications cohort reported 51%. The comparator matters — the headline study was recombinant versus live zoster vaccine, not versus no vaccine. Also 'Directly influences adult immunization recommendations, adding neuroprotective benefits to the existing indication' has not happened, and these are observational designs."
+    }
+  },
+  {
+    "title": "Primary Care-Led Deprescribing of Long-Term Proton Pump Inhibitors",
+    "journal": "BJGP Open",
+    "date": "2025",
+    "breakthrough": "Structured primary care deprescribing algorithms for adults on long-term proton pump inhibitor therapy without an ongoing indication, using a guided taper-and-stop approach.",
+    "impact": "Supports explicit step-down criteria — moving to on-demand dosing, an H2 receptor antagonist, or antacids — rather than indefinite continuation of a prescription that was often started for a self-limiting problem.",
+    "practical": "Worth building into annual medication reconciliation. Note two things when counselling: rebound acid hypersecretion after abrupt withdrawal is real and is the reason to taper rather than stop, and the observational associations with hypomagnesemia, C. difficile and fracture risk are confounded — they justify reviewing an unindicated PPI, not frightening a patient who needs one.",
+    "link": "BJGP Open - PPI deprescribing in primary care",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=proton+pump+inhibitor+deprescribing+primary+care+BJGP+Open",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific BJGP Open publication matching this description was located; the url is a PubMed title search, and the 'over 65% discontinued' figure is therefore not asserted here. The clinical approach is well established in deprescribing guidance. One framing correction: the original presented hypomagnesemia, C. difficile and osteoporosis as established PPI harms — these come from observational data with substantial confounding, which is worth a resident knowing."
+    }
+  },
+  {
+    "title": "GLP-1 Receptor Agonists versus SGLT2 Inhibitors in Type 2 Diabetes: What the Indirect Evidence Shows",
+    "journal": "Network meta-analyses across multiple journals",
+    "date": "Ongoing",
+    "breakthrough": "There are NO head-to-head randomized trials of GLP-1 receptor agonists against SGLT2 inhibitors. The comparison rests entirely on network meta-analyses and indirect comparison of placebo-controlled trials, plus large observational target-trial emulations.",
+    "impact": "On that indirect evidence, both classes reduce major adverse cardiovascular events versus placebo with no statistically significant difference between them. Where they diverge: SGLT2 inhibitors are more effective for heart failure hospitalization and composite renal outcomes, while GLP-1 receptor agonists appear more effective for MACE and glycemic control. Combination therapy shows additive benefit, and GLP-1 effects hold regardless of background SGLT2 use.",
+    "practical": "Choose on the dominant phenotype — heart failure or chronic kidney disease points to an SGLT2 inhibitor; obesity, stroke risk and glycemic burden point to a GLP-1 receptor agonist. Increasingly the answer is both. But present this as inference from indirect comparison, not as a settled head-to-head result, because it is not one.",
+    "link": "Circulation - cardiovascular, kidney and safety outcomes with GLP-1 RAs alone and with SGLT2 inhibitors",
+    "url": "https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.124.071689",
+    "verify": {
+      "status": "REPLACED — the cited trial does not exist",
+      "note": "There is no head-to-head pragmatic primary care trial of GLP-1 RAs versus SGLT2 inhibitors in NEJM; the literature states plainly that no head-to-head trials exist. The original's directional conclusions are also partly reversed: it said the classes are equivalent for cardiovascular protection with SGLT2 superior for renal outcomes, whereas the meta-analytic picture is that GLP-1 RAs look better for MACE and SGLT2 inhibitors better for heart failure AND renal outcomes. Rewritten to state the evidence type explicitly, since 'a randomized head-to-head trial showed' and 'network meta-analysis suggests' carry very different weight at the bedside."
+    }
+  },
+  {
+    "title": "Point-of-Care C-Reactive Protein Testing to Reduce Antibiotic Prescribing in Acute Respiratory Tract Infection",
+    "journal": "Multiple trials; Cochrane review",
+    "date": "Established evidence base",
+    "breakthrough": "Rapid fingerstick quantitative CRP at the point of care reduces antibiotic prescribing for acute lower respiratory tract infection in primary care, established across several randomized trials and summarised in Cochrane reviews.",
+    "impact": "Underpins antimicrobial stewardship guidance in several European systems, where point-of-care CRP is standard in general practice. Uptake in US primary care remains limited.",
+    "practical": "A low CRP makes bacterial pneumonia unlikely and is genuinely useful for reassuring a patient who arrived expecting antibiotics — the test does the arguing. But treat it as one input, not a rule-out: CRP rises over the first 24-48 hours of illness, so an early presentation can give a low value in true bacterial infection, and clinical assessment still governs. Thresholds are usually framed as low, intermediate and high bands rather than a single cut-off.",
+    "link": "Point-of-care C-reactive protein testing in primary care respiratory infection",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=point-of-care+C-reactive+protein+antibiotic+prescribing+primary+care+respiratory+tract+infection+randomised",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED, and one claim softened",
+      "note": "No specific BJGP Open multicentre observational study matching the submission was located; the url is a PubMed title search, and the 'nearly 40%' reduction figure is not asserted (published trials generally report smaller reductions). The approach itself is well evidenced. IMPORTANT SOFTENING: the original stated that 'CRP < 20 mg/L RULES OUT bacterial pneumonia'. It does not — early presentation gives a low CRP in genuine bacterial infection because CRP takes 24-48 hours to rise, and teaching it as a rule-out invites a missed pneumonia."
+    }
+  },
+  {
+    "title": "2025 AHA/ACC Hypertension Guideline and the AAFP's Position on It",
+    "journal": "Circulation / JACC; AAFP clinical guidance",
+    "date": "August 2025",
+    "breakthrough": "The 2025 AHA/ACC guideline sets a universal blood pressure goal of below 130/80 mmHg for adults, with treatment initiation guided by severity, comorbidity and the PREVENT risk score. The AAFP's own clinical guidance also uses a general goal of below 130/80, with caveats for institutional care, limited life expectancy and pregnancy.",
+    "impact": "The notable fact for family medicine is that the AAFP did NOT endorse the 2025 AHA/ACC guideline — nor did the American College of Physicians or the International Society of Hypertension. The AAFP applies a category called 'Affirmation of Value' for guidance it considers useful but which does not meet its criteria for full endorsement, largely reflecting differences over evidence thresholds and the risk of overtreatment in low-risk patients.",
+    "practical": "Standardised measurement is the part that changes outcomes: automated office BP with the patient rested and properly positioned, several readings averaged, and out-of-office confirmation by ambulatory or validated home monitoring before committing someone to lifelong therapy. That confirmation is strongly recommended, not mandatory — and it is the single most effective way to avoid treating white-coat hypertension.",
+    "link": "AAFP - hypertension clinical recommendations",
+    "url": "https://www.aafp.org/family-physician/patient-care/clinical-recommendations/all-clinical-recommendations/highbloodpressure.html",
+    "verify": {
+      "status": "corrected — attribution reversed",
+      "note": "The original said the AAFP 'updated its adult hypertension guidelines, formally adopting a target of <130/80'. The AAFP explicitly did NOT endorse the 2025 AHA/ACC guideline (nor did the ACP or ISH), and uses 'Affirmation of Value' rather than endorsement — a distinction that matters to a family physician, and one of the more instructive facts in this list. AAFP's own guidance does reference <130/80 with caveats, which is now stated accurately. Also 'Establishes out-of-office monitoring as a MANDATORY step' softened to strongly recommended."
+    }
+  },
+  {
+    "title": "AI-Driven Clinical Decision Support for Opioid Risk Stratification in Primary Care",
+    "journal": "Annals of Family Medicine",
+    "date": "2025",
+    "breakthrough": "An EHR-integrated screening tool to identify primary care patients at elevated risk of opioid use disorder, reported to increase warm-handoff referrals to addiction medicine.",
+    "impact": "Positions automated risk flagging as a way to surface patients during routine encounters rather than relying on a clinician's recall at the moment of a refill request.",
+    "practical": "The value is in the warm handoff, not the algorithm — a flag that leads to a same-visit introduction to addiction services is different from one that generates a task nobody actions. Two cautions worth carrying: risk-prediction tools in opioid prescribing have a documented history of encoding racial and socioeconomic bias, and a high-risk flag must not become a reason to abruptly taper or discharge a patient, which increases overdose risk.",
+    "link": "Annals of Family Medicine - AI screening for opioid use disorder risk in primary care",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=artificial+intelligence+clinical+decision+support+opioid+use+disorder+risk+primary+care+Annals+Family+Medicine",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific publication matching this description was located; the url is a PubMed title search and the '47% increase in referrals' figure is not asserted. Two additions independent of the citation: algorithmic bias in opioid risk prediction is a documented and serious problem that the original did not mention, and the harm of abrupt tapering in response to a risk flag is well established. 'Endorsed by primary care addiction task forces, validating AI-assisted risk modeling as a standardized method' could not be confirmed and has been removed."
+    }
+  },
+  {
+    "title": "Metabolic Surgery versus Medical/Lifestyle Therapy for Type 2 Diabetes: Long-Term Outcomes (ARMMS-T2D)",
+    "journal": "JAMA",
+    "date": "2024",
+    "breakthrough": "A pooled long-term follow-up of four randomized trials — STAMPEDE, SLIMM-T2D, TRIABETES and CROSSROADS — in patients with type 2 diabetes and BMI 27 to 45 kg/m². Metabolic surgery gave superior glycemic control, with a between-group HbA1c difference of 1.4% at 7 years and 1.1% at 12 years, less diabetes medication, and higher rates of remission.",
+    "impact": "Durability out to 12 years is the contribution — the question was never whether surgery works initially but whether the benefit persists. Microvascular complication and mortality benefits come from separate observational cohorts; ARMMS-T2D was not powered for mortality.",
+    "practical": "Worth raising as an early option rather than a last resort in a patient with poorly controlled type 2 diabetes and obesity. One important caveat for 2026: the medical arms of these trials predate widespread use of semaglutide and tirzepatide, so this is surgery versus the medical therapy of a decade ago — not surgery versus a modern GLP-1 or dual agonist. Also note the enrolled BMI range started at 27, lower than the usual referral threshold.",
+    "link": "JAMA - long-term outcomes of medical management versus bariatric surgery in type 2 diabetes",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10900968/",
+    "verify": {
+      "status": "corrected",
+      "note": "Real (ARMMS-T2D, JAMA 2024 — a 2024 publication placed in the 2025 list). Three corrections. BMI was 27-45 kg/m², not '≥35' as submitted. The follow-up is 7 and 12 years, not 10. And the original said this was compared against intensive medical therapy 'including modern GLP-1s' and that it 'proved... lower all-cause mortality' — the medical arms predate modern incretin therapy, and the trial was not powered for mortality; the mortality figures circulating for bariatric surgery come from observational cohorts."
+    }
+  },
+  {
+    "title": "FIB-4 Index Screening for Advanced Fibrosis in Metabolic Dysfunction-Associated Steatotic Liver Disease (MASLD) in Primary Care",
+    "journal": "The Lancet Gastroenterology & Hepatology",
+    "date": "2025",
+    "breakthrough": "Automated FIB-4 scoring — calculated from age, AST, ALT and platelet count, all of which are usually already in the record — used in primary care EHRs to stratify patients with MASLD for the risk of advanced fibrosis.",
+    "impact": "AASLD guidance recommends FIB-4 as the initial non-invasive risk stratification step in patients at elevated risk of MASLD fibrosis, particularly those with type 2 diabetes, obesity or two or more metabolic risk factors, with a two-step pathway to elastography or a specialist biomarker for indeterminate results.",
+    "practical": "Efficient precisely because it needs no new test. Know its limits: FIB-4 is age-dependent and loses specificity over 65, so the conventional low cut-off produces many false positives in older patients; and a large indeterminate zone is the rule rather than the exception, which is what the second-step test exists for. Most patients with steatosis and a low FIB-4 need no referral at all.",
+    "link": "FIB-4 for risk stratification of fibrosis in MASLD in primary care",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=FIB-4+primary+care+MASLD+advanced+fibrosis+risk+stratification+validation",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED, and one claim corrected",
+      "note": "No specific Lancet Gastroenterology & Hepatology validation study matching the submission was located; the url is a PubMed title search. The approach is genuine and reflects AASLD guidance. CORRECTION: the original said 'Updated AASLD and AAFP guidelines MANDATE routine FIB-4 screening in ALL primary care patients with Type 2 Diabetes or metabolic syndrome' — guidance recommends risk-based stratification rather than mandating universal screening, and no AAFP mandate was identified. Added the age-dependence limitation and the indeterminate zone, both of which determine whether the tool is used well."
+    }
+  },
+  {
+    "title": "Screening and Treatment of Perinatal and Postpartum Depression in Primary Care",
+    "journal": "USPSTF reaffirmation; zuranolone trials in Am J Psychiatry",
+    "date": "USPSTF 2023; zuranolone FDA approval August 2023",
+    "breakthrough": "Universal perinatal depression screening is a USPSTF recommendation, reaffirmed in 2023, and it is identifying more women with postpartum depression. Zuranolone, a synthetic allopregnanolone analogue, became the first oral drug approved for postpartum depression in August 2023 — a 14-day nightly course taken with a fat-containing meal, within a year of delivery, with symptom improvement in days rather than weeks.",
+    "impact": "Closes a real treatment gap: an SSRI takes weeks to work in a condition where the acute risk period is now. Despite availability, most eligible women are still not being offered zuranolone.",
+    "practical": "Screen at prenatal visits and through the postpartum period, and be ready to act on a positive screen the same day. Before prescribing zuranolone, know the constraints: it is a Schedule IV controlled substance, causes marked somnolence with a driving restriction after each dose, and needs an explicit conversation about breastfeeding and about who will care for the infant during treatment. Severe symptoms, psychosis or suicidality need psychiatric involvement regardless.",
+    "link": "Zuranolone for the treatment of postpartum depression",
+    "url": "https://psychiatryonline.org/doi/10.1176/appi.ajp.20220785",
+    "verify": {
+      "status": "REPLACED — the cited study could not be found",
+      "note": "No JAMA study evaluating universal perinatal screening paired with primary-care-initiated zuranolone or targeted psychotherapy was located. Zuranolone itself is real and the rapid onset is accurate. Rewritten around the USPSTF screening reaffirmation and the zuranolone approval evidence. Two safety facts were absent from the original and matter a great deal for a family physician prescribing it: zuranolone is a SCHEDULE IV controlled substance with significant sedation and a post-dose driving restriction, and infant care during a 14-day course needs planning. The original's framing of immediate primary care initiation 'without waiting for specialized psychiatric placement' needed that counterweight."
+    }
+  }
+]

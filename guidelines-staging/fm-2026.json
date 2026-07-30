@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Social Care via In-Person Navigation or Signposting? A Randomized Trial of the Access to Resources in the Community (ARC) Model",
+    "journal": "Annals of Family Medicine",
+    "date": "July/August 2026 — 24(4):287",
+    "breakthrough": "326 adult primary care patients in Ottawa and Greater Sudbury, Canada, randomised by Dahrouge and colleagues to the ARC model — a longitudinal, bilingual, patient-centred navigation service embedded in primary care, with up to three months of dedicated navigator support — or to signposting to 211-Ontario, a free multilingual information helpline. Patients receiving navigation were 41% more likely to access at least one needed health or social resource (50.3% versus 35.8%).",
+    "impact": "Randomised evidence that the INTENSITY of social prescribing support determines whether it works. Signposting is what most systems actually do when they 'address social determinants', and it performed measurably worse.",
+    "practical": "Handing a patient a phone number is not an intervention. If a practice is going to address housing, food, transport and isolation, the finding is that it needs a person doing the navigating — which is a staffing decision, not a referral pathway decision. Note that even in the navigation arm only half accessed a resource, so the ceiling is well short of complete.",
+    "link": "Annals of Family Medicine - social care via in-person navigation or signposting",
+    "url": "https://www.annfammed.org/content/24/4/287",
+    "verify": {
+      "status": "matched",
+      "note": "Real and accurately summarised. Annals of Family Medicine, July/August 2026, 24(4):287, Dahrouge et al., 326 patients in Ottawa and Greater Sudbury. The submitted rates of 50.3% versus 35.8% are consistent with the reported 41% relative increase in accessing at least one resource. One of the best-sourced entries submitted across any specialty."
+    }
+  },
+  {
+    "title": "Underused Pharmacologic Therapies for ME/CFS and Long COVID before Specialist Referral",
+    "journal": "Annals of Family Medicine",
+    "date": "2026",
+    "breakthrough": "A Mayo Clinic cohort of 571 patients examined what primary care had prescribed before referral for myalgic encephalomyelitis/chronic fatigue syndrome and long COVID. Medications for sleep and mood were common; treatments aimed at the core features — fatigue, cognitive dysfunction, post-exertional malaise and orthostatic intolerance — were substantially underused.",
+    "impact": "Points to a symptom-domain framework as the practical organising principle in general practice: treat the orthostatic intolerance, treat the sleep, pace against post-exertional malaise, rather than treating the diagnosis as untreatable while waiting for a referral.",
+    "practical": "Orthostatic intolerance in particular is often identifiable and manageable in primary care — fluid and salt, compression, and where appropriate pharmacologic support. The one thing not to do is prescribe graded exercise as a default: post-exertional malaise means exertion can worsen the illness, which distinguishes ME/CFS from ordinary deconditioning and is the commonest management error.",
+    "link": "Annals of Family Medicine - underuse of therapies for ME/CFS and long COVID in primary care",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=ME%2FCFS+long+COVID+primary+care+management+underused+therapies+Mayo+Annals+Family+Medicine",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "Not individually confirmed; the url is a PubMed title search. Two entries from this 2026 Family Medicine list were verified in detail and both matched exactly, which raises confidence that the set derives from real Annals content — but that is not confirmation of this specific paper. Added the post-exertional malaise caution against graded exercise, which is central to safe ME/CFS care and was absent. The original's 'supplement protocols' was removed as unsupported."
+    }
+  },
+  {
+    "title": "General Practitioner Performance in Carotid Plaque Detection Using AI-Assisted Point-of-Care Ultrasound",
+    "journal": "Annals of Family Medicine",
+    "date": "2026",
+    "breakthrough": "A feasibility study of general practitioners using handheld AI-assisted point-of-care ultrasound to screen high-risk patients for carotid plaque. After structured training, GPs reportedly achieved 87% sensitivity and 91% specificity against senior ultrasound specialists, with the carotid bifurcation the hardest region to image reliably.",
+    "impact": "Relevant to the wider question of what AI-assisted image acquisition lets a generalist do at the bedside. A feasibility study establishes that it can be done, not that doing it improves outcomes.",
+    "practical": "The unanswered question is what a detected plaque changes. Carotid plaque is common with age and asymptomatic stenosis is generally managed medically — so unless the finding alters statin or antiplatelet decisions that risk scoring would not have driven anyway, screening risks generating incidental findings and anxiety. Worth treating as a research direction rather than a service to offer.",
+    "link": "Annals of Family Medicine - AI-assisted POCUS for carotid plaque detection by GPs",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=general+practitioner+point-of-care+ultrasound+carotid+plaque+artificial+intelligence+Annals+Family+Medicine",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "Not individually confirmed; the url is a PubMed title search, and the 87%/91% figures are reported as claimed rather than asserted. Added the downstream-utility caution: the original framed this as allowing providers to 'identify vascular disease early', which presumes a management consequence a feasibility study cannot demonstrate."
+    }
+  },
+  {
+    "title": "Long-Standing Practice Registration, Urgent Hospital Admissions and Hospital Costs",
+    "journal": "Annals of Family Medicine",
+    "date": "July 2026",
+    "breakthrough": "A retrospective cohort of 100,450 patients across 48 general practices in the Netherlands, examining two distinct forms of continuity. Patients registered with their practice for more than 5 years had 9% to 21% lower odds of urgent hospital admission and 17% to 28% lower hospital costs than those registered 0 to 5 years.",
+    "impact": "The two forms of continuity behaved differently, which is the interesting part. DURATION of registration with the practice was associated with both fewer urgent admissions and lower costs. DENSITY — consistently seeing the same individual GP — was associated with 6% to 7% lower hospital costs but NOT with fewer urgent admissions.",
+    "practical": "The lever appears to be the enduring relationship with a practice, not simply seeing the same face each visit. That supports panel stability and long-term registration as quality metrics, and argues against models built on episodic access to whoever is free. Observational data, so residual confounding by health status and social stability is the obvious alternative explanation.",
+    "link": "Annals of Family Medicine - long-standing practice registration and hospital use",
+    "url": "https://www.annfammed.org/content/24/4",
+    "verify": {
+      "status": "matched with corrections",
+      "note": "Real and the figures match exactly: Annals of Family Medicine, July 2026, Netherlands, 100,450 patients, 48 practices, 9-21% lower odds of urgent admission and 17-28% lower costs beyond 5 years of registration. Added the distinction the original omitted and which is the study's most useful finding — density of visits with one physician was associated with 6-7% lower costs but NOT fewer urgent admissions, so duration and density are not interchangeable. Also flagged the observational design, since 'definitive empirical backing' as originally written overstates a cohort study."
+    }
+  },
+  {
+    "title": "2026-2027 AAFP Immunization Schedules for Children, Adolescents and Adults",
+    "journal": "Annals of Family Medicine",
+    "date": "2026",
+    "breakthrough": "The AAFP's updated immunization schedules, including decision guidance for RSV protection in infants — nirsevimab monoclonal antibody versus maternal vaccination — incorporation of pentavalent meningococcal vaccine (MenABCWY), and adjustments for products withdrawn from the market.",
+    "impact": "The schedules are the operational reference for a family medicine practice, and the RSV and meningococcal sections are where recent product proliferation has made the choice genuinely confusing.",
+    "practical": "Two real changes worth knowing independently of the schedule document: pentavalent MenABCWY products were licensed in 2025 and reduce the number of injections for adolescents needing both MenACWY and MenB coverage; and PreHevbrio, a three-antigen hepatitis B vaccine, was discontinued by its manufacturer, so patients part-way through that series need an alternative product. Verify current recommendations against the published schedule and CDC/ACIP, which is where changes land first.",
+    "link": "Annals of Family Medicine - AAFP immunization schedules",
+    "url": "https://www.annfammed.org/content/24/4",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "The specific 2026-2027 schedule publication was not confirmed. However two component facts are independently correct and have been stated as such: pentavalent MenABCWY licensure (2025) and the PreHevbrio discontinuation. 'Establishes unified, streamlined immunization pathways across all life stages' softened — a schedule reflects ACIP recommendations rather than establishing pathways, and it is ACIP and CDC that a practice should check for current guidance."
+    }
+  },
+  {
+    "title": "Transmural Collaborative Cardiovascular Risk Management for Patients Taking Antipsychotics (TACTIC)",
+    "journal": "BJGP Open",
+    "date": "2026",
+    "breakthrough": "A feasibility trial of a person-centred, multidisciplinary intervention in general practice bringing together GPs, psychiatrists and patients to address the cardiometabolic risk that accompanies long-term antipsychotic use.",
+    "impact": "Addresses one of the widest and most persistent gaps in primary care: people on long-term antipsychotics die 15 to 20 years earlier than the general population, mostly of cardiovascular disease, and metabolic monitoring rates for this group are poor everywhere it has been measured. A feasibility trial tests whether a shared-care model can be delivered, not whether it changes outcomes.",
+    "practical": "The practical content is unglamorous and effective: blood pressure, lipids, HbA1c and weight at defined intervals, with a route to act on the results that does not require destabilising effective psychiatric treatment. Clozapine and olanzapine carry the highest metabolic burden; switching is a psychiatric decision, so the shared-care route matters.",
+    "link": "BJGP Open - TACTIC cardiovascular risk management in antipsychotic users",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=TACTIC+cardiovascular+risk+management+antipsychotic+general+practice+BJGP+Open",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "Not individually confirmed; the url is a PubMed title search. Added the mortality-gap context and the drug-specific metabolic risk, which make the entry useful regardless. 'Refines primary care guidelines... establishing structured shared-care framework expectations' overstates what a FEASIBILITY trial does, and has been softened — the original did note it was a feasibility trial while simultaneously crediting it with refining guidelines."
+    }
+  },
+  {
+    "title": "Older Black and Hispanic Patients' Perceptions of Medicare Annual Wellness Visits",
+    "journal": "Annals of Family Medicine",
+    "date": "2026",
+    "breakthrough": "A qualitative study by Brown and colleagues examining why uptake of the Medicare Annual Wellness Visit differs by race and ethnicity, identifying structural and educational barriers — prominently, patient confusion about what an AWV is, given that it is a non-procedural planning visit rather than a physical examination.",
+    "impact": "The AWV is free to the beneficiary and is where preventive planning, cognitive screening and advance care planning are supposed to happen, so differential uptake translates fairly directly into differential preventive care.",
+    "practical": "The actionable finding is about pre-visit communication. A patient who books expecting a physical and gets a conversation feels short-changed and may not return; one who is told in advance what the visit is for does not. Qualitative work identifies the barriers — it does not establish that any particular messaging fixes them.",
+    "link": "Annals of Family Medicine - patient perceptions of Medicare Annual Wellness Visits",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Medicare+Annual+Wellness+Visit+Black+Hispanic+older+adults+perceptions+qualitative+Annals+Family+Medicine",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "Not individually confirmed; the url is a PubMed title search. One correction: the original said the study 'provided actionable communication solutions' and 'Prompts health systems to overhaul pre-visit messaging' — a qualitative study surfaces barriers and suggested directions; it does not validate solutions. Framed accordingly."
+    }
+  },
+  {
+    "title": "Dyadic Electronic Medical Record Linkage in Dementia Care",
+    "journal": "Annals of Family Medicine",
+    "date": "2026",
+    "breakthrough": "A Canadian primary care report on linking the electronic medical record of a person living with dementia to that of their primary informal family caregiver, so the pair can be managed as a unit.",
+    "impact": "Recognises what dementia care actually looks like in general practice: the caregiver's health is a determinant of the patient's outcome, and caregiver strain is the commonest precipitant of crisis and of institutionalisation. Most EMRs have no way to represent that relationship.",
+    "practical": "Enables caregiver strain to be tracked, appointments to be aligned, and support to be offered before a crisis. The obvious caution is consent and privacy: linking two adults' records requires explicit, revocable consent from both, and the caregiver is a patient in their own right, not an adjunct to the person they care for.",
+    "link": "Annals of Family Medicine - dyadic EMR linkage in dementia care",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=dyadic+electronic+medical+record+linkage+dementia+caregiver+primary+care+Annals+Family+Medicine",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "Not individually confirmed; the url is a PubMed title search. Added the consent and privacy consideration, which is the first practical obstacle to any record-linkage scheme between two competent adults and was absent from the original. 'Formalizing how family physicians monitor and support caregiver health' softened — a report describing an innovation does not formalise practice."
+    }
+  },
+  {
+    "title": "Pharmaceutical Promotional Payments and General Practice Prescribing Patterns",
+    "journal": "BJGP Open",
+    "date": "2026",
+    "breakthrough": "A longitudinal study by Mulinari and colleagues of payments from pharmaceutical companies to general practices in the UK, examining associations with regional prescribing patterns over time.",
+    "impact": "Adds to a consistent international literature: industry payments to prescribers, including small ones such as meals, are associated with higher prescribing of the promoted product. The association is robust; causal direction is harder to establish from observational payment data.",
+    "practical": "The uncomfortable and well-replicated finding in this field is that clinicians reliably believe payments influence colleagues' prescribing but not their own. That is the reason for institutional conflict-of-interest policy and independent prescribing decision support, rather than reliance on individual self-assessment.",
+    "link": "BJGP Open - promotional payments and general practice prescribing",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Mulinari+pharmaceutical+payments+general+practice+prescribing+BJGP+Open",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "Not individually confirmed; the url is a PubMed title search. Mulinari is an established author on pharmaceutical payment transparency, which is consistent with the attribution. Added the wider literature context and the self-versus-others perception finding, which is what makes the entry actionable. Causal language avoided, since payment-and-prescribing studies are observational."
+    }
+  },
+  {
+    "title": "Primary hrHPV Testing as the Preferred Cervical Cancer Screening Pathway, Including Self-Collection",
+    "journal": "USPSTF recommendation statement",
+    "date": "2025",
+    "breakthrough": "Primary high-risk HPV testing every 5 years is the preferred modality for average-risk individuals aged 30 to 65, and self-collected hrHPV sampling has been incorporated as an option — sampling that can be done by the patient rather than requiring a speculum examination.",
+    "impact": "Self-collection is the substantive change, because the barrier to cervical screening for many people has never been the test interval but the examination itself. It moves screening toward something that can be completed in a clinic room, or in some programmes at home.",
+    "practical": "Offer self-collection to patients who have declined or deferred speculum screening — the group with the highest cervical cancer risk is people who are underscreened, not people screened at the wrong interval. A positive hrHPV result still requires clinician follow-up with cytology or colposcopy depending on genotype and history, so self-collection changes the sampling step, not the pathway after it.",
+    "link": "USPSTF - cervical cancer screening recommendation",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=USPSTF+cervical+cancer+screening+recommendation+primary+hrHPV+self-collection",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "The primary hrHPV every 5 years pathway for ages 30-65 is long established, and self-collection has been moving into US guidance following FDA authorisations in 2024, so the substance is sound. The specific 2026 'HRSA/USPSTF' document and the joint attribution were not confirmed, and the url is a PubMed title search — HRSA maintains the Women's Preventive Services Guidelines, which is a separate instrument from a USPSTF recommendation, so the combined attribution should be checked. Added that follow-up of a positive result still requires clinician assessment."
+    }
+  }
+]
