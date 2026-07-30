@@ -13,7 +13,7 @@ create extension if not exists pgcrypto;
 create table if not exists public.signups (
   id              uuid primary key default gen_random_uuid(),
   email           text not null,
-  role            text check (role in ('nursing','medical','resident','other')),
+  role            text check (role in ('premed','nursing','medical','resident','professional','nonmedical','other')),
   source          text not null default 'landing',
   status          text not null default 'subscribed'
                     check (status in ('subscribed','unsubscribed','bounced')),
