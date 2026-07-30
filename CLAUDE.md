@@ -378,3 +378,29 @@ on my own judgement. Autonomy is about mechanics, not about medical correctness.
 ## Working branch
 Develop on **`claude/usmle-rounds-codex-module-bmpl61`**. Commit + push there; never push elsewhere
 without explicit permission. Do NOT open a PR unless the user asks.
+
+## Incoming gallery batches — what to check before building
+- **Compare against what is already live first.** Two of the three batches received on 2026-07-30
+  were largely re-sends: 20 of 25 pages, then 10 of 75, were byte-identical to deployed artwork
+  (mean pixel diff <2/255 against the JPEGs is compression noise, not a revision). Diffing first
+  saved rebuilding four galleries. Do it before reading titles.
+- **Page order comes from the `IMAGE n OF 10` header, never from filenames or arrival order.**
+  Every batch so far arrived shuffled. Read the header strip; the fastest way is to crop
+  y≈12–82 from each page and tile them into one contact sheet, then one crop of y≈150–265 for
+  the subtitle titles. Two images to read instead of seventy-five.
+- **I mis-read a contact sheet once and reported two pages as revised when they were not** — the
+  swap was mine (up-19/up-20). If a diff says DIFFERENT, re-check the mapping before believing it.
+- **Check the logo lockup and the header progress dots on every page.** `fix_page_logo.py` redraws
+  the canonical lockup (nephrolithiasis arrived with a ™ variant on pages 5–10). The dots should be
+  ONE filled dot at the current page; C. difficile renders them cumulatively and offset, and AKI
+  pages 2/6/7 and BPH page 2 fill two. Cosmetic, but visible on every card and inconsistent with
+  the other galleries — flag for re-render rather than repainting artwork.
+- **`scripts/build_galleries_from_images.py`** is the post-content-split builder: pages to
+  `assets/<id>/<id>-NN.jpg` q88, thumbs to the flat `gthumbs/` at 320px q82, compact PDF, and the
+  `content/galleries.json` entry plus the id in `real`. `add_gallery.js` predates the split and
+  patches `index.html`, so it no longer applies.
+- **The download PDF embeds pages at 512×768**, matching the live galleries at ~1.1 MB per ten
+  pages. Embedding the full 1024×1536 tripled the size.
+- **54 of 181 conditions have a gallery as of 2026-07-30.** Cardiac, Endocrine, Gastrointestinal
+  and Respiratory are complete; Renal & GU is 6/7 with only `hyponatremia` left.
+  `galleries-staging/GALLERY-GAP.md` is generated from the live app — regenerate it, don't edit it.

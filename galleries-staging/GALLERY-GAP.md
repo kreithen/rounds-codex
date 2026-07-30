@@ -1,6 +1,6 @@
 # Gallery coverage — what still needs artwork
 
-Generated from the live app: **47 of 181 conditions have a gallery**, 134 do not.
+Generated from the live app: **54 of 181 conditions have a gallery**, 127 do not.
 Every gallery currently live is 10 pages at 1024x1536.
 
 ## Summary by category
@@ -14,7 +14,7 @@ Every gallery currently live is 10 pages at 1024x1536.
 | Emergency & Surgical | 0 | 3 |
 | Endocrine | 13 | 0 |
 | Fluids & Electrolytes | 0 | 12 |
-| Gastrointestinal | 11 | 1 |
+| Gastrointestinal | 12 | 0 |
 | Heme & Onc | 0 | 7 |
 | Infectious Disease | 0 | 6 |
 | MSK & Rheum | 0 | 7 |
@@ -24,11 +24,11 @@ Every gallery currently live is 10 pages at 1024x1536.
 | Ophthalmology | 0 | 8 |
 | Pediatrics | 0 | 8 |
 | Psychiatry | 0 | 7 |
-| Renal & GU | 0 | 7 |
+| Renal & GU | 6 | 1 |
 | Respiratory | 10 | 0 |
 | Toxicology | 0 | 9 |
 | Women's Health | 0 | 8 |
-| **total** | **47** | **134** |
+| **total** | **54** | **127** |
 
 ## Conditions needing a gallery
 
@@ -82,10 +82,6 @@ The id in backticks is the folder name to use.
 - [ ] Respiratory Alkalosis — `respiratory-alkalosis`
 - [ ] Hypovolemia / Fluid Volume Deficit — `hypovolemia`
 - [ ] Fluid Volume Overload — `fluid-overload`
-
-### Gastrointestinal (1)
-
-- [ ] C. difficile Colitis — `cdiff`
 
 ### Heme & Onc (7)
 
@@ -189,14 +185,8 @@ The id in backticks is the folder name to use.
 - [ ] Delirium — `delirium`
 - [ ] Suicide Risk Assessment — `suicide`
 
-### Renal & GU (7)
+### Renal & GU (1)
 
-- [ ] Acute Kidney Injury — `aki`
-- [ ] Urinary Tract Infection — `uti`
-- [ ] Chronic Kidney Disease — `ckd`
-- [ ] Nephrolithiasis (Kidney Stones) — `nephrolithiasis`
-- [ ] Hyperkalemia — `hyperkalemia`
-- [ ] Benign Prostatic Hyperplasia — `bph`
 - [ ] Hyponatremia — `hyponatremia`
 
 ### Toxicology (9)
@@ -226,25 +216,20 @@ The id in backticks is the folder name to use.
 
 - Cardiac (13)
 - Endocrine (13)
+- Gastrointestinal (12)
 - Respiratory (10)
 
 ## What to send, and how
 
-Either form works:
+A folder named exactly the condition id, containing `<id>-01` … `<id>-10` plus a
+`titles.json`, or an approved production PDF.
 
-1. **Loose page images** — a folder named exactly the condition id (e.g. `kawasaki/`) containing
-   `kawasaki-01` … `kawasaki-10` plus a `titles.json` mapping page number to title. This is the
-   shape the five GI galleries arrived in.
-2. **An approved production PDF** — one per condition. `scripts/build_gallery.py` renders pages,
-   builds thumbnails and a compact download PDF, and writes the `content/galleries.json` entry.
+Notes that have cost time:
 
-Notes that have cost time before:
-
-- **1024x1536 is the standard.** Pages arriving at 1536x2304 get downscaled rather than shipped mixed;
-  a gallery must be one size throughout.
-- **Page titles are read visually**, not from any footer field — the footer title has been wrong often
-  enough that it is not trusted. If you send `titles.json` I will still check it against the pages.
-- **Thumbnails are generated**, into the flat root-level `gthumbs/` set at 320px q82. Do not point a
-  thumb at a full-size page.
-- **Check the logo lockup on every page.** The production process gets it wrong in a different way most
-  batches; `scripts/fix_page_logo.py` replaces it, but each page needs looking at.
+- **1024x1536, one size per gallery.** Pages at 1536x2304 are downscaled rather than shipped mixed.
+- **Page order is taken from the `IMAGE n OF 10` header, not filenames** — every batch so far has
+  arrived shuffled.
+- **Titles are read visually** from the subtitle under the main heading.
+- **Check the logo lockup on every page.** `scripts/fix_page_logo.py` redraws the canonical one;
+  the nephrolithiasis set arrived with a trademark variant on pages 5-10.
+- **Check the header progress dots.** They should show ONE filled dot at the current page.
