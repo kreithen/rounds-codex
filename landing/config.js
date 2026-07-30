@@ -11,6 +11,6 @@
  * the signup form stays visible but politely says signups aren't open yet.
  */
 window.RC_CONFIG = {
-  SUPABASE_URL: "",       // e.g. "https://abcdefgh.supabase.co"
-  SUPABASE_ANON_KEY: ""   // the "anon / public" key
+  SUPABASE_URL: "https://emdrmxscgmnfxgvimbqn.supabase.co",
+  SUPABASE_ANON_KEY: "sb_publishable__vlY1vTmGdsNj1zsKTU3Ag_Fleh3Hth"  // publishable (public) key
 };
