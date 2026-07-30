@@ -16,15 +16,29 @@ guidelines-staging/
                               fullest account of the method and its limits
 ```
 
-Thirteen specialties live as of 2026-07-30 — **252 entries**: `anes`, `cards`, `derm`, `em`, `ent`,
-`fm`, `im`, `neuro`, `nsg`, `obgyn`, `ophtho`, `ortho`, `path`.
+Sixteen specialties live as of 2026-07-30 — **303 entries**: `anes`, `cards`, `derm`, `em`, `ent`,
+`fm`, `im`, `neuro`, `nsg`, `obgyn`, `ophtho`, `ortho`, `path`, `peds`, `plastics`, `pmr`.
 
-Most carry 10 entries per year. Four do not, and the reason is deliberate: where a development
-appeared in both of a specialty's year lists it is kept on the **earlier** year only, so nothing
-shows under both buttons — `neuro` 2026 has 7, `nsg` and `obgyn` have 8, `path` has 9. The test is
-whether the later year adds a new *result*, not a new description of the same one: OTOF gene therapy
-is on both years because 2025 is the first-in-human restoration and 2026 is durability past 2.5
-years with an extended age range.
+Most carry 10 entries per year. Five do not, for two different reasons.
+
+**Deduplication within a specialty.** Where a development appeared in both of a specialty's year
+lists it is kept on the **earlier** year only, so nothing shows under both buttons — `neuro` 2026 has
+7, `nsg` and `obgyn` have 8, `path` has 9. The test is whether the later year adds a new *result*,
+not a new description of the same one: OTOF gene therapy is on both otolaryngology years because 2025
+is the first-in-human restoration and 2026 is durability past 2.5 years with an extended age range.
+
+**Two near-identical lists for one specialty.** `pmr` has 8 and 3. The two submitted PM&R lists were
+9 of 10 the same studies, so there were only 11 distinct entries, not 20. Each was assigned to the
+year its underlying development actually belongs to, verified by date — three are genuinely 2026 (the
+JOSPT carpal tunnel *Revision 2026*, the April 2026 CorTec Breakthrough Device Designation, the
+Muscle & Nerve 2026 ultrasound-guided EMG work) and eight are 2025 or earlier. Do this rather than
+shipping the same nine studies under both year buttons, and say so in the commit.
+
+**Cross-specialty duplication is allowed and sometimes right.** The same study can appear under two
+specialties when it drives different decisions — TeMPO under orthopaedic surgery (whether to operate)
+and PM&R (what to prescribe); OTOF gene therapy under otolaryngology (the trial data) and paediatrics
+(genetic testing after a failed newborn hearing screen). Write each to its own decision so they do
+not read as copies.
 
 **The unsuffixed file is always the canonical one.** When corrections are approved, the original
 is renamed `-submitted` and the corrected version takes the plain name, so a later
@@ -102,13 +116,13 @@ Plus one staging-only field:
   false positive. Same failure mode as the base64 `NaN` in `audit_app_e2e.js`: an over-broad pattern
   reporting a defect that isn't there.
 
-## What 252 checked citations look like
+## What 303 checked citations look like
 
-Across thirteen specialties the failure mode was consistent and worth knowing before trusting any
+Across sixteen specialties the failure mode was consistent and worth knowing before trusting any
 similar list: **plausible trial acronyms attached to sound clinical reasoning, with negative trials
-rendered positive.** 20 of 252 entries stated the opposite of the published result; 11 cited studies
-that could not be found; 14 named the wrong study; 2 described two-patient case reports as trials;
-60 could not be resolved to a citation at all. Only 10 needed no correction.
+rendered positive.** 23 of 303 entries stated the opposite of the published result; 16 cited studies
+that could not be found; 18 named the wrong study; 2 described two-patient case reports as trials;
+60 could not be resolved to a citation at all. Only 11 needed no correction.
 
 The teaching was usually defensible — it was the *sourcing* that failed. So verify the citation even
 when the clinical claim reads as obviously correct, and be most suspicious of an entry whose
@@ -120,13 +134,29 @@ Three refinements from the later specialties:
   over correct body text survives a skim: "Microfracture & Gene Therapy Scaling" on an otology
   entry, and a real AAO-HNS rhinosinusitis guideline credited to **AAOS**, the orthopaedic academy.
   Read the title against its own body before checking either against a source.
-- **A repeated suspicious name is not automatically the same error.** `amivantamab` was a wrong-drug
-  title twice (neurology, ophthalmology) and I expected the third occurrence in ENT to be another —
-  it is real, with OrigAMI-4 (ORR 56%, n=39) and phase 3 OrigAMI-5 in HNSCC. Check every occurrence.
+- **A repeated suspicious name is not automatically the same error, and an odd drug name is not
+  automatically wrong.** `amivantamab` was a wrong-drug title twice (neurology, ophthalmology) and I
+  expected the third occurrence in ENT to be another — it is real, with OrigAMI-4 (ORR 56%, n=39) and
+  phase 3 OrigAMI-5 in HNSCC. I then flagged `nivobotulinumtoxinA` as a garbled version of
+  relabotulinumtoxinA; it too is real, with two phase 3 trials of its own. Check every occurrence
+  rather than pattern-matching on suspicion.
 - **The most dangerous entry is not the fabricated one, it is the plausible permission.** The single
   worst item found was orthopaedics 2026 #7, which cited a registry that does not exist to support
   waiting until morning to fix a geriatric hip fracture. Nothing about it reads as invented, and a
-  resident could have acted on it against guidance requiring surgery inside 24 hours.
+  resident could have acted on it against guidance requiring surgery inside 24 hours. Two later
+  entries were the same shape: omalizumab described as easing "reliance on strict food avoidance"
+  (it does not — a family acting on that could feed a child an allergen), and clinical-grade
+  **exosomes** presented as established surgical adjuncts when no exosome product has FDA approval
+  for aesthetic use, administering unapproved biologics violates federal law, and reported harms
+  include blindness and tumour formation.
+- **Check the regulatory tier of anything an entry recommends.** A Breakthrough Device Designation
+  is not a clearance (CorTec BCI, Paige PanCancer Detect); a bill is not law (the PREA reforms); an
+  industry-commissioned Delphi is not a guideline (GLP-1 aesthetics, sponsored by Galderma). Each
+  arrived described as the stronger thing.
+- **Diagnostic thresholds get swapped between classification systems.** The faltering-weight entry
+  quoted the ASPEN/AND paediatric *malnutrition* severity bands (−1/−2/−3 z) as the AAP/NASPGHAN
+  *diagnostic* criteria, which are < −1.65 z, or velocity < −2 z under age 2, or a ≥1 z decline. Both
+  are real z-score systems for child growth, which is exactly why the substitution survives a skim.
 
 ## When a `verify.status` is written badly, the physician meets the worst entries last
 

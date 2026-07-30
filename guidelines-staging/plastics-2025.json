@@ -1,0 +1,142 @@
+[
+ {
+  "title": "Apixaban versus Enoxaparin for VTE Chemoprophylaxis After Microsurgical Breast Reconstruction",
+  "journal": "Plastic and Reconstructive Surgery",
+  "date": "2025",
+  "breakthrough": "A single-centre, blinded randomised controlled trial compared oral apixaban against subcutaneous enoxaparin for venous thromboembolism chemoprophylaxis in high-risk breast cancer patients undergoing microsurgical breast reconstruction with free abdominal flaps. Apixaban was found to be a safe fixed-dose oral option in this population. The rationale is practical: enoxaparin requires weight-based dosing, factor Xa monitoring to confirm therapeutic levels, and subcutaneous injection — each a route to breakthrough VTE through under-dosing or non-adherence.",
+  "impact": "Addresses the compliance problem rather than the pharmacology. A patient recovering at home after a free flap is more likely to take a fixed-dose tablet than to self-inject for weeks.",
+  "practical": "Reasonable to consider in the free-flap breast reconstruction patient, with the caveat that this is one blinded randomised trial at one centre. It establishes safety in this specific operation and population; it does not license substituting apixaban across plastic surgery generally, and it was not powered to detect a difference in VTE events.",
+  "link": "Plastic and Reconstructive Surgery — VTE chemoprophylaxis in plastic surgery: a randomized controlled trial of apixaban versus enoxaparin",
+  "url": "https://journals.lww.com/plasreconsurg/abstract/10.1097/prs.0000000000012168~venous-thromboembolism-chemoprophylaxis-in-plastic-surgery-a",
+  "verify": {
+   "status": "matched with corrections — real, scope and evidence level narrowed",
+   "note": "Verified: Plastic and Reconstructive Surgery, NCT04504318, a single-centre blinded randomised trial of apixaban versus enoxaparin in women undergoing microsurgical breast reconstruction with free abdominal flaps, concluding apixaban is a safe fixed-dose oral agent. The submission's rationale — weight-based dosing, factor Xa monitoring and injection burden with enoxaparin — checks out. TWO CORRECTIONS. (1) SCOPE: submitted as a trial in 'high-risk plastic and reconstructive surgery patients'; it is one operation in one population at one centre, and generalising it across plastic surgery is not supported. (2) EVIDENCE LEVEL: the submission calls it 'level-1 evidence supporting oral anticoagulation options without increasing post-operative hematoma or surgical-site bleeding risks' that 'directly challenges traditional surgical protocols'. The reported conclusion is safety; a single-centre trial not powered for VTE events does not overturn a protocol, and the entry says so."
+  }
+ },
+ {
+  "title": "International Delphi Consensus on Aesthetic Management of Medication-Driven Weight Loss",
+  "journal": "Journal of Cosmetic Dermatology",
+  "date": "2025",
+  "breakthrough": "Nikolis and colleagues published the first international multidisciplinary Delphi consensus on the facial and soft-tissue changes of GLP-1 receptor agonist-driven weight loss. Facial fat compartments are affected differentially, with the deepest losses in the medial cheek, sub-orbicularis oculi and temporal fat pads, alongside increased skin laxity and more pronounced folds. The panel reached agreement that non-surgical aesthetic treatment should begin during active weight loss rather than waiting for weight to stabilise.",
+  "impact": "The timing recommendation is the substantive output. Conventional practice waited for a stable weight before intervening; the consensus position is that intervening during the loss prevents changes that are harder to correct afterwards.",
+  "practical": "Know which compartments to assess — medial cheek, SOOF and temporal — because that is where volume goes first and where over-filling of the wrong area is most visible. Note two things about the source: it was commissioned by Galderma, a manufacturer of the biostimulator and filler products the consensus discusses, and it is expert opinion by construction rather than trial evidence. Note also that the timing advice concerns NON-SURGICAL treatment during weight loss and does not contradict waiting for weight stability before body-contouring surgery.",
+  "link": "Journal of Cosmetic Dermatology — consensus statements on managing aesthetic needs in prescription medication-driven weight loss patients",
+  "url": "https://onlinelibrary.wiley.com/doi/10.1111/jocd.70094",
+  "verify": {
+   "status": "matched with corrections — journal wrong, sponsorship disclosed, key recommendation added",
+   "note": "Verified: Nikolis et al. 2025, an international multidisciplinary Delphi study described as the only published international expert consensus on this topic, PMID 40135477. THREE CORRECTIONS. (1) JOURNAL: published in the Journal of Cosmetic Dermatology (doi 10.1111/jocd.70094); the submission's link points at PubMed/Aesthetic Surgery Journal. (2) The consensus recommendation that aesthetic treatment should begin DURING active weight loss rather than after stabilisation was missing from the submission and is its most actionable output. (3) CONFLICT OF INTEREST: the Delphi study was commissioned by Galderma, which manufactures the biostimulators and fillers the consensus addresses. That belongs in the entry, since the consensus recommends the sponsor's product class. Added the specific fat compartments, and a note that the timing advice applies to non-surgical treatment so it does not read as contradicting the weight-stability requirement before contouring surgery. The submission's '3D volumetric analysis with photo-numeric scales' assessment standard was not confirmed and is not asserted."
+  }
+ },
+ {
+  "title": "Extended Antibiotic Prophylaxis in Implant-Based Breast Reconstruction",
+  "journal": "Aesthetic Surgery Journal",
+  "date": "2025",
+  "breakthrough": "A systematic review and meta-analysis compared extended prophylactic antibiotics beyond 48 hours against short-course regimens of 48 hours or less in implant-based breast reconstruction, across 16 studies with 8,173 patients in the extended group and 2,676 in the comparison group. A subgroup analysis of 14 studies and 12,572 patients found no difference in surgical site infection between continuing antibiotics until drain removal and not extending prophylaxis at all.",
+  "impact": "Brings the largest pooled dataset to bear on a practice that persists mainly because the consequence of a periprosthetic infection is losing the reconstruction. The size of the extended-prophylaxis arm shows how routine the practice has become.",
+  "practical": "Stopping prophylaxis within the standard perioperative window is defensible on this evidence, and it avoids Clostridioides difficile, drug toxicity and resistance. Read the literature as evolving rather than closed: earlier meta-analyses did find a significant reduction in infection with extended prophylaxis specifically in implant reconstruction, and individual studies report no reduction in infection but altered resistance patterns when infection does occur. The newest and largest analyses point to no benefit — which is a different statement from benefit having been excluded.",
+  "link": "Aesthetic Surgery Journal — extended antibiotic prophylaxis in implant-based breast reconstruction: systematic review and meta-analysis",
+  "url": "https://academic.oup.com/asj/advance-article-abstract/doi/10.1093/asj/sjaf144/8209517",
+  "verify": {
+   "status": "matched with corrections — supported, with the contrary earlier evidence restored",
+   "note": "Verified: Aesthetic Surgery Journal (doi 10.1093/asj/sjaf144), 16 studies with 8,173 extended-prophylaxis and 2,676 comparison patients, plus a 14-study 12,572-patient subgroup finding no difference in surgical site infection for antibiotics until drain removal. The submission's direction is supported by the most recent evidence. ONE CORRECTION of completeness: the submission presents this as settled ('demonstrating no statistically significant benefit to prolonged post-operative antibiotic therapy'). Earlier meta-analyses found extended prophylaxis DID significantly reduce infection risk in implant reconstruction, and the literature remains mixed, so the entry distinguishes 'newest and largest analyses show no benefit' from 'benefit has been excluded'. This is the same distinction applied to the extended-prophylaxis entry in the orthopaedics list, where the submission had the direction the other way round."
+  }
+ },
+ {
+  "title": "Extracorporeal Shockwave Therapy for Post-Breast-Reconstruction Fibrosis",
+  "journal": "Journal of Plastic, Reconstructive & Aesthetic Surgery",
+  "date": "September 2025",
+  "breakthrough": "A single-blinded randomised controlled trial in 40 women with clinically diagnosed fibrosis after breast reconstruction compared extracorporeal shockwave therapy against sham, delivered in eight sessions twice weekly over four weeks with follow-up at three months. Patients were stratified into fibrosis without radiation, post-radiation fibrosis, and fibrosis with capsular contracture. Statistically significant improvements appeared in both patient-reported and observer-reported domains — fibrosis size, tissue softness, pain and shoulder mobility.",
+  "impact": "Offers a non-operative option for a problem whose usual answer is revision capsulectomy, and the shoulder mobility result matters because radiation fibrosis restricts the shoulder as much as it distorts the breast.",
+  "practical": "Reasonable to trial before offering revision surgery for radiation fibrosis or capsular contracture, over a four-week course. Weigh the design honestly: 40 patients, three-month follow-up, and the trial was SINGLE-blinded — patients were blinded but the clinicians delivering treatment were not, which matters because observer-reported outcomes were among those that improved. Durability beyond three months is unknown.",
+  "link": "JPRAS — extracorporeal shockwave therapy improves post-breast reconstruction fibrosis: a randomized controlled blinded clinical trial",
+  "url": "https://www.jprasurg.com/article/S1748-6815(25)00533-9/abstract",
+  "verify": {
+   "status": "corrected — described as double-blind; it is single-blinded",
+   "note": "Verified: JPRAS September 2025, S1748-6815(25)00533-9, 40 adult women, ESWT versus sham, eight sessions twice weekly over four weeks, three-month follow-up, stratified into three fibrosis categories, with significant patient- and observer-reported improvement in fibrosis size, softness, pain and shoulder mobility. TWO CORRECTIONS. (1) BLINDING: the submission calls it 'a double-blind, randomized controlled trial'. It is SINGLE-blinded — participants were blinded, clinicians administering the therapy were not, because the intervention is procedural. Since observer-reported domains were among the outcomes that improved, unblinded assessors are a real limitation and the entry states it. (2) The submission says the trial 'introduces a non-surgical management algorithm'; no algorithm was published — it is a trial result. Added n=40 and the three-month follow-up limit, since the submission implies an established office protocol."
+  }
+ },
+ {
+  "title": "NivobotulinumtoxinA for Glabellar Lines With or Without Lateral Canthal Lines",
+  "journal": "Two phase 3 clinical trials",
+  "date": "2024 to 2025",
+  "breakthrough": "Two multicentre, double-blind, randomised phase 3 trials evaluated nivobotulinumtoxinA — a ready-to-use liquid botulinum toxin type A — in moderate-to-severe glabellar lines (Study 001) and in glabellar plus lateral canthal lines (Study 005). The formulation requires no reconstitution, has a shelf life of up to 36 months, and contains no human serum albumin as a stabiliser.",
+  "impact": "Removes reconstitution from the workflow, which is where dosing error and contamination enter an aesthetic practice. The absence of human serum albumin is a distinct advantage for patients who decline blood-derived excipients.",
+  "practical": "Do not confuse it with relabotulinumtoxinA, which is a different ready-to-use liquid toxin with its own phase 3 programme (READY-1 and READY-2, using PEARL manufacturing). Both eliminate reconstitution, and unit-for-unit interchangeability between botulinum toxin products should never be assumed — dosing is product-specific.",
+  "link": "NivobotulinumtoxinA in the treatment of glabellar lines with or without concurrent treatment of lateral canthal lines in two phase 3 clinical trials",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/39587780/",
+  "verify": {
+   "status": "matched with corrections — the unusual drug name is genuine",
+   "note": "VERIFIED, AND A SUSPICION OF MINE WAS WRONG AGAIN. I flagged 'nivobotulinumtoxinA' as a probable garbled drug name, since the well-known ready-to-use liquid toxin is relabotulinumtoxinA. Nivobotulinumtoxin A is real: PMID 39587780, PMC11913111, two multicentre phase 3 double-blind randomised trials, Study 001 in glabellar lines and Study 005 in glabellar plus lateral canthal lines. This is the second time in this review that a name I expected to be an error turned out to be a genuine agent, after amivantamab in head and neck cancer. TWO ADDITIONS: the 36-month shelf life and the absence of human serum albumin, which are the actual distinguishing features and are missing from the submission; and an explicit warning not to conflate it with relabotulinumtoxinA (READY-1/READY-2), a separate product whose programme the submission's description could easily be read as. Added that toxin units are not interchangeable between products, which is the practical hazard when two similar liquid formulations reach the market together."
+  }
+ },
+ {
+  "title": "Statistical Fragility of Acellular Dermal Matrix Outcomes in Breast Reconstruction",
+  "journal": "Plastic and Reconstructive Surgery",
+  "date": "2024 to 2025",
+  "breakthrough": "A systematic review applied the fragility index, reverse fragility index and fragility quotient to randomised controlled trials of acellular dermal matrix in breast reconstruction. Of 33 studies screened, 19 randomised trials contributing 204 outcomes were included. The median fragility index was 4 (IQR 3 to 5) with a fragility quotient of 0.039. Among the 26 outcomes that reached statistical significance, the median fragility index was 3.5 (IQR 1 to 5).",
+  "impact": "A median fragility index of 3.5 among the significant outcomes means that changing the result in three or four patients would erase the statistical significance. That is the entire evidentiary basis on which a costly material is used routinely.",
+  "practical": "Treat published ADM complication advantages as provisional and select patients on the factors that actually predict trouble — flap thickness, smoking, radiation history — rather than on an assumption of general superiority. The paper's own recommendation is that authors report fragility index and quotient alongside p values, which is also a useful habit when reading any small surgical trial: ask how many events the conclusion rests on.",
+  "link": "Statistical fragility of outcomes on breast reconstruction with acellular dermal matrix: a systematic review of randomized controlled trials",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/39356685/",
+  "verify": {
+   "status": "matched with corrections — supported, with the numbers that make the point added",
+   "note": "Verified: 33 studies screened, 19 randomised trials, 204 outcomes, median fragility index 4 (IQR 3-5), fragility quotient 0.039, and among the 26 significant outcomes a median fragility index of 3.5 (IQR 1-5), with the conclusion that ADM outcomes are statistically fragile. ONE ADDITION and ONE SOFTENING. The numbers were missing from the submission and are the whole argument — a median fragility index of 3.5 means three or four patients changing outcome would remove significance, which is far more persuasive than the phrase 'high statistical fragility'. And the submission says the paper 'prompts a re-evaluation of routine ADM utilization guidelines'; the paper's stated recommendation is methodological (report fragility metrics with p values), with the clinical inference belonging to the reader — reworded accordingly, keeping the submission's sound patient-selection advice."
+  }
+ },
+ {
+  "title": "Lymphaticovenous Anastomosis for Lower Extremity Lymphedema: Outcomes and Postoperative Compression",
+  "journal": "Case series and cohort studies",
+  "date": "2017 to 2025",
+  "breakthrough": "Published LVA series report modest but real volume benefit: in one cohort of 100 consecutive patients undergoing 132 anastomoses followed to 24 months, and in another of 45 patients with unilateral lower limb lymphedema of whom 78% were clinical stage 3, lower extremity lymphedema index fell by around 7% at 1 month, 8% at 3 months and 6% at 6 months. Postoperative care in these series used compression — custom-fabricated stockings from about one week, or class III garments at 30 to 40 mmHg, worn at least during daytime activity. LVA also reduces lymphedema-associated pain.",
+  "impact": "Sets realistic expectations for a technically demanding supermicrosurgical operation. Single-digit percentage reductions in limb volume index, sustained, are the documented benefit — not decongestion.",
+  "practical": "Compression continues after surgery; LVA does not replace it, and patients expecting to stop garments should be told so before consenting. Two things frequently claimed for this operation are not established: there is no validated operative quality metric based on a minimum number of micro-anastomotic sutures, and automated postoperative pneumatic drainage has not been shown in a trial to improve limb volume outcomes after LVA.",
+  "link": "Outcomes following lymphaticovenous anastomosis (LVA) for 100 cases of lymphedema: results over 24-months follow-up",
+  "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7568701/",
+  "verify": {
+   "status": "NOT FOUND as described — no LVA-PLD trial, real series substituted",
+   "note": "The submitted citation could not be verified. It describes an 'LVA-PLD Trial', a multicentre trial in BMJ Open establishing operative quality metrics such as minimum micro-anastomotic stitch counts paired with early automated pneumatic drainage, and claims it 'standardizes supermicrosurgical quality benchmarks and postoperative compression timing within lymphedema clinical management guidelines'. No trial of that name, no such BMJ Open publication, and no stitch-count quality benchmark were found. Substituted with the documented LVA literature: a 100-patient/132-anastomosis series with 24-month follow-up, a 45-patient cohort, lower extremity lymphedema index reductions of roughly 6-8% at 1 to 6 months, standard postoperative compression with class III garments or custom stockings, and reduction in lymphedema-associated pain. The entry states explicitly that neither the stitch-count metric nor a pneumatic-drainage benefit is established, because both would otherwise be quoted as standards. Expectation-setting added, since single-digit index reductions are far from what patients typically anticipate."
+  }
+ },
+ {
+  "title": "International Expert Consensus on Enhancing Graft Survival in Follicular Unit Excision",
+  "journal": "Plastic and Reconstructive Surgery",
+  "date": "December 2025",
+  "breakthrough": "An international expert panel issued recommendations across seven clinical domains of follicular unit excision: preoperative preparation, graft harvest, external dissection and trimming, graft preservation, graft implantation, postoperative care and complication prevention. Graft survival — the metric by which FUE outcomes are judged — can be materially improved by standardising the perioperative process rather than by any single technical change.",
+  "impact": "Reframes hair transplant outcome as a process problem. Survival depends on the accumulated handling of thousands of grafts, so consistency across all seven domains matters more than the choice of any one instrument.",
+  "practical": "Punch size is the trade-off to understand: smaller punches of 0.7 to 0.9 mm reduce donor scar visibility but raise transection rates if the punch is misaligned with the follicular angle or hair fold. Complication risk is driven by both patient factors — comorbidity, smoking, concurrent medication — and technical variables including punch design, graft handling, follicular unit density and ischaemia time, which is the variable most under the team's control.",
+  "link": "Plastic and Reconstructive Surgery — enhancing graft survival rates in follicular unit excision: international expert consensus",
+  "url": "https://journals.lww.com/plasreconsurg/abstract/2025/12000/enhancing_graft_survival_rates_in_follicular_unit.7.aspx",
+  "verify": {
+   "status": "matched with corrections — real, specific parameters not confirmed",
+   "note": "Verified: Plastic and Reconstructive Surgery, December 2025, an international expert consensus giving recommendations across seven clinical issues in FUE — preoperative preparation, graft harvest, external dissection and trimming, graft preservation, graft implantation, postoperative care and complication prevention. The submission's 'all seven key phases' framing matches. ONE CORRECTION: the submission asserts that the consensus establishes 'definitive international standards for preoperative donor preparation, harvest punch velocity, chilled holding media formulation, and micro-site depth controls'. Those specific parameters could not be confirmed as the consensus content, so the seven verified domains are named instead, together with the punch-size trade-off (0.7-0.9 mm reducing scar visibility but increasing transection when misaligned) and the ischaemia-time point, which are documented and actionable. 'Definitive' is also softened — this is expert consensus, not trial evidence."
+  }
+ },
+ {
+  "title": "Perioperative Management of GLP-1 Receptor Agonists in Surgical Patients",
+  "journal": "Multisociety clinical practice guidance, with plastic surgery-specific reviews",
+  "date": "2024 to 2026",
+  "breakthrough": "Multisociety guidance from the ASA, American Gastroenterological Association, ASMBS, the International Society for the Perioperative Care of Patients with Obesity and SAGES concluded that MOST patients can CONTINUE GLP-1 receptor agonists before elective surgery, with mitigation strategies and individual risk stratification rather than a blanket hold. Where holding is judged necessary after shared decision-making, the suggestion is to omit the dose on the day of surgery for daily formulations and one week before for weekly ones. Prospective ultrasound studies show more residual gastric content in GLP-1 users, particularly during dose escalation or when GI symptoms are present, and case reports document perioperative aspiration in semaglutide users including hypoxaemia and reintubation despite guideline-concordant fasting. Weekly formulations carry the strongest association with delayed gastric emptying.",
+  "impact": "Replaces a reflexive hold with risk stratification, which matters because stopping a GLP-1 agonist before elective surgery has its own cost in glycaemic control and in weight regain before a contouring operation.",
+  "practical": "The ASA position gives two concrete rules. Delay the elective procedure if the patient has GI symptoms on the day — nausea, vomiting, retching, bloating or abdominal pain. If there are no GI symptoms but the drug was not held as advised, gastric ultrasound may be used to assess volume and clear the patient. Dose escalation is the highest-risk window. Note that fasting to guideline does not exclude a full stomach in these patients.",
+  "link": "Multisociety clinical practice guidance for the safe use of GLP-1 receptor agonists in the perioperative period",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11666732/",
+  "verify": {
+   "status": "corrected — the guidance is not a hold protocol, which is how it was submitted",
+   "note": "Real and important, but the emphasis is close to inverted. The submission describes 'perioperative hold guidelines specifically tailored to elective cosmetic and body contouring procedures' and 'clear preoperative protocols on when to hold GLP-1 medications'. The multisociety guidance (ASA, AGA, ASMBS, ISPCOP, SAGES) concluded that MOST PATIENTS CAN CONTINUE these drugs before elective surgery, using mitigation and individual risk stratification; holding is a shared decision, and only then is the day-of/one-week-before suggestion applied. A surgeon operating from the submitted version would stop these drugs unnecessarily. Rewritten to the actual position, with the two ASA operational rules (delay if GI symptoms present; gastric ultrasound if unheld and asymptomatic) and the evidence behind the concern (residual gastric content on prospective ultrasound, aspiration case reports despite adequate fasting, weekly formulations worst). NOTE ON AN INTERNAL CONTRADICTION: the 2026 list asserts 'strict anesthesia holds prior to elective surgery' as a standardised protocol, which conflicts with this guidance; that entry has been corrected to match."
+  }
+ },
+ {
+  "title": "Prehabilitation in Plastic Surgery",
+  "journal": "Surgeries (MDPI)",
+  "date": "2025 to 2026",
+  "breakthrough": "A review sets out a multimodal prehabilitation model for plastic and reconstructive surgery built on ERAS principles: medical optimisation, supervised and home-based exercise, personalised nutrition, smoking cessation counselling and psychological support, delivered in the weeks before operation.",
+  "impact": "Identifies a population that should benefit disproportionately — plastic surgery patients carry a high burden of exactly the modifiable risks prehabilitation targets, chiefly smoking, obesity and malnutrition.",
+  "practical": "Worth building for the high-risk patient: post-bariatric body contouring, irradiated free flaps, complex microsurgery. But be clear about what supports it. There are no randomised controlled trials of prehabilitation in plastic surgery. The commonly quoted 20 to 40% reductions in complications come from randomised trials and systematic reviews in orthopaedic and colorectal surgery, are heterogeneous and context-dependent, and are extrapolated to this specialty rather than demonstrated in it. Smoking cessation is the component with the strongest independent evidence and the one to prioritise if only one is achievable.",
+  "link": "Surgeries — prehabilitation in plastic surgery: optimizing patients for superior surgical outcomes",
+  "url": "https://doi.org/10.3390/surgeries7010037",
+  "verify": {
+   "status": "corrected — the benefit is extrapolated, not demonstrated in plastic surgery",
+   "note": "The review is real (Surgeries, doi 10.3390/surgeries7010037) and its components are accurately described: exercise, nutritional optimisation, risk factor modification and psychological preparation within an ERAS framework. THE KEY CORRECTION is what the review itself states and the submission omits: there have been NO randomised controlled trials of prehabilitation in plastic surgery. The submission claims the model 'demonstrably reduces wound breakdown and length of hospital stay' — that is not demonstrated in this specialty. The 20-40% complication reductions come from orthopaedic and colorectal trials in higher-risk populations, are heterogeneous, and are extrapolated. Corrected, with smoking cessation flagged as the component with independent evidence, so the entry remains actionable rather than merely deflating."
+  }
+ }
+]

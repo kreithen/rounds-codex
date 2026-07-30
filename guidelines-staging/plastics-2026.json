@@ -1,0 +1,142 @@
+[
+ {
+  "title": "Body Contouring After GLP-1-Driven Weight Loss",
+  "journal": "Practice pattern, drawing on perioperative GLP-1 guidance",
+  "date": "2026",
+  "breakthrough": "Widespread GLP-1 receptor agonist use has produced a distinct surgical population: large-volume weight loss with substantial skin redundancy and no bariatric operation in the history. The operations are multi-planar — extended abdominoplasty, fleur-de-lis patterns, circumferential body lift — and the preoperative work centres on weight stability, nutritional screening for micronutrient deficiency, and anaesthetic risk assessment.",
+  "impact": "The reconstructive problem is familiar from post-bariatric practice; the metabolic and nutritional context is not. Rapid pharmacological weight loss without surgical malabsorption still produces protein and micronutrient inadequacy through reduced intake alone.",
+  "practical": "Two things to get right. Weight stability before contouring is a sound requirement — a commonly used threshold is around six months, though it is a practice convention rather than a validated cut-off. And on the anaesthetic question, do NOT apply a blanket preoperative hold: multisociety guidance from the ASA and partner societies is that most patients can continue GLP-1 agonists before elective surgery with risk stratification, that holding is a shared decision, and that the operational rules are to delay if GI symptoms are present on the day and to consider gastric ultrasound if the drug was not held. Screen nutrition — albumin, prealbumin, iron, B12, vitamin D — before a long contouring case.",
+  "link": "Multisociety clinical practice guidance for the safe use of GLP-1 receptor agonists in the perioperative period",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11666732/",
+  "verify": {
+   "status": "corrected — the anaesthetic protocol contradicts the actual guidance",
+   "note": "The clinical phenomenon and the operative approaches are real and uncontroversial. ONE SUBSTANTIVE CORRECTION: the submission states that 'standardized perioperative protocols now require... strict anesthesia holds prior to elective surgery'. That is not the guidance. The multisociety statement (ASA, AGA, ASMBS, ISPCOP, SAGES) concluded most patients can CONTINUE GLP-1 receptor agonists before elective surgery with mitigation and individual risk stratification; a hold is a shared decision, and the operational rules are symptom-based delay plus gastric ultrasound where appropriate. This also contradicted the 2025 list's own entry on the same topic, so both have been aligned to the guidance. The six-month weight stabilisation figure is a reasonable practice convention and is labelled as one rather than as a validated requirement, since I could not verify a specific evidence-based threshold. Specific nutritional tests added to make the screening advice actionable."
+  }
+ },
+ {
+  "title": "Anatomy-First Sizing and Hybrid Breast Augmentation",
+  "journal": "Practice pattern",
+  "date": "2026",
+  "breakthrough": "A shift away from maximal implant volume toward implants sized to the individual chest and breast footprint, combined with autologous fat grafting to refine contour — hybrid augmentation. Placement choices have moved with it, away from routine submuscular positioning.",
+  "impact": "Trades absolute volume for a result that moves naturally and does not animate with pectoral contraction, which is what patients who exercise increasingly ask for.",
+  "practical": "Above-muscle placement avoids animation deformity and pectoral discomfort but demands adequate soft-tissue cover, so it is a selection question rather than a default. Counsel realistically on fat grafting: retention is variable and partial, a second session is common, and grafted fat can produce calcifications and cysts that complicate later breast imaging — which means documenting the grafting and telling the patient to disclose it at every future mammogram. Note that this is a practice trend rather than a guideline change; no clinical practice guideline was found endorsing a specific plane or a hybrid technique.",
+  "link": "ASPS — plastic surgery trends and techniques",
+  "url": "https://www.plasticsurgery.org/for-medical-professionals",
+  "verify": {
+   "status": "corrected — a practice trend described as a guideline update",
+   "note": "The trend is real and widely described. TWO CORRECTIONS. (1) The submission says this 'updates clinical practice guidelines to favor subglandular or prepectoral placement alongside micro-fat grafting'. No clinical practice guideline endorsing a specific plane or hybrid technique was found; this is an evolution in practice, and the entry says so. Terminology also matters here — 'prepectoral' is the standard term in implant-based reconstruction, while subglandular or subfascial describes above-muscle placement in cosmetic augmentation, and the submission uses them interchangeably. (2) The submission's claim of 'minimizing implant-related complications and revision surgeries over time' is not established for hybrid augmentation. ADDED, because the submission omits it and it has real downstream consequences: grafted breast fat can generate calcifications and cysts that complicate subsequent mammography, so the grafting must be documented and disclosed at future imaging."
+  }
+ },
+ {
+  "title": "Regenerative Adjuncts in Aesthetic Surgery: PRF and Nanofat Are Not Exosomes",
+  "journal": "Aesthetic Surgery Journal and FDA safety communications",
+  "date": "2026",
+  "breakthrough": "Three things routinely grouped together as \"regenerative aesthetics\" have entirely different regulatory and safety positions. Platelet-rich fibrin and nanofat are autologous, prepared at the point of care from the patient's own blood or fat, and are used as surgical adjuncts. Exosome products are different: no exosome product has completed FDA approval for aesthetic use, administering unapproved biologics is a violation of federal law, and the FDA has issued multiple public safety notifications and warning letters to manufacturers, distributors and administering physicians.",
+  "impact": "The grouping is the hazard. A surgeon who accepts \"biologics enhance graft retention\" as a single proposition may adopt a product class that carries legal and licensure jeopardy alongside two that do not.",
+  "practical": "Reported harms from exosome products include blindness, tumour formation and infection, typically arising from non-sterile or mischaracterised preparations, absent cGMP compliance, or minimally processed material mislabelled as purified exosomes. Administering an unapproved product marketed with medical claims has been characterised as outside the standard of care and as unprofessional conduct that places a licence at risk. Autologous PRF and nanofat remain defensible adjuncts; if you want exosomes, the route is a registered clinical trial.",
+  "link": "Aesthetic Surgery Journal — exosomes in aesthetic medicine: an overview",
+  "url": "https://academic.oup.com/asj/article/46/Supplement_1/S1/8512048",
+  "verify": {
+   "status": "REVERSED — an unapproved, FDA-warned product class was presented as established practice",
+   "note": "THE MOST SERIOUS CORRECTION IN THIS BATCH. The submission groups 'clinical-grade exosomes' with PRF and nanofat, states that their integration 'Establishes formal clinical protocols for combining biologics with traditional surgical operations to enhance graft retention and accelerate flap vascularization', and concludes it 'improves long-term skin quality, texture, and graft viability'. The regulatory reality is the opposite: NO exosome product has FDA approval for aesthetic use, administering unapproved biologic products violates federal law, and the FDA has issued multiple public safety notifications and warning letters covering manufacturers, distributors and administering physicians. Reported adverse events include blindness, tumour formation and infection. Administering such a product with medical claims has been described as outside the standard of care and a licensure risk. The submitted entry would have encouraged a physician into legal and professional jeopardy as well as exposing patients to harm — which is why it has been rewritten as a warning that separates the autologous adjuncts from the unapproved product class rather than merely softened. PRF and nanofat are autologous and point-of-care and remain reasonable; that part of the submission is kept."
+  }
+ },
+ {
+  "title": "Conservative Facial Rejuvenation: Deep-Plane and Minimal-Access Techniques",
+  "journal": "Practice pattern",
+  "date": "2026",
+  "breakthrough": "Facial rejuvenation has moved toward repositioning the superficial musculoaponeurotic system rather than excising skin under tension, using deep-plane dissection and minimal-access approaches such as MACS suspension, with the aim of preserving natural facial movement.",
+  "impact": "Addresses the failure mode of the previous generation of facelifts. Pulling skin produces a face that looks operated on and relapses; repositioning the SMAS layer that descended in the first place addresses the anatomy that changed.",
+  "practical": "Understand that deep-plane and MACS are different operations rather than variants of one approach — a deep-plane lift releases specific retaining ligaments and carries facial nerve risk in defined zones, while MACS is a short-scar purse-string suspension with a different indication and a more limited effect. Neither is universally 'shorter': deep-plane dissection is technically demanding and not intrinsically quicker than a skin-only lift. Selection is by anatomy and degree of descent, not by preference for a label.",
+  "link": "ASPS — aesthetic facial rejuvenation",
+  "url": "https://www.plasticsurgery.org/for-medical-professionals",
+  "verify": {
+   "status": "corrected — two distinct operations conflated, and one claim not supported",
+   "note": "The trend toward SMAS repositioning over skin excision is real and well established in the specialty. TWO CORRECTIONS. (1) The submission groups 'targeted Minimal Access Cranial Suspension (MACS) and deep-plane mini-facelifts' as a single conservative approach. They are different operations with different dissections, different risk profiles and different indications — MACS is a short-scar suspension technique, deep-plane involves releasing retaining ligaments with facial nerve risk in defined zones. Treating them as interchangeable would misinform a trainee about both. (2) The submission claims 'shorter operative times and faster recoveries'; deep-plane dissection is technically demanding and not intrinsically faster than a skin-only lift, and no source was found supporting shorter operative time for the deep-plane approach. No guideline change underlies this entry — it is a practice pattern, which the entry now reflects."
+  }
+ },
+ {
+  "title": "AI-Assisted 3D Preoperative Simulation and Tissue Mapping",
+  "journal": "Practice pattern",
+  "date": "2026",
+  "breakthrough": "Three-dimensional volumetric scanning combined with algorithmic modelling is being used to simulate soft-tissue outcomes, inform implant dimension and graft volume selection, and show patients a projected result before surgery.",
+  "impact": "Its clearest value is in the consultation. A shared visual reference makes the difference between what a patient wants and what their anatomy allows discussable before an operation rather than after it.",
+  "practical": "Use it for expectation-setting and record it as part of the consent conversation, but do not present a simulation as a prediction — soft-tissue behaviour, healing and weight change are not modelled reliably, and a patient who was shown an image may reasonably expect to receive it. The claim that simulation 'significantly lowers revision rates' has not been demonstrated; no outcome study establishing that was found, and any such claim should not be made to a patient.",
+  "link": "ASPS — plastic surgery trends and techniques",
+  "url": "https://www.plasticsurgery.org/for-medical-professionals",
+  "verify": {
+   "status": "corrected — the outcome claim is unsupported and creates a consent risk",
+   "note": "The technology is real and in use. ONE CORRECTION, with a practical edge: the submission says AI-assisted simulation 'significantly lowers revision rates'. No study demonstrating a reduction in revision rates was found, and this is precisely the kind of claim that becomes a problem in a dissatisfied-patient conversation — a simulation shown during consultation can be understood by the patient as a promise of outcome. The entry keeps the genuine benefit (shared expectation-setting, documented in consent) and states plainly that predictive accuracy for soft-tissue settlement is not established. No guideline standardises preoperative planning protocols around these tools, contrary to the submission's guideline-impact line."
+  }
+ },
+ {
+  "title": "Biostimulatory Agents versus Volumising Fillers",
+  "journal": "Practice pattern",
+  "date": "2026",
+  "breakthrough": "A shift from hyaluronic acid fillers that occupy volume toward biostimulatory agents — poly-L-lactic acid and calcium hydroxylapatite — that induce extracellular matrix synthesis, producing gradual structural change rather than immediate augmentation. Diffuse facial and body laxity, including after pharmacological weight loss, is the main indication being reframed this way.",
+  "impact": "The mechanism suits the problem. Where tissue quality has declined across a broad area, stimulating matrix production addresses the cause of the laxity rather than displacing the surface.",
+  "practical": "Biostimulators are not risk-free, and describing them as avoiding filler complications is misleading in a specific way: they carry their own profile of nodule formation, late-onset granuloma and irregularity, and unlike hyaluronic acid they cannot be dissolved with hyaluronidase if the result is wrong. That irreversibility is the trade for durability and should be explicit in consent. Onset is gradual over months, which needs saying before treatment, not after.",
+  "link": "Journal of Cosmetic Dermatology — consensus statements on managing aesthetic needs in medication-driven weight loss patients",
+  "url": "https://onlinelibrary.wiley.com/doi/10.1111/jocd.70094",
+  "verify": {
+   "status": "corrected — the safety comparison omits the trade-off that matters most",
+   "note": "The shift toward biostimulators (poly-L-lactic acid, calcium hydroxylapatite) for diffuse laxity is real and is reflected in the GLP-1 aesthetic consensus on the 2025 list. ONE SUBSTANTIVE CORRECTION: the submission says biostimulators deliver structural restoration 'without risks of filler migration or chronic edema', framing them as the safer option. They have their own adverse-event profile including nodules, late-onset granuloma and contour irregularity, and — the decisive point the submission omits — they are NOT reversible with hyaluronidase, unlike hyaluronic acid fillers. A clinician who adopted these believing them lower-risk would have removed their own safety net. Also softened 'clinical guidelines now recommend biostimulators as primary non-surgical intervention tools': the supporting document is an industry-commissioned expert consensus, not a guideline. Gradual onset added as a consent point."
+  }
+ },
+ {
+  "title": "Preventative Aesthetic Intervention in Younger Patients (\"Prejuvenation\")",
+  "journal": "Practice pattern",
+  "date": "2026",
+  "breakthrough": "Micro-dosed injectable, energy-based and limited surgical interventions are increasingly offered to younger patients with the stated aim of maintaining ligamentous support and slowing the trajectory of facial ageing, rather than correcting established change.",
+  "impact": "Represents a genuine change in who presents for aesthetic care and at what age, and therefore in what a consultation with a young patient has to cover.",
+  "practical": "The premise is unproven. No evidence was found that early micro-dosed intervention prevents later structural laxity, and the concept is a marketing framework as much as a clinical one. Two obligations follow for a younger patient: screen for body dysmorphic disorder and unrealistic expectation, which are more prevalent in this group, and be explicit that early treatment commits them to maintenance for decades. Presenting prevention of ageing as an established benefit is not supportable.",
+  "link": "ASPS — plastic surgery trends and techniques",
+  "url": "https://www.plasticsurgery.org/for-medical-professionals",
+  "verify": {
+   "status": "corrected — the central premise has no supporting evidence",
+   "note": "The trend is real; the mechanism claimed for it is not established. The submission says prejuvenation 'Prevents severe structural laxity from accumulating' and 'Redefines clinical entry thresholds for aesthetic surgery, establishing safety guidelines for early-intervention procedures'. No evidence that early micro-dosed intervention prevents later laxity was found, and no guideline establishing entry thresholds or safety standards for early intervention was located. Since this entry concerns offering procedures to young and often adolescent-adjacent patients on the basis of an unproven preventive claim, the entry states the absence of evidence directly and adds the two screening obligations — body dysmorphic disorder and expectation, and the lifetime maintenance commitment — that the submission omits entirely."
+  }
+ },
+ {
+  "title": "Combining Surgical Correction with Energy-Based Skin Treatment",
+  "journal": "Practice pattern",
+  "date": "2026",
+  "breakthrough": "Single-stage surgical structural correction is increasingly paired with energy-based skin treatment — radiofrequency microneedling, laser resurfacing — either concurrently or in early recovery, on the reasoning that deep laxity and surface quality are separate problems requiring separate tools.",
+  "impact": "Reflects an accurate observation: a well-executed lift repositions tissue but does nothing for dyspigmentation, texture or fine rhytids, and patients judge the result on all of them.",
+  "practical": "Sequencing and safety are the whole question. Concurrent resurfacing over a freshly elevated flap risks the blood supply, and the margin depends on the plane and extent of dissection — so the decision is case-specific and conservative sequencing is the safer default. Skin phototype governs resurfacing risk independently of the surgery. No consensus protocol defining safe concurrent combinations was found, so this remains individual surgeon judgement rather than a standard.",
+  "link": "ASPS — plastic surgery trends and techniques",
+  "url": "https://www.plasticsurgery.org/for-medical-professionals",
+  "verify": {
+   "status": "corrected — described as an integrated care algorithm; no such protocol exists",
+   "note": "The combination approach is really practised and the underlying rationale is sound. ONE CORRECTION: the submission says this 'Replaces isolated treatment plans with integrated care algorithms'. No consensus or published algorithm defining safe concurrent surgical and energy-based combinations was found, so it is surgeon judgement rather than an established pathway. ADDED, because the submission presents concurrent treatment as straightforwardly beneficial and omits the hazard: energy delivered to a recently elevated flap can compromise perfusion, so plane, extent of dissection and sequencing determine safety, and skin phototype governs resurfacing risk separately. The claim that this 'maximizes overall aesthetic quality and longevity' is not evidenced and is not asserted."
+  }
+ },
+ {
+  "title": "Ultrasound Guidance for Gluteal Fat Grafting",
+  "journal": "Aesthetic Surgery Journal, with state regulation and society safety statements",
+  "date": "2023 to 2026",
+  "breakthrough": "In 2023 the Florida Department of Health enacted a requirement that all surgeons use ultrasound imaging when performing gluteal fat transfer — a measure supported by the American Society of Plastic Surgeons and The Aesthetic Society, which have also issued a joint safety statement on gluteal fat grafting. Real-time ultrasound allows direct visualisation of the cannula to confirm that fat is deposited in the subcutaneous plane. A retrospective series of 1,815 patients reported an improved safety profile with low complication rates and no deaths or fat embolism, and a systematic review and meta-analysis has since been published.",
+  "impact": "Attaches a technical solution to a specific and well-characterised cause of death. Fatalities in gluteal augmentation arise overwhelmingly from fat embolism when fat enters the gluteal muscle rather than remaining subcutaneous, and ultrasound makes the plane visible while the cannula is moving.",
+  "practical": "Keep every pass subcutaneous and confirm it under direct vision rather than by feel. Note the regulatory position precisely: the mandate is Florida state law from 2023 with national society support, not an international standard — so the requirement depends on where you practise, while the safety argument does not.",
+  "link": "Aesthetic Surgery Journal — augmented safety profile of ultrasound-guided gluteal fat transfer: retrospective study with 1,815 patients",
+  "url": "https://academic.oup.com/asj/article/44/4/NP263/7485568",
+  "verify": {
+   "status": "matched with corrections — real, and better documented than submitted",
+   "note": "Verified and the best-supported entry in the 2026 list: the Florida Department of Health mandated ultrasound imaging for all gluteal fat transfer in 2023, with ASPS and The Aesthetic Society support and a joint safety statement; a 1,815-patient retrospective series reported an improved safety profile with no deaths or fat embolism; a systematic review and meta-analysis exists in Aesthetic Surgery Journal; and fatalities are attributed principally to intramuscular rather than subcutaneous fat placement. TWO CORRECTIONS. (1) The submission says ultrasound guidance is 'Codif[ied] standardized safety guidelines across international plastic surgery societies'. It is a US state law from 2023 plus national society endorsement — not international codification — and a surgeon outside Florida is not under the same legal requirement even though the safety rationale applies everywhere. (2) The date is 2023 for the mandate, not 2026; the supporting evidence extends through 2026. Added the 1,815-patient series and the specific mechanism of death, both absent from the submission."
+  }
+ },
+ {
+  "title": "Enhanced Recovery and Opioid-Sparing Perioperative Analgesia",
+  "journal": "Practice pattern within ERAS pathways",
+  "date": "2026",
+  "breakthrough": "ERAS pathways in outpatient cosmetic and reconstructive surgery combine pre-emptive analgesia, regional and field blocks, scheduled non-opioid analgesics and targeted anti-inflammatory regimens to minimise opioid exposure, with the aim of reducing nausea, pain scores and time to normal activity.",
+  "impact": "The strongest and least controversial part of modern perioperative practice: multimodal opioid-sparing analgesia reduces opioid consumption and its side effects without worsening pain control, and it travels well across procedures.",
+  "practical": "Build the pathway around the components with the best support — pre-emptive paracetamol and NSAIDs, local and regional blockade, scheduled rather than as-required dosing, and antiemetic prophylaxis. Treat liposomal bupivacaine specifically as a contested component rather than an established one: its clinical superiority over plain local anaesthetic has been questioned in multiple analyses, and it is considerably more expensive, so it should not be the element the pathway depends on.",
+  "link": "ASPS — plastic surgery trends and techniques",
+  "url": "https://www.plasticsurgery.org/for-medical-professionals",
+  "verify": {
+   "status": "matched with corrections — direction sound, one named agent flagged as contested",
+   "note": "The ERAS and opioid-sparing direction is well established and the submission's expected benefits — less nausea, lower pain scores, faster return to activity — are consistent with multimodal analgesia evidence generally. TWO QUALIFICATIONS. (1) The submission builds the entry on 'long-acting liposomal bupivacaine nerve blocks' as the defining component. Liposomal bupivacaine's clinical advantage over plain bupivacaine has been repeatedly questioned and it carries a substantial cost premium; presenting it as the anchor of an ERAS pathway overstates a contested agent, so the entry names the better-supported components and flags this one. I did not run a dedicated search on liposomal bupivacaine trials, so the entry says 'contested' rather than asserting a negative finding. (2) 'Embeds ERAS clinical pathways into outpatient cosmetic and reconstructive guidelines' is a practice trend rather than a guideline change; no such guideline was located."
+  }
+ }
+]

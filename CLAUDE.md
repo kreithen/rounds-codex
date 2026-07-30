@@ -246,9 +246,13 @@ no backend. This file is context for future sessions — read it before starting
   and strips** — review material, never app content. Anesthesiology is coded **`anes`**. Years sort
   **ascending**, so 2025 sits above 2026 (specified; not newest-first like the rest of the app).
   Built by `scripts/add_clinical_guidelines.js` + `scripts/add_guideline_share.js`.
-  **Live for 13 specialties (252 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `ent`,
-  `fm`, `im`, `neuro`, `nsg`, `obgyn`, `ophtho`, `ortho`, `path`. Reachable from the home page via
-  the purple CLINICAL UPDATES button and at `/u/`.
+  **Live for 16 specialties (303 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `ent`,
+  `fm`, `im`, `neuro`, `nsg`, `obgyn`, `ophtho`, `ortho`, `path`, `peds`, `plastics`, `pmr`.
+  Reachable from the home page via the purple CLINICAL UPDATES button and at `/u/`.
+  **`pmr` has 8/3, not 10/10**: the two submitted PM&R lists were 9/10 the same studies, so each
+  distinct item went to the year its development actually belongs to (three verified 2026, eight
+  2025 or earlier). When two year-lists for one specialty arrive nearly identical, date each item
+  rather than shipping the same study under both buttons.
   The index sorting `Neurological Surgery` before `Neurology` is the live proof that the name sort
   matters: a code sort would put `neuro` before `nsg` and be wrong.
   **Watch for wrong-body and wrong-term titles**, not just wrong drugs. The body text is usually
@@ -260,12 +264,24 @@ no backend. This file is context for future sessions — read it before starting
   **Do not assume a repeated suspicious name is the same error.** `amivantamab` appeared a third
   time, in ENT, and that one is REAL — OrigAMI-4 (ORR 56%, n=39) and phase 3 OrigAMI-5 are a genuine
   HNSCC programme. Check each occurrence.
-  **Every submitted entry must be citation-checked before merging.** Across all 252: 20 stated the
-  opposite of the published result, 11 cited studies that could not be found, 14 named the wrong
-  study, 60 could not be resolved to a citation, and 10 were clean — the teaching was usually sound,
+  **Every submitted entry must be citation-checked before merging.** Across all 303: 23 stated the
+  opposite of the published result, 16 cited studies that could not be found, 18 named the wrong
+  study, 60 could not be resolved to a citation, and 11 were clean — the teaching was usually sound,
   the sourcing was not. `CORRECTIONS-all.md` is the running record, regenerated over every staging
   file (`build_corrections_summary.js`); the unsuffixed staging file is always canonical, with the
   physician's original kept as `-submitted` once corrections are approved.
+  **Check the regulatory status of any product an entry recommends.** The worst single entry found
+  was plastics 2026 presenting clinical-grade **exosomes** as established surgical adjuncts: no
+  exosome product has FDA approval for aesthetic use, administering unapproved biologics violates
+  federal law, the FDA has issued warning letters to administering physicians, and reported harms
+  include blindness and tumour formation. Autologous PRF and nanofat are fine; the submission
+  grouped all three, which is how the unapproved one travels. Same class of check caught a
+  **paediatric safety inversion**: the omalizumab entry said the drug eases "reliance on strict food
+  avoidance" — it does not, and a family acting on that could feed a child an allergen.
+  **A designation, a proposal and a guideline are three different things.** FDA Breakthrough Device
+  Designation is not clearance (CorTec BCI, Paige PanCancer); a bill is not law (PREA reforms); an
+  industry-commissioned Delphi is not a guideline (GLP-1 aesthetics, Galderma). Each was submitted
+  as the stronger thing.
   **Write the `verify.status` so it sorts.** `build_corrections_summary.js` buckets worst-first off
   that string, so a reversal phrased as "corrected — the result was submitted in the wrong
   direction" lands under routine date fixes and the physician meets it last. Use the established
