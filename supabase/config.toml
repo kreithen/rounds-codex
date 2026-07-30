@@ -17,3 +17,15 @@ verify_jwt = false
 
 [functions.send-campaign]
 verify_jwt = false
+
+# Support inbox. inbox-reply + inbox-draft are called from the dashboard
+# (verify_jwt off + manual admin check). sync-inbox is called by pg_cron with
+# the service_role key, so it keeps JWT verification ON (rejects anonymous callers).
+[functions.inbox-reply]
+verify_jwt = false
+
+[functions.inbox-draft]
+verify_jwt = false
+
+[functions.sync-inbox]
+verify_jwt = true

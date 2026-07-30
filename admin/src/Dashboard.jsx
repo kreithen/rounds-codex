@@ -1,13 +1,14 @@
 import { useEffect, useMemo, useState } from "react";
 import { supabase } from "./supabase.js";
 import Newsletters from "./Newsletters.jsx";
+import Inbox from "./Inbox.jsx";
 
 export default function Dashboard({ session }) {
   const [state, setState] = useState("loading"); // loading | denied | error | ready
   const [rows, setRows] = useState([]);
   const [err, setErr] = useState("");
   const [q, setQ] = useState("");
-  const [tab, setTab] = useState("signups"); // signups | newsletters
+  const [tab, setTab] = useState("signups"); // signups | inbox | newsletters
 
   async function load() {
     setState("loading");
@@ -97,6 +98,7 @@ export default function Dashboard({ session }) {
         <div className="brand">Rounds&nbsp;Codex <span>Admin</span></div>
         <nav className="tabs">
           <button className={"tab" + (tab === "signups" ? " on" : "")} onClick={() => setTab("signups")}>Signups</button>
+          <button className={"tab" + (tab === "inbox" ? " on" : "")} onClick={() => setTab("inbox")}>Inbox</button>
           <button className={"tab" + (tab === "newsletters" ? " on" : "")} onClick={() => setTab("newsletters")}>Newsletters</button>
         </nav>
         <div className="who">
@@ -107,6 +109,8 @@ export default function Dashboard({ session }) {
 
       {tab === "newsletters" ? (
         <Newsletters session={session} />
+      ) : tab === "inbox" ? (
+        <Inbox session={session} />
       ) : (
       <>
       <section className="tiles">
