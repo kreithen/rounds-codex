@@ -151,3 +151,149 @@ literature search, not a medical re-read — see `VERIFICATION.md` for the metho
 [NEJM - BRIDGE-TNK trial](https://www.nejm.org/doi/full/10.1056/NEJMoa2503867)
 
 > **Citation check — ⚠ corrected — wrong trial name and wrong comparator.** There is no 'TIMELESS-2' trial. The real 2025 NEJM trial is BRIDGE-TNK (NEJMoa2503867), and the comparator matters: it compared tenecteplase PLUS thrombectomy against THROMBECTOMY ALONE, not tenecteplase against alteplase. The original's conclusion — that tenecteplase is preferred and the single bolus simplifies transfer — is defensible, but it does not follow from this trial in the way stated. Added the sICH and mortality numbers, which were both numerically higher with tenecteplase and were omitted entirely.
+
+---
+
+## 2026
+
+10 entries · **9 with a citation problem — see the checks below**
+
+### 1. 2026 ACC/AHA/Multisociety Guideline on the Management of Dyslipidemia
+
+*Circulation / JACC · 13 March 2026*
+
+**The breakthrough.** Replaces the 2018 blood cholesterol guideline. Reintroduces explicit LDL-C targets — <100, <70 and <55 mg/dL by risk tier, with <55 mg/dL and non-HDL-C <85 mg/dL for very high risk in secondary prevention — adopts the PREVENT-ASCVD equations for primary prevention in adults aged 30-79 with LDL-C 70-189 mg/dL, and for the first time in a US guideline recommends universal once-in-a-lifetime lipoprotein(a) measurement as a Class I recommendation.
+
+**Clinical guideline impact.** Eleven societies (ACC/AHA/AACVPR/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA). Retitled from 'blood cholesterol' to 'dyslipidemia' to reflect risk carried by atherogenic lipoproteins beyond LDL-C — triglyceride-rich remnants and Lp(a) — with expanded use of apolipoprotein B for risk stratification.
+
+**Practical implications.** Two things change most days in clinic: order Lp(a) once on every adult, and treat to a number again rather than to a percentage reduction. Non-statin add-on therapy (ezetimibe, PCSK9 inhibitors) is expected when the target is missed rather than held in reserve.
+
+[Circulation - 2026 ACC/AHA dyslipidemia guideline](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001423)
+
+> **Citation check — ⚠ matched with corrections.** Real and largely accurate. Circulation DOI 10.1161/CIR.0000000000001423, PMID 41824590, released 13 March 2026. Universal once-in-a-lifetime Lp(a) at Class I, the three reintroduced targets, PREVENT-ASCVD and replacement of the 2018 guideline all confirmed. Two claims removed: 'broadens statin therapy recommendations to tens of millions of additional adults' could not be confirmed and is contestable, since PREVENT generally yields lower absolute risk estimates than the pooled cohort equations it replaces; and CAC scoring as a 'standard tool' overstates its role as a selective risk-decision aid. Eleven-society authorship and the retitling added.
+
+### 2. 2026 AHA/ACC/ADA/ASN Guideline for the Prevention, Detection, Evaluation, and Management of Cardiovascular-Kidney-Metabolic (CKM) Syndrome
+
+*JACC / Circulation · 9 June 2026*
+
+**The breakthrough.** The first-ever guideline for CKM syndrome, formalising a staging framework that connects obesity, type 2 diabetes, chronic kidney disease and cardiovascular risk into one model. Stages run 0 (no CKM risk factors) through 4 (clinical CVD in CKM syndrome), with stage 4a without kidney failure and 4b with it (eGFR <15 mL/min/1.73m² or on chronic kidney replacement therapy).
+
+**Clinical guideline impact.** Jointly issued by the AHA, ACC, American Diabetes Association and American Society of Nephrology — cardiology, endocrinology and nephrology in one document. Staging is recommended for youths as well as adults, explicitly to promote stage REGRESSION through lifestyle change and weight loss, not only to slow progression. Risk in stages 0-3 is quantified with the PREVENT equations for 10- and 30-year ASCVD, heart failure and total CVD risk.
+
+**Practical implications.** Gives one pathway where there were three. Organ-protective drug classes — SGLT2 inhibitors, GLP-1 receptor agonists, non-steroidal MRAs — are selected against absolute risk and CKM stage rather than against whichever specialist the patient happens to be sitting in front of.
+
+[JACC - 2026 CKM syndrome guideline](https://www.jacc.org/doi/10.1016/j.jacc.2026.03.056)
+
+> **Citation check — matched.** Real and accurately summarised. JACC DOI 10.1016/j.jacc.2026.03.056, issued 9 June 2026 by ACC/AHA/ADA/ASN. Stages 0-4 with the 4a/4b split, PREVENT for 10- and 30-year risk, and the multi-society authorship all confirmed. Added that it is the first-ever such guideline, that staging applies to youths as well as adults, and that stage regression is an explicit goal — all three strengthen the entry. The specific drug classes named were not individually confirmed from the abstract but are consistent with the framework.
+
+### 3. Evolocumab in Patients without a Previous Myocardial Infarction or Stroke (VESALIUS-CV)
+
+*NEJM · November 2025 (presented AHA 2025 and ACC 2026)*
+
+**The breakthrough.** An international double-blind placebo-controlled trial of evolocumab 140 mg every 2 weeks in patients with atherosclerosis or diabetes, no previous MI or stroke, and LDL-C at least 90 mg/dL. Three-point MACE (coronary death, MI, ischemic stroke) fell 25%, four-point MACE 19%, and myocardial infarction 36%. In the subgroup without known significant atherosclerosis the reduction was 31% for both endpoints.
+
+**Clinical guideline impact.** Extends hard-endpoint evidence for PCSK9 inhibition to patients who have not yet had an event, which is where the evidence base had been thinnest. Together with the 2026 dyslipidemia guideline's reintroduced targets, it is the trial that makes aggressive early LDL lowering defensible rather than merely plausible.
+
+**Practical implications.** Supports early PCSK9 inhibition in high-risk patients — particularly diabetes with subclinical vascular disease — before a first event. Note the entry criterion: LDL-C at least 90 mg/dL on background therapy is the population studied.
+
+[NEJM - VESALIUS-CV trial](https://www.nejm.org/doi/abs/10.1056/NEJMoa2514428)
+
+> **Citation check — ⚠ matched with corrections.** Real and the 25% MACE figure is right. NEJM DOI 10.1056/NEJMoa2514428. DATE: published in NEJM in November 2025 and first presented at AHA 2025; it was presented again at ACC 2026 in March, which is presumably the source of the 2026 attribution. One framing note: 'primary prevention' is loose — many enrolled patients had established atherosclerosis without a prior MI or stroke, which is not the same thing. The 31% figure applies specifically to the subgroup WITHOUT known significant atherosclerosis. Entry criteria and the 36% MI reduction added.
+
+### 4. Left Atrial Appendage Closure versus DOACs in Non-Valvular Atrial Fibrillation (CHAMPION-AF)
+
+*NEJM · ACC.26, March 2026*
+
+**The breakthrough.** 3,000 patients with non-valvular AF who were ELIGIBLE for anticoagulation (mean age 72, mean CHA₂DS₂-VASc 3.5) randomised to Watchman FLX left atrial appendage closure or a DOAC. At 36 months the device met noninferiority for the primary efficacy endpoint of stroke, cardiovascular or unexplained death, or systemic embolism (5.7% vs 4.8%), and was SUPERIOR for non-procedural major and clinically relevant non-major bleeding (10.9% vs 19.0%). Net clinical benefit also favoured the device (15.1% vs 21.8%).
+
+**Clinical guideline impact.** The first trial to test LAAC as a first-line option in patients who could take an anticoagulant, rather than as rescue for those who cannot. Read it alongside CLOSURE-AF from November 2025, which tested LAAC in patients at HIGH BLEEDING RISK and found it NOT noninferior to best medical care. Same device concept, opposite conclusions in different populations.
+
+**Practical implications.** A durable non-pharmacologic option to discuss with anticoagulation-eligible patients through shared decision-making. Note the caveat commentators have flagged: the efficacy point estimate numerically favoured the DOAC (5.7% vs 4.8%) — noninferiority was met, superiority was not, and the win is in the bleeding endpoint.
+
+[ACC - CHAMPION-AF trial](https://www.acc.org/latest-in-cardiology/articles/2026/03/25/21/27/sat-930am-championaf-acc-2026)
+
+> **Citation check — ⚠ matched with corrections.** Real and the summary is accurate — noninferior for efficacy, significant reduction in non-procedural bleeding. Presented at ACC.26 with simultaneous NEJM publication, 3,000 patients, NCT04394546. Added three things the original omitted: the actual numbers; the fact that the efficacy point estimate numerically favoured NOACs (ACC titled its coverage 'An Uneasy Win For Watchman Device', TCTMD 'A Win for Watchman FLX, but With Caveats'); and the contrast with CLOSURE-AF, without which a reader would draw the wrong general conclusion about LAAC. 'Updates electrophysiology guidelines' softened — no guideline revision confirmed.
+
+### 5. LDL-C Target <55 versus <70 mg/dL with Ezetimibe Combination Therapy in Established ASCVD (Ez-PAVE)
+
+*Presented ACC 2026 · March 2026*
+
+**The breakthrough.** The first randomised head-to-head comparison of two LDL-C targets in ASCVD. 3,048 patients at 17 South Korean sites were assigned to an intensive target <55 mg/dL (n=1,526) or conventional <70 mg/dL (n=1,522). At three years the intensive group had a 33% lower risk of the composite of cardiovascular death, non-fatal MI, non-fatal stroke, any revascularization, or hospitalization for unstable angina.
+
+**Clinical guideline impact.** Moves 'lower is better' from inference across trials to a direct randomised comparison of targets, which is what guideline committees had been missing when they set an LDL-C goal of <55 mg/dL.
+
+**Practical implications.** Intensify combination therapy rather than accepting a value that is close to goal. Two caveats worth carrying: the achieved separation was modest — median LDL-C 56 vs 66 mg/dL, about 10 mg/dL, not 55 vs 70 — and the trial was conducted entirely in an East Asian population, so generalisability is an open question.
+
+[ACC - Ez-PAVE trial](https://www.acc.org/latest-in-cardiology/articles/2026/03/25/21/27/sat-345pm-ezpave-acc-2026)
+
+> **Citation check — ⚠ matched with corrections.** Real — NCT04626973, presented at ACC 2026 — and the 33% figure is correct. The trial name looked invented and is not. Added the design detail (ezetimibe combination therapy, 17 South Korean sites, 3,048 patients) and two material caveats the original omitted: the ACHIEVED LDL-C difference was only 56 vs 66 mg/dL, and the population was East Asian only. Medscape's coverage was headlined 'Does Ez-PAVE Support Lower Is Better for LDL-C?', so the entry no longer presents it as fully settled.
+
+### 6. Aspirin versus Clopidogrel for Chronic Maintenance Monotherapy after PCI: 10-Year Follow-up of HOST-EXAM
+
+*The Lancet · March 2026 (ACC 2026)*
+
+**The breakthrough.** 5,438 patients in South Korea who had completed 6-18 months of DAPT after drug-eluting stent PCI without events, randomised to clopidogrel 75 mg or aspirin 100 mg and followed a median 10.5 years with 92.8% completeness. Clopidogrel was better for the primary composite — 25.4% vs 28.5%, HR 0.86 (95% CI 0.77-0.96), p = 0.0050 — and for both ischaemic and bleeding outcomes.
+
+**Clinical guideline impact.** Lower ischaemic AND bleeding events with the same drug is unusual, and is what makes the trial notable. All-cause mortality did NOT differ, which matters: 'superior' here does not mean a survival benefit.
+
+**Practical implications.** More post-PCI patients presenting for elective surgery will be on clopidogrel monotherapy rather than aspirin, so preoperative hold and restart timelines shift accordingly. Note that the trial studied chronic maintenance, not the perioperative period.
+
+[The Lancet - HOST-EXAM 10-year follow-up](https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00422-8/abstract)
+
+> **Citation check — ⚠ matched with corrections.** Real and accurately summarised. Same trial as entry 8 in the Anesthesiology 2026 list — a genuine cross-specialty overlap, not a duplication error. Two additions: all-cause mortality did not differ, which the original's 'maintains significantly lower rates' obscures; and 'Rewrote post-PCI chronic antithrombotic guidelines' is softened, since no guideline revision has been confirmed.
+
+### 7. Ultrasound-Facilitated Catheter-Directed Fibrinolysis for Acute Intermediate-High-Risk Pulmonary Embolism (HI-PEITHO)
+
+*NEJM · ACC.26, March 2026*
+
+**The breakthrough.** 544 patients at 59 sites across the US and eight European countries, randomised to ultrasound-facilitated catheter-directed fibrinolysis plus anticoagulation, or anticoagulation alone. The intervention lowered the composite of PE-related death, cardiopulmonary decompensation or collapse, and PE recurrence within 7 days — with no difference in bleeding or other serious adverse events.
+
+**Clinical guideline impact.** The first randomised trial to show benefit from catheter intervention in intermediate-risk PE, a group in which the choice between anticoagulation alone and escalation has been made on judgement rather than evidence.
+
+**Practical implications.** Strengthens the case for a PE Response Team pathway that mobilises the catheter lab before hemodynamic decompensation rather than after it. The absence of a bleeding penalty is as important as the efficacy signal — bleeding risk is what has kept thrombolysis in reserve for submassive PE.
+
+[NEJM - HI-PEITHO trial](https://www.nejm.org/doi/full/10.1056/NEJMoa2516567)
+
+> **Citation check — ⚠ matched with corrections.** Real and positive. NEJM DOI 10.1056/NEJMoa2516567, presented at ACC.26, 544 patients at 59 sites. One number removed: the original's '61% lower' composite reduction could not be confirmed from available sources, so the entry states the direction without the magnitude. Added the trial size and, importantly, that there was NO difference in bleeding — omitted from the original, and the crux of the risk-benefit argument.
+
+### 8. IVUS versus Angiography Guidance for PCI in Complex Coronary Bifurcation Lesions (DKCRUSH VIII)
+
+*JACC · April 2026 (ACC 2026)*
+
+**The breakthrough.** 556 patients at 24 centres in China undergoing DK crush bifurcation stenting, randomised to IVUS or angiographic guidance. One-year target vessel failure was 6.1% versus 14.7%, HR 0.40 (95% CI 0.23-0.71), p = 0.0016. Target vessel MI 4.3% vs 9.4%, spontaneous MI 1.8% vs 6.1%, TVR 2.9% vs 7.6%. IVUS produced larger stent dimensions and better lumen gain, at the cost of longer procedure time.
+
+**Clinical guideline impact.** A large effect size in a well-defined complex subset. Context matters: this is the positive trial among three recent IVUS trials in complex PCI, the other two of which were neutral — the field is actively debating why. All-cause mortality and stent thrombosis did not differ here.
+
+**Practical implications.** Supports intravascular imaging for complex bifurcation stenting, where the angiogram cannot show underexpansion, malapposition or side-branch compromise. Note the specificity: this trial studied the DK crush technique at Chinese centres, so it is strong evidence for that setting rather than a universal mandate.
+
+[JACC - DKCRUSH VIII randomized clinical trial](https://www.jacc.org/doi/10.1016/j.jacc.2026.01.081)
+
+> **Citation check — ⚠ matched with corrections.** Real and the findings are accurately described. JACC DOI 10.1016/j.jacc.2026.01.081, PMID 41914946, 556 patients, 24 Chinese centres, presented at ACC 2026. Two corrections: 'Reclassifies intravascular imaging-guided PCI as an ABSOLUTE REQUIREMENT' overstates — no guideline uses that language, and TCTMD's coverage was headlined 'Two Neutral IVUS Trials in Complex PCI - and One Positive - Spark Debate', which a reader needs to know. Also added that mortality and stent thrombosis did not differ, and the DK-crush-specific design.
+
+### 9. Left Ventricular Unloading in Anterior STEMI Without Shock (STEMI Door-To-Unload)
+
+*JACC · ACC 2026*
+
+**The breakthrough.** A negative trial, correctly so. 55 hospitals across six countries tested whether mechanical LV unloading with an Impella CP plus a 30-minute delay before PCI reduces infarct size in anterior STEMI without cardiogenic shock. It did not: infarct size 30.8 ± 16.2% versus 31.9 ± 16.9% (95% CI -4.2 to 2.0, p = 0.50), and the hierarchical secondary endpoint gave a win ratio of 1.04 (95% CI 0.84-1.28, p = 0.73).
+
+**Clinical guideline impact.** Settles a question that had real mechanistic appeal. The manufacturer's framing is that delayed reperfusion plus unloading did not INCREASE infarct size; the clinical reading is that it did not reduce it either, and it was not free.
+
+**Practical implications.** The safety numbers are the headline: major bleeding (BARC 3-5) and vascular complications occurred in 34% of the unloading arm versus 6% of controls. All-cause death was 4% versus 5.1% (p = 0.51). Immediate reperfusion remains the goal in anterior STEMI without shock — door-to-balloon time is still the thing that matters.
+
+[JACC - STEMI Door-To-Unload randomized controlled trial](https://www.jacc.org/doi/10.1016/j.jacc.2026.03.071)
+
+> **Citation check — ⚠ matched with corrections.** Real, and the original correctly reported this as a negative trial with increased vascular complications — the only entry across four submitted lists to state a negative result as negative. JACC DOI 10.1016/j.jacc.2026.03.071, 55 hospitals. Added the actual numbers, and in particular the 34% versus 6% bleeding and vascular complication rate, which is the most clinically important figure and was omitted. One correction: 'Promptly updated acute myocardial infarction guidelines to explicitly advise against' — no guideline update has been confirmed.
+
+### 10. TRISCEND II: 2-Year Outcomes of Transcatheter Tricuspid Valve Replacement for Severe Tricuspid Regurgitation
+
+*Presented ACC.26 · March 2026*
+
+**The breakthrough.** Two-year outcomes with the EVOQUE system in severe tricuspid regurgitation: 95% of patients in the TTVR arm had mild or less TR, with sustained improvement in symptoms and quality of life versus medical therapy alone, and no added device-related risk. More than 90% of the cohort had atrial fibrillation and 39% had a pacemaker or other CIED.
+
+**Clinical guideline impact.** Durable near-elimination of TR in a population that had no good option — the 'forgotten valve' label existed because surgery in these patients carries prohibitive risk.
+
+**Practical implications.** There was NO mortality benefit in the main analysis. A reduction in mortality and heart failure hospitalization appeared only in an analysis that included crossover patients, which is a weaker form of evidence. So the established two-year benefit is TR reduction, symptoms and quality of life — real and meaningful, but not yet a demonstrated survival gain.
+
+[SCAI - TRISCEND II two-year outcomes](https://www.scai.org/triscend-ii-two-year-outcomes-transcatheter-tricuspid-valve-replacement-severe-tricuspid)
+
+> **Citation check — ⚠ matched with corrections.** Real, presented at ACC.26 March 2026. The TR reduction and quality-of-life claims hold. Two corrections: the original credited the trial with reduced heart failure hospitalizations without qualification — that finding came from a crossover-inclusive analysis, and there was NO mortality benefit in the main analysis, which the entry now states plainly. And 'Upgrades transcatheter tricuspid interventions in valvular heart disease guidelines' could not be confirmed; no guideline revision has been identified.

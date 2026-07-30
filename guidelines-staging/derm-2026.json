@@ -1,0 +1,142 @@
+[
+  {
+    "title": "AAD Guidelines of Care for the Primary Prevention of Atopic Dermatitis and Awareness of Comorbid Conditions in Pediatric Atopic Dermatitis",
+    "journal": "Journal of the American Academy of Dermatology",
+    "date": "2026",
+    "breakthrough": "The AAD's first dedicated pediatric atopic dermatitis guidance, covering primary prevention and comorbidity awareness, with evidence-graded recommendations across the modern topicals (roflumilast, crisaborole, ruxolitinib, tapinarof), the biologics (dupilumab, tralokinumab, lebrikizumab, nemolizumab) and oral JAK inhibitors.",
+    "impact": "Issues conditional recommendations for skin moisturizing from early infancy — consistent with the CASCADE emollient trial — establishes proactive maintenance rather than reactive flare treatment, and advises against systemic corticosteroid monotherapy given rebound and long-term toxicity.",
+    "practical": "Lets pediatricians and pediatric dermatologists reach for targeted non-steroidal topicals and biologics early, in place of empiric dietary restriction and environmental elimination strategies that have never had good evidence behind them and cost families a great deal of effort.",
+    "link": "JAAD - AAD pediatric atopic dermatitis guidelines",
+    "url": "https://www.jaad.org/article/S0190-9622(26)00344-0/fulltext",
+    "verify": {
+      "status": "matched",
+      "note": "A JAAD 2026 document with this scope was located (S0190-9622(26)00344-0), covering primary prevention of atopic dermatitis and comorbidity awareness in pediatric AD. The title has been aligned to the located article. The individual drug lists and the specific recommendation strengths were not confirmed item by item from the abstract, so treat the graded specifics as needing a read of the document itself."
+    }
+  },
+  {
+    "title": "International Eczema Council Definitions of Low Disease Activity and Remission in Atopic Dermatitis: A Consensus Statement",
+    "journal": "JAMA Dermatology",
+    "date": "2026",
+    "breakthrough": "Standardised, objective definitions for Low Disease Activity, Very Low Disease Activity, on-drug complete control and off-drug remission in atopic dermatitis.",
+    "impact": "Closes a real gap in trial standardisation by separating clinician-assessed signs — extent and lesion scores — from patient-reported symptoms such as itch, within a modular framework, so that 'remission' means the same thing across studies.",
+    "practical": "Gives treat-to-target language for patients on biologics or JAK inhibitors, and in particular a defensible answer to the question of when a patient is well enough to consider stopping — the distinction between low disease activity and true off-drug remission.",
+    "link": "JAMA Dermatology - IEC definitions of remission and low disease activity",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=International+Eczema+Council+definitions+low+disease+activity+remission+atopic+dermatitis+consensus",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "Plausible and consistent with the International Eczema Council's published work on outcome standardisation, but no specific document matching this title was located in the searches run. The url is a PubMed title search rather than a resolved citation."
+    }
+  },
+  {
+    "title": "The National Psoriasis Foundation Primer on GLP-1 Receptor Agonists in Psoriasis: A Review",
+    "journal": "JAMA Dermatology",
+    "date": "2026",
+    "breakthrough": "A National Psoriasis Foundation Medical Board review of the immunomodulatory and cardiometabolic effects of GLP-1 and dual GIP/GLP-1 receptor agonists in psoriasis.",
+    "impact": "Sets out the shared inflammatory pathways between obesity, cardiometabolic disease and cutaneous psoriasis — reductions in systemic CRP and IL-6, and in dermal γδ T-cell infiltration — as the rationale for treating the metabolic disease as part of treating the skin.",
+    "practical": "Guides dermatologists on recommending or co-prescribing GLP-1 receptor agonists alongside biologics or conventional systemic therapy in psoriatic patients with metabolic comorbidity. This is a review, so it frames a rationale rather than reporting trial outcomes.",
+    "link": "JAMA Dermatology - NPF primer on GLP-1 receptor agonists in psoriasis",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=National+Psoriasis+Foundation+GLP-1+receptor+agonists+psoriasis+review+JAMA+Dermatology",
+    "verify": {
+      "status": "partially corroborated",
+      "note": "A JAMA Dermatology 2026 review of GLP-1 evidence in psoriasis was referenced in secondary sources, which is consistent with this entry, but the specific NPF-authored primer was not resolved to a citation and the url is a title search. The mechanistic details (CRP, IL-6, dermal γδ T cells) were not confirmed. Added a note that this is a review rather than a trial, which the original did not make clear."
+    }
+  },
+  {
+    "title": "Vixarelimab in Patients With Prurigo Nodularis: A Randomized Clinical Trial",
+    "journal": "JAMA Dermatology",
+    "date": "2026;162(2):133-141 (online 17 December 2025)",
+    "breakthrough": "A double-blind, placebo-controlled phase 2b trial of vixarelimab, a first-in-class monoclonal antibody against oncostatin M receptor beta that blocks both IL-31 and oncostatin M signalling. 189 patients with prurigo nodularis for at least 6 months, across 72 centres in the US, Canada, Europe and Asia.",
+    "impact": "Validates OSMRβ neuro-immune signalling as a target in chronic pruritic and fibrotic skin disease, giving a third mechanism alongside IL-4/IL-13 and IL-31 blockade. Dose-dependent and sustained: Worst Itch Numeric Rating Scale fell 56.2%, 51.0% and 33.0% at the 540 mg, 360 mg and 120 mg monthly doses versus 14.5% on placebo at week 16.",
+    "practical": "Benefit appeared rapidly and held through the 16-week double-blind period and a 36-week open-label extension, with no fatal or serious drug-related adverse events. Blocking OSM as well as IL-31 is the mechanistic argument for also addressing the fibrotic nodules rather than the itch alone — though nodule fibrosis reversal was not the primary endpoint.",
+    "link": "JAMA Dermatology - vixarelimab in prurigo nodularis",
+    "url": "https://jamanetwork.com/journals/jamadermatology/fullarticle/2842471",
+    "verify": {
+      "status": "matched",
+      "note": "Real and accurately summarised. JAMA Dermatology 2026;162(2):133-141, online 17 December 2025, PMID 41405882, DOI 10.1001/jamadermatol.2025.4950. Phase 2b, 189 patients, 72 centres, Ständer et al. The itch numbers, dose-dependence, first-in-class status and OSMRβ mechanism all confirmed. One softening: 'simultaneously halts both severe neurogenic itching and dermal nodular fibrosing' is the mechanistic hope rather than a demonstrated outcome."
+    }
+  },
+  {
+    "title": "Diagnostic Modalities and Nodal Staging in High-Risk Cutaneous Squamous Cell Carcinoma",
+    "journal": "JAMA Dermatology",
+    "date": "2026",
+    "breakthrough": "Assessed non-invasive imaging — high-frequency ultrasound and cross-sectional PET/CT — alongside sentinel lymph node biopsy for detecting nodal metastasis in high-risk cutaneous squamous cell carcinoma.",
+    "impact": "Proposes risk-stratified imaging thresholds before invasive nodal surgery, with the aim of reducing sentinel lymph node biopsies that will not change management.",
+    "practical": "cSCC is common and mostly cured locally, so the clinical problem is identifying the minority with subclinical nodal disease without operating on everyone at risk. Earlier identification allows definitive surgery or adjuvant immunotherapy at a stage where it still changes outcome.",
+    "link": "JAMA Dermatology - diagnostic modalities and nodal staging in cutaneous SCC",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=diagnostic+modalities+nodal+staging+high-risk+cutaneous+squamous+cell+carcinoma+JAMA+Dermatology",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific article matching this title was located in the searches run; the url is a PubMed title search. The original also claimed this 'Updates dermatologic oncology staging pathways', which no single study does — softened to what the work proposes."
+    }
+  },
+  {
+    "title": "Mobile Dermatoscope Type in Patient-Performed Teledermoscopy: A Study Within A Trial",
+    "journal": "JAMA Dermatology",
+    "date": "2026",
+    "breakthrough": "Compared patient-performed mobile teledermoscopy devices across diverse skin types, assessing image clarity, diagnostic accuracy and fidelity of lesion monitoring.",
+    "impact": "Specifies hardware and optical requirements for consumer-facing skin surveillance tools — the practical question of whether a given attachment produces an image a dermatologist can actually read.",
+    "practical": "Supports integrating home patient-performed dermoscopy into post-melanoma surveillance, which extends specialist follow-up to patients who cannot easily travel for it.",
+    "link": "JAMA Dermatology - mobile dermatoscope in patient-performed teledermoscopy",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=mobile+dermatoscope+patient-performed+teledermoscopy+study+within+a+trial+JAMA+Dermatology",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific article matching this title was located in the searches run; the url is a PubMed title search. 'Refines teledermatology clinical practice standards' softened — a single study within a trial does not set practice standards."
+    }
+  },
+  {
+    "title": "Stapokibart for the Treatment of Refractory Palmoplantar Pustulosis",
+    "journal": "JAMA Dermatology",
+    "date": "2026",
+    "breakthrough": "Reported use of stapokibart, a humanised anti-IL-4Rα monoclonal antibody, in treatment-refractory palmoplantar pustulosis.",
+    "impact": "Would extend IL-4Rα blockade into palmoplantar inflammatory dermatoses, a group in which the established biologic options target IL-17, IL-23, IL-36 or IL-1β instead.",
+    "practical": "Palmoplantar pustulosis is disabling out of proportion to its body surface area — it affects grip and walking — and refractory disease after acitretin, phototherapy and IL-17 inhibition leaves little to offer, which is why any new mechanism matters here.",
+    "link": "JAMA Dermatology - stapokibart in refractory palmoplantar pustulosis",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=stapokibart+palmoplantar+pustulosis",
+    "verify": {
+      "status": "NOT FOUND",
+      "note": "Stapokibart is a real humanised anti-IL-4Rα antibody, approved in China for atopic dermatitis and allergic rhinitis, so the drug and mechanism are genuine. But NO publication on palmoplantar pustulosis was located in the searches run — searches returned only JAK inhibitor and apremilast case reports for refractory PPP, and reviews citing IL-17, IL-23, IL-36 and IL-1β as the targeted approaches. The claim of 'significant clearing of painful palmar and plantar pustules' and 'trial evidence for IL-4Rα blockade' is unsupported by anything found, and has been reduced to a neutral description. Verify this citation exists before shipping it."
+    }
+  },
+  {
+    "title": "GLP-1 Receptor Agonist Therapy in Patients With Extragenital Lichen Sclerosus",
+    "journal": "JAMA Dermatology",
+    "date": "2026",
+    "breakthrough": "A CASE REPORT of two patients with lichen sclerosus whose disease improved on GLP-1 receptor agonist therapy.",
+    "impact": "Raises the possibility of metabolic-immunologic crosstalk in scleroatrophic skin disease. Two patients cannot establish efficacy — this is a hypothesis-generating observation, not evidence of a treatment effect.",
+    "practical": "Extragenital lichen sclerosus is genuinely difficult, and superpotent topical steroids and calcineurin inhibitors often fail it, so a systemic signal is worth following. But an off-label systemic agent on the strength of two cases is a discussion to have with a patient, not a therapeutic pathway.",
+    "link": "JAMA Dermatology - GLP-1 receptor agonist therapy in extragenital lichen sclerosus",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=GLP-1+receptor+agonist+extragenital+lichen+sclerosus+JAMA+Dermatology",
+    "verify": {
+      "status": "corrected — evidence level inflated",
+      "note": "The publication is real (JAMA Dermatology 2026, referenced in secondary coverage) but it is a CASE REPORT OF TWO PATIENTS. The original described it as 'A clinical study... showing marked reductions in sclerosis, skin tightening, and localized itch' that 'lays the foundation for systemic anti-inflammatory targeting'. Two cases support none of that. Rewritten to state the evidence level plainly; a resident should not learn this as a study result."
+    }
+  },
+  {
+    "title": "Cross-Modal Imaging in Noninvasive Identification of Histologic Features of Skin",
+    "journal": "JAMA Dermatology",
+    "date": "2026",
+    "breakthrough": "Evaluated combined optical coherence tomography and reflectance confocal microscopy for non-invasive, cellular-resolution imaging of inflammatory and neoplastic skin lesions.",
+    "impact": "Works toward standardised optical imaging criteria that correspond to conventional haematoxylin and eosin histopathology, so an optical image can be read against a familiar reference.",
+    "practical": "The value is in cosmetically sensitive sites and in children, where a punch biopsy carries a cost beyond the procedure itself, and in the possibility of a diagnostic answer at the bedside rather than in a week.",
+    "link": "JAMA Dermatology - cross-modal noninvasive skin imaging",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=cross-modal+imaging+noninvasive+identification+histologic+features+skin+JAMA+Dermatology",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific article matching this title was located in the searches run; the url is a PubMed title search. 'Establishes standardized optical imaging criteria' softened to 'works toward', since establishing such criteria is a multi-study undertaking."
+    }
+  },
+  {
+    "title": "Successful Treatment of Refractory Severe Localized Scleroderma With Anifrolumab",
+    "journal": "JAMA Dermatology",
+    "date": "2026;162(2):210-212",
+    "breakthrough": "A CASE REPORT of type I interferon receptor blockade with anifrolumab in severe, treatment-refractory localized scleroderma (morphea).",
+    "impact": "Consistent with a role for type I interferon signalling in localized cutaneous sclerosis, and with anifrolumab's reported activity in other refractory cutaneous autoimmune disease such as discoid lupus. It does not confirm that role — a case report cannot.",
+    "practical": "Deep and linear morphea can be disfiguring and functionally limiting, and options after methotrexate and phototherapy are thin, so a reported success in refractory disease is worth knowing about. Treat it as a lead for a trial, not as established therapy.",
+    "link": "JAMA Dermatology - anifrolumab in refractory severe localized scleroderma",
+    "url": "https://jamanetwork.com/journals/jamadermatology/fullarticle/2842472",
+    "verify": {
+      "status": "corrected — evidence level inflated",
+      "note": "Real: JAMA Dermatology 2026;162(2):210-212, PMID 41405904, DOI 10.1001/jamadermatol.2025.4606. But the title begins 'Successful Treatment of...' because it is a CASE REPORT, not a trial. The original said it 'Provides clinical trial evidence confirming the central role of type I interferon signature activation' — there is no trial and nothing is confirmed. Rewritten to state the evidence level."
+    }
+  }
+]

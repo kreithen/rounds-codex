@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Focused Update: Guidelines of Care for the Management of Atopic Dermatitis in Adults",
+    "journal": "Journal of the American Academy of Dermatology",
+    "date": "September 2025",
+    "breakthrough": "The AAD added four newly FDA-approved therapies to the adult atopic dermatitis algorithm, updating the 2023 and 2024 topical and systemic guidelines: tapinarof cream 1% (a nonsteroidal aryl hydrocarbon receptor agonist), roflumilast cream 0.15% (a PDE4 inhibitor), lebrikizumab (IL-13) and nemolizumab (IL-31 receptor).",
+    "impact": "All four carry STRONG recommendations. Tapinarof cream for moderate-to-severe AD; roflumilast 0.15% cream for mild-to-moderate; lebrikizumab for moderate-to-severe; nemolizumab for moderate-to-severe with concomitant topical therapy.",
+    "practical": "Two genuinely non-steroidal topical options now sit in the guideline, which matters for long-term use on the face, flexures and in children where steroid atrophy is the limiting factor. IL-13 and IL-31 blockade give two new mechanisms for patients whose itch or eczema has failed IL-4Rα blockade.",
+    "link": "JAAD - AAD focused update, atopic dermatitis in adults",
+    "url": "https://www.jaad.org/article/S0190-9622(25)02125-5/fulltext",
+    "verify": {
+      "status": "matched",
+      "note": "Real and accurately summarised. JAAD, September 2025, DOI 10.1016/j.jaad.2025.05.1386. All four drugs, their mechanisms, the severity bands and the STRONG recommendation strength were confirmed, as was that nemolizumab is recommended WITH concomitant topical therapy. One of the cleanest entries across all submitted lists."
+    }
+  },
+  {
+    "title": "North American Clinical Practice Guidelines for the Medical Management of Hidradenitis Suppurativa in Special Patient Populations",
+    "journal": "Journal of the American Academy of Dermatology",
+    "date": "2025",
+    "breakthrough": "Consensus guidance for hidradenitis suppurativa in the populations trials routinely exclude: pediatric and adolescent patients, pregnancy and lactation, and patients with significant comorbidity including renal or hepatic dysfunction.",
+    "impact": "Sets out safety windows for biologics (TNF inhibitors, IL-17 inhibitors) and for hormonal and antibiotic regimens across pregnancy, pediatric age bands and organ dysfunction.",
+    "practical": "HS scars irreversibly, so hesitation about systemic therapy in a pregnant or adolescent patient has a permanent cost. Guidance that says what is safe in these groups is what allows early systemic treatment instead of watchful waiting.",
+    "link": "JAAD - HS guidelines for special populations",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=North+American+clinical+practice+guidelines+medical+management+hidradenitis+suppurativa+special+patient+populations",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "Plausible and consistent with the HS guideline literature, but no specific document matching this title was located in the searches run. The url is a PubMed title search rather than a resolved citation. Confirm the exact reference before relying on the safety-window specifics, which are the clinically load-bearing part of this entry."
+    }
+  },
+  {
+    "title": "Efficacy and Safety of Bimekizumab in Moderate-to-Severe Hidradenitis Suppurativa (BE HEARD I and BE HEARD II)",
+    "journal": "The Lancet",
+    "date": "22 May 2024",
+    "breakthrough": "Two 48-week, randomised, double-blind, placebo-controlled, multicentre phase 3 trials of bimekizumab — which inhibits both IL-17A and IL-17F — in moderate-to-severe HS, showing rapid and sustained clinical response.",
+    "impact": "Established dual IL-17A/F inhibition as a mechanism in chronic suppurative inflammatory skin disease, and pushed the field toward deeper response thresholds such as HiSCR75 rather than HiSCR50.",
+    "practical": "Meaningful reduction in painful inflammatory nodules and abscesses, including in patients who have failed anti-TNF therapy — which had been close to the end of the road for HS.",
+    "link": "The Lancet - BE HEARD I and II phase 3 trials",
+    "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00101-6/abstract",
+    "verify": {
+      "status": "corrected — year",
+      "note": "Real and accurately described. DATE: published in The Lancet on 22 May 2024, not 2025. Content otherwise unchanged; 'disease-modifying' softened to a description of the actual effect, since the trials measured clinical response rather than disease modification."
+    }
+  },
+  {
+    "title": "Nemolizumab with Concomitant Topical Therapy in Adolescents and Adults with Moderate-to-Severe Atopic Dermatitis (ARCADIA 1 and ARCADIA 2)",
+    "journal": "The Lancet",
+    "date": "24 July 2024",
+    "breakthrough": "Two replicate 48-week double-blind randomised controlled phase 3 trials of nemolizumab, which targets the IL-31 receptor alpha, in patients aged 12 and over. Improved itch, skin lesions and sleep disturbance.",
+    "impact": "Supports IL-31 as a driver of the neuroimmune itch-scratch cycle in atopic dermatitis, the same pathway nemolizumab exploits in prurigo nodularis.",
+    "practical": "Pruritus improves early, which is what patients notice first and what most affects sleep. Maintenance dosing every 8 weeks is a practical advantage over more frequent injection schedules.",
+    "link": "The Lancet - ARCADIA 1 and ARCADIA 2 phase 3 trials",
+    "url": "https://www.thelancet.com/article/S0140-6736(24)01203-0/abstract",
+    "verify": {
+      "status": "corrected — year",
+      "note": "Real and accurately described. DATE: published in The Lancet on 24 July 2024, not 2025. One softening: 'Confirms IL-31 as the CENTRAL driver' overstates — the trials support IL-31 as a driver, and multiple cytokine pathways contribute to itch in AD. 'Rapid relief within days' changed to 'improves early', since the specific onset timing was not confirmed from the primary publication."
+    }
+  },
+  {
+    "title": "Rilzabrutinib in Antihistamine-Refractory Chronic Spontaneous Urticaria (RILECSU Phase 2)",
+    "journal": "JAMA Dermatology",
+    "date": "2025;161(7):679-687",
+    "breakthrough": "Oral rilzabrutinib, a Bruton tyrosine kinase inhibitor, in 160 adults with moderate-to-severe chronic spontaneous urticaria not controlled on H1-antihistamines, across 51 centres in 12 countries. At 1200 mg/day it significantly reduced the weekly Urticaria Activity Score and both components — itch and hives — at week 12, with separation as early as week 1.",
+    "impact": "Validates intracellular BTK signalling in mast cells and basophils as a druggable target in severe urticaria, and does so with a small molecule rather than a biologic.",
+    "practical": "An oral alternative to injectable omalizumab for hard-to-treat CSU. The trial enrolled both omalizumab-naive patients and omalizumab-incomplete responders, so it speaks to the population that has run out of options. Phase 2 dose-ranging with a 40-week open-label extension — not yet a phase 3 result.",
+    "link": "JAMA Dermatology - RILECSU phase 2 trial",
+    "url": "https://jamanetwork.com/journals/jamadermatology/fullarticle/2833141",
+    "verify": {
+      "status": "matched with corrections",
+      "note": "Real and accurate. JAMA Dermatology 2025;161(7):679-687, DOI 10.1001/jamadermatol.2025.0733, 160 patients, 51 centres. Two corrections: ANGIOEDEMA was not among the reported outcomes — the reported components are itch (ISS7) and hives (HSS7) within UAS7, so the angioedema claim has been removed. And the original's framing around 'autoimmune (type IIb) chronic urticaria' does not match enrolment, which was by omalizumab exposure rather than by type IIb status. Added the effective dose (1200 mg/day) and that this is a phase 2 dose-ranging study."
+    }
+  },
+  {
+    "title": "Lebrikizumab in Adults and Adolescents with Skin of Color and Moderate-to-Severe Atopic Dermatitis (ADmirable)",
+    "journal": "American Journal of Clinical Dermatology / British Journal of Dermatology",
+    "date": "2025",
+    "breakthrough": "An open-label phase 3b study of the IL-13 inhibitor lebrikizumab in 90 adult and adolescent patients with Fitzpatrick skin phototypes IV-VI at 44 US sites, designed specifically to track pigmentary outcomes rather than treating them as incidental.",
+    "impact": "Used the PDCA-Derm™ instrument to assess post-inflammatory hyperpigmentation as a study endpoint — a validated way to measure the outcome patients with darker skin most often report as their main concern, and which erythema-weighted scores like EASI systematically miss.",
+    "practical": "At week 24, 64.4% of patients with baseline hyperpigmented areas showed improvement and about a quarter reached normal skin tone; 78.4% achieved EASI-75 and 54.1% IGA 0/1. Response rates rose with phototype (63% type IV, 88% type V, 96% type VI). Adverse events in 32%, mostly mild or moderate, with no serious events or discontinuations.",
+    "link": "ADmirable study - lebrikizumab in skin of color",
+    "url": "https://academic.oup.com/bjd/article-abstract/191/Supplement_2/ljae266.099/7728600",
+    "verify": {
+      "status": "corrected",
+      "note": "Real. Three corrections. The instrument is PDCA-Derm (Post-inflammatory hyperpigmentation/Dyspigmentation Clinical Assessment), not 'PCDA-Derm' as submitted — the letters were transposed. The study is OPEN-LABEL and single-arm with 90 patients, so 'Confirms high efficacy' overstates what an uncontrolled study can establish; the numbers are now given instead. And the pigmentary improvement was measured at week 24, so 'rapid reduction of dyspigmentation' is not supported."
+    }
+  },
+  {
+    "title": "Emollients to Prevent Pediatric Eczema: A Pragmatic and Decentralized Randomized Clinical Trial (CASCADE)",
+    "journal": "JAMA Dermatology",
+    "date": "23 July 2025",
+    "breakthrough": "1,247 infant-parent dyads across 25 pediatric and family medicine clinics in four US states, NOT selected for atopic dermatitis risk. Caregivers applied a bland full-body moisturizer daily starting before 9 weeks of age. Atopic dermatitis incidence by 24 months was lower with daily emollient use.",
+    "impact": "The population is the point. Earlier trials of emollient prophylaxis in HIGH-RISK, atopy-prone infants were negative — this trial found benefit in an unselected, representative infant cohort, which is the opposite of the expected pattern and is why it matters.",
+    "practical": "A bland moisturizer applied daily from the first weeks of life is about as low-cost and low-risk as an intervention gets. Note that this trial does NOT tell you which moisturizer: it used one bland study-supplied product and did not compare formulations. The first randomised trial of a dermatologic intervention run through primary care practice-based research networks, which is also why its population is representative.",
+    "link": "JAMA Dermatology - CASCADE infant emollient trial",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12287936/",
+    "verify": {
+      "status": "corrected — population and formulation claims reversed",
+      "note": "The trial is real and POSITIVE (JAMA Dermatology, 23 July 2025, 1,247 dyads, 25 clinics). Two substantive corrections. The original said the trial clarified 'which formulations (ceramide-dominant vs standard petrolatum)' benefit — it made no formulation comparison; a single bland moisturizer was used. And the original attributed the benefit to 'infants with genetic skin-barrier susceptibility' — CASCADE explicitly did NOT select for AD risk, and trials in atopy-prone infants have been negative, so the population claim was backwards."
+    }
+  },
+  {
+    "title": "Nicotinamide for Skin Cancer Chemoprevention: A Real-World Cohort Study",
+    "journal": "JAMA Dermatology",
+    "date": "2025",
+    "breakthrough": "A retrospective cohort of 33,822 Veterans Affairs patients — 12,287 exposed to oral nicotinamide 500 mg twice daily for more than 30 days, matched to 21,479 unexposed. Overall skin cancer risk fell 14%, and cutaneous squamous cell carcinoma 22%.",
+    "impact": "TIMING dominated the effect. Benefit was greatest when nicotinamide was started after the FIRST skin cancer (roughly a 50-56% reduction) and weakened progressively with each subsequent diagnosis, becoming non-significant after the seventh. An accompanying commentary was titled 'Nicotinamide for Skin Cancer Chemoprevention: The Jury Was Out and Still is' — this is not a settled question.",
+    "practical": "Start it early, not as a last resort after a patient has already accumulated many keratinocyte carcinomas, which is the opposite of how it tends to be prescribed. Importantly, this cohort found NO overall benefit in solid organ transplant recipients, though early use was associated with less squamous cell carcinoma in that group.",
+    "link": "JAMA Dermatology - nicotinamide for skin cancer chemoprevention",
+    "url": "https://jamanetwork.com/journals/jamadermatology/article-abstract/2838591",
+    "verify": {
+      "status": "corrected — transplant claim reversed",
+      "note": "Real (JAMA Dermatology 2025, DOI 10.1001/jamadermatol.2025.3238, VA Corporate Data Warehouse, 33,822 patients). One important correction: the original said the study 'Solidifies real-world chemoprevention guidelines for immunocompetent AND high-risk organ transplant populations' — the cohort found NO overall benefit in transplant recipients. Added the timing gradient, which is the study's central and most actionable finding and was absent from the original, and the accompanying commentary noting the question remains unsettled."
+    }
+  },
+  {
+    "title": "Oral Collagen Peptide Supplementation for Skin Hydration and Barrier Function: A Systematic Review and Meta-Analysis",
+    "journal": "JAMA Dermatology",
+    "date": "2025",
+    "breakthrough": "A meta-analysis using multilevel sensitivity models to separate genuine signal from nutricosmetic marketing claims about oral collagen supplements.",
+    "impact": "Draws a boundary: oral collagen appears to improve stratum corneum hydration and transepidermal water loss, functioning as a systemic moisturizer, without independently altering deep dermal density or established wrinkle structure.",
+    "practical": "Useful for the consultation that happens weekly — a patient asking whether collagen supplements work. The answer is a qualified yes for hydration and no for dermal remodelling, which is more useful than either blanket endorsement or blanket dismissal.",
+    "link": "JAMA Dermatology - oral collagen supplementation meta-analysis",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=oral+collagen+peptide+supplementation+skin+hydration+systematic+review+meta-analysis+JAMA+Dermatology",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific JAMA Dermatology meta-analysis matching this description was located in the searches run, and the url is a PubMed title search rather than a resolved citation. The conclusions as stated are consistent with the wider nutricosmetics literature, but the specific findings — hydration and TEWL yes, dermal density no — should be checked against the actual paper before being taught."
+    }
+  },
+  {
+    "title": "Circulating Tumor DNA versus Merkel Cell Polyomavirus Antibodies for Surveillance of Merkel Cell Carcinoma Recurrence",
+    "journal": "JAMA Dermatology",
+    "date": "8 July 2026",
+    "breakthrough": "A multicentre cohort of 169 patients with stage I-IV Merkel cell carcinoma and detectable MCPyV antibodies, across three US academic centres, undergoing serial testing between April 2020 and March 2024. Tumor-informed circulating tumor DNA predicted recurrence more accurately than MCPyV antibody titre.",
+    "impact": "Positions liquid biopsy as the more reliable surveillance tool in antibody-positive patients: ctDNA positive predictive value 66% for clinically evident recurrence, and negative predictive value 97% for a decreasing titre.",
+    "practical": "Detects subclinical recurrence before it is radiographically or clinically apparent, which in a cancer as immunoresponsive as MCC means immunotherapy can start earlier. Note the PPV: at 66%, a positive result is a reason to look hard, not a diagnosis.",
+    "link": "JAMA Dermatology - ctDNA or Merkel virus antibodies for surveillance",
+    "url": "https://jamanetwork.com/journals/jamadermatology/article-abstract/2851488",
+    "verify": {
+      "status": "corrected — numbers and year",
+      "note": "Real but three fixes. DATE: published 8 July 2026, not 2025 — it belongs in the 2026 list rather than this one, and has been left in place only to preserve the ten-entry structure; consider moving it. NUMBERS: the reported positive predictive value is 66%, not 73%, and the negative predictive value is 97% for a decreasing titre, not a '90-day NPV of 99%'. Trial size and design added. The core conclusion — ctDNA outperforms MCPyV antibody — is correct."
+    }
+  }
+]
