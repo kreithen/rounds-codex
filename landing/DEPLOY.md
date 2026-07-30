@@ -10,11 +10,15 @@ Canonical URL: **https://roundscodex.com** (apex). `www.roundscodex.com` 301-red
 
 ## 1. Create the Netlify site (once)
 
+This is a **new, separate** Netlify site from the app (the app deploys from the private
+`rounds-codex-app` repo; this landing page deploys from the public `rounds-codex` repo).
+
 1. Netlify → **Add new site → Import an existing project → GitHub** → pick
-   `kreithen/rounds-codex`.
-2. Netlify reads the repo-root **`netlify.toml`**, which sets `publish = "landing"` and no
+   **`kreithen/rounds-codex`** (the public repo).
+2. **Branch to deploy: `main`.**
+3. Netlify reads the repo-root **`netlify.toml`**, which sets `publish = "landing"` and no
    build command. Leave every build field at its default and deploy.
-3. It goes live at a temporary `random-name.netlify.app` URL. Confirm the page renders there
+4. It goes live at a temporary `random-name.netlify.app` URL. Confirm the page renders there
    before touching DNS.
 
 > Optional: rename the Netlify subdomain (Site settings → Domain management) to something like
