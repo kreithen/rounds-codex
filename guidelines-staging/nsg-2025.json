@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Middle Meningeal Artery Embolization for Chronic Subdural Hematoma (EMBOLISE)",
+    "journal": "NEJM",
+    "date": "November 2024",
+    "breakthrough": "Adjunctive middle meningeal artery embolization with a liquid embolic agent, added to surgical evacuation or to conservative management, significantly reduced hematoma recurrence or progression requiring reoperation compared with standard care alone in subacute and chronic subdural hematoma.",
+    "impact": "The first randomised evidence for an endovascular adjunct in a condition managed surgically for a century. It treats the mechanism — the neovascularised, leaky membrane fed by the MMA — rather than just draining the product of it, which is why recurrence falls rather than merely being delayed.",
+    "practical": "Most useful in the patients who recur: elderly, anticoagulated, or already reoperated. Note it is ADJUNCTIVE in this trial — embolization did not replace evacuation of a symptomatic collection, and a patient with mass effect and deficit still needs the burr holes.",
+    "link": "NEJM - embolization of the middle meningeal artery for chronic subdural hematoma",
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2313472",
+    "verify": {
+      "status": "corrected — year",
+      "note": "Real and positive; NEJM, November 2024 rather than 2025. 'Establishes MMA embolization as a DEFINITIVE adjunctive standard of care in guidelines' softened — the trial supports it strongly but no guideline revision was confirmed. Added the point the entry blurred: embolization was adjunctive to evacuation or conservative care, not an alternative to evacuating a symptomatic collection."
+    }
+  },
+  {
+    "title": "Congress of Neurological Surgeons Guidelines on Emerging Therapies for Brain Metastases",
+    "journal": "Neurosurgery",
+    "date": "2025",
+    "breakthrough": "A multidisciplinary guideline series covering parenchymal and leptomeningeal brain metastases, integrating targeted systemic therapy, stereotactic radiosurgery and laser interstitial thermal therapy into the surgical decision algorithm.",
+    "impact": "The substantive change is that a brain metastasis is no longer automatically a local-treatment problem. Brain-penetrant targeted agents — osimertinib in EGFR-mutant lung cancer, alectinib in ALK-rearranged disease, tucatinib-based regimens in HER2-positive breast cancer — achieve intracranial responses that can defer or replace local therapy in selected patients.",
+    "practical": "Mutational status now belongs in the operative discussion alongside lesion count and location. LITT is a genuine option for recurrent lesions and for radiation necrosis, where re-craniotomy is high-risk and the distinction between tumour and necrosis is often only resolved histologically.",
+    "link": "Neurosurgery - CNS guidelines on brain metastases",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Congress+of+Neurological+Surgeons+guidelines+brain+metastases+emerging+therapies+Neurosurgery",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "The CNS does publish guideline series in Neurosurgery and the clinical content is consistent with current neuro-oncology practice, but no specific 2025 document was located and the '23 evidence-based recommendations' figure is therefore not asserted; the url is a PubMed title search. 'Establishes LITT as a valid alternative to open craniotomy' softened to an option in the settings where it is actually used. Named agents were adjusted to the ones with established intracranial activity."
+    }
+  },
+  {
+    "title": "Vorasidenib in IDH1- or IDH2-Mutant Low-Grade Glioma (INDIGO), and Targeted Therapy in Diffuse Midline Glioma",
+    "journal": "NEJM",
+    "date": "INDIGO published 2023",
+    "breakthrough": "INDIGO showed that vorasidenib, a brain-penetrant oral IDH1/2 inhibitor, more than doubled progression-free survival and significantly delayed the need for radiation and chemotherapy in residual or recurrent grade 2 IDH-mutant glioma after surgery. For H3K27M-mutant diffuse midline glioma, the imipridone dordivaprone (ONC201) has shown activity in single-arm studies.",
+    "impact": "Changes what the operation is for. In IDH-mutant grade 2 glioma the surgeon is now securing tissue and cytoreduction ahead of an effective oral maintenance therapy, with the specific goal of deferring radiotherapy and its cognitive cost in a young patient with years of expected survival.",
+    "practical": "Molecular status has to be known early, which argues for prompt IDH testing rather than waiting on a full panel. Maximal safe resection remains the priority — vorasidenib defers adjuvant toxicity, it does not substitute for cytoreduction. Note the asymmetry in evidence: INDIGO is a randomised phase 3 trial; the H3K27M data are not.",
+    "link": "NEJM - vorasidenib in IDH1- or IDH2-mutant low-grade glioma",
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2304194",
+    "verify": {
+      "status": "corrected — year and evidence asymmetry",
+      "note": "INDIGO is real and the PFS finding is accurate, but it was published in NEJM in 2023, not 2025. The submission bracketed vorasidenib and dordivaprone together as 'multi-center Phase 3 data'; only vorasidenib has a randomised phase 3 trial, and the entry now says so. This trial also appeared in the second neurosurgery list submitted; it is kept here once rather than on both year pages, since the same study appearing under 2025 and 2026 would read as a fault."
+    }
+  },
+  {
+    "title": "Endovascular Thrombectomy for Medium and Distal Vessel Occlusion (ESCAPE-MeVO, DISTAL, DISCOUNT)",
+    "journal": "NEJM",
+    "date": "February 2025",
+    "breakthrough": "Three randomised trials tested thrombectomy against best medical therapy in medium and distal vessel occlusion — M2/M3, A2, P2 territories. All three were NEGATIVE: thrombectomy did not improve 90-day functional outcome. ESCAPE-MeVO randomised 530 patients within 12 hours of last seen normal.",
+    "impact": "The ESCAPE-MeVO investigators state that their results 'do not support routine endovascular treatment of acute ischaemic stroke due to medium-vessel occlusion.' The accompanying NEJM editorial was titled 'Medium- and Distal-Vessel Occlusion — The Limit of Thrombectomy?' Guidelines have not expanded candidacy to MeVO, because the trials argue against it.",
+    "practical": "Reserve thrombectomy for proximal large vessel occlusion. Intravenous thrombolysis remains the treatment for MeVO. The technical ability to navigate a microcatheter into a distal branch turned out not to translate into patient benefit — smaller territory at risk, more procedural risk per unit of tissue saved.",
+    "link": "NEJM - medium- and distal-vessel occlusion: the limit of thrombectomy?",
+    "url": "https://www.nejm.org/doi/abs/10.1056/NEJMe2500492",
+    "verify": {
+      "status": "matched with corrections",
+      "note": "Real and correctly reported — the submission was appropriately cautious here, describing the need for strict sub-selection and the haemorrhage risk without claiming benefit, which is notably more accurate than the version of this entry submitted in the Emergency Medicine list, where it was reversed into a positive finding. Sharpened to state plainly that all three trials were negative, and added the trial size and the investigators' own conclusion. 'Establishing dedicated micro-device selection criteria for distal occlusions' could not be confirmed and was removed."
+    }
+  },
+  {
+    "title": "Low-Intensity Pulsed Ultrasound with Microbubbles for Blood-Brain Barrier Opening in Recurrent Glioblastoma",
+    "journal": "The Lancet Oncology",
+    "date": "2023",
+    "breakthrough": "A phase 1 trial used a skull-implanted ultrasound array with intravenous microbubbles to transiently open the blood-brain barrier in recurrent glioblastoma, enabling delivery of albumin-bound paclitaxel — a drug that does not otherwise reach the brain — with carboplatin. Sonication was safe and repeatable, and opening was reversible within about an hour.",
+    "impact": "Establishes non-invasive, repeatable BBB opening as a workable drug-delivery platform, which reframes the problem in neuro-oncology: many systemic agents fail in glioma because of access rather than because of biology.",
+    "practical": "This is a delivery technology at an early stage, not a treatment with demonstrated survival benefit. What it opens up is the reuse of potent agents already known to work against glioma cells in vitro but discarded because they never reached the tumour.",
+    "link": "The Lancet Oncology - ultrasound-based blood-brain barrier opening in recurrent glioblastoma",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=low-intensity+pulsed+ultrasound+microbubbles+blood-brain+barrier+paclitaxel+recurrent+glioblastoma+Lancet+Oncology",
+    "verify": {
+      "status": "corrected — phase and year",
+      "note": "The work is real (Northwestern, Sonabend and colleagues, Lancet Oncology 2023) but it is a PHASE 1 trial, not the multi-trial validation the submission implied, and the year is 2023. The specific citation was not resolved from the searches run, so the url is a PubMed title search. 'Validates MRI-guided non-invasive sonication' and 'establishing protocol safety for repeated outpatient BBB opening' overstate a phase 1 result and were softened; the delivered agent was albumin-bound paclitaxel with carboplatin."
+    }
+  },
+  {
+    "title": "Predicting Long-Term Pain Freedom after Microvascular Decompression for Trigeminal Neuralgia",
+    "journal": "Neurosurgery",
+    "date": "2025",
+    "breakthrough": "A scoring system combining clinical features with high-resolution MRI findings, intended to predict durable pain freedom after microvascular decompression for classical trigeminal neuralgia.",
+    "impact": "Standardises what counts as neurovascular conflict on preoperative imaging — the distinction between true arterial compression with distortion of the nerve, venous contact, and incidental contact without deformity, which is where a good deal of disagreement about MVD candidacy actually lives.",
+    "practical": "Best outcomes follow classical, episodic, lancinating pain in a trigeminal distribution with clear arterial compression on high-resolution imaging (CISS or FIESTA sequences). Constant background pain, sensory loss, or absent arterial conflict predicts poorly, and those patients are better served by considering ablative options — rhizotomy or radiosurgery — with realistic expectations set beforehand.",
+    "link": "Neurosurgery - predicting outcomes after microvascular decompression for trigeminal neuralgia",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=microvascular+decompression+trigeminal+neuralgia+predictive+scoring+outcome+Neurosurgery",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific validation study matching this description was located, and the institutional attribution (Columbia and NewYork-Presbyterian) is unconfirmed; the url is a PubMed title search. The underlying clinical principle — that classical presentation plus demonstrated arterial conflict predicts durable relief, and that atypical or non-compressive cases do worse — is well established, and has been stated explicitly here rather than left as 'a refined scoring system', which taught nothing usable."
+    }
+  },
+  {
+    "title": "Awake Full-Endoscopic Lumbar Decompression under Regional Anaesthesia",
+    "journal": "Journal of Neurosurgery: Spine",
+    "date": "2025",
+    "breakthrough": "Prospective registry data on full-endoscopic lumbar discectomy and decompression performed under targeted epidural or regional anaesthesia rather than general anaesthesia — 'awake spine surgery' — with standardised surgical and anaesthetic pathways for outpatient care.",
+    "impact": "The value is in who becomes operable. A frail or cardiopulmonary-compromised patient with disabling neurogenic claudication may be a poor candidate for general endotracheal anaesthesia but a reasonable one for an awake endoscopic decompression.",
+    "practical": "Fewer intraoperative haemodynamic swings and faster recovery than open or microdiscectomy under general anaesthesia. Two honest caveats: registry data are not randomised, so selection favours the awake approach, and the technique has a real learning curve — endoscopic decompression results are strongly operator-dependent, and an awake patient reduces tolerance for a long operation.",
+    "link": "Journal of Neurosurgery: Spine - awake full-endoscopic lumbar decompression",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=awake+full-endoscopic+lumbar+decompression+regional+anesthesia+registry+Journal+of+Neurosurgery+Spine",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific multicentre registry publication matching this description was located; the url is a PubMed title search. 'Establishes standardized surgical and anesthetic pathways' and the comparative claim of faster recovery than open microdiscectomy are presented as registry observations rather than established findings, and the non-randomised design plus the learning-curve caveat were added — both bear directly on whether the reported advantage would hold in a given surgeon's hands."
+    }
+  },
+  {
+    "title": "Long-Term Adaptive Deep Brain Stimulation in Parkinson Disease (ADAPT-PD)",
+    "journal": "JAMA Neurology",
+    "date": "22 September 2025",
+    "breakthrough": "The first trial of CHRONIC adaptive deep brain stimulation — sensing subthalamic beta-band local field potentials and adjusting stimulation amplitude in real time. 68 participants with moderate-to-advanced Parkinson disease, already implanted with bilateral leads and STABLE on continuous DBS at baseline. The primary outcome was met: most achieved good on-time without troublesome dyskinesia relative to their stable continuous DBS.",
+    "impact": "Establishes that chronic closed-loop stimulation is tolerable, effective and safe — a feasibility and non-inferiority result. It does NOT establish superiority over continuous DBS: the trial was NONRANDOMISED and open-label, with 68 patients selected for being already stable on continuous stimulation, which is not the population in which continuous DBS fails.",
+    "practical": "Stimulation-related adverse events were mostly transient worsening during the setup phase and nearly all resolved with reprogramming; no serious device-related complications. Sensing-capable devices are a reasonable choice where available, but no guideline recommends closed-loop systems as the preferred primary implant, and adaptive stimulation still requires expert programming rather than replacing it.",
+    "link": "JAMA Neurology - long-term personalized adaptive deep brain stimulation in Parkinson disease",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12455485/",
+    "verify": {
+      "status": "corrected — superiority claimed from a nonrandomised trial",
+      "note": "Real: JAMA Neurology, online 22 September 2025, 68 participants, 70.6% men, mean age 62.2, mean disease duration 13.5 years. THE CORRECTION MATTERS because this claim appeared in three of the four submitted lists: ADAPT-PD is NONRANDOMISED and OPEN-LABEL, and its primary outcome was performance relative to stable continuous DBS. It cannot show that adaptive DBS 'supercedes' or 'outperforms' continuous DBS. Nor has any guideline made sensing-capable pulse generators 'preferred primary implants'. Also removed 'eliminates the need for manual trial-and-error programming' — setup required reprogramming in most participants."
+    }
+  },
+  {
+    "title": "Timing of Decompressive Craniectomy in Malignant Middle Cerebral Artery Infarction",
+    "journal": "Pooled randomised evidence (DECIMAL, DESTINY, HAMLET, DESTINY II)",
+    "date": "Established evidence base",
+    "breakthrough": "In patients aged 60 or under with malignant MCA infarction, decompressive craniectomy WITHIN 48 HOURS substantially reduces death and severe disability: in the pooled analysis of 93 randomised patients with NIHSS above 16, survival with mRS 4 or better was 75% versus 24%, an absolute risk reduction of about 51%. DESTINY II extended the survival benefit to patients over 60, at the cost of greater disability among survivors.",
+    "impact": "The 48-hour window is where the randomised evidence sits. Surgery beyond 48 hours has NOT been shown superior to best medical management, and the optimal timing outside that window has never been addressed by a randomised trial or pooled analysis — it remains an open question supported only by observational series.",
+    "practical": "Decide early. The decision is as much about acceptable disability as about survival: decompression converts deaths into survivors, many of whom are left significantly disabled, and that conversation belongs with the family before the operation rather than after it. Age above 60 shifts the balance further toward disability.",
+    "link": "Decompressive craniectomy for malignant middle cerebral artery infarction",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8926127/",
+    "verify": {
+      "status": "REPLACED — the cited trial does not exist and the claim is contrary to available evidence",
+      "note": "No Lancet Neurology international randomised trial of decompressive craniectomy beyond the 48-hour window was located. The submission stated it 'confirm[ed] that decompressive craniectomy retains mortality-reduction benefits up to 72 hours post-stroke onset' — the available evidence points the other way: craniectomy performed more than 48 hours after onset does not appear superior to best medical management, and no randomised trial has addressed late timing. Rewritten around the randomised evidence that does exist, with the disability-versus-survival trade-off made explicit, since that is the substance of the consent conversation."
+    }
+  },
+  {
+    "title": "Cerebrospinal Fluid Cell-Free DNA Sequencing for Molecular Diagnosis of CNS Tumours",
+    "journal": "Nature Medicine",
+    "date": "2025",
+    "breakthrough": "Sequencing of cell-free DNA from cerebrospinal fluid — obtained intraoperatively or by lumbar puncture — for molecular profiling of primary brain tumours and leptomeningeal disease, without tissue biopsy.",
+    "impact": "Potentially transformative where tissue carries prohibitive risk: brainstem, thalamic and pineal region lesions, and leptomeningeal disease, where the diagnosis is often made late because cytology is insensitive and repeated punctures are needed.",
+    "practical": "Yield depends on tumour location and CSF circulation — periventricular and leptomeningeal disease shed detectably, whereas a peripheral hemispheric lesion may not, so a negative result does not exclude tumour. Treat it as a way to obtain molecular information when tissue is unobtainable, not as a substitute for biopsy when biopsy is safe.",
+    "link": "Nature Medicine - CSF cell-free DNA for CNS tumour diagnosis",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=cerebrospinal+fluid+cell-free+DNA+sequencing+CNS+tumor+molecular+diagnosis+Nature+Medicine",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific prospective Nature Medicine validation study matching this description was located; the url is a PubMed title search. The approach is genuine and under active investigation. 'Endorses CSF liquid biopsy as an OFFICIAL diagnostic tool in neuro-oncology guidelines' could not be confirmed and was removed — no guideline endorsement was identified. Added the location-dependent yield, which is the limitation that determines whether a negative result means anything."
+    }
+  }
+]

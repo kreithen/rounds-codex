@@ -1,0 +1,113 @@
+[
+  {
+    "title": "Squid Middle Meningeal Artery Embolization for Subacute and Chronic Subdural Haematoma (STEM)",
+    "journal": "Presented 2025",
+    "breakthrough": "Middle meningeal artery embolization with a non-adhesive liquid embolic agent (Squid), tested standalone or adjunctive against conservative or surgical management, reported reduced treatment failure and hematoma progression in subacute and chronic subdural haematoma.",
+    "impact": "Adds a second embolic agent and, importantly, a STANDALONE arm — EMBOLISE tested embolization as an adjunct to evacuation or conservative care, whereas the question of whether embolization alone can substitute for surgery in a selected patient is the one that changes referral pathways.",
+    "practical": "Transradial access makes this a short-stay or day-case procedure, which is the practical draw for a frail anticoagulated patient in whom general anaesthesia and burr holes carry real risk. A patient with mass effect and a neurological deficit still needs the collection drained.",
+    "link": "STEM - Squid embolization of the middle meningeal artery for subdural haematoma",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=STEM+trial+Squid+middle+meningeal+artery+embolization+subdural+hematoma",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "The MMA embolization trial programme is real and STEM is a recognised trial name in it, but this specific publication was not located and the url is a PubMed title search. TWO CLAIMS REMOVED: 'significantly reduces... major neurological events' and 'Provides LEVEL I clinical trial evidence confirming that endovascular dural artery devascularization addresses the pathophysiological cause of capillary leak' — neither was confirmed, and a trial does not confirm a pathophysiological mechanism. Also note the submission listed EMBOLISE separately in the same batch; EMBOLISE is kept on the 2025 page so the same trial does not appear under both years."
+    }
+  },
+  {
+    "title": "Early Minimally Invasive Removal of Intracerebral Haemorrhage (ENRICH)",
+    "journal": "NEJM",
+    "date": "April 2024",
+    "breakthrough": "Early (within 24 hours) image-guided minimally invasive trans-sulcal parafascicular surgery for spontaneous intracerebral haemorrhage improved 180-day utility-weighted mRS compared with guideline-based medical management. The benefit was driven by the LOBAR subgroup; the trial's adaptive design enrolled predominantly lobar haemorrhage after early analyses.",
+    "impact": "The first positive surgical trial in spontaneous ICH after decades of neutral results (STICH, STICH II, MISTIE III). What changed was the approach — a trans-sulcal tubular corridor with early evacuation rather than late craniotomy through cortex.",
+    "practical": "Applies to LOBAR haemorrhage evacuated early through a minimally invasive corridor at a centre with the equipment and the workflow to do it within hours. It does not license craniotomy for deep basal ganglia bleeds, and it does not apply to late presentation. The adaptive enrolment is the reason the lobar restriction matters rather than being a subgroup footnote.",
+    "link": "NEJM - trial of early minimally invasive removal of intracerebral hemorrhage",
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2308440",
+    "verify": {
+      "status": "corrected — year and the strength of the guideline claim",
+      "note": "Real and positive; NEJM, April 2024. The lobar-driven benefit is correctly identified in the submission. Two softenings: 'establishing MIPS as a FIRST-LINE recommendation in AHA/ASA and neurosurgical guidelines' was not confirmed, and the adaptive design detail was added because it explains why the result belongs to lobar haemorrhage specifically rather than to ICH in general."
+    }
+  },
+  {
+    "title": "Decompressive Craniectomy for Severe Deep Supratentorial Intracerebral Haemorrhage (SWITCH)",
+    "journal": "The Lancet",
+    "date": "1 June 2024",
+    "breakthrough": "Decompressive craniectomy WITHOUT haematoma evacuation, added to best medical treatment, in severe deep basal ganglia or thalamic ICH. 42 European centres, 201 patients enrolled and 190 analysed. The result was a TREND toward better 6-month outcome that did NOT reach statistical significance — the trial was stopped early for lack of funding and is underpowered.",
+    "impact": "Provides weak evidence that craniectomy MIGHT be superior to medical treatment alone in this population. The investigators' own framing is that of a signal requiring confirmation, not a practice change.",
+    "practical": "The finding that matters for consent: survival was associated with severe disability in BOTH groups. This is a life-saving operation in the literal sense, and the survivors are severely disabled either way — which is the conversation to have with a family, not a claim of improved outcome. The result does not transfer to haemorrhage in other locations.",
+    "link": "The Lancet - decompressive craniectomy for spontaneous deep intracerebral haemorrhage (SWITCH)",
+    "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(24)00702-5/fulltext",
+    "verify": {
+      "status": "corrected — a non-significant trend was reported as a demonstrated benefit",
+      "note": "Real: The Lancet, 1 June 2024, 42 centres, 201 patients, 190 in the primary analysis. THE CORRECTION: the submission said the trial 'demonstrat[ed] reductions in 180-day mortality and severe disability' and that guidelines were updated to include craniectomy as 'an evidence-based salvage procedure'. The trial was STOPPED EARLY for funding, was underpowered, and its primary outcome was a non-significant trend — described in the accompanying literature as 'weak evidence'. Added the finding the entry omitted entirely: survival came with severe disability in both arms."
+    }
+  },
+  {
+    "title": "Thrombectomy for Stroke with Large Ischaemic Core (SELECT2)",
+    "journal": "NEJM",
+    "date": "February 2023",
+    "breakthrough": "Endovascular thrombectomy plus medical care in acute stroke with a LARGE ischaemic core (ASPECTS 3-5 or core volume 50 mL or more) within 24 hours improved functional outcome compared with medical care alone, with better 1-year survival on follow-up.",
+    "impact": "Together with ANGEL-ASPECT and RESCUE-Japan LIMIT, removed large core volume as an automatic exclusion from thrombectomy. A large established infarct is no longer a reason not to intervene.",
+    "practical": "Substantially widens the candidate pool, and the practical consequence is that a large core on initial imaging should trigger a thrombectomy conversation rather than close it. Note that most patients in these trials still ended up disabled — the benefit is a shift in the distribution of disability, not restoration to independence, and functional independence remained the minority outcome.",
+    "link": "NEJM - trial of endovascular thrombectomy for large ischemic stroke (SELECT2)",
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2214403",
+    "verify": {
+      "status": "corrected — year",
+      "note": "Real and positive; NEJM, February 2023 rather than 2026. Entry criteria and the 24-hour window are correctly stated in the submission. Added the companion trials that made the guideline change possible, and the caveat that functional independence remained the minority outcome — 'ensuring patients with extensive baseline cerebral ischemia receive endovascular intervention' as written implies a better expected outcome than the trials delivered."
+    }
+  },
+  {
+    "title": "Thrombectomy in Stroke with Extended Lesion and Extended Time Window (TENSION)",
+    "journal": "The Lancet",
+    "date": "2023",
+    "breakthrough": "Thrombectomy in large-core ischaemic stroke up to 12 hours from onset, with eligibility determined by non-contrast CT and ASPECTS rather than by CT perfusion or MRI, improved functional outcome versus medical management.",
+    "impact": "The imaging point is the important one: benefit was demonstrable using basic non-contrast CT, so advanced perfusion software is not a prerequisite for selecting large-core patients. That has direct consequences for equity of access in community and resource-limited centres.",
+    "practical": "Removes the delay of waiting for automated perfusion processing before a transfer decision. A community hospital with a CT scanner and someone who can read ASPECTS can identify a candidate and move them.",
+    "link": "The Lancet - TENSION, thrombectomy in extended lesion and extended time window",
+    "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(23)02032-9/fulltext",
+    "verify": {
+      "status": "corrected — year",
+      "note": "Real and positive; The Lancet, 2023 rather than 2026. The non-contrast CT selection point and the 12-hour window are accurately reported in the submission, as is the equity implication. No substantive correction beyond the date."
+    }
+  },
+  {
+    "title": "Guideline for the Early Management of Patients With Acute Ischaemic Stroke",
+    "journal": "Stroke (AHA/ASA)",
+    "date": "2026",
+    "breakthrough": "A multi-society update to the acute ischaemic stroke guideline, synthesising the past several years of trial evidence: tenecteplase in place of alteplase, thrombectomy eligibility extended to large-core presentations, prehospital routing, and early complication management.",
+    "impact": "Consolidates changes that had already happened in practice ahead of the guideline — tenecteplase adoption, large-core thrombectomy after SELECT2, ANGEL-ASPECT, RESCUE-Japan LIMIT and TENSION — into a single reference for systems of care.",
+    "practical": "Note what the evidence does NOT support extending: three randomised trials in 2025 (ESCAPE-MeVO, DISTAL, DISCOUNT) were negative for medium and distal vessel occlusion, so thrombectomy eligibility expands to large cores, not to small distal vessels. Tenecteplase's single bolus is the change with the biggest operational effect, because it removes an infusion pump from an interfacility transfer.",
+    "link": "Stroke - AHA/ASA guideline for the early management of acute ischaemic stroke",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=guideline+early+management+acute+ischemic+stroke+AHA+ASA+Stroke+tenecteplase+thrombectomy",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific 2026 guideline document was located and the url is a PubMed title search; the individual components (tenecteplase preference, large-core thrombectomy) are well supported independently. TWO CLAIMS CORRECTED. The submission said the guideline expands eligibility 'for large core AND DISTAL VESSEL OCCLUSIONS' — the 2025 MeVO trials were negative, so that direction is not supported and the entry now says so. And 'incorporating mobile stroke units' plus 'MANDATES direct transport to endovascular-capable centers' and 'formalizes intensive blood pressure lowering' could not be confirmed; mandate language was removed."
+    }
+  },
+  {
+    "title": "Consensus Practice Guidelines on Sacroiliac Joint Complex Pain",
+    "journal": "Regional Anesthesia & Pain Medicine",
+    "date": "2025",
+    "breakthrough": "A multispecialty international working group consensus covering diagnostic block protocols, radiofrequency ablation criteria, and selection parameters for minimally invasive sacroiliac joint fusion.",
+    "impact": "Sacroiliac joint pain has been diagnosed inconsistently and operated on variably, and the diagnostic block threshold is the crux — an objective criterion for who has SI joint pain at all, before anyone considers fusion.",
+    "practical": "A diagnostic block giving at least 50% relief is the conventional threshold before proceeding to ablation or fusion. The value to a spine surgeon is defensive as much as clinical: documented block response is what distinguishes appropriate selection from operating on axial low back pain of uncertain origin, which is where SI fusion earned its poor reputation.",
+    "link": "Regional Anesthesia & Pain Medicine - consensus practice guidelines on sacroiliac joint complex pain",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=consensus+practice+guidelines+sacroiliac+joint+pain+multispecialty+international+working+group",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "A multispecialty consensus on sacroiliac joint pain is consistent with recent Regional Anesthesia & Pain Medicine output, but the specific document was not located and the url is a PubMed title search. The 50% block-relief threshold stated in the submission is the conventional criterion in this literature and is retained as such rather than attributed to this document specifically."
+    }
+  },
+  {
+    "title": "Ventral versus Dorsal Surgery for Cervical Spondylotic Myelopathy (CSM-S)",
+    "journal": "JAMA",
+    "date": "2024",
+    "breakthrough": "A randomised trial comparing anterior (ventral) with posterior (dorsal) surgical approaches for cervical spondylotic myelopathy found NO significant difference in 1-year patient-reported physical function between the two.",
+    "impact": "Removes approach dogma. If neither approach is superior on patient-reported function, the choice properly rests on anatomy and alignment — sagittal alignment, number of compressive levels, whether cervical lordosis is preserved, and the location of the compression.",
+    "practical": "In a patient with preserved lordosis and multilevel posterior-predominant compression, posterior laminoplasty or laminectomy with fusion is a defensible choice over multilevel anterior fusion, with less instrumented fusion and fewer approach-related risks such as dysphagia and recurrent laryngeal nerve injury. Kyphosis or focal anterior compression still argues for a ventral approach.",
+    "link": "JAMA - ventral versus dorsal spinal surgery in cervical spondylotic myelopathy",
+    "url": "https://jamanetwork.com/journals/jama/fullarticle/2817403",
+    "verify": {
+      "status": "corrected — year",
+      "note": "Real; JAMA, 2024 rather than 2026, and the null result on 1-year patient-reported physical function is correctly reported in the submission. Added the specific approach-related risks that distinguish the two operations, since 'reducing instrumented fusion costs, surgical risk, and recovery times' does not say what the risks actually are — and dysphagia and recurrent laryngeal nerve injury are the ones that drive the decision."
+    }
+  }
+]

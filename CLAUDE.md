@@ -246,7 +246,7 @@ no backend. This file is context for future sessions — read it before starting
   and strips** — review material, never app content. Anesthesiology is coded **`anes`**. Years sort
   **ascending**, so 2025 sits above 2026 (specified; not newest-first like the rest of the app).
   Built by `scripts/add_clinical_guidelines.js` + `scripts/add_guideline_share.js`.
-  **Live for 6 specialties (120 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `fm`, `im`
+  **Live for 7 specialties (138 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `fm`, `im`, `nsg`
   — all six with both years. Reachable from the home page via the purple CLINICAL UPDATES button
   and at `/u/`.
   **Every submitted entry must be citation-checked before merging.** Across the first 100, 13 stated

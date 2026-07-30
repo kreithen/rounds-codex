@@ -1,17 +1,17 @@
 # Clinical guideline citation checks — for sign-off
 
-120 entries checked. Grouped worst-first by what a reader would take away if the
+138 entries checked. Grouped worst-first by what a reader would take away if the
 entry shipped as submitted. Every entry below is live in the app in its CORRECTED form; this
 document records what was changed and why, so any of it can be reverted.
 
 | verdict | entries |
 |---|---|
 | Findings stated backwards — a reader would learn the opposite of the published result | 13 |
-| Cited study could not be found | 5 |
+| Cited study could not be found | 6 |
 | Evidence level inflated — case report presented as a trial | 2 |
-| Citation not independently verified | 30 |
+| Citation not independently verified | 37 |
 | Wrong study or replaced | 7 |
-| Corrected — dates, journals, numbers, strength of claim | 56 |
+| Corrected — dates, journals, numbers, strength of claim | 66 |
 | Matched — no correction needed | 7 |
 
 ---
@@ -129,6 +129,12 @@ There is no 2025 USPSTF final recommendation integrating blood-based cfDNA. The 
 **REPLACED — the cited trial does not exist**
 
 There is no head-to-head pragmatic primary care trial of GLP-1 RAs versus SGLT2 inhibitors in NEJM; the literature states plainly that no head-to-head trials exist. The original's directional conclusions are also partly reversed: it said the classes are equivalent for cardiovascular protection with SGLT2 superior for renal outcomes, whereas the meta-analytic picture is that GLP-1 RAs look better for MACE and SGLT2 inhibitors better for heart failure AND renal outcomes. Rewritten to state the evidence type explicitly, since 'a randomized head-to-head trial showed' and 'network meta-analysis suggests' carry very different weight at the bedside.
+
+### Neurological Surgery 2025 #9 — Timing of Decompressive Craniectomy in Malignant Middle Cerebral Artery Infarction
+
+**REPLACED — the cited trial does not exist and the claim is contrary to available evidence**
+
+No Lancet Neurology international randomised trial of decompressive craniectomy beyond the 48-hour window was located. The submission stated it 'confirm[ed] that decompressive craniectomy retains mortality-reduction benefits up to 72 hours post-stroke onset' — the available evidence points the other way: craniectomy performed more than 48 hours after onset does not appear superior to best medical management, and no randomised trial has addressed late timing. Rewritten around the randomised evidence that does exist, with the disability-versus-survival trade-off made explicit, since that is the substance of the consent conversation.
 
 ---
 
@@ -329,6 +335,48 @@ The specific Annals of Internal Medicine translational analysis was not located.
 **NOT INDEPENDENTLY VERIFIED, with a terminology correction**
 
 No cross-specialty ACP / International Headache Society consensus statement matching this description was located; the url is a PubMed title search and the joint attribution is unresolved. TERMINOLOGY: gepants are CGRP RECEPTOR ANTAGONISTS, not 'CGRP inhibitors' — the monoclonal antibodies against CGRP or its receptor are a separate class used for prevention, and conflating them matters when choosing acute versus preventive therapy. The pharmacology and the triptan-contraindication reasoning are well established and retained; lasmiditan's driving restriction was added because it determines whether the drug is usable for a given patient.
+
+### Neurological Surgery 2025 #2 — Congress of Neurological Surgeons Guidelines on Emerging Therapies for Brain Metastases
+
+**NOT INDEPENDENTLY VERIFIED**
+
+The CNS does publish guideline series in Neurosurgery and the clinical content is consistent with current neuro-oncology practice, but no specific 2025 document was located and the '23 evidence-based recommendations' figure is therefore not asserted; the url is a PubMed title search. 'Establishes LITT as a valid alternative to open craniotomy' softened to an option in the settings where it is actually used. Named agents were adjusted to the ones with established intracranial activity.
+
+### Neurological Surgery 2025 #6 — Predicting Long-Term Pain Freedom after Microvascular Decompression for Trigeminal Neuralgia
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific validation study matching this description was located, and the institutional attribution (Columbia and NewYork-Presbyterian) is unconfirmed; the url is a PubMed title search. The underlying clinical principle — that classical presentation plus demonstrated arterial conflict predicts durable relief, and that atypical or non-compressive cases do worse — is well established, and has been stated explicitly here rather than left as 'a refined scoring system', which taught nothing usable.
+
+### Neurological Surgery 2025 #7 — Awake Full-Endoscopic Lumbar Decompression under Regional Anaesthesia
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific multicentre registry publication matching this description was located; the url is a PubMed title search. 'Establishes standardized surgical and anesthetic pathways' and the comparative claim of faster recovery than open microdiscectomy are presented as registry observations rather than established findings, and the non-randomised design plus the learning-curve caveat were added — both bear directly on whether the reported advantage would hold in a given surgeon's hands.
+
+### Neurological Surgery 2025 #10 — Cerebrospinal Fluid Cell-Free DNA Sequencing for Molecular Diagnosis of CNS Tumours
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific prospective Nature Medicine validation study matching this description was located; the url is a PubMed title search. The approach is genuine and under active investigation. 'Endorses CSF liquid biopsy as an OFFICIAL diagnostic tool in neuro-oncology guidelines' could not be confirmed and was removed — no guideline endorsement was identified. Added the location-dependent yield, which is the limitation that determines whether a negative result means anything.
+
+### Neurological Surgery 2026 #1 — Squid Middle Meningeal Artery Embolization for Subacute and Chronic Subdural Haematoma (STEM)
+
+**NOT INDEPENDENTLY VERIFIED**
+
+The MMA embolization trial programme is real and STEM is a recognised trial name in it, but this specific publication was not located and the url is a PubMed title search. TWO CLAIMS REMOVED: 'significantly reduces... major neurological events' and 'Provides LEVEL I clinical trial evidence confirming that endovascular dural artery devascularization addresses the pathophysiological cause of capillary leak' — neither was confirmed, and a trial does not confirm a pathophysiological mechanism. Also note the submission listed EMBOLISE separately in the same batch; EMBOLISE is kept on the 2025 page so the same trial does not appear under both years.
+
+### Neurological Surgery 2026 #6 — Guideline for the Early Management of Patients With Acute Ischaemic Stroke
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific 2026 guideline document was located and the url is a PubMed title search; the individual components (tenecteplase preference, large-core thrombectomy) are well supported independently. TWO CLAIMS CORRECTED. The submission said the guideline expands eligibility 'for large core AND DISTAL VESSEL OCCLUSIONS' — the 2025 MeVO trials were negative, so that direction is not supported and the entry now says so. And 'incorporating mobile stroke units' plus 'MANDATES direct transport to endovascular-capable centers' and 'formalizes intensive blood pressure lowering' could not be confirmed; mandate language was removed.
+
+### Neurological Surgery 2026 #7 — Consensus Practice Guidelines on Sacroiliac Joint Complex Pain
+
+**NOT INDEPENDENTLY VERIFIED**
+
+A multispecialty consensus on sacroiliac joint pain is consistent with recent Regional Anesthesia & Pain Medicine output, but the specific document was not located and the url is a PubMed title search. The 50% block-relief threshold stated in the submission is the conventional criterion in this literature and is retained as such rather than attributed to this document specifically.
 
 ---
 
@@ -715,6 +763,66 @@ Real: Annals of Internal Medicine, DOI 10.7326/ANNALS-25-04883, 396 patients, 13
 **corrected — trial phase**
 
 Both findings are real, but the submission described them together as 'large phase 3 trials'. Only the OSA evidence is phase 3 (SURMOUNT-OSA, NEJM 2024, FDA approval for OSA in December 2024). Tirzepatide's MASH data are PHASE 2 (SYNERGY-NASH) and retatrutide's are phase 2 as well — presenting MASH resolution as an established phase 3 outcome would have an internist offering an unapproved indication. Added that resmetirom is the agent actually approved for MASH.
+
+### Neurological Surgery 2025 #1 — Middle Meningeal Artery Embolization for Chronic Subdural Hematoma (EMBOLISE)
+
+**corrected — year**
+
+Real and positive; NEJM, November 2024 rather than 2025. 'Establishes MMA embolization as a DEFINITIVE adjunctive standard of care in guidelines' softened — the trial supports it strongly but no guideline revision was confirmed. Added the point the entry blurred: embolization was adjunctive to evacuation or conservative care, not an alternative to evacuating a symptomatic collection.
+
+### Neurological Surgery 2025 #3 — Vorasidenib in IDH1- or IDH2-Mutant Low-Grade Glioma (INDIGO), and Targeted Therapy in Diffuse Midline Glioma
+
+**corrected — year and evidence asymmetry**
+
+INDIGO is real and the PFS finding is accurate, but it was published in NEJM in 2023, not 2025. The submission bracketed vorasidenib and dordivaprone together as 'multi-center Phase 3 data'; only vorasidenib has a randomised phase 3 trial, and the entry now says so. This trial also appeared in the second neurosurgery list submitted; it is kept here once rather than on both year pages, since the same study appearing under 2025 and 2026 would read as a fault.
+
+### Neurological Surgery 2025 #4 — Endovascular Thrombectomy for Medium and Distal Vessel Occlusion (ESCAPE-MeVO, DISTAL, DISCOUNT)
+
+**matched with corrections**
+
+Real and correctly reported — the submission was appropriately cautious here, describing the need for strict sub-selection and the haemorrhage risk without claiming benefit, which is notably more accurate than the version of this entry submitted in the Emergency Medicine list, where it was reversed into a positive finding. Sharpened to state plainly that all three trials were negative, and added the trial size and the investigators' own conclusion. 'Establishing dedicated micro-device selection criteria for distal occlusions' could not be confirmed and was removed.
+
+### Neurological Surgery 2025 #5 — Low-Intensity Pulsed Ultrasound with Microbubbles for Blood-Brain Barrier Opening in Recurrent Glioblastoma
+
+**corrected — phase and year**
+
+The work is real (Northwestern, Sonabend and colleagues, Lancet Oncology 2023) but it is a PHASE 1 trial, not the multi-trial validation the submission implied, and the year is 2023. The specific citation was not resolved from the searches run, so the url is a PubMed title search. 'Validates MRI-guided non-invasive sonication' and 'establishing protocol safety for repeated outpatient BBB opening' overstate a phase 1 result and were softened; the delivered agent was albumin-bound paclitaxel with carboplatin.
+
+### Neurological Surgery 2025 #8 — Long-Term Adaptive Deep Brain Stimulation in Parkinson Disease (ADAPT-PD)
+
+**corrected — superiority claimed from a nonrandomised trial**
+
+Real: JAMA Neurology, online 22 September 2025, 68 participants, 70.6% men, mean age 62.2, mean disease duration 13.5 years. THE CORRECTION MATTERS because this claim appeared in three of the four submitted lists: ADAPT-PD is NONRANDOMISED and OPEN-LABEL, and its primary outcome was performance relative to stable continuous DBS. It cannot show that adaptive DBS 'supercedes' or 'outperforms' continuous DBS. Nor has any guideline made sensing-capable pulse generators 'preferred primary implants'. Also removed 'eliminates the need for manual trial-and-error programming' — setup required reprogramming in most participants.
+
+### Neurological Surgery 2026 #2 — Early Minimally Invasive Removal of Intracerebral Haemorrhage (ENRICH)
+
+**corrected — year and the strength of the guideline claim**
+
+Real and positive; NEJM, April 2024. The lobar-driven benefit is correctly identified in the submission. Two softenings: 'establishing MIPS as a FIRST-LINE recommendation in AHA/ASA and neurosurgical guidelines' was not confirmed, and the adaptive design detail was added because it explains why the result belongs to lobar haemorrhage specifically rather than to ICH in general.
+
+### Neurological Surgery 2026 #3 — Decompressive Craniectomy for Severe Deep Supratentorial Intracerebral Haemorrhage (SWITCH)
+
+**corrected — a non-significant trend was reported as a demonstrated benefit**
+
+Real: The Lancet, 1 June 2024, 42 centres, 201 patients, 190 in the primary analysis. THE CORRECTION: the submission said the trial 'demonstrat[ed] reductions in 180-day mortality and severe disability' and that guidelines were updated to include craniectomy as 'an evidence-based salvage procedure'. The trial was STOPPED EARLY for funding, was underpowered, and its primary outcome was a non-significant trend — described in the accompanying literature as 'weak evidence'. Added the finding the entry omitted entirely: survival came with severe disability in both arms.
+
+### Neurological Surgery 2026 #4 — Thrombectomy for Stroke with Large Ischaemic Core (SELECT2)
+
+**corrected — year**
+
+Real and positive; NEJM, February 2023 rather than 2026. Entry criteria and the 24-hour window are correctly stated in the submission. Added the companion trials that made the guideline change possible, and the caveat that functional independence remained the minority outcome — 'ensuring patients with extensive baseline cerebral ischemia receive endovascular intervention' as written implies a better expected outcome than the trials delivered.
+
+### Neurological Surgery 2026 #5 — Thrombectomy in Stroke with Extended Lesion and Extended Time Window (TENSION)
+
+**corrected — year**
+
+Real and positive; The Lancet, 2023 rather than 2026. The non-contrast CT selection point and the 12-hour window are accurately reported in the submission, as is the equity implication. No substantive correction beyond the date.
+
+### Neurological Surgery 2026 #8 — Ventral versus Dorsal Surgery for Cervical Spondylotic Myelopathy (CSM-S)
+
+**corrected — year**
+
+Real; JAMA, 2024 rather than 2026, and the null result on 1-year patient-reported physical function is correctly reported in the submission. Added the specific approach-related risks that distinguish the two operations, since 'reducing instrumented fusion costs, surgical risk, and recovery times' does not say what the risks actually are — and dysphagia and recurrent laryngeal nerve injury are the ones that drive the decision.
 
 ---
 
