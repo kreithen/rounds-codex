@@ -93,9 +93,20 @@ no backend. This file is context for future sessions — read it before starting
 - **Gallery links (`/g/<id>`)** — Share button in the gallery header, added by
   `scripts/add_gallery_share.js`. A shared gallery seeds `library → detail → gallery` so Back
   isn't a dead end. Third one-segment route.
+- **Clinical Updates (`/u/`)** — purple **CLINICAL UPDATES** button in the library count row (all
+  three modes), opening a `clinupd` index page: every specialty with updates, alphabetical, each
+  with its year buttons. Added by `scripts/add_clinical_updates_page.js`. Fifth one-segment route,
+  so the `RC_ROOT` regex is now `/^\/(c|s|g|r|u)\//`. **Purple is `.respec`'s gradient and white is
+  `.allgal`'s fill** — reuse those two rather than inventing values, or the home page stops reading
+  as one design. Restyling a dark button white means **pushing dark ink onto its children** too:
+  `.res-gsub` and `.res-arrow` inherit light-on-dark values and vanish otherwise. **Sort specialties
+  by display NAME, not code** — anes/cards/derm/em/fm happen to sort alike, so a code sort looks
+  right until `ent` (Otolaryngology) or `nsg` (Neurological Surgery) gets content.
+- **`.pad` reserves 112px for the fixed `.nav` bar; `.res-wrap` did not** until 2026-07-30, so the
+  last element of every resident-mode page sat under the bar when scrolled to the end. Invisible on
+  long lists, total on a short page. Any new full-page wrapper needs that clearance.
 - **Guideline links (`/r/<spec>-<year>`)** — Share button on a Clinical Guidelines year page, added
-  by `scripts/add_guideline_share.js`. Fourth one-segment route, so the `RC_ROOT` regex is now
-  `/^\/(c|s|g|r)\//`. **Hyphen in the URL, pipe in the nav stack** (`resguide` ids are
+  by `scripts/add_guideline_share.js`. **Hyphen in the URL, pipe in the nav stack** (`resguide` ids are
   `"anes|2025"`); a pipe percent-encodes to `%7C` in a shared link. Splits on the trailing four
   digits, so a hyphenated specialty code is safe. **`rcSyncURL()` needs a case for any new view
   too** — it only rewrites the address bar for views it knows, so without one a shared link's URL
