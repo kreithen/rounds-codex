@@ -1,6 +1,6 @@
 # Clinical guideline citation checks — for sign-off
 
-110 entries checked. Grouped worst-first by what a reader would take away if the
+120 entries checked. Grouped worst-first by what a reader would take away if the
 entry shipped as submitted. Every entry below is live in the app in its CORRECTED form; this
 document records what was changed and why, so any of it can be reverted.
 
@@ -9,10 +9,10 @@ document records what was changed and why, so any of it can be reverted.
 | Findings stated backwards — a reader would learn the opposite of the published result | 13 |
 | Cited study could not be found | 5 |
 | Evidence level inflated — case report presented as a trial | 2 |
-| Citation not independently verified | 27 |
+| Citation not independently verified | 30 |
 | Wrong study or replaced | 7 |
-| Corrected — dates, journals, numbers, strength of claim | 50 |
-| Matched — no correction needed | 6 |
+| Corrected — dates, journals, numbers, strength of claim | 56 |
+| Matched — no correction needed | 7 |
 
 ---
 
@@ -311,6 +311,24 @@ The primary hrHPV every 5 years pathway for ages 30-65 is long established, and 
 **NOT INDEPENDENTLY VERIFIED**
 
 Consistent with published work in this area and with Annals' 2025 coverage of LLM safety, but the specific article was not resolved to a citation and the url is a PubMed title search. 'Calls for standardized safety guardrails' is retained as the paper's argument rather than an adopted standard.
+
+### Internal Medicine 2026 #7 — Inpatient Management of Decompensated Cirrhosis for the General Internist
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific 2026 publication matching this description was located; the url is a PubMed title search and the journal attribution ('Annals of Internal Medicine / Hepatology Update') is unresolved. The clinical content stated here is long-established AASLD-consistent practice, which is why the entry is retained rather than dropped, and the specifics have been made explicit rather than left as 'updated target thresholds', which taught nothing actionable.
+
+### Internal Medicine 2026 #9 — Dietary Guidelines for Americans: Translating Population Advice into Clinical Nutrition Counselling
+
+**NOT INDEPENDENTLY VERIFIED, and the edition is uncertain**
+
+The specific Annals of Internal Medicine translational analysis was not located. The edition label is also uncertain: the DGA runs on a five-year cycle and the current cycle is 2025-2030, so a '2026 Dietary Guidelines for Americans' is most likely a misnaming of that edition — the entry now refers to the cycle rather than a 2026 document. The claim that the new edition 'emphasizes ultra-processed food reduction' could not be confirmed and is presented as evidence-supported advice rather than a stated guideline emphasis. Check dietaryguidelines.gov before teaching specifics.
+
+### Internal Medicine 2026 #10 — Acute and Preventive Migraine Treatment in Primary Care
+
+**NOT INDEPENDENTLY VERIFIED, with a terminology correction**
+
+No cross-specialty ACP / International Headache Society consensus statement matching this description was located; the url is a PubMed title search and the joint attribution is unresolved. TERMINOLOGY: gepants are CGRP RECEPTOR ANTAGONISTS, not 'CGRP inhibitors' — the monoclonal antibodies against CGRP or its receptor are a separate class used for prevention, and conflating them matters when choosing acute versus preventive therapy. The pharmacology and the triptan-contraindication reasoning are well established and retained; lasmiditan's driving restriction was added because it determines whether the drug is usable for a given patient.
 
 ---
 
@@ -662,6 +680,42 @@ The clinical substance is well established and consistent with the ACP/AAFP guid
 
 Real: Annals of Internal Medicine 2025;178(5), DOI 10.7326/ANNALS-24-02904, PMID 40228297, published 15 April 2025, University of Leicester. THE CENTRAL CORRECTION: the original said poor communication was 'a primary or contributing factor in OVER 85% of hospital safety incidents'. The review found 24.0% contributory and 13.2% sole cause. The '42 studies' figure in the original is real but is the contributory subset of 46 total studies. Also 'mandating structured interprofessional handover protocols' — a systematic review does not mandate practice.
 
+### Internal Medicine 2026 #2 — 2026 ACC/AHA/Multisociety Guideline on the Management of Dyslipidemia
+
+**matched with corrections**
+
+Real: Circulation DOI 10.1161/CIR.0000000000001423, PMID 41824590, 13 March 2026. Same document as entry 1 in the Cardiology 2026 list — a legitimate cross-specialty overlap, not a duplication error. Targets, PREVENT-ASCVD, universal Class 1 Lp(a) and apoB expansion all confirmed. ONE CLAIM QUALIFIED: 'reclassifies millions of younger adults (ages 30-49) as candidates for early lipid-lowering therapy' is contestable, since PREVENT tends to yield lower absolute risk estimates than the equations it replaces.
+
+### Internal Medicine 2026 #3 — Screening for Breast Cancer in Asymptomatic, Average-Risk Adult Females: A Guidance Statement From the ACP (Version 2)
+
+**matched with corrections**
+
+Real and accurate: Annals of Internal Medicine, Version 2, April 2026, DOI 10.7326/ANNALS-25-05116. Biennial 50-74, individualised 40-49, consider DBT for dense breasts, advise against supplemental MRI or ultrasound — all confirmed as submitted. ONE FRAMING CORRECTION: the original said the statement 'reconciles divergent screening recommendations across major specialty societies'. It does the opposite — it is one position in an active dispute, diverging from the USPSTF's 2024 move to start at 40, and the ACR and SBI published a counter-statement. Added the definition of average risk, since the recommendations only apply within it.
+
+### Internal Medicine 2026 #4 — Enlicitide (Lipfendra), the First Oral PCSK9 Inhibitor
+
+**matched with corrections**
+
+Real and, if anything, understated. The FDA approved it as LIPFENDRA on 16 July 2026 — two weeks before this list was compiled, so the approval is genuinely current news. The submitted '~50-60% reduction' is right; the actual CORALreef Lipids, HeFH and AddOn figures have been added along with the brand name and approval date, which the entry omitted. One caveat added: no cardiovascular outcomes trial has reported, so event reduction is extrapolated from the class.
+
+### Internal Medicine 2026 #5 — Rapid Evaluation of Ambient AI Documentation in Primary Care: AI-Generated versus Human-Produced Clinical Notes
+
+**matched with corrections**
+
+Real: Annals of Internal Medicine, DOI 10.7326/annals-25-02772, lead author Ashok Reddy, presented at the 2026 ACP Internal Medicine Meeting. The submitted counts — 11 AI tools, 18 clinicians — are exactly right. ONE CORRECTION: it was not a 'multi-center comparative trial' but an evaluation using five STANDARDISED cases scored by 30 blinded raters, which is a simulation design and limits generalisation to real encounters. Added the PDQI-9 instrument and the background-noise finding (43.8 vs 20.3), the practically actionable detail and absent from the original.
+
+### Internal Medicine 2026 #6 — Neither Metformin nor Ursodeoxycholic Acid Effectively Treats Post-Acute Sequelae of COVID-19: A Randomized Clinical Trial
+
+**corrected — the result was omitted**
+
+Real: Annals of Internal Medicine, DOI 10.7326/ANNALS-25-04883, 396 patients, 132 per arm, two Korean tertiary hospitals. THE SUBMITTED ENTRY NEVER STATED THE FINDING — it said the trial 'provided high-certainty clinical trial evidence' and drew a general lesson, without saying both drugs failed. The result is now stated plainly with the numbers. 'High-certainty' also overstates a single 396-patient two-centre trial. Added the distinction between treating established long COVID (tested, negative) and preventing it during acute infection (a different question).
+
+### Internal Medicine 2026 #8 — Incretin Agonists Beyond Glycaemia and Weight: MASH and Obstructive Sleep Apnoea
+
+**corrected — trial phase**
+
+Both findings are real, but the submission described them together as 'large phase 3 trials'. Only the OSA evidence is phase 3 (SURMOUNT-OSA, NEJM 2024, FDA approval for OSA in December 2024). Tirzepatide's MASH data are PHASE 2 (SYNERGY-NASH) and retatrutide's are phase 2 as well — presenting MASH resolution as an established phase 3 outcome would have an internist offering an unapproved indication. Added that resmetirom is the agent actually approved for MASH.
+
 ---
 
 ## Matched — no correction needed
@@ -701,3 +755,9 @@ Real and accurately summarised. JAMA Dermatology 2026;162(2):133-141, online 17 
 **matched**
 
 Real and accurately summarised. Annals of Family Medicine, July/August 2026, 24(4):287, Dahrouge et al., 326 patients in Ottawa and Greater Sudbury. The submitted rates of 50.3% versus 35.8% are consistent with the reported 41% relative increase in accessing at least one resource. One of the best-sourced entries submitted across any specialty.
+
+### Internal Medicine 2026 #1 — Pharmacologic Treatments With Lifestyle Modifications in Nonpregnant Adults With Overweight or Obesity in Outpatient Settings: A Living Clinical Guideline From the ACP
+
+**matched**
+
+Real and accurate in every particular — Annals of Internal Medicine, April 2026, DOI 10.7326/ANNALS-25-02714. The four-tier ordering, the BMI thresholds and the comorbidity list all check out exactly as submitted; the most accurate entry received across any specialty list. Two things added because they change decisions: the certainty levels (moderate for semaglutide and tirzepatide, LOW for the other three) and the head-to-head finding favouring tirzepatide, plus liraglutide as second-line in the overweight-with-comorbidity group. The submitted 'active counseling on sarcopenia/bone loss in geriatric populations' could not be confirmed as a recommendation of this guideline and is not asserted.

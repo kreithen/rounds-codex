@@ -151,3 +151,149 @@ literature search, not a medical re-read — see `VERIFICATION.md` for the metho
 [Annals of Internal Medicine - impacts of communication type and quality on patient safety incidents](https://www.acpjournals.org/doi/10.7326/ANNALS-24-02904)
 
 > **Citation check — ⚠ corrected — the headline figure was overstated more than threefold.** Real: Annals of Internal Medicine 2025;178(5), DOI 10.7326/ANNALS-24-02904, PMID 40228297, published 15 April 2025, University of Leicester. THE CENTRAL CORRECTION: the original said poor communication was 'a primary or contributing factor in OVER 85% of hospital safety incidents'. The review found 24.0% contributory and 13.2% sole cause. The '42 studies' figure in the original is real but is the contributory subset of 46 total studies. Also 'mandating structured interprofessional handover protocols' — a systematic review does not mandate practice.
+
+---
+
+## 2026
+
+10 entries · **9 with a citation problem — see the checks below**
+
+### 1. Pharmacologic Treatments With Lifestyle Modifications in Nonpregnant Adults With Overweight or Obesity in Outpatient Settings: A Living Clinical Guideline From the ACP
+
+*Annals of Internal Medicine · April 2026*
+
+**The breakthrough.** For obesity (BMI ≥ 30 kg/m²): semaglutide and tirzepatide are FIRST-LINE with lifestyle modification, both on moderate-certainty evidence. Phentermine–topiramate is second-line, liraglutide third-line, naltrexone–bupropion fourth-line — all three on LOW-certainty evidence. For overweight (BMI ≥ 27 to 30) with at least one comorbidity — type 2 diabetes, dyslipidemia, hypertension, obstructive sleep apnea or cardiovascular disease — semaglutide or tirzepatide is first-line and liraglutide second-line.
+
+**Clinical guideline impact.** A 'living' guideline, updated as evidence arrives rather than every several years, developed with GRADE. The certainty gradient is the part to carry: only the two GLP-1/GIP agents rest on moderate-certainty evidence, and everything below them is low-certainty — a real distinction when a patient cannot tolerate or afford first-line therapy.
+
+**Practical implications.** Head-to-head, tirzepatide beat semaglutide on percentage of total body weight lost, likelihood of losing at least 10%, and health-related quality of life, on moderate-certainty evidence — so the ordering within first-line is not arbitrary. Note the BMI ≥ 27 threshold requires a comorbidity; BMI alone does not qualify.
+
+[Annals of Internal Medicine - ACP living guideline on obesity pharmacotherapy](https://www.acpjournals.org/doi/10.7326/ANNALS-25-02714)
+
+> **Citation check — matched.** Real and accurate in every particular — Annals of Internal Medicine, April 2026, DOI 10.7326/ANNALS-25-02714. The four-tier ordering, the BMI thresholds and the comorbidity list all check out exactly as submitted; the most accurate entry received across any specialty list. Two things added because they change decisions: the certainty levels (moderate for semaglutide and tirzepatide, LOW for the other three) and the head-to-head finding favouring tirzepatide, plus liraglutide as second-line in the overweight-with-comorbidity group. The submitted 'active counseling on sarcopenia/bone loss in geriatric populations' could not be confirmed as a recommendation of this guideline and is not asserted.
+
+### 2. 2026 ACC/AHA/Multisociety Guideline on the Management of Dyslipidemia
+
+*Circulation / JACC · 13 March 2026*
+
+**The breakthrough.** Replaces the 2018 blood cholesterol guideline. Reintroduces LDL-C targets — <100, <70 and <55 mg/dL by risk tier, with <55 mg/dL for very high-risk secondary prevention — and adopts the PREVENT-ASCVD equations for primary prevention in adults 30 to 79 with LDL-C 70 to 189 mg/dL. Universal once-in-a-lifetime lipoprotein(a) measurement is a Class 1 recommendation, the first time in a US guideline, with expanded selective apolipoprotein B testing.
+
+**Clinical guideline impact.** Eleven societies. Retitled from 'blood cholesterol' to 'dyslipidemia' to reflect risk carried by atherogenic lipoproteins beyond LDL-C — triglyceride-rich remnants and Lp(a).
+
+**Practical implications.** Two things change most clinics: order Lp(a) once on every adult, and treat to a number again rather than to a percentage reduction. On younger adults, PREVENT extends risk assessment down to age 30 and adds a 30-year horizon — but note it generally produces LOWER absolute risk estimates than the pooled cohort equations it replaces, so it does not straightforwardly expand statin eligibility.
+
+[Circulation - 2026 ACC/AHA dyslipidemia guideline](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001423)
+
+> **Citation check — ⚠ matched with corrections.** Real: Circulation DOI 10.1161/CIR.0000000000001423, PMID 41824590, 13 March 2026. Same document as entry 1 in the Cardiology 2026 list — a legitimate cross-specialty overlap, not a duplication error. Targets, PREVENT-ASCVD, universal Class 1 Lp(a) and apoB expansion all confirmed. ONE CLAIM QUALIFIED: 'reclassifies millions of younger adults (ages 30-49) as candidates for early lipid-lowering therapy' is contestable, since PREVENT tends to yield lower absolute risk estimates than the equations it replaces.
+
+### 3. Screening for Breast Cancer in Asymptomatic, Average-Risk Adult Females: A Guidance Statement From the ACP (Version 2)
+
+*Annals of Internal Medicine · April 2026*
+
+**The breakthrough.** Biennial screening mammography for average-risk females aged 50 to 74 — reaffirmed because biennial screening achieves mortality reduction similar to annual screening while substantially reducing false positives, unnecessary biopsies, overdiagnosis and overtreatment. Ages 40 to 49: individualised decision-making after discussing benefits against false positives, overdiagnosis and radiation. Discontinuation discussed at 75 or with limited life expectancy.
+
+**Clinical guideline impact.** This is one side of a live disagreement, not a reconciliation of it. The USPSTF moved in 2024 to recommend biennial screening beginning at age 40; ACP holds at 50 with individualised decisions in the forties. The American College of Radiology and the Society of Breast Imaging issued a counter-statement. A patient may arrive having read either.
+
+**Practical implications.** On dense breasts: consider digital breast tomosynthesis, weighing benefit, harm, radiation, availability and cost — but ACP advises AGAINST supplemental MRI or ultrasound in average-risk women with dense breasts. 'Average risk' is defined narrowly and excludes personal history of breast cancer or high-risk lesions, BRCA1/2 or other pathogenic variants, familial breast cancer syndromes, and high-dose chest radiation at a young age.
+
+[Annals of Internal Medicine - ACP breast cancer screening guidance statement, version 2](https://www.acpjournals.org/doi/10.7326/ANNALS-25-05116)
+
+> **Citation check — ⚠ matched with corrections.** Real and accurate: Annals of Internal Medicine, Version 2, April 2026, DOI 10.7326/ANNALS-25-05116. Biennial 50-74, individualised 40-49, consider DBT for dense breasts, advise against supplemental MRI or ultrasound — all confirmed as submitted. ONE FRAMING CORRECTION: the original said the statement 'reconciles divergent screening recommendations across major specialty societies'. It does the opposite — it is one position in an active dispute, diverging from the USPSTF's 2024 move to start at 40, and the ACR and SBI published a counter-statement. Added the definition of average risk, since the recommendations only apply within it.
+
+### 4. Enlicitide (Lipfendra), the First Oral PCSK9 Inhibitor
+
+*FDA approval; CORALreef phase 3 programme · Approved 16 July 2026*
+
+**The breakthrough.** A once-daily oral small-molecule PCSK9 inhibitor, approved by the FDA on 16 July 2026 as Lipfendra — the first oral agent in a class previously available only by subcutaneous injection. CORALreef Lipids showed a 55.8% LDL-C reduction versus placebo at 24 weeks (59.7% on post-hoc reanalysis); CORALreef HeFH 59.4% in heterozygous familial hypercholesterolemia; CORALreef AddOn 64.6% from baseline at 8 weeks added to background statin, exceeding guideline-recommended oral non-statins.
+
+**Clinical guideline impact.** Approved as an adjunct to diet and exercise to reduce LDL-C in adults with hypercholesterolemia including HeFH. Efficacy comparable to the injectable monoclonal antibodies, sustained through 24 to 52 weeks, with safety outcomes comparable to placebo.
+
+**Practical implications.** Removes the two barriers that limit PCSK9 uptake — the injection and the cold chain — for patients not at goal on maximally tolerated statin plus ezetimibe. One caveat: approval rests on LDL-C lowering, a surrogate endpoint. A cardiovascular outcomes trial has not yet reported, so the assumption that this LDL reduction delivers the event reduction seen with the injectables is inference from the class rather than direct evidence for this drug.
+
+[FDA - first oral PCSK9 inhibitor approved to lower LDL cholesterol](https://www.fda.gov/news-events/press-announcements/fda-approves-first-oral-pcsk9-inhibitor-lower-ldl-cholesterol-adults-high-cholesterol)
+
+> **Citation check — ⚠ matched with corrections.** Real and, if anything, understated. The FDA approved it as LIPFENDRA on 16 July 2026 — two weeks before this list was compiled, so the approval is genuinely current news. The submitted '~50-60% reduction' is right; the actual CORALreef Lipids, HeFH and AddOn figures have been added along with the brand name and approval date, which the entry omitted. One caveat added: no cardiovascular outcomes trial has reported, so event reduction is extrapolated from the class.
+
+### 5. Rapid Evaluation of Ambient AI Documentation in Primary Care: AI-Generated versus Human-Produced Clinical Notes
+
+*Annals of Internal Medicine · 2026 (presented at the ACP Internal Medicine Meeting)*
+
+**The breakthrough.** Eleven ambient AI scribe tools and 18 human note takers compared across five standardised primary care cases, with 30 blinded clinician raters scoring every note on the modified Physician Documentation Quality Instrument (PDQI-9). AI notes scored consistently lower, with the widest gaps in thoroughness, organisation and usefulness.
+
+**Clinical guideline impact.** The most useful result is where the gap opened widest: in the acute low back pain scenario, which included substantial BACKGROUND NOISE, human notes averaged 43.8 points against 20.3 for AI. Performance degrades in exactly the acoustic conditions a real clinic has.
+
+**Practical implications.** Treat an ambient scribe as a draft generator requiring review and editing, not a substitute for the clinician's note. The authors call for ongoing accuracy and quality testing before relying on these tools in care — reasonable, given that a fluent note with a missing finding is harder to catch than an obviously bad one.
+
+[Annals of Internal Medicine - AI-generated versus human-produced clinical notes](https://doi.org/10.7326/annals-25-02772)
+
+> **Citation check — ⚠ matched with corrections.** Real: Annals of Internal Medicine, DOI 10.7326/annals-25-02772, lead author Ashok Reddy, presented at the 2026 ACP Internal Medicine Meeting. The submitted counts — 11 AI tools, 18 clinicians — are exactly right. ONE CORRECTION: it was not a 'multi-center comparative trial' but an evaluation using five STANDARDISED cases scored by 30 blinded raters, which is a simulation design and limits generalisation to real encounters. Added the PDQI-9 instrument and the background-noise finding (43.8 vs 20.3), the practically actionable detail and absent from the original.
+
+### 6. Neither Metformin nor Ursodeoxycholic Acid Effectively Treats Post-Acute Sequelae of COVID-19: A Randomized Clinical Trial
+
+*Annals of Internal Medicine · 2026*
+
+**The breakthrough.** A NEGATIVE trial. 396 adults with long COVID at two Korean tertiary hospitals, randomised to metformin, ursodeoxycholic acid or placebo (132 each), between July 2024 and April 2025. Recovery occurred in 63.6%, 68.2% and 68.2% respectively. Mean PASC score change from baseline to week 8 was −10.05, −10.62 and −10.43.
+
+**Clinical guideline impact.** Neither repurposed drug outperformed placebo. Note the placebo arm: it improved by about 10 points and 68.2% recovered — which is exactly why uncontrolled experience with these drugs feels persuasive, and why the trial was needed. Median age was 36 and 72% were women, with a mean 9.8 months from diagnosis, so treatment began well after symptoms were established.
+
+**Practical implications.** Do not prescribe metformin or UDCA for established long COVID. What this trial does not address is whether metformin given during ACUTE infection prevents long COVID, which is a separate question with separate evidence. Symptom-directed management and structured rehabilitation remain the substance of care.
+
+[Annals of Internal Medicine - metformin and UDCA for post-acute sequelae of COVID-19](https://www.acpjournals.org/doi/10.7326/ANNALS-25-04883)
+
+> **Citation check — ⚠ corrected — the result was omitted.** Real: Annals of Internal Medicine, DOI 10.7326/ANNALS-25-04883, 396 patients, 132 per arm, two Korean tertiary hospitals. THE SUBMITTED ENTRY NEVER STATED THE FINDING — it said the trial 'provided high-certainty clinical trial evidence' and drew a general lesson, without saying both drugs failed. The result is now stated plainly with the numbers. 'High-certainty' also overstates a single 396-patient two-centre trial. Added the distinction between treating established long COVID (tested, negative) and preventing it during acute infection (a different question).
+
+### 7. Inpatient Management of Decompensated Cirrhosis for the General Internist
+
+*Annals of Internal Medicine / hepatology guidance · 2026*
+
+**The breakthrough.** Practical guidance for the non-specialist admitting a patient with end-stage liver disease: albumin dosing in spontaneous bacterial peritonitis and hepatorenal syndrome, transfusion thresholds, and how much coagulopathy actually needs correcting before a bedside procedure.
+
+**Clinical guideline impact.** The recurring theme is that cirrhosis inverts several reflexes. Restrictive transfusion (haemoglobin 7 to 8 g/dL) applies in variceal bleeding, where over-transfusion raises portal pressure and worsens rebleeding.
+
+**Practical implications.** Two things worth holding onto. Albumin in SBP — classically 1.5 g/kg on day 1 and 1 g/kg on day 3 — reduces renal failure and mortality, and is given alongside the antibiotic rather than instead of volume. And the conventional coagulation tests mislead in cirrhosis: a raised INR reflects reduced procoagulant synthesis, but anticoagulant factors fall in parallel, so INR does NOT predict bleeding and prophylactic plasma before paracentesis or thoracentesis is not indicated — it adds volume and risk without reducing bleeding.
+
+[Guidance on inpatient management of decompensated cirrhosis](https://pubmed.ncbi.nlm.nih.gov/?term=decompensated+cirrhosis+inpatient+management+albumin+spontaneous+bacterial+peritonitis+hepatorenal+syndrome+Annals+Internal+Medicine)
+
+> **Citation check — ⚠ NOT INDEPENDENTLY VERIFIED.** No specific 2026 publication matching this description was located; the url is a PubMed title search and the journal attribution ('Annals of Internal Medicine / Hepatology Update') is unresolved. The clinical content stated here is long-established AASLD-consistent practice, which is why the entry is retained rather than dropped, and the specifics have been made explicit rather than left as 'updated target thresholds', which taught nothing actionable.
+
+### 8. Incretin Agonists Beyond Glycaemia and Weight: MASH and Obstructive Sleep Apnoea
+
+*NEJM · 2024-2026*
+
+**The breakthrough.** Two indications at different stages of evidence. OBSTRUCTIVE SLEEP APNOEA: SURMOUNT-OSA, a PHASE 3 trial, showed tirzepatide markedly reduced the apnoea–hypopnoea index in adults with obesity and moderate-to-severe OSA, and the FDA approved tirzepatide for this indication in December 2024. MASH: tirzepatide achieved resolution of steatohepatitis without worsening of fibrosis in a PHASE 2 trial (SYNERGY-NASH); retatrutide MASH data are also phase 2.
+
+**Clinical guideline impact.** OSA is the one that has changed practice, because it is approved: a drug that treats the driver of obesity-related OSA rather than splinting the airway every night. For MASH the signal is genuine but the evidence is phase 2 — resmetirom remains the agent with an approved MASH indication.
+
+**Practical implications.** Tirzepatide is a real option for a patient with obesity and OSA who cannot tolerate CPAP, and adherence to a weekly injection is often easier than adherence to a mask. Do not present MASH resolution as an established indication for an incretin agonist — that is a promising phase 2 result awaiting phase 3.
+
+[NEJM - tirzepatide for obstructive sleep apnoea (SURMOUNT-OSA)](https://www.nejm.org/doi/full/10.1056/NEJMoa2404881)
+
+> **Citation check — ⚠ corrected — trial phase.** Both findings are real, but the submission described them together as 'large phase 3 trials'. Only the OSA evidence is phase 3 (SURMOUNT-OSA, NEJM 2024, FDA approval for OSA in December 2024). Tirzepatide's MASH data are PHASE 2 (SYNERGY-NASH) and retatrutide's are phase 2 as well — presenting MASH resolution as an established phase 3 outcome would have an internist offering an unapproved indication. Added that resmetirom is the agent actually approved for MASH.
+
+### 9. Dietary Guidelines for Americans: Translating Population Advice into Clinical Nutrition Counselling
+
+*USDA / HHS, with clinical commentary · 2025-2030 edition*
+
+**The breakthrough.** The Dietary Guidelines for Americans are revised every five years and set population-level advice. The clinical question they do not answer is how to use them in a 15-minute visit with a patient who already has ASCVD or metabolic syndrome.
+
+**Clinical guideline impact.** The useful distinction is between primary population prevention and targeted medical nutrition therapy: the guidelines describe an overall healthy dietary pattern for a population, whereas a patient with established disease needs a specific negotiated change and often a referral to a registered dietitian, which is a covered benefit in several conditions.
+
+**Practical implications.** Ultra-processed food reduction and plant-forward protein substitution are the two changes with the broadest evidence behind them and the least need for precision — a patient does not have to count anything to act on either. In a brief visit, one specific substitution agreed with the patient beats a comprehensive dietary prescription they will not follow.
+
+[Dietary Guidelines for Americans](https://www.dietaryguidelines.gov/)
+
+> **Citation check — ⚠ NOT INDEPENDENTLY VERIFIED, and the edition is uncertain.** The specific Annals of Internal Medicine translational analysis was not located. The edition label is also uncertain: the DGA runs on a five-year cycle and the current cycle is 2025-2030, so a '2026 Dietary Guidelines for Americans' is most likely a misnaming of that edition — the entry now refers to the cycle rather than a 2026 document. The claim that the new edition 'emphasizes ultra-processed food reduction' could not be confirmed and is presented as evidence-supported advice rather than a stated guideline emphasis. Check dietaryguidelines.gov before teaching specifics.
+
+### 10. Acute and Preventive Migraine Treatment in Primary Care
+
+*ACP clinical guideline / headache society guidance · 2025-2026*
+
+**The breakthrough.** Guidance aligning general internal medicine practice with headache specialty recommendations for acute and preventive migraine treatment, including where the newer targeted agents belong in the sequence.
+
+**Clinical guideline impact.** The clinically important point is the cardiovascular one. Triptans are 5-HT1B/1D agonists and cause vasoconstriction, so they are contraindicated in coronary disease, prior stroke, uncontrolled hypertension and Prinzmetal angina. The gepants (CGRP RECEPTOR ANTAGONISTS — ubrogepant, rimegepant, zavegepant) and the ditan lasmiditan (a selective 5-HT1F agonist) are not vasoconstrictors, which is precisely why they matter in that population.
+
+**Practical implications.** For a patient with migraine and cardiovascular contraindications to triptans, a gepant or lasmiditan is the reasonable acute choice. Note lasmiditan's specific constraint: marked driving impairment, with a recommendation not to drive for at least 8 hours after a dose, which makes it a poor fit for someone who needs to function immediately. Prevention steps up from oral agents to injectable CGRP monoclonal antibodies in refractory disease.
+
+[Guidance on acute and preventive migraine treatment](https://pubmed.ncbi.nlm.nih.gov/?term=American+College+of+Physicians+migraine+acute+preventive+treatment+guideline+gepant+ditan)
+
+> **Citation check — ⚠ NOT INDEPENDENTLY VERIFIED, with a terminology correction.** No cross-specialty ACP / International Headache Society consensus statement matching this description was located; the url is a PubMed title search and the joint attribution is unresolved. TERMINOLOGY: gepants are CGRP RECEPTOR ANTAGONISTS, not 'CGRP inhibitors' — the monoclonal antibodies against CGRP or its receptor are a separate class used for prevention, and conflating them matters when choosing acute versus preventive therapy. The pharmacology and the triptan-contraindication reasoning are well established and retained; lasmiditan's driving restriction was added because it determines whether the drug is usable for a given patient.
