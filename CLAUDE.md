@@ -92,7 +92,14 @@ no backend. This file is context for future sessions — read it before starting
   Forward navigation, `root()` and everything else still start at the top.
 - **Gallery links (`/g/<id>`)** — Share button in the gallery header, added by
   `scripts/add_gallery_share.js`. A shared gallery seeds `library → detail → gallery` so Back
-  isn't a dead end. Third one-segment route, so the `RC_ROOT` regex is now `/^\/(c|s|g)\//`.
+  isn't a dead end. Third one-segment route.
+- **Guideline links (`/r/<spec>-<year>`)** — Share button on a Clinical Guidelines year page, added
+  by `scripts/add_guideline_share.js`. Fourth one-segment route, so the `RC_ROOT` regex is now
+  `/^\/(c|s|g|r)\//`. **Hyphen in the URL, pipe in the nav stack** (`resguide` ids are
+  `"anes|2025"`); a pipe percent-encodes to `%7C` in a shared link. Splits on the trailing four
+  digits, so a hyphenated specialty code is safe. **`rcSyncURL()` needs a case for any new view
+  too** — it only rewrites the address bar for views it knows, so without one a shared link's URL
+  snapped straight back to `/` when `boot()` called it and a reload landed on the home page.
 - **Gallery PDF download** — `rcGalleryPDF(id)`, wired by `scripts/wire_gallery_pdf.js`. The
   button was a `toast()` stub for months while all 44 PDFs existed on disk. **Pass the id from
   `galHTML`'s argument, not the global `GID`** — `GID` is set only by `openViewer`, so it's
@@ -221,6 +228,15 @@ no backend. This file is context for future sessions — read it before starting
   broken. Higgsfield flipped off repeatedly in one session this way.
 - **Resident content** (`medcodex-resident-buildout` skill): `resident-staging/` has the 1308-entry
   master + wiring snippet.
+- **Clinical guidelines** (`guidelines-staging/`, `scripts/merge_guidelines.js`): the "Updated
+  Clinical Guidelines" subsection on a Resident specialty page. Data lives under a `guidelines`
+  key in `content/resident.json`, NOT an eighth content file (that would mean editing the loader's
+  FILES list and `sw.js` CORE). Staging entries carry a `verify` block that the merge **requires
+  and strips** — review material, never app content. Anesthesiology is coded **`anes`**. Years sort
+  **ascending**, so 2025 sits above 2026 (specified; not newest-first like the rest of the app).
+  **The 2025 Anesthesiology list is not deploy-ready** — see `guidelines-staging/VERIFICATION.md`:
+  6 of 10 citations have no identifiable source and 3 state the opposite of the published result.
+  Built by `scripts/add_clinical_guidelines.js` + `scripts/add_guideline_share.js`.
 
 ## Editing `applive/index.html`
 - Now ~0.65 MB of **code only** — content edits go to `content/*.json` instead, so the
