@@ -1,6 +1,6 @@
 # Clinical guideline citation checks — for sign-off
 
-100 entries checked. Grouped worst-first by what a reader would take away if the
+110 entries checked. Grouped worst-first by what a reader would take away if the
 entry shipped as submitted. Every entry below is live in the app in its CORRECTED form; this
 document records what was changed and why, so any of it can be reverted.
 
@@ -9,9 +9,9 @@ document records what was changed and why, so any of it can be reverted.
 | Findings stated backwards — a reader would learn the opposite of the published result | 13 |
 | Cited study could not be found | 5 |
 | Evidence level inflated — case report presented as a trial | 2 |
-| Citation not independently verified | 26 |
+| Citation not independently verified | 27 |
 | Wrong study or replaced | 7 |
-| Corrected — dates, journals, numbers, strength of claim | 41 |
+| Corrected — dates, journals, numbers, strength of claim | 50 |
 | Matched — no correction needed | 6 |
 
 ---
@@ -305,6 +305,12 @@ Not individually confirmed; the url is a PubMed title search. Mulinari is an est
 **NOT INDEPENDENTLY VERIFIED**
 
 The primary hrHPV every 5 years pathway for ages 30-65 is long established, and self-collection has been moving into US guidance following FDA authorisations in 2024, so the substance is sound. The specific 2026 'HRSA/USPSTF' document and the joint attribution were not confirmed, and the url is a PubMed title search — HRSA maintains the Women's Preventive Services Guidelines, which is a separate instrument from a USPSTF recommendation, so the combined attribution should be checked. Added that follow-up of a positive result still requires clinician assessment.
+
+### Internal Medicine 2025 #9 — Safeguards and Vulnerabilities of Large Language Models Converted into Health Disinformation Chatbots
+
+**NOT INDEPENDENTLY VERIFIED**
+
+Consistent with published work in this area and with Annals' 2025 coverage of LLM safety, but the specific article was not resolved to a citation and the url is a PubMed title search. 'Calls for standardized safety guardrails' is retained as the paper's argument rather than an adopted standard.
 
 ---
 
@@ -601,6 +607,60 @@ Real (ARMMS-T2D, JAMA 2024 — a 2024 publication placed in the 2025 list). Thre
 **matched with corrections**
 
 Real and the figures match exactly: Annals of Family Medicine, July 2026, Netherlands, 100,450 patients, 48 practices, 9-21% lower odds of urgent admission and 17-28% lower costs beyond 5 years of registration. Added the distinction the original omitted and which is the study's most useful finding — density of visits with one physician was associated with 6-7% lower costs but NOT fewer urgent admissions, so duration and density are not interchangeable. Also flagged the observational design, since 'definitive empirical backing' as originally written overstates a cohort study.
+
+### Internal Medicine 2025 #1 — Antibiotic Treatment for 7 versus 14 Days in Patients with Bloodstream Infections (BALANCE)
+
+**corrected — a material exclusion was missing**
+
+Real: NEJM DOI 10.1056/NEJMoa2404991, published 20 November 2024 (not 2025), 3,608 patients, 74 hospitals, seven countries. The noninferiority finding is accurate and the numbers have been added. THE IMPORTANT FIX: BALANCE EXCLUDED S. AUREUS BACTEREMIA and infections requiring prolonged therapy. The original recommended 7 days 'for hemodynamically stable patients with bacteremia once source control is achieved' with no exception — applied to S. aureus bacteremia that is a serious undertreatment, and SAB is the bacteremia a hospitalist is most likely to be reasoning about. 'Drives a paradigm shift in guidelines' softened to what the trial supports.
+
+### Internal Medicine 2025 #2 — 2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients With Acute Coronary Syndromes
+
+**corrected**
+
+Real: Circulation DOI 10.1161/CIR.0000000000001309, February 2025, and the five-society authorship, replacement of the 2013/2014 documents and complete-revascularization endorsement all check out. ONE CORRECTION: the original said the guideline incorporates 'MANDATORY intracoronary imaging (IVUS/OCT) during PCI' and 'upgrades routine intracoronary imaging during PCI to a Class 1'. It is Class 1 Level A specifically for COMPLEX coronary lesions, not for PCI generally, and a guideline recommends rather than mandates. Also added that it supersedes the 2015 focused update.
+
+### Internal Medicine 2025 #3 — Evaluation and Management of Chronic Kidney Disease: Synopsis of the KDIGO 2024 Clinical Practice Guideline
+
+**corrected**
+
+Real: Annals of Internal Medicine, DOI 10.7326/ANNALS-24-01926. The uACR emphasis and CGA staging are accurate. TWO CORRECTIONS: cystatin C is recommended 'if available' as a combined eGFRcr-cys estimate, NOT mandated — the original called it 'dual-biomarker GFR estimation' and directed internists to 'order serum cystatin C alongside creatinine to confirm stage 3 CKD', which overstates a conditional recommendation and would generate a test many labs do not offer. And 'mandatory UACR staging for all adults with CKD' is an emphasis, not a mandate. 'First-line quad-therapy pathways' is an interpretation rather than a stated KDIGO pathway.
+
+### Internal Medicine 2025 #4 — Restrictive or Liberal Transfusion Strategy in Myocardial Infarction and Anemia (MINT)
+
+**corrected — year and journal**
+
+Real, and the original was honest in saying the effect 'trended toward' benefit rather than claiming significance — worth noting, since that restraint was absent from many submitted entries. The Class 2b attribution is also correct. CORRECTIONS: MINT was published in NEJM in 2023, not across NEJM and Annals in 2025, and the actual numbers have been added. The subgroup claims — Type 1 MI with underlying heart failure, and mobility and quality-of-life outcomes — are secondary or subgroup signals from a trial whose primary endpoint was not significant, so they are not stated as findings.
+
+### Internal Medicine 2025 #5 — Colchicine after Acute Myocardial Infarction (CLEAR SYNERGY / OASIS 9)
+
+**corrected — journal**
+
+Real, and the original correctly reported the negative result — one of few submitted entries to state a null finding as null. The trial is CLEAR SYNERGY (OASIS 9) and the 7,062 figure is right. CORRECTION: published in NEJM, not Annals of Internal Medicine. Added the actual numbers, the diarrhea signal, and the COLCOT/LoDoCo2 discordance, since 'unless specific persistent inflammatory risk markers are present' implies a residual-inflammation indication that no guideline currently defines.
+
+### Internal Medicine 2025 #6 — Diagnosing Obesity Beyond Body Mass Index
+
+**reframed — cited analyses not located**
+
+No Annals of Internal Medicine cohort analysis matching the submission was located, and the claim that new criteria 'significantly improved overall mortality prediction compared to BMI alone' is therefore not asserted. Reframed around the document that actually drove this change in 2025 — the Lancet Diabetes & Endocrinology Commission on Clinical Obesity, whose clinical/preclinical distinction is the substantive contribution and was absent from the original. The practical direction the original gave (measure waist circumference, look for metabolically unhealthy normal weight) is sound and is retained.
+
+### Internal Medicine 2025 #7 — Catheter and Surgical Ablation for Atrial Fibrillation: A Systematic Review and Meta-analysis
+
+**corrected — a periprocedural harm was omitted**
+
+Real: Annals of Internal Medicine 2025;178(8):1138-1149, DOI 10.7326/ANNALS-25-00253, PMID 40587868, with an accompanying editorial. The mortality, stroke and heart failure reductions are accurately reported and the effect sizes have been added. THE IMPORTANT FIX: the review found catheter ablation INCREASED ischemic stroke at or before 30 days at RR 6.81, which the original omitted entirely while stating that ablation 'significantly decreased stroke risk'. The net figure is RR 0.77. The original also merged catheter and surgical ablation, though surgical ablation showed uncertain benefit for everything except stroke.
+
+### Internal Medicine 2025 #8 — Pharmacologic Treatment of Opioid Use Disorder: Buprenorphine and Methadone as First-Line Therapy
+
+**corrected — 'mandatory' and a conflated access route**
+
+The clinical substance is well established and consistent with the ACP/AAFP guideline, but the specific 2025 ACP publication was not resolved to a citation and the url is a PubMed title search. TWO CORRECTIONS. Guidelines recommend; they do not establish 'MANDATORY first-line treatments', and the original's framing that a guideline 'Removes remaining institutional hurdles' inverts cause and effect — the 2023 Consolidated Appropriations Act removed the X-waiver, not a guideline. More importantly, buprenorphine and methadone were treated as interchangeably prescribable: methadone for OUD still requires a certified opioid treatment program and cannot be started from a general internal medicine clinic.
+
+### Internal Medicine 2025 #10 — Impacts of Communication Type and Quality on Patient Safety Incidents: A Systematic Review
+
+**corrected — the headline figure was overstated more than threefold**
+
+Real: Annals of Internal Medicine 2025;178(5), DOI 10.7326/ANNALS-24-02904, PMID 40228297, published 15 April 2025, University of Leicester. THE CENTRAL CORRECTION: the original said poor communication was 'a primary or contributing factor in OVER 85% of hospital safety incidents'. The review found 24.0% contributory and 13.2% sole cause. The '42 studies' figure in the original is real but is the contributory subset of 46 total studies. Also 'mandating structured interprofessional handover protocols' — a systematic review does not mandate practice.
 
 ---
 
