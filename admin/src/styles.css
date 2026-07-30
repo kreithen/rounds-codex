@@ -37,6 +37,9 @@ input:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 3px #24d9ff26
 .btn.sm{min-height:40px;padding:0 .9rem;font-size:.82rem}
 .btn.ghost{background:#101f36;color:#e7efff;border:1px solid #6fa9ff40}
 .link{background:none;border:0;color:var(--cyan);cursor:pointer;font:inherit;font-weight:700;padding:0 0 0 .6rem}
+.link.plain{padding:0}
+.dot-sep{margin:0 .45rem;color:#4a5872}
+.note-ok{color:var(--mint);font-size:.9rem;margin:.7rem 0 0}
 
 /* ---- dashboard ---- */
 .wrap{width:min(1160px,100% - 3rem);margin:0 auto;padding:2rem 0 5rem}

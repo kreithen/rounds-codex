@@ -4,7 +4,7 @@ A private, auth-gated dashboard for the launch list. **Vite + React**, deployed 
 separate Netlify site** at `admin.roundscodex.com`. It talks to the same Supabase project as the
 landing page and shows nothing to anyone who isn't a signed-in administrator.
 
-- Magic-link sign-in (Supabase Auth) — no passwords.
+- Email + password sign-in (Supabase Auth), with a "Forgot password?" reset flow.
 - Access limited to accounts listed in the `admins` table (row-level security enforces it).
 - Signup list with search, **CSV export**, live stats (total / subscribed / unsubscribed / by
   role) and a 14-day signups sparkline.
