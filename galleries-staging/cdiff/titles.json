@@ -1,0 +1,14 @@
+{
+  "_status": "INCOMPLETE — 5 of 10 pages received 2026-07-30. Pages 1, 7, 8, 9 and 10 are missing.",
+  "_note": "Titles read visually from the subtitle line under the main heading, cross-checked against the IMAGE TITLE footer cell. Page numbers taken from the 'IMAGE n OF 10' header, not from arrival order — the upload order was shuffled.",
+  "_defects": [
+    "Progress dots are wrong on all 5 pages: they fill cumulatively and are offset, instead of a single filled dot marking the current page as in all 47 live galleries. Needs a re-render, not a post-fix.",
+    "REVIEW field reads 'CLINICAL PENDING' on all 5 pages; the live diverticulitis set reads 'CLINICAL FOUNDATION'. Not yet through review.",
+    "Copyright line reads (c) 2026 here and on bowel-obstruction, but (c) 2025 on diverticulitis."
+  ],
+  "2": "Anatomy: Colon & Colonic Mucosa",
+  "3": "Pathophysiology: How Disease Develops",
+  "4": "Clinical Presentation",
+  "5": "Physical Examination & Diagnostic Workup",
+  "6": "Diagnostic Imaging"
+}
