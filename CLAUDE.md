@@ -246,7 +246,9 @@ no backend. This file is context for future sessions — read it before starting
   and strips** — review material, never app content. Anesthesiology is coded **`anes`**. Years sort
   **ascending**, so 2025 sits above 2026 (specified; not newest-first like the rest of the app).
   Built by `scripts/add_clinical_guidelines.js` + `scripts/add_guideline_share.js`.
-  **Live for 8 specialties (156 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `fm`, `im`, `nsg`, `obgyn`
+  **Live for 9 specialties (173 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `fm`, `im`, `neuro`, `nsg`, `obgyn`.
+  The index sorting `Neurological Surgery` before `Neurology` is the live proof that the name sort
+  matters: a code sort would put `neuro` before `nsg` and be wrong
   — all six with both years. Reachable from the home page via the purple CLINICAL UPDATES button
   and at `/u/`.
   **Every submitted entry must be citation-checked before merging.** Across the first 100, 13 stated

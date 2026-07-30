@@ -1,0 +1,100 @@
+[
+  {
+    "title": "Guideline for the Early Management of Patients With Acute Ischaemic Stroke",
+    "journal": "Stroke (AHA/ASA)",
+    "date": "2026",
+    "breakthrough": "A multi-society update consolidating several years of trial evidence: tenecteplase in place of alteplase, thrombectomy eligibility extended to large-core presentations, prehospital routing, and early complication management.",
+    "impact": "Formalises changes that had already spread through practice — tenecteplase adoption, and large-core thrombectomy after SELECT2, ANGEL-ASPECT, RESCUE-Japan LIMIT and TENSION.",
+    "practical": "Note the direction the evidence does NOT support: ESCAPE-MeVO, DISTAL and DISCOUNT were all negative in 2025, so eligibility expands to large cores, not to medium and distal vessels. The single tenecteplase bolus is the change with the largest operational effect, because it takes an infusion pump out of an interfacility transfer.",
+    "link": "Stroke - AHA/ASA guideline for the early management of acute ischaemic stroke",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=guideline+early+management+acute+ischemic+stroke+AHA+ASA+Stroke+tenecteplase+thrombectomy",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific 2026 guideline document was located; the url is a PubMed title search. The individual components are well supported independently. THREE CLAIMS CORRECTED across the two submitted versions of this entry: expansion to 'distal vessel occlusions' is contradicted by the 2025 MeVO trials; expansion to 'pediatric patients' could not be confirmed; and 'MANDATES direct transport to endovascular-capable centers' overstates a guideline. This document also appears in the Neurological Surgery 2026 list — a legitimate cross-specialty overlap, since it is central to both."
+    }
+  },
+  {
+    "title": "Zorevunersen for Dravet Syndrome",
+    "journal": "NEJM",
+    "date": "2026",
+    "breakthrough": "An antisense oligonucleotide that upregulates expression from the healthy SCN1A allele — targeted RNA medicine rather than symptomatic seizure suppression. Reported reductions in seizure frequency alongside improvements in cognition and behaviour, given intrathecally.",
+    "impact": "If it holds, this is the first disease-modifying therapy in a developmental and epileptic encephalopathy, and the cognitive and behavioural signal is the reason it matters: in Dravet syndrome the developmental impairment is not simply a consequence of seizure burden, and no anti-seizure medicine addresses it.",
+    "practical": "Argues for early genetic testing — SCN1A specifically — in an infant with prolonged febrile seizures or febrile status epilepticus, because a disease-modifying option makes the diagnosis actionable rather than merely explanatory. Note the practical implications of intrathecal administration: repeated lumbar punctures under sedation in a young child, which is a real burden on a family. Sodium channel blockers such as carbamazepine and lamotrigine remain contraindicated in Dravet syndrome, since they worsen seizures.",
+    "link": "Zorevunersen for Dravet syndrome",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=zorevunersen+antisense+oligonucleotide+SCN1A+Dravet+syndrome+trial",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "Zorevunersen is a real investigational SCN1A-targeted antisense oligonucleotide in clinical development, but the specific publication was not located and the url is a PubMed title search. 'Establishes the first paradigm shift in pediatric epilepsy care' softened to a conditional, and 'MANDATES early genetic screening' reduced to what it supports. Added the intrathecal burden and the sodium-channel-blocker contraindication — the latter is the single most consequential prescribing fact in Dravet syndrome and was absent."
+    }
+  },
+  {
+    "title": "A Randomized Trial of Shunting for Idiopathic Normal-Pressure Hydrocephalus (PENS)",
+    "journal": "NEJM",
+    "date": "16 September 2025 (formal publication 4 December 2025)",
+    "breakthrough": "The first large randomised, double-blind, PLACEBO-controlled trial of shunting in idiopathic normal-pressure hydrocephalus. 99 participants across the US, Canada and Sweden, all selected for surgery by a positive gait response to temporary CSF drainage, then randomised to an open shunt valve (opening pressure 110 mm H₂O) or a placebo setting (above 400 mm H₂O) on a non-invasively adjustable valve. Gait velocity improved 0.23 m/s with the open shunt versus 0.03 m/s with placebo — treatment difference 0.21 m/s, P<0.001.",
+    "impact": "Genuinely settles whether shunting works in selected iNPH, and the placebo-valve design is what makes it convincing — both groups had surgery. But read the outcome domains carefully: at 3 months there were significant improvements in gait velocity and in a combined gait-and-balance measure, and NOT in cognition or incontinence.",
+    "practical": "That distinction is the whole counselling conversation. Two of the three classic triad elements did not improve. A family hoping shunting will restore memory needs to hear that this trial specifically did not show that. Note also that every participant had a positive drainage response before enrolment, so the result applies to tap-responsive patients — it does not license shunting on imaging appearance alone. Outcomes were measured at 3 months, so durability is a separate question.",
+    "link": "NEJM - a randomized trial of shunting for idiopathic normal-pressure hydrocephalus",
+    "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2503109",
+    "verify": {
+      "status": "corrected — cognition and continence did not improve",
+      "note": "Real and important: NEJM, online 16 September 2025, DOI 10.1056/NEJMoa2503109, PMID 40960253, 99 participants. THE CORRECTION MATTERS FOR CONSENT: the submission said the trial demonstrated 'statistically significant and sustained improvements in gait speed, balance, AND INDEPENDENCE', and that it 'put to rest clinical skepticism'. Improvements were in gait velocity and gait/balance; cognition and incontinence did NOT improve — two of the three triad elements. 'Sustained' also overstates outcomes measured at 3 months. Added the tap-responsive selection criterion, which bounds who the result applies to."
+    }
+  },
+  {
+    "title": "Nipocalimab in Generalised Myasthenia Gravis (Vivacity-MG3)",
+    "journal": "The Lancet Neurology",
+    "date": "2025",
+    "breakthrough": "The FcRn blocker nipocalimab produced sustained IgG reduction and improvement in MG-ADL over 24 weeks in antibody-positive generalised myasthenia gravis, with enrolment spanning anti-AChR, anti-MuSK and anti-LRP4 positive patients.",
+    "impact": "The broader antibody eligibility is the distinguishing feature — much of the FcRn evidence base is in AChR-positive disease, and MuSK-positive patients are a smaller group with fewer options. Nipocalimab is given as continuous dosing rather than in cycles, which differs from efgartigimod.",
+    "practical": "A steroid-sparing option that works within weeks rather than months. Two honest limits: the trial ran 24 weeks, so 'long-term' outcomes are extension data rather than trial results; and FcRn blockade lowers total IgG, so vaccination status should be addressed before starting and infection risk considered during treatment.",
+    "link": "The Lancet Neurology - nipocalimab in generalised myasthenia gravis (Vivacity-MG3)",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=nipocalimab+Vivacity-MG3+generalized+myasthenia+gravis+FcRn+trial",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED, with two corrections",
+      "note": "Vivacity-MG3 is a real trial programme but the specific publication was not resolved and the url is a PubMed title search; the submitted 'up to 75%' IgG reduction is therefore not asserted. TWO CORRECTIONS: the submission claimed 'sustained, LONG-TERM improvement... over 24 weeks', which conflates a 24-week trial with long-term data; and 'Updates neuromuscular consensus guidelines to support FcRn inhibition OVER chronic corticosteroids' could not be confirmed — FcRn blockers are used in inadequately controlled disease, not ahead of steroids. Added the IgG-lowering infection consideration."
+    }
+  },
+  {
+    "title": "Ambroxol as a Treatment for Parkinson Disease Dementia",
+    "journal": "JAMA Neurology",
+    "date": "2025",
+    "breakthrough": "A NEGATIVE trial on its primary outcome. This 52-week phase 2 single-centre double-blind placebo-controlled trial of ambroxol — a glucocerebrosidase enhancer — in Parkinson disease dementia showed the drug was safe, well tolerated, and DID engage its target (β-glucocerebrosidase levels were higher at week 26), but it did NOT improve cognition.",
+    "impact": "There were no significant between-group differences on secondary outcomes either, including the Clinical Dementia Rating, Parkinson's Disease Cognitive Rating Scale, Trail Making and Stroop tests. One trend: total Neuropsychiatric Inventory score worsened in the placebo group while remaining stable on ambroxol.",
+    "practical": "Do not prescribe ambroxol for cognition in Parkinson disease dementia. What the trial does establish is a clean demonstration of target engagement without clinical benefit — which is genuinely informative for the lysosomal-enhancement hypothesis, and is the reason GBA1 genotype-stratified trials are the logical next step rather than a reason to treat now.",
+    "link": "JAMA Neurology - ambroxol as a treatment for Parkinson disease dementia",
+    "url": "https://jamanetwork.com/journals/jamaneurology/fullarticle/2835760",
+    "verify": {
+      "status": "REVERSED — the primary outcome was negative",
+      "note": "Real: JAMA Neurology 2025, DOI 10.1001/jamaneurol.2025.1687, PMID 40587145, phase 2, 52 weeks, single centre. The submission said ambroxol 'stabilizes neurofilament/GFAP markers of neurodegeneration, and HALTS COGNITIVE AND PSYCHIATRIC DECLINE', and that the trial 'provides early LEVEL-I trial support' for disease modification. Cognition — the primary outcome — did NOT improve, and no secondary outcome reached significance; the only signal was a trend on the Neuropsychiatric Inventory. A single-centre phase 2 trial is also not level I evidence."
+    }
+  },
+  {
+    "title": "LDL-C Above Guideline Goals in Stroke Prevention",
+    "journal": "JAMA",
+    "date": "2026",
+    "breakthrough": "A cohort analysis applying the 2026 dyslipidemia guideline's risk-stratified LDL-C thresholds found that a large proportion of high-risk stroke and cardiovascular patients remain above goal.",
+    "impact": "The gap is a treatment-intensity problem rather than a diagnostic one: these are patients already identified as high risk, already in care, and still not at target — which usually reflects statin monotherapy titration rather than combination therapy.",
+    "practical": "In secondary stroke prevention, treat to the number with combination therapy rather than sequential statin titration: high-intensity statin plus ezetimibe, adding a PCSK9 inhibitor where the target is still missed. The very-high-risk target is LDL-C below 55 mg/dL. Note that the newly approved oral PCSK9 inhibitor removes the injection barrier for patients who declined it.",
+    "link": "JAMA - LDL-C relative to guideline goals in cardiovascular and stroke populations",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=LDL-C+above+guideline+goal+PREVENT+risk+equations+secondary+stroke+prevention+cohort",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific national cohort study was located; the url is a PubMed title search, so the submitted 'over 75%' figure is not asserted. The underlying 2026 dyslipidemia guideline and its <55 mg/dL very-high-risk target are independently verified (Circulation DOI 10.1161/CIR.0000000000001423). 'PROMPTED secondary stroke prevention updates to MANDATE immediate combination therapy' could not be confirmed and was softened to what the guideline targets imply."
+    }
+  },
+  {
+    "title": "Automated Diffusion MRI for Differentiating Atypical Parkinsonian Disorders",
+    "journal": "JAMA Neurology",
+    "date": "2026",
+    "breakthrough": "A prospective multicentre evaluation of automated diffusion MRI analysis to distinguish Parkinson disease from atypical parkinsonian syndromes — multiple system atrophy, progressive supranuclear palsy and corticobasal syndrome — across different scanner platforms.",
+    "impact": "Scanner-platform generalisability is the substantive claim, because imaging biomarkers in movement disorders have repeatedly performed well at the developing centre and poorly elsewhere.",
+    "practical": "Useful mainly for the first two years, when clinical features overlap and the distinction changes prognosis and expectations more than treatment. Two cautions: an imaging result supplements clinical assessment rather than replacing it, and a confident early label of MSA or PSP carries a grave prognosis, so a false positive is not a harmless error. Levodopa response over time remains a central discriminator.",
+    "link": "Automated diffusion MRI in atypical parkinsonian disorders",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=automated+diffusion+MRI+parkinsonism+multiple+system+atrophy+progressive+supranuclear+palsy+multicenter+validation",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific multicentre validation publication was located; the url is a PubMed title search, and the named commercial platform has been removed from the title since the citation is unconfirmed. TWO CLAIMS SOFTENED: 'ELIMINATES diagnostic uncertainty in early parkinsonism' is not something a supplementary imaging test does, and 'incorporated... into movement disorder diagnostic pathways' could not be confirmed. Added the asymmetric harm of a false-positive atypical diagnosis, given the prognosis it conveys."
+    }
+  }
+]

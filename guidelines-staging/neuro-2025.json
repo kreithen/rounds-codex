@@ -1,0 +1,142 @@
+[
+  {
+    "title": "Endovascular Therapy for Medium and Distal Vessel Occlusion (ESCAPE-MeVO, DISTAL, DISCOUNT)",
+    "journal": "NEJM",
+    "date": "February 2025",
+    "breakthrough": "Three randomised trials tested thrombectomy against best medical management in medium and distal vessel occlusion. All were NEGATIVE: no improvement in 90-day functional independence. ESCAPE-MeVO randomised 530 patients within 12 hours of last seen normal.",
+    "impact": "The investigators state their results 'do not support routine endovascular treatment of acute ischaemic stroke due to medium-vessel occlusion.' The accompanying NEJM editorial asked whether this is 'the limit of thrombectomy'. Best medical therapy, including intravenous thrombolysis, remains the standard for non-large-vessel occlusion.",
+    "practical": "Keeps acute stroke workflow focused on proximal large vessel occlusion. The technical ability to reach a distal branch did not translate into patient benefit — less territory at risk, more procedural risk per unit of tissue saved.",
+    "link": "NEJM - medium- and distal-vessel occlusion: the limit of thrombectomy?",
+    "url": "https://www.nejm.org/doi/abs/10.1056/NEJMe2500492",
+    "verify": {
+      "status": "matched",
+      "note": "Real and accurately reported — the submission correctly identified these trials as negative and the increased symptomatic haemorrhage risk. Worth noting for calibration: the same trials were reversed into a positive finding in the Emergency Medicine list submitted earlier, so the lists are not uniformly reliable in the same direction. This topic appeared in BOTH neurology lists; kept here once so it does not appear under both year buttons."
+    }
+  },
+  {
+    "title": "Long-Term Adaptive Deep Brain Stimulation in Parkinson Disease (ADAPT-PD)",
+    "journal": "JAMA Neurology",
+    "date": "22 September 2025",
+    "breakthrough": "The first trial of CHRONIC adaptive deep brain stimulation, sensing subthalamic beta-band local field potentials and adjusting stimulation amplitude in real time. 68 participants with moderate-to-advanced Parkinson disease, already implanted and STABLE on continuous DBS at baseline. The primary outcome was met: most achieved good on-time without troublesome dyskinesia relative to their stable continuous stimulation.",
+    "impact": "Establishes that chronic closed-loop stimulation is tolerable, effective and safe. It does NOT establish superiority: the trial was NONRANDOMISED and open-label, in patients selected for already doing well on continuous DBS — not the population in whom continuous stimulation fails.",
+    "practical": "Lower average energy delivery may extend battery life, and adaptive stimulation may reduce over-stimulation side effects on speech and gait. But setup required reprogramming in most participants, so this does not remove programming visits — it changes what happens in them. No guideline makes sensing-capable generators the preferred primary implant.",
+    "link": "JAMA Neurology - long-term personalized adaptive deep brain stimulation in Parkinson disease",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12455485/",
+    "verify": {
+      "status": "corrected — superiority claimed from a nonrandomised trial",
+      "note": "Real: JAMA Neurology, online 22 September 2025, 68 participants. This claim appeared in THREE of the four lists submitted in that batch, each asserting adaptive DBS 'outperforms' or 'supercedes' continuous DBS. ADAPT-PD is nonrandomised and open-label, and its primary outcome was performance relative to stable continuous DBS — a non-inferiority and feasibility result. Also removed 'eliminates manual programming visits'. Kept here once; it appeared in both neurology lists."
+    }
+  },
+  {
+    "title": "Anti-Amyloid Monoclonal Antibodies: Subcutaneous Administration and ARIA Risk Management",
+    "journal": "NEJM and appropriate use recommendations",
+    "date": "2024-2025",
+    "breakthrough": "Subcutaneous autoinjector administration and revised titration schedules for the anti-amyloid antibodies lecanemab and donanemab, aimed at preserving amyloid clearance while reducing amyloid-related imaging abnormalities — ARIA-E (oedema) and ARIA-H (microhaemorrhage).",
+    "impact": "Appropriate Use Recommendations require APOE ε4 genotyping before treatment, because ε4 homozygotes carry substantially higher ARIA risk, together with a defined schedule of surveillance MRI. Lecanemab's subcutaneous maintenance formulation was authorised in the US in 2025.",
+    "practical": "Practical constraints that determine whether a memory clinic can offer this at all: MRI capacity for baseline and surveillance imaging, a pathway for managing symptomatic ARIA, and the absolute contraindication of anticoagulation in most protocols. The cognitive benefit is real but modest — a slowing of decline, not improvement — and that is the conversation to have before starting.",
+    "link": "Anti-amyloid antibodies: administration and ARIA monitoring",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=lecanemab+donanemab+subcutaneous+ARIA+appropriate+use+recommendations+APOE",
+    "verify": {
+      "status": "corrected — the submitted title named the wrong drug",
+      "note": "THE TITLE WAS WRONG: the submission headed this 'Subcutaneous Amivantamab and Disease-Modifying Monoclonal Antibodies in Neurodegenerative Guidelines'. Amivantamab is an EGFR/MET bispecific antibody for non-small-cell lung cancer and has no role in neurodegeneration; the body text described anti-amyloid antibodies, so the title appears to be a substitution error. Corrected to lecanemab and donanemab. The specific publications were not resolved and the url is a PubMed title search. Also added the modest effect size and the MRI/anticoagulation constraints, which determine feasibility and were absent. Kept here once; it appeared in both neurology lists."
+    }
+  },
+  {
+    "title": "Prourokinase versus Standard Care in Mild Acute Ischaemic Stroke",
+    "journal": "JAMA Neurology",
+    "date": "2025",
+    "breakthrough": "A multicentre trial of the fibrinolytic prourokinase in patients presenting within 4.5 hours with mild acute ischaemic stroke (NIHSS 5 or less) found NO superiority over standard antiplatelet care for 90-day functional outcome.",
+    "impact": "Consistent with the wider evidence in minor stroke: PRISMS found no benefit from alteplase in non-disabling deficits, and ARAMIS found dual antiplatelet therapy non-inferior to alteplase in minor non-disabling stroke. Thrombolysis has not been shown to help this group.",
+    "practical": "The decision hinges on whether the deficit is DISABLING, not on the NIHSS number — a score of 2 from isolated hand weakness in a surgeon is disabling. For genuinely non-disabling minor stroke, early dual antiplatelet therapy (aspirin plus clopidogrel, per CHANCE and POINT) is the standard, with the loading and duration limits those trials defined.",
+    "link": "Prourokinase in mild acute ischaemic stroke",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=prourokinase+mild+ischemic+stroke+randomized+trial+antiplatelet+NIHSS",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific prourokinase trial matching this description was located; the url is a PubMed title search. Retained because the submission's conclusion — no benefit from thrombolysis in mild non-disabling stroke — is well supported by PRISMS and ARAMIS, which have been added as the actual evidence. Added the disabling-versus-non-disabling distinction, which is the decision rule in practice and is not captured by an NIHSS threshold alone."
+    }
+  },
+  {
+    "title": "European Academy of Neurology Consensus Guidelines on Infectious Encephalitis",
+    "journal": "European Journal of Neurology",
+    "date": "2025",
+    "breakthrough": "Revised diagnostic and treatment algorithms for suspected infectious encephalitis, including guidance on the choice between targeted HSV PCR and multiplex panels, and on the timing of empirical antiviral therapy.",
+    "impact": "The multiplex point matters: syndromic CSF panels are convenient but have lower sensitivity for HSV-1 than a dedicated HSV PCR, and a negative panel has been taken as sufficient to stop aciclovir. Guidance is to use targeted testing where HSV encephalitis is suspected.",
+    "practical": "Start intravenous aciclovir empirically and early — outcome in HSV encephalitis depends on time to treatment more than on anything else, and it should not wait for PCR. A negative early PCR does not exclude HSV: repeat it at 3 to 7 days if suspicion persists, and continue aciclovir meanwhile. Adjunctive corticosteroids are not recommended routinely in HSV encephalitis.",
+    "link": "European Journal of Neurology - EAN guidelines on infectious encephalitis",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=European+Academy+of+Neurology+guideline+infectious+encephalitis+aciclovir+HSV+PCR",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific EAN guideline document was located; the url is a PubMed title search, so the submission's 'within 6 hours' figure for aciclovir initiation is not asserted here. The clinical content — targeted rather than multiplex PCR when HSV is suspected, early empirical aciclovir, no routine steroids — is well established. Added the point the submission omitted and which causes real harm: a negative early HSV PCR does not exclude the diagnosis and aciclovir should continue pending a repeat."
+    }
+  },
+  {
+    "title": "Tenecteplase versus Alteplase for Acute Ischaemic Stroke",
+    "journal": "The Lancet and others",
+    "date": "AcT 2022; ATTEST-2, TASTE and pooled analyses since",
+    "breakthrough": "Tenecteplase 0.25 mg/kg as a single intravenous bolus is non-inferior to a one-hour alteplase infusion for 90-day functional outcome, established across several randomised trials and confirmed in pooled analyses.",
+    "impact": "Tenecteplase has become the preferred thrombolytic across many stroke systems on the strength of equivalent outcomes plus a far simpler delivery. This is a body of non-inferiority evidence, not a demonstration of superiority.",
+    "practical": "The single bolus removes the infusion pump, which matters most for interfacility transfer — a patient can leave for a thrombectomy centre without an infusion running. See also BRIDGE-TNK, which found tenecteplase before thrombectomy better than proceeding straight to thrombectomy, reversing the direction set by DIRECT-MT, MR CLEAN-NO IV and SWIFT DIRECT with alteplase.",
+    "link": "Tenecteplase versus alteplase for acute ischaemic stroke",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=tenecteplase+versus+alteplase+acute+ischaemic+stroke+non-inferiority+pooled+analysis",
+    "verify": {
+      "status": "matched with corrections",
+      "note": "The conclusion is well supported, though no single pooled analysis was resolved to a citation and the url is a PubMed title search. One softening: 'operationally superior' is fair, but the clinical evidence is NON-INFERIORITY for functional outcome, not superiority, and the entry now distinguishes the two. Added BRIDGE-TNK, since bridging before thrombectomy is where tenecteplase has shown an actual advantage over the prior standard."
+    }
+  },
+  {
+    "title": "SGLT2 Inhibitors and GLP-1 Receptor Agonists and Vascular Cognitive Outcomes",
+    "journal": "JAMA and observational cohorts",
+    "date": "2025",
+    "breakthrough": "Registry and cohort analyses report that treatment with SGLT2 inhibitors or GLP-1 receptor agonists is associated with slower progression of cerebral small vessel disease and lower incidence of vascular dementia in high-risk patients.",
+    "impact": "Fits the broader logic that vascular cognitive impairment is the most modifiable form of cognitive decline, because its risk factors are the ones we already treat. But these are OBSERVATIONAL findings, and confounding by indication is substantial — the patients who get these drugs differ systematically from those who do not.",
+    "practical": "Nothing here changes what to prescribe: the indications for SGLT2 inhibitors and GLP-1 receptor agonists already stand on cardiovascular and renal outcomes. What it supports is treating vascular risk factors seriously as cognitive protection, and coordinating with cardiology and endocrinology rather than managing cognition in isolation. Do not counsel a patient that these drugs are proven to prevent dementia.",
+    "link": "SGLT2 inhibitors, GLP-1 receptor agonists and cognitive outcomes",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=SGLT2+inhibitor+GLP-1+receptor+agonist+dementia+cerebral+small+vessel+disease+cohort",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED, and the evidence type corrected",
+      "note": "No specific trial or registry publication was located; the url is a PubMed title search. IMPORTANT QUALIFICATION: the submission said 'large-scale prospective registry AND CLINICAL TRIALS demonstrated' that these agents significantly lower progression of small vessel disease and dementia risk. No randomised trial has demonstrated a dementia benefit for either class; the evidence is observational with confounding by indication. 'Prompted cognitive neurology guidelines to incorporate' could not be confirmed and was removed."
+    }
+  },
+  {
+    "title": "Subcutaneous Efgartigimod in Generalised Myasthenia Gravis",
+    "journal": "The Lancet Neurology",
+    "date": "2023",
+    "breakthrough": "Subcutaneous co-formulated efgartigimod PH20 achieved total IgG reduction non-inferior to intravenous administration, with comparable improvement in MG-ADL, in acetylcholine receptor antibody-positive generalised myasthenia gravis.",
+    "impact": "Neonatal Fc receptor blockade removes IgG including pathogenic autoantibodies, and it works within days rather than the months required by conventional immunosuppression — which changes what is possible in a deteriorating patient.",
+    "practical": "A subcutaneous injection replaces an hours-long infusion appointment, which for a cyclical therapy is a substantial reduction in treatment burden. Two caveats: efgartigimod is given in cycles rather than continuously, so symptom return between cycles has to be planned for; and it is expensive, which in practice determines access more than the evidence does.",
+    "link": "The Lancet Neurology - subcutaneous efgartigimod in generalised myasthenia gravis",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=efgartigimod+PH20+subcutaneous+generalized+myasthenia+gravis+ADAPT-SC",
+    "verify": {
+      "status": "corrected — year and the guideline claim",
+      "note": "Real (the ADAPT-SC programme), published in Lancet Neurology in 2023 rather than 2025; the specific citation was not resolved and the url is a PubMed title search. ONE CORRECTION: the submission said this 'Reconfigured neuroimmunology practice guidelines to recommend... FcRn blockers as a FIRST-LINE targeted biological option OVER chronic high-dose corticosteroids'. FcRn blockers are not first-line ahead of corticosteroids in current guidance; they are used in inadequately controlled disease. Added the cycle-based dosing and cost, which govern real-world use."
+    }
+  },
+  {
+    "title": "Long-Term CGRP Monoclonal Antibodies in Refractory Chronic Migraine",
+    "journal": "JAMA Neurology and extension studies",
+    "date": "2025",
+    "breakthrough": "Multi-year extension and real-world data report sustained reduction in monthly headache days with continuous anti-CGRP pathway inhibition, without loss of effect over time and without new safety signals emerging over five years or more.",
+    "impact": "The absence of tachyphylaxis is the substantive finding, because it undermines the rationale for mandated treatment interruptions. Several payers and health systems have required periodic discontinuation to 'reassess need'.",
+    "practical": "In a patient with a sustained response, a forced treatment holiday risks a return of disabling migraine to no clinical purpose. Two things to hold: CGRP is a vasodilatory peptide, so caution remains in significant cardiovascular or cerebrovascular disease, and these agents should be stopped in pregnancy given long half-lives and absent safety data.",
+    "link": "Long-term anti-CGRP therapy in chronic migraine",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=CGRP+monoclonal+antibody+long-term+chronic+migraine+extension+real-world+tachyphylaxis",
+    "verify": {
+      "status": "NOT INDEPENDENTLY VERIFIED",
+      "note": "No specific long-term publication was located; the url is a PubMed title search, so the 'over 5 years' framing is retained as the submission's claim rather than asserted. The absence of tachyphylaxis is consistent with published extension data. 'Updated headache medicine consensus statements to remove treatment pause mandates' could not be confirmed and was softened. Added the cardiovascular caution and the pregnancy point, neither of which appeared in the submission and both of which bear on who should be on these long term."
+    }
+  },
+  {
+    "title": "MR-Guided Focused Ultrasound Thalamotomy for Medically Refractory Tremor",
+    "journal": "NEJM and long-term registry follow-up",
+    "date": "Pivotal trial 2016, with staged bilateral data since",
+    "breakthrough": "MR-guided focused ultrasound thalamotomy produces durable tremor reduction in medically refractory essential tremor without an incision, and staged bilateral treatment has been evaluated in patients with disabling bilateral tremor.",
+    "impact": "For a patient unwilling or unable to have intracranial hardware implanted, this is a genuine alternative: no leads, no implanted generator, no infection or hardware failure risk, and no programming visits.",
+    "practical": "The trade-offs run the other way too, and they matter in counselling. Focused ultrasound is ABLATIVE and therefore irreversible and non-adjustable, whereas DBS can be tuned or turned off. Staged bilateral lesioning carries real risk of dysarthria and gait ataxia, which is why staging and interval assessment exist. Skull density ratio determines whether a patient is treatable at all, and a proportion are not.",
+    "link": "MR-guided focused ultrasound thalamotomy for essential tremor",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/?term=MRI-guided+focused+ultrasound+thalamotomy+essential+tremor+staged+bilateral+long-term",
+    "verify": {
+      "status": "corrected — design and missing trade-offs",
+      "note": "The technology and the durability data are real; the pivotal randomised trial was published in NEJM in 2016, and the specific 'long-term randomized registry' in the submission was not located (a registry is not randomised) — the url is a PubMed title search. Three things added because the submission presented this as strictly superior to DBS: ablation is irreversible and non-adjustable where DBS is not, staged bilateral lesioning risks dysarthria and ataxia, and skull density ratio excludes some patients entirely."
+    }
+  }
+]

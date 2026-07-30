@@ -1,18 +1,18 @@
 # Clinical guideline citation checks — for sign-off
 
-156 entries checked. Grouped worst-first by what a reader would take away if the
+173 entries checked. Grouped worst-first by what a reader would take away if the
 entry shipped as submitted. Every entry below is live in the app in its CORRECTED form; this
 document records what was changed and why, so any of it can be reverted.
 
 | verdict | entries |
 |---|---|
-| Findings stated backwards — a reader would learn the opposite of the published result | 16 |
+| Findings stated backwards — a reader would learn the opposite of the published result | 17 |
 | Cited study could not be found | 6 |
 | Evidence level inflated — case report presented as a trial | 2 |
-| Citation not independently verified | 46 |
-| Wrong study or replaced | 7 |
-| Corrected — dates, journals, numbers, strength of claim | 72 |
-| Matched — no correction needed | 7 |
+| Citation not independently verified | 55 |
+| Wrong study or replaced | 8 |
+| Corrected — dates, journals, numbers, strength of claim | 77 |
+| Matched — no correction needed | 8 |
 
 ---
 
@@ -95,6 +95,12 @@ Real (NIDA CTN-0099) but the submission was wrong on four counts. SITES: 29 emer
 **corrected — attribution reversed**
 
 The original said the AAFP 'updated its adult hypertension guidelines, formally adopting a target of <130/80'. The AAFP explicitly did NOT endorse the 2025 AHA/ACC guideline (nor did the ACP or ISH), and uses 'Affirmation of Value' rather than endorsement — a distinction that matters to a family physician, and one of the more instructive facts in this list. AAFP's own guidance does reference <130/80 with caveats, which is now stated accurately. Also 'Establishes out-of-office monitoring as a MANDATORY step' softened to strongly recommended.
+
+### Neurology 2026 #5 — Ambroxol as a Treatment for Parkinson Disease Dementia
+
+**REVERSED — the primary outcome was negative**
+
+Real: JAMA Neurology 2025, DOI 10.1001/jamaneurol.2025.1687, PMID 40587145, phase 2, 52 weeks, single centre. The submission said ambroxol 'stabilizes neurofilament/GFAP markers of neurodegeneration, and HALTS COGNITIVE AND PSYCHIATRIC DECLINE', and that the trial 'provides early LEVEL-I trial support' for disease modification. Cognition — the primary outcome — did NOT improve, and no secondary outcome reached significance; the only signal was a trend on the Neuropsychiatric Inventory. A single-centre phase 2 trial is also not level I evidence.
 
 ### Obstetrics & Gynecology 2026 #1 — First-Trimester Preeclampsia Screening with PlGF, sFlt-1 and Uterine Artery Doppler
 
@@ -396,6 +402,60 @@ No specific 2026 guideline document was located and the url is a PubMed title se
 
 A multispecialty consensus on sacroiliac joint pain is consistent with recent Regional Anesthesia & Pain Medicine output, but the specific document was not located and the url is a PubMed title search. The 50% block-relief threshold stated in the submission is the conventional criterion in this literature and is retained as such rather than attributed to this document specifically.
 
+### Neurology 2025 #4 — Prourokinase versus Standard Care in Mild Acute Ischaemic Stroke
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific prourokinase trial matching this description was located; the url is a PubMed title search. Retained because the submission's conclusion — no benefit from thrombolysis in mild non-disabling stroke — is well supported by PRISMS and ARAMIS, which have been added as the actual evidence. Added the disabling-versus-non-disabling distinction, which is the decision rule in practice and is not captured by an NIHSS threshold alone.
+
+### Neurology 2025 #5 — European Academy of Neurology Consensus Guidelines on Infectious Encephalitis
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific EAN guideline document was located; the url is a PubMed title search, so the submission's 'within 6 hours' figure for aciclovir initiation is not asserted here. The clinical content — targeted rather than multiplex PCR when HSV is suspected, early empirical aciclovir, no routine steroids — is well established. Added the point the submission omitted and which causes real harm: a negative early HSV PCR does not exclude the diagnosis and aciclovir should continue pending a repeat.
+
+### Neurology 2025 #7 — SGLT2 Inhibitors and GLP-1 Receptor Agonists and Vascular Cognitive Outcomes
+
+**NOT INDEPENDENTLY VERIFIED, and the evidence type corrected**
+
+No specific trial or registry publication was located; the url is a PubMed title search. IMPORTANT QUALIFICATION: the submission said 'large-scale prospective registry AND CLINICAL TRIALS demonstrated' that these agents significantly lower progression of small vessel disease and dementia risk. No randomised trial has demonstrated a dementia benefit for either class; the evidence is observational with confounding by indication. 'Prompted cognitive neurology guidelines to incorporate' could not be confirmed and was removed.
+
+### Neurology 2025 #9 — Long-Term CGRP Monoclonal Antibodies in Refractory Chronic Migraine
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific long-term publication was located; the url is a PubMed title search, so the 'over 5 years' framing is retained as the submission's claim rather than asserted. The absence of tachyphylaxis is consistent with published extension data. 'Updated headache medicine consensus statements to remove treatment pause mandates' could not be confirmed and was softened. Added the cardiovascular caution and the pregnancy point, neither of which appeared in the submission and both of which bear on who should be on these long term.
+
+### Neurology 2026 #1 — Guideline for the Early Management of Patients With Acute Ischaemic Stroke
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific 2026 guideline document was located; the url is a PubMed title search. The individual components are well supported independently. THREE CLAIMS CORRECTED across the two submitted versions of this entry: expansion to 'distal vessel occlusions' is contradicted by the 2025 MeVO trials; expansion to 'pediatric patients' could not be confirmed; and 'MANDATES direct transport to endovascular-capable centers' overstates a guideline. This document also appears in the Neurological Surgery 2026 list — a legitimate cross-specialty overlap, since it is central to both.
+
+### Neurology 2026 #2 — Zorevunersen for Dravet Syndrome
+
+**NOT INDEPENDENTLY VERIFIED**
+
+Zorevunersen is a real investigational SCN1A-targeted antisense oligonucleotide in clinical development, but the specific publication was not located and the url is a PubMed title search. 'Establishes the first paradigm shift in pediatric epilepsy care' softened to a conditional, and 'MANDATES early genetic screening' reduced to what it supports. Added the intrathecal burden and the sodium-channel-blocker contraindication — the latter is the single most consequential prescribing fact in Dravet syndrome and was absent.
+
+### Neurology 2026 #4 — Nipocalimab in Generalised Myasthenia Gravis (Vivacity-MG3)
+
+**NOT INDEPENDENTLY VERIFIED, with two corrections**
+
+Vivacity-MG3 is a real trial programme but the specific publication was not resolved and the url is a PubMed title search; the submitted 'up to 75%' IgG reduction is therefore not asserted. TWO CORRECTIONS: the submission claimed 'sustained, LONG-TERM improvement... over 24 weeks', which conflates a 24-week trial with long-term data; and 'Updates neuromuscular consensus guidelines to support FcRn inhibition OVER chronic corticosteroids' could not be confirmed — FcRn blockers are used in inadequately controlled disease, not ahead of steroids. Added the IgG-lowering infection consideration.
+
+### Neurology 2026 #6 — LDL-C Above Guideline Goals in Stroke Prevention
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific national cohort study was located; the url is a PubMed title search, so the submitted 'over 75%' figure is not asserted. The underlying 2026 dyslipidemia guideline and its <55 mg/dL very-high-risk target are independently verified (Circulation DOI 10.1161/CIR.0000000000001423). 'PROMPTED secondary stroke prevention updates to MANDATE immediate combination therapy' could not be confirmed and was softened to what the guideline targets imply.
+
+### Neurology 2026 #7 — Automated Diffusion MRI for Differentiating Atypical Parkinsonian Disorders
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific multicentre validation publication was located; the url is a PubMed title search, and the named commercial platform has been removed from the title since the citation is unconfirmed. TWO CLAIMS SOFTENED: 'ELIMINATES diagnostic uncertainty in early parkinsonism' is not something a supplementary imaging test does, and 'incorporated... into movement disorder diagnostic pathways' could not be confirmed. Added the asymmetric harm of a false-positive atypical diagnosis, given the prognosis it conveys.
+
 ### Obstetrics & Gynecology 2025 #2 — ACOG Clinical Practice Guideline: Intrapartum Fetal Heart Rate Monitoring
 
 **NOT INDEPENDENTLY VERIFIED**
@@ -495,6 +555,12 @@ The trial is SALT-ED, NEJM 2018 (PMID 29485926), not a 2025 trial. Three correct
 **REPLACED — the cited study could not be found**
 
 No JAMA study evaluating universal perinatal screening paired with primary-care-initiated zuranolone or targeted psychotherapy was located. Zuranolone itself is real and the rapid onset is accurate. Rewritten around the USPSTF screening reaffirmation and the zuranolone approval evidence. Two safety facts were absent from the original and matter a great deal for a family physician prescribing it: zuranolone is a SCHEDULE IV controlled substance with significant sedation and a post-dose driving restriction, and infant care during a 14-day course needs planning. The original's framing of immediate primary care initiation 'without waiting for specialized psychiatric placement' needed that counterweight.
+
+### Neurology 2025 #3 — Anti-Amyloid Monoclonal Antibodies: Subcutaneous Administration and ARIA Risk Management
+
+**corrected — the submitted title named the wrong drug**
+
+THE TITLE WAS WRONG: the submission headed this 'Subcutaneous Amivantamab and Disease-Modifying Monoclonal Antibodies in Neurodegenerative Guidelines'. Amivantamab is an EGFR/MET bispecific antibody for non-small-cell lung cancer and has no role in neurodegeneration; the body text described anti-amyloid antibodies, so the title appears to be a substitution error. Corrected to lecanemab and donanemab. The specific publications were not resolved and the url is a PubMed title search. Also added the modest effect size and the MRI/anticoagulation constraints, which determine feasibility and were absent. Kept here once; it appeared in both neurology lists.
 
 ---
 
@@ -896,6 +962,36 @@ Real and positive; The Lancet, 2023 rather than 2026. The non-contrast CT select
 
 Real; JAMA, 2024 rather than 2026, and the null result on 1-year patient-reported physical function is correctly reported in the submission. Added the specific approach-related risks that distinguish the two operations, since 'reducing instrumented fusion costs, surgical risk, and recovery times' does not say what the risks actually are — and dysphagia and recurrent laryngeal nerve injury are the ones that drive the decision.
 
+### Neurology 2025 #2 — Long-Term Adaptive Deep Brain Stimulation in Parkinson Disease (ADAPT-PD)
+
+**corrected — superiority claimed from a nonrandomised trial**
+
+Real: JAMA Neurology, online 22 September 2025, 68 participants. This claim appeared in THREE of the four lists submitted in that batch, each asserting adaptive DBS 'outperforms' or 'supercedes' continuous DBS. ADAPT-PD is nonrandomised and open-label, and its primary outcome was performance relative to stable continuous DBS — a non-inferiority and feasibility result. Also removed 'eliminates manual programming visits'. Kept here once; it appeared in both neurology lists.
+
+### Neurology 2025 #6 — Tenecteplase versus Alteplase for Acute Ischaemic Stroke
+
+**matched with corrections**
+
+The conclusion is well supported, though no single pooled analysis was resolved to a citation and the url is a PubMed title search. One softening: 'operationally superior' is fair, but the clinical evidence is NON-INFERIORITY for functional outcome, not superiority, and the entry now distinguishes the two. Added BRIDGE-TNK, since bridging before thrombectomy is where tenecteplase has shown an actual advantage over the prior standard.
+
+### Neurology 2025 #8 — Subcutaneous Efgartigimod in Generalised Myasthenia Gravis
+
+**corrected — year and the guideline claim**
+
+Real (the ADAPT-SC programme), published in Lancet Neurology in 2023 rather than 2025; the specific citation was not resolved and the url is a PubMed title search. ONE CORRECTION: the submission said this 'Reconfigured neuroimmunology practice guidelines to recommend... FcRn blockers as a FIRST-LINE targeted biological option OVER chronic high-dose corticosteroids'. FcRn blockers are not first-line ahead of corticosteroids in current guidance; they are used in inadequately controlled disease. Added the cycle-based dosing and cost, which govern real-world use.
+
+### Neurology 2025 #10 — MR-Guided Focused Ultrasound Thalamotomy for Medically Refractory Tremor
+
+**corrected — design and missing trade-offs**
+
+The technology and the durability data are real; the pivotal randomised trial was published in NEJM in 2016, and the specific 'long-term randomized registry' in the submission was not located (a registry is not randomised) — the url is a PubMed title search. Three things added because the submission presented this as strictly superior to DBS: ablation is irreversible and non-adjustable where DBS is not, staged bilateral lesioning risks dysarthria and ataxia, and skull density ratio excludes some patients entirely.
+
+### Neurology 2026 #3 — A Randomized Trial of Shunting for Idiopathic Normal-Pressure Hydrocephalus (PENS)
+
+**corrected — cognition and continence did not improve**
+
+Real and important: NEJM, online 16 September 2025, DOI 10.1056/NEJMoa2503109, PMID 40960253, 99 participants. THE CORRECTION MATTERS FOR CONSENT: the submission said the trial demonstrated 'statistically significant and sustained improvements in gait speed, balance, AND INDEPENDENCE', and that it 'put to rest clinical skepticism'. Improvements were in gait velocity and gait/balance; cognition and incontinence did NOT improve — two of the three triad elements. 'Sustained' also overstates outcomes measured at 3 months. Added the tap-responsive selection criterion, which bounds who the result applies to.
+
 ### Obstetrics & Gynecology 2025 #1 — Self-Collected Vaginal Swabs for High-Risk HPV Cervical Cancer Screening
 
 **corrected — setting, and consolidated from two submitted entries**
@@ -977,3 +1073,9 @@ Real and accurately summarised. Annals of Family Medicine, July/August 2026, 24(
 **matched**
 
 Real and accurate in every particular — Annals of Internal Medicine, April 2026, DOI 10.7326/ANNALS-25-02714. The four-tier ordering, the BMI thresholds and the comorbidity list all check out exactly as submitted; the most accurate entry received across any specialty list. Two things added because they change decisions: the certainty levels (moderate for semaglutide and tirzepatide, LOW for the other three) and the head-to-head finding favouring tirzepatide, plus liraglutide as second-line in the overweight-with-comorbidity group. The submitted 'active counseling on sarcopenia/bone loss in geriatric populations' could not be confirmed as a recommendation of this guideline and is not asserted.
+
+### Neurology 2025 #1 — Endovascular Therapy for Medium and Distal Vessel Occlusion (ESCAPE-MeVO, DISTAL, DISCOUNT)
+
+**matched**
+
+Real and accurately reported — the submission correctly identified these trials as negative and the increased symptomatic haemorrhage risk. Worth noting for calibration: the same trials were reversed into a positive finding in the Emergency Medicine list submitted earlier, so the lists are not uniformly reliable in the same direction. This topic appeared in BOTH neurology lists; kept here once so it does not appear under both year buttons.
