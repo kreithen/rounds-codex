@@ -16,7 +16,15 @@ guidelines-staging/
                               fullest account of the method and its limits
 ```
 
-Five specialties live as of 2026-07-30: **`anes`, `cards`, `derm`, `em`, `fm`** — 100 entries.
+Thirteen specialties live as of 2026-07-30 — **252 entries**: `anes`, `cards`, `derm`, `em`, `ent`,
+`fm`, `im`, `neuro`, `nsg`, `obgyn`, `ophtho`, `ortho`, `path`.
+
+Most carry 10 entries per year. Four do not, and the reason is deliberate: where a development
+appeared in both of a specialty's year lists it is kept on the **earlier** year only, so nothing
+shows under both buttons — `neuro` 2026 has 7, `nsg` and `obgyn` have 8, `path` has 9. The test is
+whether the later year adds a new *result*, not a new description of the same one: OTOF gene therapy
+is on both years because 2025 is the first-in-human restoration and 2026 is durability past 2.5
+years with an extended age range.
 
 **The unsuffixed file is always the canonical one.** When corrections are approved, the original
 is renamed `-submitted` and the corrected version takes the plain name, so a later
@@ -94,14 +102,41 @@ Plus one staging-only field:
   false positive. Same failure mode as the base64 `NaN` in `audit_app_e2e.js`: an over-broad pattern
   reporting a defect that isn't there.
 
-## What 100 checked citations look like
+## What 252 checked citations look like
 
-Across five specialties, the failure mode was consistent and worth knowing before trusting any
+Across thirteen specialties the failure mode was consistent and worth knowing before trusting any
 similar list: **plausible trial acronyms attached to sound clinical reasoning, with negative trials
-rendered positive.** 13 of 100 entries stated the opposite of the published result; 5 cited trials
-that do not exist; 2 described two-patient case reports as trials; 26 could not be resolved to a
-citation at all. Only 6 needed no correction.
+rendered positive.** 20 of 252 entries stated the opposite of the published result; 11 cited studies
+that could not be found; 14 named the wrong study; 2 described two-patient case reports as trials;
+60 could not be resolved to a citation at all. Only 10 needed no correction.
 
 The teaching was usually defensible — it was the *sourcing* that failed. So verify the citation even
 when the clinical claim reads as obviously correct, and be most suspicious of an entry whose
 "breakthrough" is a positive result from a trial you have not heard of.
+
+Three refinements from the later specialties:
+
+- **The title is a separate failure surface from the body.** A wrong-specialty term in the title
+  over correct body text survives a skim: "Microfracture & Gene Therapy Scaling" on an otology
+  entry, and a real AAO-HNS rhinosinusitis guideline credited to **AAOS**, the orthopaedic academy.
+  Read the title against its own body before checking either against a source.
+- **A repeated suspicious name is not automatically the same error.** `amivantamab` was a wrong-drug
+  title twice (neurology, ophthalmology) and I expected the third occurrence in ENT to be another —
+  it is real, with OrigAMI-4 (ORR 56%, n=39) and phase 3 OrigAMI-5 in HNSCC. Check every occurrence.
+- **The most dangerous entry is not the fabricated one, it is the plausible permission.** The single
+  worst item found was orthopaedics 2026 #7, which cited a registry that does not exist to support
+  waiting until morning to fix a geriatric hip fracture. Nothing about it reads as invented, and a
+  resident could have acted on it against guidance requiring surgery inside 24 hours.
+
+## When a `verify.status` is written badly, the physician meets the worst entries last
+
+`build_corrections_summary.js` sorts worst-first by parsing the status string, so the wording is
+load-bearing. Three genuine reversals in this batch were phrased "corrected — the result was
+submitted in the wrong direction" and filed under routine date fixes, 130 entries below where they
+belonged. Use the established vocabulary in the status: `REVERSED`, `NOT FOUND`, `replaced`,
+`corrected`, `matched`. The prose explanation goes in `note`, not in `status`.
+
+Note also that the summary script's **output path is its first argument**. Passing the staging files
+as a bare list makes the first one the output and overwrites it with markdown — that destroyed
+`ortho-2025.json`, and the run printed "wrote … 49 entries" as though it had succeeded. The script
+now refuses a non-`.md` output and requires the `=` in every `<label>=<file>` pair.

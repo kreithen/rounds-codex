@@ -246,20 +246,34 @@ no backend. This file is context for future sessions — read it before starting
   and strips** — review material, never app content. Anesthesiology is coded **`anes`**. Years sort
   **ascending**, so 2025 sits above 2026 (specified; not newest-first like the rest of the app).
   Built by `scripts/add_clinical_guidelines.js` + `scripts/add_guideline_share.js`.
-  **Live for 10 specialties (193 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `fm`, `im`, `neuro`, `nsg`, `obgyn`, `ophtho`.
-  **Watch for wrong-drug titles** — two submissions named a drug from an unrelated specialty while the
-  body text described the right one: `amivantamab` (a lung-cancer bispecific) where anti-amyloid
-  antibodies were meant, and `trifluridine/tipiracil` (oral colorectal chemotherapy) for ocular
-  surface squamous neoplasia. Both read plausibly and would survive a skim.
+  **Live for 13 specialties (252 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `ent`,
+  `fm`, `im`, `neuro`, `nsg`, `obgyn`, `ophtho`, `ortho`, `path`. Reachable from the home page via
+  the purple CLINICAL UPDATES button and at `/u/`.
   The index sorting `Neurological Surgery` before `Neurology` is the live proof that the name sort
-  matters: a code sort would put `neuro` before `nsg` and be wrong
-  — all six with both years. Reachable from the home page via the purple CLINICAL UPDATES button
-  and at `/u/`.
-  **Every submitted entry must be citation-checked before merging.** Across the first 100, 13 stated
-  the opposite of the published result, 5 cited trials that do not exist, and 26 could not be
-  resolved to a citation — the teaching was usually sound, the sourcing was not. `CORRECTIONS-all.md`
-  is the running record; the unsuffixed staging file is always canonical, with the physician's
-  original kept as `-submitted` once corrections are approved.
+  matters: a code sort would put `neuro` before `nsg` and be wrong.
+  **Watch for wrong-body and wrong-term titles**, not just wrong drugs. The body text is usually
+  right while the title names something from an unrelated specialty, so it survives a skim:
+  `amivantamab` (a lung-cancer bispecific) where anti-amyloid antibodies were meant;
+  `trifluridine/tipiracil` (oral colorectal chemotherapy) for ocular surface squamous neoplasia;
+  "**Microfracture** & Gene Therapy Scaling" — an orthopaedic cartilage term — on an otology entry;
+  and a real AAO-HNS rhinosinusitis guideline credited to **AAOS**, the orthopaedic academy.
+  **Do not assume a repeated suspicious name is the same error.** `amivantamab` appeared a third
+  time, in ENT, and that one is REAL — OrigAMI-4 (ORR 56%, n=39) and phase 3 OrigAMI-5 are a genuine
+  HNSCC programme. Check each occurrence.
+  **Every submitted entry must be citation-checked before merging.** Across all 252: 20 stated the
+  opposite of the published result, 11 cited studies that could not be found, 14 named the wrong
+  study, 60 could not be resolved to a citation, and 10 were clean — the teaching was usually sound,
+  the sourcing was not. `CORRECTIONS-all.md` is the running record, regenerated over every staging
+  file (`build_corrections_summary.js`); the unsuffixed staging file is always canonical, with the
+  physician's original kept as `-submitted` once corrections are approved.
+  **Write the `verify.status` so it sorts.** `build_corrections_summary.js` buckets worst-first off
+  that string, so a reversal phrased as "corrected — the result was submitted in the wrong
+  direction" lands under routine date fixes and the physician meets it last. Use the established
+  vocabulary — `REVERSED`, `NOT FOUND`, `replaced`, `corrected`, `matched` — in the status.
+  **Deduplication:** where one development appears in both year lists for a specialty, keep it on
+  the earlier year only, so nothing shows under both buttons. That is why `neuro` 2026 has 7,
+  `nsg`/`obgyn` have 8 and `path` has 9. An entry is NOT a duplicate when the later year carries a
+  genuinely new result (OTOF gene therapy: first-in-human on 2025, 2.5-year durability on 2026).
   **A shipped field must never carry review vocabulary** — `"2025 entry as submitted"` reached a
   resident-facing `date` once. The merge rejects it, using **two** regexes: the all-caps status
   tokens are matched **case-sensitively**, because `/replaced/i` and `/reversed/i` flag real clinical

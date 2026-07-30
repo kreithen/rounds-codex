@@ -1,0 +1,142 @@
+[
+ {
+  "title": "ACL Reconstruction in Patients Over 50: Age Alone Is Not a Contraindication",
+  "journal": "AAOS Annual Meeting 2026",
+  "date": "March 2026",
+  "breakthrough": "A cohort of patients aged 50 and over undergoing ACL reconstruction, followed for a mean of just over six years, reported 83.9% very good or excellent outcomes, 91.5% saying surgery met expectations and 88.2% reaching an acceptable symptom state. Graft failure was 7.1% and conversion to total knee arthroplasty was low.",
+  "impact": "Argues that chronological age alone should not exclude a patient from ACL reconstruction, and shifts the indication towards activity demand, instability and functional goals.",
+  "practical": "Offer reconstruction to the active 55-year-old with an unstable knee rather than defaulting to bracing and activity restriction. Read the caveat with the result: this is a single cohort with no younger comparison group, so it shows good outcomes in appropriately selected — effectively physiologically young — patients over 50, not equivalence with younger patients. Six-year follow-up leaves late graft survival and progression to arthroplasty unanswered.",
+  "link": "AAOS Now — patients over 50 have high satisfaction and low failure rates in ACL reconstruction",
+  "url": "https://www.aaos.org/aaosnow/2026/mar/research/research03/",
+  "verify": {
+   "status": "corrected — no comparison group, so the equivalence claim is not supported",
+   "note": "Real, presented at the 2026 AAOS Annual Meeting in New Orleans, and the numbers are accurate (83.9% very good/excellent, 91.5% expectations met, 88.2% acceptable symptom state, 7.1% graft failure, mean follow-up just over six years). CORRECTION: the submission says over-50s 'experience identical functional gains and graft survival rates from ACL reconstruction as younger demographics'. This was a single-cohort series with no younger control arm — 'identical to younger patients' is not a finding it can produce. The AAOS report itself cautions that the results likely reflect appropriately selected, physiologically young patients and that longer follow-up is needed. Rewritten to the outcomes actually reported, with the selection caveat kept in the practical field where a reader will see it."
+  }
+ },
+ {
+  "title": "2026 AAOS Clinical Practice Guideline: Management of Ankle Osteoarthritis",
+  "journal": "American Academy of Orthopaedic Surgeons",
+  "date": "Published 2 July 2026",
+  "breakthrough": "The first AAOS guideline to cover both non-operative and operative treatment of ankle osteoarthritis. It contains only two recommendations — both on injections, intra-articular hyaluronic acid and intra-articular platelet-rich plasma — together with twelve option statements covering home exercise programmes, opioids, NSAIDs and acetaminophen and others. The guideline states plainly that gaps in the evidence prevented stronger guidance and identifies where research is needed.",
+  "impact": "The finding is the absence of evidence. Ankle osteoarthritis disproportionately affects working-age adults, with 70 to 80% of cases post-traumatic after injury or chronic instability, and the specialty cannot yet grade its own principal operations for it.",
+  "practical": "Do not expect this guideline to settle total ankle arthroplasty versus tibiotalar arthrodesis — it does not address that choice with a recommendation, and any decision aid claiming AAOS backing for one over the other is not citing this document. Use it for what it does cover: where injections sit, and which non-operative measures have option-level support.",
+  "link": "AAOS — clinical practice guideline for management of ankle osteoarthritis",
+  "url": "https://www.aaos.org/aaos-home/newsroom/press-releases/aaos-releases-clinical-practice-guideline-for-management-of-ankle-osteoarthritis/",
+  "verify": {
+   "status": "corrected — the guideline is real, its central claimed content is not in it",
+   "note": "The guideline is real and the date is right (published 2 July 2026; the first AAOS CPG covering non-operative and operative ankle OA). MAJOR CORRECTION. The submission's substance is that it 'delivers clear evidence-based decision trees contrasting total ankle arthroplasty (TAA) against tibiotalar arthrodesis (fusion), giving TAA stronger recommendation grades for patient-reported mobility'. AAOS's own release says the guideline contains only two recommendations — intra-articular hyaluronic acid and intra-articular PRP — plus twelve options, and that research gaps prevented clear treatment guidance. There is no TAA-versus-fusion recommendation to cite, and the submitted 'standardizes surgical referral criteria and post-operative weight-bearing protocols' is likewise absent. Rewritten to what the guideline says, including the 70-80% post-traumatic figure, and the practical field warns against exactly the misattribution the submission would have created."
+  }
+ },
+ {
+  "title": "Subvastus Muscle-Sparing Approach in Robotic Total Knee Arthroplasty",
+  "journal": "Journal of Clinical Orthopaedics and Trauma / meta-analysis of randomised trials",
+  "date": "2025 to 2026",
+  "breakthrough": "Elevating the vastus medialis instead of dividing the quadriceps tendon preserves the extensor mechanism, and the approach is increasingly paired with robotic assistance. In a single-surgeon robot-assisted subvastus series of 81 patients (120 knees), 85% could perform an active straight leg raise by the second postoperative day, rising to 95% by the third, and mean length of stay was 3.4 days. A meta-analysis of randomised trials comparing subvastus and quadriceps-sparing approaches with the standard parapatellar approach favoured the muscle-sparing approaches on pain scores, range of motion, straight leg raise and the need for lateral retinacular release.",
+  "impact": "Supports the extensor mechanism, rather than incision length or navigation accuracy, as the variable that governs early recovery after knee replacement.",
+  "practical": "Early active quadriceps control is the reproducible benefit and it is what accelerates therapy. Be careful with the discharge claim: the robotic subvastus series reported a mean stay of 3.4 days, so faster quadriceps recovery is not the same as same-day discharge, which depends on the whole pathway, anaesthesia and patient selection. The approach has a learning curve and exposure is more demanding in a stiff or obese knee.",
+  "link": "Robot-assisted total knee arthroplasty using a modified subvastus approach",
+  "url": "https://www.sciencedirect.com/science/article/abs/pii/S0976566225001766",
+  "verify": {
+   "status": "corrected — adoption and the discharge claim overstated",
+   "note": "The mechanism and the comparative data are real: a randomised-trial meta-analysis favours subvastus and quadriceps-sparing approaches over standard parapatellar on pain, range of motion, straight leg raise and lateral retinacular release, and there is a robot-assisted subvastus series of 81 patients / 120 knees with 85% active straight leg raise by day 2. TWO CORRECTIONS. (1) 'Widespread adoption... has reshaped primary total knee replacement' is not supported — the robotic subvastus evidence is single-surgeon series, not registry-scale practice change. (2) The submission claims 'higher rates of same-day discharge'; the series it would rest on reported a mean length of stay of 3.4 days. Rewritten to the measured quadriceps outcomes, with the length-of-stay figure stated so the discharge claim cannot be repeated from this entry. Learning curve added — it is the reason the approach is not universal."
+  }
+ },
+ {
+  "title": "GLP-1 Receptor Agonists in Preoperative Arthroplasty Optimisation",
+  "journal": "Arthroplasty Today / The Journal of Arthroplasty",
+  "date": "2025 to 2026",
+  "breakthrough": "Systematic review and meta-analysis data on perioperative GLP-1 receptor agonist use in hip and knee arthroplasty found lower 90-day periprosthetic joint infection (OR 0.77, 95% CI 0.66 to 0.89), lower 90-day all-cause revision (OR 0.88, 0.82 to 0.95) and lower 90-day readmission (OR 0.79, 0.70 to 0.89), without an increase in short-term medical or aspiration complications. In patients with morbid obesity the effect is larger: 90-day periprosthetic joint infection 1.6% versus 3.2% (p = 0.03), readmission 6.9% versus 9.7%, any medical complication 10.5% versus 14.1%. Separate perioperative protocols that continued metformin, titrated insulin and added a preoperative GLP-1 agonist reported a 43% reduction in periprosthetic joint infection.",
+  "impact": "Establishes metabolic optimisation as part of the arthroplasty pathway rather than a hurdle before it, alongside anaesthetic protocols for holding weekly doses to limit aspiration risk under general anaesthesia.",
+  "practical": "Three counterweights belong in the same conversation. A one-year increase in periprosthetic fracture risk has been reported (OR 1.49, 1.08 to 2.07), predominantly after TKA. Malnutrition is common in patients taking GLP-1 agonists before joint replacement, so check nutritional status rather than assuming weight loss is benign. And a JBJS analysis found no mid-term benefit after total joint arthroplasty — the signal is concentrated in early infection, revision and readmission, not in long-term function.",
+  "link": "Arthroplasty Today — GLP-1 receptor agonists in hip and knee arthroplasty: systematic review and meta-analysis",
+  "url": "https://www.sciencedirect.com/science/article/pii/S2352344126000920",
+  "verify": {
+   "status": "matched with corrections — direction confirmed, three counter-findings added",
+   "note": "Verified and, if anything, better supported than submitted: the perioperative infection, revision and readmission benefits are real with the effect sizes quoted, the morbid obesity subgroup figures check out, and the perioperative holding protocol for aspiration risk is accurate. Nothing was reversed. THREE ADDITIONS the submission omitted, all of which change the counselling: the reported one-year increase in periprosthetic fracture risk (OR 1.49, mainly TKA), the high prevalence of malnutrition in GLP-1 users presenting for arthroplasty, and the JBJS finding of no mid-term benefit. An entry that gives only the benefits would have a resident recommending these drugs preoperatively without mentioning the fracture signal."
+  }
+ },
+ {
+  "title": "Sensor-Enabled \"Smart\" Knee Implants and Remote Therapeutic Monitoring",
+  "journal": "The Journal of Arthroplasty and related series",
+  "date": "FDA authorisation August 2021, outcome data 2025 to 2026",
+  "breakthrough": "The Persona IQ knee with the canturio tibial extension carries an inertial measurement unit — a gyroscope and accelerometer — reporting through the Canary Health Implanted Reporting Processor to surgeon and patient. It received FDA market release authorisation on 30 August 2021. Outcome data have now followed: manipulation under anaesthesia was performed in 0.97% of smart implant recipients versus 3.10% of conventional implant recipients, with objective gait data directing earlier intervention in patients heading for stiffness.",
+  "impact": "Converts postoperative range of motion from something assessed at a clinic visit into a continuously observed variable, and the manipulation rate difference is the first concrete clinical endpoint attached to it.",
+  "practical": "What it measures is kinematics: step count, cadence, stride length, walking speed and range of motion. It does not measure temperature and it is not an infection detector, so it cannot flag a developing periprosthetic infection. The device is labelled an adjunct to other measurements, not a diagnostic. The realistic use is catching the knee that is not gaining motion in time to intervene before arthrofibrosis is established.",
+  "link": "Smart implantable device-enabled remote monitoring and manipulation under anaesthesia after TKA",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12645511/",
+  "verify": {
+   "status": "corrected — two capabilities described do not exist in the device",
+   "note": "The technology and the outcome are real: Persona IQ with the canturio tibial extension (Canary Medical), FDA market release authorisation 30 August 2021, reporting through the CHIRP system, with manipulation under anaesthesia at 0.97% versus 3.10% for conventional implants. TWO CORRECTIONS, both clinically material. (1) The submission lists 'localized thermal changes' among the tracked metrics — the implant contains an inertial measurement unit (gyroscope and accelerometer) and measures kinematics; there is no temperature sensor. (2) It follows that 'clinicians can remotely identify... infection weeks before symptoms manifest' is not a capability of this device; the manufacturer's indication is objective kinematic data as an adjunct. Both removed, with the stiffness/manipulation use case — which is what the data actually show — put in their place. Also corrected the timing: this is not something that 'entered broad clinical usage' in 2026; it has been FDA-authorised since 2021."
+  }
+ },
+ {
+  "title": "Bioresorbable Magnesium Alloy Implants in Orthopaedic Trauma",
+  "journal": "Biomaterials Research and related reviews",
+  "date": "2024 to 2026",
+  "breakthrough": "Magnesium alloy hardware provides fixation and then resorbs. Its mechanical case is a density of 1.7 to 2.0 g/cm³ and an elastic modulus around 45 GPa, both close to cortical bone, which limits stress shielding in a way steel and titanium cannot. Magnesium ions released during degradation also appear to be osteoinductive, and most published clinical series report good outcomes with no second operation for implant removal.",
+  "impact": "Offers a route out of the removal operation and the long-term consequences of retained metal — stress shielding, cold sensitivity and metallic debris — in selected fractures and soft-tissue fixation.",
+  "practical": "Read the barriers before adopting. In vivo degradation kinetics remain unpredictable and corrosion can be too rapid; radiolucent zones appear around degrading implants and are not fully understood, which makes follow-up radiographs hard to interpret; long-term safety data are limited, testing protocols are not standardised and regulatory status is unsettled. Timelines quoted for complete resorption vary between devices and sites and should not be given to a patient as a fixed figure.",
+  "link": "Biological effects of magnesium-based implants and their clinical implications in orthopaedic trauma surgery",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11665827/",
+  "verify": {
+   "status": "corrected — clinical maturity and the resorption timeline overstated",
+   "note": "The direction is real: magnesium alloy implants resorb, avoid removal surgery, have an elastic modulus near bone, and the osteoinductive effect of released magnesium ions is supported. TWO CORRECTIONS. (1) The submission describes 'clinical expansion' as if the technology were settled; the reviews are explicit that unpredictable in vivo degradation, high corrosion rates, unexplained radiolucent zones, limited long-term safety data, absent standardised testing and regulatory uncertainty are the main barriers to wider use. Those barriers are now in the entry, because a resident told only the upside would not know why they never see one. (2) 'Fully resorbs into the body over 12 to 24 months' — I could not verify that as a general figure and degradation rate is precisely what is not yet predictable, so it has been removed rather than quoted. The submission's coupling of magnesium with 'printed osteoconductive scaffolds' for soft-tissue anchors is a separate and less mature technology; the entry no longer treats them as one development."
+  }
+ },
+ {
+  "title": "Timing of Geriatric Hip Fracture Fixation: What the Data Support",
+  "journal": "European Journal of Orthopaedic Surgery & Traumatology and related cohorts",
+  "date": "2024 to 2026",
+  "breakthrough": "In a cohort of more than 30,000 patients, short-term mortality was lowest for surgery performed 6 to 15 hours after admission but remained essentially uniform across the whole first 24 hours. Other series report that delay beyond 12 hours from admission is associated with increased 30-day mortality (odds of death 1.43 times higher than surgery within 12 hours). Evidence on operating out of hours specifically is conflicting, and theatres are not usually staffed overnight for hip fractures.",
+  "impact": "Supports a planned daytime list rather than a middle-of-the-night operation, provided the fracture is still fixed inside 24 hours. It does not support a general licence to delay.",
+  "practical": "The 24-hour target remains the constraint. A patient admitted in the evening can reasonably wait for a properly staffed morning list; a patient admitted in the small hours who would not reach theatre until the following afternoon is a different problem. Use the interval for genuine medical optimisation — anticoagulation reversal, correcting electrolytes and volume — not for administrative drift, and record the reason for any delay past 24 hours.",
+  "link": "Delay to surgery beyond 12 hours is associated with increased hip fracture mortality",
+  "url": "https://link.springer.com/article/10.1007/s00590-024-03997-5",
+  "verify": {
+   "status": "corrected — the cited registry finding was not found and the framing risked patient harm",
+   "note": "NOT FOUND AS DESCRIBED. The submission claims 'large-scale prospective registry data confirmed that waiting until the following morning... yields equivalent perioperative mortality and complication rates compared to middle-of-the-night emergency surgery'. I could not locate such a registry study. What the literature does support is narrower and matters: in a cohort of over 30,000, short-term mortality was lowest at 6-15 hours and uniform across the first 24 hours; separately, delay beyond 12 hours from admission was associated with 1.43 times the odds of 30-day mortality; and evidence on out-of-hours operating specifically is conflicting. Rewritten so the defensible conclusion — a planned morning list is acceptable inside the 24-hour window — is stated without implying that delay per se is safe. This was the highest-risk entry in the orthopaedics submission: as written it read as permission to postpone, against guidance requiring surgery within 24 to 48 hours, and a resident could have acted on it."
+  }
+ },
+ {
+  "title": "AI-Assisted Preoperative Planning and Implant Templating in Arthroplasty",
+  "journal": "Reviews of the AI-assisted arthroplasty perioperative pathway",
+  "date": "2025 to 2026",
+  "breakthrough": "Deep-learning tools now segment three-dimensional preoperative imaging to propose implant sizing and mechanical alignment automatically, and are being integrated into the planning step of hip and knee arthroplasty across the perioperative pathway alongside robotic execution.",
+  "impact": "Moves templating from a manual radiographic exercise to an automated one, and standardises the plan that a robotic system then executes.",
+  "practical": "Useful as a first pass that the surgeon verifies, not as a decision. The published literature on this is largely narrative and single-centre; validation is usually agreement with a surgeon's own plan rather than a patient outcome, and there is no evidence yet that automated templating changes revision rates, function or complications. Check every proposed size against the radiographs yourself — an algorithm trained elsewhere has not seen your imaging protocol or your implant inventory.",
+  "link": "Current concepts in artificial intelligence-assisted arthroplasty: a review of the perioperative pathway",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12726746/",
+  "verify": {
+   "status": "corrected — narrowed to remove a duplicate, and no validation study resolved",
+   "note": "Rewritten in two ways. (1) DEDUPLICATED: as submitted this entry covered both AI surgical planning and patient-facing triage chatbots, and the chatbot half duplicates the 2025 entry on the HSS and Aidify care aid — which is the one with actual data behind it. Under the same rule applied to neurosurgery, obstetrics and neurology, a development appears under one year only, so the chatbot content stays on 2025 and this entry is now planning-only. (2) The planning capability is real and deploying, but I could not resolve a specific multicentre validation study, so no trial or effect size is asserted. The submission's 'broad implementation... across major health networks' is not evidenced and has been replaced with what the reviews support, plus the point that these tools are validated against surgeon agreement rather than patient outcomes."
+  }
+ },
+ {
+  "title": "The \"Bikini\" Incision in Direct Anterior Total Hip Arthroplasty",
+  "journal": "Archives of Orthopaedic and Trauma Surgery and related series",
+  "date": "2021 to 2026",
+  "breakthrough": "An oblique skin incision aligned with the natural skin creases and tension lines, used with the muscle-sparing internervous direct anterior approach. Series report similar functional outcomes to the traditional longitudinal incision with fewer wound complications and better scar appearance, and in obese patients the bikini incision was not associated with an increased complication rate compared with non-obese patients. A single-surgeon series of 215 cases found it safe even with large acetabular cups of 56 mm or more.",
+  "impact": "Addresses the specific weakness of the direct anterior approach in a high-BMI patient — a vertical incision sitting in an abdominal skin fold — while keeping the internervous plane, which matters as anterior hip replacement moves into ambulatory surgery centres.",
+  "practical": "One trade-off is consistently reported and belongs in the consent discussion: a prospective ultrasonographic, electrophysiological and clinical study found the bikini incision increases lateral femoral cutaneous nerve injury, since the transverse incision crosses the nerve's course rather than running along it. Most numbness is transient but it is more common than with a longitudinal incision. Note also that the evidence base is single-surgeon series and narrative reviews rather than randomised trials.",
+  "link": "Bikini anterior hip replacements in obese patients are not associated with an increased risk of complication",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/34510240/",
+  "verify": {
+   "status": "matched with corrections — supported, but a known harm was omitted",
+   "note": "The submitted claims check out: fewer wound complications and better cosmesis than the longitudinal direct anterior incision, no increased complication rate in obese versus non-obese patients, and safety with large acetabular cups in a 215-case series. IMPORTANT ADDITION: a prospective ultrasonic, electrophysiological and clinical study found the bikini incision INCREASES lateral femoral cutaneous nerve injury, which the submission does not mention. That is the recognised trade-off of the approach and a resident describing the incision to a patient needs it. Also flagged the evidence quality — single-surgeon series and narrative reviews, not randomised trials — since the submission presents the wound benefit as settled."
+  }
+ },
+ {
+  "title": "Extended Antibiotic Prophylaxis in High-Risk Arthroplasty: Genuine Equipoise, Not a Negative Result",
+  "journal": "The Journal of Arthroplasty",
+  "date": "2024 to 2026",
+  "breakthrough": "The evidence on extended oral antibiotic prophylaxis after primary and aseptic revision joint arthroplasty is contested rather than settled. A 2024 meta-analysis found patients receiving extended prophylaxis were 35% less likely to develop periprosthetic joint infection than those given standard care, and several series report that a 7-day postoperative course — most often cefadroxil — reduced one-year infection rates in patients at high risk. Other studies found no difference, and some found higher infection rates.",
+  "impact": "The reason not to give extended prophylaxis routinely is not that benefit has been excluded. It is that trial quality is weak and heterogeneous, and that the costs — antimicrobial resistance, Clostridioides difficile infection and other antibiotic-related adverse events — fall on patients who may not benefit.",
+  "practical": "Decide by risk, not by default in either direction. The measures with the strongest support are unglamorous and unchanged: glycaemic control, nasal decolonisation, and rigorous sterile technique. If extended oral prophylaxis is used, restrict it to a defined high-risk group with a documented rationale rather than adding it to every discharge prescription.",
+  "link": "Extended prophylactic antibiotics for primary and aseptic revision total joint arthroplasty: a meta-analysis",
+  "url": "https://www.arthroplastyjournal.org/article/S0883-5403(24)00014-7/fulltext",
+  "verify": {
+   "status": "REVERSED — the submitted finding runs against the weight of the evidence",
+   "note": "REVERSED. The submission states that trials of aggressive non-standard prophylaxis 'showed no significant reduction in surgical site infections compared to standardized perioperative intravenous antibiotic protocols', and builds a recommendation against them on that basis. The literature does not support a clean negative: a 2024 meta-analysis found 35% lower odds of periprosthetic joint infection with extended prophylaxis, and 7-day courses reduced one-year infection in high-risk patients in several series — precisely the population the submission names. Other studies show no difference or higher infection rates, so the honest position is equipoise. Rewritten so the conclusion the submission reaches (do not do this routinely) is retained but rests on the real reasons — weak trial quality, resistance, C. difficile — rather than on a finding of no benefit that would not survive being looked up. The practical advice on glycaemic control, nasal decolonisation and sterile technique was sound and is kept."
+  }
+ }
+]

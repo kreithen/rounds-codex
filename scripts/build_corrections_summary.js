@@ -21,6 +21,26 @@ if (!OUT || !PAIRS.length) {
   process.exit(2);
 }
 
+/* GUARDS AGAINST THE ONE MISTAKE THIS SCRIPT'S ARGUMENT ORDER INVITES. The output path comes
+   FIRST, so calling it with the staging files as a bare list makes the first staging file the
+   output -- and it gets overwritten with markdown. That happened: ortho-2025.json was destroyed
+   and had to be reconstructed and re-diffed against the deployed content to prove the restore.
+   Nothing failed at the time; the run printed "wrote ... 49 entries" and looked like a success.
+
+   Two cheap checks. Refusing a non-.md output stops the destructive case outright. Requiring the
+   '=' in every pair stops the silent corollary: with no '=', indexOf returns -1 and slice(0, -1)
+   truncates the path to a label ending ".jso", so every heading in the report was mislabelled. */
+if (!/\.md$/i.test(OUT)) {
+  console.error(`FAILED: output must be a .md path, got '${OUT}'.`);
+  console.error('        The output path is the FIRST argument -- did you pass a staging file there?');
+  process.exit(2);
+}
+const noEq = PAIRS.filter(p => !p.includes('='));
+if (noEq.length) {
+  console.error(`FAILED: not <label>=<file.json>: ${noEq.join(' ')}`);
+  process.exit(2);
+}
+
 /* Severity by what a reader would take away if the entry shipped unchanged. */
 function rank(status) {
   const s = status.toLowerCase();

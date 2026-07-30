@@ -1,0 +1,142 @@
+[
+ {
+  "title": "Dual-AAV1 OTOF Gene Therapy Restores Hearing in Autosomal Recessive Deafness 9 (DFNB9)",
+  "journal": "Nature Medicine",
+  "date": "2024, with follow-up reports since",
+  "breakthrough": "Children with profound congenital sensorineural hearing loss from otoferlin (OTOF) deficiency received an intracochlear dual adeno-associated virus serotype 1 vector carrying human OTOF. In the bilateral series, five children aged 1 to 11 recovered auditory function and speech perception, developed the ability to localise sound — which only binaural treatment can give — and had no serious adverse events. A six-child unilateral cohort was treated first, from December 2022, at the Eye & ENT Hospital of Fudan University.",
+  "impact": "The first demonstration that a specific genetic cause of congenital deafness can be corrected at the molecular level rather than bypassed with a device.",
+  "practical": "Its immediate clinical consequence is upstream of the ear: genotype now determines whether a child is a candidate, so molecular subtyping has to happen early enough to matter, alongside — not instead of — the existing cochlear implant pathway. Note the scope. OTOF deafness is a small fraction of congenital hearing loss, the cochlea is anatomically normal in these children which is why the target is easy, and these are small single-arm trials, not randomised comparisons against implantation.",
+  "link": "Nature Medicine — bilateral gene therapy in children with autosomal recessive deafness 9",
+  "url": "https://www.nature.com/articles/s41591-024-03023-5",
+  "verify": {
+   "status": "corrected — vector construct, trial phase and year",
+   "note": "Real and well documented: AAV1-hOTOF intracochlear gene therapy for DFNB9 at Fudan University, six children unilaterally from December 2022 and five children bilaterally, published in Nature Medicine 2024, with restored auditory function, speech perception, sound localisation and no serious adverse events. THREE CORRECTIONS. (1) The submission describes 'a single intracochlear injection of an adeno-associated virus (AAV1) carrying the human OTOF gene'. It is a DUAL-AAV1 construct — the OTOF coding sequence exceeds a single AAV's packaging capacity, which is the technical reason this target took so long, so the detail is worth getting right. (2) 'Phase I/II clinical trials' — these are single-arm trials; no randomised comparison exists. (3) Year: the landmark publications are 2024, not 2025. Added the limits of the population, since the submission's framing — 'shifting the paradigm for pediatric otology from early hardware implantation toward gene therapy' — reads as though implants are being displaced, which is not the case for the great majority of deaf children."
+  }
+ },
+ {
+  "title": "2025 AAO-HNS Clinical Practice Guideline: Surgical Management of Chronic Rhinosinusitis",
+  "journal": "Otolaryngology–Head and Neck Surgery",
+  "date": "May 2025",
+  "breakthrough": "The AAO-HNS Foundation published its first guideline dedicated to the surgical management of chronic rhinosinusitis in adults, followed in July 2025 by a separate Adult Sinusitis Update. Key action statements identify the patients most likely to benefit from surgery and least likely to benefit from continued medical therapy alone — those with polyps, polyps with bony erosion, eosinophilic mucin or fungal balls — and specify that where polyps, osteitis, bony erosion or fungal disease are present the operation should achieve full exposure of the sinus lumen with removal of diseased tissue. On biologics, the guideline recommends against routine use in chronic rhinosinusitis WITHOUT nasal polyps, and recommends patient education about them when polyps are present.",
+  "impact": "Sets an explicit surgical standard — adequate exposure rather than minimal intervention — in the disease subtypes where surgery works, and puts a brake on biologic use in the non-polyp phenotype where the evidence does not support it.",
+  "practical": "Two things change practice. Stop offering biologics for chronic rhinosinusitis without polyps. And when operating on a polyp, osteitic or fungal sinus, do not leave a conservative antrostomy — the guideline asks for full lumen exposure. Note what it does not provide: there are no biomarker cut-offs for escalating to a biologic, so any threshold quoted for tissue eosinophilia or IgE is not coming from this document.",
+  "link": "AAO-HNS — clinical practice guideline: surgical management of chronic rhinosinusitis",
+  "url": "https://aao-hnsfjournals.onlinelibrary.wiley.com/doi/10.1002/ohn.1287",
+  "verify": {
+   "status": "corrected — wrong issuing body, and the biologics recommendation ran the other way",
+   "note": "The guideline is real: AAO-HNSF 'Clinical Practice Guideline: Surgical Management of Chronic Rhinosinusitis' (Shin et al., Otolaryngology–Head and Neck Surgery, May 2025), with a separate Adult Sinusitis Update in July 2025. TWO CORRECTIONS. (1) WRONG BODY: submitted as an 'AAOS/AAO-HNS' guideline. AAOS is the American Academy of Orthopaedic Surgeons and had no part in it — the same class of error as a wrong-drug title, and it would have a resident citing orthopaedic surgeons on sinus disease. (2) The biologics content is close to inverted. The submission says the guideline 'formally integrated biological therapies... into surgical decision trees' and defines 'precise biomarker thresholds (e.g., tissue eosinophilia, IgE) where biologics should be utilized'. The actual key action statements recommend AGAINST routine biologics in CRS without nasal polyps and call for patient education where polyps are present; no biomarker thresholds are set. Rewritten to the published statements, with the absence of biomarker cut-offs stated explicitly so the submitted version cannot be reconstructed from this entry."
+  }
+ },
+ {
+  "title": "Perioperative Pembrolizumab in Resectable Locally Advanced Head and Neck Cancer (KEYNOTE-689)",
+  "journal": "New England Journal of Medicine / ASCO and AACR 2025",
+  "date": "2025",
+  "breakthrough": "714 patients with newly diagnosed stage III or IVA resectable locally advanced head and neck squamous cell carcinoma were randomised to neoadjuvant pembrolizumab, surgery, postoperative radiotherapy with or without cisplatin and adjuvant pembrolizumab, or to standard of care alone. In the primary PD-L1 CPS ≥10 population median event-free survival was 59.7 months versus 26.9 months (HR 0.66, P = 0.0022); across the wider population 51.8 versus 30.4 months. The FDA has approved the perioperative regimen.",
+  "impact": "The first positive trial in more than two decades for resected locally advanced head and neck cancer, and it moves immune checkpoint blockade in front of the operation rather than after it.",
+  "practical": "Multidisciplinary discussion now has to happen before surgery, not after the pathology returns, because the neoadjuvant window closes once the patient is operated on. PD-L1 CPS is where the effect is concentrated, so testing has to be organised at diagnosis. Expect the surgical schedule to lengthen and plan the imaging and restaging accordingly.",
+  "link": "NEJM / KEYNOTE-689 — perioperative pembrolizumab in head and neck cancer",
+  "url": "https://www.nejm.org/doi/full/10.1056/NEJMc2510882",
+  "verify": {
+   "status": "matched",
+   "note": "Verified and accurate as submitted. KEYNOTE-689, 714 patients, stage III/IVA resectable LA-HNSCC, presented at AACR and ASCO 2025 and published in the New England Journal of Medicine, with FDA approval of the perioperative regimen. Nothing needed correcting; the effect sizes have been added because the submission asserted improvement without them, and the CPS ≥10 primary population is now named — the magnitude differs substantially between that group and the whole population, and a reader who does not know which figure applies to their patient will overstate the benefit. The 'first positive trial in over two decades' framing comes from the trial's own reporting."
+  }
+ },
+ {
+  "title": "VA/DoD Clinical Practice Guideline for the Management of Bothersome Tinnitus",
+  "journal": "VA/DoD, with recommendations published in JAMA Otolaryngology–Head and Neck Surgery",
+  "date": "Guideline 2024; recommendations paper 2025",
+  "breakthrough": "The first US tinnitus guideline since 2014. A multidisciplinary work group addressed 20 questions and produced two clinical algorithms and 25 evidence-based recommendations for adults with bothersome tinnitus. Cognitive behavioural therapy delivered by a trained clinician is recommended. The guideline recommends against anticonvulsants, antidepressants, antiemetics, antithrombotics, betahistine, intratympanic corticosteroid injection and NMDA receptor antagonists for tinnitus.",
+  "impact": "Draws a firm line under pharmacological treatment of tinnitus. The list of things recommended against is longer and more specific than the list of things recommended, which is the honest state of the evidence.",
+  "practical": "The practical consequence is a script for the consultation: no drug is indicated for tinnitus itself, and the effective intervention is a psychological therapy that changes the reaction to the sound rather than the sound. Treat any coexisting hearing loss on its own merits. If a patient arrives on an antidepressant or an anticonvulsant prescribed for tinnitus, this guideline is the basis for stopping it.",
+  "link": "VA/DoD clinical practice guideline for tinnitus",
+  "url": "https://www.healthquality.va.gov/guidelines/CD/tinnitus/",
+  "verify": {
+   "status": "corrected — date, and the against-list restated from the guideline",
+   "note": "Real: the VA/DoD tinnitus CPG, replacing the 2014 version, with the work group's recommendations published in JAMA Otolaryngology–Head and Neck Surgery. TWO CORRECTIONS. (1) Date: the guideline is dated 2024 (the recommendations paper appeared in 2025), not 2025 as submitted. (2) The submission says it advises 'against routine antidepressant, anticonvulsant, or dietary supplement prescriptions'. Antidepressants and anticonvulsants are right; the guideline's against-list is longer and more specific — antiemetics, antithrombotics, betahistine, intratympanic corticosteroids and NMDA receptor antagonists — and I could not confirm dietary supplements among them, so the actual list is quoted and supplements are not asserted. The submission's 'strongly endorses Cognitive Behavioural Therapy, sound therapy, and structured education' has been narrowed to CBT by a trained clinician, which is what I could verify as a recommendation; sound therapy and education are not asserted at that strength. Structure added (two algorithms, 25 recommendations, 20 questions) so the reader knows what they are looking up."
+  }
+ },
+ {
+  "title": "Adjuvant Immunotherapy After Resection of High-Risk Head and Neck Cancer: Atezolizumab Failed, Nivolumab Worked",
+  "journal": "JAMA Oncology (IMvoke010) and Journal of Clinical Oncology (NIVOPOSTOP)",
+  "date": "2025",
+  "breakthrough": "Two trials asked nearly the same question and answered it differently. IMvoke010, a phase 3 double-blind trial at 128 sites in 23 countries, gave adjuvant atezolizumab after definitive local therapy in high-risk locally advanced head and neck squamous cell carcinoma: median event-free survival 59.5 versus 52.7 months with placebo, HR 0.94 (95% CI 0.70 to 1.26), P = 0.68 — no benefit. NIVOPOSTOP (GORTEC 2018-01) added nivolumab to adjuvant cisplatin and radiotherapy in 680 completely resected high-risk patients and met its primary endpoint: 3-year disease-free survival 63.1% versus 52.5%, HR 0.76 (0.60 to 0.98), P = 0.034, irrespective of PD-L1 status.",
+  "impact": "Checkpoint blockade after surgery is not a class effect. What separated the two trials was the partner and the setting — nivolumab given with concurrent chemoradiotherapy in resected disease worked; atezolizumab as maintenance after definitive local therapy did not.",
+  "practical": "Do not extrapolate from one PD-1 or PD-L1 agent to another in the adjuvant head and neck setting, and do not offer atezolizumab there — a phase 3 trial has excluded a meaningful benefit. When quoting NIVOPOSTOP, note it enrolled patients under 75 with complete resection and that overall survival data are still maturing.",
+  "link": "IMvoke010 — atezolizumab in high-risk locally advanced head and neck cancer",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/40079944/",
+  "verify": {
+   "status": "REVERSED — the submitted trial was negative and was presented as positive",
+   "note": "REVERSED. The submission describes the addition of atezolizumab to adjuvant cisplatin and radiation in high-risk resected HNSCC and concludes it 'offers head and neck surgical oncologists an augmented systemic arm to prevent locoregional recurrence and distant metastases'. The trial exists — IMvoke010 — and it was NEGATIVE: median event-free survival 59.5 versus 52.7 months, HR 0.94 (0.70-1.26), P = 0.68, with the report stating plainly that atezolizumab did not improve clinical outcomes. Recommending it on the basis of that trial is the exact failure mode this review keeps finding. TWO FURTHER CORRECTIONS: IMvoke010 tested atezolizumab as maintenance after definitive local therapy, not added to adjuvant chemoradiation as submitted, and it is phase 3 rather than 'Phase II/III'. Rather than drop the slot, the entry now pairs it with NIVOPOSTOP (GORTEC 2018-01), the trial that DID show benefit in this setting (3-year DFS 63.1% versus 52.5%, HR 0.76, P = 0.034) — the contrast is more instructive than either alone and keeps the resident from generalising across agents."
+  }
+ },
+ {
+  "title": "Deep Learning for Endoscopic Detection of Nasopharyngeal and Laryngeal Malignancy",
+  "journal": "The Lancet Digital Health and systematic reviews",
+  "date": "2024 to 2025",
+  "breakthrough": "A national multicentre model development and validation study of AI-assisted detection of nasopharyngeal carcinoma on endoscopic images reported an external-validation area under the curve of 0.95, sensitivity 91.6% and specificity 86.1%. A separate meta-analysis of deep learning in laryngoscopy pooled nine studies and 106,175 endoscopic images, with sensitivity and specificity for laryngeal cancer around 0.95. In one prospective comparison an endoscopic AI model reached 88.0% accuracy against 80.5% for expert clinicians.",
+  "impact": "Establishes that image-recognition performance on nasopharyngeal and laryngeal endoscopy is at or near expert level on curated datasets, and that the datasets are now large enough for the estimates to be stable.",
+  "practical": "The realistic use is a second read in a general ENT or primary care endoscopy setting, where subtle mucosal malignancy is most often missed. Read the design limits before trusting it: these are model development and validation studies on selected image sets, not deployed clinical trials with patient outcomes, and no study has shown that AI assistance reduces biopsies, delays or mortality. Performance also degrades on images from scopes and populations the model has not seen.",
+  "link": "The Lancet Digital Health — AI-assisted detection of nasopharyngeal carcinoma on endoscopic images",
+  "url": "https://www.thelancet.com/journals/landig/article/PIIS2589-7500(25)00041-X/fulltext",
+  "verify": {
+   "status": "corrected — journal not confirmed, and two claims not supported",
+   "note": "The performance claims are broadly right: the submitted 86-95% accuracy band matches what the literature reports for nasopharyngeal and laryngeal endoscopic AI, and a prospective comparison beating expert clinicians (88.0% versus 80.5%) exists. THREE CORRECTIONS. (1) Journal: submitted as JAMA Otolaryngology meta-analyses; the strongest work I could confirm is in The Lancet Digital Health plus a laryngoscopy meta-analysis elsewhere, so JAMA Otolaryngology is not asserted. (2) 'Middle ear pathology' was not confirmed in the studies retrieved and has been dropped — the verified domains are nasopharyngeal and laryngeal. (3) The submission's practical claims that this 'validates AI image-recognition platforms as real-time intraoperative... diagnostic support tools' and 'reduces unnecessary diagnostic biopsy procedures' go beyond model-validation studies; neither intraoperative deployment nor a reduction in biopsies has been demonstrated. Replaced with the second-read framing and the generalisation caveat."
+  }
+ },
+ {
+  "title": "Universal Newborn Screening for Congenital Cytomegalovirus and Late-Onset Hearing Loss",
+  "journal": "Otolaryngology–Head and Neck Surgery",
+  "date": "November 2025",
+  "breakthrough": "An eight-year study of audiological outcomes in newborns screened universally for congenital cytomegalovirus found that roughly one third of cCMV-related hearing loss develops after the newborn period. About 10% of cCMV-positive infants develop sensorineural hearing loss, and half of those cases present late. Targeted screening — testing only infants with a failed hearing screen, microcephaly or other risk factors — has an estimated sensitivity of 79 to 88% and misses over 43% of infants with CMV-related hearing loss in infancy.",
+  "impact": "Reframes the argument for universal screening. The case is not that targeted testing misses infected babies at birth; it is that a normal newborn hearing screen does not exclude cCMV-related hearing loss that has not yet appeared, and only knowing the CMV status identifies who needs serial audiology.",
+  "practical": "A cCMV-positive infant who passes the newborn hearing screen still needs scheduled audiological surveillance through early childhood, because a third of the hearing loss arrives later. Identification also opens the window for antiviral treatment and early auditory habilitation. Both dried blood spot PCR and urine or saliva PCR are used for universal screening — they are not interchangeable, and saliva or urine PCR is the more sensitive test.",
+  "link": "AAO-HNS — universal cCMV screening and early detection of newborn hearing loss",
+  "url": "https://www.entnet.org/resource/study-reveals-critical-impact-of-universal-ccmv-screening-on-early-detection-of-hearing-loss-in-newborns/",
+  "verify": {
+   "status": "matched with corrections — supported, and quantified",
+   "note": "Verified and accurate in direction. The eight-year universal-screening study was published in Otolaryngology–Head and Neck Surgery in November 2025 and the submitted argument — that targeted testing and standard hearing screens miss late-onset cCMV hearing loss — is exactly what it found. Figures added because the submission asserted the conclusion without any: one third of cCMV hearing loss develops after the newborn period, 10% of cCMV-positive infants develop sensorineural loss with half presenting late, targeted screening sensitivity 79-88% missing over 43% of affected infants. ONE CORRECTION: the submission treats dried blood spot as the universal method; universal screening is done by dried blood spot PCR or by urine or saliva PCR, and the latter are more sensitive, which matters if a resident is asked which test to order."
+  }
+ },
+ {
+  "title": "Behavioural Voice Therapy Before Phonosurgery — and the Thin Evidence for Virtual Reality Delivery",
+  "journal": "American Journal of Speech-Language Pathology and related work",
+  "date": "2024 to 2026",
+  "breakthrough": "Behavioural voice therapy remains the first-line treatment for muscle tension dysphonia and other hyperfunctional voice disorders, and recent work has focused on specifying what the effective therapies actually consist of — a Rehabilitation Treatment Specification System analysis mapped four evidence-based voice therapies for muscle tension dysphonia so that the active ingredients can be named and compared. Virtual reality is being explored as a delivery medium, principally to help transfer voice technique from the clinic room into realistic environments, with feasibility and validation studies under way.",
+  "impact": "The substantive development is unglamorous and real: the field is defining its interventions precisely enough to compare them. Immersive delivery is a plausible way to solve the transfer problem in voice therapy, which is where behavioural gains are commonly lost.",
+  "practical": "Continue to offer behavioural voice therapy before considering injection or thyroplasty for functional and neuromuscular voice disorders — that sequence is standard and is not in question. Do not present virtual reality as an established modality: it is at the feasibility and validation stage, and a patient should not be told it works better than conventional therapy.",
+  "link": "American Journal of Speech-Language Pathology — specifying evidence-based voice therapies for muscle tension dysphonia",
+  "url": "https://pubs.asha.org/doi/10.1044/2024_AJSLP-23-00362",
+  "verify": {
+   "status": "NOT FOUND as described — rewritten around what is supported",
+   "note": "The submitted claim could not be verified. It describes 'multicenter trials evaluating immersive Virtual Reality (VR) environments combined with standard speech-language pathology protocols' that 'yielded superior acoustic and patient-reported outcome measures in muscle tension dysphonia and vocal fold paresis'. No such multicentre trial surfaced. What exists is earlier-stage: a feasibility and validation trial of VR speech-language therapies (NCT05695131, general SLP rather than voice specifically), work on head-mounted VR to aid real-life transfer in voice therapy, and VR rehabilitation pilots in other domains. The clinically sound part of the submission — that behavioural voice therapy precedes phonosurgical intervention — is standard and is kept, and the RTSS specification work is substituted as the real recent development in this area. The entry now says explicitly that VR is not established, because the submitted version would support telling a patient it outperforms conventional therapy."
+  }
+ },
+ {
+  "title": "Upper Airway Stimulation for Obstructive Sleep Apnea: Five-Year Outcomes",
+  "journal": "The Laryngoscope and the ADHERE registry",
+  "date": "2020 to 2025",
+  "breakthrough": "The ADHERE registry is a multicentre prospective observational cohort of patients receiving hypoglossal nerve stimulation after failing CPAP. Sleepiness, quality of life and respiratory outcomes improve and are sustained at five years, with a responder rate of 63% at five years on a last-observation-carried-forward analysis. Therapy usage was 5.6 ± 2.1 hours per night at 12 months. Serious device-related events, all involving lead or device adjustment, occurred in 6%. In multivariable analysis only female sex and lower baseline body mass index predicted response.",
+  "impact": "Establishes hypoglossal nerve stimulation as a durable outpatient option for moderate-to-severe OSA in CPAP-intolerant patients, with adherence far better than CPAP achieves — which is the point, since an unworn effective therapy is not effective.",
+  "practical": "Counsel with the actual numbers: about six patients in ten respond at five years, and roughly one in sixteen will need a device or lead revision. Selection matters more than technique — response is better at lower BMI, and drug-induced sleep endoscopy is used to exclude complete concentric palatal collapse before implanting. Note that ADHERE is an observational registry, not a randomised comparison against alternative sleep surgery.",
+  "link": "The Laryngoscope — results of the ADHERE upper airway stimulation registry and predictors of therapy efficacy",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/31520484/",
+  "verify": {
+   "status": "matched with corrections — supported, and quantified",
+   "note": "Verified. Multi-year registry follow-up does confirm sustained efficacy and high adherence in CPAP-failure patients, and the non-concentric collapse selection criterion in the submission is a genuine requirement. Figures added because 'sustained efficacy and long-term compliance' without numbers reads far stronger than 63% responders at five years: usage 5.6 ± 2.1 hours per night, 6% serious device-related events all involving lead or device adjustment, and female sex and lower BMI as the only independent predictors of response. ONE CORRECTION to framing: the submission says this 'establishes surgical neurostimulation as a routine outpatient alternative to traditional tissue-resection sleep surgeries (such as UPPP)'. ADHERE is an observational registry with no comparison arm, so it cannot establish superiority or equivalence against UPPP; that comparison is not asserted."
+  }
+ },
+ {
+  "title": "Hearing Loss as a Modifiable Risk Factor for Dementia (2024 Lancet Commission)",
+  "journal": "The Lancet",
+  "date": "2024",
+  "breakthrough": "The 2024 Lancet Commission on dementia prevention identified 14 modifiable risk factors across the life course and estimated that hearing impairment is associated with about 7% of dementia cases globally — tied with high midlife LDL cholesterol as the largest single contributor. The Commission judged the evidence that treating hearing loss reduces dementia risk to be stronger than at its previous report, with hearing aid use appearing particularly effective in people who have hearing loss plus other dementia risk factors.",
+  "impact": "Places audiological care inside dementia prevention rather than alongside it, and gives an actual population figure to an association that had been discussed qualitatively.",
+  "practical": "Two things follow. Offer amplification early rather than waiting for a patient to find the loss disabling, and do so most insistently in the patient who also has hypertension, diabetes, depression or social isolation. State the evidence honestly: a population attributable fraction is a modelled estimate that assumes causality and is actively debated in the audiology literature, and no randomised trial has yet shown that fitting hearing aids prevents dementia in an unselected population.",
+  "link": "The Lancet Commission 2024 — dementia prevention, intervention and care",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Lancet+Commission+2024+dementia+prevention+intervention+care+14+modifiable+risk+factors",
+  "verify": {
+   "status": "matched with corrections — supported, with the mechanism of the estimate flagged",
+   "note": "Verified. The 2024 Lancet Commission does identify 14 modifiable risk factors and put hearing impairment at roughly 7% of dementia cases globally, level with high midlife LDL as the largest, and it does state that the evidence for treating hearing loss is stronger than in the previous report. ONE CORRECTION: the submission says the work 'establishes interdisciplinary guidelines connecting otology, neurology, and geriatrics to mandate early hearing aid fitting'. A Lancet Commission is not a guideline and mandates nothing; that has been reworded. ADDITION: the entry now states that a population attributable fraction is a modelled estimate assuming causality, that it is contested in the audiology literature, and that no randomised trial has shown hearing aids prevent dementia in an unselected population — because a resident quoting '7% of dementia is caused by hearing loss' as established fact will be corrected by anyone who has read the critiques."
+  }
+ }
+]
