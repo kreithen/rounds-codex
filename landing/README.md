@@ -5,7 +5,10 @@ transferred here so it's version-controlled and portable off the ChatGPT host.
 
 - `index.html` — the whole page. Inline CSS + JS, no external scripts, no font/CDN dependencies
   (falls back to the system sans stack; Inter is named but not loaded).
-- `assets/` — 17 `.webp` images + `favicon.svg` (see manifest below).
+- `assets/` — 17 `.webp` images. `favicon.svg` sits at the folder root (that's the path the page
+  references). All present and verified (18/18 decode, 0 page errors).
+
+Fully self-contained — nothing loads from the ChatGPT host anymore.
 
 ## What was changed on transfer
 The original hard-coded every asset URL to
@@ -14,10 +17,8 @@ The original hard-coded every asset URL to
 `og:image` / `twitter:image` were pointed at the canonical `https://www.roundscodex.com/…`
 (social scrapers require absolute URLs). Nothing else was altered.
 
-## Assets still needed
-The `.webp` files live only on the ChatGPT host, which this workspace's proxy blocks, so they
-were not pulled in. Supply these 18 files into `assets/` (drop them in Google Drive and I'll
-import them, or upload directly):
+## Asset manifest
+All supplied (from the ChatGPT site-builder export zip) and verified:
 
 | File | Used for |
 |---|---|
