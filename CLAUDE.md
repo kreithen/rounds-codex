@@ -246,8 +246,9 @@ no backend. This file is context for future sessions — read it before starting
   and strips** — review material, never app content. Anesthesiology is coded **`anes`**. Years sort
   **ascending**, so 2025 sits above 2026 (specified; not newest-first like the rest of the app).
   Built by `scripts/add_clinical_guidelines.js` + `scripts/add_guideline_share.js`.
-  **Live for 17 specialties (320 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `ent`,
-  `fm`, `im`, `neuro`, `nsg`, `obgyn`, `ophtho`, `ortho`, `path`, `peds`, `plastics`, `pmr`, `prev`.
+  **Live for 18 specialties (330 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `ent`,
+  `fm`, `im`, `neuro`, `nsg`, `obgyn`, `ophtho`, `ortho`, `path`, `peds`, `plastics`, `pmr`, `prev`,
+  `psych`.
   A single-year specialty should **omit** the other year, not ship `2026: []` — an empty array
   renders a "Coming soon" button. `prev` shipped that way for one deploy before its 2026 arrived.
   **`prev` 2026 has 7**: four submitted entries repeated its own 2025 list.
@@ -267,9 +268,9 @@ no backend. This file is context for future sessions — read it before starting
   **Do not assume a repeated suspicious name is the same error.** `amivantamab` appeared a third
   time, in ENT, and that one is REAL — OrigAMI-4 (ORR 56%, n=39) and phase 3 OrigAMI-5 are a genuine
   HNSCC programme. Check each occurrence.
-  **Every submitted entry must be citation-checked before merging.** Across all 320: 24 stated the
+  **Every submitted entry must be citation-checked before merging.** Across all 330: 25 stated the
   opposite of the published result, 16 cited studies that could not be found, 18 named the wrong
-  study, 63 could not be resolved to a citation, and 11 were clean — the teaching was usually sound,
+  study, 67 could not be resolved to a citation, and 12 were clean — the teaching was usually sound,
   the sourcing was not. `CORRECTIONS-all.md` is the running record, regenerated over every staging
   file (`build_corrections_summary.js`); the unsuffixed staging file is always canonical, with the
   physician's original kept as `-submitted` once corrections are approved.
@@ -281,6 +282,12 @@ no backend. This file is context for future sessions — read it before starting
   grouped all three, which is how the unapproved one travels. Same class of check caught a
   **paediatric safety inversion**: the omalizumab entry said the drug eases "reliance on strict food
   avoidance" — it does not, and a family acting on that could feed a child an allergen.
+  **A protocol journal is not a results journal.** The psychiatry list cited JMIR Research
+  Protocols for "results from the landmark CONVOKE Phase 3 trial" — that journal publishes study
+  protocols, so the citation and the claim were incompatible on their face.
+  **Invented trial acronyms are a recurring failure.** The real LQD trial (lithium versus quetiapine
+  augmentation, Lancet Psychiatry 2025) was submitted as "LITH-QUE"; ESTEEM and ANGLE did not exist
+  at all. Search the acronym before trusting it — a wrong one sends the reader nowhere.
   **Check what the cited publication actually is.** Preventive Medicine 2026 sourced its gut
   microbiome entry to "Healing Holidays Health Journal" — a wellness-retreat travel company — and
   its AI-calcium entry to Definitive Healthcare, a commercial data vendor. A press release also
