@@ -78,7 +78,10 @@ if (problems.length) {
 res.guidelines = res.guidelines || {};
 res.guidelines[SPEC] = Object.assign(res.guidelines[SPEC] || {}, years);
 
-/* 2-space, matching how split_content.js writes the other content files */
-fs.writeFileSync(RESFILE, JSON.stringify(res, null, 1) + '\n');
+/* COMPACT, no indent — that is what split_content.js writes (`JSON.stringify(files[f])`), and every
+   content/*.json on the live site is minified. Pretty-printing this file added 300 kB of pure
+   whitespace to a 3.7 MB download that every user fetches at boot and the service worker precaches,
+   and it turned a 20-entry addition into a 57,000-line diff nobody could review. */
+fs.writeFileSync(RESFILE, JSON.stringify(res));
 console.log(`\n${specName} (${SPEC}): ${Object.entries(res.guidelines[SPEC]).map(([y, v]) => y + '=' + v.length).join(', ')}`);
 console.log(`wrote ${RESFILE} (${fs.statSync(RESFILE).size} bytes)`);
