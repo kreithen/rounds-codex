@@ -151,3 +151,135 @@ literature search, not a medical re-read — see `VERIFICATION.md` for the metho
 [Multiparametric MRI in metabolic dysfunction-associated steatotic liver disease](https://pubmed.ncbi.nlm.nih.gov/?term=multiparametric+MRI+cT1+liver+fibrosis+inflammation+MASH+non-invasive+validation)
 
 > **Citation check — ⚠ citation not independently verified — the named journal does not exist.** Multiparametric liver MRI including corrected T1, fat fraction and iron quantification is real, commercially available and under active validation in metabolic liver disease, so the substance is credible. TWO PROBLEMS WITH THE CITATION. The submission names the journal as 'Gastroenterology & Radiology', which is not a publication — Gastroenterology and Radiology are two separate journals, and the conflation suggests the citation was not checked. And I could not verify the prospective validation trial or the claim that AASLD guidelines have adopted this as a non-invasive surrogate biomarker for monitoring MASH treatment response. ADDED: the performance limitation that matters clinically — non-invasive markers discriminate well at the extremes of fibrosis and poorly in the intermediate range where decisions are hardest — and the point that the strongest case is serial monitoring rather than initial diagnosis, which is a narrower claim than 'replaces painful, invasive needle liver biopsies'.
+
+---
+
+## 2026
+
+9 entries · **9 with a citation problem — see the checks below**
+
+### 1. C-TRACT: Iliac Vein Stenting for Post-Thrombotic Syndrome
+
+*New England Journal of Medicine · April 2026*
+
+**The breakthrough.** An open-label, assessor-blinded NIH-sponsored trial randomised 225 patients with moderate or severe post-thrombotic syndrome at 29 US centres to iliac vein stent placement with enhanced antithrombotic therapy plus standard care (n=113) or standard care alone (n=112). At six months, 40% of the stented group had severe post-thrombotic syndrome by Venous Clinical Severity Score against 93% of controls, with improved venous symptoms and quality of life. Presented at the Society of Interventional Radiology annual meeting in Toronto with simultaneous NEJM publication.
+
+**Clinical guideline impact.** Post-thrombotic syndrome has had no established interventional treatment — compression and anticoagulation are supportive, not corrective. A randomised result of this size changes what can be offered to a patient with a chronically swollen, ulcerating leg.
+
+**Practical implications.** The trade-off is bleeding: endovascular treatment plus enhanced antithrombotic therapy reduced symptom severity and improved quality of life but INCREASED bleeding risk compared with standard care alone. That belongs in the consent conversation, and it is why patient selection matters — moderate-to-severe disease with iliac obstruction, not every post-DVT leg. The endpoint is symptom severity and quality of life at six months, so durability of stent patency over years remains the open question.
+
+[ACC — C-TRACT: endovascular therapy for post-thrombotic syndrome reduces severity, improves quality of life](https://www.acc.org/latest-in-cardiology/journal-scans/2026/04/21/16/07/c-tract)
+
+> **Citation check — ⚠ matched with corrections — verified, with the bleeding harm restored.** Verified: C-TRACT, open-label assessor-blinded, 225 patients at 29 US centres, iliac vein stenting plus enhanced antithrombotic therapy versus standard care, severe post-thrombotic syndrome by VCSS in 40% versus 93% at six months, presented at SIR with simultaneous NEJM publication. THE MATERIAL CORRECTION: the submission reports only benefit. The trial found that adding endovascular treatment INCREASED THE RISK OF BLEEDING, which is the trade-off a patient is being asked to accept and which the submitted entry omits entirely. Added. Two smaller points: the actual VCSS figures replace the submission's vaguer 'reducing severe PTS symptoms in over 50% of treated patients', and the six-month endpoint is stated because stent durability over years is not addressed. The claim that SIR and AHA venous disease guidelines have been updated was not confirmed.
+
+### 2. MASAI: AI-Supported Single Reading versus Double Reading in Screening Mammography
+
+*Trial reporting, presented at ECR · 2023 to 2026*
+
+**The breakthrough.** MASAI is a randomised trial of AI-supported mammography screening against standard double reading by two radiologists in a population screening programme. Longer-term follow-up addresses the endpoint that matters for a screening change — interval cancers, the cancers that appear between screening rounds and represent what the programme missed.
+
+**Clinical guideline impact.** Interval cancer rate is the only honest test of a screening workflow change. Higher immediate detection can come from finding indolent disease; a workflow is safe only if the cancers it misses are no more numerous than before.
+
+**Practical implications.** The workforce case is real — breast radiologist shortages are the binding constraint on screening capacity in many systems, and single reading with AI support is a plausible answer. Before adopting, ask two questions the enthusiasm tends to skip: whether the AI was validated on the equipment and population you screen, since performance drops off-distribution, and what happens when the AI and the single reader disagree. I could not verify the specific interval-cancer findings presented at ECR, nor the claim that EUSOBI and ACR guidelines have formally approved single-radiologist-plus-AI reading.
+
+[MASAI trial — AI-supported mammography screening](https://pubmed.ncbi.nlm.nih.gov/?term=MASAI+trial+artificial+intelligence+mammography+screening+interval+cancer+double+reading)
+
+> **Citation check — ⚠ citation not independently verified — the guideline approval claim is the concern.** MASAI is a real randomised trial of AI-supported mammography screening and its early results are published, so the entry is well founded. I did not verify the long-term interval-cancer data presented at ECR that the submission describes. THE CLAIM THAT MATTERS is that this 'reshapes EUSOBI and ACR screening workflow guidelines to formally approve single-radiologist + AI reading models as a safe alternative to dual human reads' — replacing a second human reader in a national screening programme is a major governance decision, and no such guideline approval was confirmed, so it is not asserted. ADDED: off-distribution performance degradation and the reader-AI disagreement pathway, both of which determine whether a validated model is safe in a given service and neither of which the submission mentions.
+
+### 3. Histotripsy for Non-Invasive Ablation of Focal Liver Tumours
+
+*Registry and multicentre interventional reporting · 2024 to 2026*
+
+**The breakthrough.** Histotripsy uses focused ultrasound to generate acoustic cavitation that mechanically disrupts tissue, destroying a target without heat and without a needle. Registry and multicentre data have been reported for primary and metastatic focal liver tumours.
+
+**Clinical guideline impact.** Non-thermal ablation sidesteps the two limits of radiofrequency and microwave ablation: heat-sink effects near large vessels and thermal injury to adjacent structures like bile ducts.
+
+**Practical implications.** The advantages are real but bounded. An acoustic window is required — lesions behind ribs, bowel gas or lung are not treatable, and depth and body habitus constrain access. Ablation without tissue puncture also means no needle biopsy at the same sitting, so histological confirmation has to be planned separately. I could not verify the specific trial results or the claim that SIR and CIRSE interventional oncology guidelines have adopted histotripsy alongside RFA and microwave ablation, so the comparison with established modalities should not be presented as settled.
+
+[Histotripsy for hepatic tumour ablation](https://pubmed.ncbi.nlm.nih.gov/?term=histotripsy+liver+tumor+ablation+histotripsy+clinical+trial+outcomes)
+
+> **Citation check — ⚠ citation not independently verified — capability limits added.** Histotripsy is real, FDA-cleared for hepatic ablation, and the non-thermal mechanism is accurately described. I did not verify the specific registry or multicentre trial results, nor the claim that SIR and CIRSE guidelines have adopted it as a validated modality alongside RFA and microwave ablation. ONE CORRECTION AND ONE ADDITION. The submission says histotripsy 'enable[s] safe ablation of lesions previously considered anatomically unresectable' and 'completely eliminates' needle punctures and bleeding risk — but it requires an acoustic window, so lesions obscured by rib, bowel gas or lung are not treatable at all, which is a different limitation from the ones it solves. And no needle means no same-session biopsy, so histological confirmation must be arranged separately — a practical point the submission's framing hides.
+
+### 4. 18F-Flurpiridaz PET Myocardial Perfusion Imaging
+
+*SNMMI/ASNC/ACNM procedure standard · 2025 to 2026*
+
+**The breakthrough.** 18F-flurpiridaz is a fluorine-18 labelled myocardial perfusion agent, and joint society procedure standards have been issued for its use in cardiac PET. Its 110-minute half-life is the practical differentiator: unlike rubidium-82, which requires an on-site generator, a fluorine-18 tracer can be produced regionally and shipped as unit doses — and a longer half-life permits treadmill exercise stress rather than pharmacological stress alone.
+
+**Clinical guideline impact.** Cardiac PET has been confined to centres with a generator or cyclotron. A shippable tracer decouples high-resolution perfusion imaging from that infrastructure, which is a distribution change more than a diagnostic one.
+
+**Practical implications.** The half-life is the point to understand, because it enables exercise stress — physiologically more informative than a pharmacological agent, and impossible with rubidium-82. Two qualifications: superiority claims should be read against SPECT, which is the comparator in the trial programme, and 'microvascular coronary artery disease' is a specific and difficult diagnosis for which quantitative flow reserve rather than perfusion imaging alone is usually required. I could not verify the comparative accuracy figures the submission implies.
+
+[SNMMI — flurpiridaz F-18 cardiac PET practice standards](https://www.snmmi.org/ClinicalPractice/content.aspx?ItemNumber=48083)
+
+> **Citation check — ⚠ matched with corrections — mechanism accurate, one diagnostic claim narrowed.** The tracer is real and FDA-approved, the 110-minute half-life is correct, and the consequences the submission draws from it — regional unit-dose distribution and the feasibility of treadmill exercise stress, both impossible with generator-produced rubidium-82 — are accurate and are the substantive advance. A joint society procedure standard is plausible and consistent with the approval. ONE CORRECTION: the submission claims 'superior diagnostic accuracy and spatial resolution for microvascular coronary artery disease compared to traditional SPECT MPI'. The comparator in the development programme is SPECT, and PET does offer better spatial resolution and quantification — but microvascular disease specifically is diagnosed on quantitative myocardial flow reserve rather than perfusion imaging alone, so that indication is narrowed. The specific accuracy figures were not verified.
+
+### 5. 18F-GP1 PET/CT for Thrombus Imaging
+
+*Nuclear medicine reporting, SNMMI · 2026*
+
+**The breakthrough.** 18F-GP1 binds the activated glycoprotein IIb/IIIa receptor on aggregated platelets, imaging thrombus composition directly rather than inferring it from a filling defect or absent flow. Reported applications include acute deep vein thrombosis in upper and lower extremities and detection of coexisting pulmonary embolism.
+
+**Clinical guideline impact.** Distinguishing acute from chronic thrombus is a genuine clinical problem that anatomical imaging handles badly. A patient with a chronically occluded vein and new symptoms is a common and difficult presentation, and platelet-targeted imaging addresses exactly that ambiguity.
+
+**Practical implications.** The realistic role is the equivocal case — non-diagnostic ultrasound, suspected recurrent DVT in a previously affected limb, or upper-extremity thrombosis where ultrasound is technically limited. It is not a replacement for Doppler ultrasound or CT pulmonary angiography as first-line tests, and availability is confined to research centres. I could not verify the trial data or the claim that SNMMI and CHEST guidelines have been updated to include molecular thrombosis imaging.
+
+[18F-GP1 PET/CT thrombus imaging](https://pubmed.ncbi.nlm.nih.gov/?term=18F-GP1+PET+CT+thrombus+imaging+deep+vein+thrombosis+pulmonary+embolism+glycoprotein)
+
+> **Citation check — ⚠ citation not independently verified.** 18F-GP1 is a real investigational tracer targeting activated glycoprotein IIb/IIIa on platelets, and thrombus imaging is its intended application, so the mechanism the submission describes is accurate. I did not verify the trial results, the SNMMI Image of the Year designation, or the claim that SNMMI and CHEST guidelines have been updated to establish target-specific PET as a secondary diagnostic tool. Rewritten so the role is described as the equivocal case rather than a guideline-endorsed pathway, and availability is stated — the submission implies a tool a clinician could order. The distinction between acute and chronic thrombus is retained because it is the genuine clinical value and is accurately described.
+
+### 6. Actinium-225 Somatostatin Antagonist Alpha Therapy in Neuroendocrine Tumours
+
+*Early-phase reporting, SNMMI · 2026*
+
+**The breakthrough.** 225Ac-DOTA-LM3 pairs an alpha-emitting radionuclide with a somatostatin receptor ANTAGONIST rather than an agonist. Antagonists occupy more binding sites per cell than agonists, and alpha particles deposit far more energy over a much shorter range than the beta particles of 177Lu — the rationale for using it after 177Lu-DOTATATE progression.
+
+**Clinical guideline impact.** Two changes at once — the radionuclide and the targeting vector. That makes it mechanistically distinct from simply relabelling the same peptide, which matters in patients who have already progressed on beta therapy.
+
+**Practical implications.** This is early-phase work in a refractory population, not a sequencing standard. The specific constraints are bone marrow reserve, already depleted in patients who have had prior 177Lu, and renal dose — somatostatin-targeted therapy is renally excreted and alpha emitters concentrate dose sharply. Actinium-225 supply is globally limited. I could not verify the multicentre phase II data or the claim that SNMMI and EANM sequencing protocols now establish targeted alpha therapy as a primary salvage framework.
+
+[225Ac-DOTA-LM3 targeted alpha therapy in neuroendocrine tumours](https://pubmed.ncbi.nlm.nih.gov/?term=225Ac-DOTA-LM3+targeted+alpha+therapy+neuroendocrine+somatostatin+antagonist)
+
+> **Citation check — ⚠ citation not independently verified — evidence level and guideline claim overstated.** 225Ac-DOTA-LM3 is a real agent, the somatostatin antagonist rationale is accurate, and alpha therapy after 177Lu progression is a genuine research direction. I did not verify the multicentre phase II data the submission cites or its 'dramatic disease stabilization' claim, and the assertion that SNMMI and EANM theranostic sequencing protocols now establish targeted alpha therapy as a primary salvage framework is not supported. Note also that the submission bundles neuroendocrine and prostate tumours into one entry; DOTA-LM3 targets somatostatin receptors and is a neuroendocrine agent, while the prostate alpha-therapy programme uses PSMA ligands — different targets, different trials, and the prostate strand is already covered in the radiation oncology list. ADDED: marrow reserve and renal dose as the specific constraints, which the submission's 'sparing neighboring normal tissues' framing obscures.
+
+### 7. FDG-PET Metabolic Patterns as a Predictor of Anti-Amyloid Therapy Response
+
+*Prospective reporting, SNMMI · 2026*
+
+**The breakthrough.** Prospective work reported from UCLA examined whether baseline FDG-PET brain glucose metabolic patterns predict cognitive response to anti-amyloid monoclonal antibodies such as lecanemab.
+
+**Clinical guideline impact.** Anti-amyloid therapy is expensive, requires infusions and MRI surveillance, and carries amyloid-related imaging abnormalities as a real risk — while the average cognitive benefit is modest. Any test that separates likely responders from unlikely ones would change the risk-benefit calculation for individual patients rather than populations.
+
+**Practical implications.** Do not use FDG-PET to select patients for anti-amyloid therapy yet. A single-centre prospective signal is a long way from a validated predictive biomarker, and the requirement for prediction is prospective demonstration that withholding treatment from predicted non-responders does not deny them benefit — which no study has done. FDG-PET is also not amyloid or tau PET; it measures glucose metabolism and its patterns overlap between dementias. I could not verify the results or the claim that SNMMI and AAN diagnostic guidelines now recommend metabolic stratification before initiating these therapies.
+
+[FDG-PET metabolic profiling and anti-amyloid therapy response](https://pubmed.ncbi.nlm.nih.gov/?term=FDG+PET+baseline+metabolic+pattern+predict+response+lecanemab+anti-amyloid+Alzheimer)
+
+> **Citation check — ⚠ citation not independently verified — guideline claim would change access to therapy.** The question is real and important, and predictive biomarkers for anti-amyloid therapy are actively sought. I did not verify the UCLA prospective data, the SNMMI Abstract of the Year designation, or the results. THE CLAIM REQUIRING MOST CAUTION is that this 'modifies SNMMI and American Academy of Neurology diagnostic guidelines to recommend metabolic FDG-PET stratification before initiating costly anti-amyloid disease-modifying therapies' — a guideline requiring a PET scan before treatment would function as an access barrier, and no such guideline was found. The submission's framing that it 'prevents non-responder patient subsets from undergoing unnecessary high-risk immunotherapy' presumes validated prediction; the entry states what validation would require. Also noted that FDG-PET measures glucose metabolism, not amyloid or tau, and its patterns overlap between dementias.
+
+### 8. Generative Vision-Language Models for Draft Chest Radiograph Reporting
+
+*Regulatory designation and validation reporting · 2026*
+
+**The breakthrough.** Generative vision-language models can produce a draft narrative report from a chest radiograph for a radiologist to verify and edit, rather than outputting a classification or a heat map. FDA Breakthrough Device Designation has been reported for a product in this class.
+
+**Clinical guideline impact.** A different proposition from detection AI. The output is prose that reads like a report, which changes both the potential time saving and the failure mode.
+
+**Practical implications.** The specific hazard is that a fluent, well-formed draft report is harder to disagree with than a probability score — automation bias is strongest when the machine output looks like expert work, and a plausible sentence describing a finding that is not there is more likely to survive review than a mislabelled box. Understand the regulatory status: Breakthrough Device Designation expedites FDA interaction, is not clearance, and does not establish performance. Any deployment needs an audit of what proportion of drafts are edited and where errors persist into signed reports. I could not verify the multicentre validation or the claim that dictation times fall by up to 50%.
+
+[Generative vision-language models for chest radiograph reporting](https://pubmed.ncbi.nlm.nih.gov/?term=generative+vision+language+model+chest+radiograph+report+generation+clinical+validation)
+
+> **Citation check — ⚠ citation not independently verified — designation is not clearance.** Generative vision-language models for radiograph report drafting are a real and fast-moving area and FDA Breakthrough Device Designations have been granted in this space, so the entry is plausible. I did not verify the specific product, the multicentre validation, or the claim that dictation times fall by up to 50%. TWO CORRECTIONS. (1) Breakthrough Device Designation is an expedited-review pathway, not a clearance, and does not establish performance — the fourth time in this review a designation has been presented as an approval. (2) ADDED, because it is the substantive risk and the submission does not mention it: a fluent draft report invites automation bias more strongly than a detection overlay does, because a plausible sentence describing a finding that is not present is easier to sign than a visibly wrong bounding box. The governance requirement — auditing edit rates and residual errors in signed reports — is stated in place of the submission's unverified time saving.
+
+### 9. Retrievable Scaffold Therapy for Below-the-Knee Arterial Disease (DEEPER REVEAL)
+
+*Trial reporting, presented at SIR · 2026*
+
+**The breakthrough.** The Spur retrievable stent system scaffolds a calcified infrapopliteal artery temporarily during angioplasty and is then withdrawn, aiming to prevent elastic recoil without leaving a permanent implant. Twelve-month outcomes were reported from the multicentre DEEPER REVEAL study in chronic limb-threatening ischaemia.
+
+**Clinical guideline impact.** Infrapopliteal disease is where permanent stents perform worst and where a stented segment forecloses future bypass or repeat intervention. Getting the mechanical benefit without the implant addresses a real bind in limb salvage.
+
+**Practical implications.** Wound healing is the endpoint that matters in chronic limb-threatening ischaemia — patency alone does not save a limb, and the two do not always move together. Read single-arm outcome figures with that in mind: without a comparator arm, patency and wound-healing rates cannot be attributed to the device rather than to the wound care, revascularisation strategy and patient selection around it. I could not verify the 78.0% patency and 84.3% wound-healing figures, nor the claim that SIR and SVS guidelines have adopted retrievable scaffolding as a recommended pathway.
+
+[DEEPER REVEAL — retrievable scaffold therapy in chronic limb-threatening ischaemia](https://pubmed.ncbi.nlm.nih.gov/?term=DEEPER+REVEAL+Spur+retrievable+stent+below+the+knee+chronic+limb+threatening+ischemia)
+
+> **Citation check — ⚠ citation not independently verified.** The Spur retrievable stent system and the DEEPER programme are real, and 'leave nothing behind' is a genuine strategy in infrapopliteal intervention. I did not verify the 12-month figures the submission quotes (78.0% primary patency, 84.3% complete wound healing) or the claim that SIR and SVS peripheral arterial guidelines now recommend retrievable scaffolding. ADDED: the point that patency and wound healing are distinct endpoints that do not always agree — a patent vessel with an unhealed wound is a failure in chronic limb-threatening ischaemia — and that single-arm figures cannot separate device effect from wound care and patient selection. DEDUPLICATION NOTE: the ARCHERY AI contouring entry submitted here is the same trial as the radiation oncology 2026 entry; it is kept there, where radiotherapy planning belongs, and dropped here, so this list carries nine entries.

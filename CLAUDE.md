@@ -246,9 +246,11 @@ no backend. This file is context for future sessions — read it before starting
   and strips** — review material, never app content. Anesthesiology is coded **`anes`**. Years sort
   **ascending**, so 2025 sits above 2026 (specified; not newest-first like the rest of the app).
   Built by `scripts/add_clinical_guidelines.js` + `scripts/add_guideline_share.js`.
-  **Live for 20 specialties (370 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `ent`,
-  `fm`, `im`, `neuro`, `nsg`, `obgyn`, `ophtho`, `ortho`, `path`, `peds`, `plastics`, `pmr`, `prev`,
-  `psych`, `radonc`, `rads`. Four left to reach all 24: `gs`, `thoracic`, `uro`, `vasc`.
+  **Live for 21 specialties (399 entries) as of 2026-07-30**: `anes`, `cards`, `derm`, `em`, `ent`,
+  `fm`, `gs`, `im`, `neuro`, `nsg`, `obgyn`, `ophtho`, `ortho`, `path`, `peds`, `plastics`, `pmr`,
+  `prev`, `psych`, `radonc`, `rads`. Three left to reach all 24: `thoracic`, `uro`, `vasc`.
+  General Surgery is coded **`gs`** and displays as "Surgery (General)", so the name sort puts it
+  after Radiology, not under G.
   A single-year specialty should **omit** the other year, not ship `2026: []` — an empty array
   renders a "Coming soon" button. `prev` shipped that way for one deploy before its 2026 arrived.
   **`prev` 2026 has 7**: four submitted entries repeated its own 2025 list.
@@ -320,7 +322,51 @@ no backend. This file is context for future sessions — read it before starting
   **A designation, a proposal and a guideline are three different things.** FDA Breakthrough Device
   Designation is not clearance (CorTec BCI, Paige PanCancer); a bill is not law (PREA reforms); an
   industry-commissioned Delphi is not a guideline (GLP-1 aesthetics, Galderma). Each was submitted
-  as the stronger thing.
+  as the stronger thing. General Surgery 2026 added two more: **conference programming is not a
+  practice directive** (SAGES 2026 meeting sessions and the OpiVoid CME course were submitted as
+  "SAGES Practice Directives", with an AI gesture ontology described as skill *accreditation*), and
+  **a risk score is not an outcome** (the Mayo MBS-vs-GLP-1 cohort measured one-year change in
+  *estimated* lifetime ASCVD risk — a calculator projection — and was submitted as proof that
+  surgery prevents more cardiovascular events than a GLP-1; no trial has shown that).
+  **A relative risk without its reference group can invert the clinical instruction.** The
+  colorectal time-to-treatment study's "27% increase in metastasis with delays beyond 4 days" is
+  really 4–46 days measured *against treatment within 3 days* — a reference window no elective
+  pathway can meet and which in a real cohort is mostly acute obstruction going straight to
+  theatre. Shipped as submitted, a trainee would conclude they must operate before staging is
+  complete. Always locate the comparator before repeating a hazard ratio.
+  **Check whether a trial of *omitting* something was stopped for harm.** General Surgery 2025
+  submitted a non-existent trial concluding that prophylactic drains do not help in high-risk
+  pancreatoduodenectomy. The real randomised trial (Van Buren, Ann Surg 2014) was terminated early
+  by its DSMB because mortality rose from 3% to 12% without drains. Any entry that recommends
+  leaving out a drain, a stent, a specimen or a follow-up scan needs that check specifically —
+  de-escalation entries are where a plausible-sounding omission does the most damage.
+  **A guideline can be cited perfectly and have the wrong recommendations attached.** The
+  E-AHPBA–ESSO–Innsbruck consensus (BJS Jan 2026, 113(1), znaf272) was cited exactly right, then
+  credited with parenchyma-sparing resection, intraoperative ultrasound and low-CVP anaesthesia —
+  none of which it covers. It is about peri/postoperative *management*, and its three strong
+  recommendations (prehabilitation, early mobilisation, **avoid routine drains**) were missing.
+  Verifying that a document exists is not verifying that it says what the entry claims.
+  **A non-significant RCT reported as significant is the commonest single reversal.** IntAct
+  (Lancet Gastro Hep 2025, 766 patients) found ICG angiography reduced colorectal anastomotic leak
+  10% vs 15%, p=0.087 — submitted as "significantly lowers anastomotic leak rates", with invented
+  ASCRS/EAES endorsements. Same shape as the TENSION step-up trial submitted as reducing major
+  organ failure when its composite endpoint was flat. Read the p-value and the primary endpoint,
+  not the abstract's direction of effect.
+  **A retrospective cohort described as a comparative trial cannot support the comparison.** The
+  prehospital resuscitative thoracotomy paper (JAMA Surgery Feb 2025) is 601 London cases over 21
+  years with **no control arm** and 5% survival to discharge; it was submitted as a trial proving
+  scene thoracotomy beats ED thoracotomy. The tell is a "versus" in the description with no second
+  group in the methods.
+  **The same contaminant drug can reappear in an unrelated specialty.** `trifluridine/tipiracil`
+  was a wrong-drug title in ophthalmology, then came back in General Surgery 2025 as
+  "**SUNLIGHT** Trial: Watch-and-Wait vs. Total Mesorectal Excision" — SUNLIGHT is its metastatic
+  colorectal trial and has nothing to do with rectal organ preservation (that is OPRA and the
+  IWWD). Two hits for one drug across two specialties; check a familiar-looking name rather than
+  assuming it belongs.
+  **No randomised trial exists for every question, and "not found" is sometimes the answer.**
+  Watch-and-wait versus TME has never been randomised and probably cannot be — randomising a
+  complete responder to surgery does not recruit. When a submission claims an RCT for something
+  ethically unrandomisable, that is the signal, not the citation details.
   **Write the `verify.status` so it sorts.** `build_corrections_summary.js` buckets worst-first off
   that string, so a reversal phrased as "corrected — the result was submitted in the wrong
   direction" lands under routine date fixes and the physician meets it last. Use the established
