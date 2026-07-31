@@ -2,12 +2,20 @@
 
 Ten calculators. Nine are scores and indices; the tenth is a weight-based dosage calculator, framed as practice-and-check rather than point-of-care preparation.
 
-Every formula is exercised by `scripts/test_calculators.js` against the test vectors shown. **186 checks pass.** What the tests cannot check is whether the clinical framing is right — that is what needs your eyes.
+> **Generated from `calculators.json` by `scripts/build_calculator_review.js` — do not hand-edit.**
+> Re-run it after any content change, or this document goes stale against what actually ships.
+
+> **A medical re-read was done on 2026-07-31 and found one real error** — Wells DVT was calling a
+> score of 1 "DVT likely" when the validated threshold is ≥2. That and four currency fixes are
+> recorded in **`CORRECTIONS-calculators.md`**, which also lists what was checked and found
+> correct. Everything below reflects the corrected content.
+
+Every formula is exercised by `scripts/test_calculators.js` against the test vectors shown. **196 checks pass.** What the tests cannot check is whether the clinical framing is right — that is what needs your eyes.
 
 | # | Calculator | Output | Source |
 |---|---|---|---|
 | 1 | BMI & Body Surface Area | formula | WHO |
-| 2 | Mean Arterial Pressure | formula | Evans L, et al |
+| 2 | Mean Arterial Pressure | formula | Prescott HC, Antonelli M, Alhazzani W, et al |
 | 3 | Wells' Criteria for DVT | score -2 to 9 | Wells PS, et al |
 | 4 | Wells' Criteria for Pulmonary Embolism | score 0 to 12.5 | Wells PS, et al |
 | 5 | PERC Rule for Pulmonary Embolism | score 0 to 8 | Kline JA, et al |
@@ -75,12 +83,14 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 **Caveats shown to the student**
 
 - MAP ≥65 mmHg is the initial resuscitation target for septic shock. It is NOT a universal ward threshold, and this calculator should not be read as a pass/fail for every patient.
+- In adults 65 or older, SSC 2026 suggests an initial range of 60–65 mmHg rather than a higher target (weak recommendation, low certainty) — from the 65 trial, where permissive hypotension gave similar 90-day mortality with less vasopressor exposure.
+- A MAP cannot be held at exactly 65. The guideline’s own remark is to titrate to a range around the target, roughly within 5 mmHg, rather than to a single number.
 - A chronically hypertensive patient may need a higher MAP to perfuse the same organs; a healthy young adult may be entirely well below 65.
 - The (SBP + 2×DBP)/3 formula assumes a normal heart rate. It underestimates MAP at high heart rates, where diastole shortens.
 - Trend and the patient in front of you matter more than the single number. Escalate on the clinical picture, not the calculator.
 
-**Source.** Evans L, et al. Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2021. Crit Care Med 2021;49(11):e1063-e1143.
-<https://journals.lww.com/ccmjournal/fulltext/2021/11000/surviving_sepsis_campaign__international.21.aspx>
+**Source.** Prescott HC, Antonelli M, Alhazzani W, et al. Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026. Crit Care Med 2026;54(4):725-812.
+<https://pubmed.ncbi.nlm.nih.gov/41869847/>
 
 **Test vectors (all passing)**
 
@@ -111,12 +121,12 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 
 **Interpretation**
 
-- ≤ 0.99: **DVT unlikely** — A negative high-sensitivity D-dimer reasonably excludes DVT in this group.
+- ≤ 1.99: **DVT unlikely** — A negative high-sensitivity D-dimer reasonably excludes DVT in this group.
 - ≤ max: **DVT likely** — Proceed to compression ultrasound; D-dimer alone is not sufficient to exclude.
 
 **Caveats shown to the student**
 
-- This uses the two-tier (modified) version: ≥2 points is 'DVT likely'. The original three-tier version reported low (≤0), moderate (1–2) and high (≥3) probability — check which one your institution uses.
+- This uses the two-tier (modified) version: ≤1 is 'DVT unlikely' and ≥2 is 'DVT likely'. The original three-tier version reported low (≤0), moderate (1–2) and high (≥3) probability — check which one your institution uses.
 - The score is for a first suspected lower-limb DVT. It is not validated in pregnancy, in suspected upper-extremity DVT, or in patients already anticoagulated.
 - The score guides which test to order. It never rules DVT in or out on its own.
 
@@ -131,6 +141,7 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 | cancer=true, tenderness=true | score 2, band DVT likely |
 | cancer=true, tenderness=true, altdx=true | score 0, band DVT unlikely |
 | cancer=true, paralysis=true, bedridden=true, tenderness=true, legswollen=true, calf=true, edema=true, collateral=true, priordvt=true | score 9, band DVT likely |
+| cancer=true | score 1, band DVT unlikely |
 
 ---
 
@@ -160,8 +171,8 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 - 'PE is the most likely diagnosis' is a subjective item and is the main source of inter-rater variation in this score.
 - In a low-probability patient, consider PERC before ordering a D-dimer — see the PERC calculator.
 
-**Source.** Wells PS, et al. Derivation of a simple clinical model to categorize patients' probability of pulmonary embolism. Thromb Haemost 2000;83:416-20. Dichotomized thresholds adopted by NICE CG144.
-<https://www.mdcalc.com/calc/115/wells-criteria-pulmonary-embolism>
+**Source.** Wells PS, et al. Derivation of a simple clinical model to categorize patients' probability of pulmonary embolism. Thromb Haemost 2000;83:416-20. Dichotomized thresholds adopted by NICE NG158.
+<https://pubmed.ncbi.nlm.nih.gov/10744147/>
 
 **Test vectors (all passing)**
 
@@ -171,6 +182,7 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 | hr=true, immob=true, prior=true | score 4.5, band PE likely |
 | hr=true, immob=true | score 3, band PE unlikely |
 | dvtsigns=true, pefirst=true, hr=true, immob=true, prior=true, hemoptysis=true, malignancy=true | score 12.5, band PE likely |
+| dvtsigns=true, hemoptysis=true | score 4, band PE unlikely |
 
 ---
 
@@ -187,7 +199,7 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 - Hemoptysis — **+1**
 - Recent surgery or trauma within 4 weeks requiring treatment under general anesthesia — **+1**
 - Prior PE or DVT — **+1**
-- Hormone use (oral contraceptive, hormone replacement, oestrogenic hormone) — **+1**
+- Hormone use (oral contraceptive, hormone replacement, estrogen) — **+1**
 
 **Interpretation**
 
@@ -231,7 +243,7 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 
 - ≤ 0.99: **Low risk** — Anticoagulation generally not recommended on the basis of this score alone.
 - ≤ 1.99: **Intermediate risk** — Anticoagulation may be considered — a score of 1 from female sex alone is not an indication.
-- ≤ max: **Anticoagulation generally recommended** — Guidelines recommend oral anticoagulation at ≥2 in men and ≥3 in women.
+- ≤ max: **High risk** — Guidelines recommend oral anticoagulation at ≥2 in men and ≥3 in women.
 
 **Caveats shown to the student**
 
@@ -239,6 +251,7 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 - Female sex is a risk MODIFIER, not a risk factor on its own. A woman whose only point is her sex is treated as low risk, which is why the thresholds are ≥2 in men and ≥3 in women.
 - Validated for NON-VALVULAR atrial fibrillation. Patients with moderate-to-severe mitral stenosis or a mechanical valve need anticoagulation regardless of this score.
 - The score estimates stroke risk. It says nothing about bleeding risk — see HAS-BLED, and note that the two are not meant to be subtracted from one another.
+- The 2023 ACC/AHA/ACCP/HRS guideline frames the decision as an annual thromboembolic risk of about 2% per year rather than a score alone — which corresponds to ≥2 in men and ≥3 in women — and allows other validated scores (ATRIA, GARFIELD-AF) alongside this one.
 
 **Source.** Lip GYH, et al. Refining clinical risk stratification for predicting stroke and thromboembolism in atrial fibrillation using a novel risk factor-based approach. Chest 2010;137:263-72.
 <https://pubmed.ncbi.nlm.nih.gov/19762550/>
@@ -249,8 +262,9 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 |---|---|
 | agegroup=0 | score 0, band Low risk |
 | agegroup=0, female=true | score 1, band Intermediate risk |
-| agegroup=2, htn=true | score 3, band Anticoagulation generally recommended |
-| chf=true, htn=true, agegroup=2, dm=true, stroke=true, vascular=true, female=true | score 9, band Anticoagulation generally recommended |
+| agegroup=2, htn=true | score 3, band High risk |
+| chf=true, htn=true, agegroup=2, dm=true, stroke=true, vascular=true, female=true | score 9, band High risk |
+| chf=true, htn=true | score 2, band High risk |
 
 ---
 
@@ -294,6 +308,7 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 | htn=true, elderly=true | score 2, band Intermediate bleeding risk |
 | htn=true, elderly=true, drugs=true | score 3, band High bleeding risk |
 | htn=true, renal=true, liver=true, stroke=true, bleeding=true, inr=true, elderly=true, drugs=true, alcohol=true | score 9, band High bleeding risk |
+| htn=true | score 1, band Intermediate bleeding risk |
 
 ---
 
@@ -333,6 +348,7 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 | age=true | score 1, band Low severity |
 | age=true, urea=true | score 2, band Moderate severity |
 | confusion=true, urea=true, rr=true, bp=true, age=true | score 5, band High severity |
+| confusion=true, urea=true, rr=true | score 3, band High severity |
 
 ---
 
@@ -379,11 +395,11 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 **Inputs**
 
 - Patient weight — kg / lb
-- Ordered dose (per kg) — number
+- Ordered dose (per kg) — 
 - Dose unit — mg/kg → `mg`, mcg/kg → `mcg`, g/kg → `g`
 - The order is written as — a single dose → `dose`, a total per day, divided → `day`
 - Doses per day (if divided) — 1 — once daily → `1`, 2 — q12h / BID → `2`, 3 — q8h / TID → `3`, 4 — q6h / QID → `4`, 6 — q4h → `6`
-- Supply: strength — number
+- Supply: strength — 
 - Strength unit — mg → `mg`, mcg → `mcg`, g → `g`
 - Supply: in this volume — mL
 
@@ -417,3 +433,7 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 | weight=50, dose=0.1, doseUnit=g, basis=dose, strength=500, strengthUnit=mg, volume=10 | dose 5, doseUnit g, volume 100 |
 | weight=3.2, dose=10, doseUnit=mcg, basis=dose, strength=1, strengthUnit=mg, volume=1 | dose 32, doseUnit mcg, volume 0.032 |
 | weight=70, dose=5, doseUnit=mg, basis=dose | dose 350, doseUnit mg, volume null |
+
+---
+
+*10 calculators, 47 test vectors, 196 checks.*
