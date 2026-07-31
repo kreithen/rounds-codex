@@ -11,7 +11,29 @@ no backend. This file is context for future sessions — read it before starting
   granted with no prompt, `access:"push"` after one approval. Clone to
   `/workspace/rounds-codex-app`. The GitHub MCP stays scoped to `rounds-codex`, so use plain
   `git` against the clone, not MCP calls.
+- **DEPLOYS BROKE FOR 16 HOURS ON 2026-07-30/31 — Netlify lost GitHub access to the app repo.**
+  Symptom: pushes to `main` produced no deploy at all, and a manually triggered build failed in
+  3.7s at `preparing repo` with *"Unable to access repository"* and *"User git error while checking
+  for ref refs/heads/main"*. The repo and branch were both fine — verified through the GitHub API.
+  Cause: **`rounds-codex-app` had dropped out of the Netlify GitHub App's selected-repositories
+  list.** The tell is that Netlify's repo picker listed `rounds-codex` (public) but not
+  `rounds-codex-app` (private) — an expired credential would have shown NO repos, so one repo
+  missing means the access list changed, not the token.
+  Fix: repo picker → *"Configure the Netlify app on GitHub"* → Repository access → add
+  `rounds-codex-app` → relink → trigger deploy.
+  **Two traps while fixing it.** The picker lists both repos and the names differ by three
+  characters; selecting `rounds-codex` publishes the PUBLIC BUILD REPO, which has no root
+  `index.html`, so the live site 404s while Netlify reports "Published". That happened. And the
+  last good deploy before the break had `deploy_source: "api"`, not a git build — so git-triggered
+  builds may have been failing before anyone noticed.
+  **Nothing alerted for 16 hours.** Turn on Netlify's failed-deploy notification, and check
+  `/version.txt` (added 2026-07-31) after every deploy rather than assuming a push shipped.
 - **The live site itself is still unreachable** — the agent proxy 403s rounds-codex.netlify.app.
+  The **Netlify MCP connector** is the way in: connector traffic goes through Anthropic's servers,
+  not the session network, so it works despite the egress policy. It diagnosed this outage in two
+  calls (`get-projects`, then `get-deploy-for-site`). It CANNOT deploy from a cloud session,
+  though — `deploy-site` just returns an `npx` command that runs in the container and talks to a
+  blocked `netlify.app` host.
   To verify a deploy, clone the app repo and serve it with `scripts/netlifysim.js`: same bytes
   Netlify publishes, and it covers the galleries whose images exist only in that repo.
 - **Deploy path** was the user's Chrome web-upload to `rounds-codex-app` `main`; with `add_repo`
