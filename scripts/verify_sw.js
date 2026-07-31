@@ -10,6 +10,7 @@
  */
 const fs = require('fs');
 const vm = require('vm');
+const path = require('path');
 
 const SW = process.argv[2];
 if (!SW) { console.error('usage: node scripts/verify_sw.js <sw.js>'); process.exit(2); }
@@ -87,8 +88,28 @@ function load({ bodyReadFails, empty, networkUp, netBodyReadFails }) {
   ok(/^rounds-codex-v\d+$/.test(sandbox.CACHE_), `CACHE is versioned: ${sandbox.CACHE_}`);
   const core = sandbox.CORE_;
   const content = core.filter(u => u.startsWith('./content/'));
+
+  /* Derive the expected content files from the loader's own FILES list rather than
+   * hard-coding a count. The count was a proxy for the real invariant -- "CORE covers
+   * everything the loader fetches" -- and it went stale the first time a feature added
+   * an eighth content file, reporting a failure on a correct worker. Deriving it also
+   * catches the opposite and more dangerous case: a file added to the loader but NOT to
+   * CORE, which works online and is missing offline. */
+  const idxPath = path.join(path.dirname(path.resolve(SW)), 'index.html');
+  let expected = null;
+  if (fs.existsSync(idxPath)) {
+    const m = fs.readFileSync(idxPath, 'utf8').match(/FILES\s*=\s*\[([^\]]*)\]/);
+    if (m) expected = [...m[1].matchAll(/'([^']+)'/g)].map(x => `./content/${x[1]}.json`);
+  }
+  if (expected) {
+    const missing = expected.filter(f => !content.includes(f));
+    ok(missing.length === 0,
+       `CORE covers every file the loader fetches (${expected.length})${missing.length ? ' -- MISSING: ' + missing.join(', ') : ''}`);
+    const extra = content.filter(f => !expected.includes(f));
+    ok(extra.length === 0, `and precaches nothing the loader does not fetch${extra.length ? ' -- EXTRA: ' + extra.join(', ') : ''}`);
+  }
   const fonts = core.filter(u => u.startsWith('./fonts/'));
-  ok(content.length === 7, `CORE precaches all 7 content files (${content.length})`);
+  ok(content.length >= 7, `CORE precaches the content files (${content.length})`);
   ok(fonts.length === 6, `CORE precaches all 6 font files (${fonts.length}) — without these, offline typography falls back`);
   ok(core.includes('./index.html') && core.includes('./'), 'CORE precaches the shell itself');
   ok(new Set(core).size === core.length, 'no duplicate CORE entries (addAll would still work, but it is a sign of a bad merge)');
