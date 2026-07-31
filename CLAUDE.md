@@ -105,6 +105,35 @@ no backend. This file is context for future sessions — read it before starting
 - **`.pad` reserves 112px for the fixed `.nav` bar; `.res-wrap` did not** until 2026-07-30, so the
   last element of every resident-mode page sat under the bar when scrolled to the end. Invisible on
   long lists, total on a short page. Any new full-page wrapper needs that clearance.
+  **`.pad` is bottom padding ONLY** — `.pad{padding-bottom:112px}` is its whole rule, and neither
+  `.app` nor `#screen` supplies horizontal padding, so every view provides its own. A page built on
+  `.pad` alone renders flush against both screen edges. Use `.res-wrap` (16px + the 112px) instead.
+- **Clinical Calculators (`/x/`, `/x/<id>`)** — shipped live 2026-07-31. Ten calculators
+  (BMI/BSA, MAP, Wells DVT, Wells PE, PERC, CHA2DS2-VASc, HAS-BLED, CURB-65, qSOFA, weight-based
+  dosage practice) in `content/calculators.json`, wired by `scripts/add_calculators.js` (twelve
+  asserted surgeries, refuses to run twice). Arithmetic lives in `scripts/calc_engine.js` and is
+  **inlined** by the patcher, so the shipped code is the tested code — edit there, re-run
+  `scripts/test_calculators.js`, then re-run the patcher. Sixth one-segment route, so the
+  `RC_ROOT` regex is now `/^\/(c|s|g|r|u|x)\//`.
+  - **It is the fifth NAV TAB, replacing "Ask Rounds Codex"** (the user's call, 2026-07-31). Ask is
+    not orphaned: the block at the bottom of every condition page calls `go('ask')`. Before removing
+    any nav tab, find the view's other entry points — a view with no way in is invisible, not broken.
+  - **`.nav button` is already `flex-direction:column`**, so a nav icon sits above its label with no
+    new styling. Tabs are `flex:1` with `min-width:auto`, so the **longest single word** in any label
+    sets a floor on every tab's width — "Calculators" needed 10.5px to hold one line. Measure at
+    375/390/430px, not just one. ("OR / Peri-op" wrapping at 375/390 is pre-existing.)
+  - **A back arrow on a nav-bar root must call `navBack()`, not `back()`** — the stack is one deep
+    there and `back()` is a dead control. `navBack()` already exists for this, and beats a hard-coded
+    `root('library')` because a shared `/x/<id>` link seeds real history behind the page.
+  - **`activeRoot` in `paint()` needs a case for any sub-view**, or the tab un-highlights the moment
+    you open one — `calcone`→`calc`, the same way `rxdrug`→`rx`.
+  - **`verify_sw.js` derives the content-file count from the loader's own FILES list**, so an eighth
+    file does not fail a correct worker; the hard-coded 7 in `audit_app_e2e.js` still says "7" in its
+    output line and is now cosmetic.
+- **US spelling is the app's convention** (edema 729:78, anesthesia 236:38, hemo 1601:45 across the
+  shipped content), though existing content is mixed. Normalise new copy — but **hold journal names
+  back from the sweep**: `Thromb Haemost` and `J Thromb Haemost` are the real titles, and a citation
+  Americanised is a citation made wrong.
 - **Guideline links (`/r/<spec>-<year>`)** — Share button on a Clinical Guidelines year page, added
   by `scripts/add_guideline_share.js`. **Hyphen in the URL, pipe in the nav stack** (`resguide` ids are
   `"anes|2025"`); a pipe percent-encodes to `%7C` in a shared link. Splits on the trailing four

@@ -1055,3 +1055,41 @@ Verified by driving every quiz in the app: 1,820/1,820 grade the right answer co
 **Still open — the one that matters most:** no independent medical re-read. Every item was
 checked by the agent that wrote it. Structural QA, source-traceability and app verification all
 pass; a second clinician-level pass by non-authors does not exist yet.
+
+---
+
+## Clinical Calculators — DEPLOYED 2026-07-31 (`rounds-codex-app` `e56e010`)
+
+Ten calculators live at `/x/`, reached from the **fifth nav tab**, which is now **Calculators**
+(calculator icon over the label). It replaces the **Ask Rounds Codex** tab, at the user's request.
+
+**Ask Rounds Codex is not gone.** It still sits at the bottom of every condition page, and that
+block's `modAsk()` calls `go('ask')`, so the full Ask view keeps a way in. Verified by typing a
+question on the Hypertension page and asserting the Ask view opens and renders.
+
+Shipped: BMI/BSA (Mosteller), MAP, Wells DVT, Wells PE, PERC, CHA2DS2-VASc, HAS-BLED, CURB-65,
+qSOFA, weight-based dosage practice. Each carries its formula, source citation, interpretation
+bands and the ways it is commonly misused.
+
+**Two bugs in the page the nav work exposed**, both invisible to a 0-page-errors run:
+
+- The header used `.hd`, `.back` and `.h1` — none of which exist in the app — and `.pad`, which is
+  bottom padding only. The page would have rendered flush against both screen edges with an
+  unstyled back button. Now `res-wrap` + the `res-crumb` pattern Clinical Updates uses.
+- The back arrow called `back()`, which from a nav-bar root has nothing to pop. Now `navBack()`,
+  the helper the app already defines for exactly this.
+
+Nav label measured at 375/390/430px: one line at all three, against three lines at 375 and 390 for
+the old Ask tab. "OR / Peri-op" wrapping at the two narrow widths is pre-existing — confirmed by
+measuring the live build side by side rather than assuming.
+
+Copy normalised to US spelling (20 changes), with `Thromb Haemost` / `J Thromb Haemost` held back
+as real journal titles.
+
+Verified before and after the deploy, on a tree confirmed byte-identical to what was pushed:
+38 drive checks, `audit_app_e2e.js` 0 failures / 0 warnings, `verify_sw.js` all passed, font
+coverage clean, 0 page errors, no failed requests beyond `/.netlify/functions/ask` (Netlify-only).
+`sw.js` bumped to `rounds-codex-v12` with `content/calculators.json` in `CORE`.
+
+**Open — the physician gate.** The formulas, bands, citations and clinical framing have had no
+independent medical review. That is what this deploy is for.
