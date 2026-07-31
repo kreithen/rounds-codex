@@ -12,16 +12,25 @@ stay excluded on purpose — the app's vector versions are better.)
 | model requested | `nano_banana_pro` — the server silently substitutes `nano_banana_2`, as always |
 | resolution | `2k` (same price as 1k, so never ask for 1k) |
 | aspect ratio | per modality, from `image_batch_plan.aspect()` — 2:3 portrait, 1:1 square, else 4:3 |
-| cost | 2 credits each; balance 3000 → 2668, i.e. **332 spent = 166 charged**, not 174 |
+| cost | 2 credits each; 174 spends + 8 refunds = 332 credits, balance 3000 → 2668 |
+| images that exist | **166** of 174 — see the failure note below |
 | duplicates | none — 174 unique question ids, zero overlap with the pilot 24 |
 
-**Roughly 8 of the 174 look like they failed and were refunded.** 174 jobs were accepted
-(every `generate_image` returned an id with `status: "pending"`), but only 166 were
-charged, and the balance was observed going *up* by 2 between two reads — a refund, which
-only happens on a failed generation. Which eight is not knowable from here; `job_display`
-per id will say, once the connector is approved. Assume the harvest returns ~166 usable
-images and re-fire the shortfall then. Do **not** re-fire blind: that pays twice for
-images that already exist.
+**Exactly 8 of the 174 failed.** Counted off `transactions`, not inferred: the 2026-07-31
+run is **174 spends and 8 refunds**, which is why 332 credits left the account rather than
+348. So 166 images exist.
+
+Which eight is not knowable from the ledger — `transactions` carries no job id. The
+harvest identifies them by absence: any id in `higgsfield-jobs-0731.json` that comes back
+without a url. Do **not** re-fire blind; that pays twice for the 166 that already exist.
+
+**They are probably moderation refusals, not capacity failures.** Every refund lands
+within a second or two of its own spend (e.g. spend 07:31:12.866 → refund 07:31:13.837),
+which is far too fast to be a render that started and died. Three of the eight cluster in
+one ~90-second window around 07:29-07:31. Before re-firing any of the eight, look at what
+the prompt depicts — the anogenital and paediatric clinical-photograph items are the
+obvious candidates, and re-sending the identical prompt will just fail again. Rewording
+toward the finding and away from the body region is the fix, not a retry.
 
 ## Files
 
