@@ -74,9 +74,18 @@ function calcById(id){return CALC.find(function(c){return c.id===id;});}
 function calcHTML(){
  var groups={};
  CALC.forEach(function(c){ (groups[c.group]=groups[c.group]||[]).push(c); });
- var out='<div class="pad calc-wrap"><div class="hd"><button class="back" onclick="back()" aria-label="Back">&#8592;</button>'+
-   '<div><div class="h1">Clinical Calculators</div>'+
-   '<div class="sub">Scores and indices, with the working shown</div></div></div>';
+ /* res-wrap, not pad: .pad is bottom padding ONLY -- no view in this app gets
+    horizontal padding for free, and the first build of this page sat flush
+    against both screen edges. res-wrap is what the Clinical Updates page uses
+    and carries the 112px the fixed nav bar occupies. */
+ var out='<div class="res-wrap calc-wrap">'+
+   /* navBack(), not back(): reached from the nav bar the stack is one deep, so
+      back() alone would be a dead control. The app already solved this for its
+      other bottom-bar views -- reuse it rather than hard-coding root('library'),
+      which would also throw away the history a shared /x/ link seeds. */
+   '<div class="res-crumb" onclick="navBack()"><span class="res-back">\\u2190</span> Home</div>'+
+   '<h2 class="res-h">Clinical Calculators</h2>'+
+   '<div class="calc-sub">Scores and indices, with the working shown</div>';
  out+='<div class="calc-note">Every calculator below shows its formula, its source, and the ways it is commonly misused. '+
    'These are study tools \\u2014 they support learning a score, not a treatment decision.</div>';
  Object.keys(groups).forEach(function(g){
@@ -93,9 +102,13 @@ function calcHTML(){
 
 function calcOneHTML(id){
  var c=calcById(id);
- if(!c) return '<div class="pad"><div class="h1">Calculator not found</div></div>';
- var out='<div class="pad calc-wrap"><div class="hd"><button class="back" onclick="back()" aria-label="Back">&#8592;</button>'+
-   '<div><div class="h1">'+calcEsc(c.name)+'</div><div class="sub">'+calcEsc(c.purpose)+'</div></div></div>';
+ if(!c) return '<div class="res-wrap"><h2 class="res-h">Calculator not found</h2></div>';
+ /* Here back() IS right: this view is only ever reached by go() from the index,
+    including on a shared /x/<id> link, which seeds the index behind it. */
+ var out='<div class="res-wrap calc-wrap">'+
+   '<div class="res-crumb" onclick="back()"><span class="res-back">\\u2190</span> Calculators</div>'+
+   '<h2 class="res-h">'+calcEsc(c.name)+'</h2>'+
+   '<div class="calc-sub">'+calcEsc(c.purpose)+'</div>';
  out+='<form class="calc-form" id="calcForm" onsubmit="return false">';
  c.inputs.forEach(function(inp){
    if(inp.type==='check'){
@@ -251,10 +264,26 @@ sub('router openCalc',
   function boot(){
     if(openCalc(window.RC_DEEPCALC,window.RC_DEEPCALCIDX)){ window.RC_READY=true; if(typeof rcSyncURL==='function') rcSyncURL(); return; }`);
 
-/* 6c ── entry point in the library count row ------------------------------- */
-sub('library button',
-  '>CLINICAL UPDATES</button>',
-  `>CLINICAL UPDATES</button><button type="button" class="calcbtn" onclick="go('calc')" aria-label="Clinical Calculators"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8"/><path d="M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 19h.01M12 19h.01M16 19h.01"/></svg>CALCULATORS</button>`);
+/* 6c ── entry point: the fifth nav tab, replacing "Ask Rounds Codex".
+   Ask is NOT orphaned by this -- modAsk() on every condition page calls
+   go('ask'), so the full Ask view keeps its one remaining way in. The nav's
+   own .nav button rule is already flex-direction:column, so the calculator
+   icon sits above the label with no new styling. -------------------------- */
+sub('nav tab',
+  `<button data-v="ask" onclick="root('ask')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 12a8 8 0 01-11.6 7.1L4 20l1-5.3A8 8 0 1121 12z"/></svg><span>Ask Rounds Codex</span></button>`,
+  `<button data-v="calc" onclick="root('calc')" aria-label="Clinical Calculators"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2.5"/><path d="M8 6.5h8"/><path d="M8.5 11h0M12 11h0M15.5 11h0M8.5 14.5h0M12 14.5h0M15.5 14.5h0M8.5 18h0M12 18h0M15.5 18h0"/></svg><span>Calculators</span></button>`);
+
+/* 6d ── nav highlight. Without this the tab un-highlights the moment you open
+   an individual calculator, the same way rxdrug maps back to rx. */
+sub('activeRoot mapping',
+  "(r.v==='rxdrug')?'rx'",
+  "(r.v==='rxdrug')?'rx':(r.v==='calcone'||r.v==='calc')?'calc'");
+
+/* ROOTS is currently unused by the code (only IMMERSIVE is read), but it is the
+   file's own declaration of what a root view is -- leaving calc out of it would
+   mislead the next edit. 'ask' stays: it is still a view, just not a tab. */
+sub('ROOTS', "const ROOTS=['library','or','ask','rx',\"res\",'about']",
+             "const ROOTS=['library','or','ask','rx',\"res\",'about','calc']");
 
 /* 7 ── styles. .calc-wrap reserves the 112px the fixed nav bar occupies.
    Anchored to the .clinupd rule rather than to `</style>`: there are eight
@@ -300,8 +329,11 @@ sub('styles', '.clinupd{', `
 .calc-links{display:flex;flex-wrap:wrap;gap:8px}
 .calc-link{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:999px;padding:8px 14px;color:inherit;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
 .calc-disc{margin-top:22px;font-size:12px;line-height:1.55;color:var(--muted);text-align:center;font-style:italic}
-.calcbtn{display:inline-flex;align-items:center;gap:7px;background:#fff;color:#08131f;border:0;border-radius:999px;padding:8px 14px;font:800 11.5px/1 Oswald,sans-serif;letter-spacing:.1em;cursor:pointer;margin-left:8px}
-.calcbtn svg{stroke:#08131f}
+.calc-sub{opacity:.75;font-size:.95em;margin:0 0 4px}
+/* The calculator tab's label is the longest in the bar. The other four sit on
+   one line at 11px and this one must too -- "Ask Rounds Codex" wrapped to two
+   and overflowed its pill, which is the thing being replaced. */
+#nav button[data-v=calc] span{font-size:10.5px;letter-spacing:-.1px}
 .clinupd{`);
 
 fs.writeFileSync(IDX, html);

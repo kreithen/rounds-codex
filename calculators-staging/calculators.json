@@ -10,7 +10,7 @@
       "t2dm",
       "osa"
     ],
-    "purpose": "Body mass index classifies weight status; body surface area is used to normalise physiologic measurements such as cardiac index.",
+    "purpose": "Body mass index classifies weight status; body surface area is used to normalize physiologic measurements such as cardiac index.",
     "inputs": [
       {
         "id": "weight",
@@ -89,7 +89,7 @@
       "The WHO categories apply to ADULTS. In anyone under 20, BMI must be read against age- and sex-specific percentiles (CDC growth charts) — the adult cut-offs are not valid and this calculator does not apply them.",
       "BMI does not distinguish muscle from fat, and misclassifies muscular and older sarcopenic patients in opposite directions.",
       "WHO recommends lower thresholds for South and East Asian populations: overweight from 23, obesity from 27.5.",
-      "BSA is shown because it normalises cardiac index and other physiologic measures. Chemotherapy dosing is a pharmacy calculation and is out of scope for this app."
+      "BSA is shown because it normalizes cardiac index and other physiologic measures. Chemotherapy dosing is a pharmacy calculation and is out of scope for this app."
     ],
     "tests": [
       {
@@ -144,7 +144,7 @@
     "id": "map",
     "name": "Mean Arterial Pressure",
     "short": "MAP",
-    "group": "Haemodynamics",
+    "group": "Hemodynamics",
     "kernel": "map",
     "conditions": [
       "sepsis",
@@ -252,19 +252,19 @@
       },
       {
         "id": "paralysis",
-        "label": "Paralysis, paresis, or recent plaster immobilisation of a lower extremity",
+        "label": "Paralysis, paresis, or recent plaster immobilization of a lower extremity",
         "type": "check",
         "points": 1
       },
       {
         "id": "bedridden",
-        "label": "Bedridden ≥3 days, or major surgery within 12 weeks requiring general or regional anaesthesia",
+        "label": "Bedridden ≥3 days, or major surgery within 12 weeks requiring general or regional anesthesia",
         "type": "check",
         "points": 1
       },
       {
         "id": "tenderness",
-        "label": "Localised tenderness along the deep venous system",
+        "label": "Localized tenderness along the deep venous system",
         "type": "check",
         "points": 1
       },
@@ -281,8 +281,8 @@
         "points": 1
       },
       {
-        "id": "oedema",
-        "label": "Pitting oedema confined to the symptomatic leg",
+        "id": "edema",
+        "label": "Pitting edema confined to the symptomatic leg",
         "type": "check",
         "points": 1
       },
@@ -363,7 +363,7 @@
           "tenderness": true,
           "legswollen": true,
           "calf": true,
-          "oedema": true,
+          "edema": true,
           "collateral": true,
           "priordvt": true
         },
@@ -405,7 +405,7 @@
       },
       {
         "id": "immob",
-        "label": "Immobilisation ≥3 days, or surgery within the previous 4 weeks",
+        "label": "Immobilization ≥3 days, or surgery within the previous 4 weeks",
         "type": "check",
         "points": 1.5
       },
@@ -416,8 +416,8 @@
         "points": 1.5
       },
       {
-        "id": "haemoptysis",
-        "label": "Haemoptysis",
+        "id": "hemoptysis",
+        "label": "Hemoptysis",
         "type": "check",
         "points": 1
       },
@@ -442,10 +442,10 @@
         "note": "Proceed to CT pulmonary angiography (or V/Q where CT is contraindicated)."
       }
     ],
-    "citation": "Wells PS, et al. Derivation of a simple clinical model to categorize patients' probability of pulmonary embolism. Thromb Haemost 2000;83:416-20. Dichotomised thresholds adopted by NICE CG144.",
+    "citation": "Wells PS, et al. Derivation of a simple clinical model to categorize patients' probability of pulmonary embolism. Thromb Haemost 2000;83:416-20. Dichotomized thresholds adopted by NICE CG144.",
     "url": "https://www.mdcalc.com/calc/115/wells-criteria-pulmonary-embolism",
     "caveats": [
-      "This uses the dichotomised version: ≤4 is 'PE unlikely', >4 is 'PE likely'. The original three-tier version reported low (<2), moderate (2–6) and high (>6) probability — know which your institution uses.",
+      "This uses the dichotomized version: ≤4 is 'PE unlikely', >4 is 'PE likely'. The original three-tier version reported low (<2), moderate (2–6) and high (>6) probability — know which your institution uses.",
       "Scores fall on half points (1.5, 4.5). Thresholds are applied without rounding.",
       "'PE is the most likely diagnosis' is a subjective item and is the main source of inter-rater variation in this score.",
       "In a low-probability patient, consider PERC before ordering a D-dimer — see the PERC calculator."
@@ -486,7 +486,7 @@
           "hr": true,
           "immob": true,
           "prior": true,
-          "haemoptysis": true,
+          "hemoptysis": true,
           "malignancy": true
         },
         "out": {
@@ -532,14 +532,14 @@
         "points": 1
       },
       {
-        "id": "haemoptysis",
-        "label": "Haemoptysis",
+        "id": "hemoptysis",
+        "label": "Hemoptysis",
         "type": "check",
         "points": 1
       },
       {
         "id": "surgery",
-        "label": "Recent surgery or trauma within 4 weeks requiring treatment under general anaesthesia",
+        "label": "Recent surgery or trauma within 4 weeks requiring treatment under general anesthesia",
         "type": "check",
         "points": 1
       },
@@ -600,7 +600,7 @@
           "hr": true,
           "sat": true,
           "legswell": true,
-          "haemoptysis": true,
+          "hemoptysis": true,
           "surgery": true,
           "prior": true,
           "hormone": true
@@ -1271,7 +1271,7 @@
       "Work it out yourself first, then use this to check. A calculator you drive will faithfully carry your mistake — if you enter mg where the order says mcg, it returns a confident and wrong answer.",
       "mcg, mg and g is where these calculations actually go wrong. A thousandfold error still looks like an ordinary number. Read the order and the vial label as written, not as you expect them to read.",
       "'Per day, divided' is not 'per dose'. Giving a whole daily dose as one dose is a two- to four-fold overdose and is the commonest weight-based error there is. Check which one the order specifies before you choose it above.",
-      "Paediatric doses are frequently capped at the adult dose. Weight-based arithmetic does not know that and will scale straight past it in a large child or an adolescent.",
+      "Pediatric doses are frequently capped at the adult dose. Weight-based arithmetic does not know that and will scale straight past it in a large child or an adolescent.",
       "This is a study tool. It is not a substitute for your institution's process — for high-alert medications that includes an independent double check by a second person where your policy requires one, not a second run through the same calculator."
     ],
     "tests": [

@@ -21,7 +21,7 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 
 ## 1. BMI & Body Surface Area
 
-**Purpose.** Body mass index classifies weight status; body surface area is used to normalise physiologic measurements such as cardiac index.
+**Purpose.** Body mass index classifies weight status; body surface area is used to normalize physiologic measurements such as cardiac index.
 
 **Inputs**
 
@@ -42,7 +42,7 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 - The WHO categories apply to ADULTS. In anyone under 20, BMI must be read against age- and sex-specific percentiles (CDC growth charts) — the adult cut-offs are not valid and this calculator does not apply them.
 - BMI does not distinguish muscle from fat, and misclassifies muscular and older sarcopenic patients in opposite directions.
 - WHO recommends lower thresholds for South and East Asian populations: overweight from 23, obesity from 27.5.
-- BSA is shown because it normalises cardiac index and other physiologic measures. Chemotherapy dosing is a pharmacy calculation and is out of scope for this app.
+- BSA is shown because it normalizes cardiac index and other physiologic measures. Chemotherapy dosing is a pharmacy calculation and is out of scope for this app.
 
 **Source.** WHO. Obesity: preventing and managing the global epidemic (WHO Technical Report Series 894). Mosteller RD. Simplified calculation of body-surface area. N Engl J Med 1987;317:1098.
 <https://www.nejm.org/doi/10.1056/NEJM198710223171717>
@@ -99,12 +99,12 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 **Inputs**
 
 - Active cancer (treatment within 6 months, or palliative) — **+1**
-- Paralysis, paresis, or recent plaster immobilisation of a lower extremity — **+1**
-- Bedridden ≥3 days, or major surgery within 12 weeks requiring general or regional anaesthesia — **+1**
-- Localised tenderness along the deep venous system — **+1**
+- Paralysis, paresis, or recent plaster immobilization of a lower extremity — **+1**
+- Bedridden ≥3 days, or major surgery within 12 weeks requiring general or regional anesthesia — **+1**
+- Localized tenderness along the deep venous system — **+1**
 - Entire leg swollen — **+1**
 - Calf swelling >3 cm vs the asymptomatic leg (measured 10 cm below tibial tuberosity) — **+1**
-- Pitting oedema confined to the symptomatic leg — **+1**
+- Pitting edema confined to the symptomatic leg — **+1**
 - Collateral superficial veins (non-varicose) — **+1**
 - Previously documented DVT — **+1**
 - Alternative diagnosis at least as likely as DVT — **-2**
@@ -130,7 +130,7 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 | (none selected) | score 0, band DVT unlikely |
 | cancer=true, tenderness=true | score 2, band DVT likely |
 | cancer=true, tenderness=true, altdx=true | score 0, band DVT unlikely |
-| cancer=true, paralysis=true, bedridden=true, tenderness=true, legswollen=true, calf=true, oedema=true, collateral=true, priordvt=true | score 9, band DVT likely |
+| cancer=true, paralysis=true, bedridden=true, tenderness=true, legswollen=true, calf=true, edema=true, collateral=true, priordvt=true | score 9, band DVT likely |
 
 ---
 
@@ -143,9 +143,9 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 - Clinical signs and symptoms of DVT (leg swelling and pain on palpation of the deep veins) — **+3**
 - PE is the most likely diagnosis, or equally likely as an alternative — **+3**
 - Heart rate >100 bpm — **+1.5**
-- Immobilisation ≥3 days, or surgery within the previous 4 weeks — **+1.5**
+- Immobilization ≥3 days, or surgery within the previous 4 weeks — **+1.5**
 - Previous objectively diagnosed PE or DVT — **+1.5**
-- Haemoptysis — **+1**
+- Hemoptysis — **+1**
 - Malignancy (treatment within 6 months, or palliative) — **+1**
 
 **Interpretation**
@@ -155,12 +155,12 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 
 **Caveats shown to the student**
 
-- This uses the dichotomised version: ≤4 is 'PE unlikely', >4 is 'PE likely'. The original three-tier version reported low (<2), moderate (2–6) and high (>6) probability — know which your institution uses.
+- This uses the dichotomized version: ≤4 is 'PE unlikely', >4 is 'PE likely'. The original three-tier version reported low (<2), moderate (2–6) and high (>6) probability — know which your institution uses.
 - Scores fall on half points (1.5, 4.5). Thresholds are applied without rounding.
 - 'PE is the most likely diagnosis' is a subjective item and is the main source of inter-rater variation in this score.
 - In a low-probability patient, consider PERC before ordering a D-dimer — see the PERC calculator.
 
-**Source.** Wells PS, et al. Derivation of a simple clinical model to categorize patients' probability of pulmonary embolism. Thromb Haemost 2000;83:416-20. Dichotomised thresholds adopted by NICE CG144.
+**Source.** Wells PS, et al. Derivation of a simple clinical model to categorize patients' probability of pulmonary embolism. Thromb Haemost 2000;83:416-20. Dichotomized thresholds adopted by NICE CG144.
 <https://www.mdcalc.com/calc/115/wells-criteria-pulmonary-embolism>
 
 **Test vectors (all passing)**
@@ -170,7 +170,7 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 | (none selected) | score 0, band PE unlikely |
 | hr=true, immob=true, prior=true | score 4.5, band PE likely |
 | hr=true, immob=true | score 3, band PE unlikely |
-| dvtsigns=true, pefirst=true, hr=true, immob=true, prior=true, haemoptysis=true, malignancy=true | score 12.5, band PE likely |
+| dvtsigns=true, pefirst=true, hr=true, immob=true, prior=true, hemoptysis=true, malignancy=true | score 12.5, band PE likely |
 
 ---
 
@@ -184,8 +184,8 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 - Heart rate ≥100 bpm — **+1**
 - SaO₂ <95% on room air — **+1**
 - Unilateral leg swelling — **+1**
-- Haemoptysis — **+1**
-- Recent surgery or trauma within 4 weeks requiring treatment under general anaesthesia — **+1**
+- Hemoptysis — **+1**
+- Recent surgery or trauma within 4 weeks requiring treatment under general anesthesia — **+1**
 - Prior PE or DVT — **+1**
 - Hormone use (oral contraceptive, hormone replacement, oestrogenic hormone) — **+1**
 
@@ -209,7 +209,7 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 |---|---|
 | (none selected) | score 0, band PERC negative — no further testing indicated |
 | age=true | score 1, band PERC positive — PERC cannot exclude PE |
-| age=true, hr=true, sat=true, legswell=true, haemoptysis=true, surgery=true, prior=true, hormone=true | score 8, band PERC positive — PERC cannot exclude PE |
+| age=true, hr=true, sat=true, legswell=true, hemoptysis=true, surgery=true, prior=true, hormone=true | score 8, band PERC positive — PERC cannot exclude PE |
 
 ---
 
@@ -399,7 +399,7 @@ Every formula is exercised by `scripts/test_calculators.js` against the test vec
 - Work it out yourself first, then use this to check. A calculator you drive will faithfully carry your mistake — if you enter mg where the order says mcg, it returns a confident and wrong answer.
 - mcg, mg and g is where these calculations actually go wrong. A thousandfold error still looks like an ordinary number. Read the order and the vial label as written, not as you expect them to read.
 - 'Per day, divided' is not 'per dose'. Giving a whole daily dose as one dose is a two- to four-fold overdose and is the commonest weight-based error there is. Check which one the order specifies before you choose it above.
-- Paediatric doses are frequently capped at the adult dose. Weight-based arithmetic does not know that and will scale straight past it in a large child or an adolescent.
+- Pediatric doses are frequently capped at the adult dose. Weight-based arithmetic does not know that and will scale straight past it in a large child or an adolescent.
 - This is a study tool. It is not a substitute for your institution's process — for high-alert medications that includes an independent double check by a second person where your policy requires one, not a second run through the same calculator.
 
 **Source.** Dimensional analysis: dose = weight × ordered dose per kg; volume = dose ÷ concentration. Safety framing follows the Institute for Safe Medication Practices, 'Independent double checks: undervalued and misused' (ISMP Medication Safety Alert!), which recommends double checks be applied judiciously to selected high-alert situations rather than universally.
