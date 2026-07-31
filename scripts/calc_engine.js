@@ -73,7 +73,85 @@ function map(spec, values) {
   return { value, band: bandFor(spec.bands, value) };
 }
 
-const KERNELS = { sum, bmiBsa, map };
+function round(n, dp) { const f = Math.pow(10, dp); return Math.round(n * f) / f; }
+
+/* Weight-based dose.
+ *
+ * This kernel is deliberately the most verbose of the four, because on a dosage
+ * calculator the DERIVATION is the content and the number is the by-product. It
+ * returns `work` -- the dimensional analysis, step by step, in the student's own
+ * units -- so the UI can show the reasoning rather than an unexplained answer,
+ * and so the tests can assert on the reasoning too.
+ *
+ * Everything is converted to milligrams internally. mcg/mg/g is where these
+ * calculations actually go wrong: a thousandfold slip produces a plausible-looking
+ * number, so the conversion happens in exactly one place rather than being spread
+ * across the arithmetic.
+ *
+ * What this kernel will NOT do is claim a dose is safe. It has no drug knowledge,
+ * so it cannot know a maximum. The only sanity signal available without that
+ * knowledge is whether the resulting VOLUME is physically plausible to measure --
+ * which catches unit slips and nothing else, and the band notes say so.
+ */
+function dose(spec, values) {
+  const MASS = { mcg: 0.001, mg: 1, g: 1000 };
+
+  const wUnit = values.weight_unit || 'kg';
+  const kg    = toBase(values.weight, wUnit, spec.inputs[0].units);
+  const perKg = Number(values.dose);
+  const dUnit = values.doseUnit || 'mg';
+  const basis = values.basis || 'dose';
+  const freq  = Number(values.freq) || 1;
+  const strength = Number(values.strength);
+  const sUnit = values.strengthUnit || 'mg';
+  const vol   = Number(values.volume);
+
+  if (!(kg > 0) || !(perKg > 0) || !MASS[dUnit]) return null;
+  if (basis === 'day' && !(freq > 0)) return null;
+
+  const work = [];
+  work.push(wUnit === 'kg'
+    ? `Weight: ${round(kg, 2)} kg`
+    : `Weight: ${values.weight} ${wUnit} ÷ 2.20462 = ${round(kg, 2)} kg`);
+
+  const perDay = basis === 'day';
+  let mass = kg * perKg;
+  work.push(`Ordered: ${perKg} ${dUnit}/kg${perDay ? '/day' : ''} × ${round(kg, 2)} kg = ` +
+            `${round(mass, 3)} ${dUnit}${perDay ? '/day' : ''}`);
+  if (perDay) {
+    /* The single commonest weight-based error is giving a DAILY dose as one dose.
+       Making the division an explicit, visible step is the point of showing it. */
+    const total = mass;
+    mass = mass / freq;
+    work.push(`Divided into ${freq} dose${freq === 1 ? '' : 's'} a day: ` +
+              `${round(total, 3)} ÷ ${freq} = ${round(mass, 3)} ${dUnit} per dose`);
+  }
+
+  const mg = mass * MASS[dUnit];
+
+  // Present the dose in whichever unit reads naturally, rather than always mg.
+  let dv, dvUnit;
+  if (mg < 1)          { dv = round(mg / MASS.mcg, 2); dvUnit = 'mcg'; }
+  else if (mg >= 1000) { dv = round(mg / MASS.g, 3);   dvUnit = 'g'; }
+  else                 { dv = round(mg, 2);            dvUnit = 'mg'; }
+
+  // Dose and volume are two separate steps; show the dose as soon as it is known.
+  if (!(strength > 0) || !(vol > 0) || !MASS[sUnit]) {
+    return { dose: dv, doseUnit: dvUnit, volume: null, work,
+             band: { label: 'Enter the available supply to get a volume', tone: '' } };
+  }
+
+  const mgPerMl = (strength * MASS[sUnit]) / vol;
+  work.push(`Supply: ${strength} ${sUnit} in ${vol} mL = ${round(mgPerMl, 4)} mg/mL`);
+  const raw = mg / mgPerMl;
+  const volume = round(raw, raw < 1 ? 3 : 2);
+  work.push(`Volume: ${round(mg, 3)} mg ÷ ${round(mgPerMl, 4)} mg/mL = ${volume} mL`);
+
+  return { dose: dv, doseUnit: dvUnit, volume, mgPerMl: round(mgPerMl, 4),
+           work, band: bandFor(spec.bands, volume) };
+}
+
+const KERNELS = { sum, bmiBsa, map, dose };
 
 function run(spec, values) {
   const k = KERNELS[spec.kernel];
@@ -82,5 +160,5 @@ function run(spec, values) {
 }
 
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { run, sum, bmiBsa, map, bandFor, toBase, KERNELS };
+  module.exports = { run, sum, bmiBsa, map, dose, round, bandFor, toBase, KERNELS };
 }

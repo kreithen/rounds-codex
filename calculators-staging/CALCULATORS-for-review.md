@@ -1,20 +1,21 @@
 # Clinical Calculators — for review
 
-Nine calculators, scores and indices only. No calculator outputs a dose, a rate, or a volume to administer.
+Ten calculators. Nine are scores and indices; the tenth is a weight-based dosage calculator, framed as practice-and-check rather than point-of-care preparation.
 
-Every formula below is exercised by `scripts/test_calculators.js` against the test vectors shown. **156 checks pass.** What the tests cannot check is whether the clinical framing is right — that is what needs your eyes.
+Every formula is exercised by `scripts/test_calculators.js` against the test vectors shown. **186 checks pass.** What the tests cannot check is whether the clinical framing is right — that is what needs your eyes.
 
-| # | Calculator | Range | Source |
+| # | Calculator | Output | Source |
 |---|---|---|---|
 | 1 | BMI & Body Surface Area | formula | WHO |
 | 2 | Mean Arterial Pressure | formula | Evans L, et al |
-| 3 | Wells' Criteria for DVT | -2 to 9 | Wells PS, et al |
-| 4 | Wells' Criteria for Pulmonary Embolism | 0 to 12.5 | Wells PS, et al |
-| 5 | PERC Rule for Pulmonary Embolism | 0 to 8 | Kline JA, et al |
-| 6 | CHA₂DS₂-VASc Score | 0 to 9 | Lip GYH, et al |
-| 7 | HAS-BLED Score | 0 to 9 | Pisters R, et al |
-| 8 | CURB-65 Score | 0 to 5 | Lim WS, et al |
-| 9 | qSOFA Score | 0 to 3 | Singer M, et al |
+| 3 | Wells' Criteria for DVT | score -2 to 9 | Wells PS, et al |
+| 4 | Wells' Criteria for Pulmonary Embolism | score 0 to 12.5 | Wells PS, et al |
+| 5 | PERC Rule for Pulmonary Embolism | score 0 to 8 | Kline JA, et al |
+| 6 | CHA₂DS₂-VASc Score | score 0 to 9 | Lip GYH, et al |
+| 7 | HAS-BLED Score | score 0 to 9 | Pisters R, et al |
+| 8 | CURB-65 Score | score 0 to 5 | Lim WS, et al |
+| 9 | qSOFA Score | score 0 to 3 | Singer M, et al |
+| 10 | Weight-Based Dose & Volume | dose + volume | Dimensional analysis: dose = weight × ordered dose per kg; volume = dose ÷ concentration |
 
 ---
 
@@ -220,7 +221,7 @@ Every formula below is exercised by `scripts/test_calculators.js` against the te
 
 - Congestive heart failure or left ventricular dysfunction — **+1**
 - Hypertension — **+1**
-- Age — Under 65 (0), 65–74 (+1), 75 or older (+2)
+- Age — Under 65 → `0`, 65–74 → `1`, 75 or older → `2`
 - Diabetes mellitus — **+1**
 - Prior stroke, TIA, or thromboembolism — **+2**
 - Vascular disease (prior MI, peripheral arterial disease, or aortic plaque) — **+1**
@@ -368,3 +369,51 @@ Every formula below is exercised by `scripts/test_calculators.js` against the te
 | rr=true | score 1, band Not qSOFA positive |
 | rr=true, sbp=true | score 2, band qSOFA positive |
 | rr=true, mentation=true, sbp=true | score 3, band qSOFA positive |
+
+---
+
+## 10. Weight-Based Dose & Volume
+
+**Purpose.** Work out the dose for a weight-based order and the volume to measure from a given supply. Do the sum yourself first, then use this to check it.
+
+**Inputs**
+
+- Patient weight — kg / lb
+- Ordered dose (per kg) — number
+- Dose unit — mg/kg → `mg`, mcg/kg → `mcg`, g/kg → `g`
+- The order is written as — a single dose → `dose`, a total per day, divided → `day`
+- Doses per day (if divided) — 1 — once daily → `1`, 2 — q12h / BID → `2`, 3 — q8h / TID → `3`, 4 — q6h / QID → `4`, 6 — q4h → `6`
+- Supply: strength — number
+- Strength unit — mg → `mg`, mcg → `mcg`, g → `g`
+- Supply: in this volume — mL
+
+**Interpretation**
+
+- ≤ 0.1: **Very small volume — re-check your units** — Under 0.1 mL cannot be measured accurately in most syringes, and a volume this small usually means a mcg/mg mix-up. Re-read the order and the vial before drawing anything up.
+- ≤ 50: **Volume is in the usual measurable range** — This checks the ARITHMETIC only. It is not a statement that the dose is correct, safe, or appropriate for this patient.
+- ≤ max: **Large volume — re-check your units** — More than 50 mL as a single measured dose is unusual outside an infusion. A g-for-mg slip produces exactly this result.
+
+**Caveats shown to the student**
+
+- This checks your arithmetic, not the dose. It has no drug knowledge and cannot know a maximum, a minimum, or whether the drug suits this patient. A decimal-point error that happens to produce a measurable volume will pass without complaint. Always check the dose itself against a current drug reference.
+- Work it out yourself first, then use this to check. A calculator you drive will faithfully carry your mistake — if you enter mg where the order says mcg, it returns a confident and wrong answer.
+- mcg, mg and g is where these calculations actually go wrong. A thousandfold error still looks like an ordinary number. Read the order and the vial label as written, not as you expect them to read.
+- 'Per day, divided' is not 'per dose'. Giving a whole daily dose as one dose is a two- to four-fold overdose and is the commonest weight-based error there is. Check which one the order specifies before you choose it above.
+- Paediatric doses are frequently capped at the adult dose. Weight-based arithmetic does not know that and will scale straight past it in a large child or an adolescent.
+- This is a study tool. It is not a substitute for your institution's process — for high-alert medications that includes an independent double check by a second person where your policy requires one, not a second run through the same calculator.
+
+**Source.** Dimensional analysis: dose = weight × ordered dose per kg; volume = dose ÷ concentration. Safety framing follows the Institute for Safe Medication Practices, 'Independent double checks: undervalued and misused' (ISMP Medication Safety Alert!), which recommends double checks be applied judiciously to selected high-alert situations rather than universally.
+<https://www.ismp.org/sites/default/files/attachments/2018-04/LTC201506.pdf>
+
+**Test vectors (all passing)**
+
+| input | expected |
+|---|---|
+| weight=70, dose=5, doseUnit=mg, basis=dose, strength=50, strengthUnit=mg, volume=1 | dose 350, doseUnit mg, volume 7 |
+| weight=154, weight_unit=lb, dose=5, doseUnit=mg, basis=dose, strength=50, strengthUnit=mg, volume=1 | dose 349.27, doseUnit mg, volume 6.99 |
+| weight=20, dose=45, doseUnit=mg, basis=day, freq=3, strength=250, strengthUnit=mg, volume=5 | dose 300, doseUnit mg, volume 6 |
+| weight=20, dose=45, doseUnit=mg, basis=dose, strength=250, strengthUnit=mg, volume=5 | dose 900, doseUnit mg, volume 18 |
+| weight=60, dose=2, doseUnit=mcg, basis=dose, strength=100, strengthUnit=mcg, volume=2 | dose 120, doseUnit mcg, volume 2.4 |
+| weight=50, dose=0.1, doseUnit=g, basis=dose, strength=500, strengthUnit=mg, volume=10 | dose 5, doseUnit g, volume 100 |
+| weight=3.2, dose=10, doseUnit=mcg, basis=dose, strength=1, strengthUnit=mg, volume=1 | dose 32, doseUnit mcg, volume 0.032 |
+| weight=70, dose=5, doseUnit=mg, basis=dose | dose 350, doseUnit mg, volume null |

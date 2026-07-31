@@ -5,19 +5,83 @@
     "short": "BMI / BSA",
     "group": "Anthropometrics",
     "kernel": "bmiBsa",
-    "conditions": ["metabolic-syndrome", "t2dm", "osa"],
+    "conditions": [
+      "metabolic-syndrome",
+      "t2dm",
+      "osa"
+    ],
     "purpose": "Body mass index classifies weight status; body surface area is used to normalise physiologic measurements such as cardiac index.",
     "inputs": [
-      { "id": "weight", "label": "Weight", "type": "number", "units": [["kg", 1], ["lb", 0.45359237]], "min": 0.5, "max": 700 },
-      { "id": "height", "label": "Height", "type": "number", "units": [["cm", 1], ["m", 100], ["in", 2.54]], "min": 30, "max": 260 }
+      {
+        "id": "weight",
+        "label": "Weight",
+        "type": "number",
+        "units": [
+          [
+            "kg",
+            1
+          ],
+          [
+            "lb",
+            0.45359237
+          ]
+        ],
+        "min": 0.5,
+        "max": 700
+      },
+      {
+        "id": "height",
+        "label": "Height",
+        "type": "number",
+        "units": [
+          [
+            "cm",
+            1
+          ],
+          [
+            "m",
+            100
+          ],
+          [
+            "in",
+            2.54
+          ]
+        ],
+        "min": 30,
+        "max": 260
+      }
     ],
     "bands": [
-      { "max": 18.5, "label": "Underweight", "tone": "warn" },
-      { "max": 25, "label": "Normal weight", "tone": "ok" },
-      { "max": 30, "label": "Overweight", "tone": "warn" },
-      { "max": 35, "label": "Obesity class I", "tone": "high" },
-      { "max": 40, "label": "Obesity class II", "tone": "high" },
-      { "max": 999, "label": "Obesity class III", "tone": "high" }
+      {
+        "max": 18.5,
+        "label": "Underweight",
+        "tone": "warn"
+      },
+      {
+        "max": 25,
+        "label": "Normal weight",
+        "tone": "ok"
+      },
+      {
+        "max": 30,
+        "label": "Overweight",
+        "tone": "warn"
+      },
+      {
+        "max": 35,
+        "label": "Obesity class I",
+        "tone": "high"
+      },
+      {
+        "max": 40,
+        "label": "Obesity class II",
+        "tone": "high"
+      },
+      {
+        "max": 999,
+        "label": "Obesity class III",
+        "tone": "high"
+      }
     ],
     "citation": "WHO. Obesity: preventing and managing the global epidemic (WHO Technical Report Series 894). Mosteller RD. Simplified calculation of body-surface area. N Engl J Med 1987;317:1098.",
     "url": "https://www.nejm.org/doi/10.1056/NEJM198710223171717",
@@ -28,10 +92,52 @@
       "BSA is shown because it normalises cardiac index and other physiologic measures. Chemotherapy dosing is a pharmacy calculation and is out of scope for this app."
     ],
     "tests": [
-      { "in": { "weight": 70, "height": 175 }, "out": { "bmi": 22.9, "bsa": 1.84, "band": "Normal weight" } },
-      { "in": { "weight": 100, "height": 180 }, "out": { "bmi": 30.9, "bsa": 2.24, "band": "Obesity class I" } },
-      { "in": { "weight": 45, "height": 165 }, "out": { "bmi": 16.5, "bsa": 1.44, "band": "Underweight" } },
-      { "in": { "weight": 154, "height": 69, "weight_unit": "lb", "height_unit": "in" }, "out": { "bmi": 22.7, "bsa": 1.84, "band": "Normal weight" } }
+      {
+        "in": {
+          "weight": 70,
+          "height": 175
+        },
+        "out": {
+          "bmi": 22.9,
+          "bsa": 1.84,
+          "band": "Normal weight"
+        }
+      },
+      {
+        "in": {
+          "weight": 100,
+          "height": 180
+        },
+        "out": {
+          "bmi": 30.9,
+          "bsa": 2.24,
+          "band": "Obesity class I"
+        }
+      },
+      {
+        "in": {
+          "weight": 45,
+          "height": 165
+        },
+        "out": {
+          "bmi": 16.5,
+          "bsa": 1.44,
+          "band": "Underweight"
+        }
+      },
+      {
+        "in": {
+          "weight": 154,
+          "height": 69,
+          "weight_unit": "lb",
+          "height_unit": "in"
+        },
+        "out": {
+          "bmi": 22.7,
+          "bsa": 1.84,
+          "band": "Normal weight"
+        }
+      }
     ]
   },
   {
@@ -40,15 +146,51 @@
     "short": "MAP",
     "group": "Haemodynamics",
     "kernel": "map",
-    "conditions": ["sepsis", "shock", "htn"],
+    "conditions": [
+      "sepsis",
+      "shock",
+      "htn"
+    ],
     "purpose": "Estimates the average arterial pressure across the cardiac cycle — the pressure driving organ perfusion.",
     "inputs": [
-      { "id": "sbp", "label": "Systolic BP", "type": "number", "units": [["mmHg", 1]], "min": 30, "max": 300 },
-      { "id": "dbp", "label": "Diastolic BP", "type": "number", "units": [["mmHg", 1]], "min": 10, "max": 200 }
+      {
+        "id": "sbp",
+        "label": "Systolic BP",
+        "type": "number",
+        "units": [
+          [
+            "mmHg",
+            1
+          ]
+        ],
+        "min": 30,
+        "max": 300
+      },
+      {
+        "id": "dbp",
+        "label": "Diastolic BP",
+        "type": "number",
+        "units": [
+          [
+            "mmHg",
+            1
+          ]
+        ],
+        "min": 10,
+        "max": 200
+      }
     ],
     "bands": [
-      { "max": 65, "label": "Below the usual resuscitation target", "tone": "high" },
-      { "max": 999, "label": "At or above the usual resuscitation target", "tone": "ok" }
+      {
+        "max": 65,
+        "label": "Below the usual resuscitation target",
+        "tone": "high"
+      },
+      {
+        "max": 999,
+        "label": "At or above the usual resuscitation target",
+        "tone": "ok"
+      }
     ],
     "citation": "Evans L, et al. Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2021. Crit Care Med 2021;49(11):e1063-e1143.",
     "url": "https://journals.lww.com/ccmjournal/fulltext/2021/11000/surviving_sepsis_campaign__international.21.aspx",
@@ -59,9 +201,36 @@
       "Trend and the patient in front of you matter more than the single number. Escalate on the clinical picture, not the calculator."
     ],
     "tests": [
-      { "in": { "sbp": 120, "dbp": 80 }, "out": { "value": 93, "band": "At or above the usual resuscitation target" } },
-      { "in": { "sbp": 90, "dbp": 50 }, "out": { "value": 63, "band": "Below the usual resuscitation target" } },
-      { "in": { "sbp": 100, "dbp": 60 }, "out": { "value": 73, "band": "At or above the usual resuscitation target" } }
+      {
+        "in": {
+          "sbp": 120,
+          "dbp": 80
+        },
+        "out": {
+          "value": 93,
+          "band": "At or above the usual resuscitation target"
+        }
+      },
+      {
+        "in": {
+          "sbp": 90,
+          "dbp": 50
+        },
+        "out": {
+          "value": 63,
+          "band": "Below the usual resuscitation target"
+        }
+      },
+      {
+        "in": {
+          "sbp": 100,
+          "dbp": 60
+        },
+        "out": {
+          "value": 73,
+          "band": "At or above the usual resuscitation target"
+        }
+      }
     ]
   },
   {
@@ -70,23 +239,85 @@
     "short": "Wells DVT",
     "group": "Risk scores",
     "kernel": "sum",
-    "conditions": ["dvt"],
+    "conditions": [
+      "dvt"
+    ],
     "purpose": "Stratifies pretest probability of deep vein thrombosis, to decide whether a D-dimer or an ultrasound is the right next test.",
     "inputs": [
-      { "id": "cancer", "label": "Active cancer (treatment within 6 months, or palliative)", "type": "check", "points": 1 },
-      { "id": "paralysis", "label": "Paralysis, paresis, or recent plaster immobilisation of a lower extremity", "type": "check", "points": 1 },
-      { "id": "bedridden", "label": "Bedridden ≥3 days, or major surgery within 12 weeks requiring general or regional anaesthesia", "type": "check", "points": 1 },
-      { "id": "tenderness", "label": "Localised tenderness along the deep venous system", "type": "check", "points": 1 },
-      { "id": "legswollen", "label": "Entire leg swollen", "type": "check", "points": 1 },
-      { "id": "calf", "label": "Calf swelling >3 cm vs the asymptomatic leg (measured 10 cm below tibial tuberosity)", "type": "check", "points": 1 },
-      { "id": "oedema", "label": "Pitting oedema confined to the symptomatic leg", "type": "check", "points": 1 },
-      { "id": "collateral", "label": "Collateral superficial veins (non-varicose)", "type": "check", "points": 1 },
-      { "id": "priordvt", "label": "Previously documented DVT", "type": "check", "points": 1 },
-      { "id": "altdx", "label": "Alternative diagnosis at least as likely as DVT", "type": "check", "points": -2 }
+      {
+        "id": "cancer",
+        "label": "Active cancer (treatment within 6 months, or palliative)",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "paralysis",
+        "label": "Paralysis, paresis, or recent plaster immobilisation of a lower extremity",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "bedridden",
+        "label": "Bedridden ≥3 days, or major surgery within 12 weeks requiring general or regional anaesthesia",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "tenderness",
+        "label": "Localised tenderness along the deep venous system",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "legswollen",
+        "label": "Entire leg swollen",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "calf",
+        "label": "Calf swelling >3 cm vs the asymptomatic leg (measured 10 cm below tibial tuberosity)",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "oedema",
+        "label": "Pitting oedema confined to the symptomatic leg",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "collateral",
+        "label": "Collateral superficial veins (non-varicose)",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "priordvt",
+        "label": "Previously documented DVT",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "altdx",
+        "label": "Alternative diagnosis at least as likely as DVT",
+        "type": "check",
+        "points": -2
+      }
     ],
     "bands": [
-      { "max": 0.99, "label": "DVT unlikely", "tone": "ok", "note": "A negative high-sensitivity D-dimer reasonably excludes DVT in this group." },
-      { "max": 999, "label": "DVT likely", "tone": "high", "note": "Proceed to compression ultrasound; D-dimer alone is not sufficient to exclude." }
+      {
+        "max": 0.99,
+        "label": "DVT unlikely",
+        "tone": "ok",
+        "note": "A negative high-sensitivity D-dimer reasonably excludes DVT in this group."
+      },
+      {
+        "max": 999,
+        "label": "DVT likely",
+        "tone": "high",
+        "note": "Proceed to compression ultrasound; D-dimer alone is not sufficient to exclude."
+      }
     ],
     "citation": "Wells PS, et al. Evaluation of D-dimer in the diagnosis of suspected deep-vein thrombosis. N Engl J Med 2003;349:1227-35.",
     "url": "https://www.nejm.org/doi/10.1056/NEJMoa023153",
@@ -96,10 +327,51 @@
       "The score guides which test to order. It never rules DVT in or out on its own."
     ],
     "tests": [
-      { "in": {}, "out": { "score": 0, "band": "DVT unlikely" } },
-      { "in": { "cancer": true, "tenderness": true }, "out": { "score": 2, "band": "DVT likely" } },
-      { "in": { "cancer": true, "tenderness": true, "altdx": true }, "out": { "score": 0, "band": "DVT unlikely" } },
-      { "in": { "cancer": true, "paralysis": true, "bedridden": true, "tenderness": true, "legswollen": true, "calf": true, "oedema": true, "collateral": true, "priordvt": true }, "out": { "score": 9, "band": "DVT likely" } }
+      {
+        "in": {},
+        "out": {
+          "score": 0,
+          "band": "DVT unlikely"
+        }
+      },
+      {
+        "in": {
+          "cancer": true,
+          "tenderness": true
+        },
+        "out": {
+          "score": 2,
+          "band": "DVT likely"
+        }
+      },
+      {
+        "in": {
+          "cancer": true,
+          "tenderness": true,
+          "altdx": true
+        },
+        "out": {
+          "score": 0,
+          "band": "DVT unlikely"
+        }
+      },
+      {
+        "in": {
+          "cancer": true,
+          "paralysis": true,
+          "bedridden": true,
+          "tenderness": true,
+          "legswollen": true,
+          "calf": true,
+          "oedema": true,
+          "collateral": true,
+          "priordvt": true
+        },
+        "out": {
+          "score": 9,
+          "band": "DVT likely"
+        }
+      }
     ]
   },
   {
@@ -108,20 +380,67 @@
     "short": "Wells PE",
     "group": "Risk scores",
     "kernel": "sum",
-    "conditions": ["pe"],
+    "conditions": [
+      "pe"
+    ],
     "purpose": "Stratifies pretest probability of pulmonary embolism, to decide between D-dimer and CT pulmonary angiography.",
     "inputs": [
-      { "id": "dvtsigns", "label": "Clinical signs and symptoms of DVT (leg swelling and pain on palpation of the deep veins)", "type": "check", "points": 3 },
-      { "id": "pefirst", "label": "PE is the most likely diagnosis, or equally likely as an alternative", "type": "check", "points": 3 },
-      { "id": "hr", "label": "Heart rate >100 bpm", "type": "check", "points": 1.5 },
-      { "id": "immob", "label": "Immobilisation ≥3 days, or surgery within the previous 4 weeks", "type": "check", "points": 1.5 },
-      { "id": "prior", "label": "Previous objectively diagnosed PE or DVT", "type": "check", "points": 1.5 },
-      { "id": "haemoptysis", "label": "Haemoptysis", "type": "check", "points": 1 },
-      { "id": "malignancy", "label": "Malignancy (treatment within 6 months, or palliative)", "type": "check", "points": 1 }
+      {
+        "id": "dvtsigns",
+        "label": "Clinical signs and symptoms of DVT (leg swelling and pain on palpation of the deep veins)",
+        "type": "check",
+        "points": 3
+      },
+      {
+        "id": "pefirst",
+        "label": "PE is the most likely diagnosis, or equally likely as an alternative",
+        "type": "check",
+        "points": 3
+      },
+      {
+        "id": "hr",
+        "label": "Heart rate >100 bpm",
+        "type": "check",
+        "points": 1.5
+      },
+      {
+        "id": "immob",
+        "label": "Immobilisation ≥3 days, or surgery within the previous 4 weeks",
+        "type": "check",
+        "points": 1.5
+      },
+      {
+        "id": "prior",
+        "label": "Previous objectively diagnosed PE or DVT",
+        "type": "check",
+        "points": 1.5
+      },
+      {
+        "id": "haemoptysis",
+        "label": "Haemoptysis",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "malignancy",
+        "label": "Malignancy (treatment within 6 months, or palliative)",
+        "type": "check",
+        "points": 1
+      }
     ],
     "bands": [
-      { "max": 4, "label": "PE unlikely", "tone": "ok", "note": "A negative high-sensitivity D-dimer reasonably excludes PE in this group." },
-      { "max": 999, "label": "PE likely", "tone": "high", "note": "Proceed to CT pulmonary angiography (or V/Q where CT is contraindicated)." }
+      {
+        "max": 4,
+        "label": "PE unlikely",
+        "tone": "ok",
+        "note": "A negative high-sensitivity D-dimer reasonably excludes PE in this group."
+      },
+      {
+        "max": 999,
+        "label": "PE likely",
+        "tone": "high",
+        "note": "Proceed to CT pulmonary angiography (or V/Q where CT is contraindicated)."
+      }
     ],
     "citation": "Wells PS, et al. Derivation of a simple clinical model to categorize patients' probability of pulmonary embolism. Thromb Haemost 2000;83:416-20. Dichotomised thresholds adopted by NICE CG144.",
     "url": "https://www.mdcalc.com/calc/115/wells-criteria-pulmonary-embolism",
@@ -132,10 +451,49 @@
       "In a low-probability patient, consider PERC before ordering a D-dimer — see the PERC calculator."
     ],
     "tests": [
-      { "in": {}, "out": { "score": 0, "band": "PE unlikely" } },
-      { "in": { "hr": true, "immob": true, "prior": true }, "out": { "score": 4.5, "band": "PE likely" } },
-      { "in": { "hr": true, "immob": true }, "out": { "score": 3, "band": "PE unlikely" } },
-      { "in": { "dvtsigns": true, "pefirst": true, "hr": true, "immob": true, "prior": true, "haemoptysis": true, "malignancy": true }, "out": { "score": 12.5, "band": "PE likely" } }
+      {
+        "in": {},
+        "out": {
+          "score": 0,
+          "band": "PE unlikely"
+        }
+      },
+      {
+        "in": {
+          "hr": true,
+          "immob": true,
+          "prior": true
+        },
+        "out": {
+          "score": 4.5,
+          "band": "PE likely"
+        }
+      },
+      {
+        "in": {
+          "hr": true,
+          "immob": true
+        },
+        "out": {
+          "score": 3,
+          "band": "PE unlikely"
+        }
+      },
+      {
+        "in": {
+          "dvtsigns": true,
+          "pefirst": true,
+          "hr": true,
+          "immob": true,
+          "prior": true,
+          "haemoptysis": true,
+          "malignancy": true
+        },
+        "out": {
+          "score": 12.5,
+          "band": "PE likely"
+        }
+      }
     ]
   },
   {
@@ -144,21 +502,73 @@
     "short": "PERC",
     "group": "Risk scores",
     "kernel": "sum",
-    "conditions": ["pe"],
+    "conditions": [
+      "pe"
+    ],
     "purpose": "In a patient already judged LOW risk, PERC identifies those in whom no further testing for PE is warranted. All eight criteria must be absent.",
     "inputs": [
-      { "id": "age", "label": "Age ≥50", "type": "check", "points": 1 },
-      { "id": "hr", "label": "Heart rate ≥100 bpm", "type": "check", "points": 1 },
-      { "id": "sat", "label": "SaO₂ <95% on room air", "type": "check", "points": 1 },
-      { "id": "legswell", "label": "Unilateral leg swelling", "type": "check", "points": 1 },
-      { "id": "haemoptysis", "label": "Haemoptysis", "type": "check", "points": 1 },
-      { "id": "surgery", "label": "Recent surgery or trauma within 4 weeks requiring treatment under general anaesthesia", "type": "check", "points": 1 },
-      { "id": "prior", "label": "Prior PE or DVT", "type": "check", "points": 1 },
-      { "id": "hormone", "label": "Hormone use (oral contraceptive, hormone replacement, oestrogenic hormone)", "type": "check", "points": 1 }
+      {
+        "id": "age",
+        "label": "Age ≥50",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "hr",
+        "label": "Heart rate ≥100 bpm",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "sat",
+        "label": "SaO₂ <95% on room air",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "legswell",
+        "label": "Unilateral leg swelling",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "haemoptysis",
+        "label": "Haemoptysis",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "surgery",
+        "label": "Recent surgery or trauma within 4 weeks requiring treatment under general anaesthesia",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "prior",
+        "label": "Prior PE or DVT",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "hormone",
+        "label": "Hormone use (oral contraceptive, hormone replacement, oestrogenic hormone)",
+        "type": "check",
+        "points": 1
+      }
     ],
     "bands": [
-      { "max": 0, "label": "PERC negative — no further testing indicated", "tone": "ok", "note": "Valid ONLY if you have already judged this patient low risk on clinical gestalt." },
-      { "max": 999, "label": "PERC positive — PERC cannot exclude PE", "tone": "high", "note": "PERC positive does not mean PE is present. It means PERC cannot rule it out; continue the usual pathway." }
+      {
+        "max": 0,
+        "label": "PERC negative — no further testing indicated",
+        "tone": "ok",
+        "note": "Valid ONLY if you have already judged this patient low risk on clinical gestalt."
+      },
+      {
+        "max": 999,
+        "label": "PERC positive — PERC cannot exclude PE",
+        "tone": "high",
+        "note": "PERC positive does not mean PE is present. It means PERC cannot rule it out; continue the usual pathway."
+      }
     ],
     "citation": "Kline JA, et al. Prospective multicenter evaluation of the pulmonary embolism rule-out criteria. J Thromb Haemost 2008;6:772-80.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/18318689/",
@@ -168,9 +578,38 @@
       "Not validated in pregnancy."
     ],
     "tests": [
-      { "in": {}, "out": { "score": 0, "band": "PERC negative — no further testing indicated" } },
-      { "in": { "age": true }, "out": { "score": 1, "band": "PERC positive — PERC cannot exclude PE" } },
-      { "in": { "age": true, "hr": true, "sat": true, "legswell": true, "haemoptysis": true, "surgery": true, "prior": true, "hormone": true }, "out": { "score": 8, "band": "PERC positive — PERC cannot exclude PE" } }
+      {
+        "in": {},
+        "out": {
+          "score": 0,
+          "band": "PERC negative — no further testing indicated"
+        }
+      },
+      {
+        "in": {
+          "age": true
+        },
+        "out": {
+          "score": 1,
+          "band": "PERC positive — PERC cannot exclude PE"
+        }
+      },
+      {
+        "in": {
+          "age": true,
+          "hr": true,
+          "sat": true,
+          "legswell": true,
+          "haemoptysis": true,
+          "surgery": true,
+          "prior": true,
+          "hormone": true
+        },
+        "out": {
+          "score": 8,
+          "band": "PERC positive — PERC cannot exclude PE"
+        }
+      }
     ]
   },
   {
@@ -179,21 +618,86 @@
     "short": "CHA₂DS₂-VASc",
     "group": "Risk scores",
     "kernel": "sum",
-    "conditions": ["afib"],
+    "conditions": [
+      "afib"
+    ],
     "purpose": "Estimates annual stroke risk in non-valvular atrial fibrillation, to guide whether oral anticoagulation is indicated.",
     "inputs": [
-      { "id": "chf", "label": "Congestive heart failure or left ventricular dysfunction", "type": "check", "points": 1 },
-      { "id": "htn", "label": "Hypertension", "type": "check", "points": 1 },
-      { "id": "agegroup", "label": "Age", "type": "select", "options": [["Under 65", 0], ["65–74", 1], ["75 or older", 2]] },
-      { "id": "dm", "label": "Diabetes mellitus", "type": "check", "points": 1 },
-      { "id": "stroke", "label": "Prior stroke, TIA, or thromboembolism", "type": "check", "points": 2 },
-      { "id": "vascular", "label": "Vascular disease (prior MI, peripheral arterial disease, or aortic plaque)", "type": "check", "points": 1 },
-      { "id": "female", "label": "Female sex", "type": "check", "points": 1 }
+      {
+        "id": "chf",
+        "label": "Congestive heart failure or left ventricular dysfunction",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "htn",
+        "label": "Hypertension",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "agegroup",
+        "label": "Age",
+        "type": "select",
+        "options": [
+          [
+            "Under 65",
+            0
+          ],
+          [
+            "65–74",
+            1
+          ],
+          [
+            "75 or older",
+            2
+          ]
+        ]
+      },
+      {
+        "id": "dm",
+        "label": "Diabetes mellitus",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "stroke",
+        "label": "Prior stroke, TIA, or thromboembolism",
+        "type": "check",
+        "points": 2
+      },
+      {
+        "id": "vascular",
+        "label": "Vascular disease (prior MI, peripheral arterial disease, or aortic plaque)",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "female",
+        "label": "Female sex",
+        "type": "check",
+        "points": 1
+      }
     ],
     "bands": [
-      { "max": 0.99, "label": "Low risk", "tone": "ok", "note": "Anticoagulation generally not recommended on the basis of this score alone." },
-      { "max": 1.99, "label": "Intermediate risk", "tone": "warn", "note": "Anticoagulation may be considered — a score of 1 from female sex alone is not an indication." },
-      { "max": 999, "label": "Anticoagulation generally recommended", "tone": "high", "note": "Guidelines recommend oral anticoagulation at ≥2 in men and ≥3 in women." }
+      {
+        "max": 0.99,
+        "label": "Low risk",
+        "tone": "ok",
+        "note": "Anticoagulation generally not recommended on the basis of this score alone."
+      },
+      {
+        "max": 1.99,
+        "label": "Intermediate risk",
+        "tone": "warn",
+        "note": "Anticoagulation may be considered — a score of 1 from female sex alone is not an indication."
+      },
+      {
+        "max": 999,
+        "label": "Anticoagulation generally recommended",
+        "tone": "high",
+        "note": "Guidelines recommend oral anticoagulation at ≥2 in men and ≥3 in women."
+      }
     ],
     "citation": "Lip GYH, et al. Refining clinical risk stratification for predicting stroke and thromboembolism in atrial fibrillation using a novel risk factor-based approach. Chest 2010;137:263-72.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/19762550/",
@@ -204,10 +708,50 @@
       "The score estimates stroke risk. It says nothing about bleeding risk — see HAS-BLED, and note that the two are not meant to be subtracted from one another."
     ],
     "tests": [
-      { "in": { "agegroup": 0 }, "out": { "score": 0, "band": "Low risk" } },
-      { "in": { "agegroup": 0, "female": true }, "out": { "score": 1, "band": "Intermediate risk" } },
-      { "in": { "agegroup": 2, "htn": true }, "out": { "score": 3, "band": "Anticoagulation generally recommended" } },
-      { "in": { "chf": true, "htn": true, "agegroup": 2, "dm": true, "stroke": true, "vascular": true, "female": true }, "out": { "score": 9, "band": "Anticoagulation generally recommended" } }
+      {
+        "in": {
+          "agegroup": 0
+        },
+        "out": {
+          "score": 0,
+          "band": "Low risk"
+        }
+      },
+      {
+        "in": {
+          "agegroup": 0,
+          "female": true
+        },
+        "out": {
+          "score": 1,
+          "band": "Intermediate risk"
+        }
+      },
+      {
+        "in": {
+          "agegroup": 2,
+          "htn": true
+        },
+        "out": {
+          "score": 3,
+          "band": "Anticoagulation generally recommended"
+        }
+      },
+      {
+        "in": {
+          "chf": true,
+          "htn": true,
+          "agegroup": 2,
+          "dm": true,
+          "stroke": true,
+          "vascular": true,
+          "female": true
+        },
+        "out": {
+          "score": 9,
+          "band": "Anticoagulation generally recommended"
+        }
+      }
     ]
   },
   {
@@ -216,23 +760,83 @@
     "short": "HAS-BLED",
     "group": "Risk scores",
     "kernel": "sum",
-    "conditions": ["afib"],
+    "conditions": [
+      "afib"
+    ],
     "purpose": "Estimates one-year major bleeding risk in patients with atrial fibrillation on anticoagulation, to flag modifiable risk factors.",
     "inputs": [
-      { "id": "htn", "label": "Uncontrolled hypertension (systolic >160 mmHg)", "type": "check", "points": 1 },
-      { "id": "renal", "label": "Abnormal renal function (dialysis, transplant, or creatinine >200 µmol/L / >2.26 mg/dL)", "type": "check", "points": 1 },
-      { "id": "liver", "label": "Abnormal liver function (cirrhosis, or bilirubin >2× normal with AST/ALT/ALP >3× normal)", "type": "check", "points": 1 },
-      { "id": "stroke", "label": "Prior stroke", "type": "check", "points": 1 },
-      { "id": "bleeding", "label": "Prior major bleeding, or predisposition to bleeding", "type": "check", "points": 1 },
-      { "id": "inr", "label": "Labile INR (time in therapeutic range <60%)", "type": "check", "points": 1 },
-      { "id": "elderly", "label": "Age >65", "type": "check", "points": 1 },
-      { "id": "drugs", "label": "Concomitant antiplatelet or NSAID", "type": "check", "points": 1 },
-      { "id": "alcohol", "label": "Alcohol excess (≥8 drinks per week)", "type": "check", "points": 1 }
+      {
+        "id": "htn",
+        "label": "Uncontrolled hypertension (systolic >160 mmHg)",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "renal",
+        "label": "Abnormal renal function (dialysis, transplant, or creatinine >200 µmol/L / >2.26 mg/dL)",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "liver",
+        "label": "Abnormal liver function (cirrhosis, or bilirubin >2× normal with AST/ALT/ALP >3× normal)",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "stroke",
+        "label": "Prior stroke",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "bleeding",
+        "label": "Prior major bleeding, or predisposition to bleeding",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "inr",
+        "label": "Labile INR (time in therapeutic range <60%)",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "elderly",
+        "label": "Age >65",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "drugs",
+        "label": "Concomitant antiplatelet or NSAID",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "alcohol",
+        "label": "Alcohol excess (≥8 drinks per week)",
+        "type": "check",
+        "points": 1
+      }
     ],
     "bands": [
-      { "max": 0, "label": "Low bleeding risk", "tone": "ok" },
-      { "max": 2, "label": "Intermediate bleeding risk", "tone": "warn" },
-      { "max": 999, "label": "High bleeding risk", "tone": "high", "note": "Address the modifiable factors and review more often — this is not on its own a reason to withhold anticoagulation." }
+      {
+        "max": 0,
+        "label": "Low bleeding risk",
+        "tone": "ok"
+      },
+      {
+        "max": 2,
+        "label": "Intermediate bleeding risk",
+        "tone": "warn"
+      },
+      {
+        "max": 999,
+        "label": "High bleeding risk",
+        "tone": "high",
+        "note": "Address the modifiable factors and review more often — this is not on its own a reason to withhold anticoagulation."
+      }
     ],
     "citation": "Pisters R, et al. A novel user-friendly score (HAS-BLED) to assess 1-year risk of major bleeding in patients with atrial fibrillation. Chest 2010;138:1093-100.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/20299623/",
@@ -243,10 +847,51 @@
       "Maximum score is 9."
     ],
     "tests": [
-      { "in": {}, "out": { "score": 0, "band": "Low bleeding risk" } },
-      { "in": { "htn": true, "elderly": true }, "out": { "score": 2, "band": "Intermediate bleeding risk" } },
-      { "in": { "htn": true, "elderly": true, "drugs": true }, "out": { "score": 3, "band": "High bleeding risk" } },
-      { "in": { "htn": true, "renal": true, "liver": true, "stroke": true, "bleeding": true, "inr": true, "elderly": true, "drugs": true, "alcohol": true }, "out": { "score": 9, "band": "High bleeding risk" } }
+      {
+        "in": {},
+        "out": {
+          "score": 0,
+          "band": "Low bleeding risk"
+        }
+      },
+      {
+        "in": {
+          "htn": true,
+          "elderly": true
+        },
+        "out": {
+          "score": 2,
+          "band": "Intermediate bleeding risk"
+        }
+      },
+      {
+        "in": {
+          "htn": true,
+          "elderly": true,
+          "drugs": true
+        },
+        "out": {
+          "score": 3,
+          "band": "High bleeding risk"
+        }
+      },
+      {
+        "in": {
+          "htn": true,
+          "renal": true,
+          "liver": true,
+          "stroke": true,
+          "bleeding": true,
+          "inr": true,
+          "elderly": true,
+          "drugs": true,
+          "alcohol": true
+        },
+        "out": {
+          "score": 9,
+          "band": "High bleeding risk"
+        }
+      }
     ]
   },
   {
@@ -255,19 +900,61 @@
     "short": "CURB-65",
     "group": "Risk scores",
     "kernel": "sum",
-    "conditions": ["cap"],
+    "conditions": [
+      "cap"
+    ],
     "purpose": "Estimates 30-day mortality in community-acquired pneumonia, to support the decision about where the patient should be treated.",
     "inputs": [
-      { "id": "confusion", "label": "Confusion (new disorientation to person, place or time)", "type": "check", "points": 1 },
-      { "id": "urea", "label": "Urea >7 mmol/L (BUN >19 mg/dL)", "type": "check", "points": 1 },
-      { "id": "rr", "label": "Respiratory rate ≥30 breaths/min", "type": "check", "points": 1 },
-      { "id": "bp", "label": "Systolic BP <90 mmHg or diastolic BP ≤60 mmHg", "type": "check", "points": 1 },
-      { "id": "age", "label": "Age ≥65", "type": "check", "points": 1 }
+      {
+        "id": "confusion",
+        "label": "Confusion (new disorientation to person, place or time)",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "urea",
+        "label": "Urea >7 mmol/L (BUN >19 mg/dL)",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "rr",
+        "label": "Respiratory rate ≥30 breaths/min",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "bp",
+        "label": "Systolic BP <90 mmHg or diastolic BP ≤60 mmHg",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "age",
+        "label": "Age ≥65",
+        "type": "check",
+        "points": 1
+      }
     ],
     "bands": [
-      { "max": 1, "label": "Low severity", "tone": "ok", "note": "Around 1.5% 30-day mortality. Outpatient treatment is usually appropriate." },
-      { "max": 2, "label": "Moderate severity", "tone": "warn", "note": "Around 9% 30-day mortality. Consider admission or supervised outpatient care." },
-      { "max": 999, "label": "High severity", "tone": "high", "note": "Around 22% 30-day mortality. Admit; consider critical care at 4–5." }
+      {
+        "max": 1,
+        "label": "Low severity",
+        "tone": "ok",
+        "note": "Around 1.5% 30-day mortality. Outpatient treatment is usually appropriate."
+      },
+      {
+        "max": 2,
+        "label": "Moderate severity",
+        "tone": "warn",
+        "note": "Around 9% 30-day mortality. Consider admission or supervised outpatient care."
+      },
+      {
+        "max": 999,
+        "label": "High severity",
+        "tone": "high",
+        "note": "Around 22% 30-day mortality. Admit; consider critical care at 4–5."
+      }
     ],
     "citation": "Lim WS, et al. Defining community acquired pneumonia severity on presentation to hospital: an international derivation and validation study. Thorax 2003;58:377-82.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/12728155/",
@@ -278,10 +965,45 @@
       "Derived in community-acquired pneumonia. It is not validated in hospital-acquired or aspiration pneumonia, or in immunocompromised patients."
     ],
     "tests": [
-      { "in": {}, "out": { "score": 0, "band": "Low severity" } },
-      { "in": { "age": true }, "out": { "score": 1, "band": "Low severity" } },
-      { "in": { "age": true, "urea": true }, "out": { "score": 2, "band": "Moderate severity" } },
-      { "in": { "confusion": true, "urea": true, "rr": true, "bp": true, "age": true }, "out": { "score": 5, "band": "High severity" } }
+      {
+        "in": {},
+        "out": {
+          "score": 0,
+          "band": "Low severity"
+        }
+      },
+      {
+        "in": {
+          "age": true
+        },
+        "out": {
+          "score": 1,
+          "band": "Low severity"
+        }
+      },
+      {
+        "in": {
+          "age": true,
+          "urea": true
+        },
+        "out": {
+          "score": 2,
+          "band": "Moderate severity"
+        }
+      },
+      {
+        "in": {
+          "confusion": true,
+          "urea": true,
+          "rr": true,
+          "bp": true,
+          "age": true
+        },
+        "out": {
+          "score": 5,
+          "band": "High severity"
+        }
+      }
     ]
   },
   {
@@ -290,16 +1012,43 @@
     "short": "qSOFA",
     "group": "Risk scores",
     "kernel": "sum",
-    "conditions": ["sepsis"],
+    "conditions": [
+      "sepsis"
+    ],
     "purpose": "A three-item bedside prompt that identifies patients with suspected infection who are at higher risk of a poor outcome.",
     "inputs": [
-      { "id": "rr", "label": "Respiratory rate ≥22 breaths/min", "type": "check", "points": 1 },
-      { "id": "mentation", "label": "Altered mentation (GCS <15)", "type": "check", "points": 1 },
-      { "id": "sbp", "label": "Systolic BP ≤100 mmHg", "type": "check", "points": 1 }
+      {
+        "id": "rr",
+        "label": "Respiratory rate ≥22 breaths/min",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "mentation",
+        "label": "Altered mentation (GCS <15)",
+        "type": "check",
+        "points": 1
+      },
+      {
+        "id": "sbp",
+        "label": "Systolic BP ≤100 mmHg",
+        "type": "check",
+        "points": 1
+      }
     ],
     "bands": [
-      { "max": 1, "label": "Not qSOFA positive", "tone": "ok", "note": "This does not exclude sepsis. A patient with suspected infection who looks unwell needs escalation regardless." },
-      { "max": 999, "label": "qSOFA positive", "tone": "high", "note": "Associated with higher mortality and longer ICU stay in suspected infection. Escalate and investigate." }
+      {
+        "max": 1,
+        "label": "Not qSOFA positive",
+        "tone": "ok",
+        "note": "This does not exclude sepsis. A patient with suspected infection who looks unwell needs escalation regardless."
+      },
+      {
+        "max": 999,
+        "label": "qSOFA positive",
+        "tone": "high",
+        "note": "Associated with higher mortality and longer ICU stay in suspected infection. Escalate and investigate."
+      }
     ],
     "citation": "Singer M, et al. The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3). JAMA 2016;315:801-10.",
     "url": "https://pubmed.ncbi.nlm.nih.gov/26903338/",
@@ -310,10 +1059,349 @@
       "Use your institution's escalation trigger — in most UK and Australian hospitals that is NEWS2 or an equivalent track-and-trigger chart, not qSOFA."
     ],
     "tests": [
-      { "in": {}, "out": { "score": 0, "band": "Not qSOFA positive" } },
-      { "in": { "rr": true }, "out": { "score": 1, "band": "Not qSOFA positive" } },
-      { "in": { "rr": true, "sbp": true }, "out": { "score": 2, "band": "qSOFA positive" } },
-      { "in": { "rr": true, "mentation": true, "sbp": true }, "out": { "score": 3, "band": "qSOFA positive" } }
+      {
+        "in": {},
+        "out": {
+          "score": 0,
+          "band": "Not qSOFA positive"
+        }
+      },
+      {
+        "in": {
+          "rr": true
+        },
+        "out": {
+          "score": 1,
+          "band": "Not qSOFA positive"
+        }
+      },
+      {
+        "in": {
+          "rr": true,
+          "sbp": true
+        },
+        "out": {
+          "score": 2,
+          "band": "qSOFA positive"
+        }
+      },
+      {
+        "in": {
+          "rr": true,
+          "mentation": true,
+          "sbp": true
+        },
+        "out": {
+          "score": 3,
+          "band": "qSOFA positive"
+        }
+      }
+    ]
+  },
+  {
+    "id": "weight-dose",
+    "name": "Weight-Based Dose & Volume",
+    "short": "Weight-based dose",
+    "group": "Dosage practice",
+    "kernel": "dose",
+    "conditions": [],
+    "purpose": "Work out the dose for a weight-based order and the volume to measure from a given supply. Do the sum yourself first, then use this to check it.",
+    "inputs": [
+      {
+        "id": "weight",
+        "label": "Patient weight",
+        "type": "number",
+        "units": [
+          [
+            "kg",
+            1
+          ],
+          [
+            "lb",
+            0.45359237
+          ]
+        ],
+        "min": 0.3,
+        "max": 700
+      },
+      {
+        "id": "dose",
+        "label": "Ordered dose (per kg)",
+        "type": "number",
+        "units": [
+          [
+            "",
+            1
+          ]
+        ],
+        "min": 0,
+        "max": 100000
+      },
+      {
+        "id": "doseUnit",
+        "label": "Dose unit",
+        "type": "select",
+        "options": [
+          [
+            "mg/kg",
+            "mg"
+          ],
+          [
+            "mcg/kg",
+            "mcg"
+          ],
+          [
+            "g/kg",
+            "g"
+          ]
+        ]
+      },
+      {
+        "id": "basis",
+        "label": "The order is written as",
+        "type": "select",
+        "options": [
+          [
+            "a single dose",
+            "dose"
+          ],
+          [
+            "a total per day, divided",
+            "day"
+          ]
+        ]
+      },
+      {
+        "id": "freq",
+        "label": "Doses per day (if divided)",
+        "type": "select",
+        "options": [
+          [
+            "1 — once daily",
+            1
+          ],
+          [
+            "2 — q12h / BID",
+            2
+          ],
+          [
+            "3 — q8h / TID",
+            3
+          ],
+          [
+            "4 — q6h / QID",
+            4
+          ],
+          [
+            "6 — q4h",
+            6
+          ]
+        ]
+      },
+      {
+        "id": "strength",
+        "label": "Supply: strength",
+        "type": "number",
+        "units": [
+          [
+            "",
+            1
+          ]
+        ],
+        "min": 0,
+        "max": 1000000
+      },
+      {
+        "id": "strengthUnit",
+        "label": "Strength unit",
+        "type": "select",
+        "options": [
+          [
+            "mg",
+            "mg"
+          ],
+          [
+            "mcg",
+            "mcg"
+          ],
+          [
+            "g",
+            "g"
+          ]
+        ]
+      },
+      {
+        "id": "volume",
+        "label": "Supply: in this volume",
+        "type": "number",
+        "units": [
+          [
+            "mL",
+            1
+          ]
+        ],
+        "min": 0.01,
+        "max": 5000
+      }
+    ],
+    "bands": [
+      {
+        "max": 0.1,
+        "label": "Very small volume — re-check your units",
+        "tone": "warn",
+        "note": "Under 0.1 mL cannot be measured accurately in most syringes, and a volume this small usually means a mcg/mg mix-up. Re-read the order and the vial before drawing anything up."
+      },
+      {
+        "max": 50,
+        "label": "Volume is in the usual measurable range",
+        "tone": "ok",
+        "note": "This checks the ARITHMETIC only. It is not a statement that the dose is correct, safe, or appropriate for this patient."
+      },
+      {
+        "max": 999999,
+        "label": "Large volume — re-check your units",
+        "tone": "warn",
+        "note": "More than 50 mL as a single measured dose is unusual outside an infusion. A g-for-mg slip produces exactly this result."
+      }
+    ],
+    "citation": "Dimensional analysis: dose = weight × ordered dose per kg; volume = dose ÷ concentration. Safety framing follows the Institute for Safe Medication Practices, 'Independent double checks: undervalued and misused' (ISMP Medication Safety Alert!), which recommends double checks be applied judiciously to selected high-alert situations rather than universally.",
+    "url": "https://www.ismp.org/sites/default/files/attachments/2018-04/LTC201506.pdf",
+    "caveats": [
+      "This checks your arithmetic, not the dose. It has no drug knowledge and cannot know a maximum, a minimum, or whether the drug suits this patient. A decimal-point error that happens to produce a measurable volume will pass without complaint. Always check the dose itself against a current drug reference.",
+      "Work it out yourself first, then use this to check. A calculator you drive will faithfully carry your mistake — if you enter mg where the order says mcg, it returns a confident and wrong answer.",
+      "mcg, mg and g is where these calculations actually go wrong. A thousandfold error still looks like an ordinary number. Read the order and the vial label as written, not as you expect them to read.",
+      "'Per day, divided' is not 'per dose'. Giving a whole daily dose as one dose is a two- to four-fold overdose and is the commonest weight-based error there is. Check which one the order specifies before you choose it above.",
+      "Paediatric doses are frequently capped at the adult dose. Weight-based arithmetic does not know that and will scale straight past it in a large child or an adolescent.",
+      "This is a study tool. It is not a substitute for your institution's process — for high-alert medications that includes an independent double check by a second person where your policy requires one, not a second run through the same calculator."
+    ],
+    "tests": [
+      {
+        "in": {
+          "weight": 70,
+          "dose": 5,
+          "doseUnit": "mg",
+          "basis": "dose",
+          "strength": 50,
+          "strengthUnit": "mg",
+          "volume": 1
+        },
+        "out": {
+          "dose": 350,
+          "doseUnit": "mg",
+          "volume": 7
+        }
+      },
+      {
+        "in": {
+          "weight": 154,
+          "weight_unit": "lb",
+          "dose": 5,
+          "doseUnit": "mg",
+          "basis": "dose",
+          "strength": 50,
+          "strengthUnit": "mg",
+          "volume": 1
+        },
+        "out": {
+          "dose": 349.27,
+          "doseUnit": "mg",
+          "volume": 6.99
+        }
+      },
+      {
+        "in": {
+          "weight": 20,
+          "dose": 45,
+          "doseUnit": "mg",
+          "basis": "day",
+          "freq": 3,
+          "strength": 250,
+          "strengthUnit": "mg",
+          "volume": 5
+        },
+        "out": {
+          "dose": 300,
+          "doseUnit": "mg",
+          "volume": 6
+        }
+      },
+      {
+        "in": {
+          "weight": 20,
+          "dose": 45,
+          "doseUnit": "mg",
+          "basis": "dose",
+          "strength": 250,
+          "strengthUnit": "mg",
+          "volume": 5
+        },
+        "out": {
+          "dose": 900,
+          "doseUnit": "mg",
+          "volume": 18
+        }
+      },
+      {
+        "in": {
+          "weight": 60,
+          "dose": 2,
+          "doseUnit": "mcg",
+          "basis": "dose",
+          "strength": 100,
+          "strengthUnit": "mcg",
+          "volume": 2
+        },
+        "out": {
+          "dose": 120,
+          "doseUnit": "mcg",
+          "volume": 2.4
+        }
+      },
+      {
+        "in": {
+          "weight": 50,
+          "dose": 0.1,
+          "doseUnit": "g",
+          "basis": "dose",
+          "strength": 500,
+          "strengthUnit": "mg",
+          "volume": 10
+        },
+        "out": {
+          "dose": 5,
+          "doseUnit": "g",
+          "volume": 100
+        }
+      },
+      {
+        "in": {
+          "weight": 3.2,
+          "dose": 10,
+          "doseUnit": "mcg",
+          "basis": "dose",
+          "strength": 1,
+          "strengthUnit": "mg",
+          "volume": 1
+        },
+        "out": {
+          "dose": 32,
+          "doseUnit": "mcg",
+          "volume": 0.032
+        }
+      },
+      {
+        "in": {
+          "weight": 70,
+          "dose": 5,
+          "doseUnit": "mg",
+          "basis": "dose"
+        },
+        "out": {
+          "dose": 350,
+          "doseUnit": "mg",
+          "volume": null
+        }
+      }
     ]
   }
 ]

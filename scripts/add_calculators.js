@@ -104,7 +104,11 @@ function calcOneHTML(id){
        '<span class="calc-pts">'+(inp.points>0?'+':'')+inp.points+'</span></label>';
    } else if(inp.type==='select'){
      out+='<label class="calc-row"><span class="calc-lab">'+calcEsc(inp.label)+'</span><select data-cid="'+inp.id+'">';
-     inp.options.forEach(function(o,i){ out+='<option value="'+o[1]+'"'+(i===0?' selected':'')+'>'+calcEsc(o[0])+' ('+(o[1]>0?'+':'')+o[1]+')</option>'; });
+     /* Show the point value only on a score. On the dosage calculator the option
+        values are unit strings, and "(mg)" appended to "mg/kg" reads as noise. */
+     inp.options.forEach(function(o,i){
+       var pts=(c.kernel==='sum'&&typeof o[1]==='number')?' ('+(o[1]>0?'+':'')+o[1]+')':'';
+       out+='<option value="'+calcEsc(o[1])+'"'+(i===0?' selected':'')+'>'+calcEsc(o[0])+pts+'</option>'; });
      out+='</select></label>';
    } else {
      out+='<label class="calc-row"><span class="calc-lab">'+calcEsc(inp.label)+'</span><span class="calc-inwrap">'+
@@ -145,7 +149,9 @@ function calcInit(id){
    form.querySelectorAll('[data-cid]').forEach(function(el){
      var k=el.getAttribute('data-cid');
      if(el.type==='checkbox') v[k]=el.checked;
-     else if(el.tagName==='SELECT') v[k]=Number(el.value);
+     /* A select carries either a score (CHA2DS2-VASc age) or a unit string
+        ("mg"). Coercing everything to Number turned "mg" into NaN. */
+     else if(el.tagName==='SELECT'){ var n=Number(el.value); v[k]=(el.value!==''&&!isNaN(n))?n:el.value; }
      else if(el.value!=='') v[k]=Number(el.value);
    });
    form.querySelectorAll('[data-unit]').forEach(function(el){ v[el.getAttribute('data-unit')+'_unit']=el.value; });
@@ -153,6 +159,11 @@ function calcInit(id){
  }
  function render(){
    var v=read(), r;
+   /* "Doses per day" is meaningless unless the order is written per day, and a
+      stray value in it is exactly the confusion this calculator exists to
+      prevent. Hide it rather than let it sit there looking applicable. */
+   var fq=form.querySelector('[data-cid="freq"]');
+   if(fq&&fq.closest('.calc-row')) fq.closest('.calc-row').style.display=(v.basis==='day')?'':'none';
    try{ r=calcRun(c,v); }catch(e){ r=null; }
    if(!r){ outEl.className='calc-out'; outEl.innerHTML='<div class="calc-empty">Enter the values above.</div>'; workEl.textContent=''; return; }
    if(r.error){ outEl.className='calc-out tone-high'; outEl.innerHTML='<div class="calc-empty">'+calcEsc(r.error)+'</div>'; workEl.textContent=''; return; }
@@ -161,12 +172,21 @@ function calcInit(id){
    var head;
    if(c.kernel==='bmiBsa') head='<div class="calc-big">'+r.bmi+' <span>kg/m\\u00b2</span></div><div class="calc-second">BSA '+r.bsa+' m\\u00b2 (Mosteller)</div>';
    else if(c.kernel==='map') head='<div class="calc-big">'+r.value+' <span>mmHg</span></div>';
+   /* Dose and volume are two answers. Lead with the volume once the supply is
+      known, because that is the number being measured; show the dose alone
+      until then rather than waiting for all four fields. */
+   else if(c.kernel==='dose') head=(r.volume===null
+     ? '<div class="calc-big">'+r.dose+' <span>'+calcEsc(r.doseUnit)+'</span></div>'
+     : '<div class="calc-big">'+r.volume+' <span>mL</span></div><div class="calc-second">Dose '+r.dose+' '+calcEsc(r.doseUnit)+' per administration</div>');
    else head='<div class="calc-big">'+r.score+' <span>point'+(r.score===1?'':'s')+'</span></div>';
    outEl.innerHTML=head+'<div class="calc-band">'+calcEsc(b.label||'')+'</div>'+
      (b.note?'<div class="calc-bnote">'+calcEsc(b.note)+'</div>':'');
    /* Show the arithmetic, not just the answer -- on a teaching tool the
       derivation is the content and the number is the by-product. */
-   if(c.kernel==='sum'){
+   /* A kernel that returns its own working (the dosage calculator) owns the
+      derivation, so the tests assert on the same strings the student reads. */
+   if(r.work){ workEl.innerHTML=r.work.map(calcEsc).join('<br>'); }
+   else if(c.kernel==='sum'){
      var parts=[];
      c.inputs.forEach(function(inp){
        if(inp.type==='check'&&v[inp.id]) parts.push(calcEsc(inp.label)+'  '+(inp.points>0?'+':'')+inp.points);
