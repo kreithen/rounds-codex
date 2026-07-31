@@ -1,6 +1,6 @@
 {
  "batch": "2026-07-31 neurology",
- "source": "75 pages uploaded in chat",
+ "source": "80 pages uploaded in chat (75 + 5 Guillain-Barre follow-up)",
  "verified": "OCR page numbers agree with the contact-sheet read on 72/75; 3 unreadable by OCR and taken from the sheet. No disagreements.",
  "galleries": {
   "meningitis": {
@@ -117,13 +117,18 @@
   },
   "gbs": {
    "header_label": "Guillain-Barre Syndrome",
-   "complete": false,
+   "complete": true,
    "pages": {
     "1": "7ba534fa",
     "2": "37b2081d",
     "3": "a3ecc503",
     "4": "68578233",
-    "5": "6d211dfe"
+    "5": "6d211dfe",
+    "6": "3487b78c",
+    "7": "1c2fd97b",
+    "8": "ff376ef1",
+    "9": "dfd2ef5d",
+    "10": "5714a0ed"
    }
   }
  }
