@@ -562,6 +562,19 @@ without explicit permission. Do NOT open a PR unless the user asks.
   ONE filled dot at the current page; C. difficile renders them cumulatively and offset, and AKI
   pages 2/6/7 and BPH page 2 fill two. Cosmetic, but visible on every card and inconsistent with
   the other galleries — flag for re-render rather than repainting artwork.
+- **Do NOT try to repaint the header progress dots — this was attempted and failed (2026-07-31).**
+  The advice above ("flag for re-render rather than repainting artwork") is load-bearing. The
+  neurology batch had the dots wrong two ways at once: the COUNT is not the page total (11–13 dots
+  on a 10-page gallery, wrong even on pages whose fill is right) and Alzheimer's, Parkinson's and
+  Guillain-Barré fill them CUMULATIVELY. A repainter was written that detected the row by
+  autocorrelation, sampled the ring grey and disc cyan off the page itself, rebuilt the background
+  by interpolating the rows above and below, and refused to touch a page it could not read cleanly.
+  It still produced visibly damaged pages: half-erased dots left as "U" shapes and cumulative fills
+  surviving underneath. It skipped 31 of 80 as unreadable. **Deleted rather than kept.**
+  Five earlier detection attempts also failed (fixed-fraction crops, greyscale blob fill, cyan
+  saturation, pixel clustering, even-spacing scan) — the header's y position drifts tens of pixels
+  between pages, which defeats every fixed-geometry approach. What DOES work reliably is reading
+  the dots by eye off the contact sheet `triage_incoming_gallery.py` writes.
 - **`scripts/build_galleries_from_images.py`** is the post-content-split builder: pages to
   `assets/<id>/<id>-NN.jpg` q88, thumbs to the flat `gthumbs/` at 320px q82, compact PDF, and the
   `content/galleries.json` entry plus the id in `real`. `add_gallery.js` predates the split and
