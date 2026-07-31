@@ -1,0 +1,752 @@
+[
+{
+"id": "s2ck-0086",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic supine ABDOMINAL RADIOGRAPH (KUB) of an elderly adult, grayscale with DICOM-like diagnostic dynamic range, anatomically correct bowel gas pattern and bony pelvis/spine. Depict a SIGMOID VOLVULUS: a MASSIVELY DILATED, air-filled INVERTED-U (\"COFFEE-BEAN\") sigmoid colon loop arising from the pelvis and projecting up toward the RIGHT UPPER QUADRANT, its two limbs apposed with a dense central cleft line (the opposed medial walls) forming the coffee-bean cleft, and the apex reaching high under the diaphragm. There is proximal large-bowel dilation, while the rest of the abdomen shows relatively less gas. No free air under the diaphragm. Correct pelvic bones and lumbar spine rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0088",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial NONCONTRAST CT of the abdomen (stone-protocol) in diagnostic grayscale, soft-tissue window, radiologically accurate retroperitoneal anatomy with realistic CT noise and no intravenous contrast. Depict an OBSTRUCTING URETERAL STONE: a dense, bright, high-attenuation CALCULUS (about 9 mm) lodged at the RIGHT URETEROPELVIC JUNCTION, with upstream HYDRONEPHROSIS shown as a dilated, fluid-filled (low-density) renal pelvis and calyces of the right kidney; associated perinephric fat stranding suggests an inflamed, obstructed system. The left kidney and collecting system are normal and non-dilated for contrast, and the aorta and vertebral body appear normal without vascular opacification. Correct axial abdominal anatomy. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0093",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic TRANSABDOMINAL OBSTETRIC ULTRASOUND image, grayscale curvilinear sector field with realistic fine speckle texture and DICOM-like appearance, sagittal midline view of the lower uterine segment showing the maternal bladder anteriorly, the cervix, and the internal cervical os. Depict PLACENTA PREVIA: homogeneous, mid-gray PLACENTAL tissue implanted in the lower uterine segment that COMPLETELY COVERS the INTERNAL CERVICAL OS, bridging across from anterior to posterior over the closed cervical canal, with the fetal presenting part displaced upward above the placenta. The cervix is long and closed beneath the placenta. Realistic ultrasound gain gradient and depth shadowing. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0095",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic PELVIC ULTRASOUND image of the uterus, grayscale sector field with realistic fine speckle texture and DICOM-like appearance, sagittal view showing the uterine body, endometrial stripe, and myometrium. Depict UTERINE LEIOMYOMATA (fibroids): MULTIPLE well-circumscribed, rounded, predominantly HYPOECHOIC INTRAMURAL masses embedded in the myometrium, some with faint internal whorled heterogeneity and subtle posterior acoustic shadowing, ENLARGING the uterus and DISTORTING its normally smooth CONTOUR into a lumpy, irregular outline; the central endometrial echo may be displaced or bowed by the nearest mass. The overall uterus is enlarged but the masses are discrete and rounded. Realistic ultrasound gain gradient and depth. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0053",
+"ar": "4:3",
+"topic": "",
+"prompt": "Clean vector-style scientific FOREST PLOT on a white background, high-resolution journal-figure clarity, a single vertical LINE OF NO EFFECT at risk ratio 1.0 on a horizontal axis. Show EIGHT stacked trial rows, each a small square DATA MARKER (with the marker size varying to suggest study weight) and a horizontal CONFIDENCE-INTERVAL whisker; the individual point estimates scatter around the left of 1.0 and SEVERAL of the individual confidence intervals visibly CROSS the vertical line of no effect (1.0). At the bottom, a POOLED SUMMARY DIAMOND is centered to the LEFT of the line at a risk ratio of about 0.82 with its narrow width spanning roughly 0.74 to 0.91, lying ENTIRELY to the left of 1.0 (not touching the line). The layout is a tidy grid of rows with the summary diamond clearly larger and distinct. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0064",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial CT PULMONARY ANGIOGRAM (CTPA) in diagnostic grayscale, contrast-enhanced pulmonary window/soft-tissue window blend, radiologically accurate mediastinal and hilar anatomy with the pulmonary arteries brightly opacified by intravenous contrast and realistic CT noise. Depict an ACUTE PULMONARY EMBOLISM: a discrete, low-attenuation (dark gray) intraluminal FILLING DEFECT within the brightly enhancing RIGHT MAIN PULMONARY ARTERY, partially surrounded by a thin rim of contrast (the polo-mint/railway-track appearance), representing acute thrombus. The left pulmonary artery and aorta are normally opacified for contrast; the lungs show no large consolidation. Correct axial thoracic cross-sectional anatomy. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0067",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic LATERAL soft-tissue neck radiograph of a young child, grayscale with DICOM-like diagnostic dynamic range, realistic airway-column and soft-tissue densities and correct pediatric cervical anatomy. Show the THUMBPRINT SIGN of acute EPIGLOTTITIS: a markedly ENLARGED, ROUNDED, thickened EPIGLOTTIS bulging into the airway at the base of the tongue, shaped like a distal THUMB pressed into the hypopharyngeal air column, with thickened aryepiglottic folds and loss of the normal thin, curved (little-finger) epiglottic outline. The vallecula is obliterated, the prevertebral soft tissues are not markedly widened, and the subglottic trachea is normal. Cervical vertebrae, mandible, and the air column correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0068",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic TRANSVAGINAL OBSTETRIC ULTRASOUND image, grayscale sector field with realistic fine speckle texture and correct endocavitary probe geometry and depth gradient, sagittal view of the cervix and lower uterine segment with the closed cervical canal clearly displayed. Depict PLACENTA PREVIA: homogeneous mid-gray PLACENTAL tissue in the lower uterine segment that COMPLETELY COVERS and bridges across the INTERNAL CERVICAL OS, extending from one side of the closed cervical canal to the other, with the long closed cervix seen beneath the placenta. The transvaginal view resolves the internal os and lower placental edge crisply. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0087",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial CONTRAST-ENHANCED CT of the abdomen and pelvis in diagnostic grayscale, soft-tissue window, radiologically accurate right-lower-quadrant anatomy with contrast-opacified bowel and vessels and realistic CT noise. Depict ACUTE UNCOMPLICATED APPENDICITIS: a DILATED, fluid-filled, NON-FILLING (no luminal contrast/air) tubular blind-ending APPENDIX in the right lower quadrant measuring about 11 mm in diameter, with an enhancing thickened wall, surrounded by inflammatory PERIAPPENDICEAL FAT STRANDING (hazy increased density in the adjacent mesenteric fat). There is NO extraluminal free air, no abscess collection, and no free fluid pocket indicating perforation. Adjacent cecum, iliac vessels, and bony pelvis correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0089",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial CONTRAST-ENHANCED CT ANGIOGRAM of the abdomen in diagnostic grayscale, soft-tissue window, radiologically accurate retroperitoneal anatomy with a brightly opacified aortic lumen and realistic CT noise. Depict an ABDOMINAL AORTIC ANEURYSM: a FUSIFORM (symmetric circumferential) dilation of the INFRARENAL abdominal AORTA measuring about 5.6 cm in maximal outer diameter, with a brightly enhancing central patent LUMEN surrounded by a crescent of lower-density MURAL THROMBUS and a thin peripheral rim of calcification in the wall. There is NO contrast EXTRAVASATION beyond the wall, no periaortic hematoma, and clean surrounding retroperitoneal fat (intact, unruptured). The vertebral body, kidneys, and bowel are correctly rendered for context. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0090",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic OTOSCOPIC photograph of a young child's TYMPANIC MEMBRANE viewed down the ear canal through a speculum, natural clinical otoscope color and illumination with a realistic circular field of view framed by the pink external auditory canal wall. Depict ACUTE OTITIS MEDIA: a markedly BULGING, convex, ERYTHEMATOUS (red-to-yellow) and OPACIFIED tympanic membrane whose normal translucency is lost, so the malleus handle and bony landmarks are obscured and the normal cone-shaped LIGHT REFLEX is ABSENT or fragmented; a purulent middle-ear effusion behind the drum gives a full, tense, outwardly bulging contour. Correct ear-canal anatomy and realistic moist mucosal sheen. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0101",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic TRANSTHORACIC ECHOCARDIOGRAM in diagnostic grayscale, sector ultrasound field with realistic fine speckle texture and DICOM-like appearance, parasternal long-axis view of the left ventricular outflow tract, aortic root, and left atrium. Depict SEVERE CALCIFIC AORTIC STENOSIS: markedly THICKENED, densely CALCIFIED (brightly echogenic) aortic valve leaflets with restricted opening and reduced systolic excursion (doming/immobile cusps), a concentrically HYPERTROPHIED left ventricle, and a normal-sized left atrium. Include, as a paired continuous-wave Doppler panel, a dense systolic spectral envelope with a high peak velocity around 4.6 m/s. Realistic ultrasound gain gradient, depth shadowing behind the calcified valve, and sector edges. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0105",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic frontal PA CHEST RADIOGRAPH of an adult, grayscale with DICOM-like diagnostic dynamic range and correct thoracic anatomy. Depict a moderate LEFT-SIDED PARAPNEUMONIC PLEURAL EFFUSION: homogeneous increased opacity over the LEFT lower hemithorax with BLUNTING/obliteration of the left costophrenic angle and a partly concave upper border (meniscus), plus a more loculated, non-dependent lenticular pocket of pleural fluid that does not simply layer along the lateral chest wall, suggesting loculation. There is adjacent left basal air-space consolidation from the resolving pneumonia; the mediastinum is not markedly shifted. The right lung, heart border, and bony thorax are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0111",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic CAROTID DUPLEX ULTRASOUND image, grayscale linear-probe longitudinal view of the carotid bifurcation with realistic fine speckle texture and DICOM-like appearance, with a color-Doppler box over the vessel and a paired spectral Doppler waveform panel below. Depict severe (~80%) INTERNAL CAROTID ARTERY STENOSIS: a heterogeneous, partly calcified atherosclerotic PLAQUE narrowing the residual lumen of the proximal internal carotid artery, with a focal high-velocity color-Doppler jet showing aliasing/mosaic turbulence at the narrowest point; the spectral waveform demonstrates a markedly ELEVATED PEAK SYSTOLIC VELOCITY with spectral broadening (filling-in) through the stenosis. Realistic ultrasound gain gradient and depth. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0112",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic DIAGNOSTIC MAMMOGRAM in grayscale with DICOM-like high dynamic range, correct fibroglandular breast parenchymal texture and skin line, single-breast view. Depict a SUSPICIOUS BREAST CARCINOMA: a high-density, irregular SPICULATED MASS in the upper outer breast with radiating stellate spicules infiltrating into the surrounding parenchyma (no smooth well-circumscribed border), associated with a cluster of fine PLEOMORPHIC (varying size and shape) MICROCALCIFICATIONS in and around the mass, plus subtle architectural distortion pulling on adjacent tissue. The remaining breast parenchyma, skin, and pectoral margin are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0114",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic supine NEONATAL ABDOMINAL RADIOGRAPH of a premature infant, grayscale with DICOM-like diagnostic dynamic range, anatomically correct tiny neonatal bowel gas pattern, ribs, and spine. Depict NECROTIZING ENTEROCOLITIS: PNEUMATOSIS INTESTINALIS shown as curvilinear and bubbly lucent (dark) gas lines within the WALL of dilated bowel loops, giving a stippled/train-track intramural gas appearance most prominent in the lower abdomen, together with mild diffuse bowel dilation and separation of loops. There is NO free intraperitoneal air (no lucency under the diaphragm, no football sign), and no portal-venous gas branching over the liver as the dominant feature. Correct neonatal thoracoabdominal anatomy. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0120",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic TRANSVAGINAL OBSTETRIC ULTRASOUND image, grayscale sector field with realistic fine speckle texture, correct endocavitary probe geometry and depth gradient, sagittal view of the uterus. Depict a VIABLE EARLY INTRAUTERINE PREGNANCY: a single well-defined intrauterine GESTATIONAL SAC (anechoic/black fluid) implanted within the echogenic decidualized endometrium, containing a clearly identifiable FETAL POLE/embryo with a yolk sac, appropriate for about 9 weeks; include a paired M-mode strip showing rhythmic FETAL CARDIAC ACTIVITY as a wavy motion trace, confirming viability. The gestational sac is intrauterine (surrounded by myometrium on all sides), the cervix is closed, and there is no large subchorionic hemorrhage effacing the sac. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0101",
+"ar": "4:3",
+"topic": "",
+"prompt": "Clean vector-style scientific RECEIVER OPERATING CHARACTERISTIC (ROC) curve on a white background, high-resolution journal-figure clarity, a square plot with a horizontal axis running from 0 to 1 for 1 minus specificity (false-positive rate) and a vertical axis running from 0 to 1 for sensitivity (true-positive rate). Show a single smooth CURVE that rises steeply from the bottom-left origin and BOWS strongly toward the UPPER-LEFT corner before flattening toward the top-right, enclosing a large area (about 0.88 of the unit square). A straight 45-degree DIAGONAL REFERENCE LINE runs from the bottom-left corner to the top-right corner representing chance discrimination (area 0.50), with the curve lying well ABOVE that diagonal throughout. Tidy axes and gridlines in a clean scientific style. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0102",
+"ar": "4:3",
+"topic": "",
+"prompt": "Clean vector-style scientific KAPLAN-MEIER survival plot on a white background, high-resolution journal-figure clarity, a horizontal axis for time in months (from 0 to about 48) and a vertical axis for survival probability from 0.0 to 1.0. Show TWO descending STEP-FUNCTION survival curves that both begin together at a survival probability of 1.0 at time zero and fall in discrete horizontal-then-vertical steps: an UPPER TREATMENT curve that stays consistently ABOVE a LOWER CONTROL curve throughout follow-up and does not cross it. Mark the point where each curve crosses the 50% survival level, with the treatment curve reaching median survival at about 30 months and the control curve at about 20 months. Add small vertical TICK MARKS along each curve indicating CENSORED patients. Tidy axes and gridlines, clean scientific style. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0123",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial NONCONTRAST HEAD CT in diagnostic grayscale, brain window, radiologically accurate and symmetric skull-base and brain anatomy with realistic CT noise. Depict acute SUBARACHNOID HEMORRHAGE: bright HYPERDENSE (white) BLOOD filling and outlining the normally dark cerebrospinal-fluid spaces of the BASAL (suprasellar) CISTERNS in a star-shaped configuration and extending into both SYLVIAN FISSURES and the interhemispheric fissure, so the CSF cisterns that should be black are instead densely white. The ventricles are not markedly enlarged (or show only early dependent layering of blood), there is no large focal intraparenchymal clot, and the calvarium is intact. Gray-white differentiation preserved elsewhere. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0125",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial CONTRAST-ENHANCED CT of the abdomen and pelvis in diagnostic grayscale, soft-tissue window, radiologically accurate left-lower-quadrant anatomy with contrast-opacified bowel and vessels and realistic CT noise. Depict ACUTE UNCOMPLICATED SIGMOID DIVERTICULITIS: a segment of SIGMOID COLON with circumferential WALL THICKENING and mucosal hyperenhancement, several outpouching air- or contrast-filled DIVERTICULA arising from the wall, and surrounding inflammatory PERICOLIC FAT STRANDING (hazy increased density in the adjacent mesocolic fat). There is NO drainable fluid collection/abscess, NO extraluminal free air, and no contrast extravasation (uncomplicated). Adjacent bladder, iliac vessels, and bony pelvis correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0137",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic ABDOMINAL SERIES of an adult in grayscale with DICOM-like diagnostic dynamic range and correct bowel gas pattern and bony anatomy, presented as a paired SUPINE and UPRIGHT view. Depict ADHESIVE SMALL BOWEL OBSTRUCTION: multiple DILATED loops of SMALL BOWEL arranged centrally in a stepladder pattern, showing the thin complete transverse VALVULAE CONNIVENTES (plicae) that cross the full bowel width, with a paucity of gas in the distal colon and rectum indicating a distal TRANSITION POINT. On the UPRIGHT view show multiple air-fluid levels at different heights within the dilated loops (stepladder appearance). There is NO free air under the diaphragm and no pneumatosis or portal gas suggesting ischemia. Correct lumbar spine and pelvis rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0138",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial CONTRAST-ENHANCED CT of the abdomen and pelvis in diagnostic grayscale, soft-tissue window, radiologically accurate left-lower-quadrant anatomy with contrast-opacified bowel and vessels and realistic CT noise. Depict ACUTE UNCOMPLICATED SIGMOID DIVERTICULITIS: a segment of SIGMOID COLON with circumferential WALL THICKENING and mucosal hyperenhancement, multiple outpouching air- or contrast-filled DIVERTICULA along the wall, and adjacent inflammatory PERICOLIC FAT STRANDING (hazy increased density in the mesocolic fat). There is NO drainable abscess, NO extraluminal free air, and no contrast extravasation or perforation (uncomplicated). Adjacent bladder, iliac vessels, and bony pelvis correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0141",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic ABDOMINAL ULTRASOUND image of a toddler's right abdomen, grayscale sector/linear field with realistic fine speckle texture and DICOM-like appearance, transverse orientation. Depict ILEOCOLIC INTUSSUSCEPTION: a rounded bowel-within-bowel mass shown in cross-section as the classic TARGET (DOUGHNUT) SIGN - multiple CONCENTRIC alternating hyperechoic (bright) and hypoechoic (dark) RINGS formed by the telescoped layers of bowel wall and intervening mesentery, with a brighter central echogenic core (the invaginated mesentery/mucosa) surrounded by a thicker hypoechoic outer rim of edematous bowel wall. Adjacent normal bowel and mesenteric fat provide context. Realistic ultrasound gain gradient and depth. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s1-0226",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial CONTRAST-ENHANCED CT ANGIOGRAM of the chest in diagnostic grayscale, soft-tissue angiographic window, radiologically accurate mediastinal anatomy with brightly contrast-opacified great vessels and realistic CT noise. Depict a STANFORD TYPE A AORTIC DISSECTION: the dilated ASCENDING AORTA is divided by a thin curvilinear INTIMAL FLAP into two contrast-filled channels - a brighter, smaller TRUE LUMEN and a larger, slightly less opacified FALSE LUMEN (double-barrel aorta), with the flap also visible in the descending thoracic aorta on the same slice. The MEDIASTINUM is widened, with a thin rim of periaortic and pericardial fluid. Cardiac chambers, pulmonary vessels, vertebral body, and bony thorax correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s1-0230",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic CT of the chest in diagnostic grayscale demonstrating the pericardium in profile, radiologically accurate cardiac and mediastinal anatomy with realistic CT noise. Depict CONSTRICTIVE PERICARDITIS: a markedly THICKENED PERICARDIUM with dense, brightly CALCIFIED (bone-white) plaques forming a rigid rind that ENCASES the heart, most prominent over the right heart border and along the atrioventricular groove and diaphragmatic surface. The encased cardiac chambers are normal-to-small with a tubular/deformed contour; there may be mild dilation of the inferior vena cava. The lungs are clear and the bony thorax is correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s1-0231",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic TRANSTHORACIC ECHOCARDIOGRAM in diagnostic grayscale, sector ultrasound field with realistic fine speckle texture and DICOM-like appearance, apical four-chamber view showing both atria and ventricles and the mitral and tricuspid valves. Depict a LEFT ATRIAL MYXOMA: a well-defined, lobulated, mobile ECHOGENIC MASS occupying much of the enlarged LEFT ATRIUM, attached by a narrow STALK (pedicle) to the INTERATRIAL SEPTUM near the fossa ovalis, PROLAPSING through the open mitral valve into the left ventricle in diastole (caught mid-prolapse across the mitral annulus). The remaining chambers, myocardium, and valves are correctly rendered. Realistic ultrasound gain gradient, depth shadowing, and sector edges. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s1-0236",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic catheter DIGITAL SUBTRACTION ANGIOGRAM of a renal artery in grayscale on a subtracted (uniform pale) background, high-resolution vascular-imaging realism, showing a contrast-opacified renal artery arising from the aorta and coursing to the kidney. Depict FIBROMUSCULAR DYSPLASIA (medial fibroplasia): the MID-TO-DISTAL RENAL ARTERY shows a classic STRING-OF-BEADS appearance - a run of alternating short focal STENOSES and intervening ANEURYSMAL DILATIONS (the beaded segments wider than the normal proximal artery), sparing the ostium/proximal segment. The intrarenal branches beyond the beading are correctly rendered; the aorta and catheter tip appear at the origin. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s1-0239",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic RIGHT UPPER QUADRANT ULTRASOUND image, grayscale sector field with realistic fine speckle texture and DICOM-like appearance, longitudinal view of the gallbladder. Depict ACUTE CALCULOUS CHOLECYSTITIS: one or more echogenic GALLSTONES within the gallbladder lumen casting clean posterior ACOUSTIC SHADOWS, a THICKENED gallbladder WALL (over 3 mm, sometimes with a striated/hypoechoic layered appearance from edema), and a thin rim of anechoic PERICHOLECYSTIC FLUID adjacent to the wall. The gallbladder is mildly distended; adjacent liver parenchyma provides context. Realistic ultrasound gain gradient, depth shadowing behind the stones, and sector edges. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s1-0240",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial CONTRAST-ENHANCED CT of the abdomen and pelvis in diagnostic grayscale, soft-tissue window, radiologically accurate left-lower-quadrant anatomy with contrast-opacified bowel and vessels and realistic CT noise. Depict ACUTE SIGMOID DIVERTICULITIS: a segment of SIGMOID COLON studded with multiple outpouching air- or contrast-filled DIVERTICULA, focal circumferential WALL THICKENING with mucosal hyperenhancement, and adjacent inflammatory PERICOLIC FAT STRANDING (hazy increased density in the mesocolic fat). No drainable abscess, no extraluminal free air, and no contrast extravasation (uncomplicated). Adjacent bladder, iliac vessels, and bony pelvis correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s1-0242",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic MAGNETIC RESONANCE CHOLANGIOPANCREATOGRAPHY (MRCP) maximum-intensity-projection image, heavily T2-weighted so that bile and pancreatic fluid appear BRIGHT WHITE against a dark background, anatomically accurate biliary tree branching from the liver to the common bile duct and the pancreatic duct. Depict PRIMARY SCLEROSING CHOLANGITIS: the INTRAHEPATIC and EXTRAHEPATIC bile ducts show MULTIFOCAL short annular STRICTURES alternating with intervening mildly DILATED segments, producing a BEADED, pruned-tree appearance with irregular caliber and skip areas; some peripheral intrahepatic radicles appear pruned/attenuated. The gallbladder and pancreatic duct are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s1-0244",
+"ar": "4:3",
+"topic": "",
+"prompt": "Clean vector-style scientific RECEIVER OPERATING CHARACTERISTIC (ROC) curve on a white background, high-resolution journal-figure clarity, a square plot with a horizontal axis running from 0 to 1 for 1 minus specificity (false-positive rate) and a vertical axis running from 0 to 1 for sensitivity (true-positive rate). Show a single smooth CURVE that rises steeply from the bottom-left origin and BOWS strongly toward the UPPER-LEFT corner before flattening toward the top-right, enclosing a large area under the curve. A straight 45-degree DIAGONAL REFERENCE LINE runs from the bottom-left corner to the top-right corner representing chance discrimination (area 0.50), with the curve lying well ABOVE that diagonal throughout. Tidy axes and gridlines in a clean scientific style. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s1-0247",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic TRANSVAGINAL PELVIC ULTRASOUND image, grayscale sector field with realistic fine speckle texture, correct endocavitary probe geometry and depth gradient. Depict a right TUBAL ECTOPIC PREGNANCY: an EMPTY UTERINE CAVITY with a thin echogenic endometrial stripe and NO intrauterine gestational sac, and separately, in the RIGHT ADNEXA lateral to the uterus, a COMPLEX ADNEXAL MASS containing a rounded extrauterine GESTATIONAL SAC (a small anechoic sac with an echogenic tubal-ring wall, possibly a yolk sac) distinct from the ovary. A small amount of anechoic free fluid may sit in the cul-de-sac. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s1-0252",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial NONCONTRAST HEAD CT in diagnostic grayscale, brain window, radiologically accurate and symmetric skull-base and brain anatomy with realistic CT noise. Depict acute SUBARACHNOID HEMORRHAGE: bright HYPERDENSE (white) BLOOD filling and outlining the normally dark cerebrospinal-fluid spaces of the BASAL (suprasellar) CISTERNS in a star-shaped configuration and extending into both SYLVIAN FISSURES and the interhemispheric fissure, so the CSF cisterns that should be black are instead densely white. The ventricles are not markedly enlarged (or show only early dependent layering of blood), there is no large focal intraparenchymal clot, and the calvarium is intact. Gray-white differentiation preserved elsewhere. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s1-0253",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial T2-WEIGHTED BRAIN MRI in diagnostic grayscale, radiologically accurate posterior-fossa anatomy (pons, cerebellum, fourth ventricle, basilar artery) with realistic MRI texture. Depict CENTRAL PONTINE MYELINOLYSIS (osmotic demyelination): a SYMMETRIC, well-demarcated T2-HYPERINTENSE (bright) lesion occupying the CENTRAL PONS in a rounded trident/bat-wing configuration, characteristically SPARING a rim of PERIPHERAL pons and the corticospinal tracts ventrolaterally. There is no mass effect or hemorrhage; the cerebellum, midbrain, and fourth ventricle are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s1-0260",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic plain SKELETAL RADIOGRAPH of a young child in grayscale with DICOM-like diagnostic dynamic range and anatomically correct bones. Depict OSTEOPETROSIS: DIFFUSELY DENSE, uniformly SCLEROTIC (bright white) bones with markedly increased radiodensity, OBLITERATION of the normal lucent MEDULLARY (marrow) CAVITY, and a classic BONE-IN-BONE (endobone) appearance where a smaller dense bone appears nested within the outline of the larger bone. Metaphyses may show an Erlenmeyer-flask-like widening; cortical-medullary differentiation is lost. Correct pediatric skeletal proportions and joints rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s1-0262",
+"ar": "4:3",
+"topic": "",
+"prompt": "Hyperrealistic clinical DERMATOLOGY PHOTOGRAPH of an adult with a severe drug reaction, natural clinical lighting and true-to-life skin tones. Depict STEVENS-JOHNSON SYNDROME / TOXIC EPIDERMAL NECROLYSIS: widespread DUSKY, purpuric TARGETOID MACULES coalescing into ill-defined patches on the trunk, with areas of FLACCID BULLAE and sheets of superficial EPIDERMAL DETACHMENT that peel away to leave raw, moist, denuded dermis (positive Nikolsky sign), affecting a limited but significant portion of the body surface. Prominent MUCOSAL involvement: hemorrhagic crusting and erosions of the LIPS and oral mucosa, with red crusted conjunctivae. The skin looks acutely ill and tender, not scaly or chronic. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s1-0264",
+"ar": "4:3",
+"topic": "",
+"prompt": "Hyperrealistic clinical DERMATOLOGY PHOTOGRAPH of the posterior NECK of an obese adolescent, natural clinical lighting and true-to-life skin tones. Depict ACANTHOSIS NIGRICANS: symmetric, ill-defined, VELVETY, HYPERPIGMENTED (brown-to-gray) THICKENED plaques in the skin folds of the nape and sides of the neck, with an accentuated, slightly rugose/verrucous surface texture and skin-line accentuation, and several small pedunculated SKIN TAGS (acrochordons) at the margins. The changes are dry and velvety (not moist, blistered, or eroded) and blend gradually into normal surrounding skin. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s1-0280",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial BRAIN MRI in diagnostic grayscale, radiologically accurate supratentorial anatomy with the lateral ventricles and cerebral cortex and realistic MRI texture. Depict TUBEROUS SCLEROSIS COMPLEX: several small, rounded SUBEPENDYMAL NODULES projecting into the lateral ventricles along the caudothalamic margins (candle-guttering appearance) with signal consistent with CALCIFICATION, together with multiple CORTICAL/SUBCORTICAL TUBERS seen as broadened, T2/FLAIR-hyperintense expanded gyri with blurred gray-white junctions. The ventricles are not markedly enlarged and there is no dominant enhancing mass at the foramen of Monro. Symmetric skull and brain anatomy rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0127",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial CT of the abdomen in diagnostic grayscale, soft-tissue window, radiologically accurate upper-abdominal anatomy (liver, spleen, kidneys, both adrenal glands, aorta, and inferior vena cava) with realistic CT noise. Depict a BENIGN LIPID-RICH ADRENAL ADENOMA: a small (about 2.5 cm), WELL-CIRCUMSCRIBED, ROUND, HOMOGENEOUS RIGHT ADRENAL NODULE with smooth margins and uniformly LOW attenuation (fat-containing, dark gray/near-water density) without necrosis, calcification, or irregular thick enhancing rim. The contralateral left adrenal limb, kidneys, and other organs appear normal. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0128",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial CONTRAST-ENHANCED CT of the abdomen and pelvis in diagnostic grayscale, soft-tissue window, radiologically accurate anatomy with contrast-opacified bowel and vessels and realistic CT noise. Depict ISCHEMIC COLITIS: a SEGMENTAL length of the DESCENDING/SIGMOID COLON (watershed distribution near the splenic flexure) showing circumferential, symmetric BOWEL-WALL THICKENING with mural edema producing a target/halo appearance of the wall, and adjacent PERICOLONIC FAT STRANDING; the affected segment has a defined transition to normal-caliber colon on either side. There is no discrete obstructing mass, no drainable abscess, and no free air. Small-bowel and other organs correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0129",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic sagittal MRI of the thoracic/thoracolumbar SPINE in diagnostic grayscale, anatomically accurate vertebral bodies, intervertebral discs, spinal cord, and cerebrospinal fluid with realistic MRI texture. Depict PYOGENIC VERTEBRAL OSTEOMYELITIS WITH DISCITIS: TWO ADJACENT VERTEBRAL BODIES showing abnormal T2-HYPERINTENSE (bright) marrow edema with loss of the normal endplate cortical line, DESTRUCTION and narrowing of the INTERVENING DISC space with abnormal bright disc signal, and an early phlegmon/PARASPINAL soft-tissue collection extending anteriorly along the vertebral margins. The disease is centered on a single disc-vertebra-vertebra unit; the cord is not compressed by a large epidural abscess. Adjacent normal vertebrae rendered for contrast. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0135",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic frontal CHEST RADIOGRAPH of an adult in grayscale with DICOM-like diagnostic dynamic range and correct thoracic anatomy. Depict ESOPHAGEAL PERFORATION (BOERHAAVE SYNDROME): PNEUMOMEDIASTINUM shown as thin LUCENT (dark) streaks of air outlining the mediastinal contours and the left heart border, with air tracking superiorly into the soft tissues of the neck (subcutaneous emphysema) as linear lucencies along the supraclavicular/lower-neck region; together with a LEFT-SIDED PLEURAL EFFUSION producing increased opacity and blunting of the left costophrenic angle at the lung base. The lungs are otherwise aerated and the bony thorax is correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0136",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial NONCONTRAST HEAD CT in diagnostic grayscale, brain window, radiologically accurate cranial and brain anatomy with realistic CT noise. Depict an ACUTE SUBDURAL HEMATOMA: a CRESCENT-SHAPED (concave toward the brain), HYPERDENSE (bright white) EXTRA-AXIAL collection over the surface of the RIGHT cerebral convexity that SPREADS along the calvarium and CROSSES cranial suture lines (does not stop at them), producing MASS EFFECT with effacement of the ipsilateral sulci, compression of the right lateral ventricle, and MIDLINE SHIFT of the septum/ventricles toward the left. The calvarium is intact and gray-white differentiation is preserved elsewhere. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0137",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic THYROID ULTRASOUND image, grayscale high-frequency linear-probe field with realistic fine speckle texture and DICOM-like appearance, transverse view of the thyroid lobe adjacent to the trachea and carotid artery. Depict a SUSPICIOUS THYROID NODULE: a SOLID, markedly HYPOECHOIC (darker than surrounding thyroid) nodule that is TALLER-THAN-WIDE with IRREGULAR, spiculated/infiltrative MARGINS and internal punctate ECHOGENIC FOCI (MICROCALCIFICATIONS) casting no clean shadow, without a complete peripheral halo. The adjacent normal thyroid parenchyma, trachea, and common carotid artery are correctly rendered. Realistic ultrasound gain gradient and depth. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0140",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic supine NEONATAL ABDOMINAL RADIOGRAPH of a newborn in grayscale with DICOM-like diagnostic dynamic range and anatomically correct tiny neonatal thoracoabdominal anatomy, ribs, and spine. Depict DUODENAL ATRESIA: the classic DOUBLE-BUBBLE sign - two rounded gas-filled structures in the UPPER abdomen, a larger LEFT-sided bubble (air-distended STOMACH) and a smaller RIGHT-sided bubble (dilated proximal DUODENUM), separated in the midline by the pylorus, with COMPLETE ABSENCE of gas in the distal bowel (a gasless lower abdomen). No pneumatosis, no free air. Correct neonatal skeletal proportions rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0144",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic CARDIOTOCOGRAPHY (fetal monitor) paper STRIP on standard fetal-monitoring grid, showing two stacked channels: an UPPER FETAL HEART RATE tracing (scaled roughly 30-240 bpm) and a LOWER UTERINE CONTRACTION (tocodynamometer) tracing, aligned in time. Depict a CATEGORY III pattern with RECURRENT LATE DECELERATIONS: with each rounded uterine CONTRACTION on the lower channel, the fetal heart rate on the upper channel shows a smooth, symmetric, gradual DECELERATION whose NADIR is OFFSET AFTER the peak of the contraction and which returns to baseline after the contraction ends (late timing), occurring with essentially every contraction; the baseline fetal heart rate shows ABSENT VARIABILITY (a flat, smooth line with no beat-to-beat undulation) around roughly 140 bpm. Clean printed tracing on grid paper. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0151",
+"ar": "4:3",
+"topic": "",
+"prompt": "Clean vector-style scientific FUNNEL PLOT on a white background, high-resolution journal-figure clarity, a scatter plot with the horizontal axis showing the study EFFECT SIZE (with a vertical dashed reference line at the pooled/combined estimate near the center) and the vertical axis showing STANDARD ERROR arranged so that PRECISE studies (small standard error) sit near the TOP and IMPRECISE small studies (large standard error) sit near the BOTTOM. Draw the classic inverted-triangle FUNNEL guideline (two diagonal lines widening downward from the pooled estimate). Plot about 15 study DOTS: near the top they cluster tightly and symmetrically around the pooled-estimate line, but toward the BOTTOM the points are ASYMMETRIC - the LOWER-LEFT region (small studies with unfavorable/negative effects) is conspicuously EMPTY while lower-right points are present, giving a lopsided funnel. Tidy axes and gridlines, clean scientific style. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0174",
+"ar": "4:3",
+"topic": "",
+"prompt": "Hyperrealistic close-up EXTERNAL EYE PHOTOGRAPH of a single human eye, anterior-segment clinical/slit-lamp-style lighting with true-to-life detail. Depict ACUTE ANGLE-CLOSURE GLAUCOMA: intense CONJUNCTIVAL INJECTION with prominent CIRCUMCORNEAL (ciliary) REDNESS most marked around the limbus, a diffusely HAZY, edematous, STEAMY CORNEA that dulls the normal bright corneal reflection and blurs the iris detail, and a FIXED, MID-DILATED (mid-position), non-reactive PUPIL that appears slightly oval and unresponsive. The eye looks acutely inflamed and painful; the lids and lashes appear normal. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0185",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic portable AP CHEST RADIOGRAPH of an adult in grayscale with DICOM-like diagnostic dynamic range and correct thoracic anatomy (portable AP technique with slightly magnified heart). Depict ACUTE CARDIOGENIC PULMONARY EDEMA: bilateral, symmetric, PERIHILAR ALVEOLAR OPACITIES in a central bat-wing distribution fading toward the periphery, with UPPER-LOBE pulmonary vascular redistribution (cephalization), fine peripheral horizontal KERLEY B LINES at the lung bases, indistinct hilar vessels, and an ENLARGED CARDIAC SILHOUETTE (cardiomegaly); small blunting of the costophrenic angles from mild pleural effusions is acceptable. The bony thorax is correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0187",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic RIGHT UPPER QUADRANT ULTRASOUND image, grayscale sector field with realistic fine speckle texture and DICOM-like appearance, longitudinal view of the gallbladder and adjacent porta hepatis. Depict ACUTE CALCULOUS CHOLECYSTITIS: one or more echogenic GALLSTONES in the gallbladder lumen casting clean posterior ACOUSTIC SHADOWS, a THICKENED gallbladder WALL (over 3 mm, with a striated/hypoechoic edematous layered look), and a rim of anechoic PERICHOLECYSTIC FLUID; the adjacent COMMON BILE DUCT is of NORMAL (non-dilated) caliber. The gallbladder is mildly distended and adjacent liver parenchyma provides context. Realistic ultrasound gain gradient, depth shadowing behind the stones, and sector edges. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0189",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial CONTRAST-ENHANCED CT of the abdomen in diagnostic grayscale, portal-venous-phase soft-tissue window, radiologically accurate upper-abdominal anatomy with the spleen, liver, stomach, and kidneys enhancing normally and realistic CT noise. Depict a low-grade BLUNT SPLENIC INJURY: the SPLEEN shows a linear, non-enhancing LACERATION (a dark cleft) extending a short distance into the parenchyma (less than 3 cm deep), with a small crescentic SUBCAPSULAR HEMATOMA (low-density collection) flattening the adjacent splenic contour, and a little perisplenic hemoperitoneum. There is NO bright arterial CONTRAST BLUSH/extravasation and no shattered spleen; the liver, kidneys, and other organs are intact. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0190",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic frontal (AP) soft-tissue NECK RADIOGRAPH of a toddler in grayscale with DICOM-like diagnostic dynamic range and anatomically correct pediatric airway, cervical spine, and soft tissues. Depict CROUP: the air column of the SUBGLOTTIC TRACHEA shows SYMMETRIC, smooth, tapered NARROWING that rises to a pointed apex just below the vocal cords - the classic STEEPLE (pencil-tip / inverted-V) SIGN - replacing the normal squared/shouldered subglottic contour. The remainder of the tracheal air column below is of normal caliber, and there is no retropharyngeal soft-tissue mass. Correct pediatric cervical anatomy rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0153",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic frontal (PA) CHEST RADIOGRAPH of an adult in grayscale with DICOM-like diagnostic dynamic range and anatomically accurate thoracic anatomy. Depict STAGE I SARCOIDOSIS: SYMMETRIC, BILATERAL HILAR LYMPHADENOPATHY - both pulmonary hila enlarged by well-defined, lobulated rounded soft-tissue nodal masses of roughly equal size, with the right paratracheal region also mildly widened. The LUNG FIELDS are CLEAR with no infiltrate, nodules, effusion, or fibrosis, and the cardiac silhouette is normal in size. Correct rib cage, mediastinal contour, diaphragm, and clavicles rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0160",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial CONTRAST-ENHANCED CT of the abdomen in diagnostic grayscale, soft-tissue window, radiologically accurate upper-abdominal anatomy with contrast-opacified vessels and realistic CT noise. Depict PANCREATIC HEAD ADENOCARCINOMA: an ill-defined HYPODENSE (hypoenhancing) MASS in the HEAD of the pancreas, with upstream obstruction producing the DOUBLE-DUCT SIGN - a dilated common bile duct AND a dilated main pancreatic duct - plus dilated intrahepatic bile ducts branching in the liver and a distended gallbladder. The uninvolved pancreatic body/tail, liver, duodenal sweep, aorta, and vertebral body are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0161",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic T2-weighted SAGITTAL MRI of the LUMBAR SPINE in grayscale with DICOM-like tissue contrast, bright cerebrospinal fluid, anatomically accurate vertebral bodies, intervertebral discs, and conus/thecal sac. Depict CAUDA EQUINA SYNDROME from a large CENTRAL DISC HERNIATION: at a lower lumbar level a large disc fragment protrudes POSTERIORLY into the spinal canal, effacing the bright CSF and severely COMPRESSING the THECAL SAC and the descending CAUDA EQUINA nerve roots (near-complete canal stenosis at that level). The herniated disc shows loss of the normal disc T2 signal; adjacent levels and vertebral marrow are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0162",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic ANTEROPOSTERIOR (AP) PELVIS RADIOGRAPH of an older adult in grayscale with DICOM-like diagnostic dynamic range and anatomically accurate bony pelvis, both hips, and proximal femora, with osteopenic (washed-out) bone texture. Depict a DISPLACED RIGHT FEMORAL NECK (subcapital) FRACTURE: a lucent fracture line across the RIGHT femoral NECK with the femoral HEAD displaced and the femoral shaft rotated, producing a DISRUPTED/BROKEN Shenton line and the fragments offset and shortened. The LEFT hip is intact with an intact Shenton line for comparison, and the acetabula, pubic rami, and sacrum are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0166",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial CONTRAST-ENHANCED CT of a young child's abdomen in diagnostic grayscale, soft-tissue window, anatomically accurate pediatric anatomy with contrast-opacified vessels and realistic CT noise. Depict a WILMS TUMOR (nephroblastoma): a large, WELL-CIRCUMSCRIBED, predominantly SOLID heterogeneous MASS arising from and expanding the LEFT KIDNEY, with a thin rim of enhancing residual renal parenchyma stretched around its margin (claw sign) confirming an intrarenal origin. The mass DISPLACES adjacent bowel and the aorta but does NOT cross the midline or encase the vessels; the contralateral right kidney, liver, spine, and bowel are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0171",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic PELVIC ULTRASOUND image in diagnostic grayscale, sector field with realistic fine speckle texture and DICOM-like appearance. Depict a COMPLEX ADNEXAL MASS suspicious for OVARIAN CARCINOMA: a large cystic-and-solid ADNEXAL MASS containing THICK irregular internal SEPTATIONS, echogenic SOLID components, and frond-like intracystic PAPILLARY PROJECTIONS arising from the wall. Surrounding the mass and in the adjacent pelvis is a moderate volume of anechoic FREE FLUID (ASCITES) outlining bowel loops. Realistic ultrasound gain gradient, posterior acoustic enhancement behind the cystic components, and sector edges. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0214",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic frontal (PA) CHEST RADIOGRAPH of a young adult in grayscale with DICOM-like diagnostic dynamic range and anatomically accurate thoracic anatomy. Depict STAGE I SARCOIDOSIS: SYMMETRIC, BILATERAL HILAR LYMPHADENOPATHY - both pulmonary hila enlarged by well-defined, lobulated rounded soft-tissue nodal masses of roughly equal size, with mild right paratracheal widening. The LUNG FIELDS are CLEAR with no infiltrate, effusion, or fibrosis, and the cardiac silhouette is normal in size. Correct rib cage, mediastinal contour, diaphragm, and clavicles rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0218",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic TRANSVAGINAL PELVIC ULTRASOUND image in diagnostic grayscale with a superimposed color-Doppler box, sector field with realistic fine speckle texture and DICOM-like appearance. Depict OVARIAN TORSION: a markedly ENLARGED, edematous, rounded OVARY with heterogeneous hypoechoic stroma and multiple small follicles pushed to the PERIPHERY (peripherally displaced follicles), clearly bigger than a normal ovary. Within the color-Doppler box over the ovary there is DIMINISHED / ABSENT internal color flow signal compared with surrounding tissue. A small amount of anechoic free fluid may sit in the cul-de-sac; adjacent uterus and pelvis are correctly rendered. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0219",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic PELVIC OBSTETRIC ULTRASOUND image in diagnostic grayscale, sector field with realistic fine speckle texture and DICOM-like appearance, longitudinal view of an enlarged uterus. Depict a COMPLETE HYDATIDIFORM MOLE: the ENDOMETRIAL CAVITY is filled and distended by a HETEROGENEOUS ECHOGENIC intrauterine MASS studded with NUMEROUS small anechoic CYSTIC SPACES (vesicles) of varying size - the classic SNOWSTORM / cluster-of-grapes appearance - with NO identifiable fetus, gestational sac, yolk sac, or fetal parts. Bilateral theca-lutein cysts may sit in the adnexa. Realistic ultrasound gain gradient, posterior enhancement behind the cystic spaces, and sector edges. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0234",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic portable ANTEROPOSTERIOR (AP) CHEST RADIOGRAPH of an adult trauma patient in grayscale with DICOM-like diagnostic dynamic range and anatomically accurate thoracic anatomy. Depict a RIGHT-SIDED TENSION PNEUMOTHORAX: the RIGHT hemithorax is markedly LUCENT (hyperlucent, black, avascular) with the collapsed right lung retracted into a small opacified stump at the hilum and a visible sharp visceral pleural edge. There is positive mediastinal pressure - the MEDIASTINUM and TRACHEA are SHIFTED toward the LEFT (contralateral) side, the right hemidiaphragm is DEPRESSED/flattened, and the right intercostal spaces are widened. The left lung is normally aerated with vascular markings; ribs and soft tissues correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0238",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic UPRIGHT (erect) frontal CHEST RADIOGRAPH of an adult in grayscale with DICOM-like diagnostic dynamic range and anatomically accurate thoracic and upper-abdominal anatomy. Depict PNEUMOPERITONEUM from a PERFORATED VISCUS: thin crescents of lucent FREE AIR sit UNDER BOTH HEMIDIAPHRAGMS - a black gas lucency between the domed diaphragm above and the liver on the right and the gastric fundus/spleen on the left below - sharply outlining the smooth undersurface of each diaphragm. The lung fields are clear with no consolidation or effusion, the heart size is normal, and the ribs and soft tissues are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0178",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial HIGH-RESOLUTION CT of the chest in diagnostic grayscale, lung window, anatomically accurate thoracic anatomy with sharp bronchovascular markings and realistic CT noise. Depict a USUAL INTERSTITIAL PNEUMONIA pattern of IDIOPATHIC PULMONARY FIBROSIS: PERIPHERAL, SUBPLEURAL, BASAL-PREDOMINANT reticulation with clustered HONEYCOMBING - stacked subpleural cystic air spaces with well-defined walls - and TRACTION BRONCHIECTASIS (irregularly dilated, distorted airways coursing through fibrotic lung). The abnormality is greatest in the posterior subpleural lung bases and spares the central and upper lung, producing an asymmetric peripheral gradient. Heart, mediastinum, and chest wall correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0185",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic lateral BARIUM ESOPHAGRAM (contrast swallow) in fluoroscopic grayscale with anatomically accurate pharynx, cervical spine, and cervical esophagus, barium column appearing dense white. Depict a ZENKER DIVERTICULUM: at the PHARYNGOESOPHAGEAL JUNCTION (just above the upper esophageal sphincter, at the level of the cricopharyngeus) a POSTERIOR out-pouching (false diverticulum) projects backward and downward and RETAINS a pool of barium, separate from and overhanging the cervical esophagus below. A horizontal cricopharyngeal bar may indent the barium column. The distal esophagus is normal caliber. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0188",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic ABDOMINAL RADIOGRAPH of an older adult in grayscale with DICOM-like dynamic range and anatomically accurate bowel gas pattern. Depict GALLSTONE ILEUS with the RIGLER TRIAD: (1) multiple DILATED SMALL-BOWEL LOOPS centrally with a stepladder of AIR-FLUID LEVELS indicating mechanical small-bowel obstruction; (2) branching lucent gas in the right upper quadrant biliary tree (PNEUMOBILIA) outlining the intrahepatic ducts; and (3) an ECTOPIC ROUNDED CALCIFIED GALLSTONE with a laminated rim lodged in the RIGHT LOWER QUADRANT. Bony pelvis, lumbar spine, and psoas margins correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0191",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic clinical photograph of a well-appearing young child in natural clinic lighting, accurate skin tones and pediatric facial proportions. Depict ERYTHEMA INFECTIOSUM (fifth disease): both CHEEKS show confluent, firm, bright-red erythema with a clear demarcated edge - the SLAPPED-CHEEK appearance - that conspicuously SPARES the nasal bridge, the perioral skin (circumoral pallor), and the periorbital region. On the EXTENSOR surfaces of the arms there is a pink, LACY, RETICULAR (net-like, reticulate) macular rash. The child looks nontoxic and comfortable with no respiratory distress. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0201",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic TRANSTHORACIC ECHOCARDIOGRAM in the PARASTERNAL LONG-AXIS view, diagnostic grayscale sector with realistic speckle texture and a superimposed color-Doppler box, DICOM-like appearance. Depict CHRONIC AORTIC REGURGITATION: a DILATED, rounded LEFT VENTRICLE with the aortic valve and LV outflow tract in view, and during DIASTOLE a broad mosaic color-Doppler REGURGITANT JET originating at the aortic valve and directed BACKWARD into the LV OUTFLOW TRACT toward the anterior mitral leaflet. The left atrium, aortic root, and interventricular septum are correctly rendered; the mitral valve is open in diastole. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0211",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial NONCONTRAST HEAD CT in diagnostic grayscale, brain window, anatomically accurate cranial and brain anatomy with realistic CT noise and a rendered skull. Depict an acute EPIDURAL HEMATOMA: a BICONVEX, LENS-SHAPED (lentiform) HYPERDENSE (bright white, acute blood) extra-axial collection hugging the inner table of the skull over the RIGHT TEMPORAL convexity, its margins bulging inward and sharply confined - it DOES NOT cross the cranial suture lines. There is local MASS EFFECT: effacement of adjacent sulci, compression of the ipsilateral lateral ventricle, and slight MIDLINE SHIFT away from the clot. A subtle overlying temporal skull fracture may be present. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0214",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic frontal (AP) NEONATAL CHEST RADIOGRAPH in grayscale with DICOM-like dynamic range and anatomically accurate small-infant thoracic anatomy. Depict TRANSPOSITION OF THE GREAT ARTERIES: an OVAL / EGG-SHAPED cardiac silhouette (the EGG) sitting on a NARROW SUPERIOR MEDIASTINUM (the STRING) because the great vessels lie anteroposteriorly stacked and the thymus is small - the classic EGG-ON-A-STRING contour. Pulmonary vascular markings are mildly increased. The ribs, clavicles, and diaphragm of a neonate are correctly rendered, with an umbilical or endotracheal line optionally faint. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0219",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic high-power BRIGHTFIELD LIGHT-MICROSCOPY photomicrograph of a SALINE WET-MOUNT vaginal preparation, faint gray-green unstained background with realistic depth of field. Depict TRICHOMONIASIS: several PEAR-SHAPED (ovoid) PROTOZOAL organisms slightly larger than adjacent white cells, each with anterior FLAGELLA and an undulating membrane suggesting motility, scattered among mature squamous EPITHELIAL cells and numerous NEUTROPHILS. The trichomonads are distinct from the surrounding cells, with a visible flagellar tuft at one pole. Realistic wet-mount clarity with a few background debris and bacteria. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0230",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial CONTRAST-ENHANCED CT of the abdomen in diagnostic grayscale, soft-tissue window, radiologically accurate anatomy with contrast-opacified vessels and realistic CT noise. Depict AUTOSOMAL DOMINANT POLYCYSTIC KIDNEY DISEASE: BOTH KIDNEYS are MARKEDLY ENLARGED and almost entirely REPLACED by INNUMERABLE well-defined ROUNDED CYSTS of widely VARYING SIZE (thin-walled, water-density/hypodense), distorting the renal contours bilaterally with little remaining normal parenchyma. Scattered similar CYSTS are also present in the LIVER. The spleen, aorta, bowel, and vertebral body are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0231",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic frontal (PA) CHEST RADIOGRAPH of an adult in grayscale with DICOM-like dynamic range and anatomically accurate thoracic anatomy. Depict REACTIVATION PULMONARY TUBERCULOSIS: in the RIGHT UPPER LOBE (apical/posterior segment) a THICK-WALLED CAVITY - an area of lucency surrounded by a dense irregular wall - with SURROUNDING FIBRONODULAR OPACITIES and patchy consolidation, plus some volume loss elevating the hilum. The remaining lung is relatively clear, the cardiac silhouette is normal, and the ribs, clavicles, and diaphragm are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0232",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic ANTEROPOSTERIOR (AP) PELVIS RADIOGRAPH of a young adult in grayscale with DICOM-like dynamic range and anatomically accurate bony pelvis, both hips, and sacroiliac joints. Depict SACROILIITIS of ANKYLOSING SPONDYLITIS: BILATERAL, roughly SYMMETRIC sacroiliac joint changes - irregular subchondral EROSIONS giving a blurred pseudo-widened joint margin, adjacent reactive SCLEROSIS on both iliac and sacral sides, and PARTIAL JOINT-SPACE NARROWING with early BONY FUSION (ankylosis) bridging the joints. The hips, pubic symphysis, and lumbosacral junction are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0233",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic axial BRAIN MRI, FLAIR sequence, in diagnostic grayscale with suppressed (dark) cerebrospinal fluid, anatomically accurate cerebral anatomy and gray-white differentiation. Depict MULTIPLE SCLEROSIS: MULTIPLE discrete OVOID HYPERINTENSE (bright) white-matter lesions clustered in the PERIVENTRICULAR region, several oriented PERPENDICULAR to the lateral ventricles radiating outward (Dawson fingers), with additional smaller juxtacortical lesions. The lesions are well-demarcated against dark suppressed CSF and normal cortex; ventricles, corpus callosum, and skull are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0236",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic ANTEROPOSTERIOR (AP) SHOULDER RADIOGRAPH of a young adult in grayscale with DICOM-like dynamic range and anatomically accurate glenohumeral, scapular, and clavicular anatomy. Depict an ANTERIOR SHOULDER DISLOCATION: the HUMERAL HEAD is displaced ANTERIORLY and INFERIORLY out of the glenoid fossa and lies in a SUBCORACOID position (below and medial, beneath the coracoid process), so the glenoid articular surface is empty and the humeral head no longer overlaps the glenoid normally. The acromion, clavicle, scapular body, and ribs are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0238",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic DERMOSCOPIC (dermatoscopic) photograph of a pigmented skin lesion at high magnification with polarized-light clarity and accurate skin texture around the lesion. Depict a CUTANEOUS MELANOMA: an ASYMMETRIC pigmented lesion roughly 9 mm across with an IRREGULAR, NOTCHED, poorly-defined BORDER and a strikingly VARIEGATED COLOR palette - admixed BROWN, jet-BLACK, and TAN zones with an off-center darker blotch. Dermoscopic features include an ATYPICAL PIGMENT NETWORK with thickened irregular lines, irregular streaks/pseudopods at the periphery, and blue-gray regression areas. Surrounding skin shows realistic follicular openings. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0241",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic frontal UPPER GI CONTRAST FLUOROSCOPY study of a neonate in grayscale, dense white swallowed contrast outlining the stomach and proximal small bowel, DICOM-like fluoroscopic appearance. Depict INTESTINAL MALROTATION with MIDGUT VOLVULUS: the DUODENUM fails to cross to the left of the midline and the duodenojejunal junction lies abnormally LOW and to the RIGHT of the spine; the proximal jejunum spirals in a tight CORKSCREW / spiral configuration of contrast as it twists, with tapering of the contrast column (beak) at the point of obstruction. The stomach is normally positioned and the neonatal bony thorax and pelvis are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0242",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial CONTRAST-ENHANCED CT of a young child's abdomen in diagnostic grayscale, soft-tissue window, anatomically accurate pediatric anatomy with contrast-opacified vessels and realistic CT noise. Depict a NEUROBLASTOMA: a large, HETEROGENEOUS SUPRARENAL (adrenal) soft-tissue MASS with coarse SPECKLED/STIPPLED CALCIFICATIONS that CROSSES THE MIDLINE and ENCASES and ENGULFS the aorta and adjacent retroperitoneal vessels (vessels seen coursing through the mass rather than displaced). The mass DISPLACES the ipsilateral kidney inferolaterally without arising from within it. The contralateral kidney, liver, spine, and bowel are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0245",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic clinical ANOGENITAL (vulvar) photograph in a clinical examination setting, accurate skin tones and anatomy, tasteful medical framing. Depict LICHEN SCLEROSUS: PORCELAIN-WHITE, IVORY, atrophic, WRINKLED (cigarette-paper) thinned PLAQUES involving the labia minora and majora and extending around the perianal skin in a FIGURE-OF-EIGHT (hourglass) distribution encircling both the vulva and the anus. The skin shows loss of normal architecture with resorption/effacement of the labia minora, waxy sclerotic sheen, and small areas of fissuring and ecchymosis. No vaginal discharge. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0252",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic portable ANTEROPOSTERIOR (AP) CHEST RADIOGRAPH of an intubated adult in grayscale with DICOM-like dynamic range and anatomically accurate thoracic anatomy. Depict ACUTE RESPIRATORY DISTRESS SYNDROME: NEW, BILATERAL, DIFFUSE, symmetric ALVEOLAR (airspace) OPACITIES - hazy confluent ground-glass and consolidative shadowing filling both mid and lower lung zones with air bronchograms - that relatively SPARE the extreme COSTOPHRENIC ANGLES. The CARDIAC SILHOUETTE is NORMAL in size (no cardiomegaly) with no vascular redistribution or pleural effusions. An endotracheal tube sits in the mid-trachea. Ribs and soft tissues correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0253",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic upright frontal BARIUM ESOPHAGRAM (contrast swallow) in fluoroscopic grayscale with anatomically accurate thoracic esophageal course, dense white barium column. Depict ACHALASIA: a DILATED, dilated-and-tortuous thoracic ESOPHAGEAL BODY holding a column of barium (sometimes with a retained food/air-fluid level at the top) that TAPERS SMOOTHLY and symmetrically to a narrow point at the GASTROESOPHAGEAL JUNCTION - the classic BIRD-BEAK narrowing - with little barium passing into the stomach. The narrowing is smooth and symmetric without a shouldered mass. Spine, diaphragm, and gastric bubble correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0257",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic POSTEROANTERIOR (PA) RADIOGRAPH of BOTH HANDS AND WRISTS side by side in grayscale with DICOM-like dynamic range and anatomically accurate carpal, metacarpal, and phalangeal anatomy. Depict RHEUMATOID ARTHRITIS: SYMMETRIC, bilateral involvement of the METACARPOPHALANGEAL (MCP) and PROXIMAL INTERPHALANGEAL (PIP) joints with PERIARTICULAR OSTEOPENIA (locally washed-out bone around the joints), symmetric JOINT-SPACE NARROWING, and MARGINAL BONY EROSIONS at the joint edges (bare-area erosions) with some early ulnar drift; the DISTAL INTERPHALANGEAL (DIP) joints are relatively SPARED. Soft-tissue fusiform swelling around involved joints. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0258",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial NONCONTRAST HEAD CT in diagnostic grayscale, brain window, anatomically accurate cranial and brain anatomy with realistic CT noise and a rendered skull. Depict ANEURYSMAL SUBARACHNOID HEMORRHAGE: HYPERDENSE (bright white) acute BLOOD filling and casting the BASAL CISTERNS in a star-shaped configuration around the suprasellar region and midbrain, and extending into BOTH SYLVIAN FISSURES and the interhemispheric fissure, outlining the normally CSF-dark subarachnoid spaces in white. There may be mild early ventricular dilatation (hydrocephalus) with a little blood layering in the occipital horns. Brain parenchyma and skull correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0259",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic frontal (PA) CHEST RADIOGRAPH of a young adult in grayscale with DICOM-like dynamic range and anatomically accurate thoracic anatomy. Depict HODGKIN LYMPHOMA: a BULKY ANTERIOR/MIDDLE MEDIASTINAL MASS producing SMOOTH, LOBULATED WIDENING of the MEDIASTINUM, more to one side, with well-defined convex borders that silhouette the upper mediastinal contour and may splay the carina. The LUNG FIELDS are clear without focal consolidation, the cardiac silhouette is partly obscured by the superimposed nodal mass, and the ribs, clavicles, and diaphragm are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0260",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic POSTEROANTERIOR (PA) WRIST RADIOGRAPH of a young adult in grayscale with DICOM-like dynamic range and anatomically accurate carpal bones, distal radius/ulna, and metacarpal bases. Depict a SCAPHOID FRACTURE: a thin LUCENT FRACTURE LINE traversing the WAIST (midportion) of the SCAPHOID, with subtle cortical offset and slight fracture-line widening, the rest of the carpal alignment preserved. The scaphoid is highlighted in the radial (thumb-side) proximal carpal row; the lunate, triquetrum, capitate, and distal radius are correctly rendered with normal joint spaces. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0261",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic ABDOMINAL RADIOGRAPH of a young adult in grayscale with DICOM-like dynamic range and anatomically accurate bowel gas pattern. Depict CECAL VOLVULUS: a single MARKEDLY DILATED, gas-filled COFFEE-BEAN / kidney-shaped bowel loop (the twisted cecum) whose apex projects up and across toward the LEFT UPPER QUADRANT, with a central cleft (the apposed walls) forming the bean's seam. Upstream there are DISTENDED SMALL-BOWEL loops with valvulae conniventes indicating obstruction, while the distal colon is relatively gasless. Lumbar spine, psoas margins, and bony pelvis correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0263",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial CONTRAST-ENHANCED CT of the abdomen in diagnostic grayscale, soft-tissue window, radiologically accurate upper-abdominal anatomy with contrast-opacified vessels and realistic CT noise. Depict a PANCREATIC PSEUDOCYST: a WELL-CIRCUMSCRIBED, ROUND, homogeneous FLUID-DENSITY (near-water attenuation) COLLECTION with a MATURE, THIN, smooth ENHANCING WALL sitting in the LESSER SAC anterior to the pancreas, WITHOUT internal septations, solid nodularity, or gas. The adjacent pancreas is mildly atrophic/scarred, and the stomach is displaced anteriorly by the collection; liver, spleen, aorta, and vertebral body correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0264",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic frontal (PA) CHEST RADIOGRAPH of a school-age child in grayscale with DICOM-like dynamic range and anatomically accurate thoracic anatomy. Depict COARCTATION OF THE AORTA: bilateral INFERIOR RIB NOTCHING - scalloped erosions along the undersurfaces of the posterior 3rd-8th ribs from dilated collateral intercostal arteries - and a FIGURE-3 SIGN at the left superior mediastinal / aortic knob contour (a pre-stenotic dilation, the coarctation indentation, and post-stenotic dilation creating a reversed-3 outline). The heart is normal-to-mildly enlarged, lung fields are clear, and the ribs, clavicles, and diaphragm are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0265",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic frontal CONTRAST ENEMA fluoroscopy study of a neonate in grayscale, dense white rectally-instilled contrast outlining the colon, DICOM-like fluoroscopic appearance. Depict HIRSCHSPRUNG DISEASE: a NARROW, non-distended DISTAL RECTOSIGMOID (aganglionic) segment of small caliber, with an abrupt CONE-SHAPED TRANSITION ZONE to a MARKEDLY DILATED, contrast-filled PROXIMAL COLON, and a reversed rectosigmoid ratio (rectum narrower than sigmoid). Retained contrast and a mildly irregular contour of the transition are shown; the neonatal bony pelvis and lumbar spine are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0276",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial CONTRAST-ENHANCED CT of the chest at the level of the heart in diagnostic grayscale, soft-tissue window, anatomically accurate cardiac and mediastinal anatomy with contrast-opacified chambers and realistic CT noise. Depict CONSTRICTIVE PERICARDITIS: a DIFFUSELY THICKENED PERICARDIUM with dense, bright, curvilinear CALCIFICATION forming a rigid rind that ENCASES the heart, most conspicuous over the right heart border and atrioventricular grooves. The encased ventricles show a tubular/narrowed configuration; the atria and inferior vena cava may appear dilated. Lungs, ribs, and vertebral body correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0277",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic TRANSTHORACIC ECHOCARDIOGRAM in the PARASTERNAL LONG-AXIS view, diagnostic grayscale sector with realistic speckle texture and DICOM-like appearance. Depict RHEUMATIC MITRAL STENOSIS: a THICKENED, echobright MITRAL VALVE with restricted leaflet tips, so that in DIASTOLE the ANTERIOR MITRAL LEAFLET bows/DOMES toward the septum in a HOCKEY-STICK (elbow) configuration with a narrowed diastolic orifice, while the leaflet tips remain tethered. The LEFT ATRIUM is ENLARGED (dilated) behind the aortic root. The left ventricle is normal-sized; aortic root and interventricular septum correctly rendered. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0282",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic clinical PHOTOGRAPH of an ill adult's WRISTS, HANDS, and ANKLES in clinical lighting with accurate skin tones. Depict ROCKY MOUNTAIN SPOTTED FEVER: a blanching-to-nonblanching MACULOPAPULAR and PETECHIAL rash concentrated on the WRISTS and ANKLES and prominently involving the PALMS and SOLES, with numerous small pink-to-dusky-red macules and papules and scattered PETECHIAE, the eruption appearing to spread CENTRIPETALLY (from the extremities toward the trunk). The lesions are discrete and small (few millimeters), some coalescing; the patient looks systemically ill. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0285",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic T2-weighted (fat-suppressed) CORONAL OBLIQUE MRI of the SHOULDER in grayscale with DICOM-like tissue contrast (bright fluid), anatomically accurate humeral head, greater tuberosity, glenoid, and acromion. Depict a FULL-THICKNESS SUPRASPINATUS TENDON TEAR: a fluid-bright GAP interrupting the full thickness of the SUPRASPINATUS TENDON near its greater-tuberosity footprint, with RETRACTION of the torn tendon stump medially and BRIGHT FLUID filling the tear and the SUBACROMIAL/subdeltoid space and the glenohumeral joint. The deltoid, acromion, and humeral head cartilage are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0286",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic T2-weighted AXIAL MRI of the LUMBAR SPINE at the L5-S1 level in grayscale with DICOM-like tissue contrast (bright cerebrospinal fluid in the thecal sac), anatomically accurate vertebral body, disc, facet joints, and thecal sac. Depict a RIGHT PARACENTRAL DISC HERNIATION: a focal posterolateral disc protrusion extending into the RIGHT lateral recess, effacing the bright CSF and COMPRESSING/displacing the TRAVERSING RIGHT S1 NERVE ROOT against the posterior element, while the left-side roots remain surrounded by bright CSF. The disc herniation is contiguous with the parent disc; facets and posterior muscles correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0287",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic clinical PHOTOGRAPH of an older adult's LOWER LEG and MEDIAL ANKLE (the gaiter region) in clinical lighting with accurate skin tones. Depict CHRONIC VENOUS INSUFFICIENCY: brownish HEMOSIDERIN HYPERPIGMENTATION mottling the skin around the ankle, firm, tightly bound-down, indurated woody skin with a tapered inverted-champagne-bottle leg contour (LIPODERMATOSCLEROSIS), scattered dilated tortuous VARICOSITIES, edema, and a SHALLOW, irregular, EXUDATIVE (weeping) VENOUS ULCER with a ruddy granulating base located JUST ABOVE the MEDIAL MALLEOLUS. Surrounding skin shows stasis dermatitis scaling. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0288",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic close-up CLINICAL DERMATOLOGIC PHOTOGRAPH of a lesion on the side of the nose of an older fair-skinned adult, natural clinic lighting, accurate skin texture and pores. Depict a NODULAR BASAL CELL CARCINOMA: a PEARLY, TRANSLUCENT, waxy skin-colored PAPULE/nodule with a raised ROLLED, shiny BORDER and a depressed CENTRAL ULCERATION (rodent ulcer) with a fine crust, and delicate branching ARBORIZING TELANGIECTASIAS coursing over the pearly surface. Surrounding facial skin shows chronic photodamage (mottled pigmentation, fine wrinkling). no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0302",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic ABDOMINAL ULTRASOUND image in diagnostic grayscale, sagittal view showing the RIGHT LIVER LOBE and the adjacent RIGHT KIDNEY in the same field, realistic fine speckle texture, sector edges, and DICOM-like appearance. Depict HEPATIC STEATOSIS (fatty liver): the LIVER PARENCHYMA is DIFFUSELY HYPERECHOIC (\"BRIGHT\" liver), noticeably BRIGHTER than the adjacent RENAL CORTEX, producing increased HEPATORENAL CONTRAST, with fine homogeneous echotexture and posterior beam ATTENUATION so the deep liver and diaphragm appear dimmer/blurred. Intrahepatic vessel walls appear less distinct than normal. The kidney and diaphragm are correctly rendered for comparison. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0307",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial NONCONTRAST CT of the abdomen in diagnostic grayscale, soft-tissue window, radiologically accurate upper-abdominal anatomy with realistic CT noise. Depict CHRONIC PANCREATITIS: numerous scattered COARSE, BRIGHT PARENCHYMAL CALCIFICATIONS studded throughout the head, body, and tail of an ATROPHIC pancreas, with a DILATED, beaded MAIN PANCREATIC DUCT coursing through the gland (some calcifications appearing intraductal). The pancreas is shrunken with an irregular contour; the liver, spleen, aorta, kidneys, and vertebral body are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0308",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic upright frontal (PA) CHEST RADIOGRAPH of a young adult in grayscale with DICOM-like dynamic range and anatomically accurate thoracic anatomy. Depict a PRIMARY SPONTANEOUS PNEUMOTHORAX on the RIGHT: a well-defined thin white VISCERAL PLEURAL EDGE (the collapsed lung margin) is visible about 3 cm INSIDE the chest wall, with a HYPERLUCENT, AVASCULAR (black, no lung markings) space between the pleural edge and the ribs peripherally. The RIGHT LUNG is partially collapsed toward the hilum. Importantly the MEDIASTINUM and TRACHEA remain MIDLINE (NO shift), and the right hemidiaphragm is NOT depressed. The left lung is normally aerated; ribs and soft tissues correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0310",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic UPPER GI ENDOSCOPY (endoluminal) color photograph inside the stomach, with the characteristic fish-eye wide-angle endoscopic view, glistening pink-red gastric mucosa with rugal folds, and realistic bright endoscope illumination and light reflections. Depict GASTRIC ADENOCARCINOMA: a large MALIGNANT ULCERATED MASS along the gastric body with HEAPED-UP, ROLLED, IRREGULAR, NODULAR MARGINS surrounding a dirty necrotic ulcer crater, the surface FRIABLE with contact bleeding and disrupted converging rugal folds that stop abruptly at the mass. Adjacent normal gastric folds and the endoscopic lumen are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s2ck-0314",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic OBSTETRIC ULTRASOUND image in diagnostic grayscale with a superimposed color-Doppler box, sagittal view of the lower uterine segment and maternal bladder, realistic fine speckle texture and DICOM-like appearance. Depict PLACENTA ACCRETA SPECTRUM: an ANTERIOR PLACENTA covering the lower uterine segment over the prior cesarean scar, with LOSS of the normal hypoechoic RETROPLACENTAL CLEAR ZONE, MULTIPLE irregular intraplacental VASCULAR LACUNAE (anechoic lakes giving a moth-eaten SWISS-CHEESE appearance), THINNING/loss of the myometrium beneath the placenta, and DISRUPTION of the bright BLADDER-UTERINE (serosa-bladder) INTERFACE with turbulent bridging color-Doppler vessels crossing toward the bladder wall. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0266",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic FROG-LEG LATERAL PELVIS RADIOGRAPH of an adolescent in grayscale with DICOM-like dynamic range and anatomically accurate bony pelvis, both proximal femora, and open growth plates. Depict a SLIPPED CAPITAL FEMORAL EPIPHYSIS on the LEFT: the LEFT femoral capital EPIPHYSIS (femoral head) is displaced POSTEROINFERIORLY relative to the femoral neck, so it appears to slip off the metaphysis like ice cream slipping off a cone, with a widened, irregular physis; a line drawn along the superior femoral neck (Klein line) fails to intersect the slipped epiphysis on the left. The RIGHT hip is normal with the physeal line intersecting its epiphysis for comparison. Acetabula and pubic rami correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0273",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic portable ANTEROPOSTERIOR (AP) CHEST RADIOGRAPH of an adult in grayscale with DICOM-like dynamic range and anatomically accurate thoracic anatomy. Depict findings suggesting THORACIC AORTIC DISSECTION: a MARKEDLY WIDENED MEDIASTINUM with an abnormally broad, convex aortic contour and an enlarged, indistinct AORTIC KNOB, with the superior mediastinal silhouette bulging beyond normal width. The tracheal air column may be mildly deviated to the right and there may be a small left apical pleural cap. The lung fields are relatively clear, the heart size is normal, and the ribs and soft tissues are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0275",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic ABDOMINAL RADIOGRAPH of an older adult in grayscale with DICOM-like dynamic range and anatomically accurate bowel gas pattern. Depict SIGMOID VOLVULUS: a MASSIVELY DILATED, gas-filled INVERTED-U / COFFEE-BEAN loop of colon arising from the PELVIS and ascending toward the upper abdomen, often reaching above the transverse colon (northern exposure), with a central cleft (apposed medial walls) forming the bean's seam and the loop apex pointing toward the LEFT/RIGHT upper quadrant. The dilated loop is devoid of haustra; there is upstream colonic distension. Lumbar spine, psoas margins, and bony pelvis correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0314",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic BRAIN MRI, FLAIR sequence, in diagnostic grayscale with suppressed (dark) cerebrospinal fluid, anatomically accurate cerebral anatomy. Depict MULTIPLE SCLEROSIS with DAWSON FINGERS: MULTIPLE discrete OVOID HYPERINTENSE (bright) white-matter lesions arrayed along the PERIVENTRICULAR margins and callososeptal interface, several elongated and oriented PERPENDICULAR to the lateral ventricles, radiating outward like fingers along the deep medullary veins. Additional smaller juxtacortical/infratentorial lesions are present. Ventricles, corpus callosum, and skull correctly rendered against dark suppressed CSF. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0315",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic clinical FLASH PHOTOGRAPH of an infant's face focused on both EYES during a RED-REFLEX examination, natural infant facial proportions and skin tones, with a camera flash producing pupillary reflexes. Depict LEUKOCORIA of RETINOBLASTOMA: the RIGHT pupil returns a bright WHITE / creamy-yellow PUPILLARY REFLEX (LEUKOCORIA) instead of the normal red-orange glow, while the LEFT pupil shows a NORMAL symmetric RED-ORANGE reflex for contrast. Both eyes are otherwise white and quiet with no redness, discharge, or lid swelling. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0324",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial NONCONTRAST HEAD CT in diagnostic grayscale, brain window, anatomically accurate cranial and brain anatomy with realistic CT noise and a rendered skull. Depict an acute EPIDURAL HEMATOMA: a BICONVEX, LENS-SHAPED (lentiform) HYPERDENSE (bright white, acute blood) extra-axial collection hugging the inner table of the skull over the temporoparietal convexity, its margins bulging inward and sharply CONFINED so it DOES NOT cross the cranial suture lines. There is local MASS EFFECT - effacement of adjacent sulci, compression of the ipsilateral lateral ventricle, and slight MIDLINE SHIFT away from the clot. A subtle overlying skull fracture may be present. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0361",
+"ar": "4:3",
+"topic": "",
+"prompt": "Photorealistic MAGNETIC RESONANCE CHOLANGIOPANCREATOGRAPHY (MRCP) maximum-intensity-projection image in diagnostic grayscale with a dark background and BRIGHT high-signal fluid, anatomically accurate biliary tree, gallbladder, and pancreatic duct. Depict PRIMARY SCLEROSING CHOLANGITIS: the INTRAHEPATIC and EXTRAHEPATIC BILE DUCTS show MULTIFOCAL short STRICTURES (narrowed/pruned segments) ALTERNATING with intervening mildly DILATED segments, producing the classic BEADED, irregular \"string-of-beads\" appearance with pruning of peripheral intrahepatic branches. The pancreatic duct is normal; gallbladder and duodenum correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0365",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic pediatric ABDOMINAL (renal) ULTRASOUND image in diagnostic grayscale, sector field with realistic fine speckle texture and DICOM-like appearance. Depict a WILMS TUMOR: a LARGE, WELL-CIRCUMSCRIBED, predominantly SOLID heterogeneous MASS arising from and EXPANDING the KIDNEY, with a thin rim/claw of preserved echogenic RENAL PARENCHYMA stretched around one margin confirming an intrarenal origin. The mass distorts the renal contour and displaces the collecting system; the remaining normal kidney, liver, and diaphragm are correctly rendered for context. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0373",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic COLOR FUNDUS PHOTOGRAPH of an adult retina through a dilated pupil, circular fundus-camera field, accurate ophthalmoscopic detail. Depict a CENTRAL RETINAL ARTERY OCCLUSION: a DIFFUSELY PALE, opacified, edematous (whitened, milky) RETINA from ischemic inner-retinal swelling, with a striking CHERRY-RED SPOT at the FOVEA/MACULA (the thin foveola letting the intact choroidal red show through against the surrounding pale retina). The retinal ARTERIES are ATTENUATED/thread-like with segmented (boxcar) flow; the optic disc is pale. Background choroidal pattern correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0375",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic upright frontal BARIUM ESOPHAGRAM (contrast swallow) in fluoroscopic grayscale with anatomically accurate thoracic esophageal course, dense white barium column. Depict ACHALASIA: a DILATED thoracic ESOPHAGEAL BODY holding a column of barium (often with a retained air-fluid level superiorly) that TAPERS SMOOTHLY and symmetrically to a narrow point at the GASTROESOPHAGEAL JUNCTION - the classic BIRD-BEAK narrowing - with delayed emptying into the stomach. The narrowing is smooth and symmetric without a shouldered mass. Spine, diaphragm, and gastric bubble correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0404",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic OBSTETRIC ULTRASOUND image in diagnostic grayscale with a superimposed color-Doppler box, sagittal view of the lower uterine segment and maternal bladder, realistic fine speckle texture and DICOM-like appearance. Depict PLACENTA ACCRETA SPECTRUM: an anterior low PLACENTA with MULTIPLE irregular intraplacental VASCULAR LACUNAE (anechoic moth-eaten lakes), LOSS of the normal hypoechoic RETROPLACENTAL CLEAR ZONE, marked THINNING/loss of the underlying MYOMETRIUM, and INCREASED turbulent VASCULARITY with bridging color-Doppler vessels crossing the UTERINE-BLADDER INTERFACE toward the bladder wall. The fetal presenting part and bladder are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0405",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic lateral BARIUM ESOPHAGRAM (contrast swallow) in fluoroscopic grayscale with anatomically accurate pharynx, cervical spine, and cervical esophagus, dense white barium column. Depict a ZENKER DIVERTICULUM: at the PHARYNGOESOPHAGEAL JUNCTION, JUST ABOVE the upper esophageal sphincter (cricopharyngeus level), a POSTERIOR MIDLINE out-pouching (false diverticulum) projects backward and downward and RETAINS a pool of barium, overhanging the cervical esophagus below; a horizontal cricopharyngeal bar may indent the barium column. The distal esophagus is normal caliber. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0406",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic frontal CONTRAST ENEMA fluoroscopy study of a neonate in grayscale, dense white rectally-instilled contrast outlining the colon, DICOM-like fluoroscopic appearance. Depict HIRSCHSPRUNG DISEASE: a NARROW, non-distended DISTAL RECTOSIGMOID (aganglionic) segment of small caliber, with an abrupt CONE-SHAPED TRANSITION ZONE to a MARKEDLY DILATED, contrast-filled PROXIMAL COLON, and a reversed rectosigmoid ratio (rectum narrower than sigmoid). Retained contrast and a mildly irregular transition contour are shown; the neonatal bony pelvis and lumbar spine are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0276",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic TRANSTHORACIC ECHOCARDIOGRAM of the AORTIC VALVE (parasternal long-axis with a short-axis inset feel), diagnostic grayscale sector with realistic speckle texture and DICOM-like appearance. Depict SEVERE CALCIFIC AORTIC STENOSIS: a THICKENED, densely CALCIFIED (echobright) trileaflet AORTIC VALVE with markedly RESTRICTED leaflet opening in systole and a narrow residual orifice, bright acoustic shadowing from the calcium. The LEFT VENTRICLE shows CONCENTRIC HYPERTROPHY (thickened walls) with a normal-sized cavity (preserved systolic function). Aortic root, left atrium, and interventricular septum correctly rendered. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0282",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial CT of the chest in diagnostic grayscale, LUNG WINDOW, anatomically accurate thoracic anatomy with sharp bronchovascular markings and realistic CT noise. Depict an INCIDENTAL SOLITARY PULMONARY NODULE: a SINGLE small (about 6 mm) SOLID, ROUNDED PULMONARY NODULE with SMOOTH, well-defined BORDERS in the RIGHT LOWER LOBE, WITHOUT spiculation, lobulation, cavitation, or calcification, surrounded entirely by normal aerated lung. There is NO surrounding consolidation, NO satellite nodules, and NO hilar or mediastinal adenopathy. The remaining lungs, airways, heart, and chest wall are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0332",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial HIGH-RESOLUTION CT of the chest in diagnostic grayscale, lung window, anatomically accurate thoracic anatomy with sharp bronchovascular markings and realistic CT noise. Depict a USUAL INTERSTITIAL PNEUMONIA pattern of IDIOPATHIC PULMONARY FIBROSIS: PERIPHERAL, SUBPLEURAL, BASAL-PREDOMINANT reticulation with clustered HONEYCOMBING - stacked subpleural cystic air spaces with well-defined walls - and TRACTION BRONCHIECTASIS (irregularly dilated, distorted airways within fibrotic lung). The abnormality is greatest in the posterior subpleural lung bases and spares the central and upper lung. Heart, mediastinum, and chest wall correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0333",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic ANTEROPOSTERIOR (AP) PELVIS RADIOGRAPH of a young adult in grayscale with DICOM-like dynamic range and anatomically accurate bony pelvis, both hips, and sacroiliac joints. Depict SACROILIITIS of ANKYLOSING SPONDYLITIS: BILATERAL, roughly SYMMETRIC sacroiliac joint changes - irregular subchondral EROSIONS giving a blurred pseudo-widened joint margin, adjacent reactive SCLEROSIS on both iliac and sacral sides, and PARTIAL JOINT-SPACE NARROWING with early BONY FUSION (ankylosis) bridging the joints. The hips, pubic symphysis, and lower lumbar spine are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0381",
+"ar": "2:3",
+"topic": "",
+"prompt": "Photorealistic frontal (PA) CHEST RADIOGRAPH of an adult in grayscale with DICOM-like dynamic range and anatomically accurate thoracic anatomy. Depict ACTIVE REACTIVATION PULMONARY TUBERCULOSIS: in the RIGHT UPPER LOBE (apical/posterior segment) a THICK-WALLED CAVITY - a rounded lucency with a dense irregular wall - with SURROUNDING NODULAR and fibronodular OPACITIES and patchy consolidation, plus some volume loss elevating the right hilum. The remaining lung is relatively clear, the cardiac silhouette is normal, and the ribs, clavicles, and diaphragm are correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0389",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial CONTRAST-ENHANCED CT of the chest in diagnostic grayscale, mediastinal (soft-tissue) window, anatomically accurate thoracic anatomy with contrast-opacified vessels and realistic CT noise. Depict BOERHAAVE ESOPHAGEAL PERFORATION: locules of lucent GAS tracking through the MEDIASTINUM around the esophagus and great vessels (PNEUMOMEDIASTINUM), a moderate LEFT PLEURAL EFFUSION (dependent fluid, sometimes with a small hydropneumothorax), and a focus of EXTRAVASATED luminal CONTRAST leaking from a tear in the DISTAL ESOPHAGUS into the adjacent mediastinum. Periesophageal fat stranding and a thick-walled distal esophagus are shown; heart, aorta, and vertebral body correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0394",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic TRANSVAGINAL PELVIC ULTRASOUND image in diagnostic grayscale, sagittal view of the UTERUS, realistic fine speckle texture, sector edges, and DICOM-like appearance. Depict UTERINE LEIOMYOMAS (fibroids): an ENLARGED, bulky UTERUS with a lobulated contour containing SEVERAL WELL-CIRCUMSCRIBED, ROUNDED, HYPOECHOIC INTRAMURAL masses with a whorled internal texture and posterior acoustic shadowing, distorting the myometrium and indenting/displacing the central endometrial stripe. The masses are clearly demarcated from surrounding myometrium; bladder and cervix correctly rendered. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0410",
+"ar": "1:1",
+"topic": "",
+"prompt": "Hyperrealistic axial CONTRAST-ENHANCED CT of the abdomen in diagnostic grayscale, soft-tissue window, radiologically accurate upper-abdominal anatomy with contrast-opacified vessels and realistic CT noise. Depict INFECTED WALLED-OFF PANCREATIC NECROSIS: a LARGE, encapsulated PERIPANCREATIC/lesser-sac COLLECTION with a defined enhancing WALL containing HETEROGENEOUS non-liquefied necrotic debris AND unmistakable FOCI OF GAS (lucent air bubbles / an air-fluid level) within it - the hallmark of infection. The adjacent pancreas shows non-enhancing necrotic segments; peripancreatic fat stranding, the stomach displaced anteriorly, liver, spleen, aorta, and vertebral body correctly rendered. no text, no labels, no watermark, no measurement overlays."
+},
+{
+"id": "s3-0411",
+"ar": "1:1",
+"topic": "",
+"prompt": "Photorealistic TRANSVAGINAL PELVIC ULTRASOUND image in diagnostic grayscale, sagittal midline view of the CERVIX in a pregnancy, realistic fine speckle texture, sector edges, and DICOM-like appearance. Depict CERVICAL INSUFFICIENCY: a SHORTENED CERVICAL canal (about 18 mm of closed length) with FUNNELING of the INTERNAL OS - a V/U-shaped opening of the internal os with amniotic fluid dipping down into the upper (funneled) cervical canal, while the distal cervix remains closed. The overlying lower uterine segment, amniotic fluid, and fetal parts above are correctly rendered without placental abnormality. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays."
+}
+]
