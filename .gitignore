@@ -28,3 +28,4 @@ deploy/*/
 galleries-staging/_incoming-*/
 __pycache__/
 *.pyc
+galleries-staging/neuro-0731/

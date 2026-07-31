@@ -58,7 +58,16 @@ def build(gid, srcdir):
     kb = sum(os.path.getsize(os.path.join(adir, '%s-%02d.jpg' % (gid, p))) for p in range(1, 11)) // 1024
     print('%-16s 10 pages, %d kB, pdf %d kB' % (gid, kb, os.path.getsize(pdf) // 1024))
 
-for gid, srcdir in [('cdiff', SRC + '/cdiff'), ('aki', SRC + '/aki'), ('uti', SRC + '/uti'),
-                    ('ckd', SRC + '/ckd'), ('nephrolithiasis', SRC + '/nephrolithiasis-fixed'),
-                    ('hyperkalemia', SRC + '/hyperkalemia'), ('bph', SRC + '/bph')]:
-    build(gid, srcdir)
+if __name__ == '__main__':
+    # Batches used to be a hard-coded list edited for each run, which meant the
+    # file's history recorded old batches as if they were about to be rebuilt.
+    # Pass `<gid>=<srcdir>` pairs instead; with no args it prints usage.
+    args = sys.argv[1:]
+    if not args:
+        print('usage: build_galleries_from_images.py <gid>=<srcdir> [...]')
+        print('   eg: build_galleries_from_images.py stroke=galleries-staging/neuro-0731/stroke')
+        sys.exit(2)
+    for a in args:
+        gid, _, srcdir = a.partition('=')
+        assert srcdir, 'expected <gid>=<srcdir>, got %r' % a
+        build(gid, srcdir)
