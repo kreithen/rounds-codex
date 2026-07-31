@@ -12,8 +12,16 @@ stay excluded on purpose — the app's vector versions are better.)
 | model requested | `nano_banana_pro` — the server silently substitutes `nano_banana_2`, as always |
 | resolution | `2k` (same price as 1k, so never ask for 1k) |
 | aspect ratio | per modality, from `image_batch_plan.aspect()` — 2:3 portrait, 1:1 square, else 4:3 |
-| cost | 2 credits each, ~348 total; balance went 3000 → 2666 with the last few still settling |
+| cost | 2 credits each; balance 3000 → 2668, i.e. **332 spent = 166 charged**, not 174 |
 | duplicates | none — 174 unique question ids, zero overlap with the pilot 24 |
+
+**Roughly 8 of the 174 look like they failed and were refunded.** 174 jobs were accepted
+(every `generate_image` returned an id with `status: "pending"`), but only 166 were
+charged, and the balance was observed going *up* by 2 between two reads — a refund, which
+only happens on a failed generation. Which eight is not knowable from here; `job_display`
+per id will say, once the connector is approved. Assume the harvest returns ~166 usable
+images and re-fire the shortfall then. Do **not** re-fire blind: that pays twice for
+images that already exist.
 
 ## Files
 
@@ -45,7 +53,9 @@ re-generating.
 
 To finish, in a session where the Higgsfield connector is live and approved:
 
-1. `show_generations` — page through and collect `{id, url}` for each job.
+1. `show_generations` — page through and collect `{id, url}` for each job. Any job id in
+   `higgsfield-jobs-0731.json` that does not come back with a url is one of the failures
+   above; re-fire just those, from the prompt in `image-manifest.json`.
 2. For each, `python3 tools/image_batch_plan.py --record <question_id> <url>`, mapping
    job_id → question_id through `higgsfield-jobs-0731.json`.
 3. `python3 tools/build_review_page.py` — writes ONE standalone HTML with remote `<img>`
