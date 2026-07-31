@@ -120,7 +120,8 @@ no backend. This file is context for future sessions — read it before starting
     any nav tab, find the view's other entry points — a view with no way in is invisible, not broken.
   - **`.nav button` is already `flex-direction:column`**, so a nav icon sits above its label with no
     new styling. Tabs are `flex:1` with `min-width:auto`, so the **longest single word** in any label
-    sets a floor on every tab's width — "Calculators" needed 10.5px to hold one line. Measure at
+    sets a floor on every tab's width — "Clinical Calculators" wraps to two lines at any size, so its 10px is chosen to keep
+    the ROW even, not to stop the wrap. Measure at
     375/390/430px, not just one. ("OR / Peri-op" wrapping at 375/390 is pre-existing.)
   - **A back arrow on a nav-bar root must call `navBack()`, not `back()`** — the stack is one deep
     there and `back()` is a dead control. `navBack()` already exists for this, and beats a hard-coded

@@ -271,7 +271,7 @@ sub('router openCalc',
    icon sits above the label with no new styling. -------------------------- */
 sub('nav tab',
   `<button data-v="ask" onclick="root('ask')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M21 12a8 8 0 01-11.6 7.1L4 20l1-5.3A8 8 0 1121 12z"/></svg><span>Ask Rounds Codex</span></button>`,
-  `<button data-v="calc" onclick="root('calc')" aria-label="Clinical Calculators"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2.5"/><path d="M8 6.5h8"/><path d="M8.5 11h0M12 11h0M15.5 11h0M8.5 14.5h0M12 14.5h0M15.5 14.5h0M8.5 18h0M12 18h0M15.5 18h0"/></svg><span>Calculators</span></button>`);
+  `<button data-v="calc" onclick="root('calc')" aria-label="Clinical Calculators"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2.5"/><path d="M8 6.5h8"/><path d="M8.5 11h0M12 11h0M15.5 11h0M8.5 14.5h0M12 14.5h0M15.5 14.5h0M8.5 18h0M12 18h0M15.5 18h0"/></svg><span>Clinical Calculators</span></button>`);
 
 /* 6d ── nav highlight. Without this the tab un-highlights the moment you open
    an individual calculator, the same way rxdrug maps back to rx. */
@@ -330,10 +330,13 @@ sub('styles', '.clinupd{', `
 .calc-link{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:999px;padding:8px 14px;color:inherit;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
 .calc-disc{margin-top:22px;font-size:12px;line-height:1.55;color:var(--muted);text-align:center;font-style:italic}
 .calc-sub{opacity:.75;font-size:.95em;margin:0 0 4px}
-/* The calculator tab's label is the longest in the bar. The other four sit on
-   one line at 11px and this one must too -- "Ask Rounds Codex" wrapped to two
-   and overflowed its pill, which is the thing being replaced. */
-#nav button[data-v=calc] span{font-size:10.5px;letter-spacing:-.1px}
+/* "Clinical Calculators" is the longest label in the bar and takes two lines at
+   any size, so the size is chosen for WIDTH, not for wrapping: tabs are flex:1
+   with min-width:auto, which means the longest single word ("Calculators") sets
+   a floor on this tab and squeezes the other four. Measured at 375/390/430 --
+   at 10.5px this tab ran 4px wider than its neighbours at 375; 10px evens them
+   (62.8 vs 62.5) and is exact at the two larger widths. */
+#nav button[data-v=calc] span{font-size:10px;letter-spacing:-.1px}
 .clinupd{`);
 
 fs.writeFileSync(IDX, html);
