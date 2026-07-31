@@ -26,3 +26,5 @@ deploy/*/
 # dump is an input, not source. The mapping that IS worth keeping is committed
 # alongside as a .json.
 galleries-staging/_incoming-*/
+__pycache__/
+*.pyc
