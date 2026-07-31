@@ -1,0 +1,16 @@
+[
+ {
+  "id": "s3-0275",
+  "severity": "warn",
+  "type": "WRONG_FINDING",
+  "summary": "The sigmoid-volvulus prompt leaves the apex direction ambiguous, and the LEFT option is exactly the cecal-volvulus appearance the item's own avoid list forbids.",
+  "detail": "The manifest prompt reads 'the loop apex pointing toward the LEFT/RIGHT upper quadrant.' In sigmoid volvulus the massively dilated inverted-U loop arises from the pelvis/left iliac fossa and its apex projects to the RIGHT upper quadrant (liver-overlap / northern-exposure signs), while a coffee-bean loop whose apex sits in the LEFT upper quadrant is the classic pattern of CECAL volvulus - which this item explicitly lists under 'avoid' and offers as distractor option C. A left-pointing apex would make the correct answer (sigmoidoscopic detorsion) radiographically wrong. NOTE: the prompt actually fired was edited to '...pointing toward the upper quadrant', dropping LEFT/RIGHT entirely - still unspecified, so the finding stands. Check the generated image: if the apex is in the LUQ, discard it."
+ },
+ {
+  "id": "s3-0314",
+  "severity": "warn",
+  "type": "GIVEAWAY",
+  "summary": "The item asks which diagnostic test to order and the correct answer is 'MRI of the brain and spinal cord' - while the stem displays a brain MRI already performed.",
+  "detail": "Lead: 'Which of the following is the most appropriate initial diagnostic test?' with the keyed answer being MRI of brain and cord; the anchored image is a FLAIR brain MRI showing Dawson fingers. The image is medically accurate and correctly matches the vignette, but showing the result of the very test the student is being asked to order makes the item answerable by modality-matching alone (the other four options are NCS, head CT, EEG, muscle biopsy) rather than by clinical reasoning. Usable only if the circularity is acceptable; otherwise drop the image from this item or reword the lead to a diagnosis question."
+ }
+]

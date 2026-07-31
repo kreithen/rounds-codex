@@ -1,0 +1,9 @@
+[
+ {
+  "id": "s2ck-0257",
+  "severity": "warn",
+  "type": "CONTRADICTS_VIGNETTE",
+  "summary": "Prompt asks for ulnar drift, a late deformity, in a patient with only 4 months of symptoms and no deformity described in the vignette.",
+  "detail": "The vignette describes 4 months of symmetric MCP/PIP synovitis, and its image bracket specifies only 'symmetric periarticular osteopenia and marginal bony erosions'; the mustShow list likewise stops at osteopenia, symmetric joint-space narrowing, marginal erosions and DIP sparing. The prompt adds '...with some early ulnar drift.' Ulnar deviation at the MCPs is a deformity of established RA measured in years, not months, so the rendered film will depict a disease stage the case explicitly does not have. It does not change the correct answer, so the image remains usable, but the physician should decide whether a hand showing ulnar drift is acceptable next to a 4-month history."
+ }
+]

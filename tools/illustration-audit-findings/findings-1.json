@@ -1,0 +1,30 @@
+[
+ {
+  "id": "s1-0118",
+  "severity": "warn",
+  "type": "MEDICALLY_WRONG",
+  "summary": "Prompt asks for \"Orphan Annie eye\" optically clear nuclei on a Papanicolaou-stained FNA smear, but nuclear clearing is a paraffin/fixation artifact seen only in histologic sections, not on cytology smears.",
+  "detail": "The prompt specifies a 400x Pap-stained thyroid FNA cytology smear showing \"pale, cleared 'ground-glass' (Orphan Annie eye) optically empty nuclei.\" Orphan Annie eye nuclear clearing is an artifact of formalin fixation and paraffin embedding and is characteristically ABSENT on cytologic smears; what alcohol-fixed Pap smears actually show is finely granular/powdery pale chromatin, nuclear enlargement and overlap, longitudinal grooves and intranuclear pseudoinclusions (the last two are correctly requested, as are psammoma bodies). The vignette's bracketed image caption asserts the same thing, so if the image is kept the caption should be softened to \"pale, powdery chromatin with nuclear grooves\" - or the modality changed to an H&E tissue section."
+ },
+ {
+  "id": "s1-0188",
+  "severity": "warn",
+  "type": "MEDICALLY_WRONG",
+  "summary": "Prompt tells the generator the RIGHT HEART BORDER may be obscured by the consolidation; right-lower-lobe disease silhouettes the right hemidiaphragm and PRESERVES the right heart border (heart-border loss is right middle lobe).",
+  "detail": "Prompt: \"the right heart border and hemidiaphragm silhouette may be partly obscured at the affected margin.\" The right heart border abuts the air-filled right middle lobe, so an RLL consolidation obliterates the right hemidiaphragm outline while the right heart border stays sharp. The vignette states right lower lung findings and the caption says \"confined to the right lower lobe.\" Secondary imprecision in the same sentence: the RLL is bounded superiorly by the MAJOR fissure only - the minor fissure separates RUL from RML, so \"respecting the major/minor fissure boundary\" is wrong for this lobe. The stem's answer (S. pneumoniae) does not depend on the lobe, so the image is salvageable."
+ },
+ {
+  "id": "s1-0184",
+  "severity": "warn",
+  "type": "MEDICALLY_WRONG",
+  "summary": "Prompt requests squared vertebral bodies and vertical syndesmophytes inside a single AP pelvis radiograph, where neither is demonstrable, and drops the lateral spine view the vignette's caption promises.",
+  "detail": "Prompt asks for squared lumbar vertebral corners and thin vertical bridging syndesmophytes - on an AP pelvis projection only L5/sacrum are typically in the field, and vertebral squaring plus annular syndesmophytes are LATERAL-projection findings. Separately the vignette's caption states two panels (AP pelvis WITH a lateral spine film showing bamboo spine) while the prompt produces only the AP pelvis. The authoring notes are internally inconsistent (mustShow demands squaring/syndesmophytes, avoid forbids a lateral view). Fix: drop the spine clauses from prompt and caption, or generate a two-panel image. The bilateral symmetric SI erosion/sclerosis/ankylosis portion is correct and answers the item on its own."
+ },
+ {
+  "id": "s1-0206",
+  "severity": "warn",
+  "type": "LATERALITY",
+  "summary": "Prompt specifies a SYMMETRIC bihemispheric butterfly mass, but the vignette's isolated left-sided weakness requires right-hemisphere predominance - and a symmetric lesion cannot produce the midline shift the prompt also asks for.",
+  "detail": "Vignette: 62-year-old with new left-sided weakness, implying a right-hemisphere-dominant lesion. Prompt asks for a SYMMETRIC wing-like butterfly configuration plus mass effect, effacement of the adjacent lateral ventricle and mild midline shift. Two problems: (1) laterality - real butterfly gliomas are bihemispheric but almost always have a dominant side, here it should be the right; (2) self-contradiction - a truly symmetric bihemispheric mass exerts balanced pressure and would not shift the midline or selectively efface one ventricle. Usable if the render happens to be right-predominant; fix is to replace \"symmetric\" with \"right-predominant, extending across the splenium/genu into the left hemisphere.\""
+ }
+]
