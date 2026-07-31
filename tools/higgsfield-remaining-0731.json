@@ -1,59 +1,5 @@
 [
  {
-  "id": "s3-0324",
-  "ar": "1:1",
-  "topic": "",
-  "prompt": "Hyperrealistic axial NONCONTRAST HEAD CT in diagnostic grayscale, brain window, anatomically accurate cranial and brain anatomy with realistic CT noise and a rendered skull. Depict an acute EPIDURAL HEMATOMA: a BICONVEX, LENS-SHAPED (lentiform) HYPERDENSE (bright white, acute blood) extra-axial collection hugging the inner table of the skull over the temporoparietal convexity, its margins bulging inward and sharply CONFINED so it DOES NOT cross the cranial suture lines. There is local MASS EFFECT - effacement of adjacent sulci, compression of the ipsilateral lateral ventricle, and slight MIDLINE SHIFT away from the clot. A subtle overlying skull fracture may be present. no text, no labels, no watermark, no measurement overlays."
- },
- {
-  "id": "s3-0361",
-  "ar": "4:3",
-  "topic": "",
-  "prompt": "Photorealistic MAGNETIC RESONANCE CHOLANGIOPANCREATOGRAPHY (MRCP) maximum-intensity-projection image in diagnostic grayscale with a dark background and BRIGHT high-signal fluid, anatomically accurate biliary tree, gallbladder, and pancreatic duct. Depict PRIMARY SCLEROSING CHOLANGITIS: the INTRAHEPATIC and EXTRAHEPATIC BILE DUCTS show MULTIFOCAL short STRICTURES (narrowed/pruned segments) ALTERNATING with intervening mildly DILATED segments, producing the classic BEADED, irregular \"string-of-beads\" appearance with pruning of peripheral intrahepatic branches. The pancreatic duct is normal; gallbladder and duodenum correctly rendered. no text, no labels, no watermark, no measurement overlays."
- },
- {
-  "id": "s3-0365",
-  "ar": "1:1",
-  "topic": "",
-  "prompt": "Photorealistic pediatric ABDOMINAL (renal) ULTRASOUND image in diagnostic grayscale, sector field with realistic fine speckle texture and DICOM-like appearance. Depict a WILMS TUMOR: a LARGE, WELL-CIRCUMSCRIBED, predominantly SOLID heterogeneous MASS arising from and EXPANDING the KIDNEY, with a thin rim/claw of preserved echogenic RENAL PARENCHYMA stretched around one margin confirming an intrarenal origin. The mass distorts the renal contour and displaces the collecting system; the remaining normal kidney, liver, and diaphragm are correctly rendered for context. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays."
- },
- {
-  "id": "s3-0373",
-  "ar": "1:1",
-  "topic": "",
-  "prompt": "Photorealistic COLOR FUNDUS PHOTOGRAPH of an adult retina through a dilated pupil, circular fundus-camera field, accurate ophthalmoscopic detail. Depict a CENTRAL RETINAL ARTERY OCCLUSION: a DIFFUSELY PALE, opacified, edematous (whitened, milky) RETINA from ischemic inner-retinal swelling, with a striking CHERRY-RED SPOT at the FOVEA/MACULA (the thin foveola letting the intact choroidal red show through against the surrounding pale retina). The retinal ARTERIES are ATTENUATED/thread-like with segmented (boxcar) flow; the optic disc is pale. Background choroidal pattern correctly rendered. no text, no labels, no watermark, no measurement overlays."
- },
- {
-  "id": "s3-0375",
-  "ar": "2:3",
-  "topic": "",
-  "prompt": "Photorealistic upright frontal BARIUM ESOPHAGRAM (contrast swallow) in fluoroscopic grayscale with anatomically accurate thoracic esophageal course, dense white barium column. Depict ACHALASIA: a DILATED thoracic ESOPHAGEAL BODY holding a column of barium (often with a retained air-fluid level superiorly) that TAPERS SMOOTHLY and symmetrically to a narrow point at the GASTROESOPHAGEAL JUNCTION - the classic BIRD-BEAK narrowing - with delayed emptying into the stomach. The narrowing is smooth and symmetric without a shouldered mass. Spine, diaphragm, and gastric bubble correctly rendered. no text, no labels, no watermark, no measurement overlays."
- },
- {
-  "id": "s3-0404",
-  "ar": "1:1",
-  "topic": "",
-  "prompt": "Photorealistic OBSTETRIC ULTRASOUND image in diagnostic grayscale with a superimposed color-Doppler box, sagittal view of the lower uterine segment and maternal bladder, realistic fine speckle texture and DICOM-like appearance. Depict PLACENTA ACCRETA SPECTRUM: an anterior low PLACENTA with MULTIPLE irregular intraplacental VASCULAR LACUNAE (anechoic moth-eaten lakes), LOSS of the normal hypoechoic RETROPLACENTAL CLEAR ZONE, marked THINNING/loss of the underlying MYOMETRIUM, and INCREASED turbulent VASCULARITY with bridging color-Doppler vessels crossing the UTERINE-BLADDER INTERFACE toward the bladder wall. The fetal presenting part and bladder are correctly rendered. no text, no labels, no watermark, no measurement overlays."
- },
- {
-  "id": "s3-0405",
-  "ar": "2:3",
-  "topic": "",
-  "prompt": "Photorealistic lateral BARIUM ESOPHAGRAM (contrast swallow) in fluoroscopic grayscale with anatomically accurate pharynx, cervical spine, and cervical esophagus, dense white barium column. Depict a ZENKER DIVERTICULUM: at the PHARYNGOESOPHAGEAL JUNCTION, JUST ABOVE the upper esophageal sphincter (cricopharyngeus level), a POSTERIOR MIDLINE out-pouching (false diverticulum) projects backward and downward and RETAINS a pool of barium, overhanging the cervical esophagus below; a horizontal cricopharyngeal bar may indent the barium column. The distal esophagus is normal caliber. no text, no labels, no watermark, no measurement overlays."
- },
- {
-  "id": "s3-0406",
-  "ar": "2:3",
-  "topic": "",
-  "prompt": "Photorealistic frontal CONTRAST ENEMA fluoroscopy study of a neonate in grayscale, dense white rectally-instilled contrast outlining the colon, DICOM-like fluoroscopic appearance. Depict HIRSCHSPRUNG DISEASE: a NARROW, non-distended DISTAL RECTOSIGMOID (aganglionic) segment of small caliber, with an abrupt CONE-SHAPED TRANSITION ZONE to a MARKEDLY DILATED, contrast-filled PROXIMAL COLON, and a reversed rectosigmoid ratio (rectum narrower than sigmoid). Retained contrast and a mildly irregular transition contour are shown; the neonatal bony pelvis and lumbar spine are correctly rendered. no text, no labels, no watermark, no measurement overlays."
- },
- {
-  "id": "s3-0276",
-  "ar": "1:1",
-  "topic": "",
-  "prompt": "Photorealistic TRANSTHORACIC ECHOCARDIOGRAM of the AORTIC VALVE (parasternal long-axis with a short-axis inset feel), diagnostic grayscale sector with realistic speckle texture and DICOM-like appearance. Depict SEVERE CALCIFIC AORTIC STENOSIS: a THICKENED, densely CALCIFIED (echobright) trileaflet AORTIC VALVE with markedly RESTRICTED leaflet opening in systole and a narrow residual orifice, bright acoustic shadowing from the calcium. The LEFT VENTRICLE shows CONCENTRIC HYPERTROPHY (thickened walls) with a normal-sized cavity (preserved systolic function). Aortic root, left atrium, and interventricular septum correctly rendered. Realistic ultrasound gain gradient and sector edges. no text, no labels, no watermark, no measurement overlays."
- },
- {
   "id": "s3-0282",
   "ar": "1:1",
   "topic": "",
