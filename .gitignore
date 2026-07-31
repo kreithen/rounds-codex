@@ -11,8 +11,12 @@ tools/candidates/*
 # live app working copy (PRIVATE — never commit to this public repo)
 applive/
 
-# private live-app deploy bundles (delivered to user, never commit to public repo)
-rounds-codex-app-*.zip
-rounds-codex-cardio-*.zip
-rounds-codex-assets-*.zip
-rounds-codex-usmle-*.zip
+# private live-app deploy bundles (delivered to user, never commit to public repo).
+# This was an enumerated list of four prefixes, which CLAUDE.md described as excluding
+# "every rounds-codex-*.zip deploy bundle" -- it did not, and the first bundle with a new
+# name (rounds-codex-calc-fix.zip) landed unignored in a PUBLIC repo carrying the live
+# app's index.html. One glob instead of a list that has to be remembered.
+rounds-codex-*.zip
+
+# staging folders for those bundles: the files inside are the live app, not source
+deploy/*/
