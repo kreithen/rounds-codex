@@ -16,7 +16,7 @@ if (!SW) { console.error('usage: node scripts/verify_sw.js <sw.js>'); process.ex
 const fail = [];
 const ok = (c, m) => { console.log((c ? '  ok   ' : '  FAIL ') + m); if (!c) fail.push(m); };
 
-function load({ bodyReadFails, empty, networkUp }) {
+function load({ bodyReadFails, empty, networkUp, netBodyReadFails }) {
   const deleted = [];
   const entry = {
     headers: new Map(),
@@ -33,7 +33,21 @@ function load({ bodyReadFails, empty, networkUp }) {
     location: { origin: 'https://x' },
     URL,
     console,
-    fetch: async () => { if (!networkUp) throw new Error('offline'); return { ok: true, __from: 'network' }; },
+    /* The network response models the real thing closely enough to exercise the buffering:
+       it has a status, headers that LIE about encoding, and an arrayBuffer() that can fail --
+       which is the tab-suspend-mid-read case the online path has to survive. */
+    fetch: async () => {
+      if (!networkUp) throw new Error('offline');
+      return {
+        ok: true, status: 200, statusText: 'OK', __from: 'network',
+        headers: new Map([['content-type', 'text/html'], ['content-encoding', 'gzip'], ['content-length', '999']]),
+        arrayBuffer: async () => {
+          if (netBodyReadFails) throw new Error('WebKitBlobResource error 1');
+          return Buffer.from('NETWORK SHELL');
+        },
+      };
+    },
+    Headers,
     Response: class { constructor(body, init) { this.body = body; this.status = (init && init.status) || 200; this.headers = init && init.headers; } },
   };
   sandbox.self.location = sandbox.location;
@@ -89,6 +103,42 @@ function load({ bodyReadFails, empty, networkUp }) {
      `the navigate branch does not clone its response${nav && /\.clone\(\)/.test(nav[0]) ? ' -- it does, and that is the blob bug' : ''}`);
   ok(nav && !/caches\.open|\.put\(/.test(nav[0]),
      'and does not write to the cache while answering -- the shell is precached in CORE instead');
+
+  /* 7. Not cloning is not sufficient, which is what the third recurrence of this bug taught.
+   *    A raw fetch() Response handed to respondWith is still blob-backed by WebKit, so the
+   *    navigation body has to be drained into memory before the page ever sees it. */
+  ok(/async function navigate\s*\(/.test(src), 'the navigate branch delegates to a navigate() handler');
+  const navFn = src.match(/async function navigate\s*\([\s\S]*?\n\}/);
+  ok(navFn && /\.arrayBuffer\(\)/.test(navFn[0]),
+     'the ONLINE navigation body is drained into memory -- a streamed fetch() body is blob-backed and dies on tab resume');
+  ok(navFn && /status !== 200/.test(navFn[0]),
+     'and only 200s are rebuilt, so a 204/304 is not handed a body and a real 404 reaches the browser intact');
+
+  // 8. A rebuilt body is already decoded, so the original encoding/length headers now lie.
+  ok(/function safeHeaders/.test(src), 'safeHeaders() exists to strip headers that no longer describe a rebuilt body');
+  const sh = src.match(/function safeHeaders[\s\S]*?\n\}/);
+  for (const h of ['content-encoding', 'content-length', 'transfer-encoding']) {
+    ok(sh && sh[0].includes(h), `safeHeaders drops ${h}`);
+  }
+  ok(/headers: safeHeaders\(/.test(src) && (src.match(/headers: safeHeaders\(/g) || []).length >= 2,
+     'both the network and the cache paths sanitise their headers (2+ call sites)');
+
+  // 9. Behavioural: online navigation returns memory-backed bytes, and a body that dies
+  //    mid-read falls back to the shell rather than surfacing the error page.
+  //    Run through a helper so a worker without navigate() reports a failure rather than
+  //    throwing and skipping every check after it.
+  const drive = async (opts) => {
+    const h = load(opts);
+    if (typeof h.sandbox.navigate !== 'function') return null;
+    try { return Buffer.from((await h.sandbox.navigate({})).body).toString(); }
+    catch (e) { return 'THREW: ' + e.message; }
+  };
+  ok(await drive({ networkUp: true }) === 'NETWORK SHELL',
+     'online navigation serves the network response as buffered bytes');
+  ok(await drive({ networkUp: true, netBodyReadFails: true }) === 'CACHED SHELL',
+     'a network body that dies mid-read falls back to the cached shell, not the error page');
+  ok(await drive({ networkUp: false }) === 'CACHED SHELL',
+     'offline navigation still serves the cached shell');
 
   console.log('\n' + (fail.length ? 'FAILED: ' + fail.length : 'ALL CHECKS PASSED'));
   process.exit(fail.length ? 1 : 0);

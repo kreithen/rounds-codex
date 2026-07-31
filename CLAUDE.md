@@ -447,6 +447,21 @@ no backend. This file is context for future sessions — read it before starting
   **"WebKitBlobResource error 1."** on returning to a backgrounded tab. This shipped twice —
   the first fix hardened only the *offline* fallback and the bug was in the *online* branch.
   The shell is precached in `CORE`, so the per-navigation write was redundant anyway.
+- **Not cloning is NOT sufficient — the navigation body must be drained into memory.** The bug
+  came back a THIRD time (reported 2026-07-31 from iPhone Safari) with a clone-free navigate
+  branch, because `e.respondWith(fetch(req).catch(...))` hands `respondWith` a *still-streaming*
+  response and **WebKit backs a service-worker-provided navigation body with a blob** — a file
+  iOS reclaims under storage pressure, so the resume finds the entry and not the bytes. `.catch()`
+  only fires if the fetch never returns headers; a body that dies later was never caught.
+  `navigate()` now does `await res.arrayBuffer()` and returns memory-backed bytes, falling back to
+  the cached shell if the read throws. Only **200s** are rebuilt — 204/304 throw if given a body,
+  and a real 404 should reach the browser untouched.
+  **A rebuilt Response must not keep the original `Content-Encoding`/`Content-Length`** — the
+  bytes are already decoded, so the browser would gunzip plain bytes or truncate to the compressed
+  length. `safeHeaders()` strips them, on the cache path too.
+  Lesson for the suite: the old `verify_sw.js` **passed on the broken worker** because it asserted
+  the true-but-insufficient thing. When adding a regression guard, run it against the pre-fix file
+  and confirm it FAILS — otherwise it is decoration.
 - **Chromium does not use the agent proxy; `curl` and Python do.** A page load showing
   `ERR_CONNECTION_RESET` for an external host does not mean the host is unreachable from the
   sandbox — that is how the Google Fonts dependency stayed invisible.
