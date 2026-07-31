@@ -1,0 +1,96 @@
+# Gallery page header: progress dots are wrong — re-render request
+
+**Batch affected:** Neurology, delivered 2026-07-31 — 8 galleries, 80 pages
+(bacterial meningitis, ischemic stroke, seizure & status epilepticus,
+Alzheimer's & dementia, Parkinson's disease, TIA, multiple sclerosis,
+Guillain-Barré).
+
+**Everything else about this batch is good** — artwork, layout, titles, page
+order and the 1024×1536 sizing are all correct, and the galleries are live. This
+is the one defect, it is in the page template rather than in any individual
+gallery, and it is cosmetic. But it is visible on **every page of every
+gallery**, so it is worth a re-render.
+
+Only the header strip needs regenerating. Nothing below it changes.
+
+---
+
+## What the dots are supposed to do
+
+The strip of dots under "IMAGE n OF 10" is a page-position indicator. For a
+ten-page gallery it should be:
+
+* **exactly 10 dots**, and
+* **exactly one filled**, at position *n*.
+
+So page 4 of 10 = ten dots, the fourth one filled, nine hollow.
+
+---
+
+## Defect 1 — the dot COUNT is not the page total
+
+Pages carry **11, 12 or 13 dots** on a ten-page gallery. The count also varies
+from page to page *within* one gallery.
+
+This is present on essentially every page, **including pages whose filled dot is
+in the right place**, so it is not a side effect of Defect 2.
+
+**Verified example.** Bacterial meningitis, page 6 — header reads "IMAGE 6 OF
+10". Measured directly off the delivered PNG: **11 dots**, evenly spaced at a
+27 px pitch, spanning x=372 to x=648. The 6th is filled cyan (RGB ≈ 2,111,177);
+the other ten are grey rings (RGB ≈ 130,130,130). The fill position is right and
+the count is wrong.
+
+---
+
+## Defect 2 — the fill is CUMULATIVE on three galleries
+
+On **Alzheimer's & dementia**, **Parkinson's disease** and **Guillain-Barré**,
+every dot up to and including the current page is filled, instead of just the
+current one. It reads as a progress bar rather than a position marker.
+
+Examples, read off the delivered pages:
+
+| gallery | page | filled dots | should be |
+|---|---|---|---|
+| Alzheimer's & dementia | 4 of 10 | first **4** filled | only the 4th |
+| Alzheimer's & dementia | 10 of 10 | **11** filled | only the 10th |
+| Parkinson's disease | 6 of 10 | first **7** filled | only the 6th |
+| Guillain-Barré | 5 of 10 | first **6** filled | only the 5th |
+
+Page 1 of each of these galleries is correct, because one filled dot is right
+either way — the divergence starts at page 2.
+
+The other five galleries (meningitis, stroke, seizure, TIA, MS) fill a single
+dot correctly. They still have Defect 1.
+
+---
+
+## What we need back
+
+Re-rendered pages with the header strip corrected:
+
+1. **Dot count = the gallery's page total** (10 for all eight of these).
+2. **Exactly one filled dot**, at the current page.
+
+Same 1024×1536, same JPEG quality, same filenames if possible. If the page
+number is being read from one variable and the dot row generated from another,
+that mismatch is very likely the whole of Defect 1.
+
+Please fix it **in the template**, not per batch — every future gallery will
+carry it otherwise.
+
+---
+
+## Notes for whoever picks this up
+
+* Do **not** attempt to repaint the dots on the delivered PNGs. We tried, with a
+  tool that located the row by autocorrelation, sampled the ring and disc
+  colours off each page and rebuilt the background by interpolation. It still
+  produced half-erased dots and left the cumulative fills underneath, and it
+  could not read 31 of the 80 pages at all. The header's vertical position
+  drifts by tens of pixels between pages, which defeats fixed-geometry
+  detection. Fixing the generator is the only sound route.
+* The defect is easiest to confirm on a contact sheet of the header strips —
+  `scripts/triage_incoming_gallery.py` writes one, and the dots are perfectly
+  legible there even though automated counting is not reliable.
