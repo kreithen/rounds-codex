@@ -1,0 +1,130 @@
+{
+ "batch": "2026-07-31 neurology",
+ "source": "75 pages uploaded in chat",
+ "verified": "OCR page numbers agree with the contact-sheet read on 72/75; 3 unreadable by OCR and taken from the sheet. No disagreements.",
+ "galleries": {
+  "meningitis": {
+   "header_label": "Bacterial Meningitis (ICD-10 G00.9)",
+   "complete": true,
+   "pages": {
+    "1": "468720c5",
+    "2": "7a4bd52f",
+    "3": "54db8eff",
+    "4": "ba71e842",
+    "5": "5f214774",
+    "6": "037d23b7",
+    "7": "21a60612",
+    "8": "c6b72356",
+    "9": "9f5477b6",
+    "10": "fc3e945c"
+   }
+  },
+  "stroke": {
+   "header_label": "Ischemic Stroke (ICD-10 I63.9)",
+   "complete": true,
+   "pages": {
+    "1": "cc927797",
+    "2": "b94ce091",
+    "3": "89ba32c3",
+    "4": "6d247bb2",
+    "5": "178587bc",
+    "6": "886cb013",
+    "7": "acafd098",
+    "8": "4459061a",
+    "9": "e4e2b5f2",
+    "10": "0eebc68f"
+   }
+  },
+  "seizure": {
+   "header_label": "Seizure & Status Epilepticus (ICD-10 G40.909)",
+   "complete": true,
+   "pages": {
+    "1": "6172c402",
+    "2": "119ebc5a",
+    "3": "750859fd",
+    "4": "8d245f2b",
+    "5": "967adb15",
+    "6": "483baa34",
+    "7": "87bb09d6",
+    "8": "4c40d3a0",
+    "9": "5cb627c3",
+    "10": "c919a584"
+   }
+  },
+  "dementia": {
+   "header_label": "Alzheimer's & Dementia",
+   "complete": true,
+   "pages": {
+    "1": "403dbe4a",
+    "2": "e2b4df0b",
+    "3": "182a1d14",
+    "4": "60956e05",
+    "5": "e8a1c698",
+    "6": "f0b98dfb",
+    "7": "a34c6fcd",
+    "8": "f96ab154",
+    "9": "aa75720d",
+    "10": "80cf65c7"
+   }
+  },
+  "parkinsons": {
+   "header_label": "Parkinson's Disease",
+   "complete": true,
+   "pages": {
+    "1": "adacface",
+    "2": "1ec3eb9b",
+    "3": "97c449d1",
+    "4": "eb61160d",
+    "5": "8306b3b5",
+    "6": "62b9b936",
+    "7": "af00cf14",
+    "8": "998fa0ed",
+    "9": "f933310a",
+    "10": "a8de619d"
+   }
+  },
+  "tia": {
+   "header_label": "Transient Ischemic Attack",
+   "complete": true,
+   "pages": {
+    "1": "83ec4cb4",
+    "2": "602f79ed",
+    "3": "8739ceaf",
+    "4": "35e1ba10",
+    "5": "e1445460",
+    "6": "fc20063b",
+    "7": "6cf039c0",
+    "8": "99c59835",
+    "9": "53f2bf0c",
+    "10": "36d125ec"
+   }
+  },
+  "ms": {
+   "header_label": "Multiple Sclerosis",
+   "complete": true,
+   "pages": {
+    "1": "c27e8b5f",
+    "2": "c2d10139",
+    "3": "e62edddf",
+    "4": "c1ac0a3b",
+    "5": "9e0224a6",
+    "6": "5289ae8f",
+    "7": "38bfcdf1",
+    "8": "eb6f9938",
+    "9": "a8266f9d",
+    "10": "56af5349"
+   }
+  },
+  "gbs": {
+   "header_label": "Guillain-Barre Syndrome",
+   "complete": false,
+   "pages": {
+    "1": "7ba534fa",
+    "2": "37b2081d",
+    "3": "a3ecc503",
+    "4": "68578233",
+    "5": "6d211dfe"
+   }
+  }
+ }
+}

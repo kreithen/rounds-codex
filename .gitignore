@@ -20,3 +20,9 @@ rounds-codex-*.zip
 
 # staging folders for those bundles: the files inside are the live app, not source
 deploy/*/
+
+# Raw incoming gallery batches (196 MB for the 2026-07-31 neurology drop alone).
+# The pages get built into assets/ and gthumbs/ at 1024x1536 q88; the raw upload
+# dump is an input, not source. The mapping that IS worth keeping is committed
+# alongside as a .json.
+galleries-staging/_incoming-*/
