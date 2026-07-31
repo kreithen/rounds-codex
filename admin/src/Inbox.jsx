@@ -35,6 +35,7 @@ function buildThreads(rows) {
     t.subject = [...t.msgs].reverse().find((m) => m.subject)?.subject || "(no subject)";
     t.unanswered = last?.direction === "in";
     t.unread = t.msgs.some((m) => m.direction === "in" && !m.is_read);
+    t.mailboxes = [...new Set(t.msgs.map((m) => m.mailbox).filter(Boolean))].sort();
     return t;
   });
   threads.sort((a, b) => new Date(b.lastAt) - new Date(a.lastAt));
@@ -50,6 +51,7 @@ export default function Inbox({ session }) {
   const [msg, setMsg] = useState("");
   const [err, setErr] = useState("");
   const [filter, setFilter] = useState("all"); // all | unanswered
+  const [mbox, setMbox] = useState("all");     // all | <mailbox address>
   const endRef = useRef(null);
 
   async function load() {
@@ -66,10 +68,17 @@ export default function Inbox({ session }) {
   useEffect(() => { load(); /* eslint-disable-next-line */ }, []);
 
   const threads = useMemo(() => buildThreads(rows), [rows]);
-  const shown = useMemo(
-    () => (filter === "unanswered" ? threads.filter((t) => t.unanswered) : threads),
-    [threads, filter]
+  const mailboxes = useMemo(
+    () => [...new Set(rows.map((r) => r.mailbox).filter(Boolean))].sort(),
+    [rows]
   );
+  const multi = mailboxes.length > 1;
+  const shown = useMemo(() => {
+    let list = threads;
+    if (filter === "unanswered") list = list.filter((t) => t.unanswered);
+    if (mbox !== "all") list = list.filter((t) => t.mailboxes.includes(mbox));
+    return list;
+  }, [threads, filter, mbox]);
   const active = useMemo(() => threads.find((t) => t.key === activeKey) || null, [threads, activeKey]);
 
   useEffect(() => { endRef.current?.scrollIntoView({ block: "end" }); }, [active]);
@@ -131,6 +140,12 @@ export default function Inbox({ session }) {
             <button className={filter === "all" ? "on" : ""} onClick={() => setFilter("all")}>All</button>
             <button className={filter === "unanswered" ? "on" : ""} onClick={() => setFilter("unanswered")}>Needs reply</button>
           </div>
+          {multi && (
+            <select className="mbox-sel" value={mbox} onChange={(e) => setMbox(e.target.value)}>
+              <option value="all">All inboxes</option>
+              {mailboxes.map((m) => <option key={m} value={m}>{shortMbox(m)}</option>)}
+            </select>
+          )}
           <button className="btn sm ghost" onClick={load} disabled={!!busy}>Refresh</button>
         </div>
         {loading ? <p className="muted fine">Loading…</p> : shown.length === 0 ? (
@@ -143,7 +158,10 @@ export default function Inbox({ session }) {
             </div>
             <div className="ibx-row2">
               <span className="ibx-subj">{t.subject}</span>
-              {t.unanswered && <span className="dot-need" title="Needs a reply" />}
+              <span className="ibx-tags">
+                {multi && t.mailboxes.map((m) => <span key={m} className="mbadge">{shortMbox(m)}</span>)}
+                {t.unanswered && <span className="dot-need" title="Needs a reply" />}
+              </span>
             </div>
           </button>
         ))}
@@ -160,7 +178,12 @@ export default function Inbox({ session }) {
             <div className="ibx-head">
               <div>
                 <div className="ibx-who">{active.name || active.email}</div>
-                <div className="muted fine" style={{ margin: 0 }}>{active.email}</div>
+                <div className="muted fine" style={{ margin: 0 }}>
+                  {active.email}
+                  {multi && active.mailboxes.length > 0 && (
+                    <span className="ibx-mbox"> · to {active.mailboxes.map(shortMbox).join(", ")}</span>
+                  )}
+                </div>
               </div>
               <button className="btn sm ghost" onClick={syncNow} disabled={!!busy}>{busy === "sync" ? "Syncing…" : "Sync now"}</button>
             </div>
@@ -198,6 +221,12 @@ export default function Inbox({ session }) {
       </div>
     </div>
   );
+}
+
+function shortMbox(m) {
+  const s = (m || "").trim();
+  if (!s) return "";
+  return s.includes("@") ? s.split("@")[0] + "@" : s;
 }
 
 function fmtShort(iso) {
