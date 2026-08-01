@@ -34,6 +34,13 @@ no backend. This file is context for future sessions — read it before starting
   calls (`get-projects`, then `get-deploy-for-site`). It CANNOT deploy from a cloud session,
   though — `deploy-site` just returns an `npx` command that runs in the container and talks to a
   blocked `netlify.app` host.
+  **On 2026-08-01 the connector sat at `connected:true, enabledInChat:false` through an entire
+  deploy**, so neither route worked and the confirmation had to come from the physician opening
+  `/version.txt` in their own browser. That is the reliable fallback — say so plainly and ask,
+  rather than reporting a push as a deploy. What CAN be confirmed from here without either route:
+  `git fetch` then diff `origin/main` against local, and read `sw.js`, `version.txt` and
+  `content/galleries.json` straight out of `git show origin/main:<path>` to prove the right bytes
+  reached the remote.
   To verify a deploy, clone the app repo and serve it with `scripts/netlifysim.js`: same bytes
   Netlify publishes, and it covers the galleries whose images exist only in that repo.
 - **Deploy path** was the user's Chrome web-upload to `rounds-codex-app` `main`; with `add_repo`
@@ -65,7 +72,7 @@ no backend. This file is context for future sessions — read it before starting
 > | `content/resident.json` | `RES_DATA` (1308), `RES_SPECIALTIES`, `RES_ACTIVE`, `RES_SECTION2_TITLE`, `RES_COND`, `RESIDENT_APPROACH` |
 > | `content/nclex.json` | `NCLEX_DATA` (150) |
 > | `content/quizzes.json` | `QUIZZES` (9) |
-> | `content/galleries.json` | `GALLERIES` (39) + `real` (the `REALGAL` list) |
+> | `content/galleries.json` | `GALLERIES` (74) + `real` (the `REALGAL` list) |
 > | `content/or.json` | `OR_DATA` |
 >
 > Consequences: **`file://` no longer works** (the loader uses `fetch`) — serve over http or
@@ -678,6 +685,19 @@ without explicit permission. Do NOT open a PR unless the user asks.
   patches `index.html`, so it no longer applies.
 - **The download PDF embeds pages at 512×768**, matching the live galleries at ~1.1 MB per ten
   pages. Embedding the full 1024×1536 tripled the size.
-- **54 of 181 conditions have a gallery as of 2026-07-30.** Cardiac, Endocrine, Gastrointestinal
-  and Respiratory are complete; Renal & GU is 6/7 with only `hyponatremia` left.
-  `galleries-staging/GALLERY-GAP.md` is generated from the live app — regenerate it, don't edit it.
+- **74 of 181 conditions have a gallery as of 2026-08-01.** Seven categories complete: Cardiac (13),
+  Endocrine (13), Gastrointestinal (12), **Heme & Onc (7)**, **Neurology (12)**, Renal & GU (7),
+  Respiratory (10). Regenerate the coverage doc with
+  **`python3 scripts/gen_gallery_gap.py`** — it reads `content/conditions.json` and
+  `content/galleries.json` and nothing else, so it cannot disagree with what is deployed. The doc
+  was always *described* as generated, but the generator was never committed, so it drifted: it
+  read 55/181 while the app was on 63 and listed Heme & Onc as 0/7 the day all seven shipped. A
+  coverage doc that is behind is worse than none — the next batch gets planned off it.
+- **Two page-template versions are in flight at production's end (proved 2026-08-01).** A 90-page
+  batch arrived with the cumulative-dot defect FIXED; a single gallery (`dic`) delivered hours
+  later had it back, plus an orange second highlight colour and a half-cyan/half-orange hybrid
+  marker. So *"they fixed the dots"* cannot be concluded from one gallery — **check the header
+  strip on every delivery.** The same batch introduced a worse defect than the count: the single
+  filled dot at the WRONG INDEX (iron-anemia p3 fills the 4th, b12-anemia p2 fills the 1st — both
+  directions, so not a correctable offset). A wrong count is cosmetic; a wrong index tells the
+  reader they are on a different page. All of it is in `DOTS-defect-for-production.md`.
