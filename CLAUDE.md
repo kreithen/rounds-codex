@@ -182,6 +182,43 @@ no backend. This file is context for future sessions — read it before starting
   gets DST wrong and shows items a day early. "Again" re-queues at the END of the session;
   immediate re-show is recognition, not recall. The Library card renders into `#revCard` and is
   empty when nothing is due. **Offline gallery caching was deferred to the App Store pass.**
+- **Condition audio (`RC_AUDIO`)** — narrated bar under the quiz/gallery row, built by
+  `scripts/audio_player.js`, installed by `add_condition_audio.js` and upgraded thereafter by
+  `scripts/upgrade_audio_player.js` (the installer refuses to run twice, correctly — it is an
+  installer, not an upgrader). **CHF is the only recording as of 2026-08-01.**
+  - **There is ONE `Audio` element for the whole app** (`RCAP_EL`), not one per player node,
+    and a `.rcap` node is a *view onto it*. This is load-bearing for four separate features:
+    playback must survive the navigation that shows the next recording; **a freshly created
+    element has no user gesture behind it, so Safari rejects `.play()` and the next track
+    silently never starts**; iOS surfaces one media element per page as the now-playing item,
+    so a per-node element loses the CarPlay session at every navigation; and two elements
+    means two recordings talking over each other.
+  - **This reverses the earlier "stop audio when the view repaints" rule.** Navigating away
+    now keeps playing and the bar re-syncs when you come back. Continuous play and listening
+    with the phone locked were the whole point.
+  - **CarPlay renders the Media Session, not the page.** Without `navigator.mediaSession`
+    metadata + action handlers the head unit shows "Safari" with a dead scrubber and the
+    steering-wheel next button does nothing. `setPositionState` is what draws the car's
+    progress bar, and it **throws** if position exceeds duration — wrap it. Never set
+    `disableRemotePlayback` or route through WebAudio: that keeps the sound on the handset
+    speaker with the car connected.
+  - Forward is scoped to the module and **neither forward nor the chain wraps** — a wrap on a
+    category with one recording restarts the same file and reads as a broken button. The
+    chain advances the VIEW only while `stack` top is `detail`, so it cannot yank someone out
+    of a quiz or a calculator.
+  - **Three extra controls cost the slider ~50px.** Below ~90px of track, four seconds of a
+    six-minute recording share a pixel and it cannot be aimed at. Controls drop in a fixed
+    order (expand 400, stop 400, in-bar duration 376 — which *moves* to the title row rather
+    than vanishing — elapsed clock 336). Measure at 320/360/375/390/414/430.
+- **Two swipe handlers exist in `index.html`, and they had different guards.** The
+  `document` one (library, resident specialty) has always ignored gestures starting on a
+  control; the `#screen` one that browses conditions on a detail page ignored **only
+  `.flow`** — so dragging the audio scrubber swiped to the adjacent condition. Fixed
+  2026-08-01 by mirroring the exclusion list, **plus `touch-action:none` on the slider**.
+  Both halves are needed: one stops the app reacting, the other stops the BROWSER claiming
+  the drag as a pan first. The `#screen` handler also ignores mouse events within **700ms of
+  any touch** — a Playwright test that taps and then mouse-drags measures that guard, not
+  your fix, and passes on a broken build. Use a fresh page.
 - **Persistence** — `RC_STORE` (bookmarks, best first-try quiz score) and `NCLEX_STORE`
   (exam save/resume, attempt history, mastery), both `localStorage`, both device-local and
   never transmitted, both behind an interface so sync can be added later. Added by
@@ -468,6 +505,19 @@ no backend. This file is context for future sessions — read it before starting
   resident-facing `date` once. The merge rejects it, using **two** regexes: the all-caps status
   tokens are matched **case-sensitively**, because `/replaced/i` and `/reversed/i` flag real clinical
   prose ("Replaced rigid, time-based holding…", "reversed with sugammadex").
+  **Checking only the LABEL fields was not enough** (learned on Infectious Disease, 2026-08-01).
+  The QA pass wrote its findings into nine *narrative* fields — "CORRECTED: the submission
+  said…", "REVERSED - the submitted entry stated the opposite" — and the merge shipped all
+  nine, because the narrow rule above deliberately exempts narrative prose. A resident does
+  not know what "the submission" is. The rule that settles it: **the corrected FACT belongs in
+  the entry; the fact that a correction happened belongs in the CORRECTIONS file.** The guard
+  now also refuses ANY field containing a phrase *addressed to a reviewer* ("the submission",
+  "as submitted", "not independently verified", "DATE CORRECTED"). Phrases, not bare words, so
+  the false positives that motivated the narrow rule do not come back.
+  **Do not ship a "could not be confirmed from source" hedge — resolve it.** Three ID entries
+  carried one; all three were resolvable, and the third (MVA-BN clade I) turned out to claim
+  real-world effectiveness that does not exist. A hedge in a reader-facing field is the QA
+  pass giving up in public.
 
 ## Editing `applive/index.html`
 - Now ~0.65 MB of **code only** — content edits go to `content/*.json` instead, so the
@@ -483,8 +533,20 @@ no backend. This file is context for future sessions — read it before starting
   (`--no-sandbox`). Drive the app via `page.evaluate(()=>go('gallery','dvt'))` etc.; assert
   `.gthumb` counts, `img.naturalWidth>0`, viewer opens, quiz loads, **zero pageerrors**.
   Serve the tree with `scripts/netlifysim.js <ROOT> <PORT>` (positional args) — it does the
-  `/c/*` rewrite and sends the right MIME types, so share links, fonts and the service worker
-  behave as they do on Netlify.
+  `/c/*` rewrite, sends the right MIME types, and (since 2026-08-01) sends `Content-Length`
+  and honours `Range`, so share links, fonts, the service worker and **media seeking** behave
+  as they do on Netlify.
+  **The sim was silently wrong for audio until then**: it replied `Transfer-Encoding: chunked`
+  with no `Content-Length` and ignored `Range` entirely. A browser that cannot see the file
+  size cannot estimate an MP3's duration, so `media.duration` stayed `NaN` until all 5.9 MB
+  arrived; and **a seek in a media element IS a Range request**, so the scrubber could not be
+  tested locally at all — while the audio caching design (`sw.js` `MEDIA_RE`) rests entirely
+  on Range reaching the network. When a harness "verifies" a feature, check it can actually
+  observe the mechanism that feature depends on.
+- **The font audit reads `index.html` raw, so inlined JS COMMENTS count.** A box-drawing
+  divider (`─`) in `scripts/audio_player.js` produced 234 "uncovered characters" that are
+  never rendered. Keep inlined sources ASCII-only; a false positive here trains you to ignore
+  the one audit that catches a real mid-sentence font fallback.
 - **The strongest check for a mechanical change is a side-by-side.** Serve the old and new
   builds on two ports, drive both through the same script, and compare `.app` `innerHTML` —
   the content split was proved that way over sixteen views plus every content global
