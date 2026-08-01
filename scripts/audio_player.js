@@ -172,15 +172,20 @@ function rcapInit(root) {
 
     seek.addEventListener('input', function () {
       scrubbing = true;
+      el.classList.add('scrubbing');      // touch has no :hover, so the class carries it
       paintPos((seek.value / 1000) * total());
     });
     function commit() {
       if (!scrubbing) return;
       scrubbing = false;
       audio.currentTime = (seek.value / 1000) * total();
+      /* Held briefly after release so the label does not vanish under the finger the
+         instant you let go, which reads as the seek having failed. */
+      setTimeout(function () { el.classList.remove('scrubbing'); }, 600);
     }
     seek.addEventListener('change', commit);
     seek.addEventListener('pointerup', commit);
+    seek.addEventListener('pointercancel', commit);
 
     q('.rcap-vol').addEventListener('input', function (e) {
       audio.volume = e.target.value / 100;
@@ -241,62 +246,69 @@ function rcapInit(root) {
 }
 
 var RCAP_CSS = [
+/* Sized against the quiz/gallery buttons it sits under: those are 43px tall, and the
+   first build made the card 143px, which read as a second hero rather than a control.
+   Every number below is cut to land the whole card near 70px. */
 '.rcap{background-image:url(' + RCAP_CARD_BG + ');background-size:100% 100%;',
-' border-radius:14px;padding:12px 12px 14px;margin:14px 0 4px}',
-/* Bold black, sitting directly on the card immediately above the bar, as specified. */
-'.rcap-title{color:#0b0b0b;font-weight:800;font-size:16px;line-height:1.2;',
-' letter-spacing:-.2px;margin:2px 2px 9px}',
-'.rcap-bar{position:relative;display:flex;align-items:center;gap:10px;',
-' background:#131313;border-radius:8px;padding:9px 11px}',
-'.rcap-transport,.rcap-util{display:flex;align-items:center;gap:2px;flex:0 0 auto}',
-'.rcap-b{background:none;border:0;padding:6px;cursor:pointer;color:#fff;',
-' display:inline-flex;align-items:center;justify-content:center;border-radius:7px}',
-'.rcap-b svg{width:21px;height:21px;display:block}',
-'.rcap-u svg{width:17px;height:17px}',
+' border-radius:11px;padding:8px 9px 9px;margin:10px 0 2px}',
+'.rcap-title{color:#0b0b0b;font-weight:800;font-size:13.5px;line-height:1.25;',
+' letter-spacing:-.2px;margin:0 1px 6px}',
+/* One row at every width, which is also what the mockup shows. The two-row phone
+   layout that preceded this bought a wider slider and cost 55px of height. */
+'.rcap-bar{position:relative;display:flex;align-items:center;gap:4px;',
+' background:#131313;border-radius:7px;padding:5px 6px}',
+'.rcap-transport,.rcap-util{display:flex;align-items:center;gap:1px;flex:0 0 auto}',
+'.rcap-b{background:none;border:0;padding:2px;cursor:pointer;color:#fff;',
+' display:inline-flex;align-items:center;justify-content:center;border-radius:5px}',
+'.rcap-b svg{width:17px;height:17px;display:block}',
+'.rcap-u svg{width:15px;height:15px}',
 '.rcap-b:hover{background:rgba(255,255,255,.13)}',
 '.rcap-b:active{transform:translateY(1px)}',
 /* Tabular figures: without them the readout jiggles every second as digit widths
-   change, which on a 34px label is very visible. */
-'.rcap-t{color:#fff;font-size:13px;font-variant-numeric:tabular-nums;flex:0 0 auto}',
-'.rcap-seekwrap{position:relative;flex:1 1 auto;min-width:0;height:20px;display:flex;align-items:center}',
-'.rcap-seek{-webkit-appearance:none;appearance:none;width:100%;height:7px;border-radius:4px;',
+   change, which on a 25px label is very visible. */
+'.rcap-t{color:#fff;font-size:11.5px;font-variant-numeric:tabular-nums;flex:0 0 auto}',
+/* The track sits at the BOTTOM of this box and the tooltip rides in the space above
+   it, so the label needs no height of its own. */
+'.rcap-seekwrap{position:relative;flex:1 1 auto;min-width:0;height:22px;',
+' display:flex;align-items:flex-end;padding-bottom:2px}',
+'.rcap-seek{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:3px;',
 ' background:linear-gradient(90deg,#8D1D43 0,#8D1D43 var(--rcap-pct,0%),#888 var(--rcap-pct,0%),#888 100%);',
 ' outline:none;margin:0;cursor:pointer}',
-'.rcap-seek::-webkit-slider-thumb{-webkit-appearance:none;width:4px;height:19px;border-radius:1px;',
+'.rcap-seek::-webkit-slider-thumb{-webkit-appearance:none;width:3px;height:15px;border-radius:1px;',
 ' background:#fff;cursor:pointer;border:0}',
-'.rcap-seek::-moz-range-thumb{width:4px;height:19px;border-radius:1px;background:#fff;border:0;cursor:pointer}',
-'.rcap-seek:focus-visible{outline:2px solid #fff;outline-offset:3px}',
-/* The tooltip rides the handle and is always shown, as in the mockup. translateX
-   centres it on the handle; the clamp keeps it inside the bar at either end. */
-'.rcap-tip{position:absolute;bottom:20px;left:0;transform:translateX(-50%);color:#fff;',
-' font-size:11.5px;font-variant-numeric:tabular-nums;pointer-events:none;white-space:nowrap;',
-' text-shadow:0 1px 3px rgba(0,0,0,.9)}',
+'.rcap-seek::-moz-range-thumb{width:3px;height:15px;border-radius:1px;background:#fff;border:0;cursor:pointer}',
+'.rcap-seek:focus-visible{outline:2px solid #fff;outline-offset:2px}',
+/* Shown while scrubbing or hovering, not permanently. At the compact height there is
+   no clear air above the track, so an always-on tooltip sat against the current-time
+   readout and the bar read "0:00  0:00". It is also what the mockup actually depicts:
+   0:00 on the left with the tooltip reading 3:41 is a scrub preview, not the clock --
+   the two cannot both be the current time and disagree. The left label carries the
+   time at rest; the tooltip carries the position under your finger. */
+'.rcap-tip{position:absolute;bottom:9px;left:0;transform:translateX(-50%);color:#fff;',
+' font-size:10.5px;font-variant-numeric:tabular-nums;pointer-events:none;white-space:nowrap;',
+' text-shadow:0 1px 3px rgba(0,0,0,.95);opacity:0;transition:opacity .12s}',
+'.rcap-seekwrap:hover .rcap-tip,.rcap.scrubbing .rcap-tip,',
+'.rcap-seek:focus-visible+.rcap-tip,.rcap-seekwrap:focus-within .rcap-tip{opacity:1}',
 /* [hidden] only sets display:none at user-agent specificity, so the display:grid and
    display:flex below silently beat it: the popovers were marked hidden and stayed on
    screen. Asserting el.hidden passed the whole time -- the test had to look at what
    is painted, not at the attribute. */
 '.rcap-pop[hidden]{display:none}',
-'.rcap-pop{position:absolute;bottom:calc(100% + 7px);right:8px;background:#1d1d1d;',
-' border:1px solid rgba(255,255,255,.16);border-radius:10px;padding:7px;z-index:5;',
+'.rcap-pop{position:absolute;bottom:calc(100% + 6px);right:6px;background:#1d1d1d;',
+' border:1px solid rgba(255,255,255,.16);border-radius:9px;padding:6px;z-index:5;',
 ' box-shadow:0 8px 22px rgba(0,0,0,.5)}',
-'.rcap-volpop{display:flex;align-items:center;width:132px}',
+'.rcap-volpop{display:flex;align-items:center;width:126px}',
 '.rcap-vol{width:100%;accent-color:#8D1D43}',
-'.rcap-setpop{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;min-width:184px}',
-'.rcap-rate{background:rgba(255,255,255,.07);border:0;border-radius:7px;color:#e9eef5;',
-' font:inherit;font-size:12.5px;padding:7px 4px;cursor:pointer}',
+'.rcap-setpop{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;min-width:176px}',
+'.rcap-rate{background:rgba(255,255,255,.07);border:0;border-radius:6px;color:#e9eef5;',
+' font:inherit;font-size:12px;padding:6px 4px;cursor:pointer}',
 '.rcap-rate.on{background:#8D1D43;color:#fff;font-weight:700}',
 '.rcap:fullscreen,.rcap.rcap-big{display:flex;flex-direction:column;justify-content:center;padding:26px}',
 '.rcap:fullscreen .rcap-title,.rcap.rcap-big .rcap-title{font-size:26px;text-align:center;margin-bottom:16px}',
-/* Under 560px the slider takes its own row. On a 390px phone it is otherwise about
-   60px wide, which is not scrubbable -- measured, not assumed. */
-'@media(max-width:559px){',
-' .rcap-bar{flex-wrap:wrap;row-gap:4px;padding:8px 9px 11px}',
-' .rcap-seekwrap{order:9;flex:1 0 100%;height:20px;margin-top:16px}',
-' .rcap-tip{bottom:18px}',
-' .rcap-util{margin-left:auto}',
-' .rcap-b{padding:5px}',
-' .rcap-b svg{width:18px;height:18px}',
-'}'
+/* Below about 345px the slider is squeezed under 90px, at which point four seconds
+   of a six-minute file share one pixel. Expand is the one control of the nine worth
+   losing -- fullscreen on an audio bar is a nicety, scrubbing is not. */
+'@media(max-width:344px){ .rcap-b[data-rcap="full"]{display:none} }'
 ].join('');
 
 if (typeof module !== 'undefined' && module.exports) {
