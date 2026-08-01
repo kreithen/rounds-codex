@@ -1,5 +1,25 @@
 # Harvest the 174 image URLs — two copy-pastes
 
+## CORRECTION 2026-08-01: the URLs are NOT publicly fetchable
+
+Everything below about harvesting URLs still holds for the RECORD -- knowing which image
+belongs to which question is worth having -- but a harvested URL cannot be used to LOOK at
+an image outside Higgsfield. The CDN returns **403 Forbidden** to anything that is not an
+authenticated session on their site. Confirmed against two different recorded URLs via a
+route that does not use this container's egress proxy, so the 403 is CloudFront's own
+answer, not a sandbox restriction. The physician saw it first: every image in the contact
+sheet rendered as a broken icon.
+
+An earlier version of this file said the URLs were unsigned and had no expiry, therefore
+there was no deadline. **That was wrong**, and it was wrong in a way that mattered: it
+implied a shareable link, and a remote <img> to one of these fails in ANY page.
+
+**To actually see the images, download them from the Higgsfield gallery and build the PDF
+locally:** `python3 tools/build_illustration_pdf.py <image-dir> --batch 20`. That embeds the
+bytes, matches each image to its question by filename, and reports anything it cannot match
+rather than guessing by position.
+
+
 The cloud session cannot run `show_generations` (see `HARVEST-HANDOFF.md` for why, and for
 the four workarounds that were tried and ruled out). This is the whole job from your side.
 
@@ -73,5 +93,3 @@ if the other session gives you the full pages instead, that works too — just h
 - Eight corrected re-fire prompts are staged in `tools/refire-queue.json` (16 credits),
   separate from whatever the harvest reports as failed.
 
-**No deadline.** The URLs are unsigned CloudFront paths with no signature and no expiry
-parameter; the 2026-07-29 batch was still addressable two days on.

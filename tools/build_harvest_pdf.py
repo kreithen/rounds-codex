@@ -198,8 +198,11 @@ def build():
         'illustration to the wrong question — worse than a missing one.',
         'Re-running is safe. A second run records 0 new, and an existing different URL is '
         'refused unless <font face="Courier" size="9">--force</font> is passed.',
-        '<b>No deadline.</b> The URLs are unsigned CloudFront paths with no signature and no '
-        'expiry parameter; the 29 July batch was still addressable two days later.',
+        '<b>The URLs are not publicly fetchable.</b> Confirmed 1 August: the CDN returns 403 '
+        'to anything that is not an authenticated Higgsfield session, so a harvested URL '
+        'records WHICH image belongs to which question but cannot be used to look at one. '
+        'To see the pictures, download them from the gallery and run '
+        '<font face="Courier" size="9">tools/build_illustration_pdf.py</font>.',
     ]:
         s.append(Paragraph(b, bullet, bulletText='•'))
 
