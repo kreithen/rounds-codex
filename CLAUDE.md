@@ -326,6 +326,19 @@ no backend. This file is context for future sessions — read it before starting
   means authenticated but switched off for THAT conversation. Re-authorising the account does not
   fix it; the per-chat toggle does. Check with `ListConnectors` before concluding anything is
   broken. Higgsfield flipped off repeatedly in one session this way.
+  **Most of the time it is not that connector — it is ALL of them, and it self-heals.** On
+  2026-08-01 Google Drive (8 tools), Higgsfield (81), Netlify (11) and Supabase (29) went away in
+  one event and came back in one event, 129 tools together; Drive returned under a *different*
+  `installedServerId`, i.e. the session was rebuilt rather than a token expiring. Connector traffic
+  in a cloud session goes through Anthropic's servers, not the container network — which is why
+  Netlify's MCP works while `curl rounds-codex.netlify.app` is 403'd — so it is one long-lived
+  remote session that occasionally drops and takes every connector with it.
+  **Read the three states before acting**, because they present identically as "the connector is
+  broken": `connected:true, enabledInChat:false` = on but off for this chat (per-chat toggle);
+  `connected:false` = genuinely deauthorised (re-authorise); `connected:null` = status unknown
+  (re-check, do not act). There is no user-side fix for the transport drop — wait and re-check.
+  **Never let a deploy's confirmation depend on the connector being up.** `/version.txt` works from
+  any browser, and Netlify's failed-deploy email is out-of-band from the connector AND the session.
 - **Resident content** (`medcodex-resident-buildout` skill): `resident-staging/` has the 1308-entry
   master + wiring snippet.
 - **Clinical guidelines** (`guidelines-staging/`, `scripts/merge_guidelines.js`): the "Updated
