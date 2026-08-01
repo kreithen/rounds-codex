@@ -1,0 +1,176 @@
+{
+  "2025": [
+    {
+      "title": "Cloxacillin versus Cefazolin for MSSA Bacteremia (CloCeBa)",
+      "journal": "The Lancet",
+      "date": "October 2025",
+      "breakthrough": "Open-label randomized noninferiority trial in French academic centers. 315 adults with MSSA bacteremia without an intravascular device, assigned to cefazolin or cloxacillin for the first 14 days. Cefazolin was noninferior at a 12% margin on a composite of blood culture clearance, survival, absence of relapse and clinical success at day 90, with fewer serious adverse events.",
+      "impact": "Supports cefazolin as a first-line agent for MSSA bacteremia alongside the antistaphylococcal penicillins, on tolerability rather than on superior efficacy.",
+      "practical": "Cefazolin 2g q8h is a reasonable first choice in uncomplicated MSSA bacteremia and is easier to give. Note what was excluded: patients with an intravascular device and those with suspected CNS infection. The 2026 SNAP trial, an order of magnitude larger, is the definitive answer on this question and is listed under that year.",
+      "link": "The Lancet - CloCeBa",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(25)01624-1/fulltext"
+    },
+    {
+      "title": "Dalbavancin for Staphylococcus aureus Bacteremia (DOTS)",
+      "journal": "JAMA 2025;334(10):866-877",
+      "date": "September 2025",
+      "breakthrough": "Phase 2b open-label randomized trial, 200 adults with complicated S. aureus bacteremia at 23 North American centers. Two doses of dalbavancin a week apart versus standard daily therapy, in patients who had ALREADY CLEARED their blood cultures. It was designed and powered as a SUPERIORITY trial on day-70 Desirability of Outcome Ranking, and it did NOT meet that endpoint. A trial that fails to show superiority has not thereby shown noninferiority - that requires a prespecified noninferiority margin, and this trial had none.",
+      "impact": "Outcomes were comparable between arms with similar safety, so dalbavancin remains a defensible completion option in selected patients. It is not established as noninferior, and guideline bodies have not adopted it as equivalent to standard therapy.",
+      "practical": "Reasonable to consider for completing therapy in a patient whose cultures have cleared and for whom a prolonged line is the main obstacle to discharge. Do not present it to a patient as proven equivalent. Entry criteria matter: cultures already negative, not the acutely bacteremic patient.",
+      "link": "JAMA - DOTS",
+      "url": "https://jamanetwork.com/journals/jama/fullarticle/2837604"
+    },
+    {
+      "title": "Oral Zoliflodacin and Gepotidacin for Uncomplicated Gonorrhea",
+      "journal": "The Lancet",
+      "date": "2025",
+      "breakthrough": "Phase 3, 930 participants, single oral 3g zoliflodacin versus intramuscular ceftriaxone 500mg plus oral azithromycin 1g. Microbiological cure 90.9% versus 96.2% in the micro-ITT population, meeting the noninferiority margin. Gepotidacin reached the same conclusion in its own phase 3 program.",
+      "impact": "The first genuinely new oral mechanisms for gonorrhea in decades, relevant to cephalosporin allergy and to rising resistance. Both are under regulatory review rather than in guidelines.",
+      "practical": "Not yet a substitute for ceftriaxone in routine practice. Note that the cure rate, while noninferior, was numerically 5 points lower, and that extragenital cure was comparable but the numbers at those sites were small.",
+      "link": "GARDP - Zoliflodacin phase 3",
+      "url": "https://gardp.org/positive-results-announced-in-largest-pivotal-phase-3-trial-of-a-first-in-class-oral-antibiotic-to-treat-uncomplicated-gonorrhea/"
+    },
+    {
+      "title": "Male Partner Treatment to Prevent Bacterial Vaginosis Recurrence (StepUp)",
+      "journal": "NEJM",
+      "date": "March 2025",
+      "breakthrough": "Randomized trial of treating male sexual partners alongside standard therapy for the female partner. Recurrence of bacterial vaginosis at 12 weeks was significantly reduced; the trial was stopped early by its data safety monitoring board for efficacy.",
+      "impact": "Overturns long-standing guidance against routine partner treatment in recurrent bacterial vaginosis, and reframes it as a condition with a transmissible component.",
+      "practical": "For the patient with recurrent bacterial vaginosis and a regular male partner, treating the partner is now a reasonable conversation. It does not change management of a first episode.",
+      "link": "NEJM - StepUp",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2405404"
+    },
+    {
+      "title": "Single-Dose HPV Vaccination (ESCUDDO)",
+      "journal": "NEJM",
+      "date": "2025",
+      "breakthrough": "Randomized trial in Costa Rica showing a single dose of bivalent or nonavalent HPV vaccine provides protection against persistent oncogenic HPV infection comparable to multi-dose schedules.",
+      "impact": "Accelerates adoption of single-dose schedules in WHO and national immunization guidance, with the largest effect in supply-constrained settings.",
+      "practical": "Relevant to global vaccine equity and to catch-up programs. US schedules have not moved to single-dose, so counsel from the current ACIP recommendation rather than from this trial.",
+      "link": "NEJM - ESCUDDO",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2412996"
+    },
+    {
+      "title": "Shorter All-Oral Regimens for Drug-Resistant Tuberculosis (endTB)",
+      "journal": "NEJM",
+      "date": "2024-2025",
+      "breakthrough": "endTB established that shorter all-oral bedaquiline-containing regimens are noninferior to the standard longer regimen for MULTIDRUG-RESISTANT and rifampicin-resistant tuberculosis. Do not confuse it with TRUNCATE-TB, which is a different trial answering a different question: an 8-week treatment strategy in drug-SUSCEPTIBLE tuberculosis. The endTB result applies to MDR/RR disease and does not extend to susceptible disease.",
+      "impact": "Feeds directly into the WHO drug-resistant tuberculosis program, which now recommends the 6-month BPaLM regimen over 9-month and 18-month regimens for MDR/RR-TB.",
+      "practical": "All-oral, injection-free treatment removes aminoglycoside ototoxicity and nephrotoxicity and improves completion. Monitor the QT interval on bedaquiline plus moxifloxacin, and watch for linezolid myelosuppression and neuropathy.",
+      "link": "WHO - Drug-resistant TB treatment guidelines",
+      "url": "https://www.who.int/publications/i/item/9789240063129"
+    },
+    {
+      "title": "Adjunctive Corticosteroids in Non-HIV Pneumocystis Pneumonia (PIC)",
+      "journal": "The Lancet Respiratory Medicine",
+      "date": "July 2025",
+      "breakthrough": "Double-blind randomized trial at 27 French hospitals giving 21 days of adjunctive corticosteroid or placebo to 218 HIV-NEGATIVE patients with Pneumocystis pneumonia and acute hypoxemic respiratory failure. Day-28 mortality, the primary endpoint, was 21.5% with corticosteroid versus 32.4% with placebo - a 10.9% absolute difference that did NOT reach significance (p=0.069). Day-90 mortality (HR 0.59, p=0.022) and need for intubation (HR 0.36, p=0.020) were both SIGNIFICANTLY LOWER with corticosteroid.",
+      "impact": "The primary endpoint was not statistically significant, so this trial does not establish adjunctive corticosteroid as standard of care in non-HIV Pneumocystis pneumonia. But every point estimate favors corticosteroid and two secondary endpoints reached significance. It is a positive-trending trial that missed its primary endpoint, and reading it as a negative trial would withhold a treatment it suggests may help.",
+      "practical": "The trial does not license routine steroids in non-HIV Pneumocystis pneumonia, and it does not justify avoiding them either. Treat this as a positive-trending trial that missed its primary endpoint, and make the decision case by case in severe hypoxemic disease.",
+      "link": "The Lancet Respiratory Medicine - PIC",
+      "url": "https://www.thelancet.com/article/S2213-2600(25)00125-0/abstract"
+    },
+    {
+      "title": "Doxycycline Post-Exposure Prophylaxis (DoxyPEP) in Practice",
+      "journal": "The Lancet Infectious Diseases",
+      "date": "2025",
+      "breakthrough": "Real-world implementation data for doxycycline 200mg within 72 hours of condomless sex, showing substantial reductions in chlamydia and syphilis among men who have sex with men and transgender women, with a smaller and less consistent effect on gonorrhea.",
+      "impact": "Underpins the CDC clinical guidance on patient selection, counselling and resistance monitoring.",
+      "practical": "Offer to men who have sex with men and transgender women with a bacterial STI in the past 12 months. Baseline and periodic STI screening are part of the package, and the effect on gonorrhea is weaker than on the other two - do not promise equivalent protection across organisms.",
+      "link": "CDC - Doxycycline post-exposure prophylaxis guidance",
+      "url": "https://www.cdc.gov/std/treatment/"
+    },
+    {
+      "title": "Mosnodenvir for Dengue",
+      "journal": "NEJM",
+      "date": "2025",
+      "breakthrough": "Mosnodenvir is a first-in-class dengue antiviral, and the published trial gave it DAILY AS PROPHYLAXIS in a CONTROLLED HUMAN INFECTION MODEL - healthy volunteers deliberately challenged with virus. It is not a treatment trial, and not a study in naturally acquired infection, so it says nothing yet about viral load or symptom duration in a patient who walks in with dengue.",
+      "impact": "A genuine first-in-class antiviral signal against a disease with no specific therapy, and a legitimate proof of concept. It does not support an outpatient treatment indication and does not change management of a patient with dengue today.",
+      "practical": "Dengue management remains supportive: careful fluid titration through the critical phase, avoidance of NSAIDs and aspirin, and vigilance for the warning signs that appear as the fever settles.",
+      "link": "NEJM - Mosnodenvir dengue challenge study",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2500179"
+    },
+    {
+      "title": "Early Tenofovir Alafenamide in Chronic Hepatitis B (ATTENTION)",
+      "journal": "The Lancet Gastroenterology & Hepatology",
+      "date": "February 2025",
+      "breakthrough": "INTERIM results from an ongoing randomized trial at 22 centers in South Korea and Taiwan. Adults aged 40-80 with non-cirrhotic chronic hepatitis B, HBV DNA between 4 and 8 log10 IU/mL, and ALT below 70 U/L in men or 50 U/L in women - a group outside current treatment indications - assigned to tenofovir alafenamide 25mg daily or observation. Early treatment reduced liver-related serious adverse events.",
+      "impact": "Argues for broadening treatment thresholds beyond ALT elevation. Weigh it as what it is: an interim analysis of a trial still enrolling, so the effect estimate can move.",
+      "practical": "Do not rewrite your treatment threshold on an interim analysis. Watch for the AASLD and EASL response, and note the population studied was specifically non-cirrhotic, aged 40 and over, with moderate to high viremia and near-normal ALT.",
+      "link": "The Lancet Gastroenterology & Hepatology - ATTENTION",
+      "url": "https://www.thelancet.com/journals/langas/article/PIIS2468-1253(24)00431-X/abstract"
+    }
+  ],
+  "2026": [
+    {
+      "title": "Cefazolin for Methicillin-Susceptible Staphylococcus aureus Bacteremia (SNAP)",
+      "journal": "NEJM",
+      "date": "18 June 2026",
+      "breakthrough": "The largest trial ever conducted in staphylococcal bloodstream infection. Open-label randomized comparison of cefazolin against an antistaphylococcal penicillin in over 1,200 adults with penicillin-resistant MSSA bacteremia, recruiting February 2022 to August 2024. Cefazolin was NONINFERIOR for 90-day mortality, 15% versus 17%, with significantly less acute kidney injury, 13.9% versus 19.6%. That comparison was stopped early on the safety advantage.",
+      "impact": "This, not CloCeBa, is the definitive answer, and it moves cefazolin to first-line for MSSA bacteremia. Be precise about what reached significance: mortality was NONINFERIOR, not improved. The benefit that reached significance was renal.",
+      "practical": "Cefazolin 2g q8h, with the kidney as the reason to prefer it. The two trials are complementary rather than duplicative: CloCeBa is 315 patients in France, SNAP is over 1,200 internationally, and both are listed because a reader should know the smaller one came first.",
+      "link": "NEJM - SNAP cefazolin",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2506905"
+    },
+    {
+      "title": "Early Switch to Oral Amoxicillin in Severe Pediatric Pneumonia (PediCAP)",
+      "journal": "The Lancet",
+      "date": "2026",
+      "breakthrough": "Factorial randomized trial in 1,101 African children aged two months to six years hospitalized with severe community-acquired pneumonia, across 13 hospitals in South Africa, Uganda, Zambia, Zimbabwe and Mozambique. After at least 24 hours of WHO-recommended injectable therapy and documented clinical improvement, step-down to oral amoxicillin was noninferior to completing the injectable course: readmission or death by 28 days was 6% with oral amoxicillin, 7% with oral amoxicillin-clavulanate and 6% with continued injectable therapy. Total courses of 4-5 days matched 7-8 days.",
+      "impact": "Challenges the WHO pediatric pneumonia recommendation for a fixed period of injectable therapy, in favor of a clinically triggered oral step-down. It also shows no benefit from the broader-spectrum amoxicillin-clavulanate, which matters for stewardship.",
+      "practical": "Shorter admissions, fewer cannulas and less hospital-acquired infection. The trigger is clinical improvement confirmed by a health worker after at least 24 hours of injectable therapy, not a fixed day count - and plain amoxicillin is the step-down drug, not the combination.",
+      "link": "The Lancet",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(26)00879-2/fulltext"
+    },
+    {
+      "title": "Twice-Yearly Lenacapavir for HIV Pre-Exposure Prophylaxis (PURPOSE 1 and 2)",
+      "journal": "NEJM",
+      "date": "2024, with 2025-2026 implementation data",
+      "breakthrough": "Phase 3 trials of six-monthly subcutaneous lenacapavir showing near-complete protection against HIV acquisition, superior to daily oral tenofovir disoproxil with emtricitabine. PURPOSE 1 in cisgender women in sub-Saharan Africa recorded zero infections in the lenacapavir arm.",
+      "impact": "WHO and CDC prevention guidance now include six-monthly injectable capsid inhibition alongside daily oral options.",
+      "practical": "The pivotal PURPOSE 1 and PURPOSE 2 publications are 2024; what belongs to this year is regulatory approval and rollout rather than the trial result. Removes the daily pill burden, and is discreet, which matters for people who cannot safely keep tablets at home.",
+      "link": "NEJM - PURPOSE 1",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2407001"
+    },
+    {
+      "title": "Single-Dose Clesrovimab for Infant RSV Prevention",
+      "journal": "NEJM",
+      "date": "2025-2026",
+      "breakthrough": "Double-blind placebo-controlled phase 2b/3 trial randomizing 3,632 healthy preterm and full-term infants 2:1 to a single fixed 105mg intramuscular dose of clesrovimab or placebo before or during their first RSV season. Through day 150 it cut RSV-associated medically attended lower respiratory infection by 60.4% (95% CI 44.1-71.9) and RSV hospitalization by 84.2% (95% CI 66.6-92.6), with severe medically attended disease down 91.7%.",
+      "impact": "Expands ACIP and EMA passive immunization options for infants entering their first RSV season, alongside nirsevimab.",
+      "practical": "A weight-independent single 105mg dose simplifies delivery in the newborn period - unlike nirsevimab, there is no dose band to calculate. Give it before or during the first RSV season; the efficacy window studied is 150 days.",
+      "link": "NEJM",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2502984"
+    },
+    {
+      "title": "Oral Gepotidacin for Uncomplicated Urinary Tract Infection (EAGLE-2 and EAGLE-3)",
+      "journal": "The Lancet",
+      "date": "2025-2026",
+      "breakthrough": "Phase 3 trials of gepotidacin, a first-in-class triazaacenaphthylene topoisomerase inhibitor, against nitrofurantoin in uncomplicated urinary tract infection in women.",
+      "impact": "A new oral mechanism for uropathogens with limited remaining options, and the first new oral antibiotic class for this indication in decades.",
+      "practical": "Listed here for the URINARY indication specifically; the gonorrhea data for the same drug sits under 2025 with zoliflodacin, so the development is not counted twice. Note the date: the EAGLE-2 and EAGLE-3 publications are 2024, and what belongs to this year is approval and uptake. Diarrhea is the dose-limiting nuisance, in 14-18% of patients.",
+      "link": "The Lancet",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(23)02196-7/fulltext"
+    },
+    {
+      "title": "MVA-BN Mpox Vaccine: Two-Dose Effectiveness and the Clade I Evidence Gap",
+      "journal": "Vaccine",
+      "date": "2026",
+      "breakthrough": "Pooled real-world evidence puts two-dose MVA-BN (Jynneos) effectiveness against mpox at roughly 82%, with adjusted per-study estimates spanning 66-90% and post-exposure single-dose estimates of 78-89%. Those data are almost entirely CLADE II. For clade I, the evidence is cross-neutralization - two doses raise antibodies against clade Ib, but at lower titers than against clade IIb - together with deployment modelling, not measured effectiveness.",
+      "impact": "Supports WHO and CDC outbreak guidance on ring vaccination and post-exposure prophylaxis, while leaving clade I effectiveness an open question during the ongoing central African outbreak.",
+      "practical": "Two doses matter; single-dose protection is meaningfully lower and wanes. Vaccinate as post-exposure prophylaxis as early as you can after contact. Do not quote a clade I effectiveness figure to a patient - it has not been measured.",
+      "link": "JAMA",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0264410X24010910"
+    },
+    {
+      "title": "Four-Month Regimen for Non-Severe Pediatric Drug-Susceptible Tuberculosis (SHINE)",
+      "journal": "NEJM",
+      "date": "Original 2022, with extended follow-up",
+      "breakthrough": "SHINE randomized children with non-severe drug-susceptible tuberculosis to four months versus the standard six, and found four months noninferior. Extended follow-up has sustained that result.",
+      "impact": "Now embedded in WHO guidance, replacing the six-month standard for children with minimal disease.",
+      "practical": "The pivotal SHINE publication is 2022, with extended follow-up since. Applies to NON-SEVERE disease in children only - severe or disseminated tuberculosis still takes the full course, and assessing severity correctly is the whole decision.",
+      "link": "NEJM - SHINE",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2104535"
+    }
+  ]
+}
