@@ -45,8 +45,11 @@ function load(f) {
    "malaise", "otherwise" and "immunocompromise" -- a spell check that cries wolf gets
    switched off, so the -ise family is listed explicitly instead of guessed at. */
 const BRITISH = new RegExp('\\b(' + [
-  '\\w*haemat\\w*', '\\w*haemo\\w*', 'oedema\\w*', '\\w*oesophag\\w*', 'gonorrhoea\\w*',
+  '\\w*haemat\\w*', '\\w*haemo\\w*', 'oedema\\w*', '\\w*oesophag\\w*', 'gonorrhoea(?!e)\\w*',
   'diarrhoea\\w*', 'anaemi\\w*', 'bacteraemi\\w*', 'septicaemi\\w*', 'ischaemi\\w*',
+  // Latin binomials keep the diphthong: Neisseria gonorrhoeae is correct and must not
+  // be flagged, while the British disease spelling gonorrhoea/gonorrhoeal must be.
+
   'paediatr\\w*', 'traveller\\w*', 'labelling', 'labelled', 'centres', 'fibre\\w*',
   'tumour\\w*', 'oestrogen\\w*', 'foetal', 'anaesthe\\w*', 'orthopaedic\\w*'
 ].join('|') + '|(?:' + [
