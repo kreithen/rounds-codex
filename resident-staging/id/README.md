@@ -22,10 +22,10 @@ quotes, bullet density, paywalled references, and drift from the approved names.
 | batch | entries | topics | validate | QA |
 |---|---|---|---|---|
 | b1 | 1-5 | bacteremia & endovascular | PASS | PASS |
-| b2 | 6-10 | CNS, respiratory | — | — |
-| b3 | 11-15 | mycobacterial, bone & joint | — | — |
-| b4 | 16-20 | bone & joint, skin & soft tissue | — | — |
-| b5 | 21-25 | GI & hepatic | — | — |
+| b2 | 6-10 | CNS, respiratory | PASS | PASS |
+| b3 | 11-15 | mycobacterial, bone & joint | PASS | PASS |
+| b4 | 16-20 | bone & joint, skin & soft tissue | PASS | PASS |
+| b5 | 21-25 | GI & hepatic | PASS | PASS |
 | b6 | 26-30 | GU, HIV | — | — |
 | b7 | 31-35 | HIV, STI | — | — |
 | b8 | 36-40 | STI, immunocompromised host | — | — |
