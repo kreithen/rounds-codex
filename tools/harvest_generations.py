@@ -107,6 +107,25 @@ def load_dumps(paths):
     return blobs
 
 
+def flat_pairs(blob):
+    """A bare {job-id: url} map, which is what the handoff prompt asks for.
+
+    The walker below looks for objects carrying an `id`, so a flat mapping would sail
+    past it and report "0 matched" -- indistinguishable from a dump of the wrong account.
+    Recognised only when EVERY key is a UUID and every value is an image URL, so a real
+    show_generations page (whose top-level keys are "generations", "next_cursor", ...) can
+    never be mistaken for one.
+    """
+    if not isinstance(blob, dict) or not blob:
+        return None
+    for k, v in blob.items():
+        if not (isinstance(k, str) and UUID.match(k)):
+            return None
+        if not (isinstance(v, str) and URLISH.match(v.strip())):
+            return None
+    return {k: v.strip() for k, v in blob.items()}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('dumps', nargs='+', help='show_generations output, or - for stdin')
@@ -122,6 +141,22 @@ def main():
 
     seen_jobs, new, already, conflict, empty = {}, {}, [], [], []
     for blob in load_dumps(a.dumps):
+        flat = flat_pairs(blob)
+        if flat is not None:
+            for jid, url in flat.items():
+                if jid not in jobs or jid in seen_jobs:
+                    continue
+                qid = jobs[jid]
+                seen_jobs[jid] = (qid, 'flat', [url])
+                if qid in done and done[qid] != url:
+                    conflict.append((qid, done[qid], url))
+                    if not a.force:
+                        continue
+                elif qid in done:
+                    already.append(qid)
+                    continue
+                new[qid] = url
+            continue
         for node in walk(blob):
             jid = node.get('id')
             if not isinstance(jid, str) or not UUID.match(jid) or jid not in jobs:
