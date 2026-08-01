@@ -1,9 +1,11 @@
 # Gallery page header: progress dots are wrong — re-render request
 
-**Batch affected:** Neurology, delivered 2026-07-31 — 8 galleries, 80 pages
+**Batches affected:** Neurology, delivered 2026-07-31 — 8 galleries, 80 pages
 (bacterial meningitis, ischemic stroke, seizure & status epilepticus,
 Alzheimer's & dementia, Parkinson's disease, TIA, multiple sclerosis,
-Guillain-Barré).
+Guillain-Barré). **Still present in myasthenia gravis, delivered 2026-08-01** —
+see the table at the end. That delivery is the evidence that this is in the
+template and did not travel with the July batch.
 
 **Everything else about this batch is good** — artwork, layout, titles, page
 order and the 1024×1536 sizing are all correct, and the galleries are live. This
@@ -94,3 +96,37 @@ carry it otherwise.
 * The defect is easiest to confirm on a contact sheet of the header strips —
   `scripts/triage_incoming_gallery.py` writes one, and the dots are perfectly
   legible there even though automated counting is not reliable.
+
+---
+
+## Still present: myasthenia gravis, delivered 2026-08-01
+
+One gallery, ten pages, and **nine of the ten are wrong** — both defects, in the
+same gallery. This is a single ten-page set, so the count varying from 10 to 11
+to 12 *within it* cannot be a per-gallery configuration value.
+
+| page | dots | filled | correct? |
+|---|---|---|---|
+| 1 | 10 | 1st only | ✅ |
+| 2 | 10 | first 2 | ❌ cumulative |
+| 3 | 10 | first 3 | ❌ cumulative |
+| 4 | 10 | first 4 | ❌ cumulative |
+| 5 | 10 | first 5 | ❌ cumulative |
+| 6 | 10 | first 6 | ❌ cumulative |
+| 7 | **11** | first 7, ring highlight on the **8th** | ❌ count, fill, and the highlight is off by one |
+| 8 | **11** | cumulative + ring highlight | ❌ |
+| 9 | **11** | cumulative + ring highlight | ❌ |
+| 10 | **12** | first 11, ring highlight on the **12th** | ❌ |
+
+Two things here that the July batch did not show as clearly:
+
+* **The extra dots appear from page 7 onward and keep growing** — 10, 10, 10, 10,
+  10, 10, 11, 11, 11, 12. That looks like the row is being sized from a running
+  count rather than the page total, which would also explain Defect 1's
+  page-to-page variation in the July batch.
+* **There is now a third marker style** — a hollow ring drawn in the highlight
+  colour, distinct from both the filled disc and the grey ring. On page 10 it
+  sits at position 12, i.e. past the end of a ten-page gallery.
+
+Page 1 is correct and can ship as delivered. The other nine need the header
+strip re-rendered.
