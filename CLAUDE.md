@@ -317,7 +317,21 @@ no backend. This file is context for future sessions — read it before starting
   → `image-qa.html` (physician gate) → `incorporate_images.py`.
 - **Higgsfield generation is LIVE via the MCP connector** (2026-07-29), not the HTTP API — the
   proxy 403s `higgsfield.ai` and the result CDN, so **nothing generated can be fetched or seen
-  from this container**. Review happens in the user's Higgsfield gallery, or via
+  from this container**.
+  **But the images ARE public — corrected 2026-08-02.** `curl: (56) CONNECT tunnel failed,
+  response 403` is the **agent proxy refusing CONNECT**, not CloudFront refusing us, and for
+  months that was misread as "the CDN requires an authenticated session". The Higgsfield
+  sandbox fetches the same URL with a bare `curl -sf` — no cookies, no headers — and gets the
+  full PNG. So a harvested URL is downloadable by anyone not behind this proxy, and
+  `tools/download-rounds-codex-images.command` (generated from `generated-image-urls.json`)
+  pulls all 190 named by question id. **Read a 403 for who issued it before concluding what it
+  means.**
+  **`show_generations` finally worked on 2026-08-01** once the physician toggled the connector
+  on for the chat — 10 prior refusals were the per-chat switch, not the surface. Two pages,
+  190 generations, all with URLs; the harvest is complete and 8 job ids are absent because
+  those 8 failed at generation (174 spends, 8 near-instant refunds).
+  **Higgsfield's `sandbox_exec` truncates stdout** at roughly 20 KB (`"truncated": true`), so
+  base64-through-stdout is not a viable transport for images — about 15 KB of binary a call. Review happens in the user's Higgsfield gallery, or via
   `tools/build_review_page.py`, which emits ONE standalone HTML the reviewer opens locally
   (remote `<img>`, so it cannot be an Artifact — the Artifact CSP blocks external hosts).
   - **`python3 tools/image_batch_plan.py --status | --next N | --record <id> <url>`** is the

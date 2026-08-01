@@ -1,23 +1,27 @@
 # Harvest the 174 image URLs — two copy-pastes
 
-## CORRECTION 2026-08-01: the URLs are NOT publicly fetchable
+## CORRECTION 2026-08-02: the URLs ARE publicly fetchable after all
 
-Everything below about harvesting URLs still holds for the RECORD -- knowing which image
-belongs to which question is worth having -- but a harvested URL cannot be used to LOOK at
-an image outside Higgsfield. The CDN returns **403 Forbidden** to anything that is not an
-authenticated session on their site. Confirmed against two different recorded URLs via a
-route that does not use this container's egress proxy, so the 403 is CloudFront's own
-answer, not a sandbox restriction. The physician saw it first: every image in the contact
-sheet rendered as a broken icon.
+The note that stood here said the CDN returns 403 to anything that is not an authenticated
+session, and therefore a harvested URL was useless for looking at an image. **That was
+wrong, and it was wrong because a proxy error was read as a CloudFront error.**
 
-An earlier version of this file said the URLs were unsigned and had no expiry, therefore
-there was no deadline. **That was wrong**, and it was wrong in a way that mattered: it
-implied a shareable link, and a remote <img> to one of these fails in ANY page.
+`curl` from this container returns `curl: (56) CONNECT tunnel failed, response 403`. The 403
+is the **agent proxy refusing the CONNECT**, before any request reaches CloudFront. It is
+not CloudFront's answer, and it says nothing about whether the object is public.
 
-**To actually see the images, download them from the Higgsfield gallery and build the PDF
-locally:** `python3 tools/build_illustration_pdf.py <image-dir> --batch 20`. That embeds the
-bytes, matches each image to its question by filename, and reports anything it cannot match
-rather than guessing by position.
+Proved on 2026-08-02: the Higgsfield sandbox fetched
+`https://d8j0ntlcm91z4.cloudfront.net/user_.../hf_20260731_074923_....png` with a plain
+`curl -sf`, no cookies, no headers, no session -- and got a 2048x2048, 4.65 MB PNG. A
+public object.
+
+Consequence: **anyone on an ordinary network can download all 190 with a script.**
+`tools/download-rounds-codex-images.command` is generated from
+`tools/generated-image-urls.json` and names every file by its question id, which is better
+than any gallery bulk-export because the filenames carry the mapping.
+
+The container still cannot fetch them -- that limit is real and is the egress policy. But
+the physician's laptop can, and so can any machine that is not behind this proxy.
 
 
 The cloud session cannot run `show_generations` (see `HARVEST-HANDOFF.md` for why, and for
