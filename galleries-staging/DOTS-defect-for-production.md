@@ -130,3 +130,53 @@ Two things here that the July batch did not show as clearly:
 
 Page 1 is correct and can ship as delivered. The other nine need the header
 strip re-rendered.
+
+---
+
+## The 90-page batch of 2026-08-01: one defect fixed, a worse one introduced
+
+Nine galleries (increased ICP/TBI, spinal cord injury, migraine, iron
+deficiency anemia, B12/folate deficiency anemia, sickle cell disease,
+leukemia, lymphoma, thrombocytopenia).
+
+**Defect 2 is FIXED.** No page in these 90 fills more than one dot. Thank you —
+that is the one that made the strip unreadable.
+
+**Defect 1 persists**, and now differs by template: Neurology pages carry
+**12** dots on a ten-page gallery, the Heme & Onc pages mostly **10**, some
+11 or 12.
+
+### New Defect 3 — the single filled dot is in the WRONG POSITION
+
+This is a regression and it matters more than the count. A wrong dot count is
+cosmetic; a dot filled at the wrong index tells the reader they are on a
+different page than they are.
+
+Verified at native resolution, not off a contact sheet:
+
+| page | dots | filled | should be |
+|---|---|---|---|
+| Iron deficiency anemia, page 3 | 10 | **4th** | 3rd |
+| B12 / folate deficiency anemia, page 2 | 10 | **1st** | 2nd |
+
+Note these go in **opposite directions**, so it is not a constant offset that
+could be corrected by subtracting one. It is wrong on a substantial share of
+pages across several of the nine galleries.
+
+### New Defect 4 — inconsistent marker rendering
+
+* Unfilled rings are grey on the Neurology pages and **orange/yellow** on
+  thrombocytopenia.
+* **Iron deficiency anemia page 2** contains three different renderings in one
+  row: normal grey rings, one ring so dark it is nearly invisible against the
+  header, and one ring filled **grey** rather than the highlight colour.
+
+### What we need
+
+The header strip re-rendered on all 90 pages, with the dot row driven by the
+same page number that prints in "IMAGE n OF 10" — count from the gallery
+total, fill at that index, one marker style. That single change closes all
+four defects.
+
+Everything else in this batch is good: artwork, titles, page numbering in the
+header text, and the logo lockup are all correct.
