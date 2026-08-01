@@ -48,7 +48,13 @@
      ]
     ],
     "min": 30,
-    "max": 260
+    "max": 260,
+    "ftin": {
+     "ftMin": 1,
+     "ftMax": 8,
+     "inMin": 0,
+     "inMax": 11.9
+    }
    }
   ],
   "bands": [
@@ -137,8 +143,88 @@
      "bsa": 1.84,
      "band": "Normal weight"
     }
+   },
+   {
+    "in": {
+     "weight": 154,
+     "weight_unit": "lb",
+     "height_unit": "ftin",
+     "height_ft": 5,
+     "height_in": 10
+    },
+    "out": {
+     "bmi": 22.1,
+     "band": "Normal weight"
+    }
+   },
+   {
+    "in": {
+     "weight": 69.85,
+     "weight_unit": "kg",
+     "height": 177.8,
+     "height_unit": "cm"
+    },
+    "out": {
+     "bmi": 22.1,
+     "band": "Normal weight"
+    }
+   },
+   {
+    "in": {
+     "weight": 220,
+     "weight_unit": "lb",
+     "height_unit": "ftin",
+     "height_ft": 5,
+     "height_in": 6
+    },
+    "out": {
+     "bmi": 35.5,
+     "band": "Obesity class II"
+    }
+   },
+   {
+    "in": {
+     "weight": 180,
+     "weight_unit": "lb",
+     "height_unit": "ftin",
+     "height_in": 70
+    },
+    "out": {
+     "bmi": 25.8,
+     "band": "Overweight"
+    }
+   },
+   {
+    "in": {
+     "weight": 200,
+     "weight_unit": "lb",
+     "height_unit": "ftin",
+     "height_ft": 5,
+     "height_in": 14
+    },
+    "out": {
+     "bmi": 25.7,
+     "band": "Overweight"
+    }
    }
-  ]
+  ],
+  "unitSystems": {
+   "default": "imperial",
+   "order": [
+    "imperial",
+    "metric"
+   ],
+   "imperial": {
+    "label": "ft / in · lb",
+    "weight": "lb",
+    "height": "ftin"
+   },
+   "metric": {
+    "label": "cm · kg",
+    "weight": "kg",
+    "height": "cm"
+   }
+  }
  },
  {
   "id": "map",

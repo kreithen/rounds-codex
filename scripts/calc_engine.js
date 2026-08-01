@@ -54,9 +54,44 @@ function sum(spec, values) {
   return { score, band: bandFor(spec.bands, score) };
 }
 
+/* Feet and inches to centimetres.
+ *
+ * The two boxes are SUMMED, not treated as a bounded pair, so 5 ft 14 in gives
+ * the same answer as 6 ft 2 in -- which is what the person meant. Either box may
+ * be left empty; only the total has to be positive.
+ */
+function ftinToCm(ft, inch) {
+  const f = Number(ft) || 0;
+  const i = Number(inch) || 0;
+  const total = f * 12 + i;
+  return total > 0 ? total * 2.54 : NaN;
+}
+
+/* Centimetres back to whole feet plus inches, for the unit toggle.
+ *
+ * Inches are rounded before the carry, not after: 179.9 cm is 70.83 in, which
+ * rounds to 70.8 and stays 5 ft 10.8 in -- but a value that rounds up to exactly
+ * 12 has to become the next foot rather than render as "5 ft 12 in".
+ */
+function cmToFtIn(cm) {
+  const total = Number(cm) / 2.54;
+  if (!(total > 0)) return { ft: '', in: '' };
+  let ft = Math.floor(total / 12);
+  let inch = Math.round((total - ft * 12) * 10) / 10;
+  if (inch >= 12) { ft += 1; inch = 0; }
+  return { ft, in: inch };
+}
+
+function lbToKg(lb) { return Number(lb) * 0.45359237; }
+function kgToLb(kg) { return Number(kg) / 0.45359237; }
+
 function bmiBsa(spec, values) {
   const kg = toBase(values.weight, values.weight_unit, spec.inputs[0].units);
-  const cm = toBase(values.height, values.height_unit, spec.inputs[1].units);
+  // "ftin" is not a multiplier, so it cannot go through toBase -- it is two
+  // fields, and the height input carries it as a pseudo-unit for that reason.
+  const cm = values.height_unit === 'ftin'
+    ? ftinToCm(values.height_ft, values.height_in)
+    : toBase(values.height, values.height_unit, spec.inputs[1].units);
   if (!(kg > 0) || !(cm > 0)) return null;
   const m = cm / 100;
   const bmi = Math.round((kg / (m * m)) * 10) / 10;
@@ -160,5 +195,6 @@ function run(spec, values) {
 }
 
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = { run, sum, bmiBsa, map, dose, round, bandFor, toBase, KERNELS };
+  module.exports = { run, sum, bmiBsa, map, dose, round, bandFor, toBase, KERNELS,
+                     ftinToCm, cmToFtIn, lbToKg, kgToLb };
 }
