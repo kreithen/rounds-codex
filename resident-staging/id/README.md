@@ -26,16 +26,19 @@ quotes, bullet density, paywalled references, and drift from the approved names.
 | b3 | 11-15 | mycobacterial, bone & joint | PASS | PASS |
 | b4 | 16-20 | bone & joint, skin & soft tissue | PASS | PASS |
 | b5 | 21-25 | GI & hepatic | PASS | PASS |
-| b6 | 26-30 | GU, HIV | — | — |
-| b7 | 31-35 | HIV, STI | — | — |
-| b8 | 36-40 | STI, immunocompromised host | — | — |
-| b9 | 41-45 | immunocompromised, fungal | — | — |
-| b10 | 46-50 | fungal, travel & tropical | — | — |
-| b11 | 51-55 | vector-borne, respiratory viruses | — | — |
-| b12 | 56-60 | stewardship & prevention | — | — |
+| b6 | 26-30 | GU, HIV | PASS | PASS |
+| b7 | 31-35 | HIV, STI | PASS | PASS |
+| b8 | 36-40 | STI, immunocompromised host | PASS | PASS |
+| b9 | 41-45 | immunocompromised, fungal | PASS | PASS |
+| b10 | 46-50 | fungal, travel & tropical | PASS | PASS |
+| b11 | 51-55 | vector-borne, respiratory viruses | PASS | PASS |
+| b12 | 56-60 | stewardship & prevention | PASS | PASS |
 
-**Nothing ships until all 60 pass.** A "Top 60" page holding 20 entries is worse than
-no page.
+**All 60 pass. Merged and deployed 2026-08-01** (app commit `e5931de`, sw cache v18)
+by `scripts/merge_id_specialty.js`, which updates the five things that must change
+together — data, specialties, active, titles and conditions — and refuses to run if
+the entry count is wrong, an id collides, or a Relevant Condition does not exist in
+`conditions.json`. RES_DATA is now 1368.
 
 ## What the gates have already caught
 
@@ -59,3 +62,17 @@ not after. So far:
   14.5% (7 days) vs 16.1% (14 days), noninferior. **It excluded S. aureus,
   S. lugdunensis, Candida, severe immunocompromise and endocarditis** — so the 7-day
   result must never be carried into those, and the SAB entry says so explicitly.
+- **CAPE-COD** — real. NEJM 2023, 31 French centers; hydrocortisone cut 28-day mortality
+  in severe ICU community-acquired pneumonia, 6.2% vs 11.9%.
+- **Study 31 / ACTG A5349** — real. NEJM 2021; the 4-month rifapentine-moxifloxacin
+  regimen is noninferior for drug-susceptible pulmonary TB and is endorsed by WHO and CDC.
+- **WHO BPaLM** — real. 2022 WHO consolidated guidelines recommend the 6-month
+  bedaquiline/pretomanid/linezolid/moxifloxacin regimen over 9- and 18-month regimens.
+- **OVIVA** and **STOP-IT** — both real and correctly described (oral noninferior for
+  bone and joint infection; fixed 4-day course after adequate source control).
+
+## Still outstanding
+
+The 2025 and 2026 Clinical Guidelines for this specialty are NOT shipped. Twenty
+submitted entries need citation checking first, and four appear under both years
+(CloCeBa/SNAP, DoxyPEP, gepotidacin, dalbavancin/DOTS).
