@@ -7,7 +7,11 @@ const PORT=+(process.argv[3]||8899);
 const TYPES={".html":"text/html",".jpg":"image/jpeg",".png":"image/png",".pdf":"application/pdf",
   ".js":"text/javascript",".json":"application/json",".css":"text/css",
   ".woff2":"font/woff2",".woff":"font/woff",".svg":"image/svg+xml",".ico":"image/x-icon",
-  ".webmanifest":"application/manifest+json",".webp":"image/webp",".txt":"text/plain"};
+  ".webmanifest":"application/manifest+json",".webp":"image/webp",".txt":"text/plain",
+  // Audio: Netlify serves these by extension, and the sim was returning
+  // application/octet-stream, so a player verified here was being tested against a
+  // content type production never sends.
+  ".mp3":"audio/mpeg",".m4a":"audio/mp4",".ogg":"audio/ogg",".wav":"audio/wav"};
 // _redirects: "<from>  <to>  <status>", one per line, # comments. Only the "/prefix/*" shape
 // this app uses is handled; anything fancier would need the real Netlify matcher.
 function rules(){
