@@ -39,6 +39,31 @@ http.createServer((req,res)=>{
     else if(r){ res.writeHead(r.status,{Location:r.to}); return res.end(); }
     else { res.writeHead(404); return res.end("not found: "+p); }
   }
-  res.writeHead(200,{"Content-Type":TYPES[path.extname(f)]||"application/octet-stream"});
+  // Content-Length + Range, because Netlify sends both and the difference is not cosmetic.
+  // Without Content-Length the sim replies Transfer-Encoding: chunked, and a browser that
+  // cannot see the file size cannot estimate an MP3's duration -- media.duration stays NaN
+  // until the whole 5.9 MB has arrived. Ignoring Range is worse: a seek in a media element
+  // is a Range request, so the audio player's scrubber could not actually be tested here at
+  // all. Both were true until 2026-08-01, which made the sim quietly wrong for exactly the
+  // feature whose design depends on Range reaching the network (see sw.js MEDIA_RE).
+  const type=TYPES[path.extname(f)]||"application/octet-stream";
+  const size=fs.statSync(f).size;
+  const range=req.headers.range;
+  const m=range&&/^bytes=(\d*)-(\d*)$/.exec(range.trim());
+  if(m){
+    let start=m[1]===""?null:+m[1], end=m[2]===""?null:+m[2];
+    if(start===null){ start=Math.max(0,size-(end||0)); end=size-1; }   // suffix range
+    else if(end===null||end>=size) end=size-1;
+    if(start>end||start>=size){
+      res.writeHead(416,{"Content-Range":"bytes */"+size,"Content-Type":type});
+      return res.end();
+    }
+    res.writeHead(206,{"Content-Type":type,"Accept-Ranges":"bytes",
+      "Content-Range":`bytes ${start}-${end}/${size}`,"Content-Length":end-start+1});
+    if(req.method==="HEAD") return res.end();
+    return fs.createReadStream(f,{start,end}).pipe(res);
+  }
+  res.writeHead(200,{"Content-Type":type,"Content-Length":size,"Accept-Ranges":"bytes"});
+  if(req.method==="HEAD") return res.end();
   fs.createReadStream(f).pipe(res);
 }).listen(PORT,()=>console.log("sim on :"+PORT+" root="+ROOT));
