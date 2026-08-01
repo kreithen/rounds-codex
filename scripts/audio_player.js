@@ -125,7 +125,11 @@ function rcapInit(root) {
     el.__rcap = true;
 
     var audio = new Audio();
-    audio.preload = 'metadata';          // never pull 5.9 MB just to draw the bar
+    /* Nothing at all until Play. The duration is published in RC_AUDIO, so the bar
+       already reads 6:06 without a single byte; "metadata" spent a request per page
+       view to learn a number we had shipped. Audio also bypasses the service worker
+       (sw.js MEDIA_RE) so Range requests reach the network and seeking works. */
+    audio.preload = 'none';
     audio.src = el.getAttribute('data-src');
 
     var q     = function (s) { return el.querySelector(s); };
