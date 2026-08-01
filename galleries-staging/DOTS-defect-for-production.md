@@ -180,3 +180,38 @@ four defects.
 
 Everything else in this batch is good: artwork, titles, page numbering in the
 header text, and the logo lockup are all correct.
+
+---
+
+## DIC, delivered the same day: the cumulative fill is BACK
+
+Disseminated intravascular coagulation arrived hours after the 90-page batch
+above, and it has the cumulative fill that batch had fixed. So there are at
+least two template versions in flight at once, and "we fixed it" cannot be
+verified on one gallery — it has to be checked per delivery.
+
+Read at native resolution:
+
+| page | dots | markers |
+|---|---|---|
+| 1 | 11 | 1 filled ✓ (count wrong) |
+| 2 | 11 | **1st** filled — not the 2nd |
+| 3 | 11 | **1st** filled — not the 3rd |
+| 4 | 11 | first **3** filled, cumulative |
+| 5 | 11 | first **5** filled, cumulative |
+| 6 | 10 | 5 filled, then one **half-cyan half-orange** marker, then an orange disc at position 8 |
+| 7 | 10 | 8 filled + orange disc at **9** |
+| 8 | 10 | 8 filled + orange disc at **9** |
+| 9 | 10 | 9 filled + orange disc at **10** |
+| 10 | 11 | 10 filled + orange disc at **11** |
+
+Three things beyond the two known defects:
+
+* **A second highlight colour.** From page 6 on there is an orange disc as
+  well as the cyan ones, and it is never at the current page index.
+* **A hybrid marker.** Page 6 position 6 is drawn half cyan and half orange,
+  which is not any of the intended states.
+* **Pages 2 and 3 both fill only the first dot**, so three consecutive pages
+  are visually identical.
+
+Only page 1 has its fill in the right place, and no page has the right count.
