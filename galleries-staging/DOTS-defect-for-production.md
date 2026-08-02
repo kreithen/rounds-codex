@@ -236,3 +236,55 @@ between pages, which defeats every fixed-geometry method. The tool was deleted r
 
 Automated dot *counting* is unreliable for the same reason. Reading the contact sheets by eye is
 the method that works, and it is how every table above was produced.
+
+---
+
+## UPDATE 2026-08-02 (later) — COVID-19 and Osteomyelitis: badge FIXED, dots still wrong
+
+Two new ten-page galleries arrived built on a revised template. Evidence:
+`DOTS-evidence/covid-dots.png` and `DOTS-evidence/osteo-dots.png` — the dot row of all ten pages
+of each gallery, stacked, at 2x.
+
+**The good news, and it is the big one: the false review status is GONE.** The footer metadata bar
+no longer carries a REVIEW cell at all. The last cell is the RC-check shield, which is the
+canonical verified mark. Nothing on either gallery claims the clinical review is pending. That is
+the defect that mattered most and it is fixed at source — please keep this template.
+
+Also right on both galleries: the logo lockup is canonical on all twenty pages (no TM variant, no
+spurious glyph inside the emblem), and — for the first time in any batch — **the pages arrived in
+page order**, so `IMAGE n OF 10` matches the filename on all twenty.
+
+**Defects 1 and 3 are still present.** Read off the evidence sheets:
+
+| gallery | page | dots | filled | should be |
+|---|---|---|---|---|
+| covid | 1 | 10 | 1st | correct |
+| covid | 2 | **9** | **1st** | 10 dots, 2nd |
+| covid | 3 | 10 | **1st** | 3rd |
+| covid | 4 | 10 | 4th | correct |
+| covid | 5 | **9** | **6th** | 10 dots, 5th |
+| covid | 6 | **9** | **7th** | 10 dots, 6th |
+| covid | 7 | **9** | **8th** | 10 dots, 7th |
+| covid | 8 | **9** | **9th** | 10 dots, 8th |
+| covid | 9 | **9** | 9th | 10 dots |
+| covid | 10 | 10 | 10th | correct |
+
+covid pages 5–8 are all filled **one position too far right**, and page 3 is two positions too
+far left, so again no single offset corrects it.
+
+Osteomyelitis is much better on the index — only page 8 is wrong, filling the 7th on page 8 — but
+**nine of its ten pages carry the wrong dot count**: nine dots on pages 1, 2, 3, 5, 6, 7, 9 and
+**eleven** on page 4. Only page 10 has ten.
+
+So the two defects are independent, and this batch shows it clearly: one gallery got the count
+mostly right and the index mostly wrong, the other the reverse. Fixing the index alone will not
+be enough.
+
+### The 1023/1022-wide export is back
+
+Nine of the ten COVID pages and nine of the ten Osteomyelitis pages exported at **1022x1536**
+rather than 1024x1536; one page of each is correct. Same class of rounding artefact reported for
+the 2026-08-02 batch (which came in at 1023x1537). We resampled to 1024x1536 to build, but a page
+resampled after export is softer than one exported at the right size, and a gallery must ship one
+size.
+

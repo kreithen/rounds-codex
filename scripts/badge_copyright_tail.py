@@ -117,9 +117,9 @@ def main():
             bx0, by0, bx1, by1 = box
             lefts.append(bx0)
             print(f'  {gid}-{im["n"]:02d}  erase x{bx0}-{bx1} y{by0}-{by1}')
-            I = Image.open(p).convert('RGB')
+            I = Image.open(p)            # unconverted, so save_like keeps its qtables
             if a.apply:
-                base = np.asarray(I).astype(float)
+                base = np.asarray(I.convert('RGB')).astype(float)
                 out = base.copy()
                 for y in range(by0, by1 + 1):
                     out[y, bx0:bx1 + 1] = np.median(base[y, max(0, bx0 - 70):bx0 - 10, :], axis=0)
@@ -129,6 +129,7 @@ def main():
                 save_like(Image.fromarray(out.round().astype(np.uint8)), I,
                           os.path.join(gd, os.path.basename(p)))
             else:
+                I = I.convert('RGB')
                 ImageDraw.Draw(I).rectangle([bx0, by0, bx1, by1], outline=(255, 40, 90), width=1)
                 w, _ = I.size
                 C = I.crop((bx0 - 135, by0 - 3, min(w, bx1 + 10), by1 + 3))

@@ -314,8 +314,11 @@ def erase_boxes(src, dst, boxes):
     perturbs the whole frame and swamped this check with 43k pixels of codec noise the first time
     it was written.
     """
-    im = Image.open(src).convert('RGB')
-    a = np.asarray(im).astype(float)
+    # Keep the UNCONVERTED handle: .convert() returns a new Image that has dropped the JPEG
+    # quantization tables, so passing the converted one to save_like() silently fell back to a
+    # fixed quality and re-quantized the whole page after all.
+    im = Image.open(src)
+    a = np.asarray(im.convert('RGB')).astype(float)
     h, w, _ = a.shape
     out = a.copy()
     pad = 3
