@@ -369,7 +369,24 @@ no backend. This file is context for future sessions — read it before starting
   and strips** — review material, never app content. Anesthesiology is coded **`anes`**. Years sort
   **ascending**, so 2025 sits above 2026 (specified; not newest-first like the rest of the app).
   Built by `scripts/add_clinical_guidelines.js` + `scripts/add_guideline_share.js`.
-  **Live for 23 specialties (438 entries) as of 2026-07-30**: everything except `vasc`.
+  **Live for all 25 specialties (470 entries) as of 2026-08-02** — `vasc` was the last, at 2025=8
+  and 2026=7.
+  **An entry can be wrong in both directions at once.** The vascular thrombectomy entry overstated
+  its design (a propensity score matched analysis called "multi-center randomized") *and*
+  understated its result (superior called "equivalent"). Fixing only the design would have left it
+  wrong the other way. One error found is not a reason to stop reading.
+  **Understatement is a real failure mode, not a safe one.** The limb preservation entry weakened a
+  BEST-CLI trial analysis into "national outcomes data" and 40% (HR 0.60, p=0.005) into "30%+", and
+  dropped the mechanism — early podiatry, more minor limb-sparing surgery — that tells a reader what
+  to build. Check figures that sound modest, not only ones that sound big.
+  **Aspirational content cannot be corrected into shape** — the correction would be deleting the
+  claim. Vascular 2026's remote ischemia monitoring entry described continuous outpatient TcPO2
+  surveillance as routine PAD practice; it is early-stage research and the SVS still recommends
+  ABI/duplex. Dropped rather than merged.
+  **`build_corrections_summary.js` throws on a year-keyed staging file** — `id-guidelines.json` is
+  `{2025:[],2026:[]}`, not a flat array, so it was silently dropped from the argument list and 17
+  Infectious Disease entries were missing from `CORRECTIONS-all.md` for weeks. Split it by year on
+  the way in.
   General Surgery is coded **`gs`** and displays as "Surgery (General)", so the name sort puts it
   after Radiology, not under G.
   **`thoracic` 2025 has 9**: the STS POAF guideline was submitted under both years and is a 2026
