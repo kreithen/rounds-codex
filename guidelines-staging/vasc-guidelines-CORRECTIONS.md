@@ -7,13 +7,16 @@ Updates index at `/u/`.
 Status vocabulary is the established one so `build_corrections_summary.js` sorts worst-first:
 `REVERSED`, `NOT FOUND`, `replaced`, `corrected`, `matched`.
 
-## Progress: 3 of 20 checked
+## Progress: 6 of 20 checked
 
 | # | year | entry | status |
 |---|---|---|---|
 | 2 | 2025 | CREST-2 | **matched** |
 | 3 | 2025 | SWEDEPAD | **matched** |
 | 9 | 2025 | LINC Medicare drug-eluting analysis | **conflicts with #3 — see below** |
+| 5 | 2025 | GORE TAG TBE zone 0/1 | **corrected** — real approval, two overstatements |
+| 1 | 2026 | SVS BTAI focused update | **matched** |
+| 4 | 2026 | EFFORT-2 | **matched** — real, framing overstated |
 
 ---
 
@@ -76,15 +79,72 @@ practice — and have it state explicitly that SWEDEPAD found no amputation or
 quality-of-life benefit. Two entries that acknowledge each other teach the controversy,
 which is the truth. Two that contradict each other silently teach carelessness.
 
+## 2025 #5 — GORE TAG TBE zone 0/1 — CORRECTED
+
+The approval is real: FDA expanded the GORE TAG Thoracic Branch Endoprosthesis to zones 0 and
+1 in **June 2025**, having first approved it for zone 2 in May 2022. It is the first
+off-the-shelf single-branch thoracic endoprosthesis indicated across zones 0, 1 and 2.
+
+Two things in the entry overstate it:
+
+* **"total aortic arch reconstruction"** — the device preserves flow to **one** arch branch
+  vessel, not all three. It is a single-branch device. A trainee reading this would expect it
+  to replace a full arch debranching, and it does not.
+* **"significantly reduces surgical morbidity, ICU stays, and stroke rates"** — the zone 0/1
+  pivotal trial was **77 patients, single-arm**. It reported no device migration or wire
+  fracture at 12 months and low type I and III endoleak rates. There is no comparator, so no
+  comparative claim about stroke or ICU stay can be made from it.
+
+Rewrite to: an on-label endovascular alternative to open repair for single-branch arch
+lesions, avoiding sternotomy, cardiopulmonary bypass and circulatory arrest — which is the
+real and substantial advance — supported by a 77-patient single-arm pivotal trial.
+
+Source: <https://vascularnews.com/gore-tag-thoracic-branch-endoprosthesis-receives-expanded-fda-approval-for-endovascular-aortic-arch-repair/>
+
+## 2026 #1 — SVS BTAI focused update — MATCHED
+
+Real and accurately described. *J Vasc Surg* 2026, focused update superseding the 2011
+guideline, **13 recommendations**. Grades 1 and 2 get definitive nonoperative management over
+TEVAR or open repair; for stable grade 3, delayed TEVAR beyond 24 hours to prioritize
+traumatic brain and solid organ injury.
+
+Worth adding, because it is the practical part: **follow-up imaging is none routinely for
+grade 1, and a single CTA for grade 2** to confirm resolution.
+
+This one corrected the app. `vasc-tevar` cited the 2011 guideline and treated grade 2 as
+individualized; both are now updated.
+
+Source: <https://www.jvascsurg.org/article/S0741-5214(26)00110-2/fulltext>
+
+## 2026 #4 — EFFORT-2 — MATCHED, framing overstated
+
+I expected this to be an invented acronym, since those have been a recurring failure in these
+submissions. It is real: presented as late-breaking data at **VAM26, Boston, 13 June 2026**,
+from the NIH-funded study "Role of a Novel Exercise Program to Prevent Post-Thrombotic
+Syndrome" (Brajesh Lal, NCT02148029). Reported as 100% freedom from post-thrombotic syndrome
+with aerobic exercise plus anticoagulation.
+
+Two corrections to the framing rather than the fact:
+
+* **"Reverses historical practices of prolonged bed rest"** is a straw man. Bed rest for acute
+  DVT was abandoned two decades ago; early ambulation has been standard care since the early
+  2000s. The entry claims a reversal that had already happened.
+* **"Vascular specialists now routinely prescribe immediate supervised physical activity"** —
+  one late-breaking presentation does not establish routine practice. And a 100% event-free
+  rate is an extraordinary result that should be quoted with its sample size, which the
+  abstract-level sources do not give. Get the full publication before shipping the number.
+
 ---
 
-## Still to check (17)
+## Still to check (14)
 
-2025: #1 SVS claudication guideline · #4 CEA vs CAS 10-year cohort · #5 GORE TAG TBE zone
-0/1 expansion · #6 ESCAPE-MeVO and DISTAL · #7 dual-pathway registry · #8 long COVID
-vascular aging · #10 palliative-aligned vascular care
+2025: #1 SVS claudication guideline · #4 CEA vs CAS 10-year cohort · #6 ESCAPE-MeVO and
+DISTAL · #7 dual-pathway registry · #8 long COVID vascular aging · #10 palliative-aligned
+vascular care
 
-2026: all ten
+2026: #2 ESVS descending thoracic guidelines · #3 ACC/AHA PAD performance measures · #5
+off-the-shelf F/BEVAR · #6 TCAR dominance · #7 dual-pathway inhibition · #8 mechanical
+thrombectomy vs thrombolysis in DVT · #9 limb salvage teams · #10 remote ischemia monitoring
 
 Flagged on first read, not yet verified:
 
@@ -106,3 +166,18 @@ Flagged on first read, not yet verified:
   live at deploy `6a6eaeed9660310008c99027`).
 * `vasc-fempop-dcb` — SWEDEPAD added, with the endpoint distinction spelled out: the patency
   data are real, the amputation data are not.
+* `vasc-tevar` — was citing the 2011 BTAI guideline and calling grade 2 individualized. Now
+  cites the 2026 focused update, states grades 1 and 2 as definitively nonoperative, and adds
+  the delayed-TEVAR-beyond-24-hours suggestion for stable grade 3.
+
+## Running tally on my own judgement
+
+Six submitted claims checked, and **six were substantively real** — CREST-2, SWEDEPAD, the
+GORE approval, the BTAI update and EFFORT-2 all verified, with only the LINC entry genuinely
+unsound. I doubted CREST-2 and EFFORT-2 outright and was wrong both times.
+
+The CLAUDE.md note holds and should be read before every one of these passes: the failure mode
+in these submissions is **overstated sourcing, not invented science**. Three of the six needed
+a correction, and every correction was about scope or strength of evidence — single-branch
+described as total arch, a single-arm trial described as comparative, a straw-man reversal —
+not about the underlying clinical claim being false. Search before doubting.

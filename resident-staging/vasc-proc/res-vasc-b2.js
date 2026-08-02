@@ -113,7 +113,7 @@ const RES_VASC_B2 = [
   present: [
     "Descending thoracic aneurysm at 5.5 cm or above in an endovascular candidate",
     "Complicated type B dissection with malperfusion or rupture, and uncomplicated type B with high-risk features",
-    "Blunt thoracic aortic injury grade III and IV, where TEVAR has replaced open repair and cut mortality and paraplegia substantially",
+    "Blunt thoracic aortic injury grade 3 and 4, where TEVAR has replaced open repair and cut mortality and paraplegia substantially. The 2026 SVS focused update recommends definitive NONOPERATIVE management for grades 1 and 2, so those are not TEVAR patients",
     "Penetrating aortic ulcer, intramural hematoma with high-risk features, and mycotic aneurysm as a bridge"
   ],
   dx: [
@@ -149,11 +149,11 @@ const RES_VASC_B2 = [
     "Never cover the left subclavian in a patient with a patent left internal mammary graft or a dominant left vertebral without revascularizing first",
     "Oversizing rules are different in dissection and trauma - the aorta is normal size and a 20% oversize causes collapse, infolding or retrograde dissection",
     "Delayed paraplegia after an uneventful case is the thing the ward must be primed for; the protocol should be on the wall",
-    "In trauma, impulse control with beta blockade in the emergency department matters more than how fast the patient reaches the table"
+    "In trauma, impulse control with beta blockade in the emergency department matters more than how fast the patient reaches the table - and for a stable grade 3 the 2026 SVS update suggests delaying TEVAR beyond 24 hours so traumatic brain and solid organ injury are addressed first"
   ],
   refs: [
     { t: "2022 ACC/AHA guideline for the diagnosis and management of aortic disease", u: "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001106" },
-    { t: "SVS clinical practice guidelines on the management of blunt thoracic aortic injury", u: "https://www.jvascsurg.org/article/S0741-5214(10)02364-3/fulltext" },
+    { t: "SVS clinical practice guideline on blunt thoracic aortic injury: focused update (JVS 2026)", u: "https://www.jvascsurg.org/article/S0741-5214(26)00110-2/fulltext" },
     { t: "StatPearls: Thoracic Endovascular Aortic Repair", u: "https://www.ncbi.nlm.nih.gov/books/NBK499990/" }
   ]
 },
