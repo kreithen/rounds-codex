@@ -219,6 +219,7 @@ const RES_VASC_B5 = [
     "Superficial femoral and popliteal disease causing lifestyle-limiting claudication that has failed exercise and medical therapy, or chronic limb-threatening ischemia",
     "Short focal lesions do well; long occlusions favor bypass in a patient with vein and acceptable risk",
     "Drug-coated balloons improve patency over plain angioplasty in the femoropopliteal segment",
+    "But patency is not the outcome the patient feels: SWEDEPAD 1 and 2 (Lancet 2025, registry-based randomized, over 99% paclitaxel) found no difference in major amputation, quality of life or mortality, with a reintervention benefit in year one that did not persist",
     "The 2018 paclitaxel mortality signal was not confirmed on longer follow-up and the FDA softened its warning in 2023"
   ],
   dx: [
@@ -255,12 +256,13 @@ const RES_VASC_B5 = [
     "The dwell time is the treatment - a drug-coated balloon inflated for 30 seconds is an expensive plain balloon",
     "Prepare the vessel first; drug will not cross circumferential calcium, and this is why heavily calcified lesions do badly with an unprepared drug-coated balloon",
     "Do not stent across the knee if you can avoid it; the flexion point fractures stents",
-    "A claudicant who has not tried supervised exercise therapy should not be on the table at all"
+    "A claudicant who has not tried supervised exercise therapy should not be on the table at all",
+    "Be clear which endpoint you are quoting when you justify a drug-coated device - the patency data are real and the amputation data are not"
   ],
   refs: [
     { t: "2024 ACC/AHA guideline for the management of lower extremity peripheral artery disease", u: "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001251" },
     { t: "FDA update on paclitaxel-coated devices for peripheral artery disease", u: "https://www.fda.gov/medical-devices/letters-health-care-providers/update-paclitaxel-coated-devices-treat-peripheral-arterial-disease-letter-health-care-providers" },
-    { t: "StatPearls: Peripheral Arterial Disease", u: "https://www.ncbi.nlm.nih.gov/books/NBK430745/" }
+    { t: "SWEDEPAD 1: paclitaxel-coated vs uncoated devices in CLTI (Lancet 2025)", u: "https://www.sciencedirect.com/science/article/abs/pii/S0140673625015855" }
   ]
 }
 ];
