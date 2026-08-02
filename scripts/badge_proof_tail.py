@@ -14,6 +14,11 @@ TWO GALLERIES, TWO METHODS, AND WHY
 pad is measured automatically. Its strip is a fixed template: the tail lands at x450-543 on nine
 of ten pages and x441/x453 on the other two, and the only variable is the page number's width.
 
+NOT IDEMPOTENT -- run it once, over the originals. dvt refuses a second pass, because its table
+asserts there is ink where the tail used to be. pad's automatic path does NOT: on an
+already-erased page it finds the NEW last segments and eats "PAD Page N v6.0" as well. Re-run
+the whole chain from the deployed pages rather than re-running a stage over its own output.
+
 dvt is a TABLE of ten hand-read positions, and that is deliberate. Three automatic rules were
 tried on it and each cut through the middle of a word:
 
@@ -57,6 +62,32 @@ DVT = {
     9:  (1351, 1367, 521, 653),
     10: (1345, 1365, 559, 662),
 }
+
+
+# pad page 6 also carries the claim a third time, in red, INSIDE the artwork:
+#   "TEACHING ILLUSTRATIONS - NOT DIAGNOSTIC PHOTOMICROGRAPHS - PATHOLOGIST REVIEW PENDING"
+# The physician asked for the whole line, not just the tail. It is one line on one page: a scan
+# for red text of that shape across all 20 pad and dvt pages returned 28 candidates, and looking
+# at every one showed the other 27 are legitimate artwork ("ALI - SUDDEN <2 WEEKS", "THE 6 Ps",
+# "RED FLAGS: SEEK IMMEDIATE CARE"). Hard-coded rather than detected, for that reason.
+PAD6_RED = (199, 907, 606, 923)
+
+
+def red_of(a):
+    r, g, b = a[:, :, 0], a[:, :, 1], a[:, :, 2]
+    return (r > 110) & (r > g + 45) & (r > b + 45)
+
+
+def pad6_red_box(a):
+    x0, y0, x1, y1 = PAD6_RED
+    red = red_of(a)
+    inside = int(red[y0:y1 + 1, x0:x1 + 1].sum())
+    if inside < 400:
+        return None, f'only {inside} red px in the recorded disclaimer box -- artwork changed'
+    outside = int(red[y0:y1 + 1].sum()) - inside
+    if outside > 20:
+        return None, f'{outside} red px on those rows outside the box -- re-measure'
+    return (x0, y0, x1, y1), None
 
 
 def ink_of(a):
@@ -166,21 +197,32 @@ def main():
             box, err = pad_box(arr) if gid == 'pad' else dvt_box(arr, n)
             if err:
                 print(f'  FAIL  {gid}-{n:02d}  {err}'); bad += 1; continue
+            boxes = [box]
+            if gid == 'pad' and n == 6:
+                extra, xerr = pad6_red_box(arr)
+                if xerr:
+                    print(f'  FAIL  pad-06 disclaimer  {xerr}'); bad += 1; continue
+                boxes.append(extra)
             bx0, by0, bx1, by1 = box
-            print(f'  {gid}-{n:02d}  erase x{bx0}-{bx1} ({bx1-bx0}px) y{by0}-{by1}')
+            print(f'  {gid}-{n:02d}  erase x{bx0}-{bx1} ({bx1-bx0}px) y{by0}-{by1}'
+                  + ('  + the red PATHOLOGIST REVIEW PENDING line' if len(boxes) > 1 else ''))
             if a.apply:
                 base = np.asarray(I.convert('RGB')).astype(float)
                 out = base.copy()
-                for y in range(by0, by1 + 1):
-                    out[y, bx0:bx1 + 1] = np.median(base[y, max(0, bx0 - 70):max(1, bx0 - 10), :], axis=0)
+                for cx0, cy0, cx1, cy1 in boxes:
+                    for y in range(cy0, cy1 + 1):
+                        out[y, cx0:cx1 + 1] = np.median(
+                            base[y, max(0, cx0 - 70):max(1, cx0 - 10), :], axis=0)
                 d = np.abs(out - base).max(axis=2)
-                d[by0:by1 + 1, bx0:bx1 + 1] = 0
+                for cx0, cy0, cx1, cy1 in boxes:
+                    d[cy0:cy1 + 1, cx0:cx1 + 1] = 0
                 assert not (d > 0).any(), f'{gid}-{n:02d} changed pixels outside its box'
                 save_like(Image.fromarray(out.round().astype(np.uint8)), I,
                           os.path.join(gd, os.path.basename(p)))
             else:
                 V = I.convert('RGB')
-                ImageDraw.Draw(V).rectangle([bx0, by0, bx1, by1], outline=(255, 40, 90), width=1)
+                for cb in boxes:
+                    ImageDraw.Draw(V).rectangle(list(cb), outline=(255, 40, 90), width=1)
                 w, _ = V.size
                 C = V.crop((max(0, bx0 - 230), by0 - 4, min(w, bx1 + 12), by1 + 4))
                 C.resize((C.width * 3, C.height * 3), Image.LANCZOS)\
