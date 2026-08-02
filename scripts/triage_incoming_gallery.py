@@ -109,6 +109,9 @@ def main():
     if not inc:
         sys.exit(f'no images in {a.incoming}')
     out = a.out or a.incoming
+    # --out is written to at the very end, after the whole diff has run. Left uncreated it
+    # throws there, so the expensive comparison is done and then thrown away.
+    os.makedirs(out, exist_ok=True)
 
     live = live_pages(a.site)
     print(f'{len(inc)} incoming pages vs {len(live)} live pages\n')

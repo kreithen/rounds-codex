@@ -103,6 +103,48 @@ same generator.
 
 ---
 
+## UPDATE 2026-08-02 — the count is FIXED, the index is still wrong
+
+A new batch arrived (Sepsis & Septic Shock, plus one stray HIV page). Evidence:
+`DOTS-evidence/sepsis-hiv-0802-dots.png`, cropped at **native resolution** rather than off the
+downscaled contact sheet, because the sheet is reliable for the `IMAGE n OF 10` text but not for
+counting which dot is filled.
+
+**Good: Defects 1, 2 and 4 are gone.** Every page carries exactly 10 dots, matching the page
+total. No page fills more than one. One marker style throughout, cyan disc on grey rings.
+
+**Defect 3 survives, and it is the one that matters.** Six of the ten pages fill the wrong dot:
+
+| page | says | fills | off by |
+|---|---|---|---|
+| IMAGE 2 OF 10 | 2 | **1st** | −1 |
+| IMAGE 4 OF 10 | 4 | **3rd** | −1 |
+| IMAGE 5 OF 10 | 5 | **6th** | +1 |
+| IMAGE 6 OF 10 | 6 | **7th** | +1 |
+| IMAGE 8 OF 10 | 8 | **7th** | −1 |
+| IMAGE 9 OF 10 | 9 | **7th** | −2 |
+
+Correct on pages 1, 3, 7 and on the stray HIV page 4.
+
+**The errors go in both directions and vary in size**, so this is still not a constant offset that
+could be corrected by adding or subtracting one. Three different pages (6, 8 and 9) all fill the
+**7th** dot, which looks less like an off-by-one than like the dot index coming from a source that
+is not the page number at all.
+
+The page number printed in `IMAGE n OF 10` is right on all ten. So whatever variable drives the
+text is correct and the one driving the dot row is not — the same conclusion as the original
+report, now with the count defect cleared away and the index defect isolated on its own.
+
+### Also new: the page size is no longer uniform within a batch
+
+Four pages are **1024x1536** and six are **1023x1537**. The standard is 1024x1536 and
+`fix_page_logo.py` errors on a mixed set by design. 1023x1537 is not 2:3 either, so it is not a
+deliberate alternative size — it looks like a rounding artefact somewhere in the export. Worth
+fixing upstream: we can resample, but a page that has been resampled twice is softer than one
+exported at the right size.
+
+---
+
 ## What we need back
 
 Re-rendered pages, same 1024×1536, same JPEG quality, same filenames, with the header strip
