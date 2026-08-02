@@ -26,9 +26,12 @@ back from the end of the line (the page-10 lines are 3px longer). What holds on 
 is to take the last two segments and then absorb the one before them ONLY if it is bullet-width:
 that separator is 3-4px wide where "10" is 9-13px, so the two are never confused.
 """
-import argparse, json, os
+import argparse, json, os, sys
 import numpy as np
 from PIL import Image, ImageDraw
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from badge_lines import save_like
 
 SITE = '/workspace/rounds-codex-app'
 # The copyright row, measured per gallery. Deliberately not searched for: the panel border a few
@@ -88,6 +91,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--outdir', required=True)
     ap.add_argument('--apply', action='store_true')
+    # These three pages carry the claim TWICE, so this pass has to run over the output of
+    # badge_lines.py rather than over the deployed original -- otherwise whichever runs second
+    # writes a file that still has the other copy on it.
+    ap.add_argument('--srcdir', help='take pages from <srcdir>/<gallery>/ instead of the site')
     a = ap.parse_args()
     G = json.load(open(os.path.join(SITE, 'content', 'galleries.json')))['galleries']
     os.makedirs(a.outdir, exist_ok=True)
@@ -99,6 +106,11 @@ def main():
         lefts = []
         for im in sorted(gal['images'], key=lambda i: i['n']):
             p = os.path.join(SITE, gal.get('base', '') or '', im['file'])
+            if a.srcdir:
+                alt = os.path.join(a.srcdir, gid, os.path.basename(p))
+                if not os.path.exists(alt):
+                    print(f'  SKIP  {gid}-{im["n"]:02d}  not in srcdir'); continue
+                p = alt
             box, err = box_for(p, y0, y1)
             if err:
                 print(f'  SKIP  {gid}-{im["n"]:02d}  {err}'); continue
@@ -114,8 +126,8 @@ def main():
                 d = np.abs(out - base).max(axis=2)
                 d[by0:by1 + 1, bx0:bx1 + 1] = 0
                 assert not (d > 0).any(), f'{gid}-{im["n"]:02d} changed pixels outside its box'
-                Image.fromarray(out.round().astype(np.uint8)).save(
-                    os.path.join(gd, os.path.basename(p)), 'JPEG', quality=90, optimize=True)
+                save_like(Image.fromarray(out.round().astype(np.uint8)), I,
+                          os.path.join(gd, os.path.basename(p)))
             else:
                 ImageDraw.Draw(I).rectangle([bx0, by0, bx1, by1], outline=(255, 40, 90), width=1)
                 w, _ = I.size

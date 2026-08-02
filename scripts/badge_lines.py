@@ -44,6 +44,32 @@ BAND = 0.70          # search the bottom 30%: the bar sits low, but copd repeats
                      # in the full-width copyright line, which a right-column search never saw.
 
 
+def save_like(img, src_im, dst):
+    """Write a JPEG using the SOURCE file's quantization tables and chroma subsampling.
+
+    Re-encoding at a nominal quality re-quantizes every block on the page, not just the edited
+    one, so a page that was touched in a 100x40px cell comes back measurably different across
+    its whole area -- 3,000+ pixels shifted by more than 28 levels, concentrated on the thin
+    bright panel borders where JPEG rings worst. That is a real quality loss on 296 pages, and
+    it also drowns any mechanical check for damage outside the erase box in noise.
+
+    Reusing the source's own tables means the untouched blocks re-quantize to what they already
+    were, so the diff collapses to the edit itself.
+    """
+    q = getattr(src_im, 'quantization', None)
+    kw = dict(optimize=True)
+    if q:
+        kw['qtables'] = q
+        try:
+            from PIL import JpegImagePlugin
+            kw['subsampling'] = JpegImagePlugin.get_sampling(src_im)
+        except Exception:
+            pass
+    else:
+        kw['quality'] = 92
+    img.save(dst, 'JPEG', **kw)
+
+
 def warm(a):
     """Status ink: gold, amber, orange, red, and the PALE mixed-case gold that broke the last run.
 
@@ -323,7 +349,7 @@ def erase_boxes(src, dst, boxes):
     if stray:
         return False, f'{stray}px would change outside the chosen boxes'
 
-    Image.fromarray(out.round().astype(np.uint8)).save(dst, 'JPEG', quality=90, optimize=True)
+    save_like(Image.fromarray(out.round().astype(np.uint8)), im, dst)
 
     # and prove the ink is gone where it was, reading the file back off disk
     chk = warm(np.asarray(Image.open(dst).convert('RGB')).astype(np.int16))
