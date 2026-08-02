@@ -72,14 +72,18 @@ if (entries.length !== EXPECT) errs.push(`expected ${EXPECT} entries, loaded ${e
    after confirming the count is what we expect, so a bug here cannot quietly delete
    another specialty's content. */
 const priorVasc = R.data.filter(d => d.sec === SEC).length;
-if (priorVasc && priorVasc !== 60) errs.push(`expected 0 or 60 existing vasc entries, found ${priorVasc} -- refusing to guess what to remove`);
+/* Accepted prior states: 0 (never merged), 60 (the topic set this replaces), or EXPECT
+   (a previous run of this same merge, i.e. re-merging after editing an entry). Anything
+   else is a state this script did not create and must not silently delete. */
+const OK_PRIOR = [0, 60, EXPECT];
+if (!OK_PRIOR.includes(priorVasc)) errs.push(`found ${priorVasc} existing vasc entries; expected one of ${OK_PRIOR.join(', ')} -- refusing to guess what to remove`);
 
 /* vasc is unusual: it is ALREADY in specialties (as the one inactive card), so unlike the
    ID merge this must update the existing row rather than refuse because it is present. */
 const hasRow = R.specialties.some(s => s.id === SEC);
 
 
-const existingIds = new Set(R.data.map(d => d.id));
+const existingIds = new Set(R.data.filter(d => d.sec !== SEC).map(d => d.id));
 for (const e of entries) if (existingIds.has(e.id)) errs.push(`id collision with live data: ${e.id}`);
 
 const condRaw = JSON.parse(fs.readFileSync(path.join(ROOT, 'content', 'conditions.json'), 'utf8'));

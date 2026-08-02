@@ -10,8 +10,8 @@ const RES_VASC_B3 = [
   present: [
     "Symptomatic 70-99% stenosis within 6 months of a transient ischemic attack, minor stroke or amaurosis fugax - operate within 14 days",
     "Symptomatic 50-69% stenosis, with a smaller benefit concentrated in men",
-    "Asymptomatic 70-99% stenosis in a patient with over 5 years of life expectancy, when the unit's stroke and death rate is documented under 3%",
-    "The reference operation against which every endovascular alternative is measured"
+    "Asymptomatic 70-99% stenosis has become a weaker indication for THIS operation: in CREST-2, endarterectomy added to intensive medical therapy gave 3.7% versus 5.3% for medical therapy alone, which did not reach significance (p=0.24)",
+    "The reference operation for symptomatic disease, and the one against which every endovascular alternative is measured"
   ],
   dx: [
     "Duplex first; confirm with CTA or MRA before operating, because duplex overestimates with contralateral occlusion and heavy calcification",
@@ -54,7 +54,7 @@ const RES_VASC_B3 = [
   refs: [
     { t: "SVS clinical practice guidelines for management of extracranial cerebrovascular disease", u: "https://www.jvascsurg.org/article/S0741-5214(21)02290-9/fulltext" },
     { t: "StatPearls: Carotid Endarterectomy", u: "https://www.ncbi.nlm.nih.gov/books/NBK470582/" },
-    { t: "2021 AHA/ASA guideline for the prevention of stroke in patients with stroke and TIA", u: "https://www.ahajournals.org/doi/10.1161/STR.0000000000000375" }
+    { t: "CREST-2: providing clarity on managing asymptomatic carotid stenosis", u: "https://www.ahajournals.org/doi/10.1161/SVIN.125.002266" }
   ]
 },
 {
@@ -152,12 +152,13 @@ const RES_VASC_B3 = [
     "The arch is where transfemoral stenting strokes come from, and TCAR removes the arch from the procedure entirely - that is the whole idea",
     "Never cross the lesion before flow reversal is established and confirmed running; every step of the sequence exists to protect that moment",
     "Inspect the filter at the end and show it to the trainee - the debris in it is the stroke that did not happen",
-    "The 5 cm of clean common carotid is a hard requirement, and a short neck or a high clavicle rules the technique out"
+    "The 5 cm of clean common carotid is a hard requirement, and a short neck or a high clavicle rules the technique out",
+    "CREST-2 reported stenting plus intensive medical therapy beating medical therapy alone in ASYMPTOMATIC disease (2.8% vs 6.0%, p=0.02) where endarterectomy did not - it studied transfemoral stenting rather than TCAR, so read it as support for a stenting strategy and not as a result for this device"
   ],
   refs: [
     { t: "SVS clinical practice guidelines for management of extracranial cerebrovascular disease", u: "https://www.jvascsurg.org/article/S0741-5214(21)02290-9/fulltext" },
     { t: "StatPearls: Carotid Artery Stenting", u: "https://www.ncbi.nlm.nih.gov/books/NBK538294/" },
-    { t: "CREST trial (N Engl J Med 2010)", u: "https://www.nejm.org/doi/full/10.1056/NEJMoa0912321" }
+    { t: "CREST-2: providing clarity on managing asymptomatic carotid stenosis", u: "https://www.ahajournals.org/doi/10.1161/SVIN.125.002266" }
   ]
 },
 {
@@ -204,11 +205,11 @@ const RES_VASC_B3 = [
     "The arch causes the strokes, not the carotid - a type III arch in an 80-year-old is a bad case regardless of how favorable the bifurcation looks",
     "Do not chase a perfect angiographic result; residual stenosis of 20-30% is fine, and the extra dilation is what showers debris",
     "Filter retrieval is an embolic step and deserves the same care as crossing the lesion",
-    "In an asymptomatic patient with modest life expectancy the real question is not which technique but whether to intervene at all"
+    "CREST-2 supports stenting plus intensive medical therapy in asymptomatic high-grade stenosis, but it studied protocol-driven medical therapy and credentialed operators - the result does not transfer to a unit that audits neither"
   ],
   refs: [
     { t: "CREST trial (N Engl J Med 2010)", u: "https://www.nejm.org/doi/full/10.1056/NEJMoa0912321" },
-    { t: "SVS clinical practice guidelines for management of extracranial cerebrovascular disease", u: "https://www.jvascsurg.org/article/S0741-5214(21)02290-9/fulltext" },
+    { t: "CREST-2: providing clarity on managing asymptomatic carotid stenosis", u: "https://www.ahajournals.org/doi/10.1161/SVIN.125.002266" },
     { t: "StatPearls: Carotid Artery Stenting", u: "https://www.ncbi.nlm.nih.gov/books/NBK538294/" }
   ]
 },
