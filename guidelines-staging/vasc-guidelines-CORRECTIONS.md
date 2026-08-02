@@ -7,7 +7,7 @@ Updates index at `/u/`.
 Status vocabulary is the established one so `build_corrections_summary.js` sorts worst-first:
 `REVERSED`, `NOT FOUND`, `replaced`, `corrected`, `matched`.
 
-## Progress: 6 of 20 checked
+## Progress: 12 of 20 addressed
 
 | # | year | entry | status |
 |---|---|---|---|
@@ -17,6 +17,12 @@ Status vocabulary is the established one so `build_corrections_summary.js` sorts
 | 5 | 2025 | GORE TAG TBE zone 0/1 | **corrected** — real approval, two overstatements |
 | 1 | 2026 | SVS BTAI focused update | **matched** |
 | 4 | 2026 | EFFORT-2 | **matched** — real, framing overstated |
+| 1 | 2025 | SVS claudication focused update | **matched** — three specifics to add |
+| 6 | 2025 | ESCAPE-MeVO / DISTAL | **WRONG SPECIALTY** — real trials, not vascular surgery |
+| 7 | 2025 | dual-pathway registry | **DUPLICATE** of 2026 #7 |
+| 2 | 2026 | ESVS descending thoracic | **matched** — two specifics missing |
+| 3 | 2026 | ACC/AHA PAD measures | **corrected** — "mandatory" is wrong |
+| 7 | 2026 | dual-pathway inhibition | **DUPLICATE** of 2025 #7 |
 
 ---
 
@@ -134,17 +140,118 @@ Two corrections to the framing rather than the fact:
   rate is an extraordinary result that should be quoted with its sample size, which the
   abstract-level sources do not give. Get the full publication before shipping the number.
 
+## 2025 #1 — SVS claudication focused update — MATCHED
+
+Real: *J Vasc Surg* August 2025, focused update on nearly a decade of new evidence. The
+framing is right — supervised exercise therapy first, revascularization for lifestyle-limiting
+symptoms that fail it.
+
+Three specifics the entry omits, all of which a resident would actually use:
+
+* **The SET prescription is concrete**: walking at least 3 times a week, 30-60 minutes a
+  session, for at least 12 weeks. A home-based structured programme for those who cannot or
+  will not attend supervised sessions.
+* **Revascularization plus exercise is NOT endorsed as a preferred strategy** — the guideline
+  found insufficient evidence, because the benefit of combination therapy was not sustained at
+  2 to 5 years. That is a more interesting statement than "exercise first" and it is missing.
+* **Shared decision-making is specified**, and the guideline names what must be discussed:
+  mortality, major adverse cardiovascular events, major adverse limb events, and the functional
+  and quality-of-life gain actually expected.
+
+Source: <https://www.jvascsurg.org/article/S0741-5214(25)01003-1/fulltext>
+
+## 2025 #6 — ESCAPE-MeVO and DISTAL — WRONG SPECIALTY
+
+The trials are real and the entry describes them accurately. ESCAPE-MeVO randomized 530
+patients; thrombectomy added nothing over best medical care, with higher recurrent stroke
+(5.4% vs 3.7%), stroke progression (5.4% vs 1.8%) and symptomatic intracranial hemorrhage
+(5.4% vs 2.2%). DISTAL agreed.
+
+**But this is neurointerventional stroke medicine, not vascular surgery.** No vascular surgeon
+performs cerebral medium-vessel thrombectomy — that is neurointerventional radiology and
+neurosurgery. This is the same pattern as the six cardiac entries found inside the Thoracic
+Surgery list: correct content, wrong specialty page.
+
+One small overstatement too: the entry says the result shifts focus "back toward intra-arterial
+thrombolytics or medical stroke management." Intra-arterial thrombolysis for medium-vessel
+occlusion is not established practice; what the trials support is medical management.
+
+**Recommendation: move it to Neurology, or drop it.** A vascular surgery resident will not act
+on it, and it displaces an entry they would.
+
+Source: <https://www.neurologylive.com/view/endovascular-thrombectomy-provides-no-additional-benefit-medium-vessel-occlusion-stroke-escape-mevo-results-show>
+
+## 2025 #7 and 2026 #7 — DUAL-PATHWAY INHIBITION, DUPLICATED ACROSS YEARS
+
+These are the same development submitted twice. Both describe low-dose rivaroxaban 2.5 mg
+twice daily plus aspirin after lower extremity revascularization, both cite real-world registry
+validation, and both conclude it should be the default regimen. The underlying evidence
+(VOYAGER PAD, COMPASS) is solid and already reflected in the app.
+
+CLAUDE.md's established rule applies: **where one development appears in both year lists, keep
+it on the earlier year only**, so nothing shows under both buttons. That is why `neuro` 2026 has
+7 and `path` has 9.
+
+**Recommendation: keep 2025 #7, drop 2026 #7**, and use the freed 2026 slot for something that
+is genuinely 2026. If the 2026 entry is meant to capture newer registry data than the 2025 one,
+it needs to say what changed, and right now it does not.
+
+## 2026 #2 — ESVS descending thoracic — MATCHED
+
+Verified precisely: **129 recommendations** as submitted, across the four topics as submitted
+(acute thoracic aortic syndrome, chronic type B dissection, descending thoracic and
+thoraco-abdominal aneurysms, ruptured descending thoracic aneurysms). Successor to the 2017
+version, published EJVES December 2025. Breakdown is 42 Class I, 57 IIa, 26 IIb, two IIIa, two
+IIIb.
+
+The entry is accurate but generic — "outlines clear anatomical and physiological thresholds" is
+true of any guideline. The two things worth naming are the ones that change behaviour:
+
+* **The 6.0 cm repair threshold is MAINTAINED** for descending thoracic and thoraco-abdominal
+  aneurysms, with the guideline explicitly saying the evidence for operating smaller is not yet
+  robust. That is a deliberate non-change and it diverges from the 2022 ACC/AHA 5.5 cm figure
+  for endovascular candidates.
+* **Class III against routine TEVAR in uncomplicated type B dissection** outside a trial.
+
+Both corrected the app — see below.
+
+Source: <https://www.ejves.com/article/S1078-5884(25)01319-X/fulltext>
+
+## 2026 #3 — ACC/AHA PAD performance measures — CORRECTED
+
+The document is real: *JACC* and *Circulation: Population Health and Outcomes*, January 2026,
+**15 measures — seven performance and eight quality**, drawn from the 2024 multi-society PAD
+guideline. Four new performance measures cover blood pressure, ACE inhibitors, diabetes
+management and antithrombotic therapy.
+
+**The entry says "mandatory" and "mandating". The document says the opposite.** In its own
+words, these measures "are not yet ready for public reporting or pay-for-performance programs
+but will be useful to clinicians and health care organizations for quality improvement."
+
+This is the documented failure mode again, in a new costume: *a designation is not clearance*,
+*a bill is not law*, *conference programming is not a practice directive* — and now **a measure
+set is not a mandate**. A resident told these are mandatory will believe their department is
+being scored on them, which no one is yet.
+
+Rewrite to: a standardized 15-measure framework for quality improvement, seven performance and
+eight quality measures, explicitly not yet used for public reporting or payment.
+
+Source: <https://www.jacc.org/doi/10.1016/j.jacc.2025.09.003>
+
 ---
 
-## Still to check (14)
+## Still to check (8)
 
-2025: #1 SVS claudication guideline · #4 CEA vs CAS 10-year cohort · #6 ESCAPE-MeVO and
-DISTAL · #7 dual-pathway registry · #8 long COVID vascular aging · #10 palliative-aligned
+2025: #4 CEA vs CAS 10-year cohort · #8 long COVID vascular aging · #10 palliative-aligned
 vascular care
 
-2026: #2 ESVS descending thoracic guidelines · #3 ACC/AHA PAD performance measures · #5
-off-the-shelf F/BEVAR · #6 TCAR dominance · #7 dual-pathway inhibition · #8 mechanical
-thrombectomy vs thrombolysis in DVT · #9 limb salvage teams · #10 remote ischemia monitoring
+2026: #5 off-the-shelf F/BEVAR · #6 TCAR dominance · #8 mechanical thrombectomy vs
+thrombolysis in DVT · #9 limb salvage teams · #10 remote ischemia monitoring
+
+Note on 2025 #4: a 10-year cohort reaffirming CEA durability sits directly against CREST-2,
+where the CEA arm missed significance. Both can be true — different designs, different
+endpoints, durability versus stroke prevention against medical therapy — but the pair needs
+framing or the year reads as incoherent.
 
 Flagged on first read, not yet verified:
 
@@ -166,6 +273,11 @@ Flagged on first read, not yet verified:
   live at deploy `6a6eaeed9660310008c99027`).
 * `vasc-fempop-dcb` — SWEDEPAD added, with the endpoint distinction spelled out: the patency
   data are real, the amputation data are not.
+* `vasc-tevar` — two more from the ESVS 2026 check: it listed "uncomplicated type B with
+  high-risk features" as a TEVAR indication with no mention that ESVS carries a **Class III
+  against routine TEVAR in uTBAD** outside a trial, and it gave 5.5 cm as the descending
+  thoracic threshold without noting ESVS 2026 maintains **6.0 cm**. Both now stated, with the
+  transatlantic divergence named rather than one figure asserted.
 * `vasc-tevar` — was citing the 2011 BTAI guideline and calling grade 2 individualized. Now
   cites the 2026 focused update, states grades 1 and 2 as definitively nonoperative, and adds
   the delayed-TEVAR-beyond-24-hours suggestion for stable grade 3.

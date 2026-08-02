@@ -111,8 +111,8 @@ const RES_VASC_B2 = [
   name: "Thoracic Endovascular Aortic Repair",
   sec: "vasc",
   present: [
-    "Descending thoracic aneurysm at 5.5 cm or above in an endovascular candidate",
-    "Complicated type B dissection with malperfusion or rupture, and uncomplicated type B with high-risk features",
+    "Descending thoracic aneurysm at threshold - 5.5 cm in the 2022 ACC/AHA guideline for an endovascular candidate, while ESVS 2026 maintains 6.0 cm and says the evidence for operating smaller is not yet robust. Know which guideline your unit follows",
+    "Complicated type B dissection with malperfusion or rupture. For UNCOMPLICATED type B the ESVS 2026 guidelines carry a Class III recommendation against routine TEVAR outside a trial, so the high-risk-feature subgroup is a considered decision rather than a default",
     "Blunt thoracic aortic injury grade 3 and 4, where TEVAR has replaced open repair and cut mortality and paraplegia substantially. The 2026 SVS focused update recommends definitive NONOPERATIVE management for grades 1 and 2, so those are not TEVAR patients",
     "Penetrating aortic ulcer, intramural hematoma with high-risk features, and mycotic aneurysm as a bridge"
   ],
@@ -154,7 +154,7 @@ const RES_VASC_B2 = [
   refs: [
     { t: "2022 ACC/AHA guideline for the diagnosis and management of aortic disease", u: "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001106" },
     { t: "SVS clinical practice guideline on blunt thoracic aortic injury: focused update (JVS 2026)", u: "https://www.jvascsurg.org/article/S0741-5214(26)00110-2/fulltext" },
-    { t: "StatPearls: Thoracic Endovascular Aortic Repair", u: "https://www.ncbi.nlm.nih.gov/books/NBK499990/" }
+    { t: "ESVS 2026 clinical practice guidelines on descending thoracic and thoraco-abdominal aortic diseases", u: "https://www.ejves.com/article/S1078-5884(25)01319-X/fulltext" }
   ]
 },
 {
