@@ -633,6 +633,18 @@ no backend. This file is context for future sessions — read it before starting
   **A rebuilt Response must not keep the original `Content-Encoding`/`Content-Length`** — the
   bytes are already decoded, so the browser would gunzip plain bytes or truncate to the compressed
   length. `safeHeaders()` strips them, on the cache path too.
+- **It came back a FOURTH time (2026-08-02) and the body was not the problem at all.** Every
+  previous fix asked *what kind of body are we returning*. None asked **whether the promise could
+  reject**. `respondWith()` given a REJECTED promise renders Safari's own error page — the same
+  screen — however well the body was drained. `readCached()` called `caches.open()` and
+  `cache.match()` **outside its try**, and both reject on iOS once the origin's storage has been
+  evicted, which is exactly the condition this bug appears under. It also read `hit.clone()`
+  rather than `hit`, leaving the same undrained tee on the cache path that v10 removed from the
+  navigate path, and `OFFLINE_HTML` was wrapped in one shared `Response` whose body can only be
+  read once. `respondWith(navigate(req))` now carries a `.catch` as a backstop: **a navigation
+  must never be able to reject.** Also: `_headers` now serves **`sw.js` with `no-cache`** — a
+  worker carrying a fix is useless until it reaches the device, and that is part of why this kept
+  recurring.
   Lesson for the suite: the old `verify_sw.js` **passed on the broken worker** because it asserted
   the true-but-insufficient thing. When adding a regression guard, run it against the pre-fix file
   and confirm it FAILS — otherwise it is decoration.

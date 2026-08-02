@@ -17,11 +17,12 @@ if (!SW) { console.error('usage: node scripts/verify_sw.js <sw.js>'); process.ex
 const fail = [];
 const ok = (c, m) => { console.log((c ? '  ok   ' : '  FAIL ') + m); if (!c) fail.push(m); };
 
-function load({ bodyReadFails, empty, networkUp, netBodyReadFails }) {
+function load({ bodyReadFails, empty, networkUp, netBodyReadFails, storageEvicted }) {
   const deleted = [];
   const entry = {
     headers: new Map(),
     clone: () => ({ arrayBuffer: async () => { if (bodyReadFails) throw new Error('WebKitBlobResource error 1'); return Buffer.from('CACHED SHELL'); } }),
+    arrayBuffer: async () => { if (bodyReadFails) throw new Error('WebKitBlobResource error 1'); return Buffer.from('CACHED SHELL'); },
   };
   const cache = {
     match: async () => (empty ? undefined : entry),
@@ -30,7 +31,13 @@ function load({ bodyReadFails, empty, networkUp, netBodyReadFails }) {
   };
   const sandbox = {
     self: { addEventListener() {} },
-    caches: { open: async () => cache, keys: async () => [], match: async () => (empty ? undefined : entry), delete: async () => true },
+    /* storageEvicted models what iOS actually does when it reclaims an origin's storage: the
+       Cache Storage API itself starts REJECTING, rather than politely returning a miss. Three
+       fixes for this bug all assumed the worst case was an unreadable body. */
+    caches: {
+      open: async () => { if (storageEvicted) throw new Error('QuotaExceededError'); return cache; },
+      keys: async () => [], match: async () => (empty ? undefined : entry), delete: async () => true,
+    },
     location: { origin: 'https://x' },
     URL,
     console,
@@ -160,6 +167,43 @@ function load({ bodyReadFails, empty, networkUp, netBodyReadFails }) {
      'a network body that dies mid-read falls back to the cached shell, not the error page');
   ok(await drive({ networkUp: false }) === 'CACHED SHELL',
      'offline navigation still serves the cached shell');
+
+  // 10. THE v48 CASE: Cache Storage itself rejects. A navigation must still resolve to a
+  //     Response -- respondWith given a rejected promise renders Safari's own error page,
+  //     which is the very screen this whole bug reports as.
+  {
+    const h = load({ networkUp: false, storageEvicted: true });
+    let out = null, threw = null;
+    try { out = await h.sandbox.navigate({}); } catch (e) { threw = e.message; }
+    ok(!threw && out && out.status === 200,
+       'navigate() resolves even when caches.open() REJECTS' + (threw ? ' -- it threw: ' + threw : ''));
+    ok(!threw && out && /Rounds Codex is offline/.test(String(out.body)),
+       'and answers the offline page, not a rejected promise');
+    let out2 = null, threw2 = null;
+    try { out2 = await h.sandbox.cachedShell({}); } catch (e) { threw2 = e.message; }
+    ok(!threw2 && out2, 'cachedShell() resolves when Cache Storage rejects' + (threw2 ? ' -- threw: ' + threw2 : ''));
+    // the offline page must be freshly built; a shared Response body can only be read once
+    let a = null, b = null;
+    try { a = await h.sandbox.cachedShell({}); b = await h.sandbox.cachedShell({}); } catch (e) {}
+    ok(!!a && !!b && a !== b,
+       'each offline fallback is a NEW Response -- a shared body is consumed after one use');
+  }
+
+  // 11. Static guards for the two shapes that caused this
+  {
+    const raw = fs.readFileSync(SW, 'utf8');
+    /* Strip comments before matching. These checks are about what the worker DOES, and a guard
+       that trips on a comment explaining the old bug is a guard people learn to ignore. */
+    const src = raw.replace(/\/\*[\s\S]*?\*\//g, '').replace(/^\s*\/\/.*$/gm, '');
+    ok(!/hit\.clone\(\)/.test(src),
+       'readCached does not clone the cache hit -- clone() tees a body that must then be drained twice');
+    const navCall = src.match(/respondWith\(\s*navigate\([^)]*\)[^)]*\)/);
+    ok(navCall && /\.catch/.test(navCall[0]),
+       'respondWith(navigate(...)) has a .catch -- the last thing between a rejection and Safari\'s error page');
+    const rc = src.match(/async function readCached[\s\S]*?\n\}/);
+    ok(rc && /try\s*\{[\s\S]*caches\.open/.test(rc[0]),
+       'caches.open() inside readCached is inside the try, not before it');
+  }
 
   console.log('\n' + (fail.length ? 'FAILED: ' + fail.length : 'ALL CHECKS PASSED'));
   process.exit(fail.length ? 1 : 0);
