@@ -125,9 +125,27 @@ const buf = fs.readFileSync(SRC);
 const p = probe(buf);
 if (!p.frames || !(p.seconds > 1)) { console.error(`FAILED: ${SRC} decoded to ${p.frames} frames / ${p.seconds}s — not a usable MP3`); process.exit(1); }
 
-const destRel = 'assets/audio/' + ID + '.mp3';
+/* A replacement must land on a NEW PATH. /assets/audio/* is served immutable for a
+   year, so writing new bytes to the old URL pins every listener who already has the
+   file cached to the old recording -- which is the exact failure the guard above
+   exists to prevent. --replace used to overwrite in place, which bypassed the guard
+   without solving the problem it guards against. It now mints <id>-2.mp3, -3 and so
+   on, and the old file is left on disk so an in-flight listener is not 404'd
+   mid-playback. */
+function nextFreePath() {
+  let rel = 'assets/audio/' + ID + '.mp3';
+  if (!fs.existsSync(path.join(ROOT, rel))) return rel;
+  for (let n = 2; n < 100; n++) {
+    rel = 'assets/audio/' + ID + '-' + n + '.mp3';
+    if (!fs.existsSync(path.join(ROOT, rel))) return rel;
+  }
+  console.error('FAILED: could not find a free filename for ' + ID); process.exit(1);
+}
+if (fs.existsSync(path.join(ROOT, 'assets/audio/' + ID + '.mp3')) && !REPLACE) {
+  console.error('FAILED: assets/audio/' + ID + '.mp3 already exists'); process.exit(1);
+}
+const destRel = nextFreePath();
 const dest = path.join(ROOT, destRel);
-if (fs.existsSync(dest) && !REPLACE) { console.error('FAILED: ' + destRel + ' already exists'); process.exit(1); }
 fs.mkdirSync(path.dirname(dest), { recursive: true });
 fs.writeFileSync(dest, buf);
 
