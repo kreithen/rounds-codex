@@ -1,0 +1,114 @@
+[
+  {
+    "title": "SVS Clinical Practice Guideline on Intermittent Claudication: Focused Update",
+    "journal": "Journal of Vascular Surgery",
+    "date": "August 2025",
+    "breakthrough": "Focused update incorporating nearly a decade of new evidence. Supervised exercise therapy is first-line, with a concrete prescription: walking at least three times a week, 30 to 60 minutes a session, for at least 12 weeks. A structured home-based walking programme is recommended for patients unable or unwilling to attend supervised sessions.",
+    "impact": "Revascularization is reserved for lifestyle-limiting symptoms that persist despite exercise and medical therapy. The guideline found insufficient evidence to recommend revascularization plus exercise as a preferred strategy over exercise alone, because the benefit of the combination was not sustained at 2 to 5 year follow-up.",
+    "practical": "Before offering intervention, the shared decision-making conversation must cover mortality, major adverse cardiovascular events, major adverse limb events including amputation, reintervention and acute limb ischemia, and the functional and quality-of-life gain actually expected. Continue exercise therapy after revascularization.",
+    "link": "J Vasc Surg - SVS intermittent claudication focused update",
+    "url": "https://www.jvascsurg.org/article/S0741-5214(25)01003-1/fulltext",
+    "verify": {
+      "status": "matched",
+      "note": "Guideline confirmed: JVS August 2025 focused update. Submission was accurate but omitted three usable specifics, all now added: the SET dose, the negative finding on revascularization-plus-exercise at 2-5 years, and the named shared decision-making elements."
+    }
+  },
+  {
+    "title": "CREST-2: Revascularization versus Intensive Medical Therapy in Asymptomatic Carotid Stenosis",
+    "journal": "Stroke: Vascular and Interventional Neurology",
+    "date": "2025",
+    "breakthrough": "Two parallel observer-blinded randomized trials in severe asymptomatic carotid stenosis, comparing revascularization plus intensive medical management against intensive medical management alone. Primary endpoint was any stroke or death within 44 days, or ipsilateral ischemic stroke to 4 years.",
+    "impact": "Carotid stenting plus intensive medical therapy reduced the primary endpoint to 2.8% versus 6.0% for medical therapy alone (n=1245, p=0.02). The endarterectomy trial gave 3.7% versus 5.3% (n=1240, p=0.24), which did NOT reach statistical significance.",
+    "practical": "The arm that reached significance is the stent, not the operation that has been the reference standard for thirty years. Read the two arms separately: this is support for a stenting strategy in selected asymptomatic patients, and it does not carry over to endarterectomy. Both arms received protocol-driven intensive medical therapy from credentialed operators.",
+    "link": "Stroke VIN - CREST-2 clarity on asymptomatic carotid stenosis",
+    "url": "https://www.ahajournals.org/doi/10.1161/SVIN.125.002266",
+    "verify": {
+      "status": "matched",
+      "note": "Numbers confirmed against source. Submission was accurate; added the explicit statement that the endarterectomy arm missed significance, because a reader who knows CEA as the gold standard will otherwise assume the result covers both arms."
+    }
+  },
+  {
+    "title": "SWEDEPAD 1 and 2: Paclitaxel-Coated versus Uncoated Devices",
+    "journal": "The Lancet",
+    "date": "August 2025",
+    "breakthrough": "Registry-based randomized trials. SWEDEPAD 1 enrolled 2,355 patients with chronic limb-threatening ischemia (Rutherford 4-6) undergoing infrainguinal endovascular treatment, assigned to drug-coated or uncoated balloons and stents. Over 99% of coated devices delivered paclitaxel. Presented at ESC 2025 and published simultaneously.",
+    "impact": "No difference in ipsilateral major amputation, all-cause mortality, improvement in disease stage, or disease-specific quality of life. There was a significant reduction in target vessel reintervention during the first year, which did not persist on longer follow-up.",
+    "practical": "Be precise about which endpoint justifies a drug-coated device. The patency and early reintervention data are real; the hard-outcome data are flat. Weigh the incremental device cost case by case rather than by default.",
+    "link": "The Lancet - SWEDEPAD 1",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0140673625015855",
+    "verify": {
+      "status": "matched",
+      "note": "Journal, design and result all confirmed. Added the first-year reintervention benefit, which the submission omitted and which makes the trial read as more uniformly negative than it was."
+    }
+  },
+  {
+    "title": "Carotid Endarterectomy versus Stenting: Ten-Year Nationwide Cohort",
+    "journal": "European Journal of Vascular and Endovascular Surgery",
+    "date": "2024-2025",
+    "breakthrough": "Nationwide French cohort over ten years comparing stroke and death after carotid endarterectomy against carotid artery stenting, in both symptomatic and asymptomatic patients.",
+    "impact": "Endarterectomy performed better on peri-procedural stroke or death within 30 days, more markedly in symptomatic patients but in asymptomatic patients as well. Beyond the peri-procedural window the two interventions appear equally durable, which is consistent with the 10-year CREST results showing no significant long-term difference.",
+    "practical": "The endarterectomy advantage is concentrated in the first 30 days, not in long-term durability. Pair this with CREST-2, where the stenting arm reached significance against medical therapy in asymptomatic disease and the endarterectomy arm did not: the two findings measure different things and both stand.",
+    "link": "EJVES - stroke and death after CEA or CAS, ten-year nationwide study",
+    "url": "https://www.ejves.com/article/S1078-5884(24)00906-7/fulltext",
+    "verify": {
+      "status": "corrected",
+      "note": "Study confirmed. Submission claimed CEA is 'the more durable procedure with lower stroke/mortality rates over 10 years'. The advantage is peri-procedural; after 30 days both are equally durable and 10-year CREST found no significant difference. Corrected, and framed against CREST-2 so the two carotid entries in this year do not read as contradictory."
+    }
+  },
+  {
+    "title": "GORE TAG Thoracic Branch Endoprosthesis Approved for Aortic Arch Zones 0 and 1",
+    "journal": "FDA / Gore Medical",
+    "date": "June 2025",
+    "breakthrough": "FDA expanded the indication for the GORE TAG Thoracic Branch Endoprosthesis to zones 0 and 1, having approved it for zone 2 in May 2022. It becomes the first off-the-shelf single-branch thoracic endoprosthesis indicated across zones 0, 1 and 2. The zone 0/1 pivotal trial enrolled 77 patients, over 90% treated in zone 0, with no device migration or wire fracture through 12 months and low rates of type I and III endoleak.",
+    "impact": "Provides an on-label endovascular option for arch lesions requiring preservation of a single branch vessel, avoiding sternotomy, cardiopulmonary bypass and circulatory arrest.",
+    "practical": "This is a single-branch device: it preserves flow to one arch branch, not all three, so it is not a substitute for full arch debranching. The pivotal trial was single-arm, so it supports feasibility and device performance rather than any comparative claim about stroke or intensive care stay.",
+    "link": "Vascular News - Gore TAG TBE expanded FDA approval",
+    "url": "https://vascularnews.com/gore-tag-thoracic-branch-endoprosthesis-receives-expanded-fda-approval-for-endovascular-aortic-arch-repair/",
+    "verify": {
+      "status": "corrected",
+      "note": "Approval and date confirmed. Submission described a single-branch device as enabling 'total aortic arch reconstruction', and credited a 77-patient single-arm trial with significantly reducing morbidity, ICU stay and stroke. Both corrected: single branch stated explicitly, comparative claims removed."
+    }
+  },
+  {
+    "title": "Dual-Pathway Inhibition after Lower Extremity Revascularization",
+    "journal": "Multi-centre registry analysis / SVS guidance",
+    "date": "2025",
+    "breakthrough": "Real-world registry analysis validating low-dose rivaroxaban 2.5 mg twice daily plus low-dose aspirin in peripheral artery disease, building on the VOYAGER PAD and COMPASS randomized trials.",
+    "impact": "Supports dual-pathway inhibition after lower extremity revascularization and in polyvascular disease with diabetes, reducing major adverse limb events and acute limb ischemia.",
+    "practical": "Adding low-dose rivaroxaban lowers limb events and raises bleeding. The conversation with the patient about which they fear more is the actual clinical work, and the bleeding risk assessment should be documented rather than assumed.",
+    "link": "SVS - clinical practice guidelines",
+    "url": "https://www.svs.org/clinical-practice/clinical-practice-guidelines/",
+    "verify": {
+      "status": "corrected",
+      "note": "Underlying evidence (VOYAGER PAD, COMPASS) is solid and already reflected in the resident content. The same development was submitted again as a 2026 entry; kept here on the earlier year per the dedup rule so it does not appear under both buttons. Registry citation is generic because the submission named no specific analysis."
+    }
+  },
+  {
+    "title": "CARTESIAN: Accelerated Vascular Ageing after COVID-19",
+    "journal": "European Heart Journal",
+    "date": "August 2025",
+    "breakthrough": "Multicentre study of 2,390 participants (mean age 50, 49% women) across 34 centres in 16 countries. Carotid-femoral pulse wave velocity was the primary outcome. All COVID-positive groups had significantly higher adjusted PWV than controls (+0.41, +0.37, +0.40 m/s, all p<0.01), equivalent to roughly five years of additional vascular ageing.",
+    "impact": "The effect was markedly stronger in women, with the largest increase (+1.09 m/s) in those who had required intensive care, and was more pronounced in patients with ongoing long COVID symptoms. Some improvement was seen by one year, so the acceleration appears partially reversible.",
+    "practical": "Consider it when an otherwise unexplained arterial picture follows COVID-19, particularly in women. This is observational work describing what happens rather than a trial of what to do, so it does not by itself establish a screening pathway, and pulse wave velocity is not routinely available outside research settings.",
+    "link": "European Heart Journal - CARTESIAN",
+    "url": "https://academic.oup.com/eurheartj/article/46/39/3905/8236450",
+    "verify": {
+      "status": "corrected",
+      "note": "Study confirmed. Submission omitted the two most important findings, the sex effect and the partial reversibility at one year, and overstated an observational study into formal screening pathways and recommended non-invasive testing. All three addressed."
+    }
+  },
+  {
+    "title": "Drug-Eluting Technology in Femoropopliteal Disease: Medicare Utilization Analysis",
+    "journal": "Presented at LINC",
+    "date": "2025",
+    "breakthrough": "Retrospective analysis of over 270,000 Medicare beneficiaries examining outcomes by variability in the use of drug-eluting devices for complex femoropopliteal revascularization.",
+    "impact": "Consistent use of drug-eluting technology was associated with lower one-year readmission in routine practice. This is an administrative-claims association from a conference presentation, not a randomized comparison.",
+    "practical": "Read alongside SWEDEPAD in this same list, which randomized 2,355 patients and found no reduction in major amputation, mortality or quality of life. Where a claims association and a randomized trial disagree on a hard outcome, the trial governs. The defensible case for maintaining access rests on reintervention and readmission, not on amputation.",
+    "link": "SVS - clinical practice guidelines",
+    "url": "https://www.svs.org/clinical-practice/clinical-practice-guidelines/",
+    "verify": {
+      "status": "corrected",
+      "note": "Submission claimed significantly lower major amputation, which directly contradicts SWEDEPAD in the same year's list. Amputation claim removed and the disagreement named explicitly, so the two entries teach the controversy instead of contradicting each other silently. Conference-level source could not be resolved to a citable publication."
+    }
+  }
+]

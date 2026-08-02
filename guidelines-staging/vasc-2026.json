@@ -1,0 +1,58 @@
+[
+  {
+    "title": "SVS Clinical Practice Guideline on Blunt Thoracic Aortic Injury: Focused Update",
+    "journal": "Journal of Vascular Surgery",
+    "date": "2026",
+    "breakthrough": "Focused update superseding the 2011 guideline, with 13 recommendations built on the evidence accumulated since. Covers non-operative management, timing of repair, and patients with concomitant traumatic injuries.",
+    "impact": "For grade 1 and grade 2 injury (minimal aortic injury) the recommendation is definitive non-operative management over TEVAR or open repair. For stable grade 3 injury, delayed TEVAR beyond 24 hours is suggested so that traumatic brain and solid organ injury can be addressed first.",
+    "practical": "Follow-up imaging is specified by grade: none routinely for grade 1, and a single CTA for grade 2 to confirm resolution. Impulse control with beta blockade starts in the trauma bay and matters more than speed to theatre. Grade 2 has moved from individualized to definitively non-operative, which is the substantive change from 2011.",
+    "link": "J Vasc Surg - SVS BTAI focused update",
+    "url": "https://www.jvascsurg.org/article/S0741-5214(26)00110-2/fulltext",
+    "verify": {
+      "status": "matched",
+      "note": "Guideline, recommendation count and content all confirmed. Added the grade-specific follow-up imaging, which is the part a trainee actually applies."
+    }
+  },
+  {
+    "title": "ESVS 2026 Guidelines on Descending Thoracic and Thoraco-Abdominal Aortic Disease",
+    "journal": "European Journal of Vascular and Endovascular Surgery",
+    "date": "December 2025",
+    "breakthrough": "Full revision of the 2017 guidelines with every section rewritten. 129 recommendations across acute thoracic aortic syndrome, chronic type B aortic dissection, descending thoracic and thoraco-abdominal aneurysms, and ruptured descending thoracic aneurysms. Graded 42 Class I, 57 Class IIa, 26 Class IIb, two Class IIIa and two Class IIIb.",
+    "impact": "Two decisions stand out. The 6.0 cm repair threshold for descending thoracic and thoraco-abdominal aneurysms is deliberately MAINTAINED, on the grounds that evidence for operating on smaller aneurysms is not yet robust. And routine TEVAR in uncomplicated type B aortic dissection outside a clinical trial carries a Class III recommendation against it.",
+    "practical": "Note the transatlantic divergence: the 2022 ACC/AHA guideline uses 5.5 cm for an endovascular candidate while ESVS holds 6.0 cm. Know which your unit follows. The Class III on uncomplicated type B means intervening on high-risk features is a considered decision requiring justification, not a default.",
+    "link": "EJVES - ESVS 2026 descending thoracic and thoraco-abdominal guidelines",
+    "url": "https://www.ejves.com/article/S1078-5884(25)01319-X/fulltext",
+    "verify": {
+      "status": "matched",
+      "note": "129 recommendations and the four topic areas confirmed exactly as submitted. Submission was accurate but generic; the two behaviour-changing specifics were missing and are now named. Both also corrected the resident TEVAR entry."
+    }
+  },
+  {
+    "title": "2026 ACC/AHA Clinical Performance and Quality Measures for Peripheral Artery Disease",
+    "journal": "JACC and Circulation: Population Health and Outcomes",
+    "date": "January 2026",
+    "breakthrough": "A framework of 15 measures: seven performance measures drawn from the Class 1 and Class 3 recommendations of the 2024 multi-society lower extremity PAD guideline, and eight quality measures, some based on Class 2 recommendations. Four new performance measures cover blood pressure management, ACE inhibitor use, diabetes management and antithrombotic therapy.",
+    "impact": "Standardizes how PAD care is assessed across practices and health systems, covering high-intensity statins, antithrombotic therapy and supervised exercise therapy.",
+    "practical": "These measures are explicitly NOT yet ready for public reporting or pay-for-performance programmes. They are intended for internal quality improvement. Treat them as the direction of travel for how PAD care will be scored, not as a standard anyone is currently being held to.",
+    "link": "JACC - 2026 ACC/AHA PAD performance and quality measures",
+    "url": "https://www.jacc.org/doi/10.1016/j.jacc.2025.09.003",
+    "verify": {
+      "status": "REVERSED",
+      "note": "Submission described these as mandatory performance metrics that mandate multidisciplinary evaluation and vein mapping. The document states the opposite in its own words: not yet ready for public reporting or pay-for-performance. A measure set is not a mandate. Corrected, and the count and structure added."
+    }
+  },
+  {
+    "title": "EFFORT-2: Structured Aerobic Exercise with Anticoagulation in Acute DVT",
+    "journal": "Presented at the Vascular Annual Meeting (VAM26)",
+    "date": "June 2026",
+    "breakthrough": "Late-breaking data from a randomized study of structured aerobic exercise alongside direct oral anticoagulants in acute lower extremity deep vein thrombosis, from the NIH-funded programme 'Role of a Novel Exercise Program to Prevent Post-Thrombotic Syndrome' (NCT02148029). Reported freedom from post-thrombotic syndrome in the exercise arm.",
+    "impact": "Supports prescribing structured, supervised aerobic exercise once therapeutic anticoagulation is established, rather than treating activity as something to reintroduce later.",
+    "practical": "Note this is a single late-breaking presentation, so it strengthens an existing direction rather than establishing routine practice, and the headline event-free rate should be read with its sample size once the full paper appears. Early ambulation in acute DVT is already standard and has been for two decades; what is new here is the structured exercise prescription, not the abandonment of bed rest.",
+    "link": "ClinicalTrials.gov - NCT02148029",
+    "url": "https://clinicaltrials.gov/study/NCT02148029",
+    "verify": {
+      "status": "corrected",
+      "note": "Trial is real and was presented at VAM26 Boston on 13 June 2026, from the NIH programme whose protocol document carries NCT02148029. A second registry entry (NCT01864447, 'Exercise Training After an Acute Blood Clot') covers closely related work; the link text and URL now name the same ID rather than disagreeing. Two framing corrections: the submission claimed it reverses prolonged bed rest, abandoned two decades ago, and claimed specialists now routinely prescribe this, which one late-breaker does not establish."
+    }
+  }
+]
