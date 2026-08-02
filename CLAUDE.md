@@ -122,6 +122,15 @@ no backend. This file is context for future sessions — read it before starting
 - **Gallery links (`/g/<id>`)** — Share button in the gallery header, added by
   `scripts/add_gallery_share.js`. A shared gallery seeds `library → detail → gallery` so Back
   isn't a dead end. Third one-segment route.
+  **Bare `/g/` is the gallery INDEX** (added 2026-08-02 by `scripts/add_galleries_index_share.js`,
+  seven asserted surgeries), the way `/x/` is the calculator index beside `/x/<id>`. **The
+  `RC_ROOT` regex needed no change** — it matches the letter plus a slash, not letter-plus-id, so
+  `/g/` was already covered; a genuinely new letter still would. The button reuses **`.g-share`**,
+  the icon button on a single gallery's header — same glyph, same 34px square, same `--accent` —
+  rather than a second share style on two pages one tap apart. `aboutHead()` gained an optional
+  third argument for it; About, Terms and Privacy pass two and are unaffected. The share text
+  quotes the **unfiltered** counts on purpose: the index has a search box and the link carries no
+  term, so the filtered count would promise the recipient something they will not see.
 - **Clinical Updates (`/u/`)** — purple **CLINICAL UPDATES** button in the library count row (all
   three modes), opening a `clinupd` index page: every specialty with updates, alphabetical, each
   with its year buttons. Added by `scripts/add_clinical_updates_page.js`. Fifth one-segment route,
