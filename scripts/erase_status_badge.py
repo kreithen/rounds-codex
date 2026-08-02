@@ -95,10 +95,25 @@ def erase(path, out_path):
     if m.sum() < 20:
         return False, 'no warm status ink in the right-hand footer column', None
 
-    gs = groups(m)
-    if not gs:
+    # Build the group from the BOTTOM up, and cap how tall it may grow. The adaptive merge on
+    # its own escapes the footer bar: it hops the gap into the KEY POINT box overhead and glues
+    # the status to whatever gold text is in there, which is what produced every "4-9 lines"
+    # refusal. A diagnosis of all 51 refusals found the confuser above the bar's top border in
+    # every single case. A two-line status is about 2.6x the height of one of its lines, so
+    # anything past 3.5x is a merge that has left the cell.
+    runs = groups(m, gap=0)
+    if not runs:
         return False, 'warm ink present but no text group', None
-    top, bot = gs[-1]                      # LOWEST group: the status value
+    bot = runs[-1][1]
+    top = runs[-1][0]
+    unit = runs[-1][1] - runs[-1][0] + 1
+    for r0, r1 in reversed(runs[:-1]):
+        gap_to = top - r1
+        if gap_to > max(6, int((r1 - r0 + 1) * 1.4)):
+            break
+        if (bot - r0 + 1) > unit * 3.5:
+            break
+        top = r0
     if bot < h * LOWEST:
         return False, f'lowest warm group ends at y={bot} ({bot/h:.3f}h), above the status row', None
 
