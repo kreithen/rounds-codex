@@ -1,0 +1,82 @@
+[
+ {
+  "id": "s1-0118",
+  "title": "Papillary thyroid carcinoma",
+  "params": {
+   "prompt": "Hyperrealistic thyroid fine-needle aspiration cytology photomicrograph at 400x, Papanicolaou-stained smear with authentic pale translucent cytoplasm and crisp nuclear detail, showing a crowded overlapping papillary cluster of enlarged follicular tumor cells with the diagnostic cytologic nuclear features: markedly ENLARGED, OVERLAPPING nuclei with powdery, finely granular pale chromatin, longitudinal nuclear GROOVES (coffee-bean creases), and occasional INTRANUCLEAR CYTOPLASMIC PSEUDOINCLUSIONS (sharply outlined round cytoplasmic invaginations); among the cells one or two round laminated concentric calcified PSAMMOMA BODIES (basophilic onion-ring structures); realistic smear background with scattered colloid and cellular texture. The nuclei are NOT optically clear or empty - this is a cytology smear, not a paraffin section. no text, no labels, no watermark, no measurement overlays.",
+   "model": "nano_banana_pro",
+   "resolution": "2k",
+   "aspect_ratio": "1:1"
+  }
+ },
+ {
+  "id": "s1-0184",
+  "title": "Ankylosing spondylitis",
+  "params": {
+   "prompt": "Photorealistic ANTEROPOSTERIOR pelvis radiograph of a young adult man, grayscale with DICOM-like diagnostic dynamic range, realistic bone trabecular texture and correct pelvic anatomy. Show advanced BILATERAL, SYMMETRIC SACROILIITIS of ankylosing spondylitis: both sacroiliac joints demonstrate irregular subchondral EROSION and reactive SCLEROSIS on both the iliac and sacral sides, progressing to near-complete BONY FUSION (ankylosis) with bridging trabeculae crossing the joint, so the normal SI joint spaces are blurred and obliterated bilaterally and symmetrically. The hips, pubic symphysis, sacrum and visible lower lumbar segment are otherwise normally rendered - the sacroiliac joints are the only abnormality in the field. no text, no labels, no watermark, no measurement overlays.",
+   "model": "nano_banana_pro",
+   "resolution": "2k",
+   "aspect_ratio": "2:3"
+  }
+ },
+ {
+  "id": "s1-0188",
+  "title": "Pneumococcal lobar pneumonia",
+  "params": {
+   "prompt": "Photorealistic frontal PA chest radiograph of an adult, grayscale with high dynamic range and DICOM-like diagnostic quality, anatomically correct thorax with sharp bony detail. Show LOBAR PNEUMONIA of the RIGHT LOWER LOBE: a dense, homogeneous water-density (white) CONSOLIDATION confined to the right lower lobe below the MAJOR FISSURE, containing branching lucent AIR BRONCHOGRAMS coursing through the opacity. The consolidation OBLITERATES the outline of the RIGHT HEMIDIAPHRAGM where it abuts it, while the RIGHT HEART BORDER remains SHARP and clearly visible - the silhouette sign of lower-lobe rather than middle-lobe disease. The LEFT lung is clear for contrast, the costophrenic angles are otherwise sharp, and the heart size is normal with no gross effusion. Correct ribs, clavicles, and mediastinal contours. no text, no labels, no watermark, no measurement overlays.",
+   "model": "nano_banana_pro",
+   "resolution": "2k",
+   "aspect_ratio": "2:3"
+  }
+ },
+ {
+  "id": "s1-0206",
+  "title": "Glioblastoma multiforme",
+  "params": {
+   "prompt": "Hyperrealistic axial POST-GADOLINIUM T1-weighted brain MRI in diagnostic grayscale, radiologically accurate skull-base and brain anatomy with realistic MRI signal and gray-white differentiation. Depict a GLIOBLASTOMA as a BUTTERFLY GLIOMA: a large, irregular, thick-walled RING-ENHANCING mass with a bright peripheral rim of enhancement surrounding a darker CENTRAL NECROTIC core, centered on and CROSSING THE CORPUS CALLOSUM so that it involves BOTH cerebral hemispheres in a wing-like (butterfly) configuration but is clearly RIGHT-PREDOMINANT, with the bulk of the mass in the RIGHT hemisphere and a smaller wing extending across the midline into the left. Show surrounding non-enhancing vasogenic edema, mass effect with effacement of the RIGHT lateral ventricle, and midline shift toward the LEFT. Skull and orbits correctly rendered. no text, no labels, no watermark, no measurement overlays.",
+   "model": "nano_banana_pro",
+   "resolution": "2k",
+   "aspect_ratio": "1:1"
+  }
+ },
+ {
+  "id": "s2ck-0017",
+  "title": "Hypertrophic pyloric stenosis",
+  "params": {
+   "prompt": "Photorealistic infant abdominal ultrasound image, grayscale high-frequency image with realistic fine ultrasound speckle texture, LONG-AXIS (longitudinal) view of the gastric pylorus. Depict HYPERTROPHIC PYLORIC STENOSIS: an ELONGATED pyloric CHANNEL roughly 17 mm long, its wall formed by a THICKENED HYPOECHOIC muscular layer about 4 mm thick on the single measured wall, surrounding a thin central ECHOGENIC mucosal line, so the elongated hypertrophied pylorus indents the fluid-filled gastric antrum and produces the CERVIX SIGN. The stomach proximally is distended with anechoic fluid. This is the longitudinal section - do NOT render a transverse, round target/doughnut/bull's-eye cross-section. Correct probe geometry and sector edges. no text, no labels, no watermark, no measurement overlays.",
+   "model": "nano_banana_pro",
+   "resolution": "2k",
+   "aspect_ratio": "1:1"
+  }
+ },
+ {
+  "id": "s2ck-0051",
+  "title": "Community-acquired pneumonia (outpatient)",
+  "params": {
+   "prompt": "Photorealistic frontal PA chest radiograph of an adult man, grayscale with high dynamic range and DICOM-like diagnostic quality, anatomically correct thorax with sharp bony detail. Show a focal RIGHT LOWER LOBE PNEUMONIA: a dense, homogeneous water-density (white) CONSOLIDATION in the right lower lobe below the MAJOR FISSURE with lucent branching AIR BRONCHOGRAMS running through it. The consolidation OBLITERATES the outline of the RIGHT HEMIDIAPHRAGM, while the RIGHT HEART BORDER remains SHARP and clearly visible - the silhouette sign of lower-lobe rather than middle-lobe disease. The remainder of the right lung and the entire LEFT lung are clear, costophrenic angles are sharp, the heart size is normal, and there is no significant effusion. Correct ribs, clavicles, and mediastinal contours. no text, no labels, no watermark, no measurement overlays.",
+   "model": "nano_banana_pro",
+   "resolution": "2k",
+   "aspect_ratio": "2:3"
+  }
+ },
+ {
+  "id": "s2ck-0127",
+  "title": "Adrenal incidentaloma (benign adenoma)",
+  "params": {
+   "prompt": "Hyperrealistic axial CT of the abdomen in diagnostic grayscale, soft-tissue window, radiologically accurate upper-abdominal anatomy (liver, spleen, kidneys, both adrenal glands, aorta, and inferior vena cava) with realistic CT noise. Depict a BENIGN LIPID-RICH ADRENAL ADENOMA: a small (about 2.5 cm), WELL-CIRCUMSCRIBED, ROUND, HOMOGENEOUS RIGHT ADRENAL NODULE with smooth margins and uniformly LOW attenuation close to WATER density (mid-to-dark gray, comparable to simple fluid), without necrosis, calcification, or an irregular thick enhancing rim. The nodule is clearly NOT as dark as the surrounding retroperitoneal FAT - it contains no macroscopic fat and must not resemble a fat-density myelolipoma. The contralateral left adrenal limb, kidneys, and other organs appear normal. no text, no labels, no watermark, no measurement overlays.",
+   "model": "nano_banana_pro",
+   "resolution": "2k",
+   "aspect_ratio": "1:1"
+  }
+ },
+ {
+  "id": "s2ck-0162",
+  "title": "Displaced femoral neck fracture",
+  "params": {
+   "prompt": "Photorealistic ANTEROPOSTERIOR (AP) PELVIS RADIOGRAPH of an older adult in grayscale with DICOM-like diagnostic dynamic range and anatomically accurate bony pelvis, both hips, and proximal femora, with osteopenic (washed-out) bone texture. Depict a DISPLACED RIGHT FEMORAL NECK (subcapital) FRACTURE: a lucent FRACTURE LINE across the RIGHT femoral NECK just below the head, with the femoral HEAD still SEATED within the acetabulum and tilted into varus, while the NECK-AND-SHAFT fragment is displaced SUPERIORLY, shortened, and EXTERNALLY ROTATED (the lesser trochanter thrown into profile), producing a DISRUPTED/BROKEN Shenton line on the right. The acetabulum is NOT empty and the hip is NOT dislocated. The LEFT hip is intact with a smooth continuous Shenton line for comparison, and the acetabula, pubic rami, and sacrum are correctly rendered. no text, no labels, no watermark, no measurement overlays.",
+   "model": "nano_banana_pro",
+   "resolution": "2k",
+   "aspect_ratio": "4:3"
+  }
+ }
+]
