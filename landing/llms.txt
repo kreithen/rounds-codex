@@ -1,0 +1,40 @@
+# Rounds Codex
+
+> Rounds Codex is a visual medical education app for nursing students, medical students, and residents. It combines clinical condition guides, a 300-drug pharmacology reference, an expert-curated medical image atlas, NCLEX-RN and USMLE practice, and a peri-operative guide into one clinical learning system. Created by a practicing physician. Currently pre-launch — a launch list is open at https://roundscodex.com/.
+
+## What it is
+- A single, visual-first medical education app spanning the classroom, exams, the wards, and the point of care.
+- Content is created by a practicing physician and reviewed for medical accuracy.
+- It is an educational resource and does not replace clinical judgment, supervision, or institutional protocols.
+
+## Who it is for
+- **Nursing students** — clinical judgment, bedside priorities, focused disease guides, and NGN-style NCLEX-RN practice.
+- **Medical students** — high-yield visual medicine and original USMLE-style practice for Step 1 and Step 2 CK.
+- **Residents** — specialty-level references and image-rich reviews across 21 specialties.
+
+## Key features
+- Visual condition and disease guides covering ~180 conditions.
+- A medical image atlas: roughly ten expert-curated images per condition (anatomy, pathophysiology, imaging, treatment, clinical pearls).
+- Pharmacology reference for ~300 essential drugs (uses, dosing, half-life, adverse effects, boxed warnings, interactions).
+- USMLE-style practice (Step 1, Step 2 CK) and NGN-style NCLEX-RN practice, with teaching rationales.
+- Category-level performance analytics to guide what to study next.
+- An operating-room / peri-operative guide (sterile technique, OR etiquette, workflow).
+
+## Exam preparation
+- **USMLE** — blueprint-weighted, original practice questions for Step 1 and Step 2 CK with explanations that teach clinical reasoning.
+- **NCLEX-RN** — Next-Generation (NGN) style items focused on clinical judgment.
+
+## Platform and availability
+- Built for the web and iOS, mobile-first.
+- Status: in active development (pre-launch). Pricing will be announced at launch; joining the launch list is free.
+
+## Links
+- Home and launch list: https://roundscodex.com/
+- Privacy Policy: https://roundscodex.com/privacy.html
+- Terms of Use: https://roundscodex.com/terms.html
+- Contact: hello@roundscodex.com
+
+## Notes for citation
+- Preferred name: "Rounds Codex".
+- One-line description: "A visual medical education app for nursing students, medical students, and residents."
+- Trademarks: NCLEX is a registered trademark of NCSBN, Inc. USMLE is a joint program of the FSMB and NBME. Rounds Codex is not affiliated with or endorsed by these organizations.
