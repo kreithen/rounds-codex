@@ -1093,3 +1093,85 @@ coverage clean, 0 page errors, no failed requests beyond `/.netlify/functions/as
 
 **Open — the physician gate.** The formulas, bands, citations and clinical framing have had no
 independent medical review. That is what this deploy is for.
+
+---
+
+## SHIPPED 2026-08-02 — four deploys, all physician-confirmed live
+
+The doc had drifted: nothing from this session was recorded until now. Four separate deploys
+landed, each verified headless against a tree confirmed byte-identical to what was pushed.
+
+### 1. Eleven galleries (cache v40)
+
+myasthenia, icp, sci, migraine, iron-anemia, b12-anemia, sickle-cell, leukemia, lymphoma,
+thrombocytopenia, dic. **Neurology 12/12 and Heme & Onc 7/7 complete; 74 of 181 conditions now
+have a gallery.** Page order read off the `IMAGE n OF 10` header strip, not filenames — every
+batch so far has arrived shuffled.
+
+All 110 pages carry the header-dot defect. It is cosmetic and shipped for that reason, but it is
+on every page: see `galleries-staging/DOTS-defect-for-production.md` and the eleven contact
+sheets in `DOTS-evidence/`. **Do not attempt to repaint them** — that was tried on 2026-07-31 and
+the tool was deleted; the document explains why at length.
+
+### 2. Vascular Surgery resident content + clinical updates (v41, v42)
+
+50 procedures replacing the 60 topics (the physician's call), taking `RES_DATA` to 1418 and making
+**all 25 specialties active for the first time — zero inactive cards**.
+
+Clinical Updates now covers 25 of 25 specialties, **470 entries**. `vasc` shipped 2025=8, 2026=7
+out of 20 submitted: two were removed on QA grounds (wrong specialty, duplicate across years), one
+was rejected as aspirational rather than corrected, and two were never reached. Every shipped
+entry was citation-checked first; nine needed correction. Full record in
+`guidelines-staging/vasc-guidelines-CORRECTIONS.md`, summary regenerated into `CORRECTIONS-all.md`.
+
+**Seven audio recordings** added over the same period (afib re-recorded, hypertension, aortic
+stenosis, infective endocarditis, acute pericarditis, cardiomyopathy, PAD). `add_audio_recording.js`
+was patched: `--replace` overwrote the same path, defeating its own immutable-cache guard, so it
+now allocates `<id>-2.mp3` rather than reusing a URL the CDN has been told to cache for a year.
+
+### 3. Resident button label (v43)
+
+`23 specialties · Top 50 topics each` → `25 specialties · 50-60 topics each`. Both halves were
+stale. Verified against the destination, not the data file alone: the picker renders 25 rows and
+the real per-specialty range is 50 to 60 (nine at 50, `nsg` at 58, fifteen at 60).
+
+### 4. Share button on the Image Galleries index (v44)
+
+Bare `/g/` is now the index's own URL, beside `/g/<id>` for one gallery — the seventh one-segment
+route, and the same shape as `/x/` beside `/x/<id>`. Applied by
+`scripts/add_galleries_index_share.js`, seven asserted surgeries, refuses to run twice.
+
+The `RC_ROOT` regex needed **no** change: it matches the letter plus a slash rather than
+letter-plus-id, so `/g/` was already covered. A genuinely new letter still would.
+
+The button reuses `.g-share` from a single gallery's header rather than introducing a second share
+style two taps away. `aboutHead()` gained an optional third argument; About, Terms and Privacy
+pass two and are unaffected, asserted in the test.
+
+The share text quotes the **unfiltered** counts on purpose — the index has a search box and the
+link carries no term, so a filtered count would promise the recipient something they would not
+see. Verified with the list filtered to one gallery: the shared text still reads 74 / 740.
+
+### Confirmation note
+
+The Netlify connector dropped mid-session along with Higgsfield, Supabase and Drive
+(`connected:true, enabledInChat:false`), so the last deploy could not be confirmed through it.
+What was provable from the container: `origin/main` byte-identical to local, and `sw.js`,
+`version.txt` and the patched `index.html` read straight out of `git show origin/main:<path>`.
+The physician confirmed the live behaviour from their own browser. **That is the reliable
+fallback — never let a deploy's confirmation depend on the connector being up.**
+
+### Still open
+
+- **The physician gate.** 1,820 quiz questions, 50 vascular procedures, 60 ID resident entries,
+  10 calculators and 231 illustrations have had no independent medical review.
+- **Production re-render:** 110 gallery pages (header dots) + 3 artwork typos.
+- **Two vascular guideline entries unverified:** 2025 #10 (palliative-aligned vascular care),
+  2026 #5 (off-the-shelf F/BEVAR). Neither is shipped.
+- **Higgsfield:** 190 harvested image URLs await a desktop download via
+  `tools/download-rounds-codex-images.command`; 8 corrected prompts to re-fire (16 credits).
+- **Netlify failed-deploy email** is still not enabled — a UI toggle only the physician can set.
+- Galleries 74/181. Biggest gaps: Oncology 14, Toxicology 9, then Peds / Ophtho / Derm /
+  Women's Health at 8 each.
+- Audio 9/181, all Cardiac. Four Cardiac left: `dvt`, `aortic-dissection`, `cardiac-arrest`,
+  `hyperlipidemia`.
