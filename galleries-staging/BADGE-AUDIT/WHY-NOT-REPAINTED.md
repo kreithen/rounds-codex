@@ -100,3 +100,63 @@ confined inside it. That is 33 measurements rather than 320, and it puts a human
 one judgement the machine keeps getting wrong — where the cell is. It is worth doing only if the
 bar holds still between pages of a gallery, which has not been established and must be checked
 first.
+
+---
+
+## The per-gallery rectangle plan is dead too — its prerequisite fails. 2026-08-02
+
+The paragraph above ends "it is worth doing only if the bar holds still between pages of a
+gallery, which has not been established and must be checked first." It was checked. It does not.
+
+Cross-correlating each gallery's footer band (bottom 18%) against its own page 1, searching
++/-40px in both axes:
+
+| gallery | size | correlation vs p1 | best offset |
+|---|---|---|---|
+| asthma | 800x1200 | 0.74 – 0.84 | (0,0) on all nine |
+| copd | 800x1200 | 0.60 – 0.80 | (0,0) on eight of nine |
+| cap | 800x1200 | 0.48 – 0.86 | (0,0) on seven of nine |
+| cellulitis | 1024x1536 | **0.06 – 0.20** | (-6,2) to (18,26) |
+| sepsis | 1024x1536 | **0.06 – 0.13** | (-36,-20) to (36,20) |
+| aki | 1024x1536 | **0.08 – 0.15** | (20,-12) to (40,20) |
+| uti | 1024x1536 | **0.09 – 0.14** | (-14,-12) to (34,40) |
+| hiv | 1024x1536 | **0.08 – 0.22** | (-32,-6) to (34,18) |
+
+A per-pixel constancy map says the same thing from the other direction: 78% of asthma's footer
+band is identical across its ten pages, versus **0.3% of cellulitis's and 0.0% of sepsis's**.
+
+The reading is that these pages are not a template with artwork poured into it. **The footer is
+drawn by the generator on each page**, which is also why the dot count, the status wording, the
+typos and even the page size wander within a single gallery. The three galleries that hold still
+are the three surviving 800x1200 ones from the older pipeline — and they are exactly the three
+that passed verification in attempt 4. That is not a coincidence, it is the whole explanation.
+
+So there is no rectangle to measure once and reuse. Per-gallery would have been 33 measurements;
+per-page is 380, which is not reviewable.
+
+## What actually worked: stop having the machine choose. `scripts/badge_lines.py`
+
+Every failed cue found the text and then picked the wrong blob. So the machine no longer picks.
+It enumerates every warm text line in the bottom 30% of the page, draws them numbered over a 2x
+crop with the cyan cell labels outlined for orientation, and stops. A reviewer names the numbers.
+
+Two changes make the enumeration safe enough to choose from:
+
+* **2D connected components, not row runs.** The tia p10 smear — 110px of the FINAL TAKEAWAY
+  panel replaced by a bar — happened because a row-run's bbox spans every warm pixel on its
+  scanlines, and "Recognize. Evaluate. Treat. Prevent." in gold sits 500px to the left of the
+  status on the same rows. Components are grouped into lines by baseline overlap AND x-proximity,
+  so a box cannot reach across the page.
+* **A much lower warm threshold.** hyponatremia's pale mixed-case "Clinical Pending" sat under
+  the old r>140 cut, so it was never detected — and the old "no warm ink remains" check could not
+  see it either, so the tool reported success on a page it had not touched. r>95 finds it. Over-
+  detection now costs a reviewer one more numbered box; under-detection ships the claim.
+
+With that, the two pages the old tool got most wrong come out right: tia p10 offers `16 Clinical`
+/ `17 Pending` as two tight boxes beside the cyan REVIEW label, and dvt p01 — which the old tool
+refused outright as having no warm status ink — offers `10 CLINICAL` / `11 PENDING`.
+
+**Known gap: copd prints the claim a second time**, in grey, at the end of the centred copyright
+line ("© 2026 Rounds Codex, Inc. • COPD • Page 1 of 10 • CLINICAL PENDING"). Grey is not warm, so
+it gets no box and cannot be picked. copd is one of the three galleries whose footer DOES hold
+still, so that one is handled by a measured box applied to all ten pages.
