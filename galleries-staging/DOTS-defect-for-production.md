@@ -180,7 +180,7 @@ Not header defects, but they need the same re-render. Crops are in `DOTS-evidenc
 | icp | 4 | "Early recognition of **deteroration**…" | deterioration |
 | leukemia | 4 | "…bone marrow and **bloodigd**, leading to…" | blood |
 | leukemia | 8 | "…risk-adapted, **multidiscipliinary** care." | multidisciplinary |
-| sepsis | 9 | panel heading "TIMELINE OF SEPSIS **PROGRESSON**" | PROGRESSION |
+| sepsis | 9 | panel heading "TIMELINE OF SEPSIS **PROGRESSON**" | PROGRESSION — **already fixed on our side, see below** |
 | hiv | 6 | workflow step "3. **STASE**" | STAGE |
 | cellulitis | 4 | **two text runs printed on top of each other** — see below | one line of text |
 
@@ -192,6 +192,23 @@ The three from 2026-08-02 are in `DOTS-evidence/` as `sepsis-p9-progresson.png`,
 rendered *on top of itself* — two runs of type occupying the same pixels, so the last few words
 are an unreadable smear. This is the only defect so far that makes a sentence impossible to read
 rather than merely wrong, and it is worth checking whether other pages in the same run share it.
+
+### One of the three is fixed at our end; two are not
+
+`sepsis` page 9 has been repaired in place and is live. The missing **I** was copied from
+`TIMELINE` on the same line — same font, size, colour and rasteriser — and `ON` shifted right by
+the spacing measured off the `S-I-S` in `SEPSIS` on that line. Nothing was drawn. Still worth
+correcting at source so the next render of that page is right.
+
+**The other two cannot be repaired this way and need you.**
+
+`hiv` page 6 needs an uppercase **G** in lime green at a 12px cap height. There is no such glyph
+anywhere in the 40 pages: every other lime G is 11px or 14px, and the 12px G's are cyan. Rescaling
+or recolouring one would mean synthesising a letterform, which is exactly what produced the
+visibly damaged pages when the header dots were repainted.
+
+`cellulitis` page 4 has two text runs printed over each other. Both are destroyed where they
+overlap — there is no intact copy of either to move. This one needs the line re-rendered.
 
 `STASE` is worth a second look at the generator too: the step's own body text is "CD4 count & HIV
 RNA viral load", which is staging, so the word is right in the layout and wrong in the glyphs.
