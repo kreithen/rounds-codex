@@ -178,6 +178,21 @@ Not header defects, but they need the same re-render. Crops are in `DOTS-evidenc
 | icp | 4 | "Early recognition of **deteroration**…" | deterioration |
 | leukemia | 4 | "…bone marrow and **bloodigd**, leading to…" | blood |
 | leukemia | 8 | "…risk-adapted, **multidiscipliinary** care." | multidisciplinary |
+| sepsis | 9 | panel heading "TIMELINE OF SEPSIS **PROGRESSON**" | PROGRESSION |
+| hiv | 6 | workflow step "3. **STASE**" | STAGE |
+| cellulitis | 4 | **two text runs printed on top of each other** — see below | one line of text |
+
+The three from 2026-08-02 are in `DOTS-evidence/` as `sepsis-p9-progresson.png`,
+`hiv-p6-stase.png` and `cellulitis-p4-collision.png`, all cropped at native resolution.
+
+**The cellulitis one is not a spelling mistake, it is a layout failure.** The body line reads
+"…swollen area of skin that is spreading. Symptoms range from…", and the tail of that sentence is
+rendered *on top of itself* — two runs of type occupying the same pixels, so the last few words
+are an unreadable smear. This is the only defect so far that makes a sentence impossible to read
+rather than merely wrong, and it is worth checking whether other pages in the same run share it.
+
+`STASE` is worth a second look at the generator too: the step's own body text is "CD4 count & HIV
+RNA viral load", which is staging, so the word is right in the layout and wrong in the glyphs.
 
 The icp one is worth a look at the generator: the same word is spelled **correctly twice on that
 same page** — in the heading `CLINICAL PRESENTATION & NEUROLOGIC DETERIORATION` directly above,
