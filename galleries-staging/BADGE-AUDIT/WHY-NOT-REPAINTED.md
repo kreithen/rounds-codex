@@ -54,3 +54,49 @@ be scoped precisely rather than "all galleries".
 The canonical mark is **"Rounds Codex Verified" under the RC shield** — the physician's decision,
 2026-08-02, matching the eight galleries that already ship it. The MedCodex/MC form in the
 original screenshot exists on no live page.
+
+---
+
+## Attempt 4 — ERASING instead of replacing. Also failed. 2026-08-02
+
+The physician's suggestion: stop trying to write a corrected badge, just delete the wrong words.
+That removes the two things that broke attempts 1-2 (no type to size, nothing written outside the
+removed pixels), so it should have been the safe version. It was not.
+
+An independent verification pass rebuilt before/after comparisons from the originals — rather than
+trusting the contact sheets the erase run produced — and found **2 of 11 galleries clean**:
+
+* **Smear damage**, running LEFT and UPWARD out of the cell, replacing artwork and whole sentences
+  with horizontal bars: addisons 07/10, aki 07, aortic-dissection 07, cdiff 04, cellulitis 09. On
+  every smeared page the REVIEW label is destroyed too, which is the reliable tell.
+* **Under-erase**, leaving "CLINICAL" and a "P…G" fragment: the whole of cardiac-arrest, plus
+  aortic-dissection 03. A faint but legible ghost on aortic-dissection 08.
+* **Eleven pages carrying the wording were never processed at all.**
+
+Only asthma, cap and copd passed — and those are exactly the three galleries where the status is
+the ONLY warm ink in the right-hand footer column.
+
+## Four detection cues tried; none is reliable across these templates
+
+1. warm ink in the bottom 18% of the page — catches banners above the bar
+2. warm ink with an adaptive line-merge — hops the gap into the KEY POINT box
+3. warm ink with a merge height cap — under-selects instead, down to 38x4px
+4. the vertical cell divider — too faint; detection finds only the panel border
+5. the cyan cell label — absent or mislocated on several templates
+
+Measuring per-gallery consistency explains why. Taking the bbox of warm ink in the last-cell region
+across each gallery's ten pages, only **3 of 33 galleries agree to within 12px** (asthma 0, copd 3,
+cap 4). The other thirty spread 200-300px, because what is being measured is not the cell — it is
+the cell plus whatever KEY POINT banner or illustration happens to sit above it on that page.
+
+**Colour cannot find this cell.** The status renders gold, orange, muted tan, pale yellow and red;
+the things around it render in the same colours; and the only thing that separates them is the
+bar's rectangle, which is faint enough that four cues failed to locate it.
+
+## What would work
+
+A rectangle per gallery, measured by eye once and applied to all ten pages, with the colour erase
+confined inside it. That is 33 measurements rather than 320, and it puts a human in the loop on the
+one judgement the machine keeps getting wrong — where the cell is. It is worth doing only if the
+bar holds still between pages of a gallery, which has not been established and must be checked
+first.
