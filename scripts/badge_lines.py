@@ -234,6 +234,51 @@ def propose(gids, outdir):
     print(f'\n-> {outdir}/lines.json')
 
 
+def any_ink(a, x0, x1):
+    """Mask of anything that is not the panel, measured against each row's own background.
+
+    Colour-keying cannot be used for the growth step. On meningitis p3 the word "Clinical" is
+    set in a gradient that starts CYAN and ends gold, so its leading C is not warm ink at all;
+    the warm mask broke the component there and erasing the box as picked left a lone C sitting
+    under the REVIEW label. Distance-from-background sees the whole word regardless of hue.
+    """
+    h, w, _ = a.shape
+    gl, gr = max(0, x0 - 55), max(1, x0 - 8)
+    if gr - gl < 8:
+        gl, gr = min(w - 1, x1 + 8), min(w, x1 + 55)
+    bg = np.median(a[:, gl:gr, :], axis=1)[:, None, :]
+    return np.abs(a - bg).max(axis=2) > 30
+
+
+def grow_to_ink(mask, b, limit=16):
+    """Extend a chosen box outward while ink is still touching its edge.
+
+    A reviewer flagged meningitis p3, where the box around "Clinical" stopped short of its
+    leading C. Picking the box was right; erasing exactly it would have left a stray letter in
+    the REVIEW cell. Growth is capped and reported: if a box wants more than `limit` px on a
+    side it has almost certainly latched onto a neighbour, and the page is refused rather than
+    smeared.
+    """
+    h, w = mask.shape
+    x0, y0, x1, y1 = b['x0'], b['y0'], b['x1'], b['y1']
+    grown = 0
+    for _ in range(limit):
+        moved = False
+        if x0 > 0 and mask[y0:y1 + 1, x0 - 1].any():
+            x0 -= 1; moved = True
+        if x1 < w - 1 and mask[y0:y1 + 1, x1 + 1].any():
+            x1 += 1; moved = True
+        if y0 > 0 and mask[y0 - 1, x0:x1 + 1].any():
+            y0 -= 1; moved = True
+        if y1 < h - 1 and mask[y1 + 1, x0:x1 + 1].any():
+            y1 += 1; moved = True
+        if not moved:
+            break
+        grown += 1
+    hit_cap = grown >= limit
+    return dict(x0=x0, y0=y0, x1=x1, y1=y1, i=b.get('i')), grown, hit_cap
+
+
 def erase_boxes(src, dst, boxes):
     """Delete the ink inside the given boxes, filling from the panel beside each row.
 
@@ -248,6 +293,17 @@ def erase_boxes(src, dst, boxes):
     h, w, _ = a.shape
     out = a.copy()
     pad = 3
+
+    grown_boxes, notes = [], []
+    for b in boxes:
+        nb, grew, capped = grow_to_ink(any_ink(a, b['x0'], b['x1']), b)
+        if capped:
+            return False, f'box {b.get("i")} still finding ink after 16px of growth'
+        if grew:
+            notes.append(f'box {b.get("i")} grew {grew}px')
+        grown_boxes.append(nb)
+    boxes = grown_boxes
+
     for b in boxes:
         x0, y0, x1, y1 = b['x0'] - pad, b['y0'] - pad, b['x1'] + pad, b['y1'] + pad
         x0, y0 = max(0, x0), max(0, y0)
@@ -275,7 +331,7 @@ def erase_boxes(src, dst, boxes):
     area = sum((b['x1'] - b['x0'] + 1) * (b['y1'] - b['y0'] + 1) for b in boxes)
     if left > max(8, area * 0.002):
         return False, f'{left} warm px still inside the boxes'
-    return True, f'{len(boxes)} box(es), {area}px'
+    return True, f'{len(boxes)} box(es), {area}px' + ('; ' + ', '.join(notes) if notes else '')
 
 
 def apply(picks_path):
