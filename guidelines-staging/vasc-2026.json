@@ -54,5 +54,47 @@
       "status": "corrected",
       "note": "Trial is real and was presented at VAM26 Boston on 13 June 2026, from the NIH programme whose protocol document carries NCT02148029. A second registry entry (NCT01864447, 'Exercise Training After an Acute Blood Clot') covers closely related work; the link text and URL now name the same ID rather than disagreeing. Two framing corrections: the submission claimed it reverses prolonged bed rest, abandoned two decades ago, and claimed specialists now routinely prescribe this, which one late-breaker does not establish."
     }
+  },
+  {
+    "title": "TCAR in the Vascular Quality Initiative: Seven-Year Surveillance",
+    "journal": "Journal of Vascular Surgery",
+    "date": "2024-2026",
+    "breakthrough": "VQI registry comparison across 50,068 transcarotid artery revascularizations, 25,361 transfemoral carotid stents and 122,737 endarterectomies.",
+    "impact": "TCAR carries a lower risk of ipsilateral stroke or death at one year than transfemoral stenting, at the cost of more access site complications requiring intervention. Against endarterectomy the picture is mixed: CEA had slightly lower in-hospital stroke or death (1.7% vs 2.0%), while TCAR produced fewer cranial nerve injuries in propensity-matched analysis.",
+    "practical": "TCAR is the preferred ENDOVASCULAR option in high-risk anatomy, and the case against transfemoral stenting is strong. It has not displaced endarterectomy on stroke and death, so a patient who is a good open candidate is still a good open candidate. The trade being made is cranial nerve injury against a marginally higher stroke-death rate.",
+    "link": "J Vasc Surg - seven years of the TCAR surveillance project",
+    "url": "https://www.jvascsurg.org/article/S0741-5214(24)01227-8/fulltext",
+    "verify": {
+      "status": "corrected",
+      "note": "Registry and volumes confirmed. Submission claimed TCAR established a superior stroke/mortality profile against BOTH transfemoral stenting and endarterectomy. The VQI data show CEA with slightly LOWER in-hospital stroke/death than TCAR (1.7% vs 2.0%); TCAR's advantage over CEA is cranial nerve injury, not stroke. Superiority claim narrowed to transfemoral stenting, which the data do support."
+    }
+  },
+  {
+    "title": "Mechanical Thrombectomy versus Pharmacomechanical Thrombolysis for Iliofemoral DVT",
+    "journal": "European Journal of Vascular and Endovascular Surgery",
+    "date": "2024-2026",
+    "breakthrough": "Propensity score matched exploratory analysis of 12-month outcomes comparing single-session mechanical thrombectomy against pharmacomechanical catheter-directed thrombolysis in iliofemoral deep vein thrombosis. Periprocedural thrombolytic was used in 38% of the mechanical thrombectomy group versus 95% of the pharmacomechanical group.",
+    "impact": "Mechanical thrombectomy was better, not merely equivalent: mean 12-month Villalta 2.4 versus 3.9, and 83.1% free of post-thrombotic syndrome versus 63.6%.",
+    "practical": "Single-session mechanical clot removal avoids the overnight tPA infusion, its intensive care bed and its bleeding risk, and allows same-day or 24-hour discharge. Note the evidence is propensity-matched observational rather than randomized, so selection differences between the groups cannot be fully excluded.",
+    "link": "EJVES - mechanical thrombectomy vs pharmacomechanical CDT, 12 month outcomes",
+    "url": "https://www.ejves.com/article/S1078-5884(23)00945-0/fulltext",
+    "verify": {
+      "status": "corrected",
+      "note": "Two errors in opposite directions. Submission called it 'multi-center randomized comparisons' when the study is a propensity score matched exploratory analysis with no randomization; and claimed 'equivalent clot clearance' when the matched analysis found mechanical thrombectomy superior on thrombus removal and 12-month Villalta. Both fixed, with the design limitation stated."
+    }
+  },
+  {
+    "title": "Multidisciplinary Limb Preservation Teams: BEST-CLI Analysis",
+    "journal": "Journal of Vascular Surgery",
+    "date": "2025",
+    "breakthrough": "Analysis of the BEST-CLI trial comparing sites with a formally defined multidisciplinary CLTI team against those without.",
+    "impact": "Major amputation was reduced by 40% at team-based centres (HR 0.60, p=0.005). Team sites had a lower high-to-low amputation ratio, 0.20 versus 0.31, reflecting more minor limb-sparing surgery. Podiatrists were primary caregivers at 32% of team sites versus 11% elsewhere.",
+    "practical": "The mechanism appears to be communication and early podiatry involvement rather than any single intervention. Ensure every patient with rest pain or tissue loss gets vascular, podiatric, infectious disease and wound assessment before an amputation decision is finalised.",
+    "link": "J Vasc Surg - multidisciplinary limb preservation teams in BEST-CLI",
+    "url": "https://www.jvascsurg.org/article/S0741-5214(25)01660-X/abstract",
+    "verify": {
+      "status": "corrected",
+      "note": "This entry UNDERSTATED itself. Submission said 'national clinical outcomes data' showing a '30%+ reduction'; the source is a BEST-CLI trial analysis, a stronger provenance, and the reduction is 40% (HR 0.60, p=0.005). Attribution and figure both corrected, and the mechanism detail added."
+    }
   }
 ]

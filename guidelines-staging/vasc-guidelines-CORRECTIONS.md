@@ -1,13 +1,13 @@
 # Vascular Surgery 2025/2026 guidelines — citation check
 
 Physician's 20 submitted entries, checked before merging (their instruction, 2026-08-02).
-**Nothing has been merged yet.** `vasc` remains the one specialty absent from the Clinical
-Updates index at `/u/`.
+**Merged and deployed.** `vasc` now carries 8 entries on 2025 and 7 on 2026 in the Clinical
+Updates index at `/u/`, so the index is complete at 25 of 25 specialties.
 
 Status vocabulary is the established one so `build_corrections_summary.js` sorts worst-first:
 `REVERSED`, `NOT FOUND`, `replaced`, `corrected`, `matched`.
 
-## Progress: 12 of 20 addressed
+## Progress: 18 of 20 addressed
 
 | # | year | entry | status |
 |---|---|---|---|
@@ -23,6 +23,12 @@ Status vocabulary is the established one so `build_corrections_summary.js` sorts
 | 2 | 2026 | ESVS descending thoracic | **matched** — two specifics missing |
 | 3 | 2026 | ACC/AHA PAD measures | **corrected** — "mandatory" is wrong |
 | 7 | 2026 | dual-pathway inhibition | **DUPLICATE** of 2025 #7 |
+| 4 | 2025 | CEA vs CAS ten-year cohort | **corrected** — advantage is peri-procedural, not durability |
+| 8 | 2025 | CARTESIAN post-COVID vascular ageing | **corrected** — two findings omitted, screening overstated |
+| 6 | 2026 | TCAR VQI surveillance | **corrected** — CEA still lower stroke/death |
+| 8 | 2026 | mechanical thrombectomy vs PCDT | **corrected** — two errors in opposite directions |
+| 9 | 2026 | limb salvage teams | **corrected** — the entry understated itself |
+| 10 | 2026 | remote ischemia monitoring | **NOT FOUND as described — not shipped** |
 
 ---
 
@@ -238,20 +244,85 @@ eight quality measures, explicitly not yet used for public reporting or payment.
 
 Source: <https://www.jacc.org/doi/10.1016/j.jacc.2025.09.003>
 
+## 2026 #6 — TCAR in the VQI — CORRECTED
+
+Registry and volumes confirmed: **50,068 TCAR, 25,361 transfemoral stents, 122,737
+endarterectomies**.
+
+The submission claimed TCAR "established a superior stroke and mortality profile" against
+**both** transfemoral stenting and endarterectomy. Half of that is right. Against transfemoral
+stenting the case is strong. Against endarterectomy it inverts: **CEA had the lower in-hospital
+stroke or death, 1.7% versus 2.0%.** TCAR's advantage over CEA is **cranial nerve injury**, not
+stroke, and it comes with more access-site complications requiring intervention.
+
+The correction matters clinically rather than pedantically. A trainee reading the submitted
+version concludes TCAR has displaced endarterectomy, when a patient who is a good open candidate
+is still a good open candidate. Superiority narrowed to transfemoral stenting, which the data
+do support, and the real trade — cranial nerve injury against a marginally higher stroke-death
+rate — stated explicitly.
+
+Source: <https://www.jvascsurg.org/article/S0741-5214(24)01227-8/fulltext>
+
+## 2026 #8 — mechanical thrombectomy vs pharmacomechanical thrombolysis — CORRECTED
+
+Two errors, in **opposite directions**, which is why this one needed reading twice.
+
+*Design overstated.* Submitted as "multi-center randomized comparisons". It is a **propensity
+score matched exploratory analysis**. No randomization, so selection differences between the
+groups cannot be excluded — and that limitation is now stated in the entry rather than implied
+by its absence.
+
+*Result understated.* Submitted as showing "equivalent clot clearance". The matched analysis
+found mechanical thrombectomy **better**: mean 12-month Villalta **2.4 versus 3.9**, and
+**83.1% versus 63.6%** free of post-thrombotic syndrome. Periprocedural thrombolytic was used in
+38% of the MT group against 95% of the pharmacomechanical group.
+
+A weaker design supporting a stronger result is the reverse of the usual failure here, and
+correcting only the design would have left the entry wrong the other way.
+
+Source: <https://www.ejves.com/article/S1078-5884(23)00945-0/fulltext>
+
+## 2026 #9 — multidisciplinary limb preservation teams — CORRECTED (understated)
+
+**This entry sold itself short**, which no other entry in these 20 did.
+
+The submission attributed the finding to "national clinical outcomes data" and gave a "30%+
+reduction" in major amputation. The source is an analysis of the **BEST-CLI trial** comparing
+sites with a formally defined multidisciplinary CLTI team against those without — a stronger
+provenance than a national dataset — and the reduction is **40% (HR 0.60, p=0.005)**.
+
+Two mechanism details were missing and are worth more to a resident than the headline: the
+high-to-low amputation ratio was **0.20 at team sites versus 0.31 elsewhere**, meaning more
+minor limb-sparing surgery rather than fewer operations; and **podiatrists were primary
+caregivers at 32% of team sites against 11% elsewhere**. The effect looks like early podiatry
+involvement and communication, not any single intervention.
+
+Source: <https://www.jvascsurg.org/article/S0741-5214(25)01660-X/abstract>
+
+## 2026 #10 — remote ischemia monitoring — NOT FOUND as described — NOT SHIPPED
+
+Submitted as continuous transcutaneous oximetry and wearable perfusion sensors in routine
+outpatient PAD surveillance, detecting deterioration before symptoms.
+
+Continuous outpatient TcPO2 surveillance in PAD is **early-stage research**, not deployed
+practice. There is no guideline, no trial establishing that it detects deterioration ahead of
+symptoms, and **the SVS still recommends ABI and duplex** for surveillance. The technology
+exists; the described clinical use does not.
+
+Aspirational content is the one category that cannot be corrected into shape, because the
+correction would be the removal of the claim. **Dropped rather than merged** — 2026 ships 7
+entries, not 8.
+
 ---
 
-## Still to check (8)
+## Still to check (2)
 
-2025: #4 CEA vs CAS 10-year cohort · #8 long COVID vascular aging · #10 palliative-aligned
-vascular care
+2025: #10 palliative-aligned vascular care
 
-2026: #5 off-the-shelf F/BEVAR · #6 TCAR dominance · #8 mechanical thrombectomy vs
-thrombolysis in DVT · #9 limb salvage teams · #10 remote ischemia monitoring
+2026: #5 off-the-shelf F/BEVAR
 
-Note on 2025 #4: a 10-year cohort reaffirming CEA durability sits directly against CREST-2,
-where the CEA arm missed significance. Both can be true — different designs, different
-endpoints, durability versus stroke prevention against medical therapy — but the pair needs
-framing or the year reads as incoherent.
+Both are merged-adjacent rather than merged: neither is in the shipped JSON. They are the two
+entries the pass did not reach, not entries that failed it.
 
 Flagged on first read, not yet verified:
 
@@ -284,12 +355,34 @@ Flagged on first read, not yet verified:
 
 ## Running tally on my own judgement
 
-Six submitted claims checked, and **six were substantively real** — CREST-2, SWEDEPAD, the
-GORE approval, the BTAI update and EFFORT-2 all verified, with only the LINC entry genuinely
-unsound. I doubted CREST-2 and EFFORT-2 outright and was wrong both times.
+Eighteen entries checked. **Seventeen rested on something real**; one (2026 #10, remote ischemia
+monitoring) described a clinical practice that does not exist. I doubted CREST-2 and EFFORT-2
+outright and was wrong both times.
 
 The CLAUDE.md note holds and should be read before every one of these passes: the failure mode
-in these submissions is **overstated sourcing, not invented science**. Three of the six needed
-a correction, and every correction was about scope or strength of evidence — single-branch
-described as total arch, a single-arm trial described as comparative, a straw-man reversal —
-not about the underlying clinical claim being false. Search before doubting.
+in these submissions is **overstated sourcing, not invented science**. Nine needed a correction
+and every one was about scope or strength of evidence — single-branch described as total arch, a
+single-arm trial described as comparative, a measure set described as a mandate, a propensity
+match described as randomized, a peri-procedural advantage described as ten-year durability.
+Not one was a false clinical claim. Search before doubting.
+
+Two additions to that pattern from this batch:
+
+**An entry can be wrong in both directions at once.** 2026 #8 overstated its design (matched
+cohort called randomized) while understating its result (superior called equivalent). Correcting
+the design alone would have left it wrong the other way. Check the result against the source
+even after finding an error in the methods — one error is not a reason to stop reading.
+
+**Understatement is a real failure mode, not just a safe one.** 2026 #9 credited a BEST-CLI
+trial analysis to "national outcomes data" and a 40% reduction to "30%+". A resident deciding
+whether to argue for a limb preservation service is worse served by the weaker version, and the
+mechanism detail the submission dropped — early podiatry, more minor limb-sparing surgery — is
+the part that tells them what to actually build.
+
+### Checking the physician's list corrected my own content five times
+
+The pass ran in both directions. `vasc-cea-patch`, `vasc-tcar` and `vasc-tf-cas` all carried a
+CREST-2 claim I had written hours earlier and that the physician's entry disproved;
+`vasc-fempop-dcb` was missing SWEDEPAD; `vasc-tevar` was citing the superseded 2011 BTAI
+guideline and gave one TEVAR threshold as settled when ESVS and ACC/AHA disagree. Verifying
+submitted content is also a check on shipped content.

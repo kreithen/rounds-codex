@@ -1,18 +1,18 @@
 # Clinical guideline citation checks — for sign-off
 
-438 entries checked. Grouped worst-first by what a reader would take away if the
+470 entries checked. Grouped worst-first by what a reader would take away if the
 entry shipped as submitted. Every entry below is live in the app in its CORRECTED form; this
 document records what was changed and why, so any of it can be reverted.
 
 | verdict | entries |
 |---|---|
-| Findings stated backwards — a reader would learn the opposite of the published result | 36 |
+| Findings stated backwards — a reader would learn the opposite of the published result | 37 |
 | Cited study could not be found | 27 |
 | Evidence level inflated — case report presented as a trial | 2 |
 | Citation not independently verified | 100 |
 | Wrong study or replaced | 30 |
-| Corrected — dates, journals, numbers, strength of claim | 231 |
-| Matched — no correction needed | 12 |
+| Corrected — dates, journals, numbers, strength of claim | 257 |
+| Matched — no correction needed | 17 |
 
 ---
 
@@ -90,37 +90,43 @@ Real (Casey et al., NEJM 2025 — a 2025 publication placed in the 2026 list). T
 
 Real (NIDA CTN-0099) but the submission was wrong on four counts. SITES: 29 emergency departments, not 33. FORMULATION: the injectable was the 7-DAY extended-release preparation, not a 30-day depot — the original's 'ensuring immediate and sustained 30-day coverage' would have a clinician believe one injection covers a month. ENDPOINT: the primary outcome was treatment engagement at DAY 7, not 30-day retention. RESULT: there was NO difference — the original claimed 'significantly higher 30-day treatment retention' and that this 'elevates single-dose injectable depot buprenorphine to a first-line recommended option'.
 
+### Otolaryngology – Head & Neck Surgery 2025 #5 — Adjuvant Immunotherapy After Resection of High-Risk Head and Neck Cancer: Atezolizumab Failed, Nivolumab Worked
+
+**REVERSED — the submitted trial was negative and was presented as positive**
+
+REVERSED. The submission describes the addition of atezolizumab to adjuvant cisplatin and radiation in high-risk resected HNSCC and concludes it 'offers head and neck surgical oncologists an augmented systemic arm to prevent locoregional recurrence and distant metastases'. The trial exists — IMvoke010 — and it was NEGATIVE: median event-free survival 59.5 versus 52.7 months, HR 0.94 (0.70-1.26), P = 0.68, with the report stating plainly that atezolizumab did not improve clinical outcomes. Recommending it on the basis of that trial is the exact failure mode this review keeps finding. TWO FURTHER CORRECTIONS: IMvoke010 tested atezolizumab as maintenance after definitive local therapy, not added to adjuvant chemoradiation as submitted, and it is phase 3 rather than 'Phase II/III'. Rather than drop the slot, the entry now pairs it with NIVOPOSTOP (GORTEC 2018-01), the trial that DID show benefit in this setting (3-year DFS 63.1% versus 52.5%, HR 0.76, P = 0.034) — the contrast is more instructive than either alone and keeps the resident from generalising across agents.
+
 ### Family Medicine 2025 #6 — 2025 AHA/ACC Hypertension Guideline and the AAFP's Position on It
 
 **corrected — attribution reversed**
 
 The original said the AAFP 'updated its adult hypertension guidelines, formally adopting a target of <130/80'. The AAFP explicitly did NOT endorse the 2025 AHA/ACC guideline (nor did the ACP or ISH), and uses 'Affirmation of Value' rather than endorsement — a distinction that matters to a family physician, and one of the more instructive facts in this list. AAFP's own guidance does reference <130/80 with caveats, which is now stated accurately. Also 'Establishes out-of-office monitoring as a MANDATORY step' softened to strongly recommended.
 
-### General Surgery 2025 #2 — DIRECT Trial: Robotic Versus Laparoscopic TAPP Inguinal Hernia Repair
+### Surgery (General) 2025 #2 — DIRECT Trial: Robotic Versus Laparoscopic TAPP Inguinal Hernia Repair
 
 **NOT FOUND — trial name unresolvable, and the submitted findings are REVERSED against the randomised evidence**
 
 No trial named 'COLA-TAPP' exists in the searchable literature, and no JAMA Surgery randomised trial of robotic versus laparoscopic TAPP could be found. The submission's specific claims — that robotic TAPP 'significantly lowers 30-day chronic pain rates and operative conversion in complex, incarcerated, or post-radiation groin defects' and that HerniaSurge/SAGES have been updated to define anatomical criteria for robot use — are not supported: the 2025 meta-analysis of three RCTs (300 patients) found no significant difference in complications and a non-significant TREND toward LONGER robotic operative time. The real randomised trial in this space is DIRECT (Hernia 2025, 138 patients), whose finding is about operative time, not pain. Entry rewritten to DIRECT plus the meta-analysis, with the unsupported outcome claims removed and the cost caveat kept.
 
-### General Surgery 2025 #5 — Drains After Pancreatoduodenectomy: Selective Early Removal, Not Omission
+### Surgery (General) 2025 #5 — Drains After Pancreatoduodenectomy: Selective Early Removal, Not Omission
 
 **REVERSED — the submission's safety conclusion is the opposite of the randomised evidence in the highest-risk group**
 
 SAFETY-RELEVANT. The submission described a 'landmark international randomized trial published in Annals of Surgery' evaluating early drain removal versus NO prophylactic drain in patients with soft pancreatic texture or small duct — i.e. exactly the high-risk group — and concluded that 'routine prophylactic drain placement in high-risk anastomoses does not prevent Grade C postoperative pancreatic fistulas'. No such trial could be found, and the direction is wrong: the randomised multi-institutional trial of PD with versus without routine intraperitoneal drainage (Van Buren et al., Annals of Surgery 2014) was TERMINATED EARLY by its DSMB because mortality increased from 3% to 12% without drains, concluding that routine elimination of drains in PD increases mortality and the severity and frequency of complications. A trainee reading the submitted entry could omit a drain in a soft-gland Whipple on the belief that a trial showed it safe. The genuine 2025 evidence — Cochrane CD010583.pub6 and the five-RCT meta-analysis (1,337 patients) — supports SELECTIVE EARLY REMOVAL for pancreatoduodenectomy and no-drain only for left pancreatectomy; PANDORINA is the risk-stratified trial in progress. Entry rewritten with the Van Buren harm signal stated explicitly. The submission's day-3 early-removal point is retained because it is correct and supported.
 
-### General Surgery 2025 #6 — IntAct: ICG Fluorescence Angiography Did Not Significantly Reduce Anastomotic Leak
+### Surgery (General) 2025 #6 — IntAct: ICG Fluorescence Angiography Did Not Significantly Reduce Anastomotic Leak
 
 **REVERSED — the submission reports a significant reduction; the landmark RCT was not significant**
 
 The submission stated ICG 'significantly lowers anastomotic leak rates' and that ASCRS and EAES have issued consensus statements endorsing quantitative ICG perfusion mapping as a standard intraoperative safety tool. Both are wrong. IntAct (Lancet Gastroenterology & Hepatology 2025, 766 randomised patients, 28 centres, 8 countries) found 10% versus 15% clinical leak, adjusted OR 0.667, p=0.087 — NOT significant; the authors' own interpretation is that a signal was observed and future research must standardise ICG assessment. The AVOID phase 3 trial reached a similar conclusion. No ASCRS or EAES consensus establishing ICG as a standard safety tool could be found. The submitted journal was also wrong: British Journal of Surgery, not Lancet Gastro Hep. Entry rewritten to the actual result, keeping the favourable direction and the standardisation problem, and adding what a trainee should NOT stop doing on the strength of a fluorescence image.
 
-### General Surgery 2025 #7 — Antibiotics Versus Appendectomy for Uncomplicated Appendicitis: Long-Term Outcomes
+### Surgery (General) 2025 #7 — Antibiotics Versus Appendectomy for Uncomplicated Appendicitis: Long-Term Outcomes
 
 **corrected — figure overstated and the neoplasm reassurance is REVERSED**
 
 Three corrections. (1) The submission claims 'over 65% of patients treated initially with antibiotics remain successfully appendectomy-free at 5 years'. The published figures are lower: CODA's NEJM longer-term report is at FOUR years with about half avoiding appendectomy, and APPAC's five-year appendectomy-free rate is 61%. No source supports over 65% at five years. (2) The submission asserts no increased risk of 'occult appendiceal neoplasm' — this is backwards. Non-operative management removes the histological specimen from the pathway, so occult neoplasms are not excluded but simply not looked for; this is a recognised concern with antibiotics-first, particularly over age 40, and it has been restored as a caution. (3) The entry is framed as a single 5-year NEJM publication; the evidence is two trials with different inclusion criteria (CODA included appendicolith and perforation, APPAC did not), and that difference is the reason their numbers diverge, so both are now named.
 
-### General Surgery 2025 #8 — Endoscopic Versus Surgical Step-Up for Infected Necrotising Pancreatitis
+### Surgery (General) 2025 #8 — Endoscopic Versus Surgical Step-Up for Infected Necrotising Pancreatitis
 
 **corrected — organ-failure benefit REVERSED, journal citation conflated two journals, date wrong by eight years**
 
@@ -162,18 +168,6 @@ Real trial (TeMPO, NEJMoa2503385, 29 Oct 2025, n=879). THE FINDING WAS STATED BA
 
 REVERSED. The submission states that trials of aggressive non-standard prophylaxis 'showed no significant reduction in surgical site infections compared to standardized perioperative intravenous antibiotic protocols', and builds a recommendation against them on that basis. The literature does not support a clean negative: a 2024 meta-analysis found 35% lower odds of periprosthetic joint infection with extended prophylaxis, and 7-day courses reduced one-year infection in high-risk patients in several series — precisely the population the submission names. Other studies show no difference or higher infection rates, so the honest position is equipoise. Rewritten so the conclusion the submission reaches (do not do this routinely) is retained but rests on the real reasons — weak trial quality, resistance, C. difficile — rather than on a finding of no benefit that would not survive being looked up. The practical advice on glycaemic control, nasal decolonisation and sterile technique was sound and is kept.
 
-### Otolaryngology 2025 #5 — Adjuvant Immunotherapy After Resection of High-Risk Head and Neck Cancer: Atezolizumab Failed, Nivolumab Worked
-
-**REVERSED — the submitted trial was negative and was presented as positive**
-
-REVERSED. The submission describes the addition of atezolizumab to adjuvant cisplatin and radiation in high-risk resected HNSCC and concludes it 'offers head and neck surgical oncologists an augmented systemic arm to prevent locoregional recurrence and distant metastases'. The trial exists — IMvoke010 — and it was NEGATIVE: median event-free survival 59.5 versus 52.7 months, HR 0.94 (0.70-1.26), P = 0.68, with the report stating plainly that atezolizumab did not improve clinical outcomes. Recommending it on the basis of that trial is the exact failure mode this review keeps finding. TWO FURTHER CORRECTIONS: IMvoke010 tested atezolizumab as maintenance after definitive local therapy, not added to adjuvant chemoradiation as submitted, and it is phase 3 rather than 'Phase II/III'. Rather than drop the slot, the entry now pairs it with NIVOPOSTOP (GORTEC 2018-01), the trial that DID show benefit in this setting (3-year DFS 63.1% versus 52.5%, HR 0.76, P = 0.034) — the contrast is more instructive than either alone and keeps the resident from generalising across agents.
-
-### PM&R 2025 #8 — Structured Home Exercise Is Sufficient in Meniscal Tear with Knee Osteoarthritis (TeMPO)
-
-**REVERSED — the same misreading corrected in the orthopaedics list**
-
-Real trial (TeMPO, NEJMoa2503385, 29 October 2025, n=879). THE FINDING WAS STATED BACKWARDS, in the same way as in the orthopaedic surgery submission processed earlier: the PM&R list says the trial demonstrated that 'individual hands-on PT provides modest additional benefits'. It did not — no meaningful additional pain relief came from standard PT, sham PT or adherence texts on top of home exercise, with a 2.5-point difference that was not statistically significant. Corrected, and framed for rehabilitation prescribing rather than surgical decision-making so it complements rather than repeats the orthopaedics entry. CROSS-SPECIALTY DUPLICATION, deliberate: this trial is also live under orthopaedic surgery. The two entries address different decisions — whether to operate versus what to prescribe — on the same basis as the MeVO trials appearing under both emergency medicine and neurology. YEAR: assigned to 2025 to match the publication date; the submission placed it on the 2026 list.
-
 ### Pediatrics 2026 #6 — The 2026 AAP Immunization Schedule Diverges from the CDC Schedule
 
 **REVERSED — the schedule's defining feature is divergence, not synchronisation**
@@ -185,6 +179,12 @@ The schedule is real (policy statement 26 January 2026, Pediatrics 157(3):e20250
 **REVERSED — an unapproved, FDA-warned product class was presented as established practice**
 
 THE MOST SERIOUS CORRECTION IN THIS BATCH. The submission groups 'clinical-grade exosomes' with PRF and nanofat, states that their integration 'Establishes formal clinical protocols for combining biologics with traditional surgical operations to enhance graft retention and accelerate flap vascularization', and concludes it 'improves long-term skin quality, texture, and graft viability'. The regulatory reality is the opposite: NO exosome product has FDA approval for aesthetic use, administering unapproved biologic products violates federal law, and the FDA has issued multiple public safety notifications and warning letters covering manufacturers, distributors and administering physicians. Reported adverse events include blindness, tumour formation and infection. Administering such a product with medical claims has been described as outside the standard of care and a licensure risk. The submitted entry would have encouraged a physician into legal and professional jeopardy as well as exposing patients to harm — which is why it has been rewritten as a warning that separates the autologous adjuncts from the unapproved product class rather than merely softened. PRF and nanofat are autologous and point-of-care and remain reasonable; that part of the submission is kept.
+
+### Physical Medicine & Rehabilitation 2025 #8 — Structured Home Exercise Is Sufficient in Meniscal Tear with Knee Osteoarthritis (TeMPO)
+
+**REVERSED — the same misreading corrected in the orthopaedics list**
+
+Real trial (TeMPO, NEJMoa2503385, 29 October 2025, n=879). THE FINDING WAS STATED BACKWARDS, in the same way as in the orthopaedic surgery submission processed earlier: the PM&R list says the trial demonstrated that 'individual hands-on PT provides modest additional benefits'. It did not — no meaningful additional pain relief came from standard PT, sham PT or adherence texts on top of home exercise, with a 2.5-point difference that was not statistically significant. Corrected, and framed for rehabilitation prescribing rather than surgical decision-making so it complements rather than repeats the orthopaedics entry. CROSS-SPECIALTY DUPLICATION, deliberate: this trial is also live under orthopaedic surgery. The two entries address different decisions — whether to operate versus what to prescribe — on the same basis as the MeVO trials appearing under both emergency medicine and neurology. YEAR: assigned to 2025 to match the publication date; the submission placed it on the 2026 list.
 
 ### Preventive Medicine 2026 #7 — Gut Microbiome Testing in Practice: What Is and Is Not Established
 
@@ -234,6 +234,12 @@ The trial is real and important: PRIMARY2, Lancet Oncology 2026, 660 men at seve
 
 The randomised evidence exists but says nearly the opposite of the submission. The submission claims over-10-year data 'revealed that while extended pelvic lymph node dissection showed no benefit in unselected patients, it provided a SIGNIFICANT IMPROVEMENT IN BIOCHEMICAL RECURRENCE-FREE SURVIVAL and delayed secondary systemic therapy in men with ISUP Grade Group 3–5 prostate cancer'. The published results: the 300-patient phase 3 trial (Eur Urol 2020) found extended PLND did NOT reduce biochemical recurrence; the 1,432-patient cluster-randomised trial (Eur Urol 2024 update) again found NO difference in biochemical recurrence, and the benefit that did emerge with longer follow-up was against METASTASIS, particularly distant metastasis. So the endpoint the submission credits with the benefit is the one where both trials were negative, and the endpoint where a benefit was found is not mentioned. The ISUP 3–5 subgroup specificity and the 'delayed secondary systemic therapy' claim could not be verified and have been removed. Entry rewritten with both trials, their differing templates, and the morbidity that has to be weighed. Added that the larger trial cluster-randomised SURGEONS, not patients, which changes how its result should be read.
 
+### Vascular Surgery 2026 #3 — 2026 ACC/AHA Clinical Performance and Quality Measures for Peripheral Artery Disease
+
+**REVERSED**
+
+Submission described these as mandatory performance metrics that mandate multidisciplinary evaluation and vein mapping. The document states the opposite in its own words: not yet ready for public reporting or pay-for-performance. A measure set is not a mandate. Corrected, and the count and structure added.
+
 ---
 
 ## Cited study could not be found
@@ -256,6 +262,24 @@ There is no 'COLCOT-2' trial. The original said a large NEJM outcomes trial 'con
 
 Stapokibart is a real humanised anti-IL-4Rα antibody, approved in China for atopic dermatitis and allergic rhinitis, so the drug and mechanism are genuine. But NO publication on palmoplantar pustulosis was located in the searches run — searches returned only JAK inhibitor and apremilast case reports for refractory PPP, and reviews citing IL-17, IL-23, IL-36 and IL-1β as the targeted approaches. The claim of 'significant clearing of painful palmar and plantar pustules' and 'trial evidence for IL-4Rα blockade' is unsupported by anything found, and has been reduced to a neutral description. Verify this citation exists before shipping it.
 
+### Otolaryngology – Head & Neck Surgery 2025 #8 — Behavioural Voice Therapy Before Phonosurgery — and the Thin Evidence for Virtual Reality Delivery
+
+**NOT FOUND as described — rewritten around what is supported**
+
+The submitted claim could not be verified. It describes 'multicenter trials evaluating immersive Virtual Reality (VR) environments combined with standard speech-language pathology protocols' that 'yielded superior acoustic and patient-reported outcome measures in muscle tension dysphonia and vocal fold paresis'. No such multicentre trial surfaced. What exists is earlier-stage: a feasibility and validation trial of VR speech-language therapies (NCT05695131, general SLP rather than voice specifically), work on head-mounted VR to aid real-life transfer in voice therapy, and VR rehabilitation pilots in other domains. The clinically sound part of the submission — that behavioural voice therapy precedes phonosurgical intervention — is standard and is kept, and the RTSS specification work is substituted as the real recent development in this area. The entry now says explicitly that VR is not established, because the submitted version would support telling a patient it outperforms conventional therapy.
+
+### Otolaryngology – Head & Neck Surgery 2026 #3 — Hyperangulated versus Macintosh-Geometry Videolaryngoscopy in the Difficult Airway
+
+**NOT FOUND as cited — real evidence substituted**
+
+The specific citation does not check out. The submission names 'The ANGLE Trial' with registration NCT07223762 and calls it multi-centre randomised controlled trial data providing 'definitive guidance'. No trial of that name or registration number surfaced, and the NCT number should not be repeated. Real evidence on the same question does exist and has been substituted: Köhl et al. in Anaesthesia (2024), a randomised controlled trial in anticipated difficult airways favouring hyperangulated videolaryngoscopy on glottic view, first-attempt success and intubation time; a 2025 randomised trial of Glidescope versus an intermediate-angled blade; and a registered systematic review protocol. The tube-advancement trade-off has been added because it is the reason the answer is not simply 'use hyperangulated'. Also flagged that this is substantively an airway-management topic drawn from anaesthesia and emergency medicine rather than an ENT trial, and that several commonly quoted comparisons are manikin or cadaver studies — the submission's 'definitive' is not warranted by any of them.
+
+### Otolaryngology – Head & Neck Surgery 2026 #4 — Endoscopic Sinus Surgery and Biologics in Chronic Rhinosinusitis: No Head-to-Head Trial Yet
+
+**NOT FOUND as described — the head-to-head trial does not exist**
+
+The submission describes 'Phase III randomized trial data published in JAMA Otolaryngology–Head & Neck Surgery' comparing FESS against ongoing biologic therapy in recurrent acute and non-polypoid chronic rhinosinusitis, and says it 'updates care pathways to define precise phenotypic markers' for choosing between them. No such trial was found. What exists is a network meta-analysis (five RCTs, 1,748 patients, indirect comparison of ESS plus medical therapy against four monoclonals in CRSwNP), a multicentre RCT of ESS plus medical therapy versus medical therapy alone, and narrative work on timing. Rewritten so the entry's content is the absence of a head-to-head trial, which is genuinely useful to know and is the honest answer to the question the submission was asking. Note also that the submission specifies the NON-polypoid phenotype, where the 2025 AAO-HNS guideline recommends against routine biologics anyway — so a trial pitting surgery against biologics in that group would be testing something already advised against.
+
 ### Family Medicine 2025 #1 — Blood-Based Cell-Free DNA Testing for Colorectal Cancer Screening: Where It Actually Stands
 
 **REPLACED — the cited guideline does not exist**
@@ -268,19 +292,19 @@ There is no 2025 USPSTF final recommendation integrating blood-based cfDNA. The 
 
 There is no head-to-head pragmatic primary care trial of GLP-1 RAs versus SGLT2 inhibitors in NEJM; the literature states plainly that no head-to-head trials exist. The original's directional conclusions are also partly reversed: it said the classes are equivalent for cardiovascular protection with SGLT2 superior for renal outcomes, whereas the meta-analytic picture is that GLP-1 RAs look better for MACE and SGLT2 inhibitors better for heart failure AND renal outcomes. Rewritten to state the evidence type explicitly, since 'a randomized head-to-head trial showed' and 'network meta-analysis suggests' carry very different weight at the bedside.
 
-### General Surgery 2025 #1 — OPRA Long-Term Results: Watch-and-Wait After Total Neoadjuvant Therapy for Rectal Cancer
+### Surgery (General) 2025 #1 — OPRA Long-Term Results: Watch-and-Wait After Total Neoadjuvant Therapy for Rectal Cancer
 
 **NOT FOUND — the submitted trial name belongs to an unrelated study; replaced with the real evidence base**
 
 The submission titled this entry 'Phase III SUNLIGHT Trial: Watch-and-Wait vs. Total Mesorectal Excision'. SUNLIGHT is a real phase III trial, but it is trifluridine/tipiracil plus bevacizumab versus trifluridine/tipiracil alone in refractory METASTATIC colorectal cancer (492 patients, median OS 10.8 vs 7.5 months, HR 0.61) — it has nothing to do with watch-and-wait, rectal cancer or surgery. No Lancet randomised trial of watch-and-wait versus TME could be found; a randomised comparison of the two has never been done and probably cannot be, since randomising a complete responder to surgery has failed to recruit. The actual evidence base is the randomised phase II OPRA trial (long-term results, JCO 2023/2025 analyses) plus the International Watch & Wait Database registry, and the surviving-equal-survival claim is supported specifically by OPRA's 64% vs 64% DFS for planned TME versus salvage TME after regrowth. Entry rewritten to that evidence, with the surveillance burden and regrowth timing added. NOTE: trifluridine/tipiracil has now appeared TWICE in this review as a wrong-drug/wrong-trial title (previously in the ophthalmology list, for ocular surface squamous neoplasia) — worth watching as a recurring source of contamination.
 
-### General Surgery 2025 #9 — Prehospital Resuscitative Thoracotomy for Traumatic Cardiac Arrest
+### Surgery (General) 2025 #9 — Prehospital Resuscitative Thoracotomy for Traumatic Cardiac Arrest
 
 **corrected — study design misstated and the comparative claim does not exist in the paper**
 
 The paper is real: Perkins et al., JAMA Surgery, published online 26 February 2025. Two corrections, both about what it can support. (1) The submission calls it 'a high-impact trial' that 'evaluated survival and neurological outcomes following physician-led prehospital resuscitative thoracotomy versus standard emergency department thoracotomy'. It is a RETROSPECTIVE COHORT of 601 London cases over 21 years with NO comparison group — there is no versus. (2) It therefore cannot and does not 'prove that executing immediate thoracotomy at the scene significantly improves neurologically intact survival compared to delayed in-hospital thoracotomy'; that comparison was never made. The published survival is 5% to hospital discharge, which the submission omitted entirely, and the benefit signal is specific to cardiac tamponade. Entry rewritten to the cohort's actual findings with the causes breakdown and the system-dependence caveat added, since a 5% figure from a physician-staffed urban service is not portable.
 
-### General Surgery 2026 #9 — Remote Perioperative Telemonitoring in Cancer Surgery
+### Surgery (General) 2026 #9 — Remote Perioperative Telemonitoring in Cancer Surgery
 
 **NOT FOUND as cited — journal, year and every claimed outcome differ from the real trial**
 
@@ -297,42 +321,6 @@ No Lancet Neurology international randomised trial of decompressive craniectomy 
 **corrected — the cited registry finding was not found and the framing risked patient harm**
 
 NOT FOUND AS DESCRIBED. The submission claims 'large-scale prospective registry data confirmed that waiting until the following morning... yields equivalent perioperative mortality and complication rates compared to middle-of-the-night emergency surgery'. I could not locate such a registry study. What the literature does support is narrower and matters: in a cohort of over 30,000, short-term mortality was lowest at 6-15 hours and uniform across the first 24 hours; separately, delay beyond 12 hours from admission was associated with 1.43 times the odds of 30-day mortality; and evidence on out-of-hours operating specifically is conflicting. Rewritten so the defensible conclusion — a planned morning list is acceptable inside the 24-hour window — is stated without implying that delay per se is safe. This was the highest-risk entry in the orthopaedics submission: as written it read as permission to postpone, against guidance requiring surgery within 24 to 48 hours, and a resident could have acted on it.
-
-### Otolaryngology 2025 #8 — Behavioural Voice Therapy Before Phonosurgery — and the Thin Evidence for Virtual Reality Delivery
-
-**NOT FOUND as described — rewritten around what is supported**
-
-The submitted claim could not be verified. It describes 'multicenter trials evaluating immersive Virtual Reality (VR) environments combined with standard speech-language pathology protocols' that 'yielded superior acoustic and patient-reported outcome measures in muscle tension dysphonia and vocal fold paresis'. No such multicentre trial surfaced. What exists is earlier-stage: a feasibility and validation trial of VR speech-language therapies (NCT05695131, general SLP rather than voice specifically), work on head-mounted VR to aid real-life transfer in voice therapy, and VR rehabilitation pilots in other domains. The clinically sound part of the submission — that behavioural voice therapy precedes phonosurgical intervention — is standard and is kept, and the RTSS specification work is substituted as the real recent development in this area. The entry now says explicitly that VR is not established, because the submitted version would support telling a patient it outperforms conventional therapy.
-
-### Otolaryngology 2026 #3 — Hyperangulated versus Macintosh-Geometry Videolaryngoscopy in the Difficult Airway
-
-**NOT FOUND as cited — real evidence substituted**
-
-The specific citation does not check out. The submission names 'The ANGLE Trial' with registration NCT07223762 and calls it multi-centre randomised controlled trial data providing 'definitive guidance'. No trial of that name or registration number surfaced, and the NCT number should not be repeated. Real evidence on the same question does exist and has been substituted: Köhl et al. in Anaesthesia (2024), a randomised controlled trial in anticipated difficult airways favouring hyperangulated videolaryngoscopy on glottic view, first-attempt success and intubation time; a 2025 randomised trial of Glidescope versus an intermediate-angled blade; and a registered systematic review protocol. The tube-advancement trade-off has been added because it is the reason the answer is not simply 'use hyperangulated'. Also flagged that this is substantively an airway-management topic drawn from anaesthesia and emergency medicine rather than an ENT trial, and that several commonly quoted comparisons are manikin or cadaver studies — the submission's 'definitive' is not warranted by any of them.
-
-### Otolaryngology 2026 #4 — Endoscopic Sinus Surgery and Biologics in Chronic Rhinosinusitis: No Head-to-Head Trial Yet
-
-**NOT FOUND as described — the head-to-head trial does not exist**
-
-The submission describes 'Phase III randomized trial data published in JAMA Otolaryngology–Head & Neck Surgery' comparing FESS against ongoing biologic therapy in recurrent acute and non-polypoid chronic rhinosinusitis, and says it 'updates care pathways to define precise phenotypic markers' for choosing between them. No such trial was found. What exists is a network meta-analysis (five RCTs, 1,748 patients, indirect comparison of ESS plus medical therapy against four monoclonals in CRSwNP), a multicentre RCT of ESS plus medical therapy versus medical therapy alone, and narrative work on timing. Rewritten so the entry's content is the absence of a head-to-head trial, which is genuinely useful to know and is the honest answer to the question the submission was asking. Note also that the submission specifies the NON-polypoid phenotype, where the 2025 AAO-HNS guideline recommends against routine biologics anyway — so a trial pitting surgery against biologics in that group would be testing something already advised against.
-
-### PM&R 2025 #2 — Epidural Spinal Cord Stimulation for Motor and Autonomic Recovery in Chronic Spinal Cord Injury
-
-**NOT FOUND as cited — no ESTEEM trial, real evidence substituted**
-
-The submitted citation does not check out. Both PM&R lists describe an 'ESTEEM Trial' of 'pivotal multicenter clinical trial data' proving eSCS restores volitional trunk control, independent stepping and autonomic blood pressure stability, with the 2026 version adding publication in Nature Neuroscience. No trial named ESTEEM in this field surfaced, and the Nature Neuroscience publication could not be verified. The underlying science is real and has been substituted: lumbosacral eSCS partially restoring standing and stepping, restoring voluntary movement below a motor-complete lesion, improving seated reaching via a 16-contact array in chronic complete thoracic injury, and documented cardiovascular, bladder and bowel effects — but from small series and pilot studies, not a pivotal trial. The entry now says so explicitly, because the submitted version would support telling a patient with chronic paralysis that stepping is an established outcome. The submission's conclusion that eSCS is an 'evidence-based adjunctive standard in spinal cord injury rehabilitation consensus guidelines' is not supported and has been removed. YEAR: assigned to 2025; the item appeared on both submitted lists.
-
-### PM&R 2025 #5 — Powered Robotic Exoskeleton Gait Training in Inpatient Rehabilitation
-
-**NOT FOUND as cited — the consensus document could not be located**
-
-The submitted framing does not check out. Both PM&R lists describe an 'AAPM&R / ACRM Joint Consensus Guidelines' framework establishing standardised dosing, safety protocols and patient selection criteria for exoskeleton gait training. No such joint consensus document surfaced. Real evidence has been substituted: a 2025 randomised controlled trial of overground robotic exoskeleton gait training in incomplete SCI during inpatient rehabilitation (Arch Phys Med Rehabil), the FIRST trial programme, and the post-stroke literature. IMPORTANT DIRECTIONAL CORRECTION: the submission implies exoskeletons accelerate mobility restoration. In chronic stroke, exoskeletal gait training is reported as broadly EQUIVALENT to traditional therapy, with possible added benefit only in sub-acute patients — so the honest case is dose and reduced therapist strain, not superior recovery. The submission's point about reducing physical strain on therapists is well founded and is kept. YEAR: assigned to 2025; the item appeared on both submitted lists.
-
-### PM&R 2025 #7 — Continuous Peripheral Nerve Catheters in Cancer Rehabilitation
-
-**NOT FOUND as described — real supporting literature substituted**
-
-The submitted citation could not be verified. The 2025 list describes a 'clinical trial in oncology rehabilitation showing that ambulatory, ultrasound-guided continuous peripheral nerve blocks dramatically increase physical therapy participation and functional mobility' in tumour plexopathy and painful bone metastases. No such trial was found. Substituted with what is documented: continuous peripheral nerve blocks in cancer pain including brachial plexus involvement, continuous femoral blocks giving satisfactory analgesia with improved rehabilitation and shorter stay versus opiates, reduced analgesic requirement and improved ambulation, and the Cleveland Clinic ambulatory catheter series with a median five-day duration and no excess complications. The submission's claim that this 'formalizes clinical practice standards linking interventional pain procedures directly into... cancer rehabilitation pathways' is not supported and has been removed. The clinical rationale — regional analgesia to preserve cognition and stamina for therapy — is sound and is kept. YEAR: 2025 as submitted; this was one of only two items unique to the 2025 list.
 
 ### Pathology 2026 #7 — Digital Pathology Security and Retention in CAP Accreditation
 
@@ -352,7 +340,25 @@ The AWaRe framework and the over-reliance on Watch antibiotics in children are r
 
 The submitted citation could not be verified. It describes an 'LVA-PLD Trial', a multicentre trial in BMJ Open establishing operative quality metrics such as minimum micro-anastomotic stitch counts paired with early automated pneumatic drainage, and claims it 'standardizes supermicrosurgical quality benchmarks and postoperative compression timing within lymphedema clinical management guidelines'. No trial of that name, no such BMJ Open publication, and no stitch-count quality benchmark were found. Substituted with the documented LVA literature: a 100-patient/132-anastomosis series with 24-month follow-up, a 45-patient cohort, lower extremity lymphedema index reductions of roughly 6-8% at 1 to 6 months, standard postoperative compression with class III garments or custom stockings, and reduction in lymphedema-associated pain. The entry states explicitly that neither the stitch-count metric nor a pneumatic-drainage benefit is established, because both would otherwise be quoted as standards. Expectation-setting added, since single-digit index reductions are far from what patients typically anticipate.
 
-### Radiology 2025 #10 — Multiparametric MRI for Non-Invasive Staging of Metabolic Liver Disease
+### Physical Medicine & Rehabilitation 2025 #2 — Epidural Spinal Cord Stimulation for Motor and Autonomic Recovery in Chronic Spinal Cord Injury
+
+**NOT FOUND as cited — no ESTEEM trial, real evidence substituted**
+
+The submitted citation does not check out. Both PM&R lists describe an 'ESTEEM Trial' of 'pivotal multicenter clinical trial data' proving eSCS restores volitional trunk control, independent stepping and autonomic blood pressure stability, with the 2026 version adding publication in Nature Neuroscience. No trial named ESTEEM in this field surfaced, and the Nature Neuroscience publication could not be verified. The underlying science is real and has been substituted: lumbosacral eSCS partially restoring standing and stepping, restoring voluntary movement below a motor-complete lesion, improving seated reaching via a 16-contact array in chronic complete thoracic injury, and documented cardiovascular, bladder and bowel effects — but from small series and pilot studies, not a pivotal trial. The entry now says so explicitly, because the submitted version would support telling a patient with chronic paralysis that stepping is an established outcome. The submission's conclusion that eSCS is an 'evidence-based adjunctive standard in spinal cord injury rehabilitation consensus guidelines' is not supported and has been removed. YEAR: assigned to 2025; the item appeared on both submitted lists.
+
+### Physical Medicine & Rehabilitation 2025 #5 — Powered Robotic Exoskeleton Gait Training in Inpatient Rehabilitation
+
+**NOT FOUND as cited — the consensus document could not be located**
+
+The submitted framing does not check out. Both PM&R lists describe an 'AAPM&R / ACRM Joint Consensus Guidelines' framework establishing standardised dosing, safety protocols and patient selection criteria for exoskeleton gait training. No such joint consensus document surfaced. Real evidence has been substituted: a 2025 randomised controlled trial of overground robotic exoskeleton gait training in incomplete SCI during inpatient rehabilitation (Arch Phys Med Rehabil), the FIRST trial programme, and the post-stroke literature. IMPORTANT DIRECTIONAL CORRECTION: the submission implies exoskeletons accelerate mobility restoration. In chronic stroke, exoskeletal gait training is reported as broadly EQUIVALENT to traditional therapy, with possible added benefit only in sub-acute patients — so the honest case is dose and reduced therapist strain, not superior recovery. The submission's point about reducing physical strain on therapists is well founded and is kept. YEAR: assigned to 2025; the item appeared on both submitted lists.
+
+### Physical Medicine & Rehabilitation 2025 #7 — Continuous Peripheral Nerve Catheters in Cancer Rehabilitation
+
+**NOT FOUND as described — real supporting literature substituted**
+
+The submitted citation could not be verified. The 2025 list describes a 'clinical trial in oncology rehabilitation showing that ambulatory, ultrasound-guided continuous peripheral nerve blocks dramatically increase physical therapy participation and functional mobility' in tumour plexopathy and painful bone metastases. No such trial was found. Substituted with what is documented: continuous peripheral nerve blocks in cancer pain including brachial plexus involvement, continuous femoral blocks giving satisfactory analgesia with improved rehabilitation and shorter stay versus opiates, reduced analgesic requirement and improved ambulation, and the Cleveland Clinic ambulatory catheter series with a median five-day duration and no excess complications. The submission's claim that this 'formalizes clinical practice standards linking interventional pain procedures directly into... cancer rehabilitation pathways' is not supported and has been removed. The clinical rationale — regional analgesia to preserve cognition and stamina for therapy — is sound and is kept. YEAR: 2025 as submitted; this was one of only two items unique to the 2025 list.
+
+### Radiology (Diagnostic, Interventional, Nuclear) 2025 #10 — Multiparametric MRI for Non-Invasive Staging of Metabolic Liver Disease
 
 **citation not independently verified — the named journal does not exist**
 
@@ -600,48 +606,6 @@ The specific Annals of Internal Medicine translational analysis was not located.
 
 No cross-specialty ACP / International Headache Society consensus statement matching this description was located; the url is a PubMed title search and the joint attribution is unresolved. TERMINOLOGY: gepants are CGRP RECEPTOR ANTAGONISTS, not 'CGRP inhibitors' — the monoclonal antibodies against CGRP or its receptor are a separate class used for prevention, and conflating them matters when choosing acute versus preventive therapy. The pharmacology and the triptan-contraindication reasoning are well established and retained; lasmiditan's driving restriction was added because it determines whether the drug is usable for a given patient.
 
-### Neurological Surgery 2025 #2 — Congress of Neurological Surgeons Guidelines on Emerging Therapies for Brain Metastases
-
-**NOT INDEPENDENTLY VERIFIED**
-
-The CNS does publish guideline series in Neurosurgery and the clinical content is consistent with current neuro-oncology practice, but no specific 2025 document was located and the '23 evidence-based recommendations' figure is therefore not asserted; the url is a PubMed title search. 'Establishes LITT as a valid alternative to open craniotomy' softened to an option in the settings where it is actually used. Named agents were adjusted to the ones with established intracranial activity.
-
-### Neurological Surgery 2025 #6 — Predicting Long-Term Pain Freedom after Microvascular Decompression for Trigeminal Neuralgia
-
-**NOT INDEPENDENTLY VERIFIED**
-
-No specific validation study matching this description was located, and the institutional attribution (Columbia and NewYork-Presbyterian) is unconfirmed; the url is a PubMed title search. The underlying clinical principle — that classical presentation plus demonstrated arterial conflict predicts durable relief, and that atypical or non-compressive cases do worse — is well established, and has been stated explicitly here rather than left as 'a refined scoring system', which taught nothing usable.
-
-### Neurological Surgery 2025 #7 — Awake Full-Endoscopic Lumbar Decompression under Regional Anaesthesia
-
-**NOT INDEPENDENTLY VERIFIED**
-
-No specific multicentre registry publication matching this description was located; the url is a PubMed title search. 'Establishes standardized surgical and anesthetic pathways' and the comparative claim of faster recovery than open microdiscectomy are presented as registry observations rather than established findings, and the non-randomised design plus the learning-curve caveat were added — both bear directly on whether the reported advantage would hold in a given surgeon's hands.
-
-### Neurological Surgery 2025 #10 — Cerebrospinal Fluid Cell-Free DNA Sequencing for Molecular Diagnosis of CNS Tumours
-
-**NOT INDEPENDENTLY VERIFIED**
-
-No specific prospective Nature Medicine validation study matching this description was located; the url is a PubMed title search. The approach is genuine and under active investigation. 'Endorses CSF liquid biopsy as an OFFICIAL diagnostic tool in neuro-oncology guidelines' could not be confirmed and was removed — no guideline endorsement was identified. Added the location-dependent yield, which is the limitation that determines whether a negative result means anything.
-
-### Neurological Surgery 2026 #1 — Squid Middle Meningeal Artery Embolization for Subacute and Chronic Subdural Haematoma (STEM)
-
-**NOT INDEPENDENTLY VERIFIED**
-
-The MMA embolization trial programme is real and STEM is a recognised trial name in it, but this specific publication was not located and the url is a PubMed title search. TWO CLAIMS REMOVED: 'significantly reduces... major neurological events' and 'Provides LEVEL I clinical trial evidence confirming that endovascular dural artery devascularization addresses the pathophysiological cause of capillary leak' — neither was confirmed, and a trial does not confirm a pathophysiological mechanism. Also note the submission listed EMBOLISE separately in the same batch; EMBOLISE is kept on the 2025 page so the same trial does not appear under both years.
-
-### Neurological Surgery 2026 #6 — Guideline for the Early Management of Patients With Acute Ischaemic Stroke
-
-**NOT INDEPENDENTLY VERIFIED**
-
-No specific 2026 guideline document was located and the url is a PubMed title search; the individual components (tenecteplase preference, large-core thrombectomy) are well supported independently. TWO CLAIMS CORRECTED. The submission said the guideline expands eligibility 'for large core AND DISTAL VESSEL OCCLUSIONS' — the 2025 MeVO trials were negative, so that direction is not supported and the entry now says so. And 'incorporating mobile stroke units' plus 'MANDATES direct transport to endovascular-capable centers' and 'formalizes intensive blood pressure lowering' could not be confirmed; mandate language was removed.
-
-### Neurological Surgery 2026 #7 — Consensus Practice Guidelines on Sacroiliac Joint Complex Pain
-
-**NOT INDEPENDENTLY VERIFIED**
-
-A multispecialty consensus on sacroiliac joint pain is consistent with recent Regional Anesthesia & Pain Medicine output, but the specific document was not located and the url is a PubMed title search. The 50% block-relief threshold stated in the submission is the conventional criterion in this literature and is retained as such rather than attributed to this document specifically.
-
 ### Neurology 2025 #4 — Prourokinase versus Standard Care in Mild Acute Ischaemic Stroke
 
 **NOT INDEPENDENTLY VERIFIED**
@@ -695,6 +659,48 @@ No specific national cohort study was located; the url is a PubMed title search,
 **NOT INDEPENDENTLY VERIFIED**
 
 No specific multicentre validation publication was located; the url is a PubMed title search, and the named commercial platform has been removed from the title since the citation is unconfirmed. TWO CLAIMS SOFTENED: 'ELIMINATES diagnostic uncertainty in early parkinsonism' is not something a supplementary imaging test does, and 'incorporated... into movement disorder diagnostic pathways' could not be confirmed. Added the asymmetric harm of a false-positive atypical diagnosis, given the prognosis it conveys.
+
+### Neurological Surgery 2025 #2 — Congress of Neurological Surgeons Guidelines on Emerging Therapies for Brain Metastases
+
+**NOT INDEPENDENTLY VERIFIED**
+
+The CNS does publish guideline series in Neurosurgery and the clinical content is consistent with current neuro-oncology practice, but no specific 2025 document was located and the '23 evidence-based recommendations' figure is therefore not asserted; the url is a PubMed title search. 'Establishes LITT as a valid alternative to open craniotomy' softened to an option in the settings where it is actually used. Named agents were adjusted to the ones with established intracranial activity.
+
+### Neurological Surgery 2025 #6 — Predicting Long-Term Pain Freedom after Microvascular Decompression for Trigeminal Neuralgia
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific validation study matching this description was located, and the institutional attribution (Columbia and NewYork-Presbyterian) is unconfirmed; the url is a PubMed title search. The underlying clinical principle — that classical presentation plus demonstrated arterial conflict predicts durable relief, and that atypical or non-compressive cases do worse — is well established, and has been stated explicitly here rather than left as 'a refined scoring system', which taught nothing usable.
+
+### Neurological Surgery 2025 #7 — Awake Full-Endoscopic Lumbar Decompression under Regional Anaesthesia
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific multicentre registry publication matching this description was located; the url is a PubMed title search. 'Establishes standardized surgical and anesthetic pathways' and the comparative claim of faster recovery than open microdiscectomy are presented as registry observations rather than established findings, and the non-randomised design plus the learning-curve caveat were added — both bear directly on whether the reported advantage would hold in a given surgeon's hands.
+
+### Neurological Surgery 2025 #10 — Cerebrospinal Fluid Cell-Free DNA Sequencing for Molecular Diagnosis of CNS Tumours
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific prospective Nature Medicine validation study matching this description was located; the url is a PubMed title search. The approach is genuine and under active investigation. 'Endorses CSF liquid biopsy as an OFFICIAL diagnostic tool in neuro-oncology guidelines' could not be confirmed and was removed — no guideline endorsement was identified. Added the location-dependent yield, which is the limitation that determines whether a negative result means anything.
+
+### Neurological Surgery 2026 #1 — Squid Middle Meningeal Artery Embolization for Subacute and Chronic Subdural Haematoma (STEM)
+
+**NOT INDEPENDENTLY VERIFIED**
+
+The MMA embolization trial programme is real and STEM is a recognised trial name in it, but this specific publication was not located and the url is a PubMed title search. TWO CLAIMS REMOVED: 'significantly reduces... major neurological events' and 'Provides LEVEL I clinical trial evidence confirming that endovascular dural artery devascularization addresses the pathophysiological cause of capillary leak' — neither was confirmed, and a trial does not confirm a pathophysiological mechanism. Also note the submission listed EMBOLISE separately in the same batch; EMBOLISE is kept on the 2025 page so the same trial does not appear under both years.
+
+### Neurological Surgery 2026 #6 — Guideline for the Early Management of Patients With Acute Ischaemic Stroke
+
+**NOT INDEPENDENTLY VERIFIED**
+
+No specific 2026 guideline document was located and the url is a PubMed title search; the individual components (tenecteplase preference, large-core thrombectomy) are well supported independently. TWO CLAIMS CORRECTED. The submission said the guideline expands eligibility 'for large core AND DISTAL VESSEL OCCLUSIONS' — the 2025 MeVO trials were negative, so that direction is not supported and the entry now says so. And 'incorporating mobile stroke units' plus 'MANDATES direct transport to endovascular-capable centers' and 'formalizes intensive blood pressure lowering' could not be confirmed; mandate language was removed.
+
+### Neurological Surgery 2026 #7 — Consensus Practice Guidelines on Sacroiliac Joint Complex Pain
+
+**NOT INDEPENDENTLY VERIFIED**
+
+A multispecialty consensus on sacroiliac joint pain is consistent with recent Regional Anesthesia & Pain Medicine output, but the specific document was not located and the url is a PubMed title search. The 50% block-relief threshold stated in the submission is the conventional criterion in this literature and is retained as such rather than attributed to this document specifically.
 
 ### Obstetrics & Gynecology 2025 #2 — ACOG Clinical Practice Guideline: Intrapartum Fetal Heart Rate Monitoring
 
@@ -936,85 +942,85 @@ ADAM is a real trial name for adjuvant avelumab in Merkel cell carcinoma. I coul
 
 Tislelizumab is a real agent with an oesophageal squamous cell carcinoma programme, and EC-CRT-002 follows a real trial-naming series in this field, so the entry is plausible. I did not verify the publication, results or effect size, so the PFS improvement the submission describes as 'markedly improve[d]' is not asserted. Note an internal inconsistency in the submission: the entry is titled 'Phase II EC-CRT-002' while the text describes practice-changing guideline impact — a randomised phase II motivates a phase III rather than shifting protocols. ADDED: the surrogate-endpoint caution, because organ preservation rests on complete CLINICAL response, which is not the same as pathological complete response, and the intensity of surveillance required is what makes non-operative management safe or unsafe.
 
-### Radiology 2025 #3 — Photon-Counting CT for Coronary Plaque Characterisation
+### Radiology (Diagnostic, Interventional, Nuclear) 2025 #3 — Photon-Counting CT for Coronary Plaque Characterisation
 
 **citation not independently verified — physics accurate, guideline claim not confirmed**
 
 The technology and its advantage over energy-integrating detectors are accurately described, and reduced calcium blooming with improved spatial resolution is the established rationale for photon-counting CT in coronary imaging. I did not verify the specific multicentre Radiology trial, nor the claim that SCCT guidelines have been updated to establish photon-counting CT as 'the definitive non-invasive imaging standard for equivocal coronary calcifications' — that is a specific guideline assertion and no supporting document was found. Also softened 'dramatically decreases false-positive coronary artery disease diagnoses, sparing thousands of patients unnecessary invasive cardiac angiograms', which is a modelled implication rather than a measured outcome. ADDED: limited scanner availability, and the point that improved characterisation only helps if it changes management — for soft plaque, statin intensification is usually reachable without it.
 
-### Radiology 2025 #4 — PSMA-PET at Biochemical Recurrence and 177Lu-PSMA Theranostics
+### Radiology (Diagnostic, Interventional, Nuclear) 2025 #4 — PSMA-PET at Biochemical Recurrence and 177Lu-PSMA Theranostics
 
 **citation not independently verified — one claim goes beyond any endpoint**
 
 PSMA-PET's superior detection at low PSA and the theranostic pairing with 177Lu-PSMA are both well established, so the direction is sound. I did not verify the specific multicentre trial, the journal, or the claim that SNMMI and NCCN guidelines recommend restaging at PSA as low as 0.2 ng/mL. ONE SUBSTANTIVE CORRECTION: the submission says this combination 'detects and ERADICATES oligometastatic prostate lesions before standard CT/bone scans can visualize them'. Eradication is not an endpoint any radioligand trial has demonstrated; the measured endpoints are PSA response, progression-free survival and overall survival. ADDED: stage migration, which the submission does not mention — a more sensitive scan reclassifies patients as metastatic and can lead to more intensive treatment without evidence of benefit, and that is the standing critique of PSMA-PET-driven management.
 
-### Radiology 2025 #5 — Yttrium-90 Radioembolisation Combined with Immune Checkpoint Blockade in Unresectable HCC
+### Radiology (Diagnostic, Interventional, Nuclear) 2025 #5 — Yttrium-90 Radioembolisation Combined with Immune Checkpoint Blockade in Unresectable HCC
 
 **citation not independently verified — 'unprecedented survival' not asserted**
 
 The combination is a real and active area: Y-90 radioembolisation is established in HCC and checkpoint blockade is first-line systemic therapy, so testing them together is a genuine trial concept. I did not verify the Lancet Oncology publication the submission cites or its outcomes, and the claim of 'unprecedented overall survival rates' is not asserted — nor is the claim that SIR and EASL algorithms have been modified to position radioembolisation as an upfront partner to immunotherapy. ADDED, because the submission presents only upside: in a cirrhotic patient, hepatic decompensation after liver-directed radiation can remove transplant eligibility altogether, which inverts the stated goal; and immune-related hepatitis on combination therapy is genuinely difficult to distinguish from progression or radiation change.
 
-### Radiology 2025 #6 — AI Triage for Intracranial Haemorrhage and Pulmonary Embolism
+### Radiology (Diagnostic, Interventional, Nuclear) 2025 #6 — AI Triage for Intracranial Haemorrhage and Pulmonary Embolism
 
 **citation not independently verified — 'autonomous' is the wrong word**
 
 AI triage for intracranial haemorrhage and pulmonary embolism is real, FDA-cleared and widely deployed, and time-to-treatment reductions have been reported in real-world studies — so the direction is sound. I did not verify the specific multi-hospital validation studies or the 'over 40 minutes' figure, and the claim that ACR and ACEP workflow guidelines now integrate automated prioritisation was not confirmed. ONE CORRECTION OF SUBSTANCE: the submission's title calls these 'Autonomous AI Triage'. They are cleared as triage and notification devices, explicitly not autonomous and not diagnostic — they change reading order and are not permitted to make the call. That distinction is what makes the false-negative point critical: an unflagged worklist is not a negative result, and the entry now says so. Added that measured time savings depend on someone being free to act on the alert.
 
-### Radiology 2025 #7 — 68Ga-FAPI PET/CT in Tumours with Low FDG Avidity
+### Radiology (Diagnostic, Interventional, Nuclear) 2025 #7 — 68Ga-FAPI PET/CT in Tumours with Low FDG Avidity
 
 **citation not independently verified — specificity limit added**
 
 FAPI PET is real and the comparison with FDG in low-avidity gastrointestinal tumours is a genuine and active research area, so the submission's direction holds. I did not verify the specific pan-cancer diagnostic trial in the Journal of Nuclear Medicine, nor the claim that SNMMI diagnostic consensus has adopted FAPI-PET for staging these malignancies. ADDED, because it is the main limitation and the submission omits it entirely: fibroblast activation protein is expressed in fibrosis, inflammation and healing tissue, so FAPI uptake is not tumour-specific and inflammatory or post-treatment change can be mistaken for malignancy. The submission's claim that it 'eliminates diagnostic blind spots' and avoids 'futile exploratory laparotomies' is softened accordingly — a tracer with imperfect specificity can also cause a resectable patient to be denied surgery.
 
-### Radiology 2025 #8 — MR-Guided Focused Ultrasound Thalamotomy for Essential Tremor
+### Radiology (Diagnostic, Interventional, Nuclear) 2025 #8 — MR-Guided Focused Ultrasound Thalamotomy for Essential Tremor
 
 **citation not independently verified — comparison with DBS overstated**
 
 MRgFUS thalamotomy is real, FDA-approved for essential tremor, and the pivotal randomised trial is published in the New England Journal of Medicine, with long-term follow-up reports in the literature — so the substance is sound. I did not verify the specific five-year multicentre dataset, nor the claim that AAN and CNS guidelines designate it 'an equal first-line interventional alternative' to DBS. THE CORRECTION IS THE COMPARISON. The submission presents it as strictly superior — 'completely eliminates the need for open craniotomy, skull drilling, or implanted brain hardware'. It is incisionless, but the lesion is permanent and unadjustable where DBS is reversible and titratable and can be performed bilaterally; bilateral lesioning carries greater risk of speech and gait complications. Added the recognised adverse effects and the skull density ratio constraint, which determines candidacy and which the submission does not mention. Also note the submission's inclusion of Parkinson's disease in the title: the indications and evidence differ from essential tremor and are not asserted here.
 
-### Radiology 2025 #9 — Genicular Artery Embolisation for Knee Osteoarthritis
+### Radiology (Diagnostic, Interventional, Nuclear) 2025 #9 — Genicular Artery Embolisation for Knee Osteoarthritis
 
 **citation not independently verified — the sham-control claim is the load-bearing one**
 
 Genicular artery embolisation is a real procedure with a growing evidence base and genuine interest as an option for patients who are poor arthroplasty candidates. I did not verify the 'landmark randomized sham-controlled trial published in Radiology' the submission describes, and that is the claim the whole entry rests on: knee osteoarthritis pain is unusually placebo-responsive and any invasive procedure produces a large non-specific effect, so a sham-controlled result would be decisive while an uncontrolled one would be close to uninformative. Written to make that distinction explicit rather than asserting the result. ADDED: that embolisation targets pain without altering joint structure — the submission's 'significantly delaying or replacing the need for major joint replacement surgery' implies disease modification that the mechanism does not support — and non-target embolisation as the procedural risk.
 
-### Radiology 2026 #2 — MASAI: AI-Supported Single Reading versus Double Reading in Screening Mammography
+### Radiology (Diagnostic, Interventional, Nuclear) 2026 #2 — MASAI: AI-Supported Single Reading versus Double Reading in Screening Mammography
 
 **citation not independently verified — the guideline approval claim is the concern**
 
 MASAI is a real randomised trial of AI-supported mammography screening and its early results are published, so the entry is well founded. I did not verify the long-term interval-cancer data presented at ECR that the submission describes. THE CLAIM THAT MATTERS is that this 'reshapes EUSOBI and ACR screening workflow guidelines to formally approve single-radiologist + AI reading models as a safe alternative to dual human reads' — replacing a second human reader in a national screening programme is a major governance decision, and no such guideline approval was confirmed, so it is not asserted. ADDED: off-distribution performance degradation and the reader-AI disagreement pathway, both of which determine whether a validated model is safe in a given service and neither of which the submission mentions.
 
-### Radiology 2026 #3 — Histotripsy for Non-Invasive Ablation of Focal Liver Tumours
+### Radiology (Diagnostic, Interventional, Nuclear) 2026 #3 — Histotripsy for Non-Invasive Ablation of Focal Liver Tumours
 
 **citation not independently verified — capability limits added**
 
 Histotripsy is real, FDA-cleared for hepatic ablation, and the non-thermal mechanism is accurately described. I did not verify the specific registry or multicentre trial results, nor the claim that SIR and CIRSE guidelines have adopted it as a validated modality alongside RFA and microwave ablation. ONE CORRECTION AND ONE ADDITION. The submission says histotripsy 'enable[s] safe ablation of lesions previously considered anatomically unresectable' and 'completely eliminates' needle punctures and bleeding risk — but it requires an acoustic window, so lesions obscured by rib, bowel gas or lung are not treatable at all, which is a different limitation from the ones it solves. And no needle means no same-session biopsy, so histological confirmation must be arranged separately — a practical point the submission's framing hides.
 
-### Radiology 2026 #5 — 18F-GP1 PET/CT for Thrombus Imaging
+### Radiology (Diagnostic, Interventional, Nuclear) 2026 #5 — 18F-GP1 PET/CT for Thrombus Imaging
 
 **citation not independently verified**
 
 18F-GP1 is a real investigational tracer targeting activated glycoprotein IIb/IIIa on platelets, and thrombus imaging is its intended application, so the mechanism the submission describes is accurate. I did not verify the trial results, the SNMMI Image of the Year designation, or the claim that SNMMI and CHEST guidelines have been updated to establish target-specific PET as a secondary diagnostic tool. Rewritten so the role is described as the equivocal case rather than a guideline-endorsed pathway, and availability is stated — the submission implies a tool a clinician could order. The distinction between acute and chronic thrombus is retained because it is the genuine clinical value and is accurately described.
 
-### Radiology 2026 #6 — Actinium-225 Somatostatin Antagonist Alpha Therapy in Neuroendocrine Tumours
+### Radiology (Diagnostic, Interventional, Nuclear) 2026 #6 — Actinium-225 Somatostatin Antagonist Alpha Therapy in Neuroendocrine Tumours
 
 **citation not independently verified — evidence level and guideline claim overstated**
 
 225Ac-DOTA-LM3 is a real agent, the somatostatin antagonist rationale is accurate, and alpha therapy after 177Lu progression is a genuine research direction. I did not verify the multicentre phase II data the submission cites or its 'dramatic disease stabilization' claim, and the assertion that SNMMI and EANM theranostic sequencing protocols now establish targeted alpha therapy as a primary salvage framework is not supported. Note also that the submission bundles neuroendocrine and prostate tumours into one entry; DOTA-LM3 targets somatostatin receptors and is a neuroendocrine agent, while the prostate alpha-therapy programme uses PSMA ligands — different targets, different trials, and the prostate strand is already covered in the radiation oncology list. ADDED: marrow reserve and renal dose as the specific constraints, which the submission's 'sparing neighboring normal tissues' framing obscures.
 
-### Radiology 2026 #7 — FDG-PET Metabolic Patterns as a Predictor of Anti-Amyloid Therapy Response
+### Radiology (Diagnostic, Interventional, Nuclear) 2026 #7 — FDG-PET Metabolic Patterns as a Predictor of Anti-Amyloid Therapy Response
 
 **citation not independently verified — guideline claim would change access to therapy**
 
 The question is real and important, and predictive biomarkers for anti-amyloid therapy are actively sought. I did not verify the UCLA prospective data, the SNMMI Abstract of the Year designation, or the results. THE CLAIM REQUIRING MOST CAUTION is that this 'modifies SNMMI and American Academy of Neurology diagnostic guidelines to recommend metabolic FDG-PET stratification before initiating costly anti-amyloid disease-modifying therapies' — a guideline requiring a PET scan before treatment would function as an access barrier, and no such guideline was found. The submission's framing that it 'prevents non-responder patient subsets from undergoing unnecessary high-risk immunotherapy' presumes validated prediction; the entry states what validation would require. Also noted that FDG-PET measures glucose metabolism, not amyloid or tau, and its patterns overlap between dementias.
 
-### Radiology 2026 #8 — Generative Vision-Language Models for Draft Chest Radiograph Reporting
+### Radiology (Diagnostic, Interventional, Nuclear) 2026 #8 — Generative Vision-Language Models for Draft Chest Radiograph Reporting
 
 **citation not independently verified — designation is not clearance**
 
 Generative vision-language models for radiograph report drafting are a real and fast-moving area and FDA Breakthrough Device Designations have been granted in this space, so the entry is plausible. I did not verify the specific product, the multicentre validation, or the claim that dictation times fall by up to 50%. TWO CORRECTIONS. (1) Breakthrough Device Designation is an expedited-review pathway, not a clearance, and does not establish performance — the fourth time in this review a designation has been presented as an approval. (2) ADDED, because it is the substantive risk and the submission does not mention it: a fluent draft report invites automation bias more strongly than a detection overlay does, because a plausible sentence describing a finding that is not present is easier to sign than a visibly wrong bounding box. The governance requirement — auditing edit rates and residual errors in signed reports — is stated in place of the submission's unverified time saving.
 
-### Radiology 2026 #9 — Retrievable Scaffold Therapy for Below-the-Knee Arterial Disease (DEEPER REVEAL)
+### Radiology (Diagnostic, Interventional, Nuclear) 2026 #9 — Retrievable Scaffold Therapy for Below-the-Knee Arterial Disease (DEEPER REVEAL)
 
 **citation not independently verified**
 
@@ -1060,25 +1066,37 @@ There is no 'TIMELESS-2' trial. The real 2025 NEJM trial is BRIDGE-TNK (NEJMoa25
 
 The trial is SALT-ED, NEJM 2018 (PMID 29485926), not a 2025 trial. Three corrections. It was SINGLE-CENTRE, not 'massive'. Its PRIMARY outcome — hospital-free days — was NULL; MAKE30 was a secondary outcome. And 'Rewrote emergency fluid resuscitation guidelines, designating balanced crystalloids as the primary first-line crystalloid' overstates: the large ICU trials BaSICS and PLUS were neutral, which the entry now says.
 
+### Otolaryngology – Head & Neck Surgery 2025 #2 — 2025 AAO-HNS Clinical Practice Guideline: Surgical Management of Chronic Rhinosinusitis
+
+**corrected — wrong issuing body, and the biologics recommendation ran the other way**
+
+The guideline is real: AAO-HNSF 'Clinical Practice Guideline: Surgical Management of Chronic Rhinosinusitis' (Shin et al., Otolaryngology–Head and Neck Surgery, May 2025), with a separate Adult Sinusitis Update in July 2025. TWO CORRECTIONS. (1) WRONG BODY: submitted as an 'AAOS/AAO-HNS' guideline. AAOS is the American Academy of Orthopaedic Surgeons and had no part in it — the same class of error as a wrong-drug title, and it would have a resident citing orthopaedic surgeons on sinus disease. (2) The biologics content is close to inverted. The submission says the guideline 'formally integrated biological therapies... into surgical decision trees' and defines 'precise biomarker thresholds (e.g., tissue eosinophilia, IgE) where biologics should be utilized'. The actual key action statements recommend AGAINST routine biologics in CRS without nasal polyps and call for patient education where polyps are present; no biomarker thresholds are set. Rewritten to the published statements, with the absence of biomarker cut-offs stated explicitly so the submitted version cannot be reconstructed from this entry.
+
+### Otolaryngology – Head & Neck Surgery 2026 #5 — Circulating Tumour HPV DNA for Post-Treatment Surveillance in Oropharyngeal Cancer
+
+**matched with corrections — supported, one technical description wrong**
+
+Verified and strongly supported: 100% negative predictive value with consistently undetectable ctHPVDNA, 94% positive predictive value on two consecutive positives, median 3.9-month lead time before biopsy-proven recurrence, and a 1,076-patient series across 108 sites with 95% positive predictive value where the biomarker was often the first sign of recurrence in asymptomatic patients. Those figures have been added — the submission asserted the capability without any. ONE CORRECTION: the submission calls it 'liquid biopsy whole-genome sequencing assays'. It is a targeted tissue-modified viral HPV DNA assay, not whole-genome sequencing, and describing it wrongly would mislead a resident about cost, turnaround and what the test can detect. Also added that the two-consecutive-positive rule is what the predictive values rest on, and that the test is useless in HPV-unrelated disease — the submission's 'first-line postoperative surveillance tool' reads as though it applies to all oropharyngeal cancer.
+
 ### Family Medicine 2025 #10 — Screening and Treatment of Perinatal and Postpartum Depression in Primary Care
 
 **REPLACED — the cited study could not be found**
 
 No JAMA study evaluating universal perinatal screening paired with primary-care-initiated zuranolone or targeted psychotherapy was located. Zuranolone itself is real and the rapid onset is accurate. Rewritten around the USPSTF screening reaffirmation and the zuranolone approval evidence. Two safety facts were absent from the original and matter a great deal for a family physician prescribing it: zuranolone is a SCHEDULE IV controlled substance with significant sedation and a post-dose driving restriction, and infant care during a 14-day course needs planning. The original's framing of immediate primary care initiation 'without waiting for specialized psychiatric placement' needed that counterweight.
 
-### General Surgery 2026 #4 — MAPLE-PD: Mesenteric (Artery-First) Versus Conventional Pancreatoduodenectomy
+### Surgery (General) 2026 #4 — MAPLE-PD: Mesenteric (Artery-First) Versus Conventional Pancreatoduodenectomy
 
 **matched with corrections — direction right, date wrong, and the positive substudy was omitted**
 
 Verified: MAPLE-PD, Annals of Surgery, 24 Japanese high-volume centres, protocol target 354 patients, median OS 41.7 (conventional) versus 39.3 months (mesenteric), HR 1.02, P=0.897; the trial concluded the mesenteric approach does not improve survival. The submission got the DIRECTION right, which is notable — most submissions in this review overstated. Three corrections: (1) it is a 2025 publication (PubMed 40772617), not 'Annals of Surgery, 2026'; (2) the submission omits the CTC substudy, which is the trial's positive finding and the reason the no-touch rationale is not refuted — worth including precisely because it stops the entry reading as 'artery-first is pointless'; (3) 'resectable/borderline' is specified in the trial as borderline by PORTAL VEIN involvement (BR-PV), not borderline by arterial abutment, which is a different and more difficult group. The submission's own inference — that volume, systemic therapy and R0 outweigh procedural sequence — is the trial authors' conclusion and has been kept.
 
-### General Surgery 2026 #5 — Treatment Delay Thresholds and Metastasis Risk in Colorectal Cancer
+### Surgery (General) 2026 #5 — Treatment Delay Thresholds and Metastasis Risk in Colorectal Cancer
 
 **corrected — journal wrong, and the '4 days' threshold is a misread reference group that would drive unsafe practice**
 
 SAFETY-RELEVANT FRAMING. The study is real: Nguyen et al., cohort of 11,927 insured patients with nonmetastatic colorectal cancer, machine-learning TTI thresholds across four treatment pathways. Corrections. (1) Journal: JAMA NETWORK OPEN, not JAMA Surgery as submitted. (2) The submission states 'treatment delays beyond 4 days were associated with a 27% increase in metastasis'. The published comparison is initiation at 4–46 days versus WITHIN 3 DAYS — the 27% is relative to a three-day reference, not a harm threshold at day 4. Presented as submitted, a reader would conclude that a colorectal cancer must be treated within four days of diagnosis, which is not achievable in an elective pathway, would preclude complete staging and multidisciplinary discussion, and would be actively worse care. The reference group in a real cohort is dominated by acute obstructive/perforated presentations, which is a confounder, not a target. (3) '55% if delays exceeded 47 days' is approximately right (beyond 46 days) and has been retained as the usable finding. (4) The submission's 'Multi-Cohort Pathway Threshold Study' framing obscures that this is retrospective claims data in an insured population; stated plainly.
 
-### General Surgery 2026 #6 — E-AHPBA–ESSO–Innsbruck Consensus on Peri- and Postoperative Management After Liver Resection
+### Surgery (General) 2026 #6 — E-AHPBA–ESSO–Innsbruck Consensus on Peri- and Postoperative Management After Liver Resection
 
 **corrected — right document, wrong recommendations attributed to it**
 
@@ -1095,24 +1113,6 @@ THE TITLE WAS WRONG: the submission headed this 'Subcutaneous Amivantamab and Di
 **REPLACED — the submitted title named the wrong drugs**
 
 THE TITLE WAS WRONG: the submission headed this 'Trifluridine/Tipiracil and Anti-VEGF Combinations in Ocular Surface Squamous Neoplasia'. Trifluridine/tipiracil is Lonsurf, an ORAL agent for metastatic colorectal and gastric cancer, with no role in OSSN; anti-VEGF is not a standard OSSN therapy either. The established topical agents are mitomycin C, 5-fluorouracil and interferon alfa-2b, and the entry has been rewritten accordingly. This is the SECOND wrong-drug title in these submissions — 'amivantamab' appeared in the neurology list where anti-amyloid antibodies were meant. Also corrected: the submission said topical therapy avoids limbal stem cell deficiency, when mitomycin C is a recognised CAUSE of it.
-
-### Otolaryngology 2025 #2 — 2025 AAO-HNS Clinical Practice Guideline: Surgical Management of Chronic Rhinosinusitis
-
-**corrected — wrong issuing body, and the biologics recommendation ran the other way**
-
-The guideline is real: AAO-HNSF 'Clinical Practice Guideline: Surgical Management of Chronic Rhinosinusitis' (Shin et al., Otolaryngology–Head and Neck Surgery, May 2025), with a separate Adult Sinusitis Update in July 2025. TWO CORRECTIONS. (1) WRONG BODY: submitted as an 'AAOS/AAO-HNS' guideline. AAOS is the American Academy of Orthopaedic Surgeons and had no part in it — the same class of error as a wrong-drug title, and it would have a resident citing orthopaedic surgeons on sinus disease. (2) The biologics content is close to inverted. The submission says the guideline 'formally integrated biological therapies... into surgical decision trees' and defines 'precise biomarker thresholds (e.g., tissue eosinophilia, IgE) where biologics should be utilized'. The actual key action statements recommend AGAINST routine biologics in CRS without nasal polyps and call for patient education where polyps are present; no biomarker thresholds are set. Rewritten to the published statements, with the absence of biomarker cut-offs stated explicitly so the submitted version cannot be reconstructed from this entry.
-
-### Otolaryngology 2026 #5 — Circulating Tumour HPV DNA for Post-Treatment Surveillance in Oropharyngeal Cancer
-
-**matched with corrections — supported, one technical description wrong**
-
-Verified and strongly supported: 100% negative predictive value with consistently undetectable ctHPVDNA, 94% positive predictive value on two consecutive positives, median 3.9-month lead time before biopsy-proven recurrence, and a 1,076-patient series across 108 sites with 95% positive predictive value where the biomarker was often the first sign of recurrence in asymptomatic patients. Those figures have been added — the submission asserted the capability without any. ONE CORRECTION: the submission calls it 'liquid biopsy whole-genome sequencing assays'. It is a targeted tissue-modified viral HPV DNA assay, not whole-genome sequencing, and describing it wrongly would mislead a resident about cost, turnaround and what the test can detect. Also added that the two-consecutive-positive rule is what the predictive values rest on, and that the test is useless in HPV-unrelated disease — the submission's 'first-line postoperative surveillance tool' reads as though it applies to all oropharyngeal cancer.
-
-### PM&R 2026 #3 — Ultrasound-Guided Needle EMG for Nerve Transfer Candidacy in Cervical Spinal Cord Injury
-
-**corrected — wrong operation named, and 'mandatory standard' is not supported**
-
-The work is real: Mayo Clinic uses preoperative ultrasound-guided needle EMG for upper-limb reconstruction planning in cervical spinal cord injury, and the technique paper is in Muscle & Nerve 2026 (Saddler et al., doi 10.1002/mus.70100). TWO CORRECTIONS. (1) WRONG OPERATION. Both submitted lists describe this as assessing candidacy for TENDON TRANSFER. The Mayo material and the muscle list concern NERVE transfer — the supinator branch of the radial nerve to the posterior interosseous nerve for thumb and finger extension in C5-7 injury is the worked example. Tendon transfer moves an intact muscle-tendon unit; nerve transfer reinnervates a paralysed muscle. They have different candidacy criteria, so this is a substantive error rather than a wording slip. (2) 'Establishing ultrasound-guided EMG as a mandatory preoperative diagnostic standard' overstates it; the publication describes ultrasound as a valuable tool to augment muscle localisation and enhance safety. Also corrected 'clinical trial data' — this is a technique and practice report, not a trial. YEAR: correctly assigned to 2026.
 
 ### Pathology 2025 #8 — Transformer-Based Direct Nuclei Detection Replaces Segmentation in Whole-Slide Analysis
 
@@ -1150,6 +1150,12 @@ The trial is real with the numbers confirmed: B-SIMPLE4, 891 patients aged ≥6 
 
 Verified: Nikolis et al. 2025, an international multidisciplinary Delphi study described as the only published international expert consensus on this topic, PMID 40135477. THREE CORRECTIONS. (1) JOURNAL: published in the Journal of Cosmetic Dermatology (doi 10.1111/jocd.70094); the submission's link points at PubMed/Aesthetic Surgery Journal. (2) The consensus recommendation that aesthetic treatment should begin DURING active weight loss rather than after stabilisation was missing from the submission and is its most actionable output. (3) CONFLICT OF INTEREST: the Delphi study was commissioned by Galderma, which manufactures the biostimulators and fillers the consensus addresses. That belongs in the entry, since the consensus recommends the sponsor's product class. Added the specific fat compartments, and a note that the timing advice applies to non-surgical treatment so it does not read as contradicting the weight-stability requirement before contouring surgery. The submission's '3D volumetric analysis with photo-numeric scales' assessment standard was not confirmed and is not asserted.
 
+### Physical Medicine & Rehabilitation 2026 #3 — Ultrasound-Guided Needle EMG for Nerve Transfer Candidacy in Cervical Spinal Cord Injury
+
+**corrected — wrong operation named, and 'mandatory standard' is not supported**
+
+The work is real: Mayo Clinic uses preoperative ultrasound-guided needle EMG for upper-limb reconstruction planning in cervical spinal cord injury, and the technique paper is in Muscle & Nerve 2026 (Saddler et al., doi 10.1002/mus.70100). TWO CORRECTIONS. (1) WRONG OPERATION. Both submitted lists describe this as assessing candidacy for TENDON TRANSFER. The Mayo material and the muscle list concern NERVE transfer — the supinator branch of the radial nerve to the posterior interosseous nerve for thumb and finger extension in C5-7 injury is the worked example. Tendon transfer moves an intact muscle-tendon unit; nerve transfer reinnervates a paralysed muscle. They have different candidacy criteria, so this is a substantive error rather than a wording slip. (2) 'Establishing ultrasound-guided EMG as a mandatory preoperative diagnostic standard' overstates it; the publication describes ultrasound as a valuable tool to augment muscle localisation and enhance safety. Also corrected 'clinical trial data' — this is a technique and practice report, not a trial. YEAR: correctly assigned to 2026.
+
 ### Psychiatry 2026 #4 — Switching from Oral Atypical Antipsychotics to Xanomeline-Trospium (Cobenfy): Open-Label Outpatient Switch Study
 
 **corrected — a press release described as codifying guidelines, and the mechanism repeated wrongly**
@@ -1174,7 +1180,7 @@ VERIFIED, INCLUDING THE SURVIVAL CLAIM I EXPECTED TO FAIL. Having established fo
 
 Verified and the effect is real: the LUNAR trial, JCO 10.1200/JCO-25-01553, presented at ASTRO 2025, 92 patients, SBRT alone (47) versus two cycles of 177Lu-PNT2002 then SBRT (45), median PFS 7.4 to 17.6 months, HR 0.37 (0.22-0.61), P<.0001, no significant added toxicity. FOUR CORRECTIONS. (1) PHASE: submitted as 'A Phase III trial'; LUNAR is phase II, which is the difference between justifying a confirmatory trial and changing practice. (2) FIGURE: 17.6 months, not the 17.3 submitted — and the submission writes '7.4 vs 17.3', which reads as though 7.4 were the treated arm. (3) SEQUENCE: the radioligand is neoadjuvant, given before SBRT, not combined with it. (4) The claim that it 'delays the need for androgen deprivation therapy by a median of 10 additional months' appears to restate the PFS difference as an ADT-deferral result; time to ADT was not confirmed as an endpoint, so it is flagged rather than asserted. Also removed 'establishes a new paradigm in... treatment guidelines' — no guideline follows from a 92-patient phase II.
 
-### Radiology 2025 #1 — Abbreviated Breast MRI versus Digital Breast Tomosynthesis in Dense Breasts (ECOG-ACRIN EA1141)
+### Radiology (Diagnostic, Interventional, Nuclear) 2025 #1 — Abbreviated Breast MRI versus Digital Breast Tomosynthesis in Dense Breasts (ECOG-ACRIN EA1141)
 
 **corrected — sample size wrong by sevenfold and the date by five years**
 
@@ -1436,6 +1442,84 @@ Real and positive. JAMA, 29 October 2025 (a 2025 publication placed in the 2026 
 
 Real, and the original correctly conveyed a non-positive result. NEJM 2026, phase III superiority trial, 616 patients, 10 air ambulances serving 19 hospitals, December 2022 to September 2024. The original's framing — that the trial showed 'overall protocol speed and total balanced volume take clinical precedence over early isolated whole blood units' — is an interpretation, not a finding, and has been replaced with the actual result (non-superiority for death or massive transfusion at 24 hours). Added the investigators' own dose limitation, which materially changes how the result should be read.
 
+### Otolaryngology – Head & Neck Surgery 2025 #1 — Dual-AAV1 OTOF Gene Therapy Restores Hearing in Autosomal Recessive Deafness 9 (DFNB9)
+
+**corrected — vector construct, trial phase and year**
+
+Real and well documented: AAV1-hOTOF intracochlear gene therapy for DFNB9 at Fudan University, six children unilaterally from December 2022 and five children bilaterally, published in Nature Medicine 2024, with restored auditory function, speech perception, sound localisation and no serious adverse events. THREE CORRECTIONS. (1) The submission describes 'a single intracochlear injection of an adeno-associated virus (AAV1) carrying the human OTOF gene'. It is a DUAL-AAV1 construct — the OTOF coding sequence exceeds a single AAV's packaging capacity, which is the technical reason this target took so long, so the detail is worth getting right. (2) 'Phase I/II clinical trials' — these are single-arm trials; no randomised comparison exists. (3) Year: the landmark publications are 2024, not 2025. Added the limits of the population, since the submission's framing — 'shifting the paradigm for pediatric otology from early hardware implantation toward gene therapy' — reads as though implants are being displaced, which is not the case for the great majority of deaf children.
+
+### Otolaryngology – Head & Neck Surgery 2025 #4 — VA/DoD Clinical Practice Guideline for the Management of Bothersome Tinnitus
+
+**corrected — date, and the against-list restated from the guideline**
+
+Real: the VA/DoD tinnitus CPG, replacing the 2014 version, with the work group's recommendations published in JAMA Otolaryngology–Head and Neck Surgery. TWO CORRECTIONS. (1) Date: the guideline is dated 2024 (the recommendations paper appeared in 2025), not 2025 as submitted. (2) The submission says it advises 'against routine antidepressant, anticonvulsant, or dietary supplement prescriptions'. Antidepressants and anticonvulsants are right; the guideline's against-list is longer and more specific — antiemetics, antithrombotics, betahistine, intratympanic corticosteroids and NMDA receptor antagonists — and I could not confirm dietary supplements among them, so the actual list is quoted and supplements are not asserted. The submission's 'strongly endorses Cognitive Behavioural Therapy, sound therapy, and structured education' has been narrowed to CBT by a trained clinician, which is what I could verify as a recommendation; sound therapy and education are not asserted at that strength. Structure added (two algorithms, 25 recommendations, 20 questions) so the reader knows what they are looking up.
+
+### Otolaryngology – Head & Neck Surgery 2025 #6 — Deep Learning for Endoscopic Detection of Nasopharyngeal and Laryngeal Malignancy
+
+**corrected — journal not confirmed, and two claims not supported**
+
+The performance claims are broadly right: the submitted 86-95% accuracy band matches what the literature reports for nasopharyngeal and laryngeal endoscopic AI, and a prospective comparison beating expert clinicians (88.0% versus 80.5%) exists. THREE CORRECTIONS. (1) Journal: submitted as JAMA Otolaryngology meta-analyses; the strongest work I could confirm is in The Lancet Digital Health plus a laryngoscopy meta-analysis elsewhere, so JAMA Otolaryngology is not asserted. (2) 'Middle ear pathology' was not confirmed in the studies retrieved and has been dropped — the verified domains are nasopharyngeal and laryngeal. (3) The submission's practical claims that this 'validates AI image-recognition platforms as real-time intraoperative... diagnostic support tools' and 'reduces unnecessary diagnostic biopsy procedures' go beyond model-validation studies; neither intraoperative deployment nor a reduction in biopsies has been demonstrated. Replaced with the second-read framing and the generalisation caveat.
+
+### Otolaryngology – Head & Neck Surgery 2025 #7 — Universal Newborn Screening for Congenital Cytomegalovirus and Late-Onset Hearing Loss
+
+**matched with corrections — supported, and quantified**
+
+Verified and accurate in direction. The eight-year universal-screening study was published in Otolaryngology–Head and Neck Surgery in November 2025 and the submitted argument — that targeted testing and standard hearing screens miss late-onset cCMV hearing loss — is exactly what it found. Figures added because the submission asserted the conclusion without any: one third of cCMV hearing loss develops after the newborn period, 10% of cCMV-positive infants develop sensorineural loss with half presenting late, targeted screening sensitivity 79-88% missing over 43% of affected infants. ONE CORRECTION: the submission treats dried blood spot as the universal method; universal screening is done by dried blood spot PCR or by urine or saliva PCR, and the latter are more sensitive, which matters if a resident is asked which test to order.
+
+### Otolaryngology – Head & Neck Surgery 2025 #9 — Upper Airway Stimulation for Obstructive Sleep Apnea: Five-Year Outcomes
+
+**matched with corrections — supported, and quantified**
+
+Verified. Multi-year registry follow-up does confirm sustained efficacy and high adherence in CPAP-failure patients, and the non-concentric collapse selection criterion in the submission is a genuine requirement. Figures added because 'sustained efficacy and long-term compliance' without numbers reads far stronger than 63% responders at five years: usage 5.6 ± 2.1 hours per night, 6% serious device-related events all involving lead or device adjustment, and female sex and lower BMI as the only independent predictors of response. ONE CORRECTION to framing: the submission says this 'establishes surgical neurostimulation as a routine outpatient alternative to traditional tissue-resection sleep surgeries (such as UPPP)'. ADHERE is an observational registry with no comparison arm, so it cannot establish superiority or equivalence against UPPP; that comparison is not asserted.
+
+### Otolaryngology – Head & Neck Surgery 2025 #10 — Hearing Loss as a Modifiable Risk Factor for Dementia (2024 Lancet Commission)
+
+**matched with corrections — supported, with the mechanism of the estimate flagged**
+
+Verified. The 2024 Lancet Commission does identify 14 modifiable risk factors and put hearing impairment at roughly 7% of dementia cases globally, level with high midlife LDL as the largest, and it does state that the evidence for treating hearing loss is stronger than in the previous report. ONE CORRECTION: the submission says the work 'establishes interdisciplinary guidelines connecting otology, neurology, and geriatrics to mandate early hearing aid fitting'. A Lancet Commission is not a guideline and mandates nothing; that has been reworded. ADDITION: the entry now states that a population attributable fraction is a modelled estimate assuming causality, that it is contested in the audiology literature, and that no randomised trial has shown hearing aids prevent dementia in an unselected population — because a resident quoting '7% of dementia is caused by hearing loss' as established fact will be corrected by anyone who has read the critiques.
+
+### Otolaryngology – Head & Neck Surgery 2026 #1 — Subcutaneous Amivantamab plus Pembrolizumab in Recurrent/Metastatic HNSCC (OrigAMI-4, OrigAMI-5)
+
+**matched with corrections — the drug does have a real HNSCC programme**
+
+VERIFIED, AND A PREVIOUS SUSPICION OF MINE WAS WRONG. Amivantamab appeared as a wrong-drug title twice earlier in this review — substituted for anti-amyloid antibodies in neurology and for an ocular surface agent in ophthalmology — and I flagged this ENT entry as probably the third instance. It is not. There is a genuine HNSCC programme: OrigAMI-4 cohort 2 (39 patients, first-line PD-L1-positive HPV-unrelated R/M HNSCC, subcutaneous amivantamab plus pembrolizumab, confirmed ORR 56%), Breakthrough Therapy Designation for subcutaneous amivantamab in HNSCC, and the phase 3 OrigAMI-5 enrolling ~500 patients. TWO CORRECTIONS. (1) The submission's practical claim — a regimen 'to shrink locally advanced or recurrent tumors prior to re-resection or palliative care' — is not the tested setting; this is first-line recurrent/metastatic treatment, not neoadjuvant downstaging. (2) 'Clinical trials demonstrated high efficacy' is sized: one single-arm cohort of 39, phase 3 unreported. Also named the mechanism (EGFR-MET bispecific), which the submission omits and which is the reason the drug is being tried here at all.
+
+### Otolaryngology – Head & Neck Surgery 2026 #2 — OTOF Gene Therapy: Durability to 2.5 Years and an Expanding Age Range
+
+**corrected — title contained an orthopaedic term, and the pathway claim is premature**
+
+The underlying results are real: multicentre OTOF gene therapy follow-up to 2.5 years published in Nature, and a ten-patient cohort with 6-12 months of follow-up that included a teenager and a young adult. THREE CORRECTIONS. (1) TITLE: submitted as 'Microfracture & Gene Therapy Scaling for Congenital Sensorineural Hearing Loss'. Microfracture is an orthopaedic cartilage technique with no meaning in otology — a wrong-term title of the same class as the wrong-drug titles found in neurology and ophthalmology, and it survives a skim because the body text is about gene therapy. Removed. (2) 'Formally establishes targeted gene delivery into the infant scala media as a standard therapeutic pathway alongside early cochlear implantation' overstates it — no guideline establishes this as standard, and the entry now says durability and age range are what the data show. (3) 'Pediatric otologists now routinely integrate comprehensive genomic sequencing during newborn screening' is aspirational rather than current practice; reworded as what needs to happen for candidates to be found. DEDUPLICATION NOTE: the 2025 list carries the first-in-human restoration result. This entry is kept as a separate development because durability past two years and the age-range extension are new findings rather than a restatement, and the two entries have been written so they do not overlap.
+
+### Otolaryngology – Head & Neck Surgery 2026 #6 — Intralesional PD-1 Blockade for Oral Epithelial Dysplasia
+
+**matched with corrections — real, and stronger than submitted**
+
+Verified. A first-in-human intralesional nivolumab trial in oral epithelial dysplasia was presented at AACR 2026, with results better than the submission conveys: 29 patients, 85% clinical response, mean 60% reduction in lesion area, 41% histological downgrading, 6 complete pathological responses, median follow-up 14.5 months, quality of life preserved, and a randomised placebo-controlled phase 2 now enrolling (NCT06561087). All of that has been added. TWO CORRECTIONS. (1) Phase: submitted as 'Phase I/II trials'; this is a single first-in-human phase 1 dose-escalation study. (2) The submission says it 'introduces a organ-preserving therapeutic alternative to broad surgical mucosal resection or laser ablation'. A phase 1 does not establish an alternative to surgery — progression to carcinoma was not the endpoint — so the entry states that the phase 2 is what will answer it. Related background: a JAMA Oncology non-randomised trial of systemic nivolumab in high-risk oral leukoplakia preceded this work.
+
+### Otolaryngology – Head & Neck Surgery 2026 #7 — Proton Beam Therapy versus IMRT for Oropharyngeal Cancer (TORPEdO)
+
+**matched with corrections — supported, with the oncologic claim qualified**
+
+Verified and well supported. TORPEdO is a real phase 3 randomised trial published in The Lancet in 2026, and the direction the submission gives — equivalent control with less xerostomia and dysphagia — matches the toxicity findings. Numbers added: grade 3 acute mucositis 37% versus 54%, dysphagia 12% versus 24%, planned median oral cavity dose 36.5 versus 47.2 Gy, moderate-to-severe xerostomia 6% versus 20% at both 18-24 and 24-36 months. ONE CORRECTION: the submission leads with 'demonstrates equivalent oncologic control'. TORPEdO's demonstrated result is toxicity; survival and disease-control outcomes are reported in a companion paper and the trial was not powered as an oncologic non-inferiority study, so equivalence should not be asserted from it. Reworded, with the toxicity numbers carrying the entry.
+
+### Otolaryngology – Head & Neck Surgery 2026 #8 — Laryngopharyngeal Reflux: Diet, Alginates and Restraint with PPIs
+
+**corrected — date and study design**
+
+The study is real and the journal is right, but not the year or the design. Zalvan et al., JAMA Otolaryngology–Head and Neck Surgery 2017;143(10):1023-1029: alkaline water plus a plant-based Mediterranean-style diet plus reflux precautions versus PPI plus precautions, with 62.6% versus 54.1% achieving a six-point Reflux Symptom Index reduction. TWO CORRECTIONS. (1) Date and scope: submitted as 'multi-center comparisons in JAMA Otolaryngology' in 2026; it is a single 2017 study, retrospective, with a symptom-index endpoint and no objective reflux testing. (2) The submission recommends alginates without citing anything for them — a magnesium alginate versus PPI non-inferiority randomised controlled trial exists and has been added, because it is the better-designed of the two studies and is the actual evidence behind the recommendation the submission makes. The clinical direction — do not escalate empiric PPIs for non-acid or mixed reflux without objective testing — is sound and is kept.
+
+### Otolaryngology – Head & Neck Surgery 2026 #9 — Hypoglossal Nerve Stimulation and Downstream Metabolic and Cardiovascular Outcomes
+
+**corrected — one claimed outcome not shown, and the signal is not one-directional**
+
+Partly supported, with two corrections that change the counselling. (1) STROKE NOT SHOWN. The submission claims registry studies evaluated 'reduction in hypertension and stroke incidence'. What is reported is a lower two-year incidence of new diabetes and hypertension versus PAP-intolerant patients; stroke reduction was not demonstrated, and the follow-up is explicitly described as too short to observe arrhythmias, coronary artery disease or heart failure. (2) The hypertension finding is time-dependent — an INCREASED risk of hypertension diagnosis within the first two years, with reduced risk after two years — which the submission's one-directional framing hides. The conclusion that this 'elevates sleep surgery from a purely symptomatic quality-of-life intervention to a validated cardiorespiratory risk-reduction therapy' is therefore not supported; 'validated' is wrong for an observational signal with a confounded comparison group. CARDIOSA-12 (NCT03359096), a randomised sham-controlled crossover trial of cardiovascular endpoints, is cited as the design capable of answering the question.
+
+### Otolaryngology – Head & Neck Surgery 2026 #10 — Image Guidance, Augmented Reality and Robotics in Endoscopic Skull Base Surgery
+
+**corrected — real technology, the claimed outcomes are not established**
+
+The technology is real: image-guided navigation is standard, augmented reality and 3D visualisation are associated with internal carotid artery injury falling from 0.9% to 0.3%, a robotic-plus-navigation system has been reported at 1.53 mm mean navigated accuracy, and robotics is used in lateral skull base surgery around the facial nerve. TWO CORRECTIONS. (1) The submission says this 'sets new surgical safety standards for image-guided endoscopic transsphenoidal and temporal bone procedures'. No standard has been set — these are series and reviews, not a standards document. (2) 'Enhances surgical precision, reduces operative times, and lowers rates of iatrogenic cranial nerve injury' — none of the operative-time or cranial-nerve-injury claims is established, and the entry now says so explicitly. The carotid injury figure was missing from the submission and has been added as the one hard number available; it is also the point most worth teaching, since it attaches the benefit to visualisation in revision anatomy rather than to robotics in general.
+
 ### Family Medicine 2025 #2 — Recombinant Zoster Vaccine and Reduced Risk of Dementia
 
 **corrected — numbers and comparator**
@@ -1454,55 +1538,55 @@ Real (ARMMS-T2D, JAMA 2024 — a 2024 publication placed in the 2025 list). Thre
 
 Real and the figures match exactly: Annals of Family Medicine, July 2026, Netherlands, 100,450 patients, 48 practices, 9-21% lower odds of urgent admission and 17-28% lower costs beyond 5 years of registration. Added the distinction the original omitted and which is the study's most useful finding — density of visits with one physician was associated with 6-7% lower costs but NOT fewer urgent admissions, so duration and density are not interchangeable. Also flagged the observational design, since 'definitive empirical backing' as originally written overstates a cohort study.
 
-### General Surgery 2025 #3 — MERLIN_001: Gene Expression Profiling to Omit Sentinel Node Biopsy in Melanoma
+### Surgery (General) 2025 #3 — MERLIN_001: Gene Expression Profiling to Omit Sentinel Node Biopsy in Melanoma
 
 **matched — verified, with the risk framing restored**
 
 Verified in full: MERLIN_001, JAMA Surgery October 2025, 1,761 patients, largest melanoma gene-test study, high-risk 23.8% versus low-risk 7.1% sentinel node positivity, NCCN Cutaneous Melanoma v1.2026 recognition. The submission's 92.9% NPV and 'less than 10% risk' are internally consistent with the published 7.1% — 92.9% NPV IS the 7.1% metastasis rate, so nothing was overstated. Two additions: the submission's 'nearly 37% of surgical candidates' spared is plausible but not confirmed in the accessible sources, so it is softened to 'roughly a third'; and the source material's own framing — that SLNB has prognostic value but no universal melanoma-specific survival benefit, so this is for shared decision-making — has been restored, because the submission presented the result as approval to forgo the operation. SSO guideline endorsement could not be confirmed; only NCCN is asserted.
 
-### General Surgery 2025 #4 — PREPARE Pilot Trial: Preoperative Beta-Lactam Allergy Delabelling by Direct Oral Challenge
+### Surgery (General) 2025 #4 — PREPARE Pilot Trial: Preoperative Beta-Lactam Allergy Delabelling by Direct Oral Challenge
 
 **corrected — real trial, but design and outcomes were overstated**
 
 The study is real: PREPARE pilot RCT, JAMA Surgery 26 March 2025, 150 patients, three Melbourne hospitals. Four corrections. (1) The submission calls it a 'Phase II multi-center randomized clinical trial'; it is a PILOT trial — feasibility and safety, not powered for clinical endpoints. (2) 'anesthesiologist- and surgeon-led' — the published intervention is anaesthesiologist-led. (3) The submission states the trial 'directly reduc[es] Surgical Site Infections (SSIs) and C. difficile rates'; those outcomes were not measured, and presenting an inference as a trial result is the error class this review keeps finding. (4) The submission omits that only 28 of 150 enrolled patients were low risk and eligible for direct oral challenge, which is the number that determines how much of a surgical list this actually applies to. PALACE added as the RCT that underpins the non-inferiority claim. No SIS or ASA guideline change to this effect could be found; the guideline sentence has been removed.
 
-### General Surgery 2025 #10 — De-Escalation of Nodal Surgery in Clinically Node-Positive Breast Cancer
+### Surgery (General) 2025 #10 — De-Escalation of Nodal Surgery in Clinically Node-Positive Breast Cancer
 
 **unresolved on specifics — the study and direction are confirmed, the cohort size is not**
 
 Confirmed: a JAMA Surgery cohort study on de-escalation of nodal surgery in clinically node-positive breast cancer after neoadjuvant chemotherapy exists, and its conclusion — targeted axillary dissection permits safe de-escalation in low-volume residual disease, completion clearance carries higher morbidity, localisation improves clipped-node retrieval — matches the submission's direction. Three things could NOT be confirmed and have been removed or softened: the '976 patients' figure, the '5-year regional recurrence' framing (this is a cohort study, and the accessible sources do not state a five-year recurrence endpoint), and the claim that the study is prospective. Added: it is a cohort study, not randomised, and Alliance A011202 is the trial that will settle the question — its reported correlative finding that 38.4% of ypN1mi patients had additional positive nodes at completion dissection is the concrete reason 'low-volume' needs definition. Added the practical prerequisite the submission omitted: the node must be clipped at diagnostic biopsy or targeted axillary dissection is impossible.
 
-### General Surgery 2026 #1 — TRACTION: A Hospital Policy of Tranexamic Acid in Major Noncardiac Surgery
+### Surgery (General) 2026 #1 — TRACTION: A Hospital Policy of Tranexamic Acid in Major Noncardiac Surgery
 
 **matched — verified, every figure confirmed**
 
 Fully verified and unusually accurate for this review. TRACTION, NEJM published 10 June 2026, 10 Canadian hospitals, more than 8,000 patients, 5,002 (60.5%) oncologic surgery, transfusion 7.4% versus 9.8%, VTE rates similar. The submission's numbers, journal, month and clinical conclusion all match the published trial. One clarification added, not a correction: it is a CLUSTER-randomised trial of a hospital policy, which strengthens rather than weakens the submission's 'universal perioperative TXA as a standard' framing, and is worth stating because it explains why the finding is about protocol design. The absolute risk difference has been stated alongside the relative claim.
 
-### General Surgery 2026 #2 — BrIMA: Intraoperative Specimen PET-CT for Breast Margin Assessment
+### Surgery (General) 2026 #2 — BrIMA: Intraoperative Specimen PET-CT for Breast Margin Assessment
 
 **corrected — numbers verified, but the trial is nonrandomised and the submission did not say so**
 
 Verified: BrIMA, JAMA Surgery 2026, 148 patients, six centres in Belgium/Germany/Italy, June 2022–March 2025, IDC success 83.3% to 95.2%, all-subtype 76.4% to 91.9%, no device-related adverse events. The submission's headline figures are exactly right. Corrections are all about strength of evidence: (1) the published title says NONRANDOMIZED clinical trial, while the submission presents it as a 'Prospective Multicenter Trial' with no such qualifier; (2) the comparator is not a control group, so the improvement is a within-specimen contrast; (3) the submission omits that this is one commercial device (XEOS AURA 10) with a manufacturer press release, and omits the all-subtype figures, which are lower than the IDC ones it quoted. The submission's claim that this 'dramatically reduc[es] second-look procedures' is a reasonable inference but was not the measured endpoint — the endpoint was intraoperative success rate — so it has been reworded.
 
-### General Surgery 2026 #3 — Metabolic Surgery Versus GLP-1 Therapy: Projected Cardiovascular Risk
+### Surgery (General) 2026 #3 — Metabolic Surgery Versus GLP-1 Therapy: Projected Cardiovascular Risk
 
 **corrected — figures exact, but a modelled risk score was presented as a cardiovascular outcome**
 
 Verified: Ghusn et al., Annals of Surgery, published 20 April 2026, 812 patients (579 MBS, 233 GLP-1 RA), lifetime ASCVD risk reduction 8.6% versus 1.7%, weight loss 28% versus 11%. Every number in the submission matches. The correction is about what was measured. This is a RETROSPECTIVE COHORT of one-year change in ESTIMATED 10-year and lifetime ASCVD risk — a risk-calculator projection, not observed cardiovascular events. The submission's conclusion, that this 'reframes bariatric surgery... as a primary disease-modifying cardiovascular intervention SUPERIOR to long-term GLP-1 monotherapy', overstates a risk-score comparison into a demonstrated outcome superiority, and the investigators' own quoted framing is more measured ('both treatments are effective, but surgery appears to provide a greater reduction'). Entry rewritten to say so, with the durability assumption — which is what the lifetime projection rests on — made explicit.
 
-### General Surgery 2026 #7 — PSOGI Consensus on Minimally Invasive Surgery for Peritoneal Surface Malignancy
+### Surgery (General) 2026 #7 — PSOGI Consensus on Minimally Invasive Surgery for Peritoneal Surface Malignancy
 
 **matched with corrections — document confirmed, scope broader than submitted**
 
 Confirmed: 'PSOGI consensus on minimally invasive surgery for peritoneal surface malignancy', BJS volume 113 issue 3, znag019 — matching the submission's British Journal of Surgery, March 2026 attribution. Corrections: (1) the scope is minimally invasive surgery for peritoneal surface malignancy broadly, including diagnostic/staging laparoscopy and appendiceal neoplasms, not solely 'minimally invasive CRS + HIPEC' as submitted; (2) the submission's specifics — 'restricts to highly selected patients with low PCI scores performed at expert centers, establishing safety benchmarks' — are directionally consistent with the consensus's purpose but the exact PCI thresholds could not be verified from accessible sources, so they are stated qualitatively rather than numerically. Added the LAMN II no-agreement statement, which is verifiable and clinically useful, and the completeness-of-cytoreduction principle that governs whether a minimally invasive approach is appropriate at all.
 
-### General Surgery 2026 #8 — SAGES 2026: Video-Based Assessment and Opioid-Sparing Perioperative Care
+### Surgery (General) 2026 #8 — SAGES 2026: Video-Based Assessment and Opioid-Sparing Perioperative Care
 
 **corrected — conference programming and a CME course were presented as practice directives**
 
 The underlying activity is real: SAGES 2026 Annual Meeting, Tampa Convention Center, 25–28 March 2026, with video-based assessment programming, an AI Committee surgical gesture ontology, and an updated OpiVoid CME activity announced October 2025 covering the DEA MATE Act requirement. The submission's framing is what needed correcting: it cites 'SAGES Practice Directives & Tech Consensus' and describes 'AI video-based assessment (VBA) for intraoperative skill ACCREDITATION' and 'widespread implementation' of opioid-free anaesthesia as if a guideline had been issued. No SAGES practice directive on opioid-free anaesthesia and no VBA-based accreditation pathway could be found; a gesture ontology is annotation infrastructure and OpiVoid is a CME course. The submission's outcome claims — accelerated bowel function recovery, discharge readiness, objective automated feedback on critical-view-of-safety compliance — are aspirations of the programme, not measured results, and 'critical view of safety' compliance assessment specifically could not be sourced to SAGES 2026 at all. Entry rewritten as a direction-of-travel item with the governance question added, since that is what a unit actually has to decide.
 
-### General Surgery 2026 #10 — EHS/AHS Guideline on Abdominal Wall Closure: Small Bites and Prophylactic Mesh
+### Surgery (General) 2026 #10 — EHS/AHS Guideline on Abdominal Wall Closure: Small Bites and Prophylactic Mesh
 
 **corrected — content accurate but this is a 2022 guideline, not a 2026 development, and the effect size is overstated**
 
@@ -1598,6 +1682,36 @@ Real: Annals of Internal Medicine, DOI 10.7326/ANNALS-25-04883, 396 patients, 13
 
 Both findings are real, but the submission described them together as 'large phase 3 trials'. Only the OSA evidence is phase 3 (SURMOUNT-OSA, NEJM 2024, FDA approval for OSA in December 2024). Tirzepatide's MASH data are PHASE 2 (SYNERGY-NASH) and retatrutide's are phase 2 as well — presenting MASH resolution as an established phase 3 outcome would have an internist offering an unapproved indication. Added that resmetirom is the agent actually approved for MASH.
 
+### Neurology 2025 #2 — Long-Term Adaptive Deep Brain Stimulation in Parkinson Disease (ADAPT-PD)
+
+**corrected — superiority claimed from a nonrandomised trial**
+
+Real: JAMA Neurology, online 22 September 2025, 68 participants. This claim appeared in THREE of the four lists submitted in that batch, each asserting adaptive DBS 'outperforms' or 'supercedes' continuous DBS. ADAPT-PD is nonrandomised and open-label, and its primary outcome was performance relative to stable continuous DBS — a non-inferiority and feasibility result. Also removed 'eliminates manual programming visits'. Kept here once; it appeared in both neurology lists.
+
+### Neurology 2025 #6 — Tenecteplase versus Alteplase for Acute Ischaemic Stroke
+
+**matched with corrections**
+
+The conclusion is well supported, though no single pooled analysis was resolved to a citation and the url is a PubMed title search. One softening: 'operationally superior' is fair, but the clinical evidence is NON-INFERIORITY for functional outcome, not superiority, and the entry now distinguishes the two. Added BRIDGE-TNK, since bridging before thrombectomy is where tenecteplase has shown an actual advantage over the prior standard.
+
+### Neurology 2025 #8 — Subcutaneous Efgartigimod in Generalised Myasthenia Gravis
+
+**corrected — year and the guideline claim**
+
+Real (the ADAPT-SC programme), published in Lancet Neurology in 2023 rather than 2025; the specific citation was not resolved and the url is a PubMed title search. ONE CORRECTION: the submission said this 'Reconfigured neuroimmunology practice guidelines to recommend... FcRn blockers as a FIRST-LINE targeted biological option OVER chronic high-dose corticosteroids'. FcRn blockers are not first-line ahead of corticosteroids in current guidance; they are used in inadequately controlled disease. Added the cycle-based dosing and cost, which govern real-world use.
+
+### Neurology 2025 #10 — MR-Guided Focused Ultrasound Thalamotomy for Medically Refractory Tremor
+
+**corrected — design and missing trade-offs**
+
+The technology and the durability data are real; the pivotal randomised trial was published in NEJM in 2016, and the specific 'long-term randomized registry' in the submission was not located (a registry is not randomised) — the url is a PubMed title search. Three things added because the submission presented this as strictly superior to DBS: ablation is irreversible and non-adjustable where DBS is not, staged bilateral lesioning risks dysarthria and ataxia, and skull density ratio excludes some patients entirely.
+
+### Neurology 2026 #3 — A Randomized Trial of Shunting for Idiopathic Normal-Pressure Hydrocephalus (PENS)
+
+**corrected — cognition and continence did not improve**
+
+Real and important: NEJM, online 16 September 2025, DOI 10.1056/NEJMoa2503109, PMID 40960253, 99 participants. THE CORRECTION MATTERS FOR CONSENT: the submission said the trial demonstrated 'statistically significant and sustained improvements in gait speed, balance, AND INDEPENDENCE', and that it 'put to rest clinical skepticism'. Improvements were in gait velocity and gait/balance; cognition and incontinence did NOT improve — two of the three triad elements. 'Sustained' also overstates outcomes measured at 3 months. Added the tap-responsive selection criterion, which bounds who the result applies to.
+
 ### Neurological Surgery 2025 #1 — Middle Meningeal Artery Embolization for Chronic Subdural Hematoma (EMBOLISE)
 
 **corrected — year**
@@ -1657,36 +1771,6 @@ Real and positive; The Lancet, 2023 rather than 2026. The non-contrast CT select
 **corrected — year**
 
 Real; JAMA, 2024 rather than 2026, and the null result on 1-year patient-reported physical function is correctly reported in the submission. Added the specific approach-related risks that distinguish the two operations, since 'reducing instrumented fusion costs, surgical risk, and recovery times' does not say what the risks actually are — and dysphagia and recurrent laryngeal nerve injury are the ones that drive the decision.
-
-### Neurology 2025 #2 — Long-Term Adaptive Deep Brain Stimulation in Parkinson Disease (ADAPT-PD)
-
-**corrected — superiority claimed from a nonrandomised trial**
-
-Real: JAMA Neurology, online 22 September 2025, 68 participants. This claim appeared in THREE of the four lists submitted in that batch, each asserting adaptive DBS 'outperforms' or 'supercedes' continuous DBS. ADAPT-PD is nonrandomised and open-label, and its primary outcome was performance relative to stable continuous DBS — a non-inferiority and feasibility result. Also removed 'eliminates manual programming visits'. Kept here once; it appeared in both neurology lists.
-
-### Neurology 2025 #6 — Tenecteplase versus Alteplase for Acute Ischaemic Stroke
-
-**matched with corrections**
-
-The conclusion is well supported, though no single pooled analysis was resolved to a citation and the url is a PubMed title search. One softening: 'operationally superior' is fair, but the clinical evidence is NON-INFERIORITY for functional outcome, not superiority, and the entry now distinguishes the two. Added BRIDGE-TNK, since bridging before thrombectomy is where tenecteplase has shown an actual advantage over the prior standard.
-
-### Neurology 2025 #8 — Subcutaneous Efgartigimod in Generalised Myasthenia Gravis
-
-**corrected — year and the guideline claim**
-
-Real (the ADAPT-SC programme), published in Lancet Neurology in 2023 rather than 2025; the specific citation was not resolved and the url is a PubMed title search. ONE CORRECTION: the submission said this 'Reconfigured neuroimmunology practice guidelines to recommend... FcRn blockers as a FIRST-LINE targeted biological option OVER chronic high-dose corticosteroids'. FcRn blockers are not first-line ahead of corticosteroids in current guidance; they are used in inadequately controlled disease. Added the cycle-based dosing and cost, which govern real-world use.
-
-### Neurology 2025 #10 — MR-Guided Focused Ultrasound Thalamotomy for Medically Refractory Tremor
-
-**corrected — design and missing trade-offs**
-
-The technology and the durability data are real; the pivotal randomised trial was published in NEJM in 2016, and the specific 'long-term randomized registry' in the submission was not located (a registry is not randomised) — the url is a PubMed title search. Three things added because the submission presented this as strictly superior to DBS: ablation is irreversible and non-adjustable where DBS is not, staged bilateral lesioning risks dysarthria and ataxia, and skull density ratio excludes some patients entirely.
-
-### Neurology 2026 #3 — A Randomized Trial of Shunting for Idiopathic Normal-Pressure Hydrocephalus (PENS)
-
-**corrected — cognition and continence did not improve**
-
-Real and important: NEJM, online 16 September 2025, DOI 10.1056/NEJMoa2503109, PMID 40960253, 99 participants. THE CORRECTION MATTERS FOR CONSENT: the submission said the trial demonstrated 'statistically significant and sustained improvements in gait speed, balance, AND INDEPENDENCE', and that it 'put to rest clinical skepticism'. Improvements were in gait velocity and gait/balance; cognition and incontinence did NOT improve — two of the three triad elements. 'Sustained' also overstates outcomes measured at 3 months. Added the tap-responsive selection criterion, which bounds who the result applies to.
 
 ### Obstetrics & Gynecology 2025 #1 — Self-Collected Vaginal Swabs for High-Risk HPV Cervical Cancer Screening
 
@@ -1903,120 +1987,6 @@ Rewritten in two ways. (1) DEDUPLICATED: as submitted this entry covered both AI
 **matched with corrections — supported, but a known harm was omitted**
 
 The submitted claims check out: fewer wound complications and better cosmesis than the longitudinal direct anterior incision, no increased complication rate in obese versus non-obese patients, and safety with large acetabular cups in a 215-case series. IMPORTANT ADDITION: a prospective ultrasonic, electrophysiological and clinical study found the bikini incision INCREASES lateral femoral cutaneous nerve injury, which the submission does not mention. That is the recognised trade-off of the approach and a resident describing the incision to a patient needs it. Also flagged the evidence quality — single-surgeon series and narrative reviews, not randomised trials — since the submission presents the wound benefit as settled.
-
-### Otolaryngology 2025 #1 — Dual-AAV1 OTOF Gene Therapy Restores Hearing in Autosomal Recessive Deafness 9 (DFNB9)
-
-**corrected — vector construct, trial phase and year**
-
-Real and well documented: AAV1-hOTOF intracochlear gene therapy for DFNB9 at Fudan University, six children unilaterally from December 2022 and five children bilaterally, published in Nature Medicine 2024, with restored auditory function, speech perception, sound localisation and no serious adverse events. THREE CORRECTIONS. (1) The submission describes 'a single intracochlear injection of an adeno-associated virus (AAV1) carrying the human OTOF gene'. It is a DUAL-AAV1 construct — the OTOF coding sequence exceeds a single AAV's packaging capacity, which is the technical reason this target took so long, so the detail is worth getting right. (2) 'Phase I/II clinical trials' — these are single-arm trials; no randomised comparison exists. (3) Year: the landmark publications are 2024, not 2025. Added the limits of the population, since the submission's framing — 'shifting the paradigm for pediatric otology from early hardware implantation toward gene therapy' — reads as though implants are being displaced, which is not the case for the great majority of deaf children.
-
-### Otolaryngology 2025 #4 — VA/DoD Clinical Practice Guideline for the Management of Bothersome Tinnitus
-
-**corrected — date, and the against-list restated from the guideline**
-
-Real: the VA/DoD tinnitus CPG, replacing the 2014 version, with the work group's recommendations published in JAMA Otolaryngology–Head and Neck Surgery. TWO CORRECTIONS. (1) Date: the guideline is dated 2024 (the recommendations paper appeared in 2025), not 2025 as submitted. (2) The submission says it advises 'against routine antidepressant, anticonvulsant, or dietary supplement prescriptions'. Antidepressants and anticonvulsants are right; the guideline's against-list is longer and more specific — antiemetics, antithrombotics, betahistine, intratympanic corticosteroids and NMDA receptor antagonists — and I could not confirm dietary supplements among them, so the actual list is quoted and supplements are not asserted. The submission's 'strongly endorses Cognitive Behavioural Therapy, sound therapy, and structured education' has been narrowed to CBT by a trained clinician, which is what I could verify as a recommendation; sound therapy and education are not asserted at that strength. Structure added (two algorithms, 25 recommendations, 20 questions) so the reader knows what they are looking up.
-
-### Otolaryngology 2025 #6 — Deep Learning for Endoscopic Detection of Nasopharyngeal and Laryngeal Malignancy
-
-**corrected — journal not confirmed, and two claims not supported**
-
-The performance claims are broadly right: the submitted 86-95% accuracy band matches what the literature reports for nasopharyngeal and laryngeal endoscopic AI, and a prospective comparison beating expert clinicians (88.0% versus 80.5%) exists. THREE CORRECTIONS. (1) Journal: submitted as JAMA Otolaryngology meta-analyses; the strongest work I could confirm is in The Lancet Digital Health plus a laryngoscopy meta-analysis elsewhere, so JAMA Otolaryngology is not asserted. (2) 'Middle ear pathology' was not confirmed in the studies retrieved and has been dropped — the verified domains are nasopharyngeal and laryngeal. (3) The submission's practical claims that this 'validates AI image-recognition platforms as real-time intraoperative... diagnostic support tools' and 'reduces unnecessary diagnostic biopsy procedures' go beyond model-validation studies; neither intraoperative deployment nor a reduction in biopsies has been demonstrated. Replaced with the second-read framing and the generalisation caveat.
-
-### Otolaryngology 2025 #7 — Universal Newborn Screening for Congenital Cytomegalovirus and Late-Onset Hearing Loss
-
-**matched with corrections — supported, and quantified**
-
-Verified and accurate in direction. The eight-year universal-screening study was published in Otolaryngology–Head and Neck Surgery in November 2025 and the submitted argument — that targeted testing and standard hearing screens miss late-onset cCMV hearing loss — is exactly what it found. Figures added because the submission asserted the conclusion without any: one third of cCMV hearing loss develops after the newborn period, 10% of cCMV-positive infants develop sensorineural loss with half presenting late, targeted screening sensitivity 79-88% missing over 43% of affected infants. ONE CORRECTION: the submission treats dried blood spot as the universal method; universal screening is done by dried blood spot PCR or by urine or saliva PCR, and the latter are more sensitive, which matters if a resident is asked which test to order.
-
-### Otolaryngology 2025 #9 — Upper Airway Stimulation for Obstructive Sleep Apnea: Five-Year Outcomes
-
-**matched with corrections — supported, and quantified**
-
-Verified. Multi-year registry follow-up does confirm sustained efficacy and high adherence in CPAP-failure patients, and the non-concentric collapse selection criterion in the submission is a genuine requirement. Figures added because 'sustained efficacy and long-term compliance' without numbers reads far stronger than 63% responders at five years: usage 5.6 ± 2.1 hours per night, 6% serious device-related events all involving lead or device adjustment, and female sex and lower BMI as the only independent predictors of response. ONE CORRECTION to framing: the submission says this 'establishes surgical neurostimulation as a routine outpatient alternative to traditional tissue-resection sleep surgeries (such as UPPP)'. ADHERE is an observational registry with no comparison arm, so it cannot establish superiority or equivalence against UPPP; that comparison is not asserted.
-
-### Otolaryngology 2025 #10 — Hearing Loss as a Modifiable Risk Factor for Dementia (2024 Lancet Commission)
-
-**matched with corrections — supported, with the mechanism of the estimate flagged**
-
-Verified. The 2024 Lancet Commission does identify 14 modifiable risk factors and put hearing impairment at roughly 7% of dementia cases globally, level with high midlife LDL as the largest, and it does state that the evidence for treating hearing loss is stronger than in the previous report. ONE CORRECTION: the submission says the work 'establishes interdisciplinary guidelines connecting otology, neurology, and geriatrics to mandate early hearing aid fitting'. A Lancet Commission is not a guideline and mandates nothing; that has been reworded. ADDITION: the entry now states that a population attributable fraction is a modelled estimate assuming causality, that it is contested in the audiology literature, and that no randomised trial has shown hearing aids prevent dementia in an unselected population — because a resident quoting '7% of dementia is caused by hearing loss' as established fact will be corrected by anyone who has read the critiques.
-
-### Otolaryngology 2026 #1 — Subcutaneous Amivantamab plus Pembrolizumab in Recurrent/Metastatic HNSCC (OrigAMI-4, OrigAMI-5)
-
-**matched with corrections — the drug does have a real HNSCC programme**
-
-VERIFIED, AND A PREVIOUS SUSPICION OF MINE WAS WRONG. Amivantamab appeared as a wrong-drug title twice earlier in this review — substituted for anti-amyloid antibodies in neurology and for an ocular surface agent in ophthalmology — and I flagged this ENT entry as probably the third instance. It is not. There is a genuine HNSCC programme: OrigAMI-4 cohort 2 (39 patients, first-line PD-L1-positive HPV-unrelated R/M HNSCC, subcutaneous amivantamab plus pembrolizumab, confirmed ORR 56%), Breakthrough Therapy Designation for subcutaneous amivantamab in HNSCC, and the phase 3 OrigAMI-5 enrolling ~500 patients. TWO CORRECTIONS. (1) The submission's practical claim — a regimen 'to shrink locally advanced or recurrent tumors prior to re-resection or palliative care' — is not the tested setting; this is first-line recurrent/metastatic treatment, not neoadjuvant downstaging. (2) 'Clinical trials demonstrated high efficacy' is sized: one single-arm cohort of 39, phase 3 unreported. Also named the mechanism (EGFR-MET bispecific), which the submission omits and which is the reason the drug is being tried here at all.
-
-### Otolaryngology 2026 #2 — OTOF Gene Therapy: Durability to 2.5 Years and an Expanding Age Range
-
-**corrected — title contained an orthopaedic term, and the pathway claim is premature**
-
-The underlying results are real: multicentre OTOF gene therapy follow-up to 2.5 years published in Nature, and a ten-patient cohort with 6-12 months of follow-up that included a teenager and a young adult. THREE CORRECTIONS. (1) TITLE: submitted as 'Microfracture & Gene Therapy Scaling for Congenital Sensorineural Hearing Loss'. Microfracture is an orthopaedic cartilage technique with no meaning in otology — a wrong-term title of the same class as the wrong-drug titles found in neurology and ophthalmology, and it survives a skim because the body text is about gene therapy. Removed. (2) 'Formally establishes targeted gene delivery into the infant scala media as a standard therapeutic pathway alongside early cochlear implantation' overstates it — no guideline establishes this as standard, and the entry now says durability and age range are what the data show. (3) 'Pediatric otologists now routinely integrate comprehensive genomic sequencing during newborn screening' is aspirational rather than current practice; reworded as what needs to happen for candidates to be found. DEDUPLICATION NOTE: the 2025 list carries the first-in-human restoration result. This entry is kept as a separate development because durability past two years and the age-range extension are new findings rather than a restatement, and the two entries have been written so they do not overlap.
-
-### Otolaryngology 2026 #6 — Intralesional PD-1 Blockade for Oral Epithelial Dysplasia
-
-**matched with corrections — real, and stronger than submitted**
-
-Verified. A first-in-human intralesional nivolumab trial in oral epithelial dysplasia was presented at AACR 2026, with results better than the submission conveys: 29 patients, 85% clinical response, mean 60% reduction in lesion area, 41% histological downgrading, 6 complete pathological responses, median follow-up 14.5 months, quality of life preserved, and a randomised placebo-controlled phase 2 now enrolling (NCT06561087). All of that has been added. TWO CORRECTIONS. (1) Phase: submitted as 'Phase I/II trials'; this is a single first-in-human phase 1 dose-escalation study. (2) The submission says it 'introduces a organ-preserving therapeutic alternative to broad surgical mucosal resection or laser ablation'. A phase 1 does not establish an alternative to surgery — progression to carcinoma was not the endpoint — so the entry states that the phase 2 is what will answer it. Related background: a JAMA Oncology non-randomised trial of systemic nivolumab in high-risk oral leukoplakia preceded this work.
-
-### Otolaryngology 2026 #7 — Proton Beam Therapy versus IMRT for Oropharyngeal Cancer (TORPEdO)
-
-**matched with corrections — supported, with the oncologic claim qualified**
-
-Verified and well supported. TORPEdO is a real phase 3 randomised trial published in The Lancet in 2026, and the direction the submission gives — equivalent control with less xerostomia and dysphagia — matches the toxicity findings. Numbers added: grade 3 acute mucositis 37% versus 54%, dysphagia 12% versus 24%, planned median oral cavity dose 36.5 versus 47.2 Gy, moderate-to-severe xerostomia 6% versus 20% at both 18-24 and 24-36 months. ONE CORRECTION: the submission leads with 'demonstrates equivalent oncologic control'. TORPEdO's demonstrated result is toxicity; survival and disease-control outcomes are reported in a companion paper and the trial was not powered as an oncologic non-inferiority study, so equivalence should not be asserted from it. Reworded, with the toxicity numbers carrying the entry.
-
-### Otolaryngology 2026 #8 — Laryngopharyngeal Reflux: Diet, Alginates and Restraint with PPIs
-
-**corrected — date and study design**
-
-The study is real and the journal is right, but not the year or the design. Zalvan et al., JAMA Otolaryngology–Head and Neck Surgery 2017;143(10):1023-1029: alkaline water plus a plant-based Mediterranean-style diet plus reflux precautions versus PPI plus precautions, with 62.6% versus 54.1% achieving a six-point Reflux Symptom Index reduction. TWO CORRECTIONS. (1) Date and scope: submitted as 'multi-center comparisons in JAMA Otolaryngology' in 2026; it is a single 2017 study, retrospective, with a symptom-index endpoint and no objective reflux testing. (2) The submission recommends alginates without citing anything for them — a magnesium alginate versus PPI non-inferiority randomised controlled trial exists and has been added, because it is the better-designed of the two studies and is the actual evidence behind the recommendation the submission makes. The clinical direction — do not escalate empiric PPIs for non-acid or mixed reflux without objective testing — is sound and is kept.
-
-### Otolaryngology 2026 #9 — Hypoglossal Nerve Stimulation and Downstream Metabolic and Cardiovascular Outcomes
-
-**corrected — one claimed outcome not shown, and the signal is not one-directional**
-
-Partly supported, with two corrections that change the counselling. (1) STROKE NOT SHOWN. The submission claims registry studies evaluated 'reduction in hypertension and stroke incidence'. What is reported is a lower two-year incidence of new diabetes and hypertension versus PAP-intolerant patients; stroke reduction was not demonstrated, and the follow-up is explicitly described as too short to observe arrhythmias, coronary artery disease or heart failure. (2) The hypertension finding is time-dependent — an INCREASED risk of hypertension diagnosis within the first two years, with reduced risk after two years — which the submission's one-directional framing hides. The conclusion that this 'elevates sleep surgery from a purely symptomatic quality-of-life intervention to a validated cardiorespiratory risk-reduction therapy' is therefore not supported; 'validated' is wrong for an observational signal with a confounded comparison group. CARDIOSA-12 (NCT03359096), a randomised sham-controlled crossover trial of cardiovascular endpoints, is cited as the design capable of answering the question.
-
-### Otolaryngology 2026 #10 — Image Guidance, Augmented Reality and Robotics in Endoscopic Skull Base Surgery
-
-**corrected — real technology, the claimed outcomes are not established**
-
-The technology is real: image-guided navigation is standard, augmented reality and 3D visualisation are associated with internal carotid artery injury falling from 0.9% to 0.3%, a robotic-plus-navigation system has been reported at 1.53 mm mean navigated accuracy, and robotics is used in lateral skull base surgery around the facial nerve. TWO CORRECTIONS. (1) The submission says this 'sets new surgical safety standards for image-guided endoscopic transsphenoidal and temporal bone procedures'. No standard has been set — these are series and reviews, not a standards document. (2) 'Enhances surgical precision, reduces operative times, and lowers rates of iatrogenic cranial nerve injury' — none of the operative-time or cranial-nerve-injury claims is established, and the entry now says so explicitly. The carotid injury figure was missing from the submission and has been added as the one hard number available; it is also the point most worth teaching, since it attaches the benefit to visualisation in revision anatomy rather than to robotics in general.
-
-### PM&R 2025 #1 — AAPM&R Guidance Statement on Platelet-Rich Plasma for Knee Osteoarthritis
-
-**matched with corrections — real, structural benefit not supported**
-
-Verified: AAPM&R technical expert panel, structured literature review through June 2025, modified Delphi, published in PM&R (doi 10.1002/pmrj.70144), producing five evidence-based recommendations and eleven consensus-based best practices. TWO CORRECTIONS. (1) The submission says the guidance emphasises 'that earlier intervention yields superior structural and symptomatic outcomes'. Structural benefit from PRP in knee osteoarthritis is not established and the panel's evidence base does not support a structural claim; symptomatic benefit in mild-to-moderate disease is the defensible part. (2) 'Eliminating dosing variability' overstates a document in which eleven of sixteen statements are consensus-based — the entry now gives the five-plus-eleven structure so a reader can see how much is opinion. YEAR: assigned to 2025 on the basis of the June 2025 evidence cut-off; the submission listed this item on both the 2025 and 2026 lists.
-
-### PM&R 2025 #3 — Targeted Muscle Reinnervation and Regenerative Peripheral Nerve Interfaces at Primary Amputation
-
-**corrected — the 70% figure is not supported and no prospective trial confirms it**
-
-The direction is real: TMR and RPNI reduce phantom and residual limb pain, primary (immediate) TMR outperforms untreated controls, and a systematic review and meta-analysis exists. TWO CORRECTIONS. (1) THE FIGURE: both submitted lists claim these techniques reduce phantom limb pain, residual limb pain and opioid dependency 'by over 70%'. No such composite reduction was found. The closest verified figure is opioid use falling from 85.7% to 37.7% of patients in one oncologic amputation cohort — a change in the proportion of users, in one selected population, not a 70% reduction in three outcomes. (2) DESIGN: submitted as a 'multi-center prospective study confirming'; the evidence is observational with randomised trials registered but not yet reported, and the review literature explicitly states randomised trials are warranted. Both corrected. The recommendation to perform TMR or RPNI at the primary amputation rather than as a secondary revision is well supported and is kept. YEAR: assigned to 2025; the item appeared on both submitted lists.
-
-### PM&R 2025 #4 — Repetitive Transcranial Magnetic Stimulation for Persistent Post-Concussion Symptoms
-
-**corrected — one claimed outcome does not appear in the trials, and the evidence is a pilot**
-
-Partly real. Verified: a double-blind randomised sham-controlled PILOT trial, 20 participants, ten sessions of 10 Hz rTMS at 600 pulses and 70% resting motor threshold to the left dorsolateral prefrontal cortex, with time effects on headache severity and functional impact, depression, post-concussion symptoms and quality of life; a 44-adult sham-controlled trial in progress; an open-label adolescent feasibility study. THREE CORRECTIONS. (1) DYSAUTONOMIA IS NOT SUPPORTED. Both submitted lists make TBI-related dysautonomia a headline outcome; it does not appear among the reported outcomes of these trials, which centre on headache, cognitive symptoms, mood and quality of life. Sleep fragmentation likewise could not be confirmed. (2) The submission describes 'a prospective sham-controlled trial demonstrated' significant amelioration; this is a 20-participant pilot. (3) 'Formally integrates non-invasive neuromodulation into brain injury rehabilitation guidelines' — no guideline integration was found. YEAR: assigned to 2025; the item appeared on both submitted lists.
-
-### PM&R 2025 #6 — Markerless AI Motion Analysis: What It Can and Cannot Measure
-
-**corrected — accuracy overstated and one claimed measurement is physically impossible**
-
-The technology and the validation studies are real, but the submission overstates both. THREE CORRECTIONS. (1) ACCURACY: both lists say markerless systems 'match traditional force-plate and 3D optoelectronic motion-capture accuracy'. They do not — reported accuracy against optoelectronic reference is moderate-to-good with excellent reliability, and against an instrumented walkway in stroke survivors agreement was POOR for stride width and paretic single-limb support time, which are clinically central in hemiparesis. (2) PHYSICS: the submission says clinicians can 'track dynamic joint loads' using standard tablet or smartphone cameras. Joint loading requires ground reaction force, which video cannot measure; this is not a matter of accuracy but of what the instrument senses. Corrected explicitly because it would otherwise be repeated. (3) 'Endorses markerless digital motion tracking within sports medicine and musculoskeletal PM&R assessment guidelines' — no guideline endorsement was found. YEAR: assigned to 2025; the item appeared on both submitted lists.
-
-### PM&R 2026 #1 — Carpal Tunnel Syndrome Clinical Practice Guideline, Revision 2026
-
-**matched with corrections — real, one instrument missing and 'mandates' softened**
-
-Verified: JOSPT 2026;56(4), doi 10.2519/jospt.2026.0301, published April 2026, jointly revised by APTA Orthopedics and the APTA Hand and Upper Extremity Academies, ICF-linked, with the CTS-6 recommended for diagnosis and the BCTQ Symptom Severity Scale at baseline plus at least one follow-up. TWO CORRECTIONS. (1) The DASH or QuickDASH recommendation for assessing FUNCTION was missing from the submission, which lists only CTS-6 and BCTQ — an incomplete measurement set is the most likely way this guideline gets implemented wrongly. (2) The submission says the guideline 'Mandates standardized baseline and outcome evaluation... prior to electrodiagnostic testing or surgical referral'. These are recommendations linked to instruments, and the sequencing relative to electrodiagnostic testing as stated could not be confirmed; reworded to what the guideline recommends. Added that CTS-6 diagnostic accuracy rests on limited evidence, which the guideline itself notes. YEAR: correctly assigned to 2026 — the guideline is titled Revision 2026 and published April 2026.
-
-### PM&R 2026 #2 — First Breakthrough Device Designation for a Brain-Computer Interface in Stroke Motor Rehabilitation
-
-**corrected — a designation was described as a change in clinical guidelines**
-
-Verified: FDA Breakthrough Device Designation announced April 2026 for CorTec's Brain Interchange system, the first BCI worldwide designated for stroke motor rehabilitation, fully implantable and wireless, under FDA-approved IDE study at the University of Washington, with 2019 510(k) clearance of cortical mapping electrodes and a 2023 beta-phase-locked closed-loop feasibility study. CORRECTION: both submitted lists say the designation 'Re-defines neuro-rehabilitation frameworks by integrating implantable bidirectional neural recording and adaptive stimulation into clinical stroke recovery guidelines' and 'Provides physiatrists with a bioelectronic tool'. Neither is true yet — this is an investigational device with an expedited-review designation, no guideline includes it, and the announcement itself states that the designation does not change the requirements for marketing authorisation and does not guarantee approval. Rewritten so the regulatory status is unambiguous, since 'provides physiatrists with a tool' would have a clinician looking for something they cannot obtain. YEAR: correctly assigned to 2026 — the designation is April 2026.
 
 ### Pathology 2025 #1 — CAP 2025 Laboratory Accreditation Checklists: Digital Pathology and Patient Self-Collection
 
@@ -2300,6 +2270,42 @@ Verified and the best-supported entry in the 2026 list: the Florida Department o
 
 The ERAS and opioid-sparing direction is well established and the submission's expected benefits — less nausea, lower pain scores, faster return to activity — are consistent with multimodal analgesia evidence generally. TWO QUALIFICATIONS. (1) The submission builds the entry on 'long-acting liposomal bupivacaine nerve blocks' as the defining component. Liposomal bupivacaine's clinical advantage over plain bupivacaine has been repeatedly questioned and it carries a substantial cost premium; presenting it as the anchor of an ERAS pathway overstates a contested agent, so the entry names the better-supported components and flags this one. I did not run a dedicated search on liposomal bupivacaine trials, so the entry says 'contested' rather than asserting a negative finding. (2) 'Embeds ERAS clinical pathways into outpatient cosmetic and reconstructive guidelines' is a practice trend rather than a guideline change; no such guideline was located.
 
+### Physical Medicine & Rehabilitation 2025 #1 — AAPM&R Guidance Statement on Platelet-Rich Plasma for Knee Osteoarthritis
+
+**matched with corrections — real, structural benefit not supported**
+
+Verified: AAPM&R technical expert panel, structured literature review through June 2025, modified Delphi, published in PM&R (doi 10.1002/pmrj.70144), producing five evidence-based recommendations and eleven consensus-based best practices. TWO CORRECTIONS. (1) The submission says the guidance emphasises 'that earlier intervention yields superior structural and symptomatic outcomes'. Structural benefit from PRP in knee osteoarthritis is not established and the panel's evidence base does not support a structural claim; symptomatic benefit in mild-to-moderate disease is the defensible part. (2) 'Eliminating dosing variability' overstates a document in which eleven of sixteen statements are consensus-based — the entry now gives the five-plus-eleven structure so a reader can see how much is opinion. YEAR: assigned to 2025 on the basis of the June 2025 evidence cut-off; the submission listed this item on both the 2025 and 2026 lists.
+
+### Physical Medicine & Rehabilitation 2025 #3 — Targeted Muscle Reinnervation and Regenerative Peripheral Nerve Interfaces at Primary Amputation
+
+**corrected — the 70% figure is not supported and no prospective trial confirms it**
+
+The direction is real: TMR and RPNI reduce phantom and residual limb pain, primary (immediate) TMR outperforms untreated controls, and a systematic review and meta-analysis exists. TWO CORRECTIONS. (1) THE FIGURE: both submitted lists claim these techniques reduce phantom limb pain, residual limb pain and opioid dependency 'by over 70%'. No such composite reduction was found. The closest verified figure is opioid use falling from 85.7% to 37.7% of patients in one oncologic amputation cohort — a change in the proportion of users, in one selected population, not a 70% reduction in three outcomes. (2) DESIGN: submitted as a 'multi-center prospective study confirming'; the evidence is observational with randomised trials registered but not yet reported, and the review literature explicitly states randomised trials are warranted. Both corrected. The recommendation to perform TMR or RPNI at the primary amputation rather than as a secondary revision is well supported and is kept. YEAR: assigned to 2025; the item appeared on both submitted lists.
+
+### Physical Medicine & Rehabilitation 2025 #4 — Repetitive Transcranial Magnetic Stimulation for Persistent Post-Concussion Symptoms
+
+**corrected — one claimed outcome does not appear in the trials, and the evidence is a pilot**
+
+Partly real. Verified: a double-blind randomised sham-controlled PILOT trial, 20 participants, ten sessions of 10 Hz rTMS at 600 pulses and 70% resting motor threshold to the left dorsolateral prefrontal cortex, with time effects on headache severity and functional impact, depression, post-concussion symptoms and quality of life; a 44-adult sham-controlled trial in progress; an open-label adolescent feasibility study. THREE CORRECTIONS. (1) DYSAUTONOMIA IS NOT SUPPORTED. Both submitted lists make TBI-related dysautonomia a headline outcome; it does not appear among the reported outcomes of these trials, which centre on headache, cognitive symptoms, mood and quality of life. Sleep fragmentation likewise could not be confirmed. (2) The submission describes 'a prospective sham-controlled trial demonstrated' significant amelioration; this is a 20-participant pilot. (3) 'Formally integrates non-invasive neuromodulation into brain injury rehabilitation guidelines' — no guideline integration was found. YEAR: assigned to 2025; the item appeared on both submitted lists.
+
+### Physical Medicine & Rehabilitation 2025 #6 — Markerless AI Motion Analysis: What It Can and Cannot Measure
+
+**corrected — accuracy overstated and one claimed measurement is physically impossible**
+
+The technology and the validation studies are real, but the submission overstates both. THREE CORRECTIONS. (1) ACCURACY: both lists say markerless systems 'match traditional force-plate and 3D optoelectronic motion-capture accuracy'. They do not — reported accuracy against optoelectronic reference is moderate-to-good with excellent reliability, and against an instrumented walkway in stroke survivors agreement was POOR for stride width and paretic single-limb support time, which are clinically central in hemiparesis. (2) PHYSICS: the submission says clinicians can 'track dynamic joint loads' using standard tablet or smartphone cameras. Joint loading requires ground reaction force, which video cannot measure; this is not a matter of accuracy but of what the instrument senses. Corrected explicitly because it would otherwise be repeated. (3) 'Endorses markerless digital motion tracking within sports medicine and musculoskeletal PM&R assessment guidelines' — no guideline endorsement was found. YEAR: assigned to 2025; the item appeared on both submitted lists.
+
+### Physical Medicine & Rehabilitation 2026 #1 — Carpal Tunnel Syndrome Clinical Practice Guideline, Revision 2026
+
+**matched with corrections — real, one instrument missing and 'mandates' softened**
+
+Verified: JOSPT 2026;56(4), doi 10.2519/jospt.2026.0301, published April 2026, jointly revised by APTA Orthopedics and the APTA Hand and Upper Extremity Academies, ICF-linked, with the CTS-6 recommended for diagnosis and the BCTQ Symptom Severity Scale at baseline plus at least one follow-up. TWO CORRECTIONS. (1) The DASH or QuickDASH recommendation for assessing FUNCTION was missing from the submission, which lists only CTS-6 and BCTQ — an incomplete measurement set is the most likely way this guideline gets implemented wrongly. (2) The submission says the guideline 'Mandates standardized baseline and outcome evaluation... prior to electrodiagnostic testing or surgical referral'. These are recommendations linked to instruments, and the sequencing relative to electrodiagnostic testing as stated could not be confirmed; reworded to what the guideline recommends. Added that CTS-6 diagnostic accuracy rests on limited evidence, which the guideline itself notes. YEAR: correctly assigned to 2026 — the guideline is titled Revision 2026 and published April 2026.
+
+### Physical Medicine & Rehabilitation 2026 #2 — First Breakthrough Device Designation for a Brain-Computer Interface in Stroke Motor Rehabilitation
+
+**corrected — a designation was described as a change in clinical guidelines**
+
+Verified: FDA Breakthrough Device Designation announced April 2026 for CorTec's Brain Interchange system, the first BCI worldwide designated for stroke motor rehabilitation, fully implantable and wireless, under FDA-approved IDE study at the University of Washington, with 2019 510(k) clearance of cortical mapping electrodes and a 2023 beta-phase-locked closed-loop feasibility study. CORRECTION: both submitted lists say the designation 'Re-defines neuro-rehabilitation frameworks by integrating implantable bidirectional neural recording and adaptive stimulation into clinical stroke recovery guidelines' and 'Provides physiatrists with a bioelectronic tool'. Neither is true yet — this is an investigational device with an expedited-review designation, no guideline includes it, and the announcement itself states that the designation does not change the requirements for marketing authorisation and does not guarantee approval. Rewritten so the regulatory status is unambiguous, since 'provides physiatrists with a tool' would have a clinician looking for something they cannot obtain. YEAR: correctly assigned to 2026 — the designation is April 2026.
+
 ### Preventive Medicine 2025 #1 — 2025 AHA/ACC Guideline for the Prevention, Detection, Evaluation and Management of High Blood Pressure in Adults
 
 **matched with corrections — two claims not confirmed, renal denervation qualified**
@@ -2444,19 +2450,19 @@ Verified in the otolaryngology review of the same trial: GORTEC 2018-01, 680 com
 
 VERIFIED, AND MY SUSPICION WAS WRONG AGAIN. An antioxidant fullerene cream sounded like the least plausible item in the list; it is a real JCO publication (10.1200/JCO-25-02264), double-blind randomised phase II at West China Hospital, 132 patients randomised August 2024 to March 2025, fullerene versus trolamine three times daily from three days pre-RT to 14 days post, with significantly reduced acute radiation dermatitis and only mild allergic reactions. This is the fourth time in this review that a claim I read as fabricated checked out. TWO CORRECTIONS. (1) The submission describes a 'multi-center Phase III randomized placebo-controlled trial'; it is single-centre phase II with 132 patients, and the comparator is active trolamine, not placebo. (2) 'Rewrites supportive care consensus guidelines from MASCC/ESTRO/ASTRO' is not supportable from a 132-patient single-centre phase II, and no guideline change was found. Added the application schedule, since starting before radiotherapy is integral to the protocol.
 
-### Radiology 2025 #2 — Endovascular Thrombectomy for Large Ischaemic Core Stroke (SELECT2, ANGEL-ASPECT)
+### Radiology (Diagnostic, Interventional, Nuclear) 2025 #2 — Endovascular Thrombectomy for Large Ischaemic Core Stroke (SELECT2, ANGEL-ASPECT)
 
 **matched with corrections — date, and the magnitude of benefit**
 
 Verified in substance: SELECT2 and ANGEL-ASPECT both published in the New England Journal of Medicine in 2023, both showing benefit from endovascular thrombectomy in large-core ischaemic stroke, and both driving the expansion of eligibility in stroke guidance. THREE CORRECTIONS. (1) DATE: 2023, not 2025 — this is now standard practice, and presenting it as a 2025 development misstates where the field is. (2) The submission says thrombectomy 'yields significant functional independence'; the benefit is a shift in the modified Rankin distribution, with many treated patients still dependent, and overstating it sets up a conversation with a family that the outcome will not support. (3) ADDED: the higher rate of symptomatic intracranial haemorrhage in the large-core population, which the submission omits entirely while describing the alternative as 'comfort or palliative pathways'.
 
-### Radiology 2026 #1 — C-TRACT: Iliac Vein Stenting for Post-Thrombotic Syndrome
+### Radiology (Diagnostic, Interventional, Nuclear) 2026 #1 — C-TRACT: Iliac Vein Stenting for Post-Thrombotic Syndrome
 
 **matched with corrections — verified, with the bleeding harm restored**
 
 Verified: C-TRACT, open-label assessor-blinded, 225 patients at 29 US centres, iliac vein stenting plus enhanced antithrombotic therapy versus standard care, severe post-thrombotic syndrome by VCSS in 40% versus 93% at six months, presented at SIR with simultaneous NEJM publication. THE MATERIAL CORRECTION: the submission reports only benefit. The trial found that adding endovascular treatment INCREASED THE RISK OF BLEEDING, which is the trade-off a patient is being asked to accept and which the submitted entry omits entirely. Added. Two smaller points: the actual VCSS figures replace the submission's vaguer 'reducing severe PTS symptoms in over 50% of treated patients', and the six-month endpoint is stated because stent durability over years is not addressed. The claim that SIR and AHA venous disease guidelines have been updated was not confirmed.
 
-### Radiology 2026 #4 — 18F-Flurpiridaz PET Myocardial Perfusion Imaging
+### Radiology (Diagnostic, Interventional, Nuclear) 2026 #4 — 18F-Flurpiridaz PET Myocardial Perfusion Imaging
 
 **matched with corrections — mechanism accurate, one diagnostic claim narrowed**
 
@@ -2594,6 +2600,162 @@ Verified: ZIRCON, Lancet Oncology 2024, prospective open-label multicentre phase
 
 Verified against the 2026 EAU Urological Infections guidelines and their summary of changes: a new Section 3.17 on diagnosis and treatment of fungal urinary tract infection; updated evidence and recommendations on periprocedural antibiotic prophylaxis for prostate biopsy in Section 3.18.3 with growing support for transperineal biopsy often without prophylaxis; and BNO 1045 (Centaurii herba, Levistici radix, Rosmarini folium) non-inferior to fosfomycin trometamol in acute lower cystitis, with 83.5% versus 89.8% requiring no additional antibiotics between days 1 and 38. The submission was accurate on all three, including naming BNO 1045 correctly — notable, since an obscure-sounding herbal product code is exactly the kind of detail this review has wrongly doubted before. Corrections: the submission describes a wholesale release that 'establishes international standards' for three domains; the 2026 document is a LIMITED update adding 36 studies across two sections, and that has been stated. Added the actual non-inferiority figures — the submission gave none, and 'non-antibiotic treatment works' reads differently against 83.5% versus 89.8% — plus the exclusions (pyelonephritis, complicated UTI, pregnancy) and the point that candiduria is usually colonisation.
 
+### Vascular Surgery 2025 #4 — Carotid Endarterectomy versus Stenting: Ten-Year Nationwide Cohort
+
+**corrected**
+
+Study confirmed. Submission claimed CEA is 'the more durable procedure with lower stroke/mortality rates over 10 years'. The advantage is peri-procedural; after 30 days both are equally durable and 10-year CREST found no significant difference. Corrected, and framed against CREST-2 so the two carotid entries in this year do not read as contradictory.
+
+### Vascular Surgery 2025 #5 — GORE TAG Thoracic Branch Endoprosthesis Approved for Aortic Arch Zones 0 and 1
+
+**corrected**
+
+Approval and date confirmed. Submission described a single-branch device as enabling 'total aortic arch reconstruction', and credited a 77-patient single-arm trial with significantly reducing morbidity, ICU stay and stroke. Both corrected: single branch stated explicitly, comparative claims removed.
+
+### Vascular Surgery 2025 #6 — Dual-Pathway Inhibition after Lower Extremity Revascularization
+
+**corrected**
+
+Underlying evidence (VOYAGER PAD, COMPASS) is solid and already reflected in the resident content. The same development was submitted again as a 2026 entry; kept here on the earlier year per the dedup rule so it does not appear under both buttons. Registry citation is generic because the submission named no specific analysis.
+
+### Vascular Surgery 2025 #7 — CARTESIAN: Accelerated Vascular Ageing after COVID-19
+
+**corrected**
+
+Study confirmed. Submission omitted the two most important findings, the sex effect and the partial reversibility at one year, and overstated an observational study into formal screening pathways and recommended non-invasive testing. All three addressed.
+
+### Vascular Surgery 2025 #8 — Drug-Eluting Technology in Femoropopliteal Disease: Medicare Utilization Analysis
+
+**corrected**
+
+Submission claimed significantly lower major amputation, which directly contradicts SWEDEPAD in the same year's list. Amputation claim removed and the disagreement named explicitly, so the two entries teach the controversy instead of contradicting each other silently. Conference-level source could not be resolved to a citable publication.
+
+### Vascular Surgery 2026 #4 — EFFORT-2: Structured Aerobic Exercise with Anticoagulation in Acute DVT
+
+**corrected**
+
+Trial is real and was presented at VAM26 Boston on 13 June 2026, from the NIH programme whose protocol document carries NCT02148029. A second registry entry (NCT01864447, 'Exercise Training After an Acute Blood Clot') covers closely related work; the link text and URL now name the same ID rather than disagreeing. Two framing corrections: the submission claimed it reverses prolonged bed rest, abandoned two decades ago, and claimed specialists now routinely prescribe this, which one late-breaker does not establish.
+
+### Vascular Surgery 2026 #5 — TCAR in the Vascular Quality Initiative: Seven-Year Surveillance
+
+**corrected**
+
+Registry and volumes confirmed. Submission claimed TCAR established a superior stroke/mortality profile against BOTH transfemoral stenting and endarterectomy. The VQI data show CEA with slightly LOWER in-hospital stroke/death than TCAR (1.7% vs 2.0%); TCAR's advantage over CEA is cranial nerve injury, not stroke. Superiority claim narrowed to transfemoral stenting, which the data do support.
+
+### Vascular Surgery 2026 #6 — Mechanical Thrombectomy versus Pharmacomechanical Thrombolysis for Iliofemoral DVT
+
+**corrected**
+
+Two errors in opposite directions. Submission called it 'multi-center randomized comparisons' when the study is a propensity score matched exploratory analysis with no randomization; and claimed 'equivalent clot clearance' when the matched analysis found mechanical thrombectomy superior on thrombus removal and 12-month Villalta. Both fixed, with the design limitation stated.
+
+### Vascular Surgery 2026 #7 — Multidisciplinary Limb Preservation Teams: BEST-CLI Analysis
+
+**corrected**
+
+This entry UNDERSTATED itself. Submission said 'national clinical outcomes data' showing a '30%+ reduction'; the source is a BEST-CLI trial analysis, a stronger provenance, and the reduction is 40% (HR 0.60, p=0.005). Attribution and figure both corrected, and the mechanism detail added.
+
+### Infectious Disease 2025 #1 — Cloxacillin versus Cefazolin for MSSA Bacteremia (CloCeBa)
+
+**no verify block**
+
+
+
+### Infectious Disease 2025 #2 — Dalbavancin for Staphylococcus aureus Bacteremia (DOTS)
+
+**no verify block**
+
+
+
+### Infectious Disease 2025 #3 — Oral Zoliflodacin and Gepotidacin for Uncomplicated Gonorrhea
+
+**no verify block**
+
+
+
+### Infectious Disease 2025 #4 — Male Partner Treatment to Prevent Bacterial Vaginosis Recurrence (StepUp)
+
+**no verify block**
+
+
+
+### Infectious Disease 2025 #5 — Single-Dose HPV Vaccination (ESCUDDO)
+
+**no verify block**
+
+
+
+### Infectious Disease 2025 #6 — Shorter All-Oral Regimens for Drug-Resistant Tuberculosis (endTB)
+
+**no verify block**
+
+
+
+### Infectious Disease 2025 #7 — Adjunctive Corticosteroids in Non-HIV Pneumocystis Pneumonia (PIC)
+
+**no verify block**
+
+
+
+### Infectious Disease 2025 #8 — Doxycycline Post-Exposure Prophylaxis (DoxyPEP) in Practice
+
+**no verify block**
+
+
+
+### Infectious Disease 2025 #9 — Mosnodenvir for Dengue
+
+**no verify block**
+
+
+
+### Infectious Disease 2025 #10 — Early Tenofovir Alafenamide in Chronic Hepatitis B (ATTENTION)
+
+**no verify block**
+
+
+
+### Infectious Disease 2026 #1 — Cefazolin for Methicillin-Susceptible Staphylococcus aureus Bacteremia (SNAP)
+
+**no verify block**
+
+
+
+### Infectious Disease 2026 #2 — Early Switch to Oral Amoxicillin in Severe Pediatric Pneumonia (PediCAP)
+
+**no verify block**
+
+
+
+### Infectious Disease 2026 #3 — Twice-Yearly Lenacapavir for HIV Pre-Exposure Prophylaxis (PURPOSE 1 and 2)
+
+**no verify block**
+
+
+
+### Infectious Disease 2026 #4 — Single-Dose Clesrovimab for Infant RSV Prevention
+
+**no verify block**
+
+
+
+### Infectious Disease 2026 #5 — Oral Gepotidacin for Uncomplicated Urinary Tract Infection (EAGLE-2 and EAGLE-3)
+
+**no verify block**
+
+
+
+### Infectious Disease 2026 #6 — MVA-BN Mpox Vaccine: Two-Dose Effectiveness and the Clade I Evidence Gap
+
+**no verify block**
+
+
+
+### Infectious Disease 2026 #7 — Four-Month Regimen for Non-Severe Pediatric Drug-Susceptible Tuberculosis (SHINE)
+
+**no verify block**
+
+
+
 ---
 
 ## Matched — no correction needed
@@ -2628,6 +2790,12 @@ A JAAD 2026 document with this scope was located (S0190-9622(26)00344-0), coveri
 
 Real and accurately summarised. JAMA Dermatology 2026;162(2):133-141, online 17 December 2025, PMID 41405882, DOI 10.1001/jamadermatol.2025.4950. Phase 2b, 189 patients, 72 centres, Ständer et al. The itch numbers, dose-dependence, first-in-class status and OSMRβ mechanism all confirmed. One softening: 'simultaneously halts both severe neurogenic itching and dermal nodular fibrosing' is the mechanistic hope rather than a demonstrated outcome.
 
+### Otolaryngology – Head & Neck Surgery 2025 #3 — Perioperative Pembrolizumab in Resectable Locally Advanced Head and Neck Cancer (KEYNOTE-689)
+
+**matched**
+
+Verified and accurate as submitted. KEYNOTE-689, 714 patients, stage III/IVA resectable LA-HNSCC, presented at AACR and ASCO 2025 and published in the New England Journal of Medicine, with FDA approval of the perioperative regimen. Nothing needed correcting; the effect sizes have been added because the submission asserted improvement without them, and the CPS ≥10 primary population is now named — the magnitude differs substantially between that group and the whole population, and a reader who does not know which figure applies to their patient will overstate the benefit. The 'first positive trial in over two decades' framing comes from the trial's own reporting.
+
 ### Family Medicine 2026 #1 — Social Care via In-Person Navigation or Signposting? A Randomized Trial of the Access to Resources in the Community (ARC) Model
 
 **matched**
@@ -2652,12 +2820,6 @@ Real and accurately reported — the submission correctly identified these trial
 
 Verified and accurate as submitted, including the 15 mg versus 53 mg median oxycodone figures and the absence of any pain or satisfaction penalty. Randomised trial of 121 patients at the University of Maryland Rehabilitation & Orthopaedic Institute, JBJS 16 July 2025. Two small precisions added rather than corrected: the trial is labelled perioperative (not purely preoperative) counselling, and the mean total morphine equivalents (46.0 versus 63.6 mg) are quoted alongside the medians because the medians make the effect look larger than the means do. Sample size stated so the entry does not read as definitive on safety.
 
-### Otolaryngology 2025 #3 — Perioperative Pembrolizumab in Resectable Locally Advanced Head and Neck Cancer (KEYNOTE-689)
-
-**matched**
-
-Verified and accurate as submitted. KEYNOTE-689, 714 patients, stage III/IVA resectable LA-HNSCC, presented at AACR and ASCO 2025 and published in the New England Journal of Medicine, with FDA approval of the perioperative regimen. Nothing needed correcting; the effect sizes have been added because the submission asserted improvement without them, and the CPS ≥10 primary population is now named — the magnitude differs substantially between that group and the whole population, and a reader who does not know which figure applies to their patient will overstate the benefit. The 'first positive trial in over two decades' framing comes from the trial's own reporting.
-
 ### Pediatrics 2025 #2 — International Consensus Criteria for Pediatric Sepsis and Septic Shock (Phoenix)
 
 **matched**
@@ -2669,3 +2831,33 @@ Verified and accurate as submitted, including the Phoenix score ≥2 threshold, 
 **matched**
 
 Verified and accurately summarised, including the negative primary outcome and the use of midazolam as an active comparator: JAMA Psychiatry, PMID 41123905, investigator-led double-blind midazolam-controlled pragmatic trial at an academic centre in Ireland, September 2021 to August 2024, up to eight infusions twice weekly over four weeks, baseline MADRS ≥20, no significant difference in end-of-treatment MADRS or in secondary efficacy, cognitive, economic or quality-of-life outcomes. Details added rather than corrected: the single-centre design, the inclusion of bipolar as well as unipolar episodes, and the infusion schedule. The submission's framing that the trial highlights 'the significant role of unblinding and expectancy effects in IV ketamine trials' is a fair inference — midazolam was chosen to preserve blinding — but is presented here as the interpretation it is rather than as a finding. Also bounded what the trial does not address (single-dose ketamine for suicidality, outpatient esketamine, ECT), since the submission's practical advice reads more broadly than the evidence.
+
+### Vascular Surgery 2025 #1 — SVS Clinical Practice Guideline on Intermittent Claudication: Focused Update
+
+**matched**
+
+Guideline confirmed: JVS August 2025 focused update. Submission was accurate but omitted three usable specifics, all now added: the SET dose, the negative finding on revascularization-plus-exercise at 2-5 years, and the named shared decision-making elements.
+
+### Vascular Surgery 2025 #2 — CREST-2: Revascularization versus Intensive Medical Therapy in Asymptomatic Carotid Stenosis
+
+**matched**
+
+Numbers confirmed against source. Submission was accurate; added the explicit statement that the endarterectomy arm missed significance, because a reader who knows CEA as the gold standard will otherwise assume the result covers both arms.
+
+### Vascular Surgery 2025 #3 — SWEDEPAD 1 and 2: Paclitaxel-Coated versus Uncoated Devices
+
+**matched**
+
+Journal, design and result all confirmed. Added the first-year reintervention benefit, which the submission omitted and which makes the trial read as more uniformly negative than it was.
+
+### Vascular Surgery 2026 #1 — SVS Clinical Practice Guideline on Blunt Thoracic Aortic Injury: Focused Update
+
+**matched**
+
+Guideline, recommendation count and content all confirmed. Added the grade-specific follow-up imaging, which is the part a trainee actually applies.
+
+### Vascular Surgery 2026 #2 — ESVS 2026 Guidelines on Descending Thoracic and Thoraco-Abdominal Aortic Disease
+
+**matched**
+
+129 recommendations and the four topic areas confirmed exactly as submitted. Submission was accurate but generic; the two behaviour-changing specifics were missing and are now named. Both also corrected the resident TEVAR entry.
