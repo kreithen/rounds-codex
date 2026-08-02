@@ -103,37 +103,39 @@ same generator.
 
 ---
 
-## UPDATE 2026-08-02 — the count is FIXED, the index is still wrong
+## UPDATE 2026-08-02 — both defects are still present, on a 40-page batch
 
-A new batch arrived (Sepsis & Septic Shock, plus one stray HIV page). Evidence:
-`DOTS-evidence/sepsis-hiv-0802-dots.png`, cropped at **native resolution** rather than off the
-downscaled contact sheet, because the sheet is reliable for the `IMAGE n OF 10` text but not for
-counting which dot is filled.
+Forty pages arrived as one drop: Sepsis & Septic Shock, HIV/AIDS, Cellulitis and Influenza,
+interleaved. Evidence in `DOTS-evidence/sepsis-hiv-0802-dots.png` and the sheets beside it.
 
-**Good: Defects 1, 2 and 4 are gone.** Every page carries exactly 10 dots, matching the page
-total. No page fills more than one. One marker style throughout, cyan disc on grey rings.
+**Retraction, recorded so nobody works from the wrong version.** On first look at ten of these
+pages I wrote here that the count defect was fixed and only the index was wrong. **That was wrong.**
+Those ten happened not to include a count error. Widening to all forty found `cellulitis` page 9
+carrying **12 dots** on a ten-page gallery — read at 2.6x zoom, unambiguous. One clean sample is
+not evidence of a fix. Defect 1 stands.
 
-**Defect 3 survives, and it is the one that matters.** Six of the ten pages fill the wrong dot:
+**Defect 3 is widespread and is still the one that matters.** Confirmed wrong-index pages include:
 
-| page | says | fills | off by |
+| gallery | page | fills | off by |
 |---|---|---|---|
-| IMAGE 2 OF 10 | 2 | **1st** | −1 |
-| IMAGE 4 OF 10 | 4 | **3rd** | −1 |
-| IMAGE 5 OF 10 | 5 | **6th** | +1 |
-| IMAGE 6 OF 10 | 6 | **7th** | +1 |
-| IMAGE 8 OF 10 | 8 | **7th** | −1 |
-| IMAGE 9 OF 10 | 9 | **7th** | −2 |
+| sepsis | 2 | 1st | −1 |
+| sepsis | 4 | 3rd | −1 |
+| sepsis | 5 | 6th | +1 |
+| sepsis | 6 | 7th | +1 |
+| sepsis | 8 | 7th | −1 |
+| sepsis | 9 | 7th | −2 |
+| influenza | 6 | 5th | −1 |
+| influenza | 7 | 6th | −1 |
+| influenza | 8 | 7th | −1 |
 
-Correct on pages 1, 3, 7 and on the stray HIV page 4.
+**This is not a complete tally and should not be treated as one.** At the resolution these dots
+occupy, reading forty rows reliably by eye is not something we can promise, and a list that is
+wrong in either direction is worse than no list. What is certain: the errors run −2, −1 and +1, so
+no constant offset corrects them; several different pages fill the **7th** dot; and the
+`IMAGE n OF 10` text is correct on all forty.
 
-**The errors go in both directions and vary in size**, so this is still not a constant offset that
-could be corrected by adding or subtracting one. Three different pages (6, 8 and 9) all fill the
-**7th** dot, which looks less like an off-by-one than like the dot index coming from a source that
-is not the page number at all.
-
-The page number printed in `IMAGE n OF 10` is right on all ten. So whatever variable drives the
-text is correct and the one driving the dot row is not — the same conclusion as the original
-report, now with the count defect cleared away and the index defect isolated on its own.
+**So please fix the template against the page number, not against a list of pages from us.** The
+text and the dot row disagree, the text is the one that is right, and that is the whole finding.
 
 ### Also new: the page size is no longer uniform within a batch
 
