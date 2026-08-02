@@ -1,0 +1,98 @@
+# gallery	pages	status text	class
+cellulitis	1-10	CLINICAL PENDING	FALSE
+di	1-8,10	CLINICAL PENDING	FALSE
+asthma	1-10	RC hex shield + CLINICAL PENDING	FALSE
+cardiac-arrest	2-10	CLINICAL PENDING	FALSE
+cardiac-arrest	1	CLINICAL PEARLS	DESCRIPTOR
+copd	1-10	RC hex shield + CLINICAL PENDING	FALSE
+influenza	1-10	CLINICAL PENDING	FALSE
+uti	1-10	CLINICAL PENDING	FALSE
+aortic-dissection	1-10	CLINICAL PENDING	FALSE
+cap	1-10	RC hex shield + CLINICAL PENDING	FALSE
+ckd	1-10	CLINICAL PENDING	FALSE
+dvt	1-10	CLINICAL PENDING	FALSE
+pe	1-10	CLINICAL PENDING (p1-2 label "REVIEW STATUS")	FALSE
+siadh	1-3,5-10	CLINICAL PEERED	FALSE
+tia	1-8,10	Clinical Pending	FALSE
+addisons	1-10	CLINICAL PEERED	FALSE
+dic	1-10	CLINICAL PENDING	FALSE
+hyponatremia	1-10	Clinical Pending	FALSE
+lymphoma	1-10	CLINICAL PENDING	FALSE
+pad	1-10	CLINICAL PENDING (p3-10 under RC shield; p6 CLINICAL + PATH PENDING)	FALSE
+bowel-obstruction	3-10	CLINICAL PENDING	FALSE
+bowel-obstruction	1-2	CLINICAL FOUNDATION	DESCRIPTOR
+meningitis	1-10	Clinical Pending	FALSE
+seizure	1-10	Clinical Pending	FALSE
+thrombocytopenia	1-10	CLINICAL PENDING (red)	FALSE
+ards	1-2,4-10	CLINICAL PENDING	FALSE
+ards	3	HIGH-YIELD CLINICAL	DESCRIPTOR
+cdiff	1-8	CLINICAL PENDING	FALSE
+cdiff	9-10	CLINICAL PEARSON	GARBLED
+hyperparathyroid	1-4,6-10	CLINICAL PENDING	FALSE
+leukemia	1-10	CLINICAL PENDING	FALSE
+nephrolithiasis	1-10	CLINICAL PENDING	FALSE
+stroke	1-10	Clinical Pending	FALSE
+hepatitis	1-9	CLINICAL PEARSONS	GARBLED
+appendicitis	1-10	CLINICAL PEARSONS	GARBLED
+aki	1-10	CLINICAL PENDING	FALSE
+bph	3-10	Clinical Pending	FALSE
+hiv	1-10	CLINICAL PENDING	FALSE
+sepsis	1-9	CLINICAL PENDING	FALSE
+bph	1-2	HIGH-YIELD OVERVIEW/ANATOMY	DESCRIPTOR
+dka	1-10	HIGH YIELD USMLE/NCLEX	DESCRIPTOR
+metabolic-syndrome	1-10	REVIEW: High Yield	DESCRIPTOR
+parkinsons	1-10	CLINICAL PEARLS	DESCRIPTOR
+sepsis	10	CLINICAL PEARL	DESCRIPTOR
+cirrhosis	1-10	(none)	NO-CELL
+ibd	1-10	(none, disclaimer)	NO-CELL
+thyroidstorm	1-10	(none, CURE bar)	NO-CELL
+# --- already correct: RC shield + Rounds Codex Verified ---
+acs	1-10	Rounds Codex Verified	CORRECT
+afib	1-10	Rounds Codex Verified	CORRECT
+aortic-stenosis	1-10	Rounds Codex Verified	CORRECT
+cardiomyopathy	1-10	Rounds Codex Verified	CORRECT
+chf	1-10	Rounds Codex Verified	CORRECT
+endocarditis	1-10	Rounds Codex Verified	CORRECT
+htn	1-10	Rounds Codex Verified	CORRECT
+pericarditis	1-10	Rounds Codex Verified	CORRECT
+# --- descriptor only, left alone per the physician's decision ---
+b12-anemia	1-10	CLINICAL PEARLS	DESCRIPTOR
+dementia	1,10	CLINICAL PEARL(S)	DESCRIPTOR
+dementia	2-6,8-9	section names	DESCRIPTOR
+diverticulitis	1-10	CLINICAL/ANATOMY FOUNDATION	DESCRIPTOR
+gbs	1-10	TREATMENT / CLINICAL PEARLS & FOLLOW-UP	DESCRIPTOR
+gerd	1-10	Clinical Pearls	DESCRIPTOR
+gi-bleed	1-7	section names	DESCRIPTOR
+hyperkalemia	1-10	HIGH-YIELD *	DESCRIPTOR
+hyperlipidemia	1-10	section names / CLINICAL PEARLS	DESCRIPTOR
+icp	1-10	HIGH-YIELD FOUNDATION	DESCRIPTOR
+iron-anemia	1-10	CLINICAL PEARLS	DESCRIPTOR
+lung-cancer	1-10	HIGH-YIELD CLINICAL	DESCRIPTOR
+migraine	1-10	HIGH-YIELD FOUNDATION	DESCRIPTOR
+ms	1-10	section names	DESCRIPTOR
+myasthenia	1-10	HIGH-YIELD FOUNDATION	DESCRIPTOR
+osa	1-10	Start/End of Module	DESCRIPTOR
+pancreatitis	1-10	CLINICAL PEARLS	DESCRIPTOR
+pleural-effusion	1-10	HIGH-YIELD FOUNDATION / Early-End of Module	DESCRIPTOR
+pneumothorax	1-10	HIGH-YIELD *	DESCRIPTOR
+pud	1-10	Clinical Pearls / section names	DESCRIPTOR
+sci	1-10	HIGH-YIELD FOUNDATION	DESCRIPTOR
+tb	1-10	HIGH-YIELD CLINICAL	DESCRIPTOR
+t2dm	1-10	HIGH YIELD USMLE/NCLEX + taglines	DESCRIPTOR
+cushings	1-6	CORE CONCEPTS / ANATOMY FOUNDATION	DESCRIPTOR
+hypothyroid	3	CLINICAL REVIEW	DESCRIPTOR
+# --- no status cell in the template ---
+cholecystitis	1-10	(none)	NO-CELL
+hhs	1-10	(none)	NO-CELL
+hypoglycemia	1-10	(none, ICD-10 badge)	NO-CELL
+t1dm	1-10	(none, ICD-10 badge)	NO-CELL
+hypothyroid	1-2,4-10	(none, tagline bar)	NO-CELL
+# --- needs a re-read: first crop missed the bar ---
+di	9	?	RECHECK
+siadh	4	?	RECHECK
+tia	9	?	RECHECK
+hepatitis	10	?	RECHECK
+hyperparathyroid	5	?	RECHECK
+cushings	4,7-10	?	RECHECK
+dementia	7	?	RECHECK
+gi-bleed	8-10	?	RECHECK
