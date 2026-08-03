@@ -337,3 +337,40 @@ one day earlier, carry the new **RC + checkbox** mark in cyan. Both are acceptab
 neither asserts a pending review, but two galleries one tap apart show different marks in the
 same footer cell. Please standardise on RC + checkbox. Side-by-side:
 `DOTS-evidence/fracture-vs-covid-shield.png`.
+
+---
+
+## UPDATE 2026-08-03 — Osteoporosis: the count changes HALFWAY THROUGH one gallery
+
+Ten pages, delivered as two batches of five. Evidence: `DOTS-evidence/osteo-headers-1-5.png`,
+`osteo-dots-6-10.png`.
+
+**Pages 1-5 carry ten dots. Pages 6-10 carry nine.** Same gallery, same delivery day, same page
+total printed in the text on all ten. This is the clearest evidence yet that the dot row is not
+being sized from the gallery's page count at all — nothing about the gallery changed between
+page 5 and page 6.
+
+| page | dots | filled | verdict |
+|---|---|---|---|
+| 1 | 10 | 1st | correct |
+| 2 | 10 | **1st and 2nd** | cumulative fill |
+| 3 | 10 | 3rd | correct |
+| 4 | 10 | 4th | correct |
+| 5 | 10 | 5th | correct |
+| 6 | **9** | 6th | count wrong, index right |
+| 7 | **9** | 7th | count wrong, index right |
+| 8 | **9** | 7th | count wrong, index one early |
+| 9 | **9** | 8th | count wrong, index one early |
+| 10 | **9** | 9th | count wrong, index one early |
+
+### Page 2 is cumulative on BOTH galleries delivered today
+
+Fractures page 2 fills the first two dots and no other Fractures page does. Osteoporosis page 2
+fills the first two dots and no other Osteoporosis page does. Two galleries, same day, same
+single page. That is a much narrower target than "the dot row is wrong" — it suggests something
+specific about how page 2 is produced, not a general accumulator across the run.
+
+### One page short again
+
+Osteoporosis page 3 exported at **1024x1535**. The other nine are 1024x1536. It was resampled to
+build, which costs a little sharpness. Same rounding artefact reported for the last three batches.

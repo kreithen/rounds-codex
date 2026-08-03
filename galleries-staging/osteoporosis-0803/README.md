@@ -1,37 +1,38 @@
-# Osteoporosis gallery - INCOMPLETE, do not build yet
+# Osteoporosis gallery - COMPLETE, built 2026-08-03
 
-Received 2026-08-03: **5 of 10 pages**. Every header reads `IMAGE n OF 10`, so pages
-**6, 7, 8, 9 and 10** are outstanding. `build_galleries_from_images.py` asserts all ten and will
-refuse until they arrive.
+All ten pages received (5 + 5) and built as `osteoporosis` ("Osteoporosis", MSK & Rheum,
+ICD-10 M81.0). Verified headless with Fractures: 82 galleries / 820 images, 10 thumbnails each,
+all decoded, viewer opens the full 1024x1536, both findable by search and reachable from their
+condition page, zero page errors and zero failed requests.
 
-Condition id **`osteoporosis`** ("Osteoporosis", MSK & Rheum) already exists, and the header's
-"MSK & RHEUM" with ICD-10 **M81.0** (age-related osteoporosis without current pathological
-fracture) agrees. No gallery on that condition yet.
+## Page order - BOTH batches arrived shuffled
 
-## Page order - shuffled again
+Read off the `IMAGE n OF 10` header strip, never the filename.
 
-Read off the `IMAGE n OF 10` header strip.
+| batch | upload | real page | title |
+|---|---|---|---|
+| 1 | #2 | 1 | Overview: Anatomy, Pathophysiology & Clinical Approach |
+| 1 | #3 | 2 | Anatomy: The Skeletal Framework |
+| 1 | #1 | 3 | Pathophysiology |
+| 1 | #4 | 4 | Clinical Presentation |
+| 1 | #5 | 5 | Physical Exam |
+| 2 | #1 | 6 | Diagnostic Imaging |
+| 2 | #3 | 7 | Treatment Overview |
+| 2 | #2 | 8 | Cellular Pathophysiology & Histology |
+| 2 | #5 | 9 | Special Causes & Associated Conditions |
+| 2 | #4 | 10 | Clinical Pearl & Key Takeaways |
 
-| upload | real page | title |
-|---|---|---|
-| #2 | **1** | Overview: Anatomy, Pathophysiology & Clinical Approach |
-| #3 | **2** | Anatomy: The Skeletal Framework |
-| #1 | **3** | Pathophysiology |
-| #4 | 4 | Clinical Presentation |
-| #5 | 5 | Physical Exam |
+## Defects, reported to production
 
-## Defects
-
-1. **Page 2 fills the first TWO dots** - cumulative fill. Pages 1, 3, 4 and 5 each fill exactly
-   one dot at the right index, and all five carry ten dots, so the count is right again.
-   **This is the second gallery running where page 2 specifically is the cumulative one**
-   (Fractures had it too, on page 2, and nowhere else). That is a strong hint for production:
-   look at how page 2 is generated rather than at the row as a whole.
-2. **Page 3 exported at 1024x1535**, one pixel short. The other four are exactly 1024x1536. The
-   builder will resample it, but a resampled page is softer than one exported right.
+1. **The dot COUNT changes halfway through the gallery** - ten on pages 1-5, nine on pages 6-10.
+   Nothing about the gallery changes at that boundary, so the row is clearly not sized from the
+   page total.
+2. **Page 2 fills two dots cumulatively** - and Fractures, delivered the same day, has exactly
+   the same defect on exactly page 2 and nowhere else.
+3. **Page 3 exported at 1024x1535** and had to be resampled.
 
 ## What is right
 
-No REVIEW cell in the footer on any page - nothing claims a pending review. Canonical logo
-lockup on all five. Shield is the RC-over-pulse mark, matching Fractures but NOT the RC +
-checkbox mark on COVID-19 and Osteomyelitis.
+No REVIEW cell in any footer - nothing claims a pending clinical review. Canonical logo lockup
+throughout. Shield is the RC-over-pulse mark, matching Fractures but not the RC + checkbox mark
+used on COVID-19 and Osteomyelitis.
