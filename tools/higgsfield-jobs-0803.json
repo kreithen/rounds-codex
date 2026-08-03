@@ -64,11 +64,14 @@
   "_comment": "s3-0365 and s1-0247 re-fired with the strengthened prompts in refire-0803.json, because their labels sat on ultrasound speckle where erasing would invent tissue. 4 credits. Do NOT fire these prompts again without checking these job ids first.",
   "s3-0365": {
    "job": "0427de01-15ea-4a90-86a5-0ae7f278249d",
-   "aspect": "1:1"
+   "aspect": "1:1",
+   "result": "completed"
   },
   "s1-0247": {
    "job": "523ed7c7-8223-4f88-ad5b-382d5add4418",
-   "aspect": "1:1"
+   "aspect": "1:1",
+   "result": "completed"
   }
- }
+ },
+ "credits_net": "18 spent (20 fired, 2 refunded for the s2ck-0245 nsfw refusal); balance 2650 -> 2632"
 }
