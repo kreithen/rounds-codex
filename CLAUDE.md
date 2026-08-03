@@ -201,7 +201,7 @@ no backend. This file is context for future sessions — read it before starting
 - **Condition audio (`RC_AUDIO`)** — narrated bar under the quiz/gallery row, built by
   `scripts/audio_player.js`, installed by `add_condition_audio.js` and upgraded thereafter by
   `scripts/upgrade_audio_player.js` (the installer refuses to run twice, correctly — it is an
-  installer, not an upgrader). **CHF is the only recording as of 2026-08-01.**
+  installer, not an upgrader). **See the count below — 13 recordings as of 2026-08-03.**
   - **There is ONE `Audio` element for the whole app** (`RCAP_EL`), not one per player node,
     and a `.rcap` node is a *view onto it*. This is load-bearing for four separate features:
     playback must survive the navigation that shows the next recording; **a freshly created
@@ -209,6 +209,18 @@ no backend. This file is context for future sessions — read it before starting
     silently never starts**; iOS surfaces one media element per page as the now-playing item,
     so a per-node element loses the CarPlay session at every navigation; and two elements
     means two recordings talking over each other.
+  - **13 recordings as of 2026-08-03**, all Cardiac (chf, acs, afib, htn, aortic-stenosis,
+    endocarditis, pericarditis, cardiomyopathy, pad, dvt, aortic-dissection, cardiac-arrest,
+    hyperlipidemia). **`rcapOrder()` builds the chain from `DATA` order filtered by `RC_AUDIO`,
+    not from key order**, so where an entry sits in the literal is cosmetic — but the LAST id in
+    DATA order gets a dead forward button, by design.
+  - **A re-record gets a NEW FILENAME** (`afib-2.mp3`), never a new body at the old path:
+    `/assets/audio/*` is served `immutable` for a year.
+  - **`RCAP_EL` is `null` until the first tap** — it is created inside the Play handler, because a
+    freshly built `Audio` has no gesture behind it. A headless test must click the real control;
+    reading `window.RCAP_EL` before that reports "no audio element" on a working build.
+  - **A fresh browser context hits the `#rc-gate` disclaimer**, which swallows every tap until
+    `#rc-gate-ok` is clicked. Any Playwright test that clicks anything must dismiss it first.
   - **This reverses the earlier "stop audio when the view repaints" rule.** Navigating away
     now keeps playing and the bar re-syncs when you come back. Continuous play and listening
     with the phone locked were the whole point.
