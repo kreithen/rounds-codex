@@ -1,41 +1,39 @@
-# Fractures gallery - INCOMPLETE, do not build yet
+# Fractures gallery - COMPLETE, built 2026-08-03
 
-Received 2026-08-03: **5 of 10 pages**. The header on every page reads `IMAGE n OF 10`, so this
-is a ten-page gallery and pages **6, 7, 8, 9 and 10** have not been delivered.
-`scripts/build_galleries_from_images.py` asserts all ten exist and will refuse until they do.
+All ten pages received (5 + 5) and built into `content/galleries.json` as `fracture`
+("Fractures", MSK & Rheum). Verified headless: 10 thumbnails, all decoded, viewer opens the full
+1024x1536, index reads 81 galleries / 810 images, findable by search, reachable from the
+condition page, zero page errors and zero failed requests.
 
-Condition id is **`fracture`** ("Fractures", MSK & Rheum) - it already exists in
-`content/conditions.json`, and the page header's "MSK & RHEUM" and ICD-10 `S42.001A` agree.
+## Page order - the FIRST five arrived shuffled
 
-## Page order - the files arrived SHUFFLED
-
-Read off the `IMAGE n OF 10` header strip, never the filename. Mapping applied here:
+Read off the `IMAGE n OF 10` header strip, never the filename.
 
 | upload | real page | title |
 |---|---|---|
-| up-01 | 1 | Overview: Definition, Types & Key Concepts |
-| up-02 | 2 | Anatomy: Normal Bone & Common Fracture Locations |
-| up-05 | **3** | Pathophysiology: How Bone Breaks & Heals |
-| up-04 | 4 | Clinical Presentation |
-| up-03 | **5** | Physical Exam & Initial Assessment |
+| batch 1 #1 | 1 | Overview: Definition, Types & Key Concepts |
+| batch 1 #2 | 2 | Anatomy: Normal Bone & Common Fracture Locations |
+| batch 1 #5 | **3** | Pathophysiology: How Bone Breaks & Heals |
+| batch 1 #4 | 4 | Clinical Presentation |
+| batch 1 #3 | **5** | Physical Exam & Initial Assessment |
+| batch 2 #1 | 6 | Diagnostic Imaging: Find the Break |
+| batch 2 #2 | 7 | Gross Pathology & Mechanism |
+| batch 2 #3 | 8 | Microscopic Pathology & Healing Process |
+| batch 2 #4 | 9 | Treatment & Management |
+| batch 2 #5 | 10 | Clinical Pearl & Key Takeaways |
 
-The sequence matches every other gallery in the set, so pages 6-10 are expected to be roughly
-Diagnostics, Imaging, Treatment, Complications, and Clinical Pearl & Key Takeaways.
+The second batch arrived in order. The first did not - pages 3 and 5 were swapped.
 
-## What is RIGHT about this batch
+## Known defects, reported to production
 
-- **No review-status claim.** The footer has no REVIEW cell at all; the last cell is the shield.
-  That is the corrected template and it is the defect that mattered most.
-- **All five pages are exactly 1024x1536** - the first batch in a long time with no 1022/1023
-  rounding artefact, so nothing needs resampling.
-- **Canonical logo lockup** on all five, no TM variant.
-- **Dot COUNT is 10 on every page**, which the previous two batches got wrong on 15 of 20 pages.
+Neither blocks the gallery; both are recorded in `../DOTS-defect-for-production.md`.
 
-## What is WRONG
+1. **Dot index wrong on pages 2, 7, 8 and 9.** Page 2 fills two dots cumulatively; 7 and 8 fill
+   one position early; 9 fills two early. The dot COUNT is correct on all ten, which is a first.
+2. **The shield is the older RC-over-pulse mark**, not the RC + checkbox verified mark that
+   COVID-19 and Osteomyelitis shipped with on 2026-08-02.
 
-1. **Page 2 fills the first TWO dots.** The cumulative-fill defect, back again. Pages 1, 3, 4 and
-   5 each fill exactly one dot at the right index. Recorded in DOTS-defect-for-production.md.
-2. **The shield is not the new mark.** These pages carry an older shield - "RC" in white over a
-   cyan pulse line. COVID-19 and Osteomyelitis, shipped 2026-08-02, carry the physician's new
-   **RC + checkbox** verified mark in cyan. Two adjacent galleries would show different marks in
-   the same footer position. Worth settling with production before this ships.
+## What was right
+
+No REVIEW cell anywhere - nothing on these pages claims a pending clinical review. Every page
+exported at exactly 1024x1536, so none had to be resampled. Canonical logo lockup throughout.

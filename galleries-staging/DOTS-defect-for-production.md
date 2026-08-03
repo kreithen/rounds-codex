@@ -291,38 +291,49 @@ size.
 
 ---
 
-## UPDATE 2026-08-03 — Fractures (partial batch, 5 pages): count fixed, cumulative fill back
+## UPDATE 2026-08-03 — Fractures (all 10 pages): count FIXED, index wrong on 4
 
-Five of a ten-page Fractures gallery arrived. Evidence: `DOTS-evidence/fracture-headers.png`.
+The full ten-page Fractures gallery arrived in two halves. Evidence:
+`DOTS-evidence/fracture-headers.png` and `fracture-headers-6-10.png`.
 
-**The dot COUNT is right on all five** — ten dots on a ten-page gallery, every page. That is the
-first batch to get it right, against 15 of 20 wrong in the two galleries delivered the day before.
-Whatever changed, keep it.
+**Defect 1 is fixed. Every page carries exactly ten dots.** That is the first gallery in the
+whole series to get the count right on all ten, against 15 of 20 wrong in the two galleries
+delivered the day before. Whatever changed between those batches, keep it.
 
-**Defect 2 has returned on page 2**, which fills the first TWO dots instead of the second only.
-Pages 1, 3, 4 and 5 each fill exactly one dot at the correct index.
+**Defect 3 remains, on four of ten pages.**
 
-| page | dots | filled | should be |
+| page | dots | filled | verdict |
 |---|---|---|---|
 | 1 | 10 | 1st | correct |
-| 2 | 10 | **1st and 2nd** | 2nd only |
+| 2 | 10 | **1st and 2nd** | cumulative fill — should be 2nd only |
 | 3 | 10 | 3rd | correct |
 | 4 | 10 | 4th | correct |
 | 5 | 10 | 5th | correct |
+| 6 | 10 | 6th | correct |
+| 7 | 10 | **6th** | one too far left |
+| 8 | 10 | **7th** | one too far left |
+| 9 | 10 | **7th** | TWO too far left |
+| 10 | 10 | 10th | correct |
 
-One page in five is much better than the recent average, but it is the same cumulative-fill bug
-first reported on C. difficile and then on `dic` — it has now reappeared three separate times
-after apparently being fixed. It is worth finding in the template rather than fixing per batch.
+Page 2 is the cumulative-fill bug, which has now reappeared three separate times after appearing
+to be fixed (C. difficile, then `dic`, now here). Pages 7, 8 and 9 drift by -1, -1 and -2, so
+again no constant offset corrects it. Six of ten are right, which is the best yet.
 
-### The verified shield is the OLD mark on this batch
-
-COVID-19 and Osteomyelitis, delivered 2026-08-02, carry the new **RC + checkbox** mark in cyan.
-These Fractures pages carry an older shield — **"RC" in white over a cyan pulse line**, no
-checkbox. Both are fine in that neither claims a pending review, but two galleries one tap apart
-would show different marks in the same footer cell. Please standardise on the RC + checkbox
-version. Reference image: `DOTS-evidence/covid-p1-footer-RC-verified.png`.
+**A note on how this was read.** An automated count was written and then discarded: it reported
+zero filled dots on rows where one is plainly visible, and counts of 11, 12 and 15 on a row of
+10, because it picks up other header ink as dots. That is the fourth time automation has failed
+on this row. Reading a zoomed strip by eye remains the only method that works, and pages 9 and 10
+specifically needed a 5x crop before they could be counted honestly.
 
 ### Also right on this batch
 
-All five pages exported at exactly **1024x1536** — no 1022 or 1023 rounding artefact for the
-first time in three batches, so nothing had to be resampled. Logo lockup canonical on all five.
+Every page exported at exactly **1024x1536** — no 1022/1023 rounding artefact, so nothing was
+resampled. Logo lockup canonical on all ten. No REVIEW cell anywhere in the footer.
+
+### Still the OLD shield
+
+These ten carry **"RC" in white over a cyan pulse line**. COVID-19 and Osteomyelitis, delivered
+one day earlier, carry the new **RC + checkbox** mark in cyan. Both are acceptable in that
+neither asserts a pending review, but two galleries one tap apart show different marks in the
+same footer cell. Please standardise on RC + checkbox. Side-by-side:
+`DOTS-evidence/fracture-vs-covid-shield.png`.
