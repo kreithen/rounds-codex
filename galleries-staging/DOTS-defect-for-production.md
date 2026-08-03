@@ -428,3 +428,32 @@ an accumulator that is never reset between pages, rather than by the current pag
 in the template - it just is not the one the dot row uses.
 
 Footer on pages 6-10 is clean as well: no REVIEW cell, verified by the automated check and by eye.
+
+
+## 2026-08-03 — gout / compartment syndrome / SLE (30 pages, MSK & Rheum)
+
+**The count regressed and the fill index went wrong from page 3 onward.** Read by eye off the
+per-gallery header sheets, at 2x, after a sixth automated attempt produced nonsense (counts of
+25, 39 and 47 on a ten-page row — it was locking onto the logo, not the dots). Automated dot
+reading has now failed six times; do not try again, crop the header band and look.
+
+- **Dot count is 12–14, not 10**, and it varies page to page within one gallery.
+- **The fill index is right on pages 1 and 2, then sits one position too far right from page 3
+  on.** Pages 9 and 10 of both ten-page galleries fill the *same* dot near the right end, so at
+  most one of them can be correct.
+- **`lupus-05`'s filled marker is an OVAL, not a circle** — wider than tall, as though two
+  adjacent dots merged.
+- `gout` pages 1–5, delivered a few hours earlier in the same evening, had **correct** dots:
+  ten of them, one fill, right index. Pages 6–10 of the *same gallery* do not. So this is not
+  even stable within a single gallery, which is the strongest evidence yet that two page
+  templates are in flight at production's end.
+
+Other defects in the same batch, all cosmetic and all shipped as-is:
+
+- **Page heights are mixed three ways**: 1024×1535, 1024×1536 and 1023×1537 all appear. The
+  standard is 1024×1536. The builder resamples, but the source should not vary.
+- **`gout-09` footer CATEGORY reads "Therepeutics"** — misspelt.
+- **`gout-04` footer CATEGORY reads "Pathophysiology"** while its title is "Clinical
+  Presentation of Gout" and page 3 is the real pathophysiology page.
+- **`lupus-03`'s footer metadata row is visually broken** — the IMAGE TITLE text overlaps the
+  label, unlike every other page.
