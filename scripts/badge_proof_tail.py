@@ -50,6 +50,12 @@ PAD_TARGET = 88          # width of "Proof - Prepublication" in pad's type
 # Read off scripts-generated pixel rulers over each page's own copyright line, 2026-08-02.
 # Page 10 reads "Page 10 of 10 - Prepublication" with no "Proof", so its tail starts at the
 # separator; every other page starts at Proof.
+#
+# Two of these were wrong on the first pass and an independent reviewer caught both. Page 9's
+# "Proof" splits into "P" + "roof" as separate glyph runs, so reading the run list gave 521 --
+# the r -- and the erase left a capital P standing after "DVT Page 9". Page 10's band started at
+# 1345, which is inside the CITATION line above ("ACCP Guidelines, Chest, 2021"), so the box grew
+# up into it and sliced the top off "uidelines, Chest, 2021". Both re-read off a 4x ruler.
 DVT = {
     1:  (1350, 1366, 498, 614),
     2:  (1349, 1365, 505, 630),
@@ -59,8 +65,8 @@ DVT = {
     6:  (1348, 1364, 507, 638),
     7:  (1347, 1362, 526, 669),
     8:  (1344, 1362, 514, 658),
-    9:  (1351, 1367, 521, 653),
-    10: (1345, 1365, 559, 662),
+    9:  (1351, 1367, 513, 653),
+    10: (1350, 1366, 559, 662),
 }
 
 
@@ -169,6 +175,10 @@ def dvt_box(a, n):
     if gap < 2:
         return None, f'only {gap}px clear left of x{tx0} -- the box would cut a word, re-measure'
     rows = np.where(sub[:, tx0:tx1 + 1].sum(axis=1) > 0)[0]
+    # A copyright line is ~11px of type. Anything taller means the band has caught the line
+    # above -- which is exactly how page 10 sliced the citation -- so refuse rather than erase.
+    if int(rows.max() - rows.min()) > 16:
+        return None, f'ink spans {int(rows.max()-rows.min())+1} rows in the band -- it has caught the line above'
     return (tx0 - min(3, gap - 1), y0 + int(rows.min()) - 2, tx1 + 4,
             y0 + int(rows.max()) + 3), None
 
