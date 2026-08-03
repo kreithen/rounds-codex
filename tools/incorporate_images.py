@@ -2,40 +2,50 @@
 """
 Incorporate approved real/AI images into the USMLE module.
 
-Takes a folder of images named <question-id>.<ext> (e.g. s2ck-0178.png), optimizes
-each (downscale + compress), copies them to preview/img/, and writes
-preview/illus-real.js which OVERRIDES the schematic SVG for those ids via the
-RC_ILLUS registry (loaded last, so it wins). No engine change per image.
+Takes a folder of images named <question-id>.<ext> (e.g. s2ck-0178.jpg), writes them to
+<out-root>/img/, and writes <out-root>/illus-real.js, which OVERRIDES the schematic SVG for
+those ids via the RC_ILLUS registry. illus-real.js is the last illus-* script the page loads,
+so its entry wins. No engine change and no question-content change per image.
+
+WHY AN OVERRIDE AND NOT AN EDIT: all 190 items already carry `anchor:"image"` and a
+`**[IMAGE: ...]**` marker in the vignette, and 189 of them already render a hand-drawn SVG.
+Dropping an id out of illus-real.js restores the schematic, so the physician gate is
+reversible per image and a missing file degrades rather than breaks.
 
 MEDICAL-SAFETY DEFAULTS:
   * Only ids present as image files are wired; everything else keeps its schematic.
   * If --decisions is given, only ids in its "approved" list are wired (physician gate).
-  * ECG items (isECG in the manifest) are SKIPPED unless --include-ecg — AI cannot
+  * ECG items (isECG in the manifest) are SKIPPED unless --include-ecg - AI cannot
     reliably render correct ECGs; keep those as vector tracings.
 
-Usage:
-  python tools/incorporate_images.py --images tools/candidates \
-      [--decisions decisions.json] [--include-ecg] [--max-width 720] [--quality 85]
+An already-optimized JPEG within --max-width is copied byte for byte rather than re-encoded,
+so the file that was reviewed is the file that ships. tools/prepare-usmle-images.command does
+the resizing on the physician's machine (the masters are ~6 MB each and never come in here),
+so the normal path through this script is a straight copy.
 
-Then rebuild the preview zip.
+Usage:
+  python3 tools/incorporate_images.py --images <folder-of-jpgs>
+  python3 tools/incorporate_images.py --images <folder> --decisions decisions.json
 """
-import argparse, json, os, sys
+import argparse, json, os, shutil, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MANIFEST = os.path.join(ROOT, "tools", "image-manifest.json")
-IMG_OUT = os.path.join(ROOT, "preview", "img")
-JS_OUT = os.path.join(ROOT, "preview", "illus-real.js")
-EXTS = (".png", ".jpg", ".jpeg", ".webp")
+EXTS = (".jpg", ".jpeg", ".png", ".webp")
+
 
 def esc_attr(s):
     return (s or "").replace('"', "&quot;")
 
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--images", default=os.path.join(ROOT, "tools", "candidates"))
+    ap.add_argument("--out-root", default=os.path.join(ROOT, "applive", "usmle"),
+                    help="the usmle/ folder to write img/ and illus-real.js into")
     ap.add_argument("--decisions", default=None)
     ap.add_argument("--include-ecg", action="store_true")
-    ap.add_argument("--max-width", type=int, default=720)
+    ap.add_argument("--max-width", type=int, default=1024)
     ap.add_argument("--quality", type=int, default=85)
     a = ap.parse_args()
 
@@ -51,8 +61,12 @@ def main():
         approved = set(d.get("approved", []))
         print(f"decisions: {len(approved)} approved ids (physician gate ON)")
 
-    os.makedirs(IMG_OUT, exist_ok=True)
-    wired, skipped_ecg, skipped_unapproved, entries = [], [], [], []
+    img_out = os.path.join(a.out_root, "img")
+    js_out = os.path.join(a.out_root, "illus-real.js")
+    os.makedirs(img_out, exist_ok=True)
+
+    wired, copied, reencoded, entries = [], 0, 0, []
+    skipped_ecg, skipped_unapproved = [], []
 
     for qid, it in by_id.items():
         src = next((os.path.join(a.images, qid + e) for e in EXTS
@@ -64,31 +78,60 @@ def main():
         if approved is not None and qid not in approved:
             skipped_unapproved.append(qid); continue
 
-        im = Image.open(src).convert("RGB")
-        if im.width > a.max_width:
-            h = round(im.height * a.max_width / im.width)
-            im = im.resize((a.max_width, h), Image.LANCZOS)
-        dst = os.path.join(IMG_OUT, qid + ".jpg")
-        im.save(dst, "JPEG", quality=a.quality, optimize=True)
-        alt = esc_attr((it.get("title") or qid))
-        entries.append("  '%s': '<img src=\"img/%s.jpg\" alt=\"%s\" loading=\"lazy\">'" % (qid, qid, alt))
+        dst = os.path.join(img_out, qid + ".jpg")
+        with Image.open(src) as probe:
+            w, h = probe.size
+            fmt = probe.format
+        if fmt == "JPEG" and w <= a.max_width:
+            # Already the right shape. Re-encoding would be a second generation of loss on a
+            # file that has been reviewed, for no gain.
+            shutil.copyfile(src, dst); copied += 1
+        else:
+            im = Image.open(src).convert("RGB")
+            if im.width > a.max_width:
+                h = round(im.height * a.max_width / im.width)
+                im = im.resize((a.max_width, h), Image.LANCZOS)
+            im.save(dst, "JPEG", quality=a.quality, optimize=True)
+            reencoded += 1
+        with Image.open(dst) as final:
+            fw, fh = final.size
+
+        alt = esc_attr(it.get("title") or qid)
+        # width/height give the browser the aspect ratio before the bytes arrive. The CSS is
+        # `max-width:100%;height:auto`, so these scale rather than fix the size - they only stop
+        # the vignette reflowing as each lazy image loads.
+        entries.append('  %r: %r' % (qid,
+            '<img src="img/%s.jpg" alt="%s" width="%d" height="%d" loading="lazy">'
+            % (qid, alt, fw, fh)))
         wired.append(qid)
 
-    header = ("// preview/illus-real.js — real/AI images that OVERRIDE schematic SVGs.\n"
+    entries.sort()
+    header = ("// usmle/illus-real.js - real/AI images that OVERRIDE schematic SVGs.\n"
               "// Generated by tools/incorporate_images.py. Loaded LAST so RC_ILLUS[id] here wins.\n"
-              "// Each image is physician-reviewed; ECGs stay vector unless --include-ecg.\n")
-    body = "Object.assign(window.RC_ILLUS = window.RC_ILLUS || {}, {\n" + ",\n".join(entries) + ("\n" if entries else "") + "});\n"
-    open(JS_OUT, "w").write(header + body)
+              "// Each image is physician-reviewed; ECGs stay vector unless --include-ecg.\n"
+              "// Removing an id here restores that question's schematic - nothing else to undo.\n")
+    body = ("Object.assign(window.RC_ILLUS = window.RC_ILLUS || {}, {\n"
+            + ",\n".join(entries) + ("\n" if entries else "") + "});\n")
+    open(js_out, "w").write(header + body)
 
-    print(f"\nwired {len(wired)} real images -> preview/img/ + preview/illus-real.js")
+    man_out = os.path.join(a.out_root, "img", "_wired.json")
+    json.dump({"wired": sorted(wired), "count": len(wired)}, open(man_out, "w"), indent=1)
+
+    size_mb = sum(os.path.getsize(os.path.join(img_out, f))
+                  for f in os.listdir(img_out) if f.endswith(".jpg")) / 1e6
+    print(f"\nwired {len(wired)} real images -> {img_out} + {js_out}")
+    print(f"  {copied} copied verbatim, {reencoded} re-encoded; {size_mb:.1f} MB total")
     print(f"coverage: {len(wired)}/{total_illus} illustrated items now use real images "
-          f"({total_illus-len(wired)} keep schematics)")
+          f"({total_illus - len(wired)} keep schematics)")
     if skipped_ecg:
         print(f"skipped {len(skipped_ecg)} ECG items (kept vector; pass --include-ecg to override)")
     if skipped_unapproved:
         print(f"skipped {len(skipped_unapproved)} not in the approved decisions list")
     if not entries:
-        print("(no images found — illus-real.js is an empty stub; nothing overridden)")
+        print("(no images found - illus-real.js is an empty stub; nothing overridden)")
+        return 1
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
