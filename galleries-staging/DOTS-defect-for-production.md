@@ -374,3 +374,44 @@ specific about how page 2 is produced, not a general accumulator across the run.
 
 Osteoporosis page 3 exported at **1024x1535**. The other nine are 1024x1536. It was resampled to
 build, which costs a little sharpness. Same rounding artefact reported for the last three batches.
+
+---
+
+## UPDATE 2026-08-03 — Rheumatoid Arthritis (5 pages): FULL REGRESSION on the dot row
+
+Evidence: `DOTS-evidence/ra-dots-1-5.png`, read at 4x.
+
+**The dot row is a cumulative progress bar again, on every page.** Not one page in five, as on
+the two galleries delivered earlier the same day — all of them.
+
+| page | dots | filled | should be |
+|---|---|---|---|
+| 1 | 9 | 1st | 10 dots, 1st |
+| 2 | 9 | **1st + 2nd** | 10 dots, 2nd only |
+| 3 | 9 | **1st + 2nd + 3rd** | 10 dots, 3rd only |
+| 4 | **8** | **first four** | 10 dots, 4th only |
+| 5 | 10 | **first five** | 10 dots, 5th only |
+
+The count is also wrong on four of five, and varies 8-10 inside a single batch.
+
+### This is a different, OLDER template than the one used hours earlier
+
+Fractures and Osteoporosis, delivered the same day, both carried **ten dots on every page** and
+filled cumulatively on page 2 only. This batch has neither property. Whatever produced Fractures
+is better than whatever produced this, and both are apparently in use simultaneously.
+
+That is the third time two template versions have been in flight at once — the same thing
+happened on 2026-08-01, when a 90-page batch arrived with the cumulative fill FIXED and `dic`
+arrived hours later with it back. **Please pin the generator version before the next batch**, so
+a fix confirmed on one gallery means something for the next.
+
+### Page size: the 1023x1537 variant is back
+
+Two of the five exported at **1023x1537**; the other three are 1024x1536. Osteoporosis had a
+different wrong size (1024x1535) the same day. Both need resampling, and a page resampled after
+export is softer than one exported right.
+
+### The footer is clean
+
+No REVIEW cell on any of the five — confirmed by the new automated footer-claim check and by eye.
+Whatever else this template version gets wrong, it does not assert a pending review.
