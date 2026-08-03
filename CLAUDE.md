@@ -279,6 +279,28 @@ no backend. This file is context for future sessions — read it before starting
   `gthumbs/<id>-NN.jpg` set at 320 px q82 (12 MB). See `app-integration-queue.md`.
   New galleries use `base:''` with the folder in `file`, so `thumb` can reach `gthumbs/`.
   **The "Download Complete Gallery (PDF)" button is a stub app-wide** — it toasts, nothing more.
+- **The gallery viewer CHAINS across galleries** (v59, 2026-08-03, `scripts/add_gallery_chain.js`,
+  seven asserted surgeries, refuses to run twice). Last image + right → image 1 of the next
+  gallery; image 1 + left → last image of the previous. **Order is `rcGalOrder()` = `DATA` order
+  filtered by which conditions have a gallery** — the same rule as `rcapOrder()` for audio, NOT
+  `GALLERIES` key order. It **wraps** at both ends of the 83-gallery chain, unlike the audio
+  chain. Crossing also rewrites the page under the overlay and the URL; **`paint()` cannot be
+  used there — it calls `closeViewer()` first** and would shut the viewer mid-swipe.
+  Three pre-existing bugs found while building it, all fixed in the same pass:
+  - **The arrows had never worked.** `.varrow` has `onclick="gnav(±1)"`, but `pointerdown` calls
+    `stage.setPointerCapture()` and an active capture retargets the derived click to the
+    capturing element — so it landed on `.vstage`. Browsing worked *only* by swiping, on every
+    build since the viewer shipped. `pointerdown` now returns early on a `.varrow` target.
+  - **`pointercancel` was wired to the same handler as `pointerup`**, and a cancel carries
+    `clientX` 0 — so `dx = -sx`, always a large negative, and an interrupted gesture jumped to
+    the NEXT image whichever way the finger went.
+  - **The viewer's "Image N of M" total is written once by `openViewer()`** and never updated;
+    only `#vn` changes. Invisible while every gallery has 10 images — it would have gone wrong
+    silently the first time one didn't.
+  **Chromium's mouse emulation ends a drag with `pointercancel` and no `pointerup`**, so a
+  mouse-driven swipe test measures the cancel path, not the swipe path.
+  `verify_gallery_gestures.js` drives real touch over CDP. Both suites were run against
+  `origin/main` first and fail there.
 - **Source artwork ships at 1024x1536** (2:3 portrait), JPEG q88 (~440 kB/page). The old
   pipeline downscaled to 800x1200, below what a Pro Max screen shows the viewer at.
   **1024x1536 is the standard — decided 2026-07-29.** Production has started sending some pages
