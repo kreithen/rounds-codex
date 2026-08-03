@@ -215,7 +215,16 @@ no backend. This file is context for future sessions — read it before starting
     not from key order**, so where an entry sits in the literal is cosmetic — but the LAST id in
     DATA order gets a dead forward button, by design.
   - **A re-record gets a NEW FILENAME** (`afib-2.mp3`), never a new body at the old path:
-    `/assets/audio/*` is served `immutable` for a year.
+    `/assets/audio/*` is served `immutable` for a year. **This applies to a mis-mapping too** —
+    hyperlipidemia and cardiac-arrest shipped under each other's names on 2026-08-03 and the fix
+    was `-2` filenames, not a rename, because a device that had already fetched the wrong bytes
+    would keep them until 2027. Swap **`src` and `duration` together**: duration draws the
+    scrubber and the CarPlay progress bar, so a src-only swap leaves each entry advertising the
+    other's length.
+  - **A recording cannot be identified from the file.** ElevenLabs exports carry no title tag
+    (only `TSSE: Lavf...`), and audio cannot be listened to from a session, so which file is which
+    rests entirely on what the physician says. Ask, or state the assumption loudly — do not infer
+    it from upload order, which is how the 2026-08-03 swap happened.
   - **`RCAP_EL` is `null` until the first tap** — it is created inside the Play handler, because a
     freshly built `Audio` has no gesture behind it. A headless test must click the real control;
     reading `window.RCAP_EL` before that reports "no audio element" on a working build.
