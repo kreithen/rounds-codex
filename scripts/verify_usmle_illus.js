@@ -88,6 +88,14 @@ const EXPECT = (() => {
 
   let found = null;
   for (let i = 0; i < 90; i++) {
+    // Wait for the decode before measuring. Reading naturalWidth straight after render is a
+    // race: it returns 0 for an image that is merely still loading, so the check reported a
+    // dead image on a perfectly good build. Passing by luck and failing by luck are the same
+    // bug.
+    await page.waitForFunction(() => {
+      const img = document.querySelector('#vignette figure.anchor-fig img');
+      return !img || (img.complete && img.naturalWidth > 0);
+    }, { timeout: 8000 }).catch(() => {});
     found = await page.evaluate(() => {
       const fig = document.querySelector('#vignette figure.anchor-fig');
       const img = fig && fig.querySelector('img');
