@@ -288,3 +288,41 @@ the 2026-08-02 batch (which came in at 1023x1537). We resampled to 1024x1536 to 
 resampled after export is softer than one exported at the right size, and a gallery must ship one
 size.
 
+
+---
+
+## UPDATE 2026-08-03 — Fractures (partial batch, 5 pages): count fixed, cumulative fill back
+
+Five of a ten-page Fractures gallery arrived. Evidence: `DOTS-evidence/fracture-headers.png`.
+
+**The dot COUNT is right on all five** — ten dots on a ten-page gallery, every page. That is the
+first batch to get it right, against 15 of 20 wrong in the two galleries delivered the day before.
+Whatever changed, keep it.
+
+**Defect 2 has returned on page 2**, which fills the first TWO dots instead of the second only.
+Pages 1, 3, 4 and 5 each fill exactly one dot at the correct index.
+
+| page | dots | filled | should be |
+|---|---|---|---|
+| 1 | 10 | 1st | correct |
+| 2 | 10 | **1st and 2nd** | 2nd only |
+| 3 | 10 | 3rd | correct |
+| 4 | 10 | 4th | correct |
+| 5 | 10 | 5th | correct |
+
+One page in five is much better than the recent average, but it is the same cumulative-fill bug
+first reported on C. difficile and then on `dic` — it has now reappeared three separate times
+after apparently being fixed. It is worth finding in the template rather than fixing per batch.
+
+### The verified shield is the OLD mark on this batch
+
+COVID-19 and Osteomyelitis, delivered 2026-08-02, carry the new **RC + checkbox** mark in cyan.
+These Fractures pages carry an older shield — **"RC" in white over a cyan pulse line**, no
+checkbox. Both are fine in that neither claims a pending review, but two galleries one tap apart
+would show different marks in the same footer cell. Please standardise on the RC + checkbox
+version. Reference image: `DOTS-evidence/covid-p1-footer-RC-verified.png`.
+
+### Also right on this batch
+
+All five pages exported at exactly **1024x1536** — no 1022 or 1023 rounding artefact for the
+first time in three batches, so nothing had to be resampled. Logo lockup canonical on all five.
