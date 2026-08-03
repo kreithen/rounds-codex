@@ -72,19 +72,32 @@ def save_like(img, src_im, dst):
     img.save(dst, 'JPEG', **kw)
 
 
-def row_bg(base, y, x_lo, x_hi):
-    """The panel colour on one row, taken from the darkest half of a sample window.
+def row_bg(base, y, *windows):
+    """The panel colour on one row: from whichever offered window is emptiest, darkest half only.
 
-    A plain median over the window is only right when the window is empty panel. On the bottom
-    copyright strip it is not -- the 60px left of the erased tail is "Page 1 of 10" -- so the
-    median landed between the type and the panel and painted a light blue highlighter bar across
-    the footer of all ten asthma pages. The panel is always the darkest thing on these pages, so
-    averaging the darker half of the window ignores whatever type is in it.
+    A plain median is only right when the sample window is empty panel. On the bottom copyright
+    strip it is not -- the 60px left of the erased tail is "Page 1 of 10" -- so the median landed
+    between the type and the background and painted a light-blue bar across the footer of all ten
+    asthma pages, RGB(9,52,73) against a true background of RGB(1,8,18).
+
+    Taking the darkest half of that one window is not enough either: on row 1182 the window is
+    more than half type, so even its darkest quarter still averages RGB(0,19,42). The fix is to
+    offer BOTH sides and let each row take the darker, which for a tail at the end of a line is
+    the empty run after it. The panel is always the darkest thing on these pages, so "darker"
+    and "less type in it" are the same test.
     """
-    strip = base[y, x_lo:x_hi, :]
-    lum = strip.sum(axis=1)
-    keep = strip[lum <= np.median(lum)]
-    return (keep if len(keep) else strip).mean(axis=0)
+    best, best_lum = None, None
+    for x_lo, x_hi in windows:
+        if x_hi - x_lo < 6 or x_lo < 0 or x_hi > base.shape[1]:
+            continue
+        strip = base[y, x_lo:x_hi, :]
+        lum = strip.sum(axis=1)
+        q = np.percentile(lum, 25)
+        if best_lum is None or q < best_lum:
+            best, best_lum = strip[lum <= max(q, lum.min())], q
+    if best is None or not len(best):
+        return base[y, max(0, windows[0][0]):windows[0][1], :].mean(axis=0)
+    return best.mean(axis=0)
 
 
 def warm(a):
@@ -313,28 +326,31 @@ def pull_in_rule(mask, b, reach=7):
     return b
 
 
-def grow_to_ink(mask, b, limit=16):
+def grow_to_ink(mask, b, limit=16, vlimit=2):
     """Extend a chosen box outward while ink is still touching its edge.
 
-    A reviewer flagged meningitis p3, where the box around "Clinical" stopped short of its
-    leading C. Picking the box was right; erasing exactly it would have left a stray letter in
-    the REVIEW cell. Growth is capped and reported: if a box wants more than `limit` px on a
-    side it has almost certainly latched onto a neighbour, and the page is refused rather than
-    smeared.
+    Sideways growth is generous and VERTICAL growth is almost none, which is the whole point of
+    having two limits. Sideways is what meningitis p3 needed: the box around "Clinical" stopped
+    short of its leading C, because the word is a cyan-to-gold gradient and the C fell outside
+    the warm mask. Vertically there is nothing to gain -- a glyph's own antialiasing is a pixel
+    or two -- and a great deal to lose, because the cyan cell LABEL sits directly above the
+    value. With a symmetric 16px limit the box climbed into it: cdiff 06 lost the bottom two
+    rows of "REVIEW", di 10 lost the label outright, di 01 took two rows off a micro-caption.
     """
     h, w = mask.shape
     x0, y0, x1, y1 = b['x0'], b['y0'], b['x1'], b['y1']
-    grown = 0
+    grown = vgrown = 0
     for _ in range(limit):
         moved = False
         if x0 > 0 and mask[y0:y1 + 1, x0 - 1].any():
             x0 -= 1; moved = True
         if x1 < w - 1 and mask[y0:y1 + 1, x1 + 1].any():
             x1 += 1; moved = True
-        if y0 > 0 and mask[y0 - 1, x0:x1 + 1].any():
-            y0 -= 1; moved = True
-        if y1 < h - 1 and mask[y1 + 1, x0:x1 + 1].any():
-            y1 += 1; moved = True
+        if vgrown < vlimit:
+            if y0 > 0 and mask[y0 - 1, x0:x1 + 1].any():
+                y0 -= 1; moved = True; vgrown += 1
+            if y1 < h - 1 and mask[y1 + 1, x0:x1 + 1].any():
+                y1 += 1; moved = True
         if not moved:
             break
         grown += 1

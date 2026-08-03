@@ -99,6 +99,7 @@ def main():
     G = json.load(open(os.path.join(SITE, 'content', 'galleries.json')))['galleries']
     os.makedirs(a.outdir, exist_ok=True)
     total = 0
+    manifest = []
     for gid, (y0, y1) in ROWS.items():
         gal = G[gid]
         gd = os.path.join(a.outdir, gid)
@@ -126,8 +127,10 @@ def main():
                 d = np.abs(out - base).max(axis=2)
                 d[by0:by1 + 1, bx0:bx1 + 1] = 0
                 assert not (d > 0).any(), f'{gid}-{im["n"]:02d} changed pixels outside its box'
-                save_like(Image.fromarray(out.round().astype(np.uint8)), I,
-                          os.path.join(gd, os.path.basename(p)))
+                dstp = os.path.join(gd, os.path.basename(p))
+                save_like(Image.fromarray(out.round().astype(np.uint8)), I, dstp)
+                manifest.append(dict(gid=gid, n=im['n'], status='ok', dst=dstp,
+                                     boxes=[dict(x0=bx0, y0=by0, x1=bx1, y1=by1)]))
             else:
                 I = I.convert('RGB')
                 ImageDraw.Draw(I).rectangle([bx0, by0, bx1, by1], outline=(255, 40, 90), width=1)
@@ -137,6 +140,11 @@ def main():
                  .save(os.path.join(gd, f'preview-{im["n"]:02d}.png'))
             total += 1
         assert max(lefts) - min(lefts) <= 12, f'{gid}: left edge moved {max(lefts)-min(lefts)}px between pages'
+    # Recorded so the damage check sees these edits too. The first verification pass keyed off
+    # badge_lines' manifest alone and therefore reported cap and copd as clean while their
+    # copyright strips were carrying a visible bar.
+    if a.apply:
+        json.dump(manifest, open(os.path.join(a.outdir, 'applied.json'), 'w'), indent=1)
     print(f'\n{total} pages {"erased" if a.apply else "previewed"} -> {a.outdir}')
 
 

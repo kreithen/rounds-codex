@@ -181,6 +181,7 @@ def main():
     a = ap.parse_args()
     G = json.load(open(os.path.join(SITE, 'content', 'galleries.json')))['galleries']
     ok = bad = 0
+    manifest = []
     for gid in ('pad', 'dvt'):
         gal = G[gid]
         gd = os.path.join(a.outdir, gid)
@@ -216,8 +217,10 @@ def main():
                 for cx0, cy0, cx1, cy1 in boxes:
                     d[cy0:cy1 + 1, cx0:cx1 + 1] = 0
                 assert not (d > 0).any(), f'{gid}-{n:02d} changed pixels outside its box'
-                save_like(Image.fromarray(out.round().astype(np.uint8)), I,
-                          os.path.join(gd, os.path.basename(p)))
+                dstp = os.path.join(gd, os.path.basename(p))
+                save_like(Image.fromarray(out.round().astype(np.uint8)), I, dstp)
+                manifest.append(dict(gid=gid, n=n, status='ok', dst=dstp,
+                                     boxes=[dict(x0=c[0], y0=c[1], x1=c[2], y1=c[3]) for c in boxes]))
             else:
                 V = I.convert('RGB')
                 for cb in boxes:
@@ -227,6 +230,8 @@ def main():
                 C.resize((C.width * 3, C.height * 3), Image.LANCZOS)\
                  .save(os.path.join(gd, f'preview-{n:02d}.png'))
             ok += 1
+    if a.apply:
+        json.dump(manifest, open(os.path.join(a.outdir, 'applied.json'), 'w'), indent=1)
     print(f'\n{ok} pages {"erased" if a.apply else "previewed"}, {bad} failed -> {a.outdir}')
     return 1 if bad else 0
 
