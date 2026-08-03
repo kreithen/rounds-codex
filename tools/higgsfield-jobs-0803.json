@@ -6,18 +6,69 @@
  "resolution": "2k",
  "credits": 16,
  "jobs": {
-  "s2ck-0033": {"job": "cb80e198-3fab-4bcf-b865-5852e3e99850", "aspect": "1:1", "title": "Acute ischemic stroke (normal early CT)"},
-  "s2ck-0077": {"job": "030c9254-b0e9-4c7f-977f-00831e9a0454", "aspect": "1:1", "title": "Acute aortic dissection"},
-  "s2ck-0088": {"job": "ca1ab347-2e47-45e7-8e52-4f989ff1f972", "aspect": "1:1", "title": "Obstructing ureteral stone with infection"},
-  "s2ck-0093": {"job": "212a2ee0-be0b-4544-8180-6d4adf9854fb", "aspect": "1:1", "title": "Placenta previa"},
-  "s2ck-0135": {"job": "6a2bfa60-f6cc-41eb-9e3c-575e8f3b3d20", "aspect": "2:3", "title": "Boerhaave syndrome (esophageal perforation)"},
-  "s2ck-0245": {"job": "5adff4c4-ddcf-4a94-8980-a45a32ecfff8", "aspect": "4:3", "title": "Lichen sclerosus"},
-  "s3-0123": {"job": "c3957f0d-eb8d-41a1-9143-841a7b80b355", "aspect": "1:1", "title": "Subarachnoid hemorrhage"},
-  "s3-0411": {"job": "c538560a-f141-41df-a4b3-065984fafb8c", "aspect": "1:1", "title": "Cervical insufficiency (cerclage management)"}
+  "s2ck-0033": {
+   "job": "cb80e198-3fab-4bcf-b865-5852e3e99850",
+   "aspect": "1:1",
+   "title": "Acute ischemic stroke (normal early CT)",
+   "result": "completed"
+  },
+  "s2ck-0077": {
+   "job": "030c9254-b0e9-4c7f-977f-00831e9a0454",
+   "aspect": "1:1",
+   "title": "Acute aortic dissection",
+   "result": "completed"
+  },
+  "s2ck-0088": {
+   "job": "ca1ab347-2e47-45e7-8e52-4f989ff1f972",
+   "aspect": "1:1",
+   "title": "Obstructing ureteral stone with infection",
+   "result": "completed"
+  },
+  "s2ck-0093": {
+   "job": "212a2ee0-be0b-4544-8180-6d4adf9854fb",
+   "aspect": "1:1",
+   "title": "Placenta previa",
+   "result": "completed"
+  },
+  "s2ck-0135": {
+   "job": "6a2bfa60-f6cc-41eb-9e3c-575e8f3b3d20",
+   "aspect": "2:3",
+   "title": "Boerhaave syndrome (esophageal perforation)",
+   "result": "completed"
+  },
+  "s2ck-0245": {
+   "job": "5adff4c4-ddcf-4a94-8980-a45a32ecfff8",
+   "aspect": "4:3",
+   "title": "Lichen sclerosus",
+   "result": "nsfw - moderation refusal, no image, expect a refund"
+  },
+  "s3-0123": {
+   "job": "c3957f0d-eb8d-41a1-9143-841a7b80b355",
+   "aspect": "1:1",
+   "title": "Subarachnoid hemorrhage",
+   "result": "completed"
+  },
+  "s3-0411": {
+   "job": "c538560a-f141-41df-a4b3-065984fafb8c",
+   "aspect": "1:1",
+   "title": "Cervical insufficiency (cerclage management)",
+   "result": "completed"
+  }
  },
  "watch": {
   "s2ck-0245": "An anogenital clinical photograph is the likeliest moderation refusal in this batch. On the 2026-07-31 run 8 of 174 failed that way, each refund landing a second after its own spend. If this one has no URL, check transactions for a matching refund before concluding it merely rendered slowly.",
   "generate_image_batch": "The batch tool returned 'MCP tool call requires approval' twice with no prompt surfacing, while single generate_image calls went through. Fire these one at a time until that changes."
  },
- "next": "show_generation_by_ids on the eight job ids -> record each URL into tools/generated-image-urls.json -> physician review -> stage_by_cdn_name.py -> incorporate_images.py -> verify_usmle_illus.js -> deploy with the s2ck-0139 anchor fix (9269b8d)."
+ "next": "show_generation_by_ids on the eight job ids -> record each URL into tools/generated-image-urls.json -> physician review -> stage_by_cdn_name.py -> incorporate_images.py -> verify_usmle_illus.js -> deploy with the s2ck-0139 anchor fix (9269b8d).",
+ "refire": {
+  "_comment": "s3-0365 and s1-0247 re-fired with the strengthened prompts in refire-0803.json, because their labels sat on ultrasound speckle where erasing would invent tissue. 4 credits. Do NOT fire these prompts again without checking these job ids first.",
+  "s3-0365": {
+   "job": "0427de01-15ea-4a90-86a5-0ae7f278249d",
+   "aspect": "1:1"
+  },
+  "s1-0247": {
+   "job": "523ed7c7-8223-4f88-ad5b-382d5add4418",
+   "aspect": "1:1"
+  }
+ }
 }
