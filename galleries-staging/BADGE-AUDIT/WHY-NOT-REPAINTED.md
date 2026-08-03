@@ -160,3 +160,62 @@ refused outright as having no warm status ink — offers `10 CLINICAL` / `11 PEN
 line ("© 2026 Rounds Codex, Inc. • COPD • Page 1 of 10 • CLINICAL PENDING"). Grey is not warm, so
 it gets no box and cannot be picked. copd is one of the three galleries whose footer DOES hold
 still, so that one is handled by a measured box applied to all ten pages.
+
+---
+
+## Attempt 5 — reviewer-chosen boxes. This one works. 2026-08-02/03
+
+`scripts/badge_lines.py` enumerates every warm text line in the bottom 30% of a page, draws them
+numbered over a 2x crop with the cyan cell labels outlined, and stops. Ten agents read all 380
+pages of the 38 affected galleries and named which numbers are the false claim; the code then
+deletes exactly those boxes and asserts it changed nothing else.
+
+296 pages erased, 38 correctly had nothing to erase, 6 refused by the guard.
+
+**Three things the reviewers found that no detector would have.**
+
+* **asthma, cap and copd print the claim TWICE** — the second time in pale cyan at the end of the
+  bottom copyright line, `... Page 10 of 10 - CLINICAL PENDING`. It is the same ink as the rest
+  of the line, so no warm-ink pass can see it, and it had been sitting there through four
+  previous attempts. `scripts/badge_copyright_tail.py`.
+* **pad and dvt end their line with `Proof - Prepublication`**, and pad p6 carries a third copy
+  inside the artwork in red. The physician asked for all of it. `scripts/badge_proof_tail.py`.
+* **hyponatremia's claim was never detected at all.** Its pale mixed-case gold sat under the old
+  r>140 cut — and the old "no warm ink remains" check could not see it either, so the tool
+  reported success on pages it had not touched.
+
+**Four defects found by the independent before/after pass, all now fixed.** This is the part
+worth keeping: every one was invisible to the tool's own checks, which passed on all of them.
+
+1. *The fill on the copyright strip was a light-blue bar.* The panel colour was taken as the
+   median of the 60px left of the erased text — which there is "Page 1 of 10", not empty panel —
+   so it landed between the type and the background: RGB(9,52,73) against a true RGB(1,8,18), on
+   all ten asthma and all ten cap and copd pages. Taking the darkest half of that one window was
+   still not enough, because on some rows the window is more than half type. `row_bg()` now
+   offers both sides and each row takes the darker.
+2. *Box growth climbed into the cell label.* The growth added so meningitis p3 would not leave a
+   stray "C" was symmetric, and the cyan label sits directly above the value: cdiff 06 lost the
+   bottom two rows of "REVIEW", di 10 lost the label outright. Sideways growth is what that fix
+   needed; vertical is now capped at 2px.
+3. *A detached underline survived.* addisons stamps its status with a short amber rule two rows
+   under the text, so growth — which only follows ink that touches — left it on three pages and
+   removed it on the other seven, leaving an orange dash in an empty cell.
+4. *The damage check could not see two of the three passes.* It keyed off `badge_lines`' manifest
+   alone, so it masked the REVIEW cell, treated the copyright-strip edit as unexplained noise and
+   **reported cap and copd clean while their footers carried a visible bar**. Each pass now writes
+   its own manifest and the check reads all of them.
+
+**The pages are also re-encoded better than the first run.** Matching the source's quantization
+tables was worth little on its own; the loss was almost all CHROMA SUBSAMPLING. Writing 4:4:4
+while keeping each source's tables gains 3.2-3.8 dB and is *smaller* than raising quality to 95.
+Measured effect on the pages outside the edited cell: the longest contiguous run of changed
+pixels went from 972px to 34px worst-case, and from 71 pages to one.
+
+**A note on `.convert('RGB')`.** It returns a NEW Image with the JPEG quantization tables
+dropped, so passing the converted handle to the saver silently fell back to a fixed quality and
+re-quantized the whole page — the exact thing the saver exists to prevent. Keep the unconverted
+handle.
+
+**The tail passes are NOT idempotent.** dvt refuses a second run because its table asserts there
+is ink where the tail used to be; pad's automatic path does not, and re-running it over its own
+output ate "PAD Page N v6.0" as well. Run the chain from the deployed pages.
