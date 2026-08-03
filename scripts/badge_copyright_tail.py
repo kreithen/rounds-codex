@@ -31,7 +31,7 @@ import numpy as np
 from PIL import Image, ImageDraw
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from badge_lines import save_like
+from badge_lines import save_like, row_bg
 
 SITE = '/workspace/rounds-codex-app'
 # The copyright row, measured per gallery. Deliberately not searched for: the panel border a few
@@ -122,7 +122,7 @@ def main():
                 base = np.asarray(I.convert('RGB')).astype(float)
                 out = base.copy()
                 for y in range(by0, by1 + 1):
-                    out[y, bx0:bx1 + 1] = np.median(base[y, max(0, bx0 - 70):bx0 - 10, :], axis=0)
+                    out[y, bx0:bx1 + 1] = row_bg(base, y, max(0, bx0 - 70), bx0 - 10)
                 d = np.abs(out - base).max(axis=2)
                 d[by0:by1 + 1, bx0:bx1 + 1] = 0
                 assert not (d > 0).any(), f'{gid}-{im["n"]:02d} changed pixels outside its box'

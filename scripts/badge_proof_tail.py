@@ -41,7 +41,7 @@ import numpy as np
 from PIL import Image, ImageDraw
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from badge_lines import save_like
+from badge_lines import save_like, row_bg
 
 SITE = '/workspace/rounds-codex-app'
 PAD_TARGET = 88          # width of "Proof - Prepublication" in pad's type
@@ -211,8 +211,7 @@ def main():
                 out = base.copy()
                 for cx0, cy0, cx1, cy1 in boxes:
                     for y in range(cy0, cy1 + 1):
-                        out[y, cx0:cx1 + 1] = np.median(
-                            base[y, max(0, cx0 - 70):max(1, cx0 - 10), :], axis=0)
+                        out[y, cx0:cx1 + 1] = row_bg(base, y, max(0, cx0 - 70), max(1, cx0 - 10))
                 d = np.abs(out - base).max(axis=2)
                 for cx0, cy0, cx1, cy1 in boxes:
                     d[cy0:cy1 + 1, cx0:cx1 + 1] = 0

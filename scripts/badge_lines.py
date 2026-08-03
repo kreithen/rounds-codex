@@ -72,6 +72,21 @@ def save_like(img, src_im, dst):
     img.save(dst, 'JPEG', **kw)
 
 
+def row_bg(base, y, x_lo, x_hi):
+    """The panel colour on one row, taken from the darkest half of a sample window.
+
+    A plain median over the window is only right when the window is empty panel. On the bottom
+    copyright strip it is not -- the 60px left of the erased tail is "Page 1 of 10" -- so the
+    median landed between the type and the panel and painted a light blue highlighter bar across
+    the footer of all ten asthma pages. The panel is always the darkest thing on these pages, so
+    averaging the darker half of the window ignores whatever type is in it.
+    """
+    strip = base[y, x_lo:x_hi, :]
+    lum = strip.sum(axis=1)
+    keep = strip[lum <= np.median(lum)]
+    return (keep if len(keep) else strip).mean(axis=0)
+
+
 def warm(a):
     """Status ink: gold, amber, orange, red, and the PALE mixed-case gold that broke the last run.
 
@@ -278,6 +293,26 @@ def any_ink(a, x0, x1):
     return np.abs(a - bg).max(axis=2) > 30
 
 
+def pull_in_rule(mask, b, reach=7):
+    """Take a detached underline rule sitting just below the text into the box.
+
+    addisons stamps "CLINICAL PEERED" with a short amber rule under it, separated by a couple of
+    clear rows -- so grow_to_ink, which only follows ink that TOUCHES the box, left it behind on
+    three of ten pages and removed it on the other seven (where it happened to touch). One page
+    then reads as an orange dash floating in an empty REVIEW cell. Only ink that sits within the
+    box's own x-range counts, so this cannot reach sideways into a neighbouring cell.
+    """
+    h, w = mask.shape
+    for dy in range(1, reach + 1):
+        y = b['y1'] + dy
+        if y >= h:
+            break
+        row = mask[y, b['x0']:b['x1'] + 1]
+        if row.any():
+            b = dict(b, y1=y)
+    return b
+
+
 def grow_to_ink(mask, b, limit=16):
     """Extend a chosen box outward while ink is still touching its edge.
 
@@ -327,6 +362,7 @@ def erase_boxes(src, dst, boxes):
 
     grown_boxes, notes = [], []
     for b in boxes:
+        b = pull_in_rule(warm(a.astype(np.int16)), b)
         nb, grew, capped = grow_to_ink(any_ink(a, b['x0'], b['x1']), b)
         if capped:
             return False, f'box {b.get("i")} still finding ink after 16px of growth'
@@ -345,7 +381,7 @@ def erase_boxes(src, dst, boxes):
         if gr - gl < 8:
             return False, 'no clean gutter beside the box to sample the panel from'
         for y in range(y0, y1 + 1):
-            out[y, x0:x1 + 1] = np.median(a[y, gl:gr, :], axis=0)
+            out[y, x0:x1 + 1] = row_bg(a, y, gl, gr)
 
     diff = np.abs(out - a).max(axis=2)
     for b in boxes:
