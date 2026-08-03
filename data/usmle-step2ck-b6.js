@@ -354,7 +354,7 @@ const USMLE_STEP2CK_B6 = [
     discipline: "Pediatric Gastroenterology",
     topic: "Meckel diverticulum",
     difficulty: "moderate",
-    anchor: "image",
+    anchor: null,
     vignette: "A previously healthy 2-year-old boy passes a large volume of painless brick-red and maroon blood per rectum. He is mildly pale but hemodynamically stable after fluids, with a soft, nontender abdomen and no palpable mass. There is no diarrhea or fever.",
     lead: "Which of the following is the most appropriate next step in management?",
     options: [
