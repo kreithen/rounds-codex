@@ -96,6 +96,30 @@ def pad6_red_box(a):
     return (x0, y0, x1, y1), None
 
 
+def ring_bg(base, box, pad=6):
+    """One flat panel colour, from the darkest fifth of the rows just ABOVE and BELOW a box.
+
+    For pad p6's red disclaimer neither side window works: it is a 408px line sitting in the
+    middle of the artwork, and the space to its left is the pink artery illustration -- which is
+    what the first run sampled, filling the line with a light-pink block, RGB(212,155,180) on a
+    near-black panel. A line of type has its true background above and below it, not beside it.
+
+    Per COLUMN was the obvious next thing and it is also wrong: the gold sentence "Clinical
+    effect: ankle pressure may be falsely high / noncompressible." sits directly above, so every
+    column under a gold glyph got a gold background and the erase came out as vertical stripes.
+    The panel behind this line is uniform, so one colour from the darkest fifth of the ring is
+    both simpler and right.
+    """
+    x0, y0, x1, y1 = box
+    h = base.shape[0]
+    above = base[max(0, y0 - pad):max(1, y0 - 1), x0:x1 + 1, :].reshape(-1, 3)
+    below = base[min(h - 1, y1 + 2):min(h, y1 + pad + 1), x0:x1 + 1, :].reshape(-1, 3)
+    ring = np.concatenate([a for a in (above, below) if len(a)], axis=0)
+    lum = ring.sum(axis=1)
+    keep = ring[lum <= np.percentile(lum, 20)]
+    return (keep if len(keep) else ring).mean(axis=0)
+
+
 def ink_of(a):
     r, g, b = a[:, :, 0], a[:, :, 1], a[:, :, 2]
     return (b > 70) & (b > r + 12)
@@ -220,9 +244,18 @@ def main():
             if a.apply:
                 base = np.asarray(I.convert('RGB')).astype(float)
                 out = base.copy()
-                for cx0, cy0, cx1, cy1 in boxes:
+                for cb in boxes:
+                    cx0, cy0, cx1, cy1 = cb
+                    if cx1 - cx0 > 200:
+                        # a wide line in the artwork: its background is above and below it
+                        fill = ring_bg(base, cb)
+                        for y in range(cy0, cy1 + 1):
+                            out[y, cx0:cx1 + 1] = fill
+                        continue
                     for y in range(cy0, cy1 + 1):
-                        out[y, cx0:cx1 + 1] = row_bg(base, y, max(0, cx0 - 70), max(1, cx0 - 10))
+                        out[y, cx0:cx1 + 1] = row_bg(
+                            base, y, (max(0, cx0 - 70), max(1, cx0 - 10)),
+                            (cx1 + 8, min(base.shape[1], cx1 + 78)))
                 d = np.abs(out - base).max(axis=2)
                 for cx0, cy0, cx1, cy1 in boxes:
                     d[cy0:cy1 + 1, cx0:cx1 + 1] = 0

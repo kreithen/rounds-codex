@@ -121,9 +121,11 @@ def main():
             I = Image.open(p)            # unconverted, so save_like keeps its qtables
             if a.apply:
                 base = np.asarray(I.convert('RGB')).astype(float)
+                w0 = base.shape[1]
                 out = base.copy()
                 for y in range(by0, by1 + 1):
-                    out[y, bx0:bx1 + 1] = row_bg(base, y, max(0, bx0 - 70), bx0 - 10)
+                    out[y, bx0:bx1 + 1] = row_bg(
+                        base, y, (max(0, bx0 - 70), max(1, bx0 - 10)), (bx1 + 8, min(w0, bx1 + 78)))
                 d = np.abs(out - base).max(axis=2)
                 d[by0:by1 + 1, bx0:bx1 + 1] = 0
                 assert not (d > 0).any(), f'{gid}-{im["n"]:02d} changed pixels outside its box'

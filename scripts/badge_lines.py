@@ -391,13 +391,12 @@ def erase_boxes(src, dst, boxes):
         x0, y0, x1, y1 = b['x0'] - pad, b['y0'] - pad, b['x1'] + pad, b['y1'] + pad
         x0, y0 = max(0, x0), max(0, y0)
         x1, y1 = min(w - 1, x1), min(h - 1, y1)
-        gl, gr = max(0, x0 - 45), max(1, x0 - 6)
-        if gr - gl < 8:
-            gl, gr = min(w - 1, x1 + 6), min(w, x1 + 45)
-        if gr - gl < 8:
+        left = (max(0, x0 - 45), max(1, x0 - 6))
+        right = (min(w - 1, x1 + 6), min(w, x1 + 45))
+        if left[1] - left[0] < 8 and right[1] - right[0] < 8:
             return False, 'no clean gutter beside the box to sample the panel from'
         for y in range(y0, y1 + 1):
-            out[y, x0:x1 + 1] = row_bg(a, y, gl, gr)
+            out[y, x0:x1 + 1] = row_bg(a, y, left, right)
 
     diff = np.abs(out - a).max(axis=2)
     for b in boxes:
