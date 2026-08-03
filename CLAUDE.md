@@ -306,6 +306,31 @@ no backend. This file is context for future sessions — read it before starting
 - **Illustrations**: `RC_ILLUS[id]` registry, merged across `illus-p*.js` (later wins). `<img>`
   → "IMAGE" badge, `<svg>` → "SCHEMATIC". 231 items illustrated. `illus-real.js` loads last so
   approved real images override schematics.
+- **189 of the 231 now use real generated images, live as v54 (2026-08-03).** `usmle/img/<id>.jpg`,
+  24 MB, longest side 1024 (the module never displays one wider than 700 CSS px). Pipeline:
+  `tools/prepare-usmle-images.command` (shrinks on the physician's Mac — the masters are ~6 MB
+  each and the CDN is unreachable from a container) → `tools/stage_by_cdn_name.py` →
+  `tools/incorporate_images.py` → `scripts/verify_usmle_illus.js`. **Not in `sw.js` `CORE`** on
+  purpose: network-first with opportunistic caching, so 24 MB is not precached on install.
+  - **A bulk gallery download is named after the GENERATION, not the question**
+    (`hf_20260729_190645_....png`). `generated-image-urls.json` maps id → URL and the URL basename
+    is that stem, so the mapping is exact — `stage_by_cdn_name.py` does it. Never infer it.
+  - **Do not pair a leftover file with an unclaimed id because both are unaccounted for.** That
+    exact case arose: one spare file, one id with no image, and they were unrelated (a histology
+    photomicrograph vs. `s2ck-0162`'s AP pelvis radiograph). The tool refuses and says so.
+  - **The delivery contained 8 earlier takes of re-fired prompts.** Those stems are in
+    `superseded-image-urls.json`; using one silently restores the version review rejected.
+  - **`--verbatim-max-kb` exists because "already a JPEG" is not "already optimized"** — three
+    delivered files were 500 kB at 1024 px.
+  - **Generated images arrive with defects that no structural check can catch.** Three had the
+    diagnosis printed on them (`s3-0365` "WILMS TUMOR", `s1-0030` "bite cells/blister cells",
+    `s1-0247` "ECTOPIC GS") — a label naming the finding makes the item free. Five were rendered
+    as a photo of a framed radiograph on a wall (`s1-0206`, `s1-0236`, `s2ck-0086`, `s2ck-0101`,
+    and `s2ck-0144` as a curled ECG strip on a desk). Three disagreed with their own prompt on
+    plane or panel count (`s1-0206` coronal not axial; `s3-0025` and `s3-0137` four panels instead
+    of two views). **Read a contact sheet against each item's `modality` string** — a per-question
+    label like `LA/RA/RV/LV` or "WITHOUT/WITH COMPRESSION" is orientation and fine; a label naming
+    the answer is not.
 
 ## Build pipelines
 - **Galleries from loose images** (`scripts/add_gallery.js` + `scripts/gen_thumbs.py`): when a
