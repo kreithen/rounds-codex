@@ -430,8 +430,21 @@ def erase_boxes(src, dst, boxes):
         grown_boxes.append(nb)
     boxes = grown_boxes
 
+    lbl = cyan(a.astype(np.int16))
     for b in boxes:
-        x0, y0, x1, y1 = b['x0'] - pad, b['y0'] - pad, b['x1'] + pad, b['y1'] + pad
+        # The TOP pad is adaptive. A flat 3px is what still ate the cyan cell label on the three
+        # pages where the label sits tightest above the value -- hepatitis 10, di 10 and
+        # hyponatremia 05 -- even after vertical GROWTH was capped, because the padding is
+        # applied after growth and nothing stopped it. Rows above the box that carry label ink
+        # are off limits; the claim's own cyan (meningitis p3's gradient C) is inside the box,
+        # not above it, so this cannot clip the thing being erased.
+        top = pad
+        for dy in range(1, pad + 1):
+            yy = b['y0'] - dy
+            if yy >= 0 and lbl[yy, b['x0']:b['x1'] + 1].any():
+                top = dy - 1
+                break
+        x0, y0, x1, y1 = b['x0'] - pad, b['y0'] - top, b['x1'] + pad, b['y1'] + pad
         x0, y0 = max(0, x0), max(0, y0)
         x1, y1 = min(w - 1, x1), min(h - 1, y1)
         left = (max(0, x0 - 45), max(1, x0 - 6))
