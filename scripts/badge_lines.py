@@ -297,16 +297,21 @@ def any_ink(a, x0, x1):
     set in a gradient that starts CYAN and ends gold, so its leading C is not warm ink at all;
     the warm mask broke the component there and erasing the box as picked left a lone C sitting
     under the REVIEW label. Distance-from-background sees the whole word regardless of hue.
+
+    The background is taken from whichever side is emptier, per row, for the same reason the
+    fill is: a single window that happens to contain the neighbouring cell's value gives a
+    background far too bright, every panel pixel then reads as ink, and the box grows until it
+    hits the 16px cap and the page is refused. That is what took meningitis 06, tia 05 and
+    bph 08 -- three pages whose claim was found and boxed correctly.
     """
     h, w, _ = a.shape
-    gl, gr = max(0, x0 - 55), max(1, x0 - 8)
-    if gr - gl < 8:
-        gl, gr = min(w - 1, x1 + 8), min(w, x1 + 55)
-    bg = np.median(a[:, gl:gr, :], axis=1)[:, None, :]
+    left = (max(0, x0 - 55), max(1, x0 - 8))
+    right = (min(w - 1, x1 + 8), min(w, x1 + 55))
+    bg = np.stack([row_bg(a, y, left, right) for y in range(h)])[:, None, :]
     return np.abs(a - bg).max(axis=2) > 30
 
 
-def pull_in_rule(mask, b, reach=7):
+def pull_in_rule(mask, b, reach=4):
     """Take a detached underline rule sitting just below the text into the box.
 
     addisons stamps "CLINICAL PEERED" with a short amber rule under it, separated by a couple of
@@ -314,16 +319,51 @@ def pull_in_rule(mask, b, reach=7):
     three of ten pages and removed it on the other seven (where it happened to touch). One page
     then reads as an orange dash floating in an empty REVIEW cell. Only ink that sits within the
     box's own x-range counts, so this cannot reach sideways into a neighbouring cell.
+
+    A RULE, and nothing else. The first version took any ink it found below the box, which on a
+    two-line claim is the second line: box "Clinical" swallowed "Pending" underneath it, growth
+    then found ink on every edge of the enlarged box, ran to the 16px cap and REFUSED the page.
+    meningitis 06, tia 04, tia 05 and bph 08 were all lost that way, having been boxed correctly.
+    So the group below must be thin -- a rule is one to three rows, a line of type is a dozen.
     """
     h, w = mask.shape
-    for dy in range(1, reach + 1):
-        y = b['y1'] + dy
-        if y >= h:
-            break
-        row = mask[y, b['x0']:b['x1'] + 1]
-        if row.any():
-            b = dict(b, y1=y)
-    return b
+    y = b['y1'] + 1
+    while y < h and not mask[y, b['x0']:b['x1'] + 1].any():
+        if y - b['y1'] > reach:
+            return b
+        y += 1
+    if y >= h:
+        return b
+    top = y
+    while y < h and mask[y, b['x0']:b['x1'] + 1].any():
+        y += 1
+    if y - top > 3:
+        return b                      # a line of type, not a rule -- leave it alone
+    # A stamp's underline is as wide as the word. The PANEL BORDER is also a thin rule two rows
+    # below the last line of the claim, and taking it meant growth then chased it sideways to
+    # the 16px cap: that is what refused tia 04, whose box is "Pending" with the rounded panel
+    # edge just under it. So the group must stop where the box stops.
+    edge = 8
+    if mask[top:y, max(0, b['x0'] - edge):b['x0']].any() or \
+       mask[top:y, b['x1'] + 1:b['x1'] + 1 + edge].any():
+        return b
+    # And it sits CLOSE. addisons' rule is 4px under its text; anything further down belongs to
+    # the panel, not the stamp -- on tia 04 a group 8px below "Pending" was taken and growth
+    # then chased it to the cap. `reach` is the whole tolerance and it is deliberately small.
+    return dict(b, y1=y - 1)
+
+
+def confined(mask, y, x0, x1, edge=8):
+    """Does row `y` carry ink that belongs to this box, and stops where the box stops?
+
+    A glyph's antialiased top or bottom row is confined to the word. The panel's rounded border
+    is not -- it runs the width of the cell. Without this test the box under "Pending" on tia 04
+    stepped down onto that border and then followed it sideways to the growth cap, refusing a
+    page that had been boxed correctly.
+    """
+    if not mask[y, x0:x1 + 1].any():
+        return False
+    return not (mask[y, max(0, x0 - edge):x0].any() or mask[y, x1 + 1:x1 + 1 + edge].any())
 
 
 def grow_to_ink(mask, b, limit=16, vlimit=2):
@@ -346,11 +386,14 @@ def grow_to_ink(mask, b, limit=16, vlimit=2):
             x0 -= 1; moved = True
         if x1 < w - 1 and mask[y0:y1 + 1, x1 + 1].any():
             x1 += 1; moved = True
+        # vgrown counts BOTH directions. Counting only the upward step left downward growth
+        # unbounded, and on tia 04 the box under "Pending" walked down to the panel's rounded
+        # border and then followed it sideways to the cap.
         if vgrown < vlimit:
-            if y0 > 0 and mask[y0 - 1, x0:x1 + 1].any():
+            if y0 > 0 and confined(mask, y0 - 1, x0, x1):
                 y0 -= 1; moved = True; vgrown += 1
-            if y1 < h - 1 and mask[y1 + 1, x0:x1 + 1].any():
-                y1 += 1; moved = True
+            if y1 < h - 1 and confined(mask, y1 + 1, x0, x1):
+                y1 += 1; moved = True; vgrown += 1
         if not moved:
             break
         grown += 1
