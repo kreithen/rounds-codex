@@ -1,0 +1,12 @@
+{
+ "s3-0365": {
+  "aspect": "1:1",
+  "title": "Wilms tumor",
+  "prompt": "A completely UNANNOTATED raw diagnostic image, exactly as it appears on the scanner before any reporting or teaching markup. There are no words, letters, numerals, arrows, callouts, captions, legends, calipers or measurement overlays anywhere in the frame. Nothing in the picture names or points at the finding. Photorealistic pediatric ABDOMINAL (renal) ULTRASOUND image in diagnostic grayscale, sector field with realistic fine speckle texture and DICOM-like appearance. Depict a wilms tumor: a LARGE, WELL-CIRCUMSCRIBED, predominantly SOLID heterogeneous MASS arising from and EXPANDING the KIDNEY, with a thin rim/claw of preserved echogenic RENAL PARENCHYMA stretched around one margin confirming an intrarenal origin. The mass distorts the renal contour and displaces the collecting system; the remaining normal kidney, liver, and diaphragm are correctly rendered for context. Realistic ultrasound gain gradient and sector edges. Absolutely no burned-in text of any kind: no diagnosis label, no anatomical label, no abbreviation, no scanner banner, no watermark. The frame contains only the image."
+ },
+ "s1-0247": {
+  "aspect": "1:1",
+  "title": "Ectopic (tubal) pregnancy",
+  "prompt": "A completely UNANNOTATED raw diagnostic image, exactly as it appears on the scanner before any reporting or teaching markup. There are no words, letters, numerals, arrows, callouts, captions, legends, calipers or measurement overlays anywhere in the frame. Nothing in the picture names or points at the finding. Photorealistic TRANSVAGINAL PELVIC ULTRASOUND image, grayscale sector field with realistic fine speckle texture, correct endocavitary probe geometry and depth gradient. Depict a right tubal ectopic pregnancy: an EMPTY UTERINE CAVITY with a thin echogenic endometrial stripe and NO intrauterine gestational sac, and separately, in the RIGHT ADNEXA lateral to the uterus, a COMPLEX ADNEXAL MASS containing a rounded extrauterine GESTATIONAL SAC (a small anechoic sac with an echogenic tubal-ring wall, possibly a yolk sac) distinct from the ovary. A small amount of anechoic free fluid may sit in the cul-de-sac. Realistic ultrasound gain gradient and sector edges. Absolutely no burned-in text of any kind: no diagnosis label, no anatomical label, no abbreviation, no scanner banner, no watermark. The frame contains only the image."
+ }
+}
