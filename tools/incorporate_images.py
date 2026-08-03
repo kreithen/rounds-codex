@@ -47,6 +47,10 @@ def main():
     ap.add_argument("--include-ecg", action="store_true")
     ap.add_argument("--max-width", type=int, default=1024)
     ap.add_argument("--quality", type=int, default=85)
+    ap.add_argument("--verbatim-max-kb", type=int, default=300,
+                    help="a JPEG already within --max-width is copied byte for byte, but only "
+                         "if it is also under this size; 'already optimized' has to mean "
+                         "optimized, not merely JPEG")
     a = ap.parse_args()
 
     from PIL import Image  # Pillow
@@ -82,9 +86,9 @@ def main():
         with Image.open(src) as probe:
             w, h = probe.size
             fmt = probe.format
-        if fmt == "JPEG" and w <= a.max_width:
-            # Already the right shape. Re-encoding would be a second generation of loss on a
-            # file that has been reviewed, for no gain.
+        if fmt == "JPEG" and w <= a.max_width and os.path.getsize(src) <= a.verbatim_max_kb * 1024:
+            # Already the right shape and size. Re-encoding would be a second generation of loss
+            # on a file that has been reviewed, for no gain.
             shutil.copyfile(src, dst); copied += 1
         else:
             im = Image.open(src).convert("RGB")

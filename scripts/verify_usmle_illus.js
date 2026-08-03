@@ -1,10 +1,17 @@
 // Headless verification of the USMLE real-image wiring.
+//
+//   node scripts/verify_usmle_illus.js <port> [expected-count|path/to/_wired.json]
+//
 // Serves the test tree with the Netlify simulator, then proves three separate things:
-//   1. illus-real.js loads and registers 190 <img> entries in RC_ILLUS
-//   2. every one of those 190 src paths actually resolves over HTTP with real bytes
+//   1. illus-real.js loads and registers the expected number of <img> entries in RC_ILLUS
+//   2. every one of those src paths actually resolves over HTTP with real bytes
 //   3. the ENGINE renders one as a figure badged IMAGE (not SCHEMATIC), decoded, at the
 //      dimensions the width/height attributes claim
 // (3) is the one that catches a wiring that looks right and renders wrong.
+//
+// The expected count comes from the _wired.json that incorporate_images.py writes, so a
+// partial set is checked against what was actually built rather than against a number edited
+// into this file by hand - which is how a stale expectation ends up passing a wrong build.
 // playwright-core is not a dependency of this repo; it gets installed into whatever scratch
 // folder a session is using. RC_PW overrides, otherwise try the usual places.
 function loadPW() {
@@ -19,6 +26,14 @@ const { chromium } = loadPW();
 
 const PORT = process.argv[2] || '8931';
 const BASE = `http://127.0.0.1:${PORT}`;
+
+// Second arg is either a plain count or a _wired.json to read it out of.
+const EXPECT = (() => {
+  const a = process.argv[3];
+  if (!a) return null;
+  if (/^\d+$/.test(a)) return +a;
+  return require('fs').readFileSync && JSON.parse(require('fs').readFileSync(a, 'utf8')).count;
+})();
 
 (async () => {
   const browser = await chromium.launch({
@@ -48,7 +63,7 @@ const BASE = `http://127.0.0.1:${PORT}`;
   console.log(`RC_ILLUS: ${reg.total} entries, ${reg.imgs} are <img>`);
   console.log('sample   :', reg.sample);
 
-  // ---- 2. do all 190 paths resolve? ----
+  // ---- 2. do all the paths resolve? ----
   const net = await page.evaluate(async (srcs) => {
     const bad = [];
     let bytes = 0;
@@ -95,7 +110,8 @@ const BASE = `http://127.0.0.1:${PORT}`;
 
   // ---- verdict ----
   const problems = [];
-  if (reg.imgs !== 190) problems.push(`expected 190 <img> entries, got ${reg.imgs}`);
+  if (EXPECT == null) console.log('(no expected count given - not asserting the total)');
+  else if (reg.imgs !== EXPECT) problems.push(`expected ${EXPECT} <img> entries, got ${reg.imgs}`);
   if (net.bad.length) problems.push(`${net.bad.length} image paths do not resolve`);
   if (!found) problems.push('engine never rendered an <img> figure');
   else {
@@ -112,7 +128,7 @@ const BASE = `http://127.0.0.1:${PORT}`;
 
   console.log('\npage errors:', errors.length, ' failed requests:', realFails.length);
   if (problems.length) { console.log('\nFAIL'); problems.forEach(p => console.log('  -', p)); }
-  else console.log('\nPASS - 190 wired, all paths resolve, engine renders an IMAGE-badged figure at the declared size');
+  else console.log(`\nPASS - ${reg.imgs} wired, all paths resolve, engine renders an \`IMAGE\`-badged figure at the declared size`);
 
   await browser.close();
   process.exit(problems.length ? 1 : 0);
