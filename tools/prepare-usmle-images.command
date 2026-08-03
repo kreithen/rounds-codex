@@ -73,7 +73,11 @@ mkdir -p img
 n=0
 while read -r id; do
   [ -n "$id" ] || continue
+  # Reset first: without this a missing file would silently reuse the previous id's path and
+  # convert the same master twice under two different question ids.
+  src=""
   for e in png PNG jpg jpeg webp; do [ -f "$id.$e" ] && { src="$id.$e"; break; }; done
+  [ -n "$src" ] || { echo "  no source file for $id"; exit 1; }
   # -Z caps the LONGER side, so a portrait image is not stretched and a landscape one is not
   # cropped. Both orientations are in this set (87 square, 54 landscape, 49 portrait).
   sips -Z "$LONGEST_SIDE" \
@@ -133,17 +137,24 @@ for z in usmle-img-part*.zip; do echo "  $z  $(du -h "$z" | cut -f1)"; done
 } > review.html
 echo "  review.html written"
 
-cat <<NOTE
+# Quoted heredoc: the text below contains backticks, and an unquoted one runs them as commands.
+cat <<'NOTE'
 
 === done ===
 
-Open review.html first - that is the whole set on one page.
+Everything below was written INTO the folder you pointed this at.
 
-Then either:
-  (a) send the usmle-img-part*.zip files to the session, and it will commit, deploy and verify; or
-  (b) upload them yourself: on GitHub go INTO the usmle/ folder, choose Add file > Upload files,
-      and drag the `img` folder from upload-1. Commit. Repeat with upload-2's `img`.
-      Drag the folder named `img` itself, not upload-1 - the folder name becomes the path.
+NEXT, IN ORDER:
+
+  1. Open review.html - the whole set on one page, each image labelled with its question id.
+     Note any that are wrong or misleading. Anything not approved keeps its schematic.
+
+  2. Send the usmle-img-part*.zip files to the session. It will commit them, regenerate
+     illus-real.js, deploy and verify.
+
+  Doing step 2 yourself instead: on GitHub go INTO the usmle/ folder, Add file > Upload files,
+  and drag the folder named "img" out of upload-1 - the folder's own name becomes the path, so
+  dragging "upload-1" would create usmle/upload-1/img. Commit, then repeat with upload-2's "img".
 
 Nothing is live until the images are in the app repo AND illus-real.js is regenerated. Until
 then every question keeps the schematic it has now, so a partial upload cannot break anything.
