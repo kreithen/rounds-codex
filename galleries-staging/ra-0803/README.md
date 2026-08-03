@@ -1,37 +1,43 @@
-# Rheumatoid Arthritis gallery - INCOMPLETE, do not build yet
+# Rheumatoid Arthritis gallery - COMPLETE, built 2026-08-03
 
-Received 2026-08-03: **5 of 10 pages**. Every header reads `IMAGE n OF 10`, so pages
-**6, 7, 8, 9 and 10** are outstanding.
+All ten pages received (5 + 5) and built as `ra` ("Rheumatoid Arthritis", MSK & Rheum, ICD-10
+M06.9). Verified headless: 83 galleries / 830 images, 10 thumbnails, all decoded, viewer opens
+the full 1024x1536, findable by search, reachable from the condition page, zero page errors and
+zero failed requests.
 
-Condition id **`ra`** ("Rheumatoid Arthritis", MSK & Rheum) already exists and has no gallery;
-the header's "MSK & RHEUM" and ICD-10 **M06.9** (rheumatoid arthritis, unspecified) agree.
+## Page order - BOTH batches shuffled
 
-## Page order - shuffled again
+| batch | upload | page | title |
+|---|---|---|---|
+| 1 | #4 | 1 | Overview: Introduction |
+| 1 | #5 | 2 | Anatomy: The Normal Joint |
+| 1 | #2 | 3 | Pathophysiology: Immune-Mediated Joint Destruction |
+| 1 | #1 | 4 | Clinical Presentation |
+| 1 | #3 | 5 | Physical Examination |
+| 2 | #1 | 6 | Diagnostic Imaging & Laboratory Evaluation |
+| 2 | #3 | 7 | Gross Pathology, Histopathology & Pathophysiology |
+| 2 | #2 | 8 | Histopathology & Cellular Pathophysiology |
+| 2 | #5 | 9 | Treatment & Management Overview |
+| 2 | #4 | 10 | Clinical Pearl & Key Takeaways |
 
-| upload | real page | title |
-|---|---|---|
-| #4 | **1** | Overview: Introduction |
-| #5 | **2** | Anatomy: The Normal Joint |
-| #2 | **3** | Pathophysiology: Immune-Mediated Joint Destruction |
-| #1 | **4** | Clinical Presentation |
-| #3 | **5** | Physical Examination |
+## Defects, reported to production
 
-## Defects
+1. **The dot row is a cumulative progress bar across all ten pages** - one dot filled on page 1,
+   ten by page 10, never a single marker at the current page. The worst example received.
+2. **The dot count varies 8-10** within the batch.
+3. **Two pages exported at 1023x1537** and were resampled.
 
-1. **The dot row is a full cumulative PROGRESS BAR on every page.** Page 1 fills one dot, page 2
-   fills two, page 3 three, page 4 four, page 5 five. This is Defect 2 in its original form,
-   fully regressed - the last three galleries had it on page 2 only.
-2. **The dot count also varies within the batch: 9, 9, 9, 8, 10.** Never the correct 10 except
-   by accident on page 5.
-3. **Two pages exported at 1023x1537** (pages 2 and 4 as delivered). The other three are
-   1024x1536. This is the 1023x1537 variant last seen on the 2026-08-02 batch, not the
-   1024x1535 one seen on Osteoporosis.
+Fractures and Osteoporosis, delivered hours earlier the same day, had ten dots on every page and
+cumulative fill on page 2 only - so an older template version is still in use alongside a better
+one.
 
-Taken together this looks like an OLDER template version than the one that produced Fractures
-and Osteoporosis earlier the same day, both of which had ten dots on every page.
+## Worth the physician's eye
+
+Pages 7 and 8 overlap in subject: "Gross Pathology, Histopathology & Pathophysiology" and
+"Histopathology & Cellular Pathophysiology". Both are built as delivered; whether that is
+intended duplication is a content call, not a build one.
 
 ## What is right
 
-**No REVIEW cell in any footer** - confirmed both by the new automated footer-claim check in
-`triage_incoming_gallery.py` (its first real batch, all five clean) and by eye on the footer
-crops. Canonical logo lockup on all five. Shield is the RC-over-pulse mark.
+No REVIEW cell in any footer, confirmed by the automated footer-claim check and by eye on all
+ten. Canonical logo lockup throughout.

@@ -377,7 +377,7 @@ build, which costs a little sharpness. Same rounding artefact reported for the l
 
 ---
 
-## UPDATE 2026-08-03 — Rheumatoid Arthritis (5 pages): FULL REGRESSION on the dot row
+## UPDATE 2026-08-03 — Rheumatoid Arthritis (all 10): FULL REGRESSION on the dot row
 
 Evidence: `DOTS-evidence/ra-dots-1-5.png`, read at 4x.
 
@@ -415,3 +415,16 @@ export is softer than one exported right.
 
 No REVIEW cell on any of the five — confirmed by the new automated footer-claim check and by eye.
 Whatever else this template version gets wrong, it does not assert a pending review.
+
+### RA pages 6-10 confirm it: the progress bar runs the whole way
+
+Pages 6 to 10 continue filling cumulatively - six dots on page 6, seven on page 7, eight on
+page 8, and so on to the end. So across the full gallery the row is a progress bar from page 1
+to page 10 with no exception, which is the cleanest example of Defect 2 anyone has sent.
+
+If it helps to localise: this behaviour is what you would get if the marker index were driven by
+an accumulator that is never reset between pages, rather than by the current page number. The
+`IMAGE n OF 10` text on the same pages is correct throughout, so the right number is available
+in the template - it just is not the one the dot row uses.
+
+Footer on pages 6-10 is clean as well: no REVIEW cell, verified by the automated check and by eye.
