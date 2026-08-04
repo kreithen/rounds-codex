@@ -172,6 +172,8 @@ export default function Inbox({ session }) {
           <div className="ibx-empty">
             <p className="muted">Select a conversation on the left.</p>
             <button className="btn sm" onClick={syncNow} disabled={!!busy}>{busy === "sync" ? "Syncing…" : "Sync now"}</button>
+            {msg && <p className="note-ok" style={{ marginTop: ".75rem" }}>{msg}</p>}
+            {err && <p className="err" style={{ marginTop: ".75rem" }}>{err}</p>}
           </div>
         ) : (
           <>

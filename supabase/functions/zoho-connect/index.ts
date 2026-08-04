@@ -1,13 +1,16 @@
 // Rounds Codex — "zoho-connect" edge function (Supabase, Deno).
 // One-time setup helper: a small web form that exchanges a Zoho Self Client
-// grant code for a long-lived refresh token, and hands back a ready-to-paste
-// ZOHO_MAILBOXES entry. Runs on Supabase (can reach accounts.zoho.com), so no
-// Terminal needed. Delete/ignore after setup.
+// grant code for a long-lived refresh token AND stores it directly in the
+// public.zoho_accounts table (service_role, server-side). Nothing to copy,
+// no secret to paste — the support inbox starts pulling this mailbox on the
+// next 2-minute cron tick. Runs on Supabase (can reach accounts.zoho.com), so
+// no Terminal needed. Delete/ignore after setup.
 //
 // Open it in a browser:  https://<project>.functions.supabase.co/zoho-connect
-//   (or the /functions/v1/zoho-connect URL). Fill the form, submit, copy the JSON.
+//   (or the /functions/v1/zoho-connect URL). Fill the form, submit — done.
 //
-// The secret you type is used only to call Zoho and is never stored or logged.
+// The secret you type is used to call Zoho and is stored (with the refresh
+// token) only in zoho_accounts, readable solely by the service role.
 // Deploy:  supabase functions deploy zoho-connect --no-verify-jwt
 
 function esc(s: string) {
@@ -41,7 +44,8 @@ function form(note = "") {
 <h1>Connect a Zoho mailbox</h1>
 <p class="sub">Paste your Self Client's <b>Client ID</b> + <b>Secret</b> and a <b>fresh grant code</b>
 (Generate Code → scope <code>ZohoMail.messages.READ,ZohoMail.accounts.READ</code> → 10&nbsp;min).
-This swaps the code for a long-lived refresh token. Your secret is used once and never stored.</p>
+This swaps the code for a long-lived refresh token and stores it securely so the inbox can
+read this mailbox. Do this once per mailbox.</p>
 ${note}
 <form method="POST">
 <label>Mailbox address</label>
@@ -54,7 +58,7 @@ ${note}
 <input name="code" placeholder="1000.xxxx.yyyy" required autocomplete="off">
 <label>Data center</label>
 <select name="dc"><option value="com">com (US)</option><option value="eu">eu</option><option value="in">in</option><option value="com.au">com.au</option><option value="jp">jp</option></select>
-<button type="submit">Get refresh token →</button>
+<button type="submit">Connect this mailbox →</button>
 </form>`);
 }
 
@@ -96,14 +100,41 @@ Deno.serve(async (req) => {
     return new Response(form(`<p class="err">No refresh token. ${reason}</p>`), { headers: { "Content-Type": "text/html; charset=utf-8" } });
   }
 
-  const entry = JSON.stringify({ mailbox, client_id, client_secret, refresh_token: j.refresh_token, dc });
+  // Store it server-side in zoho_accounts (service role). Upsert on mailbox so
+  // re-running with a fresh code just replaces the token for that mailbox.
+  const SUPABASE_URL = (Deno.env.get("SUPABASE_URL") ?? "").replace(/\/$/, "");
+  const SERVICE_ROLE = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
+  const up = await fetch(`${SUPABASE_URL}/rest/v1/zoho_accounts`, {
+    method: "POST",
+    headers: {
+      apikey: SERVICE_ROLE,
+      Authorization: `Bearer ${SERVICE_ROLE}`,
+      "Content-Type": "application/json",
+      Prefer: "resolution=merge-duplicates,return=minimal",
+    },
+    body: JSON.stringify({
+      mailbox,
+      client_id,
+      client_secret,
+      refresh_token: j.refresh_token,
+      dc,
+      active: true,
+      updated_at: new Date().toISOString(),
+    }),
+  });
+  if (!up.ok) {
+    const detail = esc((await up.text()).slice(0, 300));
+    return new Response(form(`<p class="err">Got the token, but saving it failed (${up.status}): <code>${detail}</code></p>`),
+      { headers: { "Content-Type": "text/html; charset=utf-8" } });
+  }
+
   return new Response(page(`
 <h1 class="ok">✓ Connected ${esc(mailbox)}</h1>
-<p class="sub">Copy this entry. When you have <b>both</b> mailboxes, put them in one array as the
-<code>ZOHO_MAILBOXES</code> secret (Supabase → Project Settings → Edge Functions → Secrets):</p>
-<div class="box">${esc(entry)}</div>
-<p class="sub" style="margin-top:18px">Final secret shape with both mailboxes:</p>
-<div class="box">[ ${esc(entry)},\n  { …teacher@ entry… } ]</div>
-<p class="step" style="margin-top:20px"><a href="">← Connect the other mailbox</a></p>`),
+<p class="sub">Saved. The support inbox will start pulling <b>${esc(mailbox)}</b> automatically within
+about two minutes — nothing else to copy or paste.</p>
+<div class="box">Stored in zoho_accounts · active · data center ${esc(dc)}</div>
+<p class="sub" style="margin-top:18px">Have another mailbox to connect (e.g. the other of admin@ / teacher@)?
+Generate a <b>fresh</b> code for it and connect it here too:</p>
+<p class="step" style="margin-top:8px"><a href="">← Connect another mailbox</a></p>`),
     { headers: { "Content-Type": "text/html; charset=utf-8" } });
 });

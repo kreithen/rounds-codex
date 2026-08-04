@@ -49,7 +49,23 @@ interface Mailbox {
   dc?: string;
 }
 
-function loadMailboxes(): Mailbox[] {
+async function loadMailboxes(): Promise<Mailbox[]> {
+  // 1) Preferred: the zoho_accounts table (managed server-side; no env secret to paste).
+  try {
+    const r = await fetch(
+      `${SUPABASE_URL}/rest/v1/zoho_accounts?active=eq.true&select=mailbox,client_id,client_secret,refresh_token,dc,account_id`,
+      { headers: svc },
+    );
+    if (r.ok) {
+      const rows = await r.json();
+      if (Array.isArray(rows) && rows.length) {
+        return rows.map((x: any) => ({ ...x, account_id: x.account_id ?? undefined }));
+      }
+    }
+  } catch (e) {
+    console.error("zoho_accounts table read failed:", String(e));
+  }
+  // 2) Fallback: ZOHO_MAILBOXES env.
   const raw = Deno.env.get("ZOHO_MAILBOXES");
   if (raw) {
     try {
@@ -269,7 +285,7 @@ Deno.serve(async (req) => {
     if (given !== CRON_SECRET) return new Response("forbidden", { status: 403 });
   }
 
-  const mailboxes = loadMailboxes();
+  const mailboxes = await loadMailboxes();
   if (!mailboxes.length) {
     return new Response(JSON.stringify({ error: "no Zoho mailboxes configured" }), {
       status: 500, headers: { "Content-Type": "application/json" },
