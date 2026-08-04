@@ -43,7 +43,7 @@ function form(note = "") {
   return page(`
 <h1>Connect a Zoho mailbox</h1>
 <p class="sub">Paste your Self Client's <b>Client ID</b> + <b>Secret</b> and a <b>fresh grant code</b>
-(Generate Code → scope <code>ZohoMail.messages.READ,ZohoMail.accounts.READ</code> → 10&nbsp;min).
+(Generate Code → scope <code>ZohoMail.accounts.READ,ZohoMail.folders.READ,ZohoMail.messages.READ</code> → 10&nbsp;min).
 This swaps the code for a long-lived refresh token and stores it securely so the inbox can
 read this mailbox. Do this once per mailbox.</p>
 ${note}
