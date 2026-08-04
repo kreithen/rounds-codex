@@ -28,9 +28,16 @@ circulation:
 | anxiety | rows short of ten |
 | bipolar | pages 3–5 have **nine**; page 3 fills the **same dot as page 4** |
 | schizophrenia | count wanders **8 to 10 within one gallery**; four pages fill the wrong dot, and pages 6 and 7 fill the same one |
-| withdrawal 1–5 (2026-08-04) | page 1 has **eleven**; pages 2 and 3 fill the **wrong index**; pages 4 and 5 correct |
+| withdrawal (2026-08-04) | page 1 has **eleven**, page 6 has **nine**; five pages fill the wrong index; pages 7 and 8 fill the same one |
+| delirium (2026-08-04) | **count correct on all ten** — and pages **6, 7, 8 and 9 all fill dot 6** |
+| suicide (2026-08-04) | count wanders 10–11; five wrong indices, **overshooting** where withdrawal undershoots; pages 7 and 8 share a dot; page 10 has a **partial extra mark wedged between dots 6 and 7** |
 
 **A wrong count is cosmetic. A wrong index tells the reader they are on a different page.**
+
+`delirium` is the important row: its count is right on all ten pages and four of its indices are
+still wrong, which proves the count and the index are separate faults. Fixing the count will not
+fix the index. And because `withdrawal` undershoots while `suicide` overshoots **in the same
+delivery**, there is no offset that could be applied downstream.
 
 The correct number is available in the template — `IMAGE n OF 10` is right on every page in every
 batch. Whatever draws the dots is not reading the same value.
@@ -50,10 +57,21 @@ appear side by side in the app.
 
 ### Specialty label colour
 
-`PSYCHIATRY` renders **cyan** on depression and anxiety and **purple/magenta** on bipolar and
-schizophrenia — same specialty, four galleries, delivered the same evening. If the specialty
-colour is meant to be fixed per category, three of the four disagree. Compare the orange second
-highlight colour that appeared on `dic`.
+`PSYCHIATRY` renders **cyan** on depression, anxiety, withdrawal, delirium and suicide, and
+**purple/magenta** on bipolar and schizophrenia — same specialty, seven galleries, two colours. If
+the specialty colour is meant to be fixed per category, two of the seven disagree.
+
+### Ring colour and stray rings
+
+Separate from the fill index, the ring styling is unstable too:
+
+- **Orange** unfilled rings instead of grey — `dic`, `withdrawal` 8–9, `delirium` 8–10. It changes
+  partway through a gallery, so pages 1–7 and 8–10 of one gallery do not match.
+- A **cyan** second ring beside the fill on `delirium` 1–3, at an inconsistent offset (position 3,
+  3, then 2). `depression` page 2 had a dimmer second *fill* — the same class.
+- A dim, **half-drawn partial ring wedged between dots 6 and 7** on `suicide` page 10 — an extra
+  mark rather than a malformed one, and the first glyph-level defect rather than a count, fill or
+  colour fault.
 
 ### Footer status cells — RESOLVED, do not regress
 
@@ -76,6 +94,8 @@ Evidence crops at native resolution are in `DOTS-evidence/`.
 | `leukemia` | 4 | "…bone marrow and **bloodigd**, leading to…" | blood |
 | `leukemia` | 8 | "…risk-adapted, **multidiscipliinary** care." | multidisciplinary |
 | `hiv` | 6 | workflow step "3. **STASE**" | STAGE |
+| `suicide` | 4 | "RISK IS DYNAMIC AND **MODIFVABLE**" — large display type at the top of the page, the most visible text defect in any batch | MODIFIABLE |
+| `delirium` | 10 | "Delirium is reversible in most **casee**." | cases |
 | `sepsis` | 9 | "TIMELINE OF SEPSIS **PROGRESSON**" | **already repaired on our side — no re-render needed** |
 
 **`cellulitis` page 4 is not a spelling mistake, it is a layout failure.** The line
@@ -89,11 +109,15 @@ whether other pages from the same run share it.
 | gallery | page | fault |
 |---|---|---|
 | `gout` | 4 | CATEGORY cell reads "Pathophysiology"; the page is Clinical Presentation, and page 3 is the real pathophysiology page |
-| `withdrawal` | 4 | **the identical fault** — CATEGORY reads "Pathophysiology" on the Clinical Presentation page. Two galleries, same page index, same wrong value: a template default that is not being overwritten, not a typo |
+| `withdrawal` | 4 | **the identical fault** — CATEGORY reads "Pathophysiology" on the Clinical Presentation page |
+| `delirium` | 4 | the identical fault again |
+| `suicide` | 4, 5, 6, 7 | **four pages of one gallery** all reading CATEGORY "Pathophysiology": clinical presentation, history taking, clinical presentation, diagnostic imaging |
 | `gout` | 9 | CATEGORY cell reads "**Therepeutics**" — misspelt |
 | `lupus` | 3 | the whole footer metadata row renders with the IMAGE TITLE text overlapping its label, unlike every other page |
 | `bipolar` | 5 | IMAGE TITLE duplicates page 4 exactly. The page is the examination page; `schizophrenia` page 5 from the same run is correctly titled "Physical Exam & Mental Status Exam" |
 | `schizophrenia` | 1 | cites *APA Guidelines (2020)*; pages 2–10 cite *(2023)*. 2023 is current |
+| `suicide` | 6 | IMAGE TITLE reads "**Clinicial** Presentation" — and the page's own headline band spells it correctly, so the two disagree on the same page |
+| `delirium` | 7 | IMAGE TITLE duplicates page 3 exactly ("Pathophysiology of Delirium"), as does the headline band. Page 7 is the multifactorial-causes page |
 
 ### Carried over from earlier sessions — needs re-verification
 
@@ -117,10 +141,17 @@ were left as delivered rather than reworded.
 | `bipolar` | 5 | Clinical Presentation of Bipolar Disorder | Physical Exam & Mental Status Exam |
 | `anxiety` | 7 & 8 | Pathophysiology & Neurobiology / Cellular Pathophysiology & Neurobiology | differentiate — they read as a repeat in the thumbnail strip |
 | `schizophrenia` | 7 & 9 | Management Overview & Treatment Framework / Treatment & Management Strategies | differentiate |
+| `delirium` | 7 | Pathophysiology of Delirium — **byte-identical to page 3** | page 7 is the multifactorial-causes page; something like "Multifactorial Causes & Precipitants" |
+| `suicide` | 4 & 6 | Clinical Presentation & Warning Signs / Clinical Presentation: Key Signs & Symptoms | differentiate — they read as a repeat with the history page between them |
 
 Note the **two layers**: fixing the app title makes the strip read correctly, but the artwork's own
 footer still shows the wrong title on the page itself. Re-rendering fixes both; the app fix alone
 fixes the list but not the image.
+
+**One title has already been overridden on the way in**, the only time this has been done:
+`suicide` page 6's footer reads "Clinicial Presentation" and the app ships "Clinical Presentation",
+because the page's own headline band spells it correctly and shipping a typo into a display title
+that the same page contradicts would be worse. The artwork still needs the re-render.
 
 ---
 

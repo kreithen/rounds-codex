@@ -574,3 +574,82 @@ no `bipolar`-page-5-style mistitling.
 ### Page dimensions
 
 Page 1 at 1024×1536, pages 2–5 at 1024×1535. Mixed inside one gallery again.
+
+---
+
+## Batch 2026-08-04 (evening) — `withdrawal` 6–10, `delirium` 1–10, `suicide` 1–10
+
+Twenty-five pages, three galleries, one delivery. It completed `withdrawal` and delivered `delirium`
+and `suicide` whole, taking Psychiatry to 7 of 7. All 25 files distinct, no re-sends, every footer
+status cell clean. Dots read at 3x off the source pages.
+
+### The dots, all three galleries
+
+| page | `withdrawal` | `delirium` | `suicide` |
+|---|---|---|---|
+| 1 | 11 dots, fill 1 | 10, fill 1 + stray cyan ring at 3 | 10, fill 1 |
+| 2 | 10, fill **1** | 10, fill 2 + stray cyan ring at 3 | 10, fill 2 |
+| 3 | 10, fill **2** | 10, fill 3 + stray cyan ring at 2 | 10, fill **4** |
+| 4 | 10, fill 4 | 10, fill 4 | 10, fill **6** |
+| 5 | 10, fill 5 | 10, fill 5 | **11**, fill **7** |
+| 6 | **9**, fill **5** | 10, fill 6 | 10, fill 6 |
+| 7 | 10, fill **6** | 10, fill **6** | **11**, fill **8** |
+| 8 | 10, fill **6** | 10, fill **6** | **11**, fill 8 |
+| 9 | 10, fill **7** | 10, fill **6** | **11**, fill 9 |
+| 10 | 10, fill 10 | 10, fill 10 | **11**, fill **11** |
+
+Three things in that table are new:
+
+1. **`delirium` pages 6, 7, 8 and 9 all fill dot 6.** Four consecutive pages with an identical
+   indicator — worse than `schizophrenia`, where two pages shared one. `withdrawal` 7/8 and
+   `suicide` 7/8 each share a dot too, so three of three galleries have at least one collision.
+2. **`delirium`'s count is right on all ten pages** while four of its indices are wrong. That is the
+   first delivery where the count was clean and the index was not, which shows the two faults are
+   independent and fixing the count will not fix the index.
+3. **The errors go in both directions within one delivery.** `withdrawal` undershoots (page 9 fills
+   7); `suicide` overshoots (page 3 fills 4, page 4 fills 6). No single offset corrects either
+   gallery, let alone both.
+
+### A broken ring glyph — new
+
+`suicide` page 10 carries a dim, **half-drawn partial ring wedged between dots 6 and 7** — an extra
+mark rather than a malformed one, sitting off the grid the other ten sit on. Every prior dot defect
+has been a wrong count, a wrong fill or a wrong colour; this is the first glyph-level one.
+
+### Colour variants, still in circulation
+
+- **Cyan** second ring beside the fill on `delirium` pages 1–3, at an inconsistent offset from the
+  fill (position 3, 3, then 2). Compare `depression` page 2's dimmer second fill.
+- **Orange** unfilled rings on `withdrawal` 8–9 and `delirium` 8–10, against grey on the rest of the
+  same galleries. Same orange first seen on `dic`.
+
+### Footer CATEGORY "Pathophysiology" — now four pages in one gallery
+
+`suicide` pages **4, 5, 6 and 7** all read CATEGORY "Pathophysiology": clinical presentation,
+history taking, clinical presentation again, and diagnostic imaging. `gout` page 4, `withdrawal`
+page 4 and `delirium` page 4 each had the single-page version. Four galleries affected, and one of
+them on four pages, means this is a template default that is not being overwritten rather than a
+typo. **It is the most reproducible fault in the whole log** and should be the easiest to fix.
+
+### Text errors inside the artwork
+
+| gallery | page | reads | should read |
+|---|---|---|---|
+| `suicide` | 4 | "RISK IS DYNAMIC AND **MODIFVABLE**" | MODIFIABLE — and it is in large display type at the top of the page, the most visible text defect in any batch |
+| `suicide` | 6 | footer IMAGE TITLE "**Clinicial** Presentation: Key Signs & Symptoms" | Clinical — the page's own headline band spells it correctly, so the two disagree on the same page |
+| `delirium` | 10 | "Delirium is reversible in most **casee**." | cases |
+
+### Duplicate and near-duplicate titles
+
+- **`delirium` page 7 is titled identically to page 3** — both "Pathophysiology of Delirium", both
+  headlined "DELIRIUM: PATHOPHYSIOLOGY". Different pages (page 3 is the acute-reversible framing,
+  page 7 the multifactorial one) but indistinguishable in the thumbnail strip. Fourth occurrence of
+  this shape after `bipolar` 4/5, `anxiety` 7/8 and `schizophrenia` 7/9.
+- **`suicide` pages 4 and 6** are both clinical presentation pages — "Clinical Presentation &
+  Warning Signs" and "Clinical Presentation: Key Signs & Symptoms" — with the history-taking page
+  between them.
+
+### Specialty label colour
+
+Cyan on all three, as on `depression`, `anxiety` and `withdrawal` 1–5; `bipolar` and
+`schizophrenia` are the two purple ones. Five of seven Psychiatry galleries cyan, two purple.

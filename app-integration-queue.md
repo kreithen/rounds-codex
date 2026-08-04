@@ -1175,3 +1175,63 @@ fallback — never let a deploy's confirmation depend on the connector being up.
   Women's Health at 8 each.
 - Audio 9/181, all Cardiac. Four Cardiac left: `dvt`, `aortic-dissection`, `cardiac-arrest`,
   `hyperlipidemia`.
+
+---
+
+## v66 — Psychiatry complete: `withdrawal`, `delirium`, `suicide` (2026-08-04, `1db88d6`)
+
+Three galleries in one push, 30 pages. **Psychiatry is 7 of 7** and the app is at **93 galleries /
+930 pages**. Ninth complete category, after Cardiac, Endocrine, GI, Heme & Onc, ID, Neurology,
+Renal & GU and Respiratory.
+
+| id | condition | ICD-10 |
+|---|---|---|
+| `withdrawal` | Alcohol & Substance Withdrawal | F10.239 |
+| `delirium` | Delirium | F05 |
+| `suicide` | Suicide Risk Assessment | R45.851 |
+
+`withdrawal` arrived as two halves the same day; the other two arrived whole in a 25-file batch.
+All 25 distinct, no re-sends, every footer status cell clean.
+
+Verified against the built tree served through `netlifysim.js`: 30 thumbnails decode, all three
+viewers open a full 1024x1536 page, `verify_gallery_chain` passes at chain length 93 and wraps both
+ways, `verify_gallery_gestures` passes, font audit clean, `verify_sw` unchanged. Zero page errors.
+
+**One display title was overridden rather than taken from the footer** — the only time this has been
+done. `suicide` page 6's footer IMAGE TITLE reads "**Clinicial** Presentation"; the page's own
+headline band spells it correctly, so the band settled it. The artwork still needs the re-render.
+
+Artwork faults are in `galleries-staging/DOTS-defect-for-production.md` with evidence crops, and the
+actionable version in `ARTWORK-CORRECTIONS.md`. Three are worth naming here:
+
+- **`delirium` pages 6, 7, 8 and 9 all fill the same progress dot** — four consecutive pages with an
+  identical indicator, the worst instance so far. Its dot *count* is correct on all ten pages, which
+  is the first time that has happened and proves the count and index faults are independent.
+- **`suicide` page 4 reads "RISK IS DYNAMIC AND MODIFVABLE"** in large red display type.
+- **Footer CATEGORY "Pathophysiology" on `suicide` pages 4–7.** `gout`, `withdrawal` and `delirium`
+  each have it on page 4 alone. Four galleries now, one of them four pages: a template default that
+  is not being overwritten, and the most reproducible fault in the log.
+
+### A regression that was NOT ours
+
+`verify_gallery_gestures` failed on `swipe left` and `swipe chaining` against `origin/main` and
+passed against the pre-`ca2b024` tree. The cause was the **Supabase login wall covering the viewport
+in an unauthenticated headless context**, not a swipe bug — the overlay ate the touch. Fixed in the
+harness by `scripts/rc_test_auth.js`, which seeds `rc.app.session.v1` before navigation; both
+gallery suites call it and any new headless test must.
+
+While tracing that, a real defect surfaced: **the login wall's div is `id="rc-gate"`, the id the
+first-run medical disclaimer already used**, so `rcTermsGate()`'s duplicate guard fires every visit
+and **the disclaimer never appears**. Measured both ways; renaming the wall's id restores it. Not
+applied — the rename could not be tested against a real Supabase sign-in from a container, and
+guessing wrong locks the physician out. Written up with the exact fix in
+`LOGIN-WALL-id-collision.md`.
+
+### Still open after this push
+
+- **Galleries 93/181.** Eight conditions from four more complete categories: `osteoarthritis` (MSK &
+  Rheum → 7/7); `shock`, `acute-abdomen`, `peds-fever-sepsis` (Emergency & Surgical → 3/3);
+  `pressure-injury`, `burns`, `wound-care`, `anaphylaxis` (Derm & Wounds → 4/4). Biggest remaining
+  gaps: Oncology 14, Fluids & Electrolytes 12, Toxicology 9.
+- **The disclaimer gate is dead on the live site** — see above. Highest-priority open item, because
+  it is the App Store Guideline 1.4.1 answer that `app-store-plan.md` relies on.

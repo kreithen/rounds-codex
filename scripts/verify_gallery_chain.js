@@ -17,10 +17,13 @@
 //      finger went. Run these against origin/main to watch them fail - a guard that passes on
 //      the broken build is decoration.
 const { chromium } = require(process.env.RC_PW);
+const { seedAuth } = require('./rc_test_auth');
 const PORT = process.argv[2];
 (async () => {
   const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args: ['--no-sandbox'] });
-  const p = await (await b.newContext({ viewport: { width: 390, height: 844 } })).newPage();
+  const ctx = await b.newContext({ viewport: { width: 390, height: 844 } });
+  await seedAuth(ctx);          // the login wall covers everything; see rc_test_auth.js
+  const p = await ctx.newPage();
   const errs = []; p.on('pageerror', e => errs.push(String(e)));
   const bad = [];
   await p.goto(`http://127.0.0.1:${PORT}/`, { waitUntil: 'networkidle' });

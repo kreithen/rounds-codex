@@ -15,6 +15,14 @@ gets forgotten.
 | Early users | **Grandfathered permanently** — anyone who installs while it is free keeps full access |
 | Entitlement | **On-device StoreKit only** — no accounts, no server, no login |
 
+> **Superseded in part by what shipped.** A Supabase email/password login wall plus WebAuthn passkey
+> unlock landed on the live app on 2026-08-04 (`ca2b024`, `239ca6b`). That is a backend and an
+> account, so "no accounts, no server, no login" no longer describes the app, and the
+> **"Data Not Collected" privacy label below no longer applies as written** — an email address is a
+> collected identifier. The rest of this section (one price, grandfathering via
+> `AppTransaction.originalAppVersion`) is unaffected; a subscription still needs no account. Worth a
+> deliberate decision rather than letting the two designs drift.
+
 ### Why one price
 
 Apple provides **no student verification to third-party apps**. It verifies students for its own
@@ -140,8 +148,15 @@ The existing posture already satisfies the hard parts and must not regress:
 - no fabricated strengths
 - `RC VERIFIED` reserved for reviewed content
 
-Still to add: a visible "for education, not a substitute for clinical judgement" line (the
-`#rc-gate` disclaimer covers first run; the App Store listing needs its own) and a sources screen.
+Still to add: a visible "for education, not a substitute for clinical judgement" line and a sources
+screen.
+
+> **The first-run disclaimer is currently NOT SHOWN.** The Supabase login wall added on 2026-08-04
+> declares its overlay as `id="rc-gate"` — the id the disclaimer already used — so
+> `rcTermsGate()`'s duplicate guard fires on every visit and the gate is never built. Measured both
+> ways; renaming the wall's id restores it. Details and the exact fix in
+> `LOGIN-WALL-id-collision.md`. **This is the highest-priority item on this page**, because it is
+> what the paragraph above was relying on.
 
 ### The real blocker, stated plainly
 
@@ -170,3 +185,7 @@ This should gate the **paid** launch even if it does not gate the free one.
 - [ ] `DOTS-defect-for-production.md` to the artwork vendor
 - [ ] The gallery viewer's own PDF button is still a `toast()` stub, unlike the working one on the
       gallery page
+- [ ] **Restore the first-run disclaimer** — `LOGIN-WALL-id-collision.md`. Blocks nothing
+      technically and everything legally.
+- [ ] Decide whether the Supabase login wall stays. If it does, the privacy label changes and the
+      "no accounts" line above needs rewriting; if it goes, the disclaimer collision goes with it.
