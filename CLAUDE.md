@@ -349,7 +349,26 @@ no backend. This file is context for future sessions — read it before starting
 - **Illustrations**: `RC_ILLUS[id]` registry, merged across `illus-p*.js` (later wins). `<img>`
   → "IMAGE" badge, `<svg>` → "SCHEMATIC". 231 items illustrated. `illus-real.js` loads last so
   approved real images override schematics.
-- **189 of the 231 now use real generated images, live as v54 (2026-08-03).** `usmle/img/<id>.jpg`,
+- **197 of the 231 now use real generated images, live as v65 (2026-08-04).** The 34 that stay
+  vector are all deliberate: 32 ECGs, the genetics pedigree (`s1-0002`), and `s2ck-0245` (lichen
+  sclerosus — Higgsfield returned `nsfw`, a moderation refusal, and refunded it). **Nothing renders
+  as a bare text box any more.**
+  - **A generated image can be the MIRROR of its own specification.** `s2ck-0162` came back with the
+    femoral neck fracture on the patient's LEFT while the vignette says right four times and the
+    figure caption rendered beneath it reads "displaced right femoral neck fracture"; `mustShow`
+    demanded the right neck fractured and "intact, normal left hip for comparison". Shipped
+    horizontally flipped. **Check for a burned-in laterality marker or scanner overlay before
+    flipping anything** — zero bright pixels in every margin band is what made it a reflection
+    rather than a fabrication. `s2ck-0077` carries an "R" plus scanner text and must never be flipped.
+  - **Leading with the no-text prohibition works.** `s3-0365` and `s1-0247` were re-fired with the
+    instruction moved to the FRONT, stated positively ("a raw scan before any reporting markup")
+    and the diagnosis lowercased; both came back clean. All 189 originals already ended with "no
+    text, no labels" and 3 ignored it, so the failure is stochastic — position and framing shift
+    the odds, they do not remove the need to look.
+  - **`--verbatim-max-kb` cuts both ways.** At 338 kB `s1-0114` sits just over the threshold, so a
+    re-run re-encoded an already-reviewed image for a 215-byte change. Restore any file the
+    incorporation touches that it had no reason to.
+- **(historic) 189 as of v54 (2026-08-03).** `usmle/img/<id>.jpg`,
   24 MB, longest side 1024 (the module never displays one wider than 700 CSS px). Pipeline:
   `tools/prepare-usmle-images.command` (shrinks on the physician's Mac — the masters are ~6 MB
   each and the CDN is unreachable from a container) → `tools/stage_by_cdn_name.py` →
