@@ -4,8 +4,16 @@ Condition **`bipolar`** — Bipolar Disorder, Psychiatry, ICD-10 F31.9. It would
 gallery and the third Psychiatry one, after Major Depressive Disorder (v61) and Anxiety
 Disorders (v62).
 
-**Half a gallery. Pages 6–10 still to come — do not build until they arrive.** The builder
-asserts all ten pages, so it will refuse rather than ship a short gallery.
+**COMPLETE and SHIPPED as v63** (deploy `1269dab`). Pages 6–10 arrived in the batch that also
+carried Schizophrenia 1–5.
+
+Pages 6–10: Diagnostic Imaging & Labs · Pathology, Complications & Management · Histopathology &
+Neurobiology · Treatment & Management · Clinical Pearl & Key Takeaways. All ten pages came in at
+1024×1536, no resampling needed.
+
+**Page 5 shipped with the duplicate title it was delivered with.** Schizophrenia, from the same
+production run, titles its page 5 *"Physical Exam & Mental Status Exam"* — which is what this one
+should almost certainly say. One line in `content/galleries.json` to change.
 
 ## Page order and titles
 
