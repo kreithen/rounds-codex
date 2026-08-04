@@ -29,3 +29,7 @@ verify_jwt = false
 
 [functions.sync-inbox]
 verify_jwt = true
+
+# App login-wall: admin invites a user; verify_jwt off + manual admin check.
+[functions.invite-user]
+verify_jwt = false
