@@ -532,3 +532,45 @@ to be fixed at the template rather than detected downstream.
 - **`anxiety` pages 7 and 8** likewise: *"Pathophysiology & Neurobiology"* and *"Cellular
   Pathophysiology & Neurobiology"*.
 - **`schizophrenia` page 1** cites *APA Guidelines (2020)*; pages 2–10 cite *(2023)*.
+
+---
+
+## Batch 2026-08-04 — `withdrawal` pages 1–5 (Alcohol & Substance Withdrawal, Psychiatry)
+
+Half a gallery, five pages, delivered shuffled (1, 4, 3, 5, 2). Every footer's own page number
+agrees with its header, so the order is unambiguous. Dots read at **4x** off the aligned
+per-gallery header sheet.
+
+| page | dots | fill | |
+|---|---:|---:|---|
+| 1 | **11** | 1 | count inflated by one |
+| 2 | 10 | **1** | **wrong index** |
+| 3 | 10 | **2** | **wrong index** |
+| 4 | 10 | 4 | ok |
+| 5 | 10 | 5 | ok |
+
+**Three of five pages wrong, in two different ways, inside one gallery.** Both wrong indices are
+one short of the page number — but page 1 fills correctly and so do pages 4 and 5, so this is not
+a uniform off-by-one that could be corrected downstream. Seventh distinct dot behaviour observed.
+
+### Footer CATEGORY wrong on page 4 — second occurrence, same page number
+
+Page 4's CATEGORY cell reads **"Pathophysiology"**. The page is *Clinical Presentation & Severity
+Grading*; page 3 is the real pathophysiology page. **`gout` page 4 had exactly this fault.** Two
+galleries, same page index, same wrong value — this looks like a template default that is not
+being overwritten rather than a one-off typo.
+
+### Specialty label colour — five Psychiatry galleries, two colours
+
+`PSYCHIATRY` renders **cyan** here, as on `depression` and `anxiety`, against the purple/magenta
+on `bipolar` and `schizophrenia`.
+
+### Clean on this batch
+
+Footer status cells (no "Clinical Pending"/"Proof"/"Prepublication"), no duplicate files, no
+re-sends, no spelling errors found, and every headline band agrees with its footer IMAGE TITLE —
+no `bipolar`-page-5-style mistitling.
+
+### Page dimensions
+
+Page 1 at 1024×1536, pages 2–5 at 1024×1535. Mixed inside one gallery again.

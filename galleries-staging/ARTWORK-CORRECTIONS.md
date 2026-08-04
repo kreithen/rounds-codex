@@ -28,6 +28,7 @@ circulation:
 | anxiety | rows short of ten |
 | bipolar | pages 3–5 have **nine**; page 3 fills the **same dot as page 4** |
 | schizophrenia | count wanders **8 to 10 within one gallery**; four pages fill the wrong dot, and pages 6 and 7 fill the same one |
+| withdrawal 1–5 (2026-08-04) | page 1 has **eleven**; pages 2 and 3 fill the **wrong index**; pages 4 and 5 correct |
 
 **A wrong count is cosmetic. A wrong index tells the reader they are on a different page.**
 
@@ -88,6 +89,7 @@ whether other pages from the same run share it.
 | gallery | page | fault |
 |---|---|---|
 | `gout` | 4 | CATEGORY cell reads "Pathophysiology"; the page is Clinical Presentation, and page 3 is the real pathophysiology page |
+| `withdrawal` | 4 | **the identical fault** — CATEGORY reads "Pathophysiology" on the Clinical Presentation page. Two galleries, same page index, same wrong value: a template default that is not being overwritten, not a typo |
 | `gout` | 9 | CATEGORY cell reads "**Therepeutics**" — misspelt |
 | `lupus` | 3 | the whole footer metadata row renders with the IMAGE TITLE text overlapping its label, unlike every other page |
 | `bipolar` | 5 | IMAGE TITLE duplicates page 4 exactly. The page is the examination page; `schizophrenia` page 5 from the same run is correctly titled "Physical Exam & Mental Status Exam" |
