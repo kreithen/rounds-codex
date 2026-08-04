@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import { supabase } from "./supabase.js";
 import Newsletters from "./Newsletters.jsx";
 import Inbox from "./Inbox.jsx";
+import Users from "./Users.jsx";
 
 export default function Dashboard({ session }) {
   const [state, setState] = useState("loading"); // loading | denied | error | ready
@@ -98,6 +99,7 @@ export default function Dashboard({ session }) {
         <div className="brand">Rounds&nbsp;Codex <span>Admin</span></div>
         <nav className="tabs">
           <button className={"tab" + (tab === "signups" ? " on" : "")} onClick={() => setTab("signups")}>Signups</button>
+          <button className={"tab" + (tab === "users" ? " on" : "")} onClick={() => setTab("users")}>Users</button>
           <button className={"tab" + (tab === "inbox" ? " on" : "")} onClick={() => setTab("inbox")}>Inbox</button>
           <button className={"tab" + (tab === "newsletters" ? " on" : "")} onClick={() => setTab("newsletters")}>Newsletters</button>
         </nav>
@@ -111,6 +113,8 @@ export default function Dashboard({ session }) {
         <Newsletters session={session} />
       ) : tab === "inbox" ? (
         <Inbox session={session} />
+      ) : tab === "users" ? (
+        <Users session={session} />
       ) : (
       <>
       <section className="tiles">
