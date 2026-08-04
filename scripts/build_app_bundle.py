@@ -40,9 +40,25 @@ Usage:
 import argparse, json, os, shutil, sys, time
 from concurrent.futures import ProcessPoolExecutor
 
-WEBP_DIRS = ("assets", "gthumbs", "usmle/img")   # everything image-heavy
-DROP = ("robots.txt",)                            # meaningless in a package
+# WHICH images to convert is driven by the MANIFESTS, not by a directory list. A directory list
+# missed 87 MB: 21 of the galleries predate the assets/<id>/ convention and their pages sit at the
+# SITE ROOT, with five more under <id>-upload/ folders, because early GitHub web-uploads nested
+# wrong and index.html was pointed at reality rather than moving 270 files. Anything referenced
+# from content/galleries.json gets converted wherever it lives.
+USMLE_IMG_DIR = "usmle/img"
 PDF_SUFFIX = "-gallery.pdf"
+
+# Root-level things that should never reach a package. The site accumulated build artifacts from
+# the months of GitHub web-uploads - a 26 MB gallery zip, deploy zips, staging folders - all of
+# which are currently served publicly and would otherwise be shipped inside the app.
+DROP_FILES = ("robots.txt",)                     # exists only to hide the pre-launch website
+DROP_ROOT_SUFFIX = (".zip", ".sh", ".md")        # archives, setup scripts, notes
+DROP_ROOT_DIRS = ("usmle-app-part1", "usmle-data-part2", "usmle-data-part3")
+
+# Loaded by convention rather than by reference, so a grep for their names finds nothing.
+# Listing them here is a reminder never to add them to the DROP rules above.
+KEEP_ALWAYS = ("_redirects", "_headers", "netlify.toml", "package.json", "version.txt",
+               "manifest.webmanifest", "sw.js", "index.html")
 
 
 def convert(job):
@@ -72,20 +88,35 @@ def main():
     jobs = []
     before_total = 0
 
+    # every path galleries.json points at, relative to the site root
+    G0 = json.load(open(os.path.join(site, "content", "galleries.json")))
+    gallery_paths = set()
+    for g in G0["galleries"].values():
+        b = g.get("base", "")
+        for im in g["images"]:
+            gallery_paths.add(os.path.normpath(b + im["file"]))
+            gallery_paths.add(os.path.normpath(im["thumb"]))
+    print(f"galleries.json references {len(gallery_paths)} image paths")
+
     for root, dirs, files in os.walk(site):
         dirs[:] = [d for d in dirs if d not in (".git", "node_modules")]
         rel = os.path.relpath(root, site)
         rel = "" if rel == "." else rel
+        if rel == "":
+            dirs[:] = [d for d in dirs if d not in DROP_ROOT_DIRS]
         os.makedirs(os.path.join(out, rel), exist_ok=True)
-        in_webp_dir = any(rel == d or rel.startswith(d + os.sep) for d in WEBP_DIRS)
+        in_usmle_img = rel == USMLE_IMG_DIR or rel.startswith(USMLE_IMG_DIR + os.sep)
         for f in files:
             s = os.path.join(root, f)
             before_total += os.path.getsize(s)
-            if rel == "" and f in DROP:
+            if rel == "" and f not in KEEP_ALWAYS and (
+                    f in DROP_FILES or f.endswith(DROP_ROOT_SUFFIX)):
                 dropped_other += 1; continue
             if f.endswith(PDF_SUFFIX) and not a.keep_pdfs:
                 dropped_pdf += 1; continue
-            if in_webp_dir and f.lower().endswith((".jpg", ".jpeg", ".png")):
+            relpath = os.path.normpath(os.path.join(rel, f)) if rel else f
+            if (in_usmle_img or relpath in gallery_paths) and \
+                    f.lower().endswith((".jpg", ".jpeg", ".png")):
                 jobs.append((s, os.path.join(out, rel, os.path.splitext(f)[0] + ".webp"), a.quality))
                 continue
             shutil.copy2(s, os.path.join(out, rel, f)); copied += 1
@@ -110,6 +141,16 @@ def main():
     print(f"\nrewrote {gp} -> .webp paths for "
           f"{sum(len(g['images']) for g in G['galleries'].values())} images")
 
+    # illus-real.js names every USMLE illustration by .jpg. Converting the files without
+    # rewriting this leaves 197 broken images - the manifest and the bytes have to move together.
+    ip = os.path.join(out, "usmle", "illus-real.js")
+    if os.path.exists(ip):
+        js = open(ip, encoding="utf-8").read()
+        import re as _re
+        js2, n = _re.subn(r'(src="img/[^"]+)\.(?:jpg|jpeg|png)"', r'\1.webp"', js)
+        open(ip, "w", encoding="utf-8").write(js2)
+        print(f"rewrote {ip} -> .webp for {n} illustrations")
+
     after_total = sum(os.path.getsize(os.path.join(r, f))
                       for r, _, fs in os.walk(out) for f in fs)
     print(f"\n=== bundle: {out} ===")
@@ -121,7 +162,8 @@ def main():
     if dropped_pdf:
         print(f"  gallery PDFs excluded: {dropped_pdf}  <- app must resolve `pdf` against the "
               f"public origin")
-    print(f"  other files dropped: {dropped_other} ({', '.join(DROP)})")
+    print(f"  root artifacts dropped: {dropped_other} "
+          f"(robots.txt, *.zip, *.sh, *.md, usmle-*-part*)")
     print(f"  {time.time()-t0:.0f}s")
     return 0
 
