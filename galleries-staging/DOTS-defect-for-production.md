@@ -457,3 +457,34 @@ Other defects in the same batch, all cosmetic and all shipped as-is:
   Presentation of Gout" and page 3 is the real pathophysiology page.
 - **`lupus-03`'s footer metadata row is visually broken** — the IMAGE TITLE text overlaps the
   label, unlike every other page.
+
+
+## 2026-08-03 (late) — depression, anxiety, bipolar (Psychiatry)
+
+Three Psychiatry galleries in one evening, three different dot behaviours. Read at 2x off the
+aligned header sheet each time.
+
+- **`depression` 1–5**: ten dots, correct index on all five. The only fault is **page 2, which
+  carries a SECOND, dimmer filled dot at position 1** beside the correct bright fill at 2 — the
+  cumulative artifact, half-lit.
+- **`anxiety`**: page 5 arrived separately and its row reads short of ten.
+- **`bipolar` 1–5**: pages 1–2 have ten dots and the right index; **pages 3–5 have only NINE**,
+  and **page 3 fills the fourth dot — the same one page 4 fills**, so those two pages cannot be
+  told apart by their indicator.
+
+**A correction to the gout/compartment/SLE entry above.** Its "fill index runs one position late
+from page 3 onward" was read at contact-sheet scale, and at 2x the same rows read differently —
+on `depression` I made exactly that mistake and pages 4 and 5 turned out correct. The **count**
+inflation in that batch is real and obvious at any scale; treat the per-page fill indices as
+unconfirmed until re-read at 2x.
+
+**Rule for reading dots, now that six automated attempts have failed:** crop the dot row out of
+the per-gallery header sheet `triage_incoming_gallery.py` writes (its rows are y-aligned, unlike
+the pages, whose header drifts tens of pixels), scale it 2x, and count by eye. Never report a
+fill index read at contact-sheet scale.
+
+### Not a dot defect, but new in the same batch
+
+`PSYCHIATRY` renders **purple/magenta** on `bipolar` and **cyan** on `depression` and `anxiety` —
+same specialty, same evening, two accent colours. Compare with the orange highlight that appeared
+on `dic`. If the specialty colour is meant to be fixed per category, three galleries now disagree.
