@@ -488,3 +488,47 @@ fill index read at contact-sheet scale.
 `PSYCHIATRY` renders **purple/magenta** on `bipolar` and **cyan** on `depression` and `anxiety` —
 same specialty, same evening, two accent colours. Compare with the orange highlight that appeared
 on `dic`. If the specialty colour is meant to be fixed per category, three galleries now disagree.
+
+
+## 2026-08-03 (late, cont.) — bipolar and schizophrenia
+
+Read at 2x off the aligned per-gallery header sheet, as the method note requires.
+
+**`bipolar`**: pages 1–2 ten dots, right index. Pages 3–5 **nine** dots, and **page 3 fills the
+fourth — the same dot page 4 fills**, so those two pages are indistinguishable by their indicator.
+
+**`schizophrenia`**: the worst of the evening. The dot **count varies between 8 and 10** across
+ten pages of one gallery, and the fill index is wrong on four:
+
+| page | dots | fill | |
+|---|---|---|---|
+| 1 | 10 | 1 | ok |
+| 2 | 10 | 2 | ok |
+| 3 | 9 | **4** | wrong |
+| 4 | 8 | **5** | wrong |
+| 5 | 8 | 5 | index ok |
+| 6 | 9 | 6 | ok |
+| 7 | 9 | **6** | wrong — same dot as page 6 |
+| 8 | 9 | **7** | wrong |
+| 9 | 10 | 9 | ok |
+| 10 | 10 | 10 | ok |
+
+Pages 6 and 7 fill the same dot; so do 3 and 4 in effect. A wrong count is cosmetic, but a
+wrong index actively tells the reader they are on a different page.
+
+**Six galleries this evening, six different dot behaviours** — correct (gout 1–5), count
+inflated to 12–14 (gout 6–10 / compartment / SLE), one half-lit extra fill (depression),
+short rows (anxiety), nine-dot rows with one duplicated index (bipolar), and counts wandering
+8–10 with four wrong indices (schizophrenia). Nothing about this is stable, which is why it has
+to be fixed at the template rather than detected downstream.
+
+### Title and citation issues in the same batch
+
+- **`bipolar` page 5** is titled *"Clinical Presentation of Bipolar Disorder"*, identical to its
+  page 4. The page is the examination page; `schizophrenia` page 5 — same production run — is
+  titled *"Physical Exam & Mental Status Exam"*, which is what bipolar's should say.
+- **`schizophrenia` pages 7 and 9** read as near-duplicates: *"Management Overview & Treatment
+  Framework"* and *"Treatment & Management Strategies"*.
+- **`anxiety` pages 7 and 8** likewise: *"Pathophysiology & Neurobiology"* and *"Cellular
+  Pathophysiology & Neurobiology"*.
+- **`schizophrenia` page 1** cites *APA Guidelines (2020)*; pages 2–10 cite *(2023)*.
