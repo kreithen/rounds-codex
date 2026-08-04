@@ -67,6 +67,26 @@ Measured on the live tree, 2026-08-04, at 90 galleries:
 At the planned 101 galleries that is roughly 830 MB. Apple will not reject for size, but it is a
 bad download for a study app and it is the largest single lever available.
 
+### Result, measured 2026-08-04
+
+**767 MB → 383 MB** (50%, saved 385 MB). 1,917 images converted, 458 → 256 MB (56% of JPEG).
+Verified by serving the bundle and running both suites against it: all 197 USMLE illustrations
+resolve and render, and the gallery chain works in both directions. Zero page errors.
+
+Two bugs in the builder were found by inspecting its output rather than re-reading the code, and
+both are worth remembering because the same shape will recur:
+
+- It converted `usmle/img/*.jpg` but left `illus-real.js` naming them `.jpg` — **197 broken
+  illustrations**. A manifest and its bytes have to move together.
+- Conversion was driven by a hardcoded directory list, which does not know that 21 galleries
+  predate the `assets/<id>/` convention and keep their pages at the **site root**, with five more
+  under `<id>-upload/`. That blind spot was 87 MB. It is now driven off the paths
+  `galleries.json` actually references.
+
+**Still not small enough.** 383 MB is a better download than 767 but not a comfortable one. The
+next lever is on-demand gallery packs: bundle core plus thumbnails (~80 MB) and fetch full pages
+per category, which keeps the offline story once downloaded.
+
 `scripts/build_app_bundle.py` addresses it as a **build**, leaving the website alone:
 
 1. **WebP q82** for gallery pages, thumbnails and USMLE illustrations. Measured across a
