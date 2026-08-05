@@ -213,6 +213,97 @@ Two practical consequences:
 name, the coexistence evidence is strong and quantified, and the candidates are down to about ten
 identifiable marks with serial numbers.
 
+## DECIDED 2026-08-05: self-filing, no attorney
+
+Dr. Kreithen's call, made after seeing the analysis above. Recorded with the reasoning so it is not
+re-litigated later.
+
+**What the decision rests on:** zero live marks combine ROUNDS and CODEX; 37 `[WORD] CODEX`
+composites coexist with 11 bare CODEX registrations; and twelve `[X] ROUNDS` marks — including two
+AMA marks and one Cleveland Clinic mark — coexist in class 041 with medical goods.
+
+**What it accepts.** The analysis above is a *search*, not a clearance opinion — no legal judgement
+was applied to the class 9 overlap with OpenAI's CODEX family or bioMérieux's registration. The
+exposure is (a) a §2(d) likelihood-of-confusion refusal, costing the filing fee plus the work of a
+response, and (b) a small chance of an opposition. Filing fees are **not refunded** on refusal.
+Neither outcome is catastrophic and both are recoverable; that is the trade being made knowingly.
+
+---
+
+## The next three steps, in order
+
+### Step 1 — Create the USPTO.gov account today (it has a lead time)
+
+Filing requires a **USPTO.gov account with two-step authentication**, and trademark filers must be
+**identity-verified**. Verification is not instant — it can involve an ID check that takes days.
+This is the step that quietly turns "I'll file tonight" into "I'll file next week", so start it
+before doing anything else.
+
+Do it at uspto.gov → MyUSPTO → create account, then complete verification. Nothing else is blocked
+while it processes.
+
+### Step 2 — Lock the goods/services wording (free, and the highest-leverage thing you control)
+
+This single field decides whether the application sails through or draws an office action, and it is
+where a self-filer has the most leverage. Two rules:
+
+1. **Use pre-approved ID Manual text.** Free-form descriptions attract a surcharge under the current
+   fee structure and are the commonest cause of an examiner query. Search each phrase in the **Trademark ID Manual** (idm-tmng.uspto.gov) and take the
+   approved wording verbatim.
+2. **Go narrow, and name the audience and subject.** This is the direct answer to the class 9
+   crowding. An examiner comparing "downloadable software" against OpenAI's *software for using
+   language models* and bioMérieux's *clinical diagnostics* is weighing broad against broad. An
+   examiner comparing **medical- and nursing-student educational software** against those two is
+   looking at plainly different goods. Narrow wording costs nothing and is the cheapest risk
+   reduction available.
+
+**Draft wording, to verify against the ID Manual before use** — these are written in ID Manual
+style, not copied from it, because uspto.gov is unreachable from the build container:
+
+> **Class 9** — Downloadable educational software featuring instruction in medicine and nursing.
+
+> **Class 41** — Educational services, namely, providing online instruction in the fields of
+> medicine and nursing; providing online non-downloadable educational materials in the nature of
+> illustrated reference guides and practice examinations in the fields of medicine and nursing.
+
+Paste each phrase into the ID Manual search. If it returns an approved entry, use that entry's exact
+text. If it does not, adjust toward the nearest approved entry rather than inventing wording.
+
+**File both classes.** Class 41 is the friendlier one, but class 9 is where the app itself lives —
+filing 41 alone would leave the actual product unprotected. Narrow goods, both classes.
+
+### Step 3 — File the standard character mark on a §1(b) basis
+
+Have these ready before opening the form:
+
+| field | value |
+|---|---|
+| Mark type | **Standard character mark** (not stylized, no design) |
+| Mark | `ROUNDS CODEX` |
+| Owner | Rounds Codex, Inc. — plus **entity type** (corporation) and **state of incorporation** |
+| Domicile address | **becomes public record** — use the business address, not a home address, if those differ |
+| Email | one that will still be monitored in 3–6 years, since renewals depend on it |
+| Classes | 009 and 041 |
+| Goods/services | the ID Manual text from step 2 |
+| Filing basis | **§1(b), intent to use** |
+| Specimen | **none** — that comes later, with the Statement of Use |
+| Signature | an officer of the corporation |
+
+Then, immediately after filing:
+
+- **Record the serial number** and put it in this file.
+- **Docket two recurring reminders**: check TSDR monthly, and a hard deadline for any office action
+  response. **Missing an office action deadline abandons the application** — that is the single most
+  common way a self-filed mark dies, and it is entirely avoidable.
+- Expect **months, not weeks**, before an examiner picks it up.
+- After the app launches, file the **Statement of Use** with an App Store screenshot as the specimen.
+
+### Not now: the logo
+
+File the design mark later, once the word mark's fate is known. The logo is already protected by
+copyright as an original design, and if the word mark draws a refusal you will want to know that
+before spending a second set of per-class fees.
+
 ## Steps on uspto.gov
 
 1. **Search first — free, and do it before spending anything.** USPTO's trademark search is at
