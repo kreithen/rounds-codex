@@ -296,18 +296,22 @@ and any linked-out survey, not from analytics.
 
 ---
 
-## Decisions to make (flagged, not assumed)
+## Decisions made (2026-08-05)
 
-These genuinely change the plan and are the physician's calls:
+- **Accounts exist:** Instagram, TikTok, Reddit, X (handles to be recorded here once supplied).
+  Pinterest and YouTube still worth grabbing.
+- **Voice: brand, physician-forward.** "Rounds Codex" is the account; the voice makes clear one
+  practising physician draws and writes it. Keeps the differentiator, survives if the product
+  outgrows one person. Not a personal "Dr. Kreithen" account.
+- **Higgsfield: approved for the video arm, with the gate.** Generate Reels/Shorts from the real
+  illustrations; **any generated clinical imagery and any credit spend go to Dr. Kreithen first.**
+- **First content batch: all four platforms at once**, from the same conditions (draw-once engine).
+  See `social-content-batch-01.md`.
 
-- **Named or brand account?** "Dr. Kreithen" as the face leans hard into the differentiator and
-  "behind the pen" — strongest for trust, but it's his name on it. A "Rounds Codex" brand account is
-  more separable but weaker on the one thing that sets this apart. *Recommendation: brand account,
-  physician-forward voice* — best of both, and it survives if the product outgrows one person.
-- **How hard to lean on Higgsfield for video.** It's a real accelerator for the TikTok arm and it's
-  already connected; the constraint is credit spend and the medical gate, not capability.
-- **When to start.** Accounts and batching can start now; the traffic push waits on link previews +
-  noindex removal + the App Store listing.
+Still open / sequencing:
+
+- **When to push traffic.** Accounts and batching start now; the traffic push waits on link
+  previews + noindex removal + the App Store listing (see dependencies).
 
 ## Working notes
 
