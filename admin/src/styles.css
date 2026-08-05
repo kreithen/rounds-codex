@@ -183,3 +183,35 @@ td.empty{text-align:center;color:var(--muted);padding:2rem}
   .tval{font-size:1.6rem}
   .tabs{order:3;flex-basis:100%;justify-content:flex-start}
 }
+
+/* ---- emails (template editor) + compose modal ---- */
+.emails{max-width:760px}
+.emails input,.emails textarea,.modal input,.modal textarea{width:100%;box-sizing:border-box;
+  padding:.7rem 1rem;border-radius:12px;border:1px solid #6fa9ff40;background:#0a1424cc;color:#eef4ff;
+  font-size:.92rem;font-family:inherit;min-height:0;margin-bottom:.2rem}
+.emails textarea,.modal textarea{line-height:1.6;resize:vertical}
+.emails input:focus,.emails textarea:focus,.modal input:focus,.modal textarea:focus{outline:none;
+  border-color:var(--cyan);box-shadow:0 0 0 3px #24d9ff26}
+.emails .tlabel{display:block;margin:.9rem 0 .35rem}
+.tmpl-card{border:1px solid var(--line);border-radius:16px;padding:1.2rem 1.3rem 1.4rem;margin-bottom:1.4rem;background:#0a142799}
+.tmpl-head{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:.4rem}
+.tmpl-title{font-weight:850;font-size:1.02rem}
+.tmpl-actions{display:flex;gap:.5rem;flex-shrink:0}
+.tmpl-row{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.tmpl-ph{margin-top:.9rem;color:var(--muted);font-size:.78rem;display:flex;align-items:center;flex-wrap:wrap;gap:.4rem}
+.ph-chip code{background:#12233c;border:1px solid #6fa9ff33;border-radius:7px;padding:.12rem .4rem;color:#a9ecff;font-size:.76rem}
+
+.link-email{background:none;border:0;color:var(--cyan);cursor:pointer;font:inherit;padding:0;text-align:left}
+.link-email:hover{text-decoration:underline}
+.row-actions{white-space:nowrap;text-align:right}
+.link.danger{color:var(--coral)}
+
+.modal-back{position:fixed;inset:0;background:#03060ccc;display:flex;align-items:center;justify-content:center;
+  padding:1.2rem;z-index:50}
+.modal{width:100%;max-width:560px;background:linear-gradient(160deg,#0f1e35,#080f1e);border:1px solid #6fa9ff33;
+  border-radius:18px;padding:1.4rem 1.5rem 1.5rem;max-height:90vh;overflow:auto}
+.modal-head{display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;margin-bottom:.6rem}
+.modal .tlabel{display:block;margin:.85rem 0 .35rem}
+.modal-actions{display:flex;justify-content:flex-end;gap:.7rem;margin-top:1rem}
+
+@media(max-width:680px){ .tmpl-row{grid-template-columns:1fr} }

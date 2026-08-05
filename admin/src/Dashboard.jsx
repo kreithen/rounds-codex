@@ -3,13 +3,37 @@ import { supabase } from "./supabase.js";
 import Newsletters from "./Newsletters.jsx";
 import Inbox from "./Inbox.jsx";
 import Users from "./Users.jsx";
+import Emails from "./Emails.jsx";
+import { SUPABASE_URL } from "./config.js";
+
+const FN_BASE = SUPABASE_URL.replace(/\/$/, "") + "/functions/v1";
+
+async function callFn(name, body) {
+  const { data } = await supabase.auth.getSession();
+  const token = data?.session?.access_token;
+  const res = await fetch(`${FN_BASE}/${name}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Authorization: `Bearer ${token ?? ""}` },
+    body: JSON.stringify(body || {}),
+  });
+  let payload = null;
+  try { payload = await res.json(); } catch { /* noop */ }
+  if (!res.ok) throw new Error(payload?.error || `Request failed (${res.status})`);
+  return payload;
+}
 
 export default function Dashboard({ session }) {
   const [state, setState] = useState("loading"); // loading | denied | error | ready
   const [rows, setRows] = useState([]);
   const [err, setErr] = useState("");
   const [q, setQ] = useState("");
-  const [tab, setTab] = useState("signups"); // signups | inbox | newsletters
+  const [tab, setTab] = useState("signups"); // signups | users | inbox | newsletters | emails
+  const [compose, setCompose] = useState(null); // { email, subject, body }
+  const [composeBusy, setComposeBusy] = useState(false);
+  const [composeMsg, setComposeMsg] = useState("");
+  const [composeErr, setComposeErr] = useState("");
+  const [rowBusy, setRowBusy] = useState("");    // id being deleted
+  const [notice, setNotice] = useState("");
 
   async function load() {
     setState("loading");
@@ -71,6 +95,39 @@ export default function Dashboard({ session }) {
     URL.revokeObjectURL(url);
   }
 
+  async function deleteSignup(r) {
+    if (!window.confirm(`Delete ${r.email} from signups? This can't be undone.`)) return;
+    setRowBusy(r.id); setNotice(""); setErr("");
+    const { error } = await supabase.from("signups").delete().eq("id", r.id);
+    setRowBusy("");
+    if (error) { setErr(error.message); return; }
+    setRows((rs) => rs.filter((x) => x.id !== r.id));
+    setNotice(`Deleted ${r.email}.`);
+  }
+
+  function openCompose(email) {
+    setComposeMsg(""); setComposeErr("");
+    setCompose({ email, subject: "", body: "" });
+  }
+
+  async function sendCompose() {
+    if (!compose) return;
+    if (!compose.subject.trim() || !compose.body.trim()) { setComposeErr("Add a subject and a message."); return; }
+    setComposeBusy(true); setComposeErr(""); setComposeMsg("");
+    try {
+      await callFn("send-email", {
+        to: compose.email,
+        subject: compose.subject.trim(),
+        body_text: compose.body,
+        mailbox: "admin@roundscodex.com",
+      });
+      setComposeMsg("Sent.");
+      setCompose(null);
+      setNotice(`Emailed ${compose.email} from admin@roundscodex.com.`);
+    } catch (e) { setComposeErr(e.message); }
+    setComposeBusy(false);
+  }
+
   if (state === "loading") return <div className="center muted">Loading dashboard…</div>;
 
   if (state === "denied")
@@ -102,6 +159,7 @@ export default function Dashboard({ session }) {
           <button className={"tab" + (tab === "users" ? " on" : "")} onClick={() => setTab("users")}>Users</button>
           <button className={"tab" + (tab === "inbox" ? " on" : "")} onClick={() => setTab("inbox")}>Inbox</button>
           <button className={"tab" + (tab === "newsletters" ? " on" : "")} onClick={() => setTab("newsletters")}>Newsletters</button>
+          <button className={"tab" + (tab === "emails" ? " on" : "")} onClick={() => setTab("emails")}>Emails</button>
         </nav>
         <div className="who">
           {session.user.email}
@@ -115,6 +173,8 @@ export default function Dashboard({ session }) {
         <Inbox session={session} />
       ) : tab === "users" ? (
         <Users session={session} />
+      ) : tab === "emails" ? (
+        <Emails session={session} />
       ) : (
       <>
       <section className="tiles">
@@ -151,28 +211,62 @@ export default function Dashboard({ session }) {
         </div>
       </div>
 
+      {notice && <p className="note-ok">{notice}</p>}
+      {err && <p className="err">{err}</p>}
+
       <div className="tablewrap">
         <table>
           <thead>
-            <tr><th>Email</th><th>Role</th><th>Status</th><th>Source</th><th>Joined</th></tr>
+            <tr><th>Email</th><th>Role</th><th>Status</th><th>Source</th><th>Joined</th><th></th></tr>
           </thead>
           <tbody>
             {filtered.map((r) => (
               <tr key={r.id}>
-                <td className="mono">{r.email}</td>
+                <td className="mono">
+                  <button className="link-email" onClick={() => openCompose(r.email)} title="Email this person from admin@roundscodex.com">{r.email}</button>
+                </td>
                 <td>{r.role || "—"}</td>
                 <td><span className={"pill " + (r.status || "")}>{r.status}</span></td>
                 <td>{r.source}</td>
                 <td>{fmtDate(r.created_at)}</td>
+                <td className="row-actions">
+                  <button className="link" onClick={() => openCompose(r.email)} disabled={rowBusy === r.id}>Email</button>
+                  <button className="link danger" onClick={() => deleteSignup(r)} disabled={rowBusy === r.id}>{rowBusy === r.id ? "…" : "Delete"}</button>
+                </td>
               </tr>
             ))}
             {filtered.length === 0 && (
-              <tr><td colSpan="5" className="empty">No signups match.</td></tr>
+              <tr><td colSpan="6" className="empty">No signups match.</td></tr>
             )}
           </tbody>
         </table>
       </div>
       </>
+      )}
+
+      {compose && (
+        <div className="modal-back" onClick={() => !composeBusy && setCompose(null)}>
+          <div className="modal" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-head">
+              <div>
+                <div className="tmpl-title">New email</div>
+                <div className="muted fine">To {compose.email} · from admin@roundscodex.com</div>
+              </div>
+              <button className="link" onClick={() => setCompose(null)} disabled={composeBusy}>Close</button>
+            </div>
+            <label className="tlabel">Subject</label>
+            <input value={compose.subject} onChange={(e) => setCompose((c) => ({ ...c, subject: e.target.value }))} autoFocus />
+            <label className="tlabel">Message</label>
+            <textarea rows={8} value={compose.body} onChange={(e) => setCompose((c) => ({ ...c, body: e.target.value }))} placeholder="Write your message…" />
+            {composeErr && <p className="err">{composeErr}</p>}
+            {composeMsg && <p className="note-ok">{composeMsg}</p>}
+            <div className="modal-actions">
+              <button className="btn ghost" onClick={() => setCompose(null)} disabled={composeBusy}>Cancel</button>
+              <button className="btn" onClick={sendCompose} disabled={composeBusy}>{composeBusy ? "Sending…" : "Send email"}</button>
+            </div>
+            <p className="muted fine" style={{ margin: ".6rem 0 0" }}>Their reply lands in your Inbox tab, and this message is saved to the thread.</p>
+          </div>
+        </div>
       )}
     </div>
   );
