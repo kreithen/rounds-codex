@@ -27,6 +27,9 @@ export default function Users({ session }) {
   const [msg, setMsg] = useState("");
   const [err, setErr] = useState("");
   const [q, setQ] = useState("");
+  const [compose, setCompose] = useState(null); // { email, subject, body }
+  const [composeBusy, setComposeBusy] = useState(false);
+  const [composeErr, setComposeErr] = useState("");
 
   async function load() {
     setLoading(true);
@@ -61,6 +64,39 @@ export default function Users({ session }) {
       setMsg(`Set-password link re-sent to ${addr}.`);
     } catch (e2) { setErr(e2.message); }
     setBusy("");
+  }
+
+  async function removeUser(u) {
+    if (!window.confirm(`Delete ${u.email}? This removes their account and login for good — it can't be undone.`)) return;
+    setBusy(u.id); setErr(""); setMsg("");
+    try {
+      await callFn("delete-user", { id: u.id, email: u.email });
+      setRows((rs) => rs.filter((x) => x.id !== u.id));
+      setMsg(`Deleted ${u.email}.`);
+    } catch (e2) { setErr(e2.message); }
+    setBusy("");
+  }
+
+  function openCompose(email) {
+    setComposeErr("");
+    setCompose({ email, subject: "", body: "" });
+  }
+
+  async function sendCompose() {
+    if (!compose) return;
+    if (!compose.subject.trim() || !compose.body.trim()) { setComposeErr("Add a subject and a message."); return; }
+    setComposeBusy(true); setComposeErr("");
+    try {
+      await callFn("send-email", {
+        to: compose.email,
+        subject: compose.subject.trim(),
+        body_text: compose.body,
+        mailbox: "admin@roundscodex.com",
+      });
+      setCompose(null);
+      setMsg(`Emailed ${compose.email} from admin@roundscodex.com.`);
+    } catch (e2) { setComposeErr(e2.message); }
+    setComposeBusy(false);
   }
 
   const filtered = useMemo(() => {
@@ -110,18 +146,48 @@ export default function Users({ session }) {
               <tr><td colSpan="5" className="empty">No users yet. Invite your first above.</td></tr>
             ) : filtered.map((r) => (
               <tr key={r.id}>
-                <td className="mono">{r.email}</td>
+                <td className="mono">
+                  <button className="link-email" onClick={() => openCompose(r.email)} title="Email this person from admin@roundscodex.com">{r.email}</button>
+                </td>
                 <td>{r.school || "—"}</td>
                 <td><span className={"pill " + (r.status === "active" ? "sent" : r.status === "disabled" ? "canceled" : "draft")}>{r.status}</span></td>
                 <td>{fmtDate(r.created_at)}</td>
-                <td>{r.status !== "active" && (
-                  <button className="link" onClick={() => resend(r.email)} disabled={!!busy}>{busy === r.email ? "…" : "Resend"}</button>
-                )}</td>
+                <td className="row-actions">
+                  <button className="link" onClick={() => openCompose(r.email)} disabled={!!busy}>Email</button>
+                  {r.status !== "active" && (
+                    <button className="link" onClick={() => resend(r.email)} disabled={!!busy}>{busy === r.email ? "…" : "Resend"}</button>
+                  )}
+                  <button className="link danger" onClick={() => removeUser(r)} disabled={!!busy}>{busy === r.id ? "…" : "Delete"}</button>
+                </td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
+
+      {compose && (
+        <div className="modal-back" onClick={() => !composeBusy && setCompose(null)}>
+          <div className="modal" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-head">
+              <div>
+                <div className="tmpl-title">New email</div>
+                <div className="muted fine">To {compose.email} · from admin@roundscodex.com</div>
+              </div>
+              <button className="link" onClick={() => setCompose(null)} disabled={composeBusy}>Close</button>
+            </div>
+            <label className="tlabel">Subject</label>
+            <input value={compose.subject} onChange={(e) => setCompose((c) => ({ ...c, subject: e.target.value }))} autoFocus />
+            <label className="tlabel">Message</label>
+            <textarea rows={8} value={compose.body} onChange={(e) => setCompose((c) => ({ ...c, body: e.target.value }))} placeholder="Write your message…" />
+            {composeErr && <p className="err">{composeErr}</p>}
+            <div className="modal-actions">
+              <button className="btn ghost" onClick={() => setCompose(null)} disabled={composeBusy}>Cancel</button>
+              <button className="btn" onClick={sendCompose} disabled={composeBusy}>{composeBusy ? "Sending…" : "Send email"}</button>
+            </div>
+            <p className="muted fine" style={{ margin: ".6rem 0 0" }}>Their reply lands in your Inbox tab, and this message is saved to the thread.</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
