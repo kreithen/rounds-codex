@@ -653,3 +653,55 @@ typo. **It is the most reproducible fault in the whole log** and should be the e
 
 Cyan on all three, as on `depression`, `anxiety` and `withdrawal` 1–5; `bipolar` and
 `schizophrenia` are the two purple ones. Five of seven Psychiatry galleries cyan, two purple.
+
+---
+
+## Batch 2026-08-05 — `osteoarthritis` pages 1–5 (MSK & Rheum, M19.90)
+
+Five pages, delivered shuffled (2, 4, 3, 1, 5), every footer page number agreeing with its header.
+All five distinct, no re-sends, footer status cells clean. Dots read at 3x off the source pages.
+
+### A THIRD page template — the headline of this batch
+
+Evidence side by side: `DOTS-evidence/template-v3-vs-v2-footer.jpg`.
+
+| | the 93 shipped galleries | this batch |
+|---|---|---|
+| footer labels | `IMAGE TITLE`, `CATEGORY`, `MODALITY`, `CLINICAL SOURCE` | `Image Title`, `Category`, `Modality`, `Clinical Source` |
+| shield mark | `RC` + square check | `RC` + filled circular check |
+| the CATEGORY cell | the **page type** — "Pathophysiology", "Physical Exam" | the **specialty** — "MSK & Rheum" on all five |
+| Clinical Source | one line per source | smaller type, tighter leading |
+
+**The CATEGORY cell now means something different.** On 930 published pages it names what kind of
+page you are looking at; here it repeats the specialty the header already shows. One happy side
+effect — the recurring "CATEGORY reads Pathophysiology on a clinical presentation page" fault
+cannot happen if the cell holds the specialty — but two galleries a tap apart would explain their
+own footers differently. **Please confirm which template is the standard**, because whichever it is,
+the other one is now the exception.
+
+### The dots
+
+| page | dots | filled at | |
+|---|---:|---:|---|
+| 1 | 10 | 1 | ok |
+| 2 | 10 | **1** | **wrong — row identical to page 1** |
+| 3 | 10 | **4** | wrong |
+| 4 | 10 | **5** | wrong |
+| 5 | 10 | **5** | **wrong — row identical to page 4** |
+
+**Second delivery running where the dot COUNT is correct on every page and the index is not**
+(`delirium` was the first). Two galleries in a row is no longer a coincidence: the count and the
+index are separate faults, and whatever was done to fix the count did not touch the index.
+
+Two pairs of pages carry an identical indicator. Pages 3 and 4 overshoot by one; pages 2 and 5
+simply repeat their neighbour. As with every previous batch there is no single offset that
+corrects it.
+
+Ring colour grey throughout — no orange, no stray cyan, no malformed glyph. Together with the
+correct counts, the *drawing* of the row is the cleanest it has been; only the fill index is wrong.
+
+### Everything else clean
+
+No spelling errors found in the artwork, every headline band agrees with its footer Image Title,
+clinical sources identical across all five pages and correctly attributed (ACR 2019, UpToDate).
+Four pages at 1024×1536, one at 1024×1535.

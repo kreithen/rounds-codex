@@ -31,12 +31,14 @@ circulation:
 | withdrawal (2026-08-04) | page 1 has **eleven**, page 6 has **nine**; five pages fill the wrong index; pages 7 and 8 fill the same one |
 | delirium (2026-08-04) | **count correct on all ten** — and pages **6, 7, 8 and 9 all fill dot 6** |
 | suicide (2026-08-04) | count wanders 10–11; five wrong indices, **overshooting** where withdrawal undershoots; pages 7 and 8 share a dot; page 10 has a **partial extra mark wedged between dots 6 and 7** |
+| osteoarthritis 1–5 (2026-08-05) | count correct on all five; four wrong indices, and **two pairs of pages draw an identical row** (1 = 2, 4 = 5) |
 
 **A wrong count is cosmetic. A wrong index tells the reader they are on a different page.**
 
-`delirium` is the important row: its count is right on all ten pages and four of its indices are
-still wrong, which proves the count and the index are separate faults. Fixing the count will not
-fix the index. And because `withdrawal` undershoots while `suicide` overshoots **in the same
+`delirium` and `osteoarthritis` are the important rows: the count is right on every page of both
+and the indices are still wrong, which proves the count and the index are separate faults. Fixing
+the count will not fix the index — and two deliveries running with clean counts suggests the count
+*was* fixed, while the index was never touched. And because `withdrawal` undershoots while `suicide` overshoots **in the same
 delivery**, there is no offset that could be applied downstream.
 
 The correct number is available in the template — `IMAGE n OF 10` is right on every page in every
@@ -49,11 +51,18 @@ The standard is **1024×1536**. Delivered sizes across recent batches: 1024×153
 Everything is resampled on our side, so nothing ships wrong, but a stable export would remove a
 step and the resample is a small quality loss for no reason.
 
-### Logo lockup
+### Logo lockup and footer template — now THREE versions
 
-Both the old RC-over-pulse mark and the new **RC☑ shield** are in circulation. Recent batches are
-all the new shield; older galleries on the site still carry the old one, which is why the two
-appear side by side in the app.
+Both the old RC-over-pulse mark and the **RC☑ shield** were already in circulation. The
+`osteoarthritis` batch of 2026-08-05 adds a third: `RC` with a **filled circular** check, Title Case
+footer labels instead of all caps, and — the part that matters — a **CATEGORY cell holding the
+specialty rather than the page type**.
+
+On 930 published pages CATEGORY names what kind of page it is. This template repeats the specialty
+the header already shows. It does make the recurring "CATEGORY reads Pathophysiology on a clinical
+presentation page" fault impossible, so it may be an intended fix, but it leaves two galleries a tap
+apart explaining their footers differently. **Needs a decision on which is standard.** Side-by-side
+evidence: `DOTS-evidence/template-v3-vs-v2-footer.jpg`.
 
 ### Specialty label colour
 
