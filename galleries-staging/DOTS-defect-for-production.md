@@ -705,3 +705,80 @@ correct counts, the *drawing* of the row is the cleanest it has been; only the f
 No spelling errors found in the artwork, every headline band agrees with its footer Image Title,
 clinical sources identical across all five pages and correctly attributed (ACR 2019, UpToDate).
 Four pages at 1024×1536, one at 1024×1535.
+
+---
+
+## Batch 2026-08-05 (evening) — `osteoarthritis` 6–10 and `preeclampsia` 1–10
+
+Fifteen pages: the second half of `osteoarthritis`, completing MSK & Rheum at 7 of 7, and
+`preeclampsia` whole, opening OB & Peds. All 15 distinct, no re-sends, every footer status cell
+clean, every headline band agreeing with its footer Image Title.
+
+### The most useful finding so far: the dot fault lives on pages 7, 8 and 9
+
+| page | `delirium` (08-04) | `preeclampsia` (08-05) |
+|---|---|---|
+| 1–6 | correct | correct |
+| **7** | **fills dot 6** | **fills dot 6** |
+| **8** | **fills dot 6** | **fills dot 6** |
+| **9** | **fills dot 6** | **fills dot 7** |
+| 10 | correct | correct |
+
+Two galleries, produced a day apart, with the **identical failure signature**: everything right
+except 7, 8 and 9, and pages 7 and 8 filling the same dot in both. `osteoarthritis` is the same
+shape with more noise: pages 7, 8 and 9 all fill dot 8, and its **count jumps from 10 to 11 at
+exactly page 7**.
+
+Three galleries pointing at the same three pages is not random. **Whatever generates pages 7–9 is
+not receiving the page number the rest of the sequence receives.** That is a far more specific
+starting point than anything in this log above, and it is where to look first.
+
+`preeclampsia` is also the **best gallery delivered to date** — seven of ten pages exactly right.
+The three that are wrong also drop to nine dots, so on those pages the count and the index fail
+together.
+
+### Correcting yesterday's conclusion
+
+`osteoarthritis` pages 1–5 arrived with correct counts, and this log concluded that the count had
+been fixed and only the index remained. Pages 6–10 then arrived with **eleven** dots. **A half
+gallery cannot settle a per-gallery question.** The count is still unstable; it now breaks later in
+the sequence rather than at the start.
+
+### `osteoarthritis` is internally inconsistent across its own two halves
+
+Both are cosmetic, but they are visible on the page and the gallery reads as two batches:
+
+| | pages 1–5 | pages 6–10 |
+|---|---|---|
+| Category cell | `MSK & Rheum` | `MSK & Rheumatology` |
+| Clinical Source | ACR Clinical Practice Guideline (2019) | ACR Appropriateness Criteria (2021) |
+| Modality | `Illustration` | `Illustration, Infographic` / `Gross Pathology Histology, Illustration` / `Illustration, Histology, MRI` |
+
+**The source change is not cosmetic and is not production's to fix.** "ACR Appropriateness
+Criteria" is the American College of **Radiology**; "ACR Clinical Practice Guideline" is the
+American College of **Rheumatology**. Radiology imaging-appropriateness criteria are exactly right
+on page 6 (Diagnostic Imaging) and wrong on page 9 (**Treatment & Management**), which should cite
+the rheumatology guideline that pages 1–5 already use. Pages 7, 8 and 10 are also attributed to the
+radiology criteria. Flagged for the physician, not for the artwork vendor.
+
+### Template variants — the two axes move independently
+
+Yesterday's note treated "Title Case labels + specialty in Category + circular check" as one new
+template. This batch separates them:
+
+| | label case | Category holds | shield |
+|---|---|---|---|
+| the 93 galleries before 08-05 | ALL CAPS | page type | square check |
+| `osteoarthritis` | Title Case | specialty | **circular** check |
+| `preeclampsia` | Title Case | specialty | **square** check |
+
+So the shield mark and the footer layout vary independently, and two galleries delivered in the
+same batch disagree on the shield. The question in the previous entry stands and gets sharper:
+**which footer layout is standard, and which shield?**
+
+### Clean on both
+
+No spelling errors found. `preeclampsia` cites ACOG Practice Bulletin No. 222 (2020) plus UpToDate
+identically on all ten pages — correctly attributed and internally consistent, which no other
+gallery this week managed. All ten `preeclampsia` pages are 1024×1536, the first delivery with no
+size drift at all.

@@ -1235,3 +1235,55 @@ guessing wrong locks the physician out. Written up with the exact fix in
   gaps: Oncology 14, Fluids & Electrolytes 12, Toxicology 9.
 - **The disclaimer gate is dead on the live site** — see above. Highest-priority open item, because
   it is the App Store Guideline 1.4.1 answer that `app-store-plan.md` relies on.
+
+
+---
+
+## v67 — MSK & Rheum complete: `osteoarthritis`, `preeclampsia` (2026-08-05, `0828a75`)
+
+Twenty pages, two galleries. **MSK & Rheum is 7 of 7** — the tenth complete category — and
+**OB & Peds opens at 1 of 6**. The app is at **95 galleries / 950 pages**.
+
+| id | condition | ICD-10 | note |
+|---|---|---|---|
+| `osteoarthritis` | Osteoarthritis | M19.90 | 1–5 in the morning, 6–10 the same evening |
+| `preeclampsia` | Preeclampsia & Eclampsia | O14.90 | all ten in one batch |
+
+Verified through `netlifysim.js`: 20 thumbnails decode, both viewers open a full 1024×1536 page,
+`verify_gallery_chain` passes at chain length 95 and wraps both ways, `verify_gallery_gestures`
+passes, font audit clean. Zero page errors.
+
+### The dot fault finally has a location
+
+`delirium` (v66) and `preeclampsia` (v67) have the **identical failure signature** — every page
+correct except 7, 8 and 9, with pages 7 and 8 filling the same dot in both. `osteoarthritis` is the
+same shape with more noise: 7, 8 and 9 all fill dot 8, and its count jumps from 10 to 11 at exactly
+page 7. Three galleries pointing at the same three pages is the first actionable lead in the whole
+defect log, and it went to production as the place to look first.
+
+`preeclampsia` is also the cleanest delivery received: seven of ten dots correct, sourcing
+consistent and correctly attributed on all ten pages (ACOG Practice Bulletin No. 222), no size
+drift, no spelling errors, no duplicate titles.
+
+### A correction to what v66's notes claimed
+
+When only `osteoarthritis` pages 1–5 were in hand, the notes recorded "the count is correct on all
+five" and concluded the count bug was fixed and only the index remained. Pages 6–10 then arrived at
+**eleven** dots. **A half gallery cannot settle a per-gallery question.** Corrected in
+`ARTWORK-CORRECTIONS.md`.
+
+### One for the physician, not for production
+
+`osteoarthritis` pages 1–5 cite *ACR Clinical Practice Guideline (2019)* and pages 6–10 cite
+*ACR Appropriateness Criteria (2021)*. Those are two different colleges — **Rheumatology** and
+**Radiology**. Imaging-appropriateness criteria are right on page 6 (Diagnostic Imaging) and wrong
+on page 9 (**Treatment & Management**), which should carry the rheumatology guideline the first
+half uses. Shipped as delivered, flagged.
+
+### Still open after this push
+
+- **Galleries 95/181.** Seven conditions from three more complete categories: `shock`,
+  `acute-abdomen`, `peds-fever-sepsis` (Emergency & Surgical → 3/3); `pressure-injury`, `burns`,
+  `wound-care`, `anaphylaxis` (Derm & Wounds → 4/4). Biggest remaining gaps: Oncology 14, Fluids &
+  Electrolytes 12, Toxicology 9.
+- **Which footer template and which shield are standard** — two galleries in one batch disagree.

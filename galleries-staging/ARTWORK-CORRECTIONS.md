@@ -31,14 +31,21 @@ circulation:
 | withdrawal (2026-08-04) | page 1 has **eleven**, page 6 has **nine**; five pages fill the wrong index; pages 7 and 8 fill the same one |
 | delirium (2026-08-04) | **count correct on all ten** — and pages **6, 7, 8 and 9 all fill dot 6** |
 | suicide (2026-08-04) | count wanders 10–11; five wrong indices, **overshooting** where withdrawal undershoots; pages 7 and 8 share a dot; page 10 has a **partial extra mark wedged between dots 6 and 7** |
-| osteoarthritis 1–5 (2026-08-05) | count correct on all five; four wrong indices, and **two pairs of pages draw an identical row** (1 = 2, 4 = 5) |
+| osteoarthritis (2026-08-05) | count 10 on pages 1–6 then **11 on 7–10**; seven wrong indices; pages 1=2, 4=5 and **7=8=9** all draw the same row |
+| preeclampsia (2026-08-05) | **the best gallery yet** — pages 1–6 and 10 all correct; only 7, 8 and 9 wrong, and those three drop to **nine** dots |
 
 **A wrong count is cosmetic. A wrong index tells the reader they are on a different page.**
 
-`delirium` and `osteoarthritis` are the important rows: the count is right on every page of both
-and the indices are still wrong, which proves the count and the index are separate faults. Fixing
-the count will not fix the index — and two deliveries running with clean counts suggests the count
-*was* fixed, while the index was never touched. And because `withdrawal` undershoots while `suicide` overshoots **in the same
+**The fault has a location: pages 7, 8 and 9.** `delirium` and `preeclampsia` now have the
+*identical* signature — every page correct except 7, 8 and 9, with 7 and 8 filling the same dot in
+both. `osteoarthritis` is the same shape with more noise around it: 7, 8 and 9 all fill dot 8, and
+its count switches from 10 to 11 at exactly page 7. Three galleries pointing at the same three
+pages is not randomness; something specific happens to pages 7–9 in production.
+
+That also supersedes what was written here yesterday. `osteoarthritis` pages 1–5 had correct counts
+and the conclusion drawn was "the count is fixed, the index is not" — pages 6–10 then arrived at
+**eleven** dots. **A half gallery cannot settle a per-gallery question**; the count is still
+unstable, it just breaks later in the sequence than it used to. And because `withdrawal` undershoots while `suicide` overshoots **in the same
 delivery**, there is no offset that could be applied downstream.
 
 The correct number is available in the template — `IMAGE n OF 10` is right on every page in every

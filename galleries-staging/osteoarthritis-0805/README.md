@@ -1,14 +1,14 @@
-# Osteoarthritis gallery — pages 1–5 received 2026-08-05
+# Osteoarthritis gallery — BUILT AND SHIPPED (v67, 2026-08-05)
 
 Condition **`osteoarthritis`** — Osteoarthritis, MSK & Rheum, ICD-10 M19.90. The header's ICD-10
 matches `content/conditions.json` exactly.
 
-**This is the last MSK & Rheum condition without a gallery.** It would be the **94th gallery** and
-would take MSK & Rheum to **7 of 7** — the tenth complete category, after Cardiac, Endocrine, GI,
-Heme & Onc, ID, Neurology, Psychiatry, Renal & GU and Respiratory.
+**This was the last MSK & Rheum condition without a gallery**, so the category is now **7 of 7** —
+the tenth complete one, after Cardiac, Endocrine, GI, Heme & Onc, ID, Neurology, Psychiatry,
+Renal & GU and Respiratory.
 
-**Half a gallery. Pages 6–10 still to come.** The builder asserts all ten pages, so it refuses
-rather than shipping short.
+Pages 1–5 arrived in the morning, 6–10 the same evening. **Built and live as the 94th gallery**,
+alongside `preeclampsia`.
 
 ## Page order and titles
 
@@ -22,70 +22,88 @@ footer's own page number agrees with its header. Arrived shuffled — 2, 4, 3, 1
 | 3 | Pathophysiology & Disease Process | `osteoarthritis-03.png` | `b3168791-…` |
 | 4 | Clinical Presentation | `osteoarthritis-04.png` | `8cfc79ef-…` |
 | 5 | Physical Examination | `osteoarthritis-05.png` | `e8100bcb-…` |
+| 6 | Diagnostic Imaging | `osteoarthritis-06.png` | `c2b054fe-…` |
+| 7 | Gross Pathology & Disease Progression | `osteoarthritis-07.png` | `8961cb6d-…` |
+| 8 | Histology & Cellular Pathophysiology | `osteoarthritis-08.png` | `b0be8982-…` |
+| 9 | Treatment & Management | `osteoarthritis-09.png` | `0a5b96c2-…` |
+| 10 | Clinical Pearl & Key Takeaways | `osteoarthritis-10.png` | `fdf198d0-…` |
 
-Every headline band agrees with its footer Image Title. Clinical sources: ACR Clinical Practice
-Guideline (2019) and UpToDate: Osteoarthritis Overview, identical on all five pages.
+Every headline band agrees with its footer Image Title.
+
+**The two halves cite different sources, and one of them is the wrong college.** Pages 1–5 cite
+*ACR Clinical Practice Guideline (2019)*; pages 6–10 cite *ACR Appropriateness Criteria (2021)*.
+"ACR" is doing double duty: the first is the American College of **Rheumatology**, the second the
+American College of **Radiology**. Imaging-appropriateness criteria are the right source for page 6
+(Diagnostic Imaging) and the wrong one for page 9 (**Treatment & Management**), which should carry
+the rheumatology guideline pages 1–5 use. Pages 7, 8 and 10 are also attributed to the radiology
+criteria. **This is a physician call, not an artwork defect** — flagged, shipped as delivered.
+
+The Category cell also disagrees across the halves: `MSK & Rheum` on 1–5, `MSK & Rheumatology` on
+6–10.
 
 The page 1 title overlaps pages 2 and 3 by naming anatomy and pathophysiology, but it is the
 overview page and its band reads *"THE MOST COMMON ARTHRITIS — A DISEASE OF THE WHOLE JOINT"*, so
 it is not the near-duplicate problem seen on `delirium` 3/7.
 
-## A THIRD page template is now in circulation
+## A new footer template — and the shield varies independently
 
-The biggest thing in this batch, and it is not a defect so much as a divergence. Side-by-side
-evidence: `DOTS-evidence/template-v3-vs-v2-footer.jpg`.
+Side-by-side evidence: `DOTS-evidence/template-v3-vs-v2-footer.jpg`.
 
-| | 93 shipped galleries | this batch |
-|---|---|---|
-| footer labels | `IMAGE TITLE`, `CATEGORY`, `MODALITY`, `CLINICAL SOURCE` — all caps | `Image Title`, `Category`, `Modality`, `Clinical Source` — Title Case |
-| shield mark | `RC` + a **square** check | `RC` + a **filled circular** check |
-| what CATEGORY holds | the page type — "Pathophysiology", "Physical Exam" | the **specialty** — "MSK & Rheum", the same on all five pages |
-| Clinical Source | one line per source | smaller type, tighter leading |
+| | the 93 galleries before today | `osteoarthritis` | `preeclampsia` (same batch) |
+|---|---|---|---|
+| footer labels | ALL CAPS | Title Case | Title Case |
+| what Category holds | the page type | the **specialty** | the **specialty** |
+| shield mark | square check | **circular** check | square check |
 
-**The CATEGORY change is the one that matters.** On every shipped gallery that cell names what kind
+**The Category change is the one that matters.** On every shipped gallery that cell names what kind
 of page it is; here it names the specialty, which the header already says. It does have one happy
 side effect — the "CATEGORY reads Pathophysiology on a clinical presentation page" bug cannot occur
 if the cell holds the specialty — but it is inconsistent with 930 published pages, and a reader
 moving between galleries will see the footer mean two different things.
 
-Worth deciding deliberately rather than absorbing: either this is the new standard and the other 93
-are legacy, or it is a regression to flag. **It does not block the build either way** — nothing in
-`content/galleries.json` reads the footer.
+The shield differs between two galleries delivered in the **same batch**, so the mark and the
+footer layout are varying independently rather than being one new template.
 
-## Header progress dots — four of five wrong, two pairs identical
+Worth deciding deliberately rather than absorbing. **It does not block the build either way** —
+nothing in `content/galleries.json` reads the footer.
+
+## Header progress dots — seven of ten wrong
 
 Read at 3x off the source pages. Evidence: `DOTS-evidence/osteoarthritis-p1-p5-dots.png`.
 
 | page | dots | filled at | |
 |---|---:|---:|---|
 | 1 | 10 | 1 | ok |
-| 2 | 10 | **1** | **wrong — the row is identical to page 1's** |
-| 3 | 10 | **4** | **wrong** |
-| 4 | 10 | **5** | **wrong** |
-| 5 | 10 | **5** | **wrong — the row is identical to page 4's** |
+| 2 | 10 | **1** | **wrong — row identical to page 1** |
+| 3 | 10 | **4** | wrong |
+| 4 | 10 | **5** | wrong |
+| 5 | 10 | **5** | **wrong — row identical to page 4** |
+| 6 | 10 | 6 | ok |
+| 7 | **11** | **8** | wrong |
+| 8 | **11** | 8 | index ok — **same dot as page 7** |
+| 9 | **11** | **8** | **wrong — same dot again** |
+| 10 | **11** | **11** | fills the last of eleven |
 
-**The count is correct on all five**, which is now the second delivery running where the count is
-clean and the index is not — `delirium` was the first. That keeps confirming the two are separate
-faults.
+**The count jumps from 10 to 11 at exactly page 7**, and pages 7, 8 and 9 all fill dot 8.
 
-Two pairs of pages carry an identical indicator (1 and 2, then 4 and 5). Pages 3 and 4 overshoot by
-one; pages 2 and 5 are duplicates of their neighbour. No single offset corrects it.
+When only pages 1–5 were in hand this README said "the count is correct on all five" and drew a
+conclusion about the count being fixed. Pages 6–10 then arrived at eleven dots. **A half gallery
+cannot settle a per-gallery question** — the note has been corrected in
+`ARTWORK-CORRECTIONS.md`.
 
 Ring colour is grey throughout — no orange, no stray cyan.
 
 ## Checks run
 
-- 5 files, 5 distinct — no duplicates.
-- Not a re-send: `triage_incoming_gallery.py` reported 0 already live, 0 possibly revised, 5 new.
-- All five footers pass the status-claim check.
+- Both halves: all files distinct, no duplicates.
+- Not a re-send: `triage_incoming_gallery.py` reported 0 already live, 0 possibly revised in both.
+- All ten footers pass the status-claim check.
+- No spelling errors found in the artwork.
 
 ## Page size
 
-Four at 1024×1536, page 4 at 1024×1535. The builder will resample.
+Eight at 1024×1536, one at 1024×1535, one at 1023×1537. The builder resampled.
 
-## When 6–10 arrive
+## Built with
 
-    python3 scripts/triage_incoming_gallery.py <incoming> --site /workspace/rounds-codex-app --out <out>
-    # add titles 6-10, then
-    mv titles-partial.json titles.json
     python3 scripts/build_galleries_from_images.py osteoarthritis=galleries-staging/osteoarthritis-0805
