@@ -34,14 +34,15 @@ It also costs you three other things:
 - **A demo account obligation.** Any login means App Review needs working credentials that stay
   working, and a review that can't sign in is an automatic rejection under 2.1.
 
-**Recommendation: ship v1 with no login.** Make it optional later if and when it does something —
-syncing progress across devices, or unlocking the subscription on the website. If the wall must
-stay for v1, it needs a visible "Continue without an account" path, and the demo account below
-becomes mandatory.
+**DECIDED 2026-08-05: v1 ships with no login.** The wall comes out before archiving. That settles
+the four consequences above — the privacy label goes back to "Data Not Collected", the demo account
+is not needed, the account-deletion requirement disappears, and the disclaimer collision resolves
+itself when the wall's element goes. Make an account optional later if it ever does something:
+syncing progress across devices, or unlocking the subscription on the website.
 
-This is your call and I have not touched the wall. But it is the difference between a likely pass
-and a likely rejection, so it should be a deliberate decision rather than an accident of what was
-on `main` at submission time.
+**Removing the wall is not just deleting the overlay** — check that nothing else now depends on it,
+and re-run both gallery suites afterwards. `scripts/rc_test_auth.js` becomes a no-op rather than a
+requirement, and should stay in place until the removal is verified.
 
 ### 2. A button that does nothing — Guideline 2.1 — two-minute fix
 
@@ -170,8 +171,9 @@ is the credibility claim, and unlike "clinically reviewed" it is true. And the e
 paragraph is in the listing, not just in the app — Guideline 1.4.1 reviewers look for it, and the
 plan already flagged that the listing needs its own.
 
-**Cut the PRIVACY paragraph if the login wall ships.** It would be inaccurate, and an inaccurate
-privacy claim in the description is a 2.3.1 problem on top of everything else.
+The PRIVACY paragraph is accurate as long as v1 ships without the login, which is the decision. If
+that ever reverses, cut the paragraph — an inaccurate privacy claim in the description is a 2.3.1
+problem on top of everything else.
 
 ### Keywords (100 characters, comma-separated, no spaces after commas)
 
@@ -221,7 +223,7 @@ changed for the user, not the build.
 Two answers depending on the login decision. Fill in whichever is true of the build you upload —
 this is a legal declaration, not marketing.
 
-**Without the login wall (recommended):**
+**Without the login wall — this is the decision for v1:**
 
 > **Data Not Collected.**
 
@@ -265,15 +267,8 @@ questionnaire asks about drug references, "clinical/educational" is the honest a
 
 ### Sign-in required?
 
-**If you ship without the login: No.** Simplest possible answer, and one less thing to break.
-
-**If the login ships: Yes**, and you must supply an account that works on review day and keeps
-working through any re-review. Create a dedicated one — not your own — and confirm it is
-email-verified before submitting, because a reviewer hitting an unverified-email wall files it as
-2.1 and you lose a review cycle.
-
-    Username: appreview@roundscodex.com
-    Password: (set one, and don't rotate it while a review is open)
+**No** — decided 2026-08-05, v1 has no account. Simplest possible answer and one less thing to
+break. No demo credentials needed.
 
 ### Notes (this is the highest-leverage field on the whole form)
 
@@ -355,8 +350,8 @@ Ordered so that if you stop partway, you've done the parts that matter.
 
 **Blockers — the submission cannot be completed or will likely be rejected**
 
-- [ ] **Decide the login.** Remove it for v1, or add "Continue without an account" plus in-app
-      account deletion plus a working demo account. See §1.
+- [ ] **Remove the login wall** (decided 2026-08-05). Then re-run both gallery suites and confirm
+      the first-run disclaimer appears — removing the wall should fix the id collision for free.
 - [ ] **Publish `/privacy` and `/terms`** as public URLs, reachable with no login
 - [ ] **Delete `robots.txt` and the `X-Robots-Tag` block in `_headers`** — otherwise the privacy
       policy is a page you've asked search engines to ignore

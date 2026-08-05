@@ -22,6 +22,11 @@ gets forgotten.
 > collected identifier. The rest of this section (one price, grandfathering via
 > `AppTransaction.originalAppVersion`) is unaffected; a subscription still needs no account. Worth a
 > deliberate decision rather than letting the two designs drift.
+>
+> **Decided 2026-08-05: v1 ships with NO login.** That restores "no accounts, no server, no login"
+> and the "Data Not Collected" label, removes the Guideline 5.1.1(v) rejection risk and the
+> account-deletion requirement that comes with it, and un-breaks the first-run disclaimer. What
+> you can still see without it is set out under "Seeing users, subscribers and money" below.
 
 ### Why one price
 
@@ -56,6 +61,107 @@ adding a backend later costs it.
 **A subscription does not by itself require an account.** StoreKit ties it to the Apple ID, so it
 already works across that person's iPhone and iPad. A backend is only needed to unlock the
 *website* with the same subscription, or to collect usage data. Neither is currently wanted.
+
+---
+
+## Seeing users, subscribers and money — with no login
+
+Decided 2026-08-05: **v1 ships with no account.** The question that follows is what you can still
+see. Answer: everything commercially useful, and none of it needs a login, an SDK or a line of code
+in the app. What you give up is knowing *who* anyone is — which for a medical study app is a
+feature.
+
+Nothing in this section changes the **"Data Not Collected"** privacy label. All of it is Apple
+reporting on its own infrastructure, not the app reporting on the user.
+
+### The three places the data lives
+
+**1. App Store Connect → Analytics ("App Analytics") — the audience**
+
+Impressions, product page views, conversion rate, first-time downloads, redownloads, total
+downloads, installs, deletions, sessions, active devices, active in the last 30 days, crashes, and
+**retention curves by download cohort** (day 1 / 7 / 28). Each of those breaks down by
+**territory, device, app version, OS version and source** — App Store Search vs Browse vs Web
+Referrer vs App Referrer, so you can see whether installs came from search or from a link someone
+shared.
+
+**The one caveat that matters:** usage metrics — sessions, active devices, retention — are computed
+only from users who agreed to share diagnostics and usage data with developers. It is a subset, and
+Apple does not gross it up. So treat *engagement* numbers as directional and trust *relative*
+movement between weeks more than the absolute figure. Downloads and money are complete counts, not
+samples.
+
+**2. Sales and Trends → Subscriptions — the subscribers** (once the paywall lands)
+
+Purpose-built for exactly this, no server required: active subscribers, new subscribers,
+cancellations, billing retry, grace period, refunds, upgrades and downgrades, **churn**, and
+**retention by subscriber cohort** — how many of January's subscribers are still paying in June.
+The **Subscription Events** report gives the same as a downloadable row-per-event CSV if you want it
+in a spreadsheet.
+
+**3. Payments and Financial Reports — the actual money**
+
+What Apple actually paid you, monthly, by region and currency, with tax withheld and Apple's
+commission broken out. These are the numbers for the accountant. Sales and Trends is the near
+real-time estimate; this is the settled figure. They will not match exactly and are not meant to.
+
+All three are also in the **App Store Connect app** on your phone.
+
+### What Apple will never give you
+
+**Age and gender do not exist in App Store Connect.** There is no such report, with or without a
+login. The only "demographic" Apple reports is **territory** — country and region — plus device
+class, which is a rough income proxy and nothing more.
+
+So Apple cannot tell you the thing you most want to know: **is this a nursing-student app or a
+med-student app?** That gap is not caused by having no login. A login would not fill it either
+unless you asked the question at sign-up, which is a different decision.
+
+### How to get the demographics anyway, without collecting anything
+
+Three routes, cheapest first.
+
+**A one-tap link out to a web survey.** Put "Help us make this better — 60 seconds" in the About
+page, opening a hosted form in Safari. The app collects nothing; it opens a URL. Nothing to declare,
+label untouched. Respondents self-select and skew engaged, so treat it as a mix estimate rather
+than a census — but for "what fraction are nursing students", a few hundred honest answers settles
+it. This is the recommended route.
+
+**Custom Product Pages, which measure the mix as a side effect.** App Store Connect allows up to
+35 alternate product pages, each with its own screenshots, its own URL, and **its own conversion
+metrics**. Build one aimed at nursing students and one at med students, put each link where that
+audience already is, and the conversion rates tell you which pitch lands — while the download
+totals tell you the mix. Free, and it doubles as marketing.
+
+**The website's own analytics.** `rounds-codex.netlify.app` is a separate audience from the app,
+and Netlify's server-log analytics is a paid add-on that needs no cookies and no JavaScript, so it
+does not touch the app's privacy label at all. It answers "which conditions do people actually read"
+in a way the app deliberately cannot.
+
+### The one real trade-off, stated plainly
+
+You will not know **which features people use**. Not how many opened a gallery, not which quizzes
+get abandoned, not whether the spaced-review queue is touched after week one. Apple gives you
+sessions and retention; it cannot give you in-app behaviour, because nothing in the app is watching.
+
+The tool that would answer it — a privacy-focused analytics SDK, or RevenueCat for subscriptions —
+is genuinely good, and RevenueCat in particular is free below a revenue threshold and would give
+much richer subscription analytics than Sales and Trends. **But any of them ends "Data Not
+Collected."** Even a well-behaved one declares Usage Data or an anonymous identifier, and the label
+becomes a list instead of two words.
+
+For a medical app sold to students, that label is worth more than the funnel data — and it is a
+one-way door in practice, because adding it later is a version note that says the app started
+collecting something. **Recommendation: ship with nothing, run the survey, and revisit only if a
+specific decision is blocked on behaviour data you cannot get any other way.**
+
+### What to do at launch
+
+- [ ] Turn on **App Store Connect notifications** for the milestones you'd otherwise check daily
+- [ ] Baseline the free period: downloads, day-7 and day-28 retention, and territory mix. This is
+      what tells you whether $5/month is right — a paid conversion target is meaningless without it
+- [ ] Stand up the survey form and link it from About
+- [ ] Build two Custom Product Pages before any marketing push, not after
 
 ---
 
