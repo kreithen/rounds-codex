@@ -9,6 +9,7 @@ about which decisions are genuine judgement calls.
 | file | subject | state |
 |---|---|---|
 | `trademark-plan.md` | the **name and logo** | search done, decision made, **nothing filed** |
+| `filing-day-checklist.md` | **the field-by-field form walkthrough** for filing day | ready to use once ID.me verification is done |
 | `Rounds-Codex-Copyright-Registration-Guide.pdf` | the **content** — 8 pages, written 2026-08-03 | guide written, **nothing filed** |
 | `tmSearchResults-2026-08-05-live.xlsx` | the 83 live USPTO marks, archived | analysed in `trademark-plan.md` |
 
