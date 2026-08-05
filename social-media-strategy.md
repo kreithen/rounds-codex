@@ -322,6 +322,9 @@ and any linked-out survey, not from analytics.
 - **First content batch: all four platforms at once**, from the same conditions (draw-once engine).
   See `social-content-batch-01.md`.
 
+- **All creative is 9:16 for now** (2026-08-05). Vertical only — Stories, Reels, TikTok, Shorts.
+  Hold off on 4:5 feed and 1:1 square crops until asked.
+
 Still open / sequencing:
 
 - **When to push traffic.** Accounts and batching start now; the traffic push waits on link
