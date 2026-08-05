@@ -779,6 +779,10 @@ that will be seen outside the app** — they exist so the copy and the decisions
   the privacy label, the review notes, and the four things that would get the app rejected.
 - `app-store-plan.md` — pricing and grandfathering, download size, Guidelines 4.2 and 1.4.1, and
   what is measurable with no login.
+- `legal/trademark-plan.md` — whether and how to trademark the name and logo. Short version: file
+  the **words** as a standard character mark before the logo, on an **intent-to-use** basis since
+  the app is unlaunched, and run the free USPTO search first because "Codex" is a crowded term.
+  **™ is free to use today; ® is illegal until registration issues.**
 - `LOGIN-WALL-id-collision.md` — the Supabase login wall took the disclaimer gate's element id, so
   the first-run medical disclaimer never appears. v1 ships with no login (decided 2026-08-05),
   which resolves it; until then, any headless test needs `scripts/rc_test_auth.js`.

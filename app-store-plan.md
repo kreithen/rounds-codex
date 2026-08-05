@@ -285,6 +285,10 @@ This should gate the **paid** launch even if it does not gate the free one.
       now, and they would keep the site invisible to search forever
 - [ ] Netlify failed-deploy email (nothing alerted for 16 hours on 2026-07-30)
 - [ ] Copyright registration — guide written at `legal/Rounds-Codex-Copyright-Registration-Guide.pdf`
+- [ ] **Free USPTO trademark search on ROUNDS CODEX** — `legal/trademark-plan.md`. Do this one
+      before the listing goes public: it is the only item here that could still change the name,
+      and the name is burned into 950 illustration footers.
+- [ ] Trademark application, standard character mark, filing basis 1(b) intent-to-use
 - [ ] Run `scripts/backup-rounds-codex.command` and test one restore
 - [ ] Four one-line content fixes: `bipolar` page 5 title, `schizophrenia` 7/9 and `anxiety` 7/8
       near-duplicate titles, `schizophrenia` page 1 citation year
