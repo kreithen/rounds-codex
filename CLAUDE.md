@@ -768,6 +768,21 @@ no backend. This file is context for future sessions — read it before starting
 - `app-integration-queue.md` — running checklist of live-app changes (what's built/deployed).
 - `usmle-build-status.md`, `resident-staging/*.md`, `galleries-staging/README.md` — build state.
 
+## Launch, marketing and the App Store
+Three files, each canonical for its own subject. **Read the relevant one before writing anything
+that will be seen outside the app** — they exist so the copy and the decisions do not drift.
+- **`marketing-brief.md`** — start here for anything marketing. Positioning, audience, channels,
+  the assets that exist, and **the claims policy** (in particular: never say "clinically reviewed"
+  — no independent medical review has been done, and "written by a physician" is the true and
+  stronger claim).
+- `app-store-submission-draft.md` — every App Store Connect field drafted to its character limit,
+  the privacy label, the review notes, and the four things that would get the app rejected.
+- `app-store-plan.md` — pricing and grandfathering, download size, Guidelines 4.2 and 1.4.1, and
+  what is measurable with no login.
+- `LOGIN-WALL-id-collision.md` — the Supabase login wall took the disclaimer gate's element id, so
+  the first-run medical disclaimer never appears. v1 ships with no login (decided 2026-08-05),
+  which resolves it; until then, any headless test needs `scripts/rc_test_auth.js`.
+
 ## How to work here (set by the user 2026-07-29)
 1. **Auto-execute standard, low-risk actions.** Reading files, benign terminal commands, creating
    code files, running tests, linting — just do them. No permission request.
