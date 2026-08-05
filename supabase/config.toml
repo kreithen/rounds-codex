@@ -38,6 +38,10 @@ verify_jwt = false
 [functions.send-email]
 verify_jwt = false
 
+# Permanently delete an app user (auth account + profile); verify_jwt off + manual admin check.
+[functions.delete-user]
+verify_jwt = false
+
 # One-time browser helper to exchange a Zoho grant code for a refresh token.
 [functions.zoho-connect]
 verify_jwt = false
