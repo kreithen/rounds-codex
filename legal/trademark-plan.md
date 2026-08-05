@@ -1,8 +1,9 @@
 # Trademark — recommendation and filing plan
 
-Written 2026-08-05. **I am not a lawyer and this is not legal advice.** It is a researched
-starting point so the conversation with an attorney is short and the decisions are already framed.
-USPTO fees and system names change — verify every number against uspto.gov before filing.
+Written 2026-08-05, fees verified 2026-08-05. **I am not a lawyer and this is not legal advice.**
+It is a researched starting point so the decisions are already framed. USPTO fees and system names
+change — the figures below were confirmed against secondary sources in August 2026 (uspto.gov still
+403s the build container), so re-check the fee page in Trademark Center at the moment of filing.
 
 Pairs with `legal/Rounds-Codex-Copyright-Registration-Guide.pdf`, which covers a different thing.
 See "Trademark is not copyright" below.
@@ -83,6 +84,27 @@ Fees are **per class**, so class choice is the main cost lever.
 
 Two classes is the sensible starting point. Three is defensible; each one adds a full application
 fee.
+
+### What it actually costs — verified 2026-08-05
+
+On **18 January 2025 the USPTO scrapped the old TEAS Plus / TEAS Standard tiers** and replaced them
+with a **single base application fee of $350 per class** for an electronic §1/§44 filing. So the
+plan here — `ROUNDS CODEX`, classes 9 + 41, §1(b) — has a **base government fee of $700**, provided
+the filing stays "complete."
+
+"Complete" is a fee term, not a vague one. Three surcharges turn the base fee into a higher one, and
+**all three are avoidable by how you fill the form**:
+
+| surcharge | when it hits | how to avoid it |
+|---|---:|---|
+| **+$200 per class** | free-form goods/services text **not** taken from the ID Manual | pick ID Manual entries — this is exactly what step 2 is for |
+| **+$100 per class** | "insufficient information" — a required field left incomplete | fill every field |
+| **+$200 per class** | each additional block of 1,000 characters in the identification | keep the goods/services wording tight |
+
+That +$200 free-form surcharge is the whole reason step 2 insists on ID Manual wording: on two
+classes, writing your own descriptions would add **$400** on top of the $700 for nothing. Later,
+after launch, the **Statement of Use has its own fee per class**, plus any extension-request fees if
+launch slips — budget for those separately (see the §1(b) section above).
 
 ## First search run — 2026-08-05
 
@@ -257,17 +279,41 @@ where a self-filer has the most leverage. Two rules:
    looking at plainly different goods. Narrow wording costs nothing and is the cheapest risk
    reduction available.
 
-**Draft wording, to verify against the ID Manual before use** — these are written in ID Manual
-style, not copied from it, because uspto.gov is unreachable from the build container:
+**You do not have to write this wording — you have to PICK it.** Trademark Center has the ID Manual
+search built into the goods/services step: you type a search term, it lists approved entries, you
+tick the ones you want and it inserts their exact pre-approved text. Selecting from that picker is
+what keeps you at the $350 base fee; typing your own sentence is the +$200-per-class free-form
+surcharge. So the task in step 2 is not "write a description" — it is "find the right approved
+entries." The drafts below are targets to search *for*, not text to paste.
 
-> **Class 9** — Downloadable educational software featuring instruction in medicine and nursing.
+**Draft wording, as search targets** — modelled on identifications that real medical/nursing
+education marks use (uspto.gov 403s the build container, so these are confirmed against approved
+third-party filings, not copied from the ID Manual itself):
+
+> **Class 9** — Downloadable computer software for providing educational instruction, testing, and
+> assessment in the fields of medicine and nursing; downloadable mobile applications for providing
+> educational instruction, testing, and assessment in the fields of medicine and nursing.
 
 > **Class 41** — Educational services, namely, providing online instruction in the fields of
-> medicine and nursing; providing online non-downloadable educational materials in the nature of
-> illustrated reference guides and practice examinations in the fields of medicine and nursing.
+> medicine and nursing; providing online non-downloadable illustrated reference guides and practice
+> examinations in the fields of medicine and nursing.
 
-Paste each phrase into the ID Manual search. If it returns an approved entry, use that entry's exact
-text. If it does not, adjust toward the nearest approved entry rather than inventing wording.
+**Exact search terms to type into the Trademark Center ID Manual picker**, in order — take the
+approved entry it returns rather than the draft above:
+
+- Class 9: `downloadable software educational instruction` → then narrow with `medicine`, `nursing`.
+  The "function or purpose + field" shape is mandatory in class 9: an entry must say what the
+  software *does* (educational instruction, testing, assessment) **and** name the field (medicine,
+  nursing) — a bare "educational software" will be refused. `mobile application` returns the app
+  variant; include both the software and the app entry.
+- Class 41: `providing on-line instruction` and `providing on-line non-downloadable` → narrow with
+  `medicine`, `nursing`. Note the USPTO spelling is **"on-line"** and the magic word is
+  **"non-downloadable"** — an online service described as "downloadable" reads as a class-9 good and
+  draws a query.
+
+If the picker has no entry that fits, adjust toward the nearest approved one rather than inventing
+wording — the free-form alternative both costs $200/class and is the commonest cause of an office
+action.
 
 **File both classes.** Class 41 is the friendlier one, but class 9 is where the app itself lives —
 filing 41 alone would leave the actual product unprotected. Narrow goods, both classes.

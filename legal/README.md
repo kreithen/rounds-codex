@@ -109,10 +109,12 @@ A design patent on the GUI's ornamental appearance is the only variant worth eve
 - [ ] **The provenance inventory above, verified by the physician.** Blocks the copyright filing.
 - [ ] Trademark: create the USPTO.gov account (identity verification has a lead time), lock the
       goods/services wording from the ID Manual, then file. Full detail in `trademark-plan.md`.
-- [ ] **Fee figures in both documents are unverified.** `uspto.gov` and `copyright.gov` are both
-      blocked from the build container, so neither could be checked from here. The physician was
-      asked to read the USPTO cost page and report back so `trademark-plan.md` can carry real
-      numbers instead of "verify before filing".
+- [x] **Trademark fees verified 2026-08-05** (via web tools, not uspto.gov, which still 403s the
+      container): **$350 per class** base fee since the 18 Jan 2025 restructure, so **$700 for
+      classes 9 + 41**, plus **+$200/class if the goods/services text is free-form** rather than
+      picked from the ID Manual. Recorded in `trademark-plan.md`. Re-check in Trademark Center at
+      filing time. **Copyright fees ($65 × 2) are still unverified** — `copyright.gov` was not
+      reachable; confirm before the copyright filing.
 - [ ] Decide on Netlify password protection before launch.
 - [ ] Freeze a dated deposit copy of content + code before filing — checklist item 3.
 
@@ -121,7 +123,8 @@ A design patent on the GUI's ornamental appearance is the only variant worth eve
 - **Verify every count against the live content before it goes on a form.** Both documents already
   contain stale numbers from being written days apart. A misstatement on a federal application is
   the specific risk both guides warn about.
-- Two filings at $65 each — website content and computer program — is the realistic budget, plus
-  trademark fees per class. Confirm all of it against the current schedules.
+- Two copyright filings at $65 each — website content and computer program — is the realistic
+  budget (still to confirm against copyright.gov), plus the **verified $700 trademark base fee**
+  ($350 × classes 9 and 41). Keep the goods/services text ID-Manual-picked to avoid +$200/class.
 - If running this session alongside a build session, **use a different branch** — both would
   otherwise commit to `claude/usmle-rounds-codex-module-bmpl61`.
