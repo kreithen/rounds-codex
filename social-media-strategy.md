@@ -311,9 +311,12 @@ and any linked-out survey, not from analytics.
   - Reddit user — [u/roundscodex](https://reddit.com/u/roundscodex)
   - **Reddit community — [r/RoundsCodex](https://reddit.com/r/RoundsCodex)** (owned home base)
   - Still open, worth grabbing: **Pinterest** and **YouTube**.
-- **Voice: brand, physician-forward.** "Rounds Codex" is the account; the voice makes clear one
-  practising physician draws and writes it. Keeps the differentiator, survives if the product
-  outgrows one person. Not a personal "Dr. Kreithen" account.
+- **Voice: brand, physician-forward — and FACELESS.** "Rounds Codex" is the account; the voice makes
+  clear one *practising physician* draws and writes it, but **the physician is never named and never
+  shown.** No name, no face, no personal photos, no talking-head video. "Written and illustrated by
+  a practising physician" is an anonymous claim — it delivers the credibility without the person.
+  Keeps the differentiator, survives if the product outgrows one person. Video is artwork + screen
+  recordings with on-screen text or voiceover — never a person on camera.
 - **Higgsfield: approved for the video arm, with the gate.** Generate Reels/Shorts from the real
   illustrations; **any generated clinical imagery and any credit spend go to Dr. Kreithen first.**
 - **First content batch: all four platforms at once**, from the same conditions (draw-once engine).
