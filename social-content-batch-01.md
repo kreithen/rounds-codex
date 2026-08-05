@@ -27,7 +27,8 @@ features, clinical-use framing, "Performance Analytics" — see the strategy doc
 **Subhead:** `A clinical study atlas — written and illustrated by a practising physician.`
 
 **Feature list (all real, all verified):**
-- 950 original full-page illustrations — every one drawn for this app
+- 1,000 original full-page illustrations — every one drawn for this app *(launch figure; 950 as of
+  2026-08-05 and climbing to 1,000 by launch — re-check before posting)*
 - 181 conditions across 21 specialties, in three modes: Nursing · Medical · Resident
 - 1,820 practice questions — a quiz on every condition
 - 1,010 USMLE-style items + 150 NCLEX-style items
