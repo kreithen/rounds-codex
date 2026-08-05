@@ -782,3 +782,50 @@ No spelling errors found. `preeclampsia` cites ACOG Practice Bulletin No. 222 (2
 identically on all ten pages — correctly attributed and internally consistent, which no other
 gallery this week managed. All ten `preeclampsia` pages are 1024×1536, the first delivery with no
 size drift at all.
+
+---
+
+## Batch 2026-08-05 (later) — `gdm` pages 1–5 — THE FIRST CLEAN DOTS
+
+Gestational Diabetes, OB & Peds, O24.419. Half a gallery, arrived shuffled (4, 5, 3, 2, 1), every
+footer page number agreeing with its header, all five distinct, no re-sends, footers clean.
+
+### Every dot row is correct
+
+| page | dots | filled at | |
+|---|---:|---:|---|
+| 1 | 10 | 1 | ok |
+| 2 | 10 | 2 | ok |
+| 3 | 10 | 3 | ok |
+| 4 | 10 | 4 | ok |
+| 5 | 10 | 5 | ok |
+
+**This has never happened before.** The best previous delivery was `preeclampsia` at seven of ten.
+Evidence crop: `DOTS-evidence/gdm-p1-p5-dots-ALL-CORRECT.png`.
+
+**Please pass this back to production as-is.** Every message they have received about the dots has
+been a defect report; this is the first one that says the row was drawn correctly, and it is worth
+them knowing which run produced it.
+
+**One caution, and it is this log's own rule.** A half gallery cannot settle a per-gallery question.
+`osteoarthritis` pages 1–5 were also clean, and its pages 6–10 then arrived at **eleven** dots. Do
+not conclude the template is fixed until all ten of these land clean.
+
+### Two new cosmetic elements
+
+- An **underline bar beneath the current dot** on pages 3 and 4, absent on 1, 2 and 5. New, and
+  inconsistently applied.
+- A **cyan-ringed dot at position 4 on page 3** — the same stray second marker as `delirium` 1–3.
+
+### The Category cell is now inconsistent WITHIN one gallery
+
+Four pages put the **specialty** in CATEGORY (`OB & Peds`), matching the new template. **Page 2 puts
+the page type** (`Anatomy`), matching the older one. Previously this inconsistency was between
+galleries; it is now inside a single gallery, page to page.
+
+Meanwhile the footer labels here are **ALL CAPS** and the shield is the **square** check — the older
+styling, carrying the newer Category semantics. **Three variables are moving independently now:**
+label case, what CATEGORY means, and the shield mark. Whichever combination is intended, it would
+help to name it and hold it.
+
+Minor: page 5's MODALITY reads `Clinical Illustration` where the others read `Illustration`.
