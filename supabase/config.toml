@@ -33,3 +33,11 @@ verify_jwt = true
 # App login-wall: admin invites a user; verify_jwt off + manual admin check.
 [functions.invite-user]
 verify_jwt = false
+
+# Compose a fresh email to a signup from admin@; verify_jwt off + manual admin check.
+[functions.send-email]
+verify_jwt = false
+
+# One-time browser helper to exchange a Zoho grant code for a refresh token.
+[functions.zoho-connect]
+verify_jwt = false

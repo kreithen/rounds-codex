@@ -51,7 +51,7 @@ token"). Do it once and it keeps working.
 1. In that Self Client, open the **Generate Code** tab.
 2. **Scope:** paste exactly:
    ```
-   ZohoMail.messages.READ,ZohoMail.accounts.READ
+   ZohoMail.accounts.READ,ZohoMail.folders.READ,ZohoMail.messages.READ
    ```
 3. **Time Duration:** 10 minutes. **Scope Description:** anything (e.g. "dashboard inbox").
 4. Click **Create** → pick your `roundscodex.com` portal if asked → copy the **code** it
