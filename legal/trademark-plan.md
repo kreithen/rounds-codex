@@ -84,12 +84,56 @@ Fees are **per class**, so class choice is the main cost lever.
 Two classes is the sensible starting point. Three is defensible; each one adds a full application
 fee.
 
+## First search run — 2026-08-05
+
+A wordmark search for `"Rounds Codex"` returned **653 results**. That number is a search artifact,
+not 653 conflicts: the engine matched any mark containing CODEX (or ROUNDS), and **every result on
+the first page was bare `CODEX`**. No `ROUNDS CODEX` mark surfaced — a useful negative, but not one
+that can be relied on until the result set is filtered down to something reviewable.
+
+**Filter before reading**: untick **Dead** (477 of the 653 — cancelled and abandoned marks cannot
+block anything, leaving 176 live), then tick classes **009** and **041** in the class filter. Only
+live marks in the classes being filed matter.
+
+Seen on page one and worth following up:
+
+| mark | status | class | note |
+|---|---|---|---|
+| CODEX | **LIVE, REGISTERED** | **009** | "Downloadable computer software and downloadable computer…" — **the one that matters**; same class as the app. Open it, read the full goods wording, record the serial and owner |
+| CODEX TECHNOLOGIES PBC INC | LIVE, pending | 036, 042 | only relevant if 042 is filed |
+| Fourthcodex, Inc. | DEAD, abandoned | 009 | no obstacle |
+| Codexis, Inc. | live | 001 | biochemical catalysts — unrelated |
+| Sirlin Games / Codex Chocolate / Codex Holdings | mixed | 028 / 030 / 035 | unrelated |
+
+Also run as separate searches: **`roundscodex`** as one word (how the domain reads, and how a
+smashed-together variant would register), and `codex` filtered to live + 009/041 for the crowding
+picture.
+
+**What to record for every live hit in class 9 or 41:** serial number, owner, full goods wording,
+status. That list is what turns an attorney consult from an open-ended search into a short
+conversation about specific marks.
+
+### Reading the result honestly
+
+This is the crowding risk, now concrete instead of theoretical. It is **not** a reason to change the
+name, and not a reason to panic. The legal test is not "does CODEX exist" — it is whether
+**ROUNDS CODEX as a whole**, in sound, appearance and commercial impression, is likely to confuse
+buyers *given related goods*. A distinctive first word sometimes carries a mark past an existing
+second word and sometimes does not, and that judgement is the thing an attorney is actually for.
+
+**If class 9 turns out to be genuinely blocked**, the fallbacks in rough order: file **class 41**
+(education services) alone; narrow the class 9 goods wording to medical-education software
+specifically rather than software at large; or rely on the composite word-plus-design mark. Do not
+abandon the name on one search result.
+
 ## Steps on uspto.gov
 
 1. **Search first — free, and do it before spending anything.** USPTO's trademark search is at
-   **tmsearch.uspto.gov**. Search `ROUNDS CODEX`, then `CODEX` alone in classes 9, 41 and 42, then
-   `ROUNDS` in the same classes. You are looking for a *likelihood of confusion*, which is broader
-   than an identical match — similar sound, appearance or meaning for related goods all count.
+   **tmsearch.uspto.gov**. Search `ROUNDS CODEX`, then `roundscodex`, then `CODEX` alone in classes
+   9, 41 and 42. **Filter to Live and to those classes** — an unfiltered search returns hundreds of
+   irrelevant hits, as the 2026-08-05 run showed. You are looking for a *likelihood of confusion*,
+   which is broader than an identical match — similar sound, appearance or meaning for related goods
+   all count.
 2. **Pick your goods/services wording from the USPTO ID Manual** rather than writing your own. Free-
    form descriptions attract extra fees under the current fee structure and are a common source of
    office actions. Search the manual for "downloadable software for medical education" and similar.
