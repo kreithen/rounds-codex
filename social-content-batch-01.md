@@ -9,7 +9,7 @@ bios, and the first content batch (4 conditions × 4 platforms). Written 2026-08
 >
 > **Numbers** are the verified 2026-08-05 inventory and drift weekly — re-check before posting.
 >
-> **Handles** are placeholders (`@roundscodex`) until the real ones are supplied. Link is
+> **Handles** are all `@roundscodex` (IG, TikTok, X, Facebook, Reddit u/ and r/RoundsCodex). Link is
 > `roundscodex.com`; until link previews + noindex are fixed, links render as bare URLs (hold the
 > traffic push — see strategy doc dependencies).
 
@@ -47,8 +47,8 @@ fabricated UI, no invented metrics.
 
 ## 2. Account bios
 
-Voice: brand, physician-forward. All claims-policy clean. Insert the real link once the destination
-(landing page or App Store) is live.
+Voice: brand, physician-forward. All claims-policy clean. Handles all `roundscodex`. Insert the real
+link once the destination (landing page or App Store) is live.
 
 **Instagram** (150 char):
 > A free, offline clinical study atlas. 181 conditions · 950 original illustrations — drawn & written
@@ -61,13 +61,26 @@ Voice: brand, physician-forward. All claims-policy clean. Insert the real link o
 > A free, offline clinical study atlas for nursing & med students. 181 conditions, 950 original
 > illustrations — written & illustrated by a practising physician. No tracking.
 
-**Reddit** (profile blurb):
+**Facebook Page** (short intro):
+> A free, offline clinical study atlas — 181 conditions, 950 original illustrations, written &
+> illustrated by a practising physician. No account, no ads, no tracking.
+
+**Reddit** (u/roundscodex profile blurb):
 > Physician. I built a free, offline clinical study atlas — 950 original illustrations, no account,
 > no ads. Here to be useful, not to spam.
 
-> **Reddit conduct (non-negotiable):** be useful first, link only when it genuinely answers the
-> question asked. One flagship "I made this free thing" post per relevant sub, at launch, after
-> reading that sub's self-promo rule. Never cross-post the same thing the same day.
+**r/RoundsCodex** (community sidebar/description):
+> The home of Rounds Codex — a free, offline clinical study atlas written & illustrated by a
+> practising physician. New illustrated galleries posted here first. Questions welcome.
+
+> **Reddit conduct (non-negotiable):** *r/RoundsCodex* is your own turf — post artwork and galleries
+> there freely. In the **big subs** (r/StudentNurse, r/medicalschool, r/step1…): be useful first,
+> link only when it genuinely answers the question asked. One flagship "I made this free thing" post
+> per relevant sub, at launch, after reading that sub's self-promo rule. Never cross-post the same
+> thing the same day.
+>
+> **Facebook conduct:** the Page mirrors IG; the reach is in **nursing-school groups** — be a useful
+> presence there, same be-useful-first rule as Reddit.
 
 ---
 
@@ -75,6 +88,10 @@ Voice: brand, physician-forward. All claims-policy clean. Insert the real link o
 
 Chosen because all four have illustrated galleries *and* narrated audio in the app, and Cardiac is
 the first specialty a visitor sees. Each condition yields four platform outputs from one sitting.
+
+**Two channels reuse the outputs below, no extra writing:** the **Facebook Page** cross-posts the IG
+carousel + caption verbatim, and **r/RoundsCodex** hosts the full carousel as a native image post
+(your own sub — no self-promo limit). The X and big-sub Reddit outputs stay as written.
 
 Recurring hashtag sets (edit per post, don't spray all of them):
 - **Nursing lean:** `#nursingstudent #nursingschool #nclex #studygram #futurenurse #rnstudent`
@@ -188,7 +205,8 @@ genuinely useful thing to mention when someone's working a CHA₂DS₂-VASc ques
 ## 4. Sign-off checklist for this batch
 
 - [ ] Dr. Kreithen verifies every `[verify]` / teaching line — medicine, not marketing.
-- [ ] Real handles inserted; `roundscodex.com` link confirmed live (or App Store link at launch).
+- [x] Real handles inserted (all `roundscodex`). [ ] `roundscodex.com` link confirmed live (or App
+      Store link at launch).
 - [ ] Link previews + noindex fixed before any post that drives traffic to a shared link.
 - [ ] Illustration exports pulled from the real galleries (CHF, ACS, AFib, HTN) at clean res.
 - [ ] Hashtag sets trimmed per post (not all at once).

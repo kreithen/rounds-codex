@@ -90,20 +90,24 @@ short vertical *video*, which is the most production-heavy format.
 - Realistic take: promising, not guaranteed. Treat it as an experiment with a high ceiling, not a
   commitment. Mirror every TikTok to Reels and YouTube Shorts so the production cost pays three times.
 
-### 3. Reddit — the right audience, the twitchiest about marketing
+### 3. Reddit — two tracks: the owned sub and the big subs
 
 Exactly where they are: r/StudentNurse, r/nursing, r/NCLEX, r/medicalschool, r/medicalschoolanki,
 r/step1, r/step2, r/Residency and specialty subs. High intent, but self-promo rules are strict and
-mods and users both punish anything that smells like an ad.
+mods and users both punish anything that smells like an ad. Run it as two tracks:
 
-- **Play: be useful first, link second.** Answer questions in your specialty, and link the free tool
-  *only when it genuinely answers the question asked.* A physician giving real answers is welcome; a
-  physician dropping a link is not.
-- **One flagship post per relevant sub, done right, at launch** — "I'm a physician, I drew a free
-  offline study atlas, no account, no ads, here it is" — can drive a real spike. Read each sub's
-  self-promo rule first; several require mod approval or a contribution ratio. Do not blanket-post.
-- Never post the same thing to multiple subs the same day — that's the fastest way to a sitewide
-  spam flag.
+- **Track A — r/RoundsCodex (owned home base).** Your subreddit, your rules: post artwork freely,
+  drop a new gallery per week, answer questions, seed the flagship-launch material here first. It's
+  also where a Reddit link *can* point without tripping self-promo etiquette. Early on it's tiny;
+  treat it as a portfolio + landing spot, not a traffic source, and grow it by inviting people you
+  genuinely help in the big subs.
+- **Track B — the big subs (be useful first, link second).** Answer questions in your specialty, and
+  link the free tool *only when it genuinely answers the question asked.* A physician giving real
+  answers is welcome; a physician dropping a link is not.
+  - **One flagship post per relevant sub, at launch**, done right — "I'm a physician, I drew a free
+    offline study atlas, no account, no ads, here it is." Read each sub's self-promo rule first;
+    several require mod approval or a contribution ratio. Never post the same thing to multiple subs
+    the same day — fastest route to a sitewide spam flag.
 
 ### 4. Pinterest — underrated for this exact asset
 
@@ -120,11 +124,14 @@ a content calendar.
 
 ### 6. Secondary / opportunistic
 
+- **Facebook Page + Groups** — the Page itself is a low-effort mirror of IG (cross-post carousels),
+  but the real value is **nursing-school Facebook groups**, which are large and active. Same rule as
+  Reddit: be a useful presence, don't spam. The Page is who you post/comment *as*.
 - **YouTube Shorts** — free mirror for every TikTok/Reel. Set-and-forget cross-post.
 - **LinkedIn** — not for students, but the *faculty and program-director* angle lives here. One
   post about the free-for-educators offer belongs on LinkedIn, tied to the faculty outreach in the
   brief.
-- **X/Twitter** — low priority for this audience; skip until there's spare capacity.
+- **X/Twitter** — low priority for this audience; a mirror channel, not a primary one.
 
 ---
 
@@ -266,10 +273,8 @@ and any linked-out survey, not from analytics.
 
 ## Pre-launch checklist (do these before pushing traffic)
 
-- [ ] **Secure handles** on IG, TikTok, Pinterest, YouTube, Reddit, LinkedIn — same name
-      everywhere. Do this today even if accounts stay quiet; names get taken.
-- [ ] **Decide the handle.** `roundscodex` is the obvious one; check availability across all six and
-      pick the one that's free everywhere over a perfect-on-one/taken-on-another split.
+- [x] **Handles secured** — `roundscodex` on IG, TikTok, X, Facebook, Reddit (u/ and r/RoundsCodex).
+- [ ] **Grab the remaining two** — Pinterest and YouTube as `roundscodex` before they're taken.
 - [ ] **Ship `og:`/`twitter:` tags + `<meta name="description">`** so shared links render cards.
       Throttles everything until done (see dependencies).
 - [ ] **Link-in-bio destination** — simplest is a section on `roundscodex.com` once it exists; a
@@ -298,8 +303,14 @@ and any linked-out survey, not from analytics.
 
 ## Decisions made (2026-08-05)
 
-- **Accounts exist:** Instagram, TikTok, Reddit, X (handles to be recorded here once supplied).
-  Pinterest and YouTube still worth grabbing.
+- **Accounts secured** (all `roundscodex`, consistent — good):
+  - Instagram — [@roundscodex](https://instagram.com/roundscodex)
+  - TikTok — [@roundscodex](https://tiktok.com/@roundscodex)
+  - X — [@roundscodex](https://x.com/roundscodex)
+  - Facebook Page — [/roundscodex](https://facebook.com/roundscodex)
+  - Reddit user — [u/roundscodex](https://reddit.com/u/roundscodex)
+  - **Reddit community — [r/RoundsCodex](https://reddit.com/r/RoundsCodex)** (owned home base)
+  - Still open, worth grabbing: **Pinterest** and **YouTube**.
 - **Voice: brand, physician-forward.** "Rounds Codex" is the account; the voice makes clear one
   practising physician draws and writes it. Keeps the differentiator, survives if the product
   outgrows one person. Not a personal "Dr. Kreithen" account.
