@@ -192,6 +192,44 @@ Safe evergreen bio line, reusable everywhere:
 
 ---
 
+## Brand assets and system
+
+Received 2026-08-05. The visual identity is settled; use it consistently across every account.
+
+- **Logo:** the EKG-circle mark + "Rounds Codex" wordmark (the R is styled as ℞). Use the on-black
+  version as the profile picture on every platform. Keep it identical everywhere — recognisability
+  beats per-platform cleverness.
+- **Banner / cover:** logo + tagline on the blue gradient — use as the header/cover on X, YouTube,
+  LinkedIn and the Reddit banner.
+- **Tagline:** **"Learn. Understand. Succeed."** Approved, no claims issue — safe to use anywhere.
+- **Palette:** near-black navy background, **electric cyan `#00c2ff`** as the primary accent (the
+  pulse line; matches the app's `--sec`), white wordmark. Mode accents from the app: **green**
+  (Nursing), **cyan** (Medical), **purple** (Clinical Updates). Keep posts in this palette so the
+  grid reads as one brand.
+- **Real screenshots are assets.** The actual app home screen (Nursing mode) is honest and
+  on-brand — real screenshots should carry the feed, not mockups.
+- **Domain:** `roundscodex.com` (the "join the list" destination; not live yet — see dependencies).
+
+### Assets that must NOT ship as-is — claims-policy flags
+
+The medical gate applies to marketing art the same way it applies to app content. Two received
+assets fail it:
+
+- **The "Coming Soon" poster** — breaks the policy multiple ways and invents features:
+  - *"data-driven guide … to decision-making confidence"* and *"Rapid bedside reference"* →
+    clinical-use framing; it is a study aid, not a bedside tool.
+  - *"Performance Analytics"* → the app has **no analytics and no tracking** (a selling point); the
+    line contradicts the product and edges into predicted-score territory the app refuses.
+  - *"THE OFFICIAL PATH…" / "OFFICIAL ACCESS LIST"* → "official" implies endorsement.
+  - *"3D Anatomical Analysis Grid," "4,500 Pattern Matrices," "5,200 Vocabulator," "Pattern
+    Recognition Matrices"* → **none are real features**; AI-hallucinated, and the body text is
+    garbled. Fabricated capabilities on a medical product cannot ship.
+  - Fix: keep the concept, rebuild it with the real verified inventory and honest headlines from
+    the real tagline. Get it re-approved by the physician.
+- **The OR/bedside lifestyle mockup** — the phone screen is illegible AI garble, and it depicts
+  bedside/OR use (the clinical-use framing the policy rules out). Usable only if the screen is
+  swapped for a real screenshot and it's framed as studying, not clinical use.
+
 ## Cadence (realistic for one person)
 
 | platform | cadence | effort |
