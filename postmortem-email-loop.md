@@ -95,11 +95,40 @@ Both were unit-tested against the real Zoho `fromAddress` format before deployin
 a genuine student email still survives the filter, which is the assertion that matters.
 
 Cleanup: 150 junk rows deleted from `messages` (11 real messages untouched). Cron re-enabled and
-verified over two cycles: sync works, zero new loop rows.
+verified over **twelve** cycles: sync runs every two minutes, zero new loop rows, zero alerts.
+
+That verification is stronger than it sounds. All 151 loop emails are **still sitting in the
+inbox**, so every cycle re-reads the whole pile and correctly refuses to ingest any of it. The
+guard is being exercised against the exact failure it exists to stop, continuously, rather than
+merely being untested in a quiet mailbox.
+
+### The Zoho grant is READ-ONLY — found while trying to clean up
+
+An attempt to move the loop emails to Trash from a one-off edge function failed:
+
+    401 INVALID_OAUTHSCOPE
+
+The OAuth grant `zoho-connect` stored can list folders and read messages. **It cannot move, modify
+or delete them.** The dry run was correct — `admin@` matched 151 of 157 scanned, `teacher@` matched
+0 of 5 — but nothing was changed, `moved: 0`.
+
+**This is a good property, not an obstacle.** It is also the most reassuring single fact about the
+incident: even holding those credentials, the integration could never have destroyed mail. Widening
+the grant to include write scope, permanently, so that one cleanup could be automated instead of
+taking twenty seconds by hand, is a bad trade. The cleanup was left to the mailbox owner.
+
+The `purge-loop-mail` function was neutered (returns `410`, whole story in a header comment) rather
+than left live. There is no MCP call to delete an edge function, so it needs removing by hand from
+Supabase → Edge Functions.
 
 ### Still outstanding
 
-- **The ~150 emails are still in the Zoho mailbox itself.** Only the database rows were deleted.
+- **The 151 emails are still in the Zoho mailbox itself.** Only the database rows were deleted.
+  Clean up in Zoho by searching the **subject** phrase `in the Rounds Codex inbox` — *not* by
+  sender, because `hello@` is also the launch-list welcome sender and a from-based sweep could
+  catch real subscriber mail. A standing Zoho filter on that subject → Trash is the durable
+  version, and needs no permission change.
+- **Delete the `purge-loop-mail` edge function.**
 - **Point `ALERT_TO` at an address that is not a watched mailbox** — the third layer. Worth doing
   even though it is no longer load-bearing.
 - **`messages` has no unique constraint on `zoho_message_id`**, so the `resolution=ignore-duplicates`
