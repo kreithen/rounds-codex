@@ -4,6 +4,7 @@ import Newsletters from "./Newsletters.jsx";
 import Inbox from "./Inbox.jsx";
 import Users from "./Users.jsx";
 import Emails from "./Emails.jsx";
+import Texts from "./Texts.jsx";
 import { SUPABASE_URL } from "./config.js";
 
 const FN_BASE = SUPABASE_URL.replace(/\/$/, "") + "/functions/v1";
@@ -34,6 +35,9 @@ export default function Dashboard({ session }) {
   const [composeErr, setComposeErr] = useState("");
   const [rowBusy, setRowBusy] = useState("");    // id being deleted
   const [notice, setNotice] = useState("");
+  const [sms, setSms] = useState(null);          // { phone, name, body }
+  const [smsBusy, setSmsBusy] = useState(false);
+  const [smsErr, setSmsErr] = useState("");
 
   async function load() {
     setState("loading");
@@ -129,6 +133,27 @@ export default function Dashboard({ session }) {
     setComposeBusy(false);
   }
 
+  function openSms(r) {
+    setSmsErr("");
+    setSms({ phone: r.phone, name: r.name || r.email, body: "" });
+  }
+
+  async function sendSms() {
+    if (!sms) return;
+    if (!sms.body.trim()) { setSmsErr("Write a message first."); return; }
+    setSmsBusy(true); setSmsErr("");
+    try {
+      const res = await callFn("send-sms", { to: sms.phone, body: sms.body });
+      setSms(null);
+      setNotice(res.sent ? `Texted ${sms.phone}.` : `Text not sent: ${res.errors?.[0] || "failed"}.`);
+    } catch (e) {
+      setSmsErr(e.message.includes("not configured")
+        ? "SMS isn't connected yet — add your provider number + key first."
+        : e.message);
+    }
+    setSmsBusy(false);
+  }
+
   if (state === "loading") return <div className="center muted">Loading dashboard…</div>;
 
   if (state === "denied")
@@ -161,6 +186,7 @@ export default function Dashboard({ session }) {
           <button className={"tab" + (tab === "inbox" ? " on" : "")} onClick={() => setTab("inbox")}>Inbox</button>
           <button className={"tab" + (tab === "newsletters" ? " on" : "")} onClick={() => setTab("newsletters")}>Newsletters</button>
           <button className={"tab" + (tab === "emails" ? " on" : "")} onClick={() => setTab("emails")}>Emails</button>
+          <button className={"tab" + (tab === "texts" ? " on" : "")} onClick={() => setTab("texts")}>Texts</button>
         </nav>
         <div className="who">
           {session.user.email}
@@ -176,6 +202,8 @@ export default function Dashboard({ session }) {
         <Users session={session} />
       ) : tab === "emails" ? (
         <Emails session={session} />
+      ) : tab === "texts" ? (
+        <Texts session={session} />
       ) : (
       <>
       <section className="tiles">
@@ -234,6 +262,7 @@ export default function Dashboard({ session }) {
                 <td>{fmtDate(r.created_at)}</td>
                 <td className="row-actions">
                   <button className="link" onClick={() => openCompose(r.email)} disabled={rowBusy === r.id}>Email</button>
+                  {r.phone && <button className="link" onClick={() => openSms(r)} disabled={rowBusy === r.id}>Text</button>}
                   <button className="link danger" onClick={() => deleteSignup(r)} disabled={rowBusy === r.id}>{rowBusy === r.id ? "…" : "Delete"}</button>
                 </td>
               </tr>
@@ -268,6 +297,28 @@ export default function Dashboard({ session }) {
               <button className="btn" onClick={sendCompose} disabled={composeBusy}>{composeBusy ? "Sending…" : "Send email"}</button>
             </div>
             <p className="muted fine" style={{ margin: ".6rem 0 0" }}>Their reply lands in your Inbox tab, and this message is saved to the thread.</p>
+          </div>
+        </div>
+      )}
+
+      {sms && (
+        <div className="modal-back" onClick={() => !smsBusy && setSms(null)}>
+          <div className="modal" onClick={(e) => e.stopPropagation()}>
+            <div className="modal-head">
+              <div>
+                <div className="tmpl-title">New text</div>
+                <div className="muted fine">To {sms.name} · {sms.phone}</div>
+              </div>
+              <button className="link" onClick={() => setSms(null)} disabled={smsBusy}>Close</button>
+            </div>
+            <label className="tlabel">Message</label>
+            <textarea rows={5} value={sms.body} onChange={(e) => setSms((s) => ({ ...s, body: e.target.value }))} placeholder="Write your text…" autoFocus />
+            <div className="txt-meta"><span>{sms.body.length} chars · {sms.body.length ? Math.ceil(sms.body.length / 160) : 0} segment(s)</span></div>
+            {smsErr && <p className="err">{smsErr}</p>}
+            <div className="modal-actions">
+              <button className="btn ghost" onClick={() => setSms(null)} disabled={smsBusy}>Cancel</button>
+              <button className="btn" onClick={sendSms} disabled={smsBusy}>{smsBusy ? "Sending…" : "Send text"}</button>
+            </div>
           </div>
         </div>
       )}

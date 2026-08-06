@@ -42,6 +42,10 @@ verify_jwt = false
 [functions.delete-user]
 verify_jwt = false
 
+# Send SMS (single or batch) via the configured provider; verify_jwt off + manual admin check.
+[functions.send-sms]
+verify_jwt = false
+
 # One-time browser helper to exchange a Zoho grant code for a refresh token.
 [functions.zoho-connect]
 verify_jwt = false
