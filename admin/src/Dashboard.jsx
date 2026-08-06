@@ -5,6 +5,7 @@ import Inbox from "./Inbox.jsx";
 import Users from "./Users.jsx";
 import Emails from "./Emails.jsx";
 import Texts from "./Texts.jsx";
+import Codes from "./Codes.jsx";
 import { SUPABASE_URL } from "./config.js";
 
 const FN_BASE = SUPABASE_URL.replace(/\/$/, "") + "/functions/v1";
@@ -187,6 +188,7 @@ export default function Dashboard({ session }) {
           <button className={"tab" + (tab === "newsletters" ? " on" : "")} onClick={() => setTab("newsletters")}>Newsletters</button>
           <button className={"tab" + (tab === "emails" ? " on" : "")} onClick={() => setTab("emails")}>Emails</button>
           <button className={"tab" + (tab === "texts" ? " on" : "")} onClick={() => setTab("texts")}>Texts</button>
+          <button className={"tab" + (tab === "codes" ? " on" : "")} onClick={() => setTab("codes")}>Codes</button>
         </nav>
         <div className="who">
           {session.user.email}
@@ -204,6 +206,8 @@ export default function Dashboard({ session }) {
         <Emails session={session} />
       ) : tab === "texts" ? (
         <Texts session={session} />
+      ) : tab === "codes" ? (
+        <Codes session={session} />
       ) : (
       <>
       <section className="tiles">
