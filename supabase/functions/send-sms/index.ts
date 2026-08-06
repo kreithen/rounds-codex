@@ -21,7 +21,6 @@
 const SUPABASE_URL = (Deno.env.get("SUPABASE_URL") ?? "").replace(/\/$/, "");
 const ANON_KEY = Deno.env.get("SUPABASE_ANON_KEY") ?? "";
 const SERVICE_ROLE = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
-const PROVIDER = (Deno.env.get("SMS_PROVIDER") ?? "twilio").toLowerCase();
 const CC = (Deno.env.get("SMS_DEFAULT_COUNTRY") ?? "1").replace(/\D/g, "");
 const BATCH_CAP = 500;
 
@@ -35,6 +34,35 @@ function json(body: unknown, status = 200) {
 }
 
 const svc = { apikey: SERVICE_ROLE, Authorization: `Bearer ${SERVICE_ROLE}`, "Content-Type": "application/json" };
+
+interface SmsCfg { provider: string; account_sid: string; auth_token: string; from_number: string; }
+
+// Config comes from the sms_config table first (managed server-side, no env
+// secrets to paste), falling back to env vars if the row is missing/empty.
+async function loadSmsConfig(): Promise<SmsCfg> {
+  const env: SmsCfg = {
+    provider: (Deno.env.get("SMS_PROVIDER") ?? "twilio").toLowerCase(),
+    account_sid: Deno.env.get("TWILIO_ACCOUNT_SID") ?? "",
+    auth_token: Deno.env.get("TWILIO_AUTH_TOKEN") ?? Deno.env.get("TELNYX_API_KEY") ?? "",
+    from_number: Deno.env.get("TWILIO_FROM") ?? Deno.env.get("TELNYX_FROM") ?? "",
+  };
+  try {
+    const r = await fetch(`${SUPABASE_URL}/rest/v1/sms_config?id=eq.1&select=provider,account_sid,auth_token,from_number`, { headers: svc });
+    if (r.ok) {
+      const rows = await r.json();
+      if (Array.isArray(rows) && rows.length) {
+        const x = rows[0];
+        return {
+          provider: (x.provider || env.provider).toLowerCase(),
+          account_sid: x.account_sid || env.account_sid,
+          auth_token: x.auth_token || env.auth_token,
+          from_number: x.from_number || env.from_number,
+        };
+      }
+    }
+  } catch (e) { console.error("sms_config read failed:", String(e)); }
+  return env;
+}
 
 async function requireAdmin(req: Request): Promise<string | null> {
   const token = (req.headers.get("Authorization") ?? "").replace(/^Bearer\s+/i, "").trim();
@@ -70,10 +98,10 @@ function segCount(body: string): number {
 
 interface SendResult { sid?: string; error?: string; }
 
-async function sendOne(to: string, body: string): Promise<SendResult> {
-  if (PROVIDER === "telnyx") {
-    const key = Deno.env.get("TELNYX_API_KEY") ?? "";
-    const from = Deno.env.get("TELNYX_FROM") ?? "";
+async function sendOne(to: string, body: string, cfg: SmsCfg): Promise<SendResult> {
+  if (cfg.provider === "telnyx") {
+    const key = cfg.auth_token;
+    const from = cfg.from_number;
     if (!key || !from) return { error: "Telnyx not configured" };
     const r = await fetch("https://api.telnyx.com/v2/messages", {
       method: "POST",
@@ -85,9 +113,9 @@ async function sendOne(to: string, body: string): Promise<SendResult> {
     return { sid: j?.data?.id };
   }
   // Twilio (default)
-  const sid = Deno.env.get("TWILIO_ACCOUNT_SID") ?? "";
-  const token = Deno.env.get("TWILIO_AUTH_TOKEN") ?? "";
-  const from = Deno.env.get("TWILIO_FROM") ?? "";
+  const sid = cfg.account_sid;
+  const token = cfg.auth_token;
+  const from = cfg.from_number;
   if (!sid || !token || !from) return { error: "Twilio not configured" };
   const form = new URLSearchParams({ To: to, Body: body });
   // TWILIO_FROM may be a phone number (From) or a Messaging Service SID (MG...).
@@ -149,6 +177,7 @@ Deno.serve(async (req) => {
   if (!recipients.length) return json({ error: "no recipients" }, 400);
   if (recipients.length > BATCH_CAP) return json({ error: `too many recipients (max ${BATCH_CAP} per send)` }, 400);
 
+  const cfg = await loadSmsConfig();
   const segments = segCount(body);
   let sent = 0, failed = 0;
   const errors: string[] = [];
@@ -157,16 +186,16 @@ Deno.serve(async (req) => {
     const norm = normalize(rcpt.phone);
     if (!norm) {
       failed++; errors.push(`${rcpt.phone}: invalid number`);
-      await log({ phone: rcpt.phone, name: rcpt.name, direction: "out", body, status: "failed", provider: PROVIDER, error: "invalid number", segments, sent_by: adminId });
+      await log({ phone: rcpt.phone, name: rcpt.name, direction: "out", body, status: "failed", provider: cfg.provider, error: "invalid number", segments, sent_by: adminId });
       continue;
     }
-    const res = await sendOne(norm, body);
+    const res = await sendOne(norm, body, cfg);
     if (res.error) {
       failed++; errors.push(`${norm}: ${res.error}`);
-      await log({ phone: norm, name: rcpt.name, direction: "out", body, status: "failed", provider: PROVIDER, error: res.error, segments, sent_by: adminId });
+      await log({ phone: norm, name: rcpt.name, direction: "out", body, status: "failed", provider: cfg.provider, error: res.error, segments, sent_by: adminId });
     } else {
       sent++;
-      await log({ phone: norm, name: rcpt.name, direction: "out", body, status: "sent", provider: PROVIDER, provider_sid: res.sid ?? null, segments, sent_by: adminId });
+      await log({ phone: norm, name: rcpt.name, direction: "out", body, status: "sent", provider: cfg.provider, provider_sid: res.sid ?? null, segments, sent_by: adminId });
     }
   }
 
