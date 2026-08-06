@@ -18,7 +18,7 @@ Everything else about marketing belongs here.
 ## The product, in one paragraph
 
 Rounds Codex is an offline clinical study reference for nursing students, medical students and
-residents, written and illustrated by Dr. Kreithen, a practising physician. The same 181 conditions
+residents, written and illustrated by a team of practicing clinicians. The same 181 conditions
 rewrite themselves across three modes — Nursing, Medical, Resident — so one library serves a student
 from first year through residency. It ships as a website today and as an iOS app at launch.
 
@@ -45,9 +45,9 @@ this category draws their own.
 
 ## Positioning
 
-**"Written and illustrated by a practising physician."** That is the whole differentiator and it is
-true. Competitors license stock art and crowdsource questions; every illustration and every question
-here has one clinical author.
+**"Written and illustrated by a team of practicing clinicians."** That is the whole differentiator
+and it is true. Competitors license stock art and crowdsource questions; every illustration and every
+question here is authored by clinicians.
 
 Three supporting claims, in order of strength:
 
@@ -61,9 +61,9 @@ Three supporting claims, in order of strength:
 
 **Never say "clinically reviewed", "physician-reviewed", "peer-reviewed", "verified" or
 "evidence-based" as a blanket claim about the content.** No independent medical review has been done.
-The content was authored and self-checked by one physician, which is exactly what "written by a
-physician" says and no more. `manifest.webmanifest` currently overclaims this and is on the
-submission checklist to fix.
+The content was authored and self-checked by the clinician team, which is exactly what "written and
+illustrated by a team of practicing clinicians" says and no more. `manifest.webmanifest` currently
+overclaims this and is on the submission checklist to fix.
 
 Also never:
 

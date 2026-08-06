@@ -19,7 +19,7 @@ Three assumptions this is built on. Change them and revisit the plan:
 ## The one-sentence strategy
 
 **Turn 950 physician-drawn illustrations into a steady feed of genuinely useful, free study
-material, so the artwork does the marketing and the "free, no-tracking, drawn by one physician"
+material, so the artwork does the marketing and the "free, no-tracking, drawn by clinicians"
 story travels on its own.**
 
 Everything below serves that. We are not running ads at students who punish ads. We are giving away
@@ -31,7 +31,7 @@ This audience — nursing and med students, residents — **rewards a free usefu
 marketing.** That is stated plainly in the brief and it governs everything. So:
 
 - The hero of every post is the *content*, not the app. The app is the payoff, not the pitch.
-- The differentiator is true and unfakeable: **"written and illustrated by a practising physician."**
+- The differentiator is true and unfakeable: **"written and illustrated by a team of practicing clinicians."**
   Competitors license stock art and crowdsource questions. Nobody else draws their own 950 pages.
   That is the whole story and it is honest.
 - **Free + no account + no tracking** is rare enough in this category to be a post all by itself,
@@ -179,7 +179,7 @@ Same register as a good attending on rounds. No hype, no emoji-spam, no "🔥 GA
 
 - **Never** "clinically reviewed", "physician-reviewed", "peer-reviewed", "verified", or
   "evidence-based" as a blanket claim. No independent review has happened. Say **"written and
-  illustrated by a practising physician"** — true, and stronger.
+  illustrated by a team of practicing clinicians"** — true, and stronger.
 - **Never** a predicted score, pass probability, or "raises your score by X." The product refuses
   to report one on purpose; an ad that promises one contradicts it.
 - **Never** clinical-use framing. It is a *study aid.* "Look it up on the ward" is the wrong
@@ -194,7 +194,7 @@ mechanics (scheduling, cropping, hashtags); it stops at medical correctness.
 
 Safe evergreen bio line, reusable everywhere:
 > A free, offline clinical study atlas — 181 conditions, 950 original illustrations, written and
-> illustrated by a practising physician. No account, no ads, no tracking. *(numbers drift weekly;
+> illustrated by a team of practicing clinicians. No account, no ads, no tracking. *(numbers drift weekly;
 > re-check before pasting)*
 
 ---
@@ -311,11 +311,11 @@ and any linked-out survey, not from analytics.
   - Reddit user — [u/roundscodex](https://reddit.com/u/roundscodex)
   - **Reddit community — [r/RoundsCodex](https://reddit.com/r/RoundsCodex)** (owned home base)
   - Still open, worth grabbing: **Pinterest** and **YouTube**.
-- **Voice: brand, physician-forward — and FACELESS.** "Rounds Codex" is the account; the voice makes
-  clear one *practising physician* draws and writes it, but **the physician is never named and never
-  shown.** No name, no face, no personal photos, no talking-head video. "Written and illustrated by
-  a practising physician" is an anonymous claim — it delivers the credibility without the person.
-  Keeps the differentiator, survives if the product outgrows one person. Video is artwork + screen
+- **Voice: brand, clinician-forward — and FACELESS.** "Rounds Codex" is the account; the voice makes
+  clear a *team of practicing clinicians* draws and writes it, but **the clinicians are never named and
+  never shown.** No names, no faces, no personal photos, no talking-head video. "Written and illustrated
+  by a team of practicing clinicians" is an anonymous claim — it delivers the credibility without the
+  people. Keeps the differentiator, survives as the product grows. Video is artwork + screen
   recordings with on-screen text or voiceover — never a person on camera.
 - **Higgsfield: approved for the video arm, with the gate.** Generate Reels/Shorts from the real
   illustrations; **any generated clinical imagery and any credit spend go to Dr. Kreithen first.**

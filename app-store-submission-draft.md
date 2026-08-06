@@ -64,8 +64,8 @@ text were authored and self-checked. And "AI study tutor" invites questions abou
 the answers.
 
 Under 1.4.1 medical apps get extra scrutiny, and an accuracy claim you can't support is worse than
-no claim. Every draft below says "written by a physician", which is true and is actually the
-stronger claim. **Fix the manifest string before archiving** — a reviewer can read it, and it is
+no claim. Every draft below says "written and illustrated by a team of practicing clinicians", which
+is true and is actually the stronger claim. **Fix the manifest string before archiving** — a reviewer can read it, and it is
 also wrong about the count (181, not 180).
 
 ### 4. No public privacy policy URL — a hard blocker on the form
@@ -111,15 +111,15 @@ each other — Apple indexes them separately and a repeat wastes the field.
 ### Promotional Text (170 characters — editable without a new build)
 
 > New: 93 illustrated galleries — 930 original clinical pages — plus 1,820 quiz questions and
-> 1,010 USMLE-style items. All of it offline. Written by a physician.
+> 1,010 USMLE-style items. All offline. By a team of practicing clinicians.
 
-*(163)* Update this at each release; it's the one field that doesn't need a build.
+*(169)* Update this at each release; it's the one field that doesn't need a build.
 
 ### Description (4,000 characters)
 
 ```
 Rounds Codex is a clinical study reference for nursing and medical students, written and
-illustrated by a practising physician. It works entirely offline — every page, image and
+illustrated by a team of practicing clinicians. It works entirely offline — every page, image and
 question is on your device the moment it finishes downloading.
 
 Three modes, one library. Switch between Nursing, Medical and Resident and the same 181
@@ -166,8 +166,8 @@ institution's protocols. Practice scores are practice scores — they are not a 
 score and not a probability of passing.
 ```
 
-Two things that copy is doing on purpose. **"Written and illustrated by a practising physician"**
-is the credibility claim, and unlike "clinically reviewed" it is true. And the education-only
+Two things that copy is doing on purpose. **"Written and illustrated by a team of practicing
+clinicians"** is the credibility claim, and unlike "clinically reviewed" it is true. And the education-only
 paragraph is in the listing, not just in the app — Guideline 1.4.1 reviewers look for it, and the
 plan already flagged that the listing needs its own.
 
@@ -277,7 +277,7 @@ questions this app will raise. Draft:
 
 ```
 Rounds Codex is a study reference for nursing and medical students. All content is written and
-illustrated by Dr. J. Kreithen, a practising physician, and the company is physician-owned.
+illustrated by a team of practicing clinicians, and the company is physician-owned (Dr. J. Kreithen).
 
 EDUCATIONAL USE, NOT CLINICAL USE
 The app is a study aid and says so on first launch, before any content is reachable: the user
@@ -389,6 +389,7 @@ guideline entries, 1,418 resident entries, 10 calculators. If any of those chang
 submit, re-read them rather than adjusting from memory — a description that overstates by one is a
 2.3.1 problem for no gain.
 
-**"Written by a physician" is doing the work that "clinically reviewed" can't.** It is true, it is
+**"Written and illustrated by a team of practicing clinicians" is doing the work that "clinically
+reviewed" can't.** It is true, it is
 specific, it is unusual for a study app, and it does not claim an external review that has not
 happened. Use it everywhere and drop the other phrase entirely.

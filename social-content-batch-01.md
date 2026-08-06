@@ -24,7 +24,7 @@ features, clinical-use framing, "Performance Analytics" — see the strategy doc
 
 **Headline:** `LEARN. UNDERSTAND. SUCCEED.`
 
-**Subhead:** `A clinical study atlas — written and illustrated by a practising physician.`
+**Subhead:** `A clinical study atlas — written and illustrated by a team of practicing clinicians.`
 
 **Feature list (all real, all verified):**
 - 1,000 original full-page illustrations — every one drawn for this app *(launch figure; 950 as of
@@ -53,18 +53,18 @@ link once the destination (landing page or App Store) is live.
 
 **Instagram** (150 char):
 > A free, offline clinical study atlas. 181 conditions · 950 original illustrations — drawn & written
-> by a practising physician. No ads, no tracking. 👇
+> by a team of practicing clinicians. No ads, no tracking. 👇
 
 **TikTok** (80 char):
-> Free offline clinical atlas · 950 illustrations, drawn by a physician · no ads
+> Free offline clinical atlas · 950 illustrations, by practicing clinicians · no ads
 
 **X** (160 char):
 > A free, offline clinical study atlas for nursing & med students. 181 conditions, 950 original
-> illustrations — written & illustrated by a practising physician. No tracking.
+> illustrations — written & illustrated by a team of practicing clinicians. No tracking.
 
 **Facebook Page** (short intro):
 > A free, offline clinical study atlas — 181 conditions, 950 original illustrations, written &
-> illustrated by a practising physician. No account, no ads, no tracking.
+> illustrated by a team of practicing clinicians. No account, no ads, no tracking.
 
 **Reddit** (u/roundscodex profile blurb):
 > Physician. I built a free, offline clinical study atlas — 950 original illustrations, no account,
@@ -72,7 +72,7 @@ link once the destination (landing page or App Store) is live.
 
 **r/RoundsCodex** (community sidebar/description):
 > The home of Rounds Codex — a free, offline clinical study atlas written & illustrated by a
-> practising physician. New illustrated galleries posted here first. Questions welcome.
+> team of practicing clinicians. New illustrated galleries posted here first. Questions welcome.
 
 > **Reddit conduct (non-negotiable):** *r/RoundsCodex* is your own turf — post artwork and galleries
 > there freely. In the **big subs** (r/StudentNurse, r/medicalschool, r/step1…): be useful first,
@@ -118,12 +118,12 @@ Recurring hashtag sets (edit per post, don't spray all of them):
 - 0–2s hook (text on screen): "Heart failure, in 15 seconds."
 - 2–10s: slow zoom across 3 CHF illustration pages, one teaching caption each *[verify]*
 - 10–14s: the three-mode switch shown on-device
-- 14–15s: "Free. Offline. Drawn by a physician. → roundscodex.com"
+- 14–15s: "Free. Offline. Drawn by clinicians. → roundscodex.com"
 - Audio: trending low-key track; on-screen captions carry the teaching (sound-off viewing).
 
 **X**
 > Orthopnea, JVD, an S3, crackles at the bases — heart failure tells you where the fluid went.
-> We drew it. One of 181 conditions in a free, offline atlas written & illustrated by a physician.
+> We drew it. One of 181 conditions in a free, offline atlas written & illustrated by a team of practicing clinicians.
 > *[verify clinical list]* roundscodex.com
 
 **Reddit** (not a post — a helpful-answer template for r/StudentNurse / r/nursing threads about CHF
@@ -149,7 +149,7 @@ free illustrated page on this in an app I built — happy to link if useful." Le
 
 **X**
 > ST elevation, reciprocal changes, a troponin that climbs — the ACS story in one drawn page.
-> *[verify]* Part of a free, offline atlas, written & illustrated by a physician. roundscodex.com
+> *[verify]* Part of a free, offline atlas, written & illustrated by a team of practicing clinicians. roundscodex.com
 
 **Reddit** (r/medicalschool, r/step1): answer ECG/ACS questions substantively; link only on request.
 
@@ -196,7 +196,7 @@ genuinely useful thing to mention when someone's working a CHA₂DS₂-VASc ques
 
 **X**
 > Hypertension does its damage quietly — heart, kidney, retina, vessels — long before symptoms.
-> We drew each one. *[verify]* Free, offline atlas, written & illustrated by a physician.
+> We drew each one. *[verify]* Free, offline atlas, written & illustrated by a team of practicing clinicians.
 > roundscodex.com
 
 **Reddit** (r/StudentNurse): HTN staging / meds threads; classic NCLEX territory, be useful.

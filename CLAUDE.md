@@ -773,8 +773,8 @@ Three files, each canonical for its own subject. **Read the relevant one before 
 that will be seen outside the app** — they exist so the copy and the decisions do not drift.
 - **`marketing-brief.md`** — start here for anything marketing. Positioning, audience, channels,
   the assets that exist, and **the claims policy** (in particular: never say "clinically reviewed"
-  — no independent medical review has been done, and "written by a physician" is the true and
-  stronger claim).
+  — no independent medical review has been done, and "written and illustrated by a team of practicing
+  clinicians" is the true and stronger claim).
 - `app-store-submission-draft.md` — every App Store Connect field drafted to its character limit,
   the privacy label, the review notes, and the four things that would get the app rejected.
 - `app-store-plan.md` — pricing and grandfathering, download size, Guidelines 4.2 and 1.4.1, and
