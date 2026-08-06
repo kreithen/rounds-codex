@@ -1,0 +1,765 @@
+[
+ {
+  "gid": "acs",
+  "page": 1,
+  "title": "3D Coronary Anatomy",
+  "cond": "Acute Coronary Syndrome / MI",
+  "cat": "Cardiac"
+ },
+ {
+  "gid": "acs",
+  "page": 2,
+  "title": "Labeled Coronary Anatomy",
+  "cond": "Acute Coronary Syndrome / MI",
+  "cat": "Cardiac"
+ },
+ {
+  "gid": "addisons",
+  "page": 1,
+  "title": "Overview: Anatomy & Stress Response",
+  "cond": "Adrenal Insufficiency (Addison's)",
+  "cat": "Endocrine"
+ },
+ {
+  "gid": "addisons",
+  "page": 2,
+  "title": "Adrenal Anatomy: Structure & Labels",
+  "cond": "Adrenal Insufficiency (Addison's)",
+  "cat": "Endocrine"
+ },
+ {
+  "gid": "afib",
+  "page": 2,
+  "title": "Atrial Anatomy",
+  "cond": "Atrial Fibrillation",
+  "cat": "Cardiac"
+ },
+ {
+  "gid": "aki",
+  "page": 2,
+  "title": "Anatomy: Kidneys and Urinary Tract",
+  "cond": "Acute Kidney Injury",
+  "cat": "Renal & GU"
+ },
+ {
+  "gid": "anxiety",
+  "page": 2,
+  "title": "Anatomy: Brain Circuits & Neurotransmitters",
+  "cond": "Anxiety Disorders",
+  "cat": "Psychiatry"
+ },
+ {
+  "gid": "aortic-dissection",
+  "page": 1,
+  "title": "Overview: Anatomy, Aneurysm, and Dissection",
+  "cond": "Aortic Aneurysm & Dissection",
+  "cat": "Cardiac"
+ },
+ {
+  "gid": "aortic-dissection",
+  "page": 2,
+  "title": "Labeled Aortic Anatomy",
+  "cond": "Aortic Aneurysm & Dissection",
+  "cat": "Cardiac"
+ },
+ {
+  "gid": "aortic-stenosis",
+  "page": 1,
+  "title": "3D Anatomy",
+  "cond": "Aortic Stenosis (Valvular Disease)",
+  "cat": "Cardiac"
+ },
+ {
+  "gid": "aortic-stenosis",
+  "page": 2,
+  "title": "Heart Anatomy",
+  "cond": "Aortic Stenosis (Valvular Disease)",
+  "cat": "Cardiac"
+ },
+ {
+  "gid": "appendicitis",
+  "page": 2,
+  "title": "Labeled Anatomy & Key Relations",
+  "cond": "Appendicitis",
+  "cat": "Gastrointestinal"
+ },
+ {
+  "gid": "ards",
+  "page": 2,
+  "title": "Normal vs ARDS Lung Anatomy",
+  "cond": "Acute Respiratory Distress Syndrome (ARDS)",
+  "cat": "Respiratory"
+ },
+ {
+  "gid": "asthma",
+  "page": 2,
+  "title": "Airway Anatomy",
+  "cond": "Asthma",
+  "cat": "Respiratory"
+ },
+ {
+  "gid": "b12-anemia",
+  "page": 2,
+  "title": "Labeled Anatomy: Vitamin B12 & Folate Absorption",
+  "cond": "B12 / Folate Deficiency Anemia",
+  "cat": "Heme & Onc"
+ },
+ {
+  "gid": "bipolar",
+  "page": 2,
+  "title": "Anatomy: Bipolar Disorder",
+  "cond": "Bipolar Disorder",
+  "cat": "Psychiatry"
+ },
+ {
+  "gid": "bowel-obstruction",
+  "page": 2,
+  "title": "GI Anatomy: Small & Large Bowel",
+  "cond": "Bowel Obstruction",
+  "cat": "Gastrointestinal"
+ },
+ {
+  "gid": "bph",
+  "page": 2,
+  "title": "Labeled Anatomy",
+  "cond": "Benign Prostatic Hyperplasia",
+  "cat": "Renal & GU"
+ },
+ {
+  "gid": "bronchiolitis",
+  "page": 2,
+  "title": "Anatomy: Infant Lower Airway",
+  "cond": "Bronchiolitis (RSV)",
+  "cat": "OB & Peds"
+ },
+ {
+  "gid": "bronchiolitis",
+  "page": 7,
+  "title": "Gross Pathology & Airway Changes",
+  "cond": "Bronchiolitis (RSV)",
+  "cat": "OB & Peds"
+ },
+ {
+  "gid": "cap",
+  "page": 2,
+  "title": "Anatomy & Imaging Patterns",
+  "cond": "Community-Acquired Pneumonia",
+  "cat": "Respiratory"
+ },
+ {
+  "gid": "cardiac-arrest",
+  "page": 2,
+  "title": "Resuscitation Anatomy & CPR Physiology",
+  "cond": "Cardiac Arrest (ACLS)",
+  "cat": "Cardiac"
+ },
+ {
+  "gid": "cdiff",
+  "page": 2,
+  "title": "Anatomy: Colon & Colonic Mucosa",
+  "cond": "C. difficile Colitis",
+  "cat": "Gastrointestinal"
+ },
+ {
+  "gid": "cellulitis",
+  "page": 1,
+  "title": "Overview: Anatomy, Definition & Key Concepts",
+  "cond": "Cellulitis",
+  "cat": "Infectious Disease"
+ },
+ {
+  "gid": "cellulitis",
+  "page": 2,
+  "title": "Labeled Skin & Soft-Tissue Anatomy",
+  "cond": "Cellulitis",
+  "cat": "Infectious Disease"
+ },
+ {
+  "gid": "chf",
+  "page": 1,
+  "title": "3D Anatomy Overview",
+  "cond": "Heart Failure (CHF)",
+  "cat": "Cardiac"
+ },
+ {
+  "gid": "chf",
+  "page": 2,
+  "title": "Labeled Cardiac Anatomy",
+  "cond": "Heart Failure (CHF)",
+  "cat": "Cardiac"
+ },
+ {
+  "gid": "cholecystitis",
+  "page": 2,
+  "title": "Anatomy Overview: Hepatobiliary System",
+  "cond": "Cholecystitis & Cholelithiasis",
+  "cat": "Gastrointestinal"
+ },
+ {
+  "gid": "cirrhosis",
+  "page": 2,
+  "title": "Normal Liver Anatomy & Portal Venous System",
+  "cond": "Cirrhosis",
+  "cat": "Gastrointestinal"
+ },
+ {
+  "gid": "ckd",
+  "page": 2,
+  "title": "Urinary Tract Anatomy",
+  "cond": "Chronic Kidney Disease",
+  "cat": "Renal & GU"
+ },
+ {
+  "gid": "compartment",
+  "page": 2,
+  "title": "Labeled Anatomy: Lower Leg Compartments",
+  "cond": "Compartment Syndrome",
+  "cat": "MSK & Rheum"
+ },
+ {
+  "gid": "copd",
+  "page": 2,
+  "title": "Respiratory Anatomy & Physiology",
+  "cond": "COPD",
+  "cat": "Respiratory"
+ },
+ {
+  "gid": "covid",
+  "page": 2,
+  "title": "Anatomy: Respiratory Tract & Viral Entry",
+  "cond": "COVID-19",
+  "cat": "Infectious Disease"
+ },
+ {
+  "gid": "croup",
+  "page": 2,
+  "title": "Anatomy: Pediatric Airway",
+  "cond": "Croup",
+  "cat": "OB & Peds"
+ },
+ {
+  "gid": "cushings",
+  "page": 2,
+  "title": "Labeled Anatomy: HPA Axis",
+  "cond": "Cushing's Syndrome",
+  "cat": "Endocrine"
+ },
+ {
+  "gid": "delirium",
+  "page": 2,
+  "title": "Anatomy & Neurobiology",
+  "cond": "Delirium",
+  "cat": "Psychiatry"
+ },
+ {
+  "gid": "dementia",
+  "page": 2,
+  "title": "Labeled Brain Anatomy",
+  "cond": "Alzheimer's & Dementia",
+  "cat": "Neurology"
+ },
+ {
+  "gid": "depression",
+  "page": 2,
+  "title": "Labeled Neuroanatomy",
+  "cond": "Major Depressive Disorder",
+  "cat": "Psychiatry"
+ },
+ {
+  "gid": "dic",
+  "page": 2,
+  "title": "Anatomy & Physiology of Coagulation",
+  "cond": "Disseminated Intravascular Coagulation (DIC)",
+  "cat": "Heme & Onc"
+ },
+ {
+  "gid": "diverticulitis",
+  "page": 2,
+  "title": "Normal Colon Anatomy & Diverticula",
+  "cond": "Diverticulitis",
+  "cat": "Gastrointestinal"
+ },
+ {
+  "gid": "dvt",
+  "page": 2,
+  "title": "Lower-Extremity Venous Anatomy",
+  "cond": "Deep Vein Thrombosis",
+  "cat": "Cardiac"
+ },
+ {
+  "gid": "endocarditis",
+  "page": 2,
+  "title": "Labeled Heart & Valve Anatomy",
+  "cond": "Infective Endocarditis",
+  "cat": "Cardiac"
+ },
+ {
+  "gid": "fracture",
+  "page": 2,
+  "title": "Anatomy: Normal Bone & Common Fracture Locations",
+  "cond": "Fractures",
+  "cat": "MSK & Rheum"
+ },
+ {
+  "gid": "gbs",
+  "page": 2,
+  "title": "Anatomy Overview: The Peripheral Nervous System",
+  "cond": "Guillain-Barr\u00e9 Syndrome",
+  "cat": "Neurology"
+ },
+ {
+  "gid": "gdm",
+  "page": 2,
+  "title": "Anatomy & Physiology of Gestational Diabetes",
+  "cond": "Gestational Diabetes",
+  "cat": "OB & Peds"
+ },
+ {
+  "gid": "gerd",
+  "page": 1,
+  "title": "Overview: Definition, Anatomy & Classification",
+  "cond": "GERD",
+  "cat": "Gastrointestinal"
+ },
+ {
+  "gid": "gerd",
+  "page": 2,
+  "title": "Labeled Anatomy of the Esophagus & Gastroesophageal Junction",
+  "cond": "GERD",
+  "cat": "Gastrointestinal"
+ },
+ {
+  "gid": "gerd",
+  "page": 7,
+  "title": "Gross Pathology & Anatomical Effects",
+  "cond": "GERD",
+  "cat": "Gastrointestinal"
+ },
+ {
+  "gid": "gi-bleed",
+  "page": 1,
+  "title": "Anatomy & Bleeding Sources",
+  "cond": "Upper GI Bleed",
+  "cat": "Gastrointestinal"
+ },
+ {
+  "gid": "gi-bleed",
+  "page": 2,
+  "title": "Upper GI Anatomy: Structures at Risk for Bleeding",
+  "cond": "Upper GI Bleed",
+  "cat": "Gastrointestinal"
+ },
+ {
+  "gid": "gout",
+  "page": 2,
+  "title": "Labeled Anatomy: First MTP Joint",
+  "cond": "Gout",
+  "cat": "MSK & Rheum"
+ },
+ {
+  "gid": "hepatitis",
+  "page": 2,
+  "title": "Labeled Liver Anatomy",
+  "cond": "Viral Hepatitis",
+  "cat": "Gastrointestinal"
+ },
+ {
+  "gid": "hiv",
+  "page": 2,
+  "title": "Anatomy & Viral Structure",
+  "cond": "HIV / AIDS",
+  "cat": "Infectious Disease"
+ },
+ {
+  "gid": "htn",
+  "page": 1,
+  "title": "3D Vascular Anatomy",
+  "cond": "Hypertension",
+  "cat": "Cardiac"
+ },
+ {
+  "gid": "htn",
+  "page": 2,
+  "title": "Labeled Vascular Anatomy",
+  "cond": "Hypertension",
+  "cat": "Cardiac"
+ },
+ {
+  "gid": "hyperkalemia",
+  "page": 2,
+  "title": "Anatomy: Renal Potassium Handling & Regulation",
+  "cond": "Hyperkalemia",
+  "cat": "Renal & GU"
+ },
+ {
+  "gid": "hyperlipidemia",
+  "page": 2,
+  "title": "Lipoprotein Anatomy & Physiology",
+  "cond": "Hyperlipidemia",
+  "cat": "Cardiac"
+ },
+ {
+  "gid": "hyperparathyroid",
+  "page": 2,
+  "title": "Parathyroid Anatomy & Normal Physiology",
+  "cond": "Hyperparathyroidism",
+  "cat": "Endocrine"
+ },
+ {
+  "gid": "hyponatremia",
+  "page": 2,
+  "title": "Labeled Anatomy: Water Balance & ADH Physiology",
+  "cond": "Hyponatremia",
+  "cat": "Renal & GU"
+ },
+ {
+  "gid": "hypothyroid",
+  "page": 2,
+  "title": "Thyroid Anatomy & Endocrine Physiology",
+  "cond": "Hypothyroidism",
+  "cat": "Endocrine"
+ },
+ {
+  "gid": "ibd",
+  "page": 2,
+  "title": "Annotated GI Anatomy",
+  "cond": "Inflammatory Bowel Disease",
+  "cat": "Gastrointestinal"
+ },
+ {
+  "gid": "icp",
+  "page": 2,
+  "title": "Labeled Anatomy & Intracranial Compartments",
+  "cond": "Increased Intracranial Pressure / TBI",
+  "cat": "Neurology"
+ },
+ {
+  "gid": "influenza",
+  "page": 2,
+  "title": "Labeled Respiratory Anatomy",
+  "cond": "Influenza",
+  "cat": "Infectious Disease"
+ },
+ {
+  "gid": "iron-anemia",
+  "page": 2,
+  "title": "Labeled Anatomy: Iron Absorption, Transport & Erythropoiesis",
+  "cond": "Iron Deficiency Anemia",
+  "cat": "Heme & Onc"
+ },
+ {
+  "gid": "labor",
+  "page": 2,
+  "title": "Anatomy",
+  "cond": "Labor & Delivery Stages",
+  "cat": "OB & Peds"
+ },
+ {
+  "gid": "leukemia",
+  "page": 2,
+  "title": "Normal Bone Marrow & Hematopoiesis Anatomy",
+  "cond": "Leukemia",
+  "cat": "Heme & Onc"
+ },
+ {
+  "gid": "lung-cancer",
+  "page": 2,
+  "title": "Labeled Anatomy & Typical Tumor Locations",
+  "cond": "Lung Cancer",
+  "cat": "Respiratory"
+ },
+ {
+  "gid": "lupus",
+  "page": 2,
+  "title": "Anatomy & Organ Systems Involved in SLE",
+  "cond": "Systemic Lupus Erythematosus (SLE)",
+  "cat": "MSK & Rheum"
+ },
+ {
+  "gid": "lymphoma",
+  "page": 2,
+  "title": "Anatomy: Lymphatic System",
+  "cond": "Lymphoma",
+  "cat": "Heme & Onc"
+ },
+ {
+  "gid": "meningitis",
+  "page": 2,
+  "title": "Anatomy of the Meninges & CSF Spaces",
+  "cond": "Bacterial Meningitis",
+  "cat": "Neurology"
+ },
+ {
+  "gid": "metabolic-syndrome",
+  "page": 1,
+  "title": "Normal Anatomy & Visceral Adiposity",
+  "cond": "Metabolic Syndrome",
+  "cat": "Endocrine"
+ },
+ {
+  "gid": "migraine",
+  "page": 2,
+  "title": "Anatomy & Neurovascular Pathways",
+  "cond": "Migraine & Headache",
+  "cat": "Neurology"
+ },
+ {
+  "gid": "ms",
+  "page": 2,
+  "title": "Labeled CNS Anatomy",
+  "cond": "Multiple Sclerosis",
+  "cat": "Neurology"
+ },
+ {
+  "gid": "myasthenia",
+  "page": 2,
+  "title": "Labeled Neuromuscular Junction Anatomy",
+  "cond": "Myasthenia Gravis",
+  "cat": "Neurology"
+ },
+ {
+  "gid": "nephrolithiasis",
+  "page": 2,
+  "title": "Anatomy: Urinary System",
+  "cond": "Nephrolithiasis (Kidney Stones)",
+  "cat": "Renal & GU"
+ },
+ {
+  "gid": "osa",
+  "page": 2,
+  "title": "Upper Airway Anatomy \u2013 Lateral & Cross-Sectional",
+  "cond": "Obstructive Sleep Apnea",
+  "cat": "Respiratory"
+ },
+ {
+  "gid": "osa",
+  "page": 7,
+  "title": "PAP Therapy & Airway Management",
+  "cond": "Obstructive Sleep Apnea",
+  "cat": "Respiratory"
+ },
+ {
+  "gid": "osteoarthritis",
+  "page": 1,
+  "title": "Overview: Anatomy, Pathophysiology & Key Facts",
+  "cond": "Osteoarthritis",
+  "cat": "MSK & Rheum"
+ },
+ {
+  "gid": "osteoarthritis",
+  "page": 2,
+  "title": "Anatomy & Joint Structure",
+  "cond": "Osteoarthritis",
+  "cat": "MSK & Rheum"
+ },
+ {
+  "gid": "osteomyelitis",
+  "page": 2,
+  "title": "Labeled Bone Anatomy",
+  "cond": "Osteomyelitis",
+  "cat": "Infectious Disease"
+ },
+ {
+  "gid": "osteoporosis",
+  "page": 1,
+  "title": "Overview: Anatomy, Pathophysiology & Clinical Approach",
+  "cond": "Osteoporosis",
+  "cat": "MSK & Rheum"
+ },
+ {
+  "gid": "osteoporosis",
+  "page": 2,
+  "title": "Anatomy: The Skeletal Framework",
+  "cond": "Osteoporosis",
+  "cat": "MSK & Rheum"
+ },
+ {
+  "gid": "pad",
+  "page": 2,
+  "title": "Lower-Extremity Arterial Anatomy",
+  "cond": "Peripheral Arterial Disease",
+  "cat": "Cardiac"
+ },
+ {
+  "gid": "pancreatitis",
+  "page": 2,
+  "title": "Labeled Pancreatic Anatomy",
+  "cond": "Acute Pancreatitis",
+  "cat": "Gastrointestinal"
+ },
+ {
+  "gid": "parkinsons",
+  "page": 2,
+  "title": "Anatomy: Basal Ganglia & Dopaminergic Pathways",
+  "cond": "Parkinson's Disease",
+  "cat": "Neurology"
+ },
+ {
+  "gid": "parkinsons",
+  "page": 3,
+  "title": "Pathophysiology: Dopamine Loss & Circuit Disruption",
+  "cond": "Parkinson's Disease",
+  "cat": "Neurology"
+ },
+ {
+  "gid": "pe",
+  "page": 2,
+  "title": "Venous Source & Pulmonary Arterial Anatomy",
+  "cond": "Pulmonary Embolism",
+  "cat": "Respiratory"
+ },
+ {
+  "gid": "pericarditis",
+  "page": 1,
+  "title": "Normal Pericardial Anatomy",
+  "cond": "Acute Pericarditis",
+  "cat": "Cardiac"
+ },
+ {
+  "gid": "pneumothorax",
+  "page": 2,
+  "title": "Labeled Thoracic Anatomy",
+  "cond": "Pneumothorax",
+  "cat": "Respiratory"
+ },
+ {
+  "gid": "pph",
+  "page": 2,
+  "title": "Anatomy & Blood Supply",
+  "cond": "Postpartum Hemorrhage",
+  "cat": "OB & Peds"
+ },
+ {
+  "gid": "preeclampsia",
+  "page": 2,
+  "title": "Anatomy: Preeclampsia & Eclampsia",
+  "cond": "Preeclampsia & Eclampsia",
+  "cat": "OB & Peds"
+ },
+ {
+  "gid": "pud",
+  "page": 2,
+  "title": "Anatomy: Stomach & Duodenum",
+  "cond": "Peptic Ulcer Disease",
+  "cat": "Gastrointestinal"
+ },
+ {
+  "gid": "ra",
+  "page": 2,
+  "title": "Anatomy: The Normal Joint",
+  "cond": "Rheumatoid Arthritis",
+  "cat": "MSK & Rheum"
+ },
+ {
+  "gid": "schizophrenia",
+  "page": 2,
+  "title": "Anatomy: Brain Circuits & Dopamine Pathways",
+  "cond": "Schizophrenia",
+  "cat": "Psychiatry"
+ },
+ {
+  "gid": "sci",
+  "page": 1,
+  "title": "Overview - Anatomy, Impact & What Matters Most",
+  "cond": "Spinal Cord Injury",
+  "cat": "Neurology"
+ },
+ {
+  "gid": "sci",
+  "page": 2,
+  "title": "Labeled Spinal Cord Anatomy & Major Tracts",
+  "cond": "Spinal Cord Injury",
+  "cat": "Neurology"
+ },
+ {
+  "gid": "seizure",
+  "page": 2,
+  "title": "Anatomy: Brain Structures & Networks",
+  "cond": "Seizure & Status Epilepticus",
+  "cat": "Neurology"
+ },
+ {
+  "gid": "sepsis",
+  "page": 2,
+  "title": "Anatomy & Common Sources of Infection",
+  "cond": "Sepsis & Septic Shock",
+  "cat": "Infectious Disease"
+ },
+ {
+  "gid": "sickle-cell",
+  "page": 2,
+  "title": "Anatomy: Hemoglobin, RBCs, Spleen & Microvasculature",
+  "cond": "Sickle Cell Disease",
+  "cat": "Heme & Onc"
+ },
+ {
+  "gid": "stroke",
+  "page": 1,
+  "title": "Overview: Brain Anatomy & Time-Critical Reperfusion",
+  "cond": "Ischemic Stroke",
+  "cat": "Neurology"
+ },
+ {
+  "gid": "stroke",
+  "page": 2,
+  "title": "Anatomy: Cerebral Vasculature",
+  "cond": "Ischemic Stroke",
+  "cat": "Neurology"
+ },
+ {
+  "gid": "suicide",
+  "page": 2,
+  "title": "Labeled Neuroanatomy of Suicide Risk",
+  "cond": "Suicide Risk Assessment",
+  "cat": "Psychiatry"
+ },
+ {
+  "gid": "t2dm",
+  "page": 2,
+  "title": "Normal Pancreatic & Endocrine Anatomy",
+  "cond": "Type 2 Diabetes Mellitus",
+  "cat": "Endocrine"
+ },
+ {
+  "gid": "tb",
+  "page": 2,
+  "title": "Labeled Anatomy",
+  "cond": "Tuberculosis",
+  "cat": "Respiratory"
+ },
+ {
+  "gid": "thrombocytopenia",
+  "page": 2,
+  "title": "Anatomy & Physiology of Platelet Production",
+  "cond": "Thrombocytopenia",
+  "cat": "Heme & Onc"
+ },
+ {
+  "gid": "thyroidstorm",
+  "page": 2,
+  "title": "Anatomy & Physiology",
+  "cond": "Thyroid Storm / Hyperthyroidism",
+  "cat": "Endocrine"
+ },
+ {
+  "gid": "tia",
+  "page": 2,
+  "title": "Cerebral & Carotid Vascular Anatomy",
+  "cond": "Transient Ischemic Attack",
+  "cat": "Neurology"
+ },
+ {
+  "gid": "uti",
+  "page": 2,
+  "title": "Labeled Urinary Tract Anatomy",
+  "cond": "Urinary Tract Infection",
+  "cat": "Renal & GU"
+ },
+ {
+  "gid": "withdrawal",
+  "page": 2,
+  "title": "Anatomy & Neurobiology of Alcohol & Substance Withdrawal",
+  "cond": "Alcohol & Substance Withdrawal",
+  "cat": "Psychiatry"
+ }
+]

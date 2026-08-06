@@ -1,0 +1,51 @@
+PAGE acs 1 clean 4 0
+PAGE acs 2 clean 8 0
+PAGE addisons 1 WRONG 11 1
+  WRONG "Cortex (glucocorticoids, mineralocorticoids, androgens)" -> lands on: inside the dark brown medulla of the inset cross-section, past the cortex/medulla boundary - the same tissue the "Medulla" leader points at | expected: the orange striated outer band
+PAGE addisons 2 WRONG 14 5
+  WRONG "Right Renal Artery & Vein" -> lands on: mid-shaft of the right ureter (gold tube), at iliac level well below the renal hilum | expected: the renal vessels at the hilum, level with the kidney
+  WRONG "Left Renal Artery & Vein" -> lands on: empty dark background between the left common iliac artery and the left ureter | expected: the renal vessels at the left hilum
+  WRONG "Zona Fasciculata (cortisol)" -> lands on: the central white hilum dot at the dead centre of the medulla | expected: the middle of the orange cortical band
+  WRONG "Zona Reticularis (androgens)" -> lands on: inside the dark brown medulla | expected: the innermost part of the orange cortical band, just outside the medulla
+  SUSPECT "Ureters (behind vessels)" -> lands on: both arrowheads touch the common iliac arteries; the drawn gold ureters lie lateral and untouched | expected: the gold ureters (the "behind vessels" note may be intentional)
+PAGE afib 2 clean 0 0
+PAGE aki 2 WRONG 27 19
+  WRONG "Renal Artery (1)" -> lands on: a renal pyramid (medulla) at the upper pole | expected: the red vessel entering the hilum on the right
+  WRONG "Renal Vein (2)" -> lands on: a renal pyramid, mid-kidney | expected: the blue vessel at the hilum
+  WRONG "Cortex (3)" -> lands on: inside a renal pyramid, past the pale boundary line | expected: the striated outer band to the left of that boundary
+  WRONG "Renal Pelvis (5)" -> lands on: lower-pole cortex | expected: the pale gold funnel at the hilum
+  WRONG "Abdominal Aorta (9)" -> lands on: faint translucent ghost-body background left of the lumbar spine, below the aortic bifurcation | expected: the bright red midline vessel above the bifurcation (the two markers are also in inverted order)
+  WRONG "Inferior Vena Cava (10)" -> lands on: the same faint background, right of the spine | expected: the bright blue midline vessel left of the aorta
+  SUSPECT "Cortex (cross-section panel)" -> lands on: just inside a pyramid's boundary | expected: the outer cortical band
+  WRONG "Renal Columns (cross-section panel)" -> lands on: a white dot at the centre of a renal pyramid | expected: the smooth cortical tissue between pyramids
+  WRONG "Major Calyx (cross-section panel)" -> lands on: the centre of a lower renal pyramid | expected: the gold funnel near the hilum
+  WRONG "Minor Calyx (cross-section panel)" -> lands on: the lateral border of a pyramid / outer cortex | expected: a gold cup at a pyramid apex on the hilar side
+  SUSPECT "Renal Pelvis (cross-section panel)" -> lands on: lower-pole parenchyma; the tail is hard to separate from the artwork's own pale outlines | expected: the large gold pelvis at the hilum
+  SUSPECT "Glomerulus (filters blood)" -> lands on: the bend of the blue arteriole above the capsule | expected: the red capillary tuft inside Bowman's capsule
+  WRONG "Bowman's Capsule" -> lands on: the red glomerular tuft inside the capsule | expected: the thick peach capsule ring
+  WRONG "Proximal Tubule" -> lands on: the red/blue vasa recta bundle | expected: the beaded gold tubule to the right
+  WRONG "Loop of Henle" -> lands on: the red/blue vasa recta bundle | expected: the long gold hairpin
+  WRONG "Distal Tubule" -> lands on: the red vessel of the vasa recta bundle | expected: the gold tubule returning toward the glomerulus
+  WRONG "Collecting Duct" -> lands on: the descending limb of the gold loop of Henle | expected: the thick gold trunk on the far right
+  WRONG "Segmental Arteries" -> lands on: the finest peripheral cortical mesh, outside every other artery label | expected: the large first-order branches near the hilum
+  SUSPECT "Afferent Arteriole" -> lands on: a small red stub at the lower-pole margin, the leader crossing over the blue renal vein | expected: a cortical terminal twig (the diagram does not really depict an afferent arteriole)
+PAGE anxiety 2 WRONG 5 1
+  WRONG "Insula (5)" -> lands on: the posterior-superior margin of the thalamus, below the splenium, in a midsagittal view where the insula is not visible | expected: the lateral cortex in the Sylvian fissure (not depicted on this cut)
+PAGE aortic-dissection 1 WRONG 11 5
+  WRONG "Aortic arch" -> lands on: the anterolateral surface of the heart (left ventricle, lower-left border) | expected: the curved top of the aorta at the very top of the figure
+  SUSPECT "Descending thoracic aorta" -> lands on: the aorta at the level of the renal artery origins, i.e. the abdominal segment below the heart | expected: the thoracic segment behind/above the heart
+  WRONG "Media" -> lands on: inside the red lumen, roughly 20px medial to the wall | expected: the middle of the pale laminated wall
+  WRONG "Adventitia" -> lands on: deeper inside the red lumen | expected: the outermost layer of the wall
+  SUSPECT "False lumen" -> lands on: the same large central cavity that the "True lumen" dot sits in | expected: the crescent between the dissection flap and the outer wall
+PAGE aortic-dissection 2 WRONG 29 8
+  WRONG "Brachiocephalic trunk" -> lands on: the SECOND arch branch (the left common carotid) | expected: the first, leftmost branch - the thick one that visibly bifurcates at its top
+  WRONG "Left common carotid artery" -> lands on: the THIRD arch branch (the left subclavian), which the next label also points at | expected: the middle branch
+  SUSPECT "Aortic arch (marker 2)" -> lands on: the vertical descending limb below the arch | expected: the curved apex between ascending and descending
+  WRONG "UNPAIRED ANTERIOR BRANCHES (Celiac trunk / SMA / IMA)" -> lands on: the right renal artery at the kidney hilum and the lateral branch just below it - both paired lateral branches | expected: the midline anterior branches above the renals
+  WRONG "Intima (endothelium)" -> lands on: mid-thickness of the thick mauve layer, the same radial position as the Media and Adventitia tips | expected: the innermost surface bordering the lumen
+  WRONG "Adventitia (connective tissue)" -> lands on: the same mid-mauve layer | expected: the outer rim of the wall
+  SUSPECT "Sinotubular junction" -> lands on: the lower margin of the sinus bulges, right beside the "Aortic annulus" tip | expected: the upper margin where the sinuses meet the tubular ascending aorta
+  WRONG "Left subclavian artery (arch inset, 3)" -> lands on: the smooth outer edge of the descending limb of the arch, with no branch vessel present | expected: a branch arising from the arch
+PAGE aortic-stenosis 1 SUSPECT 4 2
+  SUSPECT "Calcified Valve Cusps" -> lands on: the aortic root wall about 24px above the calcified leaflets | expected: on a calcified nodular cusp
+  SUSPECT "Narrowed Valve Orifice" -> lands on: the body of the right calcified cusp | expected: the central slit between the two cusps

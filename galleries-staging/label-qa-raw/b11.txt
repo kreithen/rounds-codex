@@ -1,0 +1,16 @@
+PAGE cardiomyopathy 2 clean 0 0
+PAGE di 2 SUSPECT 4 1
+  SUSPECT "V2 receptor" -> lands on: undifferentiated dark-blue membrane ~12 px right of the purple 7-TM receptor bundle that AVP is drawn bound to | expected: the purple 7-TM bundle itself
+PAGE dka 2 SUSPECT 9 2
+  SUSPECT "Glucose (Normal panel)" -> lands on: nothing; sits directly above the green ball-and-stick insulin molecules, ~60 px left of the purple glucose spheres crossing GLUT4 | expected: beside the purple spheres, as the same label correctly sits in the DKA panel
+  SUSPECT "Glucose in Blood Normal" -> lands on: a node on the cell's upper-right membrane, with the thin leader running into the cytoplasm | expected: the extracellular glucose cluster drawn to the LEFT of the cell
+PAGE hhs 2 clean 16 0
+PAGE hypoglycemia 2 clean 4 0
+PAGE metabolic-syndrome 2 clean 0 0
+PAGE pericarditis 2 WRONG 5 2
+  WRONG "Myocardium" -> lands on: the dark teal pericardial cavity (fluid band with bubbles), three layers outboard of the muscle | expected: the red striated myocardium at the far right of the cross-section
+  SUSPECT "Parietal Serous Pericardium" -> lands on: mid-teal pericardial cavity, the same band the "Pericardial Cavity" dot correctly marks | expected: the thin pale smooth band at the inner surface of the grey fibrous pericardium, ~17 px to its left
+PAGE pleural-effusion 2 clean 6 0
+PAGE siadh 2 SUSPECT 9 1
+  SUSPECT "Interstitial fluid to Blood" -> lands on: below the same bottom membrane as "Tubular lumen (urine)", which the panel's own step 3 text identifies as the apical membrane | expected: the opposite (top) side of the cell, where step 1 places the basolateral membrane and V2 receptors
+PAGE t1dm 2 clean 12 0
