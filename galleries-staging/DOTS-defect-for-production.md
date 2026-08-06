@@ -829,3 +829,69 @@ label case, what CATEGORY means, and the shield mark. Whichever combination is i
 help to name it and hold it.
 
 Minor: page 5's MODALITY reads `Clinical Illustration` where the others read `Illustration`.
+
+---
+
+## Batch 2026-08-05 (45 files) — and three pages of the WRONG CONDITION
+
+Forty-five files, all distinct, no re-sends, every footer status cell clean. It looked like five
+complete galleries. It is four complete galleries, one seven-page gallery, and three pages that
+belong to something else.
+
+| condition | ICD-10 | pages received | outcome |
+|---|---|---|---|
+| `gdm` Gestational Diabetes | O24.419 | 6–10 | **completed and shipped** |
+| `pph` Postpartum Hemorrhage | O72.1 | 1–10 | **shipped** |
+| `labor` Labor & Delivery Stages | O80 | 1–10 | **shipped** |
+| `bronchiolitis` Bronchiolitis (RSV) | J21.0 | 1–10 | **shipped** |
+| `croup` Croup | J05.0 | 1–6, 10 | **blocked — 7, 8, 9 missing** |
+| **asthma** | **J45.0** | 7, 8, 9 | **should not have been sent** |
+
+### The important one: three asthma pages arrived where croup 7–9 should be
+
+Ten pages in this batch carry an `OB & PEDS` header. **Seven are croup and three are asthma.**
+A page count would have read that as one complete gallery and shipped three asthma pages inside
+croup.
+
+What distinguishes them — none of it is the specialty label, which says OB & PEDS on all ten:
+
+| | the seven croup pages | the three strays |
+|---|---|---|
+| ICD-10 | J05.0 | **J45.0** |
+| footer condition line | Croup | **Asthma** |
+| CLINICAL SOURCE | AAP Red Book 2024, Nelson 22e, AAP Croup CPG | **GINA 2024, Kendig's 9e, EPR-3 2007** |
+
+And the strays should not exist at all: **`asthma` already has a complete ten-page gallery live**,
+in **Respiratory**, with different page titles. So this is a partial re-render of finished work,
+carrying the wrong specialty and a different ICD-10 from the one the live condition uses (J45.909).
+
+**What is needed: croup pages 7, 8 and 9, ICD-10 J05.0, croup sources.** That single delivery takes
+the app to 100 galleries and completes OB & Peds.
+
+### `labor` pages 9 and 10 are indistinguishable
+
+Both render the identical headline band — `MANAGEMENT & TREATMENT / SUPPORTING NORMAL LABOR &
+DELIVERY` — **and** the identical footer IMAGE TITLE. Every previous duplicate-title case matched on
+the footer only; this one matches on both, so there is nothing on either page that tells them apart.
+
+Page 10 is also **missing the Clinical Pearl & Key Takeaways page** that closes every other gallery
+in the set — `gdm`, `pph` and `bronchiolitis` all have one. It looks like page 10 was rendered from
+page 9's brief.
+
+### The CATEGORY cell now differs between galleries in a single delivery
+
+`gdm`, `pph` and `labor` put the **specialty** in CATEGORY (`OB & Peds`). `bronchiolitis` puts the
+**page type** (`Overview`, `Anatomy`, `Pathophysiology`, `Clinical Assessment`, `Diagnostic Testing`,
+`Pathology`, `Therapeutics`, `Management`). Same batch, same day, opposite conventions.
+
+`gdm` manages both — page 2 carries the page type and the other nine carry the specialty.
+
+### Header colour is no longer stable either
+
+The `OB & PEDS` label and the `V1.0` badge render **purple** on some pages and **red/salmon** on
+others, within this one batch and sometimes within one gallery.
+
+### File format
+
+`pph` page 1 arrived as a **.jpeg**; the other 44 are .png. Harmless — the builder re-encodes — but
+it indicates a different export path for that page.
