@@ -1,0 +1,22 @@
+PAGE ibd 2 SUSPECT 24 12
+  SUSPECT "Tongue" -> lands on: the lip / corner of the mouth, within ~15px of where the Mouth and Oral cavity leaders also stop | expected: the tongue body inside the oral cavity (the large pink mass drawn in the cheek)
+  SUSPECT "Descending colon" -> lands on: fat/omentum just above and lateral to the splenic flexure, off the bowel wall (same endpoint the Splenic flexure leader reaches) | expected: the vertical colon segment running down the patient's left flank
+  SUSPECT "Rectum" -> lands on: the rectosigmoid junction, ~15px (source px) right of the rectal tube | expected: the midline rectum below the sigmoid
+  UNREADABLE "Jejunum" -> lands on: cannot trace - leader crosses the forearm/hand and merges with 12 near-parallel leaders | expected: proximal small bowel, LUQ
+  UNREADABLE "Ileum" -> lands on: cannot trace (same dense fan) | expected: distal small bowel coils
+  UNREADABLE "Terminal ileum" -> lands on: cannot trace (same dense fan) | expected: last ileal loop entering the cecum
+  UNREADABLE "Ileocecal valve" -> lands on: cannot trace (same dense fan) | expected: ileocecal junction
+  UNREADABLE "Cecum" -> lands on: cannot trace (same dense fan) | expected: cecal pouch, RLQ
+  UNREADABLE "Appendix" -> lands on: cannot trace (same dense fan) | expected: vermiform appendix off the cecum
+  UNREADABLE "Ascending colon" -> lands on: cannot trace (same dense fan) | expected: right-flank colon
+  UNREADABLE "Hepatic flexure" -> lands on: cannot trace (same dense fan) | expected: right colic flexure under the liver
+  UNREADABLE "Splenic flexure" -> lands on: cannot trace (same dense fan) | expected: left colic flexure
+PAGE icp 2 WRONG 36 8
+  WRONG "BRAIN ~80%" (Intracranial Compartments panel) -> lands on: the blue subarachnoid/CSF band at the convexity - the leader dot sits squarely inside the blue layer | expected: the pink brain parenchyma
+  WRONG "CSF ~10%" (Intracranial Compartments panel) -> lands on: pink brain parenchyma - the arrow crosses the blue band and stops inside the gyri | expected: the blue CSF band. BRAIN and CSF appear to be swapped with each other
+  WRONG "Cavernous sinus" (Dural Venous Sinuses panel) -> lands on: the venous channel at the inferolateral margin of the cerebellum (sigmoid sinus / jugular bulb), one step below the Sigmoid sinus arrow and just above the Internal jugular vein arrow | expected: the cavernous sinus at the skull base beside the sella turcica, far anterior
+  SUSPECT "Scalp" (Mid-sagittal panel) -> lands on: inside the skull diploe (the tan cancellous band) | expected: the outer soft-tissue scalp layer
+  SUSPECT "Skull" (Mid-sagittal panel) -> lands on: the pink periosteal-dura band just deep to the inner table | expected: the bone. Scalp and Skull both read as shifted one layer inward
+  SUSPECT "Arachnoid mater" (Mid-sagittal panel) -> lands on: leader runs on into cerebral cortex; no terminus resolvable on the arachnoid line | expected: the thin membrane over the subarachnoid space
+  SUSPECT "Subarachnoid space (CSF)" (Mid-sagittal panel) -> lands on: leader passes through the CSF layer and continues deep into cortex | expected: the CSF space between arachnoid and pia
+  SUSPECT "Pia mater" (Mid-sagittal panel) -> lands on: leader continues into cortex / toward the corpus callosum | expected: the membrane hugging the gyral surface

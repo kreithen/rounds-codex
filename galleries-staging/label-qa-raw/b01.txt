@@ -1,0 +1,45 @@
+PAGE aortic-stenosis 2 WRONG 11 2
+  WRONG "Pulmonary Trunk" -> lands on: the blue caval tube descending BELOW the heart at the inferior/right border (inferior vena cava stump, continuous with the SVC behind the right atrium) | expected: the blue vessel arching out from behind the aortic root in the upper half of the figure
+  SUSPECT "Mitral Valve" -> lands on: the AV-groove epicardial fat with the circumflex vessels, just inferolateral to the pale anterior mitral leaflet | expected: the whitish leaflet between the left atrium and left ventricle
+PAGE appendicitis 2 WRONG 31 18
+  SUSPECT "Ileocecal valve" [RLQ panel] -> lands on: mesenteric fat / ileocolic vessels just BELOW the ileum-cecum junction | expected: the junction where the smooth ileum meets the haustrated cecum
+  SUSPECT "Taenia coli (converging at base)" [RLQ panel] -> lands on: a plain haustral bulge of the cecum | expected: the pale longitudinal taenia band, which runs ~30px to the right of the endpoint
+  SUSPECT "Appendiceal orifice (at base of cecum)" [RLQ panel] -> lands on: the middle of the anterior cecal wall | expected: the base of the cecum where the appendix takes off (lower right)
+  WRONG "Mesappendix (contains appendiceal artery and vein)" [RLQ panel] -> lands on: two dots on the lateral wall of the appendix itself, the same tube labelled "Vermiform appendix" | expected: the peritoneal fold between appendix and cecum (none is drawn in this render)
+  SUSPECT "Appendicular artery" [arterial panel] -> lands on: a small orange strand in the middle of the ileocolic arterial fan | expected: the branch descending along the mesoappendix to the appendix, lower and to the left
+  WRONG "Appendicular vein" [venous panel] -> lands on: the top of the main ascending venous trunk (the ileocolic vein heading to the SMV) | expected: the small vein running to the appendix at the lower left
+  SUSPECT "Ileocolic vein" [venous panel] -> lands on: the cecal wall at the edge of the tiny marginal veins | expected: the large trunk that the "Appendicular vein" leader is pointing at
+  WRONG "Serosa" [cross-section] -> lands on: the dark red band deep inside the wall (r~82 of a 110 radius) | expected: the outermost thin bright rim
+  WRONG "Muscularis propria (outer longitudinal, inner circular)" [cross-section] -> lands on: the outer edge of the magenta mucosal band | expected: the pale speckled outer band (r 90-108)
+  WRONG "Submucosa" [cross-section] -> lands on: the magenta mucosal band | expected: the dark red band between muscularis and mucosa
+  WRONG "Mucosa (with lymphoid follicles)" [cross-section] -> lands on: inside the orange lumen | expected: the magenta scalloped band
+  WRONG "Lumen" [cross-section] -> lands on: the magenta mucosal band | expected: the orange centre
+  WRONG "Psoas major" [relations panel] -> lands on: the haustrated cecum (bowel) | expected: the muscle behind the bowel, not rendered at that point
+  WRONG "Iliacus" [relations panel] -> lands on: the haustrated cecum (bowel) | expected: the muscle over the iliac fossa
+  WRONG "Right ureter" [relations panel] -> lands on: the mid-portion of the appendix tube | expected: a retroperitoneal tube crossing the iliac vessels
+  WRONG "External iliac vessels" [relations panel] -> lands on: the distal appendix tube | expected: the red and blue iliac tubes to its right
+  SUSPECT "Cecum" [relations panel] -> lands on: a dashed line that crosses the whole cecum and terminates near the appendix origin rather than in the cecum body
+  SUSPECT "McBurney's Point" [surface anatomy] -> the yellow marker sits ~1/5 of the way from ASIS to umbilicus and BELOW the ASIS-umbilicus line | expected: on the line, 1/3 of the way from ASIS as the caption states
+PAGE ards 2 SUSPECT 10 3
+  SUSPECT "Type II cell (surfactant production)" [normal panel] -> lands on: empty alveolar airspace ~1 cell-diameter inside the epithelium | expected: the green Type II cell drawn in the wall below-left, which the label's own icon depicts
+  SUSPECT "Thickened, inflamed membrane" [ARDS panel] -> lands on: the proteinaceous fluid just inside the alveolar lumen | expected: the thickened wall band itself
+  SUSPECT "Capillary compression & microthrombi" [ARDS panel] -> lands on: the alveolar wall band | expected: the compressed capillaries and dark microthrombi outside the wall
+PAGE asthma 2 SUSPECT 11 2
+  SUSPECT "CARINA" [airway map] -> lands on: the black background in the notch below the bifurcation, about one tracheal diameter distal to the carinal ridge | expected: the ridge at the tracheal bifurcation itself
+  SUSPECT "3 CARTILAGE PLATES" [bronchus cross-section] -> the numbered marker sits in the dark background outside the section, only touching the pale grey outer band | expected: on the cartilage plate
+PAGE b12-anemia 2 WRONG 12 4
+  WRONG "3" marker (legend: "Parietal Cells") -> lands on: the duodenal C-loop at the pylorus | expected: the gastric body/fundus where parietal cells sit. Note there is NO "4" marker (legend: "Duodenum") anywhere in the figure, so this marker may simply be misnumbered
+  SUSPECT "Pancreas" -> lands on: the pink duodenal wall, ~20px left of the orange pancreas | expected: the orange pancreas itself
+  SUSPECT "Terminal ileum" (marker 5) -> lands on: the bowel loop descending on the patient's LEFT | expected: the right lower quadrant, where the cecum and appendix are drawn on the opposite side of the figure
+  SUSPECT "6" marker (legend: "Transport" - B12 enters portal blood) -> its leader ends on the bowel wall | expected: the blue portal vein drawn just to its left
+PAGE bipolar 2 WRONG 7 4
+  WRONG "5 HYPOTHALAMUS" -> lands on: the purple GABA pathway arc in the parietal white matter, high and posterior | expected: the base of the diencephalon below the thalamus, where the yellow circuit node sits
+  WRONG "2 ANTERIOR CINGULATE CORTEX" -> lands on: the anterior frontal (prefrontal) cortex, on the blue-tinted band, ~8% of the page anterior to the cingulate | expected: the gyrus immediately above the genu/body of the corpus callosum, where the orange arc runs
+  SUSPECT "3 AMYGDALA" -> lands on: the green pathway arc at the frontal-temporal junction, ~6% of the page anterior to the green amygdala node | expected: the green sphere in the anterior medial temporal lobe
+  SUSPECT "4 BASAL GANGLIA" -> lands on: the pale corpus callosum at the upper margin of the purple deep-grey mass | expected: inside the purple basal ganglia/thalamic mass
+PAGE bowel-obstruction 2 WRONG 20 5
+  WRONG "Villi" [small bowel cross-section] -> lands on: the outer part of the annular cut face (serosa/muscularis zone) | expected: the pale scalloped mucosal projections lining the lumen
+  SUSPECT "Submucosa" [small bowel cross-section] -> lands on: the tip of a mucosal fold | expected: the layer immediately outside the mucosa
+  SUSPECT "Muscularis (Propria)" [small bowel cross-section] -> lands on: a mucosal fold at the luminal edge | expected: the thick muscle band in the outer wall
+  SUSPECT "Haustra" [large bowel cross-section] -> lands on: the annular cut face of the wall | expected: the puffy haustral pouches on the tube's outer surface, visible on the left of the same figure
+  SUSPECT "Muscularis (Propria)" [large bowel cross-section] -> lands on: the inner mucosal lining of the lumen | expected: the muscle band within the wall

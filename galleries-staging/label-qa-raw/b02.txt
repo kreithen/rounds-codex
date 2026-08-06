@@ -1,0 +1,42 @@
+PAGE cap 2 clean 8 0
+PAGE cardiac-arrest 2 WRONG 5 1
+  WRONG "5 Diaphragm" -> lands on: purple lower-lobe LUNG parenchyma, same tissue as arrow 4 "Lungs" | expected: the orange muscular dome ~40px lower in the figure
+PAGE cdiff 2 WRONG 44 14
+  WRONG "Superior mesenteric a." (Arterial supply panel) -> lands on: the cecum / lower ascending colon BOWEL WALL | expected: the large red midline arterial trunk in the mesentery
+  WRONG "Superior mesenteric v." (Venous drainage panel) -> lands on: the ascending colon bowel wall near the hepatic flexure | expected: the large blue midline venous trunk
+  WRONG "Inferior mesenteric v." (Venous drainage panel) -> lands on: the ASCENDING colon (patient's right), two dots one above the other | expected: the vein on the patient's LEFT draining the descending/sigmoid colon
+  WRONG "Anal canal" (Colon anatomy panel) -> lands on: haustrated, taenia-bearing sigmoid colon along the bottom of the frame | expected: the distal end of the smooth non-haustrated rectal tube at bottom-left (essentially at/below the panel edge)
+  WRONG "Normal mucus layer" (Normal colonic mucosa panel) -> lands on: the tissue BENEATH the pale surface film, at the crypt mouths (surface epithelium/lamina propria) | expected: the pale translucent film on top - i.e. where "Intact epithelium" currently points; the two read as swapped
+  SUSPECT "Intact epithelium" (Normal colonic mucosa panel) -> lands on: the pale translucent surface film that reads as the mucus layer | expected: the epithelial band immediately beneath it
+  SUSPECT "Rectum" (Colon anatomy panel) -> lands on: haustrated bowel at the descending-to-sigmoid curve | expected: the smooth, wide, non-haustrated tube descending at bottom-centre-left
+  SUSPECT "Sigmoid colon" (Colon anatomy panel) -> lands on: the straight vertical descending limb, only ~77px below the "Descending colon" dot and above the sigmoid loop | expected: the S-shaped segment running leftward along the bottom
+  SUSPECT "Taenia coli (longitudinal muscle bands)" -> lands on: the free lateral haustral wall of the ascending colon | expected: the tan longitudinal band running down the colon ~18px medial to the dot
+  SUSPECT "Middle colic a." -> lands on: the pale marginal artery at the hepatic flexure | expected: the branch ascending from the SMA trunk to the mid-transverse colon
+  SUSPECT "Ileocolic a." -> lands on: black background medial to the ascending colon, ~13px short of the arterial arcade | expected: the arcade branch running to the cecum
+  SUSPECT "Superior rectal a." -> lands on: the marginal artery along the mid descending colon | expected: the terminal branch running down to the rectum at the bottom of the panel
+  SUSPECT "Portal vein (to liver)" -> lands on: black space just short of the lower venous trunk | expected: the cut vessel end leaving the TOP of the panel (the one actually heading to the liver)
+  SUSPECT "Parasympathetic (vagus n.) -> proximal colon" (Innervation panel) -> lands on: the splenic flexure / proximal descending colon | expected: the cecum-ascending-transverse colon on the opposite side of the panel
+PAGE cellulitis 1 clean 1 0
+PAGE cellulitis 2 WRONG 17 4
+  WRONG "Artery" -> lands on: the dark BLUE vessel (the vein) in the subcutaneous fat | expected: the red vessel running alongside it
+  WRONG "Vein" -> lands on: a yellow fat lobule with no vessel in it | expected: the blue vessel, which the "Artery" leader is currently pointing at
+  WRONG "Hair follicle" -> lands on: plain reticular dermis on the block's right side face (small vessels/mast cells only) | expected: the sheathed follicle with its hair, drawn on the block's front face at left
+  SUSPECT "Portal of entry (skin break)" -> lands on: erythematous skin ~30px to the right of the wound, near a lymphatic branch | expected: the dark slit-shaped skin break itself
+PAGE chf 1 SUSPECT 5 2
+  SUSPECT "Left Ventricular Dysfunction" -> lands on: the cut pulmonary-vein stumps / left atrial region at the upper right | expected: the left ventricular mass lower down (note: these five are concept callouts evenly spaced down the right edge, not anatomical labels)
+  SUSPECT "Systemic Venous Congestion" -> lands on: the left ventricular lateral wall | expected: the right heart / SVC-IVC side, which is on the viewer's LEFT in this anterior view
+PAGE chf 2 SUSPECT 15 1
+  SUSPECT "RCA Right Coronary Artery" (Coronary circulation panel) -> lands on: a dark BLUE cardiac vein on the RV inferior-anterior surface | expected: a red arterial branch; the LAD and LCx dots in the same panel also sit on epicardium/veins rather than on their named arteries
+PAGE cholecystitis 2 WRONG 20 7
+  WRONG "CYSTIC DUCT" (main figure) -> lands on: the gallstones inside the cut-open gallbladder fundus | expected: the green tube arising from the gallbladder neck that arches right to join the hepatic duct
+  WRONG "COMMON BILE DUCT (CBD)" (main figure) -> lands on: pancreas parenchyma immediately above the yellow pancreatic duct | expected: the green duct descending behind the pancreatic head
+  WRONG "COMMON HEPATIC DUCT" (main figure) -> lands on: the bile duct ~45px BELOW the cystic-duct junction, i.e. the common bile duct | expected: the short segment between the R+L hepatic confluence and the cystic-duct junction
+  WRONG "Mucosa" (Gallbladder wall layers panel) -> lands on: the outermost blue/purple band of the layered fan | expected: the red folded inner lining facing the lumen and the gallstones, ~30-60px further in
+  WRONG "Sphincter of Oddi" (Duodenal entry panel) -> lands on: the outer duodenal wall at the bottom of the C-loop | expected: the muscle at the ampulla/papilla, higher and to the left
+  SUSPECT "Muscularis" and "Perimuscular CT" (Gallbladder wall layers panel) -> land on: the same outer blue/purple boundary at different heights along the curve | expected: two distinct bands within the fan
+  SUSPECT "Cystic artery" (Calot's triangle panel) -> lands on: the green bile duct at the point where the red artery passes behind it | expected: on the red artery itself, which the leader passes over on its way in
+PAGE cirrhosis 2 WRONG 28 4
+  WRONG "Falciform ligament" (main figure) -> lands on: left-lobe liver parenchyma ~160px lateral to the midline | expected: the pale cream vertical band between the lobes, which is drawn unmistakably
+  WRONG "Ligamentum teres (round ligament)" (main figure) -> lands on: the inferolateral surface of the left lobe ~145px lateral | expected: the cream cord descending from the lower end of the falciform ligament
+  SUSPECT "Xiphoid process" (Surface landmarks panel) -> lands on: the same ringed intersection dot as "Right costal margin", ~37px lateral to the body midline on the patient's LEFT | expected: the midline at the lower end of the sternum
+  SUSPECT "Diaphragm" (Peritoneal relationships panel) -> lands on: liver tissue inside the bare-area triangle, ~14px past the pale diaphragm line it crosses | expected: the diaphragm sheet itself

@@ -1,0 +1,24 @@
+PAGE osteoporosis 1 clean 2 0
+PAGE osteoporosis 2 WRONG 13 5
+  WRONG "Tibia" -> lands on: the FIBULA on both skeletons (anterior dot sits squarely on the fibular shaft; lateral leader ends on the thin fibular shaft) | expected: the broad tibial shaft
+  WRONG "Fibula" -> lands on: the TIBIAL shaft on the lateral skeleton (anterior dot sits on the tibia/fibula border) | expected: the slender posterolateral fibula - Tibia and Fibula appear swapped
+  WRONG "Radius (Distal)" -> lands on: the distal FEMORAL shaft of the lateral skeleton, just above the knee | expected: the distal radius at the wrist (hand is drawn up and to the right)
+  WRONG "Humerus" -> lands on: the lower thoracic / lumbar VERTEBRAL COLUMN of the lateral skeleton, about one vertebral body below the distal humerus (the anterior-side leader stops in soft tissue medial to the humerus, though it does cross the shaft) | expected: the humeral shaft
+  SUSPECT "Ribs" -> lands on: right-hand leader terminates on the humeral shaft after crossing 3-4 rib arcs | expected: terminate on a rib
+PAGE pad 2 SUSPECT 17 1
+  SUSPECT "Deep femoral artery (profunda femoris)" -> lands on: soft tissue ~1-2 px lateral to the common femoral trunk, with no vessel under the dot; the branch that actually carries the perforators runs on the opposite (medial) side of the SFA and is unmarked | expected: the profunda femoris itself, just distal to its origin
+PAGE pancreatitis 2 WRONG 16 3
+  WRONG "Celiac trunk" -> lands on: the large blue VEIN (IVC/portal) about 13 px lateral to the aorta; the celiac trunk itself is the red stub arising from the aorta ~45 px lower right | expected: the arterial trunk off the anterior aorta that gives the splenic artery
+  SUSPECT "Accessory pancreatic duct (Santorini duct)" -> lands on: the caption carries two leaders; one ends exactly where the main pancreatic duct + CBD confluence enters the duodenal wall (the MAJOR papilla). The other ends on a small callout box in the head | expected: the accessory duct / minor papilla, which is proximal to the main duct's insertion
+  SUSPECT "(connector arrow to the duodenal-papillae inset)" -> lands on: its tail sits on the superior mesenteric artery / aorta, not on the duodenum whose lumen the inset depicts | expected: the duodenal C-loop
+PAGE parkinsons 2 WRONG 19 10
+  WRONG "Brainstem" -> lands on: empty dark background in the neck/soft-tissue silhouette, roughly 110 px anterior to the drawn brainstem | expected: the tan midbrain-pons-medulla column
+  WRONG "Cerebellum" -> lands on: empty dark background below the jaw line | expected: the foliated cerebellum, far up and to the right
+  WRONG "Globus pallidus (external)" -> lands on: a dot in the pink frontal CORTEX gyri, outside every coloured deep-grey structure | expected: the purple pallidal lumps below the thalamus
+  WRONG "Thalamus" (left column) -> lands on: the small purple globus-pallidus lump cluster - the same structure the "Globus pallidus (internal)" leader targets, ~18 px away | expected: the large purple ovoid (or the blue body) that reads as the thalamus
+  WRONG "Thalamus" (right column) -> lands on: the upper-right edge of the red-brown RED NUCLEUS sphere | expected: the large purple ovoid in the diencephalon
+  WRONG "Substantia nigra pars reticulata (SNr)" (right column) -> lands on: the same red-brown RED NUCLEUS sphere (its leader doglegs left across the cerebellum and finishes on the sphere) | expected: the midbrain substantia nigra. Three separate leaders - Thalamus, SNr and Red nucleus - all converge on this one sphere
+  SUSPECT "Cingulate gyrus" -> lands on: the purple arc, the same band that the "Corpus callosum" leader terminates in ~40 px away | expected: the cortical ribbon immediately outside/above the callosal arc
+  SUSPECT "Motor cortex (Precentral gyrus)" -> lands on: superior frontal cortex about one third of the way back from the frontal pole | expected: the precentral gyrus, near the vertex just anterior to the central sulcus
+  SUSPECT "Subthalamic nucleus (STN)" -> lands on: the tan/beige body beyond the small olive-green sphere; the green leader passes over the green sphere and stops ~12 px past it | expected: the green sphere, which matches the label colour
+  SUSPECT "Internal capsule" -> lands on: the boundary between the large purple ovoid and the blue body, not on a distinct white-matter band | expected: a capsular white-matter lamina

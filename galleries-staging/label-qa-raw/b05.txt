@@ -1,0 +1,47 @@
+PAGE gout 2 WRONG 15 9
+  WRONG "Synovial fluid" -> lands on: extracapsular soft tissue / subcutaneous layer at the lateral margin of the cutaway (~x772,y434) | expected: the gold fluid band inside the joint space at the centre of the cutaway
+  WRONG "Joint cavity" -> lands on: trabecular bone inside the proximal phalanx (~x683,y537), well distal to the joint | expected: the gold/dark space between the two articular cartilage caps
+  WRONG "Plantar plate" -> lands on: the lateral sesamoid bone (~x694,y592), which the page labels separately | expected: the fibrocartilaginous plate deep to the sesamoids
+  WRONG "Sesamoid bones (within tendons)" -> lands on: trabecular bone inside the proximal phalanx shaft (~x575,y687) | expected: the two tan ovals at ~x640-707,y553-620
+  WRONG "Other metatarsals (2-5)" (left skeletal-landmarks panel, item 5) -> lands on: empty black background at the edge of the legend box (~x256,y657); there is no numbered 5 badge anywhere on the foot | expected: metatarsals 2-5 on the lateral side of the foot
+  SUSPECT "Joint capsule" -> lands on: red muscle fibres ~15px lateral to the pale grey capsule band (~x756,y336) | expected: the pale capsule band hugging the metatarsal neck
+  SUSPECT "Synovial membrane (produces synovial fluid)" -> lands on: extracapsular tissue at the muscle/capsule junction (~x758,y382) | expected: the thin lining on the inner aspect of the capsule
+  SUSPECT "Sesamoid bones (medial & lateral)" (left panel, item 4) -> lands on: the first metatarsal diaphysis (~x297,y558); the 4 badge sits distal-lateral to the sesamoid pair | expected: the two small ovals overlying the metatarsal head
+  SUSPECT "Phalanges" (left panel, item 6) -> lands on: the 5th metatarsal shaft just proximal to the 5th MTP joint (~x437,y613) | expected: the phalanges of the 5th toe, one bone distal
+PAGE hepatitis 2 WRONG 34 13
+  WRONG "Cystic duct" (main anterior view) -> lands on: inside the body of the gallbladder (~x266,y523), the same sac "Gallbladder" already points at | expected: the green tube leaving the gallbladder neck
+  WRONG "Inferior vena cava" (main) -> lands on: the small orange portal-triad cross-section widget where the artery crosses the duct (~x376,y567) | expected: the large blue IVC trunk ~35px to the right
+  WRONG "Left portal vein" (main) -> lands on: a branch of the bright-red arterial tree, the same tree "Left hepatic artery" (above) and "Hepatic artery proper" (below) point at (~x467,y506) | expected: a portal (blue/purple) vessel
+  WRONG "Bile duct (from left and right hepatic ducts)" (main) -> lands on: the blue IVC immediately right of the hepatic artery (~x408,y535) | expected: the green biliary trunk ~50px to the left
+  WRONG "Hepatocytes (plates)" (Microanatomy panel) -> lands on: the portal-triad cluster at the hexagon corner, on its blue portal venule (~x424,y889) | expected: one of the salmon hepatocyte plate blocks
+  WRONG "Sinusoids" (Microanatomy panel) -> lands on: the interior of a hepatocyte plate block (~x412,y941) | expected: one of the radial blue/pink channels between plates
+  SUSPECT "Coronary ligament" (main) -> lands on: bare anterior right-lobe parenchyma (~x243,y374); no ligament is drawn there | expected: a peritoneal reflection (not depicted in an anterior view)
+  SUSPECT "Common bile duct" (main) -> lands on: the green duct at the gallbladder-neck / cystic-duct level, above the confluence (~x349,y524) | expected: the green trunk below the cystic-duct junction
+  SUSPECT "Right hepatic artery" (main) -> lands on: the green biliary duct (~x355,y537); a dark maroon arterial twig lies ~5px up-right | expected: the arterial branch, clear of the duct
+  SUSPECT "Portal vein" (main) -> lands on: a dark maroon vessel wedged between the green ducts (~x360,y555); the blue venous trunks are ~40px to the right | expected: the portal vein, which this page colours blue in its own BLOOD SUPPLY inset
+  SUSPECT "Hepatic portal triad (artery, vein, bile duct)" (main) -> lands on: the bright-red hepatic artery alone (~x390,y537) | expected: the bundle of all three, or the triad cross-section widget
+  SUSPECT "Hepatic veins / Drain blood to IVC" (main) -> lands on: the artery/IVC boundary at hilum level (~x397,y543) | expected: the hepatic veins entering the IVC above the liver
+  SUSPECT "Left hepatic duct" (Biliary drainage panel) -> lands on: the common hepatic trunk ~11px below the confluence (~x106,y885), which "Common hepatic duct" also labels | expected: the left-going limb of the bifurcation
+PAGE hiv 2 WRONG 17 9
+  WRONG "Integrase" (HIV-1 VIRION panel) -> lands on: a beige/grey surface-protein knob on the outer green envelope (~x219,y613) | expected: the cyan enzyme blob inside the capsid (~x299,y559), matching the blue integrase icon in the KEY VIRAL PROTEINS legend
+  WRONG "Reverse Transcriptase" (VIRION) -> lands on: an orange p24 capsid bead of the inner shell (~x329,y547) | expected: one of the small green enzyme shapes inside the core (~x300,y514)
+  WRONG "Tonsils" (PRIMARY TARGETS panel) -> lands on: the thyroid / upper trachea at the thoracic inlet (~x691,y253) | expected: the oropharynx, ~50px higher, behind the mouth
+  WRONG "Thymus" (PRIMARY TARGETS) -> lands on: inside the patient's left lung (~x711,y327) | expected: the yellow bilobed thymus between the lungs (~x680-698,y273-307)
+  SUSPECT "gp41" (VIRION) -> lands on: empty black background just outside the envelope, between spikes (~x173,y438) | expected: the purple stalk of a spike, where gp41 sits
+  SUSPECT "Matrix (p17)" (VIRION) -> lands on: the green envelope surface (~x195,y555), the same layer "Lipid Membrane" points at | expected: the violet bead ring just inside the envelope
+  SUSPECT "Capsid (p24)" (VIRION) -> lands on: the violet inner-membrane band (~x337,y422), just outside the orange p24 bead shell | expected: the orange bead shell or the conical core
+  SUSPECT "Co-receptors" (CELL TARGET: CD4+ T-LYMPHOCYTE) -> lands on: cytoplasm just inside the membrane (~x525,y1167), overshooting the teal membrane knobs its shaft passes between | expected: one of the teal co-receptor knobs on the membrane
+  SUSPECT orphan leader line (VIRION) -> a white leader runs from the cyan integrase blob (~x299,y559) and dead-ends on a capsid bead (~x339,y583) with no label at either end | expected: either connect it to a label or remove it
+PAGE htn 1 clean 4 0
+PAGE htn 2 WRONG 8 2
+  WRONG "Renal Arteries" -> lands on: the parenchyma of the patient's left kidney, below the hilum (~x640,y748) | expected: the red renal artery arching from the aorta to the hilum (~x594-625,y705-720)
+  SUSPECT "Common Iliac Arteries" -> lands on: the iliac trunk ~45px below the internal-iliac takeoff, i.e. the external iliac segment (~x668,y912) | expected: the short segment between the aortic bifurcation (~y808) and the internal-iliac branch (~y865)
+PAGE hyperkalemia 2 WRONG 17 3
+  WRONG "Renal Medulla" (item 2, KIDNEYS - ANTERIOR VIEW) -> lands on: the external surface of the intact left kidney (~x346,y451), which is capsule/cortex - the same tissue item 1 "Renal Cortex" points at | expected: a medullary pyramid in the cut kidney at the right
+  WRONG "Collecting Duct" (THE NEPHRON panel) -> lands on: the lower bend of the distal convoluted tubule coil (~x905,y634) | expected: the thick branched vertical duct to its right (~x950-975)
+  SUSPECT "Ascending Limb" / "Descending Limb" (THE NEPHRON panel) -> "Ascending Limb" leads to the shared Loop of Henle bracket and "Descending Limb" has no leader at all, so neither limb is individually identified | expected: separate leaders to the two limbs of the loop
+PAGE hyperlipidemia 2 clean 0 0
+PAGE hyperparathyroid 2 WRONG 5 3
+  WRONG "Superior parathyroid glands (2)" -> lands on: both of the glands on the LEFT lobe - the upper one (correct) and the LOWER one (~x203,y518), which is an inferior gland | expected: the two upper glands, one on each lobe
+  WRONG "Inferior parathyroid glands (2)" -> lands on: both of its leaders converge on the same single lower-right gland (~x330,y518); the upper-right gland gets no leader at all | expected: the two lower glands, one on each lobe
+  SUSPECT "Adipose Tissue" (PARATHYROID HISTOLOGY) -> lands on: parathyroid cells ~7px above the nearest fat vacuole (~x611,y682) | expected: inside one of the pale yellow fat globules

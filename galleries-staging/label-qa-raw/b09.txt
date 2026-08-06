@@ -1,0 +1,25 @@
+PAGE preeclampsia 2 WRONG 17 5
+  WRONG "HEART" -> lands on: a dot in the mid/upper field of the patient's right lung (purple lung parenchyma) | expected: the red heart drawn to the right of the lung, behind the sternum
+  WRONG "AORTA" -> lands on: a dot in the lower field of the patient's right lung | expected: the arch/descending aorta, the large red vessel medial to the lungs
+  WRONG "PLACENTA" -> lands on: the anterior lower uterine wall / adjacent maternal vessels, the same red band the UTERUS leader points to | expected: the dark-red villous vascular bed at the uterine fundus where the coiled umbilical cord inserts
+  WRONG "UMBILICAL CORD" -> lands on: maternal pelvic (iliac) vessels below and outside the uterus | expected: the coiled cord running from the fetal umbilicus up-left to the placental bed
+  SUSPECT "PELVIC CIRCULATION" -> lands on: the inner edge of the right lateral uterine wall where it meets the fetal buttock, with no maternal pelvic vessel at the endpoint | expected: the maternal iliac/pelvic vessel network at the lower left of the figure
+PAGE pud 2 WRONG 26 3
+  WRONG "Pylorus (pyloric sphincter)" -> lands on: the mucosal surface inside the duodenal bulb, well distal (left) of the pyloric narrowing | expected: the constricted neck between the gastric antrum and the duodenal bulb, about 120 px to the right of the endpoint
+  SUSPECT "Right gastric artery" (second, lower leader) -> lands on: the outer wall of the duodenal bulb with no artery at the endpoint; the label's first leader does merge correctly into an arterial branch off the celiac node | expected: the artery along the lesser curvature
+  SUSPECT "Gastroduodenal artery" -> lands on: the wall of the descending duodenum; the prominent vertical arterial trunk that reads as the GDA is ~40 px to the right of the dot | expected: that vertical trunk descending behind the first part of the duodenum
+PAGE ra 2 WRONG 23 7
+  WRONG "Hips" (Typical synovial joints panel) -> lands on: the LEFT KNEE - the leader runs horizontally at knee level and touches the femoral condyle of the glowing knee joint | expected: the glowing hip joints ~80 px higher, at the femoral heads
+  WRONG "Knees" (Typical synovial joints panel) -> lands on: the proximal tibia / calf soft tissue about 30 px BELOW the glowing knee joint, in plain blue leg | expected: the knee joint glow itself (which the "Hips" leader is currently touching)
+  WRONG "Tendon" (main joint figure) -> lands on: a dot squarely inside the striated RED MUSCLE BELLY | expected: the white fibrous tendon band ~20 px up and to the right of the dot (the "Ligament" leader lands on it correctly)
+  SUSPECT "Synovial fluid" -> lands on: the red synovial lining tissue at the joint margin, ~34 px left of where the "Synovial cavity" arrow lands | expected: inside the joint space / recess that holds the fluid
+  SUSPECT "Synovial membrane (intima)" -> lands on: the margin of the tibial articular cartilage, after the leader has crossed straight over the red synovial lining it names | expected: the red synovial lining itself (arguable - the synovium does reflect at that cartilage margin)
+  SUSPECT "Fibrous capsule (externa)" (main figure) -> lands on: the tibial cortical bone at the cartilage-bone junction, after crossing over the pale fibrous capsule layer | expected: the pale outer fibrous layer at approx x=250-272 (arguable - the capsule inserts on bone there)
+  SUSPECT "Fibrous capsule (collagen)" (Joint capsule & synovial lining panel) -> lands on: deep red synovial tissue between two villi, having crossed straight over the pale layered collagen band at the outer edge | expected: that pale outer collagen band
+PAGE schizophrenia 2 WRONG 15 5
+  WRONG "Corpus Callosum" -> lands on: a dot inside the blue/purple glowing thalamus-basal ganglia mass (the structure carrying the "3" badge); the leader passes straight through the pale ribbed callosal band on its way | expected: that pale ribbed arching band, about 20 px higher
+  WRONG "Thalamus" -> lands on: a dot in the parietal cortical gyri high on the convexity, ~125 px lateral to and above the thalamus | expected: the blue glowing thalamus in the diencephalon (which is where the Corpus Callosum leader currently lands)
+  WRONG "Cerebellum" -> lands on: the brainstem / upper spinal cord tube, well below the cerebellum | expected: the large foliated cerebellum drawn above and to the right of the endpoint
+  SUSPECT "Pituitary Gland" -> lands on: empty black background below the brainstem; no pituitary is drawn at the arrowhead | expected: the sella region under the hypothalamus. NOTE this is a double-headed orange pathway arrow running from the "4" badge down to the label text, so it may be a connector by design rather than a pointer
+  SUSPECT "Nucleus Accumbens" -> lands on: the purple mesolimbic pathway ribbon just below the "1" badge rather than on a discrete nucleus | expected: the ventral striatum tissue; arguable, since the badge marks the mesolimbic terminus
+PAGE sci 1 clean 5 0

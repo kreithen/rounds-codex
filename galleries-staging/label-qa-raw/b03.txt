@@ -1,0 +1,45 @@
+PAGE compartment 2 WRONG 14 7
+  WRONG "2 LATERAL COMPARTMENT" (anterior view panel) -> lands on: the middle of the GREEN-shaded muscle mass, which the same page's colour key defines as the anterior compartment | expected: the gold/lateral peroneal group over the fibula
+  WRONG "Interosseous membrane" (cross-section panel) -> lands on: a small subcutaneous red vessel at the posterior periphery of the section, between the purple superficial-posterior and blue deep-posterior compartments | expected: the fibrous sheet spanning tibia to fibula, anterolateral in this section
+  WRONG "Flexor retinaculum (forms roof of deep posterior compartment)" -> lands on: the dorsum of the foot, beneath the inferior EXTENSOR retinaculum | expected: medial ankle, behind the medial malleolus (not visible in an anterior view)
+  SUSPECT "4 DEEP POSTERIOR COMPARTMENT" (anterior view panel) -> lands on: the superior extensor retinaculum band on the anterior distal leg | expected: the deep posteromedial leg; not visible from anterior at all
+  SUSPECT "Deep peroneal nerve" (innervation panel) -> lands on: muscle immediately lateral to a blue vein; no yellow nerve trunk is drawn at that point | expected: the yellow nerve running with the anterior tibial vessels
+  SUSPECT "Superficial peroneal nerve" (innervation panel) -> lands on: the pale tibial/tendon edge beside the same blue venous column, mid-leg | expected: the lateral compartment, lateral to the anterior compartment
+  SUSPECT "Tibial nerve" (innervation panel) -> lands on: the purple nerve fan at the anterior ankle that spreads across the DORSUM of the foot | expected: posterior to the medial malleolus; artwork appears to colour the dorsal cutaneous fan purple to match the label
+  NOTE cross-section also carries a stray unlabelled leader line + dot terminating on the fibula marrow, adjacent to the "Lateral compartment" leader; no text is attached to it
+PAGE copd 2 clean 6 0
+PAGE covid 2 WRONG 19 4
+  WRONG "4 Larynx" (legend leader line, main figure) -> lands on: the TRACHEA, immediately below the "5 Trachea" badge, after running horizontally across the whole neck | expected: the laryngeal cartilages just below the epiglottis
+  WRONG "Basal Cell (stem cells)" (respiratory epithelium panel) -> lands on: the mid-height stalk of the purple GOBLET cell, which is separately labelled on the same panel | expected: the row of squat cuboidal cells sitting on the basement membrane at the bottom
+  SUSPECT "2 Nasopharynx" (legend leader line) -> lands on: empty black background just outside the facial silhouette, near the nose/upper lip | expected: the airway behind the nasal cavity (the on-figure badge 2 is correctly placed there)
+  SUSPECT "3 Oropharynx" (legend leader line) -> lands on: empty black background at the chin/submental outline | expected: the pharyngeal airway behind the tongue (the on-figure badge 3 sits on the posterior tongue, defensible for a region)
+  NOTE on-figure badge "4" sits in the pharyngeal airway just posterior to the epiglottis, above the thyroid/cricoid cartilages, which are drawn clearly lower on the same figure
+  NOTE viral-entry panel 1 has a stray horizontal white line running right from the ACE2 receptor across the epithelium to the panel divider, with no label attached
+PAGE croup 2 WRONG 12 4
+  WRONG "Trachea" (main sagittal figure) -> lands on: left lung parenchyma at the medial border, well BELOW the carina | expected: the ringed blue-grey tube in the neck between larynx and carina
+  SUSPECT "Vocal cords" (main sagittal figure) -> lands on: a point inside the yellow dashed "Subglottic space" callout box | expected: just ABOVE the subglottis, at the glottic level
+  SUSPECT "Epiglottis" (main sagittal figure) -> lands on: soft tissue in the laryngeal vestibule roughly 15px posterior to the pale leaf-shaped epiglottis; the line crosses the epiglottis and overshoots it | expected: on the epiglottis itself
+  SUSPECT "Oral cavity" (main sagittal figure) -> lands on: the lips at the mouth opening, then resumes as short stubs with dots on the body of the tongue | expected: the airspace of the oral cavity above the tongue
+  NOTE the "Subglottic space" dogleg (right, then a long turn UP to the dashed box at the larynx) is CORRECT; so are all 8 leaders in the child/adult ANATOMY COMPARISON panel and the cricoid dashed box
+PAGE cushings 2 SUSPECT 19 3
+  SUSPECT "3 ADRENAL GLANDS (On top of kidneys)" (panel arrow to central figure) -> lands on: the upper-lateral surface of the KIDNEY, about 30px clear of the yellow lobulated adrenal gland drawn on top of it | expected: the adrenal gland itself
+  SUSPECT "Superior, middle, and inferior suprarenal arteries" (Blood Supply panel) -> lands on: the lateral cortical surface of the kidney, reaching no vessel | expected: the red arterial branches drawn around the adrenal and at the hilum
+  SUSPECT "Superior hypophyseal artery" (Blood Supply panel) -> lands on: the pituitary gland / infundibulum junction rather than an identifiable arterial branch; thumbnail is small enough that this is hard to call | expected: the vessel running from the circle of Willis to the stalk
+  NOTE the five adrenal cross-section leaders (capsule / glomerulosa / fasciculata / reticularis / medulla) sit at correctly ordered increasing depth, but the bands are ~8px wide at source resolution, so fasciculata vs reticularis cannot be separated with confidence
+PAGE delirium 2 clean 5 0
+PAGE dementia 2 WRONG 14 14
+  WRONG "Corpus callosum (fornix beneath)" (sagittal) -> lands on: the PURPLE outer arc, which is the cingulate gyrus (it lies between the cortex and the salmon band) | expected: the salmon/pink arc inside it, the one with the genu and rostrum profile
+  WRONG "Cingulate gyrus" (sagittal) -> lands on: the blue-filled marker on the THALAMUS | expected: the purple arc above the corpus callosum
+  WRONG "Thalamus" (sagittal) -> lands on: the salmon CORPUS CALLOSUM band, posterior third near the splenium | expected: the blue oval in the centre of the figure
+  SUSPECT "Fornix" (sagittal) -> lands on: an arrowhead at the right edge of the GREEN hippocampal head | expected: the thin arch beneath the corpus callosum; no separate fornix appears to be drawn
+  WRONG "Mammillary body" (sagittal) -> lands on: the GREEN hippocampal body, about 10px below the Fornix arrowhead | expected: the small paired round body below the hypothalamus, anterior to the midbrain
+  WRONG "Hippocampus" (sagittal) -> lands on: the pink arbor-vitae CEREBELLUM, in the notch enclosed by the green C | expected: the green C-shaped structure itself
+  SUSPECT "Entorhinal cortex" (sagittal) -> lands on: the posterior/inferior limb of the GREEN hippocampus | expected: medial temporal cortex; the artwork's Key Structures panel colours entorhinal gold, not green
+  WRONG "Amygdala" (sagittal) -> lands on: the middle of the large tan oval that is the pons/upper brainstem | expected: the anterior medial temporal region
+  WRONG "Brainstem" (sagittal) -> lands on: the PURPLE medial-temporal blob sitting behind the brainstem | expected: the yellow/tan column running down from the midbrain
+  WRONG "Cerebellum" (sagittal) -> lands on: a blue-filled marker on the yellow BRAINSTEM (medulla) | expected: the pink arbor-vitae mass posterior to the brainstem
+  WRONG "Lateral ventricles" (coronal panel) -> lands on: the purple HIPPOCAMPUS in the left temporal lobe | expected: the dark ventricular cavities in the centre of the section
+  WRONG "Hippocampus (bilateral)" (coronal panel) -> lands on: a small teal dot on the MIDLINE at the third-ventricle level | expected: the purple bilateral structures in the temporal lobes
+  WRONG "Entorhinal cortex (bilateral)" (coronal panel) -> lands on: the purple HIPPOCAMPUS on the right side | expected: the gold/ochre band medial and inferior to it, which the artwork does draw
+  WRONG "Nucleus basalis of Meynert" (Cholinergic Pathway thumbnail) -> lands on: the midbrain/upper brainstem | expected: the bright orange basal-forebrain node below the genu, where all the cholinergic fibres in that thumbnail converge
+  NOTE this page is the worst in the batch. Leader assignments were confirmed by fitting each label tick's straight segment to each marker (full-length whiteness score 1.00 for the pairs above), not by eye alone.

@@ -24,8 +24,13 @@ from collections import defaultdict
 PAGE_RE = re.compile(
     r"^\s*PAGE\s+([a-z0-9-]+)\s+(\d+)\s+(WRONG|SUSPECT|UNREADABLE|clean)\s+(\d+)\s+(\d+)\s*$",
     re.I)
+# The chunk between the closing quote and the arrow is optional and is where the agents put a
+# panel note - `SUSPECT "Ileocecal valve" [RLQ panel] -> lands on: ...`. An earlier version of
+# this regex required the arrow immediately after the quote and silently dropped 184 of 323
+# findings, which read as a much cleaner audit than it was. Keep the note; a finding that names
+# its panel is more useful to whoever re-renders the page, not less.
 FIND_RE = re.compile(
-    r"^\s+(WRONG|SUSPECT|UNREADABLE)\s+[\"“](.+?)[\"”]\s*->\s*(.*)$", re.I)
+    r"^\s+(WRONG|SUSPECT|UNREADABLE)\s+[\"“](.+?)[\"”]\s*(.*?)->\s*(.*)$", re.I)
 
 RANK = {"WRONG": 0, "SUSPECT": 1, "UNREADABLE": 2, "CLEAN": 3}
 
@@ -47,7 +52,8 @@ def parse(paths):
             if m and cur is not None:
                 cur["findings"].append({"verdict": m.group(1).upper(),
                                         "label": m.group(2).strip(),
-                                        "detail": m.group(3).strip()})
+                                        "panel": m.group(3).strip(),
+                                        "detail": m.group(4).strip()})
     return pages
 
 
@@ -129,7 +135,8 @@ def main():
             W(f"{p['n_not_ok']} of {p['n_labels']} labels flagged.")
             W("")
             for f in p["findings"]:
-                W(f"- **{f['verdict']}** — \"{f['label']}\" — {f['detail']}")
+                pan = f" {f['panel']}" if f.get("panel") else ""
+                W(f"- **{f['verdict']}** — \"{f['label']}\"{pan} — {f['detail']}")
             W("")
     if buckets.get("CLEAN"):
         W("")

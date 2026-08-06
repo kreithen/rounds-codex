@@ -1,0 +1,36 @@
+PAGE dvt 2 WRONG 15 4
+  SUSPECT "Deep femoral vein" -> lands on: the single bright main deep venous trunk of the thigh, mid-shaft - the same vessel the "Femoral vein" label points at ~110px lower; no separate profunda femoris branch is drawn there | expected: a posterior/lateral branch off the common femoral vein
+  SUSPECT "Popliteal vein" -> lands on: the medial cortex of the proximal tibial shaft, ~72px (more than one condyle-width) BELOW the knee joint line | expected: the vein behind the knee at the joint line (popliteal fossa), as its own caption says
+  SUSPECT "Lumen" (cross-section inset) -> lands on: within the concentric wall bands (pink/blue) of the vein cross-section, outside the bright endothelial contour | expected: the dark central channel. LOW CONFIDENCE - the inset vessel is only ~103px across with 3-5px layers, at the limit of the source resolution
+  WRONG "Valve closed (prevents backflow)" -> lands on: the vein's outer wall midway between two valves, and no valve anywhere in the VALVULAR STRUCTURE panel is drawn closed - all three cusp pairs are swept open with upward flow arrows | expected: a closed (coapted) valve; there is no such structure on the artwork
+PAGE endocarditis 2 clean 8 0
+PAGE fracture 2 WRONG 31 7
+  WRONG "Ribs" (THE SKELETAL FRAMEWORK panel) -> lands on: the ELBOW marker (distal humerus/olecranon) on BOTH the anterior and the posterior skeleton | expected: the rib cage, which is drawn plainly to the left/right of the arrow and even carries its own unlabelled marker on the posterior view
+  WRONG "Spine" (THE SKELETAL FRAMEWORK panel) -> lands on: the FOREARM (proximal radius/ulna) marker on the anterior skeleton, and on empty space over the posterior forearm on the right | expected: the vertebral column, which has its own unlabelled marker beside the lumbar spine
+  WRONG "Tibia" (THE SKELETAL FRAMEWORK panel) -> lands on: the thin LATERAL bone (fibula) on both skeletons - the same bone the "Fibula" arrow 20px lower points at | expected: the thick medial bone of the leg
+  WRONG "Growth plate (physis)" (PEDIATRIC BONE panel) -> lands on: the grey outer covering at the metaphyseal shoulder, i.e. the same periosteal band that the "Thick periosteum" arrow below it points at | expected: the pale blue physeal band arcing across the bone, ~30px inferomedial
+  SUSPECT "Scapula" (THE SKELETAL FRAMEWORK panel) -> lands on: the glenohumeral/humeral-head marker on both views; on the posterior view the scapular body is drawn immediately lateral to it and carries its own unlabelled marker | expected: the scapular blade. Arguable, since the glenoid is part of the scapula
+  SUSPECT "Nutrient artery" (BONE ANATOMY long-bone panel) -> lands on: the dark red medullary marrow, ~12px right of the red arterial tree and the grey vessel it presumably names | expected: the red branching vessel in the marrow cavity
+  SUSPECT "Medullary cavity (marrow)" (LONG BONE CROSS-SECTION panel) -> lands on: the red cancellous ring, short of the dark swirled central marrow; no leader in that panel reaches the marrow cavity | expected: the dark central region
+PAGE gbs 2 SUSPECT 11 1
+  SUSPECT "Spinal cord" -> lands on: the cervical nerve branches ~9px lateral to the right edge of the orange midline cord cable (about one cord-width off) | expected: the cord itself. Small miss; intent is legible, flagging only because "Peripheral nerves" is a separate label on the same figure
+PAGE gdm 2 WRONG 10 4
+  WRONG "1 PLACENTA" -> lands on: the back of the FETAL HEAD (the arrowhead sits on the baby's skull) | expected: the vascular placental disc, drawn on the opposite (upper right) wall of the uterus where the cord inserts
+  WRONG "2 UMBILICAL CORD" -> lands on: the FETAL BACK / buttock | expected: the purple coiled cord, drawn to the upper right of the fetus
+  SUSPECT "Umbilical vein (oxygen & nutrients to fetus)" (PLACENTA ENLARGED panel) -> lands on: the junction where a BLUE branch leaves a red stem vessel in the villous tree | expected: a red (oxygenated) vessel, if the panel's red/blue coding is the usual one; may be an artwork colour-convention error rather than a misplaced line
+  SUSPECT "Umbilical arteries (waste from fetus)" (PLACENTA ENLARGED panel) -> lands on: the single large purple/mauve trunk at the cord insertion (one of its two arrows), which by size is the umbilical VEIN; the two arteries are the smaller twisted red/blue vessels
+PAGE gerd 1 SUSPECT 10 1
+  SUSPECT "Muscularis mucosae" (ESOPHAGEAL WALL LAYERS panel) -> lands on: the third band in from the lumen, BELOW the band that "Submucosa" points at | expected: between the mucosa and the submucosa. The two leaders are in inverted depth order - a layer-ORDER error rather than a stray line, since the bands are only identifiable by their labels
+PAGE gerd 2 WRONG 25 7
+  WRONG "Diaphragm" (OVERVIEW: ENTIRE ESOPHAGUS panel) -> lands on: a dot in the middle of the STOMACH BODY; no diaphragm is drawn at that point | expected: the diaphragmatic dome above the stomach
+  WRONG "2 Diaphragmatic crus (right)" (NORMAL ANATOMY anti-reflux panel) -> lands on: the OESOPHAGEAL MUSCULARIS - the same wall that marker 1 ("Esophageal muscularis") points at, ~60px above the crus | expected: the left-hand horizontal crural muscle band, which is drawn and left unlabelled
+  WRONG "Widened hiatal opening" (HIATAL HERNIA panel) -> lands on: the mid gastric body of the herniated stomach, ~55px (over a third of the panel width) from the hiatus | expected: the gap between the crura at the neck of the hernia
+  SUSPECT "4 Lower esophageal sphincter (LES)" (anti-reflux panel) -> lands on: the identical point that markers 5 (GEJ) and 6 (Angle of His) point at - all three leaders radiate from one spot at the cardia notch | expected: the thickened distal oesophageal segment above the junction
+  SUSPECT "Lower esophageal sphincter (LES)" (OVERVIEW panel) -> lands on: the corner of the rectangular region-callout box that encloses the whole stomach and distal oesophagus | expected: the sphincter itself. Callout-box style, so arguably intended
+  SUSPECT "GE Junction" (HIATAL HERNIA, NORMAL side) -> lands on: the gastric cardia wall ~16px down-right of where the oesophageal lumen actually enters the stomach | expected: the squamocolumnar junction
+  SUSPECT "7 Stomach (cardia)" (anti-reflux panel) -> lands on: nothing - the legend lists item 7 but there is NO number-7 marker anywhere on the artwork (markers 1-6 only)
+PAGE gerd 7 SUSPECT 7 4
+  SUSPECT "Z-line (squamocolumnar junction)" (NORMAL ANATOMY REFERENCE panel) -> lands on: the mid-oesophageal wall, ~31px above where the tube meets the stomach | expected: the mucosal transition at the gastro-oesophageal junction
+  SUSPECT "Lower esophageal sphincter (LES)" (NORMAL ANATOMY REFERENCE panel) -> lands on: nothing - this label has NO leader line at all, while the three labels above and below it do
+  SUSPECT "Diaphragm" (HIATAL HERNIA mini-panel) -> lands on: black background ~20px above the diaphragm band; its leader is a single short stub dash that stops before reaching any tissue
+  SUSPECT "Dilated esophagus" (ESOPHAGEAL DILATION mini-panel) -> lands on: the NARROWED distal segment at the gastro-oesophageal junction, below the bulge | expected: the widened mid-oesophageal segment the label names

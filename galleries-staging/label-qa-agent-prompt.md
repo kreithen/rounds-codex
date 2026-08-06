@@ -84,3 +84,23 @@ and anything systematic you noticed (e.g. "every page from the same production r
 right-hand column labels one structure too low").
 
 Be rigorous and be honest about uncertainty. Accuracy matters far more than finding something.
+
+---
+
+## WRITE EACH PAGE'S RESULT TO DISK AS YOU GO — this is not optional
+
+A previous run of this sweep was killed mid-batch by an account session limit and **every
+finding was lost**, because the results existed only in the agents' final replies.
+
+So: **after you finish each page**, append that page's block to your raw file immediately.
+Your raw file is `/tmp/qa-raw/<your-batch>.txt` (e.g. batch 04 writes `/tmp/qa-raw/b04.txt`).
+
+    cat >> /tmp/qa-raw/b04.txt <<'BLOCK'
+    PAGE gerd 2 WRONG 9 2
+      WRONG "..." -> lands on: ... | expected: ...
+    BLOCK
+
+Do this per page, not once at the end. If you are killed, everything up to the last completed
+page survives. Use plain ASCII `->` and straight quotes so the parser reads it.
+
+Then still give your full reply in the format above at the end, as normal.

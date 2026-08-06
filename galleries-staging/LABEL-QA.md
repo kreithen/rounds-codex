@@ -5,68 +5,72 @@ line below needs the physician's confirmation before it goes to production, and 
 agents were told to report `SUSPECT` rather than guess, so the SUSPECT section is
 expected to contain correct pages.
 
-- pages examined: **20**
-- wrong: **7**
-- suspect: **4**
-- clean: **9**
-- individual label findings: **47**
+- pages examined: **79**
+- wrong: **47**
+- suspect: **14**
+- clean: **18**
+- individual label findings: **323**
 
-## COVERAGE — THIS IS 20 OF 119 PAGES
+## COVERAGE — 79 OF 119 PAGES, AND ONLY 18 ARE CLEAN
 
-The sweep was cut short: eleven agents were launched over 119 pages and **nine were killed
-mid-run by an account session limit**. Their partial findings are not recoverable — the task
-transcripts hold only the prompt. Two batches completed:
+**323 of the 1,098 labels examined — 30% — do not land on the structure they name.** 47 pages
+have at least one clear error. This is not a handful of bad pages; it is most of the anatomy
+artwork.
 
-| batch | pages | status |
-|---|---|---|
-| 00 | `acs` 1-2, `addisons` 1-2, `afib` 2, `aki` 2, `anxiety` 2, `aortic-dissection` 1-2, `aortic-stenosis` 1 | **complete** |
-| 11 | `cardiomyopathy`, `di`, `dka`, `hhs`, `hypoglycemia`, `metabolic-syndrome`, `pericarditis`, `pleural-effusion`, `siadh`, `t1dm` - all page 2 | **complete** |
-| 01-10 | the other 99 pages | **NOT DONE** - re-run required |
+40 pages remain unchecked (40 listed below). Twelve agent batches were run over two
+attempts and both were cut short by an account session limit (second reset: 9:40 UTC). The
+second attempt lost nothing, because each agent was made to append its result to
+`label-qa-raw/bNN.txt` **after every page** rather than only in its final reply — 59 pages came
+back from agents that never got to reply at all. The first attempt had no such guard and nine
+batches were lost entirely. **Keep that instruction in the agent prompt.**
 
-**Do not read the low WRONG count as good news.** Batch 11 was the ten page-2s that are *not*
-titled "Anatomy" - flow charts and phenotype cards, which carry few true leader lines and were
-always the likeliest to be clean. Batch 00 is the only sample of real labelled anatomy plates,
-and **7 of its 10 pages had findings**. On that sample the expected yield over the remaining 99
-pages is high.
+**Still to check:** `bph` p2, `bronchiolitis` p2, `bronchiolitis` p7, `ckd` p2, `depression` p2, `dic` p2, `diverticulitis` p2, `gi-bleed` p1, `gi-bleed` p2, `hyponatremia` p2, `hypothyroid` p2, `influenza` p2, `iron-anemia` p2, `labor` p2, `leukemia` p2, `lung-cancer` p2, `lupus` p2, `lymphoma` p2, `meningitis` p2, `osa` p2, `osa` p7, `osteoarthritis` p1, `osteoarthritis` p2, `osteomyelitis` p2, `parkinsons` p3, `pe` p2, `pericarditis` p1, `pneumothorax` p2, `pph` p2, `sci` p2, `seizure` p2, `sepsis` p2, `sickle-cell` p2, `stroke` p1, `tb` p2, `thrombocytopenia` p2, `thyroidstorm` p2, `tia` p2, `uti` p2, `withdrawal` p2
 
-To resume, re-run batches 01-10:
+    # agent prompt: galleries-staging/label-qa-agent-prompt.md
+    python3 scripts/qa_label_report.py galleries-staging/label-qa-raw/b*.txt \
+        --out galleries-staging/LABEL-QA.md
 
-    for i in 01 02 03 04 05 06 07 08 09 10; do
-      # agent prompt: /tmp/qa-agent-prompt.md   batch file: /tmp/qa-batch-$i.json
-    done
-    python3 scripts/qa_label_report.py /tmp/qa-raw/*.txt --out galleries-staging/LABEL-QA.md
-
-Scope note: only page 1-2 anatomy pages were in the worklist. Pages 3-10 carry leader lines too
-and have not been looked at.
+Scope note: only pages 1-2 were in the worklist. Pages 3-10 carry leader lines too and have not
+been looked at.
 
 ---
 
 ## Two failure patterns, both mechanical
 
-Worth sending to production ahead of the page list, because they describe how the defect is
+Worth sending production ahead of the page list, because they describe how the defect is
 produced rather than where it landed.
 
 **1. Fan of leaders dropped into the nearest tissue.** A vertical stack of labels is laid out in
 list order down a text column, and every leader stops in whatever tissue happens to sit at that
-height - regardless of what it names. `aki` p2 is the worst case: four nephron labels converge on
+height — regardless of what it names. `aki` p2 is the worst case: four nephron labels converge on
 one vasa recta bundle. Also `addisons` p2 (zona labels), `aortic-dissection` p1 (Intima, Media
 and Adventitia all at the same radial depth in the wall).
 
 **2. Off-by-one within an ordered series.** `aortic-dissection` p2's aortic arch branches are
 shifted one vessel distally: "Brachiocephalic trunk" points at the left common carotid, "Left
 common carotid" points at the left subclavian, and "Left subclavian" points there too. Two labels
-on one vessel is the corroborating tell, and the real brachiocephalic - the one that visibly
-bifurcates - carries no label at all.
+on one vessel is the corroborating tell, and the real brachiocephalic — the one that visibly
+bifurcates — carries no label at all.
 
 **What the clean pages have in common.** `acs` pages 1 and 2 are fully clean, and they place
 **numbered circles directly on the 3D render** instead of running a leader across empty space to
-a text column. Every failure in this sample involves a long leader crossing background. That is
-an actionable template recommendation, not just a defect report.
+a text column. The failures overwhelmingly involve a long leader crossing background. That is an
+actionable template recommendation, not just a defect report.
 
 **A dead end, recorded so it is not chased again.** `aki` p2 carries a `V1.0` pill in its header,
 which looked like it might mark the bad template. Cropping the header corner of **all 100
 page-2s** into one sheet shows every page carries V1.0, including the clean ones. The badge
 discriminates nothing.
+
+**Two findings were verified by me at tile level rather than taken on an agent's word**: `aki` p2
+(confirmed, and understated on the blood-supply panel) and `pericarditis` p2 ("Myocardium"
+pointing into the pericardial fluid band). Both reproduced. See `label-qa-raw/_sidenotes.md`.
+
+**One parser bug is worth knowing about.** The first version of `qa_label_report.py` required the
+`->` to follow the label's closing quote immediately, and the agents wrote a panel note in
+between (`SUSPECT "Ileocecal valve" [RLQ panel] -> ...`). It silently dropped **184 of 323
+findings** and produced a report that read far cleaner than the data. Fixed; the guard asserts
+the new pattern matches strictly more lines than the old one.
 
 ---
 
@@ -144,12 +148,458 @@ The line ends on a structure other than the one named. This teaches the wrong an
 - **SUSPECT** — "Sinotubular junction" — lands on: the lower margin of the sinus bulges, right beside the "Aortic annulus" tip | expected: the upper margin where the sinuses meet the tubular ascending aorta
 - **WRONG** — "Left subclavian artery (arch inset, 3)" — lands on: the smooth outer edge of the descending limb of the arch, with no branch vessel present | expected: a branch arising from the arch
 
+### `aortic-stenosis` page 2 — Heart Anatomy
+
+2 of 11 labels flagged.
+
+- **WRONG** — "Pulmonary Trunk" — lands on: the blue caval tube descending BELOW the heart at the inferior/right border (inferior vena cava stump, continuous with the SVC behind the right atrium) | expected: the blue vessel arching out from behind the aortic root in the upper half of the figure
+- **SUSPECT** — "Mitral Valve" — lands on: the AV-groove epicardial fat with the circumflex vessels, just inferolateral to the pale anterior mitral leaflet | expected: the whitish leaflet between the left atrium and left ventricle
+
+### `appendicitis` page 2 — Labeled Anatomy & Key Relations
+
+18 of 31 labels flagged.
+
+- **SUSPECT** — "Ileocecal valve" [RLQ panel] — lands on: mesenteric fat / ileocolic vessels just BELOW the ileum-cecum junction | expected: the junction where the smooth ileum meets the haustrated cecum
+- **SUSPECT** — "Taenia coli (converging at base)" [RLQ panel] — lands on: a plain haustral bulge of the cecum | expected: the pale longitudinal taenia band, which runs ~30px to the right of the endpoint
+- **SUSPECT** — "Appendiceal orifice (at base of cecum)" [RLQ panel] — lands on: the middle of the anterior cecal wall | expected: the base of the cecum where the appendix takes off (lower right)
+- **WRONG** — "Mesappendix (contains appendiceal artery and vein)" [RLQ panel] — lands on: two dots on the lateral wall of the appendix itself, the same tube labelled "Vermiform appendix" | expected: the peritoneal fold between appendix and cecum (none is drawn in this render)
+- **SUSPECT** — "Appendicular artery" [arterial panel] — lands on: a small orange strand in the middle of the ileocolic arterial fan | expected: the branch descending along the mesoappendix to the appendix, lower and to the left
+- **WRONG** — "Appendicular vein" [venous panel] — lands on: the top of the main ascending venous trunk (the ileocolic vein heading to the SMV) | expected: the small vein running to the appendix at the lower left
+- **SUSPECT** — "Ileocolic vein" [venous panel] — lands on: the cecal wall at the edge of the tiny marginal veins | expected: the large trunk that the "Appendicular vein" leader is pointing at
+- **WRONG** — "Serosa" [cross-section] — lands on: the dark red band deep inside the wall (r~82 of a 110 radius) | expected: the outermost thin bright rim
+- **WRONG** — "Muscularis propria (outer longitudinal, inner circular)" [cross-section] — lands on: the outer edge of the magenta mucosal band | expected: the pale speckled outer band (r 90-108)
+- **WRONG** — "Submucosa" [cross-section] — lands on: the magenta mucosal band | expected: the dark red band between muscularis and mucosa
+- **WRONG** — "Mucosa (with lymphoid follicles)" [cross-section] — lands on: inside the orange lumen | expected: the magenta scalloped band
+- **WRONG** — "Lumen" [cross-section] — lands on: the magenta mucosal band | expected: the orange centre
+- **WRONG** — "Psoas major" [relations panel] — lands on: the haustrated cecum (bowel) | expected: the muscle behind the bowel, not rendered at that point
+- **WRONG** — "Iliacus" [relations panel] — lands on: the haustrated cecum (bowel) | expected: the muscle over the iliac fossa
+- **WRONG** — "Right ureter" [relations panel] — lands on: the mid-portion of the appendix tube | expected: a retroperitoneal tube crossing the iliac vessels
+- **WRONG** — "External iliac vessels" [relations panel] — lands on: the distal appendix tube | expected: the red and blue iliac tubes to its right
+- **SUSPECT** — "Cecum" [relations panel] — lands on: a dashed line that crosses the whole cecum and terminates near the appendix origin rather than in the cecum body
+- **SUSPECT** — "McBurney's Point" [surface anatomy] — the yellow marker sits ~1/5 of the way from ASIS to umbilicus and BELOW the ASIS-umbilicus line | expected: on the line, 1/3 of the way from ASIS as the caption states
+
+### `b12-anemia` page 2 — Labeled Anatomy: Vitamin B12 & Folate Absorption
+
+4 of 12 labels flagged.
+
+- **WRONG** — "3" marker (legend: "Parietal Cells") — lands on: the duodenal C-loop at the pylorus | expected: the gastric body/fundus where parietal cells sit. Note there is NO "4" marker (legend: "Duodenum") anywhere in the figure, so this marker may simply be misnumbered
+- **SUSPECT** — "Pancreas" — lands on: the pink duodenal wall, ~20px left of the orange pancreas | expected: the orange pancreas itself
+- **SUSPECT** — "Terminal ileum" (marker 5) — lands on: the bowel loop descending on the patient's LEFT | expected: the right lower quadrant, where the cecum and appendix are drawn on the opposite side of the figure
+- **SUSPECT** — "6" marker (legend: "Transport" - B12 enters portal blood) — its leader ends on the bowel wall | expected: the blue portal vein drawn just to its left
+
+### `bipolar` page 2 — Anatomy: Bipolar Disorder
+
+4 of 7 labels flagged.
+
+- **WRONG** — "5 HYPOTHALAMUS" — lands on: the purple GABA pathway arc in the parietal white matter, high and posterior | expected: the base of the diencephalon below the thalamus, where the yellow circuit node sits
+- **WRONG** — "2 ANTERIOR CINGULATE CORTEX" — lands on: the anterior frontal (prefrontal) cortex, on the blue-tinted band, ~8% of the page anterior to the cingulate | expected: the gyrus immediately above the genu/body of the corpus callosum, where the orange arc runs
+- **SUSPECT** — "3 AMYGDALA" — lands on: the green pathway arc at the frontal-temporal junction, ~6% of the page anterior to the green amygdala node | expected: the green sphere in the anterior medial temporal lobe
+- **SUSPECT** — "4 BASAL GANGLIA" — lands on: the pale corpus callosum at the upper margin of the purple deep-grey mass | expected: inside the purple basal ganglia/thalamic mass
+
+### `bowel-obstruction` page 2 — GI Anatomy: Small & Large Bowel
+
+5 of 20 labels flagged.
+
+- **WRONG** — "Villi" [small bowel cross-section] — lands on: the outer part of the annular cut face (serosa/muscularis zone) | expected: the pale scalloped mucosal projections lining the lumen
+- **SUSPECT** — "Submucosa" [small bowel cross-section] — lands on: the tip of a mucosal fold | expected: the layer immediately outside the mucosa
+- **SUSPECT** — "Muscularis (Propria)" [small bowel cross-section] — lands on: a mucosal fold at the luminal edge | expected: the thick muscle band in the outer wall
+- **SUSPECT** — "Haustra" [large bowel cross-section] — lands on: the annular cut face of the wall | expected: the puffy haustral pouches on the tube's outer surface, visible on the left of the same figure
+- **SUSPECT** — "Muscularis (Propria)" [large bowel cross-section] — lands on: the inner mucosal lining of the lumen | expected: the muscle band within the wall
+
+### `cardiac-arrest` page 2 — Resuscitation Anatomy & CPR Physiology
+
+1 of 5 labels flagged.
+
+- **WRONG** — "5 Diaphragm" — lands on: purple lower-lobe LUNG parenchyma, same tissue as arrow 4 "Lungs" | expected: the orange muscular dome ~40px lower in the figure
+
+### `cdiff` page 2 — Anatomy: Colon & Colonic Mucosa
+
+14 of 44 labels flagged.
+
+- **WRONG** — "Superior mesenteric a." (Arterial supply panel) — lands on: the cecum / lower ascending colon BOWEL WALL | expected: the large red midline arterial trunk in the mesentery
+- **WRONG** — "Superior mesenteric v." (Venous drainage panel) — lands on: the ascending colon bowel wall near the hepatic flexure | expected: the large blue midline venous trunk
+- **WRONG** — "Inferior mesenteric v." (Venous drainage panel) — lands on: the ASCENDING colon (patient's right), two dots one above the other | expected: the vein on the patient's LEFT draining the descending/sigmoid colon
+- **WRONG** — "Anal canal" (Colon anatomy panel) — lands on: haustrated, taenia-bearing sigmoid colon along the bottom of the frame | expected: the distal end of the smooth non-haustrated rectal tube at bottom-left (essentially at/below the panel edge)
+- **WRONG** — "Normal mucus layer" (Normal colonic mucosa panel) — lands on: the tissue BENEATH the pale surface film, at the crypt mouths (surface epithelium/lamina propria) | expected: the pale translucent film on top - i.e. where "Intact epithelium" currently points; the two read as swapped
+- **SUSPECT** — "Intact epithelium" (Normal colonic mucosa panel) — lands on: the pale translucent surface film that reads as the mucus layer | expected: the epithelial band immediately beneath it
+- **SUSPECT** — "Rectum" (Colon anatomy panel) — lands on: haustrated bowel at the descending-to-sigmoid curve | expected: the smooth, wide, non-haustrated tube descending at bottom-centre-left
+- **SUSPECT** — "Sigmoid colon" (Colon anatomy panel) — lands on: the straight vertical descending limb, only ~77px below the "Descending colon" dot and above the sigmoid loop | expected: the S-shaped segment running leftward along the bottom
+- **SUSPECT** — "Taenia coli (longitudinal muscle bands)" — lands on: the free lateral haustral wall of the ascending colon | expected: the tan longitudinal band running down the colon ~18px medial to the dot
+- **SUSPECT** — "Middle colic a." — lands on: the pale marginal artery at the hepatic flexure | expected: the branch ascending from the SMA trunk to the mid-transverse colon
+- **SUSPECT** — "Ileocolic a." — lands on: black background medial to the ascending colon, ~13px short of the arterial arcade | expected: the arcade branch running to the cecum
+- **SUSPECT** — "Superior rectal a." — lands on: the marginal artery along the mid descending colon | expected: the terminal branch running down to the rectum at the bottom of the panel
+- **SUSPECT** — "Portal vein (to liver)" — lands on: black space just short of the lower venous trunk | expected: the cut vessel end leaving the TOP of the panel (the one actually heading to the liver)
+- **SUSPECT** — "Parasympathetic (vagus n.) -> proximal colon" (Innervation panel) — lands on: the splenic flexure / proximal descending colon | expected: the cecum-ascending-transverse colon on the opposite side of the panel
+
+### `cellulitis` page 2 — Labeled Skin & Soft-Tissue Anatomy
+
+4 of 17 labels flagged.
+
+- **WRONG** — "Artery" — lands on: the dark BLUE vessel (the vein) in the subcutaneous fat | expected: the red vessel running alongside it
+- **WRONG** — "Vein" — lands on: a yellow fat lobule with no vessel in it | expected: the blue vessel, which the "Artery" leader is currently pointing at
+- **WRONG** — "Hair follicle" — lands on: plain reticular dermis on the block's right side face (small vessels/mast cells only) | expected: the sheathed follicle with its hair, drawn on the block's front face at left
+- **SUSPECT** — "Portal of entry (skin break)" — lands on: erythematous skin ~30px to the right of the wound, near a lymphatic branch | expected: the dark slit-shaped skin break itself
+
+### `cholecystitis` page 2 — Anatomy Overview: Hepatobiliary System
+
+7 of 20 labels flagged.
+
+- **WRONG** — "CYSTIC DUCT" (main figure) — lands on: the gallstones inside the cut-open gallbladder fundus | expected: the green tube arising from the gallbladder neck that arches right to join the hepatic duct
+- **WRONG** — "COMMON BILE DUCT (CBD)" (main figure) — lands on: pancreas parenchyma immediately above the yellow pancreatic duct | expected: the green duct descending behind the pancreatic head
+- **WRONG** — "COMMON HEPATIC DUCT" (main figure) — lands on: the bile duct ~45px BELOW the cystic-duct junction, i.e. the common bile duct | expected: the short segment between the R+L hepatic confluence and the cystic-duct junction
+- **WRONG** — "Mucosa" (Gallbladder wall layers panel) — lands on: the outermost blue/purple band of the layered fan | expected: the red folded inner lining facing the lumen and the gallstones, ~30-60px further in
+- **WRONG** — "Sphincter of Oddi" (Duodenal entry panel) — lands on: the outer duodenal wall at the bottom of the C-loop | expected: the muscle at the ampulla/papilla, higher and to the left
+- **SUSPECT** — "Muscularis" and "Perimuscular CT" (Gallbladder wall layers panel) — land on: the same outer blue/purple boundary at different heights along the curve | expected: two distinct bands within the fan
+- **SUSPECT** — "Cystic artery" (Calot's triangle panel) — lands on: the green bile duct at the point where the red artery passes behind it | expected: on the red artery itself, which the leader passes over on its way in
+
+### `cirrhosis` page 2 — Normal Liver Anatomy & Portal Venous System
+
+4 of 28 labels flagged.
+
+- **WRONG** — "Falciform ligament" (main figure) — lands on: left-lobe liver parenchyma ~160px lateral to the midline | expected: the pale cream vertical band between the lobes, which is drawn unmistakably
+- **WRONG** — "Ligamentum teres (round ligament)" (main figure) — lands on: the inferolateral surface of the left lobe ~145px lateral | expected: the cream cord descending from the lower end of the falciform ligament
+- **SUSPECT** — "Xiphoid process" (Surface landmarks panel) — lands on: the same ringed intersection dot as "Right costal margin", ~37px lateral to the body midline on the patient's LEFT | expected: the midline at the lower end of the sternum
+- **SUSPECT** — "Diaphragm" (Peritoneal relationships panel) — lands on: liver tissue inside the bare-area triangle, ~14px past the pale diaphragm line it crosses | expected: the diaphragm sheet itself
+
+### `compartment` page 2 — Labeled Anatomy: Lower Leg Compartments
+
+7 of 14 labels flagged.
+
+- **WRONG** — "2 LATERAL COMPARTMENT" (anterior view panel) — lands on: the middle of the GREEN-shaded muscle mass, which the same page's colour key defines as the anterior compartment | expected: the gold/lateral peroneal group over the fibula
+- **WRONG** — "Interosseous membrane" (cross-section panel) — lands on: a small subcutaneous red vessel at the posterior periphery of the section, between the purple superficial-posterior and blue deep-posterior compartments | expected: the fibrous sheet spanning tibia to fibula, anterolateral in this section
+- **WRONG** — "Flexor retinaculum (forms roof of deep posterior compartment)" — lands on: the dorsum of the foot, beneath the inferior EXTENSOR retinaculum | expected: medial ankle, behind the medial malleolus (not visible in an anterior view)
+- **SUSPECT** — "4 DEEP POSTERIOR COMPARTMENT" (anterior view panel) — lands on: the superior extensor retinaculum band on the anterior distal leg | expected: the deep posteromedial leg; not visible from anterior at all
+- **SUSPECT** — "Deep peroneal nerve" (innervation panel) — lands on: muscle immediately lateral to a blue vein; no yellow nerve trunk is drawn at that point | expected: the yellow nerve running with the anterior tibial vessels
+- **SUSPECT** — "Superficial peroneal nerve" (innervation panel) — lands on: the pale tibial/tendon edge beside the same blue venous column, mid-leg | expected: the lateral compartment, lateral to the anterior compartment
+- **SUSPECT** — "Tibial nerve" (innervation panel) — lands on: the purple nerve fan at the anterior ankle that spreads across the DORSUM of the foot | expected: posterior to the medial malleolus; artwork appears to colour the dorsal cutaneous fan purple to match the label
+
+### `covid` page 2 — Anatomy: Respiratory Tract & Viral Entry
+
+4 of 19 labels flagged.
+
+- **WRONG** — "4 Larynx" (legend leader line, main figure) — lands on: the TRACHEA, immediately below the "5 Trachea" badge, after running horizontally across the whole neck | expected: the laryngeal cartilages just below the epiglottis
+- **WRONG** — "Basal Cell (stem cells)" (respiratory epithelium panel) — lands on: the mid-height stalk of the purple GOBLET cell, which is separately labelled on the same panel | expected: the row of squat cuboidal cells sitting on the basement membrane at the bottom
+- **SUSPECT** — "2 Nasopharynx" (legend leader line) — lands on: empty black background just outside the facial silhouette, near the nose/upper lip | expected: the airway behind the nasal cavity (the on-figure badge 2 is correctly placed there)
+- **SUSPECT** — "3 Oropharynx" (legend leader line) — lands on: empty black background at the chin/submental outline | expected: the pharyngeal airway behind the tongue (the on-figure badge 3 sits on the posterior tongue, defensible for a region)
+
+### `croup` page 2 — Anatomy: Pediatric Airway
+
+4 of 12 labels flagged.
+
+- **WRONG** — "Trachea" (main sagittal figure) — lands on: left lung parenchyma at the medial border, well BELOW the carina | expected: the ringed blue-grey tube in the neck between larynx and carina
+- **SUSPECT** — "Vocal cords" (main sagittal figure) — lands on: a point inside the yellow dashed "Subglottic space" callout box | expected: just ABOVE the subglottis, at the glottic level
+- **SUSPECT** — "Epiglottis" (main sagittal figure) — lands on: soft tissue in the laryngeal vestibule roughly 15px posterior to the pale leaf-shaped epiglottis; the line crosses the epiglottis and overshoots it | expected: on the epiglottis itself
+- **SUSPECT** — "Oral cavity" (main sagittal figure) — lands on: the lips at the mouth opening, then resumes as short stubs with dots on the body of the tongue | expected: the airspace of the oral cavity above the tongue
+
+### `dementia` page 2 — Labeled Brain Anatomy
+
+14 of 14 labels flagged.
+
+- **WRONG** — "Corpus callosum (fornix beneath)" (sagittal) — lands on: the PURPLE outer arc, which is the cingulate gyrus (it lies between the cortex and the salmon band) | expected: the salmon/pink arc inside it, the one with the genu and rostrum profile
+- **WRONG** — "Cingulate gyrus" (sagittal) — lands on: the blue-filled marker on the THALAMUS | expected: the purple arc above the corpus callosum
+- **WRONG** — "Thalamus" (sagittal) — lands on: the salmon CORPUS CALLOSUM band, posterior third near the splenium | expected: the blue oval in the centre of the figure
+- **SUSPECT** — "Fornix" (sagittal) — lands on: an arrowhead at the right edge of the GREEN hippocampal head | expected: the thin arch beneath the corpus callosum; no separate fornix appears to be drawn
+- **WRONG** — "Mammillary body" (sagittal) — lands on: the GREEN hippocampal body, about 10px below the Fornix arrowhead | expected: the small paired round body below the hypothalamus, anterior to the midbrain
+- **WRONG** — "Hippocampus" (sagittal) — lands on: the pink arbor-vitae CEREBELLUM, in the notch enclosed by the green C | expected: the green C-shaped structure itself
+- **SUSPECT** — "Entorhinal cortex" (sagittal) — lands on: the posterior/inferior limb of the GREEN hippocampus | expected: medial temporal cortex; the artwork's Key Structures panel colours entorhinal gold, not green
+- **WRONG** — "Amygdala" (sagittal) — lands on: the middle of the large tan oval that is the pons/upper brainstem | expected: the anterior medial temporal region
+- **WRONG** — "Brainstem" (sagittal) — lands on: the PURPLE medial-temporal blob sitting behind the brainstem | expected: the yellow/tan column running down from the midbrain
+- **WRONG** — "Cerebellum" (sagittal) — lands on: a blue-filled marker on the yellow BRAINSTEM (medulla) | expected: the pink arbor-vitae mass posterior to the brainstem
+- **WRONG** — "Lateral ventricles" (coronal panel) — lands on: the purple HIPPOCAMPUS in the left temporal lobe | expected: the dark ventricular cavities in the centre of the section
+- **WRONG** — "Hippocampus (bilateral)" (coronal panel) — lands on: a small teal dot on the MIDLINE at the third-ventricle level | expected: the purple bilateral structures in the temporal lobes
+- **WRONG** — "Entorhinal cortex (bilateral)" (coronal panel) — lands on: the purple HIPPOCAMPUS on the right side | expected: the gold/ochre band medial and inferior to it, which the artwork does draw
+- **WRONG** — "Nucleus basalis of Meynert" (Cholinergic Pathway thumbnail) — lands on: the midbrain/upper brainstem | expected: the bright orange basal-forebrain node below the genu, where all the cholinergic fibres in that thumbnail converge
+
+### `dvt` page 2 — Lower-Extremity Venous Anatomy
+
+4 of 15 labels flagged.
+
+- **SUSPECT** — "Deep femoral vein" — lands on: the single bright main deep venous trunk of the thigh, mid-shaft - the same vessel the "Femoral vein" label points at ~110px lower; no separate profunda femoris branch is drawn there | expected: a posterior/lateral branch off the common femoral vein
+- **SUSPECT** — "Popliteal vein" — lands on: the medial cortex of the proximal tibial shaft, ~72px (more than one condyle-width) BELOW the knee joint line | expected: the vein behind the knee at the joint line (popliteal fossa), as its own caption says
+- **SUSPECT** — "Lumen" (cross-section inset) — lands on: within the concentric wall bands (pink/blue) of the vein cross-section, outside the bright endothelial contour | expected: the dark central channel. LOW CONFIDENCE - the inset vessel is only ~103px across with 3-5px layers, at the limit of the source resolution
+- **WRONG** — "Valve closed (prevents backflow)" — lands on: the vein's outer wall midway between two valves, and no valve anywhere in the VALVULAR STRUCTURE panel is drawn closed - all three cusp pairs are swept open with upward flow arrows | expected: a closed (coapted) valve; there is no such structure on the artwork
+
+### `fracture` page 2 — Anatomy: Normal Bone & Common Fracture Locations
+
+7 of 31 labels flagged.
+
+- **WRONG** — "Ribs" (THE SKELETAL FRAMEWORK panel) — lands on: the ELBOW marker (distal humerus/olecranon) on BOTH the anterior and the posterior skeleton | expected: the rib cage, which is drawn plainly to the left/right of the arrow and even carries its own unlabelled marker on the posterior view
+- **WRONG** — "Spine" (THE SKELETAL FRAMEWORK panel) — lands on: the FOREARM (proximal radius/ulna) marker on the anterior skeleton, and on empty space over the posterior forearm on the right | expected: the vertebral column, which has its own unlabelled marker beside the lumbar spine
+- **WRONG** — "Tibia" (THE SKELETAL FRAMEWORK panel) — lands on: the thin LATERAL bone (fibula) on both skeletons - the same bone the "Fibula" arrow 20px lower points at | expected: the thick medial bone of the leg
+- **WRONG** — "Growth plate (physis)" (PEDIATRIC BONE panel) — lands on: the grey outer covering at the metaphyseal shoulder, i.e. the same periosteal band that the "Thick periosteum" arrow below it points at | expected: the pale blue physeal band arcing across the bone, ~30px inferomedial
+- **SUSPECT** — "Scapula" (THE SKELETAL FRAMEWORK panel) — lands on: the glenohumeral/humeral-head marker on both views; on the posterior view the scapular body is drawn immediately lateral to it and carries its own unlabelled marker | expected: the scapular blade. Arguable, since the glenoid is part of the scapula
+- **SUSPECT** — "Nutrient artery" (BONE ANATOMY long-bone panel) — lands on: the dark red medullary marrow, ~12px right of the red arterial tree and the grey vessel it presumably names | expected: the red branching vessel in the marrow cavity
+- **SUSPECT** — "Medullary cavity (marrow)" (LONG BONE CROSS-SECTION panel) — lands on: the red cancellous ring, short of the dark swirled central marrow; no leader in that panel reaches the marrow cavity | expected: the dark central region
+
+### `gdm` page 2 — Anatomy & Physiology of Gestational Diabetes
+
+4 of 10 labels flagged.
+
+- **WRONG** — "1 PLACENTA" — lands on: the back of the FETAL HEAD (the arrowhead sits on the baby's skull) | expected: the vascular placental disc, drawn on the opposite (upper right) wall of the uterus where the cord inserts
+- **WRONG** — "2 UMBILICAL CORD" — lands on: the FETAL BACK / buttock | expected: the purple coiled cord, drawn to the upper right of the fetus
+- **SUSPECT** — "Umbilical vein (oxygen & nutrients to fetus)" (PLACENTA ENLARGED panel) — lands on: the junction where a BLUE branch leaves a red stem vessel in the villous tree | expected: a red (oxygenated) vessel, if the panel's red/blue coding is the usual one; may be an artwork colour-convention error rather than a misplaced line
+- **SUSPECT** — "Umbilical arteries (waste from fetus)" (PLACENTA ENLARGED panel) — lands on: the single large purple/mauve trunk at the cord insertion (one of its two arrows), which by size is the umbilical VEIN; the two arteries are the smaller twisted red/blue vessels
+
+### `gerd` page 2 — Labeled Anatomy of the Esophagus & Gastroesophageal Junction
+
+7 of 25 labels flagged.
+
+- **WRONG** — "Diaphragm" (OVERVIEW: ENTIRE ESOPHAGUS panel) — lands on: a dot in the middle of the STOMACH BODY; no diaphragm is drawn at that point | expected: the diaphragmatic dome above the stomach
+- **WRONG** — "2 Diaphragmatic crus (right)" (NORMAL ANATOMY anti-reflux panel) — lands on: the OESOPHAGEAL MUSCULARIS - the same wall that marker 1 ("Esophageal muscularis") points at, ~60px above the crus | expected: the left-hand horizontal crural muscle band, which is drawn and left unlabelled
+- **WRONG** — "Widened hiatal opening" (HIATAL HERNIA panel) — lands on: the mid gastric body of the herniated stomach, ~55px (over a third of the panel width) from the hiatus | expected: the gap between the crura at the neck of the hernia
+- **SUSPECT** — "4 Lower esophageal sphincter (LES)" (anti-reflux panel) — lands on: the identical point that markers 5 (GEJ) and 6 (Angle of His) point at - all three leaders radiate from one spot at the cardia notch | expected: the thickened distal oesophageal segment above the junction
+- **SUSPECT** — "Lower esophageal sphincter (LES)" (OVERVIEW panel) — lands on: the corner of the rectangular region-callout box that encloses the whole stomach and distal oesophagus | expected: the sphincter itself. Callout-box style, so arguably intended
+- **SUSPECT** — "GE Junction" (HIATAL HERNIA, NORMAL side) — lands on: the gastric cardia wall ~16px down-right of where the oesophageal lumen actually enters the stomach | expected: the squamocolumnar junction
+- **SUSPECT** — "7 Stomach (cardia)" (anti-reflux panel) — lands on: nothing - the legend lists item 7 but there is NO number-7 marker anywhere on the artwork (markers 1-6 only)
+
+### `gout` page 2 — Labeled Anatomy: First MTP Joint
+
+9 of 15 labels flagged.
+
+- **WRONG** — "Synovial fluid" — lands on: extracapsular soft tissue / subcutaneous layer at the lateral margin of the cutaway (~x772,y434) | expected: the gold fluid band inside the joint space at the centre of the cutaway
+- **WRONG** — "Joint cavity" — lands on: trabecular bone inside the proximal phalanx (~x683,y537), well distal to the joint | expected: the gold/dark space between the two articular cartilage caps
+- **WRONG** — "Plantar plate" — lands on: the lateral sesamoid bone (~x694,y592), which the page labels separately | expected: the fibrocartilaginous plate deep to the sesamoids
+- **WRONG** — "Sesamoid bones (within tendons)" — lands on: trabecular bone inside the proximal phalanx shaft (~x575,y687) | expected: the two tan ovals at ~x640-707,y553-620
+- **WRONG** — "Other metatarsals (2-5)" (left skeletal-landmarks panel, item 5) — lands on: empty black background at the edge of the legend box (~x256,y657); there is no numbered 5 badge anywhere on the foot | expected: metatarsals 2-5 on the lateral side of the foot
+- **SUSPECT** — "Joint capsule" — lands on: red muscle fibres ~15px lateral to the pale grey capsule band (~x756,y336) | expected: the pale capsule band hugging the metatarsal neck
+- **SUSPECT** — "Synovial membrane (produces synovial fluid)" — lands on: extracapsular tissue at the muscle/capsule junction (~x758,y382) | expected: the thin lining on the inner aspect of the capsule
+- **SUSPECT** — "Sesamoid bones (medial & lateral)" (left panel, item 4) — lands on: the first metatarsal diaphysis (~x297,y558); the 4 badge sits distal-lateral to the sesamoid pair | expected: the two small ovals overlying the metatarsal head
+- **SUSPECT** — "Phalanges" (left panel, item 6) — lands on: the 5th metatarsal shaft just proximal to the 5th MTP joint (~x437,y613) | expected: the phalanges of the 5th toe, one bone distal
+
+### `hepatitis` page 2 — Labeled Liver Anatomy
+
+13 of 34 labels flagged.
+
+- **WRONG** — "Cystic duct" (main anterior view) — lands on: inside the body of the gallbladder (~x266,y523), the same sac "Gallbladder" already points at | expected: the green tube leaving the gallbladder neck
+- **WRONG** — "Inferior vena cava" (main) — lands on: the small orange portal-triad cross-section widget where the artery crosses the duct (~x376,y567) | expected: the large blue IVC trunk ~35px to the right
+- **WRONG** — "Left portal vein" (main) — lands on: a branch of the bright-red arterial tree, the same tree "Left hepatic artery" (above) and "Hepatic artery proper" (below) point at (~x467,y506) | expected: a portal (blue/purple) vessel
+- **WRONG** — "Bile duct (from left and right hepatic ducts)" (main) — lands on: the blue IVC immediately right of the hepatic artery (~x408,y535) | expected: the green biliary trunk ~50px to the left
+- **WRONG** — "Hepatocytes (plates)" (Microanatomy panel) — lands on: the portal-triad cluster at the hexagon corner, on its blue portal venule (~x424,y889) | expected: one of the salmon hepatocyte plate blocks
+- **WRONG** — "Sinusoids" (Microanatomy panel) — lands on: the interior of a hepatocyte plate block (~x412,y941) | expected: one of the radial blue/pink channels between plates
+- **SUSPECT** — "Coronary ligament" (main) — lands on: bare anterior right-lobe parenchyma (~x243,y374); no ligament is drawn there | expected: a peritoneal reflection (not depicted in an anterior view)
+- **SUSPECT** — "Common bile duct" (main) — lands on: the green duct at the gallbladder-neck / cystic-duct level, above the confluence (~x349,y524) | expected: the green trunk below the cystic-duct junction
+- **SUSPECT** — "Right hepatic artery" (main) — lands on: the green biliary duct (~x355,y537); a dark maroon arterial twig lies ~5px up-right | expected: the arterial branch, clear of the duct
+- **SUSPECT** — "Portal vein" (main) — lands on: a dark maroon vessel wedged between the green ducts (~x360,y555); the blue venous trunks are ~40px to the right | expected: the portal vein, which this page colours blue in its own BLOOD SUPPLY inset
+- **SUSPECT** — "Hepatic portal triad (artery, vein, bile duct)" (main) — lands on: the bright-red hepatic artery alone (~x390,y537) | expected: the bundle of all three, or the triad cross-section widget
+- **SUSPECT** — "Hepatic veins / Drain blood to IVC" (main) — lands on: the artery/IVC boundary at hilum level (~x397,y543) | expected: the hepatic veins entering the IVC above the liver
+- **SUSPECT** — "Left hepatic duct" (Biliary drainage panel) — lands on: the common hepatic trunk ~11px below the confluence (~x106,y885), which "Common hepatic duct" also labels | expected: the left-going limb of the bifurcation
+
+### `hiv` page 2 — Anatomy & Viral Structure
+
+9 of 17 labels flagged.
+
+- **WRONG** — "Integrase" (HIV-1 VIRION panel) — lands on: a beige/grey surface-protein knob on the outer green envelope (~x219,y613) | expected: the cyan enzyme blob inside the capsid (~x299,y559), matching the blue integrase icon in the KEY VIRAL PROTEINS legend
+- **WRONG** — "Reverse Transcriptase" (VIRION) — lands on: an orange p24 capsid bead of the inner shell (~x329,y547) | expected: one of the small green enzyme shapes inside the core (~x300,y514)
+- **WRONG** — "Tonsils" (PRIMARY TARGETS panel) — lands on: the thyroid / upper trachea at the thoracic inlet (~x691,y253) | expected: the oropharynx, ~50px higher, behind the mouth
+- **WRONG** — "Thymus" (PRIMARY TARGETS) — lands on: inside the patient's left lung (~x711,y327) | expected: the yellow bilobed thymus between the lungs (~x680-698,y273-307)
+- **SUSPECT** — "gp41" (VIRION) — lands on: empty black background just outside the envelope, between spikes (~x173,y438) | expected: the purple stalk of a spike, where gp41 sits
+- **SUSPECT** — "Matrix (p17)" (VIRION) — lands on: the green envelope surface (~x195,y555), the same layer "Lipid Membrane" points at | expected: the violet bead ring just inside the envelope
+- **SUSPECT** — "Capsid (p24)" (VIRION) — lands on: the violet inner-membrane band (~x337,y422), just outside the orange p24 bead shell | expected: the orange bead shell or the conical core
+- **SUSPECT** — "Co-receptors" (CELL TARGET: CD4+ T-LYMPHOCYTE) — lands on: cytoplasm just inside the membrane (~x525,y1167), overshooting the teal membrane knobs its shaft passes between | expected: one of the teal co-receptor knobs on the membrane
+
+### `htn` page 2 — Labeled Vascular Anatomy
+
+2 of 8 labels flagged.
+
+- **WRONG** — "Renal Arteries" — lands on: the parenchyma of the patient's left kidney, below the hilum (~x640,y748) | expected: the red renal artery arching from the aorta to the hilum (~x594-625,y705-720)
+- **SUSPECT** — "Common Iliac Arteries" — lands on: the iliac trunk ~45px below the internal-iliac takeoff, i.e. the external iliac segment (~x668,y912) | expected: the short segment between the aortic bifurcation (~y808) and the internal-iliac branch (~y865)
+
+### `hyperkalemia` page 2 — Anatomy: Renal Potassium Handling & Regulation
+
+3 of 17 labels flagged.
+
+- **WRONG** — "Renal Medulla" (item 2, KIDNEYS - ANTERIOR VIEW) — lands on: the external surface of the intact left kidney (~x346,y451), which is capsule/cortex - the same tissue item 1 "Renal Cortex" points at | expected: a medullary pyramid in the cut kidney at the right
+- **WRONG** — "Collecting Duct" (THE NEPHRON panel) — lands on: the lower bend of the distal convoluted tubule coil (~x905,y634) | expected: the thick branched vertical duct to its right (~x950-975)
+- **SUSPECT** — "Ascending Limb" / "Descending Limb" (THE NEPHRON panel) — "Ascending Limb" leads to the shared Loop of Henle bracket and "Descending Limb" has no leader at all, so neither limb is individually identified | expected: separate leaders to the two limbs of the loop
+
+### `hyperparathyroid` page 2 — Parathyroid Anatomy & Normal Physiology
+
+3 of 5 labels flagged.
+
+- **WRONG** — "Superior parathyroid glands (2)" — lands on: both of the glands on the LEFT lobe - the upper one (correct) and the LOWER one (~x203,y518), which is an inferior gland | expected: the two upper glands, one on each lobe
+- **WRONG** — "Inferior parathyroid glands (2)" — lands on: both of its leaders converge on the same single lower-right gland (~x330,y518); the upper-right gland gets no leader at all | expected: the two lower glands, one on each lobe
+- **SUSPECT** — "Adipose Tissue" (PARATHYROID HISTOLOGY) — lands on: parathyroid cells ~7px above the nearest fat vacuole (~x611,y682) | expected: inside one of the pale yellow fat globules
+
+### `icp` page 2 — Labeled Anatomy & Intracranial Compartments
+
+8 of 36 labels flagged.
+
+- **WRONG** — "BRAIN ~80%" (Intracranial Compartments panel) — lands on: the blue subarachnoid/CSF band at the convexity - the leader dot sits squarely inside the blue layer | expected: the pink brain parenchyma
+- **WRONG** — "CSF ~10%" (Intracranial Compartments panel) — lands on: pink brain parenchyma - the arrow crosses the blue band and stops inside the gyri | expected: the blue CSF band. BRAIN and CSF appear to be swapped with each other
+- **WRONG** — "Cavernous sinus" (Dural Venous Sinuses panel) — lands on: the venous channel at the inferolateral margin of the cerebellum (sigmoid sinus / jugular bulb), one step below the Sigmoid sinus arrow and just above the Internal jugular vein arrow | expected: the cavernous sinus at the skull base beside the sella turcica, far anterior
+- **SUSPECT** — "Scalp" (Mid-sagittal panel) — lands on: inside the skull diploe (the tan cancellous band) | expected: the outer soft-tissue scalp layer
+- **SUSPECT** — "Skull" (Mid-sagittal panel) — lands on: the pink periosteal-dura band just deep to the inner table | expected: the bone. Scalp and Skull both read as shifted one layer inward
+- **SUSPECT** — "Arachnoid mater" (Mid-sagittal panel) — lands on: leader runs on into cerebral cortex; no terminus resolvable on the arachnoid line | expected: the thin membrane over the subarachnoid space
+- **SUSPECT** — "Subarachnoid space (CSF)" (Mid-sagittal panel) — lands on: leader passes through the CSF layer and continues deep into cortex | expected: the CSF space between arachnoid and pia
+- **SUSPECT** — "Pia mater" (Mid-sagittal panel) — lands on: leader continues into cortex / toward the corpus callosum | expected: the membrane hugging the gyral surface
+
+### `metabolic-syndrome` page 1 — Normal Anatomy & Visceral Adiposity
+
+7 of 11 labels flagged.
+
+- **WRONG** — "Visceral Adipose Tissue (VAT)" — lands on: the inner edge of the SUBCUTANEOUS fat layer / outer surface of the abdominal musculature (sagittal panel, top left) | expected: the yellow fat band INSIDE the peritoneum (~20px further in, deep to muscle + peritoneal line), or the omental fat around the bowel
+- **SUSPECT** — "Peritoneal Cavity" (top-left sagittal panel) — lands on: the subcutaneous-fat/muscle junction, within the abdominal wall | expected: inside the peritoneal lining, i.e. the space containing bowel/omentum ~15-20px further in
+- **SUSPECT** — "(unlabelled leader stub, no text at either end)" — lands on: floating white leader with cyan tip inside the small-bowel loops at approx x=197-215, y=434 of the sagittal panel | expected: nothing - it is an orphan leader with no label
+- **WRONG** — "Liver" (Visceral Fat: Location & Function panel) — lands on: the STOMACH (greater curvature / fundus, left upper quadrant = image right) | expected: the dark red smooth mass in the RIGHT upper quadrant = image LEFT
+- **WRONG** — "Stomach" (Visceral Fat panel) — lands on: omental/preperitoneal fat at the left flank, ~15px lateral to the stomach wall | expected: the striated pink J-shaped stomach itself
+- **SUSPECT** — "Mesenteric Fat" (Visceral Fat panel) — lands on: the same continuous yellow flank/omental fat band that the "Greater Omentum" leader 30px above also lands on | expected: the fat within the mesentery, between the small-bowel loops
+- **WRONG** — "Small Intestine" (Visceral Fat panel) — lands on: yellow omental/flank fat at the right margin of the cavity, ~18px lateral to the nearest bowel loop | expected: the coiled red small-bowel loops in the centre of the panel
+
+### `migraine` page 2 — Anatomy & Neurovascular Pathways
+
+5 of 18 labels flagged.
+
+- **WRONG** — "A - Dura mater" — lands on: the blue SUPERIOR SAGITTAL SINUS (small terminator sits on the vessel's upper wall at its bend) - the same vessel label B names 45px lower | expected: the dural layer itself (the dark band + cream inner-table line between skull and brain), not the venous sinus
+- **SUSPECT** — "C - Middle meningeal artery" — lands on: bare cerebral cortex at the elbow of the superior sagittal sinus; the nearest red arterial branch is about 10px further left | expected: on a branch of the red arterial tree
+- **WRONG** — "D - Superficial temporal artery" — lands on: the tip of a red arterial branch INSIDE the skull, on the parietal cortex - part of the same red tree that label C calls the middle meningeal artery | expected: an extracranial scalp vessel over the temple, outside the skull; no such vessel appears to be drawn
+- **SUSPECT** — "F - Trigeminal ganglion (Gasserian)" — lands on: the beige nerve trunk about 18px BELOW the ganglion body; the leader passes over the purple marker sphere and stops short of the star-shaped hub where V1/V2/V3 radiate | expected: the radiating ganglion hub itself
+- **SUSPECT** — "C2" (Cervical Contribution panel) — lands on: posterior neck muscle roughly 9px above the yellow C2-level nerve branch (there is a faint pale streak at the tip that may be a nerve) | expected: the yellow cervical nerve, the way the C3 arrow just below it does
+
+### `ms` page 2 — Labeled CNS Anatomy
+
+8 of 30 labels flagged.
+
+- **WRONG** — "2 - Brainstem & MLF" (main sagittal figure) — lands on: a gyrus of the OCCIPITAL/parietal cerebral cortex at the back of the hemisphere | expected: the purple midline brainstem (midbrain/pons/medulla) in the centre of the figure
+- **SUSPECT** — "1 - Optic nerves" (main sagittal figure) — lands on: the eyeball (cornea/anterior globe) | expected: the yellow optic nerve running back from the globe, about 19px to the right
+- **SUSPECT** — "3 - Periventricular white matter" (main sagittal figure) — lands on: the superior surface of the corpus callosum, the same white arc that label 4 marks 33px lower | expected: the white matter around the ventricle, distinguishable from 4's target
+- **SUSPECT** — "9 - Spinothalamic tracts" (main sagittal figure) — lands on: the leader stops in the dark paraspinal/vertebral space about 19px lateral to the cord; a separate small white dot sits on the cord edge, so the line may simply be occluded | expected: the cord itself, as leaders 6, 7, 8 and 10 do
+- **WRONG** — "8 - Dorsal columns" (SPINAL CORD AXIAL inset) — lands on: the dorsal-horn GREY MATTER at the dorsolateral position - the exact mirror image of where leader 7 (corticospinal) lands on the other side | expected: the pale posterior funiculi flanking the midline septum, about 19px medial
+- **SUSPECT** — "7 - Corticospinal tracts" (SPINAL CORD AXIAL inset) — lands on: dorsal-horn grey matter about 7px medial to the blue dorsolateral white-matter block | expected: inside the blue dorsolateral (lateral corticospinal) block
+- **WRONG** — "Optic chiasm" (OPTIC PATHWAY panel) — lands on: the left grey-blue OPTIC TRACT, well below the crossing | expected: the yellow X where the two optic nerves cross, about 27px up and to the right
+- **SUSPECT** — "Lateral geniculate nucleus" (OPTIC PATHWAY panel) — lands on: forked leader - the upper branch correctly touches the left LGN, but the lower branch runs down-right and ends on the optic radiation fibre bundle | expected: both branches on LGN tissue (left and right LGN)
+
+### `myasthenia` page 2 — Labeled Neuromuscular Junction Anatomy
+
+4 of 18 labels flagged.
+
+- **WRONG** — "Basal lamina" (Normal Neuromuscular Junction panel) — lands on: striated sarcoplasm deep inside the MUSCLE FIBER, about 58px below the base of the junctional folds and only 40px above where "Muscle fiber" points | expected: the thin layer at the synaptic surface, within the cleft / lining the junctional folds
+- **SUSPECT** — "Voltage-gated Ca2+ channels" — lands on: presynaptic cytoplasm just inside the terminal's lateral membrane; no channel structure is drawn at the endpoint | expected: in the presynaptic membrane (as the step-2 "Ca2+" arrows below correctly do)
+- **SUSPECT** — "Acetylcholine (ACh) release" — lands on: plain dark background about 15px to the left of the terminal's lower edge, not on a fusing vesicle or a released ACh sphere | expected: the vesicles fusing at the terminal's base, or the orange ACh in the cleft
+- **SUSPECT** — "Acetylcholine receptors (nicotinic, AChR)" — lands on: two leaders; the lower one correctly reaches a blue receptor, but the upper one passes OVER the receptor and terminates on an orange ACh molecule | expected: both on the blue receptor glyphs (unless the upper is deliberately showing ACh bound)
+
+### `nephrolithiasis` page 2 — Anatomy: Urinary System
+
+4 of 14 labels flagged.
+
+- **WRONG** — "Renal artery" (main urinary-system figure) — lands on: the mid-lateral CORTEX of the right kidney, no vessel at the endpoint - the same parenchyma the "Kidney" leader marks 59px above | expected: the red renal artery running from the aorta to the hilum, about 80px to the right
+- **WRONG** — "Renal vein" (main urinary-system figure) — lands on: the vertical blue INFERIOR VENA CAVA, about 107px BELOW the renal vein | expected: the horizontal blue branch joining the IVC at the level of the kidney hilum
+- **WRONG** — "Urinary bladder" (main urinary-system figure) — lands on: the tan distal URETER, about 23px above and to the left of the bladder wall | expected: the large red bladder itself
+- **SUSPECT** — "Medulla (renal pyramids)" (KIDNEY CROSS-SECTION inset) — lands on: the outer CORTICAL band, just outside a pyramid's capsule outline - the same band the "Cortex" leader marks 48px above | expected: inside a renal pyramid
+
+### `osteoporosis` page 2 — Anatomy: The Skeletal Framework
+
+5 of 13 labels flagged.
+
+- **WRONG** — "Tibia" — lands on: the FIBULA on both skeletons (anterior dot sits squarely on the fibular shaft; lateral leader ends on the thin fibular shaft) | expected: the broad tibial shaft
+- **WRONG** — "Fibula" — lands on: the TIBIAL shaft on the lateral skeleton (anterior dot sits on the tibia/fibula border) | expected: the slender posterolateral fibula - Tibia and Fibula appear swapped
+- **WRONG** — "Radius (Distal)" — lands on: the distal FEMORAL shaft of the lateral skeleton, just above the knee | expected: the distal radius at the wrist (hand is drawn up and to the right)
+- **WRONG** — "Humerus" — lands on: the lower thoracic / lumbar VERTEBRAL COLUMN of the lateral skeleton, about one vertebral body below the distal humerus (the anterior-side leader stops in soft tissue medial to the humerus, though it does cross the shaft) | expected: the humeral shaft
+- **SUSPECT** — "Ribs" — lands on: right-hand leader terminates on the humeral shaft after crossing 3-4 rib arcs | expected: terminate on a rib
+
+### `pancreatitis` page 2 — Labeled Pancreatic Anatomy
+
+3 of 16 labels flagged.
+
+- **WRONG** — "Celiac trunk" — lands on: the large blue VEIN (IVC/portal) about 13 px lateral to the aorta; the celiac trunk itself is the red stub arising from the aorta ~45 px lower right | expected: the arterial trunk off the anterior aorta that gives the splenic artery
+- **SUSPECT** — "Accessory pancreatic duct (Santorini duct)" — lands on: the caption carries two leaders; one ends exactly where the main pancreatic duct + CBD confluence enters the duodenal wall (the MAJOR papilla). The other ends on a small callout box in the head | expected: the accessory duct / minor papilla, which is proximal to the main duct's insertion
+- **SUSPECT** — "(connector arrow to the duodenal-papillae inset)" — lands on: its tail sits on the superior mesenteric artery / aorta, not on the duodenum whose lumen the inset depicts | expected: the duodenal C-loop
+
+### `parkinsons` page 2 — Anatomy: Basal Ganglia & Dopaminergic Pathways
+
+10 of 19 labels flagged.
+
+- **WRONG** — "Brainstem" — lands on: empty dark background in the neck/soft-tissue silhouette, roughly 110 px anterior to the drawn brainstem | expected: the tan midbrain-pons-medulla column
+- **WRONG** — "Cerebellum" — lands on: empty dark background below the jaw line | expected: the foliated cerebellum, far up and to the right
+- **WRONG** — "Globus pallidus (external)" — lands on: a dot in the pink frontal CORTEX gyri, outside every coloured deep-grey structure | expected: the purple pallidal lumps below the thalamus
+- **WRONG** — "Thalamus" (left column) — lands on: the small purple globus-pallidus lump cluster - the same structure the "Globus pallidus (internal)" leader targets, ~18 px away | expected: the large purple ovoid (or the blue body) that reads as the thalamus
+- **WRONG** — "Thalamus" (right column) — lands on: the upper-right edge of the red-brown RED NUCLEUS sphere | expected: the large purple ovoid in the diencephalon
+- **WRONG** — "Substantia nigra pars reticulata (SNr)" (right column) — lands on: the same red-brown RED NUCLEUS sphere (its leader doglegs left across the cerebellum and finishes on the sphere) | expected: the midbrain substantia nigra. Three separate leaders - Thalamus, SNr and Red nucleus - all converge on this one sphere
+- **SUSPECT** — "Cingulate gyrus" — lands on: the purple arc, the same band that the "Corpus callosum" leader terminates in ~40 px away | expected: the cortical ribbon immediately outside/above the callosal arc
+- **SUSPECT** — "Motor cortex (Precentral gyrus)" — lands on: superior frontal cortex about one third of the way back from the frontal pole | expected: the precentral gyrus, near the vertex just anterior to the central sulcus
+- **SUSPECT** — "Subthalamic nucleus (STN)" — lands on: the tan/beige body beyond the small olive-green sphere; the green leader passes over the green sphere and stops ~12 px past it | expected: the green sphere, which matches the label colour
+- **SUSPECT** — "Internal capsule" — lands on: the boundary between the large purple ovoid and the blue body, not on a distinct white-matter band | expected: a capsular white-matter lamina
+
 ### `pericarditis` page 2 — Pericardial Layers & Relationships
 
 2 of 5 labels flagged.
 
 - **WRONG** — "Myocardium" — lands on: the dark teal pericardial cavity (fluid band with bubbles), three layers outboard of the muscle | expected: the red striated myocardium at the far right of the cross-section
 - **SUSPECT** — "Parietal Serous Pericardium" — lands on: mid-teal pericardial cavity, the same band the "Pericardial Cavity" dot correctly marks | expected: the thin pale smooth band at the inner surface of the grey fibrous pericardium, ~17 px to its left
+
+### `preeclampsia` page 2 — Anatomy: Preeclampsia & Eclampsia
+
+5 of 17 labels flagged.
+
+- **WRONG** — "HEART" — lands on: a dot in the mid/upper field of the patient's right lung (purple lung parenchyma) | expected: the red heart drawn to the right of the lung, behind the sternum
+- **WRONG** — "AORTA" — lands on: a dot in the lower field of the patient's right lung | expected: the arch/descending aorta, the large red vessel medial to the lungs
+- **WRONG** — "PLACENTA" — lands on: the anterior lower uterine wall / adjacent maternal vessels, the same red band the UTERUS leader points to | expected: the dark-red villous vascular bed at the uterine fundus where the coiled umbilical cord inserts
+- **WRONG** — "UMBILICAL CORD" — lands on: maternal pelvic (iliac) vessels below and outside the uterus | expected: the coiled cord running from the fetal umbilicus up-left to the placental bed
+- **SUSPECT** — "PELVIC CIRCULATION" — lands on: the inner edge of the right lateral uterine wall where it meets the fetal buttock, with no maternal pelvic vessel at the endpoint | expected: the maternal iliac/pelvic vessel network at the lower left of the figure
+
+### `pud` page 2 — Anatomy: Stomach & Duodenum
+
+3 of 26 labels flagged.
+
+- **WRONG** — "Pylorus (pyloric sphincter)" — lands on: the mucosal surface inside the duodenal bulb, well distal (left) of the pyloric narrowing | expected: the constricted neck between the gastric antrum and the duodenal bulb, about 120 px to the right of the endpoint
+- **SUSPECT** — "Right gastric artery" (second, lower leader) — lands on: the outer wall of the duodenal bulb with no artery at the endpoint; the label's first leader does merge correctly into an arterial branch off the celiac node | expected: the artery along the lesser curvature
+- **SUSPECT** — "Gastroduodenal artery" — lands on: the wall of the descending duodenum; the prominent vertical arterial trunk that reads as the GDA is ~40 px to the right of the dot | expected: that vertical trunk descending behind the first part of the duodenum
+
+### `ra` page 2 — Anatomy: The Normal Joint
+
+7 of 23 labels flagged.
+
+- **WRONG** — "Hips" (Typical synovial joints panel) — lands on: the LEFT KNEE - the leader runs horizontally at knee level and touches the femoral condyle of the glowing knee joint | expected: the glowing hip joints ~80 px higher, at the femoral heads
+- **WRONG** — "Knees" (Typical synovial joints panel) — lands on: the proximal tibia / calf soft tissue about 30 px BELOW the glowing knee joint, in plain blue leg | expected: the knee joint glow itself (which the "Hips" leader is currently touching)
+- **WRONG** — "Tendon" (main joint figure) — lands on: a dot squarely inside the striated RED MUSCLE BELLY | expected: the white fibrous tendon band ~20 px up and to the right of the dot (the "Ligament" leader lands on it correctly)
+- **SUSPECT** — "Synovial fluid" — lands on: the red synovial lining tissue at the joint margin, ~34 px left of where the "Synovial cavity" arrow lands | expected: inside the joint space / recess that holds the fluid
+- **SUSPECT** — "Synovial membrane (intima)" — lands on: the margin of the tibial articular cartilage, after the leader has crossed straight over the red synovial lining it names | expected: the red synovial lining itself (arguable - the synovium does reflect at that cartilage margin)
+- **SUSPECT** — "Fibrous capsule (externa)" (main figure) — lands on: the tibial cortical bone at the cartilage-bone junction, after crossing over the pale fibrous capsule layer | expected: the pale outer fibrous layer at approx x=250-272 (arguable - the capsule inserts on bone there)
+- **SUSPECT** — "Fibrous capsule (collagen)" (Joint capsule & synovial lining panel) — lands on: deep red synovial tissue between two villi, having crossed straight over the pale layered collagen band at the outer edge | expected: that pale outer collagen band
+
+### `schizophrenia` page 2 — Anatomy: Brain Circuits & Dopamine Pathways
+
+5 of 15 labels flagged.
+
+- **WRONG** — "Corpus Callosum" — lands on: a dot inside the blue/purple glowing thalamus-basal ganglia mass (the structure carrying the "3" badge); the leader passes straight through the pale ribbed callosal band on its way | expected: that pale ribbed arching band, about 20 px higher
+- **WRONG** — "Thalamus" — lands on: a dot in the parietal cortical gyri high on the convexity, ~125 px lateral to and above the thalamus | expected: the blue glowing thalamus in the diencephalon (which is where the Corpus Callosum leader currently lands)
+- **WRONG** — "Cerebellum" — lands on: the brainstem / upper spinal cord tube, well below the cerebellum | expected: the large foliated cerebellum drawn above and to the right of the endpoint
+- **SUSPECT** — "Pituitary Gland" — lands on: empty black background below the brainstem; no pituitary is drawn at the arrowhead | expected: the sella region under the hypothalamus. NOTE this is a double-headed orange pathway arrow running from the "4" badge down to the label text, so it may be a connector by design rather than a pointer
+- **SUSPECT** — "Nucleus Accumbens" — lands on: the purple mesolimbic pathway ribbon just below the "1" badge rather than on a discrete nucleus | expected: the ventral striatum tissue; arguable, since the badge marks the mesolimbic terminus
+
+### `stroke` page 2 — Anatomy: Cerebral Vasculature
+
+9 of 26 labels flagged.
+
+- **WRONG** — "Internal Carotid Artery (ICA)" [panel 2, Carotid & Vertebrobasilar Systems] — lands on: the vertebral artery (the posterior vessel that arises from the subclavian at the arch and gives no facial branches), at x~143 | expected: the post-bifurcation carotid at x~159-161, the ascending vessel that enters the skull base
+- **WRONG** — "External Carotid Artery (ECA)" [panel 2] — lands on: ambiguous but wrong either way - a round endpoint dot sits on the vertebral artery (x~145) and the line's final dash reaches the COMMON carotid trunk (x~160-163) about 22 px BELOW the carotid bifurcation | expected: the anterior branch that leaves the bifurcation and fans into the maxillofacial region
+- **WRONG** — "Internal Carotid Artery (ICA)" [panel 3, Cerebral Arteries lateral view] — lands on: bare temporal-lobe cortex at (417,540), no vessel at the endpoint, ~38 px anterior to the carotid trunk | expected: the large vertical trunk at x~455-475 that the PCoA and Basilar labels also point at
+- **WRONG** — "Posterior Cerebral Artery (PCA)" [panel 3] — lands on: the middle of the cerebellar hemisphere (brown folia) at (594,581), no artery at the endpoint | expected: the vessels over the occipital lobe / the artery curving round the midbrain
+- **SUSPECT** — "Middle Cerebral Artery (MCA)" [panel 3] — lands on: plain temporal-lobe cortex at (605,485) at the temporo-occipital border, ~16 px from the nearest painted artery | expected: the Sylvian trunk / candelabra of branches anterior to it
+- **SUSPECT** — "Vertebral Arteries" [panel 3] — lands on: black background at (454,703), just abutting a thin side branch; the main trunk is ~15 px to the right | expected: the trunk itself, as the Basilar label above it does
+- **SUSPECT** — "Basilar Artery" [panel 6, Posterior Circulation] — lands on: the right vertebral artery ~8 px below the vertebrobasilar junction (803,949) | expected: the midline trunk on the pons at x~781-786, y 915-940
+- **SUSPECT** — "Anterior Inferior Cerebellar Artery (AICA)" [panel 6] — lands on: the right vertebral artery trunk beside the medulla (800,1000) - the level at which PICA arises, not AICA | expected: a lateral branch running into the anterior inferior cerebellum, off the basilar higher up
+- **SUSPECT** — "Vertebral Arteries" [panel 6] — lands on: the pale medulla surface at (784,1052), ~8 px medial to the vessel | expected: the paired red vessels flanking the medulla at x~763 and x~794
+
+### `suicide` page 2 — Labeled Neuroanatomy of Suicide Risk
+
+5 of 9 labels flagged.
+
+- **WRONG** — "Hippocampus" — lands on: the purple sphere sitting on top of the brainstem at (359,578) - the SAME structure the "Raphe Nuclei (Brainstem)" arrowhead points at (392,592) | expected: the magenta elongated structure inside the medial-temporal swirl at ~(310,582), just below and behind the orange amygdala sphere
+- **SUSPECT** — "Dorsolateral Prefrontal Cortex (DLPFC)" — lands on: a blue node on the POSTERIOR third of the green cingulate band (403,472), the line then continuing to the purple limbic arch; no prefrontal cortex is touched. Caveat: the KEY defines blue lines as "inhibitory / top-down control" circuit arrows, so this may be a circuit line rather than a pointer | expected: the anterior superior (pink/magenta) frontal convexity
+- **SUSPECT** — "Orbitofrontal Cortex (OFC)" — lands on: a blue node in mid medial-frontal cortex at (200,508), ~35 px above the orbital (inferior) frontal surface | expected: the inferior/orbital margin of the blue frontal lobe, ~y 540-550
+- **SUSPECT** — "Anterior Cingulate Cortex (ACC)" — lands on: the vertex of the green cingulate band at (338,456), i.e. mid-cingulate; the band runs x 233-440 so this is past its midpoint | expected: the anterior/rostral limb of the band, x ~240-290
+- **SUSPECT** — "Amygdala" — lands on: empty dark space at (245,571) where the orange circuit arrow's HEAD sits (that arrow's tail is the amygdala and its head points into the OFC) | expected: the orange sphere at ~(305,553)
+
+### `t2dm` page 2 — Normal Pancreatic & Endocrine Anatomy
+
+6 of 30 labels flagged.
+
+- **WRONG** — "Accessory pancreatic duct (duct of Santorini)" [Gross Anatomy panel] — lands on: the horizontal arterial branch of the red SMA trunk at (244,338), below and outside the pancreas - no duct at the endpoint | expected: the small duct in the upper pancreatic head, superior to the duct of Wirsung
+- **WRONG** — "Greater pancreatic artery (branch of splenic artery)" [Pancreatic Arterial Blood Supply panel] — lands on: the tip of an inferior branch of the SMA at (605,908), below the pancreatic head - the same arcade the Inferior pancreaticoduodenal label points into | expected: a branch off the splenic artery entering the pancreatic body along its superior border
+- **SUSPECT** — "Dorsal pancreatic artery (branch of splenic artery)" [Arterial Blood Supply panel] — lands on: the parenchyma at the very tip of the pancreatic tail (635,830); no artery resolvable at the endpoint | expected: near the pancreatic NECK, where the dorsal pancreatic artery leaves the splenic
+- **SUSPECT** — "Superior pancreatic artery (branch of splenic artery)" [Arterial Blood Supply panel] — lands on: the outer wall of the duodenum at (483,869), at most on the thin pancreaticoduodenal arcade vessel running over it | expected: the superior border of the pancreatic body
+- **SUSPECT** — "Common bile duct" [Gross Anatomy panel] — lands on: an arrowhead on the medial wall of the descending duodenum at (117,277) | expected: the pale branching duct structure ~10-12 px to the right at (128,283), where the duct enters the pancreatic head. Note: the adjacent "Head" leader DOES continue past the duodenum to the gland, so the short stop here is not a drawing convention
+- **SUSPECT** — "Splenic artery" [Blood Supply & Portal Circulation panel] — lands on: a branch descending down-LEFT from the celiac trunk at (352,614), the same descending trunk the "Common hepatic artery" leader reaches ~23 px lower | expected: the vessel that leaves the celiac to the upper right and runs along the superior border of the pancreas to the tail
 
 
 ## 2. SUSPECT — needs a second look
@@ -162,6 +612,42 @@ Endpoint ambiguous, between two structures, or close-but-off. Some of these will
 
 - **SUSPECT** — "Calcified Valve Cusps" — lands on: the aortic root wall about 24px above the calcified leaflets | expected: on a calcified nodular cusp
 - **SUSPECT** — "Narrowed Valve Orifice" — lands on: the body of the right calcified cusp | expected: the central slit between the two cusps
+
+### `ards` page 2 — Normal vs ARDS Lung Anatomy
+
+3 of 10 labels flagged.
+
+- **SUSPECT** — "Type II cell (surfactant production)" [normal panel] — lands on: empty alveolar airspace ~1 cell-diameter inside the epithelium | expected: the green Type II cell drawn in the wall below-left, which the label's own icon depicts
+- **SUSPECT** — "Thickened, inflamed membrane" [ARDS panel] — lands on: the proteinaceous fluid just inside the alveolar lumen | expected: the thickened wall band itself
+- **SUSPECT** — "Capillary compression & microthrombi" [ARDS panel] — lands on: the alveolar wall band | expected: the compressed capillaries and dark microthrombi outside the wall
+
+### `asthma` page 2 — Airway Anatomy
+
+2 of 11 labels flagged.
+
+- **SUSPECT** — "CARINA" [airway map] — lands on: the black background in the notch below the bifurcation, about one tracheal diameter distal to the carinal ridge | expected: the ridge at the tracheal bifurcation itself
+- **SUSPECT** — "3 CARTILAGE PLATES" [bronchus cross-section] — the numbered marker sits in the dark background outside the section, only touching the pale grey outer band | expected: on the cartilage plate
+
+### `chf` page 1 — 3D Anatomy Overview
+
+2 of 5 labels flagged.
+
+- **SUSPECT** — "Left Ventricular Dysfunction" — lands on: the cut pulmonary-vein stumps / left atrial region at the upper right | expected: the left ventricular mass lower down (note: these five are concept callouts evenly spaced down the right edge, not anatomical labels)
+- **SUSPECT** — "Systemic Venous Congestion" — lands on: the left ventricular lateral wall | expected: the right heart / SVC-IVC side, which is on the viewer's LEFT in this anterior view
+
+### `chf` page 2 — Labeled Cardiac Anatomy
+
+1 of 15 labels flagged.
+
+- **SUSPECT** — "RCA Right Coronary Artery" (Coronary circulation panel) — lands on: a dark BLUE cardiac vein on the RV inferior-anterior surface | expected: a red arterial branch; the LAD and LCx dots in the same panel also sit on epicardium/veins rather than on their named arteries
+
+### `cushings` page 2 — Labeled Anatomy: HPA Axis
+
+3 of 19 labels flagged.
+
+- **SUSPECT** — "3 ADRENAL GLANDS (On top of kidneys)" (panel arrow to central figure) — lands on: the upper-lateral surface of the KIDNEY, about 30px clear of the yellow lobulated adrenal gland drawn on top of it | expected: the adrenal gland itself
+- **SUSPECT** — "Superior, middle, and inferior suprarenal arteries" (Blood Supply panel) — lands on: the lateral cortical surface of the kidney, reaching no vessel | expected: the red arterial branches drawn around the adrenal and at the hilum
+- **SUSPECT** — "Superior hypophyseal artery" (Blood Supply panel) — lands on: the pituitary gland / infundibulum junction rather than an identifiable arterial branch; thumbnail is small enough that this is hard to call | expected: the vessel running from the circle of Willis to the stalk
 
 ### `di` page 2 — Normal AVP Physiology
 
@@ -176,6 +662,50 @@ Endpoint ambiguous, between two structures, or close-but-off. Some of these will
 - **SUSPECT** — "Glucose (Normal panel)" — lands on: nothing; sits directly above the green ball-and-stick insulin molecules, ~60 px left of the purple glucose spheres crossing GLUT4 | expected: beside the purple spheres, as the same label correctly sits in the DKA panel
 - **SUSPECT** — "Glucose in Blood Normal" — lands on: a node on the cell's upper-right membrane, with the thin leader running into the cytoplasm | expected: the extracellular glucose cluster drawn to the LEFT of the cell
 
+### `gbs` page 2 — Anatomy Overview: The Peripheral Nervous System
+
+1 of 11 labels flagged.
+
+- **SUSPECT** — "Spinal cord" — lands on: the cervical nerve branches ~9px lateral to the right edge of the orange midline cord cable (about one cord-width off) | expected: the cord itself. Small miss; intent is legible, flagging only because "Peripheral nerves" is a separate label on the same figure
+
+### `gerd` page 1 — Overview: Definition, Anatomy & Classification
+
+1 of 10 labels flagged.
+
+- **SUSPECT** — "Muscularis mucosae" (ESOPHAGEAL WALL LAYERS panel) — lands on: the third band in from the lumen, BELOW the band that "Submucosa" points at | expected: between the mucosa and the submucosa. The two leaders are in inverted depth order - a layer-ORDER error rather than a stray line, since the bands are only identifiable by their labels
+
+### `gerd` page 7 — Gross Pathology & Anatomical Effects
+
+4 of 7 labels flagged.
+
+- **SUSPECT** — "Z-line (squamocolumnar junction)" (NORMAL ANATOMY REFERENCE panel) — lands on: the mid-oesophageal wall, ~31px above where the tube meets the stomach | expected: the mucosal transition at the gastro-oesophageal junction
+- **SUSPECT** — "Lower esophageal sphincter (LES)" (NORMAL ANATOMY REFERENCE panel) — lands on: nothing - this label has NO leader line at all, while the three labels above and below it do
+- **SUSPECT** — "Diaphragm" (HIATAL HERNIA mini-panel) — lands on: black background ~20px above the diaphragm band; its leader is a single short stub dash that stops before reaching any tissue
+- **SUSPECT** — "Dilated esophagus" (ESOPHAGEAL DILATION mini-panel) — lands on: the NARROWED distal segment at the gastro-oesophageal junction, below the bulge | expected: the widened mid-oesophageal segment the label names
+
+### `ibd` page 2 — Annotated GI Anatomy
+
+12 of 24 labels flagged.
+
+- **SUSPECT** — "Tongue" — lands on: the lip / corner of the mouth, within ~15px of where the Mouth and Oral cavity leaders also stop | expected: the tongue body inside the oral cavity (the large pink mass drawn in the cheek)
+- **SUSPECT** — "Descending colon" — lands on: fat/omentum just above and lateral to the splenic flexure, off the bowel wall (same endpoint the Splenic flexure leader reaches) | expected: the vertical colon segment running down the patient's left flank
+- **SUSPECT** — "Rectum" — lands on: the rectosigmoid junction, ~15px (source px) right of the rectal tube | expected: the midline rectum below the sigmoid
+- **UNREADABLE** — "Jejunum" — lands on: cannot trace - leader crosses the forearm/hand and merges with 12 near-parallel leaders | expected: proximal small bowel, LUQ
+- **UNREADABLE** — "Ileum" — lands on: cannot trace (same dense fan) | expected: distal small bowel coils
+- **UNREADABLE** — "Terminal ileum" — lands on: cannot trace (same dense fan) | expected: last ileal loop entering the cecum
+- **UNREADABLE** — "Ileocecal valve" — lands on: cannot trace (same dense fan) | expected: ileocecal junction
+- **UNREADABLE** — "Cecum" — lands on: cannot trace (same dense fan) | expected: cecal pouch, RLQ
+- **UNREADABLE** — "Appendix" — lands on: cannot trace (same dense fan) | expected: vermiform appendix off the cecum
+- **UNREADABLE** — "Ascending colon" — lands on: cannot trace (same dense fan) | expected: right-flank colon
+- **UNREADABLE** — "Hepatic flexure" — lands on: cannot trace (same dense fan) | expected: right colic flexure under the liver
+- **UNREADABLE** — "Splenic flexure" — lands on: cannot trace (same dense fan) | expected: left colic flexure
+
+### `pad` page 2 — Lower-Extremity Arterial Anatomy
+
+1 of 17 labels flagged.
+
+- **SUSPECT** — "Deep femoral artery (profunda femoris)" — lands on: soft tissue ~1-2 px lateral to the common femoral trunk, with no vessel under the dot; the branch that actually carries the perforators runs on the opposite (medial) side of the SFA and is unmarked | expected: the profunda femoris itself, just distal to its origin
+
 ### `siadh` page 2 — Normal ADH Physiology
 
 1 of 9 labels flagged.
@@ -185,4 +715,4 @@ Endpoint ambiguous, between two structures, or close-but-off. Some of these will
 
 ## Clean
 
-`acs` p1, `acs` p2, `afib` p2, `cardiomyopathy` p2, `hhs` p2, `hypoglycemia` p2, `metabolic-syndrome` p2, `pleural-effusion` p2, `t1dm` p2
+`acs` p1, `acs` p2, `afib` p2, `cap` p2, `cardiomyopathy` p2, `cellulitis` p1, `copd` p2, `delirium` p2, `endocarditis` p2, `hhs` p2, `htn` p1, `hyperlipidemia` p2, `hypoglycemia` p2, `metabolic-syndrome` p2, `osteoporosis` p1, `pleural-effusion` p2, `sci` p1, `t1dm` p2
