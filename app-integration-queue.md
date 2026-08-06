@@ -1287,3 +1287,44 @@ half uses. Shipped as delivered, flagged.
   `wound-care`, `anaphylaxis` (Derm & Wounds → 4/4). Biggest remaining gaps: Oncology 14, Fluids &
   Electrolytes 12, Toxicology 9.
 - **Which footer template and which shield are standard** — two galleries in one batch disagree.
+
+---
+
+## v69 — **100 GALLERIES, 1,000 PAGES** (2026-08-06, `3be1034`)
+
+`croup` is the 100th gallery and the 1,000th illustration page. **OB & Peds is complete at 6 of 6**
+— the eleventh complete category, and the fifth completed in two days.
+
+Shipped across v68 and v69, all OB & Peds: `gdm`, `pph`, `labor`, `bronchiolitis`, `croup`.
+
+| | |
+|---|---:|
+| galleries | **100** of 181 conditions |
+| illustration pages | **1,000** |
+| complete categories | **11** — Cardiac 13, Endocrine 13, GI 12, Heme & Onc 7, ID 6, MSK & Rheum 7, Neurology 12, OB & Peds 6, Psychiatry 7, Renal & GU 7, Respiratory 10 |
+
+Verified at 100: chain length 100 wrapping both ways, gestures pass, font audit clean, `verify_sw`
+passes, zero page errors.
+
+### The one that nearly went wrong
+
+The 45-file batch on 2026-08-05 looked like five complete galleries. Ten pages carried an
+`OB & PEDS` header — **seven were croup and three were asthma** (J45.0, Pulmonology, GINA 2024,
+`Asthma` on the footer condition line). A page count would have shipped three asthma pages inside
+croup. The specialty label was identical on all ten, so it was not the tell; the ICD-10, the source
+line and the footer condition name were.
+
+The re-sent croup 7–9 were therefore **checked rather than counted** before building — J05.0, croup
+sources, and md5-distinct from the strays. That check is now the standard for any re-send.
+
+### Still open after the milestone
+
+- **81 conditions without a gallery.** Biggest gaps: Oncology 14, Fluids & Electrolytes 12,
+  Toxicology 9, Dermatology 8, Ophthalmology 8, Pediatrics 8, Women's Health 8.
+  Nearest complete categories: **Emergency & Surgical** needs 3 (`shock`, `acute-abdomen`,
+  `peds-fever-sepsis`), **Derm & Wounds** needs 4.
+- **`croup`'s dot rows are the worst set in weeks** — cumulative fill from page 3, count changing
+  from nine to ten mid-gallery, and page 10 showing nine of ten lit. Best single example to send
+  production; see `DOTS-defect-for-production.md`.
+- **`labor` pages 9 and 10 are indistinguishable** on both band and footer, and page 10 is missing
+  the Clinical Pearl page every other gallery ends with.

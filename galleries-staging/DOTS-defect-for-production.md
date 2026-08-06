@@ -895,3 +895,44 @@ others, within this one batch and sometimes within one gallery.
 
 `pph` page 1 arrived as a **.jpeg**; the other 44 are .png. Harmless — the builder re-encodes — but
 it indicates a different export path for that page.
+
+---
+
+## 2026-08-06 — `croup` 7–9 re-sent correctly; the gallery is the 100th
+
+The three replacement pages are genuine croup: **ICD-10 J05.0**, `Croup` on the footer condition
+line, **AAP Clinical Practice Guideline: Croup (Reaffirmed 2018)** as the source, and byte-distinct
+from the asthma pages sent in their place. Verified before building rather than counted. Built and
+shipped — **100 galleries, 1,000 pages, OB & Peds complete**.
+
+### But the dot rows are the worst set in weeks: cumulative fill is back
+
+| page | dots | filled |
+|---|---:|---:|
+| 1 | **9** | 1 |
+| 2 | **9** | 2 |
+| 3 | **9** | 2 (one pale) |
+| 4 | **9** | 3 |
+| 5 | 10 | **6** |
+| 6 | 10 | **7** |
+| 7 | 10 | **8** |
+| 8 | 10 | **9** |
+| 9 | 10 | **9** |
+| 10 | 10 | **9** |
+
+Two faults at once, which is why this is the single best gallery to send back as an example:
+
+1. **Cumulative fill from page 3 onward** — each page lights every dot up to its own, instead of
+   one. This is the defect last seen on Alzheimer's, Parkinson's and Guillain-Barré. A repainter was
+   built for it at our end and **deleted**, because it produced visibly damaged pages. It cannot be
+   corrected downstream; it has to be fixed where the page is drawn.
+2. **The count changes mid-gallery** — nine dots on pages 1–4, ten from page 5. And the fill
+   saturates at nine, so **page 10 of 10 shows nine of ten lit**, i.e. the reader is told the
+   gallery is unfinished on its own last page.
+
+Evidence: `DOTS-evidence/croup-p1-p10-cumulative.png`, all ten rows in one image.
+
+### Titles
+
+Pages 6 and 7 are both imaging pages — *Imaging Evaluation of Croup* and *Diagnostic Imaging* —
+adjacent and near-duplicate in the thumbnail strip.
