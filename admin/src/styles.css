@@ -226,3 +226,17 @@ td.empty{text-align:center;color:var(--muted);padding:2rem}
 .txt-count strong{color:var(--mint);font-size:1.05rem}
 .txt-meta{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-top:.55rem;color:var(--muted);font-size:.78rem}
 .txt-body{max-width:420px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#c4d0e4}
+
+/* ---- codes (free access) ---- */
+.codes{max-width:900px}
+.codes input,.codes select{width:100%;box-sizing:border-box;min-height:44px;padding:0 .8rem;border-radius:11px;
+  border:1px solid #6fa9ff40;background:#0a1424cc;color:#eef4ff;font-size:.92rem;font-family:inherit}
+.codes select{-webkit-appearance:none;appearance:none;cursor:pointer}
+.codes input:focus,.codes select:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 3px #24d9ff26}
+.codes .tlabel{display:block;margin:0 0 .35rem}
+.codes-form{display:grid;grid-template-columns:1.4fr 1.2fr .7fr 1fr;gap:.8rem;align-items:end}
+.codes-form .codes-label{grid-column:1/-1}
+.codes-codeinput{display:flex;gap:.5rem}
+.codes-codeinput input{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.04em}
+.codes-codeinput .btn{flex:0 0 auto}
+@media(max-width:680px){.codes-form{grid-template-columns:1fr 1fr}.codes-form .codes-label{grid-column:1/-1}}
