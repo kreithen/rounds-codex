@@ -72,11 +72,12 @@ export default function Dashboard({ session }) {
     if (!s) return rows;
     return rows.filter(
       (r) => (r.email || "").toLowerCase().includes(s) || (r.role || "").toLowerCase().includes(s)
+        || (r.name || "").toLowerCase().includes(s) || (r.phone || "").toLowerCase().includes(s)
     );
   }, [rows, q]);
 
   function exportCsv() {
-    const cols = ["email", "role", "status", "source", "created_at"];
+    const cols = ["name", "email", "phone", "role", "status", "source", "created_at"];
     const esc = (v) => {
       const s = v == null ? "" : String(v);
       return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
@@ -217,14 +218,16 @@ export default function Dashboard({ session }) {
       <div className="tablewrap">
         <table>
           <thead>
-            <tr><th>Email</th><th>Role</th><th>Status</th><th>Source</th><th>Joined</th><th></th></tr>
+            <tr><th>Name</th><th>Email</th><th>Phone</th><th>Role</th><th>Status</th><th>Source</th><th>Joined</th><th></th></tr>
           </thead>
           <tbody>
             {filtered.map((r) => (
               <tr key={r.id}>
+                <td>{r.name || "—"}</td>
                 <td className="mono">
                   <button className="link-email" onClick={() => openCompose(r.email)} title="Email this person from admin@roundscodex.com">{r.email}</button>
                 </td>
+                <td className="mono">{r.phone || "—"}</td>
                 <td>{r.role || "—"}</td>
                 <td><span className={"pill " + (r.status || "")}>{r.status}</span></td>
                 <td>{r.source}</td>
@@ -236,7 +239,7 @@ export default function Dashboard({ session }) {
               </tr>
             ))}
             {filtered.length === 0 && (
-              <tr><td colSpan="6" className="empty">No signups match.</td></tr>
+              <tr><td colSpan="8" className="empty">No signups match.</td></tr>
             )}
           </tbody>
         </table>
