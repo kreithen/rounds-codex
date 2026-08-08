@@ -80,15 +80,10 @@ chronicity."* → **function**.
 
 ## Not a defect, but a question for the physician
 
-**The "90% of acute low back pain improves within 6 weeks" figure** appears twice — as the headline
-statistic on page 10 and in Key Pearls on page 7. It is a widely published number, but it is
-optimistic against current cohort evidence, where roughly a third still report moderate pain at three
-months and a majority report some pain at a year. The app's own module text says "improve
-*substantially* within about 6 weeks", which is deliberately softer. Either the artwork softens or
-the module firms up — the physician decides, and this is not something for production to change
-unprompted.
-
-The 60% recurrence-within-a-year figure on page 10 is well supported and can stay as it is.
+**DECIDED — no change needed.** The "90% of acute low back pain improves within 6 weeks" figure on
+pages 7 and 10 was raised with the physician and reviewed: it is a widely published figure and stays
+as drawn. The app's module says "improves substantially", so the two are differently precise rather
+than contradictory. Recorded here so it is not re-raised on the next pass.
 
 **Pages 7 and 9 overlap substantially.** "Management Overview" (stepwise by time) and "Treatment &
 Management" (by modality) both carry medications, surgical indications and interventional options;
