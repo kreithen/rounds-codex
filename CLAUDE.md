@@ -291,9 +291,28 @@ no backend. This file is context for future sessions — read it before starting
 
 - **Modes** via `document.documentElement[data-mode]`: `nursing` | `medical` | `resident`
   (`setMode(m)`). Medical accent `--sec:#00c2ff`.
-- **Conditions**: `DATA=[{id,name,category,icd10,tagline,...}]`. `byId[id]` lookup.
+- **Conditions**: `DATA=[{id,name,category,icd10,tagline,...}]`. `byId[id]` lookup. **183 as of
+  2026-08-08** (Hip Fracture and Low Back Pain joined MSK & Rheum, taking it to 9).
   Detail page = `detailHTML(id)`; left/right **swipe** browses `DATA` array order (adjacency
   matters — e.g. Hypertension `htn` is placed right before `aortic-stenosis`).
+  - Add one with **`scripts/insert_conditions.js <staging.json> <content-dir> --after <id>:<after-id>`**.
+    Placement is an argument, not a guess: appending would put a new entry after whatever happens
+    to be last in the file. The script is idempotent, checks the entry carries the field set all
+    the others share (a missing field renders as an empty section rather than throwing, so it is
+    invisible in the app), and refuses a category no existing condition uses.
+  - **`content/conditions.json` and `content/quizzes.json` ship MINIFIED — one line, no trailing
+    newline.** A hand edit that re-emits either pretty-printed adds ~124 kB of whitespace to a
+    file the app fetches at boot and turns a two-entry addition into a whole-file diff. That
+    happened here and was caught by `git diff --numstat`, not by any app-level check.
+    `insert_conditions.js` infers the indent from the file it read; **check the numstat is 1/1
+    after any content edit.**
+  - **A right-going touch swipe that starts near the left edge is claimed by Chromium's own
+    back-navigation gesture**, which unloads the app — the page returns with `go` undefined and it
+    reads as an app failure. `scripts/verify_condition_swipe.js` drives real touch over CDP
+    (mouse measures the 700ms post-touch guard instead) and only swipes FORWARD, walking in from
+    the condition on each side to prove the same adjacency without touching the edge.
+  - `verified:false` keeps the RC VERIFIED badge off. `metabolic-syndrome`, `hip-fracture` and
+    `back-pain` are all awaiting the physician's read; `insert_conditions.js` prints the list.
 - **Galleries**: `GALLERIES={ "<id>": {title, base:"assets/<id>/", pdf, images:[{n,file,
   thumb,title}]} }`. Real artwork renders only for ids in `REALGAL` (the `real` array in
   `content/galleries.json`). **`base` is not uniform on the live site** — see the warning in
@@ -343,7 +362,18 @@ no backend. This file is context for future sessions — read it before starting
   while every source PDF states a letter, and an off-by-one turns a right answer wrong with
   nothing downstream able to detect it. The validator also checks `why[]` aligns with `ch[]`
   (and is empty at `correct`), and that no `img` points past the end of the gallery.
-- **Every condition has a quiz (181/181, 1,820 questions) as of 2026-07-29.** 24 were
+- **Every condition has a quiz (183/183, 1,840 questions) as of 2026-08-08** — the invariant is
+  the point, so a new condition needs 10 questions in the same commit or coverage breaks. Pass
+  `--answers` only for a PDF transcription; an authored batch has no printed letters, and
+  generating a letters file from the indices you just wrote is circular. **Two of `qa_quizzes.js`'s
+  heuristics fight a coding question**: it compares the explanation against each option by word
+  overlap, so an item whose correct answer is a bare code list ("M54.50, M54.51 or M54.59") scores
+  a *distractor* as the better match and it flags a false positive. Give the correct option enough
+  prose to win the overlap and re-derive `correct = ch.indexOf(text)` — do not just silence it.
+  **After `balance_answers.js`, check the answer TEXT survived the rotation**, not that the file
+  still validates: the rotation rewrites `ch[]`, `correct` and `why[]` together, and a bug there
+  marks a distractor as the answer while every structural check still passes.
+  (historic) **181/181, 1,820 questions as of 2026-07-29.** 24 were
   transcribed from the physician's PDFs; the rest were authored from each condition's own module
   text by agent fan-out. Pipeline: author to `quizzes-staging/authored/<file>.json` →
   `scripts/qa_quizzes.js` (must hit 0 failures) → `scripts/balance_answers.js` →
