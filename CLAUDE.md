@@ -627,8 +627,22 @@ no backend. This file is context for future sessions — read it before starting
   broken": `connected:true, enabledInChat:false` = on but off for this chat (per-chat toggle);
   `connected:false` = genuinely deauthorised (re-authorise); `connected:null` = status unknown
   (re-check, do not act). There is no user-side fix for the transport drop — wait and re-check.
+  **A MID-CONVERSATION RETOGGLE DOES NOT REACH A RUNNING SESSION — measured 2026-08-08.** The
+  physician toggled Netlify on three times in one session and `ListConnectors` read
+  `enabledInChat:false` after every one, with `ToolSearch +netlify` returning nothing each time. So
+  the connector set looks resolved **when the session starts**; the one time a toggle appeared to
+  work mid-chat (Higgsfield, 2026-08-01) is not reproducible. **Do not ask the physician to toggle
+  more than once** — after that it is wasted effort and reads as being sent back to a switch that
+  does nothing. The reliable route is a NEW conversation with the connector already on.
   **Never let a deploy's confirmation depend on the connector being up.** `/version.txt` works from
   any browser, and Netlify's failed-deploy email is out-of-band from the connector AND the session.
+  **This is now PROVEN end to end, not just advised (v79, 2026-08-08).** With Netlify off for the
+  chat, a push was verified by: `verify_sw.js` + a headless boot on the shipped bytes before
+  pushing, then `git show origin/main:<path>` for version.txt / sw.js `CACHE` / `_headers` / the
+  edited content field after pushing, then the physician opening `/version.txt` on an iPhone and
+  seeing the stamped string. That is the whole procedure — use it and stop chasing the connector.
+  `/version.txt` also carries an explicit `Cache-Control: no-cache` from v79; before that it
+  inherited a Netlify default that cannot be tested from inside the container.
 - **Resident content** (`medcodex-resident-buildout` skill): `resident-staging/` has the 1308-entry
   master + wiring snippet.
 - **Clinical guidelines** (`guidelines-staging/`, `scripts/merge_guidelines.js`): the "Updated

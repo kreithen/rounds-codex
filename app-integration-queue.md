@@ -1507,3 +1507,56 @@ a shared `/c/chf` link gates a new visitor then lands them on the condition.
   Netlify had lost GitHub access — so there was no failed build to notify about. Only the one
   manually triggered build would have alerted. Detecting "no deploy ran" needs a check on
   `/version.txt`, not a failed-deploy hook.
+
+---
+
+## v79 — `/version.txt` no-cache + the febrile-neutropenia pearl (2026-08-08, deployed)
+
+Small on purpose. The point was to prove a deploy can be shipped and confirmed with the Netlify
+connector unavailable, on a change where nothing is at risk if the answer is no.
+
+Three files, 8 insertions / 2 changes:
+
+- **`_headers`** — `/version.txt` now says `Cache-Control: no-cache`. It is the file a deploy is
+  verified with, and it had been inheriting a Netlify default that cannot be tested from inside the
+  container. The service worker already routed it network-first, so this hardens the HTTP layer
+  rather than fixing a reproduced break.
+- **`content/conditions.json`** — febrile-neutropenia's antifungal-escalation pearl now reads
+  **4-7 days**, matching the four other fields in that module which all already said so. Found by
+  `audit_module_quiz_gaps.py` C3 and approved by the physician. `git diff --numstat` was 1/1, so the
+  minified format survived.
+- **`sw.js`** — `CACHE` bumped to `rounds-codex-v79`, as every release does.
+
+### The verification procedure, which is the actual deliverable
+
+Netlify's connector read `connected:true, enabledInChat:false` for this entire session — three
+retoggles by the physician did not change it. So the deploy was confirmed without it:
+
+1. **Before pushing**, against the shipped bytes: `verify_sw.js` all checks pass; headless boot
+   gives 183 conditions / 183 quizzes / 100 galleries / 300 drugs, first-run disclaimer present,
+   the edited pearl rendering with the new wording and not the old, `/version.txt` served over
+   HTTP, **zero page errors**.
+2. **After pushing**, straight out of `git show origin/main:<path>` — version.txt, `sw.js` `CACHE`,
+   the `_headers` block and the edited content field — so what was checked is what Netlify builds,
+   not what anyone hoped it would.
+3. **The physician opened `/version.txt` on an iPhone** and it read
+   `2026-08-08T18:34:27Z  v79-VERSION-NO-CACHE-AND-FN-PEARL`.
+
+That is now the standing procedure. The connector was only ever able to *read* deploy status — it
+cannot deploy from a cloud session at all (`deploy-site` returns an `npx` command that talks to a
+blocked host) — and `/version.txt` reads it more directly.
+
+**One caveat stated because it is invisible:** the `no-cache` header takes effect from v79 onward, so
+this particular check still ran under the old default. It protects every future one.
+
+### Also settled here
+
+- **Neither MSK gallery is deployed**, and it was worth measuring rather than asserting: driving the
+  deployed build shows Low Back Pain and Hip Fracture with no gallery button, no tiles and no gallery
+  section, while **`fracture` (Fractures) has all three**. `back-pain` appears zero times in the live
+  `galleries.json`. A reported "back pain gallery" was the Fractures one, whose ten page titles are
+  nearly the same set — Overview, Anatomy, Pathophysiology, Clinical Presentation, Physical Exam,
+  Imaging, Microscopic Pathology, Pearls. Expect that confusion again; the hip-fracture batch was
+  briefly suspected of being a re-send of it for the same reason.
+- **Hip Fracture gets its own gallery**, separate from Fractures (physician's call). Both MSK builds
+  are rehearsed and blocked only on the twenty JPGs — see `galleries-staging/MSK-BUILD-READY.md`.
