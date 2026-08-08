@@ -1,5 +1,5 @@
 {
-  "_note": "ALL TEN PAGES RECEIVED (2026-08-08). One thing still blocks a build: page 3 arrived in TWO different versions and the canonical one is unconfirmed. Titles read visually from the subtitle line under the main heading; page numbers from the 'IMAGE n OF 10' header, never filenames. Re-check against the delivered files — these were read off chat-scaled screenshots. Defects in BATCH-hip-fracture-defects.md; note that pages 1-3 came from an older template than 4-9 and page 10 from a third, so a re-render may change these pages.",
+  "_note": "ALL TEN PAGES RECEIVED (2026-08-08). Page 3 arrived in two versions; the CANONICAL one is the version with 'Advanced age (>65 years)' — confirmed by the physician — and the other take must be discarded. Titles read visually from the subtitle line under the main heading; page numbers from the 'IMAGE n OF 10' header, never filenames. Re-check against the delivered files — these were read off chat-scaled screenshots. Defects in BATCH-hip-fracture-defects.md: pages 1-3 came from an older template than 4-9 and page 10 from a third, so a re-render of those four may change them. Nothing about the content blocks a build now; only the image files are needed.",
   "1": "Overview",
   "2": "Anatomy",
   "3": "Pathophysiology",

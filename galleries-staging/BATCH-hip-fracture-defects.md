@@ -1,7 +1,8 @@
 # For production: defects in the Hip Fracture batch (2026-08-08)
 
-**All ten pages received** for `hip-fracture` (MSK & Rheum) — plus a **second, different version of
-page 3**, which is the one thing still blocking a build.
+**All ten pages received** for `hip-fracture` (MSK & Rheum). Page 3 arrived in two versions and the
+physician has confirmed the canonical one: **the version with "Advanced age (>65 years)"**. Nothing
+about the content now blocks a build.
 
 The artwork is strong and the clinical content is largely excellent. Ten issues below. The first
 four would ship without anyone noticing, and three of them are the gallery **disagreeing with
@@ -125,7 +126,7 @@ Counted off the forwarded images:
 |---|---|---|---|
 | 4, 5, 6, 7, 8, 9 | 10 | current page | **correct** |
 | 2 | 10 | **1st** — one too early | wrong |
-| 3 | — | **3rd** on one version, **4th** on the other | wrong on at least one |
+| 3 (canonical) | appear to be **11** | **4th** — one too late | wrong |
 | 1 | appear to be **11** | 1st | check the count |
 | 10 | 10 | cumulative, inverted | wrong (see §5) |
 
@@ -137,18 +138,22 @@ pages.
 
 ---
 
-## 7. Two different versions of page 3
+## 7. Page 3 — RESOLVED, and it confirms the grouping
 
-Both are "Pathophysiology", both labelled `IMAGE 3 OF 10`, and they differ:
+Two versions arrived. **The canonical one is the version with "Advanced age (>65 years)"**, confirmed
+by the physician. The other take should be discarded.
 
-- one has **"Advanced age"**, the other **"Advanced age (>65 years)"**
-- the risk-factor grid has different internal dividing rules
-- the intracapsular panel places the "Disrupted retinacular vessels" callout differently
-- the subtrochanteric illustration renders the lateral vessel differently
-- their dot rows fill different positions
+Worth knowing, because it points at the same conclusion as everything else here: **the canonical
+version is the one whose dot row is wrong.** It fills the 4th dot on page 3 — one too late — and it
+appears to carry eleven dots, while the superseded take filled the 3rd correctly. It also carries
+M80.00XA, the wrong ICD-10 code.
 
-The ">65 years" version looks newer. **Confirm which is canonical** — building from the wrong take
-silently ships superseded artwork, which has happened here before with a re-fired image set.
+So the content-correct page 3 still needs a re-render, and it sits squarely in the pages 1–3 group.
+
+One more detail for whoever fixes the template: **the fill error runs in both directions.** Page 2
+fills the 1st dot (one early); page 3 fills the 4th (one late). It is therefore not a single
+correctable offset — the same thing was seen in the anaemia galleries, where one page filled one dot
+early and another one late.
 
 ---
 
