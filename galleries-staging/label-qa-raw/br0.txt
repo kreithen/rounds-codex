@@ -1,5 +1,5 @@
 PAGE bph 2 WRONG 33 12
-  WRONG "Seminal vesicle" (SAGITTAL VIEW) -> lands on: the anterior-inferior bladder wall at the bladder base, ~page(690,181) | expected: the lumpy coiled retrovesical structure behind/below the bladder at ~page(800,175), which is where the "Detrusor muscle" leader lands - the two labels read as swapped
+  WRONG "Seminal vesicle" (SAGITTAL VIEW - verified by hand) -> lands on: the anterior-inferior bladder wall at the bladder base, ~page(690,181) | expected: the lumpy coiled retrovesical structure behind/below the bladder at ~page(800,175), which is where the "Detrusor muscle" leader lands - the two labels read as swapped
   SUSPECT "Detrusor muscle" (SAGITTAL VIEW) -> lands on: the fascial plane just outside the bladder, lateral to that lumpy retrovesical (seminal vesicle) chain, ~page(816,160) | expected: the thick red muscular bladder wall, ~10-25px medial
   WRONG "Pubic symphysis" (SAGITTAL VIEW) -> lands on: the root of the penis / corpus at ~page(666,285), the same erectile-tissue spot the "Urethra" leader targets | expected: the pale cream bone ovoid anterior to the prostate at ~page(668,225)
   WRONG "Testis" (SAGITTAL VIEW) -> lands on: the distal penile shaft / corona of the glans, ~page(635,365) | expected: the pink ovoid testis at ~page(695,370), about 60px to the right

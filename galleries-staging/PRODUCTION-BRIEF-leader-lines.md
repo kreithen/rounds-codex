@@ -56,6 +56,31 @@ of them off by a step.
 
 ---
 
+## Fault 3 — two labels ending on each other's structure
+
+Worse than a displaced endpoint, because the reader is given a confident wrong name rather than an
+ambiguous one.
+
+`bph` page 2, SAGITTAL VIEW — verified by hand at 3x:
+
+- **"Seminal vesicle"**, in the left-hand label column, ends on the **bladder wall**.
+- **"Detrusor muscle"**, in the right-hand column, ends on the **lumpy retrovesical chain — the
+  seminal vesicle.**
+
+So the seminal vesicle on that figure is labelled "Detrusor muscle", and the bladder wall is
+labelled "Seminal vesicle". The two labels approach from opposite sides, so this is not two leaders
+being exchanged; each is displaced in a way that happens to land on the other's target. For a
+reader the effect is the same as a swap.
+
+The same page has "Testis" and "Scrotum" both ending on the penis, and is the worst found so far at
+12 of 33 labels flagged.
+
+**Why this one matters most:** faults 1 and 2 usually leave a leader in empty space or on obviously
+unrelated tissue, which a careful reader may notice. This produces a page that looks correct and
+teaches two structures under each other's names.
+
+---
+
 ## What the clean pages do differently — the actionable recommendation
 
 `acs` pages 1 and 2 are **fully clean**, and they are built differently: **numbered circles placed
