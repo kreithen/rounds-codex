@@ -23,12 +23,19 @@ const path = require('path');
 
 const argv = process.argv.slice(2);
 const AFTER = {};
+const UPDATE = new Set();
 const pos = [];
 for (let i = 0; i < argv.length; i++) {
   if (argv[i] === '--after') {
     const [id, after] = String(argv[++i] || '').split(':');
     if (!id || !after) { console.error('--after wants <id>:<after-id>'); process.exit(2); }
     AFTER[id] = after;
+  } else if (argv[i] === '--update') {
+    // Replacing an entry in place is a different, riskier act from adding one, so it needs
+    // naming explicitly. Without this the idempotency guard silently SKIPS an edited staging
+    // entry and reports success -- which is what happened when the back-pain exam line was
+    // revised and the content file never changed.
+    String(argv[++i] || '').split(',').filter(Boolean).forEach(x => UPDATE.add(x));
   } else pos.push(argv[i]);
 }
 const [STAGING, CONTENT] = pos;
@@ -59,9 +66,10 @@ const tally = {};
 for (const c of DATA) for (const k of Object.keys(c)) tally[k] = (tally[k] || 0) + 1;
 const CANON = Object.keys(tally).filter(k => tally[k] === DATA.length).sort();
 
-let added = 0, skipped = 0, fail = 0;
+let added = 0, skipped = 0, updated = 0, fail = 0;
 for (const c of list) {
-  if (DATA.some(d => d.id === c.id)) { console.log(`skip ${c.id} — already present`); skipped++; continue; }
+  const at0 = DATA.findIndex(d => d.id === c.id);
+  if (at0 >= 0 && !UPDATE.has(c.id)) { console.log(`skip ${c.id} — already present`); skipped++; continue; }
 
   const keys = Object.keys(c).sort();
   const missing = CANON.filter(k => !keys.includes(k));
@@ -70,6 +78,17 @@ for (const c of list) {
   if (extra.length) { console.error(`FAIL ${c.id}: unknown field ${extra.join(', ')}`); fail++; continue; }
   if (!DATA.some(d => d.category === c.category)) {
     console.error(`FAIL ${c.id}: category "${c.category}" matches no existing condition`); fail++; continue;
+  }
+
+  // --update replaces in place, so the swipe position is untouched by definition. Report which
+  // fields actually changed, so a no-op edit cannot pass as a successful one.
+  if (at0 >= 0) {
+    const changed = CANON.filter(k => JSON.stringify(DATA[at0][k]) !== JSON.stringify(c[k]));
+    if (!changed.length) { console.log(`update ${c.id} — identical, nothing changed`); skipped++; continue; }
+    DATA[at0] = c;
+    console.log(`upd  ${c.id.padEnd(14)} fields changed: ${changed.join(', ')}`);
+    updated++;
+    continue;
   }
 
   const after = AFTER[c.id];
@@ -85,9 +104,10 @@ for (const c of list) {
 
 if (fail) { console.error(`\n${fail} failed — nothing written`); process.exit(1); }
 
-if (added) {
+if (added || updated) {
   fs.writeFileSync(file, JSON.stringify(DATA, null, INDENT === null ? undefined : INDENT) + TRAILING_NL);
-  console.log(`\nwrote ${path.relative(process.cwd(), file)} — ${DATA.length} conditions`);
+  console.log(`\nwrote ${path.relative(process.cwd(), file)} — ${DATA.length} conditions` +
+              (updated ? ` (${updated} updated in place)` : ''));
 } else {
   console.log(`\nnothing to do — ${DATA.length} conditions`);
 }

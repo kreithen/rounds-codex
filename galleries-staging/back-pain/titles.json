@@ -1,0 +1,13 @@
+{
+  "_note": "Titles read visually from the subtitle line under the main heading, and page numbers from the 'IMAGE n OF 10' header — never from filenames or arrival order. Read off the screenshots the physician sent on 2026-08-08 (pages 1-5, then 6-10); RE-CHECK against the delivered files before building, because the screenshots were chat-scaled and page 1 carries no subtitle line, so its title is the one taken from the footer IMAGE TITLE field, which has been unreliable in past batches.",
+  "1": "Overview",
+  "2": "Anatomy Overview",
+  "3": "Pathophysiology",
+  "4": "Clinical Presentation",
+  "5": "Physical Examination",
+  "6": "Diagnostic Approach",
+  "7": "Management Overview",
+  "8": "Microscopic Pathology",
+  "9": "Treatment & Management",
+  "10": "Clinical Pearl"
+}
