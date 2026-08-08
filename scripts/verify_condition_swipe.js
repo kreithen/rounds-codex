@@ -12,7 +12,7 @@
  */
 const { chromium } = require(process.env.RC_PW + '/node_modules/playwright-core');
 const { seedAuth } = require('/home/user/rounds-codex/scripts/rc_test_auth.js');
-const PORT = Number(process.env.PORT || 8232);
+const PORT = Number(process.env.PORT || 8233);
 
 // start-id -> the display name a forward swipe should land on.
 // Override with STEPS="fracture=Hip Fracture,hip-fracture=Osteoporosis"
