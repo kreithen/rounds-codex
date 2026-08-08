@@ -1,7 +1,7 @@
 {
-  "_note": "NINE OF TEN PAGES RECEIVED (2026-08-08). Page 2 is missing, and page 3 arrived in two different versions — do NOT build until both are resolved. Titles read visually from the subtitle line under the main heading; page numbers from the 'IMAGE n OF 10' header, never filenames. Re-check against the delivered files: these were read off chat-scaled screenshots. See BATCH-hip-fracture-defects.md.",
-  "_page_2_note": "Page 1's contents list is NOT a safe source for page 2's title — that list skips number 8 and runs one behind the actual pages throughout, so it is itself one of the batch's defects. It implies page 2 is 'Anatomy & Classification', which is plausible but unconfirmed.",
+  "_note": "ALL TEN PAGES RECEIVED (2026-08-08). One thing still blocks a build: page 3 arrived in TWO different versions and the canonical one is unconfirmed. Titles read visually from the subtitle line under the main heading; page numbers from the 'IMAGE n OF 10' header, never filenames. Re-check against the delivered files — these were read off chat-scaled screenshots. Defects in BATCH-hip-fracture-defects.md; note that pages 1-3 came from an older template than 4-9 and page 10 from a third, so a re-render may change these pages.",
   "1": "Overview",
+  "2": "Anatomy",
   "3": "Pathophysiology",
   "4": "Clinical Presentation",
   "5": "Physical Exam",

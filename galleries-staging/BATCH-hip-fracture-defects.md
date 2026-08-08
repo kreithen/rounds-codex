@@ -1,10 +1,9 @@
 # For production: defects in the Hip Fracture batch (2026-08-08)
 
-Received for `hip-fracture` (MSK & Rheum): pages **1, 3, 4, 5, 6, 7, 8, 9, 10** — plus a **second,
-different version of page 3**. **Page 2 is outstanding**, and page 1's contents list says it should
-be "Anatomy & Classification".
+**All ten pages received** for `hip-fracture` (MSK & Rheum) — plus a **second, different version of
+page 3**, which is the one thing still blocking a build.
 
-The artwork is strong and the clinical content is largely excellent. Nine issues below. The first
+The artwork is strong and the clinical content is largely excellent. Ten issues below. The first
 four would ship without anyone noticing, and three of them are the gallery **disagreeing with
 itself** — which matters more than a single wrong value, because a reader flipping through sees both.
 
@@ -13,16 +12,38 @@ counting needs confirming at full resolution.
 
 ---
 
+## The single most useful thing here: the batch is three template generations
+
+With all ten pages in hand the defects stop looking like ten separate slips and line up almost
+perfectly into three groups:
+
+| pages | ICD-10 | progress dots | footer |
+|---|---|---|---|
+| **1, 2, 3** | **M80.00XA** — wrong | wrong: p2 fills the 1st dot, the two p3 versions fill different dots, p1 may carry 11 | collides |
+| **4, 5, 6, 7, 8, 9** | **S72.009A** — correct | **correct** — ten dots, current page filled | collides |
+| **10** | **absent** | cumulative **and** inverted | rendered differently again |
+
+The wrong code and the broken dot rows appear on **exactly the same three pages**. That is very
+unlikely to be coincidence: pages 1–3 look like they were produced from an earlier template than
+4–9, and page 10 from a third.
+
+**So the fix is probably not nine separate corrections.** Re-render pages 1, 2 and 3 from the
+template that produced 4–9, bring page 10 onto it too, and items 1, 5, 6 and 9 below all resolve
+together. The remaining items — the mortality figure, the fasting wording, the 6/7 duplication, the
+duplicate page 3 and the contents list — are content and need editing whichever template is used.
+
+---
+
 ## 1. The ICD-10 code is inconsistent, and page 10 has none at all
 
 | page | code shown |
 |---:|---|
-| 1 | **M80.00XA** |
+| 1, 2 | **M80.00XA** |
 | 3 (both versions) | **M80.00XA** |
 | 4, 5, 6, 7, 8, 9 | **S72.009A** |
 | 10 | **none — the field is absent** |
 
-The app's Hip Fracture page uses **S72.009A**, which is also the majority here, so pages 1 and 3
+The app's Hip Fracture page uses **S72.009A**, which is also the majority here, so pages 1, 2 and 3
 need changing and page 10 needs the field restored.
 
 This is not simply a typo. For a genuine fragility fracture there is a real argument for the M80
@@ -103,7 +124,9 @@ Counted off the forwarded images:
 | pages | dots | fill | verdict |
 |---|---|---|---|
 | 4, 5, 6, 7, 8, 9 | 10 | current page | **correct** |
-| 1, 3 | appear to be **11** | 3rd on one page-3, 4th on the other | check |
+| 2 | 10 | **1st** — one too early | wrong |
+| 3 | — | **3rd** on one version, **4th** on the other | wrong on at least one |
+| 1 | appear to be **11** | 1st | check the count |
 | 10 | 10 | cumulative, inverted | wrong (see §5) |
 
 **Low confidence on pages 1 and 3.** Eleven-versus-ten is precisely the count that cannot be made
@@ -140,6 +163,7 @@ the delivered pages are:
 
 | page | actual title | list expects |
 |---:|---|---|
+| 2 | Anatomy | ① Anatomy & Classification |
 | 3 | Pathophysiology | ② Pathophysiology |
 | 4 | Clinical Presentation | ③ Clinical Presentation |
 | 5 | Physical Exam | ④ Physical Exam |
@@ -182,3 +206,34 @@ renders it differently again, italicised on its own line.
 - One small editorial point, not a defect: page 10's discharge-destination legend describes both
   "Home with Support" and "Inpatient Rehabilitation" as giving the best outcome. One of them should
   probably be phrased differently.
+
+---
+
+## 10. Page 2 labels the same artery twice, and mislabels its parent
+
+The FEMORAL HEAD BLOOD SUPPLY panel carries three vessel labels:
+
+- "Medial femoral circumflex artery"
+- "Deep femoral artery"
+- "Profunda femoris (femoral artery)"
+
+**"Deep femoral artery" and "profunda femoris" are the same vessel** — profunda femoris *is* the deep
+artery of the thigh. So one vessel is labelled twice under two names, as though they were different
+structures. And the parenthesis on the third label conflates it with the **femoral artery**, which is
+a different vessel again: the femoral artery is the parent that gives off the profunda femoris.
+
+The correct chain, which is what the panel is trying to show, is:
+
+> femoral artery → profunda femoris (= deep femoral artery) → medial femoral circumflex artery →
+> retinacular branches → femoral head
+
+So the panel needs three distinct labels — **femoral artery**, **profunda femoris (deep femoral)**,
+and **medial femoral circumflex** — with each leader on its own vessel.
+
+This matters more than a typo would. Page 2 is the page whose job is the retrograde blood supply, and
+that supply is the entire reason a displaced intracapsular fracture gets replaced rather than fixed —
+the point the module, page 3 and page 6 all rest on. A student tracing the vessels here would find one
+of them named twice and the trunk named wrongly.
+
+Everything else on the panel is right: the retinacular vessels run along the neck beneath the capsule,
+flow is retrograde, and disruption raises the avascular necrosis risk. That matches the module exactly.
