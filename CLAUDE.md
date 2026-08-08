@@ -939,9 +939,25 @@ that will be seen outside the app** — they exist so the copy and the decisions
   step one of the copyright checklist and blocks the whole filing until the physician verifies it.
   **™ is free to use today; ® is illegal until registration issues.** Patents are settled — Alice
   §101, don't reopen.
-- `LOGIN-WALL-id-collision.md` — the Supabase login wall took the disclaimer gate's element id, so
-  the first-run medical disclaimer never appears. v1 ships with no login (decided 2026-08-05),
-  which resolves it; until then, any headless test needs `scripts/rc_test_auth.js`.
+- `LOGIN-WALL-id-collision.md` — **RESOLVED in v76 (2026-08-08): the Supabase login wall is gone**
+  (`scripts/remove_login_wall.js`, 12.7 kB removed) and the first-run medical disclaimer appears
+  again. Three things worth keeping from it:
+  - **The collision was one line**: `rcTermsGate()` guards double-insertion with
+    `if(document.getElementById('rc-gate')) return;`, and the wall's static markup was
+    `<div id="rc-gate" class="hidden">`, so the guard always fired.
+  - **The wall was NOT dormant, which the old note missed.** Its `hidden` class was removed at
+    runtime whenever there was no session, so a first-time visitor got a full-screen Supabase
+    sign-in form at z-index 100000 — and **every `/c/<id>` and `/g/<id>` share link sent to anyone
+    not signed in landed on it.** Established by hit-testing the centre of the viewport in a fresh
+    context, not by reading the code. **Test the first run in a genuinely fresh context**; a seeded
+    session hides the entire problem, which is why months of headless runs never saw it.
+  - **`scripts/rc_test_auth.js` is now a no-op** and tests no longer need it. Tests should still
+    click `#rc-gate-ok`, which from v76 is a real disclaimer rather than nothing — before v76 that
+    selector matched nothing and the `if (g)` guard skipped it silently, so those clicks were
+    doing nothing at all.
+  - **Removal is safe only because the disclaimer carries its own `#rc-gate` overlay rule** in a
+    later style block. Had it relied on the wall's inline CSS, removing the wall would have left an
+    unpositioned panel. Check which stylesheet owns a shared id before deleting the other owner.
 
 ## How to work here (set by the user 2026-07-29)
 1. **Auto-execute standard, low-risk actions.** Reading files, benign terminal commands, creating

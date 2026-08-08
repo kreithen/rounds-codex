@@ -1471,3 +1471,39 @@ position, then look at it.**
 Cost: +3 MB total. Matching the original byte count needs quality ~62, visibly degrading pages this
 dense with small labels. **Open decision, not taken here:** standardising all four to the newer
 pipeline's 512×768 would save ~6 MB and halve their linear resolution — a product call.
+
+## v76 — the login wall removed, the disclaimer restored (2026-08-08)
+
+Two problems, one cause. `rcTermsGate()` bails out on
+`if(document.getElementById('rc-gate')) return;` and the login wall's static markup was
+`<div id="rc-gate" class="hidden">`, so the **first-run medical disclaimer was never created**.
+
+**The part that was not in the notes:** the wall was not dormant. Its `hidden` class was stripped at
+runtime whenever there was no session, so a first-time visitor got a full-screen Supabase sign-in
+form — and **every share link sent to anyone not signed in landed on it.** Found by hit-testing the
+viewport centre in a fresh context. A seeded session hid it completely, which is why months of
+headless runs never noticed: `#rc-gate-ok` matched nothing and the `if (g)` guard skipped the click
+in silence.
+
+v1 was decided to ship with no login, so the wall went — 12.7 kB, self-contained, zero references
+from outside, and its one global (`window.rcLogout`) had no callers.
+
+**Safe only because the disclaimer owns its own `#rc-gate` overlay rule** in a later style block. Had
+it depended on the wall's inline CSS, the panel would have come back unpositioned. Check which
+stylesheet owns a shared id before deleting the other owner.
+
+Verified on fresh contexts: disclaimer appears with zero login inputs, taps land inside it, reading
+Terms stays gated, accepting records acceptance and frees the app, a reload does not re-prompt, and
+a shared `/c/chf` link gates a new visitor then lands them on the condition.
+
+### Still open
+
+- **Netlify failed-deploy email — cannot be set from here.** The connector's write surface is
+  visitor access, forms, project name, env vars and project creation; there is no notification
+  operation, and `api.netlify.com` is not reachable from the container. Click-path:
+  **Project configuration → Notifications → Deploy notifications → Add notification → Email
+  notification → event "Deploy failed"**.
+  **And it would not have caught the July outage.** That failure produced *no deploy at all* —
+  Netlify had lost GitHub access — so there was no failed build to notify about. Only the one
+  manually triggered build would have alerted. Detecting "no deploy ran" needs a check on
+  `/version.txt`, not a failed-deploy hook.
