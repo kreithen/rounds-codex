@@ -1,5 +1,17 @@
 # The login wall took the disclaimer gate's id — the medical disclaimer no longer appears
 
+> **RESOLVED. Removed in v76, then RESTORED in v82 (2026-08-08) with the collision fixed.**
+> The wall is now `#rc-authgate`, so `rcTermsGate()`'s guard no longer fires and both gates work.
+> Share routes (`/c/ /s/ /g/ /r/ /u/ /x/`) bypass the wall — the old one blocked them all silently,
+> which is what made removal worth doing. Sign-in comes first on the app root because the wall is
+> `z-index:100000` against the disclaimer's `9999`; on a share link the disclaimer is the gate.
+> Built by `scripts/restore_login_wall.js`. Accounts are invite-only, which still needs
+> "Allow new users to sign up" turned OFF in the Supabase dashboard.
+>
+> Keep reading for the original diagnosis — the mechanism is worth knowing, and one line below is
+> now wrong: `scripts/rc_test_auth.js` was never reduced to a no-op. It seeds a session, all six
+> verify scripts call it, and the suite needed no changes when the wall returned.
+
 Found 2026-08-04 while verifying the three new Psychiatry galleries. **Not fixed** — the fix is one
 word, but it is inside the login wall, and sign-in cannot be tested from a cloud session.
 

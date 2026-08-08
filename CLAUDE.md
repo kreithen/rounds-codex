@@ -986,25 +986,40 @@ that will be seen outside the app** — they exist so the copy and the decisions
   step one of the copyright checklist and blocks the whole filing until the physician verifies it.
   **™ is free to use today; ® is illegal until registration issues.** Patents are settled — Alice
   §101, don't reopen.
-- `LOGIN-WALL-id-collision.md` — **RESOLVED in v76 (2026-08-08): the Supabase login wall is gone**
-  (`scripts/remove_login_wall.js`, 12.7 kB removed) and the first-run medical disclaimer appears
-  again. Three things worth keeping from it:
-  - **The collision was one line**: `rcTermsGate()` guards double-insertion with
+- `LOGIN-WALL-id-collision.md` — **the wall was removed in v76 and RESTORED in v82 (2026-08-08) at
+  the physician's request** (`scripts/restore_login_wall.js`, +175 lines). Three decisions shape it,
+  and they are the physician's, not defaults:
+  - **Share links stay OPEN.** `/c/`, `/s/`, `/g/`, `/r/`, `/u/`, `/x/` return before the wall reads
+    any session (`RC_OPEN_ROUTES`). **The v76 removal happened because the old wall blocked every one
+    of them silently** — a `/c/<id>` link sent to anyone not signed in landed on a sign-in form. An
+    auth hash still wins, so invite and recovery links work from any path. **Keep `RC_OPEN_ROUTES` in
+    step with the `RC_ROOT` regex** — a new one-segment route must be added to both.
+  - **Invite-only.** The wall has no self-signup form and already handles `hp.type==='invite'`, so the
+    app needed no change. What it needs is **"Allow new users to sign up" OFF in the Supabase
+    dashboard** — there is no MCP tool for auth config, so that is the physician's step and the app
+    cannot enforce it. Project `emdrmxscgmnfxgvimbqn` is ACTIVE_HEALTHY; check `auth.users` before
+    shipping a wall, or you can lock everyone out (12 users / 9 confirmed as of v82).
+  - **Sign-in, then the disclaimer — which needed no ordering code.** The wall is `z-index:100000`,
+    the disclaimer `9999`, so the wall covers it and `pass()` reveals it. Read that off both
+    stylesheets rather than assuming it.
+  - **The id collision is the thing to never repeat.** `rcTermsGate()` bails on
     `if(document.getElementById('rc-gate')) return;`, and the wall's static markup was
-    `<div id="rc-gate" class="hidden">`, so the guard always fired.
-  - **The wall was NOT dormant, which the old note missed.** Its `hidden` class was removed at
-    runtime whenever there was no session, so a first-time visitor got a full-screen Supabase
-    sign-in form at z-index 100000 — and **every `/c/<id>` and `/g/<id>` share link sent to anyone
-    not signed in landed on it.** Established by hit-testing the centre of the viewport in a fresh
-    context, not by reading the code. **Test the first run in a genuinely fresh context**; a seeded
-    session hides the entire problem, which is why months of headless runs never saw it.
-  - **`scripts/rc_test_auth.js` is now a no-op** and tests no longer need it. Tests should still
-    click `#rc-gate-ok`, which from v76 is a real disclaimer rather than nothing — before v76 that
-    selector matched nothing and the `if (g)` guard skipped it silently, so those clicks were
-    doing nothing at all.
-  - **Removal is safe only because the disclaimer carries its own `#rc-gate` overlay rule** in a
-    later style block. Had it relied on the wall's inline CSS, removing the wall would have left an
-    unpositioned panel. Check which stylesheet owns a shared id before deleting the other owner.
+    `<div id="rc-gate" class="hidden">`, so the guard fired on every visit and **the medical
+    disclaimer was never built, for anyone, for days.** The wall is now `#rc-authgate`. Before
+    deleting or adding either overlay, check which stylesheet owns a shared id.
+  - **On a share link the DISCLAIMER is the gate**, since the wall never shows there. That is
+    deliberate: the alternative is serving clinical content to someone who has accepted nothing.
+  - **`scripts/rc_test_auth.js` is NOT a no-op — an earlier note here said so and was wrong.** It
+    seeds `rc.app.session.v1` with a future `expires_at`, which makes the wall call `pass()` with no
+    network request, and **all six verify scripts already call it**, so the suite survived the wall
+    coming back untouched. It was merely inert while no wall existed.
+  - **Test the first run in a genuinely fresh context, and HIT-TEST the viewport centre.** A seeded
+    session hides this entire class of bug, which is why months of headless runs never saw the wall
+    eating every tap. `elementFromPoint(innerWidth/2, innerHeight/2)` is what proved it.
+  - **Locating the removed block: anchor on its first and last line, not on the diff's removed
+    lines.** git kept a blank line inside the region as context, so matching the 166 removed lines as
+    one contiguous run fails at offset 113. Then assert the result is a pure insertion — every line
+    of the shipped file surviving in order.
 
 ## How to work here (set by the user 2026-07-29)
 1. **Auto-execute standard, low-risk actions.** Reading files, benign terminal commands, creating
