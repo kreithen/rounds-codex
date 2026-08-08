@@ -16,6 +16,22 @@ delivered artwork — it was attempted once and produced visibly damaged pages.
 > below** (§R1–§R3). All three came from reading downscaled phone screenshots; each is marked so nobody
 > works from the withdrawn version.
 
+
+> ## ✅ FIXED IN THE APP AS OF v81 (2026-08-08) — but the TEMPLATE still needs these
+>
+> Two items below were corrected in the shipped pages by transplanting glyphs that already existed
+> in this same batch (same size, same font, same renderer — nothing invented). **Your re-render will
+> overwrite them, which is correct — please still fix them at source:**
+>
+> - **H1** — pages 1, 2, 3 now read **S72.009A**, lifted from page 4's own ICD line.
+> - **H3** — page 10 now reads **15%–30%** one-year mortality, using the "15" from the readmission
+>   stat on the same page.
+>
+> Everything else stands. **Explicitly NOT fixed and not fixable this way:** page 10's absent ICD-10
+> field (adding a row where the template has none is inventing layout), page 10's cumulative and
+> inverted dot row (the documented repainting failure), and the discharge-destination chart, which
+> needs a source rather than a pixel edit.
+
 ---
 
 # Part 1 — Retractions
