@@ -568,6 +568,19 @@ no backend. This file is context for future sessions — read it before starting
     the answer is not.
 
 ## Build pipelines
+- **Galleries from PASTED pages — the normal route (`medcodex-gallery-paste` skill).** Use this
+  whenever the physician pastes gallery pages into chat, which is how *every* gallery has arrived.
+  Step 1 is always `python3 scripts/ingest_pasted_gallery.py --hours 30` — the pastes are in
+  `/root/.claude/uploads/<session-id>/` at **full resolution**, and the skill exists because a whole
+  session was spent asking for files that were already there. The skill carries the QA checklist
+  (every item from a real batch), the verify commands, the deploy-and-prove sequence, and the
+  standing rules: never repaint artwork, never point `thumb` at `file`, one page size per gallery,
+  commit the masters, and read the app's own module and quiz against the pages.
+  `ingest_pasted_gallery.py` dedupes by hash, OCRs each page's own `IMAGE n OF 10` header and footer
+  title, and **refuses to stage a set with a missing page or an unresolved duplicate**. Its
+  attribution threshold is strict and allowed to FAIL: with two similar galleries in one paste
+  window, back-pain p6 scored 0.73 against "Hip Fracture" while hip-fracture p10 scored 0.55, so no
+  threshold separates them — leftovers go to `--pick`, and do not widen the cut to hide them.
 - **Galleries from loose images** (`scripts/add_gallery.js` + `scripts/gen_thumbs.py`): when a
   gallery arrives as ten images rather than a production PDF. Titles must be read off the pages
   visually — the footer's title field is unreliable. `scripts/fix_page_logo.py` replaces a wrong
