@@ -1,0 +1,46 @@
+PAGE hypothyroid 2 WRONG 17 7
+  WRONG "Parafollicular (C) cell" -> lands on: a dot inside the pink colloid at the centre of the follicle | expected: the green cell sitting outside the follicular epithelium at lower right
+  WRONG "Capillary" -> lands on: the green parafollicular C cell (the structure the label above it names) | expected: the red capillary vessels below and left of the follicle
+  WRONG "Isthmus" -> lands on: the lateral border of the left lobe, about 40px above and 60px lateral to the isthmus | expected: the midline band of gland bridging the two lobes across the trachea
+  WRONG "Trachea" -> lands on: the carotid/vagus vascular bundle lateral to the gland (a red artery) | expected: the ringed grey midline tube ~55px medial
+  WRONG "Cricoid cartilage" -> lands on: the upper pole of the RIGHT thyroid lobe, at thyroid-cartilage level | expected: the grey ring immediately below the thyroid cartilage
+  SUSPECT "Hyoid bone" -> lands on: a dot in lateral neck soft tissue/vessels above the thyroid cartilage; no hyoid bone is drawn anywhere on the page | expected: a bone above the thyroid cartilage
+  SUSPECT "Inferior thyroid artery and vein" -> lands on: plain right-lobe parenchyma; nearest artery/vein ~30px further lateral | expected: the inferior thyroid vessels at the lower pole
+PAGE influenza 2 WRONG 23 6
+  WRONG "Oral cavity" -> lands on: the nostril / nasal vestibule at the tip of the nose | expected: the mouth cavity below the hard palate (the Pharynx leader already reaches past it to the oropharynx)
+  WRONG "Neuraminidase (N)" -> lands on: black space immediately above a PURPLE spike, the same spike type "Hemagglutinin (H)" points at; the distinct olive-green spikes are left unlabelled | expected: the olive-green spike type
+  WRONG "Goblet cell" -> lands on: the purple nucleus inside a pink ciliated columnar cell (the cell type labelled one line above) | expected: one of the green mucus-filled cells
+  SUSPECT "Primary bronchi" -> lands on: a segmental bronchus deep inside the right lung field, about two generations distal to the main bronchus | expected: the large ringed tube just off the carina
+  SUSPECT "M2 Ion Channel" -> lands on: the envelope margin among purple spikes, with no distinct channel structure at the endpoint | expected: one of the small red/dark membrane structures
+  SUSPECT "Basement membrane" -> lands on: a second leader from this label ends in the capillary lumen ~12px below the tan membrane band | expected: only the dogleg leader (which does land correctly on the membrane) should be there
+PAGE iron-anemia 2 WRONG 12 4
+  WRONG "JEJUNUM" -> lands on: the haustrated large bowel - both of its two leader dots sit on the ascending colon / hepatic flexure, one on the taenia | expected: the smooth coiled small-bowel loops in the centre of the abdomen
+  WRONG "ILEUM" -> lands on: the medial border of the ascending colon, directly on the taenia coli, at a clearly haustrated segment | expected: the distal small-bowel loops in the right lower quadrant
+  SUSPECT "Hemosiderin (insoluble) stores excess iron" -> lands on: the bottom edge of the SAME purple ferritin particle that the Ferritin label points at; no separate hemosiderin aggregate is drawn | expected: a distinct hemosiderin deposit
+  SUSPECT "Fe3+ bound to transferrin" -> lands on: the blue transferrin lobe at the bottom of the complex, ~40px below either orange Fe3+ sphere | expected: one of the orange iron spheres
+PAGE labor 2 WRONG 16 8
+  WRONG "Vagina" -> lands on: the inside of the RECTUM (the folded canal that is continuous with the anus at the bottom of the same figure) | expected: the canal running from the cervix down to the perineum, anterior to the rectum
+  WRONG "Rectum" -> lands on: the lower sacrum / coccyx bone, posterior to the rectal wall | expected: the folded canal ~30px anterior
+  WRONG "Sacrum" -> lands on: the posterior elements (lamina / spinous process) of an upper LUMBAR vertebra, ~115px above the sacral promontory | expected: the fused triangular bone behind the rectum
+  WRONG "Bladder" -> lands on: the cream trabecular pubic bone (cortical rim + marrow, with the symphysis joint visible below it) | expected: the folded dark-red hollow organ immediately posterior to the pubis
+  WRONG "Umbilical cord" -> lands on: dark-red placental tissue, ~30px from the coiled blue/red cord | expected: the coiled cord
+  WRONG "Cervix" -> lands on: the anterior lower-uterine-segment wall / amniotic membrane, ~70px anterior to the cervical lips | expected: the thick lips of tissue gripping the fetal head above the vagina
+  WRONG "Endometrium (inner lining)" -> lands on: the outer convex surface of the uterine globe, ~55px lateral to the cut edge where the lining is drawn | expected: the pale inner lining at the cut edge
+  SUSPECT "Myometrium (muscle layer)" -> lands on: the same outer convex surface that the Perimetrium arrow points at, just higher up | expected: the thick middle layer of the wall at the cut edge
+PAGE leukemia 2 WRONG 16 6
+  WRONG "Sternum" -> lands on: the humeral head / shoulder joint on the figure's left | expected: the pale vertical midline bone in the front of the chest
+  WRONG "Vertebrae" -> lands on: a lower rib on the figure's left, ~30px lateral to the spine | expected: the red vertebral column in the midline
+  WRONG "Endosteum (stem cell niche)" -> lands on: a blue-grey sinusoidal vessel on the far right of the inset, ~100px from the bone | expected: the marrow-facing surface of the tan bone at the left edge of the inset
+  WRONG "Adipocyte (fat cell)" -> lands on: the lumen of the large red blood vessel (red cells visible inside it). A second, orphan line segment does end on a golden fat cell but connects to no label | expected: one of the golden fat spheres
+  WRONG "Epiphyseal line" -> lands on: red marrow just inside the cortex, in the mid-diaphysis, ~90px below the head/neck junction | expected: the growth-plate line at the epiphysis/metaphysis junction (none is clearly drawn)
+  SUSPECT "Hematopoietic stem cell (HSC)" -> lands on: a small beige/cream cell | expected: probably the large lavender cell 100px to its left, which matches the purple HSC colour used in the Hematopoiesis and Niche panels on the same page
+PAGE lung-cancer 2 WRONG 14 7
+  WRONG "Right main bronchus" -> lands on: a fine peripheral bronchus high in the right upper lobe; the ringed main bronchus at that x is ~80px lower | expected: the large ringed tube running down-left from the carina
+  WRONG "Left main bronchus" -> lands on: a fine peripheral bronchus high in the left upper lobe, mirror-image of the right | expected: the large ringed tube running down-right from the carina
+  SUSPECT "Lobar bronchi" -> lands on: a small branch in the upper left lung, distal to the lobar divisions
+  SUSPECT "Segmental bronchi" -> lands on: the fine parenchymal network ~20px lateral to the nearest ringed segmental bronchus
+  SUSPECT "Pulmonary artery (to lungs)" -> lands on: a pale-pink peripheral vessel of the parenchymal network; the dark navy vessels (which match this label's blue bullet) run ~13px to its left
+  SUSPECT "Brachial plexus" / "Subclavian artery" -> the two leaders converge on ONE shared orange arrowhead, so at most one of them can be pointing at its own structure; the arrowhead lands on the red band above the subclavian vein rather than on the cream nerve cords just left of it
+  SUSPECT "1st rib" -> arrow tip lands on the pale strand / vessel bundle running vertically behind the subclavian vessels; no rib is resolvable at the endpoint (the ribs are the tan arcs above and to the right). Panel is small and 800px wide - low confidence
+PAGE lupus 2 SUSPECT 7 1
+  SUSPECT "BLOOD & VESSELS" -> lands on: the lateral soft-tissue edge of the upper arm, just outside the humerus | expected: one of the blue/red vessels drawn ~30px medial to it in the same arm
