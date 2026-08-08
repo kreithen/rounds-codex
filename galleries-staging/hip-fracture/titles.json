@@ -1,0 +1,15 @@
+{
+  "_note": "INCOMPLETE — only pages 1, 3, 4 and 5 have been received (2026-08-08), and page 3 arrived in two different versions. Titles read visually from the subtitle line under the main heading, page numbers from the 'IMAGE n OF 10' header. Do NOT build from this until 2, 6, 7, 8, 9 and 10 arrive and the canonical page 3 is confirmed. Page 1's own contents list is unreliable as a source for the missing titles: it skips number 8 and runs one behind the actual page numbers — see BATCH-hip-fracture-defects.md.",
+  "1": "Overview",
+  "3": "Pathophysiology",
+  "4": "Clinical Presentation",
+  "5": "Physical Exam",
+  "_expected_from_page_1_contents_list_UNVERIFIED": {
+    "2": "Anatomy & Classification",
+    "6": "Diagnostic Workup",
+    "7": "Imaging",
+    "8": "unknown — the contents list skips 8",
+    "9": "Treatment & Management",
+    "10": "Complications & Prognosis / Clinical Pearls — the list has two items for one slot"
+  }
+}
