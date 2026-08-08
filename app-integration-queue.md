@@ -1446,3 +1446,28 @@ untouched and independent — a shared link still opens, verified — and `rcSyn
 
 Checked and left alone: the "Expert Curated Images" line wraps to two lines at 390 and 430px.
 Measured on both builds — identical before and after, so pre-existing.
+
+## v75 — four gallery PDFs rebuilt (2026-08-08)
+
+Reported from an iPhone: the pages inside the downloaded Cardiac Arrest gallery had the old
+crosshair logo, while the app itself showed the canonical ℞ lockup.
+
+**The download PDF is a build artifact.** It is generated once when the gallery is built;
+`fix_page_logo.py` later repainted the lockup on the page **JPGs** and nothing regenerated the
+PDFs. The viewer reads JPGs, the download reads the PDF, and they drifted.
+
+**Four galleries: `aortic-dissection`, `cardiac-arrest`, `dvt`, `pad`.** Two independent signals
+agree on that exact set — a per-page logo comparison across all 1,000 pages of all 100 galleries,
+and the fact that these four are the only PDFs with **900×1350** pages, a geometry the later
+pipeline never used. Rebuilt with `scripts/rebuild_gallery_pdf.py`.
+
+**Three wrong measurements first, each credible.** 91 of 100 (fixed pixel crop against differing
+image sizes → compared the wrong region); then 88 (fractional crops, but a 512px PDF page differs
+from a 1024px source by blur alone); then 4, from downscaling the source to the PDF's size — except
+two of those four had the right logo merely *shifted*, which a plain diff cannot distinguish from
+different artwork. The final check minimises over small translations. **Control for size, then
+position, then look at it.**
+
+Cost: +3 MB total. Matching the original byte count needs quality ~62, visibly degrading pages this
+dense with small labels. **Open decision, not taken here:** standardising all four to the newer
+pipeline's 512×768 would save ~6 MB and halve their linear resolution — a product call.

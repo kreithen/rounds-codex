@@ -412,6 +412,31 @@ no backend. This file is context for future sessions — read it before starting
   mouse-driven swipe test measures the cancel path, not the swipe path.
   `verify_gallery_gestures.js` drives real touch over CDP. Both suites were run against
   `origin/main` first and fail there.
+- **The download PDF is a BUILD ARTIFACT and goes stale.** Reported 2026-08-08: the downloaded
+  Cardiac Arrest pages carried the old crosshair logo while the app showed the canonical ℞ lockup.
+  The PDF is generated once when the gallery is built; `fix_page_logo.py` later repaints the lockup
+  on the page **JPGs** and nothing regenerates the PDF. The viewer reads the JPGs, the download
+  reads the PDF, and they drift. **Re-run `scripts/rebuild_gallery_pdf.py <root> <id>` after any
+  change to a gallery's pages** — logo repaints, page re-renders, re-sends.
+  - **Four galleries were affected: `aortic-dissection`, `cardiac-arrest`, `dvt`, `pad`** — fixed in
+    v75. They are exactly the four whose PDF pages are **900×1350**, a geometry the later pipeline
+    never used, so **PDF page size is a cheap tell for which generation built it**. `pad`'s PDF was
+    larger than its current pages (900 vs 804), which alone proves it was not built from them.
+  - **Rebuild rules:** page order from `galleries.json`'s `images` array, never a directory glob
+    (every batch has arrived shuffled); embedded width = min(existing PDF width, source width), so
+    nothing is upscaled and only the logo changes.
+  - **No new filename needed, unlike a re-recorded MP3** — `_headers` marks only `/assets/audio/*`
+    immutable, so a rebuilt PDF at the same path is revalidated. Check `_headers` before assuming
+    the audio rule generalises.
+  - **My measurement was wrong three times before it was right, and each wrong answer looked
+    credible.** First pass: 91 of 100 — it cropped a fixed pixel box from images of different sizes,
+    so it compared different parts of the page. Second, with fractional crops: 88 — still confounded,
+    because a 512px PDF page differs from a 1024px source page by resampling blur alone. Third,
+    downscaling the source to the PDF's exact size: a clean gap at 4.7 → 20, four galleries flagged —
+    but two of those four had the correct logo merely **shifted**, which no plain diff can separate
+    from different artwork. The final check **minimises the difference over small translations**.
+    The true answer was 4. **When comparing two renderings of the same artwork, control for size,
+    then for position, then look at it by eye** — and state the number only after that.
 - **Source artwork ships at 1024x1536** (2:3 portrait), JPEG q88 (~440 kB/page). The old
   pipeline downscaled to 800x1200, below what a Pro Max screen shows the viewer at.
   **1024x1536 is the standard — decided 2026-07-29.** Production has started sending some pages
