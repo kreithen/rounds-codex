@@ -1,266 +1,266 @@
 [
-{
-  "id": "hip-fracture",
-  "name": "Hip Fracture",
-  "category": "MSK & Rheum",
-  "icd10": "S72.009A",
-  "tagline": "A proximal femur fracture — usually a low-energy fall in an older adult with weak bone, where the fracture is the visible half of the problem and the frailty behind it is the other.",
-  "whatItIs": [
-    "A break of the <b>proximal femur</b>, grouped by where it sits relative to the joint capsule: <b>femoral neck</b> (intracapsular), <b>intertrochanteric</b> and <b>subtrochanteric</b> (both extracapsular). That one distinction drives blood supply, fixation choice and complications.",
-    "The femoral head is fed retrograde by <b>retinacular branches of the medial femoral circumflex artery</b> running up the neck. An <b>intracapsular</b> fracture can tear them, which is why displaced neck fractures risk <b>avascular necrosis and nonunion</b> and are often replaced rather than fixed.",
-    "Mechanism is usually a <b>low-energy fall from standing height</b> onto weakened bone — a <b>fragility fracture</b>, and by definition osteoporosis until proven otherwise. High-energy hip fractures in the young are a different injury with different priorities.",
-    "It behaves as a <b>sentinel event</b>, not an isolated injury: roughly <b>20–30% die within a year</b>, many never regain their prior mobility or independence, and the fracture itself predicts the next one."
-  ],
-  "diagnosis": [
-    "History: the fall and <b>why</b> it happened — mechanical trip versus syncope, arrhythmia, hypoglycemia, sepsis, or a medication. A fall with no adequate mechanism is a workup, not just a fracture.",
-    "Exam: groin or lateral hip pain, <b>inability to bear weight</b>, and in a displaced fracture a <b>shortened, externally rotated</b> leg. Pain on gentle axial load or log-roll is sensitive. Document distal pulses and sensation.",
-    "First imaging: <b>AP pelvis plus a cross-table lateral</b> of the affected hip. Compare the two sides — a subtle break in the trabecular pattern or a step in the femoral neck cortex is easy to miss.",
-    "<b>A normal radiograph does not exclude it.</b> If the patient cannot bear weight and the films look clean, get <b>MRI</b> (or CT if MRI is unavailable) for an occult or nondisplaced fracture.",
-    "Classify to plan surgery: <b>Garden I–IV</b> for femoral neck (I–II nondisplaced, III–IV displaced), and stable versus unstable for intertrochanteric patterns.",
-    "Preoperative workup is for <b>fitness and cause</b>, not delay: CBC, chemistry, type and screen, ECG. Also send <b>calcium, vitamin D and TSH</b> — the osteoporosis assessment starts now, not at discharge."
-  ],
-  "meds": [
-    {
-      "drug": "Regional block (fascia iliaca or femoral nerve)",
-      "use": "Preoperative analgesia, ideally within hours of arrival",
-      "note": "Better pain control with far less opioid — which is the point in a patient at high delirium risk"
-    },
-    {
-      "drug": "Acetaminophen (scheduled, not as needed)",
-      "use": "Multimodal analgesia backbone",
-      "note": "Scheduling it reduces total opioid dose; check the total daily dose against any combination products"
-    },
-    {
-      "drug": "Opioids (low-dose oxycodone, hydromorphone)",
-      "use": "Breakthrough pain only, at reduced geriatric doses",
-      "note": "Undertreated pain also causes delirium — the goal is the least opioid that allows movement, not none"
-    },
-    {
-      "drug": "Enoxaparin or LMWH",
-      "use": "VTE prophylaxis, continued 28–35 days after surgery",
-      "note": "Hip fracture surgery carries one of the highest VTE risks in orthopedics"
-    },
-    {
-      "drug": "Cefazolin",
-      "use": "Surgical prophylaxis within 60 minutes of incision",
-      "note": "Redose for long cases or major blood loss"
-    },
-    {
-      "drug": "Zoledronic acid 5 mg IV annually",
-      "use": "Secondary fracture prevention, started after surgical repair",
-      "note": "HORIZON-RFT: fewer new clinical fractures and lower all-cause mortality; give vitamin D first and correct hypocalcemia"
-    },
-    {
-      "drug": "Vitamin D and calcium",
-      "use": "Replete before and alongside antiresorptive therapy",
-      "note": "Starting a bisphosphonate into vitamin D deficiency risks symptomatic hypocalcemia"
-    }
-  ],
-  "nursing": [
-    "<b>Pain control is delirium prevention.</b> Advocate early for a regional block, give scheduled acetaminophen, and reassess after movement rather than only at rest.",
-    "<b>Screen for delirium every shift</b> with a validated tool. Watch for the quiet, hypoactive form — it is missed far more often than agitation and carries the worse prognosis.",
-    "Protect the skin from the moment of arrival. These patients lie still on a hard surface in the emergency department for hours; <b>heel and sacral pressure injuries begin there</b>, not on the ward.",
-    "Do not apply skin traction — it does not improve pain or outcomes. Position for comfort with the leg supported.",
-    "<b>Get them up the day after surgery</b> unless the surgeon has restricted weight bearing. Early mobilization drives fewer pneumonias, fewer clots and better function.",
-    "Guard sleep, bowels, hydration and hearing aids and glasses. These unglamorous items are the substance of delirium prevention.",
-    "Before discharge: confirm someone owns the <b>osteoporosis treatment</b> and the <b>falls assessment</b>. Both are commonly assumed to be someone else's job and then done by nobody."
-  ],
-  "medStudent": [
-    "Anchor everything on <b>intracapsular versus extracapsular</b>. Intracapsular threatens the femoral head's blood supply; extracapsular does not, which is why the operations differ.",
-    "The usual plan: <b>nondisplaced neck</b> → internal fixation; <b>displaced neck in an older adult</b> → arthroplasty; <b>intertrochanteric</b> → cephalomedullary nail or sliding hip screw. Hemiarthroplasty versus total hip turns on prior function and activity.",
-    "<b>Operate early — generally within 24–48 hours.</b> Delay beyond that tracks with more complications; the argument is about how early helps, not whether waiting hurts.",
-    "<b>Spinal and general anesthesia give similar outcomes.</b> REGAIN found no meaningful difference in death, ambulation or delirium, so the choice is individualized rather than dogmatic.",
-    "Answer the question the fracture asks: <b>why did they fall?</b> Cardiac, neurologic, infectious and iatrogenic causes all present as a hip fracture in an older adult.",
-    "Know the atypical fracture: a patient on long-term bisphosphonates with <b>prodromal thigh pain</b> and a <b>transverse subtrochanteric or diaphyseal</b> fracture. Image the other femur too."
-  ],
-  "flow": [
-    {
-      "stage": "Presentation",
-      "title": "Fall, then can't stand",
-      "desc": "Older adult after a low-energy fall; groin or hip pain, unable to weight-bear, leg often shortened and externally rotated."
-    },
-    {
-      "stage": "Workup",
-      "title": "AP pelvis and lateral — then MRI if clean",
-      "desc": "Radiographs first; MRI for the patient who cannot bear weight despite normal films. Simultaneously work out why they fell."
-    },
-    {
-      "stage": "Optimization",
-      "title": "Block, not traction",
-      "desc": "Regional block and multimodal analgesia, fluids, review anticoagulants, ortho-geriatric co-management. Optimize in hours, not days."
-    },
-    {
-      "stage": "Definitive",
-      "title": "Fix or replace, within 24–48 hours",
-      "desc": "Fixation for nondisplaced neck and intertrochanteric patterns; arthroplasty for the displaced neck fracture in an older adult."
-    },
-    {
-      "stage": "Recovery",
-      "title": "Walk, and treat the bone",
-      "desc": "Mobilize day one, VTE prophylaxis, delirium prevention, then osteoporosis therapy and a falls assessment before discharge."
-    }
-  ],
-  "redFlags": [
-    "<b>Cannot bear weight but the X-ray is normal</b> — occult fracture. Get MRI; discharging as a soft-tissue strain risks displacement.",
-    "<b>Subtrochanteric fracture with hemodynamic instability</b> — the thigh conceals liters. Resuscitate and check for other injuries.",
-    "<b>Any open wound over the fracture</b> — antibiotics, tetanus and urgent debridement; this is no longer an elective-timing problem.",
-    "<b>A fall with no adequate mechanism</b>, especially with syncope, chest pain or new confusion — the fracture may be the least dangerous finding.",
-    "<b>Prodromal thigh pain in a long-term bisphosphonate user</b> — atypical femoral fracture. A transverse subtrochanteric break with a medial spike is the picture."
-  ],
-  "pearls": [
-    "<b>A hip fracture is osteoporosis until proven otherwise</b> — and the majority of patients still leave without treatment for it. Being the person who starts it is genuinely high-value.",
-    "<b>Zoledronic acid after hip fracture repair reduced all-cause mortality</b>, not only refracture — an unusual finding for a bone drug, and worth knowing why it is quoted.",
-    "<b>One-year mortality is roughly 20–30%.</b> Treat the diagnosis with the seriousness that number deserves, however routine the operation is.",
-    "The <b>displaced femoral neck</b> fracture is replaced rather than fixed because of anatomy, not surgeon preference — the retinacular blood supply is already torn.",
-    "<b>Traction has no role.</b> It persists by habit; the evidence does not support it.",
-    "The best predictor of walking again is <b>how they walked before</b>. Ask, and record it — it sets the goal for the whole admission."
-  ],
-  "impress": [
-    "Present it as a geriatric syndrome with a fracture attached: 'low-energy mechanism, so this is a fragility fracture — I want to know why she fell, and she needs osteoporosis therapy before discharge.'",
-    "Name the classification and what follows from it: 'Garden IV, so displaced and intracapsular — the head's blood supply is likely gone, which is why we are replacing rather than fixing it.'",
-    "Ask for the block early. Requesting a fascia iliaca block in the emergency department reads as understanding that analgesia here is delirium prevention.",
-    "Quote the timing target and the reason: surgery within 24–48 hours, because delay tracks with pneumonia, delirium and pressure injury.",
-    "Close the loop nobody closes: 'who is starting the bisphosphonate, and who is doing the falls assessment?' That question is the difference between treating a fracture and treating a patient."
-  ],
-  "refs": [
-    "AAOS Clinical Practice Guideline — Management of Hip Fractures in Older Adults (2021)",
-    "NICE Guideline CG124 — Hip Fracture: Management (updated 2023)",
-    "Lyles KW et al. Zoledronic Acid and Clinical Fractures and Mortality after Hip Fracture (HORIZON-RFT). N Engl J Med 2007;357:1799",
-    "Neuman MD et al. Spinal Anesthesia or General Anesthesia for Hip Surgery in Older Adults (REGAIN). N Engl J Med 2021;385:2025",
-    "HEALTH Investigators. Total Hip Arthroplasty or Hemiarthroplasty for Hip Fracture. N Engl J Med 2019;381:2199"
-  ],
-  "verified": false
-},
-{
-  "id": "back-pain",
-  "name": "Low Back Pain",
-  "category": "MSK & Rheum",
-  "icd10": "M54.50",
-  "tagline": "The most common musculoskeletal complaint in medicine — where the diagnosis is usually nonspecific, most of the skill is in excluding the few dangerous causes, and imaging early makes outcomes worse rather than better.",
-  "whatItIs": [
-    "Pain between the lower rib margin and the gluteal folds. In roughly <b>85–90%</b> no specific pathoanatomic cause is identifiable, and the honest label is <b>nonspecific low back pain</b>.",
-    "Timed by duration: <b>acute</b> under 4 weeks, <b>subacute</b> 4–12 weeks, <b>chronic</b> beyond 12. Most acute episodes improve substantially within about 6 weeks whatever is done.",
-    "Four buckets worth separating: <b>mechanical/nonspecific</b>; <b>radicular</b> (sciatica from disc herniation, usually L4–S1); <b>spinal stenosis</b> (neurogenic claudication, eased by sitting or leaning forward); and <b>serious/systemic</b> — fracture, malignancy, infection, cauda equina, inflammatory disease, or referred pain from an aneurysm or viscus.",
-    "Degenerative findings on imaging are <b>near-universal with age and correlate poorly with pain</b>. Disc degeneration, bulges and facet arthrosis are common in people with no symptoms at all, which is why a scan often adds a label rather than an answer."
-  ],
-  "diagnosis": [
-    "This is a <b>red-flag screen first</b>, not an imaging decision. Ask about bladder and bowel function, saddle sensation, progressive weakness, fever, weight loss, cancer history, steroid use, IV drug use, and trauma.",
-    "Characterize the pain: axial versus radiating below the knee, what eases it (<b>flexion easing pain suggests stenosis</b>), and whether it is worse at night or at rest.",
-    "Exam: gait, spine tenderness, straight-leg raise, and a focused neurologic exam — <b>L4</b> (knee extension, medial foot), <b>L5</b> (dorsiflexion, great toe, dorsum), <b>S1</b> (plantarflexion, ankle reflex, lateral foot). Check perianal sensation and tone if cauda equina is a consideration.",
-    "<b>Do not image nonspecific low back pain in the first 6 weeks without red flags.</b> It does not improve outcomes and leads to more procedures. This is one of the most consistent recommendations in the field.",
-    "When you do image: <b>MRI</b> for suspected cauda equina, infection, malignancy or progressive deficit — urgently. Plain films for suspected compression fracture; ESR/CRP and blood cultures when infection is in play.",
-    "Consider <b>axial spondyloarthritis</b> in the young patient whose back pain is inflammatory: onset before 45, morning stiffness over 30 minutes, pain in the second half of the night, and <b>improvement with exercise rather than rest</b>."
-  ],
-  "meds": [
-    {
-      "drug": "NSAIDs (ibuprofen, naproxen)",
-      "use": "First-line pharmacotherapy for acute and chronic nonspecific pain",
-      "note": "Modest effect sizes; use the lowest effective dose and check renal, GI and cardiovascular risk"
-    },
-    {
-      "drug": "Skeletal muscle relaxants (cyclobenzaprine, methocarbamol)",
-      "use": "Short courses in acute pain with spasm",
-      "note": "Sedation and anticholinergic effects limit use, particularly in older adults"
-    },
-    {
-      "drug": "Acetaminophen",
-      "use": "Adjunct, and an option when NSAIDs are contraindicated",
-      "note": "The PACE trial found no benefit over placebo for acute low back pain — reasonable to try, but do not promise much"
-    },
-    {
-      "drug": "Duloxetine",
-      "use": "Chronic low back pain, especially with comorbid depression",
-      "note": "One of the few medications with evidence in chronic rather than acute pain"
-    },
-    {
-      "drug": "Gabapentin / pregabalin",
-      "use": "Not recommended for sciatica",
-      "note": "Pregabalin did not reduce sciatica pain in a randomized trial and caused more adverse events"
-    },
-    {
-      "drug": "Opioids",
-      "use": "Avoid; consider only briefly in severe acute pain when everything else has failed",
-      "note": "No better than non-opioids for chronic back pain in a randomized comparison, with more harm"
-    },
-    {
-      "drug": "Systemic glucocorticoids",
-      "use": "Not indicated for nonspecific low back pain",
-      "note": "Different situation entirely from suspected cord compression, where steroids are urgent"
-    }
-  ],
-  "nursing": [
-    "<b>Screen for the emergency at every encounter</b>: new urinary retention, fecal incontinence, saddle numbness, bilateral leg symptoms or progressive weakness. Escalate immediately — this does not wait for the morning.",
-    "<b>Bed rest is not the treatment.</b> Encourage staying active within comfort; prolonged rest slows recovery and deconditions.",
-    "Teach that <b>hurting is not the same as harming</b>. Fear of movement predicts chronic disability more reliably than the imaging does, and reassurance is an active intervention.",
-    "Assess function, not just a pain score — walking distance, sitting tolerance, sleep, work and mood. That is what treatment is actually aiming at.",
-    "Note the psychosocial 'yellow flags': catastrophizing, low mood, job dissatisfaction, ongoing litigation. They shape outcome and warrant a different plan.",
-    "For chronic pain, reinforce that <b>exercise and self-management are first-line</b> and that flares are expected rather than a sign of new damage."
-  ],
-  "medStudent": [
-    "Lead with the red-flag screen, then say the words <b>nonspecific low back pain</b> when that is what it is. Naming it accurately is a clinical skill, not a failure to diagnose.",
-    "<b>Cauda equina is the emergency.</b> Urinary retention with overflow incontinence is the most reliable finding; saddle anesthesia, bilateral sciatica and reduced anal tone support it. <b>Urgent MRI and surgical referral</b> — do not wait for imaging to organize the referral.",
-    "Distinguish <b>neurogenic</b> from <b>vascular</b> claudication: neurogenic eases with flexion and sitting, is often worse walking downhill, and pulses are preserved.",
-    "For sciatica, know the trajectory: most improve without surgery. <b>Discectomy relieves leg pain faster</b>, but outcomes converge by one to two years — so surgery is for severity and progression, not for the MRI.",
-    "First-line care for chronic pain is <b>non-pharmacologic</b>: exercise, multidisciplinary rehabilitation, and psychological approaches. Say this before reaching for a drug.",
-    "Explain why early imaging harms: it finds age-appropriate degeneration, that finding gets treated, and the patient ends up with more procedures and no less pain."
-  ],
-  "flow": [
-    {
-      "stage": "Presentation",
-      "title": "Back pain, and one question first",
-      "desc": "Axial or radiating pain; the first task is the red-flag screen, not a diagnosis or a scan."
-    },
-    {
-      "stage": "Triage",
-      "title": "Dangerous, radicular, or nonspecific",
-      "desc": "Cauda equina, infection, malignancy and fracture get urgent workup. Radicular and nonspecific pain are managed clinically."
-    },
-    {
-      "stage": "Initial management",
-      "title": "Keep moving, treat the pain",
-      "desc": "Stay active, avoid bed rest, NSAIDs with or without a short muscle relaxant, and explicit reassurance about the natural history."
-    },
-    {
-      "stage": "Reassess",
-      "title": "At 4–6 weeks, not before",
-      "desc": "Most have improved. Persisting or progressive symptoms — or a new red flag — is what prompts imaging and referral."
-    },
-    {
-      "stage": "Chronic",
-      "title": "Exercise and function",
-      "desc": "Structured exercise, multidisciplinary rehabilitation and psychological approaches; consider duloxetine. Aim at function rather than a pain-free spine."
-    }
-  ],
-  "redFlags": [
-    "<b>Cauda equina syndrome</b> — urinary retention, saddle anesthesia, bilateral leg symptoms, reduced anal tone, progressive weakness. Emergency MRI and surgical decompression.",
-    "<b>Spinal infection</b> — fever, night pain, IV drug use, recent bacteremia, immunosuppression, or an indwelling line. Get MRI plus ESR/CRP and blood cultures before antibiotics if feasible.",
-    "<b>Malignancy</b> — known cancer, unexplained weight loss, pain worse at night or at rest, age over 50 with a new pattern. Cancer history is the single strongest red flag.",
-    "<b>Vertebral compression fracture</b> — osteoporosis, chronic steroids, or trauma, often with focal midline tenderness and pain on standing.",
-    "<b>Ruptured or expanding abdominal aortic aneurysm</b> — sudden tearing back pain, syncope, a pulsatile mass. Back pain that hurts this much this fast is not mechanical.",
-    "<b>Progressive neurologic deficit</b> — a worsening foot drop or spreading numbness needs imaging now, not at 6 weeks."
-  ],
-  "pearls": [
-    "<b>Most acute low back pain resolves in about 6 weeks whatever you do.</b> That fact shapes the whole encounter: your job is to exclude danger, control pain and avoid harm.",
-    "<b>Imaging early is a harm, not a neutral act.</b> It finds degeneration everyone has, and that finding drives procedures without improving pain.",
-    "<b>Urinary retention is the most reliable sign of cauda equina.</b> A patient who is still passing urine normally has usually not developed it yet — but ask again, because it evolves.",
-    "<b>Flexion helps stenosis</b> — the shopping-cart sign. Extension makes it worse, which is the opposite of most mechanical pain.",
-    "<b>Inflammatory back pain improves with movement and is worse with rest.</b> That reversal in someone under 45 should raise axial spondyloarthritis rather than another course of NSAIDs and no follow-up.",
-    "<b>M54.5 is no longer a valid code.</b> Use <b>M54.50</b>, <b>M54.51</b> (vertebrogenic) or <b>M54.59</b> — a claim on the retired code gets rejected."
-  ],
-  "impress": [
-    "Say the diagnosis honestly: 'this is nonspecific low back pain — no red flags, no indication for imaging today.' Confidence in that sentence is what expertise sounds like here.",
-    "Screen for cauda equina out loud, by name, including bladder function and saddle sensation. It shows you know which single diagnosis cannot be missed.",
-    "Explain the imaging decision as a benefit-harm judgement rather than a rule: early MRI finds degeneration everyone has, and that finding leads to procedures without less pain.",
-    "For sciatica, frame surgery correctly: 'discectomy gets the leg pain down faster, but by a year or two outcomes are similar — so we operate for severity and progression, not for the scan.'",
-    "In a young patient with morning stiffness that eases as they move, ask about it directly. Picking up axial spondyloarthritis in clinic is a genuinely impressive catch."
-  ],
-  "refs": [
-    "Qaseem A et al. Noninvasive Treatments for Acute, Subacute, and Chronic Low Back Pain: ACP Clinical Practice Guideline. Ann Intern Med 2017;166:514",
-    "NICE Guideline NG59 — Low Back Pain and Sciatica in Over 16s: Assessment and Management (updated 2020)",
-    "Williams CM et al. Efficacy of Paracetamol for Acute Low-Back Pain (PACE). Lancet 2014;384:1586",
-    "Mathieson S et al. Trial of Pregabalin for Acute and Chronic Sciatica. N Engl J Med 2017;376:1111",
-    "Krebs EE et al. Effect of Opioid vs Nonopioid Medications on Pain-Related Function (SPACE). JAMA 2018;319:872"
-  ],
-  "verified": false
-}
+  {
+    "id": "hip-fracture",
+    "name": "Hip Fracture",
+    "category": "MSK & Rheum",
+    "icd10": "S72.009A",
+    "tagline": "A proximal femur fracture — usually a low-energy fall in an older adult with weak bone, where the fracture is the visible half of the problem and the frailty behind it is the other.",
+    "whatItIs": [
+      "A break of the <b>proximal femur</b>, grouped by where it sits relative to the joint capsule: <b>femoral neck</b> (intracapsular), <b>intertrochanteric</b> and <b>subtrochanteric</b> (both extracapsular). That one distinction drives blood supply, fixation choice and complications.",
+      "The femoral head is fed retrograde by <b>retinacular branches of the medial femoral circumflex artery</b> running up the neck. An <b>intracapsular</b> fracture can tear them, which is why displaced neck fractures risk <b>avascular necrosis and nonunion</b> and are often replaced rather than fixed.",
+      "Mechanism is usually a <b>low-energy fall from standing height</b> onto weakened bone — a <b>fragility fracture</b>, and by definition osteoporosis until proven otherwise. High-energy hip fractures in the young are a different injury with different priorities.",
+      "It behaves as a <b>sentinel event</b>, not an isolated injury: <b>one-year mortality runs about 15–30%</b> depending on the series, many never regain their prior mobility or independence, and the fracture itself predicts the next one."
+    ],
+    "diagnosis": [
+      "History: the fall and <b>why</b> it happened — mechanical trip versus syncope, arrhythmia, hypoglycemia, sepsis, or a medication. A fall with no adequate mechanism is a workup, not just a fracture.",
+      "Exam: groin or lateral hip pain, <b>inability to bear weight</b>, and in a displaced fracture a <b>shortened, externally rotated</b> leg. Pain on gentle axial load or log-roll is sensitive. Document distal pulses and sensation.",
+      "First imaging: <b>AP pelvis plus a cross-table lateral</b> of the affected hip. Compare the two sides — a subtle break in the trabecular pattern or a step in the femoral neck cortex is easy to miss.",
+      "<b>A normal radiograph does not exclude it.</b> If the patient cannot bear weight and the films look clean, get <b>MRI</b> (or CT if MRI is unavailable) for an occult or nondisplaced fracture.",
+      "Classify to plan surgery: <b>Garden I–IV</b> for femoral neck (I–II nondisplaced, III–IV displaced), and stable versus unstable for intertrochanteric patterns.",
+      "Preoperative workup is for <b>fitness and cause</b>, not delay: CBC, chemistry, type and screen, ECG. Also send <b>calcium, vitamin D and TSH</b> — the osteoporosis assessment starts now, not at discharge."
+    ],
+    "meds": [
+      {
+        "drug": "Regional block (fascia iliaca or femoral nerve)",
+        "use": "Preoperative analgesia, ideally within hours of arrival",
+        "note": "Better pain control with far less opioid — which is the point in a patient at high delirium risk"
+      },
+      {
+        "drug": "Acetaminophen (scheduled, not as needed)",
+        "use": "Multimodal analgesia backbone",
+        "note": "Scheduling it reduces total opioid dose; check the total daily dose against any combination products"
+      },
+      {
+        "drug": "Opioids (low-dose oxycodone, hydromorphone)",
+        "use": "Breakthrough pain only, at reduced geriatric doses",
+        "note": "Undertreated pain also causes delirium — the goal is the least opioid that allows movement, not none"
+      },
+      {
+        "drug": "Enoxaparin or LMWH",
+        "use": "VTE prophylaxis, continued 28–35 days after surgery",
+        "note": "Hip fracture surgery carries one of the highest VTE risks in orthopedics"
+      },
+      {
+        "drug": "Cefazolin",
+        "use": "Surgical prophylaxis within 60 minutes of incision",
+        "note": "Redose for long cases or major blood loss"
+      },
+      {
+        "drug": "Zoledronic acid 5 mg IV annually",
+        "use": "Secondary fracture prevention, started after surgical repair",
+        "note": "HORIZON-RFT gave the first infusion within 90 days of repair: clinical fractures 8.6% vs 13.9%, all-cause mortality 9.6% vs 13.3%. Load vitamin D first and correct hypocalcemia"
+      },
+      {
+        "drug": "Vitamin D and calcium",
+        "use": "Replete before and alongside antiresorptive therapy",
+        "note": "Starting a bisphosphonate into vitamin D deficiency risks symptomatic hypocalcemia"
+      }
+    ],
+    "nursing": [
+      "<b>Pain control is delirium prevention.</b> Advocate early for a regional block, give scheduled acetaminophen, and reassess after movement rather than only at rest.",
+      "<b>Screen for delirium every shift</b> with a validated tool. Watch for the quiet, hypoactive form — it is missed far more often than agitation and carries the worse prognosis.",
+      "Protect the skin from the moment of arrival. These patients lie still on a hard surface in the emergency department for hours; <b>heel and sacral pressure injuries begin there</b>, not on the ward.",
+      "Do not apply skin traction — it does not improve pain or outcomes. Position for comfort with the leg supported.",
+      "<b>Get them up the day after surgery</b> unless the surgeon has restricted weight bearing. Early mobilization drives fewer pneumonias, fewer clots and better function.",
+      "Guard sleep, bowels, hydration and hearing aids and glasses. These unglamorous items are the substance of delirium prevention.",
+      "Before discharge: confirm someone owns the <b>osteoporosis treatment</b> and the <b>falls assessment</b>. Both are commonly assumed to be someone else's job and then done by nobody."
+    ],
+    "medStudent": [
+      "Anchor everything on <b>intracapsular versus extracapsular</b>. Intracapsular threatens the femoral head's blood supply; extracapsular does not, which is why the operations differ.",
+      "The usual plan: <b>nondisplaced neck</b> → internal fixation; <b>displaced neck in an older adult</b> → arthroplasty; <b>intertrochanteric</b> → cephalomedullary nail or sliding hip screw. For the displaced neck, <b>total hip rather than hemiarthroplasty</b> if they walked independently outdoors with no more than a stick, have no comorbidity making it unsuitable, and are expected to manage daily activities independently beyond two years.",
+      "<b>Operate early — within 24–48 hours</b>, which AAOS rates on strong evidence. Delay beyond that tracks with more complications; the argument is about how much earlier helps, not whether waiting hurts.",
+      "<b>Spinal and general anesthesia give similar outcomes.</b> REGAIN found no meaningful difference in death, ambulation or delirium, so the choice is individualized rather than dogmatic.",
+      "Answer the question the fracture asks: <b>why did they fall?</b> Cardiac, neurologic, infectious and iatrogenic causes all present as a hip fracture in an older adult.",
+      "Know the atypical fracture: a patient on long-term bisphosphonates with <b>prodromal thigh pain</b> and a <b>transverse subtrochanteric or diaphyseal</b> fracture. Image the other femur too."
+    ],
+    "flow": [
+      {
+        "stage": "Presentation",
+        "title": "Fall, then can't stand",
+        "desc": "Older adult after a low-energy fall; groin or hip pain, unable to weight-bear, leg often shortened and externally rotated."
+      },
+      {
+        "stage": "Workup",
+        "title": "AP pelvis and lateral — then MRI if clean",
+        "desc": "Radiographs first; MRI for the patient who cannot bear weight despite normal films. Simultaneously work out why they fell."
+      },
+      {
+        "stage": "Optimization",
+        "title": "Block, not traction",
+        "desc": "Regional block and multimodal analgesia, fluids, review anticoagulants, ortho-geriatric co-management. Optimize in hours, not days."
+      },
+      {
+        "stage": "Definitive",
+        "title": "Fix or replace, within 24–48 hours",
+        "desc": "Fixation for nondisplaced neck and intertrochanteric patterns; arthroplasty for the displaced neck fracture in an older adult."
+      },
+      {
+        "stage": "Recovery",
+        "title": "Walk, and treat the bone",
+        "desc": "Mobilize day one, VTE prophylaxis, delirium prevention, then osteoporosis therapy and a falls assessment before discharge."
+      }
+    ],
+    "redFlags": [
+      "<b>Cannot bear weight but the X-ray is normal</b> — occult fracture. Get MRI; discharging as a soft-tissue strain risks displacement.",
+      "<b>Subtrochanteric fracture with hemodynamic instability</b> — the thigh conceals liters. Resuscitate and check for other injuries.",
+      "<b>Any open wound over the fracture</b> — antibiotics, tetanus and urgent debridement; this is no longer an elective-timing problem.",
+      "<b>A fall with no adequate mechanism</b>, especially with syncope, chest pain or new confusion — the fracture may be the least dangerous finding.",
+      "<b>Prodromal thigh pain in a long-term bisphosphonate user</b> — atypical femoral fracture. A transverse subtrochanteric break with a medial spike is the picture."
+    ],
+    "pearls": [
+      "<b>A hip fracture is osteoporosis until proven otherwise</b> — and the majority of patients still leave without treatment for it. Being the person who starts it is genuinely high-value.",
+      "<b>Zoledronic acid after hip fracture repair cut new clinical fractures from 13.9% to 8.6%</b> (HORIZON-RFT, a 35% reduction) <b>and all-cause mortality from 13.3% to 9.6%</b>. The mortality figure came out of the safety analysis rather than a primary endpoint — quote it that way, because it is the part people ask about.",
+      "<b>One-year mortality is about 15–30%</b> — classically quoted as 20–30%, with contemporary series nearer one in five. Treat the diagnosis with the seriousness that number deserves, however routine the operation is.",
+      "The <b>displaced femoral neck</b> fracture is replaced rather than fixed because of anatomy, not surgeon preference — the retinacular blood supply is already torn.",
+      "<b>Traction has no role.</b> It persists by habit; the evidence does not support it.",
+      "The best predictor of walking again is <b>how they walked before</b>. Ask, and record it — it sets the goal for the whole admission."
+    ],
+    "impress": [
+      "Present it as a geriatric syndrome with a fracture attached: 'low-energy mechanism, so this is a fragility fracture — I want to know why she fell, and she needs osteoporosis therapy before discharge.'",
+      "Name the classification and what follows from it: 'Garden IV, so displaced and intracapsular — the head's blood supply is likely gone, which is why we are replacing rather than fixing it.'",
+      "Ask for the block early. Requesting a fascia iliaca block in the emergency department reads as understanding that analgesia here is delirium prevention.",
+      "Quote the timing target and the reason: surgery within 24–48 hours, because delay tracks with pneumonia, delirium and pressure injury.",
+      "Close the loop nobody closes: 'who is starting the bisphosphonate, and who is doing the falls assessment?' That question is the difference between treating a fracture and treating a patient."
+    ],
+    "refs": [
+      "AAOS Clinical Practice Guideline — Management of Hip Fractures in Older Adults (2021)",
+      "NICE Guideline CG124 — Hip Fracture: Management (updated 2023)",
+      "Lyles KW et al. Zoledronic Acid and Clinical Fractures and Mortality after Hip Fracture (HORIZON-RFT). N Engl J Med 2007;357:1799",
+      "Neuman MD et al. Spinal Anesthesia or General Anesthesia for Hip Surgery in Older Adults (REGAIN). N Engl J Med 2021;385:2025",
+      "HEALTH Investigators. Total Hip Arthroplasty or Hemiarthroplasty for Hip Fracture. N Engl J Med 2019;381:2199"
+    ],
+    "verified": false
+  },
+  {
+    "id": "back-pain",
+    "name": "Low Back Pain",
+    "category": "MSK & Rheum",
+    "icd10": "M54.50",
+    "tagline": "The most common musculoskeletal complaint in medicine — where the diagnosis is usually nonspecific, most of the skill is in excluding the few dangerous causes, and imaging early makes outcomes worse rather than better.",
+    "whatItIs": [
+      "Pain between the lower rib margin and the gluteal folds. In roughly <b>85–90%</b> no specific pathoanatomic cause is identifiable, and the honest label is <b>nonspecific low back pain</b>.",
+      "Timed by duration: <b>acute</b> under 4 weeks, <b>subacute</b> 4–12 weeks, <b>chronic</b> beyond 12. Most acute episodes improve substantially within about 6 weeks whatever is done.",
+      "Four buckets worth separating: <b>mechanical/nonspecific</b>; <b>radicular</b> (sciatica from disc herniation, usually L4–S1); <b>spinal stenosis</b> (neurogenic claudication, eased by sitting or leaning forward); and <b>serious/systemic</b> — fracture, malignancy, infection, cauda equina, inflammatory disease, or referred pain from an aneurysm or viscus.",
+      "Degenerative findings on imaging are <b>near-universal with age and correlate poorly with pain</b>. Disc degeneration, bulges and facet arthrosis are common in people with no symptoms at all, which is why a scan often adds a label rather than an answer."
+    ],
+    "diagnosis": [
+      "This is a <b>red-flag screen first</b>, not an imaging decision. Ask about bladder and bowel function, saddle sensation, progressive weakness, fever, weight loss, cancer history, steroid use, IV drug use, and trauma.",
+      "Characterize the pain: axial versus radiating below the knee, what eases it (<b>flexion easing pain suggests stenosis</b>), and whether it is worse at night or at rest.",
+      "Exam: gait, spine tenderness, straight-leg raise, and a focused neurologic exam — <b>L4</b> (knee extension, medial foot), <b>L5</b> (dorsiflexion, great toe, dorsum), <b>S1</b> (plantarflexion, ankle reflex, lateral foot). Check perianal sensation and tone if cauda equina is a consideration.",
+      "<b>Do not image nonspecific low back pain in the first 6 weeks without red flags.</b> It does not improve outcomes and leads to more procedures. This is one of the most consistent recommendations in the field.",
+      "When you do image: <b>MRI</b> for suspected cauda equina, infection, malignancy or progressive deficit — urgently. Plain films for suspected compression fracture; ESR/CRP and blood cultures when infection is in play.",
+      "Consider <b>axial spondyloarthritis</b> in the young patient whose back pain is inflammatory: onset before 45, morning stiffness over 30 minutes, pain in the second half of the night, and <b>improvement with exercise rather than rest</b>."
+    ],
+    "meds": [
+      {
+        "drug": "NSAIDs (ibuprofen, naproxen)",
+        "use": "First-line pharmacotherapy for acute and chronic nonspecific pain",
+        "note": "First-line among the drugs, but non-drug treatment comes ahead of all of them; modest effect sizes, so use the lowest effective dose and check renal, GI and cardiovascular risk"
+      },
+      {
+        "drug": "Skeletal muscle relaxants (cyclobenzaprine, methocarbamol)",
+        "use": "Short courses in acute pain with spasm",
+        "note": "Sedation and anticholinergic effects limit use, particularly in older adults"
+      },
+      {
+        "drug": "Acetaminophen",
+        "use": "Adjunct, and an option when NSAIDs are contraindicated",
+        "note": "The PACE trial found no benefit over placebo for acute low back pain — reasonable to try, but do not promise much"
+      },
+      {
+        "drug": "Duloxetine",
+        "use": "Chronic low back pain, especially with comorbid depression",
+        "note": "One of the few medications with evidence in chronic rather than acute pain"
+      },
+      {
+        "drug": "Gabapentin / pregabalin",
+        "use": "Not recommended for sciatica",
+        "note": "Pregabalin did not reduce sciatica pain in a randomized trial and caused more adverse events"
+      },
+      {
+        "drug": "Opioids",
+        "use": "Avoid; consider only briefly in severe acute pain when everything else has failed",
+        "note": "No better than non-opioids for chronic back pain in a randomized comparison, with more harm"
+      },
+      {
+        "drug": "Systemic glucocorticoids",
+        "use": "Not indicated for nonspecific low back pain",
+        "note": "Do not carry this across to <b>malignant</b> spinal cord compression, where dexamethasone is urgent. Cauda equina from a disc is a decompression, not a steroid"
+      }
+    ],
+    "nursing": [
+      "<b>Screen for the emergency at every encounter</b>: new urinary retention, fecal incontinence, saddle numbness, bilateral leg symptoms or progressive weakness. Escalate immediately — this does not wait for the morning.",
+      "<b>Bed rest is not the treatment.</b> Encourage staying active within comfort; prolonged rest slows recovery and deconditions.",
+      "Teach that <b>hurting is not the same as harming</b>. Fear of movement predicts chronic disability more reliably than the imaging does, and reassurance is an active intervention.",
+      "Assess function, not just a pain score — walking distance, sitting tolerance, sleep, work and mood. That is what treatment is actually aiming at.",
+      "Note the psychosocial 'yellow flags': catastrophizing, low mood, job dissatisfaction, ongoing litigation. They shape outcome and warrant a different plan.",
+      "For chronic pain, reinforce that <b>exercise and self-management are first-line</b> and that flares are expected rather than a sign of new damage."
+    ],
+    "medStudent": [
+      "Lead with the red-flag screen, then say the words <b>nonspecific low back pain</b> when that is what it is. Naming it accurately is a clinical skill, not a failure to diagnose.",
+      "<b>Cauda equina is the emergency.</b> Urinary retention with overflow incontinence is the most reliable finding; saddle anesthesia, bilateral sciatica and reduced anal tone support it. <b>Urgent MRI and surgical referral</b> — do not wait for imaging to organize the referral.",
+      "Distinguish <b>neurogenic</b> from <b>vascular</b> claudication: neurogenic eases with flexion and sitting, is often worse walking downhill, and pulses are preserved.",
+      "For sciatica, know the trajectory: most improve without surgery. <b>Discectomy relieves leg pain faster</b>, but outcomes converge by one to two years — so surgery is for severity and progression, not for the MRI.",
+      "<b>Non-pharmacologic care is first-line at every stage</b>, not only in chronic pain: superficial heat, massage, acupuncture or spinal manipulation for acute and subacute pain, and exercise, multidisciplinary rehabilitation and psychological approaches when it becomes chronic. Say this before reaching for a drug.",
+      "Explain why early imaging harms: it finds age-appropriate degeneration, that finding gets treated, and the patient ends up with more procedures and no less pain."
+    ],
+    "flow": [
+      {
+        "stage": "Presentation",
+        "title": "Back pain, and one question first",
+        "desc": "Axial or radiating pain; the first task is the red-flag screen, not a diagnosis or a scan."
+      },
+      {
+        "stage": "Triage",
+        "title": "Dangerous, radicular, or nonspecific",
+        "desc": "Cauda equina, infection, malignancy and fracture get urgent workup. Radicular and nonspecific pain are managed clinically."
+      },
+      {
+        "stage": "Initial management",
+        "title": "Keep moving, treat the pain",
+        "desc": "Stay active, avoid bed rest, and explicit reassurance about the natural history. Non-drug options come first — superficial heat, massage, acupuncture or spinal manipulation — with NSAIDs, or a short course of a muscle relaxant, if drug treatment is wanted."
+      },
+      {
+        "stage": "Reassess",
+        "title": "At 4–6 weeks, not before",
+        "desc": "Most have improved. Persisting or progressive symptoms — or a new red flag — is what prompts imaging and referral."
+      },
+      {
+        "stage": "Chronic",
+        "title": "Exercise and function",
+        "desc": "Structured exercise, multidisciplinary rehabilitation and psychological approaches; consider duloxetine. Aim at function rather than a pain-free spine."
+      }
+    ],
+    "redFlags": [
+      "<b>Cauda equina syndrome</b> — urinary retention, saddle anesthesia, bilateral leg symptoms, reduced anal tone, progressive weakness. Emergency MRI and surgical decompression.",
+      "<b>Spinal infection</b> — fever, night pain, IV drug use, recent bacteremia, immunosuppression, or an indwelling line. Get MRI plus ESR/CRP and blood cultures before antibiotics if feasible.",
+      "<b>Malignancy</b> — known cancer, unexplained weight loss, pain worse at night or at rest, age over 50 with a new pattern. Cancer history is the single strongest red flag.",
+      "<b>Vertebral compression fracture</b> — osteoporosis, chronic steroids, or trauma, often with focal midline tenderness and pain on standing.",
+      "<b>Ruptured or expanding abdominal aortic aneurysm</b> — sudden tearing back pain, syncope, a pulsatile mass. Back pain that hurts this much this fast is not mechanical.",
+      "<b>Progressive neurologic deficit</b> — a worsening foot drop or spreading numbness needs imaging now, not at 6 weeks."
+    ],
+    "pearls": [
+      "<b>Most acute low back pain resolves in about 6 weeks whatever you do.</b> That fact shapes the whole encounter: your job is to exclude danger, control pain and avoid harm.",
+      "<b>Imaging early is a harm, not a neutral act.</b> It finds degeneration everyone has, and that finding drives procedures without improving pain.",
+      "<b>Urinary retention is the most reliable sign of cauda equina.</b> A patient who is still passing urine normally has usually not developed it yet — but ask again, because it evolves.",
+      "<b>Flexion helps stenosis</b> — the shopping-cart sign. Extension makes it worse, which is the opposite of most mechanical pain.",
+      "<b>Inflammatory back pain improves with movement and is worse with rest.</b> That reversal in someone under 45 should raise axial spondyloarthritis rather than another course of NSAIDs and no follow-up.",
+      "<b>M54.5 is no longer a valid code.</b> Use <b>M54.50</b>, <b>M54.51</b> (vertebrogenic) or <b>M54.59</b> — a claim on the retired code gets rejected."
+    ],
+    "impress": [
+      "Say the diagnosis honestly: 'this is nonspecific low back pain — no red flags, no indication for imaging today.' Confidence in that sentence is what expertise sounds like here.",
+      "Screen for cauda equina out loud, by name, including bladder function and saddle sensation. It shows you know which single diagnosis cannot be missed.",
+      "Explain the imaging decision as a benefit-harm judgment rather than a rule: early MRI finds degeneration everyone has, and that finding leads to procedures without less pain.",
+      "For sciatica, frame surgery correctly: 'discectomy gets the leg pain down faster, but by a year or two outcomes are similar — so we operate for severity and progression, not for the scan.'",
+      "In a young patient with morning stiffness that eases as they move, ask about it directly. Picking up axial spondyloarthritis in clinic is a genuinely impressive catch."
+    ],
+    "refs": [
+      "Qaseem A et al. Noninvasive Treatments for Acute, Subacute, and Chronic Low Back Pain: ACP Clinical Practice Guideline. Ann Intern Med 2017;166:514",
+      "NICE Guideline NG59 — Low Back Pain and Sciatica in Over 16s: Assessment and Management (updated 2020)",
+      "Williams CM et al. Efficacy of Paracetamol for Acute Low-Back Pain (PACE). Lancet 2014;384:1586",
+      "Mathieson S et al. Trial of Pregabalin for Acute and Chronic Sciatica. N Engl J Med 2017;376:1111",
+      "Krebs EE et al. Effect of Opioid vs Nonopioid Medications on Pain-Related Function (SPACE). JAMA 2018;319:872"
+    ],
+    "verified": false
+  }
 ]

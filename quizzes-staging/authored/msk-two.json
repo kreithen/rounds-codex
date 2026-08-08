@@ -1,392 +1,392 @@
 {
- "hip-fracture": {
-  "condition": "Hip Fracture",
-  "questions": [
-   {
-    "q": "An 82-year-old sustains a displaced femoral neck fracture after a fall at home. Why does this pattern threaten the femoral head in a way an intertrochanteric fracture does not?",
-    "ch": [
-     "It exposes the fracture to synovial fluid, which dissolves the healing callus",
-     "It angulates the femur enough to kink the profunda femoris artery",
-     "It is intracapsular, so it can tear the retinacular vessels supplying the head",
-     "It is extracapsular, so the periosteal blood supply is stripped from the shaft",
-     "It disrupts the ligamentum teres, which is the head's main blood supply in adults"
-    ],
-    "correct": 2,
-    "exp": "The femoral head is supplied retrograde by retinacular branches of the medial femoral circumflex artery running up the neck. An intracapsular fracture can tear them, which is why displaced neck fractures risk avascular necrosis and nonunion.",
-    "why": [
-     "Synovial fluid exposure is not the mechanism; the problem is the torn retinacular blood supply.",
-     "The profunda femoris is not kinked by this fracture; the injury is to the small retinacular vessels.",
-     "",
-     "Intertrochanteric fractures are the extracapsular pattern, and they do not threaten the head's supply.",
-     "The ligamentum teres carries a negligible supply in adults, so it is not what makes this dangerous."
+  "hip-fracture": {
+    "condition": "Hip Fracture",
+    "questions": [
+      {
+        "q": "An 82-year-old sustains a displaced femoral neck fracture after a fall at home. Why does this pattern threaten the femoral head in a way an intertrochanteric fracture does not?",
+        "ch": [
+          "It exposes the fracture to synovial fluid, which dissolves the healing callus",
+          "It angulates the femur enough to kink the profunda femoris artery",
+          "It is intracapsular, so it can tear the retinacular vessels supplying the head",
+          "It is extracapsular, so the periosteal blood supply is stripped from the shaft",
+          "It disrupts the ligamentum teres, which is the head's main blood supply in adults"
+        ],
+        "correct": 2,
+        "exp": "The femoral head is supplied retrograde by retinacular branches of the medial femoral circumflex artery running up the neck. An intracapsular fracture can tear them, which is why displaced neck fractures risk avascular necrosis and nonunion.",
+        "why": [
+          "Synovial fluid exposure is not the mechanism; the problem is the torn retinacular blood supply.",
+          "The profunda femoris is not kinked by this fracture; the injury is to the small retinacular vessels.",
+          "",
+          "Intertrochanteric fractures are the extracapsular pattern, and they do not threaten the head's supply.",
+          "The ligamentum teres carries a negligible supply in adults, so it is not what makes this dangerous."
+        ]
+      },
+      {
+        "q": "An 84-year-old with a Garden IV femoral neck fracture who walked independently before the fall is taken to the operating room. Which operation fits this fracture?",
+        "ch": [
+          "Cannulated screw fixation, preserving the native femoral head",
+          "Arthroplasty, because the head's blood supply is likely already lost",
+          "Cephalomedullary nailing, which is the standard for neck fractures",
+          "Closed reduction and a hip spica cast for six weeks",
+          "Skeletal traction until the fracture unites, avoiding an operation"
+        ],
+        "correct": 1,
+        "exp": "A displaced intracapsular fracture in an older adult is replaced rather than fixed, because the retinacular blood supply is likely already torn and fixation would risk avascular necrosis and nonunion. Hemiarthroplasty versus total hip turns on prior function and activity.",
+        "why": [
+          "Fixation is appropriate for a nondisplaced neck fracture, not a displaced one where the supply is already compromised.",
+          "",
+          "Cephalomedullary nails are used for intertrochanteric and subtrochanteric patterns, not the femoral neck.",
+          "Casting cannot control a proximal femur fracture and would guarantee the complications of immobility.",
+          "Traction is not a definitive treatment and has no role in modern hip fracture care."
+        ]
+      },
+      {
+        "q": "A 79-year-old cannot bear weight on her right hip after a fall, but the AP pelvis and cross-table lateral radiographs look normal. What is the next step?",
+        "ch": [
+          "Start physiotherapy to restore weight bearing gradually",
+          "Obtain a bone scan, which is the test of choice within 24 hours",
+          "Discharge with analgesia and a diagnosis of soft-tissue strain",
+          "Repeat the same radiographs in two weeks to look for callus",
+          "Order MRI of the hip to look for an occult fracture"
+        ],
+        "correct": 4,
+        "exp": "A normal radiograph does not exclude a hip fracture. If the patient cannot bear weight and the films look clean, MRI (or CT where MRI is unavailable) is indicated for an occult or nondisplaced fracture; discharging as a strain risks displacement.",
+        "why": [
+          "Physiotherapy to load an undiagnosed fracture would be actively harmful.",
+          "A bone scan is insensitive in the first 24 to 72 hours in older adults, so it is not the immediate test.",
+          "Discharging her as a strain is the specific error this presentation sets up, and risks the fracture displacing.",
+          "Waiting two weeks leaves a potentially unstable fracture unprotected and delays definitive care.",
+          ""
+        ]
+      },
+      {
+        "q": "An otherwise stable 80-year-old is admitted with an intertrochanteric fracture at 22:00. What is the recommended timing of surgery?",
+        "ch": [
+          "Only after the osteoporosis workup is complete",
+          "Within 2 hours, treating it as a vascular emergency",
+          "After 7 days of traction to allow the swelling to settle",
+          "Once she has completed a full cardiac stress test",
+          "Generally within 24 to 48 hours of admission"
+        ],
+        "correct": 4,
+        "exp": "Surgery is generally performed within 24 to 48 hours. Delay beyond that tracks with more pneumonia, delirium and pressure injury, so the debate is about how much earlier helps rather than whether waiting causes harm.",
+        "why": [
+          "The osteoporosis workup proceeds alongside admission and must never delay the operation.",
+          "This is not a vascular emergency requiring surgery within two hours in a stable patient.",
+          "Traction has no role and a week of immobility would cause exactly the complications surgery is meant to avoid.",
+          "Routine stress testing delays surgery without improving outcomes in this population.",
+          ""
+        ]
+      },
+      {
+        "q": "Which intervention on arrival in the emergency department most directly reduces this patient's risk of delirium?",
+        "ch": [
+          "Providing a fascia iliaca or femoral nerve block early",
+          "Applying skin traction to the injured leg for comfort",
+          "Withholding all opioids to avoid confusion",
+          "Prescribing a prophylactic antipsychotic on admission",
+          "Keeping her NPO from arrival until surgery"
+        ],
+        "correct": 0,
+        "exp": "Early regional block gives better pain control with far less opioid, which is the point in a patient at high delirium risk. Undertreated pain is itself a cause of delirium, so the aim is the least opioid that allows movement, not none.",
+        "why": [
+          "",
+          "Traction does not improve pain or outcomes and has no role in hip fracture care.",
+          "Withholding analgesia backfires, because undertreated pain is itself a potent cause of delirium.",
+          "Prophylactic antipsychotics are not the recommended approach to preventing delirium here.",
+          "Prolonged fasting causes dehydration and distress, both of which worsen delirium risk."
+        ]
+      },
+      {
+        "q": "Two days after hemiarthroplasty, the team plans secondary fracture prevention. Which statement about intravenous zoledronic acid after hip fracture repair is correct?",
+        "ch": [
+          "It reduced new clinical fractures and also all-cause mortality",
+          "It reduced radiographic fractures only, with no clinical benefit",
+          "It should be withheld for a full year after any hip surgery",
+          "It is given without attention to vitamin D or calcium status",
+          "It is contraindicated once a hip has been replaced"
+        ],
+        "correct": 0,
+        "exp": "In HORIZON-RFT, annual zoledronic acid begun within 90 days of hip fracture repair cut new clinical fractures from 13.9% to 8.6% and all-cause mortality from 13.3% to 9.6% — the mortality result coming from the safety analysis rather than a primary endpoint. Vitamin D must be repleted first to avoid symptomatic hypocalcemia.",
+        "why": [
+          "",
+          "The benefit was in clinical fractures, not a radiographic surrogate, and mortality was also reduced.",
+          "Waiting a year forfeits the window in which refracture risk is highest.",
+          "Vitamin D and calcium status must be corrected first, or symptomatic hypocalcemia can follow.",
+          "Arthroplasty is not a contraindication; the remaining skeleton is still osteoporotic."
+        ]
+      },
+      {
+        "q": "The anesthetist discusses spinal versus general anesthesia with the family. What did the REGAIN trial find?",
+        "ch": [
+          "Spinal anesthesia halved the incidence of postoperative delirium",
+          "General anesthesia produced significantly better ambulation at 60 days",
+          "Spinal anesthesia significantly reduced 60-day mortality",
+          "Similar outcomes for death, ambulation and delirium between the two",
+          "General anesthesia significantly reduced the need for transfusion"
+        ],
+        "correct": 3,
+        "exp": "REGAIN found no meaningful difference between spinal and general anesthesia in death, ability to walk at 60 days, or delirium. The choice is therefore individualized to the patient rather than applied dogmatically.",
+        "why": [
+          "Delirium rates were similar; spinal anesthesia did not halve them.",
+          "Ambulation at 60 days did not differ significantly between the techniques.",
+          "Mortality was not significantly reduced by spinal anesthesia.",
+          "",
+          "Transfusion requirement was not the trial's finding and does not drive the decision."
+        ]
+      },
+      {
+        "q": "A 74-year-old on alendronate for nine years reports several weeks of dull right thigh pain, then sustains a fracture after a minor stumble. Which feature most supports an atypical femoral fracture?",
+        "ch": [
+          "An oblique fracture through the femoral neck with comminution",
+          "A transverse subtrochanteric or diaphyseal fracture with prodromal pain",
+          "A spiral fracture of the distal femur with marked shortening",
+          "An intertrochanteric fracture with a large posteromedial fragment",
+          "A displaced femoral neck fracture with external rotation"
+        ],
+        "correct": 1,
+        "exp": "Atypical femoral fracture in a long-term bisphosphonate user is a transverse subtrochanteric or diaphyseal fracture, often preceded by weeks of prodromal thigh pain. The opposite femur should be imaged as well.",
+        "why": [
+          "A comminuted femoral neck fracture is a typical fragility pattern, not the atypical one.",
+          "",
+          "Spiral distal femoral fractures reflect torsional injury rather than bisphosphonate-associated bone.",
+          "An intertrochanteric fracture with a posteromedial fragment is a common ordinary fragility pattern.",
+          "A displaced neck fracture with external rotation is the classic typical hip fracture presentation."
+        ]
+      },
+      {
+        "q": "A 78-year-old is admitted with a hip fracture after being found on the floor with no recollection of falling. Beyond fixing the bone, what does this history oblige the team to do?",
+        "ch": [
+          "Restrict the workup to the hip, since the fall is explained by frailty",
+          "Delay surgery until an extensive syncope workup is finished",
+          "Establish why she fell, since the fracture may be the least dangerous finding",
+          "Attribute it to osteoporosis and start treatment without further thought",
+          "Arrange outpatient cardiology review after discharge and nothing sooner"
+        ],
+        "correct": 2,
+        "exp": "A fall with no adequate mechanism is a workup, not just a fracture. Cardiac, neurologic, infectious and iatrogenic causes all present as a hip fracture in an older adult, and the precipitant may matter more than the break.",
+        "why": [
+          "Assuming frailty explains an unwitnessed collapse risks missing arrhythmia, sepsis or hypoglycemia.",
+          "The cause is investigated alongside admission; a prolonged workup must not delay surgery.",
+          "",
+          "Osteoporosis treatment is necessary but does not address why she lost consciousness or balance.",
+          "Deferring everything to outpatient follow-up leaves a potentially dangerous cause unexamined."
+        ]
+      },
+      {
+        "q": "Which statement best conveys the prognosis of hip fracture in an older adult?",
+        "ch": [
+          "Nearly all patients regain their previous level of mobility",
+          "It carries no greater risk than an isolated wrist fracture",
+          "One-year mortality exceeds 70 percent regardless of treatment",
+          "Roughly 15 to 30 percent die within a year of the fracture",
+          "Mortality at one year is under 5 percent with modern fixation"
+        ],
+        "correct": 3,
+        "exp": "About 15 to 30 percent of older adults die within a year of a hip fracture, and many never regain their previous mobility or independence. The fracture behaves as a sentinel event rather than an isolated injury.",
+        "why": [
+          "Many patients never return to their prior mobility, which is central to why this matters.",
+          "A hip fracture carries far greater morbidity and mortality than a distal forearm fracture.",
+          "Over 70 percent overstates it; the figure is roughly one in four to one in five.",
+          "",
+          "Under 5 percent understates the risk substantially and would misrepresent the seriousness of the diagnosis."
+        ]
+      }
     ]
-   },
-   {
-    "q": "An 84-year-old with a Garden IV femoral neck fracture who walked independently before the fall is taken to the operating room. Which operation fits this fracture?",
-    "ch": [
-     "Cannulated screw fixation, preserving the native femoral head",
-     "Arthroplasty, because the head's blood supply is likely already lost",
-     "Cephalomedullary nailing, which is the standard for neck fractures",
-     "Closed reduction and a hip spica cast for six weeks",
-     "Skeletal traction until the fracture unites, avoiding an operation"
-    ],
-    "correct": 1,
-    "exp": "A displaced intracapsular fracture in an older adult is replaced rather than fixed, because the retinacular blood supply is likely already torn and fixation would risk avascular necrosis and nonunion. Hemiarthroplasty versus total hip turns on prior function and activity.",
-    "why": [
-     "Fixation is appropriate for a nondisplaced neck fracture, not a displaced one where the supply is already compromised.",
-     "",
-     "Cephalomedullary nails are used for intertrochanteric and subtrochanteric patterns, not the femoral neck.",
-     "Casting cannot control a proximal femur fracture and would guarantee the complications of immobility.",
-     "Traction is not a definitive treatment and has no role in modern hip fracture care."
+  },
+  "back-pain": {
+    "condition": "Low Back Pain",
+    "questions": [
+      {
+        "q": "A 48-year-old with three days of low back pain now reports difficulty starting his urinary stream and numbness when wiping. Which finding is the most reliable indicator of cauda equina syndrome?",
+        "ch": [
+          "Midline tenderness over the lumbar spinous processes",
+          "Pain radiating below the knee bilaterally",
+          "A positive straight-leg raise on the more painful side",
+          "Absent ankle reflex with weak plantarflexion",
+          "Urinary retention with overflow incontinence"
+        ],
+        "correct": 4,
+        "exp": "Urinary retention with overflow incontinence is the most reliable finding in cauda equina syndrome. Saddle anesthesia, bilateral sciatica and reduced anal tone support it, and the response is urgent MRI with immediate surgical referral.",
+        "why": [
+          "Midline tenderness is nonspecific and does not distinguish cauda equina from mechanical pain.",
+          "Bilateral radiation is suggestive and should raise concern, but retention is the more reliable sign.",
+          "A positive straight-leg raise indicates radicular irritation and is present in ordinary sciatica.",
+          "An absent ankle reflex localizes an S1 radiculopathy but is not the defining feature here.",
+          ""
+        ]
+      },
+      {
+        "q": "A 35-year-old has two weeks of axial low back pain after moving house. There are no red flags and the neurologic exam is normal. She asks for an MRI. What is the best response?",
+        "ch": [
+          "Order MRI now, since it will reassure her and guide treatment",
+          "Order plain radiographs now and MRI if they are abnormal",
+          "Defer imaging, because it does not improve outcomes and leads to more procedures",
+          "Order MRI only if she has not improved within 72 hours",
+          "Order CT, which shows the discs as well as MRI with less delay"
+        ],
+        "correct": 2,
+        "exp": "Imaging is not indicated for nonspecific low back pain in the first six weeks without red flags. It does not improve outcomes, it finds degeneration that is near-universal with age, and that finding drives procedures without reducing pain.",
+        "why": [
+          "Early MRI does not reassure durably and leads to more intervention without better pain outcomes.",
+          "Radiographs add radiation and incidental findings without changing management here.",
+          "",
+          "Seventy-two hours is far too short a window; most episodes take weeks to settle.",
+          "CT adds substantial radiation and is not the appropriate first test for this presentation."
+        ]
+      },
+      {
+        "q": "A 70-year-old describes buttock and thigh pain on walking that eases when he leans over a shopping cart, with normal foot pulses. Which feature best distinguishes this from vascular claudication?",
+        "ch": [
+          "The symptoms are relieved by lumbar flexion such as leaning forward",
+          "The pain begins only after a fixed and reproducible walking distance",
+          "The pain resolves within two minutes of standing still",
+          "The pain is described as cramping rather than burning",
+          "The pain is bilateral rather than confined to one leg"
+        ],
+        "correct": 0,
+        "exp": "Neurogenic claudication from spinal stenosis eases with flexion, such as sitting or leaning forward, and is often worse walking downhill. Preserved pulses support it. Extension worsens it, which is the reverse of most mechanical back pain.",
+        "why": [
+          "",
+          "A fixed claudication distance is more characteristic of vascular disease than of stenosis.",
+          "Rapid relief on standing still favours a vascular cause; neurogenic pain needs flexion.",
+          "The quality of the pain is unreliable for distinguishing these two conditions.",
+          "Vascular claudication can also be bilateral, so laterality does not separate the two."
+        ]
+      },
+      {
+        "q": "A 28-year-old has six months of low back pain with an hour of morning stiffness that improves once he starts moving, and pain waking him in the second half of the night. What should this raise?",
+        "ch": [
+          "Chronic pain syndrome driven by psychosocial factors",
+          "Ordinary mechanical low back pain requiring only reassurance",
+          "Lumbar disc herniation with an early radiculopathy",
+          "Axial spondyloarthritis",
+          "Vertebral compression fracture from occult osteoporosis"
+        ],
+        "correct": 3,
+        "exp": "Inflammatory back pain improves with movement and is worse with rest, with onset before 45, morning stiffness over 30 minutes, and pain in the second half of the night. That reversal of the usual pattern should raise axial spondyloarthritis rather than another course of NSAIDs without follow-up.",
+        "why": [
+          "Labelling this psychosocial would miss a treatable inflammatory disease with a clear pattern.",
+          "Mechanical pain is typically worse with activity and better with rest, which is the opposite pattern.",
+          "Disc herniation causes radicular leg pain rather than inflammatory morning stiffness.",
+          "",
+          "Compression fracture is unlikely at 28 without steroids or trauma, and does not improve with exercise."
+        ]
+      },
+      {
+        "q": "Which statement about acetaminophen for acute low back pain is correct?",
+        "ch": [
+          "It shortens the duration of an episode by about two weeks",
+          "A randomized trial found no benefit over placebo",
+          "It is more effective than NSAIDs and is first-line therapy",
+          "It works only when combined with a muscle relaxant",
+          "It is contraindicated in acute low back pain"
+        ],
+        "correct": 1,
+        "exp": "The PACE trial found no benefit of paracetamol over placebo for acute low back pain. It remains a reasonable option, particularly where NSAIDs are contraindicated, but it should not be promised as effective.",
+        "why": [
+          "No agent has been shown to shorten an episode by two weeks.",
+          "",
+          "NSAIDs are the first-line pharmacotherapy; acetaminophen did not outperform placebo.",
+          "There is no evidence that its effect depends on adding a muscle relaxant.",
+          "It is not contraindicated, merely unimpressive for this indication."
+        ]
+      },
+      {
+        "q": "A 52-year-old has six weeks of sciatica with pain radiating to the lateral calf and no motor deficit. Which drug is not recommended for this?",
+        "ch": [
+          "Naproxen taken regularly for a short period",
+          "Pregabalin titrated for the neuropathic component",
+          "Cyclobenzaprine at night for a few days",
+          "Acetaminophen as an adjunct to an NSAID",
+          "Duloxetine if the pain becomes chronic"
+        ],
+        "correct": 1,
+        "exp": "Pregabalin did not reduce sciatica pain in a randomized trial and caused more adverse events, so gabapentinoids are not recommended for sciatica despite the pain sounding neuropathic.",
+        "why": [
+          "NSAIDs remain the reasonable first-line pharmacotherapy here.",
+          "",
+          "A short course of a muscle relaxant is an accepted option, limited by sedation.",
+          "Acetaminophen is a reasonable adjunct even though its effect is modest.",
+          "Duloxetine is one of the few agents with evidence in chronic rather than acute pain."
+        ]
+      },
+      {
+        "q": "A 60-year-old with two years of low back pain and no red flags asks for something stronger than ibuprofen. What does the evidence support telling her about opioids?",
+        "ch": [
+          "They should be avoided, and were no better than non-opioids for chronic pain",
+          "They are safe long term provided the dose stays below a set threshold",
+          "They work well for pain but not for restoring function",
+          "They are indicated once NSAIDs have been tried for a month",
+          "They are the preferred option when imaging shows degeneration"
+        ],
+        "correct": 0,
+        "exp": "Opioids should be avoided for chronic low back pain. In a randomized comparison they were no better than non-opioid medications for pain-related function, with more adverse effects. Non-pharmacologic care is first-line — exercise, rehabilitation and psychological approaches — with NSAIDs the first drug if one is needed.",
+        "why": [
+          "",
+          "Long-term safety below a dose threshold is not supported for this indication.",
+          "They were not superior for pain either, so this understates the finding.",
+          "A month of NSAIDs does not establish an indication for opioids in chronic back pain.",
+          "Degeneration on imaging is near-universal with age and is not an indication for opioids."
+        ]
+      },
+      {
+        "q": "A 45-year-old has eight weeks of severe sciatica with a stable, mild foot weakness. He asks whether surgery will help. What is the most accurate summary?",
+        "ch": [
+          "Surgery should be deferred until the MRI shows a larger herniation",
+          "Surgery is only considered once symptoms exceed twelve months",
+          "Surgery is required now to prevent permanent nerve damage",
+          "Surgery relieves leg pain faster, but outcomes converge by one to two years",
+          "Surgery and conservative care give identical relief at every time point"
+        ],
+        "correct": 3,
+        "exp": "Most sciatica improves without surgery. Discectomy relieves leg pain faster, but outcomes converge by one to two years, so the operation is offered for severity and progression rather than because of the MRI appearance.",
+        "why": [
+          "Herniation size on MRI is not what drives the decision; symptoms and progression are.",
+          "Waiting a full year is not required when symptoms are severe or progressing.",
+          "A stable mild deficit is not an emergency; progressive deficit would change that.",
+          "",
+          "Relief is not identical early on, since surgery does bring leg pain down faster."
+        ]
+      },
+      {
+        "q": "Which single element of the history is the strongest red flag for malignancy as a cause of back pain?",
+        "ch": [
+          "Pain that has lasted longer than six weeks",
+          "Pain that is worse on sitting than standing",
+          "A known history of cancer",
+          "Tenderness over the paraspinal muscles",
+          "Pain that radiates into the buttock"
+        ],
+        "correct": 2,
+        "exp": "A known history of cancer is the single strongest red flag for malignancy. Unexplained weight loss, pain worse at night or at rest, and a new pattern over the age of 50 add to the concern.",
+        "why": [
+          "Duration beyond six weeks prompts reassessment but is not itself a malignancy flag.",
+          "Positional preference is a mechanical feature and does not indicate malignancy.",
+          "",
+          "Paraspinal tenderness is nonspecific and common in ordinary mechanical pain.",
+          "Buttock radiation is common in mechanical and radicular pain alike."
+        ]
+      },
+      {
+        "q": "A claim for low back pain is rejected because of the diagnosis code. Which code should be used?",
+        "ch": [
+          "M54.9, which covers unspecified dorsalgia",
+          "M54.5, which remains the standard code for low back pain",
+          "M54.4, which covers lumbago with sciatica",
+          "M51.2, which covers other intervertebral disc displacement",
+          "M54.50, M54.51 or M54.59, coded to the specific type of low back pain"
+        ],
+        "correct": 4,
+        "exp": "Code low back pain as M54.50 when unspecified, M54.51 when vertebrogenic, or M54.59 for other low back pain. The older combined code was retired when these were introduced, so a claim submitted on it is rejected.",
+        "why": [
+          "M54.9 is unspecified dorsalgia and is less accurate when the pain is clearly lumbar.",
+          "M54.5 was retired and split into more specific codes, so it is no longer accepted.",
+          "M54.4 describes lumbago with sciatica, a different clinical entity from isolated low back pain.",
+          "M51.2 describes disc displacement, which is not the same as nonspecific low back pain.",
+          ""
+        ]
+      }
     ]
-   },
-   {
-    "q": "A 79-year-old cannot bear weight on her right hip after a fall, but the AP pelvis and cross-table lateral radiographs look normal. What is the next step?",
-    "ch": [
-     "Start physiotherapy to restore weight bearing gradually",
-     "Obtain a bone scan, which is the test of choice within 24 hours",
-     "Discharge with analgesia and a diagnosis of soft-tissue strain",
-     "Repeat the same radiographs in two weeks to look for callus",
-     "Order MRI of the hip to look for an occult fracture"
-    ],
-    "correct": 4,
-    "exp": "A normal radiograph does not exclude a hip fracture. If the patient cannot bear weight and the films look clean, MRI (or CT where MRI is unavailable) is indicated for an occult or nondisplaced fracture; discharging as a strain risks displacement.",
-    "why": [
-     "Physiotherapy to load an undiagnosed fracture would be actively harmful.",
-     "A bone scan is insensitive in the first 24 to 72 hours in older adults, so it is not the immediate test.",
-     "Discharging her as a strain is the specific error this presentation sets up, and risks the fracture displacing.",
-     "Waiting two weeks leaves a potentially unstable fracture unprotected and delays definitive care.",
-     ""
-    ]
-   },
-   {
-    "q": "An otherwise stable 80-year-old is admitted with an intertrochanteric fracture at 22:00. What is the recommended timing of surgery?",
-    "ch": [
-     "Only after the osteoporosis workup is complete",
-     "Within 2 hours, treating it as a vascular emergency",
-     "After 7 days of traction to allow the swelling to settle",
-     "Once she has completed a full cardiac stress test",
-     "Generally within 24 to 48 hours of admission"
-    ],
-    "correct": 4,
-    "exp": "Surgery is generally performed within 24 to 48 hours. Delay beyond that tracks with more pneumonia, delirium and pressure injury, so the debate is about how much earlier helps rather than whether waiting causes harm.",
-    "why": [
-     "The osteoporosis workup proceeds alongside admission and must never delay the operation.",
-     "This is not a vascular emergency requiring surgery within two hours in a stable patient.",
-     "Traction has no role and a week of immobility would cause exactly the complications surgery is meant to avoid.",
-     "Routine stress testing delays surgery without improving outcomes in this population.",
-     ""
-    ]
-   },
-   {
-    "q": "Which intervention on arrival in the emergency department most directly reduces this patient's risk of delirium?",
-    "ch": [
-     "Providing a fascia iliaca or femoral nerve block early",
-     "Applying skin traction to the injured leg for comfort",
-     "Withholding all opioids to avoid confusion",
-     "Prescribing a prophylactic antipsychotic on admission",
-     "Keeping her NPO from arrival until surgery"
-    ],
-    "correct": 0,
-    "exp": "Early regional block gives better pain control with far less opioid, which is the point in a patient at high delirium risk. Undertreated pain is itself a cause of delirium, so the aim is the least opioid that allows movement, not none.",
-    "why": [
-     "",
-     "Traction does not improve pain or outcomes and has no role in hip fracture care.",
-     "Withholding analgesia backfires, because undertreated pain is itself a potent cause of delirium.",
-     "Prophylactic antipsychotics are not the recommended approach to preventing delirium here.",
-     "Prolonged fasting causes dehydration and distress, both of which worsen delirium risk."
-    ]
-   },
-   {
-    "q": "Two days after hemiarthroplasty, the team plans secondary fracture prevention. Which statement about intravenous zoledronic acid after hip fracture repair is correct?",
-    "ch": [
-     "It reduced new clinical fractures and also all-cause mortality",
-     "It reduced radiographic fractures only, with no clinical benefit",
-     "It should be withheld for a full year after any hip surgery",
-     "It is given without attention to vitamin D or calcium status",
-     "It is contraindicated once a hip has been replaced"
-    ],
-    "correct": 0,
-    "exp": "In the HORIZON-RFT trial, annual zoledronic acid started after surgical repair of hip fracture reduced new clinical fractures and also lowered all-cause mortality, which is an unusual finding for a bone drug. Vitamin D must be repleted first to avoid symptomatic hypocalcemia.",
-    "why": [
-     "",
-     "The benefit was in clinical fractures, not a radiographic surrogate, and mortality was also reduced.",
-     "Waiting a year forfeits the window in which refracture risk is highest.",
-     "Vitamin D and calcium status must be corrected first, or symptomatic hypocalcemia can follow.",
-     "Arthroplasty is not a contraindication; the remaining skeleton is still osteoporotic."
-    ]
-   },
-   {
-    "q": "The anesthetist discusses spinal versus general anesthesia with the family. What did the REGAIN trial find?",
-    "ch": [
-     "Spinal anesthesia halved the incidence of postoperative delirium",
-     "General anesthesia produced significantly better ambulation at 60 days",
-     "Spinal anesthesia significantly reduced 60-day mortality",
-     "Similar outcomes for death, ambulation and delirium between the two",
-     "General anesthesia significantly reduced the need for transfusion"
-    ],
-    "correct": 3,
-    "exp": "REGAIN found no meaningful difference between spinal and general anesthesia in death, ability to walk at 60 days, or delirium. The choice is therefore individualized to the patient rather than applied dogmatically.",
-    "why": [
-     "Delirium rates were similar; spinal anesthesia did not halve them.",
-     "Ambulation at 60 days did not differ significantly between the techniques.",
-     "Mortality was not significantly reduced by spinal anesthesia.",
-     "",
-     "Transfusion requirement was not the trial's finding and does not drive the decision."
-    ]
-   },
-   {
-    "q": "A 74-year-old on alendronate for nine years reports several weeks of dull right thigh pain, then sustains a fracture after a minor stumble. Which feature most supports an atypical femoral fracture?",
-    "ch": [
-     "An oblique fracture through the femoral neck with comminution",
-     "A transverse subtrochanteric or diaphyseal fracture with prodromal pain",
-     "A spiral fracture of the distal femur with marked shortening",
-     "An intertrochanteric fracture with a large posteromedial fragment",
-     "A displaced femoral neck fracture with external rotation"
-    ],
-    "correct": 1,
-    "exp": "Atypical femoral fracture in a long-term bisphosphonate user is a transverse subtrochanteric or diaphyseal fracture, often preceded by weeks of prodromal thigh pain. The opposite femur should be imaged as well.",
-    "why": [
-     "A comminuted femoral neck fracture is a typical fragility pattern, not the atypical one.",
-     "",
-     "Spiral distal femoral fractures reflect torsional injury rather than bisphosphonate-associated bone.",
-     "An intertrochanteric fracture with a posteromedial fragment is a common ordinary fragility pattern.",
-     "A displaced neck fracture with external rotation is the classic typical hip fracture presentation."
-    ]
-   },
-   {
-    "q": "A 78-year-old is admitted with a hip fracture after being found on the floor with no recollection of falling. Beyond fixing the bone, what does this history oblige the team to do?",
-    "ch": [
-     "Restrict the workup to the hip, since the fall is explained by frailty",
-     "Delay surgery until an extensive syncope workup is finished",
-     "Establish why she fell, since the fracture may be the least dangerous finding",
-     "Attribute it to osteoporosis and start treatment without further thought",
-     "Arrange outpatient cardiology review after discharge and nothing sooner"
-    ],
-    "correct": 2,
-    "exp": "A fall with no adequate mechanism is a workup, not just a fracture. Cardiac, neurologic, infectious and iatrogenic causes all present as a hip fracture in an older adult, and the precipitant may matter more than the break.",
-    "why": [
-     "Assuming frailty explains an unwitnessed collapse risks missing arrhythmia, sepsis or hypoglycemia.",
-     "The cause is investigated alongside admission; a prolonged workup must not delay surgery.",
-     "",
-     "Osteoporosis treatment is necessary but does not address why she lost consciousness or balance.",
-     "Deferring everything to outpatient follow-up leaves a potentially dangerous cause unexamined."
-    ]
-   },
-   {
-    "q": "Which statement best conveys the prognosis of hip fracture in an older adult?",
-    "ch": [
-     "Nearly all patients regain their previous level of mobility",
-     "It carries no greater risk than an isolated wrist fracture",
-     "One-year mortality exceeds 70 percent regardless of treatment",
-     "Roughly 20 to 30 percent die within a year of the fracture",
-     "Mortality at one year is under 5 percent with modern fixation"
-    ],
-    "correct": 3,
-    "exp": "Roughly 20 to 30 percent of older adults die within a year of a hip fracture, and many never regain their previous mobility or independence. The fracture behaves as a sentinel event rather than an isolated injury.",
-    "why": [
-     "Many patients never return to their prior mobility, which is central to why this matters.",
-     "A hip fracture carries far greater morbidity and mortality than a distal forearm fracture.",
-     "Over 70 percent overstates it; the figure is roughly one in four to one in five.",
-     "",
-     "Under 5 percent understates the risk substantially and would misrepresent the seriousness of the diagnosis."
-    ]
-   }
-  ]
- },
- "back-pain": {
-  "condition": "Low Back Pain",
-  "questions": [
-   {
-    "q": "A 48-year-old with three days of low back pain now reports difficulty starting his urinary stream and numbness when wiping. Which finding is the most reliable indicator of cauda equina syndrome?",
-    "ch": [
-     "Midline tenderness over the lumbar spinous processes",
-     "Pain radiating below the knee bilaterally",
-     "A positive straight-leg raise on the more painful side",
-     "Absent ankle reflex with weak plantarflexion",
-     "Urinary retention with overflow incontinence"
-    ],
-    "correct": 4,
-    "exp": "Urinary retention with overflow incontinence is the most reliable finding in cauda equina syndrome. Saddle anesthesia, bilateral sciatica and reduced anal tone support it, and the response is urgent MRI with immediate surgical referral.",
-    "why": [
-     "Midline tenderness is nonspecific and does not distinguish cauda equina from mechanical pain.",
-     "Bilateral radiation is suggestive and should raise concern, but retention is the more reliable sign.",
-     "A positive straight-leg raise indicates radicular irritation and is present in ordinary sciatica.",
-     "An absent ankle reflex localizes an S1 radiculopathy but is not the defining feature here.",
-     ""
-    ]
-   },
-   {
-    "q": "A 35-year-old has two weeks of axial low back pain after moving house. There are no red flags and the neurologic exam is normal. She asks for an MRI. What is the best response?",
-    "ch": [
-     "Order MRI now, since it will reassure her and guide treatment",
-     "Order plain radiographs now and MRI if they are abnormal",
-     "Defer imaging, because it does not improve outcomes and leads to more procedures",
-     "Order MRI only if she has not improved within 72 hours",
-     "Order CT, which shows the discs as well as MRI with less delay"
-    ],
-    "correct": 2,
-    "exp": "Imaging is not indicated for nonspecific low back pain in the first six weeks without red flags. It does not improve outcomes, it finds degeneration that is near-universal with age, and that finding drives procedures without reducing pain.",
-    "why": [
-     "Early MRI does not reassure durably and leads to more intervention without better pain outcomes.",
-     "Radiographs add radiation and incidental findings without changing management here.",
-     "",
-     "Seventy-two hours is far too short a window; most episodes take weeks to settle.",
-     "CT adds substantial radiation and is not the appropriate first test for this presentation."
-    ]
-   },
-   {
-    "q": "A 70-year-old describes buttock and thigh pain on walking that eases when he leans over a shopping cart, with normal foot pulses. Which feature best distinguishes this from vascular claudication?",
-    "ch": [
-     "The symptoms are relieved by lumbar flexion such as leaning forward",
-     "The pain begins only after a fixed and reproducible walking distance",
-     "The pain resolves within two minutes of standing still",
-     "The pain is described as cramping rather than burning",
-     "The pain is bilateral rather than confined to one leg"
-    ],
-    "correct": 0,
-    "exp": "Neurogenic claudication from spinal stenosis eases with flexion, such as sitting or leaning forward, and is often worse walking downhill. Preserved pulses support it. Extension worsens it, which is the reverse of most mechanical back pain.",
-    "why": [
-     "",
-     "A fixed claudication distance is more characteristic of vascular disease than of stenosis.",
-     "Rapid relief on standing still favours a vascular cause; neurogenic pain needs flexion.",
-     "The quality of the pain is unreliable for distinguishing these two conditions.",
-     "Vascular claudication can also be bilateral, so laterality does not separate the two."
-    ]
-   },
-   {
-    "q": "A 28-year-old has six months of low back pain with an hour of morning stiffness that improves once he starts moving, and pain waking him in the second half of the night. What should this raise?",
-    "ch": [
-     "Chronic pain syndrome driven by psychosocial factors",
-     "Ordinary mechanical low back pain requiring only reassurance",
-     "Lumbar disc herniation with an early radiculopathy",
-     "Axial spondyloarthritis",
-     "Vertebral compression fracture from occult osteoporosis"
-    ],
-    "correct": 3,
-    "exp": "Inflammatory back pain improves with movement and is worse with rest, with onset before 45, morning stiffness over 30 minutes, and pain in the second half of the night. That reversal of the usual pattern should raise axial spondyloarthritis rather than another course of NSAIDs without follow-up.",
-    "why": [
-     "Labelling this psychosocial would miss a treatable inflammatory disease with a clear pattern.",
-     "Mechanical pain is typically worse with activity and better with rest, which is the opposite pattern.",
-     "Disc herniation causes radicular leg pain rather than inflammatory morning stiffness.",
-     "",
-     "Compression fracture is unlikely at 28 without steroids or trauma, and does not improve with exercise."
-    ]
-   },
-   {
-    "q": "Which statement about acetaminophen for acute low back pain is correct?",
-    "ch": [
-     "It shortens the duration of an episode by about two weeks",
-     "A randomized trial found no benefit over placebo",
-     "It is more effective than NSAIDs and is first-line therapy",
-     "It works only when combined with a muscle relaxant",
-     "It is contraindicated in acute low back pain"
-    ],
-    "correct": 1,
-    "exp": "The PACE trial found no benefit of paracetamol over placebo for acute low back pain. It remains a reasonable option, particularly where NSAIDs are contraindicated, but it should not be promised as effective.",
-    "why": [
-     "No agent has been shown to shorten an episode by two weeks.",
-     "",
-     "NSAIDs are the first-line pharmacotherapy; acetaminophen did not outperform placebo.",
-     "There is no evidence that its effect depends on adding a muscle relaxant.",
-     "It is not contraindicated, merely unimpressive for this indication."
-    ]
-   },
-   {
-    "q": "A 52-year-old has six weeks of sciatica with pain radiating to the lateral calf and no motor deficit. Which drug is not recommended for this?",
-    "ch": [
-     "Naproxen taken regularly for a short period",
-     "Pregabalin titrated for the neuropathic component",
-     "Cyclobenzaprine at night for a few days",
-     "Acetaminophen as an adjunct to an NSAID",
-     "Duloxetine if the pain becomes chronic"
-    ],
-    "correct": 1,
-    "exp": "Pregabalin did not reduce sciatica pain in a randomized trial and caused more adverse events, so gabapentinoids are not recommended for sciatica despite the pain sounding neuropathic.",
-    "why": [
-     "NSAIDs remain the reasonable first-line pharmacotherapy here.",
-     "",
-     "A short course of a muscle relaxant is an accepted option, limited by sedation.",
-     "Acetaminophen is a reasonable adjunct even though its effect is modest.",
-     "Duloxetine is one of the few agents with evidence in chronic rather than acute pain."
-    ]
-   },
-   {
-    "q": "A 60-year-old with two years of low back pain and no red flags asks for something stronger than ibuprofen. What does the evidence support telling her about opioids?",
-    "ch": [
-     "They should be avoided, and were no better than non-opioids for chronic pain",
-     "They are safe long term provided the dose stays below a set threshold",
-     "They work well for pain but not for restoring function",
-     "They are indicated once NSAIDs have been tried for a month",
-     "They are the preferred option when imaging shows degeneration"
-    ],
-    "correct": 0,
-    "exp": "Opioids should be avoided for chronic low back pain. In a randomized comparison they were no better than non-opioid medications for pain-related function, with more adverse effects. First-line care for chronic pain is non-pharmacologic.",
-    "why": [
-     "",
-     "Long-term safety below a dose threshold is not supported for this indication.",
-     "They were not superior for pain either, so this understates the finding.",
-     "A month of NSAIDs does not establish an indication for opioids in chronic back pain.",
-     "Degeneration on imaging is near-universal with age and is not an indication for opioids."
-    ]
-   },
-   {
-    "q": "A 45-year-old has eight weeks of severe sciatica with a stable, mild foot weakness. He asks whether surgery will help. What is the most accurate summary?",
-    "ch": [
-     "Surgery should be deferred until the MRI shows a larger herniation",
-     "Surgery is only considered once symptoms exceed twelve months",
-     "Surgery is required now to prevent permanent nerve damage",
-     "Surgery relieves leg pain faster, but outcomes converge by one to two years",
-     "Surgery and conservative care give identical relief at every time point"
-    ],
-    "correct": 3,
-    "exp": "Most sciatica improves without surgery. Discectomy relieves leg pain faster, but outcomes converge by one to two years, so the operation is offered for severity and progression rather than because of the MRI appearance.",
-    "why": [
-     "Herniation size on MRI is not what drives the decision; symptoms and progression are.",
-     "Waiting a full year is not required when symptoms are severe or progressing.",
-     "A stable mild deficit is not an emergency; progressive deficit would change that.",
-     "",
-     "Relief is not identical early on, since surgery does bring leg pain down faster."
-    ]
-   },
-   {
-    "q": "Which single element of the history is the strongest red flag for malignancy as a cause of back pain?",
-    "ch": [
-     "Pain that has lasted longer than six weeks",
-     "Pain that is worse on sitting than standing",
-     "A known history of cancer",
-     "Tenderness over the paraspinal muscles",
-     "Pain that radiates into the buttock"
-    ],
-    "correct": 2,
-    "exp": "A known history of cancer is the single strongest red flag for malignancy. Unexplained weight loss, pain worse at night or at rest, and a new pattern over the age of 50 add to the concern.",
-    "why": [
-     "Duration beyond six weeks prompts reassessment but is not itself a malignancy flag.",
-     "Positional preference is a mechanical feature and does not indicate malignancy.",
-     "",
-     "Paraspinal tenderness is nonspecific and common in ordinary mechanical pain.",
-     "Buttock radiation is common in mechanical and radicular pain alike."
-    ]
-   },
-   {
-    "q": "A claim for low back pain is rejected because of the diagnosis code. Which code should be used?",
-    "ch": [
-     "M54.9, which covers unspecified dorsalgia",
-     "M54.5, which remains the standard code for low back pain",
-     "M54.4, which covers lumbago with sciatica",
-     "M51.2, which covers other intervertebral disc displacement",
-     "M54.50, M54.51 or M54.59, coded to the specific type of low back pain"
-    ],
-    "correct": 4,
-    "exp": "Code low back pain as M54.50 when unspecified, M54.51 when vertebrogenic, or M54.59 for other low back pain. The older combined code was retired when these were introduced, so a claim submitted on it is rejected.",
-    "why": [
-     "M54.9 is unspecified dorsalgia and is less accurate when the pain is clearly lumbar.",
-     "M54.5 was retired and split into more specific codes, so it is no longer accepted.",
-     "M54.4 describes lumbago with sciatica, a different clinical entity from isolated low back pain.",
-     "M51.2 describes disc displacement, which is not the same as nonspecific low back pain.",
-     ""
-    ]
-   }
-  ]
- }
+  }
 }
