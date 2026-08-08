@@ -219,6 +219,27 @@ no backend. This file is context for future sessions — read it before starting
     through the live worker the PDF returns byte-exact (1,937,012 bytes, `%PDF-`, right content
     type), so it is reasoning rather than a reproduced failure, and `sw.js` is not the file to
     change on a hunch. Revisit only with a reproduction.
+  - **A LINK share can never offer "Save to Files"** — reported 2026-08-08 as a missing option in
+    the share panel. `rcShareGallery` passes `{title,text,url}`; iOS only shows Save to Files, and
+    only attaches a document to AirDrop/Messages/Mail, when the payload contains a **File**. The
+    tells that a sheet is a link share: the Safari compass icon, the site as subtitle, and "Add to
+    Reading List". **Read the sheet before assuming the handler is broken** — twice now a working
+    control has been reported as a bug because the sheet did not carry what was expected.
+  - **The PDF button shares a File as of v73**, which is the sheet that has Save to Files. Three
+    parts, each a branch with a test in `scripts/verify_gallery_pdf_share.js`:
+    **the fetch starts on `pointerdown`**, because `navigator.share` must be reached while the tap
+    still counts as user activation and awaiting 2–5 MB inside that window is what breaks it;
+    **`AbortError` returns silently**, because a swiped-away sheet is a decision and falling back
+    there hands the reader a download they just declined; and **the fallback is the v72 new tab**,
+    with `navigator.canShare` feature-detected synchronously against a one-byte stand-in `File`
+    before anything is fetched. The guard fails seven checks on the pre-v73 build.
+  - **The header's link share is deliberately NOT the PDF share.** It exists so a colleague can be
+    sent a link that opens the gallery; attaching several megabytes changes what the button means.
+    Two controls, two payloads — keep them apart.
+  - **iOS cannot be tested from a session** — no WebKit, no device. Everything above was driven in
+    Chromium with the share API stubbed, so whether Safari accepts a share after an awaited fetch
+    is the physician's test. Design the fallback so a refusal lands on the previously working
+    behaviour, and say plainly which part is unverified.
   - **A PDF navigation is a DOWNLOAD in headless Chromium, so Playwright reports a 345-byte body
     for it.** That read like service-worker corruption and was nearly reported as one; the control
     — same navigation in a context with no worker registered — returns the same 345 bytes. To

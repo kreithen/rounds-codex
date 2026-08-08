@@ -1393,3 +1393,32 @@ gets a reproduction.
 
 Also worth knowing: **all 100 gallery PDFs are on disk, 150 MB total**, largest `endocarditis` at
 4.89 MB. None are in `sw.js` `CORE`.
+
+## v73 — the gallery PDF shares as a file (2026-08-08)
+
+Follow-up to v72, from the same iPhone session: the share panel had no "Save to Files".
+
+**It could not have.** That panel was the header's green button — `rcShareGallery`, a *link*
+share. iOS offers Save to Files only when the payload carries a **File**. The sheet said so:
+Safari compass icon, site as subtitle, "Add to Reading List". That is the second time in one
+session a working control was reported as broken because the sheet did not carry what was
+expected — **read the sheet before suspecting the handler.**
+
+The PDF button now shares the PDF as a File, which is the "1 Link and 1 Document" sheet the
+physician had already seen from the condition-page export. Three branches, each tested:
+
+| branch | behaviour |
+|---|---|
+| no file-share support | opens the v72 tab, never fetches |
+| file share available | shares a File, real bytes, named for the gallery |
+| sheet dismissed | nothing — `AbortError` is a decision, not a failure |
+| share refused | falls back to the v72 tab |
+
+The fetch starts on **pointerdown**, because `navigator.share` has to be reached inside the tap's
+user activation and awaiting 2–5 MB is what breaks that. It only fires with a finger on the button.
+
+**The header's link share is unchanged** and should stay that way — two controls, two payloads.
+
+**Unverified: iOS.** This container has no WebKit and no device, so the positive branches were
+driven with `canShare`/`share` stubbed. Whether Safari accepts a share after an awaited fetch is
+the physician's test — which is why a refusal lands on the behaviour v72 already proved works.
