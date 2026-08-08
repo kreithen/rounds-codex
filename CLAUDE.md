@@ -238,8 +238,22 @@ no backend. This file is context for future sessions — read it before starting
     Two controls, two payloads — keep them apart.
   - **iOS cannot be tested from a session** — no WebKit, no device. Everything above was driven in
     Chromium with the share API stubbed, so whether Safari accepts a share after an awaited fetch
-    is the physician's test. Design the fallback so a refusal lands on the previously working
+    was the physician's test. Design the fallback so a refusal lands on the previously working
     behaviour, and say plainly which part is unverified.
+  - **CONFIRMED on an iPhone 2026-08-08: `navigator.share({files})` DOES work after an awaited
+    fetch**, with the fetch warmed on `pointerdown`. So the activation window is survivable on iOS
+    Safari for a multi-megabyte file — do not assume otherwise next time, and do not pre-emptively
+    give up on a file share because of the gesture rule.
+  - **The gallery header's share button was REMOVED in v74** (physician's call) once the PDF button
+    raised a real file sheet: two share-looking controls one above the other, doing different
+    things, is worse than one. Consequence, stated because it is invisible in the diff: there is now
+    **no way to produce a `/g/<id>` link from inside the app**. The route is untouched, so links
+    already shared still open, and `rcSyncURL` still shows `/g/<id>` while a gallery is open, so it
+    can be copied from the address bar. `rcShareGallery` is **retained with no call site and a
+    comment saying so** — restoring the button is a one-line change; delete the function and it is
+    a rewrite. The gallery INDEX (`/g/`) keeps its own `.g-share` button, which is
+    `rcShareGalleries` — same class, different control, so **do not grep for `.g-share` and remove
+    both.**
   - **A PDF navigation is a DOWNLOAD in headless Chromium, so Playwright reports a 345-byte body
     for it.** That read like service-worker corruption and was nearly reported as one; the control
     — same navigation in a context with no worker registered — returns the same 345 bytes. To

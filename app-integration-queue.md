@@ -1422,3 +1422,27 @@ user activation and awaiting 2–5 MB is what breaks that. It only fires with a 
 **Unverified: iOS.** This container has no WebKit and no device, so the positive branches were
 driven with `canShare`/`share` stubbed. Whether Safari accepts a share after an awaited fetch is
 the physician's test — which is why a refusal lands on the behaviour v72 already proved works.
+
+## v74 — the gallery header share button removed (2026-08-08)
+
+Physician's call once the PDF button raised a real file sheet: *"It worked with the new button. We
+can now get rid of the small green share button upper right corner."*
+
+**That also closes the question v73 left open: `navigator.share({files})` works on iOS Safari after
+an awaited fetch**, with the fetch warmed on `pointerdown`. The activation window is survivable for
+a multi-megabyte file — worth knowing before anyone designs around the gesture rule again.
+
+**What removing it costs.** `rcShareGallery` had exactly one call site, so there is no longer a way
+to produce a `/g/<id>` link from inside the app. Raised before doing it, not after. The route is
+untouched and independent — a shared link still opens, verified — and `rcSyncURL` still shows
+`/g/<id>` while a gallery is open, so the link is copyable from the address bar.
+
+**Three things deliberately left alone**, each of which a careless grep would have taken out:
+
+- the identical-looking button on the gallery **index** (`/g/`), which is `rcShareGalleries` — same
+  CSS class, different control;
+- the `.g-share` rule, still used by that index button;
+- `rcShareGallery` itself, kept with a comment explaining why, so restoring the button is one line.
+
+Checked and left alone: the "Expert Curated Images" line wraps to two lines at 390 and 430px.
+Measured on both builds — identical before and after, so pre-existing.
