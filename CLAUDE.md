@@ -26,6 +26,14 @@ no backend. This file is context for future sessions — read it before starting
   `index.html`, so the live site 404s while Netlify reports "Published". That happened. And the
   last good deploy before the break had `deploy_source: "api"`, not a git build — so git-triggered
   builds may have been failing before anyone noticed.
+  **`deploy_source: "api"` turns out to be normal for this site — corrected 2026-08-08.** The v70
+  audio deploy carried `deploy_source: "api"` *and* `commit_ref` equal to the pushed commit with
+  `manual_deploy: false`, i.e. a genuine git-triggered build. Judge a deploy by `commit_ref` and
+  `state`, not by that label.
+  **Do not query the connector straight after pushing.** At ~1 minute the project's `currentDeploy`
+  still pointed at the two-day-old deploy, which reads exactly like "the push produced no deploy" —
+  the thing this section warns about. Wait ~90s; v70 was `ready` 43s after the push and visible
+  shortly after.
   **Nothing alerted for 16 hours.** Turn on Netlify's failed-deploy notification, and check
   `/version.txt` (added 2026-07-31) after every deploy rather than assuming a push shipped.
 - **The live site itself is still unreachable** — the agent proxy 403s rounds-codex.netlify.app.
@@ -209,11 +217,29 @@ no backend. This file is context for future sessions — read it before starting
     silently never starts**; iOS surfaces one media element per page as the now-playing item,
     so a per-node element loses the CarPlay session at every navigation; and two elements
     means two recordings talking over each other.
-  - **13 recordings as of 2026-08-03**, all Cardiac (chf, acs, afib, htn, aortic-stenosis,
-    endocarditis, pericarditis, cardiomyopathy, pad, dvt, aortic-dissection, cardiac-arrest,
-    hyperlipidemia). **`rcapOrder()` builds the chain from `DATA` order filtered by `RC_AUDIO`,
-    not from key order**, so where an entry sits in the literal is cosmetic — but the LAST id in
-    DATA order gets a dead forward button, by design.
+  - **31 recordings live as of 2026-08-08 (v70): Cardiac 13/13, Respiratory 10/10,
+    Endocrine 8/13.** Which five Endocrine conditions are still missing: get it from `--list`,
+    not from memory. **`rcapOrder()` builds the chain from `DATA` order
+    filtered by `RC_AUDIO`, not from key order**, so where an entry sits in the literal is
+    cosmetic.
+  - **Use `scripts/add_audio_recording.js <site-root> <id> <title> <file.mp3>`** — do not hand-edit
+    the `RC_AUDIO` literal. It walks the MP3 frames for the duration (validated against the shipped
+    `chf.mp3` to 8 microseconds), inserts in DATA order, and hard-errors rather than overwriting an
+    existing path. `--list` prints every recording with its forward and chain targets.
+    `scripts/verify_condition_audio.js` then checks each bar against what `RC_AUDIO` declares.
+    **Its warm-up page is load-bearing**: the first page in a cold context is still fetching
+    `content/*.json` when a short wait expires, so the bar has not painted and a good build reads
+    as broken. If it ever reports exactly one failure and it is the first id in `IDS`, suspect the
+    harness.
+  - **Forward is scoped to the MODULE, so there are now THREE dead forward buttons**, not one —
+    `hyperlipidemia` (last Cardiac), `osa` (last Respiratory) and `cushings` (last Endocrine). All
+    by design. Continuous play still crosses categories in DATA order, so `aortic-stenosis` → copd
+    and `pe` → endocarditis.
+  - **`assets/audio` is 180 MB.** Deliberately absent from `sw.js` `CORE`, so it costs web visitors
+    nothing at install — but it is most of the budget for getting the native download under 250 MB.
+    Settle whether that build streams rather than bundles before the last Endocrine five land.
+    Three superseded files (`afib.mp3`, `cardiac-arrest.mp3`, `hyperlipidemia.mp3`) are still on
+    disk and referenced by nothing.
   - **A re-record gets a NEW FILENAME** (`afib-2.mp3`), never a new body at the old path:
     `/assets/audio/*` is served `immutable` for a year. **This applies to a mis-mapping too** —
     hyperlipidemia and cardiac-arrest shipped under each other's names on 2026-08-03 and the fix
