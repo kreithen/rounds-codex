@@ -1,5 +1,5 @@
 {
-  "_note": "Titles read visually from the subtitle line under the main heading, and page numbers from the 'IMAGE n OF 10' header — never from filenames or arrival order. Read off the screenshots the physician sent on 2026-08-08 (pages 1-5, then 6-10); RE-CHECK against the delivered files before building, because the screenshots were chat-scaled and page 1 carries no subtitle line, so its title is the one taken from the footer IMAGE TITLE field, which has been unreliable in past batches.",
+  "_note": "VERIFIED and BUILT 2026-08-08 (v80). Page numbers and titles were confirmed by OCR of each page's own 'IMAGE n OF 10' header strip and its footer IMAGE TITLE field -- never filenames or arrival order, since every batch so far has arrived shuffled. All ten matched the titles read earlier from screenshots. Masters are the <id>-NN.png files beside this one, 1024x1536 (page 1 arrived 1023x1537 and the builder resampled it). Known defects are in PRODUCTION-CORRECTIONS-MSK.md: pages 6-10 render nine progress dots, page 4 has a 'fanction' typo, page 9 splits 'Muscle relaxants' across two bullets. Re-rendered pages drop in over the PNGs and rebuild with the same command plus rebuild_gallery_pdf.py.",
   "1": "Overview",
   "2": "Anatomy Overview",
   "3": "Pathophysiology",
