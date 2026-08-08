@@ -470,6 +470,26 @@ no backend. This file is context for future sessions — read it before starting
   **After `balance_answers.js`, check the answer TEXT survived the rotation**, not that the file
   still validates: the rotation rewrites `ch[]`, `correct` and `why[]` together, and a bug there
   marks a distractor as the answer while every structural check still passes.
+  **`scripts/audit_module_quiz_gaps.py` sweeps the bank for two defect classes found 2026-08-08.
+  Its calibration numbers are in the docstring and are the point** — a checker's worth is what it
+  found, not what it was for. `--check C2 --gate` is a real guard (one duration stated two ways in
+  one module: fails on the pre-fix content naming the back-pain defect, passes after, one listed
+  false positive). `C3` (two numbers on one subject) is a **review aid, not a gate** — 12 hits over
+  183 modules, 8 distinct, and reading all 8 by hand found one worth changing.
+  **`C1` does not work, and the useful result is the negative one — do not rebuild it.** Scoped to
+  the whole question, "an abbreviation the module never introduces" gives 225 hits at ~0.4%
+  precision, because **a distractor referencing untaught material is how a distractor WORKS**.
+  Scoped to the correct answer's own rationale it gives 0 hits on the pre-fix content as well as
+  the shipped content, so it would never have caught anything. It does establish one invariant
+  worth stating (no correct answer's rationale turns on an abbreviation absent from its module),
+  but the defect it was built from — the Hip Fracture quiz marking prolonged **NPO** incorrect
+  while the module never mentioned fasting — lived in a **distractor**, and that class is
+  **NOT MECHANISABLE**: deciding whether a distractor is *eliminable from the module* is a reading
+  judgement. **Accepted as a known gap (physician's call, 2026-08-08)** rather than papered over
+  with a noisy checker; new content is covered by the physician's own review. Found originally only
+  because a gallery page happened to give bad fasting advice, which is not a systematic route
+  either — so if a quiz option ever looks unanswerable from the module, that is a real finding and
+  no tool will have flagged it.
   (historic) **181/181, 1,820 questions as of 2026-07-29.** 24 were
   transcribed from the physician's PDFs; the rest were authored from each condition's own module
   text by agent fan-out. Pipeline: author to `quizzes-staging/authored/<file>.json` →

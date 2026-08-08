@@ -10,7 +10,9 @@ root-level gthumbs/ set -- thumbs resolve as base + thumb.
 import json, os, sys
 from PIL import Image
 
-APP = '/workspace/rounds-codex-app'
+# RC_APP lets the build be rehearsed against a throwaway tree before the real pages exist.
+# Defaults to the live working copy, so nothing about an ordinary run changes.
+APP = os.environ.get('RC_APP', '/workspace/rounds-codex-app')
 SRC = '/home/user/rounds-codex/galleries-staging'
 PAGE_Q, THUMB_W, THUMB_Q = 88, 320, 82
 # The compact download PDF embeds pages at 512x768 -- matched to the live galleries, which

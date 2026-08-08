@@ -99,7 +99,17 @@ def check(root, gid, g):
             if pd > PAGE_MAX:
                 bad.append(f'{gid} p{i+1}: page content differs from the served page (diff {pd:.1f})')
 
-        # identity: each PDF page must match its OWN source page best, or the order has moved
+        # identity: each PDF page must match its OWN source page best, or the order has moved.
+        #
+        # KNOWN LIMIT, measured 2026-08-08: this is a nearest-neighbour match, so it needs the
+        # pages to be distinguishable at 120x180. Two pages that differ only in small text will
+        # tie, and the argmin picks one arbitrarily -- reported as "PDF order is wrong" on a
+        # correctly ordered PDF. Reproduced with synthetic stand-in pages differing by one line of
+        # body text (flagged p9 as p6); the control, same builder with visibly distinct pages,
+        # passed clean. Real gallery pages carry different artwork, headings and diagrams, so this
+        # does not bite in practice -- but if it ever fires on a real gallery, LOOK AT THE TWO
+        # PAGES IT NAMES before rebuilding anything. A near-duplicate pair is the likelier
+        # explanation than a reordered PDF, and rebuilding would "fix" nothing.
         if len(embeds) == len(srcs) and len(srcs) > 1:
             small_s = [arr(s.resize(embeds[0].size, Image.LANCZOS), (120, 180)) for s in srcs]
             for i, e in enumerate(embeds):
