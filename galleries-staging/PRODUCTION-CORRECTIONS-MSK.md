@@ -34,15 +34,29 @@ It is legally required text on every page, so it should not be able to collide w
 they are, which is why this one matters.** It has now appeared with the count wrong, the fill
 cumulative, the fill inverted, and the index off by one in both directions — across several batches.
 
-Hip Fracture:
+Hip Fracture — **REVISED against full-resolution pages, and largely retracted:**
 
-| pages | dots | fill | verdict |
-|---|---|---|---|
-| 4, 5, 6, 7, 8, 9 | 10 | current page | **correct** |
-| 2 | 10 | 1st — one too early | wrong |
-| 3 | appears to be 11 | 4th — one too late | wrong |
-| 1 | appears to be 11 | 1st | check the count |
+| page | dots | fill | verdict |
+|---:|---:|---|---|
+| 1 | **10** | 1st | **correct** — an earlier report of 11 dots was wrong |
+| 3 | **10** | 3rd | **correct** — an earlier report of 11 dots / 4th fill was wrong |
+| 4 | 10 | 4th | **correct** |
+| 5 | 10 | 5th | **correct** |
+| 6 | 10 | **appears to be the 7th** | **please verify** — see the note below |
+| 2 | not re-checked | reported as 1st, one too early | **please verify** |
 | 10 | 10 | cumulative **and inverted** — nine filled, current page the only empty one | wrong |
+
+**What changed, and please disregard the earlier reading.** Pages 1 and 3 were reported as carrying
+eleven dots with the fill one position late. At full resolution they carry **ten dots, correctly
+filled**. That came off downscaled phone screenshots, where eleven-versus-ten genuinely cannot be
+counted; it was flagged low-confidence at the time and it was wrong.
+
+The only dot fault now confirmed is **page 10**. Two pages need one look before any template changes:
+
+- **Page 6** appears to fill the 7th of ten on a page headed IMAGE 6 OF 10. Stated as uncertain on
+  purpose — a dot claim has already been wrong once here, and pages 1, 3, 4 and 5 are demonstrably
+  right, which makes one stray page less likely than a miscount.
+- **Page 2** has not been seen at full resolution.
 
 Low Back Pain:
 
@@ -52,15 +66,10 @@ Low Back Pain:
 | 5 | 10 | 4th | 5th |
 | 6–10 | **9** | one behind throughout | 6th–10th of 10 |
 
-Two things worth knowing for whoever fixes this:
+Worth knowing for whoever fixes this:
 
-- **The fill error runs in both directions** — Hip Fracture page 2 is one early, page 3 is one late.
-  So it is not a single correctable offset.
-- **Six Hip Fracture pages are demonstrably correct at ten dots**, so the row is not uniformly
-  broken. It is wrong on specific pages.
-
-*Confidence: the eleven-versus-ten counts on Hip Fracture pages 1 and 3 are exactly what cannot be
-read reliably from a downscaled image. The pattern is certain; those two numbers are not.*
+- **Most Hip Fracture pages are demonstrably correct at ten dots**, so the row is not
+  uniformly broken — it is wrong on specific pages, page 10 certainly.
 
 ## T3. Hip Fracture page 10 is built from a different template
 
@@ -75,19 +84,26 @@ Please bring it onto the same template as pages 4–9.
 
 # Part 2 — Hip Fracture
 
-## The most useful thing here: the batch is three template generations
+## RETRACTED: the "three template generations" grouping
 
-With all ten pages in hand the defects line up almost perfectly into three groups:
+An earlier version of this document claimed the defects grouped into three template generations, with
+the wrong ICD-10 code and the broken dot rows falling on **exactly the same three pages** — called very
+unlikely to be coincidence, and implying four re-renders would resolve several items together.
 
-| pages | ICD-10 | progress dots | footer |
+**That correlation does not hold.** It rested on pages 1 and 3 having broken dot rows, and at full
+resolution their dot rows are correct. The grouping was an artifact of a bad measurement.
+
+What survives:
+
+| pages | ICD-10 | dots | footer |
 |---|---|---|---|
-| **1, 2, 3** | **M80.00XA** — wrong | wrong | collides |
-| **4, 5, 6, 7, 8, 9** | **S72.009A** — correct | **correct** | collides |
+| **1, 2, 3** | **M80.00XA** — wrong | 1 and 3 **correct**; 2 unverified | collides |
+| **4, 5, 6, 7, 8, 9** | **S72.009A** — correct | correct (verify page 6) | collides |
 | **10** | **absent** | cumulative and inverted | different template again |
 
-The wrong code and the broken dot rows appear on **exactly the same three pages**. So this is very
-likely not nine separate corrections: **re-render pages 1, 2 and 3 from the template that produced
-4–9, and bring page 10 onto it too**, and H1, T2 and T3 resolve together.
+The ICD-10 split across pages 1–3 versus 4–9 is real and still points at two generations of the code
+field. But **treat the code, the dots and the footer as three independent faults** — do not assume
+fixing one fixes the others.
 
 ## H1. The ICD-10 code is inconsistent, and page 10 has none
 
@@ -166,6 +182,46 @@ Renumber the list 2–10 to match the pages. **And please confirm whether "Treat
 meant to be a page** — it never appears as one, which is a notable gap for this condition, since
 surgical timing and fixation-versus-arthroplasty are the core decisions.
 
+## H7. Page 5 — the sensation map mislabels the deep peroneal nerve territory
+
+Under NEUROVASCULAR EXAM, "Test sensation" reads:
+
+```
+- Dorsum of foot (deep peroneal)
+- 1st web space
+- Plantar foot
+```
+
+and the SENSATION MAP legend is: **Deep peroneal / Sural / Saphenous / Plantar**.
+
+**The deep peroneal nerve supplies only the first dorsal web space.** Most of the dorsum of the foot is
+**superficial peroneal**, which is missing from the legend entirely. So the page attributes a large
+territory to the wrong nerve, and the two bullets are redundant as written — "1st web space" *is* the
+deep peroneal test.
+
+Suggested:
+
+```
+- Dorsum of foot (superficial peroneal)
+- 1st web space (deep peroneal)
+- Plantar foot (tibial)
+```
+
+and add **superficial peroneal** to the map legend as its own colour.
+
+This matters more than a labelling nitpick: a reader who documents intact sensation on the dorsum and
+records it as deep peroneal has not tested the nerve most at risk in this population.
+
+*Please check the map's colour regions against the corrected legend when re-rendering — if the purple
+"deep peroneal" region currently covers the broad dorsum, the artwork needs changing too, not just the
+text.*
+
+## H8. Page 1 — "NOF" in CLINICAL SOURCE is a superseded name
+
+The source line reads "AAOS, NICE, ACR Appropriateness Criteria, **NOF**, ACP Clinical Guidelines".
+The National Osteoporosis Foundation became the **Bone Health and Osteoporosis Foundation (BHOF)** in
+2021. Minor, but it dates the page.
+
 ## H6. Page 3 — two versions arrived
 
 **The canonical one is the version with "Advanced age (>65 years)"**, confirmed by the physician.
@@ -229,3 +285,25 @@ decision for the physician, not a production fault.**
 - Page order is read from the **`IMAGE n OF 10` header strip**, not filenames — every batch so far has
   arrived shuffled, so the header is the only thing we trust.
 - Please keep the canonical ℞ waveform logo lockup, which is correct in this batch.
+
+---
+
+# What full-resolution pages confirmed
+
+Pages 1, 3, 4, 5 and 6 were reviewed at full resolution. **Confirmed as reported:**
+
+- **M80.00XA** on pages 1 and 3; **S72.009A** on pages 4, 5 and 6 (H1)
+- **"Maintain NPO after midnight (if surgery likely)"** in page 4's IMMEDIATE NURSING PRIORITIES (H2)
+- Page 1's contents list running ① ② ③ ④ ⑤ ⑥ ⑦ **⑨** ⑩ — **⑧ is skipped** (H5)
+- The footer disclaimer collision on all five pages (T1)
+- **15–30%** mortality on pages 1 and 3, so only page 10 disagrees (H3)
+- Page 3 is the canonical take, carrying "Advanced age" in FACTORS THAT INCREASE RISK (H6)
+- The correct ℞ waveform logo lockup on every page
+
+**Retracted at full resolution:** the eleven-dot counts on pages 1 and 3, and the whole
+"three template generations" correlation built on them.
+
+**Also verified as clinically sound**, so nobody re-opens them: the intracapsular / intertrochanteric /
+subtrochanteric blood-supply logic and AVN risk on pages 1 and 3; the atypical femur fracture panel
+(bisphosphonate use, transverse pattern, prodromal pain, image the contralateral femur); the five-stage
+cellular healing sequence; the imaging algorithm and the three radiographic patterns on page 6.
