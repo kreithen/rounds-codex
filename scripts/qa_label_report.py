@@ -71,6 +71,10 @@ def main():
     ap.add_argument("files", nargs="+")
     ap.add_argument("--out", default="-")
     ap.add_argument("--site", default="/workspace/rounds-codex-app")
+    # The Word report is built from this, by scripts/build_label_qa_docx.js. It used to be
+    # produced by a separate ad-hoc step, which meant the doc could silently describe a
+    # different sweep from the markdown. One parse, two outputs.
+    ap.add_argument("--json", help="also write the shape build_label_qa_docx.js reads")
     a = ap.parse_args()
 
     pages = parse(a.files)
@@ -144,6 +148,23 @@ def main():
         W("")
         W(", ".join(f"`{p['gid']}` p{p['page']}" for p in buckets["CLEAN"]))
         W("")
+
+    if a.json:
+        T2 = titles(a.site)
+        rows = [{
+            "gid": p["gid"], "page": p["page"], "verdict": p["verdict"],
+            "n": p["n_labels"], "nbad": p["n_not_ok"],
+            "title": T2.get(p["gid"], {}).get(p["page"], ""),
+            # the docx wants "lands on" and "expected" as separate columns
+            "f": [{
+                "v": f["verdict"], "label": f["label"], "panel": f.get("panel", ""),
+                "lands": re.sub(r"^lands on:\s*", "", f["detail"].split("| expected:")[0].strip(), flags=re.I),
+                "exp": (f["detail"].split("| expected:")[1].strip()
+                        if "| expected:" in f["detail"] else ""),
+            } for f in p["findings"]],
+        } for p in sorted(pages, key=lambda p: (RANK[p["verdict"]], p["gid"], p["page"]))]
+        json.dump(rows, open(a.json, "w"), indent=1)
+        print(f"wrote {a.json}: {len(rows)} pages, {sum(len(r['f']) for r in rows)} findings")
 
     text = "\n".join(out)
     if a.out == "-":
