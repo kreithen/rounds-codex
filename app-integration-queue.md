@@ -1328,3 +1328,33 @@ sources, and md5-distinct from the strays. That check is now the standard for an
   production; see `DOTS-defect-for-production.md`.
 - **`labor` pages 9 and 10 are indistinguishable** on both band and footer, and page 10 is missing
   the Clinical Pearl page every other gallery ends with.
+
+## v71 — Hip Fracture and Low Back Pain (2026-08-08)
+
+Two new MSK & Rheum conditions, taking the library to **183 conditions** and holding the
+183/183 quiz invariant at **1,840 questions**. `content/conditions.json` and
+`content/quizzes.json` only; `sw.js` `CACHE` → `v71`; no new content file, so `CORE` unchanged.
+
+Deployed: commit `8f00a48`, Netlify `ready` at 12:29:20Z, 31s build, **4 files uploaded** —
+which is exactly the four changed, so the upload count is itself a check that nothing else
+travelled. `deploy_source: "api"` again with `manual_deploy: false` and a matching `commit_ref`,
+i.e. a genuine git build (see the note in CLAUDE.md before treating that label as a problem).
+
+**Placement, not appending.** Swipe reads `fracture → hip-fracture → osteoporosis` and
+`osteoarthritis → back-pain → ra`. Built with the new `scripts/insert_conditions.js`, which
+requires an `--after` target rather than defaulting to the end of the array.
+
+**Both are `verified:false`** — RC VERIFIED badge off, awaiting the physician's read, same as
+`metabolic-syndrome`. Three conditions now sit in that state.
+
+Two process findings worth carrying forward:
+
+- **`content/conditions.json` ships minified.** The first (ad-hoc) insertion re-emitted it
+  pretty-printed: +124 kB of whitespace on a file fetched at boot, and a 23,217-line diff
+  instead of one line. Caught by `git diff --numstat`, not by any app-level check.
+- **A second QA pass on already-verified content found four sourcing errors**, none of which
+  the structural checks could see: an overstated mortality range, a trial result quoted without
+  saying it came from the safety analysis, guideline criteria whose exclusion had been removed by
+  a later update, and a chapter contradicting the first recommendation of the guideline it cites.
+  All four were in prose that read as authoritative. The lesson is the same one the guidelines
+  work taught: verifying that a source exists is not verifying that it says what the entry claims.
