@@ -422,6 +422,12 @@ no backend. This file is context for future sessions — read it before starting
     v75. They are exactly the four whose PDF pages are **900×1350**, a geometry the later pipeline
     never used, so **PDF page size is a cheap tell for which generation built it**. `pad`'s PDF was
     larger than its current pages (900 vs 804), which alone proves it was not built from them.
+  - **`python3 scripts/verify_gallery_pdfs.py <root>` is the standing guard** (added 2026-08-08 at
+    the physician's request). It compares **every page of every gallery PDF against the page the app
+    serves** — a broader invariant than "the logo matches", because logo drift was only the symptom;
+    it also catches a re-rendered page, a re-sent batch, and a reordered PDF (each page must match
+    its OWN source better than any sibling). 100 galleries / 1,000 pages in one run, exit 1 on drift.
+    Run it against the pre-v75 PDFs and it flags all 40 pages, so it is not decoration.
   - **Rebuild rules:** page order from `galleries.json`'s `images` array, never a directory glob
     (every batch has arrived shuffled); embedded width = min(existing PDF width, source width), so
     nothing is upscaled and only the logo changes.
