@@ -22,7 +22,7 @@
     ]
    },
    {
-    "q": "An 84-year-old with a Garden IV femoral neck fracture who walked independently before the fall is taken to theatre. Which operation fits this fracture?",
+    "q": "An 84-year-old with a Garden IV femoral neck fracture who walked independently before the fall is taken to the operating room. Which operation fits this fracture?",
     "ch": [
      "Cannulated screw fixation, preserving the native femoral head",
      "Arthroplasty, because the head's blood supply is likely already lost",
@@ -72,7 +72,7 @@
     "exp": "Surgery is generally performed within 24 to 48 hours. Delay beyond that tracks with more pneumonia, delirium and pressure injury, so the debate is about how much earlier helps rather than whether waiting causes harm.",
     "why": [
      "The osteoporosis workup proceeds alongside admission and must never delay the operation.",
-     "This is not a vascular emergency requiring theatre within two hours in a stable patient.",
+     "This is not a vascular emergency requiring surgery within two hours in a stable patient.",
      "Traction has no role and a week of immobility would cause exactly the complications surgery is meant to avoid.",
      "Routine stress testing delays surgery without improving outcomes in this population.",
      ""
@@ -85,7 +85,7 @@
      "Applying skin traction to the injured leg for comfort",
      "Withholding all opioids to avoid confusion",
      "Prescribing a prophylactic antipsychotic on admission",
-     "Keeping her nil by mouth from arrival until theatre"
+     "Keeping her NPO from arrival until surgery"
     ],
     "correct": 0,
     "exp": "Early regional block gives better pain control with far less opioid, which is the point in a patient at high delirium risk. Undertreated pain is itself a cause of delirium, so the aim is the least opioid that allows movement, not none.",
