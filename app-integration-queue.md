@@ -1358,3 +1358,38 @@ Two process findings worth carrying forward:
   a later update, and a chapter contradicting the first recommendation of the guideline it cites.
   All four were in prose that read as authoritative. The lesson is the same one the guidelines
   work taught: verifying that a source exists is not verifying that it says what the entry claims.
+
+## v72 — the gallery PDF download button (2026-08-08)
+
+Reported from an iPhone: tapping download in the gallery viewer showed a toast and did nothing.
+Two defects, and the second is why fixing the first alone would not have satisfied the report.
+
+1. **The viewer's download button was a placeholder** — `toast('Downloads the gallery PDF')`,
+   which toasts *a description of what it would do*. `rcGalleryPDF()` had existed and worked the
+   whole time on the gallery-page button below the grid; the viewer got a decorative copy.
+2. **`rcGalleryPDF` had no `target='_blank'`.** On iOS Safari often ignores `download` and
+   navigates to the file, in the app's own tab. The user expected a *share sheet*, and a throwaway
+   tab is where iOS shows the PDF together with one — which is exactly what the condition-page PDF
+   export already does, and why it carries a comment about it. The accommodation now lives inside
+   `rcGalleryPDF`, so both call sites get it.
+
+**Two lessons, both about measurement rather than the fix.**
+
+- **A stub whose entire behaviour is a toast is indistinguishable from a handler that toasts and
+  then fails.** Any test asserting "a toast appeared" passes on the broken build.
+  `scripts/verify_gallery_pdf.js` intercepts `HTMLAnchorElement.click` and inspects the anchor —
+  href, download name, target. Against the pre-fix file it fails twice and names both defects.
+- **Run the control before believing a measurement.** A PDF navigation measured through the live
+  worker came back as 345 bytes labelled `application/pdf`, which read as service-worker
+  corruption and was almost reported as one. A PDF navigation is a *download* in headless
+  Chromium: the same navigation with no worker registered returns the same 345 bytes. Read through
+  `fetch()` inside the page instead — the PDF is byte-exact at 1,937,012 bytes.
+
+**Deliberately not changed:** the worker's routing. `target='_blank'` does move the PDF from the
+asset branch to the navigate branch, whose offline fallback answers with the app's HTML shell, so
+a failed read would render the app in a tab opened for a PDF. That is reasoning, not a
+reproduction, and `sw.js` is the wrong file to change on a hunch. Noted in CLAUDE.md for whoever
+gets a reproduction.
+
+Also worth knowing: **all 100 gallery PDFs are on disk, 150 MB total**, largest `endocarditis` at
+4.89 MB. None are in `sw.js` `CORE`.

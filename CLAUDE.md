@@ -193,6 +193,37 @@ no backend. This file is context for future sessions — read it before starting
   `null` on a gallery you haven't opened a page in. `galleries.json`'s `pdf` is root-relative
   and is NOT resolved through `base` (several galleries have a non-empty `base` that would
   break it).
+  - **A SECOND copy of that button lived in the viewer overlay and stayed a stub until v72**
+    (2026-08-08), reported from an iPhone as "the download does nothing". Its onclick was
+    `toast('Downloads the gallery PDF')` — a placeholder that toasts a *description of what it
+    would do*. **A stub whose whole behaviour is a toast is indistinguishable from a working
+    handler that toasts and then fails**, which is why it survived so long and why a test
+    asserting "a toast appeared" passes on the broken build. `scripts/verify_gallery_pdf.js`
+    instead intercepts `HTMLAnchorElement.click` and inspects the anchor the handler built; run
+    against the pre-fix file it fails and names the defect ("built 0 download links").
+    Fixing one copy of a control is not fixing the feature — **grep for the other copies.**
+  - **`GID` IS the right argument inside `openViewer`'s markup**, which is the exact reverse of
+    the trap above: `openViewer` assigns `GID=id` as its first statement, so within the overlay it
+    is always the open gallery. The trap is reading `GID` from `galHTML`, which renders before any
+    page has been opened.
+  - **`rcGalleryPDF` needs `target='_blank'`, for the same reason the condition-page PDF export
+    does** — added v72. On iOS Safari often ignores the `download` attribute and *navigates* to the
+    file, and without a throwaway tab that navigation lands in the app's own tab, which is the
+    setup for the WebKitBlobResource failure. A new tab is also where iOS surfaces the PDF **with
+    its share sheet**, which is what a reader tapping a download button expects to see. The
+    gallery-page button had shipped without it, so wiring the viewer button alone would have
+    fixed "nothing happens" and still not produced the share sheet.
+  - **`target='_blank'` moves the PDF from the worker's asset branch to its NAVIGATE branch**, and
+    that branch buffers the whole body and falls back to the cached HTML *shell* — so a failed read
+    would render the app in a tab opened for a PDF. **This was left alone deliberately**: measured
+    through the live worker the PDF returns byte-exact (1,937,012 bytes, `%PDF-`, right content
+    type), so it is reasoning rather than a reproduced failure, and `sw.js` is not the file to
+    change on a hunch. Revisit only with a reproduction.
+  - **A PDF navigation is a DOWNLOAD in headless Chromium, so Playwright reports a 345-byte body
+    for it.** That read like service-worker corruption and was nearly reported as one; the control
+    — same navigation in a context with no worker registered — returns the same 345 bytes. To
+    measure a PDF through the worker, `fetch()` it from inside the page and read the
+    `arrayBuffer()`. Run the control before believing a number.
 - **Deep search** — `scripts/add_deep_search.js`. Searches tagline + all nine body fields +
   the 440 gallery page titles, ranked, with a match line on each card saying where it hit.
   **The index must strip `<b>` tags**: authored markup means a raw index makes "b" match all
