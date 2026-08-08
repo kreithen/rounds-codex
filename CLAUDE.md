@@ -1015,6 +1015,33 @@ Develop on **`claude/usmle-rounds-codex-module-bmpl61`**. Commit + push there; n
 without explicit permission. Do NOT open a PR unless the user asks.
 
 ## Incoming gallery batches — what to check before building
+- **THE PAGES ARRIVE AS CHAT PASTES FROM THE PHYSICIAN'S PHOTO ALBUM, AND THEY ARE FULL
+  RESOLUTION. Look in `/root/.claude/uploads/<session-id>/` BEFORE asking for files** (established
+  2026-08-08; the physician confirmed this has been the route for *every* gallery). The two MSK
+  galleries came through at exactly **1024×1536, ~2.5 MB PNG** — the standard — and were built
+  straight out of that directory. **They are not "screenshots" in any lossy sense.**
+  I assumed a chat attachment must be downscaled, never checked the directory, and spent an entire
+  session asking for files that were already on disk — chasing Google Drive, the Netlify connector
+  and a production re-export in turn. **The cost of one `ls` is nothing; the cost of that assumption
+  was most of a session and the physician's patience.**
+  - Filenames are `<uuid>-<STEM>.png` and **the same image appears several times under different
+    uuids** (2–3 copies each). Dedupe by md5 before counting: 42 files were 21 unique pages.
+  - **Identify each page by OCR, not by order.** `tesseract` is installed. Invert the crop first —
+    the pages are light-on-dark, and tesseract wants dark-on-light. The header strip (top ~6% of
+    the page) gives `IMAGE n OF 10` plus the ICD-10 code; the bottom ~5.5% gives the footer
+    `IMAGE TITLE`, which is the authoritative page title. That mapping is exact and beats reading a
+    contact sheet by eye.
+  - **A duplicate page is resolved by reading the panel that differs**, not by timestamp: hip
+    fracture page 3 arrived in two takes and the canonical one was picked by OCRing the risk-factor
+    panel for "Advanced age (>65 years)".
+  - **Commit the masters** next to the gallery's `titles.json`. Upload directories are ephemeral and
+    die with the container, which is why the masters for 26 of the 27 sub-standard galleries are
+    gone and cannot be recovered from this repo.
+  - **Consequence for the 27 sub-standard galleries (task #34):** they were almost certainly
+    *delivered* at 1024×1536 and downscaled to 800×1200 by our own old pipeline. So the fix is
+    probably **re-pasting from the album, not a production re-export** — pilot one gallery, measure
+    what arrives, and only ask production if it comes back small. See the banner on
+    `REEXPORT-REQUEST-1024x1536.md`.
 - **Compare against what is already live first.** Two of the three batches received on 2026-07-30
   were largely re-sends: 20 of 25 pages, then 10 of 75, were byte-identical to deployed artwork
   (mean pixel diff <2/255 against the JPEGs is compression noise, not a revision). Diffing first

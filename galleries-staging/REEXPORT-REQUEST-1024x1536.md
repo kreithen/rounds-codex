@@ -1,5 +1,31 @@
 # For production: 27 galleries need re-exporting at 1024×1536
 
+> ## ⚠ READ FIRST — this may not need production at all (2026-08-08)
+>
+> The physician delivers gallery pages by **pasting them into chat from their photo album**, and that
+> has been the route for *every* gallery. Those pastes arrive at **full resolution** — the two MSK
+> galleries built on 2026-08-08 came through at exactly **1024×1536, ~2.5 MB PNG**, and were built
+> straight from the session's upload directory.
+>
+> Which means these 27 galleries were very likely **delivered** at 1024×1536 and **downscaled by our
+> own old pipeline** to 800×1200 — CLAUDE.md says exactly that: *"The old pipeline downscaled to
+> 800x1200."* The artwork was never the limitation; our build step was.
+>
+> **So the first move is not to ask production for anything.** It is to ask the physician to re-paste
+> one gallery's ten pages from their album and measure what arrives:
+>
+> - **If they land at 1024×1536** → all 27 can be rebuilt from the album with **zero production
+>   involvement**, at roughly 10 pages per paste. Run `build_galleries_from_images.py` per gallery.
+> - **If they land at 800×1200** → the album holds only what we shipped, and this request stands as
+>   written below.
+>
+> Their masters are not recoverable from this repo: no staging PNGs exist for 26 of the 27 (checked
+> 2026-08-08), because earlier sessions' upload directories are ephemeral and were never committed.
+> That is why the MSK masters are now committed alongside their `titles.json`.
+>
+> Everything below remains the correct ask **only if the pilot paste comes back small.**
+
+
 Send this alongside `PRODUCTION-BRIEF-leader-lines.md` and the work order. It is a separate ask
 from the leader lines and can be done independently, but the two overlap on two pages — see the
 last section.
