@@ -1044,6 +1044,15 @@ on my own judgement. Autonomy is about mechanics, not about medical correctness.
 Develop on **`claude/usmle-rounds-codex-module-bmpl61`**. Commit + push there; never push elsewhere
 without explicit permission. Do NOT open a PR unless the user asks.
 
+## The mislabelled-anatomy project — MOVED TO ITS OWN CONVERSATION (2026-08-09)
+Leader lines that do not land on the structure they name: 119 pages examined, **81 wrong**,
+553 findings. Handed off to a separate conversation on branch
+**`claude/anatomy-label-corrections`**. **Read
+`galleries-staging/HANDOFF-anatomy-label-corrections.md` before touching leader lines, the
+81-page work order, the Higgsfield panel-correction route, or MSK H7 (the deep peroneal nerve
+map).** Do not work it from the main build conversation — two sessions pushing one branch
+collide, and the handoff carries state this file does not. It is **not launch-blocking**.
+
 ## Incoming gallery batches — what to check before building
 - **THE PAGES ARRIVE AS CHAT PASTES FROM THE PHYSICIAN'S PHOTO ALBUM, AND THEY ARE FULL
   RESOLUTION. Look in `/root/.claude/uploads/<session-id>/` BEFORE asking for files** (established
