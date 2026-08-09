@@ -16,6 +16,14 @@ about which decisions are genuine judgement calls.
 
 ## DECISION IN PROGRESS (2026-08-09): trademark yes, copyright maybe not
 
+> **For the lawyer meeting, take `legal/provenance-for-counsel.md`.** It is the table below turned
+> into something counsel can work from: sorted into the three buckets a registration actually needs
+> (human / AI / **third-party**, which is the one usually forgotten), with an evidence column
+> separating what the repo documents from what is inferred from what **only Dr. Kreithen knows** —
+> and five questions to answer before the meeting. Q1 there, *who wrote the 183 condition modules*,
+> is the line that decides whether registration is worth filing at all.
+
+
 Dr. Kreithen is leaning toward **trademark only**, on the grounds that almost all of the app was
 created with AI, and will review with a lawyer. **Nothing here is legal advice.** But one part of
 that premise is worth putting in front of the lawyer, because it may be wrong in a way that changes
