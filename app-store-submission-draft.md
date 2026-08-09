@@ -1,5 +1,26 @@
 # App Store submission — draft
 
+> ## ⚠ SUPERSEDED IN PLACES — the login wall came back on 2026-08-08 (v82)
+>
+> This draft was written for a **no-account v1**. That decision was reversed at the physician's
+> request: the app now has an invitation-only Supabase sign-in wall, with share routes
+> (`/c/ /s/ /g/ /r/ /u/ /x/`) deliberately open so a shared link still opens the content.
+>
+> **Four answers below are now wrong, and one is a build item, not a form field:**
+>
+> | # | what changed | state |
+> |---|---|---|
+> | 1 | **Privacy label is no longer "Data Not Collected."** Email addresses are collected via Supabase. The label needs Contact Info → Email Address, linked to identity. | **to rewrite** |
+> | 2 | **Guideline 5.1.1(v) — in-app account deletion is now required.** Cannot be done client-side: deleting a Supabase auth user needs the service_role key. The edge function is written at `supabase/functions/delete-account/index.ts` but **not deployed**. | **BUILD ITEM** |
+> | 3 | **Guideline 2.1 — Apple needs a working demo account** in App Review notes. A review that cannot sign in is an automatic rejection. Invitation-only makes this mandatory, not optional. | **to do** |
+> | 4 | "Sign-in required? **No**" (§ near the end) and the surrounding copy | **to rewrite** |
+>
+> Shipped in the app already (v83): the account page shows the signed-in address, has a working
+> Sign out, and states that deletion is by email until (2) lands. The privacy page no longer claims
+> the app has no accounts.
+>
+> **None of this blocks the 17 August WEB launch** — it blocks a clean App Store submission.
+
 Everything App Store Connect asks for, drafted and ready to paste, plus the things that will get
 this rejected if they go in as-is. Written 2026-08-04 against the live build (v66, 93 galleries).
 
