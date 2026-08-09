@@ -20,6 +20,14 @@
 > the app has no accounts.
 >
 > **None of this blocks the 17 August WEB launch** — it blocks a clean App Store submission.
+>
+> **ATTRIBUTION CHANGED 2026-08-09.** Every "written by a physician" line below is superseded. The
+> approved framing is **"created by a team of clinicians"** / **"created and clinically reviewed by
+> practising clinicians"**. Dr. Kreithen stays named as Founder & Clinical Lead; the
+> one-person-wrote-it framing goes. Affects the subtitle, description, promotional text and App
+> Review notes — see `marketing-brief.md`. Note also that **"clinically reviewed" is now ALLOWED**,
+> which these drafts assumed it was not, so §"Written by a physician is doing the work that
+> clinically reviewed can't" no longer holds.
 
 Everything App Store Connect asks for, drafted and ready to paste, plus the things that will get
 this rejected if they go in as-is. Written 2026-08-04 against the live build (v66, 93 galleries).

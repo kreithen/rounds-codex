@@ -18,7 +18,7 @@ Everything else about marketing belongs here.
 ## The product, in one paragraph
 
 Rounds Codex is an offline clinical study reference for nursing students, medical students and
-residents, written and illustrated by Dr. Kreithen, a practising physician. The same 181 conditions
+residents, created and clinically reviewed by practising clinicians. The same 183 conditions
 rewrite themselves across three modes — Nursing, Medical, Resident — so one library serves a student
 from first year through residency. It ships as a website today and as an iOS app at launch.
 
@@ -76,6 +76,17 @@ was really protecting against *that* claim and over-reached to catch it.
 cite real sources — but the 2026-08 QA pass over 340 submitted guideline entries found 25 that stated
 the opposite of the published result and 16 citing studies that could not be found, all since
 corrected. The claim is defensible; treat it as one that has to keep being earned, not a slogan.
+
+**ATTRIBUTION IS PLURAL, decided 2026-08-09.** Say **"created by a team of clinicians"** or
+**"created and clinically reviewed by practising clinicians"** — not "written by Dr. Kreithen" and
+not "written by a physician". This applies to the app, the About page, the store listings and all
+marketing. Dr. Kreithen remains named in the app as **Founder & Clinical Lead**, which is an
+accurate individual role; what goes is the framing that one person wrote everything.
+
+*One precision worth keeping in mind as the group grows:* **"created by" and "reviewed by" are
+different claims.** Attributing *creation* to an advisor who only reviewed would overstate their
+part. "Created and clinically reviewed by practising clinicians" covers both without assigning
+either to a named individual, and stays true whether the group is two or twelve.
 
 **One housekeeping item before the claim goes public:** 3 of 183 conditions still ship
 `verified:false` (`metabolic-syndrome`, `hip-fracture`, `back-pain`) and so carry no RC VERIFIED
