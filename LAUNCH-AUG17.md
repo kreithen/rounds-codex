@@ -7,6 +7,8 @@ physician's decision, so nothing below depends on them.
 Counts were read from the shipped content, not from the older docs — several of which carry stale
 figures and say so.
 
+**See also `store-strategy.md`** (2026-08-09) for what needs Apple approval after the first release, the consequences of dropping the login wall for iOS, and **Android** — which this file does not cover at all.
+
 ---
 
 ## The one thing that decides everything else

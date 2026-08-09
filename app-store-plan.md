@@ -4,6 +4,8 @@ Decisions taken by Dr. Kreithen 2026-08-04. This file is the record; where a dec
 technical consequence, the consequence is written down with it, because that is the part that
 gets forgotten.
 
+**See also `store-strategy.md`** (2026-08-09) for what needs Apple approval after the first release, the consequences of dropping the login wall for iOS, and **Android** — which this file does not cover at all.
+
 ---
 
 ## Monetization
