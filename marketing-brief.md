@@ -59,11 +59,33 @@ Three supporting claims, in order of strength:
 
 ### The claims policy — this is not optional
 
-**Never say "clinically reviewed", "physician-reviewed", "peer-reviewed", "verified" or
-"evidence-based" as a blanket claim about the content.** No independent medical review has been done.
-The content was authored and self-checked by one physician, which is exactly what "written by a
-physician" says and no more. `manifest.webmanifest` currently overclaims this and is on the
-submission checklist to fix.
+> **REVISED 2026-08-09 by Dr. Kreithen.** The rule below used to forbid "clinically reviewed". That
+> was wrong, and it was wrong because it conflated two different claims. Corrected here rather than
+> quietly edited, so the reasoning survives.
+
+**"Clinically reviewed" and "physician-reviewed" are ALLOWED, because they are true.** Dr. Kreithen
+is a practising physician and has reviewed the content; every clinical advisor listed in the app has
+agreed to be listed and has clinically reviewed material in it. A clinician reviewed it, so saying a
+clinician reviewed it is accurate.
+
+**"Peer-reviewed" is still forbidden.** That is a term of art from academic publishing meaning
+independent experts assessed the work before publication, and it is not what happened. The old rule
+was really protecting against *that* claim and over-reached to catch it.
+
+**"Evidence-based" is allowed for the content, with one caution.** The modules and guideline entries
+cite real sources — but the 2026-08 QA pass over 340 submitted guideline entries found 25 that stated
+the opposite of the published result and 16 citing studies that could not be found, all since
+corrected. The claim is defensible; treat it as one that has to keep being earned, not a slogan.
+
+**One housekeeping item before the claim goes public:** 3 of 183 conditions still ship
+`verified:false` (`metabolic-syndrome`, `hip-fracture`, `back-pain`) and so carry no RC VERIFIED
+badge. A site-wide "clinically reviewed" claim next to three unbadged modules is an inconsistency a
+careful reader can find. Clear those three and the claim is uniform.
+
+**`manifest.webmanifest` is fine as written** — it says "clinically-reviewed conditions" and that is
+now the approved wording. It was previously flagged as an overclaim on the submission checklist;
+that flag is withdrawn. (Its count says 180 and the app has 183 — worth fixing, but a stale number,
+not an overclaim.)
 
 Also never:
 

@@ -972,9 +972,11 @@ no backend. This file is context for future sessions — read it before starting
 Three files, each canonical for its own subject. **Read the relevant one before writing anything
 that will be seen outside the app** — they exist so the copy and the decisions do not drift.
 - **`marketing-brief.md`** — start here for anything marketing. Positioning, audience, channels,
-  the assets that exist, and **the claims policy** (in particular: never say "clinically reviewed"
-  — no independent medical review has been done, and "written by a physician" is the true and
-  stronger claim).
+  the assets that exist, and **the claims policy** (**revised 2026-08-09: "clinically reviewed" and
+  "physician-reviewed" ARE allowed** — the physician has reviewed the content and every listed
+  clinical advisor has agreed to be listed and reviewed material in the app. The old blanket ban
+  conflated that with **"peer-reviewed"**, which stays forbidden because it means independent
+  pre-publication review by other experts and that has not happened).
 - `app-store-submission-draft.md` — every App Store Connect field drafted to its character limit,
   the privacy label, the review notes, and the four things that would get the app rejected.
 - `app-store-plan.md` — pricing and grandfathering, download size, Guidelines 4.2 and 1.4.1, and
