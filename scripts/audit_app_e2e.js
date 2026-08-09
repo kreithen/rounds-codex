@@ -52,6 +52,8 @@ const warn = m => { warns.push(m); console.log('  warn ' + m); };
     conditions: DATA.length,
     quizzes: Object.keys(QUIZZES).length,
     questions: Object.values(QUIZZES).reduce((n, v) => n + v.questions.length, 0),
+    short: Object.entries(QUIZZES).filter(([, v]) => v.questions.length < 10).map(([k]) => k),
+    long:  Object.entries(QUIZZES).filter(([, v]) => v.questions.length > 10).map(([k]) => k),
     galleries: Object.keys(GALLERIES).length,
     // REALGAL is a Set at runtime, not an array -- .length is undefined on it
     real: typeof REALGAL === 'undefined' ? -1
@@ -68,8 +70,18 @@ const warn = m => { warns.push(m); console.log('  warn ' + m); };
   }));
   console.log(`  ${shape.conditions} conditions, ${shape.quizzes} quizzes, ${shape.questions} questions, ` +
     `${shape.galleries} galleries (${shape.real} real), ${shape.drugs} drugs, ${shape.nclex} NCLEX, ${shape.resident} resident`);
-  if (shape.conditions !== 181) fail(`expected 181 conditions, got ${shape.conditions}`);
-  if (shape.questions !== 1820) fail(`expected 1820 questions, got ${shape.questions}`);
+  /* Counts, not a fixed number pulled from a doc: every condition must carry a quiz, and every
+     quiz must carry ten questions. Hard-coding 181/1820 meant this suite reported two failures
+     from the day Hip Fracture and Low Back Pain landed, and a suite that always fails is a suite
+     nobody reads. The invariant is what mattered anyway. */
+  if (shape.conditions !== shape.quizzes)
+    fail(`every condition needs a quiz: ${shape.conditions} conditions but ${shape.quizzes} quizzes`);
+  /* Ten per quiz is the floor, not the rule: `cardiomyopathy` carries 20 distinct questions and
+     always has, which is why the bank total is 1,840 rather than 183 x 10. Asserting equality
+     flagged it as a defect. Check the floor and name any exception instead. */
+  if (shape.short.length) fail(`quizzes with fewer than 10 questions: ${shape.short.join(', ')}`);
+  console.log(`  ok  ${shape.conditions} conditions, ${shape.quizzes} quizzes, ${shape.questions} questions` +
+              (shape.long.length ? ` (longer than 10: ${shape.long.join(', ')})` : ''));
   if (shape.byIdKeys !== shape.conditions) fail(`byId has ${shape.byIdKeys} keys for ${shape.conditions} conditions`);
   if (shape.dupIds.length) fail(`duplicate condition ids: ${shape.dupIds.join(', ')}`);
   if (shape.orphanQuizzes.length) fail(`quizzes with no condition: ${shape.orphanQuizzes.join(', ')}`);

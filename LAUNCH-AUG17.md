@@ -64,8 +64,13 @@ App Store submission.
 
 - **The privacy label is no longer "Data Not Collected."** Email addresses are collected. That line
   was called a genuine differentiator in the draft and now has to change.
-- **Guideline 5.1.1(v) applies: an account-bearing app must offer in-app account deletion.** There
-  is no delete-account control today. This is a build item, not a form field.
+- ~~**Guideline 5.1.1(v) applies: an account-bearing app must offer in-app account deletion.**~~
+  **Done in v87 (2026-08-09).** *My account → Delete my account*, backed by the `delete-account`
+  edge function. Proven end to end against the live project with a disposable user — 200
+  `{"deleted":true}`, every row gone, the token dead on replay. The Privacy page has a
+  *"Deleting your account"* section naming the in-app path, which is what a reviewer reads. The one
+  untested link is a real browser calling the real endpoint; the container cannot sign in to
+  Supabase, so that first tap is the physician's.
 - **Guideline 2.1: Apple needs a working demo account** in the review notes. A review that cannot
   sign in is an automatic rejection.
 - **The draft's "Sign-in required? No" answer is now wrong**, along with the surrounding copy.

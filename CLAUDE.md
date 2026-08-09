@@ -1023,6 +1023,43 @@ that will be seen outside the app** — they exist so the copy and the decisions
     one contiguous run fails at offset 113. Then assert the result is a pure insertion — every line
     of the shipped file surviving in order.
 
+## Account deletion, and how to reach Supabase from a session (v87, 2026-08-08)
+Apple Guideline 5.1.1(v): an app with accounts must let you delete one from inside it. Shipped as
+**My account → Delete my account** (`scripts/add_account_delete.js`, five branches guarded by
+`scripts/verify_account_delete.js`, which fails 5/5 on the pre-fix build) plus the edge function
+`supabase/functions/delete-account/`.
+- **The container cannot reach `*.supabase.co` — but the DATABASE can.** `pg_net` 0.20.4 is
+  installed, so `net.http_post(...)` from `execute_sql` calls any HTTP endpoint and the reply lands
+  in `net._http_response`. That is how the function was proven end to end from a cloud session with
+  the network blocked: sign in for real, call the function with the returned token, then read the
+  tables. **Reach for this before declaring something untestable from here.**
+- **A `delete-user` function already existed and is NOT this.** It is an admin tool — id in the
+  body, caller must be in `public.admins`, and it explicitly *refuses* self-deletion. `delete-account`
+  is its mirror: no admin rights, no body, deletes only the token's owner. **Read a sibling function
+  before assuming a new one duplicates it, and before assuming it does not.**
+- **`verify_jwt` is OFF on both, deliberately.** The platform gate also rejects the CORS preflight,
+  which carries no `Authorization` header, so a browser call fails before reaching the code. The
+  gate buys nothing anyway: the function must call `getUser()` regardless, because it needs to know
+  *which* user is asking.
+- **Three FKs point at `auth.users` with NO ACTION, not CASCADE**: `app_users.invited_by`,
+  `campaigns.created_by`, `campaigns.approved_by`. So **a user who has invited anyone cannot be
+  deleted** — Postgres raises `app_users_invited_by_fkey` and the reader sees "something went
+  wrong". `delete-account` nulls all three first; `delete-user` still has this hole. Proved by
+  running the bare `DELETE` inside a `DO` block that always re-raises, so it rolls back — a cheap
+  way to test a destructive statement on production without performing it.
+- **Testing needs a disposable user, never one of the real ones.** Hand-building an `auth.users` row
+  gives GoTrue **"Database error querying schema"**, because it scans `confirmation_token`,
+  `recovery_token`, `email_change`, `email_change_token_new` as non-nullable Go strings and a hand
+  insert leaves them NULL. Set them to `''`. Also insert the matching `auth.identities` row. The
+  `on_auth_user_created` trigger creates `public.app_users` for you.
+- **The proof that mattered:** 200 `{"deleted":true}`, the row gone from `auth.users`,
+  `app_users`, `auth.identities` and `auth.sessions`, the invitee surviving with `invited_by` nulled,
+  and **replaying the same token afterwards returning 401** — that last one is what shows the session
+  is genuinely revoked and not merely orphaned. Cleaned up to exactly the 12 real users afterwards.
+- **Still unverified, and say so:** the real browser → real endpoint path. The container cannot sign
+  in to Supabase, so `verify_account_delete.js` stubs the network. The failure direction is safe — a
+  wrong client shows an error and deletes nothing — but the first real tap is the physician's.
+
 ## How to work here (set by the user 2026-07-29)
 1. **Auto-execute standard, low-risk actions.** Reading files, benign terminal commands, creating
    code files, running tests, linting — just do them. No permission request.
