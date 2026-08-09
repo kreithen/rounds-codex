@@ -38,6 +38,12 @@ milestone. If that is wrong, say so, because the ordering changes.
 
 ## 2. Legal — starts a clock that never reopens
 
+> **This whole section is conditional as of 2026-08-09.** Dr. Kreithen is leaning toward
+> **trademark only, no copyright registration**, pending a lawyer's review — see the banner at the
+> top of `legal/README.md`. **If copyright is dropped, the §412 clock below stops mattering and the
+> 17th stops being a legal deadline**; items 2.1, 2.2 and 2.3 come off the critical path entirely and
+> only the trademark items remain.
+
 **Removing `noindex` is very likely first publication.** Under 17 U.S.C. §412, statutory damages and
 attorney's fees are only available for infringement beginning *after* registration — unless you
 register **within three months of first publication**. That window never reopens.

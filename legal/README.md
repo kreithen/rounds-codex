@@ -14,6 +14,78 @@ about which decisions are genuine judgement calls.
 
 ---
 
+## DECISION IN PROGRESS (2026-08-09): trademark yes, copyright maybe not
+
+Dr. Kreithen is leaning toward **trademark only**, on the grounds that almost all of the app was
+created with AI, and will review with a lawyer. **Nothing here is legal advice.** But one part of
+that premise is worth putting in front of the lawyer, because it may be wrong in a way that changes
+the answer.
+
+**"Almost all AI" does not match this repo's own provenance draft.** What is AI-generated is the
+*illustrations* (950 gallery pages, 197 USMLE rasters) and the *drafting* of most quiz items. What
+the table below records as human is the part that actually matters for enforcement:
+
+- **the 183 condition modules** — the clinical text itself, marked physician-authored
+- **the 470 clinical guideline entries** — physician-submitted, physician-corrected
+- **950 gallery page titles and their ordering** — read and assigned by hand
+- **24 quiz questions** transcribed from the physician's own PDFs
+- **the compilation** — the selection, coordination and arrangement of all of it
+
+**And the compilation is registrable even where its contents are not.** That is the *Zarya of the
+Dawn* outcome the copyright guide cites: text and arrangement registered, AI images excluded. The
+AI-ness of the illustrations argues for **excluding them from the claim**, which the form has a
+field for, not for skipping the filing.
+
+### The threat model points the same way
+
+Ask what would actually be copied. Someone lifting 183 condition modules and 1,840 questions and
+relaunching them — that is the compilation plus the human text, precisely the registrable part. The
+AI illustrations are the *least* worth protecting, because a competitor can generate their own.
+
+### What skipping registration actually costs
+
+Copyright exists on creation; registration does not create the right. What registration buys:
+
+- **Standing.** A US work generally must be registered before an infringement suit can be filed.
+- **Statutory damages and attorney's fees**, but only if registered before the infringement or
+  within three months of first publication (17 U.S.C. §412).
+
+Without them you can still register later and sue, but only for **actual damages you can prove**.
+For a $5/month app that is often less than the cost of litigating — which in practice means
+enforcement stops being economically rational. That is the real consequence, and it is permanent for
+anything copied before registration.
+
+Against roughly **$65 per filing**. The asymmetry is the point: a small fixed cost against
+permanently losing the only enforcement tool with teeth.
+
+### The middle option nobody has named
+
+**File one registration for the website content — the compilation plus the human-authored text — and
+skip the computer-program filing.** That is $65, one form, and it covers the modules and the
+arrangement, which is what a copier would take. The code is the weaker claim and the one where the
+human/AI split is genuinely murky.
+
+### What the lawyer most needs
+
+**The provenance inventory below, verified.** It is not merely a blocker to filing — it is the input
+to the decision being made right now. "Is copyright worth it?" cannot be answered without knowing
+what is human, and that question is currently unanswered rather than answered in the negative.
+
+### If trademark-only is the final call
+
+Perfectly defensible, and it **simplifies the launch**:
+
+- **The 17 August date stops being a legal deadline.** The §412 three-month clock only matters if a
+  registration is coming, so removing `noindex` becomes an ordinary product decision.
+- The provenance inventory and the dated deposit freeze both come off the critical path.
+- **But understand the gap: trademark protects the NAME, not the content.** A competitor who copies
+  all 183 modules and calls the product something else is untouched by a trademark registration.
+- **The login wall is now doing some of that work.** The copyright guide argued that "a password is
+  the only thing that actually prevents the copying" — invitation-only access is exactly that, and
+  it is already shipped. Practical prevention rather than a legal remedy, but this app has it.
+
+---
+
 ## State of play in one paragraph
 
 Trademark: `ROUNDS CODEX` was searched on 2026-08-05, the result is favourable, and **Dr. Kreithen
