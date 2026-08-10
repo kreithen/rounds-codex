@@ -453,6 +453,39 @@ one queued, and it batches into this gallery's single PDF rebuild.
 
 ---
 
+## 11. `aortic-stenosis` page 4 — "Narrowed central orifice", the same error a second time
+
+| | |
+|---|---|
+| file | `aortic-stenosis-04-FIXED-page.png` (+ `.jpg` at q82/4:2:0, the original's own encode) |
+| target | `assets/aortic-stenosis/aortic-stenosis-04.jpg`, 1138×1707 |
+| moved | dot **(886.4,469.3) → (829,484)**, into the central orifice; leader re-aimed from its elbow at (905,493) |
+| diff vs live | **(822,456)–(910,498)**, 88×42 px |
+| old dot / new dot | **38 → 0** and **0 → 53** bright px |
+| the left "calcified cusps" dot | 42/42 — unchanged |
+| approved | *awaiting Dr. Kreithen* |
+
+**What it fixes.** On the STENOTIC valve short-axis, the dot sat in the body of the **right calcified
+cusp**, which is what the label on the opposite side of the same figure already names. It now sits in
+the dark Y-shaped gap at the confluence of the three cusps — the residual orifice, which is the whole
+point of the panel and the only feature that distinguishes it from the NORMAL valve beside it.
+
+**Same error as p1 of this gallery, on the same structure class**, which is what makes it a template
+habit rather than a slip: on both pages the orifice label was placed on cusp tissue at roughly the
+same radius as the cusp label. Worth stating to production as a rule — *on a valve short-axis, the
+orifice label goes in the gap, never on a leaflet.*
+
+**Cheap where p1 was expensive.** Here the leader already had an elbow at (905,493), and the new
+endpoint is nearly on the same horizontal, so only the 30 px stub above the elbow needed erasing —
+against 250 px on p1. The stub came out with a single-sided perpendicular clone at 13 px; the dot with
+a (0,+30) clone down the same cusp, whose nodular texture is quasi-random and forgiving (four offsets
+were compared and all four were clean, unlike p1 where eight of nine failed).
+
+### Deploy sequence when the batch ships
+Same as §10 — **one `rebuild_gallery_pdf.py <root> aortic-stenosis` at q82 covers pages 1 and 4.**
+
+---
+
 ## Higgsfield was tried on this dot and failed — second independent failure on this panel
 
 Physician asked for the Higgsfield route; two variants were generated and both failed, so the
