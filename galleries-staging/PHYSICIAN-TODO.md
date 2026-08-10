@@ -5,6 +5,19 @@ Nothing on this list is launch-blocking.
 
 *Last updated 2026-08-10.*
 
+## Standing decisions (yours, 2026-08-10) — how this project now runs
+
+1. **Measure all 81 pages, fix locally only what is clean.** The measurement is the deliverable;
+   a local fix is a bonus when the background allows one.
+2. **Worst-teaching first**, not index order — rank pages by how wrong they teach, so the damaging
+   errors reach production early even if the tail runs long.
+3. **[CHECK] rows get resolved on pages I am already working**, not as a separate pass.
+4. **Reissue the work order as a corrected docx**, with my measured coordinates replacing the
+   auditors' where they differ and each override marked — one document, not two.
+5. **Deploy every 3–4 corrected panels.**
+6. **Sample pages 3–10** to find out whether the defect extends beyond the audited pages. Done —
+   see `SWEEP-pages-3-10.md`, and item 6 below.
+
 ---
 
 ## 1. ~~Approve the 81-page work order~~ — APPROVED IN FULL, 2026-08-10
@@ -72,7 +85,19 @@ structure it names.** On `myasthenia` the column is anatomically inverted — ba
 external to the postsynaptic membrane, so it belongs above it, not below. Both are now layout rows
 with the correct endpoint stated, so production has everything it needs.
 
-## 5. A decision I would like from you eventually — the 27 sub-standard galleries
+## 5. The sweep found the defect outside the work order — a decision will be needed
+
+`SWEEP-pages-3-10.md`. Two at-risk figures examined on unaudited pages, **both carried a wrong
+leader**: `lymphoma` p4 puts inguinal lymphadenopathy over the small bowel, and `osteoporosis` p4
+stops "Vertebral compression fracture" on the patient's sleeve while the fracture is drawn 340 px
+away. About 30% of pages 4/6/8 carry the structure that produces this, so the arithmetic points at
+roughly 260 at-risk figures outside the 81.
+
+**Nothing is needed from you yet** — I will finish the sample. But when it lands, the decision is
+whether to tell production the 81 is a first tranche, which affects whether they run their batch
+once or twice.
+
+## 6. A decision I would like from you eventually — the 27 sub-standard galleries
 
 `addisons` is 800×1200; the standard is 1024×1536. The current best guess is that these pages were
 *delivered* at the standard size and downscaled by our own old pipeline, which would mean the fix is
