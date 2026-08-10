@@ -5,8 +5,10 @@ end on the wrong structure — but the correction production should make is **mo
 re-routing the line. Sending them as line-placement work would produce a page with a correct
 endpoint and a leader dragged across half the figure.
 
-Two kinds so far: **layout** rows, where the label itself has to move, and **numbering** rows,
-where the marker is in the right place and carries the wrong number.
+Three kinds so far: **layout** rows, where the label itself has to move; **numbering** rows, where
+the marker is in the right place and carries the wrong number; and **not-separable** rows, where the
+stroke to be shortened is collinear with the artwork underneath it and no local edit can remove one
+without taking the other.
 
 The layout kind is the point already made in `PRODUCTION-BRIEF-leader-lines.md`: *"treat these as
 layout problems, not line-placement problems — moving the label is a better fix than threading the
@@ -58,3 +60,30 @@ disc would expose it.
 and the Pancreas leader carried through to the orange pancreas below rather than stopping at a badge.
 
 *Examined on the shipped page 2026-08-10; not corrected locally, deliberately.*
+
+---
+
+## `thrombocytopenia` page 2 #1 — "Sinusoid (marrow capillary)"
+
+**The defect is real and small.** The leader doglegs down-left from (500,556), crosses the blue
+sinusoid it names, and stops ~25 px past it at (468,599), on a megakaryocyte pseudopod. Measuring
+the vessel band against the leader's own line puts the crossing at **(485,580)** — the band runs
+(479,576)–(488,576) widening to (487,594)–(495,594), and leader and band centre coincide at y≈580.
+So the shortening target is exact.
+
+**Why we have not done it.** The leader and the pseudopod are very nearly **collinear**. Perpendicular
+profiles across the erase segment show the bright core at a constant offset of −1.5 px, and from
+t≈15 onward a *second* bright ridge appears alongside it — the proplatelet extension's own highlight.
+Erasing a 4 px band centred on the stroke and comparing at 24× shows the pseudopod arm coming back
+about 15 px shorter than it is on the shipped page.
+
+That is not an acceptable trade on **this** page: the extension it truncates is the thing the panel
+is teaching — "Proplatelet extensions into sinusoid" is a label of its own, three rows below.
+Shortening a leader by 25 px is not worth shortening a proplatelet.
+
+**What we need:** re-render with the "Sinusoid" leader ending where it crosses the vessel, at about
+(485,580), and the pseudopod left at its full length. From source this is free; from the flattened
+page it is not.
+
+*Examined on the shipped page 2026-08-10; a working correction was built, measured against the
+original at 24×, and discarded.*
