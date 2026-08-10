@@ -83,12 +83,22 @@ teaches two structures under each other's names.
 
 ## What the clean pages do differently — the actionable recommendation
 
-`acs` pages 1 and 2 are **fully clean**, and they are built differently: **numbered circles placed
-directly on the 3D render**, with the numbered text in a side list. No leader crosses empty space.
+`acs` page 1 is clean, and both `acs` pages 1 and 2 are built differently from the rest: **numbered
+circles placed directly on the 3D render**, with the numbered text in a side list. No leader crosses
+empty space.
 
 Nearly every failure we found involves a long leader travelling across background to reach a text
-column. Where a page can use on-figure numbered markers instead, please do — it removes the whole
-class of defect rather than correcting instances of it.
+column. Where a page can use on-figure numbered markers instead, please do — it removes **the routing
+class of defect**, which is most of what this brief is about.
+
+**It does not remove misplacement, and we have a live example.** On `acs` page 2 the **Diagonal
+Branch** badge sits on a vessel that forks off the **left circumflex** just distal to the left main
+bifurcation — an obtuse marginal or ramus intermedius. Traced three times at 8–12× on a vessel
+isolation map, that vessel never contacts the LAD; it stays 50–90 px to its right at every level. A
+badge sitting directly on the artwork is still a badge sitting on the *wrong* artwork.
+
+So: **badges remove the leader, not the identification step. Each badge's position still has to be
+checked against the structure it names.**
 
 Where leaders are unavoidable, the endpoint needs to be anchored to the structure in the artwork,
 not to the label's row.
