@@ -412,6 +412,47 @@ r=3.6 the new dot read 42 bright px against the others' 15–18. At r=2.6 it rea
 
 ---
 
+## 10. `aortic-stenosis` page 1 — "Narrowed Valve Orifice" landed on a cusp
+
+| | |
+|---|---|
+| file | `aortic-stenosis-01-FIXED-page.png` (+ `.jpg` at q82/4:2:0, the original's own encode) |
+| target | `assets/aortic-stenosis/aortic-stenosis-01.jpg`, 1138×1707 |
+| moved | dot **(666.6,599.6) → (606,558)**, into the orifice slit; leader re-aimed from its elbow at (843,417) |
+| diff vs live | **(598,412)–(851,615)**; outside it mean 0.60, max 35 |
+| other dots | Calcified Valve Cusps 101 → 100 (JPEG noise); the two lower dots untouched |
+| old dot / new dot | **99 → 0** and **0 → 88** bright px |
+| approved | *awaiting Dr. Kreithen* |
+
+**What it fixes.** The dot sat on the body of the **right calcified cusp** — the structure the label
+directly above it already names — about 60 px from the opening. "Narrowed Valve Orifice: fixed
+obstruction accelerates systolic blood flow" now ends in the slit itself, the bright jet running
+between the two calcified masses.
+
+**The approach angle had to change, not just the endpoint.** The orifice sits *behind* the right cusp
+from the label's side, so any leader arriving at the slit's own height crosses that cusp and reads as
+pointing at it — the very confusion being fixed. The new line is shallower (31° against the original
+46°) and passes just above the right cusp's upper margin before dropping into the slit.
+
+**The dot straddled a tissue boundary, which is the hardest case for a clone.** It sat exactly on the
+join between the pale calcified cusp and the red sinus wall, so a donor patch has to reproduce *both*
+plus the edge between them. Nine offsets were rendered and compared side by side; eight left a visible
+patch, and **(0,+26)** — straight down the same cusp — was the only one keeping cusp texture and the
+wall's inner edge continuous. The 250 px diagonal above it was erased separately with a single-sided
+perpendicular clone at 16 px, which preserves texture where a two-sample average would flatten it.
+
+### Deploy sequence when the batch ships
+1. copy the PNG over `assets/aortic-stenosis/aortic-stenosis-01.jpg` at **q82, subsampling 2**
+2. regenerate `assets/aortic-stenosis/thumb-01.jpg` at 320×480 q82
+3. `python3 scripts/rebuild_gallery_pdf.py <root> aortic-stenosis`
+4. `python3 scripts/verify_gallery_pdfs.py <root> aortic-stenosis`
+5. headless boot on the shipped bytes, then push and confirm `/version.txt`
+
+**`p4` carries the same error** ("Narrowed central orifice", also on a calcified cusp). It is the next
+one queued, and it batches into this gallery's single PDF rebuild.
+
+---
+
 ## Higgsfield was tried on this dot and failed — second independent failure on this panel
 
 Physician asked for the Higgsfield route; two variants were generated and both failed, so the
