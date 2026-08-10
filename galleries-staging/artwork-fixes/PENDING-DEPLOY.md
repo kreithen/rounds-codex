@@ -546,7 +546,11 @@ change, every badge must be re-anchored per panel. Copying the layout is what pu
 
 ---
 
-# NOT YET DEPLOYED — staged after v93
+# SHIPPED as v94, 2026-08-10
+
+> Entry 13 is live — app repo `f3ae1ef`, `v94-ENDOCARDITIS-P6-TEE-ARROW`. The gallery PDF was
+> rebuilt at q88 and `verify_gallery_pdfs.py` found no drift; the page, `version.txt` and the `sw.js`
+> `CACHE` string were read back byte-correct from `origin/main`.
 
 ## 13. `endocarditis` page 6 — the TEE arrow pointed outside the ultrasound sector
 
@@ -582,6 +586,51 @@ already had. 207 yellow px land against 206 in the original — the arrow is the
 ### Deploy sequence
 Same as §9 — but note this gallery's page 7 went live in v93, so a fresh
 `rebuild_gallery_pdf.py <root> endocarditis` **at q88** is needed for this page.
+
+---
+
+# NOT YET DEPLOYED — staged after v94
+
+*From here the work follows the 81-page production work order
+(`Rounds-Codex-leader-line-production-order.docx`), easiest pages first — the pages with a single
+label to move. Every page in that order is also going to production for a re-render; a local fix is
+the stopgap, not a substitute, and each one is a pure shortening/translation of an existing stroke.*
+
+## 14. `addisons` page 1 — the "Cortex" leader ended inside the medulla
+
+Work order row `addisons` p1 #1, the page's only move (11 labels, 0 checks).
+
+| | |
+|---|---|
+| file | `addisons-01.jpg` — the gallery ships at the repo root, `base` is `''` |
+| target | `addisons-01.jpg`, 800×1200 |
+| shortened | leader tip **(255,244) → the orange band**; erased t ∈ [−2.5, 10.2] along its own axis |
+| diff vs live | **x 250–266, y 236–246** — 48 px above 20/255, one stray px elsewhere |
+| the "Medulla" leader | untouched, still in the medulla |
+| re-encode | the file's own qtables, 4:4:4; **global mean abs diff 0.269/255** |
+| approved | *awaiting Dr. Kreithen* |
+
+**What it fixes.** The inset cross-section's whole point is cortex-versus-medulla, and the "Cortex"
+leader ended in the dark brown medulla — the same tissue the "Medulla" leader points at, seven
+pixels past the boundary. Two labels naming two layers, one layer.
+
+**Measured, not assumed.** Sampling the tissue 4–5 px either side of the leader along its own axis
+puts the medulla at t 0–6 (mean RGB ~110,55,30), the orange striated cortex at t 6.5–16.5
+(~200,140,80) and black background from t 18. So the band the label wants is a definite 10-px
+window, and the tip was 7 px short of it.
+
+**It is a shortening, not a redraw.** Nothing is drawn; the stroke is erased back so its visible
+terminus falls inside the orange band. That matches the page's own idiom — the third leader into
+this inset, from below, also stops at the band's boundary rather than pushing into it.
+
+**The donor is perpendicular for a reason worth keeping.** This leader runs almost exactly *radially*
+out of the medulla's centre (247,250), so its perpendicular is nearly *tangential*: a tangential
+donor stays at the same radius and its radial striations line up with the ones it replaces. Chosen
+from a contact sheet of eight offsets by eye rather than by score — ±10 and ±12 both left a visible
+step in the cortex/medulla contour, and a score would not have said so.
+
+**Note on this page's geometry.** `addisons-01.jpg` is 800×1200, i.e. one of the 27 sub-standard
+galleries. The fix is at the shipped size and does not change it.
 
 ---
 
