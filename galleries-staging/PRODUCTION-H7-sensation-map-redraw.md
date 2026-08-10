@@ -10,6 +10,17 @@ physically cannot show. The sensation map is covered first, the pulse figure sec
 
 Send with the leader-line re-render batch — no separate schedule needed.
 
+**Attachments, both in this folder:**
+
+| file | for |
+|---|---|
+| `H7-reference-dorsal-sensation-map.png` | the sensation map — four dorsal territories and their boundaries |
+| `H7-reference-pulse-two-panel.png` | the pulse figure — dorsalis pedis site, and the posterior tibial site on a medial-ankle view |
+
+Both are **specifications of layout and palpation points, not finished artwork.** Please re-render from
+source in the gallery's house style; the cyan markers are there to locate the sites and are not
+intended to appear in the final figures.
+
 ---
 
 ## What is wrong
