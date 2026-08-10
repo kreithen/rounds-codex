@@ -284,6 +284,50 @@ the page's other three at 50, 69 and 75.
 
 ---
 
+## 7. `cardiac-arrest` page 2 — badge 5 "Diaphragm" pointed into lung
+
+| | |
+|---|---|
+| file | `cardiac-arrest-02-FIXED-page.png` (+ `.jpg` at **q90 / 4:4:4**, the original's own encode) |
+| target | `cardiac-arrest-upload/assets/cardiac-arrest/cardiac-arrest-02.jpg`, 913×1373 |
+| moved | arrowhead **(351,539) → (430,562)**, onto the diaphragmatic dome |
+| diff vs live | **(338,528)–(433,566)**; outside it mean abs diff **0.16**, max 10, 0.03% of pixels >4 |
+| other four badge arrows | bright-pixel counts identical before and after |
+| approved | *awaiting Dr. Kreithen* |
+
+**What it fixes.** Badge 5 ended in left lung parenchyma — the same tissue badge 4 ("Lungs") points
+at, about 60 px away. As shipped, the two badges are indistinguishable at their endpoints. The
+diaphragm is drawn clearly as the red-orange honeycombed dome below; the arrow now lands on it.
+
+**Why the leader is angled when the page's others are horizontal.** The diaphragm's highest drawn
+pixel is y≈550 and badge 5's circle centre is at y=539, so no horizontal line from that badge can
+reach the dome at all — the geometry forces a slope. It is applied as a **short elbow at x=341**, so
+the horizontal run that reads as this page's idiom is preserved for 60 of its 90 px and only the last
+segment angles down (slope 0.26).
+
+**The elbow position was forced by the erase, not chosen for looks.** The shaft crosses a **rib** at
+x 295–330, and a rib is a strong diagonal that no parallel or per-column fill can rebuild: erasing the
+whole shaft was tried twice — a per-column fit blurred the lung's honeycomb into a flat band, and a
+parallel-strip clone broke the rib's edge. Both were visible at 6×. Keeping the shaft and erasing only
+the **14 px of arrowhead** — which sits on plain lung texture — leaves nothing detectable at 16×.
+
+**This page re-encodes almost losslessly**, unlike the others in the batch: it ships at **q90 with
+4:4:4 chroma** (no subsampling), so the untouched 99% differs by a mean of 0.16 against 0.8–1.3 on the
+4:2:0 pages. Worth knowing before assuming a batch-wide number.
+
+### Deploy sequence when the batch ships
+1. copy the PNG over `cardiac-arrest-upload/assets/cardiac-arrest/cardiac-arrest-02.jpg` at
+   **q90, subsampling 0**
+2. regenerate **`gthumbs/cardiac-arrest-02.jpg`** at 320×480 q82 — this gallery uses the flat
+   root-level `gthumbs/`, not a local `thumb-NN.jpg`
+3. `python3 scripts/rebuild_gallery_pdf.py <root> cardiac-arrest`
+4. `python3 scripts/verify_gallery_pdfs.py <root> cardiac-arrest`
+5. headless boot on the shipped bytes, then push and confirm `/version.txt`
+
+**Pairs with the v91 page-8 fix already live** — same gallery, so one PDF rebuild covers both.
+
+---
+
 ## Higgsfield was tried on this dot and failed — second independent failure on this panel
 
 Physician asked for the Higgsfield route; two variants were generated and both failed, so the
