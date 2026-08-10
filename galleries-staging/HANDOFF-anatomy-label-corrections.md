@@ -184,6 +184,29 @@ reworded. Inventing those glyphs on delivered artwork is exactly what rule 1 for
 exist elsewhere in the same batch, and "Superficial peroneal" appears nowhere. So H7 is a
 **full-page re-render**, either by production or by the physician in Photoshop.
 
+### A SECOND defect found on the same page (2026-08-10)
+
+The physician then flagged the **pulse figure** in the same panel. It is a dorsal view whose
+**"Posterior tibial pulse" leader ends on the dorsum over the metatarsals** — the PT pulse is
+palpated behind and below the *medial malleolus*, so there is **no correct endpoint for that label on
+a dorsal figure at all**. Same failure mode as the sensation map: the label names something the view
+cannot show.
+
+Clinically it is the worst item on the page. DP and PT are checked as a pair *because they test
+different arterial supplies*; someone taught to palpate "posterior tibial" on the dorsum is palpating
+the anterior circulation twice, so an occluded posterior tibial artery would examine as normal.
+
+Also on that figure: the great toe and lesser toes are shaded **purple**, the legend's deep-peroneal
+colour, repeating the same wrong teaching. Flagged with the caveat that purple may be the source
+atlas's own dorsal-digital-nerve convention — but on a page whose legend defines purple as deep
+peroneal, it cannot be read that way. The DP leader itself is *acceptable* (slightly proximal of the
+standard point) and was explicitly not called an error.
+
+**The pattern worth carrying forward: check whether a label names a structure the chosen VIEW can
+show at all, before checking whether the leader landed on it.** Both defects on this page are of
+that kind, and neither is detectable by asking "does the line end on the right structure" — for both,
+no right structure is present in the frame.
+
 ### Two workflow lessons, both cost real time this session
 
 - **Do not round-trip generated images to my own eyes.** The container is firewalled from the result

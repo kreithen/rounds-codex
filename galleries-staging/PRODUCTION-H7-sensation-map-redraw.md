@@ -1,9 +1,12 @@
-# For production: `hip-fracture` page 5 — the SENSATION MAP needs a redraw, not a relabel
+# For production: `hip-fracture` page 5 — the NEUROVASCULAR panel needs a redraw, not a relabel
 
 **This supersedes item H7 in the MSK corrections document already sent.** That item asked for a
 label change. On re-examination at full resolution the panel needs the artwork redrawn, and acting
 on the earlier note alone would leave the page teaching the wrong anatomy. Please work from this
 sheet instead.
+
+**Two separate defects on this page**, both of the same kind — a label naming a structure the view
+physically cannot show. The sensation map is covered first, the pulse figure second.
 
 Send with the leader-line re-render batch — no separate schedule needed.
 
@@ -83,6 +86,57 @@ Should read:
 
 As written the first bullet names the wrong nerve, and the first two are redundant — "1st web space"
 *is* the deep peroneal test.
+
+---
+
+## Second defect on the same page: the PULSE figure above the map
+
+The vascular illustration in the same NEUROVASCULAR EXAM panel carries a separate error of the same
+kind — a label naming a structure the view cannot show.
+
+### "Posterior tibial pulse" points at the dorsum of the foot
+
+The figure is a **dorsal (top-of-foot)** view. Its "Posterior tibial pulse" leader ends on the
+**dorsum over the metatarsals**, among the dorsal vessels.
+
+**The posterior tibial pulse is palpated behind and below the medial malleolus** — on the medial side
+of the ankle, in the retromalleolar groove. It is not on the dorsum, and a dorsal view cannot show it
+at any location. The leader is not merely displaced; there is no correct endpoint for it on this
+figure.
+
+**This is the most clinically consequential item on the page.** Dorsalis pedis and posterior tibial
+are checked *as a pair* precisely because they test different arterial supplies — DP from the
+anterior tibial artery, PT from the posterior tibial. A trainee who learns to palpate "posterior
+tibial" on the dorsum is palpating the anterior circulation twice, so a patient with an occluded
+posterior tibial artery would examine as normal. The whole reason for checking two pulses is lost.
+
+**Requested fix — please choose whichever suits the layout:**
+
+- add a **small medial-ankle view** beside the dorsal figure and put the "Posterior tibial pulse"
+  label on it, behind and below the medial malleolus; **or**
+- keep the dorsal figure for dorsalis pedis only, and move the posterior tibial label to its own
+  small inset.
+
+Either way the label must not sit on the dorsal figure.
+
+### "Dorsalis pedis pulse" — please check, probably acceptable
+
+Its leader lands on the proximal dorsum near the ankle, which is the right territory. The standard
+palpation point is slightly more distal — just lateral to the extensor hallucis longus tendon,
+between the bases of the first and second metatarsals. Worth nudging distally if the artwork is being
+touched anyway, but we are **not** calling this an error.
+
+### The purple regions on the toes
+
+The same figure shades the great toe and patches of the lesser toes **purple**, which is the colour
+this page's legend assigns to **deep peroneal**. That repeats the error the sensation map makes:
+deep peroneal supplies only the first web space, not whole toes.
+
+We recognise the purple may be the source atlas's own convention for dorsal digital nerves rather
+than a deep-peroneal shading. **On this page it cannot be read that way** — the legend directly
+beneath defines purple as deep peroneal, so the reader is told the great toe is deep peroneal
+territory. Please either recolour these regions to match the corrected territories, or remove the
+tint from the pulse figure so the colour key belongs unambiguously to the sensation map alone.
 
 ---
 
