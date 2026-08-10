@@ -6,9 +6,10 @@ re-routing the line. Sending them as line-placement work would produce a page wi
 endpoint and a leader dragged across half the figure.
 
 Three kinds so far: **layout** rows, where the label itself has to move; **numbering** rows, where
-the marker is in the right place and carries the wrong number; and **not-separable** rows, where the
+the marker is in the right place and carries the wrong number; **not-separable** rows, where the
 stroke to be shortened is collinear with the artwork underneath it and no local edit can remove one
-without taking the other.
+without taking the other; and **on-the-silhouette** rows, where the marker to be moved sits astride
+the organ's outline against black background, which no clone donor can reconstruct.
 
 The layout kind is the point already made in `PRODUCTION-BRIEF-leader-lines.md`: *"treat these as
 layout problems, not line-placement problems — moving the label is a better fix than threading the
@@ -87,3 +88,34 @@ page it is not.
 
 *Examined on the shipped page 2026-08-10; a working correction was built, measured against the
 original at 24×, and discarded.*
+
+---
+
+## `gi-bleed` page 2 #1 — "Cardia (Entry from esophagus)"
+
+**The defect is real and it matters.** The leader leaves the label at (534,337) and ends in a dot at
+(494,351.5), on the outer wall of the fundus dome. The cardia is ~95 px away: scanning the first
+non-black row per column gives the stomach's top boundary at 337–347 across x 440–510, stepping to
+363 at x 400–410, and that step is the angle of His. The junction's pale mucosal lining runs along
+y 382–385 at x 393–405, so the endpoint should be about **(400,378)**.
+
+**Not an off-by-one, which is worth knowing before anyone re-renders the column.** Fundus lands at
+(503,422), Body at (487,517), Antrum at (417,613) — body and antrum are correct, so only Cardia is
+displaced. The fix for a shifted column would be a different job.
+
+**Why we have not done it.** The shipped dot **straddles the organ's silhouette** — part of it lies
+on the dome's wall, part on black background. Four tangential donors were tried at ±(15,5) and
+±(21,7): the positive offsets punch a black bite out of the dome's edge, the negative ones push a
+tissue bulge into the black. That is not a tuning problem. A translation donor cannot reconstruct a
+high-contrast silhouette that runs *through* the region being filled, and this project's own rule
+already says so — *a strong diagonal or curved edge crossing the stroke: avoid erasing at all.*
+
+The corrected leader itself was worked out and is easy to state, so production does not have to
+re-derive it: run from the label anchor (534,337) up-left to a bend at **(410,320)** — that clears
+the dome's apex by 9–17 px the whole way — then straight down the black gap between oesophagus and
+fundus to the junction at **(400,378)**. A single straight line from label to junction does not work:
+it passes y=355 at x=470 where the dome's surface is at y=337, so it would cross the fundus and
+travel through the lumen to reach a structure on the far side.
+
+*Examined on the shipped page 2026-08-10; a correction was built, produced a visible scar on the
+dome's edge at 20x, and was discarded.*

@@ -771,6 +771,34 @@ it.
 
 ---
 
+## 18. `bowel-obstruction` page 2 — "Villi" ended in the outer wall of the cross-section
+
+Work order row `bowel-obstruction` p2 #1 (20 labels, 4 flagged [CHECK]).
+
+| | |
+|---|---|
+| target | `assets/bowel-obstruction/bowel-obstruction-02.jpg`, 1024×1536, 4:2:0 |
+| terminus | **(156,929) → (146.7,947.8)**, 21 px inward along the annulus's own radius |
+| leader | gains one bend at (161,929); the horizontal run is otherwise unchanged |
+| diff vs a null re-encode | **x 146–160, y 924–950**, 127 px |
+| Mucosa / Submucosa / Muscularis / Serosa leaders | untouched |
+| approved | *awaiting Dr. Kreithen* |
+
+**What it fixes.** On a five-label layer diagram, "Villi" pointed four layers out — the dot sat at
+radius 68 from the annulus's centroid (126,990), in the concentric striated bands, while the
+scalloped mucosal projections it names line the lumen. The "Mucosa" leader below it lands correctly
+on a fold at (172,964), which is what makes this read as a layer error rather than a near miss.
+
+**The move is radial**, because on a cross-section the radius *is* the layer axis: going inward to
+r = 47 lands on a pale scalloped projection near the top of the lumen, and the connecting segment
+inherits that direction rather than dog-legging.
+
+**Donor is tangential** — (+7.2,+3.5), the local tangent at that radius, so band lands on band across
+concentric striations. Same principle as `pud` p2 one entry above: on curved banding, measure the
+tangent.
+
+---
+
 ## Higgsfield was tried on this dot and failed — second independent failure on this panel
 
 Physician asked for the Higgsfield route; two variants were generated and both failed, so the
