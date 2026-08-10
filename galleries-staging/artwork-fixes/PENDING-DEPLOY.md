@@ -201,6 +201,48 @@ and raising quality to "be safe" makes the page worse.**
 
 ---
 
+## 5. `pericarditis` page 1 — "Fibrous Pericardium" ended on empty background
+
+| | |
+|---|---|
+| file | `pericarditis-01-FIXED-page.png` (+ `.jpg` at q88/4:2:0, the original's own encode) |
+| target | `assets/pericarditis/pericarditis-01.jpg`, 1280×1920 |
+| moved | dot **(750,624) → (730,784)**, onto the pericardial sac; leader redrawn from its elbow at (874,373) |
+| diff vs live | **(721,370)–(882,793)** |
+| other three dots | bright-pixel counts identical before and after: parietal 134/134, cavity 27/27, visceral 131/131 |
+| approved | *awaiting Dr. Kreithen* |
+
+**What it fixes.** The leader ended in black background to the right of the ascending aorta, touching
+nothing; the nearest drawn structure was the aortic wall 15 px away. It now lands on the translucent
+sac itself, on the fibrous sheet with its striations visible either side of the dot.
+
+**How "outer" was checked.** Measured as distance from the heart's centre (~520,1000), the four dots
+now read **fibrous 301 px, cavity 279, parietal 257, visceral 250** — the fibrous dot is the
+outermost of the four, which is what the label requires. *Note for the physician:* on that same crude
+measure the existing **cavity dot sits outboard of the parietal dot**. That pair was not part of the
+audit finding and has not been touched — worth your eye, but it is a curved sac and radius-from-centre
+is a blunt instrument on it.
+
+**The placement is constrained, not free.** The four leaders fan from elbows at x=874, so the fibrous
+dot has to stay above the parietal dot's leader or the two lines cross. Every point on the sac's wide
+outer band down the heart's right border is *below* that line. The chosen point is the highest place
+the sac reaches that the leader can get to without a crossing.
+
+**Three erase methods were tried on the old dot before one worked**, because it abuts the aorta's rim
+where that rim is a shallow *curve* (its x runs 735→746 across the dot's own 26 rows):
+- per-column fill → extrapolates aorta colour into the background, leaving a brown rectangle;
+- perpendicular two-sample average → a grey blob straddling the edge;
+- interpolation along the rim → drags the leader's glow in from above and the blue SVC from below.
+
+What works is fitting the **background** rather than the edge: a 2-D quadratic over an annulus using
+only its dark pixels (470 of them), evaluated across the disc. Clean at 9×.
+
+### Deploy sequence when the batch ships
+Same as §3 — this gallery now has **pages 1 and 3** staged and page 2 already live at v92, so one
+`rebuild_gallery_pdf.py <root> pericarditis` at **q88** covers all of it.
+
+---
+
 ## Higgsfield was tried on this dot and failed — second independent failure on this panel
 
 Physician asked for the Higgsfield route; two variants were generated and both failed, so the
