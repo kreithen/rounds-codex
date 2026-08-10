@@ -733,7 +733,18 @@ The terminal dot is lifted from the shipped dot (r ≈ 2.2 px, peak luma 253), n
 
 ---
 
-# NOT YET DEPLOYED — staged after v95
+# SHIPPED as v96, 2026-08-10
+
+> **Entries 17–18 are LIVE** — app repo `8c83319`, `v96-LEADER-CORRECTIONS-PUD-BOWEL-OBSTRUCTION`.
+>
+> Verified before the push: `verify_sw.js` passed, `verify_gallery_pdfs.py` compared 1,020 pages
+> across 102 galleries with no drift, and a headless boot on the shipped bytes loaded 183 conditions
+> with 10/10 thumbs in both galleries and zero page errors. Verified after: both pages, both thumbs,
+> both gallery PDFs, `version.txt` and the `sw.js` `CACHE` string read back byte-correct from
+> `origin/main`.
+>
+> PDF qualities chosen to reproduce each gallery's own existing size: pud **85** (4,292,724 vs
+> 4,320,306), bowel-obstruction **80** (1,228,024 vs 1,233,464).
 
 ## 17. `pud` page 2 — "Pylorus (pyloric sphincter)" ended inside the duodenal bulb
 
