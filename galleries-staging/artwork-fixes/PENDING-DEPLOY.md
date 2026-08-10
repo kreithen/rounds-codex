@@ -44,6 +44,54 @@ stopgap for a live defect, not a substitute for that.
 
 ---
 
+## 2. `chf` page 1 — "Left Ventricular Dysfunction" pointed at the left atrium
+
+| | |
+|---|---|
+| file | `chf-01-FIXED-page.png` (+ `.jpg` at q82/4:2:0, the original's own encode) |
+| target | `assets/heart-failure/hf-01.jpg`, 1138×1707 |
+| moved | dot **(758,422) → (768,730)**; leader redrawn from its elbow at (878,260) |
+| diff vs live | **(742,256)–(884,738)**; **0 pixels differ outside** that window |
+| other four dots | (782,551) (814,656) (802,809) (731,921) — position **and blob area byte-identical** |
+| approved | *awaiting Dr. Kreithen* |
+
+**What it fixes.** The dot sat in the gap between the left atrial appendage and a cut left pulmonary
+vein — atrium and venous inflow, not ventricle. The new endpoint is on the **left ventricular free
+wall, well lateral to the anterior interventricular groove**, so it is unambiguously LV and not
+septum or RV.
+
+**Why it lands there and not closer.** The four other dots run down the LV border in a fan from the
+label column, and the label order does not match the anatomy order — every straight route from the
+"Left Ventricular Dysfunction" label to LV muscle either passes within a dot's radius of the
+"Pulmonary Congestion" or "Ventricular Remodeling" marker, or ends on the interventricular groove.
+The chosen endpoint clears both markers by ~28 px and sits 81 px from the nearest dot. It **crosses
+the Pulmonary Congestion leader once**, at (820,507) over dark background; that crossing is
+unavoidable given the label ordering and is the reason the position was chosen by search rather than
+by eye.
+
+**Method.** Two different erases, because one does not work over both backgrounds:
+- over the dark gap, interpolate the clean pixels 9 px either side of the stroke;
+- where the leader crosses the **pulmonary vein wall** (y 370–412), that fails — the wall's banding
+  and specular rim run *horizontally*, so a perpendicular interpolation smears the rim. There the
+  stroke is replaced by the mean of the pixels 10 px left and right **on the same row**, which
+  preserves the banding. 16 px and 22 px offsets were tried and both duplicated the rim; 10 px is
+  clean at 6×.
+- the dot itself is clone-filled from 24 px to the right, an offset chosen by ring statistics over
+  nine candidates (dest mean 34.3 / σ 27.8 vs donor 35.6 / σ 30.4 — the next best was 3× worse).
+
+**The new marker matches the page's own dots**: 61 bright px against the existing five at 50–67.
+
+### Deploy sequence when the batch ships
+1. copy the PNG over `assets/heart-failure/hf-01.jpg` at **q82, subsampling 2** — that is the
+   original file's exact quantization table and chroma sampling, verified, not guessed
+2. regenerate `assets/heart-failure/thumb-01.jpg` at 320×480 q82 (this gallery uses a **local**
+   `thumb-NN.jpg`, not `gthumbs/`)
+3. `python3 scripts/rebuild_gallery_pdf.py <root> chf`
+4. `python3 scripts/verify_gallery_pdfs.py <root> chf`
+5. headless boot on the shipped bytes, then push and confirm `/version.txt`
+
+---
+
 ## Higgsfield was tried on this dot and failed — second independent failure on this panel
 
 Physician asked for the Higgsfield route; two variants were generated and both failed, so the
@@ -71,3 +119,31 @@ failure: the model will not reliably leave an adjacent marker alone.**
 **Conclusion for this defect class:** for a *stray mark next to a correct mark*, use the
 deterministic route. Higgsfield remains viable for what the pilot actually validated — moving a
 single leader endpoint on a panel with no adjacent marker to preserve.
+
+---
+
+## Higgsfield failed again on `chf` p1 — fourth attempt, third distinct panel
+
+Two variants, `nano_banana_pro` (server substituted `nano_banana_2`), 2k, 1:1, from a crop that
+**excluded the text column entirely** — the pilot recipe applied properly for the first time, so the
+model had no label text it could corrupt. It still failed, in two different ways:
+
+| | dots present | the four that must not move | old LVD dot | new dot on LV |
+|---|---|---|---|---|
+| Variant A | **10** (5 spurious bright blobs) | two moved **26 px and 44 px** | cleared | no |
+| Variant B | 7 | (731,921) **deleted**, replaced 123 px away | cleared | **no — deleted, not moved** |
+
+**Variant B repeats the aortic-dissection failure exactly**: it removed the marker it was asked to
+move and did not put one back, leaving the label anchored to nothing. Variant A moved markers it was
+told to leave alone.
+
+Fidelity was also gone in both — mean |diff| against the source crop is **8–12 /255 across the whole
+heart**, against the pilot's requirement of ~0 outside the change. The border cells read 2.0–2.9,
+which is the black padding, so the number is not a resampling artefact of the comparison.
+
+One thing did survive on both: the four points where the leaders **cross the crop's right edge** are
+within 1 px of the source, so the crop-and-repaste geometry itself is sound. The recipe is fine; the
+model is the problem.
+
+**Running tally: Higgsfield 0/4 on leader corrections, deterministic 4/4.** Enough to stop
+proposing it for this defect class.
