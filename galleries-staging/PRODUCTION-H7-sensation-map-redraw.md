@@ -119,6 +119,13 @@ posterior tibial artery would examine as normal. The whole reason for checking t
 
 Either way the label must not sit on the dorsal figure.
 
+**An approved two-panel reference layout is attached** (Dr. Kreithen, 2026-08-10): a dorsal view with
+a marker at the dorsalis pedis site, beside a medial-ankle view with a marker behind and below the
+medial malleolus at the posterior tibial site. As with the sensation map it is a **specification of
+the layout and the palpation points, not finished artwork** — please re-render from source in the
+gallery's own style. The cyan dots mark the two sites and are not intended to appear in the final
+figure; use the page's existing leader-and-label treatment instead.
+
 ### "Dorsalis pedis pulse" — please check, probably acceptable
 
 Its leader lands on the proximal dorsum near the ankle, which is the right territory. The standard
