@@ -207,6 +207,26 @@ show at all, before checking whether the leader landed on it.** Both defects on 
 that kind, and neither is detectable by asking "does the line end on the right structure" — for both,
 no right structure is present in the frame.
 
+### The class generalises, and the sweep's coverage is narrower than its headline
+
+Mined the existing `label-qa-raw/` findings for the same signature: the class is **already in the
+data**, it was just never named. Confirmed twins of the `hip-fracture` p5 defect on `compartment` p2
+(flexor retinaculum, deep posterior compartment and tibial nerve all placed on an anterior view that
+cannot show them) and `anxiety` p2 (insula on a midsagittal cut). `compartment` p2 also **recolours
+the artwork to match the wrong label**, exactly as the purple toes do — two galleries, one mistake,
+same mechanism, so it is a source-artwork pattern rather than a slip.
+
+**The bigger finding is the coverage gap.** The sweep is effectively a *page-2 sweep* — 90 of 109
+worklist entries are page 2, 15 are page 1 — against ~1,000 pages that exist. So "119 examined, 81
+wrong, 553 findings" describes the **anatomy pages**, not the galleries. The working assumption was
+that labelled anatomy lives on pages 1-2; `hip-fracture` p5 is titled *Physical Exam* and carries two
+labelled anatomical figures, both defective, which disproves it. The 81-page work order is therefore
+not a clean bill of health for the other ~880 pages, and a re-render batch fixing the 81 would not
+have caught this page.
+
+Full write-up, with the mining precision (23 broad candidates, ~4 true — a review aid, **not** a
+gate) and a bounded sampling proposal, in **`VIEW-MISMATCH-class.md`**.
+
 ### Two workflow lessons, both cost real time this session
 
 - **Do not round-trip generated images to my own eyes.** The container is firewalled from the result
