@@ -144,3 +144,48 @@ from here lands in the middle of that. See `LAUNCH-AUG17.md`.
 **It is not launch-blocking.** `LAUNCH-AUG17.md` §4.1 lists the anatomy corrections as production's
 work and explicitly excludes them from the 17 August critical path. The galleries ship as they are;
 corrected pages drop in afterwards with no app change beyond a rebuild.
+
+---
+
+## MSK H7 — resolved to a specification (2026-08-10)
+
+`hip-fracture` p5 was read at full resolution and the H7 note's premise was **wrong**: it assumed a
+dorsal image needing a relabel. **The map is a PLANTAR (sole) view**, so deep peroneal — which
+supplies no plantar skin at all — cannot appear on it, and two of the three structures the exam
+bullets ask the reader to test are dorsal and unshowable on a sole. The full region-by-region
+finding is in `PRODUCTION-CORRECTIONS-MSK.md` §H7a.
+
+**A dorsal reference map was generated and the physician approved it** (Higgsfield `nano_banana_2`,
+2k, from a hand-drawn territory layout — the model is not trusted to place nerve territories itself).
+QA'd numerically before he saw it, which is the fast and stronger check:
+
+| zone | share of foot | centroid (x: 0=medial, 1=lateral) |
+|---|---|---|
+| superficial peroneal (pink) | 68.1% | 0.54 — broad dorsum |
+| deep peroneal (purple) | **2.8%** | 0.36, y=0.23 — 1st web space |
+| saphenous (green) | 14.4% | **0.15** — medial border |
+| sural (blue) | 10.1% | **0.86** — lateral border |
+| near-white pixels (text/labels) | **0** | — |
+
+Approved render: `hf_20260810_030924_49f5cb83-0edc-4cc4-b292-45bf3a971e46.png` in the Higgsfield
+gallery. **It is a specification, not final artwork** — production re-renders in the gallery's style.
+
+**It cannot be dropped into the page as-is, and that is the important part.** The correction also
+changes *text*: the legend gains a fifth entry (Superficial peroneal) and the three exam bullets are
+reworded. Inventing those glyphs on delivered artwork is exactly what rule 1 forbids, and the
+`transplant_gallery_text.py` exception does not cover it — that tool only copies glyphs that already
+exist elsewhere in the same batch, and "Superficial peroneal" appears nowhere. So H7 is a
+**full-page re-render**, either by production or by the physician in Photoshop.
+
+### Two workflow lessons, both cost real time this session
+
+- **Do not round-trip generated images to my own eyes.** The container is firewalled from the result
+  CDN, so viewing one means smuggling base64 through `sandbox_exec` in ~20 kB chunks — slow, and the
+  first attempt came back too compressed to judge. **Hand the physician the CDN URL**; it is public
+  and opens full-resolution in his browser. His eye is the gate regardless, so my look is a redundant
+  second pass.
+- **QA numerically instead.** A colour-zone probe run in the sandbox returns a text report in one
+  call and proves the assertions that actually matter (is deep peroneal small, is it in the web
+  space, are medial/lateral swapped, is there burned-in text). It is stronger evidence than a visual
+  read *and* far faster. What it cannot judge — toe count, proportions, whether the render reads as
+  dorsal — is exactly what to ask the physician to confirm.

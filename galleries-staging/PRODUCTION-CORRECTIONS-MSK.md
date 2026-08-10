@@ -298,6 +298,42 @@ records it as deep peroneal has not tested the nerve they think they tested.
 purple "deep peroneal" region currently covers the broad dorsum, the artwork needs changing too, not
 just the text.
 
+### H7a. The map is a PLANTAR view, so the artwork needs a full redraw — not a relabel
+
+Examined at full resolution 2026-08-10. **The SENSATION MAP is a plantar (sole) view** — toe pads,
+arch and heel pad are all visible. That makes the defect larger than described above, because two of
+the three structures the exam bullets ask the reader to test are on the *dorsum* and a sole view
+cannot show them at all.
+
+Colour regions as drawn, sampled against the legend swatches:
+
+| region of the sole | colour drawn | legend meaning | correct |
+|---|---|---|---|
+| all toes | green | Saphenous | **wrong** — saphenous never reaches the toes |
+| central sole | blue | Sural | **wrong** — sural is a thin lateral border strip only |
+| medial ball | purple | Deep peroneal | **impossible** — deep peroneal supplies no plantar skin |
+| medial arch | pink | *not in the legend* | **wrong** — medial plantar |
+| heel | orange | Plantar | roughly right (medial calcaneal) |
+
+**The entire sole is tibial-nerve territory** (medial and lateral plantar, medial calcaneal at the
+heel), with only thin sural and saphenous border strips. Six colours appear on a four-item legend, so
+the panel reads as a generic reflexology-style foot rather than a nerve map built to this legend.
+**No peroneal branch belongs on a plantar view.**
+
+**Requested correction: replace the panel with a DORSAL view**, which is what the corrected exam
+bullets teach — superficial peroneal across the broad dorsum, deep peroneal confined to the first web
+space, sural along the lateral border, saphenous along the medial border. If a plantar inset is kept
+alongside it, it should be almost entirely "Plantar"/tibial with thin sural and saphenous borders.
+
+**An approved reference render exists.** Dr. Kreithen approved a generated dorsal map on 2026-08-10
+to show the intended territories; see `galleries-staging/artwork-fixes/` and the note in
+`HANDOFF-anatomy-label-corrections.md`. It is a **specification of the layout, not final artwork** —
+please re-render from source in the gallery's own style.
+
+**Note that the legend and the bullets change too**, so this page cannot be corrected by swapping the
+picture alone: the legend gains **Superficial peroneal** as a fifth colour, and the bullets become
+"Dorsum of foot (superficial peroneal) / 1st web space (deep peroneal) / Plantar foot (tibial)".
+
 ## H8. Page 9 — the complications shown are arthroplasty-specific, unlabelled
 
 RECOGNIZE & REPORT COMPLICATIONS gives five: infection, DVT/PE, **dislocation**, **implant loosening**,
