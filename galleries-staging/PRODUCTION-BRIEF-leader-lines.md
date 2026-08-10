@@ -9,11 +9,22 @@ Full findings: `Rounds-Codex-leader-line-corrections.docx`.
 
 ## What we are seeing
 
-Across the anatomy pages checked so far, **323 of 1,098 labels — 30% — have a leader line that does
-not end on the structure it names.** Only 18 of 79 pages were clean.
+**119 anatomy pages examined. 81 of them carry at least one label whose leader line ends on a
+structure other than the one it names — 553 individual findings.** The accompanying work order lists
+those 81 pages across 75 galleries: 272 labels to move and 235 to confirm.
+
+On the first 79 pages of that review, where we counted every label rather than only the wrong ones,
+the rate was **323 of 1,098 — 30%**. We have not recounted the denominator across the full set, so
+please treat 30% as the measured rate on that subset rather than a figure for all 81 pages.
 
 This is not a scatter of one-off slips. It has two shapes, and both look mechanical rather than
 artistic.
+
+**One limit on scope, stated plainly.** In practice this was a review of pages 1 and 2 — 90 of the
+119 pages examined were page 2. Roughly 880 pages across the galleries have never been looked at, and
+we have since found the same class of defect on pages 4, 6, 7 and 8. **So the 81-page list is a work
+order for the anatomy pages, not a clean bill of health for the rest**, and the 30% figure should not
+be extrapolated to the full library in either direction.
 
 ---
 
@@ -124,8 +135,14 @@ not to the label's row.
    corrected — re-rendering from source keeps every other pixel of the page intact, which no fix on
    our side can match.
 
-Please do not re-render anything yet beyond confirming the cause: our review of the remaining pages
-is still in progress and we would rather send one complete list than two partial ones.
+**The 81-page list is complete and ready to work from.** Dr. Kreithen approves by page, so please
+start from the sheets he has signed rather than the whole order at once.
+
+Separately from this list you may also have received individual sheets for particular pages —
+`aortic-stenosis` p2, `acs` p6, `cardiomyopathy` p1, `pericarditis` p4 and the two `hip-fracture` p5
+figures. Those are **not** leader-line corrections and are not in the work order: each needs a figure
+redrawn or a label block re-sited, for reasons given on the sheet. They can proceed independently of
+the template question.
 
 ---
 
