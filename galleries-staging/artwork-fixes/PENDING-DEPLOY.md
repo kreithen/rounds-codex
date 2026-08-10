@@ -546,6 +546,45 @@ change, every badge must be re-anchored per panel. Copying the layout is what pu
 
 ---
 
+# NOT YET DEPLOYED — staged after v93
+
+## 13. `endocarditis` page 6 — the TEE arrow pointed outside the ultrasound sector
+
+| | |
+|---|---|
+| file | `endocarditis-06-FIXED-page.png` (+ `.jpg` at q88/4:2:0, the original's own encode) |
+| target | `assets/endocarditis/endocarditis-06.jpg`, 1280×1920 |
+| moved | the whole arrow by **(−56,−15)**; tip **(711,893) → (655,878)** |
+| diff vs live | **(654,849)–(749,906)** |
+| old position | **224 → 0** yellow px · new position **0 → 207** |
+| the TTE arrow on the panel above | 223 → **223, untouched** |
+| approved | *awaiting Dr. Kreithen* |
+
+**What it fixes.** The arrow's tip sat in black background **beyond the sector's right border**,
+touching no image content at all, while the vegetation it presumably indicates sits inside the fan.
+The tip is now at (655,878) — inside the sector, just off the upper-right corner of the vegetation,
+with the arrow still pointing down-left into it.
+
+**The arrow is translated, not redrawn.** Its own pixels are lifted with a soft yellowness alpha and
+composited at the new position, so the arrowhead keeps exactly the shape, colour and antialiasing it
+already had. 207 yellow px land against 206 in the original — the arrow is the same arrow.
+
+**Two things the erase needed, both found by looking rather than by measuring:**
+- The old position **straddles the sector's bright diagonal border**. A background surface fitted
+  over an annulus averages border and black together and leaves a **grey arrow-shaped ghost** —
+  built that way first, obvious at 7×. Cloning *along* the border instead (offset 52 px on the unit
+  vector of the (635,847)→(767,955) edge) lands border-on-border and black-on-black.
+- **The erase mask has to be wider than the paste mask.** JPEG leaves a faint warm fringe a pixel or
+  two outside the arrow carrying almost no yellowness; erasing only the yellow core left that fringe
+  tracing the old arrow's outline at 10×. The erase uses a blurred, dilated copy of the alpha; the
+  paste uses the sharp one.
+
+### Deploy sequence
+Same as §9 — but note this gallery's page 7 went live in v93, so a fresh
+`rebuild_gallery_pdf.py <root> endocarditis` **at q88** is needed for this page.
+
+---
+
 ## Higgsfield was tried on this dot and failed — second independent failure on this panel
 
 Physician asked for the Higgsfield route; two variants were generated and both failed, so the
