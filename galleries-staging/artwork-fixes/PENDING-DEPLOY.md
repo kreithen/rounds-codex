@@ -372,6 +372,46 @@ rebuild covers all three.
 
 ---
 
+## 9. `endocarditis` page 7 — "VALVE CUSP" landed on the vegetation
+
+| | |
+|---|---|
+| file | `endocarditis-07-FIXED-page.png` (+ `.jpg` at q88/4:2:0, the original's own encode) |
+| target | `assets/endocarditis/endocarditis-07.jpg`, 1280×1920 |
+| moved | tip **(825,406) → (828,476)**, onto pale cusp tissue; elbow added at (930,406) |
+| diff vs live | **(820,397)–(939,482)** |
+| other three tips | LEAFLET PERFORATION 15/15, PERIVALVULAR 2/2, FRIABLE unchanged |
+| approved | *awaiting Dr. Kreithen* |
+
+**What it fixes.** "VALVE CUSP — site of endothelial injury and microbial adherence" ended on the
+**right-hand nodules of the same cauliflower vegetation** that *FRIABLE VEGETATION* points to, 40 px
+above it. Two labels, one object, and the one that is supposed to name the *substrate* pointed at the
+lesion. It now lands on the pale cusp surface immediately below the vegetation — the cusp the
+vegetation is adherent to, which is the label's own claim.
+
+**The angle is forced.** Along the leader's original row (y=406) there is no cusp anywhere: to the
+right lies the sinus and then the aortic wall, and to the left the leader would have to cross the
+whole vegetation to reach cusp beyond it. So an elbow at x=930 with a 34° final segment, the same
+device used on `cardiac-arrest` p2 for the same reason.
+
+**The erase needed a clone, not a fit — the opposite of `pericarditis` p1.** A per-column quadratic
+gives each column a smooth ramp, which is invisible over flat background but on this specimen erased
+the sinus wall's fine striations and left a plainly visible smear. A parallel clone at **dy=−18**,
+chosen by eye from a six-offset sheet, keeps them: the structures here run near-vertically, so a
+vertical offset slides them along their own direction.
+
+**Marker size was measured, not assumed.** The page's tips are 5 px across (r≈2.5); drawn first at
+r=3.6 the new dot read 42 bright px against the others' 15–18. At r=2.6 it reads 26.
+
+### Deploy sequence when the batch ships
+1. copy the PNG over `assets/endocarditis/endocarditis-07.jpg` at **q88, subsampling 2**
+2. regenerate `assets/endocarditis/thumb-07.jpg` at 320×480 q82
+3. `python3 scripts/rebuild_gallery_pdf.py <root> endocarditis`
+4. `python3 scripts/verify_gallery_pdfs.py <root> endocarditis`
+5. headless boot on the shipped bytes, then push and confirm `/version.txt`
+
+---
+
 ## Higgsfield was tried on this dot and failed — second independent failure on this panel
 
 Physician asked for the Higgsfield route; two variants were generated and both failed, so the
