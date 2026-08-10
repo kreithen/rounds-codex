@@ -243,6 +243,47 @@ Same as §3 — this gallery now has **pages 1 and 3** staged and page 2 already
 
 ---
 
+## 6. `cardiomyopathy` page 4 — "SMALL LV CAVITY" sat inside the septal mass
+
+| | |
+|---|---|
+| file | `cardiomyopathy-04-FIXED-page.png` (+ `.jpg` at q82/4:2:0, the original's own encode) |
+| target | `assets/cardiomyopathy/cardiomyopathy-04.jpg`, 1138×1707 |
+| moved | dot **(423.6,603.2) → (630,772)** — a pure extension along the leader's own slope |
+| diff vs live | **(409,588)–(637,779)** |
+| other three dots | ASH 69/69, SAM 50/50, LVOT 75/75 bright px — unchanged |
+| approved | *awaiting Dr. Kreithen* |
+
+**What it fixes.** On a HYPERTROPHIC CARDIOMYOPATHY page the small LV cavity is the finding, and the
+dot sat deep inside the septal mass on the **RV side of the septum**. The LV cavity is drawn clearly —
+a narrow slit between the septum and the trabeculated lateral wall, carrying the blue LVOT jet — and
+the dot now sits in it.
+
+**The leader does not change direction.** Its measured slope is 0.817 from an elbow at (303,505); the
+new endpoint sits on that same line, so this is an extension rather than a re-aim. Consequence worth
+stating: the leader **already crossed the SAM leader at x=413 on the shipped page**, and it still does
+— that crossing is pre-existing, not introduced here. It does *not* reach the LVOT leader (that
+horizontal ends at x=483; the extension passes y=700 at x=542).
+
+**Laterality was established from the pulmonary veins, not from position.** The cut purple veins enter
+the chamber on the viewer's right, which makes that the left atrium; the mitral valve with its
+chordae hangs below it; so the cavity beyond the septum is the LV. Getting this backwards would have
+put the dot in the RV, which is exactly the error being corrected.
+
+**Stroke brightness was matched, not guessed.** Drawn at first neutral-white it read brighter than the
+original at 12×; measured peak luma of the shipped leader is 207, so the extension was re-drawn to
+219–224 (it runs over darker background than the sampled stretch). The dot is 54 bright px against
+the page's other three at 50, 69 and 75.
+
+### Deploy sequence when the batch ships
+1. copy the PNG over `assets/cardiomyopathy/cardiomyopathy-04.jpg` at **q82, subsampling 2**
+2. regenerate `assets/cardiomyopathy/thumb-04.jpg` at 320×480 q82
+3. `python3 scripts/rebuild_gallery_pdf.py <root> cardiomyopathy`
+4. `python3 scripts/verify_gallery_pdfs.py <root> cardiomyopathy`
+5. headless boot on the shipped bytes, then push and confirm `/version.txt`
+
+---
+
 ## Higgsfield was tried on this dot and failed — second independent failure on this panel
 
 Physician asked for the Higgsfield route; two variants were generated and both failed, so the
