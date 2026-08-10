@@ -733,6 +733,44 @@ The terminal dot is lifted from the shipped dot (r ≈ 2.2 px, peak luma 253), n
 
 ---
 
+# NOT YET DEPLOYED — staged after v95
+
+## 17. `pud` page 2 — "Pylorus (pyloric sphincter)" ended inside the duodenal bulb
+
+Work order row `pud` p2 #1 (26 labels, 2 further rows flagged [CHECK]).
+
+| | |
+|---|---|
+| target | `assets/pud/pud-02.jpg`, 1024×1536, 4:2:0 |
+| replaced | the vertical stroke at x=248.5, y 391→450, by a 45° diagonal **(300,390)→(367,452)** |
+| terminus | **(248,450) → (370,455)**, on the pyloric collar |
+| diff vs a null re-encode | **x 243–373, y 389–458**, 644 px |
+| the "Duodenum (1st part)" dot | untouched |
+| approved | *awaiting Dr. Kreithen* |
+
+**What it fixes.** The dot sat in the bulb's lumen about 120 px distal to the sphincter — so a label
+reading "pyloric sphincter" pointed at the duodenum, on a page whose subject is where ulcers form
+relative to that landmark. The pylorus is drawn plainly: the cut wall doubles back on itself at
+x≈368, y 432–445, a matching fold sits below at y 470–480, and a paler column of muscle runs between
+them separating bulb from antrum. (370,455) is the middle of it.
+
+**Sampling either side of the shipped stroke** gives black background to y 407, the pale cut wall
+band y 409–431, and dark red bulb interior from y 433 — three zones the erase has to cross.
+
+### The banded-background rule needs one more word: measure which way the band runs
+
+`chf` p1 established *clone along the band, not across it*, and the band there was horizontal. Here
+it is an **arc**, and applying the rule literally — a horizontal clone — fails visibly: ±18 and ±26
+px all leave a vertical scar where the arc gets displaced, plus a duplicated rugal scallop at the
+larger offsets.
+
+Fitting the organ's top edge over x 210–292 gives **dy/dx = −0.33** locally. A donor along that
+tangent, **(+14, −4.6)**, is invisible at 9× across all three zones. (−14,+4.6) leaves a small step
+in the outer rim; (±20,∓7) duplicate a scallop. The offset is subpixel, so `np.roll` cannot express
+it.
+
+---
+
 ## Higgsfield was tried on this dot and failed — second independent failure on this panel
 
 Physician asked for the Higgsfield route; two variants were generated and both failed, so the
