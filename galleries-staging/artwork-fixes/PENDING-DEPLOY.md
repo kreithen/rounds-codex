@@ -634,6 +634,51 @@ galleries. The fix is at the shipped size and does not change it.
 
 ---
 
+## 15. `bronchiolitis` page 7 — "Minimal mucus" ended outside the airway wall
+
+Work order row `bronchiolitis` p7 #1, the page's only move (6 labels, 1 check).
+
+| | |
+|---|---|
+| target | `assets/bronchiolitis/bronchiolitis-07.jpg`, 1024×1536, 4:2:0 |
+| extended | leader tip **(631,475) → (643,450)**, along its own axis (0.4472,−0.8944) |
+| erased | **nothing** |
+| diff vs a null re-encode | **x 630–645, y 449–474**, 74 px — see the control below |
+| the panel's other two leaders | untouched |
+| approved | *awaiting Dr. Kreithen* |
+
+**What it fixes.** The leader stopped at the outermost margin of the figure, on the adventitia — the
+outside of the airway — while the label names the mucus layer, which sits on the inside. "Thin
+airway wall" already covers the wall, so as shipped two of the panel's three labels pointed at
+roughly the same tissue.
+
+**Measured, not assumed.** Sampling 4–5 px either side of the leader's own ray, with t = 0 at the
+shipped tip: black background below t 1; the salmon adventitia t 2–16; a dark boundary at t 16; the
+pale pink epithelial ring t 18–27; dark maroon lumen from t 28. So the surface the label wants is a
+definite point — t ≈ 27.5, the epithelium/lumen interface — and the tip was 27 px short of it.
+
+**A pure extension — nothing is erased.** Same as `htn` p8: it is worth checking whether a
+correction can be an extension before planning an erase, because an erase is where every visible
+failure in this batch has come from.
+
+**The terminal dot is lifted, not drawn.** It is the "Open lumen" leader's own dot from this same
+panel (r ≈ 2 px, peak luma 248), extracted with a soft alpha and composited at the new tip, so it
+keeps the artwork's real shape and antialiasing. Only the connecting stroke is synthetic: 8×
+supersampled at 1.35 px, composited toward the page's measured leader white rather than painted 255.
+
+### Run the null re-encode control before believing a diff on a 4:2:0 page
+
+The first QA on this page read **9,136 px changed above 20/255, bbox x 6–1018, y 5–1530** — the whole
+page — which looks exactly like a fix that has leaked everywhere. It has not. Saving the *unmodified*
+file back through the same qtables and subsampling gives **9,060 px and mean 1.105**: this page is
+**4:2:0**, so the chroma round-trip alone accounts for essentially all of it. Diffed against that
+null re-encode instead of against the original, the edit is 74 px in a 16×26 box.
+
+Every earlier fix in this batch was on a 4:4:4 page, where the round-trip is ~0.27 and the naive
+diff was honest. **On a 4:2:0 page the naive diff is not, and the control is one line of code.**
+
+---
+
 ## Higgsfield was tried on this dot and failed — second independent failure on this panel
 
 Physician asked for the Higgsfield route; two variants were generated and both failed, so the
