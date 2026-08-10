@@ -90,8 +90,11 @@ with the correct endpoint stated, so production has everything it needs.
 `SWEEP-pages-3-10.md`. Two at-risk figures examined on unaudited pages, **both carried a wrong
 leader**: `lymphoma` p4 puts inguinal lymphadenopathy over the small bowel, and `osteoporosis` p4
 stops "Vertebral compression fracture" on the patient's sleeve while the fracture is drawn 340 px
-away. About 30% of pages 4/6/8 carry the structure that produces this, so the arithmetic points at
-roughly 260 at-risk figures outside the 81.
+away. **But the second pass halved the alarm and then some.** The library uses three labelling
+templates, and only one fails: the text-column-with-leader-fan used on the anatomy pages. Most of
+pages 4/6/8 use icon bubbles or cards with short tethers to coarse targets (a head, a kidney), and
+six of those examined were all correct. Only **2 of the 30 sampled pages** use the fragile template
+— so the estimate outside the order is roughly **60 at-risk figures, not 260**.
 
 **Nothing is needed from you yet** — I will finish the sample. But when it lands, the decision is
 whether to tell production the 81 is a first tranche, which affects whether they run their batch

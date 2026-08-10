@@ -5,7 +5,8 @@
 The order is a review of pages 1 and 2 — 90 of the 119 pages examined were page 2. This sweep asks
 what is happening on the ~880 pages nobody has looked at. Commissioned by Dr. Kreithen 2026-08-10.
 
-*Status: first pass complete, two figures examined in detail. Not yet a rate.*
+*Status: sample classified, six further figures examined. The headline changed on the second pass -
+see the template table below.*
 
 ---
 
@@ -64,19 +65,39 @@ the reddened femoral-neck fracture, which is exactly right.
 
 ---
 
+## The refinement that matters: there are three label templates, and only one of them fails
+
+Continuing the sample past the two failures changed the answer, and for the better. The library does
+not use one labelling system. It uses at least three, and they are not equally fragile:
+
+| template | where it is used | how it fails |
+|---|---|---|
+| **A — text column + long leader fan** | the anatomy pages, 1 and 2, and occasionally later | **this is the one that fails.** Both examples found outside the order were template A, and both were wrong |
+| **B — icon bubble or card + short elbow tether** | most of pages 4/6/8 | endpoints land on gross regions (a head, a kidney, the bladder). Examined on `ckd` p4/p6, `dic` p4/p8, `gout` p4, `pud` p4 — none wrong |
+| **C — numbered badges on the figure** | `acs` pages 1 and 2 | removes the routing defect; a badge can still sit on the wrong vessel (`acs` p2 diagonal branch) |
+
+**So the first estimate was too pessimistic.** "~30% of pages 4/6/8 carry a leader fan" counted every
+page with *any* tethered label. Once template B is separated out, **only 2 of the 30 sampled pages use
+template A** — `lymphoma` p4 and `osteoporosis` p4 — and both of those carry a wrong leader.
+
+Template B has a structural reason for being safe, worth stating because it is also the
+recommendation: **its tethers are short and its targets are coarse.** "Brain → the head" cannot be
+displaced onto the wrong structure the way "Inguinal lymphadenopathy → the groin" can, because there
+is nothing adjacent to hit.
+
 ## What this means for scope
 
-**Two at-risk figures examined, two carried a wrong leader.** That is two of two, which is not a
-rate — it is a demonstration that the defect is not confined to the pages that were audited.
+Revised arithmetic, again stated as arithmetic: ~880 unexamined pages × **~7%** using template A ≈
+**60 at-risk figures** outside the work order, of which some fraction will be wrong. That is a very
+different number from the 260 the first pass implied, and it is the one to plan against.
 
-Scaled arithmetic, stated as arithmetic and not as a finding: ~880 unexamined pages × ~30% carrying
-a leader fan ≈ **260 at-risk figures outside the work order**. If the per-figure hit rate resembles
-what pages 1–2 showed, a large fraction of those carry at least one wrong leader.
+**The sequencing point stands and is now cheap to act on.** The 81-page order is a first tranche.
+Telling production that costs nothing; discovering it after they have run one re-render batch costs
+a second batch.
 
-**The practical consequence is about sequencing, not about panic.** If production corrects the
-template and re-renders the 81 pages, and the rest of the library is later found to have the same
-defect, they will have to run the batch twice. It costs nothing to tell them now that the 81 is a
-first tranche rather than the whole job.
+**And there is a positive recommendation hiding in the sample.** Where a page needs labels on a
+figure, template B — icon or card with a short tether to a coarse region — has not failed once in
+six examples. That is a stronger version of what the brief already says about on-figure badges.
 
 ## What would turn this into a rate
 
