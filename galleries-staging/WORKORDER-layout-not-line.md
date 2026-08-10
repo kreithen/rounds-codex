@@ -119,3 +119,58 @@ travel through the lumen to reach a structure on the far side.
 
 *Examined on the shipped page 2026-08-10; a correction was built, produced a visible scar on the
 dome's edge at 20x, and was discarded.*
+
+---
+
+## `gi-bleed` page 1 #1 — "Duodenum (First part)"
+
+**Dr. Kreithen has ruled on the anatomy** (2026-08-10), because the work order's own row gave two
+targets that contradict each other — "the pink duodenal tube ~16 px to the left" and "the bulb, at
+~page(180,570)". The second lands inside the cut-open gastric lumen on the shipped render, so it
+cannot be right. **The first part is the segment immediately distal to the pylorus, upper left**:
+the pylorus is where the smooth pink tube meets the stomach's cut edge at about **(140,558)**, and
+the bulb runs down-left from there through **(112,572)** to **(105,585)** — all sampling as pale
+smooth duodenal surface (RGB 219–252 / 138–190 / 121–175), not the dark cut gastric interior.
+
+**Where it ends now:** the leader is a horizontal run at y=673.5 from the label out to a tip at
+**(165,673.5)**, on the yellow lobulated pancreas beside the blue vein.
+
+**Why a line move is the wrong fix.** The label sits at y≈674 and its text ends at x≈132. The bulb is
+**100 px above and 20–50 px to the LEFT** of the label's right edge, so any correct leader has to
+leave the label going up-and-back over its own text, or climb the length of the descending duodenum
+before stopping at its top — reading as though it labels the whole tube.
+
+**What we suggest instead:** move the "Duodenum (First part)" label up the left column to sit level
+with the bulb (around y 560–590) and let its leader run straight right. Its current position is level
+with the pancreas, which is what the leader found.
+
+*Examined on the shipped page 2026-08-10; anatomy confirmed by Dr. Kreithen; not corrected locally.*
+
+---
+
+## `myasthenia` page 2 #1 — "Basal lamina"
+
+**Dr. Kreithen has ruled on the anatomy** (2026-08-10): the basal lamina **is** drawn — it is the pale
+lining on the cleft-facing surface of the junctional folds. That settles the question the audit could
+not.
+
+**Where it ends now:** a horizontal run at y=760 to a dot at **(245,760)**, in striated sarcoplasm,
+about 58 px below the base of the folds and 41 px above where "Muscle fiber" points at (233,801).
+
+**Why a line move is the wrong fix, even with the anatomy settled.** The label column is
+anatomically **inverted at this point**: it runs … Junctional folds → Postsynaptic membrane → Basal
+lamina → Muscle fiber, but the basal lamina lies *external* to the postsynaptic membrane, i.e. above
+it in this figure. So the label sits below the structure it names.
+
+Every reachable target fails for a different reason:
+- a fold crest facing the primary cleft (e.g. **(264,617)**, the correct target) can only be reached
+  by drawing a white line up the middle of a fold — 80 px through the pink fold body;
+- the pale lining at the bottom of an inter-fold cleft (≈(247,695)) is reachable, but it sits **6 px**
+  from the "Postsynaptic membrane" dot at (252,701) and the two would be indistinguishable;
+- extending straight up at x=264 crosses the fold bases and then the fold itself.
+
+**What we suggest instead:** move "Basal lamina" **above** "Postsynaptic membrane" in the column and
+point it at the cleft-facing lining of a fold crest — (264,617) is a clean one. That also puts the
+column in anatomical order, which is the fault the brief is about.
+
+*Examined on the shipped page 2026-08-10; anatomy confirmed by Dr. Kreithen; not corrected locally.*

@@ -56,29 +56,21 @@ tell you whether they are worth anything. If they look wrong in the way the prev
 so and I will write them off; the route is otherwise closed for this project (0-for-4 on marker
 moves, recorded in `HANDOFF-anatomy-label-corrections.md`).
 
-## 4. Two pages that still need an anatomist's read — NOT resolved by the blanket approval
+## 4. ~~Two pages that need an anatomist's read~~ — ANSWERED 2026-08-10
 
-**These are questions, not approvals.** "Approved everything" tells me to proceed; it does not tell
-me *where* the structure is, and I will not guess on anatomy. Both are half-finished and one
-sentence each unblocks them.
+Both rulings are recorded in `WORKORDER-layout-not-line.md` and now drive the production sheets.
 
-These are work-order pages I opened, examined, and deliberately did not fix. Each needs one
-sentence from you and then I can finish it.
+- **`gi-bleed` p1** — the first part of the duodenum is the segment **immediately distal to the
+  pylorus, upper left**. That settles the work order's self-contradiction: its suggested (180,570)
+  falls inside the cut-open gastric lumen and is wrong. Measured against the render, the pylorus is
+  at (140,558) and the bulb runs (112,572)→(105,585).
+- **`myasthenia` p2** — the basal lamina **is** drawn: it is the pale lining on the cleft-facing
+  surface of the junctional folds.
 
-**`gi-bleed` page 1 — "Duodenum (First part)".** The leader ends on the yellow pancreas; that much is
-certain. Where it *should* end is not. The work order gives two targets that contradict each other —
-"the pink duodenal tube ~16 px to the left" and "the bulb, at ~page(180,570)" — and (180,570) falls
-inside the cut-open gastric lumen on my reading, not on duodenum at all. My own read is that the
-pylorus is at about (140,552), where the smooth tube meets the stomach's cut edge, which would put
-the bulb around (125,565). **Which point is the first part in this render?** With that I can move the
-leader in one pass.
-
-**`myasthenia` page 2 — "Basal lamina".** The leader ends in muscle sarcoplasm, well below the
-junctional folds — again certain. But "Postsynaptic membrane" already terminates at the base of a
-fold 57 px above it, and I cannot tell from the artwork whether the basal lamina is drawn as a
-distinct layer at all or is simply the pale line that also reads as the membrane. If it is not drawn
-separately, the honest fix is a re-render, not a moved leader. **Is there a basal lamina in that
-figure, and if so which line is it?**
+**Neither can be corrected locally, and the reason is the same in both cases: the label is below the
+structure it names.** On `myasthenia` the column is anatomically inverted — basal lamina lies
+external to the postsynaptic membrane, so it belongs above it, not below. Both are now layout rows
+with the correct endpoint stated, so production has everything it needs.
 
 ## 5. A decision I would like from you eventually — the 27 sub-standard galleries
 
