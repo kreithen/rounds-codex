@@ -328,6 +328,50 @@ the **14 px of arrowhead** — which sits on plain lung texture — leaves nothi
 
 ---
 
+## 8. `cardiac-arrest` page 4 — an unattached arrowhead on the patient's shoulder
+
+| | |
+|---|---|
+| file | `cardiac-arrest-04-FIXED-page.png` (+ `.jpg` at q90 / 4:4:4, the original's own encode) |
+| target | `cardiac-arrest-upload/assets/cardiac-arrest/cardiac-arrest-04.jpg`, 915×1373 |
+| removed | the stray at **x 449–470, y 448–455** |
+| diff vs live | **(443,444)–(477,463)** = 34×19 px; outside it mean 0.17, max 10, 0.024% of pixels >4 |
+| the page's three real arrowheads | 62/62, 41/41, 35/35 bright px — untouched |
+| stray itself | **49 → 0** bright px |
+| approved | *awaiting Dr. Kreithen* |
+
+**What it fixes.** A small white arrow pointing left, with about 10 px of shaft that stops in mid-air:
+no label, no box, no leader. **Verified unattached rather than assumed** — nothing above threshold
+anywhere to the right of x=472 on any of its rows, so it is not the tail of either scene callout. It
+sits on the patient's shoulder and reads as a pointer to something that is not there. Third stray of
+the project, after the two on `aortic-dissection` p1.
+
+**The donor was chosen by eye, and the statistics were actively misleading.** Scored over six
+horizontal offsets, the *best* was dx=−46 — and it lands on the patient's face and neck, cloning blue
+and orange skin into dark fabric. Mean and standard deviation matched; content did not. A contact
+sheet of eight offsets settled it in one look: **dx=+32**, further along the same shoulder, where the
+fabric's top contour continues without a step.
+
+**Worth generalising:** for a removal on photographic material, rank candidates by eye. The ring/strip
+statistics that work on rendered anatomy — where texture is locally stationary — pick confidently
+wrong donors on a photograph, because two very different things can share a histogram.
+
+**The clone is horizontal on purpose.** The shoulder's fabric highlight runs near-horizontally just
+above the stray; a per-column fill would cut that contour.
+
+### Deploy sequence when the batch ships
+1. copy the PNG over `cardiac-arrest-upload/assets/cardiac-arrest/cardiac-arrest-04.jpg` at
+   **q90, subsampling 0**
+2. regenerate **`gthumbs/cardiac-arrest-04.jpg`** at 320×480 q82
+3. `python3 scripts/rebuild_gallery_pdf.py <root> cardiac-arrest`
+4. `python3 scripts/verify_gallery_pdfs.py <root> cardiac-arrest`
+5. headless boot on the shipped bytes, then push and confirm `/version.txt`
+
+**Third page of this gallery in the batch** (p2 here, p4 here, p8 already live at v91) — one PDF
+rebuild covers all three.
+
+---
+
 ## Higgsfield was tried on this dot and failed — second independent failure on this panel
 
 Physician asked for the Higgsfield route; two variants were generated and both failed, so the
