@@ -147,6 +147,60 @@ shipped dot measures 53 bright px against the page's other two at 47 and 64.
 
 ---
 
+## 4. `htn` page 2 — "Renal Arteries" landed on kidney parenchyma
+
+| | |
+|---|---|
+| file | `htn-02-FIXED-page.png` (+ `.jpg` at q82/4:2:0, the original's own encode) |
+| target | `assets/htn/htn-02.jpg`, 1137×1705 |
+| moved | dot **(639.9,747.3) → (615,717)**, onto the drawn renal artery between aorta and hilum |
+| diff vs live | **(607,709)–(750,763)**; the horizontal run right of x=745 is untouched |
+| other five dots | unchanged in position and blob area |
+| approved | *awaiting Dr. Kreithen* |
+
+**What it fixes.** The dot sat on the lower-mid renal cortex, well below and lateral to the hilum,
+while the renal artery **is drawn** on both sides running aorta-to-hilum about 40 px superomedial. The
+new endpoint is on the artery's mid-course, 26 px lateral to the aortic border, so it cannot be read
+as the aorta either.
+
+**An elbow, not a re-angled leader — and the reason is measurable.** The original leader is one
+horizontal run from the label at x=852 to the dot. Re-angling the whole run means erasing all 210 px
+of it, and the right two-thirds crosses the body outline and the intercostal vessels **diagonally**. A
+per-column fill replaces those diagonals with vertical extrapolations: at 12× it is an obvious band of
+vertical streaking, and the two-point interpolation it replaced left a dark seam instead. So the
+horizontal segment is **kept** back to an elbow at x=745 and only the 105 px stub left of it is
+erased — that stretch crosses kidney parenchyma, a near-vertical kidney border and flat background,
+all of which a per-column fill reconstructs cleanly. Elbowed leaders are already this page's idiom
+(Aortic Arch, Common Carotid).
+
+**The leader carries a dark halo**, one pixel outside the white core on each side (y=746 reads 8
+against a background of 18–21). Erasing only the visible core leaves that halo as a faint grey line —
+the band replaced is y 743–754, not the 3 px the stroke appears to occupy.
+
+### The re-encode is best at the ORIGINAL quality, not a higher one
+Measured on the untouched 99% of the page:
+
+| quality | bytes | mean abs diff | px differing by >4 |
+|---|---|---|---|
+| **q82 (the original's own table)** | 327,584 | **1.32** | **8.4%** |
+| q85 | 343,492 | 1.69 | 8.4% |
+| q88 | 375,754 | 2.04 | 12.8% |
+| q92 | 439,833 | 1.71 | 10.1% |
+
+Re-quantizing with the table the file was written with reproduces most coefficients; a *higher*
+quality uses a different table and introduces new rounding across the whole page. **Matching the
+original quantization table is not a stylistic preference — it is the lowest-loss option available,
+and raising quality to "be safe" makes the page worse.**
+
+### Deploy sequence when the batch ships
+1. copy the PNG over `assets/htn/htn-02.jpg` at **q82, subsampling 2**
+2. regenerate `assets/htn/thumb-02.jpg` at 320×480 q82
+3. `python3 scripts/rebuild_gallery_pdf.py <root> htn`
+4. `python3 scripts/verify_gallery_pdfs.py <root> htn`
+5. headless boot on the shipped bytes, then push and confirm `/version.txt`
+
+---
+
 ## Higgsfield was tried on this dot and failed — second independent failure on this panel
 
 Physician asked for the Higgsfield route; two variants were generated and both failed, so the
