@@ -486,6 +486,50 @@ Same as §10 — **one `rebuild_gallery_pdf.py <root> aortic-stenosis` at q82 co
 
 ---
 
+## 12. `htn` page 8 — badge 1 "Endothelium" left behind as the lumen narrowed
+
+| | |
+|---|---|
+| file | `htn-08-FIXED-page.png` (+ `.jpg` at q82/4:2:0, the original's own encode) |
+| target | `assets/htn/htn-08.jpg`, 1137×1705 |
+| changed | badge 1 extended to the endothelial lining on the **two diseased panels**; nothing erased |
+| diff vs live | **(552,485)–(981,549)** — the two added strokes and nothing else |
+| approved | *awaiting Dr. Kreithen* |
+
+**What it fixes**, measured as radial depth through the wall (0% = luminal lining, 100% = outer edge):
+
+| panel | lumen r | badge 1 was | badge 1 now |
+|---|---|---|---|
+| hyaline | 37.6 px | r=121 px — **74% into the wall** | r=42 px — **4%** |
+| hyperplastic | 16.1 px | r=93 px — **57%** | r=18 px — **1%** |
+
+The three panels share one badge layout, and badge 1 kept its radius while the lumen shrank from
+r=37.6 to r=16.1. On the normal panel that radius still lands on the lining; on the two diseased
+panels — the ones the page exists to teach — it points into thickened media. Badges 2, 3 and 4 land
+acceptably in all three and are untouched.
+
+**Nothing is erased, which is why this one is clean.** The existing horizontal run is kept in full and
+becomes an elbow; only a new diagonal is added from its tip down to the lining. The obvious
+alternative — erase the horizontal and re-aim it — was built first and rejected: that run crosses the
+**vessel's outer edge**, a strong curved tissue/background boundary, and all four clone offsets tried
+left a visible patch there at 10×. Extending costs nothing and risks nothing.
+
+**Why a horizontal could not simply be lengthened:** badge 1 sits at y=492 while the hyaline lumen
+spans y 530–606, so no horizontal line from that badge reaches the lumen at any x. The elbow is forced
+by the geometry, exactly as on `cardiac-arrest` p2.
+
+**This is the production rule the audit named, made concrete:** when a panel series shows progressive
+change, every badge must be re-anchored per panel. Copying the layout is what put badge 1 at 74%.
+
+### Deploy sequence when the batch ships
+1. copy the PNG over `assets/htn/htn-08.jpg` at **q82, subsampling 2**
+2. regenerate `assets/htn/thumb-08.jpg` at 320×480 q82
+3. `python3 scripts/rebuild_gallery_pdf.py <root> htn` — **covers pages 2 and 8 together**
+4. `python3 scripts/verify_gallery_pdfs.py <root> htn`
+5. headless boot on the shipped bytes, then push and confirm `/version.txt`
+
+---
+
 ## Higgsfield was tried on this dot and failed — second independent failure on this panel
 
 Physician asked for the Higgsfield route; two variants were generated and both failed, so the
