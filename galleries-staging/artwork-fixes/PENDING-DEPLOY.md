@@ -1,8 +1,24 @@
-# Corrected artwork awaiting deploy
+# Corrected artwork — SHIPPED as v93, 2026-08-10
 
-Held on `claude/anatomy-label-corrections-j58lf1` deliberately (physician's call, 2026-08-10):
-**batch cardiology corrections and deploy once**, rather than a second deploy for a single dot
-during the other session's launch week. This project is not launch-blocking.
+> **All twelve panels below are LIVE.** Deployed together as
+> `v93-CARDIOLOGY-LEADER-CORRECTIONS-12-PANELS` (app repo `c7751cf`), on the physician's approval.
+> The per-entry "awaiting Dr. Kreithen" lines are the state at the time each was staged; they were
+> approved as a batch.
+>
+> Verified before the push: `verify_sw.js` passed, `verify_gallery_pdfs.py` found no drift across
+> 80 pages in the eight rebuilt galleries, and a headless boot on the shipped bytes loaded 183
+> conditions with 10/10 thumbs in all eight galleries and zero page errors. Verified after: every
+> one of the twelve pages, `version.txt` and the `sw.js` `CACHE` string read back byte-correct from
+> `origin/main`.
+>
+> **One thing this deploy changed beyond the pages:** each gallery PDF was rebuilt at the quality
+> that reproduces **its own existing PDF size**, not the script's default 82. Rebuilding
+> `pericarditis` at 82 would have shrunk its PDF 14% — degrading the nine pages that did not change
+> in order to fix the one that did. `scripts/rebuild_gallery_pdf.py` now takes `RC_PDF_Q` for this,
+> and the qualities used were: aortic-dissection 82, chf 70, pericarditis 88, htn 79,
+> cardiomyopathy 71, cardiac-arrest 82, endocarditis 88, aortic-stenosis 79.
+
+Kept below as the record of what each fix was and why.
 
 ## 1. `aortic-dissection` page 1 — second orphan dot
 

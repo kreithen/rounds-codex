@@ -37,7 +37,13 @@ from PIL import Image
 # are downloaded to be read. +3 MB across the four affected files is immaterial against a 150 MB
 # PDF corpus. Standardising all four down to the newer pipeline's 512px would save ~6 MB and halve
 # their linear resolution; that is a product decision, not a bug fix, so it is not made here.
-PDF_Q = 82
+PDF_Q = int(os.environ.get('RC_PDF_Q', '82'))
+# 82 is the default because it was right for the four stale-geometry galleries this script was
+# written for. It is NOT right everywhere: rebuilding `pericarditis` at 82 shrank its PDF 14%,
+# which degrades the nine pages that did not change in order to fix the one that did. When
+# rebuilding a gallery after a single-page correction, set RC_PDF_Q to the quality that
+# reproduces that gallery's EXISTING PDF size - the same principle as matching a JPEG's own
+# quantization table rather than "improving" it.
 
 
 def load(root):
