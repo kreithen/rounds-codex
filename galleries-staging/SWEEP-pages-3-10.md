@@ -23,16 +23,18 @@ cannot carry it.
 
 ## What the 30 pages are made of
 
-The good news first: **pages 4/6/8 are mostly not at risk.** Their titles run "Clinical
-Presentation", "Diagnostic Imaging", "Diagnostic Evaluation", "Cellular Pathophysiology",
-"Histology" — and in practice that means dense grids of icons, lab tables, algorithm flowcharts,
-radiograph panels and photomicrographs. Roughly **8–10 of the 30** carry a central figure with a
-leader fan. Call it **30%**, the same fraction the label-level rate happened to be on pages 1–2 —
-coincidence, but a useful reminder that these are different denominators.
+Pages 4/6/8 are mostly not at risk. Their titles run "Clinical Presentation", "Diagnostic Imaging",
+"Diagnostic Evaluation", "Cellular Pathophysiology", "Histology" — and in practice that means dense
+grids of icons, lab tables, algorithm flowcharts, radiograph panels and photomicrographs.
 
-The at-risk figures found: `ckd` p4/p6/p8 (body figure + column), `dic` p4/p8 (body + organ labels),
-`gout` p4 (foot photo + column), `hyponatremia` p8 (brain panels), `lymphoma` p4 (body + nodal
-stations), `osteoporosis` p4 (figure + column), `pud` p4 (figure + symptoms).
+**First pass: 8–10 of the 30 looked at risk** because they carry a figure with tethered labels —
+`ckd` p4/p6/p8, `dic` p4/p8, `gout` p4, `hyponatremia` p8, `lymphoma` p4, `osteoporosis` p4,
+`pud` p4.
+
+**That count was wrong, and the correction is the finding.** Looking at each of them properly split
+the group in two: most use a *different labelling template* which does not produce this defect. Only
+**2 of the 30** use the fragile one. See the template table below — it supersedes the 8–10 figure,
+which is left here only so the correction is legible.
 
 ## The two examined in detail — both carry a wrong leader
 
