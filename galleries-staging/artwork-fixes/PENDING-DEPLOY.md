@@ -679,6 +679,44 @@ diff was honest. **On a 4:2:0 page the naive diff is not, and the control is one
 
 ---
 
+## 16. `pancreatitis` page 2 — "Celiac trunk" ended on the IVC
+
+Work order row `pancreatitis` p2 #1 (16 labels, 2 further rows flagged [CHECK]).
+
+| | |
+|---|---|
+| target | `assets/pancreatitis/pancreatitis-02.jpg`, 1024×1536, 4:2:0 |
+| replaced | the whole descending run: two bends **(567,308)→(555,325)→(499,353)** become one near-vertical segment **(567,308)→(563,375)** |
+| terminus | **(499,353) → (563,377)**, on the celiac trunk stub |
+| diff vs a null re-encode | **x 494–569, y 307–379**, 473 px |
+| the "Splenic artery" leader | untouched |
+| approved | *awaiting Dr. Kreithen* |
+
+**What it fixes.** A label naming an artery ended on a vein — the dot sat on the blue vessel left of
+the aorta. The celiac trunk is drawn, clearly, ~60 px to the lower right: masking bright red
+(R>90, R>1.9G, R>1.9B) finds a stub crossing rows 373–381 from the aorta's border at x≈551 to the
+trifurcation at x≈578, where the limb the "Splenic artery" label correctly follows branches off.
+
+**The corrected leader is simpler than the one it replaces** — one segment instead of two bends —
+rather than a third bend bolted onto the existing path.
+
+**The erase mask has to follow the POLYLINE, not the endpoints.** The first attempt masked a straight
+line from the corner to the old dot; the shipped leader bends at (555,325), so the mask missed the
+real stroke by up to 8 px in the middle and left a faint white diagonal across the aorta. Visible
+immediately in the side-by-side, invisible in any of the numbers — the bbox and pixel count were
+*correct* both times. **Trace the stroke before masking it.**
+
+**The donor is (+1.5,+14), along the aorta's own border rather than straight down.** The borders lean
+dx/dy = +0.11 through this height, so a purely vertical donor shifts the border 1.5 px and leaves a
+notch in it, plain at 9×. This is the banded-background rule from `pericarditis` applied to a vessel:
+clone along the structure, and use a subpixel shift rather than `np.roll` when the structure is not
+axis-aligned. Of the four candidates, (−1.5,−14) duplicated a chevron in the aorta's highlight and
+(−2.1,−20) left a pale ghost in the black gap beside it.
+
+The terminal dot is lifted from the shipped dot (r ≈ 2.2 px, peak luma 253), not drawn.
+
+---
+
 ## Higgsfield was tried on this dot and failed — second independent failure on this panel
 
 Physician asked for the Higgsfield route; two variants were generated and both failed, so the

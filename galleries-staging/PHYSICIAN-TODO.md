@@ -42,7 +42,27 @@ tell you whether they are worth anything. If they look wrong in the way the prev
 so and I will write them off; the route is otherwise closed for this project (0-for-4 on marker
 moves, recorded in `HANDOFF-anatomy-label-corrections.md`).
 
-## 4. A decision I would like from you eventually — the 27 sub-standard galleries
+## 4. Two pages I stopped on because they need an anatomist's read, not a measurement
+
+These are work-order pages I opened, examined, and deliberately did not fix. Each needs one
+sentence from you and then I can finish it.
+
+**`gi-bleed` page 1 — "Duodenum (First part)".** The leader ends on the yellow pancreas; that much is
+certain. Where it *should* end is not. The work order gives two targets that contradict each other —
+"the pink duodenal tube ~16 px to the left" and "the bulb, at ~page(180,570)" — and (180,570) falls
+inside the cut-open gastric lumen on my reading, not on duodenum at all. My own read is that the
+pylorus is at about (140,552), where the smooth tube meets the stomach's cut edge, which would put
+the bulb around (125,565). **Which point is the first part in this render?** With that I can move the
+leader in one pass.
+
+**`myasthenia` page 2 — "Basal lamina".** The leader ends in muscle sarcoplasm, well below the
+junctional folds — again certain. But "Postsynaptic membrane" already terminates at the base of a
+fold 57 px above it, and I cannot tell from the artwork whether the basal lamina is drawn as a
+distinct layer at all or is simply the pale line that also reads as the membrane. If it is not drawn
+separately, the honest fix is a re-render, not a moved leader. **Is there a basal lamina in that
+figure, and if so which line is it?**
+
+## 5. A decision I would like from you eventually — the 27 sub-standard galleries
 
 `addisons` is 800×1200; the standard is 1024×1536. The current best guess is that these pages were
 *delivered* at the standard size and downscaled by our own old pipeline, which would mean the fix is
