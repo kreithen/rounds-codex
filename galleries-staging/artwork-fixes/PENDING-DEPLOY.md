@@ -589,7 +589,23 @@ Same as §9 — but note this gallery's page 7 went live in v93, so a fresh
 
 ---
 
-# NOT YET DEPLOYED — staged after v94
+# SHIPPED as v95, 2026-08-10
+
+> **Entries 14–16 are LIVE** — app repo `bfa161a`, `v95-THREE-LEADER-CORRECTIONS-ADDISONS-BRONCHIOLITIS-PANCREATITIS`.
+> Approved by Dr. Kreithen as a batch ("approved everything", 2026-08-10), so the per-entry
+> "awaiting Dr. Kreithen" lines below are the state at the time each was staged.
+>
+> Verified before the push: `verify_sw.js` passed, `verify_gallery_pdfs.py` compared **1,020 pages
+> across 102 galleries with no drift**, and a headless boot on the shipped bytes loaded 183
+> conditions with 10/10 thumbs in all three galleries and zero page errors. Verified after: all
+> three pages, all three thumbs, `version.txt` and the `sw.js` `CACHE` string read back
+> byte-correct from `origin/main`.
+>
+> **PDF qualities, chosen to reproduce each gallery's own existing size** rather than the script's
+> default 82 — addisons **72** (1,122,253 vs 1,125,035), bronchiolitis **80** (1,157,371 vs
+> 1,176,041), pancreatitis **80** (3,696,778 vs 3,698,239). Calibrated by rebuilding each at
+> 70/76/82/88 and interpolating, which costs one minute and stops the nine unchanged pages being
+> degraded to fix the one that changed.
 
 *From here the work follows the 81-page production work order
 (`Rounds-Codex-leader-line-production-order.docx`), easiest pages first — the pages with a single

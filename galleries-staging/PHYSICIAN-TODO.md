@@ -7,7 +7,21 @@ Nothing on this list is launch-blocking.
 
 ---
 
-## 1. Approve the 81-page work order — this is the big one
+## 1. ~~Approve the 81-page work order~~ — APPROVED IN FULL, 2026-08-10
+
+Dr. Kreithen approved the whole order in one decision rather than page by page. **All 81 sheets can
+go to production**, alongside `PRODUCTION-BRIEF-leader-lines.md`, which has already gone.
+
+Two things that follow from a blanket approval and should be said plainly:
+
+- The **[CHECK] rows are the auditors' SUSPECT calls, and some of them are correct as drawn** — 235
+  of the 507 rows are checks, not moves. A blanket approval sends those to production as "confirm
+  before changing". They must not be re-rendered as if they were confirmed defects.
+- A handful of rows are **layout problems, not line-placement problems**, and re-routing the leader
+  would make the page worse. Those are being collected in `WORKORDER-layout-not-line.md` as they are
+  found (first entry: `croup` p2 "Trachea") and should travel with the order.
+
+### Superseded — what this section used to ask for
 
 `Rounds-Codex-leader-line-production-order.docx` — **81 pages, 272 labels to move, 235 to check,
 across 75 galleries.** Approval is **by page**, so it is 81 decisions rather than 511. Production
@@ -42,7 +56,11 @@ tell you whether they are worth anything. If they look wrong in the way the prev
 so and I will write them off; the route is otherwise closed for this project (0-for-4 on marker
 moves, recorded in `HANDOFF-anatomy-label-corrections.md`).
 
-## 4. Two pages I stopped on because they need an anatomist's read, not a measurement
+## 4. Two pages that still need an anatomist's read — NOT resolved by the blanket approval
+
+**These are questions, not approvals.** "Approved everything" tells me to proceed; it does not tell
+me *where* the structure is, and I will not guess on anatomy. Both are half-finished and one
+sentence each unblocks them.
 
 These are work-order pages I opened, examined, and deliberately did not fix. Each needs one
 sentence from you and then I can finish it.
