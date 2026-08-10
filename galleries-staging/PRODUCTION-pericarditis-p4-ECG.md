@@ -1,0 +1,81 @@
+# For production: `pericarditis` page 4 — the ECG strip needs redrawing, not re-arrowing
+
+Send with the leader-line re-render batch.
+
+**This one is not a leader-line fix and cannot be corrected locally.** Two of the five arrows name a
+finding the tracing does not contain, so there is no endpoint to move them to. The strip has to be
+redrawn.
+
+Attachment: `PRODUCTION-pericarditis-p4-ECG-evidence.png` — the measurements below drawn onto the
+shipped page.
+
+---
+
+## What was measured
+
+All measurements taken on the shipped JPEG. The strip's large grid square is **21.05 px**, so
+1 mm = 4.21 px, and at the standard 10 mm/mV calibration **1 mm = 0.1 mV**.
+
+| segment | window | level | vs TP baseline |
+|---|---|---|---|
+| TP baseline | x 700–770 | 1267.40 (sd 0.89) | — |
+| TP baseline | x 925–985 | 1267.17 (sd 0.83) | — |
+| **PR segment** | x 792–808 | 1267.50 | **−0.02 mV** |
+| **PR segment** | x 1005–1018 | 1266.85 | **+0.01 mV** |
+| ST segment | x 612–640 | 1259.02 | **+0.20 mV** |
+| ST segment | x 836–864 | 1261.30 | **+0.14 mV** |
+
+Read plainly: **ST elevation is drawn — 1.4 to 2 mm of it. PR depression is not drawn at all.** The
+PR segment sits on the TP baseline to within a fifth of a pixel, which is less than the line's own
+width.
+
+---
+
+## 1. "PR depression" — the finding is absent from the tracing
+
+The page's own subtitle says *"Diffuse ST elevation and PR-segment depression are classic in acute
+pericarditis"*, and PR depression is the more specific of the two. The strip does not show it.
+
+Both purple arrows currently land on the **ST-T hump** of the preceding beat — 60 px and 27 px after
+the R peak — which is neither the PR segment nor anywhere near it. A reader following the arrow is
+told that the rounded hump after the QRS is PR depression. That is a second error on top of the
+first: it misidentifies the T wave.
+
+**What we need:** redraw the strip with a genuinely depressed PR segment — **0.8 to 1.2 mm below the
+TP baseline** is the usual teaching range and would be clearly visible at this scale (3–5 px here).
+Then put each purple arrow on the PR segment itself: the short flat run **between the P wave and the
+QRS**, roughly 10–25 px before the R peak on the current geometry.
+
+Please do not simply move the existing arrows. Pointing an arrow labelled "PR depression" at a
+segment drawn isoelectric would still be wrong, just wrong in a quieter way.
+
+## 2. "Diffuse ST elevation" — the finding is drawn; one arrow of three misses it
+
+The ST segment is correctly elevated, so these arrows have a right answer.
+
+| arrow | tip (page coords) | position relative to its beat | verdict |
+|---|---|---|---|
+| green 1 | (216, 1222) | ~73 px after R — the T-wave / ST-T peak | points past the ST segment |
+| green 2 | (410, 1231) | ~44 px after R — on the ST segment | **acceptable** |
+| green 3 | (578, 1210) | **12 px BEFORE the R peak** — the QRS upstroke | wrong |
+
+Green 3 is the clear error: it points at the ventricular depolarisation spike, which is the one part
+of the complex that has nothing to do with ST elevation. Green 1 overshoots onto the T.
+
+**What we need:** all three arrow tips on the **ST segment** — the J point to the start of the T,
+about **20 to 50 px after the R peak** on the current geometry.
+
+---
+
+## Why this matters more than a displaced label
+
+ST elevation and PR depression are checked together precisely because ST elevation alone is the
+finding that overlaps with STEMI. PR depression is the discriminator. A page that promises PR
+depression in its own subtitle, does not draw it, and then points at the T wave and calls that PR
+depression teaches a trainee to look for the wrong thing on the wrong part of the complex — in the
+one comparison where getting it wrong sends a patient to the cath lab or away from it.
+
+---
+
+*Measured 2026-08-10. Independently reproduces the finding recorded in `CARDIOLOGY-audit-findings.md`
+for this page, and settles its B-SUSPECT flag — the PR segment is isoelectric, confirmed numerically.*
