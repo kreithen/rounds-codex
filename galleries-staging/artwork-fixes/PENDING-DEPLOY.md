@@ -92,6 +92,61 @@ by eye.
 
 ---
 
+## 3. `pericarditis` page 3 — "Visceral pericardium" sat outboard of the cavity
+
+| | |
+|---|---|
+| file | `pericarditis-03-FIXED-page.png` (+ `.jpg` at q88/4:2:0, the original's own encode) |
+| target | `assets/pericarditis/pericarditis-03.jpg`, 1280×1920 |
+| moved | dot **(898.3,728) → (861,756)**, extended along the leader's own −37° so the line does not change direction |
+| diff vs live | **(854,715)–(913,763)**, 59×48 px; **0 pixels differ outside** |
+| other two dots | (887.8,475.6) and (886.6,587.7) — position **and blob area unchanged** |
+| approved | *awaiting Dr. Kreithen* |
+
+**What it fixes.** "Visceral pericardium (epicardium — inflamed)" ended at the **outer margin of the
+pericardial cavity, on the boundary with the inflamed parietal band** — i.e. radially *outside* the
+"Pericardial cavity" dot above it, which inverts the layer order the page is teaching. It now lands
+on the pale epicardial streak lying directly on the myocardium.
+
+### The panel has THREE zones, not two — and reading it as two made a correct dot look wrong
+
+Between muscle and background, at the dot's own row, the artwork draws:
+
+| zone | at y=756 | what it is |
+|---|---|---|
+| myocardium | x < 855 | heart muscle, coronary vessels |
+| pale streak | 855–864 | **visceral pericardium / epicardium** |
+| darker translucent zone | 865–896 | **pericardial cavity** |
+| bright red band | 897–927 | **inflamed parietal pericardium** |
+
+A first pass here read the pale streak as the cavity and the darker zone as part of the red band, and
+on that reading the **Pericardial cavity** dot at (886.6,587.7) looks wrong too — it sits in the
+darker zone. It is **correct** and was left alone. The tell is a row profile rather than a zoom: the
+darker zone reads R≈83–122 against the red band's R≈188–247, so it is a distinct third layer, not the
+shadowed edge of the red one. `p8`, whose effusion label is a known-good control, resolves it the
+same way — its dot sits in exactly this translucent zone.
+
+**Rule for the rest of this gallery: count the zones off a row profile before deciding any leader in a
+layered panel is wrong.** Two of the three labels here would have been "corrected" into error.
+
+**Method.** Only the dot is erased — clone-filled from 7 px left / 28 px down, an offset that follows
+the local band gradient (the layers run diagonally here, so a straight vertical clone shears them);
+the surviving leader is then extended over the gap and a new dot drawn 4.2 px, supersampled 4×. The
+shipped dot measures 53 bright px against the page's other two at 47 and 64.
+
+### Deploy sequence when the batch ships
+1. copy the PNG over `assets/pericarditis/pericarditis-03.jpg` at **q88, subsampling 2** — matches the
+   original's quantization table exactly, and is the same encode v92 used for page 2
+2. regenerate `assets/pericarditis/thumb-03.jpg` at 320×480 q82 (local thumbs, not `gthumbs/`)
+3. `python3 scripts/rebuild_gallery_pdf.py <root> pericarditis` — **at q88**; the default q82 shrinks
+   this gallery's PDF 14% and degrades the nine pages that did not change
+4. `python3 scripts/verify_gallery_pdfs.py <root> pericarditis`
+5. headless boot on the shipped bytes, then push and confirm `/version.txt`
+
+**Batches with the v92 page-2 fix** — same gallery, so one PDF rebuild covers both.
+
+---
+
 ## Higgsfield was tried on this dot and failed — second independent failure on this panel
 
 Physician asked for the Higgsfield route; two variants were generated and both failed, so the
