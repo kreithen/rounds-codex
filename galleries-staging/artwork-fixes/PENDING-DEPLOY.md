@@ -810,6 +810,43 @@ tangent.
 
 ---
 
+# NOT YET DEPLOYED — staged after v96
+
+## 19. `addisons` page 2 — two zona leaders overshot the cortex into the medulla
+
+Work order rows `addisons` p2 #3 and #4, in the ADRENAL GLAND STRUCTURE inset.
+
+| | |
+|---|---|
+| target | `addisons-02.jpg`, 800×1200, 4:4:4 |
+| Zona Fasciculata | terminus **(617,290) → (646,286)**, the middle of the orange band |
+| Zona Reticularis | terminus **(639,311) → (648,314)**, the band's innermost edge |
+| diff vs a null re-encode | **x 620–647, y 284–313**, 82 px |
+| the hilum blob | peak luma **225 after, 227 before** — untouched |
+| approved | *awaiting Dr. Kreithen* |
+
+**What it fixes.** Fasciculata ended on the gland's **central hilum**, at the dead centre of the
+medulla — three zones inboard of the cortex it names, on the one figure whose entire subject is the
+three cortical zones. Reticularis ended inside the medulla. Both are now in the band.
+
+**Measured, not assumed.** Sampling 3–4 px either side of each leader along its own axis, with t = 0
+where it leaves the label bracket: for Fasciculata the orange band is t 18–33 (RGB ~210,145,85) and
+the medulla from t 36 (~120,55,25), so mid-band is t = 25 → (646,286) and the shipped stroke ran to
+t ≈ 54. For Reticularis the band is t 18–30 and its inner edge t = 30 → (648,314), against a shipped
+t ≈ 39.
+
+**The hilum is artwork and had to survive.** The bright blob at (617,290.5) is the gland's central
+hilum, not a terminal dot — the same feature noted at (247,250) on `addisons` p1. The erase stops at
+t = 51, which is (620,289.5), leaving it alone; the check above confirms it.
+
+**The donor is PERPENDICULAR here, which reverses the usual rule and is worth the sentence.** Both
+leaders run nearly *parallel* to the cortex's radial striations, so cloning "along the band" would
+slide the stroke along itself and erase nothing. A perpendicular offset of −7 px lands on the
+neighbouring striations, which look alike at a pitch of 3–4 px. **The rule is clone along the
+texture's grain, and on this inset the grain happens to run with the stroke rather than across it.**
+
+---
+
 ## Higgsfield was tried on this dot and failed — second independent failure on this panel
 
 Physician asked for the Higgsfield route; two variants were generated and both failed, so the
