@@ -170,6 +170,13 @@ QA'd numerically before he saw it, which is the fast and stronger check:
 Approved render: `hf_20260810_030924_49f5cb83-0edc-4cc4-b292-45bf3a971e46.png` in the Higgsfield
 gallery. **It is a specification, not final artwork** — production re-renders in the gallery's style.
 
+**Route chosen (physician, 2026-08-10): fold into the production re-render batch**, not composited
+here. Sent as a standalone sheet, `PRODUCTION-H7-sensation-map-redraw.md`, because
+`PRODUCTION-CORRECTIONS-MSK.md` **had already gone to production carrying the superseded H7** — an
+item that asks for a relabel, which on a plantar map would leave the page wrong. The old item is
+banner-marked SUPERSEDED in place. **When a sent document's finding changes materially, reissue it
+rather than editing quietly** — the vendor is working from the copy they already hold.
+
 **It cannot be dropped into the page as-is, and that is the important part.** The correction also
 changes *text*: the legend gains a fifth entry (Superficial peroneal) and the three exam bullets are
 reworded. Inventing those glyphs on delivered artwork is exactly what rule 1 forbids, and the

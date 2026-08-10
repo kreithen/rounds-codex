@@ -266,6 +266,12 @@ fixation-versus-arthroplasty decision, which are the core decisions in this cond
 
 ## H7. Page 5 — the sensation map mislabels the deep peroneal nerve territory
 
+> **SUPERSEDED 2026-08-10 — do not work from this item.** It assumes the map is a dorsal view needing
+> a label change. It is a **plantar** view and needs the artwork redrawn; acting on this item alone
+> would leave the page wrong. This document was already sent to production, so the replacement was
+> issued as a standalone sheet: **`PRODUCTION-H7-sensation-map-redraw.md`**. The analysis is kept
+> below for the record, extended in §H7a.
+
 Under NEUROVASCULAR EXAM, "Test sensation" reads:
 
 ```
