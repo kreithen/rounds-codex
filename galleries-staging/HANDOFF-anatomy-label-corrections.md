@@ -239,3 +239,51 @@ gate) and a bounded sampling proposal, in **`VIEW-MISMATCH-class.md`**.
   space, are medial/lateral swapped, is there burned-in text). It is stronger evidence than a visual
   read *and* far faster. What it cannot judge — toe count, proportions, whether the render reads as
   dorsal — is exactly what to ask the physician to confirm.
+
+---
+
+## The Higgsfield route is CLOSED for this project (2026-08-10)
+
+**Do not spend credits rediscovering this.** Across two distinct uses, image generation has not
+produced a usable correction, while the deterministic route produced 13.
+
+**Moving a leader or a marker: 0 for 4.**
+
+| panel | what came back |
+|---|---|
+| `aortic-dissection` p1 (Aug 6) | removed the wrong dot; returned five leaders where the page had six |
+| `aortic-dissection` p1 (Aug 10) | variant A dimmed the orphan dot instead of removing it; variant B removed it **and** deleted the correct terminal dot beside it, leaving the label anchored to nothing |
+| `chf` p1 (Aug 10) | variant A moved two markers it was told to leave alone, by 26 px and 44 px, and added five spurious bright blobs; variant B deleted the marker it was asked to move and did not replace it |
+
+The `chf` attempt used the pilot recipe properly for the first time — cropped to exclude the text
+column entirely, so the model had no label text it could corrupt. It still failed. Fidelity was gone
+in both variants: mean |diff| **8–12 /255 across the whole panel** against the pilot's requirement of
+~0 outside the change, with the black padding reading 2.0–2.9, so the number is not an artefact of
+the comparison.
+
+**Generating new anatomy: one pilot, unretrieved.** `cardiomyopathy` p1 as four phenotype slabs
+instead of three, `nano_banana_2` at 2k, two variants, 2 credits — jobs
+`da3a0185-132b-4afe-88ab-781c6df67ba6` and `46c41903-321e-498e-87cc-220331a40ebe`. They completed,
+but `jobs_wait` and `show_generation_by_ids` returned "MCP tool call requires approval" on four
+attempts and the results were never fetched. They are in the physician's Higgsfield gallery.
+
+**What was learned that is worth keeping:**
+
+- **The transport is solved.** The container is proxy-blocked from `upload.higgsfield.ai`, but the
+  Higgsfield sandbox can `curl` the live Netlify page and PUT it to the upload URL in one call. No
+  base64 smuggling. `sandbox_exec` truncates stdout at ~20 kB, so that was never viable anyway.
+- **Ask for anatomy, never for labels.** Every sheet in this project turns on labels being exactly
+  right, and that is the part image models reliably get wrong. The shape that might still work is
+  *generate the unlabelled figure, then apply the labelling deterministically* — the app's leader,
+  dot and badge styles are all reproducible in a few lines.
+- **Lead with the no-text prohibition, stated positively.** It is the framing that fixed `s3-0365`
+  and `s1-0247` after those came back with the diagnosis printed on them.
+- **Where the generated route is genuinely the only option** — `cardiomyopathy` p1 needs a fourth
+  phenotype slab that does not exist in the artwork — it is still cheaper to ask production, because
+  the fix is trivial in their source file and a generated panel has to be proofread end to end.
+
+**The boundary that actually matters, learned on the deterministic side:** thin strokes and small
+dots repair invisibly; **large filled shapes on shaded tissue do not.** `acs` p6's 28 px magnifier
+ring left a visible pale patch at every clone offset tried, which is why that one went to production
+with measured coordinates instead of being forced. That, not the model, is what decides whether a
+correction can be made locally.
