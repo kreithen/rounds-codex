@@ -110,6 +110,8 @@ with questions.
 | `PRODUCTION-depression-p2.md` | two prefrontal labels on the cingulate; the cingulate label on prefrontal cortex |
 | `PRODUCTION-icp-p2.md` | BRAIN and CSF labelled into each other's compartment, on the Monro-Kellie panel |
 | `PRODUCTION-osteoporosis-p2.md` | Tibia and Fibula on each other's bone; on the anterior figure both on one bone |
+| `PRODUCTION-cellulitis-p2.md` | the artery label is on the vein; the vein label is on fat |
+| `PRODUCTION-iron-anemia-p2.md` | jejunum and ileum both labelled on the haustrated colon |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
 **Tranche 5 — the four pages where a reader acts and is wrong:**
