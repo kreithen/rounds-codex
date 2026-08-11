@@ -54,6 +54,19 @@ Worth doing, and they are where the hours go: `pneumothorax` p2 (14 rows), `cdif
 `hepatitis` p2 (13), `parkinsons` p2 (10), `pe` p2 (10), `stroke` p2 (9), `bronchiolitis` p2 (9),
 `ckd` p2 (8), `hypothyroid` p2 (7), `gerd` p2 (7).
 
+## Correction to this triage — `dementia` p2 was ranked far too low (2026-08-11)
+
+It landed in tier 4 because it has only 14 flagged rows. **Twelve of those fourteen are asserted
+moves**, and on measuring it: the amygdala label is on the pons, the cerebellum label is on the
+brainstem, the thalamus label is on the corpus callosum, the corpus callosum label is on the
+cingulate gyrus, and on the coronal panel both hippocampi carry other labels' names while the
+label "Hippocampus" points at the midline. **It belongs in tier 2.** Sheet issued as
+`PRODUCTION-dementia-p2.md`.
+
+The lesson for the rest of tier 4: **row count was still doing some of the work in this ranking.**
+Within tier 4, sort by the *move* count rather than the total, since a [CHECK]-heavy page of 30 rows
+can be gentler than a 14-row page that is 12 moves.
+
 ## Tier 4 — the rest
 
 Roughly 45 pages whose flagged rows are near-misses: a leader a few pixels short of a correct

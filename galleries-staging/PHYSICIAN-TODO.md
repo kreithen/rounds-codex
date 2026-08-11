@@ -96,6 +96,7 @@ with questions.
 | `PRODUCTION-ckd-p2.md` | glomerulus and Bowman's capsule swapped; both arterioles labelled on the wrong side |
 | `PRODUCTION-gerd-p2.md` | markers 4, 5 and 6 all radiate from one point; legend item 7 has no marker |
 | `PRODUCTION-hypothyroid-p2.md` | follicle labels a displaced series; no hyoid drawn; page is 800×1200 |
+| `PRODUCTION-dementia-p2.md` | nine of eleven sagittal labels on another label's structure; **triage had it too low** |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
 **Tranche 4 — the six biggest remaining pages:**
