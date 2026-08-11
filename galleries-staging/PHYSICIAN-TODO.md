@@ -105,6 +105,7 @@ with questions.
 | `PRODUCTION-labor-p2.md` | "Vagina" inside the rectum; the right-hand column displaced one position |
 | `PRODUCTION-preeclampsia-p2.md` | the heart and the aorta are both dots in the right lung |
 | `PRODUCTION-gdm-p2.md` | the placenta label points at the baby's head; a colour-convention question for you |
+| `PRODUCTION-appendicitis-p2.md` | wall layers labelled inward; psoas and iliacus both on the cecum |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
 **Tranche 5 — the four pages where a reader acts and is wrong:**
