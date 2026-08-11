@@ -100,6 +100,7 @@ with questions.
 | `PRODUCTION-dementia-p2.md` | nine of eleven sagittal labels on another label's structure; **triage had it too low** |
 | `PRODUCTION-export-sizes.md` | **one consolidated re-export ask** — 16 galleries in the order ship off-standard |
 | `TRIAGE-tier4-reread.md` | tier 4 re-read: it is not near-misses. 2 tier-1-grade pages, ~22 with whole-structure errors |
+| `PRODUCTION-stroke-p1.md` | **the worst page yet** — 5 cerebral-artery labels outside the skull; 4 name vessels a lateral view cannot show |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
 **Tranche 4 — the six biggest remaining pages:**
