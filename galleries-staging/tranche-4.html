@@ -1,0 +1,206 @@
+<title>Leader-line corrections — corrected work order, tranche 4</title>
+<style>
+  :root{
+    --bg:#F6F8FA; --panel:#FFFFFF; --ink:#151A21; --muted:#5A6572;
+    --rule:#D6DCE4; --rule-soft:#E7ECF1;
+    --accent:#0E5A6B; --wrong:#9E322A; --right:#1C6448; --band:#EEF2F6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#11141A; --panel:#171B22; --ink:#E6EBF1; --muted:#98A3B1;
+      --rule:#2A313B; --rule-soft:#222932;
+      --accent:#5EB8C8; --wrong:#E4948B; --right:#74C8A2; --band:#1B212A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#11141A; --panel:#171B22; --ink:#E6EBF1; --muted:#98A3B1;
+    --rule:#2A313B; --rule-soft:#222932;
+    --accent:#5EB8C8; --wrong:#E4948B; --right:#74C8A2; --band:#1B212A;
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--bg); color:var(--ink);
+    font:400 16.5px/1.62 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    margin:0; padding:44px 22px 90px;
+  }
+  .wrap{max-width:960px; margin:0 auto; display:flex; flex-direction:column; gap:34px}
+  .prose{max-width:70ch}
+  h1,h2,h3{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; text-wrap:balance; margin:0}
+  h1{font-size:2.15rem; line-height:1.18; letter-spacing:-.012em; font-weight:600}
+  h2{font-size:1.42rem; line-height:1.25; font-weight:600}
+  h3{font-size:1.08rem; line-height:1.3; font-weight:600; color:var(--accent)}
+  p{margin:0}
+  .eyebrow{
+    font:600 11.5px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    letter-spacing:.16em; text-transform:uppercase; color:var(--muted);
+  }
+  header{display:flex; flex-direction:column; gap:12px; padding-bottom:26px; border-bottom:2px solid var(--rule)}
+  .meta{font:400 13.5px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; color:var(--muted)}
+  section{display:flex; flex-direction:column; gap:16px}
+  .sec-head{display:flex; align-items:baseline; gap:14px; border-bottom:1px solid var(--rule); padding-bottom:9px}
+  .sec-letter{
+    font:600 13px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    color:var(--bg); background:var(--accent); border-radius:3px;
+    padding:6px 8px; letter-spacing:.06em; flex:none;
+  }
+  .scroll{overflow-x:auto; border:1px solid var(--rule); border-radius:5px; background:var(--panel)}
+  table{border-collapse:collapse; width:100%; min-width:640px; font-size:14.2px}
+  caption{text-align:left; padding:11px 14px 0; color:var(--muted); font-size:13.5px}
+  th{
+    text-align:left; font:600 11.5px/1.35 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    letter-spacing:.1em; text-transform:uppercase; color:var(--muted);
+    padding:12px 14px; border-bottom:1px solid var(--rule); white-space:nowrap;
+  }
+  td{padding:10px 14px; border-bottom:1px solid var(--rule-soft); vertical-align:top}
+  tr:last-child td{border-bottom:0}
+  tbody tr:nth-child(even){background:var(--band)}
+  td.k{font-weight:600; white-space:nowrap}
+  .co{font:400 13.4px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-variant-numeric:tabular-nums}
+  .was{color:var(--wrong)}
+  .now{color:var(--right)}
+  .note{
+    border-left:3px solid var(--accent); background:var(--panel);
+    padding:14px 18px; border-radius:0 5px 5px 0; display:flex; flex-direction:column; gap:9px;
+  }
+  .note.warn{border-left-color:var(--wrong)}
+  strong{font-weight:650}
+  footer{border-top:1px solid var(--rule); padding-top:18px; color:var(--muted); font-size:13.5px; max-width:70ch}
+  a{color:var(--accent)}
+  .wrap>*,section>*,.scroll,.prose{min-width:0}
+</style>
+
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Rounds Codex · production</p>
+  <h1>Leader-line corrections — corrected work order, tranche 4</h1>
+  <p class="meta">6 pages measured against the shipped artwork · 11 August 2026</p>
+</header>
+
+<div class="prose" style="display:flex;flex-direction:column;gap:14px">
+  <p>Tranche 4 covers the six biggest remaining pages: <strong>pneumothorax, cdiff, hepatitis, ckd, gerd</strong> and <strong>hypothyroid</strong>, all page 2. <strong>Sixty-three rows</strong> were flagged across them; <strong>fifty-five are measured and confirmed</strong>. Thirty of the sixty-three were the auditors' <strong>[CHECK]</strong> calls, and twenty-eight of those turned out to be real.</p>
+  <div class="note warn">
+    <p><strong>All eight unverifiable rows are on the two pages that ship at 800×1200</strong> — four on <em>pneumothorax</em>, four on <em>hypothyroid</em>. Every row on the four standard-size pages was measurable. Section 1 gives the pixel measurement behind that, because it is now a blocker rather than a preference.</p>
+  </div>
+</div>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">1</span><h2>The export size is now blocking the work — with a number</h2></div>
+  <p class="prose">On <strong>pneumothorax</strong> p2 the main figure's four labelled layers are the whole subject of the page. Cutting horizontally across the chest wall at <span class="co">y = 375</span>:</p>
+  <div class="scroll"><table>
+    <thead><tr><th>x at y=375</th><th>RGB</th><th>What it is</th></tr></thead>
+    <tbody>
+      <tr><td class="co">≤ 471</td><td class="co">(109,39,47)</td><td>lung</td></tr>
+      <tr><td class="co">472–473</td><td class="co">(145,86,92)</td><td>a pale line — visceral pleura</td></tr>
+      <tr><td class="co">475–476</td><td class="co">(143,121,124)</td><td>a pale line</td></tr>
+      <tr><td class="co">480</td><td class="co">(153,122,137)</td><td>a pale line, <strong>one pixel wide</strong></td></tr>
+      <tr><td class="co">481–484</td><td class="co">(7,3,4)</td><td>the dark band</td></tr>
+      <tr><td class="co">485–486</td><td class="co">(160,162,159)</td><td>a pale line — the chest-wall boundary</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose">Four pale lines, one or two pixels each, with three-pixel gaps. <strong>A leader dot on this page is about 4 px across — wider than the layer it names.</strong> So rows 5–8 cannot be verified <em>or drawn unambiguously</em> at this export. Our recommendation there is not four leaders at all: keep ③ and ⑥ on the main figure and let the INTERCOSTAL NEUROVASCULAR BUNDLE panel, which already magnifies this exact stack and is on the same page, carry ④ and ⑤.</p>
+  <p class="prose">On <strong>hypothyroid</strong> p2 the same cause blocks four different rows. The main gland panel packs the whole thyroid, the trachea, both neurovascular bundles and four nerve branches into about <span class="co">300 × 250</span> source pixels, and we could not produce coordinates for Isthmus, Trachea, Cricoid cartilage and Inferior thyroid vessels that we would stand behind. They are passed through as the auditors wrote them, marked unmeasured. <strong>Re-export both pages at 1024×1536 and we will verify the eight rows.</strong></p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">2</span><h2>Drawn, correct, and unlabelled — the vessel pages</h2></div>
+  <p class="prose">Three of these six pages teach a vascular anatomy, and on all three the vessels are drawn accurately and large, and the labels are somewhere else. Colours sampled under each endpoint, leader pixels excluded.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Page</th><th>Label</th><th>Ends at</th><th>Sampled</th><th>What that is</th><th>Should end at</th></tr></thead>
+    <tbody>
+      <tr><td class="k">cdiff p2</td><td>Superior mesenteric a.</td><td class="co was">(122,1173)</td><td class="co">—</td><td class="was">the cecum's bowel wall</td><td class="co now">(192,1150)</td></tr>
+      <tr><td class="k">cdiff p2</td><td>Superior mesenteric v.</td><td class="co was">(478,1107)</td><td class="co">—</td><td class="was">the ascending colon's bowel wall</td><td class="co now">(544,1120)</td></tr>
+      <tr><td class="k">cdiff p2</td><td>Inferior mesenteric v.</td><td class="co was">(481,1143) and (481,1160)</td><td class="co">—</td><td class="was"><strong>the ascending colon — the patient's RIGHT</strong>, twice, on a page about left-colon disease</td><td class="co now">(510,1202)</td></tr>
+      <tr><td class="k">hepatitis p2</td><td>Bile duct (from L and R hepatic ducts)</td><td class="co was">(408,535)</td><td class="co was">(30,41,84)</td><td class="was">the blue IVC</td><td class="co now">(366,545)</td></tr>
+      <tr><td class="k">hepatitis p2</td><td>Right hepatic artery</td><td class="co was">(355,537)</td><td class="co was">(90,94,39)</td><td class="was">the green bile duct</td><td class="now">the arterial branch</td></tr>
+      <tr><td class="k">hepatitis p2</td><td>Portal vein</td><td class="co was">(360,555)</td><td class="co was">(114,61,42)</td><td class="was">a maroon vessel — the page's own BLOOD SUPPLY inset colours the portal vein <strong>blue</strong></td><td class="now">the blue portal vessel</td></tr>
+      <tr><td class="k">hepatitis p2</td><td>Left portal vein</td><td class="co was">(467,506)</td><td class="co was">(99,45,36)</td><td class="was">the red arterial tree</td><td class="now">a portal vessel</td></tr>
+      <tr><td class="k">ckd p2</td><td>RENAL ARTERY</td><td class="co was">(292,437)</td><td class="co was">(105,39,34)</td><td class="was">a medullary pyramid</td><td class="co now">(324,429)</td></tr>
+      <tr><td class="k">ckd p2</td><td>RENAL VEIN</td><td class="co was">(275,510)</td><td class="co was">(110,35,34)</td><td class="was">parenchyma; the blue vein is 90 px right, sampled (31,56,117)</td><td class="co now">(365,500)</td></tr>
+    </tbody>
+  </table></div>
+  <h3>hepatitis p2 — two of these fix each other</h3>
+  <p class="prose"><strong>Inferior vena cava</strong> ends at <span class="co was">(376,567)</span> on the small orange <em>portal-triad cross-section widget</em>, sampled (120,52,43). <strong>Hepatic portal triad</strong> ends at <span class="co was">(390,537)</span> on the bright red artery alone. Move the IVC label 35 px right to <span class="co now">(411,567)</span> on the blue trunk, and move the triad label onto the widget at <span class="co now">(376,567)</span>. One swap, two rows fixed, and neither leader changes shape much.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">3</span><h2>Swaps and displaced series</h2></div>
+  <p class="prose">Where a page's labels come out in the wrong order rather than the wrong place. Each of these is cheap to fix and expensive to leave — the reader gets a confident wrong name from a figure that is otherwise drawn correctly.</p>
+
+  <h3>ckd p2 — glomerulus and Bowman's capsule are a straight swap</h3>
+  <div class="scroll"><table>
+    <thead><tr><th>Label</th><th>Ends at</th><th>What is there</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Bowman's capsule</td><td class="co was">(857,1001)</td><td class="was">a red capillary loop of the tuft</td></tr>
+      <tr><td class="k">Glomerulus</td><td class="co was">(887,1013)</td><td class="was">the golden capsule ring</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose">Exchange the two endpoints and both are right. <strong>The two arteriole labels on the same panel are a different problem and not a swap:</strong> Afferent ends at <span class="co was">(865,1024)</span> in empty Bowman's space and Efferent at <span class="co was">(872,1063)</span> on the gold tubular pole, while <strong>both arterioles are drawn on the LEFT</strong> — an upper vessel at <span class="co now">(775,970)</span> and a second at <span class="co now">(770,1012)</span>. Both labels are on the right, 90–110 px away, and neither vessel carries a label. Which label goes to which vessel is your call from the source file.</p>
+
+  <h3>cdiff p2 — the normal-mucosa panel has mucus and epithelium the wrong way round</h3>
+  <p class="prose">Sampling a column at <span class="co">x = 95</span>: black background to <span class="co">y = 756</span>; the <strong>pale translucent film</strong> at <span class="co">758–782</span> (244,212,225); the darker epithelial band and crypt mouths from <span class="co">783</span> (189,120,139). <strong>Intact epithelium</strong> ends at <span class="co was">(110,760)</span> — in the film. <strong>Normal mucus layer</strong> ends at <span class="co was">(117,787)</span> — below it. Swap to <span class="co now">(110,764)</span> and <span class="co now">(110,786)</span>. This is the page's normal-versus-diseased comparison, and the C. difficile half beside it turns on the mucus layer being stripped.</p>
+
+  <h3>hepatitis p2 — hepatocytes points at a vessel, sinusoids points at hepatocytes</h3>
+  <p class="prose"><strong>Hepatocytes (plates)</strong> ends at <span class="co was">(424,888)</span>, sampled <span class="co was">(80,104,146)</span> — the blue portal venule of the triad at the hexagon's corner. <strong>Sinusoids</strong> ends at <span class="co was">(413,941)</span>, sampled <span class="co was">(164,129,119)</span> — inside a salmon plate block. Correct: <span class="co now">(405,915)</span> and <span class="co now">(403,948)</span>, both within 15 px of where the leaders already stop. The panel exists to teach that blood runs through the sinusoids <em>between</em> the plates; as drawn it says the plates are the vessel.</p>
+
+  <h3>hypothyroid p2 — each follicle label lands on the one above it</h3>
+  <div class="scroll"><table>
+    <thead><tr><th>Label</th><th>Ends at</th><th>What is there</th><th>Should end at</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Colloid (thyroglobulin)</td><td class="co">(126,633)</td><td>the colloid — correct</td><td>leave</td></tr>
+      <tr><td class="k">Parafollicular (C) cell</td><td class="co was">(126,672)</td><td class="was">the colloid again</td><td class="co now">(160,710)</td></tr>
+      <tr><td class="k">Capillary</td><td class="co was">(170,712)</td><td class="was">the green C cell — what the row above names</td><td class="co now">(60,715)</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose">The panel's point is that C cells sit <em>outside</em> the follicular epithelium. The only C cell drawn is currently labelled "Capillary".</p>
+
+  <h3>cdiff p2 — the colon regions are one segment too proximal</h3>
+  <p class="prose"><strong>Sigmoid colon</strong> at <span class="co was">(470,428)</span> is on the straight descending limb, only 80 px below the Descending colon dot. <strong>Rectum</strong> at <span class="co was">(455,510)</span> is on haustrated bowel. <strong>Anal canal</strong> at <span class="co was">(386,534)</span> is on taenia-bearing sigmoid. The rectum is drawn distinctly — a smooth, wide, non-haustrated tube at <span class="co">x 265–330, y 470–580</span>. Targets: <span class="co now">(390,505)</span>, <span class="co now">(300,545)</span>, <span class="co now">(300,575)</span>.</p>
+  <p class="prose">Also on that figure: <strong>Taenia coli</strong> at <span class="co was">(169,366)</span> is on the free haustral wall, the structure <strong>Haustra</strong> correctly marks 58 px below. The taenia is drawn — a tan longitudinal band at <span class="co">x 186–192</span>, 19 px medial. Target <span class="co now">(189,366)</span>.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">4</span><h2>Leaders that are not pointers, and a marker that does not exist</h2></div>
+
+  <h3>gerd p2 — markers ④ ⑤ ⑥ all radiate from one point</h3>
+  <p class="prose">Three leaders converge at <span class="co was">(497,377)</span>, the cardia notch: <strong>④ Lower esophageal sphincter</strong> from its badge at (555,375), <strong>⑤ GEJ</strong> from (543,412) and <strong>⑥ Angle of His</strong> from (523,443). The panel exists to separate the components of the anti-reflux barrier. ⑤ and ⑥ can reasonably share the notch; the LES is a 3–4 cm segment and belongs above it, at about <span class="co now">(470,340)</span>.</p>
+
+  <h3>gerd p2 — the legend lists ⑦ and the artwork has no ⑦</h3>
+  <p class="prose">We swept the panel at <span class="co">y 240–480</span> and <span class="co">y 460–610</span>: <strong>markers ① to ⑥ only.</strong> The legend's <strong>⑦ Stomach (cardia)</strong> points at nothing because nothing was drawn. Add a ⑦ on the cardia — it is the one component of the barrier the panel names in words and does not show — or delete the legend entry. We would add the marker.</p>
+
+  <h3>pneumothorax p2 — both safe-triangle borders are on the same side</h3>
+  <p class="prose">The triangle has three sides: a <strong>red vertical</strong> at <span class="co">x ≈ 660–663, y 576–739</span>, and two blue diagonals from the apex <span class="co">(661,574)</span> through the posterior vertex <span class="co">(592,710)</span> to the base <span class="co">(664,741)</span>. <strong>Anterior border of latissimus dorsi</strong> ends at <span class="co was">(659,621)</span> and <strong>Lateral border of pectoralis major</strong> at <span class="co was">(659,672)</span> — both on the red vertical, 51 px apart. The blue diagonal carries no label, though it has a white waypoint dot at <span class="co now">(629,623)</span> that looks built for one. Give each label one side; <em>which label goes to which side is your call</em> — we can measure the geometry but not which side of this drawing is anterior.</p>
+
+  <h3>cdiff p2 — two leaders with two tips each</h3>
+  <p class="prose"><strong>Right colic a.</strong> has an arrowhead at <span class="co was">(122,1117)</span> on the colon wall <em>and</em> a separate dash ending at <span class="co was">(142,1118)</span> in black background. <strong>Inferior mesenteric v.</strong> has the two dots listed in section 2. A leader with two endpoints gives the reader two answers — the same fault as <em>stroke</em> p2's ECA row in tranche 2.</p>
+
+  <h3>hyperkalemia-shaped: cdiff and pneumothorax both have a label with no line at all</h3>
+  <p class="prose">Not in this batch, but worth repeating from tranche 3 because it recurs: on <em>hyperkalemia</em> p2 a square bracket is shared by "Loop of Henle" and "Ascending Limb" while "Descending Limb" has no leader. Please check bracketed label groups generally — the pattern is a group label and a sub-item sharing one bracket.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">5</span><h2>Fault 6 again — three more labels naming things the page does not draw</h2></div>
+  <div class="scroll"><table>
+    <thead><tr><th>Page</th><th>Label</th><th>What is missing</th><th>What to do</th></tr></thead>
+    <tbody>
+      <tr><td class="k">hepatitis p2</td><td>Coronary ligament</td><td class="was">ends at <span class="co">(243,374)</span>, sampled (188,102,90) — bare parenchyma. At 11× there is no line or reflection within 60 px. The coronary ligament is on the <strong>superior and posterior</strong> surface; an anterior view cannot show it</td><td class="now">drop the label, or add a posterior view. Keep <em>Falciform ligament</em> — that one <em>is</em> visible anteriorly</td></tr>
+      <tr><td class="k">hypothyroid p2</td><td>Hyoid bone</td><td class="was">no bone-like structure anywhere above the thyroid cartilage (the grey shield at x 242–297, y 220–258) — muscle, vessels and laryngeal cartilages only</td><td class="now">draw the hyoid, or drop the label. We would drop it</td></tr>
+      <tr><td class="k">gerd p2</td><td>Diaphragm (overview panel)</td><td class="was">ends at <span class="co">(105,437)</span>, in the stomach body. In this ghosted whole-body view we could not identify a distinctly drawn diaphragm — at most a faint arc near y ≈ 418</td><td class="now"><strong>check at source.</strong> If the dome is drawn, <span class="co">(100,417)</span>. If not, this is fault 6</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose">One more to watch on <strong>hypothyroid</strong> p2: in an anterior view the trachea is drawn <em>over</em> the isthmus region, and we could not see the bridging band at all. <strong>If the isthmus is not drawn as a distinct band, row 3 is fault 6 too</strong> rather than a leader move.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">6</span><h2>What is not settled</h2></div>
+  <p class="prose"><strong>ckd p2's renal blood supply series.</strong> Measured tips in label order: Renal artery <span class="co">(828,763)</span>, Segmental <span class="co">(848,760)</span>, Interlobar <span class="co">(863,768)</span>, Arcuate <span class="co">(838,786)</span>, Interlobular <span class="co">(831,822)</span>. The kidney is sectioned at <span class="co">x 780–840</span>, so <strong>renal → segmental → interlobar runs outward</strong> when anatomically it runs inward — the first three are reversed along the vessel. Underneath that, all five tips are on the extrarenal trunk and its branches; interlobar belongs between the pyramids, arcuate at the corticomedullary junction, interlobular in the cortex, and none of them enters the kidney. Gold and orange vessels <em>are</em> drawn inside the outline at roughly <span class="co">x 780–800, y 765–800</span>. <strong>Please confirm whether those are drawn as distinct interlobar, arcuate and interlobular vessels.</strong> If not, this needs artwork, and the honest alternative is to keep only Renal and Segmental on this figure.</p>
+  <p class="prose"><strong>gerd p2's LES callout box.</strong> The overview panel's LES leader ends at <span class="co">(133,470)</span>, the corner of a rectangular region box spanning <span class="co">x 68–133, y 420–472</span> — which encloses the whole stomach and distal oesophagus. Read as a region callout that is a legitimate style; read as a pointer it says the LES is the size of the stomach. We recommend a leader onto the sphincter and keeping the box if it is wanted, but this is a style decision and it is yours.</p>
+  <p class="prose"><strong>gerd p2's GE Junction row.</strong> We could resolve the label's mark at <span class="co">(108,1032)</span> but not trace a leader further into the figure. Passed through as the order states it; if confirmed, the target is the squamocolumnar junction at about <span class="co now">(72,1018)</span>.</p>
+  <p class="prose"><strong>Page sizes.</strong> <strong>pneumothorax</strong> and <strong>hypothyroid</strong> ship at <span class="co">800×1200</span> against the <span class="co">1024×1536</span> standard, and every coordinate for those two pages in this document is in the shipped page's own pixels — multiply by 1.28. The other four are already at standard size.</p>
+</section>
+
+<footer>
+  <p>Six pages, measured 11 August 2026. Forty-three pages have now been measured across four tranches; <strong>38 of the original 81 remain at the auditors' coordinates and have not been measured.</strong> Tranches 1–3 remain current. Please continue to re-render only from tranches.</p>
+</footer>
+
+</div>

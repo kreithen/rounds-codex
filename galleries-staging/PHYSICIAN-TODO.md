@@ -98,6 +98,15 @@ with questions.
 | `PRODUCTION-hypothyroid-p2.md` | follicle labels a displaced series; no hyoid drawn; page is 800×1200 |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
+**Tranche 4 — the six biggest remaining pages:**
+https://claude.ai/code/artifact/5d1444fa-7758-43d6-bb53-a71d8e26fb5c
+Covers `pneumothorax`, `cdiff`, `hepatitis`, `ckd`, `gerd` and `hypothyroid` p2 — **63 rows, 55
+confirmed**, and 28 of the auditors' 30 [CHECK] calls turned out to be real. **All eight rows I could
+NOT verify are on the two pages that ship at 800×1200**; every row on the four standard-size pages
+was measurable. It leads with the pixel measurement behind that, because the export size has stopped
+being a preference and become a blocker. Checked light/dark at 1100 px and at 390 px, no horizontal
+scroll, no page errors.
+
 **Tranche 3 — the ten tier-2 pages:**
 https://claude.ai/code/artifact/b9849788-8e8b-4686-ab2f-7616af1b3504
 Covers `parkinsons`, `migraine`, `schizophrenia`, `osteomyelitis`, `seizure`, `suicide`,
