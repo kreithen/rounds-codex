@@ -75,6 +75,7 @@ with questions.
 | `PRODUCTION-aki-p2.md` | the nephron panel verified — four labels on one blood vessel; blood-supply series confirmed inverted |
 | `PRODUCTION-aortic-dissection-p2.md` | the arch branches verified — labels shifted one position, two on one vessel |
 | `PRODUCTION-acs-p2.md` | badge 3 "Diagonal Branch" sits 55 px from the LAD — not in the order; the brief's counter-example |
+| `PRODUCTION-sepsis-p2-dvt-p2.md` | the triage's top two — a brain marker on the chest wall; the popliteal vein on the tibia |
 
 **Tranche 1 is published as a web page you can read and forward:**
 https://claude.ai/code/artifact/2641d8d4-b845-4dc1-8e7d-43b1edb28e5d
