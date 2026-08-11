@@ -1,0 +1,3579 @@
+[
+{
+"score": 6,
+"page": "bph#2",
+"label": "Seminal vesicle (SAGITTAL VIEW)",
+"now": "the anterior-inferior bladder wall at the bladder base, ~page(690,181)",
+"should": "the lumpy coiled retrovesical structure behind/below the bladder at ~page(800,175), which is where the \"Detrusor muscle\" leader lands - the two labels read as swapped"
+},
+{
+"score": 6,
+"page": "dvt#2",
+"label": "Deep femoral vein  [CHECK]",
+"now": "the single bright main deep venous trunk of the thigh, mid-shaft - the same vessel the \"Femoral vein\" label points at ~110px lower; no separate profunda femoris branch is drawn there",
+"should": "a posterior/lateral branch off the common femoral vein"
+},
+{
+"score": 6,
+"page": "migraine#2",
+"label": "A - Dura mater",
+"now": "the blue SUPERIOR SAGITTAL SINUS (small terminator sits on the vessel's upper wall at its bend) - the same vessel label B names 45px lower",
+"should": "the dural layer itself (the dark band + cream inner-table line between skull and brain), not the venous sinus"
+},
+{
+"score": 5,
+"page": "bph#2",
+"label": "Ejaculatory ducts (CORONAL VIEW)  [CHECK]",
+"now": "plain glandular lobules in the middle of the right prostate lobe, ~page(562,628), with no duct drawn at the endpoint",
+"should": "the paramedian course from the seminal vesicle down to the verumontanum, ~20px medial"
+},
+{
+"score": 5,
+"page": "osteomyelitis#2",
+"label": "Venous drainage  [CHECK]",
+"now": "the distal cortical shell at approx (284,1252), with no vein at the endpoint",
+"should": "the blue venous channels, which run in the medullary cavity ~90 px medial"
+},
+{
+"score": 5,
+"page": "pe#2",
+"label": "Left main bronchus (VASCULAR LANDMARKS)",
+"now": "the left cardiac border / adjacent lung at approx (648,822); no airway is drawn at the endpoint",
+"should": "the carina/left main bronchus level behind the heart, approx (615-630, 755-768)"
+},
+{
+"score": 5,
+"page": "schizophrenia#2",
+"label": "Pituitary Gland  [CHECK]",
+"now": "empty black background below the brainstem; no pituitary is drawn at the arrowhead",
+"should": "the sella region under the hypothalamus. NOTE this is a double-headed orange pathway arrow running from the \"4\" badge down to the label text, so it may be a connector by design rather than a pointer"
+},
+{
+"score": 4,
+"page": "addisons#1",
+"label": "Cortex (glucocorticoids, mineralocorticoids, androgens)",
+"now": "inside the dark brown medulla of the inset cross-section, past the cortex/medulla boundary - the same tissue the \"Medulla\" leader points at",
+"should": "the orange striated outer band"
+},
+{
+"score": 4,
+"page": "addisons#2",
+"label": "Right Renal Artery & Vein",
+"now": "mid-shaft of the right ureter (gold tube), at iliac level well below the renal hilum",
+"should": "the renal vessels at the hilum, level with the kidney"
+},
+{
+"score": 4,
+"page": "aortic-dissection#2",
+"label": "Left common carotid artery",
+"now": "the THIRD arch branch (the left subclavian), which the next label also points at",
+"should": "the middle branch"
+},
+{
+"score": 4,
+"page": "bph#2",
+"label": "Testis (SAGITTAL VIEW)",
+"now": "the distal penile shaft / corona of the glans, ~page(635,365)",
+"should": "the pink ovoid testis at ~page(695,370), about 60px to the right"
+},
+{
+"score": 4,
+"page": "bph#2",
+"label": "Bladder neck (CORONAL VIEW)",
+"now": "the outer surface of the inferolateral bladder wall, ~page(476,573)",
+"should": "the midline funnel where the bladder narrows into the urethra, ~page(538,570), about 62px medial"
+},
+{
+"score": 4,
+"page": "bronchiolitis#2",
+"label": "Excess mucus (CROSS-SECTION: INFECTED BRONCHIOLE)",
+"now": "an inflamed swollen lining bump, ~page(825,724) - the same tissue the label above it names",
+"should": "the yellow mucus plug filling the lumen, ~page(790,758)"
+},
+{
+"score": 4,
+"page": "cardiac-arrest#2",
+"label": "5 Diaphragm",
+"now": "purple lower-lobe LUNG parenchyma, same tissue as arrow 4 \"Lungs\"",
+"should": "the orange muscular dome ~40px lower in the figure"
+},
+{
+"score": 4,
+"page": "cdiff#2",
+"label": "Normal mucus layer (Normal colonic mucosa panel)",
+"now": "the tissue BENEATH the pale surface film, at the crypt mouths (surface epithelium/lamina propria)",
+"should": "the pale translucent film on top - i.e. where \"Intact epithelium\" currently points; the two read as swapped"
+},
+{
+"score": 4,
+"page": "croup#2",
+"label": "Trachea (main sagittal figure)",
+"now": "left lung parenchyma at the medial border, well BELOW the carina",
+"should": "the ringed blue-grey tube in the neck between larynx and carina"
+},
+{
+"score": 4,
+"page": "gi-bleed#1",
+"label": "Duodenum (First part) (main anatomy figure)",
+"now": "the yellow lobulated pancreas / omental fat beside a blue vein, ~page(167,674)",
+"should": "the pink duodenal tube ~16px to the left; and the FIRST part (bulb) sits higher still, at ~page(180,570) just beyond the pylorus"
+},
+{
+"score": 4,
+"page": "hyperkalemia#2",
+"label": "Renal Medulla (item 2, KIDNEYS - ANTERIOR VIEW)",
+"now": "the external surface of the intact left kidney (~x346,y451), which is capsule/cortex - the same tissue item 1 \"Renal Cortex\" points at",
+"should": "a medullary pyramid in the cut kidney at the right"
+},
+{
+"score": 4,
+"page": "myasthenia#2",
+"label": "Basal lamina (Normal Neuromuscular Junction panel)",
+"now": "striated sarcoplasm deep inside the MUSCLE FIBER, about 58px below the base of the junctional folds and only 40px above where \"Muscle fiber\" points",
+"should": "the thin layer at the synaptic surface, within the cleft / lining the junctional folds"
+},
+{
+"score": 4,
+"page": "myasthenia#2",
+"label": "Acetylcholine (ACh) release  [CHECK]",
+"now": "plain dark background about 15px to the left of the terminal's lower edge, not on a fusing vesicle or a released ACh sphere",
+"should": "the vesicles fusing at the terminal's base, or the orange ACh in the cleft"
+},
+{
+"score": 4,
+"page": "nephrolithiasis#2",
+"label": "Urinary bladder (main urinary-system figure)",
+"now": "the tan distal URETER, about 23px above and to the left of the bladder wall",
+"should": "the large red bladder itself"
+},
+{
+"score": 4,
+"page": "parkinsons#2",
+"label": "Thalamus (left column)",
+"now": "the small purple globus-pallidus lump cluster - the same structure the \"Globus pallidus (internal)\" leader targets, ~18 px away",
+"should": "the large purple ovoid (or the blue body) that reads as the thalamus"
+},
+{
+"score": 4,
+"page": "pericarditis#1",
+"label": "Fibrous Pericardium",
+"now": "plain dark BACKGROUND at approx (750,625), in the gap between the red aortic arch (ends x=745) and the blue SVC (starts y=640); nothing is drawn at the dot",
+"should": "the translucent fibrous sac enveloping the heart, whose upper reflection over the great vessels is ~120 px lower at approx (700-790, 740-820)"
+},
+{
+"score": 4,
+"page": "pneumothorax#2",
+"label": "Rib (intercostal neurovascular bundle panel)",
+"now": "lung parenchyma, ~75px to the right of and below the rib cross-section",
+"should": "the tan rib in cross-section at the upper left of that panel"
+},
+{
+"score": 4,
+"page": "pneumothorax#2",
+"label": "Costophrenic angle (apical blebs panel)  [CHECK]",
+"now": "the lateral lung border ~25px above the angle",
+"should": "the acute angle where the lung base meets the chest wall"
+},
+{
+"score": 4,
+"page": "seizure#2",
+"label": "Basal ganglia",
+"now": "the magenta thalamic sphere, inside its left half - the same structure the \"Thalamus\" leader correctly marks",
+"should": "the lavender/violet lentiform mass lateral and anterior to the thalamus"
+},
+{
+"score": 4,
+"page": "sepsis#2",
+"label": "6 BRAIN (Meningitis)",
+"now": "a green marker on the left lateral chest wall / axilla at the level of the upper lung, roughly 200 px below the head",
+"should": "the brain drawn inside the skull at the top of the figure"
+},
+{
+"score": 4,
+"page": "stroke#2",
+"label": "Vertebral Arteries [panel 3]  [CHECK]",
+"now": "black background at (454,703), just abutting a thin side branch; the main trunk is ~15 px to the right",
+"should": "the trunk itself, as the Basilar label above it does"
+},
+{
+"score": 4,
+"page": "suicide#2",
+"label": "Hippocampus",
+"now": "the purple sphere sitting on top of the brainstem at (359,578) - the SAME structure the \"Raphe Nuclei (Brainstem)\" arrowhead points at (392,592)",
+"should": "the magenta elongated structure inside the medial-temporal swirl at ~(310,582), just below and behind the orange amygdala sphere"
+},
+{
+"score": 4,
+"page": "tb#2",
+"label": "Hilar lymph node enlargement (Ghon Complex panel)  [CHECK]",
+"now": "pink lung parenchyma about 20 px lateral to the tan hilar node chain, after a dogleg",
+"should": "one of the enlarged tan nodes themselves"
+},
+{
+"score": 4,
+"page": "uti#2",
+"label": "8 Ureterovesical junction (UVJ)  [CHECK]",
+"now": "the plain lateral bladder wall ~45px below where the tan ureter reaches the bladder",
+"should": "the point where the ureter enters the bladder wall obliquely"
+},
+{
+"score": 4,
+"page": "uti#2",
+"label": "Minor calyx (kidney panel)",
+"now": "the base of a third red medullary pyramid",
+"should": "one of the small tan cups around a papilla - three of the five labels in this panel point at pyramids, the same structure the \"Medulla\" label names"
+},
+{
+"score": 3,
+"page": "aki#2",
+"label": "Afferent Arteriole  [CHECK]",
+"now": "a small red stub at the lower-pole margin, the leader crossing over the blue renal vein",
+"should": "a cortical terminal twig (the diagram does not really depict an afferent arteriole)"
+},
+{
+"score": 3,
+"page": "ckd#2",
+"label": "RENAL ARTERY (main urinary tract figure)",
+"now": "a minor calyx / medullary pyramid inside the renal sinus, ~page(292,437), with no vessel at the endpoint",
+"should": "the red arterial trunk and its branches at the hilum, ~page(324,429) and lateral"
+},
+{
+"score": 3,
+"page": "compartment#2",
+"label": "Deep peroneal nerve (innervation panel)  [CHECK]",
+"now": "muscle immediately lateral to a blue vein; no yellow nerve trunk is drawn at that point",
+"should": "the yellow nerve running with the anterior tibial vessels"
+},
+{
+"score": 3,
+"page": "dvt#2",
+"label": "Valve closed (prevents backflow)",
+"now": "the vein's outer wall midway between two valves, and no valve anywhere in the VALVULAR STRUCTURE panel is drawn closed - all three cusp pairs are swept open with upward flow arrows",
+"should": "a closed (coapted) valve; there is no such structure on the artwork"
+},
+{
+"score": 3,
+"page": "gerd#2",
+"label": "Diaphragm (OVERVIEW: ENTIRE ESOPHAGUS panel)",
+"now": "a dot in the middle of the STOMACH BODY; no diaphragm is drawn at that point",
+"should": "the diaphragmatic dome above the stomach"
+},
+{
+"score": 3,
+"page": "gi-bleed#1",
+"label": "Ligament of Treitz (main anatomy figure)  [CHECK]",
+"now": "the smooth inferior wall of the stomach (antrum/greater curvature), ~page(311,696)",
+"should": "the duodenojejunal flexure; no suspensory ligament is actually drawn, so the dot sits on gastric wall"
+},
+{
+"score": 3,
+"page": "hepatitis#2",
+"label": "Coronary ligament (main)  [CHECK]",
+"now": "bare anterior right-lobe parenchyma (~x243,y374); no ligament is drawn there",
+"should": "a peritoneal reflection (not depicted in an anterior view)"
+},
+{
+"score": 3,
+"page": "hypothyroid#2",
+"label": "Hyoid bone  [CHECK]",
+"now": "a dot in lateral neck soft tissue/vessels above the thyroid cartilage; no hyoid bone is drawn anywhere on the page",
+"should": "a bone above the thyroid cartilage"
+},
+{
+"score": 3,
+"page": "myasthenia#2",
+"label": "Voltage-gated Ca2+ channels  [CHECK]",
+"now": "presynaptic cytoplasm just inside the terminal's lateral membrane; no channel structure is drawn at the endpoint",
+"should": "in the presynaptic membrane (as the step-2 \"Ca2+\" arrows below correctly do)"
+},
+{
+"score": 3,
+"page": "osa#2",
+"label": "Palatoglossus (dilator key)  [CHECK]",
+"now": "the purple muscle band, which is the colour keyed to Genioglossus; no orange-keyed structure is drawn",
+"should": "an orange-highlighted palatoglossus"
+},
+{
+"score": 3,
+"page": "pud#2",
+"label": "Right gastric artery (second, lower leader)  [CHECK]",
+"now": "the outer wall of the duodenal bulb with no artery at the endpoint; the label's first leader does merge correctly into an arterial branch off the celiac node",
+"should": "the artery along the lesser curvature"
+},
+{
+"score": 3,
+"page": "seizure#2",
+"label": "Neurotransmitters (glutamate, GABA)  [CHECK]",
+"now": "plain purple cytoplasm on the right wall of the presynaptic bouton, with no vesicle at the endpoint",
+"should": "the orange transmitter particles filling the synaptic cleft, or the vesicle circles drawn inside the bouton"
+},
+{
+"score": 2,
+"page": "addisons#2",
+"label": "Left Renal Artery & Vein",
+"now": "empty dark background between the left common iliac artery and the left ureter",
+"should": "the renal vessels at the left hilum"
+},
+{
+"score": 2,
+"page": "addisons#2",
+"label": "Ureters (behind vessels)  [CHECK]",
+"now": "both arrowheads touch the common iliac arteries; the drawn gold ureters lie lateral and untouched",
+"should": "the gold ureters (the \"behind vessels\" note may be intentional)"
+},
+{
+"score": 2,
+"page": "aki#2",
+"label": "Abdominal Aorta (9)",
+"now": "faint translucent ghost-body background left of the lumbar spine, below the aortic bifurcation",
+"should": "the bright red midline vessel above the bifurcation (the two markers are also in inverted order)"
+},
+{
+"score": 2,
+"page": "aki#2",
+"label": "Inferior Vena Cava (10)",
+"now": "the same faint background, right of the spine",
+"should": "the bright blue midline vessel left of the aorta"
+},
+{
+"score": 2,
+"page": "aki#2",
+"label": "Collecting Duct",
+"now": "the descending limb of the gold loop of Henle",
+"should": "the thick gold trunk on the far right"
+},
+{
+"score": 2,
+"page": "aortic-dissection#1",
+"label": "Media",
+"now": "inside the red lumen, roughly 20px medial to the wall",
+"should": "the middle of the pale laminated wall"
+},
+{
+"score": 2,
+"page": "appendicitis#2",
+"label": "Taenia coli (converging at base) [RLQ panel]  [CHECK]",
+"now": "a plain haustral bulge of the cecum",
+"should": "the pale longitudinal taenia band, which runs ~30px to the right of the endpoint"
+},
+{
+"score": 2,
+"page": "b12-anemia#2",
+"label": "Pancreas  [CHECK]",
+"now": "the pink duodenal wall, ~20px left of the orange pancreas",
+"should": "the orange pancreas itself"
+},
+{
+"score": 2,
+"page": "b12-anemia#2",
+"label": "Terminal ileum (marker 5)  [CHECK]",
+"now": "the bowel loop descending on the patient's LEFT",
+"should": "the right lower quadrant, where the cecum and appendix are drawn on the opposite side of the figure"
+},
+{
+"score": 2,
+"page": "bph#2",
+"label": "Detrusor muscle (SAGITTAL VIEW)  [CHECK]",
+"now": "the fascial plane just outside the bladder, lateral to that lumpy retrovesical (seminal vesicle) chain, ~page(816,160)",
+"should": "the thick red muscular bladder wall, ~10-25px medial"
+},
+{
+"score": 2,
+"page": "bph#2",
+"label": "Pubic symphysis (SAGITTAL VIEW)",
+"now": "the root of the penis / corpus at ~page(666,285), the same erectile-tissue spot the \"Urethra\" leader targets",
+"should": "the pale cream bone ovoid anterior to the prostate at ~page(668,225)"
+},
+{
+"score": 2,
+"page": "bph#2",
+"label": "Scrotum (SAGITTAL VIEW)",
+"now": "the glans penis, ~page(628,396)",
+"should": "the scrotal sac drawn around the testis at ~page(670-725,335-405)"
+},
+{
+"score": 2,
+"page": "bph#2",
+"label": "Bulbourethral gland (SAGITTAL VIEW)",
+"now": "the pelvic floor at the anorectal junction, ~page(774,311), well posterior to the urethra",
+"should": "beside the membranous (yellow) urethra at ~page(715,305)"
+},
+{
+"score": 2,
+"page": "bronchiolitis#2",
+"label": "Left main bronchus (main infant figure)",
+"now": "parenchyma of the patient's RIGHT lung (viewer's left), ~page(399,664), the same lung the \"Right main bronchus\" leader goes into",
+"should": "the left main bronchus running down-right from the carina at ~page(494,634) - a front-facing figure, so patient-left is the viewer's right"
+},
+{
+"score": 2,
+"page": "bronchiolitis#2",
+"label": "Nasal cavity (main infant figure)  [CHECK]",
+"now": "skin of the nasal dorsum, ~page(384,385), just above the drawn pink nasal cavity",
+"should": "inside the turbinate-containing cavity ~12px lower"
+},
+{
+"score": 2,
+"page": "bronchiolitis#2",
+"label": "Alveolar duct (ALVEOLI panel)  [CHECK]",
+"now": "the wall of a rounded alveolar sac in the upper cluster, ~page(217,1089)",
+"should": "the tubular duct feeding that cluster, ~15px to the left"
+},
+{
+"score": 2,
+"page": "cdiff#2",
+"label": "Sigmoid colon (Colon anatomy panel)  [CHECK]",
+"now": "the straight vertical descending limb, only ~77px below the \"Descending colon\" dot and above the sigmoid loop",
+"should": "the S-shaped segment running leftward along the bottom"
+},
+{
+"score": 2,
+"page": "cdiff#2",
+"label": "Taenia coli (longitudinal muscle bands)  [CHECK]",
+"now": "the free lateral haustral wall of the ascending colon",
+"should": "the tan longitudinal band running down the colon ~18px medial to the dot"
+},
+{
+"score": 2,
+"page": "cdiff#2",
+"label": "Ileocolic a.  [CHECK]",
+"now": "black background medial to the ascending colon, ~13px short of the arterial arcade",
+"should": "the arcade branch running to the cecum"
+},
+{
+"score": 2,
+"page": "cdiff#2",
+"label": "Parasympathetic (vagus n.) -> proximal colon (Innervation panel)  [CHECK]",
+"now": "the splenic flexure / proximal descending colon",
+"should": "the cecum-ascending-transverse colon on the opposite side of the panel"
+},
+{
+"score": 2,
+"page": "cellulitis#2",
+"label": "Portal of entry (skin break)  [CHECK]",
+"now": "erythematous skin ~30px to the right of the wound, near a lymphatic branch",
+"should": "the dark slit-shaped skin break itself"
+},
+{
+"score": 2,
+"page": "cholecystitis#2",
+"label": "COMMON BILE DUCT (CBD) (main figure)",
+"now": "pancreas parenchyma immediately above the yellow pancreatic duct",
+"should": "the green duct descending behind the pancreatic head"
+},
+{
+"score": 2,
+"page": "cholecystitis#2",
+"label": "COMMON HEPATIC DUCT (main figure)",
+"now": "the bile duct ~45px BELOW the cystic-duct junction, i.e. the common bile duct",
+"should": "the short segment between the R+L hepatic confluence and the cystic-duct junction"
+},
+{
+"score": 2,
+"page": "cirrhosis#2",
+"label": "Falciform ligament (main figure)",
+"now": "left-lobe liver parenchyma ~160px lateral to the midline",
+"should": "the pale cream vertical band between the lobes, which is drawn unmistakably"
+},
+{
+"score": 2,
+"page": "cirrhosis#2",
+"label": "Ligamentum teres (round ligament) (main figure)",
+"now": "the inferolateral surface of the left lobe ~145px lateral",
+"should": "the cream cord descending from the lower end of the falciform ligament"
+},
+{
+"score": 2,
+"page": "cirrhosis#2",
+"label": "Xiphoid process (Surface landmarks panel)  [CHECK]",
+"now": "the same ringed intersection dot as \"Right costal margin\", ~37px lateral to the body midline on the patient's LEFT",
+"should": "the midline at the lower end of the sternum"
+},
+{
+"score": 2,
+"page": "ckd#2",
+"label": "RENAL VEIN (main urinary tract figure)",
+"now": "renal cortex/medulla parenchyma, ~page(275,510)",
+"should": "the blue renal vein at the hilum, ~page(365,500), about 90px to the right"
+},
+{
+"score": 2,
+"page": "ckd#2",
+"label": "Proximal tubule (NEPHRON panel)",
+"now": "the blue efferent arteriole / peritubular vessel, ~page(824,432)",
+"should": "the orange tubule descending from Bowman's capsule, ~page(858,432), about 35px to the right"
+},
+{
+"score": 2,
+"page": "covid#2",
+"label": "2 Nasopharynx (legend leader line)  [CHECK]",
+"now": "empty black background just outside the facial silhouette, near the nose/upper lip",
+"should": "the airway behind the nasal cavity (the on-figure badge 2 is correctly placed there)"
+},
+{
+"score": 2,
+"page": "covid#2",
+"label": "3 Oropharynx (legend leader line)  [CHECK]",
+"now": "empty black background at the chin/submental outline",
+"should": "the pharyngeal airway behind the tongue (the on-figure badge 3 sits on the posterior tongue, defensible for a region)"
+},
+{
+"score": 2,
+"page": "dementia#2",
+"label": "Mammillary body (sagittal)",
+"now": "the GREEN hippocampal body, about 10px below the Fornix arrowhead",
+"should": "the small paired round body below the hypothalamus, anterior to the midbrain"
+},
+{
+"score": 2,
+"page": "depression#2",
+"label": "Pituitary gland (ACTH) (main brain figure)",
+"now": "empty dark background in the neck, ~page(624,614) - the arrowhead sits on nothing",
+"should": "the sella region under the hypothalamus at the base of the brain, ~page(510,410), about 120px away"
+},
+{
+"score": 2,
+"page": "depression#2",
+"label": "Raphe nuclei (Serotonin) (main brain figure)  [CHECK]",
+"now": "dark background ~8px lateral to the descending brainstem fibre bundle, at medulla level, ~page(594,528)",
+"should": "the midline brainstem nuclei higher up, near the gold node at ~page(555,437)"
+},
+{
+"score": 2,
+"page": "diverticulitis#2",
+"label": "Taenia coli (HAUSTRAL FOLDS panel)",
+"now": "the surface of a haustral sacculation, ~page(869,220)",
+"should": "the pale longitudinal band running vertically at ~page(834,220), about 35px to the left - the dot for \"Haustra\" above it is on the same kind of bulge"
+},
+{
+"score": 2,
+"page": "diverticulitis#2",
+"label": "2 - Inferior mesenteric a. (VASCULAR SUPPLY panel)  [CHECK]",
+"now": "the same pale longitudinal band, ~page(941,589), ~38px below leader 1",
+"should": "the red arterial trunk; note leader 3 (\"Marginal artery of Drummond\") lands on that band too, so three of the four leaders share one feature"
+},
+{
+"score": 2,
+"page": "fracture#2",
+"label": "Tibia (THE SKELETAL FRAMEWORK panel)",
+"now": "the thin LATERAL bone (fibula) on both skeletons - the same bone the \"Fibula\" arrow 20px lower points at",
+"should": "the thick medial bone of the leg"
+},
+{
+"score": 2,
+"page": "gerd#2",
+"label": "2 Diaphragmatic crus (right) (NORMAL ANATOMY anti-reflux panel)",
+"now": "the OESOPHAGEAL MUSCULARIS - the same wall that marker 1 (\"Esophageal muscularis\") points at, ~60px above the crus",
+"should": "the left-hand horizontal crural muscle band, which is drawn and left unlabelled"
+},
+{
+"score": 2,
+"page": "gi-bleed#1",
+"label": "Duodenum (Up to ligament of Treitz) (ANATOMY OVERVIEW panel)  [CHECK]",
+"now": "the lower-right contour of the STOMACH, ~page(489,1083)",
+"should": "the duodenal loop below it, which starts ~10px lower (the \"Ligament of Treitz\" leader in the same panel does reach it correctly)"
+},
+{
+"score": 2,
+"page": "gi-bleed#2",
+"label": "Cardia",
+"now": "the outer wall of the fundus dome, top-right of the stomach, well above and right of the esophagogastric junction",
+"should": "the EG junction where the esophagus joins the stomach (upper left of the stomach)"
+},
+{
+"score": 2,
+"page": "gout#2",
+"label": "Joint cavity",
+"now": "trabecular bone inside the proximal phalanx (~x683,y537), well distal to the joint",
+"should": "the gold/dark space between the two articular cartilage caps"
+},
+{
+"score": 2,
+"page": "gout#2",
+"label": "Other metatarsals (2-5) (left skeletal-landmarks panel, item 5)",
+"now": "empty black background at the edge of the legend box (~x256,y657); there is no numbered 5 badge anywhere on the foot",
+"should": "metatarsals 2-5 on the lateral side of the foot"
+},
+{
+"score": 2,
+"page": "gout#2",
+"label": "Joint capsule  [CHECK]",
+"now": "red muscle fibres ~15px lateral to the pale grey capsule band (~x756,y336)",
+"should": "the pale capsule band hugging the metatarsal neck"
+},
+{
+"score": 2,
+"page": "hepatitis#2",
+"label": "Inferior vena cava (main)",
+"now": "the small orange portal-triad cross-section widget where the artery crosses the duct (~x376,y567)",
+"should": "the large blue IVC trunk ~35px to the right"
+},
+{
+"score": 2,
+"page": "hepatitis#2",
+"label": "Bile duct (from left and right hepatic ducts) (main)",
+"now": "the blue IVC immediately right of the hepatic artery (~x408,y535)",
+"should": "the green biliary trunk ~50px to the left"
+},
+{
+"score": 2,
+"page": "hepatitis#2",
+"label": "Portal vein (main)  [CHECK]",
+"now": "a dark maroon vessel wedged between the green ducts (~x360,y555); the blue venous trunks are ~40px to the right",
+"should": "the portal vein, which this page colours blue in its own BLOOD SUPPLY inset"
+},
+{
+"score": 2,
+"page": "hepatitis#2",
+"label": "Left hepatic duct (Biliary drainage panel)  [CHECK]",
+"now": "the common hepatic trunk ~11px below the confluence (~x106,y885), which \"Common hepatic duct\" also labels",
+"should": "the left-going limb of the bifurcation"
+},
+{
+"score": 2,
+"page": "hiv#2",
+"label": "Thymus (PRIMARY TARGETS)",
+"now": "inside the patient's left lung (~x711,y327)",
+"should": "the yellow bilobed thymus between the lungs (~x680-698,y273-307)"
+},
+{
+"score": 2,
+"page": "hiv#2",
+"label": "gp41 (VIRION)  [CHECK]",
+"now": "empty black background just outside the envelope, between spikes (~x173,y438)",
+"should": "the purple stalk of a spike, where gp41 sits"
+},
+{
+"score": 2,
+"page": "htn#2",
+"label": "Common Iliac Arteries  [CHECK]",
+"now": "the iliac trunk ~45px below the internal-iliac takeoff, i.e. the external iliac segment (~x668,y912)",
+"should": "the short segment between the aortic bifurcation (~y808) and the internal-iliac branch (~y865)"
+},
+{
+"score": 2,
+"page": "hyponatremia#2",
+"label": "Hypothalamus (Osmoreceptors detect low osmolality)",
+"now": "frontal-lobe cortical gyri at the top left of the mid-sagittal brain (both faint leader segments fade out there)",
+"should": "the yellow hypothalamic nucleus above the pituitary stalk, ~250px to the right"
+},
+{
+"score": 2,
+"page": "hypothyroid#2",
+"label": "Isthmus",
+"now": "the lateral border of the left lobe, about 40px above and 60px lateral to the isthmus",
+"should": "the midline band of gland bridging the two lobes across the trachea"
+},
+{
+"score": 2,
+"page": "hypothyroid#2",
+"label": "Trachea",
+"now": "the carotid/vagus vascular bundle lateral to the gland (a red artery)",
+"should": "the ringed grey midline tube ~55px medial"
+},
+{
+"score": 2,
+"page": "influenza#2",
+"label": "Primary bronchi  [CHECK]",
+"now": "a segmental bronchus deep inside the right lung field, about two generations distal to the main bronchus",
+"should": "the large ringed tube just off the carina"
+},
+{
+"score": 2,
+"page": "influenza#2",
+"label": "Basement membrane  [CHECK]",
+"now": "a second leader from this label ends in the capillary lumen ~12px below the tan membrane band",
+"should": "only the dogleg leader (which does land correctly on the membrane) should be there"
+},
+{
+"score": 2,
+"page": "iron-anemia#2",
+"label": "Fe3+ bound to transferrin  [CHECK]",
+"now": "the blue transferrin lobe at the bottom of the complex, ~40px below either orange Fe3+ sphere",
+"should": "one of the orange iron spheres"
+},
+{
+"score": 2,
+"page": "labor#2",
+"label": "Sacrum",
+"now": "the posterior elements (lamina / spinous process) of an upper LUMBAR vertebra, ~115px above the sacral promontory",
+"should": "the fused triangular bone behind the rectum"
+},
+{
+"score": 2,
+"page": "labor#2",
+"label": "Endometrium (inner lining)",
+"now": "the outer convex surface of the uterine globe, ~55px lateral to the cut edge where the lining is drawn",
+"should": "the pale inner lining at the cut edge"
+},
+{
+"score": 2,
+"page": "leukemia#2",
+"label": "Vertebrae",
+"now": "a lower rib on the figure's left, ~30px lateral to the spine",
+"should": "the red vertebral column in the midline"
+},
+{
+"score": 2,
+"page": "leukemia#2",
+"label": "Endosteum (stem cell niche)",
+"now": "a blue-grey sinusoidal vessel on the far right of the inset, ~100px from the bone",
+"should": "the marrow-facing surface of the tan bone at the left edge of the inset"
+},
+{
+"score": 2,
+"page": "leukemia#2",
+"label": "Epiphyseal line",
+"now": "red marrow just inside the cortex, in the mid-diaphysis, ~90px below the head/neck junction",
+"should": "the growth-plate line at the epiphysis/metaphysis junction (none is clearly drawn)"
+},
+{
+"score": 2,
+"page": "lung-cancer#2",
+"label": "Right main bronchus",
+"now": "a fine peripheral bronchus high in the right upper lobe; the ringed main bronchus at that x is ~80px lower",
+"should": "the large ringed tube running down-left from the carina"
+},
+{
+"score": 2,
+"page": "lung-cancer#2",
+"label": "Lobar bronchi  [CHECK]",
+"now": "a small branch in the upper left lung, distal to the lobar divisions",
+"should": "\u2014 see appendix"
+},
+{
+"score": 2,
+"page": "lung-cancer#2",
+"label": "Segmental bronchi  [CHECK]",
+"now": "the fine parenchymal network ~20px lateral to the nearest ringed segmental bronchus",
+"should": "\u2014 see appendix"
+},
+{
+"score": 2,
+"page": "meningitis#2",
+"label": "Pericyte",
+"now": "empty dark background outside the vessel, between two astrocyte end-feet",
+"should": "the bluish-grey cell segment embedded in the purple basement-membrane ring"
+},
+{
+"score": 2,
+"page": "metabolic-syndrome#1",
+"label": "Stomach (Visceral Fat panel)",
+"now": "omental/preperitoneal fat at the left flank, ~15px lateral to the stomach wall",
+"should": "the striated pink J-shaped stomach itself"
+},
+{
+"score": 2,
+"page": "metabolic-syndrome#1",
+"label": "Mesenteric Fat (Visceral Fat panel)  [CHECK]",
+"now": "the same continuous yellow flank/omental fat band that the \"Greater Omentum\" leader 30px above also lands on",
+"should": "the fat within the mesentery, between the small-bowel loops"
+},
+{
+"score": 2,
+"page": "metabolic-syndrome#1",
+"label": "Small Intestine (Visceral Fat panel)",
+"now": "yellow omental/flank fat at the right margin of the cavity, ~18px lateral to the nearest bowel loop",
+"should": "the coiled red small-bowel loops in the centre of the panel"
+},
+{
+"score": 2,
+"page": "migraine#2",
+"label": "F - Trigeminal ganglion (Gasserian)  [CHECK]",
+"now": "the beige nerve trunk about 18px BELOW the ganglion body; the leader passes over the purple marker sphere and stops short of the star-shaped hub where V1/V2/V3 radiate",
+"should": "the radiating ganglion hub itself"
+},
+{
+"score": 2,
+"page": "ms#2",
+"label": "1 - Optic nerves (main sagittal figure)  [CHECK]",
+"now": "the eyeball (cornea/anterior globe)",
+"should": "the yellow optic nerve running back from the globe, about 19px to the right"
+},
+{
+"score": 2,
+"page": "ms#2",
+"label": "3 - Periventricular white matter (main sagittal figure)  [CHECK]",
+"now": "the superior surface of the corpus callosum, the same white arc that label 4 marks 33px lower",
+"should": "the white matter around the ventricle, distinguishable from 4's target"
+},
+{
+"score": 2,
+"page": "ms#2",
+"label": "9 - Spinothalamic tracts (main sagittal figure)  [CHECK]",
+"now": "the leader stops in the dark paraspinal/vertebral space about 19px lateral to the cord; a separate small white dot sits on the cord edge, so the line may simply be occluded",
+"should": "the cord itself, as leaders 6, 7, 8 and 10 do"
+},
+{
+"score": 2,
+"page": "ms#2",
+"label": "8 - Dorsal columns (SPINAL CORD AXIAL inset)",
+"now": "the dorsal-horn GREY MATTER at the dorsolateral position - the exact mirror image of where leader 7 (corticospinal) lands on the other side",
+"should": "the pale posterior funiculi flanking the midline septum, about 19px medial"
+},
+{
+"score": 2,
+"page": "ms#2",
+"label": "Optic chiasm (OPTIC PATHWAY panel)",
+"now": "the left grey-blue OPTIC TRACT, well below the crossing",
+"should": "the yellow X where the two optic nerves cross, about 27px up and to the right"
+},
+{
+"score": 2,
+"page": "nephrolithiasis#2",
+"label": "Renal artery (main urinary-system figure)",
+"now": "the mid-lateral CORTEX of the right kidney, no vessel at the endpoint - the same parenchyma the \"Kidney\" leader marks 59px above",
+"should": "the red renal artery running from the aorta to the hilum, about 80px to the right"
+},
+{
+"score": 2,
+"page": "nephrolithiasis#2",
+"label": "Renal vein (main urinary-system figure)",
+"now": "the vertical blue INFERIOR VENA CAVA, about 107px BELOW the renal vein",
+"should": "the horizontal blue branch joining the IVC at the level of the kidney hilum"
+},
+{
+"score": 2,
+"page": "nephrolithiasis#2",
+"label": "Medulla (renal pyramids) (KIDNEY CROSS-SECTION inset)  [CHECK]",
+"now": "the outer CORTICAL band, just outside a pyramid's capsule outline - the same band the \"Cortex\" leader marks 48px above",
+"should": "inside a renal pyramid"
+},
+{
+"score": 2,
+"page": "osteoarthritis#2",
+"label": "1 Articular cartilage (KNEE JOINT FRONT VIEW)",
+"now": "an arrowhead squarely inside the tan cancellous/cortical bone of the distal femoral metaphysis, ~65 px above and medial to any cartilage",
+"should": "the grey-white articular cartilage capping the femoral condyle, lower and to the right"
+},
+{
+"score": 2,
+"page": "osteoarthritis#2",
+"label": "6 Ligaments (KNEE)  [CHECK]",
+"now": "the gold/ochre peri-articular tissue lateral to the femoral condyle - the same band marker 3 \"Synovial membrane\" points to on the opposite side",
+"should": "a discrete ligament; the pale striated fibrous band ~60 px further lateral is what marker 5 \"Joint capsule\" uses"
+},
+{
+"score": 2,
+"page": "osteoarthritis#2",
+"label": "Synovial fluid (HIP)",
+"now": "femoral-neck trabecular bone at approx (843,888), ~40 px below the joint space",
+"should": "the joint cavity between the acetabular and femoral cartilage"
+},
+{
+"score": 2,
+"page": "osteomyelitis#2",
+"label": "Yellow marrow (LONG BONE SECTIONAL ANATOMY)",
+"now": "a dot at approx (351,442), squarely inside the deep RED marrow of the metaphysis",
+"should": "the gold/orange rectangle of fatty marrow whose top edge is ~36 px lower, at approx (315-345, 478-560)"
+},
+{
+"score": 2,
+"page": "osteomyelitis#2",
+"label": "Endosteum (LONG BONE)",
+"now": "a dot at approx (341,534), inside the gold YELLOW MARROW block",
+"should": "the cortex-marrow interface (the inner surface of the cortical shell) ~25 px to the right at x approx 368"
+},
+{
+"score": 2,
+"page": "pancreatitis#2",
+"label": "Celiac trunk",
+"now": "the large blue VEIN (IVC/portal) about 13 px lateral to the aorta; the celiac trunk itself is the red stub arising from the aorta ~45 px lower right",
+"should": "the arterial trunk off the anterior aorta that gives the splenic artery"
+},
+{
+"score": 2,
+"page": "parkinsons#2",
+"label": "Brainstem",
+"now": "empty dark background in the neck/soft-tissue silhouette, roughly 110 px anterior to the drawn brainstem",
+"should": "the tan midbrain-pons-medulla column"
+},
+{
+"score": 2,
+"page": "parkinsons#2",
+"label": "Cerebellum",
+"now": "empty dark background below the jaw line",
+"should": "the foliated cerebellum, far up and to the right"
+},
+{
+"score": 2,
+"page": "pe#2",
+"label": "Main pulmonary artery (central heart figure)",
+"now": "the right border of the salmon AORTIC ARCH at approx (411,272)",
+"should": "the blue pulmonary trunk arising from the RV, approx (355-375, 320-360), ~70 px lower-left"
+},
+{
+"score": 2,
+"page": "pe#2",
+"label": "Right pulmonary artery (central figure)",
+"now": "approx (427,296), on the blue artery running into the viewer's-RIGHT lung, i.e. the patient's LEFT lung",
+"should": "the blue trunk with the clot at approx (318-338, 275-325) on the viewer's left, which branches into the patient's right lung. Side convention confirmed by the aortic arch descending on the viewer's right"
+},
+{
+"score": 2,
+"page": "pe#2",
+"label": "Ascending aorta (VASCULAR LANDMARKS)",
+"now": "the apex of the viewer's-right lung at approx (634,710); the faint horizontal leader fades out there",
+"should": "the salmon aorta at approx (595-610, 700-740), ~25 px further left"
+},
+{
+"score": 2,
+"page": "pe#2",
+"label": "Superior vena cava (VASCULAR LANDMARKS)",
+"now": "the blue pulmonary-artery confluence immediately to the RIGHT of the ascending aorta, approx (614-630, 755-758)",
+"should": "the blue SVC tube at approx (580-590, 733-765), on the far side of the aorta"
+},
+{
+"score": 2,
+"page": "pneumothorax#2",
+"label": "Parietal pleura (bundle panel)",
+"now": "lung parenchyma, inside the visceral pleura",
+"should": "the dark purple band lying against the chest wall"
+},
+{
+"score": 2,
+"page": "pneumothorax#2",
+"label": "Visceral pleura (bundle panel)",
+"now": "lung parenchyma well inside the pink pleural line",
+"should": "the pink line hugging the lung surface"
+},
+{
+"score": 2,
+"page": "pneumothorax#2",
+"label": "Intercostal vein (blue) (bundle panel)  [CHECK]",
+"now": "the intercostal muscle and the outer periosteal band above the groove; no blue vessel at either endpoint",
+"should": "a blue vessel in the subcostal groove (the blue segments are ~30px lower)"
+},
+{
+"score": 2,
+"page": "pneumothorax#2",
+"label": "Costomediastinal recess  [CHECK]",
+"now": "mid-zone lung and overlying ribs laterally, ~36px from the mediastinal border",
+"should": "the pleural reflection alongside the sternum/mediastinum"
+},
+{
+"score": 2,
+"page": "pneumothorax#2",
+"label": "Costophrenic recess  [CHECK]",
+"now": "lung parenchyma above the blue crescent",
+"should": "the blue crescent at the lung base"
+},
+{
+"score": 2,
+"page": "preeclampsia#2",
+"label": "HEART",
+"now": "a dot in the mid/upper field of the patient's right lung (purple lung parenchyma)",
+"should": "the red heart drawn to the right of the lung, behind the sternum"
+},
+{
+"score": 2,
+"page": "preeclampsia#2",
+"label": "AORTA",
+"now": "a dot in the lower field of the patient's right lung",
+"should": "the arch/descending aorta, the large red vessel medial to the lungs"
+},
+{
+"score": 2,
+"page": "pud#2",
+"label": "Pylorus (pyloric sphincter)",
+"now": "the mucosal surface inside the duodenal bulb, well distal (left) of the pyloric narrowing",
+"should": "the constricted neck between the gastric antrum and the duodenal bulb, about 120 px to the right of the endpoint"
+},
+{
+"score": 2,
+"page": "pud#2",
+"label": "Gastroduodenal artery  [CHECK]",
+"now": "the wall of the descending duodenum; the prominent vertical arterial trunk that reads as the GDA is ~40 px to the right of the dot",
+"should": "that vertical trunk descending behind the first part of the duodenum"
+},
+{
+"score": 2,
+"page": "ra#2",
+"label": "Knees (Typical synovial joints panel)",
+"now": "the proximal tibia / calf soft tissue about 30 px BELOW the glowing knee joint, in plain blue leg",
+"should": "the knee joint glow itself (which the \"Hips\" leader is currently touching)"
+},
+{
+"score": 2,
+"page": "schizophrenia#2",
+"label": "Thalamus",
+"now": "a dot in the parietal cortical gyri high on the convexity, ~125 px lateral to and above the thalamus",
+"should": "the blue glowing thalamus in the diencephalon (which is where the Corpus Callosum leader currently lands)"
+},
+{
+"score": 2,
+"page": "schizophrenia#2",
+"label": "Cerebellum",
+"now": "the brainstem / upper spinal cord tube, well below the cerebellum",
+"should": "the large foliated cerebellum drawn above and to the right of the endpoint"
+},
+{
+"score": 2,
+"page": "sci#2",
+"label": "Vertebral Body (sagittal overview)",
+"now": "the tip of a spinous process (posterior element)",
+"should": "the blocky vertebral bodies anteriorly, ~55px to the left"
+},
+{
+"score": 2,
+"page": "sepsis#2",
+"label": "5 BLOODSTREAM (Catheters, Lines)",
+"now": "nothing; the red leader doglegs down-left across the shoulder and fades out inside the patient's left lung near the hilum with no endpoint marker. The one unclaimed marker on the page (a green dot beside the temple, the correct site for BRAIN) is joined only by a short green stub that dead-ends where it crosses this red line, so it reaches no callout at all",
+"should": "a marked vascular access site - the leader carries no terminator and the head marker is orphaned"
+},
+{
+"score": 2,
+"page": "sickle-cell#2",
+"label": "Adhesion molecules  [CHECK]",
+"now": "a bright red blood cell in the lumen, about 12 px below the vessel wall where the small dark adhesion molecules are drawn (the line passes one on its way past)",
+"should": "one of those dark wall-bound molecules"
+},
+{
+"score": 2,
+"page": "stroke#1",
+"label": "Circle of Willis",
+"now": "a slender branch of the AORTIC ARCH at the base of the figure, roughly 300 px below the skull",
+"should": "the arterial ring at the base of the brain - which this artwork does not draw at all"
+},
+{
+"score": 2,
+"page": "stroke#1",
+"label": "Basilar Artery",
+"now": "a thin branch of the right-sided cervical/subclavian tree, about 200 px below the cranium",
+"should": "the midline vessel on the front of the pons"
+},
+{
+"score": 2,
+"page": "stroke#1",
+"label": "Anterior Cerebral Artery (ACA)",
+"now": "a small red neck-artery branch about 40 px BELOW the inferior surface of the brain, i.e. outside the skull entirely",
+"should": "an anterior intracranial vessel above the circle of Willis"
+},
+{
+"score": 2,
+"page": "stroke#1",
+"label": "Penumbra (salvageable tissue) (right pathway panel)  [CHECK]",
+"now": "the plain pink LEFT hemisphere at the near edge of the brain icon; the gold penumbra it names is on the opposite side of the same icon",
+"should": "the gold rim"
+},
+{
+"score": 2,
+"page": "stroke#2",
+"label": "External Carotid Artery (ECA) [panel 2]",
+"now": "ambiguous but wrong either way - a round endpoint dot sits on the vertebral artery (x~145) and the line's final dash reaches the COMMON carotid trunk (x~160-163) about 22 px BELOW the carotid bifurcation",
+"should": "the anterior branch that leaves the bifurcation and fans into the maxillofacial region"
+},
+{
+"score": 2,
+"page": "suicide#2",
+"label": "Orbitofrontal Cortex (OFC)  [CHECK]",
+"now": "a blue node in mid medial-frontal cortex at (200,508), ~35 px above the orbital (inferior) frontal surface",
+"should": "the inferior/orbital margin of the blue frontal lobe, ~y 540-550"
+},
+{
+"score": 2,
+"page": "t2dm#2",
+"label": "Accessory pancreatic duct (duct of Santorini) [Gross Anatomy panel]",
+"now": "the horizontal arterial branch of the red SMA trunk at (244,338), below and outside the pancreas - no duct at the endpoint",
+"should": "the small duct in the upper pancreatic head, superior to the duct of Wirsung"
+},
+{
+"score": 2,
+"page": "t2dm#2",
+"label": "Common bile duct [Gross Anatomy panel]  [CHECK]",
+"now": "an arrowhead on the medial wall of the descending duodenum at (117,277)",
+"should": "the pale branching duct structure ~10-12 px to the right at (128,283), where the duct enters the pancreatic head. Note: the adjacent \"Head\" leader DOES continue past the duodenum to the gland, so the short stop here is not a drawing convention"
+},
+{
+"score": 2,
+"page": "t2dm#2",
+"label": "Splenic artery [Blood Supply & Portal Circulation panel]  [CHECK]",
+"now": "a branch descending down-LEFT from the celiac trunk at (352,614), the same descending trunk the \"Common hepatic artery\" leader reaches ~23 px lower",
+"should": "the vessel that leaves the celiac to the upper right and runs along the superior border of the pancreas to the tail"
+},
+{
+"score": 2,
+"page": "tb#2",
+"label": "Alveolar macrophage (magnifier inset over the main lung figure)",
+"now": "a pink alveolar sphere about 15 px to the right of the purple macrophage - i.e. on the structure the inset's other label, \"Alveolus (air sac)\", names",
+"should": "the purple spiculated macrophage"
+},
+{
+"score": 2,
+"page": "thrombocytopenia#2",
+"label": "Proplatelet extensions into sinusoid  [CHECK]",
+"now": "plain red marrow about 6 px outside the right wall of the blue sinusoid, with no purple process at the tip; the nearest proplatelet is ~25 px to the left",
+"should": "one of the purple cytoplasmic strands entering the vessel"
+},
+{
+"score": 2,
+"page": "thrombocytopenia#2",
+"label": "Open canalicular system  [CHECK]",
+"now": "dark background about 5 px beyond the tip of the upper-right pseudopod bulb, outside the cell",
+"should": "the internal channel network drawn inside the platelet body"
+},
+{
+"score": 2,
+"page": "thyroidstorm#2",
+"label": "Cricoid cartilage",
+"now": "the grey THYROID cartilage lamina, at almost the same height as the \"Thyroid cartilage (Adam's apple)\" leader; the cricoid ring is the separate narrower band about 45 px lower",
+"should": "that lower ring"
+},
+{
+"score": 2,
+"page": "tia#2",
+"label": "Internal carotid artery (ICA) (Circle of Willis)",
+"now": "the rounded lateral end of the left M1 segment - the mirror image of exactly what the \"MCA\" label points at on the other side",
+"should": "the thick trunk with the open cut lumen below the bifurcation, ~40px to the right"
+},
+{
+"score": 2,
+"page": "tia#2",
+"label": "Anterior communicating artery (ACOM)  [CHECK]",
+"now": "the proximal ascending (A2) segment of the right ACA, ~21px above the midline connector",
+"should": "the short horizontal midline vessel joining the two A1 segments"
+},
+{
+"score": 2,
+"page": "tia#2",
+"label": "Carotid bulb (carotid pathway panel)",
+"now": "the straight common carotid ~45px below the dilated segment",
+"should": "the ovoid swelling, which the CCA label currently occupies"
+},
+{
+"score": 2,
+"page": "tia#2",
+"label": "Carotid sinus (carotid pathway panel)",
+"now": "the straight common carotid ~23px below the dilated segment",
+"should": "the dilated segment - all three labels in this stack are shifted one step down"
+},
+{
+"score": 2,
+"page": "tia#2",
+"label": "Vertebral arteries (vertebrobasilar posterior view)",
+"now": "a small vessel on the cerebellar surface mid-panel",
+"should": "the paired ascending trunks at the bottom of the panel that fuse into the basilar, ~48px lower"
+},
+{
+"score": 2,
+"page": "withdrawal#2",
+"label": "LOCUS COERULEUS",
+"now": "the orange brainstem, ~20px below the end of the green LC structure",
+"should": "the green blob in the upper pons"
+},
+{
+"score": 2,
+"page": "withdrawal#2",
+"label": "CEREBELLUM",
+"now": "the orange brainstem/upper cord, ~30px below-left of the mauve cerebellum (which carries its own marker dot that nothing points at)",
+"should": "the mauve cerebellum"
+},
+{
+"score": 2,
+"page": "withdrawal#2",
+"label": "BRAINSTEM",
+"now": "empty dark background among the peripheral nerve roots at the very bottom of the figure",
+"should": "the orange pons/medulla"
+},
+{
+"score": 0,
+"page": "addisons#2",
+"label": "Zona Fasciculata (cortisol)",
+"now": "the central white hilum dot at the dead centre of the medulla",
+"should": "the middle of the orange cortical band"
+},
+{
+"score": 0,
+"page": "addisons#2",
+"label": "Zona Reticularis (androgens)",
+"now": "inside the dark brown medulla",
+"should": "the innermost part of the orange cortical band, just outside the medulla"
+},
+{
+"score": 0,
+"page": "aki#2",
+"label": "Renal Artery (1)",
+"now": "a renal pyramid (medulla) at the upper pole",
+"should": "the red vessel entering the hilum on the right"
+},
+{
+"score": 0,
+"page": "aki#2",
+"label": "Renal Vein (2)",
+"now": "a renal pyramid, mid-kidney",
+"should": "the blue vessel at the hilum"
+},
+{
+"score": 0,
+"page": "aki#2",
+"label": "Cortex (3)",
+"now": "inside a renal pyramid, past the pale boundary line",
+"should": "the striated outer band to the left of that boundary"
+},
+{
+"score": 0,
+"page": "aki#2",
+"label": "Renal Pelvis (5)",
+"now": "lower-pole cortex",
+"should": "the pale gold funnel at the hilum"
+},
+{
+"score": 0,
+"page": "aki#2",
+"label": "Cortex (cross-section panel)  [CHECK]",
+"now": "just inside a pyramid's boundary",
+"should": "the outer cortical band"
+},
+{
+"score": 0,
+"page": "aki#2",
+"label": "Renal Columns (cross-section panel)",
+"now": "a white dot at the centre of a renal pyramid",
+"should": "the smooth cortical tissue between pyramids"
+},
+{
+"score": 0,
+"page": "aki#2",
+"label": "Major Calyx (cross-section panel)",
+"now": "the centre of a lower renal pyramid",
+"should": "the gold funnel near the hilum"
+},
+{
+"score": 0,
+"page": "aki#2",
+"label": "Minor Calyx (cross-section panel)",
+"now": "the lateral border of a pyramid / outer cortex",
+"should": "a gold cup at a pyramid apex on the hilar side"
+},
+{
+"score": 0,
+"page": "aki#2",
+"label": "Renal Pelvis (cross-section panel)  [CHECK]",
+"now": "lower-pole parenchyma; the tail is hard to separate from the artwork's own pale outlines",
+"should": "the large gold pelvis at the hilum"
+},
+{
+"score": 0,
+"page": "aki#2",
+"label": "Glomerulus (filters blood)  [CHECK]",
+"now": "the bend of the blue arteriole above the capsule",
+"should": "the red capillary tuft inside Bowman's capsule"
+},
+{
+"score": 0,
+"page": "aki#2",
+"label": "Bowman's Capsule",
+"now": "the red glomerular tuft inside the capsule",
+"should": "the thick peach capsule ring"
+},
+{
+"score": 0,
+"page": "aki#2",
+"label": "Proximal Tubule",
+"now": "the red/blue vasa recta bundle",
+"should": "the beaded gold tubule to the right"
+},
+{
+"score": 0,
+"page": "aki#2",
+"label": "Loop of Henle",
+"now": "the red/blue vasa recta bundle",
+"should": "the long gold hairpin"
+},
+{
+"score": 0,
+"page": "aki#2",
+"label": "Distal Tubule",
+"now": "the red vessel of the vasa recta bundle",
+"should": "the gold tubule returning toward the glomerulus"
+},
+{
+"score": 0,
+"page": "aki#2",
+"label": "Segmental Arteries",
+"now": "the finest peripheral cortical mesh, outside every other artery label",
+"should": "the large first-order branches near the hilum"
+},
+{
+"score": 0,
+"page": "anxiety#2",
+"label": "Insula (5)",
+"now": "the posterior-superior margin of the thalamus, below the splenium, in a midsagittal view where the insula is not visible",
+"should": "the lateral cortex in the Sylvian fissure (not depicted on this cut)"
+},
+{
+"score": 0,
+"page": "aortic-dissection#1",
+"label": "Aortic arch",
+"now": "the anterolateral surface of the heart (left ventricle, lower-left border)",
+"should": "the curved top of the aorta at the very top of the figure"
+},
+{
+"score": 0,
+"page": "aortic-dissection#1",
+"label": "Descending thoracic aorta  [CHECK]",
+"now": "the aorta at the level of the renal artery origins, i.e. the abdominal segment below the heart",
+"should": "the thoracic segment behind/above the heart"
+},
+{
+"score": 0,
+"page": "aortic-dissection#1",
+"label": "Adventitia",
+"now": "deeper inside the red lumen",
+"should": "the outermost layer of the wall"
+},
+{
+"score": 0,
+"page": "aortic-dissection#1",
+"label": "False lumen  [CHECK]",
+"now": "the same large central cavity that the \"True lumen\" dot sits in",
+"should": "the crescent between the dissection flap and the outer wall"
+},
+{
+"score": 0,
+"page": "aortic-dissection#2",
+"label": "Brachiocephalic trunk",
+"now": "the SECOND arch branch (the left common carotid)",
+"should": "the first, leftmost branch - the thick one that visibly bifurcates at its top"
+},
+{
+"score": 0,
+"page": "aortic-dissection#2",
+"label": "Aortic arch (marker 2)  [CHECK]",
+"now": "the vertical descending limb below the arch",
+"should": "the curved apex between ascending and descending"
+},
+{
+"score": 0,
+"page": "aortic-dissection#2",
+"label": "UNPAIRED ANTERIOR BRANCHES (Celiac trunk / SMA / IMA)",
+"now": "the right renal artery at the kidney hilum and the lateral branch just below it - both paired lateral branches",
+"should": "the midline anterior branches above the renals"
+},
+{
+"score": 0,
+"page": "aortic-dissection#2",
+"label": "Intima (endothelium)",
+"now": "mid-thickness of the thick mauve layer, the same radial position as the Media and Adventitia tips",
+"should": "the innermost surface bordering the lumen"
+},
+{
+"score": 0,
+"page": "aortic-dissection#2",
+"label": "Adventitia (connective tissue)",
+"now": "the same mid-mauve layer",
+"should": "the outer rim of the wall"
+},
+{
+"score": 0,
+"page": "aortic-dissection#2",
+"label": "Sinotubular junction  [CHECK]",
+"now": "the lower margin of the sinus bulges, right beside the \"Aortic annulus\" tip",
+"should": "the upper margin where the sinuses meet the tubular ascending aorta"
+},
+{
+"score": 0,
+"page": "aortic-dissection#2",
+"label": "Left subclavian artery (arch inset, 3)",
+"now": "the smooth outer edge of the descending limb of the arch, with no branch vessel present",
+"should": "a branch arising from the arch"
+},
+{
+"score": 0,
+"page": "aortic-stenosis#2",
+"label": "Pulmonary Trunk",
+"now": "the blue caval tube descending BELOW the heart at the inferior/right border (inferior vena cava stump, continuous with the SVC behind the right atrium)",
+"should": "the blue vessel arching out from behind the aortic root in the upper half of the figure"
+},
+{
+"score": 0,
+"page": "aortic-stenosis#2",
+"label": "Mitral Valve  [CHECK]",
+"now": "the AV-groove epicardial fat with the circumflex vessels, just inferolateral to the pale anterior mitral leaflet",
+"should": "the whitish leaflet between the left atrium and left ventricle"
+},
+{
+"score": 0,
+"page": "appendicitis#2",
+"label": "Ileocecal valve [RLQ panel]  [CHECK]",
+"now": "mesenteric fat / ileocolic vessels just BELOW the ileum-cecum junction",
+"should": "the junction where the smooth ileum meets the haustrated cecum"
+},
+{
+"score": 0,
+"page": "appendicitis#2",
+"label": "Appendiceal orifice (at base of cecum) [RLQ panel]  [CHECK]",
+"now": "the middle of the anterior cecal wall",
+"should": "the base of the cecum where the appendix takes off (lower right)"
+},
+{
+"score": 0,
+"page": "appendicitis#2",
+"label": "Mesappendix (contains appendiceal artery and vein) [RLQ panel]",
+"now": "two dots on the lateral wall of the appendix itself, the same tube labelled \"Vermiform appendix\"",
+"should": "the peritoneal fold between appendix and cecum (none is drawn in this render)"
+},
+{
+"score": 0,
+"page": "appendicitis#2",
+"label": "Appendicular artery [arterial panel]  [CHECK]",
+"now": "a small orange strand in the middle of the ileocolic arterial fan",
+"should": "the branch descending along the mesoappendix to the appendix, lower and to the left"
+},
+{
+"score": 0,
+"page": "appendicitis#2",
+"label": "Appendicular vein [venous panel]",
+"now": "the top of the main ascending venous trunk (the ileocolic vein heading to the SMV)",
+"should": "the small vein running to the appendix at the lower left"
+},
+{
+"score": 0,
+"page": "appendicitis#2",
+"label": "Ileocolic vein [venous panel]  [CHECK]",
+"now": "the cecal wall at the edge of the tiny marginal veins",
+"should": "the large trunk that the \"Appendicular vein\" leader is pointing at"
+},
+{
+"score": 0,
+"page": "appendicitis#2",
+"label": "Serosa [cross-section]",
+"now": "the dark red band deep inside the wall (r~82 of a 110 radius)",
+"should": "the outermost thin bright rim"
+},
+{
+"score": 0,
+"page": "appendicitis#2",
+"label": "Muscularis propria (outer longitudinal, inner circular) [cross-section]",
+"now": "the outer edge of the magenta mucosal band",
+"should": "the pale speckled outer band (r 90-108)"
+},
+{
+"score": 0,
+"page": "appendicitis#2",
+"label": "Submucosa [cross-section]",
+"now": "the magenta mucosal band",
+"should": "the dark red band between muscularis and mucosa"
+},
+{
+"score": 0,
+"page": "appendicitis#2",
+"label": "Mucosa (with lymphoid follicles) [cross-section]",
+"now": "inside the orange lumen",
+"should": "the magenta scalloped band"
+},
+{
+"score": 0,
+"page": "appendicitis#2",
+"label": "Lumen [cross-section]",
+"now": "the magenta mucosal band",
+"should": "the orange centre"
+},
+{
+"score": 0,
+"page": "appendicitis#2",
+"label": "Psoas major [relations panel]",
+"now": "the haustrated cecum (bowel)",
+"should": "the muscle behind the bowel, not rendered at that point"
+},
+{
+"score": 0,
+"page": "appendicitis#2",
+"label": "Iliacus [relations panel]",
+"now": "the haustrated cecum (bowel)",
+"should": "the muscle over the iliac fossa"
+},
+{
+"score": 0,
+"page": "appendicitis#2",
+"label": "Right ureter [relations panel]",
+"now": "the mid-portion of the appendix tube",
+"should": "a retroperitoneal tube crossing the iliac vessels"
+},
+{
+"score": 0,
+"page": "appendicitis#2",
+"label": "External iliac vessels [relations panel]",
+"now": "the distal appendix tube",
+"should": "the red and blue iliac tubes to its right"
+},
+{
+"score": 0,
+"page": "appendicitis#2",
+"label": "Cecum [relations panel]  [CHECK]",
+"now": "a dashed line that crosses the whole cecum and terminates near the appendix origin rather than in the cecum body",
+"should": "\u2014 see appendix"
+},
+{
+"score": 0,
+"page": "appendicitis#2",
+"label": "McBurney's Point [surface anatomy]  [CHECK]",
+"now": "the yellow marker sits ~1/5 of the way from ASIS to umbilicus and BELOW the ASIS-umbilicus line",
+"should": "on the line, 1/3 of the way from ASIS as the caption states"
+},
+{
+"score": 0,
+"page": "b12-anemia#2",
+"label": "3 marker (legend: \"Parietal Cells\")",
+"now": "the duodenal C-loop at the pylorus",
+"should": "the gastric body/fundus where parietal cells sit. Note there is NO \"4\" marker (legend: \"Duodenum\") anywhere in the figure, so this marker may simply be misnumbered"
+},
+{
+"score": 0,
+"page": "b12-anemia#2",
+"label": "6 marker (legend: \"Transport\" - B12 enters portal blood)  [CHECK]",
+"now": "its leader ends on the bowel wall",
+"should": "the blue portal vein drawn just to its left"
+},
+{
+"score": 0,
+"page": "bipolar#2",
+"label": "5 HYPOTHALAMUS",
+"now": "the purple GABA pathway arc in the parietal white matter, high and posterior",
+"should": "the base of the diencephalon below the thalamus, where the yellow circuit node sits"
+},
+{
+"score": 0,
+"page": "bipolar#2",
+"label": "2 ANTERIOR CINGULATE CORTEX",
+"now": "the anterior frontal (prefrontal) cortex, on the blue-tinted band, ~8% of the page anterior to the cingulate",
+"should": "the gyrus immediately above the genu/body of the corpus callosum, where the orange arc runs"
+},
+{
+"score": 0,
+"page": "bipolar#2",
+"label": "3 AMYGDALA  [CHECK]",
+"now": "the green pathway arc at the frontal-temporal junction, ~6% of the page anterior to the green amygdala node",
+"should": "the green sphere in the anterior medial temporal lobe"
+},
+{
+"score": 0,
+"page": "bipolar#2",
+"label": "4 BASAL GANGLIA  [CHECK]",
+"now": "the pale corpus callosum at the upper margin of the purple deep-grey mass",
+"should": "inside the purple basal ganglia/thalamic mass"
+},
+{
+"score": 0,
+"page": "bowel-obstruction#2",
+"label": "Villi [small bowel cross-section]",
+"now": "the outer part of the annular cut face (serosa/muscularis zone)",
+"should": "the pale scalloped mucosal projections lining the lumen"
+},
+{
+"score": 0,
+"page": "bowel-obstruction#2",
+"label": "Submucosa [small bowel cross-section]  [CHECK]",
+"now": "the tip of a mucosal fold",
+"should": "the layer immediately outside the mucosa"
+},
+{
+"score": 0,
+"page": "bowel-obstruction#2",
+"label": "Muscularis (Propria) [small bowel cross-section]  [CHECK]",
+"now": "a mucosal fold at the luminal edge",
+"should": "the thick muscle band in the outer wall"
+},
+{
+"score": 0,
+"page": "bowel-obstruction#2",
+"label": "Haustra [large bowel cross-section]  [CHECK]",
+"now": "the annular cut face of the wall",
+"should": "the puffy haustral pouches on the tube's outer surface, visible on the left of the same figure"
+},
+{
+"score": 0,
+"page": "bowel-obstruction#2",
+"label": "Muscularis (Propria) [large bowel cross-section]  [CHECK]",
+"now": "the inner mucosal lining of the lumen",
+"should": "the muscle band within the wall"
+},
+{
+"score": 0,
+"page": "bph#2",
+"label": "External urethral sphincter (SAGITTAL VIEW)  [CHECK]",
+"now": "perineal muscle ~25px posterior to the yellow membranous urethra, ~page(738,309)",
+"should": "the muscle ring immediately around that yellow urethral segment"
+},
+{
+"score": 0,
+"page": "bph#2",
+"label": "Periprostatic venous plexus (SAGITTAL VIEW)  [CHECK]",
+"now": "a dark dot at the medial margin of the prostate's posterior lobe, ~page(739,236), inside the gland",
+"should": "the veins around/anterior to the prostate, not within it"
+},
+{
+"score": 0,
+"page": "bph#2",
+"label": "Bladder neck (URETHRA THROUGH PROSTATE)  [CHECK]",
+"now": "open bladder lumen just inside the right lateral wall, ~page(830,830)",
+"should": "the funnel at the bladder base, ~page(803,855)"
+},
+{
+"score": 0,
+"page": "bph#2",
+"label": "PROSTATE RELATIONS dash-dot connectors (Posterior/Rectum and Inferior/External urethral sphincter)  [CHECK]",
+"now": "inside the left and right prostate lobes respectively (~page(271,954) and ~page(346,958))",
+"should": "unclear - all six connectors in this panel are dash-dot, arrowless and stop loosely on the central figure, so they read as decorative links from the inset circles rather than pointers; flagged because two of them terminate squarely on prostate tissue while naming other organs"
+},
+{
+"score": 0,
+"page": "bronchiolitis#2",
+"label": "Pharynx (main infant figure)",
+"now": "inside the oral cavity, just behind the lips, ~page(389,450)",
+"should": "the vertical pharyngeal column at the back of the airway, ~page(460,455), about 70px posterior"
+},
+{
+"score": 0,
+"page": "bronchiolitis#2",
+"label": "Oral cavity (main infant figure)",
+"now": "the floor of the nasal cavity / hard palate, ~page(382,427), above the mouth",
+"should": "the white-outlined oral cavity below the palate, ~page(385,450)"
+},
+{
+"score": 0,
+"page": "bronchiolitis#2",
+"label": "Right main bronchus (main infant figure)  [CHECK]",
+"now": "a small upper-lobe segmental branch, ~page(416,606)",
+"should": "the short bronchus between the carina and the hilum, ~page(444,634)"
+},
+{
+"score": 0,
+"page": "bronchiolitis#2",
+"label": "Smooth muscle (CROSS-SECTION: NORMAL BRONCHIOLE)",
+"now": "the gold mucus band immediately at the lumen (radius ~49 from the lumen centre; the mucus, epithelium and muscle labels come out in reverse radial order)",
+"should": "the pale outer band of the wall, radius ~66"
+},
+{
+"score": 0,
+"page": "bronchiolitis#2",
+"label": "Mucus layer (CROSS-SECTION: NORMAL BRONCHIOLE)  [CHECK]",
+"now": "the epithelial band with the purple nuclei, just outside the gold mucus",
+"should": "the gold band lining the lumen, ~6px further in"
+},
+{
+"score": 0,
+"page": "bronchiolitis#7",
+"label": "Minimal mucus (AIRWAY CROSS-SECTION, normal side)",
+"now": "the outer adventitial layers on the OUTSIDE of the airway wall, ~page(634,471)",
+"should": "the inner lining at the lumen surface, where the mucus layer sits (the \"Thin airway wall\" leader already covers the wall)"
+},
+{
+"score": 0,
+"page": "bronchiolitis#7",
+"label": "Narrowed lumen (AIRWAY CROSS-SECTION, bronchiolitis side)  [CHECK]",
+"now": "the lower-left lobe of the yellow mucus plug, ~page(844,443)",
+"should": "the dark residual airspace between the plug and the swollen wall, which is up and to the right"
+},
+{
+"score": 0,
+"page": "cdiff#2",
+"label": "Superior mesenteric a. (Arterial supply panel)",
+"now": "the cecum / lower ascending colon BOWEL WALL",
+"should": "the large red midline arterial trunk in the mesentery"
+},
+{
+"score": 0,
+"page": "cdiff#2",
+"label": "Superior mesenteric v. (Venous drainage panel)",
+"now": "the ascending colon bowel wall near the hepatic flexure",
+"should": "the large blue midline venous trunk"
+},
+{
+"score": 0,
+"page": "cdiff#2",
+"label": "Inferior mesenteric v. (Venous drainage panel)",
+"now": "the ASCENDING colon (patient's right), two dots one above the other",
+"should": "the vein on the patient's LEFT draining the descending/sigmoid colon"
+},
+{
+"score": 0,
+"page": "cdiff#2",
+"label": "Anal canal (Colon anatomy panel)",
+"now": "haustrated, taenia-bearing sigmoid colon along the bottom of the frame",
+"should": "the distal end of the smooth non-haustrated rectal tube at bottom-left (essentially at/below the panel edge)"
+},
+{
+"score": 0,
+"page": "cdiff#2",
+"label": "Intact epithelium (Normal colonic mucosa panel)  [CHECK]",
+"now": "the pale translucent surface film that reads as the mucus layer",
+"should": "the epithelial band immediately beneath it"
+},
+{
+"score": 0,
+"page": "cdiff#2",
+"label": "Rectum (Colon anatomy panel)  [CHECK]",
+"now": "haustrated bowel at the descending-to-sigmoid curve",
+"should": "the smooth, wide, non-haustrated tube descending at bottom-centre-left"
+},
+{
+"score": 0,
+"page": "cdiff#2",
+"label": "Middle colic a.  [CHECK]",
+"now": "the pale marginal artery at the hepatic flexure",
+"should": "the branch ascending from the SMA trunk to the mid-transverse colon"
+},
+{
+"score": 0,
+"page": "cdiff#2",
+"label": "Superior rectal a.  [CHECK]",
+"now": "the marginal artery along the mid descending colon",
+"should": "the terminal branch running down to the rectum at the bottom of the panel"
+},
+{
+"score": 0,
+"page": "cdiff#2",
+"label": "Portal vein (to liver)  [CHECK]",
+"now": "black space just short of the lower venous trunk",
+"should": "the cut vessel end leaving the TOP of the panel (the one actually heading to the liver)"
+},
+{
+"score": 0,
+"page": "cellulitis#2",
+"label": "Artery",
+"now": "the dark BLUE vessel (the vein) in the subcutaneous fat",
+"should": "the red vessel running alongside it"
+},
+{
+"score": 0,
+"page": "cellulitis#2",
+"label": "Vein",
+"now": "a yellow fat lobule with no vessel in it",
+"should": "the blue vessel, which the \"Artery\" leader is currently pointing at"
+},
+{
+"score": 0,
+"page": "cellulitis#2",
+"label": "Hair follicle",
+"now": "plain reticular dermis on the block's right side face (small vessels/mast cells only)",
+"should": "the sheathed follicle with its hair, drawn on the block's front face at left"
+},
+{
+"score": 0,
+"page": "cholecystitis#2",
+"label": "CYSTIC DUCT (main figure)",
+"now": "the gallstones inside the cut-open gallbladder fundus",
+"should": "the green tube arising from the gallbladder neck that arches right to join the hepatic duct"
+},
+{
+"score": 0,
+"page": "cholecystitis#2",
+"label": "Mucosa (Gallbladder wall layers panel)",
+"now": "the outermost blue/purple band of the layered fan",
+"should": "the red folded inner lining facing the lumen and the gallstones, ~30-60px further in"
+},
+{
+"score": 0,
+"page": "cholecystitis#2",
+"label": "Sphincter of Oddi (Duodenal entry panel)",
+"now": "the outer duodenal wall at the bottom of the C-loop",
+"should": "the muscle at the ampulla/papilla, higher and to the left"
+},
+{
+"score": 0,
+"page": "cholecystitis#2",
+"label": "Muscularis and \"Perimuscular CT\" (Gallbladder wall layers panel)  [CHECK]",
+"now": "land on: the same outer blue/purple boundary at different heights along the curve",
+"should": "two distinct bands within the fan"
+},
+{
+"score": 0,
+"page": "cholecystitis#2",
+"label": "Cystic artery (Calot's triangle panel)  [CHECK]",
+"now": "the green bile duct at the point where the red artery passes behind it",
+"should": "on the red artery itself, which the leader passes over on its way in"
+},
+{
+"score": 0,
+"page": "cirrhosis#2",
+"label": "Diaphragm (Peritoneal relationships panel)  [CHECK]",
+"now": "liver tissue inside the bare-area triangle, ~14px past the pale diaphragm line it crosses",
+"should": "the diaphragm sheet itself"
+},
+{
+"score": 0,
+"page": "ckd#2",
+"label": "Bowman's capsule (RENAL CORPUSCLE panel)",
+"now": "a red capillary loop of the glomerular tuft, ~page(856,1007)",
+"should": "the golden capsule ring, ~page(886,1015) - which is exactly where the \"Glomerulus\" leader lands, so the two are swapped"
+},
+{
+"score": 0,
+"page": "ckd#2",
+"label": "Glomerulus (RENAL CORPUSCLE panel)",
+"now": "the golden Bowman's capsule ring, ~page(886,1015)",
+"should": "the red capillary tuft, ~page(856,1007)"
+},
+{
+"score": 0,
+"page": "ckd#2",
+"label": "Afferent arteriole (RENAL CORPUSCLE panel)",
+"now": "empty Bowman's space between the tuft and the capsule, ~page(865,1026)",
+"should": "the red vessel entering at the upper LEFT of the corpuscle - both arterioles are drawn on the left, both labels are on the right"
+},
+{
+"score": 0,
+"page": "ckd#2",
+"label": "Efferent arteriole (RENAL CORPUSCLE panel)",
+"now": "the gold tubule at the tubular pole, ~page(872,1065)",
+"should": "the second red vessel at the mid-LEFT of the corpuscle"
+},
+{
+"score": 0,
+"page": "ckd#2",
+"label": "Segmental / Interlobar / Arcuate / Interlobular arteries (RENAL BLOOD SUPPLY panel)  [CHECK]",
+"now": "all four land on the single extrarenal arterial trunk and its two branches outside the kidney outline (page x 845-866), and the order is inverted - \"Segmental\" (854) and \"Interlobar\" (866) sit further OUT from the kidney than \"Renal artery\" (827)",
+"should": "interlobar between the pyramids, arcuate arching at the corticomedullary junction, interlobular in the cortex - none of which the leaders reach; the artwork may simply not draw them"
+},
+{
+"score": 0,
+"page": "compartment#2",
+"label": "2 LATERAL COMPARTMENT (anterior view panel)",
+"now": "the middle of the GREEN-shaded muscle mass, which the same page's colour key defines as the anterior compartment",
+"should": "the gold/lateral peroneal group over the fibula"
+},
+{
+"score": 0,
+"page": "compartment#2",
+"label": "Interosseous membrane (cross-section panel)",
+"now": "a small subcutaneous red vessel at the posterior periphery of the section, between the purple superficial-posterior and blue deep-posterior compartments",
+"should": "the fibrous sheet spanning tibia to fibula, anterolateral in this section"
+},
+{
+"score": 0,
+"page": "compartment#2",
+"label": "Flexor retinaculum (forms roof of deep posterior compartment)",
+"now": "the dorsum of the foot, beneath the inferior EXTENSOR retinaculum",
+"should": "medial ankle, behind the medial malleolus (not visible in an anterior view)"
+},
+{
+"score": 0,
+"page": "compartment#2",
+"label": "4 DEEP POSTERIOR COMPARTMENT (anterior view panel)  [CHECK]",
+"now": "the superior extensor retinaculum band on the anterior distal leg",
+"should": "the deep posteromedial leg; not visible from anterior at all"
+},
+{
+"score": 0,
+"page": "compartment#2",
+"label": "Superficial peroneal nerve (innervation panel)  [CHECK]",
+"now": "the pale tibial/tendon edge beside the same blue venous column, mid-leg",
+"should": "the lateral compartment, lateral to the anterior compartment"
+},
+{
+"score": 0,
+"page": "compartment#2",
+"label": "Tibial nerve (innervation panel)  [CHECK]",
+"now": "the purple nerve fan at the anterior ankle that spreads across the DORSUM of the foot",
+"should": "posterior to the medial malleolus; artwork appears to colour the dorsal cutaneous fan purple to match the label"
+},
+{
+"score": 0,
+"page": "covid#2",
+"label": "4 Larynx (legend leader line, main figure)",
+"now": "the TRACHEA, immediately below the \"5 Trachea\" badge, after running horizontally across the whole neck",
+"should": "the laryngeal cartilages just below the epiglottis"
+},
+{
+"score": 0,
+"page": "covid#2",
+"label": "Basal Cell (stem cells) (respiratory epithelium panel)",
+"now": "the mid-height stalk of the purple GOBLET cell, which is separately labelled on the same panel",
+"should": "the row of squat cuboidal cells sitting on the basement membrane at the bottom"
+},
+{
+"score": 0,
+"page": "croup#2",
+"label": "Vocal cords (main sagittal figure)  [CHECK]",
+"now": "a point inside the yellow dashed \"Subglottic space\" callout box",
+"should": "just ABOVE the subglottis, at the glottic level"
+},
+{
+"score": 0,
+"page": "croup#2",
+"label": "Epiglottis (main sagittal figure)  [CHECK]",
+"now": "soft tissue in the laryngeal vestibule roughly 15px posterior to the pale leaf-shaped epiglottis; the line crosses the epiglottis and overshoots it",
+"should": "on the epiglottis itself"
+},
+{
+"score": 0,
+"page": "croup#2",
+"label": "Oral cavity (main sagittal figure)  [CHECK]",
+"now": "the lips at the mouth opening, then resumes as short stubs with dots on the body of the tongue",
+"should": "the airspace of the oral cavity above the tongue"
+},
+{
+"score": 0,
+"page": "dementia#2",
+"label": "Corpus callosum (fornix beneath) (sagittal)",
+"now": "the PURPLE outer arc, which is the cingulate gyrus (it lies between the cortex and the salmon band)",
+"should": "the salmon/pink arc inside it, the one with the genu and rostrum profile"
+},
+{
+"score": 0,
+"page": "dementia#2",
+"label": "Cingulate gyrus (sagittal)",
+"now": "the blue-filled marker on the THALAMUS",
+"should": "the purple arc above the corpus callosum"
+},
+{
+"score": 0,
+"page": "dementia#2",
+"label": "Thalamus (sagittal)",
+"now": "the salmon CORPUS CALLOSUM band, posterior third near the splenium",
+"should": "the blue oval in the centre of the figure"
+},
+{
+"score": 0,
+"page": "dementia#2",
+"label": "Fornix (sagittal)  [CHECK]",
+"now": "an arrowhead at the right edge of the GREEN hippocampal head",
+"should": "the thin arch beneath the corpus callosum; no separate fornix appears to be drawn"
+},
+{
+"score": 0,
+"page": "dementia#2",
+"label": "Hippocampus (sagittal)",
+"now": "the pink arbor-vitae CEREBELLUM, in the notch enclosed by the green C",
+"should": "the green C-shaped structure itself"
+},
+{
+"score": 0,
+"page": "dementia#2",
+"label": "Entorhinal cortex (sagittal)  [CHECK]",
+"now": "the posterior/inferior limb of the GREEN hippocampus",
+"should": "medial temporal cortex; the artwork's Key Structures panel colours entorhinal gold, not green"
+},
+{
+"score": 0,
+"page": "dementia#2",
+"label": "Amygdala (sagittal)",
+"now": "the middle of the large tan oval that is the pons/upper brainstem",
+"should": "the anterior medial temporal region"
+},
+{
+"score": 0,
+"page": "dementia#2",
+"label": "Brainstem (sagittal)",
+"now": "the PURPLE medial-temporal blob sitting behind the brainstem",
+"should": "the yellow/tan column running down from the midbrain"
+},
+{
+"score": 0,
+"page": "dementia#2",
+"label": "Cerebellum (sagittal)",
+"now": "a blue-filled marker on the yellow BRAINSTEM (medulla)",
+"should": "the pink arbor-vitae mass posterior to the brainstem"
+},
+{
+"score": 0,
+"page": "dementia#2",
+"label": "Lateral ventricles (coronal panel)",
+"now": "the purple HIPPOCAMPUS in the left temporal lobe",
+"should": "the dark ventricular cavities in the centre of the section"
+},
+{
+"score": 0,
+"page": "dementia#2",
+"label": "Hippocampus (bilateral) (coronal panel)",
+"now": "a small teal dot on the MIDLINE at the third-ventricle level",
+"should": "the purple bilateral structures in the temporal lobes"
+},
+{
+"score": 0,
+"page": "dementia#2",
+"label": "Entorhinal cortex (bilateral) (coronal panel)",
+"now": "the purple HIPPOCAMPUS on the right side",
+"should": "the gold/ochre band medial and inferior to it, which the artwork does draw"
+},
+{
+"score": 0,
+"page": "dementia#2",
+"label": "Nucleus basalis of Meynert (Cholinergic Pathway thumbnail)",
+"now": "the midbrain/upper brainstem",
+"should": "the bright orange basal-forebrain node below the genu, where all the cholinergic fibres in that thumbnail converge"
+},
+{
+"score": 0,
+"page": "depression#2",
+"label": "Dorsolateral prefrontal cortex (DLPFC) (main brain figure)",
+"now": "the GREEN cingulate band, ~page(472,326) - the colour the legend assigns to \"Cingulate cortex (emotion)\"",
+"should": "the blue frontal-lobe convexity above and in front of it"
+},
+{
+"score": 0,
+"page": "depression#2",
+"label": "Ventromedial prefrontal cortex (vmPFC) (main brain figure)",
+"now": "the posterior/olive end of the same green cingulate band, ~page(576,324), high and far back",
+"should": "the ventral-anterior frontal cortex, low and forward, ~page(465,375)"
+},
+{
+"score": 0,
+"page": "depression#2",
+"label": "Anterior cingulate cortex (ACC) (main brain figure)  [CHECK]",
+"now": "blue frontal cortex ~9px below the anterior tip of the green cingulate band, ~page(460,371)",
+"should": "the green band itself (which is where the DLPFC leader currently lands)"
+},
+{
+"score": 0,
+"page": "depression#2",
+"label": "Nucleus accumbens (Dopamine) (main brain figure)  [CHECK]",
+"now": "the dark gap just below the blue-violet sphere, ~page(493,424)",
+"should": "the sphere itself, ~8px higher"
+},
+{
+"score": 0,
+"page": "depression#2",
+"label": "Hippocampus (CORONAL VIEW panel)  [CHECK]",
+"now": "cortex/white matter ~20px up and lateral of the bright hippocampal blob, ~page(905,415)",
+"should": "the bright purple hippocampus at ~page(884,434)"
+},
+{
+"score": 0,
+"page": "diverticulitis#2",
+"label": "1 - Superior mesenteric a. (VASCULAR SUPPLY panel)",
+"now": "the pale longitudinal band along the DESCENDING colon, ~page(944,551)",
+"should": "the central red arterial trunk supplying the right colon; the descending colon is inferior-mesenteric territory, so the leader is on the wrong side as well as the wrong structure"
+},
+{
+"score": 0,
+"page": "diverticulitis#2",
+"label": "Mucosa / Submucosa / Muscularis propria / Serosa (Adventitia) (DIVERTICULA FORMATION panel)  [CHECK]",
+"now": "all four terminate on the same outer (serosal) face of the wall block at successive heights (page x 308, 299, 290, 293 for y 1015, 1044, 1092, 1155)",
+"should": "the four layers are only distinguishable on the CUT face at the left of the block; as drawn, \"Mucosa\" ends nearest the OUTER surface, which is the reverse of its depth"
+},
+{
+"score": 0,
+"page": "dvt#2",
+"label": "Popliteal vein  [CHECK]",
+"now": "the medial cortex of the proximal tibial shaft, ~72px (more than one condyle-width) BELOW the knee joint line",
+"should": "the vein behind the knee at the joint line (popliteal fossa), as its own caption says"
+},
+{
+"score": 0,
+"page": "dvt#2",
+"label": "Lumen (cross-section inset)  [CHECK]",
+"now": "within the concentric wall bands (pink/blue) of the vein cross-section, outside the bright endothelial contour",
+"should": "the dark central channel. LOW CONFIDENCE - the inset vessel is only ~103px across with 3-5px layers, at the limit of the source resolution"
+},
+{
+"score": 0,
+"page": "fracture#2",
+"label": "Ribs (THE SKELETAL FRAMEWORK panel)",
+"now": "the ELBOW marker (distal humerus/olecranon) on BOTH the anterior and the posterior skeleton",
+"should": "the rib cage, which is drawn plainly to the left/right of the arrow and even carries its own unlabelled marker on the posterior view"
+},
+{
+"score": 0,
+"page": "fracture#2",
+"label": "Spine (THE SKELETAL FRAMEWORK panel)",
+"now": "the FOREARM (proximal radius/ulna) marker on the anterior skeleton, and on empty space over the posterior forearm on the right",
+"should": "the vertebral column, which has its own unlabelled marker beside the lumbar spine"
+},
+{
+"score": 0,
+"page": "fracture#2",
+"label": "Growth plate (physis) (PEDIATRIC BONE panel)",
+"now": "the grey outer covering at the metaphyseal shoulder, i.e. the same periosteal band that the \"Thick periosteum\" arrow below it points at",
+"should": "the pale blue physeal band arcing across the bone, ~30px inferomedial"
+},
+{
+"score": 0,
+"page": "fracture#2",
+"label": "Scapula (THE SKELETAL FRAMEWORK panel)  [CHECK]",
+"now": "the glenohumeral/humeral-head marker on both views; on the posterior view the scapular body is drawn immediately lateral to it and carries its own unlabelled marker",
+"should": "the scapular blade. Arguable, since the glenoid is part of the scapula"
+},
+{
+"score": 0,
+"page": "fracture#2",
+"label": "Nutrient artery (BONE ANATOMY long-bone panel)  [CHECK]",
+"now": "the dark red medullary marrow, ~12px right of the red arterial tree and the grey vessel it presumably names",
+"should": "the red branching vessel in the marrow cavity"
+},
+{
+"score": 0,
+"page": "fracture#2",
+"label": "Medullary cavity (marrow) (LONG BONE CROSS-SECTION panel)  [CHECK]",
+"now": "the red cancellous ring, short of the dark swirled central marrow; no leader in that panel reaches the marrow cavity",
+"should": "the dark central region"
+},
+{
+"score": 0,
+"page": "gdm#2",
+"label": "1 PLACENTA",
+"now": "the back of the FETAL HEAD (the arrowhead sits on the baby's skull)",
+"should": "the vascular placental disc, drawn on the opposite (upper right) wall of the uterus where the cord inserts"
+},
+{
+"score": 0,
+"page": "gdm#2",
+"label": "2 UMBILICAL CORD",
+"now": "the FETAL BACK / buttock",
+"should": "the purple coiled cord, drawn to the upper right of the fetus"
+},
+{
+"score": 0,
+"page": "gdm#2",
+"label": "Umbilical vein (oxygen & nutrients to fetus) (PLACENTA ENLARGED panel)  [CHECK]",
+"now": "the junction where a BLUE branch leaves a red stem vessel in the villous tree",
+"should": "a red (oxygenated) vessel, if the panel's red/blue coding is the usual one; may be an artwork colour-convention error rather than a misplaced line"
+},
+{
+"score": 0,
+"page": "gdm#2",
+"label": "Umbilical arteries (waste from fetus) (PLACENTA ENLARGED panel)  [CHECK]",
+"now": "the single large purple/mauve trunk at the cord insertion (one of its two arrows), which by size is the umbilical VEIN; the two arteries are the smaller twisted red/blue vessels",
+"should": "\u2014 see appendix"
+},
+{
+"score": 0,
+"page": "gerd#2",
+"label": "Widened hiatal opening (HIATAL HERNIA panel)",
+"now": "the mid gastric body of the herniated stomach, ~55px (over a third of the panel width) from the hiatus",
+"should": "the gap between the crura at the neck of the hernia"
+},
+{
+"score": 0,
+"page": "gerd#2",
+"label": "4 Lower esophageal sphincter (LES) (anti-reflux panel)  [CHECK]",
+"now": "the identical point that markers 5 (GEJ) and 6 (Angle of His) point at - all three leaders radiate from one spot at the cardia notch",
+"should": "the thickened distal oesophageal segment above the junction"
+},
+{
+"score": 0,
+"page": "gerd#2",
+"label": "Lower esophageal sphincter (LES) (OVERVIEW panel)  [CHECK]",
+"now": "the corner of the rectangular region-callout box that encloses the whole stomach and distal oesophagus",
+"should": "the sphincter itself. Callout-box style, so arguably intended"
+},
+{
+"score": 0,
+"page": "gerd#2",
+"label": "GE Junction (HIATAL HERNIA, NORMAL side)  [CHECK]",
+"now": "the gastric cardia wall ~16px down-right of where the oesophageal lumen actually enters the stomach",
+"should": "the squamocolumnar junction"
+},
+{
+"score": 0,
+"page": "gerd#2",
+"label": "7 Stomach (cardia) (anti-reflux panel)  [CHECK]",
+"now": "nothing - the legend lists item 7 but there is NO number-7 marker anywhere on the artwork (markers 1-6 only)",
+"should": "\u2014 see appendix"
+},
+{
+"score": 0,
+"page": "gi-bleed#2",
+"label": "Fundus  [CHECK]",
+"now": "greater-curvature wall at/just below the level of the cardia, i.e. upper body",
+"should": "the dome above the cardia (which is where the \"Cardia\" dot sits)"
+},
+{
+"score": 0,
+"page": "gi-bleed#2",
+"label": "Antrum  [CHECK]",
+"now": "mucosal surface of the greater curvature at the lower body, far from the pylorus",
+"should": "the distal stomach adjacent to the pylorus, which in this drawing is upper/left where the duodenal bulb begins"
+},
+{
+"score": 0,
+"page": "gi-bleed#2",
+"label": "Serosa / Adventitia  [CHECK]",
+"now": "the outer longitudinal muscle band of the muscularis externa on the block's right face, ~1 layer above the outermost pale layer",
+"should": "the outermost pale layer below the subserosal (blue) vessel"
+},
+{
+"score": 0,
+"page": "gout#2",
+"label": "Synovial fluid",
+"now": "extracapsular soft tissue / subcutaneous layer at the lateral margin of the cutaway (~x772,y434)",
+"should": "the gold fluid band inside the joint space at the centre of the cutaway"
+},
+{
+"score": 0,
+"page": "gout#2",
+"label": "Plantar plate",
+"now": "the lateral sesamoid bone (~x694,y592), which the page labels separately",
+"should": "the fibrocartilaginous plate deep to the sesamoids"
+},
+{
+"score": 0,
+"page": "gout#2",
+"label": "Sesamoid bones (within tendons)",
+"now": "trabecular bone inside the proximal phalanx shaft (~x575,y687)",
+"should": "the two tan ovals at ~x640-707,y553-620"
+},
+{
+"score": 0,
+"page": "gout#2",
+"label": "Synovial membrane (produces synovial fluid)  [CHECK]",
+"now": "extracapsular tissue at the muscle/capsule junction (~x758,y382)",
+"should": "the thin lining on the inner aspect of the capsule"
+},
+{
+"score": 0,
+"page": "gout#2",
+"label": "Sesamoid bones (medial & lateral) (left panel, item 4)  [CHECK]",
+"now": "the first metatarsal diaphysis (~x297,y558); the 4 badge sits distal-lateral to the sesamoid pair",
+"should": "the two small ovals overlying the metatarsal head"
+},
+{
+"score": 0,
+"page": "gout#2",
+"label": "Phalanges (left panel, item 6)  [CHECK]",
+"now": "the 5th metatarsal shaft just proximal to the 5th MTP joint (~x437,y613)",
+"should": "the phalanges of the 5th toe, one bone distal"
+},
+{
+"score": 0,
+"page": "hepatitis#2",
+"label": "Cystic duct (main anterior view)",
+"now": "inside the body of the gallbladder (~x266,y523), the same sac \"Gallbladder\" already points at",
+"should": "the green tube leaving the gallbladder neck"
+},
+{
+"score": 0,
+"page": "hepatitis#2",
+"label": "Left portal vein (main)",
+"now": "a branch of the bright-red arterial tree, the same tree \"Left hepatic artery\" (above) and \"Hepatic artery proper\" (below) point at (~x467,y506)",
+"should": "a portal (blue/purple) vessel"
+},
+{
+"score": 0,
+"page": "hepatitis#2",
+"label": "Hepatocytes (plates) (Microanatomy panel)",
+"now": "the portal-triad cluster at the hexagon corner, on its blue portal venule (~x424,y889)",
+"should": "one of the salmon hepatocyte plate blocks"
+},
+{
+"score": 0,
+"page": "hepatitis#2",
+"label": "Sinusoids (Microanatomy panel)",
+"now": "the interior of a hepatocyte plate block (~x412,y941)",
+"should": "one of the radial blue/pink channels between plates"
+},
+{
+"score": 0,
+"page": "hepatitis#2",
+"label": "Common bile duct (main)  [CHECK]",
+"now": "the green duct at the gallbladder-neck / cystic-duct level, above the confluence (~x349,y524)",
+"should": "the green trunk below the cystic-duct junction"
+},
+{
+"score": 0,
+"page": "hepatitis#2",
+"label": "Right hepatic artery (main)  [CHECK]",
+"now": "the green biliary duct (~x355,y537); a dark maroon arterial twig lies ~5px up-right",
+"should": "the arterial branch, clear of the duct"
+},
+{
+"score": 0,
+"page": "hepatitis#2",
+"label": "Hepatic portal triad (artery, vein, bile duct) (main)  [CHECK]",
+"now": "the bright-red hepatic artery alone (~x390,y537)",
+"should": "the bundle of all three, or the triad cross-section widget"
+},
+{
+"score": 0,
+"page": "hepatitis#2",
+"label": "Hepatic veins / Drain blood to IVC (main)  [CHECK]",
+"now": "the artery/IVC boundary at hilum level (~x397,y543)",
+"should": "the hepatic veins entering the IVC above the liver"
+},
+{
+"score": 0,
+"page": "hiv#2",
+"label": "Integrase (HIV-1 VIRION panel)",
+"now": "a beige/grey surface-protein knob on the outer green envelope (~x219,y613)",
+"should": "the cyan enzyme blob inside the capsid (~x299,y559), matching the blue integrase icon in the KEY VIRAL PROTEINS legend"
+},
+{
+"score": 0,
+"page": "hiv#2",
+"label": "Reverse Transcriptase (VIRION)",
+"now": "an orange p24 capsid bead of the inner shell (~x329,y547)",
+"should": "one of the small green enzyme shapes inside the core (~x300,y514)"
+},
+{
+"score": 0,
+"page": "hiv#2",
+"label": "Tonsils (PRIMARY TARGETS panel)",
+"now": "the thyroid / upper trachea at the thoracic inlet (~x691,y253)",
+"should": "the oropharynx, ~50px higher, behind the mouth"
+},
+{
+"score": 0,
+"page": "hiv#2",
+"label": "Matrix (p17) (VIRION)  [CHECK]",
+"now": "the green envelope surface (~x195,y555), the same layer \"Lipid Membrane\" points at",
+"should": "the violet bead ring just inside the envelope"
+},
+{
+"score": 0,
+"page": "hiv#2",
+"label": "Capsid (p24) (VIRION)  [CHECK]",
+"now": "the violet inner-membrane band (~x337,y422), just outside the orange p24 bead shell",
+"should": "the orange bead shell or the conical core"
+},
+{
+"score": 0,
+"page": "hiv#2",
+"label": "Co-receptors (CELL TARGET: CD4+ T-LYMPHOCYTE)  [CHECK]",
+"now": "cytoplasm just inside the membrane (~x525,y1167), overshooting the teal membrane knobs its shaft passes between",
+"should": "one of the teal co-receptor knobs on the membrane"
+},
+{
+"score": 0,
+"page": "htn#2",
+"label": "Renal Arteries",
+"now": "the parenchyma of the patient's left kidney, below the hilum (~x640,y748)",
+"should": "the red renal artery arching from the aorta to the hilum (~x594-625,y705-720)"
+},
+{
+"score": 0,
+"page": "hyperkalemia#2",
+"label": "Collecting Duct (THE NEPHRON panel)",
+"now": "the lower bend of the distal convoluted tubule coil (~x905,y634)",
+"should": "the thick branched vertical duct to its right (~x950-975)"
+},
+{
+"score": 0,
+"page": "hyperkalemia#2",
+"label": "Ascending Limb / \"Descending Limb\" (THE NEPHRON panel)  [CHECK]",
+"now": "\"Ascending Limb\" leads to the shared Loop of Henle bracket and \"Descending Limb\" has no leader at all, so neither limb is individually identified",
+"should": "separate leaders to the two limbs of the loop"
+},
+{
+"score": 0,
+"page": "hyperparathyroid#2",
+"label": "Superior parathyroid glands (2)",
+"now": "both of the glands on the LEFT lobe - the upper one (correct) and the LOWER one (~x203,y518), which is an inferior gland",
+"should": "the two upper glands, one on each lobe"
+},
+{
+"score": 0,
+"page": "hyperparathyroid#2",
+"label": "Inferior parathyroid glands (2)",
+"now": "both of its leaders converge on the same single lower-right gland (~x330,y518); the upper-right gland gets no leader at all",
+"should": "the two lower glands, one on each lobe"
+},
+{
+"score": 0,
+"page": "hyperparathyroid#2",
+"label": "Adipose Tissue (PARATHYROID HISTOLOGY)  [CHECK]",
+"now": "parathyroid cells ~7px above the nearest fat vacuole (~x611,y682)",
+"should": "inside one of the pale yellow fat globules"
+},
+{
+"score": 0,
+"page": "hyponatremia#2",
+"label": "Posterior Pituitary (Stores & releases ADH)  [CHECK]",
+"now": "suprasellar/hypothalamic tissue just left of the infundibulum, stopping short of the gland",
+"should": "the pinkish-brown teardrop posterior pituitary at the bottom of the stalk"
+},
+{
+"score": 0,
+"page": "hyponatremia#2",
+"label": "Glomerulus",
+"now": "the underside of the lower red arteriole entering from the left, outside Bowman's capsule",
+"should": "the coiled red capillary tuft inside the capsule (both arterioles are separately labelled on this panel)"
+},
+{
+"score": 0,
+"page": "hypothyroid#2",
+"label": "Parafollicular (C) cell",
+"now": "a dot inside the pink colloid at the centre of the follicle",
+"should": "the green cell sitting outside the follicular epithelium at lower right"
+},
+{
+"score": 0,
+"page": "hypothyroid#2",
+"label": "Capillary",
+"now": "the green parafollicular C cell (the structure the label above it names)",
+"should": "the red capillary vessels below and left of the follicle"
+},
+{
+"score": 0,
+"page": "hypothyroid#2",
+"label": "Cricoid cartilage",
+"now": "the upper pole of the RIGHT thyroid lobe, at thyroid-cartilage level",
+"should": "the grey ring immediately below the thyroid cartilage"
+},
+{
+"score": 0,
+"page": "hypothyroid#2",
+"label": "Inferior thyroid artery and vein  [CHECK]",
+"now": "plain right-lobe parenchyma; nearest artery/vein ~30px further lateral",
+"should": "the inferior thyroid vessels at the lower pole"
+},
+{
+"score": 0,
+"page": "icp#2",
+"label": "BRAIN ~80% (Intracranial Compartments panel)",
+"now": "the blue subarachnoid/CSF band at the convexity - the leader dot sits squarely inside the blue layer",
+"should": "the pink brain parenchyma"
+},
+{
+"score": 0,
+"page": "icp#2",
+"label": "CSF ~10% (Intracranial Compartments panel)",
+"now": "pink brain parenchyma - the arrow crosses the blue band and stops inside the gyri",
+"should": "the blue CSF band. BRAIN and CSF appear to be swapped with each other"
+},
+{
+"score": 0,
+"page": "icp#2",
+"label": "Cavernous sinus (Dural Venous Sinuses panel)",
+"now": "the venous channel at the inferolateral margin of the cerebellum (sigmoid sinus / jugular bulb), one step below the Sigmoid sinus arrow and just above the Internal jugular vein arrow",
+"should": "the cavernous sinus at the skull base beside the sella turcica, far anterior"
+},
+{
+"score": 0,
+"page": "icp#2",
+"label": "Scalp (Mid-sagittal panel)  [CHECK]",
+"now": "inside the skull diploe (the tan cancellous band)",
+"should": "the outer soft-tissue scalp layer"
+},
+{
+"score": 0,
+"page": "icp#2",
+"label": "Skull (Mid-sagittal panel)  [CHECK]",
+"now": "the pink periosteal-dura band just deep to the inner table",
+"should": "the bone. Scalp and Skull both read as shifted one layer inward"
+},
+{
+"score": 0,
+"page": "icp#2",
+"label": "Arachnoid mater (Mid-sagittal panel)  [CHECK]",
+"now": "leader runs on into cerebral cortex; no terminus resolvable on the arachnoid line",
+"should": "the thin membrane over the subarachnoid space"
+},
+{
+"score": 0,
+"page": "icp#2",
+"label": "Subarachnoid space (CSF) (Mid-sagittal panel)  [CHECK]",
+"now": "leader passes through the CSF layer and continues deep into cortex",
+"should": "the CSF space between arachnoid and pia"
+},
+{
+"score": 0,
+"page": "icp#2",
+"label": "Pia mater (Mid-sagittal panel)  [CHECK]",
+"now": "leader continues into cortex / toward the corpus callosum",
+"should": "the membrane hugging the gyral surface"
+},
+{
+"score": 0,
+"page": "influenza#2",
+"label": "Oral cavity",
+"now": "the nostril / nasal vestibule at the tip of the nose",
+"should": "the mouth cavity below the hard palate (the Pharynx leader already reaches past it to the oropharynx)"
+},
+{
+"score": 0,
+"page": "influenza#2",
+"label": "Neuraminidase (N)",
+"now": "black space immediately above a PURPLE spike, the same spike type \"Hemagglutinin (H)\" points at; the distinct olive-green spikes are left unlabelled",
+"should": "the olive-green spike type"
+},
+{
+"score": 0,
+"page": "influenza#2",
+"label": "Goblet cell",
+"now": "the purple nucleus inside a pink ciliated columnar cell (the cell type labelled one line above)",
+"should": "one of the green mucus-filled cells"
+},
+{
+"score": 0,
+"page": "influenza#2",
+"label": "M2 Ion Channel  [CHECK]",
+"now": "the envelope margin among purple spikes, with no distinct channel structure at the endpoint",
+"should": "one of the small red/dark membrane structures"
+},
+{
+"score": 0,
+"page": "iron-anemia#2",
+"label": "JEJUNUM",
+"now": "the haustrated large bowel - both of its two leader dots sit on the ascending colon / hepatic flexure, one on the taenia",
+"should": "the smooth coiled small-bowel loops in the centre of the abdomen"
+},
+{
+"score": 0,
+"page": "iron-anemia#2",
+"label": "ILEUM",
+"now": "the medial border of the ascending colon, directly on the taenia coli, at a clearly haustrated segment",
+"should": "the distal small-bowel loops in the right lower quadrant"
+},
+{
+"score": 0,
+"page": "iron-anemia#2",
+"label": "Hemosiderin (insoluble) stores excess iron  [CHECK]",
+"now": "the bottom edge of the SAME purple ferritin particle that the Ferritin label points at; no separate hemosiderin aggregate is drawn",
+"should": "a distinct hemosiderin deposit"
+},
+{
+"score": 0,
+"page": "labor#2",
+"label": "Vagina",
+"now": "the inside of the RECTUM (the folded canal that is continuous with the anus at the bottom of the same figure)",
+"should": "the canal running from the cervix down to the perineum, anterior to the rectum"
+},
+{
+"score": 0,
+"page": "labor#2",
+"label": "Rectum",
+"now": "the lower sacrum / coccyx bone, posterior to the rectal wall",
+"should": "the folded canal ~30px anterior"
+},
+{
+"score": 0,
+"page": "labor#2",
+"label": "Bladder",
+"now": "the cream trabecular pubic bone (cortical rim + marrow, with the symphysis joint visible below it)",
+"should": "the folded dark-red hollow organ immediately posterior to the pubis"
+},
+{
+"score": 0,
+"page": "labor#2",
+"label": "Umbilical cord",
+"now": "dark-red placental tissue, ~30px from the coiled blue/red cord",
+"should": "the coiled cord"
+},
+{
+"score": 0,
+"page": "labor#2",
+"label": "Cervix",
+"now": "the anterior lower-uterine-segment wall / amniotic membrane, ~70px anterior to the cervical lips",
+"should": "the thick lips of tissue gripping the fetal head above the vagina"
+},
+{
+"score": 0,
+"page": "labor#2",
+"label": "Myometrium (muscle layer)  [CHECK]",
+"now": "the same outer convex surface that the Perimetrium arrow points at, just higher up",
+"should": "the thick middle layer of the wall at the cut edge"
+},
+{
+"score": 0,
+"page": "leukemia#2",
+"label": "Sternum",
+"now": "the humeral head / shoulder joint on the figure's left",
+"should": "the pale vertical midline bone in the front of the chest"
+},
+{
+"score": 0,
+"page": "leukemia#2",
+"label": "Adipocyte (fat cell)",
+"now": "the lumen of the large red blood vessel (red cells visible inside it). A second, orphan line segment does end on a golden fat cell but connects to no label",
+"should": "one of the golden fat spheres"
+},
+{
+"score": 0,
+"page": "leukemia#2",
+"label": "Hematopoietic stem cell (HSC)  [CHECK]",
+"now": "a small beige/cream cell",
+"should": "probably the large lavender cell 100px to its left, which matches the purple HSC colour used in the Hematopoiesis and Niche panels on the same page"
+},
+{
+"score": 0,
+"page": "lung-cancer#2",
+"label": "Left main bronchus",
+"now": "a fine peripheral bronchus high in the left upper lobe, mirror-image of the right",
+"should": "the large ringed tube running down-right from the carina"
+},
+{
+"score": 0,
+"page": "lung-cancer#2",
+"label": "Pulmonary artery (to lungs)  [CHECK]",
+"now": "a pale-pink peripheral vessel of the parenchymal network; the dark navy vessels (which match this label's blue bullet) run ~13px to its left",
+"should": "\u2014 see appendix"
+},
+{
+"score": 0,
+"page": "lung-cancer#2",
+"label": "Brachial plexus / \"Subclavian artery\"  [CHECK]",
+"now": "the two leaders converge on ONE shared orange arrowhead, so at most one of them can be pointing at its own structure; the arrowhead lands on the red band above the subclavian vein rather than on the cream nerve cords just left of it",
+"should": "\u2014 see appendix"
+},
+{
+"score": 0,
+"page": "lung-cancer#2",
+"label": "1st rib  [CHECK]",
+"now": "arrow tip lands on the pale strand / vessel bundle running vertically behind the subclavian vessels; no rib is resolvable at the endpoint (the ribs are the tan arcs above and to the right). Panel is small and 800px wide - low confidence",
+"should": "\u2014 see appendix"
+},
+{
+"score": 0,
+"page": "lymphoma#2",
+"label": "5 Mediastinal Lymph Nodes",
+"now": "nothing - there is no numbered 5 marker or leader anywhere on the body figure (the right-hand column runs 2,3,4,6,7,8,9)",
+"should": "a marker on the paratracheal/hilar nodes between the lungs"
+},
+{
+"score": 0,
+"page": "lymphoma#2",
+"label": "8 Inguinal Lymph Nodes",
+"now": "the head/neck of the cut femur (pale bone), the same bone that marker 9 labels",
+"should": "the large green inguinal node cluster ~30px to its left in the groin"
+},
+{
+"score": 0,
+"page": "lymphoma#2",
+"label": "7 Abdominal Lymph Nodes  [CHECK]",
+"now": "the wall of the descending colon (a haustrum), not on a node",
+"should": "one of the green mesenteric/para-aortic nodes drawn just medial to it"
+},
+{
+"score": 0,
+"page": "lymphoma#2",
+"label": "Capsule  [CHECK]",
+"now": "the pale yellow-green band, i.e. the same band the \"Subcapsular sinus\" leader ends in",
+"should": "the outer dark-green rim"
+},
+{
+"score": 0,
+"page": "lymphoma#2",
+"label": "Paracortex (T-cell zone)",
+"now": "the outer dark-green capsule, outside the node parenchyma altogether",
+"should": "the pink-purple interfollicular zone between the follicles and the medulla"
+},
+{
+"score": 0,
+"page": "lymphoma#2",
+"label": "Medulla",
+"now": "the pale yellow-green subcapsular band at the node's outer edge",
+"should": "the central pink medullary cords/sinuses"
+},
+{
+"score": 0,
+"page": "meningitis#2",
+"label": "Meningeal layer (dura sub-label)",
+"now": "the golden/orange arachnoid mater band",
+"should": "the deeper of the two purple/blue dural layers, above the arachnoid"
+},
+{
+"score": 0,
+"page": "meningitis#2",
+"label": "Arachnoid villus (CSF absorption into venous sinus)",
+"now": "the pial vessel / cortical surface at the top-left of the brain in the main cross-section",
+"should": "the villus protruding into the sagittal sinus (correctly shown in the inset, which the separate \"Arachnoid villus granulation\" label does point at)"
+},
+{
+"score": 0,
+"page": "meningitis#2",
+"label": "Pia mater (cross-section)  [CHECK]",
+"now": "a sulcus ~30px deep inside the gyral mass",
+"should": "the thin green line on the brain surface"
+},
+{
+"score": 0,
+"page": "meningitis#2",
+"label": "Superior sagittal venous sinus  [CHECK]",
+"now": "the purple dura at the top-left of the inset circle (the long bracket is hard to follow)",
+"should": "the blue sinus lumen in the middle of the inset"
+},
+{
+"score": 0,
+"page": "meningitis#2",
+"label": "Pia mater (sagittal overview)  [CHECK]",
+"now": "the tan arachnoid/dural band, about one layer outside the green pial line",
+"should": "the green line on the cerebellar/occipital surface"
+},
+{
+"score": 0,
+"page": "meningitis#2",
+"label": "Dura mater (coronal overview)  [CHECK]",
+"now": "the arachnoid/subarachnoid zone about one layer inside the purple band",
+"should": "the purple dura"
+},
+{
+"score": 0,
+"page": "meningitis#2",
+"label": "Pia mater (coronal overview)  [CHECK]",
+"now": "the orange arachnoid band",
+"should": "the green pial line on the cortical surface"
+},
+{
+"score": 0,
+"page": "meningitis#2",
+"label": "4 Cerebral aqueduct (of Sylvius)",
+"now": "the anterior horn of the lateral ventricle in the frontal lobe, and there is no 4 marker anywhere on the figure",
+"should": "the narrow channel between the third and fourth ventricles"
+},
+{
+"score": 0,
+"page": "meningitis#2",
+"label": "6 Median aperture (foramen of Magendie)",
+"now": "the inferior occipital cortex / inner skull base, and there is no 6 marker anywhere on the figure",
+"should": "the outlet at the inferior fourth ventricle"
+},
+{
+"score": 0,
+"page": "meningitis#2",
+"label": "3 Third ventricle  [CHECK]",
+"now": "the body of the lateral ventricle (near the 1 marker)",
+"should": "the midline slit below the foramen of Monro - note a correctly placed 3 circle does exist on the figure"
+},
+{
+"score": 0,
+"page": "meningitis#2",
+"label": "5 Fourth ventricle  [CHECK]",
+"now": "inferior frontal/temporal cortex",
+"should": "the CSF space in front of the cerebellum - a correctly placed 5 circle does exist on the figure"
+},
+{
+"score": 0,
+"page": "metabolic-syndrome#1",
+"label": "Visceral Adipose Tissue (VAT)",
+"now": "the inner edge of the SUBCUTANEOUS fat layer / outer surface of the abdominal musculature (sagittal panel, top left)",
+"should": "the yellow fat band INSIDE the peritoneum (~20px further in, deep to muscle + peritoneal line), or the omental fat around the bowel"
+},
+{
+"score": 0,
+"page": "metabolic-syndrome#1",
+"label": "Peritoneal Cavity (top-left sagittal panel)  [CHECK]",
+"now": "the subcutaneous-fat/muscle junction, within the abdominal wall",
+"should": "inside the peritoneal lining, i.e. the space containing bowel/omentum ~15-20px further in"
+},
+{
+"score": 0,
+"page": "metabolic-syndrome#1",
+"label": "(unlabelled leader stub, no text at either end)  [CHECK]",
+"now": "floating white leader with cyan tip inside the small-bowel loops at approx x=197-215, y=434 of the sagittal panel",
+"should": "nothing - it is an orphan leader with no label"
+},
+{
+"score": 0,
+"page": "metabolic-syndrome#1",
+"label": "Liver (Visceral Fat: Location & Function panel)",
+"now": "the STOMACH (greater curvature / fundus, left upper quadrant = image right)",
+"should": "the dark red smooth mass in the RIGHT upper quadrant = image LEFT"
+},
+{
+"score": 0,
+"page": "migraine#2",
+"label": "C - Middle meningeal artery  [CHECK]",
+"now": "bare cerebral cortex at the elbow of the superior sagittal sinus; the nearest red arterial branch is about 10px further left",
+"should": "on a branch of the red arterial tree"
+},
+{
+"score": 0,
+"page": "migraine#2",
+"label": "D - Superficial temporal artery",
+"now": "the tip of a red arterial branch INSIDE the skull, on the parietal cortex - part of the same red tree that label C calls the middle meningeal artery",
+"should": "an extracranial scalp vessel over the temple, outside the skull; no such vessel appears to be drawn"
+},
+{
+"score": 0,
+"page": "migraine#2",
+"label": "C2 (Cervical Contribution panel)  [CHECK]",
+"now": "posterior neck muscle roughly 9px above the yellow C2-level nerve branch (there is a faint pale streak at the tip that may be a nerve)",
+"should": "the yellow cervical nerve, the way the C3 arrow just below it does"
+},
+{
+"score": 0,
+"page": "ms#2",
+"label": "2 - Brainstem & MLF (main sagittal figure)",
+"now": "a gyrus of the OCCIPITAL/parietal cerebral cortex at the back of the hemisphere",
+"should": "the purple midline brainstem (midbrain/pons/medulla) in the centre of the figure"
+},
+{
+"score": 0,
+"page": "ms#2",
+"label": "7 - Corticospinal tracts (SPINAL CORD AXIAL inset)  [CHECK]",
+"now": "dorsal-horn grey matter about 7px medial to the blue dorsolateral white-matter block",
+"should": "inside the blue dorsolateral (lateral corticospinal) block"
+},
+{
+"score": 0,
+"page": "ms#2",
+"label": "Lateral geniculate nucleus (OPTIC PATHWAY panel)  [CHECK]",
+"now": "forked leader - the upper branch correctly touches the left LGN, but the lower branch runs down-right and ends on the optic radiation fibre bundle",
+"should": "both branches on LGN tissue (left and right LGN)"
+},
+{
+"score": 0,
+"page": "myasthenia#2",
+"label": "Acetylcholine receptors (nicotinic, AChR)  [CHECK]",
+"now": "two leaders; the lower one correctly reaches a blue receptor, but the upper one passes OVER the receptor and terminates on an orange ACh molecule",
+"should": "both on the blue receptor glyphs (unless the upper is deliberately showing ACh bound)"
+},
+{
+"score": 0,
+"page": "osa#2",
+"label": "2 Soft palate",
+"now": "the nasal cavity floor above the mid hard palate (the leader runs to the right, away from the palate's mobile part)",
+"should": "the soft palate flap immediately below-left of the 2 marker"
+},
+{
+"score": 0,
+"page": "osa#2",
+"label": "3 Uvula  [CHECK]",
+"now": "the dark oropharyngeal air space to the right of the uvula, ~30px off",
+"should": "the downward tip at the free posterior edge of the soft palate, which the 3 circle itself sits beside"
+},
+{
+"score": 0,
+"page": "osa#2",
+"label": "5 Genioglossus muscle  [CHECK]",
+"now": "the posterior tongue border / palatoglossal fold region",
+"should": "the fan of muscle inside the tongue body running to the mandible"
+},
+{
+"score": 0,
+"page": "osa#2",
+"label": "8 Trachea  [CHECK]",
+"now": "the pretracheal soft tissue of the anterior neck, having crossed over the tracheal rings",
+"should": "the ringed grey tube itself"
+},
+{
+"score": 0,
+"page": "osa#2",
+"label": "Palatopharyngeus (dilator key)  [CHECK]",
+"now": "the same purple band",
+"should": "a blue-highlighted palatopharyngeus in the lateral pharyngeal wall"
+},
+{
+"score": 0,
+"page": "osteoarthritis#2",
+"label": "4 Synovial fluid (KNEE)  [CHECK]",
+"now": "the top-left corner of the BLUE MENISCUS disc - the structure marker 7 names on the other side",
+"should": "the joint cavity/recess itself; arguable, since the tip sits in the crevice between condyle and meniscus where fluid would be"
+},
+{
+"score": 0,
+"page": "osteoarthritis#2",
+"label": "Synovial membrane (HIP JOINT CROSS-SECTION)  [CHECK]",
+"now": "two branches, one ending in femoral-head cancellous bone at approx (827,844) after crossing straight over the salmon peri-articular layer, the other on the blue cartilage rim",
+"should": "the salmon/pink layer it crosses, which is the only membrane drawn"
+},
+{
+"score": 0,
+"page": "osteoarthritis#2",
+"label": "Joint capsule (HIP)",
+"now": "a bright dot inside the femoral-neck trabecular bone, ~12 px inside the cortex, with no capsule drawn anywhere near the endpoint",
+"should": "the salmon/pink band wrapping the joint superolaterally"
+},
+{
+"score": 0,
+"page": "osteoarthritis#2",
+"label": "Subchondral bone (HIP)  [CHECK]",
+"now": "mid-femoral-neck trabecular bone at approx (836,916)",
+"should": "the dense plate immediately beneath the articular cartilage, ~60 px higher"
+},
+{
+"score": 0,
+"page": "osteomyelitis#2",
+"label": "Haversian (central) canal with blood vessels (OSTEON)  [CHECK]",
+"now": "the concentric lamellar rings on the top face at approx (736,423), ~30 px short of the canal; it is aimed at the canal but stops on the same rings the \"Concentric lamellae\" leader marks 30 px away",
+"should": "inside the dark central opening with the red/blue vessels, approx (765-825, 385-420)"
+},
+{
+"score": 0,
+"page": "osteomyelitis#2",
+"label": "Volkmann's (perforating) canal (OSTEON)",
+"now": "a black almond-shaped OSTEOCYTE LACUNA at approx (784,616) - the same kind of structure, in the same dogleg style, that the \"Lacunae\" leader correctly points to",
+"should": "the transverse red/blue vessel pair crossing the cut face"
+},
+{
+"score": 0,
+"page": "osteomyelitis#2",
+"label": "Epiphyseal arteries (VASCULAR SUPPLY OF BONE)  [CHECK]",
+"now": "a cortical foramen at approx (296,1131), only 36 px from where \"Metaphyseal arteries\" lands, on the same stretch of proximal cortex",
+"should": "the epiphysis; both bone ends are 120-170 px away. Arguable - the vessel may legitimately be labelled where it enters"
+},
+{
+"score": 0,
+"page": "osteoporosis#2",
+"label": "Tibia",
+"now": "the FIBULA on both skeletons (anterior dot sits squarely on the fibular shaft; lateral leader ends on the thin fibular shaft)",
+"should": "the broad tibial shaft"
+},
+{
+"score": 0,
+"page": "osteoporosis#2",
+"label": "Fibula",
+"now": "the TIBIAL shaft on the lateral skeleton (anterior dot sits on the tibia/fibula border)",
+"should": "the slender posterolateral fibula - Tibia and Fibula appear swapped"
+},
+{
+"score": 0,
+"page": "osteoporosis#2",
+"label": "Radius (Distal)",
+"now": "the distal FEMORAL shaft of the lateral skeleton, just above the knee",
+"should": "the distal radius at the wrist (hand is drawn up and to the right)"
+},
+{
+"score": 0,
+"page": "osteoporosis#2",
+"label": "Humerus",
+"now": "the lower thoracic / lumbar VERTEBRAL COLUMN of the lateral skeleton, about one vertebral body below the distal humerus (the anterior-side leader stops in soft tissue medial to the humerus, though it does cross the shaft)",
+"should": "the humeral shaft"
+},
+{
+"score": 0,
+"page": "osteoporosis#2",
+"label": "Ribs  [CHECK]",
+"now": "right-hand leader terminates on the humeral shaft after crossing 3-4 rib arcs",
+"should": "terminate on a rib"
+},
+{
+"score": 0,
+"page": "pancreatitis#2",
+"label": "Accessory pancreatic duct (Santorini duct)  [CHECK]",
+"now": "the caption carries two leaders; one ends exactly where the main pancreatic duct + CBD confluence enters the duodenal wall (the MAJOR papilla). The other ends on a small callout box in the head",
+"should": "the accessory duct / minor papilla, which is proximal to the main duct's insertion"
+},
+{
+"score": 0,
+"page": "pancreatitis#2",
+"label": "(connector arrow to the duodenal-papillae inset)  [CHECK]",
+"now": "its tail sits on the superior mesenteric artery / aorta, not on the duodenum whose lumen the inset depicts",
+"should": "the duodenal C-loop"
+},
+{
+"score": 0,
+"page": "parkinsons#2",
+"label": "Globus pallidus (external)",
+"now": "a dot in the pink frontal CORTEX gyri, outside every coloured deep-grey structure",
+"should": "the purple pallidal lumps below the thalamus"
+},
+{
+"score": 0,
+"page": "parkinsons#2",
+"label": "Thalamus (right column)",
+"now": "the upper-right edge of the red-brown RED NUCLEUS sphere",
+"should": "the large purple ovoid in the diencephalon"
+},
+{
+"score": 0,
+"page": "parkinsons#2",
+"label": "Substantia nigra pars reticulata (SNr) (right column)",
+"now": "the same red-brown RED NUCLEUS sphere (its leader doglegs left across the cerebellum and finishes on the sphere)",
+"should": "the midbrain substantia nigra. Three separate leaders - Thalamus, SNr and Red nucleus - all converge on this one sphere"
+},
+{
+"score": 0,
+"page": "parkinsons#2",
+"label": "Cingulate gyrus  [CHECK]",
+"now": "the purple arc, the same band that the \"Corpus callosum\" leader terminates in ~40 px away",
+"should": "the cortical ribbon immediately outside/above the callosal arc"
+},
+{
+"score": 0,
+"page": "parkinsons#2",
+"label": "Motor cortex (Precentral gyrus)  [CHECK]",
+"now": "superior frontal cortex about one third of the way back from the frontal pole",
+"should": "the precentral gyrus, near the vertex just anterior to the central sulcus"
+},
+{
+"score": 0,
+"page": "parkinsons#2",
+"label": "Subthalamic nucleus (STN)  [CHECK]",
+"now": "the tan/beige body beyond the small olive-green sphere; the green leader passes over the green sphere and stops ~12 px past it",
+"should": "the green sphere, which matches the label colour"
+},
+{
+"score": 0,
+"page": "parkinsons#2",
+"label": "Internal capsule  [CHECK]",
+"now": "the boundary between the large purple ovoid and the blue body, not on a distinct white-matter band",
+"should": "a capsular white-matter lamina"
+},
+{
+"score": 0,
+"page": "pe#2",
+"label": "Left pulmonary artery (central figure)  [CHECK]",
+"now": "the upper-right edge of the RED THROMBUS inside the blue trunk at approx (388,319)",
+"should": "the vessel wall rather than the clot; the location is defensible as the trunk/proximal LPA"
+},
+{
+"score": 0,
+"page": "pe#2",
+"label": "Segmental arteries (central figure)  [CHECK]",
+"now": "the same 8-px bright node at approx (452-458, 345-352) that the second branch of the \"Lobar arteries\" leader terminates on",
+"should": "a distinct, more peripheral vessel than the lobar branch"
+},
+{
+"score": 0,
+"page": "pe#2",
+"label": "Right pulmonary artery (VASCULAR LANDMARKS)",
+"now": "a bright node at approx (640,769) in the viewer's-right (patient's LEFT) hilum, the same node the \"Left pulmonary artery\" leader ends on",
+"should": "the right hilum on the viewer's left, approx (565-585, 750-762)"
+},
+{
+"score": 0,
+"page": "pe#2",
+"label": "Left pulmonary artery (VASCULAR LANDMARKS)  [CHECK]",
+"now": "the same node at approx (640,769) as the \"Right pulmonary artery\" leader; the side is right but two labels share one point",
+"should": "its own point on the left pulmonary artery"
+},
+{
+"score": 0,
+"page": "pe#2",
+"label": "Inferior vena cava (VASCULAR LANDMARKS)",
+"now": "dark space below and right of the heart at approx (645,874) where the faint leader fades",
+"should": "the blue IVC at approx (578-592, 820-872), ~55 px further left"
+},
+{
+"score": 0,
+"page": "pericarditis#1",
+"label": "Parietal Serous Pericardium  [CHECK]",
+"now": "approx (735,862), inside the translucent sac zone but in a GAP between the drawn fibrous bands, so the dot sits on the purple great-vessel tissue seen through the sac",
+"should": "a distinct inner serous lining; as on pericarditis p2, the artwork barely renders one, so a re-render may be needed rather than a dot move"
+},
+{
+"score": 0,
+"page": "pericarditis#2",
+"label": "Myocardium",
+"now": "the dark teal pericardial cavity (fluid band with bubbles), three layers outboard of the muscle",
+"should": "the red striated myocardium at the far right of the cross-section"
+},
+{
+"score": 0,
+"page": "pericarditis#2",
+"label": "Parietal Serous Pericardium  [CHECK]",
+"now": "mid-teal pericardial cavity, the same band the \"Pericardial Cavity\" dot correctly marks",
+"should": "the thin pale smooth band at the inner surface of the grey fibrous pericardium, ~17 px to its left"
+},
+{
+"score": 0,
+"page": "pneumothorax#2",
+"label": "3 Left lung (main figure)  [SOURCE TOO LOW-RES]",
+"now": "the bright leader segment stops in the intercostal muscle and any continuation inward cannot be resolved",
+"should": "lung parenchyma"
+},
+{
+"score": 0,
+"page": "pneumothorax#2",
+"label": "4 Parietal pleura (main figure)  [SOURCE TOO LOW-RES]",
+"now": "bright segment ends on the middle of a rib cross-section; a faint continuation reaches the pleural lines but which of the two lines cannot be resolved at 800x1200",
+"should": "the outer pleural line"
+},
+{
+"score": 0,
+"page": "pneumothorax#2",
+"label": "5 Visceral pleura (main figure)  [SOURCE TOO LOW-RES]",
+"now": "same: the four labelled layers occupy about 10 source pixels here",
+"should": "the inner pleural line"
+},
+{
+"score": 0,
+"page": "pneumothorax#2",
+"label": "6 Pleural cavity (main figure)  [SOURCE TOO LOW-RES]",
+"now": "bright segment ends on a rib cross-section; continuation unresolvable",
+"should": "the gap between the two pleural lines"
+},
+{
+"score": 0,
+"page": "pneumothorax#2",
+"label": "Cervical (recess above the clavicle) (pleural recesses)  [CHECK]",
+"now": "shoulder soft tissue / first rib lateral to the blue apical highlight",
+"should": "the blue recess above the clavicle"
+},
+{
+"score": 0,
+"page": "pneumothorax#2",
+"label": "Anterior border of latissimus dorsi (safe triangle)  [CHECK]",
+"now": "the red vertical line, the same line the pectoralis label points at",
+"should": "the posterior side of the triangle"
+},
+{
+"score": 0,
+"page": "pneumothorax#2",
+"label": "Lateral border of pectoralis major (safe triangle)  [CHECK]",
+"now": "the same red vertical line",
+"should": "the anterior side of the triangle"
+},
+{
+"score": 0,
+"page": "preeclampsia#2",
+"label": "PLACENTA",
+"now": "the anterior lower uterine wall / adjacent maternal vessels, the same red band the UTERUS leader points to",
+"should": "the dark-red villous vascular bed at the uterine fundus where the coiled umbilical cord inserts"
+},
+{
+"score": 0,
+"page": "preeclampsia#2",
+"label": "UMBILICAL CORD",
+"now": "maternal pelvic (iliac) vessels below and outside the uterus",
+"should": "the coiled cord running from the fetal umbilicus up-left to the placental bed"
+},
+{
+"score": 0,
+"page": "preeclampsia#2",
+"label": "PELVIC CIRCULATION  [CHECK]",
+"now": "the inner edge of the right lateral uterine wall where it meets the fetal buttock, with no maternal pelvic vessel at the endpoint",
+"should": "the maternal iliac/pelvic vessel network at the lower left of the figure"
+},
+{
+"score": 0,
+"page": "ra#2",
+"label": "Hips (Typical synovial joints panel)",
+"now": "the LEFT KNEE - the leader runs horizontally at knee level and touches the femoral condyle of the glowing knee joint",
+"should": "the glowing hip joints ~80 px higher, at the femoral heads"
+},
+{
+"score": 0,
+"page": "ra#2",
+"label": "Tendon (main joint figure)",
+"now": "a dot squarely inside the striated RED MUSCLE BELLY",
+"should": "the white fibrous tendon band ~20 px up and to the right of the dot (the \"Ligament\" leader lands on it correctly)"
+},
+{
+"score": 0,
+"page": "ra#2",
+"label": "Synovial fluid  [CHECK]",
+"now": "the red synovial lining tissue at the joint margin, ~34 px left of where the \"Synovial cavity\" arrow lands",
+"should": "inside the joint space / recess that holds the fluid"
+},
+{
+"score": 0,
+"page": "ra#2",
+"label": "Synovial membrane (intima)  [CHECK]",
+"now": "the margin of the tibial articular cartilage, after the leader has crossed straight over the red synovial lining it names",
+"should": "the red synovial lining itself (arguable - the synovium does reflect at that cartilage margin)"
+},
+{
+"score": 0,
+"page": "ra#2",
+"label": "Fibrous capsule (externa) (main figure)  [CHECK]",
+"now": "the tibial cortical bone at the cartilage-bone junction, after crossing over the pale fibrous capsule layer",
+"should": "the pale outer fibrous layer at approx x=250-272 (arguable - the capsule inserts on bone there)"
+},
+{
+"score": 0,
+"page": "ra#2",
+"label": "Fibrous capsule (collagen) (Joint capsule & synovial lining panel)  [CHECK]",
+"now": "deep red synovial tissue between two villi, having crossed straight over the pale layered collagen band at the outer edge",
+"should": "that pale outer collagen band"
+},
+{
+"score": 0,
+"page": "schizophrenia#2",
+"label": "Corpus Callosum",
+"now": "a dot inside the blue/purple glowing thalamus-basal ganglia mass (the structure carrying the \"3\" badge); the leader passes straight through the pale ribbed callosal band on its way",
+"should": "that pale ribbed arching band, about 20 px higher"
+},
+{
+"score": 0,
+"page": "schizophrenia#2",
+"label": "Nucleus Accumbens  [CHECK]",
+"now": "the purple mesolimbic pathway ribbon just below the \"1\" badge rather than on a discrete nucleus",
+"should": "the ventral striatum tissue; arguable, since the badge marks the mesolimbic terminus"
+},
+{
+"score": 0,
+"page": "sci#2",
+"label": "Intervertebral Disc (sagittal overview)",
+"now": "the interspinous gap between two spinous processes",
+"should": "one of the black disc bands between the vertebral bodies anteriorly"
+},
+{
+"score": 0,
+"page": "sci#2",
+"label": "Dorsal Columns (Fasciculus) (cross section)",
+"now": "the brown dorsal horn grey matter",
+"should": "the purple posterior white-matter columns immediately dorsomedial to it"
+},
+{
+"score": 0,
+"page": "sci#2",
+"label": "Lateral Corticospinal Tract (UMN) (cross section)",
+"now": "the BLUE lateral region, which the panel's own key assigns to Spinothalamic",
+"should": "the GREEN posterolateral region just above the dot - the green area currently has no label pointing at it"
+},
+{
+"score": 0,
+"page": "sci#2",
+"label": "Anterior (Ventral) Horn / Lower Motor Neurons (cross section)",
+"now": "the pink anterior white matter",
+"should": "the tan/brown ventral horn of the grey butterfly, up and to the right of the dot"
+},
+{
+"score": 0,
+"page": "sci#2",
+"label": "Anterior (Ventral) Corticospinal Tract (UMN)  [CHECK]",
+"now": "the anterior median fissure / outer rim of the cord",
+"should": "the anterior white matter beside the fissure"
+},
+{
+"score": 0,
+"page": "sci#2",
+"label": "Dura Mater (meninges panel)  [CHECK]",
+"now": "the epidural fat and venous plexus, ~10px outside the blue dural band",
+"should": "the blue band itself"
+},
+{
+"score": 0,
+"page": "sci#2",
+"label": "Arachnoid Mater  [CHECK]",
+"now": "a nerve root inside the subarachnoid space",
+"should": "the sheath layer just inside the dura"
+},
+{
+"score": 0,
+"page": "sci#2",
+"label": "Subarachnoid Space (CSF)  [CHECK]",
+"now": "the blue dural band",
+"should": "the navy CSF space with the nerve roots in it"
+},
+{
+"score": 0,
+"page": "sci#2",
+"label": "Pia Mater  [CHECK]",
+"now": "a nerve root in the subarachnoid space",
+"should": "the surface of the cord"
+},
+{
+"score": 0,
+"page": "sci#2",
+"label": "Spinal Cord (meninges panel)",
+"now": "a yellow nerve root in the subarachnoid space, ~25px short of the cord",
+"should": "the large tan cord on the right of that panel"
+},
+{
+"score": 0,
+"page": "sci#2",
+"label": "Dorsal Root (Sensory)  [CHECK]",
+"now": "its uppermost arrowhead lands on the fusiform ganglion swelling",
+"should": "the thinner root segment proximal to the ganglion (lower arrowheads on the same leader do hit roots)"
+},
+{
+"score": 0,
+"page": "sci#2",
+"label": "Dorsal Root Ganglion  [CHECK]",
+"now": "lands just distal to the swelling, at the post-ganglionic segment",
+"should": "the swelling itself"
+},
+{
+"score": 0,
+"page": "sci#2",
+"label": "C2 (dermatomes, anterior figure)  [CHECK]",
+"now": "the temple/cheek, which is trigeminal territory",
+"should": "the angle of the jaw / upper neck band"
+},
+{
+"score": 0,
+"page": "sci#2",
+"label": "S2-S4 (dermatomes, posterior figure)  [CHECK]",
+"now": "the posterior knee",
+"should": "the perianal/perineal region, which is what the \"sacral sparing\" note the panel makes depends on"
+},
+{
+"score": 0,
+"page": "seizure#2",
+"label": "Cortical networks (thalamo-cortical panel)  [CHECK]",
+"now": "the right edge of the blue thalamus ovoid, with the arrowhead reversed (pointing outward at the label text instead of inward at a structure)",
+"should": "the pink cortical band, as the \"Cortex\" leader in the same panel does"
+},
+{
+"score": 0,
+"page": "seizure#2",
+"label": "Axon (neuron panel)  [CHECK]",
+"now": "a tan myelin internode - the same kind of segment the \"Myelin sheath\" leader points at two segments to the right",
+"should": "the exposed blue-grey axon at a node of Ranvier or the unmyelinated initial segment"
+},
+{
+"score": 0,
+"page": "sickle-cell#2",
+"label": "Trabeculae",
+"now": "the right margin of the uppermost lavender white-pulp follicle, a few px into red pulp; there is no trabecular band anywhere near the endpoint",
+"should": "one of the pale fibrous bands running inward from the capsule"
+},
+{
+"score": 0,
+"page": "sickle-cell#2",
+"label": "Red pulp (filters blood)  [CHECK]",
+"now": "the right margin of the lowest lavender white-pulp follicle, 1-2 px outside it - visually identical to how the \"White pulp\" leader one row above terminates on the middle follicle",
+"should": "the dark red inter-follicular parenchyma, which fills most of the organ and is untouched"
+},
+{
+"score": 0,
+"page": "sickle-cell#2",
+"label": "Splenic vein  [CHECK]",
+"now": "the pink capsule at the inferomedial corner of the spleen, after a dogleg that turns UP away from the vessels",
+"should": "the blue splenic vein drawn about 20 px to its left at the hilum, the way \"Splenic artery\" reaches the red vessel"
+},
+{
+"score": 0,
+"page": "sickle-cell#2",
+"label": "Endothelium  [CHECK]",
+"now": "a dark red blood cell inside the lumen, about 19 px past the pale endothelial lining the line crosses on its way down",
+"should": "the pale lining band itself"
+},
+{
+"score": 0,
+"page": "stroke#1",
+"label": "Posterior Cerebral Artery (PCA)",
+"now": "the origin of a great vessel off the aortic arch, low in the neck/mediastinum",
+"should": "an intracranial posterior vessel"
+},
+{
+"score": 0,
+"page": "stroke#1",
+"label": "Middle Cerebral Artery (MCA)",
+"now": "a yellow smear in a sulcus of the posterior (occipital/temporal) cortex, on plain pink non-infarcted tissue, about 130 px from the red arterial trunk that the artwork actually draws ascending into the ischemic zone",
+"should": "that red trunk, or its branches over the gold penumbra"
+},
+{
+"score": 0,
+"page": "stroke#1",
+"label": "Thrombus (clot) blocking the MCA  [CHECK]",
+"now": "a white dot at the margin of the dark red infarct core (brain tissue), from which the line runs to the magnifier inset",
+"should": "the occluded artery itself, since the inset shows a clot inside a vessel lumen"
+},
+{
+"score": 0,
+"page": "stroke#1",
+"label": "Ischemic core (infarct) (right pathway panel)  [CHECK]",
+"now": "the plain pink LEFT hemisphere at the near edge of the brain icon, about 50 px from the dark red core on the right hemisphere",
+"should": "the dark red core"
+},
+{
+"score": 0,
+"page": "stroke#2",
+"label": "Internal Carotid Artery (ICA) [panel 2, Carotid & Vertebrobasilar Systems]",
+"now": "the vertebral artery (the posterior vessel that arises from the subclavian at the arch and gives no facial branches), at x~143",
+"should": "the post-bifurcation carotid at x~159-161, the ascending vessel that enters the skull base"
+},
+{
+"score": 0,
+"page": "stroke#2",
+"label": "Internal Carotid Artery (ICA) [panel 3, Cerebral Arteries lateral view]",
+"now": "bare temporal-lobe cortex at (417,540), no vessel at the endpoint, ~38 px anterior to the carotid trunk",
+"should": "the large vertical trunk at x~455-475 that the PCoA and Basilar labels also point at"
+},
+{
+"score": 0,
+"page": "stroke#2",
+"label": "Posterior Cerebral Artery (PCA) [panel 3]",
+"now": "the middle of the cerebellar hemisphere (brown folia) at (594,581), no artery at the endpoint",
+"should": "the vessels over the occipital lobe / the artery curving round the midbrain"
+},
+{
+"score": 0,
+"page": "stroke#2",
+"label": "Middle Cerebral Artery (MCA) [panel 3]  [CHECK]",
+"now": "plain temporal-lobe cortex at (605,485) at the temporo-occipital border, ~16 px from the nearest painted artery",
+"should": "the Sylvian trunk / candelabra of branches anterior to it"
+},
+{
+"score": 0,
+"page": "stroke#2",
+"label": "Basilar Artery [panel 6, Posterior Circulation]  [CHECK]",
+"now": "the right vertebral artery ~8 px below the vertebrobasilar junction (803,949)",
+"should": "the midline trunk on the pons at x~781-786, y 915-940"
+},
+{
+"score": 0,
+"page": "stroke#2",
+"label": "Anterior Inferior Cerebellar Artery (AICA) [panel 6]  [CHECK]",
+"now": "the right vertebral artery trunk beside the medulla (800,1000) - the level at which PICA arises, not AICA",
+"should": "a lateral branch running into the anterior inferior cerebellum, off the basilar higher up"
+},
+{
+"score": 0,
+"page": "stroke#2",
+"label": "Vertebral Arteries [panel 6]  [CHECK]",
+"now": "the pale medulla surface at (784,1052), ~8 px medial to the vessel",
+"should": "the paired red vessels flanking the medulla at x~763 and x~794"
+},
+{
+"score": 0,
+"page": "suicide#2",
+"label": "Dorsolateral Prefrontal Cortex (DLPFC)  [CHECK]",
+"now": "a blue node on the POSTERIOR third of the green cingulate band (403,472), the line then continuing to the purple limbic arch; no prefrontal cortex is touched. Caveat: the KEY defines blue lines as \"inhibitory / top-down control\" circuit arrows, so this may be a circuit line rather than a pointer",
+"should": "the anterior superior (pink/magenta) frontal convexity"
+},
+{
+"score": 0,
+"page": "suicide#2",
+"label": "Anterior Cingulate Cortex (ACC)  [CHECK]",
+"now": "the vertex of the green cingulate band at (338,456), i.e. mid-cingulate; the band runs x 233-440 so this is past its midpoint",
+"should": "the anterior/rostral limb of the band, x ~240-290"
+},
+{
+"score": 0,
+"page": "suicide#2",
+"label": "Amygdala  [CHECK]",
+"now": "empty dark space at (245,571) where the orange circuit arrow's HEAD sits (that arrow's tail is the amygdala and its head points into the OFC)",
+"should": "the orange sphere at ~(305,553)"
+},
+{
+"score": 0,
+"page": "t2dm#2",
+"label": "Greater pancreatic artery (branch of splenic artery) [Pancreatic Arterial Blood Supply panel]",
+"now": "the tip of an inferior branch of the SMA at (605,908), below the pancreatic head - the same arcade the Inferior pancreaticoduodenal label points into",
+"should": "a branch off the splenic artery entering the pancreatic body along its superior border"
+},
+{
+"score": 0,
+"page": "t2dm#2",
+"label": "Dorsal pancreatic artery (branch of splenic artery) [Arterial Blood Supply panel]  [CHECK]",
+"now": "the parenchyma at the very tip of the pancreatic tail (635,830); no artery resolvable at the endpoint",
+"should": "near the pancreatic NECK, where the dorsal pancreatic artery leaves the splenic"
+},
+{
+"score": 0,
+"page": "t2dm#2",
+"label": "Superior pancreatic artery (branch of splenic artery) [Arterial Blood Supply panel]  [CHECK]",
+"now": "the outer wall of the duodenum at (483,869), at most on the thin pancreaticoduodenal arcade vessel running over it",
+"should": "the superior border of the pancreatic body"
+},
+{
+"score": 0,
+"page": "tb#2",
+"label": "alveolus magnifier inset (anchor line into the main lung figure)",
+"now": "a tan enlarged MEDIASTINAL LYMPH NODE in the subcarinal cluster, one node below the node that marker 6 correctly tags",
+"should": "lung parenchyma, since the circle it feeds shows alveoli, an alveolar duct and an alveolar macrophage"
+},
+{
+"score": 0,
+"page": "thrombocytopenia#2",
+"label": "Sinusoid (marrow capillary)",
+"now": "a purple megakaryocyte pseudopod (a proplatelet extension); the leader doglegs, crosses the blue sinusoid it names, and carries on about 15 px past it before stopping on the purple process",
+"should": "the blue sinusoid where it crosses it"
+},
+{
+"score": 0,
+"page": "thrombocytopenia#2",
+"label": "Lysosome (hydrolytic enzymes)  [CHECK]",
+"now": "the lower border of the small blue-green granule at the 3-o'clock position - the same granule the \"Dense granule\" leader is aimed at from the other side",
+"should": "a granule of its own; the two leaders cannot both be right"
+},
+{
+"score": 0,
+"page": "thrombocytopenia#2",
+"label": "Dense granule (ADP, ATP, Ca2+, serotonin)  [CHECK]",
+"now": "plain purple cytoplasm at the base of a pseudopod, about 7 px right of that same blue-green granule",
+"should": "a granule; note the two orange-cored granules in the platelet carry no label at all"
+},
+{
+"score": 0,
+"page": "thyroidstorm#2",
+"label": "Trachea",
+"now": "the gold nerve band running down the lateral neck; a red artery and ~31 px of soft tissue separate the tip from the grey ringed trachea",
+"should": "the ringed tube in the midline"
+},
+{
+"score": 0,
+"page": "thyroidstorm#2",
+"label": "Common carotid artery",
+"now": "the middle of the blue internal jugular vein; the leader crosses the red artery on its way in and stops ~11 px past it",
+"should": "that red artery"
+},
+{
+"score": 0,
+"page": "thyroidstorm#2",
+"label": "Follicular cell (thyrocyte) (panel B)",
+"now": "the pink colloid, about 16 px past the inner border of the epithelial ring it crosses - i.e. in the compartment the \"Colloid (thyroglobulin)\" label names",
+"should": "one of the cuboidal cells in the ring"
+},
+{
+"score": 0,
+"page": "thyroidstorm#2",
+"label": "Nucleus (Follicular Cell Detail)",
+"now": "a small dark purple cytoplasmic vesicle at the cell's left margin, about 21 px short of the large purple nucleus",
+"should": "the nucleus"
+},
+{
+"score": 0,
+"page": "thyroidstorm#2",
+"label": "Superior thyroid artery and vein  [CHECK]",
+"now": "the gold nerve band at the medial edge of the blue jugular; no thyroid artery or vein at the tip",
+"should": "the vessels running to the superior pole"
+},
+{
+"score": 0,
+"page": "thyroidstorm#2",
+"label": "Inferior thyroid artery and vein  [CHECK]",
+"now": "the lateral border of the thyroid lobe immediately beside the gold nerve band, with no vessel at the tip",
+"should": "the red/blue vessels at the lower pole"
+},
+{
+"score": 0,
+"page": "thyroidstorm#2",
+"label": "Internal jugular vein  [CHECK]",
+"now": "the gold vagus nerve about 6 px medial to the blue vein",
+"should": "the blue vein"
+},
+{
+"score": 0,
+"page": "thyroidstorm#2",
+"label": "Capillary (panel B)  [CHECK]",
+"now": "the basal side of the follicular epithelium, about 12 px inside the orange basement membrane the leader crosses; the capillary plexus it names is outside that ring",
+"should": "one of the dark red vessels outside the ring"
+},
+{
+"score": 0,
+"page": "thyroidstorm#2",
+"label": "Na+/I- symporter (Follicular Cell Detail)  [CHECK]",
+"now": "the purple RER/Golgi stacks in mid-cytoplasm",
+"should": "the basolateral membrane, where the panel's own caption places the blood side"
+},
+{
+"score": 0,
+"page": "tia#2",
+"label": "Basilar artery (Circle of Willis)  [CHECK]",
+"now": "cerebellar surface ~9px short of the trunk's left wall, and a second arm of the same leader runs up to a lateral cerebellar/PCA branch",
+"should": "the midline vertical trunk"
+},
+{
+"score": 0,
+"page": "tia#2",
+"label": "Common carotid artery (CCA) (carotid pathway panel)",
+"now": "the dilated carotid bulb",
+"should": "the straight tube below the bulb"
+},
+{
+"score": 0,
+"page": "tia#2",
+"label": "ACA (vertebrobasilar lower sub-panel)  [CHECK]",
+"now": "left frontal cortex, fading out ~27px short of the vessel",
+"should": "the anterior midline vessels of the circle"
+},
+{
+"score": 0,
+"page": "tia#2",
+"label": "PCA (left lateral view, arteries in context)  [CHECK]",
+"now": "the anterior brainstem where the basilar/vertebral lies",
+"should": "the vessel curving around the midbrain toward the occipital lobe; the right lateral view looks the same way"
+},
+{
+"score": 0,
+"page": "uti#2",
+"label": "3 Renal vein",
+"now": "the RED renal artery (its lower branch) - verified at 15x; the blue vein runs below the endpoint",
+"should": "the blue tube draining to the IVC"
+},
+{
+"score": 0,
+"page": "uti#2",
+"label": "Renal pelvis (kidney panel)",
+"now": "a red medullary pyramid",
+"should": "the tan funnel in the renal sinus, which is drawn clearly but is left unlabelled"
+},
+{
+"score": 0,
+"page": "uti#2",
+"label": "Major calyx (kidney panel)",
+"now": "another red medullary pyramid",
+"should": "one of the tan branches of the pelvis"
+},
+{
+"score": 0,
+"page": "withdrawal#2",
+"label": "HYPOTHALAMUS",
+"now": "the pink/magenta blob, which is the colour of the AMYGDALA label",
+"should": "the blue sphere directly below the brown thalamus, which nothing points at"
+},
+{
+"score": 0,
+"page": "withdrawal#2",
+"label": "AMYGDALA",
+"now": "the green blob, which is the colour of the LOCUS COERULEUS label",
+"should": "the pink/magenta blob in the anterior temporal region"
+}
+]

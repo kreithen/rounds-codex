@@ -24,6 +24,10 @@ Nothing on this list is launch-blocking.
    production can start on verified galleries instead of waiting for all 81.
 9. **Tranches go out as a web page I can screenshot before sending**, not as an unseen docx.
 10. **Production re-renders only from verified tranches** — the 62 unmeasured pages wait.
+11. **While tranches land, production works the template fixes** — the four faults in the brief are
+    the root cause and need no per-page measurement from me.
+12. **Page order comes from `TRIAGE-by-teaching-damage.md`**, a reading of all 511 rows, not from
+    how many labels each page has flagged.
 
 ---
 

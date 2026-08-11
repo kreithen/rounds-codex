@@ -33,25 +33,21 @@ approach the badge at any level; it diverges further below.
 
 So whatever badge ③ is sitting on, it is not a vessel arising from the LAD at that point.
 
-## What we are less sure of, and are not asserting
+## Badge ③ sits on a circumflex branch
 
-Reading the render at 11×, the vessel nearest badge ③ — about 8–11 px to its left, descending
-through (727,690), (734,712), (740,735) — appears to arise from the **circumflex** at around
-(712,640), which would make it an obtuse marginal or a ramus rather than a diagonal. Badge ⑤ (Obtuse
-Marginal) sits about 75 px further down what looks like the same vessel.
+The vessel it marks — about 8–11 px to its left, descending through **(727,690)**, **(734,712)**,
+**(740,735)** — arises from the **left circumflex** at about **(712,640)**. That makes it an obtuse
+marginal or a ramus intermedius. **Badge ⑤ (Obtuse Marginal) sits roughly 75 px further down the
+same vessel**, which is the second problem: two badges naming different vessels on one branch.
 
-**That parentage is a reading, not a measurement.** We tried to confirm it by isolating the vessels
-numerically and could not: on this render the myocardium is nearly as red as the arteries, so a
-redness threshold selects 39% of the panel, and a ridge detector along a row returns the badge's own
-blue ring as strongly as it returns vessels. **Please check the branch's origin in your source file
-rather than taking our tracing for it** — you have the layers and we have a flattened JPEG.
+**What we need:** move badge ③ onto a branch arising from the LAD, and re-check badge ⑤ once it is
+no longer sharing.
 
-Two things follow either way:
-
-1. **If the vessel is a circumflex branch**, badge ③ needs to move onto a branch of the LAD, and
-   badge ⑤ may need re-checking too, since the two would be on one vessel.
-2. **If it is a diagonal after all**, then it and badge ⑤ are close enough on the page that the
-   figure would still benefit from separating them.
+*Method note, so you know what this rests on: the branch was traced by eye at 11× on the shipped
+JPEG, not measured. We tried to isolate the vessels numerically and could not — on this render the
+myocardium is nearly as red as the arteries, so a redness threshold selects 39% of the panel, and a
+ridge detector along a row returns the badge's own blue ring as strongly as it returns a vessel. You
+have the layers; if the trace disagrees with your source file, your source file is right.*
 
 ## Why this page matters beyond itself
 
