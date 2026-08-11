@@ -22,6 +22,8 @@ Nothing on this list is launch-blocking.
    Taken after I contradicted the order twice in one day and was wrong both times.
 8. **Reissue the corrected order in rolling tranches**, by gallery, as pages are verified — so
    production can start on verified galleries instead of waiting for all 81.
+9. **Tranches go out as a web page I can screenshot before sending**, not as an unseen docx.
+10. **Production re-renders only from verified tranches** — the 62 unmeasured pages wait.
 
 ---
 
@@ -69,14 +71,19 @@ with questions.
 | `PRODUCTION-aki-p2.md` | the nephron panel verified — four labels on one blood vessel; blood-supply series confirmed inverted |
 | `PRODUCTION-aortic-dissection-p2.md` | the arch branches verified — labels shifted one position, two on one vessel |
 
-**`Rounds-Codex-leader-line-CORRECTED-tranche-1.docx` is ready to forward** — 19 measured pages in
+**Tranche 1 is published as a web page you can read and forward:**
+https://claude.ai/code/artifact/2641d8d4-b845-4dc1-8e7d-43b1edb28e5d
+(private until you share it from the page's share menu). **I checked this one myself** — screenshotted
+in light and dark at 1100 px and at 390 px on a phone, no horizontal scroll, no page errors. That is
+the whole reason for switching format.
+
+`Rounds-Codex-leader-line-CORRECTED-tranche-1.docx` is the same content as an editable file — 19 measured pages in
 three sections: already fixed in-app, verified-needs-re-render, and rows where the stated fix is the
 wrong fix. It supersedes the corresponding pages of the original order.
 
-**Please open it once before you send it.** I could not render it to look at: LibreOffice is broken
-in this container, and I confirmed that by running it on the *original* work-order docx, which fails
-identically. So the file is structurally sound (22 parts, 5 tables, 46 rows, every spot-checked
-coordinate present) but nobody has seen it laid out.
+if production wants one. **That file is still unseen by me** — LibreOffice cannot load any docx in
+this container, confirmed against the *original* work order, which fails identically. Send the link;
+send the docx only if they ask, and glance at it first.
 
 ## 3. Two Higgsfield generations were never retrieved
 

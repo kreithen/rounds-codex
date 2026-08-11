@@ -1,0 +1,201 @@
+<title>Leader-line corrections — corrected work order, tranche 1</title>
+<style>
+  :root{
+    --bg:#F6F8FA; --panel:#FFFFFF; --ink:#151A21; --muted:#5A6572;
+    --rule:#D6DCE4; --rule-soft:#E7ECF1;
+    --accent:#0E5A6B; --wrong:#9E322A; --right:#1C6448; --band:#EEF2F6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#11141A; --panel:#171B22; --ink:#E6EBF1; --muted:#98A3B1;
+      --rule:#2A313B; --rule-soft:#222932;
+      --accent:#5EB8C8; --wrong:#E4948B; --right:#74C8A2; --band:#1B212A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#11141A; --panel:#171B22; --ink:#E6EBF1; --muted:#98A3B1;
+    --rule:#2A313B; --rule-soft:#222932;
+    --accent:#5EB8C8; --wrong:#E4948B; --right:#74C8A2; --band:#1B212A;
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--bg); color:var(--ink);
+    font:400 16.5px/1.62 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    margin:0; padding:44px 22px 90px;
+  }
+  .wrap{max-width:960px; margin:0 auto; display:flex; flex-direction:column; gap:34px}
+  .prose{max-width:70ch}
+  h1,h2,h3{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; text-wrap:balance; margin:0}
+  h1{font-size:2.15rem; line-height:1.18; letter-spacing:-.012em; font-weight:600}
+  h2{font-size:1.42rem; line-height:1.25; font-weight:600}
+  h3{font-size:1.08rem; line-height:1.3; font-weight:600; color:var(--accent)}
+  p{margin:0}
+  .eyebrow{
+    font:600 11.5px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    letter-spacing:.16em; text-transform:uppercase; color:var(--muted);
+  }
+  header{display:flex; flex-direction:column; gap:12px; padding-bottom:26px; border-bottom:2px solid var(--rule)}
+  .meta{font:400 13.5px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; color:var(--muted)}
+  section{display:flex; flex-direction:column; gap:16px}
+  .sec-head{display:flex; align-items:baseline; gap:14px; border-bottom:1px solid var(--rule); padding-bottom:9px}
+  .sec-letter{
+    font:600 13px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    color:var(--bg); background:var(--accent); border-radius:3px;
+    padding:6px 8px; letter-spacing:.06em; flex:none;
+  }
+  .scroll{overflow-x:auto; border:1px solid var(--rule); border-radius:5px; background:var(--panel)}
+  table{border-collapse:collapse; width:100%; min-width:640px; font-size:14.2px}
+  caption{text-align:left; padding:11px 14px 0; color:var(--muted); font-size:13.5px}
+  th{
+    text-align:left; font:600 11.5px/1.35 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    letter-spacing:.1em; text-transform:uppercase; color:var(--muted);
+    padding:12px 14px; border-bottom:1px solid var(--rule); white-space:nowrap;
+  }
+  td{padding:10px 14px; border-bottom:1px solid var(--rule-soft); vertical-align:top}
+  tr:last-child td{border-bottom:0}
+  tbody tr:nth-child(even){background:var(--band)}
+  td.k{font-weight:600; white-space:nowrap}
+  .co{font:400 13.4px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-variant-numeric:tabular-nums}
+  .was{color:var(--wrong)}
+  .now{color:var(--right)}
+  .note{
+    border-left:3px solid var(--accent); background:var(--panel);
+    padding:14px 18px; border-radius:0 5px 5px 0; display:flex; flex-direction:column; gap:9px;
+  }
+  .note.warn{border-left-color:var(--wrong)}
+  strong{font-weight:650}
+  footer{border-top:1px solid var(--rule); padding-top:18px; color:var(--muted); font-size:13.5px; max-width:70ch}
+  a{color:var(--accent)}
+</style>
+
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Rounds Codex · production</p>
+  <h1>Leader-line corrections — corrected work order, tranche 1</h1>
+  <p class="meta">19 pages measured against the shipped artwork · 10 August 2026</p>
+</header>
+
+<div class="prose" style="display:flex;flex-direction:column;gap:14px">
+  <p>This supersedes the corresponding pages of <em>Rounds-Codex-leader-line-production-order.docx</em>. Every coordinate here was taken from the shipped page at 6× magnification or better; ordering claims at 11× or better, on a crop containing the whole series. Where this document and the original order differ, this one is correct.</p>
+  <div class="note warn">
+    <p><strong>Please re-render only from tranches like this one.</strong> The other 62 pages of the original order are still stated at the auditors' coordinates and have not been measured. At least one of those targets has turned out to be wrong, and two more could not be reproduced on a first pass. Further tranches follow by gallery.</p>
+  </div>
+  <p>One thing this document deliberately does not do: it does not re-adjudicate the auditors' findings. Where we could not reproduce a row, we say so and ask you to check — we do not withdraw it.</p>
+</div>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">A</span><h2>Corrected in the live app — re-render still wanted</h2></div>
+  <p class="prose">These are stopgaps made on the flattened page: a leader shortened, extended or re-routed, and the artwork underneath cloned back. They are live so readers are not being taught the wrong structure meanwhile. A re-render from source is still better, so these pages should stay in your batch.</p>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Gallery / page</th><th>Label</th><th>Ended on</th><th>Now ends on</th></tr></thead>
+      <tbody>
+        <tr><td class="k">addisons p1</td><td>Cortex</td><td class="was">inside the medulla, 7 px past the boundary</td><td class="now">the orange cortical band</td></tr>
+        <tr><td class="k">addisons p2</td><td>Zona Fasciculata</td><td class="was">the gland's central hilum</td><td class="now"><span class="co">(646,286)</span> — mid band</td></tr>
+        <tr><td class="k">addisons p2</td><td>Zona Reticularis</td><td class="was">inside the medulla</td><td class="now"><span class="co">(648,314)</span> — band inner edge</td></tr>
+        <tr><td class="k">bronchiolitis p7</td><td>Minimal mucus</td><td class="was">the adventitia, outside the airway</td><td class="now"><span class="co">(643,450)</span> — lumen surface</td></tr>
+        <tr><td class="k">pancreatitis p2</td><td>Celiac trunk</td><td class="was">the blue vein, <span class="co">(499,353)</span></td><td class="now"><span class="co">(563,377)</span> — the trunk</td></tr>
+        <tr><td class="k">pud p2</td><td>Pylorus</td><td class="was">the duodenal bulb, 120 px distal</td><td class="now"><span class="co">(370,455)</span> — the collar</td></tr>
+        <tr><td class="k">bowel-obstruction p2</td><td>Villi</td><td class="was">the outer striated bands, r = 68</td><td class="now">a mucosal projection, r = 47</td></tr>
+        <tr><td class="k">chf p1</td><td>Left Ventricular Dysfunction</td><td class="was">the left atrial appendage</td><td class="now"><span class="co">(768,730)</span> — LV free wall</td></tr>
+        <tr><td class="k">pericarditis p1</td><td>Fibrous Pericardium</td><td class="was">empty background</td><td class="now"><span class="co">(730,784)</span></td></tr>
+        <tr><td class="k">pericarditis p3</td><td>Visceral pericardium</td><td class="was">outboard of the cavity</td><td class="now"><span class="co">(861,756)</span> — epicardial streak</td></tr>
+        <tr><td class="k">htn p2</td><td>Renal Arteries</td><td class="was">kidney parenchyma</td><td class="now"><span class="co">(615,717)</span> — the vessels</td></tr>
+        <tr><td class="k">htn p8</td><td>Endothelium ×2</td><td class="was">left behind as the lumen narrowed</td><td class="now">extended; nothing erased</td></tr>
+        <tr><td class="k">cardiomyopathy p4</td><td>SMALL LV CAVITY</td><td class="was">inside the septal mass</td><td class="now"><span class="co">(630,772)</span> — the cavity</td></tr>
+        <tr><td class="k">cardiac-arrest p2</td><td>Diaphragm (badge 5)</td><td class="was">into lung</td><td class="now"><span class="co">(430,562)</span></td></tr>
+        <tr><td class="k">cardiac-arrest p4</td><td>stray arrowhead</td><td class="was">attached to nothing</td><td class="now">removed</td></tr>
+        <tr><td class="k">endocarditis p6</td><td>TEE arrow</td><td class="was">outside the ultrasound sector</td><td class="now">tip <span class="co">(655,878)</span>, inside it</td></tr>
+        <tr><td class="k">endocarditis p7</td><td>VALVE CUSP</td><td class="was">the vegetation</td><td class="now"><span class="co">(828,476)</span> — the cusp</td></tr>
+        <tr><td class="k">aortic-stenosis p1</td><td>Narrowed Valve Orifice</td><td class="was">a cusp</td><td class="now"><span class="co">(606,558)</span></td></tr>
+        <tr><td class="k">aortic-stenosis p4</td><td>Narrowed central orifice</td><td class="was">the same error again</td><td class="now"><span class="co">(829,484)</span></td></tr>
+        <tr><td class="k">aortic-dissection p1</td><td>second orphan dot</td><td class="was">mid-leader, on the atrial appendage</td><td class="now">removed</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">B</span><h2>Verified, needs a re-render</h2></div>
+  <p class="prose">Nothing on these three pages was corrected locally. Each row states where the leader ends now and where it should end, both measured.</p>
+
+  <h3>aki page 2 — four labels inside one blood vessel</h3>
+  <p class="prose">The nephron panel draws the vasa recta bundle as a blue/red pair at <span class="co">x 833–847</span> — 17 px wide — then the gold tubules: beaded proximal convolutions <span class="co">x 855–925</span>, hairpin limbs of Henle <span class="co">x 865–885</span> and <span class="co">895–910</span>, collecting-duct trunk <span class="co">x 950–980</span>.</p>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Label</th><th>Ends at</th><th>What is there</th><th>Should end at</th></tr></thead>
+      <tbody>
+        <tr><td class="k">Proximal Tubule</td><td class="co was">(825,551)</td><td class="was">the vasa recta bundle</td><td class="now">the beaded gold tubule, <span class="co">x 860–925</span></td></tr>
+        <tr><td class="k">Loop of Henle</td><td class="co was">(840,600)</td><td class="was">the vasa recta bundle</td><td class="now">the gold hairpin, <span class="co">x 865–910</span></td></tr>
+        <tr><td class="k">Distal Tubule</td><td class="co was">(842,648)</td><td class="was">the same bundle, red limb</td><td class="now">the returning gold tubule</td></tr>
+        <tr><td class="k">Collecting Duct</td><td class="co was">~(870,700)</td><td class="was">the descending gold limb</td><td class="now">the thick trunk, <span class="co">x 950–980</span></td></tr>
+        <tr><td class="k">Glomerulus</td><td class="co was">(823,450)</td><td class="was">the blue arteriole above the capsule</td><td class="now">the red tuft, <span class="co">(830,495)</span></td></tr>
+        <tr><td class="k">Bowman's Capsule</td><td class="co was">(830,500)</td><td class="was">the red tuft, inside the capsule</td><td class="now">the peach ring, <span class="co">(780,500)</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note">
+    <p>Glomerulus and Bowman's Capsule are each displaced onto the other's structure, and the capsule ring itself carries no label. They <strong>cannot simply be swapped end for end</strong>: with the correct endpoints, the Glomerulus leader has to pass over the capsule to reach the tuft inside it.</p>
+    <p><strong>Blood supply panel — the order's "series is effectively inverted" is confirmed.</strong> Segmental ends <span class="co">(806,849)</span>, Interlobar <span class="co">(794,870)</span>, Arcuate <span class="co">(789,918)</span>. Those should run medial to lateral in that order and run exactly backwards. Interlobular <span class="co">(838,961)</span> is correct. Segmental is the worst: the thick first-order trunks are at <span class="co">x 750–790</span> and its leader stops 20–50 px lateral of them. The Afferent Arteriole leader crosses the renal vein.</p>
+  </div>
+
+  <h3>aortic-dissection page 2 — arch branches shifted one position</h3>
+  <p class="prose">Three branches rise from the arch: brachiocephalic <span class="co">x 422–437</span>, left common carotid <span class="co">x 448–465</span>, left subclavian <span class="co">x 478–500</span>.</p>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Label</th><th>Ends at</th><th>Which branch</th><th>Should end at</th></tr></thead>
+      <tbody>
+        <tr><td class="k">Brachiocephalic trunk</td><td class="co was">(462,222)</td><td class="was">2 — left common carotid</td><td class="now">branch 1, <span class="co">~(430,240)</span></td></tr>
+        <tr><td class="k">Left common carotid</td><td class="co was">(490,236)</td><td class="was">3 — left subclavian</td><td class="now">branch 2, <span class="co">~(453,240)</span></td></tr>
+        <tr><td class="k">Left subclavian</td><td class="co">(484,252)</td><td>3 — correct, but now shared</td><td class="now">unchanged</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="prose">Branch 1 — the real brachiocephalic, the only one that visibly bifurcates — carries no label. Separately: this gallery ships at <span class="co">915×1373</span>; the standard is <span class="co">1024×1536</span>.</p>
+
+  <h3>bph page 2 — the worst page in the order</h3>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Label</th><th>Ends at</th><th>What is there</th><th>Should end at</th></tr></thead>
+      <tbody>
+        <tr><td class="k">Seminal vesicle</td><td class="co was">(683,180)</td><td class="was">the bladder wall at its base</td><td class="now">the retrovesical chain, <span class="co">~(800,175)</span></td></tr>
+        <tr><td class="k">Detrusor muscle</td><td class="co was">~(816,160)</td><td class="was">fascia lateral to that chain</td><td class="now">the muscular bladder wall</td></tr>
+        <tr><td class="k">Pubic symphysis</td><td class="co was">(666,285)</td><td class="was">the root of the penis</td><td class="now">the cream ovoid, <span class="co">(662,225)</span></td></tr>
+        <tr><td class="k">Testis</td><td class="co was">(628,362)</td><td class="was">the penile shaft</td><td class="now">the pink ovoid, <span class="co">(683,362)</span></td></tr>
+        <tr><td class="k">Scrotum</td><td class="co was">(628,390)</td><td class="was">the glans penis</td><td class="now">the scrotal sac, <span class="co">x 660–730</span></td></tr>
+        <tr><td class="k">Periprostatic venous plexus</td><td class="co was">(738,232)</td><td class="was">inside the right prostate lobe</td><td class="now">the veins outside the gland</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="note">
+    <p>The seminal vesicle on this figure is labelled "Detrusor muscle" and the bladder wall is labelled "Seminal vesicle". They approach from opposite sides, so this is not a swapped pair — each is displaced in a way that lands on the other's target.</p>
+    <p><strong>Worth knowing before re-rendering:</strong> the prostate spans <span class="co">x 690–780</span>, split at the midline urethra at <span class="co">x ≈ 728</span>, and the pubic symphysis is a separate pale ovoid at <span class="co">x 645–680</span>. At low magnification they read as one mass, which is very likely how "Pubic symphysis" ended up on the penile root.</p>
+    <p><strong>Testis and Scrotum are layout problems.</strong> The penis is drawn between the label column and the testis, so correct leaders would visibly run through it — please re-site those two labels rather than lengthening their leaders. Six further rows on this page are carried over unverified.</p>
+  </div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">C</span><h2>Rows where the stated fix is the wrong fix</h2></div>
+  <p class="prose">Each of these is a real defect. In each, moving the leader is not the correction — please read the reason before scheduling them as line-placement work.</p>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Gallery / page</th><th>Label</th><th>Why a line move is wrong</th><th>What to do instead</th></tr></thead>
+      <tbody>
+        <tr><td class="k">croup p2</td><td>Trachea</td><td class="was">the label column is taller than the airway; every correct route crosses ~100 px of lung</td><td class="now">raise the label beside the trachea</td></tr>
+        <tr><td class="k">b12-anemia p2</td><td>marker 3</td><td class="was">right place, wrong numeral — the legend's item 4 is Duodenum and no 4 exists on the figure</td><td class="now">renumber it 4; add a 3 on the gastric body</td></tr>
+        <tr><td class="k">thrombocytopenia p2</td><td>Sinusoid</td><td class="was">the stroke is collinear with a megakaryocyte pseudopod; erasing it shortens the proplatelet the panel teaches</td><td class="now">end the leader at the crossing, <span class="co">(485,580)</span></td></tr>
+        <tr><td class="k">gi-bleed p1</td><td>Duodenum (First part)</td><td class="was">the bulb is 100 px above and left of the label; any leader doubles back or climbs the whole duodenum</td><td class="now">move the label level with the bulb, <span class="co">y 560–590</span></td></tr>
+        <tr><td class="k">gi-bleed p2</td><td>Cardia</td><td class="was">the dot straddles the organ silhouette; no clone donor reconstructs it</td><td class="now"><span class="co">(534,337) → (410,320) → (400,378)</span></td></tr>
+        <tr><td class="k">myasthenia p2</td><td>Basal lamina</td><td class="was">the column is anatomically inverted — basal lamina lies external to the postsynaptic membrane</td><td class="now">move the label above it; endpoint <span class="co">(264,617)</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="prose">Dr. Kreithen has ruled on the two anatomical questions in that table: the first part of the duodenum is the segment immediately distal to the pylorus — the pylorus is at <span class="co">(140,558)</span>, the bulb runs <span class="co">(112,572) → (105,585)</span> — and the basal lamina is the pale lining on the cleft-facing surface of the junctional folds.</p>
+</section>
+
+<footer>
+  <p>Findings were produced by automated inspection at magnification and re-measured by hand. Rows not listed here are unchanged from the original order and have not been verified.</p>
+</footer>
+
+</div>
