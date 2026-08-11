@@ -4,10 +4,12 @@ The largest page in the order: 27 labels, 15 flagged to move, 4 to check. **It n
 nothing here is being corrected locally.
 
 This sheet verifies the **NEPHRON (FUNCTIONAL UNIT)** panel completely, because that is the panel the
-brief leads with and it turns out to be exactly as described. It also **withdraws one claim** about
-the BLOOD SUPPLY panel pending a second look — see the last section.
+brief leads with and it turns out to be exactly as described. It also **confirms the BLOOD SUPPLY
+panel's series is inverted**, after a first draft of this sheet wrongly said otherwise — if you
+received that draft, read the correction in the BLOOD SUPPLY section below.
 
-*Verified on the shipped page (1024×1536) at 6×, 2026-08-10. Coordinates are page pixels.*
+*Verified on the shipped page (1024×1536); the nephron panel at 6×, the blood-supply endpoints at
+11×, 2026-08-10. Coordinates are page pixels.*
 
 ---
 
