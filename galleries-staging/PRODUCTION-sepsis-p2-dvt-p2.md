@@ -47,3 +47,9 @@ contrast with the open cusps beside it is the teaching point — or drop the lab
 **Row 3 (Lumen, cross-section inset) we are leaving flagged and not measured.** The inset vessel is
 only ~103 px across with 3–5 px layers, which is at the limit of what the shipped page can settle.
 Please judge it at source.
+
+---
+
+## Page sizes
+
+`dvt` ships at **913×1373** against the 1024×1536 standard. A re-render fixes labels and size in one pass — please do both. `sepsis` is already 1024×1536.

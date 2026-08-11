@@ -61,3 +61,9 @@ place — and row 7 has the side inverted on top of that.
 
 *Rows 3, 4 and 8 are the auditors' [CHECK] calls and we have not re-measured them; they are stated
 here as the order gives them. Rows 1, 2, 5, 6, 7, 9 and 10 are confirmed against the shipped page.*
+
+---
+
+## Please also export at the standard size
+
+This gallery ships at **800×1200**; the standard is **1024×1536**. A re-render fixes the labels and the size in one pass — please do both rather than re-rendering it small and revisiting later.

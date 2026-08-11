@@ -810,7 +810,18 @@ tangent.
 
 ---
 
-# NOT YET DEPLOYED — staged after v96
+# SHIPPED as v97, 2026-08-11
+
+> Entry 19 is live — app repo `60c3e29`, `v97-ADDISONS-P2-ZONA-LEADERS`. PDF rebuilt at q72;
+> `verify_gallery_pdfs.py` compared 1,020 pages across 102 galleries with no drift; page, thumb and
+> PDF all byte-correct from `origin/main`.
+>
+> **One thing this deploy nearly shipped wrong.** The PDF rebuild was first run as the tail of a
+> chained command that had `cd`'d into the app repo, so `scripts/rebuild_gallery_pdf.py` did not
+> exist at that path — and `2>&1 >/dev/null` swallowed the error. The PDF was silently left at its
+> v95 bytes while the page changed underneath it, which is exactly the drift
+> `verify_gallery_pdfs.py` exists to catch. It was caught by checking `git diff --quiet` on the PDF,
+> not by the verifier, which had not run yet. **Do not suppress stderr on a build step.**
 
 ## 19. `addisons` page 2 — two zona leaders overshot the cortex into the medulla
 
