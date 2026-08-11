@@ -106,6 +106,13 @@ with questions.
 | `PRODUCTION-gdm-p2.md` | the placenta label points at the baby's head; a colour-convention question for you |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
+**Tranche 5 — the four pages where a reader acts and is wrong:**
+https://claude.ai/code/artifact/bc8d3958-4e7c-4d95-8f76-2e4957319bbc
+`stroke` p1, `labor` p2, `preeclampsia` p2, `gdm` p2 — **24 rows, 20 confirmed**, 2 carried, 2 held
+for you. Sent short and early on purpose. It opens by saying plainly that these four came out of
+**re-reading** the triage, not from it, and warns production not to treat the rest of the order as
+cosmetic. Checked light/dark at 1100 px and at 390 px, no horizontal scroll, no page errors.
+
 **Tranche 4 — the six biggest remaining pages:**
 https://claude.ai/code/artifact/5d1444fa-7758-43d6-bb53-a71d8e26fb5c
 Covers `pneumothorax`, `cdiff`, `hepatitis`, `ckd`, `gerd` and `hypothyroid` p2 — **63 rows, 55
