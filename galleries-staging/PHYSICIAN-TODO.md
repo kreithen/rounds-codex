@@ -65,7 +65,8 @@ with questions.
 
 | sheet | what it asks for |
 |---|---|
-| `PRODUCTION-BRIEF-leader-lines.md` | the two template faults causing most of the 553 findings |
+| `PRODUCTION-BRIEF-leader-lines.md` | **REISSUED 2026-08-11** — now eight template faults, not five |
+| `PRODUCTION-artwork-needed.md` | the 9 rows that need an illustrator, not a re-render — fault 6 in one place |
 | `PRODUCTION-H7-sensation-map-redraw.md` | MSK H7 — the deep peroneal nerve map redrawn |
 | `PRODUCTION-pericarditis-p4-ECG.md` | the ECG strip redrawn with PR depression actually present |
 | `PRODUCTION-aortic-stenosis-p2.md` | heart anatomy page |

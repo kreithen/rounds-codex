@@ -1,9 +1,26 @@
-# For production: two template faults are putting label leader lines on the wrong structures
+# For production: eight template faults are putting label leader lines on the wrong structures
 
 Send this now, ahead of the page-by-page list. It describes **how** the defect is produced. The
 page list is a symptom; this is the cause, and fixing it stops new batches arriving broken.
 
 Full findings: `Rounds-Codex-leader-line-corrections.docx`.
+
+> ## REISSUED 2026-08-11 — this replaces the version you have
+>
+> The brief you received described **five** faults. Measuring 47 of the 81 pages since then has added
+> **three more**, each seen on four or more separate pages:
+>
+> - **Fault 6** — the label names a structure the page does not draw. **11 instances.** No leader move
+>   can fix these; they need artwork.
+> - **Fault 7** — the label list and the marker set do not match: a legend entry with no marker, or a
+>   label with no leader. **6 instances.**
+> - **Fault 8** — a leader with two endpoints, or a leader with no label. **5 instances.**
+>
+> Faults 6, 7 and 8 are at the end of this document. **Fault 6 has its own sheet** —
+> `PRODUCTION-artwork-needed.md` — because it is illustrator work rather than a re-render and may go
+> to a different person or schedule.
+>
+> Nothing above fault 6 has changed.
 
 ---
 
@@ -149,6 +166,100 @@ where that is true.
 
 ---
 
+## Fault 6 — the label names a structure the page does not draw
+
+*Added 2026-08-11. Eleven instances across nine pages.*
+
+**This is the one that will come back to you as "cannot locate target" if we do not say it up front.**
+The leader is not misplaced; there is nothing on the page for it to point at. We checked each of these
+across the whole figure at 5x or better before saying so.
+
+| page | label | what is missing |
+|---|---|---|
+| `stroke` p1 | Circle of Willis, Basilar, PCA, ACA | **four labels at once.** The figure is a lateral view showing cervical arteries and cortical surface branches. All four name basal or medial vessels that this projection cannot show |
+| `parkinsons` p2 | Substantia nigra pars reticulata | no SN is drawn in the sagittal panel — midbrain and pons are one undifferentiated tan column. The SNc label already lands in it with nothing to mark |
+| `parkinsons` p2 | Internal capsule | no white-matter lamina anywhere in that panel |
+| `migraine` p2 | D - Superficial temporal artery | no extracranial vessel anywhere over the scalp or temple. The leader points at an *intracranial* branch |
+| `schizophrenia` p2 | Pituitary Gland | no gland or stalk under the hypothalamus. The double-headed arrow is a badge-to-label connector and is fine as drawn - the gap is the organ |
+| `uti` p2 | 8 Ureterovesical junction | the ureter passes *behind* the bladder and ends at the silhouette; no oblique intramural segment is drawn |
+| `hepatitis` p2 | Coronary ligament | a peritoneal reflection on the **superior and posterior** surface. An anterior view cannot show it at all |
+| `hypothyroid` p2 | Hyoid bone | no bone-like structure anywhere above the thyroid cartilage |
+| `dementia` p2 | Fornix | no separately drawn fornix; the arch beneath the corpus callosum is not differentiated from the callosal band |
+
+**A pattern worth noticing:** three of these are structures that are **drawn correctly elsewhere on
+the same page** - `uti`'s UVJ in its relationships strip, `parkinsons`' substantia nigra in its own
+midbrain panel, and `stroke` p1's basal vessels are exactly what a circle-of-Willis inset would show.
+The detail exists; it did not reach the main figure. So the fix is often to copy a panel's detail into
+the main figure, not to draw something new.
+
+**What this suggests:** the label list is being written from the topic rather than from the artwork,
+and then applied. On `stroke` p1 the effect is unmistakable - the seven-vessel list is the standard
+teaching list for cerebral circulation, and four of the seven simply are not in a lateral view.
+
+**Each of these needs a decision, not a coordinate**, and they are collected with their options in
+`PRODUCTION-artwork-needed.md`.
+
+---
+
+## Fault 7 — the label list and the marker set do not match
+
+*Added 2026-08-11. Six instances.*
+
+Two directions, same underlying failure: **the label list and the drawn marks were assembled
+separately and never reconciled.**
+
+**A legend entry whose marker was never drawn** - the reader looks for a number that is not there:
+
+| page | legend entry | what we found |
+|---|---|---|
+| `gerd` p2 | 7 Stomach (cardia) | swept the panel at y 240-480 and y 460-610: **markers 1 to 6 only** |
+| `meningitis` p2 | 4 Cerebral aqueduct | **no 4 marker anywhere on the figure**; the leader ends on the anterior horn of the lateral ventricle |
+| `meningitis` p2 | 6 Median aperture | **no 6 marker anywhere**; the leader ends on inner skull base |
+| `lymphoma` p2 | 5 Mediastinal Lymph Nodes | **no 5 marker or leader anywhere** on the body figure - the right-hand column runs 2,3,4,6,7,8,9 |
+| `gout` p2 | 5 Other metatarsals (2-5) | **no numbered 5 badge anywhere on the foot**; the leader ends on empty background at the legend box edge |
+
+**A label with no leader at all** - the converse:
+
+| page | label | what we found |
+|---|---|---|
+| `hyperkalemia` p2 | Descending Limb | a square bracket at x = 872 spanning y 406-533 is fed by **two** horizontals - "Loop of Henle" at y 438 and "Ascending Limb" at y 504 - and **"Descending Limb" at y 462 has no line**. So neither limb of the loop is individually identified, on the panel the whole page depends on |
+
+**A practical check:** count the numbered markers on the artwork and compare to the legend. It takes
+seconds and it is exact. Where a group label shares a bracket with one of its own sub-items, check
+that every sub-item has its own leader.
+
+---
+
+## Fault 8 — a leader with two endpoints, or with no label
+
+*Added 2026-08-11. Five instances.*
+
+**A leader with two endpoints gives the reader two answers.** Where the two land on different
+structures, it is not a near-miss - it is an unresolvable label.
+
+| page | label | the two endpoints |
+|---|---|---|
+| `dementia` p2 | Hippocampus | **two ring terminators**, (376,566) on the green hippocampus's outer rim and (388,573) on the pink cerebellum - straddling the boundary between the two structures |
+| `cdiff` p2 | Right colic a. | an arrowhead at (122,1117) on the colon wall **and** a separate dash ending at (142,1118) in black background |
+| `cdiff` p2 | Inferior mesenteric v. | two dots, (481,1143) and (481,1160) - both on the wrong side of the body, so the second tip compounds rather than rescues |
+| `stroke` p2 | External Carotid Artery | dashed, terminating **twice**: a round dot at (145,808) and a dash at x ~ 158 |
+| `migraine` p2 | A - Dura mater | a bar at (521.5,306.5) and a second, fainter tip at (510,310). Please check at source whether this label carries two leaders |
+
+**A leader with no label** - the orphan:
+
+| page | what we found |
+|---|---|
+| `leukemia` p2 | **a line segment ends on a golden fat cell and connects to no label**, while the "Adipocyte (fat cell)" label points into the lumen of a large red blood vessel. The correct target has a leader; the leader has no label |
+
+**What this suggests:** leaders are being edited after placement - shortened, re-aimed or duplicated -
+without the old segment being removed. The `leukemia` case is the clearest: something once pointed at
+the right cell.
+
+**A practical check:** every label has exactly one terminator, and every terminator belongs to exactly
+one label. Both halves are countable.
+
+---
+
 ## What the clean pages do differently — the actionable recommendation
 
 `acs` page 1 is clean, and both `acs` pages 1 and 2 are built differently from the rest: **numbered
@@ -175,8 +286,16 @@ not to the label's row.
 
 ## Two smaller notes from the same pass
 
-- **`aortic-dissection` page 1 ships at 915x1373.** The standard is 1024x1536. Please export at the
-  standard size.
+- **Sixteen galleries in the order ship off-standard, and this now blocks verification.** That has
+  its own consolidated sheet - `PRODUCTION-export-sizes.md` - which replaces the per-page size notes.
+  It carries the measurement that makes the case: on `pneumothorax` p2 the four labelled pleural
+  layers are **four pale lines one or two pixels wide with three-pixel gaps**, and a leader terminator
+  on that page is about 4 px across. Nine rows across the review could not be verified, and **all nine
+  are on those pages.**
+- **A terminator must not be painted in a colour the figure assigns to a tissue class.** On `stroke`
+  p1 the MCA and ACA leaders are drawn in gold and end in gold blobs - the same amber the figure uses
+  for the **penumbra**. The MCA terminator sits in a cortical sulcus 60 px from the artery, and reads
+  as artwork. White, as on the thrombus leader on the same page, would have made it obvious.
 - **A correct leader is sometimes impossible without re-laying-out the label column.** On
   `aortic-dissection` page 1 the "Aortic arch" label sits third down the left column while the arch
   is at the top right, so a correct leader has to cross the ascending aorta. That is very likely
@@ -191,6 +310,12 @@ not to the label's row.
 2. Re-rendered pages from source, from the list in the accompanying document, once the template is
    corrected — re-rendering from source keeps every other pixel of the page intact, which no fix on
    our side can match.
+3. **For faults 7 and 8, a check you can run before delivery rather than after:** count the numbered
+   markers against the legend, and count terminators against labels. Both are exact and neither needs
+   anatomical knowledge. Between them they would have caught 11 of the findings in this brief.
+4. **For fault 6, a decision per row** — see `PRODUCTION-artwork-needed.md`. Those cannot be scheduled
+   with the re-renders because they need an illustrator, and if they are treated as leader moves they
+   will come back as "cannot locate target".
 
 **The 81-page list is complete and ready to work from.** Dr. Kreithen approves by page, so please
 start from the sheets he has signed rather than the whole order at once.
