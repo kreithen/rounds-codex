@@ -103,6 +103,7 @@ with questions.
 | `PRODUCTION-stroke-p1.md` | **the worst page yet** — 5 cerebral-artery labels outside the skull; 4 name vessels a lateral view cannot show |
 | `PRODUCTION-labor-p2.md` | "Vagina" inside the rectum; the right-hand column displaced one position |
 | `PRODUCTION-preeclampsia-p2.md` | the heart and the aorta are both dots in the right lung |
+| `PRODUCTION-gdm-p2.md` | the placenta label points at the baby's head; a colour-convention question for you |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
 **Tranche 4 — the six biggest remaining pages:**
@@ -147,6 +148,17 @@ needing a re-render, and rows where the stated fix is the wrong fix. **That file
 me** — LibreOffice cannot load any docx in this container, confirmed against the *original* work
 order, which fails identically. Send the link; send the docx only if they ask for it, and glance at
 it first.
+
+## 2b. One clinical question I cannot answer from a render — `gdm` p2
+
+The PLACENTA (ENLARGED) panel labels an umbilical **vein** and umbilical **arteries**, and the work
+order reports both leaders on the wrong vessels. But in the umbilical circulation the colour
+convention is inverted relative to the rest of the body — the vein carries **oxygenated** blood and is
+drawn **red**, the arteries carry deoxygenated blood and are drawn **blue**.
+
+So either the panel's colours are wrong (recolour the vessels, leave the leaders) or the leaders are
+wrong (move the leaders, leave the colours). **Opposite fixes, and I cannot tell which from the
+render.** Nothing on that panel goes to production until you look at it.
 
 ## 3. Two Higgsfield generations were never retrieved
 
