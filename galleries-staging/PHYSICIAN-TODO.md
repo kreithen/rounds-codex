@@ -12,8 +12,8 @@ Nothing on this list is launch-blocking.
 2. **Worst-teaching first**, not index order — rank pages by how wrong they teach, so the damaging
    errors reach production early even if the tail runs long.
 3. **[CHECK] rows get resolved on pages I am already working**, not as a separate pass.
-4. **Reissue the work order as a corrected docx**, with my measured coordinates replacing the
-   auditors' where they differ and each override marked — one document, not two.
+4. **Reissue the work order corrected**, with my measured coordinates replacing the auditors' where
+   they differ and each override marked — one document, not two. (Format superseded by 9.)
 5. **Deploy every 3–4 corrected panels.**
 6. **Sample pages 3–10** to find out whether the defect extends beyond the audited pages. Done —
    see `SWEEP-pages-3-10.md`, and section 5 below.
@@ -77,13 +77,12 @@ https://claude.ai/code/artifact/2641d8d4-b845-4dc1-8e7d-43b1edb28e5d
 in light and dark at 1100 px and at 390 px on a phone, no horizontal scroll, no page errors. That is
 the whole reason for switching format.
 
-`Rounds-Codex-leader-line-CORRECTED-tranche-1.docx` is the same content as an editable file — 19 measured pages in
-three sections: already fixed in-app, verified-needs-re-render, and rows where the stated fix is the
-wrong fix. It supersedes the corresponding pages of the original order.
-
-if production wants one. **That file is still unseen by me** — LibreOffice cannot load any docx in
-this container, confirmed against the *original* work order, which fails identically. Send the link;
-send the docx only if they ask, and glance at it first.
+`Rounds-Codex-leader-line-CORRECTED-tranche-1.docx` holds the same content as an editable file if
+production wants one — 19 measured pages in three sections: already fixed in-app, verified and
+needing a re-render, and rows where the stated fix is the wrong fix. **That file is still unseen by
+me** — LibreOffice cannot load any docx in this container, confirmed against the *original* work
+order, which fails identically. Send the link; send the docx only if they ask for it, and glance at
+it first.
 
 ## 3. Two Higgsfield generations were never retrieved
 
