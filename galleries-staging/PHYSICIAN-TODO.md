@@ -15,12 +15,13 @@ Nothing on this list is launch-blocking.
 4. **Reissue the work order as a corrected docx**, with my measured coordinates replacing the
    auditors' where they differ and each override marked — one document, not two.
 5. **Deploy every 3–4 corrected panels.**
+6. **Sample pages 3–10** to find out whether the defect extends beyond the audited pages. Done —
+   see `SWEEP-pages-3-10.md`, and section 5 below.
 7. **I add coordinates and flag doubts; I do not overturn the auditors' findings.** Where I cannot
    reproduce a row I write "could not reproduce — please check before acting", not "withdrawn".
    Taken after I contradicted the order twice in one day and was wrong both times.
-8. **Reissue the corrected order in rolling tranches**, by gallery, as pages are verified.
-6. **Sample pages 3–10** to find out whether the defect extends beyond the audited pages. Done —
-   see `SWEEP-pages-3-10.md`, and item 6 below.
+8. **Reissue the corrected order in rolling tranches**, by gallery, as pages are verified — so
+   production can start on verified galleries instead of waiting for all 81.
 
 ---
 
@@ -67,6 +68,15 @@ with questions.
 | `PRODUCTION-bph-p2.md` | the worst page in the order — 12 of 33 labels, incl. two on each other's structure |
 | `PRODUCTION-aki-p2.md` | the nephron panel verified — four labels on one blood vessel; blood-supply series confirmed inverted |
 | `PRODUCTION-aortic-dissection-p2.md` | the arch branches verified — labels shifted one position, two on one vessel |
+
+**`Rounds-Codex-leader-line-CORRECTED-tranche-1.docx` is ready to forward** — 19 measured pages in
+three sections: already fixed in-app, verified-needs-re-render, and rows where the stated fix is the
+wrong fix. It supersedes the corresponding pages of the original order.
+
+**Please open it once before you send it.** I could not render it to look at: LibreOffice is broken
+in this container, and I confirmed that by running it on the *original* work-order docx, which fails
+identically. So the file is structurally sound (22 parts, 5 tables, 46 rows, every spot-checked
+coordinate present) but nobody has seen it laid out.
 
 ## 3. Two Higgsfield generations were never retrieved
 
