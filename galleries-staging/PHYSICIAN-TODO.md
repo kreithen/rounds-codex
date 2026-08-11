@@ -92,6 +92,8 @@ with questions.
 | `PRODUCTION-tb-p2.md` | an alveolar magnifier anchored to a lymph node; page is 800×1200 |
 | `PRODUCTION-pneumothorax-p2.md` | pleura labels inside the lung; four rows blocked by the 800×1200 export |
 | `PRODUCTION-cdiff-p2.md` | both mesenteric vessel labels on bowel wall; mucus and epithelium swapped |
+| `PRODUCTION-hepatitis-p2.md` | porta hepatis labels shuffled across duct, artery and vein |
+| `PRODUCTION-ckd-p2.md` | glomerulus and Bowman's capsule swapped; both arterioles labelled on the wrong side |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
 **Tranche 3 — the ten tier-2 pages:**
