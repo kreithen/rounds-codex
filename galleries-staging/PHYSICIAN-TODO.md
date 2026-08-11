@@ -92,6 +92,21 @@ with questions.
 | `PRODUCTION-tb-p2.md` | an alveolar magnifier anchored to a lymph node; page is 800×1200 |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
+**Tranche 3 — the ten tier-2 pages:**
+https://claude.ai/code/artifact/b9849788-8e8b-4686-ab2f-7616af1b3504
+Covers `parkinsons`, `migraine`, `schizophrenia`, `osteomyelitis`, `seizure`, `suicide`,
+`hyperkalemia`, `nephrolithiasis`, `uti` and `tb` p2 — **50 rows, 47 confirmed as defects**, and
+20 of the auditors' 23 [CHECK] calls turned out to be real. It opens by adding a **sixth fault** to
+the brief: **five labels across four pages name a structure the page does not draw** (parkinsons'
+substantia nigra and internal capsule, migraine's superficial temporal artery, schizophrenia's
+pituitary, uti's UVJ). Those cannot be fixed by moving a line and will otherwise come back from
+production as "cannot locate target". Checked light/dark at 1100 px and at 390 px, no horizontal
+scroll, no page errors.
+
+**Tranche 2's browser tab said "tranche 1"** — the `<title>` was never updated when it was built.
+Fixed and redeployed to the same URL on 2026-08-11; the content is unchanged. If you already
+forwarded it, no need to resend.
+
 **Tranche 2 — the eight worst-teaching pages:**
 https://claude.ai/code/artifact/e68537c6-8508-4607-8f8d-7c084eea1bd6
 Checked the same way: light and dark at 1100 px, 390 px on a phone, no horizontal scroll, no page

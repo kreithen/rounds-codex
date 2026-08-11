@@ -1,0 +1,185 @@
+<title>Leader-line corrections — corrected work order, tranche 3</title>
+<style>
+  :root{
+    --bg:#F6F8FA; --panel:#FFFFFF; --ink:#151A21; --muted:#5A6572;
+    --rule:#D6DCE4; --rule-soft:#E7ECF1;
+    --accent:#0E5A6B; --wrong:#9E322A; --right:#1C6448; --band:#EEF2F6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#11141A; --panel:#171B22; --ink:#E6EBF1; --muted:#98A3B1;
+      --rule:#2A313B; --rule-soft:#222932;
+      --accent:#5EB8C8; --wrong:#E4948B; --right:#74C8A2; --band:#1B212A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#11141A; --panel:#171B22; --ink:#E6EBF1; --muted:#98A3B1;
+    --rule:#2A313B; --rule-soft:#222932;
+    --accent:#5EB8C8; --wrong:#E4948B; --right:#74C8A2; --band:#1B212A;
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--bg); color:var(--ink);
+    font:400 16.5px/1.62 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    margin:0; padding:44px 22px 90px;
+  }
+  .wrap{max-width:960px; margin:0 auto; display:flex; flex-direction:column; gap:34px}
+  .prose{max-width:70ch}
+  h1,h2,h3{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; text-wrap:balance; margin:0}
+  h1{font-size:2.15rem; line-height:1.18; letter-spacing:-.012em; font-weight:600}
+  h2{font-size:1.42rem; line-height:1.25; font-weight:600}
+  h3{font-size:1.08rem; line-height:1.3; font-weight:600; color:var(--accent)}
+  p{margin:0}
+  .eyebrow{
+    font:600 11.5px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    letter-spacing:.16em; text-transform:uppercase; color:var(--muted);
+  }
+  header{display:flex; flex-direction:column; gap:12px; padding-bottom:26px; border-bottom:2px solid var(--rule)}
+  .meta{font:400 13.5px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; color:var(--muted)}
+  section{display:flex; flex-direction:column; gap:16px}
+  .sec-head{display:flex; align-items:baseline; gap:14px; border-bottom:1px solid var(--rule); padding-bottom:9px}
+  .sec-letter{
+    font:600 13px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    color:var(--bg); background:var(--accent); border-radius:3px;
+    padding:6px 8px; letter-spacing:.06em; flex:none;
+  }
+  .scroll{overflow-x:auto; border:1px solid var(--rule); border-radius:5px; background:var(--panel)}
+  table{border-collapse:collapse; width:100%; min-width:640px; font-size:14.2px}
+  caption{text-align:left; padding:11px 14px 0; color:var(--muted); font-size:13.5px}
+  th{
+    text-align:left; font:600 11.5px/1.35 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    letter-spacing:.1em; text-transform:uppercase; color:var(--muted);
+    padding:12px 14px; border-bottom:1px solid var(--rule); white-space:nowrap;
+  }
+  td{padding:10px 14px; border-bottom:1px solid var(--rule-soft); vertical-align:top}
+  tr:last-child td{border-bottom:0}
+  tbody tr:nth-child(even){background:var(--band)}
+  td.k{font-weight:600; white-space:nowrap}
+  .co{font:400 13.4px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-variant-numeric:tabular-nums}
+  .was{color:var(--wrong)}
+  .now{color:var(--right)}
+  .note{
+    border-left:3px solid var(--accent); background:var(--panel);
+    padding:14px 18px; border-radius:0 5px 5px 0; display:flex; flex-direction:column; gap:9px;
+  }
+  .note.warn{border-left-color:var(--wrong)}
+  strong{font-weight:650}
+  footer{border-top:1px solid var(--rule); padding-top:18px; color:var(--muted); font-size:13.5px; max-width:70ch}
+  a{color:var(--accent)}
+</style>
+
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Rounds Codex · production</p>
+  <h1>Leader-line corrections — corrected work order, tranche 3</h1>
+  <p class="meta">10 pages measured against the shipped artwork · 11 August 2026</p>
+</header>
+
+<div class="prose" style="display:flex;flex-direction:column;gap:14px">
+  <p>Tranche 3 covers the second tier of the triage: <strong>parkinsons, migraine, schizophrenia, osteomyelitis, seizure, suicide, hyperkalemia, nephrolithiasis, uti</strong> and <strong>tb</strong>, all page 2. Fifty rows were flagged across them. <strong>Forty-seven are measured and confirmed as defects</strong>; the three we are not calling are set out in section 5, with the reason in each case. Twenty-three of the fifty were the auditors' <strong>[CHECK]</strong> calls — flagged rather than asserted — and <strong>twenty of the twenty-three turned out to be real</strong>.</p>
+  <div class="note warn">
+    <p><strong>A sixth fault, and it is the one that cannot be fixed by moving a line.</strong> Five labels across four pages in this batch name a structure that <em>is not drawn on the page at all</em>. Section 2 lists them. Please read that section before scheduling the batch, because those five need artwork, not a re-route, and they will otherwise come back as "cannot locate target".</p>
+  </div>
+</div>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">1</span><h2>The dominant shape: a label lands on its neighbour's structure</h2></div>
+  <p class="prose">This is fault 3 in the brief, and in this batch it is not an occasional slip — it is most of the findings. In nearly every case <strong>the neighbouring label is correct</strong>, so the two sit on one structure and the second structure goes unlabelled.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Page</th><th>The label that is wrong</th><th>Ends at</th><th>Sitting on the structure named by</th><th>Should end at</th></tr></thead>
+    <tbody>
+      <tr><td class="k">parkinsons p2</td><td>Thalamus <em>(right column)</em></td><td class="co was">(396,551)</td><td class="was">Red nucleus — as does <strong>SNr</strong> at <span class="co">(393,568)</span>. Three leaders on a 26×34 px sphere</td><td class="now"><span class="co">(368,528)</span> the blue body</td></tr>
+      <tr><td class="k">parkinsons p2</td><td>Thalamus <em>(left column)</em></td><td class="co was">(300,548)</td><td class="was">Globus pallidus (internal), 20.7 px away at (283,537)</td><td class="now"><span class="co">(368,528)</span></td></tr>
+      <tr><td class="k">schizophrenia p2</td><td>Corpus Callosum</td><td class="co was">(489,424)</td><td class="was">the thalamus — while passing straight <em>through</em> the callosal band at y 374–396</td><td class="now"><span class="co">(489,386)</span></td></tr>
+      <tr><td class="k">schizophrenia p2</td><td>Cerebellum</td><td class="co was">(583,684)</td><td class="was">the brainstem/cord, where <strong>Spinal Cord</strong> correctly points 39 px lower</td><td class="now"><span class="co">(640,530)</span></td></tr>
+      <tr><td class="k">seizure p2</td><td>Basal ganglia</td><td class="co was">(496,452)</td><td class="was">the magenta thalamus, 27 px from the Thalamus dot</td><td class="now"><span class="co">(552,452)</span> the violet shell</td></tr>
+      <tr><td class="k">seizure p2</td><td>Axon</td><td class="co was">(253,1143)</td><td class="was">a myelin internode — so does <strong>Myelin sheath</strong>, 62 px away</td><td class="now"><span class="co">(268,1152)</span> a node of Ranvier</td></tr>
+      <tr><td class="k">suicide p2</td><td>Hippocampus</td><td class="co was">(359,578)</td><td class="was">the violet raphe sphere, 33 px from the Raphe Nuclei arrowhead</td><td class="now"><span class="co">(305,580)</span> the plum band</td></tr>
+      <tr><td class="k">migraine p2</td><td>A — Dura mater</td><td class="co was">(521.5,306.5)</td><td class="was">the superior sagittal sinus, which <strong>B</strong> names 45 px along the same vessel</td><td class="now"><span class="co">(470,283)</span></td></tr>
+      <tr><td class="k">osteomyelitis p2</td><td>Volkmann's canal</td><td class="co was">(783,622)</td><td class="was">an osteocyte lacuna — same dogleg, same target class as <strong>Lacunae</strong> 110 px above</td><td class="now"><span class="co">(766,548)</span></td></tr>
+      <tr><td class="k">osteomyelitis p2</td><td>Haversian canal</td><td class="co was">(738,421)</td><td class="was">the lamellar rings, 29 px from <strong>Concentric lamellae</strong></td><td class="now"><span class="co">(790,402)</span></td></tr>
+      <tr><td class="k">hyperkalemia p2</td><td>② Renal Medulla</td><td class="co was">(347,451)</td><td class="was">the intact kidney's capsule — the same surface <strong>① Renal Cortex</strong> marks</td><td class="now"><span class="co">(533,435)</span> a pyramid in the cut kidney</td></tr>
+      <tr><td class="k">nephrolithiasis p2</td><td>Medulla (renal pyramids)</td><td class="co was">(818,856)</td><td class="was">the cortical band, 51 px from <strong>Cortex</strong></td><td class="now"><span class="co">(795,860)</span></td></tr>
+      <tr><td class="k">tb p2</td><td>Alveolar macrophage</td><td class="co was">(403,674)</td><td class="was">a pink alveolus, which <strong>Alveolus (air sac)</strong> names</td><td class="now"><span class="co">(368,678)</span></td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>uti p2 is the extreme case — three of five labels on one structure</h3>
+  <p class="prose">In the KIDNEY panel, the pyramids are red (G ≈ B) and the collecting system is gold (G well above B), so sampling separates them without judgement. <strong>Renal pelvis</strong> <span class="co was">(844,347)</span>, <strong>Major calyx</strong> <span class="co was">(842,390)</span> and <strong>Minor calyx</strong> <span class="co was">(830,417)</span> all sample red — all three are on medullary pyramids, the structure <strong>Medulla</strong> already names one row above. The entire tan collecting system is drawn in full and carries no label at all. Targets: <span class="co now">(793,350)</span>, <span class="co now">(803,372)</span>, <span class="co now">(816,378)</span> — each 30–45 px left, so the leaders keep their shape.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">2</span><h2>NEW — fault 6: the label names something the page does not draw</h2></div>
+  <p class="prose">These five cannot be fixed by moving a leader, because there is nothing to move it to. We checked each one across the whole figure before saying so.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Page</th><th>Label</th><th>What is missing</th><th>What to do</th></tr></thead>
+    <tbody>
+      <tr><td class="k">parkinsons p2</td><td>Substantia nigra pars reticulata</td><td class="was">no substantia nigra is drawn in the sagittal panel — midbrain and pons are one undifferentiated tan column, <span class="co">x 330–395, y 540–640</span>. The <strong>SNc</strong> label already lands inside it with nothing to mark</td><td class="now">draw an SN band into the midbrain, SNc and SNr as its two layers. The page's own SUBSTANTIA NIGRA (MIDBRAIN) panel is the reference</td></tr>
+      <tr><td class="k">parkinsons p2</td><td>Internal capsule</td><td class="was">no white-matter lamina anywhere in that panel; the leader ends on the seam between pallidum and thalamus at <span class="co">(377,512)</span></td><td class="now">draw a capsular band, or carry the label on the coronal panel, which has the room</td></tr>
+      <tr><td class="k">migraine p2</td><td>D — Superficial temporal artery</td><td class="was">no extracranial vessel exists anywhere over the scalp or temple. The leader points at an <em>intracranial</em> branch at <span class="co">(595,478)</span>, on the same tree label C calls the middle meningeal</td><td class="now">draw the STA into the scalp, or take the label off this figure</td></tr>
+      <tr><td class="k">schizophrenia p2</td><td>Pituitary Gland</td><td class="was">no pituitary or stalk under the hypothalamus. The double-headed arrow to <span class="co">(495,650)</span> is a badge-to-label connector and is fine as drawn — the gap is the organ</td><td class="now">draw the gland and stalk; leave the connector alone</td></tr>
+      <tr><td class="k">uti p2</td><td>⑧ Ureterovesical junction</td><td class="was">the ureter passes <em>behind</em> the bladder and ends at the silhouette; no oblique intramural segment is drawn. The leader sits 43 px low, at <span class="co">(565,771)</span></td><td class="now">move to <span class="co">(560,727)</span> <em>and</em> draw the oblique entry. The page's own UVJ panel in the relationships strip already does it</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose">Two of the five — the UVJ and the substantia nigra — are the clinical point of their page, and on both the page draws the structure correctly <em>in a different panel</em>. The detail exists; it just did not reach the main figure.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">3</span><h2>Leaders that are not pointers</h2></div>
+  <p class="prose">A different failure from a leader landing in the wrong place: here the line does not function as a pointer at all.</p>
+
+  <h3>seizure p2 — an arrowhead pointing outward at its own label</h3>
+  <p class="prose">In the THALAMO-CORTICAL NETWORK panel, <strong>Cortical networks</strong> <em>starts</em> at <span class="co was">(531,891)</span> on the right edge of the blue thalamus ovoid and its arrowhead is at the far end, <span class="co was">(583,891)</span>, pointing right at the label text. The <strong>Cortex</strong> leader one line above shows the intended form: horizontal at y = 831, terminator at <span class="co now">(441,831)</span> on the pink cortical band. Reverse the arrow and land it on the band, about <span class="co now">(555,845)</span>.</p>
+
+  <h3>hyperkalemia p2 — one bracket doing two jobs, and a label with no line</h3>
+  <p class="prose">A square bracket at <span class="co">x = 872</span> spanning <span class="co">y 406–533</span> is fed by <strong>two</strong> horizontals — "Loop of Henle" at y = 438 and "<strong>Ascending Limb</strong>" at y = 504 — while "<strong>Descending Limb</strong>" at y ≈ 462 has <strong>no leader at all</strong>. So neither limb is individually identified on the panel the whole page depends on. Keep the bracket for Loop of Henle; give each bullet its own short leader — descending limb <span class="co now">(891,470)</span>, ascending limb <span class="co now">(911,470)</span>. One caution: the ascending limb is drawn <em>behind</em> the vasa recta for most of its length, which is why it reads as absent. Bring it clear, or land the leader at y ≈ 420 or y ≈ 550 where it is visible.</p>
+
+  <h3>suicide p2 — four labels stopping on circuit nodes</h3>
+  <p class="prose">The panel's key defines blue lines as inhibitory circuit arrows, so a blue line is not automatically a pointer — but each of these runs from its own label box and is the only line reaching the drawing.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Label</th><th>Ends at</th><th>What is there</th><th>Should end at</th></tr></thead>
+    <tbody>
+      <tr><td class="k">ACC</td><td class="co was">(339,455)</td><td class="was">the green cingulate band's midpoint to within 3 px — mid-cingulate, not anterior. Band runs x 233–440</td><td class="now"><span class="co">(262,470)</span> the rostral limb</td></tr>
+      <tr><td class="k">DLPFC</td><td class="co was">(402,472)</td><td class="was">82% along that same band — its posterior third. No prefrontal cortex is touched anywhere</td><td class="now"><span class="co">(240,435)</span> rose convexity, or <span class="co">(215,470)</span> the blue frontal lobe — your call, see below</td></tr>
+      <tr><td class="k">OFC</td><td class="co was">(200,507)</td><td class="was">mid medial-frontal cortex, ~40 px above the orbital surface (measured at y 547–555)</td><td class="now"><span class="co">(210,545)</span></td></tr>
+      <tr><td class="k">Amygdala</td><td class="co was">(245,571)</td><td class="was">empty dark background below the frontal lobe, where the orange circuit arrow's head sits. Its own leader is the same orange, which is why it reads as deliberate</td><td class="now"><span class="co">(305,556)</span> the orange sphere</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose">On DLPFC we are handing the choice back: this figure colours the frontal lobe blue and the convexity above it rose, and we cannot tell from the shipped page which was meant to be prefrontal. Pick from your source file.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">4</span><h2>The colour check earns its place again — and three findings that are not in the order</h2></div>
+  <p class="prose"><strong>Fault 5's check is also a tool, not only a defect class.</strong> On <strong>parkinsons</strong> p2 the work order could not decide where the two Thalamus labels belonged, writing the target as "the large purple ovoid (or the blue body)". Sampling the coronal panel's key swatches and then the sagittal structures settled it with no anatomical judgement at all:</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Key entry</th><th>Swatch (x = 718)</th><th>Structure in the sagittal panel</th><th>Sampled</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Caudate nucleus</td><td class="co">(90,113,54)</td><td>the inner C-band</td><td class="co">(72,74,40) at (322,461)</td></tr>
+      <tr><td class="k">Putamen</td><td class="co">(187,138,43)</td><td>the outer C-band</td><td class="co">(218,168,104) at (287,452)</td></tr>
+      <tr><td class="k">Globus pallidus</td><td class="co">(128,92,154)</td><td>the large purple ovoid</td><td class="co">(131,89,152) at (368,485)</td></tr>
+      <tr><td class="k">Thalamus</td><td class="co">(54,112,159)</td><td><strong>the blue body</strong>, x 345–400, y 505–560</td><td class="co">(92,133,172) at (368,528)</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose">One caveat for the anatomist, not for the leader work: the blue body is the only structure carrying the key's thalamus colour, but its trajectory could also read as the cerebral peduncle. Please confirm before re-pointing two labels at it.</p>
+
+  <h3>Three defects the auditors did not have</h3>
+  <p class="prose"><strong>schizophrenia p2 — "Substantia Nigra" is printed twice</strong> in the right-hand label column, at y 570–600 and again at y 620–650, the same two words both times, with leaders ending 6 px apart at <span class="co">(554,545)</span> and <span class="co">(554,551)</span>. One should be a different label or be deleted. The figure has an unlabelled cerebellum immediately above, and the VTA is named in the left-hand text but nowhere on the drawing.</p>
+  <p class="prose"><strong>seizure p2 — "Presynaptic neuron" ends on the panel's frame</strong> at <span class="co">(529,1050)</span>, on the teal circular vignette; the bouton's right edge at that height is x ≈ 495. "Synaptic cleft" has the same shape of problem, smaller: arrowhead at <span class="co">(530,1131)</span>, ~12 px right of the particle field. Both are short-of-target rather than wrong-structure, so lower priority — but they are on the same figure.</p>
+  <p class="prose"><strong>schizophrenia p2 — "Hippocampus" ends on a pathway node</strong> at <span class="co">(456,537)</span>, the lower-left edge of the purple sphere centred at (462,527). We are <em>not</em> calling this one: the hippocampal formation may be drawn underneath the sphere. Please check at source.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">5</span><h2>What is not settled, and page sizes</h2></div>
+  <p class="prose">Three of the fifty rows are not called as defects. One is unverifiable, two are judgement calls we are handing back rather than deciding for you.</p>
+  <p class="prose"><strong>The unverifiable one is unverifiable <em>because of the export size</em>.</strong> On <strong>tb</strong> p2, "Hilar lymph node enlargement" ends at <span class="co">(391,874)</span>, about 8 px lateral of the olive node cluster at <span class="co">x 380–392, y 870–912</span>. The order reports ~20 px. At 800 px wide the nodes and the surrounding parenchyma no longer separate by colour, and at 24× the region is pixel mush — so we can neither confirm nor refute it. Please check it against your 1024×1536 master; if the tip is off the node, move it to <span class="co now">(383,874)</span>.</p>
+  <p class="prose"><strong>tb p2 ships at <span class="co">800×1200</span></strong> against the <span class="co">1024×1536</span> standard, and every tb coordinate in this document is in the shipped page's own pixels — multiply by 1.28 for standard-size equivalents. The other nine pages in this tranche are already at standard size. Please fix labels and size in one pass.</p>
+  <p class="prose"><strong>Two rows we are declining to call, and why.</strong> <em>parkinsons</em> "Motor cortex (Precentral gyrus)" ends at <span class="co">(253,356)</span> on the frontal convexity, which reads as too far forward — but <strong>no central sulcus is drawn</strong>, so there is no landmark on the page to measure against and we will not guess. <em>osteomyelitis</em> "Epiphyseal arteries" at <span class="co">(297,1130)</span> sits 35 px from "Metaphyseal arteries" on the same stretch of cortex; labelling an artery where it enters the bone is a legitimate convention, so the fix we ask for is separating the two so a reader can tell which foramen is which — not moving one to the epiphysis.</p>
+  <p class="prose"><strong>One near-miss on our side, recorded so you do not repeat it.</strong> On <em>osteomyelitis</em> p2 the bone's own silhouette carries a pale blue-grey highlight along <span class="co">x 391–405</span> in the distal third. It reads as a vein at low zoom and is not one — it traces the outline exactly. We nearly gave it as the target for "Venous drainage". The real venous channels run in the medullary cavity at <span class="co">x ≈ 341–348</span> and <span class="co">x ≈ 383–392</span>.</p>
+</section>
+
+<footer>
+  <p>Ten pages, measured 11 August 2026. Thirty-seven pages have now been measured across three tranches; <strong>44 of the original 81 remain at the auditors' coordinates and have not been measured.</strong> Tranches 1 and 2 remain current. Please continue to re-render only from tranches.</p>
+</footer>
+
+</div>
