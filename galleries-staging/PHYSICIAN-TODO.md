@@ -80,6 +80,10 @@ with questions.
 | `PRODUCTION-stroke-p2.md` | both carotid labels land on the vertebral artery |
 | `PRODUCTION-bronchiolitis-p2.md` | "Left main bronchus" in the patient's right lung; wall layers labelled inside out |
 | `PRODUCTION-sci-p2-compartment-p2.md` | fault 5 confirmed by colour sampling on both pages |
+| `PRODUCTION-parkinsons-p2.md` | three leaders — Thalamus, SNr, Red nucleus — on one 26×34 px sphere; the colour key settles it |
+| `PRODUCTION-migraine-p2.md` | "Dura mater" on the superior sagittal sinus; the superficial temporal artery drawn nowhere |
+| `PRODUCTION-schizophrenia-p2.md` | the thalamus is labelled "Corpus Callosum"; "Substantia Nigra" printed twice |
+| `PRODUCTION-osteomyelitis-p2.md` | yellow marrow labelled in the red marrow; Volkmann's canal on an osteocyte lacuna |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
 **Tranche 2 — the eight worst-teaching pages:**
