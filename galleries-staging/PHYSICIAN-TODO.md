@@ -90,6 +90,8 @@ with questions.
 | `PRODUCTION-nephrolithiasis-p2.md` | both renal vessels missed; the bladder label is on the ureter |
 | `PRODUCTION-uti-p2.md` | three of five labels in the kidney panel point at pyramids |
 | `PRODUCTION-tb-p2.md` | an alveolar magnifier anchored to a lymph node; page is 800×1200 |
+| `PRODUCTION-pneumothorax-p2.md` | pleura labels inside the lung; four rows blocked by the 800×1200 export |
+| `PRODUCTION-cdiff-p2.md` | both mesenteric vessel labels on bowel wall; mucus and epithelium swapped |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
 **Tranche 3 — the ten tier-2 pages:**
