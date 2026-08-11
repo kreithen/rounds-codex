@@ -1,0 +1,1161 @@
+<title>Leader-line corrections — corrected work order, Photoshop correction worklist</title>
+<style>
+  :root{
+    --bg:#F6F8FA; --panel:#FFFFFF; --ink:#151A21; --muted:#5A6572;
+    --rule:#D6DCE4; --rule-soft:#E7ECF1;
+    --accent:#0E5A6B; --wrong:#9E322A; --right:#1C6448; --band:#EEF2F6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#11141A; --panel:#171B22; --ink:#E6EBF1; --muted:#98A3B1;
+      --rule:#2A313B; --rule-soft:#222932;
+      --accent:#5EB8C8; --wrong:#E4948B; --right:#74C8A2; --band:#1B212A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#11141A; --panel:#171B22; --ink:#E6EBF1; --muted:#98A3B1;
+    --rule:#2A313B; --rule-soft:#222932;
+    --accent:#5EB8C8; --wrong:#E4948B; --right:#74C8A2; --band:#1B212A;
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--bg); color:var(--ink);
+    font:400 16.5px/1.62 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    margin:0; padding:44px 22px 90px;
+  }
+  .wrap{max-width:960px; margin:0 auto; display:flex; flex-direction:column; gap:34px}
+  .prose{max-width:70ch}
+  h1,h2,h3{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; text-wrap:balance; margin:0}
+  h1{font-size:2.15rem; line-height:1.18; letter-spacing:-.012em; font-weight:600}
+  h2{font-size:1.42rem; line-height:1.25; font-weight:600}
+  h3{font-size:1.08rem; line-height:1.3; font-weight:600; color:var(--accent)}
+  p{margin:0}
+  .eyebrow{
+    font:600 11.5px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    letter-spacing:.16em; text-transform:uppercase; color:var(--muted);
+  }
+  header{display:flex; flex-direction:column; gap:12px; padding-bottom:26px; border-bottom:2px solid var(--rule)}
+  .meta{font:400 13.5px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; color:var(--muted)}
+  section{display:flex; flex-direction:column; gap:16px}
+  .sec-head{display:flex; align-items:baseline; gap:14px; border-bottom:1px solid var(--rule); padding-bottom:9px}
+  .sec-letter{
+    font:600 13px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    color:var(--bg); background:var(--accent); border-radius:3px;
+    padding:6px 8px; letter-spacing:.06em; flex:none;
+  }
+  .scroll{overflow-x:auto; border:1px solid var(--rule); border-radius:5px; background:var(--panel)}
+  table{border-collapse:collapse; width:100%; min-width:640px; font-size:14.2px}
+  caption{text-align:left; padding:11px 14px 0; color:var(--muted); font-size:13.5px}
+  th{
+    text-align:left; font:600 11.5px/1.35 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    letter-spacing:.1em; text-transform:uppercase; color:var(--muted);
+    padding:12px 14px; border-bottom:1px solid var(--rule); white-space:nowrap;
+  }
+  td{padding:10px 14px; border-bottom:1px solid var(--rule-soft); vertical-align:top}
+  tr:last-child td{border-bottom:0}
+  tbody tr:nth-child(even){background:var(--band)}
+  td.k{font-weight:600; white-space:nowrap}
+  .co{font:400 13.4px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-variant-numeric:tabular-nums}
+  .was{color:var(--wrong)}
+  .now{color:var(--right)}
+  .note{
+    border-left:3px solid var(--accent); background:var(--panel);
+    padding:14px 18px; border-radius:0 5px 5px 0; display:flex; flex-direction:column; gap:9px;
+  }
+  .note.warn{border-left-color:var(--wrong)}
+  strong{font-weight:650}
+  footer{border-top:1px solid var(--rule); padding-top:18px; color:var(--muted); font-size:13.5px; max-width:70ch}
+  a{color:var(--accent)}
+  .wrap>*,section>*,.scroll,.prose{min-width:0}
+</style>
+<style>
+  .card{display:grid; grid-template-columns:1.15fr 1fr; gap:16px; align-items:start;
+        border:1px solid var(--rule); border-radius:6px; background:var(--panel); padding:14px; break-inside:avoid;}
+  .cimg img{width:100%; height:auto; display:block; border-radius:4px}
+  .ctxt{display:flex; flex-direction:column; gap:8px}
+  .ctxt h3{margin:0; font-size:1.02rem}
+  .cnum{font:600 10.5px/1 ui-monospace,Menlo,Consolas,monospace; letter-spacing:.12em; color:var(--muted); margin:0}
+  .ctxt p{margin:0; font-size:13.6px; line-height:1.45}
+  .tag{display:inline-block; font:600 9.6px/1 ui-monospace,Menlo,Consolas,monospace; letter-spacing:.09em;
+       padding:3px 6px; border-radius:3px; vertical-align:2px}
+  .tag.bad{background:var(--wrong); color:var(--panel)}
+  .tag.good{background:var(--right); color:var(--panel)}
+  .cnote{color:var(--muted); font-size:12.6px !important; border-left:2px solid var(--rule); padding-left:9px}
+  section>.card+.card{margin-top:0}
+  section{gap:14px}
+</style>
+
+
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Rounds Codex · anatomy label corrections</p>
+  <h1>Photoshop worklist</h1>
+  <p class="meta">54 pages measured · ordered easiest fix first · 11 August 2026</p>
+</header>
+
+<div class="prose" style="display:flex;flex-direction:column;gap:14px">
+  <p>Every correction I have measured, with the file, the pixel to erase, the pixel to draw to, and what is under each. Grouped by <strong>how hard the Photoshop job is</strong>, not by how bad the error is — so the top of this document is where to start.</p>
+  <div class="note warn">
+    <p><strong>Read the two shortcuts in section 2 before you open anything.</strong> On about a third of these pages the correct fix is to move the <em>label text</em>, not the leader line — which is a clean cut-and-paste on flat background instead of repainting over illustration. That converts the hardest class of defect into the easiest.</p>
+  </div>
+</div>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">1</span><h2>Before you open anything</h2></div>
+
+  <h3>Decide who owns each page — you or production</h3>
+  <p class="prose">These are <strong>flat JPEGs</strong>. Production's fix is to re-render the page from their source scene, which keeps every other pixel intact. Your fix is to repaint the shipped JPEG. <strong>If production later re-renders a page you have edited, your work is silently overwritten.</strong> So pick a lane per page and tell them: either "we've fixed these ourselves, skip them" or "leave these to you". Doing both is the one outcome that wastes the effort.</p>
+  <p class="prose">My suggestion: <strong>take groups A and B yourself</strong> (short, self-contained, and they are the ones production is most likely to get wrong a second time), and <strong>leave group C and everything in group D to them</strong>.</p>
+
+  <h3>Where the files are</h3>
+  <p class="prose">All paths are relative to the root of the <strong>private app repo</strong> (<span class="co">rounds-codex-app</span>). Most galleries live under <span class="co">assets/&lt;id&gt;/&lt;id&gt;-02.jpg</span>; three of the pages here sit at the repo root instead, and those three are also the ones that ship undersized:</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Gallery</th><th>File</th><th>Page size</th></tr></thead>
+    <tbody>
+      <tr><td class="k">most galleries</td><td class="co">assets/&lt;id&gt;/&lt;id&gt;-02.jpg</td><td class="co">1024 × 1536</td></tr>
+      <tr><td class="k">tb</td><td class="co was">tb-02.jpg</td><td class="co was">800 × 1200</td></tr>
+      <tr><td class="k">pneumothorax</td><td class="co was">pneumothorax-02.jpg</td><td class="co was">800 × 1200</td></tr>
+      <tr><td class="k">hypothyroid</td><td class="co was">hypothyroid-02.jpg</td><td class="co was">800 × 1200</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose"><strong>Every coordinate in this document is in the page's own pixels, origin top-left</strong>, which is what Photoshop's Info panel shows. For the three 800×1200 pages, multiply by 1.28 if you are working from a re-exported 1024×1536 file.</p>
+
+  <h3>Three things to do after every edit</h3>
+  <div class="scroll"><table>
+    <thead><tr><th>#</th><th>What</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td class="k">1</td><td><strong>Save as JPEG, quality 10–12</strong>, same filename, same dimensions</td><td>The app and the service worker key off the path. Do not rename, do not resize.</td></tr>
+      <tr><td class="k">2</td><td><strong>Regenerate the thumbnail</strong> — <span class="co">gthumbs/&lt;id&gt;-02.jpg</span>, 320 px wide, quality 82</td><td>The gallery grid reads the thumb, not the page. An unregenerated thumb shows the old artwork on the card.</td></tr>
+      <tr><td class="k">3</td><td><strong>Rebuild the gallery PDF</strong> — <span class="co">scripts/rebuild_gallery_pdf.py &lt;root&gt; &lt;id&gt;</span></td><td><strong>This is the one that has already bitten us.</strong> The download PDF is a build artifact generated once. Four galleries shipped for months with the old logo in the PDF and the new one in the viewer, because nothing regenerated the PDF. Send me the edited pages and I will run steps 2 and 3.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose">Then <span class="co">python3 scripts/verify_gallery_pdfs.py &lt;root&gt;</span> checks every page of every gallery PDF against the page the app serves — it will catch it if step 3 was missed.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">2</span><h2>Two shortcuts that save most of the work</h2></div>
+
+  <h3>Shortcut 1 — swap the label text, not the leader</h3>
+  <p class="prose">Where two labels have landed on <em>each other's</em> structure, both leaders are already correct in the sense that each ends on a real structure that the <em>other</em> label names. So the fix is to <strong>exchange the two pieces of label text</strong> and leave every line untouched.</p>
+  <p class="prose">Label text sits on flat dark panel background. Lasso, cut, paste, nudge into place, heal the two vacated rectangles. <strong>No painting over illustration at all.</strong></p>
+  <div class="scroll"><table>
+    <thead><tr><th>Page</th><th>Swap these two labels</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr><td class="k">cellulitis p2</td><td><strong>Artery</strong> ↔ <strong>Vein</strong></td><td>Single words, stacked one above the other in the right-hand column. The cleanest one on this list — do it first.</td></tr>
+      <tr><td class="k">ckd p2</td><td><strong>Bowman's capsule</strong> ↔ <strong>Glomerulus</strong></td><td>RENAL CORPUSCLE panel. A pure swap.</td></tr>
+      <tr><td class="k">cdiff p2</td><td><strong>Normal mucus layer</strong> ↔ <strong>Intact epithelium</strong></td><td>NORMAL COLONIC MUCOSA panel. A pure swap.</td></tr>
+      <tr><td class="k">osteoporosis p2</td><td><strong>Tibia</strong> ↔ <strong>Fibula</strong></td><td>Single words, stacked. <strong>But see group 5</strong> — confirm which bone is which on the lateral skeleton first, and note that on the <em>anterior</em> skeleton both dots are on one bone, so a text swap alone will not finish that half.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Shortcut 2 — shift a whole label column by one position</h3>
+  <p class="prose">Three pages have a column of labels where <strong>every label has taken the next one's structure</strong>. Rather than moving several leaders, move the text down (or up) one slot in the column and fix only the one label at the end of the chain that has nowhere to go.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Page</th><th>The chain</th><th>What is left over</th></tr></thead>
+    <tbody>
+      <tr><td class="k">labor p2</td><td>Sacrum → a lumbar vertebra · Rectum → the sacrum · Vagina → the rectum</td><td>Shift the three right-hand labels <strong>up</strong> one slot, then give the vagina its own leader. Erase the topmost dot at <span class="co was">(732,341)</span>.</td></tr>
+      <tr><td class="k">withdrawal p2</td><td>HYPOTHALAMUS → pink · AMYGDALA → green · LOCUS COERULEUS → orange · CEREBELLUM → orange · BRAINSTEM → nothing</td><td>Shifting the text fixes three of five. Two leaders still need moving: one onto the <strong>blue blob at (437,495)</strong> and one onto the <strong>mauve cerebellum at (505,530)</strong>, neither of which currently has any leader.</td></tr>
+      <tr><td class="k">cdiff p2</td><td>Sigmoid colon → the descending limb · Rectum → haustrated bowel · Anal canal → sigmoid</td><td>Shift the three <strong>down</strong> one slot. Descending colon at (462,348) is correct and stays.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose"><strong>One caution on both shortcuts.</strong> Check the label's own ink colour before you move it. On several of these pages the label is printed in the colour of the structure it names — <em>withdrawal</em> p2 is entirely built that way — so moving the text without recolouring it would leave the colour wrong even though the words are right.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">3</span><h2>The erase-and-repaint method</h2></div>
+  <p class="prose">Where you do have to move a line, this is what I learned doing about a dozen of these with scripts. Photoshop's healing brush will do most of it better than my code did, but the choice of <em>donor</em> is the whole job.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>What is under the line</th><th>How to erase it</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Flat black background</td><td>Anything works. Spot healing brush, one pass.</td></tr>
+      <tr><td class="k">Flat or smoothly shaded tissue</td><td>Healing brush with a donor 20–30 px away, perpendicular to the stroke.</td></tr>
+      <tr><td class="k">Textured tissue (gyri, trabeculae, folia)</td><td>Clone stamp, donor <strong>parallel</strong> to the stroke so the texture direction survives. Sample often; a single donor smears.</td></tr>
+      <tr><td class="k">Banded or striated tissue (adrenal cortex, muscle, arbor vitae)</td><td>Clone <strong>along the band</strong>, not across it. Find the grain by eye first — on <em>addisons</em> p2 the leaders ran <em>parallel</em> to the striations, so the donor had to be perpendicular. The rule is "clone along the texture's grain", and the grain sometimes runs with the stroke.</td></tr>
+      <tr><td class="k"><strong>A strong edge crosses the stroke</strong> — an organ boundary, a vessel wall, a bone cortex</td><td><strong>Do not erase it.</strong> Any donor reconstructs one side and destroys the other. I abandoned two fixes for exactly this. Leave those for a re-render.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose"><strong>Erase the whole polyline, not the straight line between its ends.</strong> Several of these leaders bend. On <em>pancreatitis</em> p2 I masked a straight line between the endpoints and left a white diagonal across the aorta — the bounding box and the pixel count both looked right, and only a side-by-side caught it.</p>
+  <p class="prose"><strong>Check your work at 100%, then at 25%.</strong> A repaint that is invisible at 100% often shows as a smudge at thumbnail size, which is where most readers see the page first.</p>
+</section>
+
+<section><div class="sec-head"><span class="sec-letter">A</span><h2>Group A — move one dot, easy background</h2></div>
+<p class="prose">Start here. Each is a single terminator on flat or dark ground, moving under about 40 px. The red ring is what to erase; the green ring is where to put it.</p>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a01.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">1</p>
+    <h3>seizure p2 — Axon</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(253,1143)</span><br>a tan myelin internode — the same kind of segment the “Myelin sheath” label points at</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(268,1152)</span><br>a node of Ranvier, the blue-grey constriction between internodes</p>
+    <p class='cnote'>Nodes also at (300,1145) and (337,1130) if a different one suits the leader better.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a02.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">2</p>
+    <h3>seizure p2 — Neurotransmitters (glutamate, GABA)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(527,1080)</span><br>the presynaptic bouton’s rim — no vesicle or particle within 25 px</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(495,1089)</span><br>a vesicle circle inside the bouton</p>
+    <p class='cnote'>Other vesicles at (473,1074) and (459,1092). Prefer a vesicle over the cleft — “Synaptic cleft” already points into the particle field.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a03.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">3</p>
+    <h3>depression p2 — Nucleus accumbens (Dopamine)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(493,424)</span><br>the dark gap just below the sphere</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(492,401)</span><br>the blue-violet sphere, 23 px higher</p>
+    <p class='cnote'>Old dot is on near-black; erase is a one-pass heal.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a04.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">4</p>
+    <h3>depression p2 — Hippocampus (CORONAL VIEW)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(905,415)</span><br>dark cortex / white matter</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(884,434)</span><br>the bright purple hippocampus</p>
+    <p class='cnote'>The only bright object in that neighbourhood.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a05.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">5</p>
+    <h3>stroke p1 — Thrombus (clot) blocking the MCA</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(556,368)</span><br>inside the dark red infarct core — brain tissue</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(548,375)</span><br>the artery, 8 px away</p>
+    <p class='cnote'>The magnifier inset shows a clot inside a vessel lumen, so the anchor belongs on the vessel.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a06.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">6</p>
+    <h3>stroke p1 — Ischemic core (infarct)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(893,631)</span><br>the plain pink LEFT hemisphere of the icon</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(955,617)</span><br>the dark red core on the right hemisphere</p>
+    <p class='cnote'>The icon has exactly one coloured region — no ambiguity.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a07.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">7</p>
+    <h3>stroke p1 — Penumbra (salvageable tissue)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(890,730)</span><br>the plain pink LEFT hemisphere</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(975,720)</span><br>the gold rim on the opposite side of the icon</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a08.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">8</p>
+    <h3>migraine p2 — C2 (CERVICAL CONTRIBUTION panel)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(150,1264)</span><br>red posterior neck muscle, 16 px above the nerve</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(150,1280)</span><br>the yellow C2 ramus</p>
+    <p class='cnote'>The C3 arrow just below is correct and shows the intended form.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a09.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">9</p>
+    <h3>migraine p2 — F — Trigeminal ganglion (Gasserian)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(453,589)</span><br>the beige nerve trunk below the ganglion</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(448,548)</span><br>the ringed ganglion hub where V1/V2/V3 radiate</p>
+    <p class='cnote'>The leader currently passes over the purple marker sphere at (487,614) on its way.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a10.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">10</p>
+    <h3>migraine p2 — C — Middle meningeal artery</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(598,412)</span><br>bare cortical gyri — no vessel of any kind under it</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(588,428)</span><br>the red arterial tree</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a11.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">11</p>
+    <h3>osteomyelitis p2 — Endosteum</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(343,533)</span><br>inside the gold yellow-marrow block</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(359,533)</span><br>the inner surface of the cortical shell</p>
+    <p class='cnote'>At y=533 the layers are: gold marrow to x 346, dark transition 348–356, cortical shell 358–386.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a12.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">12</p>
+    <h3>osteomyelitis p2 — Volkmann’s (perforating) canal</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(783,622)</span><br>a black almond-shaped osteocyte lacuna</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(766,548)</span><br>the transverse red/blue vessel pair crossing the cut face</p>
+    <p class='cnote'>“Lacunae” 110 px above uses the same dogleg on the same kind of target — that one is correct.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a13.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">13</p>
+    <h3>nephrolithiasis p2 — Medulla (renal pyramids)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(818,856)</span><br>the outer cortical band — the same band “Cortex” marks 51 px above</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(795,860)</span><br>inside a pyramid, in the striated tissue</p>
+    <p class='cnote'>The cortical band here is only 16 px wide, so the dot was placed carefully in the wrong layer.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a14.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">14</p>
+    <h3>nephrolithiasis p2 — Urinary bladder</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(278,871)</span><br>the tan distal ureter</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(320,890)</span><br>inside the red bladder</p>
+    <p class='cnote'>A 20 px miss between the two structures the page is about.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a15.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">15</p>
+    <h3>uti p2 — ③ Renal vein</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(413,413)</span><br>the red artery’s lower edge — the vessel ② already names</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(430,426)</span><br>the blue renal vein, 12 px below</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a16.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">16</p>
+    <h3>uti p2 — Renal pelvis (collecting system)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(844,347)</span><br>a red medullary pyramid</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(793,350)</span><br>the tan funnel of the collecting system</p>
+    <p class='cnote'>Three of five labels in this panel point at pyramids. Fix all three together.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a17.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">17</p>
+    <h3>uti p2 — Major calyx</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(842,390)</span><br>a red medullary pyramid</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(803,372)</span><br>a tan branch of the pelvis</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a18.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">18</p>
+    <h3>uti p2 — Minor calyx</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(830,417)</span><br>the base of a third red pyramid</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(816,378)</span><br>a small tan cup around a papilla</p>
+    <p class='cnote'>The gold branches stop at about y 400 — nothing below that is collecting system.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a19.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">19</p>
+    <h3>hepatitis p2 — Sinusoids (MICROANATOMY)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(413,941)</span><br>inside a salmon hepatocyte plate block</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(403,948)</span><br>the blue radial channel between plates</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a20.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">20</p>
+    <h3>hepatitis p2 — Hepatocytes (plates)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(424,888)</span><br>the blue portal venule of the triad at the hexagon corner</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(405,915)</span><br>a salmon plate block</p>
+    <p class='cnote'>With a19, these two are effectively a swap: hepatocytes points at a vessel, sinusoids at hepatocytes.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a21.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">21</p>
+    <h3>hepatitis p2 — Left hepatic duct (BILIARY DRAINAGE)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(105,883)</span><br>the common hepatic trunk, 11 px below the confluence</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(85,866)</span><br>the left-going limb of the bifurcation</p>
+    <p class='cnote'>“Common hepatic duct” points at the same trunk 36 px lower.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a22.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">22</p>
+    <h3>cdiff p2 — Taenia coli</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(169,366)</span><br>the free lateral haustral wall — what “Haustra” names 58 px below</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(189,366)</span><br>the tan longitudinal band, 19 px medial</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a23.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">23</p>
+    <h3>cdiff p2 — Ileocolic a.</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(139,1143)</span><br>black background, 13 px short of the arcade</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(152,1152)</span><br>the arcade branch running to the cecum</p>
+    <p class='cnote'>Easiest erase on the page — pure black ground.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a24.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">24</p>
+    <h3>icp p2 — CSF ~10%</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(770,468)</span><br>pink brain parenchyma — the arrow crosses the whole blue band and stops 22 px past it</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(795,469)</span><br>the blue CSF band</p>
+    <p class='cnote'>At y=469 the boundary is x≈790: pink to 788, blue from 792.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a25.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">25</p>
+    <h3>icp p2 — BRAIN ~80%</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(783,369)</span><br>inside the blue CSF band</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(740,400)</span><br>the pink brain parenchyma</p>
+    <p class='cnote'>With a24 this is a straight mutual swap on the Monro–Kellie panel.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a26.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">26</p>
+    <h3>hypothyroid p2 — Parafollicular (C) cell</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(126,672)</span><br>the pale colloid at the follicle centre</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(160,710)</span><br>the olive-green C cell outside the epithelium</p>
+    <p class='cnote'>800×1200 page. The panel’s point is that C cells sit OUTSIDE the follicle.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a27.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">27</p>
+    <h3>parkinsons p2 — Subthalamic nucleus (STN)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(347,540)</span><br>the tan wedge, 33 px past the sphere</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(317,566)</span><br>the olive-green sphere — the colour of the label’s own ink</p>
+    <p class='cnote'>The leader passes straight over the green sphere on its way.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a28.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">28</p>
+    <h3>suicide p2 — Anterior Cingulate Cortex (ACC)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(339,455)</span><br>the green cingulate band’s midpoint — mid-cingulate, not anterior</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(262,470)</span><br>the rostral limb of the same band</p>
+    <p class='cnote'>The band runs x 233–440, so the current dot is its exact midpoint.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a29.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">29</p>
+    <h3>suicide p2 — Orbitofrontal Cortex (OFC)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(200,507)</span><br>mid medial-frontal cortex, 40 px above the orbital surface</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(210,545)</span><br>the orbital (inferior) surface of the blue frontal lobe</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a30.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">30</p>
+    <h3>gdm p2 — ② UMBILICAL CORD</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(373,762)</span><br>the fetal back / buttock</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(435,700)</span><br>the purple coiled cord</p>
+    <p class='cnote'>The cord is the only purple structure in the uterus.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/a31.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">31</p>
+    <h3>preeclampsia p2 — UMBILICAL CORD</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(285,879)</span><br>maternal pelvic vessels, outside the uterus</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(372,852)</span><br>the cord’s insertion at the fetal abdomen</p>
+    
+  </div>
+</div>
+</section>
+<section><div class="sec-head"><span class="sec-letter">B</span><h2>Group B — move one dot, textured background</h2></div>
+<p class="prose">Same job, but the old terminator sits on gyri, folia, trabeculae or bowel wall. Clone stamp with the grain — see the method notes at the front.</p>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b01.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">32</p>
+    <h3>dementia p2 — Corpus callosum</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(292,424)</span><br>the purple cingulate arc</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(250,442)</span><br>the salmon callosal band inside it</p>
+    <p class='cnote'>Rows b01–b03 are a three-way rotation: each label stands on the structure the label above it names.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b02.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">33</p>
+    <h3>dementia p2 — Cingulate gyrus</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(261,478)</span><br>the blue thalamus</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(250,415)</span><br>the purple arc above the corpus callosum</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b03.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">34</p>
+    <h3>dementia p2 — Thalamus</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(313,478)</span><br>the salmon corpus callosum, posterior third</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(270,478)</span><br>the blue oval</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b04.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">35</p>
+    <h3>dementia p2 — Amygdala</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(263,549)</span><br>the middle of the gold pons</p>
+    <p><span class="tag good">✓ DRAW AT</span> <em>no coordinate — place from the source</em><br>the anterior medial temporal region</p>
+    <p class='cnote'>No target coordinate — place it from the source. Sampled (202,171,132) at the dot = pons.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b05.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">36</p>
+    <h3>dementia p2 — Brainstem</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(312,590)</span><br>a purple medial-temporal blob behind the brainstem</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(290,600)</span><br>the gold column</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b06.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">37</p>
+    <h3>dementia p2 — Hippocampus (sagittal)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(376,566) and (388,573)</span><br>TWO ring terminators straddling the green hippocampus rim and the pink cerebellum</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(330,545)</span><br>one ring, well inside the green body</p>
+    <p class='cnote'>Erase both rings. A leader with two endpoints gives the reader two answers.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b07.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">38</p>
+    <h3>dementia p2 — Lateral ventricles (CORONAL)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(730,472)</span><br>a purple hippocampus</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(707,425)</span><br>a dark ventricular cavity</p>
+    <p class='cnote'>On this panel all three labels are wrong — see b07–b09.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b08.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">39</p>
+    <h3>dementia p2 — Hippocampus (bilateral)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(805,458)</span><br>the midline, at third-ventricle level</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(735,468) and (880,468)</span><br>the two purple bodies, one leader each</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b09.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">40</p>
+    <h3>dementia p2 — Entorhinal cortex (bilateral)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(883,470)</span><br>a purple hippocampus</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(762,468) and (855,468)</span><br>the gold/ochre bands medial and inferior to each hippocampus</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b10.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">41</p>
+    <h3>schizophrenia p2 — Corpus Callosum</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(489,424)</span><br>inside the blue thalamic mass</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(489,386)</span><br>the pale ribbed callosal band, straight up the same leader</p>
+    <p class='cnote'>The leader already passes through the band on its way down.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b11.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">42</p>
+    <h3>schizophrenia p2 — Thalamus</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(618,428)</span><br>parietal cortex, 124 px from the thalamus</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(495,443)</span><br>the blue thalamic mass</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b12.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">43</p>
+    <h3>schizophrenia p2 — Cerebellum</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(583,684)</span><br>the brainstem / upper cord tube</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(640,530)</span><br>the foliated cerebellum</p>
+    <p class='cnote'>“Spinal Cord” correctly points at the same tube 39 px lower.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b13.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">44</p>
+    <h3>parkinsons p2 — Globus pallidus (external)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(226,493)</span><br>pink frontal cortex — outside every coloured deep-grey structure</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(283,545)</span><br>the purple lump chain</p>
+    <p class='cnote'>“Globus pallidus (internal)” at (283,537) is correct and shows the target.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b14.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">45</p>
+    <h3>parkinsons p2 — Thalamus (left column)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(300,548)</span><br>the purple pallidal lumps, 21 px from the GPi dot</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(368,528)</span><br>the blue body — the key’s thalamus colour</p>
+    <p class='cnote'>The coronal panel’s key assigns blue to thalamus and purple to pallidum.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b15.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">46</p>
+    <h3>parkinsons p2 — Thalamus (right column)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(396,551)</span><br>the red nucleus’s upper-right edge</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(368,528)</span><br>the blue body</p>
+    <p class='cnote'>Three leaders converge on the red nucleus. Only “Red nucleus” belongs there.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b16.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">47</p>
+    <h3>parkinsons p2 — Cingulate gyrus</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(290,420)</span><br>the purple callosal band — where “Corpus callosum” ends 43 px away</p>
+    <p><span class="tag good">✓ DRAW AT</span> <em>no coordinate — place from the source</em><br>the pink cortical ribbon immediately outside the arc</p>
+    <p class='cnote'>About 15 px up and out.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b17.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">48</p>
+    <h3>depression p2 — DLPFC</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(473,323)</span><br>the GREEN cingulate band — the colour the legend assigns to “Cingulate cortex”</p>
+    <p><span class="tag good">✓ DRAW AT</span> <em>no coordinate — place from the source</em><br>the blue frontal convexity above and in front of the band</p>
+    <p class='cnote'>Sampled (152,176,132) at the dot = the green band.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b18.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">49</p>
+    <h3>depression p2 — vmPFC</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(577,323)</span><br>the same band’s posterior/olive end — high and far back</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(465,375)</span><br>ventral-anterior frontal cortex, low and forward</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b19.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">50</p>
+    <h3>depression p2 — Anterior cingulate cortex (ACC)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(461,371)</span><br>blue frontal cortex</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(473,323)</span><br>the green cingulate band — where the DLPFC leader currently ends</p>
+    <p class='cnote'>b17–b19 are an exchange: two prefrontal labels on the cingulate, the cingulate label on prefrontal cortex.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b20.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">51</p>
+    <h3>suicide p2 — Hippocampus</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(359,578)</span><br>the violet raphe sphere — 33 px from the Raphe Nuclei arrowhead on the same ball</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(305,580)</span><br>the plum medial-temporal band</p>
+    <p class='cnote'>Sampled (123,56,73) at the target — distinct from the orange amygdala and the surrounding brown.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b21.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">52</p>
+    <h3>suicide p2 — Amygdala</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(245,571)</span><br>empty dark background below the frontal lobe</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(305,556)</span><br>the orange amygdala sphere</p>
+    <p class='cnote'>Its leader is the same orange as the circuit arrows, which is why it reads as deliberate.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b22.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">53</p>
+    <h3>osteomyelitis p2 — Yellow marrow</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(353,441)</span><br>deep red marrow of the metaphysis</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(328,505)</span><br>the gold fatty-marrow block (x 313–347, y 478–560)</p>
+    <p class='cnote'>“Red marrow” above it is correct, so these are not swapped — yellow marrow simply stops one structure short.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b23.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">54</p>
+    <h3>osteomyelitis p2 — Haversian (central) canal</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(738,421)</span><br>the concentric lamellar rings, 29 px from where “Concentric lamellae” points</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(790,402)</span><br>inside the dark central opening with the vessels</p>
+    <p class='cnote'>Aimed at the canal, stops 27 px short.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b24.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">55</p>
+    <h3>osteomyelitis p2 — Venous drainage</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(285,1250)</span><br>the distal cortical shell — no vein at the endpoint</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(386,1080)</span><br>the medullary venous channel</p>
+    <p class='cnote'>Careful: the bone’s own outline carries a pale blue-grey highlight at x 391–405 that looks like a vein and is not.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b25.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">56</p>
+    <h3>hepatitis p2 — Cystic duct</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(265,523)</span><br>inside the gallbladder sac — where “Gallbladder” points 22 px away</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(325,496)</span><br>the green tube leaving the sac’s neck</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b26.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">57</p>
+    <h3>hepatitis p2 — Common bile duct</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(349,524)</span><br>the green tree, but ABOVE the cystic-duct confluence</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(366,555)</span><br>the green trunk below the junction</p>
+    <p class='cnote'>Above that junction the tube is the common hepatic duct.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b27.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">58</p>
+    <h3>hepatitis p2 — Right hepatic artery</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(355,537)</span><br>the green bile duct — sampled (90,94,39)</p>
+    <p><span class="tag good">✓ DRAW AT</span> <em>no coordinate — place from the source</em><br>the dark maroon arterial twig ~5 px up-right, clear of the duct</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b28.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">59</p>
+    <h3>hepatitis p2 — Bile duct (from L and R hepatic ducts)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(408,535)</span><br>the blue IVC — sampled (30,41,84)</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(366,545)</span><br>the green biliary trunk, 42 px left</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b29.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">60</p>
+    <h3>hepatitis p2 — Inferior vena cava</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(376,567)</span><br>the small orange portal-triad widget</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(411,567)</span><br>the blue IVC trunk, 35 px right</p>
+    <p class='cnote'>Do this one together with b30 — it is a clean exchange.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b30.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">61</p>
+    <h3>hepatitis p2 — Hepatic portal triad</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(390,537)</span><br>the bright red hepatic artery alone — one of the three, not the bundle</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(376,567)</span><br>the triad widget the IVC label vacates</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b31.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">62</p>
+    <h3>ckd p2 — Proximal tubule</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(821,431)</span><br>the blue efferent arteriole / peritubular vessel</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(858,431)</span><br>the orange-walled tubule, 37 px right</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b32.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">63</p>
+    <h3>ckd p2 — RENAL VEIN</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(275,510)</span><br>kidney parenchyma — sampled (110,35,34)</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(365,500)</span><br>the blue renal vein at the hilum, sampled (31,56,117)</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b33.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">64</p>
+    <h3>ckd p2 — RENAL ARTERY</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(292,437)</span><br>a medullary pyramid inside the renal sinus — no vessel at all</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(324,429)</span><br>the red arterial trunk at the hilum</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b34.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">65</p>
+    <h3>nephrolithiasis p2 — Renal artery</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(198,489)</span><br>kidney parenchyma, 59 px below the “Kidney” dot</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(295,458)</span><br>the red renal artery running from aorta to hilum</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b35.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">66</p>
+    <h3>nephrolithiasis p2 — Renal vein</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(325,572)</span><br>the vertical blue IVC</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(300,470)</span><br>the horizontal renal vein joining the IVC at hilum level</p>
+    <p class='cnote'>102 px straight up the IVC.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b36.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">67</p>
+    <h3>hyperkalemia p2 — ② Renal Medulla</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(347,451)</span><br>the intact kidney’s outer surface — capsule/cortex, the same tissue ① marks</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(533,435)</span><br>a striated pyramid in the CUT kidney opposite</p>
+    <p class='cnote'>The intact kidney has no medulla showing anywhere on it.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b37.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">68</p>
+    <h3>hyperkalemia p2 — ④ Collecting Duct</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(908,632)</span><br>the lower bend of the distal convoluted tubule coil</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(960,620)</span><br>the thick branched collecting duct</p>
+    <p class='cnote'>Three tan tubes at every level: loop limbs at x 888–894 and 909–913, collecting duct at 952–970.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b38.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">69</p>
+    <h3>gerd p2 — ② Diaphragmatic crus (right)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(444,319)</span><br>the oesophageal wall — the same wall ① marks 62 px above</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(395,365)</span><br>the left-hand crural muscle band, which is drawn and unlabelled</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b39.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">70</p>
+    <h3>gerd p2 — ④ Lower esophageal sphincter</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(497,377)</span><br>a single point shared with ⑤ GEJ and ⑥ Angle of His — three markers, one spot</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(470,340)</span><br>the thickened distal oesophageal segment above the junction</p>
+    <p class='cnote'>⑤ and ⑥ can reasonably share the notch; the LES is a 3–4 cm segment and belongs above it.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b40.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">71</p>
+    <h3>gerd p2 — Widened hiatal opening</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(240,1032)</span><br>the mid gastric body of the herniated stomach</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(195,1000)</span><br>the gap between the crura at the neck of the hernia</p>
+    <p class='cnote'>48 px — more than a third of the panel’s width.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b41.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">72</p>
+    <h3>iron-anemia p2 — JEJUNUM</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(196,670) and (204,652)</span><br>TWO dots, both on the haustrated ascending colon, one on the taenia</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(300,720)</span><br>one dot on the smooth coiled small-bowel loops</p>
+    <p class='cnote'>The large bowel is deeply sacculated; the small bowel is smooth and narrower. ILEUM at (194,780) has the same problem.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b42.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">73</p>
+    <h3>preeclampsia p2 — HEART</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(322,529)</span><br>the mid field of the patient’s RIGHT LUNG</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(390,580)</span><br>the red ventricular mass</p>
+    <p class='cnote'>The heart and aorta are both drawn large and centrally and neither is labelled.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b43.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">74</p>
+    <h3>preeclampsia p2 — AORTA</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(317,597)</span><br>the lower field of the same lung, 68 px below the HEART dot</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(372,528)</span><br>the aortic arch</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b44.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">75</p>
+    <h3>preeclampsia p2 — PELVIC CIRCULATION</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(452,841)</span><br>the uterine wall where it meets the fetal buttock — no maternal vessel within 80 px</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(320,930)</span><br>the maternal iliac vessel network</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b45.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">76</p>
+    <h3>tb p2 — Alveolar macrophage</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(403,674)</span><br>a pink alveolar sphere — the structure “Alveolus (air sac)” names</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(368,678)</span><br>the purple spiculated macrophage</p>
+    <p class='cnote'>800×1200 page. The macrophage is the only purple object in the inset and 45 px across.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b46.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">77</p>
+    <h3>pneumothorax p2 — Cervical recess</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(608,878)</span><br>shoulder soft tissue / first rib, lateral to the blue patch</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(565,877)</span><br>the blue apical recess above the clavicle</p>
+    <p class='cnote'>800×1200 page.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b47.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">78</p>
+    <h3>pneumothorax p2 — Costophrenic recess</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(597,963)</span><br>lung parenchyma above the blue crescent</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(597,985)</span><br>the blue crescent at the lung base</p>
+    <p class='cnote'>“Diaphragmatic recess” at (605,1000) is correct and shows the form.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b48.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">79</p>
+    <h3>pneumothorax p2 — Costophrenic angle</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(682,402)</span><br>the lateral lung border, mid-zone</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(674,438)</span><br>the angle where the lung base meets the chest wall</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b49.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">80</p>
+    <h3>pneumothorax p2 — Intercostal vein (blue)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(283,873)</span><br>the tan subcutaneous/periosteal band, 30 px above the groove</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(270,906)</span><br>the blue vein segment in the subcostal groove (x 258–283, y 902–912)</p>
+    
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b50.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">81</p>
+    <h3>pneumothorax p2 — Rib (bundle panel)</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(288,963)</span><br>magenta lung, 4 px inside the visceral pleura line</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(275,915)</span><br>the gold rib band (y 912–919)</p>
+    <p class='cnote'>“Parietal pleura” and “Visceral pleura” on the same panel are also inside the lung — see the notes.</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="cimg"><img src="worklist-crops/b51.jpg" alt=""></div>
+  <div class="ctxt">
+    <p class="cnum">82</p>
+    <h3>stroke p1 — Middle Cerebral Artery</h3>
+    <p><span class="tag bad">✗ ERASE</span> <span class="co was">(447,423)</span><br>a sulcus of plain pink, NON-infarcted cortex</p>
+    <p><span class="tag good">✓ DRAW AT</span> <span class='co now'>(520,410)</span><br>the red trunk ascending into the ischemic zone</p>
+    <p class='cnote'>ALSO recolour this terminator WHITE. It is currently gold — the same amber the figure uses for the penumbra — which is why it reads as artwork.</p>
+  </div>
+</div>
+</section>
+<section>
+  <div class="sec-head"><span class="sec-letter">C</span><h2>Group C — longer re-routes</h2></div>
+  <p class="prose">The leader travels far enough that you are redrawing a stroke, not just a dot. Doable, but slower, and the erase crosses more artwork. Consider handing these to production.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Page</th><th>Label</th><th>From</th><th>To</th><th>Why it is harder</th></tr></thead>
+    <tbody>
+      <tr><td class="k">parkinsons p2</td><td>Brainstem</td><td class="co was">(245,726)</td><td class="co now">(358,600)</td><td>170 px. Old dot is on black — erase is trivial — but the whole leader must be redrawn.</td></tr>
+      <tr><td class="k">parkinsons p2</td><td>Cerebellum</td><td class="co was">(303,760)</td><td class="co now">(455,595)</td><td>225 px, same shape.</td></tr>
+      <tr><td class="k">stroke p1</td><td>Middle Cerebral Artery</td><td class="co was">(447,423)</td><td class="co now">(520,410)</td><td>Also <strong>recolour the terminator white</strong> — it is currently gold, the same amber the figure uses for the penumbra, which is why it reads as artwork.</td></tr>
+      <tr><td class="k">cdiff p2</td><td>Superior mesenteric a.</td><td class="co was">(122,1173)</td><td class="co now">(192,1150)</td><td>70 px across the arcade.</td></tr>
+      <tr><td class="k">cdiff p2</td><td>Superior mesenteric v.</td><td class="co was">(478,1107)</td><td class="co now">(544,1120)</td><td>66 px.</td></tr>
+      <tr><td class="k">cdiff p2</td><td>Inferior mesenteric v.</td><td class="co was">two dots, (481,1143) and (481,1160)</td><td class="co now">(510,1202)</td><td>Two terminators to erase; one to draw.</td></tr>
+      <tr><td class="k">cdiff p2</td><td>Parasympathetic (vagus n.)</td><td class="co was">(851,1110)</td><td class="co now">(690,1140)</td><td>160 px across the whole colon frame.</td></tr>
+      <tr><td class="k">cdiff p2</td><td>Portal vein (to liver)</td><td class="co was">(531,1202)</td><td class="co now">(545,1088)</td><td>Erase is easy — black ground — but the new route runs up the panel.</td></tr>
+      <tr><td class="k">cdiff p2</td><td>Right colic a.</td><td class="co was">two tips, (122,1117) and (142,1118)</td><td class="co now">one tip on an arcade branch</td><td>Remove the orphan dash.</td></tr>
+      <tr><td class="k">ckd p2</td><td>Afferent / Efferent arteriole</td><td class="co was">(865,1024) and (872,1063)</td><td class="co now">(775,970) and (770,1012)</td><td>Both leaders cross the whole corpuscle to reach the vascular pole on the far side.</td></tr>
+      <tr><td class="k">seizure p2</td><td>Cortical networks</td><td class="co was">starts (531,891), arrowhead at (583,891) pointing outward</td><td class="co now">(555,845), arrowhead inward</td><td><strong>Reverse the arrow.</strong> Not a move — the head is at the wrong end.</td></tr>
+      <tr><td class="k">seizure p2</td><td>Basal ganglia</td><td class="co was">(496,452)</td><td class="co now">(552,452) or (545,478)</td><td>Crosses the magenta thalamus.</td></tr>
+      <tr><td class="k">migraine p2</td><td>A — Dura mater</td><td class="co was">(521.5,306.5)</td><td class="co now">(470,283)</td><td>The dural band is only 6 px thick (y 280–285 at x 470). Precision job.</td></tr>
+      <tr><td class="k">suicide p2</td><td>Raphe / others</td><td class="co">—</td><td class="co">—</td><td>See the per-page sheet; several leaders share one region.</td></tr>
+      <tr><td class="k">hypothyroid p2</td><td>Capillary</td><td class="co was">(170,712)</td><td class="co now">(60,715)</td><td>110 px across the follicle. <strong>800×1200 page.</strong></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">D</span><h2>Group D — do not attempt in Photoshop</h2></div>
+
+  <h3>The label names something the page does not draw</h3>
+  <p class="prose">Nine rows. There is nothing to point at, so no leader move fixes them. These need an illustrator or a decision to drop the label. Full detail in <span class="co">PRODUCTION-artwork-needed.md</span>.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Page</th><th>Label</th><th>What is missing</th><th>Suggested</th></tr></thead>
+    <tbody>
+      <tr><td class="k">stroke p1</td><td>Circle of Willis, Basilar, PCA, ACA</td><td class="was">all four — a lateral view cannot show basal vessels</td><td class="now">add a basal inset, or drop the four</td></tr>
+      <tr><td class="k">uti p2</td><td>⑧ Ureterovesical junction</td><td class="was">no oblique intramural segment</td><td class="now">draw it — the page's own relationships strip shows how</td></tr>
+      <tr><td class="k">parkinsons p2</td><td>Substantia nigra pars reticulata</td><td class="was">no SN band in the sagittal panel</td><td class="now">copy from the page's own midbrain panel</td></tr>
+      <tr><td class="k">parkinsons p2</td><td>Internal capsule</td><td class="was">no white-matter lamina</td><td class="now">draw one, or move the label to the coronal panel</td></tr>
+      <tr><td class="k">schizophrenia p2</td><td>Pituitary Gland</td><td class="was">no gland or stalk</td><td class="now">draw it; the connector arrow is fine as is</td></tr>
+      <tr><td class="k">migraine p2</td><td>D — Superficial temporal artery</td><td class="was">no extracranial vessel anywhere</td><td class="now">draw the STA in the scalp, or drop the label</td></tr>
+      <tr><td class="k">hepatitis p2</td><td>Coronary ligament</td><td class="was">a posterior structure in an anterior view</td><td class="now"><strong>drop the label</strong> — it cannot be drawn here</td></tr>
+      <tr><td class="k">hypothyroid p2</td><td>Hyoid bone</td><td class="was">no bone above the thyroid cartilage</td><td class="now"><strong>drop the label</strong></td></tr>
+      <tr><td class="k">dementia p2</td><td>Fornix</td><td class="was">not differentiated from the callosal band</td><td class="now">draw it, or fold into "Corpus callosum (fornix beneath)"</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>A legend entry whose marker was never drawn</h3>
+  <p class="prose">Five. You <em>could</em> add a numbered badge in Photoshop — it is a circle and a digit on flat artwork — but check first whether the number should exist at all.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Page</th><th>Missing marker</th></tr></thead>
+    <tbody>
+      <tr><td class="k">gerd p2</td><td>⑦ Stomach (cardia) — the artwork has ① to ⑥ only</td></tr>
+      <tr><td class="k">meningitis p2</td><td>④ Cerebral aqueduct — no ④ anywhere</td></tr>
+      <tr><td class="k">meningitis p2</td><td>⑥ Median aperture — no ⑥ anywhere</td></tr>
+      <tr><td class="k">lymphoma p2</td><td>⑤ Mediastinal Lymph Nodes — the column runs 2,3,4,6,7,8,9</td></tr>
+      <tr><td class="k">gout p2</td><td>⑤ Other metatarsals — no ⑤ badge on the foot</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Blocked on a re-export, not on Photoshop</h3>
+  <p class="prose"><strong>pneumothorax p2, rows 5–8.</strong> The four pleural layers on the main figure are <strong>four pale lines one or two pixels wide with three-pixel gaps</strong> — a terminator on that page is 4 px across, wider than the layer it names. They cannot be verified or drawn unambiguously at 800×1200. Re-export at 1024×1536 first. Same cause blocks four rows on <em>hypothyroid</em> p2 and one on <em>tb</em> p2.</p>
+
+  <h3>Waiting on your read, not on anyone's tools</h3>
+  <p class="prose"><strong>gdm p2, the PLACENTA (ENLARGED) panel.</strong> Either the umbilical vessel colours are inverted or the two leaders are on the wrong vessels — opposite fixes, and a render cannot distinguish them. Remember the umbilical circulation reverses the usual convention: the <strong>vein</strong> carries oxygenated blood and is drawn <strong>red</strong>.</p>
+  <p class="prose"><strong>The placenta on both obstetric pages.</strong> On <em>preeclampsia</em> p2 and <em>gdm</em> p2 the PLACENTA label lands on the uterine wall and I could not find a distinct placental disc on either. If it is not drawn, both are artwork rows.</p>
+  <p class="prose"><strong>osteoporosis p2, the lateral skeleton.</strong> Both legs overlap and I could not be certain which shaft belongs to the near leg. Confirm which bone is which before swapping Tibia and Fibula, and note that on the <em>anterior</em> skeleton both dots are on the slender bone — so that half needs a leader move as well as a text swap.</p>
+</section>
+
+<footer>
+  <p>Compiled from 47 per-page production sheets, 11 August 2026. Each page's full reasoning, colour samples and unverified rows are in <span class="co">galleries-staging/PRODUCTION-&lt;id&gt;-p2.md</span> on the <span class="co">claude/anatomy-label-corrections-j58lf1</span> branch. 54 of the 81 pages in the work order are measured; 27 are not yet, so this list will grow.</p>
+</footer>
+
+</div>
