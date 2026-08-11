@@ -136,8 +136,10 @@ wrong *key colour* survives exactly the check a reader would use to catch it.
 
 | page | label | what the page's own legend says |
 |---|---|---|
-| `sci` p2 | Lateral Corticospinal Tract (UMN), cross-section | the endpoint is in the **blue** region, which the panel's key assigns to **Spinothalamic** |
-| `compartment` p2 | 2 LATERAL COMPARTMENT, anterior view | the endpoint is on the **green** mass, which the page's colour key assigns elsewhere |
+| `sci` p2 | Lateral Corticospinal Tract (UMN), cross-section | dot at (423,437); surround samples **(49,107,150)** — the key's Spinothalamic blue **(27,118,181)**. The green corticospinal region 30–45 px away carries no label |
+| `compartment` p2 | 2 LATERAL COMPARTMENT, anterior view | the label is printed in gold ink **(108,85,17)**; its dot at (230,462) sits on **(83,103,51)** — the green the page shades as *anterior* |
+
+Both were confirmed by sampling, not by eye — see `PRODUCTION-sci-p2-compartment-p2.md`.
 
 **What we suggest.** Where a figure carries a colour key, the label endpoints and the key are two
 statements about the same thing, and they can be checked against each other **without any anatomical

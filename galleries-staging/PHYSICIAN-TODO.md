@@ -78,6 +78,8 @@ with questions.
 | `PRODUCTION-sepsis-p2-dvt-p2.md` | the triage's top two — a brain marker on the chest wall; the popliteal vein on the tibia |
 | `PRODUCTION-pe-p2.md` | "Right pulmonary artery" points into the patient's LEFT lung, twice |
 | `PRODUCTION-stroke-p2.md` | both carotid labels land on the vertebral artery |
+| `PRODUCTION-bronchiolitis-p2.md` | "Left main bronchus" in the patient's right lung; wall layers labelled inside out |
+| `PRODUCTION-sci-p2-compartment-p2.md` | fault 5 confirmed by colour sampling on both pages |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
 **Tranche 1 is published as a web page you can read and forward:**
