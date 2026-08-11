@@ -86,6 +86,10 @@ with questions.
 | `PRODUCTION-osteomyelitis-p2.md` | yellow marrow labelled in the red marrow; Volkmann's canal on an osteocyte lacuna |
 | `PRODUCTION-seizure-p2.md` | "Basal ganglia" and "Thalamus" 27 px apart on one sphere; a reversed arrowhead |
 | `PRODUCTION-suicide-p2.md` | the hippocampus label is on the raphe; four labels stop on circuit nodes |
+| `PRODUCTION-hyperkalemia-p2.md` | the medulla labelled on the capsule; neither limb of the loop identified |
+| `PRODUCTION-nephrolithiasis-p2.md` | both renal vessels missed; the bladder label is on the ureter |
+| `PRODUCTION-uti-p2.md` | three of five labels in the kidney panel point at pyramids |
+| `PRODUCTION-tb-p2.md` | an alveolar magnifier anchored to a lymph node; page is 800×1200 |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
 **Tranche 2 — the eight worst-teaching pages:**
