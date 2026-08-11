@@ -84,6 +84,8 @@ with questions.
 | `PRODUCTION-migraine-p2.md` | "Dura mater" on the superior sagittal sinus; the superficial temporal artery drawn nowhere |
 | `PRODUCTION-schizophrenia-p2.md` | the thalamus is labelled "Corpus Callosum"; "Substantia Nigra" printed twice |
 | `PRODUCTION-osteomyelitis-p2.md` | yellow marrow labelled in the red marrow; Volkmann's canal on an osteocyte lacuna |
+| `PRODUCTION-seizure-p2.md` | "Basal ganglia" and "Thalamus" 27 px apart on one sphere; a reversed arrowhead |
+| `PRODUCTION-suicide-p2.md` | the hippocampus label is on the raphe; four labels stop on circuit nodes |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
 **Tranche 2 — the eight worst-teaching pages:**
