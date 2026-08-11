@@ -50,27 +50,43 @@ cannot simply be swapped end for end.
 
 ---
 
-## One claim we are withdrawing until it is re-checked: BLOOD SUPPLY
+## BLOOD SUPPLY — the order was right, and an earlier draft of this sheet was wrong
 
-The work order says of row 18 that *"Segmental Arteries — the largest, most proximal branch — points
-at the finest peripheral mesh, while near-terminal branches point at larger vessels, so the whole
-series is effectively inverted."*
+**Read this section if you received an earlier version of this sheet.** A first draft told you the
+"series is effectively inverted" claim could not be reproduced and asked you not to re-order the
+panel. **That draft was wrong. The claim is correct.** It was withdrawn on an eyeball reading of the
+endpoints at 5×; re-measuring at 11× reverses it. The instruction now is the opposite of what that
+draft said.
 
-**Reading the endpoints off the shipped panel, we could not reproduce "inverted."** Measured left to
-right, the five endpoints appear to fall in the *correct* anatomical sequence — segmental most
-medial, interlobular most peripheral. What does look wrong is different and narrower:
+Measured leader endpoints, at 11×:
 
-- **Segmental Arteries lands too far out.** Its leader descends from a bend at (846,821) on a slope
-  of about −1.1 px per row; the true segmental trunks — the thick first-order branches — sit at
-  **x 745–790**, and the endpoint is well lateral of them.
-- **Segmental and Interlobar land within a few pixels of each other**, which is a defect in itself:
-  two different vessel orders marked at one place.
-- **Afferent Arteriole's leader crosses the blue renal vein** on its way to a small red stub at the
-  lower-pole margin — this part of the order we do reproduce.
+| label | endpoint | position in the tree |
+|---|---|---|
+| **Segmental Arteries** | **(806,849)** | out among the fine peripheral cortical branches |
+| **Interlobar Arteries** | **(794,870)** | 12 px *more medial* than Segmental |
+| **Arcuate Arteries** | **(789,918)** | more medial still |
+| Interlobular Arteries | (838,961) | the most lateral of the four — correct |
+| Afferent Arteriole | ~(785,1021) | a small stub at the lower-pole margin; the leader crosses the blue renal vein |
 
-**Please do not re-order this panel's labels on the strength of the "inverted" wording.** Move
-Segmental in to the first-order trunks, separate it from Interlobar, and leave the rest until we
-have re-measured. We would rather withdraw a claim than have a correct series re-shuffled.
+Anatomically these should run **medial to lateral** in the order segmental → interlobar → arcuate →
+interlobular. The first three run **exactly backwards**: 806, 794, 789. Interlobular alone is where
+it belongs.
+
+**Segmental is the worst of them.** It names the largest, most proximal branch, and the thick
+first-order trunks are drawn plainly at **x 750–790, y 855–890** — its leader stops 20–50 px lateral
+of them, in the fine mesh.
+
+**What we need:** re-order the first three endpoints so they run outward with the vessel order —
+Segmental onto the thick trunks at x 750–790, Interlobar lateral of that, Arcuate lateral of that
+again at the corticomedullary arcs. Interlobular can stay. The Afferent Arteriole leader should not
+cross the renal vein.
+
+### Why the first reading failed, in case it helps you check our other sheets
+
+At 5× the Segmental endpoint read as 801 and Interlobar as 806 — a 5 px difference in the wrong
+direction, which is under the width of the strokes themselves. At 11× they are 806 and 794. **The
+sign of a 12-pixel comparison cannot be taken off a 5× view**, and every ordering claim in these
+sheets now gets measured at 11× or better before it is written down.
 
 ## Rows not yet verified
 

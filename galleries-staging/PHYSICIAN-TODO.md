@@ -61,7 +61,7 @@ with questions.
 | `PRODUCTION-cardiomyopathy-p1.md` | three of four phenotype callouts land in the wrong slab |
 | `PRODUCTION-hyperlipidemia-p5-p6.md` | two figures that cannot show what they are labelled with |
 | `PRODUCTION-bph-p2.md` | the worst page in the order — 12 of 33 labels, incl. two on each other's structure |
-| `PRODUCTION-aki-p2.md` | the nephron panel verified — four labels on one blood vessel; **withdraws** one work-order claim |
+| `PRODUCTION-aki-p2.md` | the nephron panel verified — four labels on one blood vessel; blood-supply series confirmed inverted |
 
 ## 3. Two Higgsfield generations were never retrieved
 
