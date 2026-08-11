@@ -126,6 +126,27 @@ do.
 
 ---
 
+## Fault 5 — the leader lands on a colour the page's own key assigns to something else
+
+*Added 2026-08-10, found by a laterality sweep rather than by the page-by-page review.*
+
+Two rows so far, and this is the worst-behaved of the five because **the figure certifies the error
+as correct**. A leader on the wrong tissue is a mistake a careful reader may catch. A leader on the
+wrong *key colour* survives exactly the check a reader would use to catch it.
+
+| page | label | what the page's own legend says |
+|---|---|---|
+| `sci` p2 | Lateral Corticospinal Tract (UMN), cross-section | the endpoint is in the **blue** region, which the panel's key assigns to **Spinothalamic** |
+| `compartment` p2 | 2 LATERAL COMPARTMENT, anterior view | the endpoint is on the **green** mass, which the page's colour key assigns elsewhere |
+
+**What we suggest.** Where a figure carries a colour key, the label endpoints and the key are two
+statements about the same thing, and they can be checked against each other **without any anatomical
+judgement at all** — sample the colour under each endpoint, look it up in the key, compare to the
+label. That is a check your pipeline can run automatically, and it is the only one of the five faults
+where that is true.
+
+---
+
 ## What the clean pages do differently — the actionable recommendation
 
 `acs` page 1 is clean, and both `acs` pages 1 and 2 are built differently from the rest: **numbered
