@@ -101,6 +101,8 @@ with questions.
 | `PRODUCTION-export-sizes.md` | **one consolidated re-export ask** — 16 galleries in the order ship off-standard |
 | `TRIAGE-tier4-reread.md` | tier 4 re-read: it is not near-misses. 2 tier-1-grade pages, ~22 with whole-structure errors |
 | `PRODUCTION-stroke-p1.md` | **the worst page yet** — 5 cerebral-artery labels outside the skull; 4 name vessels a lateral view cannot show |
+| `PRODUCTION-labor-p2.md` | "Vagina" inside the rectum; the right-hand column displaced one position |
+| `PRODUCTION-preeclampsia-p2.md` | the heart and the aorta are both dots in the right lung |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
 **Tranche 4 — the six biggest remaining pages:**
