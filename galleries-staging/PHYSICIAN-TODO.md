@@ -107,6 +107,8 @@ with questions.
 | `PRODUCTION-gdm-p2.md` | the placenta label points at the baby's head; a colour-convention question for you |
 | `PRODUCTION-appendicitis-p2.md` | wall layers labelled inward; psoas and iliacus both on the cecum |
 | `PRODUCTION-withdrawal-p2.md` | five labels each take the next one's structure; the last falls off the end |
+| `PRODUCTION-depression-p2.md` | two prefrontal labels on the cingulate; the cingulate label on prefrontal cortex |
+| `PRODUCTION-icp-p2.md` | BRAIN and CSF labelled into each other's compartment, on the Monro-Kellie panel |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
 **Tranche 5 — the four pages where a reader acts and is wrong:**
