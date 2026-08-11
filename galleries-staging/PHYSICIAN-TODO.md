@@ -82,6 +82,12 @@ with questions.
 | `PRODUCTION-sci-p2-compartment-p2.md` | fault 5 confirmed by colour sampling on both pages |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
+**Tranche 2 — the eight worst-teaching pages:**
+https://claude.ai/code/artifact/e68537c6-8508-4607-8f8d-7c084eea1bd6
+Checked the same way: light and dark at 1100 px, 390 px on a phone, no horizontal scroll, no page
+errors. Covers `sepsis`, `pe`, `stroke`, `bronchiolitis`, `dvt`, `sci`, `compartment` and `acs` p2,
+and it opens by telling production that **faults 4 and 5 are new in the brief since tranche 1**.
+
 **Tranche 1 is published as a web page you can read and forward:**
 https://claude.ai/code/artifact/2641d8d4-b845-4dc1-8e7d-43b1edb28e5d
 (private until you share it from the page's share menu). **I checked this one myself** — screenshotted
