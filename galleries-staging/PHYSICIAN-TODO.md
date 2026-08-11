@@ -94,6 +94,8 @@ with questions.
 | `PRODUCTION-cdiff-p2.md` | both mesenteric vessel labels on bowel wall; mucus and epithelium swapped |
 | `PRODUCTION-hepatitis-p2.md` | porta hepatis labels shuffled across duct, artery and vein |
 | `PRODUCTION-ckd-p2.md` | glomerulus and Bowman's capsule swapped; both arterioles labelled on the wrong side |
+| `PRODUCTION-gerd-p2.md` | markers 4, 5 and 6 all radiate from one point; legend item 7 has no marker |
+| `PRODUCTION-hypothyroid-p2.md` | follicle labels a displaced series; no hyoid drawn; page is 800×1200 |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
 **Tranche 3 — the ten tier-2 pages:**
