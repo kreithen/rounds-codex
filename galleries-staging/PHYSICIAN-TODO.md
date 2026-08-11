@@ -109,6 +109,7 @@ with questions.
 | `PRODUCTION-withdrawal-p2.md` | five labels each take the next one's structure; the last falls off the end |
 | `PRODUCTION-depression-p2.md` | two prefrontal labels on the cingulate; the cingulate label on prefrontal cortex |
 | `PRODUCTION-icp-p2.md` | BRAIN and CSF labelled into each other's compartment, on the Monro-Kellie panel |
+| `PRODUCTION-osteoporosis-p2.md` | Tibia and Fibula on each other's bone; on the anterior figure both on one bone |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
 **Tranche 5 — the four pages where a reader acts and is wrong:**
