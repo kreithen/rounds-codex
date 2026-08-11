@@ -114,6 +114,17 @@ with questions.
 | `PRODUCTION-iron-anemia-p2.md` | jejunum and ileum both labelled on the haustrated colon |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
+**PHOTOSHOP WORKLIST — for you to work from directly (2026-08-11):**
+https://claude.ai/code/artifact/a2ae10e0-cee3-48d0-ac92-b44bf46b71ce
+Every measured correction, ordered by **how hard the Photoshop job is**, not by severity. File path,
+pixel to erase, pixel to draw to, what is under each. Read section 2 first — on about a third of
+these pages the fix is to move the **label text**, not the leader, which is flat-background
+cut-and-paste instead of repainting over illustration.
+**Three things this document asks of you:** (1) tell production which pages you are taking, or your
+edits get overwritten by their re-render; (2) send me the edited pages so I can regenerate the
+thumbnails and rebuild the gallery PDFs — the PDF is a build artifact and has already drifted once;
+(3) three items in group D are waiting on your read, not on tools.
+
 **Tranche 5 — the four pages where a reader acts and is wrong:**
 https://claude.ai/code/artifact/bc8d3958-4e7c-4d95-8f76-2e4957319bbc
 `stroke` p1, `labor` p2, `preeclampsia` p2, `gdm` p2 — **24 rows, 20 confirmed**, 2 carried, 2 held

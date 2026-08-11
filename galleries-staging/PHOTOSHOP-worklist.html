@@ -1,0 +1,342 @@
+<title>Leader-line corrections — corrected work order, Photoshop correction worklist</title>
+<style>
+  :root{
+    --bg:#F6F8FA; --panel:#FFFFFF; --ink:#151A21; --muted:#5A6572;
+    --rule:#D6DCE4; --rule-soft:#E7ECF1;
+    --accent:#0E5A6B; --wrong:#9E322A; --right:#1C6448; --band:#EEF2F6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#11141A; --panel:#171B22; --ink:#E6EBF1; --muted:#98A3B1;
+      --rule:#2A313B; --rule-soft:#222932;
+      --accent:#5EB8C8; --wrong:#E4948B; --right:#74C8A2; --band:#1B212A;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#11141A; --panel:#171B22; --ink:#E6EBF1; --muted:#98A3B1;
+    --rule:#2A313B; --rule-soft:#222932;
+    --accent:#5EB8C8; --wrong:#E4948B; --right:#74C8A2; --band:#1B212A;
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--bg); color:var(--ink);
+    font:400 16.5px/1.62 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    margin:0; padding:44px 22px 90px;
+  }
+  .wrap{max-width:960px; margin:0 auto; display:flex; flex-direction:column; gap:34px}
+  .prose{max-width:70ch}
+  h1,h2,h3{font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif; text-wrap:balance; margin:0}
+  h1{font-size:2.15rem; line-height:1.18; letter-spacing:-.012em; font-weight:600}
+  h2{font-size:1.42rem; line-height:1.25; font-weight:600}
+  h3{font-size:1.08rem; line-height:1.3; font-weight:600; color:var(--accent)}
+  p{margin:0}
+  .eyebrow{
+    font:600 11.5px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    letter-spacing:.16em; text-transform:uppercase; color:var(--muted);
+  }
+  header{display:flex; flex-direction:column; gap:12px; padding-bottom:26px; border-bottom:2px solid var(--rule)}
+  .meta{font:400 13.5px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; color:var(--muted)}
+  section{display:flex; flex-direction:column; gap:16px}
+  .sec-head{display:flex; align-items:baseline; gap:14px; border-bottom:1px solid var(--rule); padding-bottom:9px}
+  .sec-letter{
+    font:600 13px/1 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    color:var(--bg); background:var(--accent); border-radius:3px;
+    padding:6px 8px; letter-spacing:.06em; flex:none;
+  }
+  .scroll{overflow-x:auto; border:1px solid var(--rule); border-radius:5px; background:var(--panel)}
+  table{border-collapse:collapse; width:100%; min-width:640px; font-size:14.2px}
+  caption{text-align:left; padding:11px 14px 0; color:var(--muted); font-size:13.5px}
+  th{
+    text-align:left; font:600 11.5px/1.35 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    letter-spacing:.1em; text-transform:uppercase; color:var(--muted);
+    padding:12px 14px; border-bottom:1px solid var(--rule); white-space:nowrap;
+  }
+  td{padding:10px 14px; border-bottom:1px solid var(--rule-soft); vertical-align:top}
+  tr:last-child td{border-bottom:0}
+  tbody tr:nth-child(even){background:var(--band)}
+  td.k{font-weight:600; white-space:nowrap}
+  .co{font:400 13.4px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-variant-numeric:tabular-nums}
+  .was{color:var(--wrong)}
+  .now{color:var(--right)}
+  .note{
+    border-left:3px solid var(--accent); background:var(--panel);
+    padding:14px 18px; border-radius:0 5px 5px 0; display:flex; flex-direction:column; gap:9px;
+  }
+  .note.warn{border-left-color:var(--wrong)}
+  strong{font-weight:650}
+  footer{border-top:1px solid var(--rule); padding-top:18px; color:var(--muted); font-size:13.5px; max-width:70ch}
+  a{color:var(--accent)}
+  .wrap>*,section>*,.scroll,.prose{min-width:0}
+</style>
+
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Rounds Codex · anatomy label corrections</p>
+  <h1>Photoshop worklist</h1>
+  <p class="meta">54 pages measured · ordered easiest fix first · 11 August 2026</p>
+</header>
+
+<div class="prose" style="display:flex;flex-direction:column;gap:14px">
+  <p>Every correction I have measured, with the file, the pixel to erase, the pixel to draw to, and what is under each. Grouped by <strong>how hard the Photoshop job is</strong>, not by how bad the error is — so the top of this document is where to start.</p>
+  <div class="note warn">
+    <p><strong>Read the two shortcuts in section 2 before you open anything.</strong> On about a third of these pages the correct fix is to move the <em>label text</em>, not the leader line — which is a clean cut-and-paste on flat background instead of repainting over illustration. That converts the hardest class of defect into the easiest.</p>
+  </div>
+</div>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">1</span><h2>Before you open anything</h2></div>
+
+  <h3>Decide who owns each page — you or production</h3>
+  <p class="prose">These are <strong>flat JPEGs</strong>. Production's fix is to re-render the page from their source scene, which keeps every other pixel intact. Your fix is to repaint the shipped JPEG. <strong>If production later re-renders a page you have edited, your work is silently overwritten.</strong> So pick a lane per page and tell them: either "we've fixed these ourselves, skip them" or "leave these to you". Doing both is the one outcome that wastes the effort.</p>
+  <p class="prose">My suggestion: <strong>take groups A and B yourself</strong> (short, self-contained, and they are the ones production is most likely to get wrong a second time), and <strong>leave group C and everything in group D to them</strong>.</p>
+
+  <h3>Where the files are</h3>
+  <p class="prose">All paths are relative to the root of the <strong>private app repo</strong> (<span class="co">rounds-codex-app</span>). Most galleries live under <span class="co">assets/&lt;id&gt;/&lt;id&gt;-02.jpg</span>; three of the pages here sit at the repo root instead, and those three are also the ones that ship undersized:</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Gallery</th><th>File</th><th>Page size</th></tr></thead>
+    <tbody>
+      <tr><td class="k">most galleries</td><td class="co">assets/&lt;id&gt;/&lt;id&gt;-02.jpg</td><td class="co">1024 × 1536</td></tr>
+      <tr><td class="k">tb</td><td class="co was">tb-02.jpg</td><td class="co was">800 × 1200</td></tr>
+      <tr><td class="k">pneumothorax</td><td class="co was">pneumothorax-02.jpg</td><td class="co was">800 × 1200</td></tr>
+      <tr><td class="k">hypothyroid</td><td class="co was">hypothyroid-02.jpg</td><td class="co was">800 × 1200</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose"><strong>Every coordinate in this document is in the page's own pixels, origin top-left</strong>, which is what Photoshop's Info panel shows. For the three 800×1200 pages, multiply by 1.28 if you are working from a re-exported 1024×1536 file.</p>
+
+  <h3>Three things to do after every edit</h3>
+  <div class="scroll"><table>
+    <thead><tr><th>#</th><th>What</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td class="k">1</td><td><strong>Save as JPEG, quality 10–12</strong>, same filename, same dimensions</td><td>The app and the service worker key off the path. Do not rename, do not resize.</td></tr>
+      <tr><td class="k">2</td><td><strong>Regenerate the thumbnail</strong> — <span class="co">gthumbs/&lt;id&gt;-02.jpg</span>, 320 px wide, quality 82</td><td>The gallery grid reads the thumb, not the page. An unregenerated thumb shows the old artwork on the card.</td></tr>
+      <tr><td class="k">3</td><td><strong>Rebuild the gallery PDF</strong> — <span class="co">scripts/rebuild_gallery_pdf.py &lt;root&gt; &lt;id&gt;</span></td><td><strong>This is the one that has already bitten us.</strong> The download PDF is a build artifact generated once. Four galleries shipped for months with the old logo in the PDF and the new one in the viewer, because nothing regenerated the PDF. Send me the edited pages and I will run steps 2 and 3.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose">Then <span class="co">python3 scripts/verify_gallery_pdfs.py &lt;root&gt;</span> checks every page of every gallery PDF against the page the app serves — it will catch it if step 3 was missed.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">2</span><h2>Two shortcuts that save most of the work</h2></div>
+
+  <h3>Shortcut 1 — swap the label text, not the leader</h3>
+  <p class="prose">Where two labels have landed on <em>each other's</em> structure, both leaders are already correct in the sense that each ends on a real structure that the <em>other</em> label names. So the fix is to <strong>exchange the two pieces of label text</strong> and leave every line untouched.</p>
+  <p class="prose">Label text sits on flat dark panel background. Lasso, cut, paste, nudge into place, heal the two vacated rectangles. <strong>No painting over illustration at all.</strong></p>
+  <div class="scroll"><table>
+    <thead><tr><th>Page</th><th>Swap these two labels</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr><td class="k">cellulitis p2</td><td><strong>Artery</strong> ↔ <strong>Vein</strong></td><td>Single words, stacked one above the other in the right-hand column. The cleanest one on this list — do it first.</td></tr>
+      <tr><td class="k">ckd p2</td><td><strong>Bowman's capsule</strong> ↔ <strong>Glomerulus</strong></td><td>RENAL CORPUSCLE panel. A pure swap.</td></tr>
+      <tr><td class="k">cdiff p2</td><td><strong>Normal mucus layer</strong> ↔ <strong>Intact epithelium</strong></td><td>NORMAL COLONIC MUCOSA panel. A pure swap.</td></tr>
+      <tr><td class="k">osteoporosis p2</td><td><strong>Tibia</strong> ↔ <strong>Fibula</strong></td><td>Single words, stacked. <strong>But see group 5</strong> — confirm which bone is which on the lateral skeleton first, and note that on the <em>anterior</em> skeleton both dots are on one bone, so a text swap alone will not finish that half.</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Shortcut 2 — shift a whole label column by one position</h3>
+  <p class="prose">Three pages have a column of labels where <strong>every label has taken the next one's structure</strong>. Rather than moving several leaders, move the text down (or up) one slot in the column and fix only the one label at the end of the chain that has nowhere to go.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Page</th><th>The chain</th><th>What is left over</th></tr></thead>
+    <tbody>
+      <tr><td class="k">labor p2</td><td>Sacrum → a lumbar vertebra · Rectum → the sacrum · Vagina → the rectum</td><td>Shift the three right-hand labels <strong>up</strong> one slot, then give the vagina its own leader. Erase the topmost dot at <span class="co was">(732,341)</span>.</td></tr>
+      <tr><td class="k">withdrawal p2</td><td>HYPOTHALAMUS → pink · AMYGDALA → green · LOCUS COERULEUS → orange · CEREBELLUM → orange · BRAINSTEM → nothing</td><td>Shifting the text fixes three of five. Two leaders still need moving: one onto the <strong>blue blob at (437,495)</strong> and one onto the <strong>mauve cerebellum at (505,530)</strong>, neither of which currently has any leader.</td></tr>
+      <tr><td class="k">cdiff p2</td><td>Sigmoid colon → the descending limb · Rectum → haustrated bowel · Anal canal → sigmoid</td><td>Shift the three <strong>down</strong> one slot. Descending colon at (462,348) is correct and stays.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose"><strong>One caution on both shortcuts.</strong> Check the label's own ink colour before you move it. On several of these pages the label is printed in the colour of the structure it names — <em>withdrawal</em> p2 is entirely built that way — so moving the text without recolouring it would leave the colour wrong even though the words are right.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">3</span><h2>The erase-and-repaint method</h2></div>
+  <p class="prose">Where you do have to move a line, this is what I learned doing about a dozen of these with scripts. Photoshop's healing brush will do most of it better than my code did, but the choice of <em>donor</em> is the whole job.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>What is under the line</th><th>How to erase it</th></tr></thead>
+    <tbody>
+      <tr><td class="k">Flat black background</td><td>Anything works. Spot healing brush, one pass.</td></tr>
+      <tr><td class="k">Flat or smoothly shaded tissue</td><td>Healing brush with a donor 20–30 px away, perpendicular to the stroke.</td></tr>
+      <tr><td class="k">Textured tissue (gyri, trabeculae, folia)</td><td>Clone stamp, donor <strong>parallel</strong> to the stroke so the texture direction survives. Sample often; a single donor smears.</td></tr>
+      <tr><td class="k">Banded or striated tissue (adrenal cortex, muscle, arbor vitae)</td><td>Clone <strong>along the band</strong>, not across it. Find the grain by eye first — on <em>addisons</em> p2 the leaders ran <em>parallel</em> to the striations, so the donor had to be perpendicular. The rule is "clone along the texture's grain", and the grain sometimes runs with the stroke.</td></tr>
+      <tr><td class="k"><strong>A strong edge crosses the stroke</strong> — an organ boundary, a vessel wall, a bone cortex</td><td><strong>Do not erase it.</strong> Any donor reconstructs one side and destroys the other. I abandoned two fixes for exactly this. Leave those for a re-render.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="prose"><strong>Erase the whole polyline, not the straight line between its ends.</strong> Several of these leaders bend. On <em>pancreatitis</em> p2 I masked a straight line between the endpoints and left a white diagonal across the aorta — the bounding box and the pixel count both looked right, and only a side-by-side caught it.</p>
+  <p class="prose"><strong>Check your work at 100%, then at 25%.</strong> A repaint that is invisible at 100% often shows as a smudge at thumbnail size, which is where most readers see the page first.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">4</span><h2>Group A — move one dot, easy background, short move</h2></div>
+  <p class="prose">Start here. Each is one terminator, on flat or dark ground, moving under about 40 px. Fifteen minutes each.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Page</th><th>Label</th><th>Erase the dot at</th><th>What is there now</th><th>Draw it at</th><th>What is there</th></tr></thead>
+    <tbody>
+      <tr><td class="k">seizure p2</td><td>Axon</td><td class="co was">(253,1143)</td><td class="was">a tan myelin internode</td><td class="co now">(268,1152)</td><td class="now">a node of Ranvier</td></tr>
+      <tr><td class="k">seizure p2</td><td>Neurotransmitters</td><td class="co was">(527,1080)</td><td class="was">the bouton rim, nothing there</td><td class="co now">(495,1089)</td><td class="now">a vesicle circle</td></tr>
+      <tr><td class="k">seizure p2</td><td>Synaptic cleft</td><td class="co was">(530,1131)</td><td class="was">12 px short, dark ground</td><td class="co now">(500,1130)</td><td class="now">the orange particle field</td></tr>
+      <tr><td class="k">depression p2</td><td>Nucleus accumbens</td><td class="co was">(493,424)</td><td class="was">the dark gap below the sphere</td><td class="co now">(492,401)</td><td class="now">the violet sphere</td></tr>
+      <tr><td class="k">depression p2</td><td>Hippocampus (coronal)</td><td class="co was">(905,415)</td><td class="was">dark cortex/white matter</td><td class="co now">(884,434)</td><td class="now">the bright purple hippocampus</td></tr>
+      <tr><td class="k">stroke p1</td><td>Thrombus blocking the MCA</td><td class="co was">(556,368)</td><td class="was">the dark red infarct core</td><td class="co now">(548,375)</td><td class="now">the artery, 8 px away</td></tr>
+      <tr><td class="k">stroke p1</td><td>Ischemic core</td><td class="co was">(893,631)</td><td class="was">the plain pink left hemisphere</td><td class="co now">(955,617)</td><td class="now">the dark red core</td></tr>
+      <tr><td class="k">stroke p1</td><td>Penumbra</td><td class="co was">(890,730)</td><td class="was">the plain pink left hemisphere</td><td class="co now">(975,720)</td><td class="now">the gold rim</td></tr>
+      <tr><td class="k">migraine p2</td><td>C2 (cervical panel)</td><td class="co was">(150,1264)</td><td class="was">red neck muscle</td><td class="co now">(150,1280)</td><td class="now">the yellow C2 ramus. C3 just below shows the intended form</td></tr>
+      <tr><td class="k">migraine p2</td><td>F — Trigeminal ganglion</td><td class="co was">(453,589)</td><td class="was">the beige nerve trunk</td><td class="co now">(448,548)</td><td class="now">the ringed ganglion hub</td></tr>
+      <tr><td class="k">migraine p2</td><td>C — Middle meningeal artery</td><td class="co was">(598,412)</td><td class="was">bare cortex</td><td class="co now">(588,428)</td><td class="now">the red arterial tree</td></tr>
+      <tr><td class="k">osteomyelitis p2</td><td>Endosteum</td><td class="co was">(343,533)</td><td class="was">inside the gold marrow block</td><td class="co now">(359,533)</td><td class="now">the inner surface of the cortical shell</td></tr>
+      <tr><td class="k">osteomyelitis p2</td><td>Volkmann's canal</td><td class="co was">(783,622)</td><td class="was">a black osteocyte lacuna</td><td class="co now">(766,548)</td><td class="now">the red/blue vessel pair</td></tr>
+      <tr><td class="k">nephrolithiasis p2</td><td>Medulla (renal pyramids)</td><td class="co was">(818,856)</td><td class="was">the cortical band</td><td class="co now">(795,860)</td><td class="now">inside a pyramid</td></tr>
+      <tr><td class="k">nephrolithiasis p2</td><td>Urinary bladder</td><td class="co was">(278,871)</td><td class="was">the tan distal ureter</td><td class="co now">(320,890)</td><td class="now">inside the red bladder</td></tr>
+      <tr><td class="k">uti p2</td><td>③ Renal vein</td><td class="co was">(413,413)</td><td class="was">the red artery's lower edge</td><td class="co now">(430,426)</td><td class="now">the blue vein, 12 px below</td></tr>
+      <tr><td class="k">uti p2</td><td>Renal pelvis</td><td class="co was">(844,347)</td><td class="was">a red pyramid</td><td class="co now">(793,350)</td><td class="now">the tan funnel</td></tr>
+      <tr><td class="k">uti p2</td><td>Major calyx</td><td class="co was">(842,390)</td><td class="was">a red pyramid</td><td class="co now">(803,372)</td><td class="now">a tan branch</td></tr>
+      <tr><td class="k">uti p2</td><td>Minor calyx</td><td class="co was">(830,417)</td><td class="was">a red pyramid base</td><td class="co now">(816,378)</td><td class="now">a tan cup</td></tr>
+      <tr><td class="k">hepatitis p2</td><td>Sinusoids</td><td class="co was">(413,941)</td><td class="was">inside a salmon plate block</td><td class="co now">(403,948)</td><td class="now">the blue radial channel</td></tr>
+      <tr><td class="k">hepatitis p2</td><td>Hepatocytes (plates)</td><td class="co was">(424,888)</td><td class="was">a blue portal venule</td><td class="co now">(405,915)</td><td class="now">a salmon plate block</td></tr>
+      <tr><td class="k">hepatitis p2</td><td>Left hepatic duct</td><td class="co was">(105,883)</td><td class="was">the common hepatic trunk</td><td class="co now">(85,866)</td><td class="now">the left-going limb</td></tr>
+      <tr><td class="k">cdiff p2</td><td>Taenia coli</td><td class="co was">(169,366)</td><td class="was">the haustral wall</td><td class="co now">(189,366)</td><td class="now">the tan longitudinal band, 19 px medial</td></tr>
+      <tr><td class="k">cdiff p2</td><td>Ileocolic a.</td><td class="co was">(139,1143)</td><td class="was">black background</td><td class="co now">(152,1152)</td><td class="now">the arcade branch — easiest erase on the page</td></tr>
+      <tr><td class="k">icp p2</td><td>CSF ~10%</td><td class="co was">(770,468)</td><td class="was">pink parenchyma</td><td class="co now">(795,469)</td><td class="now">the blue CSF band</td></tr>
+      <tr><td class="k">icp p2</td><td>BRAIN ~80%</td><td class="co was">(783,369)</td><td class="was">the blue CSF band</td><td class="co now">(740,400)</td><td class="now">the pink parenchyma</td></tr>
+      <tr><td class="k">hypothyroid p2</td><td>Parafollicular (C) cell</td><td class="co was">(126,672)</td><td class="was">the pale colloid</td><td class="co now">(160,710)</td><td class="now">the green C cell</td></tr>
+      <tr><td class="k">parkinsons p2</td><td>Subthalamic nucleus</td><td class="co was">(347,540)</td><td class="was">a tan wedge</td><td class="co now">(317,566)</td><td class="now">the green sphere matching the label's ink</td></tr>
+      <tr><td class="k">suicide p2</td><td>ACC</td><td class="co was">(339,455)</td><td class="was">the cingulate band's midpoint</td><td class="co now">(262,470)</td><td class="now">the rostral limb of the same band</td></tr>
+      <tr><td class="k">suicide p2</td><td>OFC</td><td class="co was">(200,507)</td><td class="was">mid medial-frontal cortex</td><td class="co now">(210,545)</td><td class="now">the orbital surface</td></tr>
+      <tr><td class="k">gdm p2</td><td>② UMBILICAL CORD</td><td class="co was">(373,762)</td><td class="was">the fetal back</td><td class="co now">(435,700)</td><td class="now">the purple coiled cord</td></tr>
+      <tr><td class="k">preeclampsia p2</td><td>UMBILICAL CORD</td><td class="co was">(285,879)</td><td class="was">maternal pelvic vessels</td><td class="co now">(372,852)</td><td class="now">the cord at the fetal abdomen</td></tr>
+      <tr><td class="k">appendicitis p2</td><td>Submucosa</td><td class="co was">(185,900)</td><td class="was">the orange lumen (radius 51)</td><td class="co now">radius 76–90</td><td class="now">the dark red band. Circle centre <span class="co">(134,900)</span>, radius 110</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">5</span><h2>Group B — move one dot, textured background</h2></div>
+  <p class="prose">Same job, but the old dot sits on gyri, folia, trabeculae or bowel wall. Clone stamp with the grain; see section 3.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Page</th><th>Label</th><th>Erase at</th><th>What is there now</th><th>Draw at</th><th>What is there</th></tr></thead>
+    <tbody>
+      <tr><td class="k">dementia p2</td><td>Corpus callosum</td><td class="co was">(292,424)</td><td class="was">the purple cingulate arc</td><td class="co now">(250,442)</td><td class="now">the salmon callosal band</td></tr>
+      <tr><td class="k">dementia p2</td><td>Cingulate gyrus</td><td class="co was">(261,478)</td><td class="was">the blue thalamus</td><td class="co now">(250,415)</td><td class="now">the purple arc</td></tr>
+      <tr><td class="k">dementia p2</td><td>Thalamus</td><td class="co was">(313,478)</td><td class="was">the salmon corpus callosum</td><td class="co now">(270,478)</td><td class="now">the blue oval</td></tr>
+      <tr><td class="k">dementia p2</td><td>Brainstem</td><td class="co was">(312,590)</td><td class="was">a purple blob</td><td class="co now">(290,600)</td><td class="now">the gold column</td></tr>
+      <tr><td class="k">dementia p2</td><td>Hippocampus</td><td class="co was">two rings, (376,566) and (388,573)</td><td class="was">straddling green rim and pink cerebellum</td><td class="co now">one ring at (330,545)</td><td class="now">inside the green body</td></tr>
+      <tr><td class="k">dementia p2</td><td>Lateral ventricles</td><td class="co was">(730,472)</td><td class="was">a purple hippocampus</td><td class="co now">(707,425)</td><td class="now">a dark ventricular cavity</td></tr>
+      <tr><td class="k">dementia p2</td><td>Hippocampus (bilateral)</td><td class="co was">(805,458)</td><td class="was">the midline</td><td class="co now">(735,468) and (880,468)</td><td class="now">the two purple bodies</td></tr>
+      <tr><td class="k">dementia p2</td><td>Entorhinal cortex (bilateral)</td><td class="co was">(883,470)</td><td class="was">a purple hippocampus</td><td class="co now">(762,468) and (855,468)</td><td class="now">the gold bands</td></tr>
+      <tr><td class="k">schizophrenia p2</td><td>Corpus Callosum</td><td class="co was">(489,424)</td><td class="was">the blue thalamic mass</td><td class="co now">(489,386)</td><td class="now">the ribbed callosal band, straight up the same leader</td></tr>
+      <tr><td class="k">schizophrenia p2</td><td>Thalamus</td><td class="co was">(618,428)</td><td class="was">parietal cortex</td><td class="co now">(495,443)</td><td class="now">the blue thalamic mass</td></tr>
+      <tr><td class="k">schizophrenia p2</td><td>Cerebellum</td><td class="co was">(583,684)</td><td class="was">the brainstem/cord tube</td><td class="co now">(640,530)</td><td class="now">the cerebellar folia</td></tr>
+      <tr><td class="k">parkinsons p2</td><td>Globus pallidus (external)</td><td class="co was">(226,493)</td><td class="was">pink frontal cortex</td><td class="co now">(283,545)</td><td class="now">the purple lump chain</td></tr>
+      <tr><td class="k">parkinsons p2</td><td>Thalamus (left column)</td><td class="co was">(300,548)</td><td class="was">the pallidum</td><td class="co now">(368,528)</td><td class="now">the blue body (the key's thalamus colour)</td></tr>
+      <tr><td class="k">parkinsons p2</td><td>Thalamus (right column)</td><td class="co was">(396,551)</td><td class="was">the red nucleus's edge</td><td class="co now">(368,528)</td><td class="now">the blue body</td></tr>
+      <tr><td class="k">parkinsons p2</td><td>Cingulate gyrus</td><td class="co was">(290,420)</td><td class="was">the purple callosal band</td><td class="co now">~15 px up and out</td><td class="now">the pink cortical ribbon outside the arc</td></tr>
+      <tr><td class="k">depression p2</td><td>DLPFC</td><td class="co was">(473,323)</td><td class="was">the green cingulate band</td><td class="co now">the blue frontal convexity</td><td class="now">above and in front of the band</td></tr>
+      <tr><td class="k">depression p2</td><td>vmPFC</td><td class="co was">(577,323)</td><td class="was">the band's posterior end</td><td class="co now">≈(465,375)</td><td class="now">ventral-anterior frontal cortex</td></tr>
+      <tr><td class="k">depression p2</td><td>Anterior cingulate cortex</td><td class="co was">(461,371)</td><td class="was">blue frontal cortex</td><td class="co now">(473,323)</td><td class="now">the green band — where DLPFC currently ends</td></tr>
+      <tr><td class="k">suicide p2</td><td>Hippocampus</td><td class="co was">(359,578)</td><td class="was">the violet raphe sphere</td><td class="co now">(305,580)</td><td class="now">the plum medial-temporal band</td></tr>
+      <tr><td class="k">suicide p2</td><td>Amygdala</td><td class="co was">(245,571)</td><td class="was">empty dark background</td><td class="co now">(305,556)</td><td class="now">the orange sphere</td></tr>
+      <tr><td class="k">suicide p2</td><td>DLPFC</td><td class="co was">(402,472)</td><td class="was">the posterior cingulate band</td><td class="co now">(240,435) or (215,470)</td><td class="now">rose convexity or blue frontal lobe — your call</td></tr>
+      <tr><td class="k">osteomyelitis p2</td><td>Yellow marrow</td><td class="co was">(353,441)</td><td class="was">deep red marrow</td><td class="co now">(328,505)</td><td class="now">the gold block (x 313–347, y 478–560)</td></tr>
+      <tr><td class="k">osteomyelitis p2</td><td>Haversian canal</td><td class="co was">(738,421)</td><td class="was">the lamellar rings</td><td class="co now">(790,402)</td><td class="now">inside the dark canal opening</td></tr>
+      <tr><td class="k">osteomyelitis p2</td><td>Venous drainage</td><td class="co was">(285,1250)</td><td class="was">distal cortical shell</td><td class="co now">(386,1080) or (344,1180)</td><td class="now">the medullary venous channels</td></tr>
+      <tr><td class="k">hepatitis p2</td><td>Cystic duct</td><td class="co was">(265,523)</td><td class="was">inside the gallbladder sac</td><td class="co now">(325,496)</td><td class="now">the tube at the neck</td></tr>
+      <tr><td class="k">hepatitis p2</td><td>Common bile duct</td><td class="co was">(349,524)</td><td class="was">above the confluence</td><td class="co now">(366,555)</td><td class="now">below the cystic-duct junction</td></tr>
+      <tr><td class="k">hepatitis p2</td><td>Right hepatic artery</td><td class="co was">(355,537)</td><td class="was">the green bile duct</td><td class="co now">clear of the duct</td><td class="now">the dark maroon arterial twig ~5 px up-right</td></tr>
+      <tr><td class="k">hepatitis p2</td><td>Bile duct (L and R hepatic)</td><td class="co was">(408,535)</td><td class="was">the blue IVC</td><td class="co now">(366,545)</td><td class="now">the green trunk, 42 px left</td></tr>
+      <tr><td class="k">hepatitis p2</td><td>Inferior vena cava</td><td class="co was">(376,567)</td><td class="was">the orange triad widget</td><td class="co now">(411,567)</td><td class="now">the blue IVC trunk</td></tr>
+      <tr><td class="k">hepatitis p2</td><td>Hepatic portal triad</td><td class="co was">(390,537)</td><td class="was">the red artery alone</td><td class="co now">(376,567)</td><td class="now">the triad widget the IVC label vacates</td></tr>
+      <tr><td class="k">ckd p2</td><td>Proximal tubule</td><td class="co was">(821,431)</td><td class="was">a blue vessel</td><td class="co now">(858,431)</td><td class="now">the orange-walled tubule</td></tr>
+      <tr><td class="k">ckd p2</td><td>RENAL VEIN</td><td class="co was">(275,510)</td><td class="was">kidney parenchyma</td><td class="co now">(365,500)</td><td class="now">the blue renal vein</td></tr>
+      <tr><td class="k">ckd p2</td><td>RENAL ARTERY</td><td class="co was">(292,437)</td><td class="was">a medullary pyramid</td><td class="co now">(324,429)</td><td class="now">the arterial trunk at the hilum</td></tr>
+      <tr><td class="k">nephrolithiasis p2</td><td>Renal artery</td><td class="co was">(198,489)</td><td class="was">kidney parenchyma</td><td class="co now">(295,458)</td><td class="now">the red renal artery</td></tr>
+      <tr><td class="k">nephrolithiasis p2</td><td>Renal vein</td><td class="co was">(325,572)</td><td class="was">the vertical IVC</td><td class="co now">(300,470)</td><td class="now">the horizontal renal vein</td></tr>
+      <tr><td class="k">hyperkalemia p2</td><td>② Renal Medulla</td><td class="co was">(347,451)</td><td class="was">the intact kidney's capsule</td><td class="co now">(533,435)</td><td class="now">a pyramid in the cut kidney</td></tr>
+      <tr><td class="k">hyperkalemia p2</td><td>④ Collecting Duct</td><td class="co was">(908,632)</td><td class="was">the DCT coil</td><td class="co now">(960,620)</td><td class="now">the branched collecting duct</td></tr>
+      <tr><td class="k">gerd p2</td><td>② Diaphragmatic crus</td><td class="co was">(444,319)</td><td class="was">the oesophageal wall</td><td class="co now">(395,365)</td><td class="now">the crural band</td></tr>
+      <tr><td class="k">gerd p2</td><td>④ Lower esophageal sphincter</td><td class="co was">(497,377)</td><td class="was">shared with ⑤ and ⑥</td><td class="co now">(470,340)</td><td class="now">the thickened distal segment</td></tr>
+      <tr><td class="k">gerd p2</td><td>Widened hiatal opening</td><td class="co was">(240,1032)</td><td class="was">the gastric body</td><td class="co now">(195,1000)</td><td class="now">the gap between the crura</td></tr>
+      <tr><td class="k">gerd p2</td><td>Diaphragm (overview)</td><td class="co was">(105,437)</td><td class="was">the stomach body</td><td class="co now">(100,417)</td><td class="now">the dome — <strong>confirm one is drawn</strong></td></tr>
+      <tr><td class="k">iron-anemia p2</td><td>JEJUNUM</td><td class="co was">two dots, (196,670) and (204,652)</td><td class="was">haustrated colon</td><td class="co now">one dot, ≈(300,720)</td><td class="now">the smooth coiled loops</td></tr>
+      <tr><td class="k">preeclampsia p2</td><td>HEART</td><td class="co was">(322,529)</td><td class="was">the right lung</td><td class="co now">(390,580)</td><td class="now">the ventricular mass</td></tr>
+      <tr><td class="k">preeclampsia p2</td><td>AORTA</td><td class="co was">(317,597)</td><td class="was">the right lung</td><td class="co now">(372,528)</td><td class="now">the arch</td></tr>
+      <tr><td class="k">preeclampsia p2</td><td>PELVIC CIRCULATION</td><td class="co was">(452,841)</td><td class="was">the uterine wall / fetal buttock</td><td class="co now">(320,930)</td><td class="now">the iliac network</td></tr>
+      <tr><td class="k">tb p2</td><td>Alveolar macrophage</td><td class="co was">(403,674)</td><td class="was">a pink alveolus</td><td class="co now">(368,678)</td><td class="now">the purple macrophage. <strong>800×1200 page</strong></td></tr>
+      <tr><td class="k">pneumothorax p2</td><td>Cervical recess</td><td class="co was">(608,878)</td><td class="was">shoulder soft tissue</td><td class="co now">(565,877)</td><td class="now">the blue apical patch. <strong>800×1200 page</strong></td></tr>
+      <tr><td class="k">pneumothorax p2</td><td>Costophrenic recess</td><td class="co was">(597,963)</td><td class="was">lung above the crescent</td><td class="co now">(597,985)</td><td class="now">the blue crescent</td></tr>
+      <tr><td class="k">pneumothorax p2</td><td>Costomediastinal recess</td><td class="co was">(597,925)</td><td class="was">mid-zone lung</td><td class="co now">(562,925)</td><td class="now">the reflection beside the mediastinum</td></tr>
+      <tr><td class="k">pneumothorax p2</td><td>Costophrenic angle</td><td class="co was">(682,402)</td><td class="was">the lateral lung border</td><td class="co now">(674,438)</td><td class="now">the angle itself</td></tr>
+      <tr><td class="k">pneumothorax p2</td><td>Intercostal vein</td><td class="co was">(283,873)</td><td class="was">the subcutaneous band</td><td class="co now">(270,906)</td><td class="now">the blue segment in the groove</td></tr>
+      <tr><td class="k">pneumothorax p2</td><td>Rib (bundle panel)</td><td class="co was">(288,963)</td><td class="was">magenta lung</td><td class="co now">(275,915)</td><td class="now">the gold rib band</td></tr>
+      <tr><td class="k">labor p2</td><td>Bladder</td><td class="co was">(475,559)</td><td class="was">the cream pubic bone</td><td class="co now">the bladder lumen</td><td class="now"><strong>confirm one is drawn</strong></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">6</span><h2>Group C — longer re-routes</h2></div>
+  <p class="prose">The leader travels far enough that you are redrawing a stroke, not just a dot. Doable, but slower, and the erase crosses more artwork. Consider handing these to production.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Page</th><th>Label</th><th>From</th><th>To</th><th>Why it is harder</th></tr></thead>
+    <tbody>
+      <tr><td class="k">parkinsons p2</td><td>Brainstem</td><td class="co was">(245,726)</td><td class="co now">(358,600)</td><td>170 px. Old dot is on black — erase is trivial — but the whole leader must be redrawn.</td></tr>
+      <tr><td class="k">parkinsons p2</td><td>Cerebellum</td><td class="co was">(303,760)</td><td class="co now">(455,595)</td><td>225 px, same shape.</td></tr>
+      <tr><td class="k">stroke p1</td><td>Middle Cerebral Artery</td><td class="co was">(447,423)</td><td class="co now">(520,410)</td><td>Also <strong>recolour the terminator white</strong> — it is currently gold, the same amber the figure uses for the penumbra, which is why it reads as artwork.</td></tr>
+      <tr><td class="k">cdiff p2</td><td>Superior mesenteric a.</td><td class="co was">(122,1173)</td><td class="co now">(192,1150)</td><td>70 px across the arcade.</td></tr>
+      <tr><td class="k">cdiff p2</td><td>Superior mesenteric v.</td><td class="co was">(478,1107)</td><td class="co now">(544,1120)</td><td>66 px.</td></tr>
+      <tr><td class="k">cdiff p2</td><td>Inferior mesenteric v.</td><td class="co was">two dots, (481,1143) and (481,1160)</td><td class="co now">(510,1202)</td><td>Two terminators to erase; one to draw.</td></tr>
+      <tr><td class="k">cdiff p2</td><td>Parasympathetic (vagus n.)</td><td class="co was">(851,1110)</td><td class="co now">(690,1140)</td><td>160 px across the whole colon frame.</td></tr>
+      <tr><td class="k">cdiff p2</td><td>Portal vein (to liver)</td><td class="co was">(531,1202)</td><td class="co now">(545,1088)</td><td>Erase is easy — black ground — but the new route runs up the panel.</td></tr>
+      <tr><td class="k">cdiff p2</td><td>Right colic a.</td><td class="co was">two tips, (122,1117) and (142,1118)</td><td class="co now">one tip on an arcade branch</td><td>Remove the orphan dash.</td></tr>
+      <tr><td class="k">ckd p2</td><td>Afferent / Efferent arteriole</td><td class="co was">(865,1024) and (872,1063)</td><td class="co now">(775,970) and (770,1012)</td><td>Both leaders cross the whole corpuscle to reach the vascular pole on the far side.</td></tr>
+      <tr><td class="k">seizure p2</td><td>Cortical networks</td><td class="co was">starts (531,891), arrowhead at (583,891) pointing outward</td><td class="co now">(555,845), arrowhead inward</td><td><strong>Reverse the arrow.</strong> Not a move — the head is at the wrong end.</td></tr>
+      <tr><td class="k">seizure p2</td><td>Basal ganglia</td><td class="co was">(496,452)</td><td class="co now">(552,452) or (545,478)</td><td>Crosses the magenta thalamus.</td></tr>
+      <tr><td class="k">migraine p2</td><td>A — Dura mater</td><td class="co was">(521.5,306.5)</td><td class="co now">(470,283)</td><td>The dural band is only 6 px thick (y 280–285 at x 470). Precision job.</td></tr>
+      <tr><td class="k">suicide p2</td><td>Raphe / others</td><td class="co">—</td><td class="co">—</td><td>See the per-page sheet; several leaders share one region.</td></tr>
+      <tr><td class="k">hypothyroid p2</td><td>Capillary</td><td class="co was">(170,712)</td><td class="co now">(60,715)</td><td>110 px across the follicle. <strong>800×1200 page.</strong></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="sec-letter">7</span><h2>Group D — do not attempt in Photoshop</h2></div>
+
+  <h3>The label names something the page does not draw</h3>
+  <p class="prose">Nine rows. There is nothing to point at, so no leader move fixes them. These need an illustrator or a decision to drop the label. Full detail in <span class="co">PRODUCTION-artwork-needed.md</span>.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Page</th><th>Label</th><th>What is missing</th><th>Suggested</th></tr></thead>
+    <tbody>
+      <tr><td class="k">stroke p1</td><td>Circle of Willis, Basilar, PCA, ACA</td><td class="was">all four — a lateral view cannot show basal vessels</td><td class="now">add a basal inset, or drop the four</td></tr>
+      <tr><td class="k">uti p2</td><td>⑧ Ureterovesical junction</td><td class="was">no oblique intramural segment</td><td class="now">draw it — the page's own relationships strip shows how</td></tr>
+      <tr><td class="k">parkinsons p2</td><td>Substantia nigra pars reticulata</td><td class="was">no SN band in the sagittal panel</td><td class="now">copy from the page's own midbrain panel</td></tr>
+      <tr><td class="k">parkinsons p2</td><td>Internal capsule</td><td class="was">no white-matter lamina</td><td class="now">draw one, or move the label to the coronal panel</td></tr>
+      <tr><td class="k">schizophrenia p2</td><td>Pituitary Gland</td><td class="was">no gland or stalk</td><td class="now">draw it; the connector arrow is fine as is</td></tr>
+      <tr><td class="k">migraine p2</td><td>D — Superficial temporal artery</td><td class="was">no extracranial vessel anywhere</td><td class="now">draw the STA in the scalp, or drop the label</td></tr>
+      <tr><td class="k">hepatitis p2</td><td>Coronary ligament</td><td class="was">a posterior structure in an anterior view</td><td class="now"><strong>drop the label</strong> — it cannot be drawn here</td></tr>
+      <tr><td class="k">hypothyroid p2</td><td>Hyoid bone</td><td class="was">no bone above the thyroid cartilage</td><td class="now"><strong>drop the label</strong></td></tr>
+      <tr><td class="k">dementia p2</td><td>Fornix</td><td class="was">not differentiated from the callosal band</td><td class="now">draw it, or fold into "Corpus callosum (fornix beneath)"</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>A legend entry whose marker was never drawn</h3>
+  <p class="prose">Five. You <em>could</em> add a numbered badge in Photoshop — it is a circle and a digit on flat artwork — but check first whether the number should exist at all.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Page</th><th>Missing marker</th></tr></thead>
+    <tbody>
+      <tr><td class="k">gerd p2</td><td>⑦ Stomach (cardia) — the artwork has ① to ⑥ only</td></tr>
+      <tr><td class="k">meningitis p2</td><td>④ Cerebral aqueduct — no ④ anywhere</td></tr>
+      <tr><td class="k">meningitis p2</td><td>⑥ Median aperture — no ⑥ anywhere</td></tr>
+      <tr><td class="k">lymphoma p2</td><td>⑤ Mediastinal Lymph Nodes — the column runs 2,3,4,6,7,8,9</td></tr>
+      <tr><td class="k">gout p2</td><td>⑤ Other metatarsals — no ⑤ badge on the foot</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Blocked on a re-export, not on Photoshop</h3>
+  <p class="prose"><strong>pneumothorax p2, rows 5–8.</strong> The four pleural layers on the main figure are <strong>four pale lines one or two pixels wide with three-pixel gaps</strong> — a terminator on that page is 4 px across, wider than the layer it names. They cannot be verified or drawn unambiguously at 800×1200. Re-export at 1024×1536 first. Same cause blocks four rows on <em>hypothyroid</em> p2 and one on <em>tb</em> p2.</p>
+
+  <h3>Waiting on your read, not on anyone's tools</h3>
+  <p class="prose"><strong>gdm p2, the PLACENTA (ENLARGED) panel.</strong> Either the umbilical vessel colours are inverted or the two leaders are on the wrong vessels — opposite fixes, and a render cannot distinguish them. Remember the umbilical circulation reverses the usual convention: the <strong>vein</strong> carries oxygenated blood and is drawn <strong>red</strong>.</p>
+  <p class="prose"><strong>The placenta on both obstetric pages.</strong> On <em>preeclampsia</em> p2 and <em>gdm</em> p2 the PLACENTA label lands on the uterine wall and I could not find a distinct placental disc on either. If it is not drawn, both are artwork rows.</p>
+  <p class="prose"><strong>osteoporosis p2, the lateral skeleton.</strong> Both legs overlap and I could not be certain which shaft belongs to the near leg. Confirm which bone is which before swapping Tibia and Fibula, and note that on the <em>anterior</em> skeleton both dots are on the slender bone — so that half needs a leader move as well as a text swap.</p>
+</section>
+
+<footer>
+  <p>Compiled from 47 per-page production sheets, 11 August 2026. Each page's full reasoning, colour samples and unverified rows are in <span class="co">galleries-staging/PRODUCTION-&lt;id&gt;-p2.md</span> on the <span class="co">claude/anatomy-label-corrections-j58lf1</span> branch. 54 of the 81 pages in the work order are measured; 27 are not yet, so this list will grow.</p>
+</footer>
+
+</div>
