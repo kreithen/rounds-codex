@@ -15,6 +15,10 @@ Nothing on this list is launch-blocking.
 4. **Reissue the work order as a corrected docx**, with my measured coordinates replacing the
    auditors' where they differ and each override marked — one document, not two.
 5. **Deploy every 3–4 corrected panels.**
+7. **I add coordinates and flag doubts; I do not overturn the auditors' findings.** Where I cannot
+   reproduce a row I write "could not reproduce — please check before acting", not "withdrawn".
+   Taken after I contradicted the order twice in one day and was wrong both times.
+8. **Reissue the corrected order in rolling tranches**, by gallery, as pages are verified.
 6. **Sample pages 3–10** to find out whether the defect extends beyond the audited pages. Done —
    see `SWEEP-pages-3-10.md`, and item 6 below.
 

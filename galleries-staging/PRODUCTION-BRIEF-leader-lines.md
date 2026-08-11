@@ -92,6 +92,40 @@ teaches two structures under each other's names.
 
 ---
 
+## Fault 4 — on a layered figure, every layer label stops in the MIDDLE layer
+
+*Added 2026-08-10, after the pattern turned up on a fourth gallery.*
+
+This is mechanically distinct from faults 1 and 2. It is not a fan dropped by row position, and not
+an off-by-one along a series. It is a **radial** set — the concentric layers of a wall, a capsule or
+a gland — where several labels naming different layers all terminate in the same middle band.
+
+Four instances, each measured on the shipped page:
+
+| page | labels | where they all land |
+|---|---|---|
+| `aortic-dissection` p2 | Intima, Media, Adventitia | all at mid-thickness of the mauve wall, same radial position |
+| `pericarditis` p3 | Visceral pericardium | outboard of the cavity, on the parietal band — inverting the layer order |
+| `addisons` p1 | Cortex | 7 px past the cortex/medulla boundary, in the medulla the "Medulla" label also points at |
+| `addisons` p2 | Zona Fasciculata, Zona Reticularis | fasciculata on the gland's central hilum; reticularis inside the medulla |
+
+**Why it is worth naming separately.** On a radial figure the layers are usually only 8–20 px thick,
+so a leader that overshoots by a fraction of the figure's radius still lands two layers in. The
+reader gets a confident wrong layer rather than an obvious miss — and on these particular figures the
+layers *are the subject*: the whole point of an adrenal cross-section is cortex versus medulla, and
+of a wall inset is intima versus media versus adventitia.
+
+**What we suggest:** where a figure's structures are concentric, anchor each label's endpoint to a
+**measured radius** rather than to a point picked by eye. Two of the four above are also cases where
+the label column's vertical order does not match the radial order, which is what lets a leader arrive
+at the wrong depth without looking wrong on the page.
+
+**A practical check you can run without measuring anything:** on a layered figure, no two layer
+labels should terminate at the same distance from the centre. On all four pages above, at least two
+do.
+
+---
+
 ## What the clean pages do differently — the actionable recommendation
 
 `acs` page 1 is clean, and both `acs` pages 1 and 2 are built differently from the rest: **numbered
