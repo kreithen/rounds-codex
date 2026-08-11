@@ -26,8 +26,9 @@ Nothing on this list is launch-blocking.
 10. **Production re-renders only from verified tranches** — the 62 unmeasured pages wait.
 11. **While tranches land, production works the template fixes** — the four faults in the brief are
     the root cause and need no per-page measurement from me.
-12. **Page order comes from `TRIAGE-by-teaching-damage.md`**, a reading of all 511 rows, not from
-    how many labels each page has flagged.
+12. **Page order comes from `TRIAGE-by-teaching-damage.md`**, as revised by
+    **`TRIAGE-tier4-reread.md`** (2026-08-11) — the original tier 4 was defined by exclusion and
+    never read; re-reading it found two tier-1-grade pages and about 22 with whole-structure errors.
 
 ---
 
@@ -97,6 +98,8 @@ with questions.
 | `PRODUCTION-gerd-p2.md` | markers 4, 5 and 6 all radiate from one point; legend item 7 has no marker |
 | `PRODUCTION-hypothyroid-p2.md` | follicle labels a displaced series; no hyoid drawn; page is 800×1200 |
 | `PRODUCTION-dementia-p2.md` | nine of eleven sagittal labels on another label's structure; **triage had it too low** |
+| `PRODUCTION-export-sizes.md` | **one consolidated re-export ask** — 16 galleries in the order ship off-standard |
+| `TRIAGE-tier4-reread.md` | tier 4 re-read: it is not near-misses. 2 tier-1-grade pages, ~22 with whole-structure errors |
 | `SWEEP-laterality.md` | 37 side-naming rows checked; 3 confirmed inversions + a new fault class |
 
 **Tranche 4 — the six biggest remaining pages:**
