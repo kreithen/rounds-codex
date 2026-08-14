@@ -7,7 +7,11 @@ physician's decision, so nothing below depends on them.
 Counts were read from the shipped content, not from the older docs — several of which carry stale
 figures and say so.
 
-**See also `store-strategy.md`** (2026-08-09) for what needs Apple approval after the first release, the consequences of dropping the login wall for iOS, and **Android** — which this file does not cover at all.
+**See also `app-store-checklist.md`** (2026-08-14) — the single current checklist for the iOS
+submission, which is a different project from this one and does not block the 17th. It records the
+two decisions taken that day: Apple Developer Program enrollment is done as **Rounds Codex, Inc.**,
+and **the login wall stays on the web but is stripped from the iOS build.** `store-strategy.md`
+still holds the Android plan, which nothing else covers.
 
 ---
 
@@ -71,9 +75,14 @@ App Store submission.
   *"Deleting your account"* section naming the in-app path, which is what a reviewer reads. The one
   untested link is a real browser calling the real endpoint; the container cannot sign in to
   Supabase, so that first tap is the physician's.
-- **Guideline 2.1: Apple needs a working demo account** in the review notes. A review that cannot
-  sign in is an automatic rejection.
-- **The draft's "Sign-in required? No" answer is now wrong**, along with the surrounding copy.
+- ~~**Guideline 2.1: Apple needs a working demo account** in the review notes.~~ **Moot as of
+  2026-08-14** — the wall stays on the web and is stripped from the iOS build, so there is no
+  account for a reviewer to sign in to. The privacy-label bullet above becomes **web-only** for
+  the same reason: iOS goes back to "Data Not Collected". See `app-store-checklist.md` §1, which
+  records the three in-app surfaces that still claim an account exists and must change in the iOS
+  variant.
+- **The draft's "Sign-in required? No" answer is right again**, for iOS. It stays wrong as a
+  description of the website.
 
 ## 4. Content and QA still outstanding
 
@@ -89,8 +98,13 @@ App Store submission.
 
 The claims policy matters more than the copy:
 
-- **Never say "clinically reviewed."** No independent medical review has been done. **"Written by a
-  physician" is both true and the stronger claim.**
+- **"Clinically reviewed" IS allowed** — revised 2026-08-09. The physician has reviewed the content
+  and every listed clinical advisor has agreed to be listed and has reviewed material in the app.
+  The earlier blanket ban here conflated it with **"peer-reviewed"**, which stays forbidden: that
+  means independent pre-publication review by other experts, and it has not happened.
+- **"Written by a physician" is superseded too.** The approved framing is **"created by a team of
+  clinicians"** — Dr. Kreithen stays named as Founder & Clinical Lead, but the one-person-wrote-it
+  line goes.
 - Launch-day assets and channels are already specified in the brief; the gap is execution, not
   strategy.
 

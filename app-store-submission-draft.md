@@ -1,5 +1,20 @@
 # App Store submission — draft
 
+> ## ⚠ SUPERSEDED for the App Store — read `app-store-checklist.md` first (2026-08-14)
+>
+> This file was written for a **no-account v1**, a decision reversed on 2026-08-08 when the login
+> wall came back (v82) and re-settled on 2026-08-14: **the wall stays on the web and is stripped
+> from the iOS build.** Every content count below is also stale — it is 183 conditions, 102
+> galleries, 1,020 pages and 1,840 quiz questions now.
+>
+> `app-store-checklist.md` is the current, single checklist.
+>
+> **This file is still the drafting source for the field-by-field submission text** — name,
+> subtitle, keywords, description, review notes and the screenshot list. The App Review notes
+> answering Guideline 1.4.1 on the dosage calculator are good as written. Fix the counts and the
+> attribution on the way out.
+
+
 > ## ⚠ SUPERSEDED IN PLACES — the login wall came back on 2026-08-08 (v82)
 >
 > This draft was written for a **no-account v1**. That decision was reversed at the physician's

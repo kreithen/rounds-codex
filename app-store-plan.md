@@ -1,5 +1,19 @@
 # App Store submission — decisions and plan
 
+> ## ⚠ SUPERSEDED for the App Store — read `app-store-checklist.md` first (2026-08-14)
+>
+> This file was written for a **no-account v1**, a decision reversed on 2026-08-08 when the login
+> wall came back (v82) and re-settled on 2026-08-14: **the wall stays on the web and is stripped
+> from the iOS build.** Every content count below is also stale — it is 183 conditions, 102
+> galleries, 1,020 pages and 1,840 quiz questions now.
+>
+> `app-store-checklist.md` is the current, single checklist.
+>
+> **This file is still the authority on**: why one price rather than a student tier, the
+> `AppTransaction.originalAppVersion` grandfathering design, and what App Store Connect can and
+> cannot tell you about your audience.
+
+
 Decisions taken by Dr. Kreithen 2026-08-04. This file is the record; where a decision has a
 technical consequence, the consequence is written down with it, because that is the part that
 gets forgotten.

@@ -1,5 +1,18 @@
 # Store strategy — release cadence, monetization gates, and Android
 
+> ## ⚠ SUPERSEDED for the App Store — read `app-store-checklist.md` first (2026-08-14)
+>
+> This file was written for a **no-account v1**, a decision reversed on 2026-08-08 when the login
+> wall came back (v82) and re-settled on 2026-08-14: **the wall stays on the web and is stripped
+> from the iOS build.** Every content count below is also stale — it is 183 conditions, 102
+> galleries, 1,020 pages and 1,840 quiz questions now.
+>
+> `app-store-checklist.md` is the current, single checklist.
+>
+> **This file is still the authority on**: what needs Apple's review after the first release and
+> what does not, the bundle-*and*-fetch architecture, and **Android**, which appears nowhere else.
+
+
 Written 2026-08-09, answering three questions from Dr. Kreithen. Sits alongside `app-store-plan.md`,
 which holds the **decisions** (one price, grandfathering, privacy label, size, Guidelines 4.2 and
 1.4.1) and `app-store-submission-draft.md`, which holds the **field-by-field submission text**.
