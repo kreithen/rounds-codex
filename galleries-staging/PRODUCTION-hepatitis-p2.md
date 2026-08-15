@@ -101,7 +101,7 @@ Row 13, confirmed, with the confluence measured.
 
 | label | dot at | what is under it |
 |---|---|---|
-| Right hepatic duct | **(115,850)** | the right-going limb — **correct** |
+| Right hepatic duct | **(115,850)** | the **viewer's-right** limb — **WE CALLED THIS CORRECT AND IT IS NOT; see the note below** |
 | **Left hepatic duct** | **(105,883)** | **the common hepatic trunk**, 11 px below the confluence at **(102,872)** |
 | Common hepatic duct | **(110,919)** | the same trunk, 36 px lower — **correct** |
 
@@ -109,6 +109,16 @@ So the left duct and the common duct name one tube, and the **left-going limb** 
 confluence out to x 65–100, y 855–875 — carries no label.
 
 **Correct endpoint: (85,866).**
+
+> **CORRECTED 2026-08-15 — this section had the handedness backwards.** The gallbladder sits on the
+> **viewer's LEFT** in this panel and in the anterior liver figure on the same page, so the schematic
+> is in **anterior orientation** and viewer's-left is the patient's **RIGHT**. Therefore the
+> viewer's-right limb at (115,850) is the **LEFT** hepatic duct, and the `Right hepatic duct` label
+> was on the wrong branch all along — we passed it as "correct as drawn".
+>
+> **Establish a figure's handedness from a landmark before calling any left/right label correct.**
+> One asymmetric structure settles it — the gallbladder here — and the same check applies to every
+> paired structure on every page in the work order.
 
 ---
 
@@ -130,5 +140,5 @@ confluence out to x 65–100, y 855–875 — carries no label.
 | 12 | Hepatic veins / Drain blood to IVC | (397,543) the IVC at hilum level | the hepatic veins entering the IVC above the liver |
 | 13 | Left hepatic duct | (105,883) the common trunk | (85,866) the left-going limb |
 
-Correct as drawn: **Gallbladder** (285,506), **Right hepatic duct** (115,850), **Common hepatic duct**
-(110,919), **Falciform ligament**.
+Correct as drawn: **Gallbladder** (285,506), **Common hepatic duct** (110,919), **Falciform
+ligament**. (**`Right hepatic duct` was wrongly listed here** — see the handedness note in §6.)

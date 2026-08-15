@@ -1203,3 +1203,69 @@ itself is matched.
 **`RC_PDF_Q`: gdm 80** (target 1,216,452; q80 → 1,200,896), **gerd 85** (target 4,684,527;
 q85 → 4,634,671). **`gerd`'s PDF embeds at 1024 px, not 512** — the only gallery in this run that
 does, so its PDF is 4.5 MB rather than ~1.2 MB. Do not "standardise" it without asking.
+
+---
+
+## `hepatitis` p2 — corrected in Photoshop by Dr. Kreithen, integrated 2026-08-15 (v104)
+
+Seventh physician-corrected page, and **the first worked by DELETION rather than re-routing.** 13,341
+real pixels changed (luma>25); this gallery already ships 4:4:4, so there was no chroma confound.
+
+### Eight labels removed from the anterior figure
+
+Leader ink in the porta hepatis box (x 340–500, y 470–600) went **474 → 101 px, a 79% reduction.**
+Removed: Coronary ligament, Right hepatic artery, Portal vein, Hepatic portal triad, Hepatic veins /
+Drain blood to IVC, Bile duct (from L and R hepatic ducts), Left portal vein, Hepatic artery proper.
+
+That disposes of **six of the seven shuffled porta rows** (3, 4, 9, 10, 11, 12) by removing them
+rather than untangling them, and **row 7 Coronary ligament is exactly what the sheet recommended** —
+a posterior/superior peritoneal reflection an anterior view cannot show.
+
+**Content consequence, stated because it is invisible in a leader audit:** the portal triad, portal
+vein, hepatic artery proper and hepatic veins are no longer labelled on the anterior figure. The
+BLOOD SUPPLY and PORTAL TRIAD panels on the same page still carry those concepts, so the page has not
+lost the teaching — but the anterior view is now a much sparser figure. **Author's decision, not a
+defect.**
+
+### Three surviving anterior leaders, all moved
+
+| row | label | was | now | sampled |
+|---|---|---|---|---|
+| 1 | Cystic duct | (265,523) inside the gallbladder | **(346,501)** | (61,60,12) green biliary |
+| 2 | Inferior vena cava | (376,567) the triad widget | **(401,602)** | (21,51,116) the blue IVC |
+| 8 | Common bile duct | (349,524) | **(370,531)** | green duct, but only 7 px lower — **still above the cystic-duct confluence** |
+
+### Rows 5 and 6 untouched — ZERO changed pixels
+
+The MICROANATOMY hepatocytes/sinusoids swap survives intact: the plates are still labelled as the
+vessel and the vessel-free block as the sinusoid.
+
+### The erase is the cleanest in the run — and here is how that was measured
+
+Naive counting says 5,956 non-ink pixels darkened, which reads like heavy artwork damage. It is not:
+a strict ink threshold (>170) treats a leader's own anti-aliased halo as "artwork". **Dilating the
+old ink mask by 5 px before differencing** gives the honest number: **171 px**, in two clusters of
+51 and 33 px at **x 352–367, y 537–581** — small nicks on the green duct's left edge exactly where
+three leader dots had been stacked. Everything else erased was leader.
+
+**Keep that method.** Measuring erase damage without excluding the leader's own halo over-reports by
+~35×, and would have made a careful erase look reckless.
+
+### ROW 13 — OUR SHEET WAS WRONG, and his change is the correct one
+
+He moved **Right hepatic duct (124,854) → (88,864)** and **Left hepatic duct (104,885) → (107,868)**.
+
+`PRODUCTION-hepatitis-p2.md` listed the old Right hepatic duct as **"correct as drawn"**. It was not.
+(124,854) is the **viewer's-right** limb of the confluence. The gallbladder sits **viewer's-left** in
+both this panel and the anterior liver figure, so the schematic is in **anterior orientation** and
+viewer's-left is the patient's RIGHT. The old label therefore named the patient's LEFT duct.
+
+**The lesson: establish a figure's handedness before calling any left/right label correct.** One
+landmark settles it — here, which side the gallbladder is on — and it is the same check for every
+paired structure on every page. We did not do it, and passed a wrong row as correct.
+
+### Integration
+
+473,835 B against the shipped 493,501 B — **smaller, because eight leaders' worth of high-frequency
+white line is gone.** **`RC_PDF_Q` for `hepatitis` is 80** (target 1,153,788; q80 → 1,144,173).
+Rebuilt 1,117 kB against 1,126 kB.
