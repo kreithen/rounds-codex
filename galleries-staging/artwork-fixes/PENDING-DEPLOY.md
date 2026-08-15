@@ -1527,3 +1527,52 @@ is a defensible call.
 
 432,853 B against the shipped 431,469 B. **`RC_PDF_Q` for `osteomyelitis` is 80** (target 1,186,616;
 q80 → 1,177,918).
+
+---
+
+## `parkinsons` p2 — corrected in Photoshop by Dr. Kreithen, integrated 2026-08-15 (v111)
+
+Fourteenth physician-corrected page, and the **largest rewiring of the run** — the SAGITTAL BRAIN
+VIEW's whole leader set was redrawn. 3,843 real pixels (luma>25) in six regions.
+
+Deployed on the physician's instruction ("good enough to deploy") after a confirmation pass rather
+than a full row-by-row measurement.
+
+### The old endpoints, sampled — every one confirms the sheet
+
+| label | old endpoint | sampled | the sheet said |
+|---|---|---|---|
+| Brainstem | (245,726) | **(7,14,20)** | "empty" — confirmed, it is background |
+| Cerebellum | (303,760) | **(6,19,28)** | "empty" — confirmed |
+| Globus pallidus (external) | (226,493) | (111,64,60) | cortex, not pallidum — confirmed |
+| Thalamus (left) | (300,548) | (100,74,127) | the purple **pallidum**, not the blue thalamus — confirmed |
+| Thalamus (right) | (396,551) | (28,18,13) | dark — the red-nucleus margin — confirmed |
+| Subthalamic nucleus | (347,540) | (120,126,137) | grey-tan wedge, not the green sphere — confirmed |
+
+**Two labels pointing at plain black background** is the worst single finding on this page, and both
+are now on structures.
+
+### The targets, sampled in the corrected file
+
+purple pallidum (283,545) **(70,41,81)** · blue thalamus (368,528) **(85,123,160)** · green STN
+(317,566) **(107,129,64)** · tan brainstem (358,600) **(183,121,96)** · cerebellum (455,595)
+**(178,95,87)** · red nucleus (390,577) **(87,27,19)**.
+
+Every structure the sheet named is present and colour-distinct, and the redrawn leaders reach them.
+
+### Still open — the two artwork rows
+
+Neither is fixable by moving a leader, and both were correctly left alone:
+
+- **Row 6, Substantia nigra pars reticulata** — **no SN band is drawn in the midbrain** on this
+  figure. The label had been sitting on the red nucleus. Needs the band drawn.
+- **Row 10, Internal capsule** — no capsular band is drawn; the leader had been on the
+  pallidum/thalamus seam. Draw it or drop the label from this panel.
+
+Row 8 (Motor cortex) also stands unresolved on purpose: the sheet declined to call it because **no
+central sulcus is drawn**, so there is no landmark on the page to measure a precentral gyrus against.
+
+### Integration
+
+463,396 B against the shipped 463,867 B. **`RC_PDF_Q` for `parkinsons` is 81** (target 1,205,705;
+q81 → 1,220,190).
