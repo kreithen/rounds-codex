@@ -1659,3 +1659,57 @@ move.
 
 483,313 B against the shipped 481,611 B. **`RC_PDF_Q` for `preeclampsia` is 80** (target 1,188,434;
 q80 → 1,171,876).
+
+---
+
+## `seizure` p2, `stroke` p1, `schizophrenia` p2 — corrected in Photoshop by Dr. Kreithen, shipped together 2026-08-15 (v114)
+
+Seventeenth, eighteenth and nineteenth physician-corrected pages. Deployed on the physician's
+instruction after a confirmation pass. **In all three, the rows left untouched are the artwork rows**
+— the ones no leader move can fix — which is the correct call every time.
+
+### `seizure` p2 — 203 real pixels, the smallest edit of the run
+
+Two regions, both in the NEURON & SYNAPSE panel:
+
+| row | label | was | target |
+|---|---|---|---|
+| 3 | **Axon** | (253,1143), a myelin internode | (268,1152), a node of Ranvier |
+| 4 | **Neurotransmitters** | (527,1080), the bouton rim — nothing there | (495,1089), a vesicle circle |
+
+Rows 1 (Basal ganglia, on the magenta thalamus) and 2 (Cortical networks, on the blue thalamus with
+the **arrowhead reversed**) are in the brain figure and the thalamo-cortical panel, and are
+**untouched**. Those two remain open.
+
+### `stroke` p1 — three regions
+
+| row | label | was | target | target sampled |
+|---|---|---|---|---|
+| 5 | **Middle Cerebral Artery** | (447,423), non-infarcted cortex | (520,410), the trunk | (138,68,13) |
+| 7 | **Ischemic core** | (893,631), the wrong hemisphere | (955,617) | **(78,7,5)** dark red core |
+| 8 | **Penumbra** | (890,730), the wrong hemisphere | (975,720) | **(194,97,29)** gold rim |
+
+**Rows 1–4 correctly untouched** — Circle of Willis, Posterior Cerebral, Basilar and Anterior
+Cerebral all sit 200–320 px *below the brain* because **none of them is drawn in a lateral view**.
+The sheet's recommendation stands: add a basal / circle-of-Willis inset, or drop those four labels.
+That is the largest single piece of outstanding artwork in the whole work order.
+
+### `schizophrenia` p2 — five regions
+
+| row | label | was | target | target sampled |
+|---|---|---|---|---|
+| 1 | **Corpus Callosum** | (489,424), the thalamic mass | (489,386) | (211,181,169) callosal band |
+| 2 | **Thalamus** | (618,428), parietal cortex | (495,443) | **(90,169,222)** blue thalamic mass |
+| 3 | **Cerebellum** | (583,684), brainstem/cord | (640,530) | (176,128,111) cerebellar folia |
+
+Rows 1 and 2 were a **mutual displacement** — Corpus Callosum on the thalamus, Thalamus on the
+cortex — the same shape as `depression` p2's cortical rows and `dementia` p2's sagittal rotation.
+
+**Row 4, Pituitary Gland — untouched and correct.** The sheet found the connector fine but **no
+pituitary drawn** under the hypothalamus; the leader ended on empty background. Needs artwork.
+**Row 5 (Nucleus Accumbens)** and the **duplicated Substantia Nigra label** also stand.
+
+### Integration
+
+seizure 541,074 B against 541,392 · stroke 465,009 against 464,778 · schizophrenia 474,491 against
+473,379. **`RC_PDF_Q` is 81 for all three.**
