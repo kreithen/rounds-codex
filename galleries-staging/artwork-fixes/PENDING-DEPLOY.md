@@ -1350,3 +1350,53 @@ label sat in the colloid. Now the C cell is named correctly and one short move f
 317,948 B against the shipped 357,811 B — **11% smaller, the largest drop in the run**, because his
 4:4:4 export re-encodes to this gallery's 4:2:0 on a dense, colourful page. Re-encode drift against
 his file is max 58 / mean 1.25, which is chroma resampling, not lost work.
+
+---
+
+## `iron-anemia` p2 — corrected in Photoshop by Dr. Kreithen, integrated 2026-08-15 (v107)
+
+Tenth physician-corrected page. **Both measured rows fixed**, and this one is the model for how a
+two-tip leader should be repaired. 1,419 real pixels (luma>25) in two regions.
+
+| row | label | was | now |
+|---|---|---|---|
+| 1 | **JEJUNUM** | **two terminators**, (196,670) and (204,652), both on haustrated colon | **one** leader to **(326,752)**, the smooth coiled small-bowel loops |
+| 2 | ILEUM | (194,780) haustrated colon | **(223,782)**, ~29 px medial |
+
+### The fault-8 repair is done properly — measure it this way
+
+Both old terminators carried **30 and 24 ink px** on the shipped page and now measure **exactly
+zero**; fork-region ink dropped 84 → 36. The forked leader was **erased and redrawn**, not
+overdrawn.
+
+Contrast `gdm` p2, where the tip was extended correctly but the old arrowhead was left in place
+(17 px preserved, 1 removed) and the label ended up with two answers. **The check is an ink count at
+the OLD terminator's coordinates: it must go to zero.** That is a two-line measurement and it
+distinguishes a real fix from a cosmetic one.
+
+### ILEUM is the tighter call, and colour cannot arbitrate it
+
+The tip sits ~25 px from the colon border, and **this page defeats colour sampling**: haustrated
+colon at (188,760) samples **(114,39,33)** against the tip's **(116,46,33)** — indistinguishable. The
+verdict is a visual read at 10× (smooth loop, no haustral sacculation), not a measurement, and it is
+stated that way.
+
+**Worth generalising:** on a page where every candidate structure is the same tissue colour, the
+sampling method that decided `ckd`, `depression` and `dementia` gives nothing. Fall back to
+geometry — tube calibre, presence of haustra, stroke profiles — and say which method produced the
+verdict.
+
+The anatomically ideal ILEUM position is lower and more medial in the RLQ. Our sheet deliberately
+gave no coordinate there because those loops sit behind the caecum and we would have been guessing
+which is drawn in front; that still stands.
+
+### Rows 3 and 4 untouched
+
+Hemosiderin and Fe³⁺-bound-to-transferrin in the storage/transport panel: zero changed pixels. Both
+were carried-not-measured on the sheet, so nothing is lost — but this is one of the four sheets
+flagged for a re-sweep on the audit-the-panel basis.
+
+### Integration
+
+482,260 B against the shipped 481,265 B. **`RC_PDF_Q` for `iron-anemia` is 81** (target 1,225,013;
+q81 → 1,237,821). Rebuilt 1,208 kB against 1,196 kB.
