@@ -1615,3 +1615,47 @@ q72 → 1,064,835).
 
 283,288 B against the shipped 322,706 B — **12% smaller**, the same 4:4:4-to-4:2:0 effect seen on
 `hypothyroid`, which is the other sub-standard page in this set.
+
+---
+
+## `preeclampsia` p2 — corrected in Photoshop by Dr. Kreithen, integrated 2026-08-15 (v113)
+
+Sixteenth physician-corrected page. Deployed on the physician's instruction after a confirmation
+pass. **2,176 real pixels (luma>25) in four regions — one per flagged row.** The raw RGB count of
+70,179 is the usual 4:4:4-over-4:2:0 chroma.
+
+### Old endpoints sampled — every one confirms the sheet
+
+| label | old endpoint | sampled | verdict |
+|---|---|---|---|
+| **HEART** | (322,529) | **(206,137,152)** | pale pink — **the right lung** |
+| **AORTA** | (317,597) | **(171,109,113)** | pale pink — **the right lung** |
+| UMBILICAL CORD | (285,879) | (169,75,73) | red — maternal pelvic vessels |
+| PELVIC CIRCULATION | (452,841) | (187,99,94) | pink — uterine wall / fetal buttock |
+
+### The corrected targets
+
+The HEART leader now ends at **(396,576)**, sampling **(209,82,85)** — saturated red on the
+ventricular mass, against the pale (206,137,152) lung it used to point at. AORTA's target at
+(372,528) samples (197,82,78), the arch. PELVIC CIRCULATION's at (320,930) samples (92,25,28), the
+iliac network.
+
+### Why this page mattered more than five rows suggests
+
+**Four of the five labels name maternal systemic structures** — heart, aorta, placenta, pelvic
+circulation — on a page whose whole subject is how those adapt in pregnancy and fail in
+preeclampsia. As shipped, **the heart and the aorta were both inside a lung**, the placenta was on
+the uterine wall rather than the villous bed, and the pelvic circulation was on the fetus. Only
+UTERUS and KIDNEYS landed where they belonged.
+
+### Still open
+
+**Row 3, PLACENTA** — the sheet could not confirm a distinct villous bed is drawn, so it asked for a
+check at source. Same open question as `gdm` p2 and the earlier note about how the placenta is drawn
+across the OB module. If no separate villous bed exists, that row needs artwork rather than a leader
+move.
+
+### Integration
+
+483,313 B against the shipped 481,611 B. **`RC_PDF_Q` for `preeclampsia` is 80** (target 1,188,434;
+q80 → 1,171,876).
