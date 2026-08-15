@@ -1576,3 +1576,42 @@ central sulcus is drawn**, so there is no landmark on the page to measure a prec
 
 463,396 B against the shipped 463,867 B. **`RC_PDF_Q` for `parkinsons` is 81** (target 1,205,705;
 q81 → 1,220,190).
+
+---
+
+## `pneumothorax` p2 — corrected in Photoshop by Dr. Kreithen, integrated 2026-08-15 (v112)
+
+Fifteenth physician-corrected page. Deployed on the physician's instruction after a confirmation
+pass. **3,345 real pixels (luma>25) in eight regions** — the INTERCOSTAL NEUROVASCULAR BUNDLE panel
+rewired, plus the three pleural recesses and the costophrenic angle.
+
+### Nearest-pixel measurements
+
+| row | was | now |
+|---|---|---|
+| **Costophrenic recess** | **15.7 px** from the blue pleural reflection | **1.0 px** — on it |
+| **Cervical recess** | **19.2 px** from blue | **6.1 px** |
+| **Rib (bundle panel)** | **no gold rib pixel within 20 px** — returned nothing | bundle leaders rewired onto the rib / vein / pleura stack |
+| Costophrenic angle | (682,402), lateral lung border | **(670,436)**, the angle |
+
+### Rows 5–8 correctly untouched, and the reason is structural
+
+The main figure's ③④⑤⑥ were deferred by the sheet pending a **1024×1536 re-export**, because at
+800×1200 the **visceral pleura, pleural cavity and parietal pleura occupy 1–2 source pixels each,
+separated by 3-pixel gaps.** Four leaders cannot land distinguishably on that, and a reader could
+not tell them apart if they did. Even at standard size they would be 2–3 px each.
+
+**The sheet's recommendation stands:** keep ③ Left lung and ⑥ Pleural cavity on the main figure and
+let the INTERCOSTAL NEUROVASCULAR BUNDLE panel — which magnifies exactly this stack and is on the
+same page — carry ④ and ⑤. That is a layout decision, not a leader move.
+
+Rows 13/14 (latissimus dorsi / pectoralis major in the safe-triangle panel) also untouched.
+
+### Integration
+
+**This page is 800×1200 and lives at the repo ROOT** (`pneumothorax-02.jpg`), like `hypothyroid` —
+not under `assets/<id>/`. Its PDF embeds at **547 px**, so **`RC_PDF_Q` is 72** (target 1,065,025;
+q72 → 1,064,835).
+
+283,288 B against the shipped 322,706 B — **12% smaller**, the same 4:4:4-to-4:2:0 effect seen on
+`hypothyroid`, which is the other sub-standard page in this set.
