@@ -913,3 +913,52 @@ model is the problem.
 
 **Running tally: Higgsfield 0/4 on leader corrections, deterministic 4/4.** Enough to stop
 proposing it for this defect class.
+
+---
+
+## `cdiff` p2 — corrected in Photoshop by Dr. Kreithen, integrated 2026-08-15
+
+**The first page corrected outside this pipeline.** The physician worked the page from
+`Rounds-Codex-Photoshop-worklist.pdf` / `Rounds-Codex-pages-to-edit.zip` and returned it as a chat
+paste. Reviewed and shipped on his instruction ("It's good enough … ship it").
+
+**What changed**, measured against the shipped page before integration — **857 pixels above
+threshold 12**, in **seven tight regions**, bbox x 111–547, y 364–1205. Every region is one of the
+five fixes on the sheet; nothing else on the page moved.
+
+| # | label | was | now |
+|---|---|---|---|
+| 1 | Taenia coli | off the band | on the band |
+| 2 | Superior mesenteric a. | — | the SMA trunk, **(198,1133)** |
+| 3 | Ileocolic a. | — | the arcade, **(174,1174)** |
+| 4 | Superior mesenteric v. | — | the blue trunk, **(533,1132)** |
+| 5 | Inferior mesenteric v. | **two dots** (fault 8) | one dot |
+| 6 | Portal vein | — | the cut end, **(546,1095)** |
+
+**Three items deliberately left for a later pass** — raised with the physician, who chose to ship:
+
+1. **`Right colic a.` endpoint (143,1118) still samples (64,16,11)** — black background, not vessel.
+   The one endpoint on the sheet that did not land.
+2. **The two new arterial leaders cross.** Not a placement error — the label column's order forces
+   it. Swapping the two label *texts* in the column would uncross them without moving a leader.
+3. **`Middle colic a.` barely moved** from its original endpoint.
+
+### Integration mechanics — how a physician-corrected page comes in
+
+His export is **quality 12** (1,220 kB, subsampling 0) against the gallery's own encode
+(622 kB). **Do not ask him to change his export settings** — re-encode on the way in, the same
+principle as matching a JPEG's own quantization table rather than "improving" it:
+
+```
+im.save(dst, qtables=shipped.quantization, subsampling=JpegImagePlugin.get_sampling(shipped),
+        optimize=True)
+```
+
+Result **637,826 B vs the shipped 637,317 B** — within 0.1%, so the encode is matched, not guessed.
+Re-encode drift against his file is max 31 / mean 0.53, which is ordinary JPEG ringing at the new
+strokes.
+
+**`RC_PDF_Q` for `cdiff` is 81.** Calibrated by sweeping 78–92 against the existing PDF's own
+1,287,065 B at its own 512 px embed width: q80 → 1,262,802, **q81 → 1,299,430** (closest), q82 →
+1,330,766. The script's default 82 would have inflated the nine unchanged pages. Rebuilt PDF is
+1,269 kB against 1,256 kB.
