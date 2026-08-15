@@ -41,6 +41,20 @@ circuit disruption, the three labels that carry that circuit are the three that 
 Both arrowheads sit on nothing. For row 5 the order names **the gold node at (555,437)** as the
 target, and that node is real and bright — sampled **(216,156,83)**.
 
+> **CORRECTED 2026-08-15 — that node is almost certainly the PITUITARY, not a raphe nucleus.** At
+> 14× it is a discrete gland-like body, an orange sphere spanning **x 552–562, y 432–444** with a
+> specular highlight, and **this page's own pathway legend makes orange the HPA-axis colour** —
+> serotonergic pathways are purple. So:
+> - **Row 3's question below is answered: the gland IS drawn.** The Pituitary (ACTH) leader should
+>   go to **≈(556,437)**, and this page comes off `PRODUCTION-artwork-needed.md`.
+> - **Row 5's target above is wrong.** Do not send the Raphe leader there. The raphe nuclei are the
+>   midline brainstem column lower and further back; we are not giving a coordinate for it until it
+>   has been read at the same magnification.
+>
+> **`schizophrenia` p2's pituitary row should be re-checked the same way** before it stays on the
+> artwork-needed list. The check that would have caught this is on the page itself: **test a
+> candidate target against the page's own colour legend before naming it.**
+
 **On row 3 we are handing the target back.** The order's suggested (510,410) samples **(31,28,35)** —
 dark — so we cannot confirm a drawn pituitary at that point. **Please check at source whether the
 gland is drawn.** If it is not, this joins `schizophrenia` p2's pituitary on

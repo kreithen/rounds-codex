@@ -1078,3 +1078,61 @@ an edit. **Check `JpegImagePlugin.get_sampling()` before reading a whole-page di
 
 437,419 B against the shipped 434,851 B. **`RC_PDF_Q` for `dementia` is 80** (target 1,248,580 B;
 q80 → 1,232,389). Rebuilt 1,203 kB against 1,219 kB.
+
+---
+
+## `depression` p2 — corrected in Photoshop by Dr. Kreithen, integrated 2026-08-15 (v102)
+
+Fourth physician-corrected page. **5 of 7 rows fixed**, one untouched, one moved but not landed.
+Real edit 4,210 px above threshold 40, in 8 regions (the raw >12 count of 50,859 is again the
+4:4:4-vs-4:2:0 chroma, not an edit — see the `dementia` entry).
+
+### Fixed, colour-proved against the page's own key
+
+| row | label | was | now | sampled |
+|---|---|---|---|---|
+| 1 | DLPFC | (473,323) the green cingulate band | **(447,300)** | **(53,104,152)**, an exact match to the blue frontal reference |
+| 2 | vmPFC | (577,323) the band's posterior end | **(468,376)** | (37,78,125) = blue ventral-anterior frontal cortex |
+| 4 | ACC | (461,371) blue frontal cortex | **(473,325)** | (118,154,106) = the green cingulate band |
+| 6 | Nucleus accumbens | (493,424) the dark gap | **(493,403)** | the violet sphere |
+| 7 | Hippocampus (coronal) | (905,415) cortex/white matter | **(883,432)** | (113,59,145) = the purple hippocampus |
+
+Rows 1/2/4 were the fault-5 case — the page contradicting its own colour legend. All three now land
+on the colour their own label names. **Leader attribution was done by connected component**: three
+ink runs in x 300–720, y 180–400, each traced from its label edge to its tip, so no guessing which
+leader is which.
+
+### Row 5 Raphe nuclei — untouched
+
+Still ending at (594,528) on dark background. Sampled identical in both files.
+
+### Row 3 Pituitary — moved, but onto the Nucleus accumbens
+
+From (624,614) on empty black to **(490,401)** — within 3 px of where the row-6 leader now ends.
+**Two labels on one structure.** Shipped anyway (it is no worse in kind than the ~76 pages still
+carrying leader errors, and 5 rows are genuinely better), but it is first on the next worklist.
+
+### OUR SHEET WAS WRONG ABOUT THE GOLD NODE — and it matters twice
+
+`PRODUCTION-depression-p2.md` §2 named the bright object at (555,437) "the gold node" and offered it
+as the **Raphe** target. At 14× it is a discrete gland-like body — an orange sphere spanning
+**x 552–562, y 432–444** with a specular highlight — and **the page's own pathway legend makes orange
+the HPA-axis colour, not serotonin.** It is far more likely the **pituitary**.
+
+Two consequences, both good:
+
+1. **Row 3's open question is answered: the gland IS drawn.** This page comes off
+   `PRODUCTION-artwork-needed.md`, and the pituitary leader should go to ≈(556,437). The
+   `schizophrenia` p2 pituitary row should be re-checked the same way before it stays on that list —
+   **we may have called artwork missing twice on the basis of not looking closely enough.**
+2. **Had he followed our row-5 advice the Raphe label would now be on the pituitary.** He did not.
+
+**The general lesson: check a candidate target against the page's OWN legend before naming it.**
+The colour key is on the page, it is machine-checkable, and it would have caught this — the same
+check that decided rows 1/2/4 correctly on this very page was not applied to row 5.
+
+### Integration
+
+451,946 B against the shipped 450,731 B, re-encoded at the shipped file's own quantization and 4:2:0.
+**`RC_PDF_Q` for `depression` is 81** (target 1,163,894 B; q81 → 1,179,103). Rebuilt 1,151 kB
+against 1,136 kB.
