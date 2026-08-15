@@ -1,6 +1,12 @@
 # For production: `icp` page 2 — BRAIN and CSF are labelled into each other's compartment
 
 8 rows flagged. **Two measured and confirmed decisively; six carried.** Needs a re-render.
+
+> **AMENDED 2026-08-15 — §4 and §5 added.** This sheet originally verified the work order's rows and
+> did not audit the panels independently, so it missed a displaced series of at least three labels in
+> the MID-SAGITTAL panel (cerebellum, medulla, foramen magnum — see §4) and did not examine the DURAL
+> VENOUS SINUSES panel beyond the one row the order listed. **Read §4 and §5 before working this
+> page.**
 *Measured on the shipped page (1024×1536), 2026-08-11.*
 
 The page is already at the standard size — no size change needed.
@@ -71,6 +77,47 @@ swapped relative to each other.
 **We read this off the panel at low magnification and have not confirmed it at scale — please check at
 source before acting on it.**
 
+## 4. ADDED 2026-08-15 — a displaced series in the MID-SAGITTAL panel that NOBODY flagged
+
+**Raised by Dr. Kreithen, who asked why these panels were not flagged. He was right.** The rows below
+are in neither the work order nor the original version of this sheet, because this sheet's scope was
+*"confirm the order's rows"*, not *"audit the panel"*. That was the wrong scope. Measured on the
+shipped page by following each leader from its own label stub.
+
+The lower half of the label column is **displaced downward as a group**:
+
+| label | leader tip | what is there |
+|---|---|---|
+| **Cerebellum** | **(337,621)** | ~100 px below and left of the cerebellum, which is the striated ball at **x 370–440, y 470–570**. The tip is below the tentorium, in the upper cervical region |
+| **Medulla oblongata** | **(336,654)** | cervical cord level, below the medulla |
+| **Foramen magnum** | **(325,683)** | a **cervical vertebral body**. The foramen magnum is at the skull base, ~85 px higher |
+
+**Four leaders terminate in a column at x ≈ 321–325** — (325,621), (323,650), (321,679), (324,710) —
+and those terminators sit **on the cervical vertebrae**, not on neural structures at all.
+
+This is the same **fault 2** as the porta hepatis on `hepatitis` p2 and the sagittal rotation on
+`dementia` p2: each label taking the position of the one below it. It is the single largest defect on
+this page and it was missed twice.
+
+**Row 9 (the mid-sagittal column order) is now CONFIRMED, not an observation.** The column reads
+**Skull, then Scalp**. The page's own MENINGES panel numbers them ① Scalp, ② Skull. Fixing the leaders
+without fixing the column order leaves the two names still swapped relative to each other.
+
+## 5. The DURAL VENOUS SINUSES panel — flagged as a whole, deliberately without coordinates
+
+Seven horizontal arrows at even vertical spacing, all terminating in a narrow band. That is the
+signature of endpoints placed **from list position rather than from the artwork** — the same shape as
+`aki` p2's blood-supply row and `ckd` p2's renal-artery series.
+
+**We are not giving per-label coordinates for this panel.** The leaders cross and merge at the shipped
+resolution and line-following cannot attribute them reliably; four separate traces converged on the
+same two points. What is solid is row 3 above: the **Cavernous sinus** is not in the superior
+sagittal → straight → transverse → sigmoid → IJV chain at all, it is anterior at the skull base, and
+it currently occupies the position where the sigmoid's continuation belongs.
+
+**Please re-measure this panel against your 1024×1536 source**, and check every row rather than the
+one we flagged.
+
 ---
 
 ## Summary of endpoints
@@ -85,6 +132,10 @@ source before acting on it.**
 | 6 | Arachnoid mater | *per the order* — runs into cortex | the arachnoid line |
 | 7 | Subarachnoid space | *per the order* — runs into cortex | the CSF space |
 | 8 | Pia mater | *per the order* — runs into cortex | the gyral surface membrane |
-| — | mid-sagittal label column | Skull above Scalp | **check the column order against the MENINGES panel** |
+| — | mid-sagittal label column | Skull above Scalp | **CONFIRMED — reorder to Scalp, Skull** |
+| 9 | **Cerebellum** | **(337,621)**, upper cervical region | the striated cerebellum, x 370–440, y 470–570 |
+| 10 | **Medulla oblongata** | **(336,654)**, cervical cord | the medulla, above the foramen magnum |
+| 11 | **Foramen magnum** | **(325,683)**, a cervical vertebral body | the skull base opening, ~85 px higher |
+| — | DURAL VENOUS SINUSES panel | seven evenly-spaced arrows in a narrow band | **re-measure the whole panel at source — see §5** |
 
 Correct as drawn: **BLOOD ~10%** (795,562).

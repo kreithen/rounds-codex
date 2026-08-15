@@ -241,3 +241,23 @@ Things I am doing myself and will not ask you about: the local leader/dot/marker
 QA, the per-batch deploys, and the production sheets for anything that turns out not to be locally
 fixable. Each deploy gets its own note in `artwork-fixes/PENDING-DEPLOY.md` with what changed and
 what was measured, so any of them can be reversed if you disagree with the call.
+
+---
+
+## 2026-08-15 — the sheets verify the order's rows; they do not audit the panels
+
+**Raised by Dr. Kreithen on `icp` p2**, asking why two panels were not flagged. The answer is a scope
+error on our side, and it applies to **every production sheet in this project**, not just that page.
+
+Each sheet opens with a count like *"8 rows flagged, two measured and confirmed, six carried"*. That
+count is the **work order's** rows. Where a sheet says "confirmed", it means the order's finding was
+reproduced — **not** that the panel was swept for anything the order missed. On `icp` p2 that let a
+displaced series of at least three labels through (cerebellum, medulla oblongata, foramen magnum, all
+landing on the cervical spine) and left the DURAL VENOUS SINUSES panel unexamined apart from one row.
+
+**Changing for the remaining pages:** audit each panel independently, and state on every sheet which
+panels were swept and which were only checked against the order. A sheet that has verified someone
+else's list should not read like a sheet that has checked the artwork.
+
+**Worth a re-sweep on this basis:** any page whose sheet has a high "carried, not measured" count.
+Those are the ones most likely to be hiding the same thing.
