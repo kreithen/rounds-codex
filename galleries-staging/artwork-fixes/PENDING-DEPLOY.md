@@ -1269,3 +1269,41 @@ paired structure on every page. We did not do it, and passed a wrong row as corr
 473,835 B against the shipped 493,501 B — **smaller, because eight leaders' worth of high-frequency
 white line is gone.** **`RC_PDF_Q` for `hepatitis` is 80** (target 1,153,788; q80 → 1,144,173).
 Rebuilt 1,117 kB against 1,126 kB.
+
+---
+
+## `hyperkalemia` p2 — corrected in Photoshop by Dr. Kreithen, integrated 2026-08-15 (v105)
+
+Eighth physician-corrected page. **2 of 3 rows fixed**, and both are clean single moves — the whole
+page comes to **1,782 real pixels in three regions** (luma>25; the RGB count of 65,437 is the usual
+4:4:4-over-4:2:0 chroma).
+
+| row | label | was | now | sampled |
+|---|---|---|---|---|
+| 1 | ② Renal Medulla | (347,451), the **intact** kidney's capsule — (174,101,95) | **(562,453)** | **(117,49,41)**, a medullary pyramid in the **cut** kidney (pyramid reference (104,43,34)) |
+| 2 | ④ Collecting Duct | (908,632) the DCT coil | **(962,617)** | (167,113,55), the thick branched collecting duct — essentially the sheet's target (960,620) |
+
+**Row 2 is a clean move, not an extension** — the old position (908,632) samples the DCT coil
+unchanged and carries no leader. That is the pattern the `gdm` and `ckd` entries above are warnings
+about, done right.
+
+### Row 1 — the collision the sheet tried to avoid, at 13 px
+
+The sheet chose **(533,435)** specifically so the medulla dot would not collide with the ④ Collecting
+Duct badge dot at (571,451). The new tip is at **x = 562** and that badge dot is at **x = 575** —
+**13 px apart.** Two distinguishable dots, so not wrong, but tighter than intended. Worth a nudge
+left if the file is opened again.
+
+### Row 3 — ZERO changed pixels in both directions, and that is the right call
+
+The square bracket at **x = 872, y 406–533** is still shared between **Loop of Henle** (y = 438) and
+**Ascending Limb** (y = 504), and **Descending Limb still has no leader at all.**
+
+**This one genuinely cannot be fixed in Photoshop.** The ascending limb is drawn *behind* the red and
+blue vasa recta for most of its length, so a leader onto it reads as landing on a vessel until the
+tube is brought clear — which is a re-render. Leaving it is correct; it stays on the production sheet.
+
+### Integration
+
+436,243 B against the shipped 435,024 B. **`RC_PDF_Q` for `hyperkalemia` is 81** (target 1,197,101;
+q81 → 1,211,752). Rebuilt 1,183 kB against 1,169 kB.
