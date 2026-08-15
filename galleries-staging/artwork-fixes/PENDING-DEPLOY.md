@@ -1136,3 +1136,70 @@ check that decided rows 1/2/4 correctly on this very page was not applied to row
 451,946 B against the shipped 450,731 B, re-encoded at the shipped file's own quantization and 4:2:0.
 **`RC_PDF_Q` for `depression` is 81** (target 1,163,894 B; q81 → 1,179,103). Rebuilt 1,151 kB
 against 1,136 kB.
+
+---
+
+## `gdm` p2 and `gerd` p2 — corrected in Photoshop by Dr. Kreithen, integrated 2026-08-15 (v103)
+
+Fifth and sixth physician-corrected pages, shipped together. Both are partial: **gdm 1 of 4 rows,
+gerd 2 of 7**, no regressions.
+
+### A better discriminator: LUMA, not RGB
+
+His exports are **4:4:4**; these pages ship **4:2:0**, so the raw RGB diff is 47,525 px (gdm) and
+63,481 px (gerd) before any edit is considered. **Chroma-only differences leave luma untouched**, so
+`|Δluma| > 25` separates the two cleanly:
+
+| region | RGB >40 | luma >25 | verdict |
+|---|---|---|---|
+| gdm balance-scale strip | 178 | **0** (max 7) | pure chroma — encode, not edit |
+| gdm fetus | 169 | **182** (max 208) | a real edit |
+
+That reduced gerd's whole page to **1,192 real pixels in exactly two regions**, which is what made
+the "which rows were touched" question answerable at all. **Use luma for every subsequent
+physician-corrected page** — the RGB threshold was over-reporting by 30–50×.
+
+### `gdm` — row 2 fixed, and it introduced a two-tip leader
+
+**Row 2 ② UMBILICAL CORD:** the leader now elbows at (365,762) and runs up-right to **(423,725)**,
+sampling (100,47,62) against the cord's (67,29,48) and (123,77,94). On the cord. ✓
+
+**But the original arrowhead was left in place** at x 360–374, y 762–766 — measured as **17 px
+preserved, 1 removed**. So the leader now carries a terminator on the fetal back *and* a tip on the
+cord: **the fault-8 pattern, created by the fix.** Not repaired here because erasing it means
+repainting the fetal back, which is not a deterministic edit.
+
+**This is the second time an extension-style fix has produced a new defect** (after `ckd` p2's
+Bowman's capsule). Worth stating on every future sheet: **an extended leader must have its old
+terminator removed, or the label ends up with two answers.**
+
+**Row 1 ① PLACENTA untouched** (4 px). Still on the fetal head — reasonable, our sheet could not
+give a coordinate. **Rows 3/4 untouched** — the umbilical vein/artery colour-convention question is
+still with the physician.
+
+### `gerd` — rows 3 and 4 improved, neither landed; five rows untouched
+
+**Row 4, the ④⑤⑥ convergence.** All three redrawn thicker. Old: all three met at ~(497,377).
+New: **④ (478,375), ⑤ (478,385), ⑥ (515,373)**. ⑥ is now 37 px clear — the three-on-one-point is
+gone — but **④ and ⑤ still end 10 px apart**, and ④ did not move up to the thickened distal segment
+at ~(470,340). The panel still reads as though the sphincter and the junction are one place.
+
+**Row 3, Widened hiatal opening:** (240,1032) → **(230,1009)**, 25 px toward the neck. The crural
+gap is ~35 px further left at ~(195,1000). Improved, not landed.
+
+**Rows 1, 2, 5, 6, 7 untouched** — zero luma-diff pixels in each neighbourhood. Including **row 7**:
+no ⑦ marker was added, so the legend still lists a Stomach (cardia) item with no marker anywhere on
+the artwork.
+
+**Colour sampling cannot decide this page** — the anti-reflux panel is red muscle throughout, so
+every endpoint samples (105–130, 20–65, 13–67). The gerd verdicts above are **geometric**, from
+stroke profiles per row and column, and that is the honest basis for them.
+
+### Integration
+
+gdm 456,842 B against 456,400 B. gerd 509,379 B against 488,879 B — **4.2% larger, the biggest drift
+so far**, because the redrawn leaders are much thicker than the hairlines they replaced; the encode
+itself is matched.
+**`RC_PDF_Q`: gdm 80** (target 1,216,452; q80 → 1,200,896), **gerd 85** (target 4,684,527;
+q85 → 4,634,671). **`gerd`'s PDF embeds at 1024 px, not 512** — the only gallery in this run that
+does, so its PDF is 4.5 MB rather than ~1.2 MB. Do not "standardise" it without asking.
