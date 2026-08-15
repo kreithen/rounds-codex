@@ -1442,3 +1442,43 @@ both tips sit on the same continuous yellow chain at their own levels, ~25 px ap
 
 470,876 B against the shipped 469,997 B. **`RC_PDF_Q` for `migraine` is 80** (target 1,187,408;
 q80 → 1,170,835).
+
+---
+
+## `nephrolithiasis` p2 — corrected in Photoshop by Dr. Kreithen, integrated 2026-08-15 (v109)
+
+Twelfth physician-corrected page and **the cleanest of the run: 4 of 4 rows fixed, and all four old
+endpoints erased to exactly zero ink.** 4,163 real pixels (luma>25) in four regions, one per row.
+This gallery already ships 4:4:4, so there was no chroma confound.
+
+| row | label | was | now | proof |
+|---|---|---|---|---|
+| 1 | **Renal artery** | (198,489), kidney parenchyma — no vessel within 70 px | **≈(295,459)** | the red renal artery at the hilum, sampled (139,43,34) |
+| 2 | **Renal vein** | (325,572), the IVC, 100 px too low | **≈(301,471)** | the horizontal blue renal vein, sampled (26,75,137) |
+| 3 | **Urinary bladder** | (278,871), the distal ureter | **≈(370,912)** | inside the bladder lumen, past the wall at x≈305 |
+| 4 | **Medulla (renal pyramids)** | (818,856), the 16 px cortical band | **≈(801,871)** | inside the striated pyramid, clear of its capsule outline |
+
+### Four for four on the orphan-terminator test
+
+**35 → 0, 50 → 0, 41 → 0, 26 → 0.** Every old dot was erased before the leader was redrawn, so no
+label on this page carries a second answer. That is the test `gdm` p2 failed and `iron-anemia` p2
+passed; this is the first page to pass it on every row.
+
+### Rows 1 and 2 are the instructive pair
+
+Both vessels were **drawn correctly all along and neither was labelled** — one label sat on
+parenchyma 59 px from anything vascular, the other on the IVC 100 px below the vein it named. That
+shape (correct artwork, both labels adrift) is the same as `cellulitis` p2 and `hepatitis` p2, and
+it is the cheapest class to fix: nothing needs redrawing, only two endpoints move.
+
+### Row 4 is worth remembering for how it was placed
+
+The cortical band in the inset is **~16 px wide** and the dot had been placed carefully *inside* it.
+That is not an overshoot — it is a leader put deliberately where the cortex is, under a label naming
+the medulla. Distinguishing the two matters when writing a sheet: an overshoot is a geometry error,
+this was a reading error, and only the second kind tells you the label list itself needs checking.
+
+### Integration
+
+481,026 B against the shipped 478,877 B. **`RC_PDF_Q` for `nephrolithiasis` is 81** (target
+1,161,669; q81 → 1,177,437).
