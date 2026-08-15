@@ -962,3 +962,62 @@ strokes.
 1,287,065 B at its own 512 px embed width: q80 → 1,262,802, **q81 → 1,299,430** (closest), q82 →
 1,330,766. The script's default 82 would have inflated the nine unchanged pages. Rebuilt PDF is
 1,269 kB against 1,256 kB.
+
+---
+
+## `ckd` p2 — corrected in Photoshop by Dr. Kreithen, integrated 2026-08-15 (v100)
+
+Second physician-corrected page. **2,064 pixels changed above threshold 12, in 10 regions**, all
+inside the four panels — no stray edits. Shipped on his instruction; **four of the eight rows on
+`PRODUCTION-ckd-p2.md` are fixed, four are not**, and one of the four went the wrong way. Recorded
+here rather than silently, because the page is now live in that state.
+
+### Fixed, measured decisively
+
+| row | label | was | now | sampled under the new tip |
+|---|---|---|---|---|
+| 1 | RENAL ARTERY | (292,437) medullary pyramid | **(390,472)** | **(177,27,23)** — centre of the red arterial band (y 468–483 at x 392–410) |
+| 2 | RENAL VEIN | (275,510) parenchyma | **(402,496)** | **(27,93,196)** — centre of the blue venous band (y 488–502) |
+| 3 | Proximal tubule | (821,431) the blue vessel | **(860,430)** | the pale descending tubule; the blue vessel is 40 px behind at x 815–821 |
+
+Rows 1 and 2 went **further out than the sheet suggested** — onto the trunks rather than the hilar
+branches. Better, not worse: the sheet's (324,429) / (365,500) were the nearest defensible points,
+his are unambiguous.
+
+**Three fixes not on the sheet**, all landing correctly: Afferent arteriole (nephron panel) →
+(806,322) on the red arteriole; Distal tubule → (915,334) on the orange tubule; a terminator added
+on Loop of Henle.
+
+### Row 8 — RENAL BLOOD SUPPLY, reworked but not resolved
+
+Two leaders now run deep into the kidney, reaching **(745,738)** and **(760,817)**; previously all
+five tips sat at x 828–864 on the extrarenal trunk. **The sheet's open question remains open**: both
+new tips sample cortical parenchyma ((161,66,53) and (138,44,32)) and the gold vessel pixels near
+them are 1–3 px scattered runs, so it cannot be shown they land on drawn interlobar / arcuate /
+interlobular vessels. Still needs the source file. The reversed renal→segmental→interlobar order was
+not separately verifiable — the leaders cross, and neutral-ink tracing fragments where they run over
+red artwork.
+
+### Rows 4–7 — RENAL CORPUSCLE, not fixed; row 4 regressed
+
+| row | label | state after the edit |
+|---|---|---|
+| 4 | **Bowman's capsule** | leader **extended** (883,980) → (869,996); at 16× it now **crosses the golden capsule ring at x 872–884 and keeps going**, stopping at the red capillary at ~(862,1002). It previously stopped just inside the ring. **Now points at the glomerulus.** |
+| 5 | Glomerulus | **unchanged** — still ends at x≈884, mid golden ring |
+| 6 | Afferent arteriole | **unchanged** — still in Bowman's space |
+| 7 | Efferent arteriole | extended to (850,1049); sampled (64,19,15), dark maroon, no vessel |
+
+The Bowman's ↔ Glomerulus swap the sheet identified is intact, and row 4 is marginally worse. The
+two real arterioles remain drawn at the **vascular pole on the left** and unlabelled.
+
+**This is the "leader passes through its own target and stops beyond it" fault — fault 1 in the
+brief — created by an edit intended to fix it.** Extending a leader that already overshoots makes it
+overshoot further. Worth stating in the next worklist: *when a sheet says a leader stops past its
+target, the fix is to SHORTEN it, not to lengthen it toward the named structure.*
+
+### Integration mechanics
+
+Same as `cdiff`: his quality-12 export re-encoded at the shipped file's own quantization tables and
+4:4:4 sampling — **513,916 B against the shipped 512,569 B**, drift max 36 / mean 0.48.
+**`RC_PDF_Q` for `ckd` is 81** (target 1,188,764 B at 512 px; q80 → 1,162,042, q81 → 1,195,010,
+q82 → 1,224,647). Rebuilt 1,167 kB against 1,160 kB.
