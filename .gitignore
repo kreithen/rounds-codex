@@ -29,3 +29,6 @@ galleries-staging/_incoming-*/
 __pycache__/
 *.pyc
 galleries-staging/neuro-0731/
+
+# Photoshop hand-off bundle (regenerable; 20 MB of artwork)
+galleries-staging/Rounds-Codex-pages-to-edit.zip
