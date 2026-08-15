@@ -1400,3 +1400,45 @@ flagged for a re-sweep on the audit-the-panel basis.
 
 482,260 B against the shipped 481,265 B. **`RC_PDF_Q` for `iron-anemia` is 81** (target 1,225,013;
 q81 → 1,237,821). Rebuilt 1,208 kB against 1,196 kB.
+
+---
+
+## `migraine` p2 — corrected in Photoshop by Dr. Kreithen, integrated 2026-08-15 (v108)
+
+Eleventh physician-corrected page. **3 of 5 rows fixed**; the two left alone are both correct to
+leave. 2,764 real pixels (luma>25) in three regions.
+
+| row | label | was | now | proof |
+|---|---|---|---|---|
+| 2 | **C — Middle meningeal artery** | (598,412), bare cortex | **(577,435)** | sampled **(152,52,37)**, saturated red on the arterial tree; old-endpoint ink **5 → 0** |
+| 4 | **F — Trigeminal ganglion** | (453,589), the trunk below the disc | **(446,554)** | sampled (197,140,93) beige — within 6 px of the ganglion hub at (448,548) |
+| 5 | **C2 (cervical panel)** | (148,1263), neck muscle | **(140,1294)** | **distance to nearest yellow-nerve pixel: 14.1 px → 2.8 px** |
+
+### The C2 measurement is the method to reuse on thin-structure rows
+
+Rather than sampling *under* the tip — useless when the target is a 2 px nerve and the surround is
+muscle — measure the **distance from the terminator to the nearest pixel of the target's own colour**.
+It turns "is it on the nerve" into a number, and it worked here where colour sampling would not:
+old 14.1 px, new 2.8 px, with C3's untouched control at 4.2 px as the calibration.
+
+### C3 moved without being asked, and it is fine
+
+The sheet listed C3 as correct and not to be touched; it went (150,1300) → (148,1320). Still on the
+yellow ramus and slightly better centred (**4.2 → 2.2 px**), and still below C2 on the same
+descending nerve, so the two have not swapped. **Checked specifically for a displaced series** —
+both tips sit on the same continuous yellow chain at their own levels, ~25 px apart.
+
+### Two rows untouched, both correctly
+
+- **Row 3, D — Superficial temporal artery** — the fault-6 row. No extracranial vessel is drawn
+  anywhere on the scalp or temple, so no leader move can fix it. Correct to leave; it needs artwork
+  or the label comes off the figure.
+- **Row 1, A — Dura mater** — still terminating on the **superior sagittal sinus**, so the page still
+  names one blue tube both as a vein (B) and as a membrane (A). Ink at the old endpoint unchanged.
+  The target is easy and already measured: **(470,283)**, the dark meningeal band between the bright
+  inner table at y 279 and the cortex at y 286. Carried to the next pass.
+
+### Integration
+
+470,876 B against the shipped 469,997 B. **`RC_PDF_Q` for `migraine` is 80** (target 1,187,408;
+q80 → 1,170,835).
