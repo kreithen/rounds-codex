@@ -1021,3 +1021,60 @@ Same as `cdiff`: his quality-12 export re-encoded at the shipped file's own quan
 4:4:4 sampling — **513,916 B against the shipped 512,569 B**, drift max 36 / mean 0.48.
 **`RC_PDF_Q` for `ckd` is 81** (target 1,188,764 B at 512 px; q80 → 1,162,042, q81 → 1,195,010,
 q82 → 1,224,647). Rebuilt 1,167 kB against 1,160 kB.
+
+---
+
+## `dementia` p2 — corrected in Photoshop by Dr. Kreithen, integrated 2026-08-15 (v101)
+
+Third physician-corrected page, and by far the largest rework: **the two clusters
+`PRODUCTION-dementia-p2.md` called worst are both fixed.** Terminators were converted from rings to
+arrowheads throughout, and the coronal panel was rewired from scratch.
+
+### Fixed, colour-proved
+
+| row | label | was | now | proof |
+|---|---|---|---|---|
+| 1 | Corpus callosum | ring (292,423), the purple cingulate arc | arrowhead on the **salmon callosal band** (~252,443) | the band runs y 428–443 at x 250; the arrowhead body spans y 430–449 |
+| 2 | Cingulate gyrus | (265,478) the blue thalamus | **(247,418)** | (129,99,163) vs the arc's (137,107,164) |
+| 3 | Thalamus | (315,479) the salmon callosum | **(268,481)** | (111,103,147) vs the thalamus's (112,105,151) |
+| 9 | Brainstem | (312,586) the purple blob | **(280,591)** | **(202,159,92)** = the gold brainstem column |
+| 11 | Lateral ventricles | a ring on the purple hippocampus | **(704,417)** | the dark ventricular slit |
+| 12 | Hippocampus (bilateral) | one dot on the midline | **forked to (734,469) and (886,470)** | both sample the purple hippocampus |
+| 13 | Entorhinal cortex (bilateral) | a hippocampus | **forked to (766,466) and (858,465)** | (858,465) = (168,125,73), an exact match to the gold entorhinal band |
+
+The **three-way sagittal rotation** (rows 1–3, each label standing on the structure the label above
+it named) is gone. The **coronal panel**, where previously not one of the three labels was on its own
+structure, is now fully correct — and the two bilateral labels are properly **forked to both sides**,
+which the original never did.
+
+### Not changed
+
+- **Row 8 Amygdala** — its elbow (429,656) and leader angle (+34.50°) are pixel-identical to the
+  shipped file. Still on the gold pons.
+- **Row 7 Entorhinal cortex (sagittal)** — tip (377,567) against the shipped (375,566). Still on the
+  green hippocampus, still two rings.
+- **Row 10 Cerebellum** — the blue marker at (310,644) on the gold medulla, untouched.
+
+### A correction to our own sheet — rows 6 and 7 are ONE leader
+
+`PRODUCTION-dementia-p2.md` row 6 attributed the two-ring terminator at (376,566)/(388,573) to the
+**Hippocampus** label. **Tracing each leader from its own label stub shows it belongs to Entorhinal
+cortex** — so rows 6 and 7 describe the same leader twice, and the fault-8 two-tip sits on row 7,
+not row 6. Our error.
+
+**The method that settled it is worth keeping**: anchor on the label's horizontal stub at x≈450,
+walk left to the elbow, then search angles from the elbow for the ray with the most leader ink. It
+attributes a leader to its label without any judgement about what it points at, which is exactly
+what a page with ten leaders converging in a 120 px square needs. It **stops early where a leader
+crosses bright cortex** (the ink test fails on pink tissue), so read the angle, not always the tip.
+
+### Integration mechanics — a new one: the CHROMA changed
+
+His export was **4:4:4**; this gallery ships **4:2:0**. That alone put the raw diff at 70,779 px >12
+across the whole page, which reads exactly like a global adjustment. **Re-encoding at the shipped
+file's own subsampling collapsed it to 28,787 >12 and 6,584 >40** — and the >40 count matches the
+6,820 px measured inside the two edited panels, so the diffuse remainder is chroma round-trip, not
+an edit. **Check `JpegImagePlugin.get_sampling()` before reading a whole-page diff as damage.**
+
+437,419 B against the shipped 434,851 B. **`RC_PDF_Q` for `dementia` is 80** (target 1,248,580 B;
+q80 → 1,232,389). Rebuilt 1,203 kB against 1,219 kB.

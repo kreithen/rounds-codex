@@ -48,11 +48,18 @@ sagittal figure — the thin arch beneath the corpus callosum is not differentia
 band. That makes it a **fault-6 row**: draw the fornix, or fold it into the corpus callosum label as
 the label text already does ("fornix beneath").
 
-## 2. `Hippocampus` has two terminators, and they straddle the boundary
+## 2. A leader with two terminators, and they straddle the boundary
+
+> **CORRECTED 2026-08-15 — this is the `Entorhinal cortex` leader, not `Hippocampus`.** We traced
+> every leader from its own label stub (anchor at the horizontal stub near x≈450, walk left to the
+> elbow, then search angles from the elbow for the ray carrying the most leader ink) and the two
+> rings below belong to **Entorhinal cortex**. So **rows 6 and 7 are the same leader described
+> twice**, and the two-tip fault sits on row 7. Everything below about the terminators themselves
+> stands; only the label they belong to was wrong.
 
 Row 6, and it is worth a separate note because a plain confirm would be wrong.
 
-At 18× the Hippocampus leader ends in **two ring terminators**:
+At 18× that leader ends in **two ring terminators**:
 
 - an inner ring at **(376,566)**, sitting on the **green hippocampus's outer rim**
 - an outer ring at **(388,573)**, on the **pink arbor-vitae cerebellum**
@@ -122,8 +129,8 @@ in a 120 px square and we measured the seven we could attribute unambiguously.
 | 3 | Thalamus | (313,478) the corpus callosum | (270,478) the blue oval |
 | 4 | Fornix | (312,511) the hippocampal head | **no fornix is drawn — add it, or fold into row 1** |
 | 5 | Mammillary body | (300,521) the hippocampus | the paired body below the hypothalamus |
-| 6 | Hippocampus (sagittal) | **two rings**, (376,566) and (388,573) | one ring at (330,545) |
-| 7 | Entorhinal cortex (sagittal) | *per the order* | medial temporal cortex, in the key's gold |
+| 6 | ~~Hippocampus (sagittal)~~ | **merged into row 7** — the two rings are the Entorhinal leader | — |
+| 7 | Entorhinal cortex (sagittal) | **two rings**, (376,566) and (388,573), straddling the green hippocampus / pink cerebellum boundary | **one** terminator on medial temporal cortex, in the key's gold |
 | 8 | Amygdala | (263,549) the pons | the anterior medial temporal region |
 | 9 | Brainstem | (312,590) a purple blob | (290,600) the gold column |
 | 10 | Cerebellum | *per the order* | the pink arbor-vitae mass |
