@@ -1307,3 +1307,46 @@ tube is brought clear — which is a re-render. Leaving it is correct; it stays 
 
 436,243 B against the shipped 435,024 B. **`RC_PDF_Q` for `hyperkalemia` is 81** (target 1,197,101;
 q81 → 1,211,752). Rebuilt 1,183 kB against 1,169 kB.
+
+---
+
+## `hypothyroid` p2 — corrected in Photoshop by Dr. Kreithen, integrated 2026-08-15 (v106)
+
+Ninth physician-corrected page. **1 of 7 rows fixed**, one attempted and short. The whole page comes
+to **346 real pixels in a single region** (x 122–204, y 663–720) — the follicle panel. Rows 3–7
+untouched, which is correct: four need re-measurement against the 1024×1536 master and the hyoid needs
+artwork.
+
+**Row 1 Parafollicular (C) cell — fixed.** The old horizontal leader at y 672–676 was **erased**
+(137 px removed) and redrawn as a diagonal ending at **(166,700)**, on the olive-green C cell
+(x 149–171, y 698–720). It had been at (128,673) in the colloid. The one C cell on the panel now
+carries the label that names it, which is the panel's whole teaching point.
+
+**Row 2 Capillary — not fixed, and the two now converge.** The leader was **extended** from x≈168 to
+**x≈161** at y = 711 (ink measured at (245,240,237)), taking it *further into* the same green C cell
+rather than off it. Parafollicular and Capillary now terminate on one structure.
+
+**Third instance of the same failure mode**, after `ckd` p2's Bowman's capsule and `gdm` p2's
+umbilical cord: **extending a leader toward its neighbour instead of relocating it.** The Capillary
+target is unlabelled and unambiguous — (60,715) samples (160,80,70) and (100,727) samples
+(131,46,51), both plainly vascular.
+
+Net still an improvement: before, the only C cell on the panel was labelled "Capillary" and the C-cell
+label sat in the colloid. Now the C cell is named correctly and one short move finishes the row.
+
+### Two facts about this gallery that are not true of the others
+
+- **The page ships at 800×1200**, not the 1024×1536 standard — one of the 27 sub-standard galleries.
+  The re-export request is still outstanding, and every coordinate in
+  `PRODUCTION-hypothyroid-p2.md` is in the shipped page's own pixels (×1.28 for standard-size).
+- **Its files live at the REPO ROOT** (`hypothyroid-02.jpg`), not under `assets/<id>/` — its
+  `galleries.json` entry has `base: ''` and a bare filename. A script that assumes `assets/<id>/`
+  will not find this gallery.
+- **Its PDF embeds at 547 px**, not 512. `RC_PDF_Q` is **72** (target 1,100,361; q72 → 1,099,929) —
+  the lowest in the run, because the embed is wider and the source pages are only 800 px.
+
+### Integration
+
+317,948 B against the shipped 357,811 B — **11% smaller, the largest drop in the run**, because his
+4:4:4 export re-encodes to this gallery's 4:2:0 on a dense, colourful page. Re-encode drift against
+his file is max 58 / mean 1.25, which is chroma resampling, not lost work.
