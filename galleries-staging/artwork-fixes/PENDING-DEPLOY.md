@@ -1482,3 +1482,48 @@ this was a reading error, and only the second kind tells you the label list itse
 
 481,026 B against the shipped 478,877 B. **`RC_PDF_Q` for `nephrolithiasis` is 81** (target
 1,161,669; q81 → 1,177,437).
+
+---
+
+## `osteomyelitis` p2 — corrected in Photoshop by Dr. Kreithen, integrated 2026-08-15 (v110)
+
+Thirteenth physician-corrected page. **Five of six rows moved**; the sixth was explicitly left to the
+physician's judgement and leaving it is a valid answer. 1,667 real pixels (luma>25) in five regions.
+
+| row | label | was | now |
+|---|---|---|---|
+| 1 | **Yellow marrow** | (353,441), red marrow | **(335,502)**, inside the gold block |
+| 2 | Endosteum | (343,533), inside the gold block | **≈(352,535)**, at the inner cortical surface — marginal, sits on the boundary |
+| 3 | **Haversian canal** | (738,421), concentric lamellae | **(790,400)**, the vessels in the central canal |
+| 4 | **Volkmann's canal** | (783,622), an osteocyte lacuna | **≈(777,554)**, the transverse red/blue vessel pair |
+| 6 | **Venous drainage** | (285,1250) | **(400,1088)** |
+
+### Venous drainage — the cleanest measurement on this page
+
+The nearest-pixel method again, searching for venous blue: the **old tip returned NOTHING within
+16 px in any direction**, confirming the sheet's "no vessel of any kind at the tip". The new tip is
+**4.0 px** from the blue channel at (404,1088). From "no vessel in range" to 4 px.
+
+**The sheet's warning paid off**: it flagged a pale blue-grey highlight along x 391–405 that traces
+the bone's silhouette and reads as a vessel at low zoom. The corrected leader lands on the real
+channel, not that.
+
+### Rows 3 and 4 are extensions, not relocations
+
+Both had **removed = 0** — the leaders were lengthened and the old endpoints survive as points along
+the longer line. Much milder than `gdm` p2 (they read as elbows, not orphaned dots, because the new
+line runs through them) but it is not the erase-and-redraw that `nephrolithiasis` and `iron-anemia`
+got. **Worth stating the preference on future sheets: relocate, don't extend** — an extension can
+only ever add reach, never correct an overshoot, and it leaves the old point on the page.
+
+### Row 5 correctly untouched
+
+`Epiphyseal arteries` at (297,1130), 35 px from `Metaphyseal arteries` at (294,1095). The sheet did
+**not** call this a defect — both are placed where the vessel enters the bone, which is a legitimate
+convention; the issue is only that at 35 px a reader cannot tell which foramen is which. Leaving it
+is a defensible call.
+
+### Integration
+
+432,853 B against the shipped 431,469 B. **`RC_PDF_Q` for `osteomyelitis` is 80** (target 1,186,616;
+q80 → 1,177,918).
