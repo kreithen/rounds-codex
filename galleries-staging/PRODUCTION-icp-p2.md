@@ -118,6 +118,42 @@ it currently occupies the position where the sigmoid's continuation belongs.
 **Please re-measure this panel against your 1024×1536 source**, and check every row rather than the
 one we flagged.
 
+
+## 6. LABEL LIST CHANGES — decided 2026-08-15, apply at re-render
+
+Fewer labels is the fix. The mid-sagittal column carries **19 labels in one stack**, and that density
+is *what produced* the displaced series in §4 — with nineteen evenly-spaced entries, whoever placed
+them was reading down a list rather than looking at the artwork. Six labels cannot shuffle the way
+nineteen can.
+
+### DURAL VENOUS SINUSES — cut from 7 to 6, and change which 6
+
+| action | label | why |
+|---|---|---|
+| **DROP** | Cavernous sinus | not in the superior sagittal → straight → transverse → sigmoid → IJV chain at all; it is anterior at the skull base. This is §1 row 3. |
+| **DROP** | Falx cerebri | a dural fold, not a sinus, and it is already labelled on the mid-sagittal panel |
+| **ADD** | **Confluence of sinuses** | the junction the whole panel is about, and it currently has no label |
+| keep | Superior sagittal, Straight, Transverse, Sigmoid, Internal jugular vein | the drainage chain, in order |
+
+### MID-SAGITTAL SECTION — cut from 19 to 12, and add the one that matters
+
+**Keep** — the meninges (Scalp, Skull, Dura mater, Arachnoid mater, Subarachnoid space, Pia mater),
+then Falx cerebri, **Tentorium cerebelli**, Lateral ventricle, Cerebellum, Brainstem, Foramen magnum.
+
+**Drop** — Corpus callosum, Thalamus, Midbrain, Pons, Medulla oblongata, Third ventricle, Fourth
+ventricle, Spinal cord. General neuroanatomy; the VENTRICULAR SYSTEM panel at the foot of the page
+already teaches the CSF path.
+
+**Collapse** — "Dura mater (periosteal)" + "Dura mater (meningeal)" into one **Dura mater**. The
+two-layer distinction is taught in the MENINGES panel directly below.
+
+**ADD `Tentorium cerebelli`.** The page labels the corpus callosum and the thalamus but not the
+tentorium — and the tentorium is the structure that defines **uncal herniation**. On a page about
+raised intracranial pressure that is backwards. With the falx and the foramen magnum also labelled,
+the three labels name the three herniation boundaries: subfalcine, uncal/tentorial, tonsillar.
+
+**And fix the column order:** Scalp above Skull, matching the page's own MENINGES panel (§3).
+
 ---
 
 ## Summary of endpoints
