@@ -1935,3 +1935,73 @@ deliberate drop, recorded because a "did the terminator move" check cannot see i
 
 **All sixteen pages returned on 2026-08-16 are now live.** Running total for the project: **39 pages
 corrected and deployed** (v99–v119).
+
+## Three re-rendered pages, and three accepted as they stand — 2026-08-16 (v120)
+
+**This closes the `needs-artwork` group: three re-rendered, three accepted.** All six pages that
+could not be fixed in Photoshop are now resolved.
+
+### `pericarditis` p4 — a full re-render, and it fixes the actual fault
+
+The sheet's complaint was not that the arrows were misplaced but that **the tracing did not contain
+the findings they named**, so no arrow move could help. The new strip draws a blue reference
+baseline and the trace now departs from it — measured, not eyeballed:
+
+| annotation | position | trace vs the drawn baseline |
+|---|---|---|
+| red **PR ↓** arrow | sub-x 76–101 | **+9.5 to +10.5 px BELOW** → real PR depression |
+| purple **ST ↑** arrow | sub-x 124–140 | **−3.5 to −27 px ABOVE**, concave takeoff → real ST elevation |
+
+Five arrows reduced to two. *One nuance, stated because it is small and real: the ST arrow sits at
+x 132 where the trace is still on the QRS downslope and only −2.5 px; the unambiguous elevation is
+x 140–170. That is a placement nicety, not the fault the sheet raised.*
+
+### `cardiomyopathy` p1 — two of three fixed, and the third is still the artwork row
+
+Slab boundaries re-measured from the **new** captions — DILATED x 200–320, HYPERTROPHIC 385–620,
+RESTRICTIVE 660–890, so the dividers sit at **352** and **640**:
+
+| callout | terminator | slab | verdict |
+|---|---|---|---|
+| **DILATED** | **(272,875)** | left | **FIXED** — was in RESTRICTIVE |
+| **HYPERTROPHIC** | **(522,862)** | middle | **FIXED** — was in RESTRICTIVE |
+| RESTRICTIVE | (704,782) | right | correct, unchanged |
+| **ARRHYTHMOGENIC** | **(772,861)** | right | **STILL UNFIXED** |
+
+**No arrhythmogenic slab was added**, so that callout still points into the restrictive third — the
+row the sheet said no leader move can fix. Left as-is deliberately.
+
+### `aortic-stenosis` p2 — right endpoint, but the routing the sheet warned against
+
+`Pulmonary Trunk` now terminates at **(644,512)**, sampling **(119,121,167)** against the blue trunk
+reference **(46,55,108)**. The old terminator on the IVC at (365,1010) is **gone completely** — the
+blue dot is absent and only clean vessel remains.
+
+**Two things the sheet asked for that did not happen**, recorded because they are invisible to any
+later check:
+
+- **The label block was not re-sited.** The sheet said explicitly *"do not simply re-aim the existing
+  leader — from its present position the line would cross the right atrium, the tricuspid valve, the
+  right ventricle and the LVOT leaders."* It now does exactly that, running diagonally across the
+  whole heart.
+- **The IVC is still unlabelled.** The vessel the label used to point at is the inferior vena cava,
+  and the page labels the SVC three inches above it.
+
+### Accepted with no change
+
+**`anxiety` p2, `acs` p2 and `acs` p6** — reviewed by Dr. Kreithen and accepted as they stand.
+Those rows are closed. Worth noting what that means for `anxiety` p2: the ⑤ INSULA marker remains on
+the drawn thalamus, and ① AMYGDALA / ② HIPPOCAMPUS remain off the midsagittal plane. That is now a
+decision, not an oversight.
+
+### Integration
+
+| | |
+|---|---|
+| geometry | all three at the **exact** shipped size — 1280×1920, 1138×1707, 1138×1707 |
+| encode | each at the shipped file's own qtables + sampling. `pericarditis` is **−10.1%** on byte count: the re-render compresses differently, not a quality change on our side |
+| **thumbnails** | **these three galleries use PER-GALLERY thumbs (`assets/<id>/thumb-NN.jpg`) and a non-empty `base`, not the flat `gthumbs/` set.** An assertion caught it before anything was written — the assumption would have regenerated the wrong file and left the real thumbnail stale. Regenerated at their existing 320×480. **Always read `thumb` and `base` out of `galleries.json`; never derive them.** |
+| PDFs | q**79** / q**71** / q**88** at embed widths **1138 / 854 / 1280**. The script default of 82 would have been wrong on all three — that is now six galleries out of eighteen. |
+| verified | `verify_gallery_pdfs.py` 102 galleries / 1,020 pages, no drift · `verify_sw.js` all checks · headless boot 183/183/102/300, all three 10/10 thumbnails, each page at full dimensions, zero page errors · all three byte-identical out of `git show origin/main:` |
+
+**Running total: 42 pages corrected and deployed (v99–v120).**
