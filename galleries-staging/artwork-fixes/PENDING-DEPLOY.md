@@ -1812,3 +1812,87 @@ Both are label-list changes (§6 of `PRODUCTION-icp-p2.md`), not Photoshop work.
 
 515,598 B against the shipped 517,219 B. **`RC_PDF_Q` for `icp` is 81** (target 1,214,396;
 q81 → 1,231,181).
+
+## Fourteen pages — corrected in Photoshop by Dr. Kreithen, integrated 2026-08-16 (v118)
+
+The largest single batch of the project: sixteen pages returned, **fourteen shipped and two held**.
+
+### The paste never reached the container, and the transcript was the way in
+
+The sixteen images rendered in the conversation but **nothing landed in
+`/root/.claude/uploads/<session>/`** — that directory had received nothing for fifteen hours, and a
+filesystem-wide search for images written that day returned nothing. The established rule ("look in
+the uploads directory before asking for files") produced a dead end for the first time.
+
+**They were in the session transcript.** `~/.claude/projects/<project>/<session>.jsonl` — 450 MB,
+1,320 image blocks — stores pasted images **inline as base64**. One user turn at line 7450 carried
+**21 images, 12.1 MB**, with the interleaved text blocks marking the boundary exactly:
+
+```
+[00-04]  >>> "Here's a bunch of corrected images"  >>> "those are incorrect images, stop"
+[05-20]  >>> "these are the correct images"        >>> "these are good enough, deploy"
+```
+
+**Check the transcript before telling the physician a paste did not arrive.** It costs one grep.
+
+**And the first five were byte-identical (md5) to the live files** — he had pasted the originals
+back out of the zip, which is exactly what he caught. That is worth knowing as a diagnostic: a
+"corrected" page whose mean absolute difference from the shipped file is **0.000** has not been
+edited at all.
+
+### They are full-resolution exports, not chat renders
+
+The question that decided whether any of this could ship. Every one of the 21 matched a shipped
+page's **exact** dimensions — 1024×1536, plus 913×1373 (`dvt`), 915×1373 (`aortic-dissection`) and
+800×1200 (`pe`). A downscaled preview cannot land on four different non-standard geometries by
+accident.
+
+### Two pages held — a label destroyed rather than moved
+
+Suspected from the conversation render and **confirmed against the shipped originals at full
+resolution**, which is the only reason it is stated as fact:
+
+| page | label | what happened |
+|---|---|---|
+| `pe` p2 | **Right pulmonary artery (posterior to aorta & SVC)** | three lines reduced to one illegible smear; leader gone |
+| `bph` p2 | **Pubic symphysis** | reduced to a garbled remnant reading "Fɑrtbɪ"; leader gone |
+
+The originals are clean at those coordinates, and in both pasted files **every other label in the
+same panel is sharp** — so it is a localised edit artifact, not the export or the render. A garbled
+non-word on a clinical teaching page is worse than the leader defect it was fixing, and no one
+intends gibberish, so "good enough, deploy" cannot reasonably have covered it. Both edits and the
+evidence crops are kept in `artwork-fixes/held-v118/`; **nothing else about those two pages
+changed**, and they ship the moment he says so.
+
+### Two content removals, recorded because they were not on the sheets
+
+Neither is a leader move, so neither would show up in a "did the terminator move" check.
+
+- **`appendicitis` p2 — `Right ureter` deleted entirely**, label and leader. Consistent with the
+  sheet's note that the retroperitoneal structures may not be drawn at all, so this reads as
+  deliberate — the same call we recommended for `Coronary ligament` on `hepatitis` p2.
+- **`stroke` p2 — `Posterior Communicating Artery (PCoA)` and `Middle Communicating Artery (PCoA)`
+  both deleted** from the CIRCLE OF WILLIS panel. **There is no middle communicating artery**, so
+  the second was a fabricated vessel and removing it is right. The first is a real structure and the
+  Circle of Willis panel is now missing it — worth a decision rather than a silent loss.
+
+### What the measurements showed
+
+Every page carried real edits (edited luma pixels 150 → 9,618; the smallest is `bronchiolitis` p7 at
+150 px, the largest `stroke` p2 at 9,526). The orphan-terminator test — ink in a 13×13 box at the old
+endpoint must fall to **zero** — passes outright on `cellulitis` (both rows), `appendicitis` (all five),
+`sepsis` (both), `compartment` ② and `withdrawal` (four of five). Elsewhere the ink count *rises* at
+the old endpoint, which on these pages means the **label text block itself moved** rather than the
+leader tip — which is what the sheets asked for on `bph` rows 4–5 and what the PDF's method page
+describes. **The ink counts alone cannot adjudicate that**; the pages were read by eye.
+
+### Integration
+
+| | |
+|---|---|
+| encode | each page re-encoded at the **shipped file's own** `quantization` + `get_sampling`; every result within **3.7%** of the byte count it replaced |
+| chroma | his exports are 4:2:0 where `pe`, `dvt` and `aortic-dissection` shipped 4:4:4 — the chroma was lost in his export, not on the way in |
+| thumbs | 14 regenerated at 320 px q82 into the flat `gthumbs/` |
+| PDFs | **13 rebuilt, each at the quality reproducing its OWN existing byte size** — swept q70–94 per gallery, giving q80 (`appendicitis`, `bronchiolitis`, `labor`), q81 (eight), q82 (`dvt`, `aortic-dissection`). The script default of 82 would have inflated the nine unchanged pages in most of them. |
+| verified | `verify_gallery_pdfs.py` **102 galleries / 1,020 pages** against the pages the app serves, no drift · `verify_sw.js` all checks · headless boot 183/183/102/300, all 13 galleries 10/10 thumbnails, every corrected page opening in the viewer at full dimensions, **zero page errors** |
+| after pushing | all 14 pages byte-identical out of `git show origin/main:`, and both held pages confirmed **unchanged** on the remote |
