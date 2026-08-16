@@ -270,6 +270,355 @@
     }
    ],
    "note": "MEASURED CAVEAT on row 1: the ink run at y 575 is continuous from x 240 to about x 360, but the trachea's own pale rings also register there, so the terminus is given as \u2248(358,575) rather than to the pixel. The finding - that it ends on trachea rather than larynx - does not depend on that precision. ROW 2 NOT MEASURED: Basal Cell is in the RESPIRATORY EPITHELIUM panel (page x 478-990, y 990-1143); the order has it on the stalk of the purple goblet cell when it belongs on the squat cuboidal row at the basement membrane. Carried at the order's wording. PANELS SWEPT: the main figure's badges \u2460-\u2467 were checked and all sit on their structures - it is only the legend LINES that fail."
+  },
+  {
+   "key": "croup-p2",
+   "title": "croup \u2014 page 2",
+   "panel": "Anatomy: Pediatric Airway (main sagittal figure)",
+   "status": "4 rows flagged \u2014 4 measured and confirmed",
+   "lead": "Orientation first: the child faces LEFT (nose tip ~(278,415)) and the vertebral bodies run down x 445-475, so anterior is left and posterior is right. Every one of the four defects is a leader that OVERSHOOTS its structure along its own line of travel and stops in the tissue beyond \u2014 the Epiglottis leader crosses the pale epiglottic leaf and halts 12px posterior to it in the laryngeal vestibule, the Vocal cords leader carries on past the glottic level and lands inside the yellow dashed Subglottic-space callout box, and the Trachea leader runs the full width of the figure past the trachea and carina to end in lung parenchyma. Oral cavity is the odd one: it stops dead at the closed lips on the face surface and then resumes as two detached dotted stubs on the tongue.",
+   "findings": [
+    {
+     "n": "1",
+     "label": "Trachea",
+     "now": [
+      380,
+      905
+     ],
+     "target": [
+      415,
+      640
+     ],
+     "now_desc": "sampled (64,45,49) - dark maroon lung parenchyma in the viewer's-left lung field, 150px below the carina at ~(400,755)",
+     "target_desc": "the ringed blue-grey trachea between larynx and carina (column x 400-435), sampled (147,168,197)"
+    },
+    {
+     "n": "2",
+     "label": "Vocal cords",
+     "now": [
+      405,
+      565
+     ],
+     "target": null,
+     "now_desc": "sampled (137,63,61) - dark red tissue INSIDE the yellow dashed Subglottic space callout box, whose bounds I measured as x 394-437, y 546-587",
+     "target_desc": "PLACE FROM SOURCE - no vocal-cord structure is drawn. At 22x the airway column between the epiglottic tip and the box's top edge (x 400-435, y 528-546) is undifferentiated dark red with only a blurred fold at x 419-424; the glottic LEVEL is identifiable but there is no glyph to land on, and picking a pixel would be inventing one"
+    },
+    {
+     "n": "3",
+     "label": "Epiglottis",
+     "now": [
+      407,
+      532
+     ],
+     "target": [
+      396,
+      517
+     ],
+     "now_desc": "sampled (150,78,83) - dark red laryngeal vestibule 12px posterior to the epiglottis; the leader crosses the pale leaf (which spans x 391-400 at y=532) and overshoots it",
+     "target_desc": "the pale leaf-shaped epiglottis itself, sampled (187,167,171)"
+    },
+    {
+     "n": "4",
+     "label": "Oral cavity",
+     "now": [
+      291,
+      426
+     ],
+     "target": [
+      370,
+      425
+     ],
+     "now_desc": "sampled (90,42,39) - the lip/nasolabial shadow at the closed mouth on the face surface; ink trace dies at x=292 and the leader then RESUMES as two detached dotted stubs ending on the tongue body at (334,461) and (333,492)",
+     "target_desc": "the dark oral airspace between the hard palate above and the tongue dorsum below, sampled (95,32,32)"
+    }
+   ],
+   "note": "Panels swept: main sagittal figure, ANATOMY COMPARISON (child vs adult larynx: Epiglottis/Vocal cords/Subglottic space/Trachea all land correctly on both figures), CROSS-SECTION, AIRFLOW AND RESISTANCE, WHY KIDS GET CROUP (Cricoid cartilage). No defect beyond the four flagged. Nothing carried unmeasured. The Vocal cords target is the only null and the reason is stated above."
+  },
+  {
+   "key": "gi-bleed-p2",
+   "title": "gi-bleed \u2014 page 2",
+   "panel": "Upper GI Anatomy: Structures at Risk for Bleeding",
+   "status": "4 rows flagged \u2014 4 measured and confirmed",
+   "lead": "Handedness: the liver is drawn at viewer-left, so viewer-left is the patient's RIGHT, which puts the fundus dome (viewer-right of the oesophagus) on the patient's left - anatomically correct, and it means the three stomach-region defects are not a mirroring problem. They are a one-step SHIFT ALONG THE GREATER CURVATURE: Cardia sits where Fundus belongs (top of the dome), Fundus sits where upper Body belongs, and Antrum sits at the lower body 176px from the pylorus, which in this drawing is at the LEFT where the duodenal bulb begins. All three dots land on the same pale outer-wall band, so the error is purely positional. Serosa is unrelated - a one-layer undershoot on the block's shaded right face.",
+   "findings": [
+    {
+     "n": "1",
+     "label": "Cardia",
+     "now": [
+      492,
+      352
+     ],
+     "target": [
+      400,
+      380
+     ],
+     "now_desc": "sampled (185,114,101) - the pale outer wall of the fundus dome at its top-right, 92px right and 28px above the oesophagogastric junction",
+     "target_desc": "the EG junction notch where the oesophagus opens into the stomach, sampled (210,120,104)"
+    },
+    {
+     "n": "2",
+     "label": "Fundus",
+     "now": [
+      503,
+      424
+     ],
+     "target": [
+      452,
+      350
+     ],
+     "now_desc": "sampled (173,97,90) - greater-curvature wall 72px BELOW the Cardia dot, i.e. upper body not dome",
+     "target_desc": "the apex of the dome above the cardia, on the same pale wall band the other three dots use, sampled (~205,110,95)"
+    },
+    {
+     "n": "3",
+     "label": "Antrum",
+     "now": [
+      419,
+      614
+     ],
+     "target": [
+      280,
+      570
+     ],
+     "now_desc": "sampled (204,126,111) - mucosal folds of the lower body near the greater curvature; I measured the pylorus/duodenal junction at ~(243,545), so this is 176px from it",
+     "target_desc": "the distal stomach lumen just proximal to the pylorus, at the drawing's LEFT where the duodenal bulb begins, sampled (130,31,19)"
+    },
+    {
+     "n": "4",
+     "label": "Serosa / Adventitia",
+     "now": [
+      267,
+      1166
+     ],
+     "target": [
+      258,
+      1198
+     ],
+     "now_desc": "sampled (86,37,34) - the outer longitudinal muscle band on the block's shaded right face. Vertical profile at x=267: pale intramuscular septum y 1130-1144, muscle y 1146-1172, blue subserosal vessel y 1176-1180, serosa y 1182-1196, block edge y 1198. The dot sits in the muscle band",
+     "target_desc": "the outermost serosal layer BELOW the blue subserosal vessel on the same right face, sampled (94,45,47) - dark only because that face is shaded; its hue is rosy (g~=b) against the muscle's strong red (b<<g)"
+    }
+   ],
+   "note": "Panels swept: main stomach figure (Oesophagus dot (358,311) and Ligament of Treitz dot (377,693) both correct), WALL ANATOMY block (Mucosa (271,940), Submucosa (268,1018), Muscularis Externa (269,1084) all correct), THE LIGAMENT OF TREITZ, ARTERIAL SUPPLY and KEY ANATOMIC RELATIONSHIPS (text only). No defect beyond the four flagged."
+  },
+  {
+   "key": "myasthenia-p2",
+   "title": "myasthenia \u2014 page 2",
+   "panel": "Normal Neuromuscular Junction (Labeled Neuromuscular Junction Anatomy)",
+   "status": "4 rows flagged \u2014 4 measured and confirmed",
+   "lead": "Three of the four are leaders that stop in the nearest BULK COMPARTMENT instead of on the thin structure they name: Basal lamina lands 58px deep in striated sarcoplasm rather than on the fold surface, Voltage-gated Ca2+ channels lands 23px inside the terminal's cytoplasm rather than in the bright membrane band at x 214-222, and ACh release lands 12px outside the terminal in plain black background. The fourth is different and is a genuine mislabel: AChR is drawn as TWO leaders, and while the lower one correctly reaches a blue receptor, the upper one passes straight over that same receptor and terminates on an orange ACh molecule.",
+   "findings": [
+    {
+     "n": "1",
+     "label": "Basal lamina",
+     "now": [
+      245,
+      761
+     ],
+     "target": [
+      242,
+      655
+     ],
+     "now_desc": "sampled (164,92,104) - striated sarcoplasm inside the muscle fibre; measured 58px below the junctional-fold bases (~y 703) and 41px above the Muscle fiber dot at (234,802)",
+     "target_desc": "the thin pale layer lining the synaptic surface of the junctional folds, sampled (211,132,147)"
+    },
+    {
+     "n": "2",
+     "label": "Voltage-gated Ca2+ channels",
+     "now": [
+      241,
+      474
+     ],
+     "target": [
+      218,
+      474
+     ],
+     "now_desc": "sampled (46,35,51) - presynaptic cytoplasm; the horizontal profile at y=474 puts the bright membrane band at x 214-222, so the arrowhead tip is 23px inside it. No channel glyph is drawn at the endpoint",
+     "target_desc": "the presynaptic membrane band itself, sampled (99,78,150)"
+    },
+    {
+     "n": "3",
+     "label": "Acetylcholine (ACh) release",
+     "now": [
+      230,
+      520
+     ],
+     "target": [
+      250,
+      534
+     ],
+     "now_desc": "sampled (13,19,23) - plain black background 12px outside the terminal's lower-left edge, on no vesicle and no ACh sphere",
+     "target_desc": "a released orange ACh sphere in the synaptic cleft, sampled (237,180,74); the fusing vesicle at the terminal's base (256,511) is the alternative"
+    },
+    {
+     "n": "4",
+     "label": "Acetylcholine receptors (nicotinic, AChR) \u2014 UPPER leader",
+     "now": [
+      243,
+      581
+     ],
+     "target": [
+      226,
+      583
+     ],
+     "now_desc": "sampled (202,156,110) at the sphere centre (246,581) - an orange ACh molecule. The leader runs at y 581-583 straight over the blue receptor at x 204-232 and stops on the sphere at x 240-250",
+     "target_desc": "the body of the blue receptor glyph the leader already crosses, sampled (105,129,192)"
+    }
+   ],
+   "note": "Panels swept: Normal NMJ (all 10 leaders), OVERVIEW, SINGLE JUNCTION (CROSS-SECTION), KEY MOLECULES, HOW NEUROMUSCULAR TRANSMISSION WORKS (5 steps), IN MYASTHENIA GRAVIS. The LOWER of the two AChR leaders ends at (216,599), sampled (71,98,156) - on a blue receptor stem, correct, leave it. One borderline item the order did not list and I am not raising as a finding: the Postsynaptic membrane dot at (252,703) sits ~13px below the basal turn of the fold above it rather than on the fold lining, but the pale lining band does pass through that point, so it is defensible as drawn."
+  },
+  {
+   "key": "sickle-cell-p2",
+   "title": "sickle-cell \u2014 page 2",
+   "panel": "Spleen: Filter & Protect + Microvasculature & Ischemia",
+   "status": "5 rows flagged \u2014 5 measured and confirmed",
+   "lead": "The spleen panel's six leaders all arrive as horizontal rules at fixed rows (y 367/416/473/529/594/640) and simply stop at whatever x the layout gave them, which is how three of them go wrong: Trabeculae stops 12px past the upper follicle in red pulp with no trabecular band anywhere on the organ, Red pulp stops at x=850 - the same x as the White pulp rule one row above at x=851 - so the two are visually indistinguishable and Red pulp reads as naming the follicle it is touching, and Splenic vein doglegs UP off its rule onto the pink capsule instead of reaching the blue vein 33px to its left. The two microvasculature leaders are vertical and both OVERSHOOT the vessel wall into the lumen, each stopping on a red cell 10-20px past the structure named.",
+   "findings": [
+    {
+     "n": "1",
+     "label": "Trabeculae",
+     "now": [
+      831,
+      416
+     ],
+     "target": null,
+     "now_desc": "sampled (66,32,60) at (830,416) - dark red pulp 12px right of the upper white-pulp follicle, whose right margin I measured at x=819",
+     "target_desc": "PLACE FROM SOURCE - no trabecular band is drawn anywhere in this spleen. At 8-14x the parenchyma is swirling mauve reticular texture only; the sole pale fibrous structures are the segmented capsule blocks at the rim, and calling one of those a trabecula would be inventing the target"
+    },
+    {
+     "n": "2",
+     "label": "Red pulp (filters blood)",
+     "now": [
+      850,
+      529
+     ],
+     "target": [
+      800,
+      555
+     ],
+     "now_desc": "sampled (64,31,58) at (848,529) - the shadowed rim of the lower follicle, 13px past its lavender margin at x=837. The White pulp rule above ends at x=851, so the two terminate at the same x and read identically",
+     "target_desc": "the dark red inter-follicular parenchyma that fills most of the organ, sampled (58,13,32) - note the hue, strongly red (b<<r), against the follicle's purple (b>=r)"
+    },
+    {
+     "n": "3",
+     "label": "Splenic vein",
+     "now": [
+      803,
+      634
+     ],
+     "target": [
+      770,
+      634
+     ],
+     "now_desc": "sampled (132,74,104) at (806,631) - the pink capsule at the spleen's inferomedial corner. The rule runs in at y=640 to x=803 then doglegs UP to a bright tip at (803,634), away from the vessels",
+     "target_desc": "the blue splenic vein 33px to its left at the same height, sampled (15,60,117) - the way Splenic artery reaches its red branch"
+    },
+    {
+     "n": "4",
+     "label": "Endothelium",
+     "now": [
+      310,
+      882
+     ],
+     "target": [
+      318,
+      858
+     ],
+     "now_desc": "sampled (65,15,16) - a dark red blood cell in the lumen; the leader crosses the pale lining at y~858-864 and runs 20px past it (ink trace: solid to y=881, gone by y=884)",
+     "target_desc": "the pale endothelial lining band itself, sampled (184,102,97)"
+    },
+    {
+     "n": "5",
+     "label": "Adhesion molecules",
+     "now": [
+      441,
+      886
+     ],
+     "target": [
+      450,
+      873
+     ],
+     "now_desc": "sampled (125,39,40) - a bright red blood cell in the lumen, 10px below the wall band (which at x=441 runs y 864-876)",
+     "target_desc": "the dark wall-bound adhesion molecule at x 445-453, y 869-876 that the leader passes on its way down, sampled (54,18,18)"
+    }
+   ],
+   "note": "Panels swept: SPLEEN (all six), MICROVASCULATURE & ISCHEMIA (three), HEMOGLOBIN, RED BLOOD CELLS, SICKLE MUTATION, HEMOLYSIS, MAJOR ORGANS, THE SICKLE PROCESS. One near-miss I chased and cleared: the Splenic artery rule appears to end on the blue vein at (770,599), but that bright pixel is a SPECULAR HIGHLIGHT on the vein, not leader ink - the rule itself runs at y=594 and ends at (796,594) beside a red arterial branch entering the hilum. Correct as drawn. I only believed that after a row-by-row RGB scan; by eye at 24x it reads as a defect."
+  },
+  {
+   "key": "thrombocytopenia-p2",
+   "title": "thrombocytopenia \u2014 page 2",
+   "panel": "Megakaryopoiesis (bone marrow) + Platelet Structure",
+   "status": "5 rows flagged \u2014 5 measured and confirmed (1 target null, with the reason established from the page's own legend)",
+   "lead": "In the marrow panel the two leaders have SWAPPED what they touch: Sinusoid crosses the blue vessel it names and carries 26px past it onto a purple megakaryocyte pseudopod, while Proplatelet extensions stops on the sinusoid's dark blue right wall with no purple process within ~28px. In the platelet panel the mechanism is different and is settled by the page's own KEY PLATELET COMPONENTS legend, which colour-codes dense granules ORANGE (dot (876,1204), rgb (253,184,44)) and lysosomes YELLOW-GREEN (dot (873,1268), rgb (205,222,144)). The platelet contains exactly two orange-cored granules and both are UNLABELLED, while the Dense granule and Lysosome leaders converge on one and the same blue-teal granule from opposite sides. No granule in the platelet is yellow-green at all.",
+   "findings": [
+    {
+     "n": "1",
+     "label": "Sinusoid (marrow capillary)",
+     "now": [
+      467,
+      600
+     ],
+     "target": [
+      486,
+      582
+     ],
+     "now_desc": "sampled (114,82,143) - a lavender megakaryocyte pseudopod. Ink trace: the leader doglegs, crosses the blue sinusoid at ~(486,582), then runs down-left to a tip at (467,600), 26px past the crossing",
+     "target_desc": "the blue sinusoid at the point the leader already crosses it, sampled (71,98,144)"
+    },
+    {
+     "n": "2",
+     "label": "Proplatelet extensions into sinusoid",
+     "now": [
+      483,
+      654
+     ],
+     "target": [
+      470,
+      512
+     ],
+     "now_desc": "sampled (61,82,117) - the dark blue shadowed right wall of the sinusoid, not red marrow as the order estimated and not a purple process; the hue is unambiguous (g>r, b>>r). Nearest proplatelet ~28px to the left",
+     "target_desc": "a purple proplatelet strand where it meets the sinusoid's upper margin, sampled (126,84,145)"
+    },
+    {
+     "n": "3",
+     "label": "Lysosome (hydrolytic enzymes)",
+     "now": [
+      807,
+      427
+     ],
+     "target": null,
+     "now_desc": "sampled (74,63,118) - the lower-left border of the blue-teal granule at 3 o'clock (granule spans x 798-818, y 405-433), the same granule the Dense granule leader is aimed at from the right",
+     "target_desc": "PLACE FROM SOURCE - the legend's lysosome swatch is yellow-green (205,222,144) and NO granule in the platelet is that colour; the two leaders cannot both own the blue-teal granule, and choosing which glyph becomes the lysosome is a source decision, not something the artwork answers"
+    },
+    {
+     "n": "4",
+     "label": "Dense granule (ADP, ATP, Ca2+, serotonin)",
+     "now": [
+      823,
+      418
+     ],
+     "target": [
+      787,
+      443
+     ],
+     "now_desc": "sampled (77,58,109) - plain purple cytoplasm at the base of a pseudopod, 5px right of the blue-teal granule's edge at x=818",
+     "target_desc": "the nearer of the two unlabelled orange-cored granules, sampled (229,169,92) - the legend colour-codes dense granules orange (253,184,44); the second orange granule is at (750,429), sampled (230,153,94)"
+    },
+    {
+     "n": "5",
+     "label": "Open canalicular system",
+     "now": [
+      841,
+      316
+     ],
+     "target": [
+      738,
+      367
+     ],
+     "now_desc": "sampled (12,14,24) - black background outside the cell, 4px beyond the upper-right pseudopod bulb (bulb centre (828,314), halo edge x~837, sampled (171,135,195))",
+     "target_desc": "a pale tubular channel of the internal network drawn inside the platelet body, sampled (178,149,209)"
+    }
+   ],
+   "note": "Panels swept: MEGAKARYOPOIESIS (Bone trabecula, Bone marrow, Megakaryocyte, Sinusoid, Proplatelet extensions, Platelets entering circulation, and the five numbered stem-cell steps), PLATELET STRUCTURE (all five), PLATELETS IN CIRCULATION, THE SPLEEN, PLATELETS: ROLE IN PRIMARY HEMOSTASIS (5 steps), KEY PLATELET COMPONENTS. Found beyond the order: the legend/artwork colour mismatch described in the lead - it is what makes finding 4 pinnable and finding 3 not, and it is worth telling production that no yellow-green lysosome glyph exists. Nothing carried unmeasured."
   }
  ]
 }
