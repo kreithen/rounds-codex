@@ -8,8 +8,8 @@ about which decisions are genuine judgement calls.
 
 | file | subject | state |
 |---|---|---|
-| `trademark-plan.md` | the **name and logo** | search done, decision made, **nothing filed** |
-| `filing-day-checklist.md` | **the field-by-field form walkthrough** for filing day | ready to use once ID.me verification is done |
+| `trademark-plan.md` | the **name and logo** | **word mark FILED 2026-08-15, serial 50053235** (class 9, §1(b)) |
+| `filing-day-checklist.md` | **the field-by-field form walkthrough** for filing day | used — the word mark is now filed |
 | `Rounds-Codex-Copyright-Registration-Guide.pdf` | the **content** — 8 pages, written 2026-08-03 | guide written, **nothing filed** |
 | `tmSearchResults-2026-08-05-live.xlsx` | the 83 live USPTO marks, archived | analysed in `trademark-plan.md` |
 
@@ -17,9 +17,11 @@ about which decisions are genuine judgement calls.
 
 ## State of play in one paragraph
 
-Trademark: `ROUNDS CODEX` was searched on 2026-08-05, the result is favourable, and **Dr. Kreithen
-decided to self-file without an attorney.** Next three steps are written out at the end of
-`trademark-plan.md`. Copyright: an eight-page guide exists and is good, but **step one of its own
+Trademark: `ROUNDS CODEX` was searched on 2026-08-05, the result is favourable, Dr. Kreithen
+self-filed without an attorney, and the **standard-character word mark was FILED 2026-08-15 —
+serial 50053235, class 009 only, §1(b)**. One open item: it was filed under **Joshua Kreithen as an
+individual**, not Rounds Codex, Inc.; if the corporation should own it, record an assignment (see
+the FILED block in `trademark-plan.md`). Class 41 and the logo/design mark were deliberately deferred. Copyright: an eight-page guide exists and is good, but **step one of its own
 checklist has never been done** — see below. Patents: settled, don't reopen.
 
 ---

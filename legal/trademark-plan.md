@@ -10,6 +10,41 @@ See "Trademark is not copyright" below.
 
 ---
 
+## ✅ FILED — 2026-08-15
+
+The standard-character word mark was filed and paid. Record of the application as submitted:
+
+| field | value |
+|---|---|
+| **Serial number** | **50053235** |
+| Mark | `ROUNDS CODEX` (standard character) |
+| Register | Principal |
+| Filing basis | §1(b) intent to use |
+| Class | **009 only** — *Downloadable educational software featuring instruction in medicine and nursing* |
+| **Owner as filed** | **Joshua Carl Kreithen (individual)** — ⚠️ the plan intended *Rounds Codex, Inc.* See note below. |
+| Filing date | 2026-08-15 |
+| Fee paid | $350 (card) |
+| Receipt sent to | jkreithen@icloud.com |
+
+**⚠️ Owner-name discrepancy to resolve.** The application was filed with **Joshua Kreithen as an
+individual**, not **Rounds Codex, Inc.** as the plan specified. This is not necessarily wrong — a
+solo founder can own a mark personally — but if the corporation is the entity that will actually own
+and use the mark, the standard fix is to **record an assignment** from the individual to the
+corporation (USPTO Assignment Center) rather than trying to amend the applicant name, since they are
+two different legal persons. Worth a short attorney question if the corporation was meant to be the
+owner. Decide this before the Statement of Use.
+
+**Next actions now that it's filed:**
+- Check status in **TSDR** (tsdr.uspto.gov) monthly using serial **50053235**.
+- Watch **jkreithen@icloud.com** for any **office action** — it has a hard response deadline, and
+  missing it abandons the application.
+- After launch: file the **Statement of Use** (or an extension) with an App Store screenshot as the
+  specimen. Only class 41 was skipped — it can be filed later as a separate $350 application if wanted.
+
+---
+
+---
+
 ## Recommendation: yes, and the reason is specific to this project
 
 Not because trademarks are generally a good idea, but because **the switching cost of the name is
