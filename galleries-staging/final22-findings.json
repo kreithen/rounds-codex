@@ -180,6 +180,44 @@
     }
    ],
    "note": "Row 1 has a second half the order flags and we confirm by absence: there is NO \u2463 marker anywhere on the figure, although the legend lists \u2463 Duodenum. So either the \u2462 badge is really the missing \u2463 sitting in the right place with the wrong number, or \u2463 was dropped. THAT CHANGES THE FIX - if it is a numbering error, renumber the badge rather than moving it, because it is already on the duodenum. Worth one look at the source file before anything is dragged. Rows 1, 2 and 4 are otherwise short, unambiguous moves."
+  },
+  {
+   "key": "cirrhosis-p2",
+   "title": "cirrhosis \u2014 page 2",
+   "panel": "Normal liver anatomy & portal venous system",
+   "status": "4 rows flagged \u2014 2 measured and confirmed (main figure); rows 3 and 4 are on other panels and are NOT yet measured.",
+   "lead": "The main figure draws the falciform ligament as a narrow pale cream band. Measured at the leaders' own row it spans only x 590-597 - about 8 px - which is the whole difficulty: both flagged leaders overshoot it into liver parenchyma.",
+   "findings": [
+    {
+     "n": "1",
+     "label": "Falciform ligament",
+     "now": [
+      628,
+      350
+     ],
+     "target": [
+      593,
+      350
+     ],
+     "now_desc": "ink 24 confirms a real terminator; tissue (139,100,93), left-lobe parenchyma, 35 px lateral to the band",
+     "target_desc": "the cream band itself, sampled (207,161,125) at x 590-597"
+    },
+    {
+     "n": "2",
+     "label": "Ligamentum teres (round ligament)",
+     "now": [
+      746,
+      416
+     ],
+     "target": [
+      598,
+      445
+     ],
+     "now_desc": "ink 19; tissue (55,35,31), the shadowed inferolateral margin of the left lobe",
+     "target_desc": "the cream cord descending below the liver from the falciform, sampled (199,155,122) through y 428-468"
+    }
+   ],
+   "note": "ONE CORRECTION TO THE ORDER'S MAGNITUDES, same as on hyponatremia: it puts row 1 at '~160px lateral to the midline' and row 2 at '~145px'. Measured, row 1 is 35 px from the band. The finding is right, the distance is not - do not drag by the order's numbers. ROWS 3 AND 4 ARE NOT MEASURED: row 3 Xiphoid process is in the SURFACE LANDMARKS panel and row 4 Diaphragm is in PERITONEAL RELATIONSHIPS. They are carried at the order's wording until the next pass."
   }
  ]
 }

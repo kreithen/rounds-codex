@@ -29,7 +29,7 @@ Order is by flagged-row count, because that is the order in which findings come 
 
 | page | rows | panel | measured? |
 |---|---|---|---|
-| `cirrhosis` p2 | 4 | Normal liver anatomy & portal venous system | |
+| `cirrhosis` p2 | 4 | Normal liver anatomy & portal venous system | **2 of 4** |
 | `covid` p2 | 4 | Respiratory tract & viral entry | |
 | `croup` p2 | 4 | Pediatric airway | |
 | `gi-bleed` p2 | 4 | Upper GI: structures at risk for bleeding | |
