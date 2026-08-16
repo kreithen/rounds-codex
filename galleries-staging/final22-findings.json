@@ -619,6 +619,562 @@
     }
    ],
    "note": "Panels swept: MEGAKARYOPOIESIS (Bone trabecula, Bone marrow, Megakaryocyte, Sinusoid, Proplatelet extensions, Platelets entering circulation, and the five numbered stem-cell steps), PLATELET STRUCTURE (all five), PLATELETS IN CIRCULATION, THE SPLEEN, PLATELETS: ROLE IN PRIMARY HEMOSTASIS (5 steps), KEY PLATELET COMPONENTS. Found beyond the order: the legend/artwork colour mismatch described in the lead - it is what makes finding 4 pinnable and finding 3 not, and it is worth telling production that no yellow-green lysosome glyph exists. Nothing carried unmeasured."
+  },
+  {
+   "key": "cholecystitis-p2",
+   "title": "cholecystitis \u2014 page 2",
+   "panel": "Anatomy Overview: Hepatobiliary System (main figure + Gallbladder wall layers + Duodenal entry + Calot's triangle)",
+   "status": "7 rows flagged \u2014 7 measured and confirmed (row 6 covers two labels, reported as 6 and 6b)",
+   "lead": "Every defect on this page is a leader that runs PAST its structure along its own axis and stops on the next thing it meets. The three ductal labels are all one segment out of register \u2014 CYSTIC DUCT stops on the opened gallbladder fundus instead of the arch above it, COMMON HEPATIC DUCT stops 29 px below the cystic-duct junction (junction measured at y=500, endpoint at y=529) i.e. on the CBD, and CBD carries on 69 px past the green duct into pancreas parenchyma. In the wall-layer fan the same overshoot crosses the whole thickness: Mucosa lands on the outermost navy band, 52 px outboard of the red folded lining, and Muscularis + Perimuscular CT both stop on the one navy/purple boundary at different heights rather than each in its own band.",
+   "findings": [
+    {
+     "n": "1",
+     "label": "CYSTIC DUCT (main figure)",
+     "now": [
+      232,
+      597
+     ],
+     "target": [
+      403,
+      487
+     ],
+     "now_desc": "sampled (85,72,39), ink=7 - the leader is a plain line with no dot; it stops on the rim of the cut-open gallbladder fundus just above the gallstones",
+     "target_desc": "the descending limb of the green cystic-duct arch, between the gallbladder neck and the junction at (415,500), sampled (115,116,58)"
+    },
+    {
+     "n": "2",
+     "label": "COMMON BILE DUCT (CBD) (main figure)",
+     "now": [
+      456,
+      679
+     ],
+     "target": [
+      388,
+      684
+     ],
+     "now_desc": "sampled (196,156,114), ink=37 (round dot) - pancreas parenchyma, immediately above a yellow pancreatic-duct branch",
+     "target_desc": "the green CBD descending at the pancreatic head, 68 px medial at the same height, sampled (121,104,62)"
+    },
+    {
+     "n": "3",
+     "label": "COMMON HEPATIC DUCT (main figure)",
+     "now": [
+      426,
+      529
+     ],
+     "target": [
+      419,
+      468
+     ],
+     "now_desc": "sampled (98,103,65), ink=48 (round dot) - the olive-green duct 29 px BELOW the cystic-duct junction, i.e. the common bile duct. R+L confluence measured at (422,437), cystic junction at (415,500)",
+     "target_desc": "midpoint of the short segment between the confluence and the cystic junction, sampled (140,139,83)"
+    },
+    {
+     "n": "4",
+     "label": "Mucosa (Gallbladder wall layers panel)",
+     "now": [
+      148,
+      1187
+     ],
+     "target": [
+      96,
+      1187
+     ],
+     "now_desc": "sampled (75,75,82), ink=31 (round dot) - the outer navy band of the fan (navy spans x143-151 at this row)",
+     "target_desc": "the red folded inner lining facing the lumen and the gallstones (red spans x87-105 at this row), 52 px further in, sampled (170,83,64)"
+    },
+    {
+     "n": "5",
+     "label": "Sphincter of Oddi (Duodenal entry panel)",
+     "now": [
+      803,
+      1246
+     ],
+     "target": [
+      754,
+      1169
+     ],
+     "now_desc": "sampled (140,88,69), ink=6 - straight leader ends at x=802-806 on the outer duodenal wall at the bottom of the C-loop; the curve continuing left of it is the wall's own highlight, not the leader",
+     "target_desc": "the constricted muscular neck at the distal end of the hepatopancreatic ampulla, immediately proximal to the papilla (ampulla body measured at x752-768, y1130-1175), sampled (101,38,28). Crowded - the ampulla and papilla leaders already end within ~12 px"
+    },
+    {
+     "n": "6",
+     "label": "Muscularis (Gallbladder wall layers panel)",
+     "now": [
+      171,
+      1066
+     ],
+     "target": [
+      160,
+      1066
+     ],
+     "now_desc": "sampled (64,63,61), ink=27 (round dot) - the pale boundary between the navy band and the purple outermost band",
+     "target_desc": "the striated orange muscle band (x158-163 at this row), the only band in the fan drawn with muscle-fibre texture, sampled (145,89,72)"
+    },
+    {
+     "n": "6b",
+     "label": "\"Perimuscular CT\" (Gallbladder wall layers panel)",
+     "now": [
+      159,
+      1129
+     ],
+     "target": [
+      152,
+      1129
+     ],
+     "now_desc": "sampled (75,64,79), ink=17 (arrowhead, tip at x=159) - the SAME navy/purple boundary as row 6, 63 px lower down the fan",
+     "target_desc": "the navy band itself (x148-157 at this row), 7 px in, sampled (74,80,95)"
+    },
+    {
+     "n": "7",
+     "label": "Cystic artery (Calot's triangle panel)",
+     "now": [
+      836,
+      921
+     ],
+     "target": [
+      848,
+      921
+     ],
+     "now_desc": "sampled (112,108,80), ink=45 (round dot) - the olive-green duct; the leader runs down-left ALONG the top edge of the red artery and terminates past it",
+     "target_desc": "the red cystic artery the leader passes over, 12 px back along its own path, sampled (120,55,48)"
+    }
+   ],
+   "note": "All four panels swept. Not defective: main-figure Gallbladder, Duodenum, Pancreas and R+L hepatic ducts; Serosa (149,1011); Calot's-triangle 'Cystic duct' arrow (846,884) and 'Common hepatic duct' arrow (841,954). CAVEAT on 6/6b: the wall fan draws SIX colour bands (red folded / yellow / mauve-grey / striated orange / navy / purple) for FOUR named layers, so which band is muscularis and which is perimuscular CT is a reading of the artwork, not a measurement - I used fibre texture (orange = muscle) and the outermost purple = serosa. Confirm against the source before moving these two."
+  },
+  {
+   "key": "fracture-p2",
+   "title": "fracture \u2014 page 2",
+   "panel": "Anatomy: Normal Bone & Common Fracture Locations (SKELETAL FRAMEWORK / BONE ANATOMY long bone / PEDIATRIC BONE / LONG BONE CROSS-SECTION)",
+   "status": "7 rows flagged \u2014 7 measured and confirmed, plus 1 unlisted defect found",
+   "lead": "Two different mechanisms. In the SKELETAL FRAMEWORK panel the blue markers are simply attached to the wrong bone and the correct bone already carries its own UNLABELLED marker - Ribs sits on both elbows with a spare marker at (604,423) on the posterior ribs, Spine sits on the anterior forearm with a spare marker at (598,453) beside the lumbar spine, and Tibia sits on the thin lateral bone that the Fibula marker 33 px below also occupies. In the two sectioned-bone panels the leaders instead stop SHORT of or PAST a layer boundary: Growth plate and Thick periosteum both end on the same grey periosteal band, Nutrient artery stops 21 px past the red vessel in bare marrow, and in the cross-section Medullary cavity stops 5 px outside the dark core while Endosteum overshoots its own line by 28 px.",
+   "findings": [
+    {
+     "n": "1",
+     "label": "Ribs (THE SKELETAL FRAMEWORK panel)",
+     "now": [
+      452,
+      424
+     ],
+     "target": [
+      417,
+      406
+     ],
+     "now_desc": "blue marker sampled (88,137,157), ink=26; bone under it at (452,431) is (152,169,168) - the ELBOW (distal humerus/olecranon) of the anterior skeleton. Posterior twin marker at (554,423), same joint",
+     "target_desc": "the lower rib cage of the anterior skeleton, 39 px medial and superior, sampled (108,100,89). The posterior view already carries an unlabelled marker at (604,423) sitting on its ribs"
+    },
+    {
+     "n": "2",
+     "label": "Spine (THE SKELETAL FRAMEWORK panel)",
+     "now": [
+      458,
+      457
+     ],
+     "target": [
+      399,
+      452
+     ],
+     "now_desc": "blue marker sampled (83,113,131), ink=24; bone under it at (459,463) is (78,73,53) - the FOREARM (proximal radius/ulna) of the anterior skeleton. The right-hand leader has NO marker at all: it ends in a bare T-tick at (551,453) over the posterior forearm",
+     "target_desc": "the lumbar vertebral column of the anterior skeleton, 59 px medial, sampled (150,118,82). The posterior view already carries an unlabelled marker at (598,453) beside its lumbar spine"
+    },
+    {
+     "n": "3",
+     "label": "Tibia (THE SKELETAL FRAMEWORK panel)",
+     "now": [
+      427,
+      634
+     ],
+     "target": [
+      417,
+      634
+     ],
+     "now_desc": "blue marker sampled (36,69,96) - the thin LATERAL bone. Measured at y=643 the leg has a thick medial bone x414-420 and a thin lateral bone x424-427; the Fibula marker at (426,667) is on the same thin bone",
+     "target_desc": "the thick medial bone (tibia), 10 px medial, sampled (222,194,156). Posterior pair: Tibia marker (579,634) on the thin lateral bone, target (589,634) sampled (157,118,79)"
+    },
+    {
+     "n": "4",
+     "label": "Growth plate (physis) (PEDIATRIC BONE panel)",
+     "now": [
+      123,
+      756
+     ],
+     "target": [
+      98,
+      773
+     ],
+     "now_desc": "sampled (82,75,70), ink=8 - arrowhead tip at x=123-126, y=755-756, on the grey outer periosteal band at the metaphyseal shoulder. The 'Thick periosteum' arrow 34 px below ends at (121,790) on the SAME band",
+     "target_desc": "the pale-blue physeal arc separating epiphysis from metaphysis (blue at y771-775 for x=98), 30 px inferomedial, sampled (164,181,189)"
+    },
+    {
+     "n": "5",
+     "label": "Scapula (THE SKELETAL FRAMEWORK panel)",
+     "now": [
+      447,
+      352
+     ],
+     "target": null,
+     "now_desc": "blue marker sampled (100,128,142), ink=19; bone under it at (446,359) is (186,149,102) - the humeral head / glenohumeral joint on the ANTERIOR view. Posterior twin marker at (564,352), same joint",
+     "target_desc": "PLACE FROM SOURCE - on the ANTERIOR view the scapula is hidden behind the ribcage and no scapular body is separately drawn, so there is no pixel to move to. On the POSTERIOR view the scapular blade IS drawn and already carries an unlabelled marker at (589,343); a body point there samples (183,152,113) at (585,350). Arguable overall, since the glenoid is part of the scapula"
+    },
+    {
+     "n": "6",
+     "label": "Nutrient artery (BONE ANATOMY long-bone panel)",
+     "now": [
+      105,
+      546
+     ],
+     "target": [
+      84,
+      546
+     ],
+     "now_desc": "sampled (85,45,38), ink=7 - arrowhead tip traced to x=104-106, y=544-547, in the dark maroon marrow with no vessel under it",
+     "target_desc": "the bright red artery that enters through the cortex at (60-80, 500-520) and descends in the marrow, 21 px back along the leader, sampled (155,67,43). A separate grey-blue vein runs at x89-99, 6-15 px nearer the arrowhead"
+    },
+    {
+     "n": "7",
+     "label": "Medullary cavity (marrow) (LONG BONE CROSS-SECTION panel)",
+     "now": [
+      105,
+      1201
+     ],
+     "target": [
+      89,
+      1201
+     ],
+     "now_desc": "sampled (182,88,63) - red cancellous bone. The dark central marrow at this row runs x80-100, so the tip sits 5 px OUTSIDE it. Measured margin, not the ~250 px the order style suggests",
+     "target_desc": "the dark swirled central marrow, 16 px further in, sampled (82,24,13)"
+    },
+    {
+     "n": "8",
+     "label": "Endosteum (lines cavity) (LONG BONE CROSS-SECTION panel) \u2014 NOT IN THE ORDER",
+     "now": [
+      99,
+      1225
+     ],
+     "target": [
+      129,
+      1225
+     ],
+     "now_desc": "sampled (179,90,68), ink=5 - the leader runs up-left from (145,1250), CROSSES the pale endosteal line at (127,1239) and terminates 28 px past it in red cancellous bone",
+     "target_desc": "the pale dense line at the inner surface of the cortex, which is the only endosteum drawn, sampled (219,152,112)"
+    }
+   ],
+   "note": "Panels swept: SKELETAL FRAMEWORK, BONE ANATOMY (long bone), PEDIATRIC BONE, LONG BONE CROSS-SECTION, and COMMON ADULT FRACTURE LOCATIONS (its seven red glow markers - clavicle 789,269 / humerus 821,304 / ribs 792,328 / wrist 838,424 / hip 798,438 / femur 802,528 / ankle 802,626 - all land on or beside the named region; nothing to flag). RADIAL MEASUREMENT for the cross-section, fitted from the OUTLINE not from a tissue mask: outer edge sampled every 4 rows gives centre (94,1191), semi-axes a=74.3 horizontal, b=107.5 vertical. Layer bands along the left ray at y=1192, as normalised radius rho: dark central marrow 0.00-0.30, red marrow 0.30-0.55, spongy bone with pale trabeculae 0.55-0.78, compact bone 0.78-0.95, periosteum >0.95. IMPORTANT: the dark core is drawn ECCENTRIC to the outer ellipse (the figure is a cut cylinder seen obliquely) - it spans y1147-1218 and x65-102, so rho alone mis-states the layer. Endpoint radii: Spongy bone (112,1168) rho=0.29 but 13 px outside the measured dark core (correct); Medullary cavity (105,1201) rho=0.175, 5 px outside the core; Endosteum (99,1225) rho=0.31, 28 px inside the endosteal line. I used the per-row measured core extent, not rho, for the calls."
+  },
+  {
+   "key": "lung-cancer-p2",
+   "title": "lung cancer \u2014 page 2",
+   "panel": "Labeled Anatomy & Typical Tumor Locations (bronchopulmonary tree + Pancoast / superior sulcus inset)",
+   "status": "7 rows flagged \u2014 6 measured and confirmed, 1 measured with target unresolvable",
+   "lead": "COORDINATES ARE IN THIS PAGE'S OWN 800x1200 PIXELS. In the bronchial-tree panel the leaders all stop too far DISTAL: both main-bronchus leaders end high in the upper-lobe parenchyma about 30 px lateral and 30 px superior to the ringed tube they name, and Lobar/Segmental/Pulmonary artery each land on the fine parenchymal network 14-42 px short of the ringed or navy structure they mean. In the Pancoast inset two labels share ONE orange arrowhead, so at most one of them can be right. HANDEDNESS COULD NOT BE ESTABLISHED: the two lungs are drawn mirror-symmetric with no cardiac notch, no horizontal fissure and no aortic arch, and the two main bronchi differ by under 15 degrees in take-off angle (the image-RIGHT one is if anything the steeper, which would argue against the labels). Every target below is therefore placed on the main/lobar bronchus on the SAME side the leader already points to - the defect measured is proximal-vs-distal and does not turn on left/right.",
+   "findings": [
+    {
+     "n": "1",
+     "label": "Right main bronchus",
+     "now": [
+      190,
+      240
+     ],
+     "target": [
+      220,
+      274
+     ],
+     "now_desc": "sampled (191,149,154), ink=16 (bright terminator blob) - a fine peripheral bronchus high in the image-LEFT upper lobe",
+     "target_desc": "the large cartilage-ringed tube running down-left from the carina (carina measured at 258,247), 45 px away, sampled (160,128,126)"
+    },
+    {
+     "n": "2",
+     "label": "Left main bronchus",
+     "now": [
+      330,
+      241
+     ],
+     "target": [
+      294,
+      272
+     ],
+     "now_desc": "sampled (166,114,114), ink=13 (bright terminator blob) - a fine peripheral bronchus high in the image-RIGHT upper lobe, mirror image of row 1",
+     "target_desc": "the large cartilage-ringed tube running down-right from the carina, 47 px away, sampled (169,141,137)"
+    },
+    {
+     "n": "3",
+     "label": "Lobar bronchi",
+     "now": [
+      332,
+      274
+     ],
+     "target": [
+      318,
+      291
+     ],
+     "now_desc": "sampled (155,87,90), ink=20 - a small branching junction of the parenchymal network, distal to the lobar divisions",
+     "target_desc": "the ringed branch coming off the image-right main bronchus at (305,282) and running down-right, 22 px away, sampled (165,131,135)"
+    },
+    {
+     "n": "4",
+     "label": "Segmental bronchi",
+     "now": [
+      157,
+      313
+     ],
+     "target": [
+      199,
+      313
+     ],
+     "now_desc": "sampled (138,80,84), ink=13 (arrowhead) - the fine parenchymal network, no ringed tube at the endpoint",
+     "target_desc": "the nearest clearly cartilage-ringed tube, 42 px medial at the same height, sampled (171,136,131). Which generation that tube is (lobar vs segmental) is not determinable at 800 px - the nearer pale tube at (186,318), 30 px away, is the alternative"
+    },
+    {
+     "n": "5",
+     "label": "Pulmonary artery (to lungs)",
+     "now": [
+      357,
+      311
+     ],
+     "target": [
+      338,
+      313
+     ],
+     "now_desc": "sampled (127,79,87), ink=14 - a pale-pink peripheral vessel of the parenchymal network",
+     "target_desc": "the dark navy vessel that matches this label's blue bullet, running diagonally from (322,293) to (345,325), 19 px to the left, sampled (103,64,82)"
+    },
+    {
+     "n": "6",
+     "label": "Brachial plexus / \"Subclavian artery\" (Pancoast inset)",
+     "now": [
+      137,
+      585
+     ],
+     "target": [
+      117,
+      578
+     ],
+     "now_desc": "ONE shared orange arrowhead, body measured at x130-139 y583-586, sampled (220,142,62) - its own marker colour. Both white leaders run in from the left and stop at x=109 before crossing onto it, so the two labels have a single terminator between them. It sits on the red band immediately above the blue subclavian vein, not on the nerve cords",
+     "target_desc": "the cream nerve cords of the plexus, running from (100,574) to (128,586), 21 px to the left, sampled (226,188,165). The red band the shared arrow already occupies is a defensible endpoint for Subclavian artery, so the fix is a SECOND arrowhead for Brachial plexus rather than moving this one"
+    },
+    {
+     "n": "7",
+     "label": "1st rib (Pancoast inset)",
+     "now": [
+      107,
+      647
+     ],
+     "target": null,
+     "now_desc": "sampled (103,61,32), ink=1 - orange arrowhead body x100-106 y644-650, tip pointing right at (107,647). It lands on a pale vertical strand between the subclavian vessels; no bone is resolvable within 40 px",
+     "target_desc": "PLACE FROM SOURCE - several parallel tan bone bands are drawn at x150-200, y555-690, and the cut tubular bone with a visible marrow lumen at (140,612) running up-right to (200,585) is the most superior of them, but at 800 px I cannot separate 1st rib from clavicle, and the inset is 115 px wide. Low confidence, same call as the order made"
+    }
+   ],
+   "note": "Panels swept: bronchopulmonary tree, Pancoast/superior sulcus inset, and the three tumour-location call-outs. Not flagged and checked: Trachea (255,190) on the trachea, Bronchial epithelium (175,270), Pulmonary vein and Alveolar epithelium leaders both land inside their inset. Nothing extra found. Two standing caveats for this page: it ships at 800x1200 so every fine call here is worth less than the same call on a 1024x1536 page, and handedness is unresolved (see lead) - do NOT let anyone act on a left/right correction from this measurement alone."
+  },
+  {
+   "key": "metabolic-syndrome-p1",
+   "title": "metabolic syndrome \u2014 page 1",
+   "panel": "Normal Anatomy & Visceral Adiposity (top-left sagittal panel + VISCERAL FAT: LOCATION & FUNCTION panel)",
+   "status": "7 rows flagged \u2014 7 measured and confirmed (2 with no placeable target)",
+   "lead": "COORDINATES ARE IN THIS PAGE'S OWN 800x1200 PIXELS. In the sagittal panel the two intraperitoneal labels stop INSIDE the abdominal wall: VAT and Peritoneal Cavity both end at the subcutaneous-fat/muscle junction, 21 and 24 px short of the intraperitoneal fat band, so the panel's whole SAT-vs-VAT teaching point is undercut by its own leaders. In the lower panel the failure is lateral rather than radial: four of the six leaders stop in the yellow omental/flank fat at the right margin of the cavity instead of reaching the organ - Stomach 24 px short, Small Intestine 20 px short - while the Liver leader crosses the midline entirely and lands on the stomach in the LEFT upper quadrant, with the liver (identified by the greenish gallbladder at 105-130, 698-715) drawn at image x60-135.",
+   "findings": [
+    {
+     "n": "1",
+     "label": "Visceral Adipose Tissue (VAT) (sagittal panel)",
+     "now": [
+      163,
+      366
+     ],
+     "target": [
+      185,
+      366
+     ],
+     "now_desc": "cyan dot sampled (97,182,165); tissue on its outer side (156,366)=(188,163,100) pale subcutaneous fat, on its inner side (170,366)=(182,93,67) muscle - the dot straddles the SAT/muscle junction inside the abdominal wall",
+     "target_desc": "the orange-yellow intraperitoneal fat band deep to muscle and the peritoneal line (x181-188 at this row), 22 px further in, sampled (208,145,50)"
+    },
+    {
+     "n": "2",
+     "label": "Peritoneal Cavity (sagittal panel)",
+     "now": [
+      180,
+      493
+     ],
+     "target": [
+      204,
+      493
+     ],
+     "now_desc": "cyan dot sampled (89,164,160); tissue just outboard at (174,493)=(146,112,70) - the same subcutaneous-fat/muscle junction as row 1, still within the abdominal wall",
+     "target_desc": "just deep to the peritoneal line, in the intraperitoneal fat that fills the cavity (x196-208 at this row), 24 px further in, sampled (175,111,33)"
+    },
+    {
+     "n": "3",
+     "label": "(unlabelled leader stub, no text at either end) (sagittal panel)",
+     "now": [
+      213,
+      434
+     ],
+     "target": null,
+     "now_desc": "sampled (156,158,152) at the arrowhead, tissue beside it (216,436)=(121,80,71) small-bowel loop. A white segment starts in mid-air at (196,433) - no label, no join to the Abdominal Musculature leader, whose own cyan dot ends 31 px away at (165,434) - and ends in a cyan arrowhead at x211-214",
+     "target_desc": "PLACE FROM SOURCE - it is an orphan leader with no label, so there is nothing to point it at. Delete it, or give it the label it lost"
+    },
+    {
+     "n": "4",
+     "label": "Liver (Visceral Fat: Location & Function panel)",
+     "now": [
+      206,
+      674
+     ],
+     "target": [
+      110,
+      670
+     ],
+     "now_desc": "cyan dot sampled (81,111,104); organ under it at (201,674)=(127,50,35) - the lateral edge of the STOMACH mass in the left upper quadrant (image right)",
+     "target_desc": "the liver, the large smooth mass at image x60-135 y652-700, identified by the greenish gallbladder drawn beneath it at (105-130, 698-715), 96 px medial, sampled (108,48,43). NOTE the liver and the stomach are rendered in almost the same dark red, so colour does not separate them - the gallbladder is the landmark"
+    },
+    {
+     "n": "5",
+     "label": "Stomach (Visceral Fat panel)",
+     "now": [
+      214,
+      704
+     ],
+     "target": [
+      190,
+      704
+     ],
+     "now_desc": "cyan dot sampled (103,153,111); tissue just inboard at (207,705)=(99,57,26) olive-yellow omental/flank fat. The stomach wall at this row ends at x=196",
+     "target_desc": "the stomach itself, 24 px medial at the same height, sampled (144,57,36)"
+    },
+    {
+     "n": "6",
+     "label": "Mesenteric Fat (Visceral Fat panel)",
+     "now": [
+      223,
+      765
+     ],
+     "target": null,
+     "now_desc": "cyan dot sampled (115,154,124); fat under it at (216,765)=(187,117,25) - the continuous yellow omental/flank band, the SAME band the Greater Omentum dot at (220,734) lands on, 31 px above",
+     "target_desc": "PLACE FROM SOURCE - no mesenteric fat is drawn. The small-bowel loops are packed edge to edge with only shadow between them (checked across x70-215, y730-830), and the only fat in the panel is the omental/flank band this leader already occupies. Either the artwork needs interloop mesentery added or the label needs removing"
+    },
+    {
+     "n": "7",
+     "label": "Small Intestine (Visceral Fat panel)",
+     "now": [
+      222,
+      796
+     ],
+     "target": [
+      186,
+      796
+     ],
+     "now_desc": "cyan dot sampled (116,164,123); fat under it at (214,796)=(195,124,28) - yellow omental fat at the right margin of the cavity. The nearest bowel loop edge at this row is x=202, 20 px medial",
+     "target_desc": "a coiled red small-bowel loop, 36 px medial at the same height, sampled (163,86,74)"
+    }
+   ],
+   "note": "Panels swept: top-left sagittal, VISCERAL FAT: LOCATION & FUNCTION, SUBCUTANEOUS vs VISCERAL FAT (bullet lists only, no leaders), WHY VISCERAL FAT MATTERS (flow diagram, no anatomical leaders), and WAIST CIRCUMFERENCE: HOW TO MEASURE - its 'Iliac Crest' arrow tips at (315,1035) on the flank just below the tape, which is where the crest is on that photograph; nothing to flag. Also checked and NOT defective: Subcutaneous Adipose Tissue arrowhead (158,281) in the yellow subcutaneous layer; Abdominal Musculature dot (165,434), which sits on the outer edge of the reddish muscle band (muscle measured at x165-173 for that row) - marginal but defensible; Greater Omentum (220,734) on omental fat; Peritoneal Cavity in the lower panel (219,829) on the peritoneal line. Standing caveat: this page ships at 800x1200, so the 20-24 px calls in rows 1, 2, 5 and 7 correspond to only about 26-31 px at the 1024-wide standard."
+  },
+  {
+   "key": "osteoarthritis-p2",
+   "title": "osteoarthritis \u2014 page 2",
+   "panel": "Anatomy & Joint Structure (KNEE JOINT FRONT VIEW + HIP JOINT CROSS-SECTION)",
+   "status": "7 rows flagged \u2014 7 measured and confirmed",
+   "lead": "The hip cross-section is the worse of the two panels and fails one way: FOUR leaders that name soft tissue all terminate inside femoral trabecular bone, having crossed the structure they name on the way in. Synovial membrane forks and puts one branch 16 px past the salmon layer into cancellous bone; Joint capsule ends 13 px inside the cortex with no capsule within 30 px; Synovial fluid ends 40 px below the joint space; Subchondral bone ends 80 px below the subchondral plate, in mid-neck trabeculae. In the knee the mechanism is different - leaders stop one structure SHORT along a radial run: Articular cartilage stops 48 px up inside the femoral metaphysis before reaching the grey cartilage cap, and Ligaments stops on the gold peri-articular band that Synovial membrane already uses on the opposite side.",
+   "findings": [
+    {
+     "n": "1",
+     "label": "1 Articular cartilage (KNEE JOINT FRONT VIEW)",
+     "now": [
+      381,
+      428
+     ],
+     "target": [
+      405,
+      470
+     ],
+     "now_desc": "sampled (192,150,117), ink=19 - arrowhead tip at x377-382 y423-430, squarely inside the tan cancellous/cortical bone of the distal femoral metaphysis",
+     "target_desc": "the grey-white articular cartilage capping the medial femoral condyle (grey mass spans x370-490, y450-545), 48 px down and to the right, sampled (205,208,215)"
+    },
+    {
+     "n": "2",
+     "label": "4 Synovial fluid (KNEE)",
+     "now": [
+      374,
+      555
+     ],
+     "target": [
+      390,
+      550
+     ],
+     "now_desc": "sampled (106,111,120), ink=18 - arrowhead tip on the upper-left corner of the BLUE MENISCUS disc (blue begins at x=375 on this row), which is the structure marker 7 names on the other side",
+     "target_desc": "the joint recess between the femoral condyle cartilage above and the meniscus below (dark band x385-395, y546-552), 17 px away, sampled (60,70,79). Arguable - the tip already sits at the edge of that crevice, so this is a 17 px call"
+    },
+    {
+     "n": "3",
+     "label": "6 Ligaments (KNEE)",
+     "now": [
+      602,
+      535
+     ],
+     "target": [
+      482,
+      550
+     ],
+     "now_desc": "sampled (95,68,44), ink=17 - arrowhead tip at x600-606 y530-537, on the gold/ochre peri-articular band lateral to the lateral femoral condyle. Marker 3 'Synovial membrane' ends on the same band on the medial side at (360,542)",
+     "target_desc": "the crossing cruciate ligaments, the only discrete ligament drawn in the figure (striated pale bands at x460-510, y505-580), sampled (215,197,184). The pale striated band 26 px lateral at x628-640 is what marker 5 'Joint capsule' already uses, so it is not available"
+    },
+    {
+     "n": "4",
+     "label": "Synovial membrane (HIP JOINT CROSS-SECTION)",
+     "now": [
+      826,
+      846
+     ],
+     "target": [
+      842,
+      835
+     ],
+     "now_desc": "the leader FORKS at (845,838): one branch ends at (832,832) sampled (83,113,139) on the blue cartilage rim, the other at (826,846) sampled (164,123,89) in femoral-head cancellous bone. Both cross straight over the salmon layer at x837-849 to get there",
+     "target_desc": "the salmon/pink layer the leader crosses, which is the only membrane drawn (salmon band traced from (838,818) to (852,852)), sampled (142,88,88)"
+    },
+    {
+     "n": "5",
+     "label": "Joint capsule (HIP)",
+     "now": [
+      856,
+      882
+     ],
+     "target": [
+      850,
+      850
+     ],
+     "now_desc": "sampled (154,115,86), ink=9 - a bright starburst dot inside femoral-neck trabecular bone; the cortex at this row is at x868-873, so the dot is 13 px inside it and no capsule is drawn within 30 px",
+     "target_desc": "the salmon/pink band wrapping the joint superolaterally, at its lowest lateral extent, 32 px up, sampled (144,99,97). NOTE this is the same band as row 4's target - the panel draws ONE salmon layer for both 'Synovial membrane' and 'Joint capsule', so the two labels will end up on the same structure unless the artwork separates them"
+    },
+    {
+     "n": "6",
+     "label": "Synovial fluid (HIP)",
+     "now": [
+      834,
+      890
+     ],
+     "target": [
+      838,
+      850
+     ],
+     "now_desc": "sampled (149,109,78) - the leader curves up-left from (880,918) and terminates in femoral-neck trabecular bone at x833-836, y889-891",
+     "target_desc": "the dark joint space between the acetabular and femoral cartilage, 40 px above, sampled (63,74,95)"
+    },
+    {
+     "n": "7",
+     "label": "Subchondral bone (HIP)",
+     "now": [
+      838,
+      916
+     ],
+     "target": [
+      818,
+      836
+     ],
+     "now_desc": "sampled (145,102,73) - the leader curves up-left from (880,952) and terminates at x836-840, y915-918, in mid-femoral-neck trabecular bone",
+     "target_desc": "the dense pale plate immediately beneath the femoral-head articular cartilage (measured at y833-837 for x=812, directly under the blue cartilage which ends at y=831), 82 px above, sampled (172,138,107)"
+    }
+   ],
+   "note": "Panels swept: KNEE JOINT (FRONT VIEW), HIP JOINT (CROSS-SECTION), JOINTS COMMONLY AFFECTED (icon thumbnails, no leaders), NORMAL JOINT STRUCTURE (ENLARGED) (five captioned tiles, no leaders), KEY STRUCTURAL COMPONENTS (colour key). Checked and NOT defective in the knee: marker 2 Subchondral bone (361,497) in tan bone just above the cartilage; marker 5 Joint capsule (619,418) on the pale striated fibrous band; marker 7 Meniscus (590,566) on the blue disc; marker 3 Synovial membrane (360,542) on the gold peri-articular band. In the hip, Articular cartilage (824,822) terminates correctly at the blue cartilage rim. LAYERED-FIGURE MEASUREMENT for the hip: I did not fit a circle, because the femoral head is drawn as a partial ball with a straight neck and the outline is not closed - instead I read the bands off radial colour scans. At the superolateral aspect the sequence outward from the head is: femoral-head cartilage / subchondral plate (pale, y833-837 at x=812) / trabecular bone, and above the head: femoral cartilage / joint space (dark, x831-834 at y=830) / acetabular cartilage (blue) / salmon capsule-synovium (x837-849 at y=830, tapering to x844-856 at y=850) / background. All four hip endpoints fall in the trabecular band, i.e. two layers past the salmon one. Nothing extra found beyond the seven flagged rows."
   }
  ]
 }
