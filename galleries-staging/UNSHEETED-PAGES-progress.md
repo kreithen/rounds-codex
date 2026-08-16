@@ -102,3 +102,31 @@ already: `addisons` p1/p2, `lung-cancer` p2, `metabolic-syndrome` p1, `osa` p2, 
 - **A profile at the leader's own row beats a sampled box** when a band is narrow: on `addisons` p1
   the cortex is 10 px wide and a 7×7 sample straddles it, while the profile reads
   `medulla x240–257 · cortex x259–269` and puts the tip at 268 beyond argument.
+
+---
+
+## The terminator detector does not work. Four attempts, all failed — do not rebuild it.
+
+Written 2026-08-16 after the fourth attempt, because the *negative* result is the useful one and
+each approach looks plausible enough to be tried again.
+
+| # | approach | why it failed |
+|---|---|---|
+| 1 | fixed-threshold connected components | the leaders are thin and anti-aliased over bright artwork, so at any threshold that excludes the artwork they **fragment into 20–50 px pieces**. The component at a known aki endpoint is a 42×6 px stub, not a leader |
+| 2 | top-hat ridge filter + Zhang–Suen thinning | works on the pixels, but the leaders **merge with magnifier circles and label text**, so the skeleton's degree-1 endpoints land on glyph serifs. 0 real terminators found on `addisons` p1 |
+| 3 | round-blob detection + "does a thin ray leave it" | the ray test is a genuinely good discriminator against specular highlights — but **the terminator dot is connected to its own leader**, so the component is the whole line and every size filter rejects it. **0 of 9** known aki endpoints found |
+| 4 | 5×5 dilation to bridge the gaps, then elongated-component endpoints | bridging merges neighbouring leaders and artwork edges into one blob, and the extracted extreme point drifts. **2 of 9** known aki endpoints within 14 px |
+
+Validated against the **nine endpoints on `aki` p2 that were measured by hand and are in that
+sheet**, using the pre-v118 file out of git — a fixed ground truth, so the scores are comparable.
+
+**What works is what has always worked here:** crop with a coordinate grid at 4–13×, read the
+terminator by eye, then confirm the tissue under it by sampling RGB with the leader's own ink
+excluded. Every measured finding in this project came from that, and the ink-count check
+(`>0` at the stated point) is a good cheap *verifier* once a coordinate exists — it just cannot
+*find* one.
+
+**Consequence for the remaining pages:** the work order gives a coordinate for only 26 of its 179
+rows, and all 26 are now measured, corrected and shipped. The remaining **153 rows across 25 pages
+have to be read by hand**, roughly six per page. That is the honest cost, and it is why these are
+being delivered in tranches rather than as one document.
