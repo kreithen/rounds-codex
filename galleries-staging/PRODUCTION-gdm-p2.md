@@ -72,3 +72,24 @@ They require opposite fixes and we cannot tell which from the render.
 | 4 | Umbilical arteries (enlarged panel) | *per the order* | **hold — colour-convention question** |
 
 Correct as drawn: **③ UTERUS** (352,641).
+
+---
+
+## CLOSED 2026-08-16 — rows 3 and 4 accepted as drawn, no change
+
+**Dr. Kreithen's decision: good enough. Do not action rows 3 or 4.**
+
+This sheet deliberately declined to call them, because the two possible fixes are opposite — either
+the artwork's red/blue coding is inverted (recolour the vessels, leave the leaders) or the coding is
+right and the leaders are on the wrong vessels (move the leaders, leave the colours) — and moving
+the leaders under the wrong assumption would have made the panel worse rather than better.
+
+That ambiguity is now resolved by decision rather than by measurement: **the panel ships as it is.**
+
+Recorded here so the question is not re-opened by a later sweep. If it ever is re-opened, the point
+that made it genuinely undecidable from the render is worth keeping: **the umbilical circulation
+inverts the usual convention** — the umbilical vein carries oxygenated blood and is conventionally
+drawn red, the umbilical arteries carry deoxygenated blood and are drawn blue — so both readings of
+this panel are internally consistent and no amount of colour sampling separates them.
+
+Rows 1 and 2 are unaffected and were fixed and shipped earlier.

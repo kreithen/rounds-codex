@@ -80,3 +80,25 @@ Called out now because they are predictable from the page subjects and each has 
   1.28 for standard-size equivalents, and expect fine calls to be less reliable there.
 - **Panel sweeps, not just the order's rows.** Every sheet states which panels were swept
   independently. The `icp` scope error is why.
+
+---
+
+## CLOSED 2026-08-16 — the two open physician questions
+
+Both accepted as drawn on Dr. Kreithen's call. Neither needs action, and neither should be re-raised
+by a later sweep.
+
+**`gdm` p2 — umbilical vessel colours.** Closed with no change. See the CLOSED section at the foot of
+`PRODUCTION-gdm-p2.md` for why it was undecidable from the render and why moving the leaders under
+the wrong assumption would have been worse than leaving it.
+
+**`bipolar` p2 — ⑥ HIPPOCAMPUS.** Measured at **(617,523)**, on the **cerebellum**. This row was NOT
+in the work order; it was found by our own panel sweep, reported rather than silently fixed, and is
+now accepted as a schematic liberty. Same class and same disposition as `anxiety` p2, where ⑤ INSULA
+sits on the drawn thalamus and ① AMYGDALA / ② HIPPOCAMPUS sit off the midsagittal plane — all
+reviewed and accepted.
+
+**The pattern is worth stating once:** on circuit-diagram pages the nodes are positional
+approximations, not anatomical pointers, and the physician has now accepted that convention twice.
+A future sweep that flags a circuit node for landing off its structure should check this decision
+before writing it up as a defect.
