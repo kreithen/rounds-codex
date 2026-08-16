@@ -1896,3 +1896,42 @@ describes. **The ink counts alone cannot adjudicate that**; the pages were read 
 | PDFs | **13 rebuilt, each at the quality reproducing its OWN existing byte size** — swept q70–94 per gallery, giving q80 (`appendicitis`, `bronchiolitis`, `labor`), q81 (eight), q82 (`dvt`, `aortic-dissection`). The script default of 82 would have inflated the nine unchanged pages in most of them. |
 | verified | `verify_gallery_pdfs.py` **102 galleries / 1,020 pages** against the pages the app serves, no drift · `verify_sw.js` all checks · headless boot 183/183/102/300, all 13 galleries 10/10 thumbnails, every corrected page opening in the viewer at full dimensions, **zero page errors** |
 | after pushing | all 14 pages byte-identical out of `git show origin/main:`, and both held pages confirmed **unchanged** on the remote |
+
+## `pe` p2 and `bph` p2 — the last two of the batch, shipped 2026-08-16 (v119)
+
+Both were held at v118 for a label destroyed rather than moved. Shipped on Dr. Kreithen's explicit
+instruction after he was shown the full-resolution evidence. The `held-v118/` folder is removed —
+its contents are now live, and the history carries them.
+
+### `pe` p2 — shipped as held, with the defect intact
+
+Nothing about it changed. **`Right pulmonary artery (posterior to aorta & SVC)` is still an
+illegible single line where three clean lines were, and its leader is still gone.** Recorded plainly
+because the page is now live in that state and no measurement will find it later: it is not a leader
+that moved wrongly, it is text that stopped being text.
+
+The rest of the page's corrections are real and pass measurement — the heart figure's
+**Right pulmonary artery** and **Main pulmonary artery** both clear the orphan-terminator test
+(old-endpoint ink 14 → 0 and 7 → 0), and **Left main bronchus** moved onto the carina.
+
+### `bph` p2 — a NEW export, not the held one
+
+It differs from the held version in **exactly one region, x 512–550, y 259–273** — where the garbled
+`Fɑrtbɪ` remnant was. That is now clean dark background.
+
+**The `Pubic symphysis` label was REMOVED rather than repositioned.** The pale cream ovoid at
+x 645–680, y 200–250 *is* the pubic symphysis and *is* drawn — the sheet named it as the correct
+target — so a drawn structure is now unlabelled. Same class as the `stroke` p2 PCoA removal: a
+deliberate drop, recorded because a "did the terminator move" check cannot see it.
+
+### Integration
+
+| | |
+|---|---|
+| encode | both at the shipped file's own qtables + sampling; **−2.1%** and **−2.2%** on byte count |
+| PDFs | `pe` **q72**, `bph` **q81**, each swept 70–94 against its own existing size |
+| the `pe` trap | **`pe` embeds its PDF pages at 547 px** — a width no other gallery uses — and calibrates to q72. The script default of 82 would have inflated that document by about a fifth. Sweep every time; the default has now been wrong on three galleries out of fifteen. |
+| verified | `verify_gallery_pdfs.py` 102 galleries / 1,020 pages, no drift · `verify_sw.js` all checks · headless boot 183/183/102/300, both galleries 10/10 thumbnails, both pages opening at full dimensions, zero page errors · both byte-identical out of `git show origin/main:` |
+
+**All sixteen pages returned on 2026-08-16 are now live.** Running total for the project: **39 pages
+corrected and deployed** (v99–v119).
