@@ -1175,6 +1175,679 @@
     }
    ],
    "note": "Panels swept: KNEE JOINT (FRONT VIEW), HIP JOINT (CROSS-SECTION), JOINTS COMMONLY AFFECTED (icon thumbnails, no leaders), NORMAL JOINT STRUCTURE (ENLARGED) (five captioned tiles, no leaders), KEY STRUCTURAL COMPONENTS (colour key). Checked and NOT defective in the knee: marker 2 Subchondral bone (361,497) in tan bone just above the cartilage; marker 5 Joint capsule (619,418) on the pale striated fibrous band; marker 7 Meniscus (590,566) on the blue disc; marker 3 Synovial membrane (360,542) on the gold peri-articular band. In the hip, Articular cartilage (824,822) terminates correctly at the blue cartilage rim. LAYERED-FIGURE MEASUREMENT for the hip: I did not fit a circle, because the femoral head is drawn as a partial ball with a straight neck and the outline is not closed - instead I read the bands off radial colour scans. At the superolateral aspect the sequence outward from the head is: femoral-head cartilage / subchondral plate (pale, y833-837 at x=812) / trabecular bone, and above the head: femoral cartilage / joint space (dark, x831-834 at y=830) / acetabular cartilage (blue) / salmon capsule-synovium (x837-849 at y=830, tapering to x844-856 at y=850) / background. All four hip endpoints fall in the trabecular band, i.e. two layers past the salmon one. Nothing extra found beyond the seven flagged rows."
+  },
+  {
+   "key": "ra-p2",
+   "title": "ra \u2014 page 2",
+   "panel": "Anatomy: The Normal Joint (main layered joint figure + Typical synovial joints + Joint capsule & synovial lining)",
+   "status": "7 rows flagged \u2014 7 measured and confirmed",
+   "lead": "Two separate mechanisms. In the whole-body 'Typical synovial joints' inset the Hips/Knees pair is shifted one joint DOWN the limb: the Hips leader stops on the glowing knee and the Knees leader stops 30px below it in plain leg. In the main layered joint the leaders are all slightly LONG on the same radial line \u2014 each crosses the band it names and dies in the next band out (Synovial fluid stops in red synovium instead of the cavity; Synovial membrane crosses the synovium and stops on cartilage; Fibrous capsule crosses the pale capsule band and stops in bone). Measured band edges on the horizontal through each tip, so the overshoot is stated in whole layers, not pixels.",
+   "findings": [
+    {
+     "n": "1",
+     "label": "Hips (Typical synovial joints panel)",
+     "now": [
+      817,
+      457
+     ],
+     "target": [
+      824,
+      382
+     ],
+     "now_desc": "sampled (104,65,77) - the lateral edge of the glowing KNEE joint of the left leg; the leader runs level at y=450 then hooks down into the glow (ink 9 at the tip)",
+     "target_desc": "the glowing HIP joint at the femoral head, 75px higher on the same limb, sampled (199,79,79)"
+    },
+    {
+     "n": "2",
+     "label": "Knees (Typical synovial joints panel)",
+     "now": [
+      813,
+      489
+     ],
+     "target": [
+      826,
+      458
+     ],
+     "now_desc": "sampled (44,58,87) - the lateral margin of the proximal tibia/calf, plain blue leg with no joint glow (ink 13)",
+     "target_desc": "the knee joint glow itself, 31px higher, sampled (221,116,76) - the same glow the Hips leader is currently touching"
+    },
+    {
+     "n": "3",
+     "label": "Tendon (main joint figure)",
+     "now": [
+      250,
+      861
+     ],
+     "target": [
+      263,
+      812
+     ],
+     "now_desc": "sampled (153,70,68) - a round terminator dot squarely inside the striated RED MUSCLE BELLY; the horizontal leader runs to x=236 then a thin pale segment carries it to the dot (ink 9)",
+     "target_desc": "the pale fibrous tendon band above the muscle-tendon junction, sampled (171,121,122). Measured offset is 49px up-right, not the ~20px the order estimated. NB a bright curving line leaves the same elbow toward (272,836); it curves and fades into the tendon and is artwork fascia, not the leader"
+    },
+    {
+     "n": "4",
+     "label": "Synovial fluid",
+     "now": [
+      283,
+      572
+     ],
+     "target": [
+      330,
+      583
+     ],
+     "now_desc": "sampled (137,57,54) - the RED SYNOVIAL LINING band (band edges on this row: pale capsule 254-278, red synovium 279-297, cavity 298-312, cartilage 313+). ink 14",
+     "target_desc": "the dark joint cavity/recess that holds the fluid, sampled (41,49,77), ink 0. The correctly-placed 'Synovial cavity' dot sits at (320,572), 37px right of this tip"
+    },
+    {
+     "n": "5",
+     "label": "Synovial membrane (intima)",
+     "now": [
+      321,
+      590
+     ],
+     "target": [
+      287,
+      590
+     ],
+     "now_desc": "sampled (112,126,169) - the blue-grey TIBIAL ARTICULAR CARTILAGE band, reached after crossing the red synovium it names (ink 19)",
+     "target_desc": "the red synovial lining band at the same height, sampled (134,35,35). Arguable: the synovium does reflect at that cartilage margin, but the leader ends a whole band out"
+    },
+    {
+     "n": "6",
+     "label": "Fibrous capsule (externa) (main figure)",
+     "now": [
+      317,
+      649
+     ],
+     "target": [
+      272,
+      657
+     ],
+     "now_desc": "sampled (217,176,139) - TAN CORTICAL/TRABECULAR BONE at the cartilage-bone junction (band edges on y=660: dark 240-257, pale capsule 258-288, red synovium 289-312, bone 313+). ink 19",
+     "target_desc": "the pale outer fibrous capsule band the leader crosses on the way, sampled (186,141,123). Two bands out; arguable, since the capsule does insert on that bone"
+    },
+    {
+     "n": "7",
+     "label": "Fibrous capsule (collagen) (Joint capsule & synovial lining panel)",
+     "now": [
+      808,
+      898
+     ],
+     "target": [
+      850,
+      885
+     ],
+     "now_desc": "sampled (156,95,82) - deep red synovial tissue between two villi; leftmost leader ink on the row is x=808 (ink 9)",
+     "target_desc": "the pale layered collagen band at the outer edge of the panel (x 843-860 on this row), which the leader crosses at x=845-851, sampled (157,120,131)"
+    }
+   ],
+   "note": "All three panels swept. The two other main-figure leaders check out: 'Synovial cavity' ends at (320,572) inside the dark cavity, and 'Ligament' runs level at y=806 onto the pale ligament band at x~300. One unflagged arrowhead sits at (346,580) in the joint cavity on a leader I could not trace back to a label; it is not one of the seven and does not appear misplaced. The order's ~250px-class distances are not reproduced anywhere here - every overshoot on the main figure is 20-45px, i.e. one band."
+  },
+  {
+   "key": "ms-p2",
+   "title": "ms \u2014 page 2",
+   "panel": "Labeled CNS Anatomy (main sagittal figure + SPINAL CORD AXIAL inset + OPTIC PATHWAY panel)",
+   "status": "8 rows flagged \u2014 7 measured and confirmed, 1 measured with target unplaceable",
+   "lead": "Three unrelated failures. On the sagittal figure two leaders stop SHORT of their structure and one lands in the wrong lobe entirely (2 Brainstem ends on occipital cortex, 140px lateral to the purple brainstem it names). In the axial cord inset 7 and 8 land at mirror-image positions about the midline septum (x=95 and x=181, midline 137.5) - both in the tan zone between the blue lateral block and the pale posterior funiculus, so ONE mis-registration produced both. In the optic pathway panel the chiasm leader is displaced down the tract and the LGN leader is forked with only the upper branch on target.",
+   "findings": [
+    {
+     "n": "1",
+     "label": "2 - Brainstem & MLF (main sagittal figure)",
+     "now": [
+      612,
+      307
+     ],
+     "target": [
+      515,
+      320
+     ],
+     "now_desc": "sampled (160,106,100) - a gyrus of the pink OCCIPITAL/parietal cortex behind the cerebellum (ink 3)",
+     "target_desc": "the purple midline brainstem (midbrain/pons), sampled (81,49,72), ink 0 - 98px medial"
+    },
+    {
+     "n": "2",
+     "label": "1 - Optic nerves (main sagittal figure)",
+     "now": [
+      356,
+      325
+     ],
+     "target": [
+      378,
+      328
+     ],
+     "now_desc": "square terminator at x=353-355, y=322-327; sampled (155,161,164) raw at the tip - the cornea/anterior surface of the cream globe, whose sclera begins at x=357",
+     "target_desc": "the golden optic nerve running back from the globe, sampled (209,160,73) raw, ink 0 - 22px to the right"
+    },
+    {
+     "n": "3",
+     "label": "3 - Periventricular white matter (main sagittal figure)",
+     "now": [
+      538,
+      224
+     ],
+     "target": null,
+     "now_desc": "sampled (132,98,94) with the pale callosum masked out; raw (184,163,158) - the SUPERIOR SURFACE of the corpus callosum (the callosum band at x=505 runs y 224-245). Leader 4 lands on the same arc at (551,257), 33px lower",
+     "target_desc": "PLACE FROM SOURCE - the figure renders no distinct periventricular white-matter band. Below the callosum the vertical profile goes straight from pale callosum (y<=245) to the dark ventricular slit (y>=246); the tissue between them is under 8px and is not separable from 4's target"
+    },
+    {
+     "n": "4",
+     "label": "9 - Spinothalamic tracts (main sagittal figure)",
+     "now": [
+      565,
+      666
+     ],
+     "target": [
+      536,
+      666
+     ],
+     "now_desc": "sampled (56,32,33) - dark paraspinal space; the leader's rounded left end is at x=564-566 on row y=666, and the cord's lateral edge on that row is x=548, so it stops 17px clear of the cord (ink 5)",
+     "target_desc": "the cord itself, sampled (227,187,124) - where leaders 6, 7, 8 and 10 all land. The white blob at (542,665) that looks like a terminator is a myelin highlight in the artwork, not this leader"
+    },
+    {
+     "n": "5",
+     "label": "8 - Dorsal columns (SPINAL CORD AXIAL inset)",
+     "now": [
+      181,
+      654
+     ],
+     "target": [
+      162,
+      646
+     ],
+     "now_desc": "sampled (138,110,95) - the tan dorsal-horn/dorsolateral zone, 7px medial to the blue lateral block (ink 14). Exact mirror of leader 7 at x=95 about the midline septum at x=137.5",
+     "target_desc": "the pale posterior funiculus flanking the midline septum, sampled (192,163,145), 19px medial"
+    },
+    {
+     "n": "6",
+     "label": "7 - Corticospinal tracts (SPINAL CORD AXIAL inset)",
+     "now": [
+      95,
+      660
+     ],
+     "target": [
+      81,
+      655
+     ],
+     "now_desc": "sampled (177,147,129) - the tan zone just medial to the blue dorsolateral block, whose medial edge is x=90 on this row (ink 22)",
+     "target_desc": "inside the blue dorsolateral (lateral corticospinal) block, sampled (127,151,169)"
+    },
+    {
+     "n": "7",
+     "label": "Optic chiasm (OPTIC PATHWAY panel)",
+     "now": [
+      192,
+      1241
+     ],
+     "target": [
+      216,
+      1213
+     ],
+     "now_desc": "sampled (78,80,85) - the grey-blue LEFT OPTIC TRACT below the crossing; leader runs level at y=1231, bends at x=145 and arrowheads at x~192 (ink 39)",
+     "target_desc": "the yellow X where the two optic nerves cross, sampled (178,137,81) raw, ink 0 - 36px up and to the right"
+    },
+    {
+     "n": "8",
+     "label": "Lateral geniculate nucleus (OPTIC PATHWAY panel)",
+     "now": [
+      177,
+      1297
+     ],
+     "target": [
+      188,
+      1277
+     ],
+     "now_desc": "lower branch of a forked leader (fork at (140,1279)); sampled (50,56,66) - the grey-blue optic radiation fibre bundle below the LGN (ink 7). The UPPER branch is correct, ending on LGN tissue at (160,1265)",
+     "target_desc": "the lower lobe of the LGN complex, sampled (182,155,139) raw - 23px up-right of the current tip"
+    }
+   ],
+   "note": "Sagittal figure, axial inset and optic pathway panel all swept. Nothing extra found: leaders 4, 6, 10 on the sagittal cord and 'Optic nerve (CN II)' (ends at (198,1204) on the left optic nerve) and 'Optic tract' in the pathway panel all land correctly. The mirror-image finding for rows 5/6 is arithmetic, not impression: mirror of x=95 about 137.5 is 180.0 and the measured tip is 181."
+  },
+  {
+   "key": "tia-p2",
+   "title": "tia \u2014 page 2",
+   "panel": "Cerebral & Carotid Vascular Anatomy (Circle of Willis, carotid pathway, vertebrobasilar posterior view, left lateral view)",
+   "status": "9 rows flagged \u2014 9 measured and confirmed",
+   "lead": "The carotid pathway panel is the clean case: CCA, carotid sinus and carotid bulb are one stack of three labels all shifted one step DOWN the vessel, which I confirmed by measuring vessel width - the dilated bulb is y 988-1022 (33px wide) and the straight tube below is 24px, and the three tips sit at y=1005 (in the bulb), 1050 and 1073 (both in the straight tube). Elsewhere the failure is 'lands on the mirror-image vessel or on a neighbouring branch': the ICA leader ends on the rounded lateral M1 tip at exactly the mirror position of what the MCA label points at (x=414 and x=612 about a midline of 513).",
+   "findings": [
+    {
+     "n": "1",
+     "label": "Internal carotid artery (ICA) (Circle of Willis)",
+     "now": [
+      414,
+      411
+     ],
+     "target": [
+      447,
+      455
+     ],
+     "now_desc": "sampled (145,86,88) - the rounded lateral end of the image-left M1 segment; the MCA label's dot on the other side is at x=612, an exact mirror about the midline (ink 12)",
+     "target_desc": "the thick ICA trunk below the M1/A1 bifurcation, sampled (203,109,103); its cut lumen (the dark ellipse proving it is the cut stump) is at (450,472), sampled (98,29,25)"
+    },
+    {
+     "n": "2",
+     "label": "Anterior communicating artery (ACOM)",
+     "now": [
+      491,
+      362
+     ],
+     "target": [
+      503,
+      383
+     ],
+     "now_desc": "sampled (25,38,59) - the medial edge of the image-left ascending A2 (patient's RIGHT ACA, this being an inferior view), 21px above the connector (ink 9)",
+     "target_desc": "the short horizontal midline vessel joining the two A1 segments, sampled (150,77,76)"
+    },
+    {
+     "n": "3",
+     "label": "Basilar artery (Circle of Willis)",
+     "now": [
+      485,
+      610
+     ],
+     "target": [
+      505,
+      615
+     ],
+     "now_desc": "sampled (152,103,87) - cerebellar surface; last leader ink on row y=610 is x=485 and the basilar trunk's left wall is x=495, so it stops 10px short (ink 11). A second arm of the same leader runs up to a lateral cerebellar/PCA branch at ~(443,598)",
+     "target_desc": "the midline vertical basilar trunk (bright core x 497-515 on this row), sampled (199,87,75), ink 0"
+    },
+    {
+     "n": "4",
+     "label": "Common carotid artery (CCA) (carotid pathway panel)",
+     "now": [
+      78,
+      1005
+     ],
+     "target": [
+      66,
+      1060
+     ],
+     "now_desc": "sampled (90,53,54) - inside the DILATED CAROTID BULB; measured vessel width 33px here versus 24px below y=1030 (leader ink 11 at threshold 140)",
+     "target_desc": "the straight common carotid tube below the bulb, sampled (131,62,56)"
+    },
+    {
+     "n": "5",
+     "label": "Carotid bulb (carotid pathway panel)",
+     "now": [
+      73,
+      1073
+     ],
+     "target": [
+      66,
+      1010
+     ],
+     "now_desc": "sampled (88,42,41) - the straight CCA, 48px below the bulb's lower edge (y=1025); vessel width 24px, i.e. not dilated (ink 7)",
+     "target_desc": "the ovoid swelling at y 988-1022, sampled (138,70,64) - which the CCA label currently occupies"
+    },
+    {
+     "n": "6",
+     "label": "Carotid sinus (carotid pathway panel)",
+     "now": [
+      73,
+      1050
+     ],
+     "target": [
+      66,
+      1010
+     ],
+     "now_desc": "sampled (86,44,44) - the straight CCA, 25px below the bulb's lower edge; vessel width 26px (ink 7)",
+     "target_desc": "the same dilated segment, sampled (138,70,64) - all three labels in this stack are one step low"
+    },
+    {
+     "n": "7",
+     "label": "Vertebral arteries (vertebrobasilar posterior view)",
+     "now": [
+      872,
+      879
+     ],
+     "target": [
+      861,
+      955
+     ],
+     "now_desc": "sampled (129,63,52) - a small vessel on the cerebellar surface mid-panel (ink 8)",
+     "target_desc": "the right-hand of the paired ascending trunks that fuse into the basilar at (840,940), sampled (175,88,78) - 76px lower"
+    },
+    {
+     "n": "8",
+     "label": "ACA (vertebrobasilar lower sub-panel)",
+     "now": [
+      799,
+      1015
+     ],
+     "target": [
+      845,
+      1020
+     ],
+     "now_desc": "sampled (165,119,119) - frontal cortex; the leader is a single-pixel row from x=743 to x=799 at y=1015 and simply stops there (the bright pixels at 803-827 are 3-row-tall sulcal highlights, not the leader)",
+     "target_desc": "the anterior midline vessels - the two A2 segments run vertically at x=843-847 and x=856-860; sampled (102,50,49) at the nearer one, 46px right"
+    },
+    {
+     "n": "9",
+     "label": "PCA (left lateral view, arteries in context)",
+     "now": [
+      384,
+      1129
+     ],
+     "target": [
+      405,
+      1107
+     ],
+     "now_desc": "sampled (99,53,52) - the anterior brainstem where the basilar/vertebral descends; leader traced from (375,1149) up to its last ink at (384,1129) (ink 13)",
+     "target_desc": "the vessel curving posteriorly around the midbrain toward the occipital lobe, sampled (95,34,32)"
+    }
+   ],
+   "note": "Handedness established before judging anything: the Circle of Willis panel is an INFERIOR view - its own 'Vertebral artery (right)' label sits on the image-LEFT and '(left)' on the image-right, which is correct for an inferior view and fixes the convention for rows 1 and 2. On the carotid pathway panel I tried the bifurcation test and it does NOT resolve: BOTH post-bifurcation columns carry cut side-branch stumps (a stump at (53,950) off the medial column and one at (78,957) off the lateral), so the 'ICA gives no branches' rule cannot separate them at this resolution. Consequence: I am NOT calling the ICA/ECA labels on that panel either way, and I did not add them as findings. One thing worth passing on that the order did not list - the ECA leader's arrow lands on that short cut stump at (78,957) rather than on a trunk, which is a weak placement whichever column is the ECA."
+  },
+  {
+   "key": "thyroidstorm-p2",
+   "title": "thyroidstorm \u2014 page 2",
+   "panel": "Anatomy & Physiology (A: thyroid gland anterior view; B: thyroid follicle; Follicular Cell Detail)",
+   "status": "10 rows flagged \u2014 10 measured and confirmed",
+   "lead": "COORDINATES ARE IN THIS PAGE'S OWN 800x1200 PIXELS, not 1024x1536 - this page ships at the older size. In panel A four leaders converge on the same wrong structure: the gold vagal nerve band. Trachea, Superior thyroid vessels, Inferior thyroid vessels and Internal jugular all stop on or at the edge of that gold band, which lies between the blue jugular and the gland - it acts as a magnet because every one of those leaders approaches from outside and the gold band is the first bright longitudinal structure they meet. Separately the Common carotid leader overshoots the red artery and dies 5px into the blue vein behind it, and in the two microscopy panels three leaders each stop one compartment past their target.",
+   "findings": [
+    {
+     "n": "1",
+     "label": "Cricoid cartilage",
+     "now": [
+      322,
+      317
+     ],
+     "target": [
+      300,
+      378
+     ],
+     "now_desc": "sampled (104,113,136) - the grey THYROID cartilage lamina (the shield spans y 285-350). The 'Thyroid cartilage (Adam's apple)' leader ends at (231,308), 9px higher - the two labels are at effectively the same level",
+     "target_desc": "the narrower cricoid band below the thyroid cartilage (y 355-390), sampled (91,96,117) - 61px lower"
+    },
+    {
+     "n": "2",
+     "label": "Trachea",
+     "now": [
+      218,
+      554
+     ],
+     "target": [
+      272,
+      554
+     ],
+     "now_desc": "sampled (134,88,48) - the GOLD NERVE BAND (gold at x 208-222 on this row); a red artery (x 222-248) and soft tissue separate it from the trachea, whose grey rings begin at x=250",
+     "target_desc": "the ringed grey tube in the midline, sampled (161,152,158) - 32px further right, exactly the gap the order estimated at ~31px"
+    },
+    {
+     "n": "3",
+     "label": "Common carotid artery",
+     "now": [
+      401,
+      449
+     ],
+     "target": [
+      415,
+      450
+     ],
+     "now_desc": "sampled (45,69,119) - the blue INTERNAL JUGULAR VEIN (blue band x 380-405 on this row); the leader enters from the right, crosses the red artery at x 406-425 and stops 5px past its medial edge",
+     "target_desc": "the red common carotid artery it crosses, sampled (132,52,42)"
+    },
+    {
+     "n": "4",
+     "label": "Follicular cell (thyrocyte) (panel B)",
+     "now": [
+      645,
+      272
+     ],
+     "target": [
+      662,
+      262
+     ],
+     "now_desc": "sampled (158,55,79) - the pink COLLOID, 13px past the inner border of the epithelial ring the leader crosses at ~(658,262). This is the compartment the 'Colloid (thyroglobulin)' label names",
+     "target_desc": "one of the cuboidal cells in the ring, sampled (134,85,118)"
+    },
+    {
+     "n": "5",
+     "label": "Nucleus (Follicular Cell Detail)",
+     "now": [
+      658,
+      533
+     ],
+     "target": [
+      700,
+      540
+     ],
+     "now_desc": "sampled (126,80,118) - a small dark purple cytoplasmic vesicle at the cell's left margin; the large nucleus's left edge is x=679, so the tip stops 21px short",
+     "target_desc": "the large purple nucleus, sampled (83,48,107)"
+    },
+    {
+     "n": "6",
+     "label": "Superior thyroid artery and vein",
+     "now": [
+      176,
+      352
+     ],
+     "target": null,
+     "now_desc": "sampled (97,70,56) - the GOLD NERVE BAND at the medial edge of the blue jugular (blue at x 160-166, gold at x 172-182, gland from x 187 on this row). No artery or vein at the tip",
+     "target_desc": "PLACE FROM SOURCE - the upper pole's own artery and vein are not separately rendered here. The only tubular structures beside the superior pole are the carotid at x 168-178 and an unlabelled branch at x 190-200 (sampled (79,39,24)), and I could not tell which, if either, is meant to be the superior thyroid vessels"
+    },
+    {
+     "n": "7",
+     "label": "Inferior thyroid artery and vein",
+     "now": [
+      198,
+      487
+     ],
+     "target": [
+      224,
+      518
+     ],
+     "now_desc": "sampled (140,101,60) - the lateral border of the thyroid lobe immediately beside the gold nerve band (gold peaks at x 194-197 on this row, gland from x 203). No vessel at the tip",
+     "target_desc": "the bright red vessel ascending to the lower pole below the gland, sampled (139,53,35)"
+    },
+    {
+     "n": "8",
+     "label": "Internal jugular vein",
+     "now": [
+      372,
+      499
+     ],
+     "target": [
+      390,
+      500
+     ],
+     "now_desc": "sampled (102,71,45) at the gold band's peak beside the tip - the GOLD VAGUS NERVE; the blue vein's edge on this row is x=379, so the tip is 6px medial to it",
+     "target_desc": "the blue internal jugular vein, sampled (31,57,107)"
+    },
+    {
+     "n": "9",
+     "label": "Capillary (panel B)",
+     "now": [
+      654,
+      376
+     ],
+     "target": [
+      630,
+      392
+     ],
+     "now_desc": "sampled (118,65,103) - the basal side of the follicular epithelium, 14px inside the orange basement membrane the leader crosses at ~(668,382)",
+     "target_desc": "the dark red capillary plexus outside the orange ring, sampled (103,39,46)"
+    },
+    {
+     "n": "10",
+     "label": "Na+/I- symporter (Follicular Cell Detail)",
+     "now": [
+      670,
+      550
+     ],
+     "target": [
+      690,
+      590
+     ],
+     "now_desc": "sampled (105,59,111) - the purple RER/Golgi stacks in mid-cytoplasm",
+     "target_desc": "the cell's basolateral membrane at its lower border, sampled (98,58,78) - directly above the panel's own 'Basolateral (blood side)' caption"
+    }
+   ],
+   "note": "Panel A, panel B and the Follicular Cell Detail all swept. Nothing extra found - Colloid ends inside the colloid, Basement membrane on the orange ring, Thyroid cartilage on the cartilage, and the cell-detail leaders for Pendrin, Thyroglobulin production and Release to blood all reach their structures. The one thing to carry: rows 2, 6, 7 and 8 are all the SAME error (the gold vagal band), so if this page is re-generated rather than patched, that band is what the generator is snapping to."
+  },
+  {
+   "key": "meningitis-p2",
+   "title": "meningitis \u2014 page 2",
+   "panel": "Anatomy of the Meninges & CSF Spaces (cross-section, overview sagittal+coronal, CSF circulation, BBB)",
+   "status": "12 rows flagged \u2014 12 measured; 8 with both endpoints pinned, 4 with the target left unplaced",
+   "lead": "Two distinct mechanisms plus one bookkeeping failure. On every layered figure the leader lands one band off, and the direction is not consistent: in the cross-section 'Meningeal layer' ends OUTWARD in the orange arachnoid (band edges measured on the vertical at x=205: purple dura 435-461, blue 462-476, orange arachnoid 477-495, subarachnoid 496+), while in the coronal overview the Dura leader ends INWARD in the arachnoid. Separately, the CSF-circulation panel has a numbering fault, not a geometry fault: markers 4 and 6 do not exist anywhere on the figure, so their list leaders run into whatever tissue they happen to reach, while 3 and 5 have correct circles on the figure that their own list leaders ignore.",
+   "findings": [
+    {
+     "n": "1",
+     "label": "Meningeal layer (dura sub-label)",
+     "now": [
+      205,
+      485
+     ],
+     "target": [
+      205,
+      455
+     ],
+     "now_desc": "sampled (194,144,61) - the golden/orange ARACHNOID MATER band (y 477-495 on this column)",
+     "target_desc": "the deeper of the two purple dural layers (y 447-461, above the blue band and the arachnoid), sampled (88,63,93), ink 0"
+    },
+    {
+     "n": "2",
+     "label": "Arachnoid villus (CSF absorption into venous sinus)",
+     "now": [
+      258,
+      531
+     ],
+     "target": null,
+     "now_desc": "sampled (101,97,92) - the arachnoid trabecular web in the subarachnoid space, just left of the superior sagittal sinus wall. Traced as a straight run from the label stub at (133,552) rising to (258,531); faint ink continues to x~278 at the sinus wall (ink 10)",
+     "target_desc": "PLACE FROM SOURCE - the main cross-section does not render a villus separate from the sinus wall; the villus is drawn only in the inset, which the separate 'Arachnoid villus granulation' label correctly reaches at (537,489). ALSO NOTE: my trace disagrees with the order, which put this tip on a pial vessel at the top of the brain - the line I measured rises rather than descends, so this endpoint should be re-checked against the source"
+    },
+    {
+     "n": "3",
+     "label": "Pia mater (cross-section)",
+     "now": [
+      190,
+      653
+     ],
+     "target": [
+      259,
+      653
+     ],
+     "now_desc": "sampled (172,132,107) - tan cortex well inside the gyral mass; leader traced from (149,665) up-right, last clear ink (186,655)",
+     "target_desc": "the green pial line, sampled (94,81,51) - the nearest rendered green pia at this height runs in the sulcus at x=257-262. On the outer brain surface directly above the tip the green line is at y~560"
+    },
+    {
+     "n": "4",
+     "label": "Superior sagittal venous sinus",
+     "now": [
+      473,
+      478
+     ],
+     "target": [
+      520,
+      515
+     ],
+     "now_desc": "sampled (31,34,39) with the leader masked - the vertical bracket descends at x=473 and stops in the PURPLE DURA at the top-left of the inset circle (ink 18)",
+     "target_desc": "the blue sinus lumen in the middle of the inset, sampled (15,31,63), ink 0"
+    },
+    {
+     "n": "5",
+     "label": "Pia mater (sagittal overview)",
+     "now": [
+      843,
+      478
+     ],
+     "target": null,
+     "now_desc": "sampled (93,64,53) - the tan arachnoid/dural band; the green leader runs level from the legend dot at (900,478) and stops here, one layer outside the brain surface (cortex ends at x~826 on this row)",
+     "target_desc": "PLACE FROM SOURCE - the sagittal overview's green pial line is essentially unrendered: a green-channel search over the whole sagittal figure (x 640-1010, y 340-520) returned 3 pixels of pia, all near (823,375). There is no green line at the leader's height to pin"
+    },
+    {
+     "n": "6",
+     "label": "Dura mater (coronal overview)",
+     "now": [
+      837,
+      647
+     ],
+     "target": [
+      850,
+      645
+     ],
+     "now_desc": "sampled (163,124,100) - the orange/tan ARACHNOID band; the pale leader crosses the purple dura and stops ~5px past its inner edge (band edges on y=642: arachnoid 824-837, purple dura 838-856, background 858+). ink 5",
+     "target_desc": "the purple dura the leader crosses on the way in, sampled (96,73,142)"
+    },
+    {
+     "n": "7",
+     "label": "Pia mater (coronal overview)",
+     "now": [
+      842,
+      723
+     ],
+     "target": null,
+     "now_desc": "sampled (66,69,56) - the dark olive band outside the cortex; the green leader runs level at y=723 from the legend dot at x=901 and its leftmost green pixel is x=842, with the cortex ending at x~822 on this row",
+     "target_desc": "PLACE FROM SOURCE - the coronal green pial line is 1-2px wide and, at this leader's own height, cannot be separated from the leader's own green stroke (the only green pixels on row 723 in x 790-905 belong to the leader). The tan/orange arachnoid band on this row is x 824-838, sampled (175,124,99), if the intended target is that band instead"
+    },
+    {
+     "n": "8",
+     "label": "4 Cerebral aqueduct (of Sylvius)",
+     "now": [
+      263,
+      956
+     ],
+     "target": [
+      358,
+      1030
+     ],
+     "now_desc": "sampled (154,186,215) - the pale blue ANTERIOR HORN of the lateral ventricle in the frontal lobe; the list leader runs level at y=956 and its last ink is x=263 (ink 35). There is no 4 marker anywhere on the figure",
+     "target_desc": "the narrow channel between the third and fourth ventricles, sampled (74,84,107) - the dark blue-grey diagonal running from below marker 3 at (352,1010) toward marker 5 at (383,1043)"
+    },
+    {
+     "n": "9",
+     "label": "6 Median aperture (foramen of Magendie)",
+     "now": [
+      240,
+      1023
+     ],
+     "target": null,
+     "now_desc": "sampled (68,66,66) - the inferior frontal cortex / inner skull base; leader runs level at y=1023, last ink x=240 (ink 12). There is no 6 marker anywhere on the figure",
+     "target_desc": "PLACE FROM SOURCE - the outlet at the inferior fourth ventricle is not rendered as a discrete opening. Marker 5 (fourth ventricle) is at (383,1043) and marker 7 (lateral aperture) at (368,1080); the median aperture would lie between them, but nothing in the artwork marks it and I will not guess a pixel"
+    },
+    {
+     "n": "10",
+     "label": "3 Third ventricle",
+     "now": [
+      296,
+      931
+     ],
+     "target": [
+      352,
+      1010
+     ],
+     "now_desc": "sampled (128,137,148) - the body of the LATERAL ventricle, right beside the 1 marker at (267,932); leader runs level at y=931 with dashes out to x=296 (ink 13)",
+     "target_desc": "the correctly placed 3 circle already on the figure, sampled (64,131,182) - at the midline slit below the foramen of Monro (marker 2 at (315,978))"
+    },
+    {
+     "n": "11",
+     "label": "5 Fourth ventricle",
+     "now": [
+      223,
+      997
+     ],
+     "target": [
+      383,
+      1043
+     ],
+     "now_desc": "sampled (175,126,106) - inferior frontal/temporal cortex; leader runs level at y=997, last ink x=223 (ink 4)",
+     "target_desc": "the correctly placed 5 circle already on the figure, sampled (54,128,185) - in the CSF space in front of the cerebellum"
+    },
+    {
+     "n": "12",
+     "label": "Pericyte",
+     "now": [
+      712,
+      1090
+     ],
+     "target": null,
+     "now_desc": "sampled (33,42,30) - empty dark background outside the vessel, between two green astrocyte end-feet; leader runs level at y~1096 and kinks up to end here",
+     "target_desc": "PLACE FROM SOURCE - the basement-membrane ring is drawn as a continuous lavender band with no discrete pericyte body I could isolate. Sampling the ring right around the vessel returned uniform purple (e.g. (739,1057) = (130,80,101)); no bluish-grey segment resolved at this scale"
+    }
+   ],
+   "note": "All four panels swept. Confirmed-correct and therefore not listed: 'Arachnoid villus granulation' in the inset lands on the pale granulation at (537,489); the coronal Arachnoid leader reaches the orange band; markers 1, 2, 3, 5, 7, 8 all exist on the CSF figure. The layer-band edges quoted above were measured as vertical or radial profiles through each tip, not assumed. Four targets are deliberately null rather than guessed - in each case the named structure is either not rendered in that panel (rows 2, 9, 12) or is a 1-2px line that cannot be separated from the leader's own stroke (rows 5, 7); rows 5 and 7 are the same problem on the two overview figures. The one item I would re-check against the source is row 2, where my measured leader direction contradicts the work order's description."
   }
  ]
 }
