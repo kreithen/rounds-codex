@@ -1,0 +1,271 @@
+{
+  "pages": [
+    {
+      "key": "withdrawal-p2", "title": "Withdrawal — page 2",
+      "panel": "Brain regions affected by withdrawal",
+      "status": "All 5 rows measured and confirmed. Local fix: 5 dot moves.",
+      "lead": "The cleanest instance of the displaced-series fault in the whole review, and confirmable end to end by colour with no anatomical judgement: each label takes the NEXT label's structure, and the last falls off the figure entirely. The page prints its own colour key, so every row below is settled by sampling the blob under the dot and looking the colour up in that key.",
+      "findings": [
+        {"n":1,"label":"HYPOTHALAMUS","now":[365,509],"target":[437,495],"now_desc":"the PINK blob — Amygdala's colour","target_desc":"the BLUE blob, sampled (14,96,148) against the key's (34,135,193)"},
+        {"n":2,"label":"AMYGDALA","now":[443,527],"target":[370,505],"now_desc":"the GREEN blob — Locus coeruleus's colour","target_desc":"the PINK blob, sampled (185,75,118) against the key's (197,102,161)"},
+        {"n":3,"label":"LOCUS COERULEUS","now":[457,588],"target":[447,530],"now_desc":"the ORANGE brainstem, 28 px below the green stalk's end","target_desc":"the GREEN blob, sampled (75,123,46) against the key's (139,187,111)"},
+        {"n":4,"label":"CEREBELLUM","now":[473,648],"target":[505,530],"now_desc":"the ORANGE cord, 60 px lower again","target_desc":"the mauve arbor-vitae mass, sampled (85,52,62)"},
+        {"n":5,"label":"BRAINSTEM","now":[443,918],"target":[462,592],"now_desc":"EMPTY DARK BACKGROUND, sampled (6,13,22) — the cord at that height is 170–200 px to the right","target_desc":"the orange brainstem/cord, sampled (161,94,56)"}
+      ]
+    },
+    {
+      "key": "cellulitis-p2", "title": "Cellulitis — page 2",
+      "panel": "Skin block — subcutaneous layer",
+      "status": "2 of 4 rows measured and confirmed; 2 carried.",
+      "lead": "The vessels are drawn correctly and in the conventional colours; the two labels have moved one step along. Settled by sampling, not by judgement — the same shape as hepatitis p2 and ckd p2.",
+      "findings": [
+        {"n":1,"label":"Artery","now":[563,677],"target":[497,703],"now_desc":"the BLUE vessel, sampled (56,66,78) — matches the vein at (556,675)","target_desc":"the RED vessel, sampled (125,32,25). Drawn, unambiguous, and currently unlabelled"},
+        {"n":2,"label":"Vein","now":[509,722],"target":[556,675],"now_desc":"a GOLD FAT LOBULE, sampled (143,99,62). No vessel within 12 px","target_desc":"the blue vessel — the point the Artery leader currently occupies"}
+      ],
+      "carried": [
+        ["3","Hair follicle","plain reticular dermis on the block's RIGHT SIDE FACE; the sheathed follicle is drawn on the FRONT face at left. Check the whole right-hand column against which face each structure is drawn on — Sweat gland, Nerve and Hair shaft sit in the same column"],
+        ["4","Portal of entry (skin break) [CHECK]","erythematous skin ~30 px right of the wound. Move to the dark slit-shaped break itself"]
+      ]
+    },
+    {
+      "key": "stroke-p2", "title": "Stroke — page 2",
+      "panel": "Carotid & vertebrobasilar systems",
+      "status": "9 rows flagged; the two carotid rows measured at 11×.",
+      "lead": "The panel draws two red trunks ascending the neck with the face to the right. The anterior trunk (x 160–168) is the common carotid and bifurcates at (163,800): one limb continues to the skull base giving no facial branches (the ICA), the other fans into the face (the ECA). Both carotid labels have crossed to the posterior trunk — the vertebral artery.",
+      "findings": [
+        {"n":1,"label":"Internal Carotid Artery (ICA)","now":[146,768],"target":[161,770],"now_desc":"the VERTEBRAL artery","target_desc":"the post-bifurcation limb with no facial branches"},
+        {"n":2,"label":"External Carotid Artery (ECA)","now":[145,808],"target":[178,800],"now_desc":"the VERTEBRAL artery; the leader's final dash reaches x 158–160, the COMMON carotid below the bifurcation","target_desc":"the anterior branch fanning into the face"}
+      ]
+    },
+    {
+      "key": "osteoporosis-p2", "title": "Osteoporosis — page 2",
+      "panel": "The skeletal framework — anterior and lateral skeletons",
+      "status": "2 of 5 rows measured and confirmed; 3 carried.",
+      "lead": "Tibia and Fibula are on each other's bone. The tibia is the BROAD weight-bearing shaft and the fibula the SLENDER one; both labels point at the slender bone on the anterior figure, and on the lateral figure both fall on the same pair the other way round.",
+      "findings": [
+        {"n":1,"label":"Tibia (anterior skeleton)","now":[449,691],"target":[436,691],"now_desc":"the SLENDER shaft — at that height it spans x 448–450","target_desc":"the broad shaft"},
+        {"n":2,"label":"Fibula (anterior skeleton)","now":[446,730],"target":[449,730],"now_desc":"the SLENDER shaft again, on its medial edge","target_desc":"the slender shaft proper — but note both current tips are on ONE bone"},
+        {"n":3,"label":"Tibia (lateral skeleton)","now":[558,673],"target":null,"now_desc":"the SLENDER anterior shaft (x 552–560) at the knee","target_desc":"the broad shaft"},
+        {"n":4,"label":"Fibula (lateral skeleton)","now":[563,708],"target":null,"now_desc":"the BROAD shaft behind it (x 561–572)","target_desc":"the slender shaft"}
+      ],
+      "carried": [["—","Ribs / Humerus / Radius","reported by the order as Ribs → the humerus, Humerus → the vertebral column, Radius → …  — not re-measured here"]]
+    },
+    {
+      "key": "aortic-dissection-p2", "title": "Aortic dissection — page 2",
+      "panel": "Aortic arch branches",
+      "status": "Arch-branch series verified at 13×. 29 labels, 6 to move, 2 to check.",
+      "lead": "The arch draws three branches — branch 1 at x 422–437 (brachiocephalic, the only one that visibly bifurcates), branch 2 at x 448–465, branch 3 at x 478–500. The labels are shifted one position along, so two labels land on branch 3 and branch 1 carries nothing.",
+      "findings": [
+        {"n":1,"label":"Brachiocephalic trunk","now":[462,222],"target":[430,240],"now_desc":"branch 2 — the left common carotid","target_desc":"branch 1, the thick bifurcating trunk"},
+        {"n":2,"label":"Left common carotid artery","now":[490,236],"target":[453,240],"now_desc":"branch 3 — the left subclavian","target_desc":"branch 2"},
+        {"n":3,"label":"Left subclavian artery","now":[484,252],"target":null,"now_desc":"branch 3 — CORRECT, but it currently shares that branch with the row above","target_desc":"stays where it is"}
+      ]
+    },
+    {
+      "key": "aki-p2", "title": "Acute kidney injury — page 2",
+      "panel": "Nephron (functional unit) + blood supply",
+      "status": "The largest page in the order: 27 labels, 15 to move, 4 to check. Nephron panel verified completely.",
+      "lead": "The nephron panel draws, left to right: the vasa recta bundle as a blue/red vertical pair at x 833–847, then the gold tubules — beaded proximal convolutions at x 855–925, hairpin limbs at x 865–885 and 895–910, and the thick collecting-duct trunk at x 950–980. Four leaders leave a stacked label column and stop at the first thing they meet at their own height, which is the blood vessel.",
+      "findings": [
+        {"n":14,"label":"Proximal Tubule","now":[825,551],"target":[890,551],"now_desc":"the vasa recta bundle (a 17-px-wide blood vessel)","target_desc":"the beaded gold tubule, x 860–925"},
+        {"n":15,"label":"Loop of Henle","now":[840,600],"target":[887,600],"now_desc":"the vasa recta bundle","target_desc":"the gold hairpin, x 865–910"},
+        {"n":16,"label":"Distal Tubule","now":[842,648],"target":[890,648],"now_desc":"the red vessel of the same bundle","target_desc":"the gold tubule returning to the glomerulus"},
+        {"n":17,"label":"Collecting Duct","now":[870,700],"target":[965,700],"now_desc":"the descending gold limb of Henle — one structure short","target_desc":"the thick gold trunk, x 950–980"},
+        {"n":12,"label":"Glomerulus (filters blood)","now":[823,450],"target":[830,495],"now_desc":"the bend of the blue arteriole, above the capsule","target_desc":"the red glomerular tuft"},
+        {"n":13,"label":"Bowman's Capsule","now":[830,500],"target":[780,500],"now_desc":"the red glomerular tuft, inside the capsule","target_desc":"the peach ring (x 775–850, y 460–540) — its left limb"},
+        {"n":18,"label":"Segmental Arteries","now":[806,849],"target":[770,870],"now_desc":"out among the fine peripheral cortical branches","target_desc":"the thick first-order trunks, x 750–790, y 855–890"},
+        {"n":19,"label":"Interlobar Arteries","now":[794,870],"target":null,"now_desc":"12 px MORE MEDIAL than Segmental — the series runs backwards","target_desc":"lateral of the corrected Segmental endpoint"},
+        {"n":20,"label":"Arcuate Arteries","now":[789,918],"target":null,"now_desc":"more medial still","target_desc":"lateral again, at the corticomedullary arcs"}
+      ],
+      "note": "Anatomically these run medial→lateral as segmental → interlobar → arcuate → interlobular. Measured at 11× they are 806, 794, 789, 838 — the first three exactly backwards, with Interlobular alone where it belongs. NOTE: an earlier draft of this sheet told you the inversion could not be reproduced. That draft was wrong and was withdrawn; it had been read at 5×, where the difference is smaller than the stroke widths."
+    },
+    {
+      "key": "bronchiolitis-p2", "title": "Bronchiolitis — page 2",
+      "panel": "Airway overview + normal bronchiole cross-section",
+      "status": "9 rows flagged.",
+      "lead": "A side inversion found by a laterality sweep, not by the page-by-page review. The trachea descends at x 470–490 and the carina is at (472,625). On a front-facing figure, viewer's left = patient's RIGHT. Both bronchus labels are in one lung, and it is the wrong one for the first — and underneath that, neither leader reaches a bronchus at all: both stop in parenchyma 50–90 px short of the ringed tubes.",
+      "findings": [
+        {"n":1,"label":"Left main bronchus","now":[408,660],"target":[494,634],"now_desc":"viewer's-left lung = the patient's RIGHT lung, and in parenchyma, not on a tube","target_desc":"the left main bronchus running down-right from the carina"},
+        {"n":5,"label":"Right main bronchus [CHECK]","now":[416,606],"target":[444,634],"now_desc":"a small upper-lobe segmental branch, in the same lung as row 1","target_desc":"the right main bronchus"},
+        {"n":2,"label":"Pharynx","now":[389,450],"target":[460,455],"now_desc":"inside the ORAL CAVITY, just behind the lips","target_desc":"the vertical pharyngeal column, 70 px posterior"},
+        {"n":3,"label":"Oral cavity","now":[382,427],"target":[385,450],"now_desc":"the HARD PALATE / nasal floor","target_desc":"the oral cavity below the palate"},
+        {"n":4,"label":"Nasal cavity [CHECK]","now":[384,385],"target":[384,397],"now_desc":"the SKIN of the nasal dorsum","target_desc":"inside the turbinate-containing cavity, ~12 px lower"}
+      ],
+      "note": "Rows 2–4 are a displaced series: pharynx lands where oral cavity belongs, oral cavity where nasal cavity belongs, nasal cavity on skin above the nose. Separately, the NORMAL BRONCHIOLE cross-section has its three layer labels in REVERSE RADIAL ORDER — Smooth muscle on the gold mucus at radius ~49 when it belongs at ~66, and Mucus layer on the epithelial band. Please check those two radii at source; we could not measure them numerically."
+    },
+    {
+      "key": "appendicitis-p2", "title": "Appendicitis — page 2",
+      "panel": "Appendix cross-section + relations",
+      "status": "6 of 11 measured and confirmed; 5 carried.",
+      "lead": "The cross-section is concentric, so radius settles it. Fitted from its own outline: CENTRE (134,900), RADIUS 110. Reading outward the layers are lumen r 0–60, mucosa r 61–75, submucosa r 76–90, muscularis propria r 91–108, serosa r 109–110. Four of the five layer labels sit one to two layers too deep and the fifth too shallow.",
+      "findings": [
+        {"n":8,"label":"Serosa","now":[160,821],"target":null,"now_desc":"r = 83 — the dark red SUBMUCOSA","target_desc":"the outer rim, r ≈ 110"},
+        {"n":9,"label":"Muscularis propria","now":[200,859],"target":null,"now_desc":"r = 78 — the mucosa/submucosa boundary","target_desc":"the pale speckled band, r 91–108"},
+        {"n":10,"label":"Submucosa","now":[185,900],"target":null,"now_desc":"r = 51 — the orange LUMEN","target_desc":"the dark red band, r 76–90"},
+        {"n":13,"label":"Psoas major","now":[354,1108],"target":null,"now_desc":"the haustrated CECUM (pink sacculated bowel, x 335–420)","target_desc":"the muscle — CONFIRM IT IS DRAWN; we could not find separately drawn psoas or iliacus bellies"},
+        {"n":14,"label":"Iliacus","now":[340,1152],"target":null,"now_desc":"the same CECUM, at its left margin, 45 px below","target_desc":"the muscle — CONFIRM IT IS DRAWN"}
+      ],
+      "note": "A check that needs no anatomy: on this figure no two layer labels should terminate at the same radius, and the five radii should ascend lumen < mucosa < submucosa < muscularis < serosa. They do not. Rows 11 (Mucosa, on the lumen) and 12 (Lumen, on the magenta band) are carried at the order's readings. Rows 15 (Right ureter, on the mid-appendix) and 16 (External iliac vessels, on the distal appendix) matter alongside 13 and 14: all four retroperitoneal relations on that panel are labelled onto bowel or appendix.",
+      "carried": [["4","Mesappendix","two dots on the lateral wall of the appendix itself — and no peritoneal fold appears to be drawn, so this may need artwork"],["6","Appendicular vein","the top of the ileocolic venous trunk rather than the small vein running to the appendix"]]
+    },
+    {
+      "key": "bph-p2", "title": "BPH — page 2",
+      "panel": "Sagittal male pelvis",
+      "status": "The worst page in the order: 12 of 33 labels flagged. 6 re-measured at 9×; 6 carried.",
+      "lead": "Rows 1 and 2 are the reason this page is first in the queue: the seminal vesicle is labelled Detrusor muscle and the bladder wall is labelled Seminal vesicle. They approach from opposite sides, so it is not a swapped pair of leaders — each is displaced in a way that happens to land on the other's target. That is the failure mode which produces a page that LOOKS right.",
+      "findings": [
+        {"n":1,"label":"Seminal vesicle","now":[683,180],"target":[800,175],"now_desc":"the bladder's anterior-inferior wall at the base","target_desc":"the lumpy coiled retrovesical chain"},
+        {"n":2,"label":"Detrusor muscle","now":[816,160],"target":[795,160],"now_desc":"fascia lateral to that retrovesical chain","target_desc":"the thick muscular bladder wall, 10–25 px medial"},
+        {"n":3,"label":"Pubic symphysis","now":[666,285],"target":[662,225],"now_desc":"the ROOT OF THE PENIS","target_desc":"the pale cream ovoid, x 645–680, y 200–250"},
+        {"n":4,"label":"Testis","now":[628,362],"target":[683,362],"now_desc":"the penile shaft near the corona","target_desc":"the pink ovoid, x 665–700, y 335–390"},
+        {"n":5,"label":"Scrotum","now":[628,390],"target":[695,370],"now_desc":"the GLANS PENIS","target_desc":"the scrotal sac around the testis, x 660–730, y 320–405"},
+        {"n":8,"label":"Periprostatic venous plexus","now":[738,232],"target":null,"now_desc":"a dark dot INSIDE the right prostate lobe","target_desc":"the veins around/anterior to the gland, outside it"}
+      ],
+      "note": "LAYOUT WARNING for rows 4 and 5. The label column runs down the left and the penis is drawn between that column and the testis, so a correct horizontal Testis leader would cross the glans and then the scrotal wall. Please re-site those two labels below the figure or bring them in from the right rather than lengthening the existing leaders. Also: the prostate's own extent is x 690–780, y 200–255, split at the midline urethra at x 728, with the pubic symphysis a separate pale ovoid at x 645–680 — at low magnification they read as one mass, which is very likely how Pubic symphysis ended up on the penile root."
+    },
+    {
+      "key": "labor-p2", "title": "Labor — page 2",
+      "panel": "Sagittal pelvis at term",
+      "status": "5 of 7 measured and confirmed; 2 carried.",
+      "lead": "An obstetric anatomy page with the birth canal mislabelled. The right-hand column is displaced one position: Sacrum lands on a lumbar vertebra, Rectum lands on the sacrum, and Vagina lands inside the rectum.",
+      "findings": [
+        {"n":1,"label":"Vagina ③","now":[650,520],"target":[580,590],"now_desc":"inside the RECTUM","target_desc":"the vaginal canal running down and forward from the cervix — PLACE FROM SOURCE"},
+        {"n":2,"label":"Rectum","now":[722,472],"target":[650,500],"now_desc":"the SACRUM","target_desc":"the rectal lumen"},
+        {"n":3,"label":"Sacrum","now":[732,341],"target":[700,470],"now_desc":"the posterior elements of a LUMBAR vertebra","target_desc":"the sacral body"},
+        {"n":4,"label":"Bladder","now":[475,559],"target":null,"now_desc":"the PUBIC BONE","target_desc":"the bladder lumen — CONFIRM IT IS DRAWN"},
+        {"n":6,"label":"Cervix ②","now":[492,513],"target":null,"now_desc":"the lower-segment wall","target_desc":"the cervical canal"}
+      ]
+    },
+    {
+      "key": "sepsis-p2", "title": "Sepsis — page 2",
+      "panel": "Organ callouts",
+      "status": "Confirmed. One of the two worst pages in the triage.",
+      "lead": "Callout ⑥ BRAIN (Meningitis) runs from the right column down-left and dies in the left upper chest, about 225 px below the head — while the correct green marker sits beside the temple, orphaned, its short stub dying where it crosses the red BLOODSTREAM leader.",
+      "findings": [
+        {"n":1,"label":"⑥ BRAIN (Meningitis)","now":[620,472],"target":[565,247],"now_desc":"the left upper chest / lung region","target_desc":"the orphaned green temple marker — the correct site"},
+        {"n":2,"label":"green temple marker","now":[565,247],"target":null,"now_desc":"ORPHANED — its stub runs down-right and dies at (642,268), exactly where it crosses the red BLOODSTREAM leader","target_desc":"should receive the BRAIN leader"}
+      ]
+    },
+    {
+      "key": "dvt-p2", "title": "DVT — page 2",
+      "panel": "Deep venous anatomy of the leg",
+      "status": "Confirmed. The other of the two worst pages in the triage.",
+      "lead": "The popliteal vein is, by definition, the vein behind the knee. Its label is on the tibia.",
+      "findings": [
+        {"n":2,"label":"Popliteal vein","now":[382,678],"target":[382,605],"now_desc":"the proximal TIBIAL SHAFT, 73 px below the knee joint line","target_desc":"the vein behind the knee, at the joint line (y = 605)"}
+      ]
+    },
+    {
+      "key": "sci-p2", "title": "Spinal cord injury — page 2",
+      "panel": "Major tracts (cord cross-section)",
+      "status": "Confirmed by sampling the colour under the endpoint against the page's own key.",
+      "lead": "The page prints a MAJOR TRACTS key: Dorsal columns (86,39,140) purple, Corticospinal (66,110,24) green, Spinothalamic (27,118,181) blue. The label contradicts that key — no anatomical judgement is involved.",
+      "findings": [
+        {"n":1,"label":"Lateral Corticospinal Tract (UMN)","now":[423,437],"target":[445,400],"now_desc":"the SPINOTHALAMIC blue","target_desc":"the green posterolateral region — drawn 30–45 px up and left, sampled (100,136,43) and (105,136,53), and currently carrying no label"}
+      ]
+    },
+    {
+      "key": "compartment-p2", "title": "Compartment syndrome — page 2",
+      "panel": "Leg compartments (cross-section)",
+      "status": "Confirmed by colour sampling against the page's own key.",
+      "lead": "Same method as sci p2: sample the colour under each endpoint, look it up in the key, compare with the label.",
+      "findings": [
+        {"n":1,"label":"② LATERAL (gold)","now":[230,462],"target":null,"now_desc":"sampled (83,103,51) — the same mass as the belly at (235,410), (92,104,52)","target_desc":"the gold peroneal group over the fibula"},
+        {"n":2,"label":"ANTERIOR (green)","now":[218,357],"target":null,"now_desc":"pinkish-tan muscle, sampled (177,154,137) — not the green compartment","target_desc":"the green anterior compartment"}
+      ]
+    },
+    {
+      "key": "pe-p2", "title": "Pulmonary embolism — page 2",
+      "panel": "Central heart figure + vascular landmarks",
+      "status": "10 rows flagged; the pattern behind most of them is laterality. Page ships at 800×1200.",
+      "lead": "The side convention was established first: the aortic arch descends on the viewer's right (its limb runs down at x 400–430 while the ascending aorta rises at x 330–360), which on an anterior view puts the descending aorta on the patient's LEFT. Against that, 'Right pulmonary artery' points into the patient's left lung — twice, on two different panels.",
+      "findings": [
+        {"n":2,"label":"Right pulmonary artery (heart figure)","now":[427,296],"target":null,"now_desc":"the blue artery running toward the VIEWER'S RIGHT — the patient's LEFT lung","target_desc":"the right pulmonary artery, viewer's left"},
+        {"n":1,"label":"Main pulmonary artery","now":[411,272],"target":null,"now_desc":"the right border of the salmon AORTIC ARCH — an artery of the systemic circulation","target_desc":"the blue pulmonary trunk"},
+        {"n":3,"label":"Left pulmonary artery [CHECK]","now":[388,319],"target":null,"now_desc":"the upper-right edge of the RED THROMBUS inside the blue trunk, rather than the vessel wall","target_desc":"the vessel wall"},
+        {"n":7,"label":"Right pulmonary artery (landmarks panel)","now":[640,769],"target":[575,756],"now_desc":"the viewer's-right (patient's LEFT) hilum","target_desc":"the right hilum, viewer's left, x 565–585, y 750–762"},
+        {"n":8,"label":"Left pulmonary artery [CHECK]","now":[640,769],"target":null,"now_desc":"THE SAME POINT as row 7 — two labels, one dot","target_desc":"its own point on the left PA"},
+        {"n":9,"label":"Left main bronchus","now":[648,822],"target":[622,761],"now_desc":"left cardiac border / adjacent lung — NO AIRWAY IS DRAWN THERE","target_desc":"the carina / left main bronchus behind the heart, x 615–630, y 755–768"},
+        {"n":5,"label":"Ascending aorta","now":[634,710],"target":[602,720],"now_desc":"the APEX OF THE VIEWER'S-RIGHT LUNG; the leader fades out","target_desc":"the salmon aorta, x 595–610, y 700–740"},
+        {"n":10,"label":"Inferior vena cava","now":[645,874],"target":[585,846],"now_desc":"dark space where the leader fades","target_desc":"the blue IVC, x 578–592, y 820–872"}
+      ]
+    },
+    {
+      "key": "anxiety-p2", "title": "Anxiety — page 2  [NEW, 2026-08-16]",
+      "panel": "Key brain structures — circuit figure",
+      "status": "The order flagged 1 row. Measured and confirmed — and the panel sweep found TWO MORE of the same fault the order did not list.",
+      "lead": "The base image is a MIDSAGITTAL section — established from the artwork itself: the corpus callosum in full arc (x 370–600, y 340–430), the thalamus as a cut oval (x 452–565, y 404–446), the brainstem in section, the cerebellum with its arbor vitae. The amygdala, hippocampus and insula are all lateral to that plane. None of them can appear on this image, and none is drawn.",
+      "findings": [
+        {"n":1,"label":"⑤ INSULA","now":[531,427],"target":null,"now_desc":"INSIDE THE DRAWN THALAMUS, at its upper-posterior part","target_desc":"not depictable on this cut — needs a lateral inset or a different base image"},
+        {"n":2,"label":"① AMYGDALA  (not in the work order)","now":[448,489],"target":null,"now_desc":"below and anterior to the thalamus, at hypothalamic level","target_desc":"off-plane — same fault"},
+        {"n":3,"label":"② HIPPOCAMPUS  (not in the work order)","now":[517,491],"target":null,"now_desc":"at the midbrain / cerebral peduncle, anterior to the cerebellum","target_desc":"off-plane — same fault"}
+      ],
+      "note": "IF ONLY ONE THING IS CHANGED, CHANGE ⑤. Rows ① and ② sit on tissue the page never names, which is merely imprecise. ⑤ sits on a drawn, recognisable thalamus that the page leaves unlabelled, so the reader is shown the thalamus and told it is the insula. Preferred fix: a small lateral or oblique inset carrying the three off-plane structures, leaving the main figure its circuit arrows and its two correct nodes (③ mPFC at (346,388) and ④ ACC at (432,354), both verified correct)."
+    },
+    {
+      "key": "bronchiolitis-p7", "title": "Bronchiolitis — page 7  [NEW, 2026-08-16]",
+      "panel": "Airway cross-section, bronchiolitis side",
+      "status": "A [CHECK] row that had never been measured. Now measured and CONFIRMED.",
+      "lead": "The circle draws three things unmistakably: the yellow mucus plug filling the centre (x 795–856, y 398–452), the pink oedematous wall from x 868 outward, and between them a dark residual air space — which is the narrowed lumen the label names. As drawn, the plug is labelled twice and the lumen not at all.",
+      "findings": [
+        {"n":2,"label":"Narrowed lumen","now":[845,443],"target":[832,400],"now_desc":"the plug's inferior lobe where it meets the wall, sampled (192,145,106) — pale, not air","target_desc":"the dark residual air space, sampled (29,9,4). Also (836,395)=(26,8,3) and (828,405)=(47,19,4)"}
+      ],
+      "note": "Row 1 (Minimal mucus, normal side) was corrected in-app in v95 and is verified fixed — no action. Optional tidy while the file is open: the Mucus plug leader tip at (858,420) sits about 2 px beyond the plug's edge (the yellow ends at x 856); pull it back to (852,420) so the two leaders sit on opposite sides of the same boundary cleanly."
+    },
+    {
+      "key": "acs-p2", "title": "ACS — page 2",
+      "panel": "Coronary anatomy (numbered badges)",
+      "status": "Not in the 81-page work order. Cited in the brief as the counter-example to 'badges are self-checking'.",
+      "lead": "The bifurcation sits at (655,615). From it the LAD descends steeply through (672,660), (680,690), (690,722), (700,755); the circumflex runs right along (690,632) → (730,645) → (750,655). A diagonal branch arises from the LAD — that is what the name means, and it is why the badge's position matters.",
+      "findings": [
+        {"n":3,"label":"③ Diagonal Branch","now":[748,722],"target":null,"now_desc":"a branch arising from the LEFT CIRCUMFLEX at about (712,640), descending through (727,690), (734,712), (740,735). At that height the LAD is at x ≈ 690 — some 55 px left, with the badge's own edge still 45 px short of it","target_desc":"a branch arising from the LAD"}
+      ],
+      "note": "Badge ⑤ (Obtuse Marginal) sits roughly 75 px further down the SAME vessel, so two badges name different vessels on one branch — re-check ⑤ once ③ is no longer sharing it. METHOD NOTE: the branch was traced by eye at 11× on the shipped JPEG, not measured. We tried to isolate the vessels numerically and could not — on this render the myocardium is nearly as red as the arteries. You have the layers; if the trace disagrees with your source file, your source file is right."
+    },
+    {
+      "key": "acs-p6", "title": "ACS — page 6",
+      "panel": "Magnifier ring on the anterior heart",
+      "status": "Measured. Needs a re-render — see the note.",
+      "lead": "The ring is centred at (761.6, 360.7), radius ~10.7 px. At 16× it contains NO coronary artery at all, only myocardial surface texture — while the inset it feeds shows an atherosclerotic plaque inside a coronary artery.",
+      "findings": [
+        {"n":1,"label":"magnifier ring","now":[762,361],"target":[735,356],"now_desc":"bare myocardium — 5% of pixels inside the disc are vessel (mean R−G 33.0)","target_desc":"28 px to its left: 56% vessel (mean R−G 61.5). Candidates (712,350) and (724,372) score 20% and 11%"}
+      ],
+      "note": "The connector to the inset then runs from the new ring edge to the same point on the inset circle, (828,322). ACS page 3 does this correctly, so it is a placement slip rather than a limitation of the layout. WHY NOT FIXED LOCALLY: this needs a 28 px disc of shaded myocardium erased near the heart's silhouette edge; four clone offsets were rendered and every one left a visible pale patch on the gallery's hero image."
+    },
+    {
+      "key": "aortic-stenosis-p2", "title": "Aortic stenosis — page 2",
+      "panel": "Cut heart",
+      "status": "A LAYOUT change, not a leader correction.",
+      "lead": "'Pulmonary Trunk — carries deoxygenated blood from the right ventricle to the lungs' ends on the large blue vessel that descends behind the right atrium and leaves the bottom of the frame. That vessel is the INFERIOR VENA CAVA, which carries blood INTO the right atrium — the opposite direction from the one the caption describes. The page labels the SVC correctly three inches above it, so a reader has both cavae in view with one of them named as an outflow vessel.",
+      "findings": [
+        {"n":1,"label":"Pulmonary Trunk","now":[365,1010],"target":[660,480],"now_desc":"the inferior vena cava","target_desc":"the blue trunk at its mid-course, drawn at x 560–800, y 420–560, arising anterior to the aortic root — currently carrying no label at all"}
+      ],
+      "note": "DO NOT SIMPLY RE-AIM THE EXISTING LEADER: from its present position the line would cross the right atrium, the tricuspid valve, the right ventricle and the LVOT leaders. Re-site the label block to the upper left or upper centre and run a short leader. Two consequences to decide at the same time: (1) the vessel at (365,1010) is then unlabelled — it is the IVC and the page already labels the SVC, so labelling it completes the pair and costs one line (recommended); (2) if the block cannot move, drop the leader and caption the trunk on-figure. Why the artist's arrangement made this easy to get wrong: SVC, IVC and pulmonary trunk are all rendered in the same blue, and two of the three are vertical tubes at the edge of the figure."
+    },
+    {
+      "key": "cardiomyopathy-p1", "title": "Cardiomyopathy — page 1",
+      "panel": "One heart split into three phenotype slabs",
+      "status": "Three of four callouts point at the wrong phenotype.",
+      "lead": "The figure is one heart split by two vertical dividers into three slabs captioned DILATED | HYPERTROPHIC | RESTRICTIVE. Measured from the caption text itself: DILATED spans x 203–291, HYPERTROPHIC 408–569, RESTRICTIVE 659–795, putting the dividers at x ≈ 370 and x ≈ 606. A callout in the wrong slab does not merely mislabel a structure — it teaches the wrong phenotype.",
+      "findings": [
+        {"n":1,"label":"DILATED","now":[673,520],"target":[330,880],"now_desc":"the RESTRICTIVE slab — and on a great vein, not a ventricular wall","target_desc":"the thin wall of the dilated chamber, inside the left slab"},
+        {"n":2,"label":"HYPERTROPHIC","now":[696,707],"target":[530,830],"now_desc":"the RESTRICTIVE slab — on an atrial-appendage bulge","target_desc":"the solid thickened myocardium in the middle slab"},
+        {"n":3,"label":"RESTRICTIVE","now":[738,831],"target":null,"now_desc":"the RESTRICTIVE slab — CORRECT","target_desc":"stays"},
+        {"n":4,"label":"ARRHYTHMOGENIC","now":[706,1047],"target":null,"now_desc":"the RESTRICTIVE slab — and NO ARRHYTHMOGENIC SLAB IS DRAWN AT ALL","target_desc":"cannot be fixed by moving a leader: add a fourth slab, or drop the callout and carry ACM on its own panel"}
+      ],
+      "note": "As shipped, three of the four callouts point into the restrictive third of the figure. Re-ordering the label column is not required — with the endpoints above the four leaders fan without crossing (checked at every intersection). ACM is classically RIGHT-ventricular while the current leader points at the LV free wall, so a fourth slab would need to show the RV. A TRAP WORTH PASSING ON: there is a strong pale vertical line at x = 469 that reads like a divider and is not one — it sits inside the HYPERTROPHIC caption's own span, so it cannot be a slab edge."
+    },
+    {
+      "key": "pericarditis-p4", "title": "Pericarditis — page 4",
+      "panel": "ECG strip",
+      "status": "Needs the strip REDRAWN, not re-arrowed.",
+      "lead": "Two of the five arrows name a finding the tracing does not contain, so there is no endpoint to move them to.",
+      "findings": [
+        {"n":1,"label":"green arrow 1","now":[216,1222],"target":null,"now_desc":"~73 px after R — the T-wave / ST-T peak; points PAST the ST segment","target_desc":"the ST segment — but see the note"},
+        {"n":2,"label":"green arrow 2","now":[410,1231],"target":null,"now_desc":"~44 px after R — on the ST segment","target_desc":"acceptable as drawn"},
+        {"n":3,"label":"green arrow 3","now":[578,1210],"target":null,"now_desc":"12 px BEFORE the R peak — on the QRS upstroke","target_desc":"the ST segment"}
+      ],
+      "note": "The deeper problem is that the tracing does not contain the finding the arrows name — PR depression is not present in the drawn complexes. Moving the arrows cannot create it. The strip has to be redrawn with the abnormality actually present."
+    }
+  ]
+}
