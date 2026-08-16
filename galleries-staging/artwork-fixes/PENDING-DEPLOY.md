@@ -1713,3 +1713,52 @@ pituitary drawn** under the hypothalamus; the leader ended on empty background. 
 
 seizure 541,074 B against 541,392 · stroke 465,009 against 464,778 · schizophrenia 474,491 against
 473,379. **`RC_PDF_Q` is 81 for all three.**
+
+---
+
+## `tb` p2, `suicide` p2, `uti` p2 — corrected in Photoshop by Dr. Kreithen, shipped together 2026-08-16 (v115)
+
+Twentieth, twenty-first and twenty-second physician-corrected pages. Deployed on the physician's
+instruction after a confirmation pass.
+
+### `suicide` p2 — all five rows, and two decisive old-endpoint samples
+
+| row | label | was | target | target sampled |
+|---|---|---|---|---|
+| 1 | **Hippocampus** | (359,578) — sampled **(205,143,218)**, the bright violet **raphe sphere** | (305,580) | (118,55,64) plum medial-temporal band |
+| 2 | DLPFC | (402,472) posterior cingulate node | (240,435) / (215,470) | — |
+| 3 | OFC | (200,507) mid medial-frontal | (210,545) | (40,65,150) blue orbital surface |
+| 4 | ACC | (339,455) mid-cingulate | (262,470) | (96,186,141) green rostral limb |
+| 5 | **Amygdala** | (245,571), background | (305,556) | (188,85,39) orange sphere |
+
+**Both flagged old endpoints measure cleared** — (359,578) went (205,143,218) → (59,26,85), and
+(245,571) went (244,126,28) → (81,19,24). Erase-and-redraw, not extension.
+
+Row 1 is the notable one: the **Hippocampus** label was on the **raphe nuclei sphere**, and `Raphe
+Nuclei (Brainstem)` at (390,592) was correct as drawn — so the page had one label on another
+label's structure while that other label was right. 3,442 real pixels in four regions.
+
+### `uti` p2 — four of five rows
+
+| row | label | was | target | target sampled |
+|---|---|---|---|---|
+| 1 | ③ Renal vein | (413,413) **the renal artery** | (430,426) | (31,74,139) blue vein |
+| 3 | Renal pelvis | (844,347) a pyramid | (793,350) | (182,112,59) tan funnel |
+| 4 | Major calyx | (842,390) a pyramid | (803,372) | (215,138,75) tan branch |
+| 5 | Minor calyx | (830,417) a pyramid base | (816,378) | (219,163,105) tan cup |
+
+Rows 3–5 were **three labels stacked on the medullary pyramids** while the tan collecting system sat
+40–50 px medial and unlabelled — the same shape as `nephrolithiasis` p2's vessels.
+
+**Row 2, ⑧ Ureterovesical junction — correctly untouched**, measured (106,48,56) → (107,48,56).
+It needs the **oblique intramural segment drawn**, which the page's own UVJ inset teaches but the
+main figure does not show. Artwork, not a leader move.
+
+This gallery already ships **4:4:4**, so the raw diff was only 1,848 px — no chroma confound.
+
+### `tb` p2 — one row, 197 pixels
+
+Row 2, **Alveolar macrophage**, (403,674) a pink alveolus → the purple macrophage at (368,678),
+sampled (61,42,86). Rows 1 and 3 untouched; row 3 was already marked "verify at 1024×1536" and this
+page is **800×1200 at the repo root**, like `hypothyroid` and `pneumothorax`. **`RC_PDF_Q` 72**,
+547 px embed. 289,864 B against 331,104 — the usual 12% drop from 4:4:4 → 4:2:0 on a sub-standard page.
