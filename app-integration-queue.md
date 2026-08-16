@@ -1560,3 +1560,36 @@ this particular check still ran under the old default. It protects every future 
   briefly suspected of being a re-send of it for the same reason.
 - **Hip Fracture gets its own gallery**, separate from Fractures (physician's call). Both MSK builds
   are rehearsed and blocked only on the twenty JPGs — see `galleries-staging/MSK-BUILD-READY.md`.
+
+## v117 — the Cardiac Arrest recording replaced (2026-08-16)
+
+The physician supplied a new narration for `cardiac-arrest`. Shipped as
+`assets/audio/cardiac-arrest-3.mp3` — **4,824,850 bytes, 5:00 (300.512653s), 11,504 frames @
+44100 Hz, CBR 128 kbps** — replacing `cardiac-arrest-2.mp3` (6:40, 6,415,640 bytes).
+
+**A new filename, not a new body at the old path.** `_headers` serves `/assets/audio/*` as
+`public, max-age=31536000, immutable`, so a device that has already fetched the old file would keep
+it until 2027. Both `cardiac-arrest.mp3` and `cardiac-arrest-2.mp3` are now superseded and
+referenced by nothing; they stay on disk (three such orphans existed before this, now five).
+
+Built with `scripts/add_audio_recording.js <root> cardiac-arrest "Cardiac Arrest (ACLS)" <file>
+--replace` rather than by hand — **`src` and `duration` move together**, and the duration draws the
+scrubber and the CarPlay progress bar, so a src-only swap leaves the entry advertising the other
+recording's length.
+
+Verified before pushing: `verify_sw.js` all checks pass; `verify_condition_audio.js` (with `IDS`
+given explicitly — an empty `IDS` reports "all **0** bars match", which is not a pass) shows
+`cardiac-arrest 5:00`, `chf 6:06`, `acs 4:45`, `htn 3:58` all matching what `RC_AUDIO` declares,
+zero page errors; and the browser's own decoded `loadedmetadata` duration is **300.512625s**, 28 µs
+from the declared value. After pushing, out of `git show origin/main:` — version.txt, the `sw.js`
+`CACHE`, the `RC_AUDIO` entry, and the MP3 itself at 4,824,850 bytes / md5
+`77e09727c6c7cb12a08e379c3a22885e`, identical to the local file.
+
+**Two things the session cannot verify, stated rather than glossed:**
+
+- **The recording is 100 seconds shorter than the one it replaces** (5:00 vs 6:40). That may be
+  intended — it is not something a check can decide.
+- **A recording cannot be identified from the file.** ElevenLabs exports carry no title tag (only
+  `TSSE: Lavf…`) and audio cannot be listened to from a session, so the file's identity as the
+  Cardiac Arrest narration rests entirely on the physician's word. This is the exact situation that
+  produced the 2026-08-03 hyperlipidemia/cardiac-arrest mis-mapping.
