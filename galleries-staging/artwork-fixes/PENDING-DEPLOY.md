@@ -1762,3 +1762,53 @@ Row 2, **Alveolar macrophage**, (403,674) a pink alveolus → the purple macroph
 sampled (61,42,86). Rows 1 and 3 untouched; row 3 was already marked "verify at 1024×1536" and this
 page is **800×1200 at the repo root**, like `hypothyroid` and `pneumothorax`. **`RC_PDF_Q` 72**,
 547 px embed. 289,864 B against 331,104 — the usual 12% drop from 4:4:4 → 4:2:0 on a sub-standard page.
+
+---
+
+## `icp` p2 — corrected in Photoshop by Dr. Kreithen, integrated 2026-08-16 (v116) — LAST PAGE OF THE BATCH
+
+Twenty-third and final physician-corrected page of this run, and the one this project spent longest
+on. **11,770 real pixels (luma>25) in seven regions.**
+
+### The late finding is fixed — the one the sheets originally missed
+
+The three leaders that terminated on **cervical vertebral bodies** — the displaced series found only
+when Dr. Kreithen asked why these panels had not been flagged — are corrected:
+
+| terminator | old ink | new ink |
+|---|---|---|
+| (323,650) | 10 | **0** |
+| (321,679) | 16 | **0** |
+| (325,683) | 16 | **0** |
+
+The leaders now extend past the vertebrae onto the pale neural column at **x 350–385**. That is the
+fault-2 displaced series (Cerebellum / Medulla oblongata / Foramen magnum) that neither the work
+order nor the first version of this sheet contained.
+
+### Monro–Kellie — one of the two fixed, and the pattern repeats a third time
+
+| label | was | now |
+|---|---|---|
+| **BRAIN ~80%** | (783,369), inside the **blue CSF band** | **(743,392)**, sampled **(187,125,116)** — pink parenchyma ✓ |
+| **CSF ~10%** | (770,468), pink parenchyma | **(765,467)**, sampled **(191,119,106)** — **still pink** |
+
+The blue band at y = 468 begins at **x = 790**, so CSF is **25 px short**. With BRAIN now correct,
+**both labels point at brain tissue and the blue band carries nothing.**
+
+**Third instance of this exact failure**, after `ckd` p2 (Bowman's / Glomerulus) and `hypothyroid` p2
+(Parafollicular / Capillary). **State it on every future sheet that reports a mutual swap: fixing one
+leader without moving the other converts a swap into a duplicate, which is not obviously better.**
+The fix here is one drag — CSF tip from x 765 to about x 800.
+
+### Correctly untouched — both are re-render items already on the sheet
+
+- The mid-sagittal column still reads **Skull above Scalp**; the page's own MENINGES panel numbers
+  them ① Scalp ② Skull.
+- The sinus panel still carries **Cavernous sinus**, which is not in that drainage chain.
+
+Both are label-list changes (§6 of `PRODUCTION-icp-p2.md`), not Photoshop work.
+
+### Integration
+
+515,598 B against the shipped 517,219 B. **`RC_PDF_Q` for `icp` is 81** (target 1,214,396;
+q81 → 1,231,181).
