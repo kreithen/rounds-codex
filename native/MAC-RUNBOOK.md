@@ -25,7 +25,7 @@ real documentation rather than trust this file.
 
 - Xcode, current release. `xcode-select -p` should print a path.
 - Node 18+.
-- Apple Developer Program membership active under **Rounds Codex, Inc.**
+- Apple Developer Program membership active. ⚠ It is enrolled as **Individual**, not Organization — see step 1 and `app-store-checklist.md` §7.
 - Both repos cloned. The build repo is `kreithen/rounds-codex`, branch `claude/native-ios-app`.
 
 ```sh
@@ -41,14 +41,13 @@ Team **`744JSM2Z3H`**, bundle **`com.roundscodex.app`**. The live Universal Link
 
 Those two strings are what step 4 needs for Associated Domains and signing.
 
-**⚠ One thing to settle before submission.** The Apple Developer app shows the membership under a
-personal name with "1 year membership", which is what an **Individual** enrollment looks like —
-while `app-store-checklist.md` records it as **Organization — Rounds Codex, Inc.** The App Store
-shows the seller name to buyers, and the checklist wants it matching the `© 2026 Rounds Codex, Inc.`
-on all 1,020 illustration pages and the trademark applicant. Check **Entity Type** at
-developer.apple.com/account → Membership details. Switching Individual → Organization is a support
-request to Apple needing a D-U-N-S number, not a setting, so it is worth knowing early rather than
-at submission.
+**⚠ CONFIRMED 2026-08-17: the account is enrolled as Individual, not Organization.** The checklist
+had recorded Organization since 2026-08-14 and it was never verified. It does not block submission,
+but the seller name buyers see will be the individual's legal name rather than Rounds Codex, Inc. —
+which is not what the `© 2026 Rounds Codex, Inc.` on 1,020 illustration pages, the in-app footer and
+the App Store Copyright field say. Full detail and the switching process: `app-store-checklist.md` §7.
+The lead time is the risk, not the work — file the request early even if you decide later not to
+wait for it.
 
 ## 2. Build the web payload
 
@@ -101,7 +100,7 @@ didn't load" with no page error. This is the single most likely "the app is blan
 In the `App` target:
 
 1. **General → Supported Destinations** — keep iPhone **and** iPad.
-2. **Signing & Capabilities** — team **Rounds Codex, Inc.**, automatic signing.
+2. **Signing & Capabilities** — team `744JSM2Z3H`, automatic signing. (The team displays under the individual's name, not Rounds Codex, Inc. — see step 1.)
 3. **+ Capability → Associated Domains**, add `applinks:roundscodex.com`.
 4. **+ Capability → Background Assets.** ⚠ I could not verify whether Apple-hosted packs also
    require a separate **downloader extension target**; developer-forum threads describe an app group

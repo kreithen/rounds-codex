@@ -71,7 +71,7 @@ answer and it is real.
 
 | decision | date |
 |---|---|
-| Apple Developer Program: **Organization — Rounds Codex, Inc.** Enrolled. | 2026-08-14 |
+| ~~Apple Developer Program: **Organization — Rounds Codex, Inc.**~~ — **WRONG: the account is enrolled as INDIVIDUAL**, confirmed on the account 2026-08-17. Team `744JSM2Z3H`. Does not block submission; it changes the seller name buyers see. `app-store-checklist.md` §7. | corrected 2026-08-17 |
 | **No login wall on iOS.** The wall stays on the web. | 2026-08-14 |
 | v1 is **free**, no paywall. Independent medical review gates the *paid* launch, not this one. | 2026-08-04 |
 | Later: **$5/month for everyone**, one price, no student tier. | 2026-08-04 |

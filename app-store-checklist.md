@@ -17,7 +17,7 @@ every one of which is now stale.
 
 | | decision | date |
 |---|---|---|
-| Apple Developer Program | **Organization — Rounds Codex, Inc.** Enrolled. Seller name matches the `© 2026 Rounds Codex, Inc.` line on all 1,020 illustration pages and the trademark applicant. | 2026-08-14 |
+| Apple Developer Program | ⚠ **ENROLLED AS INDIVIDUAL, not Organization — confirmed on the account 2026-08-17.** This row previously recorded "Organization — Rounds Codex, Inc." and the reasoning built on it was wrong. Team `744JSM2Z3H`. **The seller name buyers see will be the individual's legal name, not Rounds Codex, Inc.** — which does *not* match the `© 2026 Rounds Codex, Inc.` on all 1,020 illustration pages, the in-app footer, or the trademark applicant. See §7. | corrected 2026-08-17 |
 | **Login wall on iOS** | **NO.** The wall stays on the **web** only. | 2026-08-14 |
 | v1 price | **Free**, no paywall | 2026-08-04 |
 | Later | **$5/month for everyone**, one price, no student tier | 2026-08-04 |
@@ -276,3 +276,40 @@ no reason to take both at once.
 | `app-store-submission-draft.md` | The **field-by-field submission text** — name, subtitle, keywords, description, review notes, screenshot list. Still the drafting source; fix the counts and the attribution on the way out. The App Review notes answering **Guideline 1.4.1 on the dosage calculator** are good as written and should go in verbatim. |
 | `store-strategy.md` | What needs Apple's review after the first release and what does not; the bundle-**and**-fetch architecture; **Android**, which appears nowhere else. |
 | `LAUNCH-AUG17.md` | The web launch. A different project. |
+
+
+---
+
+## 7. The enrollment is Individual, and that was assumed to be Organization
+
+**Found 2026-08-17 by looking at the account**, after a screenshot showed the membership under a
+personal name with "1 year membership". The checklist had recorded Organization since 2026-08-14 and
+nothing had ever verified it.
+
+**It does not block submission.** An Individual account can ship this app. What it changes is what
+the App Store shows the world:
+
+| | Individual (today) | Organization |
+|---|---|---|
+| Seller name on the product page | the individual's legal name | **Rounds Codex, Inc.** |
+| Matches the © line on 1,020 pages | no | yes |
+| Matches the trademark applicant | no | yes |
+| Matches the in-app footer (v127) | no | yes |
+
+The mismatch is worth taking seriously for a *medical* app: every illustration page, the in-app
+footer and the App Store Copyright field all say `© 2026 Rounds Codex, Inc.`, while the seller would
+be a private individual. That invites a Guideline 5.2 rights question — normally answerable, since
+the same person owns the company, but it is a question that need not be asked at all.
+
+**Switching is not a setting.** Apple Developer Program Support → contact form → topic *Account
+Updates and Renewals*, supplying CEO/Director name, the company name including "Inc.", a
+**D-U-N-S number**, the legal address and a phone number. The entity must be a real legal entity;
+Rounds Codex, Inc. qualifies. A D-U-N-S number is free from Dun & Bradstreet and Apple has a lookup
+tool — the company may already have one.
+
+**Lead time is the risk, not the effort.** Developer-forum threads describe conversions still
+incomplete after 17 days. Starting it is a half-hour of forms; waiting on it could be weeks.
+
+**The recommendation is to start the switch now and decide later**, because the request costs almost
+nothing to file and the clock is the only part that cannot be compressed. Whether to *hold* the
+submission for it is a separate call at submission time, and reversible in a way the lead time is not.
