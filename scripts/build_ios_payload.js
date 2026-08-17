@@ -2,7 +2,7 @@
 /* Assemble the exact www/ directory the native app ships, and nothing else.
  *
  * One command between a clone of the web app and the tree Capacitor copies into the bundle. It
- * runs the four patchers in order, drops every file the app cannot reach, and checks the result is
+ * runs the five patchers in order, drops every file the app cannot reach, and checks the result is
  * the size it should be.
  *
  * v1 BUNDLES EVERYTHING -- ~826 MB, all the artwork and audio in the app, offline from install.
@@ -16,6 +16,8 @@
  *   build_ios_variant  the wall, the account surfaces and Ask come out; anchors on the shipped
  *                      privacy wording, so it must run AFTER any RC_LEGAL change and will abort
  *                      loudly rather than half-apply if one landed that it does not know about
+ *   add_safe_area      full-screen top/bottom insets. LAST, because it appends a stylesheet to the
+ *                      head and every anchor above reads the head
  *
  * WHY THE DROPPING IS DERIVED, NOT GLOBBED. What stays is what measure_bundle.js resolves as
  * reachable -- not a pattern. This tree keeps gallery pages in at least four different shapes:
@@ -75,6 +77,7 @@ run('stamp_version.js', LABEL ? [OUT, '--set', LABEL, '--apply'] : [OUT, '--sync
 run('fix_root_authority.js', [OUT]);
 run('add_media_root.js', [OUT, '--apply']);
 run('build_ios_variant.js', [OUT, '--apply']);
+run('add_safe_area.js', [OUT]);
 
 /* ---- 3. asset packs: OFF by default ------------------------------------------------------------
  * The physician's call, 2026-08-17: v1 bundles all the artwork and audio in the app. ~830 MB, well
