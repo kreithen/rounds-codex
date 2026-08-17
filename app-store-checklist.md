@@ -53,6 +53,58 @@ This is the part no existing document covers, and three of the four are content,
 reverse: one script that strips the wall and swaps those three blocks, asserted, with the result
 verified headless before archiving. It is not a fork of the codebase and must not become one.
 
+**BUILT 2026-08-17: `scripts/build_ios_variant.js`, guarded by `scripts/verify_ios_variant.js`.**
+Seven surgeries; run it against a *copy* of the shipped tree on the way to the archive and never
+commit its output back. It refuses to run twice. The verifier is 19 checks in a real browser and
+**fails 11 of them against the unmodified web build**, so it is a guard and not decoration — it
+deliberately does *not* seed a session (every other suite in this repo does, and seeding makes the
+wall call `pass()` and vanish, so a build with the wall still in would pass) and it hit-tests the
+viewport centre, because a `querySelector` returning null does not prove a fixed overlay is not
+eating every tap. It also asserts the mirror image: `#rc-gate` must still gate first run, `/c/dvt`
+must still open, and `DATA.length` must be 183 — a blank app satisfies every absence check on its
+own. `audit_app_e2e.js` is clean on the variant across all 183 conditions in three modes, 183
+quizzes and 102 galleries.
+
+One thing it removed that the first plan kept: `RC_SB_URL`, `rcDelMsg`, `rcDeleteAccount`,
+`rcAccountEmail` and `rcSignOut` lose their only call site with 1.1, and the precedent here
+(`rcShareGallery`, kept after v74 took its button) says to leave an unreachable function alone. The
+`no invitation copy left` assertion changed the answer — those functions carry user-facing prose
+about needing a new invitation, and shipping that string inside a binary whose privacy label says
+there is no account is a contradiction only someone else would ever find. `accountReset()` is
+explicitly **not** in the removed region; "Clear my saved data" is the one control on that page that
+still does something, and the rewritten privacy text points the reader at it by name.
+
+### 1.5 — Ask Rounds Codex degrades to a five-entry stub in a native bundle
+
+**Found 2026-08-17 while verifying the variant. Not fixed; it is not one of the four surfaces, and
+the fix is a product decision.**
+
+`asend()` POSTs to `/.netlify/functions/ask` — a real Claude-backed RAG endpoint — and on any
+failure falls back to `answer(q)`, a local keyword matcher over a **five-entry** `KB` array. In a
+Capacitor bundle the origin is local, so that path 404s on every question and the fallback is the
+only behaviour there is. Measured, not reasoned: served with no `ask` function, the four starter
+buttons answer convincingly (they are four of the five KB entries) and *every other question* —
+community-acquired pneumonia, hyponatremia workup, Ranson criteria — returns the same paragraph,
+"I'd ground this in the relevant Rounds Codex condition entry…", under a source chip reading
+**Rounds Codex → Rounds Codex Library**.
+
+That is the gallery-PDF-stub shape again, and worse in one respect: the deflection *reads* like an
+answer and carries a citation, so it does not look broken. The page header claims "Cited answers
+grounded in the 183-condition library" and the greeting promises "Every answer cites its reference
+source". A reviewer who types one question that is not a starter meets it immediately.
+
+Three ways out, and it is the physician's call: let the app call the live endpoint over the network
+(honest, but then the feature needs a connection and **"Data Not Collected" has to account for the
+question text leaving the device** — see below); ship a real on-device retriever over
+`content/conditions.json`, which is already bundled; or remove the Ask entry point from the iOS
+variant, which is a one-line addition to `build_ios_variant.js`. Doing nothing is the one option
+that is not available.
+
+**This also settles the privacy-label question in the opposite direction to the obvious one.** The
+in-app privacy text discloses that Ask sends your question to us. If iOS never reaches the endpoint,
+that disclosure is *false on iOS* and "Data Not Collected" is safe; if iOS does reach it, the
+disclosure is right and the label is not. The two have to be decided together.
+
 **The fix for 1.4 is a decision, and the better answer is one policy that covers both platforms**
 rather than two policies: a short paragraph saying the website requires an invitation and stores
 your email address, and the iOS app has no account and stores nothing. One document, honest about
@@ -72,7 +124,14 @@ avoid.
       is the address; the page is not built.
 - [ ] **Remove `robots.txt` and the `X-Robots-Tag` block in `_headers`** — otherwise the privacy
       policy is a page you have told search engines to ignore. Already on the 17 Aug web list.
-- [ ] **The no-wall iOS variant** — §1 above.
+- [x] **The no-wall iOS variant** — §1.1–1.3 above. `scripts/build_ios_variant.js`, verified.
+- [ ] **The platform paragraph on the public `/privacy/` page** — §1.4. Deliberately still open:
+      the public pages describe the web product, which is accurate while no iOS app exists. Add it
+      to `RC_LEGAL` in the web `index.html` and re-run `scripts/build_legal_pages.js --apply`
+      *before submission*, since Apple links that URL. Note that `build_ios_variant.js` anchors on
+      the current privacy wording and will **abort loudly** rather than half-apply once that
+      paragraph lands — update the two together.
+- [ ] **Ask Rounds Codex in the native bundle** — §1.5. Blocks the privacy label as well.
 - [ ] **Screenshots** — 6.9" iPhone required, 13" iPad strongly recommended, at least 6 each. The
       eight shots and their captions are drafted in `app-store-submission-draft.md` §Screenshots and
       that part is still good. **Needs a Mac; cannot be produced from a session.**
@@ -80,7 +139,8 @@ avoid.
       the tiers in 2025, so read the current questionnaire rather than a remembered band.
 - [ ] **Export compliance** — HTTPS only, so the standard exemption applies, but the question must
       still be answered.
-- [ ] **Privacy nutrition label: "Data Not Collected"** — correct once §1 lands, and only then.
+- [ ] **Privacy nutrition label: "Data Not Collected"** — §1.1–1.3 were necessary and are **not
+      sufficient**. Ask Rounds Codex is the remaining question; see §1.5.
 
 ## 3. Copy — everything drafted is stale in two ways
 
