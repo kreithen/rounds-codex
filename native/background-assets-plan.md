@@ -102,11 +102,31 @@ Proposed: **`RC_MEDIA_ROOT`**, read once at boot, with three states:
 State 3 is what makes the app usable in the first minutes after install, and it is also the answer
 for any device that cannot get packs at all (see §6).
 
-This is a session-side change and it is verifiable here: a guard can assert the web build resolves
-byte-identically with `RC_MEDIA_ROOT` unset, that a set value redirects gallery media and nothing
-else, and that an unreachable pack falls back rather than rendering a broken image. **Not built
-yet** — it is the next step and wants doing before any Xcode work, because it is the piece that
-decides whether the native side is easy or awful.
+**BUILT 2026-08-17.** `scripts/add_media_root.js`, guarded by `scripts/verify_media_root.js`
+(12 checks; **6 fail against an unpatched build**). Routed: gallery page images, the gallery PDF
+(all its entry points) and the audio element's `src`. Not routed: thumbnails, deliberately —
+`gframe()` draws both from one ternary, so that split is the specific thing a careless edit breaks.
+
+The web build is proved unchanged by **side-by-side**, not by reading the diff: both builds are
+served at once, driven through the same script, and every constructed media URL compared exactly —
+gallery pages across six galleries covering both `base` conventions, the galleries-index thumbnails,
+the PDF anchor's `href`, and the audio `src` after a real tap. `audit_app_e2e.js` is clean on the
+patched build.
+
+The fallback is stage 2 of `gimgerr()`, which already existed as a one-shot retry; stage 1 is
+untouched and is still the only stage reachable on the web.
+
+**One requirement for the native shell:** `RC_MEDIA_ROOT` is read when the app's script parses, so
+the shell must set `window.RC_MEDIA_ROOT` **before** `index.html` runs — an injected script, not a
+post-load assignment.
+
+**Order matters for the iOS build**, and the three patchers compose (verified end to end):
+
+```
+node scripts/stamp_version.js     <copy> --set v<n>-<label> --apply
+node scripts/add_media_root.js    <copy> --apply
+node scripts/build_ios_variant.js <copy> --apply
+```
 
 ## 5. What needs the Mac, and what is still unknown
 
