@@ -102,3 +102,50 @@ reviewed and accepted.
 approximations, not anatomical pointers, and the physician has now accepted that convention twice.
 A future sweep that flags a circuit node for landing off its structure should check this decision
 before writing it up as a defect.
+
+---
+
+# PROJECT CLOSED — 2026-08-17
+
+The mislabelled-anatomy correction project is finished. Live at **v124**
+(`2026-08-16T23:45:00Z  v124-FINAL-22-PAGES`).
+
+## What shipped
+
+| | |
+|---|---|
+| pages examined | 119 |
+| pages found defective | 81 |
+| individual findings | 553 |
+| **pages corrected and live** | **72+**, across v92–v124 |
+| deploys | 33 (v92 → v124) |
+
+## What is deliberately not done, and where each is recorded
+
+Three buckets, all closed by the physician rather than left dangling. Each has its own CLOSED
+section giving the reasoning, so none of them should be re-raised as a new finding:
+
+1. **Four production items** — `PRODUCTION-residual-after-rerender.md`. Accepted as drawn.
+   Three need artwork or type, not a leader move; the fourth is a routing complaint against a
+   correct endpoint.
+2. **~15 `[CHECK]` rows on seven pages** — `UNSHEETED-PAGES-progress.md`. Accepted **unmeasured**.
+   Stated plainly there, because unmeasured is not the same as clean.
+3. **Two physician questions** — the CLOSED section above. `gdm` p2 umbilical vessel colours and
+   `bipolar` p2 ⑥ HIPPOCAMPUS, both accepted as schematic liberties.
+
+## The three method results worth carrying forward
+
+Recorded because each cost real time and each would otherwise be re-derived:
+
+- **The terminator detector does not work.** Four approaches, best scored **2 of 9** against
+  hand-measured ground truth. The table is in `UNSHEETED-PAGES-progress.md`. Do not rebuild it.
+- **The work order's findings are reliable; its distances are not.** Rows described as ~250 px
+  measured 57; ~160 px measured 35. Trust *what* it flags, re-measure *where*.
+- **What works is crop at 4–13× with a coordinate grid, read by eye, then confirm the tissue
+  under the terminator by sampling RGB with the leader's own ink excluded.** Every measured
+  finding in this project came from that. The ink count at a stated point is a good cheap
+  *verifier* — it just cannot *find* a coordinate.
+
+And one that is about process rather than pixels: **two pages came back from Photoshop with a
+label's TEXT destroyed rather than its leader moved** and were caught before shipping. When a
+leader starts inside a text column, check the type after the erase.

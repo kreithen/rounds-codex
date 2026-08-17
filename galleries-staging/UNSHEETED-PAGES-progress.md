@@ -130,3 +130,35 @@ excluded. Every measured finding in this project came from that, and the ink-cou
 rows, and all 26 are now measured, corrected and shipped. The remaining **153 rows across 25 pages
 have to be read by hand**, roughly six per page. That is the honest cost, and it is why these are
 being delivered in tranches rather than as one document.
+
+---
+
+## CLOSED 2026-08-17 — the ~15 open `[CHECK]` rows are accepted unmeasured
+
+Dr. Kreithen's call, in his words: *"let's just be okay with the ~15 [CHECK] rows on seven
+pages (addisons p2, aortic-dissection p1, bowel-obstruction p2, htn p2, pancreatitis p2,
+pericarditis p1, pud p2) and move on."*
+
+**These rows were never measured.** Two agents were sent at them and both died on a session
+limit; nothing was read at magnification and no endpoint was sampled. That is the honest state,
+and it is written here rather than in a summary so a later reader cannot mistake the pages for
+swept.
+
+What is known about them, which is why accepting them is reasonable rather than merely expedient:
+
+- **They are `[CHECK]` rows, not `to move` rows.** The work order's authors were instructed to
+  write `[CHECK]` when they were unsure rather than guess. Across every `[CHECK]` row this
+  project *did* measure, a substantial share came back **CONFIRMED CORRECT** — `bronchiolitis`
+  p7 row 2 is the one with a sheet, and `anxiety` p2 and `bipolar` p2 both ended as accepted
+  schematic liberties.
+- **Every `to move` row on all seven pages is already fixed and live** (v92–v97). What is open
+  is the residue the fix commits did not name.
+- **The order's findings have been reliable where checked; its distances have not.** On
+  `hepatitis` p2 all thirteen coordinates came out within 2 px. So if these rows are real, they
+  are real — but they are also the rows their own authors were least sure of.
+
+**If they are ever reopened**, the resume material is intact: the parsed rows are in
+`/tmp/order_rows.json`'s committed equivalent and the seven pages are named above. Read
+Correction 1 first — check `git log --oneline -- <page path>` in the app repo before measuring,
+because all seven have been corrected once already and a cold read will mistake our own fix for
+a work-order false positive. That is exactly what happened on `addisons` p1.

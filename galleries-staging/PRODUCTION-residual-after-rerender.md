@@ -93,3 +93,25 @@ to the PCA.** Do not restore the middle communicating entry.
 
 **Raised at Dr. Kreithen's request, 2026-08-16.** Rows 1–4 are all on pages that are already live and
 already improved — none of this is a regression, and none of it blocks anything.
+
+---
+
+## CLOSED 2026-08-17 — all four accepted as drawn
+
+Dr. Kreithen's call. The three pages were re-sent unchanged (md5 `b8844295…`,
+`4d0b9f47…`, `ebd4d281…` — byte-identical to the files the site was already serving)
+with "good enough to deploy", alongside "move on". **No deploy was made, because there
+was nothing to deploy:** the accepted state is the state that has been live since v119–v120.
+
+For the record, so a later sweep does not re-open them as fresh defects:
+
+| # | page | accepted as | why it is defensible |
+|---|---|---|---|
+| 1 | `cardiomyopathy` p1 | `ARRHYTHMOGENIC` callout left pointing into the RESTRICTIVE slab | closing it properly means **new artwork** — a fourth slab cut to show the **RV** free wall, since ACM is right-ventricular and every existing slab shows the LV. Deleting the callout instead would remove a phenotype the page's own caption teaches |
+| 2 | `aortic-stenosis` p2 | inferior vena cava unlabelled at (365,1010) | the SVC above it is labelled, so the pair is half-drawn. Cosmetic asymmetry, not a mislabel — nothing on the page names the wrong structure |
+| 3 | `aortic-stenosis` p2 | `Pulmonary Trunk` leader crossing the RV, tricuspid chordae and LVOT | **the endpoint (644,512) is correct** — sampled (134,136,168) on the blue trunk. This was only ever a routing complaint |
+| 4 | `stroke` p2 | posterior communicating artery absent from the CIRCLE OF WILLIS panel | the panel's remaining labels (ICA / PCA / Basilar / Vertebral) are all correct, and the *fabricated* middle communicating artery is gone. An omission, not an error — and the KEY block at the foot of the page still defines **PCoA** |
+
+**The one worth revisiting first if any of these is ever reopened is #4**, because the PCoA is
+one of the two vessels that make the circle a circle, and restoring type is cheaper than
+drawing a slab. #1 is the one with the largest gap between effort and payoff.
