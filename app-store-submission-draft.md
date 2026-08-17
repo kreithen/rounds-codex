@@ -395,9 +395,10 @@ physician and the company's Founder and Clinical Lead. The company is physician-
 OWNERSHIP OF THE CONTENT
 This account is enrolled as an individual. The copyright notice in the app and on its
 illustrations reads "© 2026 Rounds Codex, Inc." because that company owns the content; the
-account holder is its owner and is authorised to publish this app on its behalf. All
-illustrations, condition text and questions are original works commissioned or created for
-Rounds Codex. No third-party copyrighted material is reproduced in the app.
+account holder is its owner and is authorised to publish this app on its behalf. The
+illustrations were produced for Rounds Codex using generative AI, from prompts written by our
+clinical lead, and every image was reviewed and approved by him before it was included. The
+app's About page discloses this. No third-party copyrighted material is reproduced in the app.
 
 EDUCATIONAL USE, NOT CLINICAL USE
 The app is a study aid and says so on first launch, before any content is reachable: the user
@@ -442,10 +443,28 @@ it costs nothing and answers the question before it is asked.
 and this answers it before it is asked — the same tactic as the calculator paragraph above. It costs
 four lines and removes the only real risk of shipping before the account converts.
 
-⚠ **Confirm the wording is factually right before pasting.** I do not know how Rounds Codex, Inc. is
-owned or who is authorised to bind it, and this paragraph asserts both. If the ownership is not
-sole, or the illustrations were licensed rather than commissioned, fix the sentence — an inaccurate
-statement to App Review is far worse than the question it was written to avoid.
+**Confirmed by the physician 2026-08-17**, with one correction. The original draft said the
+illustrations were "original works commissioned or created for Rounds Codex". They were not
+commissioned: **he wrote the prompts, generative AI produced the images, and he reviewed and
+verified each one.** The paragraph now says that.
+
+**Saying so is the safer choice, not the braver one.** The app's own About page already tells every
+reader "We prompted artificial intelligence to assist us with generative artwork" — so a reviewer
+can see it. Notes that implied hand-commissioned artwork while the app said otherwise would be the
+worst of both: the discrepancy is exactly what a reviewer looking for a reason would find, and
+Guideline 5.2.1 is about *whose* rights you are using, not about which tool made the file. AI images
+from your own prompts are nobody else's property, which is the question Apple is actually asking.
+
+It also pre-empts a different question. A medical app full of unattributed generated illustration
+invites "is this careless?" — "reviewed and approved by our clinical lead before inclusion" answers
+that in the same breath.
+
+⚠ **This has NO bearing on Apple and a large bearing on the copyright registration.** Prompts alone
+do not create authorship under US law, and reviewing an output is quality control rather than
+authorship. That is already the position `legal/README.md` takes for the gallery artwork
+("AI — exclude; claim selection, ordering, page titles, arrangement"), and the physician's account
+confirms rather than changes it. Do not let the App Review wording drift into the copyright filing:
+they answer different questions.
 
 Delete this paragraph once the account is an Organization: at that point the seller name and the
 copyright line agree and there is nothing to explain.

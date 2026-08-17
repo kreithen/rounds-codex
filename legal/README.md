@@ -121,7 +121,7 @@ form without him verifying every line. Where it is uncertain it says so.
 | component | count | provenance | likely claim |
 |---|---:|---|---|
 | Condition module text | 181 | **Physician-authored** (the quizzes were later generated *from* this text, which implies it pre-existed) — **verify** | human |
-| Gallery artwork | 950 pages | Produced by an external AI illustration pipeline | **AI — exclude**; claim selection, ordering, page titles, arrangement |
+| Gallery artwork | 1,020 pages | **CONFIRMED by the physician 2026-08-17**: he wrote the prompts, generative AI produced the images, he personally reviewed and verified each one. Not an external pipeline and not commissioned from an illustrator. | **AI — exclude**; claim selection, ordering, page titles, arrangement |
 | Gallery page titles + ordering | 950 | Read and assigned by hand from each page | human |
 | Condition quiz questions | 1,820 | **24 transcribed from the physician's own PDFs**; the remaining ~1,796 AI-drafted from the module text, then QA'd | mostly **AI — exclude**; claim the 24, plus edits and arrangement |
 | USMLE items | 1,010 | Authored with AI assistance — **verify the split** | mostly AI — verify |
@@ -134,6 +134,23 @@ form without him verifying every line. Where it is uncertain it says so.
 | Clinical calculators | 10 | Nine reproduce **published third-party clinical scores** (Wells, PERC, CHA₂DS₂-VASc…) — third-party material, exclude. The tenth is arithmetic | exclude the nine as third-party |
 | Code (`index.html`, `sw.js`, scripts) | — | Mixed human and AI | verify before a Circular 61 filing |
 | **The compilation itself** | — | The selection, coordination and arrangement of all of it | **human — this is the strongest claim** |
+
+**The physician's own account of the artwork, given 2026-08-17, is worth quoting exactly** because
+it is the first direct statement of provenance and it settles the largest line in this table:
+*"All the illustrations were created by me via prompts I wrote which then generative AI created and
+then I personally reviewed and verified."*
+
+That **confirms the draft rather than improving it.** Under the Copyright Office's Part 2 report
+(January 2025) and Thaler v. Perlmutter — cert denied 2026 — **prompts alone do not make you the
+author of the output**, however detailed, and reviewing a generated image is quality control rather
+than authorship. So the artwork still sits in the exclude column. What it does remove is a worse
+possibility: the pipeline was not external and the images were not licensed in, so there is no
+third-party claim on any of them. That matters for the App Store notes and for the deposit.
+
+Where the human authorship in the artwork actually lies, and what counsel should be asked about, is
+whether the *prompt-and-select-and-reject* loop over 1,020 pages amounts to controlling the
+expressive elements — the case-by-case question the Office says it decides individually, and the
+one the 6,000+ registered human-AI works turned on. That is a lawyer's call, not this file's.
 
 **The compilation is the point.** Even where the underlying material is AI-generated and must be
 excluded, the selection and arrangement into a teaching structure is human authorship and is
