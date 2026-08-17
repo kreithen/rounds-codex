@@ -13,8 +13,9 @@ Guideline **2.3.3**: every screenshot must be the real app. Device-frame them an
 
 ## Before you shoot
 
-1. Run the app on the simulator at **iPhone 16 Pro Max** (6.9") and **iPad Pro 13"**. Simulator
+1. Run the app on the simulator at **iPhone 17 Pro Max** (6.9") and **iPad Pro 13"**. Simulator
    screenshots are accepted and are far easier to get pixel-exact than a real device.
+   (Xcode 26.6 ships the iPhone **17** family, not the 16 — checked on the machine 2026-08-17.)
 2. **Dismiss the medical disclaimer first.** It is `#rc-gate` and it covers everything on a fresh
    install; a screenshot with it up is a screenshot of a disclaimer.
 3. **Download at least the `rc-cardiac` asset pack** before shooting anything with artwork in it, or

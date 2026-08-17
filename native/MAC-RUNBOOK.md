@@ -81,6 +81,19 @@ npx cap sync ios
 npx cap open ios
 ```
 
+**Run these one at a time, not as one pasted block.** `cap init` asks an interactive question
+("Create free Ionic account?") and it SWALLOWS whatever was pasted behind it — the config write,
+the rsync and `cap add ios` all vanished into that prompt on the first run. A pasted block also
+leaves its last line sitting un-executed on the prompt with no Return after it, which is how
+`npx cap sync ios` silently did not run and the app was tested twice against stale bytes.
+
+**Capacitor 7 uses Swift Package Manager, not CocoaPods** (verified 2026-08-17, Capacitor 7.4 /
+`capacitor-swift-pm` 8.5.0). Nothing to install; `cap add ios` writes `Package.swift` itself.
+
+**After ANY change to the payload the sequence is rsync → `npx cap sync ios` → ▶.** rsync alone
+updates `www/` and nothing else; `cap sync` is what copies `www/` into `ios/App/App/public`.
+Xcode will happily rebuild and relaunch the previous content.
+
 `capacitor.config.json` needs one addition — the app must be reachable over a real origin, because
 **`file://` does not work**: the content loader uses `fetch`, and off disk the app shows "Content
 didn't load" with no page error. This is the single most likely "the app is blank" cause.
@@ -94,6 +107,37 @@ didn't load" with no page error. This is the single most likely "the app is blan
   "ios": { "contentInset": "always" }
 }
 ```
+
+## 3b. Run it before configuring anything — CONFIRMED WORKING 2026-08-17
+
+Xcode 26.6 ships with **no simulator runtime**. The toolbar says `iOS 26.5 Not Installed`. The
+`Get` button works but shows no progress anywhere obvious; `xcodebuild -downloadPlatform iOS`
+does the same download with a percentage in the terminal. ~8 GB. `xcrun simctl runtime list`
+prints `(Ready)` when it lands.
+
+The device list is the **iPhone 17** family, not 16 — **iPhone 17 Pro Max** is the 6.9" device to
+use for the required screenshots.
+
+**One real bug was found the moment it ran, and it could only have been found here.**
+`RC_ROOT` is computed by stripping the last path segment off `location.href`. Every URL the
+website is served at has a path, so the strip is safe there. Capacitor's WKWebView loads the page
+at **`capacitor://localhost` with no trailing slash**, so the strip ate the HOST:
+
+    [location.href, location.origin, RC_ROOT, base.href]
+    ["capacitor://localhost", "capacitor://localhost", "capacitor://", "capacitor://"]
+
+`<base>` became `capacitor://`, every relative fetch resolved to `capacitor:///content/*.json`,
+and that is a **different origin** — WebKit blocked all eight content files as cross-origin and
+the app painted its shell over "Content didn't load". Fixed by `scripts/fix_root_authority.js`,
+now the second step of the payload chain, guarded by `scripts/verify_root_authority.js` (which
+fails on the pre-fix tree, printing the same `capacitor://`).
+
+Diagnosis route worth reusing: the loader writes the real reason into `#screen`, so **dismiss the
+disclaimer and read the page** before anything else — it said "Load failed", which is WebKit for
+*the request never completed*, not a 404. Then Safari → Settings → Advanced → "Show features for
+web developers" → **Develop → Simulator → <device> → App** gives a full Web Inspector on the
+WKWebView, which is where the three-slash URL was visible. That console is the tool for every
+WebKit question this project has been unable to answer from a container.
 
 ## 4. Xcode: targets, signing, capabilities
 
