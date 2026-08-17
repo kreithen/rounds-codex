@@ -217,10 +217,17 @@ build and the variant script rewrites the phrase. The web manifest keeps it and 
 
 ## 4. Build work
 
-- [ ] **The native shell.** No Xcode project, no Capacitor config, no Podfile exists anywhere in
-      either repo. Still the single largest item — but every step is now written down in order with
-      the commands: **`native/MAC-RUNBOOK.md`**. The web payload is one command
-      (`scripts/build_ios_payload.js`) and produces a verified **84.2 MB / 1,304 file** tree.
+- [ ] **The native shell.** In progress — **it runs.** On 2026-08-17 the Capacitor project was
+      created on the physician's Mac (Capacitor 7, **Swift Package Manager, no CocoaPods**) and the
+      app launched on the iOS 26.5 simulator: all 183 conditions, condition pages, a quiz, a
+      calculator, the About page, gallery thumbnails, no login wall and no Ask tab. Remaining:
+      signing, Associated Domains, icons, archive, upload.
+      **One bug was found the moment it ran and could only have been found there** — `RC_ROOT` is
+      derived by stripping the last path segment off `location.href`, and Capacitor loads the page
+      at `capacitor://localhost` with **no trailing slash**, so the strip ate the host and every
+      content file was blocked cross-origin. Fixed by `scripts/fix_root_authority.js`, guarded by
+      `scripts/verify_root_authority.js`, which fails on the pre-fix tree.
+      Every step is written down in order with the commands: **`native/MAC-RUNBOOK.md`**.
 - [ ] **Download size.** **The 250 MB target is struck, not renegotiated** (2026-08-17). Apple's
       documented maximum is **4 GB**; the 200 MB figure is the *cellular download* threshold and has
       been user-overridable since iOS 13. There is no size at which this app is rejected, and
@@ -228,12 +235,15 @@ build and the variant script rewrites the phrase. The web manifest keeps it and 
       artwork, still lands the bundle at 271 MB. Measured by resolving every path the app can
       request (`scripts/measure_bundle.js`): **826.1 MB referenced**, of which pages 426.5, audio
       160.0, PDFs 155.4, thumbnails 47.4, USMLE illustrations 24.2.
-      **The plan is Background Assets: an ~84 MB app plus 11 Apple-hosted packs of 741.9 MB, cut by
-      condition category.** Apple allows 200 packs and 200 GB, so nothing here is close to a limit.
-      Full design, the unverified parts, and the iOS 26+ decision: **`native/background-assets-plan.md`**.
-      Thumbnails stay in the app on purpose — they are the browse surface — and the gallery PDFs go
-      in the packs rather than staying remote, which is what keeps "downloadable PDF for each
-      gallery" and "works entirely offline" from contradicting each other.
+      **v1 BUNDLES ALL OF IT — the physician's call, 2026-08-17.** One binary, ~826 MB of payload,
+      every gallery page and every recording offline from the moment it installs, on every supported
+      iOS version rather than only 26+. Asset packs are **not** in v1: that decision deleted the
+      three pieces of the build that had never been verified — the `WKURLSchemeHandler` seam, the
+      downloader-extension question, and packs going through App Review separately from the binary.
+      The cost, accepted knowingly: an artwork change means a new binary and a new review.
+      The pack route is retained and current behind `build_ios_payload.js --asset-packs`, with the
+      design in **`native/background-assets-plan.md`** (now bannered as superseded for v1). Read it
+      when the bundle gets uncomfortable or content updates need to ship without a review.
 - [ ] **Guideline 4.2 "repackaged website" signals**, best value first: Core Spotlight indexing of
       the 183 conditions; **Universal Links — web side DONE** (`/.well-known/apple-app-site-association`
       live at v128, paths derived from the app's own `RC_ROOT` regex so a seventh route cannot
@@ -241,7 +251,9 @@ build and the variant script rewrites the phrase. The web manifest keeps it and 
       rebuild with `scripts/build_aasa.js --team <ID> --bundle <ID> --apply` once the Xcode project
       exists, because a wrong appID fails silently and iOS just opens the link in Safari); save
       gallery PDF to Files; local notifications for the review queue; haptics on quiz answers.
-- [ ] **Test the built package on a real device in Airplane Mode, cold.** Offline is the main claim.
+- [ ] **Test the built package on a real device in Airplane Mode, cold.** Offline is the main claim,
+      and with v1 bundled it is now an unqualified one — including full-size gallery pages, which
+      must render with no network at all.
 - [ ] **Restore Purchases** — required, but only when the paywall lands. Not for a free v1.
 
 ## 5. Already done — do not re-do these

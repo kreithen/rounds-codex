@@ -18,8 +18,8 @@ Guideline **2.3.3**: every screenshot must be the real app. Device-frame them an
    (Xcode 26.6 ships the iPhone **17** family, not the 16 — checked on the machine 2026-08-17.)
 2. **Dismiss the medical disclaimer first.** It is `#rc-gate` and it covers everything on a fresh
    install; a screenshot with it up is a screenshot of a disclaimer.
-3. **Download at least the `rc-cardiac` asset pack** before shooting anything with artwork in it, or
-   the galleries will be streaming and may show a loading state.
+3. Nothing to pre-download — v1 bundles all the artwork, so every gallery page is available
+   immediately and offline.
 4. Set the status bar clean — full signal, full battery, a sensible time. `xcrun simctl status_bar
    <device> override --time "9:41" --batteryState charged --batteryLevel 100 --cellularBars 4`
 5. **Shoot 3 and 7 in landscape on iPad.** The artwork is 2:3 portrait and the calculators are dense;

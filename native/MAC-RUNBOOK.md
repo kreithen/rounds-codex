@@ -61,8 +61,8 @@ node scripts/build_ios_payload.js ../rounds-codex-app /tmp/rc-payload --version 
 node scripts/verify_ios_variant.js /tmp/rc-payload      # expect: all 28 checks pass
 ```
 
-Expect **≈84 MB, ~1,300 files**. The script warns if it is far off, which means the pack plan and
-the tree have diverged — regenerate with `scripts/plan_asset_packs.js --manifest native/asset-packs.json`.
+Expect **≈826 MB** — v1 bundles all the artwork and audio (see steps 5 & 6). The script warns if
+the total is far off, which means the resolved file set and the tree have diverged.
 
 `verify_ios_variant.js` needs `RC_PW=<dir containing node_modules/playwright-core>` and Chromium. If
 you would rather not install Playwright on the Mac, skip it — it already passed here on the same
@@ -146,54 +146,34 @@ In the `App` target:
 1. **General → Supported Destinations** — keep iPhone **and** iPad.
 2. **Signing & Capabilities** — team `744JSM2Z3H`, automatic signing. (The team displays under the individual's name, not Rounds Codex, Inc. — see step 1.)
 3. **+ Capability → Associated Domains**, add `applinks:roundscodex.com`.
-4. **+ Capability → Background Assets.** ⚠ I could not verify whether Apple-hosted packs also
-   require a separate **downloader extension target**; developer-forum threads describe an app group
-   shared between the app and such an extension, and the managed path may not need one. Settle this
-   before writing any Swift — it changes the project layout.
+4. **No Background Assets capability, and no downloader extension.** v1 bundles all the media, so
+   there is nothing to download and nothing to declare. The ⚠ that used to sit here — whether
+   Apple-hosted packs need a separate extension target — no longer has to be answered.
 5. **Info.plist**:
    - `NSAppTransportSecurity` — leave default. Everything is HTTPS.
    - `UISupportedInterfaceOrientations~ipad` — all four.
    - No camera, microphone, location or photo-library keys. The app uses none, and an unused
      purpose string invites a question you have no reason to answer.
 
-## 5. The seam — the one genuinely uncertain piece
+## 5 & 6. ~~The seam~~ and ~~asset packs~~ — NOT IN v1 (decision, 2026-08-17)
 
-Pack files land in a container directory. **A `WKWebView` will not load them from a `file://` path
-inside a page served from Capacitor's scheme.** Bridge it with a `WKURLSchemeHandler` (or Capacitor's
-local server) that maps a media path onto the pack directory, and hand the web layer its base:
+**v1 bundles every gallery page and every recording in the app: ~826 MB of payload, an App Store
+download of roughly that, against Apple's 4 GB ceiling.** `RC_MEDIA_ROOT` stays unset, so media
+resolves exactly as it does on the website — from the bundle, offline, on every supported iOS
+version rather than only 26+.
 
-```swift
-// Must run BEFORE index.html parses -- RC_MEDIA_ROOT is read at parse time.
-// A post-load assignment is too late and the app will resolve media as if no pack existed.
-let js = "window.RC_MEDIA_ROOT='\(mediaBaseURL.absoluteString)';"
-let script = WKUserScript(source: js, injectionTime: .atDocumentStart, forMainFrameOnly: true)
-webView.configuration.userContentController.addUserScript(script)
-```
+That removes, in one decision, the three pieces of this build that had never been verified: the
+`WKURLSchemeHandler` seam between a WKWebView and a pack container, the downloader-extension
+question, and packs going through App Review separately from the binary. **No Swift is needed for
+media at all.** There is nothing to write here.
 
-**Do not set `RC_MEDIA_ROOT` at all until a pack is actually present.** With it unset the app
-resolves media exactly as the website does; with it set to a path that has nothing behind it, every
-gallery page takes the two-stage fallback before recovering. Unset is faster and identical in effect.
+What it costs, stated plainly: changing one illustration now means a new binary and a new review.
+That is the trade that was chosen, not an oversight.
 
-If the seam misbehaves, the app degrades to streaming from `roundscodex.com` rather than showing
-broken images — that fallback is built and verified. ⚠ It has never run on WebKit; no macOS and no
-Safari in a container.
-
-## 6. Asset packs
-
-```sh
-cd ../rounds-codex-app          # fileSelectors are relative to HERE
-xcrun ba-package template       # ⚠ diff against native/manifests/*.json before trusting them
-sh ../rounds-codex/native/manifests/package-all.sh
-```
-
-Eleven archives in `./asset-packs/`, 741.9 MB total, largest `rc-cardiac` at 148.2 MB.
-
-⚠ The manifests declare `"platforms": ["iOS"]`. iPad runs iOS apps and I believe that covers it, but
-I could not confirm iPadOS is not a separate string — check the template output.
-
-Then in App Store Connect: upload the packs, and **submit them for App Review separately from the
-build**. They version independently of app builds afterwards, so content updates do not need a new
-binary.
+Everything for the pack route is still in the repo and still current if it is ever wanted:
+`scripts/plan_asset_packs.js`, `scripts/build_asset_pack_manifests.js`, `native/manifests/`, and
+`build_ios_payload.js --asset-packs`, which restores the stripping. `native/background-assets-plan.md`
+carries the design.
 
 ## 7. Archive and upload
 
@@ -241,8 +221,9 @@ version/copyright, legal-page and AASA checks that only apply there.
 
 - **Airplane Mode, cold, on a real device.** Offline is the main claim and nothing in a container
   can test it. Force-quit, enable Airplane Mode, launch: library, a condition, a quiz, a calculator,
-  a gallery with its pack downloaded, and one with it not (should stream — or fail gracefully with
-  no network, which is the expected behaviour, not a bug).
+  and a gallery — including opening a full-size page, which in v1 is in the bundle and must render
+  with no network at all. If any gallery page is blank offline, the payload lost files it should
+  have kept.
 - **Tap a `/c/<id>` link** from Messages with the app installed. It should open in the app. If it
   opens Safari, the AASA appID is wrong (step 1) or Associated Domains is missing (step 4).
 - **First run** — the medical disclaimer must appear before any content, and its accept button must
@@ -268,5 +249,5 @@ version/copyright, legal-page and AASA checks that only apply there.
 | Every `content/*.json` 404s | A second `<base>` tag, or a new one-segment route missing from the `RC_ROOT` regex. |
 | "WebKitBlobResource error 1." on returning to a backgrounded tab | The service worker cloned or failed to drain a navigation body. Read the `sw.js` section of `CLAUDE.md` and run `node scripts/verify_sw.js`. It has shipped four times. |
 | Universal Links open Safari | Wrong appID in the AASA, missing Associated Domains, or Apple's CDN still serving the old file. |
-| Galleries show broken images | The seam (step 5). Unset `RC_MEDIA_ROOT` to confirm the app is otherwise fine. |
+| Galleries show broken images | The payload was built with `--asset-packs` (which strips the artwork) or `cap sync` was not run after rebuilding it. v1 must carry the media. |
 | A patcher aborts with "expected exactly 1 occurrence" | The web app's wording changed under it. That is the anchor doing its job — fix the script, never loosen the anchor. |

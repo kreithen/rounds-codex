@@ -1,5 +1,21 @@
 # Background Assets — the delivery plan for the iOS app
 
+> ## NOT THE v1 PLAN — superseded 2026-08-17, the physician's call
+>
+> **v1 bundles all the media in the app: ~826 MB of payload, one binary, offline from install, on
+> every supported iOS version.** No asset packs, no Background Assets capability, no downloader
+> extension, no separate pack review, and no `WKURLSchemeHandler` seam. Three unverified pieces of
+> the build became zero, on the day the app first ran on WebKit.
+>
+> The cost, accepted knowingly: an artwork change means a new binary and a new review.
+>
+> **Everything below is still accurate and still works** — `scripts/plan_asset_packs.js`,
+> `scripts/build_asset_pack_manifests.js`, `native/manifests/` and
+> `build_ios_payload.js --asset-packs` are all current. Read this file when the bundle gets
+> uncomfortable, when content updates want to ship without a review, or when a second content pack
+> (a specialty, a language) makes a 4 GB single binary the wrong shape. Do not read it as a
+> description of what v1 does.
+
 **Written 2026-08-17.** Task #27. Supersedes the "get under 250 MB by compressing artwork" framing
 in `app-store-checklist.md` §4 and `native-app-plan.md`, which was built on a limit that does not
 exist.
