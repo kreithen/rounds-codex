@@ -217,7 +217,15 @@ build and the variant script rewrites the phrase. The web manifest keeps it and 
 
 ## 4. Build work
 
-- [ ] **The native shell.** In progress — **it runs.** On 2026-08-17 the Capacitor project was
+- [x] **The native shell.** **BUILT, ARCHIVED, VALIDATED AND UPLOADED — 2026-08-17.** Version 1.0
+      build 1, `com.roundscodex.app`, arm64, signed by team `744JSM2Z3H`, Apple's validation passed,
+      binary uploaded to App Store Connect. App Store Connect record created as
+      **`Rounds Codex: Clinical Atlas`** (SKU `com.roundscodex.app`, English (US)).
+      Configured: iPhone + iPad, iOS 15.0 minimum, display name `Rounds Codex`, category
+      `public.app-category.medical`, Associated Domains `applinks:roundscodex.com`,
+      `ITSAppUsesNonExemptEncryption=false`, app icon 1024x1024 with no alpha (the circular
+      waveform mark alone — the full lockup's wordmark is illegible at icon size).
+      **It runs.** On 2026-08-17 the Capacitor project was
       created on the physician's Mac (Capacitor 7, **Swift Package Manager, no CocoaPods**) and the
       app launched on the iOS 26.5 simulator: all 183 conditions, condition pages, a quiz, a
       calculator, the About page, gallery thumbnails, no login wall and no Ask tab. Remaining:

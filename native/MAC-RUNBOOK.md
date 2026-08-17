@@ -175,7 +175,30 @@ Everything for the pack route is still in the repo and still current if it is ev
 `build_ios_payload.js --asset-packs`, which restores the stripping. `native/background-assets-plan.md`
 carries the design.
 
-## 7. Archive and upload
+## 7. ~~Archive and upload~~ — DONE 2026-08-17, 1.0 (1) uploaded
+
+Kept because the next build repeats it. Things that cost time the first time:
+
+- **Xcode ships no simulator runtime** — `xcodebuild -downloadPlatform iOS` (~8 GB, visible
+  progress). The device family is iPhone **17**, not 16.
+- **The archive needs `Any iOS Device (arm64)`** as the run destination or Product → Archive is
+  greyed out. **Product** is in the macOS menu bar, and the Xcode Cloud wizard is a different
+  menu — cancel out of it if you land there.
+- **"Update to recommended settings" — click Cancel.** One of its items is *Enable User Script
+  Sandboxing*, which breaks build scripts in Capacitor projects. The warning is cosmetic.
+- **The app icon must have no alpha channel.** `sips` via BMP does NOT strip it (sips writes
+  32-bit BMP); via **JPEG** it does, because JPEG cannot carry alpha:
+  `sips -s format jpeg -s formatOptions best in.png --out /tmp/f.jpg && sips -s format png /tmp/f.jpg --out AppIcon-512@2x.png`
+  Capacitor's slot is a single `AppIcon-512@2x.png` at 1024x1024.
+  **Use the circular mark alone, not the full lockup** — the wordmark is about three pixels tall
+  at home-screen size, and Apple's guidance is to keep text out of icons.
+- **A development profile needs a registered device.** "Your team has no devices" is not a signing
+  failure — plug the iPhone in (Developer Mode on, iOS 16+) and it resolves itself on the next
+  build. Distribution signing needs no device.
+- **Xcode offers to create the App Store Connect record during Validate**, and its default Name is
+  literally `App`. That field is the App Store name — set it before clicking Next.
+
+## 7b. Archive and upload (the steps)
 
 1. Set the version to **1.0.0**, build **1**.
 2. Any Device (arm64) → **Product → Archive**.
