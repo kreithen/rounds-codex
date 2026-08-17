@@ -2,11 +2,13 @@
 /* Assemble the exact www/ directory the native app ships, and nothing else.
  *
  * One command between a clone of the web app and the tree Capacitor copies into the bundle. It
- * runs the three patchers in order, then removes every file that belongs in an asset pack, then
+ * runs the four patchers in order, then removes every file that belongs in an asset pack, then
  * checks the result is the size the plan says it should be.
  *
  * THE ORDER IS NOT ARBITRARY and each step depends on the one before:
  *   stamp_version      version.txt is the source of truth and RC_VERSION derives from it
+ *   fix_root_authority RC_ROOT keeps its host at capacitor://localhost, which has no path. Runs
+ *                      before add_media_root because every media URL is resolved against it
  *   add_media_root     gallery pages, PDFs and audio resolve through RC_MEDIA_ROOT
  *   build_ios_variant  the wall, the account surfaces and Ask come out; anchors on the shipped
  *                      privacy wording, so it must run AFTER any RC_LEGAL change and will abort
@@ -69,6 +71,7 @@ fs.rmSync(path.join(OUT, '.git'), { recursive: true, force: true });
 
 /* ---- 2. the patcher chain --------------------------------------------------------------------- */
 run('stamp_version.js', LABEL ? [OUT, '--set', LABEL, '--apply'] : [OUT, '--sync', '--apply']);
+run('fix_root_authority.js', [OUT]);
 run('add_media_root.js', [OUT, '--apply']);
 run('build_ios_variant.js', [OUT, '--apply']);
 

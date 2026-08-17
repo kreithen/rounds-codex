@@ -60,6 +60,12 @@ echo "checking $TREE"
 run "service worker"            node "$HERE/verify_sw.js" "$TREE/sw.js"
 run "font coverage"             python3 "$HERE/audit_font_coverage.py" "$TREE"
 
+if [ "$MODE" = ios ]; then
+  # Only the payload is checked for this: the guard it asserts is applied by the payload chain,
+  # and the bug it guards against is unreachable on the web (an http URL always has a path).
+  run "RC_ROOT keeps its host" node "$HERE/verify_root_authority.js" "$TREE"
+fi
+
 if [ "$MODE" = web ]; then
   run "version and copyright"   node "$HERE/stamp_version.js" "$TREE" --check
   run "public legal pages"      node "$HERE/build_legal_pages.js" "$TREE" --check
