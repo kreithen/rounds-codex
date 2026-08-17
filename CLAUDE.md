@@ -1081,6 +1081,22 @@ on my own judgement. Autonomy is about mechanics, not about medical correctness.
 Develop on **`claude/usmle-rounds-codex-module-bmpl61`**. Commit + push there; never push elsewhere
 without explicit permission. Do NOT open a PR unless the user asks.
 
+## The native iOS app — ITS OWN CONVERSATION (2026-08-17)
+Building the website into an App Store submission. Handed off to a separate conversation on branch
+**`claude/native-ios-app`**. **Read `HANDOFF-native-ios-app.md` first**, then
+`app-store-checklist.md` (the single current checklist — the three older store docs are superseded
+and say so at the top).
+**Nothing native exists yet**: verified 2026-08-17, there is no `ios/`, no `capacitor.config.*`, no
+`.xcodeproj`, no Podfile and no Swift in either repo. `native-app-plan.md` is a design.
+**A session cannot build, sign, archive or upload an iOS app** — no macOS, no Xcode, and no WebKit,
+so nothing can be tested as Safari renders it. The engineering (the no-wall variant, size, Universal
+Links, Spotlight, the copy) happens here; the archive, the screenshots and App Store Connect are the
+physician's Mac. Do not hand over something that has never been compiled.
+**Two decisions taken 2026-08-14**: Apple Developer Program enrollment as **Rounds Codex, Inc.**
+(Organization), and **no login wall on iOS** — it stays on the web. That second one is a *build*,
+not a deletion: three in-app surfaces still assert an account exists, and the Privacy page's "we
+hold your email address" would contradict a "Data Not Collected" privacy label outright.
+
 ## The mislabelled-anatomy project — MOVED TO ITS OWN CONVERSATION (2026-08-09)
 Leader lines that do not land on the structure they name: 119 pages examined, **81 wrong**,
 553 findings. Handed off to a separate conversation on branch
