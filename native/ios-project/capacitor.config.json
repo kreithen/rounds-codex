@@ -1,0 +1,12 @@
+{
+  "appId": "com.roundscodex.app",
+  "appName": "Rounds Codex",
+  "webDir": "www",
+  "server": {
+    "iosScheme": "capacitor"
+  },
+  "ios": {
+    "contentInset": "always",
+    "limitsNavigationsToAppBoundDomains": false
+  }
+}

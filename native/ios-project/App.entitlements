@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <!-- Universal Links. BOTH hosts are claimed, and that is not belt and braces; it is required.
+       The app builds every share link from RC_SHARE_ORIGIN, which is pinned to
+       https://rounds-codex.netlify.app . Claiming only roundscodex.com would mean a link shared
+       FROM the app opens in Safari rather than in the app: the commonest case, silently broken,
+       with iOS reporting nothing.
+       Both hosts serve the same Netlify site, so one /.well-known/apple-app-site-association
+       answers for both. Verified in production on the netlify.app host (the one reachable from a
+       container): 200 application/json, zero redirects, appID 744JSM2Z3H.com.roundscodex.app.
+       When roundscodex.com becomes canonical and RC_SHARE_ORIGIN moves, the netlify.app line can
+       go, but not before; old shared links will keep arriving at it for a long time.
+       NOTE: no double hyphen anywhere in this comment. XML forbids it inside a comment, and a
+       plist that will not parse is a build failure rather than a warning. -->
+  <key>com.apple.developer.associated-domains</key>
+  <array>
+    <string>applinks:roundscodex.com</string>
+    <string>applinks:www.roundscodex.com</string>
+    <string>applinks:rounds-codex.netlify.app</string>
+  </array>
+</dict>
+</plist>

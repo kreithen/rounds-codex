@@ -1,0 +1,60 @@
+<!-- Keys to ADD to the Info.plist that `npx cap add ios` generates at ios/App/App/Info.plist.
+     Not a replacement file: Capacitor's own keys (CFBundleIdentifier, the launch storyboard, the
+     Capacitor bridge settings) must stay. Merge these in.
+
+     No double hyphen appears in any comment here: XML forbids it inside a comment, and a plist
+     that will not parse is a build failure, not a warning.
+
+     Every key here is one I am confident about. The Background Assets entitlement is deliberately
+     NOT here; see README.md. -->
+
+<!-- Export compliance, answered once instead of at every submission.
+     The app uses HTTPS and nothing else, which is the standard exemption. Declaring it here means
+     App Store Connect stops asking on each upload; leaving it out means answering the question by
+     hand every time and getting it wrong once. -->
+<key>ITSAppUsesNonExemptEncryption</key>
+<false/>
+
+<!-- The name under the icon. "Rounds Codex" is 12 characters and will not truncate on a home
+     screen; the App Store name is set separately in App Store Connect. -->
+<key>CFBundleDisplayName</key>
+<string>Rounds Codex</string>
+
+<!-- iPad is a supported destination, so all four orientations. A reference app locked to portrait
+     on an iPad reads as a phone app that was not thought about; and the galleries are 2:3
+     portrait artwork that people will absolutely turn sideways to read. -->
+<key>UISupportedInterfaceOrientations~ipad</key>
+<array>
+  <string>UIInterfaceOrientationPortrait</string>
+  <string>UIInterfaceOrientationPortraitUpsideDown</string>
+  <string>UIInterfaceOrientationLandscapeLeft</string>
+  <string>UIInterfaceOrientationLandscapeRight</string>
+</array>
+
+<!-- iPhone: no upside-down, which is Apple's own convention for phones. -->
+<key>UISupportedInterfaceOrientations</key>
+<array>
+  <string>UIInterfaceOrientationPortrait</string>
+  <string>UIInterfaceOrientationLandscapeLeft</string>
+  <string>UIInterfaceOrientationLandscapeRight</string>
+</array>
+
+<!-- NOT PRESENT ON PURPOSE, and each absence is a decision:
+
+     NSCameraUsageDescription, NSMicrophoneUsageDescription, NSPhotoLibraryUsageDescription,
+     NSLocationWhenInUseUsageDescription
+        The app uses none of these. An unused purpose string is not harmless; it puts a
+        capability on the App Store privacy page that you then have to justify, and it invites a
+        reviewer question you have no reason to answer.
+
+     NSAppTransportSecurity
+        The default is correct. Everything the app touches is HTTPS. Adding an exception here is
+        the single most common way an otherwise fine submission acquires a rejection.
+
+     UIFileSharingEnabled / LSSupportsOpeningDocumentsInPlace
+        The app neither imports nor exports documents. The gallery PDF is handed to the system
+        share sheet, which needs no entitlement.
+
+     UIRequiresFullScreen
+        Left unset, so the app supports iPad multitasking. Setting it true would opt out of Split
+        View, which Apple discourages and reviewers notice on a universal app. -->

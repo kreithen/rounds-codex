@@ -36,7 +36,16 @@ no backend. This file is context for future sessions — read it before starting
   shortly after.
   **Nothing alerted for 16 hours.** Turn on Netlify's failed-deploy notification, and check
   `/version.txt` (added 2026-07-31) after every deploy rather than assuming a push shipped.
-- **The live site itself is still unreachable** — the agent proxy 403s rounds-codex.netlify.app.
+- **THE LIVE SITE IS REACHABLE AGAIN — corrected 2026-08-17.** This section said for months that
+  the agent proxy 403s `rounds-codex.netlify.app`. It does not:
+  `curl -s https://rounds-codex.netlify.app/version.txt` returns the deployed stamp, and the AASA
+  came back 200 `application/json` with zero redirects. **So a deploy can be confirmed from a
+  session — check it yourself rather than asking the physician to open `/version.txt`.**
+  What is still blocked is the CUSTOM domain: `roundscodex.com` and `www.roundscodex.com` both fail
+  CONNECT with a proxy 403, so whether they serve this site cannot be confirmed from here (DNS says
+  yes: the apex resolves to Netlify's load balancer and `www` to the same IPv6 as the netlify.app
+  host). Retest both at the start of a session rather than assuming either state; the block moved
+  once and can move back.
   The **Netlify MCP connector** is the way in: connector traffic goes through Anthropic's servers,
   not the session network, so it works despite the egress policy. It diagnosed this outage in two
   calls (`get-projects`, then `get-deploy-for-site`). It CANNOT deploy from a cloud session,
