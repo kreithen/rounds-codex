@@ -90,6 +90,16 @@ const aasa = {
   webcredentials: { apps: [] },
   appclips: { apps: [] },
 };
+/* A placeholder appID produces a file that is syntactically perfect and functionally inert, and
+   iOS reports nothing when it fails to match -- which is precisely the shape of defect this
+   project keeps shipping. Unknown top-level keys are ignored by Apple's parser, so the file says
+   so about itself rather than relying on anyone remembering. Removed automatically once a real
+   team and bundle are supplied. */
+if (placeholder) {
+  aasa._comment = 'PLACEHOLDER appID -- Universal Links do NOT work until this is rebuilt with ' +
+                  'the real Apple Developer Team ID and bundle identifier: ' +
+                  'node scripts/build_aasa.js <root> --team <ID> --bundle <ID> --apply';
+}
 
 const dir = path.join(ROOT, '.well-known');
 const out = path.join(dir, 'apple-app-site-association');
