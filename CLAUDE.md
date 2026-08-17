@@ -1044,14 +1044,32 @@ on my own judgement. Autonomy is about mechanics, not about medical correctness.
 Develop on **`claude/usmle-rounds-codex-module-bmpl61`**. Commit + push there; never push elsewhere
 without explicit permission. Do NOT open a PR unless the user asks.
 
-## The mislabelled-anatomy project — MOVED TO ITS OWN CONVERSATION (2026-08-09)
-Leader lines that do not land on the structure they name: 119 pages examined, **81 wrong**,
-553 findings. Handed off to a separate conversation on branch
-**`claude/anatomy-label-corrections`**. **Read
-`galleries-staging/HANDOFF-anatomy-label-corrections.md` before touching leader lines, the
-81-page work order, the Higgsfield panel-correction route, or MSK H7 (the deep peroneal nerve
-map).** Do not work it from the main build conversation — two sessions pushing one branch
-collide, and the handoff carries state this file does not. It is **not launch-blocking**.
+## The mislabelled-anatomy project — **CLOSED 2026-08-17**, live at v124
+Leader lines that do not land on the structure they name. Final: 119 pages examined, **81
+wrong**, 553 findings, **72+ pages corrected and live** across 33 deploys (v92 → v124).
+Worked on branch `claude/anatomy-label-corrections-j58lf1`.
+
+**Three buckets were closed by the physician rather than completed, and each is written up where
+a later sweep will meet it.** Read the CLOSED section before re-raising anything as a new finding:
+the **four production items** (`PRODUCTION-residual-after-rerender.md`) accepted as drawn — three
+need artwork or type, not a leader move; the **~15 `[CHECK]` rows on seven pages**
+(`UNSHEETED-PAGES-progress.md`) accepted **unmeasured** — that word is load-bearing, two agents
+died on a session limit and nothing on those rows was read at magnification; and **two physician
+questions** (`FINAL-22-tracker.md`) accepted as schematic liberties.
+
+**Three method results that cost real time and should not be re-derived:**
+- **The automated terminator detector does not work — four attempts, best scored 2 of 9 against
+  hand-measured ground truth. Do not rebuild it.** The table of what failed and why is in
+  `UNSHEETED-PAGES-progress.md`.
+- **The work order's findings are reliable; its distances are not** (~250 px measured 57, ~160 px
+  measured 35). Trust *what* it flags, re-measure *where*.
+- **What works: crop at 4–13× with a coordinate grid, read the terminator by eye, then confirm the
+  tissue under it by sampling RGB with the leader's own ink excluded.** An ink count at a stated
+  point is a good cheap *verifier*; it cannot *find* a coordinate.
+
+**And the Photoshop trap:** two returned pages had a label's **text destroyed** rather than its
+leader moved, both caught before shipping. When a leader starts inside a text column, check the
+type after the erase — a structural check will not see it.
 
 ## Incoming gallery batches — what to check before building
 - **THE PAGES ARRIVE AS CHAT PASTES FROM THE PHYSICIAN'S PHOTO ALBUM, AND THEY ARE FULL
