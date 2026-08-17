@@ -6,6 +6,43 @@ Background and the reasoning are in `app-store-checklist.md` §7. This is just t
 
 ---
 
+## DECIDED 2026-08-17: ship v1 as Individual, convert later
+
+**This is safe, and the conversion later is the same account, not a migration.** Apple applies the
+new legal entity name to the apps you already distribute; the Team ID (`744JSM2Z3H`), the bundle
+identifier, the certificates and the app itself all stay put. There is no app transfer, no
+re-submission, no new listing.
+
+Three caveats, in the order they will matter:
+
+**1. Pre-empt the rights question at submission.** The one real risk of shipping as an Individual is
+**Guideline 5.2.1**: the app's illustrations, in-app footer and Copyright field all say
+`© 2026 Rounds Codex, Inc.` while the seller is a private individual, and a reviewer may ask whether
+you hold the rights. You do. Answering it before it is asked costs one sentence in the App Review
+notes, and it is already drafted in `app-store-submission-draft.md`.
+
+**2. Do not convert while you are mid-build or mid-submission.** Apple takes the **Certificates,
+Identifiers & Profiles portal offline during the migration** — App Store Connect keeps working, but
+you cannot create or renew a signing certificate or a provisioning profile. Starting the conversion
+the week you are trying to archive is how a two-week wait becomes a blocked build. Convert either
+well before the Xcode work or after v1 is live and stable.
+
+**3. Convert BEFORE the paywall, not after.** This is the one that turns "later" into a deadline.
+Selling anything requires accepting the **Paid Applications agreement** with banking and tax details
+attached to whoever holds the account. Do it as an Individual and that is your personal bank account
+and personal tax identity; converting afterwards means redoing banking and tax under the company
+*while money is already flowing*, with a tax year split across two entities. Doing it during the
+free period costs nothing, because there is no money moving yet.
+
+**So: free v1 as Individual is fine. The conversion wants to happen in the quiet stretch between
+approval and the subscription launch.**
+
+⚠ One reported wrinkle: at least one developer found the seller name did **not** update on existing
+apps after conversion and had to ask Apple Support to push it through. Check the product page after
+converting rather than assuming.
+
+---
+
 ## Step 1 — does Rounds Codex, Inc. already have a D-U-N-S number?
 
 A D-U-N-S number is a free nine-digit ID for a business, issued by Dun & Bradstreet. Apple uses it

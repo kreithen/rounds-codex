@@ -392,6 +392,13 @@ Rounds Codex is a study reference for nursing and medical students. All content 
 clinically reviewed by a team of practising clinicians, led by Dr. J. Kreithen, a practising
 physician and the company's Founder and Clinical Lead. The company is physician-owned.
 
+OWNERSHIP OF THE CONTENT
+This account is enrolled as an individual. The copyright notice in the app and on its
+illustrations reads "© 2026 Rounds Codex, Inc." because that company owns the content; the
+account holder is its owner and is authorised to publish this app on its behalf. All
+illustrations, condition text and questions are original works commissioned or created for
+Rounds Codex. No third-party copyrighted material is reproduced in the app.
+
 EDUCATIONAL USE, NOT CLINICAL USE
 The app is a study aid and says so on first launch, before any content is reachable: the user
 must accept a disclaimer stating that it is not medical advice, that it does not replace a
@@ -428,6 +435,20 @@ WHERE TO LOOK
 
 Cut the ABOUT THE CALCULATORS paragraph only if you remove that calculator. Otherwise leave it in —
 it costs nothing and answers the question before it is asked.
+
+**The OWNERSHIP paragraph exists because the account is enrolled as an Individual** (confirmed
+2026-08-17) while every illustration page, the in-app footer and the Copyright field say
+`© 2026 Rounds Codex, Inc.` A reviewer who notices the mismatch has a **Guideline 5.2.1** question,
+and this answers it before it is asked — the same tactic as the calculator paragraph above. It costs
+four lines and removes the only real risk of shipping before the account converts.
+
+⚠ **Confirm the wording is factually right before pasting.** I do not know how Rounds Codex, Inc. is
+owned or who is authorised to bind it, and this paragraph asserts both. If the ownership is not
+sole, or the illustrations were licensed rather than commissioned, fix the sentence — an inaccurate
+statement to App Review is far worse than the question it was written to avoid.
+
+Delete this paragraph once the account is an Organization: at that point the seller name and the
+copyright line agree and there is nothing to explain.
 
 ---
 

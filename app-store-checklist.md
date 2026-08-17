@@ -310,6 +310,26 @@ tool — the company may already have one.
 **Lead time is the risk, not the effort.** Developer-forum threads describe conversions still
 incomplete after 17 days. Starting it is a half-hour of forms; waiting on it could be weeks.
 
-**The recommendation is to start the switch now and decide later**, because the request costs almost
-nothing to file and the clock is the only part that cannot be compressed. Whether to *hold* the
-submission for it is a separate call at submission time, and reversible in a way the lead time is not.
+**DECIDED 2026-08-17 (physician): ship v1 as Individual and convert later.** That is safe. The
+conversion is the same account rather than a migration — Apple applies the new entity name to apps
+already distributed, and the Team ID, bundle id, certificates and listing all stay. No app transfer,
+no re-submission.
+
+Three things that follow, and the third is a deadline rather than a caveat:
+
+1. **The rights question is pre-empted in the App Review notes.** An OWNERSHIP paragraph now sits in
+   `app-store-submission-draft.md` §Notes, next to the Guideline 1.4.1 calculator paragraph and for
+   the same reason. ⚠ It asserts how the company is owned; confirm the wording is factually right
+   before pasting, because an inaccurate statement to App Review is worse than the question it
+   avoids. Delete it once the account converts.
+2. **Do not convert mid-build.** Apple takes Certificates, Identifiers & Profiles offline during the
+   migration; App Store Connect keeps working, but you cannot create or renew a signing certificate
+   or provisioning profile. Convert well before the Xcode work, or after v1 is live.
+3. **Convert BEFORE the paywall.** Selling requires the Paid Applications agreement with banking and
+   tax details attached to the account holder — personal ones, as an Individual. Converting after
+   money is moving means redoing banking and tax under the company mid-stream, with a tax year split
+   across two entities. During the free period it costs nothing.
+
+So the conversion wants to happen in the quiet stretch between approval and the subscription launch.
+Filing early still helps: the D-U-N-S lookup may take days, and the request is simplest while the
+account has no published apps. `native/apple-org-switch.md` has the whole process.
