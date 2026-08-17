@@ -4,15 +4,16 @@
 >
 > This file was written for a **no-account v1**, a decision reversed on 2026-08-08 when the login
 > wall came back (v82) and re-settled on 2026-08-14: **the wall stays on the web and is stripped
-> from the iOS build.** Every content count below is also stale — it is 183 conditions, 102
-> galleries, 1,020 pages and 1,840 quiz questions now.
+> from the iOS build.** **Counts were refreshed 2026-08-17** — 183 conditions, 102 galleries,
+> 1,020 pages, 1,840 quiz questions — with `scripts/read_shipped_counts.js`, which is the way to
+> re-check them rather than trusting any figure written down here.
 >
 > `app-store-checklist.md` is the current, single checklist.
 >
 > **This file is still the drafting source for the field-by-field submission text** — name,
 > subtitle, keywords, description, review notes and the screenshot list. The App Review notes
-> answering Guideline 1.4.1 on the dosage calculator are good as written. Fix the counts and the
-> attribution on the way out.
+> answering Guideline 1.4.1 on the dosage calculator are good as written. **The counts and the
+> attribution have both been fixed in place (2026-08-17)** — the fields below are current.
 
 
 > ## ⚠ SUPERSEDED IN PLACES — the login wall came back on 2026-08-08 (v82)
@@ -188,10 +189,10 @@ each other — Apple indexes them separately and a repeat wastes the field.
 
 ### Promotional Text (170 characters — editable without a new build)
 
-> New: 93 illustrated galleries — 930 original clinical pages — plus 1,820 quiz questions and
+> New: 102 illustrated galleries — 1,020 original clinical pages — plus 1,840 quiz questions and
 > 1,010 USMLE-style items. All offline. Created by a team of clinicians.
 
-*(162)* Update this at each release; it's the one field that doesn't need a build.
+*(165)* Update this at each release; it's the one field that doesn't need a build.
 
 Two notes on that edit. **"Created by a team of clinicians" is nine characters longer than "Written
 by a physician"**, which would have taken the field to 168 — under the limit but with almost nothing
@@ -208,17 +209,17 @@ clinically reviewed by practising clinicians. Every illustration in it is origin
 entirely offline — every page, image and question is on your device the moment it finishes
 downloading.
 
-Three modes, one library. Switch between Nursing, Medical and Resident and the same 181
+Three modes, one library. Switch between Nursing, Medical and Resident and the same 183
 conditions rewrite themselves for what you actually need: assessment and interventions for
 nursing, pathophysiology and workup for medical, management and guidelines for residents.
 
 WHAT'S INSIDE
 
-• 181 conditions across 21 specialties — pathophysiology, presentation, workup, management,
+• 183 conditions across 21 specialties — pathophysiology, presentation, workup, management,
   nursing considerations and references on every one
-• 93 illustrated galleries — 930 original full-page clinical illustrations, zoomable, with a
+• 102 illustrated galleries — 1,020 original full-page clinical illustrations, zoomable, with a
   downloadable PDF for each gallery
-• 1,820 practice questions — a quiz for every single condition, with an explanation on the
+• 1,840 practice questions — a quiz for every single condition, with an explanation on the
   answer and specific feedback on each wrong choice
 • 1,010 USMLE-style items — Step 1 (280), Step 2 CK (318), Step 3 Day 1 (232) and Day 2 (180),
   197 of them illustrated
@@ -228,14 +229,14 @@ WHAT'S INSIDE
   and weight-based dosage practice
 • 470 clinical guideline updates across 25 specialties, by year
 • 1,418 resident-level entries — the practical detail for 25 specialties
-• Narrated audio for selected conditions, including CarPlay support
+• Narrated audio for 31 conditions, including CarPlay support
 
 HOW IT'S BUILT FOR STUDYING
 
 • Spaced review — bookmark anything and it enters a review schedule. No second step, no deck
   to build. Grade yourself Again, Good or Easy and it comes back when you need it.
-• Deep search across every field of every condition, plus 930 illustration titles, telling you
-  where the match was
+• Deep search across every field of every condition, plus 1,020 illustration titles, telling
+  you where the match was
 • Swipe between conditions, and between galleries, without going back to a list
 • Share any condition, section or gallery as a link
 
@@ -265,9 +266,18 @@ drew it.
 And the education-only paragraph is in the listing, not just in the app — Guideline 1.4.1 reviewers
 look for it, and the plan already flagged that the listing needs its own.
 
-The PRIVACY paragraph is accurate as long as v1 ships without the login, which is the decision. If
-that ever reverses, cut the paragraph — an inaccurate privacy claim in the description is a 2.3.1
-problem on top of everything else.
+The PRIVACY paragraph is accurate as long as v1 ships without the login, which is the decision, and
+it became stronger on 2026-08-17: with Ask removed from the iOS build (§3) nothing in the app
+transmits anything at all. If the login ever comes back, cut the paragraph — an inaccurate privacy
+claim in the description is a 2.3.1 problem on top of everything else.
+
+**One claim to re-check once the download-size decision lands.** The galleries bullet promises "a
+downloadable PDF for each gallery" and the opening paragraph promises the app works entirely
+offline. Those are compatible today because the 163 MB of gallery PDFs ships in the bundle. The
+leading size proposal is to stop bundling them and resolve them against the public origin the way
+`RC_SHARE_ORIGIN` already resolves share links — which would make the download need a connection
+and put the two sentences in conflict. Whichever way that goes, one of these two lines may have to
+change; neither is wrong yet. See `app-store-checklist.md` §4.
 
 ### Keywords (100 characters, comma-separated, no spaces after commas)
 
@@ -290,7 +300,7 @@ as category-shopping and doesn't avoid the scrutiny anyway.
 
 `© 2026 Rounds Codex, Inc.`
 
-Matches the footer on all 930 illustration pages.
+Matches the footer on all 1,020 illustration pages, and the Apple Developer Program seller name.
 
 ### URLs
 
@@ -395,7 +405,7 @@ it." It contains no drug database and cannot look up or suggest a drug or a dose
 supplies every number.
 
 OFFLINE AND SELF-CONTAINED
-The entire library ships inside the app — 181 conditions, 930 illustrations, 1,820 quiz
+The entire library ships inside the app — 183 conditions, 1,020 illustrations, 1,840 quiz
 questions, 1,010 USMLE-style items. The app makes no network request to load content and
 downloads no executable code at runtime.
 
@@ -422,10 +432,10 @@ Shoot these, in this order — the first two are all most people see:
 
 | # | screen | caption |
 |---|---|---|
-| 1 | A condition page in Medical mode | **181 conditions. Three modes. One library.** |
-| 2 | A gallery grid, e.g. Heart Failure | **930 original clinical illustrations** |
+| 1 | A condition page in Medical mode | **183 conditions. Three modes. One library.** |
+| 2 | A gallery grid, e.g. Heart Failure | **1,020 original clinical illustrations** |
 | 3 | An illustration open in the viewer | **Zoom in. Swipe through. Works offline.** |
-| 4 | A quiz question with an answer revealed | **1,820 questions — every condition, explained** |
+| 4 | A quiz question with an answer revealed | **1,840 questions — every condition, explained** |
 | 5 | A USMLE item with its illustration | **1,010 USMLE-style items across Step 1–3** |
 | 6 | The Library card showing items due | **Bookmark it, and it comes back when you need it** |
 | 7 | A calculator, CHA₂DS₂-VASc | **Ten clinical calculators, offline** |
@@ -480,13 +490,33 @@ Ordered so that if you stop partway, you've done the parts that matter.
 
 ## Two honest notes on the copy
 
-**The counts are the strongest thing you have — and every one of them in this file is now stale.**
-They were read out of the shipped content on 2026-08-04 and the content has moved: it is **183**
-conditions, **102** galleries, **1,020** pages and **1,840** quiz questions, against the 181 / 93 /
-930 / 1,820 written below. Unchanged: 1,010 USMLE items, 150 NCLEX, 300 drugs, 470 guideline
-entries, 1,418 resident entries, 10 calculators. **Re-read them from the shipped content before
-pasting anything**, rather than copying the numbers in this paragraph — which is the same mistake
-one step removed. A description that overstates by one is a 2.3.1 problem for no gain.
+**The counts are the strongest thing you have, and they go stale silently.** Every number in this
+file was refreshed on **2026-08-17** by `node scripts/read_shipped_counts.js <site-root>`, run
+against the shipped tree. Four had moved since 2026-08-04: conditions 181 → **183**, galleries
+93 → **102**, pages 930 → **1,020**, quiz questions 1,820 → **1,840**. Unchanged and re-derived
+rather than assumed: 1,010 USMLE items (Step 1 280, Step 2 CK 318, Step 3 Day 1 232, Day 2 180),
+197 of them illustrated, 150 NCLEX, 300 drugs, 470 guideline entries across 25 specialties, 1,418
+resident entries, 10 calculators, 21 condition specialties, 31 audio recordings.
+
+**Run the script rather than copying this paragraph** — copying it is the same mistake one step
+removed, and it is exactly how 181 survived here for two weeks after the app reached 183. A
+description that overstates by one is a 2.3.1 problem for no gain.
+
+Three of that script's derivations were wrong on its first run, and each looked plausible enough to
+publish, which is the argument for having it rather than counting by hand:
+
+- `galleries.json` is `{galleries:{…}, real:[…]}`, not a flat map of ids. Read flat, it reports
+  **1 gallery and 0 pages**.
+- The USMLE banks declare `const USMLE_STEP1_B1 = […]`. A top-level `const` lives in the script's
+  lexical scope, not on the sandbox object, so enumerating the sandbox found **0 items** across 43
+  files that had all loaded without error.
+- `illustrations.js` **assigns** `RC_ILLUS` rather than merging into it, and it loads **first** in
+  `usmle/index.html`. Sorted alphabetically it lands last, wipes the other fourteen packs, and
+  reports **11 illustrated items instead of 231**.
+
+The script now takes its load order from the `<script src>` list in `usmle/index.html` and reports
+a bank file that is on disk but never loaded. All three wrong answers were self-consistent and
+none of them threw.
 
 **~~"Written by a physician" is doing the work that "clinically reviewed" can't.~~ Reversed
 2026-08-09 — this note had it exactly backwards, and the reversal is worth keeping visible rather

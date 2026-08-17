@@ -191,7 +191,11 @@ for three things and **two are already resolved** — the count reads 183, and "
 is permitted. **"An AI study tutor" is settled** — see §1.5: the feature is dropped from the iOS
 build and the variant script rewrites the phrase. The web manifest keeps it and is correct.
 
-- [ ] Refresh every count in the description, promotional text and review notes
+- [x] Refresh every count in the description, promotional text and review notes — done 2026-08-17,
+      and the screenshot captions and the Copyright note with them. Derived by
+      **`node scripts/read_shipped_counts.js <site-root>`**, which reads every figure the store
+      copy quotes straight out of a shipped tree. Use it instead of copying a number out of any
+      document, this one included.
 - [x] Rewrite the attribution lines — done 2026-08-17 in `app-store-submission-draft.md`: the
       Description, Promotional Text and App Review notes carry the plural framing, and the closing
       note that argued for the singular one is corrected in place rather than deleted. The Subtitle
