@@ -150,7 +150,18 @@ const check = (name, ok, detail) => { results.push([name, ok, detail]); };
   const priv = await p.evaluate(() => (document.querySelector('.app') || document.body).innerText);
   check('privacy page renders',            priv.length > 800, `${priv.length} chars`);
   check('privacy: no email held',          !/hold your email address/i.test(priv) && !/we hold your email/i.test(priv));
-  check('privacy: no invitation/account',  !/invitation/i.test(priv) && !/Deleting your account/i.test(priv));
+  /* The platform section legitimately says the WEBSITE is invitation-only while this app has no
+     account, and that sentence is true and useful on iOS -- it is how a reader who arrived from the
+     App Store learns the website is a different thing with different rules. So the check excludes
+     that section and requires the REST to be clean, rather than banning the word outright. A flat
+     !/invitation/i fails on a correct build once one policy covers both platforms. */
+  const privMinusPlatform = priv.replace(
+    /the website and the ios app[\s\S]*?(?=what is stored on your device)/i, '');
+  check('privacy: platform section present',
+        /website/i.test(priv) && /no account/i.test(priv));
+  check('privacy: no invitation/account copy outside it',
+        !/invitation/i.test(privMinusPlatform) && !/Deleting your account/i.test(priv),
+        (privMinusPlatform.match(/.{0,60}invitation.{0,60}/i) || [''])[0]);
   check('privacy: says there is no account', /no account/i.test(priv));
   /* The policy must not describe a transmission this build cannot make. A policy that overstates
      what leaves the device is as wrong as one that hides a real transmission, and it is the

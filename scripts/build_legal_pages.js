@@ -56,6 +56,48 @@ for (const k of ['terms', 'privacy']) {
   if (!d || !d.title || !d.sections || !d.sections.length) throw new Error(`RC_LEGAL.${k} looks wrong`);
 }
 
+/* The Support page. App Store Connect will not accept a submission without a Support URL, and the
+   field cannot be a mailto: -- it wants a page.
+   Unlike Terms and Privacy this has NO in-app counterpart, so there is nothing in RC_LEGAL to
+   generate it from and nothing for it to drift against. It is defined here, in the same shape the
+   two legal pages use, so page() renders all three identically and there is exactly one stylesheet,
+   one footer and one standalone() guard for the lot.
+   The one thing that COULD drift -- the address -- is read from the app's own RC_CONTACT rather
+   than typed here. */
+const SUPPORT = {
+  title: 'Support',
+  /* No version: a legal document is versioned because acceptance is recorded against it, and a
+     support page is not. The header drops the "Version N" half when this is null. */
+  version: null, updated: '2026-08-17',
+  keyH: 'Getting help',
+  key: 'Email <a href="mailto:' + CONTACT + '">' + CONTACT + '</a>. A person reads every message. ' +
+       'There is no ticket system and no chatbot.',
+  sections: [
+    { h: 'What to include', p: [
+      'If something looks wrong or does not work, the two things that help most are <b>where you ' +
+      'were</b> \u2014 the condition, gallery, quiz or calculator by name \u2014 and <b>what you expected ' +
+      'to happen instead</b>. A screenshot is worth more than a description.',
+      'The app\u2019s version is at the bottom of the <b>About</b> page. Quoting it tells us whether ' +
+      'you are seeing something already fixed.'] },
+    { h: 'Reporting a clinical error', p: [
+      'Tell us, and please say so plainly in the subject line. Clinical corrections are read by a ' +
+      'clinician and take priority over everything else.',
+      'Rounds Codex is a study aid and not medical advice. Anything you do for a real patient must ' +
+      'be approved by your attending, preceptor or clinical instructor, whatever this app says.'] },
+    { h: 'Your data', p: [
+      'Bookmarks, quiz progress and practice history are stored on your device, not on our server, ' +
+      'so we cannot see them and cannot restore them for you. Clearing your browser data or ' +
+      'deleting the app clears them.',
+      'What we hold, and what you can delete, is set out on the Privacy page.'] },
+    { h: 'Accessibility', p: [
+      'If something is unreadable, unreachable with assistive technology, or too small to use, that ' +
+      'is a bug and we want to hear about it.'] },
+  ],
+};
+
+/* Every page rendered by page(), keyed by the directory it lands in. */
+const PAGES = { terms: LEGAL.terms, privacy: LEGAL.privacy, support: SUPPORT };
+
 /* The app's own palette, inlined. Kept short on purpose -- this page is read once, often by
    someone deciding whether to trust the app, and it should load instantly on a bad connection. */
 const CSS = `
@@ -108,8 +150,9 @@ function standalone(html, where) {
 }
 
 function page(which) {
-  const d = LEGAL[which];
-  const other = which === 'terms' ? 'privacy' : 'terms';
+  const d = PAGES[which];
+  /* Three pages now, so the footer links the other TWO rather than "the other one". */
+  const others = Object.keys(PAGES).filter(k => k !== which);
   const body = d.sections.map((s, i) =>
     `<section>\n<h2>${s.h}</h2>\n${s.p.map(x => `<p>${standalone(x, which + ' §' + (i + 1))}</p>`).join('\n')}\n</section>`).join('\n\n');
   return `<!doctype html>
@@ -126,7 +169,7 @@ function page(which) {
 <header>
 <a class="brand" href="/">Rounds Codex</a>
 <h1>${d.title}</h1>
-<p class="sub">Version ${d.version} &middot; last updated ${d.updated}</p>
+<p class="sub">${d.version ? `Version ${d.version} &middot; last updated` : 'Last updated'} ${d.updated}</p>
 </header>
 
 <div class="key">
@@ -138,7 +181,7 @@ ${body}
 
 <footer>
 <p>Questions about this document? Email <a href="mailto:${CONTACT}">${CONTACT}</a>.</p>
-<nav><a href="/${other}/">${LEGAL[other].title}</a> &middot; <a href="/">Rounds Codex</a></nav>
+<nav>${others.map(o => `<a href="/${o}/">${PAGES[o].title}</a>`).join(' &middot; ')} &middot; <a href="/">Rounds Codex</a></nav>
 <!-- Generated from RC_LEGAL in index.html by scripts/build_legal_pages.js. Do not edit by hand:
      the app and this page must say the same thing, and the app is the source. -->
 </footer>
@@ -149,7 +192,7 @@ ${body}
 }
 
 let bad = 0;
-for (const which of ['privacy', 'terms']) {
+for (const which of Object.keys(PAGES)) {
   const out = path.join(root, which, 'index.html');
   const html = page(which);
   const exists = fs.existsSync(out);
@@ -162,7 +205,7 @@ for (const which of ['privacy', 'terms']) {
     continue;
   }
 
-  const sections = LEGAL[which].sections.length;
+  const sections = PAGES[which].sections.length;
   console.log(`  /${which}/  ${sections} sections, ${html.length} bytes` +
               (exists ? (same ? '  (unchanged)' : '  (updated)') : '  (new)'));
   if (APPLY) { fs.mkdirSync(path.join(root, which), { recursive: true }); fs.writeFileSync(out, html); }

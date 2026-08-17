@@ -25,6 +25,40 @@ function rules(){
 const RULES=rules();
 console.log("  _redirects: "+(RULES.length?RULES.map(r=>`${r.from}* -> ${r.to} ${r.status}`).join(", "):"none"));
 
+// _headers: "<path>" then indented "Name: value" lines. Added 2026-08-17 because the sim was
+// guessing every content type from the file EXTENSION, and the one file whose type matters most
+// has none: /.well-known/apple-app-site-association must be served as application/json or iOS
+// silently ignores it and opens Universal Links in Safari, with no error anywhere. The sim
+// reported application/octet-stream on a tree whose _headers said otherwise -- i.e. it could not
+// observe the mechanism the feature depends on, the same way it could not see Range before
+// 2026-08-01. Only the exact-path and "/prefix/*" shapes this app uses are handled.
+function headerRules(){
+  const f=path.join(ROOT,"_headers");
+  if(!fs.existsSync(f)) return [];
+  const out=[]; let cur=null;
+  for(const raw of fs.readFileSync(f,"utf8").split("\n")){
+    const line=raw.replace(/#.*$/,"");
+    if(!line.trim()) continue;
+    if(/^\s/.test(raw)){
+      const i=line.indexOf(":");
+      if(cur&&i>0) cur.headers[line.slice(0,i).trim()]=line.slice(i+1).trim();
+    } else { cur={path:line.trim(),headers:{}}; out.push(cur); }
+  }
+  return out.filter(r=>Object.keys(r.headers).length);
+}
+const HRULES=headerRules();
+console.log("  _headers: "+(HRULES.length?HRULES.length+" rule(s)":"none"));
+function headersFor(p){
+  const h={};
+  for(const r of HRULES){
+    const m=r.path.endsWith("/*") ? p.startsWith(r.path.slice(0,-1))
+          : r.path.endsWith("*")  ? p.startsWith(r.path.slice(0,-1))
+          : r.path===p;
+    if(m) Object.assign(h,r.headers);
+  }
+  return h;
+}
+
 http.createServer((req,res)=>{
   let p=decodeURIComponent(req.url.split("?")[0].split("#")[0]);
   let f=path.join(ROOT,p);
@@ -46,7 +80,11 @@ http.createServer((req,res)=>{
   // is a Range request, so the audio player's scrubber could not actually be tested here at
   // all. Both were true until 2026-08-01, which made the sim quietly wrong for exactly the
   // feature whose design depends on Range reaching the network (see sw.js MEDIA_RE).
-  const type=TYPES[path.extname(f)]||"application/octet-stream";
+  const extra=headersFor(p);
+  // An explicit Content-Type in _headers WINS over the extension guess -- that is the whole
+  // reason Netlify has the directive, and the extensionless AASA file is the case in point.
+  const type=extra["Content-Type"]||TYPES[path.extname(f)]||"application/octet-stream";
+  delete extra["Content-Type"];
   const size=fs.statSync(f).size;
   const range=req.headers.range;
   const m=range&&/^bytes=(\d*)-(\d*)$/.exec(range.trim());
@@ -58,12 +96,12 @@ http.createServer((req,res)=>{
       res.writeHead(416,{"Content-Range":"bytes */"+size,"Content-Type":type});
       return res.end();
     }
-    res.writeHead(206,{"Content-Type":type,"Accept-Ranges":"bytes",
-      "Content-Range":`bytes ${start}-${end}/${size}`,"Content-Length":end-start+1});
+    res.writeHead(206,Object.assign({"Content-Type":type,"Accept-Ranges":"bytes",
+      "Content-Range":`bytes ${start}-${end}/${size}`,"Content-Length":end-start+1},extra));
     if(req.method==="HEAD") return res.end();
     return fs.createReadStream(f,{start,end}).pipe(res);
   }
-  res.writeHead(200,{"Content-Type":type,"Content-Length":size,"Accept-Ranges":"bytes"});
+  res.writeHead(200,Object.assign({"Content-Type":type,"Content-Length":size,"Accept-Ranges":"bytes"},extra));
   if(req.method==="HEAD") return res.end();
   fs.createReadStream(f).pipe(res);
 }).listen(PORT,()=>console.log("sim on :"+PORT+" root="+ROOT));

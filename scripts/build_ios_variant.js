@@ -223,9 +223,10 @@ surgery('"Your data" wording', () => {
  * plainly here is the honest position; see the note in verify_ios_variant.js. */
 surgery('privacy short version', () => {
   sub(
-    "  key:'Rounds Codex has no analytics, no advertising and no trackers. Access is by invitation and '+\n" +
-    "      'needs an account, so we hold your email address; nothing else about you. Your bookmarks, '+\n" +
-    "      'quiz progress and practice history stay <b>on your device</b>. The one exception is described '+\n" +
+    "  key:'Rounds Codex has no analytics, no advertising and no trackers. The <b>website</b> is '+\n" +
+    "      'invitation-only, so we hold the email address you sign in with and nothing else about you; '+\n" +
+    "      'the <b>iOS app</b> has no account at all and we hold nothing. On both, your bookmarks, quiz '+\n" +
+    "      'progress and practice history stay <b>on your device</b>. The one exception is described '+\n" +
     "      'below: if you use Ask Rounds Codex, your question is sent to us so it can be answered.',",
     "  key:'Rounds Codex has no analytics, no advertising and no trackers. There is no account and no '+\n" +
     "      'sign-in, so we hold nothing about you at all. Your bookmarks, quiz progress and practice '+\n" +
@@ -337,6 +338,11 @@ surgery('Ask Rounds Codex', () => {
   sub("      'history stay <b>on your device</b>. The one exception is described below: if you use Ask '+\n" +
       "      'Rounds Codex, your question is sent to us so it can be answered.',",
       "      'history stay <b>on your device</b>, and nothing in this app transmits anything.',");
+  /* The platform section says the website is invitation-only and this app is not. That is TRUE on
+     both builds and is the whole point of one policy covering two platforms, so it is deliberately
+     left standing here -- the temptation is to strip every mention of the website from the iOS
+     build, and doing so would leave a reader who arrived from the App Store unable to tell that the
+     website is a different thing with different rules. */
   sub("   {h:'What leaves your device', p:[\n" +
       "    '<b>Ask Rounds Codex.</b> When you send a question, the question text and which mode you are in '+\n" +
       "    '(nursing, medical student or resident) are sent to our server so an answer can be generated. No '+\n" +
@@ -383,7 +389,14 @@ const checks = [
   ['no "Signed in" section',      !/<h4>Signed in<\/h4>/.test(s)],
   ['no Sign out control',         !/onclick="rcSignOut\(\)"/.test(s)],
   ['no Delete account control',   !/onclick="rcDeleteAccount\(\)"/.test(s)],
-  ['no invitation copy left',     !/invitation/i.test(s)],
+  /* Scoped, because the platform section legitimately says the WEBSITE is invitation-only and that
+     sentence is true and useful on iOS. What must not survive is invitation copy describing THIS
+     build: the account controls, the subscription line and the deletion section. Checked by
+     excluding the platform section and then requiring the rest to be clean. */
+  ['no invitation copy left',
+   !/invitation/i.test(s.replace(/\{h:'The website and the iOS app'[\s\S]*?\]\},/, ''))],
+  ['the platform section survives',
+   /\{h:'The website and the iOS app', p:\[/.test(s)],
   ['no "we hold your email"',     !/hold your email address/.test(s)],
   ['Clear my saved data intact',  /onclick="accountReset\(\)"/.test(s)],
   ['no supabase endpoint left',   !/supabase\.co/.test(s)],
