@@ -1,0 +1,84 @@
+{
+ "pages": [
+  {
+   "key": "stroke-p2",
+   "title": "stroke \u2014 page 2",
+   "panel": "\u2460 CIRCLE OF WILLIS (inferior view)",
+   "status": "1 item \u2014 a label that was DELETED and needs restoring. Not a leader move.",
+   "lead": "The correction pass deleted TWO label blocks from this panel: 'Middle Communicating Artery (PCoA)' - correctly, because no such vessel exists and it duplicated the PCoA abbreviation - and 'Posterior Communicating Artery (PCoA)', which is real. Verified on the current live file: the label column now reads ICA, PCA, Basilar Artery, Vertebral Arteries, with no communicating artery entry. The PCoA is one of the two vessels that make the circle a circle, and it is the collateral pathway this panel's own caption is about.",
+   "findings": [
+    {
+     "n": "1",
+     "label": "Posterior Communicating Artery (PCoA) \u2014 RESTORE",
+     "now": [
+      196,
+      530
+     ],
+     "target": [
+      105,
+      487
+     ],
+     "now_desc": "the gap in the label column where the entry used to sit, between \"Posterior Cerebral Artery (PCA)\" and \"Basilar Artery\"",
+     "target_desc": "the short vessel joining the ICA terminus to the PCA, on the viewer-right side of the circle. APPROXIMATE - confirm from source. The mirror vessel on the viewer-left is near (52,483)"
+    }
+   ],
+   "note": "DO NOT restore the 'Middle Communicating Artery' entry - there is no such vessel and deleting it was right. This is a text-plus-leader ADDITION, so it needs the panel's own label font; if that cannot be matched cleanly, send this one to production rather than approximating it. The target coordinate is the least certain thing in this document and is marked so deliberately: the PCoA and the anterior choroidal artery are adjacent in an inferior view and this render does not separate them at the resolution available."
+  },
+  {
+   "key": "aortic-stenosis-p2",
+   "title": "aortic-stenosis \u2014 page 2",
+   "panel": "Cut heart",
+   "status": "2 items \u2014 one ADDITION, one LAYOUT change. Both verified against the current live file.",
+   "lead": "The Pulmonary Trunk label was corrected in v120 and its endpoint is now right - it terminates at (644,512), sampling (134,136,168), on the blue trunk. Two consequences of how that fix was made are still open.",
+   "findings": [
+    {
+     "n": "1",
+     "label": "Inferior Vena Cava \u2014 ADD a label",
+     "now": [
+      365,
+      1010
+     ],
+     "target": [
+      365,
+      1010
+     ],
+     "now_desc": "sampled (97,109,167) - the blue IVC, which the old Pulmonary Trunk label used to point at and which now carries NOTHING",
+     "target_desc": "same point. The page already labels the SUPERIOR vena cava a short distance above, so a reader sees one cava named and one not. One line of type plus a short leader completes the pair"
+    },
+    {
+     "n": "2",
+     "label": "Pulmonary Trunk \u2014 RE-SITE the label block",
+     "now": [
+      644,
+      512
+     ],
+     "target": null,
+     "now_desc": "endpoint CORRECT, sampled (134,136,168) on the blue trunk, ink 93. The problem is the route: the label block stayed at lower-left, so the leader runs diagonally from about (255,1105) across the right ventricle, the tricuspid chordae and the LVOT",
+     "target_desc": "PLACE FROM SOURCE - move the label BLOCK to the upper left or upper centre beside the vessel, then shorten the leader. There is no single pixel to give; this is a layout decision"
+    }
+   ],
+   "note": "Item 1 is the easy one and worth doing even if nothing else here is: it is additive, nothing is erased, and it fixes a visible asymmetry. Item 2 is cosmetic - no reader will misidentify anything - and is raised only because this is a hero anatomy page and the crossing is conspicuous. If the label font cannot be matched for item 1, send both to production."
+  },
+  {
+   "key": "cardiomyopathy-p1",
+   "title": "cardiomyopathy \u2014 page 1",
+   "panel": "One heart split into three phenotype slabs",
+   "status": "1 item \u2014 and it CANNOT be fixed by moving anything. Read the note before touching this page.",
+   "lead": "Verified on the current live file: the ARRHYTHMOGENIC callout still terminates at (772,861), ink 93, inside the RESTRICTIVE slab. Slab boundaries measured from the captions put the dividers at x 352 and x 640, so anything beyond 640 is the restrictive third. Two of the three actionable callouts were fixed in v120; this is the one that was always going to need artwork.",
+   "findings": [
+    {
+     "n": "1",
+     "label": "ARRHYTHMOGENIC",
+     "now": [
+      772,
+      861
+     ],
+     "target": null,
+     "now_desc": "sampled (126,105,133), ink 93 - inside the RESTRICTIVE slab, which is a different phenotype from the one the callout names",
+     "target_desc": "NOTHING TO POINT AT - no arrhythmogenic slab is drawn. Either a fourth slab is added, or the callout is removed"
+    }
+   ],
+   "note": "THE PHOTOSHOP OPTION IS DELETION, NOT MOVEMENT. There is no correct place on this page for this callout, so dragging it anywhere just relocates the error. If you want this page fixed today, delete the ARRHYTHMOGENIC callout and its leader and carry ACM on its own panel later - that is a real fix, not a compromise, because a three-way comparison that shows three phenotypes is honest while a four-way one that shows three is not. The alternative is a production re-render adding a fourth slab, and note it would have to show the RIGHT ventricle: ACM is classically RV, while every existing slab is cut to show the LV. That is why this is artwork rather than layout."
+  }
+ ]
+}
