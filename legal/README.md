@@ -123,14 +123,14 @@ form without him verifying every line. Where it is uncertain it says so.
 | Condition module text | 183 | ⚠ **WAS RECORDED AS PHYSICIAN-AUTHORED. It is not.** The physician confirmed 2026-08-17 that the modules went through the same loop as the artwork: he wrote the prompts, generative AI produced the text, he reviewed and verified it. The inference that it "pre-existed because the quizzes were generated from it" was wrong — both were generated. | **AI — exclude**; claim the prompts, the substantive edits, and the arrangement |
 | Gallery artwork | 1,020 pages | **CONFIRMED by the physician 2026-08-17**: he wrote the prompts, generative AI produced the images, he personally reviewed and verified each one. Not an external pipeline and not commissioned from an illustrator. | **AI — exclude**; claim selection, ordering, page titles, arrangement |
 | Gallery page titles + ordering | 950 | Read and assigned by hand from each page | human |
-| Condition quiz questions | 1,840 | **24 transcribed from the physician's own PDFs** — those are human and pre-existing. The rest: prompts by the physician, AI-generated, reviewed and verified by him (confirmed 2026-08-17) | mostly **AI — exclude**; claim the 24, plus edits and arrangement |
-| USMLE items | 1,010 | Authored with AI assistance — **verify the split** | mostly AI — verify |
+| Condition quiz questions | 1,840 | **24 transcribed from the physician's own PDFs — confirmed 2026-08-17 as the ONLY directly-authored content in the app.** The other 1,816: same loop | **AI — exclude** except the 24, which are the cleanest human claim in the product |
+| USMLE items | 1,010 | **Confirmed 2026-08-17:** prompts by the physician, AI-generated, reviewed and verified by him | **AI — exclude**; claim the prompts and the arrangement |
 | USMLE illustrations | 197 raster | AI-generated (Higgsfield) | **AI — exclude** |
 | USMLE illustrations | 34 vector | 32 ECGs, a genetics pedigree, one other — schematic, authorship **unclear, verify** | verify |
-| NCLEX items | 150 | AI-assisted build — **verify** | verify |
-| Resident entries | 1,418 | Built via the `medcodex-resident-buildout` pipeline = AI-drafted | **AI — exclude**; claim selection and editing |
-| Clinical guideline entries | 470 | **Submitted by the physician**, then heavily corrected during QA | human-authored, human-corrected |
-| Drug entries | 300 | **Verify** | verify |
+| NCLEX items | 150 | **Confirmed 2026-08-17:** same loop | **AI — exclude** |
+| Resident entries | 1,418 | Built via the `medcodex-resident-buildout` pipeline = AI-drafted; consistent with the loop confirmed for everything else | **AI — exclude**; claim selection and editing |
+| Clinical guideline entries | 470 | ⚠ **WAS RECORDED AS HUMAN-AUTHORED. It is not.** Confirmed 2026-08-17: same prompt-generate-review loop. "Submitted by the physician" meant he supplied them, not that he wrote them. | **AI — exclude**; but the QA corrections are a real human claim — see below |
+| Drug entries | 300 | **Confirmed 2026-08-17:** same loop | **AI — exclude** |
 | Clinical calculators | 10 | Nine reproduce **published third-party clinical scores** (Wells, PERC, CHA₂DS₂-VASc…) — third-party material, exclude. The tenth is arithmetic | exclude the nine as third-party |
 | Code (`index.html`, `sw.js`, scripts) | — | Mixed human and AI | verify before a Circular 61 filing |
 | **The compilation itself** | — | The selection, coordination and arrangement of all of it | **human — this is the strongest claim** |
@@ -158,6 +158,25 @@ a starting point for the physician to correct and not a statement of fact.
   That is rewriting, not proofreading.
 - **The 24 transcribed quiz questions**, the gallery page titles and ordering, and the guideline
   entries the physician submitted himself.
+
+**Asked directly which content skipped the loop, the answer on 2026-08-17 was: the 24 transcribed
+quiz questions, and nothing else.** Not the guidelines, not the drugs, not the USMLE or NCLEX items.
+So the position is simple to state and worth stating plainly: **every body of content in this product
+was generated, from prompts the physician wrote, and reviewed by him. The 24 questions are the only
+directly-authored text in it.**
+
+**This retro-explains the guideline QA findings, which is a point in favour of the account rather
+than against it.** That pass found 25 entries stating the opposite of the published result, 16
+citing studies that could not be found, 20 naming the wrong study, and invented trial acronyms
+(LITH-QUE for the real LQD; ESTEEM and ANGLE resolving to nothing). Those are not the mistakes a
+clinician makes transcribing from journals — they are exactly what generated text does. The
+inventory row said "submitted by the physician, then heavily corrected", and "submitted" was doing
+quiet work that nobody questioned.
+
+It also means **the guideline QA corrections are among the strongest human claims in the product.**
+Reversing a stated result, replacing a fabricated citation and dropping an aspirational claim is
+authorship, not proofreading, and it is documented entry by entry in `CORRECTIONS-all.md`. That file
+is evidence, and it should go to counsel with the inventory.
 
 ⚠ **"I reviewed and verified it" is not authorship**, and the distinction has to survive into the
 filing. Verifying an output is quality control. What may count is *controlling the expressive
@@ -240,16 +259,15 @@ A design patent on the GUI's ornamental appearance is the only variant worth eve
 ## Open loops
 
 - [ ] **The provenance inventory above, verified by the physician.** Blocks the copyright filing.
-      **Partly done 2026-08-17:** the artwork, the condition module text and the questions are
-      confirmed as prompt-generated, AI-produced and physician-reviewed. Four lines still say
-      "verify" and one of them was wrong before he looked, so the rest are worth asking about
-      directly rather than inferring:
-      **the 24 quiz questions** transcribed from his own PDFs (were those PDFs his pre-existing
-      work?), **the 470 guideline entries** he submitted (written by him, or gathered?),
-      **the 300 drug entries**, **the 150 NCLEX items**, **the 1,010 USMLE items**, and the
-      **34 vector USMLE illustrations** including the 32 ECGs.
-      Also worth settling: where he **rewrote** AI output rather than accepting it, since those
-      edits are a human claim and the guideline QA pass shows they were substantial.
+      **DONE 2026-08-17 for every line that said "verify" except one.** Artwork, condition modules,
+      questions, guidelines, drugs, USMLE and NCLEX are all confirmed as prompt-generated,
+      AI-produced and physician-reviewed. **Only the 24 transcribed quiz questions were written
+      directly.** Two lines remain: the **34 vector USMLE illustrations** (32 ECGs, a genetics
+      pedigree, one other — hand-built schematics, so plausibly human, but unasked), and **the
+      code**.
+      Still to quantify rather than confirm: where he **rewrote** AI output rather than accepting
+      it. `CORRECTIONS-all.md` documents that entry by entry for the guidelines and is the best
+      evidence in the repo for a human claim.
 - [ ] Trademark: create the USPTO.gov account (identity verification has a lead time), lock the
       goods/services wording from the ID Manual, then file. Full detail in `trademark-plan.md`.
 - [ ] **Fee figures in both documents are unverified.** `uspto.gov` and `copyright.gov` are both

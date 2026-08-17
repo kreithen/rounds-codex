@@ -173,8 +173,25 @@ attribution is the plural framing, and nothing promises an AI tutor.
 - **App Review notes** — paste verbatim from the draft. The Guideline 1.4.1 answer on the dosage
   calculator is good as written.
 - **Sign-in required: No.**
-- **Screenshots** — 6.9" iPhone and 13" iPad, at least 6 each. The eight shots and captions are in
-  the draft. Guideline 2.3.3: they must be the real app.
+- **Screenshots** — 6.9" iPhone and 13" iPad. **`native/SCREENSHOT-SHOTLIST.md`** has all eight
+  with the exact navigation, the simulator status-bar command, and the four things not to
+  photograph. Shot 6 (the review card) is the only one that needs setting up in advance.
+
+## 8b. One command before you archive
+
+```sh
+RC_PW=<dir with node_modules/playwright-core> sh scripts/preflight.sh ios ../rounds-codex-app
+```
+
+Builds the payload and runs every guard against **the bytes that go in the bundle**, not the ones
+they came from: service worker, fonts, the full app end-to-end, the iOS variant's 28 checks, the
+shipped counts, and whether the asset pack plan still matches the tree. One pass/fail summary.
+
+Without `RC_PW` the browser suites are **skipped and reported as skipped** — which is not the same
+as green, and the script says so rather than printing a clean bill.
+
+`sh scripts/preflight.sh web ../rounds-codex-app` is the same thing for the website, and adds the
+version/copyright, legal-page and AASA checks that only apply there.
 
 ## 9. Before you press submit
 
