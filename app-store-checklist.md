@@ -119,8 +119,10 @@ anything, so **"Data Not Collected" is now true of the binary** rather than near
 verifier measures this rather than asserting it from the source — it watches every request over the
 whole session and fails if one leaves the origin.
 
-**Still to do by hand, and this script does not own those files:** the App Store description and
-`app-store-submission-draft.md` both still promise an AI tutor.
+**Handled by hand 2026-08-17:** `app-store-submission-draft.md` §3 is rewritten around this and
+now carries the rule that nothing in the listing may promise an AI tutor, an assistant, or answers.
+The drafted Description, Promotional Text and Keywords turned out never to mention it, so there was
+no listing copy to change — the claim lived only in the manifest and in that section's own analysis.
 
 **The fix for 1.4 is a decision, and the better answer is one policy that covers both platforms**
 rather than two policies: a short paragraph saying the website requires an invitation and stores
@@ -149,8 +151,11 @@ avoid.
       the current privacy wording and will **abort loudly** rather than half-apply once that
       paragraph lands — update the two together.
 - [x] **Ask Rounds Codex in the native bundle** — §1.5. Dropped from the variant, 2026-08-17.
-- [ ] **Store copy still promises an AI tutor** — the App Store description and
-      `app-store-submission-draft.md`. `manifest.webmanifest` is handled by the variant script.
+- [x] **Store copy must not promise an AI tutor** — closed 2026-08-17.
+      `app-store-submission-draft.md` §3 is rewritten around it and now carries the standing rule.
+      The drafted **Description, Promotional Text and Keywords never mentioned it**, so there was
+      no listing copy to change; `manifest.webmanifest` is handled by the variant script. The web
+      manifest keeps the phrase and is correct — the feature is real there.
 - [ ] **Screenshots** — 6.9" iPhone required, 13" iPad strongly recommended, at least 6 each. The
       eight shots and their captions are drafted in `app-store-submission-draft.md` §Screenshots and
       that part is still good. **Needs a Mac; cannot be produced from a session.**
@@ -183,8 +188,8 @@ assumed it was not; **"peer-reviewed" remains forbidden.**
 
 One correction to `app-store-submission-draft.md`'s own checklist: it flags `manifest.webmanifest`
 for three things and **two are already resolved** — the count reads 183, and "clinically-reviewed"
-is permitted. Only **"an AI study tutor"** is still worth a second look, because it invites a
-question about what generates the answers.
+is permitted. **"An AI study tutor" is settled** — see §1.5: the feature is dropped from the iOS
+build and the variant script rewrites the phrase. The web manifest keeps it and is correct.
 
 - [ ] Refresh every count in the description, promotional text and review notes
 - [ ] Rewrite the attribution lines

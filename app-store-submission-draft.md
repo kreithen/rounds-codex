@@ -97,20 +97,55 @@ PDF')"`. It shows a message and does nothing. The button on the gallery page bel
 Reviewers do tap things. A control that announces a feature and doesn't perform it is exactly what
 "App Completeness" is about. Point it at `rcGalleryPDF(GID)` and it's done.
 
-### 3. "Clinically-reviewed" — Guideline 2.3.1 and 1.4.1
+### 3. "An AI study tutor" — Guideline 2.1, and it is no longer about "clinically-reviewed"
 
-`manifest.webmanifest` currently says:
+> **REWRITTEN 2026-08-17. This section used to be headed "Clinically-reviewed" and made two
+> arguments, and both have since been overtaken.** "Clinically reviewed" is **allowed** as of
+> 2026-08-09 — the old rule conflated it with "peer-reviewed", which means independent
+> pre-publication review by other experts and stays forbidden; see `marketing-brief.md`. And the
+> count was never fixed at 181: it is **183**, which `manifest.webmanifest` already says. The
+> section survives for the one claim that was and is a real problem.
 
-> "180 clinically-reviewed conditions, visual atlases, mastery quizzes, and an AI study tutor."
+`manifest.webmanifest` says:
 
-Two problems. **No independent medical review has happened** — the quiz questions and condition
-text were authored and self-checked. And "AI study tutor" invites questions about what generates
-the answers.
+> "Interactive clinical learning for nursing & medical students — 183 clinically-reviewed
+> conditions, visual atlases, mastery quizzes, and an **AI study tutor**."
 
-Under 1.4.1 medical apps get extra scrutiny, and an accuracy claim you can't support is worse than
-no claim. Every draft below says "written by a physician", which is true and is actually the
-stronger claim. **Fix the manifest string before archiving** — a reviewer can read it, and it is
-also wrong about the count (181, not 180).
+The first three quarters of that are true on both platforms. The last four words are **true on the
+web and false in the App Store build**, and the reason is worth stating rather than summarising.
+
+Ask Rounds Codex POSTs to `/.netlify/functions/ask`, a real Claude-backed RAG endpoint, and on any
+failure falls back to `answer(q)` — a keyword matcher over a **five-entry** table. A native bundle
+serves from a local origin, so that endpoint 404s on every question and the fallback is the only
+behaviour there is. Measured on 2026-08-17 rather than reasoned about: with no `ask` function
+reachable, the four starter buttons answer convincingly (they *are* four of the five entries) and
+every other question — community-acquired pneumonia, hyponatremia workup, Ranson criteria — returns
+the same paragraph, "I'd ground this in the relevant Rounds Codex condition entry…", beneath a
+source chip reading **Rounds Codex → Rounds Codex Library**.
+
+That is the same shape as the viewer's PDF stub in §2 above — which was itself fixed in v72, months
+after it shipped, for exactly this reason — and worse in one respect: the deflection *reads* like an
+answer and carries a citation, so it does not look broken. A promise in the store listing that a
+reviewer can disprove by typing one question is a **Guideline 2.1** finding with the evidence
+handed over.
+
+**Decided 2026-08-17: Ask is dropped from the iOS build entirely** and stays on the web, where the
+endpoint is real. `scripts/build_ios_variant.js` removes the feature and rewrites the manifest to
+"…mastery quizzes, and narrated modules — all offline." **Nothing in this document may promise an
+AI tutor, an assistant, or answers of any kind.** As drafted below it does not — the Description,
+Promotional Text and Keywords never mention it, which is why this is a one-line fix in the manifest
+and a standing rule here rather than a rewrite of the copy.
+
+There is a second-order consequence worth carrying: Ask was the **only** thing in the app that
+transmitted anything, so removing it is what makes the "Data Not Collected" nutrition label below
+true of the binary rather than nearly true.
+
+**Still open, and it is not this section's:** the attribution lines. "Written and illustrated by a
+practising physician" in the Description and "Written by a physician" in the Promotional Text are
+both superseded by the plural framing decided 2026-08-09 — "created by a team of clinicians", or
+"created and clinically reviewed by practising clinicians", with Dr. Kreithen named in the app as
+Founder & Clinical Lead. That is tracked in `app-store-checklist.md` §3 along with every stale
+count, and deliberately not patched piecemeal here.
 
 ### 4. No public privacy policy URL — a hard blocker on the form
 
@@ -402,7 +437,10 @@ Ordered so that if you stop partway, you've done the parts that matter.
 - [ ] **Restore the first-run disclaimer** (`LOGIN-WALL-id-collision.md`) — the review notes above
       claim it appears before any content is reachable, and right now that is not true
 - [ ] **Fix the viewer's PDF button** — `toast()` → `rcGalleryPDF(GID)`
-- [ ] **Fix `manifest.webmanifest`** — drop "clinically-reviewed", drop "AI study tutor", 180 → 181
+- [x] **Fix `manifest.webmanifest`** — done for iOS by `scripts/build_ios_variant.js`, which drops
+      "AI study tutor" along with the feature (§3). The other two items on this line were wrong:
+      "clinically-reviewed" is **allowed** as of 2026-08-09, and the count is **183**, which the
+      manifest already says. The **web** manifest is correct as it stands — do not "fix" it.
 
 **Strongly recommended before review**
 

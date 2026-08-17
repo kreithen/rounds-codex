@@ -179,8 +179,12 @@ items, **150** NCLEX items, **300** drugs, **470** guideline entries across **25
 **1,418** resident entries, **10** calculators, **197** illustrated USMLE items.
 
 Still open: the **support URL** page (does not exist; `teacher@roundscodex.com` is the address), the
-age-rating questionnaire, export compliance, and the "AI study tutor" phrasing in
-`manifest.webmanifest`.
+age-rating questionnaire, and export compliance.
+
+**"AI study tutor" in `manifest.webmanifest` is closed** (2026-08-17). Ask Rounds Codex is dropped
+from the iOS build — in a local-origin bundle it could only ever be its five-entry keyword fallback
+— and `scripts/build_ios_variant.js` rewrites the phrase. `app-store-submission-draft.md` §3 is
+rewritten around it. The web keeps the feature and the phrase; both are correct there.
 
 ---
 
