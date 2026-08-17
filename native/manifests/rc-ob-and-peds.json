@@ -1,0 +1,209 @@
+{
+  "assetPackID": "rc-ob-and-peds",
+  "downloadPolicy": {
+    "onDemand": {}
+  },
+  "fileSelectors": [
+    {
+      "file": "assets/preeclampsia/preeclampsia-01.jpg"
+    },
+    {
+      "file": "assets/preeclampsia/preeclampsia-02.jpg"
+    },
+    {
+      "file": "assets/preeclampsia/preeclampsia-03.jpg"
+    },
+    {
+      "file": "assets/preeclampsia/preeclampsia-04.jpg"
+    },
+    {
+      "file": "assets/preeclampsia/preeclampsia-05.jpg"
+    },
+    {
+      "file": "assets/preeclampsia/preeclampsia-06.jpg"
+    },
+    {
+      "file": "assets/preeclampsia/preeclampsia-07.jpg"
+    },
+    {
+      "file": "assets/preeclampsia/preeclampsia-08.jpg"
+    },
+    {
+      "file": "assets/preeclampsia/preeclampsia-09.jpg"
+    },
+    {
+      "file": "assets/preeclampsia/preeclampsia-10.jpg"
+    },
+    {
+      "file": "assets/preeclampsia/preeclampsia-gallery.pdf"
+    },
+    {
+      "file": "assets/gdm/gdm-01.jpg"
+    },
+    {
+      "file": "assets/gdm/gdm-02.jpg"
+    },
+    {
+      "file": "assets/gdm/gdm-03.jpg"
+    },
+    {
+      "file": "assets/gdm/gdm-04.jpg"
+    },
+    {
+      "file": "assets/gdm/gdm-05.jpg"
+    },
+    {
+      "file": "assets/gdm/gdm-06.jpg"
+    },
+    {
+      "file": "assets/gdm/gdm-07.jpg"
+    },
+    {
+      "file": "assets/gdm/gdm-08.jpg"
+    },
+    {
+      "file": "assets/gdm/gdm-09.jpg"
+    },
+    {
+      "file": "assets/gdm/gdm-10.jpg"
+    },
+    {
+      "file": "assets/gdm/gdm-gallery.pdf"
+    },
+    {
+      "file": "assets/pph/pph-01.jpg"
+    },
+    {
+      "file": "assets/pph/pph-02.jpg"
+    },
+    {
+      "file": "assets/pph/pph-03.jpg"
+    },
+    {
+      "file": "assets/pph/pph-04.jpg"
+    },
+    {
+      "file": "assets/pph/pph-05.jpg"
+    },
+    {
+      "file": "assets/pph/pph-06.jpg"
+    },
+    {
+      "file": "assets/pph/pph-07.jpg"
+    },
+    {
+      "file": "assets/pph/pph-08.jpg"
+    },
+    {
+      "file": "assets/pph/pph-09.jpg"
+    },
+    {
+      "file": "assets/pph/pph-10.jpg"
+    },
+    {
+      "file": "assets/pph/pph-gallery.pdf"
+    },
+    {
+      "file": "assets/labor/labor-01.jpg"
+    },
+    {
+      "file": "assets/labor/labor-02.jpg"
+    },
+    {
+      "file": "assets/labor/labor-03.jpg"
+    },
+    {
+      "file": "assets/labor/labor-04.jpg"
+    },
+    {
+      "file": "assets/labor/labor-05.jpg"
+    },
+    {
+      "file": "assets/labor/labor-06.jpg"
+    },
+    {
+      "file": "assets/labor/labor-07.jpg"
+    },
+    {
+      "file": "assets/labor/labor-08.jpg"
+    },
+    {
+      "file": "assets/labor/labor-09.jpg"
+    },
+    {
+      "file": "assets/labor/labor-10.jpg"
+    },
+    {
+      "file": "assets/labor/labor-gallery.pdf"
+    },
+    {
+      "file": "assets/bronchiolitis/bronchiolitis-01.jpg"
+    },
+    {
+      "file": "assets/bronchiolitis/bronchiolitis-02.jpg"
+    },
+    {
+      "file": "assets/bronchiolitis/bronchiolitis-03.jpg"
+    },
+    {
+      "file": "assets/bronchiolitis/bronchiolitis-04.jpg"
+    },
+    {
+      "file": "assets/bronchiolitis/bronchiolitis-05.jpg"
+    },
+    {
+      "file": "assets/bronchiolitis/bronchiolitis-06.jpg"
+    },
+    {
+      "file": "assets/bronchiolitis/bronchiolitis-07.jpg"
+    },
+    {
+      "file": "assets/bronchiolitis/bronchiolitis-08.jpg"
+    },
+    {
+      "file": "assets/bronchiolitis/bronchiolitis-09.jpg"
+    },
+    {
+      "file": "assets/bronchiolitis/bronchiolitis-10.jpg"
+    },
+    {
+      "file": "assets/bronchiolitis/bronchiolitis-gallery.pdf"
+    },
+    {
+      "file": "assets/croup/croup-01.jpg"
+    },
+    {
+      "file": "assets/croup/croup-02.jpg"
+    },
+    {
+      "file": "assets/croup/croup-03.jpg"
+    },
+    {
+      "file": "assets/croup/croup-04.jpg"
+    },
+    {
+      "file": "assets/croup/croup-05.jpg"
+    },
+    {
+      "file": "assets/croup/croup-06.jpg"
+    },
+    {
+      "file": "assets/croup/croup-07.jpg"
+    },
+    {
+      "file": "assets/croup/croup-08.jpg"
+    },
+    {
+      "file": "assets/croup/croup-09.jpg"
+    },
+    {
+      "file": "assets/croup/croup-10.jpg"
+    },
+    {
+      "file": "assets/croup/croup-gallery.pdf"
+    }
+  ],
+  "platforms": [
+    "iOS"
+  ]
+}

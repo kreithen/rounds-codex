@@ -1,0 +1,242 @@
+{
+  "assetPackID": "rc-renal-and-gu",
+  "downloadPolicy": {
+    "onDemand": {}
+  },
+  "fileSelectors": [
+    {
+      "file": "assets/aki/aki-01.jpg"
+    },
+    {
+      "file": "assets/aki/aki-02.jpg"
+    },
+    {
+      "file": "assets/aki/aki-03.jpg"
+    },
+    {
+      "file": "assets/aki/aki-04.jpg"
+    },
+    {
+      "file": "assets/aki/aki-05.jpg"
+    },
+    {
+      "file": "assets/aki/aki-06.jpg"
+    },
+    {
+      "file": "assets/aki/aki-07.jpg"
+    },
+    {
+      "file": "assets/aki/aki-08.jpg"
+    },
+    {
+      "file": "assets/aki/aki-09.jpg"
+    },
+    {
+      "file": "assets/aki/aki-10.jpg"
+    },
+    {
+      "file": "assets/aki/aki-gallery.pdf"
+    },
+    {
+      "file": "assets/uti/uti-01.jpg"
+    },
+    {
+      "file": "assets/uti/uti-02.jpg"
+    },
+    {
+      "file": "assets/uti/uti-03.jpg"
+    },
+    {
+      "file": "assets/uti/uti-04.jpg"
+    },
+    {
+      "file": "assets/uti/uti-05.jpg"
+    },
+    {
+      "file": "assets/uti/uti-06.jpg"
+    },
+    {
+      "file": "assets/uti/uti-07.jpg"
+    },
+    {
+      "file": "assets/uti/uti-08.jpg"
+    },
+    {
+      "file": "assets/uti/uti-09.jpg"
+    },
+    {
+      "file": "assets/uti/uti-10.jpg"
+    },
+    {
+      "file": "assets/uti/uti-gallery.pdf"
+    },
+    {
+      "file": "assets/ckd/ckd-01.jpg"
+    },
+    {
+      "file": "assets/ckd/ckd-02.jpg"
+    },
+    {
+      "file": "assets/ckd/ckd-03.jpg"
+    },
+    {
+      "file": "assets/ckd/ckd-04.jpg"
+    },
+    {
+      "file": "assets/ckd/ckd-05.jpg"
+    },
+    {
+      "file": "assets/ckd/ckd-06.jpg"
+    },
+    {
+      "file": "assets/ckd/ckd-07.jpg"
+    },
+    {
+      "file": "assets/ckd/ckd-08.jpg"
+    },
+    {
+      "file": "assets/ckd/ckd-09.jpg"
+    },
+    {
+      "file": "assets/ckd/ckd-10.jpg"
+    },
+    {
+      "file": "assets/ckd/ckd-gallery.pdf"
+    },
+    {
+      "file": "assets/nephrolithiasis/nephrolithiasis-01.jpg"
+    },
+    {
+      "file": "assets/nephrolithiasis/nephrolithiasis-02.jpg"
+    },
+    {
+      "file": "assets/nephrolithiasis/nephrolithiasis-03.jpg"
+    },
+    {
+      "file": "assets/nephrolithiasis/nephrolithiasis-04.jpg"
+    },
+    {
+      "file": "assets/nephrolithiasis/nephrolithiasis-05.jpg"
+    },
+    {
+      "file": "assets/nephrolithiasis/nephrolithiasis-06.jpg"
+    },
+    {
+      "file": "assets/nephrolithiasis/nephrolithiasis-07.jpg"
+    },
+    {
+      "file": "assets/nephrolithiasis/nephrolithiasis-08.jpg"
+    },
+    {
+      "file": "assets/nephrolithiasis/nephrolithiasis-09.jpg"
+    },
+    {
+      "file": "assets/nephrolithiasis/nephrolithiasis-10.jpg"
+    },
+    {
+      "file": "assets/nephrolithiasis/nephrolithiasis-gallery.pdf"
+    },
+    {
+      "file": "assets/hyperkalemia/hyperkalemia-01.jpg"
+    },
+    {
+      "file": "assets/hyperkalemia/hyperkalemia-02.jpg"
+    },
+    {
+      "file": "assets/hyperkalemia/hyperkalemia-03.jpg"
+    },
+    {
+      "file": "assets/hyperkalemia/hyperkalemia-04.jpg"
+    },
+    {
+      "file": "assets/hyperkalemia/hyperkalemia-05.jpg"
+    },
+    {
+      "file": "assets/hyperkalemia/hyperkalemia-06.jpg"
+    },
+    {
+      "file": "assets/hyperkalemia/hyperkalemia-07.jpg"
+    },
+    {
+      "file": "assets/hyperkalemia/hyperkalemia-08.jpg"
+    },
+    {
+      "file": "assets/hyperkalemia/hyperkalemia-09.jpg"
+    },
+    {
+      "file": "assets/hyperkalemia/hyperkalemia-10.jpg"
+    },
+    {
+      "file": "assets/hyperkalemia/hyperkalemia-gallery.pdf"
+    },
+    {
+      "file": "assets/bph/bph-01.jpg"
+    },
+    {
+      "file": "assets/bph/bph-02.jpg"
+    },
+    {
+      "file": "assets/bph/bph-03.jpg"
+    },
+    {
+      "file": "assets/bph/bph-04.jpg"
+    },
+    {
+      "file": "assets/bph/bph-05.jpg"
+    },
+    {
+      "file": "assets/bph/bph-06.jpg"
+    },
+    {
+      "file": "assets/bph/bph-07.jpg"
+    },
+    {
+      "file": "assets/bph/bph-08.jpg"
+    },
+    {
+      "file": "assets/bph/bph-09.jpg"
+    },
+    {
+      "file": "assets/bph/bph-10.jpg"
+    },
+    {
+      "file": "assets/bph/bph-gallery.pdf"
+    },
+    {
+      "file": "assets/hyponatremia/hyponatremia-01.jpg"
+    },
+    {
+      "file": "assets/hyponatremia/hyponatremia-02.jpg"
+    },
+    {
+      "file": "assets/hyponatremia/hyponatremia-03.jpg"
+    },
+    {
+      "file": "assets/hyponatremia/hyponatremia-04.jpg"
+    },
+    {
+      "file": "assets/hyponatremia/hyponatremia-05.jpg"
+    },
+    {
+      "file": "assets/hyponatremia/hyponatremia-06.jpg"
+    },
+    {
+      "file": "assets/hyponatremia/hyponatremia-07.jpg"
+    },
+    {
+      "file": "assets/hyponatremia/hyponatremia-08.jpg"
+    },
+    {
+      "file": "assets/hyponatremia/hyponatremia-09.jpg"
+    },
+    {
+      "file": "assets/hyponatremia/hyponatremia-10.jpg"
+    },
+    {
+      "file": "assets/hyponatremia/hyponatremia-gallery.pdf"
+    }
+  ],
+  "platforms": [
+    "iOS"
+  ]
+}

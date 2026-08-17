@@ -1,0 +1,479 @@
+{
+  "assetPackID": "rc-cardiac",
+  "downloadPolicy": {
+    "onDemand": {}
+  },
+  "fileSelectors": [
+    {
+      "file": "assets/heart-failure/hf-01.jpg"
+    },
+    {
+      "file": "assets/heart-failure/hf-02.jpg"
+    },
+    {
+      "file": "assets/heart-failure/hf-03.jpg"
+    },
+    {
+      "file": "assets/heart-failure/hf-04.jpg"
+    },
+    {
+      "file": "assets/heart-failure/hf-05.jpg"
+    },
+    {
+      "file": "assets/heart-failure/hf-06.jpg"
+    },
+    {
+      "file": "assets/heart-failure/hf-07.jpg"
+    },
+    {
+      "file": "assets/heart-failure/hf-08.jpg"
+    },
+    {
+      "file": "assets/heart-failure/hf-09.jpg"
+    },
+    {
+      "file": "assets/heart-failure/hf-10.jpg"
+    },
+    {
+      "file": "assets/heart-failure/heart-failure-gallery.pdf"
+    },
+    {
+      "file": "assets/acs/acs-01.jpg"
+    },
+    {
+      "file": "assets/acs/acs-02.jpg"
+    },
+    {
+      "file": "assets/acs/acs-03.jpg"
+    },
+    {
+      "file": "assets/acs/acs-04.jpg"
+    },
+    {
+      "file": "assets/acs/acs-05.jpg"
+    },
+    {
+      "file": "assets/acs/acs-06.jpg"
+    },
+    {
+      "file": "assets/acs/acs-07.jpg"
+    },
+    {
+      "file": "assets/acs/acs-08.jpg"
+    },
+    {
+      "file": "assets/acs/acs-09.jpg"
+    },
+    {
+      "file": "assets/acs/acs-10.jpg"
+    },
+    {
+      "file": "assets/acs/acs-gallery.pdf"
+    },
+    {
+      "file": "assets/afib/afib-01.jpg"
+    },
+    {
+      "file": "assets/afib/afib-02.jpg"
+    },
+    {
+      "file": "assets/afib/afib-03.jpg"
+    },
+    {
+      "file": "assets/afib/afib-04.jpg"
+    },
+    {
+      "file": "assets/afib/afib-05.jpg"
+    },
+    {
+      "file": "assets/afib/afib-06.jpg"
+    },
+    {
+      "file": "assets/afib/afib-07.jpg"
+    },
+    {
+      "file": "assets/afib/afib-08.jpg"
+    },
+    {
+      "file": "assets/afib/afib-09.jpg"
+    },
+    {
+      "file": "assets/afib/afib-10.jpg"
+    },
+    {
+      "file": "assets/afib/afib-gallery.pdf"
+    },
+    {
+      "file": "assets/htn/htn-01.jpg"
+    },
+    {
+      "file": "assets/htn/htn-02.jpg"
+    },
+    {
+      "file": "assets/htn/htn-03.jpg"
+    },
+    {
+      "file": "assets/htn/htn-04.jpg"
+    },
+    {
+      "file": "assets/htn/htn-05.jpg"
+    },
+    {
+      "file": "assets/htn/htn-06.jpg"
+    },
+    {
+      "file": "assets/htn/htn-07.jpg"
+    },
+    {
+      "file": "assets/htn/htn-08.jpg"
+    },
+    {
+      "file": "assets/htn/htn-09.jpg"
+    },
+    {
+      "file": "assets/htn/htn-10.jpg"
+    },
+    {
+      "file": "assets/htn/htn-gallery.pdf"
+    },
+    {
+      "file": "assets/aortic-stenosis/aortic-stenosis-01.jpg"
+    },
+    {
+      "file": "assets/aortic-stenosis/aortic-stenosis-02.jpg"
+    },
+    {
+      "file": "assets/aortic-stenosis/aortic-stenosis-03.jpg"
+    },
+    {
+      "file": "assets/aortic-stenosis/aortic-stenosis-04.jpg"
+    },
+    {
+      "file": "assets/aortic-stenosis/aortic-stenosis-05.jpg"
+    },
+    {
+      "file": "assets/aortic-stenosis/aortic-stenosis-06.jpg"
+    },
+    {
+      "file": "assets/aortic-stenosis/aortic-stenosis-07.jpg"
+    },
+    {
+      "file": "assets/aortic-stenosis/aortic-stenosis-08.jpg"
+    },
+    {
+      "file": "assets/aortic-stenosis/aortic-stenosis-09.jpg"
+    },
+    {
+      "file": "assets/aortic-stenosis/aortic-stenosis-10.jpg"
+    },
+    {
+      "file": "assets/aortic-stenosis/aortic-stenosis-gallery.pdf"
+    },
+    {
+      "file": "assets/endocarditis/endocarditis-01.jpg"
+    },
+    {
+      "file": "assets/endocarditis/endocarditis-02.jpg"
+    },
+    {
+      "file": "assets/endocarditis/endocarditis-03.jpg"
+    },
+    {
+      "file": "assets/endocarditis/endocarditis-04.jpg"
+    },
+    {
+      "file": "assets/endocarditis/endocarditis-05.jpg"
+    },
+    {
+      "file": "assets/endocarditis/endocarditis-06.jpg"
+    },
+    {
+      "file": "assets/endocarditis/endocarditis-07.jpg"
+    },
+    {
+      "file": "assets/endocarditis/endocarditis-08.jpg"
+    },
+    {
+      "file": "assets/endocarditis/endocarditis-09.jpg"
+    },
+    {
+      "file": "assets/endocarditis/endocarditis-10.jpg"
+    },
+    {
+      "file": "assets/endocarditis/endocarditis-gallery.pdf"
+    },
+    {
+      "file": "assets/pericarditis/pericarditis-01.jpg"
+    },
+    {
+      "file": "assets/pericarditis/pericarditis-02.jpg"
+    },
+    {
+      "file": "assets/pericarditis/pericarditis-03.jpg"
+    },
+    {
+      "file": "assets/pericarditis/pericarditis-04.jpg"
+    },
+    {
+      "file": "assets/pericarditis/pericarditis-05.jpg"
+    },
+    {
+      "file": "assets/pericarditis/pericarditis-06.jpg"
+    },
+    {
+      "file": "assets/pericarditis/pericarditis-07.jpg"
+    },
+    {
+      "file": "assets/pericarditis/pericarditis-08.jpg"
+    },
+    {
+      "file": "assets/pericarditis/pericarditis-09.jpg"
+    },
+    {
+      "file": "assets/pericarditis/pericarditis-10.jpg"
+    },
+    {
+      "file": "assets/pericarditis/pericarditis-gallery.pdf"
+    },
+    {
+      "file": "assets/cardiomyopathy/cardiomyopathy-01.jpg"
+    },
+    {
+      "file": "assets/cardiomyopathy/cardiomyopathy-02.jpg"
+    },
+    {
+      "file": "assets/cardiomyopathy/cardiomyopathy-03.jpg"
+    },
+    {
+      "file": "assets/cardiomyopathy/cardiomyopathy-04.jpg"
+    },
+    {
+      "file": "assets/cardiomyopathy/cardiomyopathy-05.jpg"
+    },
+    {
+      "file": "assets/cardiomyopathy/cardiomyopathy-06.jpg"
+    },
+    {
+      "file": "assets/cardiomyopathy/cardiomyopathy-07.jpg"
+    },
+    {
+      "file": "assets/cardiomyopathy/cardiomyopathy-08.jpg"
+    },
+    {
+      "file": "assets/cardiomyopathy/cardiomyopathy-09.jpg"
+    },
+    {
+      "file": "assets/cardiomyopathy/cardiomyopathy-10.jpg"
+    },
+    {
+      "file": "assets/cardiomyopathy/cardiomyopathy-gallery.pdf"
+    },
+    {
+      "file": "pad-upload/assets/pad/pad-01.jpg"
+    },
+    {
+      "file": "pad-upload/assets/pad/pad-02.jpg"
+    },
+    {
+      "file": "pad-upload/assets/pad/pad-03.jpg"
+    },
+    {
+      "file": "pad-upload/assets/pad/pad-04.jpg"
+    },
+    {
+      "file": "pad-upload/assets/pad/pad-05.jpg"
+    },
+    {
+      "file": "pad-upload/assets/pad/pad-06.jpg"
+    },
+    {
+      "file": "pad-upload/assets/pad/pad-07.jpg"
+    },
+    {
+      "file": "pad-upload/assets/pad/pad-08.jpg"
+    },
+    {
+      "file": "pad-upload/assets/pad/pad-09.jpg"
+    },
+    {
+      "file": "pad-upload/assets/pad/pad-10.jpg"
+    },
+    {
+      "file": "pad-upload/assets/pad/pad-gallery.pdf"
+    },
+    {
+      "file": "dvt-upload/assets/dvt/dvt-01.jpg"
+    },
+    {
+      "file": "dvt-upload/assets/dvt/dvt-02.jpg"
+    },
+    {
+      "file": "dvt-upload/assets/dvt/dvt-03.jpg"
+    },
+    {
+      "file": "dvt-upload/assets/dvt/dvt-04.jpg"
+    },
+    {
+      "file": "dvt-upload/assets/dvt/dvt-05.jpg"
+    },
+    {
+      "file": "dvt-upload/assets/dvt/dvt-06.jpg"
+    },
+    {
+      "file": "dvt-upload/assets/dvt/dvt-07.jpg"
+    },
+    {
+      "file": "dvt-upload/assets/dvt/dvt-08.jpg"
+    },
+    {
+      "file": "dvt-upload/assets/dvt/dvt-09.jpg"
+    },
+    {
+      "file": "dvt-upload/assets/dvt/dvt-10.jpg"
+    },
+    {
+      "file": "dvt-upload/assets/dvt/dvt-gallery.pdf"
+    },
+    {
+      "file": "aortic-dissection-upload/assets/aortic-dissection/aortic-dissection-01.jpg"
+    },
+    {
+      "file": "aortic-dissection-upload/assets/aortic-dissection/aortic-dissection-02.jpg"
+    },
+    {
+      "file": "aortic-dissection-upload/assets/aortic-dissection/aortic-dissection-03.jpg"
+    },
+    {
+      "file": "aortic-dissection-upload/assets/aortic-dissection/aortic-dissection-04.jpg"
+    },
+    {
+      "file": "aortic-dissection-upload/assets/aortic-dissection/aortic-dissection-05.jpg"
+    },
+    {
+      "file": "aortic-dissection-upload/assets/aortic-dissection/aortic-dissection-06.jpg"
+    },
+    {
+      "file": "aortic-dissection-upload/assets/aortic-dissection/aortic-dissection-07.jpg"
+    },
+    {
+      "file": "aortic-dissection-upload/assets/aortic-dissection/aortic-dissection-08.jpg"
+    },
+    {
+      "file": "aortic-dissection-upload/assets/aortic-dissection/aortic-dissection-09.jpg"
+    },
+    {
+      "file": "aortic-dissection-upload/assets/aortic-dissection/aortic-dissection-10.jpg"
+    },
+    {
+      "file": "aortic-dissection-upload/assets/aortic-dissection/aortic-dissection-gallery.pdf"
+    },
+    {
+      "file": "cardiac-arrest-upload/assets/cardiac-arrest/cardiac-arrest-01.jpg"
+    },
+    {
+      "file": "cardiac-arrest-upload/assets/cardiac-arrest/cardiac-arrest-02.jpg"
+    },
+    {
+      "file": "cardiac-arrest-upload/assets/cardiac-arrest/cardiac-arrest-03.jpg"
+    },
+    {
+      "file": "cardiac-arrest-upload/assets/cardiac-arrest/cardiac-arrest-04.jpg"
+    },
+    {
+      "file": "cardiac-arrest-upload/assets/cardiac-arrest/cardiac-arrest-05.jpg"
+    },
+    {
+      "file": "cardiac-arrest-upload/assets/cardiac-arrest/cardiac-arrest-06.jpg"
+    },
+    {
+      "file": "cardiac-arrest-upload/assets/cardiac-arrest/cardiac-arrest-07.jpg"
+    },
+    {
+      "file": "cardiac-arrest-upload/assets/cardiac-arrest/cardiac-arrest-08.jpg"
+    },
+    {
+      "file": "cardiac-arrest-upload/assets/cardiac-arrest/cardiac-arrest-09.jpg"
+    },
+    {
+      "file": "cardiac-arrest-upload/assets/cardiac-arrest/cardiac-arrest-10.jpg"
+    },
+    {
+      "file": "cardiac-arrest-upload/assets/cardiac-arrest/cardiac-arrest-gallery.pdf"
+    },
+    {
+      "file": "hyperlipidemia-upload/assets/hyperlipidemia/hyperlipidemia-01.jpg"
+    },
+    {
+      "file": "hyperlipidemia-upload/assets/hyperlipidemia/hyperlipidemia-02.jpg"
+    },
+    {
+      "file": "hyperlipidemia-upload/assets/hyperlipidemia/hyperlipidemia-03.jpg"
+    },
+    {
+      "file": "hyperlipidemia-upload/assets/hyperlipidemia/hyperlipidemia-04.jpg"
+    },
+    {
+      "file": "hyperlipidemia-upload/assets/hyperlipidemia/hyperlipidemia-05.jpg"
+    },
+    {
+      "file": "hyperlipidemia-upload/assets/hyperlipidemia/hyperlipidemia-06.jpg"
+    },
+    {
+      "file": "hyperlipidemia-upload/assets/hyperlipidemia/hyperlipidemia-07.jpg"
+    },
+    {
+      "file": "hyperlipidemia-upload/assets/hyperlipidemia/hyperlipidemia-08.jpg"
+    },
+    {
+      "file": "hyperlipidemia-upload/assets/hyperlipidemia/hyperlipidemia-09.jpg"
+    },
+    {
+      "file": "hyperlipidemia-upload/assets/hyperlipidemia/hyperlipidemia-10.jpg"
+    },
+    {
+      "file": "hyperlipidemia-upload/assets/hyperlipidemia/hyperlipidemia-gallery.pdf"
+    },
+    {
+      "file": "assets/audio/chf.mp3"
+    },
+    {
+      "file": "assets/audio/acs.mp3"
+    },
+    {
+      "file": "assets/audio/afib-2.mp3"
+    },
+    {
+      "file": "assets/audio/htn.mp3"
+    },
+    {
+      "file": "assets/audio/aortic-stenosis.mp3"
+    },
+    {
+      "file": "assets/audio/endocarditis.mp3"
+    },
+    {
+      "file": "assets/audio/pericarditis.mp3"
+    },
+    {
+      "file": "assets/audio/cardiomyopathy.mp3"
+    },
+    {
+      "file": "assets/audio/pad.mp3"
+    },
+    {
+      "file": "assets/audio/dvt.mp3"
+    },
+    {
+      "file": "assets/audio/aortic-dissection.mp3"
+    },
+    {
+      "file": "assets/audio/cardiac-arrest-3.mp3"
+    },
+    {
+      "file": "assets/audio/hyperlipidemia-2.mp3"
+    }
+  ],
+  "platforms": [
+    "iOS"
+  ]
+}

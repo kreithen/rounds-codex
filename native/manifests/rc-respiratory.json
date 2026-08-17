@@ -1,0 +1,371 @@
+{
+  "assetPackID": "rc-respiratory",
+  "downloadPolicy": {
+    "onDemand": {}
+  },
+  "fileSelectors": [
+    {
+      "file": "copd-01.jpg"
+    },
+    {
+      "file": "copd-02.jpg"
+    },
+    {
+      "file": "copd-03.jpg"
+    },
+    {
+      "file": "copd-04.jpg"
+    },
+    {
+      "file": "copd-05.jpg"
+    },
+    {
+      "file": "copd-06.jpg"
+    },
+    {
+      "file": "copd-07.jpg"
+    },
+    {
+      "file": "copd-08.jpg"
+    },
+    {
+      "file": "copd-09.jpg"
+    },
+    {
+      "file": "copd-10.jpg"
+    },
+    {
+      "file": "copd-gallery.pdf"
+    },
+    {
+      "file": "asthma-01.jpg"
+    },
+    {
+      "file": "asthma-02.jpg"
+    },
+    {
+      "file": "asthma-03.jpg"
+    },
+    {
+      "file": "asthma-04.jpg"
+    },
+    {
+      "file": "asthma-05.jpg"
+    },
+    {
+      "file": "asthma-06.jpg"
+    },
+    {
+      "file": "asthma-07.jpg"
+    },
+    {
+      "file": "asthma-08.jpg"
+    },
+    {
+      "file": "asthma-09.jpg"
+    },
+    {
+      "file": "asthma-10.jpg"
+    },
+    {
+      "file": "asthma-gallery.pdf"
+    },
+    {
+      "file": "cap-01.jpg"
+    },
+    {
+      "file": "cap-02.jpg"
+    },
+    {
+      "file": "cap-03.jpg"
+    },
+    {
+      "file": "cap-04.jpg"
+    },
+    {
+      "file": "cap-05.jpg"
+    },
+    {
+      "file": "cap-06.jpg"
+    },
+    {
+      "file": "cap-07.jpg"
+    },
+    {
+      "file": "cap-08.jpg"
+    },
+    {
+      "file": "cap-09.jpg"
+    },
+    {
+      "file": "cap-10.jpg"
+    },
+    {
+      "file": "cap-gallery.pdf"
+    },
+    {
+      "file": "pe-01.jpg"
+    },
+    {
+      "file": "pe-02.jpg"
+    },
+    {
+      "file": "pe-03.jpg"
+    },
+    {
+      "file": "pe-04.jpg"
+    },
+    {
+      "file": "pe-05.jpg"
+    },
+    {
+      "file": "pe-06.jpg"
+    },
+    {
+      "file": "pe-07.jpg"
+    },
+    {
+      "file": "pe-08.jpg"
+    },
+    {
+      "file": "pe-09.jpg"
+    },
+    {
+      "file": "pe-10.jpg"
+    },
+    {
+      "file": "pe-gallery.pdf"
+    },
+    {
+      "file": "ards-01.jpg"
+    },
+    {
+      "file": "ards-02.jpg"
+    },
+    {
+      "file": "ards-03.jpg"
+    },
+    {
+      "file": "ards-04.jpg"
+    },
+    {
+      "file": "ards-05.jpg"
+    },
+    {
+      "file": "ards-06.jpg"
+    },
+    {
+      "file": "ards-07.jpg"
+    },
+    {
+      "file": "ards-08.jpg"
+    },
+    {
+      "file": "ards-09.jpg"
+    },
+    {
+      "file": "ards-10.jpg"
+    },
+    {
+      "file": "ards-gallery.pdf"
+    },
+    {
+      "file": "pneumothorax-01.jpg"
+    },
+    {
+      "file": "pneumothorax-02.jpg"
+    },
+    {
+      "file": "pneumothorax-03.jpg"
+    },
+    {
+      "file": "pneumothorax-04.jpg"
+    },
+    {
+      "file": "pneumothorax-05.jpg"
+    },
+    {
+      "file": "pneumothorax-06.jpg"
+    },
+    {
+      "file": "pneumothorax-07.jpg"
+    },
+    {
+      "file": "pneumothorax-08.jpg"
+    },
+    {
+      "file": "pneumothorax-09.jpg"
+    },
+    {
+      "file": "pneumothorax-10.jpg"
+    },
+    {
+      "file": "pneumothorax-gallery.pdf"
+    },
+    {
+      "file": "tb-01.jpg"
+    },
+    {
+      "file": "tb-02.jpg"
+    },
+    {
+      "file": "tb-03.jpg"
+    },
+    {
+      "file": "tb-04.jpg"
+    },
+    {
+      "file": "tb-05.jpg"
+    },
+    {
+      "file": "tb-06.jpg"
+    },
+    {
+      "file": "tb-07.jpg"
+    },
+    {
+      "file": "tb-08.jpg"
+    },
+    {
+      "file": "tb-09.jpg"
+    },
+    {
+      "file": "tb-10.jpg"
+    },
+    {
+      "file": "tb-gallery.pdf"
+    },
+    {
+      "file": "lung-cancer-01.jpg"
+    },
+    {
+      "file": "lung-cancer-02.jpg"
+    },
+    {
+      "file": "lung-cancer-03.jpg"
+    },
+    {
+      "file": "lung-cancer-04.jpg"
+    },
+    {
+      "file": "lung-cancer-05.jpg"
+    },
+    {
+      "file": "lung-cancer-06.jpg"
+    },
+    {
+      "file": "lung-cancer-07.jpg"
+    },
+    {
+      "file": "lung-cancer-08.jpg"
+    },
+    {
+      "file": "lung-cancer-09.jpg"
+    },
+    {
+      "file": "lung-cancer-10.jpg"
+    },
+    {
+      "file": "lung-cancer-gallery.pdf"
+    },
+    {
+      "file": "pleural-effusion-01.jpg"
+    },
+    {
+      "file": "pleural-effusion-02.jpg"
+    },
+    {
+      "file": "pleural-effusion-03.jpg"
+    },
+    {
+      "file": "pleural-effusion-04.jpg"
+    },
+    {
+      "file": "pleural-effusion-05.jpg"
+    },
+    {
+      "file": "pleural-effusion-06.jpg"
+    },
+    {
+      "file": "pleural-effusion-07.jpg"
+    },
+    {
+      "file": "pleural-effusion-08.jpg"
+    },
+    {
+      "file": "pleural-effusion-09.jpg"
+    },
+    {
+      "file": "pleural-effusion-10.jpg"
+    },
+    {
+      "file": "pleural-effusion-gallery.pdf"
+    },
+    {
+      "file": "osa-01.jpg"
+    },
+    {
+      "file": "osa-02.jpg"
+    },
+    {
+      "file": "osa-03.jpg"
+    },
+    {
+      "file": "osa-04.jpg"
+    },
+    {
+      "file": "osa-05.jpg"
+    },
+    {
+      "file": "osa-06.jpg"
+    },
+    {
+      "file": "osa-07.jpg"
+    },
+    {
+      "file": "osa-08.jpg"
+    },
+    {
+      "file": "osa-09.jpg"
+    },
+    {
+      "file": "osa-10.jpg"
+    },
+    {
+      "file": "osa-gallery.pdf"
+    },
+    {
+      "file": "assets/audio/copd.mp3"
+    },
+    {
+      "file": "assets/audio/asthma.mp3"
+    },
+    {
+      "file": "assets/audio/cap.mp3"
+    },
+    {
+      "file": "assets/audio/pe.mp3"
+    },
+    {
+      "file": "assets/audio/ards.mp3"
+    },
+    {
+      "file": "assets/audio/pneumothorax.mp3"
+    },
+    {
+      "file": "assets/audio/tb.mp3"
+    },
+    {
+      "file": "assets/audio/lung-cancer.mp3"
+    },
+    {
+      "file": "assets/audio/pleural-effusion.mp3"
+    },
+    {
+      "file": "assets/audio/osa.mp3"
+    }
+  ],
+  "platforms": [
+    "iOS"
+  ]
+}

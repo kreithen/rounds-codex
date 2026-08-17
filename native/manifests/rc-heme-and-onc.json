@@ -1,0 +1,242 @@
+{
+  "assetPackID": "rc-heme-and-onc",
+  "downloadPolicy": {
+    "onDemand": {}
+  },
+  "fileSelectors": [
+    {
+      "file": "assets/iron-anemia/iron-anemia-01.jpg"
+    },
+    {
+      "file": "assets/iron-anemia/iron-anemia-02.jpg"
+    },
+    {
+      "file": "assets/iron-anemia/iron-anemia-03.jpg"
+    },
+    {
+      "file": "assets/iron-anemia/iron-anemia-04.jpg"
+    },
+    {
+      "file": "assets/iron-anemia/iron-anemia-05.jpg"
+    },
+    {
+      "file": "assets/iron-anemia/iron-anemia-06.jpg"
+    },
+    {
+      "file": "assets/iron-anemia/iron-anemia-07.jpg"
+    },
+    {
+      "file": "assets/iron-anemia/iron-anemia-08.jpg"
+    },
+    {
+      "file": "assets/iron-anemia/iron-anemia-09.jpg"
+    },
+    {
+      "file": "assets/iron-anemia/iron-anemia-10.jpg"
+    },
+    {
+      "file": "assets/iron-anemia/iron-anemia-gallery.pdf"
+    },
+    {
+      "file": "assets/b12-anemia/b12-anemia-01.jpg"
+    },
+    {
+      "file": "assets/b12-anemia/b12-anemia-02.jpg"
+    },
+    {
+      "file": "assets/b12-anemia/b12-anemia-03.jpg"
+    },
+    {
+      "file": "assets/b12-anemia/b12-anemia-04.jpg"
+    },
+    {
+      "file": "assets/b12-anemia/b12-anemia-05.jpg"
+    },
+    {
+      "file": "assets/b12-anemia/b12-anemia-06.jpg"
+    },
+    {
+      "file": "assets/b12-anemia/b12-anemia-07.jpg"
+    },
+    {
+      "file": "assets/b12-anemia/b12-anemia-08.jpg"
+    },
+    {
+      "file": "assets/b12-anemia/b12-anemia-09.jpg"
+    },
+    {
+      "file": "assets/b12-anemia/b12-anemia-10.jpg"
+    },
+    {
+      "file": "assets/b12-anemia/b12-anemia-gallery.pdf"
+    },
+    {
+      "file": "assets/sickle-cell/sickle-cell-01.jpg"
+    },
+    {
+      "file": "assets/sickle-cell/sickle-cell-02.jpg"
+    },
+    {
+      "file": "assets/sickle-cell/sickle-cell-03.jpg"
+    },
+    {
+      "file": "assets/sickle-cell/sickle-cell-04.jpg"
+    },
+    {
+      "file": "assets/sickle-cell/sickle-cell-05.jpg"
+    },
+    {
+      "file": "assets/sickle-cell/sickle-cell-06.jpg"
+    },
+    {
+      "file": "assets/sickle-cell/sickle-cell-07.jpg"
+    },
+    {
+      "file": "assets/sickle-cell/sickle-cell-08.jpg"
+    },
+    {
+      "file": "assets/sickle-cell/sickle-cell-09.jpg"
+    },
+    {
+      "file": "assets/sickle-cell/sickle-cell-10.jpg"
+    },
+    {
+      "file": "assets/sickle-cell/sickle-cell-gallery.pdf"
+    },
+    {
+      "file": "assets/leukemia/leukemia-01.jpg"
+    },
+    {
+      "file": "assets/leukemia/leukemia-02.jpg"
+    },
+    {
+      "file": "assets/leukemia/leukemia-03.jpg"
+    },
+    {
+      "file": "assets/leukemia/leukemia-04.jpg"
+    },
+    {
+      "file": "assets/leukemia/leukemia-05.jpg"
+    },
+    {
+      "file": "assets/leukemia/leukemia-06.jpg"
+    },
+    {
+      "file": "assets/leukemia/leukemia-07.jpg"
+    },
+    {
+      "file": "assets/leukemia/leukemia-08.jpg"
+    },
+    {
+      "file": "assets/leukemia/leukemia-09.jpg"
+    },
+    {
+      "file": "assets/leukemia/leukemia-10.jpg"
+    },
+    {
+      "file": "assets/leukemia/leukemia-gallery.pdf"
+    },
+    {
+      "file": "assets/lymphoma/lymphoma-01.jpg"
+    },
+    {
+      "file": "assets/lymphoma/lymphoma-02.jpg"
+    },
+    {
+      "file": "assets/lymphoma/lymphoma-03.jpg"
+    },
+    {
+      "file": "assets/lymphoma/lymphoma-04.jpg"
+    },
+    {
+      "file": "assets/lymphoma/lymphoma-05.jpg"
+    },
+    {
+      "file": "assets/lymphoma/lymphoma-06.jpg"
+    },
+    {
+      "file": "assets/lymphoma/lymphoma-07.jpg"
+    },
+    {
+      "file": "assets/lymphoma/lymphoma-08.jpg"
+    },
+    {
+      "file": "assets/lymphoma/lymphoma-09.jpg"
+    },
+    {
+      "file": "assets/lymphoma/lymphoma-10.jpg"
+    },
+    {
+      "file": "assets/lymphoma/lymphoma-gallery.pdf"
+    },
+    {
+      "file": "assets/thrombocytopenia/thrombocytopenia-01.jpg"
+    },
+    {
+      "file": "assets/thrombocytopenia/thrombocytopenia-02.jpg"
+    },
+    {
+      "file": "assets/thrombocytopenia/thrombocytopenia-03.jpg"
+    },
+    {
+      "file": "assets/thrombocytopenia/thrombocytopenia-04.jpg"
+    },
+    {
+      "file": "assets/thrombocytopenia/thrombocytopenia-05.jpg"
+    },
+    {
+      "file": "assets/thrombocytopenia/thrombocytopenia-06.jpg"
+    },
+    {
+      "file": "assets/thrombocytopenia/thrombocytopenia-07.jpg"
+    },
+    {
+      "file": "assets/thrombocytopenia/thrombocytopenia-08.jpg"
+    },
+    {
+      "file": "assets/thrombocytopenia/thrombocytopenia-09.jpg"
+    },
+    {
+      "file": "assets/thrombocytopenia/thrombocytopenia-10.jpg"
+    },
+    {
+      "file": "assets/thrombocytopenia/thrombocytopenia-gallery.pdf"
+    },
+    {
+      "file": "assets/dic/dic-01.jpg"
+    },
+    {
+      "file": "assets/dic/dic-02.jpg"
+    },
+    {
+      "file": "assets/dic/dic-03.jpg"
+    },
+    {
+      "file": "assets/dic/dic-04.jpg"
+    },
+    {
+      "file": "assets/dic/dic-05.jpg"
+    },
+    {
+      "file": "assets/dic/dic-06.jpg"
+    },
+    {
+      "file": "assets/dic/dic-07.jpg"
+    },
+    {
+      "file": "assets/dic/dic-08.jpg"
+    },
+    {
+      "file": "assets/dic/dic-09.jpg"
+    },
+    {
+      "file": "assets/dic/dic-10.jpg"
+    },
+    {
+      "file": "assets/dic/dic-gallery.pdf"
+    }
+  ],
+  "platforms": [
+    "iOS"
+  ]
+}

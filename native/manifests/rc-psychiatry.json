@@ -1,0 +1,242 @@
+{
+  "assetPackID": "rc-psychiatry",
+  "downloadPolicy": {
+    "onDemand": {}
+  },
+  "fileSelectors": [
+    {
+      "file": "assets/depression/depression-01.jpg"
+    },
+    {
+      "file": "assets/depression/depression-02.jpg"
+    },
+    {
+      "file": "assets/depression/depression-03.jpg"
+    },
+    {
+      "file": "assets/depression/depression-04.jpg"
+    },
+    {
+      "file": "assets/depression/depression-05.jpg"
+    },
+    {
+      "file": "assets/depression/depression-06.jpg"
+    },
+    {
+      "file": "assets/depression/depression-07.jpg"
+    },
+    {
+      "file": "assets/depression/depression-08.jpg"
+    },
+    {
+      "file": "assets/depression/depression-09.jpg"
+    },
+    {
+      "file": "assets/depression/depression-10.jpg"
+    },
+    {
+      "file": "assets/depression/depression-gallery.pdf"
+    },
+    {
+      "file": "assets/anxiety/anxiety-01.jpg"
+    },
+    {
+      "file": "assets/anxiety/anxiety-02.jpg"
+    },
+    {
+      "file": "assets/anxiety/anxiety-03.jpg"
+    },
+    {
+      "file": "assets/anxiety/anxiety-04.jpg"
+    },
+    {
+      "file": "assets/anxiety/anxiety-05.jpg"
+    },
+    {
+      "file": "assets/anxiety/anxiety-06.jpg"
+    },
+    {
+      "file": "assets/anxiety/anxiety-07.jpg"
+    },
+    {
+      "file": "assets/anxiety/anxiety-08.jpg"
+    },
+    {
+      "file": "assets/anxiety/anxiety-09.jpg"
+    },
+    {
+      "file": "assets/anxiety/anxiety-10.jpg"
+    },
+    {
+      "file": "assets/anxiety/anxiety-gallery.pdf"
+    },
+    {
+      "file": "assets/bipolar/bipolar-01.jpg"
+    },
+    {
+      "file": "assets/bipolar/bipolar-02.jpg"
+    },
+    {
+      "file": "assets/bipolar/bipolar-03.jpg"
+    },
+    {
+      "file": "assets/bipolar/bipolar-04.jpg"
+    },
+    {
+      "file": "assets/bipolar/bipolar-05.jpg"
+    },
+    {
+      "file": "assets/bipolar/bipolar-06.jpg"
+    },
+    {
+      "file": "assets/bipolar/bipolar-07.jpg"
+    },
+    {
+      "file": "assets/bipolar/bipolar-08.jpg"
+    },
+    {
+      "file": "assets/bipolar/bipolar-09.jpg"
+    },
+    {
+      "file": "assets/bipolar/bipolar-10.jpg"
+    },
+    {
+      "file": "assets/bipolar/bipolar-gallery.pdf"
+    },
+    {
+      "file": "assets/schizophrenia/schizophrenia-01.jpg"
+    },
+    {
+      "file": "assets/schizophrenia/schizophrenia-02.jpg"
+    },
+    {
+      "file": "assets/schizophrenia/schizophrenia-03.jpg"
+    },
+    {
+      "file": "assets/schizophrenia/schizophrenia-04.jpg"
+    },
+    {
+      "file": "assets/schizophrenia/schizophrenia-05.jpg"
+    },
+    {
+      "file": "assets/schizophrenia/schizophrenia-06.jpg"
+    },
+    {
+      "file": "assets/schizophrenia/schizophrenia-07.jpg"
+    },
+    {
+      "file": "assets/schizophrenia/schizophrenia-08.jpg"
+    },
+    {
+      "file": "assets/schizophrenia/schizophrenia-09.jpg"
+    },
+    {
+      "file": "assets/schizophrenia/schizophrenia-10.jpg"
+    },
+    {
+      "file": "assets/schizophrenia/schizophrenia-gallery.pdf"
+    },
+    {
+      "file": "assets/withdrawal/withdrawal-01.jpg"
+    },
+    {
+      "file": "assets/withdrawal/withdrawal-02.jpg"
+    },
+    {
+      "file": "assets/withdrawal/withdrawal-03.jpg"
+    },
+    {
+      "file": "assets/withdrawal/withdrawal-04.jpg"
+    },
+    {
+      "file": "assets/withdrawal/withdrawal-05.jpg"
+    },
+    {
+      "file": "assets/withdrawal/withdrawal-06.jpg"
+    },
+    {
+      "file": "assets/withdrawal/withdrawal-07.jpg"
+    },
+    {
+      "file": "assets/withdrawal/withdrawal-08.jpg"
+    },
+    {
+      "file": "assets/withdrawal/withdrawal-09.jpg"
+    },
+    {
+      "file": "assets/withdrawal/withdrawal-10.jpg"
+    },
+    {
+      "file": "assets/withdrawal/withdrawal-gallery.pdf"
+    },
+    {
+      "file": "assets/delirium/delirium-01.jpg"
+    },
+    {
+      "file": "assets/delirium/delirium-02.jpg"
+    },
+    {
+      "file": "assets/delirium/delirium-03.jpg"
+    },
+    {
+      "file": "assets/delirium/delirium-04.jpg"
+    },
+    {
+      "file": "assets/delirium/delirium-05.jpg"
+    },
+    {
+      "file": "assets/delirium/delirium-06.jpg"
+    },
+    {
+      "file": "assets/delirium/delirium-07.jpg"
+    },
+    {
+      "file": "assets/delirium/delirium-08.jpg"
+    },
+    {
+      "file": "assets/delirium/delirium-09.jpg"
+    },
+    {
+      "file": "assets/delirium/delirium-10.jpg"
+    },
+    {
+      "file": "assets/delirium/delirium-gallery.pdf"
+    },
+    {
+      "file": "assets/suicide/suicide-01.jpg"
+    },
+    {
+      "file": "assets/suicide/suicide-02.jpg"
+    },
+    {
+      "file": "assets/suicide/suicide-03.jpg"
+    },
+    {
+      "file": "assets/suicide/suicide-04.jpg"
+    },
+    {
+      "file": "assets/suicide/suicide-05.jpg"
+    },
+    {
+      "file": "assets/suicide/suicide-06.jpg"
+    },
+    {
+      "file": "assets/suicide/suicide-07.jpg"
+    },
+    {
+      "file": "assets/suicide/suicide-08.jpg"
+    },
+    {
+      "file": "assets/suicide/suicide-09.jpg"
+    },
+    {
+      "file": "assets/suicide/suicide-10.jpg"
+    },
+    {
+      "file": "assets/suicide/suicide-gallery.pdf"
+    }
+  ],
+  "platforms": [
+    "iOS"
+  ]
+}

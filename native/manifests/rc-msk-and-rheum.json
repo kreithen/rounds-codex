@@ -1,0 +1,308 @@
+{
+  "assetPackID": "rc-msk-and-rheum",
+  "downloadPolicy": {
+    "onDemand": {}
+  },
+  "fileSelectors": [
+    {
+      "file": "assets/fracture/fracture-01.jpg"
+    },
+    {
+      "file": "assets/fracture/fracture-02.jpg"
+    },
+    {
+      "file": "assets/fracture/fracture-03.jpg"
+    },
+    {
+      "file": "assets/fracture/fracture-04.jpg"
+    },
+    {
+      "file": "assets/fracture/fracture-05.jpg"
+    },
+    {
+      "file": "assets/fracture/fracture-06.jpg"
+    },
+    {
+      "file": "assets/fracture/fracture-07.jpg"
+    },
+    {
+      "file": "assets/fracture/fracture-08.jpg"
+    },
+    {
+      "file": "assets/fracture/fracture-09.jpg"
+    },
+    {
+      "file": "assets/fracture/fracture-10.jpg"
+    },
+    {
+      "file": "assets/fracture/fracture-gallery.pdf"
+    },
+    {
+      "file": "assets/hip-fracture/hip-fracture-01.jpg"
+    },
+    {
+      "file": "assets/hip-fracture/hip-fracture-02.jpg"
+    },
+    {
+      "file": "assets/hip-fracture/hip-fracture-03.jpg"
+    },
+    {
+      "file": "assets/hip-fracture/hip-fracture-04.jpg"
+    },
+    {
+      "file": "assets/hip-fracture/hip-fracture-05.jpg"
+    },
+    {
+      "file": "assets/hip-fracture/hip-fracture-06.jpg"
+    },
+    {
+      "file": "assets/hip-fracture/hip-fracture-07.jpg"
+    },
+    {
+      "file": "assets/hip-fracture/hip-fracture-08.jpg"
+    },
+    {
+      "file": "assets/hip-fracture/hip-fracture-09.jpg"
+    },
+    {
+      "file": "assets/hip-fracture/hip-fracture-10.jpg"
+    },
+    {
+      "file": "assets/hip-fracture/hip-fracture-gallery.pdf"
+    },
+    {
+      "file": "assets/osteoporosis/osteoporosis-01.jpg"
+    },
+    {
+      "file": "assets/osteoporosis/osteoporosis-02.jpg"
+    },
+    {
+      "file": "assets/osteoporosis/osteoporosis-03.jpg"
+    },
+    {
+      "file": "assets/osteoporosis/osteoporosis-04.jpg"
+    },
+    {
+      "file": "assets/osteoporosis/osteoporosis-05.jpg"
+    },
+    {
+      "file": "assets/osteoporosis/osteoporosis-06.jpg"
+    },
+    {
+      "file": "assets/osteoporosis/osteoporosis-07.jpg"
+    },
+    {
+      "file": "assets/osteoporosis/osteoporosis-08.jpg"
+    },
+    {
+      "file": "assets/osteoporosis/osteoporosis-09.jpg"
+    },
+    {
+      "file": "assets/osteoporosis/osteoporosis-10.jpg"
+    },
+    {
+      "file": "assets/osteoporosis/osteoporosis-gallery.pdf"
+    },
+    {
+      "file": "assets/osteoarthritis/osteoarthritis-01.jpg"
+    },
+    {
+      "file": "assets/osteoarthritis/osteoarthritis-02.jpg"
+    },
+    {
+      "file": "assets/osteoarthritis/osteoarthritis-03.jpg"
+    },
+    {
+      "file": "assets/osteoarthritis/osteoarthritis-04.jpg"
+    },
+    {
+      "file": "assets/osteoarthritis/osteoarthritis-05.jpg"
+    },
+    {
+      "file": "assets/osteoarthritis/osteoarthritis-06.jpg"
+    },
+    {
+      "file": "assets/osteoarthritis/osteoarthritis-07.jpg"
+    },
+    {
+      "file": "assets/osteoarthritis/osteoarthritis-08.jpg"
+    },
+    {
+      "file": "assets/osteoarthritis/osteoarthritis-09.jpg"
+    },
+    {
+      "file": "assets/osteoarthritis/osteoarthritis-10.jpg"
+    },
+    {
+      "file": "assets/osteoarthritis/osteoarthritis-gallery.pdf"
+    },
+    {
+      "file": "assets/back-pain/back-pain-01.jpg"
+    },
+    {
+      "file": "assets/back-pain/back-pain-02.jpg"
+    },
+    {
+      "file": "assets/back-pain/back-pain-03.jpg"
+    },
+    {
+      "file": "assets/back-pain/back-pain-04.jpg"
+    },
+    {
+      "file": "assets/back-pain/back-pain-05.jpg"
+    },
+    {
+      "file": "assets/back-pain/back-pain-06.jpg"
+    },
+    {
+      "file": "assets/back-pain/back-pain-07.jpg"
+    },
+    {
+      "file": "assets/back-pain/back-pain-08.jpg"
+    },
+    {
+      "file": "assets/back-pain/back-pain-09.jpg"
+    },
+    {
+      "file": "assets/back-pain/back-pain-10.jpg"
+    },
+    {
+      "file": "assets/back-pain/back-pain-gallery.pdf"
+    },
+    {
+      "file": "assets/ra/ra-01.jpg"
+    },
+    {
+      "file": "assets/ra/ra-02.jpg"
+    },
+    {
+      "file": "assets/ra/ra-03.jpg"
+    },
+    {
+      "file": "assets/ra/ra-04.jpg"
+    },
+    {
+      "file": "assets/ra/ra-05.jpg"
+    },
+    {
+      "file": "assets/ra/ra-06.jpg"
+    },
+    {
+      "file": "assets/ra/ra-07.jpg"
+    },
+    {
+      "file": "assets/ra/ra-08.jpg"
+    },
+    {
+      "file": "assets/ra/ra-09.jpg"
+    },
+    {
+      "file": "assets/ra/ra-10.jpg"
+    },
+    {
+      "file": "assets/ra/ra-gallery.pdf"
+    },
+    {
+      "file": "assets/gout/gout-01.jpg"
+    },
+    {
+      "file": "assets/gout/gout-02.jpg"
+    },
+    {
+      "file": "assets/gout/gout-03.jpg"
+    },
+    {
+      "file": "assets/gout/gout-04.jpg"
+    },
+    {
+      "file": "assets/gout/gout-05.jpg"
+    },
+    {
+      "file": "assets/gout/gout-06.jpg"
+    },
+    {
+      "file": "assets/gout/gout-07.jpg"
+    },
+    {
+      "file": "assets/gout/gout-08.jpg"
+    },
+    {
+      "file": "assets/gout/gout-09.jpg"
+    },
+    {
+      "file": "assets/gout/gout-10.jpg"
+    },
+    {
+      "file": "assets/gout/gout-gallery.pdf"
+    },
+    {
+      "file": "assets/compartment/compartment-01.jpg"
+    },
+    {
+      "file": "assets/compartment/compartment-02.jpg"
+    },
+    {
+      "file": "assets/compartment/compartment-03.jpg"
+    },
+    {
+      "file": "assets/compartment/compartment-04.jpg"
+    },
+    {
+      "file": "assets/compartment/compartment-05.jpg"
+    },
+    {
+      "file": "assets/compartment/compartment-06.jpg"
+    },
+    {
+      "file": "assets/compartment/compartment-07.jpg"
+    },
+    {
+      "file": "assets/compartment/compartment-08.jpg"
+    },
+    {
+      "file": "assets/compartment/compartment-09.jpg"
+    },
+    {
+      "file": "assets/compartment/compartment-10.jpg"
+    },
+    {
+      "file": "assets/compartment/compartment-gallery.pdf"
+    },
+    {
+      "file": "assets/lupus/lupus-01.jpg"
+    },
+    {
+      "file": "assets/lupus/lupus-02.jpg"
+    },
+    {
+      "file": "assets/lupus/lupus-03.jpg"
+    },
+    {
+      "file": "assets/lupus/lupus-04.jpg"
+    },
+    {
+      "file": "assets/lupus/lupus-05.jpg"
+    },
+    {
+      "file": "assets/lupus/lupus-06.jpg"
+    },
+    {
+      "file": "assets/lupus/lupus-07.jpg"
+    },
+    {
+      "file": "assets/lupus/lupus-08.jpg"
+    },
+    {
+      "file": "assets/lupus/lupus-09.jpg"
+    },
+    {
+      "file": "assets/lupus/lupus-10.jpg"
+    },
+    {
+      "file": "assets/lupus/lupus-gallery.pdf"
+    }
+  ],
+  "platforms": [
+    "iOS"
+  ]
+}

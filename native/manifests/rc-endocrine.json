@@ -1,0 +1,464 @@
+{
+  "assetPackID": "rc-endocrine",
+  "downloadPolicy": {
+    "onDemand": {}
+  },
+  "fileSelectors": [
+    {
+      "file": "dka-01.jpg"
+    },
+    {
+      "file": "dka-02.jpg"
+    },
+    {
+      "file": "dka-03.jpg"
+    },
+    {
+      "file": "dka-04.jpg"
+    },
+    {
+      "file": "dka-05.jpg"
+    },
+    {
+      "file": "dka-06.jpg"
+    },
+    {
+      "file": "dka-07.jpg"
+    },
+    {
+      "file": "dka-08.jpg"
+    },
+    {
+      "file": "dka-09.jpg"
+    },
+    {
+      "file": "dka-10.jpg"
+    },
+    {
+      "file": "dka-gallery.pdf"
+    },
+    {
+      "file": "t2dm-01.jpg"
+    },
+    {
+      "file": "t2dm-02.jpg"
+    },
+    {
+      "file": "t2dm-03.jpg"
+    },
+    {
+      "file": "t2dm-04.jpg"
+    },
+    {
+      "file": "t2dm-05.jpg"
+    },
+    {
+      "file": "t2dm-06.jpg"
+    },
+    {
+      "file": "t2dm-07.jpg"
+    },
+    {
+      "file": "t2dm-08.jpg"
+    },
+    {
+      "file": "t2dm-09.jpg"
+    },
+    {
+      "file": "t2dm-10.jpg"
+    },
+    {
+      "file": "t2dm-gallery.pdf"
+    },
+    {
+      "file": "metabolic-syndrome-01.jpg"
+    },
+    {
+      "file": "metabolic-syndrome-02.jpg"
+    },
+    {
+      "file": "metabolic-syndrome-03.jpg"
+    },
+    {
+      "file": "metabolic-syndrome-04.jpg"
+    },
+    {
+      "file": "metabolic-syndrome-05.jpg"
+    },
+    {
+      "file": "metabolic-syndrome-06.jpg"
+    },
+    {
+      "file": "metabolic-syndrome-07.jpg"
+    },
+    {
+      "file": "metabolic-syndrome-08.jpg"
+    },
+    {
+      "file": "metabolic-syndrome-09.jpg"
+    },
+    {
+      "file": "metabolic-syndrome-10.jpg"
+    },
+    {
+      "file": "metabolic-syndrome-gallery.pdf"
+    },
+    {
+      "file": "hypothyroid-01.jpg"
+    },
+    {
+      "file": "hypothyroid-02.jpg"
+    },
+    {
+      "file": "hypothyroid-03.jpg"
+    },
+    {
+      "file": "hypothyroid-04.jpg"
+    },
+    {
+      "file": "hypothyroid-05.jpg"
+    },
+    {
+      "file": "hypothyroid-06.jpg"
+    },
+    {
+      "file": "hypothyroid-07.jpg"
+    },
+    {
+      "file": "hypothyroid-08.jpg"
+    },
+    {
+      "file": "hypothyroid-09.jpg"
+    },
+    {
+      "file": "hypothyroid-10.jpg"
+    },
+    {
+      "file": "hypothyroid-gallery.pdf"
+    },
+    {
+      "file": "thyroidstorm-01.jpg"
+    },
+    {
+      "file": "thyroidstorm-02.jpg"
+    },
+    {
+      "file": "thyroidstorm-03.jpg"
+    },
+    {
+      "file": "thyroidstorm-04.jpg"
+    },
+    {
+      "file": "thyroidstorm-05.jpg"
+    },
+    {
+      "file": "thyroidstorm-06.jpg"
+    },
+    {
+      "file": "thyroidstorm-07.jpg"
+    },
+    {
+      "file": "thyroidstorm-08.jpg"
+    },
+    {
+      "file": "thyroidstorm-09.jpg"
+    },
+    {
+      "file": "thyroidstorm-10.jpg"
+    },
+    {
+      "file": "thyroidstorm-gallery.pdf"
+    },
+    {
+      "file": "hhs-01.jpg"
+    },
+    {
+      "file": "hhs-02.jpg"
+    },
+    {
+      "file": "hhs-03.jpg"
+    },
+    {
+      "file": "hhs-04.jpg"
+    },
+    {
+      "file": "hhs-05.jpg"
+    },
+    {
+      "file": "hhs-06.jpg"
+    },
+    {
+      "file": "hhs-07.jpg"
+    },
+    {
+      "file": "hhs-08.jpg"
+    },
+    {
+      "file": "hhs-09.jpg"
+    },
+    {
+      "file": "hhs-10.jpg"
+    },
+    {
+      "file": "hhs-gallery.pdf"
+    },
+    {
+      "file": "hypoglycemia-01.jpg"
+    },
+    {
+      "file": "hypoglycemia-02.jpg"
+    },
+    {
+      "file": "hypoglycemia-03.jpg"
+    },
+    {
+      "file": "hypoglycemia-04.jpg"
+    },
+    {
+      "file": "hypoglycemia-05.jpg"
+    },
+    {
+      "file": "hypoglycemia-06.jpg"
+    },
+    {
+      "file": "hypoglycemia-07.jpg"
+    },
+    {
+      "file": "hypoglycemia-08.jpg"
+    },
+    {
+      "file": "hypoglycemia-09.jpg"
+    },
+    {
+      "file": "hypoglycemia-10.jpg"
+    },
+    {
+      "file": "hypoglycemia-gallery.pdf"
+    },
+    {
+      "file": "t1dm-01.jpg"
+    },
+    {
+      "file": "t1dm-02.jpg"
+    },
+    {
+      "file": "t1dm-03.jpg"
+    },
+    {
+      "file": "t1dm-04.jpg"
+    },
+    {
+      "file": "t1dm-05.jpg"
+    },
+    {
+      "file": "t1dm-06.jpg"
+    },
+    {
+      "file": "t1dm-07.jpg"
+    },
+    {
+      "file": "t1dm-08.jpg"
+    },
+    {
+      "file": "t1dm-09.jpg"
+    },
+    {
+      "file": "t1dm-10.jpg"
+    },
+    {
+      "file": "t1dm-gallery.pdf"
+    },
+    {
+      "file": "cushings-01.jpg"
+    },
+    {
+      "file": "cushings-02.jpg"
+    },
+    {
+      "file": "cushings-03.jpg"
+    },
+    {
+      "file": "cushings-04.jpg"
+    },
+    {
+      "file": "cushings-05.jpg"
+    },
+    {
+      "file": "cushings-06.jpg"
+    },
+    {
+      "file": "cushings-07.jpg"
+    },
+    {
+      "file": "cushings-08.jpg"
+    },
+    {
+      "file": "cushings-09.jpg"
+    },
+    {
+      "file": "cushings-10.jpg"
+    },
+    {
+      "file": "cushings-gallery.pdf"
+    },
+    {
+      "file": "addisons-01.jpg"
+    },
+    {
+      "file": "addisons-02.jpg"
+    },
+    {
+      "file": "addisons-03.jpg"
+    },
+    {
+      "file": "addisons-04.jpg"
+    },
+    {
+      "file": "addisons-05.jpg"
+    },
+    {
+      "file": "addisons-06.jpg"
+    },
+    {
+      "file": "addisons-07.jpg"
+    },
+    {
+      "file": "addisons-08.jpg"
+    },
+    {
+      "file": "addisons-09.jpg"
+    },
+    {
+      "file": "addisons-10.jpg"
+    },
+    {
+      "file": "addisons-gallery.pdf"
+    },
+    {
+      "file": "siadh-01.jpg"
+    },
+    {
+      "file": "siadh-02.jpg"
+    },
+    {
+      "file": "siadh-03.jpg"
+    },
+    {
+      "file": "siadh-04.jpg"
+    },
+    {
+      "file": "siadh-05.jpg"
+    },
+    {
+      "file": "siadh-06.jpg"
+    },
+    {
+      "file": "siadh-07.jpg"
+    },
+    {
+      "file": "siadh-08.jpg"
+    },
+    {
+      "file": "siadh-09.jpg"
+    },
+    {
+      "file": "siadh-10.jpg"
+    },
+    {
+      "file": "siadh-gallery.pdf"
+    },
+    {
+      "file": "assets/di/di-01.jpg"
+    },
+    {
+      "file": "assets/di/di-02.jpg"
+    },
+    {
+      "file": "assets/di/di-03.jpg"
+    },
+    {
+      "file": "assets/di/di-04.jpg"
+    },
+    {
+      "file": "assets/di/di-05.jpg"
+    },
+    {
+      "file": "assets/di/di-06.jpg"
+    },
+    {
+      "file": "assets/di/di-07.jpg"
+    },
+    {
+      "file": "assets/di/di-08.jpg"
+    },
+    {
+      "file": "assets/di/di-09.jpg"
+    },
+    {
+      "file": "assets/di/di-10.jpg"
+    },
+    {
+      "file": "assets/di/di-gallery.pdf"
+    },
+    {
+      "file": "assets/hyperparathyroid/hyperparathyroid-01.jpg"
+    },
+    {
+      "file": "assets/hyperparathyroid/hyperparathyroid-02.jpg"
+    },
+    {
+      "file": "assets/hyperparathyroid/hyperparathyroid-03.jpg"
+    },
+    {
+      "file": "assets/hyperparathyroid/hyperparathyroid-04.jpg"
+    },
+    {
+      "file": "assets/hyperparathyroid/hyperparathyroid-05.jpg"
+    },
+    {
+      "file": "assets/hyperparathyroid/hyperparathyroid-06.jpg"
+    },
+    {
+      "file": "assets/hyperparathyroid/hyperparathyroid-07.jpg"
+    },
+    {
+      "file": "assets/hyperparathyroid/hyperparathyroid-08.jpg"
+    },
+    {
+      "file": "assets/hyperparathyroid/hyperparathyroid-09.jpg"
+    },
+    {
+      "file": "assets/hyperparathyroid/hyperparathyroid-10.jpg"
+    },
+    {
+      "file": "assets/hyperparathyroid/hyperparathyroid-gallery.pdf"
+    },
+    {
+      "file": "assets/audio/dka.mp3"
+    },
+    {
+      "file": "assets/audio/t2dm.mp3"
+    },
+    {
+      "file": "assets/audio/metabolic-syndrome.mp3"
+    },
+    {
+      "file": "assets/audio/hypothyroid.mp3"
+    },
+    {
+      "file": "assets/audio/thyroidstorm.mp3"
+    },
+    {
+      "file": "assets/audio/hypoglycemia.mp3"
+    },
+    {
+      "file": "assets/audio/t1dm.mp3"
+    },
+    {
+      "file": "assets/audio/cushings.mp3"
+    }
+  ],
+  "platforms": [
+    "iOS"
+  ]
+}

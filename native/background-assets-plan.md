@@ -132,10 +132,56 @@ node scripts/build_ios_variant.js <copy> --apply
 
 **Verified from Apple's documentation:** the size and count limits above; iOS 26+ / iPadOS 26+ only;
 packs upload to App Store Connect **separately from builds** and version independently; they must be
-**submitted for App Review**; they can be tested through TestFlight; and packaging is done with an
-Xcode command-line tool — with **Managed Background Assets Developer Tools for Linux** also
-published, which may mean the packs can be built from a session rather than the Mac. Worth checking
-early; it would move the largest mechanical step off the physician's desk.
+**submitted for App Review**; and they can be tested through TestFlight.
+
+### The packaging tool — checked 2026-08-17
+
+The tool is **`ba-package`**. It ships with Xcode (`xcrun ba-package`) and separately as *Managed
+Background Assets Developer Tools* for Linux and Windows. Two subcommands matter:
+
+```
+ba-package template                                        # prints the manifest template
+ba-package create --manifest <manifest.json> --output <archive>
+```
+
+**The Linux build cannot be obtained from a session, for two independent reasons, neither fixable
+from here.** `developer.apple.com/download/all/` 302s to `idmsa.apple.com/IDMSWebAuth/signin.html` —
+an Apple ID sign-in, which needs the physician's credentials. And the file host itself,
+`download.developer.apple.com`, is refused by the agent proxy at the CONNECT stage
+(`gateway answered 403 to CONNECT`, confirmed in the proxy's own status log — so this is the proxy
+denying us, not Apple). The container is otherwise a plausible host: x86_64, glibc 2.39, Ubuntu 24.04.
+
+**This is not a blocker.** The identical tool is already on the physician's Mac with Xcode, and
+`xcrun ba-package` is what the generated runner defaults to. The Linux build would only have moved
+the packaging step off that desk.
+
+**The manifests are generated here anyway**, which was the actual point of the question.
+`scripts/build_asset_pack_manifests.js` reads `native/asset-packs.json` and writes one manifest per
+pack plus `package-all.sh`. **The schema is not invented** — it is the template that
+`ba-package template` prints, quoted verbatim in Apple's WWDC25 session 325:
+
+```json
+{ "assetPackID": …, "downloadPolicy": { "essential": { "installationEventTypes": […] } },
+  "fileSelectors": [ {"file": …}, {"directory": …} ], "platforms": […] }
+```
+
+If `ba-package template` on a real machine prints anything different, **it wins**: run it, diff, and
+fix the generator rather than hand-editing eleven files.
+
+**Download policy is `onDemand`, and that is a product decision.** `essential` blocks app launch
+until the packs finish, which throws away the 84 MB install outright. `prefetch` pulls all 742 MB
+onto every device including ten specialties a reader may never open. `onDemand` works because
+`RC_MEDIA_ROOT`'s fallback already streams an un-downloaded pack rather than breaking, so the app
+can request a category when a reader first opens a gallery in it and stay usable meanwhile — and it
+leaves room for an explicit "download for offline" control. Override with `--policy prefetch`.
+
+Selectors are explicit `file` entries, not `directory` ones: a directory selector would sweep in
+whatever else sits in that folder, and this tree has already demonstrated it keeps things in odd
+places. All **1,153** selectors were checked against the shipped tree; none is missing.
+
+**One thing the Linux limitation does cost:** localized asset packs are not supported by the Linux
+tools, only by Xcode. Irrelevant today — there is no localization — but worth knowing before anyone
+plans one.
 
 **Not verified, and deliberately not guessed at:** the runtime Swift API. Apple's documentation pages
 render client-side, so the framework and `AssetPackManager` pages could not be read, and the search

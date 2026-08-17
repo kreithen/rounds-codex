@@ -1,0 +1,407 @@
+{
+  "assetPackID": "rc-gastrointestinal",
+  "downloadPolicy": {
+    "onDemand": {}
+  },
+  "fileSelectors": [
+    {
+      "file": "assets/gerd/gerd-01.jpg"
+    },
+    {
+      "file": "assets/gerd/gerd-02.jpg"
+    },
+    {
+      "file": "assets/gerd/gerd-03.jpg"
+    },
+    {
+      "file": "assets/gerd/gerd-04.jpg"
+    },
+    {
+      "file": "assets/gerd/gerd-05.jpg"
+    },
+    {
+      "file": "assets/gerd/gerd-06.jpg"
+    },
+    {
+      "file": "assets/gerd/gerd-07.jpg"
+    },
+    {
+      "file": "assets/gerd/gerd-08.jpg"
+    },
+    {
+      "file": "assets/gerd/gerd-09.jpg"
+    },
+    {
+      "file": "assets/gerd/gerd-10.jpg"
+    },
+    {
+      "file": "assets/gerd/gerd-gallery.pdf"
+    },
+    {
+      "file": "assets/pud/pud-01.jpg"
+    },
+    {
+      "file": "assets/pud/pud-02.jpg"
+    },
+    {
+      "file": "assets/pud/pud-03.jpg"
+    },
+    {
+      "file": "assets/pud/pud-04.jpg"
+    },
+    {
+      "file": "assets/pud/pud-05.jpg"
+    },
+    {
+      "file": "assets/pud/pud-06.jpg"
+    },
+    {
+      "file": "assets/pud/pud-07.jpg"
+    },
+    {
+      "file": "assets/pud/pud-08.jpg"
+    },
+    {
+      "file": "assets/pud/pud-09.jpg"
+    },
+    {
+      "file": "assets/pud/pud-10.jpg"
+    },
+    {
+      "file": "assets/pud/pud-gallery.pdf"
+    },
+    {
+      "file": "assets/gi-bleed/gi-bleed-01.jpg"
+    },
+    {
+      "file": "assets/gi-bleed/gi-bleed-02.jpg"
+    },
+    {
+      "file": "assets/gi-bleed/gi-bleed-03.jpg"
+    },
+    {
+      "file": "assets/gi-bleed/gi-bleed-04.jpg"
+    },
+    {
+      "file": "assets/gi-bleed/gi-bleed-05.jpg"
+    },
+    {
+      "file": "assets/gi-bleed/gi-bleed-06.jpg"
+    },
+    {
+      "file": "assets/gi-bleed/gi-bleed-07.jpg"
+    },
+    {
+      "file": "assets/gi-bleed/gi-bleed-08.jpg"
+    },
+    {
+      "file": "assets/gi-bleed/gi-bleed-09.jpg"
+    },
+    {
+      "file": "assets/gi-bleed/gi-bleed-10.jpg"
+    },
+    {
+      "file": "assets/gi-bleed/gi-bleed-gallery.pdf"
+    },
+    {
+      "file": "assets/pancreatitis/pancreatitis-01.jpg"
+    },
+    {
+      "file": "assets/pancreatitis/pancreatitis-02.jpg"
+    },
+    {
+      "file": "assets/pancreatitis/pancreatitis-03.jpg"
+    },
+    {
+      "file": "assets/pancreatitis/pancreatitis-04.jpg"
+    },
+    {
+      "file": "assets/pancreatitis/pancreatitis-05.jpg"
+    },
+    {
+      "file": "assets/pancreatitis/pancreatitis-06.jpg"
+    },
+    {
+      "file": "assets/pancreatitis/pancreatitis-07.jpg"
+    },
+    {
+      "file": "assets/pancreatitis/pancreatitis-08.jpg"
+    },
+    {
+      "file": "assets/pancreatitis/pancreatitis-09.jpg"
+    },
+    {
+      "file": "assets/pancreatitis/pancreatitis-10.jpg"
+    },
+    {
+      "file": "assets/pancreatitis/pancreatitis-gallery.pdf"
+    },
+    {
+      "file": "assets/cirrhosis/cirrhosis-01.jpg"
+    },
+    {
+      "file": "assets/cirrhosis/cirrhosis-02.jpg"
+    },
+    {
+      "file": "assets/cirrhosis/cirrhosis-03.jpg"
+    },
+    {
+      "file": "assets/cirrhosis/cirrhosis-04.jpg"
+    },
+    {
+      "file": "assets/cirrhosis/cirrhosis-05.jpg"
+    },
+    {
+      "file": "assets/cirrhosis/cirrhosis-06.jpg"
+    },
+    {
+      "file": "assets/cirrhosis/cirrhosis-07.jpg"
+    },
+    {
+      "file": "assets/cirrhosis/cirrhosis-08.jpg"
+    },
+    {
+      "file": "assets/cirrhosis/cirrhosis-09.jpg"
+    },
+    {
+      "file": "assets/cirrhosis/cirrhosis-10.jpg"
+    },
+    {
+      "file": "assets/cirrhosis/cirrhosis-gallery.pdf"
+    },
+    {
+      "file": "assets/cholecystitis/cholecystitis-01.jpg"
+    },
+    {
+      "file": "assets/cholecystitis/cholecystitis-02.jpg"
+    },
+    {
+      "file": "assets/cholecystitis/cholecystitis-03.jpg"
+    },
+    {
+      "file": "assets/cholecystitis/cholecystitis-04.jpg"
+    },
+    {
+      "file": "assets/cholecystitis/cholecystitis-05.jpg"
+    },
+    {
+      "file": "assets/cholecystitis/cholecystitis-06.jpg"
+    },
+    {
+      "file": "assets/cholecystitis/cholecystitis-07.jpg"
+    },
+    {
+      "file": "assets/cholecystitis/cholecystitis-08.jpg"
+    },
+    {
+      "file": "assets/cholecystitis/cholecystitis-09.jpg"
+    },
+    {
+      "file": "assets/cholecystitis/cholecystitis-10.jpg"
+    },
+    {
+      "file": "assets/cholecystitis/cholecystitis-gallery.pdf"
+    },
+    {
+      "file": "assets/hepatitis/hepatitis-01.jpg"
+    },
+    {
+      "file": "assets/hepatitis/hepatitis-02.jpg"
+    },
+    {
+      "file": "assets/hepatitis/hepatitis-03.jpg"
+    },
+    {
+      "file": "assets/hepatitis/hepatitis-04.jpg"
+    },
+    {
+      "file": "assets/hepatitis/hepatitis-05.jpg"
+    },
+    {
+      "file": "assets/hepatitis/hepatitis-06.jpg"
+    },
+    {
+      "file": "assets/hepatitis/hepatitis-07.jpg"
+    },
+    {
+      "file": "assets/hepatitis/hepatitis-08.jpg"
+    },
+    {
+      "file": "assets/hepatitis/hepatitis-09.jpg"
+    },
+    {
+      "file": "assets/hepatitis/hepatitis-10.jpg"
+    },
+    {
+      "file": "assets/hepatitis/hepatitis-gallery.pdf"
+    },
+    {
+      "file": "assets/appendicitis/appendicitis-01.jpg"
+    },
+    {
+      "file": "assets/appendicitis/appendicitis-02.jpg"
+    },
+    {
+      "file": "assets/appendicitis/appendicitis-03.jpg"
+    },
+    {
+      "file": "assets/appendicitis/appendicitis-04.jpg"
+    },
+    {
+      "file": "assets/appendicitis/appendicitis-05.jpg"
+    },
+    {
+      "file": "assets/appendicitis/appendicitis-06.jpg"
+    },
+    {
+      "file": "assets/appendicitis/appendicitis-07.jpg"
+    },
+    {
+      "file": "assets/appendicitis/appendicitis-08.jpg"
+    },
+    {
+      "file": "assets/appendicitis/appendicitis-09.jpg"
+    },
+    {
+      "file": "assets/appendicitis/appendicitis-10.jpg"
+    },
+    {
+      "file": "assets/appendicitis/appendicitis-gallery.pdf"
+    },
+    {
+      "file": "assets/ibd/ibd-01.jpg"
+    },
+    {
+      "file": "assets/ibd/ibd-02.jpg"
+    },
+    {
+      "file": "assets/ibd/ibd-03.jpg"
+    },
+    {
+      "file": "assets/ibd/ibd-04.jpg"
+    },
+    {
+      "file": "assets/ibd/ibd-05.jpg"
+    },
+    {
+      "file": "assets/ibd/ibd-06.jpg"
+    },
+    {
+      "file": "assets/ibd/ibd-07.jpg"
+    },
+    {
+      "file": "assets/ibd/ibd-08.jpg"
+    },
+    {
+      "file": "assets/ibd/ibd-09.jpg"
+    },
+    {
+      "file": "assets/ibd/ibd-10.jpg"
+    },
+    {
+      "file": "assets/ibd/ibd-gallery.pdf"
+    },
+    {
+      "file": "assets/diverticulitis/diverticulitis-01.jpg"
+    },
+    {
+      "file": "assets/diverticulitis/diverticulitis-02.jpg"
+    },
+    {
+      "file": "assets/diverticulitis/diverticulitis-03.jpg"
+    },
+    {
+      "file": "assets/diverticulitis/diverticulitis-04.jpg"
+    },
+    {
+      "file": "assets/diverticulitis/diverticulitis-05.jpg"
+    },
+    {
+      "file": "assets/diverticulitis/diverticulitis-06.jpg"
+    },
+    {
+      "file": "assets/diverticulitis/diverticulitis-07.jpg"
+    },
+    {
+      "file": "assets/diverticulitis/diverticulitis-08.jpg"
+    },
+    {
+      "file": "assets/diverticulitis/diverticulitis-09.jpg"
+    },
+    {
+      "file": "assets/diverticulitis/diverticulitis-10.jpg"
+    },
+    {
+      "file": "assets/diverticulitis/diverticulitis-gallery.pdf"
+    },
+    {
+      "file": "assets/bowel-obstruction/bowel-obstruction-01.jpg"
+    },
+    {
+      "file": "assets/bowel-obstruction/bowel-obstruction-02.jpg"
+    },
+    {
+      "file": "assets/bowel-obstruction/bowel-obstruction-03.jpg"
+    },
+    {
+      "file": "assets/bowel-obstruction/bowel-obstruction-04.jpg"
+    },
+    {
+      "file": "assets/bowel-obstruction/bowel-obstruction-05.jpg"
+    },
+    {
+      "file": "assets/bowel-obstruction/bowel-obstruction-06.jpg"
+    },
+    {
+      "file": "assets/bowel-obstruction/bowel-obstruction-07.jpg"
+    },
+    {
+      "file": "assets/bowel-obstruction/bowel-obstruction-08.jpg"
+    },
+    {
+      "file": "assets/bowel-obstruction/bowel-obstruction-09.jpg"
+    },
+    {
+      "file": "assets/bowel-obstruction/bowel-obstruction-10.jpg"
+    },
+    {
+      "file": "assets/bowel-obstruction/bowel-obstruction-gallery.pdf"
+    },
+    {
+      "file": "assets/cdiff/cdiff-01.jpg"
+    },
+    {
+      "file": "assets/cdiff/cdiff-02.jpg"
+    },
+    {
+      "file": "assets/cdiff/cdiff-03.jpg"
+    },
+    {
+      "file": "assets/cdiff/cdiff-04.jpg"
+    },
+    {
+      "file": "assets/cdiff/cdiff-05.jpg"
+    },
+    {
+      "file": "assets/cdiff/cdiff-06.jpg"
+    },
+    {
+      "file": "assets/cdiff/cdiff-07.jpg"
+    },
+    {
+      "file": "assets/cdiff/cdiff-08.jpg"
+    },
+    {
+      "file": "assets/cdiff/cdiff-09.jpg"
+    },
+    {
+      "file": "assets/cdiff/cdiff-10.jpg"
+    },
+    {
+      "file": "assets/cdiff/cdiff-gallery.pdf"
+    }
+  ],
+  "platforms": [
+    "iOS"
+  ]
+}

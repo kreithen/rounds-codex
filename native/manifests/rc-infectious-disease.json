@@ -1,0 +1,209 @@
+{
+  "assetPackID": "rc-infectious-disease",
+  "downloadPolicy": {
+    "onDemand": {}
+  },
+  "fileSelectors": [
+    {
+      "file": "assets/sepsis/sepsis-01.jpg"
+    },
+    {
+      "file": "assets/sepsis/sepsis-02.jpg"
+    },
+    {
+      "file": "assets/sepsis/sepsis-03.jpg"
+    },
+    {
+      "file": "assets/sepsis/sepsis-04.jpg"
+    },
+    {
+      "file": "assets/sepsis/sepsis-05.jpg"
+    },
+    {
+      "file": "assets/sepsis/sepsis-06.jpg"
+    },
+    {
+      "file": "assets/sepsis/sepsis-07.jpg"
+    },
+    {
+      "file": "assets/sepsis/sepsis-08.jpg"
+    },
+    {
+      "file": "assets/sepsis/sepsis-09.jpg"
+    },
+    {
+      "file": "assets/sepsis/sepsis-10.jpg"
+    },
+    {
+      "file": "assets/sepsis/sepsis-gallery.pdf"
+    },
+    {
+      "file": "assets/cellulitis/cellulitis-01.jpg"
+    },
+    {
+      "file": "assets/cellulitis/cellulitis-02.jpg"
+    },
+    {
+      "file": "assets/cellulitis/cellulitis-03.jpg"
+    },
+    {
+      "file": "assets/cellulitis/cellulitis-04.jpg"
+    },
+    {
+      "file": "assets/cellulitis/cellulitis-05.jpg"
+    },
+    {
+      "file": "assets/cellulitis/cellulitis-06.jpg"
+    },
+    {
+      "file": "assets/cellulitis/cellulitis-07.jpg"
+    },
+    {
+      "file": "assets/cellulitis/cellulitis-08.jpg"
+    },
+    {
+      "file": "assets/cellulitis/cellulitis-09.jpg"
+    },
+    {
+      "file": "assets/cellulitis/cellulitis-10.jpg"
+    },
+    {
+      "file": "assets/cellulitis/cellulitis-gallery.pdf"
+    },
+    {
+      "file": "assets/hiv/hiv-01.jpg"
+    },
+    {
+      "file": "assets/hiv/hiv-02.jpg"
+    },
+    {
+      "file": "assets/hiv/hiv-03.jpg"
+    },
+    {
+      "file": "assets/hiv/hiv-04.jpg"
+    },
+    {
+      "file": "assets/hiv/hiv-05.jpg"
+    },
+    {
+      "file": "assets/hiv/hiv-06.jpg"
+    },
+    {
+      "file": "assets/hiv/hiv-07.jpg"
+    },
+    {
+      "file": "assets/hiv/hiv-08.jpg"
+    },
+    {
+      "file": "assets/hiv/hiv-09.jpg"
+    },
+    {
+      "file": "assets/hiv/hiv-10.jpg"
+    },
+    {
+      "file": "assets/hiv/hiv-gallery.pdf"
+    },
+    {
+      "file": "assets/influenza/influenza-01.jpg"
+    },
+    {
+      "file": "assets/influenza/influenza-02.jpg"
+    },
+    {
+      "file": "assets/influenza/influenza-03.jpg"
+    },
+    {
+      "file": "assets/influenza/influenza-04.jpg"
+    },
+    {
+      "file": "assets/influenza/influenza-05.jpg"
+    },
+    {
+      "file": "assets/influenza/influenza-06.jpg"
+    },
+    {
+      "file": "assets/influenza/influenza-07.jpg"
+    },
+    {
+      "file": "assets/influenza/influenza-08.jpg"
+    },
+    {
+      "file": "assets/influenza/influenza-09.jpg"
+    },
+    {
+      "file": "assets/influenza/influenza-10.jpg"
+    },
+    {
+      "file": "assets/influenza/influenza-gallery.pdf"
+    },
+    {
+      "file": "assets/covid/covid-01.jpg"
+    },
+    {
+      "file": "assets/covid/covid-02.jpg"
+    },
+    {
+      "file": "assets/covid/covid-03.jpg"
+    },
+    {
+      "file": "assets/covid/covid-04.jpg"
+    },
+    {
+      "file": "assets/covid/covid-05.jpg"
+    },
+    {
+      "file": "assets/covid/covid-06.jpg"
+    },
+    {
+      "file": "assets/covid/covid-07.jpg"
+    },
+    {
+      "file": "assets/covid/covid-08.jpg"
+    },
+    {
+      "file": "assets/covid/covid-09.jpg"
+    },
+    {
+      "file": "assets/covid/covid-10.jpg"
+    },
+    {
+      "file": "assets/covid/covid-gallery.pdf"
+    },
+    {
+      "file": "assets/osteomyelitis/osteomyelitis-01.jpg"
+    },
+    {
+      "file": "assets/osteomyelitis/osteomyelitis-02.jpg"
+    },
+    {
+      "file": "assets/osteomyelitis/osteomyelitis-03.jpg"
+    },
+    {
+      "file": "assets/osteomyelitis/osteomyelitis-04.jpg"
+    },
+    {
+      "file": "assets/osteomyelitis/osteomyelitis-05.jpg"
+    },
+    {
+      "file": "assets/osteomyelitis/osteomyelitis-06.jpg"
+    },
+    {
+      "file": "assets/osteomyelitis/osteomyelitis-07.jpg"
+    },
+    {
+      "file": "assets/osteomyelitis/osteomyelitis-08.jpg"
+    },
+    {
+      "file": "assets/osteomyelitis/osteomyelitis-09.jpg"
+    },
+    {
+      "file": "assets/osteomyelitis/osteomyelitis-10.jpg"
+    },
+    {
+      "file": "assets/osteomyelitis/osteomyelitis-gallery.pdf"
+    }
+  ],
+  "platforms": [
+    "iOS"
+  ]
+}

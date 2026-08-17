@@ -1,0 +1,407 @@
+{
+  "assetPackID": "rc-neurology",
+  "downloadPolicy": {
+    "onDemand": {}
+  },
+  "fileSelectors": [
+    {
+      "file": "assets/stroke/stroke-01.jpg"
+    },
+    {
+      "file": "assets/stroke/stroke-02.jpg"
+    },
+    {
+      "file": "assets/stroke/stroke-03.jpg"
+    },
+    {
+      "file": "assets/stroke/stroke-04.jpg"
+    },
+    {
+      "file": "assets/stroke/stroke-05.jpg"
+    },
+    {
+      "file": "assets/stroke/stroke-06.jpg"
+    },
+    {
+      "file": "assets/stroke/stroke-07.jpg"
+    },
+    {
+      "file": "assets/stroke/stroke-08.jpg"
+    },
+    {
+      "file": "assets/stroke/stroke-09.jpg"
+    },
+    {
+      "file": "assets/stroke/stroke-10.jpg"
+    },
+    {
+      "file": "assets/stroke/stroke-gallery.pdf"
+    },
+    {
+      "file": "assets/tia/tia-01.jpg"
+    },
+    {
+      "file": "assets/tia/tia-02.jpg"
+    },
+    {
+      "file": "assets/tia/tia-03.jpg"
+    },
+    {
+      "file": "assets/tia/tia-04.jpg"
+    },
+    {
+      "file": "assets/tia/tia-05.jpg"
+    },
+    {
+      "file": "assets/tia/tia-06.jpg"
+    },
+    {
+      "file": "assets/tia/tia-07.jpg"
+    },
+    {
+      "file": "assets/tia/tia-08.jpg"
+    },
+    {
+      "file": "assets/tia/tia-09.jpg"
+    },
+    {
+      "file": "assets/tia/tia-10.jpg"
+    },
+    {
+      "file": "assets/tia/tia-gallery.pdf"
+    },
+    {
+      "file": "assets/meningitis/meningitis-01.jpg"
+    },
+    {
+      "file": "assets/meningitis/meningitis-02.jpg"
+    },
+    {
+      "file": "assets/meningitis/meningitis-03.jpg"
+    },
+    {
+      "file": "assets/meningitis/meningitis-04.jpg"
+    },
+    {
+      "file": "assets/meningitis/meningitis-05.jpg"
+    },
+    {
+      "file": "assets/meningitis/meningitis-06.jpg"
+    },
+    {
+      "file": "assets/meningitis/meningitis-07.jpg"
+    },
+    {
+      "file": "assets/meningitis/meningitis-08.jpg"
+    },
+    {
+      "file": "assets/meningitis/meningitis-09.jpg"
+    },
+    {
+      "file": "assets/meningitis/meningitis-10.jpg"
+    },
+    {
+      "file": "assets/meningitis/meningitis-gallery.pdf"
+    },
+    {
+      "file": "assets/seizure/seizure-01.jpg"
+    },
+    {
+      "file": "assets/seizure/seizure-02.jpg"
+    },
+    {
+      "file": "assets/seizure/seizure-03.jpg"
+    },
+    {
+      "file": "assets/seizure/seizure-04.jpg"
+    },
+    {
+      "file": "assets/seizure/seizure-05.jpg"
+    },
+    {
+      "file": "assets/seizure/seizure-06.jpg"
+    },
+    {
+      "file": "assets/seizure/seizure-07.jpg"
+    },
+    {
+      "file": "assets/seizure/seizure-08.jpg"
+    },
+    {
+      "file": "assets/seizure/seizure-09.jpg"
+    },
+    {
+      "file": "assets/seizure/seizure-10.jpg"
+    },
+    {
+      "file": "assets/seizure/seizure-gallery.pdf"
+    },
+    {
+      "file": "assets/parkinsons/parkinsons-01.jpg"
+    },
+    {
+      "file": "assets/parkinsons/parkinsons-02.jpg"
+    },
+    {
+      "file": "assets/parkinsons/parkinsons-03.jpg"
+    },
+    {
+      "file": "assets/parkinsons/parkinsons-04.jpg"
+    },
+    {
+      "file": "assets/parkinsons/parkinsons-05.jpg"
+    },
+    {
+      "file": "assets/parkinsons/parkinsons-06.jpg"
+    },
+    {
+      "file": "assets/parkinsons/parkinsons-07.jpg"
+    },
+    {
+      "file": "assets/parkinsons/parkinsons-08.jpg"
+    },
+    {
+      "file": "assets/parkinsons/parkinsons-09.jpg"
+    },
+    {
+      "file": "assets/parkinsons/parkinsons-10.jpg"
+    },
+    {
+      "file": "assets/parkinsons/parkinsons-gallery.pdf"
+    },
+    {
+      "file": "assets/dementia/dementia-01.jpg"
+    },
+    {
+      "file": "assets/dementia/dementia-02.jpg"
+    },
+    {
+      "file": "assets/dementia/dementia-03.jpg"
+    },
+    {
+      "file": "assets/dementia/dementia-04.jpg"
+    },
+    {
+      "file": "assets/dementia/dementia-05.jpg"
+    },
+    {
+      "file": "assets/dementia/dementia-06.jpg"
+    },
+    {
+      "file": "assets/dementia/dementia-07.jpg"
+    },
+    {
+      "file": "assets/dementia/dementia-08.jpg"
+    },
+    {
+      "file": "assets/dementia/dementia-09.jpg"
+    },
+    {
+      "file": "assets/dementia/dementia-10.jpg"
+    },
+    {
+      "file": "assets/dementia/dementia-gallery.pdf"
+    },
+    {
+      "file": "assets/ms/ms-01.jpg"
+    },
+    {
+      "file": "assets/ms/ms-02.jpg"
+    },
+    {
+      "file": "assets/ms/ms-03.jpg"
+    },
+    {
+      "file": "assets/ms/ms-04.jpg"
+    },
+    {
+      "file": "assets/ms/ms-05.jpg"
+    },
+    {
+      "file": "assets/ms/ms-06.jpg"
+    },
+    {
+      "file": "assets/ms/ms-07.jpg"
+    },
+    {
+      "file": "assets/ms/ms-08.jpg"
+    },
+    {
+      "file": "assets/ms/ms-09.jpg"
+    },
+    {
+      "file": "assets/ms/ms-10.jpg"
+    },
+    {
+      "file": "assets/ms/ms-gallery.pdf"
+    },
+    {
+      "file": "assets/gbs/gbs-01.jpg"
+    },
+    {
+      "file": "assets/gbs/gbs-02.jpg"
+    },
+    {
+      "file": "assets/gbs/gbs-03.jpg"
+    },
+    {
+      "file": "assets/gbs/gbs-04.jpg"
+    },
+    {
+      "file": "assets/gbs/gbs-05.jpg"
+    },
+    {
+      "file": "assets/gbs/gbs-06.jpg"
+    },
+    {
+      "file": "assets/gbs/gbs-07.jpg"
+    },
+    {
+      "file": "assets/gbs/gbs-08.jpg"
+    },
+    {
+      "file": "assets/gbs/gbs-09.jpg"
+    },
+    {
+      "file": "assets/gbs/gbs-10.jpg"
+    },
+    {
+      "file": "assets/gbs/gbs-gallery.pdf"
+    },
+    {
+      "file": "assets/myasthenia/myasthenia-01.jpg"
+    },
+    {
+      "file": "assets/myasthenia/myasthenia-02.jpg"
+    },
+    {
+      "file": "assets/myasthenia/myasthenia-03.jpg"
+    },
+    {
+      "file": "assets/myasthenia/myasthenia-04.jpg"
+    },
+    {
+      "file": "assets/myasthenia/myasthenia-05.jpg"
+    },
+    {
+      "file": "assets/myasthenia/myasthenia-06.jpg"
+    },
+    {
+      "file": "assets/myasthenia/myasthenia-07.jpg"
+    },
+    {
+      "file": "assets/myasthenia/myasthenia-08.jpg"
+    },
+    {
+      "file": "assets/myasthenia/myasthenia-09.jpg"
+    },
+    {
+      "file": "assets/myasthenia/myasthenia-10.jpg"
+    },
+    {
+      "file": "assets/myasthenia/myasthenia-gallery.pdf"
+    },
+    {
+      "file": "assets/icp/icp-01.jpg"
+    },
+    {
+      "file": "assets/icp/icp-02.jpg"
+    },
+    {
+      "file": "assets/icp/icp-03.jpg"
+    },
+    {
+      "file": "assets/icp/icp-04.jpg"
+    },
+    {
+      "file": "assets/icp/icp-05.jpg"
+    },
+    {
+      "file": "assets/icp/icp-06.jpg"
+    },
+    {
+      "file": "assets/icp/icp-07.jpg"
+    },
+    {
+      "file": "assets/icp/icp-08.jpg"
+    },
+    {
+      "file": "assets/icp/icp-09.jpg"
+    },
+    {
+      "file": "assets/icp/icp-10.jpg"
+    },
+    {
+      "file": "assets/icp/icp-gallery.pdf"
+    },
+    {
+      "file": "assets/sci/sci-01.jpg"
+    },
+    {
+      "file": "assets/sci/sci-02.jpg"
+    },
+    {
+      "file": "assets/sci/sci-03.jpg"
+    },
+    {
+      "file": "assets/sci/sci-04.jpg"
+    },
+    {
+      "file": "assets/sci/sci-05.jpg"
+    },
+    {
+      "file": "assets/sci/sci-06.jpg"
+    },
+    {
+      "file": "assets/sci/sci-07.jpg"
+    },
+    {
+      "file": "assets/sci/sci-08.jpg"
+    },
+    {
+      "file": "assets/sci/sci-09.jpg"
+    },
+    {
+      "file": "assets/sci/sci-10.jpg"
+    },
+    {
+      "file": "assets/sci/sci-gallery.pdf"
+    },
+    {
+      "file": "assets/migraine/migraine-01.jpg"
+    },
+    {
+      "file": "assets/migraine/migraine-02.jpg"
+    },
+    {
+      "file": "assets/migraine/migraine-03.jpg"
+    },
+    {
+      "file": "assets/migraine/migraine-04.jpg"
+    },
+    {
+      "file": "assets/migraine/migraine-05.jpg"
+    },
+    {
+      "file": "assets/migraine/migraine-06.jpg"
+    },
+    {
+      "file": "assets/migraine/migraine-07.jpg"
+    },
+    {
+      "file": "assets/migraine/migraine-08.jpg"
+    },
+    {
+      "file": "assets/migraine/migraine-09.jpg"
+    },
+    {
+      "file": "assets/migraine/migraine-10.jpg"
+    },
+    {
+      "file": "assets/migraine/migraine-gallery.pdf"
+    }
+  ],
+  "platforms": [
+    "iOS"
+  ]
+}
