@@ -120,10 +120,10 @@ form without him verifying every line. Where it is uncertain it says so.
 
 | component | count | provenance | likely claim |
 |---|---:|---|---|
-| Condition module text | 181 | **Physician-authored** (the quizzes were later generated *from* this text, which implies it pre-existed) — **verify** | human |
+| Condition module text | 183 | ⚠ **WAS RECORDED AS PHYSICIAN-AUTHORED. It is not.** The physician confirmed 2026-08-17 that the modules went through the same loop as the artwork: he wrote the prompts, generative AI produced the text, he reviewed and verified it. The inference that it "pre-existed because the quizzes were generated from it" was wrong — both were generated. | **AI — exclude**; claim the prompts, the substantive edits, and the arrangement |
 | Gallery artwork | 1,020 pages | **CONFIRMED by the physician 2026-08-17**: he wrote the prompts, generative AI produced the images, he personally reviewed and verified each one. Not an external pipeline and not commissioned from an illustrator. | **AI — exclude**; claim selection, ordering, page titles, arrangement |
 | Gallery page titles + ordering | 950 | Read and assigned by hand from each page | human |
-| Condition quiz questions | 1,820 | **24 transcribed from the physician's own PDFs**; the remaining ~1,796 AI-drafted from the module text, then QA'd | mostly **AI — exclude**; claim the 24, plus edits and arrangement |
+| Condition quiz questions | 1,840 | **24 transcribed from the physician's own PDFs** — those are human and pre-existing. The rest: prompts by the physician, AI-generated, reviewed and verified by him (confirmed 2026-08-17) | mostly **AI — exclude**; claim the 24, plus edits and arrangement |
 | USMLE items | 1,010 | Authored with AI assistance — **verify the split** | mostly AI — verify |
 | USMLE illustrations | 197 raster | AI-generated (Higgsfield) | **AI — exclude** |
 | USMLE illustrations | 34 vector | 32 ECGs, a genetics pedigree, one other — schematic, authorship **unclear, verify** | verify |
@@ -134,6 +134,42 @@ form without him verifying every line. Where it is uncertain it says so.
 | Clinical calculators | 10 | Nine reproduce **published third-party clinical scores** (Wells, PERC, CHA₂DS₂-VASc…) — third-party material, exclude. The tenth is arithmetic | exclude the nine as third-party |
 | Code (`index.html`, `sw.js`, scripts) | — | Mixed human and AI | verify before a Circular 61 filing |
 | **The compilation itself** | — | The selection, coordination and arrangement of all of it | **human — this is the strongest claim** |
+
+**The scope widened the same day, and this is the single largest correction in this file.** Asked
+about the artwork, the physician then said: *"I did the same for all the conditions and questions."*
+So the prompt-generate-review loop is not the artwork pipeline — **it is how the product was made.**
+
+That removes what this table had recorded as the strongest non-compilation claim. "Condition module
+text — physician-authored" was inferred from build history, on the reasoning that the quizzes were
+generated *from* the modules so the modules must have pre-existed. Both were generated. The
+inference was reasonable and wrong, which is exactly why line 2 of this file says the inventory is
+a starting point for the physician to correct and not a statement of fact.
+
+**What is left to claim is now clearer, and smaller:**
+
+- **The compilation** — selection, coordination, arrangement. Unchanged, and now carrying more of
+  the weight than before.
+- **The prompts themselves.** He wrote them. They are original literary works in their own right,
+  whatever their outputs are, and 1,020 image prompts plus the module and question prompts are not
+  a trivial body of text. Worth asking counsel about explicitly; it is not the same claim as the
+  outputs and it is easy to forget you have it.
+- **Substantive edits to AI output**, where they rise above correction. The guideline QA pass is the
+  clearest case: 25 entries had their stated result reversed, 16 cited studies that did not exist.
+  That is rewriting, not proofreading.
+- **The 24 transcribed quiz questions**, the gallery page titles and ordering, and the guideline
+  entries the physician submitted himself.
+
+⚠ **"I reviewed and verified it" is not authorship**, and the distinction has to survive into the
+filing. Verifying an output is quality control. What may count is *controlling the expressive
+elements*, which is the case-by-case question. Do not let a form say "author" where the honest word
+is "editor" or "compiler".
+
+**One thing this does NOT change: the marketing claim.** "Designed and clinically reviewed by a team
+of clinicians" is accurate under this account — he designed it and clinically reviewed it. The
+physician's own revision of the verb from "created" to "designed" on 2026-08-17 turns out to have
+been more accurate than anyone knew at the time.
+
+---
 
 **The physician's own account of the artwork, given 2026-08-17, is worth quoting exactly** because
 it is the first direct statement of provenance and it settles the largest line in this table:
@@ -204,6 +240,16 @@ A design patent on the GUI's ornamental appearance is the only variant worth eve
 ## Open loops
 
 - [ ] **The provenance inventory above, verified by the physician.** Blocks the copyright filing.
+      **Partly done 2026-08-17:** the artwork, the condition module text and the questions are
+      confirmed as prompt-generated, AI-produced and physician-reviewed. Four lines still say
+      "verify" and one of them was wrong before he looked, so the rest are worth asking about
+      directly rather than inferring:
+      **the 24 quiz questions** transcribed from his own PDFs (were those PDFs his pre-existing
+      work?), **the 470 guideline entries** he submitted (written by him, or gathered?),
+      **the 300 drug entries**, **the 150 NCLEX items**, **the 1,010 USMLE items**, and the
+      **34 vector USMLE illustrations** including the 32 ECGs.
+      Also worth settling: where he **rewrote** AI output rather than accepting it, since those
+      edits are a human claim and the guideline QA pass shows they were substantial.
 - [ ] Trademark: create the USPTO.gov account (identity verification has a lead time), lock the
       goods/services wording from the ID Manual, then file. Full detail in `trademark-plan.md`.
 - [ ] **Fee figures in both documents are unverified.** `uspto.gov` and `copyright.gov` are both

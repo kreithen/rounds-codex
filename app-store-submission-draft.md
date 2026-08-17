@@ -396,9 +396,10 @@ OWNERSHIP OF THE CONTENT
 This account is enrolled as an individual. The copyright notice in the app and on its
 illustrations reads "© 2026 Rounds Codex, Inc." because that company owns the content; the
 account holder is its owner and is authorised to publish this app on its behalf. The
-illustrations were produced for Rounds Codex using generative AI, from prompts written by our
-clinical lead, and every image was reviewed and approved by him before it was included. The
-app's About page discloses this. No third-party copyrighted material is reproduced in the app.
+illustrations, the condition text and the practice questions were produced for Rounds Codex
+using generative AI, from prompts written by our clinical lead, and each was reviewed and
+verified by him before it was included. The app's About page discloses this. No third-party
+copyrighted material is reproduced in the app.
 
 EDUCATIONAL USE, NOT CLINICAL USE
 The app is a study aid and says so on first launch, before any content is reachable: the user
@@ -443,10 +444,12 @@ it costs nothing and answers the question before it is asked.
 and this answers it before it is asked — the same tactic as the calculator paragraph above. It costs
 four lines and removes the only real risk of shipping before the account converts.
 
-**Confirmed by the physician 2026-08-17**, with one correction. The original draft said the
-illustrations were "original works commissioned or created for Rounds Codex". They were not
-commissioned: **he wrote the prompts, generative AI produced the images, and he reviewed and
-verified each one.** The paragraph now says that.
+**Confirmed by the physician 2026-08-17**, with one correction that then widened. The original
+draft said the illustrations were "original works commissioned or created for Rounds Codex". They
+were not commissioned: **he wrote the prompts, generative AI produced the output, and he reviewed
+and verified each one — and the same is true of the condition text and the practice questions.**
+The paragraph now covers all three rather than singling out the artwork, which would have implied
+the text was written a different way.
 
 **Saying so is the safer choice, not the braver one.** The app's own About page already tells every
 reader "We prompted artificial intelligence to assist us with generative artwork" — so a reviewer
