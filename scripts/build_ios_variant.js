@@ -256,6 +256,120 @@ surgery('privacy deletion section', () => {
   );
 });
 
+/* ---------------------------------------------------------------- 7. Ask Rounds Codex
+ * The physician's call, 2026-08-17, after this was measured rather than reasoned about.
+ *
+ * asend() POSTs to /.netlify/functions/ask -- a real Claude-backed RAG endpoint -- and on ANY
+ * failure falls back to answer(q), a keyword matcher over a FIVE-entry KB. A Capacitor bundle
+ * serves from a local origin, so that path 404s on every question and the fallback is the only
+ * behaviour there is. Served with no ask function, the four starter buttons answer convincingly
+ * (they are four of the five KB entries) and every other question -- community-acquired pneumonia,
+ * hyponatremia workup, Ranson criteria -- returns the same paragraph, "I'd ground this in the
+ * relevant Rounds Codex condition entry...", under a source chip reading "Rounds Codex -> Rounds
+ * Codex Library".
+ *
+ * That is the gallery-PDF-stub shape and worse in one respect: the deflection READS like an answer
+ * and carries a citation, so it does not look broken, while the page header claims "Cited answers
+ * grounded in the 183-condition library". A reviewer who types one question that is not a starter
+ * meets it immediately. Guideline 2.1.
+ *
+ * Removing the entry point alone would leave the view unreachable, which is the outcome we want --
+ * but the view's code carries the claims ("Every answer cites its reference source") and the
+ * endpoint call, and the same reasoning that took the account helpers out in 3b applies here. So
+ * the whole feature goes: the entry point, its handler, the ASK region, and paint()'s branch.
+ *
+ * IT ALSO SETTLES THE PRIVACY LABEL. With Ask gone, nothing in this build transmits anything, so
+ * "Data Not Collected" is true rather than nearly true, and the privacy page's Ask carve-out has to
+ * go with it or it describes a feature that is not there. That last edit is 7e and is easy to miss:
+ * a policy disclosing a transmission the app cannot make is as wrong as one hiding a real transmission. */
+surgery('Ask Rounds Codex', () => {
+  // 7a -- the only user-facing way in: the block at the bottom of every condition page.
+  const A_OPEN = '  <div class="modask"><div class="modask-h">';
+  const A_CLOSE = '</button></div></div>\n';
+  once(A_OPEN);
+  const a = s.indexOf(A_OPEN);
+  const b = s.indexOf(A_CLOSE, a);
+  if (b < 0) { console.error('FAIL: the .modask block does not close where expected'); process.exit(1); }
+  const entry = s.slice(a, b + A_CLOSE.length);
+  if (!entry.includes('modAsk()') || !entry.includes('id="modq"')) {
+    console.error('FAIL: the .modask block is not what was expected'); process.exit(1);
+  }
+  if (entry.includes('genPdf') || entry.includes('class="discl"')) {
+    console.error('FAIL: the .modask block runs past itself into the PDF button - aborting'); process.exit(1);
+  }
+  s = s.slice(0, a) + s.slice(b + A_CLOSE.length);
+
+  // 7b -- its handler, one self-contained line
+  sub("function modAsk(){const el=document.getElementById('modq');if(!el)return;const q=el.value.trim();" +
+      "if(!q)return;go('ask');const inp=document.getElementById('aq');if(inp){inp.value=q;asend();}}\n", '');
+
+  // 7c -- the ASK region: KB, answer, askHTML, abot, askGreet, aask, asend. Bounded by the two
+  // section banners, so it cannot run into the OR view below it.
+  const R_OPEN = '/* ---------- ASK ---------- */\n';
+  const R_CLOSE = '/* ---------- OR ---------- */';
+  once(R_OPEN); once(R_CLOSE);
+  const ra = s.indexOf(R_OPEN), rb = s.indexOf(R_CLOSE, ra);
+  if (rb < 0) { console.error('FAIL: the ASK region is not followed by the OR region'); process.exit(1); }
+  const region = s.slice(ra, rb);
+  const fns = (region.match(/^(?:async )?function (\w+)\(/gm) || []).map(m => m.replace(/^(async )?function /, '').slice(0, -1));
+  const EXPECT = ['answer', 'askHTML', 'abot', 'askGreet', 'aask', 'asend'];
+  if (fns.join(',') !== EXPECT.join(',')) {
+    console.error(`FAIL: the ASK region declares [${fns}], expected [${EXPECT}] - aborting`); process.exit(1);
+  }
+  if (!region.includes('/.netlify/functions/ask') || !region.includes('const KB=')) {
+    console.error('FAIL: the ASK region lacks the endpoint call or the KB literal'); process.exit(1);
+  }
+  s = s.slice(0, ra) +
+      '/* ---------- ASK: removed in the ' + MARKER + ' ----------\n' +
+      '   The view reached a server endpoint that a local-origin bundle cannot, leaving a five-entry\n' +
+      '   keyword fallback that answered four starter questions and deflected every other one under a\n' +
+      '   citation chip. Kept in the web build, where the endpoint is real. The .modask CSS rules are\n' +
+      '   left in place: six unreachable selectors are not worth hand-editing a stylesheet for. */\n' +
+      s.slice(rb);
+
+  // 7d -- paint()'s branch, which would now be a ReferenceError if anything ever reached it
+  sub(" else if(r.v==='ask'){s.innerHTML=askHTML();askGreet();}\n", '');
+
+  /* 7e -- the privacy carve-out for a feature this build no longer has. This edits surgery 5's
+     OUTPUT, not the original file: 5 rewrote the account clause of the same `key` string and left
+     the Ask sentence standing, because at that point Ask was still here. Anchored on the post-5
+     text so the ordering is explicit rather than accidental. */
+  sub("      'history stay <b>on your device</b>. The one exception is described below: if you use Ask '+\n" +
+      "      'Rounds Codex, your question is sent to us so it can be answered.',",
+      "      'history stay <b>on your device</b>, and nothing in this app transmits anything.',");
+  sub("   {h:'What leaves your device', p:[\n" +
+      "    '<b>Ask Rounds Codex.</b> When you send a question, the question text and which mode you are in '+\n" +
+      "    '(nursing, medical student or resident) are sent to our server so an answer can be generated. No '+\n" +
+      "    'name, account, device identifier or location is attached, and your bookmarks and practice history '+\n" +
+      "    'are never sent.',\n" +
+      "    'Nothing else in the app transmits anything. Reading conditions, viewing galleries, taking quizzes '+\n" +
+      "    'and taking practice exams all happen entirely on your device.']},",
+      "   {h:'What leaves your device', p:[\n" +
+      "    '<b>Nothing.</b> This app does not transmit anything about you or anything you do in it. Reading '+\n" +
+      "    'conditions, viewing galleries, taking quizzes and taking practice exams all happen entirely on '+\n" +
+      "    'your device, and they work with no connection at all.']},");
+});
+
+/* ---------------------------------------------------------------- 8. the web manifest
+ * "an AI study tutor" describes the feature surgery 7 just removed. The manifest is a PWA artefact
+ * and a Capacitor shell does not read it, but it ships in the bundle and it is the kind of stale
+ * claim that gets copied into store copy later. app-store-submission-draft.md needs the same pass
+ * by hand -- this script does not own that file. */
+let manifestOut = null;
+{
+  const mf = path.join(ROOT, 'manifest.webmanifest');
+  const was = fs.readFileSync(mf, 'utf8');
+  const OLD = 'mastery quizzes, and an AI study tutor.';
+  /* A literal em dash, matching the one already in the same sentence. Writing the \\u2014 ESCAPE
+     here instead is valid JSON and looks identical in a diff, but leaves the description carrying
+     one of each -- the sort of thing that survives forever because nothing renders it wrong. */
+  const NEW = 'mastery quizzes, and narrated modules — all offline.';
+  if (!was.includes(OLD)) { console.error('FAIL: manifest description is not the expected text'); process.exit(1); }
+  manifestOut = was.replace(OLD, NEW);
+  JSON.parse(manifestOut);              // a manifest that does not parse is a silently broken install
+  log.push(`  manifest.webmanifest: "an AI study tutor" -> "narrated modules - all offline"`);
+}
+
 /* ---------------------------------------------------------------- assertions
  * Each one names a way this could have gone wrong, and several of them would have caught a real
  * historical bug in this codebase. */
@@ -273,6 +387,17 @@ const checks = [
   ['no "we hold your email"',     !/hold your email address/.test(s)],
   ['Clear my saved data intact',  /onclick="accountReset\(\)"/.test(s)],
   ['no supabase endpoint left',   !/supabase\.co/.test(s)],
+  ['no Ask entry point',          !/class="modask"/.test(s) && !/modAsk\(\)/.test(s)],
+  ['no ask endpoint call',        !/functions\/ask/.test(s)],
+  ['no Ask view code',            !/function askHTML\(/.test(s) && !/function asend\(/.test(s) &&
+                                  !/const KB=/.test(s)],
+  ['nothing still calls the Ask view', !/askHTML|askGreet|\basend\b|\baask\b|\bmodAsk\b/.test(s)],
+  /* ROOTS still lists 'ask'. It is declared and never read -- the only other mentions in the file
+     are two comments -- so removing the entry would be a cosmetic edit to a dead declaration. This
+     asserts it stays dead: if ROOTS ever becomes live, this build must fail rather than route to a
+     view it no longer has. */
+  ['ROOTS is still never read',   (s.match(/\bROOTS\b/g) || []).length === 3],
+  ['nothing transmits',           !/fetch\(['"]\/\.netlify/.test(s)],
   ['variant marker present',      s.includes('window.' + MARKER + '=1')],
   /* Not "<= 1": the file mentions <base> twice, once in a comment explaining why the tag is written
      by the RC_ROOT head script rather than hard-coded. The invariant is that this build ADDS none --
@@ -283,7 +408,18 @@ const checks = [
 let bad = 0;
 console.log('');
 for (const [name, ok] of checks) { console.log(`  ${ok ? 'ok  ' : 'FAIL'} ${name}`); if (!ok) bad++; }
-if (bad) { console.error(`\n${bad} assertion(s) failed -- not writing`); process.exit(1); }
+if (bad) {
+  /* Name the surviving references rather than just the failed check. "something still calls the Ask
+     view" sends you grepping the 745 kB source; the line does not. */
+  const stray = /askHTML|askGreet|\basend\b|\baask\b|\bmodAsk\b|modask|rcSignOut|rcDeleteAccount|rc-authgate/;
+  const lines = s.split('\n').map((l, i) => [i + 1, l]).filter(([, l]) => stray.test(l));
+  if (lines.length) {
+    console.error('\nsurviving references:');
+    lines.slice(0, 12).forEach(([n, l]) => console.error(`  ${n}: ${l.trim().slice(0, 130)}`));
+  }
+  console.error(`\n${bad} assertion(s) failed -- not writing`);
+  process.exit(1);
+}
 
 /* The structural check the assertions cannot give: the result must still parse. The content split
  * means index.html is code only, so a broken string concatenation in accountHTML() or RC_LEGAL is a
@@ -302,5 +438,10 @@ if (bad) { console.error(`\n${bad} assertion(s) failed -- not writing`); process
 console.log('\nsurgeries:');
 log.forEach(l => console.log(l));
 console.log(`\nindex.html: ${before} -> ${s.length} bytes (${s.length - before})`);
-if (APPLY) { fs.writeFileSync(file, s); console.log('written'); }
-else { console.log('dry run -- pass --apply to write'); }
+if (APPLY) {
+  fs.writeFileSync(file, s);
+  fs.writeFileSync(path.join(ROOT, 'manifest.webmanifest'), manifestOut);
+  console.log('written: index.html, manifest.webmanifest');
+} else {
+  console.log('dry run -- pass --apply to write');
+}

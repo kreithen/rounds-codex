@@ -54,9 +54,10 @@ reverse: one script that strips the wall and swaps those three blocks, asserted,
 verified headless before archiving. It is not a fork of the codebase and must not become one.
 
 **BUILT 2026-08-17: `scripts/build_ios_variant.js`, guarded by `scripts/verify_ios_variant.js`.**
-Seven surgeries; run it against a *copy* of the shipped tree on the way to the archive and never
-commit its output back. It refuses to run twice. The verifier is 19 checks in a real browser and
-**fails 11 of them against the unmodified web build**, so it is a guard and not decoration — it
+Eight surgeries; run it against a *copy* of the shipped tree on the way to the archive and never
+commit its output back. It refuses to run twice, and it writes `index.html` **and**
+`manifest.webmanifest`. The verifier is 27 checks in a real browser and **fails 16 of them against
+the unmodified web build**, so it is a guard and not decoration — it
 deliberately does *not* seed a session (every other suite in this repo does, and seeding makes the
 wall call `pass()` and vanish, so a build with the wall still in would pass) and it hit-tests the
 viewport centre, because a `querySelector` returning null does not prove a fixed overlay is not
@@ -76,8 +77,8 @@ still does something, and the rewritten privacy text points the reader at it by 
 
 ### 1.5 — Ask Rounds Codex degrades to a five-entry stub in a native bundle
 
-**Found 2026-08-17 while verifying the variant. Not fixed; it is not one of the four surfaces, and
-the fix is a product decision.**
+**Found 2026-08-17 while verifying the variant — a fifth surface, not one of the four the wall work
+was scoped to. Resolved the same day; the decision is recorded below.**
 
 `asend()` POSTs to `/.netlify/functions/ask` — a real Claude-backed RAG endpoint — and on any
 failure falls back to `answer(q)`, a local keyword matcher over a **five-entry** `KB` array. In a
@@ -93,17 +94,33 @@ answer and carries a citation, so it does not look broken. The page header claim
 grounded in the 183-condition library" and the greeting promises "Every answer cites its reference
 source". A reviewer who types one question that is not a starter meets it immediately.
 
-Three ways out, and it is the physician's call: let the app call the live endpoint over the network
-(honest, but then the feature needs a connection and **"Data Not Collected" has to account for the
-question text leaving the device** — see below); ship a real on-device retriever over
-`content/conditions.json`, which is already bundled; or remove the Ask entry point from the iOS
-variant, which is a one-line addition to `build_ios_variant.js`. Doing nothing is the one option
-that is not available.
+**DECIDED 2026-08-17 (physician): drop Ask from the iOS variant.** The two alternatives were to
+call the live endpoint over the network — which costs the offline claim and puts the question text
+on the "Data Not Collected" label — or to build a real on-device retriever over the already-bundled
+`content/conditions.json`, which is a feature, not a submission fix. Ask stays on the **web**, where
+the endpoint is real.
 
-**This also settles the privacy-label question in the opposite direction to the obvious one.** The
-in-app privacy text discloses that Ask sends your question to us. If iOS never reaches the endpoint,
-that disclosure is *false on iOS* and "Data Not Collected" is safe; if iOS does reach it, the
-disclosure is right and the label is not. The two have to be decided together.
+Removing the entry point alone would have left the view unreachable, which is the outcome wanted.
+It was not enough: the view's own code carries the claims ("Every answer cites its reference
+source") and the endpoint call, so surgery 7 takes the whole feature — the `.modask` block on every
+condition page, `modAsk()`, the `ASK` region (`KB`, `answer`, `askHTML`, `abot`, `askGreet`, `aask`,
+`asend`), and `paint()`'s `r.v==='ask'` branch. `ROOTS` still lists `'ask'`; it is **declared and
+never read** — the only other mentions in the file are two comments — so the entry is left alone and
+an assertion holds it dead, failing the build if `ROOTS` ever becomes live.
+
+**7e is the edit that is easy to miss.** With Ask gone, the privacy page's "if you use Ask Rounds
+Codex, your question is sent to us" describes a feature the build does not have, and **a policy
+that overstates what leaves the device is as wrong as one that hides a real transmission.** Both
+the short version and the "What leaves your device" section are rewritten to say plainly that
+nothing is transmitted. `manifest.webmanifest`'s "an AI study tutor" goes the same way.
+
+**The consequence for the privacy label:** Ask was the only thing in the app that transmitted
+anything, so **"Data Not Collected" is now true of the binary** rather than nearly true. The
+verifier measures this rather than asserting it from the source — it watches every request over the
+whole session and fails if one leaves the origin.
+
+**Still to do by hand, and this script does not own those files:** the App Store description and
+`app-store-submission-draft.md` both still promise an AI tutor.
 
 **The fix for 1.4 is a decision, and the better answer is one policy that covers both platforms**
 rather than two policies: a short paragraph saying the website requires an invitation and stores
@@ -131,7 +148,9 @@ avoid.
       *before submission*, since Apple links that URL. Note that `build_ios_variant.js` anchors on
       the current privacy wording and will **abort loudly** rather than half-apply once that
       paragraph lands — update the two together.
-- [ ] **Ask Rounds Codex in the native bundle** — §1.5. Blocks the privacy label as well.
+- [x] **Ask Rounds Codex in the native bundle** — §1.5. Dropped from the variant, 2026-08-17.
+- [ ] **Store copy still promises an AI tutor** — the App Store description and
+      `app-store-submission-draft.md`. `manifest.webmanifest` is handled by the variant script.
 - [ ] **Screenshots** — 6.9" iPhone required, 13" iPad strongly recommended, at least 6 each. The
       eight shots and their captions are drafted in `app-store-submission-draft.md` §Screenshots and
       that part is still good. **Needs a Mac; cannot be produced from a session.**
@@ -139,8 +158,9 @@ avoid.
       the tiers in 2025, so read the current questionnaire rather than a remembered band.
 - [ ] **Export compliance** — HTTPS only, so the standard exemption applies, but the question must
       still be answered.
-- [ ] **Privacy nutrition label: "Data Not Collected"** — §1.1–1.3 were necessary and are **not
-      sufficient**. Ask Rounds Codex is the remaining question; see §1.5.
+- [x] **Privacy nutrition label: "Data Not Collected"** — true of the iOS variant as built. Ask was
+      the only thing that transmitted anything and it is gone; `verify_ios_variant.js` measures it
+      by watching every request over a whole session, rather than asserting it from the source.
 
 ## 3. Copy — everything drafted is stale in two ways
 
@@ -168,7 +188,8 @@ question about what generates the answers.
 
 - [ ] Refresh every count in the description, promotional text and review notes
 - [ ] Rewrite the attribution lines
-- [ ] Decide on "AI study tutor" in `manifest.webmanifest`
+- [x] Decide on "AI study tutor" in `manifest.webmanifest` — rewritten by `build_ios_variant.js`
+      for iOS, since the feature is not in that build. The **web** manifest is unchanged and correct.
 
 ## 4. Build work
 

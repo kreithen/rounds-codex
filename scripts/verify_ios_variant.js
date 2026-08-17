@@ -49,11 +49,19 @@ const check = (name, ok, detail) => { results.push([name, ok, detail]); };
   const browser = await chromium.launch({
     executablePath: '/opt/pw-browsers/chromium-1194/chrome-linux/chrome', args: ['--no-sandbox'] });
 
-  const errs = [];
+  const errs = [], offOrigin = [];
+  const ORIGIN = `http://127.0.0.1:${PORT}`;
   const newPage = async () => {
     const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true });
     const p = await ctx.newPage();
     p.on('pageerror', e => errs.push(String(e)));
+    /* A native bundle serves from a local origin. Anything the app asks for beyond its own files
+       either fails there or leaves the device -- both matter, and only one of them is visible in
+       the source. /.netlify/functions/ask is same-origin here, so it is named explicitly. */
+    p.on('request', r => {
+      const u = r.url();
+      if (!u.startsWith(ORIGIN) || /\/\.netlify\/functions\//.test(u)) offOrigin.push(u);
+    });
     return { ctx, p };
   };
 
@@ -111,6 +119,31 @@ const check = (name, ok, detail) => { results.push([name, ok, detail]); };
      it by name, so losing it would leave the policy promising something the app cannot do. */
   check('"Clear my saved data" survives', /Clear my saved data/.test(acct.text));
 
+  /* ---------- Ask Rounds Codex is gone, and gone from a condition page, not just from the code ----
+     Checked on a rendered detail page because the entry point is markup inside detailHTML's
+     template literal -- the block only exists once a condition is painted. A source grep proves the
+     string went; it does not prove the page still renders without it, and the block sat between the
+     References panel and the Download-module button. */
+  await p.evaluate(() => go('detail', 'chf'));
+  await p.waitForTimeout(700);
+  const det = await p.evaluate(() => {
+    const el = document.querySelector('.app');
+    /* Structural, not textual. `/References/` against innerText fails on a CORRECT build: the
+       heading is text-transform:uppercase, and innerText reports the RENDERED casing. That cost a
+       wrong diagnosis -- it failed identically on both builds, which is the tell that the check was
+       wrong and not the surgery. */
+    return { text: el.innerText, modask: !!el.querySelector('.modask'), q: !!document.getElementById('modq'),
+             pdf: !!el.querySelector('.dlpdf'), refs: !!el.querySelector('.panel.refs') };
+  });
+  check('no Ask box on a condition page', !det.modask && !det.q);
+  check('no "Ask Rounds Codex" copy left',  !/Ask Rounds Codex/i.test(det.text));
+  /* The two things that bracketed the removed block. If the surgery had over-run, one of them would
+     be missing and every other check here would still pass. */
+  check('References panel survives the cut', det.refs);
+  check('Download-module button survives',   det.pdf);
+  check('the Ask view no longer exists',
+        await p.evaluate(() => typeof askHTML === 'undefined' && typeof asend === 'undefined'));
+
   /* ---------- Privacy ---------- */
   await p.evaluate(() => go('privacy'));
   await p.waitForTimeout(600);
@@ -119,6 +152,17 @@ const check = (name, ok, detail) => { results.push([name, ok, detail]); };
   check('privacy: no email held',          !/hold your email address/i.test(priv) && !/we hold your email/i.test(priv));
   check('privacy: no invitation/account',  !/invitation/i.test(priv) && !/Deleting your account/i.test(priv));
   check('privacy: says there is no account', /no account/i.test(priv));
+  /* The policy must not describe a transmission this build cannot make. A policy that overstates
+     what leaves the device is as wrong as one that hides a real transmission, and it is the
+     direction nobody checks. */
+  check('privacy: no stale Ask carve-out', !/Ask Rounds Codex/i.test(priv));
+  /* Deliberately the exact new sentence and not /transmit/i: the web build says "Nothing ELSE in
+     the app transmits anything", so a loose match passes on the very build this is meant to fail. */
+  check('privacy: says nothing is transmitted', /does not transmit anything/i.test(priv));
+
+  /* Nothing in the build reaches the network for anything but its own assets. Measured over the
+     whole session, not asserted from the source. */
+  check('no request left this origin', offOrigin.length === 0, offOrigin.slice(0, 3).join(' | '));
 
   await ctx.close();
 
@@ -158,12 +202,13 @@ const check = (name, ok, detail) => { results.push([name, ok, detail]); };
   }
   console.log(bad ? `\n${bad}/${results.length} checks FAILED` : `\nall ${results.length} checks pass`);
 
-  /* Stated on every run, pass or fail, because it is the one thing this file cannot settle and it
-     is easy to read a green run as "the privacy label is now correct".
-     Ask Rounds Codex POSTs the question text and the mode to /.netlify/functions/ask. That is a
-     real transmission and it happens on iOS too, so "Data Not Collected" is a question for the
-     physician and not a consequence of this variant. The privacy page discloses it in both builds. */
-  console.log('\nNOTE: Ask Rounds Codex still POSTs question text to the server. Reconcile that with the\n' +
-              '      App Store "Data Not Collected" label before submitting -- this variant does not.');
+  /* Stated on every run because it is the consequence most easily lost between two documents.
+     Ask Rounds Codex was the only thing in the app that transmitted anything, and it is gone from
+     this build -- so "Data Not Collected" is now true of the binary rather than nearly true. The
+     App Store description and app-store-submission-draft.md still have to stop promising it; this
+     script rewrites manifest.webmanifest and owns nothing else. */
+  console.log('\nNOTE: Ask Rounds Codex is removed from this build, so nothing in it transmits anything.\n' +
+              '      manifest.webmanifest is rewritten to match. The App Store description and\n' +
+              '      app-store-submission-draft.md still say "AI study tutor" -- fix those by hand.');
   process.exit(bad ? 1 : 0);
 })().catch(e => { console.error(e); process.exit(1); });
