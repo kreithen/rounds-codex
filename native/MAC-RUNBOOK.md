@@ -219,7 +219,9 @@ version/copyright, legal-page and AASA checks that only apply there.
 
 ## 9. Before you press submit
 
-- **Airplane Mode, cold, on a real device.** Offline is the main claim and nothing in a container
+- ~~**Airplane Mode, cold, on a real device.**~~ **PASSED 2026-08-17** — iPhone 16 Pro Max, iOS
+  26.6: force-quit, Airplane Mode, relaunch, full-size gallery page rendered. Re-run it against the
+  final archive rather than treating this as settled for every future build. Offline is the main claim and nothing in a container
   can test it. Force-quit, enable Airplane Mode, launch: library, a condition, a quiz, a calculator,
   and a gallery — including opening a full-size page, which in v1 is in the bundle and must render
   with no network at all. If any gallery page is blank offline, the payload lost files it should

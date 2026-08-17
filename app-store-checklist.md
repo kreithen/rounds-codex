@@ -251,9 +251,12 @@ build and the variant script rewrites the phrase. The web manifest keeps it and 
       rebuild with `scripts/build_aasa.js --team <ID> --bundle <ID> --apply` once the Xcode project
       exists, because a wrong appID fails silently and iOS just opens the link in Safari); save
       gallery PDF to Files; local notifications for the review queue; haptics on quiz answers.
-- [ ] **Test the built package on a real device in Airplane Mode, cold.** Offline is the main claim,
-      and with v1 bundled it is now an unqualified one — including full-size gallery pages, which
-      must render with no network at all.
+- [x] **Test the built package on a real device in Airplane Mode, cold.** **DONE 2026-08-17** on the
+      physician's own iPhone (iPhone 16 Pro Max, iOS 26.6), installed from Xcode over the cable:
+      force-quit, Airplane Mode on, relaunched, and **a full-size gallery page opened with no
+      network at all**. That is the specific thing bundling the media bought, and it is why "works
+      entirely offline" can go in the listing unqualified. Nothing in a container could have tested
+      it — no WebKit, no device.
 - [ ] **Restore Purchases** — required, but only when the paywall lands. Not for a free v1.
 
 ## 5. Already done — do not re-do these
