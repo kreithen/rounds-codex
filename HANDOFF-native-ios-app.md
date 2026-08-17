@@ -101,7 +101,23 @@ Four surfaces claim an account exists, and three are content rather than code:
 3. **Privacy page** — "Access is by invitation and needs an account, so we hold your email address".
    **Contradicts a "Data Not Collected" privacy label outright** — Guideline 2.3.1.
 4. **The privacy policy URL** on the submission form points at a page describing the *web* product.
-   Recommended fix is **one platform-aware policy**, not two documents that will drift.
+   **DECIDED 2026-08-14: one platform-aware policy**, not two documents that will drift — a short
+   paragraph saying the website requires an invitation and stores your email, and the iOS app has
+   no account and stores nothing.
+   **Not written yet, deliberately.** As of v126 the public pages describe the web product, which
+   is accurate today: there is no iOS app to describe. Add the paragraph **to `RC_LEGAL` in
+   `index.html`** and re-run `node scripts/build_legal_pages.js <root> --apply` — never edit
+   `privacy/index.html` by hand, it is generated. Do it **before submission**, since Apple links
+   that URL from the listing.
+
+**One trap in that generator, found the hard way on 2026-08-17.** `RC_LEGAL` is authored for the
+in-app view, so its prose can carry markup that only works with the app's JavaScript. Both public
+pages shipped `<a href="#" onclick="contactUs();return false;">our contact address</a>` — and the
+pages have no `<script>` at all, so it threw a `ReferenceError` and did nothing. A dead control on
+the page Apple links to, of exactly the shape that made the gallery PDF stub survive for months.
+The generator now rewrites it to a `mailto:` and **refuses to emit any remaining `onclick`,
+`href="#"` or `javascript:`**. If you add the platform paragraph and the build throws, that guard is
+working — add a rewrite, do not weaken it.
 
 The account page's own code is the reference: `accountHTML()` in `index.html`. Note that
 `rcAccountEmail()` falls back to the literal string `'Signed in'`, so the block does not look broken
@@ -132,6 +148,9 @@ The three levers, in order of value:
    is 102 now, so **re-measure rather than trusting that figure.**
 
 Even with all three, this lands around 240 MB — under the target, but with no margin.
+
+**DECIDED 2026-08-14: measure the real limit first, then choose.** Do not start compressing artwork
+to hit 250 MB until that number is confirmed to apply.
 
 **Before optimising to a number, check what the number actually is.** The 250 MB target comes from
 Apple's cellular-download limit, which has moved more than once and is not a rejection threshold —
@@ -208,10 +227,16 @@ age-rating questionnaire, export compliance, and the "AI study tutor" phrasing i
 
 ## 7. Open state to carry over
 
-- **v89** — the public `/privacy/` and `/terms/` pages — is **committed but deliberately unpushed**
-  in the app clone, held for the web launch. It regenerates from `index.html` in one command
-  (`node scripts/build_legal_pages.js <root> --apply`), so nothing is lost if the container is
-  reclaimed. **The iOS privacy policy decision in §4.1 item 4 changes what those pages should say**,
-  so settle that before regenerating them.
+- **The public `/privacy/` and `/terms/` pages are LIVE as of v126** (2026-08-17). The App Store
+  privacy-policy URL now resolves for a signed-out reviewer. **`noindex` was deliberately left in
+  place** — `robots.txt` and the `X-Robots-Tag` block in `_headers` are untouched, so this published
+  the pages without starting the §412 copyright clock. Removing `noindex` is a separate, deliberate
+  act (task #41) and the physician's call.
+- **The app repo's `main` is shared with the anatomy leader-line conversation, which pushes to it
+  constantly.** It went from v89 to v125 in three days while this clone sat at v89, so the held
+  commit both collided on a version number and would not fast-forward. **Always
+  `git fetch origin main` and rebase before pushing to that repo, and take the next version number
+  from `git show origin/main:version.txt` rather than from anything local.** A 403 on push can be
+  collateral from the non-fast-forward rather than an auth problem — fetch before diagnosing it.
 - Open tasks relevant here: **#43** (no-wall variant), **#27** (download size). Everything else on
   the task list belongs to other projects.

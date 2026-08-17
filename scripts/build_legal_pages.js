@@ -86,11 +86,32 @@ nav{margin-top:10px;font-size:14px}
 }
 `.trim().replace('#1d3category', '#1d3350');
 
+/* RC_LEGAL is authored for the IN-APP view, so its prose may carry markup that only works with the
+   app's JavaScript loaded. These pages deliberately ship no <script> at all, so such markup becomes
+   a control that looks live and is dead -- and this is the page App Store Connect links to from the
+   listing, read by someone deciding whether to trust the app.
+   That shipped: both pages carried `<a href="#" onclick="contactUs();return false;">our contact
+   address</a>`, and `contactUs` is an app function, so the link threw a ReferenceError and did
+   nothing. Rewrite what we know how to rewrite, then REFUSE to emit anything still app-dependent --
+   a silent dead link is the failure this whole generator exists to prevent. */
+function standalone(html, where) {
+  const out = html.replace(
+    /<a href="#" onclick="contactUs\(\);return false;">([^<]*)<\/a>/g,
+    `<a href="mailto:${CONTACT}">$1</a>`);
+  const leftover = out.match(/onclick=|href="#"|javascript:/);
+  if (leftover) {
+    throw new Error(
+      `${where}: RC_LEGAL carries app-only markup that would be dead on a static page ` +
+      `(${leftover[0]}). Add a rewrite to standalone() -- do not ship it.`);
+  }
+  return out;
+}
+
 function page(which) {
   const d = LEGAL[which];
   const other = which === 'terms' ? 'privacy' : 'terms';
-  const body = d.sections.map(s =>
-    `<section>\n<h2>${s.h}</h2>\n${s.p.map(x => `<p>${x}</p>`).join('\n')}\n</section>`).join('\n\n');
+  const body = d.sections.map((s, i) =>
+    `<section>\n<h2>${s.h}</h2>\n${s.p.map(x => `<p>${standalone(x, which + ' §' + (i + 1))}</p>`).join('\n')}\n</section>`).join('\n\n');
   return `<!doctype html>
 <html lang="en">
 <head>
