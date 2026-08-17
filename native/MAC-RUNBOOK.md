@@ -34,22 +34,21 @@ cd rounds-codex && git checkout claude/native-ios-app
 git clone https://github.com/kreithen/rounds-codex-app.git ../rounds-codex-app
 ```
 
-## 1. Two identifiers, then redeploy the AASA
+## 1. ~~Identifiers and the AASA~~ — DONE, v129, 2026-08-17
 
-The Universal Links file is live but **inert**: its appID is `TEAMID.com.roundscodex.app`. A wrong
-appID is not an error — iOS silently opens the link in Safari and tells you nothing.
+Team **`744JSM2Z3H`**, bundle **`com.roundscodex.app`**. The live Universal Links file carries
+`744JSM2Z3H.com.roundscodex.app` and the placeholder marker is gone. Nothing to do here.
 
-Team ID: developer.apple.com → Membership → Team ID (ten characters).
+Those two strings are what step 4 needs for Associated Domains and signing.
 
-```sh
-node scripts/build_aasa.js ../rounds-codex-app \
-  --team <YOUR_TEAM_ID> --bundle com.roundscodex.app --apply
-node scripts/stamp_version.js ../rounds-codex-app --set v129-AASA-APPID --apply
-cd ../rounds-codex-app && git add -A && git commit -m "v129: real appID in the AASA" && git push
-```
-
-Confirm afterwards that `roundscodex.com/.well-known/apple-app-site-association` no longer contains
-`"_comment"` and that the appID is yours.
+**⚠ One thing to settle before submission.** The Apple Developer app shows the membership under a
+personal name with "1 year membership", which is what an **Individual** enrollment looks like —
+while `app-store-checklist.md` records it as **Organization — Rounds Codex, Inc.** The App Store
+shows the seller name to buyers, and the checklist wants it matching the `© 2026 Rounds Codex, Inc.`
+on all 1,020 illustration pages and the trademark applicant. Check **Entity Type** at
+developer.apple.com/account → Membership details. Switching Individual → Organization is a support
+request to Apple needing a D-U-N-S number, not a setting, so it is worth knowing early rather than
+at submission.
 
 ## 2. Build the web payload
 
