@@ -107,8 +107,7 @@ before writing it up as a defect.
 
 # PROJECT CLOSED — 2026-08-17
 
-The mislabelled-anatomy correction project is finished. Live at **v124**
-(`2026-08-16T23:45:00Z  v124-FINAL-22-PAGES`).
+The mislabelled-anatomy correction project is finished. Live at **v125** (`2026-08-17T02:45:00Z  v125-FINAL-FOUR-PRODUCTION-ITEMS`).
 
 ## What shipped
 
@@ -117,17 +116,19 @@ The mislabelled-anatomy correction project is finished. Live at **v124**
 | pages examined | 119 |
 | pages found defective | 81 |
 | individual findings | 553 |
-| **pages corrected and live** | **72+**, across v92–v124 |
-| deploys | 33 (v92 → v124) |
+| **pages corrected and live** | **75+**, across v92–v125 |
+| deploys | 34 (v92 → v125) |
 
 ## What is deliberately not done, and where each is recorded
 
 Three buckets, all closed by the physician rather than left dangling. Each has its own CLOSED
 section giving the reasoning, so none of them should be re-raised as a new finding:
 
-1. **Four production items** — `PRODUCTION-residual-after-rerender.md`. Accepted as drawn.
-   Three need artwork or type, not a leader move; the fourth is a routing complaint against a
-   correct endpoint.
+1. ~~**Four production items**~~ — **RESOLVED in v125**, not deferred. The physician cut the
+   three pages himself and they shipped. Two of the four are closed by deletion, two stand
+   accepted. See the RESOLVED section of `PRODUCTION-residual-after-rerender.md` — it also
+   records the one defect class this project never looked for: **a deleted label can leave its
+   leader behind**, which is what `stroke` p2 was carrying.
 2. **~15 `[CHECK]` rows on seven pages** — `UNSHEETED-PAGES-progress.md`. Accepted **unmeasured**.
    Stated plainly there, because unmeasured is not the same as clean.
 3. **Two physician questions** — the CLOSED section above. `gdm` p2 umbilical vessel colours and

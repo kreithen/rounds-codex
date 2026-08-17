@@ -96,7 +96,7 @@ already improved — none of this is a regression, and none of it blocks anythin
 
 ---
 
-## CLOSED 2026-08-17 — all four accepted as drawn
+## ~~CLOSED 2026-08-17 — all four accepted as drawn~~ — SUPERSEDED, see below
 
 Dr. Kreithen's call. The three pages were re-sent unchanged (md5 `b8844295…`,
 `4d0b9f47…`, `ebd4d281…` — byte-identical to the files the site was already serving)
@@ -115,3 +115,43 @@ For the record, so a later sweep does not re-open them as fresh defects:
 **The one worth revisiting first if any of these is ever reopened is #4**, because the PCoA is
 one of the two vessels that make the circle a circle, and restoring type is cheaper than
 drawing a slab. #1 is the one with the largest gap between effort and payoff.
+
+
+---
+
+## RESOLVED 2026-08-17 in **v125** — the physician cut them himself
+
+The acceptance above stood for about an hour. Dr. Kreithen then re-cut the three pages in
+Photoshop and sent them back. Measured against the shipped files before deploying:
+
+| # | page | asked for | what he did | evidence |
+|---|---|---|---|---|
+| 1 | `cardiomyopathy` p1 | delete the callout, or draw a fourth slab | **deleted** — leader and label text both | ink at (772,861) **93 → 0**; DILATED 36→36, HYPERTROPHIC 86→86, RESTRICTIVE 69→66 untouched |
+| 2 | `aortic-stenosis` p2 | add `Inferior Vena Cava` at (365,1010) | **not done** | ink at (365,1010) unchanged |
+| 3 | `aortic-stenosis` p2 | re-site the `Pulmonary Trunk` block | **deleted the whole label** — leader and text | ink at (644,512) **93 → 3** |
+| 4 | `stroke` p2 | restore `Posterior Communicating Artery` | **not restored** — but see below | — |
+
+**Item 1 is closed exactly as recommended.** A deletion was the right disposition and it was
+executed cleanly: the orphan-terminator test passes at the old endpoint, and the three callouts
+that were already correct are byte-stable apart from encode noise.
+
+**Item 3 is closed by removing the label rather than moving it,** which resolves the crossing
+leader at the cost of a name. Worth stating plainly because it is a trade rather than a fix:
+**`aortic-stenosis` p2 now labels neither the pulmonary trunk nor the inferior vena cava.** The
+page's `Right Ventricle` block still names the trunk in prose ("…to the lungs via the pulmonary
+trunk"), so it is not orphaned language, and nothing on the page now points at the wrong
+structure — which is the standard this project was held to. If a later pass wants the trunk
+named again, the endpoint (644,512) is recorded here and was verified correct.
+
+### The finding we missed, and he caught
+
+**`stroke` p2 carried an orphan leader in the CIRCLE OF WILLIS panel** — a line still pointing at
+the posterior communicating artery after that label was deleted, ending in nothing. Our sheets
+never flagged it. Every sweep in this project looked for *leaders landing on the wrong structure*
+and none looked for *leaders landing on no label at all*, which is a different defect class and
+is more visible, not less. He removed it. He also pulled the PCA leader back to the P1 origin at
+the basilar tip — tissue (173,67,61), on vessel.
+
+**The class is worth naming for any future sweep: a deletion can leave a leader behind.** Check
+for orphan leaders on every page where a label has been removed — including the ones this project
+removed itself.
