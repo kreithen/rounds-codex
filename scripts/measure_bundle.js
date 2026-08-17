@@ -28,11 +28,20 @@
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = process.argv[2];
-const LIST = process.argv.includes('--list-unreferenced');
-const topAt = process.argv.indexOf('--top');
+/* Requiring this file returns { resolve } and runs nothing, so build_ios_payload.js can reuse the
+   resolver rather than keeping a second, drifting idea of what the app needs. The resolver is the
+   only thing in here worth sharing -- the report is a CLI concern. */
+const CLI = require.main === module;
+const ROOT = CLI ? process.argv[2] : null;
+const LIST = CLI && process.argv.includes('--list-unreferenced');
+const topAt = CLI ? process.argv.indexOf('--top') : -1;
 const TOP = topAt > -1 ? Number(process.argv[topAt + 1]) : 15;
-if (!ROOT) { console.error('usage: measure_bundle.js <site-root> [--list-unreferenced] [--top N]'); process.exit(2); }
+if (CLI && !ROOT) { console.error('usage: measure_bundle.js <site-root> [--list-unreferenced] [--top N]'); process.exit(2); }
+
+if (!CLI) { module.exports = { resolve }; }
+else { report(resolve(ROOT)); }
+
+function resolve(ROOT) {
 
 const MB = n => (n / 1024 / 1024).toFixed(1) + ' MB';
 
@@ -135,7 +144,11 @@ for (const [, p] of idx.matchAll(/['"(]([\w./-]*(?:fonts|icons)\/[\w.-]+\.(?:wof
   }
 }
 
+  return { files, total, referenced };
+}
+
 /* ---- report -------------------------------------------------------------------------------- */
+function report({ files, total, referenced }) {
 const byWhy = new Map();
 for (const [p, why] of referenced) {
   const e = byWhy.get(why) || { n: 0, bytes: 0 };
@@ -176,3 +189,4 @@ console.log(`  audio (stream, do not bundle)      ${MB(audio).padStart(9)}`);
 console.log(`  gallery PDFs (resolve remotely)    ${MB(pdfs).padStart(9)}`);
 console.log(`  everything else referenced         ${MB(refBytes - audio - pdfs).padStart(9)}`);
 console.log(`  -> bundle with both levers pulled  ${MB(refBytes - audio - pdfs).padStart(9)}`);
+}

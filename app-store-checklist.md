@@ -23,6 +23,9 @@ every one of which is now stale.
 | Later | **$5/month for everyone**, one price, no student tier | 2026-08-04 |
 | Early users | Grandfathered permanently via `AppTransaction.originalAppVersion` | 2026-08-04 |
 | Independent medical review | Gates the **paid** launch, not the free one | 2026-08-04 |
+| Bundle identifier | **`com.roundscodex.app`** — permanent, and already in the deployed AASA | 2026-08-17 |
+| Devices | **Universal — iPhone and iPad.** Costs a second screenshot set (13", ≥6) and iPad layout QA | 2026-08-17 |
+| Minimum iOS | **Support below 26 and stream.** Asset packs are iOS 26+; `RC_MEDIA_ROOT` falls back to the public origin underneath, so the app works everywhere and is fully offline on 26+ | 2026-08-17 |
 
 **Why no wall on iOS.** Apple does not allow an app to require registration unless it has
 significant account-based features. Rounds Codex's account does nothing for the user — bookmarks,
@@ -215,7 +218,9 @@ build and the variant script rewrites the phrase. The web manifest keeps it and 
 ## 4. Build work
 
 - [ ] **The native shell.** No Xcode project, no Capacitor config, no Podfile exists anywhere in
-      either repo. `native-app-plan.md` is a design, not a build. This is the single largest item.
+      either repo. Still the single largest item — but every step is now written down in order with
+      the commands: **`native/MAC-RUNBOOK.md`**. The web payload is one command
+      (`scripts/build_ios_payload.js`) and produces a verified **84.2 MB / 1,304 file** tree.
 - [ ] **Download size.** **The 250 MB target is struck, not renegotiated** (2026-08-17). Apple's
       documented maximum is **4 GB**; the 200 MB figure is the *cellular download* threshold and has
       been user-overridable since iOS 13. There is no size at which this app is rejected, and
