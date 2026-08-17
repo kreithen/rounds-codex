@@ -79,8 +79,9 @@ answer and it is real.
 | Patents: settled, Alice §101. **Do not reopen.** | — |
 
 **"Clinically reviewed" IS allowed** (revised 2026-08-09); **"peer-reviewed" is forbidden**.
-Attribution is **"created by a team of clinicians"**, with Dr. Kreithen named as Founder & Clinical
-Lead — not "written by a physician". See `marketing-brief.md`.
+Attribution is **"designed by a team of clinicians"** — the verb was "created" until the physician
+revised it on 2026-08-17 — with Dr. Kreithen named as Founder & Clinical Lead, and not "written by
+a physician". See `marketing-brief.md`.
 
 ---
 

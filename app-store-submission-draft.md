@@ -37,8 +37,9 @@
 >
 > **None of this blocks the 17 August WEB launch** — it blocks a clean App Store submission.
 >
-> **ATTRIBUTION CHANGED 2026-08-09 — APPLIED 2026-08-17.** The approved framing is **"created by a
-> team of clinicians"** / **"created and clinically reviewed by practising clinicians"**, with Dr.
+> **ATTRIBUTION CHANGED 2026-08-09 — APPLIED 2026-08-17.** The approved framing is **"designed by a
+> team of clinicians"** / **"designed and clinically reviewed by a team of clinicians"** — the verb
+> was "created" until the physician revised it on 2026-08-17 — with Dr.
 > Kreithen named as Founder & Clinical Lead; the one-person-wrote-it framing goes. The Description,
 > Promotional Text and App Review notes below now use it, and the closing note that argued the
 > opposite is corrected in place rather than deleted. The Subtitle and App Name never carried an
@@ -190,12 +191,12 @@ each other — Apple indexes them separately and a repeat wastes the field.
 ### Promotional Text (170 characters — editable without a new build)
 
 > New: 102 illustrated galleries — 1,020 original clinical pages — plus 1,840 quiz questions and
-> 1,010 USMLE-style items. All offline. Created by a team of clinicians.
+> 1,010 USMLE-style items. All offline. Designed by a team of clinicians.
 
-*(165)* Update this at each release; it's the one field that doesn't need a build.
+*(166)* Update this at each release; it's the one field that doesn't need a build.
 
-Two notes on that edit. **"Created by a team of clinicians" is nine characters longer than "Written
-by a physician"**, which would have taken the field to 168 — under the limit but with almost nothing
+Two notes on that edit. **"Designed by a team of clinicians" is ten characters longer than "Written
+by a physician"**, which would have taken the field to 169 — under the limit but with almost nothing
 left for a count that grows. "All of it offline" became "All offline" to buy the room back. And the
 old *(163)* was wrong: the string was **159**. Recount these fields rather than trusting the number
 beside them — Apple truncates silently and a subtitle that loses its last word is not obvious in
@@ -204,8 +205,8 @@ the console.
 ### Description (4,000 characters)
 
 ```
-Rounds Codex is a clinical study reference for nursing and medical students, created and
-clinically reviewed by practising clinicians. Every illustration in it is original. It works
+Rounds Codex is a clinical study reference for nursing and medical students, designed and
+clinically reviewed by a team of clinicians. Every illustration in it is original. It works
 entirely offline — every page, image and question is on your device the moment it finishes
 downloading.
 
@@ -253,15 +254,22 @@ institution's protocols. Practice scores are practice scores — they are not a 
 score and not a probability of passing.
 ```
 
-Two things that copy is doing on purpose. **"Created and clinically reviewed by practising
+Two things that copy is doing on purpose. **"Designed and clinically reviewed by a team of
 clinicians"** is the credibility claim, and it carries two distinct assertions rather than one:
-*created* and *reviewed*. Keeping both is the point — attributing creation to an advisor who only
+*designed* and *reviewed*. Keeping both is the point — attributing design to an advisor who only
 reviewed would overstate their part, and the phrase stays true whether the group is two or twelve.
-It replaced "written and illustrated by a practising physician" on 2026-08-09; **"peer-reviewed"
-remains forbidden** and means something else entirely. The lost word was "illustrated", which was
-doing real work — 1,020 original pages is unusual — so it comes back as its own sentence, "Every
-illustration in it is original", where it is a statement about the artwork rather than about who
-drew it.
+It replaced "written and illustrated by a practising physician"; **"peer-reviewed" remains
+forbidden** and means something else entirely.
+
+**The verb is "designed", not "created"** — the physician's wording, 2026-08-17, and the more
+accurate one. "Created" reads as authorship of every word, which is the singular claim wearing
+plural clothes and is the thing this rule exists to stop. "Designed" is a claim about the shape of
+the thing: what a student is taught, in what order, at what depth, and how the 1,020 illustrations
+were specified.
+
+The word lost from the old line was "illustrated", which was doing real work — 1,020 original pages
+is unusual — so it comes back as its own sentence, "Every illustration in it is original", where it
+is a statement about the artwork rather than about who drew it.
 
 And the education-only paragraph is in the listing, not just in the app — Guideline 1.4.1 reviewers
 look for it, and the plan already flagged that the listing needs its own.
@@ -380,9 +388,9 @@ Reviewers are not clinicians and have minutes per app. The notes are where you p
 questions this app will raise. Draft:
 
 ```
-Rounds Codex is a study reference for nursing and medical students. All content is created and
-clinically reviewed by practising clinicians, led by Dr. J. Kreithen, a practising physician and
-the company's Founder and Clinical Lead. The company is physician-owned.
+Rounds Codex is a study reference for nursing and medical students. All content is designed and
+clinically reviewed by a team of practising clinicians, led by Dr. J. Kreithen, a practising
+physician and the company's Founder and Clinical Lead. The company is physician-owned.
 
 EDUCATIONAL USE, NOT CLINICAL USE
 The app is a study aid and says so on first launch, before any content is reachable: the user
@@ -532,9 +540,11 @@ a clinician has reviewed this content, so saying so is a plain statement of fact
 **And the singular attribution is the one that became untrue.** "Written by a physician" was
 accurate when one person had written everything; the advisors changed that, and *creation* and
 *review* are two different claims — attributing creation to someone who only reviewed overstates
-their part. The approved phrasing is **"created by a team of clinicians"** or **"created and
-clinically reviewed by practising clinicians"**, with Dr. Kreithen named as **Founder & Clinical
-Lead**, which is an accurate individual role. Applied throughout this file on 2026-08-17: the
+their part. The approved phrasing is **"designed by a team of clinicians"** or **"designed and
+clinically reviewed by a team of clinicians"** — "created" was the verb until the physician revised
+it to "designed" on 2026-08-17, because *created* reads as authorship of every word and *designed*
+is the claim that is actually true: the shape of what is taught, in what order, at what depth. Dr.
+Kreithen is named as **Founder & Clinical Lead**, which is an accurate individual role. Applied throughout this file on 2026-08-17: the
 Description, the Promotional Text and the App Review notes. See `marketing-brief.md`, which is
 canonical for the claims policy.
 

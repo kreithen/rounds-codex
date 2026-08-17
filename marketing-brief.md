@@ -18,7 +18,7 @@ Everything else about marketing belongs here.
 ## The product, in one paragraph
 
 Rounds Codex is an offline clinical study reference for nursing students, medical students and
-residents, created and clinically reviewed by practising clinicians. The same 183 conditions
+residents, designed and clinically reviewed by a team of clinicians. The same 183 conditions
 rewrite themselves across three modes — Nursing, Medical, Resident — so one library serves a student
 from first year through residency. It ships as a website today and as an iOS app at launch.
 
@@ -77,15 +77,22 @@ cite real sources — but the 2026-08 QA pass over 340 submitted guideline entri
 the opposite of the published result and 16 citing studies that could not be found, all since
 corrected. The claim is defensible; treat it as one that has to keep being earned, not a slogan.
 
-**ATTRIBUTION IS PLURAL, decided 2026-08-09.** Say **"created by a team of clinicians"** or
-**"created and clinically reviewed by practising clinicians"** — not "written by Dr. Kreithen" and
-not "written by a physician". This applies to the app, the About page, the store listings and all
-marketing. Dr. Kreithen remains named in the app as **Founder & Clinical Lead**, which is an
-accurate individual role; what goes is the framing that one person wrote everything.
+**ATTRIBUTION IS PLURAL, decided 2026-08-09. The verb is DESIGNED, revised 2026-08-17.** Say
+**"designed by a team of clinicians"**, or **"designed and clinically reviewed by a team of
+clinicians"** where the review claim is doing work — not "written by Dr. Kreithen" and not "written
+by a physician". This applies to the app, the About page, the store listings and all marketing. Dr.
+Kreithen remains named in the app as **Founder & Clinical Lead**, which is an accurate individual
+role; what goes is the framing that one person wrote everything.
 
-*One precision worth keeping in mind as the group grows:* **"created by" and "reviewed by" are
-different claims.** Attributing *creation* to an advisor who only reviewed would overstate their
-part. "Created and clinically reviewed by practising clinicians" covers both without assigning
+*Why "designed" and not "created", which is what this said until 2026-08-17:* it is the physician's
+wording and it is also the more accurate one. "Created" reads as authorship of every word, which is
+the singular claim in plural clothing — the thing this rule exists to stop. "Designed" is a claim
+about the shape of the thing: what a student is taught, in what order, at what depth, and how the
+1,020 illustrations were specified. That is what the clinicians did.
+
+*One precision worth keeping in mind as the group grows:* **"designed by" and "reviewed by" are
+different claims.** Attributing *design* to an advisor who only reviewed would overstate their
+part. "Designed and clinically reviewed by a team of clinicians" covers both without assigning
 either to a named individual, and stays true whether the group is two or twelve.
 
 **One housekeeping item before the claim goes public:** 3 of 183 conditions still ship

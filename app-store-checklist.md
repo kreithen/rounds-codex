@@ -183,7 +183,8 @@ Step 3 Day 1 232, Day 2 180), **197** illustrated, **150** NCLEX items, **300** 
 guideline entries across **25** specialties, **1,418** resident entries, **10** calculators.
 
 **Attribution is superseded.** Every "written by a physician" line becomes the team-of-clinicians
-framing — see `marketing-brief.md`. **"Clinically reviewed" is now allowed**, which those drafts
+framing — **"designed by a team of clinicians"**, the verb revised from "created" by the physician
+on 2026-08-17. See `marketing-brief.md`. **"Clinically reviewed" is now allowed**, which those drafts
 assumed it was not; **"peer-reviewed" remains forbidden.**
 
 One correction to `app-store-submission-draft.md`'s own checklist: it flags `manifest.webmanifest`

@@ -102,9 +102,12 @@ The claims policy matters more than the copy:
   and every listed clinical advisor has agreed to be listed and has reviewed material in the app.
   The earlier blanket ban here conflated it with **"peer-reviewed"**, which stays forbidden: that
   means independent pre-publication review by other experts, and it has not happened.
-- **"Written by a physician" is superseded too.** The approved framing is **"created by a team of
+- **"Written by a physician" is superseded too.** The approved framing is **"designed by a team of
   clinicians"** — Dr. Kreithen stays named as Founder & Clinical Lead, but the one-person-wrote-it
-  line goes.
+  line goes. (**The verb was "created" until 2026-08-17**, when the physician revised it: *created*
+  reads as authorship of every word, which is the singular claim in plural clothing; *designed* is
+  the claim that is true. Updated here because the claims policy is global — a launch doc still
+  saying "created" is the drift the rule exists to stop.)
 - Launch-day assets and channels are already specified in the brief; the gap is execution, not
   strategy.
 
