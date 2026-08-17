@@ -210,11 +210,19 @@ build and the variant script rewrites the phrase. The web manifest keeps it and 
 
 - [ ] **The native shell.** No Xcode project, no Capacitor config, no Podfile exists anywhere in
       either repo. `native-app-plan.md` is a design, not a build. This is the single largest item.
-- [ ] **Download size.** Last measured **383 MB** after WebP conversion, at 90 galleries — it is 102
-      now, so re-measure rather than trusting that figure. Target under 250 MB (task #27). The two
-      levers: do not bundle the gallery PDFs (~165 MB) and resolve them against the public origin
-      the way `RC_SHARE_ORIGIN` already works, and **stream the 180 MB of audio rather than bundling
-      it**.
+- [ ] **Download size.** **The 250 MB target is struck, not renegotiated** (2026-08-17). Apple's
+      documented maximum is **4 GB**; the 200 MB figure is the *cellular download* threshold and has
+      been user-overridable since iOS 13. There is no size at which this app is rejected, and
+      compression cannot reach 200 MB anyway — WebP q75, with real quality loss on labelled medical
+      artwork, still lands the bundle at 271 MB. Measured by resolving every path the app can
+      request (`scripts/measure_bundle.js`): **826.1 MB referenced**, of which pages 426.5, audio
+      160.0, PDFs 155.4, thumbnails 47.4, USMLE illustrations 24.2.
+      **The plan is Background Assets: an ~84 MB app plus 11 Apple-hosted packs of 741.9 MB, cut by
+      condition category.** Apple allows 200 packs and 200 GB, so nothing here is close to a limit.
+      Full design, the unverified parts, and the iOS 26+ decision: **`native/background-assets-plan.md`**.
+      Thumbnails stay in the app on purpose — they are the browse surface — and the gallery PDFs go
+      in the packs rather than staying remote, which is what keeps "downloadable PDF for each
+      gallery" and "works entirely offline" from contradicting each other.
 - [ ] **Guideline 4.2 "repackaged website" signals**, best value first: Core Spotlight indexing of
       the 183 conditions; Universal Links for `/c/ /s/ /g/ /r/ /u/ /x/`; save gallery PDF to Files;
       local notifications for the review queue; haptics on quiz answers.
