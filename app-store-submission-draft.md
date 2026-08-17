@@ -36,13 +36,13 @@
 >
 > **None of this blocks the 17 August WEB launch** — it blocks a clean App Store submission.
 >
-> **ATTRIBUTION CHANGED 2026-08-09.** Every "written by a physician" line below is superseded. The
-> approved framing is **"created by a team of clinicians"** / **"created and clinically reviewed by
-> practising clinicians"**. Dr. Kreithen stays named as Founder & Clinical Lead; the
-> one-person-wrote-it framing goes. Affects the subtitle, description, promotional text and App
-> Review notes — see `marketing-brief.md`. Note also that **"clinically reviewed" is now ALLOWED**,
-> which these drafts assumed it was not, so §"Written by a physician is doing the work that
-> clinically reviewed can't" no longer holds.
+> **ATTRIBUTION CHANGED 2026-08-09 — APPLIED 2026-08-17.** The approved framing is **"created by a
+> team of clinicians"** / **"created and clinically reviewed by practising clinicians"**, with Dr.
+> Kreithen named as Founder & Clinical Lead; the one-person-wrote-it framing goes. The Description,
+> Promotional Text and App Review notes below now use it, and the closing note that argued the
+> opposite is corrected in place rather than deleted. The Subtitle and App Name never carried an
+> attribution, so they were unaffected. **"Clinically reviewed" is ALLOWED**; **"peer-reviewed"
+> is not.** See `marketing-brief.md`.
 
 Everything App Store Connect asks for, drafted and ready to paste, plus the things that will get
 this rejected if they go in as-is. Written 2026-08-04 against the live build (v66, 93 galleries).
@@ -140,12 +140,11 @@ There is a second-order consequence worth carrying: Ask was the **only** thing i
 transmitted anything, so removing it is what makes the "Data Not Collected" nutrition label below
 true of the binary rather than nearly true.
 
-**Still open, and it is not this section's:** the attribution lines. "Written and illustrated by a
-practising physician" in the Description and "Written by a physician" in the Promotional Text are
-both superseded by the plural framing decided 2026-08-09 — "created by a team of clinicians", or
-"created and clinically reviewed by practising clinicians", with Dr. Kreithen named in the app as
-Founder & Clinical Lead. That is tracked in `app-store-checklist.md` §3 along with every stale
-count, and deliberately not patched piecemeal here.
+**The attribution lines were fixed separately on 2026-08-17** and are no longer an open item: the
+Description, Promotional Text and App Review notes all carry the plural framing now. **Every count
+in this file is still stale** — 183 conditions, 102 galleries, 1,020 pages, 1,840 quiz questions —
+and that remains its own item in `app-store-checklist.md` §3, because a count has to be re-read from
+the shipped content rather than adjusted from memory.
 
 ### 4. No public privacy policy URL — a hard blocker on the form
 
@@ -190,16 +189,24 @@ each other — Apple indexes them separately and a repeat wastes the field.
 ### Promotional Text (170 characters — editable without a new build)
 
 > New: 93 illustrated galleries — 930 original clinical pages — plus 1,820 quiz questions and
-> 1,010 USMLE-style items. All of it offline. Written by a physician.
+> 1,010 USMLE-style items. All offline. Created by a team of clinicians.
 
-*(163)* Update this at each release; it's the one field that doesn't need a build.
+*(162)* Update this at each release; it's the one field that doesn't need a build.
+
+Two notes on that edit. **"Created by a team of clinicians" is nine characters longer than "Written
+by a physician"**, which would have taken the field to 168 — under the limit but with almost nothing
+left for a count that grows. "All of it offline" became "All offline" to buy the room back. And the
+old *(163)* was wrong: the string was **159**. Recount these fields rather than trusting the number
+beside them — Apple truncates silently and a subtitle that loses its last word is not obvious in
+the console.
 
 ### Description (4,000 characters)
 
 ```
-Rounds Codex is a clinical study reference for nursing and medical students, written and
-illustrated by a practising physician. It works entirely offline — every page, image and
-question is on your device the moment it finishes downloading.
+Rounds Codex is a clinical study reference for nursing and medical students, created and
+clinically reviewed by practising clinicians. Every illustration in it is original. It works
+entirely offline — every page, image and question is on your device the moment it finishes
+downloading.
 
 Three modes, one library. Switch between Nursing, Medical and Resident and the same 181
 conditions rewrite themselves for what you actually need: assessment and interventions for
@@ -245,10 +252,18 @@ institution's protocols. Practice scores are practice scores — they are not a 
 score and not a probability of passing.
 ```
 
-Two things that copy is doing on purpose. **"Written and illustrated by a practising physician"**
-is the credibility claim, and unlike "clinically reviewed" it is true. And the education-only
-paragraph is in the listing, not just in the app — Guideline 1.4.1 reviewers look for it, and the
-plan already flagged that the listing needs its own.
+Two things that copy is doing on purpose. **"Created and clinically reviewed by practising
+clinicians"** is the credibility claim, and it carries two distinct assertions rather than one:
+*created* and *reviewed*. Keeping both is the point — attributing creation to an advisor who only
+reviewed would overstate their part, and the phrase stays true whether the group is two or twelve.
+It replaced "written and illustrated by a practising physician" on 2026-08-09; **"peer-reviewed"
+remains forbidden** and means something else entirely. The lost word was "illustrated", which was
+doing real work — 1,020 original pages is unusual — so it comes back as its own sentence, "Every
+illustration in it is original", where it is a statement about the artwork rather than about who
+drew it.
+
+And the education-only paragraph is in the listing, not just in the app — Guideline 1.4.1 reviewers
+look for it, and the plan already flagged that the listing needs its own.
 
 The PRIVACY paragraph is accurate as long as v1 ships without the login, which is the decision. If
 that ever reverses, cut the paragraph — an inaccurate privacy claim in the description is a 2.3.1
@@ -355,8 +370,9 @@ Reviewers are not clinicians and have minutes per app. The notes are where you p
 questions this app will raise. Draft:
 
 ```
-Rounds Codex is a study reference for nursing and medical students. All content is written and
-illustrated by Dr. J. Kreithen, a practising physician, and the company is physician-owned.
+Rounds Codex is a study reference for nursing and medical students. All content is created and
+clinically reviewed by practising clinicians, led by Dr. J. Kreithen, a practising physician and
+the company's Founder and Clinical Lead. The company is physician-owned.
 
 EDUCATIONAL USE, NOT CLINICAL USE
 The app is a study aid and says so on first launch, before any content is reachable: the user
@@ -464,13 +480,35 @@ Ordered so that if you stop partway, you've done the parts that matter.
 
 ## Two honest notes on the copy
 
-**The counts are the strongest thing you have and they're all verified.** Every number in the
-description was read out of the shipped content tonight, not estimated: 181 conditions, 93
-galleries, 930 pages, 1,820 quiz questions, 1,010 USMLE items, 150 NCLEX items, 300 drugs, 470
-guideline entries, 1,418 resident entries, 10 calculators. If any of those change before you
-submit, re-read them rather than adjusting from memory — a description that overstates by one is a
-2.3.1 problem for no gain.
+**The counts are the strongest thing you have — and every one of them in this file is now stale.**
+They were read out of the shipped content on 2026-08-04 and the content has moved: it is **183**
+conditions, **102** galleries, **1,020** pages and **1,840** quiz questions, against the 181 / 93 /
+930 / 1,820 written below. Unchanged: 1,010 USMLE items, 150 NCLEX, 300 drugs, 470 guideline
+entries, 1,418 resident entries, 10 calculators. **Re-read them from the shipped content before
+pasting anything**, rather than copying the numbers in this paragraph — which is the same mistake
+one step removed. A description that overstates by one is a 2.3.1 problem for no gain.
 
-**"Written by a physician" is doing the work that "clinically reviewed" can't.** It is true, it is
-specific, it is unusual for a study app, and it does not claim an external review that has not
-happened. Use it everywhere and drop the other phrase entirely.
+**~~"Written by a physician" is doing the work that "clinically reviewed" can't.~~ Reversed
+2026-08-09 — this note had it exactly backwards, and the reversal is worth keeping visible rather
+than quietly deleted.** The old reasoning was that "clinically reviewed" overclaimed an external
+review that had not happened, so the singular attribution should carry the credibility instead.
+Both halves turned out to be wrong.
+
+**"Clinically reviewed" is allowed**, and always was: it was being read as a synonym for
+"peer-reviewed", which is a term of art from academic publishing meaning independent
+pre-publication review by other experts. That has not happened and the phrase stays forbidden. But
+a clinician has reviewed this content, so saying so is a plain statement of fact.
+
+**And the singular attribution is the one that became untrue.** "Written by a physician" was
+accurate when one person had written everything; the advisors changed that, and *creation* and
+*review* are two different claims — attributing creation to someone who only reviewed overstates
+their part. The approved phrasing is **"created by a team of clinicians"** or **"created and
+clinically reviewed by practising clinicians"**, with Dr. Kreithen named as **Founder & Clinical
+Lead**, which is an accurate individual role. Applied throughout this file on 2026-08-17: the
+Description, the Promotional Text and the App Review notes. See `marketing-brief.md`, which is
+canonical for the claims policy.
+
+**One thing to clear before the claim goes public**, and it is not this file's to fix: **3 of 183
+conditions still ship `verified:false`** (`metabolic-syndrome`, `hip-fracture`, `back-pain`) and so
+carry no RC VERIFIED badge. A listing-wide "clinically reviewed" claim next to three unbadged
+modules is an inconsistency a careful reader can find, and the physician is the gate on those.

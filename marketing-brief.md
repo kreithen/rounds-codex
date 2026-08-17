@@ -95,8 +95,10 @@ careful reader can find. Clear those three and the claim is uniform.
 
 **`manifest.webmanifest` is fine as written** — it says "clinically-reviewed conditions" and that is
 now the approved wording. It was previously flagged as an overclaim on the submission checklist;
-that flag is withdrawn. (Its count says 180 and the app has 183 — worth fixing, but a stale number,
-not an overclaim.)
+that flag is withdrawn. (This note used to add that its count said 180 against the app's 183 —
+**checked 2026-08-17 and the shipped manifest reads 183**, so that has been fixed at some point and
+the note was the stale thing. Its "AI study tutor" clause is a separate matter and is handled by
+`scripts/build_ios_variant.js` for the iOS build only; on the web the feature is real.)
 
 Also never:
 

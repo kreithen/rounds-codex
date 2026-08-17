@@ -192,7 +192,12 @@ is permitted. **"An AI study tutor" is settled** — see §1.5: the feature is d
 build and the variant script rewrites the phrase. The web manifest keeps it and is correct.
 
 - [ ] Refresh every count in the description, promotional text and review notes
-- [ ] Rewrite the attribution lines
+- [x] Rewrite the attribution lines — done 2026-08-17 in `app-store-submission-draft.md`: the
+      Description, Promotional Text and App Review notes carry the plural framing, and the closing
+      note that argued for the singular one is corrected in place rather than deleted. The Subtitle
+      and App Name never carried an attribution. **Not done, and it gates the claim:** 3 of 183
+      conditions still ship `verified:false` and carry no RC VERIFIED badge, which is an
+      inconsistency next to a listing-wide "clinically reviewed" line.
 - [x] Decide on "AI study tutor" in `manifest.webmanifest` — rewritten by `build_ios_variant.js`
       for iOS, since the feature is not in that build. The **web** manifest is unchanged and correct.
 
