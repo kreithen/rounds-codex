@@ -60,6 +60,14 @@ const EXPECT = [
   ['.app is the container', /\.app\{width:100%;max-width:468px/],
   ['.viewer is fixed',      /\.viewer\{position:fixed;inset:0/],
   ['.vtop is absolute',     /\.vtop\{position:absolute;top:0;[^}]*padding:16px/],
+  /* Order-agnostic: .ahead declares its padding BEFORE position, the others after. Matching on
+     declaration order once cost a run here. */
+  ['.topbar sticky 14px',   /\.topbar\{(?=[^}]*position:sticky;top:0)(?=[^}]*padding:14px 16px 10px)/],
+  ['.dtop sticky 12px',     /\.dtop\{(?=[^}]*position:sticky;top:0)(?=[^}]*padding:12px 14px)/],
+  ['.qhead sticky 14px',    /\.qhead\{(?=[^}]*position:sticky;top:0)(?=[^}]*padding:14px 16px 12px)/],
+  ['.ghead sticky 14px',    /\.ghead\{(?=[^}]*position:sticky;top:0)(?=[^}]*padding:14px 16px)/],
+  ['.ahead sticky 14px',    /\.ahead\{(?=[^}]*position:sticky;top:0)(?=[^}]*padding:14px 16px 12px)/],
+  ['.rxletter sticky',      /\.rxletter\{(?=[^}]*position:sticky;top:0)/],
 ];
 
 /* `.res-wrap` is declared TWICE, in two different <style> blocks, and the later one has no
@@ -87,6 +95,26 @@ const BLOCK = `<style id="${MARK}">
    the padding -- so padding on .viewer does not move it. Padding the bar itself does. Its shipped
    padding is 16px on all four sides, so only the top is rewritten. */
 .vtop{padding-top:calc(16px + env(safe-area-inset-top));}
+/* STICKY BARS. A sticky element pins to the top of the SCROLLPORT, which ignores the padding on
+   .app -- so the initial paint was right while the scrolled state put the bar back under the clock.
+   Reported on the quiz screen after answering a question.
+
+   Each bar keeps top:0 and instead grows upward: a negative margin equal to the inset cancels
+   .app's padding so the bar starts at y=0, and the same amount is added to its own padding-top so
+   its CONTENT still sits below the clock. Net effect: identical layout below the bar, the bar's
+   own background now covers the status bar, and pinned and unpinned look the same. That is how a
+   translucent iOS header is supposed to behave.
+
+   .app's padding stays, because it is what protects every view that has no bar of its own. */
+.topbar,.dtop,.qhead,.ghead,.ahead{margin-top:calc(-1 * env(safe-area-inset-top));}
+.topbar{padding-top:calc(14px + env(safe-area-inset-top));}
+.dtop{padding-top:calc(12px + env(safe-area-inset-top));}
+.qhead{padding-top:calc(14px + env(safe-area-inset-top));}
+.ghead{padding-top:calc(14px + env(safe-area-inset-top));}
+.ahead{padding-top:calc(14px + env(safe-area-inset-top));}
+/* .rxletter is a section letter inside a list, not a page header -- it should pin BELOW the strip
+   rather than cover it, so it takes an offset instead of the grow-upward treatment. */
+.rxletter{top:env(safe-area-inset-top);}
 .nav{bottom:calc(14px + env(safe-area-inset-bottom));}
 .pad{padding-bottom:calc(112px + env(safe-area-inset-bottom));}
 .res-wrap{padding-bottom:calc(112px + env(safe-area-inset-bottom));}
@@ -107,7 +135,7 @@ fs.writeFileSync(FILE, s);
    from here. Say so rather than leaving half the fix implied. */
 console.log('--- add_safe_area.js ---');
 for (const [what] of EXPECT) console.log(`  ok    ${what}`);
-console.log(`  six rules appended before </head>`);
+console.log(`  inset rules appended before </head>`);
 console.log(`index.html: ${before} -> ${s.length} bytes (+${s.length - before})`);
 console.log('');
 console.log('  NOTE: this is half the fix. capacitor.config.json must also set');
