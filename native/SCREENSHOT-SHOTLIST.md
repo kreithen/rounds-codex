@@ -38,13 +38,16 @@ Captions are from `app-store-submission-draft.md` and the counts are current as 
 | **3** | One illustration open in the viewer, zoomed slightly so it reads as interactive | From shot 2, tap page 1, pinch once | **Zoom in. Swipe through. Works offline.** |
 | **4** | A quiz question with the answer revealed and the explanation showing | Heart Failure → **Take the Quiz** → answer Q1 correctly | **1,840 questions — every condition, explained** |
 | **5** | A USMLE item with its illustration on screen | Medical mode → **USMLE PREP** → start Step 1 → advance to any illustrated item | **1,010 USMLE-style items across Step 1–3** |
-| **6** | The Library card showing items due for review | Bookmark 3–4 conditions first, then Library — the card renders into `#revCard` and **is empty when nothing is due** | **Bookmark it, and it comes back when you need it** |
+| **6** | The Library card showing items due for review | Bookmark 3–4 conditions, then Library. The card appears **immediately** — `isDue()` returns true for an item with no schedule yet ("new means due now"), so there is nothing to wait for | **Bookmark it, and it comes back when you need it** |
 | **7** | A calculator mid-use, with some boxes ticked so it shows a score | **Clinical Calculators** → CHA₂DS₂-VASc → tick 3–4 risk factors | **Ten clinical calculators, offline** |
 | **8** | The Clinical Updates index | Library → the purple **CLINICAL UPDATES** button | **470 guideline updates, 25 specialties** |
 
-**Shot 6 is the one that will waste your time.** The review card is empty until something is
-actually due, so bookmark a few conditions *and* let at least one become due, or the shot is of a
-blank space. Everything else is immediate.
+**Shot 6 needs one step of setup, not a wait.** An earlier version of this file said the card was
+empty until something became due and that you had to let a day pass. That is wrong, and it was
+written from the prose rather than from `RC_REVIEW`: `isDue(id)` is
+`return !it || !it.due || it.due<=today()`, so a bookmarked condition with no schedule is due the
+moment you bookmark it. Bookmark three or four and the card is there. Everything else is immediate
+too.
 
 ---
 
