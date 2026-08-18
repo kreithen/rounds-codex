@@ -50,7 +50,51 @@ const FILE = path.join(ROOT, 'index.html');
 let s = fs.readFileSync(FILE, 'utf8');
 
 const MARK = 'rc-safe-area';
-if (s.includes(MARK)) { console.log('already patched -- nothing to do'); process.exit(0); }
+
+/* ---- the USMLE module is a SEPARATE DOCUMENT --------------------------------------------------
+ * /usmle/ is its own page (kept out of index.html to avoid doubling the big file), so none of the
+ * above reaches it. Reported from the simulator: its header sat under the clock while the main app
+ * was already fixed.
+ *
+ * It is a much simpler page -- no fixed, sticky or absolutely positioned elements anywhere in it,
+ * checked rather than assumed -- so it needs only two things: `viewport-fit=cover`, without which
+ * env() reports nothing, and the inset on <body>. */
+{
+  const U = path.join(ROOT, 'usmle', 'index.html');
+  if (!fs.existsSync(U)) {
+    console.log('\n  note: no usmle/index.html in this tree -- skipped');
+  } else {
+    let u = fs.readFileSync(U, 'utf8');
+    if (u.includes(MARK)) {
+      console.log('\n  usmle/index.html already patched');
+    } else {
+      const VP_FROM = '<meta name="viewport" content="width=device-width, initial-scale=1" />';
+      const VP_TO   = '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />';
+      const nvp = u.split(VP_FROM).length - 1;
+      const nhd = u.split('</head>').length - 1;
+      if (nvp !== 1 || nhd !== 1) {
+        console.error(`FAIL: usmle/index.html -- viewport tags ${nvp}, </head> ${nhd}, expected 1 and 1`);
+        process.exit(1);
+      }
+      const UBLOCK = `<style id="${MARK}">
+/* The status bar and home indicator. env() is 0 anywhere without an inset, so this is inert on
+   the web. This page has no fixed or sticky elements, so the body is the only thing to inset. */
+body{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom);}
+</style>
+</head>`;
+      const ub = u.length;
+      u = u.replace(VP_FROM, VP_TO).replace('</head>', UBLOCK);
+      fs.writeFileSync(U, u);
+      console.log(`\n  usmle/index.html: viewport-fit=cover + body insets  (${ub} -> ${u.length} bytes)`);
+    }
+  }
+}
+
+
+/* index.html's own guard. It comes AFTER the block above on purpose: an early exit here used to
+   skip the USMLE page entirely whenever index.html was already patched, which is a guard that
+   silently does half the work. */
+if (s.includes(MARK)) { console.log('index.html already patched -- nothing to do'); process.exit(0); }
 
 /* Assert the shipped values this block overrides, so it fails loudly if the design moved under it
    rather than silently pinning a stale number. */
@@ -137,6 +181,7 @@ console.log('--- add_safe_area.js ---');
 for (const [what] of EXPECT) console.log(`  ok    ${what}`);
 console.log(`  inset rules appended before </head>`);
 console.log(`index.html: ${before} -> ${s.length} bytes (+${s.length - before})`);
+console.log('');
 console.log('');
 console.log('  NOTE: this is half the fix. capacitor.config.json must also set');
 console.log('        "ios": { "contentInset": "never" }  -- with "always" UIKit adds an inset the');
