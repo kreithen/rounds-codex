@@ -260,6 +260,25 @@ build and the variant script rewrites the phrase. The web manifest keeps it and 
 - [x] **Screenshots.** **DONE 2026-08-18** — eight framings shot on the iPhone 17 Pro Max simulator
       (6.9", the required size) and eight on iPad Pro 13", off build 4. Shot list and the reasons
       for the order: `native/SCREENSHOT-SHOTLIST.md`.
+- [ ] **1.0.1 — Universal Links do not work, and the reason is a second Netlify site.**
+      Discovered 2026-08-18 while checking the URLs for the submission form. The account has TWO
+      Netlify projects: `rounds-codex` (the app, `rounds-codex.netlify.app`) and
+      **`roundscodexwebsite`, whose primary URL is `https://roundscodex.com`** — a separate
+      marketing site. `roundscodex.com/version.txt`, `/support/` and `/.well-known/apple-app-site-association`
+      all 404; `/privacy/` loads because that site has a privacy page of its own.
+      So the app's Associated Domains entitlement (`applinks:roundscodex.com`) points at a host that
+      does not serve the AASA, and `/c/<id>` links open in Safari rather than the app.
+      **Not a rejection risk and not fixed for v1** (the physician's call): the behaviour is
+      identical to today's, and fixing it means deciding whether the app should live on
+      `roundscodex.com` at all — plus another 826 MB build.
+      Options when it is revisited: point `applinks` at `rounds-codex.netlify.app` (where the AASA,
+      the app and `RC_SHARE_ORIGIN` already agree); or serve the app from `roundscodex.com` and move
+      `RC_SHARE_ORIGIN` with it; or list both hosts.
+      **`RC_SHARE_ORIGIN` is `https://rounds-codex.netlify.app` and is correct** — links the app
+      generates point at a host that serves them. Checked, because a share origin on the marketing
+      site would have been a live bug.
+      The submission's Support and Privacy URLs therefore use `rounds-codex.netlify.app`, not the
+      custom domain: those are the pages that match this binary.
 - [ ] **Guideline 4.2 "repackaged website" signals**, best value first: Core Spotlight indexing of
       the 183 conditions; **Universal Links — web side DONE** (`/.well-known/apple-app-site-association`
       live at v128, paths derived from the app's own `RC_ROOT` regex so a seventh route cannot
