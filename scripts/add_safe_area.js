@@ -37,7 +37,8 @@
  * the home-indicator strip too, and `.nav` is pinned at `bottom:14px` with no inset of its own —
  * so fixing only the top would trade a clipped header for a tab bar under the home indicator.
  * `.pad` and `.res-wrap` carry the 112px clearance that keeps content off `.nav`, so they move by
- * the same amount or the last item on a page slides under the bar.
+ * the same amount or the last item on a page slides under the bar. (Both already had that
+ * clearance -- see the note beside the .res-wrap count for a claim of mine that was wrong.)
  */
 'use strict';
 const fs = require('fs');
@@ -114,14 +115,18 @@ const EXPECT = [
   ['.rxletter sticky',      /\.rxletter\{(?=[^}]*position:sticky;top:0)/],
 ];
 
-/* `.res-wrap` is declared TWICE, in two different <style> blocks, and the later one has no
-   padding-bottom at all -- so the 112px nav clearance CLAUDE.md records as added on 2026-07-30 is
-   currently overridden and the last element of every resident page sits under the tab bar. That is
-   a live bug on the website too, not something this patch introduced. The block below happens to
-   fix it for iOS because it is appended last; the web needs the duplicate rule removed at source. */
+/* `.res-wrap` appears TWICE in the file and only the first is real CSS. The second lives inside
+   `const RES_CSS = \`...\`` -- a template literal referenced exactly nowhere, left over from the
+   resident build -- so it is never injected and never applies.
+
+   Recorded because I got this wrong once and said so out loud: I read the second occurrence as a
+   later stylesheet overriding the first, and reported a live bug on the website that does not
+   exist. Grep for a variable's USES before concluding that a string of CSS is in the cascade. The
+   .res-wrap rule in the block below is still correct -- it adds the bottom inset -- it just is not
+   fixing anything that was broken. */
 {
   const n = (s.match(/\.res-wrap\{/g) || []).length;
-  if (n !== 2) console.log(`  note: expected 2 .res-wrap rules (the known duplicate), found ${n}`);
+  if (n !== 2) console.log(`  note: expected 2 .res-wrap occurrences (one live, one dead), found ${n}`);
 }
 let bad = 0;
 for (const [what, re] of EXPECT) {
