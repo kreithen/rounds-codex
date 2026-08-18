@@ -225,7 +225,7 @@ build and the variant script rewrites the phrase. The web manifest keeps it and 
       `public.app-category.medical`, Associated Domains `applinks:roundscodex.com`,
       `ITSAppUsesNonExemptEncryption=false`, app icon 1024x1024 with no alpha (the circular
       waveform mark alone — the full lockup's wordmark is illegible at icon size).
-      **It runs.** **Build 3 (2026-08-18) is the submission build** — builds 1 and 2 are superseded
+      **It runs.** **Build 4 (2026-08-18) is the submission build** — builds 1 and 2 are superseded
       and should be ignored in App Store Connect. 3 adds the safe-area fix (the header rendered
       under the Dynamic Island) and the About-page copy fix that shipped to the web as v131.
       Verified on device: cold launch in Airplane Mode with a full-size gallery page, header clear
@@ -257,6 +257,9 @@ build and the variant script rewrites the phrase. The web manifest keeps it and 
       The pack route is retained and current behind `build_ios_payload.js --asset-packs`, with the
       design in **`native/background-assets-plan.md`** (now bannered as superseded for v1). Read it
       when the bundle gets uncomfortable or content updates need to ship without a review.
+- [x] **Screenshots.** **DONE 2026-08-18** — eight framings shot on the iPhone 17 Pro Max simulator
+      (6.9", the required size) and eight on iPad Pro 13", off build 4. Shot list and the reasons
+      for the order: `native/SCREENSHOT-SHOTLIST.md`.
 - [ ] **Guideline 4.2 "repackaged website" signals**, best value first: Core Spotlight indexing of
       the 183 conditions; **Universal Links — web side DONE** (`/.well-known/apple-app-site-association`
       live at v128, paths derived from the app's own `RC_ROOT` regex so a seventh route cannot
