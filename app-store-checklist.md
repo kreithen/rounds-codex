@@ -215,6 +215,30 @@ build and the variant script rewrites the phrase. The web manifest keeps it and 
 - [x] Decide on "AI study tutor" in `manifest.webmanifest` — rewritten by `build_ios_variant.js`
       for iOS, since the feature is not in that build. The **web** manifest is unchanged and correct.
 
+## 0. SUBMITTED — 2026-08-18
+
+**Rounds Codex: Clinical Atlas, iOS 1.0 (build 4), submitted to App Review.** Free, manual release,
+16+, Medical/Education, Data Not Collected, no account, 826 MB bundled and fully offline.
+
+Built and shipped in one day from a repo that had no Xcode project in it that morning. What the
+day actually cost was not the build — it was five bugs that only exist on a device, and every one
+of them was found by the physician tapping something rather than by any check in this repo:
+
+1. `RC_ROOT` lost its host at `capacitor://localhost` (no trailing slash), so every content file
+   was blocked cross-origin. The app booted to "Content didn't load".
+2. The header rendered under the Dynamic Island — no `safe-area-inset-top` anywhere in the CSS.
+3. The same on all six sticky bars, which pin to the scrollport and ignore the fix above.
+4. The gallery viewer's control bar, absolutely positioned, which ignores it again.
+5. `usmle/` is a directory link and Capacitor does not resolve one, so USMLE PREP reloaded the
+   root shell with the wrong base.
+Plus a real UX bug the physician found: the USMLE module did not scroll to the top between
+questions, leaving the reader mid-vignette.
+
+**The lesson worth keeping: none of this could have been caught from a container**, and one fix
+silently did not ship because the Mac's clone had not been pulled — build 2 went to App Store
+Connect without it and every command looked successful. `native/MAC-RUNBOOK.md` §3b and §3c carry
+the two greps and the one console line that catch that in seconds.
+
 ## 4. Build work
 
 - [x] **The native shell.** **BUILT, ARCHIVED, VALIDATED AND UPLOADED — 2026-08-17.** Version 1.0
