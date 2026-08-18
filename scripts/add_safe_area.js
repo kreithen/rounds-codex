@@ -23,6 +23,12 @@
  * drift; appending one block that overrides them is one anchor, wins on cascade order at equal
  * specificity, and cannot damage a rule it fails to match.
  *
+ * MEASURED, NOT ASSUMED (iPhone 17 Pro Max simulator, iOS 26.5, 2026-08-18). With
+ * contentInset "never" the page reports .app padding-top 62px and .nav bottom 48px -- i.e. a 62px
+ * top inset and 14+34 at the bottom. That settles the one thing I was unsure of: `.never` does NOT
+ * zero the env() values WebKit hands the page. Read them off getComputedStyle in Safari's Web
+ * Inspector before theorising about them.
+ *
  * SAFE ON EVERY OTHER SURFACE. `env(safe-area-inset-*)` resolves to 0px wherever there is no inset
  * — desktop browsers, headless Chromium, an ordinary Safari tab — so every calc() below collapses
  * to the value that shipped. This changes nothing except on a device with an inset.

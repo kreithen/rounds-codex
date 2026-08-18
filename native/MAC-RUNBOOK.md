@@ -139,6 +139,42 @@ web developers" → **Develop → Simulator → <device> → App** gives a full 
 WKWebView, which is where the three-slash URL was visible. That console is the tool for every
 WebKit question this project has been unable to answer from a container.
 
+## 3c. Safe areas — fixed 2026-08-18, and how it was found
+
+Reported from the device: the specialty header and the three-mode switch rendered under the clock
+on every cold load, and a downward swipe corrected it.
+
+The app declares `viewport-fit=cover` and handles only `safe-area-inset-**bottom**`, in two places.
+There is no top inset in the shipped CSS — invisible on the website, where Safari's toolbar occupies
+that strip. `scripts/add_safe_area.js` (last in the payload chain) supplies six rules, and
+`capacitor.config.json` moves to **`"contentInset": "never"`** so UIKit stops adding an inset the
+page now provides itself.
+
+**`.never` does not zero `env()`** — measured on the iPhone 17 Pro Max simulator: `.app`
+padding-top **62px**, `.nav` bottom **48px** (14 + 34). That was the thing worth checking rather
+than reasoning about.
+
+**The bug survived one whole rebuild for a boring reason, and it is the reason to run the check.**
+The Mac's clone had not been pulled, so `add_safe_area.js` did not exist locally and the payload
+was built without it — while every command looked like it had worked. Build 2 shipped to App Store
+Connect missing the fix. Two greps settle it in a second:
+
+```sh
+grep -c "add_safe_area" /tmp/build.log          # the patcher ran
+grep -c "rc-safe-area"  /tmp/rc-payload/index.html   # its output is in the payload
+```
+
+and in the app itself, via Safari's Web Inspector on the running build:
+
+```js
+[!!document.getElementById('rc-safe-area'),
+ getComputedStyle(document.querySelector('.app')).paddingTop,
+ getComputedStyle(document.querySelector('.nav')).bottom]
+```
+
+`[false, ...]` means the bytes never arrived — a build problem, not a CSS one. Check that before
+changing any CSS.
+
 ## 4. Xcode: targets, signing, capabilities
 
 In the `App` target:
