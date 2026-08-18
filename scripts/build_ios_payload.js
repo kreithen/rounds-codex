@@ -16,6 +16,8 @@
  *   build_ios_variant  the wall, the account surfaces and Ask come out; anchors on the shipped
  *                      privacy wording, so it must run AFTER any RC_LEGAL change and will abort
  *                      loudly rather than half-apply if one landed that it does not know about
+ *   fix_usmle_link     usmle/ -> usmle/index.html; Capacitor's handler does not resolve a
+ *                      directory to its index and falls back to the root shell instead
  *   add_safe_area      full-screen top/bottom insets. LAST, because it appends a stylesheet to the
  *                      head and every anchor above reads the head
  *
@@ -77,6 +79,7 @@ run('stamp_version.js', LABEL ? [OUT, '--set', LABEL, '--apply'] : [OUT, '--sync
 run('fix_root_authority.js', [OUT]);
 run('add_media_root.js', [OUT, '--apply']);
 run('build_ios_variant.js', [OUT, '--apply']);
+run('fix_usmle_link.js', [OUT]);
 run('add_safe_area.js', [OUT]);
 
 /* ---- 3. asset packs: OFF by default ------------------------------------------------------------
