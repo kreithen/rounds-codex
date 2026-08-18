@@ -59,6 +59,7 @@ const EXPECT = [
   ['.pad padding-bottom',   /\.pad\{padding-bottom:112px;?\}/],
   ['.app is the container', /\.app\{width:100%;max-width:468px/],
   ['.viewer is fixed',      /\.viewer\{position:fixed;inset:0/],
+  ['.vtop is absolute',     /\.vtop\{position:absolute;top:0;[^}]*padding:16px/],
 ];
 
 /* `.res-wrap` is declared TWICE, in two different <style> blocks, and the later one has no
@@ -80,8 +81,12 @@ const BLOCK = `<style id="${MARK}">
 /* iOS full-screen insets. env() is 0 wherever there is no inset, so this is inert on the web.
    Added by scripts/add_safe_area.js -- see that file for why it is a block and not five edits. */
 .app{padding-top:env(safe-area-inset-top);}
-.viewer{padding-top:env(safe-area-inset-top);}
 .nx-open{padding-top:env(safe-area-inset-top);}
+/* .vtop, not .viewer. The viewer's control bar is position:absolute;top:0, and an absolutely
+   positioned box is laid out against its containing block's PADDING BOX -- whose top edge is above
+   the padding -- so padding on .viewer does not move it. Padding the bar itself does. Its shipped
+   padding is 16px on all four sides, so only the top is rewritten. */
+.vtop{padding-top:calc(16px + env(safe-area-inset-top));}
 .nav{bottom:calc(14px + env(safe-area-inset-bottom));}
 .pad{padding-bottom:calc(112px + env(safe-area-inset-bottom));}
 .res-wrap{padding-bottom:calc(112px + env(safe-area-inset-bottom));}
