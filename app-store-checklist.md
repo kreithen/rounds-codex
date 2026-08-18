@@ -225,7 +225,12 @@ build and the variant script rewrites the phrase. The web manifest keeps it and 
       `public.app-category.medical`, Associated Domains `applinks:roundscodex.com`,
       `ITSAppUsesNonExemptEncryption=false`, app icon 1024x1024 with no alpha (the circular
       waveform mark alone — the full lockup's wordmark is illegible at icon size).
-      **It runs.** On 2026-08-17 the Capacitor project was
+      **It runs.** **Build 3 (2026-08-18) is the submission build** — builds 1 and 2 are superseded
+      and should be ignored in App Store Connect. 3 adds the safe-area fix (the header rendered
+      under the Dynamic Island) and the About-page copy fix that shipped to the web as v131.
+      Verified on device: cold launch in Airplane Mode with a full-size gallery page, header clear
+      of the clock, tab bar clear of the home indicator, and the bottom of a resident specialty
+      page no longer under the tab bar. On 2026-08-17 the Capacitor project was
       created on the physician's Mac (Capacitor 7, **Swift Package Manager, no CocoaPods**) and the
       app launched on the iOS 26.5 simulator: all 183 conditions, condition pages, a quiz, a
       calculator, the About page, gallery thumbnails, no login wall and no Ask tab. Remaining:
