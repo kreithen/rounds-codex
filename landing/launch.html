@@ -99,6 +99,15 @@ h1 .u{color:#0000;background:linear-gradient(115deg,#8dddfc,#4bf1b0);-webkit-bac
   background:radial-gradient(circle at 50% 40%,#00afff22,#0000 40%)}
 .final h2{font-size:clamp(2.2rem,5vw,3.6rem);letter-spacing:-.035em;margin:0 0 .6rem}
 .final p{color:#a1aec2;margin:0 auto 2rem;max-width:520px}
+/* creator / author block */
+.creator{max-width:640px;margin:4.5rem auto 0;padding:1.6rem 1.8rem;display:flex;align-items:center;gap:1.1rem;
+  background:linear-gradient(155deg,#0f1e35cc,#050a16ee);border:1px solid #6fa9ff2e;border-radius:20px}
+.creator .mono{flex:none;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;
+  background:linear-gradient(150deg,#123456,#0a1830);border:1px solid #58a6ff45;color:#bff3ff;font-weight:800;font-size:1.1rem;letter-spacing:.02em}
+.creator .who{text-align:left}
+.creator .lbl{color:#7f8ca6;font-size:.68rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.25rem}
+.creator .nm{color:#f4f9ff;font-size:1.12rem;font-weight:800;letter-spacing:-.01em}
+.creator .cred{color:#9fb0c8;font-size:.9rem;margin-top:.1rem}
 footer{text-align:center;color:#68758c;font-size:.78rem;padding:2.5rem 1.5rem 3.5rem;line-height:1.7}
 footer a{color:#8ea6c6;text-decoration:underline;text-underline-offset:2px}
 @media(max-width:640px){.stage{min-height:300px}.dl-row{gap:.7rem}}
@@ -109,10 +118,11 @@ footer a{color:#8ea6c6;text-decoration:underline;text-underline-offset:2px}
      (see script at end of file), so the App Store link lives in ONE place. -->
 <script type="application/ld+json" id="ld-graph">
 {"@context":"https://schema.org","@graph":[
-{"@type":"Organization","@id":"https://roundscodex.com/#org","name":"Rounds Codex","url":"https://roundscodex.com/","logo":{"@type":"ImageObject","url":"https://roundscodex.com/assets/rounds-codex-logo.webp","width":1400,"height":447},"description":"Visual medical education for nursing students, medical students, and residents, created by a practicing physician.","knowsAbout":["Medical education","Nursing education","NCLEX-RN preparation","USMLE preparation","Clinical pharmacology","Medical imaging","Perioperative care"]},
+{"@type":"Person","@id":"https://roundscodex.com/#creator","name":"Joshua Kreithen, MD","givenName":"Joshua","familyName":"Kreithen","honorificSuffix":"MD","jobTitle":"Board-Certified Plastic Surgeon","description":"Board-certified plastic surgeon and creator of Rounds Codex.","knowsAbout":["Medicine","Surgery","Medical education","Clinical pharmacology"]},
+{"@type":"Organization","@id":"https://roundscodex.com/#org","name":"Rounds Codex","url":"https://roundscodex.com/","logo":{"@type":"ImageObject","url":"https://roundscodex.com/assets/rounds-codex-logo.webp","width":1400,"height":447},"founder":{"@id":"https://roundscodex.com/#creator"},"description":"Visual medical education for nursing students, medical students, and residents, created by Joshua Kreithen, MD, a board-certified plastic surgeon.","knowsAbout":["Medical education","Nursing education","NCLEX-RN preparation","USMLE preparation","Clinical pharmacology","Medical imaging","Perioperative care"]},
 {"@type":"WebSite","@id":"https://roundscodex.com/#website","url":"https://roundscodex.com/","name":"Rounds Codex","publisher":{"@id":"https://roundscodex.com/#org"},"inLanguage":"en-US"},
 {"@type":"WebPage","@id":"https://roundscodex.com/#webpage","url":"https://roundscodex.com/","name":"Rounds Codex | Download the Medical Education App — Free on the App Store","isPartOf":{"@id":"https://roundscodex.com/#website"},"about":{"@id":"https://roundscodex.com/#app"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://roundscodex.com/assets/og-cover.jpg","width":1200,"height":630},"inLanguage":"en-US","description":"Download Rounds Codex free on the App Store: a visual medical education app for USMLE and NCLEX with 1,800+ board-style questions, a clinical image atlas, 300-drug pharmacology, medical calculators, and audio lessons."},
-{"@type":"SoftwareApplication","@id":"https://roundscodex.com/#app","name":"Rounds Codex","applicationCategory":"MedicalApplication","applicationSubCategory":"Medical Education","operatingSystem":"iOS","url":"https://roundscodex.com/","downloadUrl":"https://roundscodex.com/","installUrl":"https://roundscodex.com/","publisher":{"@id":"https://roundscodex.com/#org"},"author":{"@id":"https://roundscodex.com/#org"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Rounds Codex is a visual medical education app for USMLE and NCLEX — with clinical condition guides, a medical image atlas, 300-drug pharmacology, 1,800+ board-style practice questions, medical calculators, and audio lessons. Free on the App Store, created by a practicing physician.","featureList":["1,000+ original medical illustrations","183 condition guides across 25 specialties","1,820 USMLE- and NCLEX-style practice questions","300-drug pharmacology reference","Audio lessons for hands-free study","Medical calculators","Expert-curated medical image galleries","Works offline, no account required"],"audience":[{"@type":"EducationalAudience","educationalRole":"Nursing student"},{"@type":"EducationalAudience","educationalRole":"Medical student"},{"@type":"EducationalAudience","educationalRole":"Medical resident"}]}
+{"@type":"SoftwareApplication","@id":"https://roundscodex.com/#app","name":"Rounds Codex","applicationCategory":"MedicalApplication","applicationSubCategory":"Medical Education","operatingSystem":"iOS","url":"https://roundscodex.com/","downloadUrl":"https://roundscodex.com/","installUrl":"https://roundscodex.com/","publisher":{"@id":"https://roundscodex.com/#org"},"author":{"@id":"https://roundscodex.com/#creator"},"creator":{"@id":"https://roundscodex.com/#creator"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Rounds Codex is a visual medical education app for USMLE and NCLEX — with clinical condition guides, a medical image atlas, 300-drug pharmacology, 1,800+ board-style practice questions, medical calculators, and audio lessons. Free on the App Store, created by a practicing physician.","featureList":["1,000+ original medical illustrations","183 condition guides across 25 specialties","1,820 USMLE- and NCLEX-style practice questions","300-drug pharmacology reference","Audio lessons for hands-free study","Medical calculators","Expert-curated medical image galleries","Works offline, no account required"],"audience":[{"@type":"EducationalAudience","educationalRole":"Nursing student"},{"@type":"EducationalAudience","educationalRole":"Medical student"},{"@type":"EducationalAudience","educationalRole":"Medical resident"}]}
 ]}
 </script>
 <script type="application/ld+json">
@@ -123,7 +133,7 @@ footer a{color:#8ea6c6;text-decoration:underline;text-underline-offset:2px}
 {"@type":"Question","name":"What exams does it help me prepare for?","acceptedAnswer":{"@type":"Answer","text":"NGN-style NCLEX-RN practice for nursing students and blueprint-weighted USMLE-style practice for medical students, including USMLE Step 1 and Step 2 CK, each with explanations written to teach the clinical reasoning—not just score the answer."}},
 {"@type":"Question","name":"What makes it different from other study apps?","acceptedAnswer":{"@type":"Answer","text":"It is visual-first. Every condition pairs concise clinical text with expert-curated image galleries, and the practice questions connect back to those same libraries—so learning, understanding, and recall all live in one place. It also includes audio lessons and bedside medical calculators."}},
 {"@type":"Question","name":"How many questions and illustrations does it include?","acceptedAnswer":{"@type":"Answer","text":"Rounds Codex includes 1,820 board-style practice questions, 1,000+ original medical illustrations, 183 condition guides across 25 specialties, and a 300-drug pharmacology reference."}},
-{"@type":"Question","name":"Who creates the content in Rounds Codex?","acceptedAnswer":{"@type":"Answer","text":"Rounds Codex is created by a practicing physician, with clinical content and imagery reviewed for medical accuracy. It is an educational resource and does not replace clinical judgment or your institution's protocols."}},
+{"@type":"Question","name":"Who creates the content in Rounds Codex?","acceptedAnswer":{"@type":"Answer","text":"Rounds Codex is created by Joshua Kreithen, MD, a board-certified plastic surgeon, with clinical content and imagery reviewed for medical accuracy. It is an educational resource and does not replace clinical judgment or your institution's protocols."}},
 {"@type":"Question","name":"Does it require an account or an internet connection?","acceptedAnswer":{"@type":"Answer","text":"No. Rounds Codex works completely offline after download, requires no account, and includes no ads and no tracking."}},
 {"@type":"Question","name":"Does it replace clinical judgment?","acceptedAnswer":{"@type":"Answer","text":"No. Rounds Codex is an educational study aid for students. It does not replace clinical judgment, supervision, or your institution's protocols."}}
 ]}
@@ -178,6 +188,17 @@ footer a{color:#8ea6c6;text-decoration:underline;text-underline-offset:2px}
   </div>
 </section>
 
+<div class="wrap">
+  <div class="creator">
+    <div class="mono" aria-hidden="true">JK</div>
+    <div class="who">
+      <div class="lbl">Created by</div>
+      <div class="nm">Joshua Kreithen, MD</div>
+      <div class="cred">Board-Certified Plastic Surgeon · clinical content reviewed for medical accuracy</div>
+    </div>
+  </div>
+</div>
+
 <section class="final">
   <h2>Your whole study library, in your pocket.</h2>
   <p>Free to download on the App Store. Start crushing your exams and clinical rotations today.</p>
@@ -192,7 +213,7 @@ footer a{color:#8ea6c6;text-decoration:underline;text-underline-offset:2px}
 </section>
 
 <footer>
-  Created by a practicing physician · Clinical content reviewed for medical accuracy.<br>
+  Created by Joshua Kreithen, MD, a board-certified plastic surgeon · Clinical content reviewed for medical accuracy.<br>
   A study aid for students, not medical advice. Does not replace clinical judgment or your institution's protocols.<br>
   © 2026 Rounds Codex · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a>
 </footer>

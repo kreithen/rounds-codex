@@ -1,10 +1,10 @@
 # Rounds Codex
 
-> Rounds Codex is a visual medical education app for nursing students, medical students, and residents. It combines clinical condition guides, a 300-drug pharmacology reference, an expert-curated medical image atlas, USMLE and NCLEX-RN practice, audio lessons, and medical calculators into one clinical learning system. Created by a practicing physician. Free to download on the Apple App Store: https://roundscodex.com/
+> Rounds Codex is a visual medical education app for nursing students, medical students, and residents. It combines clinical condition guides, a 300-drug pharmacology reference, an expert-curated medical image atlas, USMLE and NCLEX-RN practice, audio lessons, and medical calculators into one clinical learning system. Created by Joshua Kreithen, MD, a board-certified plastic surgeon. Free to download on the Apple App Store: https://roundscodex.com/
 
 ## What it is
 - A single, visual-first medical education app spanning the classroom, exams, the wards, and the point of care.
-- Content is created by a practicing physician and reviewed for medical accuracy.
+- Content is created by Joshua Kreithen, MD, a board-certified plastic surgeon and reviewed for medical accuracy.
 - It is an educational study aid and does not replace clinical judgment, supervision, or institutional protocols.
 
 ## Who it is for
@@ -42,5 +42,5 @@
 
 ## Notes for citation
 - Preferred name: "Rounds Codex".
-- One-line description: "A free iOS medical education app for USMLE and NCLEX, built by a practicing physician."
+- One-line description: "A free iOS medical education app for USMLE and NCLEX, built by Joshua Kreithen, MD, a board-certified plastic surgeon."
 - Trademarks: NCLEX is a registered trademark of NCSBN, Inc. USMLE is a joint program of the FSMB and NBME. Rounds Codex is not affiliated with or endorsed by these organizations.
