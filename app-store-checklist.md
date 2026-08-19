@@ -259,6 +259,12 @@ testing** instead — create an internal group, add yourself, add the build; no 
 and the header was confirmed correct on real hardware before recording. **Check which build is on
 the device before recording anything for Apple.**
 
+**Replied 2026-08-19** with a 1:30 screen recording made on the physician's iPhone (build 4 via
+TestFlight, after deleting and reinstalling so the first-run disclaimer appears — it is gated on
+`rc.terms.v1` and `accountReset()` deliberately does not clear it) and a 3,996-character answer.
+App Store Connect caps that field at 4,000, which the first draft (5,252) exceeded; nothing was
+dropped to fit, only tightened.
+
 Also surfaced while checking the URLs: the EU **Digital Services Act trader status** is not
 provided, so the app cannot be sold in the EU until it is. Needs a verified business address and
 phone. Deferred deliberately; does not affect review or a US release.
