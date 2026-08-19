@@ -77,11 +77,11 @@
 <option value="professional">Medical professional</option>
 <option value="nonmedical">Non-medical</option>
 </select>
-<input class="signup-phone" type="tel" name="phone" required placeholder="Phone number" aria-label="Phone number" autocomplete="tel" inputmode="tel">
+<input class="signup-phone" type="tel" name="phone" placeholder="Phone (optional)" aria-label="Phone number (optional)" autocomplete="tel" inputmode="tel">
 <button class="button button-primary" type="submit">Lock in free-for-life<span aria-hidden="true">→</span></button>
 </div>
 <p class="signup-msg" role="status" aria-live="polite"></p>
-<p class="signup-fine"><strong>Free at launch.</strong> The first 1,000 to join lock in free access for life. By joining, you agree to receive launch updates by text — msg &amp; data rates may apply, reply STOP to opt out. <a href="privacy.html">Privacy</a>.</p>
+<p class="signup-fine"><strong>Free at launch.</strong> The first 1,000 to join lock in free access for life. Add your phone (optional) to also get launch updates by text — msg &amp; data rates may apply, reply STOP to opt out. <a href="privacy.html">Privacy</a>.</p>
 </form>
 </div>
 <div class="hero-visual" aria-label="Rounds Codex in clinical use" data-parallax>
@@ -190,11 +190,11 @@
 <option value="professional">Medical professional</option>
 <option value="nonmedical">Non-medical</option>
 </select>
-<input class="signup-phone" type="tel" name="phone" required placeholder="Phone number" aria-label="Phone number" autocomplete="tel" inputmode="tel">
+<input class="signup-phone" type="tel" name="phone" placeholder="Phone (optional)" aria-label="Phone number (optional)" autocomplete="tel" inputmode="tel">
 <button class="button button-primary" type="submit">Lock in free-for-life<span aria-hidden="true">→</span></button>
 </div>
 <p class="signup-msg" role="status" aria-live="polite"></p>
-<p class="signup-fine">Claim one of the first 1,000 free-for-life spots. By joining, you agree to receive launch updates by text — msg &amp; data rates may apply, reply STOP to opt out. See our <a href="privacy.html">Privacy Policy</a>.</p>
+<p class="signup-fine">Claim one of the first 1,000 free-for-life spots. Add your phone (optional) to also get launch updates by text — msg &amp; data rates may apply, reply STOP to opt out. See our <a href="privacy.html">Privacy Policy</a>.</p>
 </form>
 </section>
 
@@ -344,7 +344,7 @@
       const phone = (form.phone?.value || "").trim();
       if (!name) { setMsg("Please enter your name.", "err"); return; }
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { setMsg("Please enter a valid email address.", "err"); return; }
-      if (phone.replace(/\D/g, "").length < 10) { setMsg("Please enter a valid phone number.", "err"); return; }
+      if (phone && phone.replace(/\D/g, "").length < 10) { setMsg("That phone number doesn't look right — fix it or leave it blank.", "err"); return; }
       if (!configured) { setMsg("Signups open soon — please check back shortly.", "err"); return; }
 
       btn.disabled = true; setMsg("Adding you…", "");
@@ -357,7 +357,7 @@
             "Content-Type": "application/json",
             "Prefer": "return=minimal"
           },
-          body: JSON.stringify({ name, email, role, phone, sms_consent: true, source: "landing", user_agent: navigator.userAgent })
+          body: JSON.stringify({ name, email, role, phone: phone || null, sms_consent: !!phone, source: "landing", user_agent: navigator.userAgent })
         });
         if (res.ok || res.status === 201) { form.reset(); setMsg("You're on the list — we'll be in touch. 🎉", "ok"); }
         else if (res.status === 409) { setMsg("You're already on the list — thank you!", "ok"); }
