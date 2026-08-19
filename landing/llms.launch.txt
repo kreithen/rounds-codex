@@ -1,0 +1,53 @@
+# Rounds Codex
+
+> Rounds Codex is a visual medical education app for nursing students, medical students, and residents. It combines clinical condition guides, a 300-drug pharmacology reference, an expert-curated medical image atlas, USMLE and NCLEX-RN practice, audio lessons, and medical calculators into one clinical learning system. Created by Joshua Kreithen, MD, a board-certified plastic surgeon. Free to download on the Apple App Store: https://roundscodex.com/
+
+## What it is
+- A single, visual-first medical education app spanning the classroom, exams, the wards, and the point of care.
+- Content is created by Joshua Kreithen, MD, a board-certified plastic surgeon and reviewed for medical accuracy.
+- It is an educational study aid and does not replace clinical judgment, supervision, or institutional protocols.
+
+## Who it is for
+- **Nursing students** — clinical judgment, bedside priorities, focused disease guides, and NGN-style NCLEX-RN practice.
+- **Medical students** — high-yield visual medicine and original USMLE-style practice for Step 1 and Step 2 CK.
+- **Residents** — specialty-level references and image-rich reviews across 25 specialties.
+
+## Key features
+- 1,000+ original medical illustrations — full-page artwork built to make high-yield material stick.
+- 183 condition guides with Nursing, Medical, and Resident views across 25 medical and surgical specialties.
+- 1,820 board-style practice questions (1,010 USMLE-style and 150 NCLEX-style) with teaching rationales.
+- A 300-drug pharmacology reference (uses, dosing, half-life, adverse effects, boxed warnings, interactions).
+- An expert-curated medical image atlas: roughly ten images per condition (anatomy, pathophysiology, imaging, treatment, clinical pearls).
+- Audio mode — medical lessons to listen and learn hands-free.
+- Medical calculators for the clinical formulas used at the bedside.
+- Ongoing clinical/guideline updates so knowledge stays current.
+- Works completely offline. No account required. No ads. No tracking.
+
+## Exam preparation
+- **USMLE** — blueprint-weighted, original practice questions for Step 1 and Step 2 CK with explanations that teach clinical reasoning.
+- **NCLEX-RN** — Next-Generation (NGN) style items focused on clinical judgment.
+
+## Platform and availability
+- Available on iOS. Free to download from the Apple App Store.
+- Works offline after download; no account required.
+
+## Pricing
+- Free to download on the App Store right now.
+- Rounds Codex will become a paid subscription app soon. Anyone who downloads it while it is free keeps full access free for life and never pays a subscription (early users are grandfathered in).
+
+## Links
+- Home / download: https://roundscodex.com/
+- Privacy Policy: https://roundscodex.com/privacy.html
+- Terms of Use: https://roundscodex.com/terms.html
+- Contact: hello@roundscodex.com
+- Instagram: https://instagram.com/roundscodex
+- TikTok: https://tiktok.com/@roundscodex
+- X (Twitter): https://x.com/roundscodex
+- Facebook: https://facebook.com/roundscodex
+- Reddit: https://reddit.com/u/roundscodex
+- YouTube: https://youtube.com/@roundscodex
+
+## Notes for citation
+- Preferred name: "Rounds Codex".
+- One-line description: "A free iOS medical education app for USMLE and NCLEX, built by Joshua Kreithen, MD, a board-certified plastic surgeon."
+- Trademarks: NCLEX is a registered trademark of NCSBN, Inc. USMLE is a joint program of the FSMB and NBME. Rounds Codex is not affiliated with or endorsed by these organizations.

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- ============================================================================
+     STAGING: post-App-Store-approval homepage. Not linked from the live site.
+     THREE steps to go live (nothing else needs editing — SEO is already baked in):
+       (1) DELETE the `<meta name="robots" content="noindex, nofollow">` line below.
+       (2) Set RC_APPSTORE_URL at the bottom of the file to the real App Store link.
+           That one constant repoints every download button AND the structured-data
+           downloadUrl/installUrl automatically.
+       (3) Swap the placeholder App Store badge SVG for Apple's official badge asset.
+       (4) Promote llms.launch.txt to llms.txt (AI-crawler summary for the live app).
+     Then promote this file to index.html and deploy (and bump sitemap.xml lastmod).
+     ============================================================================ -->
+<title>Rounds Codex | Download Free Now, Keep It Free for Life — Medical Education App</title>
+<meta name="description" content="Rounds Codex is a visual medical education app for USMLE &amp; NCLEX — 1,800+ board-style questions, a clinical image atlas, 300-drug pharmacology, calculators, and audio lessons. Download free now and keep full access free for life before it becomes a paid subscription. Built by a practicing physician.">
+<meta name="keywords" content="medical education app,USMLE prep app,NCLEX practice questions,NGN NCLEX-RN,USMLE Step 1 practice,USMLE Step 2 CK,medical student study app,nursing student app,resident medical reference,medical image atlas,clinical image gallery,pharmacology drug reference,board review app,free medical app,medical calculators,perioperative education,visual medical learning">
+<meta name="author" content="Rounds Codex">
+<meta name="robots" content="noindex, nofollow"><!-- STAGING ONLY — delete this line at go-live (step 1 above). -->
+<link rel="canonical" href="https://roundscodex.com/">
+<!-- Open Graph -->
+<meta property="og:title" content="Rounds Codex | Free Medical Education App for USMLE &amp; NCLEX">
+<meta property="og:description" content="Download free now and keep full access free for life — before it becomes a paid subscription. 1,800+ board-style questions, a clinical image atlas, 300-drug pharmacology, calculators, and audio lessons.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://roundscodex.com/">
+<meta property="og:site_name" content="Rounds Codex">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://roundscodex.com/assets/og-cover.jpg">
+<meta property="og:image:secure_url" content="https://roundscodex.com/assets/og-cover.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rounds Codex — a visual medical education app for USMLE and NCLEX, free on the App Store">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rounds Codex | Free Medical Education App for USMLE &amp; NCLEX">
+<meta name="twitter:description" content="Download free now and keep full access free for life — before it becomes a paid subscription. 1,800+ board-style questions, a clinical image atlas, 300-drug pharmacology, calculators, and audio lessons.">
+<meta name="twitter:image" content="https://roundscodex.com/assets/og-cover.jpg">
+<meta name="twitter:image:alt" content="Rounds Codex — a visual medical education app for USMLE and NCLEX">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="Rounds Codex">
+<meta name="theme-color" content="#050813">
+<meta name="color-scheme" content="dark">
+<style>
+:root{--ink:#050813;--text:#f7fbff;--muted:#9daac4;--cyan:#24d9ff;--blue:#2878ff;--mint:#46f2ad;--line:#7aadff2b;--max:1200px}
+*,:before,:after{box-sizing:border-box}
+html{background:var(--ink);color-scheme:dark;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;min-width:320px;color:var(--text);-webkit-font-smoothing:antialiased;
+  background:radial-gradient(circle at 50% -8%,#00a2ff26,#0000 42rem),radial-gradient(circle at 82% 24%,#36e8b71a,#0000 30rem),linear-gradient(#020509,#060e1c 46%,#03060e);
+  font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:hidden}
+img,svg{max-width:100%;height:auto;display:block}a{color:inherit;text-decoration:none}
+.wrap{width:min(100% - 40px,var(--max));margin:0 auto}
+header{padding:26px 0;display:flex;justify-content:center}
+header img{width:min(320px,72vw);height:auto}
+.hero{text-align:center;padding:34px 0 20px}
+.eyebrow{display:inline-flex;align-items:center;gap:.6rem;color:#bff3ff;letter-spacing:.16em;text-transform:uppercase;
+  font-size:.72rem;font-weight:800;background:#0e2a3a5c;border:1px solid #46f2ad4d;border-radius:999px;padding:.5rem 1rem;margin-bottom:1.8rem}
+.eyebrow .dot{width:.5rem;height:.5rem;border-radius:50%;background:var(--mint);box-shadow:0 0 12px var(--mint)}
+h1{margin:0;font-size:clamp(3rem,10vw,6.6rem);line-height:.92;letter-spacing:-.04em;font-weight:800}
+h1 .u{color:#0000;background:linear-gradient(115deg,#8dddfc,#4bf1b0);-webkit-background-clip:text;background-clip:text;text-shadow:0 0 50px #25bfff33}
+.lede{max-width:640px;margin:1.7rem auto 0;color:#aebbd0;font-size:clamp(1.05rem,1.6vw,1.3rem);line-height:1.6}
+.lede b{color:#eaf3ff;font-weight:750}
+.dl-row{display:flex;flex-direction:column;align-items:center;gap:.9rem;margin-top:2.3rem}
+.dl-free{font-size:clamp(1.5rem,4vw,2.1rem);font-weight:850;letter-spacing:-.02em;
+  color:#0000;background:linear-gradient(115deg,#fff,#8dddfc 55%,#4bf1b0);-webkit-background-clip:text;background-clip:text}
+.dl-note{margin:.1rem auto 0;max-width:440px;color:#9db0cb;font-size:.86rem;line-height:1.45}
+.dl-note b{color:#e7f0ff;font-weight:750}
+.badge{display:inline-block;transition:transform .18s,filter .18s;filter:drop-shadow(0 18px 44px #000a)}
+.badge:hover{transform:translateY(-3px) scale(1.02);filter:drop-shadow(0 26px 56px #24d9ff4d)}
+.badge svg{height:104px;width:auto;max-width:100%}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:.55rem;margin-top:2rem}
+.chips span{color:#dce7f8;background:#122342a1;border:1px solid #58a6ff38;border-radius:999px;padding:.5rem .85rem;font-size:.74rem;font-weight:700;letter-spacing:.02em}
+/* device showcase */
+.stage{position:relative;display:flex;justify-content:center;align-items:flex-end;gap:1.4rem;margin:3.4rem auto 0;min-height:360px}
+.stage:before{content:"";position:absolute;inset:8% 12% 0;z-index:-1;filter:blur(60px);border-radius:50%;
+  background:radial-gradient(circle at 50% 40%,#2878ff5c,#0000 46%),radial-gradient(circle at 60% 62%,#36e8b73d,#0000 46%)}
+.phone{width:min(30vw,220px);aspect-ratio:.5;border:1px solid #7ab4ff45;border-radius:30px;padding:7px;background:linear-gradient(150deg,#16243c,#02050c);
+  box-shadow:0 30px 70px #0009,inset 0 0 0 2px #ffffff08;overflow:hidden}
+.phone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:24px}
+.phone.side{width:min(24vw,178px);opacity:.9}
+.phone.l{transform:perspective(1200px) rotateY(20deg) rotate(-6deg) translateY(26px)}
+.phone.r{transform:perspective(1200px) rotateY(-20deg) rotate(6deg) translateY(26px)}
+.phone.c{position:relative;z-index:2}
+/* ecg line */
+.ecg{width:min(100%,760px);margin:1.5rem auto 0;opacity:.5}
+.ecg path{stroke:var(--cyan);stroke-width:1.4;fill:none;stroke-linecap:round;filter:drop-shadow(0 0 8px #24d9ffcc)}
+/* features */
+.features{padding:5.5rem 0 2rem}
+.features h2{text-align:center;font-size:clamp(2rem,4vw,3rem);letter-spacing:-.03em;margin:0 0 .5rem}
+.features .sub{text-align:center;color:var(--muted);margin:0 auto 3rem;max-width:560px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
+.card{background:linear-gradient(155deg,#0f1e35d9,#050a16f2);border:1px solid #6fa9ff2e;border-radius:20px;padding:1.5rem 1.6rem;display:flex;gap:1rem;align-items:flex-start}
+.card .ic{font-size:1.5rem;line-height:1;flex:none}
+.card b{display:block;color:#f4f9ff;font-size:1.02rem;font-weight:800;letter-spacing:-.01em;margin-bottom:.25rem}
+.card p{margin:0;color:#9caabf;font-size:.9rem;line-height:1.55}
+/* final cta */
+.final{text-align:center;padding:5rem 1.5rem 4rem;margin-top:3rem;border-top:1px solid var(--line);
+  background:radial-gradient(circle at 50% 40%,#00afff22,#0000 40%)}
+.final h2{font-size:clamp(2.2rem,5vw,3.6rem);letter-spacing:-.035em;margin:0 0 .6rem}
+.final p{color:#a1aec2;margin:0 auto 2rem;max-width:520px}
+/* creator / author block */
+.creator{max-width:640px;margin:4.5rem auto 0;padding:1.6rem 1.8rem;display:flex;align-items:center;gap:1.1rem;
+  background:linear-gradient(155deg,#0f1e35cc,#050a16ee);border:1px solid #6fa9ff2e;border-radius:20px}
+.creator .mono{flex:none;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;
+  background:linear-gradient(150deg,#123456,#0a1830);border:1px solid #58a6ff45;color:#bff3ff;font-weight:800;font-size:1.1rem;letter-spacing:.02em}
+.creator .who{text-align:left}
+.creator .lbl{color:#7f8ca6;font-size:.68rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.25rem}
+.creator .nm{color:#f4f9ff;font-size:1.12rem;font-weight:800;letter-spacing:-.01em}
+.creator .cred{color:#9fb0c8;font-size:.9rem;margin-top:.1rem}
+footer{text-align:center;color:#68758c;font-size:.78rem;padding:2.5rem 1.5rem 3.5rem;line-height:1.7}
+footer a{color:#8ea6c6;text-decoration:underline;text-underline-offset:2px}
+/* social row */
+.social{display:flex;justify-content:center;flex-wrap:wrap;gap:.7rem;margin:0 auto 1.8rem}
+.social a{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:#bcd0ee;
+  background:#122342a1;border:1px solid #58a6ff38;text-decoration:none;transition:transform .15s,background .15s,color .15s,border-color .15s}
+.social a:hover{transform:translateY(-2px);background:#18305a;color:#fff;border-color:#7ab4ff99}
+.social svg{width:19px;height:19px;fill:currentColor;display:block}
+@media(max-width:640px){.stage{min-height:300px}.dl-row{gap:.7rem}}
+</style>
+
+<!-- ===== Structured data (SEO + AI answer engines) =====================
+     downloadUrl / installUrl below are patched from RC_APPSTORE_URL at load
+     (see script at end of file), so the App Store link lives in ONE place. -->
+<script type="application/ld+json" id="ld-graph">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Person","@id":"https://roundscodex.com/#creator","name":"Joshua Kreithen, MD","givenName":"Joshua","familyName":"Kreithen","honorificSuffix":"MD","jobTitle":"Board-Certified Plastic Surgeon","description":"Board-certified plastic surgeon and creator of Rounds Codex.","knowsAbout":["Medicine","Surgery","Medical education","Clinical pharmacology"]},
+{"@type":"Organization","@id":"https://roundscodex.com/#org","name":"Rounds Codex","url":"https://roundscodex.com/","logo":{"@type":"ImageObject","url":"https://roundscodex.com/assets/rounds-codex-logo.webp","width":1400,"height":447},"founder":{"@id":"https://roundscodex.com/#creator"},"sameAs":["https://instagram.com/roundscodex","https://tiktok.com/@roundscodex","https://x.com/roundscodex","https://facebook.com/roundscodex","https://reddit.com/u/roundscodex","https://youtube.com/@roundscodex"],"description":"Visual medical education for nursing students, medical students, and residents, created by Joshua Kreithen, MD, a board-certified plastic surgeon.","knowsAbout":["Medical education","Nursing education","NCLEX-RN preparation","USMLE preparation","Clinical pharmacology","Medical imaging","Perioperative care"]},
+{"@type":"WebSite","@id":"https://roundscodex.com/#website","url":"https://roundscodex.com/","name":"Rounds Codex","publisher":{"@id":"https://roundscodex.com/#org"},"inLanguage":"en-US"},
+{"@type":"WebPage","@id":"https://roundscodex.com/#webpage","url":"https://roundscodex.com/","name":"Rounds Codex | Download the Medical Education App — Free on the App Store","isPartOf":{"@id":"https://roundscodex.com/#website"},"about":{"@id":"https://roundscodex.com/#app"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://roundscodex.com/assets/og-cover.jpg","width":1200,"height":630},"inLanguage":"en-US","description":"Download Rounds Codex free on the App Store: a visual medical education app for USMLE and NCLEX with 1,800+ board-style questions, a clinical image atlas, 300-drug pharmacology, medical calculators, and audio lessons."},
+{"@type":"SoftwareApplication","@id":"https://roundscodex.com/#app","name":"Rounds Codex","applicationCategory":"MedicalApplication","applicationSubCategory":"Medical Education","operatingSystem":"iOS","url":"https://roundscodex.com/","downloadUrl":"https://roundscodex.com/","installUrl":"https://roundscodex.com/","publisher":{"@id":"https://roundscodex.com/#org"},"author":{"@id":"https://roundscodex.com/#creator"},"creator":{"@id":"https://roundscodex.com/#creator"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Rounds Codex is a visual medical education app for USMLE and NCLEX — with clinical condition guides, a medical image atlas, 300-drug pharmacology, 1,800+ board-style practice questions, medical calculators, and audio lessons. Free on the App Store, created by a practicing physician.","featureList":["1,000+ original medical illustrations","183 condition guides across 25 specialties","1,820 USMLE- and NCLEX-style practice questions","300-drug pharmacology reference","Audio lessons for hands-free study","Medical calculators","Expert-curated medical image galleries","Works offline, no account required"],"audience":[{"@type":"EducationalAudience","educationalRole":"Nursing student"},{"@type":"EducationalAudience","educationalRole":"Medical student"},{"@type":"EducationalAudience","educationalRole":"Medical resident"}]}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","@id":"https://roundscodex.com/#faq","mainEntity":[
+{"@type":"Question","name":"What is Rounds Codex?","acceptedAnswer":{"@type":"Answer","text":"Rounds Codex is a visual medical education app for nursing students, medical students, and residents. It brings condition and disease guides, a 300-drug pharmacology reference, expert-curated image galleries, board-style exam practice, audio lessons, and medical calculators together into one clinical learning system."}},
+{"@type":"Question","name":"How much does Rounds Codex cost?","acceptedAnswer":{"@type":"Answer","text":"Rounds Codex is free to download on the App Store right now. It will become a paid subscription app soon, but anyone who downloads it while it is free keeps full access free for life and never pays a subscription."}},
+{"@type":"Question","name":"If I download it free now, do I keep it free later?","acceptedAnswer":{"@type":"Answer","text":"Yes. Everyone who downloads Rounds Codex during the free period keeps full access free for life. When it switches to a paid subscription, early users are grandfathered in and never pay."}},
+{"@type":"Question","name":"What devices does it run on?","acceptedAnswer":{"@type":"Answer","text":"Rounds Codex is available on iOS. Download it free from the Apple App Store. It works offline once installed and requires no account."}},
+{"@type":"Question","name":"What exams does it help me prepare for?","acceptedAnswer":{"@type":"Answer","text":"NGN-style NCLEX-RN practice for nursing students and blueprint-weighted USMLE-style practice for medical students, including USMLE Step 1 and Step 2 CK, each with explanations written to teach the clinical reasoning—not just score the answer."}},
+{"@type":"Question","name":"What makes it different from other study apps?","acceptedAnswer":{"@type":"Answer","text":"It is visual-first. Every condition pairs concise clinical text with expert-curated image galleries, and the practice questions connect back to those same libraries—so learning, understanding, and recall all live in one place. It also includes audio lessons and bedside medical calculators."}},
+{"@type":"Question","name":"How many questions and illustrations does it include?","acceptedAnswer":{"@type":"Answer","text":"Rounds Codex includes 1,820 board-style practice questions, 1,000+ original medical illustrations, 183 condition guides across 25 specialties, and a 300-drug pharmacology reference."}},
+{"@type":"Question","name":"Who creates the content in Rounds Codex?","acceptedAnswer":{"@type":"Answer","text":"Rounds Codex is created by Joshua Kreithen, MD, a board-certified plastic surgeon, with clinical content and imagery reviewed for medical accuracy. It is an educational resource and does not replace clinical judgment or your institution's protocols."}},
+{"@type":"Question","name":"Does it require an account or an internet connection?","acceptedAnswer":{"@type":"Answer","text":"No. Rounds Codex works completely offline after download, requires no account, and includes no ads and no tracking."}},
+{"@type":"Question","name":"Does it replace clinical judgment?","acceptedAnswer":{"@type":"Answer","text":"No. Rounds Codex is an educational study aid for students. It does not replace clinical judgment, supervision, or your institution's protocols."}}
+]}
+</script>
+</head>
+<body>
+<header><a href="/" aria-label="Rounds Codex"><img src="assets/rounds-codex-logo-clear.png" alt="Rounds Codex" width="1400" height="447"></a></header>
+
+<main>
+<section class="hero wrap">
+  <div class="eyebrow"><span class="dot" aria-hidden="true"></span>Download free now · Keep it free for life</div>
+  <h1>Learn.<br><span class="u">Understand.</span><br>Succeed.</h1>
+  <p class="lede">The all-in-one medical education app for <b>USMLE</b> &amp; <b>NCLEX</b> — a visual clinical atlas, board-style practice, pharmacology, and calculators, built by a practicing physician.</p>
+
+  <div class="dl-row">
+    <div class="dl-free">Download for Free!</div>
+    <p class="dl-note">Rounds Codex becomes a paid subscription soon. <b>Download it while it's free and your access stays free for life — no subscription, ever.</b></p>
+    <a class="badge" id="dl-hero" href="#" aria-label="Download on the App Store">
+      <!-- PLACEHOLDER App Store badge — replace with Apple's official badge before launch. -->
+      <svg viewBox="0 0 240 72" role="img" aria-label="Download on the App Store" xmlns="http://www.w3.org/2000/svg">
+        <rect x="1" y="1" width="238" height="70" rx="14" fill="#fff" stroke="#00000022"/>
+        <path fill="#000" d="M47.6 37.3c0-4 3.3-6 3.5-6.1-1.9-2.8-4.9-3.2-6-3.2-2.5-.3-4.9 1.5-6.2 1.5-1.3 0-3.2-1.5-5.3-1.4-2.7 0-5.2 1.6-6.6 4-2.8 4.9-.7 12.1 2 16.1 1.3 2 2.9 4.2 4.9 4.1 2-.1 2.7-1.3 5.1-1.3s3 1.3 5.1 1.2c2.1 0 3.4-2 4.7-4 1.5-2.3 2.1-4.5 2.1-4.6-.1 0-4.1-1.6-4.1-6.3zM43.7 25.6c1.1-1.3 1.8-3.2 1.6-5-1.6.1-3.5 1-4.6 2.3-1 1.1-1.9 3-1.6 4.8 1.7.1 3.5-.9 4.6-2.1z"/>
+        <text x="66" y="28" fill="#000" font-family="Inter,Helvetica,Arial,sans-serif" font-size="11" font-weight="500">Download on the</text>
+        <text x="65" y="52" fill="#000" font-family="Inter,Helvetica,Arial,sans-serif" font-size="25" font-weight="600" letter-spacing="-0.5">App Store</text>
+      </svg>
+    </a>
+  </div>
+
+  <div class="chips" aria-label="Built for">
+    <span>USMLE Step 1 &amp; 2</span><span>NCLEX-RN</span><span>Nursing · Medical · Resident</span><span>Works offline</span>
+  </div>
+
+  <div class="stage" aria-label="Rounds Codex app screens">
+    <figure class="phone side l"><img src="assets/condition-guide.webp" alt="Rounds Codex condition guide" loading="lazy"></figure>
+    <figure class="phone c"><img src="assets/app-library.webp" alt="Rounds Codex medical library" loading="lazy"></figure>
+    <figure class="phone side r"><img src="assets/gallery-detail.webp" alt="Rounds Codex image gallery" loading="lazy"></figure>
+  </div>
+  <svg class="ecg" viewBox="0 0 640 60" aria-hidden="true"><path d="M0 30h150l20-2 14-24 24 50 22-40 16 16h96l20-2 14-22 22 46 22-38 18 16h130"/></svg>
+</section>
+
+<section class="features wrap">
+  <h2>Everything you need, in one app.</h2>
+  <p class="sub">A clinical study atlas — written and illustrated by a practicing physician.</p>
+  <div class="grid">
+    <div class="card"><span class="ic">🎯</span><div><b>1,000+ original illustrations</b><p>Full-page medical artwork built to make the highest-yield material stick.</p></div></div>
+    <div class="card"><span class="ic">🩺</span><div><b>183 medical conditions</b><p>Nursing, Medical, and Resident views across 25 medical &amp; surgical specialties.</p></div></div>
+    <div class="card"><span class="ic">📝</span><div><b>1,820 board-style quizzes</b><p>1,010 USMLE-style and 150 NCLEX-style questions with teaching rationales.</p></div></div>
+    <div class="card"><span class="ic">💊</span><div><b>300-drug pharmacy guide</b><p>Dosing, indications, and clinical pearls for 300 essential drugs.</p></div></div>
+    <div class="card"><span class="ic">🎧</span><div><b>Audio mode</b><p>Medical lessons to listen and learn — study hands-free on your commute or between rotations.</p></div></div>
+    <div class="card"><span class="ic">🧮</span><div><b>Medical calculators</b><p>Multipurpose bedside calculators for the clinical formulas you use every day.</p></div></div>
+    <div class="card"><span class="ic">🔄</span><div><b>470 clinical updates</b><p>Ongoing guideline updates so your knowledge stays current, automatically.</p></div></div>
+    <div class="card"><span class="ic">🔒</span><div><b>Private by design</b><p>Works completely offline. No account required. No ads. No tracking.</p></div></div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="creator">
+    <div class="mono" aria-hidden="true">JK</div>
+    <div class="who">
+      <div class="lbl">Created by</div>
+      <div class="nm">Joshua Kreithen, MD</div>
+      <div class="cred">Board-Certified Plastic Surgeon · clinical content reviewed for medical accuracy</div>
+    </div>
+  </div>
+</div>
+
+<section class="final">
+  <h2>Get it free. Keep it free — for life.</h2>
+  <p>Rounds Codex becomes a paid subscription app soon. Download it while it's free and you'll never pay a subscription — your full access stays free for life. Start crushing your exams and clinical rotations today.</p>
+  <a class="badge" id="dl-final" href="#" aria-label="Download on the App Store">
+    <svg viewBox="0 0 240 72" role="img" aria-label="Download on the App Store" xmlns="http://www.w3.org/2000/svg">
+      <rect x="1" y="1" width="238" height="70" rx="14" fill="#fff" stroke="#00000022"/>
+      <path fill="#000" d="M47.6 37.3c0-4 3.3-6 3.5-6.1-1.9-2.8-4.9-3.2-6-3.2-2.5-.3-4.9 1.5-6.2 1.5-1.3 0-3.2-1.5-5.3-1.4-2.7 0-5.2 1.6-6.6 4-2.8 4.9-.7 12.1 2 16.1 1.3 2 2.9 4.2 4.9 4.1 2-.1 2.7-1.3 5.1-1.3s3 1.3 5.1 1.2c2.1 0 3.4-2 4.7-4 1.5-2.3 2.1-4.5 2.1-4.6-.1 0-4.1-1.6-4.1-6.3zM43.7 25.6c1.1-1.3 1.8-3.2 1.6-5-1.6.1-3.5 1-4.6 2.3-1 1.1-1.9 3-1.6 4.8 1.7.1 3.5-.9 4.6-2.1z"/>
+      <text x="66" y="28" fill="#000" font-family="Inter,Helvetica,Arial,sans-serif" font-size="11" font-weight="500">Download on the</text>
+      <text x="65" y="52" fill="#000" font-family="Inter,Helvetica,Arial,sans-serif" font-size="25" font-weight="600" letter-spacing="-0.5">App Store</text>
+    </svg>
+  </a>
+</section>
+
+<footer>
+  <nav class="social" aria-label="Rounds Codex on social media">
+    <a href="https://instagram.com/roundscodex" target="_blank" rel="me noopener noreferrer" aria-label="Rounds Codex on Instagram">
+      <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.66 1.34 1.07 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38.66-.67 1.07-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.13-.67-.66-1.34-1.07-2.13-1.38-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm6.41-10.85a1.44 1.44 0 1 0 1.44 1.44 1.44 1.44 0 0 0-1.44-1.44z"/></svg>
+    </a>
+    <a href="https://tiktok.com/@roundscodex" target="_blank" rel="me noopener noreferrer" aria-label="Rounds Codex on TikTok">
+      <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+    </a>
+    <a href="https://x.com/roundscodex" target="_blank" rel="me noopener noreferrer" aria-label="Rounds Codex on X (Twitter)">
+      <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M18.9 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.152h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+    </a>
+    <a href="https://facebook.com/roundscodex" target="_blank" rel="me noopener noreferrer" aria-label="Rounds Codex on Facebook">
+      <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+    </a>
+    <a href="https://reddit.com/u/roundscodex" target="_blank" rel="me noopener noreferrer" aria-label="Rounds Codex on Reddit">
+      <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M24 11.779c0-1.459-1.192-2.645-2.657-2.645-.715 0-1.363.286-1.84.746-1.81-1.191-4.259-1.949-6.971-2.046l1.483-4.669 4.016.941-.006.058c0 1.193.975 2.163 2.174 2.163 1.198 0 2.172-.97 2.172-2.163s-.975-2.164-2.172-2.164c-.92 0-1.704.574-2.021 1.379l-4.482-1.05c-.183-.043-.372.063-.435.242l-1.66 5.222c-2.762.07-5.256.829-7.096 2.036-.475-.454-1.119-.738-1.83-.738C1.192 9.135 0 10.32 0 11.779c0 1.079.635 1.986 1.541 2.404-.021.171-.032.35-.032.518 0 3.481 4.062 6.312 9.055 6.312s9.055-2.831 9.055-6.312c0-.168-.011-.347-.032-.518.906-.418 1.541-1.325 1.541-2.404zM6.174 13.582c0-.796.646-1.442 1.443-1.442.795 0 1.44.646 1.44 1.442 0 .796-.645 1.441-1.44 1.441-.797.001-1.443-.645-1.443-1.441zm8.373 4.229c-.98.98-2.865 1.058-3.421 1.058-.557 0-2.44-.078-3.42-1.058-.145-.146-.145-.383 0-.529.146-.145.383-.145.529 0 .616.616 1.938.835 2.891.835.953 0 2.276-.219 2.892-.835.146-.145.383-.145.529 0 .145.146.145.383 0 .529zm-.365-2.788c-.795 0-1.44-.645-1.44-1.441 0-.796.646-1.442 1.44-1.442.797 0 1.443.646 1.443 1.442 0 .796-.646 1.441-1.443 1.441z"/></svg>
+    </a>
+    <a href="https://youtube.com/@roundscodex" target="_blank" rel="me noopener noreferrer" aria-label="Rounds Codex on YouTube">
+      <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+    </a>
+  </nav>
+  Created by Joshua Kreithen, MD, a board-certified plastic surgeon · Clinical content reviewed for medical accuracy.<br>
+  A study aid for students, not medical advice. Does not replace clinical judgment or your institution's protocols.<br>
+  © 2026 Rounds Codex · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a>
+</footer>
+</main>
+
+<script>
+// On approval, set this to the real App Store URL. It repoints every download
+// button AND the structured-data downloadUrl/installUrl — one place to edit.
+const RC_APPSTORE_URL = ""; // e.g. "https://apps.apple.com/app/id0000000000"
+if (RC_APPSTORE_URL) {
+  document.querySelectorAll("#dl-hero,#dl-final").forEach(a => { a.href = RC_APPSTORE_URL; });
+  try {
+    const ld = document.getElementById("ld-graph");
+    const data = JSON.parse(ld.textContent);
+    const app = data["@graph"].find(n => n["@type"] === "SoftwareApplication");
+    if (app) { app.downloadUrl = RC_APPSTORE_URL; app.installUrl = RC_APPSTORE_URL; }
+    ld.textContent = JSON.stringify(data);
+  } catch (e) { /* structured data stays on the canonical URL fallback */ }
+}
+</script>
+</body>
+</html>
