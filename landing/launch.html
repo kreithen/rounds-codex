@@ -3,20 +3,45 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<!-- STAGING: post-App-Store-approval homepage. Not linked from the live site.
-     On approval: (1) set RC_APPSTORE_URL below to the real App Store link,
-     (2) swap the placeholder badge for Apple's official badge asset,
-     (3) promote this file to index.html and deploy. -->
+<!-- ============================================================================
+     STAGING: post-App-Store-approval homepage. Not linked from the live site.
+     THREE steps to go live (nothing else needs editing — SEO is already baked in):
+       (1) DELETE the `<meta name="robots" content="noindex, nofollow">` line below.
+       (2) Set RC_APPSTORE_URL at the bottom of the file to the real App Store link.
+           That one constant repoints every download button AND the structured-data
+           downloadUrl/installUrl automatically.
+       (3) Swap the placeholder App Store badge SVG for Apple's official badge asset.
+       (4) Promote llms.launch.txt to llms.txt (AI-crawler summary for the live app).
+     Then promote this file to index.html and deploy (and bump sitemap.xml lastmod).
+     ============================================================================ -->
 <title>Rounds Codex | Download the Medical Education App — Free on the App Store</title>
-<meta name="description" content="Rounds Codex is a visual medical education app for USMLE &amp; NCLEX — 1,800+ board-style questions, a clinical image atlas, 300-drug pharmacology, calculators, and more. Download free on the App Store.">
-<meta name="robots" content="noindex, nofollow"><!-- staging; remove when promoted to index.html -->
+<meta name="description" content="Rounds Codex is a visual medical education app for USMLE &amp; NCLEX — 1,800+ board-style questions, a clinical image atlas, 300-drug pharmacology, calculators, audio lessons, and more. Free on the App Store, built by a practicing physician.">
+<meta name="keywords" content="medical education app,USMLE prep app,NCLEX practice questions,NGN NCLEX-RN,USMLE Step 1 practice,USMLE Step 2 CK,medical student study app,nursing student app,resident medical reference,medical image atlas,clinical image gallery,pharmacology drug reference,board review app,free medical app,medical calculators,perioperative education,visual medical learning">
+<meta name="author" content="Rounds Codex">
+<meta name="robots" content="noindex, nofollow"><!-- STAGING ONLY — delete this line at go-live (step 1 above). -->
 <link rel="canonical" href="https://roundscodex.com/">
+<!-- Open Graph -->
 <meta property="og:title" content="Rounds Codex | Free Medical Education App for USMLE &amp; NCLEX">
-<meta property="og:description" content="1,800+ board-style questions, a clinical image atlas, 300-drug pharmacology, calculators, and audio. Download free on the App Store.">
+<meta property="og:description" content="1,800+ board-style questions, a clinical image atlas, 300-drug pharmacology, calculators, and audio lessons. Download free on the App Store.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://roundscodex.com/">
+<meta property="og:site_name" content="Rounds Codex">
+<meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://roundscodex.com/assets/og-cover.jpg">
+<meta property="og:image:secure_url" content="https://roundscodex.com/assets/og-cover.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rounds Codex — a visual medical education app for USMLE and NCLEX, free on the App Store">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rounds Codex | Free Medical Education App for USMLE &amp; NCLEX">
+<meta name="twitter:description" content="1,800+ board-style questions, a clinical image atlas, 300-drug pharmacology, calculators, and audio lessons. Download free on the App Store.">
+<meta name="twitter:image" content="https://roundscodex.com/assets/og-cover.jpg">
+<meta name="twitter:image:alt" content="Rounds Codex — a visual medical education app for USMLE and NCLEX">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="Rounds Codex">
 <meta name="theme-color" content="#050813">
 <meta name="color-scheme" content="dark">
 <style>
@@ -78,6 +103,31 @@ footer{text-align:center;color:#68758c;font-size:.78rem;padding:2.5rem 1.5rem 3.
 footer a{color:#8ea6c6;text-decoration:underline;text-underline-offset:2px}
 @media(max-width:640px){.stage{min-height:300px}.dl-row{gap:.7rem}}
 </style>
+
+<!-- ===== Structured data (SEO + AI answer engines) =====================
+     downloadUrl / installUrl below are patched from RC_APPSTORE_URL at load
+     (see script at end of file), so the App Store link lives in ONE place. -->
+<script type="application/ld+json" id="ld-graph">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://roundscodex.com/#org","name":"Rounds Codex","url":"https://roundscodex.com/","logo":{"@type":"ImageObject","url":"https://roundscodex.com/assets/rounds-codex-logo.webp","width":1400,"height":447},"description":"Visual medical education for nursing students, medical students, and residents, created by a practicing physician.","knowsAbout":["Medical education","Nursing education","NCLEX-RN preparation","USMLE preparation","Clinical pharmacology","Medical imaging","Perioperative care"]},
+{"@type":"WebSite","@id":"https://roundscodex.com/#website","url":"https://roundscodex.com/","name":"Rounds Codex","publisher":{"@id":"https://roundscodex.com/#org"},"inLanguage":"en-US"},
+{"@type":"WebPage","@id":"https://roundscodex.com/#webpage","url":"https://roundscodex.com/","name":"Rounds Codex | Download the Medical Education App — Free on the App Store","isPartOf":{"@id":"https://roundscodex.com/#website"},"about":{"@id":"https://roundscodex.com/#app"},"primaryImageOfPage":{"@type":"ImageObject","url":"https://roundscodex.com/assets/og-cover.jpg","width":1200,"height":630},"inLanguage":"en-US","description":"Download Rounds Codex free on the App Store: a visual medical education app for USMLE and NCLEX with 1,800+ board-style questions, a clinical image atlas, 300-drug pharmacology, medical calculators, and audio lessons."},
+{"@type":"SoftwareApplication","@id":"https://roundscodex.com/#app","name":"Rounds Codex","applicationCategory":"MedicalApplication","applicationSubCategory":"Medical Education","operatingSystem":"iOS","url":"https://roundscodex.com/","downloadUrl":"https://roundscodex.com/","installUrl":"https://roundscodex.com/","publisher":{"@id":"https://roundscodex.com/#org"},"author":{"@id":"https://roundscodex.com/#org"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Rounds Codex is a visual medical education app for USMLE and NCLEX — with clinical condition guides, a medical image atlas, 300-drug pharmacology, 1,800+ board-style practice questions, medical calculators, and audio lessons. Free on the App Store, created by a practicing physician.","featureList":["1,000+ original medical illustrations","183 condition guides across 25 specialties","1,820 USMLE- and NCLEX-style practice questions","300-drug pharmacology reference","Audio lessons for hands-free study","Medical calculators","Expert-curated medical image galleries","Works offline, no account required"],"audience":[{"@type":"EducationalAudience","educationalRole":"Nursing student"},{"@type":"EducationalAudience","educationalRole":"Medical student"},{"@type":"EducationalAudience","educationalRole":"Medical resident"}]}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","@id":"https://roundscodex.com/#faq","mainEntity":[
+{"@type":"Question","name":"What is Rounds Codex?","acceptedAnswer":{"@type":"Answer","text":"Rounds Codex is a visual medical education app for nursing students, medical students, and residents. It brings condition and disease guides, a 300-drug pharmacology reference, expert-curated image galleries, board-style exam practice, audio lessons, and medical calculators together into one clinical learning system."}},
+{"@type":"Question","name":"How much does Rounds Codex cost?","acceptedAnswer":{"@type":"Answer","text":"Rounds Codex is free to download on the App Store."}},
+{"@type":"Question","name":"What devices does it run on?","acceptedAnswer":{"@type":"Answer","text":"Rounds Codex is available on iOS. Download it free from the Apple App Store. It works offline once installed and requires no account."}},
+{"@type":"Question","name":"What exams does it help me prepare for?","acceptedAnswer":{"@type":"Answer","text":"NGN-style NCLEX-RN practice for nursing students and blueprint-weighted USMLE-style practice for medical students, including USMLE Step 1 and Step 2 CK, each with explanations written to teach the clinical reasoning—not just score the answer."}},
+{"@type":"Question","name":"What makes it different from other study apps?","acceptedAnswer":{"@type":"Answer","text":"It is visual-first. Every condition pairs concise clinical text with expert-curated image galleries, and the practice questions connect back to those same libraries—so learning, understanding, and recall all live in one place. It also includes audio lessons and bedside medical calculators."}},
+{"@type":"Question","name":"How many questions and illustrations does it include?","acceptedAnswer":{"@type":"Answer","text":"Rounds Codex includes 1,820 board-style practice questions, 1,000+ original medical illustrations, 183 condition guides across 25 specialties, and a 300-drug pharmacology reference."}},
+{"@type":"Question","name":"Who creates the content in Rounds Codex?","acceptedAnswer":{"@type":"Answer","text":"Rounds Codex is created by a practicing physician, with clinical content and imagery reviewed for medical accuracy. It is an educational resource and does not replace clinical judgment or your institution's protocols."}},
+{"@type":"Question","name":"Does it require an account or an internet connection?","acceptedAnswer":{"@type":"Answer","text":"No. Rounds Codex works completely offline after download, requires no account, and includes no ads and no tracking."}},
+{"@type":"Question","name":"Does it replace clinical judgment?","acceptedAnswer":{"@type":"Answer","text":"No. Rounds Codex is an educational study aid for students. It does not replace clinical judgment, supervision, or your institution's protocols."}}
+]}
+</script>
 </head>
 <body>
 <header><a href="/" aria-label="Rounds Codex"><img src="assets/rounds-codex-logo-clear.png" alt="Rounds Codex" width="1400" height="447"></a></header>
@@ -86,7 +136,7 @@ footer a{color:#8ea6c6;text-decoration:underline;text-underline-offset:2px}
 <section class="hero wrap">
   <div class="eyebrow"><span class="dot" aria-hidden="true"></span>On the App Store · Free to download</div>
   <h1>Learn.<br><span class="u">Understand.</span><br>Succeed.</h1>
-  <p class="lede">The all-in-one medical education app for <b>USMLE</b> &amp; <b>NCLEX</b> — a visual clinical atlas, board-style practice, pharmacology, and calculators, built by practicing clinicians.</p>
+  <p class="lede">The all-in-one medical education app for <b>USMLE</b> &amp; <b>NCLEX</b> — a visual clinical atlas, board-style practice, pharmacology, and calculators, built by a practicing physician.</p>
 
   <div class="dl-row">
     <div class="dl-free">Download for Free!</div>
@@ -115,7 +165,7 @@ footer a{color:#8ea6c6;text-decoration:underline;text-underline-offset:2px}
 
 <section class="features wrap">
   <h2>Everything you need, in one app.</h2>
-  <p class="sub">A clinical study atlas — written and illustrated by a team of practicing clinicians.</p>
+  <p class="sub">A clinical study atlas — written and illustrated by a practicing physician.</p>
   <div class="grid">
     <div class="card"><span class="ic">🎯</span><div><b>1,000+ original illustrations</b><p>Full-page medical artwork built to make the highest-yield material stick.</p></div></div>
     <div class="card"><span class="ic">🩺</span><div><b>183 medical conditions</b><p>Nursing, Medical, and Resident views across 25 medical &amp; surgical specialties.</p></div></div>
@@ -142,16 +192,25 @@ footer a{color:#8ea6c6;text-decoration:underline;text-underline-offset:2px}
 </section>
 
 <footer>
-  A study aid for students. Not medical advice.<br>
+  Created by a practicing physician · Clinical content reviewed for medical accuracy.<br>
+  A study aid for students, not medical advice. Does not replace clinical judgment or your institution's protocols.<br>
   © 2026 Rounds Codex · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a>
 </footer>
 </main>
 
 <script>
-// On approval, set this to the real App Store URL and every download button points there.
+// On approval, set this to the real App Store URL. It repoints every download
+// button AND the structured-data downloadUrl/installUrl — one place to edit.
 const RC_APPSTORE_URL = ""; // e.g. "https://apps.apple.com/app/id0000000000"
 if (RC_APPSTORE_URL) {
   document.querySelectorAll("#dl-hero,#dl-final").forEach(a => { a.href = RC_APPSTORE_URL; });
+  try {
+    const ld = document.getElementById("ld-graph");
+    const data = JSON.parse(ld.textContent);
+    const app = data["@graph"].find(n => n["@type"] === "SoftwareApplication");
+    if (app) { app.downloadUrl = RC_APPSTORE_URL; app.installUrl = RC_APPSTORE_URL; }
+    ld.textContent = JSON.stringify(data);
+  } catch (e) { /* structured data stays on the canonical URL fallback */ }
 }
 </script>
 </body>
