@@ -239,6 +239,30 @@ silently did not ship because the Mac's clone had not been pulled — build 2 we
 Connect without it and every command looked successful. `native/MAC-RUNBOOK.md` §3b and §3c carry
 the two greps and the one console line that catch that in seconds.
 
+## 0b. Apple asked for more information — Guideline 2.1, 2026-08-19
+
+**Not a rejection**, though App Store Connect labels the app "Rejected" while it is open. Apple
+wants a screen recording made on a physical device plus seven written answers, replied in
+Resolution Center. Build, metadata and screenshots are untouched; no rebuild is needed.
+
+The drafted reply covers all seven items. Two deliberate choices in it: item 1 states plainly that
+accounts, purchases, user-generated content and permission prompts **do not exist** in this app,
+which closes four of Apple's sub-questions rather than leaving a reviewer to infer it from a video;
+and item 5 discloses the authoring-time use of generative AI even though the question asks about
+runtime services, because the App Review notes and the in-app About page both already say it and an
+omission would read as an inconsistency.
+
+**The trap here was nearly walking into it.** The physician's phone was still running the build
+Xcode installed *before* the safe-area fixes, so a screen recording made on it would have shown
+Apple the header under the clock. Build 4 went onto the device through **TestFlight internal
+testing** instead — create an internal group, add yourself, add the build; no beta review, no wait —
+and the header was confirmed correct on real hardware before recording. **Check which build is on
+the device before recording anything for Apple.**
+
+Also surfaced while checking the URLs: the EU **Digital Services Act trader status** is not
+provided, so the app cannot be sold in the EU until it is. Needs a verified business address and
+phone. Deferred deliberately; does not affect review or a US release.
+
 ## 4. Build work
 
 - [x] **The native shell.** **BUILT, ARCHIVED, VALIDATED AND UPLOADED — 2026-08-17.** Version 1.0
