@@ -32,7 +32,8 @@
 - Works offline after download; no account required.
 
 ## Pricing
-- Free to download on the App Store.
+- Free to download on the App Store right now.
+- Rounds Codex will become a paid subscription app soon. Anyone who downloads it while it is free keeps full access free for life and never pays a subscription (early users are grandfathered in).
 
 ## Links
 - Home / download: https://roundscodex.com/
