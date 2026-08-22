@@ -265,6 +265,26 @@ TestFlight, after deleting and reinstalling so the first-run disclaimer appears 
 App Store Connect caps that field at 4,000, which the first draft (5,252) exceeded; nothing was
 dropped to fit, only tightened.
 
+**REPLYING DOES NOT RE-QUEUE THE SUBMISSION. It sat for three days before anyone noticed.**
+The reply went in on 19 Aug at 10:12 PM and nothing happened: no Apple response, no status change,
+Status History still ending at Wednesday's *Rejected*. The message is recorded against the
+submission, but the submission itself stays parked until the developer pushes it back.
+
+Two tells that it is parked rather than queued, both readable in seconds:
+  - **Status History gains no new entry** after the reply
+  - the submission page still says **Unresolved Issues**, and your own message is the newest one
+
+Getting it back in the queue is **three steps, not one**, and each looks final on its own:
+  1. version page (Safari, desktop site) -> **Update Review**  ->  status becomes *Ready for Review*
+  2. submission page -> **Resubmit to App Review**  ->  status becomes *Waiting for Review*
+  3. only *Waiting for Review* means Apple actually has it
+
+The App Store Connect **iOS app cannot do this** -- it shows status but has no Update Review
+button. Safari with Request Desktop Website is the only route from a phone.
+
+Also on that page: the red **Reject** button means *withdraw your own submission*. It is not related
+to Apple's rejection and should never be tapped by mistake.
+
 Also surfaced while checking the URLs: the EU **Digital Services Act trader status** is not
 provided, so the app cannot be sold in the EU until it is. Needs a verified business address and
 phone. Deferred deliberately; does not affect review or a US release.
