@@ -285,6 +285,25 @@ button. Safari with Request Desktop Website is the only route from a phone.
 Also on that page: the red **Reject** button means *withdraw your own submission*. It is not related
 to Apple's rejection and should never be tapped by mistake.
 
+**THE APP'S OWN PRIVACY TEXT TRIPS APPLE'S AUTOMATED LOGIN SCANNER.** Second rejection, 2026-08-24,
+2.1.0 again and explicitly automated: *"An automated analysis of the submission indicates the app may
+include a login but was submitted without a demo account."*
+
+It is a false positive and the cause is worth knowing, because it will happen on every future
+submission. Scanning the shipped `index.html` for every auth-related string returns only these:
+
+  - Privacy page: "This app has no accounts. You are not asked to register, sign in or give an
+    email address..."
+  - Privacy page: "There is no account and no sign-in, so we hold nothing about you at all."
+  - the build comment "the login wall is removed for the App Store build"
+
+No authentication code, no sign-in UI, no auth network call. The scanner matched "sign in" and
+"account" inside sentences **denying** they exist. Explaining that specifically -- quoting the two
+sentences -- is a better reply than simply asserting there is no login.
+
+Apple's message requires the confirmation in **two** places: a Resolution Center reply *and* the
+Notes field in App Review Information. Do both, then Update Review -> Resubmit.
+
 Also surfaced while checking the URLs: the EU **Digital Services Act trader status** is not
 provided, so the app cannot be sold in the EU until it is. Needs a verified business address and
 phone. Deferred deliberately; does not affect review or a US release.
