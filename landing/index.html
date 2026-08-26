@@ -108,7 +108,15 @@ footer a{color:#8ea6c6;text-decoration:underline;text-underline-offset:2px}
   background:#122342a1;border:1px solid #58a6ff38;text-decoration:none;transition:transform .15s,background .15s,color .15s,border-color .15s}
 .social a:hover{transform:translateY(-2px);background:#18305a;color:#fff;border-color:#7ab4ff99}
 .social svg{width:19px;height:19px;fill:currentColor;display:block}
-@media(max-width:640px){.stage{min-height:300px}.dl-row{gap:.7rem}}
+@media(max-width:640px){
+  .dl-row{gap:.7rem}
+  .stage{min-height:auto;margin-top:2.4rem;gap:0;align-items:center}
+  .stage:before{inset:2% 14% 0}
+  .phone{flex:0 0 auto;width:60vw;height:120vw;aspect-ratio:auto;border-radius:34px;padding:7px;transform:none}
+  .phone img{border-radius:27px}
+  .phone.side{display:none}
+  .ecg{margin-top:1.8rem}
+}
 </style>
 
 <!-- ===== Structured data (SEO + AI answer engines) =====================
