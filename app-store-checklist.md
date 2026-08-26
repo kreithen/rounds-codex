@@ -215,7 +215,18 @@ build and the variant script rewrites the phrase. The web manifest keeps it and 
 - [x] Decide on "AI study tutor" in `manifest.webmanifest` — rewritten by `build_ios_variant.js`
       for iOS, since the feature is not in that build. The **web** manifest is unchanged and correct.
 
-## APPROVED — 2026-08-25, Pending Developer Release
+## LIVE ON THE APP STORE — 2026-08-26
+
+**Rounds Codex: Clinical Atlas, iOS 1.0 (build 4), released.** Free, no IAP, 16+, Medical/Education,
+Data Not Collected, no account, 826 MB, iPhone and iPad, fully offline.
+
+Released quietly and deliberately: live on the store, announced to nobody. The launch work is in
+`marketing-brief.md` (refreshed the same week) and `marketing/faculty-outreach-email.md`.
+
+Eight days from a repo with no Xcode project in it to a shipped App Store app. Four builds, five
+device-only bugs, three passes through review, two web deploys.
+
+## ~~APPROVED — 2026-08-25~~, Pending Developer Release
 
 **Rounds Codex: Clinical Atlas, iOS 1.0 (build 4), approved by App Review.** Waiting on the
 physician to press Release This Version; manual release was chosen deliberately.
