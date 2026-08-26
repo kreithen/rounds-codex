@@ -1,7 +1,18 @@
 # Marketing brief — start here
 
 **This file is the handoff.** It exists so a session that has never seen the build conversations can
-pick up marketing without re-deriving anything. Written 2026-08-05 at v67 (95 galleries).
+pick up marketing without re-deriving anything. Written 2026-08-05 at v67 (95 galleries);
+**numbers and asset list refreshed 2026-08-25, the day the iOS app was approved.**
+
+> ## THE APP IS APPROVED — 2026-08-25
+> **Rounds Codex: Clinical Atlas, iOS 1.0 (build 4)**, free, no IAP, 16+, Medical/Education,
+> **Data Not Collected**, no account. Released quietly the same day: live on the App Store, but not
+> announced to anyone. That is deliberate — it gives a real product page to look at and screenshot
+> before any launch push.
+>
+> Everything below that says "does not exist yet" was written before this. The App Store listing,
+> the screenshots, the privacy page and the support page all exist now. What is still missing is
+> further down, under **Assets**.
 
 Read `CLAUDE.md` first for how the project works, then this. Two other files are **canonical for
 their own subjects — read them, don't restate them**, or the copy will drift:
@@ -24,34 +35,45 @@ from first year through residency. It ships as a website today and as an iOS app
 
 ## Verified inventory — use these numbers, don't estimate
 
-Read out of the shipped content on 2026-08-05. **Re-read them before any campaign** with
-`python3 scripts/gen_gallery_gap.py` and the counts in `content/*.json`; they move most weeks.
+**Derived from the shipped content on 2026-08-25** with `node scripts/read_shipped_counts.js
+<web-clone>`, which reads `content/*.json` and the USMLE banks and prints every figure below. Run it
+before any campaign — do not copy a number out of an old draft, including this one.
 
 | | count |
 |---|---:|
-| conditions | 181, across 21 specialties |
-| illustrated galleries | 95 — **950 original full-page illustrations** |
-| quiz questions | 1,820 — a quiz on every single condition |
+| conditions | **183**, across 21 specialties |
+| conditions awaiting review (`verified:false`) | **0** — cleared at v130, so RC VERIFIED is uniform |
+| illustrated galleries | **102** — **1,020 original full-page illustrations** |
+| quiz questions | **1,840** — a quiz on every single condition, 0 without |
 | USMLE-style items | 1,010 (Step 1 280, Step 2 CK 318, Step 3 Day 1 232, Day 2 180), 197 illustrated |
 | NCLEX-style items | 150 |
 | drug entries | 300 |
 | clinical calculators | 10 |
 | clinical guideline updates | 470, across 25 specialties |
 | resident-level entries | 1,418 |
-| narrated recordings | 13, with CarPlay support |
+| narrated recordings | **31**, with CarPlay support |
 
-The number that does the most work in a headline is **950 original illustrations**. Nobody else in
+The number that does the most work in a headline is **1,020 original illustrations**. Nobody else in
 this category draws their own.
+
+**The housekeeping item that used to sit under the claims policy is closed.** All 183 conditions
+carry the RC VERIFIED badge as of v130, so a site-wide "clinically reviewed" claim no longer sits
+next to three unbadged modules.
 
 ## Positioning
 
-**"Written and illustrated by a practising physician."** That is the whole differentiator and it is
-true. Competitors license stock art and crowdsource questions; every illustration and every question
-here has one clinical author.
+**"Designed and clinically reviewed by a team of clinicians — and every illustration is original."**
+That is the differentiator. Competitors license stock art and crowdsource questions; here the
+artwork and the questions were specified and reviewed by the clinicians who designed the curriculum.
+
+*(This line used to read "Written and illustrated by a practising physician." It was superseded by
+the attribution rule below on 2026-08-09 and the verb change on 2026-08-17, but the headline was
+never updated to match — an inconsistency inside this file. Fixed 2026-08-25. **The rule below is
+the authority; this line now follows it.**)*
 
 Three supporting claims, in order of strength:
 
-1. **Original artwork at a scale nobody matches.** 950 pages, one visual system, zoomable, offline.
+1. **Original artwork at a scale nobody matches.** 1,020 pages, one visual system, zoomable, offline.
 2. **One library across the whole training arc.** The three-mode switch is unusual — a student buys
    it in nursing school or M1 and it is still the right app in residency.
 3. **No tracking, no account, no analytics.** Genuinely rare in this category and provable from the
@@ -95,10 +117,9 @@ different claims.** Attributing *design* to an advisor who only reviewed would o
 part. "Designed and clinically reviewed by a team of clinicians" covers both without assigning
 either to a named individual, and stays true whether the group is two or twelve.
 
-**One housekeeping item before the claim goes public:** 3 of 183 conditions still ship
-`verified:false` (`metabolic-syndrome`, `hip-fracture`, `back-pain`) and so carry no RC VERIFIED
-badge. A site-wide "clinically reviewed" claim next to three unbadged modules is an inconsistency a
-careful reader can find. Clear those three and the claim is uniform.
+~~**One housekeeping item before the claim goes public:** 3 of 183 conditions still ship
+`verified:false`.~~ **Closed at v130, 2026-08-17** — 183/183 verified, the badge is uniform, and the
+claim can go out without that inconsistency.
 
 **`manifest.webmanifest` is fine as written** — it says "clinically-reviewed conditions" and that is
 now the approved wording. It was previously flagged as an overclaim on the submission checklist;
@@ -150,7 +171,13 @@ Reasoning for each is in `app-store-plan.md`.
 
 **Exists and is good**
 
-- 950 illustration pages — the entire content library is a marketing asset. Any single page is a
+- **The App Store listing, live since 2026-08-25** — name, subtitle, description, keywords, 16
+  screenshots (8 iPhone 6.9", 8 iPad 13"). The strings are in `app-store-submission-draft.md`.
+  **Name, subtitle, description, keywords and screenshots are now frozen until a new version goes
+  through review.** Only **Promotional Text** is editable freely — treat it as the one live field.
+- **A privacy page and a support page**, both live, both linked from the listing. The blocker this
+  file recorded is closed.
+- 1,020 illustration pages — the entire content library is a marketing asset. Any single page is a
   social post.
 - **Share links across six route families** — `/c/<id>` condition, `/s/<slug>` section,
   `/g/<id>` gallery, `/g/` gallery index, `/r/<spec>-<year>` guidelines, `/u/` clinical updates,
@@ -159,10 +186,16 @@ Reasoning for each is in `app-store-plan.md`.
 
 **Does not exist yet**
 
-- `roundscodex.com` — no support page, no privacy page. **The privacy URL is a hard blocker on the
-  App Store form.**
-- Screenshots — the plan and captions are in the submission draft; nothing is shot.
 - Any social account, list, or landing page.
+- **A campaign of any kind.** The app is live and unannounced.
+
+**And one thing that turned out to exist but not the way this file assumed.** `roundscodex.com` is a
+**separate Netlify site** (project `roundscodexwebsite`) — a marketing site with its own privacy
+page. It is *not* the app. `rounds-codex.netlify.app` is the app, and that is where the listing's
+support and privacy URLs point, because those are the pages that describe the binary. Consequence
+for marketing: **the domain everyone will type is not the product**, and a `/c/<id>` share link on
+the custom domain does not resolve. Deciding which host the app lives on is a real decision and it
+is on the 1.0.1 list in `app-store-checklist.md`.
 
 ### The biggest owned-channel gap, found 2026-08-05
 
@@ -219,15 +252,33 @@ retention, territory mix. A conversion target invented without that is a guess.
 
 ---
 
-## Suggested first moves for the marketing session
+## First moves — rewritten 2026-08-25, post-approval
 
-1. Read `app-store-submission-draft.md` end to end. The listing is the campaign.
-2. Stand up `roundscodex.com` with a landing page, `/privacy` and `/support`. Privacy blocks the
-   submission form.
-3. Scope the og-tag work honestly — decide prerendered per-route cards vs. one good site-wide card
-   as a first step.
-4. Draft the faculty outreach email. One page, links to the free app, no marketing voice.
-5. Plan the eight screenshots from the captions already written.
+Items 1, 2 and 5 of the old list are done: the listing is written and live, privacy and support
+pages exist, and sixteen screenshots are shot and uploaded. What remains, in order of leverage:
+
+1. **Fix link previews.** Still the highest-value owned-channel work and still untouched — checked
+   again on 2026-08-25 and the head has six meta tags, all viewport and theme-colour. No `og:`, no
+   `twitter:`, no `<meta name="description">`. Every share the product already offers renders as a
+   grey URL. See the scoping note below.
+2. **Decide the `noindex` question** — it is now a launch decision rather than a pre-launch default,
+   and it is entangled with the copyright filing. See below.
+3. **Faculty outreach.** Draft is at `marketing/faculty-outreach-email.md`. Slow, unglamorous,
+   delivers cohorts, and the free period is the moment.
+4. **Custom Product Pages** — one nursing, one medical. Free, and their conversion rates are the
+   only read on audience mix available without an account.
+5. **Settle the domain**, because every other channel eventually points at a URL.
+
+### The `noindex` decision, which is not just marketing
+
+`robots.txt` blocks all crawlers and `_headers` sends `X-Robots-Tag: noindex` sitewide. Both were
+deliberate while pre-launch. Removing them is what lets 1,020 pages of original medical artwork
+begin ageing into search results — channel 4 below, and the only one that compounds.
+
+**But `legal/README.md` records that removing `noindex` very likely starts the three-month §412
+window for statutory damages, and that window never reopens.** So this is not a marketing call to
+make alone: it trades SEO ageing against a copyright registration timeline. Read that file and
+decide deliberately.
 
 ## Working notes for whoever picks this up
 
