@@ -24,7 +24,7 @@ const SERVICE_ROLE = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
 const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY") ?? "";
 const FROM = Deno.env.get("WELCOME_FROM") ?? "Rounds Codex <hello@roundscodex.com>";
 const REPLY_TO = Deno.env.get("WELCOME_REPLY_TO") ?? "admin@roundscodex.com";
-const MAIL_ADDRESS = Deno.env.get("MAIL_ADDRESS") ?? "[mailing address]";
+const MAIL_ADDRESS = Deno.env.get("MAIL_ADDRESS") ?? "1 S School Ave #800, Sarasota, FL 34237";
 const FUNCTIONS_BASE = SUPABASE_URL + "/functions/v1";
 
 const CORS = {
