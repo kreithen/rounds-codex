@@ -225,9 +225,10 @@ surgery('privacy short version', () => {
   sub(
     "  key:'Rounds Codex has no analytics, no advertising and no trackers. The <b>website</b> is '+\n" +
     "      'invitation-only, so we hold the email address you sign in with and nothing else about you; '+\n" +
-    "      'the <b>iOS app</b> has no account at all and we hold nothing. On both, your bookmarks, quiz '+\n" +
-    "      'progress and practice history stay <b>on your device</b>. The one exception is described '+\n" +
-    "      'below: if you use Ask Rounds Codex, your question is sent to us so it can be answered.',",
+    "      'the <b>iOS and Android apps</b> have no account at all and we hold nothing. In every case, '+\n" +
+    "      'your bookmarks, quiz progress and practice history stay <b>on your device</b>. The one '+\n" +
+    "      'exception is described below: if you use Ask Rounds Codex, your question is sent to us so '+\n" +
+    "      'it can be answered.',",
     "  key:'Rounds Codex has no analytics, no advertising and no trackers. There is no account and no '+\n" +
     "      'sign-in, so we hold nothing about you at all. Your bookmarks, quiz progress and practice '+\n" +
     "      'history stay <b>on your device</b>. The one exception is described below: if you use Ask '+\n" +
@@ -394,9 +395,9 @@ const checks = [
      build: the account controls, the subscription line and the deletion section. Checked by
      excluding the platform section and then requiring the rest to be clean. */
   ['no invitation copy left',
-   !/invitation/i.test(s.replace(/\{h:'The website and the iOS app'[\s\S]*?\]\},/, ''))],
+   !/invitation/i.test(s.replace(/\{h:'The website and the apps'[\s\S]*?\]\},/, ''))],
   ['the platform section survives',
-   /\{h:'The website and the iOS app', p:\[/.test(s)],
+   /\{h:'The website and the apps', p:\[/.test(s)],
   ['no "we hold your email"',     !/hold your email address/.test(s)],
   ['Clear my saved data intact',  /onclick="accountReset\(\)"/.test(s)],
   ['no supabase endpoint left',   !/supabase\.co/.test(s)],
