@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Rounds Codex — Play feature graphic 1024×500</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{background:#07203a}
+/* 1024x500 exactly. Play may crop this on some surfaces, so everything that matters
+   sits inside the centre; nothing important goes near an edge. */
+.canvas{position:relative;width:1024px;height:500px;overflow:hidden;color:#fff;
+  font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  /* The brand gradients from landing/social-*.html, but over a LIFTED navy base rather than the
+     near-black #020509 those use. Play's guidance is explicit that pure white, black or dark grey
+     blend into the store's own background -- so the graphic reads as deep blue, and the blue and
+     teal that identify the brand are pushed up rather than sitting on top of black. */
+  background:
+    radial-gradient(circle at 22% 8%, #00b3ff55, #0000 52%),
+    radial-gradient(circle at 86% 30%, #36e8b73d, #0000 46%),
+    radial-gradient(circle at 62% 104%, #2878ff4d, #0000 50%),
+    linear-gradient(150deg,#0a2c50,#071d33 55%,#061729)}
+/* NO separate ECG trace. The first version drew one full-width at 56% height; because most of an
+   ECG baseline is flat it rendered as a hairline ruling straight through the composition, between
+   the tagline and the stats, and read as a rendering artifact rather than a motif. The logo mark
+   already carries the ECG, so repeating it was redundant as well as ugly. The background gradients
+   carry the brand on their own. */
+.inner{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;text-align:center;padding:44px 96px}
+.logo{width:428px;height:auto;filter:drop-shadow(0 10px 30px #0009)}
+h1{margin-top:30px;font-size:44px;line-height:1.06;letter-spacing:-.025em;font-weight:800}
+h1 .u{color:#0000;background:linear-gradient(120deg,#8fe0ff,#4bf1b0);-webkit-background-clip:text;background-clip:text}
+.stats{margin-top:24px;font-size:22px;font-weight:600;color:#a9c2dd;letter-spacing:.005em}
+.stats b{color:#e8f4ff;font-weight:800}
+.dot{color:#4bf1b0;padding:0 .5rem;font-weight:800}
+</style></head>
+<body>
+<div class="canvas">
+  <div class="inner">
+    <img class="logo" src="assets/rounds-codex-logo-clear.png" alt="Rounds Codex">
+    <h1>Learn. <span class="u">Understand.</span> Succeed.</h1>
+    <div class="stats"><b>183</b> conditions<span class="dot">·</span><b>1,020</b> original illustrations<span class="dot">·</span>works <b>offline</b></div>
+  </div>
+</div>
+</body></html>

@@ -46,6 +46,9 @@ let docs = process.argv.slice(3).filter(a => !a.startsWith('--'));
 if (!docs.length) docs = [
   path.join(REPO, 'native', 'PLAY-LISTING-DRAFT.md'),
   path.join(REPO, 'app-store-submission-draft.md'),
+  /* The feature graphic has "183 conditions" and "1,020 original illustrations" painted into it.
+     A stale number there is worse than one in a document: it is a picture, so nobody re-reads it. */
+  path.join(REPO, 'native', 'play-graphics', 'feature-graphic.html'),
 ];
 
 /* ---- the truth, derived ------------------------------------------------------------------ */
@@ -83,7 +86,7 @@ const CLAIMS = [
      An exclusion that can be sidestepped by starting mid-number is not an exclusion. */
   ['conditions',              need('conditions'),                /(?<![\d,])(?<!audio for )([\d,]+) conditions\b/g],
   ['illustrated galleries',   need('galleries (real artwork)'),  /([\d,]+) illustrated galleries/g],
-  ['illustration pages',      need('illustration pages'),        /([\d,]+) original (?:full-page )?clinical illustrations/g],
+  ['illustration pages',      need('illustration pages'),        /([\d,]+) original (?:full-page )?(?:clinical )?illustrations/g],
   ['illustration titles',     need('illustration pages'),        /([\d,]+) illustration titles/g],
   ['quiz questions',          need('quiz questions'),            /([\d,]+) practice questions/g],
   ['USMLE items',             need('USMLE items'),               /([\d,]+) USMLE-style items/g],
@@ -109,7 +112,13 @@ for (const doc of docs) {
      231', and the first run flagged that quotation as a stale claim. Quoting an old string is not
      asserting it. Found by running the checker, which is the only way this class of false positive
      ever shows up. */
-  const text = fs.readFileSync(doc, 'utf8').replace(/"[^"\n]{0,200}"/g, ' ');
+  let text = fs.readFileSync(doc, 'utf8');
+  /* An HTML doc wraps its numbers in markup -- the feature graphic has "<b>183</b> conditions" --
+     so the patterns never match and every claim reports as absent, which looks like coverage and
+     is the opposite. Strip tags first. Caught by adding the graphic and seeing a clean run of
+     "absent" on a file that visibly quotes two of these counts. */
+  if (/\.html?$/i.test(doc)) text = text.replace(/<[^>]+>/g, '');
+  text = text.replace(/"[^"\n]{0,200}"/g, ' ');
   console.log(`\n=== ${path.relative(REPO, doc)} ===`);
   for (const [label, want, re] of CLAIMS) {
     const hits = [...text.matchAll(re)].map(m => Number(m[1].replace(/,/g, '')));
