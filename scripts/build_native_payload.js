@@ -47,8 +47,9 @@
  *                        the head and every anchor above reads the head. env(safe-area-inset-*) is
  *                        what Android WebView populates under edge-to-edge too, so the same block
  *                        serves both -- but only if the activity opts into display-cutout layout;
- *                        that is a Capacitor/Gradle setting, and belongs to the Android runbook
- *                        (HANDOFF-android-app.md 4.5, not written yet) rather than to this script.
+ *                        that is a Capacitor/Gradle setting and belongs to native/ANDROID-RUNBOOK.md
+ *                        section 3a, which measures how Capacitor 7 and 8 differ on it, rather than
+ *                        to this script.
  *
  * WHY THE DROPPING IS DERIVED, NOT GLOBBED. What stays is what measure_bundle.js resolves as
  * reachable -- not a pattern. This tree keeps gallery pages in at least four different shapes:

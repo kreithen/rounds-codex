@@ -286,6 +286,51 @@ warns if the plan is stale) and a new step writes the pack modules from the mani
 
 ### 4.5 Sixth — the Mac runbook for Android  *(session writes it; physician runs it)*
 
+> **DONE 2026-09-09 — `native/ANDROID-RUNBOOK.md`, 423 lines.** Written against the *published
+> Capacitor packages*, read in the container, not from memory: `@capacitor/android` 7.6.9 and 8.5.1
+> and both CLI project templates were downloaded and their Java and Gradle read directly. That
+> turned five of this section's ⚠ items into measured facts and **overturned two of them.**
+>
+> **Correction 1 — the skeleton below said Capacitor 7's template "may set 35" and that raising it
+> is a one-line edit.** It does set 35 (`minSdk 23 / compileSdk 35 / targetSdk 35`), Capacitor 8's
+> sets 36, and Play requires 36 for a new app — re-verified against Google's documentation this
+> session, including the 31 Aug 2026 deadline and that the extension route to 1 Nov 2026 covers
+> *updates*, not new apps. But it is **not one line**: Capacitor 7 pins AGP 8.7.2 and Gradle 8.11.1,
+> which predate API 36, so the edit drags the toolchain with it.
+>
+> **Correction 2 — §4.2 item 5's guess that `android.adjustMarginsForEdgeToEdge: "auto"` is "the
+> setting to try first" is WRONG for this app, and the option does not exist in Capacitor 8 at
+> all.** In Capacitor 7 it defaults to `"disable"`, and `"auto"`/`"force"` set *margins* on the
+> WebView and consume the insets — so they do not complete `add_safe_area.js`, they replace it:
+> `env()` goes to 0 and the app is letterboxed instead of drawing under the bars. Capacitor 8
+> deleted the option and added a `SystemBars` plugin (auto-registered) whose `insetsHandling`
+> defaults to `"css"`; it passes insets through **only when the WebView major version is ≥ 140 and
+> the page declares `viewport-fit=cover`**, and otherwise pads the WebView's parent so the layout
+> is still right. That 140 is a real Chromium bug in Android WebView's `env(safe-area-inset-*)`,
+> cited in Capacitor's own source as `issues.chromium.org/issues/40699457` (with a second
+> keyboard-related fix at 144). **This is the actual mechanism behind the "expected first
+> real-device bug", found before the device rather than after it.**
+>
+> **Consequence, and the runbook's one real recommendation: build Android from Capacitor 8.** It is
+> the only route that gets targetSdk 36 without hand-editing the toolchain *and* degrades correctly
+> on an old WebView. The cost is honest and stated there: majors must match, so it upgrades the
+> whole project including the live iOS app — iOS deployment target 14.0 → 15.0, Node ≥ 22, and the
+> next iOS build must be re-verified before submission. The Capacitor 7 fallback is written out too.
+>
+> **Also confirmed by reading the source rather than trusting the plan:** `server.androidScheme`
+> defaults to `https` and `hostname` to `localhost` in both 7 and 8 (so §4.2 item 2 holds);
+> `resolveServiceWorkerRequests` defaults to `true` in both (so item 4 was necessary, not
+> precautionary); and `WebViewLocalServer` really does route any path whose last segment contains no
+> `.` back to the root `index.html` (so item 3's `fix_usmle_link` is required on Android).
+>
+> **Still ⚠ and named as such in the runbook:** whether Capacitor's local server can read from a
+> Play Asset Delivery pack (§4.3 — the runbook makes it step 6, a ten-minute emulator test with the
+> streaming fallback written beside it), the exact install-time pack ceiling
+> (`support.google.com` is egress-blocked here; the 200 MB base-module cap and the 100-pack maximum
+> *are* confirmed), whether AGP 8.7.2 warns or fails on compileSdk 36, and everything that needs a
+> real device.
+
+
 Write `native/ANDROID-RUNBOOK.md` in the shape of `MAC-RUNBOOK.md`. The skeleton, marked ⚠ where a
 container could not verify:
 

@@ -386,8 +386,13 @@ no backend. This file is context for future sessions — read it before starting
     reads as an app failure. `scripts/verify_condition_swipe.js` drives real touch over CDP
     (mouse measures the 700ms post-touch guard instead) and only swipes FORWARD, walking in from
     the condition on each side to prove the same adjacency without touching the edge.
-  - `verified:false` keeps the RC VERIFIED badge off. `metabolic-syndrome`, `hip-fracture` and
-    `back-pain` are all awaiting the physician's read; `insert_conditions.js` prints the list.
+  - `verified:false` keeps the RC VERIFIED badge off; `insert_conditions.js` prints the list.
+    **All 183 are `verified:true` as of v132 — checked against shipped content 2026-09-09.** The
+    three that were outstanding (`metabolic-syndrome`, `hip-fracture`, `back-pain`) have been read
+    and flipped, so the badge is uniform and "clinically reviewed" holds across the whole library.
+    This note claimed they were still pending for weeks after they were not: **derive it with
+    `node scripts/read_shipped_counts.js <web-clone>`, which reads the content, rather than from
+    here.**
 - **Galleries**: `GALLERIES={ "<id>": {title, base:"assets/<id>/", pdf, images:[{n,file,
   thumb,title}]} }`. Real artwork renders only for ids in `REALGAL` (the `real` array in
   `content/galleries.json`). **`base` is not uniform on the live site** — see the warning in

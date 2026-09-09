@@ -208,8 +208,8 @@ if (PLATFORM !== 'ios') {
   console.log('        viewport-fit=cover is set. The app sets viewport-fit=cover; the activity side');
   console.log('        is a Capacitor/Gradle setting, and the exact name and version have NOT been');
   console.log('        verified from a container -- there is no Android SDK here. See');
-  console.log('        HANDOFF-android-app.md 4.2 item 5 and 4.5 step 6 (native/ANDROID-RUNBOOK.md is');
-  console.log('        not written yet); check `npm ls @capacitor/android` on the Mac');
+  console.log('        native/ANDROID-RUNBOOK.md section 3a -- it is version-dependent and the');
+  console.log('        answer differs between Capacitor 7 and 8; check `npm ls @capacitor/android`');
   console.log('        for an android.adjustMarginsForEdgeToEdge option and try "auto" first.');
   console.log('        Two-line diagnostic on the device, in chrome://inspect:');
   console.log("          document.getElementById('rc-safe-area') !== null");
