@@ -264,6 +264,27 @@ warns if the plan is stale) and a new step writes the pack modules from the mani
 
 ### 4.4 Fifth — App Links, privacy wording, listing surfaces  *(session; small)*
 
+> **PRIVACY WORDING DONE AND DEPLOYED 2026-09-09 — live as v133.** `scripts/add_android_to_legal.js`
+> (the upgrader to `add_platform_privacy.js`'s installer) makes four anchored edits to `RC_LEGAL`:
+> the short version and the platform section now say **"the iOS and Android apps"**, the heading
+> became the platform-neutral **"The website and the apps"**, "runs in two places" became "runs as a
+> website and as apps", and the privacy document's own version moved to 2026-09-09.
+> `build_legal_pages.js` regenerated the public `/privacy/`. `build_ios_variant.js`'s surgery-5
+> needle and its two platform-section assertions, and `verify_ios_variant.js`'s regex, moved in the
+> same commit — they anchor on the shipped sentences and the updated variant exits 1 against the old
+> wording, which is why the two sides could not land separately.
+> **`RC_TERMS_VERSION` was deliberately not bumped**, so none of the 12 users is asked to re-accept:
+> the first-run gate reads that global, not the per-document field.
+> Deploy verified by `commit_ref` 77c5041 + `state: ready` through the Netlify connector, published
+> 15:37:51Z in 59s. **The live host was NOT reachable by curl this session** (agent proxy 403 on
+> CONNECT) even though CLAUDE.md recorded it as reachable on 2026-08-17 — the block moves in both
+> directions; CLAUDE.md is corrected.
+>
+> **Still open in 4.4:** `assetlinks.json` and the six intent filters. Both are blocked until a
+> bundle has been uploaded, because the SHA-256 comes from Play App Signing. The intent-filter XML
+> is written out in `native/ANDROID-RUNBOOK.md` step 7, ready to paste.
+
+
 - **`/.well-known/assetlinks.json`** on roundscodex.com, listing `com.roundscodex.app` with the
   SHA-256 of the **Play App Signing** key (from Play Console → App integrity, available only after
   the first upload — so the order is: upload once, read the fingerprint, deploy the file, then

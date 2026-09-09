@@ -36,11 +36,16 @@ no backend. This file is context for future sessions — read it before starting
   shortly after.
   **Nothing alerted for 16 hours.** Turn on Netlify's failed-deploy notification, and check
   `/version.txt` (added 2026-07-31) after every deploy rather than assuming a push shipped.
-- **THE LIVE SITE IS REACHABLE AGAIN — corrected 2026-08-17.** This section said for months that
-  the agent proxy 403s `rounds-codex.netlify.app`. It does not:
-  `curl -s https://rounds-codex.netlify.app/version.txt` returns the deployed stamp, and the AASA
-  came back 200 `application/json` with zero redirects. **So a deploy can be confirmed from a
-  session — check it yourself rather than asking the physician to open `/version.txt`.**
+- **THE LIVE SITE IS BLOCKED AGAIN — re-measured 2026-09-09, during the v133 deploy.**
+  `curl -sS https://rounds-codex.netlify.app/version.txt` returns
+  `curl: (56) CONNECT tunnel failed, response 403`. That is the **agent proxy** refusing CONNECT,
+  not Netlify refusing us — read a 403 for who issued it — so it says nothing about whether a deploy
+  worked; it only removes one way of checking. The note below records that this same host WAS
+  reachable on 2026-08-17, so **the block genuinely moves in both directions: retest at the start of
+  every session and trust neither state.** The Netlify MCP connector still works when it is enabled
+  for the chat, because connector traffic goes through Anthropic's servers rather than this network.
+  (historic, 2026-08-17) It was reachable then: `/version.txt` returned the deployed stamp and the
+  AASA came back 200 `application/json` with zero redirects.
   What is still blocked is the CUSTOM domain: `roundscodex.com` and `www.roundscodex.com` both fail
   CONNECT with a proxy 403, so whether they serve this site cannot be confirmed from here (DNS says
   yes: the apex resolves to Netlify's load balancer and `www` to the same IPv6 as the netlify.app
