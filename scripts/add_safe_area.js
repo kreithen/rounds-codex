@@ -45,7 +45,13 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = process.argv[2];
-if (!ROOT) { console.error('usage: add_safe_area.js <site-root>'); process.exit(2); }
+if (!ROOT) { console.error('usage: add_safe_area.js <site-root> [--platform ios|android]'); process.exit(2); }
+/* Affects the closing NOTE and nothing else -- the CSS this script writes is identical on both
+   platforms, because env(safe-area-inset-*) is the same mechanism in WebKit and in Android WebView.
+   The note is a runbook instruction, and printing iOS's instruction after an Android build is how
+   someone ends up setting a config key that does not exist on the platform they are building. */
+const pAt = process.argv.indexOf('--platform');
+const PLATFORM = pAt > -1 ? process.argv[pAt + 1] : null;
 
 const FILE = path.join(ROOT, 'index.html');
 let s = fs.readFileSync(FILE, 'utf8');
@@ -187,7 +193,27 @@ for (const [what] of EXPECT) console.log(`  ok    ${what}`);
 console.log(`  inset rules appended before </head>`);
 console.log(`index.html: ${before} -> ${s.length} bytes (+${s.length - before})`);
 console.log('');
-console.log('');
-console.log('  NOTE: this is half the fix. capacitor.config.json must also set');
-console.log('        "ios": { "contentInset": "never" }  -- with "always" UIKit adds an inset the');
-console.log('        page now provides itself, and leaves the first paint scrolled under it.');
+if (PLATFORM !== 'android') {
+  console.log('  NOTE (iOS): this is half the fix. capacitor.config.json must also set');
+  console.log('        "ios": { "contentInset": "never" }  -- with "always" UIKit adds an inset the');
+  console.log('        page now provides itself, and leaves the first paint scrolled under it.');
+  console.log('        MEASURED on an iPhone 17 Pro Max simulator, iOS 26.5: with "never" the page');
+  console.log('        reports .app padding-top 62px and .nav bottom 48px.');
+}
+if (PLATFORM !== 'ios') {
+  console.log('  NOTE (Android): this is half the fix there too, and the other half is NOT the same');
+  console.log('        key. Targeting API 35+ makes edge-to-edge mandatory, so the WebView draws');
+  console.log('        under the status and navigation bars -- but Android WebView only populates');
+  console.log('        env(safe-area-inset-*) when the activity opts into display-cutout layout AND');
+  console.log('        viewport-fit=cover is set. The app sets viewport-fit=cover; the activity side');
+  console.log('        is a Capacitor/Gradle setting, and the exact name and version have NOT been');
+  console.log('        verified from a container -- there is no Android SDK here. See');
+  console.log('        HANDOFF-android-app.md 4.2 item 5 and 4.5 step 6 (native/ANDROID-RUNBOOK.md is');
+  console.log('        not written yet); check `npm ls @capacitor/android` on the Mac');
+  console.log('        for an android.adjustMarginsForEdgeToEdge option and try "auto" first.');
+  console.log('        Two-line diagnostic on the device, in chrome://inspect:');
+  console.log("          document.getElementById('rc-safe-area') !== null");
+  console.log("          getComputedStyle(document.querySelector('.app')).paddingTop");
+  console.log('        The first says this patcher ran; the second says whether env() resolved to');
+  console.log('        anything. 0px with the header under the status bar is the activity side.');
+}

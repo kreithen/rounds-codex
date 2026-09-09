@@ -224,10 +224,28 @@ const warn = m => { warns.push(m); console.log('  warn ' + m); };
     await c2.close();
   }
 
-  /* ---------------------------------------------------------------- service worker */
+  /* ---------------------------------------------------------------- service worker
+   * TWO TREES, TWO OPPOSITE INVARIANTS, and which one applies is read off the tree rather than
+   * passed in. The web build must HAVE a correct worker; the native payload must have NO worker at
+   * all (scripts/strip_service_worker.js takes it out, because on Android it would really run and
+   * would keep a second copy of the shell across app updates).
+   *
+   * Before this branch, this block simply failed with "sw.js could not be fetched" on a native
+   * payload -- a correct build reported as broken, which is the failure mode that teaches people to
+   * ignore a suite. Detected on the RC_NO_SERVICE_WORKER marker the stripper leaves in index.html,
+   * not on the absence of sw.js: absence is also what a truncated copy or a bad webDir looks like,
+   * and this has to tell those apart. */
   console.log('\nSERVICE WORKER');
-  const sw = await (await ctx.request.get(BASE + '/sw.js')).text().catch(() => '');
-  if (!sw) fail('sw.js could not be fetched');
+  const shell = await (await ctx.request.get(BASE + '/')).text().catch(() => '');
+  const native = /RC_NO_SERVICE_WORKER/.test(shell);
+  const swRes = await ctx.request.get(BASE + '/sw.js').catch(() => null);
+  const sw = native ? '' : await (swRes ? swRes.text().catch(() => '') : '');
+  if (native) {
+    if (swRes && swRes.ok()) fail('native payload: sw.js is still being served — the strip did not remove the file');
+    else if (/serviceWorker\.register/.test(shell)) fail('native payload: the registration call survives in index.html');
+    else console.log('  native payload: no worker registered and no sw.js served — as intended');
+  }
+  else if (!sw) fail('sw.js could not be fetched');
   else {
     const core = (sw.match(/const CORE = \[([\s\S]*?)\];/) || [])[1] || '';
     const contentFiles = ['conditions', 'drugs', 'quizzes', 'nclex', 'or', 'galleries', 'resident'];

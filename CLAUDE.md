@@ -1106,6 +1106,28 @@ physician's Mac. Do not hand over something that has never been compiled.
 not a deletion: three in-app surfaces still assert an account exists, and the Privacy page's "we
 hold your email address" would contradict a "Data Not Collected" privacy label outright.
 
+## The native Android app — ITS OWN CONVERSATION (2026-09-09)
+Rounds Codex on Google Play. Branch **`claude/native-android-app`**, based on
+`claude/native-ios-app` (NOT `main` — the payload scripts have never been merged).
+**Read `HANDOFF-android-app.md` first**; it carries the whole plan, the Play-specific decisions and
+what is already built.
+**Decided there and not to be reopened: Capacitor Android, not a TWA** (`store-strategy.md` §3's TWA
+recommendation predates the iOS app and is superseded — a TWA wraps the live origin, which has the
+login wall the app does not have, and has no offline story).
+**The payload chain is now two-platform and the two trees are byte-identical** — `build_ios_payload.js`
+is `build_native_payload.js --platform ios|android`, with the old name kept as an alias.
+`scripts/strip_service_worker.js` is new and applies to BOTH: on iOS the worker could never run
+(WebKit does not run one on a custom scheme), **on Android it registers, activates and controls the
+page**, keeping a second copy of the shell in Cache Storage across app updates.
+**Play caps the base module at 200 MB compressed download**, so `--platform android` without
+`--asset-packs` is refused at build time. Apple's 4 GB ceiling is why iOS v1 could bundle 826 MB and
+Android cannot; that is the only thing the two builds do not share.
+**A session cannot build, sign or upload an Android app either** — `dl.google.com` is blocked by the
+agent proxy, so there is no Android SDK here. Gradle and a JDK are installed and `maven.google.com`
+is reachable; do not spend a session routing around the rest. **Chromium headless IS a good proxy
+here, unlike on iOS: Android WebView is Chromium.** What it cannot represent is a given phone's
+WebView version, and it cannot test the activity-side edge-to-edge setting at all.
+
 ## The mislabelled-anatomy project — MOVED TO ITS OWN CONVERSATION (2026-08-09)
 Leader lines that do not land on the structure they name: 119 pages examined, **81 wrong**,
 553 findings. Handed off to a separate conversation on branch

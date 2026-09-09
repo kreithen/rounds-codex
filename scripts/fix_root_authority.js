@@ -26,6 +26,18 @@
  *
  * Deliberately NOT solved by using location.origin unconditionally: origin is the string
  * "null" for file://, which is the other home the head script's comment says it supports.
+ *
+ * ANDROID (2026-09-09): this patcher stays in the native chain and does NOTHING there. Capacitor's
+ * Android shell serves from https://localhost, and https is a WHATWG "special" scheme, so the URL
+ * parser gives the empty path its "/" before the app ever reads it. Measured in Chromium by running
+ * RC_ROOT's own expression over each origin:
+ *
+ *     https://localhost      href https://localhost/     RC_ROOT https://localhost/   correct
+ *     capacitor://localhost  href capacitor://localhost  RC_ROOT capacitor://         host eaten
+ *
+ * So the guard's regex cannot match on Android any more than it can on the web. It is kept because
+ * one chain producing one tree for both platforms is worth more than a branch whose two arms are
+ * never both tested, and because it costs a single line.
  */
 'use strict';
 const fs = require('fs');

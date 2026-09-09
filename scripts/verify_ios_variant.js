@@ -25,9 +25,15 @@
  * fresh run. The wall and the disclaimer collided on that id once and the disclaimer was silently
  * never built, for everyone, for days. A variant that removed both would look like a success here.
  *
- * Run against the unmodified web build and it fails 11 of 19 checks, naming each one -- including
+ * Run against the unmodified web build and it fails 17 of 31 checks, naming each one -- including
  * the interception, with the overlay chain (#rc-login < div < #rc-authgate) printed. That is the
- * test that this file is a guard rather than decoration.
+ * test that this file is a guard rather than decoration. (The header claimed "11 of 19" for a long
+ * time; the file had grown past that and nobody re-measured. Both numbers below are from a run on
+ * 2026-09-09 against rounds-codex-app a792eb4 / v132.)
+ *
+ * THREE OF THOSE 17 ARE THE SERVICE WORKER, added when Android joined the payload chain
+ * (2026-09-09). Read the note beside them before changing them: the count, not the controller, is
+ * the check that cannot decay.
  *
  * Usage: RC_PW=<dir with node_modules/playwright-core> node scripts/verify_ios_variant.js <root> [port]
  */
@@ -103,6 +109,46 @@ const check = (name, ok, detail) => { results.push([name, ok, detail]); };
      past every DOM-absence check above -- absence is exactly what a blank app gives you. */
   const n = await p.evaluate(() => (typeof DATA !== 'undefined' && DATA.length) || 0);
   check('content loaded (183 conditions)', n === 183, `DATA.length=${n}`);
+
+  /* ---------- the service worker is not in this build ----------
+     Added for Android (2026-09-09) and asserted on both platforms, because the strip is done for
+     both. On iOS the worker could never run -- WebKit does not run one on a custom scheme -- so
+     nothing here would have failed on the shipped iOS payload either way. On Android it registers,
+     activates and controls the page, writing a second copy of the shell into Cache Storage that
+     survives an app update: the "updated the app, still see old content" bug, arriving weeks later
+     from a device nobody can reproduce on.
+
+     THE COUNT IS THE LOAD-BEARING CHECK. getRegistrations() returns one on the web build and none
+     on the payload, on any first load, whatever the worker does. 127.0.0.1 is a secure context in
+     Chromium, so registration really happens under this harness and the check has something to see.
+
+     The controller check is kept as a second signal, and the reason is worth writing down because I
+     predicted it wrong. A service worker normally takes control from the NEXT navigation, so on the
+     cold first load this file always makes, `navigator.serviceWorker.controller` should be null on
+     BOTH builds -- decoration. Measured against the web build it is not: it reports
+     http://127.0.0.1:PORT/sw.js. This worker calls self.skipWaiting() on install and
+     self.clients.claim() on activate (sw.js lines 29 and 36), which is exactly what those two calls
+     are for -- it seizes the page that registered it. So the check does discriminate here, but only
+     because of two lines in a file this build deletes. If sw.js ever loses them the controller check
+     goes quietly back to passing on both builds; the registration count will not.
+
+     Chromium is a good proxy for this specifically: Android WebView IS Chromium, and service-worker
+     registration is not one of the places the two diverge. */
+  const sw = await p.evaluate(async () => {
+    if (!('serviceWorker' in navigator)) return { supported: false, regs: 0, controller: null };
+    const rs = await navigator.serviceWorker.getRegistrations();
+    return { supported: true, regs: rs.length,
+             controller: navigator.serviceWorker.controller ? navigator.serviceWorker.controller.scriptURL : null };
+  });
+  check('no service worker registered', sw.supported && sw.regs === 0,
+        `getRegistrations() -> ${sw.regs}`);
+  check('no service worker controls the page', !sw.controller, sw.controller || '');
+  /* And the file itself. A registration call removed while sw.js stays in the bundle is 10 kB of
+     the most defect-prone file in this project riding along for nothing -- and one restored line
+     away from running again. Checked on disk rather than over HTTP: netlifysim serves whatever is
+     there, so a 404 would prove the same thing, but the payload is the artefact and the payload is
+     what the question is about. */
+  check('sw.js is not in the payload', !require('fs').existsSync(path.join(ROOT, 'sw.js')));
 
   /* ---------- My account ---------- */
   await p.evaluate(() => go('account'));
