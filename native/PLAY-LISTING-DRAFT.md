@@ -232,8 +232,14 @@ formatting ones.
 
 ## 8. What is still missing
 
-- **The feature graphic (1024×500) does not exist.** Nothing else on this page is blocked by it, and
-  nothing can be submitted without it. It is now the ONLY missing listing asset.
+- ~~**The feature graphic (1024×500) does not exist.**~~ **DONE 2026-09-09 —
+  `native/play-graphics/feature-graphic.png`**, generated and checked by
+  `scripts/make_feature_graphic.js`. Deliberately not the social template resized: "Download for
+  FREE", the App Store badge, the phone mockups and the near-black base are all forbidden or
+  ill-advised in a Play feature graphic. See that folder's README.
+
+  **Every listing asset now exists.** What remains on this page is entering it, which only the
+  account holder can do.
 - ~~**The screenshots do not exist at Play's ratio.**~~ **DONE 2026-09-09 — `native/play-screenshots/`.**
   Eight panels captured from the real app at exactly 1080×1920 by
   `scripts/shoot_play_screenshots.js`, which renders at 360×640 CSS with deviceScaleFactor 3.

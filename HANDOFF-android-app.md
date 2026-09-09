@@ -445,7 +445,14 @@ container could not verify:
 > *selects* a choice, there is a separate `#qsub` Submit button, so two attempts captured an
 > unanswered question under a caption promising "every condition, explained".
 >
-> **Still missing and blocking submission: only the 1024×500 feature graphic.**
+> **FEATURE GRAPHIC DONE 2026-09-09 — `native/play-graphics/`.** Built from the brand system in
+> `landing/social-*.html` but not a resize of it: that template's "Download for FREE", App Store
+> badge, phone mockups and near-black base are each forbidden or ill-advised in a Play feature
+> graphic, verified against Google's guidance. `scripts/make_feature_graphic.js` renders and checks
+> it (1024×500, no alpha, no promotional wording, background not near-black) and fails if the
+> forbidden wording is put back.
+>
+> **Every listing asset now exists.** Nothing in §4.6 is blocked on a session any more.
 
 
 - **Title** ≤ 30 chars: "Rounds Codex: Clinical Atlas" (28). **Short description** ≤ 80. **Full
