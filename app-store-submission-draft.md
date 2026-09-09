@@ -290,6 +290,16 @@ change; neither is wrong yet. See `app-store-checklist.md` §4.
 **Two corrections made 2026-09-09 while drafting the Play listing, and they apply to the LIVE App
 Store listing too — the description above is what was submitted.**
 
+**⚠ NEITHER CAN BE FIXED TODAY IN ISOLATION.** The **Description** field is only editable *when you
+submit a new version* — checked against Apple's own documentation, not assumed. Only **Promotional
+Text** is editable at any time without a build. So both corrections ride along with the next iOS
+version submission; there is no metadata-only path for them. Two consequences worth stating:
+the live listing carries both errors until then, which is a known and accepted state rather than an
+oversight; and the **Promotional Text is clean** (168 characters, quotes 102 / 1,020 / 1,840 / 1,010
+and none of the wrong figures), so nothing needs doing to the one field that *could* change today.
+
+The corrected description is the block above, verbatim — 2,566 characters against Apple's 4,000.
+
 **"197 of them illustrated" was wrong and understated the app; it is now 231.** 231 USMLE items
 carry an illustration — 197 real generated images plus 34 vector schematics that were kept
 deliberately (32 ECGs, the genetics pedigree, and one item Higgsfield refused). The old line quoted

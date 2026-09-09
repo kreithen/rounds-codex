@@ -45,7 +45,7 @@ before any campaign — do not copy a number out of an old draft, including this
 | conditions awaiting review (`verified:false`) | **0** — cleared at v130, so RC VERIFIED is uniform |
 | illustrated galleries | **102** — **1,020 original full-page illustrations** |
 | quiz questions | **1,840** — a quiz on every single condition, 0 without |
-| USMLE-style items | 1,010 (Step 1 280, Step 2 CK 318, Step 3 Day 1 232, Day 2 180), 197 illustrated |
+| USMLE-style items | 1,010 (Step 1 280, Step 2 CK 318, Step 3 Day 1 232, Day 2 180), **231 illustrated** |
 | NCLEX-style items | 150 |
 | drug entries | 300 |
 | clinical calculators | 10 |
@@ -55,6 +55,13 @@ before any campaign — do not copy a number out of an old draft, including this
 
 The number that does the most work in a headline is **1,020 original illustrations**. Nobody else in
 this category draws their own.
+
+**Corrected 2026-09-09: illustrated USMLE items is 231, not 197.** 231 items carry an
+illustration; 197 of those are real generated images and 34 are deliberate vector schematics (32
+ECGs, the genetics pedigree, and one item Higgsfield refused). Quoting 197 understated the app, and
+the same wrong number had reached the App Store description in two places. `node
+scripts/verify_listing_counts.js <web-clone>` now fails on any store draft quoting a count the
+shipped content does not support — run it before a campaign, not just before a submission.
 
 **The housekeeping item that used to sit under the claims policy is closed.** All 183 conditions
 carry the RC VERIFIED badge as of v130, so a site-wide "clinically reviewed" claim no longer sits
