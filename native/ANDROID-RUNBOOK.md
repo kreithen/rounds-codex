@@ -286,21 +286,42 @@ The payload is 84 MB. The other **742 MB** of gallery pages and audio has to rea
 other way, and there are two candidates. **Neither has been tried, and Android Studio is the only
 place either can be.**
 
-**A — Play Asset Delivery, install-time packs.** The 11 category manifests in `native/manifests/`
-map one-to-one onto pack modules. Install-time packs are delivered as split APKs and their files
-are visible through Android's `AssetManager` — the same `AssetManager` Capacitor's
-`WebViewLocalServer` reads `www/` from. **So if a pack lays its files out as
-`assets/public/assets/<gallery-id>/…`, the local server should find them with no code change.**
-⚠ That is a reading of the source, not a result. Nobody has run it.
+**A — Play Asset Delivery, install-time packs. The modules are generated; you build and test them.**
 
-The test, and it takes ten minutes once the packs build:
+```sh
+cd rounds-codex
+node scripts/build_asset_packs.js ../rounds-codex-app /tmp/rc-packs --copy
+node scripts/verify_asset_packs.js /tmp/rc-packs ../rounds-codex-app
+```
 
-1. Build one pack module for one category — Cardiac is the smallest useful one.
-2. Install on the emulator.
-3. **Airplane Mode**, open a Cardiac gallery, open a full-size page.
+Expect **11 packs, 1,153 files, 741.9 MB** and `all 48 checks pass`. Then follow
+`/tmp/rc-packs/WIRING.txt`, which carries the exact `settings.gradle` includes and the
+`assetPacks = [...]` line for `app/build.gradle`, and copy the eleven directories into `android/`.
 
-If the page renders, option A works and the other ten packs are mechanical. If it 404s, stop and
-take B — do not spend a day making it work.
+Each pack lays its files out at `src/main/assets/public/<the app-relative path>` — byte-for-byte
+where the base module would have put them. Install-time packs ship as split APKs and their assets
+are reachable through the same `AssetManager` that Capacitor's `WebViewLocalServer` reads `www/`
+from, so **if the merged namespace behaves as documented, the local server finds them with no code
+change, no plugin and no Java.**
+
+⚠ **That is a reading of the source, not a result. Nobody has run it, and a container cannot.**
+This is the experiment:
+
+1. Build and install on the emulator.
+2. **Airplane Mode.**
+3. Open a Cardiac gallery and open a full-size page. Then play a recording.
+
+If it renders, option A is settled and the other ten packs are already built. If it 404s, stop and
+take B — do not spend a day on it. **Either way, write the answer into
+`HANDOFF-android-app.md` §4.3 with the date.**
+
+What the verifier proves before you ever open Android Studio: every packed file is one the app can
+actually request, every copy is byte-identical to the source (hashed — the whole run is 2.3
+seconds), no file is in two packs, each pack is inside Play's 1.5 GB per-pack limit, and
+**base + packs covers everything reachable** — 1,153 packed and 1,308 in the base module, summing
+to the 2,461 files the resolver says the app can ask for. That last one is the invariant no build
+tool checks: get it wrong one way and 742 MB ships twice, the other way and a gallery is silently
+missing on a device, offline, with no error.
 
 **B — stream the media.** `add_media_root.js` is already in the chain and installs `rcMedia()`; set
 `window.RC_MEDIA_ROOT` to the public origin and gallery pages, gallery PDFs and audio resolve over

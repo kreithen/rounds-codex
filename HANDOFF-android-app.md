@@ -233,6 +233,31 @@ Mac to build. Until this is done, everything Android-side is a guess about a pro
 
 ### 4.3 Fourth — size: Play forces the asset-pack decision iOS was allowed to skip  *(session designs, Mac builds)*
 
+> **MODULES BUILT 2026-09-09 — `scripts/build_asset_packs.js` + `scripts/verify_asset_packs.js`.**
+> Option A is now generated code rather than a plan: one command emits all 11 install-time pack
+> modules with their `build.gradle`, the assets laid out at
+> `src/main/assets/public/<app-relative path>`, and a `WIRING.txt` carrying the exact
+> `settings.gradle` includes and the `assetPacks = [...]` line. Run against the live clone: **11
+> packs, 1,153 files, 741.9 MB, all 48 checks pass.**
+>
+> **The verifier's real job is the invariant no build tool checks:** base + packs == everything the
+> app can request (1,308 + 1,153 = 2,461, resolved with the same `measure_bundle.js` the payload
+> builder uses, so the two cannot disagree). Wrong one way, 742 MB ships twice; wrong the other, a
+> gallery is silently missing on a device, offline, with no error. It also hashes every copy against
+> its source, refuses a file that appears in two packs, and refuses a packed file the app cannot
+> reach. Proved to fail: deleting one page and truncating another each trip it.
+>
+> **Two things corrected by measuring:** Play allows **1.5 GB per asset pack**, so this section's
+> "≤ ~100 MB each" was describing the manifests, not a limit — rc-cardiac at 148 MB needs no
+> repacking. And hashing all 742 MB takes **2.3 seconds**, so it is the verifier's default rather
+> than an expensive opt-in, which is how I first wrote it.
+>
+> **Still the open question, and it is the same one:** whether Capacitor's `WebViewLocalServer` can
+> read a file out of an install-time pack. The layout is chosen so that it should need no code
+> change; nobody has run it and a container cannot. `native/ANDROID-RUNBOOK.md` step 6 is now the
+> commands plus the three-step emulator test, with the RC_MEDIA_ROOT fallback beside it.
+
+
 Apple's ceiling is 4 GB, so iOS v1 bundled everything. **Play caps the base module at 200 MB
 compressed download size** — a hard limit on the upload, and separately any app whose total
 install exceeds 200 MB shows users a size warning on mobile data. 826 MB in `assets/public/` does
