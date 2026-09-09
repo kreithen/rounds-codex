@@ -233,11 +233,14 @@ formatting ones.
 ## 8. What is still missing
 
 - **The feature graphic (1024×500) does not exist.** Nothing else on this page is blocked by it, and
-  nothing can be submitted without it.
-- **The screenshots do not exist at Play's ratio.** The physician has the seven final PNGs and the
-  raw captures; the `ss/appstore2.html` template did **not** survive a container reset, so the
-  design has to be rebuilt from `native/SCREENSHOT-SHOTLIST.md` and `landing/social-*.html`. Ask for
-  the raw captures rather than cropping the finals.
+  nothing can be submitted without it. It is now the ONLY missing listing asset.
+- ~~**The screenshots do not exist at Play's ratio.**~~ **DONE 2026-09-09 — `native/play-screenshots/`.**
+  Eight panels captured from the real app at exactly 1080×1920 by
+  `scripts/shoot_play_screenshots.js`, which renders at 360×640 CSS with deviceScaleFactor 3.
+  Possible here and not for iOS because Android WebView *is* Chromium. Captions are in
+  `captions.json` and are **not** burned in; ask if you want composed panels. Read that folder's
+  README for the three things worth knowing (shot 3 is full-bleed artwork, shot 6 is in Nursing
+  mode, and none of it is a device pass).
 - **Everything in §6 is an answer, not a submission.** The forms live in Play Console and only the
   account holder can fill them.
 - **The counts will drift**, so do not re-read them by eye. On the day you paste:

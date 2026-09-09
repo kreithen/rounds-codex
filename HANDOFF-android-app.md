@@ -433,10 +433,19 @@ container could not verify:
 > fixed at the point they occur — see its header; it is deliberately a fixed claim table, not general
 > number extraction, for the reason CLAUDE.md's C1 note gives.
 >
-> **Still missing and blocking submission:** the 1024×500 feature graphic (does not exist) and
-> screenshots at Play's 9:16 / 1080×1920 — the App Store finals are 2.17:1 and **Play's maximum is
-> 2:1**, so they will be rejected; Play also requires **at least four**. Ask the physician for the raw
-> captures; do not crop the iOS finals.
+> **SCREENSHOTS DONE 2026-09-09 — `native/play-screenshots/`, eight panels at exactly 1080×1920.**
+> `scripts/shoot_play_screenshots.js` drives the real app headless and captures them.
+> **This works on Android and could not have worked for iOS: Android WebView is Chromium**, so the
+> renderer here is the renderer on the phone. Rendered at 360×640 CSS with deviceScaleFactor 3 — a
+> 1080×1920 *CSS* viewport would have laid the app out as a narrow column in an empty field.
+> Four of the eight took more than one attempt, and each failure is recorded at the point it
+> occurred: the USMLE shot landed on the exam picker rather than an illustrated item; the calculator
+> and the quiz both cut their payoff below the fold; and a text heuristic meant to fix the calculator
+> overshot to the citations, which was worse. The quiz one is the instructive one — `qPick()` only
+> *selects* a choice, there is a separate `#qsub` Submit button, so two attempts captured an
+> unanswered question under a caption promising "every condition, explained".
+>
+> **Still missing and blocking submission: only the 1024×500 feature graphic.**
 
 
 - **Title** ≤ 30 chars: "Rounds Codex: Clinical Atlas" (28). **Short description** ≤ 80. **Full
