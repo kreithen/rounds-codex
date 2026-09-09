@@ -223,7 +223,7 @@ WHAT'S INSIDE
 • 1,840 practice questions — a quiz for every single condition, with an explanation on the
   answer and specific feedback on each wrong choice
 • 1,010 USMLE-style items — Step 1 (280), Step 2 CK (318), Step 3 Day 1 (232) and Day 2 (180),
-  197 of them illustrated
+  231 of them illustrated
 • 150 NCLEX-style items with save-and-resume and an attempt history
 • 300 drug entries linked to the conditions they treat
 • 10 clinical calculators — Wells, PERC, CHA₂DS₂-VASc, HAS-BLED, CURB-65, qSOFA, MAP, BMI/BSA
@@ -239,7 +239,7 @@ HOW IT'S BUILT FOR STUDYING
 • Deep search across every field of every condition, plus 1,020 illustration titles, telling
   you where the match was
 • Swipe between conditions, and between galleries, without going back to a list
-• Share any condition, section or gallery as a link
+• Share a condition, a specialty section or a guideline year as a link
 
 PRIVACY
 
@@ -286,6 +286,25 @@ leading size proposal is to stop bundling them and resolve them against the publ
 `RC_SHARE_ORIGIN` already resolves share links — which would make the download need a connection
 and put the two sentences in conflict. Whichever way that goes, one of these two lines may have to
 change; neither is wrong yet. See `app-store-checklist.md` §4.
+
+**Two corrections made 2026-09-09 while drafting the Play listing, and they apply to the LIVE App
+Store listing too — the description above is what was submitted.**
+
+**"197 of them illustrated" was wrong and understated the app; it is now 231.** 231 USMLE items
+carry an illustration — 197 real generated images plus 34 vector schematics that were kept
+deliberately (32 ECGs, the genetics pedigree, and one item Higgsfield refused). The old line quoted
+the photographic subset only. Found by `scripts/verify_listing_counts.js`, which now fails on any
+listing quoting a count the shipped content does not support, and which was written because this
+document's own header once claimed its numbers were fresh while four of them had moved.
+
+**"Share any condition, section or gallery as a link" described a control that does not exist.**
+`rcShareGallery` has had **no call site since v74**, when its button was removed once the PDF button
+started raising a real file sheet — CLAUDE.md records the consequence plainly: there is now no way
+to produce a `/g/<id>` link from inside the app. Found by grepping for the onclick handlers rather
+than by reading the copy. What is genuinely shareable: a condition, a specialty section, a specialty
+page, a guideline year, the galleries **index**, and Clinical Updates. This is the App Store's own
+Guideline 2.1 shape — a listing describing a feature the reviewer cannot find — so it is worth
+correcting in App Store Connect at the next release rather than waiting for a rejection.
 
 ### Keywords (100 characters, comma-separated, no spaces after commas)
 
@@ -546,8 +565,16 @@ file was refreshed on **2026-08-17** by `node scripts/read_shipped_counts.js <si
 against the shipped tree. Four had moved since 2026-08-04: conditions 181 → **183**, galleries
 93 → **102**, pages 930 → **1,020**, quiz questions 1,820 → **1,840**. Unchanged and re-derived
 rather than assumed: 1,010 USMLE items (Step 1 280, Step 2 CK 318, Step 3 Day 1 232, Day 2 180),
-197 of them illustrated, 150 NCLEX, 300 drugs, 470 guideline entries across 25 specialties, 1,418
+231 of them illustrated, 150 NCLEX, 300 drugs, 470 guideline entries across 25 specialties, 1,418
 resident entries, 10 calculators, 21 condition specialties, 31 audio recordings.
+
+**This paragraph carried a wrong number for three weeks while asserting the numbers were
+re-derived** — it said 197 illustrated USMLE items where 231 carry an illustration, because 197 is
+the count of real generated images and excludes the 34 deliberate vector schematics. The warning
+below was right and the paragraph containing it was wrong, which is as good an argument as exists
+for `node scripts/verify_listing_counts.js <site-root>`: it reads the DOCUMENTS and fails on any
+quoted count the shipped content does not support, rather than trusting a sentence that says the
+numbers were checked. It found this occurrence after the one in the description had been fixed.
 
 **Run the script rather than copying this paragraph** — copying it is the same mistake one step
 removed, and it is exactly how 181 survived here for two weeks after the app reached 183. A

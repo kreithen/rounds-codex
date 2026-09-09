@@ -390,8 +390,12 @@ Not yet drafted — that is `HANDOFF-android-app.md` §4.6. What is already sett
   gated by a medical disclaimer. The Guideline 1.4.1 reasoning about the dosage calculators in
   `app-store-submission-draft.md` transfers word for word.
 - **Contact email** is shown publicly on Play — use the support address, not a personal one.
-- **Counts go stale.** Re-derive them with `node scripts/read_shipped_counts.js ../rounds-codex-app`
-  before pasting anything. Every earlier document's numbers drifted.
+- **Counts go stale.** The listing text is drafted in **`native/PLAY-LISTING-DRAFT.md`**, every field
+  already at Play's limit. Before pasting, run
+  `node scripts/verify_listing_counts.js ../rounds-codex-app` — it derives the counts from the
+  shipped content and fails on any number either store draft quotes that the content does not
+  support. Every earlier document's numbers drifted, including in the paragraph claiming they had
+  been checked.
 
 ## 10. Before you press publish
 

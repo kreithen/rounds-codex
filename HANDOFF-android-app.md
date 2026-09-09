@@ -380,6 +380,40 @@ container could not verify:
 
 ### 4.6 Seventh — the listing  *(session drafts; physician enters)*
 
+> **DRAFTED 2026-09-09 — `native/PLAY-LISTING-DRAFT.md`.** Title, short description and full
+> description at Play's limits (28/30, 77/80, 2,823/4,000), plus the Data safety, Health apps and
+> content-rating answers as a filled worksheet, the graphics specs and the eight shots.
+>
+> **It is not the App Store text with the word Android swapped in — four claims did not survive the
+> port, and three are accuracy problems:**
+> **(1)** Play *requires* a non-medical-device health app to state in its description that it "is
+> not a medical device and does not diagnose, treat, cure, or prevent any medical condition" plus a
+> reminder to consult a professional; **the App Store text does not contain that wording**, and
+> "Inaccurate Health Apps Declaration" is a common rejection. The description now carries it.
+> **(2)** "including CarPlay support" is removed and deliberately *not* replaced with Android Auto —
+> the MediaSession metadata might drive it, but nothing has been run on an Android device and Android
+> Auto media apps need a manifest declaration and Google's review besides.
+> **(3)** "Share any condition, section or **gallery** as a link" describes a control that has had no
+> call site since v74. **This is wrong in the live App Store listing too.**
+> **(4)** "197 of them illustrated" understated the app: 231 USMLE items carry an illustration.
+> **Also wrong in the live App Store listing**, in two places.
+>
+> **Play has no keywords field**, so Apple's 100 characters of keywords have nowhere to go and must
+> be earned inside the short description and the body instead — that is why the short description
+> spends its 77 characters on *nursing*, *med student*, *NCLEX* and *USMLE*.
+>
+> **New guard: `scripts/verify_listing_counts.js`** reads the documents rather than the content and
+> fails on any quoted count the shipped content does not support. It found both (4) occurrences, the
+> second after the first was fixed. Both of its own false positives were found by running it and are
+> fixed at the point they occur — see its header; it is deliberately a fixed claim table, not general
+> number extraction, for the reason CLAUDE.md's C1 note gives.
+>
+> **Still missing and blocking submission:** the 1024×500 feature graphic (does not exist) and
+> screenshots at Play's 9:16 / 1080×1920 — the App Store finals are 2.17:1 and **Play's maximum is
+> 2:1**, so they will be rejected; Play also requires **at least four**. Ask the physician for the raw
+> captures; do not crop the iOS finals.
+
+
 - **Title** ≤ 30 chars: "Rounds Codex: Clinical Atlas" (28). **Short description** ≤ 80. **Full
   description** ≤ 4,000 — port the App Store text; Play allows a little more formatting.
 - **Counts, as of 2026-09-09:** 183 conditions · 25 specialties · 102 galleries / 1,020 pages ·
