@@ -111,6 +111,38 @@ of the account** — contact email, contact phone, developer email, developer ph
 - **The developer email and phone are public too.** Use the support address and a number you are
   happy to publish — the same decision the listing draft already makes for the app's contact email.
 
+### 1b-2. WHICH Google account creates it — decide before clicking Continue
+
+The signup flow warns if you are using a personal Google account and recommends one on the
+organisation's own domain, because it reduces the number of verifications. It is right, and there is
+a bigger reason it does not mention: **the Google account that creates the Play account becomes its
+OWNER**, and moving ownership afterwards is a Google support process, not a setting.
+
+roundscodex.com already carries mail — `teacher@`, `admin@` and `hello@` all appear in this project
+— so the cheap option is available.
+
+| option | cost | what you get |
+|---|---|---|
+| **A. A free Google account on an existing roundscodex.com mailbox** | free | Satisfies the domain nudge, ten minutes, no DNS changes |
+| B. Google Workspace on roundscodex.com | ~$7/user/month | A managed org: admin console, recoverable and transferable accounts |
+| C. Keep the personal iCloud address | free | Works, but company assets sit on a personal identity and Google asks for more verifications |
+
+**A is the recommendation for a one-person company mid-launch.** Create the account at
+accounts.google.com → Create account → *For my personal use* → **"Use your existing email"**, with a
+ROLE address such as `play@roundscodex.com`, never a person-named one. Google emails a code to it.
+
+**The trap:** an address already linked to another Google account cannot be used for a new one. If
+roundscodex.com's mail runs through iCloud+ Custom Email Domain and one of these addresses is
+already an alternate on the existing Google account, that address is spent — make a fresh alias.
+
+**Workspace's catch, if you go that way:** verifying the domain is a DNS TXT record, which is
+harmless, but *using* Workspace mail means repointing MX away from wherever roundscodex.com's mail
+lives today. Do not move a working mailbox during a launch. Workspace is the right answer when there
+is a second person, not before.
+
+This is a different address from the **developer email shown publicly on Play** (§1a) — that one can
+stay `hello@` or a support alias.
+
 ### 1c. The D-U-N-S number is the actual gate
 
 Free from Dun & Bradstreet. Request it for **Rounds Codex, Inc.** at the registered legal name and
