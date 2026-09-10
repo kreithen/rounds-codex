@@ -72,6 +72,62 @@ default for new apps, and the SHA-256 fingerprint that App Links need in step 7 
 If the account is Personal, the 36-person launch list and the social followers are the tester pool,
 and an "Android beta" email is the first message of the Android project rather than the last.
 
+### 1a. What the Organisation signup form actually asks for
+
+From Play Console Help, *Required information to create a Play Console developer account*
+(read 2026-09-10). Gather these before starting, because the form verifies as you go.
+
+**From the linked Google payments profile** — and these must match the **Dun & Bradstreet** profile
+exactly, or the account's standing suffers:
+
+| field | value |
+|---|---|
+| D-U-N-S number | **the gate — see below** |
+| Organization name | Rounds Codex, Inc. |
+| Organization address | as registered with D&B |
+
+**Entered directly:**
+
+| field | shown publicly on Play? | value |
+|---|---|---|
+| Developer name | **yes** (changeable any time) | `Rounds Codex` |
+| Organization phone number | no — used to verify the org | the number a public registry would list |
+| Organization website | no | `https://roundscodex.com` |
+| Contact name | no | |
+| Contact email address | **no** | Google uses this to reach you |
+| Contact phone number | **no** | |
+| Developer email address | **YES** | **use the support address, not a personal one** |
+| Developer phone number | **YES** | |
+
+**Four of those are verified by one-time password during signup and must stay working for the life
+of the account** — contact email, contact phone, developer email, developer phone.
+
+### 1b. Two things to settle BEFORE typing, because they end up public
+
+- **Google displays the organisation's legal name AND full legal address on Google Play.** That is
+  broader than a personal account, which shows only the country unless you monetize. Whatever
+  address is registered for Rounds Codex, Inc. with D&B is the address on the store page. If that is
+  a home address, decide now rather than after it is live.
+- **The developer email and phone are public too.** Use the support address and a number you are
+  happy to publish — the same decision the listing draft already makes for the app's contact email.
+
+### 1c. The D-U-N-S number is the actual gate
+
+Free from Dun & Bradstreet. Request it for **Rounds Codex, Inc.** at the registered legal name and
+address. Standard issue takes up to about 30 business days; D&B sells an expedited option. **This is
+the only step here with an unbounded wait, so start it first and let everything else queue behind
+it.** If Rounds Codex, Inc. already has one, look it up rather than requesting a second — duplicate
+D&B records are their own delay.
+
+### 1d. What you can skip: there is no merchant/payout account to set up
+
+The help page's *Adding and verifying your payment method* section — the bank details, the deposit
+challenge, "verification can take up to 5 days" — is for developers **receiving payouts through
+Play's billing system**. v1 is free with no in-app purchases, so none of it applies. You still need
+a card for the $25 registration fee; that is a different thing from a merchant payout account.
+Revisit this only when the paid tier is designed, and note that §7's grandfathering question has to
+be answered before that anyway.
+
 ## 2. Build the web payload
 
 One command. It copies the tree, runs the seven patchers in order, strips the media into the pack
