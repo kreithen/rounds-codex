@@ -15,7 +15,8 @@ Not because trademarks are generally a good idea, but because **the switching co
 already enormous and about to get worse.**
 
 - **The name is burned into the artwork.** All 950 illustration pages carry
-  `© 2026 Rounds Codex, Inc.` and the logo lockup in the footer. A forced rename means re-rendering
+  `© 2026 Rounds Codex, Inc.` (the notice as rendered; the entity is **Rounds Codex, LLC** — see
+  below) and the logo lockup in the footer. A forced rename means re-rendering
   every page — the same production pipeline that currently takes multiple rounds to get a row of
   dots right.
 - `roundscodex.com`, the Zoho mailboxes, the Supabase project and the incorporated entity are all
@@ -280,7 +281,7 @@ Have these ready before opening the form:
 |---|---|
 | Mark type | **Standard character mark** (not stylized, no design) |
 | Mark | `ROUNDS CODEX` |
-| Owner | Rounds Codex, Inc. — plus **entity type** (corporation) and **state of incorporation** |
+| Owner | **Rounds Codex, LLC** — entity type **limited liability company**, state **Florida**, document `L26000432836`. ⚠ This said "Rounds Codex, Inc. … (corporation)" until 2026-09-11; filing a mark under an entity that was never formed is a substantive defect, not a typo. |
 | Domicile address | **becomes public record** — use the business address, not a home address, if those differ |
 | Email | one that will still be monitored in 3–6 years, since renewals depend on it |
 | Classes | 009 and 041 |
@@ -317,7 +318,7 @@ before spending a second set of per-class fees.
    office actions. Search the manual for "downloadable software for medical education" and similar.
 3. **File.** USPTO has been moving filings from TEAS to **Trademark Center** — start at
    uspto.gov/trademarks and follow whichever the site presents. You will need: owner name and entity
-   type (Rounds Codex, Inc., a corporation, plus state of incorporation), a domicile address, the
+   type (Rounds Codex, LLC, a Florida limited liability company), a domicile address, the
    mark, the class(es), the goods/services wording, **filing basis 1(b)**, an email, and a signature.
 4. **Docket the deadlines.** After filing you get a serial number; check status in TSDR. An office
    action has a **hard response deadline** and missing it abandons the application. This is the most

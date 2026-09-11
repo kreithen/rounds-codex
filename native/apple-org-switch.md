@@ -43,7 +43,7 @@ converting rather than assuming.
 
 ---
 
-## Step 1 — does Rounds Codex, Inc. already have a D-U-N-S number?
+## Step 1 — does Rounds Codex, LLC already have a D-U-N-S number?
 
 > ## ✅ ANSWERED 2026-09-11 — yes: **`148718973`**
 > Returned immediately by the Apple lookup named below, so no request was needed. Step 1 is
@@ -64,7 +64,7 @@ contact details. It answers immediately if a number exists, and starts the reque
   sometimes longer. There is nothing to do but wait, which is exactly why this is worth starting
   before you need it.
 
-⚠ The legal name must match the incorporation exactly — `Rounds Codex, Inc.` with the comma and the
+⚠ The legal name must match the incorporation exactly — `Rounds Codex, LLC` with the comma and the
 period if that is how it is registered. A near-miss returns "not found" and sends you down the
 create-a-new-record path for a company that already has one.
 
@@ -72,7 +72,7 @@ create-a-new-record path for a company that already has one.
 
 | | |
 |---|---|
-| Legal entity name | Rounds Codex, Inc. — exactly as incorporated |
+| Legal entity name | **Rounds Codex, LLC** — Florida LLC `L26000432836`, filed 2026-08-17, confirmed on Sunbiz 2026-09-11 |
 | D-U-N-S number | **`148718973`** — obtained 2026-09-11 |
 | Legal address | the registered address, not a mailing address |
 | CEO / Director name | must be someone with authority to sign agreements |
@@ -96,7 +96,7 @@ the four blanks:
 >
 > Apple Developer Team ID: 744JSM2Z3H
 > Current enrollment: Individual
-> Requested organization name: Rounds Codex, Inc.
+> Requested organization name: Rounds Codex, LLC
 > D-U-N-S number: 148718973
 > Legal entity address: ____________
 > CEO / Director name: ____________
@@ -137,9 +137,12 @@ ship as Individual?** Both remain open as long as the request is filed.
 
 - **Team ID `744JSM2Z3H`** — the same before and after, so nothing already built needs redoing.
 - The AASA file, the bundle identifier, the entitlements, the payload, the asset packs.
-- Anything in the app itself. The `© 2026 Rounds Codex, Inc.` footer shipped in v127 is correct
-  either way; it names the copyright holder, which is the company regardless of who Apple lists as
-  the seller.
+- Anything in the app itself — **though the v127 footer names the wrong entity.** It shipped as
+  `© 2026 Rounds Codex, Inc.`; the filed company is **Rounds Codex, LLC** (confirmed 2026-09-11).
+  This line previously read "is correct either way", which was true about the *seller* question it
+  was answering and false about the name itself. `scripts/stamp_version.js` now carries the LLC
+  form, so the next build corrects it; the notice on the 1,020 rendered illustration pages does
+  not, and is a separate scheduled job.
 
 ## If it is refused or stalls
 

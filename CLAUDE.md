@@ -987,6 +987,27 @@ no backend. This file is context for future sessions — read it before starting
 - `app-integration-queue.md` — running checklist of live-app changes (what's built/deployed).
 - `usmle-build-status.md`, `resident-staging/*.md`, `galleries-staging/README.md` — build state.
 
+## The legal entity — read this before writing a name anywhere
+
+**`ROUNDS CODEX, LLC`** — a Florida Limited Liability Company, document `L26000432836`, filed
+**2026-08-17**, ACTIVE. Principal address 1 S School Ave 800, Sarasota FL 34237. D-U-N-S
+**`148718973`**. FEI/EIN: **none yet**. Confirmed against the Florida Division of Corporations
+2026-09-11.
+
+**It is NOT "Rounds Codex, Inc."** Every document in this repo said Inc. from 2026-08-17 until
+2026-09-11 — the docs were written the same day the company was filed, planning a corporation, and
+the actual filing was an LLC. It surfaced only when Google Play displayed the name it had pulled
+from D&B. **A planned entity name is not a filed one.**
+
+Two consequences that are deliberate, not oversights:
+- **`LLC` takes no trailing period in prose**, unlike `Inc.` So `scripts/stamp_version.js`'s
+  `COPYRIGHT` constant carries its own — `'2026 Rounds Codex, LLC.'` — because it terminates the
+  footer sentence. The guard there checked only for *doubled* punctuation and **passed** the run-on
+  `"Rounds Codex, LLC For educational use only."`; it now asserts the sentence boundary too.
+- **Quotes of already-rendered artwork keep saying `Inc.`** The notice baked into 1,020
+  illustration pages, the live App Store Copyright field, and any doc recording what was previously
+  shipped are records of fact. Do not "fix" them — rewriting a record to match today makes it wrong.
+
 ## Launch, marketing and the App Store
 Three files, each canonical for its own subject. **Read the relevant one before writing anything
 that will be seen outside the app** — they exist so the copy and the decisions do not drift.
@@ -1111,7 +1132,7 @@ and say so at the top).
 so nothing can be tested as Safari renders it. The engineering (the no-wall variant, size, Universal
 Links, Spotlight, the copy) happens here; the archive, the screenshots and App Store Connect are the
 physician's Mac. Do not hand over something that has never been compiled.
-**Two decisions taken 2026-08-14**: Apple Developer Program enrollment as **Rounds Codex, Inc.**
+**Two decisions taken 2026-08-14**: Apple Developer Program enrollment as **Rounds Codex, LLC**
 (Organization), and **no login wall on iOS** — it stays on the web. That second one is a *build*,
 not a deletion: three in-app surfaces still assert an account exists, and the Privacy page's "we
 hold your email address" would contradict a "Data Not Collected" privacy label outright.

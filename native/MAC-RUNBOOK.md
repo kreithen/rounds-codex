@@ -247,7 +247,7 @@ attribution is the plural framing, and nothing promises an AI tutor.
 
 - **Name / Subtitle / Keywords / Description / Promotional Text** — paste from the draft.
 - **Support URL** `https://roundscodex.com/support/` · **Privacy Policy URL** `https://roundscodex.com/privacy/`
-- **Copyright** `© 2026 Rounds Codex, Inc.`
+- **Copyright** `© 2026 Rounds Codex, LLC` — ⚠ the live listing still carries `Inc.`, submitted before the entity was checked on 2026-09-11. Correct it at the next version submission.
 - **Privacy label: Data Not Collected.** True of this binary — Ask was the only thing that
   transmitted anything and it is gone from the iOS build.
 - **Age rating** ⚠ Medical/Treatment Information. Apple revised the tiers in 2025; read the current

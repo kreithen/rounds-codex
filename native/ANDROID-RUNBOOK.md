@@ -59,7 +59,7 @@ without starting over.**
   opted in continuously for 14 days** — and Google now checks the testers actually opened the app —
   before they may even *apply* for production access. That is 14 days of calendar time nothing can
   shorten, on top of the application review.
-- **Organisation accounts are exempt**, but need a D-U-N-S number for Rounds Codex, Inc. and
+- **Organisation accounts are exempt**, but need a D-U-N-S number for Rounds Codex, LLC and
   Google's business verification, which takes days to weeks.
 
 Either way it is waiting; the difference is which kind and when it starts. The Apple account is
@@ -83,7 +83,7 @@ exactly, or the account's standing suffers:
 | field | value |
 |---|---|
 | D-U-N-S number | **`148718973`** — obtained 2026-09-11, see §1c |
-| Organization name | Rounds Codex, Inc. |
+| Organization name | **Rounds Codex, LLC** — Florida LLC `L26000432836` |
 | Organization address | as registered with D&B |
 
 **Entered directly:**
@@ -106,7 +106,7 @@ of the account** — contact email, contact phone, developer email, developer ph
 
 - **Google displays the organisation's legal name AND full legal address on Google Play.** That is
   broader than a personal account, which shows only the country unless you monetize. Whatever
-  address is registered for Rounds Codex, Inc. with D&B is the address on the store page. If that is
+  address is registered for Rounds Codex, LLC with D&B is the address on the store page. If that is
   a home address, decide now rather than after it is live.
 - **The developer email and phone are public too.** Use the support address and a number you are
   happy to publish — the same decision the listing draft already makes for the app's contact email.
@@ -143,7 +143,36 @@ is a second person, not before.
 This is a different address from the **developer email shown publicly on Play** (§1a) — that one can
 stay `hello@` or a support alias.
 
-### 1b-3. ⛔ OPEN AND BLOCKING — the entity is "LLC" at D&B and "Inc." in every project document
+### 1b-3. ✅ RESOLVED 2026-09-11 — the entity is **ROUNDS CODEX, LLC**, and this repo said "Inc." for three weeks
+
+> **Settled at the source.** Florida Division of Corporations, entity `L26000432836`:
+> **Florida Limited Liability Company, ROUNDS CODEX, LLC**, filed **08/17/2026**, status ACTIVE,
+> principal address 1 S SCHOOL AVE 800, SARASOTA FL 34237, registered agent and authorised member
+> KREITHEN, JOSHUA C (title AMBR). FEI/EIN: **NONE**. No annual reports filed yet.
+> The D&B record behind D-U-N-S `148718973` matched it exactly, address included — **D&B was right
+> and this repository was wrong.** The Play profile needed no correction.
+>
+> **The filing date is the explanation.** `native/apple-org-switch.md` was written on 2026-08-17 —
+> the same day the LLC was filed. The docs were drafted while the plan was "Rounds Codex, Inc.",
+> the company was formed as an LLC that day, and nothing caught up. Three weeks of documents,
+> including a trademark plan and an App Store submission, inherited a name that was never filed.
+> **A planned entity name is not a filed one; re-read the state record once, on the day.**
+>
+> **What changed in this commit:** operational uses of the name (the Apple request template, the
+> "what you need" tables, the D-U-N-S headings) and `scripts/stamp_version.js`'s `COPYRIGHT`
+> constant. **Quotes of what is already rendered, or of what a document previously said, were left
+> as `Inc.` on purpose** — the notice on 1,020 illustration pages really does read
+> "© 2026 Rounds Codex, Inc.", and a record rewritten to match today is a record that has stopped
+> being true. A first pass rewrote those too and was reverted.
+>
+> **Still carrying "Inc." and outside this repo:** the live App Store Copyright field (editable at
+> the next version submission) and the rendered copyright line on the illustration pages. Neither
+> is urgent — see the cost note below. **FEI/EIN is NONE**, which will matter at the Paid
+> Applications agreement and any business banking, not for a free listing.
+
+<details><summary>The original blocking note, kept for the reasoning</summary>
+
+#### ⛔ (was) OPEN AND BLOCKING — the entity is "LLC" at D&B and "Inc." in every project document
 
 **Found 2026-09-11 on the Play Console "Public developer profile" step.** Google pulls the
 organization name from the D&B record behind D-U-N-S `148718973` and displayed it as:
@@ -202,9 +231,11 @@ from real state filings rather than a stub. That is weak evidence for `LLC` bein
 and `Inc.` being an assumption that propagated through the docs unchallenged — **weak evidence, not
 a finding.** Read Sunbiz.
 
+</details>
+
 ### 1c. The D-U-N-S number is the actual gate
 
-> ## ✅ OBTAINED 2026-09-11 — **D-U-N-S `148718973`** for Rounds Codex, Inc.
+> ## ✅ OBTAINED 2026-09-11 — **D-U-N-S `148718973`** for Rounds Codex, LLC
 > Issued through Apple's lookup (route 1 below), which returned it immediately rather than
 > opening a request. **Nothing below needs doing again** — it is kept because the same
 > number now has to survive a name or address change at D&B, and because the
@@ -256,7 +287,7 @@ in the sidebar.
 
 **Google does not simply trust D&B.** The signup screen says you will have to verify the information
 Google receives from Dun & Bradstreet **by providing an official business document** — articles of
-incorporation, a business licence, or equivalent for Rounds Codex, Inc. Have that PDF to hand before
+incorporation, a business licence, or equivalent for Rounds Codex, LLC. Have that PDF to hand before
 starting, because it is asked for mid-flow, and its name and address must match both the D&B record
 and the Google payments profile.
 

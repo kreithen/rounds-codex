@@ -146,7 +146,7 @@ Mac to build. Until this is done, everything Android-side is a guess about a pro
   13 Nov 2023 must run a **closed test with at least 12 testers opted in continuously for 14 days**
   (and Google now checks the testers actually used the app) before they can apply for production
   access. **Organisation accounts are exempt.** An organisation account needs a D-U-N-S number for
-  Rounds Codex, Inc. and Google's business verification, which takes days to weeks. The Apple account
+  Rounds Codex, LLC and Google's business verification, which takes days to weeks. The Apple account
   is enrolled as Individual (see `app-store-checklist.md` §7 for why that was a mistake); the Play
   decision should be made deliberately, not by default.
 - If personal: the 36-person launch list and the social followers are the tester pool. Plan an

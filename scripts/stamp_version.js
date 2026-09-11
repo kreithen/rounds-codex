@@ -55,7 +55,7 @@ let s = fs.readFileSync(idx, 'utf8');
 
 /* The constant the copyright collapses to. Edited by hand, deliberately, and only when the
    published year genuinely changes -- which is the whole difference from getFullYear(). */
-const COPYRIGHT = '2026 Rounds Codex, Inc.';
+const COPYRIGHT = '2026 Rounds Codex, LLC.';
 
 /* ---- version.txt is the source of truth ------------------------------------------------- */
 function readVersionFile() {
@@ -91,9 +91,10 @@ if (!versionOk && !CHECK) s = s.replace(/var RC_VERSION='[^']*'/, `var RC_VERSIO
 /* ---- surgery 2: the copyright -------------------------------------------------------------- */
 const COMPUTED = "      '&copy; '+(new Date().getFullYear())+' Rounds Codex. For educational use only.</div>'+";
 /* No '.' between the constant and the next sentence: the old string ended "Rounds Codex" and
-   supplied its own full stop, but the entity name ends "Inc." and already has one. Keeping the
-   template's period rendered "Rounds Codex, Inc.. For educational use only." -- caught by looking
-   at the page, not by any assertion, which is why there is now an assertion for it below. */
+   supplied its own full stop, so the constant must supply its own. Getting this wrong renders
+   either "Inc.. For educational use only." (a period from both) or "LLC For educational use
+   only." (a period from neither). BOTH have now happened -- see the assertion below, which had
+   to be widened after catching only the first. */
 const FIXED = "      '&copy; '+RC_COPYRIGHT+' For educational use only.</div>'+";
 const DECL = `var RC_COPYRIGHT='${COPYRIGHT}';`;
 const hasComputed = s.includes(COMPUTED);
@@ -131,10 +132,22 @@ if (!copyrightOk && !CHECK) {
   }
   /* Render the footer the way the app does and read it. Both halves of this string are correct on
      their own and wrong together -- "Inc." plus ". For educational use only." is "Inc.. For". No
-     structural check sees that, and it is on every About page. */
+     structural check sees that, and it is on every About page.
+     The doubled-punctuation half of this check was written from that failure and, on 2026-09-11,
+     PASSED the opposite one: the entity turned out to be "Rounds Codex, LLC", which ends in no
+     period at all, so the footer would have read "Rounds Codex, LLC For educational use only."
+     -- one run-on sentence, no doubled anything. A guard built from one direction of a bug does
+     not cover the other; assert the property you want (exactly one sentence boundary), not the
+     symptom you saw. */
   const rendered = `© ${COPYRIGHT} For educational use only.`;
   if (/\.\./.test(rendered) || /\s\s/.test(rendered)) {
     console.error(`FAIL: the footer would render "${rendered}" -- punctuation doubled`);
+    process.exit(1);
+  }
+  if (!/[.!?]$/.test(COPYRIGHT)) {
+    console.error(`FAIL: the footer would render "${rendered}" -- COPYRIGHT does not end a ` +
+                  'sentence, so it runs into "For educational use only." Give the constant its ' +
+                  'own terminating period.');
     process.exit(1);
   }
 }
