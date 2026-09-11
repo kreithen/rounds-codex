@@ -145,12 +145,27 @@ stay `hello@` or a support alias.
 
 ### 1c. The D-U-N-S number is the actual gate
 
-Free from Dun & Bradstreet, in this order:
+Free from Dun & Bradstreet. **Use Apple's lookup, not D&B's own:**
 
-1. **Look it up — free:** <https://dunsnumberlookup.dnb.com/>
-2. **Only if nothing comes back, request one — free:**
+1. **Look it up AND request it in one form — free:** <https://developer.apple.com/enroll/duns-lookup/>
+   It is D&B-backed, answers immediately whether a number already exists for the entity, and starts
+   the request in the same form if not. Apple's stated turnaround is **up to five business days**,
+   against D&B's own 30 — treat that as optimistic, since it is the same D&B pipeline underneath,
+   but it is the faster door. `native/apple-org-switch.md` step 1 has named this route since
+   2026-08-17.
+2. **The D&B route, if Apple's form will not serve:**
    <https://www.dnb.com/en-us/smb/duns/google-developers.html> (D&B's page for Google developers,
    which is where Play's own "Learn how to find or request a D-U-N-S number" link goes)
+
+⚠ **`dunsnumberlookup.dnb.com` is Europe-only — do not send anyone there.** It was step 1 here until
+2026-09-11, when the physician followed it and found the Country field pre-filled "United Kingdom"
+and the region switcher offering Austria through Sweden with **no United States in the list**. It is
+D&B's EU/UK portal, not a global one, and nothing on the page says so. A US entity cannot be found
+or requested from it at all.
+
+**The same number unblocks Apple too.** The Individual → Organization conversion in
+`native/apple-org-switch.md` has been waiting on exactly this blank since 2026-08-17 (step 3's
+request template has a `D-U-N-S number: ____` line). One lookup serves both stores.
 
 **LOOK IT UP BEFORE REQUESTING.** An incorporated business is often assigned a D-U-N-S already, from
 banking, credit or state-filing data, without anyone applying. A duplicate request creates both a
