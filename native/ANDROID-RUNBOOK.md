@@ -82,7 +82,7 @@ exactly, or the account's standing suffers:
 
 | field | value |
 |---|---|
-| D-U-N-S number | **the gate — see below** |
+| D-U-N-S number | **`148718973`** — obtained 2026-09-11, see §1c |
 | Organization name | Rounds Codex, Inc. |
 | Organization address | as registered with D&B |
 
@@ -144,6 +144,14 @@ This is a different address from the **developer email shown publicly on Play** 
 stay `hello@` or a support alias.
 
 ### 1c. The D-U-N-S number is the actual gate
+
+> ## ✅ OBTAINED 2026-09-11 — **D-U-N-S `148718973`** for Rounds Codex, Inc.
+> Issued through Apple's lookup (route 1 below), which returned it immediately rather than
+> opening a request. **Nothing below needs doing again** — it is kept because the same
+> number now has to survive a name or address change at D&B, and because the
+> Europe-only trap is worth not repeating.
+> The same nine digits serve the Play account **and** the Apple Individual → Organization
+> conversion in `native/apple-org-switch.md`.
 
 Free from Dun & Bradstreet. **Use Apple's lookup, not D&B's own:**
 

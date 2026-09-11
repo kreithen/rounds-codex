@@ -45,6 +45,11 @@ converting rather than assuming.
 
 ## Step 1 — does Rounds Codex, Inc. already have a D-U-N-S number?
 
+> ## ✅ ANSWERED 2026-09-11 — yes: **`148718973`**
+> Returned immediately by the Apple lookup named below, so no request was needed. Step 1 is
+> done; go to step 2. ⚠ D&B's own <dunsnumberlookup.dnb.com> is **Europe-only** and cannot
+> find a US entity — the Apple form is the route that works.
+
 A D-U-N-S number is a free nine-digit ID for a business, issued by Dun & Bradstreet. Apple uses it
 to confirm the company is a real legal entity. **Many incorporated companies already have one
 without knowing** — it gets created when a bank, insurer or supplier looks them up.
@@ -68,7 +73,7 @@ create-a-new-record path for a company that already has one.
 | | |
 |---|---|
 | Legal entity name | Rounds Codex, Inc. — exactly as incorporated |
-| D-U-N-S number | from step 1 |
+| D-U-N-S number | **`148718973`** — obtained 2026-09-11 |
 | Legal address | the registered address, not a mailing address |
 | CEO / Director name | must be someone with authority to sign agreements |
 | Phone | one you will actually answer — Apple often calls to verify |
@@ -92,7 +97,7 @@ the four blanks:
 > Apple Developer Team ID: 744JSM2Z3H
 > Current enrollment: Individual
 > Requested organization name: Rounds Codex, Inc.
-> D-U-N-S number: ____________
+> D-U-N-S number: 148718973
 > Legal entity address: ____________
 > CEO / Director name: ____________
 > Contact phone: ____________
