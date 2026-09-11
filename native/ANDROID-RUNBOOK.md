@@ -574,6 +574,19 @@ account ID **`4703111188826193257`**, owner `admin@roundscodex.com`. Registratio
 1 app, earning money **Yes** (free at launch, subscription planned — see `app-store-plan.md`),
 app category **Telehealth or medical apps** only.
 
+**Contact details as set, confirmed on the Developer account page 2026-09-11:** account owner
+`admin@roundscodex.com` (Joshua Kreithen); contact AND public developer email both
+**`teacher@roundscodex.com`**, green-ticked as verified — which settles the open question of whether
+that mailbox receives mail; both phone numbers `+19413455233`, not yet verified. Organization shows
+as **ROUNDS CODEX, LLC**, website `https://roundscodex.com/`, no associated developer accounts.
+
+⚠ The public developer email and Google's private contact address are the same mailbox. Deliberate
+and fine, but it means the address published on the store listing — and therefore scraped — is also
+where genuine policy notices land. **Play developer phishing is a well-targeted genre** ("your app
+will be removed unless you act within 48 hours"). Real enforcement always appears under **Policy
+status** in the Console; open the Console directly rather than following a link in mail. The public
+address can be changed later independently of the contact one.
+
 Three verifications gate `Create app`, and the third is gated on the first two:
 
 1. **Verify your identity** — a government ID for the individual, not the company. Google's warning
