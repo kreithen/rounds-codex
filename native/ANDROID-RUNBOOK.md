@@ -580,7 +580,10 @@ Three verifications gate `Create app`, and the third is gated on the first two:
    (*"Do not edit or manipulate documents"*) includes the helpful edits: cropping to the card,
    de-skewing, brightening, or running it through a scanner app. Photograph it flat and upload the
    original.
-2. **Verify your organization's website** — `roundscodex.com`.
+2. **Verify your organization's website** — `roundscodex.com`. ✅ **DONE 2026-09-11**, via a
+   Search Console **Domain** property. Google detected GoDaddy and wrote the TXT record itself
+   over an OAuth grant to the GoDaddy account — no hand-copied record, no Netlify involvement.
+   See §6c: the first two attempts failed because the zone is not where the site is served from.
 3. **Verify your phone numbers** — locked until 1 and 2 clear.
 
 ⚠ **The organization document: a Sunbiz search-result screenshot is NOT accepted.** Google's
