@@ -143,6 +143,46 @@ is a second person, not before.
 This is a different address from the **developer email shown publicly on Play** (§1a) — that one can
 stay `hello@` or a support alias.
 
+### 1b-3. ⛔ OPEN AND BLOCKING — the entity is "LLC" at D&B and "Inc." in every project document
+
+**Found 2026-09-11 on the Play Console "Public developer profile" step.** Google pulls the
+organization name from the D&B record behind D-U-N-S `148718973` and displayed it as:
+
+```
+ROUNDS CODEX, LLC
+1 S School Ave Ste 800
+Sarasota - 34237-6045
+United States (US)
+```
+
+Every document in this repository says **`Rounds Codex, Inc.`** — `legal/trademark-plan.md` (the
+applicant), `app-store-submission-draft.md` (the App Store Copyright field), the in-app footer, and
+the `© 2026 Rounds Codex, Inc.` line rendered onto **1,020 illustration pages**.
+
+**An LLC and a corporation are different legal entities, not spellings.** Exactly one of these is
+the filed entity, and until that is settled three things are blocked:
+
+| | what breaks |
+|---|---|
+| Play account | The acknowledgement says apps "may be removed … if Google is unable to verify this organization". Verification compares this name to an official document. |
+| Apple conversion | `native/apple-org-switch.md` step 3 requests the name `Rounds Codex, Inc.` against this same D-U-N-S. That file's own "if it stalls" list has name mismatch as cause 1, and notes **Apple reads the D&B record and does not correct it.** |
+| Shipped content | The copyright notice on 1,020 pages, the in-app footer, and the trademark applicant would all name a company that does not exist. |
+
+**Resolve at the source: the Florida Division of Corporations (Sunbiz) business search** — exact
+registered name, entity type, principal address. Not from D&B, not from memory, and not from this
+repository, which is the thing under suspicion.
+
+- **If Sunbiz says `Inc.`** — the D&B record is wrong. Fix it at D&B *first* and let it propagate;
+  do not enter the number anywhere until it matches, because both stores read that record.
+- **If Sunbiz says `LLC`** — the Play profile as shown is already correct, and the correction work
+  is ours: the trademark applicant, the App Store Copyright field, the in-app footer, and the
+  rendered copyright line on 1,020 illustration pages.
+
+⚠ The D&B record carries a specific street address and suite, which is the shape of a record built
+from real state filings rather than a stub. That is weak evidence for `LLC` being the filed entity
+and `Inc.` being an assumption that propagated through the docs unchallenged — **weak evidence, not
+a finding.** Read Sunbiz.
+
 ### 1c. The D-U-N-S number is the actual gate
 
 > ## ✅ OBTAINED 2026-09-11 — **D-U-N-S `148718973`** for Rounds Codex, Inc.
