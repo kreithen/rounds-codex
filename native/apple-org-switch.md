@@ -99,13 +99,26 @@ the four blanks:
 > Website: https://roundscodex.com
 >
 > The organization is an incorporated legal entity and I am authorised to bind it to the Apple
-> Developer Program Licence Agreement. There are no apps currently published under this account.
+> Developer Program Licence Agreement. One app is published under this account — Rounds Codex:
+> Clinical Atlas (Apple ID 6802452599), live since 26 August 2026 — and it should remain on the
+> same team after conversion; I am not requesting an app transfer.
 >
 > Please let me know if you need any further documentation.
 
-The last paragraph is worth keeping: **an account with no published apps is the simplest case there
-is**, and saying so up front removes the app-transfer question before anyone asks it. That advantage
-disappears the moment v1.0.0 is on sale — which is a reason to file now rather than after launch.
+⚠ **That last paragraph was rewritten on 2026-09-11 and the original must not be used.** As written
+on 2026-08-17 it said *"There are no apps currently published under this account"*, which was true
+then and became false on **2026-08-26**, when Rounds Codex: Clinical Atlas went live. Sending the
+original now is a false statement to Apple on a form a human reads — and the simplest possible way
+to have the request bounced or the account flagged.
+
+The section below it predicted exactly this (*"that advantage disappears the moment v1.0.0 is on
+sale"*) and the deadline was missed by nine days. **A template containing a fact that expires needs
+the expiry written into it, not into the prose underneath.** The replacement states the app and
+says plainly that no transfer is wanted, which is the question the original was trying to pre-empt.
+
+The advantage that is now gone: an account with no published apps is the simplest case there is,
+and Apple has no app-transfer question to ask. With one app live, name it and rule the transfer out
+yourself rather than leaving it to be asked.
 
 ## Step 4 — while you wait
 
