@@ -605,6 +605,44 @@ to `LLC` on 2026-09-11 but nothing has been deployed since. Google inspects the 
 website during verification, so **fix this before submitting step 2** if there is time: re-run the
 stamper and ship a v134. Deploying touches the live repo, so it needs the physician's go-ahead.
 
+## 6c. DNS for roundscodex.com is at GODADDY, and there is a live SPF defect
+
+**Established 2026-09-11 while verifying the organization's website.** Two things worth keeping.
+
+**The domain is not where the app is.** `roundscodex.com` is served by a *separate* Netlify project
+called **`roundscodexwebsite`** (`bf814a35-8afd-4f7c-8bde-4b23566409ea`); the app is `rounds-codex`
+at `rounds-codex.netlify.app`. Both in team `6a3c2e9ecd5364928a3f1ede`. I sent the physician to
+Netlify's DNS panel first and that was wrong twice over — wrong project, and **Netlify does not host
+this zone at all.** `roundscodex.com` resolves to `75.2.60.5`, Netlify's apex load balancer, which
+looks identical whether Netlify hosts the DNS or a registrar merely points an A record at it. **That
+IP does not tell you who is authoritative.** There is no `dig` in the container and the Netlify MCP
+exposes no DNS records, so this could not be settled from here — Search Console named GoDaddy
+itself, and Google's own flow then writes the TXT record over an OAuth grant to the GoDaddy account.
+
+**⛔ `roundscodex.com` has TWO SPF records, so SPF is failing outright.** Read out of a Search
+Console failure dialog, which helpfully dumps the whole TXT set:
+
+```
+v=spf1 include:zoho.com ~all
+v=spf1 include:secureserver.net -all
+zoho-verification=zb86404007.zmverify.zoho.com
+NETORGFT20979104.onmicrosoft.com          <- GoDaddy-provisioned Microsoft 365
+google-site-verification=Yi07KDFvGgUoYxW-W0uvmGz9vbtG52C_RXMQZJlFWlI
+google-site-verification=AbC123           <- Google's DOCUMENTATION PLACEHOLDER
+```
+
+**A domain may have exactly one SPF record.** RFC 7208 §4.5: a checker that finds more than one
+returns `permerror` and the evaluation fails — it does not merge them or pick one. So every message
+sent from this domain currently fails SPF, which costs deliverability. This matters now because
+Google's account-critical Play notices are wired to an address on this domain and the physician will
+be corresponding with Google and D&B from it.
+Fix: establish which provider actually sends (Zoho, or the GoDaddy/M365 tenant), keep one record, or
+merge — `v=spf1 include:zoho.com include:secureserver.net ~all`. **Confirm before deleting; removing
+the live one breaks mail rather than fixing it.** Not done as of 2026-09-11.
+`google-site-verification=AbC123` is litter from someone pasting Google's example value; safe to
+delete. The `Yi07KDF…` one may hold a real verification — leave it. Multiple Google verification TXT
+records coexist fine.
+
 ## 7. App Links — and the ordering that is easy to get wrong
 
 `/.well-known/assetlinks.json` needs the SHA-256 of the **Play App Signing** key, and that
