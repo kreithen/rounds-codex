@@ -567,6 +567,44 @@ packs maximum** are confirmed; the handoff's figures of 1 GB combined for instal
 proxy). 742 MB is comfortably under any of them, and **Play Console computes and displays the real
 compressed size at upload**, which is the only number that decides anything.
 
+## 6b. The account exists — verification, and which document Google wants
+
+**Play Console organization account created 2026-09-11.** Developer name **Rounds Codex**,
+account ID **`4703111188826193257`**, owner `admin@roundscodex.com`. Registration answers used:
+1 app, earning money **Yes** (free at launch, subscription planned — see `app-store-plan.md`),
+app category **Telehealth or medical apps** only.
+
+Three verifications gate `Create app`, and the third is gated on the first two:
+
+1. **Verify your identity** — a government ID for the individual, not the company. Google's warning
+   (*"Do not edit or manipulate documents"*) includes the helpful edits: cropping to the card,
+   de-skewing, brightening, or running it through a scanner app. Photograph it flat and upload the
+   original.
+2. **Verify your organization's website** — `roundscodex.com`.
+3. **Verify your phone numbers** — locked until 1 and 2 clear.
+
+⚠ **The organization document: a Sunbiz search-result screenshot is NOT accepted.** Google's
+category is *"a state-issued certificate of business registration or incorporation"*, and the
+entity-detail page is a rendering of a database lookup — not issued, not stamped, not a
+certificate. **The right file is linked at the bottom of that same page**: the
+`08/17/2026 -- Florida Limited Liability` row's **"View image in PDF format"** button, which is the
+**Articles of Organization as filed and imaged by the Division of Corporations**. Download and
+upload that, unmodified.
+Fallback if it is refused: Florida sells a **Certificate of Status** on sunbiz.org for ~$5 —
+literally titled a certificate, dated and issued by the Department of State. Do not buy it
+pre-emptively.
+
+⚠ **`FEI/EIN Number: NONE`** on the state record, so Google's first accepted document (an IRS
+CP 575 confirming an EIN) is not available. No EIN is needed to register or to publish a free app.
+One **will** be needed for business banking and for the **Paid Applications agreement** when the
+subscription lands; it is free and issued instantly by the IRS.
+
+⚠ **The live site still names the wrong entity at the time of writing.** `rounds-codex-app` is on
+v133, whose footer carries `© 2026 Rounds Codex, Inc.` — `scripts/stamp_version.js` was corrected
+to `LLC` on 2026-09-11 but nothing has been deployed since. Google inspects the organization's
+website during verification, so **fix this before submitting step 2** if there is time: re-run the
+stamper and ship a v134. Deploying touches the live repo, so it needs the physician's go-ahead.
+
 ## 7. App Links — and the ordering that is easy to get wrong
 
 `/.well-known/assetlinks.json` needs the SHA-256 of the **Play App Signing** key, and that
