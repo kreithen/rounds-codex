@@ -145,11 +145,20 @@ stay `hello@` or a support alias.
 
 ### 1c. The D-U-N-S number is the actual gate
 
-Free from Dun & Bradstreet. Request it for **Rounds Codex, Inc.** at the registered legal name and
-address. Standard issue takes up to about 30 business days; D&B sells an expedited option. **This is
-the only step here with an unbounded wait, so start it first and let everything else queue behind
-it.** If Rounds Codex, Inc. already has one, look it up rather than requesting a second — duplicate
-D&B records are their own delay.
+Free from Dun & Bradstreet. **LOOK IT UP BEFORE REQUESTING ONE** — an incorporated business is often
+assigned a D-U-N-S already, and requesting a duplicate creates its own delay and a second record to
+reconcile. The Play signup screen links straight to D&B's lookup/request page ("Learn how to find or
+request a D-U-N-S number"); use that link rather than a remembered URL.
+
+If there is none, request it for **Rounds Codex, Inc.** at the registered legal name and address.
+Standard issue takes up to about 30 business days; D&B sells an expedited option. **This is the only
+step here with an unbounded wait, so start it first and let everything else queue behind it.**
+
+**Google does not simply trust D&B.** The signup screen says you will have to verify the information
+Google receives from Dun & Bradstreet **by providing an official business document** — articles of
+incorporation, a business licence, or equivalent for Rounds Codex, Inc. Have that PDF to hand before
+starting, because it is asked for mid-flow, and its name and address must match both the D&B record
+and the Google payments profile.
 
 ### 1d. What you can skip: there is no merchant/payout account to set up
 
