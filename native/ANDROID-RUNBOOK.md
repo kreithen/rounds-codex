@@ -145,14 +145,26 @@ stay `hello@` or a support alias.
 
 ### 1c. The D-U-N-S number is the actual gate
 
-Free from Dun & Bradstreet. **LOOK IT UP BEFORE REQUESTING ONE** — an incorporated business is often
-assigned a D-U-N-S already, and requesting a duplicate creates its own delay and a second record to
-reconcile. The Play signup screen links straight to D&B's lookup/request page ("Learn how to find or
-request a D-U-N-S number"); use that link rather than a remembered URL.
+Free from Dun & Bradstreet, in this order:
 
-If there is none, request it for **Rounds Codex, Inc.** at the registered legal name and address.
-Standard issue takes up to about 30 business days; D&B sells an expedited option. **This is the only
-step here with an unbounded wait, so start it first and let everything else queue behind it.**
+1. **Look it up — free:** <https://dunsnumberlookup.dnb.com/>
+2. **Only if nothing comes back, request one — free:**
+   <https://www.dnb.com/en-us/smb/duns/google-developers.html> (D&B's page for Google developers,
+   which is where Play's own "Learn how to find or request a D-U-N-S number" link goes)
+
+**LOOK IT UP BEFORE REQUESTING.** An incorporated business is often assigned a D-U-N-S already, from
+banking, credit or state-filing data, without anyone applying. A duplicate request creates both a
+delay and a second record to reconcile. Search the **exact legal name and registered address from
+the articles of incorporation**, including "Inc." — a near-miss search is how people conclude they
+have none.
+
+**Timing:** standard issue takes **up to 30 days**; D&B sells an **expedited option at about 8
+business days** for a small fee. Since this is the only thing blocking the account, the fee usually
+buys back more schedule than it costs.
+
+**If the record exists but the name or address is stale, fix it at D&B BEFORE entering the number.**
+Google pulls the business information from D&B and then asks you to confirm it against an official
+document, so a stale record becomes a failed verification rather than a quick correction.
 
 **⚠ THE ENTRY DIALOG LIMITS YOUR ATTEMPTS.** The Play Console screen that asks for the number says
 plainly: *"You have a limited number of tries to enter the correct D-U-N-S number for your
