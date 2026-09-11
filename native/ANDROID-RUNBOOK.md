@@ -460,11 +460,25 @@ compressed size at upload**, which is the only number that decides anything.
 fingerprint does not exist until you have uploaded a bundle. So the order is fixed:
 
 1. Upload a bundle to internal testing (step 8).
-2. Play Console → **App integrity** → read the SHA-256 of the app signing certificate.
-3. Deploy `assetlinks.json` to the web root with that fingerprint. **Ask before deploying — the app
-   repo is the live site.** Give `_headers` the `Content-Type: application/json` line the AASA
-   already has.
-4. Reinstall and test.
+2. Play Console → **Test and release → App integrity → App signing key certificate** → copy the
+   **SHA-256** line. ⚠ That page shows the *upload* key's fingerprint too, on the same screen. Play
+   re-signs every bundle with the app signing key, so **the upload key's fingerprint produces a file
+   that verifies against nothing** — and the failure is silent, links just open in Chrome.
+3. Generate the file rather than typing it:
+
+   ```
+   node scripts/make_assetlinks.js <SHA-256> /path/to/rounds-codex-app/.well-known/assetlinks.json
+   ```
+
+   It takes the fingerprint with or without colons, in either case, and refuses a SHA-1 (the other
+   fingerprint on that page) by name. `node scripts/make_assetlinks.js --check <file>` validates an
+   existing one — wrong relation string, `namespace` not `android_app`, wrong package, malformed
+   fingerprint. Run the check before deploying; none of those four errors surfaces anywhere at
+   runtime.
+4. Deploy it. **Ask before deploying — the app repo is the live site.** Give `_headers` the
+   `Content-Type: application/json` line the AASA already has.
+5. Reinstall and test. `adb shell pm get-app-links com.roundscodex.app` is the only place Android
+   says out loud whether verification succeeded.
 
 The manifest side goes in `android/app/src/main/AndroidManifest.xml`, inside `.MainActivity` —
 the template ships with only the LAUNCHER filter, so this is an addition:
