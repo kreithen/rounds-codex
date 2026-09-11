@@ -178,6 +178,25 @@ repository, which is the thing under suspicion.
   is ours: the trademark applicant, the App Store Copyright field, the in-app footer, and the
   rendered copyright line on 1,020 illustration pages.
 
+**What the correction would actually cost, if the answer is `LLC`.** Two very different halves:
+
+- **Cheap.** The name is ONE constant — `scripts/stamp_version.js:58`,
+  `const COPYRIGHT = '2026 Rounds Codex, Inc.'` — injected as `RC_COPYRIGHT` into the in-app
+  footer, with a `--check` mode already run before any archive or deploy. The App Store Copyright
+  field is a form field, editable with the next version submission. The trademark applicant has not
+  been filed. All of that is an edit and a re-run.
+- **Expensive.** The `© 2026 Rounds Codex, Inc.` notice on **1,020 illustration pages** is rendered
+  into the artwork, so changing it is a re-render of every page, not a string replace.
+
+So the decision to take before any re-render is whether the notice on existing pages must change at
+all. Copyright notice has not been required for validity since 1989 and a wrong entity form does not
+forfeit the copyright; what the entity name genuinely governs is the **claimant on the registration
+filing** and the **trademark applicant**, neither of which is filed yet. Getting those two right is
+the thing that matters; the rendered pages are a cosmetic follow-on that can be scheduled.
+
+⚠ **"LLC" appears nowhere in this repository** — checked across every file type, zero hits. This is
+not a known ambiguity someone recorded and moved past; the project has only ever known "Inc."
+
 ⚠ The D&B record carries a specific street address and suite, which is the shape of a record built
 from real state filings rather than a stub. That is weak evidence for `LLC` being the filed entity
 and `Inc.` being an assumption that propagated through the docs unchallenged — **weak evidence, not
