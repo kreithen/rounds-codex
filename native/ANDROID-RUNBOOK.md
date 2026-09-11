@@ -154,6 +154,12 @@ If there is none, request it for **Rounds Codex, Inc.** at the registered legal 
 Standard issue takes up to about 30 business days; D&B sells an expedited option. **This is the only
 step here with an unbounded wait, so start it first and let everything else queue behind it.**
 
+**⚠ THE ENTRY DIALOG LIMITS YOUR ATTEMPTS.** The Play Console screen that asks for the number says
+plainly: *"You have a limited number of tries to enter the correct D-U-N-S number for your
+organization."* So do not type a plausible-looking number to see what happens, and do not work from
+memory. Get the verified number first; Cancel out of that dialog and the earlier steps stay ticked
+in the sidebar.
+
 **Google does not simply trust D&B.** The signup screen says you will have to verify the information
 Google receives from Dun & Bradstreet **by providing an official business document** — articles of
 incorporation, a business licence, or equivalent for Rounds Codex, Inc. Have that PDF to hand before
