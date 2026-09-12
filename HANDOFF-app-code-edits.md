@@ -110,8 +110,18 @@ asserts eleven shipped rules before it will run:
 ```
 
 **`.app{width:100%;max-width:468px` is on that list, and raising the 468 px cap is Level 1 of the
-large-screen plan.** So the very first edit of that project will fail `add_safe_area.js`. Expected.
-Update the `EXPECT` regex in the same commit and say so in the message.
+large-screen plan.** ~~So the very first edit of that project will fail `add_safe_area.js`.~~
+**It did not, and the prediction was wrong in a useful way (2026-09-12).** Mobile-first is the
+reason: `add_large_screen.js` leaves the base rule byte-identical and widens the container in an
+appended `@media (min-width:...)` block, so all eleven anchors stay green. **Override at min-width,
+never edit the base rule** — that keeps the whole `EXPECT` list intact and is better CSS anyway.
+
+The anchor that *did* break was one nobody predicted: `add_safe_area.js` appends against the literal
+`'</style></head>\n<body>'`, and inserting a new `<style>` block with a newline before `</head>`
+took that to zero occurrences — "expected exactly 1 head-close anchor, found 0", which stops the
+payload build. `add_large_screen.js` now asserts that anchor is still at exactly 1 *after* its own
+write, and refuses to save otherwise. **Run the chain after a CSS-only change; that is how this was
+caught.**
 
 Run the chain after any app edit, even a CSS one:
 
@@ -239,12 +249,30 @@ was asked for explicitly and repeatedly.
 
 ## 7. The open list
 
-**Layout (the named job).** `large-screen-plan.md`, Level 1 first: raise the container cap at
-`min-width` breakpoints, let the gallery grid reflow, and **cap the prose measure separately** — the
-container widens, the reading column does not. Measured 2026-08-09 for that plan and worth re-measuring before
-you start: fourteen media queries in the file, every one `max-width`, not a single `min-width` rule.
+**Layout (the named job).** ~~`large-screen-plan.md`, Level 1 first.~~ **LEVEL 1 IS BUILT,
+2026-09-12, on branch `claude/ios-large-screen-layout-6n2sur` — and NOT DEPLOYED.** It is a CSS
+change plus two one-line JS edits to the live app's `index.html`, which is a deploy and needs the
+physician's approval before it lands. `scripts/add_large_screen.js` applies it,
+`scripts/verify_large_screen.js` guards it (15 checks, 11 of which fail on the pre-fix tree), and
+`preflight.sh` runs it. What the plan got wrong is corrected in a banner at the top of that file;
+the two that matter are that only `.res-grid` was ever `auto-fill` (the gallery grid is a hard
+`1fr 1fr`) and that the shipped 468 px column was already at a 62–75 character measure, so the
+reading views could only be widened to 520 px. Re-counted while there: **twenty** media queries, not
+fourteen, and still not one `min-width` before this change.
+
+**Level 2 is the next layout job**, and the Level 1 measurements argue for a specific first step:
+the condition page is the one reading view with headroom left, and the way to spend an 880 px screen
+on it is two columns of `.panel` cards at roughly phone measure each, not a wider ribbon.
 
 **Still open, roughly in order of value:**
+
+- **`stamp_version.js` fails on the shipped tree, and it blocks every native payload build.** The
+  live `index.html` carries `RC_COPYRIGHT='2026 Rounds Codex, Inc.'`; the repo's scripts expect
+  `'2026 Rounds Codex, LLC.'` — §6 records that the entity is LLC, but the correction never reached
+  the website. `preflight.sh web` reports it as `version and copyright FAIL` and `preflight.sh ios`
+  dies at the first patcher, before it can check anything. Pre-existing, verified against an
+  unpatched tree on 2026-09-12. It is the physician's legal entity name on a shipped page, so it is
+  their call, not a drive-by fix — but nothing native can be built until it is made.
 
 - Choose the OG card, apply `add_og_tags.js`, deploy as v134 *(needs approval)*
 - EU availability — DSA trader status; decide what name and address are publicly displayed

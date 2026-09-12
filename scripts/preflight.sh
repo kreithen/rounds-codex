@@ -92,6 +92,7 @@ fi
 # ---- browser suites ------------------------------------------------------------------------------
 if [ -z "${RC_PW:-}" ] || [ ! -d "${RC_PW:-}/node_modules/playwright-core" ]; then
   skip "app end-to-end"       "RC_PW unset or playwright-core missing"
+  skip "large-screen layout"  "RC_PW unset or playwright-core missing"
   skip "native variant"       "RC_PW unset or playwright-core missing"
   [ "$MODE" = web ] && skip "media root" "RC_PW unset or playwright-core missing"
 else
@@ -100,6 +101,10 @@ else
   SIM=$!; sleep 2
   run "app end-to-end"        node "$HERE/audit_app_e2e.js" "http://127.0.0.1:$PORT"
   kill $SIM 2>/dev/null
+  # Large screens (Level 1 of large-screen-plan.md). Starts its own sim on 8931, so it does not
+  # share $PORT. Its "phone layout unchanged" sub-check needs a second, unpatched tree to diff
+  # against and reports itself as SKIP here -- run it by hand with --before when changing the CSS.
+  run "large-screen layout"   node "$HERE/verify_large_screen.js" "$TREE"
   if [ "$NATIVE" = yes ]; then
     run "native variant"      node "$HERE/verify_ios_variant.js" "$TREE" $((PORT+10))
   else

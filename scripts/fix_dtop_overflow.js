@@ -42,6 +42,14 @@
  *
  * `positionThumbs()` measures offsetLeft/offsetWidth and is already wired to resize, so the
  * sliding thumb follows the buttons. No JS change needed.
+ *
+ * CORRECTION, 2026-09-12: the two sentences above were WRONG. `positionThumbs()` was called from
+ * `setMode()` and from `paint()` and from nothing else -- there was no resize listener, so the
+ * thumb did NOT follow the buttons across a viewport change. Measured: at 390px the toggle's
+ * active button is 56px wide (the @media(max-width:405px) padding), at 1024px it is 65px, and
+ * after resizing between them the thumb stayed at 56. Live on any iPhone whose portrait width is
+ * under 405pt, every time it was rotated. `scripts/add_large_screen.js` adds the listener.
+ * Recorded here rather than just deleted, because a confident comment is how it went unexamined.
  */
 'use strict';
 const fs = require('fs');

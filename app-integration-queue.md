@@ -1,5 +1,25 @@
 # Live app (`index.html`) — integration & change queue
 
+> **PENDING DEPLOY 2026-09-12 — large screens (Level 1).** Built and verified on branch
+> `claude/ios-large-screen-layout-6n2sur`, **not pushed to `rounds-codex-app`** because that is a
+> deploy and needs the physician's go-ahead. It ships to every web user the moment it lands.
+>
+> - Apply with `node scripts/add_large_screen.js <app-clone>` (idempotent; refuses to run twice).
+> - Verify with `RC_PW=<dir> node scripts/verify_large_screen.js <app-clone> --before <clean-clone>`.
+> - The change is provably **three insertions totalling 4,113 bytes** into `index.html` and nothing
+>   else: one `<style id="rc-large-screen">` block, one line in `paint()` publishing
+>   `.app[data-view]`, and `addEventListener('resize',positionThumbs)`. Removing exactly those three
+>   restores the shipped file byte for byte.
+> - Above 720 px the container goes 468 → 680 and above 1024 px → 880; the library, gallery, drug
+>   and clinical-updates grids reflow (4 columns of gallery pages at 1024 instead of 2); reading
+>   views are held at 520 px. **Below 720 px the rendered geometry of 17 views is identical to what
+>   is live**, measured at 320/375/390/430.
+> - It also fixes a pre-existing bug: the mode toggle's sliding thumb was left 9 px short of its
+>   button after any rotation across the 405 px breakpoint.
+> - **A deploy also needs the `RC_COPYRIGHT` entity settled** — the live file says
+>   `2026 Rounds Codex, Inc.` and `stamp_version.js` expects `LLC.`, so `preflight.sh` fails on that
+>   line with or without this change, and the native payload build cannot run at all.
+
 > **STATUS 2026-07-20:** Items 1–8 below, the **USMLE Mode** + **Resident Mode expansion**
 > content integrations, AND the **5 Cardiology galleries + 3 Cardiology quizzes** are all
 > BUILT & VERIFIED into `applive/index.html` (local, gitignored).
