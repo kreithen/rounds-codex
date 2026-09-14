@@ -238,7 +238,9 @@ was asked for explicitly and repeatedly.
   148718973.
 - **The app is not available in the EU** — DSA trader status is unfiled. The physician hit this in
   Norway. Open.
-- **Universal Links do not work.** `applinks:roundscodex.com` points at `roundscodexwebsite`, a
+- **Universal Links do not work** — corroborated 2026-09-14 and now written up in
+  `UNIVERSAL-LINKS.md`, with the web half verified correct and guarded by
+  `scripts/verify_universal_links.js`. `applinks:roundscodex.com` points at `roundscodexwebsite`, a
   *different* Netlify site with no AASA. `RC_SHARE_ORIGIN` is `https://rounds-codex.netlify.app`
   and is correct. 1.0.1 item.
 - **The Open Graph card is built but not shipped.** `scripts/build_og_card.py` renders two 1200×630

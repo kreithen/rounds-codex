@@ -25,10 +25,24 @@ repo against it: `native/ios-project/App.entitlements` — the reference copy �
 three hosts, `rounds-codex.netlify.app` included, and its comment gives the same reasoning I
 rederived independently.
 
-So either the Mac's real `App.entitlements` matches that reference, in which case Universal Links
-may already be configured correctly and something else is wrong, or it does not, in which case the
-handoff is right. **A session cannot tell**: the file is in `~/rounds-codex-ios`, in neither repo,
-and the reference copy has never been compiled.
+**Then I found the record that settles it, and it favours the handoff.** `app-store-checklist.md`
+§4, written when build 1 was archived on 2026-08-17, lists the configuration as it was actually set:
+
+> Configured: iPhone + iPad, iOS 15.0 minimum, display name `Rounds Codex`, category
+> `public.app-category.medical`, **Associated Domains `applinks:roundscodex.com`**,
+> `ITSAppUsesNonExemptEncryption=false` …
+
+One host. Not the netlify.app one. And `native/ios-project/README.md` is dated the same day and says
+its files have **never been compiled** — so the three-host reference was written as a proposal and,
+on this evidence, never applied.
+
+That is a contemporaneous record rather than a reading of the live file, and builds 2 to 4 could in
+principle have changed it with nothing written down. So: **strong evidence the entitlement claims
+only `roundscodex.com`, and no way from here to confirm what build 4 actually shipped.** Look at the
+file before changing it; the check takes ten seconds and this document was wrong once already.
+
+This ambiguity is exactly what putting the project in a repo removes — see
+`native/PUT-XCODE-PROJECT-IN-GIT.md`.
 
 What is measured, and holds either way:
 
