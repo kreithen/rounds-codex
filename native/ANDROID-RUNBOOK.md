@@ -561,6 +561,22 @@ it in a review.**
 **Whichever wins, write it down in `HANDOFF-android-app.md` §4.3 with the date.** This is the open
 question the whole Android size story hangs on.
 
+> ## ✅ MEASURED 2026-09-14 — the base module is **84.2 MB**, against a 200 MB cap
+> Built from the live v134 tree:
+> `node scripts/build_native_payload.js ../rounds-codex-app <out> --platform android --asset-packs`
+>
+> | | |
+> |---|---|
+> | stripped into asset packs | 1,153 files, **741.9 MB** |
+> | removed as unreachable | 174 files, 82.1 MB |
+> | **base module payload** | **84.2 MB — 115.8 MB of headroom** |
+>
+> Two caveats stated rather than buried. That is the **uncompressed** payload measured against a
+> **compressed** cap, so the real figure at upload is smaller and the headroom is conservative in
+> the right direction — but Play computes the authoritative number, not us. And this assumes the
+> **asset-pack** route; the streaming alternative (`RC_MEDIA_ROOT`) changes what the listing may
+> claim about offline use, and that decision is still open below.
+
 ⚠ Play's documented ceilings: **200 MB compressed download for the base module** and **100 asset
 packs maximum** are confirmed; the handoff's figures of 1 GB combined for install-time packs and
 2 GB for all packs could not be re-verified here (`support.google.com` is blocked by the egress
