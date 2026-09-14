@@ -7,9 +7,16 @@
        https://rounds-codex.netlify.app . Claiming only roundscodex.com would mean a link shared
        FROM the app opens in Safari rather than in the app: the commonest case, silently broken,
        with iOS reporting nothing.
-       Both hosts serve the same Netlify site, so one /.well-known/apple-app-site-association
-       answers for both. Verified in production on the netlify.app host (the one reachable from a
-       container): 200 application/json, zero redirects, appID 744JSM2Z3H.com.roundscodex.app.
+       CORRECTED 2026-09-14: this comment used to say both hosts serve the same Netlify site and
+       that one apple-app-site-association therefore answers for both. That is FALSE, measured
+       through the Netlify API: roundscodex.com is served by the project `roundscodexwebsite`
+       (bf814a35-8afd-4f7c-8bde-4b23566409ea) and the app by `rounds-codex`
+       (15778795-d2c2-4196-a2d5-fdaa5657a573). Two sites, two document roots.
+       So the netlify.app line is the one carrying the feature. Verified in production on that host:
+       200 application/json, zero redirects, appID 744JSM2Z3H.com.roundscodex.app, routes matching
+       the app's own RC_ROOT and RC_OPEN_ROUTES regexes (scripts/verify_universal_links.js).
+       The two roundscodex.com lines are inert until that domain serves this app's AASA. Harmless,
+       and worth keeping for the day the brand domain becomes canonical.
        When roundscodex.com becomes canonical and RC_SHARE_ORIGIN moves, the netlify.app line can
        go, but not before; old shared links will keep arriving at it for a long time.
        NOTE: no double hyphen anywhere in this comment. XML forbids it inside a comment, and a

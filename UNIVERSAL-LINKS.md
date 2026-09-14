@@ -1,4 +1,4 @@
-# Universal Links — what is broken, and the one change that fixes it
+# Universal Links — what is measured, what is not, and the change to check
 
 Measured 2026-09-14. Guarded by `scripts/verify_universal_links.js`, wired into `preflight.sh`.
 
@@ -17,25 +17,46 @@ Measured 2026-09-14. Guarded by `scripts/verify_universal_links.js`, wired into 
 
 Nothing on the website needs changing.
 
-## What is broken
+## What I do NOT know, and said too confidently before
 
-**The app's `applinks:` entitlement names `roundscodex.com`.** Confirmed through the Netlify API:
-that domain is served by a **different site** — `roundscodexwebsite`, id `bf814a35-8afd-4f7c-8bde-4b23566409ea`
-— from the one serving the app, `rounds-codex`, id `15778795-d2c2-4196-a2d5-fdaa5657a573`.
+I first wrote here that the fault is the app's `applinks:` entitlement naming `roundscodex.com`.
+**That was taken from `HANDOFF-app-code-edits.md`, not measured**, and there is evidence in this
+repo against it: `native/ios-project/App.entitlements` — the reference copy — already claims all
+three hosts, `rounds-codex.netlify.app` included, and its comment gives the same reasoning I
+rederived independently.
 
-**The decisive point does not depend on what `roundscodex.com` serves.** `RC_SHARE_ORIGIN` is
-`rounds-codex.netlify.app`, so every `/c/<id>` link the app has ever produced points at that host.
-For iOS to open one in the app, the entitlement must name **that** host. Putting an AASA on
-`roundscodex.com` would not rescue a single link the app has shared.
+So either the Mac's real `App.entitlements` matches that reference, in which case Universal Links
+may already be configured correctly and something else is wrong, or it does not, in which case the
+handoff is right. **A session cannot tell**: the file is in `~/rounds-codex-ios`, in neither repo,
+and the reference copy has never been compiled.
 
-`roundscodex.com` cannot be fetched from a session — the agent proxy refuses CONNECT with a 403,
-which says nothing about the host — so whether it serves an AASA today is unknown and does not
-matter to this fix.
+What is measured, and holds either way:
+
+- `roundscodex.com` is served by the Netlify project `roundscodexwebsite`
+  (`bf814a35-8afd-4f7c-8bde-4b23566409ea`); the app is served by `rounds-codex`
+  (`15778795-d2c2-4196-a2d5-fdaa5657a573`). **Two different sites.**
+- `RC_SHARE_ORIGIN` is `rounds-codex.netlify.app`, so every `/c/<id>` link the app has ever produced
+  points there and the entitlement must name that host.
+- That host's AASA is correct and correctly served, verified against the live site.
+
+**Two defects found in the reference files, both corrected 2026-09-14** — worth knowing because
+these are the files someone drops into Xcode:
+
+- `capacitor.config.json` said `"contentInset": "always"`. That is the exact value
+  `scripts/add_safe_area.js` documents as causing headers to render under the Dynamic Island on
+  every cold load, found on an iPhone 16 Pro Max and fixed with `"never"`. Dropping the old file in
+  would have reintroduced a device bug that cost a debugging session.
+- `App.entitlements` claimed both hosts serve the same Netlify site, so one AASA answers for both.
+  Measured false, as above.
 
 ## The fix — one line, on the Mac
+## The fix — one line, on the Mac
 
-In `~/rounds-codex-ios`, open **App.entitlements** (Xcode: target App → Signing & Capabilities →
-Associated Domains) and change the entry to:
+**First read what is actually there** — that is the step this document was missing. In
+`~/rounds-codex-ios`, open **App.entitlements** (Xcode: target App → Signing & Capabilities →
+Associated Domains). If it already lists `applinks:rounds-codex.netlify.app`, the entitlement is
+not the fault and the next thing to check is whether the installed build is old enough to predate
+it. If it does not, add it:
 
 ```
 applinks:rounds-codex.netlify.app
