@@ -253,7 +253,7 @@ replaceOnce('</style>\n<script>',
    than wrapping, so a top-right star ends up sitting on top of the title. Reserving space
    with padding cannot fix an unbreakable word; only mid-word breaking or truncation would,
    and neither is acceptable on a medical term. The ICD line is short and predictable. */
-.card .cbm{position:absolute;bottom:2px;right:2px;width:44px;height:44px;display:grid;place-items:center;
+.card .cbm{position:absolute;bottom:2px;right:2px;width:50px;height:50px;display:grid;place-items:center;
   border-radius:12px;color:var(--muted-2);opacity:.55;transition:opacity .15s,color .15s,background .15s;
   -webkit-tap-highlight-color:transparent;}
 .card .cbm svg{width:17px;height:17px;}

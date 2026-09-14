@@ -544,10 +544,10 @@ var RCAP_CSS = [
 ' font-variant-numeric:tabular-nums;color:#4a4a4a;display:none;flex:0 0 auto}',
 /* One row at every width, which is also what the mockup shows. The two-row phone
    layout that preceded this bought a wider slider and cost 55px of height. */
-'.rcap-bar{position:relative;display:flex;align-items:center;gap:4px;',
-' background:#131313;border-radius:7px;padding:5px 6px}',
+'.rcap-bar{position:relative;display:flex;align-items:center;gap:4px;min-height:48px;',
+' background:#131313;border-radius:7px;padding:2px 6px}',
 '.rcap-transport,.rcap-util{display:flex;align-items:center;gap:1px;flex:0 0 auto}',
-'.rcap-b{background:none;border:0;padding:2px;cursor:pointer;color:#fff;',
+'.rcap-b{background:none;border:0;padding:2px;min-height:44px;box-sizing:border-box;cursor:pointer;color:#fff;',
 ' display:inline-flex;align-items:center;justify-content:center;border-radius:5px}',
 '.rcap-b svg{width:17px;height:17px;display:block}',
 '.rcap-u svg{width:15px;height:15px}',
