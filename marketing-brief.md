@@ -53,6 +53,34 @@ before any campaign — do not copy a number out of an old draft, including this
 | resident-level entries | 1,418 |
 | narrated recordings | **31**, with CarPlay support |
 
+> ## ⚠ Two claims that went out wrong in the 2026-08-30 launch email — do not repeat them
+>
+> Campaign `92cb3898` reached 25 people. Neither error is in the App Store or Play listings, which
+> word it correctly; the email is the outlier, so **do not use it as a template for the Android
+> announcement.**
+>
+> **1. "2,900+ USMLE & NCLEX questions with rationales" — overstated about 2.5x as labelled.**
+> USMLE is 1,010 and NCLEX is 150: **1,160**. The ~3,000 figure only holds by adding the 1,840
+> condition quizzes, which are neither USMLE nor NCLEX. The total is real and worth stating — it
+> just is not what that label says. This is exactly the class of specific, checkable product claim
+> the policy above exists to protect.
+>
+> **2. "183 conditions across 25 specialties" — the 183 conditions span 21 categories.**
+> 25 is a genuine number on a *different* axis (resident entries and guideline updates, both 25
+> specialties). The sentence pairs the right figures with the wrong noun.
+>
+> **Approved wording for the next campaign**, all derived from
+> `node scripts/read_shipped_counts.js <web-clone>` rather than from memory:
+>
+> - 1,020 original medical illustrations across 102 galleries
+> - 183 conditions across 21 categories
+> - 3,000 practice questions — 1,840 condition quizzes, 1,010 USMLE-style, 150 NCLEX-style
+> - a 300-drug pharmacology guide
+> - 31 narrated recordings, 10 clinical calculators, full offline access
+>
+> Splitting the question figure reads *better* than the merged one, not worse: it is bigger, it is
+> true, and it shows the three banks are distinct.
+
 The number that does the most work in a headline is **1,020 original illustrations**. Nobody else in
 this category draws their own.
 

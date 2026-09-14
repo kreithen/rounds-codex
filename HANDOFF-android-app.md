@@ -552,9 +552,14 @@ templates, and an Android launch email to the list. None of it before the store 
 - **Apple's Guideline 2.1 information request** (`app-store-checklist.md`) asked for a screen
   recording and a long written answer about the app's account model and content. Keep the recording;
   Play may ask for the same thing under its "login credentials for review" and health-app checks.
-- **Launch email** to the 36-person list is drafted in the admin dashboard (campaign
-  `92cb3898-4ac8-47fd-8962-362655ed203d`, status draft) and has not been sent as of this writing.
-  If it goes out before Android exists, the Android beta email is a second campaign.
+- **Launch email: SENT, not draft — this entry was stale.** Campaign
+  `92cb3898-4ac8-47fd-8962-362655ed203d` went out **2026-08-30 18:34 UTC to 25 recipients**
+  (`status: sent`). Read from Supabase 2026-09-14. The Android announcement is a second campaign.
+  **Two factual errors went out in it — see `marketing-brief.md` for the corrected wording, and do
+  not reuse the sent copy as a template.** The free-for-life promise in it is *safe*: under the
+  option D decision everyone keeps today's library free forever, so those 25 get exactly what they
+  were promised and the urgency framing, accurate under the plan in force when it was sent, has
+  simply become unnecessary.
 - **Play account type** is undecided and is the schedule's critical path (§4.1).
 - **Capacitor project version control** (§4.0) is the technical critical path.
 - Counts and the seven screenshot captures: ask the physician; rebuild rather than crop.
