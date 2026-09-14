@@ -1,24 +1,23 @@
 # Live app (`index.html`) — integration & change queue
 
-> **PENDING DEPLOY 2026-09-12 — large screens (Level 1).** Built and verified on branch
-> `claude/ios-large-screen-layout-6n2sur`, **not pushed to `rounds-codex-app`** because that is a
-> deploy and needs the physician's go-ahead. It ships to every web user the moment it lands.
+> **SHIPPED 2026-09-14 as `v138-LARGE-SCREEN`** (app repo `bef41c3`) — large screens, Level 1.
+> Applied by `scripts/add_large_screen.js`, guarded by `scripts/verify_large_screen.js` (15/15 on the
+> shipped bytes; 11 of the 15 fail on the pre-fix tree). `preflight.sh web` 9/9 and `preflight.sh ios`
+> all green on an 826 MB payload.
 >
-> - Apply with `node scripts/add_large_screen.js <app-clone>` (idempotent; refuses to run twice).
-> - Verify with `RC_PW=<dir> node scripts/verify_large_screen.js <app-clone> --before <clean-clone>`.
-> - The change is provably **three insertions totalling 4,113 bytes** into `index.html` and nothing
->   else: one `<style id="rc-large-screen">` block, one line in `paint()` publishing
->   `.app[data-view]`, and `addEventListener('resize',positionThumbs)`. Removing exactly those three
->   restores the shipped file byte for byte.
-> - Above 720 px the container goes 468 → 680 and above 1024 px → 880; the library, gallery, drug
->   and clinical-updates grids reflow (4 columns of gallery pages at 1024 instead of 2); reading
->   views are held at 520 px. **Below 720 px the rendered geometry of 17 views is identical to what
->   is live**, measured at 320/375/390/430.
-> - It also fixes a pre-existing bug: the mode toggle's sliding thumb was left 9 px short of its
->   button after any rotation across the 405 px breakpoint.
-> - **A deploy also needs the `RC_COPYRIGHT` entity settled** — the live file says
->   `2026 Rounds Codex, Inc.` and `stamp_version.js` expects `LLC.`, so `preflight.sh` fails on that
->   line with or without this change, and the native payload build cannot run at all.
+> - Three insertions, 4,113 bytes: the `<style id="rc-large-screen">` block, one line in `paint()`
+>   publishing `.app[data-view]`, and `addEventListener('resize',positionThumbs)`. Removing exactly
+>   those three restores v137 byte for byte.
+> - Above 720px the container goes 468 → 680; above 1024px → 880. Library, gallery, drug and
+>   clinical-updates grids reflow. Reading views held at 520px.
+> - **Below 720px the rendered geometry of 17 views is identical to v137**, at 320/375/390/430.
+> - **Built against v133 and rebased onto v137 before pushing.** Four commits had landed from the
+>   Android conversation in the meantime (v134 entity, v135 tap targets, v136 contrast, v137 audio
+>   transport) and v134 was already taken. All eleven anchors still matched on v137 with no change —
+>   **re-run the patcher against a freshly fetched `main` rather than pushing a tree built on a
+>   stale clone.**
+> - The `RC_COPYRIGHT` entity mismatch that blocked every native payload build was fixed upstream in
+>   v134, not here. `stamp_version.js` passes again.
 
 > **STATUS 2026-07-20:** Items 1–8 below, the **USMLE Mode** + **Resident Mode expansion**
 > content integrations, AND the **5 Cardiology galleries + 3 Cardiology quizzes** are all

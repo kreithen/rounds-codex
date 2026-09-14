@@ -1,7 +1,7 @@
 # Large screens: iPad, and a folding iPhone
 
-> **LEVEL 1 IS BUILT, 2026-09-12 — branch `claude/ios-large-screen-layout-6n2sur`. NOT DEPLOYED:
-> it needs the physician's approval, because it ships to every web user the moment it lands.**
+> **LEVEL 1 IS LIVE as `v138-LARGE-SCREEN`, deployed 2026-09-14** (app repo commit `bef41c3`,
+> built on branch `claude/ios-large-screen-layout-6n2sur`).
 > Applied by **`scripts/add_large_screen.js`**, guarded by **`scripts/verify_large_screen.js`**
 > (15 checks; 11 of them fail on the pre-fix tree, so it is a guard and not decoration), and wired
 > into `scripts/preflight.sh`. Read those two files before changing any of it — they carry the
@@ -68,7 +68,7 @@ Three things would look specifically weak:
 
 ## Three levels, in increasing cost
 
-### Level 1 — Let it breathe (half a day, no risk)  ·  **BUILT 2026-09-12, awaiting deploy approval**
+### Level 1 — Let it breathe (half a day, no risk)  ·  **SHIPPED v138, 2026-09-14**
 
 Raise the container cap at large widths and let the grids reflow. Nothing restructures.
 
@@ -127,7 +127,8 @@ closes, and respecting the hinge as a layout boundary.
 
 | when | what |
 |---|---|
-| ~~After the 17th~~ **done 2026-09-12** | **Level 1.** Built and verified; not deployed. `scripts/add_large_screen.js` + `scripts/verify_large_screen.js`. |
+| ~~After the 17th~~ **shipped 2026-09-14** | **Level 1**, as v138. `scripts/add_large_screen.js` + `scripts/verify_large_screen.js`. |
+| **next** | **The two-column condition page** (physician's call, 2026-09-14). Not full Level 2 — no router change. See the note in Level 1's prose cap: the condition page is the one reading view with headroom left, and two columns of `.panel` cards at phone measure each is how an 880px screen gets spent on it. |
 | **Before any tablet marketing** | **Level 2**, if iPad is a target audience worth naming. It is a genuine product decision, not a polish item — it changes how the app is navigated. |
 | **When the hardware is real** | Level 2 will already have done most of the work. Re-measure then. |
 

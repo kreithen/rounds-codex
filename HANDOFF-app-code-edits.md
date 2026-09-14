@@ -249,30 +249,32 @@ was asked for explicitly and repeatedly.
 
 ## 7. The open list
 
-**Layout (the named job).** ~~`large-screen-plan.md`, Level 1 first.~~ **LEVEL 1 IS BUILT,
-2026-09-12, on branch `claude/ios-large-screen-layout-6n2sur` — and NOT DEPLOYED.** It is a CSS
-change plus two one-line JS edits to the live app's `index.html`, which is a deploy and needs the
-physician's approval before it lands. `scripts/add_large_screen.js` applies it,
-`scripts/verify_large_screen.js` guards it (15 checks, 11 of which fail on the pre-fix tree), and
-`preflight.sh` runs it. What the plan got wrong is corrected in a banner at the top of that file;
-the two that matter are that only `.res-grid` was ever `auto-fill` (the gallery grid is a hard
-`1fr 1fr`) and that the shipped 468 px column was already at a 62–75 character measure, so the
-reading views could only be widened to 520 px. Re-counted while there: **twenty** media queries, not
-fourteen, and still not one `min-width` before this change.
+**Layout (the named job).** **LEVEL 1 SHIPPED as `v138-LARGE-SCREEN`, 2026-09-14** (app repo
+`bef41c3`), from branch `claude/ios-large-screen-layout-6n2sur`. `scripts/add_large_screen.js`
+applies it, `scripts/verify_large_screen.js` guards it (15 checks, 11 of which fail on the pre-fix
+tree), and `preflight.sh` runs it. Confirmed live: `/version.txt` returns the stamp and the served
+`index.html` is byte-identical (sha256) to the tree the guard passed on.
 
-**Level 2 is the next layout job**, and the Level 1 measurements argue for a specific first step:
-the condition page is the one reading view with headroom left, and the way to spend an 880 px screen
-on it is two columns of `.panel` cards at roughly phone measure each, not a wider ribbon.
+What the plan got wrong is corrected in a banner at the top of that file. The two that matter: only
+`.res-grid` was ever `auto-fill` (the gallery grid is a hard `1fr 1fr`), and the shipped 468px column
+was already at a 62-75 character measure, so the reading views could only be widened to 520px.
+
+**Two process lessons from this one, both cheap and both nearly missed:**
+
+- **`origin/main` moved four commits while this was being built.** v134-v137 landed from the Android
+  conversation (entity, tap targets, contrast, audio transport) and v134 was already taken, so the
+  prepared v134 push would have reverted three deploys. The fix is not vigilance, it is the
+  patchers: reset the clone to a freshly fetched `main`, re-run the script, re-verify. All eleven
+  anchors matched on v137 unchanged. **Never push a tree built on a stale clone; regenerate it.**
+- **The `RC_COPYRIGHT` entity mismatch that blocked every native payload build is gone** — fixed
+  upstream in v134, not here. `preflight.sh ios` now builds the 826 MB payload all green.
+
+**Next layout job: the two-column condition page** (physician's call, 2026-09-14). Not full Level 2
+and no router change: the condition page is the one reading view with headroom left, and two columns
+of `.panel` cards at roughly phone measure each is how an 880px screen gets spent on it. `.pad`
+becomes a grid, `.dtop` and `.dhero` span both columns, and sticky-inside-grid has to be checked.
 
 **Still open, roughly in order of value:**
-
-- **`stamp_version.js` fails on the shipped tree, and it blocks every native payload build.** The
-  live `index.html` carries `RC_COPYRIGHT='2026 Rounds Codex, Inc.'`; the repo's scripts expect
-  `'2026 Rounds Codex, LLC.'` — §6 records that the entity is LLC, but the correction never reached
-  the website. `preflight.sh web` reports it as `version and copyright FAIL` and `preflight.sh ios`
-  dies at the first patcher, before it can check anything. Pre-existing, verified against an
-  unpatched tree on 2026-09-12. It is the physician's legal entity name on a shipped page, so it is
-  their call, not a drive-by fix — but nothing native can be built until it is made.
 
 - Choose the OG card, apply `add_og_tags.js`, deploy as v134 *(needs approval)*
 - EU availability — DSA trader status; decide what name and address are publicly displayed
