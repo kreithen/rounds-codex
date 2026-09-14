@@ -108,8 +108,27 @@ const hasFixed = s.includes(FIXED) && s.includes(DECL);
 const selfDating = /&copy;[^\n]{0,120}getFullYear/;
 const copyrightOk = hasFixed && !hasComputed && !selfDating.test(s);
 
+/* The declaration as it currently stands, whatever value it carries. Distinct from DECL, which is
+   the declaration we WANT -- the two differ exactly when the entity name has changed. */
+const declRe = /var RC_COPYRIGHT='([^']*)';/;
+const declNow = s.match(declRe);
+const hasUseSite = s.includes(FIXED);
+
 if (!copyrightOk && !CHECK) {
-  if (!hasComputed && !hasFixed) {
+  /* UPDATE path, added 2026-09-14. Until then this script could only INSTALL the constant -- it
+     converted a computed copyright into a fixed one and otherwise bailed -- so when the entity name
+     changed from "Inc." to "LLC" it refused the live file as "edited by hand". That is the same
+     installer-vs-upgrader trap CLAUDE.md records for the audio player. An installed-but-stale
+     declaration is a recognised state, not a hand edit: rewrite its value and leave the use site,
+     which is asserted intact rather than assumed. */
+  if (hasUseSite && declNow && declNow[1] !== COPYRIGHT) {
+    console.error(`note: updating RC_COPYRIGHT "${declNow[1]}" -> "${COPYRIGHT}"`);
+    s = s.replace(declRe, DECL);
+    if (!s.includes(DECL) || !s.includes(FIXED)) {
+      console.error('FAIL: the RC_COPYRIGHT update did not land cleanly');
+      process.exit(1);
+    }
+  } else if (!hasComputed && !hasFixed) {
     console.error('FAIL: the footer copyright is neither the computed form nor the fixed one -- ' +
                   'it has been edited by hand. Not guessing; fix it or update this script.');
     process.exit(1);
