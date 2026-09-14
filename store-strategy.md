@@ -127,8 +127,11 @@ is the single biggest Android timeline risk and it costs nothing to avoid.**
 **2. Fees and billing.** Play is **$25 one-time** against Apple's **$99/year** **[verify]**. Google
 Play Billing is mandatory for digital subscriptions, so the $5/month decision carries over but the
 implementation does not — StoreKit and Play Billing are separate integrations, and
-`AppTransaction.originalAppVersion` has no Play equivalent. **Grandfathering on Android needs its
-own design.**
+`AppTransaction.originalAppVersion` has no Play equivalent. ~~**Grandfathering on Android needs its
+own design.**~~ → **DONE 2026-09-14: `native/GRANDFATHERING-android.md`.** The answer removed the
+problem rather than solving it — grandfathering is now by SCOPE on **both** platforms (v1's content
+free for everyone forever, subscription gates only later additions), so neither store needs an
+entitlement mechanism and `originalAppVersion` is no longer used on iOS either.
 
 **3. Health apps carry extra declarations** — a health-app declaration plus the Data Safety form,
 Google's rougher equivalent of Apple's privacy label **[verify]**. The Guideline 1.4.1 reasoning in

@@ -75,7 +75,7 @@ answer and it is real.
 | **No login wall on iOS.** The wall stays on the web. | 2026-08-14 |
 | v1 is **free**, no paywall. Independent medical review gates the *paid* launch, not this one. | 2026-08-04 |
 | Later: **$5/month for everyone**, one price, no student tier. | 2026-08-04 |
-| Early App Store users grandfathered via `AppTransaction.originalAppVersion`. | 2026-08-04 |
+| ~~Early App Store users grandfathered via `AppTransaction.originalAppVersion`.~~ **Superseded 2026-09-14: grandfathering is by SCOPE on both platforms** — v1's content free for everyone forever, subscription gates only later additions. No StoreKit entitlement work. `native/GRANDFATHERING-android.md` | 2026-09-14 |
 | Patents: settled, Alice §101. **Do not reopen.** | — |
 
 **"Clinically reviewed" IS allowed** (revised 2026-08-09); **"peer-reviewed" is forbidden**.

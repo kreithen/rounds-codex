@@ -164,7 +164,13 @@ delivers a class at a time, and the free launch is the natural moment to ask.
 
 - **Free at launch, no paywall at all.** $5/month for everyone later; no student tier (Apple gives
   third-party apps no student verification).
-- **Anyone who installs while it is free is grandfathered permanently.**
+- **The library you see today stays free forever, for everyone — the subscription is for what
+  comes next.** (Revised 2026-09-14. This line previously read *"anyone who installs while it is
+  free is grandfathered permanently"*, which is no longer how it works: **there is no deadline and
+  no early-user category.** Do not write urgency copy on "install before it costs money" — someone
+  who installs a year late gets the same library free, and a claim implying otherwise would be
+  misleading to exactly the people most likely to act on it. The replacement promise is the stronger
+  one anyway: nothing to regret missing, and nothing a later installer can contradict.)
 - **No account, no login, no server** at v1.
 - **The paid launch is gated on an independent medical review that has not happened.** Free content
   with a visible disclaimer is one thing; a subscription sold to students is a duty of care. Do not

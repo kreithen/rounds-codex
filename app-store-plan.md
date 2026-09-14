@@ -28,7 +28,7 @@ gets forgotten.
 |---|---|
 | Launch | **Free**, no paywall at all |
 | Later | **$5/month for everyone** — one price, no student tier, no offer codes |
-| Early users | **Grandfathered permanently** — anyone who installs while it is free keeps full access |
+| Early users | **No longer a category — superseded 2026-09-14.** v1's content stays free for everyone, forever; the subscription gates only what is added after the paid launch. See below. |
 | Entitlement | **On-device StoreKit only** — no accounts, no server, no login |
 
 > **Superseded in part by what shipped.** A Supabase email/password login wall plus WebAuthn passkey
@@ -54,7 +54,31 @@ vendor, the second SKU, the redemption UI and the enforcement question. If a stu
 wanted, the supported route is **offer codes** (custom like `STUDENT26`, or one-time 18-digit
 codes) redeemed in-app via `offerCodeRedemption` — not a second price tier.
 
-### Grandfathering: use `AppTransaction.originalAppVersion`, not a local flag
+### Grandfathering: ~~use `AppTransaction.originalAppVersion`~~ — SUPERSEDED 2026-09-14
+
+> **DECIDED 2026-09-14 (physician): grandfather by SCOPE, not by identity — on BOTH platforms.**
+> Nobody is identified as an early user at all. **Everything in v1 stays free permanently** and the
+> subscription gates only material added after the paid launch, so nothing is taken from anyone and
+> no entitlement has to be tracked. Full reasoning, including the three Android mechanisms that were
+> measured and rejected, is in `native/GRANDFATHERING-android.md`.
+>
+> **Why this reached iOS too.** Android has no equivalent of `AppTransaction.originalAppVersion`,
+> so keeping the API here would have implemented one public promise two different ways — an iOS user
+> installing the day after the paywall pays for today's library while an Android user installing
+> that same day gets it free. The physician chose one promise.
+>
+> **Consequences:** the StoreKit entitlement work disappears from
+> `app-store-submission-draft.md`'s checklist; the **early-web-user gap below closes**, because
+> there is nothing to grandfather; and nothing has to ship in either v1 for this, which was the
+> deciding argument.
+>
+> **What it costs, stated plainly:** the current library — 183 conditions, 1,840 questions, 100
+> galleries, the calculators, the audio — can never be converted to paid. The subscription must earn
+> its price on new material.
+>
+> **The paragraph below is kept because its reasoning is still correct** — a local first-launch flag
+> IS the wrong mechanism, for exactly the stated reasons. It is no longer the plan only because the
+> question it answered has been removed.
 
 The obvious implementation — write a "first launch" date to local storage and honour it — fails
 on reinstall, fails on a new device, and is trivially editable. StoreKit already answers this:

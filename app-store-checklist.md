@@ -21,7 +21,7 @@ every one of which is now stale.
 | **Login wall on iOS** | **NO.** The wall stays on the **web** only. | 2026-08-14 |
 | v1 price | **Free**, no paywall | 2026-08-04 |
 | Later | **$5/month for everyone**, one price, no student tier | 2026-08-04 |
-| Early users | Grandfathered permanently via `AppTransaction.originalAppVersion` | 2026-08-04 |
+| Early users | ~~Grandfathered via `AppTransaction.originalAppVersion`~~ → **SUPERSEDED 2026-09-14: grandfathered by SCOPE on both platforms** — v1's content stays free for everyone forever, the subscription gates only later additions, so no early-user identity is tracked. `native/GRANDFATHERING-android.md` | 2026-09-14 |
 | Independent medical review | Gates the **paid** launch, not the free one | 2026-08-04 |
 | Bundle identifier | **`com.roundscodex.app`** — permanent, and already in the deployed AASA | 2026-08-17 |
 | Devices | **Universal — iPhone and iPad.** Costs a second screenshot set (13", ≥6) and iPad layout QA | 2026-08-17 |
@@ -35,9 +35,15 @@ app and meeting a sign-in form is a well-known rejection. Removing it also resto
 make the content hard to copy, and a compiled binary is already far harder to scrape than a
 website — so it keeps doing its job where it matters.
 
-**The cost, stated once so it is not discovered later:** `AppTransaction.originalAppVersion`
+~~**The cost, stated once so it is not discovered later:** `AppTransaction.originalAppVersion`
 grandfathers **App Store installs only**. Early *web* users are invisible to it. If they are meant
-to keep free access when the paywall lands, that needs its own mechanism and none exists today.
+to keep free access when the paywall lands, that needs its own mechanism and none exists today.~~
+
+> ✅ **RESOLVED 2026-09-14 — this gap is closed, not solved.** Grandfathering is now by SCOPE on
+> both platforms (`native/GRANDFATHERING-android.md`): v1's content stays free for everyone
+> permanently. Early web users need no mechanism because nobody is identified as early, and the web
+> app keeps serving what it serves today. The paragraph above is struck through rather than deleted
+> because it was a correct reading of the design it described.
 
 ---
 

@@ -563,7 +563,7 @@ Ordered so that if you stop partway, you've done the parts that matter.
 - [ ] Independent medical review. The reasoning in `app-store-plan.md` stands: free content with a
       visible disclaimer is one thing, a paid subscription sold to students is a product with a
       duty of care.
-- [ ] StoreKit paywall via `AppTransaction.originalAppVersion` for grandfathering
+- [x] ~~StoreKit paywall via `AppTransaction.originalAppVersion` for grandfathering~~ — **dropped 2026-09-14.** Grandfathering is by SCOPE on both platforms, so there is no early-user entitlement to read. A paywall still needs StoreKit when the subscription ships; it just does not need this API. `native/GRANDFATHERING-android.md`
 - [ ] Copyright registration
 
 ---

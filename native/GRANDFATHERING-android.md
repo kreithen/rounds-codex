@@ -5,9 +5,9 @@
 > launch. **Nothing has to ship in the Android v1 build for this**, which takes grandfathering off
 > the Android critical path entirely.
 >
-> **Two things this decision reaches that are NOT yet changed — see "What D changes elsewhere" at
-> the foot of this file.** The iOS app currently plans a different mechanism, and one line of
-> marketing copy becomes misleading under D. Both are awaiting the physician.
+> **Extended to iOS the same day**, so both platforms behave identically and
+> `AppTransaction.originalAppVersion` is no longer used. Six documents updated — see "What D changes
+> elsewhere" at the foot of this file.
 
 **Written 2026-09-14.** `HANDOFF-android-app.md` §7 lists this as undecided and names three options
 without choosing. This picks one, and corrects the reason the handoff dismissed another.
@@ -141,12 +141,13 @@ better version of C.
 
 ---
 
-## What D changes elsewhere — OPEN, not yet actioned
+## What D changes elsewhere — ✅ DONE 2026-09-14, iOS follows
 
-D was recommended partly *because* it makes both platforms behave identically. Whether iOS follows
-is the physician's call and has not been made, so nothing below has been edited yet.
+**The physician extended D to iOS the same day**, so there is one promise with one implementation.
+All six documents below are updated. Prior reasoning is struck through rather than deleted, because
+each was a correct reading of the design it described.
 
-**1. iOS currently plans a different mechanism.** `app-store-plan.md` §"Grandfathering: use
+**1. iOS's `originalAppVersion` plan — superseded.** `app-store-plan.md` §"Grandfathering: use
 `AppTransaction.originalAppVersion`, not a local flag" is the canonical decision, echoed in
 `app-store-checklist.md` (row 24), `HANDOFF-native-ios-app.md` (row 78),
 `app-store-submission-draft.md:566` and `store-strategy.md`.
@@ -157,7 +158,7 @@ user who installs the same day gets it free. That is defensible only if nobody c
 compare. Under D on both, `originalAppVersion` is simply not needed and the StoreKit work in
 `app-store-submission-draft.md:566` disappears.
 
-**2. One marketing line becomes misleading.** `marketing-brief.md:167` reads *"Anyone who installs
+**2. The marketing line — rewritten.** `marketing-brief.md:167` reads *"Anyone who installs
 while it is free is grandfathered permanently."* Under D that is true but it implies a deadline
 that no longer exists — installing later gets the same library free. The launch email drafted in
 the admin dashboard (campaign `92cb3898-4ac8-47fd-8962-362655ed203d`, still `draft`) should be read
@@ -169,7 +170,7 @@ The honest replacement framing is stronger, not weaker: *the library you see tod
 forever, for everyone — the subscription is for what comes next.* No deadline, nothing to regret
 missing, and nothing that can be contradicted later by a user who installed a week too late.
 
-**3. The early-web-user gap closes.** `app-store-checklist.md:38-39` records that
+**3. The early-web-user gap — closed.** `app-store-checklist.md:38-39` records that
 `originalAppVersion` grandfathers App Store installs only and that early web users are invisible to
 it. Under D there is nothing to grandfather, so that open item resolves — on whichever platforms
 adopt D.
