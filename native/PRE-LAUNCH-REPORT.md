@@ -140,8 +140,31 @@ transport controls, so the cost grows with width rather than staying fixed: 20px
 430. Both land at or below the floor that makes the scrubber unaimable, which is precisely the harm
 the change was supposed to avoid.
 
-**Reverted.** The horizontal problem stands and still needs the design decision in §3 — buying gap
-requires dropping a control, not finding slack, because there is none.
+**Reverted.** The horizontal problem stood until v137 — see below.
+
+### ✅ v137 — solved, and without dropping a control
+
+The bar shipped **separate Play and Pause buttons, both visible at all times**, so one of the two was
+always inert. Showing one at a time frees 21px plus a gap at *every* width and removes no
+capability; a single toggle is what iOS, Android, Spotify and YouTube all do. Strictly better than
+the alternative on the table (drop "next recording" or "back to start" below 360px), which bought
+the same space on narrow phones only and cost a real control.
+
+**No JavaScript changed.** `sync()` already ran `el.classList.toggle('playing', playing)` on the
+`.rcap` root and **nothing in the stylesheet used that class** — an unused hook, already correct,
+already handling "another condition's recording is playing" via `mine()`. Four CSS rules.
+
+The freed width went to `.rcap-transport` gap, 1px → 7px. `.rcap-util` deliberately left at 1px:
+widening both is what cost the scrubber its floor above.
+
+| width | slider before | after | transport gap |
+|---|---|---|---|
+| 320 | 98 | **102** | 1px → 7px |
+| 360 | 109 | **113** | 1px → 7px |
+| 430 | 107 | 105 | 1px → 7px |
+
+Better hit separation **and** a wider scrubber at both narrow widths. Verified idle vs playing:
+`back, play, fwd, chain` → `back, pause, fwd, chain`.
 
 ### ⚠ There are two copies of the audio CSS in `index.html`
 
