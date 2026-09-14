@@ -22,10 +22,17 @@
  * listing as claiming 31 conditions, and a section quoting a wrong number in order to correct it was
  * read as asserting it. If you widen a pattern here, run it against both drafts and read every line.
  *
- * Run it against app-store-submission-draft.md and it FAILS, which is how you know it is a guard:
- * that document says "197 of them illustrated" where 231 USMLE items carry an illustration (197
- * real images plus 34 vector schematics). It quoted the photographic subset and so understates the
- * app -- a real defect, found by this checker rather than by reading.
+ * WHAT IT HAS CAUGHT, which is the only measure of a checker worth reporting:
+ *   - "197 of them illustrated" in app-store-submission-draft.md, where 231 USMLE items carry an
+ *     illustration (197 real images plus 34 vector schematics). It quoted the photographic subset
+ *     and understated the app. FIXED -- so that document now passes, and this header no longer
+ *     claims a live failure, which it did for a while after the fix landed.
+ *   - "2,900+ USMLE & NCLEX questions" in the 2026-08-30 launch email, already sent. See the
+ *     label-to-number section below: the number was defensible, the noun was wrong by ~2.5x, and
+ *     the original version of this file would have passed it.
+ *   - "3,000 practice questions" in my own replacement copy for that email, because "practice
+ *     questions" already means the 1,840 condition quizzes. The fix for an ambiguity reintroduced
+ *     it. Found by running this on the proposed wording before anyone used it.
  *
  * Usage: node scripts/verify_listing_counts.js <site-root> [doc.md ...]
  *        defaults to the two store drafts.
@@ -101,6 +108,29 @@ const CLAIMS = [
   ['guideline entries',       need('guideline entries'),         /([\d,]+) (?:clinical )?guideline updates/g],
   ['resident entries',        need('resident entries'),          /([\d,]+) resident-level entries/g],
   ['audio recordings',        need('audio recordings'),          /audio for ([\d,]+) conditions/g],
+
+  /* ---- LABEL-TO-NUMBER pairing, added 2026-09-14 --------------------------------------------
+     Everything above asks "is this number right?". The worst claim this project has actually
+     published asked a different question and this checker would have PASSED it: the 2026-08-30
+     launch email said "2,900+ USMLE & NCLEX questions with rationales", and ~3,000 IS the total
+     question count -- but USMLE + NCLEX is 1,160. The number was defensible; the NOUN was wrong,
+     by a factor of about 2.5. A guard that only validates figures against the product as a whole
+     cannot see that, because the figure exists somewhere in the product.
+     Same shape as the other error in that email: "183 conditions across 25 specialties". 25 is a
+     real count (resident entries, guideline updates) on a different axis; the conditions span 21
+     categories. Right numbers, wrong noun. */
+  ['USMLE & NCLEX questions', need('USMLE items') + need('NCLEX items'),
+   /([\d,]+)\+? ?(?:USMLE\s*(?:&|and)\s*NCLEX|NCLEX\s*(?:&|and)\s*USMLE)[- ]?(?:style )?questions/gi],
+  ['categories per conditions', need('condition categories'),
+   /conditions across ([\d,]+) (?:specialties|categories)/gi],
+
+  /* The TOTAL, under a phrase that cannot be confused with the 1,840. Found by running this
+     checker on my own proposed replacement copy: "3,000 practice questions" failed, because
+     "practice questions" already means the condition quizzes in both store listings. The number
+     was right and the phrase was taken -- the very ambiguity the two claims above exist to catch,
+     reintroduced by the fix for them. The safe phrasing is explicit about being a sum. */
+  ['questions in all', need('quiz questions') + need('USMLE items') + need('NCLEX items'),
+   /([\d,]+)\+? questions in all/gi],
 ];
 
 /* ---- check ---------------------------------------------------------------------------------- */
@@ -121,12 +151,20 @@ for (const doc of docs) {
   text = text.replace(/"[^"\n]{0,200}"/g, ' ');
   console.log(`\n=== ${path.relative(REPO, doc)} ===`);
   for (const [label, want, re] of CLAIMS) {
-    const hits = [...text.matchAll(re)].map(m => Number(m[1].replace(/,/g, '')));
+    /* A trailing "+" makes the claim a FLOOR, not an equality: "1,000+ original illustrations" is
+       honest when 1,020 ship, and failing it would push copy toward brittle exact figures that go
+       stale on the next content drop. So "N+" passes when derived >= N, bare "N" must match.
+       This is also precisely why "2,900+ USMLE & NCLEX questions" is a failure and not a rounding:
+       1,160 is not >= 2,900. Reading "+" as "about right" would have excused the real defect. */
+    const hits = [...text.matchAll(re)].map(m => ({
+      n: Number(m[1].replace(/,/g, '')), atLeast: /\+/.test(m[0]),
+    }));
     if (!hits.length) { console.log(`  --   ${label}: absent`); continue; }
     checked += hits.length;
-    const wrong = hits.filter(h => h !== want);
+    const wrong = hits.filter(h => h.atLeast ? want < h.n : h.n !== want);
     if (wrong.length) {
-      console.log(`  FAIL ${label}: says ${[...new Set(wrong)].join(', ')} -- shipped content has ${want}`);
+      const shown = [...new Set(wrong.map(h => h.atLeast ? `${h.n}+` : String(h.n)))].join(', ');
+      console.log(`  FAIL ${label}: says ${shown} -- shipped content has ${want}`);
       bad++;
     } else {
       console.log(`  ok   ${label}: ${want}${hits.length > 1 ? ` (${hits.length} mentions)` : ''}`);

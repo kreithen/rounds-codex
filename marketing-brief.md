@@ -74,7 +74,13 @@ before any campaign — do not copy a number out of an old draft, including this
 >
 > - 1,020 original medical illustrations across 102 galleries
 > - 183 conditions across 21 categories
-> - 3,000 practice questions — 1,840 condition quizzes, 1,010 USMLE-style, 150 NCLEX-style
+> - 1,840 condition quizzes, plus 1,010 USMLE-style and 150 NCLEX-style items — **3,000 questions
+>   in all**
+>
+> ⚠ **Do not write "3,000 practice questions."** "Practice questions" already means the 1,840
+> condition quizzes in both store listings, so attaching it to the total repeats the exact error
+> above with a different number. My first attempt at this replacement copy did it, and
+> `verify_listing_counts.js` caught it. Say "questions in all" when you mean the sum.
 > - a 300-drug pharmacology guide
 > - 31 narrated recordings, 10 clinical calculators, full offline access
 >
