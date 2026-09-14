@@ -686,7 +686,28 @@ fingerprint does not exist until you have uploaded a bundle. So the order is fix
    says out loud whether verification succeeded.
 
 The manifest side goes in `android/app/src/main/AndroidManifest.xml`, inside `.MainActivity` —
-the template ships with only the LAUNCHER filter, so this is an addition:
+the template ships with only the LAUNCHER filter, so this is an addition.
+
+**The canonical copy is `native/android/intent-filters.xml`** — paste from there rather than from
+the block below, and run the guard that keeps it honest:
+
+```
+node scripts/verify_routes.js <web-clone>
+node scripts/verify_routes.js <web-clone> --manifest android/app/src/main/AndroidManifest.xml
+```
+
+`verify_routes.js` enforces the five-places rule stated at the end of this section. Each of the five
+fails **silently and differently** — a missing `_redirects` line 404s at Netlify, a missing
+`RC_OPEN_ROUTES` letter lets the login wall eat the share link, a missing `RC_ROOT` letter makes
+every `content/*.json` 404 and boots the app to "Content didn't load" with no page error — so
+nothing surfaces a dropped route except a person noticing one surface is broken. It also refuses an
+intent filter without `autoVerify="true"` and one naming any host but `roundscodex.com`.
+Exercised against five injected defects (a route dropped from `_redirects`, from the AASA, a route
+added to the web but not Android, `autoVerify` removed, `netlify.app` added as a second host): all
+five exit 1 and name the specific route or host. Once the Capacitor project exists, point
+`--manifest` at the real file so the check measures what ships.
+
+For reference, the block itself:
 
 ```xml
 <intent-filter android:autoVerify="true">

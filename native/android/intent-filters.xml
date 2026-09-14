@@ -1,0 +1,35 @@
+<!--
+  Rounds Codex — Android App Links intent filter.
+
+  CANONICAL SOURCE for the six deep-link prefixes on Android. Paste inside the
+  <activity android:name=".MainActivity"> element of
+  android/app/src/main/AndroidManifest.xml, alongside (not replacing) the LAUNCHER filter that
+  `npx cap add android` generates.
+
+  This file is spec-derived, not project-derived: the six prefixes come from the route contract the
+  web app already implements, so it is correct independently of what the Capacitor template looks
+  like. `node scripts/verify_routes.js <web-clone>` asserts it stays in step with the other four
+  sources — change a route in one place and that check fails.
+
+  roundscodex.com ONLY. Do not add the netlify.app host: App Links verification requires
+  /.well-known/assetlinks.json on the host, the apex is the canonical origin (RC_SHARE_ORIGIN), and
+  a second unverifiable host makes Android give up on the whole filter.
+
+  android:autoVerify="true" is what makes Android fetch assetlinks.json at install time. Without it
+  the links still work but only via a disambiguation dialog, which most people dismiss.
+
+  MainActivity is launchMode="singleTask" in the Capacitor template, so a link tapped while the app
+  is already running arrives at onNewIntent rather than a fresh activity.
+-->
+<intent-filter android:autoVerify="true">
+    <action android:name="android.intent.action.VIEW" />
+    <category android:name="android.intent.category.DEFAULT" />
+    <category android:name="android.intent.category.BROWSABLE" />
+    <data android:scheme="https" android:host="roundscodex.com" />
+    <data android:pathPrefix="/c/" />
+    <data android:pathPrefix="/s/" />
+    <data android:pathPrefix="/g/" />
+    <data android:pathPrefix="/r/" />
+    <data android:pathPrefix="/u/" />
+    <data android:pathPrefix="/x/" />
+</intent-filter>
