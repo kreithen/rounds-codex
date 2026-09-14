@@ -68,6 +68,22 @@ per line (the runbook records why: `cap init`'s interactive prompt swallowed a p
 
 ---
 
+## 1b. What happened on 2026-09-14 — read this before §2, which is older
+
+| | |
+|---|---|
+| Play account | **Created.** Organization, `Rounds Codex`, ID `4703111188826193257`, owner `admin@roundscodex.com`, contact + public email `teacher@roundscodex.com` (both verified). §6b. |
+| D-U-N-S | **`148718973`**, via Apple's lookup — D&B's own is Europe-only. §1c. |
+| Legal entity | **ROUNDS CODEX, LLC**, Florida `L26000432836`. **Not "Inc."**, which every document said for three weeks. §1b-3. |
+| Verification | website ✅ · identity awaiting Google · phone locked until identity clears · `Create app` locked. |
+| Grandfathering | **DECIDED — option D, both platforms.** `native/GRANDFATHERING-android.md`. Nothing needed in v1; off the critical path. |
+| Live app | **v134 shipped** (`e278e9d`) — the in-app footer now names the LLC. |
+| New guards | `verify_routes.js` (five-places route rule), `make_assetlinks.js`, `native/android/intent-filters.xml`, label-pairing in `verify_listing_counts.js`. |
+| Still blocking me | **§4.0 — the Capacitor project is only on the Mac.** Unchanged, and now the single biggest unblock. |
+| Still yours | the duplicate SPF record at GoDaddy (§6c), and how the landing site deploys — it is in no repo this session can see. |
+
+⚠ **§4.1 (the Play account) is now DONE and is no longer the schedule's critical path.** §4.0 is.
+
 ## 2. State, verified 2026-09-09
 
 - **iOS: Rounds Codex: Clinical Atlas 1.0 (build 4) is live on the App Store** (id 6802452599),

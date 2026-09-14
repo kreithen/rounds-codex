@@ -1008,6 +1008,44 @@ Two consequences that are deliberate, not oversights:
   illustration pages, the live App Store Copyright field, and any doc recording what was previously
   shipped are records of fact. Do not "fix" them — rewriting a record to match today makes it wrong.
 
+## Grandfathering — DECIDED 2026-09-14, and it is not what the older docs say
+
+**Grandfather by SCOPE, not by identity, on BOTH platforms.** Everything in v1 stays free for
+everyone permanently; the subscription gates only material added after the paid launch. **Nobody is
+identified as an early user, so there is no entitlement to track and nothing to ship in either v1.**
+Full reasoning, including the three Android mechanisms measured and rejected, is in
+`native/GRANDFATHERING-android.md`.
+
+**`AppTransaction.originalAppVersion` is no longer used.** `app-store-plan.md`, `store-strategy.md`,
+`app-store-checklist.md`, `HANDOFF-native-ios-app.md` and `app-store-submission-draft.md` all
+carried it and are now struck through rather than rewritten — the reasoning in them was correct for
+the design it described. **Do not "restore" it from an older copy.**
+
+**The cost, which is commercial and was the physician's call:** the current library — 183
+conditions, 1,840 quiz questions, 102 galleries, the calculators, the audio — can never be
+converted to paid.
+
+**Consequence for copy: there is no deadline and no early-user category.** Never write urgency on
+"install before it costs money"; someone installing a year later gets the same library free.
+`marketing-brief.md` carries the approved wording.
+
+## Claims about the app — two errors have actually shipped
+
+**Derive every count with `node scripts/read_shipped_counts.js <web-clone>`**, never from a document
+and never from memory, then check the copy with `node scripts/verify_listing_counts.js <web-clone>
+[doc...]`.
+
+**The 2026-08-30 launch email went out to 25 people with two wrong claims**, and both are the same
+shape — a real number attached to the wrong noun, which is the kind that survives a proofread:
+- *"2,900+ USMLE & NCLEX questions"* — USMLE + NCLEX is **1,160**. ~3,000 is the total across all
+  three banks, including the 1,840 condition quizzes, which are neither.
+- *"183 conditions across 25 specialties"* — the conditions span **21 categories**. 25 is real on a
+  different axis (resident entries, guideline updates).
+
+**"Practice questions" means the 1,840 condition quizzes** in both store listings. For the sum, say
+**"3,000 questions in all"** — my own first correction said "3,000 practice questions" and the guard
+caught it, which is the same ambiguity again.
+
 ## Launch, marketing and the App Store
 Three files, each canonical for its own subject. **Read the relevant one before writing anything
 that will be seen outside the app** — they exist so the copy and the decisions do not drift.
@@ -1137,7 +1175,20 @@ physician's Mac. Do not hand over something that has never been compiled.
 not a deletion: three in-app surfaces still assert an account exists, and the Privacy page's "we
 hold your email address" would contradict a "Data Not Collected" privacy label outright.
 
-## The native Android app — ITS OWN CONVERSATION (2026-09-09)
+## The native Android app — ITS OWN CONVERSATION (2026-09-09, updated 2026-09-14)
+
+> **Where it stands after 2026-09-14.** The **Google Play organization account exists** —
+> developer name `Rounds Codex`, account ID `4703111188826193257`, owner `admin@roundscodex.com`,
+> organization **ROUNDS CODEX, LLC**, D-U-N-S **`148718973`**. Identity/website/phone verification:
+> website ✅ (Search Console domain property, GoDaddy), identity awaiting Google's review of the
+> Articles of Organization, phone locked until identity clears. `Create app` unlocks after that.
+> Everything a session can build is built; the remaining blocker on real Android code is still
+> §4.0 — the Capacitor project is only on the physician's Mac.
+> **Grandfathering is DECIDED (option D, both platforms)** — see the section below. New this day:
+> `scripts/verify_routes.js` (the five-places route invariant),
+> `native/android/intent-filters.xml`, `scripts/make_assetlinks.js`.
+
+
 Rounds Codex on Google Play. Branch **`claude/native-android-app`**, based on
 `claude/native-ios-app` (NOT `main` — the payload scripts have never been merged).
 **Read `HANDOFF-android-app.md` first**; it carries the whole plan, the Play-specific decisions and
