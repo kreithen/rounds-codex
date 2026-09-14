@@ -102,3 +102,53 @@ on that is explicit. This is about what the report says, not whether you can shi
 
 **None of it is verified on a device.** These are Chromium measurements of the web build. The real
 answer arrives with the first internal-testing upload, which is also the answer to §1.
+
+
+---
+
+## 4. What was actually fixed — v135 and v136, measured after each
+
+| | before | after |
+|---|---|---|
+| unlabelled | 4 | **0** |
+| under 48dp | 236 | **49** |
+| low contrast | 27 | **0** |
+
+**v135** — `.card .cbm` 44→50px (183 findings, one rule) and `.rcap-b` 21×21→21×44.
+**v136** — `--muted-2` `#63748f`→`#6d7f9c` (4.14→4.84:1, clears all 27 contrast findings across 36
+usages), `.tb-btn` 44×40→50×50, and `aria-label` on the seven bare back buttons and the Ask send
+button.
+
+**50px rather than 48, twice.** Set to exactly 48, 168 of 181 bookmark buttons still measured 47.x:
+the library is a two-up grid with 157.5px cards, so an absolutely-positioned child in one column
+renders at 47.99. A threshold met exactly is a threshold missed half the time.
+
+### ⚠ The gap widening was tried, measured, and REVERTED
+
+The plan was to raise `.rcap-transport` gap 1px→5px above 360px, where the slider looked to have
+~19px of slack over its ~90px floor. Measured after applying:
+
+| width | slider before | with wider gaps |
+|---|---|---|
+| 320 | 98 | 98 (media query does not apply) |
+| 360 | 109 | **89** |
+| 430 | 107 | **79** |
+
+Two errors in the estimate, both in the same direction. The selector is
+`.rcap-transport,.rcap-util` — **both** groups widen, not one. And wider screens show **more**
+transport controls, so the cost grows with width rather than staying fixed: 20px at 360, 28px at
+430. Both land at or below the floor that makes the scrubber unaimable, which is precisely the harm
+the change was supposed to avoid.
+
+**Reverted.** The horizontal problem stands and still needs the design decision in §3 — buying gap
+requires dropping a control, not finding slack, because there is none.
+
+### ⚠ There are two copies of the audio CSS in `index.html`
+
+The exact-count guard in `fix_a11y_rest.js` refused at "found 2, expected 1". The `<style>` block is
+the live one, labelled *"Injected from scripts/audio_player.js RCAP_CSS — edit there and re-run"*;
+the second is `var RCAP_CSS = [...]`, **declared and never referenced** — the patcher's own source,
+inlined with the rest of `audio_player.js`. Dead, so it is deliberately left alone rather than
+fake-fixed; the authoritative source is `scripts/audio_player.js` in the build repo. v135 patched
+only the live copy, so the two now differ. Earned again, from CLAUDE.md: **grep for the other
+copies.**
