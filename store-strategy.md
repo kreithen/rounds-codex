@@ -79,8 +79,9 @@ banner on `app-store-submission-draft.md`):
 | A sign-in wall in front of a study app | Gone — it is a known rejection trigger in its own right |
 
 `app-store-plan.md` already established the load-bearing fact: **a subscription does not require an
-account.** StoreKit ties entitlement to the Apple ID, and grandfathering runs off
-`AppTransaction.originalAppVersion`.
+account.** StoreKit ties entitlement to the Apple ID. ~~and grandfathering runs off
+`AppTransaction.originalAppVersion`~~ — **superseded 2026-09-14: there is no early-user entitlement
+on either platform.** See `native/GRANDFATHERING-android.md`.
 
 **Still required with no account: a Restore Purchases control** (Guideline 3.1.1 **[verify]**). Any
 paid app must let a user re-establish entitlement on a new device. That is a build item and it is
@@ -89,10 +90,12 @@ not in any current checklist.
 ### Two consequences to decide deliberately
 
 **Web and iOS become different products.** Invitation-only on the web, open on iOS, is perfectly
-defensible — but the privacy copy then differs per platform, and `AppTransaction.originalAppVersion`
+defensible — but the privacy copy then differs per platform. ~~and `AppTransaction.originalAppVersion`
 grandfathers **App Store installs only**. Web users who were there from the beginning are not
 covered by it. If early web users are meant to be grandfathered too, that needs its own mechanism
-and it does not exist today.
+and it does not exist today.~~ **Superseded 2026-09-14:** grandfathering is by scope on every
+surface, so early web users need no mechanism — the web keeps serving today's library free, exactly
+as the apps do.
 
 **Account deletion becomes a web-only concern.** If iOS has no accounts, Apple never asks for
 deletion. The edge function at `supabase/functions/delete-account/` is still worth deploying for the
@@ -164,7 +167,9 @@ limited and less discoverable, which is much of why the App Store matters more t
 
 ## Open questions this raises that nobody has answered
 
-- **Are early *web* users grandfathered?** `AppTransaction.originalAppVersion` cannot see them.
+- ~~**Are early *web* users grandfathered?** `AppTransaction.originalAppVersion` cannot see them.~~
+  ✅ **Answered 2026-09-14:** the question dissolves — nobody is identified as early anywhere, and
+  today's library stays free on every surface. `native/GRANDFATHERING-android.md`.
 - **Does the web keep the login wall after iOS drops it?** Two products, two privacy statements.
 - **Bundle, fetch, or both** — and if bundling, what does that do to the 250 MB target that
   `app-store-plan.md` measured down to 383 MB?

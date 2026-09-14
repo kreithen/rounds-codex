@@ -38,6 +38,8 @@ gets forgotten.
 > collected identifier. The rest of this section (one price, grandfathering via
 > `AppTransaction.originalAppVersion`) is unaffected; a subscription still needs no account. Worth a
 > deliberate decision rather than letting the two designs drift.
+> *(Later note, 2026-09-14: the grandfathering half of that sentence no longer holds — see the
+> superseded heading below. One price and "a subscription needs no account" both still stand.)*
 >
 > **Decided 2026-08-05: v1 ships with NO login.** That restores "no accounts, no server, no login"
 > and the "Data Not Collected" label, removes the Guideline 5.1.1(v) rejection risk and the
