@@ -128,7 +128,7 @@ closes, and respecting the hinge as a layout boundary.
 | when | what |
 |---|---|
 | ~~After the 17th~~ **shipped 2026-09-14** | **Level 1**, as v138. `scripts/add_large_screen.js` + `scripts/verify_large_screen.js`. |
-| **next** | **The two-column condition page** (physician's call, 2026-09-14). Not full Level 2 — no router change. See the note in Level 1's prose cap: the condition page is the one reading view with headroom left, and two columns of `.panel` cards at phone measure each is how an 880px screen gets spent on it. |
+| ~~next~~ **shipped 2026-09-14** | **The condition page's side rail**, as v139. Asked for as "two columns of `.panel` cards"; built as a pinned 520px narrative plus a sticky 360px rail instead, because a condition page is a *sequence* and two columns make the reader zig-zag. `scripts/add_detail_rail.js` carries the full reasoning. The narrative is 488px of text, byte-identical to v138 — the rail is additive, not a widening. |
 | **Before any tablet marketing** | **Level 2**, if iPad is a target audience worth naming. It is a genuine product decision, not a polish item — it changes how the app is navigated. |
 | **When the hardware is real** | Level 2 will already have done most of the work. Re-measure then. |
 

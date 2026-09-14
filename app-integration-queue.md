@@ -1,5 +1,21 @@
 # Live app (`index.html`) — integration & change queue
 
+> **SHIPPED 2026-09-14 as `v139-DETAIL-RAIL`** (app repo `be1ceae`) — the condition page's side rail
+> above 1024px. `scripts/add_detail_rail.js` + `scripts/verify_detail_rail.js` (13 checks; 9 fail on
+> v138), wired into `preflight.sh`. Narrative pinned at 520px so the prose stays 488px wide, exactly
+> what it is without the rail; the freed width goes to a sticky 360px rail.
+>
+> **Three things went wrong building it and all three are worth knowing:**
+> - A `replace(longAnchor, shortReplacement)` **silently deleted four words from the educational-use
+>   disclaimer** on all 183 condition pages. Every anchor assertion passed. Caught by reading a
+>   screenshot. `add_detail_rail.js` now asserts its own edit is exactly its five intended edits and
+>   nothing else — undo them on the result and the input must come back byte for byte.
+> - `rxInjectCond()` does `pad.insertBefore(panel, refs)`, which throws once `.refs` is not `.pad`'s
+>   direct child — **into a bare `catch{}`**, so the Rx Guide panel vanished silently. Found by
+>   diffing rendered geometry.
+> - A **leftover `netlifysim` squatting on the verify script's port** made the guard report 11
+>   passed against the wrong tree. Both verify scripts now refuse to run if their port answers.
+
 > **SHIPPED 2026-09-14 as `v138-LARGE-SCREEN`** (app repo `bef41c3`) — large screens, Level 1.
 > Applied by `scripts/add_large_screen.js`, guarded by `scripts/verify_large_screen.js` (15/15 on the
 > shipped bytes; 11 of the 15 fail on the pre-fix tree). `preflight.sh web` 9/9 and `preflight.sh ios`

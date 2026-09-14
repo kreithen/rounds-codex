@@ -269,10 +269,29 @@ was already at a 62-75 character measure, so the reading views could only be wid
 - **The `RC_COPYRIGHT` entity mismatch that blocked every native payload build is gone** — fixed
   upstream in v134, not here. `preflight.sh ios` now builds the 826 MB payload all green.
 
-**Next layout job: the two-column condition page** (physician's call, 2026-09-14). Not full Level 2
-and no router change: the condition page is the one reading view with headroom left, and two columns
-of `.panel` cards at roughly phone measure each is how an 880px screen gets spent on it. `.pad`
-becomes a grid, `.dtop` and `.dhero` span both columns, and sticky-inside-grid has to be checked.
+**The condition page's side rail shipped as `v139-DETAIL-RAIL`, 2026-09-14** (app repo `be1ceae`).
+Asked for as two equal columns; built as a pinned 520px narrative plus a sticky 360px rail, because
+a condition page is a sequence and splitting a sequence across two columns makes the reader zig-zag.
+The prose is 488px wide — identical to v139 without the rail — so the rail is additive.
+
+**Three traps it hit, none of which an anchor assertion caught:**
+
+- **A patcher can match its anchors perfectly and still mangle what it matched.** Lengthening an
+  anchor without lengthening its replacement deleted four words from the educational-use disclaimer
+  on all 183 condition pages, and it still read like a sentence. The fix is a post-condition:
+  `add_detail_rail.js` undoes its own edits on the result and requires the input back byte for byte.
+  **Copy that check into any new patcher** — anchors guard what you find, not what you write.
+- **`rxInjectCond()` does `pad.insertBefore(panel, refs)` inside a bare `catch{}`.** Any wrapper
+  around `.pad`'s children breaks it and the Rx Guide panel silently disappears. It is the only code
+  in the file that assumes `.pad`'s direct children (grepped: the one other `insertBefore` is the
+  NCLEX module on its own mount). Found by diffing rendered geometry, not by reading code.
+- **A leftover `netlifysim` on the verify script's port made the guard pass against the wrong
+  tree** — 11 passed, 0 failed, measuring the patched tree while pointed at the clean one. Both
+  verify scripts now refuse to start if their port already answers.
+
+**Next layout job: Level 2** — two-pane at tablet width and the nav as a sidebar. That one is a
+router change (`stack`, `back()` and `rcSyncURL()` all assume one visible view), so it is a product
+decision rather than a polish item.
 
 **Still open, roughly in order of value:**
 

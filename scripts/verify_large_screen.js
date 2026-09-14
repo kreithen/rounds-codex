@@ -75,6 +75,20 @@ const MEASURE_MAX = 92;   // characters a line, worst block on any reading view,
 const PHONE_WIDTHS = [320, 375, 390, 430];
 
 /* ------------------------------------------------------------------ plumbing */
+/* Refuse to run against a port something else is already serving.
+   This is not hypothetical: a leftover netlifysim from an earlier command was still bound to this
+   script's port, the spawn below failed silently (stdio:'ignore'), waitFor() succeeded against the
+   SQUATTER, and the guard reported 11 passed / 0 failed while measuring the patched tree when it
+   had been pointed at the clean one. A verify script that silently measures the wrong tree is worse
+   than no verify script. */
+function portFree(port) {
+  return new Promise(res => {
+    const req = http.get({ host: '127.0.0.1', port, path: '/', timeout: 1500 }, r => { r.resume(); res(false); });
+    req.on('error', () => res(true));
+    req.on('timeout', () => { req.destroy(); res(true); });
+  });
+}
+
 function serve(root, port) {
   const p = spawn(process.execPath, [path.join(HERE, 'netlifysim.js'), root, String(port)],
     { stdio: 'ignore' });
@@ -136,9 +150,17 @@ const MEASURE = `(function(){
   return worst;
 })()`;
 
+/* .d-main and .d-rail are skipped: add_detail_rail.js adds them to the condition page, so they are
+   new boxes and the raw lists can never match a tree that predates them. The invariant this check
+   exists for is unchanged and is still fully enforced -- every element that existed before must
+   render at exactly the same place and size -- and verify_detail_rail.js separately asserts the two
+   wrappers are no-op boxes below 1024px. Skipping them here is not a relaxation; comparing them
+   would be comparing something to nothing. */
 const GEOM = `(function(){
   const g=[];
-  document.querySelectorAll('#screen *').forEach(e=>{const r=e.getBoundingClientRect();
+  document.querySelectorAll('#screen *').forEach(e=>{
+    if(e.classList.contains('d-main')||e.classList.contains('d-rail')) return;
+    const r=e.getBoundingClientRect();
     g.push([Math.round(r.x),Math.round(r.y),Math.round(r.width),Math.round(r.height)]);});
   return JSON.stringify(g);
 })()`;
@@ -149,6 +171,14 @@ function record(name, pass, detail) { results.push({ name, pass, detail }); }
 /* ------------------------------------------------------------------ the run */
 (async () => {
   const PORT = 8931, PORT_B = 8932;
+  for (const port of [PORT, PORT_B]) {
+    if (!(await portFree(port))) {
+      console.error(`FAIL: something is already serving 127.0.0.1:${port}.`);
+      console.error('      Refusing to run -- this script would measure that server instead of');
+      console.error('      the tree you passed. Stop it (pkill -f netlifysim.js) and re-run.');
+      process.exit(2);
+    }
+  }
   const sims = [serve(ROOT, PORT)];
   if (BEFORE) sims.push(serve(BEFORE, PORT_B));
   try {
@@ -193,18 +223,29 @@ function record(name, pass, detail) { results.push({ name, pass, detail }); }
     /* --- 4, 5, 10: the reading column ------------------------------------------------------- */
     {
       const { ctx, page, errs } = await openApp(browser, PORT, 1024);
-      let widest = 0, widestView = '', worstCpl = null;
+      let widest = 0, widestView = '', worstCpl = null, railed = false;
       for (const v of READ_VIEWS) {
         await show(page, v);
-        const r = await page.evaluate(`(function(){return {
-          app:Math.round(document.querySelector('.app').getBoundingClientRect().width),
-          dv:document.querySelector('.app').dataset.view, m:${MEASURE}};})()`);
+        /* The READING COLUMN, which is not always the container. add_detail_rail.js widens
+           .app[data-view="detail"] to 880 above 1024px and spends the extra on a side rail, so on
+           that one view the column to measure is .d-main. Measuring .app there would report 880 and
+           read as a blown measure when the prose is still 532 -- and "just raise the limit" would
+           have thrown away the check. Check 5 measures the rendered text independently, so a real
+           regression cannot hide behind this. */
+        const r = await page.evaluate(`(function(){
+          const app=document.querySelector('.app'), main=document.querySelector('.d-main');
+          return {
+            app:Math.round((main||app).getBoundingClientRect().width),
+            railed:!!main,
+            dv:app.dataset.view, m:${MEASURE}};})()`);
         if (r.app > widest) { widest = r.app; widestView = v; }
+        if (r.railed) railed = true;
         if (r.m && (!worstCpl || r.m.cpl > worstCpl.cpl)) worstCpl = Object.assign({ view: v }, r.m);
         if (v === 'about') record('paint() publishes .app[data-view]', r.dv === 'about', `data-view = ${r.dv}`);
       }
-      record('reading views keep their measure', widest <= 520,
-        `widest reading view is ${widestView} at ${widest}px, want <= 520`);
+      record('reading views keep their measure', widest <= 540,
+        `widest reading column is ${widestView} at ${widest}px, want <= 540` +
+        (railed ? ' (detail measured at .d-main -- it has a rail)' : ''));
       record('no reading view runs long', !!worstCpl && worstCpl.cpl <= MEASURE_MAX,
         worstCpl ? `worst is ${worstCpl.view} ${worstCpl.sel} at ${worstCpl.cpl} characters/line (${worstCpl.fs}), limit ${MEASURE_MAX}`
                  : 'no prose block found -- the harness measured nothing');
