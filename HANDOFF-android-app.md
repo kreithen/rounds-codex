@@ -532,13 +532,21 @@ templates, and an Android launch email to the list. None of it before the store 
 
 ## 7. Open state to carry over
 
-- **Grandfathering has no Android design.** The public promise is "download free now, keep it free
-  for life". On iOS the plan is `AppTransaction.originalAppVersion`; **Play Billing has no
-  equivalent**. Options, none chosen: (a) a Play *product* — a free, one-time "founder" in-app item
-  granted to early installs, whose ownership Play Billing can query later; (b) a locally stored
-  install stamp (does not survive reinstall — weak); (c) an account, which contradicts everything
-  else. This must be decided **before** the paid launch, not before v1. Early *web* users are a
-  further, separate gap (`app-store-checklist.md`).
+- **Grandfathering: designed 2026-09-14, see `native/GRANDFATHERING-android.md`. Awaiting the
+  physician's decision.** Recommendation is **grandfather by SCOPE, not by identity** — v1's content
+  stays free forever and the subscription gates only what is added after the paid launch — because
+  it is the only option that needs no mechanism in v1, cannot break on reinstall or a new device,
+  and closes the separate early-*web*-user gap at the same time. Its cost is commercial, not
+  technical: the current library can never be converted to paid.
+  **Two corrections to what this section previously said.** The local install stamp was called
+  "weak — does not survive reinstall"; that is wrong on current Android, because Auto Backup is
+  on by default and restores app data on reinstall before first launch, so the stamp does survive.
+  And the "free one-time founder product" was listed as though it were known to work — Play
+  one-time products have a per-market price range and $0 could not be confirmed as permitted, so
+  that option needs a Console check before anyone builds on it.
+  **The timing point that matters:** every option except the recommended one must ship in **v1**,
+  since they work by recording something at first launch and nothing reconstructs an install date
+  retroactively.
 - **Apple's Guideline 2.1 information request** (`app-store-checklist.md`) asked for a screen
   recording and a long written answer about the app's account model and content. Keep the recording;
   Play may ask for the same thing under its "login credentials for review" and health-app checks.
