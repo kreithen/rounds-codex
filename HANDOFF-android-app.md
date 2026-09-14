@@ -532,8 +532,10 @@ templates, and an Android launch email to the list. None of it before the store 
 
 ## 7. Open state to carry over
 
-- **Grandfathering: designed 2026-09-14, see `native/GRANDFATHERING-android.md`. Awaiting the
-  physician's decision.** Recommendation is **grandfather by SCOPE, not by identity** — v1's content
+- **Grandfathering: ✅ DECIDED 2026-09-14 — Option D, grandfather by SCOPE.** Full reasoning in
+  `native/GRANDFATHERING-android.md`, which also lists the iOS and marketing consequences that are
+  still open. **Nothing is required in the Android v1 build**, so this is off the critical path.
+  The decision was **grandfather by SCOPE, not by identity** — v1's content
   stays free forever and the subscription gates only what is added after the paid launch — because
   it is the only option that needs no mechanism in v1, cannot break on reinstall or a new device,
   and closes the separate early-*web*-user gap at the same time. Its cost is commercial, not
