@@ -83,10 +83,11 @@ if [ "$MODE" = web ]; then
   run "version and copyright"   node "$HERE/stamp_version.js" "$TREE" --check
   run "public legal pages"      node "$HERE/build_legal_pages.js" "$TREE" --check
   # Regenerating the AASA is not a check, so it is not run here; but a missing one is worth saying.
-  [ -f "$TREE/.well-known/apple-app-site-association" ] \
-    && run "AASA is valid JSON" node -e "JSON.parse(require('fs').readFileSync(process.argv[1],'utf8'))" \
-         "$TREE/.well-known/apple-app-site-association" \
-    || { printf '  FAIL  AASA present\n'; FAIL=$((FAIL+1)); }
+  # Was "is the AASA valid JSON", which a broken Universal Links setup passes easily. The real
+  # invariants are that its routes match the app's two route regexes, that it names the shipped app
+  # ID, and that RC_SHARE_ORIGIN points at the host serving it -- a link shared on any other host
+  # cannot open the app whatever the entitlement says.
+  run "universal links"         node "$HERE/verify_universal_links.js" "$TREE" --live
 fi
 
 # ---- browser suites ------------------------------------------------------------------------------
