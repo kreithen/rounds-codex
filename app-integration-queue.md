@@ -1595,3 +1595,61 @@ this particular check still ran under the old default. It protects every future 
   briefly suspected of being a re-send of it for the same reason.
 - **Hip Fracture gets its own gallery**, separate from Fractures (physician's call). Both MSK builds
   are rehearsed and blocked only on the twenty JPGs — see `galleries-staging/MSK-BUILD-READY.md`.
+
+## v142 — per-route link-preview cards (2026-09-15)
+
+`/c/dvt` shared to Messages now previews as **Deep Vein Thrombosis** with its own tagline, instead
+of the site-wide "Rounds Codex" card v140 gave every route. 394 routes carry their own card:
+183 conditions, 21 sections, 102 galleries, 75 resident and guideline-year pages, 10 calculators,
+and the three index routes (`/g/`, `/u/`, `/x/`).
+
+**Three files ship:** `netlify/edge-functions/route-previews.js` (generated, 85 kB, never edited by
+hand), two sentinel comments inserted into `index.html`, and one line in `netlify.toml`. Built by
+`scripts/build_route_previews.js`, guarded by `scripts/verify_route_previews.js`, which is now in
+`preflight.sh` under web mode.
+
+### The four decisions worth remembering
+
+- **It is gated on the crawler user-agent, and that is the load-bearing one.** Rewriting HTML at the
+  edge means `await res.text()` — buffering the whole body and handing it back decoded. index.html is
+  756,093 bytes raw against brotli on the wire, so transforming every request would have bought the
+  card at five times the bytes on the one route users actually open. A browser navigation returns
+  early and is never touched. The failure direction is safe: an agent not on the list sees the v140
+  card, which is what it sees today.
+- **`og:url` is set now and v140 was right to omit it.** It is a canonicalisation hint: one
+  site-wide value tells the platforms that honour it to collapse `/c/dvt` to the root, and the
+  recipient lands in the library. Per-route, it names the shared page — which is the whole point.
+- **The swap is between `<!--RC_OG-->` and `<!--/RC_OG-->`.** Missing sentinels mean the function
+  returns the response untouched, so deleting them degrades to the v140 card rather than breaking a
+  page. **Any new `og:` tag must go INSIDE them** — one placed after the closing sentinel survives
+  the swap and, being later in the head, wins. `verify_route_previews.js` checks exactly that.
+- **A list description is built to FIT, not to a fixed count.** The first cut took N names and let
+  the 200-character clip handle the overflow — which swallowed the list's own "and N more" tail, so
+  **48 of the 394 cards claimed fewer items than the page holds.** Caught by a guard in the
+  generator, not by reading them. Only a condition's tagline, being a sentence, may be clipped.
+
+### What could not be verified from here, and what proves it instead
+
+Edge functions cannot be executed in this container, so `context.next()` in the guard is a double.
+The guard was calibrated by **mutating the shipped function eight ways** and confirming each is
+caught — the list is in its header. The one that matters is mutant 3, "every card gets the same
+title": it is the only bug that still produces a valid page with valid tags on every route, i.e. the
+exact defect this work removes, and a checker that only asked "is there an og:title" would pass it.
+
+**Which user-agent iOS Messages sends is unknown from here** — no iOS, no WebKit. It is documented
+as the compound `facebookexternalhit/1.1 Facebot Twitterbot/1.0`, and macOS Messages sends Applebot;
+both match. If a real share shows the generic card, the fix is one string in `CRAWLERS`.
+
+After deploy, from a machine that can reach the host:
+
+```
+curl -sS -H 'User-Agent: Twitterbot/1.0' https://rounds-codex.netlify.app/c/dvt \
+  | grep -o '<meta property="og:title"[^>]*>'
+# expect: <meta property="og:title" content="Deep Vein Thrombosis">
+# and the same URL with a browser UA must still return the site-wide "Rounds Codex".
+```
+
+**Still on the site-wide image.** Every route gets its own words; all 394 share `og-card.jpg`.
+Per-gallery card art is a separate job — and `build_og_card.py` records why it is not trivial: the
+brand faces are not installed here, so type rendered into a card is the wrong wordmark. A card built
+from gallery page 1 with no type would sidestep that.

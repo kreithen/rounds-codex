@@ -88,6 +88,10 @@ if [ "$MODE" = web ]; then
   # ID, and that RC_SHARE_ORIGIN points at the host serving it -- a link shared on any other host
   # cannot open the app whatever the entitlement says.
   run "universal links"         node "$HERE/verify_universal_links.js" "$TREE" --live
+  # Per-route link-preview cards. Web only: the edge function is a Netlify feature and the native
+  # payload has no CDN in front of it. It starts its own sim on 8951, so it does not share $PORT --
+  # but its end-to-end check needs RC_PW and reports itself as skipped without it.
+  run "route previews"          node "$HERE/verify_route_previews.js" "$TREE"
 fi
 
 # ---- browser suites ------------------------------------------------------------------------------
