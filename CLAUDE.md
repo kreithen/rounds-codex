@@ -3,6 +3,49 @@
 Medical-education app by Dr. Kreithen (physician). Static single-page apps (HTML + inline JS),
 no backend. This file is context for future sessions — read it before starting work.
 
+## ONE REPO, TWO UNRELATED HISTORIES (discovered 2026-09-15 — read before branching)
+
+`kreithen/rounds-codex` contains **two lines of development with NO common ancestor.**
+`git merge-base` between them returns empty. This is not one branch lagging another; they are
+disjoint trees that happen to share a repository and 426 filenames.
+
+| line | root commit | carries | deploys |
+|---|---|---|---|
+| **`main`** | "USMLE module: Step 1 Batch 1" | `landing/`, `admin/`, `backend/`, `netlify.toml` | **roundscodex.com** (the App Store download page, live) |
+| **the native line** | "Add a check that each condition audio bar advertises the right duration" | `native/`, `legal/`, `marketing/`, `app-store-*`, every `*-staging/`, all the patchers and guards | nothing — it builds the app that ships to `rounds-codex-app` |
+
+Every working branch except `main` descends from the native line. `main` is owned by the
+`claude/rounds-codex-continued-qoh9b1` conversation.
+
+**Consequences, all of which have already cost time:**
+
+- **`CLAUDE.md`, `README.md`, `scripts/`, `data/`, `tools/` and every `*-staging/` exist in BOTH
+  trees with different contents.** The two `CLAUDE.md` files are 24 kB and 108 kB. Reading one and
+  assuming it describes the other is wrong.
+- **Do not merge them.** It needs `--allow-unrelated-histories` and conflicts on 426 paths with no
+  sane resolution. It was proposed on 2026-09-15 on the mistaken reading that `main` was "132
+  commits behind" — that number is `rev-list` counting two disjoint lines, not a lag. **Check
+  `git merge-base` before believing any ahead/behind count in this repo.**
+- **Branch from the newest branch on YOUR line, never from `main`,** unless you are working on the
+  landing site or admin dashboard, in which case branch from `main` and stay there.
+
+## Domains — settled 2026-09-15, stop re-deriving it
+
+| | |
+|---|---|
+| **roundscodex.com** | the marketing / App Store download page. Netlify project `roundscodexwebsite`, published from `landing/` on `main`. |
+| **rounds-codex.netlify.app** | the app itself. Netlify project `rounds-codex`, published from the `rounds-codex-app` repo. |
+
+**That is the end state, not a staging arrangement.** `RC_SHARE_ORIGIN` stays
+`https://rounds-codex.netlify.app`; the app is not moving to the brand domain. Earlier notes in this
+file speculated about roundscodex.com "becoming canonical" for the app — it did not, and that
+question is closed.
+
+The Universal Links consequence: the entitlement must claim **`rounds-codex.netlify.app`**, because
+that is the host every share link points at. Claiming `roundscodex.com` as well is harmless and
+needs an AASA on `landing/` to do anything — prepared at `native/landing-aasa/`, deliberately not
+pushed into that conversation's tree. Full picture in `UNIVERSAL-LINKS.md`.
+
 ## Two repos (critical)
 - **`rounds-codex` (this repo, PUBLIC)** — the dev/build repo: question banks, illustrations,
   staging materials, build tools, docs. Safe to commit here.

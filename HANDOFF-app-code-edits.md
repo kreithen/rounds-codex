@@ -24,6 +24,16 @@ to break the other two are not obvious from the diff.
 
 ---
 
+## 0b. `main` IS A DIFFERENT PRODUCT — added 2026-09-15
+
+Before anything below: **`main` and the native line share no git history.** `git merge-base` returns
+empty. `main` is the landing site, admin dashboard and backend that deploy **roundscodex.com**; the
+native line is the app build and its tooling. 426 filenames collide between them with different
+contents, `CLAUDE.md` included.
+
+So "main is N commits behind" is meaningless in this repo — that number is `rev-list` counting two
+disjoint lines. Do not merge them, and do not branch from `main` for app work.
+
 ## 1. Start from the right commit — this is the first way to waste a day
 
 There are three lines of history and they are **not** in the order you would guess:

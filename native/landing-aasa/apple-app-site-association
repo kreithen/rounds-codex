@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["744JSM2Z3H.com.roundscodex.app"],
+        "components": [
+          { "/": "/c/*", "comment": "Rounds Codex condition links" },
+          { "/": "/s/*", "comment": "Rounds Codex specialty section links" },
+          { "/": "/g/*", "comment": "Rounds Codex gallery links" },
+          { "/": "/r/*", "comment": "Rounds Codex guideline year links" },
+          { "/": "/u/*", "comment": "Rounds Codex clinical updates links" },
+          { "/": "/x/*", "comment": "Rounds Codex calculator links" }
+        ]
+      }
+    ]
+  },
+  "webcredentials": { "apps": [] },
+  "appclips": { "apps": [] }
+}

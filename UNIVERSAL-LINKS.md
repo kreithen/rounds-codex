@@ -17,52 +17,41 @@ Measured 2026-09-14. Guarded by `scripts/verify_universal_links.js`, wired into 
 
 Nothing on the website needs changing.
 
-## What I do NOT know, and said too confidently before
+## Corrected twice. Here is the settled picture.
 
-I first wrote here that the fault is the app's `applinks:` entitlement naming `roundscodex.com`.
-**That was taken from `HANDOFF-app-code-edits.md`, not measured**, and there is evidence in this
-repo against it: `native/ios-project/App.entitlements` — the reference copy — already claims all
-three hosts, `rounds-codex.netlify.app` included, and its comment gives the same reasoning I
-rederived independently.
+I first wrote that the fault is the entitlement naming `roundscodex.com`, taken from the handoff
+rather than measured. Then I found `native/ios-project/App.entitlements` claiming all three hosts and
+softened it. Then `app-store-checklist.md` §4 settled it — the configuration recorded when build 1
+was archived reads **"Associated Domains `applinks:roundscodex.com`"**, one host, and the three-host
+reference file is dated the same day with a README saying it was never compiled.
 
-**Then I found the record that settles it, and it favours the handoff.** `app-store-checklist.md`
-§4, written when build 1 was archived on 2026-08-17, lists the configuration as it was actually set:
+And on 2026-09-15 the last piece arrived: **`roundscodex.com` is not a stray site.** It is
+`landing/` on this repo's `main` — the App Store download page, live since the commit "Go live:
+promote App Store download homepage to roundscodex.com". So claiming it was a reasonable intention,
+not a blunder. What is missing is that `landing/` serves no AASA, so the claim resolves to nothing.
 
-> Configured: iPhone + iPad, iOS 15.0 minimum, display name `Rounds Codex`, category
-> `public.app-category.medical`, **Associated Domains `applinks:roundscodex.com`**,
-> `ITSAppUsesNonExemptEncryption=false` …
+**The domain split is now a decision, not an accident** (2026-09-15): roundscodex.com is marketing,
+rounds-codex.netlify.app is the app, and the app is not moving. See CLAUDE.md.
 
-One host. Not the netlify.app one. And `native/ios-project/README.md` is dated the same day and says
-its files have **never been compiled** — so the three-host reference was written as a proposal and,
-on this evidence, never applied.
+That makes the fix unambiguous:
 
-That is a contemporaneous record rather than a reading of the live file, and builds 2 to 4 could in
-principle have changed it with nothing written down. So: **strong evidence the entitlement claims
-only `roundscodex.com`, and no way from here to confirm what build 4 actually shipped.** Look at the
-file before changing it; the check takes ten seconds and this document was wrong once already.
+- **The entitlement must claim `rounds-codex.netlify.app`.** `RC_SHARE_ORIGIN` points there, so every
+  link the app has ever produced points there. This is the change that makes the feature work.
+- **Claiming `roundscodex.com` as well is optional and harmless**, and needs an AASA on `landing/` to
+  do anything. One is prepared at `native/landing-aasa/` with the netlify.toml rule it needs, and
+  deliberately not pushed — `main` is another conversation's tree.
 
-This ambiguity is exactly what putting the project in a repo removes — see
-`native/PUT-XCODE-PROJECT-IN-GIT.md`.
+Still not readable from a session: what build 4 actually shipped. The entitlement is in
+`~/rounds-codex-ios`, in neither repo. `native/PUT-XCODE-PROJECT-IN-GIT.md` fixes that permanently.
 
-What is measured, and holds either way:
+**Two defects found in the reference files, both corrected 2026-09-14** — these are the files someone
+drops into Xcode:
 
-- `roundscodex.com` is served by the Netlify project `roundscodexwebsite`
-  (`bf814a35-8afd-4f7c-8bde-4b23566409ea`); the app is served by `rounds-codex`
-  (`15778795-d2c2-4196-a2d5-fdaa5657a573`). **Two different sites.**
-- `RC_SHARE_ORIGIN` is `rounds-codex.netlify.app`, so every `/c/<id>` link the app has ever produced
-  points there and the entitlement must name that host.
-- That host's AASA is correct and correctly served, verified against the live site.
+- `capacitor.config.json` said `"contentInset": "always"`, the exact value `add_safe_area.js`
+  documents as putting headers under the Dynamic Island on every cold load.
+- `App.entitlements` claimed both hosts serve the same Netlify site. They are two different projects.
 
-**Two defects found in the reference files, both corrected 2026-09-14** — worth knowing because
-these are the files someone drops into Xcode:
-
-- `capacitor.config.json` said `"contentInset": "always"`. That is the exact value
-  `scripts/add_safe_area.js` documents as causing headers to render under the Dynamic Island on
-  every cold load, found on an iPhone 16 Pro Max and fixed with `"never"`. Dropping the old file in
-  would have reintroduced a device bug that cost a debugging session.
-- `App.entitlements` claimed both hosts serve the same Netlify site, so one AASA answers for both.
-  Measured false, as above.
-
+## The fix — one line, on the Mac
 ## The fix — one line, on the Mac
 ## The fix — one line, on the Mac
 
