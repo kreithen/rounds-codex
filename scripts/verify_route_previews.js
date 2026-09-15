@@ -5,7 +5,7 @@
  *
  * CALIBRATION -- what says this file is a guard and not decoration. Against the v141 tree it stops
  * at the first check, because the edge function is not there; that proves nothing about the other
- * twenty-three. So it was calibrated by MUTATING the shipped function eight ways and confirming each
+ * twenty-four. So it was calibrated by MUTATING the shipped function eight ways and confirming each
  * one is caught. Every line below is measured, not intended:
  *
  *   1  `h.delete('content-encoding')` removed          1 fail   the decoded body keeps the header
@@ -151,6 +151,10 @@ const portFree = p => new Promise(res => {
       'content-encoding': 'br',             // the trap: the body handed back is already decoded
       'content-length': '148231',           // and this describes the compressed bytes
       'cache-control': 'public,max-age=0,must-revalidate',
+      /* From _headers. The site is pre-launch and every response carries noindex; a rebuilt
+         Response that dropped it would quietly put 394 routes into search while robots.txt still
+         claims they are closed. */
+      'x-robots-tag': 'noindex, nofollow, noarchive, nosnippet, noimageindex',
     },
   });
   const call = async (pathname, ua) => {
@@ -178,6 +182,9 @@ const portFree = p => new Promise(res => {
      && crawlRes.headers.get('cache-control') === 'public,max-age=0,must-revalidate',
      'the decoded body does not keep content-encoding or content-length',
      crawlRes ? `kept cache-control, dropped ${['content-encoding', 'content-length'].filter(h => !crawlRes.headers.get(h)).length}/2` : '');
+  ok(crawlRes && /noindex/.test(crawlRes.headers.get('x-robots-tag') || ''),
+     'the rebuilt response still carries the noindex header',
+     crawlRes ? (crawlRes.headers.get('x-robots-tag') || '(dropped)') : '');
 
   /* The app's own markup has to survive. Length changes by exactly the head swap; nothing else. */
   const bodyIn = shipped.slice(shipped.indexOf('<body'));
