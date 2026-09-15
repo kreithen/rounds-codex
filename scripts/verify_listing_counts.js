@@ -46,6 +46,11 @@ let docs = process.argv.slice(3).filter(a => !a.startsWith('--'));
 if (!docs.length) docs = [
   path.join(REPO, 'native', 'PLAY-LISTING-DRAFT.md'),
   path.join(REPO, 'app-store-submission-draft.md'),
+  /* Added 2026-09-15 after this file was found carrying "197 illustrated" -- the exact defect the
+     guard was built for -- months after the same number was corrected in the submission draft. It
+     was missed because the guard never read it. A checklist that states counts is a document that
+     quotes counts, whatever its name says it is for. */
+  path.join(REPO, 'app-store-checklist.md'),
   /* The feature graphic has "183 conditions" and "1,020 original illustrations" painted into it.
      A stale number there is worse than one in a document: it is a picture, so nobody re-reads it. */
   path.join(REPO, 'native', 'play-graphics', 'feature-graphic.html'),
@@ -103,6 +108,19 @@ const CLAIMS = [
   ['audio recordings',        need('audio recordings'),          /audio for ([\d,]+) conditions/g],
 ];
 
+/* WIDENING THE PATTERNS TO FIT A DOCUMENT'S PHRASING WAS TRIED ON 2026-09-15 AND REVERTED.
+ * app-store-checklist.md wrote its inventory as "1,010 USMLE items across 43 bank files, 231
+ * illustrated", so seven claims read "absent" against a table built for the marketing copy's
+ * "1,010 USMLE-style items ... 231 of them illustrated". Loosening each pattern to accept both
+ * immediately produced false positives in THREE documents at once:
+ *   ([\d,]+) USMLE(?:-style)? items   matched "231 USMLE items carry an illustration" -- a true
+ *                                     sentence about a DIFFERENT quantity -- and reported the
+ *                                     total as 231.
+ *   ([\d,]+) (?:of them )?illustrated matched two unrelated numbers in the submission draft.
+ * The table is deliberately a fixed list of literal phrases (see the header, and CLAUDE.md's C1
+ * note on why the plausible general version fails). The document was reworded to the canonical
+ * vocabulary instead. IF A DOC WON'T MATCH, CHANGE THE DOC, NOT THE PATTERN. */
+
 /* ---- check ---------------------------------------------------------------------------------- */
 let bad = 0, checked = 0;
 for (const doc of docs) {
@@ -118,6 +136,12 @@ for (const doc of docs) {
      is the opposite. Strip tags first. Caught by adding the graphic and seeing a clean run of
      "absent" on a file that visibly quotes two of these counts. */
   if (/\.html?$/i.test(doc)) text = text.replace(/<[^>]+>/g, '');
+  /* Same problem, different markup: a MARKDOWN doc writes "**1,010** USMLE items", and the bold
+     markers sit between the number and the noun, so every pattern misses and the file reports a
+     clean run of "absent" -- coverage-shaped, and the opposite of coverage. Found the same way the
+     HTML case was: by adding app-store-checklist.md and watching 16 of 17 claims report absent on a
+     file whose inventory sentence quotes eight of them. */
+  if (/\.md$/i.test(doc)) text = text.replace(/\*\*|__(?=\w)|(?<=\w)__/g, '');
   text = text.replace(/"[^"\n]{0,200}"/g, ' ');
   console.log(`\n=== ${path.relative(REPO, doc)} ===`);
   for (const [label, want, re] of CLAIMS) {

@@ -131,9 +131,9 @@ schedule yet, so the card appears the moment you bookmark something.
 |---|---|
 | **App category** | **Medical** (primary). Matches the App Store listing and is where the audience searches. It routes the app through the health review path, which §6 answers. |
 | **Tags** | Play's tag picker, up to 5 — pick from its fixed list; there is no free-text keyword field. |
-| **Contact email** | **the support address, shown publicly on Play** — not a personal one |
+| **Contact email** | **`teacher@roundscodex.com`** — the address the shipped app already uses for "Questions, feedback & bugs", derived from `index.html` rather than from a doc. Shown publicly on Play, so it must not be a personal address. |
 | **Contact website** | `https://roundscodex.com` |
-| **Privacy policy** | `https://roundscodex.com/privacy/` — **live and correct as of v133**, which is what §4.4 shipped today; it now says "the iOS and Android apps" |
+| **Privacy policy** | `https://roundscodex.com/privacy/` — **confirm in a browser before pasting.** Play validates this URL and a 404 blocks the listing. Two facts, and they agree: the published file is `landing/privacy.html` on `main` (the landing site links to it as `href="privacy.html"`, and there is no `_redirects` in `landing/`), and a session that could reach the host **measured `/privacy/` loading on 2026-08-18** — see `app-store-checklist.md`'s 1.0.1 Universal Links item. Netlify resolves a trailing-slash path onto the matching `.html`, which is why both are true. **`https://roundscodex.com/privacy.html` is the form that cannot be wrong**, since it names the file itself. This cannot be re-checked from a container — `roundscodex.com` is refused by the agent proxy, which returns a connection failure, not a 404, so it says nothing about the site. |
 
 ## 6. Declarations — answers, not guesses
 

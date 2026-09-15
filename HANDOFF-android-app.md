@@ -310,7 +310,15 @@ warns if the plan is stale) and a new step writes the pack modules from the mani
 > is written out in `native/ANDROID-RUNBOOK.md` step 7, ready to paste.
 
 
-- **`/.well-known/assetlinks.json`** on roundscodex.com, listing `com.roundscodex.app` with the
+- **`/.well-known/assetlinks.json`** — **THE HOST HERE IS PROBABLY WRONG, re-decide before building
+  it (flagged 2026-09-15).** This says roundscodex.com, but the domains question was settled that
+  day and `CLAUDE.md` now records it: roundscodex.com is the marketing page and the app lives at
+  `rounds-codex.netlify.app`, which is the host `RC_SHARE_ORIGIN` pins and therefore the host every
+  link the app generates points at. An App Links file on a domain no link names verifies nothing.
+  The same mistake is already recorded on iOS as the 1.0.1 Universal Links item in
+  `app-store-checklist.md` — the entitlement claims roundscodex.com, which does not serve the AASA,
+  so `/c/<id>` opens in Safari instead of the app. **Do not repeat it on Android.** See
+  `UNIVERSAL-LINKS.md`. As written the step is: on roundscodex.com, listing `com.roundscodex.app` with the
   SHA-256 of the **Play App Signing** key (from Play Console → App integrity, available only after
   the first upload — so the order is: upload once, read the fingerprint, deploy the file, then
   verify). Add the `Content-Type: application/json` line to `_headers` like the AASA. Deploying to
@@ -476,13 +484,21 @@ container could not verify:
 - **Data safety:** "no data collected, no data shared" is true of the payload **only if** §4.2 item 4
   and the Ask removal hold — the variant already cuts the Supabase URL and the Netlify function
   call. Verify against the actual payload with the off-origin request check `verify_ios_variant.js`
-  already makes. Privacy policy URL: `https://roundscodex.com/privacy/` after §4.4.
+  already makes. Privacy policy URL: `https://roundscodex.com/privacy/` after §4.4 — **confirm it
+  in a browser before pasting it into Play, which validates the URL and blocks the listing on a
+  404.** The published file is `landing/privacy.html` on `main`, and `/privacy/` was measured
+  loading on 2026-08-18 (Netlify resolves a trailing slash onto the matching `.html`), so both
+  forms should work and `privacy.html` is the one that cannot be wrong. It is not checkable from
+  a container: the agent proxy refuses `roundscodex.com`, which is a connection failure and not a
+  404, so it tells you nothing about the site. Full reasoning in `native/PLAY-LISTING-DRAFT.md` §5.
 - **Health apps declaration** (required for every app since Aug 2025; Jan 2026 added a medical-device
   labelling question): the app is an educational reference, not a medical device, does not use
   Health Connect, does not offer diagnosis or treatment, gates first use with a medical disclaimer.
   The Guideline 1.4.1 reasoning about the dosage calculators in `app-store-submission-draft.md`
   transfers word for word.
-- **Contact email** shown publicly on Play: use the support address, not a personal one.
+- **Contact email** shown publicly on Play: **`teacher@roundscodex.com`** — the address the shipped
+  app already uses for "Questions, feedback & bugs". Read out of `index.html`, not out of a doc.
+  Never a personal address; Play displays it on the store page.
 
 ### 4.7 Last — landing site and launch  *(session; only after the app is live)*
 

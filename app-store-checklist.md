@@ -187,9 +187,16 @@ avoid.
 | quiz questions | 1,820 | **1,840** |
 | audio recordings | — | **31** |
 
-Unchanged and verified: **1,010** USMLE items across 43 bank files (Step 1 280, Step 2 CK 318,
-Step 3 Day 1 232, Day 2 180), **197** illustrated, **150** NCLEX items, **300** drugs, **470**
-guideline entries across **25** specialties, **1,418** resident entries, **10** calculators.
+Unchanged and verified: **1,010** USMLE-style items across 43 bank files (Step 1 280, Step 2 CK
+318, Step 3 Day 1 232, Day 2 180), **231** of them illustrated, **150** NCLEX-style items,
+**300** drug entries, **470** clinical guideline updates across **25** specialties,
+**1,418** resident-level entries, **10** clinical calculators.
+
+> Those phrasings are not stylistic. `scripts/verify_listing_counts.js` matches a **fixed table of
+> literal phrases**, so "1,010 USMLE items" is invisible to it where "1,010 USMLE-style items" is
+> checked on every run. This sentence carried a stale **197** for weeks after the same number was
+> corrected in `app-store-submission-draft.md`, precisely because the guard could not see it.
+> **Keep the vocabulary when editing, or the line silently stops being checked.**
 
 **Attribution is superseded.** Every "written by a physician" line becomes the team-of-clinicians
 framing — **"designed by a team of clinicians"**, the verb revised from "created" by the physician
@@ -374,6 +381,27 @@ phone. Deferred deliberately; does not affect review or a US release.
 - [x] **Screenshots.** **DONE 2026-08-18** — eight framings shot on the iPhone 17 Pro Max simulator
       (6.9", the required size) and eight on iPad Pro 13", off build 4. Shot list and the reasons
       for the order: `native/SCREENSHOT-SHOTLIST.md`.
+- [ ] **1.0.1 — TWO CLAIMS IN THE LIVE APP STORE DESCRIPTION ARE WRONG.** Found 2026-09-09 while
+      porting the text to Google Play, and **still live today.** The drafting source
+      (`app-store-submission-draft.md`) was corrected in place at the time; **App Store Connect was
+      not**, and only the physician can edit it. One claim describes a feature that is not there and
+      the other understates the app:
+      - **"Share any condition, section or gallery as a link"** — `rcShareGallery` has had **no call
+        site since v74**, when the gallery header's share button was removed in favour of the PDF
+        file share. There is no way to produce a `/g/<id>` link from inside the app. Replace with
+        **"Share a condition, a specialty section or a guideline year as a link"**, which is what the
+        corrected draft (line 242) and the Play description both now say. Genuinely shareable: a
+        condition, a specialty section, a specialty page, a guideline year, the galleries *index*,
+        and Clinical Updates.
+      - **"197 of them illustrated"**, in **two places** — 231 USMLE items carry an illustration; 197
+        is the subset that are real generated images, the other 34 being vector schematics that were
+        kept deliberately. The Apple text quoted the photographic subset and so undersold the app.
+      Both were found by `scripts/verify_listing_counts.js` and by grepping the app rather than by
+      reading the copy, which is the point: **a description drifts away from the build silently, and
+      no store tells you.** Re-run the guard before pasting:
+      `node scripts/verify_listing_counts.js ../rounds-codex-app`.
+      **A description edit alone does not need a new build or a review cycle** — the fields can be
+      updated on the live version in App Store Connect.
 - [ ] **1.0.1 — Universal Links do not work, and the reason is a second Netlify site.**
       Discovered 2026-08-18 while checking the URLs for the submission form. The account has TWO
       Netlify projects: `rounds-codex` (the app, `rounds-codex.netlify.app`) and
