@@ -310,20 +310,19 @@ warns if the plan is stale) and a new step writes the pack modules from the mani
 > is written out in `native/ANDROID-RUNBOOK.md` step 7, ready to paste.
 
 
-- **`/.well-known/assetlinks.json`** — **THE HOST HERE IS PROBABLY WRONG, re-decide before building
-  it (flagged 2026-09-15).** This says roundscodex.com, but the domains question was settled that
-  day and `CLAUDE.md` now records it: roundscodex.com is the marketing page and the app lives at
-  `rounds-codex.netlify.app`, which is the host `RC_SHARE_ORIGIN` pins and therefore the host every
-  link the app generates points at. An App Links file on a domain no link names verifies nothing.
-  The same mistake is already recorded on iOS as the 1.0.1 Universal Links item in
-  `app-store-checklist.md` — the entitlement claims roundscodex.com, which does not serve the AASA,
-  so `/c/<id>` opens in Safari instead of the app. **Do not repeat it on Android.** See
-  `UNIVERSAL-LINKS.md`. As written the step is: on roundscodex.com, listing `com.roundscodex.app` with the
-  SHA-256 of the **Play App Signing** key (from Play Console → App integrity, available only after
-  the first upload — so the order is: upload once, read the fingerprint, deploy the file, then
-  verify). Add the `Content-Type: application/json` line to `_headers` like the AASA. Deploying to
-  the app repo **requires asking** (`CLAUDE.md`); take the version number from
-  `git show origin/main:version.txt`.
+- **`/.well-known/assetlinks.json`** on **`rounds-codex.netlify.app`** — **DECIDED 2026-09-16 by the
+  physician.** The file was previously written here as roundscodex.com, which predates the domains
+  decision. It goes on the host `RC_SHARE_ORIGIN` pins, because that is the host every link the app
+  generates actually names, and an App Links file on a domain no link points at verifies nothing.
+  **iOS already has exactly that bug** — the `applinks:` entitlement claims roundscodex.com, which
+  does not serve the AASA, so `/c/<id>` opens in Safari instead of the app; it is filed as the 1.0.1
+  Universal Links item in `app-store-checklist.md`. Android does not repeat it.
+  Serve it from the **app repo** (`rounds-codex-app`), next to the AASA, listing
+  `com.roundscodex.app` with the SHA-256 of the **Play App Signing** key — read from Play Console →
+  App integrity, which only exists after the first upload. So the order is: upload once, read the
+  fingerprint, deploy the file, then verify. Add the `Content-Type: application/json` line to
+  `_headers` the way the AASA has one. Deploying to the app repo **requires asking**
+  (`CLAUDE.md`); take the version number from `git show origin/main:version.txt`.
 - **Intent filters** for the six prefixes, `android:autoVerify="true"`, on `roundscodex.com` only.
   Whatever the iOS project does with `appUrlOpen` to hand `/c/<id>` to the router — find out in
   §4.0 — the same listener fires on Android.
