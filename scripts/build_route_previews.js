@@ -130,9 +130,12 @@ const slug = n => String(n).toLowerCase().replace(/&/g, ' ').replace(/['’]/g, 
    Keyed by canonical pathname: decoded, lowercased, no trailing slash. An index route is its bare
    letter ("/g"), matching what the app links to as "/g/". */
 const R = {};
-const add = (key, title, desc) => {
+/* A third element is the route's OWN card image, root-relative. Only gallery routes have one, and
+   only where the file is actually on disk -- a table entry pointing at a missing image renders as a
+   BROKEN card, which is worse than the site-wide one it replaced. */
+const add = (key, title, desc, image) => {
   if (R[key]) { console.error(`FAIL: duplicate route key ${key}`); process.exit(1); }
-  R[key] = [title, clip(plain(desc))];
+  R[key] = image ? [title, clip(plain(desc)), image] : [title, clip(plain(desc))];
 };
 
 /* -- conditions. The tagline is the single best sentence anyone wrote about the condition, and it
@@ -151,6 +154,7 @@ for (const c of CATS) {
 
 /* -- galleries. Only the ids with real artwork get a card: REALGAL is what the app renders, and a
       gallery outside it has nothing to preview. */
+let cards = 0;
 for (const id of Object.keys(GALLERIES)) {
   if (!REAL.has(id)) continue;
   const g = GALLERIES[id];
@@ -158,9 +162,12 @@ for (const id of Object.keys(GALLERIES)) {
   const name = plain((cond && cond.name) || g.title || id);
   const pages = (g.images || []).map(p => plain(p.title)).filter(Boolean);
   const n = (g.images || []).length;
+  const cardRel = `og/g/${id}.jpg`;
+  const card = fs.existsSync(path.join(ROOT, cardRel)) ? '/' + cardRel : null;
+  if (card) cards++;
   add('/g/' + id, name, pages.length
     ? withList(pages, L => `${plural(n, 'original illustrated page', 'original illustrated pages')}: ${L}.`)
-    : `${plural(n, 'original illustrated page', 'original illustrated pages')} in Rounds Codex.`);
+    : `${plural(n, 'original illustrated page', 'original illustrated pages')} in Rounds Codex.`, card);
 }
 {
   const ids = Object.keys(GALLERIES).filter(id => REAL.has(id) && DATA.some(d => d.id === id));
@@ -273,7 +280,7 @@ const CRAWLERS = ${JSON.stringify(CRAWLERS, null, 0)};
 /* Exported so scripts/verify_route_previews.js can walk the whole table rather than sampling it.
    Netlify reads the default export and ignores the rest. */
 export const R = {
-${keys.sort().map(k => `  ${JSON.stringify(k)}: [${JSON.stringify(R[k][0])}, ${JSON.stringify(R[k][1])}],`).join('\n')}
+${keys.sort().map(k => `  ${JSON.stringify(k)}: [${JSON.stringify(R[k][0])}, ${JSON.stringify(R[k][1])}${R[k][2] ? ', ' + JSON.stringify(R[k][2]) : ''}],`).join('\n')}
 };
 
 /* Canonical form of a pathname: percent-decoded, lowercased, no trailing slash. "/g/" and "/g" are
@@ -287,7 +294,10 @@ export function canonical(pathname) {
 
 export function previewFor(pathname) {
   const hit = R[canonical(pathname)];
-  return hit ? { title: hit[0], description: hit[1], image: CARD } : null;
+  if (!hit) return null;
+  /* hit[2] is this route's own card; everything else falls back to the site-wide one. Absolute,
+     because a preview crawler resolves og:image against nothing. */
+  return { title: hit[0], description: hit[1], image: hit[2] ? ORIGIN + hit[2] : CARD };
 }
 
 export function isCrawler(ua) {
@@ -405,6 +415,7 @@ for (const fam of [['/c/', 'conditions'], ['/s/', 'sections'], ['/g/', 'gallerie
   console.log(`    ${fam[0].padEnd(5)} ${String(keys.filter(k => k.startsWith(fam[0])).length).padStart(4)}  ${fam[1]}`);
 }
 console.log(`    index    3  /g /u /x`);
+console.log(`  own card art  ${cards} routes (site-wide og-card.jpg for the other ${keys.length - cards})`);
 console.log(`  crawlers      ${CRAWLERS.length} user-agent substrings`);
 console.log(`  longest desc  ${Math.max(...keys.map(k => R[k][1].length))} chars (limit ${LIMIT})`);
 console.log(`  edge function ${(fn.length / 1024).toFixed(0)} kB -> netlify/edge-functions/route-previews.js`);

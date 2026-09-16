@@ -5,7 +5,7 @@
  *
  * CALIBRATION -- what says this file is a guard and not decoration. Against the v141 tree it stops
  * at the first check, because the edge function is not there; that proves nothing about the other
- * twenty-four. So it was calibrated by MUTATING the shipped function eight ways and confirming each
+ * twenty-nine. So it was calibrated by MUTATING the shipped function eleven ways and confirming each
  * one is caught. Every line below is measured, not intended:
  *
  *   1  `h.delete('content-encoding')` removed          1 fail   the decoded body keeps the header
@@ -16,6 +16,15 @@
  *   6  the opening sentinel deleted from index.html    5 fails  nothing is injected at all
  *   7  the old block left in place beside the new one  1 fail   two og:title tags, the old one wins
  *   8  one condition dropped from the table            2 fails  content ships, its card does not
+ *   9  one gallery card file deleted                   2 fails  the table names a missing image
+ *  10  one card truncated to 5,000 bytes               1 fail   a stub is not a card
+ *  11  previewFor ignores the per-route image          2 fails  102 galleries, 0 own cards
+ *
+ * Mutant 10 cost a second attempt and the lesson is about the TEST, not the code. The first run
+ * reported "smallest 0 bytes" for a file truncated to 5,000 -- because `open(p,'wb').write(read())`
+ * evaluates `open(p,'wb')` first, truncating the file to zero before the read that was supposed to
+ * sample it. The checker had been right all along and the mutation was lying. Read the file, THEN
+ * open for writing.
  *
  * Mutant 3 is the one worth keeping in mind: it is the ONLY bug in the list that still produces a
  * valid page with valid tags on every route, which is exactly the defect this patch exists to
@@ -120,6 +129,40 @@ const portFree = p => new Promise(res => {
   ok(ghosts !== null && ghosts.length === 0, 'no card points at content that is gone',
      ghosts === null ? 'the table is not exported -- cannot tell' :
      ghosts.length ? `${ghosts.length}, first ${ghosts[0]}` : `${ids.size} ids, none orphaned`);
+  /* ---- card art. Added when the 102 per-gallery cards landed; without these the suite passed
+     while never looking at an image, which is the decoration this file exists not to be. */
+  {
+    const withCard = realGal.filter(id => {
+      const im = (m.previewFor('/g/' + id) || {}).image || '';
+      return /\/og\/g\//.test(im);
+    });
+    ok(withCard.length === realGal.length, 'every real gallery has its OWN card image',
+       `${withCard.length}/${realGal.length}`);
+
+    /* A table entry pointing at a missing file renders as a BROKEN card -- strictly worse than the
+       site-wide one it replaced. So the existence of every named file is asserted, not assumed. */
+    const missing = realGal.map(id => (m.previewFor('/g/' + id) || {}).image || '')
+      .filter(Boolean)
+      .map(u => u.replace(/^https?:\/\/[^/]+\//, ''))
+      .filter(rel => !fs.existsSync(path.join(ROOT, rel)));
+    ok(missing.length === 0, 'every card image named by the table exists on disk',
+       missing.length ? `${missing.length} missing, first ${missing[0]}` : `${realGal.length} files`);
+
+    /* fs.statSync, not a node subprocess per file. The first version shelled out 102 times and
+       returned 0 for a file that plainly existed -- it "failed" on the mutant for the wrong reason,
+       which is a checker that happens to be right rather than one that works. */
+    const sizes = realGal.map(id => {
+      const rel = ((m.previewFor('/g/' + id) || {}).image || '').replace(/^https?:\/\/[^/]+\//, '');
+      try { return fs.statSync(path.join(ROOT, rel)).size; } catch { return 0; }
+    });
+    const small = Math.min(...sizes);
+    ok(small > 20000, 'no card is a stub', `smallest ${small} bytes, largest ${Math.max(...sizes)}`);
+
+    /* The other 292 routes must still get the site-wide card, not a gallery's. */
+    const cond = (m.previewFor('/c/dvt') || {}).image || '';
+    ok(/og-card\.jpg$/.test(cond), 'a non-gallery route still gets the site-wide card', cond);
+  }
+
   ok(m.previewFor('/c/DVT') && m.previewFor('/c/dvt')
      && m.previewFor('/c/DVT').title === m.previewFor('/c/dvt').title,
      'lookup is case-insensitive and percent-decoded');
@@ -178,6 +221,14 @@ const portFree = p => new Promise(res => {
      'og:url names the shared route', tag(crawlHtml, 'og:url') || '(absent)');
   ok((crawlHtml.match(/property="og:title"/g) || []).length === 1,
      'exactly one og:title survives the swap');
+
+  /* End to end: a crawler on a GALLERY route must receive that gallery's card in the markup, not
+     merely in the table. */
+  const galRes = await call('/g/dvt', 'Twitterbot/1.0');
+  const galHtml = galRes ? await galRes.text() : '';
+  ok(tag(galHtml, 'og:image') === 'https://rounds-codex.netlify.app/og/g/dvt.jpg'
+     && tag(galHtml, 'twitter:image') === 'https://rounds-codex.netlify.app/og/g/dvt.jpg',
+     'a gallery crawler gets that gallery\'s card in the markup', tag(galHtml, 'og:image') || '(absent)');
   ok(crawlRes && !crawlRes.headers.get('content-encoding') && !crawlRes.headers.get('content-length')
      && crawlRes.headers.get('cache-control') === 'public,max-age=0,must-revalidate',
      'the decoded body does not keep content-encoding or content-length',

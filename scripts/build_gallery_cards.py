@@ -22,9 +22,9 @@ in og:title, which is rendered by the platform in its own type right beside the 
 PAGE CHOICE AVOIDS THE KNOWN-BAD PAGES. `galleries-staging/label-qa-worklist.json` lists 109 pages
 across 92 galleries whose leader lines are on the work order -- overwhelmingly pages 1 and 2, which
 are the anatomy plates. Those are skipped when there is any alternative. It costs nothing (every
-gallery has ten pages and needs three) and means no card is built from a page already known to be
-wrong. Where a gallery has fewer than three clean pages the flagged ones are used and NAMED in the
-output, so the choice is visible rather than silent.
+gallery has ten pages and needs four) and means no card is built from a page already known to be wrong. Where a
+gallery has fewer than four clean pages the flagged ones are used and NAMED in the output, so the
+choice is visible rather than silent.
 
 `logo-trim.png` is RGB on a solid black ground, so the lockup composites with a LIGHTEN blend --
 same technique, same reason, as build_og_card.py and build_app_icons.py.
@@ -80,7 +80,7 @@ for e in json.load(open(os.path.join(HERE, '..', 'galleries-staging', 'label-qa-
 
 
 def pick_pages(gid, g):
-    """Three pages, preferring ones not on the leader-line work order."""
+    """N pages, preferring ones not on the leader-line work order."""
     bad = flagged.get(gid, set())
     imgs = g.get('images', [])
     clean = [p for p in imgs if p['n'] not in bad]
