@@ -19,7 +19,7 @@ that would be easy to undo by accident.
 | **`app-integration-queue.md`** | The deploy record. v143, v144 and v145 are the last three sections. |
 | **`app-store-checklist.md`** | What is open, and the **1.0.1** list — which this branch added to. |
 | **`BRAND-ASSET-AUDIT.md`** | Why the icons were regenerated, and the two findings that were not the crop. |
-| `large-screen-plan.md` | **Level 2 is built and not deployed** — read its Level 2 section. Level 3 is untouched and should stay that way until the hardware exists. |
+| `large-screen-plan.md` | **Level 2 shipped as v146** — read its Level 2 section for what was built and the seven places the plan was wrong or silent. Level 3 is untouched and should stay that way until the hardware exists. |
 
 **The branch to continue from is this one.** It is the newest on the native line, ahead of
 `claude/no-wall-ios-variant-nbyd9v` by 20 commits. Do not branch from `main` — it is a disjoint
@@ -70,16 +70,16 @@ committed; it needs an archive.
 
 ---
 
-## 2b. Level 2 large screens is BUILT and NOT DEPLOYED
+## 2b. Level 2 large screens — shipped as v146
 
 Above **1180px** the nav becomes a left sidebar and the list you came from stays on screen beside
 the item you opened, for all five list/item pairs. `scripts/add_large_screen_l2.js`, guarded by
 `scripts/verify_large_screen_l2.js` (35 checks, 22 fail on the pre-patch tree), in `preflight.sh`.
 
-It is held back on purpose: `large-screen-plan.md` calls Level 2 "a genuine product decision, not a
-polish item — it changes how the app is navigated", and it does, above 1180px. The physician
-decides whether it ships. Everything else about it is finished — `preflight.sh web` 14/0 and
-`preflight.sh ios` 13/0/0, nothing below 1180 moved, zero page errors.
+`large-screen-plan.md` calls Level 2 "a genuine product decision, not a polish item — it changes
+how the app is navigated", and it does, above 1180px, so it went to the physician as a decision.
+`preflight.sh web` 14/0, `preflight.sh ios` 13/0/0, nothing below 1180 moved, zero page errors, and
+the `CACHE` v143 → v146 migration was driven in a real browser.
 
 The three things a future session is most likely to undo by accident are in `CLAUDE.md`: the
 breakpoint is **measured** and 1180 is the first width that clears the rail; selecting a sibling
@@ -90,7 +90,6 @@ breakpoint is **measured** and 1180 is the first width that clears the rail; sel
 
 ## 3. Waiting on the physician — nothing here is blocked on code
 
-0. **Whether Level 2 large screens ships** — see §2b. Built, verified, not deployed.
 1. **Two App Store Connect description edits.** No build needed, text fields only:
    - `Share any condition, section or gallery as a link` → `Share a condition, a specialty section
      or a guideline year as a link` (the gallery header's share button was removed in v74, so the

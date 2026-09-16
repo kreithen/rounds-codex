@@ -1726,14 +1726,15 @@ else.
 - `usmle/` is not in `CORE`, so a deploy but no `CACHE` bump. `version.txt`'s date is unchanged, so
   `RC_VERSION` stays in step and `stamp_version.js --check` passes 2/2.
 
-## Level 2 large screens — BUILT 2026-09-16, awaiting deploy approval
+## v146 — Level 2 large screens (2026-09-16)
 
 Above **1180px** the nav becomes a left sidebar and the list you came from stays on screen beside
 the item you opened — the Mail/Notes pattern, for all five list/item pairs the app has.
 `scripts/add_large_screen_l2.js`, guarded by `scripts/verify_large_screen_l2.js`.
 
-**Not deployed.** It changes how the app is navigated above 1180px, which `large-screen-plan.md`
-calls "a genuine product decision, not a polish item", so it waits on the physician.
+It changes how the app is navigated above 1180px, which `large-screen-plan.md` calls "a genuine
+product decision, not a polish item", so it was put to the physician as a decision and shipped on
+their word rather than slipped in.
 
 - **The router is not rewritten, and that is the headline.** The plan expected the back-stack
   semantics to "have to be decided rather than inherited". They are inherited: `paint()` renders the
@@ -1759,6 +1760,19 @@ calls "a genuine product decision, not a polish item", so it waits on the physic
 - `preflight.sh web` is 14 passed / 0 failed and `preflight.sh ios` is 13 / 0 / 0, so the sidebar
   and the two panes survive the whole native payload chain — the wall removal, the ASK cut, the
   service-worker strip and the safe-area insets.
+
+**Confirmed live.** `/version.txt` is `v146-LARGE-SCREEN-L2`, the served `sw.js` carries
+`rounds-codex-v146`, and the served `index.html` is **md5-identical** to what was pushed. The
+link-preview edge function still works on the new head — a crawler UA on `/c/dvt` returns
+"Deep Vein Thrombosis", a browser UA returns "Rounds Codex" — which is the check worth making,
+because the Level 2 stylesheet went *into the head* and a block landing between the `RC_OG`
+sentinels would have been swapped away on every crawled route.
+
+**What could NOT be verified from here:** the live origin in a real browser. Chromium in this
+container does not trust the agent proxy's CA (`ERR_CERT_AUTHORITY_INVALID`), and the rule is never
+to disable TLS verification to get round it. So the browser run — all 35 checks, plus the worker
+migration — was against the exact bytes now being served, proved identical by md5, rather than
+against the origin itself.
 
 **Two measurements worth keeping.** A grid item with an explicit `grid-column` and no `grid-row` is
 still auto-PLACED: the first cut put `#screen2` before `#screen` in the DOM, which pushed the list

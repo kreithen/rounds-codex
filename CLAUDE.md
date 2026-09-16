@@ -1234,10 +1234,10 @@ on my own judgement. Autonomy is about mechanics, not about medical correctness.
 Develop on **`claude/usmle-rounds-codex-module-bmpl61`**. Commit + push there; never push elsewhere
 without explicit permission. Do NOT open a PR unless the user asks.
 
-## Large screens — Level 2 is BUILT and not yet deployed (2026-09-16)
+## Large screens — Level 2 shipped as v146 (2026-09-16)
 `scripts/add_large_screen_l2.js`: above **1180px** the nav becomes a left sidebar and the list you
 came from stays on screen beside the item you opened. Guarded by `verify_large_screen_l2.js`
-(35 checks, 22 fail on the pre-patch tree), in `preflight.sh`. Read `large-screen-plan.md`'s Level 2
+(35 checks, 22 fail on the pre-patch tree), in `preflight.sh`. `CACHE` v143 → v146. Read `large-screen-plan.md`'s Level 2
 section — it now carries what was built and the seven places the plan was wrong or silent.
 - **The router is NOT rewritten.** `paint()` renders the stack top into the right pane and its
   parent into the left one; `back()`, `rcSyncURL()` and share links are untouched. **Two panes is a

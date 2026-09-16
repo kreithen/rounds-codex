@@ -99,7 +99,7 @@ like a button at 880. Everything behind `min-width`, so the phone layout is prov
 
 Biggest bang for the effort. Also improves iPad immediately, which matters now.
 
-### Level 2 — Two-pane at tablet width (2–3 days)  ·  **BUILT 2026-09-16, awaiting deploy**
+### Level 2 — Two-pane at tablet width (2–3 days)  ·  **SHIPPED v146, 2026-09-16**
 
 The Mail/Notes pattern: condition list on the left, the open condition on the right, both scrolling
 independently.
@@ -111,8 +111,9 @@ independently.
   visible view at a time. Two panes means two simultaneous views, and the back-stack semantics have
   to be decided rather than inherited.
 
-*As built:* `scripts/add_large_screen_l2.js`, guarded by `scripts/verify_large_screen_l2.js`
-(35 checks, **22 of which fail on the pre-patch tree**), in `preflight.sh`. Seven corrections and
+*As built and shipped:* `scripts/add_large_screen_l2.js`, guarded by
+`scripts/verify_large_screen_l2.js` (35 checks, **22 of which fail on the pre-patch tree**), in
+`preflight.sh`. `sw.js` `CACHE` v143 → v146, because `index.html` is precached in `CORE`. Seven corrections and
 decisions that the plan above does not contain:
 
 - **The breakpoint is 1180, and ~900 would not have worked.** The sidebar is 168 px in a 16 px
@@ -166,7 +167,7 @@ closes, and respecting the hinge as a layout boundary.
 |---|---|
 | ~~After the 17th~~ **shipped 2026-09-14** | **Level 1**, as v138. `scripts/add_large_screen.js` + `scripts/verify_large_screen.js`. |
 | ~~next~~ **shipped 2026-09-14** | **The condition page's side rail**, as v139. Asked for as "two columns of `.panel` cards"; built as a pinned 520px narrative plus a sticky 360px rail instead, because a condition page is a *sequence* and two columns make the reader zig-zag. `scripts/add_detail_rail.js` carries the full reasoning. The narrative is 488px of text, byte-identical to v138 — the rail is additive, not a widening. |
-| ~~Before any tablet marketing~~ **built 2026-09-16** | **Level 2.** `scripts/add_large_screen_l2.js` + `scripts/verify_large_screen_l2.js`. It does change how the app is navigated above 1180px, so it is the physician's call to ship, not a polish item to slip in. |
+| ~~Before any tablet marketing~~ **shipped 2026-09-14/16** | **Level 2**, as v146 (`rounds-codex-app` `09279c1`). `scripts/add_large_screen_l2.js` + `scripts/verify_large_screen_l2.js`. It changes how the app is navigated above 1180px, so it went to the physician as a decision rather than as a polish item. |
 | **When the hardware is real** | Level 2 will already have done most of the work. Re-measure then. |
 
 **One thing to do regardless, and cheaply: make the app resize gracefully.** *(Done 2026-09-12, and
