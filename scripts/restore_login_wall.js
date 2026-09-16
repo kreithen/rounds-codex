@@ -32,6 +32,7 @@
  * Usage: node scripts/restore_login_wall.js <app-root> [--apply]
  */
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 const { execFileSync } = require('child_process');
 
 const root = process.argv[2];
@@ -95,17 +96,11 @@ const out = preL.slice(0, at).concat(block.split('\n'), preL.slice(end + 1)).joi
 // The strongest available check that nothing outside the wall moved: every line of the file we
 // ship today must still appear in the new file, in order. Insertions are allowed; edits and
 // deletions outside the wall region are not.
-{
-  const a = cur.split('\n'), b = out.split('\n');
-  let i = 0;
-  for (const line of b) { if (i < a.length && a[i] === line) i++; }
-  if (i !== a.length) {
-    console.error(`current index.html is NOT a subsequence of the result (matched ${i}/${a.length} ` +
-                  `lines) -- something outside the wall was altered. Aborting.`);
-    process.exit(1);
-  }
-  console.log(`verified: all ${a.length} current lines survive in order (pure insertion)`);
-}
+//
+// This is where that check was first written, by hand, and it is now scripts/lib/pure_insertion.js
+// -- the same rule, the same granularity, shared with every other patcher here, and with a
+// calibration suite (verify_pure_insertion.js) that this inline version never had.
+RC.assert(cur, out);
 
 // ---- assertions that would have caught the original bug
 const checks = [

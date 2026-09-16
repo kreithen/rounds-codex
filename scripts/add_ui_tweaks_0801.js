@@ -30,6 +30,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 if (!ROOT) { console.error('usage: add_ui_tweaks_0801.js <site-root>'); process.exit(2); }
@@ -41,10 +42,12 @@ const PACK_DST = path.join(ROOT, 'usmle', 'illus-pM.js');
 for (const f of [IDX, UIDX, PACK_SRC]) if (!fs.existsSync(f)) { console.error('missing: ' + f); process.exit(2); }
 
 let html = fs.readFileSync(IDX, 'utf8');
+const RC_BEFORE = html;
 if (html.includes('RC_REVIEW_URL')) { console.error('FAILED: index.html already carries these tweaks.'); process.exit(2); }
 
 const edits = [];
 function sub(label, find, replace, expect = 1) {
+  RC.step(label, find, replace);
   const n = html.split(find).length - 1;
   if (n !== expect) { console.error(`FAILED ${label}: found ${n} occurrences, expected ${expect}`); process.exit(1); }
   html = html.replace(find, replace);
@@ -100,16 +103,20 @@ sub('review button CSS',
 .ab-review-s{margin-top:8px;font-size:12.5px;color:var(--muted)}
 .ab-hero{margin:2px 0 18px;}`);
 
+RC.assert(RC_BEFORE, html);
 fs.writeFileSync(IDX, html);
+RC.reset();   // the USMLE page next
 
 /* ── 3. the ECG pack into the USMLE page ───────────────────────────────────── */
 let u = fs.readFileSync(UIDX, 'utf8');
+const RC_BEFORE_U = u;
 if (u.includes('illus-pM.js')) { console.error('FAILED: usmle/index.html already loads illus-pM.js'); process.exit(1); }
 const tag = '<script src="illus-real.js"></script>';
 if (u.split(tag).length - 1 !== 1) { console.error('FAILED: illus-real.js script tag not found exactly once'); process.exit(1); }
 // Before illus-real.js, never after: that file loads last on purpose so an
 // approved real image wins over a schematic, and pack M is a schematic pack.
 u = u.replace(tag, '<script src="illus-pM.js"></script>' + tag);
+RC.assert(RC_BEFORE_U, u);
 fs.writeFileSync(UIDX, u);
 fs.copyFileSync(PACK_SRC, PACK_DST);
 edits.push('usmle/index.html loads illus-pM.js');

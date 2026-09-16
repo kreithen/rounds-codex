@@ -30,6 +30,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 const CHECK = process.argv.includes('--check');
@@ -38,6 +39,7 @@ const IDX = path.join(ROOT, 'index.html');
 if (!fs.existsSync(IDX)) { console.error('missing: ' + IDX); process.exit(2); }
 
 let html = fs.readFileSync(IDX, 'utf8');
+const RC_BEFORE = html;
 if (!html.includes('RC_AUDIO')) {
   console.error('FAILED: no audio player in this build — run add_condition_audio.js first.');
   process.exit(2);
@@ -49,6 +51,7 @@ if (html.includes('RCAP_CHAIN')) {
 
 const edits = [];
 function sub(label, find, replace, expect = 1) {
+  RC.step(label, find, replace);
   const n = html.split(find).length - 1;
   if (n !== expect) { console.error(`FAILED ${label}: found ${n} occurrences, expected ${expect}`); process.exit(1); }
   html = html.replace(find, replace);
@@ -114,6 +117,7 @@ if (CHECK) {
   process.exit(0);
 }
 
+RC.assert(RC_BEFORE, html);
 fs.writeFileSync(IDX, html);
 console.log(`${edits.length} edits:`);
 edits.forEach(e => console.log('  - ' + e));

@@ -22,6 +22,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 const SRC  = process.argv[3] || path.join(__dirname, '..', 'calculators-staging', 'calculators.json');
@@ -33,6 +34,7 @@ const RED = path.join(ROOT, '_redirects');
 for (const f of [IDX, SW, RED]) if (!fs.existsSync(f)) { console.error('missing: ' + f); process.exit(2); }
 
 let html = fs.readFileSync(IDX, 'utf8');
+const RC_BEFORE = html;
 if (html.includes('calcHTML')) { console.error('FAILED: index.html already carries the calculator module.'); process.exit(2); }
 
 const SPECS = JSON.parse(fs.readFileSync(SRC, 'utf8'));
@@ -42,6 +44,7 @@ const ENGINE = fs.readFileSync(path.join(__dirname, 'calc_engine.js'), 'utf8')
 
 const edits = [];
 function sub(label, find, replace, expect = 1) {
+  RC.step(label, find, replace);
   const n = html.split(find).length - 1;
   if (n !== expect) { console.error(`FAILED ${label}: found ${n} occurrences, expected ${expect}`); process.exit(1); }
   html = html.replace(find, replace);
@@ -339,6 +342,7 @@ sub('styles', '.clinupd{', `
 #nav button[data-v=calc] span{font-size:10px;letter-spacing:-.1px}
 .clinupd{`);
 
+RC.assert(RC_BEFORE, html);
 fs.writeFileSync(IDX, html);
 
 /* 8 ── sw.js CORE + _redirects --------------------------------------------- */

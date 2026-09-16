@@ -54,6 +54,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 const APPLY = process.argv.includes('--apply');
@@ -61,6 +62,7 @@ if (!ROOT) { console.error('usage: add_android_to_legal.js <app-root> [--apply]'
 
 const FILE = path.join(ROOT, 'index.html');
 let s = fs.readFileSync(FILE, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 /* The file mentions iOS in code comments too -- Safari's download and share quirks -- and those are
    correctly iOS-specific. Count them OUTSIDE the legal literal before editing, so the assertion at
@@ -76,6 +78,7 @@ if (s.includes(MARK)) { console.log('already applied -- nothing to do'); process
 
 const log = [];
 function sub(name, needle, replacement) {
+  RC.step(name, needle, replacement);
   const n = s.split(needle).length - 1;
   if (n !== 1) {
     console.error(`FAIL: ${name}: expected exactly 1 occurrence of ${JSON.stringify(needle.slice(0, 90))}, found ${n}`);
@@ -163,6 +166,7 @@ console.log('\nsurgeries:');
 log.forEach(l => console.log(l));
 console.log(`\nindex.html: ${before} -> ${s.length} bytes (${s.length - before >= 0 ? '+' : ''}${s.length - before})`);
 if (APPLY) {
+  RC.assert(RC_BEFORE, s);
   fs.writeFileSync(FILE, s);
   console.log('written: index.html');
   console.log('\nNEXT, and not optional:');

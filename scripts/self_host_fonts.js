@@ -24,6 +24,7 @@
  */
 'use strict';
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const [, , INDEX, SW, CSS] = process.argv;
 if (!INDEX || !SW || !CSS) {
@@ -35,6 +36,7 @@ const PRELOAD = ['inter-latin.woff2', 'oswald-latin.woff2'];
 const NEW_CACHE = 'rounds-codex-v9';
 
 function replaceOnce(s, old, neu, label) {
+  RC.step(label, old, neu);
   const parts = s.split(old);
   if (parts.length !== 2) {
     console.error(`FAIL ${label}: found ${parts.length - 1} occurrences, expected 1`);
@@ -47,6 +49,7 @@ function replaceOnce(s, old, neu, label) {
 /* ------------------------------------------------------------------ index.html */
 
 let s = fs.readFileSync(INDEX, 'utf8');
+const RC_BEFORE = s;
 const n0 = s.length;
 const css = fs.readFileSync(CSS, 'utf8').trim();
 
@@ -77,11 +80,14 @@ if (leftover) {
   process.exit(1);
 }
 console.log('  ok  no request to Google Fonts remains');
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(INDEX, s);
+RC.reset();   // sw.js next, and its rewrites are not index.html's
 
 /* ------------------------------------------------------------------ sw.js */
 
 let sw = fs.readFileSync(SW, 'utf8');
+const RC_BEFORE_SW = sw;
 const sw0 = sw.length;
 const oldCache = (sw.match(/const CACHE = '([^']+)'/) || [])[1];
 if (!oldCache) { console.error('FAIL: no CACHE constant in ' + SW); process.exit(1); }
@@ -100,6 +106,7 @@ sw = replaceOnce(sw,
   + files.map(f => `  './fonts/${f}'`).join(',\n') + '\n];',
   `CORE precaches ${files.length} font files`);
 
+RC.assert(RC_BEFORE_SW, sw);
 fs.writeFileSync(SW, sw);
 
 console.log(`\nindex.html ${n0} -> ${s.length} (+${s.length - n0})   sw.js ${sw0} -> ${sw.length} (+${sw.length - sw0})`);

@@ -94,6 +94,7 @@
  */
 'use strict';
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 const path = require('path');
 
 const ROOT = process.argv[2];
@@ -103,6 +104,7 @@ if (!ROOT) { console.error('usage: add_large_screen.js <site-root> [--check]'); 
 const FILE = path.join(ROOT, 'index.html');
 if (!fs.existsSync(FILE)) { console.error('missing: ' + FILE); process.exit(2); }
 let s = fs.readFileSync(FILE, 'utf8');
+const RC_BEFORE = s;
 
 const MARK = 'rc-large-screen';
 if (s.includes(MARK)) {
@@ -275,6 +277,7 @@ s = s.replace(HEAD_ANCHOR, '</style>\n' + BLOCK + '</head>\n<body>');
   }
 }
 
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(FILE, s);
 
 console.log('--- add_large_screen.js ---');

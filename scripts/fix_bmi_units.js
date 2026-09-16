@@ -37,6 +37,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 const SRC  = process.argv[3] || path.join(__dirname, '..', 'calculators-staging', 'calculators.json');
@@ -47,11 +48,13 @@ const OUTJSON = path.join(ROOT, 'content', 'calculators.json');
 for (const f of [IDX, OUTJSON]) if (!fs.existsSync(f)) { console.error('missing: ' + f); process.exit(2); }
 
 let html = fs.readFileSync(IDX, 'utf8');
+const RC_BEFORE = html;
 if (!html.includes('calcOneHTML')) { console.error('FAILED: no calculator module in this index.html'); process.exit(2); }
 if (html.includes('calcUnitSys')) { console.error('FAILED: index.html already carries the unit toggle.'); process.exit(2); }
 
 const edits = [];
 function sub(label, find, replace, expect = 1) {
+  RC.step(label, find, replace);
   const n = html.split(find).length - 1;
   if (n !== expect) { console.error(`FAILED ${label}: found ${n} occurrences, expected ${expect}`); process.exit(1); }
   html = html.replace(find, replace);
@@ -246,6 +249,7 @@ sub('unit toggle CSS',
 #nav button[data-v=calc] span{`);
 
 /* ── write ─────────────────────────────────────────────────────────────────── */
+RC.assert(RC_BEFORE, html);
 fs.writeFileSync(IDX, html);
 fs.writeFileSync(OUTJSON, JSON.stringify(SPECS, null, 1) + '\n');
 console.log(`patched ${edits.length} sites in ${path.relative(process.cwd(), IDX)}:`);

@@ -50,6 +50,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 const APPLY = process.argv.includes('--apply');
@@ -57,6 +58,7 @@ if (!ROOT) { console.error('usage: build_ios_variant.js <site-root> [--apply]');
 
 const file = path.join(ROOT, 'index.html');
 let s = fs.readFileSync(file, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 const before_bases = (s.match(/<base /g) || []).length;
 
@@ -76,7 +78,11 @@ function once(needle) {
   const n = s.split(needle).length - 1;
   if (n !== 1) { console.error(`FAIL: expected exactly 1 occurrence of ${JSON.stringify(needle.slice(0, 70))}, found ${n}`); process.exit(1); }
 }
-function sub(needle, replacement) { once(needle); s = s.replace(needle, replacement); }
+function sub(needle, replacement) {
+  once(needle);
+  RC.step(JSON.stringify(needle.slice(0, 50)), needle, replacement);
+  s = s.replace(needle, replacement);
+}
 
 /* ---------------------------------------------------------------- 1. the login wall
  * Walked, not byte-offset: the region is the HTML comment, the <div id="rc-authgate"> block
@@ -121,12 +127,12 @@ surgery('login wall', () => {
   }
   console.log(`  wall block: ${block.length} bytes (${(block.length / 1024).toFixed(1)} kB)`);
 
-  s = s.slice(0, start) +
-      '<!-- Rounds Codex ' + MARKER + ': the login wall is removed for the App Store build.\n' +
+  const NOTE = '<!-- Rounds Codex ' + MARKER + ': the login wall is removed for the App Store build.\n' +
       '     The wall stays on the web. Built by scripts/build_ios_variant.js -- do not hand-edit.\n' +
       '     The "Signed in" account section and its helpers are removed further down. -->\n' +
-      '<script>window.' + MARKER + '=1;</script>\n' +
-      s.slice(sClose);
+      '<script>window.' + MARKER + '=1;</script>\n';
+  RC.rewrite('the login wall block', NOTE, block);
+  s = s.slice(0, start) + NOTE + s.slice(sClose);
 });
 
 /* ---------------------------------------------------------------- 2. My account -> Subscription
@@ -160,9 +166,12 @@ surgery('"Signed in" section', () => {
   if (block.includes('ab-stat') || block.includes('Your data')) {
     console.error('FAIL: the "Signed in" block runs past its section - aborting'); process.exit(1);
   }
-  s = s.slice(0, a) +
-      "    /* " + MARKER + ": the \"Signed in\" section is removed - this build has no accounts. */\n" +
-      s.slice(b + CLOSE.length + 1);   // +1 eats the trailing newline, leaving no blank line
+  const NOTE = "    /* " + MARKER + ": the \"Signed in\" section is removed - this build has no accounts. */\n";
+  /* The removed span is block + one trailing newline, so it is taken from `s` rather than reusing
+     `block` -- declaring a region one character short of what was cut is how a declaration stops
+     matching what happened. */
+  RC.rewrite('the "Signed in" account section', NOTE, s.slice(a, b + CLOSE.length + 1));
+  s = s.slice(0, a) + NOTE + s.slice(b + CLOSE.length + 1);   // +1 eats the trailing newline
 });
 
 /* ------------------------------------------------- 3b. the helpers that section was the only caller of
@@ -189,11 +198,11 @@ surgery('dead account helpers', () => {
     console.error(`FAIL: the helper region declares [${fns}], expected [${EXPECT}] - aborting`);
     process.exit(1);
   }
-  s = s.slice(0, a) +
-      '/* ' + MARKER + ': RC_SB_URL, rcDelMsg, rcDeleteAccount, rcAccountEmail and rcSignOut are\n' +
+  const NOTE = '/* ' + MARKER + ': RC_SB_URL, rcDelMsg, rcDeleteAccount, rcAccountEmail and rcSignOut are\n' +
       '   removed here. They existed only for the "Signed in" section, which this build does not\n' +
-      '   have. They stay in the web build; do not port this deletion back. */\n' +
-      s.slice(b);
+      '   have. They stay in the web build; do not port this deletion back. */\n';
+  RC.rewrite('the account helper region', NOTE, block);
+  s = s.slice(0, a) + NOTE + s.slice(b);
   // and now nothing may still call them
   for (const ref of ['rcSignOut', 'rcDeleteAccount', 'rcAccountEmail', 'rcDelMsg', 'RC_SB_URL']) {
     const hits = (s.match(new RegExp(ref, 'g')) || []).length;
@@ -299,6 +308,7 @@ surgery('Ask Rounds Codex', () => {
   if (entry.includes('genPdf') || entry.includes('class="discl"')) {
     console.error('FAIL: the .modask block runs past itself into the PDF button - aborting'); process.exit(1);
   }
+  RC.rewrite('the .modask entry block', '', entry);
   s = s.slice(0, a) + s.slice(b + A_CLOSE.length);
 
   // 7b -- its handler, one self-contained line
@@ -321,13 +331,13 @@ surgery('Ask Rounds Codex', () => {
   if (!region.includes('/.netlify/functions/ask') || !region.includes('const KB=')) {
     console.error('FAIL: the ASK region lacks the endpoint call or the KB literal'); process.exit(1);
   }
-  s = s.slice(0, ra) +
-      '/* ---------- ASK: removed in the ' + MARKER + ' ----------\n' +
+  const NOTE = '/* ---------- ASK: removed in the ' + MARKER + ' ----------\n' +
       '   The view reached a server endpoint that a local-origin bundle cannot, leaving a five-entry\n' +
       '   keyword fallback that answered four starter questions and deflected every other one under a\n' +
       '   citation chip. Kept in the web build, where the endpoint is real. The .modask CSS rules are\n' +
-      '   left in place: six unreachable selectors are not worth hand-editing a stylesheet for. */\n' +
-      s.slice(rb);
+      '   left in place: six unreachable selectors are not worth hand-editing a stylesheet for. */\n';
+  RC.rewrite('the ASK region', NOTE, region);
+  s = s.slice(0, ra) + NOTE + s.slice(rb);
 
   // 7d -- paint()'s branch, which would now be a ReferenceError if anything ever reached it
   sub(" else if(r.v==='ask'){s.innerHTML=askHTML();askGreet();}\n", '');
@@ -453,6 +463,7 @@ console.log('\nsurgeries:');
 log.forEach(l => console.log(l));
 console.log(`\nindex.html: ${before} -> ${s.length} bytes (${s.length - before})`);
 if (APPLY) {
+  RC.assert(RC_BEFORE, s);
   fs.writeFileSync(file, s);
   fs.writeFileSync(path.join(ROOT, 'manifest.webmanifest'), manifestOut);
   console.log('written: index.html, manifest.webmanifest');

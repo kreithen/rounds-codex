@@ -30,11 +30,13 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 if (!ROOT) { console.error('usage: add_gallery_pdf_share.js <site-root>'); process.exit(2); }
 const file = path.join(ROOT, 'index.html');
 let s = fs.readFileSync(file, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 
 if (s.includes('function rcGalleryPDFWarm(')) {
@@ -44,6 +46,7 @@ if (s.includes('function rcGalleryPDFWarm(')) {
 
 const done = [];
 const cut = (name, was, now) => {
+  RC.step(name, was, now);
   const n = s.split(was).length - 1;
   if (n !== 1) { console.error(`FAIL ${name}: ${n} occurrences, expected 1`); process.exit(1); }
   s = s.replace(was, now);
@@ -134,6 +137,7 @@ cut('viewer button warms on pointerdown',
   `onclick="rcGalleryPDF(GID)"`,
   `onpointerdown="rcGalleryPDFWarm(GID)" onclick="rcGalleryPDF(GID)"`);
 
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(file, s);
 console.log(`${done.length} surgeries applied:`);
 done.forEach(x => console.log('  - ' + x));

@@ -29,6 +29,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 /* ---- MP3 frame walk ------------------------------------------------------------ */
 const BITRATES = {
@@ -72,6 +73,7 @@ const CONDS = path.join(ROOT, 'content', 'conditions.json');
 for (const f of [IDX, CONDS]) if (!fs.existsSync(f)) { console.error('missing: ' + f); process.exit(2); }
 
 let html = fs.readFileSync(IDX, 'utf8');
+const RC_BEFORE = html;
 const DATA = JSON.parse(fs.readFileSync(CONDS, 'utf8'));
 if (!Array.isArray(DATA)) { console.error('conditions.json is not an array'); process.exit(1); }
 
@@ -159,7 +161,14 @@ const lines = ordered.map(id => {
   const e = entries.get(id);
   return `  "${id}": { src: "${e.src}", title: "${e.title}", duration: ${e.duration} }`;
 });
-html = html.slice(0, a + OPEN.length) + '\n' + lines.join(',\n') + html.slice(b);
+/* The registry is REWRITTEN, not appended to -- rcapOrder() reads DATA order, but the literal is
+   re-emitted in that order anyway so it stays readable, and inserting in place would mean parsing
+   it twice. So the rewrite is declared, and the post-condition then holds every OTHER byte of the
+   750 kB file to being untouched. */
+const NEW_BODY = '\n' + lines.join(',\n');
+RC.rewrite('the RC_AUDIO literal re-emitted in DATA order', NEW_BODY, body);
+html = html.slice(0, a + OPEN.length) + NEW_BODY + html.slice(b);
+RC.assert(RC_BEFORE, html);
 fs.writeFileSync(IDX, html);
 
 console.log(`${path.basename(SRC)}  ->  ${destRel}`);

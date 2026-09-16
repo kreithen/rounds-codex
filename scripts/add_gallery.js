@@ -38,7 +38,9 @@ function matchBrace(s, start) {
   return -1;
 }
 
+const RC = require('./lib/pure_insertion').tracker(__filename);
 let html = fs.readFileSync(IN, 'utf8');
+const RC_BEFORE = html;
 
 // ---- GALLERIES ---------------------------------------------------------------------------
 const decl = html.indexOf('const GALLERIES=');
@@ -59,7 +61,13 @@ G[ID] = {
     return { n: i + 1, file: `${DIR}${ID}-${nn}.jpg`, thumb: `gthumbs/${ID}-${nn}.jpg`, title: t };
   }),
 };
-html = html.slice(0, open) + JSON.stringify(G) + html.slice(close + 1);
+/* The whole GALLERIES literal is re-serialised rather than spliced, because the new entry has to
+   go in as an object and JSON.stringify is the only thing that will quote it the same way. That is
+   a rewrite, so it is declared -- which leaves the post-condition asserting the useful half: that
+   nothing OUTSIDE the literal moved. */
+const G_WAS = html.slice(open, close + 1), G_NOW = JSON.stringify(G);
+RC.rewrite('the GALLERIES literal re-serialised', G_NOW, G_WAS);
+html = html.slice(0, open) + G_NOW + html.slice(close + 1);
 
 // ---- REALGAL -----------------------------------------------------------------------------
 // Only ids in this set render real artwork; without it the gallery shows placeholders.
@@ -68,9 +76,12 @@ if (!rg) throw new Error('REALGAL set not found');
 const ids = JSON.parse(rg[1].replace(/'/g, '"'));
 if (!ids.includes(ID)) {
   ids.push(ID);
-  html = html.replace(rg[0], `REALGAL=new Set(${JSON.stringify(ids)})`);
+  const RG_NOW = `REALGAL=new Set(${JSON.stringify(ids)})`;
+  RC.rewrite('the REALGAL set re-serialised', RG_NOW, rg[0]);
+  html = html.replace(rg[0], RG_NOW);
 }
 
+RC.assert(RC_BEFORE, html);
 fs.writeFileSync(OUT, html);
 console.log(`${ID} -> "${G[ID].title}"  ${G[ID].images.length} images`);
 console.log(`galleries ${Object.keys(G).length}  REALGAL ${ids.length}`);

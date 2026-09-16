@@ -54,6 +54,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 const CHECK = process.argv.includes('--check');
@@ -62,6 +63,7 @@ const IDX = path.join(ROOT, 'index.html');
 if (!fs.existsSync(IDX)) { console.error('missing: ' + IDX); process.exit(2); }
 
 let html = fs.readFileSync(IDX, 'utf8');
+const RC_BEFORE = html;
 if (html.includes('--- dtop overflow ---')) {
   console.error('FAILED: this build already carries the fix.');
   process.exit(2);
@@ -115,5 +117,6 @@ if (!html.includes('inbox')) { console.error('FAILED: .inbox wrapper not found i
 console.log(`found ${count} .dtop .tb-logo declaration(s); inserted the override after the last one`);
 console.log('added .modask-row input{min-width:0} for the second overflow cause');
 if (CHECK) { console.log('\n--check: nothing written'); process.exit(0); }
+RC.assert(RC_BEFORE, html);
 fs.writeFileSync(IDX, html);
 console.log(`wrote ${path.relative(process.cwd(), IDX)}`);

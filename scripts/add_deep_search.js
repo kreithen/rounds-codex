@@ -28,11 +28,13 @@
  */
 'use strict';
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const INDEX = process.argv[2];
 if (!INDEX) { console.error('usage: add_deep_search.js <index.html>'); process.exit(2); }
 
 function replaceOnce(s, old, neu, label) {
+  RC.step(label, old, neu);
   const parts = s.split(old);
   if (parts.length !== 2) {
     console.error(`FAIL ${label}: found ${parts.length - 1} occurrences, expected 1`);
@@ -43,6 +45,7 @@ function replaceOnce(s, old, neu, label) {
 }
 
 let s = fs.readFileSync(INDEX, 'utf8');
+const RC_BEFORE = s;
 const n0 = s.length;
 if (s.includes('rcSearchIndex')) { console.error('FAIL: already patched'); process.exit(1); }
 
@@ -206,5 +209,6 @@ s = replaceOnce(s,
   'placeholder says what is actually searched');
 
 // the empty-state text still says "No conditions match." which is right for a search
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(INDEX, s);
 console.log(`\n${n0} -> ${s.length} chars (+${s.length - n0})`);

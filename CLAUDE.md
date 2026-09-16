@@ -1005,6 +1005,32 @@ pushed into that conversation's tree. Full picture in `UNIVERSAL-LINKS.md`.
   the content split was proved that way over sixteen views plus every content global
   serialised. It catches what an assertion you thought to write would not.
 - Parse-check: extract inline `<script>` (no `src`) blocks and `new Function(code)`.
+- **EVERY in-place patcher carries the pure-insertion post-condition** (`scripts/lib/pure_insertion.js`,
+  51 scripts as of 2026-09-16). Three lines: require the library beside `fs`, capture the input right
+  after reading it, `RC.assert(before, after)` immediately before the write — plus one
+  `RC.step(label, from, to)` inside the script's own `replaceOnce`/`sub`/`cut` helper, which is why
+  adopting it needed no call-site changes in forty scripts. `node scripts/verify_patchers_guarded.js`
+  **derives** the patcher set from the source rather than a list, so a new patcher is covered the
+  moment it is written; both it and `verify_pure_insertion.js` are in `preflight.sh` under every mode.
+  - **It asserts that every LINE of the input survives, whole and in order**, after the declared edits
+    are replayed forward onto a copy of it. So the statement is: the output is the input with exactly
+    the declared edits applied, plus whole lines added, and nothing else touched.
+  - **Lines, not bytes, and that was measured.** Byte-level subsequence is too weak next to a large
+    insertion — the characters of a deleted `if(refs)` get re-matched, in order, out of the text the
+    patch added a few lines down. `add_scroll_restore.js` is a live example: byte-level called its
+    `window.scrollTo(0,0)` → `rcRestoreScroll(y)` swap an insertion.
+  - **Replay the edits FORWARD; do not unwind them off the output.** The first design unwound, and it
+    broke on the first real script it met: `build_ios_variant.js` DELETES regions, so "what was
+    written" is `''` and the uniqueness check matched 732,809 times.
+  - **An intra-line edit is a rewrite and must be declared** — inserting between `</style>` and
+    `</head>` on one line changes that line. `add_safe_area.js` failed the whole native chain on
+    exactly this until its three edits were declared, which is the guard working.
+  - **What it does NOT catch, and never will: an error INSIDE a declared replacement.** The edit is
+    replayed with the very strings the patcher used, so a clause dropped from the new text is
+    invisible. Proved by mutating `add_scroll_restore.js` — it passes. What it catches is
+    **collateral** damage: bytes a patcher touched that nobody meant it to. That is the disclaimer
+    bug's actual shape, and mutating `build_ios_variant.js` to shorten the disclaimer is rejected
+    with the line named.
 - `node scripts/verify_sw.js <sw.js>` unit-tests the service worker's cache-read guard,
   asserts `CORE` still covers all 7 content files and all 6 fonts, and — the one that matters —
   **fails if the navigate branch calls `res.clone()`**. See below.

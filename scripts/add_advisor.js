@@ -18,6 +18,7 @@
  *        [--bio "..."] [--apply]
  */
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const argv = process.argv.slice(2);
 const root = argv[0];
@@ -39,6 +40,7 @@ for (const [k, v] of [['name', name], ['role', role], ['bio', bio]]) {
 
 const p = `${root}/index.html`;
 let s = fs.readFileSync(p, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 
 const START = 'var RC_ADVISORS=[';
@@ -68,5 +70,6 @@ for (const [n, ok] of checks) { console.log(`  ${ok ? 'ok  ' : 'FAIL'} ${n}`); i
 console.log(`\nadvisors: ${wasCount} -> ${wasCount + 1}`);
 console.log(`index.html: ${before} -> ${s.length} bytes (+${s.length - before})`);
 if (bad) { console.error('assertion(s) failed -- not writing'); process.exit(1); }
+RC.assert(RC_BEFORE, s);
 if (APPLY) { fs.writeFileSync(p, s); console.log('written'); }
 else { console.log('dry run -- pass --apply to write'); }

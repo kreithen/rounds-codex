@@ -33,11 +33,13 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 if (!ROOT) { console.error('usage: remove_login_wall.js <site-root>'); process.exit(2); }
 const file = path.join(ROOT, 'index.html');
 let s = fs.readFileSync(file, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 
 const MARK = '<!-- Rounds Codex login wall';
@@ -82,6 +84,9 @@ if (block.includes('rcTermsGate') || block.includes('RC_TERMS')) {
   process.exit(1);
 }
 
+/* A deletion, declared -- the post-condition then says the thing worth saying about a 22 kB cut
+   out of a 750 kB file: that the wall block is the ONLY thing that left. */
+RC.rewrite('the login wall block removed', '', s.slice(start, sClose));
 s = s.slice(0, start) + s.slice(sClose);
 
 // after removal there must be no id="rc-gate" left in the static markup, or the guard still fires
@@ -94,6 +99,7 @@ for (const need of ['function rcTermsGate(', 'function rcGateShow(', '#rc-gate{p
   if (!s.includes(need)) { console.error(`FAIL: removal took "${need}" with it`); process.exit(1); }
 }
 
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(file, s);
 console.log(`removed the login wall: ${block.length} bytes (${(block.length / 1024).toFixed(1)} kB)`);
 console.log(`  index.html ${before} -> ${s.length}`);

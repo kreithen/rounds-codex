@@ -68,6 +68,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 const CHECK = process.argv.includes('--check');
@@ -252,44 +253,24 @@ s = s.replace(HEAD_ANCHOR, '</style>\n' + BLOCK + '</head>\n<body>');
   }
 }
 
-/* POST-CONDITION: this must be a PURE INSERTION. Undo the four edits on the RESULT and it has to
-   give back the input byte for byte -- no deletion, no reordering, nothing rewritten.
+/* POST-CONDITION: this must be a PURE INSERTION. Every byte of the input has to survive, in order,
+   with only the declared rewrite added.
 
-   This is here because the disclaimer bug got past every anchor assertion. All three anchors
-   matched at exactly one occurrence, the wrappers balanced, the page rendered, and the only symptom
-   was a clinical disclaimer quietly four words shorter. An assertion on what a patch FINDS cannot
-   catch a patch that mangles what it finds; an assertion on the DIFF can.
+   This is where the check was invented, and the reason is worth keeping: the disclaimer bug got
+   past every anchor assertion in this file. All three anchors matched at exactly one occurrence,
+   the wrappers balanced, the page rendered, and the only symptom was a clinical disclaimer quietly
+   four words shorter. An assertion on what a patch FINDS cannot catch a patch that mangles what it
+   finds; an assertion on the DIFF can.
 
-   Inverted by replacing each edit's OUTPUT with its INPUT, not by deleting substrings: the first
-   version of this check deleted '</div>' by indexOf and removed the first one in the 750 kB file,
-   which made it fail on a correct run. Every needle below is long enough to be unique. */
+   It now runs out of scripts/lib/pure_insertion.js, which every other patcher here uses too. The
+   bespoke version this replaces had to be handed each edit's output and its input, and its FIRST
+   draft was itself wrong: it removed a substring by indexOf and took the first `</div>` in a 750 kB
+   file, so it failed on a correct run. The shared one is given the before and after strings and
+   works the insertions out, so only the genuine REWRITE below has to be declared. */
 {
-  let t = s;
-  const UNDO = [
-    ['.d-main wrapper',
-     '</div>\n  <div class="d-main"><div class="dhero">', OPEN_MAIN],
-    ['.d-rail wrapper',
-     '</div>\n  <div class="d-rail">\n  ${d.refs?`<div class="panel refs">', OPEN_RAIL],
-    ['.d-rail close',
-     CLOSE_RAIL.replace('</div></div>`;', '</div></div></div>`;'), CLOSE_RAIL],
-    ['the rxInjectCond fix', RX_TO, RX_FROM],
-    ['the stylesheet',
-     '\n' + BLOCK, ''],
-  ];
-  for (const [what, out, back] of UNDO) {
-    const n = t.split(out).length - 1;
-    if (n !== 1) { console.error(`FAIL: post-check found ${n} copies of the ${what} it inserted, expected 1`); process.exit(1); }
-    t = t.replace(out, back);
-  }
-  if (t !== ORIGINAL) {
-    console.error('FAIL: this edit is not a pure insertion -- it changed or removed shipped bytes.');
-    let i = 0; while (i < Math.min(t.length, ORIGINAL.length) && t[i] === ORIGINAL[i]) i++;
-    console.error(`      first divergence at byte ${i}:`);
-    console.error(`        shipped: ${JSON.stringify(ORIGINAL.slice(Math.max(0, i - 70), i + 70))}`);
-    console.error(`        result : ${JSON.stringify(t.slice(Math.max(0, i - 70), i + 70))}`);
-    process.exit(1);
-  }
-  console.log(`  ok    exactly the five intended edits (+${s.length - ORIGINAL.length} bytes, nothing else touched)`);
+  const RX_LABEL = 'the rxInjectCond fix';
+  RC.rewrite(RX_LABEL, RX_TO, RX_FROM);
+  RC.assert(ORIGINAL, s);
 }
 
 fs.writeFileSync(FILE, s);

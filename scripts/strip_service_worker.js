@@ -51,7 +51,9 @@ if (!ROOT) { console.error('usage: strip_service_worker.js <site-root> [--dry-ru
 
 const FILE = path.join(ROOT, 'index.html');
 const SW = path.join(ROOT, 'sw.js');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 let s = fs.readFileSync(FILE, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 
 const MARK = 'RC_NO_SERVICE_WORKER';
@@ -113,11 +115,15 @@ for (const m of ['closest', 'function swipeTo(', "go('detail'"]) {
 }
 console.log(`  registration block: ${block.length} bytes`);
 
-s = s.slice(0, a) +
-    '/* ' + MARK + ": the service-worker registration is removed for the native build.\n" +
+/* This script DELETES, which is the one thing a pure-insertion post-condition forbids -- so the
+   deletion is declared, and the check then says the useful thing: the registration block is the
+   ONLY thing that left the file. That is exactly the claim worth making here, because the block is
+   brace-walked out of a 750 kB file and a walk that overshoots takes working code with it. */
+const NOTE = '/* ' + MARK + ": the service-worker registration is removed for the native build.\n" +
     "   Everything it would cache is already in the bundle, and on Android it really does run.\n" +
-    '   See scripts/strip_service_worker.js. The web build keeps it -- do not port this back. */\n' +
-    s.slice(end);
+    '   See scripts/strip_service_worker.js. The web build keeps it -- do not port this back. */\n';
+RC.rewrite('the service-worker registration block removed', NOTE, block);
+s = s.slice(0, a) + NOTE + s.slice(end);
 
 /* Nothing may still reach for a worker. `navigator.serviceWorker` is read in exactly one other
    place on the web (the registration's own promise chain, inside the block just removed), so any
@@ -158,6 +164,7 @@ if (DRY) {
   console.log(`index.html: ${before} -> ${s.length} bytes (${s.length - before})`);
   process.exit(0);
 }
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(FILE, s);
 if (swBytes) { fs.rmSync(SW); console.log(`  ok    sw.js removed (${swBytes} bytes)`); }
 else console.log('  note: no sw.js in this tree');

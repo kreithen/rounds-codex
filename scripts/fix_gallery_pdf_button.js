@@ -24,15 +24,18 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 if (!ROOT) { console.error('usage: fix_gallery_pdf_button.js <site-root>'); process.exit(2); }
 const file = path.join(ROOT, 'index.html');
 let s = fs.readFileSync(file, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 
 const surgeries = [];
 const cut = (name, was, now) => {
+  RC.step(name, was, now);
   const n = s.split(was).length - 1;
   if (n !== 1) {
     console.error(`FAIL ${name}: found ${n} occurrences, expected exactly 1`);
@@ -71,6 +74,7 @@ cut('rcGalleryPDF opens a throwaway tab',
      that honour the download attribute ignore target entirely, so nothing changes for them. */
   a.target='_blank';a.rel='noopener';`);
 
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(file, s);
 console.log(`${surgeries.length} surgeries applied:`);
 surgeries.forEach(x => console.log('  - ' + x));

@@ -26,6 +26,7 @@
  * Usage: node scripts/add_about.js <index.html>
  */
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const SRC = process.argv[2];
 if (!SRC) { console.error('usage: node add_about.js <index.html>'); process.exit(2); }
@@ -35,10 +36,12 @@ const TERMS_VERSION = '2026-07-26';
 const APP_VERSION = '2026.07.26';
 
 let s = fs.readFileSync(SRC, 'utf8');
+const RC_BEFORE = s;
 const n0 = s.length;
 const done = [];
 
 function replaceOnce(old, neu, label) {
+  RC.step(label, old, neu);
   const parts = s.split(old);
   if (parts.length !== 2) {
     console.error('FAIL %s: found %d occurrences, expected 1', label, parts.length - 1);
@@ -866,6 +869,7 @@ done.push('about + gate styles');
   done.push('inject about + legal code');
 })();
 
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(SRC, s);
 console.log('applied %d edits:', done.length);
 done.forEach(d => console.log('  -', d));

@@ -26,6 +26,7 @@
  */
 'use strict';
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const [, , FILE, ...rest] = process.argv;
 if (!FILE) {
@@ -36,9 +37,11 @@ const idsArg = rest.includes('--ids') ? rest[rest.indexOf('--ids') + 1] : '';
 const IDS = idsArg ? idsArg.split(',').map(s => s.trim()).filter(Boolean) : [];
 
 let s = fs.readFileSync(FILE, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 
 function replaceOnce(str, find, repl, what) {
+  RC.step(what, find, repl);
   const n = str.split(find).length - 1;
   if (n !== 1) {
     console.error(`FAILED (${what}): found ${n} occurrences, expected exactly 1`);
@@ -130,6 +133,7 @@ s = replaceOnce(s,
   '.d-icd{display:inline-block;',
   'Listen button styling, using --accent (the MODE colour) like the Share button');
 
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(FILE, s);
 console.log(`\n${IDS.length} condition(s) with narration: ${IDS.join(', ') || '(none yet)'}`);
 console.log(`${FILE}: ${before} -> ${s.length} bytes`);

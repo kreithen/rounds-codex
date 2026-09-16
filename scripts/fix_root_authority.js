@@ -42,12 +42,14 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 if (!ROOT) { console.error('usage: fix_root_authority.js <site-root>'); process.exit(2); }
 
 const FILE = path.join(ROOT, 'index.html');
 let s = fs.readFileSync(FILE, 'utf8');
+const RC_BEFORE = s;
 
 const MARK = 'RC_ROOT_AUTHORITY_GUARD';
 if (s.includes(MARK)) { console.log('already patched -- nothing to do'); process.exit(0); }
@@ -68,8 +70,10 @@ const GUARD =
   " if(/^[a-z][a-z0-9+.\\-]*:\\/\\/[^\\/]*$/i.test(h)) h+='/';\n";
 
 const before = s.length;
+RC.step('the root-authority guard after the RC_ROOT opener', ANCHOR, ANCHOR + GUARD);
 s = s.replace(ANCHOR, ANCHOR + GUARD);
 
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(FILE, s);
 console.log(`--- fix_root_authority.js ---`);
 console.log(`  guard inserted after the href read`);

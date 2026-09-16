@@ -23,13 +23,16 @@
  */
 'use strict';
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const [, , FILE, REDIR] = process.argv;
 if (!FILE || !REDIR) { console.error('usage: add_guideline_share.js <index.html> <_redirects>'); process.exit(2); }
 let s = fs.readFileSync(FILE, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 
 function replaceOnce(str, find, repl, what) {
+  RC.step(what, find, repl);
   const n = str.split(find).length - 1;
   if (n !== 1) { console.error(`FAILED (${what}): found ${n} occurrences, expected 1`); process.exit(1); }
   console.log('  ok  ' + what);
@@ -116,6 +119,7 @@ s = replaceOnce(s,
 .res-gwrap{`,
   'Share button styling');
 
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(FILE, s);
 
 /* ------------------------------------------------------------------- 7. the rewrite rule */

@@ -34,6 +34,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 const APPLY = process.argv.includes('--apply');
@@ -41,6 +42,7 @@ if (!ROOT) { console.error('usage: add_media_root.js <site-root> [--apply]'); pr
 
 const file = path.join(ROOT, 'index.html');
 let s = fs.readFileSync(file, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 const beforeBases = (s.match(/<base /g) || []).length;
 
@@ -51,6 +53,7 @@ if (s.includes('function rcMedia(')) {
 
 const log = [];
 function sub(name, needle, replacement) {
+  RC.step(name, needle, replacement);
   const n = s.split(needle).length - 1;
   if (n !== 1) {
     console.error(`FAIL: ${name}: expected exactly 1 occurrence of ${JSON.stringify(needle.slice(0, 80))}, found ${n}`);
@@ -167,5 +170,6 @@ if (bad) { console.error(`\n${bad} assertion(s) failed -- not writing`); process
 console.log('\nsurgeries:');
 log.forEach(l => console.log(l));
 console.log(`\nindex.html: ${before} -> ${s.length} bytes (+${s.length - before})`);
+RC.assert(RC_BEFORE, s);
 if (APPLY) { fs.writeFileSync(file, s); console.log('written'); }
 else { console.log('dry run -- pass --apply to write'); }

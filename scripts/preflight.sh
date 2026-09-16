@@ -71,6 +71,12 @@ echo "checking $TREE"
 # worker, no sw.js) is asserted by verify_ios_variant.js and audit_app_e2e.js.
 run "service worker (web tree)" node "$HERE/verify_sw.js" "$SRC/sw.js"
 run "font coverage"             python3 "$HERE/audit_font_coverage.py" "$TREE"
+# These two take no tree: they are about the TOOLING, not about a build. They belong here anyway,
+# because the patchers are what produce every tree this script checks, and the failure they guard
+# against -- a patcher quietly altering bytes nobody asked it to -- shows up in a payload as content
+# that is subtly wrong rather than as anything that errors.
+run "patcher post-conditions"   node "$HERE/verify_pure_insertion.js"
+run "every patcher guarded"     node "$HERE/verify_patchers_guarded.js"
 
 if [ "$NATIVE" = yes ]; then
   run "no worker in the payload" sh -c '[ ! -e "$1/sw.js" ] && grep -q RC_NO_SERVICE_WORKER "$1/index.html"' sh "$TREE"

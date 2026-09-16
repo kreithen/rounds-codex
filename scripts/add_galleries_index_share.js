@@ -35,11 +35,13 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 if (!ROOT) { console.error('usage: add_galleries_index_share.js <site-root>'); process.exit(2); }
 const FILE = path.join(ROOT, 'index.html');
 let s = fs.readFileSync(FILE, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 
 if (s.includes('rcShareGalleries')) {
@@ -49,6 +51,7 @@ if (s.includes('rcShareGalleries')) {
 
 let n = 0;
 function sub(label, from, to) {
+  RC.step(label, from, to);
   const c = s.split(from).length - 1;
   if (c !== 1) { console.error(`FAILED: ${label}: found ${c} occurrences, expected 1`); process.exit(1); }
   s = s.replace(from, to);
@@ -138,5 +141,6 @@ sub('rcSyncURL knows the galleries index',
 
 if (n !== 7) { console.error(`FAILED: applied ${n} of 7 surgeries`); process.exit(1); }
 
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(FILE, s);
 console.log(`\nwrote ${FILE} (${before} -> ${s.length} bytes, +${s.length - before})`);

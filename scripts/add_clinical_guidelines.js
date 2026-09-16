@@ -31,13 +31,16 @@
  */
 'use strict';
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const FILE = process.argv[2];
 if (!FILE) { console.error('usage: add_clinical_guidelines.js <index.html>'); process.exit(2); }
 let s = fs.readFileSync(FILE, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 
 function replaceOnce(str, find, repl, what) {
+  RC.step(what, find, repl);
   const n = str.split(find).length - 1;
   if (n !== 1) { console.error(`FAILED (${what}): found ${n} occurrences, expected 1`); process.exit(1); }
   console.log('  ok  ' + what);
@@ -161,6 +164,7 @@ const CSS = `.res-gwrap{display:flex;flex-direction:column;gap:10px}
   console.log('  ok  Clinical Guidelines styling added to the live stylesheet (scaffold copy left alone)');
 }
 
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(FILE, s);
 console.log(`\n${FILE}: ${before} -> ${s.length} bytes`);
 console.log('sw.js and the loader FILES list unchanged — guidelines ride inside resident.json.');

@@ -20,12 +20,14 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 if (!ROOT) { console.error('usage: fix_usmle_link.js <site-root>'); process.exit(2); }
 
 const FILE = path.join(ROOT, 'index.html');
 let s = fs.readFileSync(FILE, 'utf8');
+const RC_BEFORE = s;
 
 if (s.includes("usmle/index.html")) { console.log('already patched -- nothing to do'); process.exit(0); }
 
@@ -49,6 +51,7 @@ if (!fs.existsSync(path.join(ROOT, 'usmle', 'index.html'))) {
 
 const before = s.length;
 console.log('--- fix_usmle_link.js ---');
-for (const [what, from, to] of EDITS) { s = s.replace(from, to); console.log(`  ok    ${what}`); }
+for (const [what, from, to] of EDITS) { RC.step(what, from, to); s = s.replace(from, to); console.log(`  ok    ${what}`); }
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(FILE, s);
 console.log(`index.html: ${before} -> ${s.length} bytes (+${s.length - before})`);

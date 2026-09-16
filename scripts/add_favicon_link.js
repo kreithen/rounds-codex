@@ -22,6 +22,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 const CHECK = process.argv.includes('--check');
@@ -30,6 +31,7 @@ const IDX = path.join(ROOT, 'index.html');
 if (!fs.existsSync(IDX)) { console.error('missing: ' + IDX); process.exit(2); }
 
 let html = fs.readFileSync(IDX, 'utf8');
+const RC_BEFORE = html;
 
 if (/<link[^>]+rel=["']?(shortcut )?icon/i.test(html)) {
   console.error('FAILED: a favicon link is already declared.');
@@ -47,10 +49,13 @@ const anchor = '<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">'
 const n = html.split(anchor).length - 1;
 if (n !== 1) { console.error(`FAILED: found ${n} apple-touch-icon links, expected 1`); process.exit(1); }
 
+RC.step('<link rel="icon"> before the apple-touch-icon link', anchor,
+  '<link rel="icon" type="image/png" sizes="192x192" href="' + ICON + '">' + anchor);
 html = html.replace(anchor,
   '<link rel="icon" type="image/png" sizes="192x192" href="' + ICON + '">' + anchor);
 
 console.log(`declared <link rel="icon"> -> ${ICON} (already on disk, already in sw.js CORE)`);
 if (CHECK) { console.log('\n--check: nothing written'); process.exit(0); }
+RC.assert(RC_BEFORE, html);
 fs.writeFileSync(IDX, html);
 console.log(`wrote ${path.relative(process.cwd(), IDX)}`);

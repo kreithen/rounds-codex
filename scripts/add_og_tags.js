@@ -29,6 +29,7 @@
  */
 'use strict';
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 const path = require('path');
 
 const ROOT = process.argv[2];
@@ -46,6 +47,7 @@ const DESC  = 'A clinical study reference for nursing and medical students. 183 
 
 const FILE = path.join(ROOT, 'index.html');
 let s = fs.readFileSync(FILE, 'utf8');
+const RC_BEFORE = s;
 const head = s.slice(0, s.indexOf('</head>'));
 
 /* Refuse to double-apply, and refuse to fight tags somebody else added. */
@@ -78,6 +80,7 @@ const BLOCK = ANCHOR + `
 <meta name="twitter:image" content="${ORIGIN}/${CARD}">`;
 
 const before = s.length;
+RC.step('the og:/twitter: block after the apple-mobile-web-app-title tag', ANCHOR, BLOCK);
 const out = s.replace(ANCHOR, BLOCK);
 
 console.log('--- add_og_tags.js ---');
@@ -86,5 +89,6 @@ console.log(`  og:image     ${ORIGIN}/${CARD}  (${(fs.statSync(path.join(ROOT, C
 console.log(`  og:url       omitted on purpose -- see the header of this file`);
 console.log(`  index.html   ${before} -> ${out.length} bytes (+${out.length - before})`);
 if (!APPLY) { console.log('\n  dry run. Pass --apply to write.'); process.exit(0); }
+RC.assert(RC_BEFORE, out);
 fs.writeFileSync(FILE, out);
 console.log('  written');

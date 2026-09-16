@@ -12,6 +12,7 @@
  * Usage: node scripts/add_privacy_deletion_section.js <app-root> [--apply]
  */
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const root = process.argv[2];
 const APPLY = process.argv.includes('--apply');
@@ -19,6 +20,7 @@ if (!root) { console.error('usage: add_privacy_deletion_section.js <app-root> [-
 
 const p = `${root}/index.html`;
 let s = fs.readFileSync(p, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 
 // Anchor on the section that follows, so the new one lands between "What leaves your device"
@@ -35,12 +37,14 @@ const SECTION =
   "    'Deleting your account does not touch anything saved on this device. Use <b>Clear my saved '+\n" +
   "    'data</b> for that, or do both.']},\n\n";
 
+RC.step('the deletion section before its anchor', ANCHOR, SECTION + ANCHOR);
 s = s.replace(ANCHOR, SECTION + ANCHOR);
 
 // Date the page. Privacy only -- the Terms text is unchanged, so its date must not move.
 const OLD_HEAD = "privacy:{\n  title:'Privacy', version:'2026-07-26', updated:'2026-07-26',";
 const NEW_HEAD = "privacy:{\n  title:'Privacy', version:'2026-08-09', updated:'2026-08-09',";
 if (!s.includes(OLD_HEAD)) { console.error('FAIL: could not find the privacy version header'); process.exit(1); }
+RC.step('the Privacy page is re-dated', OLD_HEAD, NEW_HEAD);
 s = s.replace(OLD_HEAD, NEW_HEAD);
 
 const checks = [
@@ -59,5 +63,6 @@ let bad = 0;
 for (const [n, ok] of checks) { console.log(`  ${ok ? 'ok  ' : 'FAIL'} ${n}`); if (!ok) bad++; }
 console.log(`\nindex.html: ${before} -> ${s.length} bytes (+${s.length - before})`);
 if (bad) { console.error(`${bad} assertion(s) failed -- not writing`); process.exit(1); }
+RC.assert(RC_BEFORE, s);
 if (APPLY) { fs.writeFileSync(p, s); console.log('written'); }
 else { console.log('dry run -- pass --apply to write'); }

@@ -33,6 +33,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const [, , IN, OUT, REDIR] = process.argv;
 if (!IN || !OUT) {
@@ -100,6 +101,7 @@ const REDIRECTS = `# A shared condition link is a client-side route, not a file.
 `;
 
 function replaceOnce(s, find, repl, label) {
+  RC.step(label, find, repl);
   const n = s.split(find).length - 1;
   if (n !== 1) {
     console.error(`FAIL ${label}: found ${n} occurrences, expected 1`);
@@ -110,6 +112,7 @@ function replaceOnce(s, find, repl, label) {
 }
 
 let s = fs.readFileSync(IN, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 
 if (s.includes('RC_DEEPLINK')) { console.error('FAIL: already patched'); process.exit(1); }
@@ -130,6 +133,7 @@ if (tail < 0) { console.error('FAIL: no </body></html>'); process.exit(1); }
 s = s.slice(0, tail) + BOOT + s.slice(tail);
 console.log('  ok  router boot');
 
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(OUT, s);
 if (REDIR) { fs.writeFileSync(REDIR, REDIRECTS); console.log('  ok  wrote ' + REDIR); }
 console.log(`${IN} ${before} -> ${OUT} ${s.length} chars (+${s.length - before})`);

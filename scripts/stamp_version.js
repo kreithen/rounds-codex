@@ -37,6 +37,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 const APPLY = process.argv.includes('--apply');
@@ -52,6 +53,7 @@ if (!ROOT || (!CHECK && !SYNC && !LABEL)) {
 const idx = path.join(ROOT, 'index.html');
 const vtxt = path.join(ROOT, 'version.txt');
 let s = fs.readFileSync(idx, 'utf8');
+const RC_BEFORE = s;
 
 /* The constant the copyright collapses to. Edited by hand, deliberately, and only when the
    published year genuinely changes -- which is the whole difference from getFullYear(). */
@@ -86,7 +88,10 @@ const V = LABEL && APPLY ? readVersionFile()
 const cur = (s.match(/var RC_VERSION='([^']*)'/) || [])[1];
 if (cur === undefined) { console.error('FAIL: RC_VERSION declaration not found'); process.exit(1); }
 const versionOk = cur === V.display;
-if (!versionOk && !CHECK) s = s.replace(/var RC_VERSION='[^']*'/, `var RC_VERSION='${V.display}'`);
+if (!versionOk && !CHECK) {
+  RC.rewrite('RC_VERSION restamped', `var RC_VERSION='${V.display}'`, `var RC_VERSION='${cur}'`);
+  s = s.replace(/var RC_VERSION='[^']*'/, `var RC_VERSION='${V.display}'`);
+}
 
 /* ---- surgery 2: the copyright -------------------------------------------------------------- */
 const COMPUTED = "      '&copy; '+(new Date().getFullYear())+' Rounds Codex. For educational use only.</div>'+";
@@ -115,10 +120,15 @@ if (!copyrightOk && !CHECK) {
     process.exit(1);
   }
   if (hasComputed) {
+    RC.step('the footer copyright becomes a constant', COMPUTED, FIXED);
     s = s.replace(COMPUTED, FIXED);
     /* Declared beside RC_VERSION rather than at the use site: they are the same kind of thing --
        a string about the app's identity that a human edits on purpose. */
-    s = s.replace(/var RC_VERSION='[^']*';/, m => `${m}\n${DECL}`);
+    {
+      const m = s.match(/var RC_VERSION='[^']*';/)[0];
+      RC.step('RC_COPYRIGHT declared beside RC_VERSION', m, `${m}\n${DECL}`);
+      s = s.replace(m, `${m}\n${DECL}`);
+    }
   }
   if (selfDating.test(s)) {
     console.error('FAIL: a self-dating copyright survives -- a second one is still in there');
@@ -187,5 +197,6 @@ console.log(`  copyright   ${hasFixed && !hasComputed ? 'already a constant' : `
   console.log(`  ok   all ${n} inline <script> blocks parse`);
 }
 
+RC.assert(RC_BEFORE, s);
 if (APPLY) { fs.writeFileSync(idx, s); console.log('\nwritten'); }
 else { console.log('\ndry run -- pass --apply to write'); }

@@ -30,6 +30,7 @@
  * Usage: node scripts/fix_account_copy.js <app-root> [--apply]
  */
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const root = process.argv[2];
 const APPLY = process.argv.includes('--apply');
@@ -37,10 +38,12 @@ if (!root) { console.error('usage: fix_account_copy.js <app-root> [--apply]'); p
 
 const p = `${root}/index.html`;
 let s = fs.readFileSync(p, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 const edits = [];
 
 function sub(label, find, repl) {
+  RC.step(label, find, repl);
   if (!s.includes(find)) { console.error(`FAIL  ${label}: anchor not found`); process.exit(1); }
   if (s.split(find).length - 1 !== 1) { console.error(`FAIL  ${label}: anchor is not unique`); process.exit(1); }
   s = s.replace(find, repl);
@@ -111,5 +114,6 @@ for (const [n, ok] of checks) { console.log(`  ${ok ? 'ok  ' : 'FAIL'} ${n}`); i
 console.log(`\nedits: ${edits.join(', ')}`);
 console.log(`index.html: ${before} -> ${s.length} bytes (+${s.length - before})`);
 if (bad) { console.error(`${bad} assertion(s) failed -- not writing`); process.exit(1); }
+RC.assert(RC_BEFORE, s);
 if (APPLY) { fs.writeFileSync(p, s); console.log('written'); }
 else { console.log('dry run -- pass --apply to write'); }

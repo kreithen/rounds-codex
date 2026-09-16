@@ -30,14 +30,17 @@
  */
 'use strict';
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const INDEX = process.argv[2];
 if (!INDEX) { console.error('usage: add_share_button.js <index.html>'); process.exit(2); }
 
 let s = fs.readFileSync(INDEX, 'utf8');
+const RC_BEFORE = s;
 const n0 = s.length;
 
 function replaceOnce(old, neu, label) {
+  RC.step(label, old, neu);
   const parts = s.split(old);
   if (parts.length !== 2) {
     console.error('FAIL %s: found %d occurrences, expected 1', label, parts.length - 1);
@@ -145,5 +148,6 @@ function rcCopyFallback(url,ok,no){
 function toast(t){`,
   'rcShare() + clipboard fallback');
 
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(INDEX, s);
 console.log('%d -> %d chars (+%d)', n0, s.length, s.length - n0);

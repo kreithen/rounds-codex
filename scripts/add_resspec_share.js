@@ -31,6 +31,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 const CHECK = process.argv.includes('--check');
@@ -39,6 +40,7 @@ const IDX = path.join(ROOT, 'index.html');
 if (!fs.existsSync(IDX)) { console.error('missing: ' + IDX); process.exit(2); }
 
 let s = fs.readFileSync(IDX, 'utf8');
+const RC_BEFORE = s;
 if (s.includes('rcShareSpec')) { console.error('FAILED: this build already carries the specialty share button.'); process.exit(2); }
 
 /* The prerequisites this rides on. If any is absent the feature would half-work in a way
@@ -53,6 +55,7 @@ for (const [what, ok] of [
 
 const edits = [];
 function sub(what, find, repl, expect = 1) {
+  RC.step(what, find, repl);
   const n = s.split(find).length - 1;
   if (n !== expect) { console.error(`FAILED (${what}): found ${n} occurrences, expected ${expect}`); process.exit(1); }
   s = s.replace(find, repl);
@@ -145,6 +148,7 @@ sub('specialty header row styling',
 console.log(`${edits.length} edits:`);
 edits.forEach(e => console.log('  ok  ' + e));
 if (CHECK) { console.log('\n--check: nothing written'); process.exit(0); }
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(IDX, s);
 console.log(`\nwrote ${path.relative(process.cwd(), IDX)}`);
 console.log('_redirects already rewrites /r/* — no change needed there.');

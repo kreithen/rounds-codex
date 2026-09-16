@@ -15,6 +15,7 @@
  */
 'use strict';
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const [, , INDEX, REDIR] = process.argv;
 if (!INDEX || !REDIR) {
@@ -23,6 +24,7 @@ if (!INDEX || !REDIR) {
 }
 
 function replaceOnce(s, old, neu, label) {
+  RC.step(label, old, neu);
   const parts = s.split(old);
   if (parts.length !== 2) {
     console.error(`FAIL ${label}: found ${parts.length - 1} occurrences, expected 1`);
@@ -33,6 +35,7 @@ function replaceOnce(s, old, neu, label) {
 }
 
 let s = fs.readFileSync(INDEX, 'utf8');
+const RC_BEFORE = s;
 const n0 = s.length;
 if (s.includes('rcShareGallery')) { console.error('FAIL: already patched'); process.exit(1); }
 
@@ -127,6 +130,7 @@ s = replaceOnce(s,
     if(!openSection(window.RC_DEEPSPEC)) openTarget(window.RC_DEEPLINK);`,
   'router opens a gallery link');
 
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(INDEX, s);
 
 let r = fs.readFileSync(REDIR, 'utf8');

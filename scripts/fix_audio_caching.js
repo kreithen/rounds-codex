@@ -39,6 +39,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 if (!ROOT) { console.error('usage: fix_audio_caching.js <site-root>'); process.exit(2); }
@@ -49,6 +50,7 @@ for (const f of [SW, IDX]) if (!fs.existsSync(f)) { console.error('missing: ' + 
 
 /* ── 1. the worker steps aside for media ──────────────────────────────────── */
 let sw = fs.readFileSync(SW, 'utf8');
+const RC_BEFORE_SW = sw;
 if (sw.includes('MEDIA_RE')) { console.error('FAILED: sw.js already skips media.'); process.exit(2); }
 
 const anchor = `  // Only handle same-origin requests.
@@ -68,6 +70,8 @@ sw = sw.replace(/self\.addEventListener\('fetch'/,
   `const MEDIA_RE = /\\.(mp3|m4a|ogg|wav|mp4|webm|mov)$/i;
 
 self.addEventListener('fetch'`);
+RC.assert(RC_BEFORE_SW, sw);
+RC.reset();   // _headers and index.html are separate files
 fs.writeFileSync(SW, sw);
 
 /* ── 2. immutable cache header so replays cost nothing ────────────────────── */
@@ -84,13 +88,16 @@ fs.writeFileSync(HEADERS, headers ? headers.replace(/\s*$/, '\n\n') + headerBloc
 
 /* ── 3. fetch nothing until Play ──────────────────────────────────────────── */
 let html = fs.readFileSync(IDX, 'utf8');
+const RC_BEFORE = html;
 const oldPre = `    audio.preload = 'metadata';          // never pull 5.9 MB just to draw the bar`;
 const newPre = `    /* Nothing at all until Play. The duration is published in RC_AUDIO, so the bar
        already reads 6:06 without a single byte; "metadata" spent a request per page
        view to learn a number we had shipped. */
     audio.preload = 'none';`;
 if (html.split(oldPre).length - 1 !== 1) { console.error('FAILED: preload line not found exactly once in index.html'); process.exit(1); }
+RC.step('the precache list drops the audio', oldPre, newPre);
 html = html.replace(oldPre, newPre);
+RC.assert(RC_BEFORE, html);
 fs.writeFileSync(IDX, html);
 
 console.log('3 edits:');

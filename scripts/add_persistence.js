@@ -31,6 +31,7 @@
  * Usage: node scripts/add_persistence.js <index.html> <store.js> <nclex-report.js>
  */
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const SRC = process.argv[2];
 const STORE_JS = process.argv[3];
@@ -41,10 +42,12 @@ if (!SRC || !STORE_JS || !REPORT_JS) {
 }
 
 let s = fs.readFileSync(SRC, 'utf8');
+const RC_BEFORE = s;
 const n0 = s.length;
 const done = [];
 
 function replaceOnce(old, neu, label) {
+  RC.step(label, old, neu);
   const parts = s.split(old);
   if (parts.length !== 2) {
     console.error('FAIL %s: found %d occurrences, expected 1', label, parts.length - 1);
@@ -269,6 +272,7 @@ replaceOnce('</style>\n<script>',
 </style>
 <script>`, 'persistence styles');
 
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(SRC, s);
 console.log('applied %d edits:', done.length);
 done.forEach(d => console.log('  -', d));

@@ -26,6 +26,7 @@
  */
 'use strict';
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const [, , INDEX, SW] = process.argv;
 if (!INDEX || !SW) {
@@ -34,6 +35,7 @@ if (!INDEX || !SW) {
 }
 
 function replaceOnce(s, old, neu, label) {
+  RC.step(label, old, neu);
   const parts = s.split(old);
   if (parts.length !== 2) {
     console.error('FAIL %s: found %d occurrences, expected 1', label, parts.length - 1);
@@ -46,6 +48,7 @@ function replaceOnce(s, old, neu, label) {
 /* ------------------------------------------------------------------ 1. the download */
 
 let idx = fs.readFileSync(INDEX, 'utf8');
+const RC_BEFORE_IDX = idx;
 const idx0 = idx.length;
 
 idx = replaceOnce(idx,
@@ -70,11 +73,14 @@ idx = replaceOnce(idx,
   window.addEventListener('pagehide',rv);setTimeout(rv,300000);`,
   'PDF download cannot strand the app tab on a blob URL');
 
+RC.assert(RC_BEFORE_IDX, idx);
+RC.reset();   // sw.js next; its edits are not index.html's
 fs.writeFileSync(INDEX, idx);
 
 /* ------------------------------------------------------------- 2. the service worker */
 
 let sw = fs.readFileSync(SW, 'utf8');
+const RC_BEFORE_SW = sw;
 const sw0 = sw.length;
 
 sw = replaceOnce(sw,
@@ -167,6 +173,7 @@ const OFFLINE_HTML = '<!doctype html><meta charset="utf-8">'
 `,
   'asset misses go through readCached(), plus an offline page');
 
+RC.assert(RC_BEFORE_SW, sw);
 fs.writeFileSync(SW, sw);
 
 console.log('index.html %d -> %d (+%d)   sw.js %d -> %d (+%d)',

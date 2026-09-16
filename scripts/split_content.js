@@ -19,6 +19,7 @@
  */
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const SRC = process.argv[2];
 const OUT = process.argv[3];
@@ -195,6 +196,7 @@ function deepEqual(a, b, p) {
 }
 
 function replaceOnce(s, old, neu, label) {
+  RC.step(label, old, neu);
   const parts = s.split(old);
   if (parts.length !== 2) {
     console.error('FAIL %s: found %d occurrences, expected 1', label, parts.length - 1);
@@ -206,6 +208,7 @@ function replaceOnce(s, old, neu, label) {
 /* ---------------------------------------------------------------- run */
 
 let src = fs.readFileSync(SRC, 'utf8');
+const RC_BEFORE = src;
 const n0 = src.length;
 
 // 1. locate + evaluate + prove lossless
@@ -257,6 +260,7 @@ for (const f of Object.keys(files)) {
   fs.writeFileSync(p, JSON.stringify(files[f]));
   jsonTotal += fs.statSync(p).size;
 }
+RC.assert(RC_BEFORE, src);
 fs.writeFileSync(path.join(OUT, 'index.html'), src);
 
 console.log('content files:');

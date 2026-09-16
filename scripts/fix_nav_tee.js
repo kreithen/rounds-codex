@@ -35,11 +35,13 @@
  */
 'use strict';
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const [, , INDEX, SW] = process.argv;
 if (!INDEX || !SW) { console.error('usage: fix_nav_tee.js <index.html> <sw.js>'); process.exit(2); }
 
 function replaceOnce(s, old, neu, label) {
+  RC.step(label, old, neu);
   const parts = s.split(old);
   if (parts.length !== 2) {
     console.error(`FAIL ${label}: found ${parts.length - 1} occurrences, expected 1`);
@@ -52,6 +54,7 @@ function replaceOnce(s, old, neu, label) {
 /* ------------------------------------------------------------------ sw.js */
 
 let sw = fs.readFileSync(SW, 'utf8');
+const RC_BEFORE_SW = sw;
 const sw0 = sw.length;
 
 const oldCache = (sw.match(/const CACHE = '(rounds-codex-v(\d+))'/) || [])[1];
@@ -84,11 +87,14 @@ sw = replaceOnce(sw,
 
 sw = replaceOnce(sw, `const CACHE = '${oldCache}'`, `const CACHE = '${next}'`,
                  `CACHE ${oldCache} -> ${next}`);
+RC.assert(RC_BEFORE_SW, sw);
+RC.reset();   // index.html next; its edits are not sw.js's
 fs.writeFileSync(SW, sw);
 
 /* ------------------------------------------------------------------ index.html */
 
 let s = fs.readFileSync(INDEX, 'utf8');
+const RC_BEFORE = s;
 const n0 = s.length;
 
 s = replaceOnce(s,
@@ -101,5 +107,6 @@ s = replaceOnce(s,
 });}`,
   'page asks for a worker update on every load');
 
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(INDEX, s);
 console.log(`\nsw.js ${sw0} -> ${sw.length}   index.html ${n0} -> ${s.length}`);

@@ -33,10 +33,12 @@ const IDX = path.join(ROOT, 'index.html');
 if (!fs.existsSync(IDX)) { console.error('missing: ' + IDX); process.exit(2); }
 
 let html = fs.readFileSync(IDX, 'utf8');
+const RC_BEFORE = html;
 if (html.includes('RC_AUDIO')) { console.error('FAILED: index.html already carries the audio player.'); process.exit(2); }
 
 const edits = [];
 function sub(label, find, replace, expect = 1) {
+  RC.step(label, find, replace);
   const n = html.split(find).length - 1;
   if (n !== expect) { console.error(`FAILED ${label}: found ${n} occurrences, expected ${expect}`); process.exit(1); }
   html = html.replace(find, replace);
@@ -52,6 +54,7 @@ const player = fs.readFileSync(path.join(__dirname, 'audio_player.js'), 'utf8')
    The first version pulled the RCAP_CSS array out with a regex and eval'd it, which
    worked and was unreadable; the module already exports the built string. */
 const { RCAP_CSS } = require('./audio_player.js');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 if (!RCAP_CSS || RCAP_CSS.indexOf('.rcap-pop[hidden]') < 0) {
   console.error('FAILED: RCAP_CSS missing, or missing the [hidden] rule the popovers depend on');
   process.exit(1);
@@ -95,6 +98,7 @@ sub('audio player CSS',
   '/* Injected from scripts/audio_player.js RCAP_CSS -- edit there and re-run. */\n' +
   RCAP_CSS + '\n#nav button[data-v=calc] span{');
 
+RC.assert(RC_BEFORE, html);
 fs.writeFileSync(IDX, html);
 console.log(`${edits.length} edits:`);
 edits.forEach(e => console.log('  - ' + e));

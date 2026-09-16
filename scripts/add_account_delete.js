@@ -21,6 +21,7 @@
  *   node scripts/add_account_delete.js <app-root> [--apply] --i-verified-the-function-works
  */
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const root = process.argv[2];
 const APPLY = process.argv.includes('--apply');
@@ -35,6 +36,7 @@ if (APPLY && !VERIFIED) {
 
 const p = `${root}/index.html`;
 let s = fs.readFileSync(p, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 
 const OLD_LINE =
@@ -55,6 +57,7 @@ const NEW_LINE =
   "      '<div id=\"rc-del-msg\" class=\"ab-fine\"></div></div>'+";
 
 if (!s.includes(OLD_LINE)) { console.error('FAIL: could not find the Signed-in block from v83'); process.exit(1); }
+RC.step('the Signed-in block gains the Delete row', OLD_LINE, NEW_LINE);
 s = s.replace(OLD_LINE, NEW_LINE);
 
 const FN = `
@@ -97,6 +100,7 @@ function rcDeleteAccount(){
   });
 }
 `;
+RC.step('rcDeleteAccount() beside rcAccountEmail()', 'function rcAccountEmail(){', FN.trim() + '\nfunction rcAccountEmail(){');
 s = s.replace('function rcAccountEmail(){', FN.trim() + '\nfunction rcAccountEmail(){');
 
 const checks = [
@@ -115,5 +119,6 @@ let bad = 0;
 for (const [n, ok] of checks) { console.log(`  ${ok ? 'ok  ' : 'FAIL'} ${n}`); if (!ok) bad++; }
 console.log(`\nindex.html: ${before} -> ${s.length} bytes (+${s.length - before})`);
 if (bad) { console.error(`${bad} assertion(s) failed -- not writing`); process.exit(1); }
+RC.assert(RC_BEFORE, s);
 if (APPLY) { fs.writeFileSync(p, s); console.log('written'); }
 else { console.log('dry run -- pass --apply (with the verification flag) to write'); }

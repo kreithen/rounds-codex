@@ -32,6 +32,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 const APPLY = process.argv.includes('--apply');
@@ -39,6 +40,7 @@ if (!ROOT) { console.error('usage: add_platform_privacy.js <site-root> [--apply]
 
 const file = path.join(ROOT, 'index.html');
 let s = fs.readFileSync(file, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 
 if (s.includes("{h:'The website and the iOS app'")) {
@@ -47,6 +49,7 @@ if (s.includes("{h:'The website and the iOS app'")) {
 }
 
 function sub(name, needle, replacement) {
+  RC.step(name, needle, replacement);
   const n = s.split(needle).length - 1;
   if (n !== 1) {
     console.error(`FAIL: ${name}: expected 1 occurrence, found ${n}`);
@@ -115,5 +118,6 @@ if (bad) { console.error(`\n${bad} assertion(s) failed -- not writing`); process
 console.log(`\nindex.html: ${before} -> ${s.length} bytes (+${s.length - before})`);
 console.log('NEXT: build_legal_pages.js --apply, then the iOS chain (build_ios_variant.js was');
 console.log('      updated for the new wording in the same commit).');
+RC.assert(RC_BEFORE, s);
 if (APPLY) { fs.writeFileSync(file, s); console.log('\nwritten'); }
 else { console.log('\ndry run -- pass --apply to write'); }

@@ -45,6 +45,7 @@ function matchBrace(s, start) {
   return -1;
 }
 
+const RC = require('./lib/pure_insertion').tracker(__filename);
 const html = fs.readFileSync(IN, 'utf8');
 const decl = html.indexOf('const GALLERIES=');
 if (decl < 0) throw new Error('GALLERIES declaration not found');
@@ -86,7 +87,14 @@ for (const id of Object.keys(after)) {
 }
 if (Object.keys(after).join() !== Object.keys(G).join()) throw new Error('gallery order changed');
 
-const out = html.slice(0, open) + JSON.stringify(G) + html.slice(close + 1);
+/* The literal is re-serialised, so it is declared as a rewrite -- the checks above already hold
+   its CONTENTS to the invariant that matters (every full-image URL, title and key order survives).
+   What this adds is the half those checks cannot see: that nothing OUTSIDE the literal moved in
+   the 750 kB file the splice was cut from. */
+const G_NOW = JSON.stringify(G);
+RC.rewrite('the GALLERIES literal re-serialised with flat gthumbs/ paths', G_NOW, src);
+const out = html.slice(0, open) + G_NOW + html.slice(close + 1);
+RC.assert(html, out);
 fs.writeFileSync(OUT, out);
 
 console.log(`repointed ${touched} galleries (${images} images) at ${DIR}/`);

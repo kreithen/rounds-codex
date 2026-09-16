@@ -43,6 +43,7 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 if (!ROOT) { console.error('usage: add_safe_area.js <site-root> [--platform ios|android]'); process.exit(2); }
@@ -55,6 +56,7 @@ const PLATFORM = pAt > -1 ? process.argv[pAt + 1] : null;
 
 const FILE = path.join(ROOT, 'index.html');
 let s = fs.readFileSync(FILE, 'utf8');
+const RC_BEFORE = s;
 
 const MARK = 'rc-safe-area';
 
@@ -72,6 +74,7 @@ const MARK = 'rc-safe-area';
     console.log('\n  note: no usmle/index.html in this tree -- skipped');
   } else {
     let u = fs.readFileSync(U, 'utf8');
+    const RC_BEFORE_U = u;
     if (u.includes(MARK)) {
       console.log('\n  usmle/index.html already patched');
     } else {
@@ -90,7 +93,11 @@ body{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bot
 </style>
 </head>`;
       const ub = u.length;
+      RC.step('viewport-fit=cover on the USMLE page', VP_FROM, VP_TO);
+      RC.step('body insets before its </head>', '</head>', UBLOCK);
       u = u.replace(VP_FROM, VP_TO).replace('</head>', UBLOCK);
+      RC.assert(RC_BEFORE_U, u);
+      RC.reset();   // usmle/ is done; index.html's accounting is its own
       fs.writeFileSync(U, u);
       console.log(`\n  usmle/index.html: viewport-fit=cover + body insets  (${ub} -> ${u.length} bytes)`);
     }
@@ -183,7 +190,11 @@ const n = s.split(ANCHOR).length - 1;
 if (n !== 1) { console.error(`expected exactly 1 head-close anchor, found ${n}`); process.exit(1); }
 
 const before = s.length;
+/* Declared, because it is an INTRA-LINE edit: the shipped `</style></head>` are on one line and
+   the block goes between them, so the line itself changes even though nothing is lost. */
+RC.step('the safe-area stylesheet before </head>', ANCHOR, '</style>\n' + BLOCK + '\n</head>\n<body>');
 s = s.replace(ANCHOR, '</style>\n' + BLOCK + '\n</head>\n<body>');
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(FILE, s);
 
 /* capacitor.config.json lives in the Capacitor project, not in this tree, so it cannot be patched

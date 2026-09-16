@@ -42,13 +42,16 @@
  */
 'use strict';
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const [, , FILE, REDIR] = process.argv;
 if (!FILE || !REDIR) { console.error('usage: add_clinical_updates_page.js <index.html> <_redirects>'); process.exit(2); }
 let s = fs.readFileSync(FILE, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 
 function replaceOnce(str, find, repl, what) {
+  RC.step(what, find, repl);
   const n = str.split(find).length - 1;
   if (n !== 1) { console.error(`FAILED (${what}): found ${n} occurrences, expected 1`); process.exit(1); }
   console.log('  ok  ' + what);
@@ -198,10 +201,13 @@ s = replaceOnce(s,
   console.log('  ok  .res-wrap reserves 112px for the fixed nav bar (matches .pad; also fixes the existing resident pages)');
 }
 
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(FILE, s);
+RC.reset();   // pass 5 re-reads the file; start its accounting clean
 
 /* ------------------------------------------------------------------- 5. the /u/ route */
 let t = fs.readFileSync(FILE, 'utf8');
+const RC_BEFORE_T = t;
 t = replaceOnce(t,
   `var r=/^\\/(c|s|g|r)\\//.test(location.pathname||'')`,
   `var r=/^\\/(c|s|g|r|u)\\//.test(location.pathname||'')`,
@@ -256,6 +262,7 @@ t = replaceOnce(t,
 function rcShareGuide(spec,year){`,
   'rcShareUpdates() added beside the other share functions');
 
+RC.assert(RC_BEFORE_T, t);
 fs.writeFileSync(FILE, t);
 
 let red = fs.readFileSync(REDIR, 'utf8');

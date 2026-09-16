@@ -34,6 +34,7 @@ if (!INDEX || !REDIR) {
 }
 
 function replaceOnce(s, old, neu, label) {
+  RC.step(label, old, neu);
   const parts = s.split(old);
   if (parts.length !== 2) {
     console.error(`FAIL ${label}: found ${parts.length - 1} occurrences, expected 1`);
@@ -44,6 +45,7 @@ function replaceOnce(s, old, neu, label) {
 }
 
 let s = fs.readFileSync(INDEX, 'utf8');
+const RC_BEFORE = s;
 const n0 = s.length;
 if (s.includes('rcShareSection')) { console.error('FAIL: already patched'); process.exit(1); }
 
@@ -52,6 +54,7 @@ if (s.includes('rcShareSection')) { console.error('FAIL: already patched'); proc
 const slug = n => String(n).toLowerCase().replace(/&/g, ' ').replace(/['’]/g, '')
   .replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 const condPath = require('path').join(require('path').dirname(INDEX), 'content', 'conditions.json');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 if (fs.existsSync(condPath)) {
   const cats = [];
   for (const d of JSON.parse(fs.readFileSync(condPath, 'utf8')))
@@ -202,6 +205,7 @@ s = replaceOnce(s,
   }`,
   'router opens a section link');
 
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(INDEX, s);
 
 /* --------------------------------------------------------------------- 6. _redirects */

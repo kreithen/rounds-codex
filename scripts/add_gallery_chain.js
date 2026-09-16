@@ -34,10 +34,12 @@
  * different length shipped, and then it would have been wrong quietly.
  */
 const fs = require('fs');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const file = process.argv[2];
 if (!file) { console.error('usage: node add_gallery_chain.js <index.html>'); process.exit(2); }
 let s = fs.readFileSync(file, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 
 if (s.includes('function rcGalOrder(')) {
@@ -46,6 +48,7 @@ if (s.includes('function rcGalOrder(')) {
 }
 
 function sub(name, from, to) {
+  RC.step(name, from, to);
   const n = s.split(from).length - 1;
   if (n !== 1) { console.error(`refusing: "${name}" matched ${n} times, expected 1`); process.exit(3); }
   s = s.replace(from, to);
@@ -140,5 +143,6 @@ sub('endPtr takes the cancelled flag',
   ` function endPtr(e){pts.delete(e.pointerId);`,
   ` function endPtr(e,cancelled){pts.delete(e.pointerId);`);
 
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(file, s);
 console.log(`\n${file}: ${before} -> ${s.length} bytes (+${s.length - before})`);

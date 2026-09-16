@@ -21,11 +21,13 @@
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const RC = require('./lib/pure_insertion').tracker(__filename);
 
 const ROOT = process.argv[2];
 if (!ROOT) { console.error('usage: remove_gallery_header_share.js <site-root>'); process.exit(2); }
 const file = path.join(ROOT, 'index.html');
 let s = fs.readFileSync(file, 'utf8');
+const RC_BEFORE = s;
 const before = s.length;
 
 const BTN = fs.readFileSync('/tmp/btn.txt', 'utf8');
@@ -40,6 +42,7 @@ if (!s.includes(BTN)) {
 
 const n = s.split(BTN).length - 1;
 if (n !== 1) { console.error(`FAIL: ${n} occurrences of the button, expected 1`); process.exit(1); }
+RC.rewrite('the gallery header share button removed', '', BTN);
 s = s.replace(BTN, '');
 
 // .ghead is display:flex with .gh-mid at flex:1, so the title simply takes the freed space --
@@ -50,14 +53,16 @@ if (!/\.ghead\{[^}]*display:flex/.test(s) || !/\.gh-mid\{[^}]*flex:1/.test(s)) {
 }
 
 const FN = 'function rcShareGallery(id){';
-if (s.split(FN).length - 1 !== 1) { console.error('FAIL: rcShareGallery not found once'); process.exit(1); }
-s = s.replace(FN,
-`/* rcShareGallery is intentionally retained with no call site. The gallery header's share button
+const RC_FN_NOTE = `/* rcShareGallery is intentionally retained with no call site. The gallery header's share button
    was removed on the physician's call once the PDF button raised a real file share sheet; keeping
    this makes restoring it a one-line change instead of a rewrite. /g/<id> links already shared
    still open, and rcSyncURL still shows /g/<id> in the address bar. */
-` + FN);
+`;
+if (s.split(FN).length - 1 !== 1) { console.error('FAIL: rcShareGallery not found once'); process.exit(1); }
+RC.step('rcShareGallery keeps a comment saying why it has no call site', FN, RC_FN_NOTE + FN);
+s = s.replace(FN, RC_FN_NOTE + FN);
 
+RC.assert(RC_BEFORE, s);
 fs.writeFileSync(file, s);
 const kept = (s.match(/class="g-share"/g) || []).length;
 console.log('removed the single-gallery header share button');
