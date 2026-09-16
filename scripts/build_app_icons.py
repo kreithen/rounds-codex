@@ -32,6 +32,8 @@ wrong answer in every case:
   |                          |                    |       | inside the safe zone, a circle of 80%  |
   |                          |                    |       | diameter, or adaptive cropping eats it |
   | icons/apple-touch-icon   | full bleed, opaque | 70%   | iOS masks it itself (see above)        |
+  | native/landing-icons/    | full bleed, opaque | 70%   | the same file for roundscodex.com,     |
+  |   apple-touch-icon.png   |                    |       | staged for `main` -- see its README    |
 
 The rounded radii are not invented -- they are measured off the icons being replaced (20%, 19%,
 18%), so the "any" icons keep the silhouette the product already has.
@@ -126,6 +128,18 @@ TARGETS = [
     ('icons/apple-touch-icon.png',          180, 0.70, None),
 ]
 PLAY = ('native/play-graphics/play-icon-512.png', 512, 0.70, None)
+# The LANDING site's home-screen icon, staged for `main` and deliberately not pushed there -- see
+# native/landing-icons/README.md, and native/landing-aasa/ for the same arrangement.
+#
+# Two reasons it is generated here rather than left alone. The obvious one is that roundscodex.com
+# and the app wear DIFFERENT MARKS -- a thick solid ring on the landing site against the app's
+# glowing thin one -- so someone who saves both to a home screen gets two icons for one product.
+# The one that makes it a defect rather than a preference is that the shipped landing file is RGB
+# with **white** corners baked in (1,594 pure-white pixels, 4.9% of it). iOS masks an
+# apple-touch-icon with its own squircle, so those corners show as white wedges outside the art's
+# rounding and inside Apple's. It is the same class of fault the app's icon had in v143, in the
+# other direction: that one was transparent and iOS composited it onto black.
+LANDING = ('native/landing-icons/apple-touch-icon.png', 180, 0.70, None)
 # The App Store icon. 1024x1024 and Apple REJECTS ALPHA outright -- a transparent icon is not
 # masked, it is refused at upload -- so this is full bleed like Play's, and the corner-treatment
 # check below already asserts opacity rather than trusting it. The App Store icon comes from the
@@ -136,7 +150,7 @@ print('--- build_app_icons.py ---')
 print(f'  source  {os.path.relpath(LOCKUP)}  emblem crop {EMBLEM}')
 
 built = []
-for rel, size, frac, rad in TARGETS + [PLAY, APPSTORE]:
+for rel, size, frac, rad in TARGETS + [PLAY, APPSTORE, LANDING]:
     img = build(size, frac, rad)
     assert_closed_ring(img, os.path.basename(rel))
     px = img.load()
