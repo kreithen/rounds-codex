@@ -1234,6 +1234,12 @@ on my own judgement. Autonomy is about mechanics, not about medical correctness.
 Develop on **`claude/usmle-rounds-codex-module-bmpl61`**. Commit + push there; never push elsewhere
 without explicit permission. Do NOT open a PR unless the user asks.
 
+## Large screens, link previews and the brand artwork (branch `claude/ios-large-screen-layout-6n2sur`)
+**Read `HANDOFF-large-screen-and-previews.md`.** Twenty commits, eight deploys (v138–v145), all live
+and confirmed. It carries what shipped, the four things easy to undo by accident, what is waiting on
+the physician, and what was deliberately left alone with the reason. It is the newest branch on the
+native line — **continue from it, not from `claude/no-wall-ios-variant-nbyd9v`.**
+
 ## The native iOS app — ITS OWN CONVERSATION (2026-08-17)
 Building the website into an App Store submission. Handed off to a separate conversation on branch
 **`claude/native-ios-app`**. **Read `HANDOFF-native-ios-app.md` first**, then
