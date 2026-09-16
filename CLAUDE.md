@@ -1234,6 +1234,24 @@ on my own judgement. Autonomy is about mechanics, not about medical correctness.
 Develop on **`claude/usmle-rounds-codex-module-bmpl61`**. Commit + push there; never push elsewhere
 without explicit permission. Do NOT open a PR unless the user asks.
 
+## Large screens — Level 2 is BUILT and not yet deployed (2026-09-16)
+`scripts/add_large_screen_l2.js`: above **1180px** the nav becomes a left sidebar and the list you
+came from stays on screen beside the item you opened. Guarded by `verify_large_screen_l2.js`
+(35 checks, 22 fail on the pre-patch tree), in `preflight.sh`. Read `large-screen-plan.md`'s Level 2
+section — it now carries what was built and the seven places the plan was wrong or silent.
+- **The router is NOT rewritten.** `paint()` renders the stack top into the right pane and its
+  parent into the left one; `back()`, `rcSyncURL()` and share links are untouched. **Two panes is a
+  rendering fact, not a routing one** — that is the answer to the plan's open question.
+- **1180 is measured, not chosen**: `.app` sits at `(W + 200)/2 - 440` and must clear the 168px
+  rail plus gutters, which needs W ≥ 1096. iPad **13" portrait is 1024 and stays single-pane**.
+- **Selecting a sibling REPLACES the stack top** — pushing makes Back walk out through every card
+  you clicked. **The condition swipe is off** in two-pane, because its handler is bound to `#screen`
+  and that now holds the LIST. **The rail is off** too: rail + list needs 1208px of content.
+- Two traps worth keeping: a grid item with an explicit `grid-column` and no `grid-row` is still
+  auto-PLACED (the list went to row 2, 5,224px below the fold, with every other assertion passing);
+  and `position:sticky;top:8px` pushes an element whose natural position is above 8 down to it, so
+  two columns of one row stop lining up.
+
 ## Large screens, link previews and the brand artwork (branch `claude/ios-large-screen-layout-6n2sur`)
 **Read `HANDOFF-large-screen-and-previews.md`.** Twenty commits, eight deploys (v138–v145), all live
 and confirmed. It carries what shipped, the four things easy to undo by accident, what is waiting on

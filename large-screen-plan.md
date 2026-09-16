@@ -99,7 +99,7 @@ like a button at 880. Everything behind `min-width`, so the phone layout is prov
 
 Biggest bang for the effort. Also improves iPad immediately, which matters now.
 
-### Level 2 — Two-pane at tablet width (2–3 days)
+### Level 2 — Two-pane at tablet width (2–3 days)  ·  **BUILT 2026-09-16, awaiting deploy**
 
 The Mail/Notes pattern: condition list on the left, the open condition on the right, both scrolling
 independently.
@@ -110,6 +110,43 @@ independently.
 - **The real work is the router**, not the CSS: `stack`, `back()` and `rcSyncURL()` all assume one
   visible view at a time. Two panes means two simultaneous views, and the back-stack semantics have
   to be decided rather than inherited.
+
+*As built:* `scripts/add_large_screen_l2.js`, guarded by `scripts/verify_large_screen_l2.js`
+(35 checks, **22 of which fail on the pre-patch tree**), in `preflight.sh`. Seven corrections and
+decisions that the plan above does not contain:
+
+- **The breakpoint is 1180, and ~900 would not have worked.** The sidebar is 168 px in a 16 px
+  gutter, so content has to start at x ≥ 200; `.app` is centred by `body{justify-content:center}`
+  inside `padding-left:200px`, which puts it at `(W + 200)/2 − 440`. That clears 200 from **W =
+  1080** and clears a right gutter from 1096. At 900 the nav would sit on top of the library's
+  first card. It lands where it should: iPad 11″ landscape 1194 and 13″ landscape 1366 are in;
+  **13″ portrait is 1024 and stays out**, correctly — there are 72 px a side there, which is a
+  collision, not a sidebar.
+- **The router is NOT rewritten, and the back-stack is inherited after all.** `paint()` renders the
+  stack top into the right pane and its parent into the left one. `back()` still pops, `rcSyncURL()`
+  still reflects the top, a shared `/c/<id>` link still seeds the same history. **Two panes is a
+  rendering fact, not a routing one** — which is the answer to the plan's open question, and it is
+  the reason this took a day rather than three.
+- **The pairs are the ones `activeRoot` already knows.** library/detail, rx/rxdrug, calc/calcone,
+  res/resspec, resspec/resdetail — the same parent map `paint()` computes for the nav highlight.
+- **Selecting a sibling REPLACES rather than pushes.** With the list on screen you click through ten
+  conditions; pushing each one makes Back walk you out through all ten. Same move `swipeTo()` has
+  always made. This is the single most likely thing to get wrong and is invisible until someone
+  presses Back four times.
+- **The condition swipe is off in two-pane.** That handler is bound to `#screen`, which now holds
+  the *list*, so unguarded it would silently change what is open in the other pane.
+- **The rail is off in two-pane**, and that is a trade, not an oversight: rail + list needs 1208 px
+  of content, which is a desktop and not an iPad. The rail's four blocks fall back into the
+  narrative flow, which is exactly where they sit on a phone. A 1440 tier that keeps both is one
+  additive rule if it is ever wanted.
+- **`.pad`'s 112 px bottom reservation is released** once the bar is not at the bottom — written as
+  `body .pad` so it wins on *specificity*, because `add_safe_area.js` appends its own `.pad` rule
+  later in the native chain and source order is not ours to control there.
+
+Two things that were measured and are worth keeping: a grid item with an explicit `grid-column` and
+no `grid-row` is still auto-**placed**, so the first cut put the list on row 2, 5,224 px below the
+fold, while every other assertion passed; and `position:sticky` with `top:8px` pushes an element
+whose natural position is *above* 8 down to it, so the two columns of one row did not line up.
 
 ### Level 3 — Fold-aware (unknown, and premature)
 
@@ -129,7 +166,7 @@ closes, and respecting the hinge as a layout boundary.
 |---|---|
 | ~~After the 17th~~ **shipped 2026-09-14** | **Level 1**, as v138. `scripts/add_large_screen.js` + `scripts/verify_large_screen.js`. |
 | ~~next~~ **shipped 2026-09-14** | **The condition page's side rail**, as v139. Asked for as "two columns of `.panel` cards"; built as a pinned 520px narrative plus a sticky 360px rail instead, because a condition page is a *sequence* and two columns make the reader zig-zag. `scripts/add_detail_rail.js` carries the full reasoning. The narrative is 488px of text, byte-identical to v138 — the rail is additive, not a widening. |
-| **Before any tablet marketing** | **Level 2**, if iPad is a target audience worth naming. It is a genuine product decision, not a polish item — it changes how the app is navigated. |
+| ~~Before any tablet marketing~~ **built 2026-09-16** | **Level 2.** `scripts/add_large_screen_l2.js` + `scripts/verify_large_screen_l2.js`. It does change how the app is navigated above 1180px, so it is the physician's call to ship, not a polish item to slip in. |
 | **When the hardware is real** | Level 2 will already have done most of the work. Re-measure then. |
 
 **One thing to do regardless, and cheaply: make the app resize gracefully.** *(Done 2026-09-12, and

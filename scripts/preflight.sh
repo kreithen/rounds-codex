@@ -104,6 +104,7 @@ fi
 if [ -z "${RC_PW:-}" ] || [ ! -d "${RC_PW:-}/node_modules/playwright-core" ]; then
   skip "app end-to-end"       "RC_PW unset or playwright-core missing"
   skip "large-screen layout"  "RC_PW unset or playwright-core missing"
+  skip "large-screen level 2" "RC_PW unset or playwright-core missing"
   skip "condition-page rail" "RC_PW unset or playwright-core missing"
   skip "native variant"       "RC_PW unset or playwright-core missing"
   [ "$MODE" = web ] && skip "media root" "RC_PW unset or playwright-core missing"
@@ -117,6 +118,10 @@ else
   # share $PORT. Its "phone layout unchanged" sub-check needs a second, unpatched tree to diff
   # against and reports itself as SKIP here -- run it by hand with --before when changing the CSS.
   run "large-screen layout"   node "$HERE/verify_large_screen.js" "$TREE"
+  # Level 2: the sidebar and the two-pane list. Own sims on 8961/8962. Same shape as Level 1 --
+  # its "nothing below 1180 moved" sub-check needs a second, unpatched tree and reports itself as
+  # SKIP here, so run it by hand with --before whenever the layout or the router is touched.
+  run "large-screen level 2"  node "$HERE/verify_large_screen_l2.js" "$TREE"
   # The condition page's side rail. Own sims on 8941/8942, so no clash with $PORT.
   run "condition-page rail"   node "$HERE/verify_detail_rail.js" "$TREE"
   if [ "$NATIVE" = yes ]; then

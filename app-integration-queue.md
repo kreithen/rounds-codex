@@ -1725,3 +1725,43 @@ else.
   on the hook for eating the ring's dimmer arcs. Both read 1.02; the cropped icons read 0.78.
 - `usmle/` is not in `CORE`, so a deploy but no `CACHE` bump. `version.txt`'s date is unchanged, so
   `RC_VERSION` stays in step and `stamp_version.js --check` passes 2/2.
+
+## Level 2 large screens — BUILT 2026-09-16, awaiting deploy approval
+
+Above **1180px** the nav becomes a left sidebar and the list you came from stays on screen beside
+the item you opened — the Mail/Notes pattern, for all five list/item pairs the app has.
+`scripts/add_large_screen_l2.js`, guarded by `scripts/verify_large_screen_l2.js`.
+
+**Not deployed.** It changes how the app is navigated above 1180px, which `large-screen-plan.md`
+calls "a genuine product decision, not a polish item", so it waits on the physician.
+
+- **The router is not rewritten, and that is the headline.** The plan expected the back-stack
+  semantics to "have to be decided rather than inherited". They are inherited: `paint()` renders the
+  stack top into the right pane and its parent into the left one, so `back()` still pops,
+  `rcSyncURL()` still reflects the top, and a shared `/c/<id>` link still seeds the same history.
+  **Two panes is a rendering fact, not a routing one.** The twenty-two view branches moved into
+  `rcRenderView(s, v, id)` byte for byte.
+- **The pairs are the ones `activeRoot` already computes** for the nav highlight: library/detail,
+  rx/rxdrug, calc/calcone, res/resspec, resspec/resdetail. A list with nothing selected keeps its
+  width and shows a placeholder, rather than jumping back to full width when you deselect.
+- **1180 is measured.** The rail is 168px in a 16px gutter, so content must start at x ≥ 200;
+  `.app` sits at `(W + 200)/2 − 440`, which clears that from W = 1080 and clears a right gutter
+  from 1096. iPad 11″ landscape (1194) and 13″ landscape (1366) are in; **13″ portrait is 1024 and
+  stays single-pane**, correctly — 72px a side is a collision, not a sidebar.
+- **Three consequences that are not obvious.** Selecting a sibling REPLACES the stack top instead of
+  pushing (otherwise Back walks you out through every card you clicked — the same move `swipeTo()`
+  has always made). The condition swipe is OFF in two-pane, because its handler is bound to
+  `#screen` and `#screen` now holds the list. The detail rail is OFF too: rail + list needs 1208px
+  of content, a desktop and not an iPad, so the rail's four blocks fall back into the narrative
+  flow, which is where they sit on a phone.
+- **Nothing below 1180 moved** — proved by diffing the rendered geometry of 8 views at 390/768/1024
+  against an unpatched tree, not by reading the media queries.
+- `preflight.sh web` is 14 passed / 0 failed and `preflight.sh ios` is 13 / 0 / 0, so the sidebar
+  and the two panes survive the whole native payload chain — the wall removal, the ASK cut, the
+  service-worker strip and the safe-area insets.
+
+**Two measurements worth keeping.** A grid item with an explicit `grid-column` and no `grid-row` is
+still auto-PLACED: the first cut put `#screen2` before `#screen` in the DOM, which pushed the list
+to row 2 and rendered it 5,224px below the fold while every other assertion passed. And
+`position:sticky` with `top:8px` pushes an element whose natural position is *above* 8 down to it,
+so the two columns of one grid row did not line up until it became `top:0`.
