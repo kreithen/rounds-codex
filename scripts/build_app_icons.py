@@ -126,12 +126,17 @@ TARGETS = [
     ('icons/apple-touch-icon.png',          180, 0.70, None),
 ]
 PLAY = ('native/play-graphics/play-icon-512.png', 512, 0.70, None)
+# The App Store icon. 1024x1024 and Apple REJECTS ALPHA outright -- a transparent icon is not
+# masked, it is refused at upload -- so this is full bleed like Play's, and the corner-treatment
+# check below already asserts opacity rather than trusting it. The App Store icon comes from the
+# BINARY, not from App Store Connect, so shipping it means an iOS build (1.0.1).
+APPSTORE = ('native/ios-project/AppIcon-1024.png', 1024, 0.70, None)
 
 print('--- build_app_icons.py ---')
 print(f'  source  {os.path.relpath(LOCKUP)}  emblem crop {EMBLEM}')
 
 built = []
-for rel, size, frac, rad in TARGETS + [PLAY]:
+for rel, size, frac, rad in TARGETS + [PLAY, APPSTORE]:
     img = build(size, frac, rad)
     assert_closed_ring(img, os.path.basename(rel))
     px = img.load()

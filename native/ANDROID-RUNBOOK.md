@@ -20,6 +20,64 @@ repeat here.
 | Service worker | **Removed from the payload**, both platforms (§4.2 item 4) |
 | Price | Free, no IAP, no Play Billing in v1 |
 
+---
+
+## WHERE YOU ARE — updated 2026-09-16, after a full Play Console session
+
+**Everything the browser can do is done.** Do not re-tread steps 1 and 9; they are finished.
+
+| | |
+|---|---|
+| Play Console account | ✅ **Organisation**, "Rounds Codex", ID `4703111188826193257`. Exempt from the 12-testers-for-14-days closed test that personal accounts need — §1's longest-lead item is behind you. |
+| App created | ✅ `Rounds Codex: Clinical Atlas`, package **`com.roundscodex.app`**, free, en-US. **Note: Play's Create-app form now takes the package name**, so it was bound there, not at first upload as older guidance said. |
+| Content rating | ✅ IARC certificate issued — **ESRB Everyone 10+, PEGI 3, USK 6, ClassInd L**. Declared: blood unrelated to violent acts ("small and infrequent"), references to medical / illegal / alcohol / tobacco, primarily educational. |
+| Sign-in details | ✅ **No** — measured against the built payload, not assumed: `no #rc-authgate in the DOM`, `viewport centre is not a sign-in wall`. The *web* has the wall; this build does not. |
+| Data safety | ✅ **No data collected, no data shared.** Zero off-origin requests measured across the whole app. ⚠ True of the WEB payload — see the caveat below. |
+| Health apps | ✅ **Medical reference and education** only. Not clinical decision support, not a medical device. |
+| Ads / Government / Financial / Advertising ID | ✅ all No |
+| Target audience | ✅ 18+ |
+| Store listing, graphics, screenshots | ✅ entered from `native/PLAY-LISTING-DRAFT.md` |
+| App icon | ✅ **`native/play-graphics/play-icon-512.png`** — the older icons carried a cropped ring; see `scripts/build_app_icons.py` |
+
+**⚠ THE ONE THING TO RE-CHECK ON THE MAC:** the Data safety answer is true of the web payload,
+which is all a container can see. If the Gradle project picks up Firebase, Crashlytics or any
+analytics dependency — some templates add them by default — the app **does** collect, and the
+answer must change to Yes with Crash logs and Diagnostics declared. Look at `app/build.gradle`
+before you submit.
+
+**So the remaining work is entirely on the Mac**, and it is §2 → §4 → §5 → §6 → §8, then §7 after
+the first upload because App Links need a fingerprint that does not exist until then.
+
+### The command card — one line at a time, never as a pasted block
+
+The reason is in §4 and it has already cost a session: an interactive prompt swallows whatever was
+pasted behind it, and a pasted block leaves its last line un-executed with no Return, which is how
+`cap sync` silently did not run and the app was tested twice against stale bytes.
+
+```sh
+cd rounds-codex
+git pull
+rm -rf /tmp/rc-payload-android
+node scripts/build_native_payload.js ../rounds-codex-app /tmp/rc-payload-android --platform android --asset-packs --version v1.0.0-android
+RC_PW=<dir with node_modules/playwright-core> sh scripts/preflight.sh android ../rounds-codex-app
+cd ~/rounds-codex-native
+npm i @capacitor/android@8 @capacitor/core@8 @capacitor/cli@8 @capacitor/ios@8
+rsync -a --delete /tmp/rc-payload-android/ www/
+npx cap add android
+npx cap sync android
+npx cap open android
+```
+
+Expect ≈84 MB and `all 31 checks pass`. Then in `android/app/build.gradle` set `applicationId
+"com.roundscodex.app"`, `versionCode 1`, `versionName "1.0.0"` — §4 explains why `versionCode` can
+never be reused. Read §3 before `cap add android`: the Capacitor 7-vs-8 choice binds the next **iOS**
+submission too, and it is not reversible cheaply.
+
+**After ANY payload change: rsync → `npx cap sync android` → ▶.** Android Studio will happily
+rebuild yesterday's bytes otherwise.
+
+---
+
 **Marked ⚠ where I could not verify something from a container.** Those are the places to read the
 real documentation rather than trust this file.
 
@@ -729,7 +787,15 @@ mirror it, because the same listener fires on Android.
 
 ## 9. The listing
 
-Not yet drafted — that is `HANDOFF-android-app.md` §4.6. What is already settled:
+> ✅ **DRAFTED AND ENTERED — 2026-09-16.** `native/PLAY-LISTING-DRAFT.md` holds the text at Play's
+> limits (28/30, 77/80, 2,823/4,000) plus the Data safety, Health apps and content-rating answers as
+> a filled worksheet; the graphics are in `native/play-graphics/` and `native/play-screenshots/`.
+> All of it is in the console. **Read §7 of that draft before editing any description text** — four
+> claims did not survive the port from the App Store, and three are accuracy problems, including the
+> not-a-medical-device wording Play *requires* of a health app.
+> Re-derive the counts on the day you touch it: `node scripts/verify_listing_counts.js ../rounds-codex-app`.
+
+What is settled, kept for the record:
 
 - **Title** "Rounds Codex: Clinical Atlas" (28 of 30 characters).
 - **Screenshots must be re-rendered, not cropped.** Play's maximum aspect is 2:1 and the App Store
