@@ -1653,3 +1653,75 @@ curl -sS -H 'User-Agent: Twitterbot/1.0' https://rounds-codex.netlify.app/c/dvt 
 Per-gallery card art is a separate job — and `build_og_card.py` records why it is not trivial: the
 brand faces are not installed here, so type rendered into a card is the wrong wordmark. A card built
 from gallery page 1 with no type would sidestep that.
+
+## v143 — the app icon is the brand's closed ring again (2026-09-16)
+
+Reported by the physician while uploading the Play listing: *"don't see the full circle."* Every
+shipped icon carried a **cropped mark** — the ring open on the right, so the emblem read as a "C".
+Live since launch, and it survived because a small dark icon is exactly where a missing arc hides.
+
+- **The measurement that made it provable is the bounding box's ASPECT.** A closed ring is square;
+  all four web icons measured **0.78**, and the *identical* number across four sizes is what showed
+  a single upstream crop propagating rather than four separate mistakes. A check counting bright
+  pixels, or testing the centroid, passes all four.
+- Two more defects fell out of the same measurement: the mark sat **12–15% off-centre**, and
+  `apple-touch-icon.png` had **transparent corners** — iOS composites those onto black and then
+  applies its own squircle, so black shows between the two masks.
+- Fixed by **generating** all six from `scripts/logo-trim.png` (`scripts/build_app_icons.py`), each
+  with the corner treatment its platform wants. **Do not hand-edit an icon** — fix the generator.
+- `sw.js` `CACHE` v141 → v143 because the four web icons are in `CORE`. The migration was driven in
+  a real browser: install v141, swap `sw.js`, reload → old cache deleted, 21 entries under v143,
+  boots offline with 183 conditions and 102 galleries, 0 page errors.
+- **iOS still has the cropped icon.** Its store icon comes from the binary, so it is a 1.0.1 build
+  item, not a listing edit.
+
+## v144 — per-gallery link-preview card art (2026-09-16)
+
+v142 gave 394 routes their own words; all 394 still shared one image. The **102 `/g/<id>` routes**
+now carry a card built from their own pages — 1200×630, four pages at 240×360, dimmed behind the
+lockup (`scripts/build_gallery_cards.py`). The other 292 keep the site-wide card, which is right for
+them: a condition page's subject is its text, not its plates. **This supersedes the "Still on the
+site-wide image" note that closed the v142 section.**
+
+- **The design is `build_og_card.py`'s deliberately**, including *four* pages rather than three. The
+  pilot at three was visibly wrong: 3×240+2×26 = 772 of 1200, so the card read as sparse, and worse,
+  the lockup landed **on** the middle page and buried it. At four the row is 1038 and the lockup
+  falls in the gutter — which is why the site-wide card works.
+- **No rendered type**, for that file's other reason: the brand faces are not installed here, so any
+  type drawn into a card is the wrong wordmark. The gallery's name is already in `og:title`, set by
+  the platform in its own type beside the image.
+- **Page choice avoids the known-bad pages** from `galleries-staging/label-qa-worklist.json` — 109
+  pages across 92 galleries on the leader-line work order. Where a gallery has fewer than four clean
+  pages the flagged ones are used and **named in the output**, so the choice is visible.
+- No `CACHE` bump: the cards are not in `CORE` and `index.html` is untouched.
+- **Confirmed in production**, which is the thing this container could not do for v142: a crawler UA
+  on `/c/dvt` returns `og:title` "Deep Vein Thrombosis" with `og:image` the gallery card; a browser
+  UA on the same URL still returns "Rounds Codex".
+
+## v145 — the USMLE module wears the emblem (2026-09-16)
+
+`usmle/assets/logo.png` was the **wordmark only** — no ring, no ECG trace — and
+`preview/assets/logo.png` was the same file byte for byte, so a reader going Library → USMLE PREP
+watched the brand change on the way in. Found by the v143 brand audit, not by anyone looking at the
+page. Generated now by `scripts/build_usmle_logo.py` from the same `logo-trim.png` as everything
+else.
+
+- **The conversion is the whole job, and it is not a resize.** The lockup is RGB on a near-black
+  ground; the file it replaced is RGBA keyed to transparency, and two things depend on that alpha.
+  The page ground is `--bg:#070b12`, *not* the lockup's (0,1,13), so an opaque rectangle sits on the
+  header as a faint dark patch. And `.brandimg` carries `drop-shadow(0 0 7px rgba(90,180,240,.35))`,
+  cast by the **alpha shape** — opaque corners turn the mark's glow into a glowing box.
+- **The floor is measured, and that is why it is not zero.** The four 24px corner patches read
+  10–24, so keying at alpha 0 leaves the whole rectangle at ~9% and the drop-shadow draws it. Take
+  the floor from the **corner patches, never the whole border** — the ECG trace leaves the frame at
+  the bottom edge and reads 255 there.
+- **No CSS change, because the geometry was checked rather than assumed.** Emitted at the replaced
+  file's height (270) so its vertical intrinsic is unchanged; width follows the lockup's aspect,
+  843 → 949. `.brandimg` is `height:52px;width:auto;max-width:260px`, so rendered width goes
+  162 → 183px and 120 → 141px against the 190px cap under the 520px media query — inside both.
+  Measured in a real browser at 430/390/1024 at DPR 2: 0 page errors, 0 failed requests.
+- The guard is `assert_closed_ring`, `build_app_icons.py`'s measurement, run **twice** — on the
+  source emblem and again on the output's emblem *after* the alpha key, so a floor set too high is
+  on the hook for eating the ring's dimmer arcs. Both read 1.02; the cropped icons read 0.78.
+- `usmle/` is not in `CORE`, so a deploy but no `CACHE` bump. `version.txt`'s date is unchanged, so
+  `RC_VERSION` stays in step and `stamp_version.js --check` passes 2/2.
