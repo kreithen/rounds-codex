@@ -180,6 +180,11 @@ Reasoning for each is in `app-store-plan.md`.
 
 - **The App Store listing, live since 2026-08-25** — name, subtitle, description, keywords, 16
   screenshots (8 iPhone 6.9", 8 iPad 13"). The strings are in `app-store-submission-draft.md`.
+  **The iPad set is now a different set, not a bigger one** — since web v146 the app is two-pane
+  above 1180px, so four of the eight show something the iPhone set cannot. Shoot iPad in LANDSCAPE:
+  13" portrait is 1024, below the breakpoint by design, and would photograph the single column.
+  **None of it is true of the shipped 1.0(4) binary** — it rides with 1.0.1. Draft copy and the
+  shot list are in `app-store-submission-draft.md` under "The iPad set" and "The iPad line".
   **Name, subtitle, description, keywords and screenshots are now frozen until a new version goes
   through review.** Only **Promotional Text** is editable freely — treat it as the one live field.
 - **A privacy page and a support page**, both live, both linked from the listing. The blocker this

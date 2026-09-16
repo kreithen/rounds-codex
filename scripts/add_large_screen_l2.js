@@ -271,6 +271,16 @@ const BLOCK = `<style id="${MARK}">
      the one that stays. */
   .app[data-pane="two"] > #screen2 .dtop .toggle{display:none;}
 
+  /* And one lockup, not two, for the same reason one step further. The library's hero -- logo, ECG
+     line, tagline -- is 146px of brand at the top of a pane you are now looking at ALL THE TIME
+     rather than scrolling past once, and detailHTML's .dtop carries the lockup again 360px to its
+     right. Measured before this rule: 560px of chrome above the first card in an 884px pane, so
+     two cards were visible. The search box and the USMLE / Galleries buttons stay -- they are
+     navigation, and the sidebar does not carry them, so hiding them would strand two whole
+     sections at this width. Scoped to the LIST pane: at any other width, and in the right pane,
+     the hero is untouched. */
+  .app[data-pane="two"] > #screen .hero{display:none;}
+
   .pane-empty{
     display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
     min-height:min(60vh,520px);padding:24px;text-align:center;

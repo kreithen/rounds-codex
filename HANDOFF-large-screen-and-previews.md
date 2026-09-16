@@ -70,7 +70,7 @@ committed; it needs an archive.
 
 ---
 
-## 2b. Level 2 large screens — shipped as v146
+## 2b. Level 2 large screens — shipped as v146, refined in v147
 
 Above **1180px** the nav becomes a left sidebar and the list you came from stays on screen beside
 the item you opened, for all five list/item pairs. `scripts/add_large_screen_l2.js`, guarded by
@@ -81,10 +81,15 @@ how the app is navigated", and it does, above 1180px, so it went to the physicia
 `preflight.sh web` 14/0, `preflight.sh ios` 13/0/0, nothing below 1180 moved, zero page errors, and
 the `CACHE` v143 → v146 migration was driven in a real browser.
 
-The three things a future session is most likely to undo by accident are in `CLAUDE.md`: the
+v147 hides the library's hero **in the list pane only** — 613px of chrome above the first card
+became 467, two cards in view became three, measured in all three modes.
+
+The four things a future session is most likely to undo by accident are in `CLAUDE.md`: the
 breakpoint is **measured** and 1180 is the first width that clears the rail; selecting a sibling
-**replaces** the stack top rather than pushing; and the condition swipe and the detail rail are both
-**off** in two-pane, each for a reason stated in the patcher.
+**replaces** the stack top rather than pushing; the condition swipe and the detail rail are both
+**off** in two-pane, each for a reason stated in the patcher; and **to change any of it, re-run
+`add_large_screen_l2.js` from the pre-Level-2 file** rather than patching the patched one — that is
+how v147 came out as +10/−0 against v146.
 
 ---
 

@@ -1234,10 +1234,17 @@ on my own judgement. Autonomy is about mechanics, not about medical correctness.
 Develop on **`claude/usmle-rounds-codex-module-bmpl61`**. Commit + push there; never push elsewhere
 without explicit permission. Do NOT open a PR unless the user asks.
 
-## Large screens — Level 2 shipped as v146 (2026-09-16)
+## Large screens — Level 2 shipped as v146/v147 (2026-09-16)
 `scripts/add_large_screen_l2.js`: above **1180px** the nav becomes a left sidebar and the list you
 came from stays on screen beside the item you opened. Guarded by `verify_large_screen_l2.js`
-(35 checks, 22 fail on the pre-patch tree), in `preflight.sh`. `CACHE` v143 → v146. Read `large-screen-plan.md`'s Level 2
+(35 checks, 22 fail on the pre-patch tree), in `preflight.sh`. `CACHE` v143 → v146, then v147.
+- **The list pane hides the library's hero** (`> #screen .hero`). Measured both ways in all three
+  modes: with it, 613px of chrome above the first card and TWO cards in view; without, 467px and
+  THREE. Search and the USMLE / Galleries buttons stay — they are navigation, and the sidebar does
+  not carry them. Same reasoning as hiding the duplicate mode toggle in the right pane.
+- **To change this layout, re-run the patcher from the pre-Level-2 file** (`git show <pre>:index.html`)
+  rather than patching the patched one. v147's diff against v146 is +10/−0 because of that, and
+  `add_large_screen_l2.js` stays the single source of truth. Read `large-screen-plan.md`'s Level 2
 section — it now carries what was built and the seven places the plan was wrong or silent.
 - **The router is NOT rewritten.** `paint()` renders the stack top into the right pane and its
   parent into the left one; `back()`, `rcSyncURL()` and share links are untouched. **Two panes is a

@@ -1774,6 +1774,33 @@ to disable TLS verification to get round it. So the browser run — all 35 check
 migration — was against the exact bytes now being served, proved identical by md5, rather than
 against the origin itself.
 
+## v147 — the two-pane list is a list, not a masthead (2026-09-16)
+
+One rule on top of v146: in two-pane the library's hero — logo, ECG line, tagline — is hidden in the
+**list pane only**. It sat at the top of a pane you now look at all the time rather than scroll past
+once, and `detailHTML`'s `.dtop` carries the lockup again 360px to its right.
+
+**Measured both ways, in all three modes.** With the hero: **613px** of chrome above the first card
+in nursing and medical, 606 in resident, and **two cards in view**. Without: **467/467/460**, and
+**three**. The guard asserts the card count as well as the offset — the offset alone would pass a
+rule scoped to the wrong pane, and the card count is the figure a reader actually feels.
+
+The search box and the USMLE PREP / All Image Galleries buttons **stay**: they are navigation, not
+furniture, and the sidebar does not carry them, so hiding them would strand two whole sections at
+this width. Same reasoning that already hides the duplicate mode toggle — an interactive control
+shown twice is worse than a brand mark shown twice, and a brand mark shown twice is still worth one
+rule.
+
+**Produced by re-running the patcher from the pre-Level-2 file, not by patching the patched one**,
+which is why the diff against v146 is +10/−0 and nothing else. That is the way to change this
+layout: `add_large_screen_l2.js` stays the single source of truth.
+
+`CACHE` v146 → v147, migration driven in a real browser. `verify_large_screen_l2.js` is 39 checks,
+**23 of which fail on the pre-Level-2 tree**. Confirmed live: `/version.txt` is `v147-LIST-PANE`,
+the served `sw.js` carries `rounds-codex-v147`, and `index.html` is md5-identical to what was pushed.
+
+---
+
 **Two measurements worth keeping.** A grid item with an explicit `grid-column` and no `grid-row` is
 still auto-PLACED: the first cut put `#screen2` before `#screen` in the DOM, which pushed the list
 to row 2 and rendered it 5,224px below the fold while every other assertion passed. And

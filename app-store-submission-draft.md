@@ -524,6 +524,60 @@ Shoot these, in this order — the first two are all most people see:
 **Every screenshot must be the real app** — Guideline 2.3.3. Device-frame them and add the caption
 above the frame; don't paint text over the UI.
 
+### The iPad set — added 2026-09-16, and it is a different app now
+
+Until v146 the iPad set would have been the iPhone set at a larger size, which is exactly the "looks
+phone-only on iPad" problem the line above warns about. **Above 1180px the app is a two-pane layout
+with a left sidebar** (`large-screen-plan.md` Level 2, web v146/v147), so four of these shots show
+something the iPhone set cannot.
+
+**Shoot iPad in LANDSCAPE.** 13" portrait is 1024 px, which is below the breakpoint by design — 72px
+a side is a collision, not a sidebar — so a portrait iPad screenshot is the single-column layout and
+makes the opposite point. 11" landscape is 1194 and 13" landscape is 1366; both are two-pane.
+
+| # | screen | why it is in the iPad set and not the iPhone one |
+|---|---|---|
+| 1 | Library + an open condition | The whole pitch in one frame: the list stays while you read. |
+| 2 | Calculators + Wells' Criteria live | Pick a different score without losing your place. |
+| 3 | Resident specialty picker + Emergency Medicine | Shows the depth of the resident content at a glance. |
+| 4 | A gallery grid | Four columns at 1366 instead of two. |
+| 5–8 | As the iPhone set (viewer, quiz, USMLE item, Clinical Updates) | Full-width there too. |
+
+⚠ **This is NOT true of the shipped binary.** The live App Store build is **1.0(4)**, which predates
+v138 — it has neither the large-screen CSS nor the two panes. **The iPad set and the iPad copy below
+both ride with 1.0.1**, whose payload does carry them. Shooting them against the live build would
+produce screenshots of a layout the user will not get, which is a 2.3.3 problem, not just a
+disappointment.
+
+### The iPad line — drafted 2026-09-16, not submitted
+
+Two fields could carry it, and they have different rules:
+
+**Promotional Text (editable today, no build):** the current 166-character text is clean and
+quotes the right figures. An iPad variant, for use *after* 1.0.1 is live:
+
+> On iPad, the library stays beside what you are reading. 102 illustrated galleries — 1,020 original
+> clinical pages — 1,840 quiz questions, 1,010 USMLE-style items. All offline.
+
+*(175 — five over the 170 limit. Trimmed:)*
+
+> On iPad the library stays open beside what you read. 102 illustrated galleries, 1,020 original
+> clinical pages, 1,840 quiz questions, 1,010 USMLE items. All offline.
+
+*(164. "illustrated" is kept and "USMLE-style" shortened to "USMLE", because "illustrated" is the
+word doing the work — 1,020 original pages is the unusual claim. Counted, not estimated: the first
+draft was 175 and the em dashes are one character each, not three.)*
+
+**Description (only editable when submitting a version):** one sentence, to go in the paragraph that
+already describes the offline behaviour, rather than as a new bullet:
+
+> On iPad the library stays open beside whatever you are reading, so you can move between conditions
+> without losing your place.
+
+**Do not paste either one until 1.0.1 is live.** The Description's timing is forced anyway — it can
+only change with a version submission, which is the same submission that makes the claim true. The
+Promotional Text is the one that *could* be changed early, and must not be.
+
 Two things to avoid shooting: any screen still showing a "Clinical Pending" footer (all fixed, but
 check), and the suicide gallery as a hero image.
 

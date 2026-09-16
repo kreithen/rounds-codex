@@ -35,6 +35,11 @@
  *   9   ONE VISIBLE MODE TOGGLE. detailHTML's .dtop carries one and libHTML's .topbar carries one,
  *       so two-pane puts two identical controls on screen. Two switches wired to the same setting
  *       is worse than a duplicated logo, which is why this one is hidden and the hero is not.
+ *   9b  THE LIST PANE IS A LIST. Measured as the distance from the top of the pane to its first
+ *       card -- the number that decides how many conditions you see without scrolling -- and not as
+ *       "is .hero display:none", which passes if the rule is scoped to the wrong pane and says
+ *       nothing about whether it helped. With the library's hero: 613px of chrome and two cards in
+ *       view. Without it: 467px and three. Both measured, in all three modes.
  *   10  THE RAIL IS OFF IN TWO-PANE and the reading column is still 520. The rail needs 520+360
  *       beside a 340 list, which with the sidebar is 1208px of content -- a desktop, not an iPad.
  *       The check is that the fallback is the PHONE arrangement (display:block, static rail), not
@@ -243,6 +248,32 @@ const ok = (good, what, detail) => {
        'the rail falls back into the narrative flow', `.pad ${det.padDisplay}, .d-rail ${det.railPos}`);
     ok(det.screen2 && Math.abs(det.screen2.w - 520) <= 2,
        'the reading column is still 520px', `${det.screen2 && det.screen2.w}px`);
+
+    /* The list pane earns its height. Measured as the distance from the top of the pane to the top
+       of its first card, and as the number of cards that fit -- not as "is .hero display:none",
+       which would pass if the rule were scoped to the wrong pane, and would say nothing about
+       whether it helped. The threshold is set between two measured numbers rather than chosen:
+       with the hero, 613px of chrome in nursing and medical and 606 in resident, two cards in view
+       in all three; without it, 467/467/460 and three cards. 500 sits between them with room, and
+       the card count is the figure that actually matters to a reader. */
+    const chrome = await page.evaluate(() => {
+      const pane = document.getElementById('screen');
+      const card = pane.querySelector('.card');
+      const hero = pane.querySelector('.hero');
+      const r = pane.getBoundingClientRect();
+      return {
+        toFirstCard: card ? Math.round(card.getBoundingClientRect().top - r.top) : null,
+        heroShown: hero ? getComputedStyle(hero).display !== 'none' : false,
+        cardsInView: [...pane.querySelectorAll('.card')]
+          .filter(c => c.getBoundingClientRect().top < r.bottom).length,
+        paneH: Math.round(r.height),
+      };
+    });
+    ok(!chrome.heroShown && chrome.toFirstCard !== null && chrome.toFirstCard < 500
+       && chrome.cardsInView >= 3,
+       'the list pane is a list, not a masthead',
+       `${chrome.toFirstCard}px of chrome above the first card in a ${chrome.paneH}px pane, `
+       + `${chrome.cardsInView} cards in view, hero ${chrome.heroShown ? 'shown' : 'hidden'}`);
 
     /* 11: the condition swipe is inert in two-pane. Real touch, over CDP. */
     const cdp = await ctx.newCDPSession(page);
