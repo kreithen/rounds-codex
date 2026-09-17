@@ -213,6 +213,44 @@ padding. The rail is a centred column of five with `gap:2px`, so its height goes
 fits an 800px viewport with room. Exactly the shape of the bookmark button in v135 — a few pixels
 short in brand-new layout code that had never been measured.
 
-⚠ **Not applied.** This is another conversation's in-flight work, and editing it while that session
-may still be iterating is the collision risk this file's neighbours warn about. `button.allgal` at
-238×**47** is the same one-pixel story and would go with it.
+### Applied 2026-09-17 — `scripts/fix_large_screen_taps.js`
+
+Re-measured first against `origin/main` at **v147** (`95e02b2`, unchanged since the audit, so the
+other conversation has not pushed over it) and both controls still measured short. Two vertical-
+padding edits, each behind an exact-count guard:
+
+| rule | was | now | measured |
+|---|---|---|---|
+| `.nav button` inside `@media (min-width:1180px)` | `padding:10px 11px` | `14px 11px` | 43 → 51 |
+| `.allgal` (global) | `padding:13px 18px` | `15px 18px` | 47 → 51 |
+
+**15px, not 14px, on `.allgal`.** 14 lands it at 49 and the aim-past-the-floor rule from
+`fix_tap_targets.js` applies here too — a box set near 48 measures 47.x once sub-pixel layout
+rounds against you. `.allgal` is `width:fit-content` with `white-space:nowrap`, so vertical padding
+cannot make it wrap; the wrapping comment inside that rule is about the horizontal axis.
+
+| width | small targets before | after |
+|---|---:|---:|
+| 360×640 | 48 | **47** |
+| 768×1024 | 50 | **49** |
+| 1024×1024 | 50 | **49** |
+| 1280×800 | 94 | **72** |
+
+The rail is worth 22 of that on its own at 1280, because it is five buttons on every view.
+Unlabelled and low contrast stay at 0 everywhere. `audit_app_e2e.js` against the edited tree: 0
+failures, 0 warnings, 0 pageerrors, all 183 conditions clean in all three modes.
+
+### What is still short, measured and not changed
+
+Three classes remain, and none of them is a padding tweak:
+
+- **The mode toggle — `button.n` / `.m` / `.r` at 65×26, 110×26, 71×26.** The largest single
+  remaining finding: 22px short, present on every view at every width, and three of them. It is a
+  segmented control whose height is its design; growing it 22px changes the proportions of the
+  masthead rather than the padding of a button. **This is the one to decide deliberately**, not to
+  fix in passing.
+- **`button.pdfbtn` at 420×45** (gallery), **`div.res-crumb` at 80×30**, **`button.d-share` at
+  76×28**, the drug tabs at 34px, `div.chip` at 38px. Each is 3–18px short and each is a different
+  rule; there is no single edit that covers them.
+- Everything above is a *warning* on Play's report, not a block. Google's own position is that
+  accessibility findings do not gate a release.
