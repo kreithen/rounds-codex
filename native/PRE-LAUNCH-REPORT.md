@@ -250,11 +250,33 @@ from this session.
 
 Three classes remain, and none of them is a padding tweak:
 
-- **The mode toggle — `button.n` / `.m` / `.r` at 65×26, 110×26, 71×26.** The largest single
-  remaining finding: 22px short, present on every view at every width, and three of them. It is a
-  segmented control whose height is its design; growing it 22px changes the proportions of the
-  masthead rather than the padding of a button. **This is the one to decide deliberately**, not to
-  fix in passing.
+- ~~**The mode toggle — `button.n` / `.m` / `.r` at 65×26, 110×26, 71×26.**~~ **FIXED 2026-09-17,
+  `scripts/fix_toggle_tap_area.js`.** The pill is unchanged; the border box is not.
+
+  **The usual advice — an `::after` overlay — would not have worked**, and that is the part worth
+  keeping. An absolutely positioned pseudo-element does not change its host's border box, and the
+  border box is what both `audit_a11y.js` **and the accessibility node WebView hands Android** are
+  computed from. A `::after` makes the control genuinely easier to hit and leaves every automated
+  report still saying 26px: it fixes the thing that matters while appearing not to.
+
+  Instead vertical padding grows the real border box to 48px and an **equal negative vertical
+  margin** gives the height straight back to the parent. `padding-block:18px` serves both variants
+  because the inner line box is 12px in each (26−14 and 24−12, measured); only the margin differs,
+  −11px above 405px and −12px below.
+
+  | width | button box | `.toggle` | `.thumb` | every region hit-tests to its own button |
+  |---|---|---|---|---|
+  | 320 / 360 / 405 | 24 → **48** | 32, unchanged | 24, unchanged | ✅ |
+  | 430 / 768 / 1280 | 26 → **48** | 34, unchanged | 26, unchanged | ✅ |
+
+  Verified by **hit-testing**, not by reading the rule — the point of the change is a region.
+  Serialising the whole `.topbar`'s geometry before and after, the only lines that differ are the
+  three buttons: same x, same width, y from 26/27 → 15, height → 48, growing symmetrically about an
+  unchanged centre of 39. The rendered page differs by 944 / 1,721 pixels and the **control** — the
+  same tree rendered twice — differs by 1,005 / 1,818, so the difference is the animated starfield.
+
+  Small targets: **47/49/49/72 → 41/43/43/66** at the four audit widths, which is exactly three
+  buttons on each of the two views that carry them.
 - **`button.pdfbtn` at 420×45** (gallery), **`div.res-crumb` at 80×30**, **`button.d-share` at
   76×28**, the drug tabs at 34px, `div.chip` at 38px. Each is 3–18px short and each is a different
   rule; there is no single edit that covers them.

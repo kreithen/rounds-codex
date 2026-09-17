@@ -103,28 +103,33 @@ Re-run it on the day you paste.
 
 ## Two findings from doing the tablet pass, neither blocking
 
-### The image viewer does not scale above phone width — measured, not inferred
+### ~~The image viewer does not scale above phone width~~ — FIXED, `scripts/fix_viewer_scale.js`
 
-The viewer's image is pinned to **440×660 CSS px at every viewport wider than a phone**. Measured at
-four sizes against the shipped v147 payload:
+`.vslide` was `width:min(94%,440px)` — **no height term at all**, so a 2:3 page rendered at width ×
+1.5 whatever the viewport was, and the 440px cap never lifted. v138–v147 built a large-screen layout;
+the viewer was not part of it, which left the app's flagship surface the one that did not use the
+extra room.
 
-| viewport | image | result |
+| viewport | before | after |
 |---|---|---|
-| 360×640 phone portrait | 338×508 | fits |
-| **1024×600 7" landscape** | **440×660** | **cropped — 30px lost off the top and 30 off the bottom** |
-| 1280×800 10" landscape | 440×660 | fits, but uses 34% of the width |
-| 800×1280 10" portrait | 440×660 | fits, uses 55% of the width |
+| 360×640 phone | 338×508 | **338×508 — identical to the tenth of a pixel** |
+| 1024×600 7" landscape | 440×660, **cropped 30px top and bottom** | 312×468, complete |
+| 1280×800 10" landscape | 440×660 | 445×668 |
+| 800×1280 10" portrait | 440×660 | **752×1128 — 71% wider** |
 
-The artwork is 1138×1707 natural, so on a 10" tablet it could render at 533×800 and still fit inside
-the viewport. **v138–v147 built a two-pane layout and a side rail for large screens; the viewer was
-not part of that work** — which is reasonable, it just means the app's flagship surface is the one
-that does not use the extra room. On a 7" tablet in landscape it is a genuine defect: part of the
-page cannot be seen.
+The new rule is `min(94%, (100svh − 132px)/1.5, 1024px)`. **The 132px is not arbitrary**: today's
+phone render is width-constrained at 338.4 and sits with 66px of clearance above and below, with
+`.vbot`'s scrim deliberately over the lower edge of the artwork. Writing that as a height term
+reproduces the phone exactly and generalises it. 1024px is the cap because that is the shipped page
+width — past it the browser is upscaling a JPEG.
 
-**This is another conversation's area and it is a design decision** (how large should a page be on a
-tablet?), so it is reported rather than changed. The shape of the fix is a max-height tied to the
-viewport rather than a fixed pixel height. **It is visible in `tablet7/03-viewer.png`** — if you ship
-the 7" set as-is, that panel shows the crop.
+**The 7-inch case getting smaller is the correct answer**, not a regression: a 2:3 page cannot be
+shown larger in a 600px-tall window without losing part of it.
+
+**`svh`, and both forms written.** `.viewer` is `position:fixed;inset:0`, so its real height is the
+visual viewport; on mobile Safari `100vh` is the *large* viewport and exceeds it while the URL bar
+shows, which would compute a width too big and bring the crop straight back. The `vh` form is the
+fallback where `svh` does not parse.
 
 ### The screenshot tool could produce a broken panel and pass every check
 

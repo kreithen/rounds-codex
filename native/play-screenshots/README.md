@@ -14,11 +14,11 @@ screenshots and allows eight per form factor.
 that set — and only that set — has the side rail and the two-pane list that v138–v147 built. `tablet7`
 at 1024 is below it and renders the Level 1 layout. That is the reason to ship a 10" set at all.
 
-⚠ **`tablet7/03-viewer.png` shows a cropped illustration, and that is the app, not the capture.** The
-viewer's image is pinned to 440×660 CSS px at every viewport above phone width, so in a 600px-tall
-landscape viewport 30px is lost off the top and 30 off the bottom. Measured at four viewports; see
-`native/ROAD-TO-PUBLISHED.md`. Decide whether to fix the viewer or drop that one panel from the 7"
-set before entering it.
+**`tablet7/03-viewer.png` used to show a cropped illustration** — the viewer's image was pinned to
+440×660 CSS px at every viewport above phone width, so a 600px-tall landscape viewport lost 30px off
+the top and 30 off the bottom. Fixed in the app (`scripts/fix_viewer_scale.js`), and both tablet sets
+were re-shot from a v149 payload. The 7" panel now shows the whole page; the 10" portrait case is 71%
+wider than it was. See `native/ROAD-TO-PUBLISHED.md` for the four-viewport measurement.
 
 ⚠ **Shoot from an UNSTRIPPED payload.** Build it with `--platform ios` (the two trees are
 byte-identical) or without `--asset-packs`. The Android asset-packs payload removes the full-size
