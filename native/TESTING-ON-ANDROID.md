@@ -119,7 +119,99 @@ from the 12-testers-for-14-days rule that binds personal accounts.
 
 ---
 
-## No Android phone? You are not blocked
+## No Android phone? The exact steps
+
+Three routes, in the order they become available. **You never need to buy or borrow a phone**, and
+route C runs on *physical* hardware anyway — Google's, not yours.
+
+### A. Today, five minutes, nothing installed — Chrome on the Mac
+
+Open `https://rounds-codex.netlify.app` in Chrome and drag the window narrow, or press **⌥⌘I** →
+click the **phone/tablet icon** at the top-left of DevTools → pick **Pixel 7** from the dropdown.
+
+**It is the same rendering engine, so this is not a mock-up** — it is what a headless run in this
+session does, with your eyes on it. It confirms every visual change including v149's viewer sizing
+(set the device to a tablet and rotate to landscape) and the mode toggle.
+
+**What it is not:** a phone. No real touch, no system bars, no WebView version, no app shell. Good
+for *looking*, not for *believing*.
+
+### B. The Android Studio emulator — a real Android OS, no hardware
+
+This is the main answer, and **it is useful before §4.0**, because you can browse the live site
+inside it in a real Android Chrome before any app exists.
+
+1. Download **Android Studio** from `developer.android.com/studio`. Take the **Apple silicon**
+   build. Budget **15–20 GB** of disk for the app, the SDK and one system image.
+2. Open it and let the setup wizard run. It downloads the SDK and platform tools and asks you to
+   accept the licences — accept all of them, or Gradle will stop later and the error will not say
+   why.
+3. **Tools → Device Manager** (or the phone icon in the right-hand sidebar) → **+** →
+   **Create Virtual Device**.
+4. **Phone → Pixel 8** (any recent Pixel is fine) → **Next**.
+5. On the system image step, pick an image and click the **download arrow** beside it. Two things
+   matter here:
+   - **Take an `arm64-v8a` image on Apple silicon.** An x86 image runs under emulation and is
+     painfully slow; the arm image runs at native speed.
+   - **Take an image labelled "Google Play", not just "Google APIs".** That one has the Play Store
+     on it, which is what makes route C below work without a phone. It is only offered on Pixel
+     profiles, which is why step 4 says Pixel.
+6. **Finish**, then press **▶** in the Device Manager to boot it. First boot takes a few minutes.
+7. **Do this immediately, before any app exists:** open **Chrome inside the emulator** and go to
+   `https://rounds-codex.netlify.app`. That is a real Android Chrome on a real Android OS, and it is
+   the closest thing to a phone you can have today.
+8. After §4.0 and the Android platform: **Run** from Android Studio with the emulator selected. Now
+   you have the shell, the launcher icon, the splash, the gesture bar and the insets.
+   - **Airplane Mode for the offline test:** swipe down twice from the top of the emulator screen for
+     the quick-settings shade and tap the aeroplane. (The emulator's own "Extended controls" panel
+     can also drop the cellular data, but the shade is the same thing a user does.)
+   - **Debug with `chrome://inspect`** in desktop Chrome with the emulator running — the runbook's §5
+     already leans on this and it works the same for an emulator as for a phone.
+
+⚠ **Menu names drift between Android Studio releases**, and `developer.android.com` is blocked by
+this session's proxy so the wording above was not re-read today. The shape does not change: Device
+Manager, create a virtual device, pick a Pixel, download a system image, press play.
+
+⚠ **What an emulator still cannot tell you:** how a particular phone's *WebView version* behaves —
+it ships whatever the system image has — or anything about real-world network, battery or thermal
+behaviour. For this app those matter less than usual, because the content is packaged rather than
+fetched.
+
+### C. Play's pre-launch report — physical devices, free, automatic
+
+Upload the `.aab` to **Internal testing** and Play runs your app on a set of **real, physical**
+Google-hosted phones and hands back screenshots from each, a video of the crawl, crash logs,
+performance data and an accessibility summary. No hardware, no configuration, and it happens on
+every upload to any track.
+
+Two things make this the most valuable of the three:
+
+- It runs on **several different devices at once**, which no single phone you could buy would do.
+- With a **Google Play** system image (step 5 above) you can sign the emulator into the Play Store
+  with your tester account and install from the internal-test link — so even Level 4, the real Play
+  delivery path with real asset packs, works with no phone at all.
+
+⚠ **Read `native/PRE-LAUNCH-REPORT.md` §1 before the first upload.** The Robo crawler meets the
+medical disclaimer first, and it is *not* safe to assume it finds the accept button — a Capacitor app
+is a single WebView node in the view hierarchy. If it stalls there the report shows the app never
+leaving its first screen, which looks alarming and hides anything real behind it. That is why the
+first upload goes to internal testing and gets read before anything is promoted.
+
+---
+
+## The short version
+
+1. **Now:** Chrome on the Mac, DevTools device mode. Five minutes, confirms v149.
+2. **This week, independent of §4.0:** install Android Studio, make a Pixel emulator with a **Google
+   Play arm64** image, browse the live site in it.
+3. **After §4.0:** Run the app to that emulator. Shell, icons, insets.
+4. **The size experiment:** bundle + `bundletool`, per Level 3 above.
+5. **Before production:** upload to internal testing, install to the emulator from the Play Store,
+   and read the pre-launch report.
+
+---
+
+## Why none of this blocks you
 
 **Play runs your app on real devices for you, free, on every upload.** The **pre-launch report** runs
 a Robo crawl on a set of physical Google-hosted phones and returns screenshots, a video of the
