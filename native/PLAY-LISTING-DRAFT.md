@@ -3,6 +3,12 @@
 **Written 2026-09-09.** Every field drafted to Play's limit, plus the Data safety, Health apps and
 content-rating answers as a filled-in worksheet. `HANDOFF-android-app.md` §4.6.
 
+> **This file is the COPY. `native/PLAY-CONSOLE-ANSWER-PACK.md` is the CHECKLIST** — the same forms
+> in the order the Console walks you through them, plus the eight declarations this file does not
+> mention at all (App access, Ads, Target audience and content, News, COVID-19, Government,
+> Financial features, and the release-side forms including the App Links fingerprint ordering trap).
+> Start there; it points back here for every field whose wording lives on this page.
+
 **Counts derived from shipped content today** with
 `node scripts/read_shipped_counts.js ../rounds-codex-app` against v133. Re-run it before pasting
 anything: every earlier document's numbers went stale, including the handoff's, which said

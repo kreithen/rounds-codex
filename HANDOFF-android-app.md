@@ -80,6 +80,7 @@ per line (the runbook records why: `cap init`'s interactive prompt swallowed a p
 | Grandfathering | **DECIDED — option D, both platforms.** `native/GRANDFATHERING-android.md`. Nothing needed in v1; off the critical path. |
 | Live app | **v134 shipped** (`e278e9d`) — the in-app footer now names the LLC. |
 | New guards | `verify_routes.js` (five-places route rule), `make_assetlinks.js`, `native/android/intent-filters.xml`, label-pairing in `verify_listing_counts.js`. |
+| New docs 2026-09-17 | **`native/PLAY-CONSOLE-ANSWER-PACK.md`** — every Console form answered in Console order, covering the eight `PLAY-LISTING-DRAFT.md` does not mention (App access, Ads, Target audience, News, COVID, Government, Financial, and the release-side forms). **`native/MAC-PUSH-NATIVE-REPO.md`** — §4.0 as a copy-pasteable command list. |
 | Still blocking me | **§4.0 — the Capacitor project is only on the Mac.** Unchanged, and now the *only* thing between here and real Android code: nothing about the account blocks anything any more. |
 | Still yours | the duplicate SPF record at GoDaddy (§6c), and how the landing site deploys — it is in no repo this session can see. |
 
@@ -147,6 +148,10 @@ The cost is the size problem below, which the TWA would have dodged. It is worth
 ## 4. The work, in order
 
 ### 4.0 First — put the Capacitor project under version control  *(Mac, 20 minutes; blocks everything)*
+
+> **Handed to the physician as `native/MAC-PUSH-NATIVE-REPO.md` on 2026-09-17** — one command per
+> line, with the `.gitignore` written before the first `git add` and a staged-file grep that must
+> print `CLEAN` before the push. Still waiting on the Mac.
 
 A session cannot add a platform to a project it cannot see. **Create a private repo
 `kreithen/rounds-codex-native`** and push `~/rounds-codex-ios` to it, with `www/`, `node_modules/`,
