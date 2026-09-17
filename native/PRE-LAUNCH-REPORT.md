@@ -213,7 +213,7 @@ padding. The rail is a centred column of five with `gap:2px`, so its height goes
 fits an 800px viewport with room. Exactly the shape of the bookmark button in v135 — a few pixels
 short in brand-new layout code that had never been measured.
 
-### Applied 2026-09-17 — `scripts/fix_large_screen_taps.js`
+### Applied 2026-09-17 — `scripts/fix_large_screen_taps.js`, shipped live as **v148**
 
 Re-measured first against `origin/main` at **v147** (`95e02b2`, unchanged since the audit, so the
 other conversation has not pushed over it) and both controls still measured short. Two vertical-
@@ -238,7 +238,13 @@ cannot make it wrap; the wrapping comment inside that rule is about the horizont
 
 The rail is worth 22 of that on its own at 1280, because it is five buttons on every view.
 Unlabelled and low contrast stay at 0 everywhere. `audit_app_e2e.js` against the edited tree: 0
-failures, 0 warnings, 0 pageerrors, all 183 conditions clean in all three modes.
+failures, 0 warnings, 0 pageerrors, all 183 conditions clean in all three modes. `verify_sw.js`,
+`verify_routes.js` (all five route sources agree on `c g r s u x`) and the font audit also pass.
+
+**Shipped as v148** (`382ce83`), `sw.js` `CACHE` bumped `rounds-codex-v147` → `v148`, `version.txt`
+stamped `2026-09-17T15:47:42Z  v148-TAP-TARGETS`. Proven on the remote by
+`git show origin/main:<path>` for all three, since the live host is behind the agent proxy's 403
+from this session.
 
 ### What is still short, measured and not changed
 

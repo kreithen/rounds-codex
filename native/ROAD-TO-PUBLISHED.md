@@ -146,5 +146,6 @@ the test that makes it a guard rather than decoration.
   carries the same "25 specialties" error the launch email did.
 - The Console's unread notifications.
 - The mode toggle at 26px tall — the largest remaining tap-target finding, three controls on every
-  view. A design decision, not a padding tweak (`native/PRE-LAUNCH-REPORT.md` §5).
+  view. A design decision, not a padding tweak (`native/PRE-LAUNCH-REPORT.md` §5). The two that
+  *were* padding tweaks shipped live as **v148** on 2026-09-17.
 - The Apple Individual → Organization conversion (`native/apple-org-switch.md`, D-U-N-S filled in).
