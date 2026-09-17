@@ -175,3 +175,44 @@ inlined with the rest of `audio_player.js`. Dead, so it is deliberately left alo
 fake-fixed; the authoritative source is `scripts/audio_player.js` in the build repo. v135 patched
 only the live copy, so the two now differ. Earned again, from CLAUDE.md: **grep for the other
 copies.**
+
+
+---
+
+## 5. Re-audited at four widths against v147 (2026-09-17)
+
+v138–v147, shipped from another conversation, added a layout above 720px, a **side rail above
+1180px** and a two-pane list. None of it existed when §2 was measured at 360×640 only, and **Play's
+pre-launch report crawls tablets as well as phones**, so those layouts were unmeasured surface in
+exactly the place the report looks. `audit_a11y.js` now takes `--widths` and defaults to
+`360,768,1024,1280`.
+
+| width | unlabelled | under 48dp | low contrast |
+|---|---|---|---|
+| 360×640 | 0 | 48 | **0** |
+| 768×1024 | 0 | 50 | **0** |
+| 1024×1024 | 0 | 50 | **0** |
+| 1280×800 | 0 | **94** | **0** |
+
+**Contrast and labelling hold everywhere** — the v136 `--muted-2` change and the aria-labels carry
+across every new layout, which was the main thing worth confirming.
+
+### The 1280 jump is one new rule
+
+At 1280 the condition view goes from 37 interactive elements to **247** — the two-pane list brings
+the whole condition list alongside — and sub-48dp goes 18 → 47. The dominant finding is the **side
+rail's nav buttons at 146×43**, five pixels short, from `@media (min-width:1180px)`:
+
+```css
+.nav button{flex:0 0 auto;flex-direction:row;justify-content:flex-start;align-items:center;
+  gap:10px;padding:10px 11px;text-align:left;font-size:12.5px;line-height:1.25;}
+```
+
+`padding:10px 11px` → `padding:14px 11px` takes them to ~50px: the icon (~22px) plus 28px of
+padding. The rail is a centred column of five with `gap:2px`, so its height goes 223 → 258px, which
+fits an 800px viewport with room. Exactly the shape of the bookmark button in v135 — a few pixels
+short in brand-new layout code that had never been measured.
+
+⚠ **Not applied.** This is another conversation's in-flight work, and editing it while that session
+may still be iterating is the collision risk this file's neighbours warn about. `button.allgal` at
+238×**47** is the same one-pixel story and would go with it.

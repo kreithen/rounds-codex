@@ -41,9 +41,15 @@ const PW = '/opt/node22/lib/node_modules/playwright/node_modules/playwright-core
 const { chromium } = require(PW);
 const { seedAuth } = require(path.join(__dirname, 'rc_test_auth.js'));
 
-/* 360x640 is the Android baseline Play's own screenshot spec implies and the narrowest common
-   phone; a target that passes here passes on everything larger. */
-const VIEWPORT = { width: 360, height: 640 };
+/* 360x640 is the Android baseline Play's screenshot spec implies and the narrowest common phone.
+   It is NO LONGER SUFFICIENT on its own: v138-v147 added a layout above 468px, a side rail above
+   1024px and a two-pane list, none of which exist at 360 -- so auditing only the phone width now
+   leaves the tablet layouts unmeasured, and Play's pre-launch report crawls tablets too.
+   --widths takes a comma list; the default covers phone, small tablet, large tablet and desktop. */
+const wi = process.argv.indexOf('--widths');
+const WIDTHS = (wi > -1 ? process.argv[wi + 1] : '360,768,1024,1280')
+  .split(',').map(n => Number(n.trim())).filter(Boolean);
+const HEIGHT_FOR = w => (w < 500 ? 640 : w < 1100 ? 1024 : 800);
 
 const PAGE_SCRIPT = () => {
   const MIN_TAP = 48;          // dp, Android's documented minimum
@@ -138,11 +144,8 @@ const PAGE_SCRIPT = () => {
   return out;
 };
 
-(async () => {
-  const sim = spawn('node', [path.join(__dirname, 'netlifysim.js'), ROOT, String(PORT)],
-    { stdio: 'ignore' });
-  await new Promise(r => setTimeout(r, 1500));
-  const b = await chromium.launch({ executablePath: CHROME, args: ['--no-sandbox'] });
+async function auditAt(b, width) {
+  const VIEWPORT = { width, height: HEIGHT_FOR(width) };
   const ctx = await b.newContext({ viewport: VIEWPORT, deviceScaleFactor: 1 });
   await seedAuth(ctx);
   const p = await ctx.newPage();
@@ -174,11 +177,32 @@ const PAGE_SCRIPT = () => {
       }
     } catch (e) { report[label] = { error: e.message.split('\n')[0] }; }
   }
-  await b.close(); sim.kill();
+  await ctx.close();
+  return { report, totals, errs, VIEWPORT };
+}
 
-  if (JSON_OUT) { console.log(JSON.stringify(report, null, 2)); }
-  else {
-    console.log(`viewport ${VIEWPORT.width}x${VIEWPORT.height}, Android tap floor 48dp\n`);
+(async () => {
+  const sim = spawn('node', [path.join(__dirname, 'netlifysim.js'), ROOT, String(PORT)],
+    { stdio: 'ignore' });
+  await new Promise(r => setTimeout(r, 1500));
+  const b = await chromium.launch({ executablePath: CHROME, args: ['--no-sandbox'] });
+  const all = {};
+  let worst = 0;
+  for (const w of WIDTHS) {
+    const { report, totals, errs, VIEWPORT } = await auditAt(b, w);
+    all[w] = report;
+    if (JSON_OUT) continue;
+    console.log(`\n=== ${VIEWPORT.width}x${VIEWPORT.height} ===`);
+    render(report, totals, errs);
+    worst += totals.tap + totals.contrast;
+  }
+  await b.close(); sim.kill();
+  if (JSON_OUT) console.log(JSON.stringify(all, null, 2));
+  if (GATE && worst) process.exit(1);
+})();
+
+function render(report, totals, errs) {
+  {
     for (const [v, r] of Object.entries(report)) {
       if (r.error) { console.log(`${v.padEnd(12)} ERROR ${r.error}`); continue; }
       console.log(`${v.padEnd(12)} ${String(r.interactive).padStart(3)} interactive · ` +
@@ -194,5 +218,4 @@ const PAGE_SCRIPT = () => {
       `${totals.contrast} low contrast · ${totals.unmeasured} not measurable (gradient/image bg)`);
     if (errs.length) console.log(`page errors: ${errs.length}`);
   }
-  if (GATE && (totals.tap || totals.contrast)) process.exit(1);
-})();
+}
