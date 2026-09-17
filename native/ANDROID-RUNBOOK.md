@@ -535,9 +535,18 @@ change, no plugin and no Java.**
 ⚠ **That is a reading of the source, not a result. Nobody has run it, and a container cannot.**
 This is the experiment:
 
-1. Build and install on the emulator.
+1. Build and install on the emulator — **from the BUNDLE, not `installDebug`.** See below.
 2. **Airplane Mode.**
 3. Open a Cardiac gallery and open a full-size page. Then play a recording.
+
+⚠ **`installDebug` and Android Studio's plain Run install the base module ONLY.** Install-time asset
+packs ship as *split APKs*, and a base-only install does not carry the splits — so the galleries
+would 404 and it would look exactly like option A failing, when in fact it had never been installed.
+That is the wrong conclusion drawn from the right observation, and it would cost a day. Build the
+bundle and install the APK set (`bundletool build-apks --local-testing` then `install-apks`), or set
+Run → Edit Configurations → **Deploy: "APK from app bundle"**. Confirm the exact flags against
+Google's current docs — `developer.android.com` is blocked by this session's proxy, so they are from
+memory; the shape of the trap is not in doubt. `native/TESTING-ON-ANDROID.md` has the four levels.
 
 If it renders, option A is settled and the other ten packs are already built. If it 404s, stop and
 take B — do not spend a day on it. **Either way, write the answer into
