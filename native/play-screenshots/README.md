@@ -1,17 +1,45 @@
-# Play store screenshots — 1080×1920
+# Play store screenshots — phone, 7" tablet and 10" tablet
 
-**Generated 2026-09-09 by `scripts/shoot_play_screenshots.js` from the v133 payload.** Real captures
-of the real app, at exactly Play's phone spec. Eight panels; Play requires at least four and allows
-eight.
+**Re-shot 2026-09-17 by `scripts/shoot_play_screenshots.js` from the v147 payload**, and extended to
+tablets. Real captures of the real app. Eight panels each; Play requires at least four phone
+screenshots and allows eight per form factor.
+
+| set | folder | size | CSS viewport |
+|---|---|---|---|
+| phone | this folder | 1080×1920 | 360×640 @3 |
+| 7" tablet | `tablet7/` | 2048×1200 | 1024×600 @2, landscape |
+| 10" tablet | `tablet10/` | 2560×1600 | 1280×800 @2, landscape |
+
+**Only `tablet10` shows the large-screen layout.** 1280 is above the app's own 1180px breakpoint, so
+that set — and only that set — has the side rail and the two-pane list that v138–v147 built. `tablet7`
+at 1024 is below it and renders the Level 1 layout. That is the reason to ship a 10" set at all.
+
+⚠ **`tablet7/03-viewer.png` shows a cropped illustration, and that is the app, not the capture.** The
+viewer's image is pinned to 440×660 CSS px at every viewport above phone width, so in a 600px-tall
+landscape viewport 30px is lost off the top and 30 off the bottom. Measured at four viewports; see
+`native/ROAD-TO-PUBLISHED.md`. Decide whether to fix the viewer or drop that one panel from the 7"
+set before entering it.
+
+⚠ **Shoot from an UNSTRIPPED payload.** Build it with `--platform ios` (the two trees are
+byte-identical) or without `--asset-packs`. The Android asset-packs payload removes the full-size
+artwork by design, and the first tablet run produced a 2560×1600 broken-image panel that passed every
+dimension check. The tool now fails on any image with `naturalWidth === 0` and names it.
 
 **Why these could be made here when the App Store's could not.** Android WebView *is* Chromium, so a
 headless capture in this container is the same renderer that runs on the phone. The iOS panels had
 to come off a simulator because WebKit is a different engine and nothing here can run it.
 
-**The viewport is the trick.** Play wants 1080×1920. Rendering at a 1080×1920 *CSS* viewport would
-be wrong — `.app` is max-width 468px, so the app would sit as a narrow column in an empty field.
-These are rendered at **360×640 CSS with deviceScaleFactor 3**, a real Android logical phone size
-inside the 320–430 range this project measures at, which outputs exactly 1080×1920 device pixels.
+**The viewport is the trick.** Play wants 1080×1920 for a phone. Rendering at a 1080×1920 *CSS*
+viewport would be wrong — `.app` is max-width 468px, so the app would sit as a narrow column in an
+empty field. These are rendered at **360×640 CSS with deviceScaleFactor 3**, a real Android logical
+phone size inside the 320–430 range this project measures at, which outputs exactly 1080×1920 device
+pixels. The tablet presets work the same way; `isMobile` is false on them, because with it true
+Chromium lays the page out as a phone at any width and all three sets come out identical.
+
+**Shot 6 has a wide variant.** Above 1180px, `root('library')` alone leaves the right pane showing
+"Choose a condition to read it here" — 45% of a store panel given to an empty state. The wide path
+opens a condition to fill it, and uses Nursing mode with `dvt` rather than Medical with `chf`, because
+the first attempt came out as a near-duplicate of shot 1 differing only by a bookmark star.
 
 | # | file | caption |
 |---|---|---|
