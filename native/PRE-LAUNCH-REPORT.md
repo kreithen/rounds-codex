@@ -276,7 +276,7 @@ Three classes remain, and none of them is a padding tweak:
   same tree rendered twice — differs by 1,005 / 1,818, so the difference is the animated starfield.
 
   Small targets: **47/49/49/72 → 41/43/43/66** at the four audit widths, which is exactly three
-  buttons on each of the two views that carry them.
+  buttons on each of the two views that carry them. **Shipped live as v149.**
 - **`button.pdfbtn` at 420×45** (gallery), **`div.res-crumb` at 80×30**, **`button.d-share` at
   76×28**, the drug tabs at 34px, `div.chip` at 38px. Each is 3–18px short and each is a different
   rule; there is no single edit that covers them.

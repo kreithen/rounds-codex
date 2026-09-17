@@ -103,7 +103,7 @@ Re-run it on the day you paste.
 
 ## Two findings from doing the tablet pass, neither blocking
 
-### ~~The image viewer does not scale above phone width~~ — FIXED, `scripts/fix_viewer_scale.js`
+### ~~The image viewer does not scale above phone width~~ — FIXED, shipped live as **v149**
 
 `.vslide` was `width:min(94%,440px)` — **no height term at all**, so a 2:3 page rendered at width ×
 1.5 whatever the viewport was, and the 440px cap never lifted. v138–v147 built a large-screen layout;
