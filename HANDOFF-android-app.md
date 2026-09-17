@@ -68,21 +68,24 @@ per line (the runbook records why: `cap init`'s interactive prompt swallowed a p
 
 ---
 
-## 1b. What happened on 2026-09-14 — read this before §2, which is older
+## 1b. What happened on 2026-09-14 and 2026-09-17 — read this before §2, which is older
 
 | | |
 |---|---|
 | Play account | **Created.** Organization, `Rounds Codex`, ID `4703111188826193257`, owner `admin@roundscodex.com`, contact + public email `teacher@roundscodex.com` (both verified). §6b. |
 | D-U-N-S | **`148718973`**, via Apple's lookup — D&B's own is Europe-only. §1c. |
 | Legal entity | **ROUNDS CODEX, LLC**, Florida `L26000432836`. **Not "Inc."**, which every document said for three weeks. §1b-3. |
-| Verification | website ✅ · identity awaiting Google · phone locked until identity clears · `Create app` locked. |
+| Verification | **ALL THREE ✅ as of 2026-09-17** — website, identity, and both phone numbers. The *"Finish setting up your developer account"* banner is gone, replaced by *"All of your apps have been successfully registered to meet Android developer verification requirements."* **`Create app` is unlocked.** §6b. |
+| Draft app | **Exists.** `Rounds Codex: Clinical Atlas`, package **`com.roundscodex.app`** — the same name `native/android/intent-filters.xml` and `make_assetlinks.js` already assume. Status Draft, 0 installed audience. **Check it is set to Free**: free→paid is irreversible once published, and under option D the subscription is an in-app product, not a paid app. |
 | Grandfathering | **DECIDED — option D, both platforms.** `native/GRANDFATHERING-android.md`. Nothing needed in v1; off the critical path. |
 | Live app | **v134 shipped** (`e278e9d`) — the in-app footer now names the LLC. |
 | New guards | `verify_routes.js` (five-places route rule), `make_assetlinks.js`, `native/android/intent-filters.xml`, label-pairing in `verify_listing_counts.js`. |
-| Still blocking me | **§4.0 — the Capacitor project is only on the Mac.** Unchanged, and now the single biggest unblock. |
+| Still blocking me | **§4.0 — the Capacitor project is only on the Mac.** Unchanged, and now the *only* thing between here and real Android code: nothing about the account blocks anything any more. |
 | Still yours | the duplicate SPF record at GoDaddy (§6c), and how the landing site deploys — it is in no repo this session can see. |
 
-⚠ **§4.1 (the Play account) is now DONE and is no longer the schedule's critical path.** §4.0 is.
+⚠ **§4.1 (the Play account) is DONE end to end — created, verified, and with a Draft app registered.**
+§4.0 is the whole critical path now. Also worth a glance, neither blocking: the Console's **unread
+notifications**, and the Draft's price tier.
 
 ## 2. State, verified 2026-09-09
 

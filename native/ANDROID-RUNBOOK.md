@@ -583,7 +583,24 @@ packs maximum** are confirmed; the handoff's figures of 1 GB combined for instal
 proxy). 742 MB is comfortably under any of them, and **Play Console computes and displays the real
 compressed size at upload**, which is the only number that decides anything.
 
-## 6b. The account exists — verification, and which document Google wants
+## 6b. The account exists and is FULLY VERIFIED — `Create app` is unlocked
+
+> **Settled 2026-09-17.** All three verifications carry green ticks on the Developer account
+> page: identity, organization website, and **both phone numbers** — the last one, which was
+> locked behind the first two. The *"Finish setting up your developer account"* banner is gone
+> from the Console home, replaced by *"All of your apps have been successfully registered to meet
+> Android developer verification requirements."* **`Create app` is active, and an app already
+> exists**: `Rounds Codex: Clinical Atlas`, package **`com.roundscodex.app`**, status **Draft**,
+> 0 installed audience. That package name is the one already written into
+> `native/android/intent-filters.xml` and assumed by `scripts/make_assetlinks.js`, so nothing
+> downstream needs changing.
+> **Nothing about the account blocks the build any more.** The one remaining blocker on real
+> Android code is §4.0 — the Capacitor project exists only on the physician's Mac and has never
+> been pushed to a repo this session can reach.
+> Two things still worth a look, neither blocking: the Console's **unread notifications**, and
+> whether the Draft is set to **Free** (free→paid is irreversible once published; Free is the
+> correct setting under the grandfathering decision, where the subscription is an in-app product
+> rather than a paid app).
 
 **Play Console organization account created 2026-09-11.** Developer name **Rounds Codex**,
 account ID **`4703111188826193257`**, owner `admin@roundscodex.com`. Registration answers used:
@@ -593,8 +610,9 @@ app category **Telehealth or medical apps** only.
 **Contact details as set, confirmed on the Developer account page 2026-09-11:** account owner
 `admin@roundscodex.com` (Joshua Kreithen); contact AND public developer email both
 **`teacher@roundscodex.com`**, green-ticked as verified — which settles the open question of whether
-that mailbox receives mail; both phone numbers `+19413455233`, not yet verified. Organization shows
-as **ROUNDS CODEX, LLC**, website `https://roundscodex.com/`, no associated developer accounts.
+that mailbox receives mail; both phone numbers `+19413455233`, **verified 2026-09-17**. Organization
+shows as **ROUNDS CODEX, LLC**, 1 S School Ave Ste 800, Sarasota 34237-6045, website
+`https://roundscodex.com/`, no associated developer accounts.
 
 ⚠ The public developer email and Google's private contact address are the same mailbox. Deliberate
 and fine, but it means the address published on the store listing — and therefore scraped — is also
@@ -603,17 +621,20 @@ will be removed unless you act within 48 hours"). Real enforcement always appear
 status** in the Console; open the Console directly rather than following a link in mail. The public
 address can be changed later independently of the contact one.
 
-Three verifications gate `Create app`, and the third is gated on the first two:
+Three verifications gated `Create app`, and the third was gated on the first two. **All three are
+done** — kept below because the order and the document traps are what a repeat of this would hit:
 
-1. **Verify your identity** — a government ID for the individual, not the company. Google's warning
-   (*"Do not edit or manipulate documents"*) includes the helpful edits: cropping to the card,
-   de-skewing, brightening, or running it through a scanner app. Photograph it flat and upload the
-   original.
+1. **Verify your identity** — ✅ **DONE.** A government ID for the individual, not the company,
+   plus the organization document. Google's warning (*"Do not edit or manipulate documents"*)
+   includes the helpful edits: cropping to the card, de-skewing, brightening, or running it through
+   a scanner app. Photograph it flat and upload the original. **The Articles of Organization PDF was
+   accepted** — the fallback Certificate of Status below was never needed.
 2. **Verify your organization's website** — `roundscodex.com`. ✅ **DONE 2026-09-11**, via a
    Search Console **Domain** property. Google detected GoDaddy and wrote the TXT record itself
    over an OAuth grant to the GoDaddy account — no hand-copied record, no Netlify involvement.
    See §6c: the first two attempts failed because the zone is not where the site is served from.
-3. **Verify your phone numbers** — locked until 1 and 2 clear.
+3. **Verify your phone numbers** — ✅ **DONE 2026-09-17.** Locked until 1 and 2 cleared, and it
+   unlocked on its own once they did; there was nothing to chase.
 
 ⚠ **The organization document: a Sunbiz search-result screenshot is NOT accepted.** Google's
 category is *"a state-issued certificate of business registration or incorporation"*, and the
@@ -631,11 +652,11 @@ CP 575 confirming an EIN) is not available. No EIN is needed to register or to p
 One **will** be needed for business banking and for the **Paid Applications agreement** when the
 subscription lands; it is free and issued instantly by the IRS.
 
-⚠ **The live site still names the wrong entity at the time of writing.** `rounds-codex-app` is on
-v133, whose footer carries `© 2026 Rounds Codex, Inc.` — `scripts/stamp_version.js` was corrected
-to `LLC` on 2026-09-11 but nothing has been deployed since. Google inspects the organization's
-website during verification, so **fix this before submitting step 2** if there is time: re-run the
-stamper and ship a v134. Deploying touches the live repo, so it needs the physician's go-ahead.
+**The live site's entity name was fixed before verification was submitted.** It was on v133 with
+`© 2026 Rounds Codex, Inc.` in the footer; `scripts/stamp_version.js` was corrected to `LLC` and
+**v134 shipped 2026-09-11**. Worth recording because Google inspects the organization's website
+during verification, and the name on the site disagreeing with the name on the filing is exactly
+what that check is for.
 
 ## 6c. DNS for roundscodex.com is at GODADDY, and there is a live SPF defect
 

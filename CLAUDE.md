@@ -1177,14 +1177,20 @@ hold your email address" would contradict a "Data Not Collected" privacy label o
 
 ## The native Android app — ITS OWN CONVERSATION (2026-09-09, updated 2026-09-14)
 
-> **Where it stands after 2026-09-14.** The **Google Play organization account exists** —
-> developer name `Rounds Codex`, account ID `4703111188826193257`, owner `admin@roundscodex.com`,
-> organization **ROUNDS CODEX, LLC**, D-U-N-S **`148718973`**. Identity/website/phone verification:
-> website ✅ (Search Console domain property, GoDaddy), identity awaiting Google's review of the
-> Articles of Organization, phone locked until identity clears. `Create app` unlocks after that.
-> Everything a session can build is built; the remaining blocker on real Android code is still
-> §4.0 — the Capacitor project is only on the physician's Mac.
-> **Grandfathering is DECIDED (option D, both platforms)** — see the section below. New this day:
+> **Where it stands after 2026-09-17.** The **Google Play organization account is created and FULLY
+> VERIFIED** — developer name `Rounds Codex`, account ID `4703111188826193257`, owner
+> `admin@roundscodex.com`, organization **ROUNDS CODEX, LLC**, D-U-N-S **`148718973`**.
+> Website ✅ (Search Console domain property, GoDaddy), identity ✅ (the Articles of Organization PDF
+> was accepted — the $5 Certificate of Status fallback was never needed), **both phone numbers ✅**,
+> which unlocked on their own once the first two cleared. **`Create app` is active and a Draft app
+> already exists**: `Rounds Codex: Clinical Atlas`, package **`com.roundscodex.app`** — the same name
+> `native/android/intent-filters.xml` and `scripts/make_assetlinks.js` already assume.
+> **Nothing about the account blocks anything now.** The one remaining blocker on real Android code
+> is §4.0 — the Capacitor project is only on the physician's Mac.
+> Two non-blocking follow-ups: the Console's unread notifications, and confirming the Draft is set to
+> **Free** (free→paid is irreversible once published, and under option D the subscription is an
+> in-app product rather than a paid app).
+> **Grandfathering is DECIDED (option D, both platforms)** — see the section below. Built 2026-09-14:
 > `scripts/verify_routes.js` (the five-places route invariant),
 > `native/android/intent-filters.xml`, `scripts/make_assetlinks.js`.
 
