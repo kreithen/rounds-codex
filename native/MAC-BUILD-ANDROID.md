@@ -16,15 +16,23 @@ its own `cd`.
 - **Android Studio**, current release, with its bundled JDK. Accept every SDK licence on first run
   — skip one and Gradle stops later with an error that does not say why.
 - **Node 22 or newer.** Not optional: `@capacitor/cli@8` declares `engines.node >= 22`.
-- Three repos. The native project is the new one; the other two are the build scripts and the
-  content.
+- Three repos, and **the native one you already have.**
+
+⚠ **`~/rounds-codex-ios` IS the native repo.** It is where the project has always lived and where
+`git remote add origin` pointed it on 2026-09-18; the GitHub repo is called `rounds-codex-native`
+but the local folder keeps its original name. **Do not clone `rounds-codex-native` — you would end
+up with two copies and edit the wrong one.** Every path below says `~/rounds-codex-ios` for that
+reason.
 
 ```sh
 cd ~
 ```
 ```sh
-git clone https://github.com/kreithen/rounds-codex-native.git
+ls -d rounds-codex rounds-codex-app rounds-codex-ios
 ```
+
+Clone whichever of the first two that lists as missing:
+
 ```sh
 git clone https://github.com/kreithen/rounds-codex.git
 ```
@@ -46,7 +54,7 @@ git checkout claude/native-android-app-fzzjss
 ## 1. Refresh the project and its dependencies
 
 ```sh
-cd ~/rounds-codex-native
+cd ~/rounds-codex-ios
 ```
 ```sh
 git pull
@@ -72,10 +80,10 @@ Expect **84.3 MB**, with the line `ok  84.3 MB, with 115.7 MB of headroom.` It r
 Android without `--asset-packs`, because 826 MB does not fit Play's 200 MB base-module cap.
 
 ```sh
-rm -rf ~/rounds-codex-native/www
+rm -rf ~/rounds-codex-ios/www
 ```
 ```sh
-cp -r /tmp/rc-payload ~/rounds-codex-native/www
+cp -r /tmp/rc-payload ~/rounds-codex-ios/www
 ```
 
 ---
@@ -97,7 +105,7 @@ tool does: base + packs must equal everything the app can request. Wrong one way
 twice; wrong the other and a gallery is silently missing on a device, offline, with no error.
 
 ```sh
-for d in /tmp/rc-packs/rc-*; do cp -r "$d/src" ~/rounds-codex-native/android/"$(basename $d)"/; done
+for d in /tmp/rc-packs/rc-*; do cp -r "$d/src" ~/rounds-codex-ios/android/"$(basename $d)"/; done
 ```
 
 The Gradle wiring for these is already committed — `settings.gradle` includes all eleven and
@@ -109,7 +117,7 @@ are gitignored.
 ## 4. Sync and open
 
 ```sh
-cd ~/rounds-codex-native
+cd ~/rounds-codex-ios
 ```
 ```sh
 npx cap sync android
@@ -180,7 +188,7 @@ wrong conclusion drawn from the right observation, on the one test everything ha
 Build the bundle and install the APK set:
 
 ```sh
-cd ~/rounds-codex-native/android
+cd ~/rounds-codex-ios/android
 ```
 ```sh
 ./gradlew :app:bundleDebug
