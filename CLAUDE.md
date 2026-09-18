@@ -1185,8 +1185,15 @@ hold your email address" would contradict a "Data Not Collected" privacy label o
 > which unlocked on their own once the first two cleared. **`Create app` is active and a Draft app
 > already exists**: `Rounds Codex: Clinical Atlas`, package **`com.roundscodex.app`** — the same name
 > `native/android/intent-filters.xml` and `scripts/make_assetlinks.js` already assume.
-> **Nothing about the account blocks anything now.** The one remaining blocker on real Android code
-> is §4.0 — the Capacitor project is only on the physician's Mac.
+> **§4.0 IS DONE (2026-09-18).** `kreithen/rounds-codex-native` is private and holds the Capacitor
+> project; the **Android platform is generated, patched and pushed**. A session turned out to be able
+> to run `npx cap add android` itself — the npm registry is reachable here even though
+> `dl.google.com` is not, and `cap add` only lays down a template. **Capacitor is 8.5.0**, so Node
+> ≥ 22 and **targetSdk 36**, which is Play's requirement for a new app. Everything left needs the
+> Android SDK: **`native/MAC-BUILD-ANDROID.md`** is the ordered command list, and its §6 is the one
+> open engineering question — whether `WebViewLocalServer` can read out of an install-time asset
+> pack. **`installDebug` installs the base module ONLY**, so testing that with a plain Run would 404
+> and read exactly like the design failing.
 > Two non-blocking follow-ups: the Console's unread notifications, and confirming the Draft is set to
 > **Free** (free→paid is irreversible once published, and under option D the subscription is an
 > in-app product rather than a paid app).

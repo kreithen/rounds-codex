@@ -81,7 +81,7 @@ per line (the runbook records why: `cap init`'s interactive prompt swallowed a p
 | Live app | **v134 shipped** (`e278e9d`) — the in-app footer now names the LLC. |
 | New guards | `verify_routes.js` (five-places route rule), `make_assetlinks.js`, `native/android/intent-filters.xml`, label-pairing in `verify_listing_counts.js`. |
 | New docs 2026-09-17 | **`native/PLAY-CONSOLE-ANSWER-PACK.md`** — every Console form answered in Console order, covering the eight `PLAY-LISTING-DRAFT.md` does not mention (App access, Ads, Target audience, News, COVID, Government, Financial, and the release-side forms). **`native/MAC-PUSH-NATIVE-REPO.md`** — §4.0 as a copy-pasteable command list. |
-| Still blocking me | **§4.0 — the Capacitor project is only on the Mac.** Unchanged, and now the *only* thing between here and real Android code: nothing about the account blocks anything any more. |
+| ~~Still blocking me~~ | **§4.0 IS DONE, 2026-09-18.** `kreithen/rounds-codex-native` exists, private, and the Android platform is generated, patched and pushed. Nothing blocks a session any more; what is left needs the Android SDK. **Read `native/MAC-BUILD-ANDROID.md`** — it is the ordered command list. |
 | Still yours | the duplicate SPF record at GoDaddy (§6c), and how the landing site deploys — it is in no repo this session can see. |
 
 ⚠ **§4.1 (the Play account) is DONE end to end — created, verified, and with a Draft app registered.**
@@ -149,9 +149,16 @@ The cost is the size problem below, which the TWA would have dodged. It is worth
 
 ### 4.0 First — put the Capacitor project under version control  *(Mac, 20 minutes; blocks everything)*
 
-> **Handed to the physician as `native/MAC-PUSH-NATIVE-REPO.md` on 2026-09-17** — one command per
-> line, with the `.gitignore` written before the first `git add` and a staged-file grep that must
-> print `CLEAN` before the push. Still waiting on the Mac.
+> **DONE 2026-09-18.** `kreithen/rounds-codex-native`, private, 26 files, no signing material and
+> no `www/`. The session then cloned it and — unexpectedly — was able to run `npx cap add android`
+> itself: the npm registry is reachable from a container even though `dl.google.com` is not, and
+> `cap add` only lays down a template. So the platform is generated and committed rather than
+> waiting on the Mac.
+>
+> **What the real project settled, replacing §4.3's and §4.6's guesses:** Capacitor **8.5.0**
+> (`Package.resolved`), so Node ≥ 22 and **targetSdk 36** — Play's requirement for a new app, free.
+> `appId com.roundscodex.app`, matching the Play Console draft. Associated domain
+> `applinks:roundscodex.com`, the single host `verify_routes.js` asserts.
 
 A session cannot add a platform to a project it cannot see. **Create a private repo
 `kreithen/rounds-codex-native`** and push `~/rounds-codex-ios` to it, with `www/`, `node_modules/`,
@@ -256,6 +263,15 @@ Mac to build. Until this is done, everything Android-side is a guess about a pro
    "hit-tests the viewport centre" properties; they are why it is a guard and not decoration.
 
 ### 4.3 Fourth — size: Play forces the asset-pack decision iOS was allowed to skip  *(session designs, Mac builds)*
+
+> **WIRED INTO THE REAL PROJECT 2026-09-18** by `scripts/wire_asset_packs.js`: eleven
+> `settings.gradle` includes, eleven module `build.gradle` files and one `assetPacks` line, all
+> committed; the 742 MB of assets stays generated and gitignored, proven by copying all of it in
+> and reading `git status --untracked-files=all` (11 files, all build.gradle, zero media).
+> **The open question is unchanged and is now the only one**: whether `WebViewLocalServer` can
+> read out of a pack. `native/MAC-BUILD-ANDROID.md` §6 is the experiment, and it carries the trap
+> this file did not: `installDebug` installs the base module ONLY, so a base-only install would
+> 404 and read exactly like option A failing.
 
 > **MODULES BUILT 2026-09-09 — `scripts/build_asset_packs.js` + `scripts/verify_asset_packs.js`.**
 > Option A is now generated code rather than a plan: one command emits all 11 install-time pack
