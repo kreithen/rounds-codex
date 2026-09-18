@@ -129,6 +129,28 @@ npx cap open android
 Android Studio will index and run a Gradle sync on first open. That takes a few minutes and
 downloads the Gradle distribution; let it finish before pressing anything.
 
+**On first open it will say the Gradle JVM is incompatible — click "Use JVM 21".** Confirmed
+2026-09-18: Gradle 8.14.3, which Capacitor 8 pins, supports JDK 8–24, and a current Mac's default
+JDK is 25. JVM 21 is Studio's bundled JetBrains Runtime and the standard pairing for AGP 8.x.
+Nothing about the project is wrong; it is a system-JDK mismatch and picking 21 settles it for good.
+
+**Ignore two things that are not yours.** Studio's *"Error loading assistant panel"* is its own AI
+sidebar. And Gradle prints `WARNING: Using flatDir should be avoided` twice — that is Capacitor's
+own template using `flatDir` for the Cordova plugin libs.
+
+### Check the wiring before anything slow
+
+```sh
+cd ~/rounds-codex-ios/android
+```
+```sh
+./gradlew projects
+```
+
+**Confirmed working 2026-09-18**, `BUILD SUCCESSFUL in 1s`, listing `:app`, `:capacitor-android`,
+`:capacitor-cordova-android-plugins` and all eleven `:rc-*` modules. It is seconds rather than
+minutes and it is the real test of `settings.gradle`, so run it before a full build.
+
 ---
 
 ## 5. Run it before configuring anything else
@@ -185,8 +207,16 @@ packs ship as split APKs and a base-only install does not carry them — so the 
 and it would look exactly like this failing when it had simply never been installed. That is the
 wrong conclusion drawn from the right observation, on the one test everything hangs on.
 
-Build the bundle and install the APK set:
+**Use Android Studio's own deploy-from-bundle, not the bundletool CLI.**
+**Run → Edit Configurations → Deploy: "APK from app bundle"**, then press ▶. Studio builds the
+bundle and installs the split APKs with its own bundled bundletool, so the asset packs come along.
 
+That is the easy route and it exists because **`bundletool` is NOT installed with Android Studio** —
+the CLI is a separate JAR. Only reach for it if the Studio route misbehaves:
+
+```sh
+brew install bundletool
+```
 ```sh
 cd ~/rounds-codex-ios/android
 ```
@@ -200,10 +230,8 @@ bundletool build-apks --local-testing --bundle=app/build/outputs/bundle/debug/ap
 bundletool install-apks --apks=/tmp/rc.apks
 ```
 
-Or set **Run → Edit Configurations → Deploy: "APK from app bundle"** and use ▶.
-
-⚠ Confirm the `bundletool` flags against Google's current documentation — `developer.android.com` is
-blocked from this session, so they are from memory. The shape of the trap is not in doubt.
+⚠ Confirm those flags against Google's current documentation — `developer.android.com` is blocked
+from this session, so they are from memory. The shape of the trap is not in doubt.
 
 **Then:**
 
