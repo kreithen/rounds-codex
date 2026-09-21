@@ -22,15 +22,22 @@
  * screenshot cannot show it. Both tablet presets are LANDSCAPE, which is how Play displays tablet
  * panels and how a tablet is actually held for reading.
  *
- *   tablet10  1280x800 CSS @2  -> 2560x1600.  ABOVE the 1180px breakpoint, so this is the only
+ *   tablet10  1280x720 CSS @2  -> 2560x1440.  ABOVE the 1180px breakpoint, so this is the only
  *                                preset that shows the side rail and the two-pane list. That is
  *                                the whole point of shooting it.
- *   tablet7   1024x600 CSS @2  -> 2048x1200.  Level 1 layout, no rail -- 1024 is below 1180.
+ *   tablet7    960x540 CSS @2  -> 1920x1080.  Level 1 layout, no rail -- 960 is below 1180.
  *
- * Both sit inside Play's tablet rules: every side between 1080 and 7680 px, aspect ratio no wider
- * than 2:1 (2560/1600 = 1.6, 2048/1200 = 1.71). A 7-inch preset at its true 600 CSS px height
- * would be 1200 device px, which clears the 1080 floor only because of the x2 scale -- do not drop
- * the scale factor to "save file size".
+ * THE TABLET SLOTS WANT EXACTLY 16:9, AND THE FIRST VERSION OF THIS FILE GOT IT WRONG. They were
+ * shot at 1024x600 and 1280x800 -- genuine tablet logical sizes, which is why they looked right --
+ * giving 2048x1200 (1.707) and 2560x1600 (1.600). Play states "16:9 or 9:16" for both tablet
+ * slots and tags anything else "Needs cropping" in the asset picker. A real device size is not the
+ * spec; the spec is the spec. The heights came down (600->540, 800->720) rather than the widths
+ * going up, because 1280 is what puts the 10-inch preset over the app's own 1180 breakpoint and
+ * 960 is what keeps the 7-inch one under it.
+ *
+ * The old guard asserted `ratio <= 2:1` and PASSED both wrong sets -- true but insufficient, the
+ * same shape of mistake as a regression test that never fails on the bug it was written for. Each
+ * preset now carries its own exact ratio and side bounds, and the check is equality.
  *
  * `isMobile` is false on the tablets. It is not cosmetic: with isMobile true, Chromium applies
  * mobile viewport emulation and the app lays out as a phone at any width, which would silently
@@ -50,6 +57,7 @@ const { chromium } = require(process.env.RC_PW + '/node_modules/playwright-core'
 const { spawn } = require('child_process');
 const path = require('path');
 const fs = require('fs');
+const { seedAuth } = require(path.join(__dirname, 'rc_test_auth.js'));
 
 const ROOT = process.argv[2], OUT = process.argv[3];
 const portArg = process.argv[4];
@@ -63,9 +71,13 @@ if (!ROOT || !OUT) {
 
 /* Play's requirements, and the CSS sizes that produce them. See the header for why each one. */
 const DEVICES = {
-  phone:    { w: 360,  h: 640,  dpr: 3, mobile: true  },   // -> 1080 x 1920
-  tablet7:  { w: 1024, h: 600,  dpr: 2, mobile: false },   // -> 2048 x 1200
-  tablet10: { w: 1280, h: 800,  dpr: 2, mobile: false },   // -> 2560 x 1600
+  //                                                    out          Play slot rule
+  phone:    { w: 360,  h: 640,  dpr: 3, mobile: true,   // 1080x1920  9:16, sides 1080..7680
+              ratio: 9 / 16, minSide: 1080, maxSide: 7680 },
+  tablet7:  { w: 960,  h: 540,  dpr: 2, mobile: false,  // 1920x1080  16:9, sides  320..3840
+              ratio: 16 / 9, minSide: 320,  maxSide: 3840 },
+  tablet10: { w: 1280, h: 720,  dpr: 2, mobile: false,  // 2560x1440  16:9, sides 1080..7680
+              ratio: 16 / 9, minSide: 1080, maxSide: 7680 },
 };
 const DEV = DEVICES[DEVICE];
 if (!DEV) {
@@ -76,7 +88,7 @@ const W = DEV.w, H = DEV.h, DPR = DEV.dpr;
 
 /* Play's own bounds, asserted on every file rather than assumed from the maths above. A preset
    edited to something Play rejects should fail here, not in the Console. */
-const MIN_SIDE = 1080, MAX_SIDE = 7680, MAX_RATIO = 2;
+const MIN_SIDE = DEV.minSide, MAX_SIDE = DEV.maxSide, RATIO = DEV.ratio;
 
 fs.mkdirSync(OUT, { recursive: true });
 
@@ -193,6 +205,12 @@ const SHOTS = [
        condition, an answered quiz) would otherwise leak into the next frame. */
     const ctx = await browser.newContext({
       viewport: { width: W, height: H }, deviceScaleFactor: DPR, isMobile: DEV.mobile, hasTouch: true });
+    /* The NATIVE PAYLOAD has no login wall, so this file originally did not seed a session and
+       could not be pointed at a web clone: #rc-authgate covers everything and the disclaimer's OK
+       button below it never becomes clickable, which surfaces as eight identical 3s click
+       timeouts rather than as anything mentioning auth. Seeding is inert on a payload -- nothing
+       reads the key -- so it costs nothing and makes either tree shootable. */
+    await seedAuth(ctx);
     const p = await ctx.newPage();
     const errs = [];
     p.on('pageerror', e => errs.push(String(e)));
@@ -234,7 +252,12 @@ const SHOTS = [
       const lo = Math.min(width, height), hi = Math.max(width, height);
       if (lo < MIN_SIDE) why.push(`short side ${lo} < Play's ${MIN_SIDE}`);
       if (hi > MAX_SIDE) why.push(`long side ${hi} > Play's ${MAX_SIDE}`);
-      if (hi / lo > MAX_RATIO) why.push(`aspect ${(hi / lo).toFixed(2)}:1 > Play's ${MAX_RATIO}:1`);
+      /* EQUALITY, not an upper bound. Play's tablet slots accept 16:9 or 9:16 and nothing else,
+         and the old `<= 2:1` test passed 1.707 and 1.600 without complaint. */
+      const got = width / height;
+      if (Math.abs(got - RATIO) > 0.002) {
+        why.push(`aspect ${got.toFixed(3)} is not Play's ${RATIO.toFixed(3)} for ${DEVICE}`);
+      }
       const ok = why.length === 0;
       if (!ok) bad++;
       console.log(`  ${ok ? 'ok  ' : 'FAIL'} ${shot.file}  ${width}x${height}` +

@@ -7,8 +7,23 @@ screenshots and allows eight per form factor.
 | set | folder | size | CSS viewport |
 |---|---|---|---|
 | phone | this folder | 1080×1920 | 360×640 @3 |
-| 7" tablet | `tablet7/` | 2048×1200 | 1024×600 @2, landscape |
-| 10" tablet | `tablet10/` | 2560×1600 | 1280×800 @2, landscape |
+| 7" tablet | `tablet7/` | 1920×1080 | 960×540 @2, landscape |
+| 10" tablet | `tablet10/` | 2560×1440 | 1280×720 @2, landscape |
+
+**BOTH TABLET SETS WERE RE-SHOT 2026-09-21 BECAUSE THE FIRST ONES WERE THE WRONG SHAPE.** They were
+2048×1200 (1.707) and 2560×1600 (1.600), taken at genuine tablet logical sizes — which is exactly
+why nobody questioned them. **Play's tablet slots accept 16:9 or 9:16 and nothing else**, and the
+Console tags anything else "Needs cropping" in the asset picker; the upload is where it surfaces.
+A real device size is not the spec.
+
+The heights came down rather than the widths going up, because **1280 is what keeps the 10" preset
+above the app's own 1180px breakpoint** and 960 is what keeps the 7" one below it — raising the
+widths to reach 16:9 would have moved `tablet7` across the breakpoint and produced two copies of the
+same layout.
+
+The guard in `shoot_play_screenshots.js` asserted `aspect <= 2:1` and **passed both wrong sets**:
+true, and insufficient. Each preset now carries its own exact ratio and side bounds and the check is
+equality — run against 2048×1200 and 2560×1600 it fails both.
 
 **Only `tablet10` shows the large-screen layout.** 1280 is above the app's own 1180px breakpoint, so
 that set — and only that set — has the side rail and the two-pane list that v138–v147 built. `tablet7`
