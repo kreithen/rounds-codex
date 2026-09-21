@@ -1202,6 +1202,27 @@ hold your email address" would contradict a "Data Not Collected" privacy label o
 > **`installDebug` and a plain Run install the base module ONLY**, so a gallery 404s there and reads
 > exactly like the design failing — deploy from the bundle (Run → Edit Configurations → Deploy:
 > “APK from app bundle”) before concluding anything.
+> **STEPS 5–7 ARE DONE (2026-09-21).** Upload key generated (`~/rounds-codex-upload.jks`, alias
+> `upload`, on the physician's Mac and nowhere else); signed release bundle **808 MB / 847 MB
+> installed / 8m 22s download**, all eleven packs in it, uploaded to **Internal testing** as
+> version 1 (1.0), targetSdk 36. Play raised nothing about size, asset packs or large screens — the
+> only two warnings were "no testers specified" and "no deobfuscation file", and the second is
+> correct and permanent (`minifyEnabled` is false because the Java layer is a shell and the real
+> code is JavaScript, which R8 never touches). **`assetlinks.json` shipped live as v150**, app
+> signing key SHA-256 `82:36:E4:...:FA:01`, `roundscodex.com` only.
+> **Two Console traps worth keeping.** *App integrity* is now a signpost that forwards to *Protected
+> with Play*, and the certificates are on NEITHER — go straight to
+> `.../app/<APP-ID>/keymanagement`. And on that page **the only fingerprint rendered as plain text
+> is the UPLOAD key's**; the app signing key's sits behind copy chips with no visible value, so
+> reading one off the page by eye gives you the wrong one. Copy the **Digital Asset Links JSON**
+> block at the bottom instead — Google builds it from the right key.
+> **Capacitor's `org.gradle.jvmargs=-Xmx1536m` cannot write this bundle.** `FinalizeBundleTask`'s
+> `AabFlinger` buffers entries while zipping ~830 MB and dies with `OutOfMemoryError: Java heap
+> space`; raised to 4 GB in the native repo. It presents as **nothing at all** in Studio's Build
+> Output — the daemon goes away, so there is no FAILURE block and the log just stops after the task
+> name. Only `./gradlew --stacktrace` from a terminal names it. It also succeeded once before
+> failing, because how close the default runs to the limit depends on what the daemon is still
+> holding from earlier tasks.
 > Two non-blocking follow-ups: the Console's unread notifications, and confirming the Draft is set to
 > **Free** (free→paid is irreversible once published, and under option D the subscription is an
 > in-app product rather than a paid app).

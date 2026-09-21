@@ -261,14 +261,35 @@ cd ~
 keytool -genkey -v -keystore rounds-codex-upload.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload
 ```
 
-Store the password in your password manager. Then **Build → Generate Signed App Bundle** in Android
-Studio, select that keystore, and upload the `.aab` to **Internal testing**.
+Store the password in your password manager. `keytool` asks for ONE password and writes a PKCS12
+keystore, so the Studio wizard's **Key password** field takes that same string — there is no second
+password to remember. Then **Build → Generate Signed App Bundle or APK** in Android Studio
+(macOS menu bar, not the Studio window; or press Shift twice and type `generate signed`), select
+that keystore, and upload the `.aab` to **Internal testing**.
+
+In the variants list, **the green tick next to `release` is not a selection** — it marks which
+variants are signable. Click the ROW so it highlights, or Create refuses with "Please select the
+build variants to build and sign".
 
 **Only after that first upload** can App Links be finished, because the fingerprint has to be
 Google's app signing key and it does not exist until Play creates it:
 
-1. Play Console → **App integrity** → copy the **app signing key certificate** SHA-256.
-2. Send it to me, or run it yourself:
+1. Go straight to the key management page — the Console's **App integrity** entry is now a
+   signpost that forwards to **Protected with Play**, and the certificates are not on either of
+   those pages:
+
+   ```
+   https://play.google.com/console/u/0/developers/<DEV-ID>/app/<APP-ID>/keymanagement
+   ```
+
+   Both ids are in the URL of any page of the app.
+2. Scroll to **Digital Asset Links JSON** at the BOTTOM of that page and copy the snippet Google
+   generates. Do not read a fingerprint off the page by eye: **the only fingerprint rendered as
+   plain text there is the UPLOAD key's**, and the app signing key's sits behind copy-to-clipboard
+   chips with no visible value. The page is laid out to hand you the wrong one.
+   (If you do use a chip: **Classical key → SHA-256**, not the Post-quantum one — that is beta
+   and Digital Asset Links does not use it.)
+3. Send it to me, or run it yourself:
 
 ```sh
 cd ~/rounds-codex
@@ -282,6 +303,9 @@ node scripts/make_assetlinks.js --check ../rounds-codex-app/.well-known/assetlin
 
 Then that file has to be deployed to the live site, and `_headers` needs a
 `Content-Type: application/json` line for it the same way the iOS AASA has one.
+
+**DONE 2026-09-21, shipped live as v150** — fingerprint
+`82:36:E4:...:FA:01`, `roundscodex.com` only, matching the manifest's intent filter.
 
 ⚠ **Publishing the UPLOAD key's fingerprint instead produces a file that verifies against nothing,
 and the failure is silent** — links simply open in Chrome. Both are valid SHA-256 strings, so no

@@ -19,15 +19,28 @@ detail.
 | ~~2~~ | ~~Android platform files~~ **DONE 2026-09-18** | me | ✅ |
 | ~~3~~ | ~~build and run the emulator test~~ **DONE 2026-09-21 — it runs** | you | ✅ |
 | ~~4~~ | ~~asset packs vs streaming~~ **SETTLED — option A, packs work offline** | both | ✅ |
-| 5 | Generate the upload key, build a signed `.aab` | you | 4 |
-| 6 | Upload to **internal testing** — this is what produces the first pre-launch report | you | 5 |
-| 7 | Read the app signing SHA-256, generate `assetlinks.json`, deploy it to the web repo | me + your go-ahead to deploy | 6 |
+| ~~5~~ | ~~upload key, signed `.aab`~~ **DONE 2026-09-21 — 808 MB, all eleven packs in it** | you | ✅ |
+| ~~6~~ | ~~upload to internal testing~~ **DONE 2026-09-21 — version 1 (1.0), targetSdk 36** | you | ✅ |
+| ~~7~~ | ~~`assetlinks.json`~~ **DONE 2026-09-21 — shipped live as v150** | me | ✅ |
 | 8 | Fill the Console forms | you | — *(can be done now, in parallel with 1–6)* |
 | 9 | Enter the listing: copy, icon, feature graphic, screenshots | you | — *(assets all exist now)* |
 | 10 | Promote to production, submit for review | you | 6, 7, 8, 9 |
 
 Steps **8 and 9 do not wait on anything** — do them while the Mac work is in flight and the app is
 ready to publish the moment the bundle is.
+
+### What steps 5–7 measured, 2026-09-21
+
+- **808 MB bundle, 847 MB install, 8m 22s download** — Play's own numbers. Under the 200 MB base
+  cap and the 1 GB install-time-pack cap, with ~258 MB of pack headroom left for new galleries.
+- **Play raised nothing about size, asset packs or large screens.** The two warnings on the release
+  were "no testers specified" and "no deobfuscation file" — the second is correct and permanent:
+  `minifyEnabled` is false because the Java layer is a shell and all the real code is JavaScript,
+  which R8 never touches.
+- **App signing key SHA-256:** `82:36:E4:29:51:18:C8:2C:24:7C:E2:98:1E:03:5B:83:96:C2:29:57:7E:D0:D6:F5:E3:EC:DE:3D:70:B7:FA:01`
+  (public — it is served at `/.well-known/assetlinks.json`).
+- **App Links verify at INSTALL time.** A device that already has the app will not re-verify
+  against the newly deployed file until it reinstalls, so test the links on a fresh install.
 
 ---
 
