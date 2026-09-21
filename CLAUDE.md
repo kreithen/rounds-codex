@@ -1190,10 +1190,18 @@ hold your email address" would contradict a "Data Not Collected" privacy label o
 > to run `npx cap add android` itself — the npm registry is reachable here even though
 > `dl.google.com` is not, and `cap add` only lays down a template. **Capacitor is 8.5.0**, so Node
 > ≥ 22 and **targetSdk 36**, which is Play's requirement for a new app. Everything left needs the
-> Android SDK: **`native/MAC-BUILD-ANDROID.md`** is the ordered command list, and its §6 is the one
-> open engineering question — whether `WebViewLocalServer` can read out of an install-time asset
-> pack. **`installDebug` installs the base module ONLY**, so testing that with a plain Run would 404
-> and read exactly like the design failing.
+> Android SDK: **`native/MAC-BUILD-ANDROID.md`** is the ordered command list.
+> **§4.3 IS SETTLED (2026-09-21) — OPTION A WORKS.** `WebViewLocalServer` reads a file straight out
+> of a Play **install-time asset pack**, with no code change, no plugin and no Java. Built and run by
+> the physician on a Pixel 8 emulator (Android 16 / API 36, arm64, Google Play image), deployed
+> **from the app bundle** so the eleven packs installed as split APKs (`:app:extractApksFromBundleForDebug`
+> in the log). Galleries open, full-size pages render, and they render in Airplane Mode. So the size
+> design holds: **84.3 MB base against Play's 200 MB cap, 741.9 MB in eleven install-time packs**;
+> option B (`RC_MEDIA_ROOT` streaming) is not needed and `add_media_root.js` stays unused, and
+> `PLAY-LISTING-DRAFT.md` §7.4's offline claim is TRUE as written.
+> **`installDebug` and a plain Run install the base module ONLY**, so a gallery 404s there and reads
+> exactly like the design failing — deploy from the bundle (Run → Edit Configurations → Deploy:
+> “APK from app bundle”) before concluding anything.
 > Two non-blocking follow-ups: the Console's unread notifications, and confirming the Draft is set to
 > **Free** (free→paid is irreversible once published, and under option D the subscription is an
 > in-app product rather than a paid app).
