@@ -15,10 +15,10 @@ detail.
 
 | # | Step | Who | Waits on |
 |---|---|---|---|
-| **1** | **Push `~/rounds-codex-ios` to a private `kreithen/rounds-codex-native`** | **you** | — |
-| 2 | Add the Android platform files as source (manifest, intent filters, asset-pack wiring, icons) | me | 1 |
-| 3 | `npx cap add android`, `cap sync`, build a debug APK, run the emulator test | you | 2 |
-| 4 | **Decide asset packs vs streaming** on what step 3 shows | both | 3 |
+| ~~1~~ | ~~push the Capacitor project~~ **DONE 2026-09-18** | you | ✅ |
+| ~~2~~ | ~~Android platform files~~ **DONE 2026-09-18** | me | ✅ |
+| ~~3~~ | ~~build and run the emulator test~~ **DONE 2026-09-21 — it runs** | you | ✅ |
+| ~~4~~ | ~~asset packs vs streaming~~ **SETTLED — option A, packs work offline** | both | ✅ |
 | 5 | Generate the upload key, build a signed `.aab` | you | 4 |
 | 6 | Upload to **internal testing** — this is what produces the first pre-launch report | you | 5 |
 | 7 | Read the app signing SHA-256, generate `assetlinks.json`, deploy it to the web repo | me + your go-ahead to deploy | 6 |

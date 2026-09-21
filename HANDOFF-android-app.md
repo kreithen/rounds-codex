@@ -264,6 +264,32 @@ Mac to build. Until this is done, everything Android-side is a guess about a pro
 
 ### 4.3 Fourth — size: Play forces the asset-pack decision iOS was allowed to skip  *(session designs, Mac builds)*
 
+> # ✅ SETTLED 2026-09-21 — OPTION A WORKS.
+> **Capacitor's `WebViewLocalServer` reads a file out of a Play install-time asset pack with no
+> code change, no plugin and no Java.** Built and run by the physician on a Pixel 8 emulator,
+> Android 16 (API 36, arm64, Google Play image), deployed *from the app bundle* so the eleven packs
+> installed as split APKs — the build log shows `:app:extractApksFromBundleForDebug`. Galleries
+> open, full-size pages render, and they render in Airplane Mode.
+>
+> That was a reading of the source for twelve days and is now a result. **The design holds: 84.3 MB
+> base module against Play's 200 MB cap, 741.9 MB in eleven install-time packs.** Option B
+> (`RC_MEDIA_ROOT` streaming) is not needed and `add_media_root.js` stays unused.
+>
+> **Consequence for the listing, which was conditional on exactly this:** `PLAY-LISTING-DRAFT.md`
+> §7.4 is resolved in the app's favour. *"It works entirely offline — every page, image and question
+> is on your device"* and *"a downloadable PDF for each gallery"* are both TRUE as written. Nothing
+> to rewrite.
+>
+> **One bug found on the way, and nothing upstream could have caught it.** The packs were named
+> `rc-cardiac`, `rc-endocrine` and so on. A pack name becomes the bundle's **split name**, which
+> must be a valid identifier, so the build died at `:app:linkDebugManifestForAssetPacks` with
+> *"attribute 'split' in `<manifest>` tag is not a valid split name"* on all eleven —
+> while `verify_asset_packs.js` passed 48/48, `./gradlew projects` listed every module and the IDE
+> resolved them. AAPT enforces that rule at link time and nowhere else. Renamed to underscores
+> (free: nothing had shipped, and after a release a renamed pack is a NEW pack every device
+> re-downloads), with guards in `plan_asset_packs.js` and `wire_asset_packs.js` that fail on the
+> pre-fix input.
+
 > **WIRED INTO THE REAL PROJECT 2026-09-18** by `scripts/wire_asset_packs.js`: eleven
 > `settings.gradle` includes, eleven module `build.gradle` files and one `assetPacks` line, all
 > committed; the 742 MB of assets stays generated and gitignored, proven by copying all of it in
