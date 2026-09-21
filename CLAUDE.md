@@ -1210,6 +1210,16 @@ hold your email address" would contradict a "Data Not Collected" privacy label o
 > correct and permanent (`minifyEnabled` is false because the Java layer is a shell and the real
 > code is JavaScript, which R8 never touches). **`assetlinks.json` shipped live as v150**, app
 > signing key SHA-256 `82:36:E4:...:FA:01`, `roundscodex.com` only.
+> **INSTALLED FROM GOOGLE PLAY AND VERIFIED, 2026-09-21.** Pixel 8 emulator (Google Play system
+> image), internal testing track, `installer=com.android.vending` — so galleries render from
+> **Play-delivered** asset packs, not a local bundle extraction; a gallery never opened before
+> still renders in Airplane Mode; and `roundscodex.com/c/chf` in Chrome opens the app, which proves
+> v150's `assetlinks.json` end to end. **Check provenance with
+> `adb shell pm list packages -i com.roundscodex.app` before believing such a test** — a Studio Run
+> reinstalls the debug build and looks identical. Uninstall that debug build first or Play refuses
+> the install on the signature mismatch, and read "Something went wrong on our end" straight after
+> publishing as propagation of 847 MB rather than a bad bundle. `adb` is at
+> `~/Library/Android/sdk/platform-tools`, not on PATH.
 > **Two Console traps worth keeping.** *App integrity* is now a signpost that forwards to *Protected
 > with Play*, and the certificates are on NEITHER — go straight to
 > `.../app/<APP-ID>/keymanagement`. And on that page **the only fingerprint rendered as plain text

@@ -42,6 +42,38 @@ ready to publish the moment the bundle is.
 - **App Links verify at INSTALL time.** A device that already has the app will not re-verify
   against the newly deployed file until it reinstalls, so test the links on a fresh install.
 
+### PROVED END TO END FROM GOOGLE PLAY, 2026-09-21
+
+Installed on the Pixel 8 emulator (Google Play system image) from the **internal testing track**,
+not sideloaded — `adb shell pm list packages -i com.roundscodex.app` returns
+`installer=com.android.vending`. **Run that check before believing any of this**: a Studio Run
+reinstalls the debug build and the app looks identical.
+
+Three things passed that had never been tested:
+
+1. **Galleries render from Play-delivered asset packs.** Every previous run used a locally
+   extracted bundle; this is Play serving eleven split APKs to a device that asked for them.
+2. **Offline holds.** Airplane mode, then a gallery never opened before — renders. The packs are
+   on disk, which is what `PLAY-LISTING-DRAFT.md` §7.4 promises.
+3. **App Links verified against the live site.** `roundscodex.com/c/chf` in the emulator's Chrome
+   opens the app, so v150's `assetlinks.json` is correct and reachable — the one thing that would
+   otherwise have failed silently.
+
+**Four traps between publishing and installing, in the order they bite:**
+
+- **The opt-in link does not exist until the release is PUBLISHED.** The draft sat on "Preview and
+  confirm" and the Testers tab said to publish the app first, which reads like it wants the
+  *store* listing. It does not: internal testing is private to the tester list and publishes to
+  no store.
+- **Uninstall the debug build first.** Same package, Studio's debug key vs Google's app signing
+  key — Play refuses the install and the error blames nothing in particular.
+- **"Something went wrong on our end" right after publishing is propagation, not your bundle.**
+  Play needs time to distribute 847 MB before a device can pull it. Wait and retry.
+- **`adb` is not on PATH**; it lives at `~/Library/Android/sdk/platform-tools`.
+
+Cosmetic but alarming: testers see the app as **`com.roundscodex.app (unreviewed)`** until the
+store listing is complete and reviewed. That is not a build defect.
+
 ---
 
 ## Step 1 — the one that blocks everything  *(you, ~20 min)*
