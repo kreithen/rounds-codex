@@ -30,7 +30,29 @@ Everything else on this page can be edited after submission.
 
 ---
 
-## Part 1 — App content  *(Console: left nav → Policy → App content)*
+## Part 1 — App content  *(Console: **Monitor and improve → Policy and programs → App content**)*
+
+> **THE CONSOLE MOVED ALL OF THIS, AND THE OLD PATHS ARE DEAD ENDS (corrected 2026-09-21).**
+> There is no top-level *Policy* item; the *Policy status* in the ACCOUNT sidebar is about the
+> developer account, not the app. Two more that cost real time the same afternoon: *App integrity*
+> is now a signpost forwarding to *Protected with Play*, and the signing certificates are on
+> neither — `.../app/<APP-ID>/keymanagement` is the only route. Direct URLs beat navigation here:
+>
+> | form | URL |
+> |---|---|
+> | App content (all declarations) | `.../app/<APP-ID>/app-content` |
+> | Data safety | `.../app/<APP-ID>/app-content/data-privacy-security` |
+> | App signing | `.../app/<APP-ID>/keymanagement` |
+>
+> Both ids are in the URL of any page of the app.
+>
+> **The Dashboard's setup checklist is not a permanent route either** — it is the fastest way in
+> while it exists, and it DISAPPEARS once the last task is done, replaced by generic text. Setup
+> reaching 11 of 11 therefore looks exactly like the checklist having gone missing.
+>
+> **Verified against the live Console 2026-09-21:** target audience **18 and older**, Data safety
+> **"Does your app collect or share any of the required user data types?" = No**, content rating
+> questionnaire submitted. Nothing inherited a web-app answer.
 
 Nine declarations. Play will not let you release without all of them.
 
