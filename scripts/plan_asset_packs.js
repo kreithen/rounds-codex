@@ -33,7 +33,22 @@ if (!ROOT) { console.error('usage: plan_asset_packs.js <site-root> [--manifest <
 
 const MB = n => (n / 1048576).toFixed(1);
 const size = p => { try { return fs.statSync(path.join(ROOT, p)).size; } catch (e) { return null; } };
-const slug = s => s.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+/* UNDERSCORES, NOT HYPHENS, and this is not a style choice. A Play asset pack's name becomes the
+   SPLIT NAME inside the app bundle, and a split name has to be a valid identifier. With hyphens the
+   build dies at `:app:linkDebugManifestForAssetPacks` with
+     AAPT: error: attribute 'split' in <manifest> tag is not a valid split name
+   on every pack -- measured on a real Mac build 2026-09-21, eleven of eleven. `assertPackId()`
+   below is the guard so it cannot come back. */
+const slug = s => s.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '');
+
+/* Play's rule for a split name: start with a letter, then letters, digits and underscores. */
+const PACK_ID_RE = /^[a-zA-Z][a-zA-Z0-9_]*$/;
+const assertPackId = id => {
+  if (PACK_ID_RE.test(id)) return id;
+  console.error(`FAIL: "${id}" is not a valid asset pack name. A pack name becomes the bundle's\n` +
+                '      split name, which must match ' + PACK_ID_RE + ' -- a hyphen is the usual cause.');
+  process.exit(1);
+};
 
 const conditions = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/conditions.json'), 'utf8'));
 const galFile = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/galleries.json'), 'utf8'));
@@ -115,7 +130,7 @@ console.log(`${rows.length} asset packs, ${MB(packBytes)} MB total`);
 console.log(`(Apple allows 200 packs and 200 GB per app, so neither is a constraint here.)\n`);
 console.log(`  ${'pack'.padEnd(26)} ${'galleries'.padStart(9)} ${'audio'.padStart(5)} ${'files'.padStart(6)} ${'MB'.padStart(8)}`);
 for (const [cat, p] of rows)
-  console.log(`  ${('rc-' + slug(cat)).padEnd(26)} ${String(p.galleries).padStart(9)} ${String(p.audio.length).padStart(5)} ` +
+  console.log(`  ${assertPackId('rc_' + slug(cat)).padEnd(26)} ${String(p.galleries).padStart(9)} ${String(p.audio.length).padStart(5)} ` +
               `${String(p.pages.length + p.audio.length).padStart(6)} ${MB(p.bytes).padStart(8)}`);
 
 console.log(`\nlargest pack: ${MB(Math.max(...rows.map(r => r[1].bytes)))} MB` +
@@ -127,7 +142,7 @@ const noPack = [...cats].filter(c => !packs.has(c));
 console.log(`\ncategories with no pack (no gallery, no audio): ${noPack.length ? noPack.join(', ') : 'none'}`);
 
 if (VERBOSE) for (const [cat, p] of rows) {
-  console.log(`\n-- rc-${slug(cat)}`);
+  console.log(`\n-- rc_${slug(cat)}`);
   for (const f of [...p.pages, ...p.audio]) console.log(`   ${MB(f.bytes).padStart(6)} MB  ${f.path}`);
 }
 
@@ -137,7 +152,7 @@ if (MANIFEST) {
           'it has shipped -- a renamed pack is a new pack and every device re-downloads it.',
     inApp: { thumbnails: inApp.length, bytes: thumbBytes },
     packs: rows.map(([cat, p]) => ({
-      id: 'rc-' + slug(cat), category: cat, galleries: p.galleries,
+      id: assertPackId('rc_' + slug(cat)), category: cat, galleries: p.galleries,
       bytes: p.bytes, files: [...p.pages, ...p.audio].map(f => f.path),
     })),
   };

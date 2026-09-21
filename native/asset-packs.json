@@ -6,7 +6,7 @@
   },
   "packs": [
     {
-      "id": "rc-cardiac",
+      "id": "rc_cardiac",
       "category": "Cardiac",
       "galleries": 13,
       "bytes": 155411451,
@@ -170,7 +170,7 @@
       ]
     },
     {
-      "id": "rc-endocrine",
+      "id": "rc_endocrine",
       "category": "Endocrine",
       "galleries": 13,
       "bytes": 109987088,
@@ -329,7 +329,7 @@
       ]
     },
     {
-      "id": "rc-respiratory",
+      "id": "rc_respiratory",
       "category": "Respiratory",
       "galleries": 10,
       "bytes": 96451981,
@@ -457,7 +457,7 @@
       ]
     },
     {
-      "id": "rc-gastrointestinal",
+      "id": "rc_gastrointestinal",
       "category": "Gastrointestinal",
       "galleries": 12,
       "bytes": 88781081,
@@ -597,7 +597,7 @@
       ]
     },
     {
-      "id": "rc-neurology",
+      "id": "rc_neurology",
       "category": "Neurology",
       "galleries": 12,
       "bytes": 73340112,
@@ -737,7 +737,7 @@
       ]
     },
     {
-      "id": "rc-msk-and-rheum",
+      "id": "rc_msk_and_rheum",
       "category": "MSK & Rheum",
       "galleries": 9,
       "bytes": 51764979,
@@ -844,7 +844,7 @@
       ]
     },
     {
-      "id": "rc-renal-and-gu",
+      "id": "rc_renal_and_gu",
       "category": "Renal & GU",
       "galleries": 7,
       "bytes": 45696541,
@@ -929,7 +929,7 @@
       ]
     },
     {
-      "id": "rc-heme-and-onc",
+      "id": "rc_heme_and_onc",
       "category": "Heme & Onc",
       "galleries": 7,
       "bytes": 43477470,
@@ -1014,7 +1014,7 @@
       ]
     },
     {
-      "id": "rc-psychiatry",
+      "id": "rc_psychiatry",
       "category": "Psychiatry",
       "galleries": 7,
       "bytes": 40956805,
@@ -1099,7 +1099,7 @@
       ]
     },
     {
-      "id": "rc-infectious-disease",
+      "id": "rc_infectious_disease",
       "category": "Infectious Disease",
       "galleries": 6,
       "bytes": 37146719,
@@ -1173,7 +1173,7 @@
       ]
     },
     {
-      "id": "rc-ob-and-peds",
+      "id": "rc_ob_and_peds",
       "category": "OB & Peds",
       "galleries": 6,
       "bytes": 34947140,
