@@ -65,18 +65,65 @@ if (!P) die(`unknown piece "${piece}". Known: ${Object.keys(spec.pieces).join(',
     return `data:${mime};base64,${fs.readFileSync(f).toString('base64')}`;
   };
 
+  // Google's downloadable badge SHIPS WITH ITS CLEAR SPACE BAKED IN — the generic web asset is
+  // 646x250 with the badge artwork inset by roughly 1/4 of its height on every side. Sizing that
+  // padded PNG to Apple's height therefore renders the actual Play badge about a third SHORTER
+  // than Apple's, which is precisely the thing Google's "never smaller than another store's
+  // badge" rule forbids, while looking deliberate. So the padding is trimmed off first and the
+  // clear space is re-added as layout gap, where it belongs.
+  //
+  // Apple's SVG has no such padding (its artboard is the badge), so trimming is a no-op there
+  // and is applied only to --play.
+
   // Natural sizes — the two badges have DIFFERENT aspect ratios, so a matched height is the
   // only way to satisfy Google's "never smaller than another store's badge" rule. Equal
   // widths would leave the Play badge visibly shorter.
   const sizes = await page.evaluate(async (urls) => {
     const load = (src) => new Promise((res, rej) => {
       const im = new Image();
-      im.onload = () => res({ w: im.naturalWidth, h: im.naturalHeight });
+      im.onload = () => res(im);
       im.onerror = () => rej(new Error('decode failed: ' + src.slice(0, 40)));
       im.src = src;
     });
-    return { bg: await load(urls.bg), apple: await load(urls.apple), play: await load(urls.play) };
+    const dim = (im) => ({ w: im.naturalWidth, h: im.naturalHeight });
+
+    // Tight bounding box of the badge inside its artboard: anything differing from the corner
+    // pixel, or any non-transparent pixel when the asset has alpha.
+    const trim = async (src) => {
+      const im = await load(src);
+      const w = im.naturalWidth, h = im.naturalHeight;
+      const c = document.createElement('canvas'); c.width = w; c.height = h;
+      const g = c.getContext('2d'); g.drawImage(im, 0, 0);
+      const d = g.getImageData(0, 0, w, h).data;
+      const at = (x, y) => { const i = (y * w + x) * 4; return [d[i], d[i+1], d[i+2], d[i+3]]; };
+      const bg = at(0, 0);
+      const differs = (p) => (bg[3] < 8 ? p[3] > 8
+        : Math.abs(p[0]-bg[0]) + Math.abs(p[1]-bg[1]) + Math.abs(p[2]-bg[2]) > 30 || Math.abs(p[3]-bg[3]) > 24);
+      let x0 = w, y0 = h, x1 = -1, y1 = -1;
+      for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+        if (differs(at(x, y))) { if (x < x0) x0 = x; if (x > x1) x1 = x; if (y < y0) y0 = y; if (y > y1) y1 = y; }
+      }
+      if (x1 < 0) return { url: src, ...dim(im), trimmed: false };
+      const tw = x1 - x0 + 1, th = y1 - y0 + 1;
+      if (tw === w && th === h) return { url: src, w, h, trimmed: false };
+      const o = document.createElement('canvas'); o.width = tw; o.height = th;
+      o.getContext('2d').drawImage(im, x0, y0, tw, th, 0, 0, tw, th);
+      return { url: o.toDataURL('image/png'), w: tw, h: th, trimmed: true,
+               inset: { top: y0, left: x0, right: w - 1 - x1, bottom: h - 1 - y1 }, from: { w, h } };
+    };
+
+    return {
+      bg: dim(await load(urls.bg)),
+      apple: dim(await load(urls.apple)),
+      play: await trim(urls.play),
+    };
   }, { bg: dataUrl(inFile), apple: dataUrl(appleBadge), play: dataUrl(playBadge) });
+
+  if (sizes.play.trimmed) {
+    const i = sizes.play.inset;
+    console.log(`  play badge had ${i.top}/${i.right}/${i.bottom}/${i.left}px of baked-in clear space ` +
+                `(${sizes.play.from.w}x${sizes.play.from.h} -> ${sizes.play.w}x${sizes.play.h}); trimmed before sizing`);
+  }
 
   const W = sizes.bg.w, H = sizes.bg.h;
   const ob = P.old_badge;
@@ -170,7 +217,7 @@ if (!P) die(`unknown piece "${piece}". Known: ${Object.keys(spec.pieces).join(',
     <img src="${dataUrl(inFile)}" style="position:absolute;left:0;top:0;width:${W}px;height:${H}px">
     ${eraseRect ? `<div style="position:absolute;left:${eraseRect.x0}px;top:${eraseRect.y0}px;width:${eraseRect.w}px;height:${eraseRect.h}px;background:${eraseRect.css}"></div>` : ''}
     <img src="${dataUrl(appleBadge)}" style="position:absolute;left:${pair.x0}px;top:${pair.y0}px;width:${appleW}px;height:${badgeH}px">
-    <img src="${dataUrl(playBadge)}"  style="position:absolute;left:${pair.x0 + appleW + gap}px;top:${pair.y0}px;width:${playW}px;height:${badgeH}px">
+    <img src="${sizes.play.url}"  style="position:absolute;left:${pair.x0 + appleW + gap}px;top:${pair.y0}px;width:${playW}px;height:${badgeH}px">
   </body></html>`);
   await page.evaluate(() => Promise.all(Array.from(document.images).map(i => i.decode())));
   await page.screenshot({ path: outFile, clip: { x: 0, y: 0, width: W, height: H } });

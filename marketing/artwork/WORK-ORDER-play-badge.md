@@ -11,6 +11,9 @@ text corrections. This file is the spec; `badge-spec.json` holds the measured ge
 | source artwork | Physician sends the original full-resolution exports |
 | the fabricated phone screens | **Leave as they are** |
 | when the Play versions go out | Build now, **hold** until the physician confirms the Play listing resolves |
+| badge colour | **Two dark badges** — Apple's black badge beside Google's standard one |
+| `ed-photo` / `three-modes` headline | Set the **full tagline at a reduced size**, matching `or-photo` |
+| `feature-sheet` | Physician sends the **layered source**; it cannot be composited |
 
 ## The five pieces
 
@@ -71,6 +74,31 @@ anyway.
 
 `badge-spec.json` carries each old badge's box as fractions of the **content** area, so they
 transfer to any export resolution.
+
+### Google ships its badge WITH the clear space baked in
+
+The generic Play badge asset is 646×250 with the artwork inset by roughly ¼ of its height on
+every side. Size that padded file to Apple's badge height and the **actual Play badge renders
+about a third shorter than Apple's** — which is exactly what the equal-prominence rule forbids,
+while looking deliberate rather than broken. Apple's SVG has no such padding; its artboard is the
+badge.
+
+So the script trims the Play badge to its tight bounding box before sizing, and re-adds the clear
+space as layout gap where it belongs. Measured on a padded stand-in it reported
+`42/82/41/83px of baked-in clear space (646x250 -> 481x167)` and both badges then rendered at a
+true 131px. **Anyone placing these by hand in a design tool has to do the same thing** — see below.
+
+### Placing the pair by hand (for `feature-sheet`, in the source file)
+
+1. **Trim the Play badge's transparent margin first.** Otherwise it sits visibly shorter.
+2. **Both badges the same HEIGHT**, never the same width — the aspect ratios differ (Apple is
+   2.992; Google's trimmed artwork is around 2.88).
+3. Badge height ≈ **6.5% of canvas height** on the 2:3 feature sheet, which puts the pair at
+   roughly 59% of the width. On the four 9:16 pieces the script uses 8.0%, giving ~86–90%.
+4. **Gap between them = half the badge height.** That satisfies the ¼-badge-height clear space on
+   each facing side with a little room over.
+5. Centre the pair horizontally; put its vertical centre at **91% of canvas height**, which is
+   where the old badge's centre sits.
 
 ### Running it
 
