@@ -1,0 +1,70 @@
+{
+  "_note": "Fractions are of the CONTENT box (letterbox excluded), so they transfer to any export resolution. Measured from the 921px phone screenshots, 2026-09-22.",
+  "pieces": {
+    "feature-sheet": {
+      "from_screenshot": "88.webp",
+      "shown_as_image": "1",
+      "content_aspect": 1.4984,
+      "old_badge": {
+        "x0": 0.3333,
+        "x1": 0.6439,
+        "y0": 0.8819,
+        "y1": 0.9391,
+        "height_frac": 0.058,
+        "measured_aspect": 3.587
+      }
+    },
+    "ed-photo": {
+      "from_screenshot": "89.webp",
+      "shown_as_image": "2",
+      "content_aspect": 1.7763,
+      "old_badge": {
+        "x0": 0.2888,
+        "x1": 0.7123,
+        "y0": 0.813,
+        "y1": 0.8894,
+        "height_frac": 0.077,
+        "measured_aspect": 3.103
+      }
+    },
+    "three-modes": {
+      "from_screenshot": "90.webp",
+      "shown_as_image": "3",
+      "content_aspect": 1.7503,
+      "old_badge": {
+        "x0": 0.2606,
+        "x1": 0.7514,
+        "y0": 0.8573,
+        "y1": 0.938,
+        "height_frac": 0.0813,
+        "measured_aspect": 3.458
+      }
+    },
+    "medicine-sticks": {
+      "from_screenshot": "91.webp",
+      "shown_as_image": "4",
+      "content_aspect": 1.7731,
+      "old_badge": {
+        "x0": 0.2606,
+        "x1": 0.7535,
+        "y0": 0.8334,
+        "y1": 0.9149,
+        "height_frac": 0.0821,
+        "measured_aspect": 3.396
+      }
+    },
+    "or-photo": {
+      "from_screenshot": "92.webp",
+      "shown_as_image": "5",
+      "content_aspect": 1.7752,
+      "old_badge": {
+        "x0": 0.2389,
+        "x1": 0.759,
+        "y0": 0.8287,
+        "y1": 0.9217,
+        "height_frac": 0.0936,
+        "measured_aspect": 3.137
+      }
+    }
+  }
+}

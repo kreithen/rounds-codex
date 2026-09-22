@@ -7,8 +7,28 @@ set in SF Pro) — it is being replaced with the file below.
 
 | file | source | status |
 |---|---|---|
-| `apple-download-on-the-app-store.svg` | `https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg` — internal title `Download_on_the_App_Store_Badge_US-UK_RGB_blk_4SVG_092917` | fetched 2026-09-22 |
+| `apple-download-on-the-app-store.svg` | `https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg` — internal title `Download_on_the_App_Store_Badge_US-UK_RGB_blk_4SVG_092917` | fetched 2026-09-22. **This is the BLACK variant** — see below. |
 | `google-play-badge.png` | Google Play badge generator | **missing — must be downloaded on the Mac** |
+
+## Black or white: this is a design decision, not a detail
+
+The fetched Apple badge is the **black** one — outer rect black, a `#a6a6a6` hairline border,
+`#fff` lettering. The social artwork currently uses Apple's **white** badge (black lettering on a
+white pill), which is a different file; Apple ships it only in the bundle on the marketing
+guidelines page, not at a guessable asset URL, so it cannot be fetched from a session.
+
+That matters because **Google does not publish an inverted badge.** The Play badge is dark, full
+stop. So on these dark-navy pieces there are only two honest pairings:
+
+- **black Apple + standard Play** — both dark, both with light hairline edges. This is the normal
+  pairing on a dark site, and the badge already in `marketing/badges/` is the right file for it.
+  It changes how the pieces look: the white pill that currently anchors the bottom of each one
+  becomes a dark pair.
+- **white Apple + standard Play** — keeps the existing white pill and sets a dark Play badge
+  beside it. Preserves the current design but the two badges read as different weights.
+
+Neither can be decided by a script. Apple's white badge has to come off the Mac either way if
+that is the choice.
 
 ## Why the Play badge is not here
 
