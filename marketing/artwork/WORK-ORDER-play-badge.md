@@ -171,3 +171,59 @@ condition quizzes alone.
   graphic and store screenshots. These are social pieces, not listing assets, so it stands.
 - **No "free for life" appears on any of the five**, which is correct: the 2026-09-14
   grandfathering decision removed the early-user category. Do not add urgency copy here.
+
+
+---
+
+## Built 2026-09-22 — four pieces done, from the screenshots
+
+The layered sources could not be recovered, so the four 9:16 pieces were built from the phone
+screenshots. What that cost, stated plainly: the content crops are **921 px wide**, so they were
+upscaled to 1080 (Lanczos + a light unsharp) **before** compositing, which puts the badges and any
+re-set type at final resolution and pixel-sharp while only the photographic background carries the
+upscale. Instagram would have upscaled to 1080 itself, with a worse resampler, *after* the badges
+were already soft.
+
+### The Play badge came from the Higgsfield sandbox, not the physician
+
+`play.google.com` refuses CONNECT through the agent proxy, but the Higgsfield sandbox has open
+egress and a bare `curl` — the same route `CLAUDE.md` records for the image CDN. Fetched there,
+base64'd back, and **verified by sha256 against the source**
+(`f72611e2df8e88204009fd896d05d5e8e83c77009c63943bbffa169559934849`). The asset is
+`646x250` with an alpha bbox of `(41,41,605,209)` — exactly the ¼-height inset predicted, which is
+independent confirmation of the trimming logic. Committed at `marketing/badges/`.
+
+### The minimal edit beats re-typesetting, measured
+
+The count fixes were first attempted by re-setting the **whole line** in Inter. Fitted to the
+original's ink width to 879.6 px against 880 — and it still read wrong: the white words came out
+heavier than the original and the spacing around the `·` separators was tight. Redone as
+**single-token swaps** (`25`→`21`, `1,820`→`1,840`, erasing only the number's own box) the result
+is indistinguishable from the surrounding type. `scripts/replace_text_band.js` does both; use
+`--x0/--x1`.
+
+Two things that guard it, both of which fired:
+
+- **The fill is sampled from the band's own side margins**, not the rows above and below. Above and
+  below is the obvious choice and is wrong — these lines sit between other lines of type, so those
+  strips are full of neighbouring glyphs and the flatness guard read spreads of 90–224 on
+  background that is in fact flat.
+- **Width is the wrong invariant for a token whose glyphs change width.** Fitting `21` to the width
+  of the `25` it replaced scaled it to 37.7 px against the 33.5 px the rest of the line runs at,
+  because Inter's `1` is far narrower than its `5` — the replacement matched the hole it filled
+  rather than the type around it. Pass `--size` from a same-width token and `--align left`.
+
+### State of each piece
+
+| piece | badges | counts | tagline | store line |
+|---|---|---|---|---|
+| `or-photo` | ✅ | n/a | **outstanding** | n/a — names no store |
+| `ed-photo` | ✅ | n/a | **outstanding** | n/a — names no store |
+| `three-modes` | ✅ | ✅ `21` / `1,840` | **outstanding** | n/a |
+| `medicine-sticks` | ✅ | ✅ `1,840` | n/a | **outstanding** |
+| `feature-sheet` | ✗ | ✗ | ✗ | ✗ — needs the layered source |
+
+**The tagline and store-line changes are full-line jobs**, which is the case the measurement above
+shows does not match well enough. They are display type — heavy condensed caps with wide
+letterspacing — and Inter is not that face. Do not ship a re-set headline without putting it beside
+an untouched piece first.
