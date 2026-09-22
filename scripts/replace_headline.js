@@ -44,6 +44,7 @@ const FITW = f('fitwidth') ? +f('fitwidth') : null;
 // three-modes do not, and "SUCCEED." alone reads limp. Both lines render in one pass so the
 // scrim covers them together — two passes would leave a seam where the second pass's sampled
 // fill met the first pass's scrim.
+const MASK = f('mask', 'hue');
 const SUB = f('sub'), SUBTOP = +f('subtop', 0), SUBCAP = +f('subcap', 0);
 const SUBCOLOR = f('subcolor', '#ffffff'), SUBTRACK = f('subtrack', '0.075');
 const SUBFONT = f('subfont', '/home/user/rounds-codex-app/fonts/inter-latin.woff2');
@@ -64,7 +65,7 @@ if (!inFile || !outFile || !Y0 || !Y1 || !CAP || !TEXT) die('usage: <in> <out> -
 
   // Build the gradient patch as its own PNG: per column, blend the median colour of the rows
   // just above the band into the median of the rows just below.
-  const patch = await page.evaluate(async ({ bg, Y0, Y1 }) => {
+  const patch = await page.evaluate(async ({ bg, Y0, Y1, MASK }) => {
     const im = new Image(); im.src = bg; await im.decode();
     const W = im.naturalWidth, H = im.naturalHeight;
     const c = document.createElement('canvas'); c.width = W; c.height = H;
@@ -105,8 +106,12 @@ if (!inFile || !outFile || !Y0 || !Y1 || !CAP || !TEXT) die('usage: <in> <out> -
       // Tuned to the TYPE's hue, not merely to "saturated and lightish": an out-of-focus
       // clinical background is itself blue and mildly saturated, and a loose test masked 85% of
       // the band — barely better than wiping all of it.
+      //
+      // --mask light is for WHITE type, where a hue test finds nothing at all: run against the
+      // store line it reported "covers 0.0%" and left the old words in place under the new ones.
       const r = bd[i], gg = bd[i+1], b = bd[i+2];
-      if (b > 95 && b - r > 60 && gg > r) lit[k] = 1;
+      if (MASK === 'light') { if (Math.max(r, gg, b) > 120) lit[k] = 1; }
+      else if (b > 95 && b - r > 60 && gg > r) lit[k] = 1;
     }
     // dilate so the glow's soft edge is covered — a surviving halo reads worse than a full wipe
     const RAD = Math.max(3, Math.round(bandH * 0.025));
@@ -156,7 +161,7 @@ if (!inFile || !outFile || !Y0 || !Y1 || !CAP || !TEXT) die('usage: <in> <out> -
     }
     og.putImageData(out, 0, 0);
     return { url: o.toDataURL('image/png'), W, H, maskPct: covered / mask.length };
-  }, { bg, Y0, Y1 });
+  }, { bg, Y0, Y1, MASK });
 
   const { W, H } = patch;
   console.log(`  band reconstruction covers ${(patch.maskPct * 100).toFixed(1)}% of the band; the rest is original pixels`);
@@ -201,8 +206,13 @@ if (!inFile || !outFile || !Y0 || !Y1 || !CAP || !TEXT) die('usage: <in> <out> -
       const cs = getComputedStyle(el);
       g.font = `${cs.fontWeight} ${cs.fontSize} ${cs.fontFamily}`;
       const m = g.measureText(el.textContent);
+      // measureText IGNORES letter-spacing, and #t is a full-width flex box so its own rect is
+      // the frame, not the text. Neither is the line's width once a line is tracked — which the
+      // store line is. A Range over the text node gives the real inked advance including tracking.
+      const rng = document.createRange(); rng.selectNodeContents(el);
+      const rw = rng.getBoundingClientRect().width;
       return { cap: m.actualBoundingBoxAscent + Math.min(0, m.actualBoundingBoxDescent), w: r.width,
-               asc: m.actualBoundingBoxAscent, desc: m.actualBoundingBoxDescent, adv: m.width };
+               asc: m.actualBoundingBoxAscent, desc: m.actualBoundingBoxDescent, adv: m.width, rangeW: rw };
     }, { Y0, Y1, W });
   };
   let lo = 20, hi = 600, best = null;
@@ -211,7 +221,7 @@ if (!inFile || !outFile || !Y0 || !Y1 || !CAP || !TEXT) die('usage: <in> <out> -
     const r = await capOf(mid);
     best = { fs: mid, ...r };
     if (FITW) {
-      const vis = r.adv * SCALEX;
+      const vis = (r.rangeW || r.adv) * SCALEX;
       if (Math.abs(vis - FITW) < 1) break;
       if (vis > FITW) hi = mid; else lo = mid;
     } else {
@@ -219,8 +229,10 @@ if (!inFile || !outFile || !Y0 || !Y1 || !CAP || !TEXT) die('usage: <in> <out> -
       if (r.asc > CAP) hi = mid; else lo = mid;
     }
   }
-  console.log(`  font ${path.basename(FONT)} w${WEIGHT}  size ${best.fs.toFixed(1)}px -> cap ${best.asc.toFixed(1)}px (target ${CAP})  advance ${best.adv.toFixed(0)}px`);
-  if (best.adv * SCALEX > W * 0.94) console.warn(`  ! the line is ${(best.adv * SCALEX / W * 100).toFixed(1)}% of the frame width`);
+  console.log(`  font ${path.basename(FONT)} w${WEIGHT}  size ${best.fs.toFixed(1)}px  cap ${best.asc.toFixed(1)}px` +
+              (FITW ? ` (was ${CAP})  width ${((best.rangeW || best.adv) * SCALEX).toFixed(0)}px -> target ${FITW}` : ` -> target ${CAP}`) +
+              `  [untracked advance ${best.adv.toFixed(0)}px]`);
+  if ((best.rangeW || best.adv) * SCALEX > W * 0.94) console.warn(`  ! the line is ${((best.rangeW || best.adv) * SCALEX / W * 100).toFixed(1)}% of the frame width`);
 
   await page.setContent(shell(best.fs, true));
   await page.evaluate(() => document.fonts.ready);

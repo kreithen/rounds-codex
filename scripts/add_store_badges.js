@@ -47,6 +47,21 @@ if (!playBadge) die('--play is required. The Google Play badge cannot be fetched
   '  Do NOT substitute a Wikimedia copy — it may be a superseded revision.');
 for (const f of [inFile, playBadge, appleBadge]) if (!fs.existsSync(f)) die('missing file: ' + f);
 
+// --scrim extends the piece's own bottom vignette upward so the badges have flat ground, for a
+// piece where the old badge sits on artwork and neither covering nor sampling can remove it.
+// feature-sheet is that piece: its badge is over the heart's lower lobe, the erase path refuses
+// at channel spread 58/92/124, and the pair's clear-space gap lands in the middle of the old
+// badge so even a wider pair leaves a white sliver showing through. A gradient that reaches near
+// opacity by the badge row hides it and reads as the vignette the piece already has.
+const SCRIM = +flag('scrim', 0);
+const SCRIM_Y0 = flag('scrim-y0') ? +flag('scrim-y0') : null;   // where the ramp starts (px)
+const SCRIM_Y1 = flag('scrim-y1') ? +flag('scrim-y1') : null;   // where it reaches full strength
+// --scrim-y2 is where it fades back to nothing. Without it the gradient runs to the bottom of the
+// frame and swallows whatever sits below the badges — on feature-sheet that is the URL and the
+// "study aid, not medical advice" line, which is the one piece of text on the whole set that
+// must never be hard to read.
+const SCRIM_Y2 = flag('scrim-y2') ? +flag('scrim-y2') : null;
+
 const spec = JSON.parse(fs.readFileSync(SPEC, 'utf8'));
 const P = spec.pieces[piece];
 if (!P) die(`unknown piece "${piece}". Known: ${Object.keys(spec.pieces).join(', ')}`);
@@ -152,7 +167,7 @@ if (!P) die(`unknown piece "${piece}". Known: ${Object.keys(spec.pieces).join(',
   const gapHitsOld = gapSpan.x0 < old.x1 && gapSpan.x1 > old.x0;
   const covers = pair.x0 <= old.x0 + 0.5 && pair.x1 >= old.x1 - 0.5 &&
                  pair.y0 <= old.y0 + 0.5 && pair.y1 >= old.y1 - 0.5 && !gapHitsOld;
-  if (!covers && !has('erase')) {
+  if (!covers && !has('erase') && !SCRIM) {
     await browser.close();
     die(`the new badge pair does not cover the old badge on "${piece}".\n` +
         `  old  ${old.x0.toFixed(0)},${old.y0.toFixed(0)} - ${old.x1.toFixed(0)},${old.y1.toFixed(0)}\n` +
@@ -168,7 +183,7 @@ if (!P) die(`unknown piece "${piece}". Known: ${Object.keys(spec.pieces).join(',
   // the badge is horizontally centred. The script measures the spread and refuses if those
   // bands are not actually flat, rather than smearing a sampled colour over artwork.
   let eraseRect = null;
-  if (!covers && has('erase')) {
+  if (!covers && has('erase') && !SCRIM) {
     const smp = await page.evaluate(async ({ url, W, H, old }) => {
       const im = new Image(); im.src = url; await im.decode();
       const c = document.createElement('canvas'); c.width = W; c.height = H;
@@ -216,6 +231,15 @@ if (!P) die(`unknown piece "${piece}". Known: ${Object.keys(spec.pieces).join(',
   await page.setContent(`<!doctype html><html><body style="margin:0;width:${W}px;height:${H}px;position:relative">
     <img src="${dataUrl(inFile)}" style="position:absolute;left:0;top:0;width:${W}px;height:${H}px">
     ${eraseRect ? `<div style="position:absolute;left:${eraseRect.x0}px;top:${eraseRect.y0}px;width:${eraseRect.w}px;height:${eraseRect.h}px;background:${eraseRect.css}"></div>` : ''}
+    ${SCRIM ? (() => {
+        const a = SCRIM_Y0 ?? (pair.y0 - badgeH * 1.4);
+        const b2 = SCRIM_Y1 ?? (pair.y0 - badgeH * 0.25);
+        const c = SCRIM_Y2 ?? H;
+        const pct = (y) => (100 * (y - a) / (c - a)).toFixed(2);
+        return `<div style="position:absolute;left:0;top:${a}px;width:${W}px;height:${c - a}px;pointer-events:none;
+          background:linear-gradient(to bottom, rgba(3,8,20,0) 0%, rgba(3,8,20,${SCRIM}) ${pct(b2)}%,
+            rgba(3,8,20,${SCRIM}) ${pct(pair.y1 + badgeH * 0.04)}%, rgba(3,8,20,0) 100%)"></div>`;
+      })() : ''}
     <img src="${dataUrl(appleBadge)}" style="position:absolute;left:${pair.x0}px;top:${pair.y0}px;width:${appleW}px;height:${badgeH}px">
     <img src="${sizes.play.url}"  style="position:absolute;left:${pair.x0 + appleW + gap}px;top:${pair.y0}px;width:${playW}px;height:${badgeH}px">
   </body></html>`);

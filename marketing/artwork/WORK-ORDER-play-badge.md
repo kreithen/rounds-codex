@@ -220,8 +220,39 @@ Two things that guard it, both of which fired:
 | `or-photo` | ✅ | n/a | ✅ two-line | n/a — names no store |
 | `ed-photo` | ✅ | n/a | ✅ one-line | n/a — names no store |
 | `three-modes` | ✅ | ✅ `21` / `1,840` | ✅ one-line | n/a |
-| `medicine-sticks` | ✅ | ✅ `1,840` | n/a | **outstanding** |
-| `feature-sheet` | ✗ | ✗ | ✗ | ✗ — needs the layered source |
+| `medicine-sticks` | ✅ | ✅ `1,840` | n/a | ✅ |
+| `feature-sheet` | ✅ scrim | ✅ `21` / `1,840` | ✅ SUCCEED. | ✅ |
+
+**ALL FIVE ARE DONE (2026-09-22).** Finished files in `marketing/artwork/social/`.
+
+### `feature-sheet` took a scrim, not an erase
+
+Its badge sits on the heart's lower lobe, so the erase path refuses (spread 58/92/124) and the
+pair's clear-space gap lands mid-badge, so a wider pair still leaks a white sliver.
+`--scrim`/`--scrim-y0`/`--scrim-y1`/`--scrim-y2` extend the piece's own bottom vignette upward
+until it is opaque at the badge row.
+
+**`--scrim-y2` exists because the first version ran the gradient to the bottom of the frame and
+swallowed the URL and the "study aid — not medical advice" line** — the one piece of text on the
+whole set that must never be hard to read. And starting the ramp at 1315 dimmed the heart
+needlessly; 1358 reaches full strength by the badge row while leaving the lower lobe and the ECG
+trace close to the original.
+
+### Matching a face is measurement, not judgement — twice more
+
+- **`SUCCEED.` on `feature-sheet`.** Rendered at Inter 700 it looked right; median stroke width
+  said 11px against the original line's 10. Inter **650** measures exactly 10. By eye I had picked
+  600, because I was comparing against the blue "UNDERSTAND." above it — **white type on a dark
+  ground reads heavier than coloured type at the same weight**, so the only valid comparison is
+  white to white.
+- **The top store line.** Its tracking was recovered arithmetically rather than guessed: set the
+  ORIGINAL string at the original cap height with no tracking (654px), compare to its real width
+  (753px over 48 characters), and the tracking is (753-654)/48/22.3 = **0.0925em**. A first attempt
+  solved tracking for the NEW string against the old width instead, which is wrong — the new
+  wording is longer, so that squeezes the tracking out and the line reads tight and bold. Hold the
+  tracking, let the width grow.
+  **The stroke-width metric saturates at a 16px cap** — weights 500, 550 and 600 all measure 3px —
+  so that one came down to the eye after all. Know when a measurement has stopped discriminating.
 
 ### Each piece keeps its OWN structure, which is why the treatment differs
 
