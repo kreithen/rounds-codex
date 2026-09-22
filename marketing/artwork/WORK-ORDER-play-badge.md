@@ -279,3 +279,66 @@ brightness on either.
 shows does not match well enough. They are display type — heavy condensed caps with wide
 letterspacing — and Inter is not that face. Do not ship a re-set headline without putting it beside
 an untouched piece first.
+
+---
+
+## The landing site (`landing/`), rebuilt 2026-09-22 — NOT merged
+
+Built on `claude/native-android-app-fzzjss` and deliberately **not merged to `main`**, which is what
+deploys roundscodex.com. `landing/` was not on this branch at all, so only the two files that
+needed editing were brought over (`index.html`, `llms.txt`) plus two new badge assets — a
+reviewable diff rather than 37 files.
+
+### One constant is the whole switch
+
+```js
+const RC_PLAY_URL = "";   // set it the day the Play listing resolves, and not before
+```
+
+Empty: the Play badge stays `hidden`, the structured data says `"operatingSystem":"iOS"` and
+carries a single `downloadUrl`. Set: both badges show, `operatingSystem` becomes `"iOS, Android"`
+and `downloadUrl`/`installUrl` become an array. **Both branches were driven headless** — hidden and
+shown, single URL and array, zero page errors either way.
+
+### The badges
+
+The two hand-drawn SVGs are gone, replaced by Apple's own file and Google's own, both unmodified.
+The shipped Play asset carries 41px of clear space baked in, so `assets/badge-google-play.png` is
+trimmed to the artwork (564×168) and the clear space is re-supplied by a 26px flex gap — a quarter
+of the 104px badge height. Rendered: Apple 311×104, Play 349×104, gap 26. Matched on HEIGHT, which
+is what Google's "never smaller than another store's badge" rule needs.
+
+### The copy that was actually wrong
+
+- **"free for life" appeared eight times** and the FAQ promised that downloading during the free
+  period is what earns permanent access. The 2026-09-14 decision removed the early-user category
+  entirely. Replaced throughout with the approved wording from `marketing-brief.md`: *the library
+  you see today stays free forever, for everyone*. One FAQ question ("If I download it free now, do
+  I keep it free later?") was replaced rather than reworded, because the question itself presumes
+  the model that no longer exists.
+- **Both 2026-08-30 launch-email errors were live on the public site**: "2,900+ board-style
+  questions" and "183 condition guides across 25 specialties". Now "3,000 questions in all" and
+  21 specialties.
+
+### The guard reported the page as clean, and that is the real lesson
+
+`verify_listing_counts.js` was written after those email errors — and run against the live landing
+page it printed **"all 0 quoted counts match"**, because every pattern was written against the
+*store listings'* wording and the page says "condition guides", "condition quizzes", "N-drug
+pharmacology". **A guard that silently matches nothing reports success.** Extended to the page's
+phrasings it now checks **23 counts** across the two files, and against the pre-fix copies it fails
+on 3 real stale claims.
+
+Adding those patterns immediately reintroduced the defect the file already documents: writing
+`conditions?(?: guides)?` made the optional singular match the "1,820 condition" of "1,820
+condition quizzes", so the checker reported the page as claiming 1,820 conditions. The singular is
+only valid in front of "guides".
+
+### Left for launch day
+
+- `RC_PLAY_URL` — after opening the Play URL in a real browser.
+- `llms.txt` is a static text file with no switch: its "Available on iOS" line and its Links
+  section need Android added by hand at launch.
+- `robots.txt` and the `X-Robots-Tag: noindex` header on the **app** site are untouched and still
+  block every crawler. Lifting them likely starts the three-month §412 copyright window that never
+  reopens — see `legal/README.md`. That is a decision, not a chore.

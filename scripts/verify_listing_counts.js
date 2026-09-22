@@ -91,19 +91,28 @@ const CLAIMS = [
      lookbehind the engine simply restarts one character later and matches "1 conditions" out of
      "31 conditions", so the checker went from claiming the listing said 31 to claiming it said 1.
      An exclusion that can be sidestepped by starting mid-number is not an exclusion. */
-  ['conditions',              need('conditions'),                /(?<![\d,])(?<!audio for )([\d,]+) conditions\b/g],
+  /* "condition guides" was added 2026-09-22. roundscodex.com has said "183 condition guides
+     across 25 specialties" since launch -- both of the 2026-08-30 launch-email errors, live on the
+     public site -- and this checker reported the page as having NO quoted counts at all, because
+     every pattern here was written against the store listings' wording. A guard that silently
+     matches nothing is worse than no guard: it reports "all counts match".
+     The first cut of it wrote `conditions?(?: guides)?`, and the optional plural promptly matched
+     the "1,820 condition" of "1,820 condition quizzes" and reported the page as claiming 1,820
+     conditions -- the same defect the audio note above describes, reintroduced while fixing a
+     different one. The singular is only ever valid in front of "guides". */
+  ['conditions',              need('conditions'),                /(?<![\d,])(?<!audio for )([\d,]+) (?:conditions\b|condition guides\b)/g],
   ['illustrated galleries',   need('galleries (real artwork)'),  /([\d,]+) illustrated galleries/g],
-  ['illustration pages',      need('illustration pages'),        /([\d,]+) original (?:full-page )?(?:clinical )?illustrations/g],
+  ['illustration pages',      need('illustration pages'),        /([\d,]+)\+? original (?:full-page |clinical |medical )*illustrations/g],
   ['illustration titles',     need('illustration pages'),        /([\d,]+) illustration titles/g],
-  ['quiz questions',          need('quiz questions'),            /([\d,]+) practice questions/g],
-  ['USMLE items',             need('USMLE items'),               /([\d,]+) USMLE-style items/g],
+  ['quiz questions',          need('quiz questions'),            /([\d,]+) (?:practice questions|condition quizzes)/g],
+  ['USMLE items',             need('USMLE items'),               /([\d,]+) USMLE(?:-style items|-style\b|,| questions)/g],
   ['USMLE Step 1',            need('Step 1'),                    /Step 1 \(([\d,]+)\)/g],
   ['USMLE Step 2 CK',         need('Step 2 CK'),                 /Step 2 CK \(([\d,]+)\)/g],
   ['USMLE Step 3 Day 1',      need('Step 3 Day 1'),              /Step 3 Day 1 \(([\d,]+)\)/g],
   ['USMLE Step 3 Day 2',      need('Step 3 Day 2'),              /Day 2 \(([\d,]+)\)/g],
   ['illustrated USMLE items', need('illustrated USMLE items'),   /([\d,]+) of them illustrated/g],
-  ['NCLEX items',             need('NCLEX items'),               /([\d,]+) NCLEX-style items/g],
-  ['drug entries',            need('drug entries'),              /([\d,]+) drug entries/g],
+  ['NCLEX items',             need('NCLEX items'),               /([\d,]+) NCLEX(?:-style items|-style\b|,| questions)/g],
+  ['drug entries',            need('drug entries'),              /([\d,]+)(?: drug entries|-drug pharmacology)/g],
   ['calculators',             need('calculators'),               /([\d,]+) clinical calculators/g],
   ['guideline entries',       need('guideline entries'),         /([\d,]+) (?:clinical )?guideline updates/g],
   ['resident entries',        need('resident entries'),          /([\d,]+) resident-level entries/g],
@@ -122,7 +131,7 @@ const CLAIMS = [
   ['USMLE & NCLEX questions', need('USMLE items') + need('NCLEX items'),
    /([\d,]+)\+? ?(?:USMLE\s*(?:&|and)\s*NCLEX|NCLEX\s*(?:&|and)\s*USMLE)[- ]?(?:style )?questions/gi],
   ['categories per conditions', need('condition categories'),
-   /conditions across ([\d,]+) (?:specialties|categories)/gi],
+   /conditions?(?: guides)? (?:across|spanning) ([\d,]+) (?:medical and surgical )?(?:specialties|categories)/gi],
 
   /* The TOTAL, under a phrase that cannot be confused with the 1,840. Found by running this
      checker on my own proposed replacement copy: "3,000 practice questions" failed, because
