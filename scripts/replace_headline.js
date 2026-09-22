@@ -34,6 +34,20 @@ const SCALEX = +f('scalex', 1);
 // honestly rather than pretending the reconstruction is clean, and it is the move the piece
 // already makes: its lower third is a dark gradient over the same photo.
 const SCRIM = +f('scrim', 0);
+// --fitwidth fits to the ORIGINAL LINE'S WIDTH instead of its cap height, for a replacement whose
+// wording is much longer than what it replaces. Holding cap height there would overflow the frame;
+// holding width keeps the headline occupying the same block of the layout, which is what carries
+// its weight in the composition.
+const FITW = f('fitwidth') ? +f('fitwidth') : null;
+// --sub adds the small line above the display word, for a piece whose headline is a single
+// standalone line. or-photo already had "LEARN. UNDERSTAND." above its big word; ed-photo and
+// three-modes do not, and "SUCCEED." alone reads limp. Both lines render in one pass so the
+// scrim covers them together — two passes would leave a seam where the second pass's sampled
+// fill met the first pass's scrim.
+const SUB = f('sub'), SUBTOP = +f('subtop', 0), SUBCAP = +f('subcap', 0);
+const SUBCOLOR = f('subcolor', '#ffffff'), SUBTRACK = f('subtrack', '0.075');
+const SUBFONT = f('subfont', '/home/user/rounds-codex-app/fonts/inter-latin.woff2');
+if (SUB && (!SUBTOP || !SUBCAP)) die('--sub needs --subtop and --subcap');
 if (!inFile || !outFile || !Y0 || !Y1 || !CAP || !TEXT) die('usage: <in> <out> --y0 --y1 --cap --text');
 
 (async () => {
@@ -45,6 +59,8 @@ if (!inFile || !outFile || !Y0 || !Y1 || !CAP || !TEXT) die('usage: <in> <out> -
   const page = await browser.newPage();
   const bg = `data:image/png;base64,${fs.readFileSync(inFile).toString('base64')}`;
   const font = `data:font/woff2;base64,${fs.readFileSync(FONT).toString('base64')}`;
+  const subfont = SUB ? `data:font/woff2;base64,${fs.readFileSync(SUBFONT).toString('base64')}` : '';
+  const SUBSIZE = SUB ? SUBCAP / 0.727 : 0;   // Inter's cap height is 0.727em
 
   // Build the gradient patch as its own PNG: per column, blend the median colour of the rows
   // just above the band into the median of the rows just below.
@@ -148,11 +164,12 @@ if (!inFile || !outFile || !Y0 || !Y1 || !CAP || !TEXT) die('usage: <in> <out> -
 
   const shell = (fs2, showBg) => `<!doctype html><html><head><style>
     @font-face{font-family:HL;src:url(${font}) format('woff2');font-weight:100 900;font-display:block}
+    ${SUB ? `@font-face{font-family:SUBF;src:url(${subfont}) format('woff2');font-weight:100 900;font-display:block}` : ''}
     html,body{margin:0;width:${W}px;height:${H}px;background:${showBg ? 'transparent' : '#000'}}
     #bg{position:absolute;inset:0;width:${W}px;height:${H}px}
     #patch{position:absolute;left:0;top:${Y0}px;width:${W}px;height:${Y1 - Y0}px}
-    #scrim{position:absolute;left:0;top:${Y0 - (Y1 - Y0) * 0.25}px;width:${W}px;
-       height:${(Y1 - Y0) * 1.35}px;pointer-events:none;
+    #scrim{position:absolute;left:0;top:${(SUB ? Math.min(Y0 - (Y1 - Y0) * 0.25, SUBTOP - SUBCAP * 0.9) : Y0 - (Y1 - Y0) * 0.25)}px;width:${W}px;
+       height:${(SUB ? (Y1 + (Y1 - Y0) * 0.10) - Math.min(Y0 - (Y1 - Y0) * 0.25, SUBTOP - SUBCAP * 0.9) : (Y1 - Y0) * 1.35)}px;pointer-events:none;
        background:linear-gradient(to bottom, rgba(2,6,16,0) 0%, rgba(2,6,16,${SCRIM}) 26%,
                   rgba(2,6,16,${SCRIM}) 82%, rgba(2,6,16,0) 100%)}
     #t{position:absolute;left:0;top:${Y0}px;width:${W}px;height:${Y1 - Y0}px;
@@ -164,6 +181,10 @@ if (!inFile || !outFile || !Y0 || !Y1 || !CAP || !TEXT) die('usage: <in> <out> -
                    0 0 ${(fs2 * 0.13).toFixed(1)}px rgba(0,140,255,${(GLOW * 0.45).toFixed(2)})}
   </style></head><body>
     ${showBg ? `<img id="bg" src="${bg}"><img id="patch" src="${patch.url}">${SCRIM ? '<div id="scrim"></div>' : ''}` : ''}
+    ${SUB ? `<div id="sub" style="position:absolute;left:0;top:${SUBTOP}px;width:${W}px;
+       display:flex;justify-content:center;align-items:flex-start;
+       font-family:SUBF,sans-serif;font-weight:800;font-size:${SUBSIZE.toFixed(2)}px;line-height:1;
+       letter-spacing:${SUBTRACK}em;white-space:nowrap;color:${SUBCOLOR}">${SUB}</div>` : ''}
     <div id="t">${TEXT}</div>
   </body></html>`;
 
@@ -189,11 +210,17 @@ if (!inFile || !outFile || !Y0 || !Y1 || !CAP || !TEXT) die('usage: <in> <out> -
     const mid = (lo + hi) / 2;
     const r = await capOf(mid);
     best = { fs: mid, ...r };
-    if (Math.abs(r.asc - CAP) < 0.5) break;
-    if (r.asc > CAP) hi = mid; else lo = mid;
+    if (FITW) {
+      const vis = r.adv * SCALEX;
+      if (Math.abs(vis - FITW) < 1) break;
+      if (vis > FITW) hi = mid; else lo = mid;
+    } else {
+      if (Math.abs(r.asc - CAP) < 0.5) break;
+      if (r.asc > CAP) hi = mid; else lo = mid;
+    }
   }
   console.log(`  font ${path.basename(FONT)} w${WEIGHT}  size ${best.fs.toFixed(1)}px -> cap ${best.asc.toFixed(1)}px (target ${CAP})  advance ${best.adv.toFixed(0)}px`);
-  if (best.adv > W * 0.94) console.warn(`  ! the line is ${(best.adv / W * 100).toFixed(1)}% of the frame width`);
+  if (best.adv * SCALEX > W * 0.94) console.warn(`  ! the line is ${(best.adv * SCALEX / W * 100).toFixed(1)}% of the frame width`);
 
   await page.setContent(shell(best.fs, true));
   await page.evaluate(() => document.fonts.ready);

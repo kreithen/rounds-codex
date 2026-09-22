@@ -217,11 +217,32 @@ Two things that guard it, both of which fired:
 
 | piece | badges | counts | tagline | store line |
 |---|---|---|---|---|
-| `or-photo` | ✅ | n/a | **outstanding** | n/a — names no store |
-| `ed-photo` | ✅ | n/a | **outstanding** | n/a — names no store |
-| `three-modes` | ✅ | ✅ `21` / `1,840` | **outstanding** | n/a |
+| `or-photo` | ✅ | n/a | ✅ two-line | n/a — names no store |
+| `ed-photo` | ✅ | n/a | ✅ one-line | n/a — names no store |
+| `three-modes` | ✅ | ✅ `21` / `1,840` | ✅ one-line | n/a |
 | `medicine-sticks` | ✅ | ✅ `1,840` | n/a | **outstanding** |
 | `feature-sheet` | ✗ | ✗ | ✗ | ✗ — needs the layered source |
+
+### Each piece keeps its OWN structure, which is why the treatment differs
+
+`or-photo` already carried "LEARN. UNDERSTAND." as a small white line above its display word, so
+only the word changed: **SUCCEED.** at the original cap height. The other two had a single
+standalone line, so the full tagline is set on **one line fitted to the original headline's
+width** (`--fitwidth`).
+
+Adding a small line above them was built and rejected on the render. It inverts the hierarchy:
+"SUCCEED." alone is eight characters, so holding the original cap height leaves it at ~34% of the
+frame while the sub-line above runs ~70% — the small line becomes the headline. Fitting the whole
+tagline to the original **width** instead keeps the headline occupying the same block of the
+layout, which is what carries its weight in the composition; the cap height drops and that is
+fine. `--sub` is retained and working for any piece that wants it.
+
+### The ghost is much weaker here than on `or-photo`
+
+Band reconstruction covers **43.7%** of the band on `ed-photo` and **37.5%** on `three-modes`,
+against 63% on `or-photo`, because the letters are smaller relative to the band. Combined with the
+one-line replacement covering more of where the old word sat, no ghost is visible at normal
+brightness on either.
 
 **The tagline and store-line changes are full-line jobs**, which is the case the measurement above
 shows does not match well enough. They are display type — heavy condensed caps with wide
