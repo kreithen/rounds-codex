@@ -22,12 +22,36 @@ detail.
 | ~~5~~ | ~~upload key, signed `.aab`~~ **DONE 2026-09-21 — 808 MB, all eleven packs in it** | you | ✅ |
 | ~~6~~ | ~~upload to internal testing~~ **DONE 2026-09-21 — version 1 (1.0), targetSdk 36** | you | ✅ |
 | ~~7~~ | ~~`assetlinks.json`~~ **DONE 2026-09-21 — shipped live as v150** | me | ✅ |
-| 8 | Fill the Console forms | you | — *(can be done now, in parallel with 1–6)* |
-| 9 | Enter the listing: copy, icon, feature graphic, screenshots | you | — *(assets all exist now)* |
-| 10 | Promote to production, submit for review | you | 6, 7, 8, 9 |
+| ~~8~~ | ~~Console forms~~ **DONE 2026-09-21, and the three risky answers VERIFIED** | you | ✅ |
+| ~~9~~ | ~~the listing~~ **DONE 2026-09-21 — copy, icon, feature graphic, 24 screenshots, AI declaration** | you | ✅ |
+| 10 | Send for review, then create a production release | you | — |
 
-Steps **8 and 9 do not wait on anything** — do them while the Mac work is in flight and the app is
-ready to publish the moment the bundle is.
+**Only step 10 is left.** Setup reached 11 of 11, which is visible as the Dashboard checklist
+disappearing rather than as a green tick.
+
+### The three answers, checked against the live Console 2026-09-21
+
+They had been filled in an earlier session and the worry was that they inherited the WEB app's
+answers, where a Supabase account holds an email address. They did not:
+
+| | |
+|---|---|
+| Target audience | **18 and older** — anything younger triggers Families policy |
+| Data safety | **"Does your app collect or share any of the required user data types?" = No** |
+| Content rating | questionnaire submitted |
+
+**Free/paid is already locked to Free**, because the app published to the internal track on
+2026-09-21. That is the outcome option D wanted, so there is nothing to do — but it does mean the
+subscription can only ever arrive as an in-app product.
+
+### The AI asset declaration — answered, and why
+
+Play asks whether any listing asset was generated or edited with AI. **All 24 screenshots are
+labelled; the icon and feature graphic are a judgement the physician made on the day.** The
+screenshots show generated artwork AND generated module text (`legal/README.md`'s provenance table,
+confirmed 2026-08-17), so labelling all of them avoids adjudicating how much generated content a
+panel needs before it counts. "Every illustration in it is original" in the full description stays
+true and consistent with this: original means not stock, not copied, not licensed.
 
 ### What steps 5–7 measured, 2026-09-21
 
