@@ -1233,9 +1233,19 @@ hold your email address" would contradict a "Data Not Collected" privacy label o
 > name. Only `./gradlew --stacktrace` from a terminal names it. It also succeeded once before
 > failing, because how close the default runs to the limit depends on what the daemon is still
 > holding from earlier tasks.
-> Two non-blocking follow-ups: the Console's unread notifications, and confirming the Draft is set to
-> **Free** (free→paid is irreversible once published, and under option D the subscription is an
-> in-app product rather than a paid app).
+> **SUBMITTED TO GOOGLE 2026-09-22 09:38 — submission 1, In review.** Production release 1 (1.0),
+> store listing, app content and store settings, all countries. Outcome arrives by email to
+> `admin@roundscodex.com`; Managed publishing is OFF, so an approved app publishes itself.
+> **The last trap, and it cost a morning: "Send app for review" is greyed out with "complete the
+> required steps in the app dashboard" even when every setup task is done**, because it submits a
+> PRODUCTION release and there wasn't one. The chain is hidden at the BOTTOM of the Dashboard under
+> *Create and publish a release → View tasks*: select countries, create the release, preview,
+> submit. Worse, **the setup checklist DISAPPEARS when it completes**, so "everything is done" and
+> "the card is missing" look identical — do not read the empty space as either. Use **Add from
+> library** rather than Upload: the internal bundle is the one proven to install from Play.
+> Free/paid is already locked to **Free** by the internal-track publish, which is what option D
+> wanted.
+> One non-blocking follow-up remains: the Console's unread notifications.
 > **Grandfathering is DECIDED (option D, both platforms)** — see the section below. Built 2026-09-14:
 > `scripts/verify_routes.js` (the five-places route invariant),
 > `native/android/intent-filters.xml`, `scripts/make_assetlinks.js`.

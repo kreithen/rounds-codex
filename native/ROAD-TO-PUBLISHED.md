@@ -24,10 +24,41 @@ detail.
 | ~~7~~ | ~~`assetlinks.json`~~ **DONE 2026-09-21 — shipped live as v150** | me | ✅ |
 | ~~8~~ | ~~Console forms~~ **DONE 2026-09-21, and the three risky answers VERIFIED** | you | ✅ |
 | ~~9~~ | ~~the listing~~ **DONE 2026-09-21 — copy, icon, feature graphic, 24 screenshots, AI declaration** | you | ✅ |
-| 10 | Send for review, then create a production release | you | — |
+| ~~10~~ | ~~send for review~~ **SUBMITTED 2026-09-22 09:38 — submission 1, In review** | you | ✅ |
 
-**Only step 10 is left.** Setup reached 11 of 11, which is visible as the Dashboard checklist
-disappearing rather than as a green tick.
+**The list is done.** Submission 1 carries Production, Store Listing, App Content and Store
+settings; Google emails the outcome to `admin@roundscodex.com`, and with Managed publishing OFF an
+approved app goes live by itself.
+
+### Step 10 is not one step, and the review button lies about why it is locked
+
+**"Send app for review" was greyed out with "complete the required steps in the app dashboard"
+while every setup task was done.** The reason is that the button submits a PRODUCTION release and
+there wasn't one — it sits at the END of a chain the Dashboard hides at the bottom of the page,
+under **Create and publish a release → View tasks**:
+
+```
+○ Select countries and regions
+○ Create a new release
+🔒 Preview and confirm the release
+🔒 Send the release to Google for review
+🔒 Publish your app on Google Play
+```
+
+Two traps inside that:
+
+- **The Dashboard's setup checklist vanishing means it is COMPLETE, and that is not the same as
+  being ready to submit.** Reading the empty space as "everything is done" is what sent us looking
+  for a missing form instead of a missing release.
+- **Use "Add from library", never "Upload".** The internal-testing bundle is already in the
+  library, and it is the one proven to install from Play; re-uploading 808 MB would produce an
+  unverified copy of something already tested.
+
+`Save` on the release stages it. Nothing reaches Google until **Submit N changes for review** on
+Publishing overview, and Play runs ~13 minutes of automated quick checks before sending.
+
+**Production notes are PUBLIC** (they become "What's new"), unlike the internal ones. The shipped
+text and all seven counts in it were checked with `verify_listing_counts.js` against v150.
 
 ### The three answers, checked against the live Console 2026-09-21
 
