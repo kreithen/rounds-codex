@@ -1233,7 +1233,22 @@ hold your email address" would contradict a "Data Not Collected" privacy label o
 > name. Only `./gradlew --stacktrace` from a terminal names it. It also succeeded once before
 > failing, because how close the default runs to the limit depends on what the daemon is still
 > holding from earlier tasks.
-> **SUBMITTED TO GOOGLE 2026-09-22 09:38 — submission 1, In review.** Production release 1 (1.0),
+> **LIVE ON GOOGLE PLAY 2026-10-01** — `play.google.com/store/apps/details?id=com.roundscodex.app`,
+> approved on submission 1 after nine days in review. A support ticket opened on 30 Sep (day 8,
+> which is Google's own threshold for asking) was never answered and did not need to be; the review
+> simply took its time. **Nine days is normal for this shape of submission** — first app from an
+> account verified five days earlier, medical category, 847 MB in eleven asset packs — and a
+> weekend inside it meant day 8 was only six business days. Policy status stays empty until an app
+> has been reviewed, so an empty Policy status page during review is the correct state, not a
+> missing item.
+> **roundscodex.com was updated the same day** (commit `4425ae2`, Netlify deploy `6abe93c9`, state
+> `ready`): both official store badges, `operatingSystem "iOS, Android"`, both stores in the
+> JSON-LD `downloadUrl`, and the live copy corrected — it had been carrying BOTH 2026-08-30
+> launch-email errors plus "free for life" eight times, contradicting the 2026-09-14 grandfathering
+> decision. The landing work lives on `claude/native-android-app-fzzjss`; only `landing/` was
+> pushed to `main`, so `scripts/verify_listing_counts.js` — which now covers the landing page's own
+> wording and checks 23 counts — is still branch-only and nothing on `main` runs it.
+> (historic) **SUBMITTED TO GOOGLE 2026-09-22 09:38 — submission 1, In review.** Production release 1 (1.0),
 > store listing, app content and store settings, all countries. Outcome arrives by email to
 > `admin@roundscodex.com`; Managed publishing is OFF, so an approved app publishes itself.
 > **The last trap, and it cost a morning: "Send app for review" is greyed out with "complete the
