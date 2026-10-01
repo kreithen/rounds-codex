@@ -334,11 +334,26 @@ Adding those patterns immediately reintroduced the defect the file already docum
 condition quizzes", so the checker reported the page as claiming 1,820 conditions. The singular is
 only valid in front of "guides".
 
-### Left for launch day
+### Launch day — 2026-10-01
 
-- `RC_PLAY_URL` — after opening the Play URL in a real browser.
-- `llms.txt` is a static text file with no switch: its "Available on iOS" line and its Links
-  section need Android added by hand at launch.
+**The Play listing is live.** `play.google.com/store/apps/details?id=com.roundscodex.app` resolves.
+Approved on submission 1 after nine days in review; the support ticket opened on 30 Sep was never
+answered and did not need to be.
+
+- `RC_PLAY_URL` is set. Headless check on the switched file: both badges shown, `operatingSystem`
+  "iOS, Android", `downloadUrl` an array of both stores, zero page errors.
+- `llms.txt` updated by hand (platform line, pricing line, summary line, Links section).
+- The live store listing's numbers were checked against `read_shipped_counts.js` the day it went
+  live and all ten match: 183 conditions, 102 galleries, 1,020 illustrations, 1,840 practice
+  questions, 1,010 USMLE, 150 NCLEX, 300 drugs, 10 calculators, 470 guideline updates, audio for 31.
+
+### Still to do
+
+- **Merge to `main`** — that is what deploys roundscodex.com, and it is the physician's call.
+- The five social pieces in `marketing/artwork/social/` are cleared to post.
+- `robots.txt` and the `X-Robots-Tag: noindex` header on the **app** site are untouched and still
+  block every crawler. Lifting them likely starts the three-month §412 copyright window that never
+  reopens — see `legal/README.md`. That is a decision, not a chore.
 - `robots.txt` and the `X-Robots-Tag: noindex` header on the **app** site are untouched and still
   block every crawler. Lifting them likely starts the three-month §412 copyright window that never
   reopens — see `legal/README.md`. That is a decision, not a chore.

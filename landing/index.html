@@ -254,7 +254,7 @@ const RC_APPSTORE_URL = "https://apps.apple.com/us/app/rounds-codex-clinical-atl
 // wording below is not swapped in — so this file can ship before Google approves without ever
 // showing a badge that links to a 404. Check the URL in a browser first; a session cannot,
 // because the agent proxy refuses CONNECT to play.google.com.
-const RC_PLAY_URL = "";
+const RC_PLAY_URL = "https://play.google.com/store/apps/details?id=com.roundscodex.app";
 
 if (RC_APPSTORE_URL) {
   document.querySelectorAll("#dl-hero,#dl-final").forEach(a => { a.href = RC_APPSTORE_URL; });
